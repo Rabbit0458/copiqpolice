@@ -233,9 +233,9 @@ class StupefiantsUsageIllicitePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 12),
-              _NotaBox(
+              const _NotaBox(
                 title: "Constitution",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La définition légale des stupéfiants a été déclarée conforme à la Constitution : "
@@ -255,18 +255,18 @@ class StupefiantsUsageIllicitePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Usage intentionnel"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Usage intentionnel"),
+              _Paragraph(
                 "L’auteur agit volontairement et en connaissance de cause : "
                 "il a pleinement conscience d’user de produits classés stupéfiants.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "L’absorption ne serait pas punissable si la personne consomme à son insu.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’usage peut aussi être exclu lorsqu’il s’inscrit dans un traitement médical prescrit.",
               ),
@@ -447,10 +447,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -515,7 +515,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -558,7 +558,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -620,7 +620,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -652,7 +652,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -665,7 +665,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

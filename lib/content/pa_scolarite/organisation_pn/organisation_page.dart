@@ -327,33 +327,33 @@ class OrganisationPoliceNationalePage extends StatelessWidget {
             cardColor: cardD,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La Direction nationale de la Police judiciaire concourt à l’exercice des missions de police judiciaire sur l’ensemble du territoire national "
                 "et contribue à la prévention et à la répression de toute forme de criminalité et de délinquance, y compris ses formes spécialisées, organisées ou transnationales.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle définit les objectifs et anime l’action des services de police exerçant une mission de police judiciaire relevant de sa filière, "
                 "sans préjudice des compétences des autres directions et services exerçant une mission de police judiciaire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Elle administre les organes de la coopération internationale policière mentionnés à ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article D. 8-2 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", et coordonne l’action des centres de coopération policière et douanière.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle exerce des missions de police administrative, notamment dans le cadre du contrôle et de la surveillance de l’exploitation des jeux d’argent et de hasard autorisés.",
               ),
             ],
@@ -683,17 +683,17 @@ class OrganisationPoliceNationalePage extends StatelessWidget {
             cardColor: cardC,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le Service national des enquêtes d’autorisation de voyage examine les demandes d’autorisation de voyage lorsque le traitement automatisé a abouti "
                 "à une réponse positive et que l’unité centrale du système européen d’information et d’autorisation concernant les voyages a engagé le traitement manuel. "
                 "Il prend ensuite une décision à leur sujet.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title:
                     "Système européen d’information et d’autorisation concernant les voyages",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Ce système vise certains ressortissants de pays tiers exemptés de visa afin d’évaluer un risque en matière de sécurité, d’immigration illégale "
@@ -777,11 +777,11 @@ class OrganisationPoliceNationalePage extends StatelessWidget {
 
           const SizedBox(height: 12),
 
-          _Paragraph.rich([
-            const TextSpan(text: "Document : "),
+          const _Paragraph.rich([
+            TextSpan(text: "Document : "),
             TextSpan(
               text: "mis à jour le 15/06/2025.",
-              style: const TextStyle(
+              style: TextStyle(
                 color: _lawRed,
                 fontWeight: FontWeight.w900,
               ),

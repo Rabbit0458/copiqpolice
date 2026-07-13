@@ -94,51 +94,51 @@ class NonRespectObligationsInterdictionsOrdonnanceProtectionPage
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le fait, pour une personne faisant l’objet d’une ou plusieurs obligations ou interdictions imposées dans une ordonnance de protection rendue en application des ",
                 ),
                 TextSpan(
                   text: "articles 515-9 ou 515-13 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", ou dans une ordonnance provisoire de protection immédiate rendue en application de ",
                 ),
                 TextSpan(
                   text: "l’article 515-13-1 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ", de ne pas s’y conformer, constitue une infraction.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Extension UE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les mêmes peines s’appliquent à la violation d’une mesure de protection civile prononcée dans un autre État membre de l’Union européenne, reconnue et exécutoire en France en application du ",
                   ),
                   TextSpan(
                     text:
                         "règlement (UE) n° 606/2013 du Parlement européen et du Conseil du 12 juin 2013",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " relatif à la reconnaissance mutuelle des mesures de protection en matière civile.",
                   ),
@@ -155,16 +155,16 @@ class NonRespectObligationsInterdictionsOrdonnanceProtectionPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le non-respect des obligations ou interdictions imposées par une ordonnance de protection.",
                 ),
@@ -180,156 +180,156 @@ class NonRespectObligationsInterdictionsOrdonnanceProtectionPage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les mesures de protection des victimes de violences sont développées aux ",
                 ),
                 TextSpan(
                   text: "articles 515-9 à 515-13 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Elles renforcent les pouvoirs du juge aux affaires familiales afin d’éloigner l’auteur des violences du cadre de vie de la victime, y compris hors mariage.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Une personne soumise à des obligations / interdictions",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 515-9 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque des violences au sein du couple (même sans cohabitation) ou commises par un ex-conjoint/ex-partenaire/ex-concubin mettent en danger la victime ou ses enfants, le JAF peut délivrer en urgence une ordonnance de protection.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’ordonnance de protection est délivrée dans un délai maximal de six jours à compter de la fixation de la date d’audience, si le juge estime les violences vraisemblables et le danger établi. Elle n’est pas conditionnée à un dépôt de plainte pénale.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Des mesures précises fixées par le juge"),
+              _SubTitle("B) Des mesures précises fixées par le juge"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Pour une durée maximale de 12 mois (prolongeable sous conditions), le juge peut ordonner des mesures conformément à ",
                 ),
                 TextSpan(
                   text: "l’article 515-12 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", notamment celles prévues par "),
+                TextSpan(text: ", notamment celles prévues par "),
                 TextSpan(
                   text: "l’article 515-11 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Interdiction de recevoir/rencontrer certaines personnes désignées, ou d’entrer en relation avec elles, de quelque façon que ce soit.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Interdiction de se rendre dans certains lieux désignés où se trouve habituellement la partie demanderesse.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Interdiction de détenir ou porter une arme ; remise des armes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Proposition de prise en charge sanitaire/sociale/psychologique ou stage de responsabilisation (information du procureur en cas de refus).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mesures sur la résidence séparée, la jouissance du logement, et la prise en charge des frais afférents.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Attribution possible de la jouissance de l’animal de compagnie au sein du foyer.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mesures sur l’autorité parentale, droit de visite/hébergement et contributions (charges du mariage, aide matérielle, entretien/éducation des enfants).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dissimulation du domicile/résidence et élection de domicile (avocat, procureur, personne morale qualifiée) selon les cas.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lorsque l’interdiction prévue au 1° de l’article 515-11 est prononcée, le juge peut également fixer une interdiction de se rapprocher et ordonner le port d’un dispositif anti-rapprochement, conformément à ",
                 ),
                 TextSpan(
                   text: "l’article 515-11-1 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) L’existence d’une ordonnance provisoire de protection immédiate",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 515-13-1 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque le JAF est saisi d’une demande d’ordonnance de protection, le ministère public peut, avec l’accord de la personne en danger, demander une ordonnance provisoire de protection immédiate.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle peut être délivrée dans un délai de vingt-quatre heures, au vu des seuls éléments joints à la requête, si des raisons sérieuses rendent vraisemblables les violences et le danger grave et immédiat.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Une violation : le non-respect concret des obligations",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’infraction sanctionne le non-respect effectif d’une ou plusieurs obligations/interdictions fixées par le juge. "
                 "Le texte vise à rendre l’ordonnance pleinement contraignante et opérationnelle, afin de garantir la protection de la victime.",
               ),
@@ -344,16 +344,16 @@ class NonRespectObligationsInterdictionsOrdonnanceProtectionPage
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Volonté de ne pas se conformer"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Volonté de ne pas se conformer"),
+              _Paragraph(
                 "Il s’agit d’une infraction intentionnelle : l’auteur agit en pleine connaissance de cause des obligations ou interdictions "
                 "dont il fait l’objet. Il doit avoir été informé des termes de l’ordonnance de protection délivrée par le juge.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En pratique : la caractérisation repose sur la preuve que la personne connaissait la décision (notification, audience contradictoire, remise, etc.) et a néanmoins violé une ou plusieurs mesures.",
                   ),
@@ -385,37 +385,37 @@ class NonRespectObligationsInterdictionsOrdonnanceProtectionPage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit — "),
+                TextSpan(text: "Délit — "),
                 TextSpan(
                   text: "article 227-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "3 ans d’emprisonnement."),
-              const _BulletPoint(text: "45 000 € d’amende."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "3 ans d’emprisonnement."),
+              _BulletPoint(text: "45 000 € d’amende."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Elle suppose un des faits constitutifs de complicité prévus par la loi (aide/assistance, provocation, instructions).",
                 ),
@@ -456,10 +456,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -524,7 +524,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -567,7 +567,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -629,7 +629,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -661,7 +661,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -674,7 +674,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

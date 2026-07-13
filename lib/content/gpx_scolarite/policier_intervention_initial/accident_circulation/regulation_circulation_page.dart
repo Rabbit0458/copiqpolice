@@ -90,35 +90,35 @@ class RegulationCirculationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les fonctionnaires de la Police nationale et les policiers adjoints placés sous leur commandement ont le pouvoir de régler la circulation — ",
                 ),
                 TextSpan(
                   text: "article R. 130-10 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les indications données par ces agents prévalent sur toutes signalisations, feux de signalisation ou règles de circulation — ",
                 ),
                 TextSpan(
                   text: "article R. 411-28 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -147,52 +147,52 @@ class RegulationCirculationPage extends StatelessWidget {
             cardColor: cardI,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Comportement de l’automobiliste"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Comportement de l’automobiliste"),
+              _Paragraph(
                 "La fatigue, la monotonie de la conduite, les troubles de santé, les soucis, et l’absorption d’alcool "
                 "sont des causes fréquentes de baisse de vigilance. Sur des trajets courts ou habituels (domicile-travail), "
                 "l’automobiliste peut ne pas voir le policier sur la voie publique.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La conduite est aussi une activité très automatisée : la vigilance diminue, l’estimation du risque baisse, "
                 "et le conducteur fait moins attention aux signaux.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Attitude du policier"),
-              const _Paragraph(
+              _SubTitle("B) Attitude du policier"),
+              _Paragraph(
                 "Pour assurer sa sécurité, le policier doit éviter d’être trop statique. Il adopte une attitude dynamique, "
                 "avec des signaux énergiques et précis, et utilise si nécessaire le sifflet pour capter l’attention.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Certaines missions demandent une attention soutenue, notamment aux « points-écoles » (forte présence de piétons/enfants) et la nuit (visibilité réduite, éblouissement).",
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Moyens techniques à mettre en œuvre"),
-              const _Paragraph(
+              _SubTitle("C) Moyens techniques à mettre en œuvre"),
+              _Paragraph(
                 "Le policier qui régule la circulation doit répondre à deux objectifs :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Il doit VOIR : se placer à l’endroit le plus favorable pour observer l’ensemble des usagers (ex. milieu de l’intersection), anticiper les difficultés et intervenir selon la situation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Il doit ÊTRE VU : utiliser les équipements adaptés (sifflet, gants blancs, tenues réfléchissantes, bâtons lumineux…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Il doit s’équiper des protections individuelles avant de descendre du véhicule.",
@@ -210,62 +210,62 @@ class RegulationCirculationPage extends StatelessWidget {
             cardColor: cardII,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le poste est souvent installé à une intersection à forte circulation. Il peut aussi être mis en place "
                 "sur un rétrécissement temporaire, en réalisant une alternance de passage.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Principes de base"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Principes de base"),
+              _BulletPoint(
                 text:
                     "Être visible : équipement adapté (vêtements réfléchissants, bâtons lumineux la nuit, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Port des gants blancs : facilite la compréhension des signaux par les usagers.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Se placer en sécurité : ne pas gêner la progression des véhicules.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Adopter une attitude dynamique et énergique, sans raideur excessive.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Rôle possible : aide-régulateur"),
-              const _IntroBullet(text: "Surveiller le trafic"),
-              const _IntroBullet(text: "Intervenir sur les infractions"),
-              const _IntroBullet(text: "Renseigner le public"),
-              const _IntroBullet(
+              _SubTitle("Rôle possible : aide-régulateur"),
+              _IntroBullet(text: "Surveiller le trafic"),
+              _IntroBullet(text: "Intervenir sur les infractions"),
+              _IntroBullet(text: "Renseigner le public"),
+              _IntroBullet(
                 text:
                     "Arrêter la circulation d’une file sur ordre du régulateur",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Mission : priorités & efficacité"),
-              const _Paragraph(
+              _SubTitle("Mission : priorités & efficacité"),
+              _Paragraph(
                 "Les priorités de passage se font de manière alternée. Il convient toutefois d’assurer une priorité "
                 "à l’axe supportant le plus de circulation, tout en évitant des attentes trop longues sur les voies moins desservies.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Durée des cycles",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Quand la circulation est dense, adopter un cycle de passage assez long afin de résorber alternativement chacune des files.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Dégagement d’une intersection",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Donner la priorité à tout conducteur voulant tourner à gauche s’il crée un obstacle au milieu du carrefour. "
@@ -273,11 +273,11 @@ class RegulationCirculationPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Choix du véhicule à arrêter",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Éviter de couper la circulation sur un poids lourd ou un véhicule peu rapide : sa faible accélération "
@@ -297,56 +297,56 @@ class RegulationCirculationPage extends StatelessWidget {
             cardColor: cardIII,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les gestes réglementaires exécutés par les agents habilités prévalent sur toute signalisation/feux/règles — ",
                 ),
                 TextSpan(
                   text: "article R. 411-28 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les signaux manuels s’exécutent sans rigidité, mais avec énergie et précision.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Signaux de passage — « feu vert »"),
-              const _Paragraph(
+              _SubTitle("Signaux de passage — « feu vert »"),
+              _Paragraph(
                 "L’agent ouvre la voie à un ou plusieurs véhicules en se plaçant parallèlement à leur axe de marche, "
                 "bras tendus horizontalement et latéralement.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Signal préparatoire d’arrêt — « feu orange »"),
-              const _Paragraph(
+              _SubTitle("Signal préparatoire d’arrêt — « feu orange »"),
+              _Paragraph(
                 "Le bras droit ou gauche est levé verticalement, légèrement en avant de la tête ; "
                 "la main dans le prolongement de l’avant-bras, doigts tendus et joints. "
                 "L’autre bras reste le long du corps lorsque le geste d’arrêt sur un véhicule repéré n’est pas nécessaire.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Arrêt — « feu rouge »"),
-              const _Paragraph(
+              _SubTitle("Arrêt — « feu rouge »"),
+              _Paragraph(
                 "L’agent ferme la voie à un ou plusieurs véhicules en se plaçant perpendiculairement à leur axe de marche, "
                 "bras tendus horizontalement et latéralement (ou un seul bras tendu).",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Gestes complémentaires (si nécessaire)"),
-              const _BulletPoint(text: "PASSEZ (sur mouvement direct)."),
-              const _BulletPoint(text: "ACCÉLÉREZ."),
-              const _BulletPoint(text: "RALENTISSEZ."),
-              const SizedBox(height: 10),
+              _SubTitle("Gestes complémentaires (si nécessaire)"),
+              _BulletPoint(text: "PASSEZ (sur mouvement direct)."),
+              _BulletPoint(text: "ACCÉLÉREZ."),
+              _BulletPoint(text: "RALENTISSEZ."),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Ces gestes doivent rester simples, lisibles et immédiatement compréhensibles par les usagers.",
@@ -389,10 +389,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -457,7 +457,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -500,7 +500,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -562,7 +562,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -594,7 +594,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -607,7 +607,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

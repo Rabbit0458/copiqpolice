@@ -94,7 +94,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
   // =========================================================
   // ===================== NIVEAU FACILE =====================
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "La rétention dans les locaux de police constitue avant tout une atteinte à :",
@@ -109,7 +109,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Parmi les administrations suivantes, lesquelles disposent du droit de retenir des individus ?",
@@ -124,7 +124,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "La rétention dans les locaux de police est légitime lorsqu’elle :",
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Article 9 DDHC",
     question:
         "Selon l’article 9 de la Déclaration des droits de l’homme et du citoyen, la rigueur appliquée lors d’une arrestation doit être :",
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Lequel de ces éléments fait partie du formalisme entourant la rétention ?",
@@ -170,7 +170,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie des mesures",
     question:
         "La rétention d’une personne dans les locaux de police peut être justifiée :",
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue",
     question:
         "La durée initiale de la garde à vue décidée par un officier de police judiciaire est de :",
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue",
     question:
         "Pour des faits de criminalité organisée ou de trafic de stupéfiants, la durée maximale de garde à vue peut atteindre :",
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue – Terrorisme",
     question:
         "Pour les infractions liées au terrorisme, la durée maximale de garde à vue peut aller jusqu’à :",
@@ -218,7 +218,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs 10–13 ans",
     question:
         "La retenue d’un mineur âgé de 10 à 13 ans peut durer initialement :",
@@ -229,7 +229,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs 10–13 ans",
     question:
         "Pour retenir un mineur de 10 à 13 ans, il doit exister des raisons plausibles de présumer qu’il a commis :",
@@ -244,7 +244,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité",
     question:
         "En cas de refus ou d’impossibilité de justifier son identité, la personne peut être conduite au commissariat :",
@@ -259,7 +259,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité",
     question:
         "La durée maximale de rétention pour vérification d’identité (en métropole) est de :",
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit au séjour",
     question:
         "La retenue pour vérification du droit au séjour d’un étranger peut durer au maximum :",
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse publique",
     question:
         "Pour une personne en état d’ivresse publique et manifeste placée en chambre de sûreté, la rétention est légale :",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification de situation – Terrorisme",
     question:
         "La retenue pour vérification de situation d’une personne suspectée d’activités terroristes ne peut excéder :",
@@ -307,7 +307,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie des mesures",
     question:
         "Dans la pratique, la distinction entre mesure judiciaire et mesure administrative peut être :",
@@ -322,7 +322,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "But pédagogique",
     question:
         "La classification des cas de rétention en mesures judiciaires et administratives a avant tout :",
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
   // =========================================================
   // ================== NIVEAU INTERMÉDIAIRE =================
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue – Mise en situation",
     question:
         "Vous placez un individu en garde à vue à 14h00 pour un délit de droit commun. Aucune prolongation n’est décidée. Au plus tard, l’intéressé doit être libéré ou présenté à un magistrat à :",
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs 10–13 ans – Mise en situation",
     question:
         "Un enfant de 12 ans est suspecté d’un vol simple puni de 3 ans d’emprisonnement. Peut-il faire l’objet d’une retenue de 10–13 ans ?",
@@ -366,7 +366,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité – Mise en situation",
     question:
         "Lors d’un contrôle, une personne refuse de donner son identité et tente de partir. Vous la conduisez au commissariat pour vérification d’identité à 18h00. Au plus tard, la rétention devra cesser à :",
@@ -377,7 +377,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat d’amener / d’arrêt",
     question:
         "La rétention d’une personne arrêtée en exécution d’un mandat d’amener ou d’arrêt doit durer :",
@@ -393,7 +393,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat de recherche",
     question:
         "Le mandat de recherche ordonne à la force publique de rechercher la personne visée et :",
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire – Contrainte",
     question: "Une contrainte judiciaire vise principalement à :",
     options: [
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire – Obligations",
     question:
         "La retenue pour vérification du respect des obligations judiciaires concerne :",
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit au séjour – Mise en situation",
     question:
         "Vous retenez un étranger à 09h00 pour vérification de son droit au séjour. À 22h00, les vérifications sont toujours en cours. Quelle est la bonne conduite ?",
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse – Mise en situation",
     question:
         "Un homme en état d’ivresse publique manifeste est placé en chambre de sûreté à 01h00. À 08h00, il parle clairement, marche sans difficulté et souhaite rentrer chez lui. Vous devez :",
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Malades mentaux – Mise en situation",
     question:
         "Une personne présentant des troubles mentaux graves est interpellée en pleine crise dans la rue. Elle est dangereuse pour elle-même. La rétention dans les locaux de police doit :",
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs en fugue – Mise en situation",
     question:
         "Un mineur de 15 ans en fugue est retrouvé à 23h00. Les parents ne sont joignables qu’à 06h00. La rétention au commissariat :",
@@ -501,7 +501,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification de situation – Terrorisme",
     question:
         "Une personne contrôlée à 15h00 fait l’objet d’une retenue pour vérification de situation liée au terrorisme. À quelle heure au plus tard la mesure doit-elle prendre fin ?",
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principe de proportionnalité",
     question:
         "Quel principe doit guider l’usage de la coercition (menottage, fouille, immobilisation) lors d’une rétention ?",
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme",
     question:
         "Pourquoi le formalisme (écrits, durée, notification des droits) est-il essentiel en matière de rétention ?",
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Choix du cadre",
     question:
         "Vous interpellez un individu soupçonné d’un délit grave puni d’emprisonnement. Vous hésitez entre une garde à vue et une simple vérification d’identité prolongée. Le bon réflexe est :",
@@ -559,7 +559,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de durée",
     question:
         "Qui est responsable, sur le terrain, du respect des durées maximales de rétention dans les locaux de police ?",
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
   // =========================================================
   // ===================== NIVEAU DIFFICILE ==================
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Qualification de la mesure",
     question:
         "Vous contrôlez un étranger sans titre de séjour, soupçonné par ailleurs d’un vol aggravé. Vous souhaitez le retenir. Quel enchaînement est juridiquement le plus sûr ?",
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumuls de mesures",
     question:
         "Un individu est placé en chambre de sûreté pour ivresse publique manifeste. Pendant la nuit, des éléments nouveaux montrent son implication dans un cambriolage. Que faire ?",
@@ -610,7 +610,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de proportionnalité",
     question:
         "Une personne retenue pour vérification d’identité est coopérative, calme, non violente. Elle est immédiatement menottée et laissée entravée dans la geôle pendant 4 heures. Quel risque juridique majeur existe ?",
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Traçabilité – Terrorisme",
     question:
         "Dans une retenue pour vérification de situation liée au terrorisme, lequel de ces éléments est le plus déterminant pour la légalité de la mesure ?",
@@ -642,7 +642,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière judiciaire/administratif",
     question:
         "Dans quelle situation la frontière entre mesure judiciaire et administrative est-elle particulièrement délicate à manier pour l’agent ?",
@@ -658,7 +658,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullité de procédure",
     question:
         "Quel comportement expose le plus la procédure à une nullité pour atteinte disproportionnée à la liberté individuelle ?",
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Gestion opérationnelle",
     question:
         "Vous êtes gradé de service et constatez que plusieurs retenues approchent de leur durée maximale simultanément. Quel réflexe est prioritaire ?",
@@ -690,7 +690,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité de l’État",
     question:
         "Une personne est maintenue en chambre de sûreté bien après son dégrisement, sans motif, parce que les agents sont débordés. Quel risque principal pour l’administration ?",
@@ -706,7 +706,7 @@ final List<QuizQuestion> questionsRetentionLocaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Éthique professionnelle",
     question:
         "Pourquoi est-il dangereux, même « pour rendre service », de garder quelques heures au poste un mineur en fugue sans formaliser le cadre de la rétention ?",
@@ -1054,7 +1054,7 @@ class _QuizRetentionLocauxPageState extends State<QuizRetentionLocauxPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1243,7 +1243,7 @@ class _QuizRetentionLocauxPageState extends State<QuizRetentionLocauxPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1396,7 +1396,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1922,10 +1921,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2296,7 +2296,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2337,9 +2337,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

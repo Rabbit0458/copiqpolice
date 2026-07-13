@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsDisparition = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Disparitions inquiétantes",
     question:
         "Quel est l’objectif principal du cadre de l’article 74-1 du C.P.P. ?",
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Disparitions inquiétantes",
     question:
         "Sur quel type de personnes l’article 74-1 du C.P.P. s’applique-t-il à l’origine ?",
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparition flagrante",
     question:
         "Quelle condition de temporalité est exigée par l’article 74-1 pour la disparition ?",
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Caractère inquiétant",
     question:
         "Quelles sont les deux conditions générales pour appliquer les articles 74-1 et 80-4 du C.P.P. ?",
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions obligatoirement inquiétantes",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une disparition obligatoirement inquiétante ?",
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions obligatoirement inquiétantes",
     question:
         "La disparition de quel type de personne est automatiquement considérée comme inquiétante au sens de l’article 74-1 ?",
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions inquiétantes par circonstances",
     question:
         "La disparition d’un adulte non protégé peut être jugée inquiétante lorsqu’elle fait craindre :",
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Qui doit obligatoirement être avisé lorsque les enquêteurs souhaitent utiliser le cadre de l’article 74-1 du C.P.P. ?",
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Quel choix n’appartient PAS au procureur de la République lorsqu’il est avisé d’une disparition inquiétante ?",
@@ -235,7 +235,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — OPJ / APJ",
     question:
         "Sous l’empire de l’article 74-1, qui peut accomplir les actes des articles 56 à 62 du C.P.P. ?",
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Garde à vue",
     question:
         "Une garde à vue peut-elle être décidée sur le seul fondement de l’article 74-1 C.P.P. ?",
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions — Non-signalement",
     question:
         "Quelle est la peine encourue pour une personne qui, connaissant la disparition d’un mineur de moins de 15 ans, n’en informe pas les autorités pour retarder les recherches (art. 434-4-1 C.P.) ?",
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Personne retrouvée",
     question:
         "Lorsque la personne disparue (mineur ou majeur protégé) est retrouvée et que les causes ne sont ni criminelles ni délictuelles, l’adresse peut être communiquée aux proches :",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Personne retrouvée",
     question:
         "Lorsque la personne disparue est majeure non protégée et retrouvée, à quelle condition son adresse peut-elle être communiquée ?",
@@ -312,7 +312,7 @@ final List<QuizQuestion> questionsDisparition = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature du cadre 74-1",
     question:
         "Pourquoi dit-on que le cadre de l’article 74-1 du C.P.P. est « spécifique » ?",
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature transitoire",
     question:
         "En quoi le cadre de l’article 74-1 du C.P.P. est-il qualifié de « transitoire » ?",
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions inquiétantes par circonstances",
     question:
         "La disparition d’un adulte non protégé traité pour une grave dépression, disparu subitement sans explication, doit être appréciée comme :",
@@ -360,7 +360,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Le procureur de la République, avisé d’une disparition inquiétante, ne peut PAS :",
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Dans quel cas le procureur peut-il déclencher le plan « Alerte enlèvement » ?",
@@ -391,7 +391,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Juge d’instruction",
     question:
         "Lorsque le procureur requiert l’ouverture d’une information sur le fondement de l’article 80-4 du C.P.P., le juge d’instruction est saisi pour :",
@@ -406,7 +406,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Juge d’instruction",
     question:
         "L’information ouverte sur le fondement des articles 74-1 et 80-4 du C.P.P. a pour particularité :",
@@ -421,7 +421,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Famille / partie civile",
     question:
         "Dans le cadre de l’article 80-4 du C.P.P., comment la famille de la personne disparue peut-elle intervenir dans la procédure ?",
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — OPJ / APJ",
     question:
         "Que doit faire l’OPJ ou l’APJ lorsqu’une disparition lui est signalée et qu’il la juge inquiétante ?",
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Pouvoirs de l’OPJ (art. 56 à 62)",
     question:
         "Dans le cadre de l’article 74-1, quels types d’actes l’OPJ peut-il accomplir sur instructions du procureur de la République ?",
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Durée du cadre 74-1",
     question:
         "Combien de temps les investigations peuvent-elles être menées sous le régime de l’article 74-1 avant de basculer éventuellement vers un autre cadre ?",
@@ -484,7 +484,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Suite après 8 jours",
     question:
         "À l’issue des huit jours d’enquête sous article 74-1, si la disparition demeure inquiétante, le procureur peut :",
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Information 80-4",
     question:
         "Dans le cadre d’une information « recherche des causes de la disparition », quelle est la durée maximale des interceptions téléphoniques possibles ?",
@@ -515,7 +515,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Personne non retrouvée",
     question:
         "Si la personne disparue n’est pas retrouvée, quelle option ne figure PAS parmi les suites possibles mentionnées par le texte ?",
@@ -530,7 +530,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Caractère criminel ou délictuel",
     question:
         "Lorsque l’enquête diligentée au titre de l’article 74-1 permet d’établir l’existence d’une infraction à l’origine de la disparition, le procureur peut :",
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exemples pratiques — Cas de mineur fugueur",
     question:
         "Un mineur placé en foyer, connu pour des fugues répétées, ne rentre pas à l’heure et reste introuvable. Comment doit être qualifiée cette disparition ?",
@@ -561,7 +561,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exemples pratiques — Adulte en bonne santé",
     question:
         "Un adulte de 30 ans, sans antécédent médical ni difficulté particulière, quitte son domicile après une dispute et ne donne plus de nouvelles depuis 3 heures. Sans élément supplémentaire, comment apprécier cette situation ?",
@@ -577,7 +577,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exemples pratiques — Personne malade",
     question:
         "Une personne âgée souffrant de la maladie d’Alzheimer quitte son domicile sans prévenir et ne revient pas. Cette disparition doit être :",
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionsDisparition = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Analyse juridique — Articulation 74-1 / préliminaire",
     question:
         "Dans quel cas le procureur peut-il décider de ne pas appliquer l’article 74-1, mais de recourir directement à l’enquête préliminaire ?",
@@ -610,7 +610,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Analyse juridique — Nature de l’information 80-4",
     question:
         "Pourquoi l’information ouverte sur le fondement de l’article 80-4 du C.P.P. est-elle qualifiée d’« exorbitante du droit commun » ?",
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Analyse juridique — Garde à vue et découverte d’infraction",
     question:
         "Dans le cadre d’une information ouverte pour recherche des causes de la disparition, une garde à vue peut être décidée :",
@@ -642,7 +642,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Réquisitions et informatique",
     question:
         "Dans le cadre d’une information pour recherche des causes de la disparition, quelles opérations informatiques l’OPJ commis par le juge peut-il réaliser ?",
@@ -658,7 +658,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Réquisitions opérateurs",
     question:
         "Quel est l’objet principal des réquisitions aux opérateurs de télécommunications mentionnées dans le cadre des disparitions inquiétantes ?",
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Juges compétents",
     question:
         "Dans le cadre de l’article 74-1 (sans information), qui autorise les interceptions de correspondances par la voie des télécommunications ?",
@@ -690,7 +690,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "Sous peine de nullité, quelles lignes téléphoniques ne peuvent être interceptées qu’après avis de leur autorité supérieure ?",
@@ -705,7 +705,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Communication du dossier",
     question:
         "Pourquoi le droit à la communication du dossier prévu à l’article 114 du C.P.P. est-il restreint lorsque la personne disparue (mineur ou majeur protégé) est retrouvée ?",
@@ -721,7 +721,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Article 74-1 vs recherche administrative",
     question:
         "En quoi le recours à l’article 74-1 du C.P.P. permet-il des investigations plus poussées que la simple procédure administrative de recherche de personnes ?",
@@ -737,7 +737,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Disparition volontaire révélée",
     question:
         "Une enquête 74-1 est ouverte pour un majeur protégé. Deux jours plus tard, il est retrouvé sain et sauf, ayant quitté volontairement son domicile pour rejoindre un proche. Quelle conséquence procédurale en découle ?",
@@ -753,7 +753,7 @@ final List<QuizQuestion> questionsDisparition = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Suspicion de crime",
     question:
         "Au cours d’une enquête 74-1, les indices convergent vers un possible homicide commis sur la personne disparue. Quelle est la réaction juridiquement adaptée du parquet ?",
@@ -1099,7 +1099,7 @@ class _QuizDisparitionPageState extends State<QuizDisparitionPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1288,7 +1288,7 @@ class _QuizDisparitionPageState extends State<QuizDisparitionPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1440,7 +1440,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1966,10 +1965,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2339,7 +2339,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2380,9 +2380,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

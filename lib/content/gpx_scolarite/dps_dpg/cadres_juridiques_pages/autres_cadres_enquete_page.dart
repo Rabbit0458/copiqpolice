@@ -26,9 +26,9 @@ class AutresCadresEnquetePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Panorama',
-                  child: const Text(
+                  child: Text(
                     'Au-delà de la flagrance et du préliminaire, d’autres cadres existent : '
                     'instruction par juge d’instruction, commission rogatoire, douanes, et dispositifs spécialisés. '
                     'Chaque régime a ses propres actes, seuils et autorisations.',
@@ -45,12 +45,12 @@ class AutresCadresEnquetePage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Instruction (JI) & commission rogatoire (CR)',
                   caption: 'Actes délégués & contrôle judiciaire',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Le JI dirige l’instruction : actes coercitifs possibles dans un cadre très encadré.',
                       ),
@@ -64,12 +64,12 @@ class AutresCadresEnquetePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Douanes / régimes spéciaux',
                   caption: 'Textes particuliers',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Pouvoirs douaniers spécifiques (visites, retenues, saisies) : se référer aux textes applicables.',
                       ),
@@ -83,12 +83,12 @@ class AutresCadresEnquetePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Enquêtes spécialisées',
                   caption: 'Techniques spéciales',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Interceptions, captations, sonorisations : autorisations judiciaires strictes.',
                       ),
@@ -102,11 +102,11 @@ class AutresCadresEnquetePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Réflexes PV',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _ChecklistLine(
                         'Citer le fondement (ordonnance JI/CR, texte douanier, autorisation).',
                       ),

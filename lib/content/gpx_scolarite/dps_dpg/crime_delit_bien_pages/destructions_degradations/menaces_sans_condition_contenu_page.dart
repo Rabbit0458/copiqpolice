@@ -109,16 +109,16 @@ class MenacesSansConditionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les menaces d’atteintes aux biens sans condition.",
                 ),
@@ -134,50 +134,50 @@ class MenacesSansConditionPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) La forme de la menace"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) La forme de la menace"),
+              _Paragraph(
                 "La menace est l’annonce d’un mal que l’on dit vouloir faire.\n"
                 "• Elle peut être verbale : dans ce cas, elle doit être réitérée.\n"
                 "• Elle peut résulter d’un écrit, d’une image ou de tout autre objet : dans ce cas, elle peut être unique.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) L’objet de la menace"),
-              const _Paragraph(
+              _SubTitle("B) L’objet de la menace"),
+              _Paragraph(
                 "La menace doit viser un bien déterminé. Elle doit représenter un danger direct pour les personnes "
                 "dans le cadre de cette incrimination.\n"
                 "Exemple souvent cité : menace « en cas de refus de payer, de transformer un cabaret en charcuterie ».",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si le danger pour les personnes n’existe pas, il faut retenir une qualification contraventionnelle : ",
                   ),
                   TextSpan(
                     text: "article R. 634-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (4e classe) pour une menace de dommage « important », ou ",
                   ),
                   TextSpan(
                     text: "article R. 631-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " (1re classe) pour une menace de dommage léger.",
                   ),
                 ],
@@ -193,9 +193,9 @@ class MenacesSansConditionPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Volonté d’atteindre moralement la victime"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Volonté d’atteindre moralement la victime"),
+              _Paragraph(
                 "L’intention coupable est requise. Peu importe le mobile. "
                 "Il est indifférent que l’auteur des menaces n’ait manifestement pas les moyens de les mettre à exécution.",
               ),
@@ -225,46 +225,46 @@ class MenacesSansConditionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "6 mois d’emprisonnement et 7 500 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les personnes morales encourent les peines prévues par ",
                 ),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              SizedBox(height: 6),
+              _Paragraph(
                 "Complicité : OUI. Elle est punissable pour l’infraction consommée, si un fait de complicité "
                 "et l’intention de s’associer à l’action de l’auteur principal sont caractérisés.",
               ),
@@ -304,10 +304,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -372,7 +372,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -415,7 +415,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -477,7 +477,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -488,10 +488,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -503,13 +502,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -522,13 +520,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

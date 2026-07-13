@@ -94,17 +94,17 @@ class DocumentInfoSynthetiquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Information des droits des victimes — "),
+                TextSpan(text: "Information des droits des victimes — "),
                 TextSpan(
                   text: "article 10-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -186,8 +186,8 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color border = isDark
-        ? Colors.white.withOpacity(.18)
-        : Colors.black.withOpacity(.10);
+        ? Colors.white.withValues(alpha: .18)
+        : Colors.black.withValues(alpha: .10);
 
     return Container(
       decoration: BoxDecoration(
@@ -200,7 +200,7 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withOpacity(.18) : Colors.black12,
+              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
 
@@ -268,7 +268,7 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
 
     showDialog(
       context: context,
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       builder: (_) {
         return StatefulBuilder(
           builder: (ctx, setLocalState) {
@@ -283,7 +283,7 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
                       vertical: 8,
                     ),
                     decoration: BoxDecoration(
-                      color: Colors.black.withOpacity(.35),
+                      color: Colors.black.withValues(alpha: .35),
                       borderRadius: BorderRadius.circular(14),
                     ),
 
@@ -399,10 +399,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -467,7 +467,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -510,7 +510,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -572,7 +572,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -583,10 +583,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -598,13 +597,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -617,13 +615,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

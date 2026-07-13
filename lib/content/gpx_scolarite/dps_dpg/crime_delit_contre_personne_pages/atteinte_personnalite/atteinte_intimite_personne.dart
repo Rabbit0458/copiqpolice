@@ -111,16 +111,16 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-3-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime l’atteinte à l’intimité d’une personne.",
                 ),
@@ -136,27 +136,27 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Observation des parties intimes dissimulées d’une personne",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La loi n°2018-703 du 3 août 2018 prévoit que tout moyen peut être utilisé "
                 "pour apercevoir les parties intimes de la victime.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le délit est constitué si la victime a caché son intimité à la vue des tiers :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "soit avec ses habits ;"),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "soit avec ses habits ;"),
+              _BulletPoint(
                 text: "soit parce qu’elle se trouvait dans un lieu clos.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Exemples",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Cette infraction permet notamment de réprimer l’utilisation d’un miroir pour regarder l’entrejambe "
@@ -166,10 +166,10 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) À l’insu ou sans le consentement"),
-              const _Paragraph(
+              _SubTitle("B) À l’insu ou sans le consentement"),
+              _Paragraph(
                 "L’auteur doit avoir agi à l’insu de la victime ou sans son consentement.",
               ),
             ],
@@ -204,43 +204,43 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-3-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Lorsqu’ils sont commis par une personne qui abuse de l’autorité que lui confèrent ses fonctions.",
               ),
-              const _BulletPoint(text: "Lorsqu’ils sont commis sur un mineur."),
-              const _BulletPoint(
+              _BulletPoint(text: "Lorsqu’ils sont commis sur un mineur."),
+              _BulletPoint(
                 text:
                     "Lorsqu’ils sont commis sur une personne dont la particulière vulnérabilité (âge, maladie, infirmité, déficience physique ou psychique, état de grossesse) est apparente ou connue de l’auteur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’ils sont commis par plusieurs personnes agissant en qualité d’auteur ou de complice.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’ils sont commis dans un véhicule affecté au transport collectif de voyageurs ou dans un lieu destiné à l’accès à un moyen de transport collectif de voyageurs.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsque des images ont été fixées, enregistrées ou transmises.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Objectif",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Ces aggravations visent notamment les situations où des individus utilisent un téléphone, "
@@ -260,91 +260,91 @@ class AtteinteIntimitePersonnePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 226-3-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 226-3-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Responsabilité pénale prévue expressément par ",
                 ),
                 TextSpan(
                   text: "l’article 226-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 226-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
               ),
             ],
@@ -383,10 +383,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -451,7 +451,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -494,7 +494,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -556,7 +556,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -588,7 +588,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -601,7 +601,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

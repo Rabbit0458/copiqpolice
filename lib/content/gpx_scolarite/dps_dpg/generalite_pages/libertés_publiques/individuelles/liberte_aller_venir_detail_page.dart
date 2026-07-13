@@ -28,14 +28,14 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF1976D2)
         : const Color(0xFF1565C0);
     final Color referenceColor = isDark
         ? const Color(0xFF64B5F6)
         : const Color(0xFF1565C0);
-    final Color dangerColor = const Color(0xFFFF3B30);
+    const Color dangerColor = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: background,
@@ -111,10 +111,10 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 12),
-          _NotaBox(
+          const _NotaBox(
             title: 'Triptyque à retenir',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'L’étude de la liberté d’aller et venir se fait en pratique à travers trois régimes juridiques :\n',
               ),
@@ -124,7 +124,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                     '• le régime du séjour, surtout pour les étrangers ;\n'
                     '• la police de la circulation et du stationnement, qui encadre l’usage des voies publiques.\n\n',
               ),
-              const TextSpan(
+              TextSpan(
                 text:
                     'Les atteintes portées à ces libertés doivent toujours être prévues par la loi, nécessaires, '
                     'adaptées et proportionnées à l’objectif poursuivi.',
@@ -143,7 +143,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La liberté de mouvement des personnes physiques correspond à la faculté de se déplacer et '
                 'de résider où l’on souhaite sur le territoire. Elle est, en principe, libre pour les nationaux, '
                 'mais peut être encadrée pour les étrangers (conditions d’entrée et de séjour).',
@@ -160,8 +160,8 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Pour les citoyens français, la liberté de mouvement est la règle. Elle se rattache aux articles 2, 4 et 13 de la '
                       'Déclaration des droits de l’homme et du citoyen de 1789 (liberté, sûreté et droit de circuler). '
@@ -175,7 +175,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                     color: dangerColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' ou certaines mesures de contrôle judiciaire peuvent limiter temporairement les déplacements, '
                       'mais elles doivent être prévues par la loi et placées sous contrôle du juge.',
@@ -244,7 +244,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Les réfugiés bénéficiant de la protection internationale ont le droit de résider régulièrement sur le territoire français. '
                 'Les titres qui leur sont délivrés (carte de résident, titre de séjour pluriannuel) leur permettent une liberté de mouvement '
                 'équivalente à celle des autres étrangers en situation régulière, sous réserve des mêmes limites d’ordre public.',
@@ -290,7 +290,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Certaines catégories de personnes se caractérisent par une mobilité accrue ou l’absence de domicile fixe. '
                 'La réglementation tente de concilier leur liberté d’aller et venir avec les nécessités d’ordre public et de gestion des espaces publics.',
               ),
@@ -346,7 +346,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Le national français peut séjourner librement sur l’ensemble du territoire, sauf mesures exceptionnelles '
                 '(interdiction de séjour, assignation à résidence dans le cadre de l’état d’urgence, etc.). '
                 'Pour les étrangers, le séjour est encadré par le C.E.S.E.D.A. et suppose la détention d’un titre. '
@@ -364,7 +364,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Les étrangers majeurs qui souhaitent rester plus de trois mois doivent être titulaires d’un document de séjour : '
                 'carte de séjour temporaire, pluriannuelle, carte de résident, ou cartes spécifiques (étudiant, salarié, retraité, etc.).',
               ),
@@ -407,7 +407,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Les ressortissants de l’Union européenne peuvent séjourner en France plus de trois mois s’ils exercent une activité '
                 'professionnelle, disposent de ressources suffisantes ou sont étudiants. Une carte de séjour n’est pas obligatoire, mais '
                 'un enregistrement peut être exigé. Des mesures de retrait du droit au séjour peuvent être décidées en cas de menace grave '
@@ -432,7 +432,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                       'l’administration peut mettre fin à son séjour par différents mécanismes : ',
                   style: GoogleFonts.fustat(fontSize: 14, height: 1.4),
                 ),
-                TextSpan(
+                const TextSpan(
                   text:
                       'obligation de quitter le territoire français (O.Q.T.F.), mesures d’expulsion ou extradition.',
                   style: TextStyle(
@@ -452,7 +452,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’O.Q.T.F. est une mesure administrative d’éloignement, prise par le préfet, lorsqu’un étranger se maintient '
                 'irrégulièrement sur le territoire (absence ou retrait de titre de séjour, menace à l’ordre public, etc.). '
                 'Un délai de départ volontaire d’en principe 30 jours peut être accordé, sauf risque de fuite ou menace grave. '
@@ -470,7 +470,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’expulsion est une mesure plus grave, visant un étranger dont la présence constitue une menace grave pour l’ordre public '
                 'ou la sécurité de l’État. Elle est décidée, en principe, par le ministre de l’Intérieur, après avis d’une commission '
                 'd’expulsion. Dans les cas d’urgence absolue, la procédure peut être allégée. Certaines catégories (mineurs, étrangers '
@@ -487,7 +487,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’extradition consiste à remettre une personne à un État étranger qui la recherche pour l’exécution d’une peine ou '
                 'la poursuite d’infractions. En France, elle est autorisée par décret du Premier ministre après avis de la chambre de '
                 'l’instruction. Les procédures d’extradition sont encadrées par les conventions internationales et ne peuvent conduire '
@@ -520,7 +520,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La liberté d’aller et venir implique de pouvoir se déplacer sur les voies ouvertes à la circulation. '
                 'La police de la circulation et du stationnement cherche à concilier ce principe avec la sécurité routière, '
                 'la fluidité des déplacements et la protection de l’environnement urbain.',
@@ -537,7 +537,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Le stationnement sur la voie publique est libre, mais peut être limité dans le temps ou dans l’espace pour assurer la rotation des véhicules '
                 'et la sécurité. Certaines restrictions visent spécifiquement le camping ou le stationnement prolongé des résidences mobiles '
                 '(camping-cars, caravanes, gens du voyage).',
@@ -576,7 +576,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'La circulation automobile est encadrée par le Code de la route et divers textes spéciaux. '
                 'Les autorités compétentes (État, préfets, maires) peuvent limiter ou organiser la circulation '
                 '(sens de circulation, zones piétonnes, limitations de vitesse, interdictions temporaires).',
@@ -643,7 +643,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'En cas d’infraction grave (conduite sous l’empire d’un état alcoolique, usage de stupéfiants, grand excès de vitesse, '
                 'refus d’obtempérer, accident mortel ou ayant entraîné des blessures graves…), les forces de l’ordre peuvent retenir '
                 'immédiatement le permis de conduire. Le préfet peut ensuite décider d’une suspension administrative pour une durée '
@@ -720,7 +720,7 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Ces sanctions ont un impact direct sur la liberté d’aller et venir du conducteur, mais sont légitimées par l’objectif de sécurité routière. '
                 'Elles sont strictement encadrées et motivées par les juridictions, sous le contrôle des voies de recours.',
               ),
@@ -737,27 +737,27 @@ class LiberteAllerVenirDetailPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La liberté d’aller et venir irrigue une grande partie du droit public et du droit pénal : mouvements des personnes, '
                 'séjour des étrangers, circulation routière, stationnement, délivrance et retrait du permis de conduire. '
                 'Pour le policier, elle constitue à la fois une liberté à respecter et un cadre à connaître pour appliquer correctement les textes.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Toujours vérifier sur quel aspect on intervient : mouvement, séjour ou circulation (et permis).',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'S’assurer que la mesure envisagée (contrôle, rétention, éloignement, retrait de permis, évacuation…) est prévue par un texte, '
                       'nécessaire au regard des circonstances et strictement proportionnée au but recherché.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Garder en tête que toute atteinte excessive ou injustifiée à la liberté d’aller et venir pourra être sanctionnée par les juridictions, '
@@ -802,10 +802,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -848,7 +848,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -882,7 +882,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -935,7 +935,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -960,7 +960,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -995,7 +995,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1008,7 +1008,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

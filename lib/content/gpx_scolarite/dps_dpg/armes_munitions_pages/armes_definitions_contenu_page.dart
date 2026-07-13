@@ -90,30 +90,30 @@ class ArmesDefinitionsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Code pénal : "),
+                TextSpan(text: "Code pénal : "),
                 TextSpan(
                   text: "article 132-75 du C.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Code de la sécurité intérieure : "),
+                TextSpan(text: "Code de la sécurité intérieure : "),
                 TextSpan(
                   text: "article R. 311-1 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ces définitions permettent de qualifier juridiquement ce qu’est une arme, une munition, "
                 "un élément d’arme, ainsi que certaines activités liées aux armes.",
               ),
@@ -128,75 +128,75 @@ class ArmesDefinitionsPage extends StatelessWidget {
             cardColor: cardCP,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Arme par nature"),
+            children: const [
+              _SubTitle("A) Arme par nature"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 132-75 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : « Est une arme tout objet conçu pour tuer ou blesser. »",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Arme par usage / par destination"),
+              _SubTitle("B) Arme par usage / par destination"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 132-75 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : « Tout autre objet susceptible de présenter un danger pour les personnes est assimilé à une arme dès lors "
                       "qu’il est utilisé pour tuer, blesser ou menacer, ou qu’il est destiné par celui qui en est porteur à tuer, blesser ou menacer. »",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 132-75 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : est assimilé à une arme tout objet ressemblant à une arme « par nature » au point de créer une confusion, "
                       "lorsqu’il est utilisé (ou destiné) pour menacer de tuer ou de blesser.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 132-75 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’utilisation d’un animal pour tuer, blesser ou menacer est assimilée à l’usage d’une arme "
                       "(le tribunal peut décider du sort de l’animal dans certains cas).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "À retenir : un objet peut être une arme soit parce qu’il est conçu pour blesser (arme par nature), "
                         "soit parce qu’il est utilisé/destiné à blesser ou menacer (arme par destination/usage), "
@@ -215,111 +215,111 @@ class ArmesDefinitionsPage extends StatelessWidget {
             cardColor: cardCSI,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Au sens de "),
+                TextSpan(text: "Au sens de "),
                 TextSpan(
                   text: "l’article R. 311-1 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", on entend par :"),
+                TextSpan(text: ", on entend par :"),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Armes par nature et munitions"),
-              const _BulletPoint(
+              _SubTitle("A) Armes par nature et munitions"),
+              _BulletPoint(
                 text:
                     "Arme : tout objet/dispositif conçu ou destiné par nature à tuer, blesser, frapper, neutraliser ou provoquer une incapacité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à canon lisse : âme du canon circulaire, ne donnant pas de mouvement de rotation au projectile.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à canon rayé : âme non circulaire avec rayures (conventionnelles/polygonales) donnant une rotation au projectile.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à feu : tire un projectile par combustion d’une charge propulsive (ou transformable aisément à cette fin).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à répétition automatique : se recharge automatiquement et peut, par une seule pression sur la détente, lâcher une rafale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à répétition manuelle : rechargée manuellement par introduction d’une munition prélevée dans un système d’alimentation, transportée via un mécanisme.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à répétition semi-automatique : se recharge automatiquement mais ne peut lâcher plus d’un coup par pression sur la détente.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme à un coup : sans système d’alimentation, chargée avant chaque tir par introduction manuelle de la munition.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme blanche : action perforante/tranchante/brisante due à la force humaine (hors explosion).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme camouflée : arme dissimulée sous la forme d’un autre objet (y compris un autre type d’arme).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("B) Armes d’épaule / armes de poing"),
-              const _BulletPoint(
+              _SubTitle("B) Armes d’épaule / armes de poing"),
+              _BulletPoint(
                 text:
                     "Arme d’épaule : arme que l’on épaule pour tirer (mesures de longueur selon règles CSI).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme de poing : arme tenue par une poignée à une main et non destinée à être épaulée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("C) Armes incapacitantes / neutralisation"),
-              const _BulletPoint(
+              _SubTitle("C) Armes incapacitantes / neutralisation"),
+              _BulletPoint(
                 text:
                     "Arme incapacitante (projection/émission) : provoque une incapacité à distance.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme incapacitante de contact : provoque une incapacité à bout touchant.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme neutralisée : rendue définitivement impropre au tir (procédés techniques rendant les éléments inutilisables).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("D) Munitions et éléments"),
-              const _BulletPoint(
+              _SubTitle("D) Munitions et éléments"),
+              _BulletPoint(
                 text:
                     "Élément d’arme : partie essentielle (canon, carcasse, boîte de culasse, culasse, barillet, systèmes de fermeture, conversion…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Élément de munition : projectile, amorce, douille (amorcée/chargée…), etc.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Munition perforante / explosive / incendiaire / expansive : classifications selon la nature du projectile.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Systèmes d’alimentation : magasins intégrés, chargeurs, bandes, réservoirs (fixes ou mobiles pendant le tir).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ces définitions CSI servent ensuite à appliquer les régimes (catégories A/B/C/D), "
                         "et à qualifier précisément la nature de l’arme/munition dans les procédures.",
@@ -337,79 +337,79 @@ class ArmesDefinitionsPage extends StatelessWidget {
             cardColor: cardOther,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Autres armes (exemples)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Autres armes (exemples)"),
+              _BulletPoint(
                 text:
                     "Arme d’alarme et de signalisation : dispositif tirant des munitions à blanc/irritants/pyrotechniques, non transformable aisément pour propulser un projectile (selon arrêté).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme de spectacle : arme à feu transformée pour munitions à blanc (tournages, théâtre…), classée dans sa catégorie d’origine.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme didactique : arme authentique avec mécanismes visibles, sans neutralisation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme factice : apparence d’une arme à feu expulstant un projectile non métallique < 2 joules.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Munition inerte : munition factice non transformable en munition active.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lanceur de paintball : propulsion non pyrotechnique d’un projectile marquant l’impact.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Activités en relation avec les armes"),
-              const _BulletPoint(
+              _SubTitle("B) Activités en relation avec les armes"),
+              _BulletPoint(
                 text:
                     "Activité d’intermédiation : rapprochement/organisation de contrats ou transferts d’armes/munitions (courtage, mandat, commission).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Activité de fabrication : conception, réparation, transformation, assemblage d’armes/éléments/munitions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armurier : activité pro (fabrication, commerce, échange, location, prêt, réparation ou transformation).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Port d’arme : avoir une arme sur soi utilisable immédiatement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transport d’arme : déplacer une arme en l’ayant auprès de soi, inutilisable immédiatement.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Ne sont pas des armes (CSI)"),
+              _SubTitle("C) Ne sont pas des armes (CSI)"),
               _Paragraph.rich([
-                const TextSpan(text: "Au sens de "),
+                TextSpan(text: "Au sens de "),
                 TextSpan(
                   text: "l’article R. 311-1 IV du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Objets tirant un projectile / projetant des gaz avec énergie à la bouche inférieure à 2 joules.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Réducteurs de son : pièces additionnelles ne modifiant pas le fonctionnement de l’arme.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Objets conçus pour sauvetage, abattage, pêche au harpon, usages industriels/techniques (si usage strictement limité et non détournable).",
               ),
@@ -466,10 +466,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -534,7 +534,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -577,7 +577,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -639,7 +639,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -650,10 +650,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -665,13 +664,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -684,13 +682,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

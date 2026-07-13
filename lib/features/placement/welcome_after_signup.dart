@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 // ✅ Import unique (contient AppSettingsController)
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
-    show AppSettingsController, AppNotifier;
+    show AppSettingsController;
 
 class WelcomeAfterSignupPage extends StatelessWidget {
   const WelcomeAfterSignupPage({super.key});
@@ -33,10 +33,10 @@ class WelcomeAfterSignupPage extends StatelessWidget {
             : _kLightBackground;
 
         // Couleurs
-        final white = const Color(0xFFFFFFFF);
-        final titleColor = white;
+        const white = Color(0xFFFFFFFF);
+        const titleColor = white;
         final bodyColor = _whiteA(.90);
-        final buttonBg = Colors.white;
+        const buttonBg = Colors.white;
         final buttonFg = isDark ? Colors.black : const Color(0xFF0E44D6);
 
         return Theme(

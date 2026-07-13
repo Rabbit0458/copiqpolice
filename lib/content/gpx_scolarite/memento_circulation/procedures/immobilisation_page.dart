@@ -93,28 +93,28 @@ class ImmobilisationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L. 325-1 à L. 325-13 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "articles R. 325-1 à R. 325-11 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "L’immobilisation est une mesure administrative prévue par le Code de la route : "
@@ -156,25 +156,25 @@ class ImmobilisationPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Où et comment immobiliser ?"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Où et comment immobiliser ?"),
+              _Paragraph(
                 "L’immobilisation s’opère sur place ou à proximité du lieu de constatation, "
                 "en respectant les règles relatives au stationnement.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("2) Deux situations pratiques"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("2) Deux situations pratiques"),
+              _BulletPoint(
                 text:
                     "Si l’infraction cesse en présence de l’agent : pas de fiche d’immobilisation, le véhicule peut repartir.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si l’infraction n’a pas cessé lorsque l’agent quitte le lieu : l’agent peut saisir l’O.P.J. territorialement compétent en lui remettant la fiche d’immobilisation et le certificat d’immatriculation (et, selon cas, les pièces administratives nécessaires à la circulation).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La suspension de l’autorisation de circuler liée à l’immobilisation est enregistrée au S.I.V. "
@@ -182,31 +182,31 @@ class ImmobilisationPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Dans tous les cas, "),
-                const TextSpan(
+                TextSpan(text: "Dans tous les cas, "),
+                TextSpan(
                   text: "un double de la fiche d’immobilisation",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " est remis au contrevenant."),
+                TextSpan(text: " est remis au contrevenant."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Cas particulier « barrière de dégel » : l’autorité saisie est ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’ingénieur des ponts et chaussées",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " ou "),
-                const TextSpan(
+                TextSpan(text: " ou "),
+                TextSpan(
                   text: "le maire (voie communale)",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -219,30 +219,30 @@ class ImmobilisationPage extends StatelessWidget {
             cardColor: cardPart,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Remplacement du conducteur"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Remplacement du conducteur"),
+              _Paragraph(
                 "L’immobilisation est levée dès qu’un conducteur qualifié (proposé par le conducteur, "
                 "ou le cas échéant l’accompagnateur de l’élève conducteur ou le propriétaire) peut assurer la conduite, notamment si :",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text:
                     "Conducteur (ou accompagnateur) présumé en état d’ivresse / sous l’empire d’un état alcoolique.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Conducteur non titulaire du permis de conduire exigé.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Conducteur en infraction à la réglementation sociale dans les transports routiers.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Pendant la durée de rétention du permis de conduire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "À défaut de conducteur qualifié, les policiers peuvent prendre toute mesure pour placer le véhicule "
@@ -251,117 +251,117 @@ class ImmobilisationPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Fiche de circulation provisoire (valable 7 jours)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le verso de la fiche d’immobilisation peut tenir lieu de fiche de circulation provisoire valable 7 jours.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Le Code de la route limite cette procédure aux infractions liées à :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Contrôle technique : la fiche prescrit la présentation du véhicule dans le centre de contrôle technique choisi par le conducteur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Surteintage des vitres avant : la fiche prescrit la mise en conformité du véhicule.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Chronotachygraphe / dispositif de limitation de vitesse (transports) : la fiche prescrit l’installation, la réparation ou la mise en conformité par un installateur agréé.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Immobilisation sur le lieu de réparation"),
-              const _Paragraph(
+              _SubTitle("C) Immobilisation sur le lieu de réparation"),
+              _Paragraph(
                 "Si l’infraction concerne l’état / l’équipement du véhicule et nécessite des réparations pour cesser :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Le conducteur peut être autorisé à déplacer le véhicule en conditions de sécurité satisfaisantes (au besoin accompagné) vers le garage le plus proche.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ou à faire remorquer le véhicule, à ses frais, par un professionnel qualifié.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "L’immobilisation devient effective au lieu de réparation.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Véhicule en surcharge"),
-              const _Paragraph(
+              _SubTitle("D) Véhicule en surcharge"),
+              _Paragraph(
                 "L’agent verbalisateur peut prescrire la présentation du véhicule à une bascule proche en vue de sa pesée. "
                 "L’immobilisation peut être prononcée si le poids réel excède de 5% le PTAC figurant sur le certificat d’immatriculation.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "E) Véhicule polluant / bruyant ou cyclomoteur débridé",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Si le véhicule paraît exagérément bruyant, non conforme aux émissions (fumées/gaz toxiques), "
                 "ou si un cyclomoteur paraît débridé (vitesse/cylindrée/puissance) :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Soit prescrire la présentation à un service de contrôle spécialisé (ex : brigade de contrôle technique).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Soit établir une fiche de circulation provisoire autorisant la conduite vers un établissement choisi pour effectuer les réparations nécessaires.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "F) Transports de marchandises dangereuses (TMD)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Toute décision d’immobilisation d’un transport de marchandises dangereuses doit être prise "
                 "après avis d’agents spécialisés (sécurité civile, D.R.E.A.L.) lorsqu’une infraction est constatée, notamment :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Circulation sur voies ou dates interdites par arrêté préfectoral.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Non-respect de l’arrêté TMD ou de règles relatives aux visites techniques, certificat d’agrément, etc.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "G) Véhicule endommagé lors d’un accident (procédure dédiée)",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Procédure « véhicule endommagé » : articles L. 327-4 et R. 327-1 à R. 327-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les A.P.J.A. ne sont pas habilités à mettre en œuvre la procédure « véhicule endommagé ». "
@@ -381,38 +381,38 @@ class ImmobilisationPage extends StatelessWidget {
             cardColor: cardLevee,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _BulletPoint(
+            children: const [
+              _BulletPoint(
                 text:
                     "L’immobilisation ne peut pas être maintenue après cessation de la circonstance qui l’a motivée.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le véhicule peut circuler entre le lieu d’immobilisation et la résidence de l’autorité désignée "
                 "pour lever la mesure, sous couvert du double de la fiche d’immobilisation.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Autorités pouvant lever la mesure"),
-              const _BulletPoint(text: "L’agent qui l’a prescrite."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Autorités pouvant lever la mesure"),
+              _BulletPoint(text: "L’agent qui l’a prescrite."),
+              _BulletPoint(
                 text:
                     "L’O.P.J. (si une fiche d’immobilisation a été établie) — restitution du certificat d’immatriculation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’ingénieur des ponts, des eaux et des forêts ou le maire (barrières de dégel).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La fin de la suspension de l’autorisation de circuler doit être enregistrée dans le S.I.V.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Si la cessation de l’infraction n’est pas justifiée dans un délai de 48 heures, l’O.P.J. peut transformer l’immobilisation en mise en fourrière.",
               ),
@@ -437,13 +437,13 @@ class ImmobilisationPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 12),
-          _Paragraph.rich([
-            const TextSpan(text: "Mis à jour le "),
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(text: "Mis à jour le "),
+            TextSpan(
               text: "15/06/2025",
               style: TextStyle(fontWeight: FontWeight.w900),
             ),
-            const TextSpan(text: "."),
+            TextSpan(text: "."),
           ]),
         ],
       ),
@@ -658,10 +658,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -726,7 +726,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -769,7 +769,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -831,7 +831,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -842,10 +842,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -857,13 +856,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -876,13 +874,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

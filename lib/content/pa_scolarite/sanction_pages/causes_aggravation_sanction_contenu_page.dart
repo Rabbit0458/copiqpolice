@@ -481,7 +481,7 @@ class PaCausesAggravationSanctionContenuPage extends StatelessWidget {
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
-              '/gpx/pa/dps_dpg/sanctions/quiz/sanction_causes_aggravation',
+              '/pa/sanction/quiz/sanction_causes_aggravation',
             ),
           ),
           const SizedBox(height: 22),

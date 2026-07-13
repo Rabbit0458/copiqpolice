@@ -28,7 +28,7 @@ class UaConditionsPrealablesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF1976D2)
         : const Color(0xFF1565C0);
@@ -122,28 +122,28 @@ class UaConditionsPrealablesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Pour que les règles de l’usage des armes puissent être invoquées, '
                 'le policier doit d’abord agir dans l’exercice de ses fonctions. '
                 'Cette exigence permet de distinguer les interventions professionnelles des situations purement privées.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // a) Pendant le service
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: 'Le policier agit dans l’exercice de ses fonctions : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'lorsqu’il intervient pendant son temps de service et dans le cadre de ses missions habituelles '
                       '(interpellations, contrôles, sécurisation de lieux, protection de personnes, etc.).',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              SizedBox(height: 6),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Il intervient alors sur instruction de sa hiérarchie ou dans le cadre d’une mission de police judiciaire ou de police administrative, '
@@ -151,21 +151,21 @@ class UaConditionsPrealablesPage extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // b) Hors service mais au titre des textes qui l’y obligent
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le policier peut également agir dans l’exercice de ses fonctions lorsqu’il est hors service, ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'à la condition expresse d’intervenir en application de textes particuliers : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Les articles R. 434-19 du Code de la Sécurité Intérieure et 113-3 du Règlement Général d’Emploi de la Police Nationale ',
@@ -177,18 +177,18 @@ class UaConditionsPrealablesPage extends StatelessWidget {
                       'pour porter assistance à toute personne en danger, lorsqu’il peut agir sans risque disproportionné pour lui-même ou pour autrui.',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint.rich([
+              SizedBox(height: 6),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Dans ce cadre, l’usage de l’arme reste strictement encadré : l’agent demeure soumis aux mêmes obligations '
                       'de nécessité, de proportionnalité et de maîtrise de la force que lorsqu’il est en service.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // NOTA sur les policiers adjoints
-              const _NotaBox(
+              _NotaBox(
                 title: 'NOTA – Situation des policiers adjoints',
                 bodySpans: [
                   TextSpan(
@@ -224,33 +224,33 @@ class UaConditionsPrealablesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La deuxième condition préalable impose que le policier soit clairement identifiable comme représentant de la force publique. '
                 'L’usage d’une arme par un agent de police est en effet un acte d’autorité qui doit pouvoir être rattaché, sans ambiguïté, '
                 'à l’exercice de ses fonctions officielles.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Cette condition est remplie lorsque le policier est revêtu de son uniforme réglementaire ou lorsqu’il porte des insignes extérieurs et apparents de sa qualité, ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'par exemple un brassard « POLICE », une chasuble ou tout autre signe distinctif immédiatement reconnaissable par la population.',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              SizedBox(height: 10),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Le port d’insignes apparents permet de garantir la lisibilité de l’action policière, de limiter les risques de confusion avec un particulier armé et de renforcer la confiance du public.',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _NotaBox(
+              SizedBox(height: 8),
+              _NotaBox(
                 title: 'NOTA – Spécificité pour les policiers adjoints',
                 bodySpans: [
                   TextSpan(
@@ -277,21 +277,21 @@ class UaConditionsPrealablesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La troisième condition préalable est au cœur du contrôle exercé par les juges sur l’usage des armes : '
                 'le recours à l’arme doit être à la fois absolument nécessaire et strictement proportionné. '
                 'Il s’agit d’une exigence très forte, qui conditionne la légalité de l’acte.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // Absolue nécessité
               _Paragraph.rich([
                 TextSpan(
                   text: 'L’« absolue nécessité » ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'suppose l’existence d’une menace grave, actuelle ou imminente, '
                       'pesant sur la vie ou l’intégrité physique du policier lui-même ou d’une ou plusieurs autres personnes. '
@@ -299,32 +299,32 @@ class UaConditionsPrealablesPage extends StatelessWidget {
                       'de penser que l’individu est dangereux et susceptible de porter une telle atteinte.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // Proportionnalité
               _Paragraph.rich([
                 TextSpan(
                   text: 'La « stricte proportionnalité » ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'implique que l’usage de l’arme soit le moyen le moins dangereux disponible pour écarter la menace. '
                       'La riposte doit être mesurée : le type d’arme utilisé, le nombre de tirs, la zone visée et le contexte '
                       'doivent rester en rapport avec la gravité de la menace. Toute réaction manifestement excessive peut être pénalement sanctionnée.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph(
                 'En pratique, les magistrats examinent toujours si d’autres moyens de contrainte (ordre verbal, usage de la force physique, '
                 'emploi d’armes intermédiaires, appel de renforts, mise à distance, etc.) auraient permis de gérer la situation sans recourir au tir. '
                 'L’usage de l’arme à feu doit donc rester une ultime solution.',
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // Lien avec la légitime défense (Code pénal)
-              const _NotaBox(
+              _NotaBox(
                 title: 'Lien avec la légitime défense prévue par le Code pénal',
                 bodySpans: [
                   TextSpan(
@@ -357,31 +357,31 @@ class UaConditionsPrealablesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Avant tout usage de l’arme, le policier doit, autant que possible, vérifier mentalement ces trois points :',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Suis-je bien dans l’exercice de mes fonctions (en service ou, le cas échéant, en intervention hors service prévue par les textes) ?',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Suis-je identifiable comme policier par mon uniforme ou par des insignes extérieurs et apparents de ma qualité ?',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'L’usage de l’arme est-il réellement la seule solution pour écarter une menace grave sur la vie ou l’intégrité physique, '
                       'et ma réaction est-elle strictement proportionnée à cette menace ?',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph(
                 'Si l’une de ces réponses est négative, le policier doit privilégier d’autres moyens d’action et, le cas échéant, '
                 's’interroger sur l’application éventuelle du régime général de la légitime défense prévu par le Code pénal.',
@@ -424,10 +424,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -467,7 +467,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -500,7 +500,7 @@ class _Paragraph extends StatelessWidget {
 class _BulletPoint extends StatelessWidget {
   final List<InlineSpan> spans;
 
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   @override
   Widget build(BuildContext context) {
@@ -548,7 +548,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -573,7 +573,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -605,7 +605,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -618,7 +618,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -111,24 +111,24 @@ class DelitFuitePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 434-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article L. 231-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définissent et répriment le délit de fuite.",
                 ),
               ]),
@@ -143,28 +143,28 @@ class DelitFuitePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un conducteur de véhicule / d’engin"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un conducteur de véhicule / d’engin"),
+              _Paragraph(
                 "Il s’agit de la personne qui assume la direction de tout véhicule (ou ensemble de véhicules). "
                 "Elle possède la maîtrise matérielle des mouvements du véhicule.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "articles R. 412-6 et R. 412-44 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ne sont pas concernés : les piétons (y compris ceux qui poussent une voiture d’enfant, "
                         "un fauteuil, un vélo/cycle à la main, un caddie…), ni les conducteurs des matériels roulants "
@@ -172,130 +172,130 @@ class DelitFuitePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Le véhicule / l’engin"),
-              const _Paragraph("Sont visés :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              _SubTitle("B) Le véhicule / l’engin"),
+              _Paragraph("Sont visés :"),
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Véhicules routiers : voitures, PL, transports en commun, motos, cyclomoteurs, camions, tracteurs, engins agricoles, tricycles/quadricycles à moteur, cycles, EDPM motorisés, engins à traction animale, voiture à bras.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Engins fluviaux et maritimes : engins nautiques sans moteur (barques, planches à voile) et engins motorisés (bateaux, péniches, off-shore, jet ski, hydroglisseurs…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Engins volants",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délit de fuite est applicable en cas d’accident causé par un aéronef (aux personnes de la surface), selon ",
                   ),
                   TextSpan(
                     text: "l’article L. 6142-9 du code des transports",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ", sauf si l’arrêt de l’aéronef aurait compromis la sécurité des passagers (avions, hélicoptères, delta-plane, ULM, parachutes…).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un accident"),
-              const _Paragraph(
+              _SubTitle("C) Un accident"),
+              _Paragraph(
                 "Il peut s’agir d’un accident mortel, corporel ou matériel : fait involontaire ayant provoqué "
                 "un dommage aux personnes ou aux biens, événement fortuit et anormal.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Jurisprudence : "),
+                TextSpan(text: "Jurisprudence : "),
                 TextSpan(
                   text: "Cass. crim., 4 mai 1950",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’accident doit s’être produit en un lieu public ou privé ouvert à la circulation et au stationnement. "
                 "Il peut concerner des biens meubles/immeubles (murs, véhicules, barrières…) ou des animaux, "
                 "mais seulement s’il cause un préjudice à autrui.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Lien de causalité"),
-              const _Paragraph(
+              _SubTitle("D) Lien de causalité"),
+              _Paragraph(
                 "Le véhicule/engin doit avoir causé ou occasionné l’accident : le lien de causalité est exigé.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Soit le véhicule est impliqué : contact avec la victime/la chose endommagée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Soit le véhicule a occasionné l’accident : pas nécessairement de contact (ex. manœuvre provoquant une chute/une collision).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Une omission de s’arrêter"),
+              _SubTitle("E) Une omission de s’arrêter"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 231-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : tout conducteur/usager impliqué dans un accident doit :",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _IntroBullet(
                 text:
                     "S’arrêter aussitôt que possible sans créer un danger pour la circulation.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Si dégâts matériels uniquement : communiquer son identité et son adresse à toute personne impliquée.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "S’il y a blessés ou tués : faire avertir/avertir les services de police ou de gendarmerie, communiquer son identité/adresse, éviter de modifier l’état des lieux et préserver les traces utiles.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Précisions : arrêt aussitôt et sur les lieux. ",
                 ),
                 TextSpan(
                   text:
                       "(Cass. crim., 19 mars 1956 ; Cass. crim., 12 juillet 1966)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La durée de l’arrêt importe peu, mais elle doit être suffisante pour permettre l’identification "
                       "par la partie adverse et/ou les témoins, et un minimum de constatations matérielles. ",
@@ -303,79 +303,79 @@ class DelitFuitePage extends StatelessWidget {
                 TextSpan(
                   text:
                       "(Cass. crim., 26 mai 1910 ; Cass. crim., 2 octobre 1978)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Jurisprudences (illustrations)"),
+              _SubTitle("Jurisprudences (illustrations)"),
               _NotaBox(
                 title: "Exemples",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "• Le conducteur prend la fuite puis revient : délit constitué ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 4 novembre 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• Ne s’arrête pas puis se présente ensuite à la police/gendarmerie : délit constitué ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 19 mars 1956 ; 19 novembre 1974)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• S’arrête mais donne un faux nom/une fausse adresse : délit constitué ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 14 avril 1959)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• Manifeste l’intention de fuir mais est empêché (véhicule endommagé / retenu) : délit constitué ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 10 juin 1970)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• S’arrête assez longtemps pour permettre le relevé de l’immatriculation : délit non constitué (même s’il refuse de décliner son identité) ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 janvier 1958 ; 2 juillet 1969)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -389,33 +389,33 @@ class DelitFuitePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Conscience d’avoir causé/occasionné un accident",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le conducteur a connaissance de l’accident : il s’en est rendu compte, il l’a vu, il l’a constaté.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Volonté d’échapper à une responsabilité pénale ou civile",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Il n’est pas nécessaire que le juge constate une responsabilité effectivement encourue : "
                       "il suffit que l’auteur ait pu l’encourir. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 23 mai 1953)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le conducteur a la volonté de se soustraire à sa propre responsabilité par la fuite.",
               ),
             ],
@@ -429,31 +429,31 @@ class DelitFuitePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph("Aucune (au titre du délit de fuite lui-même)."),
-              const SizedBox(height: 10),
+            children: const [
+              _Paragraph("Aucune (au titre du délit de fuite lui-même)."),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
                   TextSpan(
                     text: "Article 434-10 alinéa 2 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : lorsque les articles 221-6 et 222-19 s’appliquent, les peines prévues par ces articles sont portées au double "
                         "(uniquement pour véhicule/engin terrestre sans moteur, fluvial ou maritime).",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "À retenir",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délit de fuite (VTM) peut aussi constituer une circonstance aggravante de l’homicide involontaire "
                         "ou des atteintes involontaires : ",
@@ -461,12 +461,12 @@ class DelitFuitePage extends StatelessWidget {
                   TextSpan(
                     text:
                         "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -480,62 +480,62 @@ class DelitFuitePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification : "),
-                const TextSpan(text: "délit. "),
-                const TextSpan(text: "— Peines principales : "),
-                const TextSpan(
+                TextSpan(text: "Qualification : "),
+                TextSpan(text: "délit. "),
+                TextSpan(text: "— Peines principales : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "Article 434-10 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              SizedBox(height: 12),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Illustration (complicité)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Est complice par provocation (assortie d’abus d’autorité) le propriétaire qui ordonne à son chauffeur de poursuivre sa route après un accident ",
                   ),
                   TextSpan(
                     text: "(TGI Paris, 19 novembre 1982)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -574,10 +574,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -642,7 +642,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -685,7 +685,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -747,7 +747,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -779,7 +779,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -792,7 +792,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

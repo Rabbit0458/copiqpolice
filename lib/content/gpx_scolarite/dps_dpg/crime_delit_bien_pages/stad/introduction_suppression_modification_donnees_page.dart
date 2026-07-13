@@ -110,16 +110,16 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’introduction, l’extraction, la détention, la reproduction, la transmission, "
                       "la suppression ou la modification frauduleuse de données contenues dans un système de traitement automatisé de données.",
@@ -136,71 +136,71 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Une action sur des données contenues dans le système",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’action doit porter sur les données contenues dans le système. "
                 "Peu importe que le système soit finalisé ou en cours d’élaboration.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Jurisprudence : système en cours d’élaboration — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 05 janvier 1994",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "L’auteur peut avoir eu un accès licite ou non au système. "
                 "Il importe peu également que l’action ne crée aucune perturbation apparente ou immédiate du fonctionnement.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Terme courant",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Dans la pratique, cette forme de piratage informatique est souvent appelée « cracking ».",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Il est admis que l’action sur des données sorties d’un système ne tombe pas sous le coup de la loi "
                 "(ex. manipulation de données sur un support externe : clé USB, disque dur, CD-ROM…). "
                 "En revanche, si ces données sont réintroduites dans le système, l’incrimination peut s’appliquer.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Les pratiques incriminées"),
-              const _Paragraph(
+              _SubTitle("B) Les pratiques incriminées"),
+              _Paragraph(
                 "L’article 323-3 vise plusieurs comportements distincts. "
                 "La jurisprudence incrimine l’action illicite qui porte directement sur les données, ou qui les atteint "
                 "à travers leur mode de traitement ou de transmission.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Introduction de données"),
-              const _Paragraph(
+              _SubTitle("1) Introduction de données"),
+              _Paragraph(
                 "L’introduction peut être comprise comme l’incorporation de caractères informatiques nouveaux sur un support du système. "
                 "Dans la pratique, l’insertion d’un programme peut impliquer suppression/modification des données traitées, "
                 "et tombe alors dans le champ de l’article 323-3.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "L’introduction d’un logiciel espion entre dans le champ de l’incrimination (souvent appelée « sniffing »). "
@@ -208,47 +208,47 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cartes bancaires : insertion de nouvelles données destinées à tromper un terminal de paiement — ",
                   ),
                   TextSpan(
                     text: "TGI Paris, 25 février 2000",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Extraction de données"),
-              const _Paragraph(
+              _SubTitle("2) Extraction de données"),
+              _Paragraph(
                 "L’extraction assure une protection spécifique aux données elles-mêmes : elle permet de réprimer celui "
                 "qui effectue une simple copie tout en laissant les données à la disposition du propriétaire légitime. "
                 "L’incrimination de vol est souvent inadaptée car les données ne sont pas « soustraites ».",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) Détention — Reproduction — Transmission"),
-              const _Paragraph(
+              _SubTitle("3) Détention — Reproduction — Transmission"),
+              _Paragraph(
                 "• La détention peut s’apparenter à un recel de données extraites, reproduites ou transmises frauduleusement.\n"
                 "• La reproduction vise les actes de copie de données obtenues frauduleusement, quel qu’en soit le support.\n"
                 "• La transmission vise toute diffusion de données à un tiers, quel qu’en soit le moyen ou le support.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4) Suppression — Modification"),
-              const _Paragraph(
+              _SubTitle("4) Suppression — Modification"),
+              _Paragraph(
                 "Supprimer des données peut consister en une atteinte à l’intégrité des données (effacement, « écrasement »), "
                 "ou encore un déplacement hors du système / vers une zone réservée.\n\n"
                 "La modification correspond à une altération de l’information portée par les données.\n\n"
@@ -256,23 +256,23 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
                 "modifier suppose souvent d’ajouter, retrancher ou déplacer des données.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Comptable ayant modifié des données enregistrées définitivement dans le système automatisé de comptabilité — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 08 décembre 1999",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -303,45 +303,45 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-3 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque l’infraction est commise à l’encontre d’un système de traitement automatisé de données "
                       "à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque l’infraction est commise en bande organisée.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque l’infraction expose autrui à un risque immédiat de mort ou de blessures graves, "
                       "ou fait obstacle aux secours destinés à faire échapper une personne à un péril imminent "
@@ -359,102 +359,102 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 150 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (STAD personnel mis en œuvre par l’État) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 300 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-3 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (bande organisée) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (bande organisée) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 300 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-4-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (risque immédiat / obstacle aux secours) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d’emprisonnement et 300 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 323-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", avec amende selon "),
+                TextSpan(text: ", avec amende selon "),
                 TextSpan(
                   text: "l’article 131-38 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et peines prévues par "),
+                TextSpan(text: " et peines prévues par "),
                 TextSpan(
                   text: "l’article 131-39 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’interdiction mentionnée au 2° de l’article 131-39 porte sur l’activité dans l’exercice ou à l’occasion "
                         "de l’exercice de laquelle l’infraction a été commise.",
@@ -462,29 +462,29 @@ class IntroductionSuppressionModificationDonneesPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _BulletPoint(
                 text:
                     "Tentative : OUI — spécialement prévue et réprimée par l’article 323-7 du Code pénal.",
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 "Comme pour toute tentative : commencement d’exécution et absence de résultat en raison de circonstances "
                 "indépendantes de la volonté de l’auteur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -525,10 +525,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -593,7 +593,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -636,7 +636,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -698,7 +698,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -730,7 +730,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -743,7 +743,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

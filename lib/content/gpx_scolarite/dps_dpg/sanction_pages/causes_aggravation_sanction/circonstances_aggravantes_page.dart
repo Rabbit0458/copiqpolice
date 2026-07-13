@@ -26,9 +26,9 @@ class CirconstancesAggravantesPage extends StatelessWidget {
         ? const Color(0xFF0F1E1B)
         : const Color(0xFFF0FFFB);
 
-    final Color accentBlue = const Color(0xFF1565C0);
-    final Color accentAmber = const Color(0xFFF9A825);
-    final Color accentTeal = const Color(0xFF00897B);
+    const Color accentBlue = Color(0xFF1565C0);
+    const Color accentAmber = Color(0xFFF9A825);
+    const Color accentTeal = Color(0xFF00897B);
 
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0B1B3A);
 
@@ -70,19 +70,19 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withOpacity(
+                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                       .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withOpacity(
+                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                         .08,
                       ),
                     ),
                   ),
-                  child: Column(
+                  child: const Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Paragraph(
                         "La peine encourue par l'auteur d'une infraction peut être aggravée lorsque celle-ci a été commise dans une circonstance considérée par la loi comme aggravant la criminalité de l'acte.",
                       ),
@@ -135,41 +135,41 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: [
-                    const _Paragraph(
+                  children: const [
+                    _Paragraph(
                       "Il s'agit des circonstances aggravantes qui augmentent uniquement la culpabilité de celui qui agit car elles sont liées à sa personnalité. Tel est le cas de la récidive qui est « purement » personnelle et qui ne s'étend donc pas au coauteur ou au complice.",
                     ),
-                    const SizedBox(height: 12),
-                    const _Paragraph(
+                    SizedBox(height: 12),
+                    _Paragraph(
                       "Cependant, les circonstances aggravantes personnelles liées à la qualité ou à la fonction ne semblent pas être exclusives à l'auteur. Elles ne sont donc pas dites « purement personnelles ».",
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
                             "En effet, un arrêt de la chambre criminelle de la cour de cassation indique que : « Sont applicables au complice les circonstances aggravantes liées à la qualité de l'auteur principal » (",
                       ),
-                      const TextSpan(
+                      TextSpan(
                         text: "Cass. crim., 7 septembre 2005",
                         style: TextStyle(fontWeight: FontWeight.w800),
                       ),
-                      const TextSpan(text: ")."),
+                      TextSpan(text: ")."),
                     ]),
-                    const SizedBox(height: 10),
-                    const _Paragraph(
+                    SizedBox(height: 10),
+                    _Paragraph(
                       "Elle consacre ainsi le principe de l'emprunt de criminalité (étudié ultérieurement dans les principes généraux de la responsabilité pénale).",
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
                             "Le complice encourt la responsabilité de toutes les circonstances qui qualifient l'acte poursuivi sans qu'il soit nécessaire que celles-ci aient été connues de lui (",
                       ),
-                      const TextSpan(
+                      TextSpan(
                         text: "Cass. crim., 21 mai 1996",
                         style: TextStyle(fontWeight: FontWeight.w800),
                       ),
-                      const TextSpan(text: ")."),
+                      TextSpan(text: ")."),
                     ]),
                   ],
                 ),
@@ -181,18 +181,18 @@ class CirconstancesAggravantesPage extends StatelessWidget {
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
-                  children: [
-                    const _Paragraph(
+                  children: const [
+                    _Paragraph(
                       "Il s'agit des circonstances aggravantes qui s'attachent à la matérialité du fait poursuivi dont elles ne peuvent être séparées.",
                     ),
-                    const SizedBox(height: 10),
-                    const _Paragraph(
+                    SizedBox(height: 10),
+                    _Paragraph(
                       "Elles ne peuvent donc pas exister à l'égard de l'un des participants sans exister en même temps à l'égard de tous les autres, qu'ils soient auteurs, coauteurs ou complices.",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
                     _NotaBox(
                       bodySpans: [
-                        const TextSpan(
+                        TextSpan(
                           text:
                               "La doctrine, quant à elle, ajoute une troisième catégorie : les circonstances aggravantes mixtes (tenant à la fois à la qualité de l'auteur et à la criminalité de l'acte) qui semblent donc être assimilées par la jurisprudence aux circonstances aggravantes réelles.",
                         ),
@@ -240,10 +240,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -308,7 +308,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -351,7 +351,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -413,7 +413,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -424,10 +424,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -439,13 +438,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -458,13 +456,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

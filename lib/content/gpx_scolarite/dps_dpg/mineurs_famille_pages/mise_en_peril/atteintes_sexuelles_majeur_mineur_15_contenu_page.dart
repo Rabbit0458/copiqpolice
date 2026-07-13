@@ -106,31 +106,31 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-25 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime les atteintes sexuelles commises par un majeur sur un mineur de quinze ans, "
                       "autres que les viols ou agressions sexuelles.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-27-2-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : qualifie d’« incestueuses » ces atteintes lorsqu’elles sont commises sur un mineur par : "
                       "un ascendant ; certains membres de la famille (frère/sœur, oncle/tante, etc.) ; "
@@ -148,73 +148,73 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une atteinte sexuelle"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une atteinte sexuelle"),
+              _Paragraph(
                 "L’atteinte sexuelle se définit comme tout agissement en rapport avec l’activité sexuelle. "
                 "Elle suppose un contact physique entre l’auteur et la victime.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le contact peut être commis par l’auteur sur la victime, mais aussi être réalisé par la victime sur l’auteur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’atteinte sexuelle visée ici est un contact physique commis ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "sans violence, contrainte, menace ni surprise",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ". En présence de ces éléments, les faits peuvent relever du viol ou de l’agression sexuelle.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Repères (hors champ 227-25)",
                 bodySpans: [
                   TextSpan(
                     text: "Articles 222-23 et 222-24 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : viol et viol aggravé (acte de pénétration sexuelle ou acte bucco-génital).\n",
                   ),
                   TextSpan(
                     text: "Article 222-29-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : agression sexuelle imposée à un mineur de 15 ans par violence, contrainte, menace ou surprise.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un auteur majeur"),
-              const _Paragraph(
+              _SubTitle("B) Un auteur majeur"),
+              _Paragraph(
                 "L’infraction n’est imputable qu’à un majeur : les actes accomplis entre mineurs sont exclus du champ d’application.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Point de vigilance",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Selon le cas, certains faits peuvent relever d’autres qualifications plus graves (viol/agression sexuelle), "
@@ -222,50 +222,50 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une victime mineure de quinze ans"),
-              const _Paragraph(
+              _SubTitle("C) Une victime mineure de quinze ans"),
+              _Paragraph(
                 "C’est l’âge de la victime au moment des faits qui doit être pris en compte.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(text: "Âge au moment des faits — "),
+                  TextSpan(text: "Âge au moment des faits — "),
                   TextSpan(
                     text: "Cass. crim., 21 mars 1957",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(text: "Âge calculé d’heure à heure — "),
+                  TextSpan(text: ".\n"),
+                  TextSpan(text: "Âge calculé d’heure à heure — "),
                   TextSpan(
                     text: "Cass. crim., 03 septembre 1985",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Preuve de l’âge par tout moyen si absence d’acte probant — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 17 juillet 1991",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le texte ne précise pas que la minorité de quinze ans doit être apparente ou connue : le mineur de 15 ans bénéficie ainsi d’une protection renforcée.",
               ),
             ],
@@ -279,16 +279,16 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’élément moral réside dans la conscience de l’auteur de l’acte accompli. "
                 "Cette conscience est nécessaire et suffisante : l’auteur est conscient de commettre une atteinte sexuelle sur un mineur de quinze ans.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Erreur sur l’âge",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’erreur sur l’âge n’atténue pas la responsabilité pénale. Toutefois, dans certaines hypothèses, "
                         "des poursuites peuvent être impossibles s’il est établi que l’auteur ignorait l’âge réel de la victime, "
@@ -296,24 +296,24 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "Cass. crim., 04 janvier 1902",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Il appartient à l’auteur de justifier qu’il a été trompé — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 07 février 1957",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -327,35 +327,35 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-26 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque l’atteinte est commise par une personne majeure ayant sur la victime une autorité de droit ou de fait.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsque l’auteur abuse de l’autorité que lui confèrent ses fonctions (autorité légale ou de fait).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsque les faits sont commis par plusieurs personnes agissant en qualité d’auteur ou de complice.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsque le mineur a été mis en contact avec l’auteur grâce à l’utilisation d’un réseau de communication électronique (diffusion à destination d’un public non déterminé).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsque l’auteur agit en état d’ivresse manifeste ou sous l’emprise manifeste de produits stupéfiants.",
               ),
@@ -370,78 +370,78 @@ class AtteintesSexuellesMajeurMineur15Page extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-25 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-26 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité prévue par "),
+                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
                   text: "l’article 227-28-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 227-27-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (tentative punissable)."),
+                TextSpan(text: " (tentative punissable)."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — droit commun, "),
+                TextSpan(text: "Complicité : OUI — droit commun, "),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (organisation de rencontres, fourniture d’adresses/locaux, facilitation des faits, etc.).",
                 ),
@@ -482,10 +482,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -550,7 +550,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -593,7 +593,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -655,7 +655,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -687,7 +687,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -700,7 +700,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

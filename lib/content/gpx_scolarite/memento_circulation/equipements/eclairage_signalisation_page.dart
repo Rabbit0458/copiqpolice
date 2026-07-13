@@ -144,56 +144,56 @@ class EclairageSignalisationPage extends StatelessWidget {
             cardColor: cardOblig,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Obligatoires pour tout véhicule à moteur"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Obligatoires pour tout véhicule à moteur"),
+              _BulletPoint(
                 text:
                     "Feux de croisement (lumière jaune ou blanche) — NATINF 22833.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Feux de position arrière (lumière rouge non éblouissante) — NATINF 22835.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Catadioptres arrière (rouges, non triangulaires) — NATINF 22844.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Feux stop (rouges non éblouissants) — NATINF 22837.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Éclairage de la plaque d’immatriculation arrière — NATINF 22840.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Obligatoires pour certains véhicules à moteur",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Feux de route (jaune/blanc) — NATINF 22832 (tous sauf cyclomoteurs et quadricycles légers à moteur).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Feux de position avant (jaune/orange/blanc) — NATINF 22834 (tous sauf cyclomoteurs à 2 roues).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Indicateurs de direction (orangés non éblouissants) — NATINF 22842 (tous sauf cyclomoteurs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Signal de détresse — NATINF 22843 (tous sauf motocyclettes, cyclomoteurs, quadricycles légers à moteur).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Feu de brouillard arrière — NATINF 22838 (1re MEC à compter du 01/10/1990, sauf moto/tricycles/quad/cyclo).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Catadioptres latéraux — NATINF 22846 (véhicules > 6 m, cyclomoteurs, quadricycles à moteur).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Triangle de présignalisation — NATINF 26986 (tous sauf moto/cyclo/tricycles/quad non carrossés).",
               ),
@@ -208,34 +208,34 @@ class EclairageSignalisationPage extends StatelessWidget {
             cardColor: cardRem,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Équipements arrière principaux"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Équipements arrière principaux"),
+              _BulletPoint(
                 text:
                     "Catadioptres arrière rouges triangulaires — NATINF 22844 (non triangulaire possible si groupés avec dispositifs arrière).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Feux de position arrière rouges — NATINF 22835.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Éclairage de la plaque d’immatriculation — NATINF 22840.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Obligatoires selon PTAC / masquage des feux"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Obligatoires selon PTAC / masquage des feux"),
+              _BulletPoint(
                 text:
                     "Feu de brouillard arrière — NATINF 22838 (1re MEC à compter du 01/10/1990).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Indicateurs de direction — NATINF 22842.",
               ),
-              const _BulletPoint(text: "Signal de détresse — NATINF 22843."),
-              const _BulletPoint(text: "Feux stop — NATINF 22837."),
-              const SizedBox(height: 10),
+              _BulletPoint(text: "Signal de détresse — NATINF 22843."),
+              _BulletPoint(text: "Feux stop — NATINF 22837."),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ces dispositifs concernent notamment : toute remorque de PTAC > 500 kg, "
                         "et les remorques de PTAC ≤ 500 kg lorsque la remorque ou son chargement masque les feux du véhicule tracteur.",
@@ -264,8 +264,8 @@ class EclairageSignalisationPage extends StatelessWidget {
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Principales absences/non-conformités (AF min. 3e classe) : ",
                 ),
@@ -322,9 +322,9 @@ class EclairageSignalisationPage extends StatelessWidget {
                 const TextSpan(text: " (AF 1re classe)."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Immobilisation : possible pour NATINF 22830. Pour les autres NATINF, immobilisation possible la nuit, "
                         "ou de jour si la visibilité est insuffisante.",
@@ -373,9 +373,9 @@ class EclairageSignalisationPage extends StatelessWidget {
                     "Cyclomoteurs et quadricycles légers à moteur : feux de croisement — NATINF 22887.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Autres véhicules : usage des feux de croisement notamment en cas d’éblouissement, en agglomération éclairée, "
                         "hors agglomération sur route éclairée en continu, ou si la visibilité est réduite (NATINF 22888 / 22889).",
@@ -509,9 +509,9 @@ class EclairageSignalisationPage extends StatelessWidget {
                     "Feux allumés (et remorque le cas échéant) — NATINF 22796.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Port du gilet haute visibilité : obligatoire pour le conducteur et le passager (voir rubrique dédiée).",
                   ),
@@ -554,9 +554,9 @@ class EclairageSignalisationPage extends StatelessWidget {
                 text: "Feu de position arrière — NATINF 33353.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Port du gilet haute visibilité : obligatoire pour le conducteur (voir rubrique dédiée).",
                   ),
@@ -604,10 +604,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -672,7 +672,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -715,7 +715,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -777,7 +777,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -788,10 +788,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -803,13 +802,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -822,13 +820,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

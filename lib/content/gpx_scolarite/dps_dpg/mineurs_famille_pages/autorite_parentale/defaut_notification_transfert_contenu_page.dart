@@ -111,16 +111,16 @@ class DefautNotificationTransfertPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le défaut de notification du transfert de domicile.",
                 ),
@@ -136,53 +136,53 @@ class DefautNotificationTransfertPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un transfert de domicile"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un transfert de domicile"),
+              _Paragraph(
                 "Le transfert concerne le parent chez qui les enfants résident habituellement (parent gardien). "
                 "Sont visés les parents légitimes, naturels ou adoptifs.\n\n"
                 "Concrètement, l’auteur change de domicile et emmène le ou les enfants avec lui.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Une absence de notification dans le délai d’un mois",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Un droit de visite ou d’hébergement doit exister au profit de l’autre parent (ou d’un tiers) "
                 "en vertu d’un jugement, d’une convention judiciairement homologuée, ou d’une convention "
                 "prévue à l’article 229-1 du code civil.\n\n"
                 "La décision/Convention doit être exécutoire et portée légalement à la connaissance de l’auteur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Point clé",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La notification doit intervenir dans un délai d’un mois. La loi n’impose pas de forme particulière "
                         "(écrit, oral, etc.) : tout dépendra des circonstances et des preuves.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple admis : l’infraction n’a pas été retenue contre une mère ayant informé son ex-beau-père "
                         "de son changement d’adresse (modalité convenue avec son ex-mari) ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 20 février 1991)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -196,11 +196,11 @@ class DefautNotificationTransfertPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Volonté de ne pas informer le titulaire du droit de visite/hébergement",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le défaut de notification est une infraction intentionnelle : il faut la volonté de faire échec "
                 "au droit de visite ou d’hébergement.\n\n"
                 "La simple négligence n’est pas punissable.",
@@ -231,51 +231,51 @@ class DefautNotificationTransfertPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "6 mois d’emprisonnement."),
-              const _BulletPoint(text: "7 500 € d’amende."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "6 mois d’emprisonnement."),
+              _BulletPoint(text: "7 500 € d’amende."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale possible via "),
+                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide et assistance, provocation ou instructions).",
                 ),
               ]),
@@ -315,10 +315,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -383,7 +383,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -426,7 +426,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -488,7 +488,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -520,7 +520,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -533,7 +533,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

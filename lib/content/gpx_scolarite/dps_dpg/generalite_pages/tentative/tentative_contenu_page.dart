@@ -1,4 +1,5 @@
 /// lib/gpx_scolarite_pages/generalite_pages/tentative/tentative_contenu_page.dart
+library;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -23,7 +24,7 @@ class TentativeContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -142,22 +143,22 @@ class _QuizStripe extends StatelessWidget {
     final cs = Theme.of(context).colorScheme;
     final Color base = isDark ? Colors.white : Colors.black;
     final Color cardBg = isDark
-        ? const Color(0xFF0C0F14).withOpacity(.72)
-        : cs.surface.withOpacity(.92);
+        ? const Color(0xFF0C0F14).withValues(alpha: .72)
+        : cs.surface.withValues(alpha: .92);
     final Color stroke = isDark
-        ? Colors.white.withOpacity(.08)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .08)
+        : Colors.black.withValues(alpha: .06);
     final Color shadow = isDark
-        ? Colors.black.withOpacity(.35)
-        : Colors.black.withOpacity(.08);
+        ? Colors.black.withValues(alpha: .35)
+        : Colors.black.withValues(alpha: .08);
     final Color textMain = isDark ? Colors.white : cs.onSurface;
-    final Color textSub = textMain.withOpacity(.72);
+    final Color textSub = textMain.withValues(alpha: .72);
 
     // Pastille dégradée (style “feature tile”)
-    final Gradient badgeGrad = LinearGradient(
+    const Gradient badgeGrad = LinearGradient(
       begin: Alignment.topLeft,
       end: Alignment.bottomRight,
-      colors: [const Color(0xFFF08D63), const Color(0xFFFFC857)],
+      colors: [Color(0xFFF08D63), Color(0xFFFFC857)],
     );
 
     return Semantics(
@@ -192,8 +193,8 @@ class _QuizStripe extends StatelessWidget {
                   boxShadow: [
                     BoxShadow(
                       color: isDark
-                          ? const Color(0xFFE07854).withOpacity(.35)
-                          : const Color(0xFFF08D63).withOpacity(.25),
+                          ? const Color(0xFFE07854).withValues(alpha: .35)
+                          : const Color(0xFFF08D63).withValues(alpha: .25),
                       blurRadius: 16,
                       offset: const Offset(0, 6),
                     ),
@@ -248,8 +249,8 @@ class _QuizStripe extends StatelessWidget {
                 height: 36,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
-                  color: base.withOpacity(.06),
-                  border: Border.all(color: base.withOpacity(.12)),
+                  color: base.withValues(alpha: .06),
+                  border: Border.all(color: base.withValues(alpha: .12)),
                 ),
                 child: Icon(
                   Icons.arrow_forward_rounded,
@@ -299,10 +300,10 @@ class _ModuleCard extends StatelessWidget {
     // mais en gardant un léger ajustement selon le thème.
     final Color subtitleColor = isDark
         ? textSoft // déjà un blanc cassé
-        : Colors.white.withOpacity(0.90);
+        : Colors.white.withValues(alpha: 0.90);
 
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -335,8 +336,8 @@ class _ModuleCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),

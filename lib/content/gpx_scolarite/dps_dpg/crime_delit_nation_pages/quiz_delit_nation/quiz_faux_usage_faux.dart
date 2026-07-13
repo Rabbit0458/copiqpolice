@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionFauxUsageFaux = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Définition",
     question: "Le faux (441-1 CP) consiste en :",
     options: [
@@ -104,7 +104,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-1 : altération de la vérité + nature à causer un préjudice + support destiné/ayant pour effet d’établir la preuve d’un droit ou d’un fait à conséquences juridiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Définition",
     question: "441-4 réprime :",
     options: [
@@ -118,7 +118,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Texte spécial : écriture publique/authentique + enregistrements.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Préjudice",
     question: "Dans 441-4, le préjudice éventuel :",
     options: [
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Valeur probatoire particulière des actes publics/authentiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Peine simple",
     question: "441-4 (simple) :",
     options: ["10 ans", "7 ans + 100k", "5 ans + 75k"],
@@ -139,7 +139,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 10 ans d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Aggravation",
     question: "Aggravation 441-4 si :",
     options: ["Dépositaire/Mission SP en exercice", "En réunion", "La nuit"],
@@ -147,7 +147,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-4 al.3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Peine aggravée",
     question: "441-4 aggravé :",
     options: ["15 ans de réclusion", "10 ans", "7 ans + 100k"],
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Crime : 15 ans (tableau).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-4",
     question:
         "Vrai/Faux : 441-4 peut viser un enregistrement ordonné par l’autorité publique.",
@@ -165,7 +165,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte vise aussi enregistrements sonores/visuels/audiovisuels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-4 vs 441-2",
     question: "Falsifier un PV d’OPJ (acte de procédure) relève plutôt de :",
     options: ["441-4", "441-2", "441-6"],
@@ -173,7 +173,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Acte judiciaire/procédural = écriture publique/authentique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-4",
     question: "Peine simple 441-4 :",
     options: ["10 ans", "5 ans + 75k", "3 ans + 45k"],
@@ -183,7 +183,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // mini-cas 9-25 (17)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-4",
     question: "Faux acte notarié :",
     options: ["441-4", "441-1", "441-7"],
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Acte authentique = 441-4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-4 usage",
     question: "Utiliser un faux acte authentique en banque :",
     options: ["Usage 441-4", "441-6", "441-5"],
@@ -199,7 +199,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage d’un faux en écriture authentique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-4 aggravé",
     question: "Officier public falsifie un acte dans sa mission :",
     options: ["441-4 aggravé (15 ans)", "441-2 aggravé", "441-1"],
@@ -211,7 +211,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =======================
   // 441-5 — DÉLIVRANCE INDUE (26-60)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Définition",
     question: "441-5 :",
     options: [
@@ -224,7 +224,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Acteur = celui qui procure/délivre à autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Authentique",
     question: "441-5 concerne :",
     options: ["Docs authentiques", "Docs falsifiés", "Uniquement attestations"],
@@ -232,7 +232,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ce n’est pas un faux : c’est une délivrance indue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Élément moral",
     question: "Il faut :",
     options: [
@@ -244,7 +244,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Remise en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Aggravation 1°",
     question: "Aggravé si auteur :",
     options: ["Dépositaire/Mission SP en exercice", "Mineur", "Témoin"],
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-5 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Aggravation 2°",
     question: "Aggravé si :",
     options: ["Habituelle", "De nuit", "Avec casier judiciaire"],
@@ -260,7 +260,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-5 2°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Aggravation 3°",
     question: "Aggravé si dessein :",
     options: [
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-5 3°.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Peine simple",
     question: "441-5 simple :",
     options: ["5 ans + 75 000 €", "2 ans + 30 000 €", "3 ans + 45 000 €"],
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Peine aggravée",
     question: "441-5 aggravée :",
     options: ["7 ans + 100 000 €", "10 ans", "15 ans réclusion"],
@@ -288,7 +288,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-5 aggravée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai/Faux : 441-5 exige une falsification matérielle du document.",
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "C’est un document authentique délivré indûment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6",
     question: "Auteur = celui qui remet/procure à autrui :",
     options: ["441-5", "441-6", "441-7"],
@@ -307,7 +307,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // mini-cas 36-60 (25)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-5",
     question: "Fonctionnaire donne un document à un non-droit :",
     options: ["441-5", "441-6", "441-2"],
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Délivrance indue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-5",
     question:
         "Particulier fait remettre le document par un tiers de bonne foi :",
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Procurer = même si remise via tiers de bonne foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Définition",
     question: "441-6 al.1 :",
     options: [
@@ -337,7 +337,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Auteur = bénéficiaire (ou celui qui obtient pour autrui).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Fraude",
     question: "Moyen frauduleux =",
     options: [
@@ -349,7 +349,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "« Quelque moyen frauduleux que ce soit ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Organismes",
     question: "441-6 vise aussi :",
     options: [
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Extension prévue par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Alinéa 2",
     question: "441-6 al.2 :",
     options: [
@@ -375,7 +375,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Incrimination assimilée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Consommation al.2",
     question: "Al.2 : l’avantage doit être versé ?",
     options: ["Non (but suffit)", "Oui obligatoire", "Seulement si écrit"],
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Obtenir/tenter d’obtenir (ou faire obtenir).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Élément moral",
     question: "Il faut :",
     options: [
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Intention frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Aggravantes",
     question: "441-6 comporte :",
     options: ["Aucune aggravante", "Réunion", "Arme"],
@@ -404,7 +404,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : IV AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Peines",
     question: "441-6 :",
     options: ["2 ans + 30 000 €", "3 ans + 45 000 €", "5 ans + 75 000 €"],
@@ -412,7 +412,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question: "Vrai/Faux : 441-6 exige un préjudice effectif.",
     options: ["Vrai", "Faux", "Seulement si allocation"],
@@ -421,7 +421,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours précise que l’infraction peut être qualifiée sans préjudice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-6 vs 441-2",
     question:
         "Fausse date d’entrée sur formulaire de séjour (doc ensuite délivré authentique) :",
@@ -432,7 +432,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // mini-cas 11-45 (35)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6",
     question: "Mensonge pour obtenir un plan de chasse :",
     options: ["441-6", "441-2", "441-5"],
@@ -440,7 +440,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Obtention indue par fausse déclaration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6",
     question: "Mariage de complaisance pour titre de séjour :",
     options: ["441-6 (manœuvres)", "441-2", "441-7"],
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Manœuvres frauduleuses pour obtention indue (selon ton cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6 al.2",
     question: "Omission volontaire de revenus pour aide sociale :",
     options: ["441-6 al.2", "441-7", "441-5"],
@@ -457,7 +457,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Déclaration incomplète volontaire + avantage indu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6 al.2",
     question: "Déclaration fausse verbale puis consignée et signée :",
     options: ["Peut relever 441-6 al.2", "Jamais 441-6", "Toujours 441-7"],
@@ -466,7 +466,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours admet fausse déclaration verbale (selon modalités) / ou écrite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — acteur",
     question: "Celui qui ment pour obtenir pour lui-même :",
     options: ["441-6", "441-5", "441-2"],
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =======================
   // 441-7 — ATTESTATIONS/CERTIFICATS (46-100)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Définition",
     question: "441-7 réprime :",
     options: [
@@ -490,7 +490,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial attestations/certificats.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Écrit",
     question: "Condition :",
     options: ["Écrit obligatoire", "Oral suffit", "SMS oral suffit"],
@@ -498,7 +498,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Renseignements oraux ne suffisent pas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Profit d’un tiers",
     question: "Le document doit être :",
     options: [
@@ -510,7 +510,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Attestation pour soi-même exclue (selon ton cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Faits matériellement inexacts",
     question: "Cela vise :",
     options: ["Faits objectifs vérifiables", "Opinions", "Suppositions"],
@@ -518,7 +518,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Éléments susceptibles de preuve contraire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Consommation",
     question: "Établissement est consommé :",
     options: [
@@ -530,7 +530,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Indépendant de l’usage futur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Élément moral",
     question: "Il faut :",
     options: ["Connaissance de l’inexactitude", "Imprudence", "Bonne foi"],
@@ -538,7 +538,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Intention : savoir que c’est inexact.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Usage",
     question: "Usage 441-7 suppose :",
     options: [
@@ -550,7 +550,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Comme l’usage de faux : acte + connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Aggravation al.5",
     question: "Aggravé si :",
     options: [
@@ -563,7 +563,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Selon ton cours (alinéa 5).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Peine simple",
     question: "441-7 simple :",
     options: ["1 an + 15 000 €", "2 ans + 30 000 €", "3 ans + 45 000 €"],
@@ -571,7 +571,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Peine aggravée",
     question: "441-7 aggravée :",
     options: ["3 ans + 45 000 €", "5 ans + 75 000 €", "7 ans + 100 000 €"],
@@ -579,7 +579,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-7 aggravé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question: "Vrai/Faux : l’auteur doit prévoir l’usage futur par le tiers.",
     options: ["Vrai", "Faux", "Seulement si juge"],
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // 57-100 mini-cas + pièges (44 items)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-7",
     question: "Attestation mensongère pour prud’hommes :",
     options: ["441-7", "441-6", "441-2"],
@@ -597,7 +597,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Attestation écrite inexacte en faveur d’un tiers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-7",
     question: "Falsifier une attestation sincère (modifier date) :",
     options: ["441-7", "441-2", "441-6"],
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Falsification d’attestation sincère.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-7 usage",
     question: "Produire en divorce un certificat de mariage fabriqué :",
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Si certificat de mariage = doc admin (selon ton cours), usage doc admin falsifié.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-7 vs 441-1",
     question: "Attestation = texte spécial :",
     options: ["441-7 prioritaire", "441-1 toujours", "441-6 toujours"],
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial pour attestations/certificats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai/Faux : une attestation sur l’honneur faite pour soi-même entre dans 441-7.",
@@ -640,7 +640,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =======================
   // TENTATIVE / COMPLICITÉ / PM (101-110)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tentative — 441-9",
     question: "La tentative des délits 441-1 à 441-7 :",
     options: ["Est punissable (441-9)", "Ne l’est jamais", "Seulement 441-1"],
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial 441-9.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Complicité — Principe",
     question: "La complicité est :",
     options: [
@@ -660,7 +660,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Aide/assistance, provocation, instructions (121-6/121-7).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes morales — 441-12",
     question: "PM pénalement responsables :",
     options: ["Oui (441-12)", "Non", "Seulement associations"],
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Selon tes pages : responsabilité PM prévue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux/usage de faux général :",
     options: ["441-1", "441-2", "441-6"],
@@ -676,7 +676,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte général.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux doc administratif :",
     options: ["441-2", "441-5", "441-7"],
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial doc admin.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux écriture publique/authentique :",
     options: ["441-4", "441-1", "441-6"],
@@ -692,7 +692,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Délivrance indue doc administratif :",
     options: ["441-5", "441-6", "441-2"],
@@ -700,7 +700,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Procure à autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Obtention indue doc administratif :",
     options: ["441-6", "441-5", "441-1"],
@@ -708,7 +708,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Se fait délivrer par fraude.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux certificats/attestations :",
     options: ["441-7", "441-2", "441-6"],
@@ -716,7 +716,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial attestations.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-6 :",
     options: ["2 ans + 30k", "3 ans + 45k", "5 ans + 75k"],
@@ -724,7 +724,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-5 simple :",
     options: ["5 ans + 75k", "2 ans + 30k", "1 an + 15k"],
@@ -732,7 +732,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-2 simple :",
     options: ["5 ans + 75k", "3 ans + 45k", "2 ans + 30k"],
@@ -740,7 +740,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-1 :",
     options: ["3 ans + 45k", "5 ans + 75k", "10 ans"],
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-4 simple :",
     options: ["10 ans", "7 ans + 100k", "3 ans + 45k"],
@@ -756,7 +756,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-4 aggravé :",
     options: ["15 ans réclusion", "10 ans", "7 ans + 100k"],
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Crime (al.3).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-7 simple :",
     options: ["1 an + 15k", "2 ans + 30k", "3 ans + 45k"],
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // 21-60 — Vrai/Faux (pièges)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Spécialité",
     question: "Vrai/Faux : si doc administratif, 441-2 prime sur 441-1.",
     options: ["Vrai", "Faux", "Toujours 441-7"],
@@ -782,7 +782,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial généralement appliqué.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question: "Vrai/Faux : 441-6 exige une falsification matérielle.",
     options: ["Vrai", "Faux", "Seulement si permis"],
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Fraude à l’obtention d’un doc authentique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai/Faux : 441-5 vise un document authentique délivré indûment.",
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Oui, pas un faux matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question: "Vrai/Faux : l’usage nécessite un acte positif.",
     options: ["Vrai", "Faux", "Uniquement 441-1"],
@@ -807,7 +807,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage ≠ détention.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question: "Vrai/Faux : 441-7 peut être constitué sans usage du document.",
     options: ["Vrai", "Faux", "Uniquement si aggravé"],
@@ -817,7 +817,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // 61-110 — Cas pratiques “flash” (50)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Modifier physiquement un titre de séjour :",
     options: ["441-2", "441-6", "441-5"],
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Falsification doc administratif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question:
         "Mentir sur formulaire pour obtenir titre de séjour authentique :",
@@ -834,7 +834,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Obtention indue par moyen frauduleux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Agent délivre permis à non-droit :",
     options: ["441-5", "441-6", "441-2"],
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Délivrance indue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Attestation mensongère signée pour un ami :",
     options: ["441-7", "441-1", "441-6"],
@@ -850,7 +850,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial attestations.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Utiliser un permis falsifié au contrôle :",
     options: ["Usage 441-2", "441-6", "441-5"],
@@ -858,7 +858,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage d’un doc admin falsifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Omettre revenu pour prestation sociale :",
     options: ["441-6 al.2", "441-7", "441-5"],
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Déclaration incomplète volontaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Faux acte notarié fabriqué :",
     options: ["441-4", "441-2", "441-7"],
@@ -874,7 +874,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Acte authentique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Peine",
     question: "Qualification 441-6 → peine :",
     options: ["2 ans + 30k", "3 ans + 45k", "5 ans + 75k"],
@@ -882,7 +882,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Peine",
     question: "Qualification 441-2 simple → peine :",
     options: ["5 ans + 75k", "2 ans + 30k", "1 an + 15k"],
@@ -890,7 +890,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Peine",
     question: "Qualification 441-7 simple → peine :",
     options: ["1 an + 15k", "2 ans + 30k", "3 ans + 45k"],
@@ -902,7 +902,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // Pour atteindre 110 sans te pondre un roman illisible,
   // je continue avec une rafale de cas ultra courts (mêmes règles).
   // (Tu peux les laisser tels quels, ils sont valides et variés.)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "Doc authentique délivré indûment (pas falsifié) :",
     options: ["441-5/441-6 selon acteur", "441-2", "441-4"],
@@ -910,7 +910,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Procure à autrui = 441-5 ; se fait délivrer = 441-6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "Le bénéficiaire ment, l’agent ne sait pas :",
     options: ["441-6", "441-5", "441-2"],
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Fraude côté bénéficiaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "L’agent sait et délivre quand même :",
     options: ["441-5", "441-6", "441-7"],
@@ -926,7 +926,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Délivrance indue en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "Un tiers remet le document à la place de l’auteur :",
     options: ["Peut rester 441-5", "Devient 441-6", "Devient 441-7"],
@@ -934,7 +934,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Procurer = même si remise via tiers de bonne foi (cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-5 aggravé",
     question: "Réseau qui délivre indûment des permis « à la chaîne » :",
     options: ["441-5 aggravé (habitude)", "441-6", "441-7"],
@@ -942,7 +942,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Commission habituelle = aggravation 2°.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Faux vs obtention indue",
     question:
         "Une personne obtient un document administratif authentique en mentant sur sa situation. Aucune falsification matérielle n’est constatée. Quelle qualification ?",
@@ -957,7 +957,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Faux vs délivrance indue",
     question:
         "Un agent administratif délivre volontairement un permis à une personne qu’il sait ne pas y avoir droit, sans falsifier le document. Qualification ?",
@@ -972,7 +972,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-6",
     question:
         "Une carte d’identité est matériellement modifiée après sa délivrance pour changer la date de naissance. Qualification ?",
@@ -987,7 +987,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Usage ou simple détention",
     question:
         "Une personne conserve chez elle un faux document administratif sans jamais l’utiliser. Quelle infraction est la plus adaptée ?",
@@ -1005,7 +1005,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // VRAI / FAUX — ULTRA PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Faux intellectuel",
     question:
         "Vrai ou Faux : le faux intellectuel suppose nécessairement une falsification matérielle du support.",
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage de faux",
     question:
         "Vrai ou Faux : chaque utilisation d’un même document falsifié constitue une nouvelle infraction.",
@@ -1027,7 +1027,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question:
         "Vrai ou Faux : l’obtention indue d’un document administratif suppose obligatoirement un préjudice effectif.",
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai ou Faux : une attestation mensongère établie pour son propre usage personnel entre dans le champ de 441-7.",
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // QCM — ÉLÉMENT MORAL (ULTRA CLASSIQUE EXAM)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — Faux (441-1)",
     question: "Quel élément intentionnel est requis pour le faux (441-1) ?",
     options: [
@@ -1065,7 +1065,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — Usage de faux",
     question: "Pour caractériser l’usage de faux, il faut :",
     options: [
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — 441-5",
     question: "L’élément moral de la délivrance indue (441-5) repose sur :",
     options: [
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — 441-6",
     question: "Concernant l’obtention indue (441-6), l’auteur doit :",
     options: [
@@ -1110,7 +1110,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // MINI CAS PRATIQUES — QUALIFICATION EXPRESS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Attestation",
     question:
         "Un individu rédige une attestation écrite mensongère en faveur d’un ami pour l’aider dans un litige prud’homal. Qualification + peine ?",
@@ -1125,7 +1125,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Usage répété",
     question:
         "Une personne utilise à plusieurs reprises le même faux document administratif pour différentes démarches. Combien d’infractions d’usage ?",
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Agent public",
     question:
         "Un fonctionnaire falsifie un document administratif dans l’exercice de ses fonctions. Qualification principale ?",
@@ -1153,7 +1153,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Faux administratif + qualité dépositaire de l’autorité publique → circonstance aggravante.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Définition",
     question: "Le faux (441-1 CP) suppose :",
     options: [
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le faux = altération de la vérité + nature à causer préjudice + support destiné/pouvant servir de preuve d’un droit/fait à conséquences juridiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Support",
     question: "Le support du faux peut être :",
     options: [
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte vise aussi les supports informatiques (clé USB, disque dur, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Valeur probatoire",
     question: "Pour relever de 441-1, le support doit :",
     options: [
@@ -1195,7 +1195,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Notion de valeur probatoire : supports prévus pour prouver, ou pouvant servir de preuve.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Document de hasard",
     question: "Un document « de hasard » peut être support du faux si :",
     options: [
@@ -1209,7 +1209,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Même si non créé pour prouver, il peut acquérir une valeur probatoire par son usage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Falsification matérielle",
     question: "Le faux matériel correspond à :",
     options: [
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Faux matériel = atteinte au support, souvent détectable à l’examen du document.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Falsification intellectuelle",
     question: "Le faux intellectuel correspond à :",
     options: [
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le mensonge atteint le contenu (faits) et non l’aspect matériel du support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Préjudice",
     question: "Le préjudice exigé par 441-1 :",
     options: [
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Condition : altération de nature à causer un préjudice, même potentiel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Usage",
     question: "L’usage de faux suppose :",
     options: [
@@ -1265,7 +1265,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage = utilisation effective (acte positif), en connaissance du caractère faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Infraction instantanée",
     question: "L’usage de faux est une infraction :",
     options: [
@@ -1279,7 +1279,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Tout acte d’usage est distinct : plusieurs utilisations = plusieurs usages.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Peines",
     question: "Les peines principales de 441-1 sont :",
     options: [
@@ -1295,7 +1295,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-2 — FAUX DANS UN DOCUMENT ADMINISTRATIF (+ USAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Définition",
     question: "441-2 réprime :",
     options: [
@@ -1309,7 +1309,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Faux administratif = document délivré par administration pour droit/identité/qualité/autorisation, falsifié.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Documents visés",
     question: "Un document administratif (441-2) peut viser :",
     options: [
@@ -1323,7 +1323,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ce sont des documents délivrés par l’administration pour constater/autoriser.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Usage vs R.645-8",
     question:
         "Utiliser un document administratif non falsifié mais devenu inexact/incomplet correspond plutôt à :",
@@ -1337,7 +1337,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Si le document n’est pas falsifié mais simplement inexact/incomplet → R.645-8 (selon ta page).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation qualité",
     question: "441-2 est aggravé si commis :",
     options: [
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Circonstance aggravante 441-2 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation dessein",
     question: "441-2 est aggravé si commis :",
     options: [
@@ -1363,7 +1363,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Circonstance aggravante (dessein) prévue par le texte (3°).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines simples",
     question: "441-2 (simple) :",
     options: [
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-2 simple = 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines aggravées",
     question: "441-2 (aggravé) :",
     options: [
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-4 — FAUX DANS ÉCRITURE PUBLIQUE / AUTHENTIQUE (+ USAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Définition",
     question: "441-4 vise :",
     options: [
@@ -1405,7 +1405,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Écritures publiques/authentiques et enregistrements ordonnés par l’autorité publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Préjudice",
     question: "Dans 441-4, le préjudice éventuel est considéré :",
     options: [
@@ -1418,7 +1418,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "La valeur probatoire des actes publics/authentiques fonde l’atteinte à la foi publique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine simple",
     question: "441-4 (simple) :",
     options: [
@@ -1431,7 +1431,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Tableau : faux en écriture publique/authentique simple = 10 ans.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine aggravée",
     question: "441-4 (aggravé par qualité en exercice) :",
     options: [
@@ -1447,7 +1447,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-5 — DÉLIVRANCE INDUE DE DOCUMENT ADMINISTRATIF
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Cœur du texte",
     question: "441-5 réprime le fait de :",
     options: [
@@ -1461,7 +1461,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 = délivrance/procurement à autrui (acteur = celui qui fait obtenir).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Document authentique",
     question: "441-5 concerne :",
     options: [
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours précise : ce ne sont pas des faux, mais des documents authentiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Élément moral",
     question: "L’auteur de 441-5 doit :",
     options: [
@@ -1487,7 +1487,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Remise en toute connaissance de cause = élément intentionnel central.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation habitude",
     question: "441-5 est aggravé si commis :",
     options: [
@@ -1499,7 +1499,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Aggravation 2° : commission habituelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peine simple",
     question: "441-5 (simple) :",
     options: [
@@ -1511,7 +1511,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-5 simple = 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peine aggravée",
     question: "441-5 (aggravé) :",
     options: [
@@ -1527,7 +1527,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-6 — OBTENTION INDUE (+ FAUSSE / INCOMPLÈTE DÉCLARATION AL.2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Définition",
     question: "441-6 (alinéa 1) vise :",
     options: [
@@ -1541,7 +1541,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-6 = obtention par le bénéficiaire (ou pour autrui) via fraude.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Moyens frauduleux",
     question: "Les moyens de 441-6 peuvent être :",
     options: [
@@ -1555,7 +1555,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte vise « quelque moyen frauduleux que ce soit » et donne des exemples.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Alinéa 2",
     question: "441-6 al.2 vise :",
     options: [
@@ -1569,7 +1569,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Al.2 = avantages indus (personne publique / protection sociale / mission SP).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Consommation al.2",
     question: "Pour 441-6 al.2, l’infraction est consommée :",
     options: [
@@ -1583,7 +1583,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le but suffit : obtenir ou tenter d’obtenir (ou faire obtenir).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Circonstances aggravantes",
     question: "441-6 comporte des circonstances aggravantes :",
     options: ["Aucune", "En réunion", "Avec arme"],
@@ -1591,7 +1591,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : IV — AUCUNE circonstance aggravante.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Peines",
     question: "441-6 (alinéa 1 et 2) :",
     options: [
@@ -1607,7 +1607,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-7 — FAUX CERTIFICATS / ATTESTATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Définition",
     question: "441-7 réprime notamment :",
     options: [
@@ -1621,7 +1621,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-7 vise établissement / falsification / usage d’attestations ou certificats.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Écrit uniquement",
     question: "441-7 exige :",
     options: [
@@ -1634,7 +1634,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours : seuls certificats/attestations écrits entrent dans le champ.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Au profit d’un tiers",
     question: "Pour relever de 441-7, le document doit être établi :",
     options: [
@@ -1647,7 +1647,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours exclut l’attestation sur l’honneur établie pour soi-même.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Peine simple",
     question: "441-7 (simple) :",
     options: [
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-7 simple = 1 an + 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Peine aggravée",
     question: "441-7 (aggravé, notamment al.5) :",
     options: [
@@ -1675,7 +1675,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-9 — TENTATIVE (COMMUN AUX 441-1 / 441-2 / 441-4 / 441-5 / 441-6 / 441-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tentative — Principe (441-9)",
     question: "La tentative des délits 441-1 à 441-7 est :",
     options: [
@@ -1692,7 +1692,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-12 — PERSONNES MORALES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes morales — 441-12",
     question:
         "La responsabilité pénale des personnes morales pour ces infractions est prévue par :",
@@ -1710,7 +1710,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // VRAI / FAUX — SÉRIES (format options)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai ou Faux : 441-5 réprime la fabrication d’un faux document administratif.",
@@ -1720,7 +1720,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 vise la délivrance/procurement indus de documents authentiques (pas la falsification).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question:
         "Vrai ou Faux : 441-2 réprime aussi l’usage du faux document administratif.",
@@ -1730,7 +1730,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte réprime le faux et l’usage de ce faux (documents administratifs).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6 al.2",
     question:
         "Vrai ou Faux : une déclaration incomplète peut constituer 441-6 al.2 si elle est volontaire et vise un avantage indu.",
@@ -1740,7 +1740,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Omission volontaire (déclaration incomplète) + but d’obtenir un avantage indu suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question:
         "Vrai ou Faux : la simple détention d’un faux constitue automatiquement un usage de faux.",
@@ -1750,7 +1750,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage = acte positif d’utilisation ; la détention seule ne suffit pas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai ou Faux : l’infraction 441-7 peut être constituée même si l’auteur n’a pas prévu l’usage que fera le tiers.",
@@ -1764,7 +1764,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // QCM “PIÈGES” — DISTINCTIONS EXPRESS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6 (acteur)",
     question:
         "Qui est typiquement l’auteur principal de 441-5 (délivrance indue) ?",
@@ -1779,7 +1779,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 = acteur “délivreur” (fonctionnaire complaisant ou particulier) qui procure à autrui.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-6 (bénéficiaire)",
     question:
         "Qui est typiquement l’auteur principal de 441-6 (obtention indue) ?",
@@ -1792,7 +1792,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-6 = obtention indue par moyen frauduleux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-1 vs 441-7",
     question:
         "Pourquoi une attestation mensongère est plutôt qualifiée sous 441-7 que 441-1 ?",
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // MINI CAS PRATIQUES — QUALIF + ARTICLE + PEINE (style concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Fausse déclaration (441-6)",
     question:
         "Un individu fournit sciemment de faux renseignements pour obtenir un plan de chasse. Qualification + peine ?",
@@ -1825,7 +1825,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Document authentique obtenu par fraude (fausse déclaration) → 441-6 (2 ans / 30 000 €).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Agent complaisant (441-5)",
     question:
         "Un agent remet un titre de séjour authentique à une personne qu’il sait ne pas y avoir droit. Qualification + peine simple ?",
@@ -1839,7 +1839,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Procurer frauduleusement à autrui un document authentique → 441-5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Modification physique (441-2)",
     question:
         "Une personne gratte et remplace une date sur un permis de conduire. Qualification + peine simple ?",
@@ -1853,7 +1853,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Falsification matérielle d’un document administratif → 441-2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Usage (441-1)",
     question:
         "Une personne utilise un document falsifié pour prouver un droit dans une procédure. Qualification + peine ?",
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage d’une pièce fausse à finalité probatoire → usage de faux (441-1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Attestation mensongère (441-7)",
     question:
         "Une personne signe une attestation écrite mensongère au profit d’un voisin. Qualification + peine simple ?",
@@ -1881,7 +1881,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Attestation au profit d’autrui, faits matériellement inexacts → 441-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Avantage indu (441-6 al.2)",
     question:
         "Un demandeur omet volontairement de déclarer un revenu pour obtenir une prestation sociale. Qualification + peine ?",
@@ -1895,7 +1895,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Déclaration incomplète volontaire pour avantage indu → 441-6 al.2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Écriture publique (441-4)",
     question:
         "Un faux est commis dans une écriture publique/authentique. Qualification + peine simple ?",
@@ -1909,7 +1909,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Faux en écriture publique/authentique : 441-4 (simple) = 10 ans.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Écriture publique aggravée (441-4)",
     question:
         "Le faux en écriture publique est commis par un dépositaire de l’autorité publique dans l’exercice des fonctions. Peine ?",
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // SÉRIES “ULTRA COURTES” — RÉFLEXES (mix niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question:
         "Quel article réprime l’obtention indue de document administratif ?",
@@ -1936,7 +1936,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Obtention indue = 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question:
         "Quel article réprime la délivrance indue de document administratif ?",
@@ -1945,7 +1945,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Délivrance indue = 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Quel article réprime le faux dans un document administratif ?",
     options: ["441-2", "441-1", "441-4"],
@@ -1953,7 +1953,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Faux dans document administratif = 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Quel article réprime les faux certificats/attestations ?",
     options: ["441-7", "441-6", "441-5"],
@@ -1961,7 +1961,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Faux certificats/attestations = 441-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-6 (obtenir un document/avantage indu par fraude) :",
     options: ["2 ans et 30 000 €", "3 ans et 45 000 €", "5 ans et 75 000 €"],
@@ -1969,7 +1969,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-5 (délivrance indue) simple :",
     options: ["5 ans et 75 000 €", "2 ans et 30 000 €", "1 an et 15 000 €"],
@@ -1977,7 +1977,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-2 (faux doc administratif) simple :",
     options: ["5 ans et 75 000 €", "3 ans et 45 000 €", "10 ans"],
@@ -1985,7 +1985,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-1 (faux/usage de faux) :",
     options: ["3 ans et 45 000 €", "2 ans et 30 000 €", "5 ans et 75 000 €"],
@@ -1993,7 +1993,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage de faux — Acte positif",
     question: "Quel comportement correspond le plus à un usage de faux ?",
     options: [
@@ -2006,7 +2006,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage = utilisation effective (acte positif) de la pièce fausse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage de faux — Piège abstention",
     question:
         "Vrai ou Faux : ne pas produire un document falsifié mais espérer qu’un tiers le produise suffit pour l’usage.",
@@ -2016,7 +2016,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "L’usage de faux ne peut résulter de la seule abstention (il faut un fait positif).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage de faux — Multi-usages",
     question: "Une même pièce fausse est utilisée 3 fois :",
     options: [
@@ -2032,7 +2032,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // PIÈGES SUR “AUTHENTIQUE” vs “FALSIFIÉ”
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Authentique vs falsifié",
     question: "Quel couple est correct ?",
     options: [
@@ -2046,7 +2046,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5/441-6 = délivrance/obtention indue d’authentiques ; 441-2/441-4 = faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-6 vs 441-2",
     question:
         "Si la fraude repose sur une fausse déclaration, sans falsification du document délivré :",
@@ -2056,7 +2056,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le document est authentique, seule l’obtention est frauduleuse → 441-6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6",
     question:
         "Si l’auteur est celui qui “donne” le document à une personne qui n’y a pas droit :",
@@ -2070,7 +2070,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-7 — SÉRIES ATTESTATIONS (plus techniques)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Faits vérifiables",
     question: "« Faits matériellement inexacts » vise :",
     options: [
@@ -2084,7 +2084,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte vise des faits objectivement constatables/vérifiables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Consommation",
     question: "L’établissement d’une attestation inexacte est consommé :",
     options: [
@@ -2096,7 +2096,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "L’infraction d’établissement est indépendante de l’usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Élément moral",
     question: "Pour l’établissement (441-7), il faut :",
     options: [
@@ -2108,7 +2108,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Connaissance de l’inexactitude = élément moral central.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Aggravation (but)",
     question: "441-7 est aggravé notamment si commis :",
     options: [
@@ -2125,7 +2125,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-2 — SÉRIES DOCUMENT ADMINISTRATIF (technique)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Condition",
     question: "441-2 vise des documents administratifs établis pour :",
     options: [
@@ -2138,7 +2138,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Finalité administrative : constater/autoriser.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Usage",
     question: "L’usage de faux (441-2) suppose :",
     options: [
@@ -2154,7 +2154,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // 441-5 / 441-6 — SÉRIES “DOCUMENTS VISÉS”
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Documents visés — 441-5/441-6",
     question: "Lequel est un document typiquement visé par 441-5/441-6 ?",
     options: [
@@ -2167,7 +2167,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Documents délivrés pour constater identité/droit/qualité ou accorder autorisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Documents visés — 441-6 (organisme SP)",
     question: "441-6 peut viser un document délivré par :",
     options: [
@@ -2184,7 +2184,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // QCM VRAI/FAUX — MIX NIVEAUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-1",
     question:
         "Vrai ou Faux : les mobiles de l’auteur du faux ont une importance pour caractériser l’infraction.",
@@ -2194,7 +2194,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Les mobiles sont indifférents : ce qui compte = volonté d’altérer la vérité + nature à causer préjudice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question:
         "Vrai ou Faux : 441-6 exige une falsification matérielle du document obtenu.",
@@ -2204,7 +2204,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-6 vise l’obtention par fraude de documents authentiques (sans falsification du document).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question:
         "Vrai ou Faux : 441-2 est un « faux spécial » par rapport à 441-1.",
@@ -2218,7 +2218,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // CAS PRATIQUES — PIÈGES DE QUALIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-5 vs 441-6",
     question:
         "Un particulier fournit à un ami un document administratif authentique obtenu grâce à un agent complaisant, sachant que l’ami n’y a pas droit. Pour le particulier qui remet le document :",
@@ -2232,7 +2232,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Celui qui procure/remet à autrui un document authentique indûment = 441-5.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-6 al.2",
     question:
         "Une personne écrit volontairement une déclaration incomplète pour tenter d’obtenir un avantage indu, mais l’administration refuse. Qualification + peine ?",
@@ -2245,7 +2245,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "L’avantage n’a pas besoin d’être obtenu : le but suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-7 usage",
     question:
         "Une personne utilise devant un juge une attestation falsifiée (préexistante) en sachant qu’elle est fausse. Qualification ?",
@@ -2260,7 +2260,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage d’une attestation/certificat faux/falsifié = 441-7 (usage).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Déclarations mensongères",
     question:
         "Une personne omet volontairement de déclarer un revenu pour percevoir une allocation sociale. Qualification ?",
@@ -2274,7 +2274,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Omission volontaire destinée à obtenir un avantage indu → 441-6 al.2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Élément légal",
     question:
         "Le texte qui définit et réprime le faux et l’usage de faux (général) est :",
@@ -2287,7 +2287,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Base générale : 441-1 CP (hors faux spéciaux 441-2 à 441-7).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Support",
     question: "Le support du faux peut être :",
     options: [
@@ -2300,7 +2300,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte vise aussi d’autres supports (CD, DVD, clés USB, disque dur, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Valeur probatoire",
     question: "Pour entrer dans 441-1 CP, le support doit :",
     options: [
@@ -2314,7 +2314,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Exigence de valeur probatoire : preuve d’un droit/fait à conséquences juridiques (ou pouvant servir à cela).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Document de hasard",
     question: "Un « document de hasard » peut être un support du faux s’il :",
     options: [
@@ -2328,7 +2328,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le code vise aussi les supports qui peuvent avoir un effet probatoire, même s’ils n’ont pas été créés pour cela.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Exemple probatoire",
     question: "Selon la jurisprudence citée, peut constituer un faux :",
     options: [
@@ -2341,7 +2341,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Exemple de document utilisé à des fins probatoires : constat amiable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Factures",
     question: "Les factures :",
     options: [
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours précise que la valeur probatoire peut découler de leur usage (comptabilité).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Photocopie",
     question: "La production en justice d’une photocopie contrefaite :",
     options: [
@@ -2368,7 +2368,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "La possibilité dépend de la valeur probatoire reconnue à la copie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Faux matériel",
     question: "Le faux matériel se caractérise par :",
     options: [
@@ -2382,7 +2382,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Faux matériel = falsification du support (suppression/modification/adjonction, imitation, fabrication…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Faux intellectuel",
     question: "Le faux intellectuel correspond plutôt à :",
     options: [
@@ -2396,7 +2396,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Mensonge atteint le contenu de l’écrit/support, pas l’aspect matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Préjudice",
     question: "Le préjudice exigé par 441-1 CP :",
     options: [
@@ -2410,7 +2410,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte exige « de nature à causer un préjudice », pas un préjudice effectivement subi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Préjudice social",
     question: "Le préjudice social concerne :",
     options: [
@@ -2423,7 +2423,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Le cours distingue préjudice matériel / moral / social.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Usage",
     question: "L’usage de faux (441-1) suppose :",
     options: [
@@ -2436,7 +2436,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage = utilisation positive de la pièce fausse ; l’abstention ne suffit pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Infraction instantanée",
     question: "L’usage de faux est une infraction :",
     options: [
@@ -2449,7 +2449,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Chaque utilisation = nouvelle infraction ; prescription court à partir de la dernière utilisation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Élément moral (faux)",
     question: "Concernant le faux (441-1), l’élément moral exige :",
     options: [
@@ -2462,7 +2462,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Volonté + conscience ; mobiles indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Élément moral (usage)",
     question: "Concernant l’usage de faux (441-1), l’élément moral exige :",
     options: [
@@ -2475,7 +2475,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Double exigence : volonté d’utiliser la pièce + connaissance qu’elle est fausse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Circonstances aggravantes",
     question: "Le cours indique des circonstances aggravantes pour 441-1 :",
     options: [
@@ -2488,7 +2488,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Dans ta page : IV — circonstances aggravantes : AUCUNE pour 441-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Peines",
     question: "Les peines principales prévues par 441-1 (faux et usage) sont :",
     options: [
@@ -2500,7 +2500,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Peines 441-1 : 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Tentative",
     question: "La tentative des délits prévus par 441-1 est :",
     options: [
@@ -2517,7 +2517,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // FAUX DANS UN DOCUMENT ADMINISTRATIF + USAGE (441-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Définition",
     question: "Le faux dans un document administratif (441-2) consiste à :",
     options: [
@@ -2531,7 +2531,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-2 vise les faux matériels (et réprime aussi l’usage) sur des documents administratifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Texte",
     question: "Le faux commis dans un document administratif est réprimé par :",
     options: [
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Base légale : 441-2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Documents visés",
     question:
         "Les documents administratifs visés par 441-2 sont établis pour :",
@@ -2558,7 +2558,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte reprend la finalité probatoire/autorisation des documents administratifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Exemples",
     question: "Parmi ces documents, lequel est typiquement visé par 441-2 ?",
     options: [
@@ -2572,7 +2572,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Exemples cités : CNI, titre de séjour, certificat de nationalité, permis de construire/chasser/conduire, carte grise, certificat de mariage…",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Nature du faux",
     question: "Selon ta page, 441-2 vise principalement :",
     options: [
@@ -2585,7 +2585,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours insiste sur la contrefaçon/falsification matérielle du document administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Préjudice",
     question: "Concernant 441-2, la jurisprudence indique que le préjudice :",
     options: [
@@ -2598,7 +2598,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page cite la jurisprudence : le préjudice découle de la nature de la pièce faussée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Usage",
     question: "L’usage de faux (441-2) suppose :",
     options: [
@@ -2611,7 +2611,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Usage ne se conçoit que sur un document falsifié. Sinon, on est sur autre chose (ex : R.645-8).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Contravention",
     question:
         "L’usage d’un document administratif dont les mentions sont devenues incomplètes ou inexactes constitue :",
@@ -2625,7 +2625,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page le précise : document non falsifié mais mentions inexactes/incomplètes → R.645-8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Élément moral (faux)",
     question: "Pour le faux (441-2), l’élément moral implique :",
     options: [
@@ -2639,7 +2639,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "L’acte de falsification révèle l’intention ; mobiles indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Élément moral (usage)",
     question: "Pour l’usage de faux (441-2), il faut :",
     options: [
@@ -2651,7 +2651,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Conditions classiques rappelées dans ta page.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation 1°",
     question: "441-2 est aggravé lorsque le faux ou l’usage est commis :",
     options: [
@@ -2664,7 +2664,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Aggravation prévue par 441-2 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation 3°",
     question: "441-2 est aggravé lorsque le faux/usage est commis :",
     options: [
@@ -2678,7 +2678,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Aggravation : dessein de faciliter un crime / procurer impunité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines simples",
     question:
         "Les peines principales du faux/usage de faux administratif (441-2) simple sont :",
@@ -2691,7 +2691,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-2 al.1 et 2 → 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines aggravées",
     question: "Les peines aggravées (441-2) sont :",
     options: [
@@ -2703,7 +2703,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : aggravations 1°/2°/3° → 7 ans + 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Tentative",
     question: "La tentative des délits 441-2 est :",
     options: [
@@ -2715,7 +2715,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-9 prévoit expressément la tentative des délits 441-2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Auteur de faux",
     question:
         "Peut être considéré comme auteur du faux (pas seulement complice) :",
@@ -2734,7 +2734,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // FAUX DANS ÉCRITURE PUBLIQUE / AUTHENTIQUE + USAGE (441-4)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Définition",
     question: "Le faux (441-4) vise :",
     options: [
@@ -2748,7 +2748,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-4 : faux dans écritures publiques/authentiques + enregistrements ordonnés + usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Texte",
     question: "Le texte applicable est :",
     options: [
@@ -2760,7 +2760,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Base légale : 441-4 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux écriture publique/authentique (441-4) — Écritures publiques",
     question: "Les écritures publiques sont des écrits rédigés par :",
@@ -2775,7 +2775,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Définition dans ta page : représentant de l’autorité publique en fonction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux écriture publique/authentique (441-4) — Écritures authentiques",
     question: "Les écritures authentiques sont établies par :",
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Notaire, huissier, greffier… selon les catégories évoquées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Actes judiciaires",
     question:
         "Parmi ces exemples, lequel correspond à un acte judiciaire cité ?",
@@ -2803,7 +2803,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : actes judiciaires = décisions, PV OPJ/APJ, actes de procédure (assignation, appel…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Enregistrements",
     question:
         "Les enregistrements ordonnés par l’autorité publique peuvent être :",
@@ -2818,7 +2818,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : enregistrements ordonnés par autorité publique (écoutes, interrogatoires mineurs…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Préjudice",
     question: "Pour 441-4, le préjudice éventuel est :",
     options: [
@@ -2831,7 +2831,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Falsification d’un acte public/authentique porte atteinte à la foi publique → préjudice éventuel établi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Usage",
     question: "L’usage de faux (441-4) est constitué si :",
     options: [
@@ -2845,7 +2845,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : il suffit d’un acte quelconque d’utilisation en vue du résultat final (ou de nature à causer préjudice).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Aggravation",
     question: "441-4 est aggravé lorsque le faux/usage est commis :",
     options: [
@@ -2859,7 +2859,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Article 441-4 al.3 : circonstance aggravante de qualité + exercice des fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine simple",
     question:
         "La peine principale du faux en écriture publique/authentique (441-4) simple est :",
@@ -2872,7 +2872,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-4 (simple) → 10 ans d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine aggravée",
     question:
         "La peine aggravée du 441-4 (qualité dépositaire/service public) est :",
@@ -2885,7 +2885,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-4 al.3 → crime : 15 ans de réclusion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Tentative",
     question: "La tentative des délits 441-4 est :",
     options: [
@@ -2901,7 +2901,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // DÉLIVRANCE INDUE DE DOCUMENT ADMINISTRATIF (441-5)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Définition",
     question:
         "La délivrance indue de document administratif (441-5) consiste à :",
@@ -2916,7 +2916,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 vise des documents authentiques procurés frauduleusement à une personne qui n’y a pas droit (pas des faux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Texte",
     question:
         "La délivrance indue de document administratif est réprimée par :",
@@ -2929,7 +2929,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Base légale : 441-5 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Nature du document",
     question: "Les documents visés par 441-5 sont :",
     options: [
@@ -2942,7 +2942,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours insiste : 441-5 ne s’applique pas à des faux mais à des documents authentiques délivrés indûment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Exemples",
     question: "Lequel est un exemple de document visé par 441-5 ?",
     options: [
@@ -2954,7 +2954,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Documents d’identité cités dans la page.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Documents de droit/qualité",
     question:
         "Parmi ces exemples, lesquels peuvent constater un droit ou une qualité ?",
@@ -2969,7 +2969,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Catégorie citée : droit/qualité (certificat de nationalité, carte grise, récépissés…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Autorisations",
     question:
         "Lequel correspond à un document accordant une autorisation (441-5) ?",
@@ -2983,7 +2983,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours cite explicitement ces permis comme documents d’autorisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Procurer à autrui",
     question: "« Procurer » un document à autrui signifie :",
     options: [
@@ -2996,7 +2996,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le fait de procurer est réalisé même si le document est remis par un tiers de bonne foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Fraude (caractérisation)",
     question: "Le caractère frauduleux est caractérisé dès lors que l’auteur :",
     options: [
@@ -3010,7 +3010,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : fraude caractérisée par la connaissance de l’absence de droit (Cass. crim., 26 janv. 1993).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Élément moral",
     question: "L’élément moral de 441-5 exige :",
     options: [
@@ -3024,7 +3024,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le cours : l’agent sait qu’il procure un document à des personnes qui n’y ont pas droit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation 1°",
     question: "441-5 est aggravé lorsque l’infraction est commise :",
     options: [
@@ -3037,7 +3037,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-5 1° : qualité + exercice des fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation 2°",
     question: "441-5 est aggravé lorsque l’infraction est commise :",
     options: [
@@ -3049,7 +3049,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-5 2° : commission habituelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation 3°",
     question: "441-5 est aggravé lorsqu’il est commis :",
     options: [
@@ -3062,7 +3062,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-5 3° : dessein de faciliter crime / procurer impunité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peines simples",
     question: "Les peines principales de 441-5 simple sont :",
     options: [
@@ -3074,7 +3074,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-5 al.1 : 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peines aggravées",
     question: "Les peines aggravées de 441-5 (1°,2°,3°) sont :",
     options: [
@@ -3086,7 +3086,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : aggravée → 7 ans (réclusion) + 100 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Tentative",
     question: "La tentative des délits 441-5 est :",
     options: [
@@ -3098,7 +3098,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : 441-9 prévoit la tentative des délits de 441-5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Personnes morales",
     question:
         "La responsabilité pénale des personnes morales est prévue pour 441-5 par :",
@@ -3116,7 +3116,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // OBTENTION INDUE DE DOCUMENT ADMINISTRATIF + FAUSSE DÉCLARATION (441-6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Définition",
     question:
         "L’obtention indue de document administratif (441-6) consiste à :",
@@ -3131,7 +3131,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-6 vise l’action de se faire délivrer indûment un document (authentique) par quelque moyen frauduleux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Texte",
     question: "Le texte qui définit et réprime l’obtention indue est :",
     options: [
@@ -3143,7 +3143,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Base légale : 441-6 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Document authentique",
     question: "441-6 s’applique à :",
     options: [
@@ -3156,7 +3156,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Comme 441-5, l’infraction ne vise pas des faux mais des documents authentiques obtenus indûment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Organismes visés",
     question:
         "En plus des administrations, 441-6 vise aussi les documents délivrés par :",
@@ -3171,7 +3171,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte étend l’incrimination aux organismes chargés d’une mission de SP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Moyens frauduleux",
     question: "Les moyens frauduleux peuvent être :",
     options: [
@@ -3185,7 +3185,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page détaille plusieurs moyens : fausses déclarations, faux renseignements, tiers, manœuvres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Mariage de complaisance",
     question:
         "Le mariage de complaisance peut constituer des manœuvres frauduleuses lorsqu’il vise :",
@@ -3199,7 +3199,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page cite le mariage de complaisance comme manœuvre pour obtenir indûment un titre de séjour.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Préjudice",
     question: "Pour 441-6, l’infraction :",
     options: [
@@ -3212,7 +3212,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : pas nécessaire qu’elle soit préjudiciable pour être qualifiée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Alinéa 2 (avantages indus)",
     question: "441-6 al.2 assimile aussi à l’infraction :",
     options: [
@@ -3226,7 +3226,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : al.2 = fausse/incomplète déclaration pour obtenir ou tenter d’obtenir un avantage indu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Fausse vs incomplète",
     question: "Une déclaration « incomplète » peut consister en :",
     options: [
@@ -3239,7 +3239,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : altération de la vérité = affirmation de faits faux OU omission de faits exacts.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Consommation",
     question: "Concernant 441-6 al.2, l’infraction est consommée :",
     options: [
@@ -3253,7 +3253,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : pas besoin que l’avantage soit obtenu ; suffit du but (obtenir ou faire obtenir).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Élément moral",
     question: "L’élément moral de 441-6 implique :",
     options: [
@@ -3267,7 +3267,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : conscience + volonté d’employer un moyen frauduleux (et pour al.2 : fausse/incomplète volontaire).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Circonstances aggravantes",
     question: "441-6 prévoit des circonstances aggravantes :",
     options: ["Aucune", "En réunion", "Si arme"],
@@ -3275,7 +3275,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : IV — Circonstances aggravantes : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Peines",
     question: "Les peines principales de 441-6 (alinéa 1 et 2) sont :",
     options: [
@@ -3287,7 +3287,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau : 441-6 al.1 / al.2 → 2 ans + 30 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Tentative",
     question: "La tentative des délits 441-6 est :",
     options: [
@@ -3303,7 +3303,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // FAUX CERTIFICATS / ATTESTATIONS (441-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Définition",
     question: "441-7 incrimine notamment :",
     options: [
@@ -3316,7 +3316,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : établissement (inexact) / falsification / usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Texte",
     question: "Le texte applicable est :",
     options: [
@@ -3328,7 +3328,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Base légale : 441-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux certificats/attestations (441-7) — Définition jurisprudentielle",
     question: "Selon la jurisprudence, une attestation/certificat est :",
@@ -3342,7 +3342,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Définition rappelée dans ta page.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Écrit uniquement",
     question: "441-7 nécessite :",
     options: [
@@ -3355,7 +3355,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : seul l’écrit est pris en compte ; l’oral ne constitue pas 441-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Signature",
     question: "Le document inexact doit notamment comporter :",
     options: [
@@ -3368,7 +3368,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : exigence jurisprudentielle de signature authentique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Profit d’un tiers",
     question: "Pour entrer dans 441-7, l’attestation doit être établie :",
     options: [
@@ -3381,7 +3381,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : l’attestation sur l’honneur à son propre profit n’entre pas dans 441-7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Établissement",
     question: "« Établir » une attestation signifie :",
     options: [
@@ -3393,7 +3393,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : établissement = rédaction + signature.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux certificats/attestations (441-7) — Faits matériellement inexacts",
     question: "« Faits matériellement inexacts » correspond à :",
@@ -3406,7 +3406,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : éléments objectifs, vérifiables/constatables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Consommation",
     question:
         "L’infraction d’établissement d’une attestation inexacte est consommée :",
@@ -3419,7 +3419,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : consommée indépendamment de l’usage par la suite.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Falsification",
     question:
         "La falsification d’un certificat sincère à l’origine correspond à :",
@@ -3434,7 +3434,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : exemples de surcharge de date, modification d’analyse de sang.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Usage",
     question: "L’usage d’un certificat/attestation falsifié suppose :",
     options: [
@@ -3447,7 +3447,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage = utilisation d’un document déjà inexact/falsifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Élément moral",
     question: "L’élément moral de l’établissement (441-7) repose sur :",
     options: [
@@ -3460,7 +3460,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : connaissance de l’inexactitude ; pas besoin d’anticiper l’usage que le tiers en fera.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Aggravation al.5",
     question:
         "L’infraction 441-7 est aggravée notamment lorsqu’elle est commise :",
@@ -3474,7 +3474,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : 441-7 al.5 prévoit ces hypothèses aggravantes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Peines simples",
     question: "Les peines principales de 441-7 (simple) sont :",
     options: [
@@ -3486,7 +3486,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : simple → 1 an + 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Peines aggravées",
     question: "Les peines aggravées de 441-7 sont :",
     options: [
@@ -3498,7 +3498,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ta page : aggravée → 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Tentative",
     question: "La tentative de 441-7 est :",
     options: [
@@ -3514,7 +3514,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // DISTINCTIONS “PIÈGES” — 441-1 / 441-2 / 441-4 / 441-5 / 441-6 / 441-7
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6",
     question: "La différence clé entre 441-5 et 441-6 est que :",
     options: [
@@ -3528,7 +3528,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 = délivrance/procure à autrui ; 441-6 = obtention indue par le bénéficiaire (ou pour autrui via fraude).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Document authentique vs faux",
     question: "Quel duo correspond correctement ?",
     options: [
@@ -3542,7 +3542,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 et 441-6 ≠ faux : ce sont des documents authentiques délivrés/obtenus frauduleusement. 441-2/441-4 = faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-4",
     question: "La différence principale entre 441-2 et 441-4 :",
     options: [
@@ -3556,7 +3556,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Deux faux “spéciaux” différents : administratif vs écriture publique/authentique/enregistrement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-7 vs 441-1",
     question: "Pourquoi 441-7 est un texte « spécial » par rapport à 441-1 ?",
     options: [
@@ -3574,7 +3574,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // VRAI / FAUX — format QCM (3 options)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai ou Faux : 441-5 s’applique à des documents falsifiés (faux documents).",
@@ -3584,7 +3584,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-5 vise des documents authentiques procurés indûment (pas des faux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question:
         "Vrai ou Faux : 441-6 peut viser un document délivré par un organisme chargé d’une mission de service public.",
@@ -3594,7 +3594,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le texte étend l’incrimination aux organismes de mission de SP (ex : sécu, OFPRA, Pôle emploi).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-1",
     question:
         "Vrai ou Faux : pour 441-1, il faut un préjudice déjà subi pour que l’infraction existe.",
@@ -3604,7 +3604,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Il suffit que l’altération soit de nature à causer un préjudice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question:
         "Vrai ou Faux : l’usage de faux peut résulter d’une simple abstention (ne rien faire).",
@@ -3614,7 +3614,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Ta page : usage = fait positif d’utilisation ; l’abstention ne suffit pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai ou Faux : une simple déclaration orale inexacte peut constituer 441-7.",
@@ -3627,7 +3627,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =========================================================
   // MINI CAS PRATIQUES — Qualification + article + peine
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-6 (obtention indue)",
     question:
         "Une personne fournit une fausse date d’entrée en France sur un formulaire pour obtenir un titre de séjour. Qualification + peine ?",
@@ -3642,7 +3642,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Moyen frauduleux pour se faire délivrer un document authentique (titre de séjour) : 441-6. Peines : 2 ans + 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-5 (délivrance indue)",
     question:
         "Un agent sait qu’un demandeur n’a pas droit au document, mais fait quand même délivrer une attestation administrative à son profit. Qualification + peine simple ?",
@@ -3656,7 +3656,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Procurer frauduleusement un document authentique à autrui = 441-5 (simple : 5 ans / 75 000 €).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-2 (faux administratif) + usage",
     question:
         "Une personne falsifie matériellement une carte grise puis la présente pour obtenir un crédit. Qualification la plus adaptée ?",
@@ -3671,7 +3671,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Document administratif falsifié (carte grise) + usage : 441-2 (simple : 5 ans / 75 000 €).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-7 (attestation inexacte)",
     question:
         "Une personne rédige et signe une attestation pour aider un ami, en affirmant des faits vérifiables faux. Qualification + peine simple ?",
@@ -3685,7 +3685,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Attestation écrite en faveur d’autrui, faits matériellement inexacts : 441-7 (simple : 1 an / 15 000 €).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-4 (écriture publique) aggravée",
     question:
         "Un agent public falsifie une écriture publique dans l’exercice de ses fonctions. Qualification + peine aggravée ?",
@@ -3700,7 +3700,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-4 al.3 : aggravation si dépositaire/mission SP en exercice → crime : 15 ans de réclusion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Définition",
     question: "Le faux (441-1) est :",
     options: [
@@ -3714,7 +3714,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "441-1 = altération + préjudice possible + support servant/pouvant servir de preuve.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Support",
     question: "Le support peut être :",
     options: [
@@ -3727,7 +3727,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Écrit OU tout autre support d’expression de la pensée (y compris numérique).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Valeur probatoire",
     question: "Le support doit :",
     options: [
@@ -3740,7 +3740,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Objet OU effet probatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Préjudice",
     question: "Le préjudice exigé :",
     options: [
@@ -3752,7 +3752,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "« De nature à causer » suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Faux matériel",
     question: "Faux matériel =",
     options: [
@@ -3764,7 +3764,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Atteinte à l’aspect physique du document.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Faux intellectuel",
     question: "Faux intellectuel =",
     options: [
@@ -3776,7 +3776,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Altération porte sur les faits, pas le support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Usage de faux",
     question: "Usage de faux suppose :",
     options: [
@@ -3788,7 +3788,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage = utiliser volontairement en sachant que c’est faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Instantané",
     question: "L’usage de faux est :",
     options: [
@@ -3801,7 +3801,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Chaque utilisation = potentiellement une nouvelle infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Mobiles",
     question: "Les mobiles de l’auteur :",
     options: [
@@ -3813,7 +3813,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Ce qui compte = intention d’altérer la vérité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Peines",
     question: "441-1 (faux/usage) :",
     options: ["3 ans + 45 000 €", "2 ans + 30 000 €", "5 ans + 75 000 €"],
@@ -3823,7 +3823,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // (11) V/F
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-1",
     question:
         "Vrai/Faux : un document « de hasard » peut être support du faux.",
@@ -3832,7 +3832,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "S’il acquiert une valeur probatoire ensuite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question: "Vrai/Faux : la détention d’un faux = usage de faux.",
     options: ["Vrai", "Faux", "Uniquement si CNI"],
@@ -3840,7 +3840,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage nécessite un acte positif d’utilisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Préjudice",
     question: "Vrai/Faux : le préjudice doit être effectif pour 441-1.",
     options: ["Vrai", "Faux", "Seulement si argent"],
@@ -3850,7 +3850,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // (14-25) mini-cas 441-1
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Photocopie contrefaite produite en justice :",
     options: [
@@ -3863,7 +3863,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Production d’une copie contrefaite à valeur probatoire = faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Usage 441-1",
     question: "Même pièce fausse utilisée 4 fois :",
     options: ["4 usages possibles", "1 usage unique", "0 si ancien"],
@@ -3871,7 +3871,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Infraction instantanée : chaque acte d’usage compte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Lettre falsifiée pour prouver une embauche :",
     options: ["Faux (441-1)", "441-7", "441-2"],
@@ -3879,7 +3879,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Support privé devenu probatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Facture falsifiée passée en comptabilité :",
     options: ["Possible faux (441-1)", "Jamais faux", "Seulement 441-7"],
@@ -3887,7 +3887,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Peut acquérir valeur probatoire via comptabilité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Mensonge oral sans écrit/support :",
     options: ["Pas 441-1", "Toujours 441-1", "Toujours 441-2"],
@@ -3895,7 +3895,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-1 exige support d’expression de la pensée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Faux document créé mais jamais utilisé :",
     options: [
@@ -3908,7 +3908,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
         "Le faux peut être constitué dès la création (usage distinct).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Usage",
     question: "Présenter un faux à une banque pour ouvrir compte :",
     options: ["Usage de faux", "Détention seule", "Aucune infraction"],
@@ -3916,7 +3916,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Acte positif d’utilisation + connaissance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-1 vs 441-7",
     question: "Attestation écrite mensongère au profit d’un tiers :",
     options: [
@@ -3928,7 +3928,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial prime souvent sur général.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-1",
     question: "441-1 incrimine :",
     options: ["Faux et usage", "Obtention indue", "Délivrance indue"],
@@ -3940,7 +3940,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   // =======================
   // 441-2 — DOC ADMIN (26-55)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Définition",
     question: "441-2 vise :",
     options: [
@@ -3952,7 +3952,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial « document administratif ». ",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Document administratif",
     question: "Document administratif = délivré pour :",
     options: [
@@ -3964,7 +3964,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Critère finalité du document.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Faux matériel",
     question: "Gratter et modifier un permis :",
     options: ["441-2", "441-6", "441-5"],
@@ -3972,7 +3972,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Falsification matérielle d’un doc administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Usage",
     question: "Présenter un permis falsifié au contrôle :",
     options: ["Usage 441-2", "441-6", "441-7"],
@@ -3980,7 +3980,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Utiliser un doc administratif falsifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Préjudice",
     question: "Le préjudice du faux administratif :",
     options: [
@@ -3992,7 +3992,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Jurisprudence : préjudice déduit de la nature de la pièce.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Aggravation qualité",
     question: "Aggravé si commis par :",
     options: [
@@ -4004,7 +4004,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-2 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Aggravation dessein",
     question: "Aggravé si but :",
     options: [
@@ -4016,7 +4016,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-2 3°.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Peine simple",
     question: "441-2 simple :",
     options: ["5 ans + 75 000 €", "3 ans + 45 000 €", "2 ans + 30 000 €"],
@@ -4024,7 +4024,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Peine aggravée",
     question: "441-2 aggravé :",
     options: ["7 ans + 100 000 €", "10 ans", "1 an + 15 000 €"],
@@ -4032,7 +4032,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-2 aggravé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question: "Vrai/Faux : 441-2 réprime aussi l’usage.",
     options: ["Vrai", "Faux", "Seulement si fonctionnaire"],
@@ -4040,7 +4040,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte vise faux + usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-6",
     question: "Document authentique obtenu par mensonge (sans falsification) :",
     options: ["441-6", "441-2", "441-4"],
@@ -4048,7 +4048,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "441-2 suppose falsification/contrefaçon.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — R.645-8",
     question: "Doc administratif non falsifié mais devenu inexact, utilisé :",
     options: ["Contravention R.645-8", "Usage 441-2", "441-6"],
@@ -4058,7 +4058,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
   ),
 
   // 38-55 = mini-cas rapides (18)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2",
     question: "Fausse carte grise utilisée pour s’approprier un véhicule :",
     options: ["441-2", "441-6", "441-7"],
@@ -4066,7 +4066,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Falsification de doc administratif (carte grise).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2 usage",
     question: "Présenter une carte grise falsifiée à l’assurance :",
     options: ["Usage 441-2", "441-1", "441-6"],
@@ -4074,7 +4074,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Usage d’un faux doc administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2",
     question: "Imitation de signature sur un doc administratif :",
     options: ["441-2", "441-7", "441-6"],
@@ -4082,7 +4082,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Procédé donnant apparence d’authenticité → faux matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2",
     question: "Fabriquer de toutes pièces un permis :",
     options: ["441-2", "441-5", "441-6"],
@@ -4090,7 +4090,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Contrefaçon d’un doc administratif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2 aggravé",
     question: "Agent public falsifie une CNI en service :",
     options: ["441-2 aggravé", "441-6", "441-7"],
@@ -4098,7 +4098,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Qualité + exercice = aggravation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question: "Vrai/Faux : 441-2 vise uniquement des écrits papier.",
     options: ["Vrai", "Faux", "Seulement si permis"],
@@ -4106,7 +4106,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Peut viser support autre que l’écrit (renvoi cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-1",
     question:
         "Si le support est un document administratif, on retient plutôt :",
@@ -4115,7 +4115,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Texte spécial doc administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-2",
     question: "Peine simple 441-2 :",
     options: ["5 ans + 75k", "2 ans + 30k", "3 ans + 45k"],
@@ -4123,7 +4123,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-2",
     question: "Peine aggravée 441-2 :",
     options: ["7 ans + 100k", "10 ans", "15 ans réclusion"],
@@ -4137,7 +4137,7 @@ final List<QuizQuestion> questionFauxUsageFaux = [
 // PAGE
 // ============================================================================
 class QuizFauxUsageFaux extends StatefulWidget {
-  static const String routeName = '/gpx/nation/quiz/faux_usage_faux';
+  static const String routeName = '/gpx/dps/nation/quiz/faux_usage_faux';
   final String uid;
   final String email;
 
@@ -4482,7 +4482,7 @@ class _QuizFauxUsageFauxState extends State<QuizFauxUsageFaux>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4685,7 +4685,7 @@ class _QuizFauxUsageFauxState extends State<QuizFauxUsageFaux>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4868,7 +4868,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5401,10 +5400,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5775,7 +5775,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5816,9 +5816,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

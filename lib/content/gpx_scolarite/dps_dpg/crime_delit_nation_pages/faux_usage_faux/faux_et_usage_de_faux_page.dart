@@ -109,16 +109,16 @@ class FauxEtUsageDeFauxPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’infraction de faux ainsi que l’usage de faux.",
                 ),
@@ -134,329 +134,329 @@ class FauxEtUsageDeFauxPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’infraction est constituée par une altération préjudiciable de la vérité réalisée dans un document "
                 "avec la volonté de tromper.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Établissement d’un support matériel du faux"),
-              const _SubTitle("• Le support du faux"),
-              const _Paragraph(
+              _SubTitle("A) Établissement d’un support matériel du faux"),
+              _SubTitle("• Le support du faux"),
+              _Paragraph(
                 "Le support doit être un écrit ou tout autre support d’expression de la pensée. "
                 "Il doit avoir pour objet ou pour effet d’établir la preuve d’un droit ou d’un fait ayant des conséquences juridiques : "
                 "cela implique une certaine valeur probatoire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("✓ Un écrit"),
+              _SubTitle("✓ Un écrit"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le faux est principalement commis dans un écrit. Le texte vise tout écrit non couvert par un faux spécial ",
                 ),
                 TextSpan(
                   text: "(articles 441-2 à 441-7 du Code pénal)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". L’écrit correspond à « tout signe ou ensemble de signes matériels, visibles et permanents, servant à l’expression, la fixation et la transmission de la pensée ».",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’écriture peut être manuscrite, dactylographiée, gravée ou peinte. "
                 "La langue et le langage utilisés sont indifférents.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("✓ Autres supports de la pensée"),
-              const _Paragraph(
+              _SubTitle("✓ Autres supports de la pensée"),
+              _Paragraph(
                 "La formulation est volontairement très large : elle permet d’étendre l’infraction à de nouveaux supports "
                 "(ex. CD-ROM, DVD, disque dur, film, microfilm, clés USB, etc.). "
                 "Elle permet aussi de sanctionner la falsification de documents informatiques en dehors de toute atteinte à un STAD.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Saisies de remboursements indus + faux actes médicaux + faux décomptes : ces décomptes sont des documents faisant titre entrant dans les prévisions de ",
                   ),
                   TextSpan(
                     text: "l’article 441-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " "),
+                  TextSpan(text: " "),
                   TextSpan(
                     text: "(Cass. crim., 24 janvier 2001)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("• Valeur probatoire du support"),
-              const _Paragraph(
+              _SubTitle("• Valeur probatoire du support"),
+              _Paragraph(
                 "Sont visés :\n"
                 "— les supports créés dès l’origine pour servir de preuve ;\n"
                 "— mais aussi ceux qui peuvent ensuite avoir cet effet (documents dits « de hasard »).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Falsification d’un constat amiable d’accident ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 1er juin 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text:
                         "Correspondance privée falsifiée et produite en justice pour établir la preuve d’un fait ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 février 1977)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text: "Falsification d’une lettre d’embauche ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 novembre 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les factures, simples déclarations unilatérales, n’ont pas en elles-mêmes de valeur probatoire. "
                       "Elles peuvent toutefois en acquérir une lorsqu’elles sont passées en comptabilité : leur falsification tombe alors sous le coup de ",
                 ),
                 TextSpan(
                   text: "l’article 441-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " "),
+                TextSpan(text: " "),
                 TextSpan(
                   text: "(Cass. crim., 05 avril 1993)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Copie d’un document",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La possibilité de réaliser un faux dépend de la valeur probatoire reconnue à la copie. "
                         "La production en justice sous forme de photocopie d’un document contrefait constitue un faux ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 novembre 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une falsification"),
+              _SubTitle("B) Une falsification"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : vise l’altération de la vérité accomplie par quelque moyen que ce soit.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("☑ Une falsification matérielle"),
-              const _Paragraph(
+              _SubTitle("☑ Une falsification matérielle"),
+              _Paragraph(
                 "Le support (aspect physique) du document est falsifié. "
                 "Deux formes principales :\n"
                 "— altération d’un document authentique (suppression, modification, adjonction d’écritures) ;\n"
                 "— procédés donnant l’apparence de l’authenticité à un document qui ne l’est pas (fabrication du document, imitation de signature…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ticket d’autobus plastifié : procédé ayant pu empêcher l’impression, faire disparaître ou rendre effaçables des signes normalement indélébiles destinés à faire preuve ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 19 décembre 1974)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("☑ Une falsification intellectuelle"),
+              _SubTitle("☑ Une falsification intellectuelle"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le faux intellectuel est un défaut de véracité : le mensonge atteint le contenu de l’écrit et non le support. "
                       "Il doit porter sur l’altération des faits que le document avait pour objet de constater et sur une disposition substantielle ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 29 avril 1971)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un préjudice"),
-              const _Paragraph(
+              _SubTitle("C) Un préjudice"),
+              _Paragraph(
                 "Le texte exige une altération de la vérité « de nature à causer un préjudice ». "
                 "Il n’est pas nécessaire que le préjudice se soit effectivement réalisé : il suffit qu’il soit possible.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le préjudice peut être :\n"
                 "— matériel (atteinte aux intérêts patrimoniaux : privation d’un droit, création d’obligations indues…) ;\n"
                 "— moral (honneur, considération, réputation…) ;\n"
                 "— social (atteinte à la confiance dans les actes publics/authentiques).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) L’usage du faux"),
+              _SubTitle("D) L’usage du faux"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "L’usage du faux est incriminé par l’alinéa 2 de ",
                 ),
                 TextSpan(
                   text: "l’article 441-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ". L’usage suppose l’existence préalable d’un faux.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La jurisprudence retient qu’il suffit que le détenteur utilise la pièce, par un acte quelconque, en vue du résultat final qu’elle était destinée à produire ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 25 janvier 1961 ; 8 octobre 1996)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ", ou par tout acte de nature à causer un préjudice.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’usage de faux nécessite un fait positif d’utilisation et ne peut résulter de la seule abstention (contrats de prêt falsifiés) ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 4 novembre 2010)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "C’est une infraction instantanée : chaque acte d’usage constitue une nouvelle infraction. "
                 "Le délai de prescription court à compter de chacun des actes d’utilisation (dernier acte en date).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Prescription",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délai de prescription court, pour l’usage de faux, à partir de la date de chacun des actes par lesquels le prévenu se prévaut de la pièce fausse ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 19 janvier 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -470,23 +470,23 @@ class FauxEtUsageDeFauxPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Concernant l’infraction de faux"),
-              const _BulletPoint(text: "Volonté de réaliser la falsification."),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Concernant l’infraction de faux"),
+              _BulletPoint(text: "Volonté de réaliser la falsification."),
+              _BulletPoint(
                 text:
                     "Conscience d’altérer la vérité dans des conditions de nature à causer un préjudice.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Pour le faux matériel, l’acte révèle l’intention du fait même de sa réalisation (fabrication, fausse signature…). "
                 "Pour le faux intellectuel, l’intention peut être plus délicate à caractériser (l’auteur peut se croire sincère). "
                 "Les mobiles sont indifférents.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Concernant l’infraction d’usage de faux"),
-              const _BulletPoint(text: "Volonté d’user de la pièce fausse."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Concernant l’infraction d’usage de faux"),
+              _BulletPoint(text: "Volonté d’user de la pièce fausse."),
+              _BulletPoint(
                 text: "Connaissance de la fausseté de la pièce.",
               ),
             ],
@@ -515,84 +515,84 @@ class FauxEtUsageDeFauxPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Faux et usage de faux : 3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 441-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 441-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 441-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (prévoit expressément la tentative des délits prévus à l’article 441-1).",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Complicité : OUI."),
-              const SizedBox(height: 10),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Complicité : OUI."),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Secrétaire de mairie faisant procéder par un employé subalterne à la falsification de registres ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 octobre 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text:
                         "Ouverture de comptes bancaires pour encaisser des chèques en paiement de factures fictives ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 23 juin 1988)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -631,10 +631,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -699,7 +699,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -742,7 +742,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -804,7 +804,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -836,7 +836,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -849,7 +849,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

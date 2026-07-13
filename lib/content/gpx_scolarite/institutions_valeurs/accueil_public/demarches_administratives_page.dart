@@ -108,28 +108,28 @@ class DemarchesAdministrativesPage extends StatelessWidget {
             cardColor: cardCni,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La carte nationale d’identité est délivrée gratuitement. Elle n’est pas obligatoire. "
                 "Même périmée, elle peut justifier l’identité d’un Français tant que la photo est ressemblante. "
                 "En cours de validité, elle permet l’entrée dans certains pays sans passeport (selon règles du pays).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Durée de validité"),
-              const _BulletPoint(
+              _SubTitle("Durée de validité"),
+              _BulletPoint(
                 text: "CNI sécurisée : 15 ans (majeurs) / 10 ans (mineurs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Nouvelle CNI électronique (format carte bancaire) : 10 ans (majeurs et mineurs).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La prolongation de 10 à 15 ans est automatique pour certaines CNI sécurisées (délivrées entre 2004 et 2013 pour des majeurs). "
                         "La date sur le titre n’est pas modifiée. "
@@ -137,45 +137,45 @@ class DemarchesAdministrativesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Où la demander ?"),
-              const _BulletPoint(
+              _SubTitle("Où la demander ?"),
+              _BulletPoint(
                 text:
                     "Dans n’importe quelle mairie équipée d’une station d’enregistrement (pas lié au domicile).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Liste des mairies disponibles sur service-public.fr.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Comment la faire établir ?"),
-              const _BulletPoint(
+              _SubTitle("Comment la faire établir ?"),
+              _BulletPoint(
                 text: "Pré-demande possible en ligne via ants.gouv.fr.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Présence du demandeur indispensable (prise d’empreintes).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Cas particuliers"),
-              const _BulletPoint(
+              _SubTitle("Cas particuliers"),
+              _BulletPoint(
                 text:
                     "Mineurs : l’enfant + le responsable légal doivent être présents. Le responsable présente sa propre pièce d’identité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Parents séparés/divorcés : jugement utile uniquement si résidence alternée (inscrire 2 adresses).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Perte / vol"),
-              const _BulletPoint(
+              _SubTitle("Perte / vol"),
+              _BulletPoint(
                 text:
                     "Vol : déclaration préalable en commissariat/gendarmerie (ou autorités locales + consulat à l’étranger) contre récépissé.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Perte : si renouvellement immédiat, déclaration faite au guichet lors du dépôt ; sinon déclaration en commissariat/gendarmerie.",
               ),
@@ -190,80 +190,80 @@ class DemarchesAdministrativesPage extends StatelessWidget {
             cardColor: cardMineur,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Autorisation de sortie du territoire (AST)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Autorisation de sortie du territoire (AST)"),
+              _Paragraph(
                 "Un mineur résidant en France qui voyage à l’étranger seul ou sans l’un de ses parents "
                 "doit avoir une AST. Un mineur voyageant avec son père ou sa mère n’a pas besoin d’AST.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Formulaire "),
+                TextSpan(text: "Formulaire "),
                 TextSpan(
                   text: "CERFA n°15646*01",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " disponible sur service-public.fr (aucun passage en mairie/préfecture).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Documents à avoir (voyage sans parent)"),
-              const _BulletPoint(
+              _SubTitle("Documents à avoir (voyage sans parent)"),
+              _BulletPoint(
                 text:
                     "Pièce d’identité valide du mineur (CNI ou passeport) + visa si nécessaire (selon pays).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Photocopie du titre d’identité du parent signataire (valide ou périmé depuis moins de 5 ans).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Original de l’AST signée par un parent titulaire de l’autorité parentale.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Opposition à sortie du territoire (OST)"),
-              const _Paragraph(
+              _SubTitle("B) Opposition à sortie du territoire (OST)"),
+              _Paragraph(
                 "En cas d’urgence et face à un risque avéré, un parent peut demander une OST.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Demande en préfecture / sous-préfecture.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Nuits / week-ends / jours fériés : possible en commissariat ou brigade de gendarmerie.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Effets",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si OST décidée : inscription au FPR et signalement au SIS. Durée maximale : 15 jours (non prolongeable).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Interdiction de sortie du territoire (IST)"),
-              const _Paragraph(
+              _SubTitle("C) Interdiction de sortie du territoire (IST)"),
+              _Paragraph(
                 "Mesure judiciaire décidée par le JAF (autorité parentale / protection) ou le juge des enfants "
                 "(assistance éducative).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un mineur sous IST peut voyager si les deux parents autorisent expressément : autorisation recueillie au commissariat sur PV (au moins 5 jours avant).",
                   ),
@@ -280,87 +280,87 @@ class DemarchesAdministrativesPage extends StatelessWidget {
             cardColor: cardPermis,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Échanger un permis UE/EEE"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Échanger un permis UE/EEE"),
+              _Paragraph(
                 "Concerne les résidents en France titulaires d’un permis délivré par un autre État UE/EEE. "
                 "L’échange n’est pas obligatoire sauf dans certains cas (infraction entraînant suspension/retrait, "
                 "ou permis obtenu en échange d’un pays tiers sans réciprocité).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Demande (par courrier)"),
+              _SubTitle("Demande (par courrier)"),
               _Paragraph.rich([
-                const TextSpan(text: "Formulaire "),
+                TextSpan(text: "Formulaire "),
                 TextSpan(
                   text: "CERFA n°14879*01",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " + formulaire "),
+                TextSpan(text: " + formulaire "),
                 TextSpan(
                   text: "CERFA n°14948*01 (référence 06)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (imprimé en couleur)."),
+                TextSpan(text: " (imprimé en couleur)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Copie couleur recto/verso du permis + justificatifs d’identité et de domicile + photos + enveloppe lettre suivie.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Dossier adressé au CERT (ou CREPIC si Paris).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Échanger un permis hors UE/EEE"),
-              const _Paragraph(
+              _SubTitle("B) Échanger un permis hors UE/EEE"),
+              _Paragraph(
                 "Obligatoire pour continuer à conduire : échange à demander dans l’année suivant l’acquisition de la résidence habituelle en France "
                 "(sauf étudiants étrangers pendant leurs études).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Conditions",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Permis valide, pays pratiquant l’échange, conditions de reconnaissance (traduction officielle si nécessaire, âge requis, absence de suspension/retrait…).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Permis international"),
-              const _Paragraph(
+              _SubTitle("C) Permis international"),
+              _Paragraph(
                 "Certains pays exigent un permis international (traduction officielle du permis français). "
                 "Coût : gratuit. Demande par courrier.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Formulaire "),
+                TextSpan(text: "Formulaire "),
                 TextSpan(
                   text: "CERFA n°14881*01",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (1er volet) + copies permis/identité/domicile + 2 photos + enveloppe lettre suivie.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Dossier au CERT Permis internationaux (ou CREPIC si Paris).",
               ),
@@ -443,73 +443,73 @@ class DemarchesAdministrativesPage extends StatelessWidget {
             cardColor: cardVote,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Permet à un électeur absent (mandant) de choisir un autre électeur (mandataire) "
                 "pour voter à sa place.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Conditions pour le mandataire"),
-              const _BulletPoint(
+              _SubTitle("Conditions pour le mandataire"),
+              _BulletPoint(
                 text:
                     "Inscrit dans la même commune que le mandant (pas forcément même bureau).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ne détient pas plus de 2 procurations (selon règles France/étranger).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Où faire la démarche ?"),
-              const _BulletPoint(
+              _SubTitle("Où faire la démarche ?"),
+              _BulletPoint(
                 text:
                     "Commissariat / gendarmerie (où que soit le mandant), ou tribunal judiciaire (domicile / travail).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Comment faire ?"),
+              _SubTitle("Comment faire ?"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Option 1 : formulaire papier sur place.\n",
                 ),
-                const TextSpan(text: "Option 2 : formulaire "),
+                TextSpan(text: "Option 2 : formulaire "),
                 TextSpan(
                   text: "CERFA n°14952*02",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " rempli en ligne puis imprimé (2 feuilles, pas recto-verso) et finalisé au guichet.\n",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "Option 3 : demande en ligne via maprocuration.gouv.fr (puis déplacement obligatoire pour validation d’identité).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Délais",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Même si la procuration peut être établie jusqu’au jour du vote, il est recommandé d’anticiper "
                         "pour éviter que la mairie ne la reçoive trop tard.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Déroulement du vote"),
-              const _BulletPoint(
+              _SubTitle("Déroulement du vote"),
+              _BulletPoint(
                 text:
                     "Le mandataire vote avec sa propre pièce d’identité, au bureau du mandant.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le mandant peut voter lui-même s’il se présente avant le mandataire.",
               ),
@@ -581,10 +581,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -649,7 +649,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -692,7 +692,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -754,7 +754,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -786,7 +786,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -799,7 +799,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

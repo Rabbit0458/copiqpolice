@@ -67,7 +67,7 @@ class ExtraditionModalitesTransmissionPage extends StatelessWidget {
               height: 1.4,
               color: isDark
                   ? Colors.white70
-                  : const Color(0xFF1F1F1F).withOpacity(.80),
+                  : const Color(0xFF1F1F1F).withValues(alpha: .80),
             ),
           ),
           const SizedBox(height: 18),
@@ -79,37 +79,37 @@ class ExtraditionModalitesTransmissionPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 'Chaîne de transmission en procédure de droit commun',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Le procureur de la République compétent établit la demande '
                     'd’extradition sur la base d’un titre exécutoire (décision de '
                     'condamnation ou mandat d’arrêt).',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'La demande est transmise au procureur général, qui émet un avis '
                     'sur l’opportunité de la démarche et la régularité du dossier.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Lorsque l’État requis ne fait pas partie de l’Union européenne, '
                     'la demande passe par la Chancellerie avant d’être adressée '
                     'au ministre des Affaires étrangères.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Le ministre des Affaires étrangères transmet la demande à l’État requis, '
                     'qui se prononce sur un accord ou un refus d’extradition.',
               ),
-              const SizedBox(height: 8),
-              const _SubTitle(
+              SizedBox(height: 8),
+              _SubTitle(
                 'Particularité lorsque l’État requis est membre de l’Union européenne',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Si l’État requis est membre de l’Union européenne mais que la procédure '
                 'du mandat d’arrêt européen n’est pas applicable, le procureur général peut, '
                 'après avis, transmettre plus directement le dossier au ministre des Affaires '
@@ -237,53 +237,53 @@ class ExtraditionModalitesTransmissionPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _SubTitle('Champ d’application'),
-              const _Paragraph(
+            children: const [
+              _SubTitle('Champ d’application'),
+              _Paragraph(
                 'La procédure simplifiée d’extradition est réservée aux demandes émanant '
                 'd’un État partie à la Convention du 10 mars 1995 relative à la procédure '
                 'simplifiée d’extradition entre États membres de l’Union européenne, lorsque '
                 'la procédure du mandat d’arrêt européen n’est pas applicable.',
               ),
-              const SizedBox(height: 8),
-              const _SubTitle('Chaîne procédurale'),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _SubTitle('Chaîne procédurale'),
+              _IntroBullet(
                 text:
                     'L’État requérant adresse sa demande au garde des Sceaux, sans intervenir '
                     'du ministère des Affaires étrangères lorsque la convention le permet.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Le garde des Sceaux transmet la demande au procureur général '
                     'territorialement compétent.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Le procureur général met en œuvre les mêmes étapes que dans la '
                     'procédure de droit commun : arrestation, présentation dans les 48 heures, '
                     'notification du titre, informations sur la faculté de consentir ou non, '
                     'et éventuel placement sous écrou extraditionnel ou mesures de contrôle.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'L’affaire est ensuite portée devant la chambre de l’instruction, qui '
                     'statue sur la base du consentement ou non de la personne recherchée.',
               ),
-              const SizedBox(height: 8),
-              const _SubTitle('Spécificités de la procédure simplifiée'),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _SubTitle('Spécificités de la procédure simplifiée'),
+              _BulletPoint(
                 text:
                     'Si la personne consent à son extradition, la chambre de l’instruction lui '
                     'donne acte de ce consentement dans un délai de 7 jours à compter de sa '
                     'comparution.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Si la personne ne consent pas, la chambre de l’instruction dispose d’un '
                     'délai d’un mois pour rendre un avis motivé, comme en droit commun.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Spécificité essentielle',
                 bodySpans: [
                   TextSpan(
@@ -433,10 +433,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -501,7 +501,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -544,7 +544,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -606,7 +606,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -638,7 +638,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -651,7 +651,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

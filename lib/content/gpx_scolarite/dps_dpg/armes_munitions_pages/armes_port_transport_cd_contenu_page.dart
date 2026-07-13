@@ -113,17 +113,17 @@ class ArmesPortTransportCDPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exceptions : "),
+                  TextSpan(text: "Exceptions : "),
                   TextSpan(
                     text: "articles L. 315-1 et L. 315-2 du C.S.I.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -137,32 +137,32 @@ class ArmesPortTransportCDPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 317-8 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime le port et le transport sans motif légitime des armes, munitions ou éléments des catégories C ou D "
                       "(à l’exception de ceux présentant une faible dangerosité et figurant sur une liste fixée par arrêté).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Réserves / exceptions : "),
+                TextSpan(text: "Réserves / exceptions : "),
                 TextSpan(
                   text: "articles L. 315-1 et L. 315-2 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -175,39 +175,39 @@ class ArmesPortTransportCDPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Port ou transport hors du domicile"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Port ou transport hors du domicile"),
+              _Paragraph(
                 "L’infraction vise des faits commis hors du domicile, selon les mêmes logiques que pour les catégories A ou B : "
                 "l’interdiction est le principe, les dérogations sont encadrées.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) Le port"),
-              const _Paragraph(
+              _SubTitle("1) Le port"),
+              _Paragraph(
                 "Le port, c’est le fait d’avoir l’arme sur soi (ceinture, étui, poche, etc.) et utilisable immédiatement.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) Le transport"),
-              const _Paragraph(
+              _SubTitle("2) Le transport"),
+              _Paragraph(
                 "Le transport, c’est déplacer une arme d’un lieu à un autre (hors domicile) en l’ayant auprès de soi, mais inutilisable immédiatement "
                 "(ex. dans une valise, une housse, le coffre d’un véhicule, etc.).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Armes / munitions / éléments concernés"),
-              const _BulletPoint(
+              _SubTitle("B) Armes / munitions / éléments concernés"),
+              _BulletPoint(
                 text: "Catégorie C : armes soumises à déclaration.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Catégorie D : uniquement celles figurant sur une liste fixée par arrêté (hors faible dangerosité).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le législateur inclut aussi les éléments d’armes (même isolés) pour éviter le transport d’une arme en pièces détachées "
@@ -216,21 +216,21 @@ class ArmesPortTransportCDPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Dérogations : le motif légitime de transport",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le transport d’une arme, de munitions ou d’éléments d’arme de catégorie C ou D (sauf cas où il est libre) est admis "
                 "s’il existe un motif légitime lié au déplacement.",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(text: "Déménagement."),
-              const _IntroBullet(text: "Trajet domicile ↔ armurerie."),
-              const _IntroBullet(text: "Compétition ou entraînement."),
-              const _IntroBullet(text: "Chasse (dans le cadre prévu)."),
-              const _IntroBullet(text: "Reconstitution historique."),
+              SizedBox(height: 8),
+              _IntroBullet(text: "Déménagement."),
+              _IntroBullet(text: "Trajet domicile ↔ armurerie."),
+              _IntroBullet(text: "Compétition ou entraînement."),
+              _IntroBullet(text: "Chasse (dans le cadre prévu)."),
+              _IntroBullet(text: "Reconstitution historique."),
             ],
           ),
 
@@ -267,19 +267,19 @@ class ArmesPortTransportCDPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 317-9 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Si le transport d’armes est effectué par au moins deux personnes, ou si deux personnes au moins sont trouvées porteuses d’armes.",
               ),
@@ -294,152 +294,152 @@ class ArmesPortTransportCDPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Personnes physiques — peines principales"),
+            children: const [
+              _SubTitle("A) Personnes physiques — peines principales"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification : "),
-                const TextSpan(
+                TextSpan(text: "Qualification : "),
+                TextSpan(
                   text: "Délit",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Catégorie C"),
+              _SubTitle("Catégorie C"),
               _Paragraph.rich([
-                const TextSpan(text: "• Simple : "),
-                const TextSpan(
+                TextSpan(text: "• Simple : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article L. 317-8 2° du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "• Aggravée : "),
-                const TextSpan(
+                TextSpan(text: "• Aggravée : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article L. 317-9 2° du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Catégorie D"),
+              _SubTitle("Catégorie D"),
               _Paragraph.rich([
-                const TextSpan(text: "• Simple : "),
-                const TextSpan(
+                TextSpan(text: "• Simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article L. 317-8 3° du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "• Aggravée : "),
-                const TextSpan(
+                TextSpan(text: "• Aggravée : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article L. 317-9 3° du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Personnes morales"),
-              const _BulletPoint(text: "NON (non prévu ici)."),
+              _SubTitle("B) Personnes morales"),
+              _BulletPoint(text: "NON (non prévu ici)."),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Amende forfaitaire délictuelle (AFD)"),
+              _SubTitle("C) Amende forfaitaire délictuelle (AFD)"),
               _Paragraph.rich([
-                const TextSpan(text: "Le dernier alinéa de "),
+                TextSpan(text: "Le dernier alinéa de "),
                 TextSpan(
                   text: "l’article L. 317-8 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " permet de recourir à la procédure d’amende forfaitaire pour le délit (catégorie D), sauf s’il s’agit d’armes à feu.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Procédure prévue par "),
+                TextSpan(text: "Procédure prévue par "),
                 TextSpan(
                   text:
                       "les articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Tentative & complicité"),
+              _SubTitle("D) Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : "),
-                const TextSpan(
+                TextSpan(text: "Tentative : "),
+                TextSpan(
                   text: "NON",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (en l’absence de texte spécial : la tentative n’est punissable que si la loi le prévoit).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : "),
-                const TextSpan(
+                TextSpan(text: "Complicité : "),
+                TextSpan(
                   text: "OUI",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: ", conformément à "),
+                TextSpan(text: ", conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -477,10 +477,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -545,7 +545,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -588,7 +588,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -650,7 +650,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -661,10 +661,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -676,13 +675,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -695,13 +693,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

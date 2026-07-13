@@ -33,7 +33,7 @@ class RegimeManifestationsPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF1976D2)
         : const Color(0xFF1565C0);
@@ -95,13 +95,13 @@ class RegimeManifestationsPage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 8),
-          _Paragraph(
+          const _Paragraph(
             'Dans un régime démocratique, le droit de manifester est admis, mais encadré : '
             'déclaration préalable, pouvoir d’interdiction en cas de risque grave pour l’ordre public, '
             'responsabilité pénale des organisateurs et des participants en cas d’infractions.',
           ),
           const SizedBox(height: 16),
-          _NotaBox(
+          const _NotaBox(
             title: 'Référence centrale',
             bodySpans: [
               TextSpan(
@@ -151,7 +151,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'La déclaration permet à l’autorité de police d’évaluer le risque de troubles à l’ordre public et '
                 'd’adapter le dispositif (itinéraire, forces engagées, restrictions éventuelles).',
               ),
@@ -279,7 +279,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'L’interdiction prend la forme d’un arrêté motivé, notifié aux organisateurs par un officier de police judiciaire '
                 'ou par tout autre agent mandaté. Si la notification individuelle est impossible, la décision est rendue publique « par tous moyens ». ',
               ),
@@ -339,7 +339,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'L’arrêté d’interdiction peut faire l’objet d’un recours en référé devant le tribunal administratif, '
                 'qui vérifie la réalité du risque, la nécessité et la proportionnalité de la mesure.',
               ),
@@ -421,7 +421,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _NotaBox(
+              const _NotaBox(
                 title: 'Contrôles d’identité',
                 bodySpans: [
                   TextSpan(
@@ -473,14 +473,14 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Est puni d’un an d’emprisonnement et de 15 000 € d’amende le fait, sans motif légitime, '
                 'de dissimuler volontairement tout ou partie de son visage lors d’une manifestation sur la voie publique '
                 'ou à ses abords immédiats, dans des circonstances faisant craindre des atteintes à l’ordre public et '
                 'en vue d’échapper à son identification.',
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Une contravention de 5ᵉ classe (art. R.645-14 C.P.) sanctionne des faits proches lorsque l’atteinte à l’ordre public est moins grave. '
                 'L’infraction n’est pas constituée quand la dissimulation répond à un usage légitime (ex. carnaval traditionnel).',
               ),
@@ -525,7 +525,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Le juge peut prononcer, en peine complémentaire, une interdiction de participer à des manifestations sur la voie publique '
                 'pour une durée maximale de 3 ans lorsque certains délits ont été commis à cette occasion (violences, destructions, '
                 'dégradations, infractions prévues aux articles 431-9, 431-9-1, 431-10 C.P., etc.).',
@@ -589,7 +589,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’article L.211-3 C.S.I. permet, lorsqu’il existe des risques sérieux de troubles graves à l’ordre public, '
                 'd’interdire temporairement, dans un périmètre déterminé (lieux de la manifestation et abords), '
                 'le port et le transport, sans motif légitime, d’objets pouvant constituer une arme par destination.',
@@ -605,7 +605,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Pour prévenir les atteintes à la sécurité des personnes et des biens, l’O.P.J. peut, '
                 'sous le contrôle du procureur de la République, mettre en œuvre des contrôles aux abords '
                 'des manifestations (articles 78-2 et 78-2-3 C.P.P.), dans des zones et pour une durée limités.',
@@ -621,7 +621,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’article 78-2-5 C.P.P. autorise le procureur de la République à délivrer des réquisitions '
                 'permettant de contrôler les bagages et les véhicules situés sur les lieux d’une manifestation ou à ses abords immédiats, '
                 'afin de rechercher les infractions, notamment le port d’armes lors d’une réunion publique.',
@@ -637,7 +637,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’article 322-11-1 C.P. réprime la détention ou le transport de substances ou produits '
                 'incendiaires ou explosifs destinés à préparer des atteintes graves aux personnes ou aux biens '
                 'à l’occasion d’une manifestation. La peine peut aller jusqu’à 7 ans d’emprisonnement et 100 000 € d’amende, '
@@ -684,7 +684,7 @@ class RegimeManifestationsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Les victimes peuvent demander réparation devant la juridiction civile. '
                 'L’État peut ensuite exercer une action récursoire contre les auteurs identifiés des infractions. '
                 'La commune peut également être mise en cause lorsque sa responsabilité propre est engagée.',
@@ -738,10 +738,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -784,7 +784,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -818,7 +818,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -871,7 +871,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -896,7 +896,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -931,7 +931,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -944,7 +944,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

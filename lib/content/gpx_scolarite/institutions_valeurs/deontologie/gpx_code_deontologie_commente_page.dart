@@ -168,8 +168,8 @@ class CodeDeontologieCodeCommentePage extends StatelessWidget {
             cardColor: cardComment,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les missions de sécurité intérieure, accomplies sous l'autorité du ministère de l'intérieur, relèvent notamment "
                 "de la compétence de la police et de la gendarmerie nationales.\n\n"
                 "Elles constituent la composante missionnelle principale de la gendarmerie nationale, qui en qualité de force armée, "
@@ -688,8 +688,8 @@ class CodeDeontologieCodeCommentePage extends StatelessWidget {
             cardColor: cardComment,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L'impartialité requiert l'absence de discrimination de la part des membres des forces de l'ordre. Afin de cerner au mieux la notion de « discrimination », "
                 "il convient de se référer à l'article 225-1 du code pénal¹ qui la précise et qui est susceptible d'évoluer (apparition de nouvelles formes de discrimination qui seront sanctionnées).\n\n"
                 "L'impartialité du policier ou du gendarme est une valeur primordiale attendue par la population, en particulier dans la cadre des enquêtes judiciaires qu'il diligente. "
@@ -699,26 +699,26 @@ class CodeDeontologieCodeCommentePage extends StatelessWidget {
                 "• utilisation au seul bénéfice d'un proche, de prérogatives exclusivement attachées à l'exercice de la mission de police (comme s'enquérir auprès de collègues/camarades de l'état d'avancement "
                 "d'une procédure pour préparer de futures gardes à vue et d'orienter ainsi une stratégie de défense);",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Texte",
                 bodySpans: [
-                  const TextSpan(text: "Code pénal, "),
+                  TextSpan(text: "Code pénal, "),
                   TextSpan(
                     text: "article 225-1",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : « Constitue une discrimination toute distinction opérée entre les personnes physiques à raison de leur origine, de leur sexe, de leur situation de famille, de leur grossesse, de leur apparence physique, de leur patronyme, de leur état de santé, de leur handicap, de leurs caractéristiques génétiques, de leurs mœurs, de leur orientation ou identité sexuelle, de leur âge, de leurs opinions politiques, de leurs activités syndicales, de leur appartenance ou de leur non-appartenance, vraie ou supposée, à une ethnie, une nation, une race ou une religion déterminée. Constitue également une discrimination toute distinction opérée entre les personnes morales à raison de l'origine, du sexe, de la situation de famille, de l'apparence physique, du patronyme, de l'état de santé, du handicap, des caractéristiques génétiques, des moeurs, de l'orientation ou identité sexuelle, de l'âge, des opinions politiques, des activités syndicales, de l'appartenance ou de la non-appartenance, vraie ou supposée, à une ethnie, une nation, une race ou une religion déterminée des membres ou de certains membres de ces personnes morales. »",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "• ciblage positif ou négatif d'une personne ou d'un groupe de personnes (victime ou mis en cause) en raison de ses opinions religieuses, philosophiques, politiques, de son orientation sexuelle, etc.;\n"
                 "• rédaction, affichage, diffusion, sous quelque forme que ce soit, dans les locaux de service, d'écrits à caractère raciste, xénophobe, sexiste, homophobe,... appelant à l'indiscipline collective ou de nature politique, y compris de manière « humoristique ».\n\n"
                 "Exemple de comportements positifs :\n"
@@ -1800,10 +1800,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1868,7 +1868,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1911,7 +1911,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1973,7 +1973,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -2005,7 +2005,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -2018,7 +2018,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

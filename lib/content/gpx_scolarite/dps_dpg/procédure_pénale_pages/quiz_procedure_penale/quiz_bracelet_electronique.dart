@@ -103,7 +103,7 @@ final List<QuizQuestion> questionsARSE = [
   // =====================================================
 
   // NOTIONS GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Notions générales',
     question:
         'La loi du 24 novembre 2009 a instauré l’assignation à résidence avec surveillance électronique (ARSE) pour :',
@@ -119,7 +119,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Notions générales',
     question:
         'L’assignation à résidence avec surveillance électronique (ARSE) concerne :',
@@ -134,7 +134,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Notions générales',
     question:
         'À quel article du Code de procédure pénale l’ARSE est-elle rattachée ?',
@@ -150,7 +150,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // CONDITIONS DE MISE EN ŒUVRE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Conditions de mise en œuvre',
     question:
         'Selon l’article 142-5 alinéa 1 du C.P.P., l’assignation à résidence n’est possible que si la personne encourt :',
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // PRONONCÉ DE LA MESURE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Prononcé de la mesure',
     question: 'Parmi ces autorités, laquelle peut ordonner une ARSE ?',
     options: ['Le juge d’instruction', 'Le maire de la commune', 'Le préfet'],
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Prononcé de la mesure',
     question:
         'En plus du juge d’instruction, qui peut également ordonner l’assignation à résidence avec surveillance électronique ?',
@@ -192,7 +192,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Prononcé de la mesure',
     question:
         'Une juridiction de jugement peut-elle prononcer l’ARSE sans demande de la personne mise en examen ?',
@@ -209,7 +209,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // OBJET DE LA MESURE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Objet de la mesure',
     question:
         'L’objet principal de l’assignation à résidence avec surveillance électronique est :',
@@ -225,7 +225,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Objet de la mesure',
     question:
         'L’assignation à résidence avec surveillance électronique peut comprendre, en plus de la présence au domicile :',
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // FAISABILITÉ
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Faisabilité technique',
     question:
         'Quel service est chargé de vérifier la faisabilité technique de la mesure d’ARSE ?',
@@ -257,7 +257,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Consentement',
     question:
         'La personne placée sous ARSE doit être informée que l’installation du dispositif de surveillance :',
@@ -278,7 +278,7 @@ final List<QuizQuestion> questionsARSE = [
   // =====================================================
 
   // FAISABILITÉ ET PLACEMENT PROVISOIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Faisabilité technique',
     question:
         'Lorsque la peine encourue est égale ou supérieure à 3 ans et que la faisabilité technique n’a pas encore été vérifiée, le juge des libertés et de la détention peut :',
@@ -294,7 +294,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Faisabilité technique',
     question:
         'Dans le cadre de la vérification de faisabilité, le juge doit saisir :',
@@ -311,7 +311,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // MODALITÉS DE SURVEILLANCE ÉLECTRONIQUE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Modalités de la surveillance',
     question:
         'La surveillance électronique dans le cadre de l’ARSE se fait conformément aux dispositions de l’article :',
@@ -322,7 +322,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Modalités de la surveillance',
     question:
         'L’assignation à résidence avec mise sous surveillance électronique mobile peut notamment être mise en œuvre lorsque :',
@@ -338,7 +338,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Violences intrafamiliales',
     question:
         'L’ARSE peut être mise en œuvre lorsque la personne est mise en examen pour des violences ou menaces punies d’au moins 5 ans d’emprisonnement commises :',
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Extradition et mandats',
     question:
         'Parmi ces situations, laquelle peut justifier l’assignation à résidence avec surveillance électronique mobile ?',
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // DURÉE ET RENOUVELLEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Durée de la mesure',
     question:
         'Selon l’article 142-7 du C.P.P., la durée maximale initiale de l’assignation à résidence avec surveillance électronique est de :',
@@ -381,7 +381,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Renouvellement',
     question: 'La mesure d’ARSE peut être renouvelée :',
     options: [
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionsARSE = [
   ),
 
   // MANQUEMENTS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Manquements',
     question:
         'Si la personne ne respecte pas son assignation à résidence, le juge peut :',
@@ -413,7 +413,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — JLD et détention non justifiée',
     question:
         'Lorsque la personne est placée en détention provisoire pour non-respect de l’ARSE, le juge des libertés et de la détention, s’il estime que cette détention n’est pas justifiée, peut :',
@@ -434,7 +434,7 @@ final List<QuizQuestion> questionsARSE = [
   // =====================================================
 
   // CAS PRATIQUES ET ARTICULATIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Cas pratique',
     question:
         'Une personne mise en examen pour un délit puni de 2 ans d’emprisonnement encourt-elle légalement l’ARSE au sens de l’article 142-5 alinéa 1 ?',
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Articulation avec le contrôle judiciaire',
     question: 'Sur le plan des principes, l’ARSE est mise en œuvre :',
     options: [
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Consentement et détention',
     question:
         'La personne mise en examen refuse l’installation du dispositif électronique chez elle. Juridiquement :',
@@ -480,7 +480,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Surveillance électronique mobile',
     question:
         'Dans le cadre d’une ARSE avec surveillance électronique mobile pour une infraction punie de plus de 7 ans d’emprisonnement, le juge d’instruction :',
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Extradition et juridictions internationales',
     question:
         'L’ARSE avec surveillance électronique mobile peut être mise en œuvre lorsque la personne fait l’objet :',
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Durée maximale',
     question:
         'Une personne est placée sous ARSE depuis 18 mois. Le juge souhaite renouveler la mesure pour une nouvelle période de 6 mois. Cette décision est-elle conforme au texte ?',
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Non-respect réitéré',
     question:
         'En cas de non-respect répété de l’assignation à résidence malgré un premier rappel, la réponse la plus conforme à l’esprit des textes est :',
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Contrôle de la durée',
     question:
         'Une mesure d’ARSE a été renouvelée sans débat contradictoire. En pratique, quel est le principal risque juridique ?',
@@ -559,7 +559,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Synthèse des acteurs',
     question:
         'Parmi ces affirmations, laquelle décrit le plus fidèlement la répartition des rôles dans la mise en œuvre de l’ARSE ?',
@@ -575,7 +575,7 @@ final List<QuizQuestion> questionsARSE = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Comparaison avec la détention provisoire',
     question: 'Sur le plan des libertés, l’ARSE se situe :',
     options: [
@@ -947,7 +947,7 @@ class _QuizBraceletElectroniquePageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1150,7 +1150,7 @@ class _QuizBraceletElectroniquePageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1333,7 +1333,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1866,10 +1865,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2240,7 +2240,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2281,9 +2281,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

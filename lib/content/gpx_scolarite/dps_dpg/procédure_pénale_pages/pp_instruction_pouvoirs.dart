@@ -14,7 +14,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final Color cardLight = isDark
         ? const Color(0xFF424242)
@@ -82,9 +82,9 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le juge d’instruction a pour première mission de rechercher avec précision les "
                       "circonstances dans lesquelles l’infraction a été commise, ainsi que les conditions "
@@ -100,16 +100,16 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", qui consacre l’importance de la recherche de la vérité tout en tenant compte "
                       "de la situation personnelle des protagonistes.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La recherche de la vérité doit être menée de la manière la plus objective possible. "
                       "Pour y parvenir, le juge instruit à charge et à décharge : il doit rechercher et "
@@ -124,11 +124,11 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
-              const _Paragraph(
+              _Paragraph(
                 "Pour mener à bien cette mission délicate, le juge d’instruction dispose de mesures "
                 "très diverses : mandats de justice, contrôle judiciaire, détention provisoire, commissions "
                 "rogatoires, expertises, auditions, perquisitions, saisies… Certaines de ces mesures font l’objet "
@@ -152,8 +152,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Le juge d’instruction peut procéder lui-même à un certain nombre de constatations "
                       "matérielles venant compléter celles déjà effectuées par les services d’enquête. "
@@ -166,7 +166,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " l’autorise à se transporter sur les lieux pour effectuer toutes constatations utiles "
                       "ou procéder à des perquisitions, le cas échéant en donnant avis au procureur de la "
@@ -215,8 +215,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Lorsque la technicité d’une question dépasse ses compétences juridiques, le juge "
                       "d’instruction peut recourir à des experts. L’expertise est encadrée par ",
@@ -228,7 +228,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " et a pour objet l’examen de questions d’ordre technique nécessitant, au-delà de "
                       "constatations objectives, une véritable interprétation spécialisée : police scientifique, "
@@ -240,8 +240,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
 
               const _SubTitle('3.2.2.1 – La nomination des experts'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "L’initiative d’une expertise peut appartenir au ministère public, au juge d’instruction "
                       "qui ordonne d’office, à l’une des parties ou encore au témoin assisté. Lorsque le juge "
@@ -255,12 +255,12 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Les experts sont en principe choisis parmi les personnes physiques ou morales "
                       "inscrites sur les listes nationales ou régionales dressées par les juridictions. "
@@ -273,7 +273,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", qui permet également de recourir à des services spécialisés, notamment les services "
                       "de police technique et scientifique de la police nationale et de la gendarmerie nationale. "
@@ -286,8 +286,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
               const SizedBox(height: 12),
               const _SubTitle('3.2.2.2 – Le déroulement de l’expertise'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Avant d’exercer leurs fonctions, les experts inscrits sur les listes prêtent serment "
                       "« d’apporter leur concours à la justice, en leur honneur et en leur conscience ». Ce serment "
@@ -301,7 +301,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Les experts non inscrits sur une liste prêtent serment devant le juge d’instruction "
                       "ou le magistrat désigné.",
@@ -316,7 +316,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                       "être tenu informé des opérations en cours et peut prendre toute mesure utile. Ce contrôle "
                       "est rappelé par ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "l’Article 156 alinéa 3 du Code de procédure pénale",
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
@@ -324,7 +324,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                   ),
                 ),
                 const TextSpan(text: " et par les dispositions de "),
-                TextSpan(
+                const TextSpan(
                   text: "l’Article 161 alinéa 3 du Code de procédure pénale",
                   style: TextStyle(
                     fontWeight: FontWeight.w800,
@@ -348,8 +348,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "À l’issue de leurs opérations, les experts rédigent un rapport détaillé exposant la nature "
                       "des investigations réalisées et leurs conclusions. Ce rapport doit être signé par les experts, "
@@ -363,7 +363,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Avec l’accord du juge d’instruction, les conclusions peuvent être communiquées au procureur "
                       "de la République, aux officiers de police judiciaire chargés de l’exécution d’une commission "
@@ -386,8 +386,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Le juge d’instruction peut entendre toute personne susceptible d’apporter des éléments "
                       "utiles à la manifestation de la vérité. Les règles applicables aux témoins sont précisées "
@@ -400,14 +400,14 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
               const _SubTitle('3.3.1.1 – Les personnes concernées'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "En vertu de ces dispositions, le juge d’instruction peut faire citer devant lui, par huissier "
                       "ou par agent de la force publique, toute personne dont la déposition lui paraît utile. Si la "
@@ -421,7 +421,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " impose au juge d’entendre comme témoins les personnes contre lesquelles existent des indices "
                       "graves ou concordants d’avoir participé à l’infraction, sauf à les placer sous un autre statut.",
@@ -433,8 +433,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                 '3.3.1.2 – Les formalités attachées à l’audition',
               ),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Les témoins doivent être entendus séparément et hors la présence des parties, sauf en cas de "
                       "confrontation. Il est dressé procès-verbal de leurs déclarations, conformément à ",
@@ -446,7 +446,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Le juge vérifie l’identité du témoin et précise ses liens éventuels avec les parties – "
                       "parenté, alliance, lien de service – en application de ",
@@ -458,15 +458,15 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Le témoin prête serment de dire toute la vérité, rien que la vérité.",
                 ),
               ]),
               const SizedBox(height: 8),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text: "Les obligations du témoin sont détaillées par ",
                 ),
                 TextSpan(
@@ -476,7 +476,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : il doit comparaître, prêter serment et déposer. Certaines catégories de personnes sont toutefois "
                       "dispensées de l’obligation de prêter serment ou de déposer, notamment les proches parents du mis en "
@@ -489,7 +489,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " et aux textes relatifs à la protection de la famille et aux liens de parenté.",
                 ),
@@ -547,8 +547,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Le témoin assisté occupe une position intermédiaire entre le simple témoin et la personne "
                       "mise en examen. Ce statut concerne des personnes à l’égard desquelles pèsent des soupçons plus "
@@ -562,14 +562,14 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
               const _SubTitle('3.3.2.1 – Les personnes concernées'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Sont notamment témoins assistés, de plein droit ou à la demande, les personnes nommément "
                       "visées dans un réquisitoire introductif ou supplétif du procureur de la République, celles "
@@ -585,25 +585,25 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
               const _SubTitle('3.3.2.2 – Les droits du témoin assisté'),
 
-              _IntroBullet(
+              const _IntroBullet(
                 text:
                     "Assistance d’un avocat, désigné par lui ou d’office, avec accès au dossier de la procédure.",
               ),
-              _IntroBullet(
+              const _IntroBullet(
                 text:
                     "Droit d’obtenir l’interprétation ou la traduction des pièces essentielles du dossier.",
               ),
-              _IntroBullet(
+              const _IntroBullet(
                 text:
                     "Droit de demander des confrontations et de formuler des requêtes en annulation.",
               ),
-              _IntroBullet(
+              const _IntroBullet(
                 text:
                     "Droit de demander son renvoi devant une juridiction de jugement ou la clôture de la procédure "
                     "lorsqu’aucun acte d’instruction n’a été accompli depuis quatre mois, en application de ",
@@ -620,8 +620,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Le témoin assisté est avisé de la fin de l’information, peut présenter des observations et "
                       "soulever des nullités au moment où le juge statue sur le règlement du dossier, conformément à ",
@@ -633,7 +633,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
@@ -661,8 +661,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
 
               const _SubTitle('3.3.2.4 – La mise en examen du témoin assisté'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La mise en examen d’un témoin assisté peut intervenir à sa demande ou à l’initiative du juge "
                       "d’instruction lorsque ce dernier estime que des indices graves ou concordants rendent vraisemblable "
@@ -675,7 +675,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " précise que, dans certains cas, le juge a la faculté de maintenir la personne sous le statut "
                       "de témoin assisté s’il n’est pas en mesure de réunir des indices suffisamment graves ou concordants.",
@@ -691,10 +691,10 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               _SubTitle('3.3.3.1 – Les personnes concernées'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La mise en examen suppose, à peine de nullité, l’existence d’indices graves ou concordants "
                       "rendant vraisemblable la participation de la personne à l’infraction. Cette condition est posée par ",
@@ -706,20 +706,20 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Lorsque la mise en examen n’est pas possible ou pas nécessaire, le juge peut recourir au statut "
                       "de témoin assisté.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _SubTitle(
                 '3.3.3.2 – L’interrogatoire de première comparution d’une personne non témoin assisté',
               ),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Quand le juge envisage de mettre en examen une personne qui n’a pas encore le statut de témoin "
                       "assisté, il doit procéder à un interrogatoire de première comparution, conformément aux exigences de ",
@@ -731,7 +731,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". En matière criminelle, cet interrogatoire fait l’objet d’un enregistrement audiovisuel, en application de ",
                 ),
@@ -742,17 +742,17 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". L’Article 80-2 du Code de procédure pénale permet en outre au juge de convoquer la personne par lettre "
                       "recommandée, dans un délai compris entre dix jours et deux mois.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
-              const _SubTitle('3.3.3.3 – Particularités'),
+              _SubTitle('3.3.3.3 – Particularités'),
 
-              const _IntroBullet(
+              _IntroBullet(
                 text: "La personne mise en examen ne prête pas serment.",
               ),
               _IntroBullet(
@@ -768,12 +768,12 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le procureur de la République et les avocats peuvent prendre la parole au cours des interrogatoires pour "
                       "formuler des observations ou poser des questions, mais c’est le juge d’instruction qui dirige les débats, "
@@ -786,7 +786,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -800,8 +800,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
               const _SubTitle('3.3.4.1 – Personnes concernées'),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Toute personne qui se prétend lésée par un crime ou un délit peut se constituer partie civile devant le "
                       "juge d’instruction en déposant plainte, conformément à ",
@@ -813,15 +813,15 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". La constitution de partie civile déclenche en principe l’action publique si la plainte est recevable.",
                 ),
               ]),
               const SizedBox(height: 8),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La constitution de partie civile peut être formée par simple déclaration écrite ou orale, sans formalisme "
                       "rigide, comme le rappelle ",
@@ -833,7 +833,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: ". D’autres textes, tels que "),
+                TextSpan(text: ". D’autres textes, tels que "),
                 TextSpan(
                   text: "l’Article 80-3 du Code de procédure pénale",
                   style: TextStyle(
@@ -841,7 +841,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", encadrent l’information de la victime sur ses droits, sa possibilité de se constituer partie civile et les "
                       "délais pour demander la clôture de la procédure.",
@@ -871,8 +871,8 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
 
               const _SubTitle('3.3.4.4 – Particularités'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Lors de sa première audition, la partie civile est avisée de ses droits, notamment de la possibilité de formuler des "
                       "demandes d’actes et des requêtes en annulation, ainsi que des délais dans lesquels elle peut demander la clôture de la "
@@ -885,7 +885,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: " et de "),
+                TextSpan(text: " et de "),
                 TextSpan(
                   text: "l’Article 175-1 du Code de procédure pénale",
                   style: TextStyle(
@@ -893,7 +893,7 @@ class PPInstructionPouvoirsPage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
 
@@ -969,10 +969,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1037,7 +1037,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1080,7 +1080,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1142,7 +1142,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1174,7 +1174,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1187,7 +1187,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

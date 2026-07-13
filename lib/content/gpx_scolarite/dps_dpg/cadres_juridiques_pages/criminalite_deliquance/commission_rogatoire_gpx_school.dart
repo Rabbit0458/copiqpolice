@@ -97,9 +97,9 @@ class CommissionRogatoireGpxSchool extends StatelessWidget {
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: [
-                  const _SubTitle('2.3.2.1.1 – Le principe'),
-                  const _Paragraph.rich([
+                children: const [
+                  _SubTitle('2.3.2.1.1 – Le principe'),
+                  _Paragraph.rich([
                     TextSpan(
                       text:
                           'L’Article 706-91 du Code de procédure pénale dispose : « Si les '
@@ -127,43 +127,43 @@ class CommissionRogatoireGpxSchool extends StatelessWidget {
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
-                  const SizedBox(height: 8),
-                  const _Paragraph(
+                  SizedBox(height: 8),
+                  _Paragraph(
                     'Les officiers de police judiciaire peuvent donc procéder à des '
                     'perquisitions de nuit, en dehors des locaux d’habitation, avec '
                     'l’autorisation préalable du juge d’instruction.',
                   ),
-                  const SizedBox(height: 4),
-                  const _Paragraph(
+                  SizedBox(height: 4),
+                  _Paragraph(
                     'En cas d’urgence, avec l’autorisation du juge d’instruction, les '
                     'officiers de police judiciaire peuvent également perquisitionner de '
                     'nuit dans les locaux d’habitation.',
                   ),
-                  const SizedBox(height: 6),
-                  const _Paragraph(
+                  SizedBox(height: 6),
+                  _Paragraph(
                     'Les perquisitions de nuit prévues par l’Article 706-91 du Code de '
                     'procédure pénale ne peuvent intervenir que dans les cas limitativement '
                     'énumérés suivants :',
                   ),
-                  const SizedBox(height: 4),
-                  const _BulletPoint(
+                  SizedBox(height: 4),
+                  _BulletPoint(
                     text:
                         'lorsqu’il s’agit d’un crime ou d’un délit flagrant ;',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'lorsqu’il existe un risque immédiat de disparition de preuves ou '
                         'd’indices matériels ;',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'lorsqu’il existe une ou plusieurs raisons plausibles de '
                         'soupçonner qu’une ou plusieurs personnes présentes dans les '
                         'locaux sont en train de commettre des crimes ou délits relevant '
                         'des articles 706-73 et 706-73-1 du Code de procédure pénale ;',
                   ),
-                  const SizedBox(height: 8),
-                  const _NotaBox(
+                  SizedBox(height: 8),
+                  _NotaBox(
                     bodySpans: [
                       TextSpan(
                         text:
@@ -174,17 +174,17 @@ class CommissionRogatoireGpxSchool extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 12),
-                  const _SubTitle(
+                  SizedBox(height: 12),
+                  _SubTitle(
                     '2.3.2.1.2 – Les conditions de mise en œuvre',
                   ),
-                  const _Paragraph(
+                  _Paragraph(
                     'L’officier de police judiciaire ne peut réaliser une perquisition hors '
                     'des heures légales sans autorisation préalable du juge d’instruction. '
                     'Cette autorisation prend la forme d’une ordonnance écrite et motivée.',
                   ),
-                  const SizedBox(height: 4),
-                  const _Paragraph.rich([
+                  SizedBox(height: 4),
+                  _Paragraph.rich([
                     TextSpan(
                       text:
                           'Comme en enquête de flagrance, l’Article 706-92 du Code de '
@@ -194,9 +194,9 @@ class CommissionRogatoireGpxSchool extends StatelessWidget {
                       style: TextStyle(color: Colors.red),
                     ),
                   ]),
-                  const SizedBox(height: 10),
-                  const _SubTitle('2.3.2.1.3 – Les limites'),
-                  const _Paragraph.rich([
+                  SizedBox(height: 10),
+                  _SubTitle('2.3.2.1.3 – Les limites'),
+                  _Paragraph.rich([
                     TextSpan(
                       text:
                           'L’Article 706-93 du Code de procédure pénale précise que les '
@@ -363,10 +363,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -431,7 +431,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -474,7 +474,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -536,7 +536,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -547,10 +547,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -562,13 +561,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -581,13 +579,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

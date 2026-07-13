@@ -93,26 +93,26 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les violences habituelles commises sur un mineur de quinze ans ou sur une personne dont la particulière vulnérabilité "
                       "(âge, maladie, infirmité, déficience physique ou psychique, grossesse) est apparente ou connue de l’auteur, "
                       "ou encore sur une personne en état de sujétion psychologique ou physique, constituent une infraction.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "La sujétion est appréciée au sens de "),
+                TextSpan(text: "La sujétion est appréciée au sens de "),
                 TextSpan(
                   text: "l’article 223-15-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -125,30 +125,30 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14 du Code pénal (alinéa 1)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit les violences habituelles sur mineur ou personne vulnérable.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14 du Code pénal (alinéas 2 à 5)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : fixe la répression selon le résultat.",
                 ),
               ]),
@@ -163,178 +163,178 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte positif de violences"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte positif de violences"),
+              _Paragraph(
                 "Les violences supposent un comportement actif : la simple abstention ne suffit pas "
                 "(en cas d’omissions, d’autres qualifications peuvent être retenues : privation de soins, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("1) Un contact physique (direct ou indirect)"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("1) Un contact physique (direct ou indirect)"),
+              _Paragraph(
                 "Sont visés tous les comportements impliquant un contact physique : coups, gifles, morsures, etc. "
                 "Le contact peut être indirect : arme (par nature ou destination), objet, animal excité par l’auteur, etc.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Une atteinte psychique (violences psychologiques)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les violences volontaires peuvent être matérialisées par une agression psychique : "
                       "tout acte de nature à impressionner vivement la victime et à lui causer un choc émotif, "
                       "même sans atteinte physique.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "« Le délit de violences est constitué… » — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 18 mars 2008, n°07-86.075",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : codifie la jurisprudence en précisant que les violences sont constituées quelle que soit leur nature, "
                       "y compris psychologiques.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exemple",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Individu descendant avec une barre de fer et frappant le véhicule de la victime — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 18 mars 2008",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Des violences habituelles (répétition)"),
-              const _Paragraph(
+              _SubTitle("B) Des violences habituelles (répétition)"),
+              _Paragraph(
                 "L’habitude implique que les violences aient été commises à plusieurs reprises. "
                 "La répétition peut s’apprécier sur une durée relativement courte si les faits sont réitérés.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Institution spécialisée : privations, enfermements, douches froides… assimilés à des traitements inhumains ou dégradants — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 2 décembre 1998",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text:
                         "Violences sur une période de deux mois : constitutives de violences habituelles — ",
                   ),
                   TextSpan(
                     text: "C.A. Grenoble, 5 novembre 1999",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une victime particulière"),
-              const _Paragraph("La loi protège spécifiquement :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Un mineur de 15 ans."),
-              const _BulletPoint(
+              _SubTitle("C) Une victime particulière"),
+              _Paragraph("La loi protège spécifiquement :"),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Un mineur de 15 ans."),
+              _BulletPoint(
                 text:
                     "Une personne dont la particulière vulnérabilité est apparente ou connue (âge, maladie, infirmité, déficience physique/psychique, grossesse).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Une personne en état de sujétion psychologique ou physique (pressions graves/réitérées ou techniques altérant le jugement, avec effets graves ou actes/abstentions gravement préjudiciables).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Sujétion au sens de "),
+                TextSpan(text: "Sujétion au sens de "),
                 TextSpan(
                   text: "l’article 223-15-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un résultat dommageable"),
-              const _Paragraph(
+              _SubTitle("D) Un résultat dommageable"),
+              _Paragraph(
                 "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. "
                 "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’article 222-14 distingue quatre types de préjudices selon que les violences :\n"
                 "• ont entraîné la mort ;\n"
                 "• ont entraîné une mutilation ou une infirmité permanente ;\n"
                 "• ont entraîné une I.T.T. > 8 jours ;\n"
                 "• n’ont pas entraîné une I.T.T. > 8 jours.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Brimades ayant entraîné un état anxio-dépressif grave et une I.T.T. > 8 jours — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 4 mars 2003, n°2003-018405",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -348,8 +348,8 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le délit est consommé lorsque les violences sont intentionnelles : "
                 "l’auteur a conscience de commettre un acte affectant l’intégrité physique et/ou psychique d’autrui, "
                 "avec la connaissance qu’il en résultera un préjudice pour la victime.",
@@ -376,116 +376,116 @@ class ViolencesHabituellesMineurVulnerablePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "I.T.T. 0 à 8 jours (délit) : "),
-                const TextSpan(
+                TextSpan(text: "I.T.T. 0 à 8 jours (délit) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-14 4° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "I.T.T. > 8 jours (délit) : "),
-                const TextSpan(
+                TextSpan(text: "I.T.T. > 8 jours (délit) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-14 3° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Mutilation / infirmité permanente (crime) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "20 ans de réclusion (période de sûreté). — ",
                 ),
                 TextSpan(
                   text: "article 222-14 2° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Mort sans intention de la donner (crime) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "30 ans de réclusion (période de sûreté). — ",
                 ),
                 TextSpan(
                   text: "article 222-14 1° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 222-16-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (amende + peines complémentaires)."),
+                TextSpan(text: " (amende + peines complémentaires)."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : NON (non visée pour les violences délictuelles).",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En matière criminelle, la tentative est théoriquement punissable, mais difficile à établir car l’infraction dépend en partie du résultat.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -523,10 +523,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -591,7 +591,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -634,7 +634,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -696,7 +696,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -728,7 +728,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -741,7 +741,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -110,13 +110,13 @@ class DissimulationForceeVisagePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-10 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime la dissimulation forcée du visage.",
                 ),
@@ -132,108 +132,108 @@ class DissimulationForceeVisagePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une dissimulation du visage imposée"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une dissimulation du visage imposée"),
+              _Paragraph(
                 "Cette dissimulation imposée constitue une forme de violence à l’encontre de la victime.\n\n"
                 "Ce délit protège la victime : il peut lui permettre de s’exonérer de l’infraction de dissimulation du visage "
                 "dans l’espace public si elle démontre la contrainte subie.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Référence : "),
-                  const TextSpan(
+                  TextSpan(text: "Référence : "),
+                  TextSpan(
                     text: "article 122-2 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (« n’est pas responsable pénalement la personne qui a agi sous l’empire d’une force ou d’une contrainte à laquelle elle n’a pu résister »).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une ou plusieurs personnes visées"),
-              const _Paragraph(
+              _SubTitle("B) Une ou plusieurs personnes visées"),
+              _Paragraph(
                 "Les situations de contrainte à dissimuler son visage prennent principalement place dans le cadre familial. "
                 "Elles sont souvent exercées au sein du couple ou par des parents sur leurs enfants.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un des cinq moyens énumérés par la loi"),
-              const _Paragraph(
+              _SubTitle("C) Un des cinq moyens énumérés par la loi"),
+              _Paragraph(
                 "Tous les moyens de pression sont pris en compte : menace, violence, contrainte, abus d’autorité ou abus de pouvoir.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• La menace"),
+              _SubTitle("• La menace"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Est considéré comme une menace tout acte d’intimidation inspirant la crainte d’un mal ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 11 juin 1937)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Elle se distingue des violences car elle porte atteinte à l’intégrité morale.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• La violence"),
+              _SubTitle("• La violence"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La violence peut impliquer un contact physique (coups, gifle, morsure…) mais peut aussi être retenue sans contact : "
                       "comportement impressionnant fortement la personne au point de lui causer un choc émotif ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 30 avril 1996)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• La contrainte"),
+              _SubTitle("• La contrainte"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Elle s’apprécie selon la capacité de résistance de la victime ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 8 juin 1994)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Elle peut être corporelle (violences) ou psychologique (pressions assimilables à des menaces).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• Abus d’autorité / abus de pouvoir"),
-              const _Paragraph(
+              _SubTitle("• Abus d’autorité / abus de pouvoir"),
+              _Paragraph(
                 "L’autorité peut être légale (autorité parentale), professionnelle (employeur), ou de fait (ascendant exercé sur une autre personne).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Fondement : le sexe de la victime"),
-              const _Paragraph(
+              _SubTitle("D) Fondement : le sexe de la victime"),
+              _Paragraph(
                 "La dissimulation doit être imposée en raison du sexe de la victime. "
                 "À l’heure actuelle, les femmes apparaissent comme les principales victimes.",
               ),
@@ -266,16 +266,16 @@ class DissimulationForceeVisagePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-10 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsque le fait est commis au préjudice d’un mineur.",
               ),
             ],
@@ -289,55 +289,55 @@ class DissimulationForceeVisagePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 30 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-10 alinéa 1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée (mineur) : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée (mineur) : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 60 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-10 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Responsabilité selon le principe général : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 121-2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément aux "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI, conformément aux "),
+                TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide/assistance, provocation, instructions données).",
                 ),
@@ -378,10 +378,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -446,7 +446,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -489,7 +489,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -551,7 +551,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -562,10 +562,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -577,13 +576,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -596,13 +594,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

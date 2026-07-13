@@ -107,54 +107,54 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : interdit la captation, l’enregistrement et la transmission, sans consentement, "
                       "de paroles prononcées à titre privé/confidentiel (même en lieu public) et de l’image d’une personne "
                       "se trouvant dans un lieu privé.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 35 ter de la loi du 29 juillet 1881",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : protège l’image d’une personne identifiée/identifiable mise en cause dans une procédure pénale "
                       "non condamnée, lorsque l’image montre menottes/entraves ou détention provisoire.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 39 sexies de la loi du 29 juillet 1881",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : base de la protection de l’anonymat de certains fonctionnaires de police (services listés par arrêté).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Important : en intervention, la liberté d’information peut primer, tant qu’elle n’est pas dévoyée "
@@ -259,27 +259,27 @@ class EnregistrementDiffusionImagesParolesPage extends StatelessWidget {
             cardColor: cardSpecial,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Certains services d’intervention / anti-terrorisme / contre-espionnage (listés par arrêté) bénéficient d’une garantie d’anonymat. ",
                 ),
                 TextSpan(
                   text: "Article 39 sexies de la loi du 29 juillet 1881",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : publication interdite si l’image permet l’identification.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Dans ce cadre, l’anonymat est protégé en toute circonstance, y compris sur la voie publique et dans des lieux ouverts au public.",
@@ -361,10 +361,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -429,7 +429,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -472,7 +472,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -534,7 +534,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -566,7 +566,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -579,7 +579,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

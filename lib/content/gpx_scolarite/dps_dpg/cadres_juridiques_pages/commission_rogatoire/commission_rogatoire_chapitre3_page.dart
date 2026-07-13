@@ -16,27 +16,18 @@ class CommissionRogatoireChapitre3Page extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.88);
+        : const Color(0xFF1F1F1F).withValues(alpha: .88);
 
     final Color cardBlue = isDark
         ? const Color(0xFF0D1B2A)
         : const Color(0xFFE3F2FD);
-    final Color cardBlueAccent = const Color(0xFF1565C0);
+    const Color cardBlueAccent = Color(0xFF1565C0);
 
     final Color cardGreen = isDark
         ? const Color(0xFF0F2416)
         : const Color(0xFFE8F5E9);
-    final Color cardGreenAccent = const Color(0xFF2E7D32);
+    const Color cardGreenAccent = Color(0xFF2E7D32);
 
-    final Color cardPurple = isDark
-        ? const Color(0xFF1B1530)
-        : const Color(0xFFEDE7F6);
-    final Color cardPurpleAccent = const Color(0xFF5E35B1);
-
-    final Color cardTeal = isDark
-        ? const Color(0xFF00363A)
-        : const Color(0xFFE0F2F1);
-    final Color cardTealAccent = const Color(0xFF00695C);
 
     return Scaffold(
       backgroundColor: bg,
@@ -92,9 +83,9 @@ class CommissionRogatoireChapitre3Page extends StatelessWidget {
           // ================================================================
           // INTRO : ARTICLE 152 CPP ET CONTROLE DU JUGE
           // ================================================================
-          _ExempleBox(
+          const _ExempleBox(
             title: 'Article 152 alinéa 1 du Code de procédure pénale',
-            bodySpans: const [
+            bodySpans: [
               TextSpan(
                 text:
                     'Les magistrats ou officiers de police judiciaire commis pour '
@@ -154,8 +145,8 @@ class CommissionRogatoireChapitre3Page extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 10),
-          _NotaBox(
-            bodySpans: const [
+          const _NotaBox(
+            bodySpans: [
               TextSpan(
                 text:
                     'si la commission rogatoire émane d’un juge d’instruction situé '
@@ -665,10 +656,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -740,7 +731,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -771,55 +762,6 @@ class _Paragraph extends StatelessWidget {
 }
 
 /// ------------------------------------------------------------------
-/// PUCE D’INTRO
-/// ------------------------------------------------------------------
-class _IntroBullet extends StatelessWidget {
-  const _IntroBullet({required this.text});
-
-  final String text;
-
-  @override
-  Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-    final Color bulletColor = isDark
-        ? const Color(0xFF64B5F6)
-        : const Color(0xFF1565C0);
-    final Color textColor = isDark
-        ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
-
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 2),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: const EdgeInsets.only(top: 4),
-            child: Icon(
-              Icons.arrow_right_rounded,
-              size: 18,
-              color: bulletColor,
-            ),
-          ),
-          const SizedBox(width: 2),
-          Expanded(
-            child: Text(
-              text,
-              style: GoogleFonts.fustat(
-                fontSize: 14,
-                height: 1.3,
-                fontWeight: FontWeight.w500,
-                color: textColor,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
-/// ------------------------------------------------------------------
 /// PUCE CLASSIQUE
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
@@ -835,7 +777,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -888,7 +830,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -913,7 +855,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -928,10 +870,9 @@ class _ExempleBox extends StatelessWidget {
 /// BLOC NOTA / INFO / SANCTION
 /// ------------------------------------------------------------------
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -942,13 +883,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -961,13 +901,9 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

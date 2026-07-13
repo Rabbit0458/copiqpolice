@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsHierarchieJudiciaire = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Police judiciaire",
     question: "La police judiciaire est exercée sous la direction de :",
     options: [
@@ -112,7 +112,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte rappelle que la police judiciaire est exercée sous la direction du procureur de la République (article 12 C.P.P.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Police judiciaire",
     question:
         "Dans chaque ressort de Cour d’appel, la police judiciaire est placée sous la surveillance de :",
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "La police judiciaire est placée, dans chaque ressort de Cour d’appel, sous la surveillance du procureur général (article 13 C.P.P.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Police judiciaire",
     question:
         "Dans chaque ressort de Cour d’appel, la police judiciaire est placée sous le contrôle de :",
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte précise que la police judiciaire est placée sous le contrôle de la chambre de l’instruction (article 13 C.P.P.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Qualifications",
     question:
         "Pour exercer la police judiciaire, les personnels de la police nationale reçoivent principalement les qualifications suivantes :",
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "La loi, en particulier le C.P.P., confère la qualification d’OPJ, d’APJ ou d’APJA aux personnels de la police nationale pour l’exercice de la police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Assistants d’enquête",
     question:
         "Les OPJ et APJ peuvent être secondés, dans leur activité judiciaire, par :",
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== OPJ - QUALITÉ (ART. 16 C.P.P.) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Parmi les personnes suivantes, lesquelles ont la qualité d’officier de police judiciaire au sens de l’article 16 C.P.P. ?",
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "L’article 16 C.P.P. mentionne notamment les maires et leurs adjoints comme ayant la qualité d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Les officiers et gradés de la gendarmerie peuvent avoir la qualité d’OPJ :",
@@ -200,7 +200,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte précise que les gendarmes peuvent être OPJ s’ils sont nominativement désignés après avis conforme d’une commission.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Parmi ces catégories, lesquelles ont la qualité d’OPJ selon l’article 16 C.P.P. ?",
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Toutes ces fonctions sont citées par le texte comme ayant la qualité d’OPJ au titre de l’article 16 C.P.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Les fonctionnaires du corps d’encadrement et d’application de la police nationale peuvent être OPJ :",
@@ -230,7 +230,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte prévoit que ces fonctionnaires peuvent avoir la qualité d’OPJ s’ils sont nominativement désignés par arrêté conjoint, après avis conforme d’une commission.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Les personnes exerçant des fonctions de directeur ou sous-directeur de la police judiciaire et de la gendarmerie :",
@@ -246,7 +246,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== OPJ - CONDITIONS D’EXERCICE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Conditions d’exercice",
     question:
         "Pour exercer effectivement les pouvoirs d’OPJ, un officier de police judiciaire doit notamment :",
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Les OPJ ne peuvent exercer les pouvoirs afférents à leur qualité que s’ils sont affectés à un emploi comportant l’exercice de la police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Conditions d’exercice",
     question: "L’habilitation personnelle d’un OPJ est délivrée par :",
     options: [
@@ -274,7 +274,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte indique que les OPJ doivent être habilités personnellement par décision du procureur général.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Conditions d’exercice",
     question:
         "Les OPJ peuvent-ils exercer leurs pouvoirs lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre ?",
@@ -289,7 +289,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte précise que les OPJ ne peuvent pas exercer leurs pouvoirs lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Habilitation",
     question: "La première habilitation d’un OPJ :",
     options: [
@@ -302,7 +302,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le document précise que la première habilitation d’un OPJ vaut pour toute la durée de ses fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Habilitation",
     question: "En cas de changement d’affectation, l’habilitation d’OPJ :",
     options: [
@@ -317,7 +317,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== OPJ - MODE DE DÉSIGNATION =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Mode de désignation",
     question:
         "Les maires et adjoints au maire peuvent exercer les fonctions d’OPJ :",
@@ -331,7 +331,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Les maires, adjoints au maire, directeurs et sous-directeurs de la police judiciaire et de la gendarmerie exercent de plein droit les fonctions d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Mode de désignation",
     question:
         "Pour exercer les fonctions d’OPJ, les gendarmes (sauf directeur et sous-directeur) doivent :",
@@ -345,7 +345,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Les gendarmes de tous grades, sauf directeur et sous-directeur, doivent être habilités par le procureur général pour exercer les fonctions d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Mode de désignation",
     question:
         "Les inspecteurs généraux, les commissaires de police et les fonctionnaires du corps de commandement de la police nationale :",
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== APJ - CATÉGORIES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Généralités",
     question:
         "Les agents de police judiciaire (APJ) ont pour mission essentielle :",
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte indique que les APJ sont investis de certaines attributions de police judiciaire et ont la mission essentielle de seconder les OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20 C.P.P.",
     question: "Sont APJ au sens de l’article 20 C.P.P. :",
     options: [
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "L’article 20 C.P.P. vise les militaires de la gendarmerie nationale autres que les volontaires, n’ayant pas la qualité d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20 C.P.P.",
     question:
         "Les fonctionnaires des services actifs de la police nationale, titulaires ou stagiaires, n’ayant pas la qualité d’OPJ, sont :",
@@ -404,7 +404,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte précise que ces fonctionnaires sont APJ au sens de l’article 20 C.P.P., sous réserve des dispositions de l’article 20-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20-1 C.P.P.",
     question:
         "Selon l’article 20-1 C.P.P., peuvent bénéficier de la qualité d’APJ dans la réserve opérationnelle :",
@@ -419,7 +419,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "L’article 20-1 C.P.P. prévoit cette possibilité pour ceux qui ont exercé en tant qu’OPJ ou APJ durant au moins 5 ans.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20-1 C.P.P.",
     question:
         "Pour un ancien OPJ qui a rompu le lien avec le service depuis plus d’un an et qui veut être APJ en réserve opérationnelle :",
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== APJA - CATÉGORIE ART. 21 C.P.P. =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question: "Les agents de police judiciaire adjoints (APJA) ont :",
     options: [
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte précise que les APJA disposent de pouvoirs en matière de police judiciaire moins étendus que les APJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question:
         "Les policiers adjoints qui ne remplissent pas les conditions de l’article 20 ou 20-1 C.P.P. sont :",
@@ -463,7 +463,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte mentionne explicitement que les policiers adjoints sont APJA lorsqu’ils ne remplissent pas les conditions prévues par les articles 16-1 A ou 20-1 C.P.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question: "Les agents de police municipale sont :",
     options: [
@@ -476,7 +476,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Les agents de police municipale sont visés à l’article 21 C.P.P. comme agents de police judiciaire adjoints.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question: "Les gardes champêtres sont APJA lorsqu’ils agissent :",
     options: [
@@ -492,7 +492,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== APJ 20 - CONDITIONS D’EXERCICE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Conditions d’exercice (art. 20)",
     question:
         "Les APJ de l’article 20 C.P.P. ne peuvent exercer leurs attributions que s’ils :",
@@ -507,7 +507,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte reprend la même logique que pour les OPJ : les APJ 20 doivent être affectés à un emploi comportant l’exercice de la police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Conditions d’exercice (art. 20)",
     question:
         "Les APJ de l’article 20 C.P.P. peuvent-ils exercer leurs attributions lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre ?",
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Comme pour les OPJ, les APJ 20 ne peuvent pas exercer leurs attributions lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Conditions d’exercice (art. 20)",
     question: "Sont exclus de l’exercice effectif des attributions d’APJ 20 :",
     options: [
@@ -538,7 +538,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== ASSISTANTS D’ENQUÊTE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Les assistants d’enquête, mentionnés à l’article 21-3 C.P.P., sont chargés de :",
@@ -552,7 +552,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte indique que les assistants d’enquête sont chargés de seconder les OPJ et APJ dans l’accomplissement de certaines formalités procédurales.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Parmi les personnels suivants, lesquels peuvent être recrutés comme assistants d’enquête ?",
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte mentionne que ces militaires font partie des catégories pouvant être recrutées comme assistants d’enquête.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Les personnels administratifs de catégorie B de la police nationale et de la gendarmerie nationale peuvent :",
@@ -581,7 +581,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le texte précise que les personnels administratifs de catégorie B de la police et de la gendarmerie peuvent être assistants d’enquête.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Les agents de police judiciaire adjoints (APJA) de la police nationale et de la gendarmerie nationale peuvent :",
@@ -595,7 +595,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Les APJA de la police nationale et de la gendarmerie nationale font partie des personnels pouvant devenir assistants d’enquête.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question: "Pour exercer leurs missions, les assistants d’enquête doivent :",
     options: [
@@ -611,7 +611,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse - Hiérarchie judiciaire",
     question:
         "La hiérarchie fonctionnelle des personnels de la police nationale en matière de police judiciaire repose principalement sur :",
@@ -625,7 +625,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Le document distingue clairement les fonctions judiciaires selon ces quatre niveaux : OPJ, APJ, APJA et assistants d’enquête.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse - Distinction OPJ/APJ",
     question: "Quelle affirmation distingue correctement OPJ et APJ ?",
     options: [
@@ -638,7 +638,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
         "Les OPJ disposent des pouvoirs les plus étendus (direction des enquêtes), tandis que les APJ ont pour mission essentielle de les seconder.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse - Réserve opérationnelle",
     question:
         "Concernant la réserve opérationnelle, quelle proposition est exacte ?",
@@ -659,7 +659,7 @@ final List<QuizQuestion> questionsHierarchieJudiciaire = [
 // PAGE
 // ============================================================================
 class QuizHierarchiePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/hierarchie';
+  static const String routeName = '/gpx/dps/generalites/quiz/hierarchie';
   final String uid;
   final String email;
 
@@ -979,7 +979,7 @@ class _QuizHierarchiePageState extends State<QuizHierarchiePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1168,7 +1168,7 @@ class _QuizHierarchiePageState extends State<QuizHierarchiePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1320,7 +1320,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1846,10 +1845,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2219,7 +2219,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2260,9 +2260,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

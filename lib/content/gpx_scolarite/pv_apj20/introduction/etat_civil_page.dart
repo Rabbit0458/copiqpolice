@@ -89,16 +89,16 @@ class PVEtatCivilPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 20 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : rappelle les missions des agents de police judiciaire, notamment la constatation des infractions et la réception des déclarations par procès-verbal, ce qui implique le recueil rigoureux de l’identité des personnes concernées.",
                 ),
@@ -186,143 +186,143 @@ class PVEtatCivilPage extends StatelessWidget {
             cardColor: cardG,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Elle doit être relevée lorsque le policier se trouve en présence de l’auteur d’un crime ou d’un délit. Elle comporte des mentions très complètes permettant d’identifier sans ambiguïté la personne.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Identité — personne concernée"),
-              const _BulletPoint(
+              _SubTitle("A) Identité — personne concernée"),
+              _BulletPoint(
                 text:
                     "Nom patronymique en LETTRES CAPITALES (dit « de jeune fille »).",
               ),
-              const _BulletPoint(text: "Prénom usuel en lettres minuscules."),
-              const _BulletPoint(
+              _BulletPoint(text: "Prénom usuel en lettres minuscules."),
+              _BulletPoint(
                 text:
                     "Autre état civil : divorcé, époux, veuf… (suivi du nom d’époux).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Date et lieu de naissance : préciser le pays ou le département + arrondissement pour grandes villes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Filiation : nom/prénom du père (avec mention « DÉCÉDÉ » si besoin) ; nom de jeune fille + prénom de la mère.",
               ),
-              const _BulletPoint(text: "Nationalité."),
+              _BulletPoint(text: "Nationalité."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Adresse"),
-              const _BulletPoint(text: "Domicile (au sens du droit civil)."),
-              const _BulletPoint(
+              _SubTitle("B) Adresse"),
+              _BulletPoint(text: "Domicile (au sens du droit civil)."),
+              _BulletPoint(
                 text:
                     "Pays, département, commune + arrondissement (grandes villes).",
               ),
-              const _BulletPoint(text: "Numéro et nom de la voie."),
-              const _BulletPoint(
+              _BulletPoint(text: "Numéro et nom de la voie."),
+              _BulletPoint(
                 text:
                     "Précisions : bâtiment, code d’accès, étage, porte d’entrée, etc.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Téléphone domicile et autres coordonnées.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Communication électronique (police/gendarmerie/justice)",
               ),
-              const _BulletPoint(text: "Oui (préciser l’adresse mail) ou non."),
+              _BulletPoint(text: "Oui (préciser l’adresse mail) ou non."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Compléments d’identité"),
-              const _BulletPoint(
+              _SubTitle("D) Compléments d’identité"),
+              _BulletPoint(
                 text:
                     "Titre d’occupation : locataire, propriétaire, occupant à titre gratuit.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Propriétaire (si besoin) : nom et adresse ; montant du loyer ou du crédit.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Complément nationalité (étranger) : nature/références du titre de séjour + dates (délivrance/expiration).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "État de la personne : vulnérabilité éventuelle ; n° de sécurité sociale.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("E) Situation de famille"),
-              const _BulletPoint(
+              _SubTitle("E) Situation de famille"),
+              _BulletPoint(
                 text:
                     "Statut : célibataire, concubinage, divorce, mariage, séparé, veuf, PACS.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Conjoint : nom/prénom + date/lieu de l’union ; nombre et âge des enfants.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ex-conjoint : si séparation/divorce : nom/prénom + date/lieu ; nombre/âge des enfants + droit de garde.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("F) Emploi / employeur"),
-              const _BulletPoint(text: "Activité professionnelle."),
-              const _BulletPoint(text: "Statut : employé ou à son compte."),
-              const _BulletPoint(
+              _SubTitle("F) Emploi / employeur"),
+              _BulletPoint(text: "Activité professionnelle."),
+              _BulletPoint(text: "Statut : employé ou à son compte."),
+              _BulletPoint(
                 text: "Date de début d’activité, salaire mensuel.",
               ),
-              const _BulletPoint(text: "Adresse employeur."),
+              _BulletPoint(text: "Adresse employeur."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("G) Diplôme / distinction"),
-              const _BulletPoint(
+              _SubTitle("G) Diplôme / distinction"),
+              _BulletPoint(
                 text: "Niveau d’étude : analphabète ou niveau d’instruction.",
               ),
-              const _BulletPoint(text: "Diplômes obtenus."),
-              const _BulletPoint(text: "Situation militaire."),
-              const _BulletPoint(
+              _BulletPoint(text: "Diplômes obtenus."),
+              _BulletPoint(text: "Situation militaire."),
+              _BulletPoint(
                 text: "Décoration, distinction, pension (civile ou militaire).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("H) Permis / armes"),
-              const _BulletPoint(
+              _SubTitle("H) Permis / armes"),
+              _BulletPoint(
                 text:
                     "Permis : nature (conduite, chasse, pêche), catégorie, numéro, date et lieu de délivrance.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arme détenue : références d’autorisation (défense / sportif) + numéro, date, lieu ; armes détenues (nature, catégorie, marque, calibre, numéro).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("I) Antécédents judiciaires"),
-              const _BulletPoint(
+              _SubTitle("I) Antécédents judiciaires"),
+              _BulletPoint(
                 text: "Ne jamais évoquer une condamnation amnistiée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mentionner « NS » (non spécifié) si la personne est connue des services de police ou de justice.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Astuce rédaction",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Recueillir dans un ordre fixe évite les oublis. En pratique, commence par l’identité stricte, puis l’adresse, puis les compléments (famille, emploi, titres, etc.).",
                   ),
@@ -364,10 +364,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -432,7 +432,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -475,7 +475,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -537,7 +537,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -569,7 +569,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -582,7 +582,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

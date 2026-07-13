@@ -1,8 +1,6 @@
 // lib/gpx_scolarite_pages/generalite_pages/complicite/complicite_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_complicite_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart';
 
 class CompliciteContenuPage extends StatelessWidget {
   const CompliciteContenuPage({super.key});
@@ -16,7 +14,7 @@ class CompliciteContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -138,10 +136,10 @@ class _ModuleCard extends StatelessWidget {
     // Sous-titre : toujours bien lisible sur l’image
     final Color subtitleColor = isDark
         ? textSoft
-        : Colors.white.withOpacity(0.90);
+        : Colors.white.withValues(alpha: 0.90);
 
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -173,8 +171,8 @@ class _ModuleCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),

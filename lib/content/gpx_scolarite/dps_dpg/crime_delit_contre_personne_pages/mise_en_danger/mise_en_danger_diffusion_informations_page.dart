@@ -108,20 +108,20 @@ class MiseEnDangerDiffusionInformationsPage extends StatelessWidget {
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Infraction définie et réprimée par "),
+                TextSpan(text: "Infraction définie et réprimée par "),
                 TextSpan(
                   text: "l’article 223-1-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _NotaBox(
+              SizedBox(height: 8),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -189,18 +189,18 @@ class MiseEnDangerDiffusionInformationsPage extends StatelessWidget {
             cardColor: card4,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La diffusion concomitante d’informations sur la qualité de fonctionnaire de police "
                       "dans un contexte visant les forces de l’ordre peut exposer la personne et/ou sa famille "
                       "à un risque direct d’atteinte à la personne ou aux biens. ",
                 ),
-                const TextSpan(text: "— "),
+                TextSpan(text: "— "),
                 TextSpan(
                   text: "Cass. crim., n° 24-82.090, 11 février 2025",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -235,50 +235,50 @@ class MiseEnDangerDiffusionInformationsPage extends StatelessWidget {
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-1-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Victime dépositaire de l’autorité publique, chargée d’une mission de service public, "
                     "titulaire d’un mandat électif public, candidat à un mandat pendant la campagne, ou journaliste "
                     "(au sens de l’art. 2, al. 2, loi du 29 juillet 1881).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Faits commis dans les mêmes conditions envers le conjoint, ascendant, descendant en ligne directe "
                     "ou toute personne vivant habituellement au domicile de la personne protégée, en raison des fonctions exercées.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-1-1 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : victime mineure."),
+                TextSpan(text: " : victime mineure."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-1-1 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : victime présentant une particulière vulnérabilité (âge, maladie, infirmité, déficience, grossesse), "
                       "apparente ou connue de l’auteur.",
@@ -295,83 +295,83 @@ class MiseEnDangerDiffusionInformationsPage extends StatelessWidget {
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. ",
                 ),
-                const TextSpan(text: "— "),
+                TextSpan(text: "— "),
                 TextSpan(
                   text: "Article 223-1-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. ",
                 ),
-                const TextSpan(text: "— "),
+                TextSpan(text: "— "),
                 TextSpan(
                   text: "Article 223-1-1 alinéas 2 à 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Responsabilité pénale des personnes morales selon le principe général : ",
                 ),
                 TextSpan(
                   text: "article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-1-1 alinéa 5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : en cas de diffusion par voie de presse, audiovisuelle ou communication au public en ligne, "
                       "application des règles spécifiques de ces matières pour la détermination des responsables.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, selon "),
+                TextSpan(text: "Complicité : OUI, selon "),
                 TextSpan(
                   text: "les articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -409,10 +409,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -477,7 +477,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -520,7 +520,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -582,7 +582,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -593,10 +593,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -608,13 +607,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -627,13 +625,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

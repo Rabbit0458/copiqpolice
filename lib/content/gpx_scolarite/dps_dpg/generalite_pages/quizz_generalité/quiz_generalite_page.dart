@@ -102,7 +102,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================
   //         FACILE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Quelle juridiction est compétente pour juger les crimes ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -111,7 +111,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Crimes → cour d’assises (ou, pour certains crimes, cour criminelle départementale).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définition',
     question: 'Qu’est-ce que la complicité en droit pénal français ?',
     options: [
@@ -125,7 +125,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le cours précise que la complicité consiste en une entente momentanée entre plusieurs personnes dans le but d’accomplir une infraction déterminée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Acteurs',
     question:
         'Le complice est celui qui, selon l’article 121-7 du Code pénal, est…',
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Art. 121-7 C. pén. : est complice celui qui, volontairement, aide ou assiste l’auteur dans la préparation ou la consommation de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Acteurs',
     question: 'Qui est le coauteur d’une infraction ?',
     options: [
@@ -154,7 +154,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le coauteur participe directement à la réalisation des éléments constitutifs de l’infraction, contrairement au complice qui se situe en soutien.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions',
     question:
         'Combien de conditions sont classiquement exigées pour qu’une complicité punissable soit retenue ?',
@@ -164,7 +164,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le cours rappelle les trois conditions : un fait principal punissable, une participation à l’infraction et une intention de participer à cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal',
     question: 'La complicité punissable suppose en premier lieu l’existence :',
     options: [
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Sans fait principal punissable, il n’y a pas de « criminalité d’emprunt » et donc pas de complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Participation',
     question:
         'La participation à l’infraction, au sens de la complicité, peut notamment prendre la forme :',
@@ -192,7 +192,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La complicité par aide ou assistance consiste à fournir un soutien matériel ou moral facilitant la préparation ou la consommation de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'La troisième condition de la complicité punissable concerne l’intention. Le complice doit :',
@@ -206,7 +206,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice doit vouloir s’associer à l’acte délictueux et connaître le caractère délictueux des faits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'Selon l’article 121-6 du Code pénal, comment le complice est-il puni ?',
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Art. 121-6 C. pén. : le complice d’un crime ou d’un délit est puni comme auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal',
     question:
         'La complicité peut-elle être retenue si l’auteur principal n’est pas identifié mais que le fait principal est établi ?',
@@ -230,7 +230,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice peut être poursuivi même si l’auteur principal n’est pas poursuivi ou identifié, dès lors que le fait principal punissable est démontré.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question:
         'En matière contraventionnelle, la complicité par provocation ou instructions :',
@@ -244,7 +244,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Certaines contraventions sont expressément réprimées par provocation ou instructions (référence à l’article R. 610-2 C. pén.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définition',
     question:
         'La complicité par aide ou assistance consiste principalement à :',
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice facilite l’infraction en soutenant l’auteur, sans réaliser lui-même tous les éléments de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration',
     question:
         'Une personne laisse volontairement sa voiture à disposition pour que son ami aille commettre un braquage. Elle :',
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Elle met sciemment un moyen à disposition pour faciliter l’infraction, ce qui caractérise l’aide ou assistance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration',
     question:
         'Une personne garde la porte pendant que l’auteur principal vole dans le magasin. Elle est :',
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La surveillance de l’arrivée de la police ou du personnel est une aide matérielle à la commission du vol.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Présence sur les lieux',
     question:
         'La seule présence sur les lieux d’une infraction, sans acte positif ni accord préalable :',
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il faut un acte positif ou au minimum un comportement significatif d’une volonté d’adhésion à l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal',
     question:
         'Le fait principal punissable, pour fonder la complicité, doit être :',
@@ -313,7 +313,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Tous les crimes et délits sont en principe susceptibles de complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'La complicité est-elle possible lorsqu’il n’y a qu’une tentative de l’infraction principale ?',
@@ -323,7 +323,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Dès lors que la tentative est elle-même punissable, la complicité de cette tentative peut être retenue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'Pour que la complicité soit retenue, le complice doit connaître :',
@@ -337,7 +337,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il suffit qu’il sache qu’il se joint à un comportement interdit par la loi pénale, sans connaître tous les détails.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'Un individu pensant aider à un acte licite (ex : déménagement) alors qu’il s’agit en réalité d’un vol organisé :',
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La complicité suppose la connaissance du caractère délictueux des faits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'En pratique, pourquoi la peine du complice peut-elle être différente de celle de l’auteur ?',
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Même peine encourue, mais le juge tient compte du rôle concret, des antécédents, de la personnalité, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question:
         'En matière de contravention, la complicité par aide ou assistance :',
@@ -377,7 +377,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le principe est l’absence de complicité de contravention, sauf disposition expresse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Filmer sciemment une agression pour la diffuser sur les réseaux sociaux :',
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le dispositif dit de « happy slapping » assimile l’enregistrement à un acte de complicité des atteintes volontaires à l’intégrité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemple',
     question:
         'Une personne qui indique « la porte reste toujours ouverte à telle heure » à un voleur :',
@@ -403,7 +403,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Elle donne une indication précise destinée à faciliter le cambriolage.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemple',
     question:
         'Un ami qui garde les bijoux volés « le temps que ça se calme » est :',
@@ -413,7 +413,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La garde postérieure des choses provenant d’un crime ou délit caractérise le recel, non la complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Auteur moral',
     question:
         'Comment désigne-t-on celui qui incite autrui à commettre une infraction sans y participer matériellement ?',
@@ -427,7 +427,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'C’est l’exemple type du complice par provocation : il pousse une personne déterminée à commettre un crime ou un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions',
     question:
         'La complicité suppose-t-elle que l’infraction principale soit effectivement consommée ?',
@@ -439,7 +439,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== MOYENNE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question: 'La complicité ne sera pas retenue lorsque le fait principal :',
     options: [
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Si le fait principal est justifié (légitime défense, ordre de la loi, commandement de l’autorité légitime), il n’est pas punissable : la criminalité d’emprunt fait défaut.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'La complicité ne pourra pas non plus être retenue si le fait principal :',
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Si le fait principal n’est plus punissable en raison de la prescription ou d’une amnistie, la complicité tombe également.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'Selon l’article 121-7 du Code pénal, les crimes et délits sont en principe :',
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Art. 121-7 C. pén. : en principe, tous les crimes et délits peuvent donner lieu à complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question: 'En matière contraventionnelle, la complicité :',
     options: [
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La complicité de contravention est réprimée uniquement lorsqu’un texte le prévoit (ex. R. 610-2 C. pén.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aide ou assistance',
     question:
         'Quelle formule décrit le mieux la complicité par aide ou assistance ?',
@@ -510,7 +510,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Exemples : fournir une arme, prêter un véhicule, héberger les auteurs avant les faits…',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aide ou assistance',
     question:
         'Parmi les exemples suivants, lequel illustre une complicité par aide ou assistance ?',
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Fournir l’arme ou le poison ayant servi à l’infraction est un cas classique de complicité par aide ou assistance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation',
     question:
         'Pour qu’il y ait complicité par provocation, la provocation doit notamment :',
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le « provocateur » est l’auteur moral de l’infraction ; la provocation doit être déterminée et avoir produit au moins une tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation',
     question:
         'La Chambre criminelle a jugé que le passager d’un véhicule qui donne l’ordre de forcer un barrage de gendarmerie :',
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Cass. crim. 18 mars 2003 : le passager incitant le conducteur à forcer le barrage est complice par provocation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fourniture d’instructions',
     question: 'La complicité par fourniture d’instructions suppose :',
     options: [
@@ -568,7 +568,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Exemple : indiquer les heures d’absence des occupants pour faciliter un cambriolage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention criminelle',
     question: 'Pour l’intention criminelle du complice, il faut notamment :',
     options: [
@@ -582,7 +582,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le cours insiste sur ces deux éléments : connaissance et volonté d’agir « ensemble et de concert ». ',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'A prête sa maison à B pour « une petite soirée », en sachant que B souhaite y organiser un trafic de stupéfiants. A :',
@@ -595,7 +595,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il met volontairement un lieu à disposition en connaissance du projet délictueux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'Une personne donne au futur auteur un conseil juridique abstrait sur la notion de vol, sans savoir qu’il compte commettre un cambriolage le soir même. Elle :',
@@ -609,7 +609,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La complicité exige un lien avec une infraction concrète connue du complice.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Temporalité',
     question:
         'Les actes de participation du complice doivent, sauf texte contraire, intervenir :',
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il n’y a en principe pas de complicité postérieure ; les actes postérieurs relèvent d’autres infractions (recel, non-dénonciation…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Criminalité d’emprunt',
     question: 'La complicité est qualifiée de « criminalité d’emprunt » car :',
     options: [
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice est puni par référence à l’infraction principale commise ou tentée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'Les peines encourues par le complice et l’auteur sont identiques, mais le juge :',
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'C’est l’« application de la règle » : même peine possible, mais dosages différents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances personnelles',
     question:
         'Une circonstance personnelle liée à la personne de l’auteur (ex : récidive) :',
@@ -661,7 +661,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les circonstances strictement personnelles à l’auteur restent attachées à sa seule personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances réelles',
     question:
         'Une circonstance réelle tenant aux modalités de l’acte (ex : vol commis de nuit) :',
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les circonstances liées à la matérialité des faits s’appliquent à tous les participants, auteurs et complices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Dans le dispositif du happy slapping, pour être puni comme complice, l’auteur de l’enregistrement doit avoir :',
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'L’élément intentionnel demeure essentiel : l’enregistrement doit être réalisé en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'Un étudiant filme une bagarre grave en riant et en encourageant les coups pour partager la vidéo. Sur le plan pénal, il risque :',
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le texte assimile l’enregistrement volontaire à un acte de complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Limites',
     question:
         'Le simple silence d’une personne informée d’un projet d’infraction, sans obligation légale d’agir :',
@@ -718,7 +718,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Criminalité d’emprunt',
     question:
         'Pourquoi dit-on que la complicité est une « criminalité d’emprunt » ?',
@@ -733,7 +733,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice n’est punissable que par référence à l’infraction principale, même s’il n’en a pas commis les éléments matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'La complicité reste possible même si l’auteur principal n’est pas puni lorsque :',
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le cours liste les hypothèses où le complice peut être poursuivi malgré l’absence de poursuites contre l’auteur : fuite, décès, irresponsabilité, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'La complicité ne pourra pas être retenue si le fait principal échappe à la loi pénale parce que :',
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Un fait principal justifié ou bénéficiant d’une amnistie n’est plus punissable : la complicité disparaît.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Participation matérielle',
     question:
         'Les actes de participation du complice doivent être, par principe :',
@@ -775,7 +775,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il n’y a pas de complicité postérieure à l’infraction ; les actes doivent précéder ou accompagner la commission.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation',
     question:
         'Le simple conseil donné à une personne de commettre une infraction, sans don, menace, ou promesse :',
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le cours précise que le « simple conseil » ne suffit pas ; il faut des circonstances telles qu’un don, une promesse, un ordre, une menace ou un abus d’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Dans le cas du « happy slapping », l’enregistrement d’images de violences volontaires est :',
@@ -802,7 +802,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'L’article 222-33-3-1 C. pén. assimile l’enregistrement sciemment réalisé à un acte de complicité des atteintes principales.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'En matière de répression de la complicité, les peines encourues par le complice et l’auteur :',
@@ -817,7 +817,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le sens de la règle (art. 121-6) : même peine encourue, mais individualisation par le juge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances personnelles',
     question:
         'Les circonstances personnelles à l’auteur (ex : récidive, démence) :',
@@ -830,7 +830,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les circonstances personnelles aggravant ou atténuant la culpabilité de l’auteur ne s’étendent pas au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances réelles',
     question:
         'Les circonstances réelles qui touchent à la matérialité de l’acte (ex : réunion pour un vol) :',
@@ -843,7 +843,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les circonstances matérielles aggravant l’infraction (arme, réunion…) s’appliquent au complice, même s’il ne les connaissait pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances mixtes',
     question:
         'Les circonstances mixtes qui concernent à la fois la personne et l’acte (ex : qualité professionnelle de l’auteur) :',
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La Cour de cassation a admis que certaines circonstances aggravantes liées à la qualité de l’auteur principal peuvent aussi s’appliquer au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative & complicité',
     question:
         'La complicité d’une tentative manquée (exécution complète mais résultat non atteint par hasard) :',
@@ -870,7 +870,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice emprunte la qualification de la tentative manquée, dès lors qu’elle est incriminée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'A donne à B l’ordre de tirer sur C. B tire mais manque sa cible. Quelle qualification pour A ?',
@@ -883,7 +883,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'B est auteur d’une tentative d’homicide, A en est complice par provocation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'A fournit un pistolet à B pour tuer C. L’arme était en réalité déchargée, ce que B ignorait. B tire. A :',
@@ -896,7 +896,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La tentative impossible demeure punissable lorsque l’intention et le commencement d’exécution sont caractérisés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Limites',
     question:
         'Peut-on retenir une complicité si l’acte principal est finalement qualifié de fait justificatif (ex : légitime défense) ?',
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Si le fait principal n’est pas infractionnel, la criminalité d’emprunt disparaît pour tous les participants.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Auteur / Complice',
     question: 'On parle de « coaction » lorsque plusieurs personnes :',
     options: [
@@ -921,7 +921,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Dans ce cas, chacun est coauteur, non complice : ils réalisent l’infraction de concert.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Pour que l’enregistrement soit qualifié de complicité dans le happy slapping, il faut notamment que :',
@@ -935,7 +935,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'L’esprit du texte est de viser les enregistrements qui participent à la mise en scène de la violence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question: 'La complicité d’un crime jugé en cour d’assises :',
     options: [
@@ -949,7 +949,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== Difficile =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal & tentative',
     question: 'La complicité de tentative d’infraction est-elle punissable ?',
     options: [
@@ -961,7 +961,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le complice emprunte la criminalité du fait principal : si la tentative est incriminée, la complicité demeure possible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Temporalité des actes',
     question:
         'Une personne qui aide l’auteur à dissimuler le corps après un homicide déjà consommé :',
@@ -975,7 +975,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les actes purement postérieurs ne constituent pas, en principe, une complicité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Instigation vs aide',
     question:
         'Quelle nuance principale distingue la complicité par provocation (instigation) de la complicité par aide ou assistance ?',
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le provocateur est l’auteur moral : il déclenche la décision criminelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Dans le dispositif sur le « happy slapping », pourquoi le législateur a-t-il choisi de qualifier l’enregistrement d’images de violences de complicité plutôt que d’infraction autonome ?',
@@ -1003,7 +1003,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'L’enregistrement est directement rattaché aux violences principales comme forme de participation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances mixtes',
     question:
         'Que décide l’arrêt n° 04-84.235 du 7 septembre 2005 à propos des circonstances aggravantes liées à la qualité de l’auteur principal ?',
@@ -1017,7 +1017,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La Cour de cassation admet l’extension au complice de certaines circonstances liées à la qualité de l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'Un individu fournit un tournevis à un ami en sachant qu’il va « s’en servir pour entrer chez quelqu’un et voler », mais prétend ensuite n’avoir voulu qu’un simple « service ». Sur le plan pénal :',
@@ -1031,7 +1031,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le mobile (amitié, service) est indifférent : ce qui compte est la volonté de s’associer à un projet délictueux connu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Application de la règle',
     question:
         'Un complice ayant joué un rôle limité peut-il recevoir une peine plus faible que l’auteur principal ?',
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Individualisation des peines : le rôle concret du complice peut justifier une sanction moindre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration pratique',
     question:
         'Une personne qui joue de la musique très fort pour couvrir les cris de la victime pendant l’agression :',
@@ -1057,7 +1057,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elle facilite sciemment l’agression en empêchant l’alerte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration pratique',
     question:
         'Une personne indique au cambrioleur les heures précises d’absence des occupants :',
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Elle fournit une information déterminante, en connaissance de cause, pour la réalisation du cambriolage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Limites de la complicité',
     question:
         'Peut-on retenir la complicité de complicité (une personne aidant un complice et non directement l’auteur) ?',
@@ -1084,7 +1084,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La théorie classique reste réticente à admettre une « complicité de complicité » déconnectée de l’infraction principale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario avancé',
     question:
         'A fournit une arme à B en sachant que B va la revendre à C, lequel envisage un homicide. A :',
@@ -1098,7 +1098,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il faut un lien intentionnel avec l’infraction déterminée, pas seulement une connaissance vague d’un usage possible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario avancé',
     question:
         'A organise un plan détaillé de braquage et remet ce plan à B, mais ne participe pas matériellement. B réalise le vol. A est :',
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Il a fourni des indications précises permettant la commission de l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Police judiciaire",
     question: "La police judiciaire est exercée sous la direction de :",
     options: [
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle que la police judiciaire est exercée sous la direction du procureur de la République (article 12 C.P.P.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Police judiciaire",
     question:
         "Dans chaque ressort de Cour d’appel, la police judiciaire est placée sous la surveillance de :",
@@ -1138,7 +1138,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La police judiciaire est placée, dans chaque ressort de Cour d’appel, sous la surveillance du procureur général (article 13 C.P.P.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Police judiciaire",
     question:
         "Dans chaque ressort de Cour d’appel, la police judiciaire est placée sous le contrôle de :",
@@ -1152,7 +1152,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que la police judiciaire est placée sous le contrôle de la chambre de l’instruction (article 13 C.P.P.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Qualifications",
     question:
         "Pour exercer la police judiciaire, les personnels de la police nationale reçoivent principalement les qualifications suivantes :",
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi, en particulier le C.P.P., confère la qualification d’OPJ, d’APJ ou d’APJA aux personnels de la police nationale pour l’exercice de la police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Assistants d’enquête",
     question:
         "Les OPJ et APJ peuvent être secondés, dans leur activité judiciaire, par :",
@@ -1183,7 +1183,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== OPJ - QUALITÉ (ART. 16 C.P.P.) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Parmi les personnes suivantes, lesquelles ont la qualité d’officier de police judiciaire au sens de l’article 16 C.P.P. ?",
@@ -1197,7 +1197,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 16 C.P.P. mentionne notamment les maires et leurs adjoints comme ayant la qualité d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Les officiers et gradés de la gendarmerie peuvent avoir la qualité d’OPJ :",
@@ -1212,7 +1212,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que les gendarmes peuvent être OPJ s’ils sont nominativement désignés après avis conforme d’une commission.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Parmi ces catégories, lesquelles ont la qualité d’OPJ selon l’article 16 C.P.P. ?",
@@ -1227,7 +1227,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Toutes ces fonctions sont citées par le texte comme ayant la qualité d’OPJ au titre de l’article 16 C.P.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Les fonctionnaires du corps d’encadrement et d’application de la police nationale peuvent être OPJ :",
@@ -1242,7 +1242,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit que ces fonctionnaires peuvent avoir la qualité d’OPJ s’ils sont nominativement désignés par arrêté conjoint, après avis conforme d’une commission.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Qualité (art. 16 C.P.P.)",
     question:
         "Les personnes exerçant des fonctions de directeur ou sous-directeur de la police judiciaire et de la gendarmerie :",
@@ -1258,7 +1258,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== OPJ - CONDITIONS D’EXERCICE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Conditions d’exercice",
     question:
         "Pour exercer effectivement les pouvoirs d’OPJ, un officier de police judiciaire doit notamment :",
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les OPJ ne peuvent exercer les pouvoirs afférents à leur qualité que s’ils sont affectés à un emploi comportant l’exercice de la police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Conditions d’exercice",
     question: "L’habilitation personnelle d’un OPJ est délivrée par :",
     options: [
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que les OPJ doivent être habilités personnellement par décision du procureur général.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Conditions d’exercice",
     question:
         "Les OPJ peuvent-ils exercer leurs pouvoirs lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre ?",
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que les OPJ ne peuvent pas exercer leurs pouvoirs lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Habilitation",
     question: "La première habilitation d’un OPJ :",
     options: [
@@ -1314,7 +1314,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document précise que la première habilitation d’un OPJ vaut pour toute la durée de ses fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Habilitation",
     question: "En cas de changement d’affectation, l’habilitation d’OPJ :",
     options: [
@@ -1329,7 +1329,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== OPJ - MODE DE DÉSIGNATION =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Mode de désignation",
     question:
         "Les maires et adjoints au maire peuvent exercer les fonctions d’OPJ :",
@@ -1343,7 +1343,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les maires, adjoints au maire, directeurs et sous-directeurs de la police judiciaire et de la gendarmerie exercent de plein droit les fonctions d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Mode de désignation",
     question:
         "Pour exercer les fonctions d’OPJ, les gendarmes (sauf directeur et sous-directeur) doivent :",
@@ -1357,7 +1357,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les gendarmes de tous grades, sauf directeur et sous-directeur, doivent être habilités par le procureur général pour exercer les fonctions d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ - Mode de désignation",
     question:
         "Les inspecteurs généraux, les commissaires de police et les fonctionnaires du corps de commandement de la police nationale :",
@@ -1374,7 +1374,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== APJ - CATÉGORIES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Généralités",
     question:
         "Les agents de police judiciaire (APJ) ont pour mission essentielle :",
@@ -1388,7 +1388,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que les APJ sont investis de certaines attributions de police judiciaire et ont la mission essentielle de seconder les OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20 C.P.P.",
     question: "Sont APJ au sens de l’article 20 C.P.P. :",
     options: [
@@ -1402,7 +1402,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 20 C.P.P. vise les militaires de la gendarmerie nationale autres que les volontaires, n’ayant pas la qualité d’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20 C.P.P.",
     question:
         "Les fonctionnaires des services actifs de la police nationale, titulaires ou stagiaires, n’ayant pas la qualité d’OPJ, sont :",
@@ -1416,7 +1416,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que ces fonctionnaires sont APJ au sens de l’article 20 C.P.P., sous réserve des dispositions de l’article 20-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20-1 C.P.P.",
     question:
         "Selon l’article 20-1 C.P.P., peuvent bénéficier de la qualité d’APJ dans la réserve opérationnelle :",
@@ -1431,7 +1431,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 20-1 C.P.P. prévoit cette possibilité pour ceux qui ont exercé en tant qu’OPJ ou APJ durant au moins 5 ans.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Catégorie art. 20-1 C.P.P.",
     question:
         "Pour un ancien OPJ qui a rompu le lien avec le service depuis plus d’un an et qui veut être APJ en réserve opérationnelle :",
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== APJA - CATÉGORIE ART. 21 C.P.P. =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question: "Les agents de police judiciaire adjoints (APJA) ont :",
     options: [
@@ -1461,7 +1461,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que les APJA disposent de pouvoirs en matière de police judiciaire moins étendus que les APJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question:
         "Les policiers adjoints qui ne remplissent pas les conditions de l’article 20 ou 20-1 C.P.P. sont :",
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne explicitement que les policiers adjoints sont APJA lorsqu’ils ne remplissent pas les conditions prévues par les articles 16-1 A ou 20-1 C.P.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question: "Les agents de police municipale sont :",
     options: [
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les agents de police municipale sont visés à l’article 21 C.P.P. comme agents de police judiciaire adjoints.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJA - Catégorie art. 21 C.P.P.",
     question: "Les gardes champêtres sont APJA lorsqu’ils agissent :",
     options: [
@@ -1504,7 +1504,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== APJ 20 - CONDITIONS D’EXERCICE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Conditions d’exercice (art. 20)",
     question:
         "Les APJ de l’article 20 C.P.P. ne peuvent exercer leurs attributions que s’ils :",
@@ -1519,7 +1519,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte reprend la même logique que pour les OPJ : les APJ 20 doivent être affectés à un emploi comportant l’exercice de la police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Conditions d’exercice (art. 20)",
     question:
         "Les APJ de l’article 20 C.P.P. peuvent-ils exercer leurs attributions lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre ?",
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Comme pour les OPJ, les APJ 20 ne peuvent pas exercer leurs attributions lorsqu’ils participent, en unité constituée, à une opération de maintien de l’ordre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "APJ - Conditions d’exercice (art. 20)",
     question: "Sont exclus de l’exercice effectif des attributions d’APJ 20 :",
     options: [
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== ASSISTANTS D’ENQUÊTE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Les assistants d’enquête, mentionnés à l’article 21-3 C.P.P., sont chargés de :",
@@ -1564,7 +1564,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que les assistants d’enquête sont chargés de seconder les OPJ et APJ dans l’accomplissement de certaines formalités procédurales.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Parmi les personnels suivants, lesquels peuvent être recrutés comme assistants d’enquête ?",
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne que ces militaires font partie des catégories pouvant être recrutées comme assistants d’enquête.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Les personnels administratifs de catégorie B de la police nationale et de la gendarmerie nationale peuvent :",
@@ -1593,7 +1593,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que les personnels administratifs de catégorie B de la police et de la gendarmerie peuvent être assistants d’enquête.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question:
         "Les agents de police judiciaire adjoints (APJA) de la police nationale et de la gendarmerie nationale peuvent :",
@@ -1607,7 +1607,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les APJA de la police nationale et de la gendarmerie nationale font partie des personnels pouvant devenir assistants d’enquête.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistants d’enquête",
     question: "Pour exercer leurs missions, les assistants d’enquête doivent :",
     options: [
@@ -1623,7 +1623,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse - Hiérarchie judiciaire",
     question:
         "La hiérarchie fonctionnelle des personnels de la police nationale en matière de police judiciaire repose principalement sur :",
@@ -1637,7 +1637,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document distingue clairement les fonctions judiciaires selon ces quatre niveaux : OPJ, APJ, APJA et assistants d’enquête.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse - Distinction OPJ/APJ",
     question: "Quelle affirmation distingue correctement OPJ et APJ ?",
     options: [
@@ -1650,7 +1650,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les OPJ disposent des pouvoirs les plus étendus (direction des enquêtes), tandis que les APJ ont pour mission essentielle de les seconder.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse - Réserve opérationnelle",
     question:
         "Concernant la réserve opérationnelle, quelle proposition est exacte ?",
@@ -1665,7 +1665,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte évoque les articles 16-1 A, 20-1 et les dispositions réglementaires permettant à certains réservistes de conserver ou d’acquérir ces qualités sous condition de durée et de remise à niveau.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'Combien d’éléments généraux doivent être réunis pour qu’une infraction existe ?',
@@ -1675,7 +1675,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Élément légal, matériel et moral doivent être simultanément réunis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'Sans texte, il n’y a pas d’infraction : ce principe exprime d’abord…',
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Aucun crime ou délit sans texte qui le définit et réprime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'La loi détermine crimes et délits et fixe les peines. Vrai ou faux ?',
@@ -1698,7 +1698,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Art. 111-2 C. pén. : la loi fixe la matière criminelle et délictuelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les contraventions sont déterminées :',
     options: ['Par la loi', 'Par le règlement', 'Par la coutume'],
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Art. 111-2 al. 2 C. pén. : le règlement détermine et réprime les contraventions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Parmi ces actes, lesquels relèvent du domaine de la loi au sens pénal ?',
@@ -1721,7 +1721,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Décisions art. 16 et ordonnances ratifiées ont valeur législative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les décrets-lois des IIIe et IVe Républiques :',
     options: [
@@ -1734,7 +1734,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Ils demeurent des textes assimilés à la loi tant qu’ils ne sont pas abrogés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les traités internationaux ratifiés et publiés au J.O. ont en France :',
@@ -1747,7 +1747,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Constitution 1958, art. 55 : primauté sur la loi interne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Un décret d’application non encore paru pour une loi pénale :',
     options: [
@@ -1760,7 +1760,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Sans le décret indispensable, la loi reste « lettre morte ». ',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les circulaires ministérielles :',
     options: [
@@ -1773,7 +1773,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Ce sont des instructions de service ; publiées sur site PM ; pas sources de droit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'La jurisprudence en droit pénal :',
     options: [
@@ -1786,7 +1786,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Principe d’interprétation stricte ; la jurisprudence éclaire sans créer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'La doctrine :',
     options: [
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Opinions d’auteurs ; source d’inspiration pour le législateur/juge.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'L’élément matériel est :',
     options: [
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Manifestation concrète de la volonté délictueuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Une pure résolution criminelle (pensée) :',
     options: ['Est punissable', 'N’est pas punissable'],
@@ -1819,7 +1819,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Sans extériorisation réprimée, il n’y a pas d’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'L’infraction non achevée mais commencée peut être réprimée sous la qualification :',
@@ -1829,7 +1829,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La tentative sanctionne l’atteinte inachevée dès le commencement d’exécution.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Deux éléments classiques de la tentative :',
     options: [
@@ -1842,7 +1842,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         '121-5 : tentative punissable si acte univoque + pas de suspension volontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de contravention :',
     options: ['Peut être punie si prévu', 'N’est jamais punissable'],
@@ -1851,7 +1851,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         '121-4 : tentative non punissable en matière contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Dol général : intelligence et volonté d’agir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Le mobile (intérêt, vengeance…) :',
     options: [
@@ -1875,7 +1875,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Peut influer sur la peine, pas sur la constitution de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute intentionnelle',
     question: 'Certaines lois exigent un « dol spécial ». Cela signifie :',
     options: [
@@ -1887,7 +1887,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Ex. intention de tuer dans l’homicide volontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La faute d’imprudence/négligence relève :',
     options: ['De l’élément moral', 'De l’élément matériel', 'D’aucun élément'],
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Art. 121-3 : imprudence, négligence, manquement à une obligation de prudence ou de sécurité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La faute contraventionnelle résulte :',
     options: [
@@ -1907,7 +1907,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Indépendante d’un dommage ; ex. feu rouge grillé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'Pour la faute d’imprudence, le comportement de référence est celui :',
@@ -1920,7 +1920,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Appréciation in abstracto, éventuellement par référence au professionnel moyen.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'L’infraction d’omission suppose :',
     options: [
@@ -1932,7 +1932,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Infraction d’omission : non-accomplissement d’un devoir légal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Un acte de préparation (repérage, achat d’outils) sans passage à l’acte :',
@@ -1944,7 +1944,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'La préparation seule n’est pas punie, sauf texte spécial.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question:
         'Dans le schéma de l’élément matériel, l’« acte négatif » renvoie à :',
@@ -1955,7 +1955,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== MOYENNE (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les ordonnances (art. 38 C°) non ratifiées :',
     options: [
@@ -1967,7 +1967,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elles n’acquièrent valeur législative qu’après ratification.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les décisions prises par le Président en vertu de l’article 16 de la Constitution :',
@@ -1976,7 +1976,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Actes de crise dotés d’une valeur assimilée à la loi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Un règlement administratif contraire à la loi pénale :',
     options: ['Peut s’appliquer', 'Est écarté par le juge pénal'],
@@ -1984,7 +1984,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Hiérarchie des normes : la loi prime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les textes pénaux peuvent-ils être issus de traités européens relatifs aux droits fondamentaux ?',
@@ -1993,7 +1993,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'CEDH/UE influent et s’imposent à la loi interne publiée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'La pluralité d’actes peut former l’élément matériel lorsque :',
     options: [
@@ -2004,7 +2004,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Unité d’action possible (même dessein délictueux).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question:
         'Résolution criminelle non suivie d’effet socialement troublant :',
@@ -2013,7 +2013,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Il faut manifestation extérieure réprimée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Le commencement d’exécution doit être :',
     options: [
@@ -2025,7 +2025,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Jurisprudence : acte caractéristique + intention irrévocable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Le simple fait d’exprimer son intention de voler à voix haute :',
     options: ['Tentative punissable', 'Pas punissable'],
@@ -2033,7 +2033,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Extériorisation d’intention seule insuffisante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Désistement volontaire :',
     options: ['Exclut la tentative punissable', 'N’a aucun effet'],
@@ -2042,7 +2042,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'S’il résulte d’une décision libre non due à une cause extérieure.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Désistement dû à l’alarme d’un coffre-fort :',
     options: ['Volontaire', 'Non volontaire'],
@@ -2050,7 +2050,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Cause extérieure : tentative reste punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Infraction manquée (exécution complète mais résultat non atteint par circonstances indépendantes) :',
@@ -2059,7 +2059,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: '121-5 : répression de l’infraction manquée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Infraction impossible (poche vide / arme factice ignorée de l’auteur) :',
@@ -2069,7 +2069,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Punissable quand le texte incrimine la tentative (crimes/certains délits).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'L’élément moral non intentionnel suppose :',
     options: [
@@ -2081,7 +2081,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Art. 121-3 al. 3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Preuve du lien de causalité en matière de faute non intentionnelle :',
@@ -2093,7 +2093,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Nécessité de démontrer la causalité de la faute au dommage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La mise en danger délibérée d’autrui consiste :',
     options: [
@@ -2105,7 +2105,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Violation manifestement délibérée d’une obligation particulière de prudence/sécurité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Exemple classique de mise en danger délibérée :',
     options: [
@@ -2117,7 +2117,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Violation délibérée des normes de sécurité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'La faute contraventionnelle permet sanction sans intention ni dommage :',
@@ -2126,7 +2126,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Le simple non-respect d’une prescription suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question: 'Dans le schéma, l’infraction par commission correspond à :',
     options: [
@@ -2138,7 +2138,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Commission = accomplir un comportement prohibé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question: 'Dans le schéma de l’élément moral, « dol général » signifie :',
     options: [
@@ -2149,7 +2149,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'À distinguer du dol spécial (résultat particulier).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question: 'La Constitution de 1958 est-elle source du droit pénal ?',
     options: ['Oui, comme norme suprême', 'Non'],
@@ -2157,7 +2157,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Les sources essentielles du droit pénal s’y rattachent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'Un règlement administratif hiérarchisé peut-il méconnaître la loi pénale ?',
@@ -2166,7 +2166,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Un règlement contraire est illégal et écarté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence/Doctrine',
     question:
         'La jurisprudence peut-elle aggraver une incrimination au-delà du texte clair ?',
@@ -2175,7 +2175,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Interprétation stricte de la loi pénale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'L’auteur qui renonce librement avant la consommation, sans cause extérieure :',
@@ -2184,7 +2184,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Désistement volontaire exclut la tentative punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'La violation d’un texte (loi/règlement) peut suffire à caractériser :',
@@ -2193,7 +2193,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Manquement à une obligation de prudence ou sécurité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question: 'Automobiliste grillant un feu rouge par inattention :',
     options: ['Infraction intentionnelle', 'Faute contraventionnelle'],
@@ -2203,7 +2203,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== DIFFICILE (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Pour être invocable, un traité international doit être :',
     options: [
@@ -2215,7 +2215,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Condition d’applicabilité interne et primauté (art. 55 C°).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les circulaires non publiées :',
     options: [
@@ -2226,7 +2226,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elles guident le service mais ne créent pas d’infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'La valeur des décisions art. 16 et des ordonnances ratifiées permet :',
@@ -2236,7 +2236,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Valeur législative donc compétence en matière criminelle/délictuelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Actes préparatoires :',
     options: ['Toujours punissables', 'Non punissables sauf texte spécial'],
@@ -2245,7 +2245,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le code ne retient que la tentative après commencement d’exécution.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Commencement d’exécution apprécié par la Cour de cassation :',
     options: [
@@ -2256,7 +2256,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'La Cour exige acte univoque et intention d’aboutir.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Caractérisation typique du commencement d’exécution :',
     options: [
@@ -2267,7 +2267,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Double exigence jurisprudentielle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Après infraction consommée, l’attitude postérieure de l’auteur (restitution) :',
@@ -2279,7 +2279,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elle n’efface pas la consommation de l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Dans l’infraction impossible, l’auteur ignorait l’impossibilité. Conséquence :',
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Pickpocket poche vide, coup de feu à blanc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Pour les infractions intentionnelles, la connaissance du caractère illicite de l’acte :',
@@ -2297,7 +2297,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Conscience et volonté d’accomplir l’acte interdit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Résultat obtenu exactement conforme au résultat voulu :',
     options: ['Dol spécial aggravé', 'Preuve du dol général'],
@@ -2305,7 +2305,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Résultat déterminé recherché par l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Résultat au-delà de l’intention (ex. coups volontaires entraînant la mort) :',
@@ -2315,7 +2315,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'L’agent n’a pas voulu la mort mais l’a causée (ex. art. 222-7 C. pén. pour la qualification).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La faute d’imprudence se mesure :',
     options: [
@@ -2327,7 +2327,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Appréciation in abstracto, avec référence professionnelle au besoin.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Lien de causalité indirect en matière de négligence :',
     options: [
@@ -2338,7 +2338,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Il faut établir l’enchaînement causal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'La faute caractérisée exposant autrui à un risque que l’on ne pouvait ignorer :',
@@ -2348,7 +2348,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question:
         'Dans le schéma de l’élément moral, la « faute » se subdivise notamment en :',
@@ -2360,7 +2360,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Deux grandes branches du versant moral.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question: 'Les textes pénaux étrangers :',
     options: [
@@ -2371,7 +2371,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe de territorialité modulé par conventions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'L’interprétation des juges du fond contraire à la lettre du texte pénal :',
@@ -2383,7 +2383,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Interprétation stricte ; pas d’analogie in malam partem.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Un acte univoque + intention de réaliser l’infraction mais renoncement par remords :',
@@ -2392,7 +2392,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Désistement volontaire avéré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question: 'La responsabilité peut être exclue en cas de :',
     options: ['Force majeure ou contrainte', 'Absence de dommage uniquement'],
@@ -2400,7 +2400,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Toujours invocable comme cause d’irresponsabilité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Un résultat dommageable peut-il être exigé ?',
     options: ['Oui pour les infractions matérielles', 'Jamais'],
@@ -2409,7 +2409,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Certains délits exigent un résultat (ex. blessures involontaires).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Dans les infractions formelles :',
     options: ['Le résultat est exigé', 'Le résultat n’est pas exigé'],
@@ -2417,7 +2417,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'La seule réalisation de l’acte suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Le dol spécial constitue :',
     options: [
@@ -2428,7 +2428,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Il doit être expressément exigé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'La publication d’une circulaire au site du Premier ministre vise :',
@@ -2440,7 +2440,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Transparence des instructions ; valeur non normative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question:
         'Dans le schéma « élément matériel – conditions », l’attitude passive visée entraîne :',
@@ -2454,7 +2454,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== Difficile (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Peut-on fonder une incrimination uniquement sur une jurisprudence constante (sans texte) ?',
@@ -2464,7 +2464,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Légalité criminelle : seule la loi (ou traités/valeur législative) crée l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les règlements administratifs (décrets, arrêtés) : hiérarchie interne ?',
@@ -2476,7 +2476,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe de hiérarchie des normes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Un traité non publié mais signé et ratifié :',
     options: ['Est invocable devant le juge pénal', 'Ne l’est pas'],
@@ -2484,7 +2484,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'La publication conditionne l’applicabilité interne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'L’« acte univoque » caractéristique du commencement d’exécution :',
@@ -2496,7 +2496,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Il doit manifester la proximité de l’infraction déterminée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Affaire où le paiement d’un tueur à gages a été jugé préparation et non tentative :',
@@ -2506,7 +2506,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La remise d’argent ne constituait pas un acte univoque d’exécution.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Tentative d’évasion par creusement du béton autour d’une fenêtre de cellule :',
@@ -2516,7 +2516,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Appréciation jurisprudentielle : acte matériel caractéristique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative « manquée » est punie car :',
     options: [
@@ -2528,7 +2528,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Ex. tir manqué par maladresse.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative « impossible » n’est punissable que si :',
     options: ['Le texte l’a expressément prévu', 'Il existe un dommage'],
@@ -2537,7 +2537,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Punissable dans les crimes et certains délits où la tentative est incriminée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'La prévisibilité du dommage en imprudence :',
     options: ['Est indifférente', 'Est centrale pour caractériser la faute'],
@@ -2546,7 +2546,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'On reproche de ne pas avoir prévu ce qu’un prudent aurait prévu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Praeter-intention :',
     options: [
@@ -2559,7 +2559,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Ex. violences volontaires ayant entraîné la mort sans intention de la donner.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Pour la mise en danger délibérée, il faut :',
     options: [
@@ -2572,7 +2572,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Et exposition d’autrui à un risque grave que l’on ne pouvait ignorer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Lien de causalité indirect et pluralité de fautes :',
     options: [
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'La causalité juridique peut être multiple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question:
         'Exemple jurisprudentiel de prudence routière : obligation de maintenir son véhicule près du bord droit de la chaussée. La violation caractérise :',
@@ -2592,7 +2592,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Cass. crim. 12 nov. 1997 (réf. citée dans le document).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Quand un décret manque pour permettre l’entrée en vigueur d’une loi pénale :',
@@ -2604,7 +2604,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Le document précise que la loi reste « lettre morte ».',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question:
         'Une série d’actions espacées mais poursuivant un même dessein délictueux :',
@@ -2617,7 +2617,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Unité d’action si lien de causalité et continuité d’intention.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Dans les infractions matérielles non intentionnelles, l’élément moral se déduit :',
@@ -2629,7 +2629,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Il faut rattacher la faute au dommage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question: 'Dans le schéma de la faute intentionnelle, la préméditation :',
     options: [
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La préméditation est une circonstance aggravante dans certains textes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     question: 'La Cour de cassation contrôle :',
     options: [
@@ -2652,7 +2652,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elle fixe les critères (acte univoque + intention).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les « décrets-lois » antérieurs à 1958 :',
     options: [
@@ -2663,7 +2663,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Le document les mentionne comme actes à valeur de loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative d’un crime est :',
     options: [
@@ -2674,7 +2674,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe général du code pénal (121-4/121-5).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'Quand l’auteur viole délibérément un texte de sécurité, la caractérisation de la faute :',
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Certaines infractions de mise en danger n’exigent pas de dommage réalisé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'La valeur des circulaires de la DACG (chancellerie) en matière pénale :',
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Ne créent pas d’infractions ; orientent la pratique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'L’« infraction consommée » se distingue de la tentative par :',
     options: [
@@ -2707,7 +2707,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Tous les éléments constitutifs sont accomplis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Quand le résultat est indéterminé et non connu à l’avance de l’auteur (ex. résultat aléatoire) :',
@@ -2716,7 +2716,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Le texte exige un résultat déterminé pour le dol spécial.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question:
         'La preuve de la contrainte en matière de faute contraventionnelle :',
@@ -2726,7 +2726,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Contrainte/force majeure restent des causes d’irresponsabilité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Peut-on déroger par circulaire à une incrimination réglementaire existante ?',
@@ -2736,7 +2736,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'La circulaire ne peut ni abroger ni modifier un texte normatif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Après désistement volontaire, si un complice poursuit seul et consomme l’infraction :',
@@ -2748,7 +2748,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Son renoncement libre l’exonère de la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Une abstention fautive n’est pénale que si :',
     options: [
@@ -2759,7 +2759,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe de légalité des omissions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités",
     question:
         "La légitime défense fait partie de quelle catégorie juridique en droit pénal ?",
@@ -2773,7 +2773,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La légitime défense est un fait justificatif qui rend l'acte pénalement non punissable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités",
     question:
         "Lorsque la légitime défense est reconnue, la personne ayant commis l'acte de défense est :",
@@ -2787,7 +2787,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise : « N'est pas pénalement responsable la personne qui… accomplit un acte commandé par la nécessité de la légitime défense ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des personnes",
     question:
         "Selon le document, la légitime défense des personnes est prévue par :",
@@ -2801,7 +2801,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le titre I indique : « LA LÉGITIME DÉFENSE D'UNE PERSONNE art. 122-5 C.P. ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des personnes",
     question:
         "La légitime défense des personnes suppose une atteinte injustifiée envers :",
@@ -2815,7 +2815,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise « une atteinte injustifiée envers elle-même ou autrui ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des personnes",
     question:
         "Combien de conditions principales sont listées pour qu'une personne soit en situation de légitime défense DES PERSONNES ?",
@@ -2829,7 +2829,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma distingue : I- Lorsqu'une personne subit une atteinte ; II- Elle ou une autre personne peut accomplir un acte de défense.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Atteinte - Personnes",
     question:
         "Pour la légitime défense des personnes, l'atteinte doit être injustifiée. Cela signifie :",
@@ -2843,7 +2843,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document précise : « INJUSTIFIÉE : sans motif légitime, contraire au droit ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Atteinte - Personnes",
     question:
         "Une atteinte \"actuelle\" au sens de la légitime défense des personnes signifie :",
@@ -2857,7 +2857,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise : « ACTUELLE : en train de se produire ou sur le point de se réaliser (imminente) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Atteinte - Personnes",
     question:
         "Pour être en état de légitime défense, l'atteinte doit être réelle. Cela implique :",
@@ -2871,7 +2871,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document indique : « RÉELLE : L'atteinte doit exister de manière certaine. Une crainte subjective ne suffit pas ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Pour la légitime défense des personnes, un acte de défense \"nécessaire\" signifie :",
@@ -2885,7 +2885,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise : « Il faut que la personne atteinte n'ait aucun autre moyen de se soustraire au danger ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Dans la légitime défense des personnes, l'acte de défense doit être :",
@@ -2899,7 +2899,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma liste ces trois conditions pour l'acte de défense : nécessaire, simultané, proportionné.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Un acte de défense \"simultané\" signifie que la personne se défend :",
@@ -2913,7 +2913,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document indique : « SIMULTANÉ : immédiat par rapport à l'atteinte ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Peut-on invoquer la légitime défense pour une réaction tardive à une agression passée (vengeance) ?",
@@ -2927,7 +2927,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma précise qu'on ne peut se défendre « par réaction tardive à une atteinte déjà passée (vengeance) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "La condition de proportionnalité, pour la légitime défense des personnes, signifie que :",
@@ -2942,7 +2942,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique : « Les moyens de défense employés doivent être mesurés et en rapport avec la gravité de l'atteinte ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "La légitime défense des biens est prévue par quel texte selon le document ?",
@@ -2956,7 +2956,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le titre II mentionne : « LA LÉGITIME DÉFENSE D'UN BIEN art. 122-5 al. 2 C.P. ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question: "La légitime défense des biens est décrite comme :",
     options: [
@@ -2969,7 +2969,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise : « Plus limitée que celle des personnes, elle est autorisée… ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "Pour invoquer la légitime défense d'un bien, celui-ci doit être menacé par :",
@@ -2983,7 +2983,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma indique : « Lorsqu'un bien est menacé par l'exécution d'un CRIME ou d'un DÉLIT ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "Dans la légitime défense d'un bien, l'acte de défense NE doit PAS être :",
@@ -2997,7 +2997,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise : « un acte de défense, autre qu'un homicide volontaire ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "La légitime défense des biens impose que l'acte de défense soit :",
@@ -3011,7 +3011,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne : « lorsque cet acte est strictement nécessaire au but poursuivi ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés",
     question: "Les cas présumés de légitime défense sont prévus à l'article :",
     options: [
@@ -3024,7 +3024,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le titre III indique : « CAS PRÉSUMÉS DE LÉGITIME DÉFENSE art. 122-6 C.P. ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés",
     question:
         "Dans les cas présumés de légitime défense, la personne ayant accompli l'acte est :",
@@ -3038,7 +3038,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte d'en-tête précise : « EST PRÉSUMÉ AVOIR AGI EN ÉTAT DE LÉGITIME DÉFENSE : CELUI QUI ACCOMPLIT L'ACTE… ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Dans le premier cas présumé de légitime défense, l'acte vise à :",
@@ -3052,7 +3052,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma indique : « pour REPOUSSER, DE NUIT [...] L'ENTRÉE [...] DANS UN LIEU HABITÉ ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question: "Le premier cas présumé de légitime défense suppose une entrée :",
     options: [
@@ -3065,7 +3065,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte liste : « par EFFRACTION ou par VIOLENCE ou par RUSE ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Le lieu visé dans le premier cas présumé de légitime défense est :",
@@ -3079,7 +3079,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma précise : « DANS UN LIEU HABITÉ : (maison ou appartement habités.) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Dans le premier cas présumé, la notion de \"nuit\" est définie comme :",
@@ -3093,7 +3093,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document rappelle : « DE NUIT (intervalle de temps compris entre le coucher et le lever du soleil) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Dans le deuxième cas présumé de légitime défense, on se défend contre les auteurs :",
@@ -3107,7 +3107,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma vise : « contre les auteurs de VOLS ou de PILLAGES ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Dans le deuxième cas présumé, les vols ou pillages doivent être :",
@@ -3121,7 +3121,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le schéma précise : « EXÉCUTÉS avec VIOLENCE : (Coups, tortures, etc.) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Le deuxième cas présumé de légitime défense s'applique lorsque la personne se défend :",
@@ -3135,7 +3135,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique : « Pour SE DÉFENDRE DE JOUR comme de NUIT contre les auteurs… ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - nature de la présomption",
     question:
         "La présomption de légitime défense prévue à l'article 122-6 est :",
@@ -3150,7 +3150,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document précise : « Dans les 2 cas, il s'agit d'une PRÉSOMPTION de légitime défense qui peut donc céder devant la preuve contraire. »",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités",
     question:
         "Dans les cas présumés de légitime défense, qui peut apporter la preuve contraire pour renverser la présomption ?",
@@ -3166,7 +3166,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== MOYENNE (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Atteinte",
     question:
         "Une personne reçoit un message anonyme disant : « Je te frapperai demain ». Elle frappe aujourd'hui l'auteur supposé. Peut-elle invoquer la légitime défense des personnes ?",
@@ -3180,7 +3180,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La légitime défense exige une atteinte ACTUELLE ou imminente, pas une simple menace future basée sur une crainte subjective.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Atteinte",
     question:
         "Un individu estime que son voisin pourrait un jour l'agresser en raison d'un conflit de voisinage. Il achète une arme et tire préventivement. Selon le document, la légitime défense :",
@@ -3195,7 +3195,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que l'acte de défense ne peut viser « une attaque future ou éventuelle (peur) ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Atteinte",
     question:
         "Un automobiliste pense qu'un piéton va peut-être l'insulter et le frappe avant toute parole. L'atteinte qu'il invoque est-elle réelle au sens du document ?",
@@ -3209,7 +3209,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document souligne qu'une « crainte subjective ne suffit pas » : l'atteinte doit exister de manière certaine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Acte de défense",
     question:
         "Une victime poursuivie dans la rue peut fuir sans danger mais préfère rester et frapper lourdement son poursuivant. La condition de nécessité est-elle remplie ?",
@@ -3224,7 +3224,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La défense doit être NÉCESSAIRE : s'il existe une autre issue sûre pour échapper au danger, cette condition peut faire défaut.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Simultanéité",
     question:
         "Une personne est giflée dans un bar. Dix minutes plus tard, à l'extérieur, elle revient frapper violemment l'auteur de la gifle. Peut-elle invoquer la légitime défense ?",
@@ -3239,7 +3239,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte exclut « la réaction tardive à une atteinte déjà passée (vengeance) » de la légitime défense.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Proportionnalité",
     question:
         "Quel exemple illustre un défaut de proportionnalité entre l'atteinte et la défense ?",
@@ -3253,7 +3253,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La riposte doit être proportionnée à la gravité de l'atteinte ; ici, l'emploi d'une arme létale est manifestement excessif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Infraction en cours",
     question:
         "Pour la légitime défense d'un bien, l'acte de défense a pour but principal :",
@@ -3267,7 +3267,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte parle d'un acte de défense visant à « interrompre l'exécution d'un crime ou d'un délit contre un bien ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Homicide exclu",
     question:
         "Un propriétaire surprend un voleur en train de briser la vitre de sa voiture et lui tire dessus mortellement. Peut-il en principe invoquer la légitime défense DES BIENS ?",
@@ -3282,7 +3282,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'article 122-5 al. 2 vise un « acte de défense, autre qu'un homicide volontaire ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Proportionnalité",
     question:
         "Un commerçant surprend un voleur qui emporte une tablette de chocolat. Il le frappe avec une barre de fer lui causant une ITT de 30 jours. La condition de proportionnalité est-elle respectée ?",
@@ -3297,7 +3297,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les moyens employés doivent être proportionnés à la gravité de l'infraction ; une violence grave pour un objet de faible valeur est excessive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Charge de la preuve",
     question:
         "Selon le document, en cas de légitime défense des biens, qui doit démontrer que la proportionnalité des moyens a été respectée ?",
@@ -3311,7 +3311,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique : « Il appartient à la personne poursuivie de démontrer que le principe de proportionnalité a été respecté ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Nature de l'infraction",
     question:
         "La tentative de vol d'un bien (délit) en cours d'exécution peut-elle, en principe, justifier la légitime défense des biens ?",
@@ -3325,7 +3325,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La condition est l'exécution d'un crime ou d'un délit contre un bien, ce qui inclut l'exécution d'un vol en cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Une personne repousse à coups de bâton, de nuit, l'entrée par effraction d'un inconnu dans son appartement occupé. Ce cas entre-t-il dans la présomption de légitime défense de l'article 122-6 ?",
@@ -3339,7 +3339,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "De nuit, entrée par effraction, dans un lieu habité, pour repousser l'entrée : la présomption de l'article 122-6 joue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Le premier cas présumé de légitime défense (repousser de nuit l'entrée par effraction dans un lieu habité) s'applique-t-il à un garage désaffecté non habité ?",
@@ -3353,7 +3353,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise explicitement « un lieu habité : maison ou appartement habités ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Un occupant repousse de jour l'entrée par ruse dans son appartement habité. La présomption de légitime défense de l'article 122-6 s'applique-t-elle ?",
@@ -3367,7 +3367,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le premier cas présumé exige expressément que l'entrée soit repoussée « DE NUIT ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Une personne se défend de jour contre des auteurs de vol avec violence dans la rue. Peut-elle bénéficier du deuxième cas présumé de légitime défense ?",
@@ -3381,7 +3381,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le deuxième cas présumé concerne la défense « de jour comme de nuit » contre les auteurs de vols ou pillages exécutés avec violence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Une personne se défend contre des voleurs qui tentent de la dépouiller sans violence (vol à la tire discret). La présomption de l'article 122-6 s'applique-t-elle ?",
@@ -3395,7 +3395,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne des « VOLS ou PILLAGES exécutés avec violence » ; l'absence de violence exclut la présomption.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Preuve contraire",
     question:
         "Dans un cas présumé de légitime défense, il apparaît que la personne a poursuivi l'agresseur en fuite et l'a frappé à terre. Que peut faire le juge ?",
@@ -3409,7 +3409,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La présomption est simple et « peut céder devant la preuve contraire ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison personnes/biens",
     question:
         "Quelle différence majeure existe entre la légitime défense des personnes et celle des biens ?",
@@ -3424,7 +3424,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'article 122-5 al. 2 vise expressément un acte de défense « autre qu'un homicide volontaire » pour les biens.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Personnes",
     question:
         "Dans la formule générale de l'article 122-5, la légitime défense des personnes exige que l'acte soit commandé par :",
@@ -3438,7 +3438,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte parle d'un acte « commandé par la nécessité de la légitime défense d'elle-même ou d'autrui ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Autrui",
     question:
         "Un passant intervient pour protéger une victime inconnue violemment agressée dans le métro. Peut-il, en principe, invoquer la légitime défense des personnes ?",
@@ -3452,7 +3452,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'article 122-5 vise la légitime défense d'elle-même ou d'autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Strictement nécessaire",
     question:
         "Un commerçant enferme un voleur dans une réserve, l'attache et le frappe pendant une heure. L'exigence d'acte « strictement nécessaire au but poursuivi » est-elle respectée ?",
@@ -3467,7 +3467,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'acte doit être strictement nécessaire au but d'interrompre l'exécution du crime ou du délit, ce qui n'est plus le cas ici.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Crime ou délit",
     question:
         "La dégradation légère d'un bien constituant une contravention (et non un délit) permet-elle de se prévaloir de la légitime défense des biens de l'article 122-5 al. 2 ?",
@@ -3481,7 +3481,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise « un crime ou un délit contre un bien » ; les simples contraventions sont en principe exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Simultanéité",
     question:
         "Lors d'une agression, une personne reçoit un coup de poing puis, dans le même mouvement, repousse violemment l'agresseur qui chute. La condition de simultanéité est-elle a priori remplie ?",
@@ -3497,7 +3497,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== DIFFICILE (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Analyse fine",
     question:
         "Une personne insultée gravement (mais sans geste physique) frappe immédiatement l'auteur des insultes. Quel élément de la légitime défense des personnes fait défaut le plus clairement ?",
@@ -3511,7 +3511,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La légitime défense des personnes vise une atteinte injustifiée à la personne, généralement corporelle ou du moins sérieuse ; de simples injures ne caractérisent pas toujours une atteinte justifiant une riposte violente.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Analyse fine",
     question:
         "Une personne menacée au couteau par un agresseur peut, pour se défendre, saisir un objet contondant et blesser gravement l'agresseur. En cas de poursuites, l'analyse de la proportionnalité se fera en comparant :",
@@ -3526,7 +3526,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La proportionnalité se mesure entre gravité de l'attaque (arme blanche) et moyens de défense choisis.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Cas limite",
     question:
         "Un agent de sécurité repousse un individu qui tente de le frapper avec un poing, en utilisant une clé d'étranglement prolongée, causant un grave dommage. Quel critère risque-t-il d'être jugé non respecté ?",
@@ -3540,7 +3540,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le maintien prolongé d'une clé d'étranglement peut être jugé excessif au regard d'un simple coup de poing.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Cas pratique",
     question:
         "Un propriétaire déclenche manuellement, au moment où il aperçoit un voleur pénétrer dans son entrepôt pour voler du matériel, un dispositif automatique qui enferme le voleur dans une cage métallique sans lui causer de blessure. Au regard de l'article 122-5 al. 2, cette riposte :",
@@ -3555,7 +3555,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le dispositif vise à interrompre le délit sans porter d'atteinte corporelle grave, ce qui peut répondre aux exigences de nécessité et proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Homicide et personnes",
     question:
         "Un individu vole un sac à main en tirant violemment sur la victime, qui chute. Le compagnon de la victime tire immédiatement, à balle réelle, sur le voleur et le tue. Sur le terrain de la légitime défense DES PERSONNES, l'homicide pourrait-il être examiné ?",
@@ -3570,7 +3570,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La défense porte ici sur la personne agressée (violence au moment du vol) ; la légitime défense des PERSONNES peut théoriquement aller jusqu'à l'homicide si les autres conditions sont réunies.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Interprétation",
     question:
         "Dans le premier cas présumé (entrée de nuit par effraction dans un lieu habité), la personne qui frappe l'intrus à l'extérieur de l'immeuble, alors que celui-ci rebrousse chemin avant l'entrée, peut-elle bénéficier automatiquement de la présomption ?",
@@ -3585,7 +3585,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La présomption suppose que l'acte soit accompli pour « repousser l'entrée » ; une poursuite à l'extérieur peut apparaître détachée de ce but.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Interprétation",
     question:
         "Un occupant blesse gravement un individu qui, de nuit, force la porte de son appartement habité à coups de pied (violence) et réussit à pénétrer. L'occupant le frappe alors. La présomption de l'article 122-6 :",
@@ -3600,7 +3600,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La jurisprudence admet que la défense pendant la pénétration peut encore être rattachée au fait de repousser l'entrée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Vols violents",
     question:
         "Une victime se défend de jour contre les auteurs d'un pillage commis sans violence sur les personnes (uniquement dégradations de biens). Peut-elle bénéficier du deuxième cas présumé ?",
@@ -3615,7 +3615,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte souligne expressément l'exécution « avec violence ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes/Biens - Qualification",
     question:
         "Un individu tente d'incendier un immeuble habité de nuit. Un occupant sort et lui inflige des blessures pour l'empêcher de poursuivre. Juridiquement, la défense peut être analysée prioritairement comme :",
@@ -3630,7 +3630,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'incendie met en danger les personnes et les biens ; la défense des personnes (plus favorable) sera souvent mobilisée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Charge probatoire",
     question:
         "Dans une affaire de défense de biens, le prévenu affirme avoir seulement poussé un voleur pour l'arrêter, tandis que les blessures constatées laissent penser à des coups répétés. Concernant la proportionnalité, le document rappelle que :",
@@ -3645,7 +3645,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'article précise que « la personne poursuivie » doit démontrer que le principe de proportionnalité a été respecté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Nécessité",
     question:
         "Un policier en civil est frappé par un individu. Il se trouve à proximité immédiate de collègues en uniforme vers lesquels il pourrait se réfugier sans danger. Il choisit malgré tout une riposte très violente. Quel critère de la légitime défense peut être contesté ?",
@@ -3659,7 +3659,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La possibilité de se soustraire au danger en rejoignant les collègues peut conduire à considérer que la riposte n'était pas strictement nécessaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Peur vs réalité",
     question:
         "Une personne souffrant de paranoïa croit que son voisin veut la tuer. Sans geste hostile de ce voisin, elle l'attaque par \"prévention\". Selon le document, la légitime défense :",
@@ -3675,7 +3675,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== Difficile (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Articulation 122-5 / 122-6",
     question:
         "Lorsque la présomption de légitime défense de l'article 122-6 est écartée par la preuve contraire, le juge :",
@@ -3690,7 +3690,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'échec de la présomption n'exclut pas l'examen de la légitime défense classique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Qualification mixte",
     question:
         "Lorsqu'une personne repousse, de nuit, l'entrée par effraction d'un cambrioleur dans sa maison, en lui tirant mortellement dessus, l'analyse juridique la plus complète consiste à :",
@@ -3705,7 +3705,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L'homicide interdit la légitime défense DES BIENS mais la défense DES PERSONNES reste envisageable, sous contrôle strict de proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Biens et personnes",
     question:
         "Dans un vol avec violence, la victime protège à la fois son intégrité physique et son sac à main. La légitime défense sera en priorité fondée sur :",
@@ -3719,7 +3719,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En pratique, lorsqu'une atteinte aux personnes existe, le régime plus large de la défense des personnes est privilégié.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Crime contre un bien",
     question:
         "Un individu tente de commettre un crime d'incendie volontaire contre un entrepôt vide. Le propriétaire intervient et blesse légèrement l'auteur avec une arme non létale. Sur le terrain de la légitime défense des biens, le juge devra principalement vérifier :",
@@ -3734,7 +3734,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ce sont les trois axes d'analyse prévus à l'article 122-5 al. 2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Intrusion nocturne",
     question:
         "Une personne installe un piège automatique létal dans son couloir (fusil relié à la porte) pour se protéger des intrusions nocturnes. Aucune présence humaine n'est requise au déclenchement. En cas de décès d'un cambrioleur, la qualification de légitime défense :",
@@ -3749,7 +3749,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La légitime défense suppose un acte humain accompli dans le même temps en réaction à l'atteinte ; un piège automatique préprogrammé ne répond pas à cette exigence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Appréciation in concreto",
     question:
         "Dans l'appréciation de la proportionnalité en légitime défense, la jurisprudence tient compte :",
@@ -3764,7 +3764,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La proportionnalité est appréciée in concreto, au regard de l'ensemble de la situation au moment des faits.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Poursuite de l'agresseur",
     question:
         "Une victime parvient à faire fuir son agresseur. Dix minutes plus tard, elle le retrouve à distance, sans danger immédiat, et le frappe. Sur le terrain de la légitime défense :",
@@ -3779,7 +3779,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La défense ne peut être une « réaction tardive à une atteinte déjà passée (vengeance) ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Défense d'autrui",
     question:
         "Un individu neutralise violemment un agresseur qui tente d'étrangler une victime. Il est poursuivi pour violences aggravées. Pour caractériser la légitime défense d'autrui, le juge devra examiner notamment :",
@@ -3794,7 +3794,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les mêmes critères que pour la défense de soi s'appliquent à la défense d'autrui.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Difficile - Chevauchement biens/personnes",
     question:
         "Lorsqu'un cambrioleur pénètre de nuit dans un appartement occupé, armé d'un couteau, la défense de l'occupant sera juridiquement fondée :",
@@ -3809,7 +3809,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le danger vise aussi la vie des personnes ; le juge combinera souvent ces deux approches.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Cadre général",
     question:
         "La manifestation sur la voie publique est principalement encadrée par :",
@@ -3824,7 +3824,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le régime juridique des cortèges, défilés et rassemblements sur la voie publique est organisé par les articles L.211-1 et suivants du Code de la sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration",
     question:
         "L’un des principaux objectifs de la déclaration préalable de manifestation est :",
@@ -3839,7 +3839,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La déclaration permet la préparation opérationnelle : évaluation des risques, effectifs à prévoir, itinéraire, mesures de sécurité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Itinéraire",
     question: "L’itinéraire d’un cortège déclaré doit être :",
     options: [
@@ -3853,7 +3853,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La déclaration doit comporter l’itinéraire lorsqu’il s’agit d’un défilé, afin de dimensionner les moyens et de sécuriser le parcours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Organisateurs",
     question:
         "Les organisateurs d’une manifestation sont particulièrement responsables :",
@@ -3868,7 +3868,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les organisateurs sont interlocuteurs de l’autorité et doivent veiller au respect des modalités arrêtées (itinéraire, horaires, encadrement).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Non-déclaration",
     question: "Une manifestation organisée sans déclaration préalable est :",
     options: [
@@ -3884,7 +3884,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // ===================== BLOC 3 – Nouvelles questions (50) =====================
 
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales",
     question:
         "Parmi les propositions suivantes, laquelle relève d’une liberté publique collective ?",
@@ -3898,7 +3898,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La liberté de manifester s’exerce collectivement, contrairement à des libertés essentiellement individuelles comme la vie privée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Distinction",
     question:
         "La manifestation sur la voie publique se distingue principalement de l’attroupement par :",
@@ -3912,7 +3912,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La manifestation est en principe déclarée, alors que l’attroupement est un rassemblement susceptible de troubler l’ordre public sans nécessaire déclaration.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Lieu de déclaration",
     question:
         "À Paris, la déclaration préalable de manifestation doit être déposée :",
@@ -3926,7 +3926,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "À Paris, c’est la préfecture de police qui reçoit les déclarations de manifestations (art. L.211-1 C.S.I. et suivants).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Délai",
     question:
         "Le délai légal pour déposer une déclaration de manifestation est de :",
@@ -3940,7 +3940,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ce délai permet à l’autorité d’anticiper et d’organiser les mesures nécessaires au maintien de l’ordre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Exceptions",
     question:
         "Les manifestations traditionnelles à caractère folklorique ou religieux :",
@@ -3954,7 +3954,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L.211-1 C.S.I. réserve une exception pour certaines manifestations traditionnelles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Organisateurs",
     question: "Les organisateurs d’une manifestation doivent être :",
     options: [
@@ -3967,7 +3967,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’autorité doit pouvoir identifier des interlocuteurs responsables et joignables.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Récépissé",
     question:
         "Lorsqu’une déclaration de manifestation est déposée, l’autorité doit :",
@@ -3981,7 +3981,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le récépissé atteste de la déclaration et pourra être présenté lors de contrôles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Sanction organisateur",
     question:
         "Organiser une manifestation non déclarée ou interdite est puni :",
@@ -3996,7 +3996,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le Code pénal sanctionne sévèrement l’organisation d’une manifestation illégale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Nombre de personnes",
     question: "Pour qu’il y ait attroupement au sens de la loi pénale :",
     options: [
@@ -4009,7 +4009,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte ne fixe pas de seuil chiffré ; c’est l’aptitude à troubler l’ordre public qui caractérise l’attroupement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Sommations",
     question:
         "Avant d’avoir recours à la force pour disperser un attroupement, il est en principe nécessaire :",
@@ -4023,7 +4023,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article R.211-11 C.S.I. impose en principe deux sommations avant l’usage de la force.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Visage dissimulé",
     question:
         "Participer à un attroupement après sommations en dissimulant volontairement son visage :",
@@ -4037,7 +4037,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les textes aggravent la répression lorsque la personne dissimule son visage pour échapper à l’identification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Fondement constitutionnel",
     question: "La liberté de la presse trouve son principal fondement dans :",
     options: [
@@ -4050,7 +4050,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 11 consacre la libre communication des pensées et des opinions, base de la liberté de la presse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Grande loi",
     question: "La « charte » de la liberté de la presse en France est :",
     options: [
@@ -4063,7 +4063,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette loi organise le régime libéral de la presse et les délits de presse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Journalistes",
     question: "La carte d’identité de journaliste professionnel :",
     options: [
@@ -4076,7 +4076,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Une commission composée de journalistes et d’éditeurs attribue la carte, selon des critères précis.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délit de fausses nouvelles",
     question:
         "La publication de fausses nouvelles de nature à troubler la paix publique :",
@@ -4090,7 +4090,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 27 de la loi de 1881 réprime la diffusion de fausses nouvelles dangereuses pour la paix publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délai de prescription",
     question:
         "En matière de délits de presse, le délai de prescription « de droit commun » est :",
@@ -4102,7 +4102,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contenu déclaration",
     question:
         "La déclaration préalable d’une manifestation doit notamment comporter :",
@@ -4117,7 +4117,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces informations permettent à l’autorité d’apprécier les risques et d’organiser le maintien de l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Pouvoir de substitution",
     question:
         "Si le maire refuse d’interdire une manifestation alors que le risque de trouble grave est manifeste, le préfet :",
@@ -4132,7 +4132,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le préfet peut se substituer au maire défaillant en matière de maintien de l’ordre (police administrative).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contravention R.644-4 du Code Pénal.",
     question: "L’article R.644-4 du Code pénal vise :",
     options: [
@@ -4146,7 +4146,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet article prévoit une contravention de 4 ème classe pour la participation à une manifestation interdite.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Peines complémentaires",
     question:
         "L’interdiction de participer à des manifestations sur la voie publique pour une durée maximale de 3 ans :",
@@ -4161,7 +4161,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le juge peut l’ordonner pour certains délits commis lors de manifestations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Responsabilité de l’État",
     question:
         "Les dommages causés lors de crimes ou délits commis à force ouverte ou par violence au cours d’une manifestation :",
@@ -4176,7 +4176,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’État peut ensuite se retourner contre les auteurs, mais répond de plein droit vis-à-vis des victimes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Textes applicables",
     question:
         "Le régime juridique des attroupements est principalement fixé par :",
@@ -4191,7 +4191,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces textes organisent définition, dispersion, infractions et réparation des dommages.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Nature politique",
     question:
         "Le fait que le délit d’attroupement soit qualifié de « délit politique » par la Cour de cassation :",
@@ -4206,7 +4206,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi a expressément prévu la possibilité des procédures rapides malgré cette qualification.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Insignes distinctifs",
     question:
         "Lors des sommations de dispersion, les autorités habilitées doivent :",
@@ -4221,7 +4221,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article R.211-12 C.S.I. impose ces insignes pour matérialiser l’autorité civile qui procède aux sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Participation armée",
     question:
         "Participer à un attroupement en étant porteur d’une arme (art. 431-5 du Code Pénal.) est puni :",
@@ -4236,7 +4236,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit une aggravation si le visage est dissimulé après sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Transparence capitalistique",
     question:
         "Les règles de transparence des entreprises de presse visant à identifier actionnaires et dirigeants ont pour but principal :",
@@ -4251,7 +4251,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La transparence est un outil de protection de la liberté d’expression et du pluralisme.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Clause de conscience",
     question: "La clause de conscience permet au journaliste :",
     options: [
@@ -4265,7 +4265,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle protège l’indépendance morale du journaliste en cas de cession ou de changement de ligne éditoriale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Entreprise de presse",
     question:
         "Les règles limitant les investissements étrangers dans les entreprises de presse ont pour objectif :",
@@ -4279,7 +4279,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elles visent à éviter que des puissances étrangères contrôlent des organes d’information stratégique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources (limites)",
     question: "Le secret des sources des journalistes peut être levé :",
     options: [
@@ -4293,7 +4293,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est l’équilibre recherché par la loi et la jurisprudence entre liberté de la presse et exigences de la justice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Responsabilité en cascade",
     question:
         "En matière de délits de presse, la personne principalement responsable est :",
@@ -4307,7 +4307,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1881 organise un système de responsabilité dite « en cascade » qui commence par le directeur de publication.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Publication jeunesse",
     question:
         "Lorsqu’un juge ordonne la saisie d’une publication dangereuse pour la jeunesse (incitation à la violence, pornographie) :",
@@ -4324,7 +4324,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU DIFFICILE (inclut Difficile) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Mesures préventives",
     question:
         "L’article L.211-3 C.S.I. autorisant l’interdiction temporaire du port d’objets pouvant constituer une arme par destination suppose :",
@@ -4339,7 +4339,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La mesure doit être justifiée, ciblée et proportionnée au risque anticipé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Réquisitions 78-2-5 CPP",
     question:
         "Les réquisitions du procureur de la République fondées sur l’article 78-2-5 CPP lors d’une manifestation doivent :",
@@ -4354,7 +4354,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elles encadrent les contrôles de bagages ou de véhicules, pour garantir le respect des libertés individuelles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – État d’urgence & contrôle",
     question:
         "Même en état d’urgence ou régime d’exception, les interdictions générales de manifester :",
@@ -4369,7 +4369,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les juridictions administratives veillent à la conciliation entre sauvegarde de l’ordre public et libertés fondamentales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Article 431-4 du Code Pénal.",
     question:
         "Pour que l’infraction de participation à un attroupement après sommations (art. 431-4 du Code Pénal.) soit constituée, il faut notamment :",
@@ -4384,7 +4384,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La preuve des sommations et de la présence persistante de la personne est centrale pour la qualification.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Article 431-6 du Code Pénal.",
     question:
         "La provocation directe à un attroupement armé réprimée par l’article 431-6 du Code Pénal. vise :",
@@ -4399,7 +4399,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le champ est large et inclut les différents vecteurs de diffusion, y compris modernes (réseaux sociaux).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Documentation pour l’action récursoire",
     question:
         "En vue de l’action récursoire de l’État après des dégradations commises lors d’attroupements, les forces de l’ordre doivent :",
@@ -4414,7 +4414,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La qualité des procès-verbaux conditionne la possibilité pour l’État d’agir contre les auteurs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage des armes non létales",
     question:
         "L’usage de certaines armes non létales (ex. LBD, grenades de désencerclement) dans le cadre des attroupements :",
@@ -4429,7 +4429,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’usage est encadré par le C.S.I. (nécessité, proportionnalité, procédure) et doit pouvoir être justifié.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Pluralisme (C. const.)",
     question:
         "Le Conseil constitutionnel a érigé le pluralisme des courants d’expression en :",
@@ -4443,7 +4443,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les décisions notamment de 1984 et 1986 reconnaissent au pluralisme une valeur constitutionnelle forte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Décision de 1984",
     question:
         "Dans sa décision du 11 octobre 1984, le Conseil constitutionnel a particulièrement insisté sur :",
@@ -4458,7 +4458,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La transparence permet au public de mesurer les influences qui pèsent sur l’information.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Perquisitions (magistrat)",
     question:
         "En matière de perquisitions dans les locaux de presse, il est exigé que :",
@@ -4473,7 +4473,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette exigence renforce les garanties entourant la liberté de la presse et le secret des sources.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Diffamation/non public",
     question:
         "La diffamation non publique (par exemple dans un courrier privé) :",
@@ -4488,7 +4488,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La publicité est un élément aggravant ; son absence entraîne un régime contraventionnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Apologie / provocation",
     question: "Les articles 23 et 24 de la loi de 1881 répriment notamment :",
     options: [
@@ -4502,7 +4502,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi encadre fermement les discours de haine ou de glorification de crimes graves.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Injure discriminatoire",
     question: "L’injure publique à caractère raciste ou discriminatoire :",
     options: [
@@ -4516,7 +4516,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le législateur a renforcé la répression des propos discriminatoires, y compris sur la durée de prescription.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Équilibre enquête / sources",
     question:
         "Lorsqu’un enquêteur doit entendre un journaliste sur une affaire en cours, il doit :",
@@ -4531,7 +4531,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La liberté de la presse impose un équilibre subtil entre besoin d’enquête et protection des sources.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Rôle pratique du policier",
     question:
         "Pour un policier sur la voie publique, filmer ou photographier des journalistes en action lors d’une manifestation :",
@@ -4546,7 +4546,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La captation d’images doit rester proportionnée, justifiée et respectueuse des libertés fondamentales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contraventions",
     question:
         "La participation à une manifestation interdite sur le fondement de l’article L.211-4 C.S.I. peut être sanctionnée :",
@@ -4560,7 +4560,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article R.644-4 du Code Pénal. prévoit une contravention de 4 ème classe pour la participation à une manifestation interdite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Notion d’ordre public",
     question:
         "Lorsqu’il apprécie la légalité d’une manifestation, le préfet doit notamment tenir compte :",
@@ -4575,7 +4575,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le pouvoir de police administrative générale vise le maintien de l’ordre public, non la censure d’opinions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – État d’urgence / régime exceptionnel",
     question:
         "En période d’état d’urgence ou de régime exceptionnel, les pouvoirs de police :",
@@ -4590,7 +4590,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les régimes d’exception permettent des restrictions plus fortes aux libertés publiques, sous contrôle du juge.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Voie publique",
     question: "Un attroupement suppose un rassemblement :",
     options: [
@@ -4603,7 +4603,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La notion d’attroupement vise les espaces publics, susceptibles de troubler l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Troubles effectifs",
     question:
         "Pour qu’il y ait attroupement au sens de l’article 431-3 du Code Pénal., il est :",
@@ -4618,7 +4618,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La simple susceptibilité de trouble suffit : il n’est pas exigé que des violences soient déjà réalisées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Sommations",
     question:
         "La formule traditionnellement utilisée lors des sommations de dispersion est introduite par :",
@@ -4632,7 +4632,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette formule, ou toute formule équivalente rappelant la loi et la nécessité de se disperser, est utilisée pour matérialiser les sommations.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Participation après sommations",
     question:
         "Après les sommations réglementaires, les personnes qui restent volontairement dans l’attroupement :",
@@ -4646,7 +4646,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Rester dans un attroupement après sommations constitue le délit visé par l’article 431-4 du Code Pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Port d’arme",
     question: "Participer à un attroupement en étant porteur d’une arme :",
     options: [
@@ -4659,7 +4659,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-5 du Code Pénal. aggrave la répression lorsque le participant est porteur d’une arme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – 4ème pouvoir",
     question: "La presse est parfois qualifiée de « 4 ème pouvoir » car :",
     options: [
@@ -4672,7 +4672,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En informant, dénonçant et analysant, la presse influence durablement l’opinion et contrôle symboliquement les pouvoirs institués.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délits de presse",
     question:
         "Les infractions commises par voie de presse (injure, diffamation, etc.) sont régies principalement par :",
@@ -4686,7 +4686,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La plupart des infractions commises par voie de presse trouvent leur régime spécifique dans la loi de 1881.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Injure publique",
     question: "L’injure publique se définit comme :",
     options: [
@@ -4700,7 +4700,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’injure vise le propos dégradant, sans fait précis susceptible de preuve, contrairement à la diffamation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Diffamation",
     question: "La diffamation suppose :",
     options: [
@@ -4714,7 +4714,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il faut un fait déterminé, susceptible de débat probatoire, pour caractériser la diffamation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Personnes protégées",
     question:
         "Les injures ou diffamations visant un agent public dans l’exercice de ses fonctions :",
@@ -4728,7 +4728,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1881 prévoit des circonstances aggravantes lorsque la victime est dépositaire de l’autorité publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Jeunesse",
     question: "Les publications destinées à la jeunesse :",
     options: [
@@ -4744,7 +4744,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Multi-communes",
     question:
         "Lorsque le cortège d’une manifestation doit traverser plusieurs communes :",
@@ -4758,7 +4758,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Chaque autorité de police municipale concernée doit être informée, pour adapter les mesures de maintien de l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Notification interdiction",
     question: "Une décision d’interdiction de manifestation doit :",
     options: [
@@ -4772,7 +4772,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La notification peut être individuelle ou, si ce n’est pas possible, réalisée par voie d’affichage ou autre moyen public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Référé",
     question: "Un arrêté d’interdiction de manifestation peut être contesté :",
     options: [
@@ -4785,7 +4785,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le juge administratif, saisi en urgence, contrôle la réalité du risque et la proportionnalité de l’interdiction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Interdiction d’objets",
     question:
         "L’interdiction temporaire de port d’objets pouvant constituer une arme par destination (L.211-3 C.S.I.) vise :",
@@ -4799,7 +4799,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La mesure doit être ciblée dans l’espace et le temps, en lien avec le risque identifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Outrage au drapeau",
     question:
         "L’outrage public au drapeau tricolore lors d’une manifestation est :",
@@ -4814,7 +4814,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 433-5-1 du Code Pénal. réprime l’outrage au drapeau ou à l’hymne national, notamment en réunion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Autorités habilitées",
     question:
         "Parmi les autorités suivantes, laquelle peut être habilitée à procéder aux sommations de dispersion :",
@@ -4828,7 +4828,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Outre le préfet, certaines autorités comme le directeur de cabinet, les maires, ou certains officiers de police peuvent être habilitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Signal visuel/sonore",
     question:
         "Lorsque l’usage d’un haut-parleur est impossible lors des sommations :",
@@ -4843,7 +4843,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit la possibilité d’employer d’autres moyens pour matérialiser les sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Proportionnalité",
     question:
         "En matière de dispersion d’attroupements, la proportionnalité de la force signifie que :",
@@ -4857,7 +4857,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La force doit cesser lorsque le trouble disparaît et ne peut excéder ce qui est nécessaire pour rétablir l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Procès-verbal",
     question:
         "En cas d’interpellation lors d’un attroupement, il est essentiel de mentionner dans le procès-verbal :",
@@ -4872,7 +4872,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces éléments conditionnent la qualification pénale (431-4, 431-5, 431-6 du Code Pénal.) et la solidité du dossier.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Responsabilité de l’État",
     question:
         "L’article L.211-10 C.S.I. concernant les attroupements prévoit une responsabilité :",
@@ -4887,7 +4887,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La responsabilité de plein droit de l’État permet aux victimes d’être indemnisées, l’État pouvant ensuite exercer un recours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Création d’un journal",
     question: "Pour créer un journal au regard de la loi de 1881, il faut :",
     options: [
@@ -4900,7 +4900,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1881 consacre un régime très libéral pour la création d’un journal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Directeur de publication",
     question: "Le directeur de la publication d’un journal :",
     options: [
@@ -4914,7 +4914,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le système de responsabilité en cascade place le directeur de publication au premier rang.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources et témoignage",
     question:
         "Lorsqu’un journaliste est entendu comme témoin sur des faits révélés par ses articles :",
@@ -4929,7 +4929,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La protection des sources est un élément central de la liberté de la presse, rappelée par la CEDH et la Cour de cassation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Pluralisme et concentration",
     question:
         "Les règles limitant les concentrations d’entreprises de presse visent avant tout à :",
@@ -4943,7 +4943,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le pluralisme est un objectif de valeur constitutionnelle ; les règles de concentration visent à éviter des situations de monopole d’information.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Aides publiques",
     question:
         "Les aides publiques à la presse (fiscales, postales, directes) soulèvent notamment la question :",
@@ -4960,7 +4960,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU DIFFICILE (inclut Difficile) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Réquisitions 78-2-5 CPP",
     question:
         "Les réquisitions fondées sur l’article 78-2-5 CPP lors d’une manifestation doivent notamment :",
@@ -4975,7 +4975,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le procureur doit détailler le cadre spatial, temporel et matériel des contrôles pour respecter la proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôle d’identité préventif",
     question:
         "Les contrôles d’identité aux abords d’une manifestation sur le fondement de l’art. 78-2 al. 8 CPP sont possibles :",
@@ -4990,7 +4990,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il s’agit de contrôles préventifs encadrés, justifiés par des risques d’atteintes aux personnes et aux biens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – État de siège / état d’urgence",
     question:
         "En état de siège ou d’urgence, certaines mesures comme la censure de la presse et l’interdiction généralisée de manifestations :",
@@ -5005,7 +5005,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Même en régime d’exception, les limitations aux libertés doivent se fonder sur la loi et restent contrôlées par les juridictions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Délit politique",
     question:
         "La qualification de « délit politique » du délit d’attroupement (431-4 du Code Pénal.) par la Cour de cassation implique notamment :",
@@ -5020,7 +5020,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi a précisément prévu la compatibilité de ce caractère politique avec les procédures prévues aux art. 393 à 397-7 et 495-7 à 495-15-1 CPP.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage des armes réglementé",
     question:
         "Les armes susceptibles d’être utilisées dans le cadre de la dispersion d’attroupements sont listées :",
@@ -5034,7 +5034,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet article énumère les armes (grenades à effet sonore, lacrymogènes, LBD, etc.) utilisables dans ce cadre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage immédiat de la force",
     question:
         "L’article L.211-9 C.S.I. permet de faire usage immédiatement de la force, sans attendre l’issue des sommations, lorsque :",
@@ -5049,7 +5049,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il s’agit de situations d’urgence où la sécurité des forces ou de certains lieux ne permet plus de suivre intégralement la procédure ordinaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Provocation et responsabilité",
     question:
         "En cas de provocation à un attroupement armé (art. 431-6 du Code Pénal.), la responsabilité pénale :",
@@ -5064,7 +5064,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La peine est aggravée lorsque l’attroupement armé a effectivement eu lieu, mais l’infraction existe déjà au stade de la simple provocation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources (principe)",
     question:
         "Selon la jurisprudence de la CEDH, la protection des sources des journalistes est :",
@@ -5078,7 +5078,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La Cour européenne rappelle régulièrement que la protection des sources est essentielle à la liberté journalistique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Perquisitions nulles",
     question:
         "Une perquisition irrégulière dans les locaux d’un organe de presse :",
@@ -5093,7 +5093,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le non-respect des garanties légales en matière de perquisitions peut conduire à l’annulation des actes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Publication d’informations secrètes",
     question:
         "La publication d’informations relatives à la défense nationale ou au secret de l’instruction :",
@@ -5108,7 +5108,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Plusieurs textes encadrent la diffusion d’informations sensibles, notamment pour protéger la défense nationale et le bon déroulement de la justice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Droit de réponse",
     question: "La personne mise en cause par un article de presse dispose :",
     options: [
@@ -5122,7 +5122,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1881 organise le droit de réponse, en plus des actions civiles ou pénales éventuelles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délais de prescription raciste",
     question:
         "Pourquoi le législateur a-t-il allongé à un an la prescription pour certains délits de presse à caractère raciste ou discriminatoire ?",
@@ -5137,7 +5137,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le délai plus long permet un traitement plus effectif de ces infractions, en tenant compte de leur gravité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Intervention policière en rédaction",
     question:
         "Lorsqu’un policier intervient dans les locaux d’un média sur réquisition judiciaire, il doit veiller :",
@@ -5152,7 +5152,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Toute intervention dans un média est sensible : l’agent doit strictement respecter le cadre légal fixé par la réquisition et les garanties protectrices.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Définition",
     question:
         "Une manifestation sur la voie publique se caractérise principalement par :",
@@ -5167,7 +5167,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "On entend généralement par manifestation l’occupation momentanée de la voie publique par un rassemblement statique ou mobile (cortège), à caractère revendicatif, festif ou protestataire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Liberté fondamentale",
     question:
         "La liberté de manifester est principalement rattachée en droit français :",
@@ -5182,7 +5182,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La manifestation est un mode collectif d’exercice de la liberté d’expression, reconnue comme principe à valeur constitutionnelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration",
     question:
         "Selon l’article L.211-1 du C.S.I., les cortèges et rassemblements sur la voie publique :",
@@ -5196,7 +5196,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L.211-1 du Code de la sécurité intérieure soumet les cortèges, défilés et rassemblements sur la voie publique à une obligation de déclaration préalable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Exceptions",
     question:
         "Parmi les manifestations suivantes, laquelle est en principe dispensée de déclaration préalable ?",
@@ -5211,7 +5211,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L.211-1 C.S.I. prévoit une exception pour certaines manifestations traditionnelles à caractère folklorique ou religieux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Autorité compétente",
     question:
         "À Paris, l’autorité compétente pour recevoir la déclaration préalable de manifestation est :",
@@ -5225,7 +5225,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "À Paris, la déclaration préalable est déposée auprès de la préfecture de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Délai",
     question:
         "Le délai légal pour déposer une déclaration de manifestation est en principe :",
@@ -5240,7 +5240,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La déclaration doit parvenir entre 3 et 15 jours francs avant la manifestation, afin de permettre à l’autorité de préparer le dispositif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration",
     question:
         "La déclaration de manifestation doit obligatoirement comporter :",
@@ -5254,7 +5254,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le contenu de la déclaration comprend notamment l’identité des organisateurs, l’objet, le lieu, la date, l’horaire et l’itinéraire envisagé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Interdiction",
     question:
         "L’article L.211-4 du C.S.I. permet d’interdire une manifestation lorsque :",
@@ -5269,7 +5269,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’interdiction est une mesure grave, justifiée seulement en cas de risques sérieux de troubles graves à l’ordre public et en l’absence d’autres moyens suffisants.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Sanctions pénales",
     question:
         "Organiser une manifestation non déclarée ou malgré interdiction est puni par l’article 431-9 du Code Pénal. de :",
@@ -5283,7 +5283,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-9 du Code pénal sanctionne l’organisation d’une manifestation non déclarée, interdite ou déclarée de manière mensongère.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Participants",
     question:
         "La simple participation à une manifestation interdite sur le fondement de l’article L.211-4 C.S.I. est :",
@@ -5297,7 +5297,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article R.644-4 du Code pénal punit la participation à une manifestation interdite d’une contravention de 4 ème classe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Port d’arme",
     question:
         "Participer à une manifestation ou réunion publique en étant porteur d’une arme constitue :",
@@ -5311,7 +5311,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-10 du Code pénal réprime le fait de participer armé à une manifestation ou réunion publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Dissimulation du visage",
     question:
         "Sans motif légitime, dissimuler volontairement son visage lors d’une manifestation, dans un contexte de risque d’atteintes à l’ordre public, est puni :",
@@ -5325,7 +5325,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-9-1 du Code pénal réprime la dissimulation volontaire du visage dans certaines manifestations, en vue d’échapper à l’identification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Définition",
     question:
         "Selon l’article 431-3 du Code pénal, constitue un attroupement :",
@@ -5340,7 +5340,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’attroupement vise un rassemblement sur la voie publique ou dans un lieu public susceptible de troubler l’ordre public, même sans violences effectives.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Sommations",
     question:
         "En principe, avant de disperser un attroupement par la force, l’autorité compétente doit :",
@@ -5354,7 +5354,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article R.211-11 C.S.I. prévoit deux sommations avant l’usage de la force pour disperser un attroupement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Participation",
     question:
         "Continuer à participer volontairement à un attroupement après les sommations, sans être porteur d’une arme, est puni :",
@@ -5368,7 +5368,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-4 du Code pénal réprime la participation à un attroupement après sommations, même sans arme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Nature politique",
     question:
         "Le délit d’attroupement prévu à l’article 431-4 du Code pénal a été qualifié par la Cour de cassation comme :",
@@ -5382,7 +5382,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Par un arrêt du 28 mars 2017, la chambre criminelle a qualifié le délit d’attroupement comme un délit politique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Textes fondateurs",
     question:
         "La grande « charte » de la liberté de la presse en France est la loi du :",
@@ -5392,7 +5392,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi du 29 juillet 1881 constitue la grande loi de référence sur la liberté de la presse en France.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Référence constitutionnelle",
     question:
         "La liberté d’expression et la libre communication des pensées et des opinions sont proclamées par :",
@@ -5406,7 +5406,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 11 de la Déclaration des droits de l’Homme et du citoyen proclame la libre communication des pensées et des opinions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Principe",
     question:
         "Selon la loi du 29 juillet 1881, la presse est en principe soumise :",
@@ -5421,7 +5421,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1881 rompt avec les régimes d’autorisation et de censure, pour consacrer un régime de liberté sous responsabilité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Entreprise de presse",
     question:
         "L’article 5 de la loi du 29 juillet 1881 prévoit que tout journal ou écrit périodique peut être publié :",
@@ -5435,7 +5435,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 5 consacre un régime de simple déclaration, sans autorisation ni cautionnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Journaliste",
     question:
         "Le journaliste professionnel est, en principe, une personne qui :",
@@ -5452,7 +5452,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Lieu de déclaration",
     question:
         "Dans une commune où la police n’est pas étatisée, la déclaration de manifestation sur la voie publique est normalement déposée :",
@@ -5466,7 +5466,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En dehors de Paris et des communes à police étatisée, la déclaration se fait en mairie ; si la manifestation traverse plusieurs communes, chaque maire doit être saisi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôle du préfet",
     question:
         "Lorsqu’un maire interdit une manifestation dans une zone de police non étatisée, son arrêté :",
@@ -5480,7 +5480,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’arrêté d’interdiction du maire doit être transmis au préfet, qui peut saisir le tribunal administratif en cas de désaccord.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôle du juge",
     question:
         "Le juge administratif contrôle la légalité d’un arrêté d’interdiction de manifestation en particulier au regard :",
@@ -5495,7 +5495,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Comme pour tout acte de police, le juge vérifie la nécessité, l’adaptation et la proportionnalité de l’interdiction aux risques allégués.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôles d’identité",
     question:
         "Les contrôles d’identité aux abords d’une manifestation, pour prévenir les atteintes aux personnes et aux biens, peuvent reposer sur :",
@@ -5509,7 +5509,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 78-2 CPP permet notamment des contrôles préventifs aux abords des manifestations en cas de risque avéré.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Fouilles",
     question:
         "Les réquisitions permettant de contrôler bagages et véhicules aux abords d’une manifestation reposent sur :",
@@ -5523,7 +5523,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 78-2-5 CPP autorise le procureur à délivrer des réquisitions pour fouilles de bagages et visites de véhicules dans un périmètre et une durée limités.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Objets dangereux",
     question:
         "En cas de risques sérieux de troubles graves à l’ordre public, l’article L.211-3 C.S.I. permet :",
@@ -5538,7 +5538,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L.211-3 C.S.I. est une mesure préventive liée au risque de violence lors de certaines manifestations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Responsabilité de l’État",
     question:
         "Selon l’article L.211-10 du C.S.I., l’État est civilement responsable :",
@@ -5553,7 +5553,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L.211-10 pose une responsabilité de plein droit de l’État pour certains dommages causés en lien avec des manifestations ou attroupements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Autorité compétente",
     question:
         "En matière d’attroupements, le maintien de l’ordre relève, selon le C.S.I., principalement :",
@@ -5567,7 +5567,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article D.211-10 C.S.I. précise que le maintien de l’ordre dans ces cas relève exclusivement du ministre de l’Intérieur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Forces armées",
     question:
         "Les forces armées autres que la gendarmerie nationale peuvent participer au maintien de l’ordre :",
@@ -5582,7 +5582,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La participation de forces militaires au maintien de l’ordre suppose une réquisition régulière de l’autorité civile compétente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Insignes",
     question:
         "Lorsqu’une autorité exécute les sommations de dispersion d’un attroupement, elle doit :",
@@ -5596,7 +5596,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article R.211-12 C.S.I. impose le port d’insignes distinctifs aux autorités procédant aux sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage de la force",
     question:
         "Selon l’article R.211-13 C.S.I., le recours à la force pour disperser un attroupement :",
@@ -5610,7 +5610,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La force ne peut être employée que si elle est absolument nécessaire et proportionnée au trouble à faire cesser.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Dispense de sommations",
     question: "Dans certains cas, l’article L.211-9 C.S.I. permet :",
     options: [
@@ -5624,7 +5624,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En cas de violences ou de menaces graves contre les forces de l’ordre ou certains lieux, la loi autorise un recours immédiat à la force.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Dissimulation et arme",
     question:
         "Participer à un attroupement après sommations, en étant porteur d’une arme et le visage dissimulé pour ne pas être identifié, est puni au maximum :",
@@ -5638,7 +5638,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-5 du Code pénal aggrave les peines lorsque le participant porte une arme et dissimule son visage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Pluralisme",
     question:
         "Le pluralisme des courants d’expression, en matière de presse, a été reconnu par le Conseil constitutionnel comme :",
@@ -5652,7 +5652,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le Conseil constitutionnel, dans sa décision du 11 octobre 1984 notamment, fait du pluralisme un principe à valeur constitutionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Transparence",
     question:
         "Les règles de transparence sur la propriété et la direction des entreprises de presse ont été renforcées notamment par :",
@@ -5666,7 +5666,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces textes visent à favoriser la transparence des organes de presse pour informer le public sur leurs responsables et leurs propriétaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Carte professionnelle",
     question:
         "La carte d’identité professionnelle des journalistes est délivrée :",
@@ -5681,7 +5681,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette Commission paritaire décide de l’octroi ou du retrait de la carte de presse, décision susceptible de recours devant le juge administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Clause de conscience",
     question: "La « clause de conscience » d’un journaliste lui permet :",
     options: [
@@ -5695,7 +5695,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La clause de conscience protège le journaliste lorsqu’un changement de l’orientation du journal porte atteinte à son honneur ou à ses intérêts moraux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources",
     question: "Le secret des sources des journalistes peut être levé :",
     options: [
@@ -5709,7 +5709,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi protège le secret des sources ; les atteintes doivent rester exceptionnelles, justifiées et proportionnées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Injure / diffamation",
     question:
         "La diffamation se distingue de l’injure publique notamment parce qu’elle comporte :",
@@ -5724,7 +5724,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La diffamation implique un fait précis susceptible de preuve, alors que l’injure consiste en des propos outrageants sans fait précis.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Prescription",
     question:
         "En matière de délits de presse, le délai de prescription de l’action publique est en principe :",
@@ -5740,7 +5740,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU DIFFICILE (inclut Difficile) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration mensongère",
     question:
         "Selon l’article 431-9 du Code pénal, est puni comme organisateur de manifestation illicite celui qui :",
@@ -5755,7 +5755,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 431-9 vise aussi la déclaration frauduleuse destinée à tromper l’autorité, assimilée à l’organisation d’une manifestation non conforme.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Dissimulation du visage (contravention)",
     question:
         "À côté du délit de dissimulation du visage (art. 431-9-1 du Code Pénal.), une contravention de 5ᵉ classe (art. R.645-14 du Code Pénal.) peut viser :",
@@ -5770,7 +5770,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Lorsque le contexte est moins grave, l’infraction est requalifiée en contravention de 5ᵉ classe, toujours pour dissimulation illicite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Substances explosives",
     question: "L’article 322-11-1 du Code pénal réprime notamment :",
     options: [
@@ -5784,7 +5784,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette disposition vise les comportements préparatoires à des violences graves contre les personnes ou les biens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Procédures rapides",
     question:
         "L’article 431-8-1 du Code pénal permet, pour les délits commis à l’occasion d’attroupements :",
@@ -5799,7 +5799,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’attroupement étant qualifié de délit politique, le texte précise la compatibilité avec les procédures pénales rapides.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Provocation armée",
     question:
         "L’article 431-6 du Code pénal réprime la provocation directe à un attroupement armé. Lorsque cette provocation a été suivie d’effet, la peine maximale est :",
@@ -5813,7 +5813,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La peine est aggravée lorsque l’attroupement armé s’est effectivement produit à la suite de la provocation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Loi du 29 juillet 1881",
     question:
         "L’article 24 de la loi du 29 juillet 1881 est mobilisable lorsque :",
@@ -5828,7 +5828,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 24 réprime la provocation à certains crimes ou délits, ce qui peut concerner des faits commis lors d’attroupements.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Droit au respect de la vie privée",
     question:
         "La publication en presse écrite de détails intimes non justifiés par l’intérêt général constitue :",
@@ -5842,7 +5842,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La divulgation non autorisée d’éléments de la vie personnelle (adresse, santé, vie sentimentale…) engage la responsabilité de l’éditeur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Fausses nouvelles",
     question:
         "La publication de fausses nouvelles, au sens de la loi de 1881, suppose notamment :",
@@ -5857,7 +5857,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’infraction vise la diffusion de nouvelles inexactes ou falsifiées susceptibles de troubler l’ordre public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources et perquisitions",
     question:
         "Une perquisition dans les locaux d’un journal pour obtenir les sources d’un journaliste :",
@@ -5872,7 +5872,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le secret des sources est fortement protégé ; les perquisitions doivent être encadrées par un magistrat et justifiées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Personne responsable",
     question:
         "En matière de délits de presse, la personne responsable principale est en principe :",
@@ -5886,7 +5886,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le système de la loi de 1881 établit une hiérarchie des responsabilités, plaçant en tête le directeur de la publication.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délits racistes",
     question:
         "Pour certains délits de presse à caractère raciste ou discriminatoire, le délai de prescription est porté :",
@@ -5896,7 +5896,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le législateur a prolongé la prescription à un an pour tenir compte de la gravité particulière de ces infractions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Interventions policières",
     question:
         "Lorsqu’une enquête vise un média ou un journaliste, le policier doit notamment :",
@@ -5911,7 +5911,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La liberté de la presse et le secret des sources imposent aux forces de l’ordre un comportement particulièrement encadré.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitution – Norme suprême",
     question:
         "Dans l’ordre juridique français, la norme qui se situe au sommet de la hiérarchie des normes est :",
@@ -5921,7 +5921,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La Constitution est la norme suprême : toutes les lois et règlements doivent lui être conformes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitution – Norme suprême",
     question:
         "La supériorité de la Constitution sur la loi n’a de sens que si :",
@@ -5938,7 +5938,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Types de Constitution ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution",
     question: "Une Constitution dite « souple » est une Constitution qui :",
     options: [
@@ -5951,7 +5951,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Dans une Constitution souple, la procédure de révision est identique à celle des lois ordinaires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution",
     question: "Une Constitution est qualifiée de « rigide » lorsqu’elle :",
     options: [
@@ -5967,7 +5967,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Révision de la Constitution ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle",
     question:
         "Quel article de la Constitution de 1958 encadre la procédure de révision constitutionnelle ?",
@@ -5977,7 +5977,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 89 fixe la procédure de révision : initiative, adoption identique par les deux assemblées, puis référendum ou Congrès.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle",
     question:
         "En France, la révision de la Constitution doit d’abord être adoptée :",
@@ -5993,7 +5993,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Contrôle de constitutionnalité – principes ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de constitutionnalité – Principes",
     question:
         "Le contrôle de constitutionnalité des lois sert principalement à :",
@@ -6007,7 +6007,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le contrôle de constitutionnalité protège la suprématie de la Constitution et les droits fondamentaux qu’elle garantit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de constitutionnalité – Principes",
     question:
         "Dans un État à Constitution rigide, une loi contraire à la Constitution est :",
@@ -6023,7 +6023,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Modèles de contrôle ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Modèles de contrôle",
     question: "Le contrôle de constitutionnalité par voie d’exception est :",
     options: [
@@ -6036,7 +6036,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Par voie d’exception, tout juge saisi d’un litige peut refuser d’appliquer une loi qu’il estime inconstitutionnelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Modèles de contrôle",
     question:
         "Le modèle français de contrôle par le Conseil constitutionnel est un contrôle :",
@@ -6048,7 +6048,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Conseil constitutionnel – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel",
     question: "Le Conseil constitutionnel a été créé par la Constitution de :",
     options: ["1875", "1946", "1958"],
@@ -6057,7 +6057,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il s’agit d’une innovation majeure de la Ve République pour contrôler la conformité des lois à la Constitution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel",
     question:
         "Avant la promulgation d’une loi, le contrôle de constitutionnalité exercé par le Conseil constitutionnel est qualifié de :",
@@ -6071,7 +6071,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le contrôle a priori intervient avant l’entrée en vigueur de la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel",
     question:
         "En cas de censure d’une loi par le Conseil constitutionnel avant sa promulgation :",
@@ -6087,7 +6087,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- QPC – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Question prioritaire de constitutionnalité (QPC)",
     question:
         "La question prioritaire de constitutionnalité (QPC) est prévue par :",
@@ -6101,7 +6101,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 61-1 introduit la QPC, permettant de contester une loi déjà entrée en vigueur.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – généralités",
     question:
         "La QPC permet à un justiciable de soutenir qu’une disposition législative :",
@@ -6116,7 +6116,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La QPC vise la compatibilité de la loi avec les droits et libertés constitutionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – généralités",
     question: "La QPC est soulevée :",
     options: [
@@ -6131,7 +6131,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours juridictionnels – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Notion",
     question: "Les recours juridictionnels permettent à un individu de :",
     options: [
@@ -6144,7 +6144,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les recours juridictionnels sont les moyens offerts aux justiciables pour contester une décision ou une atteinte aux libertés devant une juridiction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Notion",
     question: "Les recours juridictionnels sont exercés devant :",
     options: [
@@ -6159,7 +6159,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours judiciaires – pénal ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours devant le juge pénal",
     question:
         "Lorsque l’atteinte à une liberté constitue une infraction, la victime peut saisir :",
@@ -6173,7 +6173,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Si les faits sont incriminés par le Code pénal, c’est la juridiction pénale qui sanctionne.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours devant le juge pénal",
     question: "L’article 431-1 du Code pénal incrimine notamment :",
     options: [
@@ -6189,7 +6189,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours administratifs (indemnité / REP) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Généralités",
     question: "Les juridictions administratives contrôlent principalement :",
     options: [
@@ -6203,7 +6203,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elles sont compétentes pour juger des actes administratifs et de la responsabilité de l’administration.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Indemnité",
     question:
         "Le recours en indemnité devant le juge administratif vise à obtenir :",
@@ -6217,7 +6217,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il s’agit d’un recours de pleine juridiction, visant à obtenir des dommages-intérêts.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Excès de pouvoir",
     question: "Le recours pour excès de pouvoir a pour objet principal :",
     options: [
@@ -6232,7 +6232,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours non juridictionnels – administratifs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours non juridictionnels – Administratifs",
     question: "Un recours gracieux est adressé :",
     options: [
@@ -6245,7 +6245,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le recours gracieux demande à l’autorité qui a pris la décision de la modifier ou de la retirer.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours non juridictionnels – Administratifs",
     question: "Un recours hiérarchique est adressé :",
     options: [
@@ -6260,7 +6260,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours non juridictionnels – politiques ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours à caractère politique",
     question: "Le droit de pétition permet principalement :",
     options: [
@@ -6274,7 +6274,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La pétition est un moyen d’expression politique, souvent collectif, adressé à une institution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours à caractère politique",
     question: "L’objection de conscience concerne traditionnellement :",
     options: [
@@ -6289,7 +6289,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Résistance à l’oppression ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Résistance à l’oppression",
     question: "La résistance à l’oppression est mentionnée dans :",
     options: [
@@ -6302,7 +6302,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 2 de la DDHC évoque le droit de résistance à l’oppression comme un droit naturel et imprescriptible.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Résistance à l’oppression",
     question:
         "Pour un policier, la notion de résistance à l’oppression rappelle notamment que :",
@@ -6319,7 +6319,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Défenseur des droits – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Généralités",
     question: "Le Défenseur des droits est :",
     options: [
@@ -6332,7 +6332,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le Défenseur des droits est une autorité indépendante, mentionnée dans la Constitution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Généralités",
     question: "Le Défenseur des droits est nommé pour une durée de :",
     options: [
@@ -6345,7 +6345,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Son mandat de 6 ans non renouvelable garantit son indépendance vis-à-vis des pouvoirs publics.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Généralités",
     question: "Le Défenseur des droits peut être saisi :",
     options: [
@@ -6360,7 +6360,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Défenseur des droits – Missions ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Missions",
     question: "Parmi les missions du Défenseur des droits figure :",
     options: [
@@ -6373,7 +6373,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le Défenseur des droits veille notamment aux droits de l’enfant et à leur respect.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Missions",
     question: "Le Défenseur des droits intervient aussi pour :",
     options: [
@@ -6386,7 +6386,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La lutte contre les discriminations est au cœur de ses missions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Déontologie sécurité",
     question:
         "En matière de sécurité, le Défenseur des droits veille notamment :",
@@ -6403,7 +6403,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CGLPL – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Contrôleur général des lieux de privation de liberté – Généralités",
     question: "Le Contrôleur général des lieux de privation de liberté est :",
@@ -6417,7 +6417,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Institué par la loi de 2007, le CGLPL est chargé de contrôler les lieux de privation de liberté.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Contrôleur général des lieux de privation de liberté – Compétence",
     question:
@@ -6435,7 +6435,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Organes internationaux – principe ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organes internationaux – Subsidiarité",
     question:
         "Avant de saisir un organe international de protection des droits de l’Homme, la personne doit en principe :",
@@ -6449,7 +6449,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est le principe de subsidiarité : les organes internationaux n’interviennent qu’en dernier ressort.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organes internationaux – Généralités",
     question: "La Cour européenne des droits de l’Homme (CEDH) siège :",
     options: ["À Strasbourg", "À Luxembourg", "À Genève"],
@@ -6458,7 +6458,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La CEDH contrôle le respect de la Convention européenne des droits de l’Homme par les États membres du Conseil de l’Europe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organes internationaux – Généralités",
     question: "La Cour de justice de l’Union européenne (CJUE) siège :",
     options: ["À Strasbourg", "À Luxembourg", "À Bruxelles"],
@@ -6472,7 +6472,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================================================
 
   // ---------- Constitution souple / rigide : effets ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution – Effets",
     question: "Dans un système de Constitution souple, la loi ordinaire :",
     options: [
@@ -6485,7 +6485,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La Constitution souple n’est pas protégée par une procédure de révision renforcée : la loi peut la remettre en cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution – Effets",
     question:
         "Dans un État à Constitution rigide, la protection des libertés publiques est en principe :",
@@ -6502,7 +6502,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Révision constitutionnelle : procédure ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle – Procédure",
     question:
         "En application de l’article 89, l’initiative de la révision constitutionnelle appartient :",
@@ -6516,7 +6516,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le projet de révision peut venir du Président sur proposition du Premier ministre ou des parlementaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle – Procédure",
     question:
         "Après le vote de la révision en termes identiques par les deux chambres, l’adoption définitive peut se faire :",
@@ -6533,7 +6533,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Contrôle par voie d’exception ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par voie d’exception",
     question:
         "Dans le contrôle par voie d’exception, lorsqu’un juge estime une loi inconstitutionnelle :",
@@ -6547,7 +6547,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le juge écarte la loi dans le cas concret, sans nécessairement l’annuler pour l’avenir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par voie d’exception",
     question: "Le contrôle par voie d’exception est qualifié de concret car :",
     options: [
@@ -6562,7 +6562,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Contrôle par une juridiction constitutionnelle ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par une juridiction constitutionnelle",
     question:
         "Dans le modèle concentré, la constitutionnalité des lois est contrôlée :",
@@ -6576,7 +6576,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le contrôle est centralisé : seule cette juridiction peut déclarer une loi inconstitutionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par une juridiction constitutionnelle",
     question:
         "L’effet principal d’une décision du Conseil constitutionnel déclarant une loi contraire à la Constitution (a priori) est :",
@@ -6592,7 +6592,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- QPC – conditions d’examen ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Conditions",
     question:
         "Pour qu’une juridiction transmette une QPC au Conseil d’État ou à la Cour de cassation, il faut notamment que :",
@@ -6606,7 +6606,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La QPC ne peut porter que sur une disposition ayant une incidence sur la solution du litige.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Conditions",
     question: "Parmi les conditions de transmission d’une QPC, on trouve :",
     options: [
@@ -6620,7 +6620,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Si le Conseil constitutionnel a déjà jugé la disposition conforme dans les mêmes circonstances, la QPC n’est pas transmise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Rôle des juridictions suprêmes",
     question:
         "Le Conseil d’État ou la Cour de cassation, saisis d’une QPC, exercent :",
@@ -6637,7 +6637,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- QPC – effets de la décision ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Effets",
     question:
         "Lorsqu’une disposition législative est déclarée inconstitutionnelle à l’occasion d’une QPC :",
@@ -6651,7 +6651,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La décision a une portée générale, même si le Conseil peut différer la date d’abrogation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Effets",
     question:
         "Après une déclaration d’inconstitutionnalité, une disposition similaire pourra être réintroduite si :",
@@ -6667,7 +6667,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours devant les juridictions judiciaires ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Juge pénal",
     question:
         "En matière pénale, la victime d’une atteinte à une liberté peut :",
@@ -6681,7 +6681,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La plainte et la constitution de partie civile permettent de déclencher des poursuites et de demander réparation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Juge civil",
     question: "Le juge civil peut être saisi notamment pour :",
     options: [
@@ -6696,7 +6696,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours judiciaires – actes administratifs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours judiciaires – Exception d’illégalité",
     question: "L’exception d’illégalité permet au juge judiciaire :",
     options: [
@@ -6710,7 +6710,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’acte est écarté dans l’affaire mais n’est pas formellement annulé pour tous.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours judiciaires – Emprise irrégulière",
     question:
         "Lorsque l’administration s’empare d’un bien privé sans respecter la procédure d’expropriation, on parle :",
@@ -6726,7 +6726,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Voie de fait ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voie de fait",
     question: "La voie de fait se caractérise notamment par :",
     options: [
@@ -6740,7 +6740,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La voie de fait suppose une gravité telle que l’acte ne peut se rattacher à aucun pouvoir administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voie de fait",
     question:
         "En cas de voie de fait, le juge compétent pour faire cesser l’atteinte et indemniser la victime est :",
@@ -6756,7 +6756,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours administratifs – Indemnité / REP ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Indemnité",
     question:
         "Dans le cadre d’un recours en indemnité, le juge administratif peut :",
@@ -6770,7 +6770,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est un recours de pleine juridiction qui porte sur la réparation financière du dommage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Excès de pouvoir",
     question:
         "Parmi les causes classiques d’illégalité d’un acte administratif, on trouve :",
@@ -6784,7 +6784,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Un acte pris par une autorité non compétente est illégal et peut être annulé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Excès de pouvoir",
     question: "Le détournement de pouvoir consiste pour l’administration à :",
     options: [
@@ -6799,7 +6799,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours administratifs – Libertés publiques ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Libertés publiques",
     question:
         "Lorsqu’un arrêté de police limite l’exercice d’une liberté publique, le juge administratif vérifie notamment :",
@@ -6815,7 +6815,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Responsabilité de l’État du fait des lois ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité de l’État du fait des lois",
     question:
         "La responsabilité de l’État du fait des lois peut être engagée notamment lorsque :",
@@ -6832,7 +6832,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Défenseur des droits – Saisine et pouvoirs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Saisine",
     question: "La saisine du Défenseur des droits est :",
     options: [
@@ -6845,7 +6845,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La saisine est simplifiée, gratuite et peut se faire par différents canaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Pouvoirs",
     question: "Le Défenseur des droits peut, dans le cadre de ses enquêtes :",
     options: [
@@ -6861,7 +6861,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CGLPL – Pouvoirs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CGLPL – Pouvoirs d’enquête",
     question:
         "Le Contrôleur général peut se rendre dans un lieu de privation de liberté :",
@@ -6875,7 +6875,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi lui donne un droit de visite très large, sous réserve de certains secrets protégés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CGLPL – Pouvoirs d’enquête",
     question:
         "En cas d’atteinte grave aux droits fondamentaux constatée par le CGLPL, celui-ci peut :",
@@ -6891,7 +6891,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Organes internationaux – Comité discrimination raciale ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "ONU – Comité discrimination raciale",
     question:
         "Le Comité pour l’élimination de la discrimination raciale contrôle l’application :",
@@ -6906,7 +6906,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ce comité, créé en 1969, veille au respect de cette convention par les États parties.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "ONU – Comité discrimination raciale",
     question:
         "Le recours individuel devant le Comité pour l’élimination de la discrimination raciale suppose :",
@@ -6922,7 +6922,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CEDH – Saisine ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Saisine",
     question:
         "Une requête individuelle devant la Cour européenne des droits de l’Homme peut être introduite par :",
@@ -6935,7 +6935,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: "La CEDH est largement ouverte aux requêtes individuelles.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Effets",
     question: "En cas de condamnation de la France par la CEDH :",
     options: [
@@ -6951,7 +6951,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CJUE – Renvoi préjudiciel ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CJUE – Renvoi préjudiciel",
     question: "Le renvoi préjudiciel à la CJUE permet :",
     options: [
@@ -6971,7 +6971,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================================================
 
   // ---------- Hiérarchie des normes & libertés ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes – Libertés",
     question:
         "Dans la hiérarchie des normes, le « bloc de constitutionnalité » comprend notamment :",
@@ -6986,7 +6986,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces textes ont valeur constitutionnelle et protègent directement les droits et libertés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes – Libertés",
     question:
         "Lorsqu’un règlement de police porte atteinte à une liberté publique, le juge administratif contrôle :",
@@ -7003,7 +7003,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Jurisprudence Benjamin – Police & libertés ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police administrative & libertés – Benjamin",
     question:
         "L’arrêt CE, 19 mai 1933, Benjamin impose à l’autorité de police :",
@@ -7018,7 +7018,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le juge impose un contrôle strict de nécessité et de proportionnalité des mesures de police.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police administrative & libertés – Benjamin",
     question:
         "Dans le cadre d’un recours contre une interdiction de manifestation, le juge administratif vérifie notamment si :",
@@ -7035,7 +7035,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- QPC vs contrôle a priori ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC & contrôle a priori",
     question:
         "Le contrôle a priori du Conseil constitutionnel et la QPC se distinguent notamment par :",
@@ -7050,7 +7050,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le contrôle a priori intervient avant la promulgation, la QPC porte sur une loi déjà en vigueur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC & contrôle a priori",
     question:
         "La QPC a renforcé la protection des libertés fondamentales car elle permet :",
@@ -7066,7 +7066,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Articulation QPC / conventions internationales ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC & conventions internationales",
     question:
         "Face à une loi contraire à la fois à la Constitution et à la CEDH, un justiciable peut invoquer :",
@@ -7083,7 +7083,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Recours administratifs d’urgence – Référé-liberté ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Référé-liberté",
     question: "Le référé-liberté permet au juge administratif de :",
     options: [
@@ -7097,7 +7097,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Introduit par la loi de 2000, il offre un outil de protection rapide des libertés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Référé-liberté",
     question: "Pour qu’un référé-liberté soit recevable, il faut notamment :",
     options: [
@@ -7113,7 +7113,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Voie de fait / compétence judiciaire vs administrative ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voie de fait – Compétence",
     question: "La qualification de voie de fait emporte principalement :",
     options: [
@@ -7129,7 +7129,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Responsabilité de l’État du fait des lois – Conditions détaillées ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité de l’État du fait des lois – Conditions",
     question:
         "Selon la jurisprudence La Fleurette, la responsabilité de l’État du fait d’une loi suppose que :",
@@ -7146,7 +7146,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Défenseur des droits & police – Difficile ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits & Police",
     question:
         "En matière de déontologie des forces de sécurité, le Défenseur des droits peut :",
@@ -7160,7 +7160,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il exerce un pouvoir d’influence important mais ne se substitue pas aux autorités disciplinaires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits & Police",
     question:
         "Pour un policier, la saisine du Défenseur des droits par un citoyen implique :",
@@ -7177,7 +7177,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CGLPL & locaux de garde à vue – Difficile ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CGLPL & Garde à vue",
     question:
         "Lors d’une visite de locaux de garde à vue, le CGLPL porte une attention particulière :",
@@ -7194,7 +7194,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CEDH – Recevabilité & procédure – Difficile ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Recevabilité",
     question:
         "Pour qu’une requête soit recevable devant la CEDH, il faut notamment :",
@@ -7209,7 +7209,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le principe de subsidiarité impose d’utiliser d’abord les recours internes avant de saisir la CEDH.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Effets en droit interne",
     question:
         "Les condamnations de la France par la CEDH ont pour conséquence :",
@@ -7226,7 +7226,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CJUE & données personnelles / police – Difficile ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CJUE & Libertés – Données",
     question:
         "Les décisions de la CJUE en matière de protection des données personnelles influencent :",
@@ -7243,7 +7243,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- Synthèse – Garanties multiples des libertés ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse – Garanties des libertés",
     question:
         "La protection des libertés publiques en France repose notamment sur :",
@@ -7258,7 +7258,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est l’articulation de ces différents mécanismes qui assure une protection effective des libertés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel texte du Code civil consacre expressément le droit au respect de la vie privée ?",
@@ -7272,7 +7272,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 9 du Code civil énonce que « chacun a droit au respect de sa vie privée » et sert de base à la protection civile de ce droit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — principes",
     question:
         "Tout individu a droit au respect de sa personne et ne doit pas faire l’objet de discriminations notamment en raison :",
@@ -7287,7 +7287,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte liste de nombreux critères protégés : origine, race, religion, sexe, handicap, état de santé, situation de famille, mœurs, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — principes",
     question:
         "Les forces de sécurité doivent connaître l’arsenal législatif en matière de discrimination afin de :",
@@ -7302,7 +7302,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours souligne ces trois volets : prévention, constatation et répression.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — textes",
     question:
         "Quels articles du Code de la sécurité intérieure rappellent la protection et le respect des personnes, notamment privées de liberté ?",
@@ -7316,7 +7316,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces dispositions du code de déontologie sont explicitement mentionnées dans le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — textes",
     question: "La loi du 28 mai 1971 concerne notamment :",
     options: [
@@ -7330,7 +7330,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette loi consacre l’adhésion de la France à cette convention internationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — textes",
     question: "Le Défenseur des droits a été créé par :",
     options: [
@@ -7347,7 +7347,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ================== NIVEAU MOYEN ==================
   // --------- CODE PÉNAL — DÉFINITION GÉNÉRALE ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — définition",
     question:
         "Selon l’article 225-1 du Code pénal, constitue une discrimination :",
@@ -7362,7 +7362,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 225-1 dresse une liste très large de critères prohibés (origine, sexe, situation de famille, apparence physique, état de santé, handicap, opinions, religion, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — définition",
     question:
         "L’article 225-1-1 du Code pénal ajoute à la définition de la discrimination :",
@@ -7377,7 +7377,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 225-1-1 vise précisément les discriminations en lien avec le harcèlement sexuel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — définition",
     question:
         "L’article 225-1-2 du Code pénal vise les discriminations liées :",
@@ -7394,7 +7394,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- DISCRIMINATIONS PAR UN FONCTIONNAIRE ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — fonctionnaires",
     question:
         "L’article 432-7 du Code pénal sanctionne la discrimination commise :",
@@ -7409,7 +7409,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 432-7 vise les discriminations commises dans l’exercice ou à l’occasion des fonctions ou de la mission de service public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — fonctionnaires",
     question:
         "Selon l’article 432-7 du Code pénal, la discrimination commise par un fonctionnaire est constituée notamment lorsqu’elle consiste :",
@@ -7424,7 +7424,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte cite précisément ces deux comportements comme exemples de discrimination réprimée par l’article 432-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — fonctionnaires",
     question:
         "La peine encourue par un fonctionnaire pour une discrimination au sens de l’article 432-7 est :",
@@ -7440,7 +7440,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- DISCRIMINATIONS PAR UN PARTICULIER ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — particuliers",
     question:
         "L’article 225-2 du Code pénal réprime notamment, lorsqu’ils sont fondés sur un critère discriminatoire, les faits consistant :",
@@ -7455,7 +7455,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 225-2 vise six situations principales, dont refus de fournir un bien ou un service, refus d’embauche, licenciement, conditions discriminatoires, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — particuliers",
     question:
         "Parmi les comportements suivants, lequel peut constituer une discrimination au sens de l’article 225-2 ?",
@@ -7472,7 +7472,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- AUTRES INFRACTIONS & ASSOCIATIONS ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres infractions",
     question:
         "Le port ou l’exhibition d’uniformes ou emblèmes rappelant ceux des responsables de crimes contre l’humanité est :",
@@ -7486,7 +7486,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet article interdit le port ou l’exhibition de tels uniformes ou emblèmes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres infractions",
     question: "L’article 226-19 du Code pénal réprime notamment :",
     options: [
@@ -7500,7 +7500,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-19 interdit la constitution de certains fichiers sensibles en dehors des exceptions légales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Associations",
     question: "Les associations de lutte contre les discriminations peuvent :",
     options: [
@@ -7516,7 +7516,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- LOI SUR LA PRESSE ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "La diffamation à caractère raciste, antisémite, sexiste ou homophobe est réprimée par :",
@@ -7530,7 +7530,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 32 de la loi sur la presse vise la diffamation à raison de ces critères.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "L’injure à caractère raciste, antisémite, sexiste ou homophobe est punie en principe :",
@@ -7544,7 +7544,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 33 de la loi de 1881 prévoit cette peine, portée à trois ans et 75 000 € si l’auteur est dépositaire de l’autorité publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "Les provocations à la discrimination, à la haine ou à la violence à caractère raciste ou homophobe sont visées par :",
@@ -7558,7 +7558,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet article vise les provocations à la discrimination, à la haine ou à la violence à l’égard de certains groupes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "Les infractions prévues par la loi du 29 juillet 1881 doivent en principe être commises :",
@@ -7574,7 +7574,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- DROIT DU TRAVAIL — DISCRIMINATION ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "La loi du 13 juillet 1983 dite « loi Roudy » est notamment connue pour :",
@@ -7589,7 +7589,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi Roudy organise l’égalité professionnelle et renforce les moyens d’action en justice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "La loi du 16 novembre 2001 en matière de discrimination au travail :",
@@ -7604,7 +7604,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette loi renforce la lutte contre les discriminations, y compris les discriminations indirectes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "L’article L. 1132-1 du Code du travail pose le principe selon lequel :",
@@ -7619,7 +7619,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet article énonce un principe général d’interdiction des discriminations en matière d’emploi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question: "L’article L. 1132-2 du Code du travail protège le salarié :",
     options: [
@@ -7632,7 +7632,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il interdit toute sanction, licenciement ou mesure discriminatoire en raison de l’exercice normal du droit de grève.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question: "L’article L. 1132-3 du Code du travail protège :",
     options: [
@@ -7645,7 +7645,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Aucune sanction ne peut être prise contre un salarié pour ce motif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "L’article L. 1142-1 du Code du travail prohibe les discriminations fondées :",
@@ -7662,7 +7662,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- HARCÈLEMENT — PÉNAL & TRAVAIL ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement sexuel",
     question:
         "Selon l’article 222-33 du Code pénal, le harcèlement sexuel consiste notamment à :",
@@ -7677,7 +7677,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 222-33 vise ces comportements répétés et assimile aussi la pression grave en vue d’obtenir un acte sexuel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement sexuel",
     question: "Le Code du travail (article L. 1153-1) :",
     options: [
@@ -7691,7 +7691,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne la protection des salariés victimes ou témoins contre les mesures de rétorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement moral",
     question:
         "L’article 222-33-2 du Code pénal définit le harcèlement moral comme des propos ou comportements répétés ayant pour effet :",
@@ -7706,7 +7706,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est la définition donnée par le texte, assortie de peines pénales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement moral",
     question:
         "En matière de fonction publique, les articles L. 133-1 et L. 133-2 du Code général de la fonction publique prévoient que :",
@@ -7723,7 +7723,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ================== NIVEAU DIFFICILE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discrimination — éléments constitutifs",
     question:
         "Pour caractériser une discrimination au sens pénal, les enquêteurs doivent notamment établir :",
@@ -7738,7 +7738,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise le rôle des enquêteurs : identifier critère, fait discriminatoire et lien entre les deux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discrimination indirecte",
     question:
         "La discrimination indirecte, en droit du travail, correspond à :",
@@ -7753,7 +7753,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi du 16 novembre 2001 et la loi de 2008 définissent la discrimination indirecte de cette manière.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Charge de la preuve",
     question:
         "En matière de discrimination en droit du travail, la charge de la preuve :",
@@ -7768,7 +7768,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les lois Roudy, 2001 et 2008 prévoient un aménagement de la preuve, obligeant l’employeur à justifier par des éléments objectifs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse — publicité",
     question:
         "Pour qu’une infraction de presse à caractère discriminatoire soit constituée (diffamation, injure, provocation), il faut notamment :",
@@ -7783,7 +7783,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1881 suppose une publicité des propos (presse, réunion publique, moyen électronique, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rôle opérationnel du policier",
     question:
         "En pratique, pour un fonctionnaire de police, le non-respect du principe de non-discrimination peut entraîner :",
@@ -7798,7 +7798,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
   // ---------- RÉFLEXE OPÉRATIONNEL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe opérationnel",
     question:
         "Avant toute mesure privative de liberté, le policier devrait notamment se demander :",
@@ -7813,7 +7813,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le fascicule conclut sur ces trois questions-clés à se poser systématiquement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel article de la Déclaration universelle des droits de l’Homme (ONU) protège la vie privée, la famille, le domicile et la correspondance ?",
@@ -7823,7 +7823,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 12 de la Déclaration universelle des droits de l’Homme protège contre les immixtions arbitraires dans la vie privée, la famille, le domicile ou la correspondance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel article de la Convention européenne des droits de l’Homme consacre le droit au respect de la vie privée et familiale, du domicile et de la correspondance ?",
@@ -7833,7 +7833,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 8 de la CEDH protège le droit au respect de la vie privée et familiale, du domicile et de la correspondance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "La loi du 17 juillet 1970 a principalement pour objet de renforcer :",
@@ -7847,7 +7847,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi du 17 juillet 1970 tend à renforcer la garantie des droits individuels, notamment par la protection de la vie privée sur les plans pénal et civil.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel article de la Déclaration des droits de l’Homme et du citoyen est explicitement utilisé par le Conseil constitutionnel pour rattacher le droit au respect de la vie privée ?",
@@ -7857,7 +7857,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le Conseil constitutionnel rattache le droit au respect de la vie privée à l’article 2 de la Déclaration de 1789, qui garantit les droits naturels de l’homme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Le Conseil constitutionnel, dans sa décision du 18 janvier 1995, relie les atteintes les plus graves au droit au respect de la vie privée à :",
@@ -7871,7 +7871,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En 1995, le Conseil constitutionnel indique que la méconnaissance grave du droit à la vie privée peut porter atteinte à la liberté individuelle, compétence du juge judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Le droit au respect de la vie privée bénéficie d’une double protection :",
@@ -7885,7 +7885,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi du 17 juillet 1970 organise la protection de la vie privée à la fois sur le plan pénal (infractions) et sur le plan civil (action en responsabilité et mesures d’urgence).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vie privée - principe",
     question:
         "Les juridictions françaises ont une conception de la vie privée qui est :",
@@ -7899,7 +7899,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La jurisprudence retient une conception large de la vie privée : vie sentimentale, familiale, santé, patrimoine, convictions, loisirs, image, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vie privée - principe",
     question:
         "La divulgation de faits relevant de la vie privée est licite uniquement si :",
@@ -7914,7 +7914,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Sans consentement ou notoriété publique des faits, la divulgation d’éléments de vie privée est en principe illicite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vie privée - principe",
     question:
         "Pour un policier, toute intervention (contrôle, fouille, captation d’images…) doit respecter :",
@@ -7930,7 +7930,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- VIDÉOPROTECTION : OBJECTIFS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "La vidéoprotection a été initialement autorisée par la loi d’orientation et de programmation relative à la sécurité du :",
@@ -7940,7 +7940,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi du 21 janvier 1995 a introduit le recours à la vidéoprotection, anciennement appelée vidéosurveillance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les dispositions relatives à la vidéoprotection figurent principalement aux articles :",
@@ -7954,7 +7954,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le titre V du Code de la sécurité intérieure (articles L. 251-1 et suivants) encadre la vidéoprotection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Parmi les finalités suivantes, laquelle fait partie des objectifs de la vidéoprotection sur la voie publique ?",
@@ -7969,7 +7969,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La vidéoprotection vise notamment la prévention des atteintes à la sécurité des personnes et des biens dans les lieux exposés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "La vidéoprotection peut être utilisée pour constater les infractions :",
@@ -7983,7 +7983,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Parmi ses objectifs, la vidéoprotection permet la constatation des infractions aux règles de la circulation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les opérations de vidéoprotection ne doivent pas permettre de visualiser :",
@@ -7997,7 +7997,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 251-3 du Code de la sécurité intérieure interdit de filmer l’intérieur des immeubles d’habitation et, de façon spécifique, leurs entrées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Des systèmes de vidéoprotection peuvent-ils être installés dans des établissements recevant du public (magasins, gares, etc.) ?",
@@ -8011,7 +8011,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit la possibilité de vidéoprotection dans des lieux ouverts au public particulièrement exposés aux risques d’agression ou de vol.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les commerçants peuvent mettre en œuvre un système de vidéoprotection sur la voie publique :",
@@ -8025,7 +8025,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Des commerçants peuvent protéger les abords immédiats de leurs installations sous réserve d’une autorisation préfectorale, après information du maire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Dans chaque département, la commission compétente en matière de vidéoprotection est :",
@@ -8039,7 +8039,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette commission, présidée par un magistrat honoraire ou une personnalité qualifiée, donne un avis et contrôle les dispositifs de vidéoprotection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "La durée maximale de conservation des images de vidéoprotection, hors nécessité de procédure pénale, est en principe limitée à :",
@@ -8049,7 +8049,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 252-5 CSI prévoit que les enregistrements ne peuvent être conservés au-delà d’un délai fixé par l’autorisation, sans dépasser un mois, sauf besoin d’une procédure pénale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Une autorisation de vidéoprotection est en principe délivrée pour une durée de :",
@@ -8065,7 +8065,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- PROTECTION PÉNALE DE LA VIE PRIVÉE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question: "L’article 226-1 du Code pénal réprime notamment le fait de :",
     options: [
@@ -8078,7 +8078,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-1 sanctionne la captation, l’enregistrement ou la transmission de paroles prononcées à titre privé ou confidentiel, sans consentement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Filmer, sans son consentement, une personne se trouvant dans un lieu privé constitue :",
@@ -8092,7 +8092,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fixation de l’image d’une personne dans un lieu privé sans son accord est incriminée par l’article 226-1 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question: "L’article 226-2 du Code pénal concerne principalement :",
     options: [
@@ -8106,7 +8106,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-2 incrimine la conservation, l’utilisation ou la diffusion d’un enregistrement réalisé en violation de l’article 226-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "La diffusion, sans accord, de vidéos intimes à caractère sexuel d’une personne est appelée :",
@@ -8120,7 +8120,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-2-1 du Code pénal réprime cette pratique, souvent appelée pornodivulgation ou revenge porn.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "L’article 226-3-1 du Code pénal réprime le fait d’apercevoir les parties intimes d’une personne à son insu. Il s’agit de :",
@@ -8130,7 +8130,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise le voyeurisme, défini comme le fait d’user de tout moyen pour apercevoir les parties intimes d’une personne sans son consentement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question: "L’article 226-8 du Code pénal vise notamment :",
     options: [
@@ -8146,7 +8146,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CAMÉRAS PIÉTONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "L’article L. 241-1 du Code de la sécurité intérieure autorise l’usage de caméras individuelles par :",
@@ -8161,7 +8161,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les caméras piétons sont prévues pour les forces de sécurité étatiques dans leurs missions de prévention et de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Les enregistrements des caméras piétons peuvent être mis en œuvre :",
@@ -8175,7 +8175,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les caméras individuelles peuvent être utilisées en tous lieux, y compris dans des lieux privés, pour les finalités prévues par la loi (prévention incidents, constat des infractions, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Parmi les finalités suivantes, laquelle est expressément visée pour les caméras piétons ?",
@@ -8189,7 +8189,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les caméras individuelles visent notamment la prévention des incidents, le constat des infractions et la formation des agents.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question: "Les caméras piétons doivent en principe être :",
     options: [
@@ -8204,7 +8204,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- PROTECTION CIVILE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question:
         "L’article 1240 du Code civil (ancien 1382) permet à une victime d’atteinte à la vie privée d’agir :",
@@ -8218,7 +8218,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 1240 permet d’engager la responsabilité civile de l’auteur d’un dommage, y compris en cas d’atteinte à la vie privée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question: "L’article 9, alinéa 2, du Code civil permet au juge :",
     options: [
@@ -8232,7 +8232,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet alinéa permet des mesures comme le séquestre, la saisie ou d’autres mesures en référé pour faire cesser l’atteinte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question: "Le droit au respect de la vie privée s’étend :",
     options: [
@@ -8245,7 +8245,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La jurisprudence protège l’image et la mémoire des personnes décédées, au bénéfice des proches.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question:
         "En cas d’urgence, le juge compétent pour ordonner des mesures de remise en état en matière d’atteinte à la vie privée est :",
@@ -8261,7 +8261,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SECRET DES CORRESPONDANCES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question: "Le secret des correspondances protège en principe :",
     options: [
@@ -8275,7 +8275,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise les lettres, courriels, appels, messages électroniques, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question: "L’article 226-15 du Code pénal incrimine notamment :",
     options: [
@@ -8289,7 +8289,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-15 réprime l’atteinte au secret des correspondances commise par des particuliers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question:
         "L’article 432-9 du Code pénal concerne l’atteinte au secret des correspondances commise par :",
@@ -8303,7 +8303,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 432-9 vise les atteintes commises par des fonctionnaires ou personnes chargées d’une mission de service public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question: "Le secret des correspondances peut être légalement limité :",
     options: [
@@ -8318,7 +8318,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- NOTION DE DOMICILE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Selon la Cour de cassation, le domicile est le lieu où une personne :",
@@ -8332,7 +8332,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La définition jurisprudentielle vise le lieu où la personne a le droit de se dire chez elle, quel que soit le titre juridique et l’affectation des locaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Parmi les lieux suivants, lequel est généralement considéré comme un domicile au sens pénal ?",
@@ -8346,7 +8346,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La chambre d’hôtel constitue un domicile pendant la période d’occupation, à la différence de la cour non close ou du bloc opératoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Un véhicule aménagé pour l’habitation et servant effectivement de résidence est :",
@@ -8360,7 +8360,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le véhicule aménagé pour l’habitation peut être considéré comme domicile pour la protection pénale du domicile.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Parmi les lieux suivants, lequel n’est en principe pas considéré comme un domicile ?",
@@ -8376,7 +8376,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- VIOLATION DE DOMICILE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Violation de domicile",
     question:
         "L’article 226-4 du Code pénal réprime la violation de domicile commise par :",
@@ -8390,7 +8390,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-4 vise l’introduction ou le maintien dans le domicile d’autrui par manœuvres, menaces, voies de fait ou contrainte, hors les cas prévus par la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Violation de domicile",
     question:
         "L’article 432-8 du Code pénal réprime la violation de domicile commise par :",
@@ -8406,7 +8406,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- FOUILLE DES VÉHICULES (PRINCIPES) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question: "En principe, un véhicule non aménagé pour l’habitation est :",
     options: [
@@ -8420,7 +8420,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fouille d’un véhicule n’est pas une perquisition domiciliaire mais porte atteinte à la vie privée et doit respecter le Code de procédure pénale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Les visites de véhicules sur réquisitions écrites du procureur de la République sont encadrées par :",
@@ -8434,7 +8434,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 78-2-2 CPP encadre les visites de véhicules, inspections de bagages et visites de navires sur réquisitions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Lorsqu’un véhicule est spécialement aménagé pour l’habitation et utilisé comme résidence, sa visite doit respecter :",
@@ -8451,7 +8451,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ===================== NIVEAU MOYENNE =====================
   // ---------- VIDÉOPROTECTION : AUTORISATION & CONTRÔLE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Qui délivre l’autorisation d’installation d’un système de vidéoprotection sur la voie publique (hors défense nationale) ?",
@@ -8466,7 +8466,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 252-1 CSI confie cette compétence au préfet (ou préfet de police à Paris), après avis de la commission départementale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "En cas d’urgence liée à un risque d’actes de terrorisme, le préfet peut :",
@@ -8481,7 +8481,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 252-6 CSI permet une autorisation provisoire sans avis préalable de la commission, pour quatre mois au maximum.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les membres de la commission départementale de vidéoprotection peuvent accéder aux lieux équipés de caméras :",
@@ -8495,7 +8495,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 253-3 CSI encadre cet accès, avec information du procureur et garanties pour les locaux privés professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Le refus d’un responsable de locaux privés de laisser entrer la commission départementale de vidéoprotection :",
@@ -8510,7 +8510,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En cas d’opposition, la visite ne peut avoir lieu qu’après autorisation du juge des libertés et de la détention (article L. 253-3 CSI).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Le fait d’entraver l’action de la commission départementale de vidéoprotection est puni de :",
@@ -8524,7 +8524,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 254-1 CSI prévoit cette sanction pénale en cas d’entrave à la commission.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Le préfet peut ordonner la fermeture d’un établissement ouvert au public équipé d’un système de vidéoprotection sans autorisation pour :",
@@ -8541,7 +8541,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- CAMÉRAS PIÉTONS : PRÉCISIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Les agents peuvent accéder aux enregistrements des caméras piétons :",
@@ -8556,7 +8556,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les agents ne peuvent consulter les images que pour des finalités strictes (recherche d’auteurs, prévention, comptes rendus fidèles).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Les personnes filmées par une caméra piéton doivent, en principe :",
@@ -8573,7 +8573,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- PROTECTION PÉNALE : DÉTAILS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Pour qu’il y ait atteinte à l’intimité de la vie privée par captation de paroles (article 226-1 CP), il faut que les paroles soient :",
@@ -8587,7 +8587,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’incrimination vise les paroles prononcées dans un cadre privé ou confidentiel, non destinées au public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "L’infraction de conservation ou de diffusion d’un enregistrement illicite (article 226-2 CP) est :",
@@ -8602,7 +8602,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-2 sanctionne l’exploitation d’un enregistrement obtenu en violation de l’article 226-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Le voyeurisme réprimé par l’article 226-3-1 CP suppose notamment que :",
@@ -8617,7 +8617,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise le fait d’apercevoir les parties intimes cachées à la vue des tiers, à l’insu ou sans le consentement de la personne.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Les hypertrucages (deepfakes) représentant une personne sans indication claire de leur caractère artificiel peuvent être poursuivis sur le fondement de :",
@@ -8633,7 +8633,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SECRET DES CORRESPONDANCES : DÉTAILS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question:
         "L’atteinte au secret des correspondances (article 226-15 CP) réprime notamment :",
@@ -8647,7 +8647,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 226-15 vise aussi les correspondances émises, transmises ou reçues par voie électronique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question:
         "L’article 432-9 CP aggrave l’atteinte au secret des correspondances lorsque l’auteur est :",
@@ -8664,7 +8664,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- INTERCEPTIONS JUDICIAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Les interceptions de correspondances émises par la voie des télécommunications en droit commun sont encadrées par les articles :",
@@ -8678,7 +8678,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les articles 100 et suivants CPP encadrent les interceptions ordonnées par le juge d’instruction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Pour ordonner une interception téléphonique en droit commun, il faut notamment que :",
@@ -8692,7 +8692,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les interceptions ne sont possibles que pour des infractions d’une certaine gravité (peine minimale de trois ans).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Les interceptions judiciaires décidées par le juge d’instruction sont autorisées pour une durée maximale de :",
@@ -8706,7 +8706,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La décision doit être écrite et motivée, valable quatre mois, renouvelable dans les mêmes conditions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Lorsqu’une interception vise le cabinet ou le domicile d’un avocat, il faut :",
@@ -8722,7 +8722,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- INTERCEPTIONS CRIMINALITÉ ORGANISÉE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée",
     question:
         "L’article 706-95 CPP permet, pour la criminalité organisée, d’autoriser des interceptions de correspondances :",
@@ -8737,7 +8737,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le JLD peut autoriser interceptions, enregistrements et transcriptions pour certaines infractions graves.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée",
     question: "L’article 706-95-1 CPP permet notamment :",
     options: [
@@ -8753,7 +8753,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- DOMICILE : INTRODUCTIONS HORS HEURES LÉGALES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - interventions",
     question:
         "Les heures légales pour les perquisitions domiciliaires sont en principe fixées entre :",
@@ -8767,7 +8767,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 59 CPP fixe les heures légales pour les perquisitions, sauf exceptions prévues par la loi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - interventions",
     question:
         "Une introduction dans un domicile est possible même en dehors des heures légales notamment :",
@@ -8781,7 +8781,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’appel au secours, les cris ou hurlements justifient l’entrée, même si l’alerte se révèle ensuite infondée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - interventions",
     question:
         "L’obligation de porter assistance à personne en péril (article 223-6 CP) peut :",
@@ -8798,7 +8798,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- FOUILLE DE VÉHICULES : RÉQUISITIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Sur réquisitions écrites du procureur (article 78-2-2 CPP), la durée maximale des opérations (visites de véhicules, inspections de bagages) est en principe de :",
@@ -8812,7 +8812,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La durée est de vingt-quatre heures maximum, renouvelable une fois par décision motivée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Lorsqu’un véhicule est en circulation, la visite sur réquisitions (78-2-2 CPP) :",
@@ -8827,7 +8827,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte impose la présence du conducteur et la durée strictement nécessaire aux opérations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "En cas de visite d’un véhicule à l’arrêt (78-2-2 CPP), si le conducteur ou le propriétaire est absent :",
@@ -8844,7 +8844,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- FOUILLE DE VÉHICULES : FLAGRANCE & SÉCURITÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question: "L’article 78-2-3 CPP autorise la visite de véhicules :",
     options: [
@@ -8858,7 +8858,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La visite peut être effectuée lorsque des raisons plausibles de soupçonner un crime ou délit flagrant existent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "L’article 78-2-4 CPP permet la visite de véhicules et la fouille de bagages :",
@@ -8876,7 +8876,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ---------- EXCEPTIONS, RENSEIGNEMENT, GARANTIES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Renseignement",
     question:
         "La loi du vingt-quatre juillet deux mille quinze relative au renseignement a instauré :",
@@ -8891,7 +8891,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cette loi encadre les interceptions de sécurité et les accès aux données de connexion par un régime d’autorisation du Premier ministre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Renseignement",
     question:
         "L’autorisation d’une interception de sécurité au profit des services de renseignement est délivrée :",
@@ -8905,7 +8905,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les articles L. 821-2 et L. 821-4 CSI prévoient une décision écrite et motivée du Premier ministre pour une durée limitée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Renseignement",
     question:
         "La Commission nationale de contrôle des techniques de renseignement (CNCTR) a pour mission principale de :",
@@ -8922,7 +8922,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- DOMICILE & LIEUX PROTÉGÉS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - lieux protégés",
     question: "Les locaux diplomatiques sont protégés car :",
     options: [
@@ -8935,7 +8935,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La convention de Vienne prévoit l’inviolabilité des locaux diplomatiques, les forces de l’ordre ne pouvant y pénétrer sans accord.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - lieux protégés",
     question: "Les bâtiments de l’Assemblée nationale et du Sénat :",
     options: [
@@ -8951,7 +8951,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- ENQUÊTE PRÉLIMINAIRE & CONSENTEMENT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire",
     question:
         "En enquête préliminaire, la fouille d’un véhicule non assimilé à un domicile :",
@@ -8966,7 +8966,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La jurisprudence exige un consentement consigné, faute de quoi la fouille peut être assimilée à une perquisition irrégulière.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire",
     question:
         "Lorsque la fouille d’un véhicule en enquête préliminaire est assimilée à une perquisition, l’absence de consentement régulier :",
@@ -8983,7 +8983,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- MANIFESTATIONS & VÉHICULES (78-2-5) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations",
     question:
         "L’article 78-2-5 CPP autorise, sur réquisitions du procureur, lors d’une manifestation sur la voie publique :",
@@ -8998,7 +8998,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte exclut les contrôles d’identité du dispositif et cible la recherche de porteurs d’armes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations",
     question:
         "Dans le cadre de l’article 78-2-5 CPP, les contrôles d’identité :",
@@ -9014,7 +9014,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- VIE PRIVÉE & POLICE : RÉFLEXE OPÉRATIONNEL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe policier",
     question:
         "Avant toute mesure susceptible d’atteindre la vie privée (domicile, véhicule, correspondances, images), le policier devrait se demander en priorité :",
@@ -9029,7 +9029,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le fascicule insiste sur trois questions : base légale, respect des garanties procédurales, nécessité/proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe policier",
     question:
         "Si un agent a un doute sur la légalité d’une mesure portant atteinte à la vie privée, il devrait :",
@@ -9043,7 +9043,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte recommande de réévaluer ou d’escalader la décision en cas d’incertitude sur la base légale ou la proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - principes",
     question:
         "Selon l’article 1 de la loi Informatique et Libertés, l’informatique doit être :",
@@ -9057,7 +9057,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 1 de la loi n° 78-17 du 6 janvier 1978 précise que l’informatique doit être au service de chaque citoyen.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - principes",
     question:
         "La loi Informatique et Libertés précise que l’informatique ne doit pas porter atteinte :",
@@ -9072,7 +9072,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise expressément l’identité humaine, les droits de l’homme, la vie privée et les libertés individuelles ou publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - principes",
     question: "La loi du 20 juin 2018 a notamment pour objectif :",
     options: [
@@ -9085,7 +9085,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi n° 2018-493 adapte la loi Informatique et Libertés au règlement général sur la protection des données (RGPD).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - rôle",
     question: "La CNIL est avant tout le régulateur français :",
     options: [
@@ -9098,7 +9098,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La CNIL est l’autorité chargée de réguler la protection des données personnelles en France.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - rôle",
     question: "La CNIL accompagne les professionnels :",
     options: [
@@ -9112,7 +9112,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle conseille les responsables de traitement pour respecter les règles de protection des données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - rôle",
     question: "La CNIL aide les particuliers à :",
     options: [
@@ -9127,7 +9127,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- STATUT & COMPOSITION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "La CNIL est composée de :",
     options: [
@@ -9140,7 +9140,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que la CNIL compte 18 membres, tous nommés pour un mandat de cinq ans.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "Parmi les membres de la CNIL, on trouve notamment :",
     options: [
@@ -9153,7 +9153,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La CNIL comprend des députés, des sénateurs, des représentants du CESE et des membres des hautes juridictions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "Le Défenseur des droits siège à la CNIL :",
     options: [
@@ -9166,7 +9166,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le Défenseur des droits participe aux travaux de la CNIL avec une voix consultative.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question:
         "Depuis la loi du 4 août 2014 pour l’égalité réelle entre les femmes et les hommes, la CNIL doit respecter :",
@@ -9180,7 +9180,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte impose la parité au sein de la composition de la CNIL.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question: "Le président de la CNIL est nommé :",
     options: [
@@ -9194,7 +9194,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 9 de la loi prévoit une nomination par décret du président de la République pour cinq ans.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question: "La CNIL établit et présente chaque année :",
     options: [
@@ -9208,7 +9208,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 8 de la loi impose à la CNIL de rendre un rapport annuel public aux plus hautes autorités de l’État.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question: "Les agents de la CNIL sont soumis :",
     options: [
@@ -9221,7 +9221,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 11 de la loi les soumet au secret professionnel, par référence notamment aux articles 226-13 et 413-10 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "La CNIL est une autorité :",
     options: ["Administrative indépendante", "Judiciaire", "Policière"],
@@ -9232,7 +9232,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- MISSIONS GÉNÉRALES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "L’une des missions principales de la CNIL est :",
     options: [
@@ -9246,7 +9246,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’information des personnes concernées et des responsables de traitement figure au cœur de ses missions (article 8).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "La CNIL veille à ce que les traitements de données personnelles soient mis en œuvre :",
@@ -9260,7 +9260,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle s’assure du respect du cadre juridique national et européen de la protection des données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "La CNIL peut délivrer des labels :",
     options: [
@@ -9273,7 +9273,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces labels attestent la conformité de solutions aux exigences de protection des données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "La CNIL suit l’évolution des technologies de l’information pour :",
@@ -9290,7 +9290,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ===================== NIVEAU MOYENNE =====================
   // ---------- MISSIONS & POUVOIRS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "La CNIL peut présenter des observations devant une juridiction :",
@@ -9305,7 +9305,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle peut intervenir devant toute juridiction pour éclairer le juge sur les règles de protection des données.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "Pour veiller au respect de la loi, la CNIL dispose notamment :",
     options: [
@@ -9318,7 +9318,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle peut se rendre dans les locaux des organismes ou demander des documents pour vérifier la conformité des traitements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "En cas de manquements, la CNIL peut :",
     options: [
@@ -9331,7 +9331,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle dispose d’un pouvoir de sanction administrative (amendes, injonctions, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "Les infractions aux dispositions de la loi Informatique et Libertés sont prévues et réprimées par :",
@@ -9345,7 +9345,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces articles prévoient des délits spécifiques en matière de traitements de données illicites.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question:
         "Selon l’article 18 de la loi, le gouvernement et les autorités publiques :",
@@ -9362,7 +9362,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- FICHIERS & TRAITEMENTS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - fichiers",
     question: "Constitue un fichier de données à caractère personnel :",
     options: [
@@ -9376,7 +9376,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La définition (article 2) vise tout ensemble structuré, quel que soit le support ou le mode d’organisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - fichiers",
     question:
         "Avec le RGPD, la plupart des déclarations préalables de fichiers auprès de la CNIL :",
@@ -9390,7 +9390,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le RGPD a remplacé la logique de déclaration par une logique de responsabilisation des responsables de traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - fichiers",
     question: "Des formalités particulières subsistent notamment pour :",
     options: [
@@ -9405,7 +9405,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- TRAITEMENTS DE SOUVERAINETÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Pour certains traitements à risques relevant du secteur public (sûreté de l’État, sécurité publique, prévention des infractions), le législateur a maintenu :",
@@ -9419,7 +9419,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 31 de la loi prévoit un avis de la CNIL pour ces traitements dits de souveraineté.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Les traitements de données génétiques ou biométriques mis en œuvre pour le compte de l’État, dans l’exercice de ses prérogatives de puissance publique :",
@@ -9434,7 +9434,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est ce qu’indique l’article 32 de la loi Informatique et Libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Les actes autorisant la création d’un traitement de données sensibles doivent notamment préciser :",
@@ -9451,7 +9451,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- DROITS DES PERSONNES : INFORMATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question:
         "L’article 104 de la loi prévoit que la personne concernée doit être informée notamment :",
@@ -9465,7 +9465,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’information porte sur le responsable, ses coordonnées, celles du DPO le cas échéant, et les finalités du traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "La personne concernée doit également être informée :",
     options: [
@@ -9479,7 +9479,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 104 impose d’indiquer la possibilité de saisir la CNIL et les coordonnées de celle-ci.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "Parmi les éléments d’information, figure aussi :",
     options: [
@@ -9495,7 +9495,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- DROITS DES PERSONNES : ACCÈS & RECTIFICATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "L’article 105 prévoit que toute personne peut demander :",
     options: [
@@ -9509,7 +9509,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il s’agit du droit d’accès direct à ses données et aux informations liées au traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "L’article 106 permet à la personne concernée de demander :",
     options: [
@@ -9523,7 +9523,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ce texte consacre les droits de rectification, de complément et d’effacement des données conservées en violation de la loi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question:
         "Les décisions judiciaires et données faisant l’objet d’une procédure pénale :",
@@ -9540,7 +9540,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- FOCUS POLICE & FICHIERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question: "Les fichiers de police (TAJ, FPR, etc.) sont :",
     options: [
@@ -9553,7 +9553,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le focus opérationnel rappelle que ces fichiers sont encadrés et contrôlés par la CNIL.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "Toute création ou consultation d’un fichier de police doit reposer sur :",
@@ -9567,7 +9567,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La légalité des traitements repose sur une base juridique précise et des finalités définies.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "En cas de doute sur la légalité d’une consultation de fichier, l’agent devrait :",
@@ -9585,7 +9585,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ---------- CNIL : INDÉPENDANCE & CONTRÔLE DE L’ÉTAT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - indépendance",
     question:
         "Le fait que la CNIL soit une autorité administrative indépendante permet notamment :",
@@ -9600,7 +9600,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Son indépendance est essentielle pour contrôler des traitements mis en œuvre par les pouvoirs publics.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - indépendance",
     question:
         "L’impossibilité, pour le gouvernement ou les dirigeants d’entreprises publiques ou privées, de s’opposer à l’action de la CNIL signifie que :",
@@ -9617,7 +9617,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- TRAITEMENTS DE SOUVERAINETÉ : CONTENU DES ACTES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Pour des traitements de souveraineté, les actes d’autorisation doivent préciser, parmi d’autres éléments :",
@@ -9632,7 +9632,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte exige une transparence sur les éventuelles restrictions aux droits des personnes concernées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Pour les traitements mis en œuvre conjointement par plusieurs responsables, les actes prévoient :",
@@ -9649,7 +9649,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- DROITS DES PERSONNES : LIMITES & ARTICULATIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question:
         "S’agissant des traitements de police-justice, l’articulation entre la loi Informatique et Libertés et le Code de procédure pénale implique que :",
@@ -9664,7 +9664,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 111 renvoie au CPP pour les décisions judiciaires et dossiers pénaux (ex : TAJ).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "Le droit à l’effacement des données dans un fichier de police :",
     options: [
@@ -9680,7 +9680,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- POLICE & BONNES PRATIQUES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "Pour un agent de police, la consultation d’un fichier de données personnelles doit respecter en priorité :",
@@ -9695,7 +9695,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le recours aux fichiers doit être justifié par la mission et la finalité déclarée du traitement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "La CNIL peut contrôler les fichiers de police pour vérifier notamment :",
@@ -9710,7 +9710,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ce sont les éléments centraux de la conformité d’un traitement de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "En cas de contrôle de la CNIL dans un service de police, l’attitude attendue des agents est :",
@@ -9725,7 +9725,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 18 oblige les autorités et services à prendre toutes mesures utiles pour faciliter l’action de la CNIL.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "La liberté individuelle, ou sûreté, est principalement la liberté :",
@@ -9739,7 +9739,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte définit la liberté individuelle comme la liberté de ne pas subir d’arrestation, de détention ou de contrôle arbitraires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question: "La sûreté est qualifiée de :",
     options: [
@@ -9752,7 +9752,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le fascicule la décrit comme « la liberté fondamentale qui garantit toutes les autres ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question: "La sûreté est affirmée notamment par :",
     options: [
@@ -9765,7 +9765,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne notamment les articles 2, 7, 8 et 9 de la DDHC de 1789.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Toute mesure portant atteinte à la liberté d’une personne (garde à vue, détention, etc.) doit :",
@@ -9779,7 +9779,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte insiste sur la nécessité d’un fondement légal clair et d’un strict respect de la procédure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Une mesure privative de liberté sans base légale claire peut être qualifiée :",
@@ -9793,7 +9793,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’absence de base légale fait basculer la mesure dans l’arbitraire, lourdement sanctionné.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "En cas d’arrestation ou de détention arbitraire, la responsabilité de l’auteur :",
@@ -9809,7 +9809,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- TEXTES FONDATEURS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Textes fondamentaux",
     question:
         "La liberté individuelle est notamment protégée par un article de la Constitution de 1958 qui confie sa garde :",
@@ -9823,7 +9823,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 66 de la Constitution confie à l’autorité judiciaire la garde de la liberté individuelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Textes fondamentaux",
     question:
         "La Convention européenne des droits de l’homme protège la liberté individuelle à travers l’article :",
@@ -9837,7 +9837,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne l’article 5 de la CEDH qui encadre les cas de privation de liberté.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Textes fondamentaux",
     question: "Selon la DDHC, nul ne peut être arrêté ou détenu :",
     options: [
@@ -9854,7 +9854,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ===================== NIVEAU MOYENNE =====================
   // ---------- IDÉE CLÉ : FONDEMENT LÉGAL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection légale",
     question:
         "L’idée clé rappelée dans le fascicule est que toute privation de liberté est d’abord :",
@@ -9868,7 +9868,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "« Pas de fondement légal clair = mesure arbitraire » : toute mesure doit être rattachée à un texte précis.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection légale",
     question:
         "Pour agir légalement, un policier doit pouvoir rattacher son action :",
@@ -9885,7 +9885,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- PRINCIPES PÉNAUX ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question: "Le principe de légalité des délits et des peines implique que :",
     options: [
@@ -9899,7 +9899,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 8 de la DDHC exige une loi pénale accessible et prévisible.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question:
         "La non-rétroactivité de la loi pénale plus sévère signifie que :",
@@ -9914,7 +9914,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "En revanche, une loi plus douce bénéficie à la personne poursuivie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question:
         "La présomption d’innocence implique notamment que les mesures privatives de liberté avant jugement :",
@@ -9928,7 +9928,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Garde à vue, détention provisoire, etc. sont des mesures d’exception justifiées par des nécessités précises.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question: "Les garanties procédurales pénales incluent notamment :",
     options: [
@@ -9944,7 +9944,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- MESURES DÉCIDÉES PAR LES POLICIERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question: "La garde à vue est :",
     options: [
@@ -9958,7 +9958,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle est prévue aux articles 62-2 et suivants du Code de procédure pénale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question:
         "La vérification d’identité (articles 78-2 et 78-3 CPP) doit être :",
@@ -9973,7 +9973,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte insiste sur le caractère limité et encadré de cette mesure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question: "La retenue judiciaire des mineurs se caractérise par :",
     options: [
@@ -9987,7 +9987,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle qu’elle est conçue pour protéger davantage les mineurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question: "La retenue douanière a pour finalité principale :",
     options: [
@@ -10002,7 +10002,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- MESURES DÉCIDÉES PAR LES MAGISTRATS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - magistrats",
     question: "Les mandats d’amener, de dépôt et d’arrêt sont :",
     options: [
@@ -10015,7 +10015,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ils sont délivrés par le juge d’instruction ou la juridiction de jugement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - magistrats",
     question: "La détention provisoire est décidée par :",
     options: [
@@ -10028,7 +10028,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le JLD statue sur la détention provisoire sur saisine du juge d’instruction ou de la juridiction de jugement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - magistrats",
     question:
         "Les mesures de sûreté après condamnation ou irresponsabilité pénale peuvent inclure :",
@@ -10045,7 +10045,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- MESURES ADMINISTRATIVES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question:
         "Les mesures administratives privatives de liberté sont décidées :",
@@ -10060,7 +10060,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elles restent des exceptions, soumises à la loi et au contrôle du juge.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question: "L’interdiction de paraître vise à empêcher une personne :",
     options: [
@@ -10074,7 +10074,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle concerne par exemple les abords d’un stade, d’un quartier sensible ou d’une manifestation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question: "L’assignation à résidence oblige une personne à :",
     options: [
@@ -10088,7 +10088,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est une limitation forte de la liberté d’aller et venir, notamment utilisée en matière de terrorisme ou pour certains étrangers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question:
         "La retenue administrative dans certains contextes (perquisitions, frontières, terrorisme) doit être :",
@@ -10102,7 +10102,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte insiste sur le caractère bref de ces retenues, sous contrôle du procureur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question: "Le placement en local de dégrisement vise avant tout :",
     options: [
@@ -10118,7 +10118,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SOINS PSYCHIATRIQUES SANS CONSENTEMENT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Soins sans consentement",
     question: "L’hospitalisation psychiatrique sans consentement constitue :",
     options: [
@@ -10132,7 +10132,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Elle doit être justifiée par l’état mental de la personne et contrôlée par le juge.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Soins sans consentement",
     question:
         "L’admission en soins sans consentement sur décision du préfet est possible lorsqu’il existe :",
@@ -10146,7 +10146,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le préfet peut décider de l’admission lorsque les troubles mentaux mettent en péril la sécurité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Soins sans consentement",
     question:
         "Le juge des libertés et de la détention contrôle les hospitalisations sans consentement :",
@@ -10162,7 +10162,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- MESURES CONCERNANT LES ÉTRANGERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers - CESEDA",
     question: "La zone d’attente concerne notamment :",
     options: [
@@ -10175,7 +10175,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: "Le CESEDA prévoit ce dispositif spécifique à la frontière.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers - CESEDA",
     question:
         "La rétention administrative dans un centre spécialisé a pour finalité principale :",
@@ -10190,7 +10190,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Il s’agit d’une mesure de police administrative en vue de l’éloignement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers - CESEDA",
     question: "La durée initiale de la rétention administrative est :",
     options: [
@@ -10206,7 +10206,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ---------- PROTECTION JUDICIAIRE DE LA SÛRETÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection judiciaire",
     question:
         "L’article 66 de la Constitution confie à l’autorité judiciaire le rôle de :",
@@ -10220,7 +10220,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le fascicule cite expressément l’article 66 et ce rôle central de l’autorité judiciaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection judiciaire",
     question:
         "Le juge des libertés et de la détention (JLD) contrôle notamment :",
@@ -10235,7 +10235,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte le présente comme un acteur central de la protection de la liberté individuelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection judiciaire",
     question:
         "Le juge administratif peut, en matière de police administrative, ordonner en urgence :",
@@ -10252,7 +10252,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SANCTIONS PÉNALES FONCTIONNAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - fonctionnaires",
     question:
         "Le Code pénal réprime spécifiquement, pour un dépositaire de l’autorité publique, le fait :",
@@ -10267,7 +10267,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les articles 432-4 et 432-5 C. pén. visent ces comportements graves.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - fonctionnaires",
     question:
         "L’infraction consistant à laisser se prolonger arbitrairement une détention est :",
@@ -10283,7 +10283,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SANCTIONS PÉNALES PARTICULIERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - particuliers",
     question:
         "Pour un particulier, l’arrestation, la détention ou la séquestration arbitraire d’une personne est réprimée :",
@@ -10297,7 +10297,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte cite cet article qui peut entraîner de lourdes peines, jusqu’à la réclusion criminelle en cas d’aggravation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - particuliers",
     question:
         "L’arrestation ou la séquestration arbitraire commise par un particulier peut être punie :",
@@ -10314,7 +10314,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SANCTIONS CIVILES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions civiles",
     question:
         "La responsabilité de l’État pour une privation de liberté illégale peut être engagée notamment sur le fondement :",
@@ -10328,7 +10328,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 1240 fonde l’action en responsabilité pour faute d’un agent public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions civiles",
     question:
         "La victime d’une détention provisoire injustifiée peut obtenir :",
@@ -10344,7 +10344,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ---------- SANCTIONS DISCIPLINAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions disciplinaires",
     question:
         "Le Code de déontologie de la police nationale et de la gendarmerie, à l’article R. 434-17 CSI, rappelle que :",
@@ -10359,7 +10359,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Cet article consacre l’exigence de dignité et l’interdiction des violences injustifiées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions disciplinaires",
     question:
         "En cas d’atteinte illégale à la liberté individuelle, les sanctions disciplinaires possibles pour un agent vont :",
@@ -10373,7 +10373,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne l’éventail des sanctions : avertissement, exclusion, rétrogradation, jusqu’à la révocation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions disciplinaires",
     question:
         "Le fascicule insiste sur le fait qu’une seule mesure irrégulière peut avoir pour l’agent :",
@@ -10387,7 +10387,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "D’où l’importance du respect strict des textes et de la rédaction rigoureuse des procès-verbaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question: "La liberté d’aller et venir est reconnue en France comme :",
     options: [
@@ -10400,7 +10400,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que la liberté d’aller et venir est un principe de valeur constitutionnelle dégagé par le Conseil constitutionnel (notamment décision du 12 janvier 1977).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "La liberté d’aller et venir recouvre principalement trois dimensions :",
@@ -10414,7 +10414,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours souligne que cette liberté recouvre le mouvement, le séjour et la circulation sur le territoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "Les restrictions à la liberté d’aller et venir doivent toujours être :",
@@ -10428,7 +10428,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le « triptyque à retenir » insiste sur ces quatre exigences : texte, nécessité, adaptation, proportionnalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "Pour les nationaux français, la liberté de mouvement sur le territoire est :",
@@ -10442,7 +10442,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle que la liberté de mouvement est la règle pour les citoyens français, sous réserve de mesures exceptionnelles prévues par la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "Pour les forces de l’ordre, un bon réflexe opérationnel consiste d’abord à identifier :",
@@ -10459,7 +10459,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
 
   // ================== NIVEAU MOYEN ==================
   // --------- CHAPITRE 1 — LIBERTÉ DE MOUVEMENT ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "La liberté de mouvement des personnes physiques correspond à :",
     options: [
@@ -10473,7 +10473,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours définit la liberté de mouvement comme la faculté de se déplacer et de résider librement sur le territoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question:
         "L’interdiction de séjour, lorsqu’elle est prononcée à l’encontre d’un national français, doit :",
@@ -10487,7 +10487,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que ces mesures limitant les déplacements doivent être prévues par la loi et contrôlées par le juge.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question:
         "Pour les étrangers, la liberté de mouvement sur le territoire français est encadrée par :",
@@ -10502,7 +10502,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours rappelle que les conditions d’entrée et de séjour des étrangers sont fixées par le CESEDA.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "Les réfugiés bénéficiant de la protection internationale :",
     options: [
@@ -10516,7 +10516,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que les réfugiés disposent de titres (carte de résident, titre pluriannuel) leur assurant une liberté de mouvement équivalente aux autres étrangers en situation régulière.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question:
         "Les citoyens des États membres de l’Union européenne bénéficient :",
@@ -10531,7 +10531,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ils disposent d’un droit à la libre circulation et au libre séjour, sous réserve notamment de ne pas devenir une charge déraisonnable et de ne pas constituer une menace grave pour l’ordre public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "Les personnes sans résidence ni domicile fixe (SRDF) :",
     options: [
@@ -10545,7 +10545,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne un « droit à la domiciliation » permettant l’accès à certains droits sociaux et civiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "Les gens du voyage sont notamment concernés par :",
     options: [
@@ -10560,7 +10560,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- CHAPITRE 2 — SÉJOUR DES ÉTRANGERS ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question:
         "Au-delà de trois mois, un étranger majeur qui souhaite rester en France doit :",
@@ -10574,7 +10574,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que les étrangers majeurs doivent détenir un document de séjour pour un séjour de plus de trois mois.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "La carte de séjour pluriannuelle permet en principe un séjour :",
     options: [
@@ -10587,7 +10587,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours mentionne une durée maximale de quatre ans pour la carte pluriannuelle, sous conditions de stabilité et d’intégration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "La carte de résident :",
     options: [
@@ -10601,7 +10601,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que la carte de résident offre une stabilité forte, généralement pour dix ans renouvelables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "L’obligation de quitter le territoire français (OQTF) est :",
     options: [
@@ -10614,7 +10614,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’OQTF est une décision préfectorale d’éloignement de l’étranger en situation irrégulière, assortie en principe d’un délai de départ volontaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "L’expulsion d’un étranger est en principe décidée :",
     options: [
@@ -10628,7 +10628,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’expulsion est une mesure grave décidée en principe par le ministre de l’Intérieur, après avis d’une commission d’expulsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "L’extradition consiste à :",
     options: [
@@ -10644,7 +10644,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --------- CHAPITRE 3 — CIRCULATION & PERMIS ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police de la circulation",
     question: "Le stationnement sur la voie publique :",
     options: [
@@ -10658,7 +10658,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle que le stationnement est libre mais peut être encadré (durée, zones payantes, etc.) pour la sécurité et la rotation des véhicules.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police de la circulation",
     question:
         "Les mesures d’évacuation des gens du voyage en cas d’occupation illicite supposent en principe :",
@@ -10673,7 +10673,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours décrit une procédure comprenant mise en demeure et, si nécessaire, saisine du juge pour autoriser l’évacuation forcée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police de la circulation",
     question:
         "Le principe d’égalité devant l’usage de la voie publique implique que :",
@@ -10688,7 +10688,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte insiste sur le fait que les restrictions de circulation doivent être justifiées et non discriminatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question: "Le permis de conduire est présenté comme :",
     options: [
@@ -10702,7 +10702,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours le qualifie d’« instrument de police administrative » permettant de sanctionner les comportements dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question:
         "En cas d’infraction grave (alcool, stupéfiants, grand excès de vitesse…), les forces de l’ordre peuvent :",
@@ -10716,7 +10716,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit une rétention immédiate, suivie d’une éventuelle suspension administrative par le préfet.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question: "Le préfet peut interdire la délivrance du permis de conduire :",
     options: [
@@ -10730,7 +10730,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 224-7 du Code de la route permet au préfet d’interdire la délivrance du permis dans ce cas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question:
         "La suspension du permis de conduire prononcée par le tribunal peut constituer :",
@@ -10746,7 +10746,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ================== NIVEAU DIFFICILE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — synthèse",
     question:
         "Parmi les propositions suivantes, laquelle traduit le mieux l’équilibre à trouver pour les personnes itinérantes (gens du voyage, SRDF, etc.) ?",
@@ -10761,7 +10761,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte évoque explicitement cet équilibre et rappelle le contrôle de proportionnalité exercé par le Conseil d’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour & éloignement",
     question:
         "Sur le plan juridique, quelle différence essentielle sépare l’OQTF de l’expulsion ?",
@@ -10776,7 +10776,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours distingue clairement l’OQTF (maintien irrégulier) de l’expulsion (menace grave pour l’ordre public ou la sécurité de l’État).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour & éloignement",
     question:
         "L’extradition ne peut légalement aboutir, en France, à la remise d’une personne :",
@@ -10791,7 +10791,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle que la France ne peut extrader une personne risquant la peine de mort ou des traitements contraires aux droits fondamentaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Généralités",
     question:
         "La Déclaration des droits de l’homme et du citoyen (D.D.H.C.) a été adoptée le :",
@@ -10802,7 +10802,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
   // ===================== RÉGIME JURIDIQUE — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Généralités",
     question:
         "Selon le cours, pourquoi ne peut-il pas exister de liberté publique absolue ?",
@@ -10816,7 +10816,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise qu’en l’absence de règles, la liberté se transforme en anarchie, ce qui justifie l’encadrement juridique des libertés publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Généralités",
     question:
         "L’idée directrice du régime juridique des libertés publiques est que :",
@@ -10830,7 +10830,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche insiste sur le fait que la réglementation fixe des bornes, mais maintient la liberté comme principe et la restriction comme exception.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Autorités",
     question:
         "Quels sont les deux grands acteurs qui encadrent les libertés publiques ?",
@@ -10844,7 +10844,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours indique que le législateur (loi) et le pouvoir exécutif (pouvoir réglementaire) sont les deux grands acteurs qui réglementent les libertés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "La Constitution de 1958 confie au Parlement la détermination des règles concernant :",
@@ -10859,7 +10859,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 34 de la Constitution de 1958 donne compétence au législateur pour fixer les règles relatives aux droits civiques et à leurs garanties.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "En matière de libertés publiques, le législateur dispose d’une :",
@@ -10873,7 +10873,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche précise que le législateur a une compétence de principe pour fixer le régime des libertés publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "Le législateur peut, en matière de libertés publiques, notamment :",
@@ -10887,7 +10887,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours explique que la loi peut créer de nouvelles libertés, en préciser les modalités et, parfois, en restreindre l’exercice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Pouvoir réglementaire",
     question: "Le pouvoir réglementaire appartient principalement :",
     options: [
@@ -10900,7 +10900,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte souligne que le pouvoir exécutif (gouvernement, préfet, maire) met en œuvre les libertés par des règlements.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Pouvoir réglementaire",
     question: "Le pouvoir réglementaire complète principalement :",
     options: [
@@ -10913,7 +10913,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours indique que le règlement vient détailler et compléter la loi, par exemple via la partie réglementaire des codes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Période normale",
     question: "En période normale, l’autorité administrative ne peut pas :",
     options: [
@@ -10926,7 +10926,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours rappelle qu’aucune interdiction générale et absolue n’est possible en matière de liberté publique en période ordinaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Période normale",
     question:
         "Toute mesure d’interdiction d’une liberté en période normale doit être :",
@@ -10942,7 +10942,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== RÉGIME JURIDIQUE — NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "Parmi les propositions suivantes, laquelle illustre une création de liberté par la loi ?",
@@ -10957,7 +10957,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi de 1970 est citée comme exemple de texte législatif créant ou renforçant une liberté fondamentale, ici la vie privée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "Le législateur peut revenir sur une liberté publique déjà acquise :",
@@ -10972,7 +10972,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours indique que la remise en cause d’une liberté n’est possible que si elle n’était pas juridiquement acquise ou pour un motif de valeur constitutionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Pouvoir réglementaire",
     question:
         "Le pouvoir réglementaire peut restreindre l’exercice d’une liberté à condition de respecter :",
@@ -10986,7 +10986,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche insiste sur ces trois principes pour encadrer les restrictions réglementaires aux libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Période normale",
     question:
         "Pourquoi le juge contrôle-t-il plus strictement les mesures de police qui touchent une liberté fondamentale ?",
@@ -11001,7 +11001,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte explique que plus la liberté est fondamentale, plus le contrôle de proportionnalité du juge administratif est rigoureux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — États d’exception",
     question: "L’état de siège est principalement destiné à faire face :",
     options: [
@@ -11014,7 +11014,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours définit l’état de siège comme un régime destiné au péril résultant d’une guerre ou d’une insurrection armée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — États d’exception",
     question:
         "Pendant l’état de siège, certaines compétences de police sont transférées :",
@@ -11028,7 +11028,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche précise que l’état de siège entraîne le transfert de certains pouvoirs de police à l’autorité militaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Article 16",
     question:
         "Les pouvoirs exceptionnels de l’article 16 de la Constitution peuvent être mis en œuvre lorsque :",
@@ -11043,7 +11043,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 16 vise une situation de crise extrême combinant menace grave et interruption du fonctionnement régulier des pouvoirs publics.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Article 16",
     question:
         "Avant de recourir à l’article 16, le Président de la République doit :",
@@ -11058,7 +11058,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche rappelle cette consultation préalable avant la mise en œuvre des pouvoirs exceptionnels de l’article 16.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — État d’urgence",
     question: "L’état d’urgence (loi de 1955) est principalement destiné à :",
     options: [
@@ -11072,7 +11072,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours définit l’état d’urgence comme un régime permettant de répondre à un péril imminent, notamment en matière de sécurité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — État d’urgence",
     question:
         "Parmi les mesures possibles sous état d’urgence, on trouve notamment :",
@@ -11086,7 +11086,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche mentionne l’assignation à résidence, les perquisitions administratives et les interdictions de réunions comme exemples de mesures d’état d’urgence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — État d’urgence sanitaire",
     question: "L’état d’urgence sanitaire a été instauré principalement pour :",
     options: [
@@ -11100,7 +11100,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que l’état d’urgence sanitaire a été créé pour faire face à un risque sanitaire majeur, notamment la Covid-19.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Circumstances exceptionnelles",
     question:
         "La théorie des circonstances exceptionnelles permet au juge administratif :",
@@ -11115,7 +11115,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La théorie permet au juge de tenir compte des circonstances anormales pour apprécier la légalité de mesures plus restrictives.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Vigipirate",
     question: "Le plan Vigipirate est principalement :",
     options: [
@@ -11129,7 +11129,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche décrit Vigipirate comme un dispositif permanent associant autorités civiles et militaires pour prévenir la menace terroriste.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Vigipirate",
     question: "Quel niveau Vigipirate correspond à la menace la plus élevée ?",
     options: [
@@ -11144,7 +11144,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== RÉGIME JURIDIQUE — NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime répressif",
     question: "Dans le régime répressif, la liberté est :",
     options: [
@@ -11157,7 +11157,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche précise que le régime répressif est le plus favorable aux libertés : on agit librement, mais on est sanctionné en cas d’abus.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime répressif",
     question:
         "Dans un régime répressif, qui prononce la sanction en cas d’abus d’une liberté ?",
@@ -11171,7 +11171,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que l’abus est sanctionné par le juge sur le fondement des textes pénaux ou administratifs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime préventif",
     question: "Quelle formule résume le mieux le régime préventif ?",
     options: [
@@ -11184,7 +11184,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours reprend cette formule : dans le régime préventif, n’est permis que ce qui est autorisé expressément ou tacitement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime préventif",
     question: "Le régime préventif repose essentiellement sur :",
     options: [
@@ -11197,7 +11197,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que le régime préventif est mis en œuvre par l’autorité administrative chargée de l’ordre public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Autorisation préalable",
     question: "La technique de l’autorisation préalable implique que :",
     options: [
@@ -11211,7 +11211,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche explique qu’en l’absence d’autorisation, la liberté ne peut être exercée légalement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Autorisation préalable",
     question:
         "Parmi les exemples suivants, lequel relève de l’autorisation préalable ?",
@@ -11225,7 +11225,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours cite le permis de construire comme exemple d’activité soumise à autorisation préalable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Déclaration préalable",
     question: "Dans le régime de la déclaration préalable :",
     options: [
@@ -11239,7 +11239,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche décrit la déclaration préalable comme une information à l’administration qui peut ensuite encadrer l’activité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Déclaration préalable",
     question:
         "Parmi les exemples suivants, lequel illustre une déclaration préalable ?",
@@ -11254,7 +11254,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours cite la déclaration de manifestation comme exemple typique de déclaration préalable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Interdiction préalable",
     question: "L’interdiction préalable est :",
     options: [
@@ -11268,7 +11268,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte présente l’interdiction préalable comme un outil extrême, strictement encadré par le juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Interdiction préalable",
     question: "L’arrêt Benjamin (Conseil d’État, 1933) illustre que :",
     options: [
@@ -11284,7 +11284,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== SOURCES DES LIBERTÉS — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Généralités",
     question: "Les libertés publiques actuelles en France résultent :",
     options: [
@@ -11298,7 +11298,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’introduction souligne la pluralité des sources et la longue histoire des libertés publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Philosophiques",
     question:
         "La pensée chrétienne a contribué aux libertés publiques en affirmant :",
@@ -11313,7 +11313,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours présente la pensée chrétienne comme source de l’égalité et de la dignité humaines.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Philosophiques",
     question:
         "La théorie du droit naturel et du contrat social (Locke, Rousseau…) met en avant :",
@@ -11328,7 +11328,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle que ces courants fondent l’idée de droits antérieurs et supérieurs au pouvoir politique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Philosophiques",
     question:
         "La philosophie des Lumières, au XVIIIᵉ siècle, promeut notamment :",
@@ -11343,7 +11343,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche insiste sur ces thèmes majeurs des Lumières qui inspireront la Déclaration de 1789.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Juridiques avant 1789",
     question:
         "Parmi les textes anglais suivants, lequel fait partie des « pactes » contribuant à la protection des libertés ?",
@@ -11357,7 +11357,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La Magna Carta, le Habeas Corpus et le Bill of Rights sont cités comme sources juridiques préalables à 1789.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Juridiques avant 1789",
     question: "Les déclarations américaines de 1776 affirment notamment :",
     options: [
@@ -11372,7 +11372,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== SOURCES — NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question: "Parmi les caractéristiques de la Déclaration de 1789 figure :",
     options: [
@@ -11385,7 +11385,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte présente la Déclaration comme individualiste : elle vise l’homme plutôt que les groupes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question: "La Déclaration de 1789 présente les droits proclamés comme :",
     options: [
@@ -11398,7 +11398,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La dimension métaphysique du texte est rappelée : les droits sont antérieurs et supérieurs au pouvoir politique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question: "La Déclaration de 1789 a une portée :",
     options: [
@@ -11412,7 +11412,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours souligne l’universalité affirmée du texte, même si son application réelle est plus restreinte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question:
         "Parmi les droits de l’Homme proclamés en 1789, on trouve notamment :",
@@ -11427,7 +11427,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche mentionne ces droits comme exemples de droits de l’Homme inspirant les libertés publiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Évolution postérieure",
     question: "La IIIᵉ République a consacré par diverses lois :",
     options: [
@@ -11440,7 +11440,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours indique que la IIIᵉ République est marquée par de grandes lois libérales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Évolution postérieure",
     question: "Le préambule de 1946 ajoute notamment :",
     options: [
@@ -11454,7 +11454,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche rappelle que le préambule de 1946 enrichit le catalogue par des droits sociaux toujours en vigueur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Préambule 1958",
     question: "Le préambule de la Constitution de 1958 renvoie expressément :",
     options: [
@@ -11468,7 +11468,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ces textes, avec la Constitution, forment le bloc de constitutionnalité en matière de libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Préambule 1958",
     question:
         "Les lois telles que « Informatique et libertés » (1978) ou le droit d’accès aux documents administratifs (1979) :",
@@ -11485,7 +11485,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== SOURCES INTERNATIONALES — NIVEAU MOYEN/DÉLICAT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Droit international humanitaire",
     question: "Les conventions de Genève de 1949 visent principalement à :",
     options: [
@@ -11499,7 +11499,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours cite ces conventions comme source de protection des personnes en temps de guerre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — ONU",
     question:
         "La Déclaration universelle des droits de l’Homme (ONU, 1948) a principalement :",
@@ -11513,7 +11513,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche rappelle qu’elle n’est pas directement contraignante mais a inspiré de nombreuses conventions obligatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — ONU",
     question:
         "Parmi les conventions suivantes, laquelle relève du système onusien de protection des droits fondamentaux ?",
@@ -11527,7 +11527,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours cite la convention contre la torture parmi les grands instruments internationaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — CEDH",
     question:
         "La Convention européenne des droits de l’Homme (CEDH) a été ratifiée par la France en :",
@@ -11537,7 +11537,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que la France a ratifié la CEDH en 1974, permettant une protection conventionnelle renforcée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — CEDH",
     question: "Une originalité majeure de la CEDH est de permettre :",
     options: [
@@ -11553,7 +11553,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== HIÉRARCHIE DES NORMES — NIVEAU DIFFICILE/Difficile =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question:
         "Selon la fiche, au sommet de la hiérarchie des normes en matière de libertés publiques se trouvent :",
@@ -11567,7 +11567,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche place au sommet Constitution, Déclaration de 1789, préambule de 1946, Charte de l’environnement et PFRLR.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question:
         "Dans cette hiérarchie, les engagements internationaux (CEDH, conventions ONU…) :",
@@ -11581,7 +11581,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours les place au second niveau, au-dessus des lois ordinaires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question: "Un règlement de police administrative doit être conforme :",
     options: [
@@ -11595,7 +11595,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le rappel final insiste sur le contrôle de conformité d’une mesure de police à l’ensemble de la hiérarchie des normes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question:
         "Si une loi portant atteinte aux libertés publiques est suspectée de méconnaître la Constitution, les justiciables peuvent :",
@@ -11611,7 +11611,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NOTION DE LIBERTÉS PUBLIQUES — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Généralités",
     question: "Dans le langage courant, on confond souvent :",
     options: [
@@ -11624,7 +11624,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche commence par constater cette confusion fréquente en langage courant.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Généralités",
     question: "En droit, les libertés publiques sont définies comme :",
     options: [
@@ -11638,7 +11638,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche en donne précisément cette définition pour distinguer libertés publiques et droits de l’Homme en général.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques et droits de l’Homme",
     question:
         "Parmi les trois idées issues du polycopié, la première est que les libertés publiques sont :",
@@ -11653,7 +11653,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours explique que les citoyens attendent de l’État non seulement une abstention, mais aussi une action positive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques et droits de l’Homme",
     question: "La deuxième idée est que les libertés publiques sont :",
     options: [
@@ -11667,7 +11667,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche insiste sur la nécessité d’une consécration par un texte pour qu’une liberté soit « publique ». ",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques et droits de l’Homme",
     question:
         "La troisième idée est que certaines libertés, dites « fondamentales », :",
@@ -11682,7 +11682,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que ces libertés fondamentales bénéficient de protections renforcées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Liberté",
     question: "Le polycopié définit la liberté comme :",
     options: [
@@ -11696,7 +11696,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est la définition large rappelée au début du chapitre 2 de la fiche « Notion ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques",
     question:
         "Le qualificatif « publiques » dans l’expression « libertés publiques » renvoie principalement :",
@@ -11711,7 +11711,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche explique que « publiques » souligne le rôle de l’État dans la reconnaissance et la protection des libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques",
     question:
         "Selon la définition juridique donnée, une liberté publique est notamment :",
@@ -11726,7 +11726,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "C’est la définition précise fournie dans la fiche avec l’idée de texte, d’organisation et de sanction des atteintes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Pratique policière",
     question: "La fiche rappelle que sont des libertés publiques celles qui :",
     options: [
@@ -11740,7 +11740,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Ce critère permet de cibler les libertés au cœur de l’action policière et du contrôle du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Pratique policière",
     question:
         "Lorsque le policier intervient dans le domaine des libertés publiques (manifestation, contrôle d’identité, perquisition…), la légalité de son action :",
@@ -11755,7 +11755,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche insiste sur le contrôle accru du juge dès lors que des droits fondamentaux sont en jeu.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Valeur juridique",
     question:
         "Aujourd’hui, la Déclaration des droits de l’homme et du citoyen de 1789 :",
@@ -11770,7 +11770,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La D.D.H.C. figure dans le Préambule de la Constitution de 1958 et fait partie du bloc de constitutionnalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Bloc de constitutionnalité",
     question: "La D.D.H.C. fait partie :",
     options: [
@@ -11783,7 +11783,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours précise que la D.D.H.C. appartient au « bloc de constitutionnalité » avec le Préambule de 1946, la Constitution de 1958 et la Charte de l’environnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Principes généraux",
     question:
         "L’article 1er de la D.D.H.C. proclame notamment que les hommes :",
@@ -11797,7 +11797,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 1er pose le principe d’égalité et de liberté et interdit les privilèges de naissance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Droits naturels",
     question:
         "Selon l’article 2 de la D.D.H.C., parmi les droits naturels et imprescriptibles de l’homme figurent notamment :",
@@ -11812,7 +11812,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 2 énumère les droits naturels et imprescriptibles : liberté, propriété, sûreté, résistance à l’oppression.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Souveraineté",
     question:
         "L’article 3 de la D.D.H.C. affirme que le principe de toute souveraineté réside essentiellement dans :",
@@ -11822,7 +11822,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 3 consacre le principe de souveraineté nationale en indiquant que la souveraineté réside dans la Nation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Loi et volonté générale",
     question: "Selon l’article 6 de la D.D.H.C., la loi est avant tout :",
     options: [
@@ -11835,7 +11835,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 6 pose que la loi est l’expression de la volonté générale et qu’elle doit être la même pour tous.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Séparation des pouvoirs",
     question:
         "L’article 16 de la D.D.H.C. affirme qu’une société sans séparation des pouvoirs :",
@@ -11849,7 +11849,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 16 précise qu’une société sans garantie des droits ni séparation des pouvoirs « n’a point de Constitution ». ",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Liberté d’opinion",
     question: "L’article 10 de la D.D.H.C. protège principalement :",
     options: [
@@ -11862,7 +11862,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 10 garantit que nul ne doit être inquiété pour ses opinions, même religieuses, tant que leur manifestation ne trouble pas l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Liberté d’expression",
     question:
         "L’article 11 de la D.D.H.C. qualifie la libre communication des pensées et des opinions de :",
@@ -11876,7 +11876,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 11 présente la libre communication des pensées et des opinions comme l’un des droits les plus précieux de l’homme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques",
     question: "En droit, les libertés publiques sont avant tout :",
     options: [
@@ -11892,7 +11892,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Contexte historique",
     question: "La D.D.H.C. s’inspire principalement :",
     options: [
@@ -11905,7 +11905,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte mentionne les influence des philosophes des Lumières (Montesquieu, Rousseau, Voltaire) et des déclarations américaines.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Finalité",
     question:
         "Selon son préambule, une des finalités de la D.D.H.C. est notamment de permettre :",
@@ -11920,7 +11920,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La finalité indiquée est de rappeler les droits afin que les actes du pouvoir puissent être constamment comparés avec le but de toute institution politique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Portée",
     question:
         "La D.D.H.C., bien que rédigée en France, est présentée dans le cours comme :",
@@ -11934,7 +11934,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche souligne la portée universelle du texte, même s’il est adopté en France.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Décision Liberté d’association",
     question:
         "La reconnaissance explicite de la valeur constitutionnelle de la D.D.H.C. par le Conseil constitutionnel date :",
@@ -11948,7 +11948,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Depuis la décision « Liberté d’association » de 1971, le Conseil constitutionnel reconnaît la valeur constitutionnelle de la D.D.H.C.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Liberté (art. 4)",
     question:
         "Selon l’article 4 de la D.D.H.C., la liberté consiste principalement à :",
@@ -11962,7 +11962,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 4 définit la liberté comme la possibilité de faire tout ce qui ne nuit pas à autrui, sous le contrôle de la loi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Sûreté",
     question: "Les articles 7 à 9 de la D.D.H.C. concernent principalement :",
     options: [
@@ -11975,7 +11975,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les articles 7 à 9 encadrent la sûreté, l’interdiction des arrestations arbitraires et la présomption d’innocence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Propriété",
     question: "L’article 17 de la D.D.H.C. qualifie la propriété de :",
     options: [
@@ -11988,7 +11988,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 17 affirme que la propriété est un droit inviolable et sacré, dont on ne peut être privé que pour cause d’utilité publique et avec indemnité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Garanties pénales",
     question:
         "Le principe de légalité des délits et des peines (art. 8) signifie que :",
@@ -12003,7 +12003,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 8 consacre le principe de légalité pénale et prohibe les incriminations et peines rétroactives.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Attentes vis-à-vis de l’État",
     question:
         "Selon le cours, concernant les libertés publiques, les individus attendent de l’État :",
@@ -12018,7 +12018,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La première idée du cours est que les individus attendent de l’État une action positive, par exemple l’organisation de l’enseignement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Reconnaissance par l’État",
     question:
         "Une caractéristique essentielle d’une liberté publique est qu’elle :",
@@ -12033,7 +12033,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La deuxième idée du cours souligne que les libertés publiques sont des droits de l’Homme intégrés dans le droit positif et reconnus par des textes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Protection particulière",
     question: "Certaines libertés, dites « fondamentales », bénéficient :",
     options: [
@@ -12047,7 +12047,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours insiste sur les protections particulières accordées aux libertés fondamentales (contrôle du juge administratif, procédures d’urgence, valeur constitutionnelle…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté — Autodétermination",
     question:
         "La liberté, au sens large, est définie dans le polycopié comme :",
@@ -12064,7 +12064,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Contrôle de la loi",
     question:
         "Le fait que la D.D.H.C. fasse partie du bloc de constitutionnalité permet notamment :",
@@ -12078,7 +12078,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Parce qu’elle a valeur constitutionnelle, la D.D.H.C. permet au Conseil constitutionnel de censurer les lois incompatibles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Juge et libertés",
     question: "Pour un policier, la D.D.H.C. encadre son action car :",
     options: [
@@ -12092,7 +12092,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que la D.D.H.C. s’impose à toutes les autorités, y compris l’administration et la police.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Principe d’égalité",
     question:
         "Le principe d’égalité dégagé de l’article 1er de la D.D.H.C. est souvent invoqué :",
@@ -12107,7 +12107,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche donne l’exemple de différences de traitement entre fonctionnaires, étrangers, détenus… au regard du principe d’égalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Séparation des pouvoirs",
     question: "L’article 16 de la D.D.H.C. sert notamment de fondement :",
     options: [
@@ -12121,7 +12121,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 16 est utilisé pour exiger des garanties effectives, notamment l’indépendance du juge et un recours effectif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Nécessité et proportionnalité des peines",
     question:
         "Le principe de nécessité et de proportionnalité des peines, issu de l’article 8 de la D.D.H.C., implique que :",
@@ -12136,7 +12136,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 8 impose que les peines prévues par la loi soient strictement et évidemment nécessaires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Présomption d’innocence",
     question:
         "Selon l’article 9 de la D.D.H.C., la rigueur des mesures privatives de liberté :",
@@ -12150,7 +12150,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 9 impose que la rigueur liée à la privation de liberté reste limitée à ce qui est nécessaire, en lien avec la présomption d’innocence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Définition",
     question:
         "La définition juridique des libertés publiques insiste sur le fait qu’elles sont :",
@@ -12165,7 +12165,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche donne une définition précise : libertés fondamentales reconnues par l’État, consacrées par un texte, dont l’exercice est encadré et les atteintes sanctionnées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Reconnaissance par un texte",
     question:
         "Pourquoi une liberté n’est-elle « publique » que si elle est reconnue par un texte ?",
@@ -12180,7 +12180,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours insiste sur le rôle des textes (constitution, loi, conventions) qui intègrent les droits de l’Homme dans le droit positif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Rôle du juge",
     question:
         "En cas d’atteinte illégale à une liberté publique, le rôle du juge est :",
@@ -12195,7 +12195,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La sanction des atteintes par le juge garantit concrètement l’effectivité des libertés publiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police — Atteinte aux libertés",
     question:
         "Selon la fiche, pour les mesures de police (contrôles, fouilles, gardes à vue…), le principe de base est que :",
@@ -12212,7 +12212,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU Difficile =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation D.D.H.C. / Libertés publiques",
     question:
         "En pratique, le lien entre D.D.H.C. et libertés publiques peut être résumé ainsi :",
@@ -12227,7 +12227,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La D.D.H.C. proclame des principes, tandis que la notion de libertés publiques désigne ces droits intégrés dans le droit positif et protégés par des mécanismes juridiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Dimension « publique »",
     question:
         "Le qualificatif « publiques » dans l’expression « libertés publiques » signifie principalement :",
@@ -12242,7 +12242,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cours insiste sur la dualité : liberté individuelle + intervention de l’État via des normes juridiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Encadrement",
     question:
         "La réglementation de l’exercice d’une liberté publique par l’État :",
@@ -12257,7 +12257,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche précise que l’État peut organiser l’exercice des libertés, mais sans les priver de leur contenu essentiel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Sélection des libertés",
     question:
         "Selon le cours, toutes les libertés n’entrent pas dans la catégorie des libertés publiques car :",
@@ -12272,7 +12272,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le critère central est le rapport avec les autorités publiques et la consécration par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police — Niveau de contrôle",
     question:
         "Lorsqu’un policier intervient dans un domaine touchant aux libertés publiques (manifestation, perquisition, contrôle d’identité…), la légalité de son action :",
@@ -12287,7 +12287,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche souligne que le juge administratif ou judiciaire appréciera la compatibilité de l’acte de police avec la D.D.H.C. et les libertés publiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Contrôle concret",
     question:
         "Un exemple donné dans la fiche montre qu’une loi créant une nouvelle infraction vague et trop large peut être censurée :",
@@ -12302,7 +12302,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article 8 sert de base au contrôle des incriminations floues ou disproportionnées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Sûreté et garde à vue",
     question:
         "Selon la fiche, des conditions de garde à vue trop longues ou insuffisamment encadrées peuvent être jugées contraires :",
@@ -12317,7 +12317,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’exemple donné relie directement les conditions de garde à vue à l’article 9 et à la nécessité des mesures privatives de liberté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse — Intérêt pour le policier",
     question:
         "Connaître les grands articles de la D.D.H.C. et la notion de libertés publiques permet au policier :",
@@ -12332,7 +12332,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La fiche conclut en soulignant l’importance pratique de ces textes pour l’action quotidienne du policier.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "La rétention dans les locaux de police constitue avant tout une atteinte à :",
@@ -12347,7 +12347,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Parmi les administrations suivantes, lesquelles disposent du droit de retenir des individus ?",
@@ -12362,7 +12362,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "La rétention dans les locaux de police est légitime lorsqu’elle :",
@@ -12378,7 +12378,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Article 9 DDHC",
     question:
         "Selon l’article 9 de la Déclaration des droits de l’homme et du citoyen, la rigueur appliquée lors d’une arrestation doit être :",
@@ -12393,7 +12393,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Lequel de ces éléments fait partie du formalisme entourant la rétention ?",
@@ -12408,7 +12408,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie des mesures",
     question:
         "La rétention d’une personne dans les locaux de police peut être justifiée :",
@@ -12423,7 +12423,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue",
     question:
         "La durée initiale de la garde à vue décidée par un officier de police judiciaire est de :",
@@ -12434,7 +12434,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue",
     question:
         "Pour des faits de criminalité organisée ou de trafic de stupéfiants, la durée maximale de garde à vue peut atteindre :",
@@ -12445,7 +12445,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue – Terrorisme",
     question:
         "Pour les infractions liées au terrorisme, la durée maximale de garde à vue peut aller jusqu’à :",
@@ -12456,7 +12456,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs 10–13 ans",
     question:
         "La retenue d’un mineur âgé de 10 à 13 ans peut durer initialement :",
@@ -12467,7 +12467,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs 10–13 ans",
     question:
         "Pour retenir un mineur de 10 à 13 ans, il doit exister des raisons plausibles de présumer qu’il a commis :",
@@ -12482,7 +12482,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité",
     question:
         "En cas de refus ou d’impossibilité de justifier son identité, la personne peut être conduite au commissariat :",
@@ -12497,7 +12497,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité",
     question:
         "La durée maximale de rétention pour vérification d’identité (en métropole) est de :",
@@ -12508,7 +12508,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit au séjour",
     question:
         "La retenue pour vérification du droit au séjour d’un étranger peut durer au maximum :",
@@ -12519,7 +12519,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse publique",
     question:
         "Pour une personne en état d’ivresse publique et manifeste placée en chambre de sûreté, la rétention est légale :",
@@ -12534,7 +12534,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification de situation – Terrorisme",
     question:
         "La retenue pour vérification de situation d’une personne suspectée d’activités terroristes ne peut excéder :",
@@ -12545,7 +12545,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie des mesures",
     question:
         "Dans la pratique, la distinction entre mesure judiciaire et mesure administrative peut être :",
@@ -12560,7 +12560,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "But pédagogique",
     question:
         "La classification des cas de rétention en mesures judiciaires et administratives a avant tout :",
@@ -12578,7 +12578,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================================================
   // ================== NIVEAU INTERMÉDIAIRE =================
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue – Mise en situation",
     question:
         "Vous placez un individu en garde à vue à 14h00 pour un délit de droit commun. Aucune prolongation n’est décidée. Au plus tard, l’intéressé doit être libéré ou présenté à un magistrat à :",
@@ -12589,7 +12589,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs 10–13 ans – Mise en situation",
     question:
         "Un enfant de 12 ans est suspecté d’un vol simple puni de 3 ans d’emprisonnement. Peut-il faire l’objet d’une retenue de 10–13 ans ?",
@@ -12604,7 +12604,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité – Mise en situation",
     question:
         "Lors d’un contrôle, une personne refuse de donner son identité et tente de partir. Vous la conduisez au commissariat pour vérification d’identité à 18h00. Au plus tard, la rétention devra cesser à :",
@@ -12615,7 +12615,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat d’amener / d’arrêt",
     question:
         "La rétention d’une personne arrêtée en exécution d’un mandat d’amener ou d’arrêt doit durer :",
@@ -12631,7 +12631,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat de recherche",
     question:
         "Le mandat de recherche ordonne à la force publique de rechercher la personne visée et :",
@@ -12646,7 +12646,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire – Contrainte",
     question: "Une contrainte judiciaire vise principalement à :",
     options: [
@@ -12660,7 +12660,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire – Obligations",
     question:
         "La retenue pour vérification du respect des obligations judiciaires concerne :",
@@ -12675,7 +12675,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit au séjour – Mise en situation",
     question:
         "Vous retenez un étranger à 09h00 pour vérification de son droit au séjour. À 22h00, les vérifications sont toujours en cours. Quelle est la bonne conduite ?",
@@ -12691,7 +12691,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse – Mise en situation",
     question:
         "Un homme en état d’ivresse publique manifeste est placé en chambre de sûreté à 01h00. À 08h00, il parle clairement, marche sans difficulté et souhaite rentrer chez lui. Vous devez :",
@@ -12707,7 +12707,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Malades mentaux – Mise en situation",
     question:
         "Une personne présentant des troubles mentaux graves est interpellée en pleine crise dans la rue. Elle est dangereuse pour elle-même. La rétention dans les locaux de police doit :",
@@ -12723,7 +12723,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs en fugue – Mise en situation",
     question:
         "Un mineur de 15 ans en fugue est retrouvé à 23h00. Les parents ne sont joignables qu’à 06h00. La rétention au commissariat :",
@@ -12739,7 +12739,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification de situation – Terrorisme",
     question:
         "Une personne contrôlée à 15h00 fait l’objet d’une retenue pour vérification de situation liée au terrorisme. À quelle heure au plus tard la mesure doit-elle prendre fin ?",
@@ -12750,7 +12750,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principe de proportionnalité",
     question:
         "Quel principe doit guider l’usage de la coercition (menottage, fouille, immobilisation) lors d’une rétention ?",
@@ -12765,7 +12765,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme",
     question:
         "Pourquoi le formalisme (écrits, durée, notification des droits) est-il essentiel en matière de rétention ?",
@@ -12781,7 +12781,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Choix du cadre",
     question:
         "Vous interpellez un individu soupçonné d’un délit grave puni d’emprisonnement. Vous hésitez entre une garde à vue et une simple vérification d’identité prolongée. Le bon réflexe est :",
@@ -12797,7 +12797,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de durée",
     question:
         "Qui est responsable, sur le terrain, du respect des durées maximales de rétention dans les locaux de police ?",
@@ -12816,7 +12816,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================================================
   // ===================== NIVEAU DIFFICILE ==================
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Qualification de la mesure",
     question:
         "Vous contrôlez un étranger sans titre de séjour, soupçonné par ailleurs d’un vol aggravé. Vous souhaitez le retenir. Quel enchaînement est juridiquement le plus sûr ?",
@@ -12832,7 +12832,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumuls de mesures",
     question:
         "Un individu est placé en chambre de sûreté pour ivresse publique manifeste. Pendant la nuit, des éléments nouveaux montrent son implication dans un cambriolage. Que faire ?",
@@ -12848,7 +12848,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de proportionnalité",
     question:
         "Une personne retenue pour vérification d’identité est coopérative, calme, non violente. Elle est immédiatement menottée et laissée entravée dans la geôle pendant 4 heures. Quel risque juridique majeur existe ?",
@@ -12864,7 +12864,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Traçabilité – Terrorisme",
     question:
         "Dans une retenue pour vérification de situation liée au terrorisme, lequel de ces éléments est le plus déterminant pour la légalité de la mesure ?",
@@ -12880,7 +12880,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière judiciaire/administratif",
     question:
         "Dans quelle situation la frontière entre mesure judiciaire et administrative est-elle particulièrement délicate à manier pour l’agent ?",
@@ -12896,7 +12896,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullité de procédure",
     question:
         "Quel comportement expose le plus la procédure à une nullité pour atteinte disproportionnée à la liberté individuelle ?",
@@ -12912,7 +12912,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Gestion opérationnelle",
     question:
         "Vous êtes gradé de service et constatez que plusieurs retenues approchent de leur durée maximale simultanément. Quel réflexe est prioritaire ?",
@@ -12928,7 +12928,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité de l’État",
     question:
         "Une personne est maintenue en chambre de sûreté bien après son dégrisement, sans motif, parce que les agents sont débordés. Quel risque principal pour l’administration ?",
@@ -12944,7 +12944,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Éthique professionnelle",
     question:
         "Pourquoi est-il dangereux, même « pour rendre service », de garder quelques heures au poste un mineur en fugue sans formaliser le cadre de la rétention ?",
@@ -12959,7 +12959,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Toute atteinte à la liberté doit être formalisée, notamment pour les mineurs. Un « accueil informel » sans base légale est très risqué.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre général",
     question:
         "Le cadre légal spécifique d’usage des armes par les policiers et gendarmes est prévu par :",
@@ -12973,7 +12973,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document précise que le cadre commun aux agents de la police et de la gendarmerie nationales est fixé par l’article L. 435-1 du Code de la sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre général",
     question:
         "L’article L. 435-1 du Code de la sécurité intérieure s’applique aux policiers lorsqu’ils :",
@@ -12987,7 +12987,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article vise les policiers et gendarmes régulièrement armés qui font usage de leur arme dans l’exercice de leurs fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "Combien de conditions préalables l’article L. 435-1 du Code de la sécurité intérieure impose-t-il avant tout usage d’une arme par un policier ?",
@@ -12997,7 +12997,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte indique que l’article L. 435-1 du Code de la sécurité intérieure impose trois conditions préalables à l’usage d’une arme : l’exercice des fonctions, le port de l’uniforme ou d’insignes apparents, et l’absolue nécessité avec proportionnalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "La première condition préalable à l’usage d’une arme par un policier est :",
@@ -13011,7 +13011,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le policier doit agir dans l’exercice de ses fonctions, soit pendant son temps de service, soit hors service lorsqu’il agit au titre des obligations d’assistance aux personnes en danger.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "La deuxième condition préalable à l’usage d’une arme par un policier est :",
@@ -13026,7 +13026,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte impose que le policier soit en uniforme ou porte des insignes extérieurs et apparents de sa qualité (par exemple le brassard police).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "La troisième condition préalable exige que l’usage de l’arme soit :",
@@ -13040,7 +13040,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article L. 435-1 du Code de la sécurité intérieure impose une absolue nécessité et une stricte proportionnalité entre la menace et la riposte armée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers adjoints",
     question:
         "Les policiers adjoints peuvent-ils conserver leur arme individuelle en dehors des heures de service ?",
@@ -13055,7 +13055,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document précise que, contrairement aux fonctionnaires actifs, les policiers adjoints ne peuvent concevoir l’usage de leur arme hors service car ils ne sont pas autorisés à la conserver en dehors des heures de service.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situations — Vue d’ensemble",
     question:
         "Lorsque les trois conditions préalables sont remplies, l’article L. 435-1 du Code de la sécurité intérieure autorise l’usage de l’arme dans :",
@@ -13065,7 +13065,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cadre juridique spécifique prévoit cinq situations limitativement énumérées dans lesquelles l’usage de l’arme peut intervenir.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situations — Somations",
     question:
         "Dans plusieurs situations prévues par l’article L. 435-1 (défense de lieux, fuite d’un individu dangereux, véhicule dangereux), les sommations :",
@@ -13079,7 +13079,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte parle de sommations obligatoires faites à haute voix, sauf impossibilité pratique liée à l’urgence ou à la nature de la menace.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lien avec la légitime défense",
     question:
         "En dehors des cinq situations prévues à l’article L. 435-1 du Code de la sécurité intérieure (et hors dispersion d’attroupement), quel régime de droit commun reste applicable pour justifier l’usage des armes ?",
@@ -13095,7 +13095,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 1 — Atteintes à la vie",
     question:
         "La première situation de l’article L. 435-1 du Code de la sécurité intérieure permet l’usage des armes lorsque :",
@@ -13110,7 +13110,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La situation 1 vise les atteintes à la vie ou à l’intégrité physique du policier ou d’un tiers, ou la menace d’une telle atteinte par des personnes armées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 1 — Atteintes à la vie",
     question:
         "Dans la situation 1 (atteintes à la vie ou à l’intégrité physique), le texte indique qu’il n’est pas prévu de procéder à des sommations car :",
@@ -13124,7 +13124,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Compte tenu de l’imminence de l’atteinte à la vie ou à l’intégrité physique, la réalisation de sommations peut être incompatible avec la sauvegarde des personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 2 — Lieux occupés",
     question:
         "La deuxième situation de l’article L. 435-1 concerne la défense des lieux occupés par les policiers ou des personnes qui leur sont confiées. L’usage des armes est possible :",
@@ -13139,7 +13139,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit des sommations obligatoires à haute voix avant l’usage des armes pour défendre des lieux ou des personnes confiées, sauf impossibilité matérielle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 2 — Lieux occupés",
     question:
         "La défense des lieux occupés à titre permanent par les policiers peut viser par exemple :",
@@ -13153,7 +13153,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document cite comme exemples un poste de police ou un centre de rétention administrative provisoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 3 — Fuite individu dangereux",
     question:
         "Dans la troisième situation (fuite d’un individu dangereux placé sous leur garde), l’usage des armes est possible après sommations lorsque :",
@@ -13168,7 +13168,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte vise la personne placée sous garde à vue ou sous escorte qui tente de s’échapper alors qu’elle est sous la garde des policiers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 3 — Individu dangereux",
     question:
         "Dans la troisième situation, l’usage des armes n’est légitime que si les policiers disposent :",
@@ -13183,7 +13183,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte exige des raisons réelles et objectives de penser que l’individu, au moment de sa fuite, peut porter atteinte à la vie ou à l’intégrité physique des policiers ou d’autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Véhicule dangereux",
     question:
         "Dans la quatrième situation, les policiers peuvent faire usage de leur arme pour immobiliser un véhicule lorsque :",
@@ -13198,7 +13198,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’article vise le refus d’obtempérer à un ordre d’arrêt accompagné de raisons réelles et objectives de penser que le véhicule ou ses occupants sont dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Véhicule dangereux",
     question: "L’ordre d’arrêt, dans la quatrième situation, doit être :",
     options: [
@@ -13212,7 +13212,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte précise que l’ordre d’arrêt doit être dépourvu d’ambiguïté et clairement entendu par le conducteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Limites",
     question:
         "Selon l’article L. 435-1, il ne peut être fait usage des armes pour immobiliser un véhicule dans le seul but :",
@@ -13227,7 +13227,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte rappelle que l’on ne peut pas utiliser l’arme pour contraindre un véhicule à s’arrêter lorsque ce véhicule n’est pas dangereux pour ses occupants ou pour autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 5 — Périple meurtrier",
     question:
         "Dans la cinquième situation, le périple meurtrier, les policiers peuvent faire usage de leur arme contre un individu lorsque la première condition suivante est remplie :",
@@ -13242,7 +13242,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le périple meurtrier concerne un individu qui vient de commettre ou de tenter de commettre un ou plusieurs meurtres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 5 — Périple meurtrier",
     question:
         "Toujours dans la cinquième situation, les policiers doivent avoir des raisons réelles et objectives de penser que :",
@@ -13259,7 +13259,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables — Exercice des fonctions",
     question:
         "Un policier hors service, en tenue civile, assiste à une agression mortelle et intervient en utilisant son arme sans porter d’insigne extérieur. Pour apprécier la légalité de son geste, on pourra :",
@@ -13274,7 +13274,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cadre spécial ne peut s’appliquer faute d’insignes apparents, mais le policier peut encore invoquer la légitime défense de droit commun s’il en remplit les conditions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Somations — Appréciation",
     question:
         "Dans une situation de fuite d’un individu dangereux placé sous garde, les sommations ne sont pas matériellement possibles (tir immédiat nécessaire pour protéger une victime menacée d’un couteau). Juridiquement :",
@@ -13289,7 +13289,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte prévoit les sommations « sauf impossibilité », ce qui permet de les écarter en cas de danger immédiat pour la vie ou l’intégrité physique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 3 — Individu dangereux",
     question:
         "Un individu placé en garde à vue pour un délit mineur s’enfuit en courant, sans antécédent violent connu. Le policier, après deux sommations, fait usage de son arme pour l’empêcher de fuir. Quel critère fait le plus défaut ?",
@@ -13304,7 +13304,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La seule fuite ne suffit pas : il faut en plus des raisons réelles et objectives de penser que l’individu représente une menace grave pour la vie ou l’intégrité physique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Véhicule",
     question:
         "Lors d’un simple refus d’obtempérer à un contrôle routier, un véhicule prend la fuite à faible vitesse sur une route déserte. Aucun élément ne laisse penser que le conducteur est armé ou dangereux. Le tir sur le véhicule pour le contraindre à s’arrêter :",
@@ -13319,7 +13319,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le texte interdit d’utiliser les armes pour contraindre un véhicule à s’arrêter en l’absence de dangerosité réelle de ce véhicule ou de ses occupants.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 5 — Périple meurtrier",
     question:
         "Dans la situation de périple meurtrier, l’usage des armes par les policiers suppose notamment que :",
@@ -13334,7 +13334,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Les conditions cumulatives sont la commission ou tentative de meurtre, la probabilité d’une réitération dans un temps rapproché et le caractère exclusif du recours aux armes pour l’empêcher.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lien avec la légitime défense",
     question:
         "Un policier en uniforme, dans l’exercice de ses fonctions, fait usage de son arme dans une situation qui n’entre dans aucune des cinq hypothèses de l’article L. 435-1. Pour apprécier sa responsabilité, il conviendra :",
@@ -13349,7 +13349,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le régime spécial n’exclut pas le recours au régime général de la légitime défense lorsque les conditions de ce dernier sont remplies.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupement — Lien L. 211-9",
     question: "L’article L. 211-9 du Code de la sécurité intérieure traite :",
     options: [
@@ -13362,7 +13362,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document rappelle que la dispersion d’un attroupement relève d’un régime spécifique prévu à l’article L. 211-9 du Code de la sécurité intérieure.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appréciation in concreto",
     question:
         "Pour apprécier la condition d’« absolue nécessité » posée par l’article L. 435-1, le juge tient compte notamment :",
@@ -13377,7 +13377,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Comme pour la légitime défense, la nécessité et la proportionnalité sont appréciées in concreto à partir de tous les éléments de la situation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policier adjoint — Hors service",
     question:
         "Un policier adjoint conserve illégalement son arme à son domicile et s’en sert pour intervenir dans une agression de rue en dehors de tout service. Même si les critères de la légitime défense sont par ailleurs remplis, sur le terrain de l’article L. 435-1 :",
@@ -13394,7 +13394,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ===================== NIVEAU Difficile =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation régimes spéciaux / droit commun",
     question:
         "Lorsque l’usage des armes par un policier ne remplit pas une des conditions préalables de l’article L. 435-1 du Code de la sécurité intérieure mais que la situation correspond à une agression mortelle en cours, la juridiction pénale pourra :",
@@ -13409,7 +13409,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le cadre spécial n’exclut pas l’application subsidiaire du régime général de la légitime défense dès lors que ses conditions sont réunies.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Périple meurtrier — Exclusivité du moyen",
     question:
         "Dans la situation de périple meurtrier, l’exclusivité du moyen signifie que :",
@@ -13424,7 +13424,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "La loi exige que l’usage de l’arme ait pour but exclusif d’empêcher la réitération des meurtres lorsqu’aucun autre moyen n’est réellement disponible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicule dangereux — Analyse fine",
     question:
         "Un véhicule vient de forcer un barrage, a tenté de percuter des piétons et continue sa course à grande vitesse vers une zone très fréquentée. Les policiers, après sommations à la radio et gestes réglementaires, ouvrent le feu sur le conducteur. L’analyse juridique au regard de l’article L. 435-1 se fonde principalement sur :",
@@ -13439,7 +13439,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le véhicule-bélier rend la menace grave et actuelle, ce qui permet d’entrer dans la quatrième situation si les autres conditions sont remplies.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Somations — Formule",
     question:
         "Les sommations en matière d’usage des armes doivent être faites à haute voix avec des formules explicites telles que :",
@@ -13454,7 +13454,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "Le document reprend l’exemple classique de sommations successives « Halte police » puis « Halte ou je fais feu », qui doivent se succéder dans un temps court.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appréciation judiciaire",
     question:
         "En pratique, lors d’un contentieux pénal sur l’usage des armes, les juges vont confronter la version du policier :",
@@ -13469,7 +13469,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         "L’examen porte sur la réalité de la menace et l’adéquation de la riposte, à partir de tous les éléments de preuve disponibles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Le tribunal correctionnel juge :',
     options: ['Les contraventions', 'Les délits', 'Les crimes'],
@@ -13477,7 +13477,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétence de principe pour les délits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Quelle juridiction connaît des contraventions ?',
     options: ['Tribunal correctionnel', 'Cour d’assises', 'Tribunal de police'],
@@ -13485,7 +13485,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Contraventions → tribunal de police.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Gravité',
     question: 'Classe de gravité (du moins grave au plus grave) :',
     options: [
@@ -13497,7 +13497,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Hiérarchie légale classique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Le non-port de la ceinture de sécurité est en principe :',
     options: ['Une contravention', 'Un délit', 'Un crime'],
@@ -13505,7 +13505,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction routière contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Le vol simple (sans circonstance aggravante) est :',
     options: ['Une contravention', 'Un délit', 'Un crime'],
@@ -13513,7 +13513,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Puni correctionnellement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La cour d’assises juge en principe :',
     options: ['Les délits', 'Les crimes', 'Les contraventions'],
@@ -13521,7 +13521,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Juridiction criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Les crimes sont principalement punis par :',
     options: [
@@ -13533,7 +13533,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'La réclusion est la peine criminelle de référence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'Une “peine principale” est celle qui :',
     options: [
@@ -13545,7 +13545,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elle peut être complétée par des peines complémentaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La classification impacte :',
     options: [
@@ -13558,7 +13558,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'C’est le socle de l’orientation pénale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La chambre spécialisée pour mineurs peut connaître :',
     options: [
@@ -13570,7 +13570,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Organisation spéciale pour les mineurs délinquants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines complémentaires',
     question: 'La suspension du permis de conduire est :',
     options: [
@@ -13582,7 +13582,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Peine privative/restrictive de droits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Astreintes',
     question: 'Le TIG (travail d’intérêt général) est-il rémunéré ?',
     options: ['Oui', 'Non', 'Seulement au SMIC'],
@@ -13590,7 +13590,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Travail non rémunéré au profit d’une structure habilitée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de contravention est :',
     options: [
@@ -13602,7 +13602,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe : pas de tentative pour les contraventions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Complicité',
     question: 'La complicité de crime ou de délit est :',
     options: [
@@ -13614,7 +13614,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe pénal général.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question: 'Combien de classes de contraventions ?',
     options: ['3', '4', '5'],
@@ -13622,7 +13622,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'De la 1re à la 5e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'La “sanction-réparation” vise principalement :',
     options: [
@@ -13634,7 +13634,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Réparation du dommage causé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Gravité',
     question: 'Quelle affirmation est correcte ?',
     options: [
@@ -13646,7 +13646,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Sans aggravation, c’est correctionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge le tapage nocturne (hors récidive) ?',
     options: ['Cour d’assises', 'Tribunal correctionnel', 'Tribunal de police'],
@@ -13654,7 +13654,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Conduite sans ceinture :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -13662,7 +13662,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Routier contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Homicide involontaire par maladresse (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -13670,7 +13670,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Juridiquement correctionnel en principe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Homicide volontaire :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -13678,7 +13678,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétence criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Le juge unique du tribunal de police statue sur :',
     options: ['Crimes', 'Délits', 'Contraventions'],
@@ -13686,7 +13686,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétence de principe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question:
         'Principe : prescription de l’action publique des contraventions :',
@@ -13695,7 +13695,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Délai de principe pour les contraventions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: '“Jours-amende”, c’est :',
     options: [
@@ -13707,7 +13707,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Montant global = nb jours × montant/jour.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'L’amende contraventionnelle maximale de principe est :',
     options: ['375 €', '750 €', '1500 €'],
@@ -13715,7 +13715,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Hors récidive/texte spécial.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de crime est :',
     options: [
@@ -13727,7 +13727,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Même si le crime n’a pas abouti.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de délit est :',
     options: [
@@ -13739,7 +13739,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Selon les textes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge un “délit de fuite” (cas simple) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -13747,7 +13747,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Délit routier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question:
         'Qui juge les “violences volontaires ayant entraîné ITT < 8 jours” (sans circonstance aggravante) ?',
@@ -13756,7 +13756,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Contravention de 4e classe (selon cas).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge un “abus de confiance” ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -13764,7 +13764,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction correctionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge une “extorsion” (cas général) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -13772,7 +13772,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Délit (sauf formes aggravées relevant du criminel).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge un “meurtre” ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -13780,7 +13780,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Une interdiction de détenir des armes est :',
     options: [
@@ -13792,7 +13792,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Peine privative/restrictive de droits possible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exécution',
     question: 'Les peines privatives/restrictives de droits :',
     options: [
@@ -13804,7 +13804,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Elles complètent la peine principale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'La diffamation publique relève :',
     options: [
@@ -13816,7 +13816,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Droit de la presse : règles spécifiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'La classification de l’infraction conditionne-t-elle les modes de poursuite ?',
@@ -13825,7 +13825,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'CRPC, composition pénale, information, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La contravention de 5e classe est jugée par :',
     options: ['Cour d’assises', 'Tribunal correctionnel', 'Tribunal de police'],
@@ -13833,7 +13833,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Toujours contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Conduite sans assurance (première constatation) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -13841,7 +13841,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction correctionnelle (Code des assurances).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Menaces de mort réitérées (sans mise à exécution) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -13849,7 +13849,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel (selon circonstances).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Tags/dégradations légères (dommages mineurs) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -13857,7 +13857,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Selon évaluation du dommage (seuils).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui connaît des crimes avec participation de jurés ?',
     options: ['Tribunal correctionnel', 'Cour d’assises', 'Tribunal de police'],
@@ -13865,7 +13865,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Jury populaire (selon degré).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui connaît des délits de presse (hors exceptions) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -13873,7 +13873,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétence de principe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Un stage de citoyenneté peut être :',
     options: [
@@ -13889,7 +13889,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================
   //         MOYENNE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'Prescription (principe) pour les délits :',
     options: ['1 an', '3 ans', '6 ans'],
@@ -13897,7 +13897,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Délai de principe (hors régimes spéciaux).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'Prescription (principe) pour les crimes :',
     options: ['6 ans', '10 ans', '20 ans'],
@@ -13905,7 +13905,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Délai de principe (hors dérogations).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'Crimes contre l’humanité :',
     options: ['Prescrits à 20 ans', 'Prescrits à 30 ans', 'Imprescriptibles'],
@@ -13913,7 +13913,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Régime d’imprescriptibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La “cour criminelle départementale” juge :',
     options: [
@@ -13926,7 +13926,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Crimes punis de 15 ou 20 ans réclusion (selon périmètre légal).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Composition',
     question: 'Cour d’assises (premier ressort) : nombre de jurés populaires ?',
     options: ['6', '9', '12'],
@@ -13934,7 +13934,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: '6 jurés + 3 magistrats = 9 membres délibérants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Composition',
     question: 'Cour d’assises d’appel : nombre de jurés populaires ?',
     options: ['6', '9', '12'],
@@ -13942,7 +13942,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: '9 jurés + 3 magistrats = 12 membres délibérants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question:
         'Cour d’assises (premier ressort) : majorité requise pour déclarer coupable ?',
@@ -13951,7 +13951,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Majorité qualifiée (sur 9 votants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'Cour d’assises d’appel : majorité requise pour la culpabilité ?',
     options: ['7 voix', '8 voix', '9 voix'],
@@ -13959,7 +13959,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Majorité qualifiée (sur 12 votants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question:
         'Le tribunal correctionnel connaît des délits dont la peine encourue est :',
@@ -13973,7 +13973,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Peines correctionnelles (emprisonnement/ amende).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question: 'Récidive de 5e classe : le plafond de l’amende peut atteindre :',
     options: ['1500 €', '2000 €', '3000 €'],
@@ -13981,7 +13981,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Plafond relevé en récidive pour certaines contraventions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Jours-amende : le montant maximal usuel par jour (principe) :',
     options: ['100 €', '500 €', '1000 €'],
@@ -13989,7 +13989,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Plafond légal courant par jour.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Jours-amende : nombre de jours maximal usuel (principe) :',
     options: ['90', '180', '360'],
@@ -13997,7 +13997,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Fixé par le juge dans la limite légale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La classification (crime/délit/contravention) influe sur :',
     options: [
@@ -14009,7 +14009,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Modes de poursuite et organisation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Dégradation légère d’un abribus (dommage mineur) : juridiction ?',
@@ -14018,7 +14018,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Contravention selon l’évaluation du dommage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Vol simple d’un téléphone dans un café, sans violence :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14026,7 +14026,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Vol simple → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Vol avec arme et blessure grave de la victime :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14034,7 +14034,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Circonstances aggravantes → criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Blanchiment d’argent (cas courant sans crime connexe) :',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -14042,7 +14042,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Délit économique/financier.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Tentative de vol à main armée (non aboutie) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14050,7 +14050,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Tentative de crime punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence territoriale',
     question:
         'En principe, la juridiction territorialement compétente est celle :',
@@ -14063,7 +14063,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Règles de compétence territoriale pénale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question:
         'Certaines matières (terrorisme, trafic de stupéfiants en bande organisée…) :',
@@ -14076,7 +14076,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétences spécialisées prévues par la loi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, qui participe au vote ?',
     options: [
@@ -14088,7 +14088,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Collégialité mixte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures',
     question:
         'La détention à domicile sous surveillance électronique (DDSE) est :',
@@ -14101,7 +14101,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Substitut/ aménagement de l’emprisonnement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stages',
     question: 'Des “peines de stage” peuvent viser :',
     options: [
@@ -14113,7 +14113,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Divers stages prévus par les textes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Blessures involontaires avec ITT de 15 jours par imprudence simple :',
@@ -14122,7 +14122,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Seuil d’ITT et faute → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Outrage simple à une personne dépositaire de l’autorité publique :',
@@ -14131,7 +14131,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel (Code pénal).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Usage de faux document administratif (premiers faits) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14139,7 +14139,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte à l’autorité publique et à la confiance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'Injure publique simple :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14147,7 +14147,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Régime spécial de la presse.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'La classification influe sur la durée maximale de détention provisoire :',
@@ -14156,7 +14156,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Durées et seuils varient selon la gravité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'La classification oriente aussi les compétences d’instruction (juge d’instruction) :',
@@ -14166,7 +14166,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Information judiciaire plus fréquente pour les crimes/délits complexes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'La réclusion criminelle à perpétuité relève :',
     options: [
@@ -14178,7 +14178,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Peine criminelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La CRPC (“plaider-coupable”) est possible :',
     options: [
@@ -14190,7 +14190,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Procédure applicable à des délits déterminés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Recel d’un bien volé (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14198,7 +14198,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction autonome correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Violences volontaires avec ITT de 10 jours sans arme ni circonstance aggravante :',
@@ -14207,7 +14207,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Seuil d’ITT > 8 jours → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Vol simple commis de nuit dans un lieu habité avec effraction :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14215,7 +14215,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Aggravations pouvant faire basculer au criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Complicité',
     question: 'La complicité de contravention :',
     options: [
@@ -14227,7 +14227,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Spécificité du droit contraventionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question: 'Contravention : la juridiction statue en principe avec :',
     options: [
@@ -14239,7 +14239,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Tribunal de police (juge unique).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Un délit commis sur Internet : compétence territoriale possible :',
@@ -14252,7 +14252,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Multiplicité de rattachements en cyberdélinquance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'La confiscation d’un bien est :',
     options: [
@@ -14264,7 +14264,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Selon texte d’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Conduite après usage de stupéfiants (premiers faits, hors aggravation) :',
@@ -14273,7 +14273,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel routier.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Conduite avec 0,25 mg/l d’air expiré (0,5 g/l sang), première constatation :',
@@ -14282,7 +14282,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Seuil contraventionnel (hors récidive/ circonstances).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Conduite avec 0,50 mg/l d’air expiré (1,0 g/l sang) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14290,7 +14290,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Seuil délictuel dépassé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Terrorisme : compétence :',
     options: [
@@ -14302,7 +14302,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Organisation centralisée (PNAT, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La publicité des débats en cour d’assises est :',
     options: [
@@ -14314,7 +14314,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Huis clos possible selon cas (mineurs, ordre public…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'Le secret du vote en cour d’assises :',
     options: [
@@ -14326,7 +14326,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Jurés et magistrats votent au secret.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'L’interdiction d’exercer une activité professionnelle est :',
     options: [
@@ -14338,7 +14338,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Selon les textes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Port d’arme prohibée (couteau) sans motif légitime :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14346,7 +14346,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte à l’ordre public.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions routières',
     question:
         'Grand excès de vitesse (≥ 50 km/h au-dessus) première constatation :',
@@ -14356,7 +14356,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Contravention de 5e classe (mesures administratives associées).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions routières',
     question: 'Grand excès de vitesse en récidive dans un délai légal :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14364,7 +14364,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Récidive légale → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Entrave à la circulation sans dommage humain (manifestation non déclarée) :',
@@ -14373,7 +14373,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte à l’ordre public (textes spéciaux).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Incendie volontaire d’un véhicule sans victime ni propagation :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14381,7 +14381,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Destructions volontaires par incendie → criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question: 'Qui juge la “réception d’un bien volé” (recel) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -14389,7 +14389,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'Le jury de cour d’assises prête serment :',
     options: ['Vrai', 'Faux'],
@@ -14397,7 +14397,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Serment avant de siéger et de juger.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction commise à bord d’un avion français en vol international :',
@@ -14410,7 +14410,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Règles de compétence extraterritoriale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Trafic de stupéfiants en bande organisée :',
     options: [
@@ -14423,7 +14423,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Organisation spécialisée, peines correctionnelles très élevées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Harcèlement moral au travail (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14431,7 +14431,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel (Code pénal/Code du travail).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Escroquerie à la carte bancaire (sommes modestes, sans bande organisée) :',
@@ -14440,7 +14440,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Infraction patrimoniale correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, le président et les assesseurs votent :',
     options: [
@@ -14452,7 +14452,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Un seul collège de vote.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction du territoire français (ITF) :',
     options: [
@@ -14464,7 +14464,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Prévue pour certaines infractions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'La contrainte pénale (ou suivi renforcé) appartient :',
     options: ['Aux mesures d’enquête', 'Aux peines', 'Aux mesures civiles'],
@@ -14472,7 +14472,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Peine alternative/ aménagement, selon régime en vigueur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'Délais de prescription en matière de presse sont :',
     options: [
@@ -14484,7 +14484,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Règles spéciales (ex. délais brefs).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence matérielle',
     question: 'Les juridictions de proximité pénale ont été :',
     options: [
@@ -14496,7 +14496,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Évolutions organisationnelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Faux et usage de faux en écriture privée (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14504,7 +14504,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Agression sexuelle sans pénétration, majeure sur majeure, hors circonstances aggravantes :',
@@ -14513,7 +14513,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel (atteinte sexuelle ≠ viol).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Viol (pénétration sexuelle imposée) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14521,7 +14521,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte sexuelle la plus grave → criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'L’appel d’un jugement correctionnel est porté devant :',
     options: ['Cour d’assises', 'Cour d’appel', 'Cour de cassation'],
@@ -14529,7 +14529,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Double degré de juridiction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'Le pourvoi contre un arrêt d’assises se fait devant :',
     options: ['Cour d’appel', 'Cour de cassation', 'Conseil d’État'],
@@ -14537,7 +14537,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Contrôle de droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, la peine est votée :',
     options: [
@@ -14549,7 +14549,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Même collège délibérant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question: 'Infraction commise à bord d’un navire français en haute mer :',
     options: [
@@ -14561,7 +14561,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Rattachement pavillon.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Crimes commis par un mineur de 16 ans :',
     options: [
@@ -14573,7 +14573,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Organisation spécifique (juridictions pour mineurs).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction d’entrer en contact avec la victime est :',
     options: [
@@ -14585,7 +14585,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Peine restrictive de droits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Introduction dans un domicile par ruse de jour sans violence ni effraction (vol) :',
@@ -14594,7 +14594,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Aggravation possible, mais reste correctionnel selon faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Administration de substances nuisibles sans ITT :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14602,7 +14602,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte à l’intégrité physique (selon résultats).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Classes',
     question: 'Une contravention de 3e classe est jugée :',
     options: [
@@ -14614,7 +14614,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Contraventions → tribunal de police.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'Diffamation envers un particulier :',
     options: [
@@ -14626,7 +14626,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Droit de la presse.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Traite des êtres humains :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14634,7 +14634,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte grave à la dignité humaine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En assises, l’acquittement est adopté :',
     options: [
@@ -14646,7 +14646,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Mêmes règles de majorité que la culpabilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La présence d’un avocat est obligatoire en cour d’assises :',
     options: ['Vrai', 'Faux'],
@@ -14654,7 +14654,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Garanties procédurales renforcées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction de paraître dans certains lieux :',
     options: ['Peine complémentaire', 'Mesure civile', 'Contravention'],
@@ -14666,7 +14666,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   // =========================
   //        DIFFICILE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question:
         'Pour certaines infractions commises contre des mineurs, la prescription peut courir :',
@@ -14679,7 +14679,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Point de départ retardé par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dérogations',
     question: 'Infractions de presse : délais de prescription :',
     options: [
@@ -14691,7 +14691,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Régime dérogatoire (délais brefs).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour criminelle',
     question: 'La cour criminelle départementale statue :',
     options: [
@@ -14703,7 +14703,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Composition collégiale de magistrats.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour criminelle',
     question: 'La cour criminelle connaît en principe des crimes punis :',
     options: ['De 10 ans', 'De 15 ou 20 ans', 'Uniquement de la perpétuité'],
@@ -14711,7 +14711,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Périmètre légal (hors exceptions).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En assises, le vote sur la peine doit respecter :',
     options: ['Une majorité simple', 'Une majorité qualifiée', 'L’unanimité'],
@@ -14719,7 +14719,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Règles identiques à la culpabilité (selon degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'L’“information judiciaire” est :',
     options: [
@@ -14731,7 +14731,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Surtout pour crimes/délits complexes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Crimes contre l’humanité : juridiction :',
     options: [
@@ -14743,7 +14743,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétence criminelle spécifique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction commise par un Français à l’étranger contre un Français :',
@@ -14756,7 +14756,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Compétences extraterritoriales sous conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction commise à l’étranger par un étranger contre un Français :',
@@ -14769,7 +14769,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Conditions de recevabilité/ plainte / double incrimination.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: '“Crime flagrant” :',
     options: [
@@ -14781,7 +14781,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Mode d’enquête spécifique (flagrance).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La détention provisoire est plus encadrée pour :',
     options: ['Les contraventions', 'Les délits', 'Les crimes'],
@@ -14790,7 +14790,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Seuils et durées maximales plus élevées mais fortement encadrées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En assises, en cas de doute sur la culpabilité :',
     options: [
@@ -14802,7 +14802,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Principe de présomption d’innocence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction des droits civiques (vote, éligibilité…) :',
     options: ['Peine complémentaire', 'Mesure de sûreté', 'Contravention'],
@@ -14810,7 +14810,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Possible en correctionnel/criminel selon texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Homicide involontaire avec violation délibérée d’une obligation de prudence (alcool + vitesse) :',
@@ -14819,7 +14819,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Correctionnel avec aggravation de la peine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Vol avec arme en bande organisée avec enlèvement de la victime :',
@@ -14828,7 +14828,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Multiples aggravations → criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Séquestration de 8 heures sans motifs légitimes :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14836,7 +14836,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Atteinte grave à la liberté → criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour criminelle',
     question:
         'En cour criminelle départementale, le nombre de magistrats est :',
@@ -14845,7 +14845,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Collégialité de cinq magistrats.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La participation du public en cour d’assises est :',
     options: ['Active', 'Par tirage au sort de jurés', 'Inexistante'],
@@ -14853,7 +14853,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Jury populaire tiré au sort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction continue commise sur plusieurs ressorts (escroquerie en série) :',
@@ -14867,7 +14867,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Règles cumulatives de compétence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question:
         'En assises, si la majorité requise n’est pas atteinte pour la culpabilité :',
@@ -14876,7 +14876,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Le doute profite à l’accusé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question:
         'Violences volontaires ayant entraîné une mutilation permanente :',
@@ -14885,7 +14885,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Gravité des conséquences corporelles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Association de malfaiteurs en vue d’un crime :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14893,7 +14893,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Finalité criminelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'En matière criminelle, l’instruction par un juge d’instruction est :',
@@ -14907,7 +14907,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Instruction criminelle obligatoire (sauf régimes dérogatoires).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'La peine de sûreté (période incompressible de réclusion) :',
     options: ['Contravention', 'Délit', 'Criminel'],
@@ -14915,7 +14915,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Attachée aux peines criminelles lourdes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Corruption d’agent public (corruption active) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14924,7 +14924,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Atteinte à la probité publique → correctionnel (peines élevées).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Trafic d’armes à feu en bande organisée :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -14932,7 +14932,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Gravité et organisation → criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Aide à l’entrée/ séjour irrégulier en bande organisée, avec mise en danger :',
@@ -14941,7 +14941,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Aggravations pouvant relever du criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infractions boursières commises sur une place étrangère impactant un marché français :',
@@ -14956,7 +14956,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // --- Suite après 'territoriale' ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, le président a-t-il une voix prépondérante ?',
     options: ['Oui', 'Non'],
@@ -14967,7 +14967,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ JURIDICTIONS / COMPOSITION ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour d’assises',
     question: 'Combien de jurés populaires siègent en première instance ?',
     options: ['3', '6', '9'],
@@ -14976,7 +14976,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'En première instance : 6 jurés + 3 magistrats professionnels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour d’assises',
     question: 'Combien de jurés populaires siègent en appel ?',
     options: ['6', '9', '12'],
@@ -14984,7 +14984,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'En appel : 9 jurés + 3 magistrats professionnels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour d’assises',
     question: 'La cour d’assises juge principalement :',
     options: ['Les contraventions', 'Les délits', 'Les crimes'],
@@ -14993,7 +14993,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Compétence criminelle de principe (infractions les plus graves).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tribunal correctionnel',
     question: 'Le tribunal correctionnel statue en principe en formation :',
     options: ['Collégiale', 'Juge unique', 'Avec jurés populaires'],
@@ -15002,7 +15002,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Formation collégiale de principe ; le juge unique est possible pour certains délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tribunal de police',
     question: 'Le tribunal de police statue en principe avec :',
     options: ['Un juge unique', 'Trois juges', 'Des jurés'],
@@ -15011,7 +15011,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Juridiction compétente pour les contraventions, siégeant à juge unique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question: 'Une contravention de 5e classe relève en principe :',
     options: [
@@ -15024,7 +15024,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Toutes les contraventions, y compris la 5e classe, relèvent du tribunal de police.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question:
         'Un homicide involontaire commis par imprudence à la circulation est en principe :',
@@ -15033,7 +15033,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Il relève du tribunal correctionnel (délit).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question: 'Un viol est en principe jugé par :',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -15043,7 +15043,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ TERRITORIALE / LIEU DE L’INFRACTION ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Une escroquerie réalisée en ligne depuis l’étranger, avec des victimes en France, peut-elle être poursuivie en France ?',
@@ -15057,7 +15057,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Compétence possible si un élément constitutif ou le résultat a lieu en France.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'En cas d’infraction commise dans plusieurs ressorts, est compétent :',
@@ -15073,7 +15073,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ MINEURS ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineurs',
     question: 'Qui juge en principe un délit commis par un mineur ?',
     options: [
@@ -15086,7 +15086,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le tribunal pour enfants juge les délits des mineurs (procédure et peines adaptées).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineurs',
     question: 'Un crime commis par un mineur relève :',
     options: [
@@ -15101,7 +15101,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ PRESCRIPTION (rappels généraux sûrs) ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'La prescription de l’action publique court en principe :',
     options: [
@@ -15116,7 +15116,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ PROCÉDURE / MODES DE POURSUITE ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La composition pénale peut viser :',
     options: [
@@ -15128,7 +15128,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Mesure proposée par le procureur pour certaines infractions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La CRPC (plaider-coupable) concerne :',
     options: ['Les délits', 'Les crimes', 'Toutes les contraventions'],
@@ -15137,7 +15137,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Procédure de comparution sur reconnaissance préalable de culpabilité : uniquement pour des délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'L’ordonnance pénale est un mode de poursuite possible notamment pour :',
@@ -15153,7 +15153,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ PEINES / PRINCIPES ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Le sursis probatoire est :',
     options: [
@@ -15166,7 +15166,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Sursis assorti d’obligations (soins, travail, indemnisation, etc.), suivi par le SPIP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Un stage de sensibilisation à la sécurité routière est :',
     options: [
@@ -15181,7 +15181,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ EXEMPLES / MISES EN SITUATION ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Tapage nocturne (réitéré) avec constat par procès-verbal : relève en principe de…',
@@ -15191,7 +15191,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les troubles de voisinage/tapage relèvent généralement du régime contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Vol à l’étalage simple (faible valeur, sans circonstance aggravante) :',
@@ -15201,7 +15201,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le vol est un délit sauf aggravations (bande organisée, armes, violences…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Conduite sous l’empire d’un état alcoolique délictuel (taux délit) :',
@@ -15211,7 +15211,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Les délits routiers (seuils délictueux) relèvent du tribunal correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Harcèlement moral au travail (hors cas contraventionnels) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -15222,7 +15222,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ APPEL / COUR D’APPEL ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appel',
     question: 'Les arrêts de la cour d’assises sont susceptibles :',
     options: ['D’opposition', 'D’appel', 'Uniquement de pourvoi en cassation'],
@@ -15231,7 +15231,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Possibilité d’appel des arrêts d’assises devant une autre cour d’assises d’appel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appel',
     question: 'Les jugements du tribunal correctionnel sont susceptibles :',
     options: ['D’appel', 'Uniquement de pourvoi', 'Jamais de recours'],
@@ -15242,7 +15242,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ ÉLÉMENTS GÉNÉRAUX / RAPPELS ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Gravité',
     question: 'Classement par gravité croissante :',
     options: [
@@ -15254,7 +15254,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
     explanation: 'Ordre légal : contravention < délit < crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions spécialisées',
     question:
         'Des juridictions/compétences spécialisées existent (presse, terrorisme, mineurs, éco-financier…).',
@@ -15266,7 +15266,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
   ),
 
   // ------ AUTRES POINTS CIBLES ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question:
         'En cour d’assises, la culpabilité est acquise si la majorité requise est atteinte lors du vote à bulletins secrets.',
@@ -15276,7 +15276,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Le vote se fait à bulletins secrets ; une majorité qualifiée est exigée par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'Une peine complémentaire :',
     options: [
@@ -15289,7 +15289,7 @@ final List<QuizQuestion> questionsGeneralitePage = [
         'Suspension de permis, interdictions, confiscations… selon textes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exécution',
     question:
         'La DDSE (détention à domicile sous surveillance électronique) est :',
@@ -15656,7 +15656,7 @@ class _QuizGeneralitePageState extends State<QuizGeneralitePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -15859,7 +15859,7 @@ class _QuizGeneralitePageState extends State<QuizGeneralitePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -16042,7 +16042,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -16575,10 +16574,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -16949,7 +16949,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -16990,9 +16990,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

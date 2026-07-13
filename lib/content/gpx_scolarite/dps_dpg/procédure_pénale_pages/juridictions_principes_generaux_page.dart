@@ -43,7 +43,7 @@ class JuridictionsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                     color: isDark
                         ? Colors.white60
-                        : const Color(0xFF424242).withOpacity(.85),
+                        : const Color(0xFF424242).withValues(alpha: .85),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -94,27 +94,27 @@ class JuridictionsPrincipesGenerauxPage extends StatelessWidget {
                     : const Color(0xFFE8EAF6),
                 accent: const Color(0xFF1A237E),
                 titleColor: isDark ? Colors.white : const Color(0xFF1A237E),
-                children: [
-                  const _Paragraph(
+                children: const [
+                  _Paragraph(
                     'Parmi les juridictions pénales, il faut distinguer les juridictions '
                     'de droit commun des juridictions d’exception.',
                   ),
-                  const SizedBox(height: 6),
-                  const _Paragraph(
+                  SizedBox(height: 6),
+                  _Paragraph(
                     'Les juridictions de droit commun ont compétence pour juger toutes '
                     'les infractions d’une catégorie déterminée, sauf celles dont un '
                     'texte spécial leur a retiré la connaissance.',
                   ),
-                  const SizedBox(height: 6),
-                  const _Paragraph(
+                  SizedBox(height: 6),
+                  _Paragraph(
                     'Les juridictions d’exception, quant à elles, n’ont qu’une '
                     "compétence d’attribution étroitement délimitée par la loi, "
                     'soit en considération de la nature des infractions, soit en raison '
                     'de la qualité des auteurs (mineurs par exemple).',
                   ),
-                  const SizedBox(height: 12),
-                  const _SubTitle('1.1 - Les juridictions de droit commun'),
-                  const _Paragraph(
+                  SizedBox(height: 12),
+                  _SubTitle('1.1 - Les juridictions de droit commun'),
+                  _Paragraph(
                     'Elles statuent au fond sur l’affaire. On y trouve notamment : '
                     'le tribunal de police, le tribunal correctionnel et la cour d’assises.',
                   ),
@@ -360,8 +360,8 @@ class JuridictionsPrincipesGenerauxPage extends StatelessWidget {
                     const TextSpan(text: ').'),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'Compétence territoriale : le tribunal du lieu de l’infraction, de '
                           'la résidence ou du lieu d’arrestation ou de détention du prévenu, '
@@ -452,8 +452,8 @@ class JuridictionsPrincipesGenerauxPage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 10),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'Le tribunal correctionnel statue également au civil sur les '
                           'réparations des dommages causés aux victimes lorsqu’elles se '
@@ -661,8 +661,8 @@ class JuridictionsPrincipesGenerauxPage extends StatelessWidget {
                   ]),
                   const SizedBox(height: 8),
                   const _SubTitle('1.1.3.1.3 - Le parquet général'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'Le ministère public est représenté devant la cour d’assises par '
                           "l’avocat général si la cour siège au niveau de la cour d’appel, "
@@ -733,10 +733,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -801,7 +801,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -844,7 +844,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -906,7 +906,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -917,10 +917,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -932,13 +931,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -951,13 +949,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

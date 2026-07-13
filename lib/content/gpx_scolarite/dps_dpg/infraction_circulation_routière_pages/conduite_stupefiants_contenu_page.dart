@@ -110,16 +110,16 @@ class ConduiteStupefiantsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 235-1 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le fait de conduire un véhicule ou d’accompagner un élève conducteur "
                       "en se trouvant sous l’influence de substances ou plantes classées comme stupéfiants.",
@@ -136,132 +136,132 @@ class ConduiteStupefiantsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une personne visée par le texte"),
-              const _SubTitle("1) Un conducteur de véhicule"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une personne visée par le texte"),
+              _SubTitle("1) Un conducteur de véhicule"),
+              _Paragraph(
                 "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, transports en commun, "
                 "motocyclettes, cyclomoteurs, matériels agricoles/forestiers, engins de travaux publics, engins spéciaux, trolleybus), "
                 "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Un accompagnateur d’élève conducteur"),
-              const _Paragraph(
+              _SubTitle("2) Un accompagnateur d’élève conducteur"),
+              _Paragraph(
                 "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre "
                 "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Un cas permettant la recherche de stupéfiants",
               ),
-              const _SubTitle("1) Le dépistage"),
-              const _Paragraph(
+              _SubTitle("1) Le dépistage"),
+              _Paragraph(
                 "Le dépistage consiste, à partir d’un recueil salivaire ou urinaire, à rechercher la présence d’une ou plusieurs "
                 "substances témoignant de l’usage de stupéfiants (cannabiniques, amphétaminiques, cocaïniques, opiacés).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le refus de subir le test de dépistage ne constitue pas une infraction, mais entraîne l’obligation "
                         "pour l’intéressé de se soumettre aux vérifications. ",
                   ),
-                  const TextSpan(text: "Pour l’accompagnateur, "),
+                  TextSpan(text: "Pour l’accompagnateur, "),
                   TextSpan(
                     text: "l’article L. 235-2 alinéa 5 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " ne prévoit pas de vérifications en cas de refus ou d’impossibilité de dépistage.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(text: "Cas de dépistage ("),
+                TextSpan(text: "Cas de dépistage ("),
                 TextSpan(
                   text: "article L. 235-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") :"),
+                TextSpan(text: ") :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Obligatoire : accident mortel de la circulation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Obligatoire : accident corporel de la circulation.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Facultatif : accident matériel de la circulation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Facultatif : infraction au code de la route.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Facultatif : raisons plausibles de soupçonner l’usage de stupéfiants.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Préventif : sur réquisition du procureur de la République.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Préventif : à l’initiative de l’OPJ / APJ.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Impossible en cas de refus de se soumettre au dépistage, de blessures graves (contre-indication médicale) ou de décès.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) La preuve : les vérifications"),
-              const _Paragraph(
+              _SubTitle("2) La preuve : les vérifications"),
+              _Paragraph(
                 "Si le dépistage est positif, ou si le conducteur refuse / est dans l’impossibilité de le subir, "
                 "les officiers ou agents de police judiciaire font procéder à des vérifications (analyses ou examens) "
                 "pour établir si la personne conduisait après avoir fait usage de stupéfiants.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "À cette fin, "),
+                TextSpan(text: "À cette fin, "),
                 TextSpan(
                   text: "l’article L. 235-2 alinéa 5 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " permet à l’OPJ/APJ de requérir un médecin (ou assimilés) ou un infirmier pour effectuer notamment une prise de sang.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La procédure est irrégulière si le conducteur n’a pas été informé (après dépistage positif) "
                         "de la possibilité de demander un examen technique/une expertise ou une recherche de médicaments psychoactifs, "
@@ -269,86 +269,86 @@ class ConduiteStupefiantsPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "(Conseil d’État, n°467841, 21/11/2023)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(text: "Deux modalités possibles : "),
+                TextSpan(text: "Deux modalités possibles : "),
                 TextSpan(
                   text: "article R. 235-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Prélèvement salivaire : réalisé par le conducteur lui-même, sous contrôle OPJ/APJ. Si le conducteur demande une expertise/examen technique, un prélèvement sanguin est réalisé au plus court délai.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Prélèvement sanguin : pratiqué par médecin/interne/étudiant autorisé/infirmier (ou biologiste requis). OPJ/APJ assiste au prélèvement ; examen clinique possible si l’état le permet.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(text: "En cas d’accident mortel, "),
+                TextSpan(text: "En cas d’accident mortel, "),
                 TextSpan(
                   text: "l’article R. 235-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " impose que seule l’analyse d’un prélèvement sanguin puisse être réalisée.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le refus de se soumettre aux vérifications constitue le délit prévu par ",
                 ),
                 TextSpan(
                   text: "l’article L. 235-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "La recherche est organisée notamment par ",
                 ),
                 TextSpan(
                   text: "l’article R. 235-10 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le prélèvement est transmis pour analyse (laboratoire, expert). Il n’est plus question de dosage : "
                       "l’expert confirme ou infirme la présence des substances détectées.",
@@ -382,27 +382,27 @@ class ConduiteStupefiantsPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 235-1 / I (2ᵉ phrase) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : circonstance aggravante lorsque la personne est également sous l’empire d’un état alcoolique "
                       "caractérisé (taux légalement fixé).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La conduite sous stupéfiants peut aussi aggraver les peines en matière d’homicide involontaire "
                         "ou d’atteintes involontaires. ",
@@ -410,19 +410,19 @@ class ConduiteStupefiantsPage extends StatelessWidget {
                   TextSpan(
                     text:
                         "Articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : le délit de conduite sous stupéfiants peut constituer une circonstance aggravante.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Conséquence opérationnelle : tout accident mortel ou corporel doit donner lieu à un dépistage.",
               ),
             ],
@@ -436,73 +436,73 @@ class ConduiteStupefiantsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines principales"),
+            children: const [
+              _SubTitle("Peines principales"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 4 500 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 235-1 / I (1ʳᵉ phrase) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Qualification aggravée (alcool + stupéfiants) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "3 ans d’emprisonnement et 6 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 235-1 / I (2ᵉ phrase) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide ou assistance ayant facilité la préparation ou la commission de l’infraction).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Immunités (rappel)"),
-              const _BulletPoint(
+              _SubTitle("Immunités (rappel)"),
+              _BulletPoint(
                 text:
                     "Diplomates : immunité (Convention de Vienne). Ils ne peuvent être soumis à aucune forme d’arrestation ; ne pas faire subir de dépistage.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Parlementaires : inviolabilité (Constitution de 1958, art. 26). Dépistage possible notamment en cas de flagrant délit ; informer le procureur si possible avant l’opération.",
               ),
@@ -542,10 +542,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -610,7 +610,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -653,7 +653,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -715,7 +715,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -747,7 +747,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -760,7 +760,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

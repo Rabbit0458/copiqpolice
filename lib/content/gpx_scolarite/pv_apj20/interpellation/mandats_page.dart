@@ -103,12 +103,12 @@ class MandatsPage extends StatelessWidget {
             children: [
               LayoutBuilder(
                 builder: (context, constraints) {
-                  final double gap = 12;
+                  const double gap = 12;
                   final double itemWidth = (constraints.maxWidth - gap) / 2;
-                  return Wrap(
+                  return const Wrap(
                     spacing: gap,
                     runSpacing: gap,
-                    children: const [
+                    children: [
                       SizedBox(
                         width: 220,
                         child: _ZoomableAssetImage(
@@ -161,46 +161,46 @@ class MandatsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 122 alinéa 2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : ordre donné à la force publique (par un magistrat).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Objet"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Objet"),
+              _BulletPoint(
                 text: "Rechercher la personne visée par le mandat.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "La placer en garde à vue après découverte (par O.P.J.).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Coercition"),
-              const _BulletPoint(text: "Coercition possible."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Coercition"),
+              _BulletPoint(text: "Coercition possible."),
+              _BulletPoint(
                 text:
                     "Introduction au domicile possible pendant les heures légales.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exécution / formalités : notification et exécution par ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "O.P.J., A.P.J. ou agent de la force publique",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: ", exhibition du mandat et remise d’une copie.",
                   ),
                 ],
@@ -218,36 +218,36 @@ class MandatsPage extends StatelessWidget {
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 122 alinéa 4 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : simple assignation à comparaître."),
+                TextSpan(text: " : simple assignation à comparaître."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Objet"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Objet"),
+              _BulletPoint(
                 text:
                     "Mettre en demeure la personne de se présenter à la date et l’heure indiquées.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Coercition"),
-              const _BulletPoint(text: "Pas de coercition."),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
+              _SubTitle("Coercition"),
+              _BulletPoint(text: "Pas de coercition."),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Signification / notification : "),
-                  const TextSpan(text: "par huissier"),
-                  const TextSpan(text: " ou notifié par "),
-                  const TextSpan(
+                  TextSpan(text: "Signification / notification : "),
+                  TextSpan(text: "par huissier"),
+                  TextSpan(text: " ou notifié par "),
+                  TextSpan(
                     text: "O.P.J., A.P.J. ou agent de la force publique",
                   ),
-                  const TextSpan(text: ", avec remise d’une copie."),
+                  TextSpan(text: ", avec remise d’une copie."),
                 ],
               ),
             ],
@@ -263,52 +263,52 @@ class MandatsPage extends StatelessWidget {
             cardColor: cardFocus,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 122 alinéa 5 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : ordre donné à la force publique (par un magistrat).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Objet"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Objet"),
+              _BulletPoint(
                 text: "Conduire immédiatement la personne devant le magistrat.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Coercition"),
-              const _BulletPoint(text: "Coercition possible."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Coercition"),
+              _BulletPoint(text: "Coercition possible."),
+              _BulletPoint(
                 text:
                     "Introduction au domicile possible pendant les heures légales.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Délais / distance"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Délais / distance"),
+              _BulletPoint(
                 text:
                     "Exécution à 200 km au plus : présentation immédiate au magistrat mandant OU rétention 24 h maximum.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exécution à plus de 200 km : présentation dans les 24 h au magistrat mandant OU au J.L.D. du lieu d’arrestation si conduite impossible dans les 24 h.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Formalités : notification/exécution par ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "O.P.J., A.P.J. ou agent de la force publique",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: ", exhibition du mandat + remise d’une copie.",
                   ),
                 ],
@@ -326,57 +326,57 @@ class MandatsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 122 alinéa 6 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : ordre donné à la force publique (par un magistrat).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Objet"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Objet"),
+              _BulletPoint(
                 text:
                     "Rechercher la personne (notamment en fuite / pouvant résider hors du territoire).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La conduire devant le magistrat (avec possible conduite préalable à la maison d’arrêt indiquée).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Coercition"),
-              const _BulletPoint(text: "Coercition possible."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Coercition"),
+              _BulletPoint(text: "Coercition possible."),
+              _BulletPoint(
                 text:
                     "Introduction au domicile possible pendant les heures légales.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Délais / distance"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Délais / distance"),
+              _BulletPoint(
                 text:
                     "Exécution à 200 km au plus : présentation dans les 24 h au JI mandant OU président du tribunal judiciaire / juge désigné.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exécution à plus de 200 km : présentation dans les 24 h au magistrat mandant OU au J.L.D. du lieu d’arrestation si conduite impossible dans les 24 h.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Formalités : notification/exécution par ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "O.P.J., A.P.J. ou agent de la force publique",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: ", exhibition du mandat + remise d’une copie.",
                   ),
                 ],
@@ -394,36 +394,36 @@ class MandatsPage extends StatelessWidget {
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 695-11 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : MAE (mandat d’arrêt européen)."),
+                TextSpan(text: " : MAE (mandat d’arrêt européen)."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Point de départ"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Point de départ"),
+              _BulletPoint(
                 text: "Mandat d’arrêt OU décision de condamnation.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Deux situations"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Deux situations"),
+              _BulletPoint(
                 text:
                     "Personne localisée : acceptation de l’État → mandat adressé à l’autorité judiciaire d’exécution.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Personne non localisée : signalement diffusé (SIS-Schengen) et via Interpol.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "But",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Permet la recherche et l’arrestation dans un cadre européen, avec un circuit d’exécution judiciaire.",
@@ -455,7 +455,7 @@ class _ZoomableAssetImage extends StatelessWidget {
     final Color border = isDark ? Colors.white24 : Colors.black12;
     final Color chipBg = isDark
         ? Colors.black54
-        : Colors.white.withOpacity(.92);
+        : Colors.white.withValues(alpha: .92);
     final Color chipText = isDark ? Colors.white : const Color(0xFF050505);
 
     return Semantics(
@@ -552,7 +552,7 @@ class _ZoomableAssetImage extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Fermer',
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       pageBuilder: (_, __, ___) {
         return SafeArea(
           child: Scaffold(
@@ -610,10 +610,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -678,7 +678,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -721,7 +721,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -783,7 +783,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -815,7 +815,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -828,7 +828,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

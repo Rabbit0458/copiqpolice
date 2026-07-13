@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Généralités",
     question:
         "La Déclaration des droits de l’homme et du citoyen (D.D.H.C.) a été adoptée le :",
@@ -110,7 +110,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
     difficulty: "Facile",
   ),
   // ===================== RÉGIME JURIDIQUE — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Généralités",
     question:
         "Selon le cours, pourquoi ne peut-il pas exister de liberté publique absolue ?",
@@ -124,7 +124,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte précise qu’en l’absence de règles, la liberté se transforme en anarchie, ce qui justifie l’encadrement juridique des libertés publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Généralités",
     question:
         "L’idée directrice du régime juridique des libertés publiques est que :",
@@ -138,7 +138,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche insiste sur le fait que la réglementation fixe des bornes, mais maintient la liberté comme principe et la restriction comme exception.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Autorités",
     question:
         "Quels sont les deux grands acteurs qui encadrent les libertés publiques ?",
@@ -152,7 +152,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours indique que le législateur (loi) et le pouvoir exécutif (pouvoir réglementaire) sont les deux grands acteurs qui réglementent les libertés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "La Constitution de 1958 confie au Parlement la détermination des règles concernant :",
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 34 de la Constitution de 1958 donne compétence au législateur pour fixer les règles relatives aux droits civiques et à leurs garanties.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "En matière de libertés publiques, le législateur dispose d’une :",
@@ -181,7 +181,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche précise que le législateur a une compétence de principe pour fixer le régime des libertés publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "Le législateur peut, en matière de libertés publiques, notamment :",
@@ -195,7 +195,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours explique que la loi peut créer de nouvelles libertés, en préciser les modalités et, parfois, en restreindre l’exercice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Pouvoir réglementaire",
     question: "Le pouvoir réglementaire appartient principalement :",
     options: [
@@ -208,7 +208,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte souligne que le pouvoir exécutif (gouvernement, préfet, maire) met en œuvre les libertés par des règlements.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Pouvoir réglementaire",
     question: "Le pouvoir réglementaire complète principalement :",
     options: [
@@ -221,7 +221,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours indique que le règlement vient détailler et compléter la loi, par exemple via la partie réglementaire des codes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Période normale",
     question: "En période normale, l’autorité administrative ne peut pas :",
     options: [
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours rappelle qu’aucune interdiction générale et absolue n’est possible en matière de liberté publique en période ordinaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Période normale",
     question:
         "Toute mesure d’interdiction d’une liberté en période normale doit être :",
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== RÉGIME JURIDIQUE — NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "Parmi les propositions suivantes, laquelle illustre une création de liberté par la loi ?",
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La loi de 1970 est citée comme exemple de texte législatif créant ou renforçant une liberté fondamentale, ici la vie privée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Législateur",
     question:
         "Le législateur peut revenir sur une liberté publique déjà acquise :",
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours indique que la remise en cause d’une liberté n’est possible que si elle n’était pas juridiquement acquise ou pour un motif de valeur constitutionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Pouvoir réglementaire",
     question:
         "Le pouvoir réglementaire peut restreindre l’exercice d’une liberté à condition de respecter :",
@@ -294,7 +294,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche insiste sur ces trois principes pour encadrer les restrictions réglementaires aux libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Période normale",
     question:
         "Pourquoi le juge contrôle-t-il plus strictement les mesures de police qui touchent une liberté fondamentale ?",
@@ -309,7 +309,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte explique que plus la liberté est fondamentale, plus le contrôle de proportionnalité du juge administratif est rigoureux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — États d’exception",
     question: "L’état de siège est principalement destiné à faire face :",
     options: [
@@ -322,7 +322,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours définit l’état de siège comme un régime destiné au péril résultant d’une guerre ou d’une insurrection armée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — États d’exception",
     question:
         "Pendant l’état de siège, certaines compétences de police sont transférées :",
@@ -336,7 +336,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche précise que l’état de siège entraîne le transfert de certains pouvoirs de police à l’autorité militaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Article 16",
     question:
         "Les pouvoirs exceptionnels de l’article 16 de la Constitution peuvent être mis en œuvre lorsque :",
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 16 vise une situation de crise extrême combinant menace grave et interruption du fonctionnement régulier des pouvoirs publics.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Article 16",
     question:
         "Avant de recourir à l’article 16, le Président de la République doit :",
@@ -366,7 +366,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche rappelle cette consultation préalable avant la mise en œuvre des pouvoirs exceptionnels de l’article 16.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — État d’urgence",
     question: "L’état d’urgence (loi de 1955) est principalement destiné à :",
     options: [
@@ -380,7 +380,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours définit l’état d’urgence comme un régime permettant de répondre à un péril imminent, notamment en matière de sécurité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — État d’urgence",
     question:
         "Parmi les mesures possibles sous état d’urgence, on trouve notamment :",
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche mentionne l’assignation à résidence, les perquisitions administratives et les interdictions de réunions comme exemples de mesures d’état d’urgence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — État d’urgence sanitaire",
     question: "L’état d’urgence sanitaire a été instauré principalement pour :",
     options: [
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte précise que l’état d’urgence sanitaire a été créé pour faire face à un risque sanitaire majeur, notamment la Covid-19.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Circumstances exceptionnelles",
     question:
         "La théorie des circonstances exceptionnelles permet au juge administratif :",
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La théorie permet au juge de tenir compte des circonstances anormales pour apprécier la légalité de mesures plus restrictives.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Vigipirate",
     question: "Le plan Vigipirate est principalement :",
     options: [
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche décrit Vigipirate comme un dispositif permanent associant autorités civiles et militaires pour prévenir la menace terroriste.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Vigipirate",
     question: "Quel niveau Vigipirate correspond à la menace la plus élevée ?",
     options: [
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== RÉGIME JURIDIQUE — NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime répressif",
     question: "Dans le régime répressif, la liberté est :",
     options: [
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche précise que le régime répressif est le plus favorable aux libertés : on agit librement, mais on est sanctionné en cas d’abus.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime répressif",
     question:
         "Dans un régime répressif, qui prononce la sanction en cas d’abus d’une liberté ?",
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte indique que l’abus est sanctionné par le juge sur le fondement des textes pénaux ou administratifs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime préventif",
     question: "Quelle formule résume le mieux le régime préventif ?",
     options: [
@@ -492,7 +492,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours reprend cette formule : dans le régime préventif, n’est permis que ce qui est autorisé expressément ou tacitement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Régime préventif",
     question: "Le régime préventif repose essentiellement sur :",
     options: [
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte précise que le régime préventif est mis en œuvre par l’autorité administrative chargée de l’ordre public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Autorisation préalable",
     question: "La technique de l’autorisation préalable implique que :",
     options: [
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche explique qu’en l’absence d’autorisation, la liberté ne peut être exercée légalement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Autorisation préalable",
     question:
         "Parmi les exemples suivants, lequel relève de l’autorisation préalable ?",
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours cite le permis de construire comme exemple d’activité soumise à autorisation préalable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Déclaration préalable",
     question: "Dans le régime de la déclaration préalable :",
     options: [
@@ -547,7 +547,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche décrit la déclaration préalable comme une information à l’administration qui peut ensuite encadrer l’activité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Déclaration préalable",
     question:
         "Parmi les exemples suivants, lequel illustre une déclaration préalable ?",
@@ -562,7 +562,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours cite la déclaration de manifestation comme exemple typique de déclaration préalable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Interdiction préalable",
     question: "L’interdiction préalable est :",
     options: [
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte présente l’interdiction préalable comme un outil extrême, strictement encadré par le juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime juridique — Interdiction préalable",
     question: "L’arrêt Benjamin (Conseil d’État, 1933) illustre que :",
     options: [
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== SOURCES DES LIBERTÉS — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Généralités",
     question: "Les libertés publiques actuelles en France résultent :",
     options: [
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’introduction souligne la pluralité des sources et la longue histoire des libertés publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Philosophiques",
     question:
         "La pensée chrétienne a contribué aux libertés publiques en affirmant :",
@@ -621,7 +621,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours présente la pensée chrétienne comme source de l’égalité et de la dignité humaines.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Philosophiques",
     question:
         "La théorie du droit naturel et du contrat social (Locke, Rousseau…) met en avant :",
@@ -636,7 +636,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte rappelle que ces courants fondent l’idée de droits antérieurs et supérieurs au pouvoir politique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Philosophiques",
     question:
         "La philosophie des Lumières, au XVIIIᵉ siècle, promeut notamment :",
@@ -651,7 +651,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche insiste sur ces thèmes majeurs des Lumières qui inspireront la Déclaration de 1789.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Juridiques avant 1789",
     question:
         "Parmi les textes anglais suivants, lequel fait partie des « pactes » contribuant à la protection des libertés ?",
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La Magna Carta, le Habeas Corpus et le Bill of Rights sont cités comme sources juridiques préalables à 1789.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Juridiques avant 1789",
     question: "Les déclarations américaines de 1776 affirment notamment :",
     options: [
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== SOURCES — NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question: "Parmi les caractéristiques de la Déclaration de 1789 figure :",
     options: [
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte présente la Déclaration comme individualiste : elle vise l’homme plutôt que les groupes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question: "La Déclaration de 1789 présente les droits proclamés comme :",
     options: [
@@ -706,7 +706,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La dimension métaphysique du texte est rappelée : les droits sont antérieurs et supérieurs au pouvoir politique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question: "La Déclaration de 1789 a une portée :",
     options: [
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours souligne l’universalité affirmée du texte, même si son application réelle est plus restreinte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Déclaration 1789",
     question:
         "Parmi les droits de l’Homme proclamés en 1789, on trouve notamment :",
@@ -735,7 +735,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche mentionne ces droits comme exemples de droits de l’Homme inspirant les libertés publiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Évolution postérieure",
     question: "La IIIᵉ République a consacré par diverses lois :",
     options: [
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours indique que la IIIᵉ République est marquée par de grandes lois libérales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Évolution postérieure",
     question: "Le préambule de 1946 ajoute notamment :",
     options: [
@@ -762,7 +762,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche rappelle que le préambule de 1946 enrichit le catalogue par des droits sociaux toujours en vigueur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Préambule 1958",
     question: "Le préambule de la Constitution de 1958 renvoie expressément :",
     options: [
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Ces textes, avec la Constitution, forment le bloc de constitutionnalité en matière de libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Préambule 1958",
     question:
         "Les lois telles que « Informatique et libertés » (1978) ou le droit d’accès aux documents administratifs (1979) :",
@@ -793,7 +793,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== SOURCES INTERNATIONALES — NIVEAU MOYEN/DÉLICAT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — Droit international humanitaire",
     question: "Les conventions de Genève de 1949 visent principalement à :",
     options: [
@@ -807,7 +807,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours cite ces conventions comme source de protection des personnes en temps de guerre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — ONU",
     question:
         "La Déclaration universelle des droits de l’Homme (ONU, 1948) a principalement :",
@@ -821,7 +821,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche rappelle qu’elle n’est pas directement contraignante mais a inspiré de nombreuses conventions obligatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — ONU",
     question:
         "Parmi les conventions suivantes, laquelle relève du système onusien de protection des droits fondamentaux ?",
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours cite la convention contre la torture parmi les grands instruments internationaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — CEDH",
     question:
         "La Convention européenne des droits de l’Homme (CEDH) a été ratifiée par la France en :",
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte indique que la France a ratifié la CEDH en 1974, permettant une protection conventionnelle renforcée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sources — CEDH",
     question: "Une originalité majeure de la CEDH est de permettre :",
     options: [
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== HIÉRARCHIE DES NORMES — NIVEAU DIFFICILE/EXPERT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question:
         "Selon la fiche, au sommet de la hiérarchie des normes en matière de libertés publiques se trouvent :",
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche place au sommet Constitution, Déclaration de 1789, préambule de 1946, Charte de l’environnement et PFRLR.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question:
         "Dans cette hiérarchie, les engagements internationaux (CEDH, conventions ONU…) :",
@@ -889,7 +889,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours les place au second niveau, au-dessus des lois ordinaires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question: "Un règlement de police administrative doit être conforme :",
     options: [
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le rappel final insiste sur le contrôle de conformité d’une mesure de police à l’ensemble de la hiérarchie des normes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes",
     question:
         "Si une loi portant atteinte aux libertés publiques est suspectée de méconnaître la Constitution, les justiciables peuvent :",
@@ -919,7 +919,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== NOTION DE LIBERTÉS PUBLIQUES — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Généralités",
     question: "Dans le langage courant, on confond souvent :",
     options: [
@@ -932,7 +932,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche commence par constater cette confusion fréquente en langage courant.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Généralités",
     question: "En droit, les libertés publiques sont définies comme :",
     options: [
@@ -946,7 +946,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche en donne précisément cette définition pour distinguer libertés publiques et droits de l’Homme en général.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques et droits de l’Homme",
     question:
         "Parmi les trois idées issues du polycopié, la première est que les libertés publiques sont :",
@@ -961,7 +961,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours explique que les citoyens attendent de l’État non seulement une abstention, mais aussi une action positive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques et droits de l’Homme",
     question: "La deuxième idée est que les libertés publiques sont :",
     options: [
@@ -975,7 +975,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche insiste sur la nécessité d’une consécration par un texte pour qu’une liberté soit « publique ». ",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques et droits de l’Homme",
     question:
         "La troisième idée est que certaines libertés, dites « fondamentales », :",
@@ -990,7 +990,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte précise que ces libertés fondamentales bénéficient de protections renforcées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Liberté",
     question: "Le polycopié définit la liberté comme :",
     options: [
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "C’est la définition large rappelée au début du chapitre 2 de la fiche « Notion ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques",
     question:
         "Le qualificatif « publiques » dans l’expression « libertés publiques » renvoie principalement :",
@@ -1019,7 +1019,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche explique que « publiques » souligne le rôle de l’État dans la reconnaissance et la protection des libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques",
     question:
         "Selon la définition juridique donnée, une liberté publique est notamment :",
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "C’est la définition précise fournie dans la fiche avec l’idée de texte, d’organisation et de sanction des atteintes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Pratique policière",
     question: "La fiche rappelle que sont des libertés publiques celles qui :",
     options: [
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Ce critère permet de cibler les libertés au cœur de l’action policière et du contrôle du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Pratique policière",
     question:
         "Lorsque le policier intervient dans le domaine des libertés publiques (manifestation, contrôle d’identité, perquisition…), la légalité de son action :",
@@ -1063,7 +1063,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche insiste sur le contrôle accru du juge dès lors que des droits fondamentaux sont en jeu.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Valeur juridique",
     question:
         "Aujourd’hui, la Déclaration des droits de l’homme et du citoyen de 1789 :",
@@ -1078,7 +1078,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La D.D.H.C. figure dans le Préambule de la Constitution de 1958 et fait partie du bloc de constitutionnalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Bloc de constitutionnalité",
     question: "La D.D.H.C. fait partie :",
     options: [
@@ -1091,7 +1091,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours précise que la D.D.H.C. appartient au « bloc de constitutionnalité » avec le Préambule de 1946, la Constitution de 1958 et la Charte de l’environnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Principes généraux",
     question:
         "L’article 1er de la D.D.H.C. proclame notamment que les hommes :",
@@ -1105,7 +1105,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 1er pose le principe d’égalité et de liberté et interdit les privilèges de naissance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Droits naturels",
     question:
         "Selon l’article 2 de la D.D.H.C., parmi les droits naturels et imprescriptibles de l’homme figurent notamment :",
@@ -1120,7 +1120,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 2 énumère les droits naturels et imprescriptibles : liberté, propriété, sûreté, résistance à l’oppression.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Souveraineté",
     question:
         "L’article 3 de la D.D.H.C. affirme que le principe de toute souveraineté réside essentiellement dans :",
@@ -1130,7 +1130,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 3 consacre le principe de souveraineté nationale en indiquant que la souveraineté réside dans la Nation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Loi et volonté générale",
     question: "Selon l’article 6 de la D.D.H.C., la loi est avant tout :",
     options: [
@@ -1143,7 +1143,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 6 pose que la loi est l’expression de la volonté générale et qu’elle doit être la même pour tous.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Séparation des pouvoirs",
     question:
         "L’article 16 de la D.D.H.C. affirme qu’une société sans séparation des pouvoirs :",
@@ -1157,7 +1157,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 16 précise qu’une société sans garantie des droits ni séparation des pouvoirs « n’a point de Constitution ». ",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Liberté d’opinion",
     question: "L’article 10 de la D.D.H.C. protège principalement :",
     options: [
@@ -1170,7 +1170,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 10 garantit que nul ne doit être inquiété pour ses opinions, même religieuses, tant que leur manifestation ne trouble pas l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Liberté d’expression",
     question:
         "L’article 11 de la D.D.H.C. qualifie la libre communication des pensées et des opinions de :",
@@ -1184,7 +1184,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 11 présente la libre communication des pensées et des opinions comme l’un des droits les plus précieux de l’homme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notion — Libertés publiques",
     question: "En droit, les libertés publiques sont avant tout :",
     options: [
@@ -1200,7 +1200,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Contexte historique",
     question: "La D.D.H.C. s’inspire principalement :",
     options: [
@@ -1213,7 +1213,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte mentionne les influence des philosophes des Lumières (Montesquieu, Rousseau, Voltaire) et des déclarations américaines.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Finalité",
     question:
         "Selon son préambule, une des finalités de la D.D.H.C. est notamment de permettre :",
@@ -1228,7 +1228,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La finalité indiquée est de rappeler les droits afin que les actes du pouvoir puissent être constamment comparés avec le but de toute institution politique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Portée",
     question:
         "La D.D.H.C., bien que rédigée en France, est présentée dans le cours comme :",
@@ -1242,7 +1242,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche souligne la portée universelle du texte, même s’il est adopté en France.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Décision Liberté d’association",
     question:
         "La reconnaissance explicite de la valeur constitutionnelle de la D.D.H.C. par le Conseil constitutionnel date :",
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Depuis la décision « Liberté d’association » de 1971, le Conseil constitutionnel reconnaît la valeur constitutionnelle de la D.D.H.C.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Liberté (art. 4)",
     question:
         "Selon l’article 4 de la D.D.H.C., la liberté consiste principalement à :",
@@ -1270,7 +1270,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 4 définit la liberté comme la possibilité de faire tout ce qui ne nuit pas à autrui, sous le contrôle de la loi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Sûreté",
     question: "Les articles 7 à 9 de la D.D.H.C. concernent principalement :",
     options: [
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Les articles 7 à 9 encadrent la sûreté, l’interdiction des arrestations arbitraires et la présomption d’innocence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Propriété",
     question: "L’article 17 de la D.D.H.C. qualifie la propriété de :",
     options: [
@@ -1296,7 +1296,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 17 affirme que la propriété est un droit inviolable et sacré, dont on ne peut être privé que pour cause d’utilité publique et avec indemnité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Garanties pénales",
     question:
         "Le principe de légalité des délits et des peines (art. 8) signifie que :",
@@ -1311,7 +1311,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 8 consacre le principe de légalité pénale et prohibe les incriminations et peines rétroactives.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Attentes vis-à-vis de l’État",
     question:
         "Selon le cours, concernant les libertés publiques, les individus attendent de l’État :",
@@ -1326,7 +1326,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La première idée du cours est que les individus attendent de l’État une action positive, par exemple l’organisation de l’enseignement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Reconnaissance par l’État",
     question:
         "Une caractéristique essentielle d’une liberté publique est qu’elle :",
@@ -1341,7 +1341,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La deuxième idée du cours souligne que les libertés publiques sont des droits de l’Homme intégrés dans le droit positif et reconnus par des textes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Protection particulière",
     question: "Certaines libertés, dites « fondamentales », bénéficient :",
     options: [
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours insiste sur les protections particulières accordées aux libertés fondamentales (contrôle du juge administratif, procédures d’urgence, valeur constitutionnelle…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté — Autodétermination",
     question:
         "La liberté, au sens large, est définie dans le polycopié comme :",
@@ -1372,7 +1372,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Contrôle de la loi",
     question:
         "Le fait que la D.D.H.C. fasse partie du bloc de constitutionnalité permet notamment :",
@@ -1386,7 +1386,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Parce qu’elle a valeur constitutionnelle, la D.D.H.C. permet au Conseil constitutionnel de censurer les lois incompatibles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Juge et libertés",
     question: "Pour un policier, la D.D.H.C. encadre son action car :",
     options: [
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le texte indique que la D.D.H.C. s’impose à toutes les autorités, y compris l’administration et la police.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Principe d’égalité",
     question:
         "Le principe d’égalité dégagé de l’article 1er de la D.D.H.C. est souvent invoqué :",
@@ -1415,7 +1415,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche donne l’exemple de différences de traitement entre fonctionnaires, étrangers, détenus… au regard du principe d’égalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Séparation des pouvoirs",
     question: "L’article 16 de la D.D.H.C. sert notamment de fondement :",
     options: [
@@ -1429,7 +1429,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 16 est utilisé pour exiger des garanties effectives, notamment l’indépendance du juge et un recours effectif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Nécessité et proportionnalité des peines",
     question:
         "Le principe de nécessité et de proportionnalité des peines, issu de l’article 8 de la D.D.H.C., implique que :",
@@ -1444,7 +1444,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 8 impose que les peines prévues par la loi soient strictement et évidemment nécessaires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Présomption d’innocence",
     question:
         "Selon l’article 9 de la D.D.H.C., la rigueur des mesures privatives de liberté :",
@@ -1458,7 +1458,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 9 impose que la rigueur liée à la privation de liberté reste limitée à ce qui est nécessaire, en lien avec la présomption d’innocence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Définition",
     question:
         "La définition juridique des libertés publiques insiste sur le fait qu’elles sont :",
@@ -1473,7 +1473,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche donne une définition précise : libertés fondamentales reconnues par l’État, consacrées par un texte, dont l’exercice est encadré et les atteintes sanctionnées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Reconnaissance par un texte",
     question:
         "Pourquoi une liberté n’est-elle « publique » que si elle est reconnue par un texte ?",
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours insiste sur le rôle des textes (constitution, loi, conventions) qui intègrent les droits de l’Homme dans le droit positif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Rôle du juge",
     question:
         "En cas d’atteinte illégale à une liberté publique, le rôle du juge est :",
@@ -1503,7 +1503,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La sanction des atteintes par le juge garantit concrètement l’effectivité des libertés publiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police — Atteinte aux libertés",
     question:
         "Selon la fiche, pour les mesures de police (contrôles, fouilles, gardes à vue…), le principe de base est que :",
@@ -1520,7 +1520,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
   ),
 
   // ===================== NIVEAU EXPERT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation D.D.H.C. / Libertés publiques",
     question:
         "En pratique, le lien entre D.D.H.C. et libertés publiques peut être résumé ainsi :",
@@ -1535,7 +1535,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La D.D.H.C. proclame des principes, tandis que la notion de libertés publiques désigne ces droits intégrés dans le droit positif et protégés par des mécanismes juridiques.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Dimension « publique »",
     question:
         "Le qualificatif « publiques » dans l’expression « libertés publiques » signifie principalement :",
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le cours insiste sur la dualité : liberté individuelle + intervention de l’État via des normes juridiques.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Encadrement",
     question:
         "La réglementation de l’exercice d’une liberté publique par l’État :",
@@ -1565,7 +1565,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche précise que l’État peut organiser l’exercice des libertés, mais sans les priver de leur contenu essentiel.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés publiques — Sélection des libertés",
     question:
         "Selon le cours, toutes les libertés n’entrent pas dans la catégorie des libertés publiques car :",
@@ -1580,7 +1580,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "Le critère central est le rapport avec les autorités publiques et la consécration par l’État.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police — Niveau de contrôle",
     question:
         "Lorsqu’un policier intervient dans un domaine touchant aux libertés publiques (manifestation, perquisition, contrôle d’identité…), la légalité de son action :",
@@ -1595,7 +1595,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "La fiche souligne que le juge administratif ou judiciaire appréciera la compatibilité de l’acte de police avec la D.D.H.C. et les libertés publiques.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Contrôle concret",
     question:
         "Un exemple donné dans la fiche montre qu’une loi créant une nouvelle infraction vague et trop large peut être censurée :",
@@ -1610,7 +1610,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’article 8 sert de base au contrôle des incriminations floues ou disproportionnées.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "D.D.H.C. — Sûreté et garde à vue",
     question:
         "Selon la fiche, des conditions de garde à vue trop longues ou insuffisamment encadrées peuvent être jugées contraires :",
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
         "L’exemple donné relie directement les conditions de garde à vue à l’article 9 et à la nécessité des mesures privatives de liberté.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse — Intérêt pour le policier",
     question:
         "Connaître les grands articles de la D.D.H.C. et la notion de libertés publiques permet au policier :",
@@ -1646,7 +1646,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIntro = [
 // PAGE
 // ============================================================================
 class QuizLibertesPubliquesPage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/libertes_publiques';
+  static const String routeName = '/gpx/dps/generalites/quiz/libertes_publiques';
   final String uid;
   final String email;
 
@@ -1978,7 +1978,7 @@ class _QuizLibertesPubliquesPageState extends State<QuizLibertesPubliquesPage>
         // hauteur “structurelle” du bas (bouton + marges)
         const double kButtonHeight = 56;
         const double kButtonVPad = 16; // safe area min bottom padding = 16
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2180,7 +2180,7 @@ class _QuizLibertesPubliquesPageState extends State<QuizLibertesPubliquesPage>
       barrierDismissible: true,
       barrierLabel: 'Résultat',
       // On garde un léger assombrissement, le flou sera appliqué par-dessus.
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2334,7 +2334,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2862,10 +2861,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3236,7 +3236,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3277,9 +3277,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

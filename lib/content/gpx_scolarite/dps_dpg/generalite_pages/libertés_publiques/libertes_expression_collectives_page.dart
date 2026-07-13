@@ -23,7 +23,7 @@ class LibertesExpressionCollectivesPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -152,8 +152,8 @@ class _ModuleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -185,8 +185,8 @@ class _ModuleCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),
@@ -236,7 +236,7 @@ class _ModuleCard extends StatelessWidget {
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w600,
                         fontSize: 14,
-                        color: Colors.white.withOpacity(.85),
+                        color: Colors.white.withValues(alpha: .85),
                       ),
                     ),
                   ],
@@ -257,7 +257,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const StadiumBorder(),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),

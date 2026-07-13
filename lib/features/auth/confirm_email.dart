@@ -4,9 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
-// ✅ Unique import pour le thème global (et AppNotifier si tu veux l'utiliser ailleurs)
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
-    show AppSettingsController, AppNotifier;
+    show AppSettingsController;
 
 class ConfirmEmailPage extends StatefulWidget {
   static const routeName = '/confirm-email';
@@ -100,12 +99,12 @@ class _ConfirmEmailPageState extends State<ConfirmEmailPage>
         final Color pageBg = isDark ? _kDarkNavy : _kBlueLight;
 
         // Lisibilité
-        final Color titleColor = Colors.white;
+        const Color titleColor = Colors.white;
         final Color bodyColor = _whiteA(.95);
         final Color hintColor = _whiteA(.70);
 
         // Bouton : blanc, texte miroir du fond
-        final Color buttonBg = Colors.white;
+        const Color buttonBg = Colors.white;
         final Color buttonFg = isDark ? _kDarkNavy : _kBlueLight;
 
         return Theme(

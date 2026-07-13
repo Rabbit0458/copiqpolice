@@ -122,16 +122,16 @@ class DenonciationCalomnieusePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime la dénonciation calomnieuse.",
                 ),
               ]),
@@ -146,148 +146,148 @@ class DenonciationCalomnieusePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une dénonciation"),
+            children: const [
+              _SubTitle("A) Une dénonciation"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la dénonciation peut être faite « par tout moyen ». ",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph("Elle peut donc être écrite ou orale."),
-              const SizedBox(height: 10),
+              SizedBox(height: 8),
+              _Paragraph("Elle peut donc être écrite ou orale."),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Forme de la dénonciation"),
-              const _Paragraph(
+              _SubTitle("1) Forme de la dénonciation"),
+              _Paragraph(
                 "• Écrite : lettre (signée ou anonyme), pétition, plainte (avec ou sans constitution de partie civile), "
                 "plainte déposée auprès de la police ou de la gendarmerie.\n"
                 "• Orale : de vive voix ou par téléphone (elle doit pouvoir être prouvée).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Auteur de la dénonciation"),
-              const _Paragraph(
+              _SubTitle("2) Auteur de la dénonciation"),
+              _Paragraph(
                 "L’auteur est celui qui dénonce ou fait dénoncer par une tierce personne. "
                 "L’auteur moral est assimilé à l’auteur juridique.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Si la dénonciation est faite sur instructions hiérarchiques, l’exécutant ne peut être poursuivi "
                 "que s’il y a pris part personnellement (et pas s’il n’a eu qu’un rôle strictement matériel).",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "En cas de dénonciation anonyme, l’auteur doit pouvoir être identifié.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Victime : une personne déterminée"),
+              _SubTitle("3) Victime : une personne déterminée"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la dénonciation doit viser une personne déterminée (physique ou morale), identifiable.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "L’identification est simple si la personne est nommée. "
                 "À défaut, elle peut résulter de détails rendant inévitable la désignation d’une personne précise.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Destinataire : autorité compétente"),
-              const _Paragraph(
+              _SubTitle("4) Destinataire : autorité compétente"),
+              _Paragraph(
                 "Il suffit que la dénonciation soit adressée à l’autorité (pas besoin de remise en main propre). "
                 "La jurisprudence retient que l’infraction est consommée le jour de la réception "
                 "(début du délai de prescription).",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Le destinataire doit être une autorité investie d’un pouvoir de sanction, ou capable de saisir l’autorité compétente : "
                 "magistrats, officiers/autorités administratives ou judiciaires (maires/adjoints, policiers, gendarmes, préfets, etc.), "
                 "mais aussi supérieurs hiérarchiques, employeurs, ou personnes pouvant saisir l’autorité (médecin, assistante sociale, etc.).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une dénonciation spontanée"),
-              const _Paragraph(
+              _SubTitle("B) Une dénonciation spontanée"),
+              _Paragraph(
                 "La jurisprudence exige un caractère spontané : est coupable celui qui prend l’initiative de révéler des faits inexacts. "
                 "Il n’y a pas dénonciation calomnieuse si l’on répond à une interpellation de l’autorité ou des supérieurs.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les dénonciations provoquées perdent leur caractère spontané : rapports demandés par un supérieur, "
                         "dénonciation d’un subordonné tenu d’informer, réponses aux questions d’un magistrat instructeur, "
                         "ou dénonciation rattachée étroitement à la défense.",
                   ),
-                  const TextSpan(text: " "),
+                  TextSpan(text: " "),
                   TextSpan(
                     text:
                         "(Cass. crim., 16 juin 1988 ; Cass. crim., 03 mai 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une dénonciation préjudiciable"),
-              const _Paragraph(
+              _SubTitle("C) Une dénonciation préjudiciable"),
+              _Paragraph(
                 "Le fait dénoncé doit être de nature à entraîner des sanctions judiciaires, administratives ou disciplinaires. "
                 "Peu importe qu’une sanction ait effectivement été prononcée : il suffit que le fait soit de nature à en entraîner.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Différence avec la diffamation : la dénonciation calomnieuse porte atteinte à l’honneur, "
                 "mais elle vise en plus à exposer la personne à une sanction par une autorité.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) L’inexactitude des faits dénoncés"),
+              _SubTitle("D) L’inexactitude des faits dénoncés"),
               _Paragraph.rich([
-                const TextSpan(text: "Depuis la modification issue de "),
+                TextSpan(text: "Depuis la modification issue de "),
                 TextSpan(
                   text: "l’article 16 de la loi n° 2010-769 du 9 juillet 2010",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", la fausseté résulte nécessairement d’une décision définitive d’acquittement, relaxe ou non-lieu "
                       "déclarant expressément que le fait n’a pas été commis ou n’est pas imputable à la personne dénoncée.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Dans les autres hypothèses (par ex. relaxe/non-lieu pour insuffisance de charges), "
                 "le tribunal appréciera la pertinence des accusations.",
               ),
@@ -302,28 +302,28 @@ class DenonciationCalomnieusePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Conscience de dénoncer des faits inexacts"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Conscience de dénoncer des faits inexacts"),
+              _Paragraph(
                 "L’auteur doit connaître l’inexactitude des faits au moment où il les dénonce. "
                 "Il exprime ainsi une volonté de nuire à la personne visée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si l’auteur découvre son erreur après coup, l’infraction n’est pas constituée. "
                         "En revanche, il peut être poursuivi pour omission de témoigner en faveur d’un innocent — ",
                   ),
                   TextSpan(
                     text: "article 434-11 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -352,63 +352,63 @@ class DenonciationCalomnieusePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité prévue par "),
+                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
                   text: "l’article 226-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : amende (selon les modalités de l’article 131-38), affichage/diffusion de la décision (article 131-35), "
                       "et interdiction définitive ou temporaire d’exercer une activité professionnelle.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -449,10 +449,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -517,7 +517,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -560,7 +560,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -622,7 +622,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -633,10 +633,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -648,13 +647,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -667,13 +665,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

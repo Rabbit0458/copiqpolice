@@ -3,7 +3,6 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_contenu_page.dart';
 
 /// ==============================================================

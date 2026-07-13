@@ -93,7 +93,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // FACILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte par un tiers',
     question:
         'Le fait d’imposer à une personne de subir une atteinte sexuelle de la part d’un tiers constitue :',
@@ -108,7 +108,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Moyens',
     question:
         'Quels sont les moyens exclusifs de tout consentement libre de la victime ?',
@@ -123,7 +123,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Définition',
     question: 'Le viol se caractérise par :',
     options: [
@@ -137,7 +137,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Définition',
     question: 'Une agression sexuelle suppose :',
     options: [
@@ -151,7 +151,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Consentement — Principe',
     question: 'La violence, la contrainte, la menace ou la surprise sont :',
     options: [
@@ -168,7 +168,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise',
     question: 'La surprise s’entend juridiquement comme :',
     options: [
@@ -182,7 +182,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question:
         'Une personne atteinte de troubles mentaux est juridiquement considérée comme :',
@@ -197,7 +197,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur — Consentement',
     question:
         'Un mineur de moins de 15 ans peut-il consentir à un acte sexuel avec un majeur ?',
@@ -212,7 +212,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol par surprise',
     question:
         'L’état d’ivresse de la victime permet de qualifier les faits de :',
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Auteur',
     question: 'L’auteur d’une agression sexuelle incestueuse doit être :',
     options: ['Un majeur', 'Un mineur', 'Indifféremment majeur ou mineur'],
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Condition',
     question:
         'Le seul lien de parenté suffit-il à caractériser le viol incestueux ?',
@@ -255,7 +255,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte morale',
     question: 'La contrainte morale peut être caractérisée par :',
     options: [
@@ -269,7 +269,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration de substances — Soumission chimique',
     question: 'La soumission chimique suppose :',
     options: [
@@ -283,7 +283,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Intention',
     question: 'L’élément moral du viol repose sur :',
     options: [
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Mineur',
     question:
         'Dans le viol incestueux sur mineur, la preuve de la violence est-elle exigée ?',
@@ -312,7 +312,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Acte unique',
     question:
         'Un acte unique peut constituer un harcèlement sexuel lorsqu’il :',
@@ -327,7 +327,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Consentement',
     question:
         'La victime doit-elle exprimer explicitement son refus pour caractériser le harcèlement ?',
@@ -345,7 +345,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 VIOL — NIVEAU CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Élément légal',
     question:
         'Quel article du Code pénal définit le viol commis par violence, contrainte, menace ou surprise ?',
@@ -360,7 +360,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Acte matériel',
     question: 'Lequel de ces actes peut juridiquement constituer un viol ?',
     options: [
@@ -374,7 +374,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Surprise',
     question: 'La surprise peut être retenue lorsque la victime :',
     options: [
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Ivresse',
     question: 'L’état d’ivresse volontaire de la victime permet :',
     options: [
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Tentative',
     question: 'La tentative de viol est-elle punissable ?',
     options: [
@@ -415,7 +415,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation',
     question: 'Le viol est aggravé lorsqu’il est commis :',
     options: [
@@ -432,7 +432,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🟣 INCESTE — VIOL & AGRESSION SEXUELLE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Définition',
     question: 'Le viol incestueux suppose :',
     options: [
@@ -446,7 +446,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Victime',
     question: 'La victime du viol incestueux doit être :',
     options: [
@@ -460,7 +460,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse',
     question:
         'L’agression sexuelle incestueuse nécessite-t-elle la preuve d’une violence ?',
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Auteur',
     question: 'Qui peut être auteur d’une infraction incestueuse ?',
     options: [
@@ -483,7 +483,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Jurisprudence',
     question:
         'Le partenaire pacsé d’une tante peut être qualifié d’auteur incestueux :',
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔵 HARCÈLEMENT SEXUEL — NIVEAU CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Définition',
     question: 'Le harcèlement sexuel suppose :',
     options: [
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Répétition',
     question: 'La répétition des faits peut être caractérisée :',
     options: [
@@ -526,7 +526,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Acte unique',
     question:
         'Un acte unique peut constituer un harcèlement sexuel lorsqu’il :',
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Autorité',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -553,7 +553,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Consentement',
     question: 'La victime doit-elle exprimer clairement son refus ?',
     options: ['Non', 'Oui obligatoirement', 'Uniquement par écrit'],
@@ -566,7 +566,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 VIOL — SUITE (mix Moyenne / Difficile)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Acte de pénétration',
     question: 'Au sens du Code pénal, le viol vise :',
     options: [
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Acte bucco-génital',
     question: 'Un acte bucco-génital, au sens pénal, suppose :',
     options: [
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Condition de la victime',
     question: 'La qualification de viol peut être retenue quelle que soit :',
     options: [
@@ -609,7 +609,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Absence de consentement',
     question: 'Les moyens “violence, contrainte, menace, surprise” sont dits :',
     options: [
@@ -623,7 +623,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Contrainte',
     question: 'La contrainte constitutive du viol peut être :',
     options: [
@@ -637,7 +637,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Menace',
     question: 'La menace/contrainte doit inspirer à la victime une crainte :',
     options: [
@@ -651,7 +651,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Surprise',
     question: 'La surprise s’entend comme :',
     options: [
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Vulnérabilité (alcool/stupéfiants)',
     question:
         'La consommation volontaire d’alcool ou de stupéfiants par la victime caractérise :',
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Substance à l’insu',
     question:
         'Administrer à l’insu de la victime une substance altérant le discernement est :',
@@ -695,7 +695,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (mineur présent)',
     question: 'Le viol est aggravé lorsque :',
     options: [
@@ -709,7 +709,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (auteur ivre/stupéfiants)',
     question: 'Le viol est aggravé lorsqu’il est commis par une personne :',
     options: [
@@ -724,7 +724,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Peines (simple)',
     question: 'Le viol simple (222-23) est puni de :',
     options: [
@@ -737,7 +737,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation 1er degré (222-24)',
     question: 'Le 1er degré d’aggravation du viol (222-24) entraîne :',
     options: [
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation 2e degré (222-25)',
     question:
         'Le 2e degré d’aggravation du viol (222-25) correspond notamment à :',
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation 3e degré (222-26)',
     question: 'Le 3e degré d’aggravation du viol (222-26) vise :',
     options: [
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Provocation (infraction distincte)',
     question:
         'Faire des offres/promesses pour qu’une personne commette un viol, si le crime n’a été ni commis ni tenté, relève :',
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🟣 INCESTE — SUITE (viol incestueux + agression sexuelle incestueuse)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux (222-23-2) — Élément légal',
     question: 'Le viol incestueux est défini par :',
     options: [
@@ -806,7 +806,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Liste des personnes (222-22-3)',
     question: 'L’article 222-22-3 fixe une liste :',
     options: [
@@ -820,7 +820,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Liens visés',
     question: 'Parmi ces liens, lequel est visé par 222-22-3 ?',
     options: ['Oncle / tante', 'Cousin germain', 'Ami d’enfance'],
@@ -830,7 +830,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Conjoints/concubins/PACS',
     question:
         'Sont aussi visés : les conjoints/concubins/partenaires PACS des personnes listées :',
@@ -841,7 +841,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Autorité',
     question:
         'Pour qualifier le viol incestueux, il faut en plus du lien familial démontrer :',
@@ -856,7 +856,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse (222-29-3) — Victime',
     question: 'L’agression sexuelle incestueuse vise une victime :',
     options: [
@@ -870,7 +870,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Consentement',
     question:
         'Dans l’agression sexuelle incestueuse sur mineur, la question du consentement :',
@@ -885,7 +885,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Jurisprudence (partenaire de la tante)',
     question:
         'Le partenaire pacsé de la tante de la victime n’est qualifiable d’incestueux que si :',
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Surqualification (victime majeure)',
     question: 'Si la victime est majeure, la “surqualification” incestueuse :',
     options: [
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔵 HARCÈLEMENT SEXUEL — SUITE (niveau pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Définition (répétition)',
     question:
         'Le harcèlement sexuel (forme “répétée”) consiste notamment à imposer :',
@@ -933,7 +933,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Connotation',
     question:
         'Pour caractériser l’élément matériel, il faut un caractère explicitement sexuel :',
@@ -948,7 +948,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Absence de consentement',
     question:
         'La victime doit exprimer de manière expresse et explicite qu’elle n’est pas consentante :',
@@ -963,7 +963,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Répétition (un seul auteur)',
     question: 'Avec un seul auteur, il faut au minimum :',
     options: [
@@ -977,7 +977,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Plusieurs auteurs (concertation)',
     question:
         'Le harcèlement sexuel peut être constitué si plusieurs personnes imposent des propos :',
@@ -993,7 +993,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Plusieurs auteurs (successivement)',
     question:
         'Le harcèlement sexuel peut aussi être constitué si plusieurs personnes agissent successivement en sachant :',
@@ -1008,7 +1008,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Acte unique assimilé',
     question:
         'Est assimilé au harcèlement sexuel le fait (même non répété) de :',
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Finalité',
     question:
         'Dans la forme “acte unique”, la finalité d’obtenir un acte sexuel peut être :',
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation',
     question:
         'Le harcèlement sexuel est aggravé notamment lorsqu’il est commis :',
@@ -1054,7 +1054,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (abus autorité)',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1072,7 +1072,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🧪 SUBSTANCES — (222-30-1 + 222-15) LIÉES AUX INFRACTIONS SEXUELLES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — Élément légal',
     question:
         'L’infraction d’administration d’une substance afin de commettre un viol/agression sexuelle est prévue par :',
@@ -1087,7 +1087,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — Condition',
     question: 'La victime doit être “à son insu” signifie :',
     options: [
@@ -1100,7 +1100,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique — Volontaire vs insu',
     question:
         'La consommation volontaire d’alcool/stupéfiants suffit à caractériser 222-30-1 :',
@@ -1110,7 +1110,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — But',
     question: 'L’administration à l’insu doit être faite :',
     options: [
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — Aggravations',
     question:
         'L’infraction 222-30-1 est aggravée notamment si les faits sont commis sur :',
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration substances nuisibles (222-15) — Définition',
     question: 'L’administration de substances nuisibles suppose :',
     options: [
@@ -1153,7 +1153,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration substances nuisibles — Résultat',
     question:
         'L’infraction d’administration de substances nuisibles est une infraction :',
@@ -1168,7 +1168,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration substances nuisibles — Tentative',
     question: 'La tentative d’administration de substances nuisibles est :',
     options: [
@@ -1185,7 +1185,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🧩 222-22-2 — CONTRAINDRE À SUBIR UNE ATTEINTE SEXUELLE D’UN TIERS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Nature',
     question:
         'Imposer à une personne de subir une atteinte sexuelle de la part d’un tiers est :',
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Tiers de bonne foi',
     question:
         'Le tiers qui commet l’acte sexuel peut être non informé de la contrainte :',
@@ -1214,7 +1214,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Atteinte sur soi-même',
     question: '222-22-2 vise aussi le fait d’imposer à la victime :',
     options: [
@@ -1227,7 +1227,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Peines',
     question: 'Les faits de 222-22-2 sont punis :',
     options: [
@@ -1242,7 +1242,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Tentative',
     question: 'La tentative de 222-22-2 est :',
     options: [
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Complicité',
     question: 'La complicité est :',
     options: [
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ BONUS — MINEUR <15 : VIOL / AGRESSION (clause “Roméo et Juliette”)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol majeur / mineur <15 (222-23-1) — Différence d’âge',
     question:
         'Le viol “majeur sur mineur de 15 ans” (hors 222-23) suppose en principe :',
@@ -1288,7 +1288,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol majeur / mineur <15 — Exception contrepartie',
     question:
         'Si l’écart d’âge est inférieur à 5 ans, le viol peut être retenu si :',
@@ -1304,7 +1304,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle majeur / mineur <15 (222-29-2) — Différence d’âge',
     question:
@@ -1319,7 +1319,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle majeur / mineur <15 — Peines',
     question: 'L’agression sexuelle 222-29-2 est punie de :',
     options: [
@@ -1335,7 +1335,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 VIOL — SUITE (aggravations / nuances / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Pénétration (exemples)',
     question: 'Laquelle de ces situations peut constituer un viol ?',
     options: [
@@ -1349,7 +1349,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Consentement et passé sexuel',
     question:
         'Le fait que la victime ait déjà eu des relations consenties avec l’auteur :',
@@ -1364,7 +1364,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Victime décédée',
     question: 'Peut-on qualifier “viol” des actes commis sur un cadavre ?',
     options: [
@@ -1378,7 +1378,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Contrainte morale (autorité)',
     question: 'La contrainte morale peut résulter notamment :',
     options: [
@@ -1392,7 +1392,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (mineur de 15 ans)',
     question:
         'Le viol est aggravé au 1er degré notamment lorsqu’il est commis :',
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (vulnérabilité liée à l’âge)',
     question:
         'La seule circonstance que la victime ait 70 ans suffit à retenir la vulnérabilité aggravante :',
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (précarité)',
     question:
         'Le viol est aggravé lorsqu’il est commis sur une personne dont la vulnérabilité résulte :',
@@ -1438,7 +1438,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (arme)',
     question: 'Le viol est aggravé lorsqu’il est commis :',
     options: [
@@ -1452,7 +1452,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (réseau public)',
     question:
         'Le viol est aggravé lorsque la victime a été mise en contact avec l’auteur grâce :',
@@ -1468,7 +1468,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (viol en série)',
     question: 'Le viol est aggravé lorsqu’il est commis en concours avec :',
     options: [
@@ -1482,7 +1482,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (conjoint/concubin/PACS)',
     question: 'Le viol est aggravé lorsqu’il est commis par :',
     options: [
@@ -1495,7 +1495,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Complicité',
     question: 'La complicité de viol est :',
     options: [
@@ -1510,7 +1510,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Preuve de bonne foi',
     question:
         'Lorsque l’auteur prétend avoir cru au consentement, la jurisprudence récente tend à :',
@@ -1528,7 +1528,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🟣 VIOL INCESTUEUX — SUITE (liste / autorité / nuances)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Liens (exemples)',
     question:
         'Parmi ces personnes, laquelle peut entrer dans la liste 222-22-3 ?',
@@ -1539,7 +1539,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Liens (neveux/nièces)',
     question:
         'Les neveux/nièces de la victime sont visés par la liste 222-22-3 :',
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Autorité de droit',
     question:
         'Une autorité “de droit” sur la victime correspond typiquement à :',
@@ -1565,7 +1565,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Autorité de fait',
     question: 'Une autorité “de fait” peut être :',
     options: [
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Consentement du mineur',
     question:
         'En matière incestueuse sur mineur, la violence/contrainte/menace/surprise :',
@@ -1595,7 +1595,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Victime majeure (cas)',
     question: 'Si la victime est majeure, on retient en principe :',
     options: [
@@ -1613,7 +1613,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🟣 AGRESSION SEXUELLE INCESTUEUSE (222-29-3) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Article',
     question: 'L’agression sexuelle incestueuse est définie par :',
     options: [
@@ -1627,7 +1627,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Peines',
     question:
         'Les peines principales prévues pour l’agression sexuelle incestueuse sont :',
@@ -1642,7 +1642,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Tentative',
     question: 'La tentative d’agression sexuelle incestueuse est :',
     options: [
@@ -1656,7 +1656,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Contact',
     question: 'L’atteinte sexuelle (agression sexuelle) se définit comme :',
     options: [
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔵 HARCÈLEMENT SEXUEL — SUITE (aggravations / peines / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Article',
     question: 'Le harcèlement sexuel est prévu par :',
     options: [
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Deux formes',
     question: 'Le cours distingue :',
     options: [
@@ -1703,7 +1703,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Effet sur la victime',
     question: 'La forme répétée peut être constituée si les faits :',
     options: [
@@ -1718,7 +1718,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Pluralité de victimes',
     question:
         'Des propos tenus devant un groupe peuvent constituer un harcèlement envers plusieurs victimes :',
@@ -1733,7 +1733,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (mineur <15)',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1747,7 +1747,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (vulnérabilité)',
     question:
         'Le harcèlement sexuel est aggravé lorsqu’il est commis sur une personne vulnérable :',
@@ -1763,7 +1763,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (précarité)',
     question: 'Le harcèlement sexuel est aggravé si la vulnérabilité résulte :',
     options: [
@@ -1777,7 +1777,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (plusieurs auteurs)',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1791,7 +1791,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (mineur présent)',
     question: 'Le harcèlement sexuel est aggravé lorsque :',
     options: [
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Peines (simple)',
     question: 'Le harcèlement sexuel simple est puni de :',
     options: [
@@ -1818,7 +1818,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Peines (aggravé)',
     question: 'Le harcèlement sexuel aggravé est puni de :',
     options: [
@@ -1831,7 +1831,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Tentative',
     question: 'La tentative de harcèlement sexuel est :',
     options: ['Non', 'Oui', 'Oui uniquement si la victime est mineure'],
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Complicité',
     question: 'La complicité de harcèlement sexuel est :',
     options: [
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ MAJEUR / MINEUR <15 — PREUVES D’ÂGE (pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Preuve de l’âge',
     question: 'L’âge de la victime s’apprécie :',
     options: [
@@ -1871,7 +1871,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Calcul de l’âge',
     question: 'Selon le cours, l’âge se calcule :',
     options: ['D’heure à heure', 'Par année civile', 'Par trimestre'],
@@ -1881,7 +1881,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Connaissance de l’âge',
     question:
         'En principe, le texte précise que la minorité de 15 ans doit être apparente ou connue de l’auteur :',
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Erreur sur l’âge',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -1913,7 +1913,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES AUTRES QUE LE VIOL (222-22 / 222-27)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Article',
     question:
         'Les agressions sexuelles commises avec violence, contrainte, menace ou surprise sont définies par :',
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Répression',
     question:
         'Les agressions sexuelles autres que le viol sont prévues et réprimées par :',
@@ -1943,7 +1943,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Définition',
     question: 'Une agression sexuelle “autre que le viol” suppose :',
     options: [
@@ -1957,7 +1957,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Distinction',
     question:
         'La différence principale avec le viol est que l’agression sexuelle :',
@@ -1972,7 +1972,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Exemples',
     question:
         'Le plus grand nombre d’agressions sexuelles (autres que le viol) correspond à :',
@@ -1987,7 +1987,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Jurisprudence',
     question:
         'Selon la jurisprudence citée, peut constituer une agression sexuelle :',
@@ -2002,7 +2002,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Auteur/Victime',
     question: 'L’agression sexuelle peut être :',
     options: [
@@ -2017,7 +2017,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Cadavre',
     question: 'Une agression sexuelle peut-elle être retenue sur un cadavre ?',
     options: [
@@ -2032,7 +2032,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agressions sexuelles autres que le viol — Condition de la victime',
     question:
@@ -2047,7 +2047,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Mariage',
     question:
         'Les faits peuvent être constitués même si l’auteur et la victime :',
@@ -2062,7 +2062,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Consentement',
     question:
         'Comme le viol, l’agression sexuelle “autre que le viol” suppose :',
@@ -2076,7 +2076,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Violence',
     question: 'La violence, au sens du cours, correspond à :',
     options: [
@@ -2091,7 +2091,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Appréciation',
     question:
         'Le caractère contraignant de la violence employée est apprécié :',
@@ -2106,7 +2106,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agressions sexuelles autres que le viol — Jurisprudence (violence)',
     question:
@@ -2122,7 +2122,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Contrainte/Menace',
     question:
         'La contrainte ou la menace sont assimilées par la jurisprudence à :',
@@ -2137,7 +2137,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Contrainte (222-22-1)',
     question: 'L’article 222-22-1 précise que la contrainte peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -2146,7 +2146,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Menace (critère)',
     question: 'Pour être retenue, la menace/contrainte doit inspirer :',
     options: [
@@ -2160,7 +2160,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Surprise (sens)',
     question: 'La surprise s’entend comme :',
     options: [
@@ -2174,7 +2174,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Surprise (prétexte)',
     question: 'La surprise peut être caractérisée lorsque l’auteur utilise :',
     options: [
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Surprise (sommeil)',
     question:
         'La surprise peut être retenue si l’auteur procède à des attouchements :',
@@ -2202,7 +2202,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Mineur (15-18)',
     question:
         'Pour les agressions sexuelles 222-27, l’article 222-22-1 (différence d’âge/autorité) concerne :',
@@ -2217,7 +2217,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -2232,7 +2232,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Mobile',
     question: 'Le mobile de l’auteur (haine, vengeance, lubricité…) :',
     options: [
@@ -2248,7 +2248,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES — CIRCONSTANCES AGGRAVANTES (222-28)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation',
     question:
         'Les circonstances aggravantes des agressions sexuelles (autres que le viol) sont prévues par :',
@@ -2262,7 +2262,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation ITT',
     question:
         'Une agression sexuelle est aggravée notamment lorsqu’elle a entraîné :',
@@ -2277,7 +2277,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Concours réel',
     question:
         'Si l’agression sexuelle s’accompagne de tortures/barbarie ou entraîne la mort :',
@@ -2293,7 +2293,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation autorité',
     question: 'Une agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2308,7 +2308,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation abus de fonctions',
     question: 'Le fait d’abuser de l’autorité que confèrent ses fonctions :',
     options: [
@@ -2321,7 +2321,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation pluralité',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2335,7 +2335,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation arme',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2348,7 +2348,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation réseau public',
     question:
         'L’agression sexuelle est aggravée lorsque la victime a été mise en contact grâce :',
@@ -2364,7 +2364,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation conjoint',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise par :',
     options: [
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation ivresse',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2391,7 +2391,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation prostitution',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2406,7 +2406,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation mineur témoin',
     question: 'L’agression sexuelle est aggravée lorsque :',
     options: [
@@ -2419,7 +2419,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation substance',
     question: 'L’agression sexuelle est aggravée lorsque :',
     options: [
@@ -2434,7 +2434,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Peines (simple)',
     question: 'L’agression sexuelle simple (222-27) est punie de :',
     options: [
@@ -2447,7 +2447,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Peines (aggravée)',
     question: 'L’agression sexuelle aggravée (222-28) est punie de :',
     options: [
@@ -2460,7 +2460,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Tentative',
     question: 'La tentative d’agression sexuelle est :',
     options: [
@@ -2474,7 +2474,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Complicité',
     question: 'La complicité d’agression sexuelle est :',
     options: [
@@ -2489,7 +2489,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (infraction distincte)',
     question:
         'L’“instigateur” d’une agression sexuelle (offres/promesses pour la faire commettre) est puni par :',
@@ -2504,7 +2504,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (condition)',
     question:
         'La provocation à commettre une agression sexuelle est punissable :',
@@ -2519,7 +2519,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (peines)',
     question:
         'La provocation à commettre une agression sexuelle (222-30-2) est punie de :',
@@ -2533,7 +2533,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (mineur)',
     question:
         'Si l’agression sexuelle devait être commise sur un mineur, la provocation est punie de :',
@@ -2548,7 +2548,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation suivie d’effet',
     question:
         'Si la provocation est suivie d’une agression sexuelle ou d’une tentative :',
@@ -2567,7 +2567,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES IMPOSÉES À UN MINEUR DE 15 ANS (222-29-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 (V/C/M/S) — Article',
     question:
         'Les agressions sexuelles autres que le viol imposées à un mineur de 15 ans (V/C/M/S) sont réprimées par :',
@@ -2582,7 +2582,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Victime vivante',
     question: 'Pour 222-29-1, une agression sexuelle sur un cadavre :',
     options: [
@@ -2596,7 +2596,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Âge',
     question: 'L’âge du mineur s’apprécie :',
     options: [
@@ -2609,7 +2609,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Connaissance de l’âge',
     question:
         'Pour un mineur de 15 ans, le texte exige que la minorité soit apparente ou connue :',
@@ -2620,7 +2620,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Consentement',
     question: 'Pour 222-29-1, l’absence de consentement résulte de :',
     options: [
@@ -2634,7 +2634,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Surprise et vulnérabilité',
     question:
         'Pour les mineurs de 15 ans, la contrainte morale ou la surprise peuvent être caractérisées par :',
@@ -2649,7 +2649,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Peines',
     question: 'Les peines principales de 222-29-1 sont :',
     options: [
@@ -2662,7 +2662,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Circonstances aggravantes',
     question: 'Les agressions sexuelles 222-29-1 comportent, selon le cours :',
     options: [
@@ -2676,7 +2676,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Tentative',
     question:
         'La tentative d’agression sexuelle sur mineur de 15 ans (222-29-1) est :',
@@ -2686,7 +2686,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Complicité',
     question: 'La complicité (121-6/121-7) est :',
     options: ['Oui', 'Non', 'Seulement si l’auteur est majeur'],
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Erreur sur l’âge',
     question: 'L’erreur sur l’âge du mineur :',
     options: [
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES IMPOSÉES À UNE PERSONNE VULNÉRABLE (222-29 / 222-30)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Article',
     question:
         'Les agressions sexuelles autres que le viol imposées à une personne vulnérable sont prévues par :',
@@ -2729,7 +2729,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Aggravations',
     question: 'Les circonstances aggravantes de 222-29 sont prévues par :',
     options: [
@@ -2743,7 +2743,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Vulnérabilité',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -2757,7 +2757,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Causes',
     question: 'Les causes de vulnérabilité visées incluent :',
     options: [
@@ -2771,7 +2771,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Préexistence',
     question: 'La vulnérabilité doit :',
     options: [
@@ -2786,7 +2786,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Âge seul',
     question:
         'Le seul âge de la victime suffit à caractériser la vulnérabilité :',
@@ -2801,7 +2801,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Précarité',
     question: 'La précarité économique ou sociale peut être comprise comme :',
     options: [
@@ -2816,7 +2816,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Peines (simple)',
     question:
         'L’agression sexuelle sur personne vulnérable (222-29) est punie de :',
@@ -2830,7 +2830,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Peines (aggravée)',
     question:
         'L’agression sexuelle sur personne vulnérable aggravée (222-30) est punie de :',
@@ -2844,7 +2844,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle sur personne vulnérable — Aggravation (lésion)',
     question:
@@ -2859,7 +2859,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Aggravation (arme)',
     question: 'Selon 222-30, est aggravée l’agression sexuelle commise :',
     options: [
@@ -2872,7 +2872,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle sur personne vulnérable — Aggravation (ivresse)',
     question:
@@ -2888,7 +2888,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle sur personne vulnérable — Aggravation (substance)',
     question: 'Selon 222-30, est aggravée l’agression sexuelle lorsque :',
@@ -2904,7 +2904,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Tentative',
     question: 'La tentative d’agression sexuelle sur personne vulnérable est :',
     options: ['Oui (222-31)', 'Non', 'Oui uniquement si arme'],
@@ -2913,7 +2913,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Complicité',
     question: 'La complicité est :',
     options: [
@@ -2931,7 +2931,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — BANQUE ÉNORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Article',
     question: 'L’exhibition sexuelle est prévue et réprimée par :',
     options: [
@@ -2944,7 +2944,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Contact',
     question: 'Dans l’exhibition sexuelle, il existe :',
     options: [
@@ -2958,7 +2958,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Nature',
     question: 'L’exhibition sexuelle s’entend :',
     options: [
@@ -2972,7 +2972,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Qualifications voisines',
     question:
         'Des paroles/écrits/affiches obscènes peuvent relever notamment :',
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Évolution (loi 2021)',
     question:
         'Depuis la loi du 21 avril 2021, l’exhibition sexuelle peut être constituée :',
@@ -3003,7 +3003,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Exemple (sous vêtements)',
     question: 'Selon le cours, peut entrer dans l’exhibition sexuelle :',
     options: [
@@ -3018,7 +3018,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Ce qui est puni',
     question: 'Ce qui est puni, ce n’est pas l’acte sexuel en soi mais :',
     options: [
@@ -3031,7 +3031,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Indifférence',
     question: 'Peu importe que les relations soient :',
     options: [
@@ -3045,7 +3045,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Jurisprudence (péage)',
     question:
         'Selon la jurisprudence citée, constitue une exhibition sexuelle :',
@@ -3060,7 +3060,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Jurisprudence (berge)',
     question:
         'Selon la jurisprudence citée (24 nov. 2021), l’exhibition est caractérisée si l’auteur :',
@@ -3075,7 +3075,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Publicité',
     question: 'Pour être constituée, l’exhibition doit être imposée :',
     options: [
@@ -3089,7 +3089,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu public',
     question: 'Dans un lieu public, la publicité de l’acte est :',
     options: [
@@ -3103,7 +3103,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Vu ou non vu',
     question:
         'Dans un lieu public, l’exhibition peut être constituée même si :',
@@ -3118,7 +3118,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieux concernés',
     question: 'Sont notamment considérés comme lieux publics :',
     options: [
@@ -3132,7 +3132,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu privé mais visible',
     question: 'L’exhibition peut être retenue dans un lieu privé si :',
     options: [
@@ -3146,7 +3146,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Voyeurisme / naturisme',
     question: 'L’infraction n’est pas retenue si :',
     options: [
@@ -3161,7 +3161,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -3174,7 +3174,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Aggravation',
     question:
         'L’exhibition sexuelle est aggravée lorsque les faits sont commis :',
@@ -3189,7 +3189,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines (simple)',
     question: 'L’exhibition sexuelle simple est punie de :',
     options: [
@@ -3202,7 +3202,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines (aggravée)',
     question: 'L’exhibition sexuelle aggravée (mineur <15) est punie de :',
     options: [
@@ -3215,7 +3215,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: ['Non', 'Oui', 'Oui uniquement si mineur'],
@@ -3227,7 +3227,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES AUTRES QUE LE VIOL — BANQUE (NIVEAUX MIXTES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément matériel',
     question: 'L’agression sexuelle suppose nécessairement :',
     options: [
@@ -3241,7 +3241,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Qualification',
     question: 'Un acte sexuel sans contact physique relève en principe :',
     options: [
@@ -3255,7 +3255,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Acte sur soi',
     question:
         'Un individu qui se livre à un acte obscène sur lui-même devant des témoins commet :',
@@ -3266,7 +3266,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Acte imposé',
     question: 'Il y a agression sexuelle lorsque :',
     options: [
@@ -3279,7 +3279,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Victime contrainte',
     question:
         'Une agression sexuelle peut être constituée si la victime est contrainte :',
@@ -3294,7 +3294,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Absence de consentement',
     question: 'L’absence de consentement se caractérise par :',
     options: [
@@ -3308,7 +3308,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence',
     question: 'La violence doit être suffisante pour :',
     options: [
@@ -3322,7 +3322,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence (appréciation)',
     question:
         'L’appréciation du caractère contraignant de la violence appartient :',
@@ -3332,7 +3332,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte morale',
     question: 'La contrainte morale peut être assimilée à :',
     options: [
@@ -3346,7 +3346,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Menace',
     question: 'La menace doit inspirer à la victime :',
     options: [
@@ -3360,7 +3360,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise',
     question: 'La surprise correspond à :',
     options: [
@@ -3374,7 +3374,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (sommeil)',
     question: 'Des attouchements commis sur une victime endormie relèvent :',
     options: ['De la surprise', 'D’un simple trouble', 'D’une contravention'],
@@ -3383,7 +3383,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (tromperie)',
     question:
         'L’utilisation d’un faux prétexte médical pour toucher une victime constitue :',
@@ -3397,7 +3397,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Intention',
     question: 'L’élément moral exige que l’auteur :',
     options: [
@@ -3411,7 +3411,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mobile',
     question: 'Le mobile de l’auteur est :',
     options: [
@@ -3428,7 +3428,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE — QUESTIONS PAR NIVEAUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Définition',
     question: 'L’exhibition sexuelle suppose :',
     options: [
@@ -3441,7 +3441,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu',
     question: 'L’acte doit être commis :',
     options: [
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu public',
     question: 'Dans un lieu public, la publicité de l’acte est :',
     options: ['Présumée', 'À prouver systématiquement', 'Impossible'],
@@ -3463,7 +3463,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Visible ou non',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -3476,7 +3476,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Loi 2021',
     question:
         'Depuis la loi du 21 avril 2021, l’exhibition peut être constituée :',
@@ -3490,7 +3490,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Consentement des témoins',
     question: 'L’infraction n’est pas constituée si les témoins :',
     options: [
@@ -3504,7 +3504,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Mineur',
     question: 'L’exhibition sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -3517,7 +3517,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: ['Non punissable', 'Punissable', 'Punissable seulement si mineur'],
@@ -3530,7 +3530,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // ✅ AGRESSIONS SEXUELLES (HORS VIOL) + MINEUR 15 + VULNÉRABLE + EXHIBITION
   // ✅ SUITE — 3 NIVEAUX : Facile / Moyenne / Difficile
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Définition (222-22 / 222-27)',
     question:
         'Les agressions sexuelles autres que le viol sont réprimées par :',
@@ -3545,7 +3545,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément matériel',
     question: 'Une agression sexuelle (hors viol) se distingue du viol par :',
     options: [
@@ -3559,7 +3559,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contact',
     question: 'Le plus grand nombre d’agressions sexuelles est constitué :',
     options: [
@@ -3574,7 +3574,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Victime',
     question:
         'La condition de la victime (ex : prostituée, hôtesse de bar, ex-partenaire) :',
@@ -3589,7 +3589,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mariage',
     question: 'Une agression sexuelle peut être constituée entre époux :',
     options: [
@@ -3604,7 +3604,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Cadavre',
     question: 'Une agression sexuelle sur un cadavre :',
     options: [
@@ -3618,7 +3618,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence',
     question: 'La violence, pour l’agression sexuelle, correspond :',
     options: [
@@ -3633,7 +3633,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte (222-22-1)',
     question: 'La contrainte prévue pour les agressions sexuelles peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -3643,7 +3643,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Menace/Contrainte',
     question: 'La menace ou la contrainte doit inspirer :',
     options: [
@@ -3657,7 +3657,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise',
     question: 'La surprise s’entend principalement comme :',
     options: [
@@ -3671,7 +3671,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (prétexte)',
     question:
         'Un prétexte fallacieux de visite médicale utilisé pour toucher une personne caractérise :',
@@ -3682,7 +3682,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur 15-18 (222-22-1)',
     question:
         'Pour les agressions sexuelles (222-27), la contrainte morale ou la surprise par différence d’âge et autorité concerne :',
@@ -3697,7 +3697,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément moral',
     question: 'L’élément moral de l’agression sexuelle exige :',
     options: [
@@ -3712,7 +3712,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Circonstances aggravantes (222-28)',
     question: 'L’une des circonstances aggravantes de l’article 222-28 est :',
     options: [
@@ -3726,7 +3726,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Circonstances aggravantes (222-28)',
     question:
         'La circonstance aggravante “par plusieurs personnes agissant en qualité d’auteur ou de complice” concerne :',
@@ -3741,7 +3741,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Circonstances aggravantes (222-28)',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -3755,7 +3755,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Substances',
     question:
         'Le fait qu’une substance ait été administrée à l’insu de la victime afin d’altérer son discernement est :',
@@ -3770,7 +3770,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Répression (222-27)',
     question:
         'Les peines principales de l’agression sexuelle simple (222-27) sont :',
@@ -3784,7 +3784,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Répression aggravée (222-28)',
     question:
         'Les peines principales de l’agression sexuelle aggravée (222-28) sont :',
@@ -3798,7 +3798,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Tentative',
     question: 'La tentative d’agression sexuelle est :',
     options: [
@@ -3811,7 +3811,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (222-30-2)',
     question:
         'La provocation à commettre une agression sexuelle (222-30-2) est :',
@@ -3827,7 +3827,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (peine)',
     question:
         'La provocation à commettre une agression sexuelle (hors cas mineur) est punie de :',
@@ -3841,7 +3841,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation sur mineur',
     question:
         'Si l’agression sexuelle provoquée devait être commise sur un mineur, la peine de la provocation est portée à :',
@@ -3859,7 +3859,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES IMPOSÉES À UN MINEUR DE 15 ANS (222-29-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (222-29-1)',
     question:
         'L’article réprimant les agressions sexuelles (hors viol) imposées à un mineur de 15 ans est :',
@@ -3870,7 +3870,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'Pour 222-29-1, les faits doivent être commis :',
     options: [
@@ -3884,7 +3884,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question:
         'L’âge pris en compte pour déterminer si la victime a moins de 15 ans est :',
@@ -3899,7 +3899,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (erreur)',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -3914,7 +3914,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (peines)',
     question: 'Les peines principales de 222-29-1 sont :',
     options: [
@@ -3927,7 +3927,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question:
         'Pour un mineur de 15 ans, la contrainte morale ou la surprise peuvent être caractérisées par :',
@@ -3946,7 +3946,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES SUR PERSONNE VULNÉRABLE (222-29 / 222-30)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Personne vulnérable (222-29)',
     question:
         'L’article réprimant l’agression sexuelle (hors viol) imposée à une personne vulnérable est :',
@@ -3957,7 +3957,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question: 'La vulnérabilité prise en compte par 222-29 doit :',
     options: [
@@ -3971,7 +3971,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -3985,7 +3985,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (âge)',
     question: 'Concernant la vulnérabilité liée à l’âge :',
     options: [
@@ -4000,7 +4000,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (précarité)',
     question:
         'La précarité économique ou sociale peut rendre une personne vulnérable car elle :',
@@ -4015,7 +4015,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable (peines)',
     question:
         'Les peines principales de l’agression sexuelle sur personne vulnérable (222-29) sont :',
@@ -4029,7 +4029,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée (222-30)',
     question:
         'L’agression sexuelle sur personne vulnérable est aggravée (222-30) notamment lorsqu’elle :',
@@ -4044,7 +4044,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée (peines)',
     question: 'Les peines principales en cas d’aggravation (222-30) sont :',
     options: [
@@ -4060,7 +4060,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Texte',
     question: 'L’exhibition sexuelle est prévue et réprimée par :',
     options: [
@@ -4074,7 +4074,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Contact',
     question: 'L’exhibition sexuelle se caractérise par :',
     options: [
@@ -4088,7 +4088,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Publicité',
     question: 'L’exhibition doit être imposée :',
     options: [
@@ -4102,7 +4102,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu privé',
     question:
         'Une exhibition commise dans un lieu privé peut être retenue si :',
@@ -4117,7 +4117,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Nudité',
     question:
         'Depuis l’évolution légale, l’exhibition est constituée même sans nudité visible si :',
@@ -4133,7 +4133,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément moral',
     question: 'L’auteur doit avoir :',
     options: [
@@ -4147,7 +4147,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines simples',
     question: 'Les peines principales de l’exhibition sexuelle simple sont :',
     options: [
@@ -4160,7 +4160,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Aggravation (mineur 15)',
     question: 'L’exhibition sexuelle est aggravée si commise au préjudice :',
     options: [
@@ -4174,7 +4174,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines aggravées',
     question:
         'Les peines principales de l’exhibition sexuelle aggravée (mineur de 15 ans) sont :',
@@ -4189,7 +4189,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: [
@@ -4202,7 +4202,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Diffusion de messages',
     question:
         'Des photos obscènes diffusées (sans acte imposé à la vue dans un lieu accessible) relèvent plutôt :',
@@ -4224,7 +4224,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // ✅ EXHIBITION (222-32)
   // ✅ 3 NIVEAUX : Facile / Moyenne / Difficile
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément légal',
     question: 'L’article 222-22 du Code pénal :',
     options: [
@@ -4239,7 +4239,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contenu',
     question:
         'Une agression sexuelle (hors viol) peut être constituée lorsque :',
@@ -4255,7 +4255,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Jurisprudence (C.A. Agen)',
     question:
         'Le fait de caresser le dos de la victime en passant la main sous son pull-over a été qualifié :',
@@ -4270,7 +4270,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Consentement',
     question:
         'L’absence de consentement dans l’agression sexuelle (hors viol) est établie par :',
@@ -4285,7 +4285,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence et résistance',
     question: 'Concernant la violence, il faut établir que :',
     options: [
@@ -4299,7 +4299,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Menace/Contrainte (appréciation)',
     question: 'L’appréciation de la menace ou de la contrainte doit être :',
     options: [
@@ -4313,7 +4313,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (endormissement)',
     question:
         'Des attouchements commis sur une victime endormie peuvent être qualifiés par :',
@@ -4328,7 +4328,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur présent',
     question:
         'Le fait qu’un mineur soit présent au moment des faits et y assiste est :',
@@ -4343,7 +4343,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Réseaux électroniques',
     question:
         'Le fait que la victime ait été mise en contact avec l’auteur via un réseau de communication électronique est :',
@@ -4358,7 +4358,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Concours réel',
     question:
         'Si l’agression sexuelle entraîne la mort ou s’accompagne de tortures :',
@@ -4374,7 +4374,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Complicité',
     question: 'La complicité en matière d’agression sexuelle :',
     options: [
@@ -4391,7 +4391,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ MINEUR DE 15 ANS (222-29-1) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'Concernant 222-29-1, la minorité de 15 ans :',
     options: [
@@ -4405,7 +4405,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'La preuve de l’âge du mineur peut se faire :',
     options: [
@@ -4419,7 +4419,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'L’âge de la victime se calcule :',
     options: [
@@ -4432,7 +4432,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (élément moral)',
     question: 'Pour l’élément moral, il faut notamment :',
     options: [
@@ -4450,7 +4450,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ PERSONNE VULNÉRABLE (222-29 / 222-30) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Personne vulnérable',
     question: 'Les causes de vulnérabilité visées par 222-29 sont :',
     options: [
@@ -4465,7 +4465,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (grossesse)',
     question: 'La grossesse peut entraîner une vulnérabilité particulière :',
     options: [
@@ -4479,7 +4479,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (déficience)',
     question:
         'La maladie, infirmité ou déficience physique/psychique renvoie à :',
@@ -4495,7 +4495,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée',
     question: 'L’usage ou menace d’une arme dans 222-30 :',
     options: [
@@ -4509,7 +4509,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée (substance)',
     question:
         'Si une substance est administrée à l’insu de la victime pour altérer discernement/contrôle :',
@@ -4527,7 +4527,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Nature',
     question: 'L’exhibition sexuelle sanctionne principalement :',
     options: [
@@ -4541,7 +4541,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieux publics',
     question: 'Dans un lieu public, la publicité est :',
     options: [
@@ -4556,7 +4556,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Victime “voyeur”',
     question: 'L’exhibition sexuelle n’est pas retenue si :',
     options: [
@@ -4571,7 +4571,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Exemple',
     question: 'Exhiber ses parties sexuelles à la vue d’employés de péage :',
     options: [
@@ -4585,7 +4585,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Acte sexuel simulé',
     question:
         'Depuis l’évolution du texte, un acte sexuel simulé imposé à la vue d’autrui :',
@@ -4605,7 +4605,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // ✅ + EXHIBITION SEXUELLE / PROVOCATION (222-30-2)
   // ✅ 3 NIVEAUX : Facile / Moyenne / Difficile
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Élément légal',
     question: 'L’article 222-27 du Code pénal :',
     options: [
@@ -4619,7 +4619,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Définition',
     question: 'Une agression sexuelle (hors viol) se caractérise par :',
     options: [
@@ -4633,7 +4633,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Cadavre',
     question: 'Concernant la victime, une agression sexuelle :',
     options: [
@@ -4647,7 +4647,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Relations entre personnes',
     question: 'Les faits d’agression sexuelle sont constitués :',
     options: [
@@ -4661,7 +4661,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Surprise',
     question: 'La surprise s’entend :',
     options: [
@@ -4676,7 +4676,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Exemple (prétexte médical)',
     question:
         'L’utilisation d’un prétexte fallacieux de visite médicale pour commettre une agression sexuelle illustre :',
@@ -4687,7 +4687,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Contrainte',
     question: 'La contrainte prévue par le Code pénal peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -4697,7 +4697,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — ITT',
     question: 'Selon 222-28, l’agression sexuelle est aggravée notamment :',
     options: [
@@ -4711,7 +4711,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Autorité',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -4726,7 +4726,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Pluralité',
     question:
         'La circonstance aggravante “plusieurs personnes auteurs ou complices” suppose :',
@@ -4742,7 +4742,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Substance',
     question:
         'Administrer une substance à l’insu de la victime pour altérer son discernement :',
@@ -4757,7 +4757,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Répression',
     question: 'Les peines de base (222-27) sont :',
     options: [
@@ -4771,7 +4771,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Répression aggravée',
     question: 'En cas d’aggravation (222-28), les peines passent à :',
     options: [
@@ -4784,7 +4784,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Tentative',
     question: 'La tentative d’agression sexuelle :',
     options: [
@@ -4801,7 +4801,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ PROVOCATION À COMMETTRE UNE AGRESSION SEXUELLE (222-30-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation à agression sexuelle (222-30-2)',
     question: 'La provocation à commettre une agression sexuelle est :',
     options: [
@@ -4816,7 +4816,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation à agression sexuelle (222-30-2)',
     question:
         'La provocation à commettre une agression sexuelle (infraction distincte) est punie de :',
@@ -4831,7 +4831,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation à agression sexuelle (mineur)',
     question:
         'Si l’agression sexuelle devait être commise sur un mineur, les peines de provocation sont :',
@@ -4846,7 +4846,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation suivie d’effet',
     question:
         'Si la provocation est suivie d’une agression sexuelle (ou tentative) :',
@@ -4865,7 +4865,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ MINEUR -15 (222-29-1) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur -15 (222-29-1)',
     question: 'Les peines prévues pour 222-29-1 sont :',
     options: [
@@ -4882,7 +4882,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ PERSONNE VULNÉRABLE (222-29 / 222-30) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable (222-29)',
     question: 'Les peines de base pour 222-29 sont :',
     options: [
@@ -4896,7 +4896,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle vulnérable aggravée (222-30)',
     question: 'En cas d’aggravation (222-30), les peines deviennent :',
     options: [
@@ -4912,7 +4912,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — PEINES + MINEUR
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines',
     question: 'L’exhibition sexuelle (222-32) est punie de :',
     options: [
@@ -4925,7 +4925,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Aggravation',
     question: 'L’exhibition sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -4942,7 +4942,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 AGRESSIONS SEXUELLES — DISTINCTIONS FINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Distinction viol',
     question:
         'Quel élément permet de distinguer une agression sexuelle d’un viol ?',
@@ -4957,7 +4957,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contact physique',
     question: 'Une agression sexuelle suppose nécessairement :',
     options: [
@@ -4971,7 +4971,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Exhibition',
     question:
         'Un auteur qui se masturbe devant des témoins sans contact physique commet :',
@@ -4982,7 +4982,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Consentement',
     question:
         'Le consentement de la victime exclut-il toujours l’agression sexuelle ?',
@@ -5001,7 +5001,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 AGRESSIONS SEXUELLES — SUR MINEUR DE 15 ANS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question:
         'Pour une agression sexuelle sur un mineur de 15 ans, il faut démontrer :',
@@ -5016,7 +5016,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur',
     question: 'Concernant l’âge du mineur, l’appréciation se fait :',
     options: [
@@ -5030,7 +5030,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur',
     question: 'L’erreur sur l’âge du mineur :',
     options: [
@@ -5047,7 +5047,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 AGRESSIONS SEXUELLES — PERSONNE VULNÉRABLE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question: 'La vulnérabilité retenue par l’article 222-29 doit être :',
     options: [
@@ -5060,7 +5060,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question:
         'Le seul âge avancé de la victime suffit-il à caractériser la vulnérabilité ?',
@@ -5075,7 +5075,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Précarité',
     question: 'La précarité économique ou sociale peut caractériser :',
     options: [
@@ -5092,7 +5092,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 EXHIBITION SEXUELLE — CONDITIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément matériel',
     question: 'L’exhibition sexuelle suppose :',
     options: [
@@ -5106,7 +5106,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu',
     question: 'L’exhibition sexuelle peut être constituée dans :',
     options: [
@@ -5119,7 +5119,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Publicité',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -5136,7 +5136,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
   // =========================================================
   // 🔴 EXHIBITION SEXUELLE — INTENTION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément moral',
     question: 'L’auteur doit avoir conscience :',
     options: [
@@ -5150,7 +5150,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: [
@@ -5163,7 +5163,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: [
@@ -5177,7 +5177,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines aggravées',
     question:
         'L’exhibition sexuelle aggravée (mineur de 15 ans) est punie de :',
@@ -5191,7 +5191,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: [
@@ -5204,7 +5204,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: ['Punissable', 'Impossible', 'Une contravention'],
@@ -5213,7 +5213,7 @@ final List<QuizQuestion> questionVioletIncesteetAgression = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: [
@@ -5577,7 +5577,7 @@ class _QuizViolIncesteState extends State<QuizViolInceste>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -5780,7 +5780,7 @@ class _QuizViolIncesteState extends State<QuizViolInceste>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -5963,7 +5963,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -6496,10 +6495,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -6870,7 +6870,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -6911,9 +6911,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

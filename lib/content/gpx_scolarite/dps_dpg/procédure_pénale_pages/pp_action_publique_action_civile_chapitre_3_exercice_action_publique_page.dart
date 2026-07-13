@@ -17,7 +17,7 @@ class PPActionPubliqueChapitre3ExerciceActionPubliquePage
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardBg = isDark
         ? const Color(0xFF2B3036)
@@ -318,7 +318,7 @@ class PPActionPubliqueChapitre3ExerciceActionPubliquePage
               ),
               const SizedBox(height: 10),
 
-              _SubTitle('3.4.1 — Le principe de l’opportunité des poursuites'),
+              const _SubTitle('3.4.1 — Le principe de l’opportunité des poursuites'),
               _Paragraph.rich([
                 TextSpan(
                   text: 'Article 40-1 du Code de Procédure Pénale',
@@ -403,12 +403,12 @@ class PPActionPubliqueChapitre3ExerciceActionPubliquePage
                 ),
               ]),
               const SizedBox(height: 4),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: 'Le bureau d’ordre national informatisé « Cassiopée »',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' gère les obligations d’avis motivé des classements sans suite à la victime, '
                       'conformément à l’article 48-1 du Code de Procédure Pénale.',
@@ -508,7 +508,7 @@ class PPActionPubliqueChapitre3ExerciceActionPubliquePage
                     'considérations d’ordre moral ou familial (ex : diffamation et injure nécessitant une plainte de la victime ou de ses ayants droit).',
               ),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'De nombreux délits de presse ou certaines infractions d’atteinte à la vie privée nécessitent une plainte préalable ',
                 ),
@@ -565,7 +565,7 @@ class PPActionPubliqueChapitre3ExerciceActionPubliquePage
                 'Nécessité de résoudre une question préjudicielle',
               ),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'Dans certains cas, la poursuite pénale suppose qu’une juridiction ait préalablement statué sur une question déterminante. ',
                 ),
@@ -930,10 +930,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -998,7 +998,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1041,7 +1041,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1103,7 +1103,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1135,7 +1135,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1148,7 +1148,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

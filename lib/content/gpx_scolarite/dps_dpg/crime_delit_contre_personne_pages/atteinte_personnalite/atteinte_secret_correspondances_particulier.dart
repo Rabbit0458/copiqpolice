@@ -110,16 +110,16 @@ class AtteinteSecretCorrespondancesParticulierPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’atteinte au secret des correspondances commise par un particulier.",
                 ),
@@ -135,47 +135,47 @@ class AtteinteSecretCorrespondancesParticulierPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) L’objet de l’atteinte"),
-              const _SubTitle("• Une correspondance"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) L’objet de l’atteinte"),
+              _SubTitle("• Une correspondance"),
+              _Paragraph(
                 "La loi ne définit pas la notion de « correspondance ». La jurisprudence considère ce terme "
                 "comme un synonyme de « message », quel qu’en soit le support, dès lors que ce message a vocation à circuler. "
                 "Sont donc considérés comme correspondances : courrier, lettre, carte postale, télégramme, etc.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La nature de la correspondance importe peu : elle peut être privée ou professionnelle.",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("• À destination d’un tiers"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("• À destination d’un tiers"),
+              _Paragraph(
                 "L’auteur doit s’en prendre à un message adressé à autrui : on ne viole pas le secret de sa propre correspondance.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le mode d’acheminement est indifférent (La Poste, coursier, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " précise que les correspondances peuvent être « arrivées ou non à destination » : l’atteinte peut se produire "
                       "alors que la correspondance n’est pas encore ou n’est plus acheminée.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pour les juges du fond, il suffit que le pli litigieux ait été, lors de son ouverture, en voie d’acheminement "
                         "(l’expéditeur s’en était dessaisi et il n’était pas encore parvenu à son destinataire).",
@@ -183,194 +183,194 @@ class AtteinteSecretCorrespondancesParticulierPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un acte matériel d’atteinte"),
+              _SubTitle("B) Un acte matériel d’atteinte"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " vise plusieurs comportements : ouvrir, supprimer, retarder, détourner une correspondance, "
                       "ou prendre frauduleusement connaissance de son contenu.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• Ouvrir une correspondance"),
-              const _Paragraph(
+              _SubTitle("• Ouvrir une correspondance"),
+              _Paragraph(
                 "Cela consiste à violer la fermeture quelconque d’une correspondance. Est sanctionné tout acte portant atteinte "
                 "à l’intégrité du support et donnant accès au contenu, quel que soit le moyen utilisé : violent (déchirer) ou plus subtil "
                 "(décacheter à la vapeur).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’altération peut être totale ou partielle. Peu importe que la correspondance ait été ensuite renvoyée vers son destinataire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un gérant d’immeuble puni pour avoir ouvert un courrier adressé à une locataire avant de lui distribuer ",
                   ),
                   TextSpan(
                     text: "(C.A. Toulouse, 13 janvier 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("• Supprimer une correspondance"),
+              _SubTitle("• Supprimer une correspondance"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La jurisprudence définit la suppression comme « tout acte qui a pour effet d’empêcher qu’elle parvienne à destination » ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 23 novembre 1849)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cela peut consister en une mise au rebut, une destruction, ou même une conservation empêchant la remise.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Une secrétaire de mairie qui avait jeté à la poubelle, après l’avoir lue, une lettre envoyée au maire ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 09 janvier 1996)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("• Retarder une correspondance"),
-              const _Paragraph(
+              _SubTitle("• Retarder une correspondance"),
+              _Paragraph(
                 "Retarder consiste à faire arriver plus tard qu’il ne faut, après le moment fixé ou attendu. "
                 "L’acte se concrétise par le fait de retenir un message en interrompant le cours normal de son acheminement.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un individu qui réexpédie une lettre avec la mention « inconnu » ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 08 octobre 1957)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Le propriétaire d’un immeuble qui réexpédie le courrier de sa locataire à une boîte postale ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 09 février 1965)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Le gardien d’un immeuble qui refuse de délivrer le courrier à la destinataire et le remet au préposé des postes ",
                   ),
                   TextSpan(
                     text: "(C.A. Aix-en-Provence, 26 janvier 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("• Détourner une correspondance"),
-              const _Paragraph(
+              _SubTitle("• Détourner une correspondance"),
+              _Paragraph(
                 "Le détournement se matérialise en modifiant le cours normal de la transmission : on réprime un retard "
                 "infligé volontairement à la transmission de la correspondance.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Condamné pour détournement : un secrétaire de mairie conserve une lettre anonyme adressée à une employée "
                         "plus de deux mois avant remise à la destinataire ",
                   ),
                   TextSpan(
                     text: "(C.A. Aix-en-Provence, 17 mars 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "• Prendre frauduleusement connaissance du contenu",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "C’est le dernier cas prévu par "),
+                TextSpan(text: "C’est le dernier cas prévu par "),
                 TextSpan(
                   text: "l’article 226-15 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". C’est celui qui caractérise le mieux l’atteinte au secret : il peut être sanctionné de façon autonome, "
                       "même si, en pratique, il est souvent consécutif à une ouverture, un retard ou un détournement.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Dans certaines situations, une personne peut prendre connaissance frauduleusement du contenu d’une correspondance "
                 "sans avoir elle-même commis les actes d’ouverture/suppression/retard/détournement.",
               ),
@@ -385,37 +385,37 @@ class AtteinteSecretCorrespondancesParticulierPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Mauvaise foi (élément intentionnel)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Mauvaise foi (élément intentionnel)"),
+              _Paragraph(
                 "L’auteur doit agir en toute connaissance de cause : il sait que la correspondance ne lui était pas destinée "
                 "et porte volontairement atteinte à sa transmission ou à son secret.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La Cour de cassation définit la « mauvaise foi » comme la connaissance que les lettres ne lui étaient pas destinées "
                         "et le fait de les conserver volontairement pour empêcher ou retarder leur transmission ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 15 mai 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Détourner ou ouvrir une correspondance d’autrui par erreur ne constitue pas l’infraction : il s’agit d’une simple négligence "
                 "ou imprudence (l’intention coupable fait défaut).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’intention de nuire n’est pas exigée. Le mobile importe peu.",
               ),
             ],
@@ -429,19 +429,19 @@ class AtteinteSecretCorrespondancesParticulierPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Lorsque les faits sont commis par le conjoint, le concubin ou le partenaire lié à la victime par un pacte civil de solidarité (PACS).",
               ),
@@ -456,81 +456,81 @@ class AtteinteSecretCorrespondancesParticulierPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 45 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 226-15 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 60 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 226-15 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text: "Tentative : NON (non prévue / non punissable).",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
               ),
             ],
@@ -569,10 +569,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -637,7 +637,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -680,7 +680,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -742,7 +742,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -774,7 +774,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -787,7 +787,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

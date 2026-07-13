@@ -107,16 +107,16 @@ class NonObstacleCommissionCrimeDelitPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-6 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime l’infraction de non-obstacle à la commission d’un crime ou d’un délit.",
                 ),
@@ -132,129 +132,129 @@ class NonObstacleCommissionCrimeDelitPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Imminence d’un crime ou d’un délit contre l’intégrité corporelle",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le délit ne vise pas toutes les abstentions : il est limité aux crimes et délits "
                 "contre l’intégrité corporelle. Il n’y a pas d’abstention punissable s’il n’existe pas "
                 "d’infraction à empêcher.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Ainsi, on ne peut poursuivre l’abstention d’empêcher une personne de se suicider, "
                       "puisque le suicide ne constitue pas un crime ou un délit contre l’intégrité corporelle ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 23 avril 1971)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "Le texte exclut notamment les contraventions, mais aussi les délits contre les biens, "
                 "ou contre la Nation, l’État et la paix publique.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "La jurisprudence admet que l’obligation d’agir puisse concerner une infraction en cours "
                 "d’exécution, mais aussi une infraction future, dès lors qu’elle est certaine et imminente. "
                 "L’obligation d’agir apparaît donc dès la certitude de l’imminence de la commission d’un crime "
                 "ou d’un délit contre l’intégrité corporelle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : épouse condamnée pour ne pas avoir fait obstacle à l’assassinat de son mari "
                         "par son amant alors qu’elle ne pouvait avoir de doute sur l’imminence du crime dont elle connaissait le projet ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 4 mai 1951)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Possibilité d’action immédiate"),
-              const _Paragraph(
+              _SubTitle("B) Possibilité d’action immédiate"),
+              _Paragraph(
                 "Seule l’abstention est punie : il n’est pas exigé que l’action ait réussi. "
                 "L’obligation d’agir ne concerne que celui qui avait un moyen d’empêcher le crime ou le délit "
                 "sans risque pour lui-même ou pour les tiers.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Cour précise que l’action devait être possible « sans risque » ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 16 novembre 1955)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "Les formes de l’action ne sont pas définies : une action personnelle n’est pas exigée. "
                 "L’action immédiate doit être choisie selon les capacités de la personne et peut consister "
                 "à prévenir les autorités ou à solliciter des tiers si cela constitue le meilleur moyen d’empêcher "
                 "l’infraction.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "L’abstention punissable peut aussi être retenue lorsque la personne est intervenue, "
                 "mais de manière insuffisante. L’aptitude de l’action à empêcher l’infraction est appréciée, "
                 "sans que l’échec ou la réussite ne soit déterminant.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : deux alpinistes s’étaient contentés de protestations verbales pour dissuader "
                         "un camarade de sectionner des cordes ; dissuasion jugée insuffisante ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 26 mars 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Absence de risque pour soi-même ou pour les tiers",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’abstention n’est punissable que si l’action omise pouvait être réalisée sans risque "
                 "pour l’intéressé ou pour les tiers. La crainte de représailles futures ne constitue pas "
                 "un risque justificatif au sens du texte.",
@@ -270,16 +270,16 @@ class NonObstacleCommissionCrimeDelitPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Conscience de l’imminence d’une infraction"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Conscience de l’imminence d’une infraction"),
+              _Paragraph(
                 "Il ne peut y avoir abstention volontaire si l’auteur ignorait que la commission était imminente. "
                 "Celui qui n’a pas conscience du péril criminel ou délictuel exposant une victime, "
                 "ou qui ignore que le fait à venir est un crime ou un délit, n’est pas répréhensible sur ce fondement.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Volonté de ne pas empêcher l’infraction"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Volonté de ne pas empêcher l’infraction"),
+              _Paragraph(
                 "La volonté coupable n’est pas caractérisée si l’auteur pensait de bonne foi qu’il n’avait aucun moyen "
                 "d’empêcher l’infraction. Elle existe lorsque la personne s’est abstenue alors qu’elle savait qu’elle pouvait empêcher.",
               ),
@@ -294,16 +294,16 @@ class NonObstacleCommissionCrimeDelitPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-6 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque le crime ou le délit contre l’intégrité corporelle est commis sur un mineur de 15 ans.",
                 ),
@@ -319,78 +319,78 @@ class NonObstacleCommissionCrimeDelitPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple (délit) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 223-6 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 223-6 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 223-7-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _Paragraph("Tentative : NON"),
-              const SizedBox(height: 8),
+              _SubTitle("Tentative & complicité"),
+              _Paragraph("Tentative : NON"),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Complicité : OUI — punissable conformément à ",
                 ),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -430,10 +430,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -498,7 +498,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -541,7 +541,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -603,7 +603,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -614,10 +614,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -629,13 +628,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -648,13 +646,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

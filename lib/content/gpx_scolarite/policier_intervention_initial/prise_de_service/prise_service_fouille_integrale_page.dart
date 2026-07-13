@@ -85,16 +85,16 @@ class PriseServiceFouilleIntegralePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 63-7 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : encadre la fouille intégrale, qui est un moyen de recherche de la preuve (et non une mesure de sécurité).",
                 ),
@@ -238,36 +238,36 @@ class PriseServiceFouilleIntegralePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La fouille intégrale est un moyen de recherche de la preuve, et non une mesure de sécurité. ",
                 ),
                 TextSpan(
                   text: "(art. 63-7 CPP)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Condition de recours"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Condition de recours"),
+              _Paragraph(
                 "Elle n’est possible que si la fouille par palpation ou l’utilisation de moyens de détection électronique "
                 "ne peuvent pas être réalisées.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Finalité"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Finalité"),
+              _Paragraph(
                 "Rechercher, sur la personne ou dans ses effets, des objets utiles à la manifestation de la vérité "
                 "ou dont la détention est susceptible de constituer une infraction.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Décision"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Décision"),
+              _Paragraph(
                 "Il s’agit d’une mesure décidée par un officier de police judiciaire (O.P.J.) "
                 "pour les nécessités d’une enquête en cours.",
               ),
@@ -281,26 +281,26 @@ class PriseServiceFouilleIntegralePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Enquête de flagrant délit"),
+            children: const [
+              _SubTitle("Enquête de flagrant délit"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La fouille intégrale doit être réalisée par un O.P.J., sur une personne du même sexe. "
                       "Sur instructions de l’O.P.J., l’A.P.J. peut le seconder. — ",
                 ),
                 TextSpan(
                   text: "articles 20 CPP et D. 13 CPP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Enquête préliminaire"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Enquête préliminaire"),
+              _Paragraph(
                 "La fouille intégrale, assimilée à une perquisition, peut être effectuée par un O.P.J. "
                 "ou un A.P.J. agissant sous son contrôle, dès lors que l’assentiment exprès et manuscrit du mis en cause "
                 "a été obtenu.",
@@ -356,10 +356,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -424,7 +424,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -467,7 +467,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -529,7 +529,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -561,7 +561,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -574,7 +574,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -87,9 +87,9 @@ class CameraPietonPage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Dans l’exercice des missions de prévention des atteintes à l’ordre public, de protection de la sécurité "
                       "des personnes et des biens, ainsi que dans les missions de police judiciaire, les agents de la police nationale "
@@ -97,26 +97,26 @@ class CameraPietonPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: "article L. 241-1 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Objectifs principaux"),
-              const _IntroBullet(
+              SizedBox(height: 12),
+              _SubTitle("Objectifs principaux"),
+              _IntroBullet(
                 text: "Prévenir les incidents au cours des interventions.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Constater des infractions et collecter les preuves nécessaires à la poursuite de leurs auteurs.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les enregistrements peuvent aussi être utilisés à des fins de formation et de pédagogie (sous conditions, notamment d’anonymisation).",
                   ),
@@ -133,35 +133,35 @@ class CameraPietonPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 241-1 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : autorise l’enregistrement audiovisuel des interventions via caméras individuelles, dans les missions prévues.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les données issues des caméras sont traitées dans un cadre réglementaire précisé notamment par ",
                 ),
                 TextSpan(
                   text:
                       "les articles R. 241-2 à R. 241-5 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -173,96 +173,96 @@ class CameraPietonPage extends StatelessWidget {
             cardColor: cardUse,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Agents concernés"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Agents concernés"),
+              _Paragraph(
                 "Dans la police nationale, peuvent porter une caméra piéton :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Les personnels actifs (uniforme ou tenue civile*).",
               ),
-              const _BulletPoint(text: "Les policiers adjoints."),
-              const _BulletPoint(text: "Les réservistes."),
-              const SizedBox(height: 8),
+              _BulletPoint(text: "Les policiers adjoints."),
+              _BulletPoint(text: "Les réservistes."),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En tenue civile, l’agent doit porter des insignes extérieurs et apparents de sa qualité (ex : brassard).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Lieux concernés"),
-              const _Paragraph(
+              _SubTitle("B) Lieux concernés"),
+              _Paragraph(
                 "Les personnels régulièrement équipés peuvent utiliser la caméra en tous lieux "
                 "(publics ou privés, y compris domiciles et lieux assimilés).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Dans un domicile, l’enregistrement doit se limiter au strict périmètre de l’intervention "
                 "et aux personnes concernées.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Information des personnes filmées"),
-              const _Paragraph(
+              _SubTitle("Information des personnes filmées"),
+              _Paragraph(
                 "Le déclenchement fait l’objet d’une information préalable des personnes filmées. "
                 "Si les circonstances font obstacle à cette information préalable, elle est faite à l’issue de l’intervention "
                 "(sauf si l’obstacle persiste).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple d’obstacle : état d’ébriété empêchant la compréhension de l’information. Référence : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 2 mai 2024",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le consentement des personnes filmées n’est pas requis. Une opposition ne fait pas obstacle "
                 "à la poursuite de l’enregistrement. Les personnes bénéficient d’un droit d’accès pouvant être exercé via la CNIL.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Conditions d’utilisation"),
-              const _BulletPoint(
+              _SubTitle("C) Conditions d’utilisation"),
+              _BulletPoint(
                 text:
                     "Seule une caméra en dotation administrative, portée de façon apparente, peut être utilisée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La mise en service (mode pré-enregistrement) nécessite l’identification préalable de l’agent porteur (RIO ou carte agent selon le modèle).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En cas d’incident ou de risque d’incident (circonstances / comportement), l’agent active le mode “enregistrement” puis le désactive en fin d’intervention.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les 30 secondes précédant le déclenchement sont sauvegardées (pré-enregistrement).",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Si la sécurité des agents (risque immédiat) ou la sécurité des biens/personnes est menacée, les images peuvent être transmises en temps réel au poste de commandement et aux personnels engagés.",
               ),
@@ -276,62 +276,62 @@ class CameraPietonPage extends StatelessWidget {
             cardColor: cardData,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _SubTitle("A) Données et informations enregistrées"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les catégories de données enregistrées sont prévues par ",
                 ),
                 TextSpan(
                   text: "l’article R. 241-2 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "Images et sons captés par la caméra."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(text: "Images et sons captés par la caméra."),
+              _BulletPoint(
                 text: "Jour et plages horaires d’enregistrement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Identification de l’agent porteur de la caméra.",
               ),
-              const _BulletPoint(text: "Lieu de collecte des données."),
-              const _BulletPoint(text: "Identification de la caméra."),
-              const _BulletPoint(
+              _BulletPoint(text: "Lieu de collecte des données."),
+              _BulletPoint(text: "Identification de la caméra."),
+              _BulletPoint(
                 text:
                     "Identification des personnels utilisateurs du logiciel d’exploitation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Motif d’export du fichier vidéo, nom de l’agent et du service demandeurs, numéro de la procédure.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Stockage & conservation"),
+              _SubTitle("B) Stockage & conservation"),
               _Paragraph.rich([
-                const TextSpan(text: "Règles prévues notamment par "),
+                TextSpan(text: "Règles prévues notamment par "),
                 TextSpan(
                   text:
                       "les articles R. 241-3, R. 241-4 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "En fin de vacation, les données sont transférées sur un support informatique sécurisé et automatiquement effacées de la caméra.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Hors procédure (judiciaire/administrative/disciplinaire), les données sont conservées pendant un mois.",
               ),
@@ -345,79 +345,79 @@ class CameraPietonPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les règles de consultation/accès sont prévues notamment par ",
                 ),
                 TextSpan(
                   text:
                       "les articles R. 241-3, R. 241-3-1 et R. 241-5 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Accès (gestionnaires)"),
-              const _BulletPoint(
+              _SubTitle("Accès (gestionnaires)"),
+              _BulletPoint(
                 text:
                     "Les chefs de service et les agents qu’ils désignent peuvent accéder à tout ou partie des données.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ils peuvent extraire les données pour les besoins exclusifs d’une procédure judiciaire, administrative ou disciplinaire, ou pour une action de formation/pédagogie.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Destinataires possibles (selon le cadre)"),
-              const _BulletPoint(
+              _SubTitle("Destinataires possibles (selon le cadre)"),
+              _BulletPoint(
                 text: "Inspection générale de la police nationale (I.G.P.N.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Autorité hiérarchique participant au pouvoir disciplinaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Agents chargés de la formation des personnels.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les enregistrements utilisés à des fins pédagogiques et de formation sont anonymisés.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Accès par l’agent après l’intervention"),
-              const _Paragraph(
+              _SubTitle("Accès par l’agent après l’intervention"),
+              _Paragraph(
                 "Dans le cadre d’une procédure judiciaire ou d’une intervention, les agents équipés peuvent accéder directement "
                 "après l’intervention (après transfert sur support sécurisé) aux enregistrements auxquels ils ont procédé afin de faciliter :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "La recherche d’auteurs d’infractions."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(text: "La recherche d’auteurs d’infractions."),
+              _BulletPoint(
                 text: "La prévention d’atteintes imminentes à l’ordre public.",
               ),
-              const _BulletPoint(text: "Le secours aux personnes."),
-              const _BulletPoint(
+              _BulletPoint(text: "Le secours aux personnes."),
+              _BulletPoint(
                 text:
                     "L’établissement fidèle des faits lors des comptes rendus d’intervention.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Traçabilité"),
-              const _Paragraph(
+              _SubTitle("Traçabilité"),
+              _Paragraph(
                 "Toutes les opérations de collecte, modification, consultation, communication et effacement sont enregistrées "
                 "et conservées pendant trois ans.",
               ),
@@ -457,10 +457,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -525,7 +525,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -568,7 +568,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -630,7 +630,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -641,10 +641,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -656,13 +655,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -675,13 +673,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -243,13 +243,12 @@ class AppConsoleLogger {
       final info = await _deviceInfo.deviceInfo;
       if (info is AndroidDeviceInfo) {
         _platform = 'android';
-        _deviceModel = '${info.manufacturer ?? 'Android'} ${info.model ?? ''}'
-            .trim();
+        _deviceModel = '${info.manufacturer} ${info.model}'.trim();
         _osVersion = 'SDK ${info.version.sdkInt}';
       } else if (info is IosDeviceInfo) {
         _platform = 'ios';
-        _deviceModel = info.utsname.machine ?? 'iPhone/iPad';
-        _osVersion = info.systemVersion ?? '';
+        _deviceModel = info.utsname.machine;
+        _osVersion = info.systemVersion;
       } else if (info is WebBrowserInfo) {
         _platform = 'web';
         final name = describeEnum(info.browserName);

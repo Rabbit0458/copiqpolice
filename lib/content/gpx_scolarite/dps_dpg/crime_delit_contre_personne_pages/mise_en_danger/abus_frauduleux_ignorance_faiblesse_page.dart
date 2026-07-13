@@ -108,16 +108,16 @@ class AbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-15-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime l’abus frauduleux de l’état d’ignorance ou de la situation de faiblesse.",
                 ),
@@ -133,194 +133,194 @@ class AbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte d’abus frauduleux"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte d’abus frauduleux"),
+              _Paragraph(
                 "L’abus n’est pas défini par la loi. Il peut consister en des manœuvres grossières, "
                 "un simple mensonge, voire des pressions suscitant la crainte de la victime.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : obtenir d’une personne « fragile » un prêt immobilier impossible à rembourser ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 05 octobre 2004)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph(
+              _Paragraph(
                 "L’abus frauduleux correspond à l’exploitation excessive de l’état de la victime pour l’amener "
                 "à un acte ou une abstention qu’elle n’aurait pas acceptés si elle avait été éclairée ou en état de résister.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le texte exige que l’abus « conduise » la personne à un acte/une abstention : cela ne signifie pas contraindre. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 16 octobre 2007)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Basé sur l’état d’ignorance ou de faiblesse"),
-              const _Paragraph(
+              _SubTitle("B) Basé sur l’état d’ignorance ou de faiblesse"),
+              _Paragraph(
                 "L’acte d’abus doit être fondé sur l’état d’ignorance ou de faiblesse de la victime.\n"
                 "• L’ignorance : manque de connaissances adéquates (ex. tromper une personne sans compétence technique).\n"
                 "• La faiblesse : vulnérabilité empêchant une résistance normale aux sollicitations.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 26 mai 2009",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’abus de faiblesse s’apprécie au regard de la vulnérabilité au moment de l’acte gravement préjudiciable.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Le consentement doit être libre et éclairé au moment où l’acte est passé. "
                 "Peu importe un consentement ancien : si la vulnérabilité apparaît ensuite, il faut vérifier le consentement effectif au moment de l’acte.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une victime particulière"),
+              _SubTitle("C) Une victime particulière"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Sans faire disparaître tout libre arbitre, la particulière vulnérabilité empêche la personne d’agir de son plein gré. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 16 octobre 2007)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La protection pénale vise une liste limitative :\n"
                 "• Les mineurs\n"
                 "• Les personnes d’une particulière vulnérabilité (âge, maladie, infirmité, déficience physique/psychique, grossesse), apparente ou connue.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : personne de 89 ans, surdité importante, ayant souscrit un nouveau contrat en l’absence de l’aidant habituel ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 17 janvier 2001)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : un voyant recevant une forte somme d’argent d’une personne dépressive ",
                   ),
                   TextSpan(
                     text: "(C.A. Nîmes, 15 novembre 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un préjudice gravement préjudiciable"),
-              const _Paragraph(
+              _SubTitle("D) Un préjudice gravement préjudiciable"),
+              _Paragraph(
                 "La victime doit avoir été poussée à un acte ou une abstention gravement préjudiciables. "
                 "Le préjudice peut concerner le patrimoine, la santé, l’activité professionnelle, mais aussi la vie familiale et affective.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : des prélèvements successifs vident le patrimoine de la victime ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 27 mai 2004)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La jurisprudence n’exige pas que l’acte préjudiciable soit déjà réalisé : il peut être seulement potentiel.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : femme de 83 ans, Alzheimer, placée sous sauvegarde de justice, disposant de ses biens par testament au profit de l’auteur ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 21 octobre 2008)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : vente en viager de deux immeubles à un prix anormalement bas (isolement + affaiblissement intellectuel) ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 13 janvier 2016)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -334,31 +334,31 @@ class AbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Connaissance de la minorité / vulnérabilité"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Connaissance de la minorité / vulnérabilité"),
+              _Paragraph(
                 "L’auteur doit connaître la minorité de la victime. "
                 "La particulière vulnérabilité doit être « apparente ou connue ». "
                 "La Cour de cassation exige que cette connaissance soit démontrée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 27 mai 2004",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : la connaissance doit être caractérisée.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Conscience de pousser à un acte/abstention gravement préjudiciable",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur doit savoir que l’intérêt de la victime est de refuser la proposition, "
                 "et qu’il la conduit pourtant à accepter un acte ou une abstention gravement préjudiciables.",
               ),
@@ -373,35 +373,35 @@ class AbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-15-2 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque l’infraction est commise par l’utilisation d’un service de communication au public en ligne ou via un support numérique/électronique.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-15-2 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsque l’infraction est commise en bande organisée.",
               ),
             ],
@@ -415,87 +415,87 @@ class AbusFrauduleuxIgnoranceFaiblessePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 375 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 223-15-2 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (en ligne/numérique) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (en ligne/numérique) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 750 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 223-15-2 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (bande organisée) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (bande organisée) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 1 000 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 223-15-2 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 223-15-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -533,10 +533,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -601,7 +601,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -644,7 +644,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -706,7 +706,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -717,10 +717,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -732,13 +731,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -751,13 +749,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

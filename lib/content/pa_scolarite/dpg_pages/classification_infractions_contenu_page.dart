@@ -75,7 +75,7 @@ class PaClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
-              '/pa/dps_dpg/droit_penal_general/loi_penale/classification_infractions/definition',
+              '/pa/dps_dpg/droit_penal_general/loi_penale/classification_infractions/classification',
             ),
           ),
           const SizedBox(height: 14),
@@ -107,7 +107,7 @@ class PaClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
-              '/pa/dps_dpg/droit_penal_general/loi_penale/classification_infractions/tableau_classification_tripartite',
+              '/pa/dps_dpg/droit_penal_general/loi_penale/classification_infractions/classification',
             ),
           ),
           const SizedBox(height: 14),
@@ -123,7 +123,7 @@ class PaClassificationInfractionsContenuPageLoiPenal extends StatelessWidget {
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
-              '/pa/dps_dpg/droit_penal_general/loi_penale/classification_infractions/consequences',
+              '/pa/dps_dpg/droit_penal_general/loi_penale/classification_infractions/classification',
             ),
           ),
 

@@ -102,7 +102,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉITÉRATION D’INFRACTIONS — NOTION ET CONDITIONS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La réitération d’infractions est définie comme :',
     options: [
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-16-7 al. 1 du code pénal définit la réitération comme la commission d’une nouvelle infraction après une condamnation définitive, sans remplir les conditions de la récidive légale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La notion de réitération a été consacrée par la loi du :',
     options: ['9 mars 2004', '12 décembre 2005', '23 mars 2019'],
@@ -125,7 +125,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La loi du 12 décembre 2005 a consacré la notion de réitération jusque-là jurisprudentielle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La réitération suppose nécessairement :',
     options: [
@@ -138,7 +138,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La réitération suppose que la nouvelle infraction soit commise après une condamnation devenue définitive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La réitération se distingue de la récidive légale car :',
     options: [
@@ -151,7 +151,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La réitération concerne les situations qui ne remplissent pas les conditions strictes de la récidive légale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question:
         'Une infraction commise après une condamnation pour un délit puni de moins de 10 ans peut relever :',
@@ -165,7 +165,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Lorsque la première infraction est punie d’une peine inférieure à 10 ans et que les conditions de la récidive ne sont pas réunies, la nouvelle infraction relève de la réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'Les infractions commises en réitération sont traitées :',
     options: [
@@ -178,7 +178,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les infractions commises en réitération sont juridiquement traitées comme des infractions uniques.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'En matière de réitération, les peines prononcées :',
     options: [
@@ -194,7 +194,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — NOTIONS GÉNÉRALES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question: 'La récidive est juridiquement définie comme :',
     options: [
@@ -208,7 +208,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La récidive suppose une condamnation définitive constituant le premier terme et une nouvelle infraction constituant le second terme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question: 'La récidive permet au juge :',
     options: [
@@ -221,7 +221,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La récidive est la principale cause légale permettant le dépassement du maximum normal de la peine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question: 'La récidive suppose obligatoirement :',
     options: [
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La condamnation doit être définitive avant la commission de la seconde infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question:
         'Lorsque la seconde infraction est commise avant que la première condamnation soit définitive, il s’agit :',
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — PREMIER TERME : CONDAMNATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Le premier terme de la récidive doit être :',
     options: [
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Les sanctions administratives et mesures de sûreté ne peuvent constituer le premier terme de la récidive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Un acquittement peut-il constituer le premier terme de la récidive ?',
@@ -275,7 +275,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Un acquittement ne constitue pas une condamnation et ne peut servir de premier terme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Une mesure de rééducation prononcée à l’encontre d’un mineur peut constituer le premier terme :',
@@ -284,7 +284,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Les mesures de rééducation ne constituent pas des peines.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Pour apprécier la récidive, sont prises en compte :',
     options: [
@@ -301,7 +301,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ORIGINE DE LA CONDAMNATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'La condamnation constituant le premier terme peut être prononcée :',
@@ -316,7 +316,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Les condamnations prononcées par un État membre de l’Union européenne sont prises en compte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Les condamnations prononcées hors Union européenne :',
     options: [
@@ -329,7 +329,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Elles peuvent révéler la dangerosité mais ne constituent pas le premier terme légal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Lorsque la condamnation a été prononcée dans l’UE, la qualification des faits se fait :',
@@ -347,7 +347,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — CARACTÈRE DÉFINITIF
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Une condamnation devient définitive :',
     options: [
@@ -359,7 +359,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'La condamnation doit être passée en force de chose jugée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Le délai d’appel du procureur général est de :',
     options: ['10 jours', '15 jours', '20 jours'],
@@ -372,7 +372,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — SUR SIS, AMNISTIE, GRÂCE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Une condamnation avec sursis non révoqué peut constituer le premier terme :',
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La Cour de cassation admet qu’un sursis non révoqué peut constituer le premier terme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Une condamnation effacée par une amnistie peut servir de premier terme :',
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — SECOND TERME : PRINCIPES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : second terme',
     question: 'Le second terme de la récidive correspond :',
     options: [
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le second terme est l’infraction nouvelle commise après une condamnation devenue définitive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : second terme',
     question:
         'Le code pénal prévoit, en droit commun, combien de cas de récidive ?',
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ART. 132-8 : CRIME OU DÉLIT PUNI DE 10 ANS → CRIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question:
         'Selon l’article 132-8 du code pénal, la récidive est constituée lorsque :',
@@ -438,7 +438,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-8 vise le cas “crime ou délit puni de 10 ans” suivi d’un crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question:
         'Dans la récidive de l’article 132-8, le second terme doit être :',
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-8 exige que l’infraction ultérieure soit un crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question: 'La récidive de l’article 132-8 est :',
     options: [
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Elle est générale (pas besoin de similarité) et perpétuelle (pas de délai tant que la condamnation n’est pas effacée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question:
         'En matière d’article 132-8, le temps écoulé entre les deux infractions :',
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise que cette récidive est perpétuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question: 'Dans l’article 132-8, sont assimilés aux crimes :',
     options: [
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ART. 132-9 : CRIME OU DÉLIT PUNI DE 10 ANS → DÉLIT
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question:
         'Selon l’article 132-9 du code pénal, la récidive est constituée lorsque :',
@@ -510,7 +510,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-9 vise le cas “crime ou délit puni de 10 ans” suivi d’un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question: 'Dans l’article 132-9, le second terme doit être :',
     options: [
@@ -523,7 +523,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le second terme est un délit dont la peine encourue est supérieure à un an.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question: 'La récidive de l’article 132-9 est :',
     options: [
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Générale (pas d’exigence d’identité) mais temporaire (délai à respecter).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question:
         'Quand le second délit est puni de 10 ans d’emprisonnement, le délai de récidive est de :',
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique : délai de 10 ans si le second délit est puni de 10 ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question:
         'Quand le second délit est puni d’une peine inférieure à 10 ans, le délai de récidive est de :',
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ART. 132-10 : RÉCIDIVE CORRECTIONNELLE (SPÉCIALE + TEMPORAIRE)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question: 'La récidive correctionnelle (art. 132-10) suppose :',
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la récidive correctionnelle est spéciale (identité/assimilation) et temporaire (5 ans).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question:
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le point de départ retenu par le cours est l’expiration ou la prescription de la peine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question: 'Le premier terme de la récidive correctionnelle est constitué :',
@@ -603,7 +603,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la récidive correctionnelle porte sur un délit puni de moins de 10 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question:
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le second terme doit être un délit ; l’emprisonnement n’est pas forcément requis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question: 'La récidive correctionnelle est qualifiée de :',
@@ -636,7 +636,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // ASSIMILATIONS DE DÉLITS (ART. 132-16 ET SUIVANTS + 321-5)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -651,7 +651,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite explicitement ces délits comme assimilés pour la récidive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours renvoie à l’article 132-16-1 pour l’assimilation agressions sexuelles / atteintes sexuelles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -681,7 +681,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’article 132-16-3 pour l’assimilation traite des êtres humains / proxénétisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -696,7 +696,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours vise l’article 132-16-4 pour l’assimilation des violences volontaires et délits commis avec violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE CONTRAVENTIONNELLE — ART. 132-11
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question: 'La récidive contraventionnelle concerne :',
@@ -729,7 +729,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la récidive contraventionnelle est prévue pour les contraventions de 5e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // EFFETS DE LA RÉCIDIVE — PRINCIPES GÉNÉRAUX
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive',
     question: 'La récidive a principalement pour effet :',
     options: [
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la récidive permet une aggravation des peines prévues par la loi.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive',
     question: 'En matière de récidive, le juge peut :',
     options: [
@@ -777,7 +777,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — ART. 132-8
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-8)',
     question:
         'Lorsque la seconde infraction est punissable de 20 ou 30 ans de réclusion criminelle, le maximum encouru devient :',
@@ -787,7 +787,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-8 prévoit la perpétuité lorsque la seconde infraction est punie de 20 ou 30 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-8)',
     question:
         'Si la seconde infraction entraîne une peine de 15 ans de réclusion criminelle, le maximum devient :',
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le maximum est porté à 30 ans lorsque la seconde infraction est punie de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-8)',
     question:
         'La récidive a-t-elle un effet sur la période de sûreté maximale de 22 ans ?',
@@ -815,7 +815,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — ART. 132-9
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-9)',
     question: 'Dans la récidive prévue à l’article 132-9, le juge peut :',
     options: [
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-9 permet le doublement de la peine maximale prévue pour le second délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-9)',
     question: 'Le doublement prévu par l’article 132-9 peut s’appliquer :',
     options: [
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — RÉCIDIVE CORRECTIONNELLE (ART. 132-10)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive correctionnelle',
     question: 'En récidive correctionnelle, le juge peut :',
     options: [
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'L’article 132-10 permet le doublement des peines encourues.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive correctionnelle',
     question: 'La récidive correctionnelle concerne principalement :',
     options: ['Les crimes', 'Les délits', 'Les contraventions'],
@@ -870,7 +870,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — RÉCIDIVE CONTRAVENTIONNELLE (ART. 132-11)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Effets de la récidive contraventionnelle',
     question:
@@ -881,7 +881,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-11 prévoit un plafond de 3 000 € en cas de récidive contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Effets de la récidive contraventionnelle',
     question:
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — PRINCIPES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive des personnes morales',
     question: 'Le code pénal prévoit la récidive pour :',
     options: [
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — ART. 132-12
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-12)',
     question:
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-12 vise le cas crime (ou délit assimilé) suivi d’un crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-12)',
     question: 'La récidive prévue à l’article 132-12 est :',
@@ -946,7 +946,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — ART. 132-13
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-13)',
     question:
@@ -956,7 +956,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'L’article 132-13 prévoit un doublement du taux de l’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-13)',
     question:
@@ -967,7 +967,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise un délai de 10 ans lorsque le second délit est puni de 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-13)',
     question:
@@ -981,7 +981,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — ART. 132-14 ET 132-15
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-14)',
     question: 'La récidive de délit à délit pour les personnes morales est :',
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-14 prévoit une récidive spéciale et temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-14)',
     question: 'En récidive art. 132-14, le taux maximum de l’amende est :',
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le taux maximum de l’amende est porté au double.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-15)',
     question:
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUESTIONS TABLEAU & CAS PRATIQUES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive : cas pratique',
     question:
         'Un délit puni de 5 ans d’emprisonnement commis en récidive correctionnelle permet au juge de prononcer :',
@@ -1028,7 +1028,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le doublement de la peine maximale est autorisé en récidive correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive : cas pratique',
     question:
         'Une contravention de 5e classe en récidive permet de porter l’amende maximale à :',
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le plafond légal est fixé à 3 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive : cas pratique',
     question:
         'La récidive d’une personne morale pour un délit puni de 100 000 € d’amende entraîne :',
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise le doublement du taux de l’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question: 'La récidive contraventionnelle est :',
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Elle est spéciale (même contravention) et temporaire (délai d’un an).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -1075,7 +1075,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours prévoit un délai de 12 mois suivant l’expiration ou la prescription de la peine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -1086,7 +1086,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elle est spéciale : même contravention que le premier terme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -1097,7 +1097,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise : délai de 3 ans quand la loi érige la récidive de 5e classe en délit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'Une personne condamnée pour un crime commet un autre crime 15 ans après, la condamnation n’est pas effacée. Le régime applicable est :',
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Pour l’article 132-8, la récidive est perpétuelle tant que la condamnation n’est pas effacée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'Une personne condamnée définitivement pour un délit puni de 10 ans commet un délit puni de 5 ans 8 ans après expiration de la peine. On retient :',
@@ -1125,7 +1125,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Si le second délit est puni d’une peine inférieure à 10 ans, le délai est de 5 ans : 8 ans => hors délai.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'En récidive correctionnelle, les deux infractions doivent être :',
@@ -1135,7 +1135,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La récidive correctionnelle est spéciale : identité ou assimilation exigée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'Si la seconde infraction intervient avant que la première condamnation soit définitive, on est :',
@@ -1146,7 +1146,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Une condamnation ayant bénéficié d’une grâce :',
     options: [
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'En cas de réitération, la confusion des peines est :',
     options: ['Obligatoire', 'Facultative', 'Exclue'],
@@ -1172,7 +1172,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CASIER JUDICIAIRE — BASE LÉGALE / DÉFINITION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : notions',
     question:
         'L’organisation et le fonctionnement du casier judiciaire sont prévus par :',
@@ -1186,7 +1186,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que le casier judiciaire est organisé par les articles 768 et suivants du CPP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : notions',
     question: 'Le casier judiciaire national est :',
     options: [
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours évoque un “casier judiciaire national automatisé”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : notions',
     question: 'Le casier judiciaire national automatisé dépend de l’autorité :',
     options: [
@@ -1216,7 +1216,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°1 — CONTENU / DESTINATAIRES / RETRAIT
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Le bulletin n°1 correspond :',
     options: [
@@ -1229,7 +1229,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le B1 est un relevé intégral contenant toutes les condamnations.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Le bulletin n°1 contient :',
     options: [
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours indique qu’il contient toutes les condamnations.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Le bulletin n°1 ne peut être délivré qu’à :',
     options: [
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : le B1 est délivré uniquement aux autorités judiciaires (art. 774 CPP).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Pour les personnes morales, le bulletin n°1 :',
     options: [
@@ -1268,7 +1268,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique un B1 spécifique pour les personnes morales (art. 774-1 CPP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Ne peuvent figurer au bulletin n°1 :',
     options: [
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°2 — CONTENU / DÉLIVRANCE / EXCLUSIONS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question: 'Le bulletin n°2 est :',
     options: [
@@ -1298,7 +1298,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : B2 = relevé avec exclusions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Le bulletin n°2 (personne physique) peut être délivré notamment :',
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours liste les autorités pouvant obtenir le B2 (art. 775 et s. CPP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question: 'Le bulletin n°2 peut être délivré :',
     options: [
@@ -1326,7 +1326,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite ces destinataires du B2 (art. 776 CPP).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Le bulletin n°2 peut être délivré aux présidents de tribunaux de commerce et juges commis :',
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite ces autorités comme destinataires possibles du B2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Le bulletin n°2 peut être demandé par les présidents de conseils départementaux :',
@@ -1353,7 +1353,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours liste ce cas dans les délivrances du B2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Concernant le B2, le tribunal qui prononce une condamnation peut :',
@@ -1367,7 +1367,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le tribunal peut exclure la mention au B2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Lorsque la mention d’une décision est exclue du bulletin n°2, cela entraîne :',
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique cet effet, tout en précisant des exceptions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Même si la mention est exclue du bulletin n°2, demeurent notamment :',
@@ -1401,7 +1401,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°2 — PERSONNES MORALES : DESTINATAIRES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : B2 personne morale',
     question:
@@ -1417,7 +1417,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite les destinataires du B2 des personnes morales (art. 776-1 CPP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : B2 personne morale',
     question:
@@ -1436,7 +1436,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°3 — DESTINATAIRES / PHILOSOPHIE / CONTENU
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question: 'Le bulletin n°3 concerne :',
     options: [
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le B3 concerne exclusivement les personnes physiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question: 'Le bulletin n°3 est :',
     options: [
@@ -1461,7 +1461,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : B3 = extrait expurgé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question: 'Le bulletin n°3 est délivré :',
     options: [
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : délivré à la personne ou représentant légal (mineur / majeur sous tutelle).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question:
         'Le législateur a limité le contenu du bulletin n°3 principalement pour :',
@@ -1493,7 +1493,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // COMMUNICATION DES BULLETINS — DEMANDES (PERSONNES PHYSIQUES / MORALES)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : communication',
     question:
         'Pour obtenir communication du relevé intégral, la personne doit adresser sa demande :',
@@ -1507,7 +1507,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise la demande au procureur de la République du lieu de résidence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : communication',
     question: 'Pour obtenir communication, la personne doit :',
     options: [
@@ -1519,7 +1519,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise que l’identité doit être justifiée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : communication',
     question: 'Une personne morale doit adresser sa demande de communication :',
     options: [
@@ -1536,7 +1536,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // UTILISATION PAR LE JUGE — PREUVE DE LA RÉCIDIVE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : preuve de la récidive',
     question:
@@ -1551,7 +1551,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que le juge se base essentiellement sur le casier judiciaire pour prouver la récidive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : preuve de la récidive',
     question: 'Les mentions de quel bulletin font preuve de la récidive ?',
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que les mentions du bulletin n°1 font preuve de la récidive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : preuve de la récidive',
     question:
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 6 — CONCOURS RÉEL D’INFRACTIONS : NOTION (ART. 132-2 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : notion',
     question:
         'Selon l’article 132-2 du code pénal, il y a concours d’infractions lorsque :',
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’art. 132-2 C.P. : concours si une infraction est commise avant condamnation définitive pour une autre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : notion',
     question: 'Le concours réel correspond à la situation dans laquelle :',
     options: [
@@ -1608,7 +1608,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Définition du cours : plusieurs infractions sans condamnation définitive entre elles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : hypothèses',
     question:
         'Un individu commet un vol, est jugé mais le jugement n’est pas définitif, puis commet un nouveau vol. Il s’agit :',
@@ -1622,7 +1622,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La 1re condamnation n’est pas définitive : on est en concours réel (art. 132-2 C.P.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : hypothèses',
     question:
         'Un individu outrage un gardien de la paix, se rebelle, puis commet des violences lors de la même intervention :',
@@ -1636,7 +1636,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne l’exemple d’infractions quasi concomitantes (outrage, rébellion, violences).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : vocabulaire',
     question: 'Le terme “concours idéal” est utilisé lorsque :',
     options: [
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 7 — SOLUTION LÉGALE : ART. 132-3 / 132-4 + PRINCIPES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : solution légale',
     question:
         'Sous l’ancien code pénal (art. 5), le principe en cas de plusieurs crimes ou délits était :',
@@ -1666,7 +1666,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours rappelle l’art. 5 ancien : seule la peine la plus forte était prononcée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-3',
     question:
         'En cas de concours de plusieurs infractions poursuivies dans une même procédure (art. 132-3 C.P.), le juge peut :',
@@ -1680,7 +1680,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Art. 132-3 : chacune des peines encourues peut être prononcée (avec limites pour peines de même nature).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-3',
     question:
         'Quand plusieurs peines de même nature sont encourues en poursuite unique (art. 132-3 C.P.), il est prononcé :',
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : une seule peine de même nature, plafonnée au maximum légal le plus élevé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-4',
     question:
         'En cas de concours poursuivi à l’occasion de procédures distinctes (art. 132-4 C.P.), les peines :',
@@ -1709,7 +1709,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Art. 132-4 : exécution cumulative plafonnée, avec possibilité de confusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-4',
     question:
         'Toujours selon l’art. 132-4 C.P., la confusion des peines de même nature peut être :',
@@ -1719,7 +1719,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise la possibilité de confusion totale ou partielle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : philosophie',
     question: 'Le cours indique que le principe général en concours réel est :',
     options: [
@@ -1735,7 +1735,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 8 — CONFLITS DE QUALIFICATIONS : NON BIS IN IDEM / INCOMPATIBLES / ABSORBANTES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications',
     question: 'Le conflit de qualifications apparaît lorsque :',
     options: [
@@ -1749,7 +1749,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : conflit de qualifications si mêmes faits susceptibles de plusieurs infractions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications',
     question: 'Le principe est :',
     options: [
@@ -1762,7 +1762,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : interdiction du cumul de qualifications si les faits sont identiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Conflits de qualifications : incompatibles',
     question: 'Les qualifications sont dites incompatibles lorsque :',
@@ -1776,7 +1776,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : qualifications incompatibles/exclusives, impossibilité de retenir les deux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications : exemples',
     question:
         'Selon le cours, est un exemple de qualifications incompatibles :',
@@ -1790,7 +1790,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite meurtre / homicide involontaire comme incompatibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications : exemples',
     question:
         'Selon le cours, est un exemple de qualifications incompatibles :',
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite recel et infraction d’origine comme incompatibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Non bis in idem',
     question: 'La règle “non bis in idem” signifie :',
     options: [
@@ -1817,7 +1817,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : non bis in idem = pas de double déclaration de culpabilité pour un même fait autrement qualifié.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Non bis in idem : formulation',
     question: 'Selon le cours, la Cour de cassation énonce que :',
     options: [
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Formule du cours relative à la règle non bis in idem.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Qualifications absorbantes',
     question: 'Il y a “qualification absorbante” lorsque :',
     options: [
@@ -1844,7 +1844,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours décrit les qualifications absorbantes de cette façon.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Qualifications générales/spéciales',
     question:
         'Le conflit “qualification générale / qualification spéciale” signifie que :',
@@ -1862,7 +1862,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 9 — DOMAINES D’APPLICATION + ATTÉNUATIONS/EXCLUSIONS + EXCEPTIONS SPÉCIALES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Non-cumul : portée',
     question: 'La règle du non-cumul des peines en concours réel a :',
     options: [
@@ -1874,7 +1874,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : principe d’application générale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Atténuations : contraventions',
     question: 'Selon l’article 132-7 C.P., en matière de contraventions :',
     options: [
@@ -1886,7 +1886,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Art. 132-7 : cumul des amendes contraventionnelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Atténuations : sanctions non pénales',
     question:
         'La jurisprudence exclut la règle du non-cumul lorsque sont en concours :',
@@ -1900,7 +1900,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : non-cumul écarté en concours peine + sanction disciplinaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Atténuations : fiscal',
     question: 'Selon le cours, les amendes fiscales :',
     options: [
@@ -1913,7 +1913,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les amendes fiscales se cumulent avec les peines de droit commun.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exclusion : nature des peines',
     question:
         'Selon l’article 132-5 C.P., les peines privatives de liberté sont :',
@@ -1926,7 +1926,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 132-5, privatives de liberté = même nature.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exclusion : nature des peines',
     question:
         'Conséquence (art. 132-5) : des peines privatives de liberté ne peuvent se cumuler que :',
@@ -1940,7 +1940,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : cumul plafonné au maximum de la peine la plus forte pour peines de même nature.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Peines complémentaires',
     question: 'En concours réel, les peines complémentaires :',
     options: [
@@ -1955,7 +1955,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // EXCEPTIONS SPÉCIALES (cumul imposé)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : évasion',
     question:
         'Selon l’article 434-31 C.P., les peines prononcées pour l’évasion :',
@@ -1968,7 +1968,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 434-31, cumul des peines d’évasion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : rébellion de prisonniers',
     question:
         'Selon l’article 433-9 C.P., la peine pour rébellion (de prisonniers) :',
@@ -1981,7 +1981,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 433-9, cumul avec la peine en cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : usurpation d’identité',
     question:
         'Selon l’article 434-23 C.P., les peines pour usurpation d’identité :',
@@ -1995,7 +1995,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite l’exception de cumul de l’art. 434-23.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : insolvabilité',
     question:
         'Selon l’article 314-8 al. 2 C.P., en matière d’organisation frauduleuse d’insolvabilité, le tribunal peut décider :',
@@ -2009,7 +2009,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : art. 314-8 al. 2, le tribunal peut décider de ne pas confondre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : refus d’obtempérer',
     question:
         'Selon l’article L.233-1/II du code de la route, les peines pour refus d’obtempérer :',
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’exception de cumul en matière de refus d’obtempérer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : CDO en détention',
     question:
         'Selon l’article 132-6-1 C.P., lorsqu’une infraction (706-73 / 706-73-1 CPP) est commise pendant la détention :',
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 132-6-1, cumul sans confusion en principe.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : CDO en détention',
     question:
         'Toujours selon l’article 132-6-1 C.P., la dernière juridiction peut décider de ne pas appliquer ces dispositions :',
@@ -2056,7 +2056,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 10 — MISE EN ŒUVRE : POURSUITE UNIQUE vs PLURALITÉ DE POURSUITES + CONFUSION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : poursuite unique',
     question: 'En poursuite unique, les infractions en concours :',
     options: [
@@ -2069,7 +2069,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : poursuite unique = juridiction unique examinant chaque infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : poursuite unique',
     question:
         'En poursuite unique, le cumul des peines de nature différente est :',
@@ -2083,7 +2083,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : art. 132-3 autorise le prononcé cumulatif de peines de nature différente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : poursuite unique',
     question: 'En poursuite unique, le cumul a un caractère :',
     options: [
@@ -2096,7 +2096,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : cumul autorisé mais pas obligatoire, le juge peut ne prononcer que certaines peines.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : peine la plus forte',
     question:
         'Pour déterminer la peine la plus forte encourue, le cours précise qu’il faut tenir compte :',
@@ -2112,7 +2112,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Cas pratique “vol + escroquerie”
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Poursuite unique : cas pratique',
     question:
         'Vol + escroquerie en concours réel (poursuite unique) : la peine d’emprisonnement prononcée ne peut dépasser :',
@@ -2128,7 +2128,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Pluralité de poursuites
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Mise en œuvre : pluralité de poursuites',
     question: 'La pluralité de poursuites correspond notamment au cas où :',
@@ -2145,7 +2145,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Confusion : principe
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : principe',
     question:
         'En pluralité de poursuites, lorsque les peines de même nature cumulées dépassent le maximum légal :',
@@ -2158,7 +2158,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : si cumul > maximum légal, confusion obligatoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : principe',
     question:
         'Lorsque le cumul aboutit à une peine au-dessous du maximum légal :',
@@ -2172,7 +2172,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : si cumul < maximum, confusion possible mais non obligatoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : portée',
     question: 'La confusion des peines peut être :',
     options: [
@@ -2184,7 +2184,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : confusion totale ou partielle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Confusion des peines : peines complémentaires',
     question: 'La confusion peut s’appliquer :',
@@ -2200,7 +2200,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Peines perpétuelles
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion : perpétuité',
     question: 'Le cours indique que les peines perpétuelles :',
     options: [
@@ -2215,7 +2215,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Effets de la confusion
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : effets',
     question:
         'La confusion enlève aux peines confondues leur existence propre :',
@@ -2225,7 +2225,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les condamnations subsistent, la confusion n’efface pas l’existence propre des peines.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : effets',
     question:
         'Selon le cours, l’exécution de la peine la plus forte entraîne :',
@@ -2242,7 +2242,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Procédure de la confusion : art. 132-4 CP et 710-1 CPP
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : procédure',
     question: 'La procédure de confusion des peines est prévue notamment par :',
     options: [
@@ -2254,7 +2254,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite expressément 132-4 C.P. et 710-1 C.P.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : procédure',
     question:
         'La juridiction saisie de la 2e infraction, si elle connaît le passé judiciaire, peut :',
@@ -2268,7 +2268,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la juridiction de la 2e infraction peut prononcer la confusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : requête',
     question:
         'Si la juridiction ne s’est pas prononcée sur la confusion, une requête peut être adressée au procureur de la République par :',
@@ -2281,7 +2281,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite ces deux possibilités.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : compétence',
     question:
         'Après définitivité, la demande de confusion de peines du condamné est portée devant :',
@@ -2295,7 +2295,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : demande portée devant le tribunal correctionnel (décision susceptible d’appel).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : appel',
     question:
         'La décision du tribunal correctionnel sur la confusion peut faire l’objet :',
@@ -2308,7 +2308,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours mentionne la possibilité d’appel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Confusion des peines : tribunaux compétents',
     question: 'Sont compétents pour statuer sur la confusion :',
@@ -2322,7 +2322,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours liste ces compétences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Confusion des peines : lieu de détention',
     question:
@@ -2341,7 +2341,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 6→10 — PACK CAS PRATIQUES / QCM PIÈGES (RENFORCEMENT)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Cas pratique : non bis in idem',
     question:
         'Un même fait est qualifié à la fois de “viol commis par violence” et de “violences volontaires” sur les mêmes faits. Le cours indique qu’on est dans :',
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : une qualification peut absorber l’autre si elle constitue un élément/circonstance de l’autre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Cas pratique : cumul possible',
     question:
         'Un accident cause un décès et une autre victime blessée avec I.T.T. ≤ 3 mois :',
@@ -2369,7 +2369,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne cet exemple de cumul possible : victimes différentes et éléments distincts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Cas pratique : faux & escroquerie',
     question:
         'Production de fausses attestations et tromperie pour obtenir la vente : le cours indique que l’auteur peut être poursuivi cumulativement pour :',
@@ -2383,7 +2383,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : faux/usage de faux et escroquerie ne sont pas incompatibles et ne s’absorbent pas nécessairement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Piège : faits distincts',
     question:
         'Si les faits incriminés sont distincts, le cumul de qualifications est :',
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : pièges',
     question:
         'Un extrait délivré uniquement à la personne concernée correspond :',
@@ -2408,7 +2408,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le B3 est délivré uniquement à l’intéressé (ou représentant légal dans certains cas).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : pièges',
     question:
         'Une condamnation effacée par amnistie peut-elle encore figurer au B1 ?',
@@ -2418,7 +2418,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les condamnations effacées par l’amnistie ne peuvent figurer au B1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : pièges',
     question: 'Le B2 peut être utilisé pour :',
     options: [
@@ -2435,7 +2435,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // SÉRIES “QUI PEUT L’OBTENIR ?” — BULLETIN N°2 (ENTRAINEMENT)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : B2 destinataires',
     question:
         'Le bulletin n°2 peut être délivré aux autorités compétentes pour recevoir les déclarations de candidatures à une élection afin de vérifier certaines peines d’inéligibilité :',
@@ -2445,7 +2445,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite ce cas : vérification des mentions liées à certaines peines (131-26 et suivants).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : B2 destinataires',
     question:
         'Le bulletin n°2 peut être délivré à des dirigeants de personnes morales exerçant auprès des mineurs, pour le recrutement, sous condition que :',
@@ -2463,7 +2463,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PACK “DIFFÉRENCES” — B1 / B2 / B3
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : comparatif',
     question: 'Quel bulletin est un relevé intégral ?',
     options: ['B1', 'B2', 'B3'],
@@ -2471,7 +2471,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le B1 est le relevé intégral des fiches.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : comparatif',
     question: 'Quel bulletin est un relevé avec exclusions ?',
     options: ['B1', 'B2', 'B3'],
@@ -2479,7 +2479,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le B2 exclut certaines condamnations.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : comparatif',
     question:
         'Quel bulletin est un extrait expurgé délivré au seul intéressé ?',
@@ -2492,7 +2492,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUESTIONS “CASIER & RÉCIDIVE” — LIENS DIRECTS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire & récidive',
     question:
         'Pour que la récidive puisse être retenue, la condamnation antérieure doit être :',
@@ -2506,7 +2506,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la condamnation doit encore être inscrite au casier au moment de la seconde infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire & récidive',
     question:
         'Une condamnation effacée par amnistie peut servir de premier terme de récidive :',
@@ -2516,7 +2516,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : si la condamnation a été effacée (amnistie), elle ne peut plus servir de premier terme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : contestation',
     question:
         'Si l’intéressé conteste le contenu utilisé pour établir la récidive, la preuve peut nécessiter :',
@@ -2883,7 +2883,7 @@ class _QuizSanctionPluraliteState extends State<QuizSanctionPluralite>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3086,7 +3086,7 @@ class _QuizSanctionPluraliteState extends State<QuizSanctionPluralite>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3269,7 +3269,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3802,10 +3801,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4176,7 +4176,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4217,9 +4217,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

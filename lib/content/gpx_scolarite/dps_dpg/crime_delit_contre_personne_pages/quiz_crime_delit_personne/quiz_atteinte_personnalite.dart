@@ -102,7 +102,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // DÉNONCIATION CALOMNIEUSE — art. 226-10 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fondement',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -115,7 +115,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’article 226-10 C.P. définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Définition',
     question:
         'La dénonciation calomnieuse suppose une dénonciation dirigée contre :',
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'L’article 226-10 exige une dénonciation dirigée contre une personne déterminée (physique ou morale), identifiable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Nature des faits',
     question:
         'Pour relever de la dénonciation calomnieuse, le fait dénoncé doit être :',
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la dénonciation doit être préjudiciable : le fait dénoncé doit être de nature à entraîner des sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Forme',
     question: 'La dénonciation calomnieuse peut être faite :',
     options: [
@@ -157,7 +157,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le texte prévoit “par tout moyen” : lettre, plainte, pétition, oral, téléphone… sous réserve de preuve.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Moment de consommation',
     question:
         'Selon la jurisprudence, l’infraction est consommée et la prescription commence à courir :',
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la jurisprudence retient la date de réception par l’autorité comme point de consommation et de départ de prescription.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire',
     question: 'La dénonciation doit être adressée notamment à une autorité :',
     options: [
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise les autorités pouvant donner suite ou saisir l’autorité compétente, ainsi que supérieurs hiérarchiques/employeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Caractère spontané',
     question:
         'La jurisprudence exige que la dénonciation calomnieuse présente un caractère :',
@@ -199,7 +199,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que seule est coupable la personne ayant pris l’initiative : les dénonciations provoquées perdent le caractère spontané.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation provoquée',
     question:
         'N’a pas le caractère spontané (donc, en principe, n’entre pas dans 226-10) la dénonciation :',
@@ -214,7 +214,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que répondre à des questions ou rédiger un rapport sur demande fait perdre le caractère spontané.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Inexactitude',
     question:
         'L’infraction requiert que l’auteur sache que les faits dénoncés sont :',
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend l’exigence : dénoncer un fait que l’on sait totalement ou partiellement inexact.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Preuve de la fausseté',
     question:
         'Depuis la réforme rappelée au cours (loi du 9 juillet 2010), la fausseté résulte nécessairement d’une décision définitive :',
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : acquittement/relaxe/non-lieu définitifs constatant expressément l’absence de fait ou d’imputabilité => fausseté automatique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autres cas',
     question:
         'Si la décision définitive est rendue faute de charges suffisantes, la fausseté du fait dénoncé est :',
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que dans les autres cas (ex : faute de charges), le tribunal apprécie la pertinence des accusations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément moral',
     question:
         'L’élément moral suppose notamment la conscience, au moment de la dénonciation :',
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours souligne que l’auteur doit connaître l’inexactitude des faits au jour de la dénonciation.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Découverte après coup',
     question:
         'Si l’auteur découvre après coup son erreur (il croyait les faits vrais au moment de dénoncer), alors :',
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : il faut la connaissance de l’inexactitude au moment de dénoncer. L’erreur découverte après coup exclut 226-10.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peines',
     question:
         'Pour une personne physique, la dénonciation calomnieuse (forme simple) est punie de :',
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : délit, art. 226-10, 5 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'La tentative de dénonciation calomnieuse est :',
     options: [
@@ -313,7 +313,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement : TENTATIVE : NON pour l’art. 226-10.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Complicité',
     question: 'La complicité de dénonciation calomnieuse est :',
     options: [
@@ -330,7 +330,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PORNODIVULGATION — art. 226-2-1 al.2 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Fondement',
     question:
         'La diffusion, sans accord, d’un enregistrement à caractère sexuel obtenu avec consentement est prévue par :',
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise l’art. 226-2-1 al.2 C.P. pour la diffusion sans accord d’un contenu sexuel obtenu avec consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Notion',
     question: 'Le terme “revenge porn” correspond en France à :',
     options: [
@@ -357,7 +357,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que ces agissements ont été popularisés sous “revenge porn”, aujourd’hui aussi appelé pornodivulgation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Support',
     question: 'Peuvent constituer le support matériel de la pornodivulgation :',
     options: [
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : support visuel, audio, audiovisuel ou écrit (messages), peu importe le support matériel/numérique.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Consentement',
     question:
         'Dans la pornodivulgation, le fait que la victime ait consenti à être filmée/photographiée signifie :',
@@ -384,7 +384,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste : l’accord à la captation ne vaut pas accord à la diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément matériel',
     question:
         'L’élément matériel principal de l’infraction est une diffusion :',
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours décrit : porter à la connaissance du public ou d’un tiers sans accord (opposition ou absence de consultation).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peines',
     question:
         'La pornodivulgation (art. 226-2-1 al.2) est punie (personne physique) de :',
@@ -412,7 +412,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : art. 226-2-1 al.2, délit, 2 ans + 60 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question: 'La tentative de pornodivulgation (226-2-1) est :',
     options: [
@@ -425,7 +425,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne que l’art. 226-5 prévoit expressément la tentative pour 226-2-1.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Fondement',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -439,7 +439,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : art. 226-4 C.P. définit et réprime la violation de domicile (particulier).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Définition',
     question: 'La violation de domicile vise notamment :',
     options: [
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : introduction illicite + maintien à l’issue de cette introduction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Notion de domicile',
     question: 'Constitue un domicile (au sens du cours) :',
     options: [
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours retient une définition extensive : local d’habitation protégeant l’intimité (résidence, lieu de séjour, etc.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendances',
     question:
         'Peuvent être assimilées à des dépendances du domicile (si proximité et prolongement) :',
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite des exemples de dépendances : garage, débarras, balcon, terrasse… sous condition de lien/proximité.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Exclusions',
     question:
         'N’est pas considéré comme un domicile (selon les exemples du cours) :',
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste parmi les exclusions : immeuble en construction, logement vide de meubles, etc.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Moyens',
     question:
         'Les “manœuvres” au sens de la violation de domicile correspondent à :',
@@ -509,7 +509,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit les manœuvres comme tout procédé astucieux/ruse permettant l’introduction illicite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait',
     question: 'Constitue une voie de fait (exemples du cours) :',
     options: [
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite : forçage de serrure, bris de vitre, défoncer la porte, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Infraction continue',
     question:
         'La violation de domicile est qualifiée par le cours comme une infraction :',
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que c’est une infraction continue, permettant la flagrance tant que perdure l’occupation illicite.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Cas légitimes',
     question:
         'Peut constituer un cas d’introduction légitime (hors les cas où la loi le permet) :',
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’assistance à personne en péril et d’autres hypothèses (incendie, inondation, appel au secours).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peines',
     question:
         'La violation de domicile (art. 226-4) est punie (personne physique) de :',
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : art. 226-4 C.P., 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question: 'La tentative de violation de domicile est :',
     options: [
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours mentionne : tentative oui, prévue à l’art. 226-5.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande de “mode d’emploi du squat” — Fondement',
     question:
         'Le fait de faire la propagande ou publicité en faveur de méthodes facilitant la violation de domicile est incriminé par :',
@@ -590,7 +590,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise l’art. 226-4-2-1 C.P. pour la propagande/publicité en faveur de méthodes facilitant ces délits.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande de “mode d’emploi du squat” — Sanction',
     question:
         'La commission du délit de propagande/publicité en faveur de méthodes de violation de domicile est sanctionnée par :',
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement',
     question:
         'La violation des correspondances émises par la voie électronique (particulier) est définie par :',
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours distingue : al.2 = définition (voie électronique) ; al.1 = répression (peines).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Objet',
     question: 'Sont visées par l’article 226-15 al.2 des correspondances :',
     options: [
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours parle de correspondances “dématérialisées” (appels, emails, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter',
     question: '“Intercepter” une correspondance électronique consiste à :',
     options: [
@@ -645,7 +645,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : intercepter = prendre au passage, capter pendant la transmission (matériel quelconque).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détourner',
     question:
         '“Détourner” une correspondance électronique renvoie notamment au fait :',
@@ -660,7 +660,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours retient le détournement notamment quand un tiers ouvre des messages en attente d’être lus par le destinataire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Divulguer',
     question: '“Divulguer” au sens du cours signifie :',
     options: [
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : divulgation = révélation du contenu à un tiers (ex : faire écouter une conversation enregistrée).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mauvaise foi',
     question: 'La “mauvaise foi” est définie par la Cour de cassation comme :',
     options: [
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite : Cass. crim., 15 mai 1990, mauvaise foi = connaissance que le message ne lui était pas destiné.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Aggravation',
     question:
         'La violation des correspondances électroniques est aggravée lorsque les faits sont commis :',
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : art. 226-15 al.3 prévoit une circonstance aggravante liée au lien conjugal/concubinage/PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peines simples',
     question: 'En forme simple (226-15 al.2), la peine encourue est :',
     options: [
@@ -714,7 +714,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : 226-15 al.2 = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peines aggravées',
     question: 'En forme aggravée (226-15 al.3), la peine encourue est :',
     options: [
@@ -730,7 +730,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // ATTEINTE À LA REPRÉSENTATION — 226-8 + deepfake
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Fondement',
     question: 'L’atteinte à la représentation de la personne est prévue par :',
     options: [
@@ -743,7 +743,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : l’art. 226-8 C.P. définit et réprime l’atteinte à la représentation de la personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Condition',
     question:
         'Le délit est constitué si le montage est diffusé sans consentement et :',
@@ -758,7 +758,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : infraction si montage non apparent et non signalé, sans consentement.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Deepfake',
     question:
         'Le cours assimile à l’infraction la diffusion d’un contenu visuel/sonore :',
@@ -773,7 +773,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours intègre explicitement les contenus générés algorithmiquement (hypertrucage/deepfake) dans 226-8.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement',
     question:
         'Le consentement pertinent en matière d’atteinte à la représentation porte sur :',
@@ -787,7 +787,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : le consentement exigé concerne la publication/révélation à un tiers.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation',
     question:
         'La circonstance aggravante de l’art. 226-8 al.2 est constituée lorsque :',
@@ -802,7 +802,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : aggravation lorsque le montage/deepfake est réalisé en utilisant un service de communication au public en ligne.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines',
     question: 'En forme simple (226-8 al.1), la peine est :',
     options: [
@@ -814,7 +814,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours : art. 226-8 al.1 => 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines aggravées',
     question: 'En forme aggravée (226-8 al.2), la peine est :',
     options: [
@@ -826,7 +826,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours : art. 226-8 al.2 => 2 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question: 'La tentative de l’atteinte à la représentation (226-8) est :',
     options: [
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Fondement',
     question: 'Les atteintes à l’intimité de la vie privée sont prévues par :',
     options: [
@@ -852,7 +852,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : art. 226-1 C.P. réprime la captation/enregistrement/transmission des paroles privées, de l’image en lieu privé, et la localisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles',
     question: 'Constitue une atteinte (226-1) :',
     options: [
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste explicitement cette première branche de 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image',
     question: 'Constitue une atteinte (226-1) :',
     options: [
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : l’image est protégée quand la personne est dans un lieu privé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé',
     question: 'Un lieu privé est défini (au cours) comme :',
     options: [
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la définition jurisprudentielle : endroit non ouvert à personne sauf autorisation de celui qui l’occupe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation',
     question: 'Depuis les précisions du cours, 226-1 vise aussi :',
     options: [
@@ -907,7 +907,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la localisation (temps réel ou différé) comme branche autonome de 226-1.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Présomption de consentement',
     question:
         'Le consentement est présumé lorsque l’atteinte (paroles/images) est accomplie :',
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique cette présomption pour paroles/images (mais pas pour la localisation).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation et consentement',
     question:
         'Selon le cours, la présomption “au vu et au su” ne s’applique pas à :',
@@ -936,7 +936,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que cette présomption ne vaut pas pour la localisation car elle est très facilement clandestine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Infraction de conséquence',
     question:
         'La conservation, l’utilisation ou la divulgation d’un enregistrement issu d’une atteinte à la vie privée est réprimée par :',
@@ -950,7 +950,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : 226-2 réprime la conservation/diffusion/utilisation des documents/enregistrements obtenus via 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peines',
     question: 'La peine de base pour l’atteinte à la vie privée (226-1) est :',
     options: [
@@ -963,7 +963,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-1 (simple) => 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation conjoint/PACS',
     question:
         'L’atteinte à la vie privée est aggravée (226-1 al.7) lorsqu’elle est commise :',
@@ -977,7 +977,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’art. 226-1 al.7 comme circonstance aggravante liée au lien conjugal/concubinage/PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation DAP/Mission public',
     question:
         'Le cours prévoit une aggravation (226-1 al.8) lorsque les faits sont commis au préjudice :',
@@ -992,7 +992,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement cette aggravation (226-1 al.8).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Contenu sexuel',
     question:
         'Le cours mentionne une aggravation (226-2-1 al.1) quand les faits portent sur :',
@@ -1007,7 +1007,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise l’art. 226-2-1 al.1 comme circonstance aggravante liée au caractère sexuel.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Tentative',
     question: 'La tentative des délits 226-1 et 226-2 est :',
     options: [
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Fondement',
     question:
         'L’atteinte à l’intimité d’une personne (“upskirting”) est prévue par :',
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : art. 226-3-1 C.P. réprime le fait d’apercevoir les parties intimes dissimulées, à l’insu ou sans consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Élément matériel',
     question:
         'Le délit est constitué si l’auteur use de tout moyen afin d’apercevoir :',
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : observation des parties intimes cachées par vêtement ou parce que la personne est dans un lieu clos.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Condition',
     question: 'L’acte doit être commis :',
     options: [
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours l’énonce comme condition expresse de 226-3-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Aggravations',
     question:
         'Parmi les aggravations prévues au cours (226-3-1 al.2), on trouve :',
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours liste ces circonstances aggravantes à l’alinéa 2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peines simples',
     question: 'En forme simple (226-3-1 al.1), la peine est :',
     options: [
@@ -1088,7 +1088,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours : 226-3-1 al.1 => 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peines aggravées',
     question: 'En forme aggravée (226-3-1 al.2), la peine est :',
     options: [
@@ -1100,7 +1100,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours : 226-3-1 al.2 => 2 ans + 30 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Tentative',
     question: 'La tentative de 226-3-1 est :',
     options: [
@@ -1117,7 +1117,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // SECRET DES CORRESPONDANCES (papier) — 226-15 al.1
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Fondement',
     question:
         'L’atteinte au secret des correspondances (ouverture/suppression/retard/détournement) est prévue par :',
@@ -1131,7 +1131,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : 226-15 al.1 vise les correspondances “arrivées ou non à destination” (papier), et les actes d’atteinte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Actes',
     question: 'Parmi les actes visés par 226-15 al.1, on trouve :',
     options: [
@@ -1145,7 +1145,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste explicitement ces verbes d’action comme éléments matériels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Ouvrir',
     question: '“Ouvrir” une correspondance au sens du cours consiste à :',
     options: [
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : ouvrir = violer la fermeture, atteinte à l’intégrité du support donnant accès au contenu.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Accord de la victime',
     question:
         'Selon le cours (226-14), pour certains signalements effectués par un médecin, il est en principe nécessaire :',
@@ -1173,7 +1173,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que, pour certains signalements par un professionnel de santé, l’accord de la victime est requis (sauf exceptions).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mineur et accord',
     question:
         'Selon le cours (226-14), lorsque la victime est un mineur, l’accord de la victime pour le signalement :',
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que lorsque la victime est mineure, l’accord n’est pas nécessaire pour le signalement dans les cas prévus par 226-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Incapacité de se protéger',
     question:
         'Selon le cours (226-14), lorsque la victime n’est pas en mesure de se protéger en raison de son âge ou de son incapacité physique ou psychique, l’accord :',
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle l’exception : si la victime ne peut se protéger (âge/incapacité), l’accord n’est pas requis pour le signalement prévu par 226-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Sujétion psychologique ou physique',
     question:
         'Selon le cours (226-14), un médecin peut informer le procureur de faits de sujétion psychologique ou physique (223-15-3) lorsque :',
@@ -1216,7 +1216,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’exception : signalement possible si la sujétion entraîne une altération grave ou un acte/abstention gravement préjudiciable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Information de la victime',
     question:
         'Selon le cours (226-14), en cas d’impossibilité d’obtenir l’accord de la victime (dans les cas prévus), le médecin doit :',
@@ -1230,7 +1230,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise qu’en cas d’impossibilité d’obtenir l’accord, le professionnel doit informer la victime du signalement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Détention d’arme',
     question:
         'Selon le cours (226-14), les professionnels de la santé ou de l’action sociale peuvent informer le préfet (à Paris le préfet de police) lorsque :',
@@ -1245,7 +1245,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste cette exception : information au préfet/préfet de police en cas de dangerosité + détention/intention d’acquérir une arme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement vétérinaire',
     question:
         'Selon le cours (226-14), le vétérinaire peut porter à la connaissance du procureur :',
@@ -1260,7 +1260,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours inclut une exception propre au vétérinaire concernant les sévices graves, cruauté, atteinte sexuelle et mauvais traitements sur un animal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Responsabilité de l’auteur du signalement',
     question:
@@ -1280,7 +1280,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // DÉNONCIATION CALOMNIEUSE — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne morale',
     question:
         'Selon le cours, la “personne déterminée” visée par la dénonciation peut être :',
@@ -1294,7 +1294,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la personne dénoncée peut être physique ou morale dès lors qu’elle est identifiable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Identification sans nom',
     question:
         'Selon le cours, même sans nommer la victime, la dénonciation peut viser une personne déterminée si :',
@@ -1309,7 +1309,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’identification peut résulter de détails permettant de reconnaître la personne visée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation anonyme',
     question:
         'Selon le cours, en cas de dénonciation anonyme, l’infraction peut être poursuivie si :',
@@ -1323,7 +1323,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que dans le cas d’une dénonciation anonyme, il faut que l’auteur puisse être identifié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur moral',
     question:
         'Selon le cours, est assimilé à l’auteur de la dénonciation celui qui :',
@@ -1338,7 +1338,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’auteur moral (celui qui fait effectuer) est assimilé à l’auteur de la dénonciation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Exécutant sur ordre',
     question:
         'Selon le cours, la personne qui exécute matériellement une dénonciation sur instructions hiérarchiques n’est poursuivable que si :',
@@ -1353,7 +1353,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours distingue : l’exécutant n’est poursuivi que s’il participe personnellement, contrairement à celui n’ayant eu qu’un rôle matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Sanction effective',
     question:
         'Selon le cours, pour que la dénonciation soit “préjudiciable”, il faut :',
@@ -1368,7 +1368,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que peu importe qu’une sanction ait été prononcée : il suffit que le fait soit de nature à entraîner des sanctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Différence avec diffamation',
     question:
         'Selon le cours, la dénonciation calomnieuse se distingue de la diffamation car elle est aussi :',
@@ -1383,7 +1383,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours souligne la différence : au-delà de l’atteinte à l’honneur, elle expose à des sanctions par une autorité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataires possibles',
     question:
         'Selon le cours, peuvent recevoir une dénonciation entrant dans 226-10 :',
@@ -1398,7 +1398,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite notamment : autorités pouvant donner suite/saisir, supérieurs hiérarchiques, employeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réception',
     question:
         'Selon le cours, il n’est pas nécessaire que la dénonciation soit remise en main propre car il suffit :',
@@ -1417,7 +1417,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // VIOLATION DE DOMICILE — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Proximité des dépendances',
     question:
         'Selon le cours, une dépendance ne peut entrer dans la notion de domicile que si :',
@@ -1432,7 +1432,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste sur la nécessité d’un lien étroit et immédiat (annexe + proximité) entre dépendance et habitation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux protégés',
     question: 'Selon le cours, peuvent être considérés comme domiciles :',
     options: [
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste comme domiciles : chambre d’hôtel, véhicule aménagé, caravane, roulotte, tente, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux ouverts au public',
     question:
         'Selon le cours, les locaux professionnels bénéficient de la protection du domicile :',
@@ -1461,7 +1461,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que les lieux ouverts au public ne bénéficient pas de la protection pendant les heures d’ouverture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Porte non fermée',
     question:
         'Selon le cours, l’introduction illicite par voie de fait peut ne pas être retenue lorsque :',
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne qu’une introduction illicite n’a pas pu être retenue lorsque la porte n’était pas fermée à clés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien en connaissance de cause',
     question:
         'Selon le cours, des personnes venues ensuite occuper les lieux peuvent être poursuivies si :',
@@ -1494,7 +1494,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // CORRESPONDANCES ÉLECTRONIQUES — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Moment protégé',
     question:
         'Selon le cours, 226-15 al.2 s’applique aux correspondances en cours de transmission ou :',
@@ -1509,7 +1509,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le texte vise les messages en transmission ou arrivés mais pas encore pris connaissance par le destinataire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Après lecture',
     question:
         'Selon le cours, dès que le destinataire a pris connaissance d’un mail, celui-ci :',
@@ -1528,7 +1528,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // ATTEINTE À LA REPRÉSENTATION — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Blogs/profils fictifs',
     question:
         'Selon la jurisprudence citée au cours, créer un profil de réseau social au nom d’un tiers sans montage image/voix relève :',
@@ -1542,7 +1542,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite une jurisprudence : un simple procédé écrit (sans montage image/voix) ne relève pas de 226-8.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage caractérisé',
     question: 'Selon le cours, le montage réprimé est celui qui tend à :',
     options: [
@@ -1559,7 +1559,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // ATTEINTE À LA REPRÉSENTATION — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Trucage manifestement apparent',
     question:
         'Selon le cours (226-8), le consentement à la publication n’est pas nécessaire lorsque :',
@@ -1573,7 +1573,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que si le montage est manifestement apparent, le public ne peut pas être dupé : l’incrimination n’est pas constituée dans ce cas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Mention explicite',
     question:
         'Selon le cours (226-8), le consentement à la publication n’est pas nécessaire si :',
@@ -1587,7 +1587,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique qu’une mention claire et univoque (“montage”) évite la méprise et neutralise la condition de consentement à la publication.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — But recherché',
     question:
         'Selon le cours, pour 226-8, le but recherché (notoriété, profit, etc.) :',
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le résultat escompté par la diffusion (profit, notoriété…) est indifférent pour l’élément moral.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-8 repose sur :',
     options: [
@@ -1618,7 +1618,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // ATTEINTE À L’INTIMITÉ DE LA VIE PRIVÉE — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Procédé quelconque',
     question: 'Selon le cours (226-1), l’atteinte peut être réalisée :',
     options: [
@@ -1631,7 +1631,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que toutes les méthodes sont visées, y compris sans appareil, dès lors qu’elles permettent l’atteinte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles en lieu public',
     question:
         'Selon le cours, le délit de captation/enregistrement de paroles privées (226-1) est constitué si les paroles sont prononcées :',
@@ -1646,7 +1646,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’élément déterminant est le caractère privé/confidentiel des propos, pas le lieu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement inaudible',
     question:
         'Selon le cours, l’infraction d’enregistrement de paroles privées est constituée :',
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’infraction est constituée quels que soient les résultats techniques, y compris si les propos enregistrés sont inaudibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Transmission',
     question: 'Selon le cours, la “transmission” de paroles privées vise :',
     options: [
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que toute mise à disposition à des destinataires avertis peut constituer une transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Mineur et consentement',
     question:
         'Selon le cours (226-1), dans le cas d’un mineur, le consentement doit émaner :',
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle que pour un mineur, l’accord vient des titulaires de l’autorité parentale (dans le respect du code civil).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image et lieu privé',
     question:
         'Selon le cours, 226-1 réprime l’image d’une personne lorsqu’elle est prise :',
@@ -1702,7 +1702,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que pour l’image, le champ est restreint : la personne doit se trouver dans un lieu privé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Exemples de lieux privés',
     question:
         'Selon le cours, peuvent être considérés comme des lieux privés :',
@@ -1716,7 +1716,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite ces exemples jurisprudentiels comme lieux privés au sens de 226-1 (appréciation au cas par cas).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation et moyens',
     question:
         'Selon le cours, la captation de localisation peut notamment résulter :',
@@ -1731,7 +1731,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne des exemples de dispositifs techniques : balise, logiciel espion sur un moyen de communication mobile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Opposition d’un parent',
     question: 'Selon le cours, pour la localisation d’un mineur, il suffit :',
     options: [
@@ -1745,7 +1745,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que pour la localisation, l’opposition d’un parent suffit à rendre la localisation illicite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Infraction de conséquence',
     question:
         'Selon le cours, la conservation/utilisation/divulgation (226-2) est :',
@@ -1759,7 +1759,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que 226-2 sanctionne le “produit” d’une atteinte à la vie privée prévue par 226-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Conservation',
     question: 'Selon le cours (226-2), la “conservation” signifie :',
     options: [
@@ -1773,7 +1773,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le simple fait de garder le produit de l’atteinte est réprimé, indépendamment de toute diffusion ou utilisation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Utilisation en justice',
     question:
         'Selon le cours (226-2), utiliser un enregistrement illicite dans une procédure (ex : divorce) :',
@@ -1788,7 +1788,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne l’exemple : l’utilisation, même en privé, notamment en procédure, peut tomber sous 226-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Diffusion à un tiers',
     question:
         'Selon le cours (226-2), la “diffusion/divulgation” peut être constituée :',
@@ -1802,7 +1802,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise une conception large : presse/radio/télévision mais aussi communication à un tiers jusqu’alors ignorant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Personne tenue d’empêcher',
     question:
         'Selon le cours (226-2), peut être considéré comme auteur celui qui, ayant connaissance de l’illicéité et le pouvoir d’empêcher la diffusion :',
@@ -1821,7 +1821,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PORNODIVULGATION — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Consentement et preuve',
     question:
         'Selon le cours, lorsque la victime affirme ne pas avoir donné son accord à la diffusion, il appartient :',
@@ -1836,7 +1836,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’accord à être filmé ne vaut pas accord à diffuser : l’auteur doit prouver l’accord de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Différence avec 226-1',
     question: 'Selon le cours, la pornodivulgation se distingue de 226-1 car :',
     options: [
@@ -1854,7 +1854,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // SECRET DES CORRESPONDANCES — Approfondissement (papier)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Notion',
     question: 'Selon le cours, une “correspondance” est :',
     options: [
@@ -1868,7 +1868,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la jurisprudence assimile “correspondance” à “message” (lettre, carte postale, télégramme…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — À destination d’un tiers',
     question:
         'Selon le cours, on viole le secret des correspondances lorsque le message est adressé :',
@@ -1882,7 +1882,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : l’atteinte vise le message adressé à autrui, on ne viole pas le secret de sa propre correspondance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Suppression',
     question: 'Selon le cours, “supprimer” une correspondance signifie :',
     options: [
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la définition jurisprudentielle : tout acte empêchant la correspondance de parvenir à destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Retarder',
     question: 'Selon le cours, “retarder” une correspondance consiste à :',
     options: [
@@ -1910,7 +1910,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que retarder revient à faire arriver plus tard en retenant le message et en interrompant l’acheminement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Prise frauduleuse de connaissance',
     question:
         'Selon le cours, “prendre frauduleusement connaissance” peut exister :',
@@ -1929,7 +1929,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // VIOLATION DES CORRESPONDANCES ÉLECTRONIQUES — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation d’appareils',
     question:
         'Selon le cours (226-15 al.2), “procéder à l’installation d’appareils” vise :',
@@ -1944,7 +1944,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours inclut l’installation de dispositifs (ou logiciels) de nature à permettre l’atteinte aux correspondances.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intention de nuire',
     question:
         'Selon le cours, pour 226-15 (correspondances), l’intention de nuire :',
@@ -1962,7 +1962,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // SECRET PROFESSIONNEL — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Caractère secret après décès',
     question: 'Selon le cours, le caractère secret de l’information :',
     options: [
@@ -1975,7 +1975,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le caractère secret de l’information ne disparaît pas du fait du décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation à un autre dépositaire',
     question:
         'Selon le cours, la révélation à une personne également soumise au secret professionnel :',
@@ -1990,7 +1990,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise qu’il suffit que l’information soit transmise à une seule personne, même tenue au secret, pour constituer l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Intention de nuire',
     question: 'Selon le cours, pour 226-13, l’intention de nuire :',
     options: [
@@ -2007,7 +2007,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // DÉNONCIATION CALOMNIEUSE — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponse à une question',
     question:
         'Selon le cours, une dénonciation faite dans les réponses aux questions d’un magistrat instructeur :',
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite des cas où la dénonciation est provoquée (réponses aux questions d’un magistrat) et perd donc le caractère spontané.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Défense du prévenu',
     question:
         'Selon le cours, la dénonciation faite par un prévenu peut perdre son caractère spontané si :',
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (1/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fait partiellement inexact',
     question:
         'Selon le cours (226-10), la dénonciation calomnieuse peut être constituée si les faits dénoncés sont :',
@@ -2052,7 +2052,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’auteur doit savoir le fait “totalement ou partiellement inexact”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Moyen de preuve (oral)',
     question:
         'Selon le cours, la dénonciation orale (ex : téléphone) est prise en compte si :',
@@ -2066,7 +2066,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la dénonciation orale est possible, mais doit pouvoir être prouvée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Plainte et 226-10',
     question:
         'Selon le cours, la dénonciation écrite peut notamment prendre la forme :',
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la plainte auprès des services de police ou de gendarmerie comme forme de dénonciation écrite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Pétition',
     question: 'Selon le cours, une dénonciation écrite peut aussi être :',
     options: [
@@ -2093,7 +2093,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère la pétition parmi les supports possibles de la dénonciation écrite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Lettre anonyme',
     question: 'Selon le cours, une dénonciation peut être :',
     options: [
@@ -2106,7 +2106,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la dénonciation écrite peut être une lettre signée ou anonyme (à condition que l’auteur soit identifiable pour poursuivre).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité de police administrative',
     question:
         'Selon le cours, parmi les destinataires possibles figurent des officiers de police administrative (exemples) :',
@@ -2120,7 +2120,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite notamment notaires, huissiers, préfets, recteurs comme officiers de police administrative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité de police judiciaire',
     question:
         'Selon le cours, parmi les destinataires possibles figurent des officiers de police judiciaire (exemples) :',
@@ -2134,7 +2134,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne notamment maires/adjoints, policiers et gendarmes comme destinataires possibles au titre des autorités visées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité “pouvant saisir”',
     question:
         'Selon le cours, peut être destinataire une personne qui n’a pas le pouvoir de sanctionner mais qui peut saisir l’autorité compétente, par exemple :',
@@ -2148,7 +2148,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite des exemples de personnes pouvant saisir l’autorité compétente, comme le médecin ou l’assistante sociale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Initiative personnelle',
     question:
         'Selon le cours, l’article 226-10 exige que la dénonciation soit “adressée”, ce qui suppose :',
@@ -2162,7 +2162,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que “adressée” implique une initiative personnelle, d’où l’exigence de spontanéité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Rapport sur demande',
     question:
         'Selon le cours, un rapport établi sur demande d’un supérieur est en principe :',
@@ -2176,7 +2176,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que rapports/comptes rendus sur demande font perdre le caractère spontané.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Devoir d’informer',
     question:
         'Selon le cours, la dénonciation faite par un subordonné à ses supérieurs qu’il avait le devoir d’informer :',
@@ -2190,7 +2190,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que lorsqu’il existe un devoir d’informer, la dénonciation est provoquée et perd la spontanéité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faits prescrits',
     question:
         'Selon le cours, la dénonciation peut rester “préjudiciable” même si l’éventualité de sanction est écartée par :',
@@ -2204,7 +2204,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que peu importe qu’une sanction soit finalement impossible (prescription, immunité, amnistie, décès…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tribunal compétent (appréciation)',
     question:
         'Selon le cours, en dehors des cas de fausseté “automatique”, la pertinence des accusations est appréciée par :',
@@ -2218,7 +2218,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le tribunal apprécie la pertinence des accusations dans les autres cas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Omission de témoigner',
     question:
         'Selon le cours, si l’auteur découvre son erreur après coup, il pourrait être poursuivi pour :',
@@ -2232,7 +2232,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la possibilité d’une poursuite pour omission de témoigner en faveur d’un innocent (434-11).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Obtention préalable',
     question:
         'Selon le cours (226-2-1 al.2), le contenu diffusé sans accord doit avoir été préalablement obtenu :',
@@ -2246,7 +2246,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la pornodivulgation vise un contenu obtenu avec le consentement (ou fourni par la personne) puis diffusé sans accord.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Caractère sexuel',
     question: 'Selon le cours, le “caractère sexuel” des paroles ou images :',
     options: [
@@ -2259,7 +2259,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle que l’appréciation du caractère sexuel relève des juridictions, les termes étant jugés suffisamment clairs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Diffusion',
     question:
         'Selon le cours, la “diffusion” vise le fait de porter le contenu :',
@@ -2273,7 +2273,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la diffusion consiste à porter le contenu à la connaissance du public ou d’un tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Plainte (mention du cours)',
     question:
         'Selon le cours, l’article 226-6 impose le dépôt d’une plainte notamment parce que :',
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que l’absence d’accord à la diffusion est fréquemment établie par la déclaration de la victime, d’où l’exigence de plainte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Complicité',
     question: 'Selon le cours, la complicité de pornodivulgation est :',
     options: [
@@ -2301,7 +2301,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle : complicité oui, selon les règles générales (aide/assistance, provocation, instructions).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Introduction',
     question:
         'Selon le cours (226-4), l’infraction vise l’introduction dans le domicile d’autrui à l’aide de :',
@@ -2315,7 +2315,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énonce explicitement les moyens : manœuvres, menaces, voies de fait ou contrainte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Contrainte',
     question: 'Selon le cours, la “contrainte” correspond à une situation où :',
     options: [
@@ -2328,7 +2328,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit la contrainte comme toute situation où le consentement n’est pas libre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Menaces',
     question: 'Selon le cours, les menaces peuvent être caractérisées par :',
     options: [
@@ -2342,7 +2342,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que les menaces peuvent résulter de comportements inquiétants ou de paroles annonçant des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Manœuvres (exemple type)',
     question: 'Selon le cours, une “manœuvre” peut être :',
     options: [
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit les manœuvres comme des procédés astucieux/ruses facilitant l’introduction illicite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et meubles',
     question:
         'Selon le cours, un logement inoccupé peut être considéré comme domicile si :',
@@ -2370,7 +2370,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la présence de meubles significatifs peut révéler un droit à s’y dire chez soi (appréciation du juge).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Cour non close',
     question:
         'Selon le cours, la cour d’un immeuble n’est pas un domicile lorsque :',
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la cour d’un immeuble lorsqu’elle n’est pas close parmi les exclusions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Locaux proposés à la location',
     question:
         'Selon la note du cours, les logements vacants non meublés ou proposés à la location (meublés ou non) :',
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que ces logements ne sont pas des domiciles au sens de 226-4, l’occupation frauduleuse relevant d’autres articles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Interception sans lecture',
     question:
         'Selon le cours, l’interception d’une correspondance électronique peut être constituée :',
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que pour l’interception, il n’est pas nécessaire que l’auteur lise le contenu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple d’utilisation',
     question:
         'Selon le cours, “utiliser” une correspondance électronique peut viser notamment :',
@@ -2426,7 +2426,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne l’exemple : effacer un email non destiné ou le transférer à un tiers, même sans l’ouvrir, relève de “utiliser”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation pour un tiers',
     question:
         'Selon le cours, celui qui installe un dispositif d’interception pour le compte d’un tiers est :',
@@ -2441,7 +2441,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise qu’en l’absence de précision légale, l’installateur est considéré comme auteur, même s’il agit pour un tiers.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Consentement présumé',
     question:
         'Selon le cours, pour les paroles/images (226-1), le consentement peut être présumé si la personne :',
@@ -2455,7 +2455,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle la présomption : au vu et au su, sans opposition possible.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation et clandestinité',
     question:
         'Selon le cours, la présomption de consentement “au vu et au su” ne s’applique pas à la localisation car :',
@@ -2469,7 +2469,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que la localisation est facilement clandestine (logiciels espions, balises), donc pas de présomption.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Captation de paroles',
     question: 'Selon le cours, la “captation” de paroles vise principalement :',
     options: [
@@ -2483,7 +2483,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne notamment l’audition de conversations téléphoniques via des moyens techniques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image (objet exclu)',
     question:
         'Selon le cours, est exclue du champ de l’atteinte à l’image (226-1) :',
@@ -2498,7 +2498,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’incrimination vise l’image d’une personne, pas la seule photo du lieu ou de biens.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé (définition)',
     question: 'Selon le cours (jurisprudence), un lieu privé est :',
     options: [
@@ -2512,7 +2512,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la définition : non ouvert à personne sans autorisation de l’occupant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Conservation (but)',
     question:
         'Selon le cours, réprimer la “conservation” (226-2) permet notamment :',
@@ -2527,7 +2527,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que la conservation est punissable pour prévenir la diffusion et limiter les risques de chantage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Lieu clos',
     question:
         'Selon le cours (226-3-1), l’infraction peut être constituée si la victime a caché son intimité :',
@@ -2541,7 +2541,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : intimité cachée par habillement ou par présence dans un lieu clos.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Fixation d’images',
     question:
         'Selon le cours (226-3-1 al.2), constitue une aggravation le fait que :',
@@ -2555,7 +2555,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la fixation/enregistrement/transmission d’images figure parmi les circonstances aggravantes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Transport collectif',
     question:
         'Selon le cours (226-3-1 al.2), l’infraction est aggravée lorsqu’elle est commise :',
@@ -2570,7 +2570,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste comme aggravation : transport collectif et lieux destinés à l’accès à un moyen de transport collectif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Repartage',
     question:
         'Selon le cours, l’incrimination de 226-8 permet aussi de sanctionner :',
@@ -2584,7 +2584,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que “par quelque voie que ce soit” englobe aussi les repartages du contenu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Hiérarchie loi 1881',
     question:
         'Selon le cours, en matière de presse, la détermination des responsables renvoie notamment à :',
@@ -2598,7 +2598,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’article 42 de la loi de 1881 (directeur de publication, auteur, imprimeur, etc.).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Achèvement',
     question:
         'Selon le cours, 226-15 al.1 vise les correspondances “arrivées ou non à destination”, ce qui signifie :',
@@ -2613,7 +2613,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’atteinte peut se produire même si la correspondance n’est pas encore ou n’est plus acheminée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Moyen indifférent',
     question:
         'Selon le cours, pour “ouvrir” une correspondance, le moyen utilisé est :',
@@ -2627,7 +2627,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’ouverture peut être violente (déchirer) ou subtile (décacheter à la vapeur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Renvoi au destinataire',
     question:
         'Selon le cours, l’infraction d’ouverture peut être constituée même si le courrier est ensuite :',
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que peu importe que la correspondance ait été renvoyée vers son destinataire après ouverture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire par mission temporaire',
     question:
         'Selon le cours, peuvent être dépositaires du secret en raison d’une mission temporaire :',
@@ -2655,7 +2655,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne notamment jurés, experts, membres assesseurs parmi les missions temporaires pouvant exposer au secret.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation déjà publique',
     question:
         'Selon le cours, si l’information a déjà été rendue publique, l’infraction peut être retenue si le dépositaire :',
@@ -2669,7 +2669,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que même si l’info est déjà publique, le dépositaire peut être condamné s’il confirme ou infirme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Nature de la révélation',
     question: 'Selon le cours, la révélation peut être commise :',
     options: [
@@ -2683,7 +2683,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la forme importe peu : parole ou transmission de documents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Élément moral',
     question:
         'Selon le cours, l’atteinte au secret professionnel (226-13) est constituée si l’auteur agit :',
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste : la révélation est intentionnelle et réalisée en connaissance de cause (sans exiger l’intention de nuire).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Complicité',
     question:
         'Selon le cours, la complicité de l’atteinte au secret professionnel est :',
@@ -2712,7 +2712,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : complicité oui, selon les règles générales (aide/assistance, provocation, instructions).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Tentative',
     question:
         'Selon le cours, la tentative de violation du secret professionnel (226-13) est :',
@@ -2725,7 +2725,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours mentionne : tentative non pour 226-13.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-1 suppose notamment :',
     options: [
@@ -2738,7 +2738,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique la conscience d’illégalité et la volonté de ne pas respecter la vie privée, le mobile important peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Volonté',
     question: 'Selon le cours, l’auteur de 226-1 a pris le parti :',
     options: [
@@ -2751,7 +2751,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise la “volonté de porter atteinte à la vie privée d’autrui”, quelle que soit la motivation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément moral (double conscience)',
     question: 'Selon le cours, l’élément moral de 226-4 implique :',
     options: [
@@ -2765,7 +2765,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la volonté d’entrer/ rester à l’insu/contre gré, et la conscience d’agir hors les cas permis par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Complicité',
     question: 'Selon le cours, la complicité de violation de domicile :',
     options: [
@@ -2779,7 +2779,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Mauvaise foi',
     question: 'L’élément moral (mauvaise foi) suppose la conscience :',
     options: [
@@ -2793,7 +2793,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la définition jurisprudentielle : connaissance de la destination à autrui et conservation volontaire empêchant/retardant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Aggravation',
     question:
         'L’aggravation de 226-15 al.3 (secret des correspondances) vise notamment les faits commis par :',
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : al.3 prévoit l’aggravation lorsque l’auteur est conjoint/concubin/PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peines',
     question: 'En forme simple (226-15 al.1), la peine est :',
     options: [
@@ -2820,7 +2820,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-15 al.1 (simple) => 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Tentative',
     question: 'La tentative pour 226-15 al.1 est :',
     options: [
@@ -2837,7 +2837,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // SECRET PROFESSIONNEL — 226-13 + exceptions 226-14
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Fondement',
     question: 'L’atteinte au secret professionnel est prévue par :',
     options: [
@@ -2850,7 +2850,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : art. 226-13 C.P. réprime la révélation d’une information à caractère secret par un dépositaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Personne dépositaire',
     question:
         'Est “dépositaire” du secret au sens de 226-13 une personne qui en a connaissance :',
@@ -2864,7 +2864,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la formule : par état/profession/fonction/mission temporaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Définition du secret',
     question: 'Selon le cours (jurisprudence), le secret couvre :',
     options: [
@@ -2878,7 +2878,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique l’extension : pas seulement la confidence, mais aussi ce qui est constaté/découvert/déduit.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Élément matériel',
     question: 'L’acte réprimé par 226-13 consiste en :',
     options: [
@@ -2891,7 +2891,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours : 226-13 = révélation d’une information secrète par un dépositaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Transmission minimale',
     question:
         'Le délit est constitué dès lors que l’information secrète est transmise :',
@@ -2905,7 +2905,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : il suffit d’une seule transmission à autrui pour constituer l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Peines',
     question:
         'L’atteinte au secret professionnel (226-13) est punie (personne physique) de :',
@@ -2918,7 +2918,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : 226-13 => 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exceptions',
     question:
         'Le cours rappelle que 226-13 n’est pas applicable dans certains cas prévus par :',
@@ -2932,7 +2932,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste les exceptions/levées du secret prévues par l’art. 226-14 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement maltraitances',
     question:
         'Selon le cours (226-14), le secret ne s’applique pas à celui qui informe les autorités de :',
@@ -2950,7 +2950,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (2/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fondement',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -2963,7 +2963,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : 226-10 C.P. définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire (supérieur/employeur)',
     question:
         'Selon le cours, la dénonciation calomnieuse peut être constituée si elle est adressée :',
@@ -2978,7 +2978,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement les supérieurs hiérarchiques ou l’employeur parmi les destinataires visés par 226-10.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Consommation (date)',
     question:
         'Selon la jurisprudence citée au cours, l’infraction est consommée :',
@@ -2992,7 +2992,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la jurisprudence retient la date de réception pour la consommation et le départ de prescription.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Prescription (point de départ)',
     question:
         'Selon le cours, le délai de prescription de l’action publique commence à courir :',
@@ -3006,7 +3006,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la jurisprudence fixe le point de départ au jour de réception de la dénonciation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fausseté automatique',
     question:
         'Selon le cours, la fausseté du fait dénoncé résulte nécessairement d’une décision définitive de :',
@@ -3021,7 +3021,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que seules certaines décisions définitives constatant expressément l’absence de fait ou d’imputabilité établissent automatiquement la fausseté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faute de charges suffisantes',
     question:
         'Selon le cours, si la décision définitive de relaxe/non-lieu est rendue “faute de charges suffisantes” :',
@@ -3035,7 +3035,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que dans ce cas, la fausseté n’est pas automatique : le tribunal saisi contre le dénonciateur apprécie la pertinence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément moral (moment)',
     question:
         'Selon le cours, l’auteur doit connaître l’inexactitude des faits :',
@@ -3049,7 +3049,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste : la conscience de l’inexactitude doit exister au jour de la dénonciation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Volonté de nuire',
     question:
         'Selon le cours, l’auteur de la dénonciation calomnieuse exprime :',
@@ -3063,7 +3063,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la connaissance de l’inexactitude révèle la volonté de nuire à la personne dénoncée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'Selon le cours, la tentative de dénonciation calomnieuse est :',
     options: [
@@ -3075,7 +3075,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours mentionne : TENTATIVE : NON pour l’article 226-10.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peine (principale)',
     question: 'Selon le cours, la dénonciation calomnieuse est punie de :',
     options: [
@@ -3089,7 +3089,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Fondement',
     question:
         'La diffusion, sans accord, d’un contenu intime à caractère sexuel obtenu avec le consentement est réprimée par :',
@@ -3103,7 +3103,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : 226-2-1 al.2 réprime la diffusion sans accord d’un enregistrement/document sexuel obtenu avec consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Support possible',
     question: 'Selon le cours, le support du contenu diffusé peut être :',
     options: [
@@ -3116,7 +3116,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le support peut être photo, audio, vidéo ou échange de messages (sexting).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord à la captation',
     question: 'Selon le cours, l’accord à être filmé ou photographié :',
     options: [
@@ -3129,7 +3129,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste : consentir à la captation n’implique pas consentir à la diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Menace et chantage',
     question:
         'Selon la note du cours, si l’auteur obtient une signature/engagement/remise de fonds en menaçant de diffuser le contenu intime, il s’agit de :',
@@ -3143,7 +3143,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne : si la menace de diffusion sert à obtenir signature/engagement/remise, le chantage (312-10) est constitué.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Menace et harcèlement sexuel',
     question:
         'Selon la note du cours, si l’auteur exige des faveurs sexuelles en menaçant de diffuser le contenu intime, il s’agit de :',
@@ -3157,7 +3157,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la menace de diffusion pour obtenir des faveurs sexuelles caractérise le harcèlement sexuel (222-33 II).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question:
         'Selon le cours, la tentative de pornodivulgation (226-2-1) est :',
@@ -3171,7 +3171,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : l’article 226-5 prévoit la tentative du délit 226-2-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peine',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) est punie de :',
@@ -3186,7 +3186,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Fondement',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -3200,7 +3200,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-4 définit et réprime la violation de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien',
     question: 'Selon le cours, constitue également une violation de domicile :',
     options: [
@@ -3214,7 +3214,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le maintien après une entrée illégitime constitue aussi l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Infraction continue',
     question: 'Selon le cours, la violation de domicile est :',
     options: [
@@ -3227,7 +3227,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la violation de domicile est continue, ce qui a des conséquences en flagrance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Flagrance',
     question: 'Selon le cours, une enquête de flagrance est possible :',
     options: [
@@ -3240,7 +3240,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : infraction continue → flagrance tant que l’occupation illicite se poursuit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Appel au secours',
     question: 'Selon le cours, l’introduction peut être légitime en cas de :',
     options: [
@@ -3253,7 +3253,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours prévoit un cas d’introduction légitime : appel au secours (cris/hurlements), même si l’appel est fantaisiste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Incendie/inondation',
     question:
         'Selon le cours, l’introduction peut être justifiée si la maison est :',
@@ -3267,7 +3267,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’incendie/inondation comme cas d’introduction légitime, même sans réclamation depuis l’intérieur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Assistance à personne en péril',
     question:
         'Selon le cours, l’introduction est justifiée par ordre de la loi pour :',
@@ -3282,7 +3282,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne que l’introduction peut être justifiée si des indices font croire qu’une personne est gravement en péril dans le domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question: 'Selon le cours, la tentative de violation de domicile est :',
     options: [
@@ -3294,7 +3294,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : tentative oui, prévue par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peine',
     question: 'Selon le cours, la violation de domicile (226-4) est punie de :',
     options: [
@@ -3307,7 +3307,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Fondement',
     question:
         'Le fait de faire la propagande ou publicité de méthodes facilitant la violation de domicile est incriminé par :',
@@ -3321,7 +3321,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-4-2-1 incrimine la propagande/publicité en faveur de méthodes visant à faciliter la violation de domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Objet',
     question:
         'Selon le cours, 226-4-2-1 vise notamment les contenus qui sont de véritables :',
@@ -3336,7 +3336,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne les vidéos “mode d’emploi du squat” comme exemple typique de ce délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Peine',
     question:
         'Selon le cours, la propagande/publicité en faveur de méthodes de squat est sanctionnée de :',
@@ -3347,7 +3347,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement',
     question:
         'La violation des correspondances émises par voie électronique est définie par :',
@@ -3361,7 +3361,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : 226-15 al.2 définit la violation des correspondances par voie électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Répression',
     question:
         'Selon le cours, la répression (peines) de la violation des correspondances électroniques est prévue par :',
@@ -3375,7 +3375,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-15 al.2 définit, et 226-15 al.1 prévoit la répression.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mauvaise foi',
     question: 'Selon le cours, la “mauvaise foi” correspond à :',
     options: [
@@ -3389,7 +3389,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la Cour de cassation : mauvaise foi = connaissance que les messages ne lui étaient pas destinés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Erreur',
     question:
         'Selon le cours, violer des correspondances électroniques par méprise ou erreur :',
@@ -3403,7 +3403,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’erreur/méprise ne permet pas de caractériser l’infraction (absence d’intention).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Aggravation (conjoint)',
     question:
         'Selon le cours, la circonstance aggravante (226-15 al.3) est retenue lorsque les faits sont commis par :',
@@ -3417,7 +3417,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’aggravation lorsque l’auteur est conjoint/concubin/partenaire de PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peine aggravée',
     question:
         'Selon le cours, la peine en cas d’infraction aggravée (226-15 al.3) est :',
@@ -3431,7 +3431,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : aggravé (226-15 al.3) = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Tentative',
     question:
         'Selon le cours, la tentative de violation des correspondances électroniques (226-15 al.2) est :',
@@ -3446,7 +3446,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Fondement',
     question:
         'L’atteinte à la représentation de la personne (montage/déepfake) est prévue par :',
@@ -3460,7 +3460,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-8 définit et réprime l’atteinte à la représentation de la personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu généré',
     question:
         'Selon le cours, est assimilé à l’infraction le fait de diffuser un contenu représentant l’image ou la voix d’une personne :',
@@ -3475,7 +3475,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours assimile le contenu visuel/sonore généré algorithmiquement (deepfake) si absence de consentement et absence de mention/évidence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation (en ligne)',
     question:
         'Selon le cours, 226-8 est aggravé lorsque l’acte est réalisé via :',
@@ -3489,7 +3489,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : circonstance aggravante si commis via un service de communication au public en ligne (226-8 al.2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine simple',
     question: 'Selon le cours, la peine principale pour 226-8 (simple) est :',
     options: [
@@ -3501,7 +3501,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le tableau du cours indique : 226-8 al.1 = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine aggravée',
     question:
         'Selon le cours, la peine principale pour 226-8 (aggravée en ligne) est :',
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-8 al.2 (en ligne) = 2 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question:
         'Selon le cours, la tentative de l’atteinte à la représentation (226-8) est :',
@@ -3529,7 +3529,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Fondement (paroles/images/localisation)',
     question:
@@ -3544,7 +3544,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-1 définit et réprime les atteintes à l’intimité de la vie privée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Document de conséquence',
     question:
         'La conservation, diffusion ou utilisation d’un enregistrement/document obtenu par atteinte à la vie privée est prévue par :',
@@ -3558,7 +3558,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-2 réprime la conservation/diffusion/utilisation d’un document issu d’une atteinte 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Captation localisation',
     question: 'Selon le cours, 226-1 vise aussi :',
     options: [
@@ -3572,7 +3572,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours inclut explicitement la localisation (temps réel ou différé) parmi les atteintes 226-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Niveau de précision',
     question:
         'Selon le cours, pour la localisation (226-1), le niveau de précision :',
@@ -3586,7 +3586,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le niveau de précision est indifférent : zone couverte par relais ou GPS.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Consentement localisation',
     question: 'Selon le cours, concernant la localisation, le consentement :',
     options: [
@@ -3603,7 +3603,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (3/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation (conjoint)',
     question:
         'Selon le cours, 226-1 est aggravé lorsque les faits sont commis par :',
@@ -3617,7 +3617,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’article 226-1 al.7 : aggravation lorsque l’auteur est conjoint/concubin/partenaire de PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Aggravation (dépositaire autorité publique)',
     question:
@@ -3633,7 +3633,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’article 226-1 al.8 : aggravation quand la victime est dépositaire de l’autorité publique, MSP, titulaire/candidat à un mandat, ou membre de sa famille.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation (contenu sexuel)',
     question:
         'Selon le cours, une circonstance aggravante existe lorsque les faits portent sur :',
@@ -3647,7 +3647,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne une aggravation lorsque les faits portent sur des paroles/images à caractère sexuel (226-2-1 al.1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine simple',
     question: 'Selon le cours, la peine principale (simple) pour 226-1 est :',
     options: [
@@ -3660,7 +3660,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-1 (simple) = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine aggravée',
     question:
         'Selon le cours, la peine principale lorsque l’infraction est aggravée (226-1 al.7/8 ou 226-2-1 al.1) est :',
@@ -3673,7 +3673,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le tableau du cours mentionne : aggravé = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Tentative',
     question: 'Selon le cours, la tentative des délits 226-1 et 226-2 est :',
     options: [
@@ -3686,7 +3686,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : l’article 226-5 prévoit la tentative des délits 226-1 et 226-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Complicité',
     question: 'Selon le cours, la complicité pour 226-1/226-2 :',
     options: [
@@ -3699,7 +3699,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Fondement',
     question:
         'L’atteinte à l’intimité d’une personne (upskirting, observation parties intimes) est prévue par :',
@@ -3713,7 +3713,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-3-1 prévoit et réprime l’atteinte à l’intimité d’une personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Condition (parties cachées)',
     question:
@@ -3728,7 +3728,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise les deux hypothèses : cachées par les habits ou par présence dans un lieu clos.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — À l’insu',
     question: 'Selon le cours, l’auteur doit avoir agi :',
     options: [
@@ -3741,7 +3741,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement cette condition : à l’insu ou sans consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (abus d’autorité)',
     question: 'Selon le cours, 226-3-1 est aggravé lorsqu’il est commis :',
@@ -3756,7 +3756,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste l’abus d’autorité liée aux fonctions parmi les circonstances aggravantes de 226-3-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (mineur)',
     question:
@@ -3771,7 +3771,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement l’aggravation lorsque les faits sont commis sur un mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (vulnérabilité)',
     question:
@@ -3786,7 +3786,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : vulnérabilité due à divers facteurs, apparente ou connue de l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (plusieurs)',
     question:
@@ -3802,7 +3802,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste l’action de plusieurs personnes (auteur/complice) comme circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peine simple',
     question: 'Selon le cours, la peine principale (simple) pour 226-3-1 est :',
     options: [
@@ -3815,7 +3815,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-3-1 al.1 = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peine aggravée',
     question:
         'Selon le cours, la peine principale (aggravée) pour 226-3-1 al.2 est :',
@@ -3829,7 +3829,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : aggravé (226-3-1 al.2) = 2 ans + 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Tentative',
     question: 'Selon le cours, la tentative de 226-3-1 est :',
     options: [
@@ -3842,7 +3842,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : tentative expressément prévue par 226-5 pour 226-3-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-3-1 implique notamment :',
     options: [
@@ -3857,7 +3857,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Fondement (papier)',
     question:
         'L’atteinte au secret des correspondances (courrier) commise par un particulier est prévue par :',
@@ -3871,7 +3871,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-15 al.1 définit et réprime l’atteinte au secret des correspondances (support tangible).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Actes visés',
     question: 'Selon le cours, 226-15 al.1 réprime notamment le fait :',
     options: [
@@ -3885,7 +3885,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère ces actes matériels constitutifs de l’atteinte au secret des correspondances.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Altération partielle',
     question:
         'Selon le cours, l’ouverture est caractérisée par tout acte portant atteinte à l’intégrité du support et donnant accès au contenu, même si :',
@@ -3899,7 +3899,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’altération peut être totale ou partielle : l’infraction peut être constituée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Détournement (sens)',
     question: 'Selon le cours, “détourner” une correspondance consiste à :',
     options: [
@@ -3912,7 +3912,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le détournement se matérialise en modifiant le cours normal de la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Mauvaise foi (papier)',
     question:
         'Selon le cours, la mauvaise foi (226-15 al.1) implique notamment la connaissance :',
@@ -3927,7 +3927,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la Cour de cassation : connaissance du caractère “non destiné” + conservation volontaire pour empêcher/retarder.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Intention de nuire',
     question: 'Selon le cours, pour 226-15 al.1, l’intention de nuire :',
     options: [
@@ -3940,7 +3940,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’intention de nuire n’est pas exigée : le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Tentative',
     question:
         'Selon le cours, la tentative d’atteinte au secret des correspondances (226-15 al.1) est :',
@@ -3953,7 +3953,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours mentionne : TENTATIVE : NON pour 226-15 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine simple',
     question:
         'Selon le cours, la peine principale (simple) pour 226-15 al.1 est :',
@@ -3967,7 +3967,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : simple (226-15 al.1) = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine aggravée (conjoint)',
     question: 'Selon le cours, la peine aggravée (226-15 al.3) est :',
     options: [
@@ -3981,7 +3981,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Fondement',
     question:
         'L’atteinte au secret professionnel est définie et réprimée par :',
@@ -3995,7 +3995,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : 226-13 définit et réprime l’atteinte au secret professionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire',
     question:
         'Selon le cours, est dépositaire du secret celui qui détient l’information :',
@@ -4009,7 +4009,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la formule de 226-13 : dépositaire par état/profession/fonction/mission temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — “État” (sens)',
     question: 'Selon le cours, “par son état” renvoie notamment :',
     options: [
@@ -4023,7 +4023,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que “l’état” renvoie à la situation de fait/droit, au statut (ex : ministre du culte, élèves orthophonistes…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — “Profession” (sens)',
     question: 'Selon le cours, la “profession” est :',
     options: [
@@ -4036,7 +4036,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit la profession comme l’activité exercée habituellement pour vivre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — “Fonction”',
     question: 'Selon le cours, la “fonction” correspond :',
     options: [
@@ -4052,7 +4052,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (4/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mission temporaire (définition)',
     question: 'Selon le cours, une “mission temporaire” correspond :',
     options: [
@@ -4066,7 +4066,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la mission temporaire est une tâche ponctuelle qui expose à des informations confidentielles/destinées à l’être.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Définition du secret (portée)',
     question: 'Selon le cours, le secret professionnel couvre :',
     options: [
@@ -4080,7 +4080,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours étend le secret à ce qui a été constaté/découvert/déduit personnellement dans le cadre professionnel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation (condition minimale)',
     question:
         'Selon le cours, il suffit que l’information couverte par le secret soit transmise :',
@@ -4094,7 +4094,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : transmission à une seule personne suffit à caractériser la révélation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Personnes morales (responsabilité)',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales pour 226-13 est prévue par :',
@@ -4108,7 +4108,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la responsabilité des personnes morales sur le fondement de l’article 121-2 C.P.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Peine (personne physique)',
     question:
         'Selon le cours, la violation du secret professionnel (226-13) est punie de :',
@@ -4122,7 +4122,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-13 = 1 an d’emprisonnement + 15 000 € d’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exceptions (principe)',
     question:
         'Selon le cours, les exceptions au secret professionnel sont prévues par :',
@@ -4136,7 +4136,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle que 226-14 prévoit les cas où 226-13 n’est pas applicable (signalements).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement (mineur/vulnérable)',
     question:
         'Selon le cours (226-14), l’exception vise notamment le signalement de :',
@@ -4151,7 +4151,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite explicitement cette exception majeure au secret professionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Santé (cellule infos préoccupantes)',
     question:
         'Selon le cours (226-14), un professionnel de santé peut porter à la connaissance :',
@@ -4166,7 +4166,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la possibilité de signaler à la cellule compétente (infos préoccupantes) pour les mineurs.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Accords (victime mineure)',
     question:
         'Selon le cours (226-14), lorsque la victime est un mineur ou une personne incapable de se protéger, l’accord de la victime :',
@@ -4180,7 +4180,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’accord de la victime n’est pas nécessaire si la victime est mineure ou incapable de se protéger.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Sujétion (223-15-3)',
     question:
         'Selon le cours (226-14), un professionnel de santé peut signaler des faits de sujétion (223-15-3) si :',
@@ -4195,7 +4195,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours décrit précisément cette exception : signalement si sujétion causant altération grave ou conduite gravement préjudiciable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Violence au sein du couple (danger immédiat)',
     question:
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours fixe les conditions : danger immédiat + impossibilité de se protéger en raison de l’emprise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Violence au sein du couple (accord)',
     question:
         'Selon le cours (226-14), le médecin/professionnel de santé doit :',
@@ -4225,7 +4225,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le médecin doit s’efforcer d’obtenir l’accord ; à défaut, il informe la victime du signalement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Violence au sein du couple (information)',
     question:
         'Selon le cours (226-14), en cas d’impossibilité d’obtenir l’accord, le professionnel doit :',
@@ -4239,7 +4239,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que si l’accord est impossible, la victime doit être informée du signalement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Détention d’arme (préfet)',
     question:
         'Selon le cours (226-14), des professionnels peuvent informer le préfet (ou préfet de police à Paris) lorsqu’ils savent que la personne :',
@@ -4254,7 +4254,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’exception permettant d’informer le préfet si la personne est dangereuse et détient/veut acquérir une arme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Vétérinaire (maltraitance animale)',
     question:
         'Selon le cours (226-14), le vétérinaire peut signaler au procureur :',
@@ -4269,7 +4269,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’exception spécifique au vétérinaire pour signaler des faits graves sur un animal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Immunité (bonne foi)',
     question:
         'Selon le cours (226-14), le signalement fait dans ces conditions :',
@@ -4284,7 +4284,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (condition trompeuse)',
     question:
         'Selon le cours (226-8), l’infraction est constituée si le montage est diffusé sans consentement et :',
@@ -4299,7 +4299,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours pose la condition : absence d’évidence ou absence de mention explicite.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Création de profils (exclusion)',
     question:
         'Selon la jurisprudence citée au cours, créer un profil sur un réseau social au nom d’un tiers, sans montage parole/image, relève :',
@@ -4313,7 +4313,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite que l’écrit seul (sans montage parole/image) ne relève pas de 226-8.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (définition générale)',
     question: 'Selon le cours, le montage peut résulter :',
     options: [
@@ -4327,7 +4327,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle la jurisprudence : montage réprimé lorsqu’il déforme délibérément par ajout/retrait d’éléments étrangers.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement (portée)',
     question: 'Selon le cours (226-8), le consentement porte sur :',
     options: [
@@ -4342,7 +4342,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Courriel (définition LCEN)',
     question:
         'Selon le cours, la loi du 21 juin 2004 définit le courrier électronique comme :',
@@ -4357,7 +4357,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la définition LCEN : message stocké sur serveur/terminal jusqu’à récupération.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Limite “données informatiques”',
     question:
         'Selon le cours, une fois que le destinataire a pris connaissance du mail, il :',
@@ -4372,7 +4372,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise qu’après lecture par le destinataire, la correspondance perd son statut spécifique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détournement (mail en attente)',
     question: 'Selon le cours, le “détournement” peut viser des messages :',
     options: [
@@ -4386,7 +4386,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la jurisprudence retient le détournement pour des messages ouverts par un tiers alors qu’ils attendent d’être lus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Divulgation (exemple)',
     question:
         'Selon le cours, “divulguer” une correspondance électronique peut consister à :',
@@ -4401,7 +4401,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile (définition générale)',
     question: 'Selon le cours, le domicile comprend notamment :',
     options: [
@@ -4415,7 +4415,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne une définition large : local d’habitation avec biens meubles, résidence principale ou non, habitation effective ou non.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendances',
     question: 'Selon le cours, peuvent être des domiciles (prolongement) :',
     options: [
@@ -4428,7 +4428,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite diverses dépendances constituant le prolongement du domicile si elles sont à proximité immédiate.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Nécessité de proximité',
     question:
         'Selon le cours, pour qu’une dépendance soit assimilée au domicile, il faut :',
@@ -4442,7 +4442,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste sur la proximité et le lien étroit unissant la dépendance à l’habitation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule aménagé',
     question: 'Selon le cours, peut être un domicile :',
     options: [
@@ -4456,7 +4456,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne ces formes d’habitat comme entrant dans la notion de domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux professionnels',
     question:
         'Selon le cours, les locaux professionnels peuvent être considérés comme domicile :',
@@ -4472,7 +4472,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne déterminée',
     question: 'Selon le cours (226-10), la dénonciation doit viser :',
     options: [
@@ -4485,7 +4485,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la victime doit être déterminée et identifiable, personne physique ou morale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Identification sans nom',
     question:
         'Selon le cours, même sans nomination, une personne peut être identifiée si :',
@@ -4500,7 +4500,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que des détails suffisamment précis peuvent permettre l’identification sans nom.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur moral',
     question: 'Selon le cours, est assimilé à l’auteur juridique :',
     options: [
@@ -4514,7 +4514,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’auteur moral est assimilé à l’auteur juridique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation anonyme',
     question: 'Selon le cours, en cas de dénonciation anonyme, il faut que :',
     options: [
@@ -4528,7 +4528,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles (consentement présumé)',
     question:
         'Selon le cours, le consentement aux captations de paroles peut être présumé si l’acte est réalisé :',
@@ -4543,7 +4543,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la présomption de consentement au vu et au su, à condition qu’elle puisse s’opposer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image (droit général)',
     question: 'Selon le cours, toute personne a le droit :',
     options: [
@@ -4558,7 +4558,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — “Revenge porn” (terme)',
     question:
         'Selon le cours, la pornodivulgation a été popularisée sous le terme :',
@@ -4568,7 +4568,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que ces agissements ont été popularisés en France sous l’appellation anglophone “revenge porn”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Définition pratique',
     question: 'Selon le cours, la pornodivulgation consiste à :',
     options: [
@@ -4583,7 +4583,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Mode de commission',
     question: 'Selon le cours, 226-4-2-1 réprime la propagande/publicité :',
     options: [
@@ -4596,7 +4596,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : propagande/publicité “quel qu’en soit le mode”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Presse (règles spéciales)',
     question:
         'Selon le cours, lorsque 226-4-2-1 est commis par voie de presse écrite ou audiovisuelle :',
@@ -4613,7 +4613,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (5/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Procédé quelconque',
     question:
         'Selon le cours (226-1), les atteintes à la vie privée peuvent être commises :',
@@ -4627,7 +4627,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que sont visés tous procédés permettant le résultat, avec ou sans appareil.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement inaudible',
     question:
         'Selon le cours (226-1), l’infraction d’enregistrement de paroles privées est constituée :',
@@ -4641,7 +4641,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’infraction est constituée quels que soient les résultats techniques : même inaudible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles en lieu public',
     question:
         'Selon le cours (226-1), la captation/enregistrement de paroles privées peut être constituée :',
@@ -4656,7 +4656,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le délit est constitué même en lieu public si les paroles n’ont pas vocation à être rendues publiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Mineur (consentement)',
     question:
         'Selon le cours (226-1), dans le cas d’un mineur, le consentement doit émaner :',
@@ -4670,7 +4670,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que pour un mineur, le consentement relève des titulaires de l’autorité parentale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé (exemples)',
     question:
         'Selon le cours (jurisprudence), peuvent être considérés comme lieu privé :',
@@ -4684,7 +4684,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite ces exemples comme lieux privés au cas par cas (jurisprudences).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Photographie vitesse',
     question: 'Selon le cours (jurisprudence), ne tombe pas sous 226-1 :',
     options: [
@@ -4697,7 +4697,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’exception : procédé photo pour matérialité excès de vitesse.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Signalisation anthropométrique',
     question: 'Selon le cours (jurisprudence), ne relève pas de 226-1 :',
     options: [
@@ -4711,7 +4711,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la prise de photos anthropométriques en enquête judiciaire comme non visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (mineur)',
     question:
         'Selon le cours, pour la localisation d’un mineur, le consentement :',
@@ -4725,7 +4725,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la localisation d’un mineur nécessite le consentement des titulaires de l’autorité parentale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Opposition d’un parent',
     question: 'Selon le cours, pour la localisation d’un mineur, il suffit :',
     options: [
@@ -4739,7 +4739,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique qu’une opposition d’un seul titulaire peut rendre la localisation illicite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (infraction de conséquence)',
     question: 'Selon le cours, l’infraction de 226-2 est :',
     options: [
@@ -4753,7 +4753,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-2 sanctionne le produit d’une atteinte 226-1 (document/enregistrement).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (conservation seule)',
     question:
         'Selon le cours, pour 226-2, le simple fait de conserver le produit de l’atteinte :',
@@ -4767,7 +4767,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la conservation est réprimée indépendamment de toute divulgation/utilisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (utilisation en divorce)',
     question:
         'Selon le cours, l’utilisation en justice (ex : divorce) d’enregistrements illicites :',
@@ -4781,7 +4781,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne l’exemple : un conjoint utilisant des enregistrements illicites dans une procédure peut relever de 226-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — 226-2 (laisser porter à la connaissance)',
     question: 'Selon le cours, 226-2 peut viser aussi celui qui :',
@@ -4796,7 +4796,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que celui qui a le pouvoir d’empêcher la diffusion et ne le fait pas peut être considéré auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Presse (hiérarchie)',
     question:
         'Selon le cours, la hiérarchie des responsables en matière de presse renvoie à :',
@@ -4812,7 +4812,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — “Par tout moyen”',
     question: 'Selon le cours (226-10), la dénonciation peut être effectuée :',
     options: [
@@ -4825,7 +4825,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-10 prévoit une dénonciation “par tout moyen” (écrit ou oral).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire (remise)',
     question:
         'Selon le cours, il n’est pas nécessaire que la dénonciation soit remise en main propre :',
@@ -4840,7 +4840,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique qu’il suffit de l’adresser ou de faire en sorte qu’elle parvienne au destinataire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Dénonciation calomnieuse — Fait “de nature à entraîner sanctions”',
     question:
@@ -4856,7 +4856,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend le texte : préjudiciable si de nature à entraîner des sanctions judiciaires/administratives/disciplinaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Diffamation (différence)',
     question:
         'Selon le cours, la dénonciation calomnieuse se distingue de la diffamation car elle est :',
@@ -4870,7 +4870,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la dénonciation calomnieuse expose à des sanctions par l’autorité judiciaire/administrative/disciplinaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation provoquée',
     question:
         'Selon le cours, révéler des faits (même faux) en réponse à une interpellation de l’autorité :',
@@ -4886,7 +4886,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord à la diffusion (preuve)',
     question: 'Selon le cours, il appartient à l’auteur :',
     options: [
@@ -4899,7 +4899,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : l’accord à la captation ne vaut pas accord à la diffusion, et l’auteur doit prouver l’accord de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Absence d’opposition',
     question:
         'Selon le cours, même si la victime avait conscience d’être filmée (assentiment présumé), cela ne suffit pas pour :',
@@ -4914,7 +4914,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter (définition)',
     question: 'Selon le cours, “intercepter” consiste à :',
     options: [
@@ -4928,7 +4928,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit l’interception comme la captation au passage pendant la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détourner (définition)',
     question: 'Selon le cours, “détourner” consiste à :',
     options: [
@@ -4942,7 +4942,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours décrit le détournement comme la modification du cours de transmission avec dérivation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation d’appareils',
     question: 'Selon le cours (226-15 al.2), est aussi réprimé le fait :',
     options: [
@@ -4957,7 +4957,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait (exemples)',
     question: 'Selon le cours, une voie de fait peut consister notamment à :',
     options: [
@@ -4971,7 +4971,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste de nombreux exemples de violences contre les choses (forçage, bris, escalade…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Porte non fermée à clé',
     question:
         'Selon le cours, l’introduction illicite n’a pas pu être retenue lorsque :',
@@ -4987,7 +4987,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Mention “montage”',
     question:
         'Selon le cours (226-8), la publication peut être licite sans consentement si :',
@@ -5001,7 +5001,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours prévoit une exception : mention claire et univoque indiquant qu’il s’agit d’un montage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage évident',
     question:
         'Selon le cours (226-8), la publication peut ne pas nécessiter de consentement si :',
@@ -5017,7 +5017,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — “Tout moyen”',
     question:
         'Selon le cours, l’atteinte à l’intimité (226-3-1) peut être commise :',
@@ -5032,7 +5032,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Supprimer (définition)',
     question:
         'Selon le cours (226-15 al.1), “supprimer” une correspondance est :',
@@ -5047,7 +5047,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise la définition jurisprudentielle : empêcher qu’elle parvienne à destination (destruction, mise au rebut, conservation…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Retarder (définition)',
     question: 'Selon le cours, “retarder” une correspondance consiste à :',
     options: [
@@ -5062,7 +5062,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Caractère secret après décès',
     question: 'Selon le cours, le caractère secret de l’information :',
     options: [
@@ -5078,7 +5078,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
 
   // (Pour garder le pack à 50 sans exploser la taille, je continue sur des points
   // très proches et toujours issus de ton cours.)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Complicité',
     question: 'Selon le cours, la complicité de dénonciation calomnieuse est :',
     options: [
@@ -5091,7 +5091,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : COMPLICITÉ : OUI, selon les règles générales (aide/assistance, provocation, instructions).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Aide/assistance',
     question: 'Selon le cours, la complicité suppose notamment :',
     options: [
@@ -5105,7 +5105,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Aucune circonstance aggravante',
     question: 'Selon le cours, la pornodivulgation (226-2-1 al.2) comporte :',
     options: [
@@ -5117,7 +5117,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : IV — Circonstances aggravantes : Aucune.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Aucune circonstance aggravante',
     question: 'Selon le cours, la violation de domicile (226-4) comporte :',
     options: [
@@ -5130,7 +5130,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne : IV — Circonstances aggravantes : Aucune.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Aucune circonstance aggravante',
     question:
         'Selon le cours, l’atteinte au secret professionnel (226-13) comporte :',
@@ -5144,7 +5144,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-8 est :',
     options: [
@@ -5157,7 +5157,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : volonté de créer un montage afin de tromper le public, le résultat escompté importe peu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Mobile',
     question:
         'Selon le cours, pour 226-8, le résultat escompté (notoriété, profit…) :',
@@ -5175,7 +5175,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (6/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Champ (en transmission)',
     question: 'Selon le cours, 226-15 al.2 protège les correspondances :',
     options: [
@@ -5189,7 +5189,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le texte vise les correspondances en transmission ou arrivées mais non encore lues.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mail déjà ouvert',
     question:
         'Selon le cours, lire un mail déjà ouvert par le destinataire ne relève plus de 226-15 al.2 car :',
@@ -5203,7 +5203,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique qu’après lecture, la correspondance perd son caractère spécifique et devient une donnée informatique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple d’interception (radio)',
     question: 'Selon le cours, constitue une interception le fait de :',
     options: [
@@ -5216,7 +5216,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’exemple jurisprudentiel : capter des échanges radio entre patrouilles constitue une interception.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Exemple de détournement (employeur)',
     question: 'Selon le cours, constitue un détournement :',
@@ -5231,7 +5231,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite un exemple jurisprudentiel : accès aux courriels non encore consultés par le salarié = détournement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intention de nuire',
     question:
         'Selon le cours, pour 226-15 (électronique), l’intention de nuire :',
@@ -5245,7 +5245,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : l’intention de nuire n’est pas exigée, le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peine simple',
     question: 'Selon le cours, la peine principale (226-15 al.2) est :',
     options: [
@@ -5259,7 +5259,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Box fermé non attenant',
     question:
         'Selon le cours (jurisprudence), peut être assimilé à un domicile :',
@@ -5273,7 +5273,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la jurisprudence : un box fermé non attenant peut être assimilé à un domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Garage parking souterrain',
     question:
         'Selon le cours (jurisprudence), peut être assimilé à une annexe au domicile :',
@@ -5287,7 +5287,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la jurisprudence : garage dans parking souterrain considéré comme annexe au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Logement vide entre deux locations',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -5300,7 +5300,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite les exclusions : logement vide de meubles entre deux locations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Immeuble en construction',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -5313,7 +5313,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste l’immeuble en construction parmi les lieux non considérés comme domiciles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Local réservé à la vente',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -5326,7 +5326,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne le local réservé à la vente parmi les exclusions de la notion de domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule automobile (non domicile)',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -5341,7 +5341,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Objet',
     question: 'Selon le cours (226-15 al.1), une correspondance est :',
     options: [
@@ -5354,7 +5354,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la jurisprudence assimile “correspondance” à “message” quel qu’en soit le support, dès lors qu’il circule.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Destination à un tiers',
     question:
         'Selon le cours, on viole le secret des correspondances quand l’atteinte porte sur un message :',
@@ -5368,7 +5368,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : l’auteur doit s’en prendre à un message adressé à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Acheminement indifférent',
     question:
         'Selon le cours, le mode d’acheminement de la correspondance est :',
@@ -5382,7 +5382,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation à un autre dépositaire',
     question:
         'Selon le cours, l’infraction peut être constituée même si la révélation est faite :',
@@ -5396,7 +5396,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’infraction peut être retenue même si l’information est révélée à une personne aussi tenue au secret.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mobile',
     question: 'Selon le cours, pour 226-13, le mobile :',
     options: [
@@ -5410,7 +5410,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu généré (condition)',
     question:
         'Selon le cours, pour le deepfake (226-8), l’infraction est constituée sans consentement si :',
@@ -5426,7 +5426,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-2-1 al.2 suppose :',
     options: [
@@ -5443,7 +5443,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (7/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Caractère spontané',
     question:
         'Selon le cours, la jurisprudence exige que la dénonciation calomnieuse ait un caractère :',
@@ -5457,7 +5457,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que seule la personne ayant pris l’initiative de révéler les faits inexacts peut être coupable (spontanéité).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation provoquée',
     question: 'Selon le cours, une dénonciation “provoquée” (sur demande) :',
     options: [
@@ -5470,7 +5470,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que les dénonciations provoquées perdent leur spontanéité (rapports demandés, réponses aux questions, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Rapport demandé par un supérieur',
     question:
         'Selon le cours, un rapport/compte rendu établi sur demande d’un supérieur :',
@@ -5485,7 +5485,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite les rapports demandés par un supérieur comme exemple de dénonciation provoquée (perte de spontanéité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Devoir d’informer',
     question:
         'Selon le cours (Cass. crim., 03 mai 2000), la dénonciation faite par un subordonné qui avait le devoir d’informer :',
@@ -5499,7 +5499,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne que la dénonciation faite par un subordonné ayant le devoir d’informer est provoquée (pas spontanée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponses au magistrat',
     question:
         'Selon le cours (Cass. crim., 16 juin 1988), les dénonciations contenues dans les réponses aux questions d’un magistrat instructeur :',
@@ -5513,7 +5513,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite les réponses aux questions d’un magistrat instructeur comme dénonciations provoquées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Défense du prévenu',
     question:
         'Selon le cours (Cass. crim., 03 mai 2000), une dénonciation faite par un prévenu si elle se rattache étroitement à sa défense :',
@@ -5527,7 +5527,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que si la dénonciation est étroitement liée à la défense, elle est provoquée (pas spontanée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation préjudiciable',
     question:
         'Selon le cours, la dénonciation est “préjudiciable” si elle est de nature à entraîner :',
@@ -5541,7 +5541,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend l’exigence de l’article 226-10 : fait de nature à entraîner des sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Sanction effective',
     question:
         'Selon le cours, pour la dénonciation calomnieuse, il est nécessaire que la sanction soit effectivement prononcée :',
@@ -5555,7 +5555,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la dénonciation doit être “de nature” à entraîner des sanctions, même sans sanction effective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Obstacles (prescription/amnistie)',
     question:
         'Selon le cours, l’infraction peut être constituée même si l’éventualité de sanction est écartée par :',
@@ -5569,7 +5569,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que ces obstacles n’empêchent pas la caractérisation si le fait est de nature à entraîner sanction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Inexactitude totale ou partielle',
     question:
         'Selon le cours, la dénonciation calomnieuse vise un fait que l’on sait :',
@@ -5584,7 +5584,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Moyens (liste)',
     question:
         'Selon le cours (226-4), l’introduction illégitime doit être réalisée à l’aide de :',
@@ -5598,7 +5598,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère les moyens : manœuvres/menaces/voies de fait/contrainte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Manœuvres (définition)',
     question: 'Selon le cours, les “manœuvres” sont :',
     options: [
@@ -5611,7 +5611,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours définit les manœuvres comme ruse/procédé astucieux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Menaces (définition)',
     question: 'Selon le cours, les “menaces” peuvent être caractérisées par :',
     options: [
@@ -5625,7 +5625,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que menaces = comportements inquiétants/paroles annonçant violence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Contrainte (définition)',
     question: 'Selon le cours, la “contrainte” correspond à :',
     options: [
@@ -5638,7 +5638,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit la contrainte comme absence de consentement libre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Occupant présent ou non',
     question:
         'Selon le cours, les moyens d’introduction illicite montrent que l’entrée est non désirée, que l’occupant légitime soit :',
@@ -5648,7 +5648,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’entrée est non désirée même si l’occupant n’est pas présent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Personne initialement invitée',
     question: 'Selon le cours, la violation de domicile ne concerne pas :',
     options: [
@@ -5661,7 +5661,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que ce n’est pas une personne initialement invitée : l’entrée est “non désirée”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien après entrée par un tiers',
     question:
         'Selon le cours, peuvent être poursuivies des personnes venues ensuite se maintenir dans le domicile si :',
@@ -5676,7 +5676,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise qu’un maintien en connaissance de cause après une entrée illicite par un tiers peut être poursuivi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Enquête de flagrance',
     question:
         'Selon le cours, en raison du caractère continu, on peut agir en flagrance :',
@@ -5690,7 +5690,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle l’infraction continue : flagrance tant que l’occupation continue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait (toiture)',
     question: 'Selon le cours, une voie de fait peut être caractérisée par :',
     options: [
@@ -5703,7 +5703,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Public ou tiers',
     question:
         'Selon le cours (226-8), l’infraction suppose de porter le montage à la connaissance :',
@@ -5717,7 +5717,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : porter à la connaissance du public ou d’un tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Repartage',
     question:
         'Selon le cours, le dispositif 226-8 permet aussi de sanctionner :',
@@ -5731,7 +5731,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que sont englobés les moyens de révéler le montage et que cela peut sanctionner le repartage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu IA (définition générale)',
     question: 'Selon le cours, l’hypertrucage (deepfake) repose sur :',
     options: [
@@ -5745,7 +5745,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours décrit le deepfake comme une technique IA de synthèse multimédia.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Exemples deepfake',
     question: 'Selon le cours, le deepfake peut notamment servir à :',
     options: [
@@ -5759,7 +5759,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne ces exemples : changement de visage ou substitution de propos/voix.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement requis',
     question: 'Selon le cours (226-8), le consentement requis porte sur :',
     options: [
@@ -5773,7 +5773,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Obtention avec consentement',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) suppose un contenu :',
@@ -5788,7 +5788,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le contenu a été obtenu avec consentement ou fourni par la personne concernée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord absent',
     question: 'Selon le cours, la diffusion est “sans accord” si :',
     options: [
@@ -5802,7 +5802,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours décrit l’absence d’accord : opposition ou impossibilité de s’opposer faute d’avoir été consultée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Caractère sexuel (appréciation)',
     question:
         'Selon le cours, l’appréciation du caractère sexuel des paroles/images revient :',
@@ -5816,7 +5816,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours (référence Conseil constitutionnel) souligne que l’appréciation du caractère sexuel relève des juridictions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Qualification',
     question: 'Selon le cours, la pornodivulgation (226-2-1 al.2) est un :',
     options: ['Délit', 'Crime', 'Contravention'],
@@ -5825,7 +5825,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Actes matériels',
     question:
         'Selon le cours (226-15 al.2), l’acte matériel peut consister à :',
@@ -5839,7 +5839,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère les actes matériels : intercepter/détourner/utiliser/divulguer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter sans lire',
     question:
         'Selon le cours, pour l’interception, il est nécessaire que l’auteur prenne connaissance du contenu :',
@@ -5853,7 +5853,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’auteur peut intercepter sans forcément prendre connaissance du contenu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Utiliser (exemple effacer)',
     question:
         'Selon le cours, “utiliser” une correspondance électronique peut viser :',
@@ -5868,7 +5868,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne l’exemple : effacer un mail non destiné, sans l’ouvrir, peut caractériser “utiliser”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Divulguer (téléphone enregistré)',
     question: 'Selon le cours, commet une divulgation celui qui :',
@@ -5882,7 +5882,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne cet exemple : faire écouter à un tiers une conversation enregistrée = divulgation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation pour un tiers',
     question:
         'Selon le cours, celui qui installe un dispositif d’interception pour le compte d’un tiers est :',
@@ -5897,7 +5897,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — “Arrivées ou non à destination”',
     question:
         'Selon le cours (226-15 al.1), l’atteinte peut viser des correspondances :',
@@ -5911,7 +5911,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle l’expression légale : “arrivées ou non à destination”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Ouverture (vapeur)',
     question:
         'Selon le cours, l’ouverture d’une correspondance peut être réalisée :',
@@ -5925,7 +5925,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’ouverture peut être violente ou subtile (décachetage à la vapeur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Renvoi après ouverture',
     question:
         'Selon le cours, peu importe que la correspondance soit ensuite renvoyée au destinataire :',
@@ -5940,7 +5940,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé (définition)',
     question: 'Selon le cours, un lieu privé est :',
     options: [
@@ -5954,7 +5954,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la définition jurisprudentielle : lieu privé = non ouvert à tous sauf autorisation de l’occupant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Véhicule et lieu privé',
     question:
         'Selon le cours (Cass. crim., 28 mars 2023), filmer un conducteur au volant lors d’un contrôle routier, au vu et au su :',
@@ -5968,7 +5968,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle cette jurisprudence : acte au vu et au su → il faut rechercher l’opposition, la preuve ne pèse pas sur le prévenu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (clandestine)',
     question:
         'Selon le cours, la présomption “au vu et au su” ne s’applique pas à la localisation car :',
@@ -5984,7 +5984,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire (exemples)',
     question:
         'Selon le cours, parmi les exemples de professions souvent tenues au secret, on trouve :',
@@ -5998,7 +5998,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite de nombreux exemples de personnes tenues au secret professionnel (médecins, policiers, magistrats, avocats…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Détermination par les juges',
     question:
         'Selon le cours, en l’absence de texte, la question de savoir si une personne est tenue au secret est déterminée :',
@@ -6012,7 +6012,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique qu’en l’absence de texte, les juges déterminent au cas par cas l’obligation de secret.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation (document)',
     question: 'Selon le cours, la révélation peut consister :',
     options: [
@@ -6026,7 +6026,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité — Circonstance aggravante (transport collectif)',
     question:
@@ -6042,7 +6042,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste le transport collectif et les lieux d’accès comme circonstance aggravante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Circonstance aggravante (images fixées)',
     question: 'Selon le cours (226-3-1), il y a circonstance aggravante si :',
     options: [
@@ -6058,7 +6058,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (8/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fondement',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -6071,7 +6071,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : l’article 226-10 C.P. définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Forme écrite',
     question:
         'Selon le cours, une dénonciation écrite peut notamment prendre la forme :',
@@ -6086,7 +6086,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite ces exemples de dénonciations écrites (lettre, pétition, plainte…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Forme orale',
     question: 'Selon le cours, une dénonciation orale peut être faite :',
     options: [
@@ -6099,7 +6099,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : dénonciation orale possible (vive voix/téléphone) et doit pouvoir être prouvée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur matériel vs personnel',
     question:
         'Selon le cours, l’exécutant agissant sur instructions hiérarchiques ne peut être poursuivi que :',
@@ -6114,7 +6114,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours distingue la participation personnelle de celui qui n’a qu’un rôle matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne déterminée',
     question: 'Selon le cours, la dénonciation doit viser :',
     options: [
@@ -6127,7 +6127,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise la nécessité d’une personne déterminée et identifiable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Consommation (date)',
     question: 'Selon le cours, l’infraction est consommée :',
     options: [
@@ -6140,7 +6140,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la jurisprudence fixe la consommation au jour de réception (point de départ de la prescription).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataires',
     question:
         'Selon le cours, les destinataires visés par 226-10 peuvent inclure :',
@@ -6155,7 +6155,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère les destinataires : magistrats, autorités aptes, supérieurs/employeur, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Notion de “préjudiciable”',
     question:
         'Selon le cours, “préjudiciable” signifie que le fait dénoncé est de nature à entraîner :',
@@ -6169,7 +6169,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la condition légale : fait de nature à entraîner sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fausseté (décisions automatiques)',
     question:
         'Selon le cours, la fausseté résulte nécessairement d’une décision définitive :',
@@ -6184,7 +6184,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que seules certaines décisions définitives constatant expressément l’absence de fait/imputabilité établissent automatiquement la fausseté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — “Faute de charges suffisantes”',
     question:
         'Selon le cours, si la décision définitive est rendue faute de charges suffisantes :',
@@ -6198,7 +6198,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que dans les autres cas (ex : faute de charges suffisantes), le tribunal apprécie la pertinence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément moral',
     question:
         'Selon le cours, l’auteur doit connaître l’inexactitude des faits :',
@@ -6212,7 +6212,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste : la connaissance de l’inexactitude doit exister au jour de la dénonciation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Erreur découverte après coup',
     question: 'Selon le cours, si l’auteur découvre son erreur après coup :',
     options: [
@@ -6226,7 +6226,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : pas de 226-10 si erreur découverte après coup, mais possible poursuite pour omission de témoigner en faveur d’un innocent (434-11).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Omission de témoigner',
     question:
         'Selon le cours, si l’auteur découvre son erreur après coup, il peut être poursuivi pour :',
@@ -6240,7 +6240,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite explicitement l’article 434-11 (omission de témoigner en faveur d’un innocent).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Circonstances aggravantes',
     question: 'Selon le cours, la dénonciation calomnieuse comporte :',
     options: [
@@ -6252,7 +6252,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : IV — Circonstances aggravantes : Aucune.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peine',
     question:
         'Selon le cours, la peine principale (personne physique) de 226-10 est :',
@@ -6266,7 +6266,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau de répression du cours indique : 226-10 = 5 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'Selon le cours, la tentative de dénonciation calomnieuse est :',
     options: [
@@ -6279,7 +6279,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Fondement',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -6293,7 +6293,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-4 définit et réprime la violation de domicile commise par un particulier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien',
     question: 'Selon le cours, constitue aussi l’infraction :',
     options: [
@@ -6307,7 +6307,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le maintien après l’introduction illégitime est également incriminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — “Hors les cas où la loi le permet”',
     question: 'Selon le cours, la violation de domicile est punissable :',
     options: [
@@ -6320,7 +6320,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle la réserve légale : l’infraction est “hors les cas où la loi le permet”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Introduction légitime (appel au secours)',
     question: 'Selon le cours, une introduction peut être légitime en cas de :',
@@ -6335,7 +6335,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’appel au secours justifie l’introduction, même si l’appel est fantaisiste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Introduction légitime (incendie/inondation)',
     question: 'Selon le cours, l’introduction est justifiée si la maison est :',
@@ -6349,7 +6349,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement l’incendie/inondation comme cas d’introduction légitime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Introduction légitime (assistance personne en péril)',
     question:
@@ -6364,7 +6364,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’assistance à personne en péril (indices : appel sans réponse, odeur suspecte, absence anormale…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Logement vacant non meublé',
     question:
         'Selon le cours, les logements vacants non meublés ne sont pas des domiciles au sens de 226-4, et l’occupation frauduleuse relève de :',
@@ -6378,7 +6378,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’occupation frauduleuse de tels locaux est prévue et réprimée aux articles 315-1 et 315-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément moral',
     question: 'Selon le cours, l’élément moral implique :',
     options: [
@@ -6392,7 +6392,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la volonté d’entrer/se maintenir à l’insu/contre gré et la conscience d’être hors cas légaux.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peine',
     question: 'Selon le cours, la violation de domicile (226-4) est punie de :',
     options: [
@@ -6404,7 +6404,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le tableau du cours indique : 226-4 = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question:
         'Selon le cours, la tentative de violation de domicile (226-4) est :',
@@ -6418,7 +6418,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande/ publicité “squat” — Fondement',
     question:
         'Le fait de faire la propagande ou publicité en faveur de méthodes incitant à la violation de domicile est incriminé par :',
@@ -6432,7 +6432,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-4-2-1 incrimine la propagande/publicité en faveur de méthodes visant à faciliter ou inciter à la violation de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande/ publicité “squat” — Objet',
     question: 'Selon le cours, 226-4-2-1 vise notamment les contenus de type :',
     options: [
@@ -6446,7 +6446,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite explicitement les vidéos “mode d’emploi du squat”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande/ publicité “squat” — Peine',
     question:
         'Selon le cours, la commission du délit 226-4-2-1 est sanctionnée par :',
@@ -6461,7 +6461,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Aggravation (conjoint/PACS)',
     question:
         'Selon le cours, l’atteinte au secret des correspondances (226-15) est aggravée lorsque les faits sont commis par :',
@@ -6475,7 +6475,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’alinéa 3 : aggravation si conjoint/concubin/partenaire de PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Électronique (fondement)',
     question:
         'La violation des correspondances émises par la voie électronique est prévue par :',
@@ -6489,7 +6489,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-15 al.2 définit la violation des correspondances émises par voie électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Électronique (mauvaise foi)',
     question: 'Selon le cours, la “mauvaise foi” (226-15) correspond à :',
     options: [
@@ -6503,7 +6503,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la Cour de cassation : mauvaise foi = connaissance que les lettres ne lui étaient pas destinées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Électronique (tentative)',
     question:
         'Selon le cours, la tentative pour la violation des correspondances électroniques (226-15 al.2) est :',
@@ -6513,7 +6513,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation (en ligne)',
     question:
         'Selon le cours, l’atteinte à la représentation (226-8) est aggravée lorsque les faits sont commis :',
@@ -6527,7 +6527,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’article 226-8 al.2 : aggravation si usage d’un service de communication au public en ligne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine simple',
     question:
         'Selon le cours, la peine principale (simple) de 226-8 al.1 est :',
@@ -6540,7 +6540,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le tableau du cours indique : 226-8 al.1 = 1 an + 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine aggravée',
     question:
         'Selon le cours, la peine principale (aggravée) de 226-8 al.2 est :',
@@ -6554,7 +6554,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : aggravé (226-8 al.2) = 2 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question:
         'Selon le cours, la tentative de l’atteinte à la représentation (226-8) est :',
@@ -6569,7 +6569,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Fondement',
     question:
         'La diffusion sans accord d’un enregistrement à caractère sexuel obtenu avec consentement est prévue par :',
@@ -6583,7 +6583,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : 226-2-1 al.2 définit et réprime la pornodivulgation (diffusion sans accord).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peine',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) est punie de :',
@@ -6597,7 +6597,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours mentionne : 226-2-1 al.2 = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question:
         'Selon le cours, la tentative de pornodivulgation (226-2-1) est :',
@@ -6612,7 +6612,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Fondement',
     question:
         'Les atteintes à l’intimité de la vie privée sont définies et réprimées par :',
@@ -6626,7 +6626,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-1 définit et réprime les atteintes à l’intimité de la vie privée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (fondement)',
     question:
         'La conservation, diffusion ou utilisation d’un document issu d’une atteinte à la vie privée est prévue par :',
@@ -6641,7 +6641,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (inclut différé)',
     question:
         'Selon le cours, l’atteinte à la vie privée peut aussi consister en :',
@@ -6656,7 +6656,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours ajoute explicitement la localisation (temps réel ou différé) au champ de 226-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (précision)',
     question:
         'Selon le cours, le niveau de précision de la localisation (zone relais vs GPS précis) :',
@@ -6671,7 +6671,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Élément moral (2 composantes)',
     question:
         'Selon le cours, l’élément moral des atteintes à la vie privée implique :',
@@ -6687,7 +6687,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Définition (acte)',
     question:
         'Selon le cours, l’atteinte au secret professionnel consiste en :',
@@ -6702,7 +6702,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit 226-13 : révélation d’une information secrète par le dépositaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Confirmation d’info déjà publique',
     question:
         'Selon le cours, si l’information a déjà fait l’objet de publicité, l’infraction peut être retenue contre le dépositaire qui :',
@@ -6717,7 +6717,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et meubles',
     question:
         'Selon le cours, un logement inoccupé peut être considéré domicile si :',
@@ -6732,7 +6732,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que la présence de meubles “d’occupation effective” peut permettre de qualifier domicile (appréciation du juge).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Bicyclette/ carton de livres',
     question:
         'Selon le cours, la seule présence d’une bicyclette ou d’un carton de livres dans un logement vacant :',
@@ -6749,7 +6749,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (9/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Circonstance aggravante (conjoint/PACS)',
     question:
@@ -6764,7 +6764,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’aggravation prévue à l’article 226-1 al.7 (conjoint/concubin/PACS).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Circonstance aggravante (DAP/MSP/mandat)',
     question:
@@ -6780,7 +6780,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise l’aggravation de l’article 226-1 al.8 (DAP/MSP/mandat électif/candidat + membre de la famille).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Paroles/images sexuelles (aggravation)',
     question:
@@ -6796,7 +6796,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’article 226-2-1 al.1 comme circonstance aggravante quand le contenu est sexuel (lieu public ou privé).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine (simple 226-1)',
     question:
         'Selon le cours, la peine principale (simple) des atteintes à la vie privée (226-1) est :',
@@ -6810,7 +6810,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau de répression du cours indique (simple) : 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine aggravée',
     question:
         'Selon le cours, en cas de circonstance aggravante (ex : 226-1 al.7/8), la peine principale peut être :',
@@ -6824,7 +6824,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique une peine aggravée à 2 ans et 60 000 € pour les circonstances prévues.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Tentative',
     question:
         'Selon le cours, la tentative des délits prévus aux articles 226-1 et 226-2 est :',
@@ -6838,7 +6838,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne expressément la tentative prévue à l’article 226-5 pour 226-1 et 226-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Complicité',
     question:
         'Selon le cours, la complicité des atteintes à la vie privée est :',
@@ -6853,7 +6853,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Fondement (particulier)',
     question:
         'L’atteinte au secret des correspondances commise par un particulier est prévue par :',
@@ -6867,7 +6867,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-15 al.1 définit et réprime l’atteinte au secret des correspondances (non électronique).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Actes matériels (liste)',
     question: 'Selon le cours (226-15 al.1), l’atteinte peut consister à :',
     options: [
@@ -6881,7 +6881,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère précisément les actes matériels de l’alinéa 1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Ouvrir (notion)',
     question: 'Selon le cours, “ouvrir” une correspondance consiste à :',
     options: [
@@ -6895,7 +6895,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que tout acte portant atteinte à l’intégrité du support et donnant accès au contenu constitue l’ouverture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Supprimer (exemple)',
     question:
         'Selon le cours (jurisprudence citée), peut constituer une suppression :',
@@ -6910,7 +6910,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite l’exemple de la secrétaire de mairie ayant jeté une lettre après l’avoir lue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Retarder (exemples)',
     question: 'Selon le cours, peut caractériser un retard de correspondance :',
     options: [
@@ -6923,7 +6923,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit le retard comme la rétention qui interrompt le cours normal d’acheminement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Détourner (notion)',
     question:
         'Selon le cours, “détourner” une correspondance (226-15 al.1) consiste à :',
@@ -6938,7 +6938,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le détournement modifie le cours normal de la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret des correspondances — Connaissance frauduleuse (autonome)',
     question:
@@ -6954,7 +6954,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le législateur sanctionne cet acte de façon autonome.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Élément moral (mauvaise foi)',
     question: 'Selon le cours, la mauvaise foi implique notamment :',
     options: [
@@ -6968,7 +6968,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle la définition jurisprudentielle : connaissance + action volontaire (conserver/empêcher/retarder).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Intention de nuire',
     question: 'Selon le cours, l’intention de nuire pour 226-15 al.1 :',
     options: [
@@ -6981,7 +6981,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’intention de nuire n’est pas exigée (mobile indifférent).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine (simple)',
     question:
         'Selon le cours, la peine principale (simple) de 226-15 al.1 est :',
@@ -6995,7 +6995,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau de répression indique : 226-15 al.1 (simple) = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine (aggravée conjoint/PACS)',
     question:
         'Selon le cours, lorsque 226-15 al.3 s’applique (conjoint/concubin/PACS), la peine est :',
@@ -7009,7 +7009,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau de répression indique : aggravé (226-15 al.3) = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Tentative',
     question: 'Selon le cours, la tentative pour 226-15 est :',
     options: [
@@ -7021,7 +7021,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : TENTATIVE : NON.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Complicité',
     question: 'Selon le cours, la complicité pour 226-15 est :',
     options: [
@@ -7034,7 +7034,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Fondement',
     question:
         'L’atteinte à l’intimité d’une personne (observation des parties intimes dissimulées) est prévue par :',
@@ -7048,7 +7048,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-3-1 prévoit et réprime l’atteinte à l’intimité d’une personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Condition (parties intimes cachées)',
     question:
         'Selon le cours, l’infraction suppose d’apercevoir des parties intimes que la victime a cachées :',
@@ -7062,7 +7062,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique les 2 cas : habillement ou présence dans un lieu clos.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — À l’insu ou sans consentement',
     question: 'Selon le cours, l’auteur doit avoir agi :',
     options: [
@@ -7075,7 +7075,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la condition : à l’insu ou sans consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-3-1 implique :',
     options: [
@@ -7089,7 +7089,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne ces deux composantes : conscience + volonté d’atteinte à l’intimité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (abus d’autorité)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -7104,7 +7104,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste cette circonstance aggravante : abus d’autorité liée aux fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (mineur)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -7118,7 +7118,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne explicitement l’aggravation quand la victime est mineure.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (vulnérabilité)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -7133,7 +7133,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise la vulnérabilité apparente ou connue (âge/maladie/infirmité/déficience/grossesse).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (pluralité)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -7147,7 +7147,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne l’aggravation en cas de pluralité d’auteurs/complices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Peine simple',
     question:
         'Selon le cours, la peine principale (simple) de 226-3-1 al.1 est :',
@@ -7161,7 +7161,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-3-1 al.1 = 1 an + 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Peine aggravée',
     question:
         'Selon le cours, la peine principale (aggravée) de 226-3-1 al.2 est :',
@@ -7174,7 +7174,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : aggravé = 2 ans + 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Tentative',
     question:
         'Selon le cours, la tentative de l’atteinte à l’intimité (226-3-1) est :',
@@ -7188,7 +7188,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la tentative de 226-3-1 est prévue expressément par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Complicité',
     question: 'Selon le cours, la complicité de 226-3-1 est :',
     options: [
@@ -7202,7 +7202,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Fondement',
     question:
         'L’atteinte au secret professionnel est définie et réprimée par :',
@@ -7216,7 +7216,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-13 définit et réprime l’atteinte au secret professionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire (formule)',
     question:
         'Selon le cours, est dépositaire du secret la personne qui en a connaissance :',
@@ -7230,7 +7230,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la formule légale : état/profession/fonction/mission temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Secret (définition étendue)',
     question:
         'Selon le cours, le secret couvre aussi ce que le professionnel a pu :',
@@ -7245,7 +7245,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le secret est étendu à tout ce que le dépositaire constate/découvre/déduit dans l’exercice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation (une seule personne suffit)',
     question:
         'Selon le cours, il suffit que l’information secrète soit transmise :',
@@ -7258,7 +7258,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours précise : transmission à une seule personne suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-13 suppose :',
     options: [
@@ -7271,7 +7271,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique une révélation intentionnelle, en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Peine',
     question:
         'Selon le cours, l’atteinte au secret professionnel (226-13) est punie de :',
@@ -7286,7 +7286,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exceptions (principe)',
     question:
         'Selon le cours, l’article 226-14 prévoit que 226-13 ne s’applique pas dans certains cas de :',
@@ -7300,7 +7300,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste les exceptions de 226-14 : signalements/procédure encadrée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Exception maltraitances (mineur/vulnérable)',
     question:
@@ -7316,7 +7316,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle l’exception de signalement aux autorités en cas de maltraitances envers mineur/personne vulnérable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Exception professionnel de santé (avec accord)',
     question:
@@ -7332,7 +7332,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours détaille plusieurs hypothèses encadrées (accord de la victime selon situation, danger, etc.).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exception sujétion (223-15-3)',
     question:
         'Selon le cours (226-14), un professionnel de santé peut signaler des faits de sujétion (223-15-3) si :',
@@ -7347,7 +7347,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise l’exception 226-14 liée à 223-15-3 et ses conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Exception violences couple (danger immédiat)',
     question:
@@ -7363,7 +7363,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne cette exception spécifique : danger immédiat + impossibilité de se protéger (emprise/contrainte morale).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement violences couple (accord)',
     question:
         'Selon le cours (226-14), en matière de violences au sein du couple, le professionnel de santé :',
@@ -7378,7 +7378,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : effort pour obtenir l’accord, et information de la victime en cas d’impossibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Prefet/prefet de police (armes)',
     question:
         'Selon le cours (226-14), les professionnels de santé ou de l’action sociale peuvent informer le préfet (à Paris, préfet de police) :',
@@ -7393,7 +7393,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne cette exception 226-14 : information au préfet/prefet de police liée au danger et aux armes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Vétérinaire (sévices animaux)',
     question:
         'Selon le cours (226-14), le vétérinaire peut porter à la connaissance du procureur :',
@@ -7409,7 +7409,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Protection de l’auteur du signalement',
     question:
         'Selon le cours (226-14), le signalement effectué dans les conditions prévues :',
@@ -7426,7 +7426,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (10/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — “Par tout moyen”',
     question:
         'Selon le cours (226-10), la dénonciation calomnieuse peut être faite :',
@@ -7440,7 +7440,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-10 vise une dénonciation “par tout moyen” : écrite ou verbale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation anonyme',
     question:
         'Selon le cours, en cas de dénonciation anonyme, pour poursuivre il faut que :',
@@ -7454,7 +7454,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que si la dénonciation est anonyme, il faut que son auteur puisse être identifié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne morale',
     question:
         'Selon le cours, la personne visée par une dénonciation calomnieuse peut être :',
@@ -7468,7 +7468,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la victime peut être une personne physique ou morale, à condition d’être déterminée/identifiable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Identification sans nom',
     question:
         'Selon le cours, même sans nommer la victime, la dénonciation peut viser une personne déterminée si :',
@@ -7483,7 +7483,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que des détails peuvent suffire à identifier la personne même sans la nommer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Remise en main propre',
     question:
         'Selon le cours, il est nécessaire que la dénonciation soit remise en main propre à l’autorité :',
@@ -7498,7 +7498,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise qu’il n’est pas nécessaire d’une remise en main propre : il suffit qu’elle parvienne au destinataire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faits “de nature à entraîner”',
     question: 'Selon le cours, pour 226-10, le fait dénoncé doit être :',
     options: [
@@ -7512,7 +7512,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours rappelle la condition “de nature à entraîner” des sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Diffamation vs 226-10',
     question:
         'Selon le cours, une différence essentielle entre dénonciation calomnieuse et diffamation est que la dénonciation calomnieuse :',
@@ -7527,7 +7527,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique que 226-10 va au-delà de l’atteinte à l’honneur : elle expose à sanctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tribunal (autres cas)',
     question:
         'Selon le cours, en dehors des cas où une décision définitive constate expressément l’absence de fait/imputabilité :',
@@ -7542,7 +7542,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Notion extensive',
     question:
         'Selon le cours, la jurisprudence retient une définition du domicile :',
@@ -7557,7 +7557,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours souligne une approche extensive de la notion de domicile en jurisprudence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendances (proximité)',
     question: 'Selon le cours, une dépendance peut relever du domicile si :',
     options: [
@@ -7571,7 +7571,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste sur la nécessité d’un lien étroit et immédiat + proximité pour les dépendances.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Chambre d’hôtel',
     question:
         'Selon le cours, une chambre d’hôtel peut être considérée comme :',
@@ -7581,7 +7581,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite explicitement la chambre d’hôtel parmi les domiciles possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule aménagé',
     question: 'Selon le cours, peut constituer un domicile :',
     options: [
@@ -7594,7 +7594,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite les véhicules aménagés (caravane, roulotte, tente) comme pouvant être des domiciles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux professionnels',
     question:
         'Selon le cours, les locaux professionnels peuvent être protégés comme domicile, mais les lieux ouverts au public :',
@@ -7609,7 +7609,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que les lieux ouverts au public ne bénéficient pas de la protection du domicile pendant les heures d’ouverture.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieu non domicile',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -7622,7 +7622,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste l’immeuble en construction parmi les lieux non considérés comme domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Porte non fermée à clé',
     question:
         'Selon le cours, l’introduction illicite n’a pas pu être retenue lorsque :',
@@ -7636,7 +7636,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne ce cas : l’introduction illicite n’a pas été retenue lorsque la porte n’était pas fermée à clé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait (escalade/forçage)',
     question: 'Selon le cours, une voie de fait peut consister en :',
     options: [
@@ -7651,7 +7651,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Objet protégé',
     question:
         'Selon le cours (226-15 al.2), sont protégées les correspondances :',
@@ -7665,7 +7665,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-15 al.2 protège les correspondances dématérialisées (électroniques).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Moment de protection',
     question: 'Selon le cours, 226-15 al.2 s’applique aux correspondances :',
     options: [
@@ -7679,7 +7679,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la protection vise l’en-cours de transmission ou à destination non encore lue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mail déjà ouvert',
     question:
         'Selon le cours, une fois que le destinataire a pris connaissance du mail, celui-ci :',
@@ -7694,7 +7694,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique qu’après lecture par le destinataire, le message perd la spécificité de correspondance au sens 226-15 al.2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter (définition)',
     question: 'Selon le cours, “intercepter” consiste à :',
     options: [
@@ -7708,7 +7708,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit l’interception comme la captation pendant le cours de la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détourner (définition)',
     question:
         'Selon le cours, “détourner” en matière électronique consiste à :',
@@ -7724,7 +7724,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (condition)',
     question:
         'Selon le cours (226-8), l’infraction suppose la diffusion d’un montage sans consentement si :',
@@ -7739,7 +7739,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise la condition : montage non évident et/ou non signalé expressément.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Exceptions (montage évident)',
     question:
         'Selon le cours, le consentement à la publication n’est pas nécessaire si :',
@@ -7753,7 +7753,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours prévoit l’exception : montage manifestement apparent → pas besoin de consentement à la publication.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Exceptions (mention expresse)',
     question:
         'Selon le cours, le consentement à la publication n’est pas nécessaire si :',
@@ -7767,7 +7767,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours prévoit l’exception : mention claire/univoque du montage pour éviter la méprise.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Finalité humoristique',
     question:
         'Selon le cours, les limites (montage évident ou mentionné) permettent notamment de ne pas sanctionner :',
@@ -7783,7 +7783,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord filmé ≠ accord diffusion',
     question:
         'Selon le cours, l’accord à être filmé/photographié vaut accord à la diffusion :',
@@ -7797,7 +7797,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours insiste : consentement à la captation ≠ consentement à la diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Preuve de l’accord de diffusion',
     question:
         'Selon le cours, si la victime dit ne pas avoir approuvé la diffusion, il appartient à l’auteur :',
@@ -7811,7 +7811,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que c’est à l’auteur de démontrer l’accord spécifique de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Notion “revenge porn”',
     question:
         'Selon le cours, la pornodivulgation a été popularisée sous l’appellation :',
@@ -7822,7 +7822,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles privées (lieu)',
     question:
         'Selon le cours, l’atteinte (paroles privées/confidentielles) est constituée si les paroles ont été prononcées :',
@@ -7837,7 +7837,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le lieu (public/privé) importe peu pour les paroles, si elles sont privées/confidentielles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement inaudible',
     question:
         'Selon le cours, l’infraction d’enregistrement de paroles privées est constituée même si :',
@@ -7851,7 +7851,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’infraction existe quels que soient les résultats techniques, même si inaudible.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Consentement présumé (paroles/images)',
     question:
@@ -7867,7 +7867,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours prévoit la présomption de consentement “au vu et au su” (paroles/images), sous réserve d’opposition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Mineur (consentement)',
     question:
         'Selon le cours, pour un mineur, le consentement (paroles/images/localisation) doit émaner :',
@@ -7881,7 +7881,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le consentement doit provenir des titulaires de l’autorité parentale (art. 372-1 C. civ.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Localisation (opposition d’un parent)',
     question: 'Selon le cours, pour la localisation d’un mineur, il suffit :',
@@ -7897,7 +7897,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — Conservation (infraction autonome)',
     question:
         'Selon le cours, la simple conservation du produit d’une atteinte à la vie privée :',
@@ -7911,7 +7911,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que garder à disposition le produit de l’atteinte est réprimé indépendamment d’une diffusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — Utilisation (divorce)',
     question: 'Selon le cours, peut constituer une “utilisation” (226-2) :',
     options: [
@@ -7925,7 +7925,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne l’exemple : usage d’enregistrements illicites dans une procédure de divorce.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — Diffusion (notion large)',
     question: 'Selon le cours, la “diffusion/divulgation” (226-2) vise :',
     options: [
@@ -7939,7 +7939,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise une conception large : diffusion à grande échelle ou simple révélation à un tiers.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — “Laisser porter à la connaissance du public”',
     question:
         'Selon le cours, peut être considéré auteur (226-2) celui qui, connaissant l’illicéité et ayant le pouvoir d’empêcher la diffusion :',
@@ -7954,7 +7954,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Caractère secret après décès',
     question: 'Selon le cours, le caractère secret d’une information :',
     options: [
@@ -7967,7 +7967,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le caractère secret ne s’éteint pas avec le décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation à un autre dépositaire',
     question:
         'Selon le cours, révéler une information secrète à une personne également soumise au secret professionnel :',
@@ -7981,7 +7981,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que même si le destinataire est soumis au secret, la transmission suffit à caractériser la révélation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Tentative',
     question:
         'Selon le cours, la tentative de violation du secret professionnel (226-13) est :',
@@ -7994,7 +7994,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : TENTATIVE : NON pour 226-13.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Complicité',
     question: 'Selon le cours, la complicité de 226-13 est :',
     options: [
@@ -8008,7 +8008,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-8 implique :',
     options: [
@@ -8021,7 +8021,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la volonté de tromper le public (le mobile/notoriété/profit importe peu).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Procédé numérique',
     question: 'Selon le cours, l’article 226-8 s’applique :',
     options: [
@@ -8036,7 +8036,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Objet (supports)',
     question: 'Selon le cours, le support du contenu pornodivulgué peut être :',
     options: [
@@ -8050,7 +8050,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le support peut être photo/son/vidéo/messages, peu importe le format matériel ou numérique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-2-1 al.2 suppose :',
     options: [
@@ -8067,7 +8067,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (11/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Notion d’auteur',
     question: 'Selon le cours, l’auteur de la dénonciation est :',
     options: [
@@ -8080,7 +8080,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’auteur est celui qui dénonce ou fait dénoncer (auteur moral assimilé à l’auteur juridique).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur moral',
     question: 'Selon le cours, l’auteur moral est :',
     options: [
@@ -8093,7 +8093,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’auteur moral est assimilé à l’auteur juridique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Victime identifiable',
     question: 'Selon le cours, la personne dénoncée doit être :',
     options: [
@@ -8106,7 +8106,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours impose une personne déterminée, pouvant être identifiée (physique ou morale).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Prescription',
     question: 'Selon le cours, le délai de prescription commence à courir :',
     options: [
@@ -8119,7 +8119,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la consommation (et la prescription) est fixée au jour de réception.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire (pouvoir de sanction)',
     question: 'Selon le cours, le destinataire doit être :',
     options: [
@@ -8133,7 +8133,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le destinataire doit pouvoir sanctionner ou saisir l’autorité compétente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Supérieur hiérarchique',
     question: 'Selon le cours, une dénonciation peut être adressée :',
     options: [
@@ -8147,7 +8147,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite expressément supérieurs hiérarchiques/employeur parmi les destinataires possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Nature des sanctions',
     question: 'Selon le cours, les sanctions visées par 226-10 peuvent être :',
     options: [
@@ -8160,7 +8160,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le texte du cours vise des sanctions judiciaires, administratives ou disciplinaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Connaissance de l’inexactitude',
     question: 'Selon le cours, l’infraction suppose que l’auteur :',
     options: [
@@ -8174,7 +8174,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise l’exigence de connaissance de l’inexactitude au jour de la dénonciation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Volonté de nuire',
     question:
         'Selon le cours, l’auteur exprime sa volonté de nuire notamment par :',
@@ -8188,7 +8188,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours relie l’élément moral à la connaissance de l’inexactitude et à la volonté de nuire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personnes morales (responsabilité)',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales pour 226-10 est prévue par :',
@@ -8203,7 +8203,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile (définition générale)',
     question: 'Selon le cours, constitue notamment un domicile :',
     options: [
@@ -8217,7 +8217,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne cette définition générale : local d’habitation + biens meubles, habitation effective ou non.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Résidence principale ou non',
     question: 'Selon le cours, la protection du domicile s’applique :',
     options: [
@@ -8230,7 +8230,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le domicile peut être la résidence principale ou non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieu occupé sans titre',
     question: 'Selon le cours, peut être considéré comme domicile :',
     options: [
@@ -8243,7 +8243,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite le logement occupé sans titre et pacifiquement comme pouvant être un domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et bureau',
     question: 'Selon le cours, le bureau et les locaux professionnels :',
     options: [
@@ -8257,7 +8257,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que les locaux professionnels peuvent être un domicile, mais pas les lieux ouverts au public pendant les heures d’ouverture.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendance (exemples)',
     question:
         'Selon le cours, peuvent être des dépendances assimilées au domicile :',
@@ -8272,7 +8272,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite plusieurs dépendances : garage, balcon, terrasse… sous condition de proximité et prolongement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Box fermé non attenant',
     question: 'Selon le cours, a pu être assimilé à un domicile :',
     options: [
@@ -8285,7 +8285,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la jurisprudence assimilant un box fermé non attenant au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Non-domicile (cour non close)',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -8298,7 +8298,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste la cour non close parmi les lieux non considérés comme domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Non-domicile (casier de consigne)',
     question: 'Selon le cours, n’est pas un domicile :',
     options: [
@@ -8311,7 +8311,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite le casier de consigne de gare parmi les lieux non considérés comme domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Non-domicile (local réservé à la vente)',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -8324,7 +8324,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste le local réservé à la vente parmi les lieux non considérés comme domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Introduction (ruse)',
     question: 'Selon le cours, entrer grâce à une ruse est un exemple de :',
     options: ['Manœuvres', 'Menaces', 'Voies de fait uniquement'],
@@ -8334,7 +8334,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple (radio police)',
     question:
         'Selon le cours (jurisprudence citée), peut constituer une interception :',
@@ -8348,7 +8348,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite une jurisprudence : capter les échanges radio de patrouilles = interception.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple (employeur et mails)',
     question:
         'Selon le cours (jurisprudence citée), peut constituer un détournement :',
@@ -8363,7 +8363,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite une jurisprudence où l’employeur accède aux mails du salarié non encore appréhendés = détournement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Courrier électronique (définition LCEN)',
     question:
@@ -8379,7 +8379,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours reprend la définition LCEN : message stocké sur serveur/terminal jusqu’à récupération par le destinataire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Installation (logiciel/matériel)',
     question: 'Selon le cours, “procéder à l’installation d’appareils” vise :',
@@ -8394,7 +8394,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’installation vise tout dispositif ou logiciel permettant ces atteintes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intention de nuire',
     question:
         'Selon le cours, pour 226-15 (voie électronique), l’intention de nuire :',
@@ -8408,7 +8408,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’intention de nuire n’est pas exigée (mobile indifférent).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Erreur/méprise',
     question:
         'Selon le cours, violer une correspondance électronique par méprise :',
@@ -8423,7 +8423,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Blogs/profils sans image',
     question:
         'Selon le cours (jurisprudence citée), créer un blog/profil au nom d’un tiers sans recourir à parole/image/montage :',
@@ -8437,7 +8437,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite une jurisprudence : sans montage utilisant parole ou image, 226-8 ne s’applique pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (ajout/retrait)',
     question:
         'Selon le cours (jurisprudence citée), le montage réprimé est celui qui déforme délibérément par :',
@@ -8451,7 +8451,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite une jurisprudence : montage déformant par ajout/retrait d’éléments étrangers.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Voix',
     question: 'Selon le cours, un montage peut porter sur :',
     options: [
@@ -8464,7 +8464,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le montage peut porter sur la voix (imitation/déformation).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement (publication)',
     question:
         'Selon le cours, le consentement exigé par 226-8 porte principalement sur :',
@@ -8478,7 +8478,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique : consentement sur la publication/révélation, pas seulement sur la création.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu algorithmique assimilé',
     question: 'Selon le cours, est assimilé à 226-8 le fait de diffuser :',
     options: [
@@ -8493,7 +8493,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Procédé quelconque',
     question:
         'Selon le cours, les atteintes à la vie privée peuvent être commises :',
@@ -8507,7 +8507,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que toutes les méthodes sont visées, même sans appareil.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Captation (paroles)',
     question: 'Selon le cours, la captation vise notamment :',
     options: [
@@ -8521,7 +8521,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours évoque l’audition au moyen de techniques (captation) notamment sur conversations téléphoniques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Transmission (paroles)',
     question: 'Selon le cours, la transmission des paroles vise :',
     options: [
@@ -8535,7 +8535,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit la transmission comme mise à disposition des paroles captées à des destinataires avertis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Images (lieu privé)',
     question:
         'Selon le cours, l’incrimination de l’image (226-1) exige que la personne soit :',
@@ -8549,7 +8549,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la fixation/enregistrement/transmission de l’image est réprimée si la personne se trouve dans un lieu privé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Image d’un lieu vs image d’une personne',
     question: 'Selon le cours, est exclue de 226-1 (image) :',
@@ -8564,7 +8564,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la photo du lieu ou des biens est exclue : l’infraction vise l’image de la personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Lieu privé (exemples jurisprudentiels)',
     question: 'Selon le cours, ont pu être considérés comme lieux privés :',
@@ -8579,7 +8579,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Notion',
     question: 'Selon le cours, la pornodivulgation consiste à :',
     options: [
@@ -8593,7 +8593,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit la pornodivulgation : obtention consentie, diffusion non consentie.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — “Sexting”',
     question:
         'Selon le cours, le “sexting” peut relever de la pornodivulgation s’il s’agit :',
@@ -8608,7 +8608,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite le sexting parmi les supports possibles (messages) du contenu pornodivulgué.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Plainte (mention du cours)',
     question:
         'Selon le cours, l’article 226-6 impose le dépôt d’une plainte notamment car :',
@@ -8624,7 +8624,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire (mission temporaire)',
     question:
         'Selon le cours, peut être dépositaire d’un secret en raison d’une mission temporaire :',
@@ -8638,7 +8638,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite les jurés, experts, membres assesseurs comme exemples de mission temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Forme de la révélation',
     question: 'Selon le cours, la forme de la révélation :',
     options: [
@@ -8651,7 +8651,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la révélation peut se faire par la parole ou un document ; la forme importe peu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mobile',
     question: 'Selon le cours, pour 226-13, le mobile (raison de révéler) :',
     options: ['Importe peu', 'Doit être un profit', 'Doit être une vengeance'],
@@ -8661,7 +8661,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Correspondance (définition)',
     question: 'Selon le cours, une “correspondance” est :',
     options: [
@@ -8674,7 +8674,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la correspondance est un message quel que soit le support, dès lors qu’il a vocation à circuler.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Nature (privée/pro)',
     question: 'Selon le cours, une correspondance peut être :',
     options: [
@@ -8687,7 +8687,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la nature de la correspondance (privée ou pro) importe peu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Message à destination d’un tiers',
     question: 'Selon le cours, pour 226-15, la correspondance doit être :',
     options: [
@@ -8701,7 +8701,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’auteur s’en prend à un message adressé à autrui.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Mode d’acheminement',
     question: 'Selon le cours, le mode d’acheminement de la correspondance :',
     options: [
@@ -8713,7 +8713,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours précise que le mode d’acheminement importe peu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Arrivée ou non',
     question: 'Selon le cours, l’atteinte peut se produire :',
     options: [
@@ -8727,7 +8727,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : “arrivées ou non à destination” (peut être avant/pendant/après acheminement).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Erreur',
     question:
         'Selon le cours, ouvrir/détourner une correspondance par erreur :',
@@ -8745,7 +8745,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (12/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Caractère spontané',
     question:
         'Selon le cours, la jurisprudence exige que la dénonciation ait un caractère :',
@@ -8759,7 +8759,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la dénonciation calomnieuse suppose une initiative personnelle : caractère spontané.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponse à interpellation',
     question:
         'Selon le cours, révéler des faits (même faux) en réponse à une interpellation d’un supérieur/autorité :',
@@ -8774,7 +8774,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la dénonciation perd son caractère spontané lorsqu’elle est provoquée (réponse à une demande).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Rapport demandé par supérieur',
     question:
         'Selon le cours, un rapport/compte rendu établi sur demande d’un supérieur :',
@@ -8788,7 +8788,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite les rapports établis sur demande d’un supérieur comme exemple de dénonciation provoquée (non spontanée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponses au magistrat instructeur',
     question:
         'Selon le cours (jurisprudence citée), des dénonciations contenues dans des réponses aux questions d’un magistrat instructeur :',
@@ -8802,7 +8802,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la jurisprudence : réponses aux questions d’un magistrat instructeur → dénonciation provoquée, donc non spontanée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Défense du prévenu',
     question:
         'Selon le cours (jurisprudence citée), la dénonciation faite par un prévenu :',
@@ -8817,7 +8817,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la jurisprudence : dénonciation liée étroitement à la défense du prévenu → perd spontanéité au sens 226-10.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation préjudiciable',
     question:
         'Selon le cours, la dénonciation doit être “préjudiciable” car le fait dénoncé doit être :',
@@ -8831,7 +8831,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours lie l’exigence de préjudice au fait que la dénonciation doit être de nature à entraîner des sanctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Sanction effective',
     question: 'Selon le cours, pour 226-10, il faut une sanction effective :',
     options: [
@@ -8844,7 +8844,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la dénonciation doit être “de nature à” entraîner des sanctions, même sans sanction effective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Prescription/amnistie/décès',
     question:
         'Selon le cours, l’infraction peut être constituée même si l’éventualité de sanction est écartée par :',
@@ -8858,7 +8858,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que ces causes n’empêchent pas la constitution de l’infraction : le fait reste “de nature à” entraîner des sanctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fausseté automatique (loi 2010)',
     question:
         'Selon le cours, depuis la modification (loi 2010), la fausseté résulte nécessairement d’une décision définitive de :',
@@ -8873,7 +8873,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que seules ces décisions définitives, constatant expressément absence de fait/imputabilité, établissent automatiquement la fausseté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faute de charges suffisantes',
     question:
         'Selon le cours, si la décision définitive est rendue “faute de charges suffisantes”, alors :',
@@ -8888,7 +8888,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Formes de l’infraction',
     question: 'Selon le cours, la violation de domicile vise :',
     options: [
@@ -8901,7 +8901,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’introduction et le maintien à l’issue de l’entrée illégitime constituent l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Introduction (moyens)',
     question:
         'Selon le cours (226-4), l’introduction doit être réalisée à l’aide de :',
@@ -8915,7 +8915,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours énumère les 4 moyens : manœuvres, menaces, voies de fait, contrainte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Contrainte (définition)',
     question: 'Selon le cours, la contrainte correspond à :',
     options: [
@@ -8928,7 +8928,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours définit la contrainte comme toute situation où le consentement n’est pas libre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Infraction continue',
     question: 'Selon le cours, la violation de domicile est une infraction :',
     options: [
@@ -8941,7 +8941,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le délit est continu : la flagrance peut durer tant que le maintien se poursuit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Enquête de flagrance',
     question: 'Selon le cours, une enquête de flagrance est possible :',
     options: [
@@ -8954,7 +8954,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que la flagrance est possible tant que se poursuit l’occupation (délit continu).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien (tiers arrivé après)',
     question:
         'Selon le cours, peuvent être poursuivies des personnes venues ensuite demeurer dans le lieu si :',
@@ -8969,7 +8969,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que le maintien peut viser ceux qui profitent de l’entrée illicite commise par un tiers, s’ils agissent en connaissance de cause.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Hors les cas où la loi le permet',
     question:
         'Selon le cours, l’introduction n’est infraction que “hors les cas où la loi le permet”, par exemple :',
@@ -8984,7 +8984,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite des cas d’introduction légitime : appel au secours, incendie/inondation, assistance à personne en péril.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Réclamation de l’intérieur',
     question:
         'Selon le cours, une réclamation faite de l’intérieur (cris/hurlements) :',
@@ -8998,7 +8998,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que l’introduction est justifiée même si l’appel au secours s’avère fantaisiste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Assistance à personne en péril (indices)',
     question:
@@ -9013,7 +9013,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours évoque des indices (appel sans réponse, odeur suspecte, absence anormale) justifiant l’entrée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément moral',
     question: 'Selon le cours, l’élément moral implique :',
     options: [
@@ -9028,7 +9028,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement (définition)',
     question:
         'La violation des correspondances émises par voie électronique est définie par :',
@@ -9042,7 +9042,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que l’article 226-15 al.2 définit l’infraction pour les correspondances électroniques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement (répression)',
     question:
         'La répression de la violation des correspondances (voie électronique) est prévue par :',
@@ -9056,7 +9056,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : al.2 définit l’infraction, al.1 prévoit la répression.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Actes matériels (liste)',
     question: 'Selon le cours (226-15 al.2), les actes matériels sont :',
     options: [
@@ -9070,7 +9070,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours liste : intercepter/détourner/utiliser/divulguer + installation d’appareils.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Utiliser (exemple)',
     question:
         'Selon le cours, “utiliser” une correspondance électronique peut viser :',
@@ -9085,7 +9085,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne ces exemples d’“utiliser” : effacer ou transférer un message sans qualité pour en connaître.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Divulguer (définition)',
     question: 'Selon le cours, “divulguer” suppose :',
     options: [
@@ -9099,7 +9099,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que divulguer = révéler à un tiers le contenu d’une correspondance qui ne lui est pas destinée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mauvaise foi (définition)',
     question: 'Selon le cours, la “mauvaise foi” est définie comme :',
     options: [
@@ -9112,7 +9112,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite une définition jurisprudentielle : la mauvaise foi = connaissance que ce n’était pas destiné à lui.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Circonstance aggravante',
     question:
         'Selon le cours, 226-15 al.3 aggrave l’infraction lorsque les faits sont commis par :',
@@ -9127,7 +9127,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation “en ligne”',
     question:
         'Selon le cours, 226-8 al.2 prévoit une circonstance aggravante lorsque les faits sont réalisés :',
@@ -9141,7 +9141,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique l’aggravation à 226-8 al.2 lorsque le montage/deepfake est diffusé via un service de communication au public en ligne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines (simple)',
     question:
         'Selon le cours, la peine principale (simple) de 226-8 al.1 est :',
@@ -9155,7 +9155,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau de répression du cours indique : 226-8 al.1 = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines (aggravée)',
     question:
         'Selon le cours, la peine principale (aggravée) de 226-8 al.2 est :',
@@ -9169,7 +9169,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-8 al.2 (aggravée) = 2 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question: 'Selon le cours, la tentative de 226-8 est :',
     options: [
@@ -9181,7 +9181,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours mentionne que la tentative est prévue par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Personnes morales',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales en matière de 226-8 est prévue par :',
@@ -9196,7 +9196,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (nouveau type)',
     question: 'Selon le cours, l’atteinte à la vie privée inclut désormais :',
     options: [
@@ -9210,7 +9210,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la localisation en temps réel ou différé comme modalité d’atteinte (sans consentement).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Localisation (pas de consentement présumé)',
     question:
@@ -9225,7 +9225,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la présomption de consentement ne vaut pas pour la localisation (installation facilement clandestine).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (moyens techniques)',
     question:
         'Selon le cours, la captation de localisation peut se faire via :',
@@ -9239,7 +9239,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la balise et le logiciel espion comme exemples de captation de localisation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (niveau de précision)',
     question:
         'Selon le cours, le niveau de précision de la localisation (GPS ou zone relais) :',
@@ -9254,7 +9254,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Propagande “mode d’emploi squat”',
     question: 'Selon le cours, l’article 226-4-2-1 incrimine :',
     options: [
@@ -9268,7 +9268,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours décrit ce délit visant notamment les “modes d’emploi du squat” diffusés sur réseaux sociaux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Propagande (peine)',
     question:
         'Selon le cours, la propagande/publicité visée par 226-4-2-1 est sanctionnée d’une amende de :',
@@ -9277,7 +9277,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique une amende de 3 750 euros pour 226-4-2-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peine (226-4)',
     question: 'Selon le cours, la violation de domicile (226-4) est punie de :',
     options: [
@@ -9289,7 +9289,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : 226-4 = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question:
         'Selon le cours, la tentative de violation de domicile (226-4) est :',
@@ -9302,7 +9302,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours précise : tentative prévue par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Complicité',
     question: 'Selon le cours, la complicité de violation de domicile :',
     options: [
@@ -9317,7 +9317,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
   // =========================================================
   // PACK 50 QUESTIONS (13/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément légal',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -9330,7 +9330,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise expressément : 226-10 définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Dénonciation calomnieuse — Plainte avec constitution de partie civile',
     question: 'Selon le cours, une dénonciation écrite peut prendre la forme :',
@@ -9344,7 +9344,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite la plainte (avec ou sans constitution de partie civile) parmi les formes écrites possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation orale',
     question: 'Selon le cours, la dénonciation orale peut être faite :',
     options: [
@@ -9357,7 +9357,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la dénonciation orale est possible, mais doit être prouvée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Agent sur instruction hiérarchique',
     question:
         'Selon le cours, l’auteur agissant sur instructions hiérarchiques ne peut être poursuivi que :',
@@ -9372,7 +9372,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours distingue participation personnelle vs rôle purement matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataires possibles',
     question: 'Selon le cours (226-10), un destinataire possible est :',
     options: [
@@ -9385,7 +9385,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours vise les autorités ayant pouvoir de donner suite ou de saisir l’autorité compétente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Officiers de police administrative',
     question:
         'Selon le cours, peuvent être destinataires en tant qu’officiers de police administrative :',
@@ -9399,7 +9399,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours donne ces exemples d’officiers de police administrative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Dénonciation calomnieuse — Officiers de police judiciaire (exemples)',
     question:
@@ -9414,7 +9414,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite notamment maires/adjoints, policiers, gendarmes comme destinataires possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personnes pouvant saisir',
     question:
         'Selon le cours, peut être destinataire une personne n’ayant pas le pouvoir de sanction mais pouvant saisir l’autorité compétente, par exemple :',
@@ -9428,7 +9428,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours cite médecin/assistante sociale comme personnes pouvant saisir l’autorité compétente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'Selon le cours, la tentative de dénonciation calomnieuse est :',
     options: [
@@ -9440,7 +9440,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : TENTATIVE : NON pour 226-10.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peines (personne physique)',
     question:
         'Selon le cours, la dénonciation calomnieuse (226-10) est punie (personne physique) de :',
@@ -9454,7 +9454,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément légal',
     question:
         'La diffusion sans accord d’un enregistrement/document à caractère sexuel obtenu avec consentement est prévue par :',
@@ -9468,7 +9468,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-2-1 al.2 définit et réprime la pornodivulgation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Obtention consentie',
     question: 'Selon le cours, la pornodivulgation se distingue de 226-1 car :',
     options: [
@@ -9482,7 +9482,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que contrairement à 226-1, la captation initiale est consentie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Caractère sexuel',
     question: 'Selon le cours, la notion de “caractère sexuel” a été jugée :',
     options: [
@@ -9496,7 +9496,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours mentionne la décision du Conseil constitutionnel : notion claire/précise, appréciation par les juridictions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Diffusion sans accord',
     question:
         'Selon le cours, la diffusion sans accord signifie que le contenu est porté à la connaissance :',
@@ -9510,7 +9510,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : diffusion = connaissance du public ou d’un tiers, sans accord.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Opposition vs absence de consultation',
     question: 'Selon le cours, l’absence d’accord peut résulter :',
     options: [
@@ -9524,7 +9524,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours explique : diffusion sans accord si opposition ou absence de consultation permettant opposition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question: 'Selon le cours, la tentative du délit prévu à 226-2-1 est :',
     options: [
@@ -9536,7 +9536,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : tentative prévue par 226-5 pour 226-2-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peines',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) est punie de :',
@@ -9550,7 +9550,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-2-1 al.2 = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Personnes morales',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales pour 226-2-1 est prévue par :',
@@ -9565,7 +9565,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Fondement (226-1)',
     question:
         'Les atteintes à l’intimité de la vie privée (paroles/image/localisation) sont prévues par :',
@@ -9579,7 +9579,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que 226-1 définit et réprime les atteintes à l’intimité de la vie privée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Infraction de conséquence (226-2)',
     question:
         'La conservation, l’utilisation ou la divulgation d’un document issu d’une atteinte à la vie privée est prévue par :',
@@ -9593,7 +9593,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que 226-2 réprime la conservation/diffusion/utilisation des documents/enregistrements issus de 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (inclusion 226-1)',
     question: 'Selon le cours, 226-1 vise aussi :',
     options: [
@@ -9607,7 +9607,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours inclut explicitement la localisation parmi les atteintes à la vie privée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Consentement (localisation)',
     question: 'Selon le cours, pour la localisation, la victime doit :',
     options: [
@@ -9620,7 +9620,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise que la présomption de consentement ne s’applique pas à la localisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement GAV (jurisprudence)',
     question:
         'Selon le cours (jurisprudence citée), enregistrer la parole ou l’image d’une personne en garde à vue :',
@@ -9635,7 +9635,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément légal',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -9649,7 +9649,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours précise : 226-4 définit et réprime la violation de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Logements vacants non meublés',
     question:
         'Selon le cours (nota), les logements vacants non meublés ne sont pas des domiciles au sens de 226-4 et relèvent de :',
@@ -9663,7 +9663,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que les logements vacants non meublés (ou proposés à la location) relèvent de 315-1 et 315-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et meubles',
     question:
         'Selon le cours, la présence de meubles peut permettre d’apprécier l’existence d’un domicile si elle signale :',
@@ -9678,7 +9678,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que des meubles “signant” l’occupation effective (table/lit/électroménager) sont des indices, contrairement à vélo/carton.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule automobile',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -9693,7 +9693,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances électroniques — Peine (simple)',
     question: 'Selon le cours, la peine (simple) pour 226-15 al.2 est :',
     options: [
@@ -9706,7 +9706,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le tableau du cours indique : 226-15 al.2 (simple) = 1 an + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances électroniques — Peine (aggravée)',
     question: 'Selon le cours, la peine (aggravée) pour 226-15 al.3 est :',
     options: [
@@ -9718,7 +9718,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     explanation: 'Le cours indique : 226-15 al.3 = 2 ans + 60 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances électroniques — Tentative',
     question:
         'Selon le cours, la tentative de 226-15 (voie électronique) est :',
@@ -9732,7 +9732,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Diffusion et repartage',
     question:
         'Selon le cours, “porter à la connaissance du public ou d’un tiers” englobe :',
@@ -9746,7 +9746,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
         'Le cours indique que le dispositif permet aussi de sanctionner les personnes repartageant le contenu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Presse (hiérarchie 1881)',
     question:
         'Selon le cours, en cas de voie de presse, la hiérarchie de responsabilité (loi 1881, art.42) commence par :',
@@ -9757,7 +9757,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité compétente',
     question: 'Selon le cours, le destinataire peut être une autorité :',
     options: [
@@ -9772,7 +9772,7 @@ final List<QuizQuestion> questionAtteintePersonnalite = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Violence au sein du couple',
     question:
         'Selon le cours (226-14), un médecin peut signaler au procureur des violences au sein du couple lorsque :',
@@ -10144,7 +10144,7 @@ class _QuizAtteintePersonnaliteState extends State<QuizAtteintePersonnalite>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -10347,7 +10347,7 @@ class _QuizAtteintePersonnaliteState extends State<QuizAtteintePersonnalite>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -10530,7 +10530,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -11063,10 +11062,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -11437,7 +11437,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -11478,9 +11478,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

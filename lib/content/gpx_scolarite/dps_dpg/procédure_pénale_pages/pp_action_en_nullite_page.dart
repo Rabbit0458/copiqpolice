@@ -14,7 +14,7 @@ class PPActionEnNullitePage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final Color cardLight = isDark
         ? const Color(0xFF424242)
@@ -130,8 +130,8 @@ class PPActionEnNullitePage extends StatelessWidget {
               const _SubTitle('2.1.1.1 – Les personnes habilitées à agir'),
 
               const _SubTitle('2.1.1.1.1 – Le juge d’instruction'),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Lorsqu’une information judiciaire est ouverte, s’il apparaît au juge d’instruction qu’un acte '
                       'ou une pièce de la procédure est frappé de nullité, il saisit la chambre de l’instruction aux fins d’annulation, '
@@ -144,7 +144,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' vise les « actes ou pièces de la procédure », notamment lorsque l’acte se confond avec la pièce (par exemple une décision prescrivant une interception et le procès-verbal la transcrivant).',
                 ),
@@ -152,8 +152,8 @@ class PPActionEnNullitePage extends StatelessWidget {
               const SizedBox(height: 10),
 
               const _SubTitle('2.1.1.1.2 – Le procureur de la République'),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'S’il estime qu’une nullité a été commise, le procureur de la République peut requérir du juge d’instruction '
                       'la communication de la procédure en vue de sa transmission à la chambre de l’instruction. '
@@ -170,8 +170,8 @@ class PPActionEnNullitePage extends StatelessWidget {
               const SizedBox(height: 10),
 
               const _SubTitle('2.1.1.1.3 – Les parties'),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Les parties peuvent saisir la chambre de l’instruction par une requête motivée. À peine d’irrecevabilité, '
                       'une copie de cette requête doit être adressée au juge d’instruction, qui transmet le dossier au président de la chambre de l’instruction. '
@@ -208,8 +208,8 @@ class PPActionEnNullitePage extends StatelessWidget {
               const _SubTitle(
                 '2.1.1.1.4 – Le témoin assisté et la partie civile',
               ),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Le témoin assisté peut également présenter une requête en annulation dans les mêmes formes que les parties, '
                       'conformément à l’',
@@ -221,7 +221,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       '. Sont toutefois exclus de l’action en nullité les actes susceptibles d’appel (par exemple certaines décisions en matière de détention provisoire ou de contrôle judiciaire), '
                       'comme le précise l’',
@@ -233,11 +233,11 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Les délais pour agir sont encadrés : la personne mise en examen, le témoin assisté et la partie civile disposent notamment de délais de six mois pour certains actes antérieurs, '
                       'en application de l’',
@@ -249,7 +249,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
 
               const SizedBox(height: 14),
@@ -280,8 +280,8 @@ class PPActionEnNullitePage extends StatelessWidget {
                 text:
                     'Si la requête est recevable, le président réunit la chambre de l’instruction et la procédure est transmise au procureur général pour mise en état.',
               ),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Le délai de mise en état est de quarante-huit heures en matière de détention provisoire et de dix jours en toute autre matière, '
                       'conformément à l’',
@@ -306,8 +306,8 @@ class PPActionEnNullitePage extends StatelessWidget {
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'La chambre de l’instruction doit statuer dans les deux mois à compter de la transmission du dossier au procureur général (',
                 ),
@@ -318,7 +318,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: ').'),
+                TextSpan(text: ').'),
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
@@ -342,8 +342,8 @@ class PPActionEnNullitePage extends StatelessWidget {
 
               const _SubTitle('Purge des nullités selon la nature des faits'),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'En matière criminelle, l’ordonnance de mise en accusation devant la cour d’assises, lorsqu’elle devient définitive, '
                       'couvre les vices de la procédure, sauf notamment lorsque : ',
@@ -355,7 +355,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: ' le prévoit.'),
+                TextSpan(text: ' le prévoit.'),
               ]),
               const _IntroBullet(
                 text:
@@ -368,8 +368,8 @@ class PPActionEnNullitePage extends StatelessWidget {
               ),
 
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'En matière délictuelle, les parties ne sont plus recevables à présenter une requête en nullité à l’expiration d’un délai d’un mois si la personne mise en examen est détenue, '
                       'ou de trois mois dans les autres cas, à compter de l’avis de fin d’information (',
@@ -381,7 +381,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(text: ').'),
+                TextSpan(text: ').'),
               ]),
               const SizedBox(height: 6),
               _Paragraph.rich([
@@ -413,11 +413,11 @@ class PPActionEnNullitePage extends StatelessWidget {
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _SubTitle('2.1.1.2.1 – Nullités d’ordre privé'),
+            children: const [
+              _SubTitle('2.1.1.2.1 – Nullités d’ordre privé'),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Les nullités dites « d’ordre privé » sont régies notamment par l’',
                 ),
@@ -428,40 +428,40 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : en cas de violation des formes prescrites à peine de nullité ou d’inobservation d’une formalité substantielle, '
                       'toute juridiction, y compris la Cour de cassation, ne peut prononcer la nullité que si l’irrégularité a eu pour effet de porter atteinte '
                       'aux intérêts de la partie qu’elle concerne.',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Sont visés à la fois les actes accomplis par le juge d’instruction et ceux réalisés en enquête par la police judiciaire, '
                 'dès lors qu’ils s’intègrent à la procédure d’instruction. L’Article 802 du Code de Procédure Pénale couvre les nullités textuelles '
                 'comme les nullités substantielles, mais ne s’applique pas aux nullités d’ordre public.',
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle('2.1.1.2.2 – Nullités d’ordre public'),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle('2.1.1.2.2 – Nullités d’ordre public'),
+              _Paragraph(
                 'Les nullités d’ordre public ne reposent pas sur un critère légal précis. Elles visent la protection de règles et de principes fondamentaux '
                 'qui s’imposent à tous et dont la violation est jugée inacceptable, indépendamment des intérêts privés des parties.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'La jurisprudence permet d’identifier certaines catégories de nullités d’ordre public, par exemple :',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Les règles relatives à l’organisation, la composition et les compétences des juridictions.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'L’interdiction de confier une mission technique assimilable à une expertise à un officier de police judiciaire par voie de commission rogatoire.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Il s’agit globalement de l’ensemble des règles qui garantissent le bon fonctionnement du système répressif et la protection des intérêts généraux de la société.',
               ),
             ],
@@ -500,16 +500,16 @@ class PPActionEnNullitePage extends StatelessWidget {
                     'Le tribunal correctionnel peut constater toutes les nullités lorsqu’il est saisi par citation directe, comparution immédiate ou comparution différée.',
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'L’Article 385 du Code de Procédure Pénale pose également la règle selon laquelle « dans tous les cas, les exceptions de nullité doivent être présentées '
                       'avant toute défense au fond ». En conséquence, la nullité ne peut pas être invoquée pour la première fois devant la cour d’appel ou la Cour de cassation.',
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'En matière contraventionnelle, les mêmes principes s’appliquent : ',
                 ),
@@ -520,7 +520,7 @@ class PPActionEnNullitePage extends StatelessWidget {
                     color: Colors.redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' attribue au tribunal de police la compétence pour constater les nullités des procédures dont il est saisi.',
                 ),
@@ -579,10 +579,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -647,7 +647,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -690,7 +690,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -752,7 +752,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -784,7 +784,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -797,7 +797,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

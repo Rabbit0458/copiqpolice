@@ -30,7 +30,7 @@ class DeclarationDroitsHommePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF5E35B1)
         : const Color(0xFF3949AB);
@@ -115,7 +115,7 @@ class DeclarationDroitsHommePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La D.D.H.C. est rédigée par les représentants du peuple français, réunis en Assemblée constituante. '
                 'Elle s’inspire à la fois des Lumières (Montesquieu, Rousseau, Voltaire) et des déclarations américaines d’indépendance.',
               ),
@@ -170,43 +170,43 @@ class DeclarationDroitsHommePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La D.D.H.C. pose d’emblée quelques idées-forces qui irriguent ensuite tout le droit des libertés publiques.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Article 1er : « Les hommes naissent et demeurent libres et égaux en droits. » → Principe d’égalité et de liberté, interdiction des privilèges de naissance.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Article 2 : énumère les droits naturels et imprescriptibles de l’homme : la liberté, la propriété, la sûreté et la résistance à l’oppression.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Article 3 : principe de souveraineté nationale : « Le principe de toute Souveraineté réside essentiellement dans la Nation. »',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Article 6 : la loi est « l’expression de la volonté générale » ; elle doit être la même pour tous, et tous les citoyens doivent pouvoir concourir à son élaboration, directement ou par leurs représentants.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Article 16 : « Toute Société dans laquelle la garantie des Droits n’est pas assurée, ni la séparation des Pouvoirs déterminée, n’a point de Constitution. » → principe de séparation des pouvoirs et nécessité de garanties effectives.',
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _ExempleBox(
+              SizedBox(height: 10),
+              _ExempleBox(
                 title: 'Illustrations en pratique',
                 bodySpans: [
                   TextSpan(
@@ -230,44 +230,44 @@ class DeclarationDroitsHommePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La D.D.H.C. ne distingue pas comme nous entre « libertés individuelles », « libertés collectives » ou « droits sociaux ». '
                 'Elle énumère une série de droits qui seront ensuite précisés par le législateur et la jurisprudence.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Liberté (art. 4) : la liberté consiste à « pouvoir faire tout ce qui ne nuit pas à autrui ». Elle est limitée par la loi, qui ne peut restreindre la liberté que lorsque c’est nécessaire pour garantir les droits d’autrui.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Sûreté (art. 7 à 9) : nul ne peut être arrêté ni détenu arbitrairement ; la loi fixe les procédures ; les agents qui ordonnent ou exécutent des ordres arbitraires doivent être punis.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Propriété (art. 17) : « La propriété étant un droit inviolable et sacré », nul ne peut en être privé si ce n’est pour cause d’utilité publique et sous condition d’une juste et préalable indemnité.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Liberté d’opinion, notamment religieuse (art. 10) : « Nul ne doit être inquiété pour ses opinions, même religieuses », tant que leur manifestation ne trouble pas l’ordre public établi par la loi.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Liberté d’expression et de communication (art. 11) : la libre communication des pensées et des opinions est « un des droits les plus précieux de l’homme ». Chacun peut donc parler, écrire, imprimer librement, sous réserve de répondre des abus de cette liberté dans les cas prévus par la loi.',
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: 'Articles incontournables à connaître',
                 bodySpans: [
                   TextSpan(
@@ -291,37 +291,37 @@ class DeclarationDroitsHommePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Plusieurs articles de la D.D.H.C. encadrent directement le droit pénal et la procédure pénale. Ils sont essentiels pour l’activité policière : contrôles d’identité, gardes à vue, enquêtes, perquisitions…',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Principe de légalité des délits et des peines (art. 8) : « Nul ne peut être puni qu’en vertu d’une loi établie et promulguée antérieurement au délit. » → interdiction des incriminations et peines rétroactives.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Principe de nécessité et de proportionnalité des peines (art. 8) : la loi ne doit établir que des peines « strictement et évidemment nécessaires ». ',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Principe de présomption d’innocence (art. 9) : « Tout homme étant présumé innocent jusqu’à ce qu’il ait été déclaré coupable… » ; la rigueur des mesures privatives de liberté ne doit pas excéder ce qui est nécessaire.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Garanties contre les arrestations arbitraires (art. 7) : ceux qui donnent ou exécutent des ordres arbitraires doivent être punis ; le citoyen a le droit de résister s’il est arrêté illégalement.',
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _ExempleBox(
+              SizedBox(height: 10),
+              _ExempleBox(
                 title: 'Exemples de contrôle par le juge',
                 bodySpans: [
                   TextSpan(
@@ -346,25 +346,25 @@ class DeclarationDroitsHommePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Pour un policier, la D.D.H.C. n’est pas un texte théorique : elle constitue la base de la plupart des règles encadrant l’usage de la force, '
                 'les contrôles, les fouilles, les gardes à vue, les perquisitions ou encore la liberté de manifester.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Principe : toute mesure de police porte atteinte à une liberté. Cette atteinte doit toujours pouvoir être justifiée au regard des principes de la D.D.H.C. (nécessité, proportionnalité, égalité, respect de la sûreté…).',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'En cas de contentieux, le juge administratif ou judiciaire peut contrôler la compatibilité d’un acte de police avec la D.D.H.C. et éventuellement l’annuler ou sanctionner ses auteurs.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph(
                 'Connaître les grands articles de la D.D.H.C. permet donc au policier de comprendre le sens des libertés publiques, '
                 'de mieux appliquer les lois et règlements et d’anticiper les risques juridiques liés à ses interventions.',
@@ -406,10 +406,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -452,7 +452,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -486,7 +486,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -539,7 +539,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -564,7 +564,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -599,7 +599,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -612,7 +612,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

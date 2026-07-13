@@ -483,7 +483,6 @@ class _PlanCard extends StatefulWidget {
   final VoidCallback onTap;
 
   const _PlanCard({
-    super.key,
     required this.stroke,
     required this.tone,
     required this.title,

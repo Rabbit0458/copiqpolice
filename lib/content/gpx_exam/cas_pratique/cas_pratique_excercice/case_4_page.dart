@@ -630,16 +630,16 @@ class _GpxCasPratiqueCase4PageState extends State<GpxCasPratiqueCase4Page> {
     };
 
     final sheetBg = isDark ? const Color(0xFF0B102A) : Colors.white;
-    final sheetTitle = isDark ? Colors.white.withOpacity(0.92) : Colors.black87;
+    final sheetTitle = isDark ? Colors.white.withValues(alpha: 0.92) : Colors.black87;
     final sheetText = isDark
-        ? Colors.white.withOpacity(0.78)
-        : Colors.black.withOpacity(0.75);
+        ? Colors.white.withValues(alpha: 0.78)
+        : Colors.black.withValues(alpha: 0.75);
 
     final handle = isDark
-        ? Colors.white.withOpacity(0.18)
-        : Colors.black.withOpacity(0.15);
+        ? Colors.white.withValues(alpha: 0.18)
+        : Colors.black.withValues(alpha: 0.15);
 
-    final closeFg = isDark ? Colors.white.withOpacity(0.86) : Colors.black87;
+    final closeFg = isDark ? Colors.white.withValues(alpha: 0.86) : Colors.black87;
 
     const btnBg = Colors.white;
     const btnFg = Color(0xFF000B36);
@@ -668,14 +668,14 @@ class _GpxCasPratiqueCase4PageState extends State<GpxCasPratiqueCase4Page> {
               borderRadius: BorderRadius.circular(20),
               border: Border.all(
                 color: isDark
-                    ? Colors.white.withOpacity(0.10)
-                    : Colors.black.withOpacity(0.06),
+                    ? Colors.white.withValues(alpha: 0.10)
+                    : Colors.black.withValues(alpha: 0.06),
               ),
               boxShadow: [
                 BoxShadow(
                   blurRadius: 22,
                   offset: const Offset(0, 14),
-                  color: Colors.black.withOpacity(isDark ? 0.40 : 0.22),
+                  color: Colors.black.withValues(alpha: isDark ? 0.40 : 0.22),
                 ),
               ],
             ),
@@ -798,14 +798,14 @@ class _GpxCasPratiqueCase4PageState extends State<GpxCasPratiqueCase4Page> {
             ? const Color(0xFF00082D)
             : const Color(0xFF0E2F9E);
 
-        final haloA = Colors.white.withOpacity(isDark ? 0.10 : 0.07);
-        final haloB = Colors.white.withOpacity(isDark ? 0.04 : 0.03);
+        final haloA = Colors.white.withValues(alpha: isDark ? 0.10 : 0.07);
+        final haloB = Colors.white.withValues(alpha: isDark ? 0.04 : 0.03);
 
-        final overlayTop = Colors.black.withOpacity(isDark ? 0.32 : 0.22);
-        final overlayBot = Colors.black.withOpacity(isDark ? 0.42 : 0.32);
+        final overlayTop = Colors.black.withValues(alpha: isDark ? 0.32 : 0.22);
+        final overlayBot = Colors.black.withValues(alpha: isDark ? 0.42 : 0.32);
 
-        final blobA = Colors.white.withOpacity(isDark ? 0.10 : 0.08);
-        final blobB = Colors.white.withOpacity(isDark ? 0.06 : 0.05);
+        final blobA = Colors.white.withValues(alpha: isDark ? 0.10 : 0.08);
+        final blobB = Colors.white.withValues(alpha: isDark ? 0.06 : 0.05);
 
         const ctaFg = Color(0xFF000B36);
 
@@ -888,7 +888,7 @@ class _GpxCasPratiqueCase4PageState extends State<GpxCasPratiqueCase4Page> {
                             Text(
                               "Cas 4",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white.withOpacity(0.92),
+                                color: Colors.white.withValues(alpha: 0.92),
                                 fontWeight: FontWeight.w900,
                               ),
                             ),
@@ -1109,8 +1109,8 @@ class _CorrectionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color headerTitle = Colors.white.withOpacity(0.98);
-    final Color headerSub = Colors.white.withOpacity(0.78);
+    final Color headerTitle = Colors.white.withValues(alpha: 0.98);
+    final Color headerSub = Colors.white.withValues(alpha: 0.78);
 
     return RefreshIndicator(
       onRefresh: onRefresh,
@@ -1185,8 +1185,8 @@ class _QuestionCardState extends State<_QuestionCard> {
     final it = widget.item;
     final isDark = widget.isDark;
 
-    final Color title = Colors.white.withOpacity(0.98);
-    final Color body = Colors.white.withOpacity(0.78);
+    final Color title = Colors.white.withValues(alpha: 0.98);
+    final Color body = Colors.white.withValues(alpha: 0.78);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 14),
@@ -1282,7 +1282,7 @@ class _QuestionCardState extends State<_QuestionCard> {
                       fontWeight: FontWeight.w900,
                       fontSize: 13.6,
                       decoration: TextDecoration.underline,
-                      decorationColor: Colors.white.withOpacity(0.65),
+                      decorationColor: Colors.white.withValues(alpha: 0.65),
                     ),
                   ),
                 ),
@@ -1416,7 +1416,7 @@ class _WhiteCard extends StatelessWidget {
           BoxShadow(
             blurRadius: 18,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(0.18),
+            color: Colors.black.withValues(alpha: 0.18),
           ),
         ],
       ),
@@ -1432,8 +1432,8 @@ class _SurfaceCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color bg = Colors.white.withOpacity(isDark ? 0.10 : 0.10);
-    final Color stroke = Colors.white.withOpacity(0.14);
+    final Color bg = Colors.white.withValues(alpha: isDark ? 0.10 : 0.10);
+    final Color stroke = Colors.white.withValues(alpha: 0.14);
     final double shadowOpacity = isDark ? 0.24 : 0.18;
 
     return Container(
@@ -1446,7 +1446,7 @@ class _SurfaceCard extends StatelessWidget {
           BoxShadow(
             blurRadius: 18,
             offset: const Offset(0, 10),
-            color: Colors.black.withOpacity(shadowOpacity),
+            color: Colors.black.withValues(alpha: shadowOpacity),
           ),
         ],
       ),
@@ -1462,9 +1462,9 @@ class _GreyBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color bg = Colors.white.withOpacity(0.08);
-    final Color border = Colors.white.withOpacity(0.12);
-    final Color fg = Colors.white.withOpacity(0.78);
+    final Color bg = Colors.white.withValues(alpha: 0.08);
+    final Color border = Colors.white.withValues(alpha: 0.12);
+    final Color fg = Colors.white.withValues(alpha: 0.78);
 
     return Container(
       width: double.infinity,
@@ -1544,8 +1544,8 @@ class _LockedNextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final disabledBg = const Color(0xFFD9DDE7);
-    final disabledFg = const Color(0xFF6B7280);
+    const disabledBg = Color(0xFFD9DDE7);
+    const disabledFg = Color(0xFF6B7280);
 
     return SizedBox(
       height: 56,
@@ -1564,7 +1564,7 @@ class _LockedNextButton extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             if (!enabled) ...[
-              Icon(Icons.lock_rounded, size: 18, color: disabledFg),
+              const Icon(Icons.lock_rounded, size: 18, color: disabledFg),
               const SizedBox(width: 10),
             ],
             Text(
@@ -1596,7 +1596,7 @@ class _GhostButton extends StatelessWidget {
       child: OutlinedButton(
         onPressed: onPressed,
         style: OutlinedButton.styleFrom(
-          side: BorderSide(color: Colors.white.withOpacity(0.45)),
+          side: BorderSide(color: Colors.white.withValues(alpha: 0.45)),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
@@ -1622,7 +1622,7 @@ class _SubTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(0.92);
+    final Color fg = Colors.white.withValues(alpha: 0.92);
 
     return Text(
       text,
@@ -1651,7 +1651,7 @@ class _BulletRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(0.78);
+    final Color fg = Colors.white.withValues(alpha: 0.78);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 10),
@@ -1692,9 +1692,9 @@ class _BackPill extends StatelessWidget {
         child: Ink(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.10),
+            color: Colors.white.withValues(alpha: 0.10),
             borderRadius: BorderRadius.circular(999),
-            border: Border.all(color: Colors.white.withOpacity(0.14)),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
@@ -1812,13 +1812,13 @@ class _IntroSlide extends StatelessWidget {
                 Icon(
                   Icons.verified_rounded,
                   size: 18,
-                  color: Colors.white.withOpacity(0.90),
+                  color: Colors.white.withValues(alpha: 0.90),
                 ),
                 const SizedBox(width: 10),
                 Text(
                   "Sécurité • Légalité • Clarté",
                   style: GoogleFonts.montserrat(
-                    color: Colors.white.withOpacity(0.88),
+                    color: Colors.white.withValues(alpha: 0.88),
                     fontWeight: FontWeight.w900,
                     fontSize: 13.2,
                   ),
@@ -1863,7 +1863,7 @@ class _CaseTextSlide extends StatelessWidget {
                 fontSize: 14.3,
                 height: 1.5,
                 fontWeight: FontWeight.w700,
-                color: Colors.white.withOpacity(0.88),
+                color: Colors.white.withValues(alpha: 0.88),
               ),
             ),
             const SizedBox(height: 18),
@@ -1936,12 +1936,12 @@ class _QuestionSlide extends StatelessWidget {
               icon: Icon(
                 Icons.article_outlined,
                 size: 18,
-                color: Colors.white.withOpacity(0.92),
+                color: Colors.white.withValues(alpha: 0.92),
               ),
               label: Text(
                 "Relire le cas",
                 style: GoogleFonts.montserrat(
-                  color: Colors.white.withOpacity(0.92),
+                  color: Colors.white.withValues(alpha: 0.92),
                   fontWeight: FontWeight.w900,
                 ),
               ),
@@ -2030,12 +2030,12 @@ class _CorrectionSlide extends StatelessWidget {
           icon: Icon(
             Icons.article_outlined,
             size: 18,
-            color: Colors.white.withOpacity(0.92),
+            color: Colors.white.withValues(alpha: 0.92),
           ),
           label: Text(
             "Relire le cas",
             style: GoogleFonts.montserrat(
-              color: Colors.white.withOpacity(0.92),
+              color: Colors.white.withValues(alpha: 0.92),
               fontWeight: FontWeight.w900,
             ),
           ),

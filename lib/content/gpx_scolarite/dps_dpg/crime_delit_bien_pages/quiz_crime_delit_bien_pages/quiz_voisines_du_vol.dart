@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Définition",
     question: "La demande de fonds sous contrainte consiste à :",
     options: [
@@ -104,7 +104,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 CP : comportement de mendicité agressive en réunion ou sous menace d’un animal dangereux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Distinction",
     question:
         "La demande de fonds sous contrainte se distingue de l’extorsion par :",
@@ -118,7 +118,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Elle ne repose pas sur violences ou menaces de violences caractérisant l’extorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Élément matériel",
     question: "La remise effective des fonds est-elle nécessaire ?",
     options: ["Oui", "Non", "Seulement si la somme est élevée"],
@@ -127,7 +127,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit est constitué par la seule sollicitation sur la voie publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Peines",
     question: "Peines prévues par l’article 312-12-1 CP :",
     options: [
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Délit simple, sans circonstance aggravante prévue par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Tentative / Complicité",
     question: "Concernant 312-12-1 CP :",
     options: [
@@ -154,7 +154,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Définition",
     question: "L’abus de confiance est :",
     options: [
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "314-1 CP : remise préalable acceptée à charge de restitution, représentation ou usage déterminé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Remise préalable",
     question: "La remise préalable peut résulter :",
     options: [
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La jurisprudence admet des cadres très larges de remise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement (piège)",
     question:
         "Le simple retard de restitution constitue toujours un abus de confiance.",
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le retard n’est délictueux que s’il devient frauduleux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Élément moral",
     question: "L’élément moral de l’abus de confiance repose sur :",
     options: [
@@ -202,7 +202,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Infraction intentionnelle nécessitant la mauvaise foi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Peines",
     question: "Peines de l’abus de confiance simple (314-1 CP) :",
     options: [
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Définition",
     question: "Le chantage consiste à :",
     options: [
@@ -229,7 +229,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 CP : menace de révélation ou d’imputation de faits portant atteinte à l’honneur ou à la considération.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Fait vrai ou faux (piège)",
     question:
         "Le fait menacé doit être nécessairement faux pour caractériser le chantage.",
@@ -238,7 +238,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Peu importe que le fait soit vrai ou faux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Tentative",
     question: "La tentative de chantage est :",
     options: ["Punissable", "Non punissable", "Punissable seulement si écrite"],
@@ -247,7 +247,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Définition",
     question: "La filouterie consiste à :",
     options: [
@@ -260,7 +260,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-5 CP : protection de certains professionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Cas visés",
     question: "L’article 313-5 CP vise notamment :",
     options: [
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Liste limitative prévue par le texte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Tentative",
     question: "La tentative de filouterie est :",
     options: ["Punissable", "Non punissable", "Punissable en récidive"],
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Définition",
     question: "L’escroquerie suppose notamment :",
     options: [
@@ -294,7 +294,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Usage de faux nom, fausse qualité, abus de qualité vraie ou manœuvres frauduleuses.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Mensonge simple (piège)",
     question:
         "Un simple mensonge non appuyé par un acte suffit à caractériser l’escroquerie.",
@@ -303,7 +303,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Les simples mensonges ne suffisent pas sans manœuvres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Peines simples",
     question: "Peines de l’escroquerie simple (313-1 CP) :",
     options: [
@@ -316,7 +316,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Définition",
     question: "L’extorsion est :",
     options: [
@@ -329,7 +329,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : remise forcée mais consciente de la victime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative",
     question: "La tentative d’extorsion est :",
     options: ["Punissable", "Non punissable", "Punissable seulement en bande"],
@@ -337,7 +337,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Article 312-9 CP : tentative expressément prévue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Qualification",
     question:
         "L’extorsion avec violences ayant entraîné plus de 8 jours d’ITT est :",
@@ -350,7 +350,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // DEMANDE DE FONDS SOUS CONTRAINTE — 312-12-1
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Conditions",
     question:
         "Pour caractériser la demande de fonds sous contrainte « en réunion », il faut :",
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise un comportement commis par deux auteurs au moins se livrant à une mendicité agressive.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Lieu",
     question: "La sollicitation doit être effectuée :",
     options: [
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-12-1 CP : sollicitation sur la voie publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Objet",
     question: "La sollicitation peut porter sur :",
     options: [
@@ -389,7 +389,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise fonds/valeurs/bien (objet/denrée à valeur marchande).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Animal dangereux",
     question: "L’expression « animal dangereux » renvoie :",
     options: [
@@ -403,7 +403,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le critère est la dangerosité apparente/supposée et la contrainte exercée via l’animal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Intention",
     question: "L’élément moral suppose :",
     options: [
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Intention : savoir que la remise ne résulterait pas d’un accord librement consenti.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Qualification (piège)",
     question:
@@ -435,7 +435,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ABUS DE CONFIANCE — 314-1 et suivants
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Choses visées",
     question: "Quelles catégories sont visées par 314-1 CP ?",
     options: [
@@ -448,7 +448,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise fonds/valeurs/bien quelconque remis à charge de restituer/représenter/usage déterminé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Remise libre",
     question: "Dans l’abus de confiance, la remise initiale est :",
     options: [
@@ -461,7 +461,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La remise est préalable et acceptée à titre précaire ; le détournement survient ensuite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Titre précaire",
     question: "La remise « à titre précaire » signifie :",
     options: [
@@ -474,7 +474,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il doit rendre/représenter/faire un usage déterminé : prérogatives limitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Preuve de la remise (piège)",
     question:
         "En cas de simple situation de fait (relation amicale), la remise se prouve :",
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise : preuve libre mais ne saurait reposer sur de simples présomptions ou témoignages.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement",
     question: "Le détournement peut notamment consister en :",
     options: [
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le détournement recouvre plusieurs formes : usage contraire, refus, disparition, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Mise en demeure (piège)",
     question:
         "Une mise en demeure de restituer est toujours nécessaire pour caractériser l’abus de confiance.",
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence retient que le délit peut être caractérisé par le seul détournement sans mise en demeure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Préjudice",
     question: "Le préjudice exigé :",
     options: [
@@ -526,7 +526,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il suffit que l’acte soit susceptible de priver la victime de ses droits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation",
     question: "Une circonstance aggravante spécifique est :",
     options: [
@@ -538,7 +538,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "314-1-1 CP : abus de confiance commis en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Tentative",
     question: "La tentative d’abus de confiance :",
     options: [
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La tentative est expressément prévue (cours : tentative toujours punissable).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Immunité familiale",
     question:
         "L’immunité familiale est-elle applicable à l’abus de confiance ?",
@@ -565,7 +565,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // CHANTAGE — 312-10 à 312-12
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Nature de la menace",
     question: "La menace constitutive du chantage est :",
     options: [
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le chantage se distingue de l’extorsion par la nature diffamatoire de la menace.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Forme",
     question: "La menace dans le chantage peut être :",
     options: [
@@ -590,7 +590,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le texte ne distingue pas : menace verbale ou écrite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Menaces implicites",
     question:
         "La menace doit-elle forcément énoncer clairement le fait diffamatoire ?",
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence admet les menaces voilées/sous-entendues si la pression est claire pour la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Objet recherché",
     question: "Le chantage peut viser notamment :",
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 CP liste plusieurs objets possibles, comme l’extorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Mise à exécution",
     question: "Quand la menace est mise à exécution, on applique :",
     options: ["312-11 CP", "312-2 CP", "313-2 CP"],
@@ -627,7 +627,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-11 CP : aggravation lorsque l’auteur a mis la menace à exécution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Peines simples",
     question: "Peines du chantage simple (312-10) :",
     options: [
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-10 CP : 5 ans et 75 000 € (cours).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Aggravation en ligne",
     question: "Le chantage est aggravé notamment lorsqu’il est exercé :",
     options: [
@@ -653,7 +653,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 al.3 CP : aggravation liée au mode de diffusion en ligne et contenus sexuels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Immunité familiale",
     question: "L’immunité familiale s’applique au chantage ?",
     options: ["Oui", "Non", "Uniquement si la victime est un ascendant"],
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // FILOUTERIE — 313-5
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Spécificité",
     question: "La filouterie se distingue du vol car :",
     options: [
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le professionnel fournit volontairement selon ses usages ; pas de soustraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Spécificité vs escroquerie",
     question: "La filouterie se distingue de l’escroquerie car :",
     options: [
@@ -691,7 +691,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Pas de tromperie déterminante : la remise résulte des usages professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Condition d’impécuniosité",
     question: "L’« impossibilité absolue de payer » signifie :",
     options: [
@@ -705,7 +705,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Condition très exigeante (absolue) + connaissance par l’auteur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Restaurant",
     question: "Pour le 1° (boissons/aliments), il faut notamment :",
     options: [
@@ -718,7 +718,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "« Se faire servir » : initiative de commande, consommation non nécessaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Hôtel (10 jours)",
     question: "Pour la filouterie d’hôtel, l’occupation :",
     options: [
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : condition spécifique au 2° (chambres) : occupation ≤ 10 jours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Station-service (piège)",
     question:
         "Prendre du carburant en station libre-service et partir sans payer caractérise :",
@@ -745,7 +745,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La filouterie suppose « se faire servir » par un professionnel ; en libre-service, la qualification peut être le vol.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Taxi",
     question: "La filouterie « taxi » vise :",
     options: [
@@ -758,7 +758,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : 4° taxi/voiture de place (pas les transports en commun).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Peines",
     question: "Peines de la filouterie (313-5 CP) :",
     options: [
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ESCROQUERIE — 313-1 et suivants
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Moyens",
     question: "Quels moyens sont visés par 313-1 CP ?",
     options: [
@@ -787,7 +787,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Les 4 formes de tromperie prévues par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Caractère déterminant",
     question: "Le moyen frauduleux doit être :",
     options: [
@@ -800,7 +800,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le procédé doit provoquer la remise et être antérieur/déterminant.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Fausse qualité",
     question: "La « qualité » peut notamment être :",
     options: [
@@ -814,7 +814,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Notion large : attribut juridique ou particularité donnant crédit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Abus de qualité vraie",
     question: "L’abus de qualité vraie correspond à :",
     options: [
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Qualité réellement détenue, détournée pour tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Manœuvres frauduleuses (composition)",
     question: "Les manœuvres frauduleuses peuvent notamment être :",
     options: [
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Triade classique retenue par la jurisprudence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Remise",
     question: "La remise en escroquerie peut consister en :",
     options: [
@@ -852,7 +852,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-1 CP : 3 types de remise/acte visés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Préjudice",
     question: "Le préjudice est :",
     options: [
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Sans préjudice, un élément manque (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Tentative",
     question: "La tentative d’escroquerie est :",
     options: [
@@ -876,7 +876,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-3 CP : tentative expressément prévue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Immunité familiale",
     question: "L’immunité familiale s’applique à l’escroquerie ?",
     options: ["Oui", "Non", "Seulement si la victime est un conjoint"],
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // EXTORSION — 312-1 à 312-9
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Moyens",
     question: "L’extorsion suppose :",
     options: [
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : moyens coercitifs (physiques ou moraux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Menace",
     question: "Pour l’extorsion, les menaces :",
     options: [
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La remise obtenue par menace suffit, même sans passage à l’acte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Contrainte morale",
     question: "La contrainte morale s’apprécie notamment selon :",
     options: [
@@ -927,7 +927,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Appréciation souveraine : âge, santé, vulnérabilité, crainte inspirée, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Rôle de la victime",
     question: "Dans l’extorsion, la remise est :",
     options: [
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La victime remet l’objet, mais sa volonté est viciée par la violence/menace/contrainte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Objet (piège)",
     question: "L’extorsion peut porter sur :",
     options: [
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP liste plusieurs objets, comme le chantage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Peines simples",
     question: "Peines de l’extorsion simple (312-1) :",
     options: [
@@ -965,7 +965,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : 7 ans + 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Aggravation (ITT ≤ 8 jours)",
     question: "Extorsion avec violences ayant entraîné une ITT ≤ 8 jours :",
     options: ["Délit aggravé (312-2)", "Crime (312-3)", "Contravention"],
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-2 CP : circonstances aggravantes délictuel (ITT ≤ 8 jours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Aggravation (arme)",
     question: "Extorsion commise avec usage ou menace d’une arme :",
     options: ["Crime (312-5)", "Délit simple (312-1)", "Filouterie (313-5)"],
@@ -983,7 +983,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-5 CP : extorsion criminelle si arme (usage/menace) ou port d’arme prohibé/à autorisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Bande organisée",
     question: "L’extorsion commise en bande organisée est :",
     options: ["Un crime (312-6)", "Un délit simple", "Une contravention"],
@@ -991,7 +991,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-6 CP : extorsion en bande organisée (réclusion).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative",
     question: "La tentative d’extorsion :",
     options: [
@@ -1003,7 +1003,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-9 CP : tentative expressément prévue et réprimée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Immunité familiale (conditions)",
     question: "L’immunité familiale en extorsion :",
     options: [
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-9 CP : renvoi à 311-12 avec exceptions (moyens de paiement/documents essentiels, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Exemption / réduction de peine (bande organisée)",
     question:
         "En cas d’extorsion en bande organisée, l’auteur peut bénéficier :",
@@ -1031,7 +1031,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-6-1 CP : exemption si avertit et évite la réalisation ; réduction si permet de faire cesser/éviter mort/IPP ou identifier les autres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Extorsion vs Chantage",
     question:
         "La différence principale entre extorsion et chantage porte sur :",
@@ -1046,7 +1046,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Extorsion : violence/menace de violences/contrainte ; chantage : menace diffamatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Escroquerie vs Filouterie",
     question: "Escroquerie vs filouterie :",
     options: [
@@ -1060,7 +1060,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Différence clé : existence de manœuvres/tromperie déterminante en escroquerie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Vol vs Abus de confiance",
     question: "Le critère distinctif majeur :",
     options: [
@@ -1074,7 +1074,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Abus de confiance : détournement après remise ; vol : soustraction frauduleuse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Demande de fonds sous contrainte vs Extorsion",
     question: "La demande de fonds sous contrainte vise prioritairement :",
     options: [
@@ -1088,7 +1088,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 CP : mendicité agressive en réunion ou via animal dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Chantage vs Menace simple",
     question: "Le chantage exige :",
     options: [
@@ -1106,7 +1106,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // DEMANDE DE FONDS SOUS CONTRAINTE — 312-12-1 (SUITE)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Distinction",
     question:
         "La demande de fonds sous contrainte se distingue de l’extorsion principalement par :",
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 vise la mendicité agressive (en réunion) ou sous menace d’un animal dangereux, sur la voie publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Sollicitation",
     question:
         "Pour que l’infraction soit constituée, la remise des fonds doit être effective :",
@@ -1131,7 +1131,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit repose sur la sollicitation : pas besoin que la remise soit effectivement réalisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Réunion + agressivité",
     question:
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise « en réunion et de manière agressive » : les deux éléments doivent ressortir des faits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Animal",
     question: "La menace d’un animal dangereux suppose :",
     options: [
@@ -1155,7 +1155,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’important est l’usage de l’animal comme moyen de contrainte et sa dangerosité apparente/supposée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Exemple jurisprudentiel (idée)",
     question:
@@ -1166,7 +1166,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Exemple du cours : comportement agressif en réunion visant à contraindre à s’arrêter/remettre de l’argent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Tentative",
     question: "La tentative de demande de fonds sous contrainte est :",
     options: [
@@ -1179,7 +1179,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit est constitué dès la sollicitation : la tentative n’a pas de place.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Peines",
     question: "Peines encourues (312-12-1) :",
     options: [
@@ -1191,7 +1191,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : 312-12-1 CP = 6 mois + 3 750 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Complicité",
     question: "La complicité est possible pour 312-12-1 :",
     options: ["Oui", "Non", "Uniquement si la remise a eu lieu"],
@@ -1204,7 +1204,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ABUS DE CONFIANCE — 314-1 (SUITE / PIÈGES / CAS)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Finalité de la remise",
     question: "La remise doit être faite à charge de :",
     options: [
@@ -1217,7 +1217,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "C’est le cœur de la détention précaire : finalité convenue limitant la libre disposition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement (refus)",
     question:
         "Le refus de restituer caractérise en principe le détournement frauduleux, sauf :",
@@ -1231,7 +1231,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le refus peut être légitimé par rétention/compensation ; sinon il révèle la volonté de se comporter en propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Retard de restitution",
     question: "Un simple retard de restitution est :",
     options: [
@@ -1244,7 +1244,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le retard devient pénal si les circonstances révèlent une intention frauduleuse (ex : non-restitution malgré démarches).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Bien immatériel",
     question:
         "Un bien « quelconque » peut-il être immatériel exploitable (ex : fichier clientèle) ?",
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours vise des éléments exploitables matériellement, même non corporels (ex : fichier clientèle, connexion…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Origine du bien",
     question: "L’origine illicite du bien remis empêche l’abus de confiance :",
     options: ["Vrai", "Faux", "Seulement si le bien est volé"],
@@ -1263,7 +1263,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que l’origine illicite des choses confiées n’exclut pas l’infraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Préjudice (piège)",
     question:
         "Il faut prouver que l’auteur a tiré un profit pour que l’abus de confiance soit constitué :",
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le préjudice suffit : pas besoin d’un profit ni d’une entrée du bien dans le patrimoine de l’auteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Victime (autrui)",
     question: "La victime (« autrui ») peut être :",
     options: [
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise toute personne lésée dès lors que la propriété ne revenait pas à l’auteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Élément moral",
     question: "L’intention frauduleuse suppose :",
     options: [
@@ -1300,7 +1300,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le caractère frauduleux découle de la connaissance des obligations liées à la détention précaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation (314-2)",
     question: "Peut être aggravé l’abus de confiance commis :",
     options: [
@@ -1314,7 +1314,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "314-2 CP (selon cours) prévoit plusieurs aggravations, dont la vulnérabilité de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation (314-3)",
     question: "Une aggravation spécifique vise notamment :",
     options: [
@@ -1327,7 +1327,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "314-3 CP : aggravation liée à certaines qualités/fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Peines simples",
     question: "Peines de l’abus de confiance simple (314-1) :",
     options: [
@@ -1343,7 +1343,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // CHANTAGE — 312-10 (SUITE)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Fait vrai ou faux",
     question: "Pour le chantage, le fait objet de la menace doit être vrai :",
     options: ["Oui", "Non", "Uniquement si c’est écrit"],
@@ -1352,7 +1352,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le chantage peut viser l’imputation de faits imaginaires ou la révélation de faits vrais.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Personne visée",
     question: "La menace diffamatoire peut viser :",
     options: [
@@ -1365,7 +1365,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours rappelle que l’honneur/la considération peuvent concerner aussi une société (personne morale).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Victime indirecte (piège)",
     question:
         "Le chantage peut exister si la menace vise un tiers, mais contraint une autre personne à remettre :",
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit existe dès la menace de révélation d’un fait portant atteinte à l’honneur d’un tiers si elle détermine la remise.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Acte exigé",
     question: "Il peut y avoir chantage si l’auteur menace mais n’exige rien :",
     options: ["Vrai", "Faux", "Seulement si la menace est publique"],
@@ -1384,7 +1384,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il faut un objet recherché (signature, engagement, secret, remise…). Sinon l’élément matériel n’est pas caractérisé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Tentative",
     question: "La tentative de chantage est :",
     options: [
@@ -1397,7 +1397,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12 CP : la tentative est réprimée comme le délit lui-même (commencement d’exécution + échec indépendant).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Aggravation (mise à exécution)",
     question:
         "Quand l’auteur exécute sa menace (révèle/impute effectivement), la qualification aggravée est :",
@@ -1411,7 +1411,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // FILOUTERIE — 313-5 (SUITE / PIÈGES)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Nombre de cas",
     question: "L’article 313-5 vise :",
     options: ["4 cas précis", "6 cas", "Un nombre illimité de situations"],
@@ -1420,7 +1420,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Boissons/aliments ; chambres (≤10 jours) ; carburant servi ; taxi/voiture de place.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Établissement",
     question: "La filouterie « boissons/aliments » suppose :",
     options: [
@@ -1433,7 +1433,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Restaurants, cafés, brasseries… Pas chez un particulier.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Prestations annexes (hôtel)",
     question:
         "Dans la filouterie d’hôtel (313-5, 2°), les prestations annexes (ex : consommations) sont :",
@@ -1447,7 +1447,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise que seules les chambres (occupation) sont visées ; les annexes ne sont pas visées par ce cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Carburant (réservoir)",
     question: "Pour le carburant, il faut que le produit soit versé :",
     options: [
@@ -1460,7 +1460,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours exclut les récipients (jerrycans) : c’est le réservoir du véhicule.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Impécuniosité vs oubli",
     question:
         "Oublier son portefeuille et s’en apercevoir au moment de payer, de bonne foi :",
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La filouterie requiert impécuniosité absolue connue OU détermination à ne pas payer, pas une simple négligence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Détermination à ne pas payer",
     question:
         "La « détermination à ne pas payer » est plus facile à établir lorsque :",
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le comportement de fuite est un indice fort de volonté de ne pas payer.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Tentative",
     question: "La tentative de filouterie (313-5) est :",
     options: [
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que la tentative n’est pas prévue pour 313-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Personnes morales",
     question: "Une personne morale peut être responsable de filouterie :",
     options: ["Oui", "Non", "Seulement pour le taxi"],
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ESCROQUERIE — 313-1 (SUITE / PIÈGES / CAS)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Mensonge simple",
     question:
         "Un simple mensonge non corroboré (sans fait extérieur) suffit à constituer l’escroquerie :",
@@ -1524,7 +1524,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours rappelle que les simples mensonges sont insuffisants s’ils ne sont accompagnés d’aucun acte extérieur (manœuvres).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Antériorité",
     question: "Les manœuvres frauduleuses doivent être :",
     options: [
@@ -1537,7 +1537,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence exige qu’elles déterminent la remise et soient antérieures.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Faux nom",
     question: "L’usage d’un faux nom peut viser :",
     options: [
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le faux nom = patronyme qui n’est pas le sien, qu’il existe ou non.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Fausse qualité (exemple)",
     question:
         "Se présenter faussement comme policier pour obtenir une remise de fonds illustre :",
@@ -1564,7 +1564,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’exemple de la fausse qualité de policier comme moyen de tromperie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Abus de qualité vraie",
     question: "L’abus de qualité vraie suppose :",
     options: [
@@ -1577,7 +1577,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "L’agent détourne la confiance attachée à sa vraie qualité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Remise de service",
     question: "La « fourniture d’un service » (313-1) peut viser :",
     options: [
@@ -1590,7 +1590,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours illustre la notion de service de manière large.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Acte opérant obligation/décharge",
     question: "Un « acte opérant obligation ou décharge » peut être :",
     options: [
@@ -1603,7 +1603,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tout acte créant/constatant/éteignant un droit au détriment de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Préjudice moral (piège)",
     question:
         "Le préjudice moral en escroquerie est toujours retenu automatiquement :",
@@ -1617,7 +1617,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que le préjudice moral est souvent admis (consentement vicié) mais pas systématiquement selon cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Aggravation (313-2)",
     question: "Une circonstance aggravante (313-2) peut être :",
     options: [
@@ -1630,7 +1630,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste la bande organisée parmi les circonstances aggravantes de l’escroquerie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Peines simples",
     question: "Peines de l’escroquerie simple (313-1) :",
     options: [
@@ -1646,7 +1646,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // EXTORSION — 312-1 (SUITE / PIÈGES / AGGRAVATIONS)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Promesses fallacieuses (piège)",
     question:
         "Si la victime remet un bien uniquement à cause de promesses mensongères (sans violence/contrainte), on retient :",
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas d’extorsion si remise obtenue seulement par promesses fallacieuses (sans moyens coercitifs).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Contrainte sur les proches",
     question: "La contrainte morale peut viser :",
     options: [
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La crainte peut affecter la victime ou ses proches (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Objet déterminé (piège)",
     question:
         "Exiger un « dédommagement » sans précision sur montant/nature suffit à caractériser l’objet :",
@@ -1682,7 +1682,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’objet doit être suffisamment déterminé ; une demande trop imprécise peut être insuffisante.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — ITT > 8 jours",
     question:
         "Extorsion avec violences ayant entraîné une ITT > 8 jours relève :",
@@ -1696,7 +1696,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours place l’ITT > 8 jours dans l’extorsion aggravée criminelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Mutilation/infirmité permanente",
     question: "Extorsion avec mutilation ou infirmité permanente :",
     options: ["312-4", "312-2", "313-2"],
@@ -1705,7 +1705,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-4 CP : aggravation criminelle si mutilation/infirmité permanente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Mort / barbarie",
     question:
         "Extorsion précédée/accompagnée/suivie de violences ayant entraîné la mort ou tortures/barbarie :",
@@ -1715,7 +1715,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique l’aggravation maximale (312-7) en cas de mort ou tortures/barbarie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Délit vs crime (repère)",
     question: "L’extorsion simple est :",
     options: ["Un délit", "Un crime", "Une contravention"],
@@ -1723,7 +1723,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : extorsion simple = délit (7 ans).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative (commencement)",
     question:
         "En extorsion, un rendez-vous fixé pour recevoir la remise peut constituer :",
@@ -1737,7 +1737,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite qu’un rendez-vous peut suffire comme début d’exécution si l’infraction échoue indépendamment.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Immunité familiale (exceptions)",
     question:
         "Même si l’immunité familiale pourrait s’appliquer, elle est écartée notamment si l’extorsion porte sur :",
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // QCM MÉLANGÉS (RÉVISION RAPIDE)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Menacer de publier des rumeurs humiliantes si la victime ne signe pas une renonciation :",
@@ -1766,7 +1766,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Menace diffamatoire + exigence d’un acte (renonciation) = chantage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Obtenir une remise de fonds en se faisant passer pour un notaire et en montrant un faux document :",
@@ -1776,7 +1776,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Fausse qualité + production de document/mise en scène = moyens de tromperie (313-1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Recevoir une voiture en dépôt pour la restituer, puis la vendre :",
@@ -1786,7 +1786,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Remise à titre précaire + détournement par aliénation = 314-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Se faire servir un plein par un pompiste en sachant être absolument incapable de payer :",
@@ -1796,7 +1796,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : se faire servir des carburants par un professionnel avec impécuniosité absolue ou volonté de ne pas payer.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question: "Obtenir de l’argent par coups et menaces physiques :",
     options: ["Extorsion", "Chantage", "Abus de confiance"],
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Violence/menace de violences/contrainte = 312-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Piège (remise non effective)",
     question: "Dans 312-12-1, l’infraction est consommée :",
     options: [
@@ -1824,7 +1824,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
 // PAGE
 // ============================================================================
 class QuizVoisinesDuVol extends StatefulWidget {
-  static const String routeName = '/gpx/crimes_biens/quiz/voisines_du_vol';
+  static const String routeName = '/gpx/dps/crimes_biens/quiz/voisines_du_vol';
   final String uid;
   final String email;
 
@@ -2169,7 +2169,7 @@ class _QuizVoisinesDuVolState extends State<QuizVoisinesDuVol>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2372,7 +2372,7 @@ class _QuizVoisinesDuVolState extends State<QuizVoisinesDuVol>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2555,7 +2555,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3088,10 +3087,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3462,7 +3462,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3503,9 +3503,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

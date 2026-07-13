@@ -447,11 +447,12 @@ class _IntroBullet extends StatelessWidget {
 }
 
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint({required this.text}) : rich = null;
+  const _BulletPoint({required this.text, this.child}) : rich = null;
 
-  const _BulletPoint.rich(this.rich) : text = null;
+  const _BulletPoint.rich(this.rich) : text = null, child = null;
 
   final String? text;
+  final Widget? child;
   final List<TextSpan>? rich;
 
   @override
@@ -519,7 +520,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -541,10 +541,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

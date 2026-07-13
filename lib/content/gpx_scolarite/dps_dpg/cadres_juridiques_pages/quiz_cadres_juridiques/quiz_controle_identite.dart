@@ -100,7 +100,7 @@ class QuizQuestion {
 final List<QuizQuestion> questionsControleIdentite = [
   // ===================== NIVEAU FACILE =====================
   // ==== CADRE GÉNÉRAL & PRINCIPES ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Contrôle d'identité",
     question:
         "Quel est l'objectif principal des contrôles, relevés et vérifications d'identité ?",
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Textes applicables",
     question:
         "Quels articles du code de procédure pénale encadrent les contrôles, relevés et vérifications d'identité ?",
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — CESEDA",
     question:
         "En complément du CPP, quel code fixe les obligations de présentation de documents pour les étrangers lors d'un contrôle d'identité ?",
@@ -147,7 +147,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Champ d'application",
     question:
         "Selon l'article 78-1 du CPP, sur qui peut s'exercer un contrôle d'identité ?",
@@ -162,7 +162,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Distinction",
     question:
         "Quelle est la différence principale entre contrôle d'identité et vérification d'identité ?",
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== PERSONNES HABILITÉES ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Contrôle d'identité",
     question:
         "Quels personnels sont habilités à procéder à un contrôle d'identité selon l'article 78-2 du CPP ?",
@@ -195,7 +195,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Exclusions",
     question:
         "Parmi les personnels suivants, lesquels ne peuvent PAS procéder eux-mêmes à un contrôle d'identité ?",
@@ -206,7 +206,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Formule légale",
     question:
         "Que signifie la formule « sur ordre et sous la responsabilité » de l’OPJ concernant l’action des APJ et APJA ?",
@@ -223,7 +223,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== CONTROLES RELEVANT DE LA POLICE JUDICIAIRE (INITIATIVE POLICIERS) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Article 78-2",
     question:
         "Dans le cadre de la police judiciaire, sur quelle base un policier peut-il décider de procéder à un contrôle d'identité de sa propre initiative ?",
@@ -239,7 +239,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cinq cas de l'article 78-2",
     question:
         "Parmi les propositions suivantes, laquelle fait partie des cinq cas permettant un contrôle d'identité à l'initiative des policiers (police judiciaire) ?",
@@ -254,7 +254,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Personne auteur",
     question:
         "Dans quel cas un contrôle d'identité peut-il être réalisé lorsque la personne est soupçonnée d'être l'auteur d'une infraction ?",
@@ -269,7 +269,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Renseignements utiles",
     question:
         "Dans quel cas un contrôle d'identité peut-il viser une personne qui n'est pas suspecte mais peut aider l'enquête ?",
@@ -285,7 +285,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Contrôle judiciaire",
     question:
         "Quel cas prévu à l'article 78-2 permet de contrôler une personne déjà soumise à une mesure judiciaire ?",
@@ -301,7 +301,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Personne recherchée",
     question:
         "Que prévoit l’article 78-2 pour une personne qui fait l’objet de recherches ordonnées par une autorité judiciaire ?",
@@ -316,7 +316,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Raisons plausibles",
     question:
         "Qu'est-ce qui caractérise les « raisons plausibles » justifiant un contrôle d'identité en police judiciaire ?",
@@ -332,7 +332,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== CONTROLES SUR RÉQUISITIONS DU PROCUREUR ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Forme",
     question:
         "Sous quelle forme le procureur de la République doit-il donner ses réquisitions pour des contrôles d'identité généralisés ?",
@@ -347,7 +347,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Infractions visées",
     question:
         "Lors de contrôles d'identité sur réquisitions, que doivent obligatoirement préciser les réquisitions du procureur de la République ?",
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Durée",
     question:
         "En pratique, quelle durée les opérations de contrôles d'identité sur réquisitions ne doivent-elles pas dépasser ?",
@@ -373,7 +373,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Lieux et temps",
     question:
         "Que doivent préciser les réquisitions du parquet concernant les contrôles d'identité ?",
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Toute personne",
     question:
         "Lors d'un contrôle d'identité sur réquisitions du procureur, qui peut être contrôlé ?",
@@ -405,7 +405,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== CONTROLES PRÉVENTIFS (POLICE ADMINISTRATIVE) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Finalité",
     question:
         "Quel est l’objectif principal des contrôles d'identité préventifs prévus à l’alinéa 8 de l’article 78-2 du CPP ?",
@@ -421,7 +421,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Comportement",
     question:
         "Dans le cadre d'un contrôle préventif (alinéa 8 de l'article 78-2 CPP), le comportement de la personne est-il une condition de régularité du contrôle ?",
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Lieux",
     question:
         "Dans quels types de lieux peuvent être mis en œuvre les contrôles d'identité préventifs ?",
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Motivation",
     question:
         "Que rappelle le Conseil constitutionnel concernant les contrôles généralisés et discrétionnaires ?",
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== CONTROLES EN ZONE FRONTIÈRE ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Zone frontière — Finalité",
     question:
         "À quoi sont principalement destinés les contrôles d'identité en zone frontière prévus par l’article 78-2 alinéas 9 à 17 ?",
@@ -486,7 +486,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Zone frontière — Bande des 20 km",
     question:
         "Dans quelle zone peut-on effectuer des contrôles d'identité fondés sur l’article 78-2 en lien avec la frontière terrestre Schengen ?",
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Zone frontière — Durée contrôles ports/aéroports",
     question:
         "Quelle est la durée maximale d'une opération de contrôles d'identité autour des ports et aéroports constituant des points de passage frontaliers ?",
@@ -518,7 +518,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== CONTROLES DANS LES LOCAUX PROFESSIONNELS ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Locaux professionnels — Réquisitions",
     question:
         "Quelle condition est nécessaire pour que les policiers puissent pénétrer dans des locaux professionnels afin de vérifier l'absence de travail dissimulé ?",
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Locaux professionnels — Lieux visés",
     question:
         "Quels lieux peuvent être visés par les réquisitions pour contrôle dans les locaux professionnels ?",
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== VISITES DE VÉHICULES / BAGAGES / NAVIRES (RÉQUISITIONS) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Visites véhicules — Réquisitions",
     question:
         "Selon l’article 78-2-2 CPP, pour quelles infractions les visites de véhicules sur réquisitions du procureur peuvent-elles être ordonnées ?",
@@ -565,7 +565,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Visites véhicules — Présence",
     question:
         "Lors d'une visite de véhicule à l'arrêt ou en stationnement sur réquisitions du procureur, en présence de qui la visite doit-elle avoir lieu ?",
@@ -581,7 +581,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Visites véhicules — Durée réquisitions",
     question:
         "Quelle est la durée maximale d'une opération de visites de véhicules sur réquisitions du procureur selon l'article 78-2-2 ?",
@@ -597,7 +597,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== DISTINCTION CONTROLE D'IDENTITÉ / CONTROLE DE RÉGLEMENTATION ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle d'identité vs réglementation",
     question:
         "Qu'est-ce qui caractérise un contrôle de réglementation par rapport au contrôle d'identité de l’article 78-2 CPP ?",
@@ -614,7 +614,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== CONTRÔLE DES ÉTRANGERS / CESEDA ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — CESEDA",
     question:
         "Selon l’article L. 812-2 du CESEDA, à quel moment un étranger doit-il être en mesure de présenter les documents l’autorisant à séjourner ou circuler en France ?",
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Critères objectifs",
     question:
         "Le contrôle de la situation administrative d’un étranger peut-il être fondé sur la couleur de peau ou le nom de famille ?",
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== MOYENS DE PREUVE DE L’IDENTITÉ ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Tout moyen",
     question:
         "Que prévoit l’article 78-2 CPP concernant les moyens de justifier de son identité lors d’un contrôle ?",
@@ -662,7 +662,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Documents probants",
     question:
         "Parmi les documents suivants, lequel est considéré comme probant et officiel pour établir l'identité ?",
@@ -677,7 +677,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Documents non probants",
     question:
         "Un livret de famille présenté lors d’un contrôle d’identité constitue :",
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Témoignages",
     question:
         "Dans quelles conditions les témoignages peuvent-ils être utilisés pour confirmer l'identité lors d’un contrôle ?",
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionsControleIdentite = [
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
   // ==== RELEVÉ D’IDENTITÉ ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Personnels habilités",
     question:
         "Quels agents peuvent procéder à un relevé d’identité pour dresser procès-verbal de certaines contraventions selon l'article 78-6 CPP ?",
@@ -727,7 +727,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Nature",
     question:
         "De quelle nature est l'opération de relevé d'identité prévue à l'article 78-6 du CPP ?",
@@ -743,7 +743,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Refus du contrevenant",
     question:
         "En cas de refus du contrevenant de justifier de son identité lors d’un relevé, que doit faire l’APJA ?",
@@ -759,7 +759,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Coercition",
     question:
         "L’agent de police judiciaire adjoint peut-il user de la coercition pour maintenir sur place un contrevenant le temps d’aviser l’OPJ ?",
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== VÉRIFICATION D’IDENTITÉ & RÉTENTION ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Définition",
     question:
         "Comment peut-on définir la vérification d'identité au sens de l'article 78-3 CPP ?",
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Rétention",
     question:
         "Quelle est la durée maximale de la rétention d’une personne pour vérification d'identité sur le territoire métropolitain (hors régimes particuliers) ?",
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Début du délai",
     question:
         "À partir de quand commence à courir le délai maximal de 4 heures de rétention pour vérification d’identité ?",
@@ -819,7 +819,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Sort de la personne",
     question:
         "À l'issue de la durée maximale de rétention pour vérification d'identité, que doit-il se passer si l'identité n'est toujours pas établie et qu'il n’y a pas de placement en garde à vue ?",
@@ -834,7 +834,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Garde à vue",
     question:
         "Si une garde à vue fait suite à une vérification d'identité, comment se calcule la durée totale de privation de liberté ?",
@@ -849,7 +849,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Prise d’empreintes",
     question:
         "Dans quelles conditions l’O.P.J. peut-il recourir à la prise d’empreintes ou de photographies pour établir l’identité ?",
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Droit d'aviser",
     question:
         "Lors d'une vérification d'identité, de quel droit la personne doit-elle être informée immédiatement ?",
@@ -881,7 +881,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Délit de refus",
     question:
         "Quel risque pénal encourt la personne qui refuse de se prêter aux prises d’empreintes ou photographies dûment autorisées par le magistrat ?",
@@ -897,7 +897,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== PROCÈS-VERBAL DE VÉRIFICATION ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "PV de vérification — Mentions obligatoires",
     question:
         "Parmi les éléments suivants, lequel doit obligatoirement figurer dans le procès-verbal de vérification d’identité ?",
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "PV de vérification — Signature",
     question:
         "Que doit faire l’O.P.J. si la personne refuse de signer le procès-verbal de vérification d’identité ?",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "PV de vérification — Conservation données",
     question:
         "Si la vérification d’identité n’est suivie d’aucune enquête ou mesure d’exécution, que devient le procès-verbal et les éléments d’identification ?",
@@ -946,7 +946,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   // ===================== NOUVELLE SÉRIE GÉANTE — NIVEAU FACILE =====================
 
   // ==== Contenu général ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Objectifs",
     question: "Les opérations de contrôle d'identité visent principalement à :",
     options: [
@@ -961,7 +961,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 78-1 CPP",
     question:
         "Selon l’article 78-1 CPP, qui peut être soumis à un contrôle d’identité ?",
@@ -976,7 +976,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Début d'un contrôle",
     question: "Quand commence légalement un contrôle d’identité ?",
     options: [
@@ -990,7 +990,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Documents acceptés",
     question: "Quel document permet de prouver son identité ?",
     options: [
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Absence de papiers",
     question:
         "Si une personne n’a aucun document sur elle lors d’un contrôle d’identité :",
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Agents habilités ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Distinction",
     question: "Quels agents NE PEUVENT PAS procéder à un contrôle d’identité ?",
     options: ["Les agents de police municipale", "Les OPJ", "Les APJ"],
@@ -1031,7 +1031,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — APJ",
     question:
         "Un APJ peut-il procéder à un contrôle d’identité sans ordre préalable de l’OPJ ?",
@@ -1046,7 +1046,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Nullité",
     question:
         "Quelle mention doit obligatoirement figurer dans un PV de contrôle sous peine de nullité ?",
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôles Police Judiciaire — Raisons plausibles ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 1",
     question:
         "Un contrôle d’identité pour police judiciaire peut avoir lieu si la personne :",
@@ -1077,7 +1077,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 2",
     question:
         "Quel exemple correspond à une raison plausible de soupçonner un acte préparatoire ?",
@@ -1091,7 +1091,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Renseignement",
     question:
         "Une personne peut être contrôlée si elle est susceptible de fournir :",
@@ -1105,7 +1105,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Personne recherchée",
     question: "Une personne peut être contrôlée si elle fait l’objet :",
     options: [
@@ -1119,7 +1119,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôle sur réquisitions du procureur ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Écrit",
     question:
         "Les réquisitions du procureur pour un contrôle d’identité doivent être :",
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Périmètre",
     question: "Que doit obligatoirement indiquer la réquisition du procureur ?",
     options: [
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Population visée",
     question:
         "Lors d’un contrôle sur réquisitions, quelles personnes peuvent être contrôlées ?",
@@ -1164,7 +1164,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôles préventifs (Police administrative) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Objectif",
     question:
         "Les contrôles préventifs prévus par l’alinéa 8 de 78-2 servent à :",
@@ -1179,7 +1179,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Comportement",
     question: "Dans un contrôle préventif, le comportement de la personne :",
     options: [
@@ -1192,7 +1192,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Lieux",
     question: "Les contrôles préventifs peuvent être réalisés dans :",
     options: [
@@ -1207,7 +1207,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôles zone frontière ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Bande des 20km",
     question: "Les contrôles dans la bande des 20 km visent principalement :",
     options: [
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Durée",
     question:
         "La durée maximale d’un contrôle autour d’un port ou aéroport ne peut dépasser :",
@@ -1232,7 +1232,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Moyens de preuve de l’identité ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Photographie",
     question: "Un document probant d’identité doit de préférence comporter :",
     options: [
@@ -1245,7 +1245,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Témoins",
     question:
         "Les témoignages permettant de confirmer l'identité doivent être :",
@@ -1262,7 +1262,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   // ===================== NIVEAU INTERMÉDIAIRE =====================
 
   // ==== Relevé d’identité ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Nature juridique",
     question: "Le relevé d’identité prévu par 78-6 CPP est :",
     options: [
@@ -1275,7 +1275,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Refus",
     question:
         "En cas de refus de justifier de son identité lors d’un relevé, l’agent peut :",
@@ -1291,7 +1291,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Vérification d’identité & rétention ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Compétence",
     question: "Qui est compétent pour ordonner une vérification d’identité ?",
     options: ["L’APJ", "L’OPJ exclusivement", "Le préfet"],
@@ -1300,7 +1300,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Début du délai",
     question:
         "Quand commence le délai légal de la rétention pour vérification d’identité ?",
@@ -1315,7 +1315,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Droit d’aviser",
     question:
         "La personne retenue peut demander d’aviser une personne de son choix :",
@@ -1325,7 +1325,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — OPJ",
     question: "Pendant la rétention, le procureur de la République peut :",
     options: [
@@ -1338,7 +1338,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Garde à vue",
     question:
         "Si une garde à vue est décidée après une vérification d’identité :",
@@ -1353,7 +1353,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — OPJ",
     question:
         "Que doit contenir la motivation de la demande d’empreintes/photographies ?",
@@ -1371,7 +1371,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   // ===================== NIVEAU DIFFICILE =====================
 
   // ==== Jurisprudence, cas pratiques ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Jurisprudence — Fouille",
     question:
         "Selon la jurisprudence (Cass. crim 23 mars 2016), une palpation de sécurité lors d’un contrôle d’identité :",
@@ -1387,7 +1387,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Étranger",
     question:
         "Un étranger peut être contrôlé sur sa situation administrative si :",
@@ -1403,7 +1403,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Document douteux",
     question: "Si un document d’identité présenté paraît falsifié :",
     options: [
@@ -1418,7 +1418,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Refus de décliner l'identité",
     question: "Une personne refuse de donner son identité lors du contrôle :",
     options: [
@@ -1432,7 +1432,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Témoins",
     question:
         "Une personne affirme que deux passants peuvent attester de son identité, mais ceux-ci sont déjà partis :",
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Jeune mineur",
     question:
         "Lors d’une vérification d’identité d’un mineur supposé, l’agent doit :",
@@ -1460,7 +1460,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Contrôle professionnel",
     question: "Une visite dans des locaux professionnels peut être effectuée :",
     options: [
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Refus empreintes",
     question:
         "Une personne retenue refuse de donner ses empreintes malgré l’autorisation du procureur :",
@@ -1491,7 +1491,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   // ===================== NOUVELLE FOURNÉE DE QUESTIONS SUPPLÉMENTAIRES =====================
 
   // ==== Cadre général & principes ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Libertés individuelles",
     question:
         "Qui est gardienne des libertés individuelles dans le cadre des contrôles d’identité ?",
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature des opérations",
     question:
         "Les contrôles, relevés et vérifications d’identité sont principalement :",
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Distinction phases",
     question:
         "Quelle affirmation est exacte concernant les différentes phases d’identification ?",
@@ -1537,7 +1537,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôle d’identité — Fondements supplémentaires ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 3 (contrôle judiciaire)",
     question:
         "Quel exemple illustre une personne pouvant être contrôlée car elle viole les obligations d’un contrôle judiciaire ?",
@@ -1553,7 +1553,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 4 (renseignements)",
     question:
         "Un contrôle peut viser une personne simplement témoin de faits si :",
@@ -1569,7 +1569,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Initiatives OPJ",
     question:
         "Qui peut prendre l’initiative d’un contrôle d’identité dans un cadre purement judiciaire, sans réquisition du parquet ?",
@@ -1581,7 +1581,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôles préventifs — Conditions plus fines ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Menace à l’ordre public",
     question: "Pour mettre en place un contrôle préventif, il faut :",
     options: [
@@ -1596,7 +1596,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Justification a posteriori",
     question:
         "En cas de contestation, que devront démontrer les policiers à propos du contrôle préventif ?",
@@ -1612,7 +1612,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Lieu privé",
     question:
         "Un contrôle préventif au domicile d’une personne peut-il être effectué ?",
@@ -1629,7 +1629,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôles en zone frontière — Variantes ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Section autoroutière",
     question:
         "Un contrôle en zone frontière sur autoroute peut se poursuivre au-delà des 20 km si :",
@@ -1644,7 +1644,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Points de passage frontaliers",
     question:
         "Dans un rayon de 10 km autour d’un aéroport désigné comme point de passage frontalier, on peut :",
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Territoires ultras-marins",
     question:
         "Quelle particularité concerne la Guyane en matière de contrôles d’identité en zone frontière ?",
@@ -1677,7 +1677,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Contrôle de réglementation vs contrôle d’identité ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réglementation — Différence",
     question:
         "Un contrôle du permis de conduire d’un automobiliste en circulation est :",
@@ -1692,7 +1692,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réglementation — Caractère autonome",
     question:
         "Un contrôle de réglementation (ex : permis de chasse) peut-il être effectué sans contrôle d’identité préalable ?",
@@ -1709,7 +1709,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Étrangers & CESEDA — Approfondissement ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Durée contrôle situation",
     question:
         "Le contrôle de situation administrative prévu à l’article L. 812-2 CESEDA ne peut excéder :",
@@ -1720,7 +1720,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Contrôle systématique",
     question:
         "Le contrôle de situation administrative des étrangers peut-il être systématique dans une zone donnée ?",
@@ -1735,7 +1735,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Critères objectifs",
     question:
         "Parmi les éléments suivants, lequel peut constituer un critère objectif d’extranéité ?",
@@ -1751,7 +1751,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Moyens de preuve de l’identité — Approfondissement ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Document privé",
     question:
         "Une carte de membre d’un club sportif avec photo peut-elle être prise en compte ?",
@@ -1766,7 +1766,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Absence totale de document",
     question:
         "Si la personne ne présente aucun document et aucun témoin n’est disponible :",
@@ -1782,7 +1782,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Relevé d’identité — Approfondissement ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Contraventions visées",
     question: "Le relevé d’identité par les APJA selon 78-6 peut viser :",
     options: [
@@ -1797,7 +1797,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Recueil simple",
     question:
         "Quelle différence entre recueil d’identité et relevé d’identité ?",
@@ -1812,7 +1812,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Durée maintien sur place",
     question:
         "La rétention sur la voie publique par un APJA dans l’attente des instructions de l’OPJ doit durer :",
@@ -1827,7 +1827,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Vérification d’identité — Détails procéduraux ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Lieu d’exécution",
     question: "La rétention pour vérification d’identité peut avoir lieu :",
     options: [
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Information des droits",
     question:
         "À quel moment la personne doit-elle être informée de son droit de faire aviser le procureur de la République ?",
@@ -1855,7 +1855,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — PV",
     question:
         "Si la vérification d’identité n’est suivie d’aucune enquête, une copie du procès-verbal :",
@@ -1870,7 +1870,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Heures à mentionner",
     question: "Le procès-verbal de vérification d’identité doit mentionner :",
     options: [
@@ -1886,7 +1886,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Visites de véhicules / bagages (identité et sécurité) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicules — Présence OPJ",
     question:
         "Lors d’une visite de véhicule sur réquisitions du procureur (78-2-2), la visite doit être faite :",
@@ -1900,7 +1900,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Bagages — Inspection visuelle",
     question:
         "Lors d’une inspection visuelle des bagages sur réquisitions, le propriétaire :",
@@ -1916,7 +1916,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicules — Prévention atteinte grave",
     question:
         "Pour prévenir une atteinte grave à la sécurité (78-2-4), la visite de véhicule peut être réalisée :",
@@ -1933,7 +1933,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Manifestations & armes (78-2-5) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestation — Contrôles possibles",
     question:
         "Sur les lieux d’une manifestation sur la voie publique, que permet l’article 78-2-5 ?",
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestation — Limites",
     question: "Dans le cadre de l’article 78-2-5, les contrôles d’identité :",
     options: [
@@ -1963,7 +1963,7 @@ final List<QuizQuestion> questionsControleIdentite = [
   ),
 
   // ==== Nullités & contrôles du procureur ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullité — Mentions manquantes",
     question:
         "L’absence de mention de la durée de rétention dans le PV de vérification d’identité peut entraîner :",
@@ -1977,7 +1977,7 @@ final List<QuizQuestion> questionsControleIdentite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle parquet — Pendant la rétention",
     question:
         "Pendant la vérification d’identité, le procureur de la République peut :",
@@ -1997,7 +1997,7 @@ final List<QuizQuestion> questionsControleIdentite = [
 // PAGE
 // ============================================================================
 class QuizControleIdentitePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/controle_identite';
+  static const String routeName = '/gpx/dps/generalites/quiz/controle_identite';
   final String uid;
   final String email;
 
@@ -2322,7 +2322,7 @@ class _QuizControleIdentitePageState extends State<QuizControleIdentitePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2511,7 +2511,7 @@ class _QuizControleIdentitePageState extends State<QuizControleIdentitePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2663,7 +2663,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3189,10 +3188,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3562,7 +3562,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3603,9 +3603,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -229,9 +229,9 @@ class _OnboardingScreenState extends State<OnboardingScreen>
             ),
 
             // Anti-banding
-            Positioned.fill(
+            const Positioned.fill(
               child: IgnorePointer(
-                child: Opacity(opacity: 0.03, child: const _NoiseOverlay()),
+                child: Opacity(opacity: 0.03, child: _NoiseOverlay()),
               ),
             ),
 
@@ -1017,7 +1017,6 @@ class _ShineSweep extends StatelessWidget {
 
 class _StaggerText extends StatefulWidget {
   const _StaggerText({
-    super.key,
     required this.title,
     required this.subtitle,
     required this.titleStyle,

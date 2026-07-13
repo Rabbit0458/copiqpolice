@@ -18,7 +18,7 @@ class HierarchieIntroStructurePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.90);
+        : const Color(0xFF1F1F1F).withValues(alpha: .90);
     final Color accent = isDark
         ? const Color(0xFF90CAF9)
         : const Color(0xFF1565C0);
@@ -61,19 +61,19 @@ class HierarchieIntroStructurePage extends StatelessWidget {
           const SizedBox(height: 8),
 
           // -------------------- INTRO GÉNÉRALE -------------------
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'La police judiciaire est exercée sous la direction du procureur de la République, conformément à l’article 12 du code de procédure pénale. ',
             ),
-            const TextSpan(
+            TextSpan(
               text:
                   'Dans chaque ressort de cour d’appel, elle est placée sous la surveillance du procureur général et sous le contrôle de la chambre de l’instruction (article 13 du code de procédure pénale).',
             ),
           ]),
           const SizedBox(height: 10),
 
-          _Paragraph(
+          const _Paragraph(
             'Pour exercer cette mission essentiellement répressive, la loi – en particulier le code de procédure pénale – confère aux personnels de la police nationale une qualification judiciaire : officier de police judiciaire, agent de police judiciaire ou agent de police judiciaire adjoint. '
             'Les officiers de police judiciaire et les agents de police judiciaire peuvent être secondés par des assistants d’enquête pour certaines démarches procédurales.',
           ),
@@ -251,10 +251,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -326,7 +326,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -372,7 +372,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -421,7 +421,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -474,7 +474,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -499,7 +499,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -534,7 +534,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -547,7 +547,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

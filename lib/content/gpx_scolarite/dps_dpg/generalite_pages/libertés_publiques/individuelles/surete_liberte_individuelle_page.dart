@@ -37,14 +37,14 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF6A1B9A)
         : const Color(0xFF6A1B9A);
     final Color referenceColor = isDark
         ? const Color(0xFFBA68C8)
         : const Color(0xFF6A1B9A);
-    final Color dangerColor = const Color(0xFFFF3B30);
+    const Color dangerColor = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: background,
@@ -103,7 +103,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 10),
-          _NotaBox(
+          const _NotaBox(
             title: 'Enjeu pratique pour les forces de l’ordre',
             bodySpans: [
               TextSpan(
@@ -119,7 +119,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                   color: dangerColor,
                 ),
               ),
-              const TextSpan(
+              TextSpan(
                 text:
                     ', engageant la responsabilité pénale, civile et disciplinaire de l’auteur.',
               ),
@@ -158,10 +158,10 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 12),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: 'Les grands principes protecteurs sont issus :\n',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ]),
               const _BulletPoint.rich([
@@ -312,7 +312,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Les textes prévoient de façon limitative les hypothèses dans lesquelles un individu peut être privé de liberté. '
                 'On distingue notamment les mesures décidées par les policiers et celles décidées par les magistrats.',
               ),
@@ -428,7 +428,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Les mesures administratives sont décidées par l’autorité administrative (préfet, ministre, maire…) pour prévenir des atteintes graves '
                 'à l’ordre public, à la sûreté de l’État ou à la sécurité des personnes. Elles restent des exceptions, soumises à la loi et au contrôle du juge.',
               ),
@@ -444,7 +444,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’interdiction de paraître est une mesure visant à empêcher une personne de se rendre dans certains lieux déterminés '
                 '(périmètre d’une manifestation, abords d’un stade, quartier sensible, etc.) lorsqu’elle représente un risque sérieux de troubles à l’ordre public. '
                 'La décision est écrite, motivée, notifiée à l’intéressé et limitée dans le temps. Le non-respect de l’interdiction est pénalement sanctionné.',
@@ -505,7 +505,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Il existe plusieurs formes de retenue administrative, notamment dans le cadre des perquisitions administratives, des contrôles aux frontières '
                 'ou de la lutte contre le terrorisme. Leur point commun : elles sont limitées à la durée strictement nécessaire aux vérifications, '
                 'généralement quelques heures, sous contrôle du procureur de la République. Les droits de la personne retenue (information, avocat, médecin, '
@@ -523,7 +523,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’hospitalisation psychiatrique sans consentement constitue une privation grave de liberté. Elle intervient lorsque les troubles mentaux '
                 'd’une personne rendent impossible son consentement ou font craindre un danger pour elle-même ou pour autrui. '
                 'Le Code de la santé publique distingue plusieurs régimes :',
@@ -572,7 +572,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Une personne en état d’ivresse publique et manifeste peut être retenue, à titre de mesure de police administrative, dans un local de dégrisement '
                 'le temps strictement nécessaire au rétablissement de ses facultés. Cette mesure vise à la protection de la personne et de l’ordre public. '
                 'Elle n’a pas le caractère d’une sanction, mais toute violence ou dégradation commise pendant la retenue peut donner lieu à poursuites pénales.',
@@ -587,7 +587,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Le Code de l’entrée et du séjour des étrangers et du droit d’asile (CESEDA) prévoit plusieurs régimes spécifiques de privation de liberté '
                 'concernant les étrangers :',
               ),
@@ -611,7 +611,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text:
                       'La durée de la rétention est strictement encadrée (durée initiale de 48 heures, prolongations possibles par le juge des libertés et de la détention, '
@@ -635,10 +635,10 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'L’article 66 de la Constitution confie à l’autorité judiciaire le rôle de ',
-                  style: const TextStyle(),
+                  style: TextStyle(),
                 ),
                 TextSpan(
                   text: '« gardienne de la liberté individuelle »',
@@ -745,7 +745,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Ces infractions sont punies de lourdes peines d’emprisonnement et d’amende, '
                 'aggravées lorsque la victime est mineure, vulnérable ou lorsque la privation de liberté '
                 's’accompagne de violences ou de traitements inhumains ou dégradants.',
@@ -841,7 +841,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Ces actions permettent de compenser le préjudice subi (dommages-intérêts) même lorsque l’auteur de l’atteinte '
                 'n’est pas personnellement condamné pénalement, dès lors que l’illégalité de la mesure est reconnue.',
               ),
@@ -922,7 +922,7 @@ class SureteLiberteIndividuellePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La sûreté n’est pas la négation de l’action de la police : elle en fixe le cadre. '
                 'Elle rappelle que toute atteinte portée à la liberté d’une personne doit répondre à trois exigences cumulatives :',
               ),
@@ -1020,10 +1020,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1066,7 +1066,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1100,7 +1100,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -1153,7 +1153,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1178,7 +1178,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -1213,7 +1213,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1226,7 +1226,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

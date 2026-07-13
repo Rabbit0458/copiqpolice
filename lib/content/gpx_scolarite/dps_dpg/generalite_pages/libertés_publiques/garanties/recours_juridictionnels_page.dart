@@ -34,7 +34,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF2E7D32)
         : const Color(0xFF1B5E20);
@@ -98,7 +98,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
           ]),
           const SizedBox(height: 18),
 
-          _NotaBox(
+          const _NotaBox(
             title: 'Définition doctrinale',
             bodySpans: [
               TextSpan(
@@ -123,7 +123,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Les juridictions judiciaires (pénales et civiles) interviennent principalement '
                 'pour sanctionner les atteintes aux libertés commises par des particuliers '
                 'ou par l’administration lorsqu’elle agit comme toute personne privée.',
@@ -207,7 +207,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Dans certains cas, un acte administratif illégal portant atteinte aux libertés '
                 'peut être contesté devant le juge judiciaire. Le polycopié distingue trois '
                 'hypothèses principales.',
@@ -224,7 +224,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Il s’agit d’un moyen de défense soulevé devant le juge pénal pour neutraliser '
                 'les effets individuels d’un acte réglementaire illégal (par exemple un arrêté '
                 'interdisant abusivement une manifestation). L’acte n’est pas annulé, mais le juge '
@@ -242,7 +242,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Lorsque l’administration porte atteinte à la propriété privée dans un but d’utilité '
                 'publique, l’atteinte doit reposer sur une base légale (expropriation) et respecter '
                 'les garanties prévues par les textes. Deux grandes figures sont étudiées :',
@@ -283,7 +283,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'La voie de fait est une atteinte particulièrement grave portée par '
                 'l’administration à une liberté fondamentale ou à la propriété, par un acte '
                 'manifestement insusceptible de se rattacher à un pouvoir administratif '
@@ -307,7 +307,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Les juridictions administratives contrôlent la légalité de l’action de '
                 'l’administration et réparent, le cas échéant, les dommages qu’elle cause. '
                 'Ce sont elles qui se prononcent le plus fréquemment sur les atteintes '
@@ -325,7 +325,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Il vise à obtenir réparation d’un dommage causé par un acte administratif '
                 'illégal ou par le fonctionnement défectueux d’un service public. On parle de '
                 'recours de pleine juridiction : le juge peut condamner l’administration à '
@@ -499,7 +499,7 @@ class RecoursJuridictionnelsPage extends StatelessWidget {
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'La réparation est subordonnée à trois conditions cumulatives :',
               ),
               const SizedBox(height: 6),
@@ -570,10 +570,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -616,7 +616,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -650,7 +650,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -703,7 +703,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -728,7 +728,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -763,7 +763,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -776,7 +776,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -109,16 +109,16 @@ class EscroqueriePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 313-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime l’escroquerie."),
+                TextSpan(text: " : définit et réprime l’escroquerie."),
               ]),
             ],
           ),
@@ -131,396 +131,396 @@ class EscroqueriePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’escroquerie se rapproche du vol en ce qu’elle tend à l’appropriation de la chose d’autrui. "
                 "Mais, alors que le vol suppose une soustraction frauduleuse, l’escroquerie consiste à se faire remettre "
                 "la chose par son propriétaire, en le trompant par des moyens frauduleux.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Un moyen de tromperie (déterminant)"),
-              const _Paragraph(
+              _SubTitle("A) Un moyen de tromperie (déterminant)"),
+              _Paragraph(
                 "Le texte ne vise que quatre formes de tromperie. L’usage d’un seul moyen suffit, mais plusieurs procédés "
                 "sont souvent employés simultanément.\n"
                 "Le moyen doit être déterminant (provoquer la remise) et résulter d’un comportement actif de l’auteur.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) L’usage d’un faux nom"),
-              const _Paragraph(
+              _SubTitle("1) L’usage d’un faux nom"),
+              _Paragraph(
                 "Constitue un faux nom l’usage par une personne d’un nom patronymique qui n’est pas le sien, "
                 "qu’il soit réel (nom d’un tiers) ou imaginaire. "
                 "Sont assimilés : faux prénom ou faux pseudonyme s’ils entraînent confusion/homonymie.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) L’usage d’une fausse qualité"),
-              const _Paragraph(
+              _SubTitle("2) L’usage d’une fausse qualité"),
+              _Paragraph(
                 "La loi ne définit pas la notion de « qualité ». "
                 "Elle peut être comprise strictement (attribut juridique essentiel : âge, titre, profession, situation matrimoniale, nationalité) "
                 "ou plus largement (toute particularité de nature à inspirer confiance, donner du crédit, fonder une prétention à un avantage).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Exemples de qualités retenues"),
-              const _BulletPoint(
+              _SubTitle("Exemples de qualités retenues"),
+              _BulletPoint(
                 text:
                     "État des personnes : âge, nationalité, situation matrimoniale, lien de parenté, domicile (lorsqu’il procure un avantage).",
               ),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Fausse qualité de national ou d’époux d’une Française (mariage simulé) ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 26 octobre 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Titres : noblesse, universitaires, honorifiques, fonctions électives/religieuses…",
               ),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Porter indûment l’insigne d’officier de l’ordre du mérite pour se faire livrer des marchandises ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 4 décembre 1984)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Se présenter comme prêtre sans avoir reçu l’ordre ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 2 février 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Profession : toute profession (fonction publique, professions réglementées, etc.).",
               ),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Usage de la fausse qualité de policier pour obtenir une remise de fonds ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 26 juin 1984)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mandataire : se présenter mensongèrement comme mandataire d’autrui.",
               ),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Se prétendre mandataire d’un créancier afin de déterminer une remise ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 juillet 1968)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Chômeur / salarié : fausse qualité retenue lorsque la qualité réelle ouvre droit à un avantage.",
               ),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Prestations chômage obtenues via fausses déclarations : escroquerie par fausse qualité ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 30 novembre 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Se dire faussement salarié constitue une fausse qualité ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 10 avril 1997)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) L’abus d’une qualité vraie"),
-              const _Paragraph(
+              _SubTitle("3) L’abus d’une qualité vraie"),
+              _Paragraph(
                 "Ici, l’auteur utilise une qualité qu’il possède réellement pour donner force et crédit à ses mensonges, "
                 "grâce à la confiance inspirée.\n"
                 "La jurisprudence l’a retenu pour des professions traditionnellement dignes de confiance "
                 "(notaire, huissier, avocat, médecin, banquier…), mais aussi pour des activités moins « prestigieuses » "
                 "(commerçant, gérant de société, naturopathe…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Conservateur de musée donnant l’apparence d’authenticité à des objets dépourvus de valeur ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 2 avril 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Courtier d’assurances insérant une clause non portée à la connaissance de la compagnie et percevant des surprimes ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 8 décembre 1965)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4) L’emploi de manœuvres frauduleuses"),
-              const _Paragraph(
+              _SubTitle("4) L’emploi de manœuvres frauduleuses"),
+              _Paragraph(
                 "Les simples mensonges sont insuffisants s’ils ne sont accompagnés d’aucun fait extérieur ou acte matériel "
                 "destiné à conforter les allégations. "
                 "Les manœuvres doivent venir corroborer les mensonges et viser à donner force et crédit à ceux-ci pour obtenir la remise.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence (principe)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Mensonge seul insuffisant ; les menaces/pressions verbales ou le mensonge déterminant ne suffisent pas sans fait extérieur ",
                   ),
                   TextSpan(
                     text:
                         "(Cass. crim., 6 novembre 1991 ; Cass. crim., 25 septembre 1997)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence (temporalité)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les manœuvres frauduleuses doivent être déterminantes de la remise et antérieures à celle-ci ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 8 mars 2023)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "Méthodes fréquemment retenues par la jurisprudence",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Production d’un document écrit (authentique, falsifié, forgé, émanant d’un tiers réel ou imaginaire).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mise en scène (décor, machination, manipulation, trucage) destinée à crédibiliser le mensonge.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Intervention d’un tiers (réel ou imaginaire) corroborant les dires de l’auteur, de manière orale/écrite, ou par présence passive.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudences (exemples)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Carte grise provisoire authentique remise par un garagiste (véhicule gagé) déterminant un paiement intégral ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 22 mars 1978)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; chèques falsifiés "),
+                  TextSpan(text: " ; chèques falsifiés "),
                   TextSpan(
                     text: "(C.A. Paris, 15 septembre 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " ; simulation de vol / liste d’objets volés ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 23 janvier 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Une remise"),
+              _SubTitle("B) Une remise"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "La remise doit être un acte positif de la victime. ",
                 ),
                 TextSpan(
                   text: "L’article 313-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " distingue trois types :"),
+                TextSpan(text: " distingue trois types :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Remise de fonds, valeurs ou d’un bien quelconque.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Fourniture d’un service (toute prestation).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Consentement à un acte opérant obligation ou décharge.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Un préjudice"),
+              _SubTitle("C) Un préjudice"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le préjudice est indispensable : sans préjudice, un élément du délit fait défaut ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 3 avril 1991)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le préjudice peut être matériel. Il peut aussi être analysé comme moral (consentement vicié), "
                 "mais ce n’est pas automatique selon les cas.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Une victime"),
-              const _Paragraph(
+              _SubTitle("D) Une victime"),
+              _Paragraph(
                 "La victime peut être une personne physique ou une personne morale.",
               ),
             ],
@@ -534,32 +534,32 @@ class EscroqueriePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’escroquerie est une infraction intentionnelle : l’auteur doit avoir conscience d’utiliser des moyens frauduleux "
                 "dans le but d’obtenir une remise. La simple imprudence ne suffit pas.\n"
                 "La mauvaise foi se déduit souvent des moyens employés, et les juges apprécient au cas par cas.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le mobile est indifférent pour la qualification pénale (il peut seulement influencer la peine).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Même si l’auteur affirme des intentions désintéressées (ex. au profit d’une œuvre), cela n’écarte pas l’infraction ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 juillet 1975)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -573,52 +573,52 @@ class EscroqueriePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 313-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : escroquerie aggravée, notamment lorsque :",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Commise par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Commis par une personne prenant indûment la qualité d’une personne dépositaire de l’autorité publique/mission de service public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Appel au public pour émission de titres ou collecte de fonds à des fins d’entraide humanitaire/sociale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Au préjudice d’une personne particulièrement vulnérable (âge, maladie, infirmité, déficience, grossesse).",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "État de sujétion au sens de "),
+                TextSpan(text: "État de sujétion au sens de "),
                 TextSpan(
                   text: "l’article 223-15-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " connu de l’auteur."),
+                TextSpan(text: " connu de l’auteur."),
               ]),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Au préjudice d’une personne publique / organisme de protection sociale / organisme chargé d’une mission de service public (pour obtenir une allocation, prestation, paiement ou avantage indu).",
               ),
-              const _BulletPoint(text: "Commise en bande organisée."),
+              _BulletPoint(text: "Commise en bande organisée."),
             ],
           ),
 
@@ -630,107 +630,107 @@ class EscroqueriePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Simple : "),
-                const TextSpan(
+                TextSpan(text: "Simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 375 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 313-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (circonstances des al. 2 à 6) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 750 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 313-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Bande organisée : "),
-                const TextSpan(
+                TextSpan(text: "Bande organisée : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 000 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 313-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 313-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative, complicité & immunité familiale"),
+              _SubTitle("Tentative, complicité & immunité familiale"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — prévue par "),
+                TextSpan(text: "Tentative : OUI — prévue par "),
                 TextSpan(
                   text: "l’article 313-3 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (toujours punissable, simple ou aggravée).",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Complicité : OUI (punissable pour l’infraction consommée comme tentée, personnes physiques ou morales).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Immunité familiale : OUI — "),
+                TextSpan(text: "Immunité familiale : OUI — "),
                 TextSpan(
                   text: "l’article 313-3 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " renvoie à "),
+                TextSpan(text: " renvoie à "),
                 TextSpan(
                   text: "l’article 311-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -768,10 +768,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -836,7 +836,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -879,7 +879,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -941,7 +941,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -973,7 +973,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -986,7 +986,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

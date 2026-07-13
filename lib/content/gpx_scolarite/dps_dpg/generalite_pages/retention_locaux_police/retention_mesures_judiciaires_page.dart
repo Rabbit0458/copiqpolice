@@ -29,7 +29,7 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accent = isDark
         ? const Color(0xFF80CBC4)
         : const Color(0xFF00897B);
@@ -71,13 +71,13 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          _Paragraph(
+          const _Paragraph(
             'Les mesures judiciaires de rétention sont décidées dans le cadre d’une procédure pénale. '
             'Elles permettent de maintenir une personne à la disposition de la justice pendant un temps limité, '
             'sous le contrôle de l’autorité judiciaire.',
           ),
           const SizedBox(height: 10),
-          _NotaBox(
+          const _NotaBox(
             title: 'Fil conducteur',
             bodySpans: [
               TextSpan(
@@ -117,9 +117,9 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
                 ),
               ]),
               _BulletPoint.rich([
-                TextSpan(
+                const TextSpan(
                   text: 'Durée initiale : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text: '24 heures',
@@ -133,15 +133,15 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
                       ', pouvant être prolongée de 24 heures supplémentaires sur décision du procureur ou du juge.',
                 ),
               ]),
-              _BulletPoint.rich([
-                const TextSpan(
+              const _BulletPoint.rich([
+                TextSpan(
                   text:
                       'Durée globale pouvant atteindre : 96 h pour certaines infractions liées à la criminalité organisée et au trafic de stupéfiants, '
                       'et jusqu’à 144 h pour les affaires de terrorisme, sous contrôle strict du magistrat (JLD / juge d’instruction).',
                 ),
               ]),
-              _BulletPoint.rich([
-                const TextSpan(
+              const _BulletPoint.rich([
+                TextSpan(
                   text:
                       'La GAV s’accompagne de droits immédiats : notification des faits, droit à un avocat, à un médecin, à prévenir un proche, '
                       'droit à l’interprète, information sur la durée et les prolongations possibles.',
@@ -191,9 +191,9 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
                 ),
               ]),
               _BulletPoint.rich([
-                TextSpan(
+                const TextSpan(
                   text: 'Durée maximale : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text: '12 heures',
@@ -266,9 +266,9 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
                 ),
               ]),
               _BulletPoint.rich([
-                TextSpan(
+                const TextSpan(
                   text: 'Durée maximale de rétention : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text: '4 heures',
@@ -313,20 +313,20 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Le mandat est un ordre écrit donné par l’autorité judiciaire à la force publique. '
                 'Il impose l’arrestation d’une personne et sa présentation devant le magistrat qui l’a délivré.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Mandat d’amener : ordre de conduire la personne devant le magistrat, qui décidera des suites (mise en examen, contrôle judiciaire, détention…).',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Mandat d’arrêt : ordre de rechercher et d’arrêter la personne pour la présenter au magistrat ou la placer en détention.',
@@ -335,16 +335,16 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
               _BulletPoint.rich([
                 TextSpan(
                   text: 'Durée de rétention en locaux de police : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'limitée au temps strictement nécessaire à la notification du mandat, aux formalités d’identification et à l’avis au magistrat.',
                 ),
               ]),
 
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: 'Traçabilité',
                 bodySpans: [
                   TextSpan(
@@ -373,8 +373,8 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
 
-              _BulletPoint.rich([
-                const TextSpan(
+              const _BulletPoint.rich([
+                TextSpan(
                   text:
                       'Lorsqu’elle est trouvée, la personne est interpellée et placée en garde à vue, sur la base du mandat de recherche.',
                 ),
@@ -441,12 +441,12 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
                       ' : vise une personne condamnée ou placée sous contrôle judiciaire, pour vérifier qu’elle respecte ses obligations (pointages, interdictions, etc.).',
                 ),
               ]),
-              _BulletPoint.rich([
+              const _BulletPoint.rich([
                 TextSpan(
                   text: 'Durée : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'limitée au temps strictement nécessaire à l’exécution de la mesure (incarcération, présentation au magistrat, vérification des obligations).',
                 ),
@@ -477,31 +477,31 @@ class RetentionMesuresJudiciairesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Toutes ces mesures ont un point commun : elles portent une atteinte particulièrement forte à la liberté d’aller et venir. '
                 'Elles sont donc regardées de très près par les magistrats et les juridictions.',
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              SizedBox(height: 10),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Toujours identifier clairement le régime utilisé (GAV, retenue mineur, vérification d’identité, mandat…).',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Noter avec précision l’horaire de début et de fin de la mesure, les prolongations et les décisions du magistrat.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Veiller au respect effectif des droits (avocat, médecin, tiers, interprète) et à la dignité de la personne.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'En cas de doute, saisir le gradé ou le parquet : mieux vaut une question de plus qu’une rétention irrégulière.',
@@ -546,10 +546,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -591,7 +591,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -624,7 +624,7 @@ class _Paragraph extends StatelessWidget {
 class _BulletPoint extends StatelessWidget {
   final List<InlineSpan> spans;
 
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   @override
   Widget build(BuildContext context) {
@@ -672,7 +672,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -697,7 +697,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -729,7 +729,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -742,7 +742,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

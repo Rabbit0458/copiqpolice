@@ -84,7 +84,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionDeontologie = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits & obligations — Contexte",
     question:
         "Les droits et obligations des policiers sont principalement encadrés par :",
@@ -99,7 +99,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Le CGFP pose le cadre général, et des textes comme le CSI / RGEPN ajoutent des règles propres à la fonction policière.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits & obligations — Références principales",
     question: "Parmi les textes de base, on retrouve :",
     options: [
@@ -112,7 +112,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Références principales : CGFP (fonction publique), CSI (déontologie police), RGEPN (cadre interne).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits & obligations — Références principales",
     question:
         "Avant la prise de fonctions, tout agent de la Police nationale :",
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // I — Statut Fonction Publique : Droits
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "La liberté d’opinion des agents publics est :",
     options: ["Garantie", "Interdite", "Autorisé uniquement hors service"],
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionDeontologie = [
         "CGFP : liberté d’opinion garantie aux agents publics (références citées dans ton cours).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "Les opinions (politiques, religieuses, syndicales…) :",
     options: [
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Dans ton cours : les opinions ne doivent pas apparaître au dossier individuel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "La liberté d’expression d’un policier :",
     options: [
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Dans ton cours : en service, la neutralité prime. Hors service, liberté relative avec réserve.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "Hors service, la liberté d’expression est :",
     options: [
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : hors service, liberté relative mais obligation de réserve.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "La non-discrimination signifie :",
     options: [
@@ -194,7 +194,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours liste une large interdiction (directe/indirecte) sur de nombreux critères.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "Concernant les agissements sexistes :",
     options: [
@@ -206,7 +206,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : aucun agent ne doit subir d’agissement sexiste.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "Le droit syndical pour les policiers :",
     options: [
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : droit syndical oui, mais secret + déontologie + compatibilité service.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "La protection fonctionnelle :",
     options: [
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : l’État défend l’agent (et parfois proches) si pas de faute personnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Droits",
     question: "La protection fonctionnelle peut concerner aussi :",
     options: [
@@ -251,7 +251,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // I — Statut Fonction Publique : Obligations
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Obligations",
     question: "L’obéissance hiérarchique signifie :",
     options: [
@@ -263,7 +263,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : principe général d’obéissance hiérarchique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Obligations",
     question: "On peut refuser un ordre si :",
     options: [
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : exception classique = ordre manifestement illégal + intérêt public gravement compromis.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Obligations",
     question: "Le secret professionnel et la discrétion :",
     options: [
@@ -290,7 +290,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : violation = pénal + disciplinaire + responsabilité civile possible.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Obligations",
     question: "Les réseaux sociaux :",
     options: [
@@ -303,7 +303,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : attention aux infos pro (opérations, modalités, photos, propos portant atteinte…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Obligations",
     question: "La probité, c’est :",
     options: [
@@ -317,7 +317,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : probité = désintéressement + pas d’avantage personnel via sa qualité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut FP — Obligations",
     question: "Parmi les infractions typiques liées à la probité, on trouve :",
     options: [
@@ -334,7 +334,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // II — Particularismes policiers
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Hiérarchie",
     question: "Dans la Police, le principe hiérarchique implique :",
     options: [
@@ -348,7 +348,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : autorité hiérarchique donne des instructions précises et l’agent rend compte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Hiérarchie",
     question: "Les policiers adjoints :",
     options: [
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : pas de hiérarchie entre PA ; subordination aux personnels d’encadrement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Réserve",
     question: "Le devoir de réserve chez les policiers est :",
     options: [
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : plus stricte chez les policiers, manque de retenue = sanction disciplinaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Grève",
     question: "Pour les personnels actifs, la grève est :",
     options: [
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : interdiction de faire grève pour les personnels actifs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Grève",
     question: "Pour les policiers adjoints, le droit de grève est :",
     options: [
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : policiers adjoints = droit de grève admis.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Dignité",
     question: "L’obligation de dignité impose :",
     options: [
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : dignité = exemplarité permanente, ne pas nuire à la considération de l’institution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Indépendance",
     question: "L’indépendance implique notamment :",
     options: [
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : interdiction de collecte de fonds/dons via la qualité de policier.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Particularismes police — Discernement",
     question: "Discernement & impartialité :",
     options: [
@@ -448,7 +448,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // Obligations spécifiques (exemples)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obligations spécifiques — Conjoint",
     question: "L’activité du conjoint/concubin peut entraîner des mesures si :",
     options: [
@@ -462,7 +462,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : l’autorité peut agir pour sauvegarder l’intérêt du service.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obligations spécifiques — Résidence",
     question: "L’obligation de résidence signifie :",
     options: [
@@ -476,7 +476,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : distance compatible avec rappel inopiné “dans les délais les plus brefs”.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obligations spécifiques — Hors service",
     question: "L’obligation d’agir même hors service implique :",
     options: [
@@ -490,7 +490,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : obligation d’agir même hors service (au-delà de l’assistance à personne en péril).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obligations spécifiques — Hors service",
     question: "Les textes imposent-ils “l’héroïsme à tout prix” ?",
     options: [
@@ -507,7 +507,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // III — Cumul d’activité
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumul d’activité — Principe",
     question: "Principe général (décret 2020-69) :",
     options: [
@@ -520,7 +520,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : principe du décret 2020-69 (30/01/2020).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumul d’activité — Interdictions",
     question: "Est strictement interdit (exemple) :",
     options: [
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : participation à direction à but lucratif = interdit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumul d’activité — Autorisées",
     question: "Est librement autorisé (si compatible déontologie) :",
     options: [
@@ -545,7 +545,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : bénévolat sans but lucratif = autorisé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumul d’activité — Sur autorisation",
     question: "Relève d’une autorisation (exemple) :",
     options: [
@@ -559,7 +559,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : activités accessoires possibles mais soumises à autorisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cumul d’activité — Formalisme",
     question: "La demande de cumul doit être :",
     options: [
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : demande écrite + AR, et tout changement substantiel = nouvelle demande.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions & récompenses — Idée essentielle",
     question:
         "Une faute commise dans l’exercice ou à l’occasion de l’exercice des fonctions :",
@@ -586,7 +586,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : régime disciplinaire = toute faute liée aux fonctions peut être sanctionnée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions & récompenses — Idée essentielle",
     question:
         "Un comportement exceptionnel (courage, abnégation, initiative…) peut :",
@@ -600,7 +600,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : actions exceptionnelles = rapport + proposition possible de récompense.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions & récompenses — Références",
     question: "Le contrôle externe sur la qualité OPJ/APJ relève notamment :",
     options: [
@@ -613,7 +613,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : contrôle externe (qualité OPJ/APJ) = CPP art. 224 à 230.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions & récompenses — Références",
     question: "Le contrôle par le Défenseur des droits est cité via :",
     options: [
@@ -629,7 +629,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // I — Contrôle
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de la PN",
     question: "Le contrôle interne de la Police nationale s’exerce notamment :",
     options: [
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : contrôle interne = hiérarchie + inspections PN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de la PN",
     question: "Le contrôle externe peut être assuré :",
     options: [
@@ -659,7 +659,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // II — Policiers actifs : sanctions (4 groupes)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — Sanctions",
     question:
         "Les sanctions disciplinaires des policiers actifs sont réparties :",
@@ -672,7 +672,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : 4 groupes, du moins grave au plus grave.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 1er groupe",
     question: "Le 1er groupe comprend notamment :",
     options: [
@@ -685,7 +685,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : 1er groupe = avertissement, blâme, exclusion temporaire max 3 jours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 1er groupe",
     question: "L’avertissement :",
     options: [
@@ -698,7 +698,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : avertissement = registre spécial, pas au dossier.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 1er groupe",
     question: "Le blâme :",
     options: [
@@ -712,7 +712,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : blâme = dossier, effacement auto 3 ans si rien d’autre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 2ème groupe",
     question: "Le 2ème groupe peut inclure :",
     options: [
@@ -726,7 +726,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : 2e groupe = radiation tableau avancement, abaissement, exclusion 4-15j, déplacement d’office.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 2ème groupe",
     question: "L’exclusion temporaire (4 à 15 jours) :",
     options: [
@@ -740,7 +740,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : 4 à 15 jours, privative de rémunération, sursis possible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 3ème groupe",
     question: "Le 3ème groupe comprend notamment :",
     options: [
@@ -753,7 +753,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : 3e groupe = rétrogradation + exclusion 16 jours à 2 ans (sursis possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers actifs — 4ème groupe",
     question: "Le 4ème groupe correspond aux sanctions les plus graves :",
     options: [
@@ -770,7 +770,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // Procédure / Effacement / Suspension
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure disciplinaire — Conseil",
     question: "Les sanctions du 1er groupe :",
     options: [
@@ -784,7 +784,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : 1er groupe possible sans consultation du conseil.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure disciplinaire — Cumul",
     question: "Les sanctions disciplinaires :",
     options: [
@@ -796,7 +796,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ton cours : disciplinaire et pénal peuvent coexister.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure disciplinaire — Effacement",
     question: "Blâme et exclusion (max 3 jours) :",
     options: [
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : effacement automatique au bout de 3 ans si pas de nouvelle sanction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure disciplinaire — Effacement",
     question: "Sanctions des 2ème ou 3ème groupes :",
     options: [
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : demande possible après 10 ans de services effectifs à compter de la sanction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure disciplinaire — Suspension",
     question: "La suspension est :",
     options: [
@@ -837,7 +837,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : suspension = mesure conservatoire/provisoire, pas une sanction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure disciplinaire — Suspension",
     question: "Pendant la suspension (dans ton cours) :",
     options: [
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // Récompenses (actifs)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Récompenses — Policiers actifs",
     question: "Une action exceptionnelle doit faire l’objet :",
     options: [
@@ -869,7 +869,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : rapport circonstancié + proposition possible de récompense.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Récompenses — Policiers actifs",
     question: "Parmi les récompenses possibles, on retrouve :",
     options: [
@@ -886,7 +886,7 @@ final List<QuizQuestion> questionDeontologie = [
   // =========================================================
   // III — Policiers adjoints
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers adjoints — Discipline",
     question:
         "Les sanctions disciplinaires des policiers adjoints sont prises par :",
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : PA → sanctions prises par le préfet du département d’affectation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers adjoints — Sanctions",
     question: "Par ordre croissant, les sanctions PA incluent notamment :",
     options: [
@@ -914,7 +914,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : liste complète des sanctions PA, avec licenciement en dernier.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers adjoints — Suspension",
     question:
         "Pour un policier adjoint, une suspension conservatoire peut être décidée :",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : suspension conservatoire PA = arrêté préfectoral.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers adjoints — Récompenses",
     question: "Les récompenses citées pour les policiers adjoints sont :",
     options: [
@@ -941,7 +941,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Ton cours : PA → lettre de félicitations + prime résultats exceptionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Police nationale",
     question:
         "La Police nationale est placée sous l’autorité de quel ministère ?",
@@ -956,7 +956,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Police nationale",
     question: "Au niveau central, la Police nationale est pilotée par :",
     options: ["La DGPN", "La Préfecture de police", "La Cour de cassation"],
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Police nationale",
     question: "Que signifie « DNPJ » ?",
     options: [
@@ -980,7 +980,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Police nationale",
     question:
         "Quelle direction nationale pilote la Police aux frontières (PAF) ?",
@@ -990,7 +990,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Police nationale",
     question: "Quelle direction nationale pilote les CRS ?",
     options: ["DNCRS", "DNPAF", "DNPJ"],
@@ -1000,7 +1000,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Territoire",
     question:
         "Quel échelon couvre plusieurs départements dans l’organisation territoriale ?",
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Territoire",
     question: "Le commissariat est avant tout :",
     options: [
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Chaîne hiérarchique",
     question: "En règle générale, les ordres et instructions circulent :",
     options: [
@@ -1039,7 +1039,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Contrôles",
     question:
         "En matière judiciaire, l’action de la police est contrôlée par :",
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Contrôles",
     question: "Le Défenseur des droits est :",
     options: [
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Contrôles",
     question: "L’IGPN est principalement associée à :",
     options: [
@@ -1078,7 +1078,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Filières",
     question: "La « police judiciaire » a pour objectif principal :",
     options: [
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Filières",
     question: "La Police aux frontières (PAF) intervient prioritairement sur :",
     options: [
@@ -1108,7 +1108,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Filières",
     question: "Les CRS sont classiquement mobilisées pour :",
     options: [
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Filières",
     question: "Dans l’organisation, une « filière » correspond à :",
     options: [
@@ -1136,7 +1136,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Chaîne hiérarchique",
     question: "La responsabilité des ordres donnés appartient :",
     options: [
@@ -1150,7 +1150,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Chaîne hiérarchique",
     question:
         "Un ordre est dit « manifestement illégal » et doit être refusé s’il est :",
@@ -1165,7 +1165,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Territoire",
     question: "À quoi sert surtout l’échelon zonal ?",
     options: [
@@ -1180,7 +1180,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Contrôles",
     question:
         "Quel énoncé est le plus juste concernant les contrôles sur la police ?",
@@ -1196,7 +1196,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Niveau central",
     question: "Le pilotage au niveau central sert surtout à :",
     options: [
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Le central définit la stratégie/doctrine et assure la cohérence nationale.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question:
         "Pourquoi l’usage des réseaux sociaux est-il sensible pour un policier ?",
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question:
         "Même sous pseudonyme, un policier est-il responsable de ses publications ?",
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Quel article impose le secret et la discrétion professionnels ?",
     options: [
@@ -1255,7 +1255,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Quel est un risque institutionnel lié aux réseaux sociaux ?",
     options: [
@@ -1269,7 +1269,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Le droit à l’oubli existe-t-il réellement sur internet ?",
     options: [
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question:
         "Quelle bonne pratique est recommandée pour un policier sur les réseaux ?",
@@ -1298,7 +1298,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question:
         "Un policier peut-il évoquer une mission achevée sur les réseaux sociaux ?",
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Marques de respect",
     question: "Le salut en uniforme est avant tout :",
     options: [
@@ -1327,7 +1327,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Marques de respect",
     question: "À qui le salut est-il dû en uniforme ?",
     options: [
@@ -1341,7 +1341,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Marques de respect",
     question:
         "Lors d’une présentation dans un bureau, que fait le policier en premier ?",
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Marques de respect",
     question: "Quelle formule est adaptée à un commissaire ?",
     options: ["Mes respects", "À vos ordres", "Salut chef"],
@@ -1365,7 +1365,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Code de déontologie",
     question:
         "Sous quelle autorité agissent la police et la gendarmerie pour la sécurité intérieure ?",
@@ -1380,7 +1380,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Code de déontologie",
     question: "Les règles déontologiques s’appliquent-elles hors service ?",
     options: [
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Un policier doit-il rendre compte d’un fait privé pouvant entraîner des poursuites ?",
@@ -1409,7 +1409,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un policier peut-il refuser un ordre manifestement illégal ?",
     options: [
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question:
         "Divulguer une information d’enquête sur les réseaux sociaux est :",
@@ -1438,7 +1438,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Un policier peut-il accepter un cadeau lié à ses fonctions ?",
     options: [
@@ -1451,7 +1451,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "Le policier doit traiter les personnes :",
     options: [
@@ -1464,7 +1464,7 @@ final List<QuizQuestion> questionDeontologie = [
         "L’impartialité est une valeur fondamentale du service public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La déontologie policière correspond à :",
     options: [
@@ -1479,7 +1479,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Les règles déontologiques s’appliquent :",
     options: [
@@ -1493,7 +1493,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect de la déontologie conditionne principalement :",
     options: [
@@ -1507,7 +1507,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La déontologie vise à protéger :",
     options: [
@@ -1520,7 +1520,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Un manquement déontologique peut entraîner :",
     options: [
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier est avant tout :",
     options: [
@@ -1548,7 +1548,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La neutralité impose au policier :",
     options: [
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La dignité du policier doit être respectée :",
     options: [
@@ -1574,7 +1574,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La dignité est une exigence permanente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La déontologie policière repose principalement sur :",
     options: [
@@ -1588,7 +1588,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier est dépositaire :",
     options: [
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "L’exercice de l’autorité doit toujours être :",
     options: [
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect des règles déontologiques contribue directement :",
     options: [
@@ -1629,7 +1629,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit faire preuve de discernement afin de :",
     options: [
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La probité interdit au policier :",
     options: [
@@ -1657,7 +1657,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La notion de loyauté implique notamment :",
     options: [
@@ -1670,7 +1670,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Un policier identifiable comme tel engage :",
     options: [
@@ -1684,7 +1684,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le devoir de réserve impose principalement :",
     options: [
@@ -1697,7 +1697,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit se comporter avec dignité :",
     options: [
@@ -1710,7 +1710,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La neutralité interdit au policier en service :",
     options: [
@@ -1723,7 +1723,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "L’exemplarité du policier signifie qu’il doit :",
     options: [
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect de la déontologie permet aussi :",
     options: [
@@ -1749,7 +1749,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit traiter toute personne :",
     options: [
@@ -1762,7 +1762,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Un comportement contraire à la déontologie peut :",
     options: [
@@ -1774,7 +1774,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Chaque manquement affaiblit la confiance publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier agit toujours :",
     options: [
@@ -1787,7 +1787,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question:
         "Le principe de proportionnalité signifie que l’action policière doit être :",
@@ -1801,7 +1801,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit inspirer confiance par :",
     options: [
@@ -1814,7 +1814,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect de la dignité humaine est :",
     options: [
@@ -1827,7 +1827,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question:
         "Le policier doit s’abstenir de toute discrimination fondée notamment sur :",
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La loyauté impose au policier :",
     options: [
@@ -1854,7 +1854,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit éviter tout comportement pouvant :",
     options: [
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect de la déontologie s’impose :",
     options: [
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit faire preuve de retenue notamment :",
     options: [
@@ -1893,7 +1893,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le manquement à la déontologie peut entraîner :",
     options: [
@@ -1906,7 +1906,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit toujours conserver :",
     options: ["Son sang-froid", "Un ton autoritaire", "Une distance totale"],
@@ -1915,7 +1915,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "L’autorité du policier repose avant tout sur :",
     options: [
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect du public implique notamment :",
     options: [
@@ -1941,7 +1941,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit éviter toute attitude :",
     options: ["Humiliante ou vexatoire", "Directive", "Professionnelle"],
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Le respect de la dignité est impératif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier est tenu d’exercer ses fonctions avec :",
     options: ["Neutralité", "Partialité assumée", "Préférence personnelle"],
@@ -1958,7 +1958,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La neutralité impose au policier de ne pas :",
     options: [
@@ -1971,7 +1971,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "L’impartialité signifie que le policier :",
     options: [
@@ -1984,7 +1984,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question:
         "Le policier doit éviter toute familiarité excessive car elle peut :",
@@ -1998,7 +1998,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect du secret professionnel concerne :",
     options: [
@@ -2011,7 +2011,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le secret professionnel s’impose au policier :",
     options: [
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Divulguer une information couverte par le secret peut engager :",
     options: [
@@ -2037,7 +2037,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La discrétion professionnelle impose au policier :",
     options: [
@@ -2050,7 +2050,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit adopter une attitude exemplaire car il est :",
     options: [
@@ -2063,7 +2063,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "L’exemplarité s’applique au policier :",
     options: [
@@ -2076,7 +2076,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Un comportement inapproprié hors service peut :",
     options: [
@@ -2089,7 +2089,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit rendre compte à sa hiérarchie :",
     options: [
@@ -2102,7 +2102,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le refus de rendre compte constitue :",
     options: [
@@ -2115,7 +2115,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La loyauté interdit notamment au policier :",
     options: [
@@ -2128,7 +2128,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La déontologie vise principalement à :",
     options: [
@@ -2140,7 +2140,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Elle garantit un usage légitime de l’autorité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit exercer ses missions avec loyauté envers :",
     options: [
@@ -2154,7 +2154,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La loyauté implique notamment :",
     options: [
@@ -2167,7 +2167,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier ne peut refuser d’exécuter un ordre que s’il est :",
     options: [
@@ -2181,7 +2181,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Un ordre manifestement illégal est un ordre :",
     options: [
@@ -2195,7 +2195,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "L’exécution d’un ordre manifestement illégal peut engager :",
     options: [
@@ -2208,7 +2208,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question:
         "Le policier doit rendre compte lorsqu’un événement personnel est susceptible :",
@@ -2223,7 +2223,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect de la hiérarchie est indispensable pour :",
     options: [
@@ -2236,7 +2236,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La discipline policière repose notamment sur :",
     options: [
@@ -2249,7 +2249,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit adopter un comportement courtois afin de :",
     options: [
@@ -2262,7 +2262,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La relation avec le public doit toujours être empreinte de :",
     options: [
@@ -2275,7 +2275,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le vouvoiement est une règle destinée à :",
     options: [
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit veiller à son apparence car elle reflète :",
     options: [
@@ -2301,7 +2301,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Une tenue négligée peut être perçue comme :",
     options: [
@@ -2314,7 +2314,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le policier doit adapter son langage afin de rester :",
     options: [
@@ -2327,7 +2327,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le manquement au respect du public peut constituer :",
     options: [
@@ -2339,7 +2339,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Le respect du public est une obligation.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force par un policier doit toujours être :",
     options: [
@@ -2353,7 +2353,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question:
         "Le principe de proportionnalité signifie que la force utilisée doit être :",
@@ -2368,7 +2368,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le principe de nécessité impose que l’usage de la force soit :",
     options: ["Le dernier recours", "Utilisé dès le début", "Automatique"],
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Avant d’utiliser la force, le policier doit privilégier :",
     options: [
@@ -2391,7 +2391,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force doit cesser :",
     options: [
@@ -2404,7 +2404,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’emploi d’un moyen de force injustifié peut constituer :",
     options: [
@@ -2417,7 +2417,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question:
         "Le policier doit toujours pouvoir justifier l’usage de la force par :",
@@ -2431,7 +2431,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force est interdit lorsqu’il vise :",
     options: ["À punir", "À neutraliser une menace", "À protéger autrui"],
@@ -2440,7 +2440,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Le respect des libertés individuelles est une obligation :",
     options: [
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Toute atteinte aux libertés doit être :",
     options: [
@@ -2466,7 +2466,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Une mesure de contrainte sans base légale est :",
     options: ["Illégale", "Tolérée en cas d’urgence", "Valable si efficace"],
@@ -2475,7 +2475,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Le policier doit informer la personne concernée :",
     options: [
@@ -2488,7 +2488,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Le respect de la dignité humaine s’impose :",
     options: [
@@ -2501,7 +2501,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Les propos humiliants ou dégradants sont :",
     options: [
@@ -2514,7 +2514,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Le policier doit faire preuve d’impartialité afin de :",
     options: [
@@ -2527,7 +2527,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Une discrimination dans l’action policière est :",
     options: [
@@ -2540,7 +2540,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Le contrôle d’identité doit reposer sur :",
     options: [
@@ -2553,7 +2553,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés publiques",
     question: "Un contrôle abusif peut engager :",
     options: [
@@ -2565,7 +2565,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Les abus sont sanctionnables.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes interpellées",
     question: "Toute personne interpellée doit être traitée avec :",
     options: [
@@ -2579,7 +2579,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes interpellées",
     question: "L’usage de menottes est autorisé uniquement lorsqu’il est :",
     options: [
@@ -2592,7 +2592,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes interpellées",
     question: "Une personne maîtrisée et coopérative doit être :",
     options: [
@@ -2605,7 +2605,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes interpellées",
     question: "Le policier doit adapter son comportement face à une personne :",
     options: ["Vulnérable", "Opposante uniquement", "Connue défavorablement"],
@@ -2615,7 +2615,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question: "La garde à vue est une mesure :",
     options: [
@@ -2629,7 +2629,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question: "Une personne placée en garde à vue doit être informée :",
     options: [
@@ -2642,7 +2642,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question: "Le non-respect des droits en garde à vue peut entraîner :",
     options: [
@@ -2655,7 +2655,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question:
         "Le policier doit veiller à l’état de santé de la personne gardée à vue :",
@@ -2669,7 +2669,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes vulnérables",
     question: "Une personne mineure bénéficie :",
     options: [
@@ -2682,7 +2682,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes vulnérables",
     question: "Une personne en état d’ivresse manifeste doit être :",
     options: [
@@ -2695,7 +2695,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes vulnérables",
     question: "Une personne souffrant de troubles mentaux doit être :",
     options: [
@@ -2708,7 +2708,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes vulnérables",
     question: "Le recours à un médecin est obligatoire lorsque :",
     options: [
@@ -2721,7 +2721,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Auditions",
     question: "Les auditions doivent être conduites :",
     options: [
@@ -2734,7 +2734,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Auditions",
     question: "Obtenir un aveu par contrainte est :",
     options: [
@@ -2747,7 +2747,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Auditions",
     question: "Le respect du silence de la personne entendue est :",
     options: ["Obligatoire", "Optionnel", "Un frein à l’enquête"],
@@ -2756,7 +2756,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Un manquement déontologique peut entraîner :",
     options: [
@@ -2769,7 +2769,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Un comportement contraire à la déontologie nuit :",
     options: [
@@ -2782,7 +2782,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Chaque policier est responsable :",
     options: [
@@ -2795,7 +2795,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Le respect strict de la déontologie permet :",
     options: [
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La légitimité repose sur le respect des règles.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles",
     question: "Un contrôle d’identité doit toujours être :",
     options: [
@@ -2820,7 +2820,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles",
     question: "Lors d’un contrôle, le policier doit se comporter avec :",
     options: [
@@ -2833,7 +2833,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles",
     question: "Un contrôle discriminatoire est :",
     options: [
@@ -2847,7 +2847,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles",
     question: "Le contrôle fondé uniquement sur l’apparence constitue :",
     options: [
@@ -2860,7 +2860,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Palpations",
     question: "La palpation de sécurité vise principalement à :",
     options: [
@@ -2873,7 +2873,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Palpations",
     question: "La palpation de sécurité doit être :",
     options: [
@@ -2886,7 +2886,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Palpations",
     question: "La palpation doit être réalisée par un agent :",
     options: ["Du même sexe", "Le plus gradé", "Disponible uniquement"],
@@ -2895,7 +2895,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Palpations",
     question: "Une palpation injustifiée peut constituer :",
     options: [
@@ -2908,7 +2908,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fouilles",
     question: "La fouille d’une personne est :",
     options: ["Strictement encadrée", "Libre d’appréciation", "Automatique"],
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fouilles",
     question: "La fouille intégrale nécessite :",
     options: [
@@ -2930,7 +2930,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fouilles",
     question: "La dignité de la personne doit être respectée lors :",
     options: [
@@ -2943,7 +2943,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fouilles",
     question: "Une fouille sans base légale peut entraîner :",
     options: [
@@ -2956,7 +2956,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Le policier doit concilier sécurité publique et :",
     options: [
@@ -2969,7 +2969,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Toute atteinte aux libertés doit être :",
     options: ["Nécessaire et proportionnée", "Décidée librement", "Préventive"],
@@ -2978,7 +2978,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Le principe de proportionnalité implique :",
     options: [
@@ -2991,7 +2991,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Une intervention disproportionnée peut :",
     options: [
@@ -3004,7 +3004,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image de l’institution",
     question: "Le comportement du policier engage :",
     options: [
@@ -3017,7 +3017,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image de l’institution",
     question: "Une attitude irréprochable contribue à :",
     options: [
@@ -3030,7 +3030,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image de l’institution",
     question: "Le respect des règles déontologiques garantit :",
     options: [
@@ -3042,7 +3042,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La légitimité repose sur le droit et l’éthique.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force par un policier doit toujours être :",
     options: [
@@ -3056,7 +3056,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force est autorisé lorsque :",
     options: [
@@ -3069,7 +3069,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le principe de proportionnalité implique :",
     options: [
@@ -3082,7 +3082,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage excessif de la force constitue :",
     options: [
@@ -3095,7 +3095,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le policier doit cesser l’usage de la force lorsque :",
     options: [
@@ -3108,7 +3108,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Une personne maîtrisée et immobilisée doit être :",
     options: [
@@ -3121,7 +3121,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force doit être précédé lorsque possible :",
     options: ["D’une sommation", "D’une sanction", "D’un rapport"],
@@ -3130,7 +3130,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’absence de sommation peut être justifiée lorsque :",
     options: [
@@ -3143,7 +3143,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question:
         "Le policier est responsable de l’usage de la force même sur ordre :",
@@ -3153,7 +3153,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Un ordre d’utiliser la force manifestement illégal doit être :",
     options: ["Refusé", "Exécuté", "Négocié"],
@@ -3162,7 +3162,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force doit être mentionné :",
     options: [
@@ -3175,7 +3175,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le compte rendu doit être :",
     options: ["Précis et sincère", "Bref et approximatif", "Orienté"],
@@ -3184,7 +3184,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Toute blessure constatée doit être :",
     options: ["Signalée", "Minimisée", "Ignorée"],
@@ -3193,7 +3193,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le recours aux armes est autorisé uniquement :",
     options: [
@@ -3206,7 +3206,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage des armes doit respecter :",
     options: [
@@ -3219,7 +3219,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Un usage injustifié de l’arme peut entraîner :",
     options: [
@@ -3232,7 +3232,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le policier doit porter assistance à une personne blessée :",
     options: [
@@ -3245,7 +3245,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’obligation d’assistance s’applique :",
     options: [
@@ -3257,7 +3257,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "L’obligation d’assistance est générale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le principe de neutralité impose au policier :",
     options: [
@@ -3271,7 +3271,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "La neutralité concerne principalement :",
     options: [
@@ -3284,7 +3284,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "En service, le policier peut exprimer ses opinions politiques :",
     options: ["Jamais", "Uniquement à ses collègues", "Avec modération"],
@@ -3293,7 +3293,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le port d’un signe religieux visible en service est :",
     options: ["Interdit", "Autorisé discrètement", "Toléré"],
@@ -3302,7 +3302,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "La neutralité du policier garantit :",
     options: [
@@ -3315,7 +3315,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le devoir de réserve s’applique :",
     options: [
@@ -3329,7 +3329,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Hors service, le policier peut s’exprimer librement :",
     options: [
@@ -3342,7 +3342,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question:
         "Une publication politique sur les réseaux sociaux peut constituer :",
@@ -3357,7 +3357,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Critiquer publiquement l’institution policière est :",
     options: ["Interdit", "Autorisé anonymement", "Toléré hors service"],
@@ -3366,7 +3366,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le devoir de réserve vise à protéger :",
     options: [
@@ -3379,7 +3379,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Un policier identifiable ne doit pas :",
     options: [
@@ -3392,7 +3392,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "L’obligation de neutralité s’applique aussi :",
     options: [
@@ -3405,7 +3405,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "La neutralité interdit au policier :",
     options: [
@@ -3418,7 +3418,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Un manquement à la neutralité peut entraîner :",
     options: [
@@ -3431,7 +3431,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le respect de la neutralité renforce :",
     options: [
@@ -3444,7 +3444,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Afficher une opinion religieuse en uniforme est :",
     options: ["Strictement interdit", "Toléré", "Acceptable hors mission"],
@@ -3453,7 +3453,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le policier doit s’abstenir de toute prise de position :",
     options: [
@@ -3466,7 +3466,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "La neutralité est indissociable de :",
     options: ["L’impartialité", "La discrétion", "La disponibilité"],
@@ -3475,7 +3475,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Un comportement partisan en service est :",
     options: [
@@ -3487,7 +3487,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Le service public impose une stricte neutralité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Principes généraux",
     question: "Le policier exerce ses fonctions principalement au service :",
     options: [
@@ -3501,7 +3501,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Principes généraux",
     question: "Le policier agit avec loyauté envers :",
     options: [
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Principes généraux",
     question: "Le respect de la dignité humaine est exigé :",
     options: [
@@ -3528,7 +3528,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "La neutralité impose au policier :",
     options: [
@@ -3542,7 +3542,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "En service, un policier peut afficher une opinion politique :",
     options: ["Non, jamais", "Oui avec discrétion", "Oui hors intervention"],
@@ -3551,7 +3551,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le port d’un signe religieux en uniforme est :",
     options: ["Interdit", "Toléré", "Autorisé discrètement"],
@@ -3560,7 +3560,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image",
     question: "Le comportement du policier engage :",
     options: [
@@ -3573,7 +3573,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image",
     question: "Tenir des propos injurieux en public constitue :",
     options: [
@@ -3586,7 +3586,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Les réseaux sociaux sont considérés comme :",
     options: ["Un espace public", "Un espace privé", "Un espace sans règles"],
@@ -3595,7 +3595,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Même sous pseudonyme, le policier est :",
     options: [
@@ -3608,7 +3608,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Publier une photo en uniforme sur un réseau social peut :",
     options: [
@@ -3621,7 +3621,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Le droit à l’oubli sur internet est :",
     options: ["Inexistant", "Garanti", "Partiel"],
@@ -3630,7 +3630,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "La géolocalisation sur les réseaux sociaux doit être :",
     options: ["Désactivée", "Toujours activée", "Utilisée librement"],
@@ -3639,7 +3639,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Mentionner une mission en cours sur internet est :",
     options: ["Strictement interdit", "Toléré", "Autorisé hors service"],
@@ -3648,7 +3648,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Une publication humoristique peut engager la responsabilité :",
     options: ["Oui", "Non", "Uniquement si elle est signée"],
@@ -3657,7 +3657,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Critiquer publiquement la hiérarchie est :",
     options: ["Interdit", "Autorisé anonymement", "Toléré hors service"],
@@ -3666,7 +3666,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image",
     question: "Le policier doit faire preuve d’exemplarité :",
     options: [
@@ -3679,7 +3679,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Image",
     question: "Le crédit de la police nationale correspond à :",
     options: ["La réputation de l’institution", "Son budget", "Son effectif"],
@@ -3688,7 +3688,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question: "Un manquement déontologique peut entraîner :",
     options: [
@@ -3701,7 +3701,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le respect strict des règles d’usage de la force garantit :",
     options: [
@@ -3714,7 +3714,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "Le respect des règles déontologiques est aussi :",
     options: [
@@ -3726,7 +3726,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La déontologie protège autant qu’elle oblige.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel s’impose au policier :",
     options: [
@@ -3739,7 +3739,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel concerne :",
     options: [
@@ -3753,7 +3753,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Divulguer une information à un proche est :",
     options: ["Interdit", "Toléré", "Autorisé hors service"],
@@ -3762,7 +3762,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel protège principalement :",
     options: [
@@ -3775,7 +3775,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion professionnelle",
     question: "La discrétion professionnelle impose de :",
     options: [
@@ -3788,7 +3788,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion professionnelle",
     question: "Un policier peut commenter une affaire en cours :",
     options: ["Non", "Oui anonymement", "Oui hors service"],
@@ -3797,7 +3797,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion professionnelle",
     question: "Parler d’une intervention passée sans autorisation est :",
     options: ["Interdit", "Autorisé", "Toléré avec prudence"],
@@ -3806,7 +3806,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "La probité correspond à :",
     options: [
@@ -3819,7 +3819,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Un policier peut accepter un cadeau lié à ses fonctions :",
     options: ["Non", "Oui s’il est modeste", "Oui avec accord du citoyen"],
@@ -3828,7 +3828,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question:
         "Utiliser sa qualité de policier pour un avantage personnel est :",
@@ -3838,7 +3838,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "La corruption est :",
     options: [
@@ -3851,7 +3851,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Un conflit d’intérêts doit être :",
     options: ["Évité ou signalé", "Ignoré", "Géré personnellement"],
@@ -3860,7 +3860,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "L’impartialité impose :",
     options: [
@@ -3873,7 +3873,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "Un policier peut adapter son comportement selon l’origine :",
     options: ["Non", "Oui", "Uniquement en intervention"],
@@ -3882,7 +3882,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "Traiter différemment un proche est :",
     options: ["Un manquement", "Autorisé", "Toléré"],
@@ -3891,7 +3891,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "L’impartialité s’applique :",
     options: [
@@ -3904,7 +3904,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Consulter un fichier par curiosité est :",
     options: ["Interdit", "Autorisé", "Toléré hors service"],
@@ -3913,7 +3913,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Partager ses identifiants informatiques est :",
     options: ["Interdit", "Autorisé", "Toléré"],
@@ -3921,7 +3921,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Les accès sont strictement personnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "La police nationale fonctionne selon un principe de :",
     options: [
@@ -3934,7 +3934,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Un ordre doit en principe être transmis par :",
     options: ["La voie hiérarchique", "Un collègue", "Un tiers extérieur"],
@@ -3943,7 +3943,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Un supérieur hiérarchique est responsable :",
     options: [
@@ -3956,7 +3956,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Le policier doit exécuter les ordres :",
     options: [
@@ -3969,7 +3969,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre manifestement illégal doit être :",
     options: ["Refusé", "Exécuté", "Ignoré sans en parler"],
@@ -3978,7 +3978,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre est manifestement illégal lorsqu’il est :",
     options: [
@@ -3991,7 +3991,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Refuser un ordre légal expose à :",
     options: [
@@ -4004,7 +4004,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre écrit illégal :",
     options: [
@@ -4017,7 +4017,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Le policier doit rendre compte :",
     options: [
@@ -4030,7 +4030,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Le compte rendu doit être :",
     options: ["Loyal et précis", "Orienté", "Incomplet si nécessaire"],
@@ -4039,7 +4039,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Omettre volontairement un fait est :",
     options: ["Une faute", "Toléré", "Autorisé"],
@@ -4048,7 +4048,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Le droit au silence est opposable à la hiérarchie :",
     options: ["Non", "Oui", "Uniquement hors service"],
@@ -4058,7 +4058,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Un agent convoqué par une autorité doit :",
     options: [
@@ -4071,7 +4071,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Contourner volontairement la hiérarchie est :",
     options: ["Une faute", "Autorisé", "Encouragé"],
@@ -4080,7 +4080,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "En cas d’urgence, un ordre peut être transmis :",
     options: ["Directement", "Uniquement par écrit", "Uniquement par note"],
@@ -4089,7 +4089,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Après une transmission directe en urgence, il faut :",
     options: [
@@ -4102,7 +4102,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "La responsabilité du subordonné :",
     options: [
@@ -4115,7 +4115,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Mentir à sa hiérarchie constitue :",
     options: ["Un manquement grave", "Une simple erreur", "Un droit"],
@@ -4124,7 +4124,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discipline",
     question: "La discipline est indispensable :",
     options: [
@@ -4136,7 +4136,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La discipline garantit l’efficacité collective.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force par un policier doit être :",
     options: [
@@ -4150,7 +4150,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "La force peut être utilisée uniquement lorsque :",
     options: [
@@ -4163,7 +4163,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force doit viser :",
     options: [
@@ -4176,7 +4176,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Proportionnalité",
     question: "La proportionnalité signifie que la force doit être :",
     options: [
@@ -4189,7 +4189,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Proportionnalité",
     question: "Une force excessive est :",
     options: ["Interdite", "Tolérée en intervention", "Autorisé sous stress"],
@@ -4198,7 +4198,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question: "Le discernement consiste à :",
     options: [
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question: "Le discernement prend en compte :",
     options: [
@@ -4224,7 +4224,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question: "Le discernement est exigé :",
     options: [
@@ -4237,7 +4237,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le dialogue doit être privilégié lorsque :",
     options: [
@@ -4250,7 +4250,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force est un :",
     options: ["Dernier recours", "Premier réflexe", "Outil systématique"],
@@ -4259,7 +4259,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Employer la force sans nécessité constitue :",
     options: ["Une faute", "Un droit", "Une obligation"],
@@ -4268,7 +4268,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Menottage",
     question: "Le menottage est justifié lorsque la personne est :",
     options: [
@@ -4281,7 +4281,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Menottage",
     question: "Le menottage doit être :",
     options: ["Justifié et proportionné", "Automatique", "Punitif"],
@@ -4290,7 +4290,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Menottage",
     question: "Menotter sans justification est :",
     options: ["Fautif", "Recommandé", "Obligatoire"],
@@ -4299,7 +4299,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question: "Une personne interpellée est placée sous :",
     options: [
@@ -4312,7 +4312,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question: "Tout traitement inhumain ou dégradant est :",
     options: ["Interdit", "Toléré en cas de stress", "Autorisé en urgence"],
@@ -4321,7 +4321,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question: "L’état de santé d’une personne retenue doit être :",
     options: ["Surveillé", "Ignoré", "Évalué uniquement à la fin"],
@@ -4330,7 +4330,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "La force doit cesser lorsque :",
     options: [
@@ -4342,7 +4342,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La force ne doit jamais excéder la nécessité.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Le policier agit envers la population avec :",
     options: [
@@ -4355,7 +4355,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "La courtoisie du policier est :",
     options: [
@@ -4368,7 +4368,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Le tutoiement d’un usager est :",
     options: ["À éviter sauf nécessité", "Recommandé", "Obligatoire"],
@@ -4377,7 +4377,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le policier doit faire preuve de neutralité :",
     options: [
@@ -4390,7 +4390,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Exprimer une opinion politique en service est :",
     options: ["Interdit", "Autorisé", "Toléré"],
@@ -4399,7 +4399,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "Le policier traite les personnes :",
     options: [
@@ -4412,7 +4412,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Respect",
     question: "La dignité humaine doit être respectée :",
     options: [
@@ -4425,7 +4425,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Respect",
     question: "Les propos humiliants sont :",
     options: [
@@ -4438,7 +4438,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Le policier doit expliquer ses actions lorsque :",
     options: ["Cela est possible", "La personne insiste", "Jamais"],
@@ -4447,7 +4447,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "La confiance du public repose notamment sur :",
     options: ["Le comportement du policier", "La sanction", "La contrainte"],
@@ -4456,7 +4456,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrimination",
     question: "Toute discrimination est :",
     options: [
@@ -4469,7 +4469,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrimination",
     question: "Le contrôle fondé sur l’apparence est :",
     options: ["Interdit", "Autorisé", "Recommandé"],
@@ -4478,7 +4478,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrimination",
     question: "Un contrôle doit reposer sur :",
     options: [
@@ -4491,7 +4491,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Le policier représente :",
     options: ["L’État", "Sa propre opinion", "Son service uniquement"],
@@ -4500,7 +4500,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Une provocation verbale doit entraîner :",
     options: [
@@ -4513,7 +4513,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Maîtrise de soi",
     question: "La maîtrise de soi est :",
     options: [
@@ -4526,7 +4526,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Maîtrise de soi",
     question: "Une réaction excessive face à une insulte est :",
     options: ["Fautive", "Compréhensible", "Justifiée"],
@@ -4535,7 +4535,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Le dialogue avec la population permet :",
     options: [
@@ -4548,7 +4548,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question: "Un comportement déplacé peut entraîner :",
     options: [
@@ -4560,7 +4560,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Le comportement est strictement encadré.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Le policier est placé sous l’autorité :",
     options: ["De la hiérarchie", "Du public", "De sa seule conscience"],
@@ -4570,7 +4570,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Le principe hiérarchique implique :",
     options: [
@@ -4583,7 +4583,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre légal doit être :",
     options: ["Exécuté", "Contesté systématiquement", "Ignoré"],
@@ -4592,7 +4592,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre manifestement illégal doit être :",
     options: ["Refusé", "Exécuté", "Reporté"],
@@ -4602,7 +4602,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre compromettant gravement un intérêt public doit être :",
     options: ["Refusé", "Appliqué", "Négocié"],
@@ -4611,7 +4611,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Le policier reste responsable :",
     options: ["De ses actes", "Uniquement des ordres reçus", "De rien"],
@@ -4621,7 +4621,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "La responsabilité disciplinaire peut être engagée :",
     options: [
@@ -4634,7 +4634,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "La responsabilité pénale du policier est :",
     options: ["Personnelle", "Collective", "Inexistante"],
@@ -4643,7 +4643,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Rendre compte signifie :",
     options: ["Informer la hiérarchie", "Informer le public", "Ne rien dire"],
@@ -4652,7 +4652,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Le compte rendu doit être :",
     options: ["Exact et loyal", "Partiel", "Orienté"],
@@ -4661,7 +4661,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Omettre volontairement un fait est :",
     options: ["Une faute", "Acceptable", "Recommandé"],
@@ -4670,7 +4670,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Le policier rend compte :",
     options: [
@@ -4683,7 +4683,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Contester un ordre doit se faire :",
     options: [
@@ -4696,7 +4696,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "La hiérarchie garantit :",
     options: ["La cohérence de l’action", "L’arbitraire", "La confusion"],
@@ -4705,7 +4705,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Un policier peut être sanctionné pour :",
     options: [
@@ -4718,7 +4718,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "La responsabilité administrative concerne :",
     options: ["Les fautes de service", "Les crimes uniquement", "Les opinions"],
@@ -4727,7 +4727,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "L’obéissance hiérarchique est limitée par :",
     options: ["La légalité", "La fatigue", "L’humeur"],
@@ -4736,7 +4736,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Un rapport mensonger constitue :",
     options: ["Une faute grave", "Une simple erreur", "Un détail"],
@@ -4745,7 +4745,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Compte rendu",
     question: "Le compte rendu protège aussi :",
     options: [
@@ -4757,7 +4757,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Il trace l’action réalisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel s’impose au policier :",
     options: [
@@ -4770,7 +4770,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel concerne :",
     options: [
@@ -4784,7 +4784,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "La violation du secret professionnel est :",
     options: ["Punissable pénalement", "Tolérée", "Sans conséquence"],
@@ -4793,7 +4793,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion",
     question: "L’obligation de discrétion professionnelle impose :",
     options: [
@@ -4806,7 +4806,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion",
     question: "Un policier peut divulguer une information professionnelle :",
     options: [
@@ -4819,7 +4819,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion",
     question: "La discrétion professionnelle s’applique :",
     options: [
@@ -4832,7 +4832,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Communication",
     question: "La communication avec les médias relève :",
     options: [
@@ -4845,7 +4845,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Communication",
     question: "Un policier interrogé par un journaliste doit :",
     options: [
@@ -4858,7 +4858,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Les réseaux sociaux sont soumis :",
     options: [
@@ -4871,7 +4871,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Publier une photo de service sans autorisation est :",
     options: ["Interdit", "Autorisé", "Recommandé"],
@@ -4880,7 +4880,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question:
         "Critiquer publiquement l’institution policière peut constituer :",
@@ -4894,7 +4894,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Un policier doit éviter en ligne :",
     options: [
@@ -4907,7 +4907,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Révéler une enquête en cours à un proche est :",
     options: ["Une infraction", "Toléré", "Sans conséquence"],
@@ -4916,7 +4916,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel protège :",
     options: [
@@ -4929,7 +4929,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion",
     question: "Parler d’un dossier sensible dans un lieu public est :",
     options: ["Un manquement", "Autorisé", "Anodin"],
@@ -4938,7 +4938,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discrétion",
     question: "La discrétion professionnelle vise à :",
     options: [
@@ -4951,7 +4951,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Communication",
     question: "Un policier ne doit jamais divulguer :",
     options: ["Des informations opérationnelles", "Son identité", "Son grade"],
@@ -4960,7 +4960,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Un pseudonyme sur les réseaux sociaux :",
     options: [
@@ -4973,7 +4973,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Réseaux sociaux",
     question: "Partager une intervention en direct est :",
     options: ["Strictement interdit", "Autorisé", "Encouragé"],
@@ -4982,7 +4982,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Neutralité",
     question: "La neutralité religieuse impose :",
     options: [
@@ -4995,7 +4995,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Un usage injustifié de la force peut entraîner :",
     options: [
@@ -5008,7 +5008,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question: "La violation du secret professionnel peut entraîner :",
     options: [
@@ -5020,7 +5020,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La violation du secret est lourdement sanctionnée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force par le policier doit toujours être :",
     options: ["Strictement nécessaire", "Systématique", "Préventif"],
@@ -5029,7 +5029,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question:
         "Le principe de proportionnalité signifie que la force utilisée doit être :",
@@ -5043,7 +5043,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force est autorisé uniquement si :",
     options: [
@@ -5056,7 +5056,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Le policier doit cesser l’usage de la force dès que :",
     options: [
@@ -5069,7 +5069,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la force doit toujours respecter :",
     options: [
@@ -5082,7 +5082,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Le policier agit dans le respect :",
     options: [
@@ -5095,7 +5095,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Une atteinte injustifiée aux libertés peut constituer :",
     options: ["Une faute", "Un acte normal", "Une obligation"],
@@ -5104,7 +5104,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Le contrôle d’identité doit être :",
     options: ["Légalement justifié", "Systématique", "Discrétionnaire"],
@@ -5113,7 +5113,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Libertés",
     question: "Un contrôle abusif peut engager :",
     options: [
@@ -5126,7 +5126,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage de la contrainte doit être précédé :",
     options: [
@@ -5138,7 +5138,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La sommation est une étape essentielle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes interpellées",
     question: "Toute personne interpellée doit être traitée avec :",
     options: [
@@ -5152,7 +5152,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes interpellées",
     question: "Une personne interpellée est placée sous la protection :",
     options: [
@@ -5166,7 +5166,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question: "La garde à vue doit respecter :",
     options: [
@@ -5179,7 +5179,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question: "Toute personne placée en garde à vue doit être informée :",
     options: ["De ses droits", "Uniquement du motif", "Uniquement de la durée"],
@@ -5188,7 +5188,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Garde à vue",
     question: "Le non-respect des droits en garde à vue peut entraîner :",
     options: [
@@ -5201,7 +5201,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Mineurs",
     question: "Un mineur interpellé doit bénéficier :",
     options: [
@@ -5214,7 +5214,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Mineurs",
     question: "La présence d’un représentant légal est :",
     options: ["Obligatoire sauf exception légale", "Facultative", "Interdite"],
@@ -5223,7 +5223,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes vulnérables",
     question: "Une personne vulnérable doit faire l’objet :",
     options: [
@@ -5236,7 +5236,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes vulnérables",
     question: "La vulnérabilité peut être liée :",
     options: [
@@ -5249,7 +5249,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question: "Toute personne privée de liberté doit être protégée contre :",
     options: [
@@ -5262,7 +5262,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question:
         "Un manquement grave à la protection d’une personne détenue engage :",
@@ -5276,7 +5276,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "Un usage excessif de la force peut être qualifié de :",
     options: ["Faute grave", "Geste professionnel", "Erreur sans conséquence"],
@@ -5284,7 +5284,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "L’excès de force est strictement sanctionné.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-9 du Code de déontologie ?",
     options: ["La probité", "L’impartialité", "Le discernement"],
@@ -5294,7 +5294,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "Quel article du Code de déontologie concerne la probité ?",
     options: ["Article R. 434-9", "Article R. 434-11", "Article R. 434-8"],
@@ -5303,7 +5303,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-11 du Code de déontologie ?",
     options: ["L’impartialité", "La probité", "La loyauté"],
@@ -5313,7 +5313,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "Quel article impose l’impartialité au policier ?",
     options: ["Article R. 434-11", "Article R. 434-10", "Article R. 434-12"],
@@ -5322,7 +5322,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "L’article R. 434-8 concerne :",
     options: [
@@ -5336,7 +5336,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "Quel article traite du secret professionnel ?",
     options: ["Article R. 434-8", "Article R. 434-12", "Article R. 434-9"],
@@ -5346,7 +5346,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-10 ?",
     options: ["Le discernement", "L’obéissance", "La neutralité"],
@@ -5356,7 +5356,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "Quel article impose le discernement au policier ?",
     options: ["Article R. 434-10", "Article R. 434-11", "Article R. 434-14"],
@@ -5365,7 +5365,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "L’article R. 434-12 concerne :",
     options: [
@@ -5379,7 +5379,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit tout comportement portant atteinte à l’image de la police ?",
@@ -5390,7 +5390,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-29 ?",
     options: ["Le devoir de réserve", "La probité", "La disponibilité"],
@@ -5399,7 +5399,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "Quel article encadre le devoir de réserve du policier ?",
     options: ["Article R. 434-29", "Article R. 434-30", "Article R. 434-11"],
@@ -5408,7 +5408,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "L’article R. 434-30 concerne :",
     options: ["La disponibilité", "L’impartialité", "La loyauté"],
@@ -5416,7 +5416,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "L’article R. 434-30 impose la disponibilité du policier.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-2 ?",
     options: [
@@ -5431,7 +5431,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article définit le cadre général de l'action de la police nationale et de la gendarmerie nationale ?",
@@ -5441,7 +5441,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-3 ?",
     options: [
@@ -5455,7 +5455,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article précise la nature du code de déontologie et son champ d’application ?",
@@ -5466,7 +5466,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-4 ?",
     options: [
@@ -5480,7 +5480,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose le passage des ordres par la voie hiérarchique (sauf urgence) ?",
@@ -5491,7 +5491,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-5 ?",
     options: [
@@ -5505,7 +5505,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article encadre l’exécution des ordres et l’exception de l’ordre manifestement illégal compromettant gravement un intérêt public ?",
@@ -5515,7 +5515,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-6 ?",
     options: [
@@ -5529,7 +5529,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose au supérieur hiérarchique de veiller à la santé physique et mentale des subordonnés ?",
@@ -5540,7 +5540,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-7 ?",
     options: [
@@ -5554,7 +5554,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article prévoit que l’État défend le policier/gendarme et peut étendre la protection à ses proches ?",
@@ -5564,7 +5564,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-8 ?",
     options: ["Secret et discrétion professionnels", "Probité", "Discernement"],
@@ -5574,7 +5574,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article interdit de divulguer des informations à une personne qui n’a ni le droit ni le besoin d’en connaître ?",
@@ -5584,7 +5584,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-9 ?",
     options: ["Probité", "Impartialité", "Crédit et renom"],
@@ -5594,7 +5594,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article interdit d’accepter un avantage ou un présent lié aux fonctions (directement ou indirectement) ?",
@@ -5605,7 +5605,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-10 ?",
     options: ["Discernement", "Aide aux victimes", "Emploi de la force"],
@@ -5615,7 +5615,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose de choisir la meilleure réponse légale selon les risques/menaces et les délais pour agir ?",
@@ -5626,7 +5626,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-11 ?",
     options: ["Impartialité", "Probité", "Relation avec la population"],
@@ -5636,7 +5636,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article renvoie aux discriminations de l’article 225-1 du code pénal ?",
@@ -5647,7 +5647,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-12 ?",
     options: [
@@ -5662,7 +5662,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article vise explicitement les réseaux sociaux et l’interdiction de nuire à la réputation de l’institution ?",
@@ -5673,7 +5673,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-13 ?",
     options: ["Non cumul d'activité", "Port de la tenue", "Contrôle des pairs"],
@@ -5683,7 +5683,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article pose le principe de non cumul d’activité (sauf conditions autorisées) ?",
@@ -5693,7 +5693,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-14 ?",
     options: [
@@ -5706,7 +5706,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose l’usage du vouvoiement dans la relation avec la population ?",
@@ -5717,7 +5717,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-15 ?",
     options: ["Port de la tenue", "Emploi de la force", "Aide aux victimes"],
@@ -5727,7 +5727,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article rappelle le principe : exercice en uniforme et obligation d’identification individuelle (sauf exceptions) ?",
@@ -5737,7 +5737,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-16 ?",
     options: [
@@ -5751,7 +5751,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article précise que la palpation de sécurité est exclusivement une mesure de sûreté et ne doit pas être systématique ?",
@@ -5761,7 +5761,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Le cadre de la palpation de sécurité est dans l’article R. 434-16.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-17 ?",
     options: [
@@ -5775,7 +5775,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article interdit le dévêtement intégral sauf cas prévus (référence à l’article 63-7 CPP dans le texte) ?",
@@ -5785,7 +5785,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article encadre l’usage des menottes/entraves (justifié si danger ou risque de fuite) ?",
@@ -5796,7 +5796,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-18 ?",
     options: ["Emploi de la force", "Aide aux victimes", "Usage des fichiers"],
@@ -5806,7 +5806,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article pose les principes « nécessité » et « proportionnalité » dans l’emploi de la force ?",
@@ -5816,7 +5816,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article indique que l’usage des armes n’a lieu qu’en cas d’absolue nécessité (dans le cadre applicable au statut) ?",
@@ -5827,7 +5827,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-19 ?",
     options: [
@@ -5841,7 +5841,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article prévoit le devoir d’intervention même hors service, lorsque les circonstances le requièrent ?",
@@ -5852,7 +5852,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-20 ?",
     options: [
@@ -5866,7 +5866,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose de garantir la confidentialité des propos et déclarations des victimes ?",
@@ -5877,7 +5877,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-21 ?",
     options: [
@@ -5891,7 +5891,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article encadre l’alimentation et la consultation des fichiers dans le strict respect de leurs finalités ?",
@@ -5901,7 +5901,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-22 ?",
     options: [
@@ -5915,7 +5915,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article évoque le recours à des informateurs (sources humaines) avec obligation d’appliquer les règles en vigueur ?",
@@ -5925,7 +5925,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-23 ?",
     options: [
@@ -5939,7 +5939,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article précise que, pour les missions judiciaires, police et gendarmerie sont soumises au contrôle de l’autorité judiciaire (CPP) ?",
@@ -5949,7 +5949,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-24 ?",
     options: [
@@ -5963,7 +5963,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose de communiquer au Défenseur des droits les informations/pièces utiles et de déférer à ses convocations ?",
@@ -5974,7 +5974,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-25 ?",
     options: [
@@ -5988,7 +5988,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article prévoit que le policier/gendarme facilite en toute circonstance les opérations de contrôle et d’inspection ?",
@@ -5998,7 +5998,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-26 ?",
     options: [
@@ -6012,7 +6012,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article rappelle que les pairs sont dépositaires du code et doivent veiller à son respect ?",
@@ -6022,7 +6022,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-27 ?",
     options: [
@@ -6036,7 +6036,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article prévoit sanction disciplinaire pour manquement au code, sans exclure les sanctions pénales ?",
@@ -6046,7 +6046,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "À quoi correspond l’article R. 434-28 (dispositions propres à la police nationale) ?",
@@ -6061,7 +6061,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article demande d’honorer la mémoire de ceux qui ont péri dans l’exercice de missions de sécurité intérieure ?",
@@ -6071,7 +6071,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-29 (police nationale) ?",
     options: ["Devoir de réserve", "Disponibilité", "Principe hiérarchique"],
@@ -6081,7 +6081,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article interdit au policier, en service, toute expression/manif de convictions religieuses, politiques ou philosophiques ?",
@@ -6091,7 +6091,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-30 (police nationale) ?",
     options: ["Disponibilité", "Non cumul d'activité", "Port de la tenue"],
@@ -6101,7 +6101,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article impose d’être joignable/rappelable au service (disponibilité) ?",
@@ -6111,7 +6111,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-31 (gendarmerie nationale) ?",
     options: [
@@ -6126,7 +6126,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article énonce les exigences de l’état militaire (discipline, disponibilité, neutralité, esprit de sacrifice, etc.) ?",
@@ -6137,7 +6137,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-32 (gendarmerie nationale) ?",
     options: [
@@ -6151,7 +6151,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article encadre l’expression d’opinions/croyances des militaires de la gendarmerie (hors service, avec réserve) ?",
@@ -6161,7 +6161,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question: "À quoi correspond l’article R. 434-33 (gendarmerie nationale) ?",
     options: [
@@ -6176,7 +6176,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles (Code CSI)",
     question:
         "Quel article rappelle que le gendarme est soumis au statut général des militaires (code de la défense) + sujétions spécifiques ?",
@@ -6186,7 +6186,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Renvoi aux textes afférents (code de la défense) : R. 434-33.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-2 ?",
     options: [
@@ -6201,7 +6201,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article précise que policiers et gendarmes exercent avec loyauté, honneur et dévouement ?",
@@ -6212,7 +6212,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-3 ?",
     options: [
@@ -6226,7 +6226,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article précise que le code s’applique pendant et en dehors du service ?",
@@ -6237,7 +6237,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-4 ?",
     options: ["Principe hiérarchique", "Obéissance", "Contrôle hiérarchique"],
@@ -6247,7 +6247,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose de rendre compte de tout fait pouvant entraîner une convocation judiciaire ou administrative ?",
@@ -6258,7 +6258,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-5 ?",
     options: ["Obéissance", "Probité", "Discernement"],
@@ -6268,7 +6268,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article autorise le refus d’exécuter un ordre manifestement illégal compromettant gravement un intérêt public ?",
@@ -6278,7 +6278,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-6 ?",
     options: [
@@ -6292,7 +6292,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose à la hiérarchie de veiller à la santé physique et mentale des agents ?",
@@ -6303,7 +6303,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-7 ?",
     options: [
@@ -6317,7 +6317,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article prévoit la protection juridique de l’agent poursuivi sans faute personnelle ?",
@@ -6327,7 +6327,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-8 ?",
     options: ["Secret et discrétion professionnels", "Probité", "Impartialité"],
@@ -6337,7 +6337,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit la divulgation d’informations même à des proches ?",
@@ -6348,7 +6348,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-9 ?",
     options: ["Probité", "Discernement", "Impartialité"],
@@ -6358,7 +6358,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit l’acceptation de cadeaux ou avantages liés à la fonction ?",
@@ -6368,7 +6368,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-10 ?",
     options: ["Discernement", "Emploi de la force", "Assistance aux personnes"],
@@ -6378,7 +6378,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose d’adapter son action aux risques, délais et contexte ?",
@@ -6388,7 +6388,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose au policier d’être disponible pour le service ?",
@@ -6398,7 +6398,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Fondamentaux",
     question: "La loyauté du policier s’exerce envers :",
     options: [
@@ -6410,7 +6410,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La loyauté est un pilier du service public.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-11 ?",
     options: ["Impartialité", "Probité", "Neutralité"],
@@ -6420,7 +6420,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit toute discrimination fondée sur l’origine, le sexe, la religion ou l’orientation sexuelle ?",
@@ -6430,7 +6430,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-12 ?",
     options: [
@@ -6444,7 +6444,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose de ne porter atteinte ni à l’image ni à la réputation de la police ou de la gendarmerie ?",
@@ -6455,7 +6455,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "L’utilisation inappropriée des réseaux sociaux relève principalement de quel article ?",
@@ -6466,7 +6466,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-13 ?",
     options: ["Non-cumul d’activités", "Disponibilité", "Probité"],
@@ -6476,7 +6476,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit l’exercice d’une activité privée lucrative sans autorisation ?",
@@ -6487,7 +6487,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-14 ?",
     options: [
@@ -6501,7 +6501,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose l’usage du vouvoiement dans la relation avec la population ?",
@@ -6512,7 +6512,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-15 ?",
     options: [
@@ -6526,7 +6526,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article rend obligatoire l’identification individuelle visible du policier ?",
@@ -6537,7 +6537,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-16 ?",
     options: [
@@ -6551,7 +6551,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit de fonder un contrôle d’identité sur l’apparence physique seule ?",
@@ -6562,7 +6562,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-17 ?",
     options: [
@@ -6576,7 +6576,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article encadre strictement le menottage et interdit toute mesure humiliante ?",
@@ -6586,7 +6586,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-18 ?",
     options: [
@@ -6599,7 +6599,7 @@ final List<QuizQuestion> questionDeontologie = [
         "L’article R. 434-18 impose nécessité, proportionnalité et absolue nécessité pour les armes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-19 ?",
     options: [
@@ -6613,7 +6613,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose d’intervenir même hors service pour porter assistance à une personne en danger ?",
@@ -6624,7 +6624,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-20 ?",
     options: [
@@ -6638,7 +6638,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose de garantir la confidentialité des propos des victimes ?",
@@ -6649,7 +6649,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Le refus de prendre une plainte constitue un manquement principalement à quel article ?",
@@ -6660,7 +6660,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-21 ?",
     options: [
@@ -6674,7 +6674,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit la consultation d’un fichier de police par curiosité personnelle ?",
@@ -6685,7 +6685,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Le partage d’identifiants d’accès aux applications constitue un manquement à quel article ?",
@@ -6696,7 +6696,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-22 ?",
     options: [
@@ -6709,7 +6709,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose prudence et respect des règles lors du recours à des informateurs ?",
@@ -6720,7 +6720,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-23 ?",
     options: [
@@ -6734,7 +6734,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article rappelle que la police et la gendarmerie sont soumises au contrôle de l’autorité judiciaire ?",
@@ -6745,7 +6745,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-24 ?",
     options: [
@@ -6759,7 +6759,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose au policier ou gendarme de répondre aux convocations du Défenseur des droits ?",
@@ -6770,7 +6770,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-25 ?",
     options: [
@@ -6783,7 +6783,7 @@ final List<QuizQuestion> questionDeontologie = [
         "L’article R. 434-25 encadre le contrôle interne et les inspections.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-26 ?",
     options: [
@@ -6797,7 +6797,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article rappelle que le silence face à un manquement déontologique vaut consentement ?",
@@ -6808,7 +6808,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-27 ?",
     options: [
@@ -6822,7 +6822,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article précise qu’un manquement déontologique peut entraîner une sanction disciplinaire indépendamment des poursuites pénales ?",
@@ -6833,7 +6833,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-28 ?",
     options: [
@@ -6847,7 +6847,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose d’honorer la mémoire des policiers décédés dans l’exercice de leurs fonctions ?",
@@ -6857,7 +6857,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-29 ?",
     options: ["Devoir de réserve", "Neutralité", "Disponibilité"],
@@ -6867,7 +6867,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit l’expression de convictions religieuses ou politiques dans l’exercice des fonctions ?",
@@ -6878,7 +6878,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "La publication de propos critiques sur les réseaux sociaux concernant l’institution relève principalement de quel article ?",
@@ -6889,7 +6889,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-30 ?",
     options: [
@@ -6903,7 +6903,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose de pouvoir être rappelé au service à tout moment ?",
@@ -6914,7 +6914,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Éteindre volontairement son téléphone pour éviter un rappel constitue un manquement à quel article ?",
@@ -6924,7 +6924,7 @@ final List<QuizQuestion> questionDeontologie = [
         "La disponibilité implique d’être joignable par la hiérarchie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-31 ?",
     options: [
@@ -6939,7 +6939,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose au militaire de la gendarmerie discipline, neutralité et esprit de sacrifice ?",
@@ -6949,7 +6949,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Le devoir de mémoire à l’égard des gendarmes morts en service est prévu par quel article ?",
@@ -6960,7 +6960,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-32 ?",
     options: [
@@ -6974,7 +6974,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit au militaire de la gendarmerie d’exprimer ses opinions en faisant état de son statut ?",
@@ -6985,7 +6985,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "L’expression d’opinions politiques en service par un gendarme constitue un manquement à quel article ?",
@@ -6996,7 +6996,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "À quoi correspond l’article R. 434-33 ?",
     options: [
@@ -7011,7 +7011,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article rappelle que le gendarme est soumis au statut général des militaires ?",
@@ -7022,7 +7022,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "L’obligation de logement par nécessité de service pour les gendarmes découle principalement de quel article ?",
@@ -7033,7 +7033,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Le refus d’exécuter intégralement une mission confiée à un gendarme relève prioritairement de quel article ?",
@@ -7043,7 +7043,7 @@ final List<QuizQuestion> questionDeontologie = [
         "L’esprit de service et l’obéissance liés à l’état militaire figurent à l’article R. 434-31.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article consacre le principe de probité du policier et du gendarme ?",
@@ -7053,7 +7053,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Refuser un cadeau offert en raison de sa fonction relève de quel article ?",
@@ -7064,7 +7064,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "La divulgation d’informations couvertes par le secret professionnel viole quel article ?",
@@ -7075,7 +7075,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Publier sur les réseaux sociaux des éléments d’une enquête constitue un manquement à quel article ?",
@@ -7086,7 +7086,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose au policier et au gendarme d’agir avec discernement ?",
@@ -7096,7 +7096,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Verbaliser sans tenir compte du contexte constitue un manquement à quel article ?",
@@ -7106,7 +7106,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Traiter différemment une personne en raison de ses opinions constitue un manquement à quel article ?",
@@ -7116,7 +7116,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "L’interdiction de toute discrimination est prévue par quel article ?",
@@ -7127,7 +7127,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Tenir des propos injurieux en public porte atteinte à quel principe ?",
@@ -7137,7 +7137,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article interdit les comportements portant atteinte à l’image de la police ou de la gendarmerie ?",
@@ -7148,7 +7148,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Exercer une activité lucrative non autorisée constitue un manquement à quel article ?",
@@ -7158,7 +7158,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose la courtoisie et le vouvoiement envers la population ?",
@@ -7169,7 +7169,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "L’obligation de porter l’uniforme relève de quel article ?",
     options: ["Article R. 434-15", "Article R. 434-14", "Article R. 434-16"],
@@ -7178,7 +7178,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Effectuer un contrôle d’identité fondé sur l’apparence constitue un manquement à quel article ?",
@@ -7189,7 +7189,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "L’usage des menottes uniquement en cas de nécessité relève de quel article ?",
@@ -7199,7 +7199,7 @@ final List<QuizQuestion> questionDeontologie = [
         "La protection des personnes privées de liberté est prévue à l’article R. 434-17.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article encadre la protection des personnes privées de liberté ?",
@@ -7210,7 +7210,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Menotter systématiquement une personne sans nécessité constitue un manquement à quel article ?",
@@ -7221,7 +7221,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "L’emploi de la force uniquement lorsque cela est nécessaire relève de quel article ?",
@@ -7231,7 +7231,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel principe impose que la force soit proportionnée à la menace ?",
@@ -7242,7 +7242,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Intervenir spontanément pour porter secours, même hors service, relève de quel article ?",
@@ -7253,7 +7253,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Refuser d’intervenir face à une personne en danger constitue un manquement à quel article ?",
@@ -7264,7 +7264,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "La prise en charge attentive et confidentielle des victimes relève de quel article ?",
@@ -7274,7 +7274,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Refuser de prendre une plainte constitue un manquement à quel article ?",
@@ -7285,7 +7285,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "La consultation des fichiers de police doit respecter quel article ?",
@@ -7296,7 +7296,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Consulter un fichier par curiosité personnelle viole quel article ?",
@@ -7307,7 +7307,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question: "Le recours à des informateurs est encadré par quel article ?",
     options: ["Article R. 434-22", "Article R. 434-21", "Article R. 434-23"],
@@ -7317,7 +7317,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article rappelle que la police et la gendarmerie sont soumises à des contrôles ?",
@@ -7328,7 +7328,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Le contrôle exercé par le Défenseur des droits relève de quel article ?",
@@ -7338,7 +7338,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Le rôle du Défenseur des droits est précisé à l’article R. 434-24.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article consacre le principe du contrôle des pairs en matière de déontologie ?",
@@ -7348,7 +7348,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Fermer les yeux volontairement sur un manquement déontologique d’un collègue relève de quel article ?",
@@ -7359,7 +7359,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Tout manquement au code expose à une sanction disciplinaire selon quel article ?",
@@ -7370,7 +7370,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Un manquement déontologique peut-il entraîner à la fois une sanction disciplinaire et pénale ?",
@@ -7385,7 +7385,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "Quel article impose le respect de la mémoire des policiers morts en service ?",
@@ -7395,7 +7395,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "S’absenter sans motif valable lors d’une minute de silence constitue un manquement à quel article ?",
@@ -7406,7 +7406,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "L’obligation de neutralité du policier est prévue par quel article ?",
@@ -7417,7 +7417,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "Exprimer ses opinions politiques en service constitue un manquement à quel article ?",
@@ -7428,7 +7428,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "Publier des critiques publiques sur une décision de justice relève de quel manquement ?",
@@ -7439,7 +7439,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "Quel article impose la disponibilité permanente du policier pour les nécessités du service ?",
@@ -7450,7 +7450,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "Éteindre volontairement son téléphone pour éviter un rappel au service constitue un manquement à quel article ?",
@@ -7461,7 +7461,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question:
         "Changer de résidence sans en informer la hiérarchie relève de quel article ?",
@@ -7471,7 +7471,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Le changement de résidence doit être signalé en raison de l’obligation de disponibilité.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Quel article rappelle que l’état militaire implique discipline, disponibilité et esprit de sacrifice ?",
@@ -7482,7 +7482,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "L’esprit de sacrifice pouvant aller jusqu’au sacrifice suprême est prévu par quel article ?",
@@ -7493,7 +7493,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Honorer la mémoire des gendarmes morts en service relève de quel article ?",
@@ -7504,7 +7504,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Refuser de prendre en compte une personne se présentant juste avant la fermeture constitue un manquement à quel article ?",
@@ -7515,7 +7515,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Exécuter partiellement une mission sans en informer la hiérarchie viole quel article ?",
@@ -7526,7 +7526,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Quel article encadre le devoir de réserve spécifique aux militaires de la gendarmerie ?",
@@ -7537,7 +7537,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Un gendarme peut-il exprimer ses opinions politiques en service ?",
@@ -7552,7 +7552,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Exprimer publiquement ses convictions religieuses en se revendiquant gendarme relève de quel article ?",
@@ -7563,7 +7563,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Participer aux instances de concertation interne est prévu par quel article ?",
@@ -7573,7 +7573,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Quel article rappelle que le gendarme est soumis au statut général des militaires ?",
@@ -7584,7 +7584,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "L’obligation de logement par nécessité absolue de service découle de quel article ?",
@@ -7594,7 +7594,7 @@ final List<QuizQuestion> questionDeontologie = [
         "Cette obligation est liée aux sujétions spécifiques du statut militaire.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Principes généraux",
     question:
         "Quel article pose le cadre général des missions de la police et de la gendarmerie nationales ?",
@@ -7605,7 +7605,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Principes généraux",
     question:
         "Le respect des droits de l’homme dans l’exercice des missions est affirmé par quel article ?",
@@ -7616,7 +7616,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Champ d’application",
     question:
         "Les règles déontologiques s’appliquent-elles en dehors du service ?",
@@ -7631,7 +7631,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Quel article impose à l’autorité hiérarchique d’assumer la responsabilité des ordres donnés ?",
@@ -7642,7 +7642,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Informer la hiérarchie d’une convocation judiciaire relève de quel article ?",
@@ -7653,7 +7653,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Dans quel cas un policier peut-il refuser d’exécuter un ordre ?",
     options: [
@@ -7667,7 +7667,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question:
         "Demander la confirmation écrite d’un ordre est prévu par quel article ?",
@@ -7678,7 +7678,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autorité hiérarchique",
     question:
         "Veiller à la santé physique et mentale des subordonnés relève de quel article ?",
@@ -7689,7 +7689,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection",
     question: "La protection fonctionnelle est prévue par quel article ?",
     options: ["Article R. 434-7", "Article R. 434-6", "Article R. 434-27"],
@@ -7698,7 +7698,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question:
         "Divulguer une information confidentielle à un proche viole quel article ?",
@@ -7709,7 +7709,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question:
         "Accepter un cadeau lié à ses fonctions constitue une violation de quel article ?",
@@ -7720,7 +7720,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question:
         "Adapter sa réponse à la situation et aux risques relève de quel article ?",
@@ -7730,7 +7730,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question:
         "Traiter différemment une personne en raison de son origine constitue une violation de quel article ?",
@@ -7741,7 +7741,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Exemplarité",
     question:
         "Tenir des propos injurieux sur les réseaux sociaux porte atteinte à quel article ?",
@@ -7751,7 +7751,7 @@ final List<QuizQuestion> questionDeontologie = [
         "L’article R. 434-12 protège le crédit et le renom de l’institution.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question:
         "Quel article impose au policier ou au gendarme d’être au service de la population ?",
@@ -7762,7 +7762,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question:
         "L’usage du vouvoiement avec le public est imposé par quel article ?",
@@ -7773,7 +7773,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation avec la population",
     question:
         "Tutoyer une personne contrôlée sans justification constitue un manquement à quel article ?",
@@ -7784,7 +7784,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Tenue",
     question:
         "Quel article impose le port de la tenue réglementaire en service ?",
@@ -7795,7 +7795,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Tenue",
     question:
         "Exercer en tenue civile impose néanmoins une identification visible selon quel article ?",
@@ -7806,7 +7806,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles d’identité",
     question:
         "Quel article encadre les contrôles d’identité sans discrimination ?",
@@ -7817,7 +7817,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles d’identité",
     question: "La palpation de sécurité est-elle systématique ?",
     options: [
@@ -7830,7 +7830,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles d’identité",
     question: "Pratiquer une palpation sans nécessité viole quel article ?",
     options: ["Article R. 434-16", "Article R. 434-18", "Article R. 434-17"],
@@ -7839,7 +7839,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question:
         "Quel article place toute personne interpellée sous la protection des forces de l’ordre ?",
@@ -7850,7 +7850,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question:
         "Menotter une personne sans danger ni risque de fuite viole quel article ?",
@@ -7860,7 +7860,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question:
         "Quel article pose le principe de nécessité et de proportionnalité dans l’emploi de la force ?",
@@ -7871,7 +7871,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question: "L’usage des armes est autorisé uniquement en cas de :",
     options: [
@@ -7885,7 +7885,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Assistance",
     question:
         "Intervenir pour porter secours même hors service relève de quel article ?",
@@ -7896,7 +7896,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Assistance",
     question:
         "Refuser d’intervenir sans motif valable constitue un manquement à quel article ?",
@@ -7905,7 +7905,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Le devoir d’assistance est une obligation professionnelle.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Aide aux victimes",
     question:
         "Quel article impose une attention particulière aux victimes tout au long de la procédure ?",
@@ -7916,7 +7916,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Aide aux victimes",
     question:
         "Refuser de prendre une plainte alors que les faits constituent une infraction viole quel article ?",
@@ -7927,7 +7927,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Aide aux victimes",
     question:
         "Garantir la confidentialité des propos des victimes relève de quel article ?",
@@ -7938,7 +7938,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question:
         "Quel article encadre l’usage des fichiers contenant des données personnelles ?",
@@ -7949,7 +7949,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question:
         "Consulter un fichier par simple curiosité constitue une violation de quel article ?",
@@ -7960,7 +7960,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question:
         "Partager son identifiant d’accès aux applications professionnelles viole quel article ?",
@@ -7971,7 +7971,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sources humaines",
     question: "Le recours à des informateurs est encadré par quel article ?",
     options: ["Article R. 434-22", "Article R. 434-9", "Article R. 434-21"],
@@ -7981,7 +7981,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sources humaines",
     question:
         "Pourquoi le recours aux sources humaines doit-il être strictement encadré ?",
@@ -7996,7 +7996,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sources humaines",
     question:
         "Entretenir une relation privée non encadrée avec un informateur peut constituer :",
@@ -8011,7 +8011,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle",
     question:
         "Quel article pose le principe du contrôle de l’action de la police et de la gendarmerie ?",
@@ -8022,7 +8022,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle",
     question: "Le contrôle de l’action judiciaire est exercé par :",
     options: [
@@ -8036,7 +8036,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Défenseur des droits",
     question: "Quel article encadre le rôle du Défenseur des droits ?",
     options: ["Article R. 434-24", "Article R. 434-23", "Article R. 434-25"],
@@ -8045,7 +8045,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Défenseur des droits",
     question:
         "Un policier peut-il refuser de répondre à une convocation du Défenseur des droits ?",
@@ -8059,7 +8059,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Inspection",
     question:
         "Faciliter les opérations de contrôle et d’inspection relève de quel article ?",
@@ -8070,7 +8070,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle des pairs",
     question:
         "Le contrôle exercé par les collègues est prévu par quel article ?",
@@ -8079,7 +8079,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Les pairs sont les premiers garants du respect du code.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question:
         "Quel article prévoit qu’un manquement déontologique expose à une sanction disciplinaire ?",
@@ -8090,7 +8090,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question:
         "Les sanctions disciplinaires excluent-elles les poursuites pénales ?",
@@ -8105,7 +8105,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question:
         "Un même comportement peut-il constituer plusieurs manquements déontologiques ?",
@@ -8120,7 +8120,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul d’activité",
     question:
         "Quel article interdit l’exercice d’une activité privée lucrative non autorisée ?",
@@ -8131,7 +8131,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul d’activité",
     question:
         "Une activité privée autorisée doit-elle être déclarée à l’administration ?",
@@ -8145,7 +8145,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul d’activité",
     question:
         "Effectuer une mission de sécurité privée constitue un manquement à quel article ?",
@@ -8156,7 +8156,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve (Police)",
     question: "Quel article encadre le devoir de réserve des policiers ?",
     options: ["Article R. 434-29", "Article R. 434-12", "Article R. 434-32"],
@@ -8166,7 +8166,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve (Police)",
     question:
         "Exprimer ses convictions politiques en service constitue un manquement à quel article ?",
@@ -8176,7 +8176,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve (Police)",
     question:
         "Critiquer publiquement une décision de justice peut violer quel article ?",
@@ -8186,7 +8186,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question:
         "Quel article impose la disponibilité permanente pour les nécessités du service ?",
@@ -8197,7 +8197,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question:
         "Éteindre volontairement son téléphone pour ne pas être rappelé viole quel article ?",
@@ -8207,7 +8207,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question:
         "Ne pas signaler un changement de résidence constitue un manquement à quel article ?",
@@ -8217,7 +8217,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Synthèse",
     question:
         "Le non cumul d’activité, la réserve et la disponibilité participent principalement à :",
@@ -8232,7 +8232,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Synthèse",
     question:
         "Quelle obligation vise directement la possibilité de rappel en urgence ?",
@@ -8241,7 +8241,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "L’article R. 434-30 garantit la capacité de rappel immédiat.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Synthèse",
     question:
         "Quel article affirme que la légitimité de l’action policière repose aussi sur le respect des valeurs éthiques ?",
@@ -8252,7 +8252,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Champ d’application",
     question:
         "Quel article précise que les règles déontologiques font l’objet d’une formation initiale et continue ?",
@@ -8263,7 +8263,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Le droit au silence peut-il être invoqué dans la relation hiérarchique ?",
@@ -8277,7 +8277,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question:
         "Un ordre écrit exonère-t-il le subordonné de sa responsabilité ?",
@@ -8291,7 +8291,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autorité hiérarchique",
     question:
         "Confier une mission incompatible avec le niveau de formation viole quel article ?",
@@ -8301,7 +8301,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection fonctionnelle",
     question:
         "Refuser de transmettre une demande de protection fonctionnelle viole quel article ?",
@@ -8311,7 +8311,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question:
         "Divulguer une information par maladresse constitue-t-il un manquement ?",
@@ -8325,7 +8325,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Se prévaloir de sa qualité pour obtenir un avantage constitue :",
     options: [
@@ -8338,7 +8338,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question:
         "La verbalisation systématique sans tenir compte du contexte viole quel article ?",
@@ -8348,7 +8348,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question:
         "Favoriser un proche dans une procédure constitue une violation de quel article ?",
@@ -8358,7 +8358,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Exemplarité",
     question:
         "Un comportement privé portant atteinte à l’image de l’institution relève de quel article ?",
@@ -8368,7 +8368,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul",
     question:
         "Exercer une activité privée sans autorisation même hors service viole quel article ?",
@@ -8378,7 +8378,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation population",
     question:
         "Un comportement agressif envers un usager viole principalement quel article ?",
@@ -8388,7 +8388,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles",
     question:
         "Un contrôle d’identité fondé sur l’apparence physique viole quel article ?",
@@ -8398,7 +8398,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Force",
     question:
         "Employer la force au-delà de ce qui est nécessaire viole quel article ?",
@@ -8407,7 +8407,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "La proportionnalité est un principe fondamental.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Un agent ne rend pas compte d’un incident survenu en service. Quel article est violé ?",
@@ -8418,7 +8418,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question:
         "Un agent refuse un ordre légal au motif qu’il est contraire à ses convictions personnelles. Quel article est concerné ?",
@@ -8429,7 +8429,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autorité hiérarchique",
     question:
         "Un chef ne met en place aucune formation malgré l’évolution des missions. Quel article est violé ?",
@@ -8439,7 +8439,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection fonctionnelle",
     question:
         "Un agent victime d’outrages ne reçoit aucun soutien administratif. Quel article est concerné ?",
@@ -8449,7 +8449,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question:
         "Un policier évoque une enquête en cours sur un réseau social privé. Quel article est violé ?",
@@ -8460,7 +8460,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question:
         "Un agent accepte un repas gratuit en raison de sa qualité professionnelle. Quel article est violé ?",
@@ -8470,7 +8470,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question:
         "Un agent poursuit un véhicule malgré un danger manifeste pour les tiers. Quel article est concerné ?",
@@ -8480,7 +8480,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question:
         "Un agent privilégie un proche dans une procédure. Quel article est violé ?",
@@ -8490,7 +8490,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Exemplarité",
     question:
         "Un agent tient des propos injurieux en public hors service. Quel article est concerné ?",
@@ -8500,7 +8500,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul",
     question:
         "Un agent exerce une activité privée sans autorisation administrative. Quel article est violé ?",
@@ -8510,7 +8510,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation population",
     question:
         "Un agent tutoie systématiquement les usagers sans raison. Quel article est concerné ?",
@@ -8520,7 +8520,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Tenue",
     question:
         "Un agent porte une tenue incomplète en service. Quel article est violé ?",
@@ -8531,7 +8531,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôles d’identité",
     question:
         "Un contrôle est effectué uniquement en raison de l’apparence d’une personne. Quel article est violé ?",
@@ -8541,7 +8541,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Personnes privées de liberté",
     question:
         "Une personne menottée est exposée inutilement à la vue du public. Quel article est concerné ?",
@@ -8552,7 +8552,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Usage de la force",
     question:
         "Un agent utilise la force sans nécessité objective. Quel article est violé ?",
@@ -8561,7 +8561,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "L’usage de la force doit être nécessaire et proportionné.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Principe général",
     question:
         "Le respect des règles déontologiques conditionne principalement :",
@@ -8576,7 +8576,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Champ d’application",
     question: "Le code de déontologie s’applique aux policiers et gendarmes :",
     options: [
@@ -8589,7 +8589,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Un agent invoque le droit au silence pour refuser un compte rendu hiérarchique. Ce comportement est :",
@@ -8600,7 +8600,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre manifestement illégal doit être :",
     options: [
@@ -8613,7 +8613,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "La confirmation écrite d’un ordre manifestement illégal :",
     options: [
@@ -8626,7 +8626,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autorité hiérarchique",
     question: "La formation professionnelle des agents est :",
     options: [
@@ -8640,7 +8640,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection fonctionnelle",
     question: "La protection fonctionnelle est accordée lorsque les faits :",
     options: [
@@ -8653,7 +8653,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le secret professionnel s’impose :",
     options: [
@@ -8666,7 +8666,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "La probité interdit notamment :",
     options: [
@@ -8679,7 +8679,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question:
         "Orienter un usager souhaitant faire un don vers une œuvre institutionnelle est :",
@@ -8693,7 +8693,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question: "Le discernement implique :",
     options: [
@@ -8706,7 +8706,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "Le ciblage d’une personne en raison de sa religion est :",
     options: [
@@ -8719,7 +8719,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Exemplarité",
     question: "Le devoir d’exemplarité est une obligation :",
     options: ["De résultat", "De moyen", "Conditionnelle"],
@@ -8728,7 +8728,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul",
     question: "Une activité privée lucrative est possible :",
     options: [
@@ -8741,7 +8741,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation population",
     question: "La courtoisie et le vouvoiement sont :",
     options: ["Obligatoires", "Recommandés", "Facultatifs"],
@@ -8749,7 +8749,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Ils participent à la crédibilité de l’institution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Champ d’application",
     question:
         "Les règles déontologiques s’imposent aux policiers et gendarmes :",
@@ -8764,7 +8764,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Les ordres hiérarchiques doivent être transmis :",
     options: [
@@ -8777,7 +8777,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "En cas d’urgence, un ordre peut être transmis directement à condition :",
@@ -8791,7 +8791,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question:
         "Un ordre contraire aux convictions personnelles de l’agent peut être refusé :",
@@ -8802,7 +8802,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question:
         "L’invocation abusive de l’illégalité manifeste d’un ordre expose l’agent :",
@@ -8816,7 +8816,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autorité hiérarchique",
     question: "Le supérieur hiérarchique est responsable :",
     options: [
@@ -8829,7 +8829,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection fonctionnelle",
     question: "La protection fonctionnelle peut concerner :",
     options: [
@@ -8843,7 +8843,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question:
         "La divulgation d’une information confidentielle par maladresse est :",
@@ -8853,7 +8853,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Le principe fondamental du secret professionnel repose sur :",
     options: [
@@ -8867,7 +8867,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question:
         "Le fait de se prévaloir de sa qualité de policier pour obtenir un avantage est :",
@@ -8877,7 +8877,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "La probité vise à prévenir notamment :",
     options: [
@@ -8890,7 +8890,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question: "Le discernement impose à l’agent :",
     options: [
@@ -8903,7 +8903,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question:
         "Traiter différemment une personne en raison de son origine constitue :",
@@ -8917,7 +8917,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Exemplarité",
     question:
         "Un comportement privé peut constituer un manquement déontologique s’il :",
@@ -8931,7 +8931,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul d’activité",
     question:
         "Exercer une activité privée lucrative sans autorisation constitue :",
@@ -8940,7 +8940,7 @@ final List<QuizQuestion> questionDeontologie = [
     explanation: "Toute activité non autorisée est interdite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Champ d’application",
     question:
         "Les règles du code de déontologie trouvent leur origine principalement :",
@@ -8955,7 +8955,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Champ d’application",
     question: "La formation au code de déontologie est :",
     options: ["Initiale et continue", "Uniquement initiale", "Facultative"],
@@ -8964,7 +8964,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question:
         "Le défaut de compte rendu d’un incident survenu hors service est :",
@@ -8979,7 +8979,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Hiérarchie",
     question: "Le droit au silence peut être opposé à la hiérarchie :",
     options: ["Non", "Oui en cas de procédure", "Oui hors service"],
@@ -8989,7 +8989,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question: "Un ordre manifestement illégal doit être :",
     options: [
@@ -9003,7 +9003,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Obéissance",
     question:
         "La confirmation écrite d’un ordre illégal exonère l’agent de sa responsabilité :",
@@ -9013,7 +9013,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autorité hiérarchique",
     question: "Le supérieur hiérarchique doit veiller notamment :",
     options: [
@@ -9026,7 +9026,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Formation",
     question: "Les actes de formation constituent :",
     options: [
@@ -9039,7 +9039,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection fonctionnelle",
     question: "La protection fonctionnelle est accordée lorsque :",
     options: [
@@ -9052,7 +9052,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Secret professionnel",
     question: "Communiquer une information à un collègue non habilité est :",
     options: ["Interdit", "Autorisé en interne", "Toléré en urgence"],
@@ -9061,7 +9061,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "Accepter un cadeau lié à sa fonction est :",
     options: [
@@ -9074,7 +9074,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Probité",
     question: "La probité impose notamment d’éviter :",
     options: [
@@ -9087,7 +9087,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Discernement",
     question: "Le manque de temps pour agir :",
     options: [
@@ -9100,7 +9100,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Impartialité",
     question: "L’impartialité implique :",
     options: [
@@ -9113,7 +9113,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Exemplarité",
     question: "L’usage des réseaux sociaux par un policier est :",
     options: [
@@ -9126,7 +9126,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Non cumul d’activité",
     question: "Toute activité privée doit être :",
     options: [
@@ -9139,7 +9139,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Relation population",
     question: "La relation avec la population doit être marquée par :",
     options: [
@@ -9152,7 +9152,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Tenue",
     question: "Le port de l’uniforme vise notamment :",
     options: ["L’identification de l’agent", "La discrétion", "L’anonymat"],
@@ -9161,7 +9161,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle d’identité",
     question: "Un contrôle d’identité fondé uniquement sur l’apparence est :",
     options: ["Interdit", "Autorisé", "Recommandé"],
@@ -9170,7 +9170,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Palpation de sécurité",
     question: "La palpation de sécurité est :",
     options: ["Une mesure de sûreté", "Une fouille judiciaire", "Systématique"],
@@ -9179,7 +9179,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie",
     question:
         "Les sujétions spécifiques du métier de gendarme sont rappelées par quel article ?",
@@ -9190,7 +9190,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Refuser de coopérer lors d’une inspection constitue un manquement à quel article ?",
@@ -9201,7 +9201,7 @@ final List<QuizQuestion> questionDeontologie = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Articles",
     question:
         "Quel article impose que l’usage de la force soit strictement nécessaire et proportionné ?",
@@ -9558,7 +9558,7 @@ class _QuizDeontologieGPXState extends State<QuizDeontologieGPX>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -9761,7 +9761,7 @@ class _QuizDeontologieGPXState extends State<QuizDeontologieGPX>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -9944,7 +9944,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -10519,10 +10518,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -10893,7 +10893,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -10934,9 +10934,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -148,10 +148,10 @@ class GpxLaiciteDlpajPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 12),
-              _NotaBox(
+              const _NotaBox(
                 title: "À connaître",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La circulaire du Premier ministre du 13 avril 2007 (charte de la laïcité dans les services publics) rappelle la neutralité des agents publics ; la charte doit être affichée dans les services publics.",
                   ),
@@ -168,29 +168,29 @@ class GpxLaiciteDlpajPage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Définition"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Définition"),
+              _Paragraph(
                 "Il n’existe pas de définition juridique officielle unique. "
                 "Le Conseil d’État (Rapport public 2004 « Un siècle de laïcité ») décrit une triple dimension :",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text:
                     "Neutralité de l’État vis-à-vis des croyances et des religions.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Respect de la liberté de religion et du libre exercice des cultes.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Pluralisme : toutes les religions doivent pouvoir s’exprimer.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La laïcité n’est ni le reniement des religions, ni un choix spirituel particulier : c’est un cadre commun d’organisation de l’espace public et du service public.",
@@ -208,56 +208,56 @@ class GpxLaiciteDlpajPage extends StatelessWidget {
             cardColor: cardAgents,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Neutralité dans l’exercice des fonctions"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Neutralité dans l’exercice des fonctions"),
+              _Paragraph(
                 "Il est interdit d’avantager ou de pénaliser les usagers (ou les cocontractants de l’administration) "
                 "en fonction de convictions politiques, religieuses ou philosophiques.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "La neutralité s’applique aussi aux salariés d’organismes de droit privé chargés d’une mission de service public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En revanche, elle ne s’applique pas aux salariés d’organismes de droit privé n’assurant pas une mission de service public (ex : agents d’entretien dans les commissariats).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Ne pas manifester sa religion au travail"),
-              const _Paragraph(
+              _SubTitle("B) Ne pas manifester sa religion au travail"),
+              _Paragraph(
                 "Les agents publics ne doivent pas adopter d’attitudes pouvant traduire une adhésion visible à une croyance. "
                 "Cela peut constituer une faute professionnelle et entraîner une sanction disciplinaire.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Ne pas porter de signe religieux visible sur le lieu de travail.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ne pas faire de prosélytisme auprès des usagers ou des collègues (ex : courriels religieux).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ne pas utiliser les moyens du service à des fins religieuses (ex : afficher son mail pro sur le site d’une association religieuse).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Liberté de conscience préservée (hors service)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il est interdit de prendre en compte les opinions ou la pratique religieuse (hors travail) "
                 "dans le recrutement, la carrière ou la gestion administrative des agents.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Devoir de réserve",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Dans la sphère privée, l’expression des convictions est possible mais doit rester compatible avec la dignité, l’impartialité et la sérénité des fonctions (pas de manifestation excessive susceptible d’avoir un retentissement sur le service).",
@@ -322,9 +322,9 @@ class GpxLaiciteDlpajPage extends StatelessWidget {
                 "Un usager ne peut pas exiger qu’un service public s’adapte à ses convictions religieuses.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Exemple",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Restauration collective : la circulaire du ministère de l’Intérieur du 16 août 2011 rappelle que les menus confessionnels ne sont ni un droit pour les usagers, ni une obligation pour les collectivités. Des menus de substitution peuvent exister en pratique.",
@@ -358,29 +358,29 @@ class GpxLaiciteDlpajPage extends StatelessWidget {
             cardColor: cardMemo,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Règle générale"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Règle générale"),
+              _Paragraph(
                 "Tous les citoyens peuvent porter des signes religieux en tous lieux (commissariat, mairie, rue, équipements publics, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Sauf (3 cas majeurs)"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("Sauf (3 cas majeurs)"),
+              _IntroBullet(
                 text:
                     "Les agents publics dans l’exercice de leurs fonctions (neutralité).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Les élèves des collèges et lycées publics dans l’enceinte des établissements (signes ostensibles interdits).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "La dissimulation du visage (voile intégral) dans l’espace public (interdite par la loi du 11 octobre 2010).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Ne pas confondre",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Voile intégral (visage dissimulé) ≠ voile couvrant les cheveux : seul le voile intégral est interdit dans l’espace public.",
@@ -439,10 +439,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -507,7 +507,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -550,7 +550,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -612,7 +612,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -644,7 +644,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -657,7 +657,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

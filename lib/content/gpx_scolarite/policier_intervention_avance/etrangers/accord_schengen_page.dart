@@ -114,27 +114,27 @@ class AccordSchengenPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "En cas de rétablissement des contrôles : ",
                 ),
                 TextSpan(
                   text: "article L.332-3 du CESEDA",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — le périmètre de contrôle est une zone comprise entre la frontière intérieure terrestre et une ligne tracée à 10 km en deçà.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans ce périmètre, l’étranger contrôlé en situation irrégulière peut faire l’objet d’un refus d’entrée sur le territoire.",
                   ),
@@ -151,44 +151,44 @@ class AccordSchengenPage extends StatelessWidget {
             cardColor: cardCircu,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Suppression des contrôles aux frontières intérieures",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les frontières intérieures correspondent aux frontières terrestres communes des États parties, "
                 "ainsi qu’aux aéroports pour les vols intérieurs et aux ports maritimes pour les liaisons intérieures. "
                 "Elles peuvent être franchies sans contrôle systématique des personnes.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cette libre circulation bénéficie à tous les individus, quelle que soit leur nationalité "
                 "(ressortissants Schengen, UE ou pays tiers) ou leur statut.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Certains territoires ne sont pas couverts par l’accord (ex. en France : Guadeloupe, Martinique, Réunion, Mayotte, Nouvelle-Calédonie, Polynésie française).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Limites et points d’attention"),
-              const _BulletPoint(
+              _SubTitle("B) Limites et points d’attention"),
+              _BulletPoint(
                 text:
                     "Un État peut rétablir temporairement les contrôles pour ordre public / sécurité nationale (évènements prévisibles ou urgence).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La suppression des contrôles ne fait pas obstacle aux contrôles d’identité ou de régularité du séjour sur l’ensemble du territoire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Déclaration d’entrée sur le territoire (D.E.T.) : ancienne obligation pour certains ressortissants de pays tiers lors du franchissement des frontières intérieures (en France, non exigée depuis 1998).",
                   ),
@@ -266,20 +266,20 @@ class AccordSchengenPage extends StatelessWidget {
             cardColor: cardTools,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Le Système d’Information Schengen (SIS)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Le Système d’Information Schengen (SIS)"),
+              _Paragraph(
                 "Le SIS est une banque de données commune aux États Schengen, mise à jour en permanence. "
                 "Il contient des signalements concernant des personnes (disparues, recherchées, surveillées) et des objets recherchés.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Lors de l’interrogation d’un fichier (ex. FPR), la réponse nationale apparaît d’abord ; en cas de correspondance, la réponse Schengen s’affiche avec une conduite à tenir.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Les bureaux SIRENE"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Les bureaux SIRENE"),
+              _Paragraph(
                 "Les informations complémentaires et la coordination opérationnelle passent par les bureaux SIRENE. "
                 "En France, le bureau SIRENE (policiers, gendarmes, douaniers, magistrats) apporte un soutien logistique "
                 "aux utilisateurs 24h/24, 365 jours/an, pour l’exécution des conduites à tenir liées aux signalements.",
@@ -320,10 +320,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -388,7 +388,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -431,7 +431,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -493,7 +493,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -504,10 +504,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -519,13 +518,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -538,13 +536,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

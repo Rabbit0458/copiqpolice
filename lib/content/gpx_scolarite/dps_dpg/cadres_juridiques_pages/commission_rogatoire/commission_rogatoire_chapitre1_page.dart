@@ -18,17 +18,17 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.88);
+        : const Color(0xFF1F1F1F).withValues(alpha: .88);
 
     final Color cardBlue = isDark
         ? const Color(0xFF0D1B2A)
         : const Color(0xFFE3F2FD);
-    final Color cardBlueAccent = const Color(0xFF1565C0);
+    const Color cardBlueAccent = Color(0xFF1565C0);
 
     final Color cardGreen = isDark
         ? const Color(0xFF0F2416)
         : const Color(0xFFE8F5E9);
-    final Color cardGreenAccent = const Color(0xFF2E7D32);
+    const Color cardGreenAccent = Color(0xFF2E7D32);
 
     return Scaffold(
       backgroundColor: bg,
@@ -119,10 +119,10 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           const SizedBox(height: 10),
 
           // EXEMPLE / CITATION ARTICLE 81 AL. 4 CPP
-          _ExempleBox(
+          const _ExempleBox(
             title: 'Article 81 alinéa 4 du Code de procédure pénale',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'Lorsque le juge d’instruction ne peut pas accomplir lui-même tous les actes '
                     'nécessaires à l’information, il peut donner commission rogatoire aux '
@@ -135,10 +135,10 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           const SizedBox(height: 10),
 
           // CIRCULAIRE 1er MARS 1993 -> EXEMPLE
-          _ExempleBox(
+          const _ExempleBox(
             title: 'Circulaire du 1er mars 1993 (extrait)',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'La circulaire précise que la possibilité de délivrer une commission '
                     'rogatoire est réservée aux situations où il est réellement impossible '
@@ -324,8 +324,8 @@ class CommissionRogatoireChapitre1Page extends StatelessWidget {
           // ==================================================================
           // NOTA / INFO FINALE (APJ, APJ adjoints, assistants d'enquête)
           // ==================================================================
-          _NotaBox(
-            bodySpans: const [
+          const _NotaBox(
+            bodySpans: [
               TextSpan(
                 text:
                     'seuls les officiers de police judiciaire sont compétents pour mettre en '
@@ -374,10 +374,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -449,7 +449,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -495,7 +495,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -544,7 +544,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -597,7 +597,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -622,7 +622,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -637,10 +637,9 @@ class _ExempleBox extends StatelessWidget {
 /// BLOC NOTA / INFO / SANCTION
 /// ------------------------------------------------------------------
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -651,13 +650,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -670,13 +668,9 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

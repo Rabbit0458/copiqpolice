@@ -83,7 +83,7 @@ class _InfractionPageState extends State<InfractionPage>
     return AnnotatedRegion<SystemUiOverlayStyle>(
       value: overlay,
       child: Theme(
-        data: Theme.of(context).copyWith(useMaterial3: true),
+        data: Theme.of(context).copyWith(),
         child: Scaffold(
           extendBodyBehindAppBar: true,
           appBar: AppBar(
@@ -195,9 +195,9 @@ class _InfractionPageState extends State<InfractionPage>
                   // 1) Légal — sliders
                   SliverToBoxAdapter(
                     key: _kLegal,
-                    child: _SliderSection(
+                    child: const _SliderSection(
                       title: '1) Élément légal',
-                      pages: const [
+                      pages: [
                         _CardData('Principe', Icons.rule_rounded, [
                           'Nullum crimen, nulla poena sine lege.',
                           'Un texte incrimine précisément les faits : loi/ordonnance ; règlement pour les contraventions.',
@@ -215,9 +215,9 @@ class _InfractionPageState extends State<InfractionPage>
                   // 2) Matériel — sliders
                   SliverToBoxAdapter(
                     key: _kMaterial,
-                    child: _SliderSection(
+                    child: const _SliderSection(
                       title: '2) Élément matériel',
-                      pages: const [
+                      pages: [
                         _CardData(
                           'Acte & résultat',
                           Icons.precision_manufacturing_rounded,
@@ -243,9 +243,9 @@ class _InfractionPageState extends State<InfractionPage>
                   // 3) Moral — sliders
                   SliverToBoxAdapter(
                     key: _kMoral,
-                    child: _SliderSection(
+                    child: const _SliderSection(
                       title: '3) Élément moral',
-                      pages: const [
+                      pages: [
                         _CardData('Intention', Icons.bolt_rounded, [
                           'Délits intentionnels : volonté en connaissance de cause.',
                           'Mobile indifférent sauf texte contraire.',
@@ -273,9 +273,9 @@ class _InfractionPageState extends State<InfractionPage>
                   // 4) Circonstances aggravantes — sliders (renuméroté)
                   SliverToBoxAdapter(
                     key: _kAggravations,
-                    child: _SliderSection(
+                    child: const _SliderSection(
                       title: '4) Circonstances aggravantes',
-                      pages: const [
+                      pages: [
                         _CardData(
                           'Principe général',
                           Icons.local_fire_department_rounded,
@@ -332,9 +332,9 @@ class _InfractionPageState extends State<InfractionPage>
                   // 5) Fiche mémo
                   SliverToBoxAdapter(
                     key: _kMemo,
-                    child: _SliderSection(
+                    child: const _SliderSection(
                       title: 'Fiche mémo',
-                      pages: const [
+                      pages: [
                         _CardData('Check terrain', Icons.fact_check_rounded, [
                           'Texte d’incrimination OK ?',
                           'Faits ↔ texte (éléments constitutifs) ?',
@@ -410,8 +410,8 @@ class _QuizCTAState extends State<_QuizCTA>
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
-    final pillColor = Colors.black;
-    final textColor = Colors.white;
+    const pillColor = Colors.black;
+    const textColor = Colors.white;
 
     return Material(
       color: Colors.transparent,
@@ -552,11 +552,9 @@ class _QuickNav extends StatelessWidget {
 
 /// --------------------------- Slider Section ------------------------------
 class _SliderSection extends StatefulWidget {
-  const _SliderSection({required this.title, required this.pages, this.key});
+  const _SliderSection({super.key, required this.title, required this.pages});
   final String title;
   final List<_CardData> pages;
-  @override
-  final Key? key;
 
   @override
   State<_SliderSection> createState() => _SliderSectionState();

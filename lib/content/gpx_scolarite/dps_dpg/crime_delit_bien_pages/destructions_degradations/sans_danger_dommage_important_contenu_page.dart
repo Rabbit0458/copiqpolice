@@ -109,16 +109,16 @@ class SansDangerDommageImportantPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-1 I du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les destructions, dégradations ou détériorations ne présentant pas un danger pour les personnes et entraînant un dommage important.",
                 ),
@@ -134,105 +134,105 @@ class SansDangerDommageImportantPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une atteinte matérielle"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une atteinte matérielle"),
+              _Paragraph(
                 "Le texte ne précise pas les moyens employés : en principe, n’importe quel moyen peut être utilisé. "
                 "Sont toutefois exclus les modes faisant l’objet de textes particuliers (ex. incendie, substances explosives).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Sur un bien appartenant à autrui"),
-              const _Paragraph(
+              _SubTitle("B) Sur un bien appartenant à autrui"),
+              _Paragraph(
                 "La notion de « bien appartenant à autrui » est entendue largement. Certains biens bénéficient néanmoins "
                 "d’une protection spécifique (ex. sabotage, biens sous scellés, biens déposés dans un dépôt public, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Les biens immobiliers"),
-              const _Paragraph(
+              _SubTitle("1) Les biens immobiliers"),
+              _Paragraph(
                 "Sont notamment visées les constructions (bâtiments, maisons), quels que soient les matériaux et la valeur. "
                 "Peu importe qu’elles soient en chantier, à condition que l’état d’avancement permette de distinguer une véritable construction.\n"
                 "Exemples : ouvrages de transport d’énergie, mobilier urbain, routes/chaussées, station de métro, etc.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Les biens mobiliers"),
-              const _Paragraph(
+              _SubTitle("2) Les biens mobiliers"),
+              _Paragraph(
                 "Sont concernés les objets utilisés dans la vie courante : meubles, vêtements, bijoux, documents utiles aux affaires, "
                 "véhicules et moyens de transport.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La loi n° 2015-177 du 16/02/2015 précise que les animaux sont des êtres vivants doués de sensibilité. ",
                   ),
                   TextSpan(
                     text: "(article 515-14 du Code civil)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " — ils ne sont donc plus assimilés à de simples objets.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) L’appartenance du bien"),
-              const _Paragraph(
+              _SubTitle("3) L’appartenance du bien"),
+              _Paragraph(
                 "Le bien détruit, dégradé ou détérioré doit appartenir à une autre personne que l’auteur. "
                 "La jurisprudence peut toutefois retenir l’infraction à l’encontre d’un propriétaire ne disposant pas de la pleine et entière propriété "
                 "(ex. copropriétaire détruisant un élément commun).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Entraînant un dommage important"),
+              _SubTitle("C) Entraînant un dommage important"),
               _Paragraph.rich([
-                const TextSpan(text: "Le "),
+                TextSpan(text: "Le "),
                 TextSpan(
                   text: "texte de l’article 322-1 I du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " vise trois résultats : destruction, dégradation, détérioration. Le dommage doit être suffisamment important, "
                       "appréciation laissée au juge.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) La destruction"),
-              const _Paragraph(
+              _SubTitle("1) La destruction"),
+              _Paragraph(
                 "Acte le plus grave : le bien est rendu impropre à l’usage attendu. La destruction peut être totale ou partielle, "
                 "dès lors que le bien devient inapte à rendre les services attendus.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) La dégradation"),
-              const _Paragraph(
+              _SubTitle("2) La dégradation"),
+              _Paragraph(
                 "Le bien voit ses qualités diminuées sans devenir inutilisable (ex. crever des pneumatiques, briser un carreau, arracher des essuie-glaces).",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3) La détérioration"),
-              const _Paragraph(
+              _SubTitle("3) La détérioration"),
+              _Paragraph(
                 "Actes moins graves : le bien perd de la valeur mais, après réparation, reste apte à remplir son rôle (ex. pièce de machine réparable).",
               ),
             ],
@@ -246,27 +246,27 @@ class SansDangerDommageImportantPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’intention simple suffit : l’auteur est punissable s’il a agi sciemment et volontairement, "
                 "en sachant ne pas être propriétaire du bien et ne pas avoir de droit de disposition.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Référence jurisprudentielle : "),
+                  TextSpan(text: "Référence jurisprudentielle : "),
                   TextSpan(
                     text: "Cass. crim., 18 septembre 1991",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Aucun dol spécial n’est exigé : peu importe que l’auteur ait voulu nuire ou poursuivre un but particulier. "
                 "Le mobile est indifférent (vengeance, vandalisme, etc.).",
               ),
@@ -281,88 +281,88 @@ class SansDangerDommageImportantPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque le bien détruit/dégradé/détérioré est un registre, une minute ou un acte original de l’autorité publique.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Sont notamment visés : registres d’état civil, minutes d’actes notariés, originaux d’actes, constats et procès-verbaux "
                 "dressés par des officiers publics/ministériels ou des fonctionnaires habilités. "
                 "La destruction peut intervenir n’importe où (pas forcément dans les locaux de l’autorité).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : circonstances aggravantes notamment lorsque :",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’infraction est commise par plusieurs personnes agissant en qualité d’auteur ou de complice.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est facilitée par la particulière vulnérabilité d’une personne (âge, maladie, infirmité, déficience physique/psychique, grossesse), apparente ou connue.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est commise au préjudice de personnes dépositaires de l’autorité publique ou chargées d’une mission de service public, pour influencer leur comportement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est commise au préjudice du conjoint/ascendant/descendant (ou personne vivant habituellement au domicile) des personnes visées ci-dessus, en raison de leurs fonctions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est commise au préjudice d’un témoin, d’une victime ou d’une partie civile, pour empêcher/faire cesser une dénonciation, plainte ou déposition, ou en raison de celles-ci.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est commise dans un local d’habitation ou un lieu d’entrepôt de fonds/valeurs/marchandises/matériels, avec ruse, effraction ou escalade.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est commise à l’encontre d’un lieu classifié au titre du secret de la défense nationale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’auteur dissimule volontairement tout ou partie de son visage afin de ne pas être identifié.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le bien est destiné à l’utilité ou à la décoration publique et appartient à une personne publique ou chargée d’une mission de service public (ex. mobilier urbain, fontaines, conduites de gaz, lignes électriques, panneaux, bâtiments d’utilité publique).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle porte sur du matériel destiné à prodiguer des soins de premiers secours.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le bien détruit/dégradé/détérioré est destiné à la vaccination.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Elle est commise à l’encontre d’un établissement scolaire/éducatif/de loisirs ou d’un véhicule transportant des enfants.",
               ),
@@ -377,94 +377,94 @@ class SansDangerDommageImportantPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-1 I du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (une circonstance) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (une circonstance) : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Aggravée (deux circonstances prévues au 1° et suivants) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Aggravation maximale mentionnée : 7 ans d’emprisonnement et 100 000 € d’amende (selon les cas prévus par le texte).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les personnes morales encourent les peines prévues par ",
                 ),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 322-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (prévoit expressément la tentative punissable pour ces délits).",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Complicité : OUI. La complicité est punissable pour l’infraction consommée comme pour l’infraction tentée, "
                 "si l’un des faits constitutifs de complicité est caractérisé et si l’intention de s’associer à l’action de l’auteur principal est établie.",
               ),
@@ -504,10 +504,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -572,7 +572,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -615,7 +615,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -677,7 +677,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -688,10 +688,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -703,13 +702,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -722,13 +720,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

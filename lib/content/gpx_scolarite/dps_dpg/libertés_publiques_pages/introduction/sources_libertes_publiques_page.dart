@@ -115,109 +115,109 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             cardColor: cardHist,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1.1 — Apports antérieurs à 1789"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1.1 — Apports antérieurs à 1789"),
+              _Paragraph(
                 "Avant la Déclaration de 1789, des courants d’idées et des textes fondamentaux ont posé les premières garanties contre l’arbitraire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("A) Sources philosophiques"),
-              const _Paragraph("1) Pensée chrétienne"),
-              const SizedBox(height: 6),
-              const _IntroBullet(
+              _SubTitle("A) Sources philosophiques"),
+              _Paragraph("1) Pensée chrétienne"),
+              SizedBox(height: 6),
+              _IntroBullet(
                 text: "Affirmation de l’égalité de tous les hommes.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Valeur et respect de la personne humaine.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Limitation du pouvoir de l’État et légitimation de la résistance à l’oppression.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph("2) Droit naturel & Contrat social"),
-              const SizedBox(height: 6),
-              const _IntroBullet(
+              _Paragraph("2) Droit naturel & Contrat social"),
+              SizedBox(height: 6),
+              _IntroBullet(
                 text:
                     "Idée antique : droits naturels, universels et intangibles, visant une société idéale.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Contrat social (Jean-Jacques Rousseau) : les hommes quittent l’état de nature pour fonder une société civile.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Par convention : abandon d’une partie de la liberté initiale contre davantage de sécurité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph("3) Philosophie des Lumières (XVIIIe siècle)"),
-              const SizedBox(height: 6),
-              const _IntroBullet(text: "Influence des systèmes anglo-saxons."),
-              const _IntroBullet(
+              _Paragraph("3) Philosophie des Lumières (XVIIIe siècle)"),
+              SizedBox(height: 6),
+              _IntroBullet(text: "Influence des systèmes anglo-saxons."),
+              _IntroBullet(
                 text:
                     "Esprit de résistance au pouvoir (notamment dans les Parlements).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Physiocrates : respect de l’individu et de ses droits ; propriété comme base de la société.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Sources juridiques"),
-              const _Paragraph("1) Pactes anglais"),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              _SubTitle("B) Sources juridiques"),
+              _Paragraph("1) Pactes anglais"),
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Grande Charte (Magna Carta, 1215) : limitation de la toute-puissance royale et garantie minimale de libertés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Pétition des droits (1627) : revendications renforcées ; monarchie constitutionnelle limitée par le droit.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Habeas Corpus (1679) : garantie de la sûreté ; intervention du juge contre une détention arbitraire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Bill of Rights (1689) : garantie des libertés publiques du Parlement.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ces textes proclament des principes de libertés et mettent en place des garanties contre l’arbitraire de l’État.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph("2) Déclarations américaines"),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              _Paragraph("2) Déclarations américaines"),
+              SizedBox(height: 6),
+              _Paragraph(
                 "Les premières déclarations de droits rédigées sous influence anglaise. "
                 "La plus célèbre : déclaration d’indépendance du 4 juillet 1776, souvent décrite comme un « hymne à l’individualisme optimiste ».",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(text: "Notion d’égalité."),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(text: "Notion d’égalité."),
+              _IntroBullet(
                 text: "Droits inaliénables : liberté, vie, bonheur, honneur.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Le texte de référence en France reste la ",
                   ),
                   TextSpan(
                     text:
                         "Déclaration des Droits de l’Homme et du Citoyen de 1789",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -233,15 +233,15 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Déclaration du 26 août 1789",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : élaborée par l’Assemblée nationale constituante, issue de la Révolution.",
                 ),
@@ -299,37 +299,37 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                     : const Color(0xFFFFFFFF),
                 accent: accentBlue,
                 titleColor: textMain,
-                children: [
-                  const _BulletPoint(
+                children: const [
+                  _BulletPoint(
                     text:
                         "Égalité : condition première de la liberté ; égalité devant la loi, devant les charges, égal accès aux emplois publics…",
                   ),
-                  const SizedBox(height: 6),
-                  const _BulletPoint(
+                  SizedBox(height: 6),
+                  _BulletPoint(
                     text:
                         "Liberté : « pouvoir faire tout ce qui ne nuit pas à autrui » ; principe selon lequel « tout ce qui n’est pas défendu par la loi ne peut être empêché ».",
                   ),
-                  const SizedBox(height: 6),
-                  const _BulletPoint(
+                  SizedBox(height: 6),
+                  _BulletPoint(
                     text:
                         "Propriété : droit inviolable et sacré, mais pouvant être limité/supprimé si nécessité publique + juste et préalable indemnité (ex. expropriation, nationalisations).",
                   ),
-                  const SizedBox(height: 6),
+                  SizedBox(height: 6),
                   _BulletPoint(
                     text:
                         "Résistance à l’oppression : droit et devoir lorsque le pouvoir n’est plus conforme au contrat social.",
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   _Paragraph.rich([
-                    const TextSpan(text: "Fondement : "),
+                    TextSpan(text: "Fondement : "),
                     TextSpan(
                       text: "Art. 2 de la DDHC",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(
+                    TextSpan(
                       text:
                           " (la résistance à l’oppression sera précisée dans la Déclaration montagnarde de 1793).",
                     ),
@@ -356,100 +356,100 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             cardColor: cardPost,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Après 1789, la reconnaissance des libertés publiques se poursuit, mais varie selon les régimes politiques.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Repères chronologiques"),
-              const _BulletPoint(
+              _SubTitle("Repères chronologiques"),
+              _BulletPoint(
                 text:
                     "Constituante (1789–1791) : liberté quasi totale de réunion et d’expression (journaux, clubs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Projet girondin (1793) : nouveaux droits (instruction, secours publics), droits économiques.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Constitution montagnarde (1793–1794) : suffrage universel direct, garanties renforcées (application brève).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Directoire (1795) : propriété comme fondement ; censure et restrictions pratiques.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Consulat & Empire (1799–1815) : période sombre ; commissions « façades », décret de 1810 et prisons d’État.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Chartes de 1814 et 1830 : progression sur certaines libertés (presse, culte), mais suffrage censitaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Constitution de 1848 : suffrage universel, libertés réaffirmées puis lois restrictives (clubs, presse, suffrage).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Second Empire : autorisations préalables (presse, réunions), interdictions d’associations ; assouplissement après 1860.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "IIIe République : grandes lois libérales (réunion, presse, association).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Lois majeures : "),
+                  TextSpan(text: "Lois majeures : "),
                   TextSpan(
                     text: "loi du 30 juin 1881 (liberté de réunion)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "loi du 29 juillet 1881 (liberté de la presse)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "loi du 1er juillet 1901 (liberté d’association)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Preambule de 1946 (IVe République)"),
-              const _Paragraph(
+              _SubTitle("Preambule de 1946 (IVe République)"),
+              _Paragraph(
                 "Réaffirme les droits hérités de 1789 et garantit de nouveaux droits sociaux : égalité politique homme/femme, droit d’asile, "
                 "droits des travailleurs (discussion collective, participation), droit à l’emploi, droit syndical, droit à l’instruction et formation.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Droit de grève : "),
+                TextSpan(text: "Droit de grève : "),
                 TextSpan(
                   text:
                       "« s’exerce dans le cadre des lois qui le réglementent »",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -462,45 +462,45 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             cardColor: cardCurrent,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("2.1 — Préambule de la Constitution de 1958"),
+            children: const [
+              _SubTitle("2.1 — Préambule de la Constitution de 1958"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Source principale : le préambule de la Constitution du 4 octobre 1958 (Ve République) se réfère explicitement à ",
                 ),
                 TextSpan(
                   text: "la DDHC de 1789",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", au "),
+                TextSpan(text: ", au "),
                 TextSpan(
                   text: "préambule de 1946",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et à la "),
+                TextSpan(text: " et à la "),
                 TextSpan(
                   text: "Charte de l’environnement de 2004",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La Constitution de 1958 reprend l’évolution des libertés : droits individuels, droits sociaux et économiques, et leur protection.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Droits modernes complétant le socle"),
+              _SubTitle("Droits modernes complétant le socle"),
               _IntroBullet(
                 text:
                     "Droit au respect de la vie privée (loi du 17 juillet 1970).",
@@ -521,177 +521,177 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             cardColor: cardIntl,
             accent: accentCyan,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’internationalisation des droits de l’homme est liée aux événements guerriers (Société des Nations après 1918, ONU après 1945). "
                 "Progressivement, des textes protecteurs ont été adoptés : on parle de droit des conflits armés et de protection internationale.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2.2.1 — Droit international humanitaire (conflits armés)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit de La Haye (1899–1907) : droits/devoirs des belligérants et limitation des moyens (ex. interdiction de certains gaz).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit de Genève (12 août 1949) : protection des blessés/malades, prisonniers de guerre, populations civiles.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Protocoles additionnels de 1977 : adaptation aux conflits modernes (guérillas, décolonisation, guerres civiles, terrorisme).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2.2.2 — Déclaration universelle des droits de l’homme",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Adoptée le "),
+                TextSpan(text: "Adoptée le "),
                 TextSpan(
                   text: "10 décembre 1948 (ONU)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : objectif de respect universel et effectif des droits de l’homme et libertés fondamentales.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Limite : textes souvent non contraignants (recommandations), du fait de la souveraineté des États. "
                 "Mais elle proclame de nombreux droits : personnels, politiques, économiques et sociaux.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Textes notables : "),
+                  TextSpan(text: "Textes notables : "),
                   TextSpan(
                     text: "prévention du génocide (9/12/1948)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text:
                         "imprescriptibilité crimes de guerre/crimes contre l’humanité (26/11/1968)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "texte contre la torture (10/12/1984)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "statut des réfugiés (28/07/1951)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "lutte discrimination raciale (1965)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2.2.3 — Convention européenne des droits de l’homme",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Signée le "),
+                TextSpan(text: "Signée le "),
                 TextSpan(
                   text: "4 novembre 1950",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", ratifiée par la France en "),
+                TextSpan(text: ", ratifiée par la France en "),
                 TextSpan(
                   text: "1974",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : mécanismes effectifs de protection en cas de violation.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Réforme majeure : "),
+                TextSpan(text: "Réforme majeure : "),
                 TextSpan(
                   text: "protocole n°11 du 11 mai 1994",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (entrée en vigueur 1er novembre 1998) : suppression de la Commission et création d’une Cour permanente unique (CEDH).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exemples de condamnations : "),
+                  TextSpan(text: "Exemples de condamnations : "),
                   TextSpan(
                     text: "26 avril 1990, Clerc (lenteur)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "24 avril 1990, Kruslin et Huvig (écoutes)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "28 juillet 1999, Selmouni (torture)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "À noter : compétence concurrente de la CJUE sur le respect des droits fondamentaux "
                 "(ex. condamnation de la France en 1988 concernant des quotas femmes dans la police ; décret du 03 mars 1992 supprimant ces quotas).",
               ),
@@ -707,24 +707,24 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             cardColor: cardHierarchy,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La protection d’une liberté dépend du rang du texte qui la proclame dans la hiérarchie des normes : "
                 "plus le texte est élevé, plus la liberté est protégée (toute règle doit respecter la norme supérieure).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Hiérarchie (ordre décroissant)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Hiérarchie (ordre décroissant)"),
+              _BulletPoint(
                 text:
                     "Constitution : texte + révisions + préambule (DDHC 1789, Préambule 1946, PFRLR).",
               ),
-              const _BulletPoint(text: "Engagements internationaux."),
-              const _BulletPoint(text: "Lois et textes de valeur législative."),
-              const _BulletPoint(
+              _BulletPoint(text: "Engagements internationaux."),
+              _BulletPoint(text: "Lois et textes de valeur législative."),
+              _BulletPoint(
                 text:
                     "Principes généraux du droit (jurisprudence administrative).",
               ),
-              const _BulletPoint(text: "Règlements."),
+              _BulletPoint(text: "Règlements."),
             ],
           ),
         ],
@@ -761,10 +761,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -829,7 +829,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -872,7 +872,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -934,7 +934,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -945,10 +945,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -960,13 +959,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -979,13 +977,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

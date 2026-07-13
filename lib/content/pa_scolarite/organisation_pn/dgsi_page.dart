@@ -90,18 +90,18 @@ class DgsiPage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "La "),
+                TextSpan(text: "La "),
                 TextSpan(
                   text:
                       "D.G.S.I. — Direction générale de la Sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " est chargée, sur l’ensemble du territoire de la République, de rechercher, de centraliser et d’exploiter le renseignement intéressant la sécurité nationale ou les intérêts fondamentaux de la Nation.",
                 ),
@@ -169,59 +169,59 @@ class DgsiPage extends StatelessWidget {
             cardColor: cardDomaines,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Menaces terroristes et atteintes aux institutions",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Actes de terrorisme ou portant atteinte à la sûreté de l’État, à l’intégrité du territoire ou à la permanence des institutions de la République.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Chef de file",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La D.G.S.I. est le chef de file des services en charge de la lutte contre les menaces terroristes visant le territoire national : elle impulse, anime, pilote et coordonne l’action menée afin de détecter et d’entraver ces menaces.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Secret de la défense nationale et protection des intérêts fondamentaux",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Actes portant atteinte au secret de la défense nationale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Actes portant atteinte au potentiel économique, industriel ou scientifique du pays.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Armes de destruction massive"),
-              const _BulletPoint(
+              _SubTitle("C) Armes de destruction massive"),
+              _BulletPoint(
                 text:
                     "Activités liées à l’acquisition ou à la fabrication d’armes de destruction massive.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Criminalité numérique"),
-              const _BulletPoint(
+              _SubTitle("D) Criminalité numérique"),
+              _BulletPoint(
                 text:
                     "Criminalité liée aux technologies de l’information et de la communication.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Criminalité organisée internationale"),
-              const _Paragraph(
+              _SubTitle("E) Criminalité organisée internationale"),
+              _Paragraph(
                 "La Direction générale de la Sécurité intérieure concourt également à la surveillance des activités menées par des organisations criminelles internationales "
                 "lorsqu’elles sont susceptibles d’affecter la sécurité nationale.",
               ),
@@ -251,20 +251,20 @@ class DgsiPage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les services concourant à la sécurité nationale transmettent sans délai les renseignements se rapportant aux activités de la ",
                 ),
                 TextSpan(
                   text: "D.G.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),

@@ -19,6 +19,9 @@ import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
 import 'package:copiqpolice/features/home/parametre_home.dart';
+import 'package:copiqpolice/core/services/subscription_service.dart';
+import 'package:copiqpolice/features/onboarding/mode_picker.dart'
+    show ModePickerScreen;
 
 // ======================================================================
 //                               THEME TOKENS
@@ -246,7 +249,16 @@ class _HomePagePaExamState extends State<HomePagePaExam> {
                       ],
                     ),
                   ),
-                  _IconCircle(icon: Icons.school_rounded, onTap: () {}),
+                  _IconCircle(
+                    icon: Icons.school_rounded,
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (_) => const ModePickerScreen(),
+                        ),
+                      );
+                    },
+                  ),
                 ],
               ),
             ),
@@ -1129,56 +1141,352 @@ class _CategoryDetailPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final isDark = theme.brightness == Brightness.dark;
+    final Color bg = isDark ? const Color(0xFF0E0F12) : Colors.white;
+    final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
+
     return Scaffold(
+      backgroundColor: bg,
       appBar: AppBar(
-        title: Text(title),
-        backgroundColor: Colors.transparent,
+        backgroundColor: bg,
         elevation: 0,
+        centerTitle: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back_rounded),
-          onPressed: () => Navigator.of(context).pop(),
+          onPressed: () => Navigator.of(context).maybePop(),
+          icon: Icon(Icons.arrow_back_ios_new, color: textMain),
+          tooltip: 'Retour',
+        ),
+        title: Text(
+          title,
+          maxLines: 1,
+          overflow: TextOverflow.ellipsis,
+          style: GoogleFonts.fustat(
+            fontWeight: FontWeight.w900,
+            fontSize: 18,
+            color: textMain,
+          ),
         ),
       ),
-      body: ListView.builder(
-        padding: const EdgeInsets.all(20),
+      body: ListView.separated(
+        physics: const BouncingScrollPhysics(),
+        padding: const EdgeInsets.fromLTRB(16, 8, 16, 28),
         itemCount: subcategories.length,
-        itemBuilder: (context, index) {
-          final sub = subcategories[index];
-          return Card(
-            margin: const EdgeInsets.only(bottom: 12),
-            elevation: 2,
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: ListTile(
-              contentPadding: const EdgeInsets.symmetric(
-                horizontal: 20,
-                vertical: 12,
-              ),
-              leading: Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                  color: _T.ink.withValues(alpha: 0.1),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: const Icon(Icons.article_rounded, color: _T.ink),
-              ),
-              title: Text(
-                sub.label,
-                style: theme.textTheme.titleMedium?.copyWith(
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-              trailing: const Icon(
-                Icons.arrow_forward_ios_rounded,
-                size: 16,
-                color: _T.g500,
-              ),
-              onTap: () => Navigator.of(context).pushNamed(sub.route),
-            ),
+        separatorBuilder: (_, __) => const SizedBox(height: 14),
+        itemBuilder: (context, i) {
+          final sub = subcategories[i];
+          return _ModuleCard(
+            tag: sub.route,
+            title: sub.label,
+            subtitle: _subtitleFor(sub.label),
+            imagePath: sub.image ?? _imageFor(sub.label),
+            onTap: () => Navigator.of(context).pushNamed(sub.route),
           );
         },
+      ),
+    );
+  }
+
+  String _imageFor(String label) {
+    final l = label.toLowerCase().trim();
+    if (l.contains('méthodologie')) return 'assets/images/concours_connaissances_generales.jpeg';
+    if (l.contains('fiche') || l.contains('cours')) return 'assets/images/concours_pa_epreuves.jpeg';
+    if (l.contains('qcm') || l.contains('entraînement') || l.contains('entrainement')) return 'assets/images/quiz.jpeg';
+    if (l.contains('exercice')) return 'assets/images/infraction_materiel.jpeg';
+    if (l.contains('corrig')) return 'assets/images/concours_photolangage.jpeg';
+    if (l.contains('photolangage')) return 'assets/images/concours_photolangage.jpeg';
+    if (l.contains('tableau')) return 'assets/images/concours_pa_epreuves.jpeg';
+    if (l.contains('analyse')) return 'assets/images/concours_connaissances_generales.jpeg';
+    if (l.contains('aptitude') || l.contains('logique')) return 'assets/images/quiz.jpeg';
+    return 'assets/images/concours_pa_epreuves.jpeg';
+  }
+
+  String _subtitleFor(String label) {
+    final l = label.toLowerCase();
+    if (l.contains('méthodologie')) return "Conseils & stratégies pour l'épreuve";
+    if (l.contains('fiche')) return 'Synthèse des points clés';
+    if (l.contains('qcm')) return 'Questions à choix multiples';
+    if (l.contains('exercice')) return 'Mises en situation pratiques';
+    if (l.contains('corrig')) return 'Corrections détaillées';
+    if (l.contains('tableau')) return 'Vue synthétique et repères clés';
+    if (l.contains('analyse')) return "Comprendre l'épreuve";
+    if (l.contains('aptitude')) return 'Exercices verbaux';
+    if (l.contains('logique')) return 'Raisonnement et déduction';
+    if (l.contains('observation')) return 'Attention et concentration';
+    if (l.contains('personnalit')) return 'Profil comportemental';
+    return 'Module';
+  }
+}
+
+// ======================================================================
+// Carte image + gradient + badge + CTA
+// ======================================================================
+
+class _ModuleCard extends StatelessWidget {
+  const _ModuleCard({
+    required this.tag,
+    required this.title,
+    required this.subtitle,
+    required this.imagePath,
+    required this.onTap,
+  });
+
+  final String tag;
+  final String title;
+  final String subtitle;
+  final String imagePath;
+  final VoidCallback onTap;
+
+  static const double _minHeight = 190;
+
+  double _measureTextHeight({
+    required String text,
+    required TextStyle style,
+    required double maxWidth,
+  }) {
+    final tp = TextPainter(
+      text: TextSpan(text: text, style: style),
+      textDirection: TextDirection.ltr,
+      textAlign: TextAlign.left,
+      maxLines: null,
+    )..layout(maxWidth: maxWidth);
+    return tp.size.height;
+  }
+
+  Future<void> _guardedOpen(BuildContext context) async {
+    final ok = await SubscriptionService.instance.guardAppAccess(context);
+    if (!ok) return;
+    onTap();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return ValueListenableBuilder<SubscriptionState>(
+      valueListenable: SubscriptionService.instance.state,
+      builder: (context, s, _) {
+        final locked = s.isLocked;
+        final isDark = Theme.of(context).brightness == Brightness.dark;
+        final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+        final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+
+        return LayoutBuilder(
+          builder: (context, c) {
+            const double pad = 16;
+            const double badgeHApprox = 28;
+            const double gapAfterBadge = 10;
+            const double gapTitleSub = 6;
+            const double ctaApproxW = 118;
+            const double ctaApproxH = 44;
+            const double gapBetweenTextAndCta = 12;
+
+            final double textMaxWidth =
+                (c.maxWidth - (pad * 2) - ctaApproxW - gapBetweenTextAndCta)
+                    .clamp(140.0, c.maxWidth);
+
+            final titleStyle = GoogleFonts.fustat(
+              fontWeight: FontWeight.w900,
+              fontSize: 24,
+              color: Colors.white,
+              height: 1.06,
+            );
+            final subtitleStyle = GoogleFonts.fustat(
+              fontWeight: FontWeight.w600,
+              fontSize: 14,
+              color: Colors.white.withValues(alpha: .85),
+              height: 1.15,
+            );
+
+            final double titleH = _measureTextHeight(
+                text: title, style: titleStyle, maxWidth: textMaxWidth);
+            final double subH = subtitle.trim().isEmpty
+                ? 0
+                : _measureTextHeight(
+                    text: subtitle, style: subtitleStyle, maxWidth: textMaxWidth);
+            final double bottomBlockH = math.max(
+                titleH + (subH > 0 ? (gapTitleSub + subH) : 0), ctaApproxH);
+            final double computedHeight =
+                pad + badgeHApprox + gapAfterBadge + bottomBlockH + pad;
+            final double cardHeight =
+                computedHeight < _minHeight ? _minHeight : computedHeight;
+
+            return GestureDetector(
+              onTap: () => _guardedOpen(context),
+              child: Semantics(
+                button: true,
+                label: '$title — découvrir',
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(18),
+                  child: SizedBox(
+                    height: cardHeight,
+                    child: Stack(
+                      fit: StackFit.expand,
+                      children: [
+                        Hero(
+                          tag: 'hero_pa_exam_$tag',
+                          child: Image.asset(imagePath,
+                              fit: BoxFit.cover,
+                              alignment: Alignment.center,
+                              filterQuality: FilterQuality.high),
+                        ),
+                        DecoratedBox(
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              begin: Alignment.topCenter,
+                              end: Alignment.bottomCenter,
+                              colors: [
+                                Colors.black.withValues(alpha: .10),
+                                Colors.black.withValues(alpha: .55),
+                                Colors.black.withValues(alpha: .78),
+                              ],
+                              stops: const [0.0, 0.55, 1.0],
+                            ),
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(pad),
+                          child: Stack(
+                            children: [
+                              Align(
+                                alignment: Alignment.topLeft,
+                                child: Container(
+                                  padding: const EdgeInsets.symmetric(
+                                      horizontal: 10, vertical: 6),
+                                  decoration: BoxDecoration(
+                                    color: badgeBg,
+                                    borderRadius: BorderRadius.circular(999),
+                                    border: Border.all(color: borderClr),
+                                  ),
+                                  child: Text('Module',
+                                      style: GoogleFonts.fustat(
+                                          fontWeight: FontWeight.w800,
+                                          fontSize: 12,
+                                          color: Colors.white)),
+                                ),
+                              ),
+                              if (locked)
+                                Align(
+                                  alignment: Alignment.topRight,
+                                  child: _PremiumBadge(
+                                    onTap: () => Navigator.of(context)
+                                        .pushNamed('/abonnement'),
+                                  ),
+                                ),
+                              Positioned(
+                                left: 0,
+                                right: ctaApproxW + gapBetweenTextAndCta,
+                                bottom: 0,
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(title,
+                                        softWrap: true,
+                                        overflow: TextOverflow.visible,
+                                        style: titleStyle),
+                                    if (subtitle.trim().isNotEmpty) ...[
+                                      const SizedBox(height: gapTitleSub),
+                                      Text(subtitle,
+                                          softWrap: true,
+                                          overflow: TextOverflow.visible,
+                                          style: subtitleStyle),
+                                    ],
+                                  ],
+                                ),
+                              ),
+                              Positioned(
+                                right: 0,
+                                bottom: 0,
+                                child: _RoundCTA(
+                                    onTap: () => _guardedOpen(context)),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+}
+
+class _PremiumBadge extends StatelessWidget {
+  final VoidCallback? onTap;
+  const _PremiumBadge({this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final child = Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.36),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(
+            color: Colors.white.withValues(alpha: 0.24), width: 1),
+        boxShadow: const [
+          BoxShadow(
+              blurRadius: 18,
+              offset: Offset(0, 10),
+              color: Color(0x22000000)),
+        ],
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Icon(Icons.lock_rounded, size: 14, color: Colors.white),
+          const SizedBox(width: 6),
+          Text('Premium',
+              style: GoogleFonts.poppins(
+                  fontSize: 12,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                  letterSpacing: .2)),
+        ],
+      ),
+    );
+    if (onTap == null) return child;
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+          onTap: onTap,
+          borderRadius: BorderRadius.circular(999),
+          child: child),
+    );
+  }
+}
+
+class _RoundCTA extends StatelessWidget {
+  const _RoundCTA({required this.onTap});
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      color: Colors.white.withValues(alpha: .12),
+      shape: const StadiumBorder(),
+      child: InkWell(
+        customBorder: const StadiumBorder(),
+        onTap: onTap,
+        child: Padding(
+          padding:
+              const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+          child: Row(
+            children: [
+              const Icon(Icons.arrow_forward_rounded,
+                  color: Colors.white, size: 22),
+              const SizedBox(width: 6),
+              Text('Découvrir',
+                  style: GoogleFonts.fustat(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 13)),
+            ],
+          ),
+        ),
       ),
     );
   }

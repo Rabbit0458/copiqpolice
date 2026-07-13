@@ -98,7 +98,7 @@ class QuizQuestion {
 ///  (tu peux bien sûr l’enrichir encore si besoin)
 /// =============================================================
 final List<QuizQuestion> questionsNullite = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Quel est l’objectif principal de la nullité des actes de procédure pénale ?",
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Que devient un procès-verbal qui a constaté une détention illégale lorsqu’il est annulé ?",
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Combien de grandes catégories de nullités distingue-t-on classiquement en procédure pénale française ?",
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Selon l’Article 802 du Code de Procédure Pénale, quand la nullité peut-elle être prononcée ?",
@@ -160,7 +160,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question: "La nullité d’un acte de procédure pénale entraîne en principe :",
     options: [
@@ -178,7 +178,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //                  NULLITÉS TEXTUELLES — PRINCIPES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités textuelles — Principe",
     question:
         "Qu’est-ce qui caractérise une nullité textuelle en procédure pénale ?",
@@ -194,7 +194,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités textuelles — Répartition",
     question:
         "Où se trouvent les nullités textuelles dans le Code de Procédure Pénale ?",
@@ -212,7 +212,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //          NULLITÉS TEXTUELLES — PERQUISITIONS / SAISIES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nullité textuelle",
     question:
         "Quel article prévoit que les formalités des Articles 56, 56-1, 57 et 59 du Code de Procédure Pénale sont prescrites à peine de nullité ?",
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Présence de la personne",
     question:
         "En principe, une perquisition au domicile doit se dérouler en présence :",
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Heures légales",
     question:
         "Le non-respect des heures légales d’une perquisition (hors exceptions légales) peut entraîner :",
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Cabinet d’avocat",
     question:
         "En cabinet d’avocat, quelle condition est requise à peine de nullité pour la perquisition ?",
@@ -274,7 +274,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Enquête préliminaire",
     question:
         "En enquête préliminaire, une perquisition sans l’assentiment de la personne est possible à condition :",
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //          NULLITÉS TEXTUELLES — RÉQUISITIONS / PRESSE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Nullité textuelle",
     question:
         "Selon les Articles 60-1 et 77-1-1 du Code de Procédure Pénale, à peine de nullité, quels éléments ne peuvent pas être versés au dossier ?",
@@ -312,7 +312,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //   NULLITÉS TEXTUELLES — INTERCEPTIONS / CORRESPONDANCES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Information préalable",
     question:
         "En matière d’interception de correspondances, à peine de nullité, le juge d’instruction doit notamment informer :",
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Avocat / secret professionnel",
     question:
         "À peine de nullité, que prévoit l’Article 100-5 du Code de Procédure Pénale pour les correspondances avec un avocat ?",
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Journalistes",
     question:
         "Que prévoit l’Article 100-5 du Code de Procédure Pénale concernant les correspondances avec un journaliste ?",
@@ -363,7 +363,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //        NULLITÉS TEXTUELLES — INFILTRATION / EXORBITANTS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Nullité textuelle",
     question:
         "À peine de nullité, que ne doit pas faire un agent infiltré lors d’une opération d’infiltration ?",
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Autorisation",
     question:
         "Selon l’Article 706-83 du Code de Procédure Pénale, à peine de nullité, l’autorisation d’infiltration doit être :",
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Moyens exorbitants — Stupéfiants",
     question:
         "En matière de trafic de stupéfiants, que permet l’Article 706-32 du Code de Procédure Pénale aux officiers de police judiciaire et agents de police judiciaire ?",
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête sous pseudonyme",
     question:
         "Selon l’Article 230-46 du Code de Procédure Pénale, dans quel but l’enquête sous pseudonyme est-elle autorisée ?",
@@ -426,7 +426,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête sous pseudonyme — Nullité",
     question:
         "À peine de nullité, que doit faire le magistrat lorsqu’il autorise les actes 3° et 4° de l’Article 230-46 du Code de Procédure Pénale (acquisition, mise à disposition de moyens) ?",
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //         NULLITÉS TEXTUELLES — VÉRIFICATION D’IDENTITÉ
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Nullité",
     question:
         "Quelle durée maximale de rétention est prévue pour une vérification d’identité (hors régimes spécifiques) ?",
@@ -459,7 +459,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Mineurs",
     question:
         "À peine de nullité, que doit-on faire pour un mineur retenu lors d’une vérification d’identité ?",
@@ -475,7 +475,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Procès-verbal",
     question:
         "À peine de nullité, que doit contenir le procès-verbal de vérification d’identité ?",
@@ -493,7 +493,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //                  NULLITÉS SUBSTANTIELLES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Définition",
     question:
         "Selon l’Article 171 du Code de Procédure Pénale, quand y a-t-il nullité substantielle ?",
@@ -509,7 +509,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Garde à vue",
     question:
         "L’absence de notification du droit à être assisté par un avocat en garde à vue constitue :",
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Commission rogatoire",
     question:
         "En commission rogatoire, que doit faire l’officier de police judiciaire lorsqu’apparaissent des indices graves et concordants contre une personne entendue comme témoin ?",
@@ -541,7 +541,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Bande organisée",
     question:
         "Que rappelle la décision du Conseil constitutionnel du 2 mars 2004 concernant l’usage de la procédure de criminalité organisée ?",
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Enregistrement des mineurs",
     question:
         "Que se passe-t-il lorsque l’audition d’un mineur placé en garde à vue n’est pas enregistrée et que les modalités prévues ne sont pas respectées ?",
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //           NULLITÉS D’ORDRE PRIVÉ / D’ORDRE PUBLIC
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités — Ordre privé",
     question:
         "Selon l’Article 802 du Code de Procédure Pénale, les nullités fondées sur la violation des formes prescrites à peine de nullité concernent :",
@@ -591,7 +591,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités — Ordre public",
     question:
         "Qu’est-ce qui caractérise une nullité d’ordre public par rapport à une nullité d’ordre privé ?",
@@ -607,7 +607,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités — Ordre public (exemples)",
     question:
         "La délivrance d’une mission technique ayant le caractère d’une expertise à un officier de police judiciaire par commission rogatoire est :",
@@ -625,7 +625,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //        ACTION EN NULLITÉ — INFORMATION JUDICIAIRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Compétence",
     question:
         "En cas d’information judiciaire, quelle juridiction est compétente pour apprécier les nullités d’actes d’instruction ?",
@@ -640,7 +640,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Juge d’instruction",
     question:
         "Lorsque le juge d’instruction constate qu’un acte est frappé de nullité, que doit-il faire ?",
@@ -656,7 +656,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Procureur de la République",
     question:
         "Comment le procureur de la République peut-il provoquer l’examen d’une nullité par la chambre de l’instruction ?",
@@ -672,7 +672,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Parties",
     question:
         "À quelles conditions une partie peut-elle saisir la chambre de l’instruction d’une requête en nullité ?",
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Témoin assisté",
     question: "Le témoin assisté peut-il former une requête en nullité ?",
     options: [
@@ -705,7 +705,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //         ACTION EN NULLITÉ — RÔLE DU PRÉSIDENT / DÉLAIS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Président chambre",
     question:
         "Dans quel délai le président de la chambre de l’instruction peut-il constater l’irrecevabilité d’une requête en nullité après réception du dossier ?",
@@ -716,7 +716,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Irrecevabilité",
     question: "La requête en nullité est irrecevable notamment lorsque :",
     options: [
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Délais de six mois",
     question:
         "Que prévoit l’Article 173-1 du Code de Procédure Pénale concernant certaines requêtes en nullité ?",
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Détention provisoire",
     question:
         "Lorsque la détention provisoire se poursuit au-delà de trois mois sans avis de fin d’information, que peut faire la chambre de l’instruction ?",
@@ -766,7 +766,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //         COMPÉTENCE HORS INFORMATION — ART. 385 CPP
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Tribunal correctionnel",
     question:
         "En matière délictuelle, lorsque les faits ne font pas l’objet d’une information judiciaire, qui est compétent pour constater les nullités de procédure ?",
@@ -781,7 +781,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Tribunal de police",
     question:
         "En matière contraventionnelle, qui est compétent pour statuer sur les nullités de procédure ?",
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Exception de nullité",
     question:
         "Selon l’Article 385 du Code de Procédure Pénale, à quel moment les exceptions de nullité doivent-elles être soulevées devant le tribunal correctionnel ?",
@@ -815,7 +815,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //                  EFFETS DE LA NULLITÉ — PROCÉDURE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Procédure",
     question:
         "Selon l’Article 174 du Code de Procédure Pénale, que peut décider la chambre de l’instruction lorsqu’elle prononce une nullité ?",
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Dossier d’information",
     question: "Que devient un acte annulé au regard du dossier d’information ?",
     options: [
@@ -846,7 +846,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Canceller",
     question:
         "Que signifie le fait qu’un acte soit “cancellé” dans le cadre d’une annulation partielle ?",
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionsNullite = [
   // ==========================================================
   //                  EFFETS DE LA NULLITÉ — PARTIES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Purge successive",
     question:
         "Que signifie l’expression “purge successive des nullités” utilisée à propos de la saisine de la chambre de l’instruction ?",
@@ -881,7 +881,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Débats devant la chambre",
     question:
         "Après la clôture des débats devant la chambre de l’instruction, que se passe-t-il pour les nullités dont les parties avaient connaissance ?",
@@ -896,7 +896,7 @@ final List<QuizQuestion> questionsNullite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Article 595 CPP",
     question:
         "Que prévoit l’Article 595 du Code de Procédure Pénale pour la recevabilité des moyens de nullité devant la Cour de cassation ?",
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionsNullite = [
 // PAGE
 // ============================================================================
 class QuizNullitePage extends StatefulWidget {
-  static const String routeName = '/gpx/procedure_penale/quiz/nullite';
+  static const String routeName = '/gpx/dps/procedure_penale/quiz/nullite';
   final String uid;
   final String email;
 
@@ -1262,7 +1262,7 @@ class _QuizNullitePageState extends State<QuizNullitePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1465,7 +1465,7 @@ class _QuizNullitePageState extends State<QuizNullitePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1648,7 +1648,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2181,10 +2180,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2555,7 +2555,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2596,9 +2596,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

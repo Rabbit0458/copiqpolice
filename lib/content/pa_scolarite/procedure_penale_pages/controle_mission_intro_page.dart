@@ -215,7 +215,7 @@ class _ControleMissionJudiciaireIntroPageState
 /// si tu veux le partager partout, sinon tu peux le laisser ici.
 /// ------------------------------------------------------------------
 class _CopiqHeroBackButton extends StatelessWidget {
-  const _CopiqHeroBackButton();
+  const _CopiqHeroBackButton({this.iconColor, this.backgroundColor});
 
   final Color? iconColor;
   final Color? backgroundColor;

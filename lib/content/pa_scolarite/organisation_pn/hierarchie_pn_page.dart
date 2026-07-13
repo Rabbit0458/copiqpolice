@@ -166,9 +166,9 @@ class HierarchiePnPage extends StatelessWidget {
                 "ils exercent des fonctions de conception et de direction.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ils exercent les attributions de magistrat qui leur sont conférées par la loi.",
                   ),
@@ -227,9 +227,9 @@ class HierarchiePnPage extends StatelessWidget {
                     "Gardien de la paix — « sous-brigadier » (gardien ayant atteint le 6e échelon) / « gardien ».",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Sous certaines conditions d’ancienneté et selon l’emploi exercé, les majors peuvent accéder à un emploi fonctionnel de responsable d’unité locale de police.",
                   ),
@@ -817,10 +817,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -832,7 +831,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -854,10 +852,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

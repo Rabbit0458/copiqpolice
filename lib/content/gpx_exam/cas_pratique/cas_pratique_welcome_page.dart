@@ -43,8 +43,8 @@ class GpxCasPratiqueEntrainementWelcomePage extends StatelessWidget {
     final onBgSofter = Colors.white.withValues(alpha: 0.78);
 
     // ✅ CTA comme capture
-    final ctaBg = Colors.white;
-    final ctaFg = const Color(0xFF000B36);
+    const ctaBg = Colors.white;
+    const ctaFg = Color(0xFF000B36);
 
     return Scaffold(
       backgroundColor: bgTop,

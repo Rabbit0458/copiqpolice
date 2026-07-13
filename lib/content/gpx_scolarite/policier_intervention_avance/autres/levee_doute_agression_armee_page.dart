@@ -102,11 +102,11 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le document fourni décrit une méthode opérationnelle. "
                         "Aucun article précis (CP/CPP/CSI) n’est indiqué dans ton texte. "
@@ -218,15 +218,15 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
             cardColor: cardNota,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le recueil d’informations participant à la levée de doute nécessite une grande discrétion. "
                 "Les policiers en civil peuvent, en la matière, être plus adaptés à la discrétion souhaitée.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pour le bon déroulement de l’intervention, il est indispensable de prendre en compte "
                         "les paramètres de sécurité, d’observation, de coordination et de protection balistique.",
@@ -337,16 +337,16 @@ class LeveeDouteAgressionArmeePage extends StatelessWidget {
             cardColor: cardNota,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’intervention des policiers dans l’établissement peut exceptionnellement être envisagée, "
                 "notamment lorsque les circonstances liées à la protection des personnes l’exigent, "
                 "et que les renseignements, l’équipement et le nombre de policiers le permettent.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans certains cas, des brigades spécialisées connaissant une affaire en cours peuvent également intervenir.",
                   ),
@@ -388,10 +388,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -456,7 +456,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -499,7 +499,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -561,7 +561,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -593,7 +593,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -606,7 +606,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

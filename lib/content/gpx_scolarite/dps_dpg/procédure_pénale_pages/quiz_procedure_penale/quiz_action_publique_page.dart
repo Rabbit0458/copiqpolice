@@ -100,7 +100,7 @@ class QuizQuestion {
 final List<QuizQuestion> questionsActionPublique = [
   // … tes questions déjà présentes
   // Puis tu ajoutes celles-ci:
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Dans quel cas une infraction fait-elle naître à la fois une action publique et une action civile ?",
@@ -115,7 +115,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Quelle action est exercée pour obtenir la peine prévue par la loi à l’encontre de l’auteur d’une infraction ?",
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionsActionPublique = [
         "L’action publique vise à faire prononcer une peine afin de réparer le trouble causé à l’ordre social.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes fondamentaux",
     question:
         "Quel principe garantit le droit à un procès équitable dans la procédure pénale ?",
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes fondamentaux",
     question:
         "La présomption d’innocence implique que la charge de la preuve incombe à qui ?",
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action publique",
     question:
         "Qui représente la société et exerce l’action publique en procédure pénale ?",
@@ -170,7 +170,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action civile",
     question: "Qui peut exercer l’action civile née d’une infraction ?",
     options: [
@@ -184,7 +184,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Différences action publique / civile",
     question:
         "Quelle est la différence essentielle entre l’action publique et l’action civile ?",
@@ -200,7 +200,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs",
     question:
         "Quel est le principal organe responsable de la mise en mouvement de l’action publique ?",
@@ -211,7 +211,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs",
     question:
         "L’action publique peut-elle être dirigée contre les héritiers du délinquant ?",
@@ -226,7 +226,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitoire",
     question: "Que permet le réquisitoire introductif ?",
     options: [
@@ -241,7 +241,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaintes",
     question:
         "Quelle est la différence entre une plainte simple et une plainte avec constitution de partie civile ?",
@@ -257,7 +257,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classement sans suite",
     question: "Le classement sans suite signifie-t-il un déni de justice ?",
     options: [
@@ -271,7 +271,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opportunité des poursuites",
     question: "L’article 40-1 du CPP consacre quel principe ?",
     options: [
@@ -285,7 +285,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits de la défense",
     question:
         "Quel droit fondamental permet à une personne suspectée d’être assistée par un avocat ?",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prescription",
     question: "Que produit la prescription de l’action publique ?",
     options: [
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Amnistie",
     question: "Quelle est la portée d’une loi d’amnistie sur les infractions ?",
     options: [
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transaction pénale",
     question: "Qu’est-ce qu’une transaction pénale ?",
     options: [
@@ -339,7 +339,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites",
     question:
         "Quelles sont certaines mesures alternatives aux poursuites possibles ?",
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en mouvement de l’action",
     question:
         "Quelles autorités peuvent mettre en mouvement l’action publique en cas d’infraction ?",
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personne morale",
     question:
         "Qui peut être poursuivi lorsque l’infraction est commise par une personne morale ?",
@@ -384,7 +384,7 @@ final List<QuizQuestion> questionsActionPublique = [
         "Les représentants agissent pour la personne morale mais peuvent aussi être poursuivis individuellement.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Quel est l’objectif principal de l’action civile née d’une infraction pénale ?",
@@ -400,7 +400,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Peut-il exister une action civile sans qu’aucune infraction pénale n’ait été commise ?",
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Fondement",
     question:
         "Quel est le fondement de l’action publique lorsqu’une infraction est commise ?",
@@ -431,7 +431,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Fondement",
     question:
         "Sur quel élément l’action civile née d’une infraction trouve-t-elle principalement son fondement ?",
@@ -446,7 +446,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — But",
     question: "Quel est le but principal de l’action publique ?",
     options: [
@@ -460,7 +460,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — But",
     question:
         "Quel est le but principal de l’action civile exercée devant une juridiction répressive ?",
@@ -475,7 +475,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Exercice",
     question: "Par qui l’action publique est-elle en principe exercée ?",
     options: [
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Exercice",
     question: "À qui appartient l’action civile née d’une infraction pénale ?",
     options: [
@@ -504,7 +504,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Caractère",
     question: "Pourquoi dit-on que l’action publique est d’ordre public ?",
     options: [
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Caractère",
     question:
         "Pourquoi l’action civile est-elle qualifiée d’action d’ordre privé ?",
@@ -535,7 +535,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rapprochement — Actions",
     question:
         "Quel est le lien commun à l’origine de l’action publique et de l’action civile lorsqu’elles coexistent ?",
@@ -550,7 +550,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rapprochement — Juridiction",
     question:
         "Que se passe-t-il lorsque la victime exerce son action civile devant la juridiction répressive ?",
@@ -566,7 +566,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rapprochement — Autorité du pénal",
     question: "Que signifie l’adage « le criminel tient le civil en état » ?",
     options: [
@@ -581,7 +581,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Ministère public",
     question:
         "Quel organe exerce normalement l’action publique au nom de la société ?",
@@ -596,7 +596,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Ministère public",
     question:
         "Pourquoi dit-on que le ministère public n’a pas la “disposition” de l’action publique ?",
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Administrations",
     question:
         "Dans quelles hypothèses certaines administrations peuvent-elles exercer l’action publique ?",
@@ -628,7 +628,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Administrations",
     question:
         "Quelle particularité distingue les administrations comme les douanes ou les contributions indirectes du ministère public en matière de poursuites ?",
@@ -644,7 +644,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Particuliers",
     question: "La victime peut-elle exercer elle-même l’action publique ?",
     options: [
@@ -658,7 +658,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs — Personnalité des peines",
     question: "Contre qui l’action publique est-elle, en principe, dirigée ?",
     options: [
@@ -672,7 +672,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs — Décès",
     question:
         "Quelle est la conséquence du décès de l’auteur des faits sur l’action publique ?",
@@ -687,7 +687,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs — Personnes morales",
     question:
         "Lorsque l’infraction est commise par une personne morale, contre qui l’action publique est-elle exercée ?",
@@ -703,7 +703,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Information du parquet",
     question:
         "Selon le code de procédure pénale, qui doit informer sans délai le procureur de la République des crimes et délits dont il a connaissance dans l’exercice de ses fonctions ?",
@@ -718,7 +718,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Légalité et opportunité",
     question:
         "Avant d’exercer l’action publique, que doit vérifier le procureur de la République ?",
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Opportunité",
     question: "Que consacre l’article 40-1 du code de procédure pénale ?",
     options: [
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Classement sans suite",
     question:
         "Dans quel cas le procureur de la République peut-il décider de classer une affaire sans suite ?",
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Causes générales",
     question:
         "Laquelle de ces situations fait partie des causes générales d’extinction de l’action publique ?",
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Amnistie",
     question:
         "Quel est l’effet principal d’une loi d’amnistie sur l’action publique ?",
@@ -794,7 +794,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Principes",
     question:
         "Quel principe fondamental est affirmé au début de l’article préliminaire du code de procédure pénale ?",
@@ -809,7 +809,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Séparation",
     question:
         "Quelle séparation institutionnelle la procédure pénale doit-elle garantir selon l’article préliminaire ?",
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Égalité",
     question:
         "Comment l’égalité devant la justice pénale est-elle formulée dans l’article préliminaire ?",
@@ -841,7 +841,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Victimes",
     question:
         "Quel rôle l’autorité judiciaire doit-elle assurer à l’égard des victimes, selon l’article préliminaire ?",
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Présomption d’innocence",
     question:
         "Que prévoit l’article préliminaire au sujet de la personne suspectée ou poursuivie ?",
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Information de la personne",
     question:
         "Quel droit procédural essentiel est reconnu à toute personne suspectée ou poursuivie ?",
@@ -889,7 +889,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Langue",
     question:
         "Que prévoit l’article préliminaire pour une personne qui ne comprend pas le français ?",
@@ -905,7 +905,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Contraintes",
     question:
         "Comment les mesures de contrainte sont-elles encadrées par l’article préliminaire ?",
@@ -921,7 +921,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Délai raisonnable",
     question:
         "Que garantit l’article préliminaire quant au délai de jugement ?",
@@ -937,7 +937,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Vie privée",
     question:
         "Dans quelles conditions les mesures portant atteinte à la vie privée peuvent-elles être prises au cours de la procédure pénale ?",
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Droit au recours",
     question:
         "Quel droit est reconnu à toute personne condamnée par l’article préliminaire ?",
@@ -969,7 +969,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Assistance de l’avocat",
     question:
         "Quelle règle l’article préliminaire pose-t-il concernant les déclarations faites sans assistance d’un avocat ?",
@@ -985,7 +985,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Droit de se taire",
     question:
         "Quand le droit de se taire doit-il être notifié à la personne suspectée ou poursuivie ?",
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Secret professionnel",
     question:
         "Quel principe en matière de secret professionnel est rappelé par l’article préliminaire ?",
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionsActionPublique = [
   ),
 
   // ----- Actions : autres aspects, sujets, alternatives, etc. -----
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information du parquet",
     question:
         "Quelle est l’obligation faite à tout citoyen par certaines dispositions du code pénal (par exemple pour certains crimes ou sévices sur mineurs) ?",
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision du parquet — Choix",
     question:
         "Quels sont les trois grands types de réponses possibles du procureur de la République face à une infraction commise par une personne identifiée ?",
@@ -1049,7 +1049,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classement sans suite — Caractère",
     question:
         "Le classement sans suite décidé par le procureur de la République a-t-il un caractère définitif ?",
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classement sans suite — Information",
     question:
         "Qui le procureur doit-il informer lorsqu’il décide un classement sans suite ?",
@@ -1080,7 +1080,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Poursuites — Irrévocabilité",
     question:
         "Une fois que le procureur de la République a engagé des poursuites, peut-il revenir sur sa décision ?",
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie — Ordres du procureur général",
     question:
         "Quelle est la conséquence d’un ordre écrit du procureur général adressé au procureur de la République ?",
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie lésée — Plainte simple",
     question:
         "La simple plainte de la victime auprès du procureur de la République oblige-t-elle ce dernier à engager des poursuites ?",
@@ -1126,7 +1126,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie lésée — Plainte avec constitution de partie civile",
     question:
         "Quel est l’effet principal d’une plainte avec constitution de partie civile devant le juge d’instruction ?",
@@ -1141,7 +1141,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaines préalables — Rôle",
     question:
         "Pourquoi la loi exige-t-elle parfois une plainte préalable de la victime pour que l’action publique puisse être engagée ?",
@@ -1157,7 +1157,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaines préalables — Effet du désistement",
     question:
         "Lorsque la plainte préalable est une condition nécessaire de la poursuite, quel est l’effet de son désistement ?",
@@ -1172,7 +1172,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Famille",
     question:
         "Donnez un exemple d’immunité familiale faisant obstacle à l’action du ministère public.",
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation préalable — Parlementaires",
     question:
         "Pour quelles mesures l’autorisation préalable du bureau de l’assemblée est-elle requise à l’égard d’un parlementaire ?",
@@ -1203,7 +1203,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité pénale — Fait d’autrui",
     question:
         "Dans quel cas peut-on retenir la responsabilité pénale du chef d’entreprise pour une infraction commise par un salarié ?",
@@ -1219,7 +1219,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Avertissement pénal probatoire",
     question:
         "Qu’est-ce qu’un avertissement pénal probatoire dans le cadre des alternatives aux poursuites ?",
@@ -1235,7 +1235,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Conditions",
     question:
         "L’alternative aux poursuites peut-elle être utilisée à l’égard d’un auteur récidiviste déjà condamné ?",
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Médiation pénale",
     question:
         "Quel est l’objectif principal de la médiation pénale dans le cadre des alternatives aux poursuites ?",
@@ -1267,7 +1267,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Composition pénale",
     question:
         "Que permet la composition pénale pour l’auteur d’une infraction délictuelle ?",
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Composition pénale",
     question:
         "Quels sont les types de sanctions que la composition pénale peut proposer ?",
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Citation directe",
     question: "Qu’est-ce que la citation directe ?",
     options: [
@@ -1314,7 +1314,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Réquisitoire introductif",
     question:
         "Par qui et comment est généralement mise en mouvement l’action publique ?",
@@ -1330,7 +1330,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Plainte avec constitution de partie civile",
     question:
         "Quel est l’effet d’une plainte avec constitution de partie civile sur l’action publique ?",
@@ -1346,7 +1346,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Causes d’extinction — Décès",
     question:
         "Que devient l’action publique à la suite du décès de l’auteur des faits ?",
@@ -1361,7 +1361,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Causes d’extinction — Amnistie",
     question: "Qu’est-ce que l’amnistie pénale ?",
     options: [
@@ -1376,7 +1376,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Causes d’extinction — Prescription",
     question:
         "Quelle est la conséquence de la prescription de l’action publique ?",
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Transaction pénale",
     question:
         "Quel est l’effet d’une transaction pénale acceptée par la victime et homologuée par le procureur ?",
@@ -1406,7 +1406,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitoire — Définition",
     question: "Qu’est-ce qu’un réquisitoire ?",
     options: [
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juge d’instruction — Pouvoirs",
     question:
         "Quel rôle spécifique le juge d’instruction joue-t-il dans certaines procédures pénales ?",
@@ -1437,7 +1437,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Validité de l’action — Exception",
     question: "Dans quel cas la chose jugée peut-elle être remise en cause ?",
     options: [
@@ -1452,7 +1452,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de l’extinction",
     question: "Que signifie l’extinction de l’action publique ?",
     options: [
@@ -1467,7 +1467,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Rôle",
     question:
         "Dans une procédure pénale, quel est le rôle principal de la partie civile ?",
@@ -1482,7 +1482,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procureur de la République — Pouvoirs",
     question:
         "Quelle est l’étendue du pouvoir du procureur de la République dans la conduite de l’action publique ?",
@@ -1498,7 +1498,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en mouvement — Cas particuliers",
     question:
         "Quels sont certains cas particuliers où la mise en mouvement de l’action publique n’appartient pas au ministère public ?",
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transaction pénale — Conditions",
     question:
         "Quelles sont les conditions essentielles pour qu’une transaction pénale soit valide ?",
@@ -1530,7 +1530,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternatives — Limites légales",
     question:
         "Les alternatives aux poursuites peuvent-elles s’appliquer à tous les types d’infractions ?",
@@ -1546,7 +1546,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Prescription interrompue",
     question:
         "Qu’est-ce qui peut interrompre la prescription de l’action publique ?",
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Effet de la chose jugée",
     question:
         "Selon le principe « non bis in idem », que signifie la chose jugée ?",
@@ -1578,7 +1578,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Assistance",
     question:
         "Dans quels cas la personne suspectée a-t-elle le droit d’être assistée d’un défenseur ?",
@@ -1593,7 +1593,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Interprète",
     question:
         "Quelle garantie est offerte à une personne ne comprenant pas la langue française ?",
@@ -1609,7 +1609,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Droit au silence",
     question:
         "Quelles conséquences a le fait qu’une personne n’ait pas été informée de son droit de se taire ?",
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rôle du Ministère public",
     question:
         "Quelles sont les fonctions essentielles du ministère public dans la procédure pénale ?",
@@ -1641,7 +1641,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Transiger",
     question: "Le ministère public peut-il transiger sur l’action publique ?",
     options: [
@@ -1656,7 +1656,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procureur général — Instructions",
     question:
         "Quel est le rôle du procureur général vis-à-vis du procureur de la République ?",
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions de jugement — Saisine d’office",
     question:
         "Dans quelles conditions une juridiction peut-elle se saisir d’office pour des infractions commises à l’audience ?",
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits — Pouvoirs pénaux",
     question:
         "Dans quelles circonstances particulières le Défenseur des droits peut-il proposer une transaction pénale ?",
@@ -1704,7 +1704,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Informations au procureur — Obligations",
     question:
         "Qui est tenu d’informer sans délai le procureur de la République de la commission d’une infraction ?",
@@ -1720,7 +1720,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obligations spécifiques — Autorités complémentaires",
     question:
         "Quels autres acteurs ont l’obligation de révéler des faits délictueux ?",
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence territoriale et matérielle",
     question:
         "Quels sont les limitations que le procureur doit vérifier avant d’engager l’action publique ?",
@@ -1752,7 +1752,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prescription — Calcul",
     question:
         "Quand commence à courir le délai de prescription de l’action publique ?",
@@ -1767,7 +1767,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours contre les décisions du parquet",
     question:
         "Le parquet est-il soumis à des recours lorsqu’il décide d’engager ou de classer une procédure ?",
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transaction pénale — Effet",
     question:
         "Une fois la transaction pénale conclue, que se passe-t-il concernant l’action publique ?",
@@ -1798,7 +1798,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Chose jugée",
     question:
         "Que signifie le principe « non bis in idem » en matière pénale ?",
@@ -1814,7 +1814,7 @@ final List<QuizQuestion> questionsActionPublique = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Prescription",
     question: "Quel est l’effet de la prescription de l’action publique ?",
     options: [
@@ -1836,7 +1836,7 @@ final List<QuizQuestion> questionsActionPublique = [
 // PAGE
 // ============================================================================
 class QuizActionPubliquePage extends StatefulWidget {
-  static const String routeName = '/gpx/procedure_penale/quiz/action_publique';
+  static const String routeName = '/gpx/dps/procedure_penale/quiz/action_publique';
   final String uid;
   final String email;
 
@@ -2185,7 +2185,7 @@ class _QuizActionPubliquePageState extends State<QuizActionPubliquePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2388,7 +2388,7 @@ class _QuizActionPubliquePageState extends State<QuizActionPubliquePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2571,7 +2571,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3104,10 +3103,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3478,7 +3478,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3519,9 +3519,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

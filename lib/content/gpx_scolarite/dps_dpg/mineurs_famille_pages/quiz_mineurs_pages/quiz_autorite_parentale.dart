@@ -102,7 +102,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // NON-REPRÉSENTATION D’ENFANT MINEUR — FONDEMENTS (227-5)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation d’enfant mineur — Fondement',
     question:
         'La non-représentation d’enfant mineur est définie et réprimée par :',
@@ -123,7 +123,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-5 — NON-REPRÉSENTATION D’ENFANT : BASES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-5',
     question: 'La non-représentation d’enfant mineur est prévue par :',
     options: [
@@ -136,7 +136,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'L’article 227-5 définit et réprime la non-représentation d’enfant mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-5',
     question: 'Le délit de non-représentation d’enfant consiste à :',
     options: [
@@ -150,7 +150,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Élément matériel : refus indû de représenter le mineur à celui qui a droit de le réclamer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Définition du mineur',
     question: 'Selon l’article 388 du code civil, est mineure toute personne :',
     options: [
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-5 — DROIT DE RÉCLAMER : ORIGINE ET CONDITIONS
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer le mineur provient le plus souvent :',
     options: [
@@ -181,7 +181,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise que l’origine est généralement judiciaire ou conventionnelle (homologuée/229-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'Pour que le droit de réclamer soit opposable pénalement, la jurisprudence exige notamment que la décision :',
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Décision exécutoire + connaissance légale de l’auteur du refus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer l’enfant est aussi reconnu par la loi à :',
     options: [
@@ -209,7 +209,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support mentionne la reconnaissance légale à toute personne investie de l’autorité parentale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'À défaut d’une décision délimitant les droits, le délit ne peut être constitué si le conflit oppose :',
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-5 — REFUS : ACTIF DIRECT / ACTIF INDIRECT / PASSIF
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus (formes)',
     question: 'Le refus de représenter le mineur peut résulter :',
     options: [
@@ -239,7 +239,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support distingue actif direct, actif indirect et passif.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus actif direct',
     question: 'La dissimulation du mineur est un exemple de :',
     options: [
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support cite la dissimulation du mineur comme actif direct.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus actif direct',
     question:
         'Le fait d’être volontairement absent du domicile quand l’autre parent vient exercer son droit est un :',
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support cite l’absence du domicile comme exemple d’actif direct.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus actif indirect',
     question:
         'Manipuler le mineur pour l’inciter à refuser la visite/hébergement constitue :',
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support cite la manipulation du mineur comme actif indirect.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus passif',
     question: 'Le refus peut être passif lorsque le parent gardien :',
     options: [
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support décrit cette hypothèse de comportement passif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Jurisprudence',
     question: 'Selon la jurisprudence rappelée, la résistance du mineur :',
     options: [
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-5 — ÉLÉMENT MORAL / JUSTIFICATION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'Le terme « refus » implique :',
     options: [
@@ -323,7 +323,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise que « refus » indique une attitude consciente et volontaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'L’adverbe « indûment » souligne :',
     options: [
@@ -336,7 +336,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique que « indûment » souligne la mauvaise foi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'L’élément intentionnel suppose que l’auteur ait agi :',
     options: [
@@ -348,7 +348,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise la connaissance des droits empêchés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Cass. crim. 08/09/1999',
     question:
         'Selon Cass. crim., 08 septembre 1999, l’élément intentionnel est caractérisé par :',
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite cette formule de la Cour de cassation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Justification',
     question:
         'La justification admise par la jurisprudence pour non-représentation suppose :',
@@ -380,7 +380,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-5 — AGGRAVATIONS 227-9 / 227-10 + PEINES + PROCÉDURE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'La circonstance aggravante (227-9) est constituée si l’enfant est retenu au-delà de cinq jours :',
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support mentionne la rétention > 5 jours avec lieu inconnu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'La circonstance aggravante (227-9) est aussi constituée si l’enfant est retenu indûment :',
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique l’aggravation en cas de rétention hors du territoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-10',
     question:
         'La circonstance aggravante (227-10) est constituée si l’auteur :',
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support vise la déchéance ou le retrait de l’exercice de l’autorité parentale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Peines',
     question: 'La peine encourue (forme simple) pour 227-5 est :',
     options: [
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 1 an + 15 000 € (forme simple).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Peines',
     question: 'En cas d’aggravation (227-9 ou 227-10), la peine encourue est :',
     options: [
@@ -448,7 +448,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 3 ans + 45 000 € en aggravé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question: 'Pour 227-5, la tentative est :',
     options: ['Non', 'Oui', 'Oui si l’enfant est à l’étranger'],
@@ -456,7 +456,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : tentative non prévue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question: 'Pour 227-5, la complicité est :',
     options: [
@@ -472,7 +472,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-6 — DÉFAUT DE NOTIFICATION DE TRANSFERT DE DOMICILE : BASES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'Le défaut de notification de transfert de domicile est prévu par :',
@@ -486,7 +486,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'L’article 227-6 définit et réprime le défaut de notification de transfert de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'L’infraction 227-6 vise le cas où un parent transfère son domicile alors que :',
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Condition : enfants résident habituellement au domicile de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'Le délai légal de notification (227-6) est :',
     options: ['Un mois', 'Cinq jours', 'Six jours'],
@@ -508,7 +508,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support prévoit un délai d’un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'La notification du transfert de domicile (227-6) doit être adressée :',
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support vise les titulaires du droit de visite/hébergement (autre parent ou tiers).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'La décision fondant le droit de visite/hébergement (227-6) doit être :',
@@ -535,7 +535,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise : exécutoire et notifiée à l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'Concernant la forme de la notification (227-6) :',
     options: [
@@ -547,7 +547,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : aucune exigence sur la forme.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'L’élément moral de 227-6 est caractérisé par :',
     options: [
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise l’intention et exclut la simple négligence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'La simple négligence est punissable pour 227-6 :',
     options: ['Non', 'Oui', 'Oui seulement si déménagement loin'],
@@ -569,7 +569,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise que la simple négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — Répression',
     question: 'La peine encourue (personne physique) pour 227-6 est :',
     options: [
@@ -581,7 +581,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la tentative est :',
     options: ['Non', 'Oui', 'Oui si l’enfant est déplacé'],
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : tentative non prévue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la complicité est :',
     options: [
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-7 — SOUSTRACTION PAR ASCENDANT : POINTS CLÉS
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — 227-7',
     question: 'La soustraction d’enfant mineur par ascendant est prévue par :',
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'L’article 227-7 définit la soustraction d’enfant mineur par ascendant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — 227-7',
     question: 'Pour 227-7, l’auteur doit avoir :',
     options: [
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise : tout ascendant peut être auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — 227-7',
     question: 'La soustraction implique :',
     options: [
@@ -644,7 +644,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support définit la soustraction par un acte positif de déplacement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Jurisprudence',
     question:
         'Selon la jurisprudence citée, un déplacement de quelques heures :',
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite Cass. crim., 23 décembre 1968.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément moral',
     question: 'L’infraction 227-7 est intentionnelle : l’auteur agit en :',
     options: [
@@ -670,7 +670,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise : connaissance de l’absence de droit + déplacement durable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Peines',
     question: 'La peine encourue (forme simple) pour 227-7 est :',
     options: [
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 1 an + 15 000 € (forme simple).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Tentative',
     question: 'La tentative de soustraction par ascendant est :',
     options: [
@@ -698,7 +698,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-8 — SOUSTRACTION PAR TIERS SANS FRAUDE NI VIOLENCE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — 227-8',
     question:
         'La soustraction d’enfant mineur sans fraude ni violence par un non-ascendant est prévue par :',
@@ -712,7 +712,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'L’article 227-8 définit la soustraction sans fraude ni violence par un non-ascendant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — 227-8',
     question: 'Pour 227-8, l’auteur doit être :',
     options: [
@@ -725,7 +725,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Condition : auteur non ascendant (tiers ou famille non ascendant).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — 227-8',
     question: 'Le support rappelle que 227-8 exige une soustraction :',
     options: ['Sans fraude ni violence', 'Avec violence', 'Avec fraude'],
@@ -733,7 +733,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le texte impose l’absence de fraude et de violence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Répression',
     question: 'La peine encourue (forme simple) pour 227-8 est :',
     options: [
@@ -745,7 +745,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 5 ans + 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Tentative',
     question: 'La tentative de soustraction par tiers (227-8) est :',
     options: [
@@ -757,7 +757,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : tentative prévue par 227-11 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Erreur sur l’âge',
     question:
         'Le support admet qu’il n’y a pas de délit si l’auteur a pu raisonnablement :',
@@ -770,7 +770,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support mentionne l’erreur raisonnable sur l’âge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Jurisprudence',
     question:
         'Selon Cass. crim., 3 sept. 2014 (cité), le délit est constitué si un tiers recueillant un mineur en fugue :',
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-9 / 227-10 — AGGRAVATIONS COMMUNES (UTILISABLES SUR 227-5 ET 227-7)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aggravations — 227-9',
     question:
         'La circonstance aggravante 227-9 est constituée si l’enfant est retenu au-delà de cinq jours :',
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         '227-9 : > 5 jours + lieu inconnu pour les titulaires du droit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aggravations — 227-9',
     question:
         'La circonstance aggravante 227-9 est aussi constituée si l’enfant est retenu indûment :',
@@ -816,7 +816,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: '227-9 : rétention indue hors du territoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aggravations — 227-10',
     question: 'La circonstance aggravante 227-10 vise le cas où l’auteur :',
     options: [
@@ -834,7 +834,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // 227-11 — TENTATIVE (POINT COMMUN)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 227-11',
     question: 'La tentative est expressément prévue par 227-11 pour :',
     options: [
@@ -852,7 +852,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // ---------------------------------------------------------
   // CAS PRATIQUES (QCM) — SUPER EFFICACES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-5',
     question:
         'Un parent gardien refuse de remettre l’enfant à l’autre parent pendant le week-end prévu par une décision exécutoire portée à sa connaissance. Qualification la plus adaptée :',
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Refus indû de représenter l’enfant à celui qui a le droit de le réclamer : 227-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-6',
     question:
         'Un parent gardien déménage avec les enfants et n’informe pas l’autre parent titulaire d’un droit de visite dans le mois. Qualification la plus adaptée :',
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Changement de domicile du parent gardien + absence de notification dans le mois : 227-6.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-7',
     question:
         'Un grand-parent emmène durablement l’enfant du domicile habituel sans droit et le garde plusieurs jours. Qualification la plus adaptée :',
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le grand-parent est un ascendant : 227-7.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-8',
     question:
         'Une tante héberge un mineur en fugue et ne prévient pas les parents. Qualification la plus adaptée selon le support :',
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation d’enfant mineur — Fondement',
     question:
         'La non-représentation d’enfant mineur consiste principalement à :',
@@ -924,7 +924,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le délit est le refus indû de représenter le mineur à celui qui a le droit de le réclamer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation d’enfant mineur — Fondement',
     question:
         'Au sens de l’article 388 du code civil, est mineure toute personne :',
@@ -942,7 +942,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // NON-REPRÉSENTATION — DROIT DE RÉCLAMER LE MINEUR (SOURCE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer le mineur a en général pour origine :',
     options: [
@@ -956,7 +956,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique que le droit provient généralement d’une décision de justice, d’une convention homologuée ou d’une convention 229-1 C. civ.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'Le droit de garde, de visite ou d’hébergement peut être attribué :',
@@ -970,7 +970,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise que ces droits peuvent être provisoires ou définitifs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'La jurisprudence exige que la décision fondant le droit de réclamer soit :',
@@ -985,7 +985,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique que la décision doit être exécutoire et portée légalement à la connaissance de l’auteur du refus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer l’enfant est aussi reconnu par la loi à :',
     options: [
@@ -998,7 +998,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise que le droit est aussi reconnu à toute personne investie de l’autorité parentale (père, mère, tuteur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'En règle générale, les personnes investies de l’autorité parentale sont :',
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite : père, mère ou tuteur du mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'À défaut d’une décision délimitant les droits de chacun, le délit ne peut pas être constitué lorsque le conflit oppose :',
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique qu’en l’absence de décision délimitant les droits, le délit n’est pas constitué si les droits sont égaux (ex : parents séparés de fait).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'Le cas typique où le délit ne peut être constitué faute de décision délimitant les droits est :',
@@ -1042,7 +1042,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // NON-REPRÉSENTATION — REFUS DE REPRÉSENTER : SCÉNARIOS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus de représenter le mineur peut être le fait :',
     options: [
@@ -1055,7 +1055,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique que le refus est souvent le fait du parent ayant la garde refusant le droit de visite/hébergement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus peut aussi être commis par :',
     options: [
@@ -1069,7 +1069,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support vise aussi le parent qui ne remet pas l’enfant à l’issue de la période d’hébergement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus de représenter le mineur peut résulter :',
     options: [
@@ -1082,7 +1082,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support mentionne le comportement actif direct (refus pur et simple, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Parmi les exemples de comportement actif direct, on trouve :',
     options: [
@@ -1094,7 +1094,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite la dissimulation du mineur comme exemple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question:
         'Parmi les exemples de comportement actif direct, on trouve également :',
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support cite l’absence du domicile lors de la présentation du titulaire du droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus de représenter le mineur peut aussi résulter :',
     options: [
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support mentionne le comportement actif indirect (manipulation du mineur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Un exemple de comportement actif indirect est :',
     options: [
@@ -1135,7 +1135,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite la manipulation du mineur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question:
         'Le refus de représenter peut résulter d’un comportement passif lorsque :',
@@ -1149,7 +1149,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support décrit l’hypothèse du comportement passif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question:
         'Selon la jurisprudence rappelée par le support, la résistance du mineur :',
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // NON-REPRÉSENTATION — ÉLÉMENT MORAL (INTENTION / MAUVAISE FOI)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'La non-représentation d’enfant mineur est une infraction :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Contraventionnelle'],
@@ -1175,7 +1175,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise que l’infraction est intentionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'Le terme « refus » indique :',
     options: [
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise que « refus » traduit une attitude consciente et volontaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'L’adverbe « indûment » souligne :',
     options: [
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique que « indûment » souligne la mauvaise foi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question:
         'Pour caractériser l’intention, une décision de justice préalable doit avoir été :',
@@ -1214,7 +1214,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support insiste sur la connaissance des droits empêchés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question:
         'Selon la Cour de cassation (08/09/1999), l’élément intentionnel est caractérisé par :',
@@ -1229,7 +1229,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support cite Cass. crim., 08 septembre 1999 sur le refus délibéré/indû.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'D’après Cass. crim., 08/09/1999, le mobile de l’auteur :',
     options: [
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise que le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'La non-représentation peut être justifiée si est démontrée :',
     options: [
@@ -1258,7 +1258,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // NON-REPRÉSENTATION — CIRCONSTANCES AGGRAVANTES (227-9 / 227-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Circonstances aggravantes',
     question:
         'Les circonstances aggravantes de non-représentation d’enfant sont prévues par :',
@@ -1271,7 +1271,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support mentionne 227-9 CP et 227-10 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'Selon 227-9 CP, il y a aggravation si l’enfant est retenu au-delà de cinq jours :',
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite l’aggravation : > 5 jours + lieu inconnu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'Selon 227-9 CP, il y a aggravation si l’enfant est retenu indûment :',
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support mentionne l’aggravation en cas de rétention hors du territoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-10',
     question:
         'Selon 227-10 CP, il y a aggravation si la personne coupable a été :',
@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // NON-REPRÉSENTATION — RÉPRESSION (227-5 simple / aggravée)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Répression',
     question:
         'La peine encourue (forme simple) pour la non-représentation (227-5) est :',
@@ -1331,7 +1331,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 1 an + 15 000 € pour la forme simple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Répression',
     question:
         'En cas de circonstances aggravantes (227-9 ou 227-10), la peine encourue est :',
@@ -1344,7 +1344,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 3 ans + 45 000 € en aggravé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question: 'Pour la non-représentation d’enfant (227-5), la tentative est :',
     options: ['Non', 'Oui', 'Oui uniquement en aggravé'],
@@ -1352,7 +1352,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question:
         'Pour la non-représentation d’enfant (227-5), la complicité est :',
@@ -1369,7 +1369,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION DE TRANSFERT DE DOMICILE — FONDEMENTS (227-6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Fondement',
     question:
         'Le défaut de notification de transfert de domicile est prévu par :',
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'L’élément légal est fixé par l’article 227-6 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Fondement',
     question: 'L’infraction 227-6 vise le cas où :',
     options: [
@@ -1396,7 +1396,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise : parent qui change de domicile avec des enfants résidant habituellement chez lui.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Fondement',
     question:
         '227-6 impose de notifier le changement de domicile dans un délai de :',
@@ -1409,7 +1409,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // 227-6 — ÉLÉMENT MATÉRIEL : TRANSFERT + ABSENCE DE NOTIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question:
         'Le transfert de domicile visé par 227-6 concerne principalement :',
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise : parent gardien chez qui l’enfant réside habituellement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question: 'Le support précise que sont visés par 227-6 :',
     options: [
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique que tous ces parents sont visés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question: 'Pour caractériser 227-6, l’auteur doit :',
     options: [
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support décrit l’idée d’emmener l’enfant avec le parent qui déménage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question:
         'Le droit de visite ou d’hébergement du bénéficiaire doit être prévu par :',
@@ -1462,7 +1462,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support renvoie à ces trois sources.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question: 'La décision fondant le droit de visite/hébergement doit être :',
     options: [
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support insiste sur l’exécutivité et la notification.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question:
         'Concernant la forme de la notification du changement de domicile (227-6), le support indique :',
@@ -1491,7 +1491,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // 227-6 — ÉLÉMENT MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément moral',
     question:
         'Le défaut de notification de transfert de domicile (227-6) est une infraction :',
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise l’intention : volonté de faire échec au droit de visite/hébergement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément moral',
     question: 'Selon le support, l’intention dans 227-6 suppose :',
     options: [
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique que l’intention vise à empêcher l’exercice du droit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément moral',
     question: 'Pour 227-6, la simple négligence est punissable :',
     options: ['Non', 'Oui', 'Oui si le déménagement est loin'],
@@ -1527,7 +1527,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // 227-6 — CIRCONSTANCES / RÉPRESSION / TENTATIVE / COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Circonstances',
     question: 'Pour 227-6, les circonstances aggravantes prévues sont :',
     options: [
@@ -1539,7 +1539,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Répression',
     question: 'La peine encourue pour 227-6 (personne physique) est :',
     options: [
@@ -1551,7 +1551,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support fixe : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la tentative est :',
     options: ['Non', 'Oui', 'Oui uniquement si l’enfant est à l’étranger'],
@@ -1559,7 +1559,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la complicité est :',
     options: [
@@ -1575,7 +1575,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // SOUSTRACTION D’ENFANT MINEUR PAR ASCENDANT — FONDEMENTS (227-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Fondement',
     question: 'La soustraction d’enfant mineur par ascendant est prévue par :',
     options: [
@@ -1587,7 +1587,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'L’élément légal est fixé par l’article 227-7 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'Pour 227-7, l’auteur doit être :',
     options: [
@@ -1599,7 +1599,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise que tout ascendant peut être auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'Sont notamment des ascendants au sens du support :',
     options: [
@@ -1611,7 +1611,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite ces exemples d’ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'Pour 227-7, il doit exister entre l’auteur et le mineur :',
     options: [
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support exige un lien de filiation entre l’agent et le mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question:
         'Les personnes des mains desquelles le mineur est soustrait sont :',
@@ -1638,7 +1638,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support reprend la formule du texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'L’acte de soustraction implique :',
     options: [
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support définit la soustraction par un acte positif de déplacement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question:
         'Le support précise que l’infraction ne peut être retenue contre :',
@@ -1666,7 +1666,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique qu’on ne retient pas l’infraction si l’enfant a été confié volontairement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'La soustraction peut consister aussi à :',
     options: [
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support mentionne cette hypothèse.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question:
         'Selon la jurisprudence citée, un déplacement de quelques heures :',
@@ -1691,7 +1691,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite Cass. crim., 23 décembre 1968.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Éléments spéciaux',
     question:
         'Le support indique que 227-7 ne limite pas la soustraction “sans fraude ni violence”, ce qui signifie :',
@@ -1710,7 +1710,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // 227-7 — ÉLÉMENT MORAL / CIRCONSTANCES / RÉPRESSION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément moral',
     question:
         'La soustraction d’enfant mineur par ascendant (227-7) est une infraction :',
@@ -1719,7 +1719,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support précise que l’infraction est intentionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément moral',
     question: 'L’intention, selon le support, suppose que l’auteur agisse :',
     options: [
@@ -1731,7 +1731,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : connaissance de son absence de droit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Répression',
     question: 'La peine encourue (forme simple) pour 227-7 est :',
     options: [
@@ -1743,7 +1743,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 1 an + 15 000 € pour la forme simple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Circonstances aggravantes',
     question:
         'Les circonstances aggravantes applicables à 227-7 sont prévues par :',
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique 227-9 et 227-10 comme aggravations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Répression aggravée',
     question:
         'En cas de circonstances 227-9 ou 227-10, la peine encourue pour 227-7 est :',
@@ -1769,7 +1769,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : 3 ans + 45 000 € en aggravé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Tentative / complicité',
     question: 'Pour 227-7, la tentative est :',
     options: [
@@ -1782,7 +1782,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support indique : tentative expressément prévue par 227-11 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Tentative / complicité',
     question: 'Pour 227-7, la complicité est :',
     options: [
@@ -1798,7 +1798,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // SOUSTRACTION SANS FRAUDE NI VIOLENCE (TIERS) — FONDEMENTS (227-8)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Fondement',
     question:
         'La soustraction d’enfant mineur sans fraude ni violence par une personne autre qu’un ascendant est prévue par :',
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'L’élément légal est fixé par l’article 227-8 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'Pour 227-8, l’auteur doit être :',
     options: [
@@ -1824,7 +1824,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise : auteur non ascendant (tiers ou membre de famille non ascendant).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'Peut être auteur au sens de 227-8 :',
     options: [
@@ -1837,7 +1837,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support donne ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'Le texte 227-8 exige que la soustraction soit commise :',
     options: [
@@ -1849,7 +1849,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique la condition “sans fraude ni violence”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Jurisprudence',
     question:
         'Selon la jurisprudence citée (Cass. crim., 3 sept. 2014), le délit peut être constitué si le tiers qui recueille un mineur en fugue :',
@@ -1862,7 +1862,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support cite Cass. crim., 3 sept. 2014.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'La soustraction, selon le support, implique :',
     options: [
@@ -1876,7 +1876,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Même définition générale de la soustraction par acte positif de déplacement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question:
         'Le support rappelle que la fraude ou la violence orientent plutôt vers :',
@@ -1894,7 +1894,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // 227-8 — ÉLÉMENT MORAL / CIRCONSTANCES / RÉPRESSION / TENTATIVE / COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément moral',
     question:
         'La soustraction sans fraude ni violence (227-8) est une infraction :',
@@ -1904,7 +1904,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         'Le support précise l’intention : connaissance de son absence de droit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément moral',
     question:
         'Le support admet qu’il n’y a pas délit si l’auteur a pu raisonnablement :',
@@ -1917,7 +1917,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support mentionne l’erreur raisonnable sur l’âge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Circonstances aggravantes',
     question: 'Pour 227-8, les circonstances aggravantes prévues sont :',
     options: [
@@ -1929,7 +1929,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Répression',
     question: 'La peine encourue (personne physique) pour 227-8 est :',
     options: [
@@ -1941,7 +1941,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support fixe : 5 ans + 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Tentative / complicité',
     question: 'Pour 227-8, la tentative est :',
     options: [
@@ -1953,7 +1953,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support indique : tentative prévue par 227-11 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Tentative / complicité',
     question: 'Pour 227-8, la complicité est :',
     options: [
@@ -1969,7 +1969,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
   // =========================================================
   // QUESTIONS COMPARATIVES ULTRA RENTABLES (227-5 / 227-6 / 227-7 / 227-8)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise le refus indû de représenter un enfant mineur ?',
@@ -1978,7 +1978,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: '227-5 = non-représentation d’enfant mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise le défaut de notification de transfert de domicile du parent gardien ?',
@@ -1987,7 +1987,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: '227-6 = défaut de notification de transfert de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise la soustraction d’enfant mineur commise par un ascendant ?',
@@ -1996,7 +1996,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: '227-7 = soustraction par ascendant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise la soustraction d’enfant mineur sans fraude ni violence par un tiers ?',
@@ -2006,7 +2006,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
         '227-8 = soustraction par personne autre qu’un ascendant, sans fraude ni violence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Peines',
     question:
         'Quelle infraction est la plus sévèrement punie en forme simple selon le support ?',
@@ -2019,7 +2019,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
     explanation: 'Le support fixe 227-8 à 5 ans et 75 000 € (forme simple).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question: 'Selon le support, la tentative est prévue pour :',
     options: [
@@ -2388,7 +2388,7 @@ class _QuizAutoriteParentaleState extends State<QuizAutoriteParentale>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2591,7 +2591,7 @@ class _QuizAutoriteParentaleState extends State<QuizAutoriteParentale>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2774,7 +2774,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3307,10 +3306,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3681,7 +3681,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3722,9 +3722,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

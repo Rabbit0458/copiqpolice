@@ -299,17 +299,17 @@ class ConduiteAuPostePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Dès qu’un article est cité, il doit être en rouge : ex. ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "Article 803 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -332,7 +332,7 @@ class _ZoomableAssetImage extends StatelessWidget {
     final Color border = isDark ? Colors.white24 : Colors.black12;
     final Color chipBg = isDark
         ? Colors.black54
-        : Colors.white.withOpacity(.92);
+        : Colors.white.withValues(alpha: .92);
     final Color chipText = isDark ? Colors.white : const Color(0xFF050505);
 
     return Semantics(
@@ -429,7 +429,7 @@ class _ZoomableAssetImage extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Fermer',
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       pageBuilder: (_, __, ___) {
         return SafeArea(
           child: Scaffold(
@@ -491,10 +491,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -559,7 +559,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -602,7 +602,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -664,7 +664,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -696,7 +696,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -709,7 +709,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

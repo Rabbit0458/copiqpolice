@@ -102,7 +102,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // NIVEAU FACILE — GENERALITES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quel est le rôle principal des juridictions pénales en droit français ?",
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quel est le rôle principal des juridictions pénales en droit français ?",
@@ -132,7 +132,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Quel est l’objectif principal de la réforme du droit de la peine par la loi du 23 mars 2019 ?",
@@ -148,7 +148,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Réformes",
     question:
         "Quel est l’objectif principal de la loi n° 2019-222 du 23 mars 2019 concernant le droit de la peine ?",
@@ -164,7 +164,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Réformes",
     question:
         "La loi n° 2012-409 du 27 mars 2012 relative à l’exécution des peines vise notamment à :",
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Juridictionnalisation",
     question:
         "Le mouvement de juridictionnalisation des peines s’est notamment traduit par :",
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Acteurs",
     question:
         "Selon le texte, qui poursuit l’exécution des peines privatives de liberté et de certaines peines de substitution ainsi que des peines complémentaires ?",
@@ -211,7 +211,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Rôle du JAP",
     question:
         "Le juge de l’application des peines (JAP) intervient de plus en plus dans l’exécution des décisions de justice notamment pour :",
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Individualisation",
     question:
         "Pour les peines privatives de liberté, l’individualisation de la peine doit notamment permettre :",
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Peines pécuniaires",
     question:
         "Pour les peines pécuniaires, quel mécanisme est prévu pour garantir l’exécution des amendes et condamnations pécuniaires ?",
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CHAPITRE 1 – EXÉCUTION DES PEINES (PARTIES INTERVENANTES)
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Parties",
     question:
         "Selon l’Article 707-1 alinéa 1 du Code de procédure pénale, qui poursuit l’exécution de la sentence ?",
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 1.1.1 La partie civile ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Partie civile",
     question:
         "En principe, quel type de réparation la partie civile obtient-elle ?",
@@ -292,7 +292,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Partie civile",
     question:
         "Outre les dommages et intérêts, la partie civile peut également bénéficier :",
@@ -308,7 +308,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Partie civile",
     question:
         "Qui a qualité pour faire exécuter les condamnations prononcées au profit de la partie civile ?",
@@ -323,7 +323,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Administrations",
     question:
         "Quelle administration est chargée du recouvrement des amendes à caractère fiscal et de certaines confiscations ?",
@@ -338,7 +338,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Administrations",
     question: "L’administration des douanes intervient notamment pour :",
     options: [
@@ -356,7 +356,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // NIVEAU MOYEN – JURIDICTIONS PÉNALES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Généralités",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une juridiction pénale de droit commun ?",
@@ -371,7 +371,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Quelle est la nature des infractions jugées par le tribunal de police ?",
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Sauf texte particulier, quel tribunal de police est territorialement compétent pour juger une contravention ?",
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Quelle formation est en principe compétente pour juger les délits en première instance ?",
@@ -413,7 +413,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Dans sa formation ordinaire, comment est composé le tribunal correctionnel ?",
@@ -428,7 +428,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Quel type d’infraction le tribunal correctionnel juge-t-il normalement ?",
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Quelle est la compétence matérielle principale de la cour d’assises ?",
@@ -459,7 +459,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lorsque la cour d’assises statue en appel, combien de jurés composent en principe le jury ?",
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Quel est le rôle du président de la cour d’assises pendant les débats ?",
@@ -486,7 +486,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question:
         "En matière correctionnelle, quelle juridiction connaît de l’appel d’un jugement rendu par le tribunal correctionnel ?",
@@ -501,7 +501,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question:
         "Quel est en principe l’effet d’un pourvoi en cassation contre une décision pénale ?",
@@ -517,7 +517,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence mineurs",
     question:
         "Pour les contraventions de 5ᵉ classe commises par des mineurs, quelle juridiction est compétente ?",
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence connexité",
     question:
         "Lorsque des contraventions sont connexes à un délit poursuivi devant le tribunal correctionnel, comment sont-elles jugées ?",
@@ -547,7 +547,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Saisine",
     question:
         "Parmi les modes de saisine suivants, lequel permet au ministère public de faire juger rapidement un prévenu devant le tribunal correctionnel lorsque les charges sont suffisantes et l’affaire en état d’être jugée ?",
@@ -565,7 +565,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // NIVEAU DIFFICILE – JURIDICTIONS PÉNALES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence territoriale",
     question:
         "En matière délictuelle, plusieurs critères de compétence territoriale peuvent se cumuler. Lequel de ces critères n’est pas habituellement retenu par le Code de procédure pénale ?",
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lors de la constitution du jury, quel pouvoir de récusation l’accusé possède-t-il devant la cour d’assises statuant en premier ressort ?",
@@ -595,7 +595,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Pour être juré d’assises, parmi les conditions suivantes, laquelle n’est pas exigée ?",
@@ -610,7 +610,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Incompatibilités jurés",
     question:
         "Parmi les personnes suivantes, laquelle est en principe incompatible avec les fonctions de juré d’assises ?",
@@ -625,7 +625,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Appel des décisions d’assises",
     question:
         "Quel est l’effet principal de l’appel formé contre un arrêt de condamnation rendu par une cour d’assises statuant en premier ressort ?",
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Contraventions et mineurs",
     question:
         "En matière contraventionnelle, dans quel cas le tribunal de police perd-il sa compétence au profit des juridictions pour mineurs ?",
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – CRPC",
     question:
         "La comparution sur reconnaissance préalable de culpabilité (CRPC) est une procédure applicable :",
@@ -672,7 +672,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Ordonnance pénale",
     question: "L’ordonnance pénale en matière délictuelle permet :",
     options: [
@@ -687,7 +687,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Lien civil/pénal",
     question:
         "Lorsque la victime se constitue partie civile devant le tribunal correctionnel, quel est l’effet principal sur la compétence civile ?",
@@ -703,7 +703,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Saisine d’office",
     question:
         "Dans quel cas une juridiction de jugement peut-elle se saisir d’office d’une infraction pénale ?",
@@ -719,7 +719,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions d’exception",
     question:
         "Parmi les juridictions suivantes, laquelle est une juridiction pénale d’exception au sens de la compétence matérielle ?",
@@ -737,7 +737,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // SUITE – QUESTIONS NIVEAU MOYEN & DIFFICILE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Le tribunal de police statue en matière pénale sur les contraventions. Quelle affirmation est exacte à propos des peines qu’il peut prononcer ?",
@@ -753,7 +753,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Parmi ces modes de saisine, lequel n’est pas utilisé pour le tribunal de police ?",
@@ -768,7 +768,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Quel est l’un des intérêts principaux de la possibilité de juge unique au tribunal correctionnel pour certains délits ?",
@@ -784,7 +784,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "En matière correctionnelle, dans quel délai l’appel doit-il en principe être formé à compter du prononcé du jugement ?",
@@ -795,7 +795,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "La comparution immédiate devant le tribunal correctionnel suppose notamment :",
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lorsque la cour d’assises statue en appel, quelle formation professionnelle la compose, en plus des jurés ?",
@@ -826,7 +826,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lors de la constitution du jury, quel principe fondamental est rappelé par le serment des jurés ?",
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions d’exception",
     question:
         "Quelle juridiction est compétente pour juger en matière pénale les mineurs de 13 à 18 ans pour les délits et certains crimes ?",
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions d’exception",
     question:
         "Les crimes commis par des mineurs de 16 à 18 ans peuvent relever :",
@@ -872,7 +872,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action civile",
     question:
         "Si la victime ne s’est pas constituée partie civile devant la juridiction pénale, comment pourra-t-elle obtenir réparation ?",
@@ -887,7 +887,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Sursis à statuer civil",
     question:
         "Lorsqu’une instance civile est engagée alors que des poursuites pénales sont en cours pour les mêmes faits, le juge civil :",
@@ -902,7 +902,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Appels",
     question:
         "Quel est l’effet principal de l’appel sur l’exécution d’une peine d’emprisonnement lorsqu’un prévenu est détenu à l’issue de l’audience correctionnelle ?",
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Rôle du ministère public",
     question:
         "Quel est le rôle principal du ministère public devant les juridictions pénales ?",
@@ -934,7 +934,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Débats",
     question:
         "En procédure pénale, le principe de publicité des débats signifie que :",
@@ -950,7 +950,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Exécution des peines",
     question:
         "En matière de peines privatives de liberté, quel est l’un des objectifs de l’intervention du juge de l’application des peines (JAP) ?",
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Application des peines",
     question:
         "Le tribunal de l’application des peines (TAP) est compétent notamment pour :",
@@ -982,7 +982,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Chambre de l’application des peines",
     question:
         "La chambre de l’application des peines de la cour d’appel connaît :",
@@ -998,7 +998,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ===================== NIVEAU DIFFICILE ====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence territoriale délictuelle",
     question:
         "En matière délictuelle, plusieurs tribunaux correctionnels peuvent être compétents. Laquelle de ces propositions ne constitue pas un critère légal de compétence territoriale ?",
@@ -1013,7 +1013,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Connexité et indivisibilité",
     question:
         "Lorsque plusieurs infractions sont connexes, quel peut être l’effet en matière de compétence des juridictions pénales ?",
@@ -1029,7 +1029,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Le nombre de jurés d’assises peut être augmenté pour certaines cours (Paris notamment). Quel est l’objectif principal de cette augmentation ?",
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Débats d’assises",
     question:
         "En cour d’assises, quel principe gouverne l’intime conviction des jurés et des magistrats au moment du vote sur la culpabilité ?",
@@ -1061,7 +1061,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Majorité de condamnation",
     question:
         "En premier ressort, à la cour d’assises, quelle majorité est nécessaire pour déclarer l’accusé coupable ?",
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – CRPC",
     question:
         "Dans le cadre de la CRPC, si le prévenu accepte la peine proposée par le procureur de la République :",
@@ -1092,7 +1092,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Ordonnance pénale délictuelle",
     question:
         "Dans la procédure d’ordonnance pénale délictuelle, quel est le droit spécifique reconnu au prévenu après notification de l’ordonnance ?",
@@ -1108,7 +1108,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Application des peines",
     question:
         "La libération conditionnelle d’un condamné à une peine criminelle lourde relève :",
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Suspension de peine",
     question:
         "La suspension de peine pour raison médicale grave (hors période de sûreté) est décidée :",
@@ -1140,7 +1140,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Contrainte judiciaire",
     question:
         "La contrainte judiciaire prononcée en cas de non-paiement d’une amende :",
@@ -1155,7 +1155,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Recours application des peines",
     question:
         "Dans quel délai un pourvoi en cassation peut-il être formé contre un arrêt de la chambre de l’application des peines ?",
@@ -1170,7 +1170,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Primauté du pénal",
     question:
         "Le principe de primauté du pénal sur le civil implique notamment que :",
@@ -1185,7 +1185,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
         "Le juge civil ne peut contredire les constatations pénales définitives sur la matérialité des faits et la culpabilité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "En matière de contraventions, le tribunal de police peut connaître de certaines demandes civiles de la victime. Dans quelle limite principale ?",
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Lorsque le tribunal de police statue en l’absence du prévenu régulièrement cité qui n’a pas comparu, il rend :",
@@ -1216,7 +1216,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Dans quel cas le tribunal correctionnel, saisi d’un délit, peut-il également juger une contravention ?",
@@ -1232,7 +1232,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Que se passe-t-il si, devant le tribunal correctionnel, les faits poursuivis sous la qualification de délit constituent en réalité un crime ?",
@@ -1248,7 +1248,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Relaxe et acquittement",
     question:
         "Quelle affirmation distingue correctement la relaxe de l’acquittement ?",
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lorsque plusieurs accusés sont poursuivis pour un même crime, l’un d’eux peut-il être jugé séparément par une autre juridiction ?",
@@ -1280,7 +1280,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Pourquoi la loi prévoit-elle des incompatibilités pour certaines professions (policiers, préfets, etc.) en matière de fonctions de juré ?",
@@ -1296,7 +1296,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions pour mineurs",
     question:
         "La chambre spécialisée des mineurs de la cour d’appel a pour fonction principale :",
@@ -1312,7 +1312,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Mineurs",
     question:
         "En matière de peines, quel principe gouverne la réponse pénale à l’égard des mineurs ?",
@@ -1328,7 +1328,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action publique",
     question:
         "Lorsque le ministère public décide de ne pas engager de poursuites, il peut notamment :",
@@ -1344,7 +1344,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action publique",
     question:
         "Dans quel cas l’action publique peut-elle être mise en mouvement par la seule plainte de la victime, sans intervention préalable du ministère public ?",
@@ -1360,7 +1360,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action civile",
     question:
         "Lorsqu’une juridiction pénale relaxe le prévenu, peut-elle néanmoins accorder des dommages et intérêts à la partie civile ?",
@@ -1376,7 +1376,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question:
         "Lorsque le ministère public fait appel d’un jugement de relaxe, quelle est la conséquence pour le prévenu ?",
@@ -1392,7 +1392,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question: "Le pourvoi en cassation formé contre un arrêt correctionnel :",
     options: [
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Détention provisoire",
     question:
         "En matière criminelle, la détention provisoire est décidée et prolongée :",
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Détention provisoire",
     question:
         "Parmi ces critères, lequel ne fait pas partie des motifs légaux justifiant la détention provisoire ?",
@@ -1439,7 +1439,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Peines",
     question:
         "Quelle est la différence principale entre une peine principale et une peine complémentaire ?",
@@ -1455,7 +1455,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Exécution des peines",
     question:
         "Qui assure concrètement le recouvrement des amendes pénales une fois la décision devenue exécutoire ?",
@@ -1471,7 +1471,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Exécution des peines",
     question:
         "Pourquoi l’exécution rapide des peines privatives de liberté est-elle considérée comme un objectif important ?",
@@ -1487,7 +1487,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – JAP",
     question:
         "Lorsque le condamné ne respecte pas ses obligations dans le cadre d’un sursis probatoire, le JAP peut :",
@@ -1503,7 +1503,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – TAP",
     question:
         "Le TAP est saisi pour décider d’un relèvement de la période de sûreté. Quelle est la conséquence principale de ce relèvement ?",
@@ -1519,7 +1519,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Chambre de l’application des peines",
     question:
         "L’appel de la décision du TAP formé par le ministère public dans les 24 heures :",
@@ -1535,7 +1535,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – CRPC",
     question:
         "Dans une procédure de CRPC, si le prévenu refuse la peine proposée par le procureur :",
@@ -1551,7 +1551,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Ordonnance pénale",
     question:
         "Pourquoi la procédure d’ordonnance pénale est-elle particulièrement adaptée à certaines infractions routières ou simples délits financiers ?",
@@ -1567,7 +1567,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Contrainte judiciaire",
     question:
         "Parmi ces condamnations, pour laquelle la contrainte judiciaire est-elle en principe exclue ?",
@@ -1582,7 +1582,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Publicité et huis clos",
     question:
         "Lorsque le huis clos total est ordonné, quelle formule décrit le mieux la publicité du prononcé de la décision ?",
@@ -1598,7 +1598,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Publicité restreinte",
     question:
         "Dans quels cas une juridiction pénale peut-elle décider de juger une affaire à huis clos ?",
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Administrations",
     question:
         "Les administrations (impôts, douanes…) disposent notamment d’un pouvoir de :",
@@ -1630,7 +1630,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 1.1.3 Le ministère public ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Ministère public",
     question:
         "À qui appartient-il essentiellement d’assurer l’exécution des sanctions pénales ?",
@@ -1645,7 +1645,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Ministère public",
     question:
         "Selon l’Article 707-1 CPP, le ministère public fait exécuter notamment :",
@@ -1661,7 +1661,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Ministère public",
     question:
         "Le ministère public poursuit aussi l’exécution des sanctions pécuniaires prononcées par :",
@@ -1676,7 +1676,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Recouvrement pécuniaire",
     question: "Pour les peines pécuniaires, qui assure le recouvrement ?",
     options: [
@@ -1691,7 +1691,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Force publique",
     question:
         "Selon l’Article 709 CPP, le procureur de la République et le procureur général peuvent :",
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Principe",
     question: "Selon l’Article 708 alinéa 1 CPP, l’exécution a lieu lorsque :",
     options: [
@@ -1721,7 +1721,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Opposition",
     question:
         "Lorsque la décision a été rendue par défaut, l’exécution est suspendue :",
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Appel",
     question:
         "Quel est le délai d’appel en matière pénale, selon les articles cités (380-9, 498, 547 CPP) ?",
@@ -1751,7 +1751,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Appel",
     question:
         "Pendant le délai d’appel et l’instance d’appel, il est en principe :",
@@ -1766,7 +1766,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Cassation",
     question: "En principe, le pourvoi en cassation est :",
     options: [
@@ -1780,7 +1780,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Rôle du parquet",
     question:
         "Qui doit faire exécuter les peines privatives de liberté prononcées par le tribunal correctionnel ou la cour d’assises ?",
@@ -1795,7 +1795,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Cour d’assises",
     question:
         "Lorsque la cour d’assises siège au niveau de la cour d’appel, qui assure l’exécution des peines ?",
@@ -1810,7 +1810,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Cour d’assises",
     question:
         "Lorsque la cour d’assises siège dans les locaux du tribunal judiciaire, l’exécution des peines est assurée par :",
@@ -1825,7 +1825,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Délai d’incarcération",
     question:
         "Quel délai est prescrit par l’instruction générale (Article C 816) pour la mise à exécution de la peine d’emprisonnement ?",
@@ -1836,7 +1836,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Extrait de décision",
     question:
         "Pour l’exécution d’une peine d’emprisonnement, le greffe établit :",
@@ -1852,7 +1852,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Mise à exécution",
     question:
         "Si le condamné est déjà détenu, comment se fait l’exécution de la nouvelle peine ?",
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Mise à exécution",
     question: "Si le condamné est libre, le parquet peut :",
     options: [
@@ -1882,7 +1882,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Domicile",
     question:
         "L’intrusion au domicile d’un condamné pour exécuter une peine d’emprisonnement est encadrée par :",
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
 
   // --- 1.4.1.1 Les amendes ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question:
         "Les condamnations pécuniaires (amendes, confiscations, réparations, etc.) deviennent exigibles :",
@@ -1917,7 +1917,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question:
         "Dans quel délai les extraits de jugement ou d’arrêt doivent-ils être adressés au Trésorier principal en vue du recouvrement ?",
@@ -1932,7 +1932,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question: "En matière d’amende, quelle solution est toujours privilégiée ?",
     options: [
@@ -1946,7 +1946,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question:
         "Le défaut total ou partiel de paiement d’une amende peut entraîner :",
@@ -1962,7 +1962,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 1.4.1.2 Les jours-amende ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Jours-amende",
     question: "Les jours-amende constituent :",
     options: [
@@ -1976,7 +1976,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Jours-amende",
     question: "En cas de non-paiement des jours-amende, le JAP peut :",
     options: [
@@ -1992,7 +1992,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 1.4.1.3 Autres sanctions (substitution & complémentaires) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Substitution",
     question:
         "Les peines de substitution prévues à l’Article 131-6 du Code pénal comprennent notamment :",
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Complémentaires",
     question:
         "Les peines complémentaires prévues par le Code pénal peuvent inclure :",
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Sanction-réparation",
     question:
         "Selon l’Article 131-8-1 du Code pénal, la peine de sanction-réparation consiste à :",
@@ -2040,7 +2040,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Personnes morales",
     question: "Les personnes morales peuvent être condamnées :",
     options: [
@@ -2054,7 +2054,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Personnes morales",
     question:
         "En matière d’amendes, le recouvrement pour les personnes morales :",
@@ -2069,7 +2069,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Personnes morales",
     question: "La contrainte judiciaire :",
     options: [
@@ -2086,7 +2086,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CHAPITRE 2 – CONTRAINTE JUDICIAIRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Définition",
     question: "La contrainte judiciaire est définie comme :",
     options: [
@@ -2101,7 +2101,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Base légale",
     question:
         "Quel article du Code de procédure pénale consacre le rôle du JAP pour ordonner la contrainte judiciaire ?",
@@ -2112,7 +2112,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Conditions",
     question:
         "Parmi les conditions de mise en œuvre de la contrainte judiciaire, on trouve :",
@@ -2127,7 +2127,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Conditions",
     question: "La contrainte judiciaire concerne les amendes :",
     options: [
@@ -2141,7 +2141,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Exclusion",
     question: "La contrainte judiciaire ne s’applique pas lorsque :",
     options: [
@@ -2155,7 +2155,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Personnes concernées",
     question: "La contrainte judiciaire ne peut s’exercer que contre :",
     options: [
@@ -2171,7 +2171,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 2.4 Causes d’exemption ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Exemption",
     question:
         "Selon l’Article 751 CPP, la contrainte judiciaire ne peut être prononcée contre :",
@@ -2186,7 +2186,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Exemption",
     question:
         "Toujours selon l’Article 751 CPP, la contrainte judiciaire ne peut être exercée contre :",
@@ -2201,7 +2201,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Insolvabilité",
     question:
         "Selon l’Article 752 CPP, la contrainte judiciaire ne peut être exercée contre :",
@@ -2216,7 +2216,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Époux",
     question:
         "L’Article 753 CPP interdit d’exercer simultanément la contrainte judiciaire contre :",
@@ -2232,7 +2232,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 2.5 Procédure ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Procédure",
     question:
         "Avant toute incarcération sous contrainte judiciaire, la partie poursuivante doit :",
@@ -2247,7 +2247,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Demande d’incarcération",
     question:
         "Si, dans l’année de la signification du commandement, le condamné n’a pas payé, le procureur de la République peut :",
@@ -2263,7 +2263,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Durée",
     question:
         "La contrainte judiciaire est exclue lorsque le montant de l’amende est :",
@@ -2278,7 +2278,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Durée maximale",
     question:
         "En matière de trafic de stupéfiants, la durée maximale de contrainte judiciaire peut être portée à :",
@@ -2289,7 +2289,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Fin",
     question:
         "La libération anticipée en cas de contrainte judiciaire peut intervenir lorsque le débiteur :",
@@ -2305,7 +2305,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Dette",
     question:
         "Après l’exécution de la contrainte judiciaire, la dette pécuniaire :",
@@ -2323,7 +2323,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CHAPITRE 3 – JURIDICTIONS DE L’APPLICATION DES PEINES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions de l’application – Juridictionnalisation",
     question:
         "La loi n° 2000-516 du 15 juin 2000 a prévu la juridictionnalisation des décisions du JAP pour notamment :",
@@ -2339,7 +2339,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions de l’application – Juridictionnalisation",
     question: "La loi du 9 mars 2004 a :",
     options: [
@@ -2354,7 +2354,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 3.1.1 Le JAP ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Organisation",
     question:
         "Selon l’Article 712-2 CPP, où exerce-t-on les fonctions de juge de l’application des peines (JAP) ?",
@@ -2369,7 +2369,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Rôle",
     question: "Le juge de l’application des peines fixe principalement :",
     options: [
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Milieu fermé",
     question: "En milieu fermé, le JAP intervient notamment pour :",
     options: [
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Milieu ouvert",
     question: "En milieu ouvert, selon l’Article 712-6 CPP, le JAP :",
     options: [
@@ -2413,7 +2413,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Pouvoirs",
     question: "Parmi les pouvoirs du JAP, on peut citer :",
     options: [
@@ -2428,7 +2428,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Victime",
     question: "Selon l’Article 712-16-1 CPP, le JAP peut :",
     options: [
@@ -2443,7 +2443,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 3.1.2 Tribunal de l’application des peines (TAP) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Organisation",
     question:
         "Selon l’Article 712-3 CPP, un tribunal de l’application des peines (TAP) est établi :",
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Composition",
     question: "Le TAP est composé :",
     options: [
@@ -2473,7 +2473,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Compétence",
     question: "Le TAP est compétent notamment pour :",
     options: [
@@ -2488,7 +2488,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Voies de recours",
     question: "Les décisions du TAP sont :",
     options: [
@@ -2502,7 +2502,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Appel du ministère public",
     question:
         "Lorsque l’appel du ministère public contre une décision du TAP est formé dans les 24 heures :",
@@ -2518,7 +2518,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // --- 3.2 Chambre de l’application des peines ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Compétence",
     question:
         "La chambre de l’application des peines de la cour d’appel connaît :",
@@ -2533,7 +2533,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Composition",
     question: "La chambre de l’application des peines est composée :",
     options: [
@@ -2547,7 +2547,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Compléments",
     question:
         "Pour certains jugements visés à l’Article 712-7 CPP, la chambre de l’application peut être complétée par :",
@@ -2563,7 +2563,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Décisions",
     question: "La chambre de l’application des peines statue :",
     options: [
@@ -2577,7 +2577,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Pourvoi",
     question:
         "Les arrêts de la chambre de l’application des peines peuvent faire l’objet :",
@@ -2593,7 +2593,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Tribunal",
     question:
         "Que représente principalement le tribunal dans l’ordre judiciaire ?",
@@ -2609,7 +2609,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Types de tribunaux",
     question: "Selon la page, selon quoi les tribunaux sont-ils organisés ?",
     options: [
@@ -2623,7 +2623,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Ordre administratif",
     question:
         "Quelles juridictions règlent les litiges entre les citoyens et les pouvoirs publics ?",
@@ -2638,7 +2638,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Ordre judiciaire",
     question: "Dans quels cas les tribunaux judiciaires sont-ils compétents ?",
     options: [
@@ -2652,7 +2652,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Juridictions judiciaires",
     question: "Les tribunaux judiciaires comprennent :",
     options: [
@@ -2669,7 +2669,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // JURIDICTIONS PÉNALES — DROIT COMMUN / EXCEPTION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Typologie",
     question: "Parmi les juridictions pénales, on distingue principalement :",
     options: [
@@ -2683,7 +2683,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Droit commun",
     question: "Les juridictions de droit commun sont compétentes pour :",
     options: [
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Exception",
     question: "La compétence des juridictions d’exception est :",
     options: [
@@ -2712,7 +2712,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Exception",
     question:
         "La compétence des juridictions d’exception peut être déterminée :",
@@ -2728,7 +2728,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Droit commun",
     question:
         "Parmi les juridictions suivantes, lesquelles sont citées comme juridictions pénales de droit commun ?",
@@ -2746,7 +2746,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL DE POLICE — ORGANISATION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Textes",
     question:
         "Par quels articles le tribunal de police est-il principalement régi ?",
@@ -2761,7 +2761,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question:
         "Selon l’Article 523 CPP, par quels membres est constitué le tribunal de police ?",
@@ -2777,7 +2777,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Ministère public",
     question:
         "Pour les contraventions de 5ᵉ classe ne relevant pas de l’amende forfaitaire, qui remplit obligatoirement les fonctions du ministère public ?",
@@ -2792,7 +2792,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Remplaçants",
     question:
         "En cas d’empêchement du commissaire de police, qui désigne les remplaçants pour un an ?",
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Remplaçants",
     question:
         "Parmi qui le procureur général choisit-il les remplaçants du commissaire de police ?",
@@ -2823,7 +2823,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Infractions forestières",
     question:
         "Pour les infractions forestières, qui exerce les fonctions du ministère public ?",
@@ -2842,7 +2842,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL DE POLICE — COMPÉTENCE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Selon l’Article 521 CPP, le tribunal de police est compétent pour juger :",
@@ -2853,7 +2853,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "Selon l’Article 522 al. 1 CPP, quel tribunal de police est compétent ?",
@@ -2869,7 +2869,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Transports routiers",
     question:
         "Pour certaines infractions relatives, par exemple, au chargement ou à l’équipement des véhicules, quel tribunal de police est compétent ?",
@@ -2884,7 +2884,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Mineurs",
     question:
         "Les contraventions de 5ᵉ classe commises par des mineurs sont jugées :",
@@ -2899,7 +2899,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Mineurs",
     question:
         "Les contraventions des 4 premières classes commises par des mineurs relèvent :",
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL DE POLICE — MODES DE SAISINE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question: "Les modes de saisine du tribunal de police sont définis par :",
     options: ["L’Article 381 CPP", "L’Article 531 CPP", "L’Article 231 CPP"],
@@ -2927,7 +2927,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question: "La citation directe devant le tribunal de police consiste à :",
     options: [
@@ -2942,7 +2942,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question:
         "La convocation en justice devant le tribunal de police peut être notifiée par :",
@@ -2958,7 +2958,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question:
         "Lorsque le prévenu est détenu, la convocation en justice devant le tribunal de police est notifiée par :",
@@ -2973,7 +2973,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question:
         "Parmi ces modes, lequel est aussi un mode de saisine du tribunal de police ?",
@@ -2991,7 +2991,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — ORGANISATION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Textes",
     question: "Par quels articles le tribunal correctionnel est-il régi ?",
     options: [
@@ -3005,7 +3005,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Rôle",
     question: "Le tribunal correctionnel est :",
     options: [
@@ -3020,7 +3020,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question:
         "Dans sa formation ordinaire, le tribunal correctionnel est composé :",
@@ -3035,7 +3035,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Ministère public",
     question: "Qui représente le parquet devant le tribunal correctionnel ?",
     options: [
@@ -3049,7 +3049,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Juge unique",
     question: "Le tribunal correctionnel peut siéger à juge unique pour :",
     options: [
@@ -3067,7 +3067,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — COMPÉTENCE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence matérielle",
     question: "Selon l’Article 381 CPP, que juge le tribunal correctionnel ?",
     options: [
@@ -3082,7 +3082,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence",
     question: "Le tribunal correctionnel est compétent pour juger :",
     options: [
@@ -3097,7 +3097,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Connexité",
     question: "Que peut juger le tribunal correctionnel en plus d’un délit ?",
     options: [
@@ -3111,7 +3111,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence territoriale",
     question:
         "La compétence territoriale du tribunal correctionnel repose notamment sur :",
@@ -3130,7 +3130,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — SAISINE & PROCÉDURES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question: "Les modes de saisine du tribunal correctionnel sont listés à :",
     options: ["L’Article 388 CPP", "L’Article 531 CPP", "L’Article 231 CPP"],
@@ -3140,7 +3140,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "La comparution volontaire devant le tribunal correctionnel est prévue par :",
@@ -3151,7 +3151,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "La citation directe devant le tribunal correctionnel peut émaner :",
@@ -3167,7 +3167,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "La convocation par procès-verbal, dite du « rendez-vous judiciaire », est prévue par :",
@@ -3178,7 +3178,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "L’ordonnance pénale devant le tribunal correctionnel est prévue par :",
@@ -3192,7 +3192,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "La comparution sur reconnaissance préalable de culpabilité (CRPC) est régie par :",
@@ -3206,7 +3206,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question: "L’amende forfaitaire délictuelle est prévue par :",
     options: [
@@ -3223,7 +3223,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — PARTIE CIVILE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Partie civile",
     question: "Le tribunal correctionnel peut statuer au civil sur :",
     options: [
@@ -3238,7 +3238,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Partie civile",
     question:
         "À quel moment la partie civile peut-elle se constituer devant le tribunal correctionnel ?",
@@ -3253,7 +3253,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Partie civile",
     question:
         "Par quels moyens la partie civile peut-elle se constituer avant l’audience, selon l’Article 420-1 CPP ?",
@@ -3271,7 +3271,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR D’ASSISES — COMPOSITION & JURY
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Textes",
     question: "Par quels articles la cour d’assises est-elle régie ?",
     options: [
@@ -3285,7 +3285,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Rôle",
     question: "La cour d’assises est compétente pour juger :",
     options: ["Les contraventions", "Les délits", "Les crimes"],
@@ -3295,7 +3295,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Répartition géographique",
     question: "Combien y a-t-il de cours d’assises selon la page ?",
     options: [
@@ -3309,7 +3309,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Localisation",
     question: "Où la cour d’assises se tient-elle en principe ?",
     options: [
@@ -3324,7 +3324,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Composition",
     question: "La cour d’assises rassemble :",
     options: [
@@ -3338,7 +3338,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Cour",
     question: "La cour (élément professionnel) est composée de :",
     options: [
@@ -3352,7 +3352,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Combien de jurés composent le jury lorsque la cour d’assises statue en premier ressort ?",
@@ -3363,7 +3363,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury appel",
     question:
         "Combien de jurés composent le jury lorsque la cour d’assises statue en appel ?",
@@ -3373,7 +3373,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Serment des jurés",
     question:
         "Le serment des jurés, prévu par l’Article 304 CPP, rappelle notamment :",
@@ -3389,7 +3389,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Conditions pour être juré",
     question: "Pour être juré, il faut notamment :",
     options: [
@@ -3404,7 +3404,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Incompatibilités",
     question:
         "Les incompatibilités prévues aux Articles 256 et 257 CPP peuvent notamment concerner :",
@@ -3420,7 +3420,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Dispenses",
     question:
         "Peuvent notamment être dispensées des fonctions de juré les personnes :",
@@ -3439,7 +3439,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR D’ASSISES — DÉSIGNATION DES JURÉS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Listes de jurés",
     question:
         "À partir de quoi chaque commune dresse-t-elle une liste de jurés potentiels ?",
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Commission",
     question:
         "La commission qui établit la liste annuelle du jury est composée notamment :",
@@ -3470,7 +3470,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Liste de session",
     question:
         "Combien de jurés titulaires et suppléants figurent en principe sur la liste de session ?",
@@ -3485,7 +3485,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Paris & certaines cours",
     question:
         "Pour la cour d’assises de Paris et certaines autres cours, les nombres de jurés sont portés à :",
@@ -3500,7 +3500,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Augmentation du nombre de jurés",
     question:
         "Qui peut décider d’augmenter le nombre de jurés lorsqu’un fort absentéisme est à craindre ?",
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Notification liste",
     question:
         "La liste des jurés de session doit être signifiée à chaque accusé au plus tard :",
@@ -3530,7 +3530,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Tirage au sort du jury de jugement",
     question:
         "À quel moment le président de la cour d’assises tire-t-il au sort les jurés qui composeront le jury de jugement ?",
@@ -3545,7 +3545,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Récusations",
     question:
         "Lors de la constitution du jury, l’accusé peut récuser jusqu’à :",
@@ -3560,7 +3560,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Convocation des jurés",
     question:
         "Dans quel délai minimum le greffier convoque-t-il les jurés titulaires et suppléants avant l’ouverture de la session ?",
@@ -3571,7 +3571,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Convocation des jurés",
     question:
         "Qui peut être requis pour rechercher les jurés qui n’auraient pas répondu à la convocation et leur remettre celle-ci ?",
@@ -3589,7 +3589,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR D’ASSISES — COMPÉTENCE & PARQUET
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Compétence",
     question:
         "Selon l’Article 231 CPP, la cour d’assises a plénitude de juridiction pour :",
@@ -3605,7 +3605,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Lorsque la cour d’assises siège au niveau de la cour d’appel, le ministère public est représenté par :",
@@ -3616,7 +3616,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Lorsque la cour d’assises siège dans les locaux du tribunal judiciaire, qui représente le ministère public ?",
@@ -3631,7 +3631,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "La loi du 27 mars 2012 relative à l’exécution des peines vise notamment à :",
@@ -3647,7 +3647,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Quel mouvement la loi du 9 mars 2004 poursuit-elle en matière d’exécution des peines ?",
@@ -3662,7 +3662,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Selon la page, qui poursuit l’exécution des peines privatives de liberté et de certaines peines de substitution ?",
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question: "L’exécution des peines relève de plus en plus :",
     options: [
@@ -3691,7 +3691,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Pour les peines pécuniaires, quel mécanisme est prévu pour garantir l’exécution ?",
@@ -3709,7 +3709,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // 1.1 — PARTIES INTERVENANTES (ARTICLE 707-1 CPP)
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parties intervenantes — Généralités",
     question:
         "Selon l’Article 707-1 alinéa 1 du Code de procédure pénale, qui poursuit l’exécution de la sentence ?",
@@ -3725,7 +3725,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // -------- Partie civile --------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile",
     question:
         "En principe, sous quelle forme la partie civile obtient-elle réparation ?",
@@ -3740,7 +3740,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile",
     question:
         "Qui a qualité pour faire exécuter les condamnations prononcées au profit de la partie civile ?",
@@ -3755,7 +3755,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile",
     question:
         "Parmi les réparations suivantes, laquelle peut également bénéficier à la partie civile selon la page ?",
@@ -3771,7 +3771,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // -------- Administrations --------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Administrations — Exécution",
     question:
         "Quelle administration est compétente pour le recouvrement des amendes à caractère fiscal et certaines confiscations ?",
@@ -3786,7 +3786,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Administrations — Exécution",
     question: "L’administration des douanes est chargée de l’exécution :",
     options: [
@@ -3800,7 +3800,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Administrations — Transaction",
     question:
         "Quelle faculté importante les administrations (impôts, douanes) peuvent-elles exercer selon la page ?",
@@ -3816,7 +3816,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // -------- Ministère public --------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Rôle",
     question:
         "Selon la page, à qui appartient-il « essentiellement d’assurer l’exécution des sanctions pénales » ?",
@@ -3831,7 +3831,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Peines concernées",
     question:
         "Parmi les attributions suivantes, laquelle relève du ministère public selon l’Article 707-1 CPP ?",
@@ -3846,7 +3846,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Peines du Code pénal",
     question:
         "Les peines prévues aux articles 131-1 à 131-49 du Code pénal sont :",
@@ -3861,7 +3861,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Sanctions UE",
     question:
         "L’Article 707-1 alinéa 6 CPP confie au ministère public la poursuite de l’exécution :",
@@ -3877,7 +3877,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Recouvrement pécuniaire",
     question:
         "Pour les peines pécuniaires, qui assure le recouvrement selon la page ?",
@@ -3892,7 +3892,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Force publique",
     question:
         "Que prévoit l’Article 709 du Code de procédure pénale au profit du procureur de la République et du procureur général ?",
@@ -3911,7 +3911,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // 1.2 — DÉCISION DÉFINITIVE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Principe",
     question:
         "Selon l’Article 708 alinéa 1 CPP, quand l’exécution d’une décision pénale peut-elle intervenir ?",
@@ -3926,7 +3926,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Opposition",
     question:
         "Que se passe-t-il lorsqu’un jugement a été rendu par défaut et que le délai d’opposition court encore ?",
@@ -3941,7 +3941,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Appel",
     question:
         "Quel est le délai d’appel de principe pour un jugement du tribunal correctionnel, selon la page ?",
@@ -3952,7 +3952,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Appel",
     question:
         "Pendant le délai d’appel et durant l’instance d’appel, il est en principe :",
@@ -3967,7 +3967,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Pourvoi",
     question: "En matière pénale, le pourvoi en cassation est en principe :",
     options: [
@@ -3984,7 +3984,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // 1.3 — PEINES PRIVATIVES DE LIBERTÉ
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Ministère public",
     question: "Qui doit faire exécuter les peines privatives de liberté ?",
     options: [
@@ -3998,7 +3998,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Parquet compétent",
     question:
         "Lorsque la cour d’assises siège au niveau de la cour d’appel, qui assure l’exécution des peines ?",
@@ -4013,7 +4013,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Parquet compétent",
     question:
         "Lorsque la cour d’assises siège dans les locaux du tribunal judiciaire, qui assure l’exécution ?",
@@ -4028,7 +4028,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Délai mise à exécution",
     question:
         "Quel délai est recommandé par l’instruction générale pour la mise à exécution d’une peine d’emprisonnement (Article C 816) ?",
@@ -4039,7 +4039,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Modalités",
     question:
         "Quel document est adressé à l’établissement pénitentiaire pour l’écrou du condamné ?",
@@ -4054,7 +4054,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Domicile du condamné",
     question:
         "Selon l’Article 716-5 CPP, pour exécuter une peine d’emprisonnement, les agents de la force publique peuvent être autorisés à :",
@@ -4075,7 +4075,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
 
   // ---------- Amendes & peines pécuniaires ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Amendes",
     question:
         "À partir de quel moment les condamnations pécuniaires deviennent-elles exigibles ?",
@@ -4090,7 +4090,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Amendes",
     question:
         "Dans quel délai les extraits de jugement doivent-ils être adressés au Trésorier principal pour recouvrement des amendes (hors pourvoi) ?",
@@ -4101,7 +4101,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Amendes",
     question:
         "Que peut entraîner le défaut de paiement d’une amende selon la page ?",
@@ -4117,7 +4117,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Jours-amende ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Jours-amende",
     question: "Les jours-amende consistent pour le condamné à :",
     options: [
@@ -4131,7 +4131,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Jours-amende",
     question:
         "En cas de non-paiement des jours-amende, que peut décider le JAP ?",
@@ -4148,7 +4148,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Peines de substitution & complémentaires ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Peines de substitution",
     question:
         "L’Article 131-6 du Code pénal prévoit notamment comme peine de substitution :",
@@ -4163,7 +4163,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Peines complémentaires",
     question:
         "Parmi ces exemples, laquelle est une peine complémentaire citée dans la page ?",
@@ -4179,7 +4179,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Sanction-réparation ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Sanction-réparation",
     question:
         "Selon l’Article 131-8-1 du Code pénal, la peine de sanction-réparation :",
@@ -4195,7 +4195,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Sanction-réparation",
     question:
         "La peine de sanction-réparation consiste principalement pour le condamné à :",
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Personnes morales ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Personnes morales",
     question: "Les personnes morales peuvent être condamnées à :",
     options: [
@@ -4225,7 +4225,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Personnes morales",
     question: "La contrainte judiciaire :",
     options: [
@@ -4242,7 +4242,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CHAPITRE 2 — CONTRAINTE JUDICIAIRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Définition",
     question: "La contrainte judiciaire est :",
     options: [
@@ -4257,7 +4257,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Juge compétent",
     question:
         "Quel juge est principalement chargé d’ordonner la contrainte judiciaire ?",
@@ -4272,7 +4272,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Conditions",
     question: "La contrainte judiciaire suppose notamment :",
     options: [
@@ -4286,7 +4286,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Nature de la peine",
     question:
         "Pour être susceptible de contrainte judiciaire, la peine d’amende doit :",
@@ -4302,7 +4302,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Personnes concernées",
     question: "La contrainte judiciaire ne peut s’exercer que contre :",
     options: [
@@ -4317,7 +4317,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Causes d’exemption ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Exemptions",
     question:
         "La contrainte judiciaire peut-elle être prononcée contre un mineur de moins de 18 ans ?",
@@ -4333,7 +4333,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Exemptions",
     question:
         "La contrainte judiciaire ne peut être exercée contre les débiteurs âgés :",
@@ -4348,7 +4348,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Insolvabilité",
     question:
         "Que prévoit l’Article 752 CPP en cas d’insolvabilité du condamné ?",
@@ -4364,7 +4364,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Conjoint",
     question: "Que prévoit l’Article 753 CPP concernant les époux ?",
     options: [
@@ -4380,7 +4380,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Procédure ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Commandement",
     question:
         "Quelle formalité précède obligatoirement l’incarcération au titre de la contrainte judiciaire ?",
@@ -4395,7 +4395,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Demande d’incarcération",
     question:
         "Si, dans l’année suivant la signification du commandement, le condamné n’a pas payé, qui peut requérir le JAP pour qu’il prononce la contrainte judiciaire ?",
@@ -4410,7 +4410,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Durée",
     question:
         "La contrainte judiciaire est exclue lorsque le montant de l’amende est :",
@@ -4425,7 +4425,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Durée",
     question:
         "En matière de trafic de stupéfiants, la durée maximale de la contrainte judiciaire peut être portée à :",
@@ -4436,7 +4436,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Fin",
     question:
         "Selon l’Article 761-1 CPP, l’exécution de la contrainte judiciaire :",
@@ -4456,7 +4456,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
 
   // ---------- Juridictionnalisation ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Juridictionnalisation",
     question: "La loi du 15 juin 2000 a instauré notamment :",
     options: [
@@ -4471,7 +4471,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- JAP ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP",
     question:
         "Selon l’Article 712-2 CPP, où se trouvent les juges de l’application des peines ?",
@@ -4486,7 +4486,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP",
     question: "Le JAP fixe principalement :",
     options: [
@@ -4501,7 +4501,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP milieu fermé",
     question: "En milieu fermé, le JAP intervient notamment pour :",
     options: [
@@ -4516,7 +4516,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP milieu ouvert",
     question: "En milieu ouvert, l’Article 712-6 CPP prévoit que le JAP :",
     options: [
@@ -4531,7 +4531,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Pouvoirs JAP",
     question: "Selon l’Article 712-19 CPP, le JAP peut :",
     options: [
@@ -4547,7 +4547,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- TAP ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP",
     question:
         "Selon l’Article 712-3 CPP, où est établi le tribunal de l’application des peines (TAP) ?",
@@ -4562,7 +4562,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP composition",
     question: "Comment est composé le TAP selon l’Article 712-10 al. 4 CPP ?",
     options: [
@@ -4576,7 +4576,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP compétence",
     question: "Le TAP est compétent notamment pour :",
     options: [
@@ -4591,7 +4591,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP recours",
     question: "Les décisions du TAP sont :",
     options: [
@@ -4607,7 +4607,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   ),
 
   // ---------- Chambre de l’application des peines ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP",
     question:
         "La chambre de l’application des peines de la cour d’appel connaît :",
@@ -4622,7 +4622,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP composition",
     question: "De qui est composée la chambre de l’application des peines ?",
     options: [
@@ -4636,7 +4636,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP élargie",
     question:
         "Pour certains jugements, la chambre de l’application des peines peut être complétée par :",
@@ -4652,7 +4652,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP pourvoi",
     question:
         "Les arrêts de la chambre de l’application des peines peuvent faire l’objet :",
@@ -4667,7 +4667,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quelle distinction fondamentale est opérée entre les juridictions pénales ?",
@@ -4682,7 +4682,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions de droit commun sont compétentes pour :",
     options: [
@@ -4697,7 +4697,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions d’exception :",
     options: [
@@ -4715,7 +4715,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL DE POLICE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Nature des infractions",
     question:
         "Quelle catégorie d’infractions est jugée par le tribunal de police ?",
@@ -4726,7 +4726,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question:
         "Quels sont les membres qui composent le tribunal de police dans son organisation de base ?",
@@ -4742,7 +4742,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Ministère public",
     question:
         "Qui assure les fonctions du ministère public devant le tribunal de police ?",
@@ -4758,7 +4758,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Selon l’article 521 du Code de procédure pénale, le tribunal de police est compétent pour :",
@@ -4773,7 +4773,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Connexité",
     question:
         "Outre les contraventions ordinaires, le tribunal de police peut également connaître :",
@@ -4788,7 +4788,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "En principe, quel tribunal de police est territorialement compétent ?",
@@ -4804,7 +4804,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Transports routiers",
     question:
         "Pour certaines infractions en matière de transports routiers, quel tribunal de police est compétent ?",
@@ -4819,7 +4819,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Modes de saisine",
     question:
         "Par quels moyens le tribunal de police peut-il être saisi, selon la page ?",
@@ -4838,7 +4838,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Nature des infractions",
     question:
         "Quelle catégorie d’infractions relève en principe du tribunal correctionnel ?",
@@ -4849,7 +4849,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Sanctions encourues",
     question:
         "Les délits jugés par le tribunal correctionnel sont des infractions :",
@@ -4864,7 +4864,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question: "Dans sa formation ordinaire, le tribunal correctionnel est :",
     options: [
@@ -4879,7 +4879,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Juge unique",
     question:
         "Dans quels cas le tribunal correctionnel peut-il siéger à juge unique ?",
@@ -4894,7 +4894,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Connexité",
     question: "Le tribunal correctionnel peut aussi connaître :",
     options: [
@@ -4908,7 +4908,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question:
         "Quel article du Code de procédure pénale liste les modes de saisine du tribunal correctionnel ?",
@@ -4919,7 +4919,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question:
         "Parmi les modes de saisine suivants, lequel est cité dans la page comme mode de saisine du tribunal correctionnel ?",
@@ -4934,7 +4934,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "La page mentionne que des procédures simplifiées existent devant le tribunal correctionnel. Lesquelles ?",
@@ -4952,7 +4952,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR D’ASSISES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Nature des infractions",
     question:
         "Quelle catégorie d’infractions relève en principe de la cour d’assises ?",
@@ -4963,7 +4963,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Définition",
     question:
         "Selon la page, l’article 231 du Code de procédure pénale définit la cour d’assises comme :",
@@ -4979,7 +4979,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Siège",
     question:
         "Il existe une cour d’assises par département. Où siège-t-elle en principe ?",
@@ -4994,7 +4994,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Composition",
     question: "La composition de la cour d’assises comprend :",
     options: [
@@ -5009,7 +5009,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Combien de jurés composent le jury de la cour d’assises en premier ressort et en appel, selon la page ?",
@@ -5024,7 +5024,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Serment des jurés",
     question:
         "Quel principe fondamental est rappelé dans le serment des jurés, selon la page ?",
@@ -5039,7 +5039,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Qui représente le ministère public lorsque la cour d’assises siège au siège de la cour d’appel ?",
@@ -5057,7 +5057,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR CRIMINELLE DÉPARTEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale — Objet",
     question: "La cour criminelle départementale est compétente pour juger :",
     options: [
@@ -5072,7 +5072,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale — Composition",
     question: "Comment est composée la cour criminelle départementale ?",
     options: [
@@ -5090,7 +5090,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // JURIDICTIONS POUR MINEURS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Généralités",
     question: "Les juridictions pour mineurs sont des juridictions :",
     options: ["De droit commun", "D’exception", "Administratives"],
@@ -5100,7 +5100,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Le juge des enfants est :",
     options: [
@@ -5114,7 +5114,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Selon la page, le juge des enfants est compétent pour juger :",
     options: [
@@ -5129,7 +5129,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Le tribunal pour enfants est présidé par :",
     options: [
@@ -5143,7 +5143,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Les assesseurs du tribunal pour enfants sont :",
     options: [
@@ -5158,7 +5158,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Cour d’assises des mineurs",
     question: "La cour d’assises des mineurs est compétente pour :",
     options: [
@@ -5173,7 +5173,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Appel",
     question:
         "Selon la page, à quelle juridiction sont portés les appels des jugements rendus à l’égard des mineurs ?",
@@ -5191,7 +5191,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TERRORISME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Juridictions spécialisées",
     question:
         "En matière de terrorisme, quelles juridictions sont compétentes selon la page ?",
@@ -5207,7 +5207,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Cour d’assises spéciale",
     question:
         "Quelle particularité présente la cour d’assises spéciale en matière de terrorisme, d’après la page ?",
@@ -5226,7 +5226,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // ECONOMIQUE & FINANCIER
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière — Compétence territoriale",
     question:
         "Dans les affaires économiques et financières complexes, la compétence territoriale d’un tribunal judiciaire peut :",
@@ -5241,7 +5241,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière — Procureur financier",
     question:
         "Le procureur de la République financier exerce ses attributions :",
@@ -5256,7 +5256,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière — Infractions boursières",
     question:
         "Les infractions boursières et financières mentionnées dans la page sont principalement prévues dans :",
@@ -5274,7 +5274,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CRIMINALITÉ ORGANISÉE & JIRS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Infractions",
     question: "Les articles 706-73 et 706-73-1 du CPP listent notamment :",
     options: [
@@ -5289,7 +5289,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Compétence territoriale",
     question:
         "En matière de criminalité organisée, la compétence territoriale d’un tribunal judiciaire ou d’une cour d’assises peut :",
@@ -5304,7 +5304,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Compétence concurrente",
     question:
         "Pour les infractions de criminalité organisée, la compétence du parquet, du juge d’instruction et de la formation correctionnelle spécialisée est :",
@@ -5319,7 +5319,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — JIRS",
     question:
         "Combien de juridictions interrégionales spécialisées (JIRS) sont mentionnées dans la page ?",
@@ -5333,7 +5333,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CRIMES CONTRE L’HUMANITÉ / GUERRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes contre l’humanité / Guerre",
     question:
         "Selon la page, les crimes contre l’humanité et les crimes et délits de guerre peuvent être jugés :",
@@ -5352,7 +5352,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CRIMES SERIELS / NON ELUCIDÉS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Quel tribunal est désigné comme pôle judiciaire national spécialisé pour les crimes sériels ou non élucidés ?",
@@ -5367,7 +5367,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Selon la page, le pôle spécialisé de Nanterre est notamment compétent lorsque :",
@@ -5385,7 +5385,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAUX MILITAIRES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires — Infractions en service",
     question:
         "Selon la page, les infractions militaires et les crimes ou délits de droit commun commis dans l’exercice du service par les militaires relèvent :",
@@ -5400,7 +5400,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires — Infractions hors service",
     question:
         "Toute infraction commise par un militaire en dehors de l’exercice du service relève :",
@@ -5415,7 +5415,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires — Hors du territoire national",
     question:
         "Certains tribunaux judiciaires sont spécialement compétents pour les infractions commises par ou à l’encontre de militaires français :",
@@ -5433,7 +5433,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // LITTORAL MARITIME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Littoral maritime — Objet",
     question:
         "Les juridictions du littoral maritime spécialisées sont compétentes notamment pour :",
@@ -5449,7 +5449,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Littoral maritime — Compétence",
     question:
         "La compétence des juridictions du littoral maritime spécialisées est :",
@@ -5467,7 +5467,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // SANITAIRE & ENVIRONNEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Textes",
     question:
         "Quels articles du Code de procédure pénale organisent la procédure applicable aux infractions en matière sanitaire et environnementale, d’après la page ?",
@@ -5482,7 +5482,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Compétence territoriale",
     question:
         "En matière sanitaire et environnementale, la compétence territoriale d’un tribunal judiciaire peut être étendue :",
@@ -5498,7 +5498,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Types d’affaires",
     question:
         "Les affaires sanitaires et environnementales visées concernent notamment :",
@@ -5514,7 +5514,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Pôles spécialisés",
     question:
         "Selon la page, quels tribunaux judiciaires sont actuellement désignés comme pôles spécialisés en matière sanitaire et environnementale ?",
@@ -5528,7 +5528,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // VOIES DE RECOURS — GENERALITES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question:
         "Une décision rendue par une juridiction répressive acquiert autorité de chose jugée lorsque :",
@@ -5543,7 +5543,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question:
         "Quelles sont les voies de recours ordinaires mentionnées dans la page ?",
@@ -5561,7 +5561,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // OPPOSITION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Conditions",
     question: "L’opposition est possible lorsque le jugement a été rendu :",
     options: [
@@ -5575,7 +5575,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Délai",
     question:
         "Selon la page, le délai de principe pour former opposition lorsque le prévenu réside en France métropolitaine est de :",
@@ -5586,7 +5586,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Effet extinctif",
     question:
         "Quel est l’effet principal de l’opposition sur la décision rendue par défaut ?",
@@ -5601,7 +5601,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Prescription",
     question: "Selon la page, l’opposition :",
     options: [
@@ -5616,7 +5616,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Itératif défaut",
     question:
         "En cas d’« itératif défaut » lors de l’audience d’opposition, la page indique que :",
@@ -5635,7 +5635,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // APPEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Définition",
     question:
         "L’appel est défini dans la page comme une voie de recours qui permet :",
@@ -5651,7 +5651,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Décisions susceptibles",
     question:
         "Selon la page, les jugements rendus en matière correctionnelle :",
@@ -5666,7 +5666,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Personnes ayant qualité",
     question:
         "Parmi les personnes suivantes, lesquelles peuvent interjeter appel en matière correctionnelle, d’après la page ?",
@@ -5682,7 +5682,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Délai",
     question:
         "En principe, quel est le délai pour interjeter appel d’un jugement contradictoire, selon la page ?",
@@ -5693,7 +5693,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Effets",
     question:
         "Quels sont les deux effets principaux de l’appel, tels que présentés dans la page ?",
@@ -5708,7 +5708,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quelle distinction fondamentale est opérée entre les juridictions pénales ?",
@@ -5723,7 +5723,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions de droit commun sont compétentes pour :",
     options: [
@@ -5738,7 +5738,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions d’exception voient leur compétence :",
     options: [
@@ -5755,7 +5755,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL DE POLICE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Généralités",
     question:
         "Quelle catégorie d’infractions est jugée par le tribunal de police ?",
@@ -5766,7 +5766,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question: "Quel magistrat siège comme juge au tribunal de police ?",
     options: [
@@ -5780,7 +5780,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question: "Quels sont les membres qui composent le tribunal de police ?",
     options: [
@@ -5795,7 +5795,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Selon l’article 521 du Code de procédure pénale, le tribunal de police est compétent pour :",
@@ -5810,7 +5810,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Outre les contraventions simples, le tribunal de police peut également connaître :",
@@ -5825,7 +5825,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "En principe, quel tribunal de police est territorialement compétent ?",
@@ -5841,7 +5841,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "Pour certaines infractions de transport routier, quel tribunal de police est compétent ?",
@@ -5856,7 +5856,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Modes de saisine",
     question: "Le tribunal de police peut être saisi notamment par :",
     options: [
@@ -5874,7 +5874,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Généralités",
     question:
         "Quelle catégorie d’infractions est jugée par le tribunal correctionnel ?",
@@ -5885,7 +5885,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question: "Dans sa formation ordinaire, le tribunal correctionnel est :",
     options: [
@@ -5900,7 +5900,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question:
         "Dans quels cas le tribunal correctionnel peut-il siéger à juge unique ?",
@@ -5915,7 +5915,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence",
     question: "Le tribunal correctionnel juge :",
     options: [
@@ -5930,7 +5930,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence",
     question: "Le tribunal correctionnel peut également connaître :",
     options: [
@@ -5944,7 +5944,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "Parmi les modes de saisine suivants, lequel ne concerne PAS le tribunal correctionnel ?",
@@ -5959,7 +5959,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "La comparution sur reconnaissance préalable de culpabilité (CRPC) est :",
@@ -5974,7 +5974,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "Parmi les procédures suivantes, laquelle est une procédure simplifiée devant le tribunal correctionnel ?",
@@ -5989,7 +5989,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question:
         "Les modes de saisine du tribunal correctionnel sont énumérés à :",
@@ -6007,7 +6007,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR D’ASSISES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Généralités",
     question:
         "Quelle catégorie d’infractions relève en principe de la cour d’assises ?",
@@ -6018,7 +6018,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Définition",
     question: "Selon l’article 231 du CPP, la cour d’assises a :",
     options: [
@@ -6033,7 +6033,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Siège",
     question: "Où siège en principe la cour d’assises ?",
     options: [
@@ -6047,7 +6047,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Composition",
     question: "La cour d’assises se compose de :",
     options: [
@@ -6061,7 +6061,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Combien de jurés composent le jury en premier ressort devant la cour d’assises ?",
@@ -6072,7 +6072,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Quel principe fondamental est rappelé dans le serment des jurés ?",
@@ -6087,7 +6087,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Qui représente le ministère public lorsque la cour d’assises siège au siège de la cour d’appel ?",
@@ -6102,7 +6102,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Décisions",
     question:
         "À quelle majorité une décision défavorable à l’accusé doit-elle être prise en cour d’assises ?",
@@ -6120,7 +6120,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // COUR CRIMINELLE DÉPARTEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale",
     question:
         "Quel est l’objet principal de la cour criminelle départementale ?",
@@ -6136,7 +6136,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale",
     question: "La cour criminelle départementale est composée :",
     options: [
@@ -6154,7 +6154,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // JURIDICTIONS POUR MINEURS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Généralités",
     question: "Les juridictions pour mineurs sont :",
     options: [
@@ -6168,7 +6168,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Le juge des enfants est :",
     options: [
@@ -6182,7 +6182,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Le juge des enfants peut juger :",
     options: [
@@ -6197,7 +6197,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Le tribunal pour enfants est présidé par :",
     options: [
@@ -6211,7 +6211,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Les assesseurs du tribunal pour enfants sont :",
     options: [
@@ -6225,7 +6225,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Cour d’assises des mineurs",
     question: "La cour d’assises des mineurs est compétente pour :",
     options: [
@@ -6239,7 +6239,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Appel",
     question:
         "L’appel des jugements rendus à l’égard des mineurs est porté devant :",
@@ -6257,7 +6257,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TERRORISME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Juridictions spécialisées",
     question:
         "Pour les infractions terroristes, quelles juridictions sont souvent compétentes ?",
@@ -6273,7 +6273,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Cour d’assises spéciale",
     question:
         "Quelle particularité présente la cour d’assises spéciale en matière de terrorisme ?",
@@ -6292,7 +6292,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // ECONOMIQUE & FINANCIER
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière",
     question:
         "Dans les affaires économiques et financières complexes, la compétence territoriale d’un tribunal judiciaire peut :",
@@ -6307,7 +6307,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière",
     question:
         "Le procureur de la République financier exerce ses attributions :",
@@ -6322,7 +6322,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière",
     question:
         "Les infractions boursières visées (manipulation de marché, etc.) sont principalement prévues dans :",
@@ -6340,7 +6340,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CRIMINALITE ORGANISEE & JIRS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Généralités",
     question: "L’article 706-73 du CPP énumère principalement :",
     options: [
@@ -6354,7 +6354,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Compétence",
     question:
         "En matière de criminalité organisée, la compétence territoriale peut :",
@@ -6369,7 +6369,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — JIRS",
     question:
         "Combien de juridictions interrégionales spécialisées (JIRS) sont prévues par le CPP ?",
@@ -6383,7 +6383,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CRIMES CONTRE L’HUMANITÉ / GUERRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes contre l’humanité / Guerre",
     question:
         "Les crimes contre l’humanité et les crimes et délits de guerre peuvent être jugés :",
@@ -6401,7 +6401,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // CRIMES SERIELS / NON ELUCIDES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Quel tribunal est désigné comme pôle judiciaire national spécialisé pour les crimes sériels ou non élucidés ?",
@@ -6416,7 +6416,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Le pôle spécialisé crimes sériels de Nanterre est compétent notamment lorsque :",
@@ -6434,7 +6434,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // TRIBUNAUX MILITAIRES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires",
     question:
         "Les infractions militaires et les crimes et délits de droit commun commis par les militaires dans l’exercice du service relèvent :",
@@ -6449,7 +6449,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires",
     question:
         "Les infractions commises par un militaire en dehors de l’exercice du service relèvent :",
@@ -6467,7 +6467,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // LITTORAL MARITIME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Littoral maritime",
     question:
         "Les juridictions du littoral maritime spécialisées sont compétentes notamment pour :",
@@ -6485,7 +6485,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // SANITAIRE & ENVIRONNEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale",
     question: "Les articles 706-2 à 706-2-3 du CPP concernent :",
     options: [
@@ -6499,7 +6499,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale",
     question:
         "Les pôles spécialisés en matière sanitaire et environnementale sont actuellement situés à :",
@@ -6513,7 +6513,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // VOIES DE RECOURS — GENERALITES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question: "Une décision pénale acquiert autorité de chose jugée lorsque :",
     options: [
@@ -6527,7 +6527,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question: "Les voies de recours ordinaires comprennent principalement :",
     options: [
@@ -6544,7 +6544,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // OPPOSITION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question: "L’opposition est recevable lorsque :",
     options: [
@@ -6558,7 +6558,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question: "En principe, le délai pour former opposition est de :",
     options: ["3 jours", "10 jours", "1 mois pour tous"],
@@ -6568,7 +6568,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question:
         "Quel est l’effet principal de l’opposition sur la décision rendue par défaut ?",
@@ -6583,7 +6583,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question:
         "En cas d’« itératif défaut » (nouveau défaut du prévenu lors de l’audience d’opposition), l’opposition :",
@@ -6601,7 +6601,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
   // ==========================================================
   // APPEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Généralités",
     question: "L’appel permet :",
     options: [
@@ -6615,7 +6615,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Décisions susceptibles",
     question: "En matière correctionnelle, les jugements sont en principe :",
     options: [
@@ -6629,7 +6629,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Personnes ayant qualité",
     question: "En matière correctionnelle, qui peut interjeter appel ?",
     options: [
@@ -6644,7 +6644,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Délai",
     question:
         "Quel est, en principe, le délai pour interjeter appel d’un jugement correctionnel contradictoire ?",
@@ -6655,7 +6655,7 @@ final List<QuizQuestion> questionsJuridictionsPenales = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Effets",
     question: "L’appel a en principe un effet :",
     options: [
@@ -7024,7 +7024,7 @@ class _QuizJuridictionsPageState extends State<QuizJuridictionsPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -7227,7 +7227,7 @@ class _QuizJuridictionsPageState extends State<QuizJuridictionsPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -7410,7 +7410,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -7943,10 +7942,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -8317,7 +8317,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -8358,9 +8358,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -106,20 +106,20 @@ class PVInterpellationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le recours éventuel au menottage doit être justifié et circonstancié conformément à ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article 803 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -210,21 +210,21 @@ class PVInterpellationPage extends StatelessWidget {
             cardColor: cardActes,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Menottage (si nécessaire)"),
+            children: const [
+              _SubTitle("Menottage (si nécessaire)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le menottage doit être motivé (dangerosité, risque de fuite, résistance…), conformément à ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article 803 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -234,20 +234,20 @@ class PVInterpellationPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "10) Constatations & appréhensions éventuelles (après interpellation)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Constatations postérieures : effractions, bris de serrure/vitre, objets abandonnés, etc.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Objets pièces à conviction : les décrire, les représenter à la personne, puis les appréhender.",
               ),
-              const SizedBox(height: 8),
-              const _NotaBox(
+              SizedBox(height: 8),
+              _NotaBox(
                 title: "Méthode",
                 bodySpans: [
                   TextSpan(
@@ -258,37 +258,37 @@ class PVInterpellationPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("11) Avis O.P.J."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("11) Avis O.P.J."),
+              _BulletPoint(
                 text:
                     "Mentionner les instructions reçues de l’officier de police judiciaire + les avis donnés (radio, invitation à déposer, etc.).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("12) Retour au service"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("12) Retour au service"),
+              _BulletPoint(
                 text:
                     "Si usage de la force pour le transport : préciser les résistances et les moyens de coercition utilisés.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("13) Énonciation terminale (clôture)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("13) Énonciation terminale (clôture)"),
+              _BulletPoint(
                 text:
                     "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("14) Présentation O.P.J."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("14) Présentation O.P.J."),
+              _BulletPoint(
                 text:
                     "Présenter l’individu, préciser l’heure, faire un compte-rendu verbal, remettre les objets appréhendés le cas échéant.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("15) Mention"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("15) Mention"),
+              _BulletPoint(
                 text:
                     "Recherches administratives : FPR, TAJ (le cas échéant). Mentionner qu’elles ont été effectuées et le résultat.",
               ),
@@ -337,7 +337,7 @@ class _ZoomableAssetImage extends StatelessWidget {
     final Color border = isDark ? Colors.white24 : Colors.black12;
     final Color chipBg = isDark
         ? Colors.black54
-        : Colors.white.withOpacity(.92);
+        : Colors.white.withValues(alpha: .92);
     final Color chipText = isDark ? Colors.white : const Color(0xFF050505);
 
     return Semantics(
@@ -434,7 +434,7 @@ class _ZoomableAssetImage extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Fermer',
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       pageBuilder: (_, __, ___) {
         return SafeArea(
           child: Scaffold(
@@ -496,10 +496,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -564,7 +564,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -607,7 +607,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -669,7 +669,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -701,7 +701,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -714,7 +714,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -110,16 +110,16 @@ class SoustractionEnfantMineurSansFraudePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la soustraction d’enfant mineur sans fraude ni violence par une personne autre qu’un ascendant.",
                 ),
@@ -135,98 +135,98 @@ class SoustractionEnfantMineurSansFraudePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) L’auteur n’est pas un ascendant du mineur"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) L’auteur n’est pas un ascendant du mineur"),
+              _Paragraph(
                 "L’infraction suppose que l’auteur n’ait pas la qualité d’ascendant de l’enfant. "
                 "Il peut s’agir d’un tiers ou d’un membre de la famille non ascendant (frère, sœur, tante, oncle…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : le délit est constitué lorsque le tiers ayant recueilli un mineur en fugue ",
                   ),
-                  const TextSpan(text: "ne prévient pas les parents. "),
+                  TextSpan(text: "ne prévient pas les parents. "),
                   TextSpan(
                     text: "(Cass. crim., 3 septembre 2014)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Un acte de soustraction sans fraude ni violence",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La soustraction implique un acte positif : déplacer ou obtenir le déplacement du mineur "
                 "du lieu où l’avait placé le titulaire de l’autorité parentale (ou la personne à qui il a été confié). "
                 "L’essentiel est que la soustraction provienne de l’initiative de l’auteur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "On ne peut pas retenir l’infraction contre une personne à qui l’enfant a été confié volontairement.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph(
+              _Paragraph(
                 "La soustraction peut consister dans un enlèvement, ou dans le fait d’accepter d’héberger l’enfant "
                 "ayant fui de sa propre volonté l’endroit où il avait été placé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La jurisprudence exige que le déplacement s’inscrive dans le temps : quelques heures ne suffisent pas — ",
                 ),
                 TextSpan(
                   text: "Cass. crim., 23 décembre 1968",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Différence essentielle",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le texte exige l’absence de fraude et de violence. La fraude ou la violence révèle en général "
                         "une atteinte à l’intégrité physique ou à la liberté, pouvant relever d’infractions plus sévèrement réprimées.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Dans ce cas, peuvent notamment être envisagés les textes relatifs à l’enlèvement et à la séquestration — ",
                 ),
                 TextSpan(
                   text: "articles 224-1 et suivants du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -239,19 +239,19 @@ class SoustractionEnfantMineurSansFraudePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Conscience de soustraire le mineur à l’autorité de ceux auxquels il est soumis",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il s’agit d’une infraction intentionnelle : l’auteur agit en toute connaissance de cause, "
                 "c’est-à-dire en sachant qu’il n’a pas le droit de procéder au déplacement du mineur, "
                 "de manière durable, sinon définitive.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La jurisprudence admet qu’il n’y a pas de délit si l’auteur a pu raisonnablement se tromper sur l’âge "
                         "et croire que la personne était majeure.",
@@ -284,66 +284,66 @@ class SoustractionEnfantMineurSansFraudePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "5 ans d’emprisonnement."),
-              const _BulletPoint(text: "75 000 € d’amende."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "5 ans d’emprisonnement."),
+              _BulletPoint(text: "75 000 € d’amende."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale possible via "),
+                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (applicable depuis le 31 décembre 2005).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Tentative : OUI — prévue expressément par ",
                 ),
                 TextSpan(
                   text: "l’article 227-11 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide et assistance, provocation, instructions).",
                 ),
               ]),
@@ -383,10 +383,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -451,7 +451,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -494,7 +494,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -556,7 +556,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -588,7 +588,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -601,7 +601,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

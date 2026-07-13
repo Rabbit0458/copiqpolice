@@ -102,7 +102,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // DISSIMULATION FORCÉE DU VISAGE — FACILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fondement',
     question: 'L’infraction de dissimulation forcée du visage est prévue par :',
     options: [
@@ -115,7 +115,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'La dissimulation forcée du visage est expressément prévue et réprimée par l’article 225-4-10 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation de sépultures — Fondement',
     question:
         'La violation ou la profanation de tombeaux, sépultures, urnes cinéraires ou monuments à la mémoire des morts est prévue par :',
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que l’article 225-17 al.2 du C.P. prévoit et réprime la violation/profanation de ces lieux/objets.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Fondement',
     question: 'L’atteinte à l’intégrité du cadavre est prévue par :',
     options: [
@@ -142,7 +142,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’article 225-17 al.1 du C.P. réprime l’atteinte à l’intégrité du cadavre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Objets protégés',
     question:
         'Parmi les éléments suivants, lequel est protégé par l’article 225-17 al.2 du C.P. ?',
@@ -156,7 +156,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste explicitement : tombeaux, sépultures, urnes cinéraires, monuments édifiés à la mémoire des morts.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Acte matériel',
     question: 'L’acte de violation ou de profanation suppose :',
     options: [
@@ -169,7 +169,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que l’acte doit être matérialisé par une action (dégradation, ouverture de caveau, inscriptions, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Moment',
     question:
         'Pour caractériser l’atteinte à l’intégrité du cadavre, il est nécessaire qu’il y ait eu inhumation :',
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que l’inhumation n’est pas nécessaire : l’atteinte peut être constatée sur les lieux du décès, à la morgue, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Circonstance aggravante',
     question:
         'La violation/profanation (225-17 al.2) est aggravée lorsqu’elle est accompagnée :',
@@ -193,7 +193,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : art. 225-17 al.3 = aggravation si atteinte à l’intégrité du cadavre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Peine (simple)',
     question:
         'La violation/profanation de tombeaux, sépultures, urnes ou monuments (225-17 al.2) est punie de :',
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-17 al.2 = 1 an et 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Peine (aggravée)',
     question: 'La violation/profanation aggravée (225-17 al.3) est punie de :',
     options: [
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : 225-17 al.3 (avec atteinte à l’intégrité du cadavre) = 2 ans et 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Peine',
     question:
         'L’atteinte à l’intégrité du cadavre (225-17 al.1) est punie de :',
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-17 al.1 = 1 an et 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Responsabilité des personnes morales',
     question:
         'La responsabilité des personnes morales pour ces infractions est prévue par :',
@@ -248,7 +248,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que la responsabilité des personnes morales est prévue expressément par l’article 225-18-1 du C.P.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Fait justificatif',
     question:
         'Le cours précise que l’infraction ne peut pas être retenue contre un médecin pratiquant une autopsie car :',
@@ -263,7 +263,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite l’article 122-4 du C.P. : n’est pas pénalement responsable la personne accomplissant un acte prescrit/autorisé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Actes concernés',
     question:
         'Parmi les exemples suivants, lequel peut constituer une atteinte à l’intégrité du cadavre selon le cours ?',
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : dépeçage, coups de feu/couteau/bâton, morsures, exhumation illicite, prélèvements hors cadre légal, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Tombeau',
     question: 'Selon le cours, un “tombeau” est :',
     options: [
@@ -290,7 +290,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours définit le tombeau comme un monument élevé sur les restes d’un mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Sépulture',
     question: 'Selon le cours, la “sépulture” peut désigner :',
     options: [
@@ -304,7 +304,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : la sépulture = lieu où le défunt est enterré, mais aussi drap mortuaire ou cercueil avant l’inhumation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Monuments à la mémoire des morts',
     question:
         'Selon le cours, un monument édifié à la mémoire des morts peut être :',
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : monuments collectifs en mémoire des morts, plaques commémoratives, lieux où un soldat/résistant a été tué, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Élément moral',
     question:
         'L’élément moral de la violation/profanation repose principalement sur :',
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’auteur agit en connaissance de cause ; le mobile est indifférent.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Élément moral',
     question:
         'Pour l’atteinte à l’intégrité du cadavre, le mobile (raison) de l’auteur :',
@@ -347,7 +347,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’auteur a conscience de porter atteinte au respect dû aux morts ; le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Tentative',
     question: 'La tentative de violation/profanation de sépultures est :',
     options: [
@@ -360,7 +360,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : TENTATIVE : NON pour l’infraction de 225-17 (violation/profanation).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Tentative',
     question: 'La tentative d’atteinte à l’intégrité du cadavre est :',
     options: ['Non punissable', 'Punissable', 'Toujours un crime'],
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours mentionne : TENTATIVE : NON pour l’atteinte à l’intégrité du cadavre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fondement',
     question:
         'L’infraction de dissimulation forcée du visage (imposée en raison du sexe) est prévue par :',
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : l’infraction est prévue et réprimée à l’article 225-4-10 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Moyens',
     question:
         'Quels moyens peuvent caractériser la dissimulation forcée du visage selon l’article 225-4-10 ?',
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste 5 moyens : menace, violence, contrainte, abus d’autorité, abus de pouvoir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Condition',
     question:
         'Pour que l’infraction de dissimulation forcée du visage soit constituée, la dissimulation doit être imposée :',
@@ -411,7 +411,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : la dissimulation doit être imposée sur le fondement du sexe de la victime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Élément moral',
     question:
         'L’élément moral de la dissimulation forcée du visage repose sur :',
@@ -426,7 +426,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours mentionne : conscience d’exercer une pression + volonté d’imposer à autrui de dissimuler son visage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Menace',
     question: 'Dans le cadre de 225-4-10, la menace se définit comme :',
     options: [
@@ -439,7 +439,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : menace = acte d’intimidation inspirant la crainte d’un mal (atteinte à l’intégrité morale).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Violence',
     question:
         'Selon le cours, la violence au sens de 225-4-10 peut être retenue :',
@@ -454,7 +454,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que la violence peut exister sans contact physique si elle impressionne fortement la victime (choc émotif).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Contrainte',
     question: 'Selon le cours, la contrainte doit être appréciée :',
     options: [
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : la contrainte s’apprécie concrètement selon la capacité de résistance de la victime (référence jurisprudentielle).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Abus d’autorité/pouvoir',
     question: 'L’abus d’autorité ou de pouvoir peut résulter :',
     options: [
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : autorité = légale (ex : parentale), employeur, ou autorité de fait (ascendant).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fait justificatif (contrainte)',
     question:
         'La victime contrainte à dissimuler son visage peut invoquer une exonération sur le fondement de :',
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours rappelle l’article 122-2 : pas responsable la personne ayant agi sous une force/contrainte irrésistible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Aggravation',
     question:
         'La dissimulation forcée du visage est aggravée lorsque les faits sont commis :',
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : art. 225-4-10 al.2 = aggravation lorsque la victime est mineure.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Peines (simple)',
     question:
         'Les peines encourues pour la dissimulation forcée du visage (simple) sont :',
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-4-10 al.1 = 1 an et 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Peines (aggravée)',
     question:
         'Les peines encourues pour la dissimulation forcée du visage aggravée (victime mineure) sont :',
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours précise : 225-4-10 al.2 = 2 ans et 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Tentative',
     question: 'La tentative de dissimulation forcée du visage est :',
     options: [
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Complicité',
     question: 'La complicité de dissimulation forcée du visage est :',
     options: [
@@ -558,7 +558,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Fondement',
     question:
         'La rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante est prévue par :',
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’article 225-13 du C.P. définit et réprime la rétribution inexistante/insuffisante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Nature des faits',
     question: 'L’article 225-13 vise principalement :',
     options: [
@@ -586,7 +586,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : il s’agit d’obtenir des services ; la remise de biens/sommes relève plutôt de l’abus frauduleux (223-15-2).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — “Services” au pluriel',
     question: 'Selon le cours, l’article 225-13 exige :',
     options: [
@@ -599,7 +599,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : la loi exige une fourniture de services au pluriel, et non une simple prestation isolée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Absence totale',
     question: 'L’absence totale de rémunération au sens de 225-13 s’entend :',
     options: [
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : absence totale = aucune contrepartie, y compris en nature (logement, nourriture, etc.).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Insuffisance',
     question: 'Pour entrer dans le champ de 225-13, il faut établir :',
     options: [
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : le non-respect du SMIC ou des heures supp. ne suffit pas ; il faut une disproportion manifeste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Victime',
     question:
         'Pour 225-13, la vulnérabilité ou la dépendance de la victime doit être :',
@@ -640,7 +640,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours insiste : la vulnérabilité/dépendance doit être apparente ou connue de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Rémunération inexistante/insuffisante — Vulnérabilité (exemples)',
     question: 'Selon le cours, une vulnérabilité peut être liée notamment :',
@@ -655,7 +655,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : grossesse, âge, maladie, handicap… mais aussi environnement économique/social/culturel (immigrés, chômeurs, sans-abri…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Dépendance',
     question: 'La dépendance au sens du cours peut être :',
     options: [
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : dépendance économique (précarité) ou morale (domination : maître/domestique, parents/enfants, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Élément moral',
     question: 'L’élément moral de 225-13 suppose notamment :',
     options: [
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours mentionne la double conscience : état de la victime + exploitation de cet état pour obtenir les services.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — 1er degré aggravation',
     question:
         'Parmi les propositions suivantes, laquelle correspond à un premier degré d’aggravation prévu par le cours ?',
@@ -696,7 +696,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : art. 225-15 I 1° = à l’égard de plusieurs personnes (1er degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Aggravation mineur',
     question: 'L’aggravation liée au mineur est prévue par :',
     options: [
@@ -709,7 +709,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : 225-15 II 1° = lorsqu’elle est commise à l’égard d’un mineur (1er degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — 2nd degré aggravation',
     question: 'Le second degré d’aggravation (225-15 III 1°) vise :',
     options: [
@@ -723,7 +723,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : 225-15 III 1° = plusieurs personnes dont un ou plusieurs mineurs (2nd degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Peines (simple)',
     question: 'Les peines encourues pour 225-13 (simple) sont :',
     options: [
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-13 al.1 = 5 ans et 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Rémunération inexistante/insuffisante — Peines (aggravée 1er degré)',
     question: 'Les peines encourues pour 225-13 aggravée (1er degré) sont :',
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : aggravation 1er degré = 7 ans et 200 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Rémunération inexistante/insuffisante — Peines (aggravée 2nd degré)',
     question: 'Les peines encourues pour 225-13 aggravée (2nd degré) sont :',
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 2nd degré (225-15 III 1°) = 10 ans et 300 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Tentative',
     question: 'La tentative de l’infraction 225-13 est :',
     options: [
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours précise : TENTATIVE : NON pour 225-13.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Personnes morales',
     question:
         'La responsabilité des personnes morales pour 225-13 est prévue par :',
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : responsabilité des personnes morales prévue expressément par 225-16 du C.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Fondement',
     question:
         'La soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine est prévue par :',
@@ -804,7 +804,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’article 225-14 du C.P. définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Notion de dignité',
     question:
         'La notion de dignité humaine, utilisée à l’article 225-14, est :',
@@ -818,7 +818,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que le Code pénal ne définit pas la dignité humaine : il appartient aux juges d’en fixer les contours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Travail',
     question: 'Contrairement à l’article 225-13, l’article 225-14 :',
     options: [
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : 225-14 suppose un travail, mais pas nécessairement une rémunération inexistante ou insuffisante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Exemples',
     question:
         'Peuvent caractériser des conditions de travail incompatibles avec la dignité humaine :',
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite notamment l’insalubrité, les cadences intolérables et les violences morales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Hébergement',
     question: 'Pour être retenu au titre de 225-14, l’hébergement doit :',
     options: [
@@ -858,7 +858,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : contrepartie + hébergement destiné à fournir un logement pour y vivre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Victime',
     question:
         'La vulnérabilité ou la dépendance exigée par l’article 225-14 doit être :',
@@ -872,7 +872,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Comme pour 225-13, le cours insiste sur le caractère apparent ou connu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Élément moral',
     question: 'L’élément moral de 225-14 suppose notamment :',
     options: [
@@ -885,7 +885,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours précise la double conscience exigée chez l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Peines (simple)',
     question: 'Les peines encourues pour 225-14 (simple) sont :',
     options: [
@@ -897,7 +897,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le tableau du cours indique : 225-14 = 7 ans et 200 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Aggravation mineur',
     question:
         'Lorsque les faits sont commis à l’égard d’un mineur, la qualification devient :',
@@ -911,7 +911,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : art. 225-15 I 2° et II 2° = aggravation liée au mineur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Crime',
     question:
         'La soumission à des conditions indignes devient un crime lorsque :',
@@ -927,7 +927,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Fondement',
     question: 'L’atteinte à l’intégrité du cadavre est prévue par :',
     options: [
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : 225-17 al.1 réprime l’atteinte à l’intégrité du cadavre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Objet',
     question: 'L’infraction d’atteinte à l’intégrité du cadavre protège :',
     options: [
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’infraction peut être réalisée indépendamment de l’inhumation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Exemples',
     question: 'Peuvent constituer une atteinte à l’intégrité du cadavre :',
     options: [
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste de nombreux exemples, hors actes légalement autorisés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Élément moral',
     question:
         'L’élément moral de l’atteinte à l’intégrité du cadavre repose sur :',
@@ -980,7 +980,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : le mobile importe peu, seule compte la conscience de l’atteinte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Peines',
     question:
         'Les peines encourues pour atteinte à l’intégrité du cadavre sont :',
@@ -994,7 +994,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation de sépulture — Fondement',
     question:
         'La violation ou la profanation de tombeaux, sépultures ou urnes cinéraires est prévue par :',
@@ -1008,7 +1008,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : 225-17 al.2 vise la violation ou la profanation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation — Actes',
     question: 'Constituent des actes de violation ou de profanation :',
     options: [
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : bris de pierre tombale, inscriptions, retrait de cercueil, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation — Aggravation',
     question: 'La violation ou profanation est aggravée lorsque :',
     options: [
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : art. 225-17 al.3 = circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Fondement',
     question:
         'L’infraction de traite des êtres humains est définie et réprimée par :',
@@ -1049,7 +1049,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Actes matériels',
     question:
         'Parmi les actes suivants, lequel peut constituer un acte matériel de traite ?',
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Mise à disposition',
     question: 'La traite des êtres humains est constituée même si :',
     options: [
@@ -1078,7 +1078,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Mineur',
     question:
         'Concernant un mineur, la traite des êtres humains est constituée :',
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Consentement',
     question: 'Le consentement de la victime en matière de traite :',
     options: [
@@ -1107,7 +1107,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Objectif criminel',
     question:
         'L’un des objectifs criminels expressément visés par la traite est :',
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Bande organisée',
     question: 'La traite commise en bande organisée entraîne :',
     options: [
@@ -1136,7 +1136,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Tentative',
     question: 'La tentative de traite des êtres humains est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -1145,7 +1145,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Exemption de peine',
     question: 'L’exemption de peine en matière de traite suppose que :',
     options: [
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Définition',
     question: 'Le proxénétisme consiste notamment à :',
     options: [
@@ -1173,7 +1173,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Aide',
     question: 'L’aide à la prostitution d’autrui suppose :',
     options: [
@@ -1186,7 +1186,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Profit',
     question: 'Partager les produits de la prostitution signifie :',
     options: [
@@ -1200,7 +1200,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Incitation',
     question: 'L’incitation à la prostitution est constituée même si :',
     options: [
@@ -1213,7 +1213,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Aggravation',
     question: 'Le proxénétisme est aggravé lorsqu’il est commis :',
     options: [
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Bande organisée',
     question: 'Le proxénétisme commis en bande organisée est puni de :',
     options: [
@@ -1239,7 +1239,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Fondement',
     question: 'La définition générale de la discrimination figure à :',
     options: [
@@ -1252,7 +1252,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Situations incriminées',
     question: 'Parmi les situations suivantes, laquelle est visée par 225-2 ?',
     options: [
@@ -1266,7 +1266,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Élément moral',
     question: 'L’élément moral du délit de discrimination suppose :',
     options: [
@@ -1280,7 +1280,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Test',
     question: 'Les tests de discrimination sont :',
     options: [
@@ -1292,7 +1292,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'L’article 225-3-1 et la jurisprudence admettent ces tests.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Critères',
     question:
         'Parmi les critères suivants, lequel est expressément visé par l’article 225-1 du Code pénal ?',
@@ -1306,7 +1306,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'L’article 225-1 énumère limitativement les critères prohibés, dont l’orientation sexuelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Liste des critères',
     question:
         'La liste des critères de discrimination prévue à l’article 225-1 est :',
@@ -1316,7 +1316,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Seuls les critères expressément mentionnés par la loi peuvent être retenus.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Distinction licite',
     question:
         'Une différence de traitement n’est pas constitutive de discrimination lorsqu’elle :',
@@ -1330,7 +1330,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'L’article 225-3 prévoit des cas de justification objective.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Refus de bien ou service',
     question:
         'Refuser l’accès à un bien ou à un service pour un motif discriminatoire constitue :',
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le refus discriminatoire est expressément incriminé par l’article 225-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Personne morale',
     question:
         'Les personnes morales peuvent être pénalement responsables du délit de discrimination :',
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'La responsabilité pénale des personnes morales est prévue par l’article 225-4.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Tentative',
     question: 'La tentative de discrimination est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -1358,7 +1358,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'L’article 225-3-1 prévoit expressément la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Test situationnel',
     question: 'Le test de discrimination permet principalement de :',
     options: [
@@ -1372,7 +1372,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Fondement',
     question: 'L’infraction de harcèlement sexuel est prévue par :',
     options: [
@@ -1385,7 +1385,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le harcèlement sexuel est spécifiquement réprimé par l’article 222-33-2-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Formes',
     question: 'Le harcèlement sexuel peut résulter :',
     options: [
@@ -1397,7 +1397,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le texte vise aussi bien les propos que les comportements.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Répétition',
     question: 'Le harcèlement sexuel est constitué en cas de faits :',
     options: [
@@ -1410,7 +1410,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Un acte unique peut suffire lorsqu’il est assimilable à un chantage sexuel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Chantage',
     question:
         'Le fait d’imposer un acte unique en échange d’un avantage constitue :',
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le texte prévoit expressément cette hypothèse.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Élément moral',
     question: 'L’élément moral du harcèlement sexuel suppose :',
     options: [
@@ -1436,7 +1436,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le mobile importe peu : seule la conscience des faits est exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'L’abus d’autorité constitue une circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Peines',
     question: 'Les peines encourues pour harcèlement sexuel simple sont :',
     options: [
@@ -1462,7 +1462,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : peine de droit commun prévue par l’article 222-33-2-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Tentative',
     question: 'La tentative de harcèlement sexuel est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -1471,7 +1471,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Peines',
     question: 'La peine encourue pour discrimination simple est :',
     options: [
@@ -1485,7 +1485,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation — Peines aggravées',
     question: 'Les peines encourues en cas de profanation aggravée sont :',
     options: [
@@ -1499,7 +1499,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Complicité',
     question: 'La complicité de 225-13 est :',
     options: [
@@ -1513,7 +1513,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Complicité',
     question:
         'La complicité de violation/profanation (tombeaux/sépultures/urnes/monuments) est :',
@@ -1528,7 +1528,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Définition',
     question: 'La dissimulation forcée du visage constitue :',
     options: [
@@ -1541,7 +1541,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le texte qualifie la dissimulation imposée comme une forme de violence exercée contre la victime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Victime',
     question: 'Cette infraction peut viser :',
     options: [
@@ -1554,7 +1554,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'L’article 225-4-10 vise l’imposition à une ou plusieurs personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Sexe',
     question: 'La dissimulation doit être imposée :',
     options: [
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // DISSIMULATION FORCÉE DU VISAGE — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Moyens',
     question:
         'Lequel des moyens suivants n’est PAS prévu par l’article 225-4-10 CP ?',
@@ -1581,7 +1581,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Les moyens énumérés sont : menace, violence, contrainte, abus d’autorité ou de pouvoir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Menace',
     question: 'La menace se caractérise juridiquement par :',
     options: [
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'La menace constitue une atteinte à l’intégrité morale (Cass. crim., 11 juin 1937).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Violence',
     question: 'La violence peut être caractérisée :',
     options: [
@@ -1607,7 +1607,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'La jurisprudence admet la violence sans contact physique si elle provoque un choc émotif.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Contrainte',
     question: 'La contrainte s’apprécie principalement :',
     options: [
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // DISSIMULATION FORCÉE DU VISAGE — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fait justificatif',
     question:
         'La victime contrainte de dissimuler son visage peut être exonérée pénalement sur le fondement :',
@@ -1638,7 +1638,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'La contrainte irrésistible constitue un fait justificatif (art. 122-2 CP).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Aggravation',
     question:
         'La circonstance aggravante est constituée lorsque les faits sont commis :',
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // RÉTRIBUTION INSUFFISANTE — FACILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Fondement',
     question: 'La rétribution inexistante ou insuffisante est prévue par :',
     options: [
@@ -1664,7 +1664,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'L’article 225-13 définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Objet',
     question: 'Cette infraction vise :',
     options: [
@@ -1681,7 +1681,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // RÉTRIBUTION INSUFFISANTE — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Rémunération',
     question: 'L’absence totale de rémunération suppose :',
     options: [
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Aucune contrepartie ne doit exister, y compris logement ou nourriture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Vulnérabilité',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'La vulnérabilité ou dépendance doit être apparente ou connue de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions de travail/hébergement indignes — Fondement',
     question:
         'La soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine est prévue par :',
@@ -1721,7 +1721,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'L’article 225-14 du C.P. définit et réprime la soumission à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Victime',
     question: 'Pour l’article 225-14 CP, la victime doit être :',
     options: [
@@ -1734,7 +1734,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'L’infraction vise une personne dont la vulnérabilité ou l’état de dépendance est apparent ou connu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Champs',
     question: 'L’article 225-14 CP vise :',
     options: [
@@ -1747,7 +1747,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le texte vise la soumission à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Tentative',
     question:
         'La tentative de l’infraction prévue par l’article 225-14 CP est :',
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours indique : TENTATIVE : NON.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Complicité',
     question:
         'La complicité de l’infraction prévue à l’article 225-14 CP est :',
@@ -1774,7 +1774,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // 225-14 — CONDITIONS INDIGNES — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Dignité humaine',
     question:
         'Selon le cours, la notion de dignité humaine en droit français est affirmée comme principe à valeur constitutionnelle par :',
@@ -1788,7 +1788,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : Cons. const., 27 juillet 1994 : principe à valeur constitutionnelle de sauvegarde de la dignité humaine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Dignité humaine',
     question: 'Est incompatible avec la dignité humaine ce qui :',
     options: [
@@ -1802,7 +1802,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que l’incompatibilité avec la dignité humaine correspond à ce qui abaisse/avilit l’être humain.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail',
     question: 'Contrairement à l’article 225-13 CP, l’article 225-14 CP :',
     options: [
@@ -1815,7 +1815,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         '225-14 vise les conditions indignes, indépendamment de la rémunération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail',
     question:
         'Parmi les éléments suivants, lequel peut caractériser des conditions de travail incompatibles avec la dignité humaine ?',
@@ -1829,7 +1829,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : insalubrité, manque d’aération, cadences intolérables, durée excessive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail',
     question:
         'Les relations de travail (insultes, brimades, comportements vexatoires) peuvent être retenues au titre :',
@@ -1843,7 +1843,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que l’atteinte peut résulter d’insultes/brimades assimilables à des violences morales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Hébergement',
     question:
         'Pour être qualifié d’« hébergement » au sens de l’article 225-14 CP, il faut notamment :',
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours exige : contrepartie (loyer/avantage) et hébergement sur un certain temps (logement pour y vivre).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Hébergement',
     question:
         'La contrepartie de l’hébergement au sens de l’article 225-14 CP peut être :',
@@ -1872,7 +1872,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que la contrepartie peut être un loyer ou des avantages en nature.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Vulnérabilité',
     question:
         'La vulnérabilité/dépendance au sens de l’article 225-14 CP doit être :',
@@ -1886,7 +1886,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Condition centrale : vulnérabilité/dépendance apparente ou connue de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Vulnérabilité',
     question: 'La vulnérabilité peut résulter :',
     options: [
@@ -1900,7 +1900,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours vise : grossesse, âge, maladie, handicap mais aussi immigrés, chômeurs, sans-abri, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Dépendance',
     question: 'La dépendance au sens du cours peut être :',
     options: [
@@ -1917,7 +1917,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // 225-14 — CONDITIONS INDIGNES — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Élément moral',
     question: 'L’élément moral de l’article 225-14 CP suppose notamment :',
     options: [
@@ -1931,7 +1931,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours exige : connaissance de la vulnérabilité/dépendance et connaissance de l’incompatibilité avec la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail forcé',
     question:
         'Le cours indique que le travail forcé est en soi incompatible avec la dignité humaine et renvoie notamment à :',
@@ -1945,7 +1945,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite la Convention OIT du 28 juin 1930 : travail exigé sous menace d’une peine et non offert de plein gré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail forcé',
     question: 'Dans le cours, la notion de travail forcé implique :',
     options: [
@@ -1959,7 +1959,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'C’est la définition reprise du texte OIT mentionnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Hébergement',
     question:
         'Le cours précise que des conditions d’hébergement indignes peuvent être caractérisées notamment par :',
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste ces exemples comme causes possibles d’hébergement contraire à la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Cumul',
     question:
         'Selon la note du cours, les délits de l’article 225-14 CP peuvent :',
@@ -1989,7 +1989,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que les deux délits peuvent être caractérisés simultanément et retenus avec d’autres infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Répression',
     question: 'La qualification « simple » de l’article 225-14 CP est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -1998,7 +1998,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'L’article 225-14 CP constitue un délit en qualification simple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Peines (simple)',
     question:
         'Les peines principales encourues pour la qualification simple (225-14) sont :',
@@ -2016,7 +2016,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // 225-15 — CIRCONSTANCES AGGRAVANTES (1er degré) — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (1er degré)',
     question:
         'Pour l’article 225-14 CP, le premier degré d’aggravation vise notamment :',
@@ -2030,7 +2030,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : 225-15 I 2° (plusieurs personnes) et 225-15 II 2° (mineur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (1er degré)',
     question:
         'Le premier degré d’aggravation de l’article 225-14 CP est prévu par :',
@@ -2048,7 +2048,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // 225-15 — AGGRAVATION (2nd degré) — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (2nd degré)',
     question:
         'Le second degré d’aggravation (crime) pour 225-14 CP est prévu par :',
@@ -2061,7 +2061,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours mentionne : second degré = 225-15 III 2°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (2nd degré)',
     question: 'Le second degré d’aggravation suppose notamment :',
     options: [
@@ -2074,7 +2074,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : 225-15 III 2° : plusieurs personnes dont au moins un mineur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Peines (1er degré)',
     question:
         'Les peines principales prévues en 1er degré d’aggravation (225-15 I/II) pour 225-14 sont :',
@@ -2088,7 +2088,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau de répression indique 10 ans et 300 000 € pour le 1er degré d’aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Peines (2nd degré)',
     question:
         'Les peines principales prévues en 2nd degré d’aggravation (crime) pour 225-14 sont :',
@@ -2106,7 +2106,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // 225-16 — PERSONNES MORALES — MOYENNE / DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Personnes morales',
     question:
         'La responsabilité des personnes morales pour les infractions 225-14 / 225-15 est prévue :',
@@ -2120,7 +2120,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : responsabilité des personnes morales prévue expressément par l’article 225-16.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Personnes morales',
     question:
         'Parmi les peines complémentaires possibles pour les personnes morales (cours), on trouve notamment :',
@@ -2134,7 +2134,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours renvoie aux peines de l’article 131-39 : dissolution, interdiction d’exercer, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Fondement',
     question: 'La traite des êtres humains est définie et réprimée par :',
     options: [
@@ -2147,7 +2147,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que l’article 225-4-1 du C.P. définit et réprime la traite des êtres humains.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Actes matériels',
     question: 'La traite des êtres humains suppose notamment un acte tel que :',
     options: [
@@ -2160,7 +2160,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le texte vise le recrutement, le transport, le transfert, l’hébergement ou l’accueil à des fins d’exploitation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation',
     question: 'L’exploitation au sens de la traite consiste notamment à :',
     options: [
@@ -2174,7 +2174,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours définit l’exploitation comme la mise à disposition de la victime pour permettre certaines infractions listées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Mineur',
     question:
         'La traite des êtres humains à l’égard d’un mineur est constituée :',
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique : pour un mineur, la traite est constituée même si aucune circonstance 1° à 4° n’est caractérisée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Tentative',
     question: 'La tentative de la traite des êtres humains est :',
     options: ['Punissable', 'Non punissable', 'Une simple contravention'],
@@ -2197,7 +2197,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : TENTATIVE : OUI, prévue expressément à l’article 225-4-7 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Tentative',
     question: 'La tentative de traite des êtres humains est prévue par :',
     options: [
@@ -2210,7 +2210,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que la tentative est prévue expressément par l’article 225-4-7 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Complicité',
     question: 'La complicité en matière de traite des êtres humains est :',
     options: [
@@ -2227,7 +2227,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // TRAITE — MOYENNE (circonstances 1° à 4°, notions clés)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstances',
     question:
         'Pour un majeur, la traite est constituée si l’acte est commis dans :',
@@ -2241,7 +2241,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : à l’égard d’un majeur, la traite suppose au moins une des circonstances 1° à 4°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 1°',
     question: 'La circonstance 1° de l’article 225-4-1 I vise notamment :',
     options: [
@@ -2254,7 +2254,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste : menace/contrainte/violence/manœuvre dolosive visant la victime, sa famille ou une personne en relation habituelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Manœuvre dolosive',
     question: 'Dans le cours, la manœuvre dolosive correspond à :',
     options: [
@@ -2268,7 +2268,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours définit la manœuvre dolosive comme des agissements trompeurs (ruse) conduisant la victime à être abusée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 2°',
     question: 'La circonstance 2° de l’article 225-4-1 I vise :',
     options: [
@@ -2282,7 +2282,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours vise l’ascendant (légitime/naturel/adoptif) ou une personne ayant autorité ou abusant de l’autorité que lui confèrent ses fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Autorité',
     question: 'Selon le cours, l’autorité visée peut être :',
     options: [
@@ -2296,7 +2296,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : autorité de droit (tuteur), de fait (concubin), ou conférée par les fonctions (professeur, médecin).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 3°',
     question: 'La circonstance 3° de l’article 225-4-1 I correspond à :',
     options: [
@@ -2310,7 +2310,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise que la vulnérabilité doit être due à des causes limitatives (âge, maladie, infirmité, déficience physique/psychique, grossesse) et être apparente ou connue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 4°',
     question: 'La circonstance 4° de l’article 225-4-1 I vise :',
     options: [
@@ -2324,7 +2324,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que la traite peut être constituée en échange d’une rémunération/avantage (ou promesse) convenu initialement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Rémunération',
     question:
         'Selon le cours, si l’opération est réalisée à titre gratuit (sans échange) :',
@@ -2338,7 +2338,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : l’échange est nécessaire ; à titre gratuit, la circonstance 4° n’est pas remplie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Mise à disposition',
     question:
         'Concernant la « mise à disposition », le cours précise qu’elle peut être :',
@@ -2352,7 +2352,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que la mise à disposition peut être pour l’auteur (ajout de « à sa disposition ») ou pour un tiers non identifié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Objectif criminel',
     question:
         'Selon le cours, la traite n’est constituée que si l’objectif vise :',
@@ -2370,7 +2370,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // TRAITE — DIFFICILE (liste exploitation, aggravations, peines, exemption/réduction)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation (liste)',
     question:
         'Parmi les éléments suivants, lequel fait partie de la liste d’exploitation visée par le cours ?',
@@ -2380,7 +2380,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite expressément l’exploitation de la mendicité parmi les objectifs criminels listés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation (liste)',
     question:
         'La traite peut viser la mise à disposition de la victime afin de permettre :',
@@ -2394,7 +2394,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours inclut le prélèvement d’organe dans la liste limitative des exploitations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation (liste)',
     question: 'Selon le cours, la liste d’exploitation inclut notamment :',
     options: [
@@ -2408,7 +2408,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste ces objectifs criminels parmi ceux visés par la traite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation',
     question:
         'Pour que la traite des êtres humains soit constituée, il est nécessaire que les infractions visées soient effectivement commises :',
@@ -2418,7 +2418,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise qu’il n’est pas nécessaire que les infractions visées soient commises : la mise à disposition à cette fin suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Contraindre à commettre',
     question:
         'Lorsque la traite vise le fait de contraindre la victime à commettre un crime ou un délit, le texte ne vise pas :',
@@ -2428,7 +2428,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours indique que « tout crime ou délit » n’a pas vocation à s’appliquer aux contraventions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Élément moral',
     question: 'L’élément moral exige notamment :',
     options: [
@@ -2442,7 +2442,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours insiste : infraction intentionnelle = l’auteur sait à quoi la victime est destinée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Consentement',
     question:
         'Selon le cours, l’incrimination de traite repose sur la notion de consentement de la victime :',
@@ -2460,7 +2460,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // AGGRAVATIONS — 225-4-2 / 225-4-3 / 225-4-4 — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation délictuelle',
     question:
         'La traite des êtres humains aggravée délictuelle (mineur sans autre circonstance) est prévue par :',
@@ -2474,7 +2474,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours mentionne : traite aggravée délictuelle (mineur même sans circonstances 1° à 4°) = 225-4-1 II.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question:
         'La traite aggravée délictuelle peut être caractérisée lorsqu’elle est commise :',
@@ -2488,7 +2488,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours vise : 225-4-2 I lorsque la traite est commise dans deux des circonstances 1° à 4°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question: 'La traite aggravée criminelle est notamment prévue par :',
     options: [
@@ -2505,7 +2505,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // AGGRAVATIONS — DIFFICILE (BO, tortures, liste 225-4-2 I)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question:
         'La traite des êtres humains commise en bande organisée est prévue par :',
@@ -2518,7 +2518,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours cite : 225-4-3 = traite commise en bande organisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question:
         'La traite des êtres humains commise en recourant à des tortures ou actes de barbarie est prévue par :',
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours précise : 225-4-4 = traite commise en recourant à des tortures ou actes de barbarie.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Parmi les circonstances supplémentaires de l’article 225-4-2 I, on trouve notamment :',
@@ -2546,7 +2546,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours mentionne l’utilisation d’un réseau de communication électronique pour diffuser des messages à un public non déterminé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Selon le cours, une circonstance aggravante peut être retenue lorsque les faits exposent directement la victime :',
@@ -2560,7 +2560,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours cite explicitement cette circonstance aggravante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Selon le cours, la traite peut être aggravée lorsqu’elle est commise :',
@@ -2575,7 +2575,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours liste cette circonstance aggravante liée aux fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Le cours mentionne une aggravation lorsque les violences ont causé :',
@@ -2589,7 +2589,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours cite : violences ayant causé une ITT de plus de 8 jours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question: 'Selon le cours, la traite peut être aggravée lorsque :',
     options: [
@@ -2606,7 +2606,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // RÉPRESSION — PEINES — MOYENNE / DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (simple)',
     question: 'La traite des êtres humains « simple » (225-4-1) est punie de :',
     options: [
@@ -2619,7 +2619,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-4-1 (simple) = 7 ans et 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (aggravée délictuelle)',
     question: 'La traite aggravée délictuelle (mineur) est punie de :',
     options: [
@@ -2632,7 +2632,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-4-1 II = 10 ans et 1 500 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (aggravée criminelle)',
     question: 'La traite aggravée criminelle (225-4-2 II) est punie de :',
     options: [
@@ -2645,7 +2645,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-4-2 II = 15 ans de réclusion et 1 500 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (bande organisée)',
     question: 'La traite commise en bande organisée (225-4-3) est punie de :',
     options: [
@@ -2658,7 +2658,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le tableau du cours indique : 225-4-3 = 20 ans et 3 000 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (tortures / barbarie)',
     question:
         'La traite commise en recourant à des tortures ou actes de barbarie (225-4-4) est punie de :',
@@ -2676,7 +2676,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // 225-4-5 — PEINES PLUS ÉLEVÉES SI CRIME/DELIT SOUS-JACENT + GRAVE — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Règle spéciale de peine',
     question:
         'Selon l’article 225-4-5, si le crime/délit commis (ou devant être commis) contre la victime est puni d’une peine supérieure :',
@@ -2695,7 +2695,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // PERSONNES MORALES — 225-4-6 — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Personnes morales',
     question:
         'La responsabilité des personnes morales en matière de traite est prévue par :',
@@ -2713,7 +2713,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
   // =========================================================
   // EXEMPTION / RÉDUCTION DE PEINE — 225-4-9 — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Exemption de peine',
     question: 'L’exemption de peine en matière de traite est prévue par :',
     options: [
@@ -2725,7 +2725,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours indique : exemption de peine = 225-4-9 al.1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Exemption de peine',
     question: 'Pour bénéficier de l’exemption de peine, il faut notamment :',
     options: [
@@ -2739,7 +2739,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours résume : exemption au stade de la tentative + avertissement de l’autorité + éviter la réalisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Réduction de peine',
     question: 'La réduction de peine en matière de traite est prévue par :',
     options: [
@@ -2751,7 +2751,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours indique : réduction de peine = 225-4-9 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Réduction de peine',
     question:
         'Selon le cours, la réduction de peine est accordée si l’auteur/complice :',
@@ -2766,7 +2766,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours décrit les conditions : faire cesser / éviter mort ou infirmité permanente / identifier autres auteurs ou complices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Réduction de peine',
     question:
         'Quand la peine encourue est la réclusion criminelle à perpétuité, la réduction prévue par 225-4-9 al.2 la ramène à :',
@@ -2779,7 +2779,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
     explanation: 'Le cours précise : si perpétuité, elle est ramenée à 20 ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Personnes morales',
     question: 'Le cours précise une peine spécifique possible :',
     options: [
@@ -2793,7 +2793,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le cours mentionne la confiscation du fonds de commerce destiné à l’hébergement et ayant servi à commettre l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Qualification',
     question:
         'Le non-respect du SMIC suffit-il à caractériser l’article 225-13 CP ?',
@@ -2803,7 +2803,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
         'Le non-respect du SMIC ne suffit pas : il faut une disproportion manifeste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Tentative',
     question: 'La tentative de l’infraction prévue à l’article 225-13 CP est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -2817,7 +2817,7 @@ final List<QuizQuestion> questionDignitePersonnePart1 = [
 // PAGE
 // ============================================================================
 class QuizDiginitePersonne extends StatefulWidget {
-  static const String routeName = '/gpx/crimes_personne/quiz/dignite_personne';
+  static const String routeName = '/gpx/dps/crimes_personne/quiz/dignite_personne';
   final String uid;
   final String email;
 
@@ -3166,7 +3166,7 @@ class _QuizDiginitePersonneState extends State<QuizDiginitePersonne>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3369,7 +3369,7 @@ class _QuizDiginitePersonneState extends State<QuizDiginitePersonne>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3552,7 +3552,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4085,10 +4084,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4459,7 +4459,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4500,9 +4500,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

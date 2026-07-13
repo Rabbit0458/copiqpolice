@@ -111,16 +111,16 @@ class DetentionTransportSansMotifLegitimePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-11-1 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la détention ou le transport, sans motif légitime, de substances ou produits incendiaires ou explosifs susceptibles de permettre des destructions, dégradations ou détériorations dangereuses pour les personnes.",
                 ),
@@ -136,40 +136,40 @@ class DetentionTransportSansMotifLegitimePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) La possession de substances/produits, sans motif légitime",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur est trouvé en possession de substances ou produits soit incendiaires, soit explosifs. "
                 "Cette possession peut prendre deux formes : la détention ou le transport.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Détention : avoir à sa disposition ces substances/produits, sans être nécessairement possesseur ou propriétaire (domicile, parties communes, chez autrui…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transport : déplacer ces substances/produits ; être trouvé porteur sur la voie publique peut caractériser à la fois détention et transport.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) L’absence de motif légitime"),
-              const _Paragraph(
+              _SubTitle("B) L’absence de motif légitime"),
+              _Paragraph(
                 "La notion de « motif légitime » s’apprécie au cas par cas. "
                 "Elle permet de poursuivre une personne qui, notamment dans un contexte de violences urbaines "
                 "ou de manifestations violentes, transporte sans raison un bidon d’essence.\n"
                 "À l’inverse, une personne qui en transporte de bonne foi pour remplir une tondeuse à gazon ne saurait être inquiétée.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Nature des substances : 2 régimes"),
+              _SubTitle("C) Nature des substances : 2 régimes"),
               _NotaBox(
                 title: "À retenir",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Une distinction existe selon la nature des substances détenues ou transportées :\n"
@@ -179,71 +179,71 @@ class DetentionTransportSansMotifLegitimePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) 1° — Substances ou produits explosifs non soumis à un régime particulier",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Sont visées des substances ou produits explosifs de fabrication artisanale. "
                       "Bien qu’ils ne soient pas des explosifs conventionnels, leur dangerosité est extrême : "
                       "la détention ou le transport ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "sans motif légitime",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " suffit à constituer l’infraction.\nExemple : transport d’un mélange explosif contenant du nitrate d’ammonium (engrais) avec de l’essence.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "E) 2° — Produits incendiaires + éléments de composition malgré un arrêté préfectoral",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Ici, il s’agit de substances plus « banales » qui ne sont pas interdites en temps normal. "
                 "Pour caractériser l’infraction, deux conditions doivent être réunies :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Absence de motif légitime (condition nécessaire mais insuffisante à elle seule).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Violation d’un arrêté préfectoral interdisant la détention/le transport (urgence ou risque de trouble à l’ordre public).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’arrêté préfectoral est une mesure temporaire liée aux circonstances de temps et de lieu "
                 "(ex. interdiction de transporter des bidons d’essence dans un contexte de violences urbaines).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "F) Absence d’utilisation des produits (avant le passage à l’acte)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si ces substances étaient utilisées, elles pourraient entraîner des destructions dangereuses "
                       "au sens de ",
                 ),
                 TextSpan(
                   text: "l’article 322-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". L’incrimination ici réprime la détention/le transport avant toute utilisation. "
                       "Si l’auteur utilise ou tente d’utiliser ces substances, il sera poursuivi sur le fondement de 322-6, et non de 322-11-1.",
@@ -260,17 +260,17 @@ class DetentionTransportSansMotifLegitimePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1° — Produits explosifs (article 322-11-1, 1°)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1° — Produits explosifs (article 322-11-1, 1°)"),
+              _Paragraph(
                 "Il faut la conscience de détenir ou de transporter des substances ou produits explosifs "
                 "sans motif légitime.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "2° — Produits incendiaires (article 322-11-1, 2°)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il faut ne disposer d’aucun motif légitime et ne pas respecter l’arrêté préfectoral "
                 "interdisant la détention/le transport.",
               ),
@@ -300,53 +300,53 @@ class DetentionTransportSansMotifLegitimePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
+              _Paragraph(
                 "Délit : 3 ans d’emprisonnement et 45 000 € d’amende.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Fondements : "),
+                TextSpan(text: "Fondements : "),
                 TextSpan(
                   text: "article 322-11-1, 1° et 2° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI (droit commun). "),
+                TextSpan(text: "Complicité : OUI (droit commun). "),
                 TextSpan(
                   text: "Article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : suppose un fait de complicité (aide/assistance, provocation ou instructions) et l’intention de s’associer à l’action de l’auteur principal.",
                 ),
@@ -387,10 +387,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -455,7 +455,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -498,7 +498,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -560,7 +560,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -592,7 +592,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -605,7 +605,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

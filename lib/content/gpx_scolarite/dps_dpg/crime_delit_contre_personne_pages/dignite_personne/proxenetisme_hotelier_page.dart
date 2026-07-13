@@ -124,13 +124,13 @@ class ProxenetismeHotelierPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-10 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le proxénétisme hôtelier.",
                 ),
               ]),
@@ -145,170 +145,170 @@ class ProxenetismeHotelierPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le texte sanctionne des comportements qui concourent à faciliter l’exercice de la prostitution par la fourniture de locaux "
                 "et distingue quatre infractions autonomes.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) 1° — Tenue d’un établissement de prostitution",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Objectif : empêcher la reconstitution de maisons de prostitution (fermeture historique par la loi « Marthe Richard » du 13 avril 1946). "
                 "L’infraction vise la participation à l’exploitation d’un établissement de prostitution.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("1) Une participation à l’exploitation"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("1) Une participation à l’exploitation"),
+              _Paragraph(
                 "L’exploitation est entendue très largement : détenir, gérer, exploiter, diriger, faire fonctionner, financer ou contribuer à financer, "
                 "directement ou par personne interposée.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Jurisprudence : définition large de l’exploitation ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 14 mai 1968)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La participation peut être un acte personnel de gestion (propriétaire, locataire, détenteur…), "
                 "ou l’exercice d’un pouvoir d’autorité/contrôle (diriger, faire fonctionner). Elle peut aussi résulter d’un financement "
                 "(apport de fonds, porteurs de parts/actions — parfois via prête-nom).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("2) Une reconstitution clandestine à établir"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("2) Une reconstitution clandestine à établir"),
+              _Paragraph(
                 "Pour que l’infraction soit constituée, il faut établir que les comportements visés ont tendu à la reconstitution d’un établissement clandestin.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un établissement de prostitution peut être un local directement destiné à la prostitution, même si cette destination n’est pas exclusive ou permanente, "
                         "accueillant prostituées et clients venus de l’extérieur ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 01 février 1956)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La présence d’une seule prostituée pendant plusieurs jours peut suffire. En revanche, l’infraction n’est pas constituée lorsque seule la tenancière se prostitue ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 17 janvier 1963)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) 2° — Tolérance habituelle de la prostitution",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Cette incrimination vise les mêmes exploitants que le 1°. Trois conditions doivent être réunies.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 "1) Un établissement ouvert au public ou utilisé par le public",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il s’agit de tout lieu que le public peut fréquenter à raison de sa destination (hôtel, restaurant, dancing, lieux de spectacles…), "
                 "ainsi que leurs annexes. L’exploitation doit relever du droit privé (particuliers).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("2) Un caractère habituel"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("2) Un caractère habituel"),
+              _Paragraph(
                 "L’habitude est un élément essentiel : plusieurs faits de prostitution doivent avoir été réalisés dans l’établissement "
                 "(par une ou plusieurs personnes). Il n’est pas nécessaire que la prostitution soit l’activité habituelle de la personne (peut être occasionnelle).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délit n’est pas constitué si les faits se limitent à une seule journée ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(C.A. Grenoble, 15 mai 1996)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("3) Acceptation ou tolérance"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("3) Acceptation ou tolérance"),
+              _Paragraph(
                 "L’exploitant doit avoir accepté (consenti) ou toléré (ne pas empêcher) la pratique de la prostitution dans les lieux qu’il gère, "
                 "ainsi que les annexes. Il doit avoir eu connaissance des faits : la simple présence de prostituées ne suffit pas.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) 3° — Vente ou mise à disposition de locaux/ emplacements privés",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Le texte vise expressément "),
-                const TextSpan(
+                TextSpan(text: "Le texte vise expressément "),
+                TextSpan(
                   text:
                       "« des locaux ou emplacements non utilisés par le public »",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : propriétés privées (maisons, appartements, studios…), ou locaux non accessibles au public.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Vente"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Vente"),
+              _Paragraph(
                 "Le propriétaire vend son bien en ayant connaissance, au moment de la transaction, de la nature de l’activité qui y sera exercée.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Mise à disposition"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Mise à disposition"),
+              _Paragraph(
                 "Peut être le propriétaire, locataire, sous-locataire, occupant sans titre… Il suffit qu’il puisse utiliser les lieux assez longtemps pour les mettre à disposition. "
                 "Le caractère habituel n’est pas requis : la mise à disposition peut être occasionnelle, le délit est constitué.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) 4° — Vente, location ou mise à disposition de véhicules",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Concerne exclusivement la vente, la location ou la mise à disposition de véhicules en vue de l’exercice de la prostitution "
                 "(voiture, camping-car, fourgon, etc.). L’auteur doit savoir que le véhicule servira à la prostitution.",
               ),
@@ -351,107 +351,107 @@ class ProxenetismeHotelierPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 750 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-10 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Une période de sûreté est applicable pour les infractions prévues aux 1° et 2°.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(
                   text: "l’article 225-12 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " ; amende selon "),
-                const TextSpan(
+                TextSpan(text: " ; amende selon "),
+                TextSpan(
                   text: "l’article 131-38 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " + peines prévues par "),
-                const TextSpan(
+                TextSpan(text: " + peines prévues par "),
+                TextSpan(
                   text: "l’article 131-39 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: ", ainsi que "),
-                const TextSpan(
+                TextSpan(text: ", ainsi que "),
+                TextSpan(
                   text: "les articles 225-24 et 225-25 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (confiscations, dissolution, interdictions professionnelles, etc.).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Tentative : OUI — "),
+                TextSpan(
                   text: "article 225-11 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI — "),
+                TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle("Exemption & réduction de peine"),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Exemption de peine : OUI — "),
+                TextSpan(
                   text: "article 225-11-1 alinéa 1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (avertir l’autorité administrative ou judiciaire et permettre d’éviter la réalisation de l’infraction).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Réduction de peine : OUI — "),
+                TextSpan(
                   text: "article 225-11-1 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (peine réduite des deux tiers si l’auteur/complice avertit l’autorité et permet de faire cesser l’infraction, d’éviter un préjudice irréversible, "
                       "ou d’identifier les autres auteurs/complices).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "À retenir",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La loi distingue :\n"
@@ -496,10 +496,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -564,7 +564,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -607,7 +607,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -669,7 +669,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -701,7 +701,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -714,7 +714,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

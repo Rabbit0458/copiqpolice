@@ -150,13 +150,13 @@ class PlanLieuxTechniquePage extends StatelessWidget {
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Si une des parties se présente et demande à voir le croquis, il convient de ne pas le lui montrer.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Seul son conseil (assureur ou avocat) peut obtenir communication du dossier en faisant une demande à un magistrat.",
@@ -192,53 +192,53 @@ class PlanLieuxTechniquePage extends StatelessWidget {
             cardColor: cardTech,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Choix des points fixes"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Choix des points fixes"),
+              _Paragraph(
                 "Les points fixes doivent être quasi définitifs et matérialisés sur le plan "
                 "(ex : angle de mur, borne, pylône, plaque d’égout, numéro d’habitation, point kilométrique (PK), signalisation verticale…).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Règle des cotes"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Règle des cotes"),
+              _Paragraph(
                 "Toute distance relevée est représentée par une cote : un trait plein avec une pointe de flèche à chaque extrémité. "
                 "La valeur chiffrée est écrite horizontalement pour éviter de manipuler le plan.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La mesure peut être inscrite sur le trait de cote ou en intervalle.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Prise de mesures : exigences incontournables"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Prise de mesures : exigences incontournables"),
+              _BulletPoint(
                 text:
                     "Relever 3 cotes obligatoires : elles ne se croisent jamais et ne croisent jamais l’élément à coter (ni un autre élément).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur chaque élément à coter, retenir 2 points pour la prise de mesures (exemples ci-dessous).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Points de référence à retenir"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Points de référence à retenir"),
+              _BulletPoint(
                 text:
                     "Véhicule : avant / arrière, ou axe des roues, côté droit ou gauche (toujours le même côté sur la longueur).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Victime : sommet de la tête + talon ou pointe du pied.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Deux-roues : axe de la roue avant + axe de la roue arrière.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Pour un élément circulaire/cylindrique (plaque d’égout, poteau…), la cote part du centre : éviter une mesure sur tangente.",
@@ -527,10 +527,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -595,7 +595,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -638,7 +638,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -700,7 +700,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -711,10 +711,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -726,13 +725,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -745,13 +743,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -395,9 +395,9 @@ class HorairesServiceSpPage extends StatelessWidget {
                 "par journées, sous réserve des nécessités de service.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les RCSS placés sur le compte peuvent faire l’objet d’une indemnisation.",
                   ),

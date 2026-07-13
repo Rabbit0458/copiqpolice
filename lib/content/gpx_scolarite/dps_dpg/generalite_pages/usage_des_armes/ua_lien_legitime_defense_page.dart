@@ -19,7 +19,7 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF1976D2)
         : const Color(0xFF1565C0);
@@ -117,16 +117,16 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'L’article L. 435-1 du Code de la Sécurité Intérieure fixe un régime spécial pour l’usage des armes '
                 'par les agents de la Police nationale et de la Gendarmerie nationale. '
                 'Ce texte ne s’applique pas à tout le monde, mais uniquement aux forces de sécurité intérieure régulièrement armées.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph('Ce régime repose sur deux étages :'),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Trois conditions préalables obligatoires : agir dans l’exercice de ses fonctions, '
@@ -134,7 +134,7 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                       'et ne faire usage de l’arme qu’en cas de nécessité absolue et de manière strictement proportionnée.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Cinq situations limitativement énumérées dans lesquelles l’usage de l’arme peut être envisagé '
@@ -142,14 +142,14 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                       'immobilisation d’un véhicule dangereux, périple meurtrier).',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph(
                 'Lorsque ces conditions sont réunies, l’usage de l’arme est apprécié principalement au regard de ce texte spécial. '
                 'Les magistrats contrôlent alors si le policier était bien dans l’une des cinq situations prévues et si son tir répondait '
                 'aux exigences de nécessité absolue et de proportionnalité.',
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: 'Attention au champ d’application',
                 bodySpans: [
                   TextSpan(
@@ -175,9 +175,9 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'L’article 122-5 du Code pénal pose le principe général de la légitime défense. '
                       'Il s’applique à toute personne, simple citoyen ou policier, lorsque celle-ci réagit à une atteinte injustifiée. '
@@ -192,15 +192,15 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Pour la défense des personnes : nécessité d’une atteinte injustifiée, actuelle et réelle, '
                       'et d’un acte de défense simultané, nécessaire et proportionné à la gravité de l’attaque.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Pour la défense des biens : nécessité d’interrompre l’exécution d’un crime ou d’un délit contre un bien, '
@@ -208,13 +208,13 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                       'et proportionné à la gravité de l’infraction.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph(
                 'Lorsque toutes ces conditions sont réunies, la personne n’est pas pénalement responsable : '
                 'la légitime défense efface l’infraction. Cela vaut également pour un policier, même s’il n’entre pas dans le cadre de l’article L. 435-1.',
               ),
-              const SizedBox(height: 10),
-              const _ExempleBox(
+              SizedBox(height: 10),
+              _ExempleBox(
                 title: 'Exemple simple de légitime défense',
                 bodySpans: [
                   TextSpan(
@@ -243,7 +243,7 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Dans la pratique, le policier doit savoir dans quel régime il se situe au moment où il fait usage de son arme. '
                 'Les deux textes ne s’opposent pas : ils se complètent.',
               ),
@@ -320,7 +320,7 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
               _NotaBox(
                 title: 'Point commun central',
                 bodySpans: [
-                  TextSpan(
+                  const TextSpan(
                     text:
                         'Dans tous les cas, qu’il s’agisse de l’article L. 435-1 du Code de la Sécurité Intérieure '
                         'ou de l’article 122-5 du Code pénal, les juges vérifient rigoureusement deux éléments communs :\n\n',
@@ -356,22 +356,22 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'L’article L. 211-9 du Code de la Sécurité Intérieure prévoit un régime spécifique '
                 'pour l’usage des armes dans la dispersion d’un attroupement. '
                 'Il s’agit principalement de maintien de l’ordre, avec des règles propres sur les sommations, '
                 'la gradation des moyens employés et l’autorité habilitée à ordonner le tir.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph(
                 'Ce régime se situe à côté de l’article L. 435-1 et de la légitime défense classique : '
                 'il ne se confond pas avec eux. Toutefois, même en maintien de l’ordre, des cas individuels de légitime défense '
                 'peuvent survenir (par exemple, un manifestant qui attaque un policier avec une arme blanche). '
                 'Dans cette hypothèse, l’article 122-5 du Code pénal peut de nouveau être invoqué.',
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: 'À retenir en maintien de l’ordre',
                 bodySpans: [
                   TextSpan(
@@ -396,19 +396,19 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Avant de faire usage de son arme, le policier doit, autant que possible, passer mentalement par trois questions rapides :',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       '1) Suis-je dans le champ de l’article L. 435-1 du Code de la Sécurité Intérieure ? '
                       '(exercice de mes fonctions, uniforme ou insignes, menace grave) et dans l’une des cinq situations prévues ?',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       '2) Si une condition manque ou si la situation ne correspond pas aux cinq cas, '
@@ -416,14 +416,14 @@ class UaLienLegitimeDefensePage extends StatelessWidget {
                       '(atteinte injustifiée, actuelle et réelle ; défense nécessaire, simultanée et proportionnée) ?',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       '3) En maintien de l’ordre, suis-je dans un tir d’attroupement relevant de l’article L. 211-9, '
                       'ou dans un cas individuel de légitime défense au sens du Code pénal ?',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph(
                 'Ce raisonnement n’a pas vocation à ralentir l’action, mais à structurer le réflexe professionnel. '
                 'Plus le policier connaît ces régimes et leurs articulations, plus il sera capable de prendre, en situation de stress, '
@@ -466,10 +466,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -512,7 +512,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -546,7 +546,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -599,7 +599,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -624,7 +624,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -659,7 +659,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -672,7 +672,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

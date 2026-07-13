@@ -90,64 +90,64 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’action publique peut être éteinte par le paiement d’une AFD : ",
                 ),
                 TextSpan(
                   text: "articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ; "),
+                TextSpan(text: " ; "),
                 TextSpan(
                   text:
                       "articles D. 45-3 à D. 45-21 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ; "),
+                TextSpan(text: " ; "),
                 TextSpan(
                   text:
                       "articles A. 36-14 à A. 36-18 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Usage illicite de stupéfiants : "),
+                TextSpan(text: "Usage illicite de stupéfiants : "),
                 TextSpan(
                   text:
                       "article L. 3421-1 alinéa 1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (Natinf 180)."),
+                TextSpan(text: " (Natinf 180)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "AFD applicable à l’usage : "),
+                TextSpan(text: "AFD applicable à l’usage : "),
                 TextSpan(
                   text:
                       "article L. 3421-1 alinéa 3 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -257,66 +257,66 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
             cardColor: cardModal,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Cadre juridique de la constatation"),
+            children: const [
+              _SubTitle("A) Cadre juridique de la constatation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "La procédure repose sur une constatation flagrante : ",
                 ),
                 TextSpan(
                   text: "article 53 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (initiative), ou après contrôle d’identité sur réquisitions : ",
                 ),
                 TextSpan(
                   text: "articles 78-2 ou 78-2-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Lieu de rédaction du PVe"),
-              const _BulletPoint(
+              _SubTitle("B) Lieu de rédaction du PVe"),
+              _BulletPoint(
                 text:
                     "Le PVe doit être établi sur les lieux de constatation du délit.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exception : retour au service possible pour ordre public / protection agents, avec acceptation du mis en cause de suivre librement.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Description précise des produits"),
-              const _BulletPoint(
+              _SubTitle("C) Description précise des produits"),
+              _BulletPoint(
                 text:
                     "Renseigner : nature (cannabis/cocaïne/MDMA…), type (résine/herbe/poudre…), conditionnement (barrette/sachet…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Compléter si besoin (champ libre) : odeur, apparence, objets liés à la consommation, etc.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Gestion des produits et accessoires saisis"),
-              const _BulletPoint(
+              _SubTitle("D) Gestion des produits et accessoires saisis"),
+              _BulletPoint(
                 text:
                     "Produits et accessoires (grinder, feuilles, pipe…) : saisis et destinés à destruction selon modalités fixées avec le procureur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Acter le consentement du mis en cause à la destruction (et à la remise des objets le cas échéant) via le champ prévu.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Aucun scellé ni échantillonnage ne doivent être constitués dans ce cadre.",
               ),
@@ -331,25 +331,25 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
             cardColor: cardMoney,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Montant fixé par "),
+                TextSpan(text: "Montant fixé par "),
                 TextSpan(
                   text:
                       "l’article L. 3421-1 alinéa 3 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "Amende forfaitaire minorée : 150 €"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(text: "Amende forfaitaire minorée : 150 €"),
+              _BulletPoint(
                 text: "Amende forfaitaire « ordinaire » : 200 €",
               ),
-              const _BulletPoint(text: "Amende forfaitaire majorée : 450 €"),
+              _BulletPoint(text: "Amende forfaitaire majorée : 450 €"),
             ],
           ),
 
@@ -361,90 +361,90 @@ class AmendeForfaitaireDelictuelleStupPage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Amende minorée (délais)"),
+            children: const [
+              _SubTitle("A) Amende minorée (délais)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Paiement minoré possible : entre les mains de l’agent, ou dans les ",
                 ),
-                const TextSpan(text: "15 jours"),
-                const TextSpan(
+                TextSpan(text: "15 jours"),
+                TextSpan(
                   text: " suivant l’envoi de l’avis d’infraction — ",
                 ),
                 TextSpan(
                   text: "article 495-18 alinéa 2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Paiement ou requête en exonération"),
-              const _Paragraph(
+              _SubTitle("B) Paiement ou requête en exonération"),
+              _Paragraph(
                 "Dans les 45 jours suivant la date d’envoi de l’avis d’infraction :\n"
                 "• payer l’amende, ou\n"
                 "• déposer une requête en exonération.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Amende majorée / réclamation"),
-              const _Paragraph(
+              _SubTitle("C) Amende majorée / réclamation"),
+              _Paragraph(
                 "À défaut de paiement ou de requête, le montant est majoré.\n"
                 "La majoration peut faire l’objet d’une réclamation dans les 30 jours suivant l’envoi de l’avis au domicile.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Modes de paiement"),
+              _SubTitle("D) Modes de paiement"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Modes identiques à l’amende forfaitaire contraventionnelle (télépaiement, chèque, virement…) — ",
                 ),
                 TextSpan(
                   text: "article D. 45-8 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article R. 49-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("E) Requête / réclamation"),
-              const _BulletPoint(
+              _SubTitle("E) Requête / réclamation"),
+              _BulletPoint(
                 text:
                     "Par LRAR, ou en dématérialisé via le site ANTAI (antai.fr).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les conditions de recevabilité et, le cas échéant, la consignation sont précisées dans les documents adressés à l’intéressé.",
                   ),
-                  const TextSpan(text: "\n\n"),
+                  TextSpan(text: "\n\n"),
                   TextSpan(
                     text:
                         "Dispense de consignation en cas d’usurpation d’identité : article 434-23 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -483,10 +483,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -551,7 +551,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -594,7 +594,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -656,7 +656,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -667,10 +667,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -682,13 +681,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -701,13 +699,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

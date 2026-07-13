@@ -91,24 +91,24 @@ class FormationInitialePolicierAdjointPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Prestation de serment : "),
+                TextSpan(text: "Prestation de serment : "),
                 TextSpan(
                   text: "article L 434-1 A du code de déontologie",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — « Préalablement à sa prise de fonctions, tout agent de la police nationale ou de la gendarmerie nationale "
                       "déclare solennellement servir avec dignité et loyauté la République… »",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Lors d’une cérémonie, le directeur de l’école nationale de police (ou son représentant) "
                 "remet à l’élève policier adjoint le code de déontologie à l’issue de la prestation de serment.",
               ),
@@ -425,10 +425,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -440,7 +439,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -462,10 +460,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

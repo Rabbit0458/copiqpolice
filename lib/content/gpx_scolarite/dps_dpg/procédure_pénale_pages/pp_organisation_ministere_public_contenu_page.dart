@@ -355,8 +355,8 @@ class PPOrganisationMinisterePublicContenuPage extends StatelessWidget {
             textAlign: TextAlign.justify,
             text: TextSpan(
               style: paragraphStyle,
-              children: [
-                const TextSpan(
+              children: const [
+                TextSpan(
                   text:
                       'Le principe de subordination hiérarchique n’est pas absolu. Les procureurs généraux et les procureurs de la République disposent de pouvoirs propres : '
                       'ils sont investis du droit d’exercer l’action publique et la juridiction saisie par eux l’est valablement, '
@@ -499,7 +499,7 @@ class PPOrganisationMinisterePublicContenuPage extends StatelessWidget {
                     : const Color(0xFFBBBBBB).withValues(alpha: .7),
               ),
             ),
-            child: Column(
+            child: const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 _OrgLine(

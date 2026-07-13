@@ -288,9 +288,9 @@ class ControleTechniquePage extends StatelessWidget {
                     "Entre 01/01/2022 et 25/10/2023 : dans les 6 mois précédant le 5e anniversaire (au plus tôt 01/07/2026).",
               ),
               const SizedBox(height: 12),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les motos utilisées dans le cadre de compétitions sportives et appartenant à une personne titulaire d’une licence délivrée par une fédération sportive ne sont pas concernées par la mise en place de ce contrôle technique.",
                   ),
@@ -332,9 +332,9 @@ class ControleTechniquePage extends StatelessWidget {
                 "Le timbre mentionne aussi la date limite de validité et l’immatriculation.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La mention « report de la visite » peut figurer sur le PV si l’état du véhicule ne permet pas la vérification des points de contrôle "
                         "(accès impossible à des éléments d’identification/sécurité, installations hors service, etc.).",
@@ -431,10 +431,10 @@ class ControleTechniquePage extends StatelessWidget {
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 12),
-              _NotaBox(
+              const _NotaBox(
                 title: "Mesures",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "AF min. 4e classe. DIA et dépistages stupéfiants facultatifs. Immobilisation possible "
                         "(fiche de circulation provisoire valable 7 jours). MEF possible si véhicule non présenté au CT "
@@ -478,10 +478,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -546,7 +546,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -589,7 +589,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -651,7 +651,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -683,7 +683,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -696,7 +696,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

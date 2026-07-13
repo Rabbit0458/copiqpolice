@@ -106,65 +106,65 @@ class TemoignageGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Droit de ne pas être retenu — "),
+                TextSpan(text: "Droit de ne pas être retenu — "),
                 TextSpan(
                   text: "art. 62 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le témoin est entendu sans contrainte ; retenue possible uniquement si nécessaire, "
                       "pour le temps strictement nécessaire, dans la limite de 4 heures (hors comparution libre informée).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Droit de ne pas déposer — "),
+                TextSpan(text: "Droit de ne pas déposer — "),
                 TextSpan(
                   text: "art. 78 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les personnes convoquées sont tenues de comparaître, mais ne sont pas tenues de déposer ; "
                       "le refus doit être mentionné au procès-verbal.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Domiciliation du témoin — "),
+                TextSpan(text: "Domiciliation du témoin — "),
                 TextSpan(
                   text: "art. 706-57 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : domiciliation possible au commissariat/brigade (sur autorisation PR/JI) ou sur le lieu de travail ; "
                       "registre dédié pour l’adresse personnelle.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Anonymat — "),
+                TextSpan(text: "Anonymat — "),
                 TextSpan(
                   text: "art. 706-58 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : possible sur autorisation du JLD si l’audition expose gravement le témoin (ou proches) "
                       "et si l’enquête porte sur un crime ou un délit puni d’au moins 3 ans d’emprisonnement.",
@@ -241,26 +241,26 @@ class TemoignageGeneralitesPage extends StatelessWidget {
             cardColor: cardHearing,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La réception du témoignage doit être réalisée le plus tôt possible afin d’éviter "
                 "que les souvenirs se modifient ou s’effacent.\n\n"
                 "Le témoin doit être accueilli convenablement : adopter un comportement attentionné, "
                 "le rassurer si besoin, et instaurer un climat de confiance.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Lieu possible de l’audition"),
-              const _BulletPoint(text: "Sur les lieux de l’infraction."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Lieu possible de l’audition"),
+              _BulletPoint(text: "Sur les lieux de l’infraction."),
+              _BulletPoint(
                 text:
                     "Dans les locaux de police (présentation spontanée ou convocation).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Au domicile du témoin ou tout autre lieu (hôpital…).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Déroulé recommandé"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Déroulé recommandé"),
+              _Paragraph(
                 "1) Récit spontané (libre évocation)\n"
                 "Le témoin raconte sans être interrompu : cela permet de situer le témoin dans le temps et l’espace "
                 "(date, heure, lieu, circonstances) et de décrire l’événement (vu, entendu, fait).\n\n"
@@ -268,9 +268,9 @@ class TemoignageGeneralitesPage extends StatelessWidget {
                 "L’enquêteur demande des précisions (imprécisions, oublis). Les questions doivent être ouvertes "
                 "et ne jamais suggérer la réponse. L’enquêteur reste objectif et impartial.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les expressions du témoin doivent être reproduites telles quelles (guillemets). "
@@ -288,80 +288,80 @@ class TemoignageGeneralitesPage extends StatelessWidget {
             cardColor: cardProtect,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Ne pas être retenu"),
+            children: const [
+              _SubTitle("A) Ne pas être retenu"),
               _Paragraph.rich([
-                const TextSpan(text: "Règle : audition sans contrainte — "),
+                TextSpan(text: "Règle : audition sans contrainte — "),
                 TextSpan(
                   text: "art. 62 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Retenue possible uniquement si nécessaire, 4h max, sauf comparution libre informée.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Ne pas déposer"),
+              _SubTitle("B) Ne pas déposer"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Comparution possible sous contrainte, mais pas obligation de déposer — ",
                 ),
                 TextSpan(
                   text: "art. 78 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ". En cas de refus, le mentionner expressément au PV.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Domicile élu"),
+              _SubTitle("C) Domicile élu"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Domiciliation possible (sécurité / travail) — ",
                 ),
                 TextSpan(
                   text: "art. 706-57 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Adresse personnelle conservée sur registre dédié (papier ou numérique).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Anonymat"),
+              _SubTitle("D) Anonymat"),
               _Paragraph.rich([
-                const TextSpan(text: "Anonymat sur autorisation JLD — "),
+                TextSpan(text: "Anonymat sur autorisation JLD — "),
                 TextSpan(
                   text: "art. 706-58 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (crime/délit ≥ 3 ans + danger grave). PV anonyme non signé + PV distinct signé (identité/adresse) versé à part.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Point clé : la protection vise à garantir la sécurité du témoin tout en conservant la valeur probante "
@@ -405,10 +405,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -473,7 +473,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -516,7 +516,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -578,7 +578,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -589,10 +589,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -604,13 +603,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -623,13 +621,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

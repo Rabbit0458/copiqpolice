@@ -78,23 +78,44 @@ class _MemberPickerSheetState extends State<MemberPickerSheet> {
     setState(() => _loading = true);
     try {
       final myId = _sb.auth.currentUser?.id;
-      // Construction : on commence par le filter builder (qui supporte `.or`)
-      // puis on applique `.limit()` (qui retourne un transform builder, lui
-      // n'expose pas `.or`). C'est la nouvelle API supabase_flutter.
       final trimmed = q.trim();
-      final query = (trimmed.isNotEmpty)
-          ? _sb
-              .from('user_profiles')
-              .select('user_id, username, first_name, last_name')
-              .or('username.ilike.%${trimmed}%,first_name.ilike.%${trimmed}%,last_name.ilike.%${trimmed}%')
-              .limit(40)
-          : _sb
-              .from('user_profiles')
-              .select('user_id, username, first_name, last_name')
-              .limit(40);
-      final rows = await query;
-      final list = (rows as List)
-          .map((e) => _UserRow.fromRow(e as Map<String, dynamic>))
+
+      List<Map<String, dynamic>> rawRows;
+      if (trimmed.isNotEmpty) {
+        // `.or()` n'est pas disponible sur SupabaseQueryBuilder dans cette version
+        // de supabase_flutter — on fait 3 requêtes ILIKE séparées et on déduplique.
+        final cols = 'user_id, username, first_name, last_name';
+        final r1 = await _sb
+            .from('user_profiles')
+            .select(cols)
+            .ilike('username', '%$trimmed%')
+            .limit(40);
+        final r2 = await _sb
+            .from('user_profiles')
+            .select(cols)
+            .ilike('first_name', '%$trimmed%')
+            .limit(20);
+        final r3 = await _sb
+            .from('user_profiles')
+            .select(cols)
+            .ilike('last_name', '%$trimmed%')
+            .limit(20);
+        final seen = <String>{};
+        rawRows = [...r1, ...r2, ...r3]
+            .cast<Map<String, dynamic>>()
+            .where((e) => seen.add(e['user_id'] as String))
+            .take(40)
+            .toList();
+      } else {
+        rawRows = (await _sb
+                .from('user_profiles')
+                .select('user_id, username, first_name, last_name')
+                .limit(40))
+            .cast<Map<String, dynamic>>();
+      }
+
+      final list = rawRows
+          .map((e) => _UserRow.fromRow(e))
           .where((u) => u.id != myId) // exclut soi-même
           .toList();
       if (!mounted) return;

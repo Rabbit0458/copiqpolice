@@ -109,16 +109,16 @@ class AccesMaintienFrauduleuxStadPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’accès ou le maintien frauduleux dans un système de traitement automatisé de données.",
                 ),
@@ -134,156 +134,156 @@ class AccesMaintienFrauduleuxStadPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Un système de traitement automatisé de données",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le code pénal ne donne pas de définition du système de traitement automatisé de données. "
                 "Il peut être compris comme un ensemble de biens matériels et logiciels, doté d’une capacité "
                 "de mémoire et de traitement de l’information, capable d’accomplir des tâches et d’en restituer les résultats.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le système peut être la machine en elle-même, ses composants, mais également les programmes ou logiciels "
                 "qui en assurent le fonctionnement.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudences : "),
+                  TextSpan(text: "Jurisprudences : "),
                   TextSpan(
                     text:
                         "radiotéléphone = système (C.A. Paris, 18 novembre 1992)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text:
                         "annuaire électronique France Télécom = système (Tr. corr. Brest, 14 mars 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text:
                         "réseau « carte bleue » = STAD (T.G.I. Paris, 25 février 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Le « maître du système »"),
-              const _Paragraph(
+              _SubTitle("B) Le « maître du système »"),
+              _Paragraph(
                 "Le maître du système n’est pas nécessairement son concepteur. Il peut s’agir de celui qui a régulièrement "
                 "acquis le droit de l’exploiter, pour son entreprise ou pour commercialiser les services rendus.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il dispose de prérogatives proches des attributs de la propriété : modifier le système, le supprimer, "
                 "le communiquer à autrui, l’utiliser ou autoriser autrui à l’utiliser.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les délits supposent le non-respect de la volonté du maître du système.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un accès ou un maintien"),
-              const _Paragraph(
+              _SubTitle("C) Un accès ou un maintien"),
+              _Paragraph(
                 "L’accès n’est punissable que s’il est réalisé sans droit : soit parce que la personne n’a pas d’autorisation, "
                 "soit parce qu’elle dépasse les conditions d’accès (procédure, code, paiement, limites techniques…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudences : "),
+                  TextSpan(text: "Jurisprudences : "),
                   TextSpan(
                     text:
                         "usage d’un code d’accès conservé après une période d’essai (Cass. crim., 03 octobre 2007)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text:
                         "insertion d’un « cheval de Troie » (Tr. corr. Limoges, 14 mars 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La jurisprudence a précisé qu’il n’est pas nécessaire que l’accès soit limité par un dispositif de protection. ",
                 ),
                 TextSpan(
                   text: "(C.A. Paris, 05 avril 1994)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph(
+              _Paragraph(
                 "L’accès peut viser « tout ou partie » du STAD : cela permet de réprimer aussi bien l’intrusion dans une zone "
                 "unique (terminal, logiciel…), que le dépassement d’habilitation d’une personne pourtant autorisée sur une autre partie.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Le maintien"),
-              const _Paragraph(
+              _SubTitle("D) Le maintien"),
+              _Paragraph(
                 "Le maintien permet de réprimer notamment un accès initialement régulier (ou accidentel) suivi d’opérations irrégulières, "
                 "ou encore une « promenade » non autorisée dans le système.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudence : "),
+                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
                     text:
                         "usage abusif à des fins ludiques du minitel mis à disposition d’agents d’un service public (C.A. Paris, 15 décembre 1999)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "Le maintien est un délit continu : la prescription ne commence à courir qu’à la fin du maintien.",
               ),
             ],
@@ -297,46 +297,46 @@ class AccesMaintienFrauduleuxStadPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’auteur doit avoir conscience d’accéder ou de se maintenir sans droit, contre le gré du maître du système.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Jurisprudence : "),
+                TextSpan(text: "Jurisprudence : "),
                 TextSpan(
                   text: "(C.A. Paris, 15 décembre 1999)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "L’accès par erreur (notamment si le système n’est pas protégé) n’est pas pénalement sanctionné. "
                 "La vraisemblance de l’erreur est appréciée au regard des compétences informatiques du prévenu.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le mobile est indifférent : jeu, prouesse technique, volonté de démontrer une faille…",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : informaticien dénonçant une mauvaise protection de données personnelles ",
                   ),
                   TextSpan(
                     text: "(T.G.I. Paris, 13 février 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -350,66 +350,66 @@ class AccesMaintienFrauduleuxStadPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsqu'il en est résulté soit la suppression ou la modification de données contenues dans le système, soit une altération du fonctionnement de ce système.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-1 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque les infractions ont été commises à l'encontre d'un STAD à caractère personnel mis en œuvre par l'État.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsque l'infraction a été commise en bande organisée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque l’infraction expose autrui à un risque immédiat de mort ou de blessures graves (mutilation/infirmité permanente) ou fait obstacle aux secours destinés à faire échapper une personne à un péril imminent ou à combattre un sinistre dangereux.",
               ),
@@ -424,132 +424,132 @@ class AccesMaintienFrauduleuxStadPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "3 ans d'emprisonnement et 100 000 € d'amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Aggravée (suppression/modification de données ou altération) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "5 ans d'emprisonnement et 150 000 € d'amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Aggravée (STAD à caractère personnel mis en œuvre par l’État) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d'emprisonnement et 300 000 € d'amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-1 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Bande organisée : "),
-                const TextSpan(
+                TextSpan(text: "Bande organisée : "),
+                TextSpan(
                   text: "10 ans d'emprisonnement et 300 000 € d'amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-4-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Risque immédiat (mort/blessures graves/obstacle aux secours) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d'emprisonnement et 300 000 € d'amende. — ",
                 ),
                 TextSpan(
                   text: "article 323-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 323-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (amende selon l’article 131-38 et peines de l’article 131-39, dont l’interdiction d’activité liée à l’infraction).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Tentative : OUI — prévue et réprimée par ",
                 ),
                 TextSpan(
                   text: "l’article 323-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -590,10 +590,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -658,7 +658,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -701,7 +701,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -763,7 +763,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -774,10 +774,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -789,13 +788,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -808,13 +806,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

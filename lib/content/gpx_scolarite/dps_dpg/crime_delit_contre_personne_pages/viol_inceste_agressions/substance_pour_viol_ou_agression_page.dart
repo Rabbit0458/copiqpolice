@@ -318,7 +318,7 @@ class _RepressionTableSubstance extends StatelessWidget {
     final Color border = isDark ? Colors.white12 : Colors.black12;
     final Color text = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color head = isDark ? Colors.white : const Color(0xFF0D1B2A);
 
     Widget cell(String s, {bool bold = false}) => Padding(
@@ -338,7 +338,7 @@ class _RepressionTableSubstance extends StatelessWidget {
       decoration: BoxDecoration(
         border: Border.all(color: border),
         borderRadius: BorderRadius.circular(14),
-        color: (isDark ? Colors.white : Colors.black).withOpacity(0.03),
+        color: (isDark ? Colors.white : Colors.black).withValues(alpha: 0.03),
       ),
       clipBehavior: Clip.antiAlias,
       child: Table(
@@ -354,7 +354,7 @@ class _RepressionTableSubstance extends StatelessWidget {
         children: [
           TableRow(
             decoration: BoxDecoration(
-              color: (isDark ? Colors.white : Colors.black).withOpacity(0.05),
+              color: (isDark ? Colors.white : Colors.black).withValues(alpha: 0.05),
             ),
             children: [
               cell("Qualification", bold: true),
@@ -410,10 +410,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -478,7 +478,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -521,7 +521,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -583,7 +583,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -615,7 +615,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -628,7 +628,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

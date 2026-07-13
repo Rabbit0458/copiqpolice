@@ -116,31 +116,31 @@ class AssociationMalfaiteursPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 450-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’association de malfaiteurs. "
                       "C’est une infraction formelle, indépendante des crimes/délits préparés ou commis.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle est retenue au stade des actes préparatoires : la « préparation » suffit, dès lors "
                 "qu’elle est caractérisée par un ou plusieurs faits matériels.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’association de malfaiteurs est un délit autonome : elle se cumule avec l’infraction projetée/commise. "
                         "Cependant, les mêmes faits peuvent aussi caractériser une bande organisée. Dans ce cas, l’incrimination "
@@ -149,39 +149,39 @@ class AssociationMalfaiteursPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _SubTitle("Jurisprudences"),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cumul possible si faits distincts entre l’association de malfaiteurs et la bande organisée : ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 19 janvier 2010)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Association distincte de la bande organisée si elle visait d’autres infractions que celles finalement tentées/commises : ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 9 mai 2019)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -195,30 +195,30 @@ class AssociationMalfaiteursPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une résolution d’agir en commun"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une résolution d’agir en commun"),
+              _Paragraph(
                 "Le texte exige que les participants passent du stade purement intellectuel aux actes préparatoires : "
                 "il ne suffit pas d’un échange d’opinions. L’entente est souvent tacite et se déduit des faits.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Passage aux actes préparatoires exigé : ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 29 janvier 1991)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "La jurisprudence retient l’entente au regard notamment :\n"
                 "• des prises de contact, réunions, habitudes\n"
                 "• de l’usage commun de véhicules\n"
@@ -226,115 +226,115 @@ class AssociationMalfaiteursPage extends StatelessWidget {
                 "• d’éléments issus de filatures ou d’écoutes\n"
                 "• et surtout des actes préparatoires réalisés.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Réunions et prises de contact : "),
+                  TextSpan(text: "Réunions et prises de contact : "),
                   TextSpan(
                     text: "(Cass. crim., 4 mars 1992)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Débits de boissons fréquentés : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Débits de boissons fréquentés : "),
                   TextSpan(
                     text: "(Cass. crim., 30 mai 1988)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Filatures : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Filatures : "),
                   TextSpan(
                     text: "(Cass. crim., 6 septembre 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Écoutes téléphoniques : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Écoutes téléphoniques : "),
                   TextSpan(
                     text: "(Cass. crim., 20 février 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) « Caractérisée par un ou plusieurs faits matériels »",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le législateur a voulu exclure le simple projet : sont visés les faits concrets "
                 "(réunions où des renseignements s’échangent, plans élaborés, moyens d’action rassemblés).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Nombre de participants"),
-              const _Paragraph(
+              _SubTitle("C) Nombre de participants"),
+              _Paragraph(
                 "Peu importe le nombre : deux personnes suffisent. Peu importe aussi la durée de l’entente "
                 "et le fait que certains membres ne soient pas identifiés.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Deux personnes organisant de concert une livraison d’héroïne (contacts fournisseur, véhicules, somme importante) : "
                         "faits matériels caractérisant l’association de malfaiteurs ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 3 juin 2004)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) La nécessité d’une organisation"),
-              const _Paragraph(
+              _SubTitle("D) La nécessité d’une organisation"),
+              _Paragraph(
                 "La preuve d’une organisation (direction, hiérarchie, répartition des rôles) aide à établir "
                 "l’existence du groupement ou de l’entente.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Le but poursuivi"),
-              const _Paragraph(
+              _SubTitle("E) Le but poursuivi"),
+              _Paragraph(
                 "L’entente est punissable si elle vise la préparation :\n"
                 "• d’un ou plusieurs crimes, ou\n"
                 "• d’un ou plusieurs délits punis d’au moins 5 ans d’emprisonnement.\n\n"
                 "Les infractions projetées n’ont pas besoin d’être déjà déterminées avec précision.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Infractions pas nécessairement déterminées : ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 15 décembre 1993)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -348,54 +348,54 @@ class AssociationMalfaiteursPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Intégration au groupement en connaissance de cause",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Chaque participant doit s’être intégré à un groupement délictueux en connaissant ses buts "
                 "et son caractère répréhensible.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Connaissance des buts et du caractère répréhensible : ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 28 février 2001)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 14),
-              const _SubTitle(
+              SizedBox(height: 14),
+              _SubTitle(
                 "B) Volonté d’apporter un concours au groupement",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La responsabilité est retenue si la personne agit avec la volonté d’apporter un concours efficace "
                 "à la préparation du crime/délit projeté (ex. fournir des moyens matériels : armes, explosifs, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Concours matériel au groupement (armes/explosifs) : ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 2 juillet 1991)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -424,96 +424,96 @@ class AssociationMalfaiteursPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 450-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : peines selon l’objet de l’entente."),
+                TextSpan(text: " : peines selon l’objet de l’entente."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Lorsque l’entente vise un ou plusieurs délits (≥ 5 ans)",
               ),
-              const _BulletPoint(text: "5 ans d’emprisonnement."),
-              const _BulletPoint(text: "75 000 € d’amende."),
-              const SizedBox(height: 8),
+              _BulletPoint(text: "5 ans d’emprisonnement."),
+              _BulletPoint(text: "75 000 € d’amende."),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text: "article 450-1 (alinéa relatif au délit) du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Lorsque l’entente vise un ou plusieurs crimes",
               ),
-              const _BulletPoint(text: "10 ans d’emprisonnement."),
-              const _BulletPoint(text: "150 000 € d’amende."),
-              const SizedBox(height: 8),
+              _BulletPoint(text: "10 ans d’emprisonnement."),
+              _BulletPoint(text: "150 000 € d’amende."),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text: "article 450-1 (alinéa relatif au crime) du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Hypothèse la plus grave (réclusion)"),
-              const _BulletPoint(text: "15 ans de réclusion."),
-              const _BulletPoint(text: "225 000 € d’amende."),
-              const SizedBox(height: 8),
+              _SubTitle("3) Hypothèse la plus grave (réclusion)"),
+              _BulletPoint(text: "15 ans de réclusion."),
+              _BulletPoint(text: "225 000 € d’amende."),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text: "article 450-1 (alinéa réclusion) du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 450-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit la responsabilité pénale des personnes morales.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les peines applicables aux personnes morales suivent les règles du Code pénal "
                         "(notamment amende et peines complémentaires selon les textes généraux).",
@@ -521,30 +521,30 @@ class AssociationMalfaiteursPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : NON (la consommation intervient à un stade antérieur à la tentative ; aucun texte spécial ne la prévoit).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Lecture pratique",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Il faut distinguer :\n"
                         "• la complicité de l’association de malfaiteurs (aider le groupement à naître / s’étendre / maintenir des contacts),\n"
@@ -564,41 +564,41 @@ class AssociationMalfaiteursPage extends StatelessWidget {
             cardColor: cardBonus,
             accent: accentIndigo,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 450-2 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : exemption de peine si la personne révèle le groupement/entente avant toute poursuite "
                       "et permet l’identification des autres participants.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Condition clé : agir avant toute poursuite. La dénonciation doit être faite aux autorités compétentes "
                         "(judiciaires ou administratives) et permettre l’identification des autres participants.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 450-2 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réduction des deux tiers de la peine si, en avertissant l’autorité, la personne a permis "
                       "de faire cesser l’infraction, d’éviter la commission d’une infraction préparée, ou d’identifier d’autres auteurs/complices.",
@@ -640,10 +640,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -708,7 +708,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -751,7 +751,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -813,7 +813,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -845,7 +845,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -858,7 +858,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

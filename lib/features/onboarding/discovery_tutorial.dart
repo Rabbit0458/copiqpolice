@@ -1,7 +1,6 @@
 // lib/onboarding/discovery_tutorial.dart
 import 'dart:async';
 import 'dart:ui';
-import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -158,9 +157,9 @@ class _DiscoveryTutorialScreenState extends State<DiscoveryTutorialScreen>
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          Colors.black.withOpacity(0.18),
+                          Colors.black.withValues(alpha: 0.18),
                           Colors.transparent,
-                          Colors.black.withOpacity(0.30),
+                          Colors.black.withValues(alpha: 0.30),
                         ],
                       ),
                     ),
@@ -377,7 +376,6 @@ class _ProgramHeroCard extends StatelessWidget {
   final VoidCallback? onTap;
 
   const _ProgramHeroCard({
-    super.key,
     required this.program,
     required this.selected,
     required this.disabled,
@@ -683,7 +681,7 @@ class _GpxSpaceRealStepState extends State<_GpxSpaceRealStep>
               final t = _drop.value;
 
               // départ un peu au-dessus + descend sur la target
-              final startDy = -48.0;
+              const startDy = -48.0;
               final dy = lerpDouble(startDy, 0.0, t)!;
 
               return Positioned.fromRect(
@@ -695,14 +693,14 @@ class _GpxSpaceRealStepState extends State<_GpxSpaceRealStep>
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(26),
                         border: Border.all(
-                          color: const Color(0xFF1147D9).withOpacity(0.60),
+                          color: const Color(0xFF1147D9).withValues(alpha: 0.60),
                           width: 1.5,
                         ),
                         boxShadow: [
                           BoxShadow(
                             blurRadius: 28,
                             offset: const Offset(0, 18),
-                            color: const Color(0xFF1147D9).withOpacity(0.16),
+                            color: const Color(0xFF1147D9).withValues(alpha: 0.16),
                           ),
                         ],
                       ),
@@ -755,7 +753,7 @@ class _TopTextButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final color = (isDark ? Colors.white : _T.ink).withOpacity(
+    final color = (isDark ? Colors.white : _T.ink).withValues(alpha: 
       isDark ? 0.72 : 0.70,
     );
 
@@ -794,9 +792,9 @@ class _StepCounter extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.06),
+        color: Colors.white.withValues(alpha: 0.06),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(0.10)),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
       ),
       child: Text(
         "$current/$total",
@@ -911,7 +909,7 @@ class _HumanCheckStep extends StatelessWidget {
                 child: Icon(
                   Icons.visibility_off_rounded,
                   size: 46,
-                  color: Colors.white.withOpacity(0.92),
+                  color: Colors.white.withValues(alpha: 0.92),
                 ),
               ),
               const SizedBox(height: 22),
@@ -941,13 +939,13 @@ class _HumanCheckStep extends StatelessWidget {
                     Icon(
                       Icons.verified_rounded,
                       size: 18,
-                      color: Colors.white.withOpacity(0.90),
+                      color: Colors.white.withValues(alpha: 0.90),
                     ),
                     const SizedBox(width: 10),
                     Text(
                       "Validation automatique en un seul geste",
                       style: GoogleFonts.montserrat(
-                        color: Colors.white.withOpacity(0.88),
+                        color: Colors.white.withValues(alpha: 0.88),
                         fontWeight: FontWeight.w800,
                         fontSize: 13.4,
                         height: 1.25,
@@ -1022,14 +1020,14 @@ class _DiscoveryWelcomeStep extends StatelessWidget {
                   Icon(
                     Icons.verified_rounded,
                     size: 18,
-                    color: Colors.white.withOpacity(0.90),
+                    color: Colors.white.withValues(alpha: 0.90),
                   ),
                   const SizedBox(width: 10),
                   Text(
                     "Mode guidé : pas de quiz ici",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.88),
+                      color: Colors.white.withValues(alpha: 0.88),
                       fontWeight: FontWeight.w800,
                       fontSize: 13.2,
                       height: 1.2,
@@ -1139,7 +1137,7 @@ class _ModePickerRealStepState extends State<_ModePickerRealStep> {
                   sigmaX: _blurSigma,
                   sigmaY: _blurSigma,
                 ),
-                child: Container(color: Colors.black.withOpacity(_dimOpacity)),
+                child: Container(color: Colors.black.withValues(alpha: _dimOpacity)),
               ),
             ),
           ),
@@ -1152,14 +1150,14 @@ class _ModePickerRealStepState extends State<_ModePickerRealStep> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(26),
                   border: Border.all(
-                    color: const Color(0xFF1147D9).withOpacity(0.45),
+                    color: const Color(0xFF1147D9).withValues(alpha: 0.45),
                     width: 1.3,
                   ),
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 18,
                       offset: const Offset(0, 12),
-                      color: const Color(0xFF1147D9).withOpacity(0.12),
+                      color: const Color(0xFF1147D9).withValues(alpha: 0.12),
                     ),
                   ],
                 ),
@@ -1168,13 +1166,13 @@ class _ModePickerRealStepState extends State<_ModePickerRealStep> {
           ),
 
           // ✅ Bulle en bas : SafeArea UNIQUEMENT ici
-          Positioned(
+          const Positioned(
             left: 18,
             right: 18,
             bottom: 18,
             child: SafeArea(
               top: false,
-              child: const _TipBubble(
+              child: _TipBubble(
                 title: "Choisis ton mode",
                 text:
                     "Si tu es en école, sélectionne “Je suis en scolarité”.\n"
@@ -1304,14 +1302,14 @@ class _GradePickerRealStepState extends State<_GradePickerRealStep> {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(26),
                       border: Border.all(
-                        color: const Color(0xFF1147D9).withOpacity(0.55),
+                        color: const Color(0xFF1147D9).withValues(alpha: 0.55),
                         width: 1.4,
                       ),
                       boxShadow: [
                         BoxShadow(
                           blurRadius: 26,
                           offset: const Offset(0, 16),
-                          color: const Color(0xFF1147D9).withOpacity(0.14),
+                          color: const Color(0xFF1147D9).withValues(alpha: 0.14),
                         ),
                       ],
                     ),
@@ -1325,10 +1323,10 @@ class _GradePickerRealStepState extends State<_GradePickerRealStep> {
                 right: 18,
                 top: bubbleTop,
                 bottom: bubbleBottom,
-                child: SafeArea(
+                child: const SafeArea(
                   top: false,
                   bottom: true,
-                  child: const _TipBubble(
+                  child: _TipBubble(
                     title: "Grade",
                     text:
                         "Dans cet exemple, on te montre la scolarité “Gardien de la paix”.\n"
@@ -1358,7 +1356,7 @@ class _SpotlightPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = Colors.black.withOpacity(dimOpacity);
+    final paint = Paint()..color = Colors.black.withValues(alpha: dimOpacity);
 
     final full = Path()..addRect(Offset.zero & size);
     final cut = Path()
@@ -1460,7 +1458,7 @@ class _ModulesRealStepState extends State<_ModulesRealStep> {
                   sigmaX: _blurSigma,
                   sigmaY: _blurSigma,
                 ),
-                child: Container(color: Colors.black.withOpacity(_dimOpacity)),
+                child: Container(color: Colors.black.withValues(alpha: _dimOpacity)),
               ),
             ),
           ),
@@ -1472,14 +1470,14 @@ class _ModulesRealStepState extends State<_ModulesRealStep> {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(22),
                   border: Border.all(
-                    color: const Color(0xFF1147D9).withOpacity(0.45),
+                    color: const Color(0xFF1147D9).withValues(alpha: 0.45),
                     width: 1.3,
                   ),
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 18,
                       offset: const Offset(0, 12),
-                      color: const Color(0xFF1147D9).withOpacity(0.12),
+                      color: const Color(0xFF1147D9).withValues(alpha: 0.12),
                     ),
                   ],
                 ),
@@ -1551,7 +1549,7 @@ class _ModeFocusStep extends StatelessWidget {
           style: p.copyWith(fontSize: 14.1, height: 1.45),
         ),
         const SizedBox(height: 18),
-        _DimChoiceCard(title: "Je prépare le concours"),
+        const _DimChoiceCard(title: "Je prépare le concours"),
         const SizedBox(height: 14),
         // Carte cible (on la remettra au-dessus)
         _ChoiceCard(title: "Je suis en scolarité", onTap: () {}),
@@ -1573,7 +1571,7 @@ class _ModeFocusStep extends StatelessWidget {
           child: IgnorePointer(
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 9, sigmaY: 9),
-              child: Container(color: Colors.black.withOpacity(0.45)),
+              child: Container(color: Colors.black.withValues(alpha: 0.45)),
             ),
           ),
         ),
@@ -1592,7 +1590,7 @@ class _ModeFocusStep extends StatelessWidget {
                   spotlight: true,
                 ),
                 const SizedBox(height: 14),
-                _TipBubble(
+                const _TipBubble(
                   title: "Choisis ton mode",
                   text:
                       "Si tu es en école, sélectionne “Je suis en scolarité”.\n"
@@ -1638,9 +1636,9 @@ class _GradeFocusStep extends StatelessWidget {
           style: p.copyWith(fontSize: 14.1, height: 1.45),
         ),
         const SizedBox(height: 18),
-        _DimChoiceCard(title: "Réserviste"),
+        const _DimChoiceCard(title: "Réserviste"),
         const SizedBox(height: 14),
-        _DimChoiceCard(title: "Policier adjoint"),
+        const _DimChoiceCard(title: "Policier adjoint"),
         const SizedBox(height: 14),
         _ChoiceCard(title: "Gardien de la paix", onTap: () {}),
       ],
@@ -1658,7 +1656,7 @@ class _GradeFocusStep extends StatelessWidget {
           child: IgnorePointer(
             child: BackdropFilter(
               filter: ImageFilter.blur(sigmaX: 9, sigmaY: 9),
-              child: Container(color: Colors.black.withOpacity(0.45)),
+              child: Container(color: Colors.black.withValues(alpha: 0.45)),
             ),
           ),
         ),
@@ -1675,7 +1673,7 @@ class _GradeFocusStep extends StatelessWidget {
                   spotlight: true,
                 ),
                 const SizedBox(height: 14),
-                _TipBubble(
+                const _TipBubble(
                   title: "Grade",
                   text:
                       "Dans cet exemple, on te montre la scolarité “Gardien de la paix”.\n"
@@ -1801,7 +1799,7 @@ class _ModulesFocusStepState extends State<_ModulesFocusStep> {
               "Modules avancés",
               textAlign: TextAlign.left,
               style: GoogleFonts.montserrat(
-                color: Colors.white.withOpacity(0.80),
+                color: Colors.white.withValues(alpha: 0.80),
                 fontWeight: FontWeight.w900,
                 fontSize: 14,
               ),
@@ -1835,7 +1833,7 @@ class _ModulesFocusStepState extends State<_ModulesFocusStep> {
             child: IgnorePointer(
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 9, sigmaY: 9),
-                child: Container(color: Colors.black.withOpacity(0.48)),
+                child: Container(color: Colors.black.withValues(alpha: 0.48)),
               ),
             ),
           ),
@@ -1850,7 +1848,7 @@ class _ModulesFocusStepState extends State<_ModulesFocusStep> {
                 children: [
                   apjCard,
                   const SizedBox(height: 14),
-                  _TipBubble(
+                  const _TipBubble(
                     title: "Module APJ",
                     text:
                         "Ici, tu peux accéder au module “Recueil de procès-verbaux”.\n"
@@ -1909,7 +1907,7 @@ class _FinishStepState extends State<_FinishStep> {
                 child: Icon(
                   Icons.check_circle_rounded,
                   size: 46,
-                  color: Colors.white.withOpacity(0.92),
+                  color: Colors.white.withValues(alpha: 0.92),
                 ),
               ),
               const SizedBox(height: 18),
@@ -1978,8 +1976,8 @@ class _PrimaryButtonState extends State<_PrimaryButton> {
   Widget build(BuildContext context) {
     final scale = _down ? 0.985 : 1.0;
 
-    final disabledBg = const Color(0xFF1E2A55);
-    final disabledFg = const Color(0xFFB0B6C3);
+    const disabledBg = Color(0xFF1E2A55);
+    const disabledFg = Color(0xFFB0B6C3);
 
     final bg = widget.enabled ? Colors.white : disabledBg;
     final fg = widget.enabled ? widget.foreground : disabledFg;
@@ -2034,7 +2032,7 @@ class _TipBubble extends StatelessWidget {
     final titleColor = isDark
         ? Colors.black
         : Theme.of(context).textTheme.titleMedium?.color ?? _T.ink;
-    final bodyColor = (isDark ? Colors.black : titleColor).withOpacity(
+    final bodyColor = (isDark ? Colors.black : titleColor).withValues(alpha: 
       isDark ? 0.78 : 0.72,
     );
 
@@ -2048,7 +2046,7 @@ class _TipBubble extends StatelessWidget {
           BoxShadow(
             blurRadius: 22,
             offset: const Offset(0, 14),
-            color: Colors.black.withOpacity(isDark ? 0.22 : 0.10),
+            color: Colors.black.withValues(alpha: isDark ? 0.22 : 0.10),
           ),
         ],
       ),
@@ -2095,8 +2093,8 @@ class _ChoiceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final border = spotlight
-        ? const Color(0xFF1147D9).withOpacity(0.65)
-        : Colors.white.withOpacity(0.12);
+        ? const Color(0xFF1147D9).withValues(alpha: 0.65)
+        : Colors.white.withValues(alpha: 0.12);
 
     final shadow = spotlight ? 0.26 : 0.14;
 
@@ -2108,13 +2106,13 @@ class _ChoiceCard extends StatelessWidget {
           clipBehavior: Clip.antiAlias,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(24),
-            color: Colors.white.withOpacity(0.06),
+            color: Colors.white.withValues(alpha: 0.06),
             border: Border.all(color: border, width: spotlight ? 1.4 : 1),
             boxShadow: [
               BoxShadow(
                 blurRadius: 26,
                 offset: const Offset(0, 14),
-                color: Colors.black.withOpacity(shadow),
+                color: Colors.black.withValues(alpha: shadow),
               ),
             ],
           ),
@@ -2127,9 +2125,9 @@ class _ChoiceCard extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.white.withOpacity(0.10),
+                        Colors.white.withValues(alpha: 0.10),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.10),
+                        Colors.black.withValues(alpha: 0.10),
                       ],
                     ),
                   ),
@@ -2155,16 +2153,16 @@ class _ChoiceCard extends StatelessWidget {
                   height: 44,
                   padding: const EdgeInsets.symmetric(horizontal: 14),
                   decoration: BoxDecoration(
-                    color: Colors.black.withOpacity(0.25),
+                    color: Colors.black.withValues(alpha: 0.25),
                     borderRadius: BorderRadius.circular(999),
-                    border: Border.all(color: Colors.white.withOpacity(0.10)),
+                    border: Border.all(color: Colors.white.withValues(alpha: 0.10)),
                   ),
                   child: Row(
                     children: [
                       Text(
                         "Découvrir",
                         style: GoogleFonts.montserrat(
-                          color: Colors.white.withOpacity(0.88),
+                          color: Colors.white.withValues(alpha: 0.88),
                           fontWeight: FontWeight.w900,
                         ),
                       ),
@@ -2173,7 +2171,7 @@ class _ChoiceCard extends StatelessWidget {
                         width: 34,
                         height: 34,
                         decoration: BoxDecoration(
-                          color: Colors.white.withOpacity(0.94),
+                          color: Colors.white.withValues(alpha: 0.94),
                           borderRadius: BorderRadius.circular(999),
                         ),
                         child: const Icon(
@@ -2231,8 +2229,8 @@ class _ModuleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final border = highlight
-        ? const Color(0xFF1147D9).withOpacity(0.65)
-        : Colors.white.withOpacity(0.12);
+        ? const Color(0xFF1147D9).withValues(alpha: 0.65)
+        : Colors.white.withValues(alpha: 0.12);
 
     return GestureDetector(
       onTap: onTap,
@@ -2241,13 +2239,13 @@ class _ModuleCard extends StatelessWidget {
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
-          color: Colors.white.withOpacity(0.06),
+          color: Colors.white.withValues(alpha: 0.06),
           border: Border.all(color: border, width: highlight ? 1.4 : 1),
           boxShadow: [
             BoxShadow(
               blurRadius: highlight ? 26 : 16,
               offset: const Offset(0, 12),
-              color: Colors.black.withOpacity(highlight ? 0.22 : 0.14),
+              color: Colors.black.withValues(alpha: highlight ? 0.22 : 0.14),
             ),
           ],
         ),
@@ -2258,11 +2256,11 @@ class _ModuleCard extends StatelessWidget {
               height: 54,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(14),
-                color: Colors.white.withOpacity(0.08),
+                color: Colors.white.withValues(alpha: 0.08),
               ),
               child: Icon(
                 Icons.menu_book_outlined,
-                color: Colors.white.withOpacity(0.85),
+                color: Colors.white.withValues(alpha: 0.85),
               ),
             ),
             const SizedBox(width: 14),
@@ -2284,7 +2282,7 @@ class _ModuleCard extends StatelessWidget {
                     subtitle,
                     style: GoogleFonts.montserrat(
                       fontWeight: FontWeight.w700,
-                      color: Colors.white.withOpacity(0.72),
+                      color: Colors.white.withValues(alpha: 0.72),
                       fontSize: 13,
                       height: 1.2,
                     ),
@@ -2297,7 +2295,7 @@ class _ModuleCard extends StatelessWidget {
               minutes,
               style: GoogleFonts.montserrat(
                 fontWeight: FontWeight.w800,
-                color: Colors.white.withOpacity(0.70),
+                color: Colors.white.withValues(alpha: 0.70),
                 fontSize: 12.5,
               ),
             ),
@@ -2341,14 +2339,14 @@ class _SlideToContinueState extends State<_SlideToContinue> {
       height: h,
       child: DecoratedBox(
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.08),
+          color: Colors.white.withValues(alpha: 0.08),
           borderRadius: BorderRadius.circular(widget.radius),
-          border: Border.all(color: Colors.white.withOpacity(0.12)),
+          border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
           boxShadow: [
             BoxShadow(
               blurRadius: 18,
               offset: const Offset(0, 10),
-              color: Colors.black.withOpacity(0.16),
+              color: Colors.black.withValues(alpha: 0.16),
             ),
           ],
         ),
@@ -2358,7 +2356,7 @@ class _SlideToContinueState extends State<_SlideToContinue> {
               child: Text(
                 _done ? "Validé" : "Glissez pour continuer",
                 style: GoogleFonts.montserrat(
-                  color: Colors.white.withOpacity(_done ? 0.92 : 0.82),
+                  color: Colors.white.withValues(alpha: _done ? 0.92 : 0.82),
                   fontWeight: FontWeight.w900,
                   fontSize: 13.8,
                   letterSpacing: -0.1,
@@ -2415,8 +2413,8 @@ class _FadeSlideIn extends StatefulWidget {
   const _FadeSlideIn({
     required this.child,
     this.delay = Duration.zero,
-    this.fromY = 10,
-    this.duration = const Duration(milliseconds: 420),
+    this.fromY = 24.0,
+    this.duration = const Duration(milliseconds: 400),
   });
 
   final Widget child;
@@ -2529,11 +2527,11 @@ class _DynamicBlobsBackgroundState extends State<_DynamicBlobsBackground>
         final dy2 = lerpDouble(0.22, -0.06, t)!;
 
         final c1 = widget.isDark
-            ? Colors.white.withOpacity(0.06)
-            : Colors.white.withOpacity(0.10);
+            ? Colors.white.withValues(alpha: 0.06)
+            : Colors.white.withValues(alpha: 0.10);
         final c2 = widget.isDark
-            ? Colors.white.withOpacity(0.04)
-            : Colors.white.withOpacity(0.08);
+            ? Colors.white.withValues(alpha: 0.04)
+            : Colors.white.withValues(alpha: 0.08);
 
         return Stack(
           children: [

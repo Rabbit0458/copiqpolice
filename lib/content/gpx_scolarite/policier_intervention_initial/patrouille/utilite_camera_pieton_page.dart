@@ -88,41 +88,41 @@ class UtiliteCameraPietonPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Références principales : "),
+                TextSpan(text: "Références principales : "),
                 TextSpan(
                   text:
                       "articles L. 241-1 et R. 241-1 et suivants du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Textes internes (doctrine d’emploi) : "),
+                TextSpan(text: "Textes internes (doctrine d’emploi) : "),
                 TextSpan(
                   text:
                       "Instruction conjointe DGPN 2022-1793D et DGGN 044679 du 14/09/2022",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " relative à l’emploi des caméras piétons ; ",
                 ),
                 TextSpan(
                   text: "Note DGPN 2022-1793D du 28/10/2022",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " relative à l’emploi des caméras piétons mises en dotation dans les services de la police nationale.",
                 ),
@@ -161,31 +161,31 @@ class UtiliteCameraPietonPage extends StatelessWidget {
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le cadre légal prévoit un usage très large : les enregistrements audiovisuels via caméra piéton "
                 "sont possibles dans toutes les missions de police, en tous lieux.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans un domicile, la captation audiovisuelle se limite strictement à l’intervention et aux personnes concernées.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Un intérêt opérationnel avéré"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Un intérêt opérationnel avéré"),
+              _Paragraph(
                 "De nombreux RETEX (retours d’expérience) et comptes rendus d’enquête administrative mettent en évidence "
                 "l’intérêt, pour le policier, d’activer sa caméra piéton.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Point clé",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’enregistrement rétroactif des 30 secondes avant déclenchement (mémoire tampon) est une raison supplémentaire d’utiliser la caméra.",
                   ),
@@ -201,54 +201,54 @@ class UtiliteCameraPietonPage extends StatelessWidget {
             cardColor: cardEx,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "1) Faux signalement / mise en cause de l’action",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Lors d’un contrôle d’identité, un individu se jette contre un mur et se cogne plusieurs fois la tête "
                 "en criant à son fils : « Appelle l’avocat, on va dire qu’ils nous ont frappés ».",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Le fait d’indiquer qu’un agent filme l’intervention a eu un effet immédiat : l’individu s’est calmé.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Manifestation : caractériser et identifier"),
-              const _Paragraph(
+              _SubTitle("2) Manifestation : caractériser et identifier"),
+              _Paragraph(
                 "Lors d’une manifestation, un individu jette une pierre au visage d’un policier, frappe un autre agent "
                 "et dégrade un véhicule.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "L’exploitation de la vidéo permet de caractériser l’infraction, d’identifier l’auteur et de l’interpeller.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) Usage du PIE : remise en contexte"),
-              const _Paragraph(
+              _SubTitle("3) Usage du PIE : remise en contexte"),
+              _Paragraph(
                 "Des policiers ont été contraints de faire usage du PIE pour maîtriser un mis en cause. "
                 "Des images sorties du contexte, diffusées sur les réseaux sociaux, cherchaient à faire croire à un usage illégitime de la force.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "L’enregistrement de la caméra piéton a permis de démontrer le bien-fondé de l’action des policiers.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Référence : "),
-                  const TextSpan(
+                  TextSpan(text: "Référence : "),
+                  TextSpan(
                     text: "Communication RETEX DCSP",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -261,26 +261,26 @@ class UtiliteCameraPietonPage extends StatelessWidget {
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La caméra piéton, activée conformément à la doctrine d’emploi, est une nécessité pour le policier "
                 "et doit devenir un réflexe.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("En résumé"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("En résumé"),
+              _IntroBullet(
                 text:
                     "Elle contribue à la protection du policier et peut établir la preuve des comportements délictueux des usagers.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Dans un environnement où tout est filmé et souvent détourné pour décrédibiliser l’action, disposer d’images issues des caméras piétons sécurise l’intervention.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette fiche n’édicte pas de prescriptions contraignantes ou exclusives : elle apporte un éclairage et une aide dans l’accomplissement des activités professionnelles.",
                   ),
@@ -296,24 +296,24 @@ class UtiliteCameraPietonPage extends StatelessWidget {
             cardColor: cardRef,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Formation"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Formation"),
+              _Paragraph(
                 "Plate-forme eCampus : Cours / Applications police / Caméras piétons.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Lien",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "https://e-campus.interieur.gouv.fr/course/view.php?id=2318",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Esprit AMARIS"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Esprit AMARIS"),
+              _Paragraph(
                 "Partageons nos expériences ; renforçons notre sécurité.",
               ),
             ],
@@ -352,10 +352,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -420,7 +420,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -463,7 +463,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -525,7 +525,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -557,7 +557,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -570,7 +570,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

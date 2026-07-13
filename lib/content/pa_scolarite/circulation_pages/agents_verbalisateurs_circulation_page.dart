@@ -116,58 +116,58 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles 12 et 14 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définissent la mission de police judiciaire et la compétence générale pour rechercher et constater les infractions.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 21 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : encadre l’action des agents de police judiciaire (APJ) dans la constatation des infractions.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 21-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixe les règles relatives aux agents de police judiciaire adjoints (APJA).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 429 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : précise la valeur probante des procès-verbaux et rapports (régularité, compétence, constatations personnelles).",
                 ),
@@ -202,32 +202,32 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le code de procédure pénale confère aux O.P.J., A.P.J. et A.P.J.A. une compétence générale "
                 "pour constater les infractions à la loi pénale, y compris celles du domaine routier.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Qui peut rédiger quoi ? (règles essentielles)"),
-              const SizedBox(height: 6),
+              SizedBox(height: 12),
+              _SubTitle("Qui peut rédiger quoi ? (règles essentielles)"),
+              SizedBox(height: 6),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "OPJ : procès-verbal « ordinaire » ou PVe — délits et contraventions à la circulation routière.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "APJ : procès-verbal « ordinaire » ou PVe — contraventions au code de la route dont la liste est fixée par le code de la route.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "APJA (policiers adjoints / réservistes opérationnels non OPJ ou APJ) : rapport — notamment pour les contraventions pour lesquelles ils ne sont pas autorisés à dresser procès-verbal.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En dehors de leur ressort territorial, les OPJ, APJ et APJA peuvent rendre compte par rapport au procureur de la République compétent de toute infraction dont ils ont été témoins.",
                   ),
@@ -243,40 +243,40 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
             cardColor: cardTypes,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Procès-verbal électronique (PVe)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Procès-verbal électronique (PVe)"),
+              _Paragraph(
                 "Toutes les contraventions soumises à la procédure de l’amende forfaitaire "
                 "(ex : stationnement, vitesse, équipements…) peuvent être relevées au moyen d’appareils électroniques sécurisés.",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text:
                     "Terminal mobile NEO 2 (smartphone/tablette) : appareil portatif avec écran tactile permettant notamment de recueillir la signature du contrevenant.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "IHM web (interface homme-machine/web) : application informatique permettant notamment de constater certaines infractions au service (ex : non justification dans les 5 jours de l’attestation d’assurance).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’application PVe automatise et dématérialise la procédure, de la constatation à l’envoi de l’avis de contravention "
                 "au domicile du contrevenant (ou du titulaire du certificat d’immatriculation) par le centre national de traitement de Rennes.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Procès-verbal « ordinaire »"),
-              const _Paragraph(
+              _SubTitle("2) Procès-verbal « ordinaire »"),
+              _Paragraph(
                 "Le procès-verbal « ordinaire », rédigé via le logiciel de rédaction de procédure, est utilisé pour constater :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Les délits."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Les délits."),
+              _BulletPoint(
                 text:
                     "Les contraventions non forfaitisées (plusieurs infractions simultanées dont au moins une ne peut donner lieu à amende forfaitaire).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les contraventions de 5e classe, et celles de 4e classe entraînant S.P.C. sur instructions du parquet.",
               ),
@@ -290,95 +290,95 @@ class AgentsVerbalisateursCirculationPage extends StatelessWidget {
             cardColor: cardProb,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Selon "),
+                TextSpan(text: "Selon "),
                 TextSpan(
                   text: "l’article 429 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", le procès-verbal ou le rapport n’a valeur probante que s’il est régulier en la forme, "
                       "si l’auteur agit dans l’exercice de ses fonctions et rapporte, sur une matière de sa compétence, "
                       "ce qu’il a vu, entendu ou constaté personnellement.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) Délits"),
+              _SubTitle("1) Délits"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les procès-verbaux et rapports constatant les délits ne valent qu’à titre de simples renseignements — ",
                 ),
                 TextSpan(
                   text: "article 430 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Contraventions"),
+              _SubTitle("2) Contraventions"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En règle générale, les procès-verbaux et rapports constatant les contraventions font foi jusqu’à preuve contraire — ",
                 ),
                 TextSpan(
                   text: "article 537 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En matière routière, les agents verbalisateurs autres que les OPJ et APJ doivent être assermentés afin que les procès-verbaux conservent leur valeur probante — ",
                 ),
                 TextSpan(
                   text: "article L. 130-7 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article 537 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "La prestation de serment initiale des APJA n’a pas à être renouvelée en cas de changement de lieu d’affectation.\n\n"
                 "Le défaut d’assermentation modifie la force probante : l’acte ne fait plus foi jusqu’à preuve contraire, "
                 "mais ne vaut qu’à titre de simples renseignements.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Tout procès-verbal doit être soigneusement rédigé en respectant le formalisme imposé. "
                         "Les erreurs (date, lieu, chiffres, immatriculation, etc.) peuvent créer un doute et conduire à l’annulation de la procédure.",
@@ -605,10 +605,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -620,7 +619,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -642,10 +640,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

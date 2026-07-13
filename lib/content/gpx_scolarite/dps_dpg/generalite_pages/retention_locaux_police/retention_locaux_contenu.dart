@@ -7,7 +7,6 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/reten
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/retention_locaux_police/retention_mesures_admin_page.dart';
 
 // ===================== PAGE QUIZ RÉTENTION (à créer si besoin) =====================
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_retention_locaux_page.dart';
 
 /// =============================================================
 ///  COP'IQ — Rétention dans les locaux de police (hub)
@@ -28,7 +27,7 @@ class RetentionLocauxContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -162,8 +161,8 @@ class _ModuleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -196,8 +195,8 @@ class _ModuleCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),
@@ -252,7 +251,7 @@ class _ModuleCard extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           fontSize: 13,
                           height: 1.25,
-                          color: Colors.white.withOpacity(.85),
+                          color: Colors.white.withValues(alpha: .85),
                         ),
                       ),
                     ),
@@ -274,7 +273,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const StadiumBorder(),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
@@ -313,16 +312,16 @@ class _QuizCTA extends StatelessWidget {
 
     final Color base = isDark ? Colors.white : Colors.black;
     final Color cardBg = isDark
-        ? const Color(0xFF0C0F14).withOpacity(.72)
-        : cs.surface.withOpacity(.92);
+        ? const Color(0xFF0C0F14).withValues(alpha: .72)
+        : cs.surface.withValues(alpha: .92);
     final Color stroke = isDark
-        ? Colors.white.withOpacity(.08)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .08)
+        : Colors.black.withValues(alpha: .06);
     final Color shadow = isDark
-        ? Colors.black.withOpacity(.35)
-        : Colors.black.withOpacity(.08);
+        ? Colors.black.withValues(alpha: .35)
+        : Colors.black.withValues(alpha: .08);
     final Color textMain = isDark ? Colors.white : cs.onSurface;
-    final Color textSub = textMain.withOpacity(.72);
+    final Color textSub = textMain.withValues(alpha: .72);
 
     final Gradient badgeGrad = LinearGradient(
       begin: Alignment.topLeft,
@@ -340,7 +339,7 @@ class _QuizCTA extends StatelessWidget {
           child: InkWell(
             onTap: onTap,
             borderRadius: BorderRadius.circular(18),
-            splashColor: base.withOpacity(.06),
+            splashColor: base.withValues(alpha: .06),
             highlightColor: Colors.transparent,
             child: Container(
               padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
@@ -368,8 +367,8 @@ class _QuizCTA extends StatelessWidget {
                       boxShadow: [
                         BoxShadow(
                           color: isDark
-                              ? const Color(0xFF3182CE).withOpacity(.35)
-                              : const Color(0xFF2B6CB0).withOpacity(.25),
+                              ? const Color(0xFF3182CE).withValues(alpha: .35)
+                              : const Color(0xFF2B6CB0).withValues(alpha: .25),
                           blurRadius: 16,
                           offset: const Offset(0, 6),
                         ),
@@ -424,8 +423,8 @@ class _QuizCTA extends StatelessWidget {
                     height: 36,
                     decoration: BoxDecoration(
                       shape: BoxShape.circle,
-                      color: base.withOpacity(.06),
-                      border: Border.all(color: base.withOpacity(.12)),
+                      color: base.withValues(alpha: .06),
+                      border: Border.all(color: base.withValues(alpha: .12)),
                     ),
                     child: Icon(
                       Icons.arrow_forward_rounded,

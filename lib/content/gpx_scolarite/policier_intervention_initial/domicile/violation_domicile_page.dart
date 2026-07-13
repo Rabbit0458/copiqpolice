@@ -90,30 +90,30 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la violation de domicile commise par un particulier (introduction ou maintien).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime l’introduction (ou la tentative) dans le domicile d’autrui contre le gré de l’habitant, lorsqu’elle est commise par une personne dépositaire de l’autorité publique / chargée d’une mission de service public, hors les cas prévus par la loi.",
                 ),
@@ -129,81 +129,81 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le domicile est l’endroit où une personne a le droit de se dire chez elle, qu’elle y habite ou non, quel que soit le titre juridique d’occupation et l’affectation des locaux. ",
                 ),
                 TextSpan(
                   text: "Article 226-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La protection vise aussi bien le domicile « légal » que la résidence, un lieu de séjour occasionnel, "
                 "et peut concerner un lieu occupé à titre de propriétaire ou d’occupant précaire, à condition que le lieu protège l’intimité.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La notion peut s’étendre à des logements inoccupés contenant des meubles (ex. table, chaises, lit, canapé, électroménager…).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Jurisprudence : la chambre criminelle développe aussi l’idée de « lieu normalement clos » : un lieu non constitutif d’un domicile n’est pas pour autant libre d’accès pour l’agent, s’il est normalement clos et protège une sphère privée.",
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Exemples : constituent un domicile"),
-              const _IntroBullet(text: "Appartement loué."),
-              const _IntroBullet(
+              _SubTitle("Exemples : constituent un domicile"),
+              _IntroBullet(text: "Appartement loué."),
+              _IntroBullet(
                 text:
                     "Maison de campagne / vacances, demeure temporairement inoccupée.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Dépendances prolongeant l’habitation (débarras, garage, balcon/terrasse, remise…), dans l’enceinte ou à proximité immédiate.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Box fermé non attenant / garage en parking souterrain.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Logement occupé sans titre mais pacifiquement.",
               ),
-              const _IntroBullet(text: "Chambre d’hôtel."),
-              const _IntroBullet(
+              _IntroBullet(text: "Chambre d’hôtel."),
+              _IntroBullet(
                 text:
                     "Locaux professionnels : protégés sauf lorsqu’ils sont ouverts au public pendant les heures d’ouverture.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Véhicule réellement aménagé pour l’habitation.",
               ),
-              const _IntroBullet(text: "Caravane, roulotte, tente."),
-              const _IntroBullet(
+              _IntroBullet(text: "Caravane, roulotte, tente."),
+              _IntroBullet(
                 text: "Yacht/voilier/péniche (navire habitable).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Exemples : ne constituent pas un domicile"),
-              const _IntroBullet(
+              _SubTitle("Exemples : ne constituent pas un domicile"),
+              _IntroBullet(
                 text: "Logement vide de meubles entre deux locations.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Immeuble en construction, immeuble neuf jamais occupé.",
               ),
-              const _IntroBullet(text: "Immeuble en cours de démolition."),
-              const _IntroBullet(text: "Véhicule non aménagé."),
+              _IntroBullet(text: "Immeuble en cours de démolition."),
+              _IntroBullet(text: "Véhicule non aménagé."),
             ],
           ),
 
@@ -215,58 +215,58 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’introduction (ou le maintien) dans le domicile d’autrui, par manœuvres/menaces/voies de fait/contrainte, hors les cas où la loi le permet, est punie de ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende",
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Élément matériel"),
-              const _Paragraph(
+              _SubTitle("A) Élément matériel"),
+              _Paragraph(
                 "Deux comportements sont réprimés :\n"
                 "• L’introduction frauduleuse dans le domicile d’autrui.\n"
                 "• Le maintien dans le domicile d’autrui après une introduction réalisée dans ces conditions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Introduction",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Entrer illicitement dans un domicile, ",
                   ),
-                  const TextSpan(text: "à l’aide de "),
-                  const TextSpan(
+                  TextSpan(text: "à l’aide de "),
+                  TextSpan(
                     text: "manœuvres, menaces, voies de fait ou contrainte",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (ruse, violences, escalade, fausses clés, effraction…), ",
                   ),
-                  const TextSpan(text: "en dehors des cas prévus par la loi "),
-                  const TextSpan(text: "et contre le gré de l’occupant."),
+                  TextSpan(text: "en dehors des cas prévus par la loi "),
+                  TextSpan(text: "et contre le gré de l’occupant."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Maintien",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Rester dans le domicile d’autrui après une introduction réalisée par manœuvres/menaces/voies de fait/contrainte. "
@@ -274,35 +274,35 @@ class ViolationDomicilePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Hors les cas où la loi le permet"),
+              _SubTitle("B) Hors les cas où la loi le permet"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Exemples cités : obligation de porter secours / empêcher la commission d’un crime ou délit contre une personne — ",
                 ),
                 TextSpan(
                   text: "article 223-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Élément moral"),
-              const _Paragraph(
+              _SubTitle("C) Élément moral"),
+              _Paragraph(
                 "L’auteur doit avoir :\n"
                 "• conscience de commettre un acte illicite ;\n"
                 "• la volonté de pénétrer ou de se maintenir dans le domicile d’autrui malgré l’opposition de l’occupant, ou à son insu.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Infraction continue : la violation de domicile permet d’agir dans le cadre d’une enquête de flagrance tant que l’occupation illicite perdure.",
@@ -320,22 +320,22 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Lorsque le délit est commis pour des raisons liées au racisme, à la xénophobie, à la religion, "
                 "au sexisme, à l’orientation sexuelle ou à l’identité de genre, le maximum de la peine privative de liberté encourue est relevé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Conformément aux "),
+                TextSpan(text: "Conformément aux "),
                 TextSpan(
                   text: "articles 132-76 et 132-77 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -348,26 +348,26 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines — infraction simple"),
+            children: const [
+              _SubTitle("Peines — infraction simple"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines : "),
-                const TextSpan(
+                TextSpan(text: "Peines : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : OUI."),
-              const _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : OUI."),
+              _BulletPoint(text: "Complicité : OUI."),
             ],
           ),
 
@@ -379,73 +379,73 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le terme « fonctionnaire » est entendu largement : personne dépositaire de l’autorité publique "
                 "(ex. policier actif, policier adjoint) ou chargée d’une mission de service public (ex. sapeur-pompier), "
                 "agissant dans l’exercice ou à l’occasion de l’exercice de ses fonctions/mission.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Élément matériel"),
-              const _BulletPoint(
+              _SubTitle("A) Élément matériel"),
+              _BulletPoint(
                 text:
                     "Introduction (ou tentative d’introduction) dans le domicile d’autrui : le simple franchissement du seuil peut suffire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Commis par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Contre le gré de l’habitant et hors les cas prévus par la loi.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Élément moral"),
-              const _Paragraph(
+              _SubTitle("B) Élément moral"),
+              _Paragraph(
                 "L’auteur doit avoir :\n"
                 "• conscience d’agir en dehors des cas prévus par la loi ;\n"
                 "• volonté de pénétrer dans le domicile malgré l’opposition de l’occupant.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Répression"),
+              _SubTitle("C) Répression"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines : "),
-                const TextSpan(
+                TextSpan(text: "Peines : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 432-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "NOTA : si le délit est commis pour des raisons liées au racisme/xénophobie/religion/sexisme/orientation sexuelle/identité de genre, le maximum encouru est relevé selon ",
                   ),
                   TextSpan(
                     text: "les articles 132-76 et 132-77 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : OUI."),
-              const _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : OUI."),
+              _BulletPoint(text: "Complicité : OUI."),
             ],
           ),
 
@@ -457,146 +457,146 @@ class ViolationDomicilePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les dispositions permettant l’introduction dans un domicile reposent soit sur l’obligation de porter secours, "
                 "soit sur la nécessité d’exercer les missions de police.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Cas possibles de jour comme de nuit (péril / urgence)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "1) Réclamation depuis l’intérieur (appel au secours) — ",
                 ),
                 TextSpan(
                   text: "article 59 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : cris/hurlements… l’introduction peut être justifiée même si l’appel s’avère fantaisiste.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "2) Maison atteinte ou menacée par un incendie ou une inondation : la réclamation de l’intérieur n’est pas nécessaire ; "
                 "le péril peut être ignoré des occupants.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "3) Assistance à personne en péril — "),
+                TextSpan(text: "3) Assistance à personne en péril — "),
                 TextSpan(
                   text: "article 223-6 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : indices laissant croire à un péril grave dans un domicile (appel sans réponse, odeur suspecte, absence anormale d’une personne seule…).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "4) Police administrative (danger imminent + certificat médical) — ",
                 ),
                 TextSpan(
                   text: "article L. 3213-2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : intervention possible de nuit, notamment pour conduite en milieu psychiatrique (soins sans consentement) dans les conditions prévues.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "5) Visites domiciliaires / perquisitions / saisies en flagrance sur autorisation JLD — ",
                 ),
                 TextSpan(
                   text: "articles 59-1 et 706-89 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : possible en dehors des heures prévues à l’article 59 CPP, sur ordonnance spécialement motivée (à la requête du procureur).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "6) État de nécessité : pénétrer pour faire cesser un danger actuel ou imminent (ex. fuite de gaz, alarme intempestive causant un trouble intolérable…).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Cas uniquement pendant les heures légales (6h → 21h)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Les heures légales sont fixées entre 6h et 21h — ",
                 ),
                 TextSpan(
                   text: "article 59 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _IntroBullet(
                 text:
                     "1) Exécution d’un mandat d’amener, d’arrêt, de recherche : visite des lieux uniquement pour appréhender la personne visée, au dernier domicile connu.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "2) Exécution des décisions portant condamnation.",
               ),
               _IntroBullet(
                 text:
                     "3) Exécution d’une contrainte judiciaire — art. 749 et suivants et D. 13-4° CPP.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Perquisition en enquête préliminaire",
                 bodySpans: [
-                  const TextSpan(text: "Régime — "),
+                  TextSpan(text: "Régime — "),
                   TextSpan(
                     text: "articles 75 et 76 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : pénétration soumise à l’autorisation préalable et écrite de la personne chez laquelle l’opération a lieu. "
                         "En cas de crime ou délit puni d’au moins 3 ans, l’OPJ (uniquement) peut, sur autorisation du JLD, effectuer une perquisition sans assentiment.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les opérations commencées avant 21h peuvent se poursuivre après cette heure.",
               ),
             ],
@@ -635,10 +635,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -703,7 +703,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -746,7 +746,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -808,7 +808,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -840,7 +840,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -853,7 +853,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

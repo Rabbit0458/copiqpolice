@@ -90,25 +90,25 @@ class RegimeJuridiqueReglementationAmenagementPage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Il n’existe pas de liberté publique « absolue » : une liberté sans limites ferait disparaître l’État "
                 "au profit de l’anarchie. Les libertés sont donc garanties, mais encadrées, pour permettre la vie en société.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Déclaration de 1789 rappelle déjà la logique : la liberté consiste à pouvoir faire tout ce qui ne nuit pas à autrui — ",
                 ),
                 TextSpan(
                   text: "Art. 4 de la DDHC",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -121,91 +121,91 @@ class RegimeJuridiqueReglementationAmenagementPage extends StatelessWidget {
             cardColor: cardChap1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La réglementation des libertés publiques relève principalement du législateur, et subsidiairement du pouvoir exécutif.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "1.1 — Rôle du législateur (compétence de principe)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Seule la loi peut fixer des « bornes » aux libertés publiques — ",
                 ),
                 TextSpan(
                   text: "Art. 4 de la DDHC",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Constitution de 1958 confirme : la loi fixe les règles concernant les droits civiques et les garanties fondamentales accordées aux citoyens pour l’exercice des libertés publiques — ",
                 ),
                 TextSpan(
                   text: "Art. 34 de la Constitution",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Ce que le législateur peut faire"),
-              const _BulletPoint(
+              _SubTitle("Ce que le législateur peut faire"),
+              _BulletPoint(
                 text:
                     "Créer de nouvelles libertés (dans le respect de la hiérarchie des normes).",
               ),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exemples : "),
+                  TextSpan(text: "Exemples : "),
                   TextSpan(
                     text:
                         "loi n° 70-643 du 17 juillet 1970 (vie privée) — art. 9 du Code civil",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "loi n° 2024-200 du 8 mars 2024 (IVG).",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Définir les modalités concrètes d’exercice (ex. droit de grève encadré par des lois).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Restreindre une liberté (même constitutionnelle) pour concilier un autre objectif constitutionnel (ex. continuité du service public).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Supprimer une liberté sous contrôle (ex. interdiction du droit de grève de certains fonctionnaires).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "Limites : remise en cause de situations existantes",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le législateur ne peut remettre en cause des situations intéressant une liberté publique que :\n"
                 "• si elles ont été illégalement acquises ;\n"
                 "• ou si cette remise en cause est réellement nécessaire pour atteindre l’objectif constitutionnel poursuivi.",
@@ -221,33 +221,33 @@ class RegimeJuridiqueReglementationAmenagementPage extends StatelessWidget {
             cardColor: cardExe,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Si la loi fixe le cadre, le pouvoir réglementaire est essentiel pour la mise en œuvre : "
                 "il complète la loi et peut aussi réglementer pour le maintien de l’ordre public.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Deux hypothèses principales"),
-              const _BulletPoint(
+              _SubTitle("Deux hypothèses principales"),
+              _BulletPoint(
                 text:
                     "Compléter la loi (ex. le code de la route : partie réglementaire complète la partie législative).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Maintien de l’ordre public (hypothèse la plus importante).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Autorités compétentes"),
-              const _Paragraph(
+              _SubTitle("Autorités compétentes"),
+              _Paragraph(
                 "Au plan national : Président de la République / Premier ministre.\n"
                 "Au plan local : préfet, maire, président du conseil départemental (selon compétences).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Période normale : règles de contrôle"),
-              const _BulletPoint(
+              _SubTitle("Période normale : règles de contrôle"),
+              _BulletPoint(
                 text:
                     "Interdiction générale et absolue d’une liberté : impossible.",
               ),
@@ -255,18 +255,18 @@ class RegimeJuridiqueReglementationAmenagementPage extends StatelessWidget {
                 text:
                     "Une interdiction temporaire n’est légale que si elle est indispensable au maintien de l’ordre public.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudence : "),
+                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
                     text: "C.E., 19 mai 1933, Benjamin",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " — plus une liberté est fondamentale, plus le contrôle du juge est exigeant.",
                   ),
@@ -284,172 +284,172 @@ class RegimeJuridiqueReglementationAmenagementPage extends StatelessWidget {
             cardColor: cardException,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "En période de troubles graves, la réglementation des libertés publiques s’intensifie. "
                 "Les régimes exceptionnels élargissent les pouvoirs de police et peuvent restreindre certaines libertés.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) État de siège"),
+              _SubTitle("A) État de siège"),
               _Paragraph.rich([
-                const TextSpan(text: "Prévu par "),
+                TextSpan(text: "Prévu par "),
                 TextSpan(
                   text: "l’Art. 36 de la Constitution",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (décrété en Conseil des ministres ; prorogation > 12 jours = Parlement).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Conditions : "),
+                TextSpan(text: "Conditions : "),
                 TextSpan(
                   text: "art. L. 2121-1 du Code de la défense",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — péril imminent résultant d’une guerre étrangère ou d’une insurrection armée.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Conséquences : transfert de pouvoirs aux autorités militaires ; extension des pouvoirs de police (perquisitions jour/nuit, censure, contrôle correspondances…) ; réactivation des juridictions militaires.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Pouvoirs exceptionnels (état de crise)"),
+              _SubTitle("B) Pouvoirs exceptionnels (état de crise)"),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text: "Art. 16 de la Constitution",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — menace grave et immédiate + interruption du fonctionnement régulier des pouvoirs publics.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Le Président prend les mesures exigées par les circonstances (après consultations prévues).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Régime risqué pour les libertés : contrôle limité (acte de gouvernement) et durée non précisée dans la Constitution.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) État d’urgence"),
+              _SubTitle("C) État d’urgence"),
               _Paragraph.rich([
-                const TextSpan(text: "Prévu par "),
+                TextSpan(text: "Prévu par "),
                 TextSpan(
                   text: "la loi n° 55-385 du 3 avril 1955",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — péril imminent (atteintes graves à l’ordre public) ou calamité publique.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Déclaration initiale 12 jours ; prorogation par une loi fixant la durée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Permet des restrictions ciblées (assignations à résidence, perquisitions administratives, interdictions…).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) État d’urgence sanitaire"),
+              _SubTitle("D) État d’urgence sanitaire"),
               _Paragraph.rich([
-                const TextSpan(text: "Créé par "),
+                TextSpan(text: "Créé par "),
                 TextSpan(
                   text: "la loi n° 2020-290 du 23 mars 2020",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " pour faire face à l’épidémie de Covid-19 (mesures exceptionnelles limitant certaines libertés).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("E) Théorie des circonstances exceptionnelles"),
-              const _Paragraph(
+              _SubTitle("E) Théorie des circonstances exceptionnelles"),
+              _Paragraph(
                 "Théorie jurisprudentielle : en situation anormale (guerre, troubles, grèves, cataclysmes, épidémies…), "
                 "le juge admet une extension des pouvoirs de police, avec des atteintes possibles aux libertés.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Arrêts repères : "),
+                  TextSpan(text: "Arrêts repères : "),
                   TextSpan(
                     text: "C.E., 28 mai 1918, Heyriès",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "C.E., 14 déc. 1943, Devaux",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text:
                         "C.E., 7 déc. 1979, Société « Les Fils de Henri Ramel »",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; "),
+                  TextSpan(text: " ; "),
                   TextSpan(
                     text: "C.E., 18 mai 1983, Félix Rodes",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("F) Mesure intermédiaire : plan Vigipirate"),
-              const _Paragraph(
+              _SubTitle("F) Mesure intermédiaire : plan Vigipirate"),
+              _Paragraph(
                 "Plan gouvernemental (Premier ministre) : dispositif permanent de vigilance, prévention et protection contre le terrorisme. "
                 "Il s’appuie sur l’évaluation de la menace et organise une réaction coordonnée.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Niveaux depuis 1er décembre 2016 : Vigilance / Sécurité renforcée – risque attentat / Urgence attentat.",
               ),
@@ -464,137 +464,137 @@ class RegimeJuridiqueReglementationAmenagementPage extends StatelessWidget {
             cardColor: cardAmenagement,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Aménager les libertés publiques, c’est fixer des limites à leur exercice. "
                 "En démocratie, deux grandes techniques existent : le régime répressif et le régime préventif.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2.1 — Régime répressif (le plus favorable)"),
-              const _BulletPoint(
+              _SubTitle("2.1 — Régime répressif (le plus favorable)"),
+              _BulletPoint(
                 text:
                     "Principe : la liberté est la règle ; seuls les abus sont sanctionnés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si l’abus constitue une infraction : sanction prononcée par un juge.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si le trouble à l’ordre public n’est pas une infraction : le préfet ou le maire peut interdire pour faire cesser le trouble.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text: "Art. 5 de la DDHC",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — « tout ce qui n’est pas défendu par la loi ne peut être empêché ».",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2.2 — Régime préventif"),
-              const _BulletPoint(
+              _SubTitle("2.2 — Régime préventif"),
+              _BulletPoint(
                 text: "Objectif : éviter les abus (on agit avant, pas après).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’exercice de la liberté dépend d’une décision administrative (ordre public).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2.2.1 — Autorisation préalable"),
-              const _Paragraph(
+              _SubTitle("2.2.1 — Autorisation préalable"),
+              _Paragraph(
                 "Régime rigoureux : sans autorisation (ou en cas de refus), la liberté ne s’exerce pas.\n"
                 "Exemples : visa d’exploitation cinématographique, permis de construire, permis de conduire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2.2.2 — Déclaration préalable"),
-              const _Paragraph(
+              _SubTitle("2.2.2 — Déclaration préalable"),
+              _Paragraph(
                 "Moins attentatoire : l’exercice est soumis à une déclaration à l’administration.\n"
                 "Exemples : manifestations, associations, préavis de grève, déclaration au parquet pour la presse.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2.2.3 — Interdiction préalable"),
-              const _Paragraph(
+              _SubTitle("2.2.3 — Interdiction préalable"),
+              _Paragraph(
                 "L’autorité administrative peut interdire :\n"
                 "• au titre d’une police spéciale (texte) ;\n"
                 "• ou au titre de la police générale (sans texte) si l’ordre public l’exige.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Police spéciale : "),
+                TextSpan(text: "Police spéciale : "),
                 TextSpan(
                   text: "art. L. 211-4 du CSI",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (interdiction d’une manifestation si risque de trouble).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Dissolution administrative : "),
+                TextSpan(text: "Dissolution administrative : "),
                 TextSpan(
                   text: "art. L. 212-1 du CSI",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans les communes à police étatisée, seul le préfet est compétent pour interdire une manifestation. Référence : ",
                   ),
                   TextSpan(
                     text: "C.E., 28 avril 1989, Commune de Montgeron",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Contrôle du juge : "),
-                  const TextSpan(
+                  TextSpan(text: "Contrôle du juge : "),
+                  TextSpan(
                     text:
                         "compétence, forme, but, motivations, et examen détaillé des circonstances. Exemple majeur : ",
                   ),
                   TextSpan(
                     text: "C.E., 19 mai 1933, Benjamin",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " — l’interdiction n’est légale que si elle est l’unique moyen de maintenir l’ordre.",
                   ),
@@ -636,10 +636,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -704,7 +704,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -747,7 +747,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -809,7 +809,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -820,10 +820,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -835,13 +834,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -854,13 +852,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -26,9 +26,9 @@ class PortOuUsageArmePage extends StatelessWidget {
         ? const Color(0xFF0F1E1B)
         : const Color(0xFFF0FFFB);
 
-    final Color accentBlue = const Color(0xFF1565C0);
-    final Color accentAmber = const Color(0xFFF9A825);
-    final Color accentTeal = const Color(0xFF00897B);
+    const Color accentBlue = Color(0xFF1565C0);
+    const Color accentAmber = Color(0xFFF9A825);
+    const Color accentTeal = Color(0xFF00897B);
 
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0B1B3A);
 
@@ -70,12 +70,12 @@ class PortOuUsageArmePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withOpacity(
+                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                       .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withOpacity(
+                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                         .08,
                       ),
                     ),
@@ -160,13 +160,13 @@ class PortOuUsageArmePage extends StatelessWidget {
                           "Exemples : baïonnettes, poignards, matraques, cannes à épée, arbalètes, coups-de-poing américains, lances-pierres de compétition, couteaux à cran d’arrêt, nerfs de bœuf, etc.",
                     ),
                     const SizedBox(height: 8),
-                    _NotaBox(
+                    const _NotaBox(
                       bodySpans: [
-                        const TextSpan(
+                        TextSpan(
                           text:
                               "Peut aussi constituer une arme un objet transformé pour en faire une : ",
                         ),
-                        const TextSpan(
+                        TextSpan(
                           text:
                               "« un couteau dont les deux côtés de la lame avaient été rendus tranchants par meulage » (Cass. crim., n° 68-91.697 du 29 janvier 1969).",
                         ),
@@ -252,226 +252,226 @@ class PortOuUsageArmePage extends StatelessWidget {
                   cardColor: cardTeal,
                   accent: accentTeal,
                   titleColor: titleColor,
-                  children: [
-                    const _Paragraph(
+                  children: const [
+                    _Paragraph(
                       "Le code pénal prévoit que la circonstance d’usage ou menace d’une arme est susceptible d’aggraver les infractions suivantes :",
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
 
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(
+                        TextSpan(
                           text: "Les tortures ou actes de barbarie (",
                         ),
                         TextSpan(
                           text: "article 222-3 10° C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "Le viol ("),
+                        TextSpan(text: "Le viol ("),
                         TextSpan(
                           text: "article 222-24 7° C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "Les agressions sexuelles ("),
+                        TextSpan(text: "Les agressions sexuelles ("),
                         TextSpan(
                           text: "article 222-28 5° C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(
+                        TextSpan(
                           text:
                               "Les agressions sexuelles sur mineur de 15 ans ou sur personne particulièrement vulnérable (",
                         ),
                         TextSpan(
                           text: "article 222-30 al. 6 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "Les violences ("),
+                        TextSpan(text: "Les violences ("),
                         TextSpan(
                           text:
                               "articles 222-8, 222-10, 222-12, 222-13 10° et 222-14-5 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "L’évasion ("),
+                        TextSpan(text: "L’évasion ("),
                         TextSpan(
                           text: "article 434-30 al. 1 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "Le concours à une évasion ("),
+                        TextSpan(text: "Le concours à une évasion ("),
                         TextSpan(
                           text: "article 434-32 al. 3 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
 
-                    const SizedBox(height: 12),
-                    const _Paragraph(
+                    SizedBox(height: 12),
+                    _Paragraph(
                       "Le code pénal prévoit que la circonstance de port d’arme est susceptible d’aggraver les infractions suivantes :",
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
 
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "Le proxénétisme ("),
+                        TextSpan(text: "Le proxénétisme ("),
                         TextSpan(
                           text: "article 225-7 al. 8 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(
+                        TextSpan(
                           text: "La participation à un attroupement (",
                         ),
                         TextSpan(
                           text: "article 431-5 al. 1 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(
+                        TextSpan(
                           text:
                               "La participation à une manifestation ou à une réunion publique (",
                         ),
                         TextSpan(
                           text: "article 431-10 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "La rébellion ("),
+                        TextSpan(text: "La rébellion ("),
                         TextSpan(
                           text: "article 433-8 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
 
-                    const SizedBox(height: 12),
-                    const _Paragraph(
+                    SizedBox(height: 12),
+                    _Paragraph(
                       "Le code pénal prévoit enfin que la circonstance d’usage, menace ou port d’une arme est susceptible d’aggraver les infractions suivantes :",
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(height: 10),
 
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "Le vol ("),
+                        TextSpan(text: "Le vol ("),
                         TextSpan(
                           text: "article 311-8 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(text: "L’extorsion ("),
+                        TextSpan(text: "L’extorsion ("),
                         TextSpan(
                           text: "article 312-5 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
                     _LawBulletRow(
                       textSpans: [
-                        const TextSpan(
+                        TextSpan(
                           text: "L’extorsion en bande organisée (",
                         ),
                         TextSpan(
                           text: "article 312-6 al. 3 C.P.",
-                          style: const TextStyle(
+                          style: TextStyle(
                             color: lawRed,
                             fontWeight: FontWeight.w900,
                           ),
                         ),
-                        const TextSpan(text: ")."),
+                        TextSpan(text: ")."),
                       ],
                     ),
 
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
                     _NotaBox(
                       bodySpans: [
-                        const TextSpan(
+                        TextSpan(
                           text:
                               "Retenir la circonstance aggravante suppose de distinguer :\n"
                               "• l’arme par nature ;\n"
@@ -503,7 +503,7 @@ class _LawBulletRow extends StatelessWidget {
 
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 6),
@@ -567,10 +567,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -635,7 +635,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -678,7 +678,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -740,7 +740,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -751,10 +751,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -766,13 +765,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -785,13 +783,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

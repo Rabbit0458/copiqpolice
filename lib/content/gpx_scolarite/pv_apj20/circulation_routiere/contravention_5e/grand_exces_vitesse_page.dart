@@ -107,16 +107,16 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 413-14-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’excès de vitesse d’au moins 50 km/h (contravention de 5e classe).",
                 ),
@@ -132,25 +132,25 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Dépassement d’au moins 50 km/h"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Dépassement d’au moins 50 km/h"),
+              _Paragraph(
                 "L’infraction est constituée lorsque la vitesse retenue (après application de la marge d’erreur) "
                 "dépasse d’au moins 50 km/h la vitesse maximale autorisée sur la voie contrôlée.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Constatation précise par cinémomètre"),
-              const _Paragraph(
+              _SubTitle("B) Constatation précise par cinémomètre"),
+              _Paragraph(
                 "Les faits doivent être relatés de manière circonstanciée. Sous peine de fragiliser la procédure, "
                 "le procès-verbal doit mentionner clairement les éléments techniques et réglementaires liés à la mesure.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "À mentionner impérativement :\n"),
-                  const TextSpan(
+                  TextSpan(text: "À mentionner impérativement :\n"),
+                  TextSpan(
                     text:
                         "• Marque, type, numéro et date de la dernière vérification du cinémomètre utilisé\n"
                         "• Vitesse maximale autorisée sur la voie contrôlée\n"
@@ -159,21 +159,21 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Rappel spécifique (jeune conducteur / probatoire) : certains conducteurs sont soumis à des vitesses maximales réduites conformément à ",
                 ),
                 TextSpan(
                   text: "l’article R. 413-5 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (ex. autoroute 110 km/h ou 100 km/h si limitation < 130, etc.).",
                 ),
@@ -206,20 +206,20 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Circonstances aggravantes (pratique PV)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Circonstances aggravantes (pratique PV)"),
+              _BulletPoint(
                 text:
                     "Si des éléments particuliers entourent les faits (conditions de circulation, danger créé, comportement du conducteur), ils doivent être décrits avec précision dans les constatations.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("B) Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("B) Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : en principe NON retenue pour une contravention, sauf texte spécial.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Complicité : en principe NON pour une contravention (la complicité vise surtout crimes/délits).",
               ),
@@ -290,23 +290,23 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lorsque le dépassement de la vitesse maximale autorisée (de 40 km/h ou plus) est établi au moyen d’un appareil homologué et que le véhicule est intercepté, le permis de conduire du conducteur doit être retenu — ",
                 ),
                 TextSpan(
                   text: "article L. 224-1 (5°) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Remettre au conducteur un exemplaire de l’avis de rétention du permis de conduire.",
               ),
@@ -321,34 +321,34 @@ class GrandExcesVitesseGPXPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "1) Dans le cadre de la rétention du permis : ",
                 ),
                 TextSpan(
                   text: "article L. 224-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". L’immobilisation peut être levée dès qu’un conducteur qualifié, proposé par le conducteur (ou l’accompagnateur de l’élève conducteur) ou éventuellement par le propriétaire, peut assurer la conduite.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "2) Mise en fourrière possible : "),
+                TextSpan(text: "2) Mise en fourrière possible : "),
                 TextSpan(
                   text: "article L. 325-1-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Lorsqu’une peine de confiscation du véhicule est encourue, l’A.P.J. peut, avec l’autorisation préalable du procureur de la République (par tout moyen), faire procéder à l’immobilisation et à la mise en fourrière du véhicule.",
                 ),
@@ -410,10 +410,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -478,7 +478,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -521,7 +521,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -583,7 +583,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -594,10 +594,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -609,13 +608,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -628,13 +626,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -680,10 +674,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -789,8 +783,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -858,10 +852,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -928,10 +922,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -970,9 +964,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1007,7 +1001,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

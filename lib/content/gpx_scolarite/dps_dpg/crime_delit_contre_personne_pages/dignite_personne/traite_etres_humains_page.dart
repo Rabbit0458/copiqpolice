@@ -108,13 +108,13 @@ class TraiteEtresHumainsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime la traite des êtres humains.",
                 ),
               ]),
@@ -129,126 +129,126 @@ class TraiteEtresHumainsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte positif envers une personne"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte positif envers une personne"),
+              _Paragraph(
                 "La traite suppose un acte positif de l’auteur : recruter, transporter, transférer, accueillir ou héberger.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Recruter : démarches pour convaincre/forcer une personne à être mise à disposition d’un tiers dans un but criminel.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transporter : assurer effectivement le déplacement de la victime d’un point à un autre.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transférer : faire en sorte que le déplacement s’effectue sans intervenir directement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Accueillir : être présent lors de l’arrivée de la victime ; Héberger : loger la victime.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Une circonstance de commission (pour un majeur)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "À l’égard d’un majeur, la traite est constituée si l’acte est commis dans au moins l’une des circonstances suivantes :",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Menace, contrainte, violence ou manœuvre dolosive",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Menace / contrainte : moyens visant à supprimer le consentement (violences morales assimilées à des violences physiques).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Violence : violence physique exercée sur la victime (ou sa famille / proche).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La menace/la contrainte doit inspirer une crainte sérieuse et immédiate (pour la victime ou un proche).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Manœuvre dolosive : agissements trompeurs amenant la victime à être abusée (ruse).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Ascendant / autorité / abus d’autorité"),
-              const _Paragraph(
+              _SubTitle("2) Ascendant / autorité / abus d’autorité"),
+              _Paragraph(
                 "Sont visées les personnes disposant :\n"
                 "• d’une autorité de droit (ex. tuteur)\n"
                 "• d’une autorité de fait (permanente ou discontinue) liée aux circonstances\n"
                 "• d’une autorité conférée par les fonctions (publiques : professeur… / privées : médecin…).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Abus d’une situation de vulnérabilité"),
-              const _Paragraph(
+              _SubTitle("3) Abus d’une situation de vulnérabilité"),
+              _Paragraph(
                 "La vulnérabilité doit être due à des causes limitativement prévues (âge, maladie, infirmité, déficience physique/psychique, grossesse) "
                 "et résulter d’un état préexistant (non créé par l’infraction). Elle doit être apparente ou connue de l’auteur.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Rémunération / avantage / promesse"),
-              const _Paragraph(
+              _SubTitle("4) Rémunération / avantage / promesse"),
+              _Paragraph(
                 "Cette circonstance suppose une forme de négociation : l’échange doit être convenu initialement (avant la remise/mise à disposition). "
                 "La rémunération peut être en numéraire ou en nature. L’avantage doit être tangible. La promesse est une anticipation et n’a pas besoin d’être contractualisée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si une « contrepartie » intervient seulement après la remise, l’infraction n’est pas constituée au titre de cette circonstance.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               _NotaBox(
                 title: "Mineur",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La traite à l’égard d’un mineur est constituée même si elle n’est commise dans aucune des circonstances 1° à 4°.",
                   ),
-                  const TextSpan(text: " — "),
-                  const TextSpan(
+                  TextSpan(text: " — "),
+                  TextSpan(
                     text: "article 225-4-1 II du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une mise à disposition"),
-              const _Paragraph(
+              _SubTitle("C) Une mise à disposition"),
+              _Paragraph(
                 "La victime doit être mise à la disposition de l’auteur ou d’un tiers (même non identifié). "
                 "La mise à disposition est sanctionnée même si elle n’a pas été effectivement réalisée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Point clé",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "L’intervention d’un tiers n’est pas nécessaire : la traite peut être retenue si l’auteur agit pour mettre la victime à sa propre disposition.",
@@ -256,21 +256,21 @@ class TraiteEtresHumainsPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un objectif criminel d’exploitation"),
-              const _Paragraph(
+              _SubTitle("D) Un objectif criminel d’exploitation"),
+              _Paragraph(
                 "L’exploitation consiste à mettre la victime à disposition afin de permettre notamment : proxénétisme, agressions/atteintes sexuelles, "
                 "réduction en esclavage, travail ou services forcés, servitude, prélèvement d’organe, exploitation de la mendicité, "
                 "conditions de travail/hébergement contraires à la dignité, ou à contraindre la victime à commettre un crime ou un délit.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Il n’est pas nécessaire que les infractions d’exploitation soient effectivement commises pour que la traite soit constituée.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Lorsque l’objectif est de contraindre la victime à commettre un crime/délit, la contrainte doit être ressentie comme irrésistible "
                 "(impossibilité absolue de respecter la loi).",
               ),
@@ -285,14 +285,14 @@ class TraiteEtresHumainsPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Conscience du devenir de la victime"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Conscience du devenir de la victime"),
+              _Paragraph(
                 "L’infraction étant intentionnelle, il faut établir que l’auteur savait à quoi la victime était destinée : "
                 "il doit connaître les infractions auxquelles elle devait être soumise, ou la contrainte exercée sur elle pour la déterminer à en commettre.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Consentement",
                 bodySpans: [
                   TextSpan(
@@ -312,37 +312,37 @@ class TraiteEtresHumainsPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Traite aggravée délictuelle"),
+            children: const [
+              _SubTitle("Traite aggravée délictuelle"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-1 II du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsqu’elle est commise à l’égard d’un mineur, même sans les circonstances 1° à 4°.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-2 I du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsqu’elle est commise dans deux des circonstances 1° à 4° de l’article 225-4-1 I.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Ou avec l’une des circonstances supplémentaires : plusieurs victimes ; victime hors du territoire / à l’arrivée ; contact via réseau de communication électronique ; "
                     "exposition à un risque immédiat de mort ou de mutilation/infirmité permanente ; violences avec ITT > 8 jours ; "
@@ -350,36 +350,36 @@ class TraiteEtresHumainsPage extends StatelessWidget {
                     "victime placée dans une situation matérielle ou psychologique grave.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Traite aggravée criminelle"),
+              _SubTitle("Traite aggravée criminelle"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-2 II du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsqu’elle est commise à l’égard d’un mineur + l’une des circonstances de l’article 225-4-1 I ou de l’article 225-4-2 I.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " : bande organisée."),
+                TextSpan(text: " : bande organisée."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-4-4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " : tortures ou actes de barbarie."),
+                TextSpan(text: " : tortures ou actes de barbarie."),
               ]),
             ],
           ),
@@ -392,165 +392,165 @@ class TraiteEtresHumainsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Simple : "),
-                const TextSpan(
+                TextSpan(text: "Simple : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-1 I du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (mineur) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (mineur) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 500 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-1 II du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (225-4-2 I) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (225-4-2 I) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 500 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-2 I du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Criminelle (225-4-2 II) : "),
-                const TextSpan(
+                TextSpan(text: "Criminelle (225-4-2 II) : "),
+                TextSpan(
                   text: "15 ans de réclusion et 1 500 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-2 II du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Bande organisée : "),
-                const TextSpan(
+                TextSpan(text: "Bande organisée : "),
+                TextSpan(
                   text: "20 ans de réclusion et 3 000 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Tortures / barbarie : "),
-                const TextSpan(
+                TextSpan(text: "Tortures / barbarie : "),
+                TextSpan(
                   text:
                       "réclusion criminelle à perpétuité et 4 500 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-4-4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si le crime ou délit commis (ou devant être commis) contre la victime est puni d’une peine privative de liberté supérieure, "
                         "la traite est punie des peines attachées à ce crime/délit (et à ses circonstances aggravantes connues de l’auteur). ",
                   ),
-                  const TextSpan(text: "— "),
-                  const TextSpan(
+                  TextSpan(text: "— "),
+                  TextSpan(
                     text: "article 225-4-5 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité prévue par "),
+                TextSpan(
                   text: "l’article 225-4-6 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " ; amende selon "),
-                const TextSpan(
+                TextSpan(text: " ; amende selon "),
+                TextSpan(
                   text: "l’article 131-38 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " + peines des "),
-                const TextSpan(
+                TextSpan(text: " + peines des "),
+                TextSpan(
                   text: "articles 131-39, 225-24 et 225-25 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (dissolution, interdictions, confiscations…).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Tentative : OUI — "),
+                TextSpan(
                   text: "article 225-4-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI — "),
+                TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle("Exemption & réduction de peine"),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : "),
-                const TextSpan(
+                TextSpan(text: "Exemption de peine : "),
+                TextSpan(
                   text: "article 225-4-9 alinéa 1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (auteur au stade de la tentative qui avertit l’autorité et permet d’éviter la réalisation de l’infraction).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : "),
-                const TextSpan(
+                TextSpan(text: "Réduction de peine : "),
+                TextSpan(
                   text: "article 225-4-9 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (peine réduite des 2/3 si l’auteur/complice avertit et permet de faire cesser l’infraction, d’éviter une mort/infirmité permanente, "
                       "ou d’identifier les autres auteurs/complices ; perpétuité ramenée à 20 ans).",
@@ -592,10 +592,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -660,7 +660,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -703,7 +703,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -765,7 +765,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -797,7 +797,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -810,7 +810,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

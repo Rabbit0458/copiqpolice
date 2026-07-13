@@ -164,11 +164,11 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
             cardColor: cardHow,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Les règles d’or"),
+            children: const [
+              _SubTitle("Les règles d’or"),
               _NotaBox(
                 title: "Avant le cours",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "• Le sujet tu connaîtras et tes notes précédentes sur le thème tu reliras.\n",
@@ -176,10 +176,10 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
                   TextSpan(text: "• Ton matériel tu préparerás."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Pendant le cours",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "• La date, la séquence, l’objectif, les intervenants et le plan sur ta feuille tu noteras.\n",
@@ -206,10 +206,10 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Après le cours",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "• Le jour même, tes notes tu reliras, tu les compléteras et au bon endroit tu les classeras.\n",
@@ -219,20 +219,20 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Les supports"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Les supports"),
+              _Paragraph(
                 "Selon ton organisation : cahier spirale (pratique), bloc/cahier à feuilles détachables, ou feuilles volantes "
                 "(qui demandent une rigueur). La règle impérative : être capable de tout retrouver facilement.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Tu peux aussi annoter les supports distribués (diaporama, texte…). Ils doivent être classés avec soin.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La prise de note informatique « à la volée » est moins efficace pour l’apprentissage. "
@@ -251,43 +251,43 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
             cardColor: cardAbbrev,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les abréviations permettent de synthétiser les mots les plus utilisés. "
                 "On distingue les abréviations générales (ex : cordialement → cdlt) et les abréviations techniques « métier » "
                 "(policier adjoint : P.A., gardien de la paix : Gpx, brigadier-chef : B/C, major : Mj…).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Règles à respecter"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Règles à respecter"),
+              _BulletPoint(
                 text:
                     "Les raccourcis doivent devenir instinctifs : commence par ceux que tu maîtrises et enrichis progressivement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Utilise toujours les mêmes abréviations pour les mêmes termes (sinon tu te perds en relisant).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ne retranscris pas mot pour mot : vise le sens simplifié (ex. « L’eau est bonne pour la santé » → « Eau bonne pr santé »).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Méthodes pour abréger"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Méthodes pour abréger"),
+              _BulletPoint(
                 text: "Retirer les voyelles : cependant → cpdt.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Remplacer la fin du mot : ion → « ° » ; ère → « R » ; ent → « » ; que → q.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Garder les liens logiques : verbes, flèches, mots de liaison… pour ne pas perdre le sens.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Important",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Ne confonds pas abréviation et sigle : « Gpx » = abréviation de gardien de la paix, "
@@ -306,33 +306,33 @@ class GpxMementoPriseDeNoteMethodologiePage extends StatelessWidget {
             cardColor: cardOrg,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Planifier son travail"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Planifier son travail"),
+              _Paragraph(
                 "Il convient de travailler régulièrement : un temps quotidien de reprise des notes de la journée et un temps de "
                 "consolidation (souvent le week-end). À cela s’ajoutent des périodes de révision selon les évaluations.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Mémo",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "50 % du contenu d’un cours est oublié au bout de 24 heures si on ne l’apprend pas.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Calendrier simple"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Calendrier simple"),
+              _BulletPoint(
                 text:
                     "J0 (le jour même) : relis, complète, souligne/surligne, réécris si besoin, classe tes notes et annote les supports.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "J+1 : apprends une première fois le lendemain (tu te souviens encore du plan et des concepts).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Week-end suivant : reprise plus aisée, exercices/études de cas, début des fiches de révision.",
               ),
@@ -431,10 +431,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -499,7 +499,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -542,7 +542,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -604,7 +604,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -636,7 +636,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -649,7 +649,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

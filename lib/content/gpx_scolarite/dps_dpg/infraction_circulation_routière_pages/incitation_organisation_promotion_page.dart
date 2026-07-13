@@ -110,16 +110,16 @@ class IncitationOrganisationPromotionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 236-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’incitation, l’organisation et la promotion d’un rodéo motorisé.",
                 ),
@@ -135,58 +135,58 @@ class IncitationOrganisationPromotionPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Ce texte a été créé afin d’empêcher en amont la commission d’un rodéo motorisé : "
                 "l’infraction vise des actes préparatoires (incitation, organisation, promotion).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Inciter directement à participer à un rodéo motorisé",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’incitation correspond à une provocation directe à commettre un fait : "
                 "il s’agit de pousser une personne à participer à un rodéo motorisé.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Organiser un rassemblement destiné à permettre la commission d’un rodéo motorisé en réunion",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Il s’agit d’organiser un rassemblement destiné à permettre la commission des faits mentionnés au II de ",
                 ),
                 TextSpan(
                   text: "l’article L. 236-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Faire la promotion, par tout moyen, d’un rodéo motorisé (ou du rassemblement)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La promotion désigne le fait de présenter un comportement ou une pratique sous un jour favorable. "
                 "Elle peut se faire via tout moyen de communication (affichage, vidéos, publications, réseaux sociaux, etc.).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               _NotaBox(
                 title: "Point clé",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Même si l’incitation, l’organisation ou la promotion n’a pas été suivie d’effet, l’infraction est caractérisée : "
                         "c’est une infraction formelle, réalisée par le seul accomplissement des actes, sans nécessité qu’un rodéo ait effectivement eu lieu.",
@@ -245,88 +245,88 @@ class IncitationOrganisationPromotionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues"),
+            children: const [
+              _SubTitle("Peines encourues"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 236-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : "),
-                const TextSpan(
+                TextSpan(text: " : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Confiscation",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le code de la route prévoit la confiscation obligatoire du véhicule ayant servi à commettre l’infraction. "
                         "Si la juridiction ne prononce pas cette peine, elle doit motiver sa décision.",
                   ),
-                  const TextSpan(text: " "),
+                  TextSpan(text: " "),
                   TextSpan(
                     text: "(article L. 236-3 du Code de la route)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Mesures administratives",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Immobilisation administrative et mise en fourrière possibles sans autorisation préalable du procureur, "
                         "qui doit néanmoins être informé immédiatement par tout moyen.",
                   ),
-                  const TextSpan(text: " "),
+                  TextSpan(text: " "),
                   TextSpan(
                     text: "(article L. 325-1-2 du Code de la route)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -364,10 +364,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -432,7 +432,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -475,7 +475,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -537,7 +537,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -569,7 +569,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -582,7 +582,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -110,13 +110,13 @@ class RetributionInexistanteInsuffisantePersonneVulnerableDependantePage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-13 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante.",
                 ),
@@ -132,121 +132,121 @@ class RetributionInexistanteInsuffisantePersonneVulnerableDependantePage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) La fourniture de services"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) La fourniture de services"),
+              _Paragraph(
                 "Il s’agit d’obtenir l’accomplissement d’un travail ou d’une tâche, et non la remise d’un bien "
                 "ou d’une somme d’argent (qui peuvent relever d’autres incriminations).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple d’infraction voisine (hors champ de l’article 225-13) : ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "article 223-15-2 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (abus frauduleux de l’état d’ignorance / faiblesse).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "La loi vise une fourniture de services au pluriel : une simple prestation isolée ne suffit pas. "
                 "La réitération facilite la preuve de l’abus, qui peut se déduire de l’accomplissement journalier "
                 "de tâches inadaptées.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Absence ou insuffisance de rémunération"),
+              _SubTitle("B) Absence ou insuffisance de rémunération"),
               _Paragraph.rich([
-                const TextSpan(text: "Le texte vise : "),
-                const TextSpan(
+                TextSpan(text: "Le texte vise : "),
+                TextSpan(
                   text: "l’absence totale de rétribution",
                   style: TextStyle(fontWeight: FontWeight.w800),
                 ),
-                const TextSpan(text: " ou une "),
-                const TextSpan(
+                TextSpan(text: " ou une "),
+                TextSpan(
                   text: "rétribution manifestement sans rapport",
                   style: TextStyle(fontWeight: FontWeight.w800),
                 ),
-                const TextSpan(text: " avec le travail accompli."),
+                TextSpan(text: " avec le travail accompli."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "• Absence totale : appréciation stricte (aucune contrepartie, même en nature : logement, nourriture, etc.).\n"
                 "• Insuffisance : appréciation par les juges du fond. Le non-respect du SMIC ou le non-paiement "
                 "des heures supplémentaires ne suffisent pas : il faut une disproportion manifeste entre la rémunération "
                 "et le travail accompli.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les juges peuvent comparer avec le salaire minimum de la profession, et procéder à des décomptes précis "
                 "du temps de travail et de la rémunération pour faire apparaître l’absence de rapport.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Si la rémunération est à ce point réduite qu’elle ne permet pas de satisfaire les besoins élémentaires, "
                 "et maintient la personne dans un rapport de dépendance, l’infraction est nécessairement constituée.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Jurisprudences (illustrations)"),
+              _SubTitle("C) Jurisprudences (illustrations)"),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Infraction retenue pour des stagiaires affectés à la réception de l’hôtel, "
                         "de 23h à 7h, 7j/7 (56 à 63h/semaine), pour une rémunération de 1 760 francs "
                         "pour 190 heures ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 03 décembre 2002)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Délit constitué pour le travail d’une jeune handicapée employée au magasin "
                         "et au service domestique, moyennant seulement le gîte et le couvert ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(T.A. Toulouse, 14 février 2002)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Une victime vulnérable ou en état de dépendance",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La vulnérabilité ou la dépendance doivent être entendues largement, mais elles doivent être "
                 "apparentes ou connues de l’auteur.\n\n"
                 "• Vulnérabilité : liée à l’état physique ou mental (grossesse, âge, maladie, handicap…), "
@@ -254,14 +254,14 @@ class RetributionInexistanteInsuffisantePersonneVulnerableDependantePage
                 "• Dépendance : économique (précarité) ou morale (ascendant : maître/domestique, parents/enfants…).\n\n"
                 "L’une ou l’autre doit exister (elles peuvent aussi se confondre).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Présomption : "),
-                const TextSpan(
+                TextSpan(text: "Présomption : "),
+                TextSpan(
                   text: "article 225-15-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : présomption de vulnérabilité/dépendance concernant les mineurs et certaines victimes à leur arrivée sur le territoire français.",
                 ),
@@ -277,17 +277,17 @@ class RetributionInexistanteInsuffisantePersonneVulnerableDependantePage
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Conscience de la vulnérabilité / dépendance"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Conscience de la vulnérabilité / dépendance"),
+              _Paragraph(
                 "L’auteur doit mesurer la vulnérabilité ou l’état de dépendance de la victime. "
                 "Cet état doit être apparent ou connu.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Conscience d’exiger des services non ou insuffisamment rétribués",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur sait qu’il n’obtient ces services à ce “prix” qu’en raison de la vulnérabilité ou "
                 "de l’état de dépendance. L’intention libérale de la victime ne peut être invoquée lorsqu’il "
                 "existe un rapport de domination (le bénévolat suppose le respect).",
@@ -303,36 +303,36 @@ class RetributionInexistanteInsuffisantePersonneVulnerableDependantePage
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Premier degré d’aggravation"),
+            children: const [
+              _SubTitle("Premier degré d’aggravation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-15 I 1° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque l’infraction est commise à l’égard de plusieurs personnes.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-15 II 1° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : lorsqu’elle est commise à l’égard d’un mineur.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Second degré d’aggravation"),
+              SizedBox(height: 12),
+              _SubTitle("Second degré d’aggravation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-15 III 1° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’elle est commise à l’égard de plusieurs personnes parmi lesquelles figurent un ou plusieurs mineurs.",
                 ),
@@ -348,74 +348,74 @@ class RetributionInexistanteInsuffisantePersonneVulnerableDependantePage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-13 alinéa 1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (1er degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (1er degré) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 200 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "articles 225-15 I 1° et 225-15 II 1° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (2nd degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (2nd degré) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-15 III 1° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité expressément prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité expressément prévue par "),
+                TextSpan(
                   text: "l’article 225-16 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: ". Peine d’amende selon "),
-                const TextSpan(
+                TextSpan(text: ". Peine d’amende selon "),
+                TextSpan(
                   text: "l’article 131-38 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " + peines complémentaires "),
-                const TextSpan(
+                TextSpan(text: " + peines complémentaires "),
+                TextSpan(
                   text: "article 131-39 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " (dissolution, interdictions, etc.)."),
+                TextSpan(text: " (dissolution, interdictions, etc.)."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément aux "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI, conformément aux "),
+                TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide/assistance, provocation, instructions données).",
                 ),
@@ -456,10 +456,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -524,7 +524,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -567,7 +567,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -629,7 +629,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -661,7 +661,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -674,7 +674,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

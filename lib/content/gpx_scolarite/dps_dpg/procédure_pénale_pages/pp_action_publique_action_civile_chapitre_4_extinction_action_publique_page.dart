@@ -17,7 +17,7 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardBg = isDark
         ? const Color(0xFF2B3036)
@@ -98,24 +98,24 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Dans des cas exceptionnels, l’action publique peut s’éteindre par voie de transaction. '
                 'La loi accorde ce droit à certaines administrations qui proposent à l’auteur de l’infraction '
                 'd’abandonner les poursuites en contrepartie du versement d’une somme d’argent ou de '
                 'l’exécution d’obligations déterminées.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Transactions des administrations publiques'),
-              const _Paragraph(
+              _SubTitle('Transactions des administrations publiques'),
+              _Paragraph(
                 'Certaines administrations (fiscales, administration chargée des forêts, douanes, etc.) '
                 'disposent d’un pouvoir de transaction. Lorsque le contrevenant accepte et exécute la transaction '
                 'dans le délai imparti, l’action publique est éteinte.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
-              const _SubTitle(
+              _SubTitle(
                 'Transactions proposées par le maire en matière contraventionnelle',
               ),
               _Paragraph.rich([
@@ -130,21 +130,21 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' et les articles L. 511-1, L. 512-2, L. 521-1, L. 531-1 et L. 532-1 du Code de la sécurité intérieure ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'permettent au maire de proposer une transaction. Celle-ci doit être acceptée par le contrevenant puis homologuée, '
                       'soit par le procureur de la République, soit par le juge du tribunal de police. L’action publique est éteinte lorsque '
                       'l’auteur de l’infraction a exécuté les obligations résultant de la transaction.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Il peut également y avoir transaction pour certaines infractions à la police des services publics de transports terrestres : ',
                 ),
@@ -155,16 +155,16 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' prévoit une transaction entre l’exploitant et le contrevenant. Cette procédure n’est toutefois pas applicable si plusieurs infractions '
                       'dont au moins une ne peut donner lieu à transaction sont constatées simultanément.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Selon le Code de la santé publique, une forme particulière de transaction existe encore : ',
                 ),
@@ -175,15 +175,15 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' permet au procureur de la République d’inviter un toxicomane à se soumettre à une injonction thérapeutique ou à une surveillance médicale '
                       'plutôt que de le poursuivre pour usage de stupéfiants. Si l’intéressé se conforme à toutes les prescriptions, l’action publique n’est pas exercée.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _NotaBox(
+              _NotaBox(
                 title: 'À retenir',
                 bodySpans: [
                   TextSpan(
@@ -204,9 +204,9 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Cette cause d’extinction ne joue que si la plainte de la victime est une condition nécessaire à la poursuite. ',
                 ),
@@ -217,12 +217,12 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' le prévoit notamment pour des infractions comme la diffamation ou certaines atteintes à la vie privée.',
                 ),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
                   text: 'L’article 2 alinéa 2 du Code de Procédure Pénale',
@@ -231,15 +231,15 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' pose au contraire le principe selon lequel le retrait d’une plainte simple ou avec constitution de partie civile est, '
                       'en principe, sans effet sur l’action publique. La situation visée ici est donc une dérogation à ce principe général, '
                       'limitée aux cas où la plainte est une condition de recevabilité de la poursuite.',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _NotaBox(
+              SizedBox(height: 8),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -399,7 +399,7 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
             cardColor: cardBg,
             accent: accentBlue,
             titleColor: titleBlue,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: 'Les articles 7, 8 et 9 du Code de Procédure Pénale',
@@ -408,87 +408,87 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' fixent les délais de prescription de droit commun de l’action publique :',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(text: '20 ans pour les crimes ;'),
-              const _BulletPoint(text: '6 ans pour les délits ;'),
-              const _BulletPoint(text: '1 an pour les contraventions.'),
-              const SizedBox(height: 10),
+              SizedBox(height: 6),
+              _BulletPoint(text: '20 ans pour les crimes ;'),
+              _BulletPoint(text: '6 ans pour les délits ;'),
+              _BulletPoint(text: '1 an pour les contraventions.'),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 'Délais exceptionnels pour certaines infractions',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Délai imprescriptible pour les crimes de génocide et les crimes contre l’humanité '
                     '(articles 211-1 à 212-3 du Code pénal).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour certains crimes liés au terrorisme et 20 ans pour les délits correspondants '
                     '(article 706-16 du Code de Procédure Pénale).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour les crimes de trafic de stupéfiants et 20 ans pour les délits correspondants '
                     '(article 706-26 du Code de Procédure Pénale).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour les crimes relatifs à la prolifération d’armes de destruction massive et de leurs vecteurs, '
                     'et 20 ans pour les délits punis de 10 ans d’emprisonnement (article 706-167 du Code de Procédure Pénale).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour les crimes d’eugénisme et de clonage reproductif (articles 214-1 à 214-4 du Code pénal).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour le crime de disparition forcée (article 221-12 du Code pénal).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour les crimes de guerre et 20 ans pour les délits de guerre.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '30 ans pour les crimes commis contre des mineurs listés à l’article 706-47 du Code de Procédure Pénale '
                     '(meurtre, tortures ou actes de barbarie, viol, proxénétisme sur mineur de quinze ans, traite des êtres humains…).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '20 ans pour certains délits commis sur des mineurs (agressions sexuelles, atteintes sexuelles aggravées, '
                     'violences volontaires aggravées ayant entraîné une incapacité totale de travail de plus de huit jours).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '10 ans pour certains délits commis sur des mineurs (abus frauduleux de l’état d’ignorance ou de faiblesse, '
                     'infractions sexuelles et infractions liées à la pornographie impliquant des mineurs, traite, proxénétisme, etc.).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '1 an pour certains délits de presse à caractère discriminatoire (article 65-3 de la loi du 29 juillet 1881).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     '3 mois pour les délits de presse tels que la diffamation (article 65 de la loi du 29 juillet 1881).',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle('Point de départ du délai'),
-              const _Paragraph(
+              _SubTitle('Point de départ du délai'),
+              _Paragraph(
                 'En principe, le délai de prescription court à compter du jour où l’infraction a été commise pour une infraction instantanée (exemple : vol).',
               ),
-              const SizedBox(height: 4),
-              const _Paragraph(
+              SizedBox(height: 4),
+              _Paragraph(
                 'Pour une infraction continue (comme le recel), le point de départ est fixé au jour où l’état délictueux cesse. '
                 'En cas d’abus de confiance, il peut être reporté au moment où la victime découvre le détournement.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _Paragraph.rich([
                 TextSpan(
@@ -498,33 +498,33 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' prévoient une règle particulière pour certains crimes et délits commis contre les mineurs : '
                       'le délai de prescription ne commence à courir qu’à compter de la majorité de la victime.',
                 ),
               ]),
-              const SizedBox(height: 4),
-              const _Paragraph(
+              SizedBox(height: 4),
+              _Paragraph(
                 'Le délai de prescription d’un crime de viol peut encore être prolongé lorsque, avant l’expiration du délai, '
                 'l’auteur commet un nouveau viol, une agression sexuelle ou une atteinte sexuelle sur un autre mineur : '
                 'le délai initial est prolongé jusqu’à la date de prescription de la nouvelle infraction. '
                 'Ce mécanisme est étendu à certains délits sexuels.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _Paragraph(
+              _Paragraph(
                 'Pour le délit de non-dénonciation d’atteintes et d’agressions sexuelles sur mineur (article 434-3 du Code pénal), '
                 'le délai de prescription est de 10 ans à compter de la majorité de la victime en cas d’agression ou d’atteinte sexuelle, '
                 'et de 20 ans si la victime a subi un viol.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _Paragraph(
+              _Paragraph(
                 'Pour les infractions commises par le biais d’Internet, le point de départ du délai de prescription est fixé '
                 'au jour de la première diffusion du message incriminé (jurisprudence de la Cour de cassation, 16 octobre 2001).',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _Paragraph.rich([
                 TextSpan(
@@ -534,24 +534,24 @@ class PPActionPubliqueChapitre4ExtinctionActionPubliquePage
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' prévoit un régime particulier pour l’infraction occulte ou dissimulée. '
                       'Dans ce cas, le délai de prescription court à compter du jour où l’infraction est apparue '
                       'et a pu être constatée dans des conditions permettant la mise en mouvement de l’action publique.',
                 ),
               ]),
-              const SizedBox(height: 4),
-              const _BulletPoint(
+              SizedBox(height: 4),
+              _BulletPoint(
                 text:
                     'Infraction “occulte” : infraction qui, en raison de ses éléments constitutifs, ne peut être connue ni de la victime, ni de l’autorité judiciaire.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Infraction “dissimulée” : l’auteur accomplit des manœuvres caractérisées pour empêcher la découverte de l’infraction.',
               ),
-              const SizedBox(height: 4),
-              const _Paragraph(
+              SizedBox(height: 4),
+              _Paragraph(
                 'Dans ces hypothèses, le délai de prescription ne peut toutefois excéder douze ans pour les délits et trente ans pour les crimes à compter du jour de la commission des faits.',
               ),
             ],
@@ -688,10 +688,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -756,7 +756,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -799,7 +799,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -861,7 +861,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -893,7 +893,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -906,7 +906,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -93,37 +93,37 @@ class ConduiteAlcoolPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L. 234-1 et L. 234-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "article R. 234-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article L. 3354-2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Deux grands blocs : C.E.E.A. (taux mesuré) + C.E.I. (ivresse manifeste). "
                         "Les vérifications (éthylomètre / sang) sont le cœur de la preuve.",
@@ -178,10 +178,10 @@ class ConduiteAlcoolPage extends StatelessWidget {
                 "• en cas de refus de dépistage.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Sauf impossibilité, les vérifications sont réalisées à l’éthylomètre. En cas d’impossibilité (incapacité physique attestée par médecin), prélèvement sanguin.",
                   ),
@@ -201,27 +201,27 @@ class ConduiteAlcoolPage extends StatelessWidget {
                 cardColor: cardProc,
                 accent: accentGrey,
                 titleColor: textMain,
-                children: [
+                children: const [
                   _Paragraph.rich([
-                    const TextSpan(text: "Délit si : "),
-                    const TextSpan(
+                    TextSpan(text: "Délit si : "),
+                    TextSpan(
                       text: "≥ 0,40 mg/l",
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
-                    const TextSpan(text: " d’air expiré "),
-                    const TextSpan(
+                    TextSpan(text: " d’air expiré "),
+                    TextSpan(
                       text: "ou",
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
-                    const TextSpan(text: " "),
-                    const TextSpan(
+                    TextSpan(text: " "),
+                    TextSpan(
                       text: "≥ 0,80 g/l",
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
-                    const TextSpan(text: " de sang. — "),
+                    TextSpan(text: " de sang. — "),
                     TextSpan(
                       text: "L. 234-1 du Code de la route",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
@@ -237,37 +237,37 @@ class ConduiteAlcoolPage extends StatelessWidget {
                 cardColor: cardProc,
                 accent: accentGrey,
                 titleColor: textMain,
-                children: [
-                  const _SubTitle("1) Conducteurs à seuil abaissé"),
-                  const _Paragraph(
+                children: const [
+                  _SubTitle("1) Conducteurs à seuil abaissé"),
+                  _Paragraph(
                     "Concerne notamment :\n"
                     "• transport en commun ;\n"
                     "• droit de conduire limité aux véhicules équipés E.A.D. ;\n"
                     "• permis probatoire ;\n"
                     "• apprentissage de la conduite (élève conducteur / accompagnateur).",
                   ),
-                  const SizedBox(height: 8),
-                  const _BulletPoint(
+                  SizedBox(height: 8),
+                  _BulletPoint(
                     text:
                         "Contravention si ≥ 0,10 mg/l et < 0,40 mg/l (air expiré) OU ≥ 0,20 g/l et < 0,80 g/l (sang).",
                   ),
-                  const SizedBox(height: 10),
-                  const _SubTitle("2) Autres conducteurs / accompagnateur"),
-                  const _BulletPoint(
+                  SizedBox(height: 10),
+                  _SubTitle("2) Autres conducteurs / accompagnateur"),
+                  _BulletPoint(
                     text:
                         "Contravention si ≥ 0,25 mg/l et < 0,40 mg/l (air expiré) OU ≥ 0,50 g/l et < 0,80 g/l (sang).",
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   _Paragraph.rich([
-                    const TextSpan(text: "Référence : "),
+                    TextSpan(text: "Référence : "),
                     TextSpan(
                       text: "R. 234-1 du Code de la route",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(text: " (contravention 4e classe)."),
+                    TextSpan(text: " (contravention 4e classe)."),
                   ]),
                 ],
               ),
@@ -287,9 +287,9 @@ class ConduiteAlcoolPage extends StatelessWidget {
                     "Notifier immédiatement : taux affiché (mesuré) + taux retenu (après marge d’erreur).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "MARGE D’ERREUR (arrêté du 08/07/2003)",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "• Taux affiché < 0,40 mg/l : soustraire 0,032 mg/l.\n",
@@ -301,23 +301,23 @@ class ConduiteAlcoolPage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
               const _SubTitle("Second contrôle"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "L’intéressé peut demander un second contrôle ; les agents peuvent aussi le décider d’office. — ",
                 ),
                 TextSpan(
                   text: "R. 234-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
               const SizedBox(height: 8),
-              _NotaBox(
+              const _NotaBox(
                 title: "RÈGLE",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Si le taux retenu du second contrôle est inférieur au premier, "
@@ -338,9 +338,9 @@ class ConduiteAlcoolPage extends StatelessWidget {
                 "• incapacité physique attestée par médecin.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "MINEUR",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Pour un mineur : prélèvement sanguin uniquement après autorisation du parquet "
@@ -393,23 +393,23 @@ class ConduiteAlcoolPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Alcool + stupéfiants : une alcoolémie supérieure aux seuils aggrave les peines du délit de conduite après usage de stupéfiants. — ",
                 ),
                 TextSpan(
                   text: "L. 235-1 alinéa 2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Dans tous les cas liés à l’alcool : procéder aussi au dépistage stupéfiants (et vérifications si nécessaire).",
               ),
@@ -424,67 +424,67 @@ class ConduiteAlcoolPage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Refus de se soumettre aux vérifications (délit)",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Refus C.R. : "),
+                TextSpan(text: "Refus C.R. : "),
                 TextSpan(
                   text: "L. 234-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — puni de 2 ans d’emprisonnement et 4 500 € d’amende.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Refus C.S.P. : "),
+                TextSpan(text: "Refus C.S.P. : "),
                 TextSpan(
                   text: "L. 3354-2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " — puni de 1 an d’emprisonnement et 3 750 € d’amende.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "À SAVOIR",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le refus de dépistage n’est pas une infraction : il entraîne l’obligation de se soumettre aux vérifications.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : non pertinente ici (infraction consommée dès la conduite sous influence / constat).",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Complicité : possible selon les règles générales de complicité. ",
                 ),
                 TextSpan(
                   text: "Articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -513,13 +513,13 @@ class ConduiteAlcoolPage extends StatelessWidget {
           ),
 
           const SizedBox(height: 12),
-          _Paragraph.rich([
-            const TextSpan(text: "Mis à jour le "),
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(text: "Mis à jour le "),
+            TextSpan(
               text: "15/06/2025",
               style: TextStyle(fontWeight: FontWeight.w900),
             ),
-            const TextSpan(text: "."),
+            TextSpan(text: "."),
           ]),
         ],
       ),
@@ -751,10 +751,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -819,7 +819,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -862,7 +862,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -924,7 +924,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -956,7 +956,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -969,7 +969,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

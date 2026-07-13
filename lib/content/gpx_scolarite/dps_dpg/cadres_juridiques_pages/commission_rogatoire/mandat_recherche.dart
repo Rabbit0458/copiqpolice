@@ -17,7 +17,7 @@ class MandatRecherchePage extends StatelessWidget {
     final Color cardBlue = isDark
         ? const Color(0xFF0D1B2A)
         : const Color(0xFFE3F2FD);
-    final Color cardBlueAccent = const Color(0xFF1565C0);
+    const Color cardBlueAccent = Color(0xFF1565C0);
 
     return Scaffold(
       backgroundColor: bg,
@@ -61,37 +61,37 @@ class MandatRecherchePage extends StatelessWidget {
             cardColor: cardBlue,
             accent: cardBlueAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le mandat de recherche est "l’ordre donné à la force publique de rechercher la personne à l’encontre de laquelle il est décerné et de la placer en garde à vue" ',
                 ),
                 TextSpan(
                   text: '(article 122 alinéa 2 du Code de procédure pénale).',
-                  style: const TextStyle(color: Colors.red),
+                  style: TextStyle(color: Colors.red),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 'Il ne peut être décerné qu’à l’égard d’une personne pour laquelle il '
                 'existe une ou plusieurs raisons plausibles de soupçonner qu’elle a '
                 'commis ou tenté de commettre une infraction.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // PUCE LISTE
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'D’une personne ayant fait l’objet d’un réquisitoire nominatif ;',
               ),
-              const _BulletPoint(text: 'D’un témoin assisté ;'),
-              const _BulletPoint(text: 'D’une personne mise en examen ;'),
+              _BulletPoint(text: 'D’un témoin assisté ;'),
+              _BulletPoint(text: 'D’une personne mise en examen ;'),
 
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
-              const _SubTitle('3.6.2 — L’exécution du mandat de recherche'),
+              _SubTitle('3.6.2 — L’exécution du mandat de recherche'),
 
               // 3.6.2.1 NOTIFICATION
               _SubTitle(
@@ -99,16 +99,16 @@ class MandatRecherchePage extends StatelessWidget {
                 '(article 123 alinéa 4 du Code de procédure pénale)',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le mandat de recherche est notifié et exécuté par un officier ou agent de police judiciaire, ou un agent de la force publique, qui l’exhibe à la personne et lui en délivre copie. ',
                 ),
                 TextSpan(
                   text: '(article 123 alinéa 4 du Code de procédure pénale).',
-                  style: const TextStyle(color: Colors.red),
+                  style: TextStyle(color: Colors.red),
                 ),
               ]),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.6.2.2 INVESTIGATIONS
               _SubTitle(
@@ -116,11 +116,11 @@ class MandatRecherchePage extends StatelessWidget {
                 '(article 134 du Code de procédure pénale)',
               ),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'L’introduction dans un domicile doit respecter les heures légales ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La présence d’une force suffisante doit être garantie pour éviter toute fuite ;',
               ),
@@ -128,7 +128,7 @@ class MandatRecherchePage extends StatelessWidget {
                 text:
                     'Si la personne ne peut être saisie, un procès-verbal de perquisition et recherches infructueuses est transmis au magistrat mandant. La personne est alors considérée comme mise en examen pour l’application de l’article 176.',
               ),
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // --------------------------------------------------------------
               // 3.6.3 — DÉCOUVERTE DE LA PERSONNE
@@ -139,38 +139,38 @@ class MandatRecherchePage extends StatelessWidget {
               ),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La personne découverte en vertu d’un mandat de recherche est placée en garde à vue selon les modalités prévues ',
                 ),
                 TextSpan(
                   text: 'à l’article 154 du Code de procédure pénale.',
-                  style: const TextStyle(color: Colors.red),
+                  style: TextStyle(color: Colors.red),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 'Le juge d’instruction mandant est immédiatement avisé du début de la garde à vue.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 'L’OPJ du lieu de découverte peut être requis par le juge d’instruction '
                 'pour procéder à l’audition de l’intéressé ainsi qu’à tous les actes '
                 'nécessaires à l’information judiciaire.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 'L’OPJ déjà saisi par commission rogatoire peut également réaliser '
                 'l’audition. La personne peut être transférée dans les locaux du service '
                 'd’enquête saisi des faits.',
               ),
 
-              const SizedBox(height: 22),
+              SizedBox(height: 22),
 
-              const _NotaBox(
+              _NotaBox(
                 title: 'NOTE IMPORTANTE',
                 bodySpans: [
                   TextSpan(
@@ -219,10 +219,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -293,7 +293,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -355,7 +355,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -390,7 +390,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -403,7 +403,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

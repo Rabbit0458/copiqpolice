@@ -109,16 +109,16 @@ class MenacesAvecConditionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-18 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime la menace de commettre un crime ou un délit contre les personnes lorsqu’elle est faite "
                       "avec ordre de remplir une condition.",
@@ -135,16 +135,16 @@ class MenacesAvecConditionPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Menace de tout crime ou délit contre les personnes",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La menace doit porter sur la commission d’un crime ou d’un délit contre les personnes.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "À la différence de la menace sans condition, est ici visé tout délit d’atteinte à la personne, sans qu’il soit "
@@ -154,58 +154,58 @@ class MenacesAvecConditionPage extends StatelessWidget {
                 title: "Point clé",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Dirigée contre une personne"),
-              const _Paragraph(
+              _SubTitle("B) Dirigée contre une personne"),
+              _Paragraph(
                 "La menace doit être dirigée contre une ou plusieurs personnes. La menace « à la cantonade » ne constitue pas l’infraction "
                 "(ex. promesse de tirer sur quiconque toucherait à une voiture).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle peut être :\n"
                 "• directe (adressée à la personne visée),\n"
                 "• ou indirecte (en présence de tiers, ou transmise à la victime par un intermédiaire).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Un moyen indéterminé (pas besoin de réitération)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le moyen de la menace n’est pas déterminé. La menace n’a pas à être réitérée : elle peut être extériorisée "
                 "par quelque moyen que ce soit (écrit, informatique, vidéo, menaces verbales, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : le prévenu reproduit la forme d’une arme avec ses doigts et dit « ça ira très mal pour toi » si une condition "
                         "n’est pas respectée ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 27 février 2013)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Ordre de remplir une condition"),
-              const _Paragraph(
+              _SubTitle("D) Ordre de remplir une condition"),
+              _Paragraph(
                 "La condition peut prendre différentes formes : action/abstention, obligation de faire ou de ne pas faire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "C’est une injonction faite à autrui : la victime se sent contrainte de s’y soumettre pour éviter la réalisation de la menace. "
@@ -214,21 +214,21 @@ class MenacesAvecConditionPage extends StatelessWidget {
                 ],
                 title: "Point clé",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : menace de mort faite à une ancienne amie si elle ne se dépêchait pas d’écrire ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 25 avril 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
@@ -243,17 +243,17 @@ class MenacesAvecConditionPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Conscience d’exercer une pression pour contraindre",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur agit en connaissance de cause : il sait que son attitude fait pression sur la victime "
                 "et qu’il la contraint à faire ou ne pas faire un acte déterminé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "L’intention se traduit par le dessein de peser méchamment, par une contrainte morale, sur la volonté d’autrui. "
@@ -273,38 +273,38 @@ class MenacesAvecConditionPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-18 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsqu’il s’agit d’une menace de mort.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-18-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (deux degrés d’aggravation) :"),
+                TextSpan(text: " (deux degrés d’aggravation) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Premier degré : menaces commises par le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Second degré : menaces de mort commises par le conjoint, le concubin ou le partenaire lié par un pacte civil de solidarité.",
               ),
@@ -332,9 +332,9 @@ class MenacesAvecConditionPage extends StatelessWidget {
                 const TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-18 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -353,9 +353,9 @@ class MenacesAvecConditionPage extends StatelessWidget {
                 const TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-18 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -375,9 +375,9 @@ class MenacesAvecConditionPage extends StatelessWidget {
                   text:
                       "jusqu’à 7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-18-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -388,40 +388,40 @@ class MenacesAvecConditionPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(text: "Peines applicables prévues par "),
+              const _Paragraph.rich([
+                TextSpan(text: "Peines applicables prévues par "),
                 TextSpan(
                   text: "l’article 222-18-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
               const _SubTitle("Tentative & complicité"),
               const _BulletPoint(text: "Tentative : NON (non punissable)."),
-              _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+              const _Paragraph.rich([
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -459,10 +459,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -527,7 +527,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -570,7 +570,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -632,7 +632,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -664,7 +664,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -677,7 +677,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

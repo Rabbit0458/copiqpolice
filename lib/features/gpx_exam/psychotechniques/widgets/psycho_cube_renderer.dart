@@ -377,4 +377,4 @@ class _IsoCubePainter extends CustomPainter {
       old.frontLabel != frontLabel ||
       old.rightLabel != rightLabel ||
       old.tint != tint;
-}
+  }

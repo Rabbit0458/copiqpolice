@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 
 final List<QuizQuestion> questionCirculationRoutiere = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Définition",
     question:
         "Constitue l’infraction de conduite après usage de stupéfiants le fait de :",
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-1/I CR : l’infraction est constituée dès lors qu’une analyse sanguine ou salivaire établit l’usage de stupéfiants.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Personnes visées",
     question: "Sont concernés par l’infraction :",
     options: [
@@ -127,7 +127,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Le texte vise expressément les conducteurs de tout véhicule et les accompagnateurs d’élèves conducteurs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Dépistage obligatoire",
     question: "Le dépistage de stupéfiants est obligatoire en cas :",
     options: [
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-2 CR : dépistage obligatoire en cas d’accident mortel ou corporel de la circulation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Refus de dépistage",
     question: "Le refus de se soumettre au dépistage salivaire :",
     options: [
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Le refus de dépistage n’est pas sanctionné en soi, mais impose des vérifications (prise de sang).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Refus de vérifications",
     question: "Le refus de se soumettre aux vérifications constitue :",
     options: [
@@ -166,7 +166,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Le refus de vérifications destinées à établir l’usage de stupéfiants est un délit autonome.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Preuve",
     question: "Depuis 2016, l’analyse toxicologique doit :",
     options: [
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Le décret de 2016 a supprimé la notion de dosage : seule la présence est requise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Élément moral",
     question: "L’infraction suppose :",
     options: [
@@ -192,7 +192,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Il s’agit d’une infraction intentionnelle : conscience et volonté de conduire après usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Circonstance aggravante",
     question: "Les peines sont aggravées si le conducteur est également :",
     options: [
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-1/I al.2 CR : cumul alcool + stupéfiants = aggravation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Peines",
     question: "Peines encourues pour l’infraction simple :",
     options: [
@@ -218,7 +218,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-1/I CR : peines principales de la forme simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Tentative",
     question: "La tentative de conduite après usage de stupéfiants est :",
     options: [
@@ -230,7 +230,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La tentative n’est pas prévue par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite en état d’ivresse manifeste — Définition",
     question: "La conduite en état d’ivresse manifeste se caractérise par :",
     options: [
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "L’ivresse manifeste repose sur des constatations matérielles, même en dessous des seuils légaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite en état d’ivresse manifeste — Preuve",
     question: "L’état d’ivresse manifeste peut être établi :",
     options: [
@@ -256,7 +256,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Les juges apprécient souverainement les éléments matériels constatés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite sous l’empire d’un état alcoolique — Seuil",
     question: "Le seuil délictuel est atteint à partir de :",
     options: [
@@ -268,7 +268,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-1/I CR : seuil délictuel de l’état alcoolique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Élément matériel",
     question: "Le défaut d’assurance est constitué lorsque le véhicule :",
     options: [
@@ -282,7 +282,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "L’infraction est constituée dès lors que le véhicule est exposé à la circulation publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Peine",
     question: "Le défaut d’assurance est puni de :",
     options: ["3 750 € d’amende", "1 an d’emprisonnement", "750 € d’amende"],
@@ -290,7 +290,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.324-2 CR : délit sans peine d’emprisonnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut de permis — Distinction",
     question:
         "Le défaut de permis de conduire se distingue de la non-présentation du permis car il concerne :",
@@ -304,7 +304,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Il s’agit de ne pas être titulaire de la catégorie requise, et non d’un simple oubli.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Élément matériel",
     question: "Le délit de fuite suppose :",
     options: [
@@ -317,7 +317,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article 434-10 CP : accident + volonté de se soustraire à la responsabilité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Élément moral",
     question: "Le refus d’obtempérer suppose :",
     options: [
@@ -330,7 +330,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La connaissance non équivoque de l’ordre est indispensable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Définition",
     question: "Le rodéo motorisé suppose :",
     options: [
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.236-1 CR : répétition et danger ou trouble requis.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques d’immatriculation — Usurpation",
     question: "L’usurpation de plaque consiste à :",
     options: [
@@ -356,7 +356,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.317-4-1 CR : usurpation de plaque.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Définition",
     question:
         "Constitue une infraction le fait de conduire un véhicule après usage de stupéfiants lorsque :",
@@ -371,7 +371,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-1/I CR : l’infraction est constituée par la preuve biologique de l’usage de stupéfiants, indépendamment des signes extérieurs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Personnes concernées",
     question:
         "Quelles personnes peuvent être poursuivies pour conduite après usage de stupéfiants ?",
@@ -385,7 +385,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "L.235-1 CR vise le conducteur et l’accompagnateur d’un élève conducteur.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Dépistage",
     question: "Le dépistage de stupéfiants est obligatoire en cas :",
     options: [
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-2 CR : dépistage obligatoire en cas d’accident corporel ou mortel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Refus",
     question:
         "Le refus de se soumettre aux vérifications stupéfiants constitue :",
@@ -412,7 +412,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-3 CR : le refus de vérifications est un délit distinct.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Peines",
     question:
         "Les peines principales pour conduite après usage de stupéfiants sont :",
@@ -425,7 +425,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1/I CR : peines délictuelles de base.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Définition",
     question: "La conduite en état d’ivresse manifeste se caractérise par :",
     options: [
@@ -438,7 +438,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "L.234-1/II CR : l’ivresse manifeste repose sur des constatations matérielles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Preuve",
     question: "La preuve de l’ivresse manifeste peut résulter :",
     options: [
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "La jurisprudence admet la preuve par observations des forces de l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Seuils",
     question:
         "Le délit de conduite sous l’empire d’un état alcoolique est constitué à partir de :",
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-1/I CR : seuils délictuels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Contravention",
     question:
         "Pour un conducteur non probatoire, l’alcoolémie contraventionnelle débute à :",
@@ -474,7 +474,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article R.234-1 CR : seuil contraventionnel pour conducteurs ordinaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Définition",
     question: "Le défaut d’assurance est constitué dès lors que :",
     options: [
@@ -488,7 +488,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.324-2 CR : infraction constituée même à l’arrêt sur voie ouverte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Procédure",
     question: "Le défaut d’assurance permet-il une garde à vue ?",
     options: [
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Le délit n’est puni que d’une amende : pas de GAV possible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut de permis — Distinction",
     question: "Conduire sans être titulaire du permis se distingue de :",
     options: [
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "L.221-2 CR ≠ R.233-1 CR (simple contravention).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Élément moral",
     question: "Le délit de fuite suppose :",
     options: [
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article 434-10 CP : double élément intentionnel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Absorption",
     question: "Le refus d’obtempérer est absorbé lorsqu’il constitue :",
     options: [
@@ -537,7 +537,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Jurisprudence : l’infraction la plus grave absorbe.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Définition",
     question: "Le rodéo motorisé suppose :",
     options: [
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.236-1 CR : répétition exigée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Aggravation",
     question: "Le rodéo motorisé est aggravé notamment lorsque :",
     options: [
@@ -561,7 +561,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.236-1 III CR : aggravations légales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Usurpation",
     question: "L’usurpation de plaques est caractérisée lorsque :",
     options: [
@@ -573,7 +573,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.317-4-1 CR : attribution à un autre véhicule.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Distinction",
     question: "Le refus de se soumettre aux vérifications exclut :",
     options: [
@@ -585,7 +585,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "L.233-2 CR exclut expressément alcool et stupéfiants.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Dépistage facultatif",
     question: "Le dépistage de stupéfiants est facultatif notamment en cas :",
     options: [
@@ -598,7 +598,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-2 CR : dépistage facultatif en cas d’accident matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Dépistage préventif",
     question: "Le dépistage préventif de stupéfiants peut être effectué :",
     options: [
@@ -610,7 +610,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 CR : dépistage préventif autorisé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Impossibilité",
     question: "Le dépistage est impossible notamment en cas :",
     options: [
@@ -623,7 +623,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Contre-indication médicale ou décès rendent le dépistage impossible.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Vérifications",
     question: "Les vérifications après dépistage positif consistent en :",
     options: [
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 CR : modalités de vérification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Prélèvement salivaire",
     question: "Le prélèvement salivaire est réalisé :",
     options: [
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-6 CR : auto-prélèvement contrôlé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Droit à expertise",
     question:
         "Après un prélèvement salivaire, le conducteur doit être informé :",
@@ -661,7 +661,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "CE 21 novembre 2023 : omission = procédure irrégulière.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Accident mortel",
     question: "En cas d’accident mortel, l’analyse autorisée est :",
     options: ["Uniquement sanguine", "Salivaire ou sanguine", "Urinaire"],
@@ -669,7 +669,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-8 CR : prélèvement sanguin exclusif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Élément moral",
     question: "L’infraction est intentionnelle car elle suppose :",
     options: [
@@ -681,7 +681,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Infraction intentionnelle relevant de l’article 121-3 CP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Aggravation",
     question: "La conduite après usage de stupéfiants aggrave :",
     options: [
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 221-6-1, 222-19-1 et 222-20-1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite stupéfiants — Complicité",
     question: "La complicité est :",
     options: [
@@ -705,7 +705,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 121-6 et 121-7 CP applicables.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Dépistage",
     question: "La personne en état d’ivresse manifeste peut être soumise :",
     options: [
@@ -717,7 +717,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-6 CR et Cass. crim. 9 octobre 1984.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Seuil",
     question: "L’état d’ivresse manifeste dépend :",
     options: [
@@ -729,7 +729,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Signes extérieurs indépendants de l’alcoolémie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Élément moral",
     question: "L’élément moral résulte notamment :",
     options: [
@@ -741,7 +741,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim. 19 décembre 1994.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Recherches obligatoires",
     question: "Les recherches d’alcoolémie sont obligatoires pour :",
     options: [
@@ -753,7 +753,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-3 al.1 CR.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Recherches préventives",
     question: "Les recherches préventives d’alcoolémie sont possibles :",
     options: [
@@ -765,7 +765,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-9 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Éthylomètre",
     question: "L’indication de l’éthylomètre :",
     options: [
@@ -777,7 +777,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-4 CR.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Refus",
     question: "Le refus de l’éthylomètre entraîne :",
     options: [
@@ -789,7 +789,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-8 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Marges d’erreur",
     question: "Les marges d’erreur des éthylomètres doivent être :",
     options: [
@@ -801,7 +801,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim. 26 mars 2019.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Charge de la preuve",
     question: "La preuve de l’assurance incombe :",
     options: [
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La charge de la preuve repose sur le titulaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Amende forfaitaire",
     question: "Le défaut d’assurance peut donner lieu :",
     options: [
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article D.45-3 CPP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Élément matériel",
     question:
         "Le défaut d’assurance est constitué dès lors que le véhicule est :",
@@ -838,7 +838,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "L’infraction existe même sans circulation effective.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Résiliation",
     question: "Le défaut d’assurance est constitué lorsque :",
     options: [
@@ -850,7 +850,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La résiliation rend l’assurance inexistante juridiquement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut d’assurance — Garde à vue",
     question: "Le défaut d’assurance permet-il une garde à vue ?",
     options: [
@@ -862,7 +862,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Infraction délictuelle sans peine d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut de permis — Définition",
     question: "Le défaut de permis consiste à :",
     options: [
@@ -874,7 +874,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.221-2 CR : absence de titre valide.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut de permis — Exclusion",
     question: "Ne constitue PAS un défaut de permis :",
     options: [
@@ -886,7 +886,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.233-1 CR : infraction distincte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut de permis — Élément moral",
     question: "L’élément moral du défaut de permis repose sur :",
     options: [
@@ -898,7 +898,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Infraction intentionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défaut de permis — Circonstance aggravante",
     question: "Le défaut de permis est aggravé lorsque :",
     options: [
@@ -910,7 +910,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.221-2-1 CR.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Définition",
     question: "Le délit de fuite suppose :",
     options: [
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La connaissance de l’accident est indispensable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Accident",
     question: "Le délit de fuite peut concerner :",
     options: [
@@ -934,7 +934,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Toute nature d’accident causant un préjudice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Omission de s’arrêter",
     question: "L’arrêt du conducteur doit être :",
     options: [
@@ -946,7 +946,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim. 19 mars 1956.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Faux renseignements",
     question: "Donner un faux nom après un accident constitue :",
     options: [
@@ -958,7 +958,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim. 14 avril 1959.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Retour sur les lieux",
     question: "Le conducteur qui revient après avoir fui :",
     options: [
@@ -970,7 +970,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim. 4 novembre 2003.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grand excès de vitesse — Définition",
     question: "Le grand excès de vitesse devient un délit lorsque :",
     options: [
@@ -982,7 +982,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.413-1 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grand excès de vitesse — Seuil",
     question: "Le dépassement concerné est :",
     options: [
@@ -994,7 +994,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Contravention de 5e classe transformée en délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grand excès de vitesse — Délai récidive",
     question: "Le délai de récidive est de :",
     options: ["3 ans", "1 an", "5 ans"],
@@ -1002,7 +1002,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article 132-11 CP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Définition",
     question: "Le refus de se soumettre aux vérifications concerne :",
     options: [
@@ -1014,7 +1014,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Exclusion alcool et stupéfiants.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Forme",
     question: "Le refus peut être caractérisé par :",
     options: [
@@ -1026,7 +1026,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Le comportement suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Sommation",
     question: "La sommation de s’arrêter peut être :",
     options: [
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La forme importe peu.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Agents",
     question: "Les agents doivent être :",
     options: [
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.233-1 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Aggravation",
     question: "Le refus est aggravé lorsque :",
     options: [
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.233-1-1 CR.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Définition",
     question:
         "Constitue une infraction le fait de conduire un véhicule après :",
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1/I du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Personnes concernées",
     question:
         "Qui peut être poursuivi pour conduite après usage de stupéfiants ?",
@@ -1089,7 +1089,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Le texte vise également l’accompagnateur.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Dépistage",
     question: "Le dépistage de stupéfiants peut être réalisé par :",
     options: [
@@ -1101,7 +1101,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Recherche des quatre familles de stupéfiants.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Refus de dépistage",
     question: "Le refus de se soumettre au dépistage de stupéfiants :",
     options: [
@@ -1113,7 +1113,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Mais il entraîne des vérifications obligatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Vérifications",
     question: "En cas de dépistage positif, les vérifications consistent en :",
     options: [
@@ -1125,7 +1125,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Prélèvement salivaire",
     question: "Le prélèvement salivaire est réalisé :",
     options: [
@@ -1137,7 +1137,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-6 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Demande d’expertise",
     question: "Après un prélèvement salivaire, le conducteur peut demander :",
     options: [
@@ -1149,7 +1149,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Droit fondamental de la défense.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Accident mortel",
     question: "En cas d’accident mortel, la vérification se fait par :",
     options: ["Analyse sanguine uniquement", "Test salivaire", "Test urinaire"],
@@ -1157,7 +1157,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-8 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Refus de vérifications",
     question: "Le refus de se soumettre aux vérifications constitue :",
     options: [
@@ -1169,7 +1169,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-3 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Dosage",
     question: "L’analyse des stupéfiants doit-elle mentionner un taux ?",
     options: [
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Le dosage a été supprimé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Élément moral",
     question: "L’infraction de conduite après usage de stupéfiants est :",
     options: ["Intentionnelle", "Non intentionnelle", "Purement matérielle"],
@@ -1189,7 +1189,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Volonté de conduire après usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Cumul alcool",
     question: "La conduite sous stupéfiants est aggravée si :",
     options: [
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Qualification",
     question: "La conduite après usage de stupéfiants est un :",
     options: ["Délit", "Crime", "Contravention"],
@@ -1209,7 +1209,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Infraction délictuelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Peines",
     question: "La peine encourue en cas simple est :",
     options: [
@@ -1221,7 +1221,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1/I CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Tentative",
     question: "La tentative de conduite après usage de stupéfiants est :",
     options: ["Non punissable", "Punissable", "Assimilée à une contravention"],
@@ -1229,7 +1229,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La tentative n’est pas prévue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Complicité",
     question: "La complicité est :",
     options: ["Punissable", "Impossible", "Réservée aux professionnels"],
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 121-6 et 121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Immunité",
     question: "Les diplomates peuvent-ils être soumis à un dépistage ?",
     options: ["Non", "Oui systématiquement", "Uniquement en cas de délit"],
@@ -1245,7 +1245,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Convention de Vienne.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Parlementaires",
     question: "Le dépistage d’un parlementaire est possible :",
     options: [
@@ -1257,7 +1257,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article 26 de la Constitution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Accident corporel",
     question: "Tout accident corporel doit donner lieu à :",
     options: [
@@ -1269,7 +1269,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Dépistage obligatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Fiche de suivi",
     question: "La fiche de suivi de prélèvement sert à :",
     options: [
@@ -1281,7 +1281,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Circulaire DACG 10 mai 2017.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Laboratoire",
     question: "L’analyse est réalisée par :",
     options: [
@@ -1293,7 +1293,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-10 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Usage médical",
     question: "L’usage de médicaments psychoactifs :",
     options: [
@@ -1305,7 +1305,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Droit à l’expertise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Refus accompagnateur",
     question: "En cas de refus de dépistage par l’accompagnateur :",
     options: [
@@ -1317,7 +1317,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 al.5 CR.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Finalité",
     question: "L’infraction vise à protéger principalement :",
     options: ["La sécurité routière", "La santé publique", "Le patrimoine"],
@@ -1325,7 +1325,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Prévention des accidents.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Familles",
     question: "Combien de familles de stupéfiants sont recherchées ?",
     options: ["Quatre", "Deux", "Cinq"],
@@ -1333,7 +1333,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cannabiniques, amphétaminiques, cocaïniques, opiacés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Nature de la preuve",
     question: "La preuve repose sur :",
     options: [
@@ -1345,7 +1345,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Pas de seuil légal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Usage ancien",
     question: "Un usage ancien mais détecté :",
     options: [
@@ -1357,7 +1357,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Aucune notion de seuil temporel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Véhicules concernés",
     question: "Les cycles sont-ils concernés ?",
     options: ["Oui", "Non", "Uniquement en agglomération"],
@@ -1365,7 +1365,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Tout véhicule en circulation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — APJ",
     question: "Les APJ peuvent procéder aux vérifications :",
     options: ["Oui", "Non", "Uniquement en présence d’un OPJ"],
@@ -1373,7 +1373,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Compétence reconnue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Procédure irrégulière",
     question:
         "La procédure est irrégulière si le conducteur n’est pas informé :",
@@ -1386,7 +1386,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "CE 21 novembre 2023.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Finalité pénale",
     question: "Le mobile de l’auteur est :",
     options: ["Indifférent", "Toujours recherché", "Aggravant"],
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Jeu, habitude ou contrainte sans effet.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Élément matériel",
     question: "L’élément matériel repose sur :",
     options: [
@@ -1406,7 +1406,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Lien direct avec la circulation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Accompagnateur",
     question: "L’accompagnateur est poursuivi s’il :",
     options: ["Encadre l’élève conducteur", "Est passager", "Est propriétaire"],
@@ -1414,7 +1414,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Responsabilité spécifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Sanction aggravée",
     question: "La peine est aggravée lorsque :",
     options: [
@@ -1426,7 +1426,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Nature juridique",
     question: "L’infraction est classée comme :",
     options: ["Délit routier", "Infraction administrative", "Contravention"],
@@ -1434,7 +1434,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Sanction pénale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Effet accident",
     question: "La conduite sous stupéfiants peut constituer :",
     options: [
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 221-6-1 et suivants CP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Assistance médicale",
     question: "Les secours peuvent administrer des substances :",
     options: [
@@ -1458,7 +1458,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Impact sur les résultats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Vérification clinique",
     question: "L’examen clinique est réalisé par :",
     options: ["Un médecin ou interne", "Un OPJ", "Un infirmier seul"],
@@ -1466,7 +1466,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Si l’état le permet.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Décès du conducteur",
     question: "En cas de décès, le prélèvement est effectué par :",
     options: ["Un médecin légiste", "Un OPJ", "Un infirmier"],
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Procédure spécifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Choix du prélèvement",
     question: "Le conducteur peut imposer le type de prélèvement :",
     options: ["Non", "Oui", "Uniquement salivaire"],
@@ -1482,7 +1482,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Choix de l’autorité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Nature de l’infraction",
     question: "L’infraction est constituée même sans trouble apparent :",
     options: ["Oui", "Non", "Uniquement en cas d’accident"],
@@ -1490,7 +1490,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Aucune condition d’altération visible.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Définition",
     question: "La conduite en état d’ivresse manifeste se caractérise par :",
     options: [
@@ -1502,7 +1502,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-1/II du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Personnes concernées",
     question: "La conduite en état d’ivresse manifeste concerne :",
     options: [
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Les deux sont expressément visés par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Preuve",
     question: "La preuve de l’ivresse manifeste repose principalement sur :",
     options: [
@@ -1526,7 +1526,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Comportement, haleine, propos, titubation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Dépistage",
     question: "Un dépistage préalable est-il obligatoire avant vérification ?",
     options: ["Non", "Oui", "Uniquement la nuit"],
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-6 CR.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Élément moral",
     question: "L’élément moral est caractérisé par :",
     options: [
@@ -1546,7 +1546,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim., 19 décembre 1994.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Qualification",
     question: "La conduite en état d’ivresse manifeste est un :",
     options: ["Délit", "Crime", "Contravention"],
@@ -1554,7 +1554,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Infraction délictuelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Peines",
     question: "La peine principale encourue est :",
     options: [
@@ -1566,7 +1566,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-1/II CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Taux",
     question:
         "Un taux inférieur au seuil légal peut caractériser l’infraction :",
@@ -1575,7 +1575,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Les signes priment sur le taux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Tentative",
     question: "La tentative de conduite en état d’ivresse manifeste est :",
     options: ["Non punissable", "Punissable", "Assimilée à une contravention"],
@@ -1583,7 +1583,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Tentative non prévue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Complicité",
     question: "La complicité est :",
     options: ["Punissable", "Impossible", "Limitée aux passagers"],
@@ -1591,7 +1591,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 121-6 et 121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Immunité",
     question:
         "Les diplomates peuvent être soumis à une vérification alcoolique :",
@@ -1600,7 +1600,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Convention de Vienne.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Parlementaires",
     question: "Le dépistage d’un parlementaire est possible :",
     options: [
@@ -1612,7 +1612,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article 26 de la Constitution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Définition",
     question:
         "La conduite sous l’empire d’un état alcoolique est caractérisée par :",
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-1/I CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Nature",
     question: "La conduite sous l’empire d’un état alcoolique est :",
     options: ["Un délit", "Une contravention", "Une infraction administrative"],
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Au-delà des seuils légaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Élément matériel",
     question: "L’élément matériel repose sur :",
     options: [
@@ -1645,7 +1645,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Mesure légale et homologuée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Élément moral",
     question: "L’infraction est intentionnelle :",
     options: ["Oui", "Non", "Uniquement en récidive"],
@@ -1653,7 +1653,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Jurisprudence constante.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Dépistage",
     question: "Le dépistage de l’alcoolémie est obligatoire :",
     options: ["En cas d’accident corporel", "Uniquement la nuit", "Jamais"],
@@ -1661,7 +1661,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-3 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Refus",
     question:
         "Le refus de se soumettre aux vérifications alcooliques constitue :",
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-8 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Choix du mode",
     question: "Le conducteur peut choisir le mode de vérification :",
     options: ["Non", "Oui", "Uniquement l’analyse sanguine"],
@@ -1682,7 +1682,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Choix réservé à l’agent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Éthylomètre",
     question: "La valeur affichée par l’éthylomètre :",
     options: [
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Valeur équivalente à l’analyse sanguine.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Marge d’erreur",
     question: "La marge d’erreur doit être :",
     options: [
@@ -1706,7 +1706,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Cass. crim., 26 mars 2019.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Contravention",
     question: "Un taux compris entre 0,50 et 0,80 g/L caractérise :",
     options: ["Une contravention", "Un délit", "Une absence d’infraction"],
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.234-1 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Conducteurs spécifiques",
     question: "Un seuil abaissé s’applique notamment aux :",
     options: [
@@ -1726,7 +1726,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Seuil contraventionnel spécifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Tentative",
     question:
         "La tentative de conduite sous l’empire d’un état alcoolique est :",
@@ -1735,7 +1735,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Tentative non prévue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Complicité",
     question: "La complicité est :",
     options: ["Punissable", "Exclue", "Limitée au propriétaire"],
@@ -1743,7 +1743,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 121-6 et 121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Finalité",
     question: "L’objectif principal de l’incrimination est :",
     options: ["La sécurité routière", "La santé individuelle", "La fiscalité"],
@@ -1751,7 +1751,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Prévention des accidents.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Accident",
     question: "La conduite alcoolisée peut aggraver :",
     options: ["Un homicide involontaire", "Un vol", "Une escroquerie"],
@@ -1759,7 +1759,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 221-6-1 et suivants CP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Absence de signes",
     question: "L’infraction peut être constituée sans signe apparent :",
     options: ["Oui", "Non", "Uniquement en récidive"],
@@ -1767,7 +1767,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Le taux suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Véhicules",
     question: "Les cycles sont concernés par la conduite alcoolisée :",
     options: ["Oui", "Non", "Uniquement en agglomération"],
@@ -1775,7 +1775,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Tous véhicules en circulation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — APJA",
     question: "Les APJA peuvent intervenir :",
     options: [
@@ -1787,7 +1787,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Règles de compétence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Deuxième contrôle",
     question: "Un second contrôle est :",
     options: [
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-5 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Refus persistant",
     question: "Le refus persistant entraîne :",
     options: [
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.234-8 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "État alcoolique — Responsabilité",
     question: "Le propriétaire du véhicule est poursuivi :",
     options: ["Seulement s’il conduisait", "Toujours", "Jamais"],
@@ -1819,7 +1819,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Responsabilité personnelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Définition",
     question: "La conduite après usage de stupéfiants est constituée lorsque :",
     options: [
@@ -1832,7 +1832,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-1/I du Code de la route : seule la présence suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Personnes concernées",
     question: "Sont concernés par cette infraction :",
     options: [
@@ -1844,7 +1844,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Les deux sont expressément visés par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Élément légal",
     question: "Le texte applicable est :",
     options: [
@@ -1856,7 +1856,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article spécifique à l’usage de stupéfiants.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Dépistage",
     question: "Le dépistage peut être réalisé :",
     options: [
@@ -1868,7 +1868,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Recherche initiale de substances.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Refus",
     question: "Le refus de dépistage :",
     options: [
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Mais il entraîne des vérifications obligatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Vérifications",
     question: "En cas de dépistage positif, il est procédé :",
     options: [
@@ -1892,7 +1892,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Analyse salivaire ou sanguine.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Refus de vérification",
     question: "Le refus de se soumettre aux vérifications constitue :",
     options: ["Un délit", "Une contravention", "Une simple faute"],
@@ -1900,7 +1900,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-3 du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Dosage",
     question: "L’analyse toxicologique doit indiquer :",
     options: [
@@ -1912,7 +1912,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Le dosage n’est plus exigé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Élément moral",
     question: "L’infraction est :",
     options: ["Intentionnelle", "Non intentionnelle", "Purement matérielle"],
@@ -1920,7 +1920,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Volonté de conduire après usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Alcool",
     question: "La présence concomitante d’alcool :",
     options: ["Aggrave les peines", "Annule la procédure", "Est sans effet"],
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Circonstance aggravante prévue par la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Accident",
     question: "Un accident mortel implique :",
     options: [
@@ -1940,7 +1940,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Principe de systématicité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Tentative",
     question: "La tentative est :",
     options: ["Non punissable", "Punissable", "Assimilée au délit"],
@@ -1948,7 +1948,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Tentative non prévue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Complicité",
     question: "La complicité est :",
     options: ["Punissable", "Impossible", "Limitée aux passagers"],
@@ -1956,7 +1956,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 121-6 et 121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Peines",
     question: "La peine principale encourue est :",
     options: [
@@ -1968,7 +1968,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Aggravation",
     question: "Les peines sont portées à 3 ans si :",
     options: ["Alcool + stupéfiants", "Récidive simple", "Véhicule lourd"],
@@ -1976,7 +1976,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Circonstance aggravante.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Immunité",
     question: "Les diplomates peuvent être dépistés :",
     options: ["Non", "Oui", "Uniquement sur réquisition"],
@@ -1984,7 +1984,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Convention de Vienne.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Parlementaires",
     question: "Un parlementaire peut être dépisté :",
     options: [
@@ -1996,7 +1996,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article 26 de la Constitution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Véhicules",
     question: "Sont concernés :",
     options: [
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Y compris cycles et traction animale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Laboratoire",
     question: "Les analyses sont réalisées par :",
     options: [
@@ -2020,7 +2020,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Garantie de fiabilité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Fiche de suivi",
     question: "La fiche de suivi sert à :",
     options: [
@@ -2032,7 +2032,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Circulaire DACG du 10 mai 2017.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Objectif",
     question: "L’objectif principal est :",
     options: [
@@ -2044,7 +2044,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Protection des usagers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Élément matériel",
     question: "L’élément matériel repose sur :",
     options: [
@@ -2056,7 +2056,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Deux conditions cumulatives.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Refus d’expertise",
     question: "Le conducteur peut demander une expertise :",
     options: ["Oui", "Non", "Uniquement par avocat"],
@@ -2064,7 +2064,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Droit à contre-expertise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Omission d’information",
     question: "L’absence d’information sur ce droit rend la procédure :",
     options: ["Irrégulière", "Valide", "Partiellement nulle"],
@@ -2072,7 +2072,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "CE, 21 novembre 2023.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Nature",
     question: "Cette infraction est :",
     options: ["Un délit", "Une contravention", "Un crime"],
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Qualification pénale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Responsabilité",
     question: "La responsabilité est :",
     options: ["Personnelle", "Collective", "Civile uniquement"],
@@ -2088,7 +2088,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Principe pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — APJA",
     question: "Les APJA peuvent procéder au dépistage :",
     options: [
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Règles de compétence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Décès",
     question: "En cas de décès du conducteur :",
     options: [
@@ -2112,7 +2112,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-8 CR.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Refus et accompagnateur",
     question: "Le refus de dépistage par l’accompagnateur :",
     options: [
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 al.5 CR.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Causalité",
     question: "Il est nécessaire de prouver une influence sur la conduite :",
     options: ["Non", "Oui", "Uniquement en cas d’accident"],
@@ -2132,7 +2132,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La seule présence suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Prescription",
     question: "L’infraction est poursuivie comme :",
     options: [
@@ -2144,7 +2144,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Règles de prescription délictuelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Finalité",
     question: "La suppression du dosage vise à :",
     options: [
@@ -2156,7 +2156,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Présence suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Principe",
     question: "Cette infraction repose sur un principe de :",
     options: ["Tolérance zéro", "Proportionnalité", "Excuse médicale"],
@@ -2164,7 +2164,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Aucun seuil légal admis.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conduite après usage de stupéfiants — Conclusion",
     question: "Le comportement sanctionné est :",
     options: [
@@ -2181,7 +2181,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // CONDUITE APRÈS USAGE DE STUPÉFIANTS / ALCOOL / CONTRÔLES
   // SÉRIE 2 — QUESTIONS 51 À 100
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Cas obligatoire",
     question:
         "Dans quel cas le dépistage de stupéfiants est-il obligatoirement réalisé ?",
@@ -2195,7 +2195,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Article L.235-2 du Code de la route : dépistage obligatoire en cas d'accident mortel ou corporel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Cas facultatif",
     question: "Le dépistage de stupéfiants est facultatif lorsque :",
     options: [
@@ -2208,7 +2208,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Le dépistage peut être décidé en cas d'infraction routière ou d'accident matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Préventif",
     question: "Un dépistage préventif de stupéfiants peut être réalisé :",
     options: [
@@ -2220,7 +2220,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 du Code de la route.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Impossibilité",
     question: "Le dépistage est impossible notamment en cas :",
     options: [
@@ -2233,7 +2233,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
         "Dans ces cas, seules les vérifications biologiques sont possibles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Vérification",
     question: "Les vérifications après dépistage positif consistent en :",
     options: [
@@ -2245,7 +2245,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-2 du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Prélèvement salivaire",
     question: "Le prélèvement salivaire est réalisé :",
     options: [
@@ -2257,7 +2257,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-6 du Code de la route.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Contre-expertise",
     question:
         "Après un prélèvement salivaire, le conducteur doit être informé :",
@@ -2270,7 +2270,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Omission = procédure irrégulière (CE, 21 novembre 2023).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Prélèvement sanguin",
     question: "Le prélèvement sanguin est effectué par :",
     options: [
@@ -2282,7 +2282,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Médecin, interne, étudiant autorisé ou infirmier.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Accident mortel",
     question: "En cas d'accident mortel, la preuve est établie par :",
     options: [
@@ -2294,7 +2294,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article R.235-8 du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Dosage",
     question: "L'analyse toxicologique doit préciser :",
     options: [
@@ -2306,7 +2306,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La notion de dosage a été supprimée par décret.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Élément intentionnel",
     question: "L’élément moral est caractérisé par :",
     options: [
@@ -2318,7 +2318,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Infraction intentionnelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Seuil",
     question: "Concernant les stupéfiants, le seuil légal est :",
     options: ["Inexistant", "Fixé par décret", "Variable selon la substance"],
@@ -2326,7 +2326,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Principe de tolérance zéro.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Causalité",
     question: "Faut-il prouver une altération de la conduite ?",
     options: ["Non", "Oui", "Uniquement en cas d'accident"],
@@ -2334,7 +2334,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "La seule présence suffit à caractériser l'infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Qualification",
     question: "La conduite après usage de stupéfiants est :",
     options: ["Un délit", "Une contravention", "Une infraction administrative"],
@@ -2342,7 +2342,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1 du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Peine simple",
     question: "La peine encourue est de :",
     options: [
@@ -2354,7 +2354,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Peines principales prévues par la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Alcool + stupéfiants",
     question: "La présence simultanée d’alcool constitue :",
     options: [
@@ -2366,7 +2366,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article L.235-1 du Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Peine aggravée",
     question: "En cas de cumul alcool + stupéfiants, la peine maximale est :",
     options: [
@@ -2378,7 +2378,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Peine aggravée prévue par le Code de la route.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Tentative",
     question: "La tentative de conduite après usage de stupéfiants est :",
     options: ["Non punissable", "Punissable", "Assimilée au délit"],
@@ -2386,7 +2386,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Tentative non prévue par les textes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Complicité",
     question: "La complicité de cette infraction est :",
     options: ["Punissable", "Impossible", "Limitée aux passagers"],
@@ -2394,7 +2394,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Articles 121-6 et 121-7 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Immunité diplomatique",
     question: "Un diplomate peut faire l’objet d’un dépistage :",
     options: ["Non", "Oui", "Uniquement avec autorisation"],
@@ -2402,7 +2402,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Convention de Vienne sur les relations diplomatiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Immunité parlementaire",
     question: "Un parlementaire peut être dépisté :",
     options: [
@@ -2414,7 +2414,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Article 26 de la Constitution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Véhicules",
     question: "L’infraction concerne :",
     options: [
@@ -2426,7 +2426,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Y compris cycles et véhicules à traction animale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Accompagnateur",
     question: "L’accompagnateur d’un élève conducteur est :",
     options: [
@@ -2438,7 +2438,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Il est expressément visé par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Refus accompagnateur",
     question: "En cas de refus de dépistage par l’accompagnateur :",
     options: [
@@ -2450,7 +2450,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     explanation: "Spécificité prévue par l'article L.235-2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Finalité",
     question: "La finalité de l’infraction est principalement :",
     options: [
@@ -2469,7 +2469,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- DÉFINITIONS / TEXTES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Définition",
     question:
         "La conduite sous l’empire d’un état alcoolique est constituée lorsque :",
@@ -2483,7 +2483,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Texte",
     question: "La conduite sous l’empire d’un état alcoolique est prévue par :",
     options: [
@@ -2496,7 +2496,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Définition",
     question: "L’ivresse manifeste se caractérise par :",
     options: [
@@ -2509,7 +2509,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Texte",
     question: "L’ivresse manifeste est prévue par :",
     options: [
@@ -2523,7 +2523,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ÉLÉMENT MATÉRIEL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Élément matériel",
     question: "L’élément matériel repose sur :",
     options: [
@@ -2536,7 +2536,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Preuve",
     question: "La preuve de l’ivresse manifeste repose sur :",
     options: [
@@ -2549,7 +2549,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Mise en mouvement",
     question: "La conduite est caractérisée dès lors que le conducteur :",
     options: [
@@ -2562,7 +2562,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Véhicule arrêté",
     question: "Un conducteur sorti de son véhicule peut être poursuivi si :",
     options: [
@@ -2576,7 +2576,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- CONTRÔLES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Recherche obligatoire",
     question: "La recherche de l’alcoolémie est obligatoire :",
     options: [
@@ -2589,7 +2589,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Recherche facultative",
     question: "La recherche est facultative en cas :",
     options: ["D’accident matériel", "D’accident corporel", "De délit routier"],
@@ -2598,7 +2598,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Préventif",
     question: "Un contrôle préventif peut être réalisé :",
     options: [
@@ -2612,7 +2612,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DÉPISTAGE / VÉRIFICATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Dépistage",
     question: "Le dépistage s’effectue à l’aide :",
     options: ["D’un éthylotest", "D’un éthylomètre", "D’une prise de sang"],
@@ -2621,7 +2621,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Vérification",
     question: "La vérification est réalisée par :",
     options: [
@@ -2634,7 +2634,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Choix",
     question: "Le choix du mode de vérification appartient :",
     options: ["Aux forces de l’ordre", "Au conducteur", "Au médecin"],
@@ -2643,7 +2643,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Refus",
     question: "Le refus de se soumettre aux vérifications constitue :",
     options: [
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- TAUX / PIÈGES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Seuil délictuel",
     question: "Le seuil délictuel est fixé à :",
     options: ["0,80 g/L de sang", "0,50 g/L de sang", "0,20 g/L de sang"],
@@ -2666,7 +2666,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Seuil contraventionnel",
     question: "Pour un conducteur classique, le seuil contraventionnel est :",
     options: ["0,50 g/L de sang", "0,80 g/L de sang", "0,20 g/L de sang"],
@@ -2675,7 +2675,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Permis probatoire",
     question: "Pour un conducteur en permis probatoire, le seuil est :",
     options: ["0,20 g/L", "0,50 g/L", "0,80 g/L"],
@@ -2685,7 +2685,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PEINES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Peines",
     question: "La conduite sous empire d’un état alcoolique est punie de :",
     options: [
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Peines",
     question: "La conduite en état d’ivresse manifeste est punie de :",
     options: [
@@ -2712,7 +2712,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ULTRA PIÈGES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Piège concours",
     question: "Un taux inférieur au seuil légal exclut l’ivresse manifeste :",
     options: ["Faux", "Vrai", "Uniquement si expertise"],
@@ -2721,7 +2721,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Piège concours",
     question: "Un conducteur peut choisir entre éthylomètre et prise de sang :",
     options: ["Faux", "Vrai", "Uniquement en garde à vue"],
@@ -2736,7 +2736,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- REFUS DE SE SOUMETTRE AUX VÉRIFICATIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Définition",
     question:
         "Constitue un refus de se soumettre aux vérifications le fait de :",
@@ -2750,7 +2750,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Texte",
     question: "Le refus de se soumettre aux vérifications est prévu par :",
     options: [
@@ -2763,7 +2763,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Nature",
     question: "Le refus de se soumettre aux vérifications constitue :",
     options: [
@@ -2776,7 +2776,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Objet",
     question: "Les vérifications peuvent porter sur :",
     options: [
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus de vérifications — Mode",
     question: "Le refus peut être caractérisé par :",
     options: [
@@ -2803,7 +2803,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- REFUS ALCOOLÉMIE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus alcool — Texte",
     question:
         "Le refus de se soumettre aux vérifications d’alcoolémie est prévu par :",
@@ -2817,7 +2817,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus alcool — Nature",
     question: "Le refus de se soumettre aux vérifications d’alcoolémie est :",
     options: [
@@ -2830,7 +2830,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus alcool — Élément matériel",
     question: "L’élément matériel du refus d’alcoolémie repose sur :",
     options: [
@@ -2843,7 +2843,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus alcool — Élément moral",
     question: "L’élément moral du refus d’alcoolémie est :",
     options: ["Intentionnel", "Non intentionnel", "Présumé"],
@@ -2852,7 +2852,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus alcool — Peines",
     question:
         "Le refus de se soumettre aux vérifications d’alcoolémie est puni de :",
@@ -2867,7 +2867,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- REFUS STUPÉFIANTS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus stupéfiants — Texte",
     question:
         "Le refus de se soumettre aux vérifications stupéfiants est prévu par :",
@@ -2881,7 +2881,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus stupéfiants — Nature",
     question: "Le refus de vérification stupéfiants constitue :",
     options: ["Un délit", "Une contravention", "Une circonstance aggravante"],
@@ -2890,7 +2890,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus stupéfiants — Élément matériel",
     question: "L’élément matériel du refus stupéfiants repose sur :",
     options: [
@@ -2903,7 +2903,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus stupéfiants — Peines",
     question: "Le refus de vérification stupéfiants est puni de :",
     options: [
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- REFUS D’OBTEMPÉRER ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Définition",
     question: "Le refus d’obtempérer est :",
     options: [
@@ -2930,7 +2930,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Agents",
     question: "La sommation doit émaner :",
     options: [
@@ -2943,7 +2943,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Forme",
     question: "La sommation d’arrêt peut être faite :",
     options: [
@@ -2956,7 +2956,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Auteur",
     question: "Le refus d’obtempérer ne peut être reproché qu’à :",
     options: ["Le conducteur", "Les passagers", "Le propriétaire"],
@@ -2965,7 +2965,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Élément moral",
     question: "L’élément moral du refus d’obtempérer est :",
     options: ["La volonté de ne pas obéir", "La peur", "L’imprudence"],
@@ -2974,7 +2974,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Peines simples",
     question: "Le refus d’obtempérer simple est puni de :",
     options: [
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Aggravation",
     question: "Le refus d’obtempérer est aggravé lorsque :",
     options: [
@@ -3000,7 +3000,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Ultra piège",
     question:
         "Foncer sur les forces de l’ordre constitue un refus d’obtempérer :",
@@ -3010,7 +3010,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus — Cumul",
     question: "Les peines du refus d’obtempérer peuvent se cumuler avec :",
     options: [
@@ -3028,7 +3028,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- DÉFINITION & TEXTE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Définition",
     question: "Le délit de fuite est constitué lorsque le conducteur :",
     options: [
@@ -3041,7 +3041,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Texte",
     question: "Le délit de fuite est prévu par :",
     options: [
@@ -3054,7 +3054,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Nature",
     question: "Le délit de fuite est une infraction :",
     options: ["Intentionnelle", "Non intentionnelle", "Contraventionnelle"],
@@ -3064,7 +3064,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- AUTEUR & VÉHICULE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Auteur",
     question: "Qui peut être auteur du délit de fuite ?",
     options: ["Tout conducteur", "Uniquement un automobiliste", "Un piéton"],
@@ -3073,7 +3073,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Véhicules",
     question: "Le délit de fuite s’applique aux véhicules :",
     options: [
@@ -3086,7 +3086,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Piège",
     question: "Un piéton peut commettre un délit de fuite :",
     options: ["Faux", "Vrai", "Uniquement en cas de blessure"],
@@ -3096,7 +3096,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ACCIDENT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Accident",
     question: "L’accident à l’origine du délit de fuite peut être :",
     options: [
@@ -3109,7 +3109,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Lien de causalité",
     question: "Le véhicule doit :",
     options: [
@@ -3122,7 +3122,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Ultra piège",
     question: "L’absence de contact exclut le délit de fuite :",
     options: ["Faux", "Vrai", "Uniquement la nuit"],
@@ -3132,7 +3132,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- OBLIGATIONS DU CONDUCTEUR ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Obligations",
     question: "Le conducteur impliqué doit :",
     options: [
@@ -3145,7 +3145,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Arrêt",
     question: "L’arrêt doit être :",
     options: [
@@ -3158,7 +3158,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Faux arrêt",
     question: "S’arrêter brièvement pour repartir constitue :",
     options: ["Un délit de fuite", "Une excuse", "Un fait justificatif"],
@@ -3168,7 +3168,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- JURISPRUDENCE ULTRA-PIÈGES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Jurisprudence",
     question: "Revenir plus tard sur les lieux efface le délit :",
     options: ["Faux", "Vrai", "Uniquement sans blessés"],
@@ -3177,7 +3177,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Jurisprudence",
     question: "Se présenter ultérieurement à la police :",
     options: [
@@ -3190,7 +3190,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Faux nom",
     question: "Donner un faux nom après s’être arrêté constitue :",
     options: ["Un délit de fuite", "Une simple infraction", "Aucun délit"],
@@ -3199,7 +3199,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Non constitué",
     question: "Le délit n’est PAS constitué si :",
     options: [
@@ -3213,7 +3213,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ÉLÉMENT MORAL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Élément moral",
     question: "L’auteur doit avoir conscience :",
     options: [
@@ -3226,7 +3226,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Intention",
     question: "L’intention exigée est :",
     options: [
@@ -3240,7 +3240,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PEINES & CUMUL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Peines",
     question: "Le délit de fuite est puni de :",
     options: [
@@ -3253,7 +3253,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Cumul",
     question: "Le délit de fuite peut se cumuler avec :",
     options: [
@@ -3266,7 +3266,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Ultra piège concours",
     question: "Le délit de fuite nécessite une responsabilité effective :",
     options: ["Faux", "Vrai", "Uniquement en cas de blessure"],
@@ -3280,7 +3280,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- DÉFINITION & TEXTE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Définition",
     question: "Constitue un rodéo motorisé le fait :",
     options: [
@@ -3294,7 +3294,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Texte",
     question: "Le rodéo motorisé est prévu par :",
     options: [
@@ -3307,7 +3307,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Nature",
     question: "Le rodéo motorisé constitue :",
     options: ["Un délit", "Une contravention", "Une circonstance aggravante"],
@@ -3317,7 +3317,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- VÉHICULE & LIEU ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Véhicules",
     question: "Quels véhicules sont concernés ?",
     options: [
@@ -3330,7 +3330,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Lieux",
     question: "Le rodéo motorisé peut être commis :",
     options: [
@@ -3343,7 +3343,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège",
     question: "Un parking de centre commercial est exclu :",
     options: ["Faux", "Vrai", "Uniquement la nuit"],
@@ -3353,7 +3353,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- MANŒUVRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Manœuvres",
     question: "Les manœuvres doivent être :",
     options: ["Répétées", "Uniques", "Accidentelles"],
@@ -3362,7 +3362,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Exemples",
     question: "Constitue un exemple de rodéo :",
     options: [
@@ -3375,7 +3375,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Sécurité",
     question: "Le danger exigé doit :",
     options: [
@@ -3388,7 +3388,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège",
     question: "Un accident est nécessaire pour caractériser l’infraction :",
     options: ["Faux", "Vrai", "Uniquement avec blessés"],
@@ -3398,7 +3398,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- USAGERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Usagers",
     question: "Les usagers exposés peuvent être :",
     options: [
@@ -3411,7 +3411,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Tranquillité",
     question: "Le trouble à la tranquillité publique peut résulter :",
     options: [
@@ -3425,7 +3425,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ÉLÉMENT MORAL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Élément moral",
     question: "L’élément moral requis est :",
     options: [
@@ -3438,7 +3438,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Conscience",
     question: "L’auteur doit avoir conscience :",
     options: [
@@ -3452,7 +3452,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- CIRCONSTANCES AGGRAVANTES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Aggravation I",
     question: "Première circonstance aggravante :",
     options: [
@@ -3465,7 +3465,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Aggravation II",
     question: "Deuxième degré d’aggravation vise notamment :",
     options: [
@@ -3478,7 +3478,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Aggravation III",
     question: "Troisième degré d’aggravation est caractérisé lorsque :",
     options: [
@@ -3492,7 +3492,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PEINES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Peine simple",
     question: "La peine du rodéo simple est :",
     options: [
@@ -3505,7 +3505,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Peine aggravée II",
     question: "La peine au deuxième degré d’aggravation est :",
     options: [
@@ -3518,7 +3518,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Peine aggravée III",
     question: "La peine maximale encourue est :",
     options: [
@@ -3532,7 +3532,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- MESURES COMPLÉMENTAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Confiscation",
     question: "La confiscation du véhicule est :",
     options: ["Obligatoire sauf décision motivée", "Facultative", "Interdite"],
@@ -3541,7 +3541,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Fourrière",
     question: "Le véhicule peut être immobilisé et mis en fourrière :",
     options: [
@@ -3555,7 +3555,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- INFRACTIONS VOISINES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Distinction",
     question: "Une manœuvre dangereuse unique relève plutôt :",
     options: [
@@ -3568,7 +3568,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Incitation",
     question: "Inciter ou promouvoir un rodéo constitue :",
     options: [
@@ -3586,7 +3586,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- RÉUNION / PARTICIPATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Réunion",
     question: "La commission en réunion suppose :",
     options: [
@@ -3599,7 +3599,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège",
     question:
         "La présence de spectateurs caractérise automatiquement la réunion :",
@@ -3609,7 +3609,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Participants",
     question: "Les autres conducteurs participant au rodéo sont :",
     options: [
@@ -3623,7 +3623,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DISTINCTIONS JURIDIQUES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Distinction",
     question: "Le rodéo motorisé se distingue du risque causé à autrui car :",
     options: [
@@ -3636,7 +3636,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Distinction",
     question: "Un rodéo peut être constitué sans accident :",
     options: ["Vrai", "Faux", "Uniquement de jour"],
@@ -3645,7 +3645,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Distinction",
     question: "Un seul wheeling isolé constitue un rodéo :",
     options: ["Faux", "Vrai", "Uniquement en ville"],
@@ -3655,7 +3655,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ÉLÉMENTS DE PREUVE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Preuve",
     question: "Les faits peuvent être caractérisés par :",
     options: [
@@ -3668,7 +3668,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège",
     question: "L’absence de contrôle immédiat empêche toute poursuite :",
     options: ["Faux", "Vrai", "Uniquement sans vidéo"],
@@ -3678,7 +3678,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- STUPÉFIANTS / ALCOOL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Alcool",
     question: "La consommation d’alcool lors d’un rodéo :",
     options: [
@@ -3691,7 +3691,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Stupéfiants",
     question: "Le refus de se soumettre aux vérifications stupéfiants :",
     options: [
@@ -3704,7 +3704,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège",
     question: "La simple suspicion de stupéfiants suffit à aggraver :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -3714,7 +3714,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PERMIS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Permis",
     question: "L’absence de permis lors d’un rodéo :",
     options: [
@@ -3727,7 +3727,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège",
     question: "Un permis suspendu est assimilé à l’absence de permis :",
     options: ["Vrai", "Faux", "Uniquement en récidive"],
@@ -3737,7 +3737,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- CUMUL / COMPLICITÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Cumul",
     question: "Le rodéo motorisé peut se cumuler avec :",
     options: [
@@ -3750,7 +3750,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Complicité",
     question: "Les passagers peuvent être poursuivis :",
     options: ["Pour complicité", "Uniquement comme témoins", "Jamais"],
@@ -3760,7 +3760,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- INCITATION / PROMOTION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Incitation",
     question: "L’incitation à participer à un rodéo est :",
     options: [
@@ -3773,7 +3773,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Promotion",
     question: "La promotion d’un rodéo sur les réseaux sociaux :",
     options: [
@@ -3787,7 +3787,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PEINES INCITATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Peine incitation",
     question: "L’incitation ou la promotion est punie de :",
     options: [
@@ -3801,7 +3801,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- MESURES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Immobilisation",
     question: "L’immobilisation administrative du véhicule :",
     options: [
@@ -3814,7 +3814,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rodéo motorisé — Ultra piège final",
     question: "La confiscation du véhicule est facultative par principe :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -3828,7 +3828,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- PRINCIPES GÉNÉRAUX ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Définition",
     question:
         "Les infractions relatives aux plaques d’immatriculation sont prévues par :",
@@ -3843,7 +3843,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Principe",
     question: "Les règles relatives aux plaques concernent :",
     options: [
@@ -3857,7 +3857,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- FAUSSES PLAQUES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Fausses plaques",
     question: "Faire usage d’une plaque portant un numéro faux constitue :",
     options: [
@@ -3870,7 +3870,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Ultra piège",
     question: "La plaque est considérée comme fausse si :",
     options: [
@@ -3884,7 +3884,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Fausses plaques",
     question: "Une plaque portant un faux domicile relève de :",
     options: [
@@ -3898,7 +3898,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ABSENCE DE PLAQUES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Absence",
     question:
         "Circuler sans plaque et déclarer de fausses informations constitue :",
@@ -3912,7 +3912,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Ultra piège",
     question:
         "Circuler sans plaque mais avec une identité exacte constitue ce délit :",
@@ -3923,7 +3923,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PLAQUE NON CONFORME AU VÉHICULE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Non-conformité",
     question: "Utiliser une plaque correspondant à un autre type de véhicule :",
     options: [
@@ -3936,7 +3936,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Jurisprudence",
     question:
         "Utiliser les plaques d’un véhicule accidenté sur un autre véhicule :",
@@ -3951,7 +3951,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- USURPATION DE PLAQUES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Usurpation",
     question: "L’usurpation de plaques suppose :",
     options: [
@@ -3964,7 +3964,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Ultra piège concours",
     question:
         "L’usurpation exige que des poursuites aient effectivement été engagées contre un tiers :",
@@ -3974,7 +3974,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Usurpation",
     question: "L’objectif principal de l’usurpation est souvent :",
     options: [
@@ -3988,7 +3988,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- ÉLÉMENT MORAL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Élément moral",
     question: "L’élément moral des délits liés aux plaques est :",
     options: ["Intentionnel", "Toujours involontaire", "Présumé sans preuve"],
@@ -3997,7 +3997,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Ultra piège",
     question: "Une simple négligence suffit à caractériser ces délits :",
     options: ["Faux", "Vrai", "Uniquement pour l’usurpation"],
@@ -4007,7 +4007,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- PEINES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Peines",
     question: "La peine maximale pour usurpation de plaques est :",
     options: [
@@ -4020,7 +4020,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Ultra piège",
     question:
         "Toutes les infractions relatives aux plaques sont punies de la même peine :",
@@ -4031,7 +4031,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- CUMUL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Cumul",
     question: "Les délits relatifs aux plaques peuvent se cumuler avec :",
     options: [
@@ -4044,7 +4044,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaques — Ultra piège final",
     question: "La tentative est punissable pour ces délits :",
     options: ["Faux", "Vrai", "Uniquement pour l’usurpation"],
@@ -4058,7 +4058,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- PRINCIPES GÉNÉRAUX ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Principe",
     question:
         "La conduite sous l’empire d’un état alcoolique est caractérisée lorsque :",
@@ -4072,7 +4072,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Texte",
     question: "La conduite sous l’empire d’un état alcoolique est prévue par :",
     options: [
@@ -4086,7 +4086,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- TAUX DÉLICTUEL / CONTRAVENTIONNEL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Taux",
     question: "Le taux délictuel d’alcoolémie est atteint à partir de :",
     options: [
@@ -4099,7 +4099,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Ultra piège",
     question: "Un conducteur avec 0,79 g/l de sang commet un délit :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -4108,7 +4108,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Contravention",
     question: "Le taux contraventionnel général commence à :",
     options: ["0,50 g/l de sang", "0,20 g/l de sang", "0,80 g/l de sang"],
@@ -4118,7 +4118,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- MARGES D’ERREUR ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Marge d’erreur",
     question: "La marge d’erreur pour un taux ≥ 0,40 mg/l et ≤ 2 mg/l est :",
     options: ["8 %", "0,032 mg/l", "30 %"],
@@ -4127,7 +4127,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Ultra piège concours",
     question: "La prise en compte de la marge d’erreur par le juge est :",
     options: ["Obligatoire", "Facultative", "Interdite"],
@@ -4137,7 +4137,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- IVRESSE MANIFESTE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Définition",
     question: "L’ivresse manifeste se caractérise par :",
     options: [
@@ -4150,7 +4150,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ivresse manifeste — Ultra piège",
     question:
         "Une personne peut être en ivresse manifeste avec un taux inférieur au seuil légal :",
@@ -4161,7 +4161,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DÉPISTAGE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Dépistage",
     question: "Le dépistage alcoolique est obligatoire en cas :",
     options: [
@@ -4174,7 +4174,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Ultra piège",
     question: "Un conducteur peut choisir entre éthylomètre et prise de sang :",
     options: ["Faux", "Vrai", "Uniquement en garde à vue"],
@@ -4184,7 +4184,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- REFUS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus — Alcoolémie",
     question:
         "Le refus de se soumettre aux vérifications alcooliques constitue :",
@@ -4198,7 +4198,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus — Ultra piège",
     question: "Le refus de dépistage équivaut à un taux positif :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -4208,7 +4208,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- STUPÉFIANTS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Principe",
     question: "La conduite après usage de stupéfiants repose sur :",
     options: [
@@ -4221,7 +4221,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Ultra piège",
     question: "Le taux de stupéfiants doit être mentionné dans l’analyse :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -4230,7 +4230,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Refus",
     question:
         "Le refus de se soumettre aux vérifications stupéfiants est prévu par :",
@@ -4245,7 +4245,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- CUMUL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcool + Stupéfiants",
     question: "La conduite sous alcool ET stupéfiants :",
     options: [
@@ -4258,7 +4258,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alcoolémie — Ultra piège final",
     question: "La tentative de conduite sous alcool est punissable :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -4272,7 +4272,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   // =========================================================
 
   // ---------- REFUS D’OBTEMPÉRER — BASE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Définition",
     question: "Le refus d’obtempérer consiste pour un conducteur à :",
     options: [
@@ -4285,7 +4285,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Agents",
     question: "Les agents pouvant caractériser le refus d’obtempérer sont :",
     options: [
@@ -4298,7 +4298,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Ultra piège",
     question: "La sommation de s’arrêter doit obligatoirement être verbale :",
     options: ["Faux", "Vrai", "Uniquement la nuit"],
@@ -4307,7 +4307,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Élément moral",
     question: "L’élément moral du refus d’obtempérer repose sur :",
     options: [
@@ -4321,7 +4321,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- REFUS D’OBTEMPÉRER — AGGRAVÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Aggravation",
     question: "Le refus d’obtempérer est aggravé lorsqu’il :",
     options: [
@@ -4334,7 +4334,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Ultra piège concours",
     question: "Un refus d’obtempérer absorbé par des violences volontaires :",
     options: [
@@ -4347,7 +4347,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d’obtempérer — Peines",
     question: "La peine encourue pour un refus d’obtempérer simple est :",
     options: [
@@ -4361,7 +4361,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DÉLIT DE FUITE — BASE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Définition",
     question: "Le délit de fuite suppose que le conducteur :",
     options: [
@@ -4374,7 +4374,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Accident",
     question: "Le délit de fuite peut être constitué après :",
     options: [
@@ -4387,7 +4387,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Ultra piège",
     question: "L’absence de contact matériel empêche le délit de fuite :",
     options: ["Faux", "Vrai", "Uniquement la nuit"],
@@ -4397,7 +4397,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DÉLIT DE FUITE — OMISSION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Omission",
     question: "Le conducteur doit s’arrêter :",
     options: [
@@ -4410,7 +4410,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Jurisprudence",
     question: "Un conducteur qui revient sur les lieux après avoir fui :",
     options: [
@@ -4424,7 +4424,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DÉLIT DE FUITE — ÉLÉMENT MORAL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Élément moral",
     question: "L’élément moral du délit de fuite repose sur :",
     options: [
@@ -4438,7 +4438,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Ultra piège concours",
     question:
         "Il faut prouver que le conducteur a effectivement encouru une responsabilité :",
@@ -4449,7 +4449,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
   ),
 
   // ---------- DÉLIT DE FUITE — PEINES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Peines",
     question: "La peine principale du délit de fuite est :",
     options: [
@@ -4462,7 +4462,7 @@ final List<QuizQuestion> questionCirculationRoutiere = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délit de fuite — Ultra piège final",
     question: "La tentative de délit de fuite est punissable :",
     options: ["Faux", "Vrai", "Uniquement en récidive"],
@@ -4827,7 +4827,7 @@ class _QuizCirculationRoutiereState extends State<QuizCirculationRoutiere>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -5030,7 +5030,7 @@ class _QuizCirculationRoutiereState extends State<QuizCirculationRoutiere>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -5213,7 +5213,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5746,10 +5745,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -6120,7 +6120,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -6161,9 +6161,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

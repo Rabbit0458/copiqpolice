@@ -2,6 +2,7 @@
 
 import 'dart:async';
 import 'dart:math' as math;
+import 'dart:convert';
 import 'dart:ui';
 
 import 'package:audioplayers/audioplayers.dart';
@@ -86,7 +87,7 @@ class _LoadingOverlay extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(isDark ? .35 : .08),
+                    color: Colors.black.withValues(alpha: isDark ? .35 : .08),
                     blurRadius: 30,
                     offset: const Offset(0, 14),
                   ),
@@ -233,7 +234,11 @@ class QuizQuestion {
   });
 
   factory QuizQuestion.fromJson(Map<String, dynamic> json) {
-    final rawOptions = (json['options'] as List?) ?? const [];
+    // options peut être stocké comme String JSON (double-encodé) ou List dans JSONB
+    final _rawOpts = json['options'];
+    final rawOptions = _rawOpts is String
+        ? ((jsonDecode(_rawOpts) as List?) ?? const [])
+        : ((_rawOpts as List?) ?? const []);
     final answer = (json['answer'] ?? '') as String;
 
     // Normalise options: trim, remove empty/null strings, remove duplicates.
@@ -300,7 +305,7 @@ class QuizQuestionsRepository {
   }) async {
     final s = seed ?? math.Random().nextDouble();
 
-    dynamic _base() {
+    dynamic base() {
       var q = sb
           .from('quiz_questions')
           .select(_fields)
@@ -313,7 +318,7 @@ class QuizQuestionsRepository {
     }
 
     // 1) rand_key >= seed
-    final first = await _base()
+    final first = await base()
         .gte('rand_key', s)
         .order('rand_key', ascending: true)
         .limit(limit);
@@ -327,7 +332,7 @@ class QuizQuestionsRepository {
 
     // 2) wrap rand_key < seed
     final remaining = limit - firstList.length;
-    final second = await _base()
+    final second = await base()
         .lt('rand_key', s)
         .order('rand_key', ascending: true)
         .limit(remaining);
@@ -360,8 +365,6 @@ class QuizQuestionsRepository {
     }
 
     final data = await query.range(fromInclusive, toInclusive);
-
-    if (data is! List) return const [];
     return data
         .cast<Map<String, dynamic>>()
         .map(QuizQuestion.fromJson)
@@ -426,7 +429,7 @@ class _QuizCultureGeneraleGeographieState
   int _animatedCount = 0;
   Timer? _counterTimer;
 
-  int _startOffset = 0;
+  final int _startOffset = 0;
   int _loadedUntilVirtualIndex = -1;
 
   final Set<int> _pendingEnsure = <int>{};
@@ -1233,7 +1236,7 @@ class _QuizCultureGeneraleGeographieState
                     const SizedBox(height: 10),
 
                     DropdownButtonFormField<String>(
-                      value: type,
+                      initialValue: type,
                       decoration: deco('Type de signalement', hint: 'Choisir…'),
                       dropdownColor: card,
                       iconEnabledColor: subCol,
@@ -1358,7 +1361,7 @@ class _QuizCultureGeneraleGeographieState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         final totalSafe = _total <= 0 ? 1 : _total;
         final double topInset =
@@ -1642,7 +1645,7 @@ class _QuizCultureGeneraleGeographieState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1824,7 +1827,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2604,7 +2606,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2646,9 +2648,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

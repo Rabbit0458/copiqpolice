@@ -110,13 +110,13 @@ class SoumissionConditionsTravailHebergementIncompatiblesDignitePage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-14 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine.",
                 ),
@@ -132,209 +132,209 @@ class SoumissionConditionsTravailHebergementIncompatiblesDignitePage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Conditions de travail ou d’hébergement incompatibles avec la dignité humaine",
               ),
-              const _SubTitle("Notion d’atteinte à la dignité humaine"),
-              const _Paragraph(
+              _SubTitle("Notion d’atteinte à la dignité humaine"),
+              _Paragraph(
                 "La dignité humaine est proclamée par de nombreux textes internationaux (Déclaration des Droits de l’Homme, "
                 "Convention européenne de sauvegarde des droits de l’Homme…).\n\n"
                 "En 1994, le Conseil constitutionnel affirme que la sauvegarde de la dignité de la personne humaine contre "
                 "toute forme d’asservissement et de dégradation est un principe à valeur constitutionnelle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Référence",
                 bodySpans: [
-                  const TextSpan(text: "Décision du Conseil constitutionnel "),
-                  const TextSpan(
+                  TextSpan(text: "Décision du Conseil constitutionnel "),
+                  TextSpan(
                     text: "(27 juillet 1994)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " : principe à valeur constitutionnelle.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Le Code pénal ne définit pas précisément la dignité humaine : il appartient aux juges du fond d’en fixer "
                 "les contours.\n\n"
                 "Est généralement incompatible avec la dignité humaine ce qui abaisse ou avilit l’être humain en bafouant "
                 "ses droits essentiels. C’est une notion évolutive, dépendante des idées morales communément admises.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Conditions de travail incompatibles avec la dignité humaine",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "À la différence de l’infraction prévue à l’",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-13 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", l’article 225-14 n’exige pas l’absence ou l’insuffisance de rémunération : "
                       "le délit peut être constitué dès lors que les conditions de travail sont incompatibles avec la dignité humaine.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’atteinte peut résulter :\n"
                 "• de la nature des locaux (insalubrité, manque d’aération…)\n"
                 "• de cadences intolérables ou d’une durée excessive de travail\n"
                 "• des relations de travail (insultes, brimades, comportements vexatoires), assimilables à des violences morales.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Infraction retenue contre un directeur d’atelier interdisant de parler/lever la tête/sourire, "
                         "criant et insultant en public, privant de pauses, imposant des humiliations (toilettes souillées…) ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 04 mars 2003)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "L’atteinte peut aussi résulter du travail lui-même, lorsqu’il est intrinsèquement incompatible avec la dignité humaine "
                 "(ex. certaines situations du monde du spectacle).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Travail forcé",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le travail forcé étant incompatible avec la dignité humaine, le délit est constitué si les circonstances factuelles "
                         "permettent d’établir l’existence d’un travail forcé ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 13 janvier 2009)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Définition OIT (Convention du 28 juin 1930) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "« tout travail ou service exigé d’un individu sous la menace d’une peine quelconque et pour lequel ledit individu ne s’est pas offert de plein gré »",
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Conditions d’hébergement incompatibles avec la dignité humaine",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La notion d’hébergement au sens de l’article 225-14 suppose :\n"
                 "• une contrepartie (loyer ou avantages en nature : travail, mise en valeur des lieux…)\n"
                 "• une durée : l’hébergement doit viser à fournir un logement pour y vivre.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’incompatibilité avec la dignité humaine peut résulter :\n"
                 "• de l’absence de conditions d’hygiène minimales\n"
                 "• de l’absence de chauffage/éclairage\n"
                 "• d’une inadéquation du logement au nombre d’occupants (sur-occupation).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Délit constitué : location à une famille de 3 personnes (enfant en bas âge + femme enceinte) d’un logement de 20 m², "
                         "humidité, chauffage mettant en péril la santé ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(C.A. Paris, 26 juin 1996)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Infraction retenue : hébergement d’une gardienne (60 ans) et de sa fille dans une loge servant aussi de lieu de travail "
                         "(réception/tri courrier), sans chauffage, installation électrique dangereuse, fenêtre bloquée, traces d’écoulement, "
                         "cuisine délabrée, WC à la turque servant aussi de douche ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 23 avril 2003)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Une victime vulnérable ou en état de dépendance",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La vulnérabilité ou la dépendance doivent être entendues largement, et doivent être apparentes ou connues de l’auteur.\n\n"
                 "• Vulnérabilité : état physique/mental (grossesse, âge, maladie, handicap…), ou environnement économique/social/culturel "
                 "(personnes immigrées, chômeurs, sans-abri…).\n"
                 "• Dépendance : économique (précarité) ou morale (ascendant : maître/domestique, parents/enfants…).\n\n"
                 "L’une ou l’autre doit exister (elles peuvent se confondre).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Présomption : "),
-                const TextSpan(
+                TextSpan(text: "Présomption : "),
+                TextSpan(
                   text: "article 225-15-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : présomption de vulnérabilité/dépendance concernant les mineurs et certaines victimes à leur arrivée sur le territoire français.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les deux délits visés par l’article 225-14 (travail et hébergement) peuvent être caractérisés simultanément, "
@@ -353,17 +353,17 @@ class SoumissionConditionsTravailHebergementIncompatiblesDignitePage
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Conscience de la vulnérabilité / dépendance"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Conscience de la vulnérabilité / dépendance"),
+              _Paragraph(
                 "L’auteur doit mesurer la vulnérabilité ou l’état de dépendance de la victime. "
                 "Cet état doit être apparent ou connu.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Conscience de l’incompatibilité avec la dignité humaine",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur a pleinement conscience du caractère incompatible avec la dignité humaine des conditions "
                 "de travail ou d’hébergement auxquelles il soumet la personne.",
               ),
@@ -378,36 +378,36 @@ class SoumissionConditionsTravailHebergementIncompatiblesDignitePage
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Premier degré d’aggravation"),
+            children: const [
+              _SubTitle("Premier degré d’aggravation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-15 I 2° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’elle est commise à l’égard de plusieurs personnes.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-15 II 2° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : lorsqu’elle est commise à l’égard d’un mineur.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Second degré d’aggravation"),
+              SizedBox(height: 12),
+              _SubTitle("Second degré d’aggravation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-15 III 2° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’elle est commise à l’égard de plusieurs personnes parmi lesquelles figurent un ou plusieurs mineurs.",
                 ),
@@ -423,78 +423,78 @@ class SoumissionConditionsTravailHebergementIncompatiblesDignitePage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple (délit) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 200 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-14 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (1er degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (1er degré) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "articles 225-15 I 2° et 225-15 II 2° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (2nd degré — crime) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (2nd degré — crime) : "),
+                TextSpan(
                   text:
                       "15 ans de réclusion criminelle et 400 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-15 III 2° du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité expressément prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité expressément prévue par "),
+                TextSpan(
                   text: "l’article 225-16 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: ". Peine d’amende selon "),
-                const TextSpan(
+                TextSpan(text: ". Peine d’amende selon "),
+                TextSpan(
                   text: "l’article 131-38 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " + peines complémentaires "),
-                const TextSpan(
+                TextSpan(text: " + peines complémentaires "),
+                TextSpan(
                   text: "article 131-39 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (dissolution, interdictions, confiscations…), notamment la confiscation du fonds de commerce ayant servi à commettre l’infraction.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément aux "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI, conformément aux "),
+                TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide/assistance, provocation, instructions données).",
                 ),
@@ -535,10 +535,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -603,7 +603,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -646,7 +646,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -708,7 +708,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -740,7 +740,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -753,7 +753,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

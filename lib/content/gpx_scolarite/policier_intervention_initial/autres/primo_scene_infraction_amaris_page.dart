@@ -132,64 +132,64 @@ class PrimoSceneInfractionAmarisPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 54 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : en cas de crime flagrant, l’OPJ avisé informe immédiatement le procureur, se transporte sans délai "
                       "sur le lieu, procède aux constatations utiles et veille à la conservation des indices et de tout ce qui peut "
                       "servir à la manifestation de la vérité (saisies, etc.).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article D7 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les officiers et agents de police judiciaire veillent à la préservation de l’état des lieux et à la conservation "
                       "des traces/indices jusqu’aux opérations de police technique et scientifique.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Articles 55 alinéas 1 et 2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : il est interdit (amende contravention 4e classe) à toute personne non habilitée de modifier l’état des lieux "
                       "ou d’effectuer des prélèvements avant les premières opérations d’enquête judiciaire, sauf nécessité "
                       "(sécurité, salubrité publique, soins aux victimes).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 434-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réprime le fait, pour faire obstacle à la manifestation de la vérité, de modifier l’état des lieux "
                       "(altération/falsification/effacement de traces, déplacement/suppression d’objets) ou de détruire/soustraire/receler/altérer "
@@ -298,30 +298,30 @@ class PrimoSceneInfractionAmarisPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Répression (altération de scène)"),
+            children: const [
+              _SubTitle("Répression (altération de scène)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le fait de faire obstacle à la manifestation de la vérité en modifiant les lieux est réprimé par ",
                 ),
                 TextSpan(
                   text: "l’article 434-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Tentative"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Tentative"),
+              _Paragraph(
                 "S’apprécie selon l’infraction retenue et les circonstances. En pratique : préserver, sécuriser, constater et rendre compte.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Complicité"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Complicité"),
+              _Paragraph(
                 "Peut être envisagée si un tiers aide ou facilite l’altération/destruction/soustraction d’indices ou d’objets utiles à la preuve.",
               ),
             ],
@@ -393,10 +393,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -461,7 +461,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -504,7 +504,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -566,7 +566,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -577,10 +577,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -592,13 +591,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -611,13 +609,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

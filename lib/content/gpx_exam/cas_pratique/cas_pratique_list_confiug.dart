@@ -1,12 +1,13 @@
 import 'dart:math' as math;
-import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:flutter/scheduler.dart';
 
 // ✅ ton import correct
 import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_dynamic_page.dart';
+import 'package:copiqpolice/data/cas_pratique/cas_pratique_repository_impl.dart';
+import 'package:copiqpolice/data/cas_pratique/models/cas_pratique_models.dart';
 
 class GpxCasPratiqueListPage extends StatefulWidget {
   const GpxCasPratiqueListPage({super.key});
@@ -26,6 +27,37 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 
   /// ✅ Empêche les doubles taps / doubles navigations (fixe ! _debugLocked)
   bool _navBusy = false;
+
+  // ─── Supabase data ───────────────────────────────────────────────────────
+  final _repo = CasPratiqueRepositoryImpl();
+  List<CaseSummary>? _cases;
+  bool _loadingCases = true;
+  String? _casesError;
+
+  @override
+  void initState() {
+    super.initState();
+    _loadCases();
+  }
+
+  Future<void> _loadCases() async {
+    try {
+      final cases = await _repo.listCases(limit: 50);
+      if (mounted) {
+        setState(() {
+          _cases = cases;
+          _loadingCases = false;
+        });
+      }
+    } catch (e) {
+      if (mounted) {
+        setState(() {
+          _casesError = e.toString();
+          _loadingCases = false;
+        });
+      }
+    }
+  }
 
   bool _reduceMotion(BuildContext context) {
     final mq = MediaQuery.maybeOf(context);
@@ -91,12 +123,15 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
     });
   }
 
-  void _openCase(String route) {
+  void _openCase(String slug) {
     _safeNav(() async {
       HapticFeedback.selectionClick();
       if (!mounted) return;
 
-      await Navigator.of(context).pushNamed(route);
+      await Navigator.of(context).pushNamed(
+        CasPratiqueDynamicPage.routeName,
+        arguments: slug,
+      );
     });
   }
 
@@ -105,218 +140,21 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
     final reduceMotion = _reduceMotion(context);
     final appCtrl = AppSettingsController.I;
 
-    final cases = const <_CaseTileData>[
-      _CaseTileData(
-        index: 1,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_1',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 2,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_2',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 3,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_3',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 4,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_4',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 5,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_5',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 6,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_6',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 7,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_7',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 8,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_8',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 9,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_9',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 10,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_10',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 11,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_11',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 12,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_12',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 13,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_13',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 14,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_14',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 15,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_15',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 16,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_16',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 17,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_17',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 18,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_18',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 19,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_19',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 20,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_20',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 21,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_21',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 22,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_22',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 23,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_23',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 24,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_24',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 25,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_25',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 26,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_26',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 27,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_27',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 28,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_28',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 29,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_29',
-        status: _CaseStatus.ready,
-      ),
-      _CaseTileData(
-        index: 30,
-        points: 15,
-        eta: "~ 15 min",
-        route: '/gpx_exam/concours/cas_pratique/case_30',
-        status: _CaseStatus.ready,
-      ),
-    ];
+    // ── Chargement depuis Supabase (dynamique) ─────────────────────────────
+    final cases = _loadingCases
+        ? <_CaseTileData>[]
+        : (_cases ?? []).asMap().entries.map((e) {
+            final idx = e.key;
+            final c = e.value;
+            return _CaseTileData(
+              index: idx + 1,
+              title: c.title,
+              points: c.totalPoints,
+              eta: '~ ${c.estimatedMinutes} min',
+              slug: c.slug,
+              status: _CaseStatus.ready,
+            );
+          }).toList();
 
     return ValueListenableBuilder<ThemeMode>(
       valueListenable: appCtrl.themeMode,
@@ -345,12 +183,12 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
             : const Color(0xFF0E2F9E);
 
         // ✅ Overlay contrast
-        final overlayTop = Colors.black.withOpacity(isDark ? 0.32 : 0.22);
-        final overlayBot = Colors.black.withOpacity(isDark ? 0.42 : 0.32);
+        final overlayTop = Colors.black.withValues(alpha: isDark ? 0.32 : 0.22);
+        final overlayBot = Colors.black.withValues(alpha: isDark ? 0.42 : 0.32);
 
         // ✅ Halo blanc (lumière premium)
-        final haloA = Colors.white.withOpacity(isDark ? 0.10 : 0.07);
-        final haloB = Colors.white.withOpacity(isDark ? 0.04 : 0.03);
+        final haloA = Colors.white.withValues(alpha: isDark ? 0.10 : 0.07);
+        final haloB = Colors.white.withValues(alpha: isDark ? 0.04 : 0.03);
 
         return Theme(
           data: theme.copyWith(
@@ -427,9 +265,9 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                             // ✅ bouton retour SAFE (désactivé pendant nav)
                             _BackButtonPill(
                               onTap: _navBusy ? () {} : _goBack,
-                              fg: Colors.white.withOpacity(0.92),
-                              stroke: Colors.white.withOpacity(0.18),
-                              bg: Colors.white.withOpacity(0.12),
+                              fg: Colors.white.withValues(alpha: 0.92),
+                              stroke: Colors.white.withValues(alpha: 0.18),
+                              bg: Colors.white.withValues(alpha: 0.12),
                             ),
                             const SizedBox(width: 12),
                             Expanded(
@@ -439,7 +277,7 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                                     "Cas pratiques",
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white.withOpacity(0.98),
+                                      color: Colors.white.withValues(alpha: 0.98),
                                       fontWeight: FontWeight.w900,
                                       fontSize: 16.8,
                                       letterSpacing: -0.2,
@@ -450,7 +288,7 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                                     "Entraînement concours — notation /15",
                                     textAlign: TextAlign.center,
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white.withOpacity(0.78),
+                                      color: Colors.white.withValues(alpha: 0.78),
                                       fontWeight: FontWeight.w700,
                                       fontSize: 12.2,
                                     ),
@@ -488,7 +326,7 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                           primary: cs.primary,
                           outline: cs.outlineVariant,
                           shadowOpacity: isDark ? 0.35 : 0.14,
-                          chipBg: cs.primaryContainer.withOpacity(
+                          chipBg: cs.primaryContainer.withValues(alpha: 
                             isDark ? 0.35 : 0.55,
                           ),
                           chipFg: cs.onPrimaryContainer,
@@ -496,6 +334,65 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
                         ),
                       ),
 
+                      if (_loadingCases)
+                        const Expanded(
+                          child: Center(
+                            child: CircularProgressIndicator(
+                              color: Colors.white,
+                              strokeWidth: 2.5,
+                            ),
+                          ),
+                        )
+                      else if (_casesError != null)
+                        Expanded(
+                          child: Center(
+                            child: Column(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                Icon(Icons.wifi_off_rounded,
+                                    color: Colors.white54, size: 40),
+                                const SizedBox(height: 12),
+                                Text(
+                                  'Impossible de charger les cas',
+                                  style: GoogleFonts.montserrat(
+                                    color: Colors.white70,
+                                    fontWeight: FontWeight.w700,
+                                  ),
+                                ),
+                                const SizedBox(height: 16),
+                                TextButton(
+                                  onPressed: () {
+                                    setState(() {
+                                      _loadingCases = true;
+                                      _casesError = null;
+                                    });
+                                    _loadCases();
+                                  },
+                                  child: Text(
+                                    'Réessayer',
+                                    style: GoogleFonts.montserrat(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                        )
+                      else if (cases.isEmpty)
+                        Expanded(
+                          child: Center(
+                            child: Text(
+                              'Aucun cas disponible pour le moment',
+                              style: GoogleFonts.montserrat(
+                                color: Colors.white70,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ),
+                        )
+                      else
                       Expanded(
                         child: ListView.separated(
                           padding: const EdgeInsets.fromLTRB(18, 8, 18, 22),
@@ -507,7 +404,7 @@ class _GpxCasPratiqueListPageState extends State<GpxCasPratiqueListPage>
 
                             final child = _CaseTile(
                               data: d,
-                              onTap: () => _openCase(d.route),
+                              onTap: () => _openCase(d.slug),
                               cs: cs,
                               isDark: isDark,
                             );
@@ -569,28 +466,20 @@ class _PremiumBackdrop extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cs = colorScheme;
-
-    // ✅ garde ton calcul (parfait), ça reste cohérent dark/light
-    final top =
-        Colors.transparent; // important : le gradient COPIQ est déjà dessous
-    final mid = Colors.transparent;
-    final bot = Colors.transparent;
-
     return Stack(
       children: [
         // on laisse transparent pour ne pas écraser le fond COPIQ
-        DecoratedBox(
-          decoration: const BoxDecoration(),
-          child: const SizedBox.expand(),
+        const DecoratedBox(
+          decoration: BoxDecoration(),
+          child: SizedBox.expand(),
         ),
         Positioned.fill(
           child: IgnorePointer(
             child: CustomPaint(
               painter: _LinesPainter(
                 progress: enabledMotion ? controller : null,
-                ink: Colors.white.withOpacity(isDark ? 0.055 : 0.040),
-                glow: Colors.white.withOpacity(isDark ? 0.11 : 0.09),
+                ink: Colors.white.withValues(alpha: isDark ? 0.055 : 0.040),
+                glow: Colors.white.withValues(alpha: isDark ? 0.11 : 0.09),
               ),
             ),
           ),
@@ -604,7 +493,7 @@ class _PremiumBackdrop extends StatelessWidget {
                   radius: 1.15,
                   colors: [
                     Colors.transparent,
-                    Colors.black.withOpacity(isDark ? 0.38 : 0.26),
+                    Colors.black.withValues(alpha: isDark ? 0.38 : 0.26),
                   ],
                   stops: const [0.55, 1.0],
                 ),
@@ -764,7 +653,7 @@ class _BannerCard extends StatelessWidget {
         border: Border.all(color: outline),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(shadowOpacity),
+            color: Colors.black.withValues(alpha: shadowOpacity),
             blurRadius: 22,
             offset: const Offset(0, 12),
           ),
@@ -780,7 +669,7 @@ class _BannerCard extends StatelessWidget {
               color: primary,
               boxShadow: [
                 BoxShadow(
-                  color: primary.withOpacity(0.35),
+                  color: primary.withValues(alpha: 0.35),
                   blurRadius: 14,
                   offset: const Offset(0, 8),
                 ),
@@ -810,7 +699,7 @@ class _BannerCard extends StatelessWidget {
                 Text(
                   subtitle,
                   style: GoogleFonts.montserrat(
-                    color: onSurface.withOpacity(0.80),
+                    color: onSurface.withValues(alpha: 0.80),
                     fontWeight: FontWeight.w700,
                     fontSize: 12.6,
                     height: 1.25,
@@ -899,17 +788,19 @@ enum _CaseStatus { ready, locked, done }
 
 class _CaseTileData {
   final int index;
+  final String title;
   final int points;
   final String eta;
-  final String route;
+  final String slug;
   final _CaseStatus status;
   final int? score15;
 
   const _CaseTileData({
     required this.index,
+    required this.title,
     required this.points,
     required this.eta,
-    required this.route,
+    required this.slug,
     required this.status,
     this.score15,
   });
@@ -933,7 +824,7 @@ class _CaseTile extends StatelessWidget {
     final locked = data.status == _CaseStatus.locked;
     final done = data.status == _CaseStatus.done;
 
-    final cardShadow = Colors.black.withOpacity(isDark ? 0.35 : 0.10);
+    final cardShadow = Colors.black.withValues(alpha: isDark ? 0.35 : 0.10);
 
     return Opacity(
       opacity: locked ? 0.55 : 1.0,
@@ -968,7 +859,7 @@ class _CaseTile extends StatelessWidget {
                         children: [
                           Expanded(
                             child: Text(
-                              "Cas pratique n°${data.index}",
+                              data.title,
                               style: GoogleFonts.montserrat(
                                 color: cs.onSurface,
                                 fontWeight: FontWeight.w900,
@@ -1036,17 +927,17 @@ class _NumberBadge extends StatelessWidget {
     switch (status) {
       case _CaseStatus.ready:
         bg = cs.primary;
-        shadow = cs.primary.withOpacity(0.35);
+        shadow = cs.primary.withValues(alpha: 0.35);
         icon = null;
         break;
       case _CaseStatus.locked:
         bg = cs.outline;
-        shadow = cs.outline.withOpacity(0.22);
+        shadow = cs.outline.withValues(alpha: 0.22);
         icon = Icons.lock_rounded;
         break;
       case _CaseStatus.done:
         bg = cs.tertiary;
-        shadow = cs.tertiary.withOpacity(0.25);
+        shadow = cs.tertiary.withValues(alpha: 0.25);
         icon = Icons.check_rounded;
         break;
     }
@@ -1132,7 +1023,7 @@ class _StatusPillLocked extends StatelessWidget {
           Icon(
             Icons.lock_rounded,
             size: 16,
-            color: cs.onSurface.withOpacity(0.75),
+            color: cs.onSurface.withValues(alpha: 0.75),
           ),
           const SizedBox(width: 6),
           Text(
@@ -1157,29 +1048,26 @@ class _StatusPillDone extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final s = score15;
+    final label = score15 != null ? '$score15 / 15' : 'Terminé';
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 5),
       decoration: BoxDecoration(
         color: cs.tertiaryContainer,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: cs.outlineVariant),
+        border: Border.all(color: cs.tertiary.withValues(alpha: 0.4)),
       ),
       child: Row(
+        mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(
-            Icons.check_circle_rounded,
-            size: 16,
-            color: cs.onTertiaryContainer,
-          ),
-          const SizedBox(width: 6),
+          Icon(Icons.check_circle_rounded, size: 14, color: cs.tertiary),
+          const SizedBox(width: 5),
           Text(
-            s == null ? "Terminé" : "Score $s/15",
+            label,
             style: GoogleFonts.montserrat(
               color: cs.onTertiaryContainer,
-              fontWeight: FontWeight.w900,
-              fontSize: 12.0,
-              letterSpacing: -0.2,
+              fontWeight: FontWeight.w700,
+              fontSize: 11.5,
+              letterSpacing: -0.1,
             ),
           ),
         ],

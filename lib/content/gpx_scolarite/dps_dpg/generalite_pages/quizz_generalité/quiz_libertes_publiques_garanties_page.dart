@@ -95,7 +95,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   // =========================================================
 
   // ---------- Constitution & suprématie ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitution – Norme suprême",
     question:
         "Dans l’ordre juridique français, la norme qui se situe au sommet de la hiérarchie des normes est :",
@@ -105,7 +105,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La Constitution est la norme suprême : toutes les lois et règlements doivent lui être conformes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitution – Norme suprême",
     question:
         "La supériorité de la Constitution sur la loi n’a de sens que si :",
@@ -122,7 +122,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Types de Constitution ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution",
     question: "Une Constitution dite « souple » est une Constitution qui :",
     options: [
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Dans une Constitution souple, la procédure de révision est identique à celle des lois ordinaires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution",
     question: "Une Constitution est qualifiée de « rigide » lorsqu’elle :",
     options: [
@@ -151,7 +151,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Révision de la Constitution ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle",
     question:
         "Quel article de la Constitution de 1958 encadre la procédure de révision constitutionnelle ?",
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "L’article 89 fixe la procédure de révision : initiative, adoption identique par les deux assemblées, puis référendum ou Congrès.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle",
     question:
         "En France, la révision de la Constitution doit d’abord être adoptée :",
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Contrôle de constitutionnalité – principes ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de constitutionnalité – Principes",
     question:
         "Le contrôle de constitutionnalité des lois sert principalement à :",
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le contrôle de constitutionnalité protège la suprématie de la Constitution et les droits fondamentaux qu’elle garantit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle de constitutionnalité – Principes",
     question:
         "Dans un État à Constitution rigide, une loi contraire à la Constitution est :",
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Modèles de contrôle ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Modèles de contrôle",
     question: "Le contrôle de constitutionnalité par voie d’exception est :",
     options: [
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Par voie d’exception, tout juge saisi d’un litige peut refuser d’appliquer une loi qu’il estime inconstitutionnelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Modèles de contrôle",
     question:
         "Le modèle français de contrôle par le Conseil constitutionnel est un contrôle :",
@@ -232,7 +232,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Conseil constitutionnel – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel",
     question: "Le Conseil constitutionnel a été créé par la Constitution de :",
     options: ["1875", "1946", "1958"],
@@ -241,7 +241,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Il s’agit d’une innovation majeure de la Ve République pour contrôler la conformité des lois à la Constitution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel",
     question:
         "Avant la promulgation d’une loi, le contrôle de constitutionnalité exercé par le Conseil constitutionnel est qualifié de :",
@@ -255,7 +255,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le contrôle a priori intervient avant l’entrée en vigueur de la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel",
     question:
         "En cas de censure d’une loi par le Conseil constitutionnel avant sa promulgation :",
@@ -271,7 +271,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- QPC – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Question prioritaire de constitutionnalité (QPC)",
     question:
         "La question prioritaire de constitutionnalité (QPC) est prévue par :",
@@ -285,7 +285,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "L’article 61-1 introduit la QPC, permettant de contester une loi déjà entrée en vigueur.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – généralités",
     question:
         "La QPC permet à un justiciable de soutenir qu’une disposition législative :",
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La QPC vise la compatibilité de la loi avec les droits et libertés constitutionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – généralités",
     question: "La QPC est soulevée :",
     options: [
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours juridictionnels – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Notion",
     question: "Les recours juridictionnels permettent à un individu de :",
     options: [
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Les recours juridictionnels sont les moyens offerts aux justiciables pour contester une décision ou une atteinte aux libertés devant une juridiction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Notion",
     question: "Les recours juridictionnels sont exercés devant :",
     options: [
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours judiciaires – pénal ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours devant le juge pénal",
     question:
         "Lorsque l’atteinte à une liberté constitue une infraction, la victime peut saisir :",
@@ -357,7 +357,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Si les faits sont incriminés par le Code pénal, c’est la juridiction pénale qui sanctionne.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours devant le juge pénal",
     question: "L’article 431-1 du Code pénal incrimine notamment :",
     options: [
@@ -373,7 +373,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours administratifs (indemnité / REP) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Généralités",
     question: "Les juridictions administratives contrôlent principalement :",
     options: [
@@ -387,7 +387,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Elles sont compétentes pour juger des actes administratifs et de la responsabilité de l’administration.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Indemnité",
     question:
         "Le recours en indemnité devant le juge administratif vise à obtenir :",
@@ -401,7 +401,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Il s’agit d’un recours de pleine juridiction, visant à obtenir des dommages-intérêts.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Excès de pouvoir",
     question: "Le recours pour excès de pouvoir a pour objet principal :",
     options: [
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours non juridictionnels – administratifs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours non juridictionnels – Administratifs",
     question: "Un recours gracieux est adressé :",
     options: [
@@ -429,7 +429,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le recours gracieux demande à l’autorité qui a pris la décision de la modifier ou de la retirer.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours non juridictionnels – Administratifs",
     question: "Un recours hiérarchique est adressé :",
     options: [
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours non juridictionnels – politiques ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours à caractère politique",
     question: "Le droit de pétition permet principalement :",
     options: [
@@ -458,7 +458,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La pétition est un moyen d’expression politique, souvent collectif, adressé à une institution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours à caractère politique",
     question: "L’objection de conscience concerne traditionnellement :",
     options: [
@@ -473,7 +473,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Résistance à l’oppression ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Résistance à l’oppression",
     question: "La résistance à l’oppression est mentionnée dans :",
     options: [
@@ -486,7 +486,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "L’article 2 de la DDHC évoque le droit de résistance à l’oppression comme un droit naturel et imprescriptible.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Résistance à l’oppression",
     question:
         "Pour un policier, la notion de résistance à l’oppression rappelle notamment que :",
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Défenseur des droits – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Généralités",
     question: "Le Défenseur des droits est :",
     options: [
@@ -516,7 +516,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le Défenseur des droits est une autorité indépendante, mentionnée dans la Constitution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Généralités",
     question: "Le Défenseur des droits est nommé pour une durée de :",
     options: [
@@ -529,7 +529,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Son mandat de 6 ans non renouvelable garantit son indépendance vis-à-vis des pouvoirs publics.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Généralités",
     question: "Le Défenseur des droits peut être saisi :",
     options: [
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Défenseur des droits – Missions ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Missions",
     question: "Parmi les missions du Défenseur des droits figure :",
     options: [
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le Défenseur des droits veille notamment aux droits de l’enfant et à leur respect.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Missions",
     question: "Le Défenseur des droits intervient aussi pour :",
     options: [
@@ -570,7 +570,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La lutte contre les discriminations est au cœur de ses missions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Déontologie sécurité",
     question:
         "En matière de sécurité, le Défenseur des droits veille notamment :",
@@ -587,7 +587,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CGLPL – généralités ----------
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Contrôleur général des lieux de privation de liberté – Généralités",
     question: "Le Contrôleur général des lieux de privation de liberté est :",
@@ -601,7 +601,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Institué par la loi de 2007, le CGLPL est chargé de contrôler les lieux de privation de liberté.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Contrôleur général des lieux de privation de liberté – Compétence",
     question:
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Organes internationaux – principe ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organes internationaux – Subsidiarité",
     question:
         "Avant de saisir un organe international de protection des droits de l’Homme, la personne doit en principe :",
@@ -633,7 +633,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "C’est le principe de subsidiarité : les organes internationaux n’interviennent qu’en dernier ressort.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organes internationaux – Généralités",
     question: "La Cour européenne des droits de l’Homme (CEDH) siège :",
     options: ["À Strasbourg", "À Luxembourg", "À Genève"],
@@ -642,7 +642,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La CEDH contrôle le respect de la Convention européenne des droits de l’Homme par les États membres du Conseil de l’Europe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organes internationaux – Généralités",
     question: "La Cour de justice de l’Union européenne (CJUE) siège :",
     options: ["À Strasbourg", "À Luxembourg", "À Bruxelles"],
@@ -656,7 +656,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   // =========================================================
 
   // ---------- Constitution souple / rigide : effets ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution – Effets",
     question: "Dans un système de Constitution souple, la loi ordinaire :",
     options: [
@@ -669,7 +669,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La Constitution souple n’est pas protégée par une procédure de révision renforcée : la loi peut la remettre en cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Types de Constitution – Effets",
     question:
         "Dans un État à Constitution rigide, la protection des libertés publiques est en principe :",
@@ -686,7 +686,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Révision constitutionnelle : procédure ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle – Procédure",
     question:
         "En application de l’article 89, l’initiative de la révision constitutionnelle appartient :",
@@ -700,7 +700,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le projet de révision peut venir du Président sur proposition du Premier ministre ou des parlementaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision constitutionnelle – Procédure",
     question:
         "Après le vote de la révision en termes identiques par les deux chambres, l’adoption définitive peut se faire :",
@@ -717,7 +717,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Contrôle par voie d’exception ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par voie d’exception",
     question:
         "Dans le contrôle par voie d’exception, lorsqu’un juge estime une loi inconstitutionnelle :",
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le juge écarte la loi dans le cas concret, sans nécessairement l’annuler pour l’avenir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par voie d’exception",
     question: "Le contrôle par voie d’exception est qualifié de concret car :",
     options: [
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Contrôle par une juridiction constitutionnelle ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par une juridiction constitutionnelle",
     question:
         "Dans le modèle concentré, la constitutionnalité des lois est contrôlée :",
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le contrôle est centralisé : seule cette juridiction peut déclarer une loi inconstitutionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle par une juridiction constitutionnelle",
     question:
         "L’effet principal d’une décision du Conseil constitutionnel déclarant une loi contraire à la Constitution (a priori) est :",
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- QPC – conditions d’examen ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Conditions",
     question:
         "Pour qu’une juridiction transmette une QPC au Conseil d’État ou à la Cour de cassation, il faut notamment que :",
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La QPC ne peut porter que sur une disposition ayant une incidence sur la solution du litige.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Conditions",
     question: "Parmi les conditions de transmission d’une QPC, on trouve :",
     options: [
@@ -804,7 +804,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Si le Conseil constitutionnel a déjà jugé la disposition conforme dans les mêmes circonstances, la QPC n’est pas transmise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Rôle des juridictions suprêmes",
     question:
         "Le Conseil d’État ou la Cour de cassation, saisis d’une QPC, exercent :",
@@ -821,7 +821,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- QPC – effets de la décision ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Effets",
     question:
         "Lorsqu’une disposition législative est déclarée inconstitutionnelle à l’occasion d’une QPC :",
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La décision a une portée générale, même si le Conseil peut différer la date d’abrogation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC – Effets",
     question:
         "Après une déclaration d’inconstitutionnalité, une disposition similaire pourra être réintroduite si :",
@@ -851,7 +851,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours devant les juridictions judiciaires ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Juge pénal",
     question:
         "En matière pénale, la victime d’une atteinte à une liberté peut :",
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La plainte et la constitution de partie civile permettent de déclencher des poursuites et de demander réparation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours juridictionnels – Juge civil",
     question: "Le juge civil peut être saisi notamment pour :",
     options: [
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours judiciaires – actes administratifs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours judiciaires – Exception d’illégalité",
     question: "L’exception d’illégalité permet au juge judiciaire :",
     options: [
@@ -894,7 +894,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "L’acte est écarté dans l’affaire mais n’est pas formellement annulé pour tous.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours judiciaires – Emprise irrégulière",
     question:
         "Lorsque l’administration s’empare d’un bien privé sans respecter la procédure d’expropriation, on parle :",
@@ -910,7 +910,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Voie de fait ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voie de fait",
     question: "La voie de fait se caractérise notamment par :",
     options: [
@@ -924,7 +924,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La voie de fait suppose une gravité telle que l’acte ne peut se rattacher à aucun pouvoir administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voie de fait",
     question:
         "En cas de voie de fait, le juge compétent pour faire cesser l’atteinte et indemniser la victime est :",
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours administratifs – Indemnité / REP ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Indemnité",
     question:
         "Dans le cadre d’un recours en indemnité, le juge administratif peut :",
@@ -954,7 +954,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "C’est un recours de pleine juridiction qui porte sur la réparation financière du dommage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Excès de pouvoir",
     question:
         "Parmi les causes classiques d’illégalité d’un acte administratif, on trouve :",
@@ -968,7 +968,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Un acte pris par une autorité non compétente est illégal et peut être annulé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Excès de pouvoir",
     question: "Le détournement de pouvoir consiste pour l’administration à :",
     options: [
@@ -983,7 +983,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours administratifs – Libertés publiques ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours administratifs – Libertés publiques",
     question:
         "Lorsqu’un arrêté de police limite l’exercice d’une liberté publique, le juge administratif vérifie notamment :",
@@ -999,7 +999,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Responsabilité de l’État du fait des lois ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité de l’État du fait des lois",
     question:
         "La responsabilité de l’État du fait des lois peut être engagée notamment lorsque :",
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Défenseur des droits – Saisine et pouvoirs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Saisine",
     question: "La saisine du Défenseur des droits est :",
     options: [
@@ -1029,7 +1029,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La saisine est simplifiée, gratuite et peut se faire par différents canaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits – Pouvoirs",
     question: "Le Défenseur des droits peut, dans le cadre de ses enquêtes :",
     options: [
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CGLPL – Pouvoirs ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CGLPL – Pouvoirs d’enquête",
     question:
         "Le Contrôleur général peut se rendre dans un lieu de privation de liberté :",
@@ -1059,7 +1059,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "La loi lui donne un droit de visite très large, sous réserve de certains secrets protégés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CGLPL – Pouvoirs d’enquête",
     question:
         "En cas d’atteinte grave aux droits fondamentaux constatée par le CGLPL, celui-ci peut :",
@@ -1075,7 +1075,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Organes internationaux – Comité discrimination raciale ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "ONU – Comité discrimination raciale",
     question:
         "Le Comité pour l’élimination de la discrimination raciale contrôle l’application :",
@@ -1090,7 +1090,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Ce comité, créé en 1969, veille au respect de cette convention par les États parties.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "ONU – Comité discrimination raciale",
     question:
         "Le recours individuel devant le Comité pour l’élimination de la discrimination raciale suppose :",
@@ -1106,7 +1106,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CEDH – Saisine ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Saisine",
     question:
         "Une requête individuelle devant la Cour européenne des droits de l’Homme peut être introduite par :",
@@ -1119,7 +1119,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
     explanation: "La CEDH est largement ouverte aux requêtes individuelles.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Effets",
     question: "En cas de condamnation de la France par la CEDH :",
     options: [
@@ -1135,7 +1135,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CJUE – Renvoi préjudiciel ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CJUE – Renvoi préjudiciel",
     question: "Le renvoi préjudiciel à la CJUE permet :",
     options: [
@@ -1155,7 +1155,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   // =========================================================
 
   // ---------- Hiérarchie des normes & libertés ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes – Libertés",
     question:
         "Dans la hiérarchie des normes, le « bloc de constitutionnalité » comprend notamment :",
@@ -1170,7 +1170,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Ces textes ont valeur constitutionnelle et protègent directement les droits et libertés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des normes – Libertés",
     question:
         "Lorsqu’un règlement de police porte atteinte à une liberté publique, le juge administratif contrôle :",
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Jurisprudence Benjamin – Police & libertés ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police administrative & libertés – Benjamin",
     question:
         "L’arrêt CE, 19 mai 1933, Benjamin impose à l’autorité de police :",
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le juge impose un contrôle strict de nécessité et de proportionnalité des mesures de police.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police administrative & libertés – Benjamin",
     question:
         "Dans le cadre d’un recours contre une interdiction de manifestation, le juge administratif vérifie notamment si :",
@@ -1219,7 +1219,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- QPC vs contrôle a priori ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC & contrôle a priori",
     question:
         "Le contrôle a priori du Conseil constitutionnel et la QPC se distinguent notamment par :",
@@ -1234,7 +1234,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le contrôle a priori intervient avant la promulgation, la QPC porte sur une loi déjà en vigueur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC & contrôle a priori",
     question:
         "La QPC a renforcé la protection des libertés fondamentales car elle permet :",
@@ -1250,7 +1250,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Articulation QPC / conventions internationales ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "QPC & conventions internationales",
     question:
         "Face à une loi contraire à la fois à la Constitution et à la CEDH, un justiciable peut invoquer :",
@@ -1267,7 +1267,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Recours administratifs d’urgence – Référé-liberté ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Référé-liberté",
     question: "Le référé-liberté permet au juge administratif de :",
     options: [
@@ -1281,7 +1281,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Introduit par la loi de 2000, il offre un outil de protection rapide des libertés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Référé-liberté",
     question: "Pour qu’un référé-liberté soit recevable, il faut notamment :",
     options: [
@@ -1297,7 +1297,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Voie de fait / compétence judiciaire vs administrative ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voie de fait – Compétence",
     question: "La qualification de voie de fait emporte principalement :",
     options: [
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Responsabilité de l’État du fait des lois – Conditions détaillées ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité de l’État du fait des lois – Conditions",
     question:
         "Selon la jurisprudence La Fleurette, la responsabilité de l’État du fait d’une loi suppose que :",
@@ -1330,7 +1330,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Défenseur des droits & police – Expert ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits & Police",
     question:
         "En matière de déontologie des forces de sécurité, le Défenseur des droits peut :",
@@ -1344,7 +1344,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Il exerce un pouvoir d’influence important mais ne se substitue pas aux autorités disciplinaires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits & Police",
     question:
         "Pour un policier, la saisine du Défenseur des droits par un citoyen implique :",
@@ -1361,7 +1361,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CGLPL & locaux de garde à vue – Expert ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CGLPL & Garde à vue",
     question:
         "Lors d’une visite de locaux de garde à vue, le CGLPL porte une attention particulière :",
@@ -1378,7 +1378,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CEDH – Recevabilité & procédure – Expert ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Recevabilité",
     question:
         "Pour qu’une requête soit recevable devant la CEDH, il faut notamment :",
@@ -1393,7 +1393,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
         "Le principe de subsidiarité impose d’utiliser d’abord les recours internes avant de saisir la CEDH.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CEDH – Effets en droit interne",
     question:
         "Les condamnations de la France par la CEDH ont pour conséquence :",
@@ -1410,7 +1410,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- CJUE & données personnelles / police – Expert ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CJUE & Libertés – Données",
     question:
         "Les décisions de la CJUE en matière de protection des données personnelles influencent :",
@@ -1427,7 +1427,7 @@ final List<QuizQuestion> questionsGarantiesLibertesPubliques = [
   ),
 
   // ---------- Synthèse – Garanties multiples des libertés ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse – Garanties des libertés",
     question:
         "La protection des libertés publiques en France repose notamment sur :",
@@ -1774,7 +1774,7 @@ class _QuizGarantiesLibertesPageState extends State<QuizGarantiesLibertesPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1963,7 +1963,7 @@ class _QuizGarantiesLibertesPageState extends State<QuizGarantiesLibertesPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2115,7 +2115,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2643,10 +2642,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3017,7 +3017,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3058,9 +3058,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

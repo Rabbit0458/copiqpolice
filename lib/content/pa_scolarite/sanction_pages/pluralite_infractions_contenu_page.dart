@@ -124,7 +124,7 @@ class PaPluraliteInfractionsContenuPage extends StatelessWidget {
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
-              '/gpx/pa/dps_dpg/sanctions/quiz/sanction_pluralite_infractions',
+              '/pa/sanction/quiz/sanction_pluralite_infractions',
             ),
           ),
 

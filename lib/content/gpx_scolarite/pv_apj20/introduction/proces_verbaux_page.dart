@@ -89,16 +89,16 @@ class PVProcesVerbauxPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 429 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : encadre la valeur probante du procès-verbal, qui n’est reconnue que s’il est régulier en la forme, établi par un auteur compétent, dans l’exercice de ses fonctions, et sur une matière de sa compétence (faits vus, entendus ou constatés personnellement).",
                 ),
@@ -129,94 +129,94 @@ class PVProcesVerbauxPage extends StatelessWidget {
             cardColor: cardValue,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _NotaBox(
                 title: "Principe",
                 bodySpans: [
-                  const TextSpan(text: "Sauf disposition contraire, "),
+                  TextSpan(text: "Sauf disposition contraire, "),
                   TextSpan(
                     text:
                         "les procès-verbaux et rapports constatant les délits",
-                    style: const TextStyle(fontWeight: FontWeight.w900),
+                    style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " ne valent qu’à titre de simples renseignements — ",
                   ),
                   TextSpan(
                     text: "article 430 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) PV valant simples renseignements"),
+              _SubTitle("A) PV valant simples renseignements"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 430 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : en enquête de flagrance (sauf loi spéciale), en enquête préliminaire ou en exécution d’une commission rogatoire, les PV n’apportent pas de valeur probante aux faits relatés : ils jouent un rôle d’information.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Conséquence : le juge apprécie librement, le PV informe mais ne « prouve » pas à lui seul.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) PV valant jusqu’à preuve contraire"),
+              _SubTitle("B) PV valant jusqu’à preuve contraire"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 431 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : une disposition expresse de la loi peut conférer au PV une force probante renforcée. La preuve contraire ne peut alors être apportée que par écrit ou par témoins (ex. : dispositions spéciales, comme certains domaines du droit du travail).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Règle d’or : le rédacteur relate uniquement ce qu’il a personnellement vu, entendu ou constaté.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) PV valant jusqu’à inscription de faux"),
+              _SubTitle("C) PV valant jusqu’à inscription de faux"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : certaines matières, prévues par des lois spéciales, donnent lieu à des PV faisant foi jusqu’à inscription de faux (souvent rédigés par des agents spécialisés : douanes, ONF, etc.).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Autorité",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’autorité de ces PV est très forte : le juge est lié tant que les conditions légales sont réunies (infraction constituée, compétence de l’agent, absence de prescription/amnestie, absence de vice de forme).",
                   ),
@@ -233,102 +233,102 @@ class PVProcesVerbauxPage extends StatelessWidget {
             cardColor: cardRedac,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Principes"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Principes"),
+              _BulletPoint(
                 text:
                     "Simultanéité : le PV doit être rédigé « sur-le-champ » ou dès que possible (perquisition, constatations, audition…).",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Spécificité : traditionnellement, un PV par opération de police judiciaire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article D.11 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : autorise, en flagrance ou en préliminaire, à relater dans un seul PV les opérations effectuées au cours d’une même enquête (procédure simplifiée : vol à l’étalage, vente à la sauvette, usage de stupéfiants, etc.).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Unicité du rédacteur : l’en-tête comporte l’identité du rédacteur (ou R.I.O. selon conditions), grade, service et qualité CPP.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "articles D.9 et D.10 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Copie : une copie du PV doit toujours être établie et jointe à l’original destiné au magistrat.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 19 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : impose la copie jointe à l’original."),
+                TextSpan(text: " : impose la copie jointe à l’original."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Protection du rédacteur & assistants"),
+              _SubTitle("B) Protection du rédacteur & assistants"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 15-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le rédacteur d’un PV de plainte (OPJ/APJ) peut s’identifier par son numéro d’immatriculation administrative (R.I.O.) sans autorisation préalable.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 15-4 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : tout agent de la police nationale peut s’identifier par son R.I.O. dans les actes qu’il rédige ou dans lesquels il est cité comme assistant, sans faire apparaître nom et prénom (sous réserve des conditions légales et, dans certains cas, d’une autorisation).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "But",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette protection vise les situations où la révélation de l’identité est susceptible de mettre en danger la vie ou l’intégrité physique de l’agent ou de ses proches, compte tenu des conditions d’exercice ou de la nature des faits constatés.",
                   ),
@@ -345,146 +345,146 @@ class PVProcesVerbauxPage extends StatelessWidget {
             cardColor: cardStruct,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Chaque feuillet du procès-verbal doit être écrit et signé par son rédacteur. Seule la langue française doit être utilisée. Le procès-verbal peut être manuscrit ou dactylographié.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Les 6 parties du procès-verbal"),
-              const _BulletPoint(text: "1) Le titre (« PROCÈS-VERBAL »)."),
-              const _BulletPoint(text: "2) L’incipit."),
-              const _BulletPoint(text: "3) Le corps du procès-verbal."),
-              const _BulletPoint(text: "4) L’énonciation terminale (clôture)."),
-              const _BulletPoint(text: "5) La marge."),
-              const _BulletPoint(text: "6) Les mentions et annexes."),
+              _SubTitle("Les 6 parties du procès-verbal"),
+              _BulletPoint(text: "1) Le titre (« PROCÈS-VERBAL »)."),
+              _BulletPoint(text: "2) L’incipit."),
+              _BulletPoint(text: "3) Le corps du procès-verbal."),
+              _BulletPoint(text: "4) L’énonciation terminale (clôture)."),
+              _BulletPoint(text: "5) La marge."),
+              _BulletPoint(text: "6) Les mentions et annexes."),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) L’incipit : contenu attendu"),
-              const _BulletPoint(text: "Date et heure en toutes lettres."),
-              const _BulletPoint(
+              _SubTitle("2) L’incipit : contenu attendu"),
+              _BulletPoint(text: "Date et heure en toutes lettres."),
+              _BulletPoint(
                 text:
                     "Identité du rédacteur : nom/prénom ou R.I.O., grade, qualité, service, résidence.",
               ),
-              const _BulletPoint(text: "Lieu de rédaction."),
-              const _BulletPoint(
+              _BulletPoint(text: "Lieu de rédaction."),
+              _BulletPoint(
                 text:
                     "Fait / pièce ouvrant la procédure ou motivant l’opération.",
               ),
-              const _BulletPoint(text: "Cadre juridique de l’action de PJ."),
-              const _BulletPoint(
+              _BulletPoint(text: "Cadre juridique de l’action de PJ."),
+              _BulletPoint(
                 text:
                     "Personnes présentes (assistants, civilement responsable, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Identité de la personne objet de l’opération (sauf impossibilité).",
               ),
-              const _BulletPoint(text: "Avis aux autorités."),
+              _BulletPoint(text: "Avis aux autorités."),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Références R.I.O. : "),
+                TextSpan(text: "Références R.I.O. : "),
                 TextSpan(
                   text: "articles 15-3 et 15-4 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) Le corps : règles pratiques"),
-              const _BulletPoint(
+              _SubTitle("3) Le corps : règles pratiques"),
+              _BulletPoint(
                 text:
                     "Relater uniquement ce qui est personnellement vu, constaté ou entendu.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Temps : présent de l’indicatif ; style : première personne du pluriel.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Objectivité : reflet fidèle des déclarations enregistrées et des faits constatés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Questions/Réponses : si utile, inscrire le texte exact des questions et enregistrer la réponse.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 107 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les PV doivent être établis sans interligne, sans rature ni surcharge. Chaque rature/renvoi doit être approuvé en marge. Les blancs peuvent être comblés par des pointillés.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "NOTA",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’utilisation du L.R.P. permet, en principe, d’éviter ratures et renvois en modifiant le texte directement à l’écran, avec l’accord du déclarant avant impression.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4) Clôture (énonciation terminale)"),
-              const _BulletPoint(
+              _SubTitle("4) Clôture (énonciation terminale)"),
+              _BulletPoint(
                 text:
                     "Signatures : rédacteur + assistants mentionnés + déclarant.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Heure de fin : facultative pour la plainte ; mentionnée dans les autres actes mettant en cause un suspect.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Adapter la formule de clôture : interprète, refus/impossibilité de lecture ou de signature, etc.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("5) La marge : pagination & mentions"),
-              const _BulletPoint(
+              _SubTitle("5) La marge : pagination & mentions"),
+              _BulletPoint(
                 text:
                     "Pagination : seul le recto est utilisé ; pour les feuillets suivants, documents sans en-tête.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Rappels en tête : objet de l’acte, n° du registre / n° d’ordre, numéro de feuillet (suite).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mentions marginales : N° procédure, cote des PV (1, 2, 3…), affaire (contre X / contre personne dénommée), objet (plainte, audition, perquisition…).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("6) Mentions & annexes"),
-              const _Paragraph(
+              _SubTitle("6) Mentions & annexes"),
+              _Paragraph(
                 "Elles indiquent une diligence accessoire en rapport direct avec le PV et la jonction d’un document ou d’une pièce (remise par une personne ou jugée nécessaire à l’enquête).",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "À placer en marge après la clôture, sous la rubrique « MENTION » ou « ANNEXE ».",
               ),
@@ -538,10 +538,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -606,7 +606,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -649,7 +649,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -711,7 +711,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -743,7 +743,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -756,7 +756,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

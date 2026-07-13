@@ -37,14 +37,14 @@ class DroitViePriveePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF6A1B9A)
         : const Color(0xFF6A1B9A);
     final Color referenceColor = isDark
         ? const Color(0xFFBA68C8)
         : const Color(0xFF6A1B9A);
-    final Color dangerColor = const Color(0xFFFF3B30);
+    const Color dangerColor = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: background,
@@ -188,16 +188,16 @@ class DroitViePriveePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La vie privée n’est pas définie de manière précise par la loi du 17 juillet 1970. Les juridictions françaises en ont cependant une conception très large. "
                       "La jurisprudence et la doctrine définissent la vie privée comme le droit, pour tout individu, d’interdire à des tiers d’avoir accès à sa vie personnelle afin d’en préserver l’anonymat et l’intimité. ",
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Relèvent ainsi de la vie privée tout ce qui a trait à la vie sentimentale, à la vie familiale, à l’état de santé, à la naissance, à la mort, au patrimoine, à la situation financière, "
                       "aux convictions personnelles, aux loisirs, à la vie professionnelle lorsqu’elle touche à l’intimité, à l’image de la personne, etc. "
@@ -251,8 +251,8 @@ class DroitViePriveePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La loi du 21 janvier 1995 d’orientation et de programmation relative à la sécurité a autorisé le recours aux systèmes de vidéoprotection, anciennement appelés « vidéosurveillance ». "
                       "Le titre V du Code de la sécurité intérieure, aux articles L. 251-1 et suivants, fixe les dispositions générales, les conditions de fonctionnement, les contrôles, "
@@ -344,15 +344,15 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Des systèmes de vidéoprotection peuvent également être mis en œuvre dans des lieux et établissements ouverts au public, afin d’y assurer la sécurité des personnes et des biens "
                       "lorsque ces lieux sont particulièrement exposés à des risques d’agression ou de vol. ",
                 ),
               ]),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Après information du maire de la commune concernée et autorisation des autorités publiques compétentes, "
                       "des commerçants peuvent mettre en œuvre sur la voie publique un système de vidéoprotection pour assurer la protection des abords immédiats de leurs bâtiments et installations "
@@ -523,8 +523,8 @@ class DroitViePriveePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "L’expansion démographique, le développement des moyens d’information et de communication, ainsi que le perfectionnement des techniques de captation de paroles ou d’images, "
                       "constituent des menaces potentielles pour le droit au respect de la vie privée. "
@@ -690,7 +690,7 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-2-1 du Code pénal : ",
                   style: TextStyle(
@@ -698,7 +698,7 @@ class DroitViePriveePage extends StatelessWidget {
                     color: dangerColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "incrimine le fait, en l’absence d’accord de la personne pour la diffusion, de porter à la connaissance du public ou d’un tiers tout enregistrement ou tout document "
                       "portant sur des paroles ou des images présentant un caractère sexuel, obtenu avec le consentement exprès ou présumé de la personne, ou réalisé par elle-même, "
@@ -804,8 +804,8 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Le droit au respect de la vie privée s’étend au-delà de la mort, incluant le respect dû à la dépouille mortelle. "
                       "La publication, sans l’accord de la famille, de photographies d’une personne célèbre sur son lit de mort a été jugée constitutive d’une atteinte au droit au respect de la vie privée des proches. ",
@@ -818,8 +818,8 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Toute divulgation d’aspects de la vie privée d’une personne, sans son consentement, peut être sanctionnée civilement. "
                       "Plusieurs textes fondamentaux encadrent les actions ouvertes à la victime :",
@@ -873,8 +873,8 @@ class DroitViePriveePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "L’inviolabilité des correspondances, qu’elles soient écrites, téléphoniques ou électroniques, protège la relation – souvent secrète – entre, en principe, deux personnes identifiées. "
                       "Cette protection vise les échanges de pensées et de sentiments par tout moyen de communication : lettres, courriels, messages électroniques, "
@@ -963,8 +963,8 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Ces exceptions sont strictement définies par la loi et justifiées par des motifs d’ordre public : poursuites pénales, lutte contre la criminalité organisée ou le terrorisme, "
                       "sécurité nationale, protection des droits d’autrui, prévention de certaines infractions graves, etc.",
@@ -981,8 +981,8 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Lorsque ces contrôles et saisies sont réalisés dans un cadre judiciaire, ils peuvent être effectués par le juge d’instruction, "
                       "par le procureur de la République en cas de flagrant délit, ou par un officier de police judiciaire agissant sur commission rogatoire ou dans un cadre de flagrance. "
@@ -990,8 +990,8 @@ class DroitViePriveePage extends StatelessWidget {
                       "ou dans certains établissements psychiatriques pour le courrier des malades mentaux. ",
                 ),
               ]),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Dans des contextes particuliers, comme en temps de guerre, dans le cadre de régimes d’exception (état d’urgence, état de siège, état de crise) "
                       "ou encore en matière de faillite, la correspondance peut faire l’objet de censures ou de contrôles dans le but de protéger les droits d’autrui, "
@@ -1009,8 +1009,8 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Il convient de distinguer les interceptions ordonnées par l’autorité judiciaire dans le cadre du droit commun ou de la criminalité et de la délinquance organisées, "
                       "et les interceptions dites « de sécurité », autorisées à des fins de renseignement.",
@@ -1038,7 +1038,7 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 4),
-              _BulletPoint.rich(const [
+              const _BulletPoint.rich([
                 TextSpan(
                   text:
                       "Lorsque l’interception vise le cabinet ou le domicile d’un avocat, le bâtonnier doit être informé ;",
@@ -1752,8 +1752,8 @@ class DroitViePriveePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "En enquête préliminaire, la contrainte doit rester exceptionnelle. Ni l’officier de police judiciaire ni l’agent de police judiciaire ne peuvent procéder d’autorité à la fouille d’un véhicule. "
                       "Ils doivent obtenir l’assentiment du propriétaire ou du conducteur, cet accord étant consigné dans un procès-verbal. ",
@@ -1891,7 +1891,7 @@ class DroitViePriveePage extends StatelessWidget {
                       "Chaque acte de police doit pouvoir se rattacher à un texte précis, respecter les formes légales et demeurer strictement nécessaire et proportionné à l’objectif poursuivi. ",
                   style: TextStyle(color: textColor),
                 ),
-                TextSpan(
+                const TextSpan(
                   text:
                       "En l’absence de base légale claire, la mesure est susceptible de constituer une atteinte illicite au droit au respect de la vie privée.",
                   style: TextStyle(
@@ -1952,10 +1952,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1998,7 +1998,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -2032,7 +2032,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -2085,7 +2085,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -2110,7 +2110,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -2145,7 +2145,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -2158,7 +2158,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

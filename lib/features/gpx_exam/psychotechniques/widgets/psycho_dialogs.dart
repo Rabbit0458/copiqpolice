@@ -382,6 +382,5 @@ Future<bool> showPsychoReportSheet({
       // On ne notifie pas l'utilisateur s'il a juste fermé le sheet (null).
     }
   }
-  return;
-  }
+  return result ?? false;
 }

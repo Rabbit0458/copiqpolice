@@ -16,12 +16,12 @@ class DisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0D47A1);
     final Color textMain = isDark
         ? Colors.white
-        : const Color(0xFF1F1F1F).withOpacity(.95);
+        : const Color(0xFF1F1F1F).withValues(alpha: .95);
 
     final Color cardColor = isDark
         ? const Color(0xFF1E272E)
         : const Color(0xFFE3F2FD);
-    final Color accent = const Color(0xFF1565C0);
+    const Color accent = Color(0xFF1565C0);
 
     // Couleur pour les références d’articles
     const Color articleRed = Color(0xFFC62828);
@@ -76,13 +76,13 @@ class DisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // 1.1 La disparition flagrante
           // ---------------------------------------------------------------
           const _SubTitle('1.1 — La disparition « flagrante »'),
-          _Paragraph.rich([
-            const TextSpan(text: 'L’'),
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(text: 'L’'),
+            TextSpan(
               text: 'article 74-1 du Code de procédure pénale',
               style: TextStyle(fontWeight: FontWeight.w800, color: articleRed),
             ),
-            const TextSpan(
+            TextSpan(
               text:
                   ' exige le caractère flagrant de la disparition d’un mineur ou d’un '
                   'majeur protégé. Il est précisé que la disparition « vient '
@@ -103,12 +103,12 @@ class DisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // 1.2 La disparition est inquiétante
           // ---------------------------------------------------------------
           const _SubTitle('1.2 — La disparition est inquiétante'),
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text: 'Les articles 74-1 et 80-4 du Code de procédure pénale',
               style: TextStyle(fontWeight: FontWeight.w800, color: articleRed),
             ),
-            const TextSpan(
+            TextSpan(
               text:
                   ' instaurent un cadre spécifique d’enquête reposant sur la notion '
                   'de disparition inquiétante. Ce cadre peut être mis en œuvre dans '
@@ -197,9 +197,9 @@ class DisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
           // ---------------------------------------------------------------
           // Nota + Rappel pénal
           // ---------------------------------------------------------------
-          _NotaBox(
+          const _NotaBox(
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'Chaque situation signalée doit faire l’objet d’un examen attentif. '
                     'En cas de doute, le fonctionnaire de police doit se rapprocher de '
@@ -208,9 +208,9 @@ class DisparitionInquietanteConditionsGpxSchool extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 10),
-          _NotaBox(
+          const _NotaBox(
             title: 'RAPPEL',
-            bodySpans: const [
+            bodySpans: [
               TextSpan(
                 text:
                     'Le fait, pour une personne ayant connaissance de la disparition '
@@ -257,10 +257,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -325,7 +325,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -368,7 +368,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -430,7 +430,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -462,7 +462,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -475,7 +475,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

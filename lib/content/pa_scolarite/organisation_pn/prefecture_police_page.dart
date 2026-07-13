@@ -214,21 +214,21 @@ class PrefecturePolicePage extends StatelessWidget {
             cardColor: cardCab,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Certains services sont directement attachés au cabinet du préfet de police :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "Le laboratoire central"),
-              const _BulletPoint(text: "Le laboratoire de toxicologie"),
+              SizedBox(height: 10),
+              _BulletPoint(text: "Le laboratoire central"),
+              _BulletPoint(text: "Le laboratoire de toxicologie"),
               _BulletPoint(
                 text:
                     "La brigade des sapeurs-pompiers de Paris (unité militaire à la disposition du préfet de police)",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le sigle « P.P. » est souvent utilisé pour désigner la Préfecture de Police, mais dans cette page, "
                         "les intitulés sont volontairement écrits en clair pour un apprentissage plus pédagogique.",
@@ -246,20 +246,20 @@ class PrefecturePolicePage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Rappel : lorsque des références juridiques sont présentes dans une page (Code pénal, Code de procédure pénale, Code de la sécurité intérieure, etc.), elles doivent apparaître en ",
                 ),
                 TextSpan(
                   text: "rouge",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " pour être repérées immédiatement."),
+                TextSpan(text: " pour être repérées immédiatement."),
               ]),
             ],
           ),
@@ -481,10 +481,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -496,7 +495,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -518,10 +516,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

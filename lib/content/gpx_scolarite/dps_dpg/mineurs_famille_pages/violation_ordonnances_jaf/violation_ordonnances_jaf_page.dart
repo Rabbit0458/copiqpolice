@@ -17,7 +17,7 @@ class ViolationOrdonnancesJafPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final items = <_Item>[
       const _Item(
@@ -126,8 +126,8 @@ class _HeroTop extends StatelessWidget {
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
                 colors: [
-                  Colors.black.withOpacity(.25),
-                  Colors.black.withOpacity(.65),
+                  Colors.black.withValues(alpha: .25),
+                  Colors.black.withValues(alpha: .65),
                 ],
               ),
             ),
@@ -145,7 +145,7 @@ class _HeroTop extends StatelessWidget {
                     style: GoogleFonts.fustat(
                       fontWeight: FontWeight.w700,
                       fontSize: 13,
-                      color: Colors.white.withOpacity(.88),
+                      color: Colors.white.withValues(alpha: .88),
                     ),
                   ),
                   const SizedBox(height: 6),
@@ -191,8 +191,8 @@ class _Card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color pillBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-    final Color pillBorder = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+    final Color pillBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+    final Color pillBorder = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
 
     return GestureDetector(
       onTap: onTap,
@@ -217,8 +217,8 @@ class _Card extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Colors.black.withOpacity(.25),
-                    Colors.black.withOpacity(.62),
+                    Colors.black.withValues(alpha: .25),
+                    Colors.black.withValues(alpha: .62),
                   ],
                 ),
               ),
@@ -267,7 +267,7 @@ class _Card extends StatelessWidget {
                     style: GoogleFonts.fustat(
                       fontWeight: FontWeight.w600,
                       fontSize: 14,
-                      color: Colors.white.withOpacity(.85),
+                      color: Colors.white.withValues(alpha: .85),
                     ),
                   ),
                 ],
@@ -277,7 +277,7 @@ class _Card extends StatelessWidget {
               right: 16,
               bottom: 16,
               child: Material(
-                color: Colors.white.withOpacity(.12),
+                color: Colors.white.withValues(alpha: .12),
                 shape: const StadiumBorder(),
                 child: InkWell(
                   customBorder: const StadiumBorder(),

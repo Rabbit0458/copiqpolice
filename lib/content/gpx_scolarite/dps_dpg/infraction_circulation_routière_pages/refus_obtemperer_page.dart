@@ -110,16 +110,16 @@ class RefusObtempererPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 233-1 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le refus d’obtempérer.",
                 ),
               ]),
@@ -134,139 +134,139 @@ class RefusObtempererPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Agents habilités et identifiables"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Agents habilités et identifiables"),
+              _Paragraph(
                 "Les termes « fonctionnaire ou agent chargé de constater les infractions » englobent "
                 "les agents énumérés par le Code de la route. Ces personnes doivent être clairement identifiables "
                 "par le port d’insignes extérieurs et apparents de leur qualité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "articles L. 130-1 à L. 130-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "• Tenue spéciale de sécurité pouvant induire en erreur sur la qualité des agents (confusion possible) ",
                   ),
                   TextSpan(
                     text: "(TGI Brive, 6 février 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• Gyrophare + avertisseur sonore : marques distinctives tenant lieu d’identification d’un véhicule de police ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 23 février 1987)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) La sommation de s’arrêter"),
-              const _Paragraph(
+              _SubTitle("B) La sommation de s’arrêter"),
+              _Paragraph(
                 "Elle doit désigner clairement le conducteur (gestes réglementaires d’arrêt, coups de sifflet, "
                 "signalisations lumineuses…). Le conducteur ne doit avoir aucun doute sur la nature de l’ordre "
                 "qui lui est destiné. La forme de l’ordre importe peu.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "• La connaissance non équivoque de l’obligation de s’arrêter est établie si un gendarme/policier invite à immobiliser le véhicule par projecteur + sifflet ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 11 mai 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• L’ordre peut résulter d’un geste ou de toute attitude significative d’une obligation de s’arrêter ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 20 février 2007)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délit ne saurait être retenu si une action violente ou dangereuse absorbe l’abstention/le refus de s’arrêter.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Exemple : foncer sur des gendarmes avec le véhicule = violences volontaires aggravées ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 2 mai 2002)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Le refus d’obtempérer (fait du conducteur)"),
+              _SubTitle("C) Le refus d’obtempérer (fait du conducteur)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le refus d’obtempérer est le fait du conducteur de tout véhicule ou ensemble de véhicules. ",
                 ),
                 TextSpan(
                   text: "Article R. 412-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Seul le conducteur peut être poursuivi comme auteur. Toutefois, la responsabilité des passagers "
                 "peut être retenue pour complicité, notamment selon leur comportement (ou celui du conducteur) "
                 "pendant la commission des faits.",
@@ -299,55 +299,55 @@ class RefusObtempererPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 233-1-1 I alinéa 1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque les faits sont commis dans des circonstances exposant directement autrui à un risque "
                       "de mort ou de blessures de nature à entraîner une mutilation ou une infirmité permanente.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il s’agit d’un refus d’obtempérer commis par un conducteur qui conduit en violation d’une règle "
                 "du Code de la route. La violation doit, en soi, entraîner une probabilité très importante d’accident "
                 "corporel et le risque doit être causé à autrui (présence de personnes susceptibles d’être victimes).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Poursuivre sa route à très grande vitesse sur autoroute pour échapper au contrôle a exposé gendarmes et usagers à un risque de mort/blessures graves ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 21 mai 2008, n° 08-80.017)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 233-1-1 I alinéa 2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque les faits exposent directement les agents/fonctionnaires mentionnés au I "
                       "de l’article L. 233-1 à un risque de mort ou de blessures graves (mutilation/infirmité permanente).",
@@ -364,68 +364,68 @@ class RefusObtempererPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — forme simple"),
+            children: const [
+              _SubTitle("Peines encourues — forme simple"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification : "),
-                const TextSpan(text: "délit. "),
-                const TextSpan(text: "— Peines principales : "),
-                const TextSpan(
+                TextSpan(text: "Qualification : "),
+                TextSpan(text: "délit. "),
+                TextSpan(text: "— Peines principales : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 15 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "Article L. 233-1 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Peines encourues — formes aggravées"),
+              _SubTitle("Peines encourues — formes aggravées"),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravation (risque pour autrui) : "),
+                TextSpan(text: "Aggravation (risque pour autrui) : "),
                 TextSpan(
                   text: "article L. 233-1-1 I alinéa 1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " — "),
-                const TextSpan(text: "75 000 € d’amende."),
+                TextSpan(text: " — "),
+                TextSpan(text: "75 000 € d’amende."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravation (risque pour les agents) : "),
+                TextSpan(text: "Aggravation (risque pour les agents) : "),
                 TextSpan(
                   text: "article L. 233-1-1 I alinéa 2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " — "),
-                const TextSpan(
+                TextSpan(text: " — "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 1 000 000 € d’amende.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
                     text: "Article L. 233-1 II du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : les peines prononcées pour le délit prévu au I se cumulent, sans possibilité de confusion, "
                         "avec celles prononcées pour les autres infractions commises à l’occasion de la conduite du véhicule "
@@ -434,28 +434,28 @@ class RefusObtempererPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -493,10 +493,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -561,7 +561,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -604,7 +604,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -666,7 +666,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -698,7 +698,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -711,7 +711,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

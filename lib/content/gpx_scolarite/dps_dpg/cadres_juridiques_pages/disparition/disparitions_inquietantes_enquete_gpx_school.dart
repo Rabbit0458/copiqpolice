@@ -18,7 +18,7 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF111827);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF374151).withOpacity(.88);
+        : const Color(0xFF374151).withValues(alpha: .88);
 
     final Color cardColor = isDark
         ? const Color(0xFF424242)
@@ -77,16 +77,16 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
+            children: const [
               // 2.3.1
-              const _SubTitle('2.3.1 – La personne disparue est retrouvée'),
-              const _Paragraph(
+              _SubTitle('2.3.1 – La personne disparue est retrouvée'),
+              _Paragraph(
                 'Lorsque la personne disparue est retrouvée et que les causes de la disparition '
                 'ne sont ni criminelles, ni délictuelles, la protection de sa vie privée et de sa '
                 'sécurité demeure prioritaire.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'S’il s’agit d’un mineur ou d’un majeur protégé, l’adresse de la personne retrouvée '
                 'ainsi que les pièces permettant d’avoir directement ou indirectement '
                 'connaissance de cette adresse ne peuvent être communiquées au représentant '
@@ -95,42 +95,42 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
                 'avec l’accord du juge d’instruction lorsque l’information a été ouverte en '
                 'application de l’article 80-4 du code de procédure pénale.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Lorsque la personne disparue est un majeur qui n’est pas protégé, son adresse '
                 'ne peut être communiquée qu’avec son accord exprès.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'En conséquence, le droit à la communication du dossier prévu par l’article 114 '
                 'du code de procédure pénale ne peut s’exercer qu’en respectant ces limitations, '
                 'édictées pour protéger la vie privée du majeur ou la sécurité du mineur ou du '
                 'majeur protégé.',
               ),
 
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 2.3.2
-              const _SubTitle(
+              _SubTitle(
                 '2.3.2 – La personne disparue n’est pas retrouvée',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Lorsque la personne disparue demeure introuvable, il est alors nécessaire '
                 'd’adapter la suite procédurale. Plusieurs options s’offrent aux autorités '
                 'judiciaires :',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Requérir l’ouverture d’une information pour recherche des causes de la '
                     'disparition en vertu de l’article 80-4 du code de procédure pénale.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Poursuivre l’information judiciaire déjà ouverte pour recherche des causes '
                     'de la disparition.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Ordonner à l’officier de police judiciaire ou à l’agent de police judiciaire '
                     'qui a enquêté sur le fondement de l’article 74-1 du code de procédure '
@@ -138,29 +138,29 @@ class DisparitionInquietanteEnqueteGpxSchool extends StatelessWidget {
                     'préliminaire.',
               ),
 
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 2.3.3
-              const _SubTitle(
+              _SubTitle(
                 '2.3.3 – L’enquête diligentée a permis d’établir le caractère '
                 'criminel ou délictuel à l’origine de la disparition',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Si les investigations menées dans le cadre des articles 74-1 et 80-4 du code de '
                 'procédure pénale permettent d’établir que la disparition a une origine '
                 'criminelle ou délictuelle, le procureur de la République dispose de plusieurs '
                 'choix procéduraux.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph('Le procureur de la République peut alors :'),
-              const SizedBox(height: 4),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _Paragraph('Le procureur de la République peut alors :'),
+              SizedBox(height: 4),
+              _BulletPoint(
                 text:
                     'Autoriser les enquêteurs à poursuivre leurs investigations selon le mode '
                     'de l’enquête de flagrant délit ou celui de l’enquête préliminaire, en '
                     'fonction des circonstances et des nécessités de l’enquête.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Délivrer un réquisitoire introductif ouvrant une information judiciaire '
                     'relative à l’infraction ainsi découverte.',
@@ -201,10 +201,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -269,7 +269,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -312,7 +312,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -374,7 +374,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -385,10 +385,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -400,13 +399,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -419,13 +417,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -113,38 +113,38 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "La « visite domiciliaire » liée au mandat ",
                 ),
-                const TextSpan(text: "ne doit pas être assimilée "),
-                const TextSpan(text: "à la perquisition de l’"),
+                TextSpan(text: "ne doit pas être assimilée "),
+                TextSpan(text: "à la perquisition de l’"),
                 TextSpan(
                   text: "article 56 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si la personne ne peut être saisie, un PV de perquisition et de recherches infructueuses "
                         "est adressé au magistrat qui a délivré le mandat : ",
                   ),
                   TextSpan(
                     text: "article 134 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -193,22 +193,22 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
             cardColor: cardSteps,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de rédaction"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Lieu de rédaction"),
+              _Paragraph(
                 "Indiquer la ville / service / date et l’heure de rédaction.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("2) Instructions"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("2) Instructions"),
+              _Paragraph(
                 "Rappeler que l’agent de police judiciaire agit sous le contrôle de l’officier de police judiciaire.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("3) Exécution de mandat"),
+              SizedBox(height: 10),
+              _SubTitle("3) Exécution de mandat"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Indiquer les références du mandat en vertu duquel vous agissez :\n"
                       "• type de mandat (amener ou arrêt)\n"
@@ -220,31 +220,31 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 10),
-              const _SubTitle("4) Assistants"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("4) Assistants"),
+              _Paragraph(
                 "Mentionner les fonctionnaires accompagnants + la tenue de l’équipage "
                 "(uniforme, tenue bourgeoise, port du brassard police).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("5) Transport"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("5) Transport"),
+              _Paragraph(
                 "Préciser l’adresse du dernier domicile connu, rappeler le respect des heures légales (06h–21h) "
                 "et indiquer l’heure précise d’arrivée sur place.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("6) Identité"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("6) Identité"),
+              _Paragraph(
                 "Relever l’identité succincte de la personne présente (si une personne est sur place). "
                 "Préciser le document à partir duquel l’identité est vérifiée.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("7) Visite"),
+              SizedBox(height: 10),
+              _SubTitle("7) Visite"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Visiter les lieux afin de s’assurer de la présence ou non de la personne visée.\n\n"
                       "Cette visite a pour but exclusif de rechercher la personne faisant l’objet du mandat. ",
@@ -252,12 +252,12 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
                 TextSpan(
                   text:
                       "Elle n’est pas assimilée à la perquisition de l’article 56 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ".\n\n"),
+                TextSpan(text: ".\n\n"),
                 TextSpan(
                   text:
                       "En l’absence de la personne : la visite peut être réalisée après réquisition d’un serrurier "
@@ -266,34 +266,34 @@ class RecherchesInfructueusesMandatPage extends StatelessWidget {
                 TextSpan(
                   text:
                       "Si la personne ne peut être saisie : PV adressé au magistrat délivrant le mandat — article 134 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 10),
-              const _SubTitle("8) Énonciation terminale (clôture)"),
-              const _Paragraph("Clore le PV en précisant l’heure."),
+              SizedBox(height: 10),
+              _SubTitle("8) Énonciation terminale (clôture)"),
+              _Paragraph("Clore le PV en précisant l’heure."),
 
-              const SizedBox(height: 10),
-              const _SubTitle("9) Avis magistrat"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("9) Avis magistrat"),
+              _Paragraph(
                 "Informer le magistrat mandant et indiquer les instructions reçues.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("10) Clôture / transmission"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("10) Clôture / transmission"),
+              _Paragraph(
                 "Mentionner la transmission du procès-verbal (et à qui), puis fin de mission.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Conseil : notez systématiquement les heures clés (arrivée, début/fin visite, clôture) "
                         "et les personnes présentes (serrurier, témoins requis, assistants).",
@@ -355,10 +355,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -423,7 +423,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -466,7 +466,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -528,7 +528,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -539,10 +539,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -554,13 +553,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -573,13 +571,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -601,7 +595,7 @@ class _ZoomableAssetImage extends StatelessWidget {
     final Color border = isDark ? Colors.white24 : Colors.black12;
     final Color chipBg = isDark
         ? Colors.black54
-        : Colors.white.withOpacity(.92);
+        : Colors.white.withValues(alpha: .92);
     final Color chipText = isDark ? Colors.white : const Color(0xFF050505);
 
     return Semantics(
@@ -698,7 +692,7 @@ class _ZoomableAssetImage extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Fermer',
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       pageBuilder: (_, __, ___) {
         return SafeArea(
           child: Scaffold(

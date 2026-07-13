@@ -26,9 +26,9 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
         ? const Color(0xFF0F1E1B)
         : const Color(0xFFF0FFFB);
 
-    final Color accentBlue = const Color(0xFF1565C0);
-    final Color accentAmber = const Color(0xFFF9A825);
-    final Color accentTeal = const Color(0xFF00897B);
+    const Color accentBlue = Color(0xFF1565C0);
+    const Color accentAmber = Color(0xFFF9A825);
+    const Color accentTeal = Color(0xFF00897B);
 
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0B1B3A);
 
@@ -70,23 +70,23 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withOpacity(
+                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                       .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withOpacity(
+                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                         .08,
                       ),
                     ),
                   ),
-                  child: _Paragraph.rich([
-                    const TextSpan(text: "« "),
-                    const TextSpan(
+                  child: const _Paragraph.rich([
+                    TextSpan(text: "« "),
+                    TextSpan(
                       text: "Ayant entraîné une incapacité totale de travail.",
                       style: TextStyle(fontWeight: FontWeight.w800),
                     ),
-                    const TextSpan(text: " »"),
+                    TextSpan(text: " »"),
                   ]),
                 ),
 
@@ -97,16 +97,16 @@ class IncapaciteTotaleTravailPage extends StatelessWidget {
                   cardColor: cardBlue,
                   accent: accentBlue,
                   titleColor: titleColor,
-                  children: [
-                    const _Paragraph(
+                  children: const [
+                    _Paragraph(
                       "L'incapacité totale de travail mesure la gravité des atteintes corporelles ou psychiques subies par la victime de l'infraction. L'I.T.T. ne doit pas être confondue avec l'arrêt de travail propre au droit social.",
                     ),
-                    const SizedBox(height: 10),
-                    const _Paragraph(
+                    SizedBox(height: 10),
+                    _Paragraph(
                       "Une victime n'exerçant aucune activité professionnelle (enfant, retraité,...) peut donc se voir prescrire une I.T.T.",
                     ),
-                    const SizedBox(height: 10),
-                    const _Paragraph(
+                    SizedBox(height: 10),
+                    _Paragraph(
                       "Il s'agit d'une circonstance aggravante réelle. Ses effets s'étendent à tous les auteurs, coauteurs et complices de l'infraction.",
                     ),
                   ],
@@ -250,10 +250,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -318,7 +318,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -361,7 +361,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -423,7 +423,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -455,7 +455,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -468,7 +468,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

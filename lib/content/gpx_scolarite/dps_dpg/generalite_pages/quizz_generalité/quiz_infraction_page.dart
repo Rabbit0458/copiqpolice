@@ -88,7 +88,7 @@ class QuizQuestion {
 /// si besoin — la page fonctionne même si la liste est vide)
 final List<QuizQuestion> questionsInfractions = [
   // ===================== FACILE (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'Combien d’éléments généraux doivent être réunis pour qu’une infraction existe ?',
@@ -98,7 +98,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Élément légal, matériel et moral doivent être simultanément réunis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'Sans texte, il n’y a pas d’infraction : ce principe exprime d’abord…',
@@ -111,7 +111,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Aucun crime ou délit sans texte qui le définit et réprime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'La loi détermine crimes et délits et fixe les peines. Vrai ou faux ?',
@@ -121,7 +121,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Art. 111-2 C. pén. : la loi fixe la matière criminelle et délictuelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les contraventions sont déterminées :',
     options: ['Par la loi', 'Par le règlement', 'Par la coutume'],
@@ -130,7 +130,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Art. 111-2 al. 2 C. pén. : le règlement détermine et réprime les contraventions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Parmi ces actes, lesquels relèvent du domaine de la loi au sens pénal ?',
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Décisions art. 16 et ordonnances ratifiées ont valeur législative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les décrets-lois des IIIe et IVe Républiques :',
     options: [
@@ -157,7 +157,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Ils demeurent des textes assimilés à la loi tant qu’ils ne sont pas abrogés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les traités internationaux ratifiés et publiés au J.O. ont en France :',
@@ -170,7 +170,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Constitution 1958, art. 55 : primauté sur la loi interne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Un décret d’application non encore paru pour une loi pénale :',
     options: [
@@ -183,7 +183,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Sans le décret indispensable, la loi reste « lettre morte ». ',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les circulaires ministérielles :',
     options: [
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Ce sont des instructions de service ; publiées sur site PM ; pas sources de droit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'La jurisprudence en droit pénal :',
     options: [
@@ -209,7 +209,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Principe d’interprétation stricte ; la jurisprudence éclaire sans créer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'La doctrine :',
     options: [
@@ -222,7 +222,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Opinions d’auteurs ; source d’inspiration pour le législateur/juge.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'L’élément matériel est :',
     options: [
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Manifestation concrète de la volonté délictueuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Une pure résolution criminelle (pensée) :',
     options: ['Est punissable', 'N’est pas punissable'],
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Sans extériorisation réprimée, il n’y a pas d’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'L’infraction non achevée mais commencée peut être réprimée sous la qualification :',
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionsInfractions = [
         'La tentative sanctionne l’atteinte inachevée dès le commencement d’exécution.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Deux éléments classiques de la tentative :',
     options: [
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionsInfractions = [
         '121-5 : tentative punissable si acte univoque + pas de suspension volontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de contravention :',
     options: ['Peut être punie si prévu', 'N’est jamais punissable'],
@@ -274,7 +274,7 @@ final List<QuizQuestion> questionsInfractions = [
         '121-4 : tentative non punissable en matière contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Dol général : intelligence et volonté d’agir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Le mobile (intérêt, vengeance…) :',
     options: [
@@ -298,7 +298,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Peut influer sur la peine, pas sur la constitution de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute intentionnelle',
     question: 'Certaines lois exigent un « dol spécial ». Cela signifie :',
     options: [
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Ex. intention de tuer dans l’homicide volontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La faute d’imprudence/négligence relève :',
     options: ['De l’élément moral', 'De l’élément matériel', 'D’aucun élément'],
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Art. 121-3 : imprudence, négligence, manquement à une obligation de prudence ou de sécurité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La faute contraventionnelle résulte :',
     options: [
@@ -330,7 +330,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Indépendante d’un dommage ; ex. feu rouge grillé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'Pour la faute d’imprudence, le comportement de référence est celui :',
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Appréciation in abstracto, éventuellement par référence au professionnel moyen.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'L’infraction d’omission suppose :',
     options: [
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Infraction d’omission : non-accomplissement d’un devoir légal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Un acte de préparation (repérage, achat d’outils) sans passage à l’acte :',
@@ -367,7 +367,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'La préparation seule n’est pas punie, sauf texte spécial.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question:
         'Dans le schéma de l’élément matériel, l’« acte négatif » renvoie à :',
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionsInfractions = [
   ),
 
   // ===================== MOYENNE (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les ordonnances (art. 38 C°) non ratifiées :',
     options: [
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Elles n’acquièrent valeur législative qu’après ratification.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les décisions prises par le Président en vertu de l’article 16 de la Constitution :',
@@ -399,7 +399,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Actes de crise dotés d’une valeur assimilée à la loi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Un règlement administratif contraire à la loi pénale :',
     options: ['Peut s’appliquer', 'Est écarté par le juge pénal'],
@@ -407,7 +407,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Hiérarchie des normes : la loi prime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les textes pénaux peuvent-ils être issus de traités européens relatifs aux droits fondamentaux ?',
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'CEDH/UE influent et s’imposent à la loi interne publiée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'La pluralité d’actes peut former l’élément matériel lorsque :',
     options: [
@@ -427,7 +427,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Unité d’action possible (même dessein délictueux).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question:
         'Résolution criminelle non suivie d’effet socialement troublant :',
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Il faut manifestation extérieure réprimée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Le commencement d’exécution doit être :',
     options: [
@@ -448,7 +448,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Jurisprudence : acte caractéristique + intention irrévocable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Le simple fait d’exprimer son intention de voler à voix haute :',
     options: ['Tentative punissable', 'Pas punissable'],
@@ -456,7 +456,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Extériorisation d’intention seule insuffisante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Désistement volontaire :',
     options: ['Exclut la tentative punissable', 'N’a aucun effet'],
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionsInfractions = [
         'S’il résulte d’une décision libre non due à une cause extérieure.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Désistement dû à l’alarme d’un coffre-fort :',
     options: ['Volontaire', 'Non volontaire'],
@@ -473,7 +473,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Cause extérieure : tentative reste punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Infraction manquée (exécution complète mais résultat non atteint par circonstances indépendantes) :',
@@ -482,7 +482,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: '121-5 : répression de l’infraction manquée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Infraction impossible (poche vide / arme factice ignorée de l’auteur) :',
@@ -492,7 +492,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Punissable quand le texte incrimine la tentative (crimes/certains délits).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'L’élément moral non intentionnel suppose :',
     options: [
@@ -504,7 +504,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Art. 121-3 al. 3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Preuve du lien de causalité en matière de faute non intentionnelle :',
@@ -516,7 +516,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Nécessité de démontrer la causalité de la faute au dommage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La mise en danger délibérée d’autrui consiste :',
     options: [
@@ -528,7 +528,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Violation manifestement délibérée d’une obligation particulière de prudence/sécurité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Exemple classique de mise en danger délibérée :',
     options: [
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Violation délibérée des normes de sécurité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'La faute contraventionnelle permet sanction sans intention ni dommage :',
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Le simple non-respect d’une prescription suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question: 'Dans le schéma, l’infraction par commission correspond à :',
     options: [
@@ -561,7 +561,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Commission = accomplir un comportement prohibé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question: 'Dans le schéma de l’élément moral, « dol général » signifie :',
     options: [
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'À distinguer du dol spécial (résultat particulier).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question: 'La Constitution de 1958 est-elle source du droit pénal ?',
     options: ['Oui, comme norme suprême', 'Non'],
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Les sources essentielles du droit pénal s’y rattachent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'Un règlement administratif hiérarchisé peut-il méconnaître la loi pénale ?',
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Un règlement contraire est illégal et écarté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence/Doctrine',
     question:
         'La jurisprudence peut-elle aggraver une incrimination au-delà du texte clair ?',
@@ -598,7 +598,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Interprétation stricte de la loi pénale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'L’auteur qui renonce librement avant la consommation, sans cause extérieure :',
@@ -607,7 +607,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Désistement volontaire exclut la tentative punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'La violation d’un texte (loi/règlement) peut suffire à caractériser :',
@@ -616,7 +616,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Manquement à une obligation de prudence ou sécurité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question: 'Automobiliste grillant un feu rouge par inattention :',
     options: ['Infraction intentionnelle', 'Faute contraventionnelle'],
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionsInfractions = [
   ),
 
   // ===================== DIFFICILE (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Pour être invocable, un traité international doit être :',
     options: [
@@ -638,7 +638,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Condition d’applicabilité interne et primauté (art. 55 C°).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les circulaires non publiées :',
     options: [
@@ -649,7 +649,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Elles guident le service mais ne créent pas d’infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'La valeur des décisions art. 16 et des ordonnances ratifiées permet :',
@@ -659,7 +659,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Valeur législative donc compétence en matière criminelle/délictuelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Actes préparatoires :',
     options: ['Toujours punissables', 'Non punissables sauf texte spécial'],
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Le code ne retient que la tentative après commencement d’exécution.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Commencement d’exécution apprécié par la Cour de cassation :',
     options: [
@@ -679,7 +679,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'La Cour exige acte univoque et intention d’aboutir.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'Caractérisation typique du commencement d’exécution :',
     options: [
@@ -690,7 +690,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Double exigence jurisprudentielle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Après infraction consommée, l’attitude postérieure de l’auteur (restitution) :',
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Elle n’efface pas la consommation de l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Dans l’infraction impossible, l’auteur ignorait l’impossibilité. Conséquence :',
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Pickpocket poche vide, coup de feu à blanc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Pour les infractions intentionnelles, la connaissance du caractère illicite de l’acte :',
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Conscience et volonté d’accomplir l’acte interdit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Résultat obtenu exactement conforme au résultat voulu :',
     options: ['Dol spécial aggravé', 'Preuve du dol général'],
@@ -728,7 +728,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Résultat déterminé recherché par l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Résultat au-delà de l’intention (ex. coups volontaires entraînant la mort) :',
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionsInfractions = [
         'L’agent n’a pas voulu la mort mais l’a causée (ex. art. 222-7 C. pén. pour la qualification).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'La faute d’imprudence se mesure :',
     options: [
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Appréciation in abstracto, avec référence professionnelle au besoin.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Lien de causalité indirect en matière de négligence :',
     options: [
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Il faut établir l’enchaînement causal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'La faute caractérisée exposant autrui à un risque que l’on ne pouvait ignorer :',
@@ -771,7 +771,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question:
         'Dans le schéma de l’élément moral, la « faute » se subdivise notamment en :',
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Deux grandes branches du versant moral.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question: 'Les textes pénaux étrangers :',
     options: [
@@ -794,7 +794,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Principe de territorialité modulé par conventions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'L’interprétation des juges du fond contraire à la lettre du texte pénal :',
@@ -806,7 +806,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Interprétation stricte ; pas d’analogie in malam partem.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Un acte univoque + intention de réaliser l’infraction mais renoncement par remords :',
@@ -815,7 +815,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Désistement volontaire avéré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question: 'La responsabilité peut être exclue en cas de :',
     options: ['Force majeure ou contrainte', 'Absence de dommage uniquement'],
@@ -823,7 +823,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Toujours invocable comme cause d’irresponsabilité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Un résultat dommageable peut-il être exigé ?',
     options: ['Oui pour les infractions matérielles', 'Jamais'],
@@ -832,7 +832,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Certains délits exigent un résultat (ex. blessures involontaires).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Dans les infractions formelles :',
     options: ['Le résultat est exigé', 'Le résultat n’est pas exigé'],
@@ -840,7 +840,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'La seule réalisation de l’acte suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Le dol spécial constitue :',
     options: [
@@ -851,7 +851,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Il doit être expressément exigé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'La publication d’une circulaire au site du Premier ministre vise :',
@@ -863,7 +863,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Transparence des instructions ; valeur non normative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question:
         'Dans le schéma « élément matériel – conditions », l’attitude passive visée entraîne :',
@@ -877,7 +877,7 @@ final List<QuizQuestion> questionsInfractions = [
   ),
 
   // ===================== EXPERT (25) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Peut-on fonder une incrimination uniquement sur une jurisprudence constante (sans texte) ?',
@@ -887,7 +887,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Légalité criminelle : seule la loi (ou traités/valeur législative) crée l’infraction.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Les règlements administratifs (décrets, arrêtés) : hiérarchie interne ?',
@@ -899,7 +899,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Principe de hiérarchie des normes.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Un traité non publié mais signé et ratifié :',
     options: ['Est invocable devant le juge pénal', 'Ne l’est pas'],
@@ -907,7 +907,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'La publication conditionne l’applicabilité interne.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'L’« acte univoque » caractéristique du commencement d’exécution :',
@@ -919,7 +919,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Il doit manifester la proximité de l’infraction déterminée.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Affaire où le paiement d’un tueur à gages a été jugé préparation et non tentative :',
@@ -929,7 +929,7 @@ final List<QuizQuestion> questionsInfractions = [
         'La remise d’argent ne constituait pas un acte univoque d’exécution.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Tentative d’évasion par creusement du béton autour d’une fenêtre de cellule :',
@@ -939,7 +939,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Appréciation jurisprudentielle : acte matériel caractéristique.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative « manquée » est punie car :',
     options: [
@@ -951,7 +951,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Ex. tir manqué par maladresse.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative « impossible » n’est punissable que si :',
     options: ['Le texte l’a expressément prévu', 'Il existe un dommage'],
@@ -960,7 +960,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Punissable dans les crimes et certains délits où la tentative est incriminée.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'La prévisibilité du dommage en imprudence :',
     options: ['Est indifférente', 'Est centrale pour caractériser la faute'],
@@ -969,7 +969,7 @@ final List<QuizQuestion> questionsInfractions = [
         'On reproche de ne pas avoir prévu ce qu’un prudent aurait prévu.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question: 'Praeter-intention :',
     options: [
@@ -982,7 +982,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Ex. violences volontaires ayant entraîné la mort sans intention de la donner.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Pour la mise en danger délibérée, il faut :',
     options: [
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Et exposition d’autrui à un risque grave que l’on ne pouvait ignorer.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question: 'Lien de causalité indirect et pluralité de fautes :',
     options: [
@@ -1006,7 +1006,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'La causalité juridique peut être multiple.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question:
         'Exemple jurisprudentiel de prudence routière : obligation de maintenir son véhicule près du bord droit de la chaussée. La violation caractérise :',
@@ -1015,7 +1015,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Cass. crim. 12 nov. 1997 (réf. citée dans le document).',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Quand un décret manque pour permettre l’entrée en vigueur d’une loi pénale :',
@@ -1027,7 +1027,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Le document précise que la loi reste « lettre morte ».',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question:
         'Une série d’actions espacées mais poursuivant un même dessein délictueux :',
@@ -1040,7 +1040,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Unité d’action si lien de causalité et continuité d’intention.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Dans les infractions matérielles non intentionnelles, l’élément moral se déduit :',
@@ -1052,7 +1052,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Il faut rattacher la faute au dommage.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Schéma',
     question: 'Dans le schéma de la faute intentionnelle, la préméditation :',
     options: [
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionsInfractions = [
         'La préméditation est une circonstance aggravante dans certains textes.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     question: 'La Cour de cassation contrôle :',
     options: [
@@ -1075,7 +1075,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Elle fixe les critères (acte univoque + intention).',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question: 'Les « décrets-lois » antérieurs à 1958 :',
     options: [
@@ -1086,7 +1086,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Le document les mentionne comme actes à valeur de loi.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative d’un crime est :',
     options: [
@@ -1097,7 +1097,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Principe général du code pénal (121-4/121-5).',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute non intentionnelle',
     question:
         'Quand l’auteur viole délibérément un texte de sécurité, la caractérisation de la faute :',
@@ -1110,7 +1110,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Certaines infractions de mise en danger n’exigent pas de dommage réalisé.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     question:
         'La valeur des circulaires de la DACG (chancellerie) en matière pénale :',
@@ -1119,7 +1119,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Ne créent pas d’infractions ; orientent la pratique.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'L’« infraction consommée » se distingue de la tentative par :',
     options: [
@@ -1130,7 +1130,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Tous les éléments constitutifs sont accomplis.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     question:
         'Quand le résultat est indéterminé et non connu à l’avance de l’auteur (ex. résultat aléatoire) :',
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Le texte exige un résultat déterminé pour le dol spécial.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute contraventionnelle',
     question:
         'La preuve de la contrainte en matière de faute contraventionnelle :',
@@ -1149,7 +1149,7 @@ final List<QuizQuestion> questionsInfractions = [
         'Contrainte/force majeure restent des causes d’irresponsabilité.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Sources',
     question:
         'Peut-on déroger par circulaire à une incrimination réglementaire existante ?',
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionsInfractions = [
         'La circulaire ne peut ni abroger ni modifier un texte normatif.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'Après désistement volontaire, si un complice poursuit seul et consomme l’infraction :',
@@ -1171,7 +1171,7 @@ final List<QuizQuestion> questionsInfractions = [
     explanation: 'Son renoncement libre l’exonère de la tentative.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     question: 'Une abstention fautive n’est pénale que si :',
     options: [
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionsInfractions = [
 // PAGE — Quiz des Infractions
 // ============================================================================
 class QuizInfractionsPage extends StatefulWidget {
-  static const String routeName = '/gpx/infractions/quiz/infractions';
+  static const String routeName = '/gpx/dps/infractions/quiz/infractions';
 
   final String uid;
   final String email;
@@ -1569,7 +1569,7 @@ class _QuizInfractionsPageState extends State<QuizInfractionsPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1757,7 +1757,7 @@ class _QuizInfractionsPageState extends State<QuizInfractionsPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1909,7 +1909,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,

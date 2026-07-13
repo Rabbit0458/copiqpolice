@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 
 final List<QuizQuestion> questionCrimeDelitPersonne = [
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte par un tiers',
     question:
         'Le fait d’imposer à une personne de subir une atteinte sexuelle de la part d’un tiers constitue :',
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Moyens',
     question:
         'Quels sont les moyens exclusifs de tout consentement libre de la victime ?',
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Définition',
     question: 'Le viol se caractérise par :',
     options: [
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Définition',
     question: 'Une agression sexuelle suppose :',
     options: [
@@ -157,7 +157,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Consentement — Principe',
     question: 'La violence, la contrainte, la menace ou la surprise sont :',
     options: [
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise',
     question: 'La surprise s’entend juridiquement comme :',
     options: [
@@ -188,7 +188,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question:
         'Une personne atteinte de troubles mentaux est juridiquement considérée comme :',
@@ -203,7 +203,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur — Consentement',
     question:
         'Un mineur de moins de 15 ans peut-il consentir à un acte sexuel avec un majeur ?',
@@ -218,7 +218,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol par surprise',
     question:
         'L’état d’ivresse de la victime permet de qualifier les faits de :',
@@ -233,7 +233,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Auteur',
     question: 'L’auteur d’une agression sexuelle incestueuse doit être :',
     options: ['Un majeur', 'Un mineur', 'Indifféremment majeur ou mineur'],
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Condition',
     question:
         'Le seul lien de parenté suffit-il à caractériser le viol incestueux ?',
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte morale',
     question: 'La contrainte morale peut être caractérisée par :',
     options: [
@@ -275,7 +275,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration de substances — Soumission chimique',
     question: 'La soumission chimique suppose :',
     options: [
@@ -289,7 +289,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Intention',
     question: 'L’élément moral du viol repose sur :',
     options: [
@@ -303,7 +303,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Mineur',
     question:
         'Dans le viol incestueux sur mineur, la preuve de la violence est-elle exigée ?',
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Acte unique',
     question:
         'Un acte unique peut constituer un harcèlement sexuel lorsqu’il :',
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Consentement',
     question:
         'La victime doit-elle exprimer explicitement son refus pour caractériser le harcèlement ?',
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 VIOL — NIVEAU CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Élément légal',
     question:
         'Quel article du Code pénal définit le viol commis par violence, contrainte, menace ou surprise ?',
@@ -366,7 +366,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Acte matériel',
     question: 'Lequel de ces actes peut juridiquement constituer un viol ?',
     options: [
@@ -380,7 +380,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Surprise',
     question: 'La surprise peut être retenue lorsque la victime :',
     options: [
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Ivresse',
     question: 'L’état d’ivresse volontaire de la victime permet :',
     options: [
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Tentative',
     question: 'La tentative de viol est-elle punissable ?',
     options: [
@@ -421,7 +421,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation',
     question: 'Le viol est aggravé lorsqu’il est commis :',
     options: [
@@ -438,7 +438,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🟣 INCESTE — VIOL & AGRESSION SEXUELLE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Définition',
     question: 'Le viol incestueux suppose :',
     options: [
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Victime',
     question: 'La victime du viol incestueux doit être :',
     options: [
@@ -466,7 +466,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse',
     question:
         'L’agression sexuelle incestueuse nécessite-t-elle la preuve d’une violence ?',
@@ -476,7 +476,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Auteur',
     question: 'Qui peut être auteur d’une infraction incestueuse ?',
     options: [
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Jurisprudence',
     question:
         'Le partenaire pacsé d’une tante peut être qualifié d’auteur incestueux :',
@@ -506,7 +506,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔵 HARCÈLEMENT SEXUEL — NIVEAU CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Définition',
     question: 'Le harcèlement sexuel suppose :',
     options: [
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Répétition',
     question: 'La répétition des faits peut être caractérisée :',
     options: [
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Acte unique',
     question:
         'Un acte unique peut constituer un harcèlement sexuel lorsqu’il :',
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Autorité',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -559,7 +559,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Concours',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Consentement',
     question: 'La victime doit-elle exprimer clairement son refus ?',
     options: ['Non', 'Oui obligatoirement', 'Uniquement par écrit'],
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 VIOL — SUITE (mix Moyenne / Difficile)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Acte de pénétration',
     question: 'Au sens du Code pénal, le viol vise :',
     options: [
@@ -586,7 +586,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Acte bucco-génital',
     question: 'Un acte bucco-génital, au sens pénal, suppose :',
     options: [
@@ -600,7 +600,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Condition de la victime',
     question: 'La qualification de viol peut être retenue quelle que soit :',
     options: [
@@ -615,7 +615,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Absence de consentement',
     question: 'Les moyens “violence, contrainte, menace, surprise” sont dits :',
     options: [
@@ -629,7 +629,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Contrainte',
     question: 'La contrainte constitutive du viol peut être :',
     options: [
@@ -643,7 +643,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Menace',
     question: 'La menace/contrainte doit inspirer à la victime une crainte :',
     options: [
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Surprise',
     question: 'La surprise s’entend comme :',
     options: [
@@ -671,7 +671,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Vulnérabilité (alcool/stupéfiants)',
     question:
         'La consommation volontaire d’alcool ou de stupéfiants par la victime caractérise :',
@@ -686,7 +686,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Substance à l’insu',
     question:
         'Administrer à l’insu de la victime une substance altérant le discernement est :',
@@ -701,7 +701,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (mineur présent)',
     question: 'Le viol est aggravé lorsque :',
     options: [
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (auteur ivre/stupéfiants)',
     question: 'Le viol est aggravé lorsqu’il est commis par une personne :',
     options: [
@@ -730,7 +730,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Peines (simple)',
     question: 'Le viol simple (222-23) est puni de :',
     options: [
@@ -743,7 +743,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation 1er degré (222-24)',
     question: 'Le 1er degré d’aggravation du viol (222-24) entraîne :',
     options: [
@@ -756,7 +756,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation 2e degré (222-25)',
     question:
         'Le 2e degré d’aggravation du viol (222-25) correspond notamment à :',
@@ -766,7 +766,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation 3e degré (222-26)',
     question: 'Le 3e degré d’aggravation du viol (222-26) vise :',
     options: [
@@ -780,7 +780,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Provocation (infraction distincte)',
     question:
         'Faire des offres/promesses pour qu’une personne commette un viol, si le crime n’a été ni commis ni tenté, relève :',
@@ -798,7 +798,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🟣 INCESTE — SUITE (viol incestueux + agression sexuelle incestueuse)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux (222-23-2) — Élément légal',
     question: 'Le viol incestueux est défini par :',
     options: [
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Liste des personnes (222-22-3)',
     question: 'L’article 222-22-3 fixe une liste :',
     options: [
@@ -826,7 +826,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Liens visés',
     question: 'Parmi ces liens, lequel est visé par 222-22-3 ?',
     options: ['Oncle / tante', 'Cousin germain', 'Ami d’enfance'],
@@ -836,7 +836,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Conjoints/concubins/PACS',
     question:
         'Sont aussi visés : les conjoints/concubins/partenaires PACS des personnes listées :',
@@ -847,7 +847,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Autorité',
     question:
         'Pour qualifier le viol incestueux, il faut en plus du lien familial démontrer :',
@@ -862,7 +862,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse (222-29-3) — Victime',
     question: 'L’agression sexuelle incestueuse vise une victime :',
     options: [
@@ -876,7 +876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Consentement',
     question:
         'Dans l’agression sexuelle incestueuse sur mineur, la question du consentement :',
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Jurisprudence (partenaire de la tante)',
     question:
         'Le partenaire pacsé de la tante de la victime n’est qualifiable d’incestueux que si :',
@@ -906,7 +906,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Surqualification (victime majeure)',
     question: 'Si la victime est majeure, la “surqualification” incestueuse :',
     options: [
@@ -923,7 +923,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔵 HARCÈLEMENT SEXUEL — SUITE (niveau pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Définition (répétition)',
     question:
         'Le harcèlement sexuel (forme “répétée”) consiste notamment à imposer :',
@@ -939,7 +939,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Connotation',
     question:
         'Pour caractériser l’élément matériel, il faut un caractère explicitement sexuel :',
@@ -954,7 +954,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Absence de consentement',
     question:
         'La victime doit exprimer de manière expresse et explicite qu’elle n’est pas consentante :',
@@ -969,7 +969,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Répétition (un seul auteur)',
     question: 'Avec un seul auteur, il faut au minimum :',
     options: [
@@ -983,7 +983,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Plusieurs auteurs (concertation)',
     question:
         'Le harcèlement sexuel peut être constitué si plusieurs personnes imposent des propos :',
@@ -999,7 +999,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Plusieurs auteurs (successivement)',
     question:
         'Le harcèlement sexuel peut aussi être constitué si plusieurs personnes agissent successivement en sachant :',
@@ -1014,7 +1014,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Acte unique assimilé',
     question:
         'Est assimilé au harcèlement sexuel le fait (même non répété) de :',
@@ -1029,7 +1029,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Finalité',
     question:
         'Dans la forme “acte unique”, la finalité d’obtenir un acte sexuel peut être :',
@@ -1044,7 +1044,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation',
     question:
         'Le harcèlement sexuel est aggravé notamment lorsqu’il est commis :',
@@ -1060,7 +1060,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (abus autorité)',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1078,7 +1078,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🧪 SUBSTANCES — (222-30-1 + 222-15) LIÉES AUX INFRACTIONS SEXUELLES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — Élément légal',
     question:
         'L’infraction d’administration d’une substance afin de commettre un viol/agression sexuelle est prévue par :',
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — Condition',
     question: 'La victime doit être “à son insu” signifie :',
     options: [
@@ -1106,7 +1106,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique — Volontaire vs insu',
     question:
         'La consommation volontaire d’alcool/stupéfiants suffit à caractériser 222-30-1 :',
@@ -1116,7 +1116,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — But',
     question: 'L’administration à l’insu doit être faite :',
     options: [
@@ -1130,7 +1130,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission chimique (222-30-1) — Aggravations',
     question:
         'L’infraction 222-30-1 est aggravée notamment si les faits sont commis sur :',
@@ -1145,7 +1145,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration substances nuisibles (222-15) — Définition',
     question: 'L’administration de substances nuisibles suppose :',
     options: [
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration substances nuisibles — Résultat',
     question:
         'L’infraction d’administration de substances nuisibles est une infraction :',
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Administration substances nuisibles — Tentative',
     question: 'La tentative d’administration de substances nuisibles est :',
     options: [
@@ -1191,7 +1191,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🧩 222-22-2 — CONTRAINDRE À SUBIR UNE ATTEINTE SEXUELLE D’UN TIERS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Nature',
     question:
         'Imposer à une personne de subir une atteinte sexuelle de la part d’un tiers est :',
@@ -1205,7 +1205,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Tiers de bonne foi',
     question:
         'Le tiers qui commet l’acte sexuel peut être non informé de la contrainte :',
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Atteinte sur soi-même',
     question: '222-22-2 vise aussi le fait d’imposer à la victime :',
     options: [
@@ -1233,7 +1233,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Peines',
     question: 'Les faits de 222-22-2 sont punis :',
     options: [
@@ -1248,7 +1248,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Tentative',
     question: 'La tentative de 222-22-2 est :',
     options: [
@@ -1262,7 +1262,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-22-2 — Complicité',
     question: 'La complicité est :',
     options: [
@@ -1279,7 +1279,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ BONUS — MINEUR <15 : VIOL / AGRESSION (clause “Roméo et Juliette”)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol majeur / mineur <15 (222-23-1) — Différence d’âge',
     question:
         'Le viol “majeur sur mineur de 15 ans” (hors 222-23) suppose en principe :',
@@ -1294,7 +1294,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol majeur / mineur <15 — Exception contrepartie',
     question:
         'Si l’écart d’âge est inférieur à 5 ans, le viol peut être retenu si :',
@@ -1310,7 +1310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle majeur / mineur <15 (222-29-2) — Différence d’âge',
     question:
@@ -1325,7 +1325,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle majeur / mineur <15 — Peines',
     question: 'L’agression sexuelle 222-29-2 est punie de :',
     options: [
@@ -1341,7 +1341,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 VIOL — SUITE (aggravations / nuances / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Pénétration (exemples)',
     question: 'Laquelle de ces situations peut constituer un viol ?',
     options: [
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Consentement et passé sexuel',
     question:
         'Le fait que la victime ait déjà eu des relations consenties avec l’auteur :',
@@ -1370,7 +1370,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Victime décédée',
     question: 'Peut-on qualifier “viol” des actes commis sur un cadavre ?',
     options: [
@@ -1384,7 +1384,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Contrainte morale (autorité)',
     question: 'La contrainte morale peut résulter notamment :',
     options: [
@@ -1398,7 +1398,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (mineur de 15 ans)',
     question:
         'Le viol est aggravé au 1er degré notamment lorsqu’il est commis :',
@@ -1413,7 +1413,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (vulnérabilité liée à l’âge)',
     question:
         'La seule circonstance que la victime ait 70 ans suffit à retenir la vulnérabilité aggravante :',
@@ -1429,7 +1429,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (précarité)',
     question:
         'Le viol est aggravé lorsqu’il est commis sur une personne dont la vulnérabilité résulte :',
@@ -1444,7 +1444,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (arme)',
     question: 'Le viol est aggravé lorsqu’il est commis :',
     options: [
@@ -1458,7 +1458,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (réseau public)',
     question:
         'Le viol est aggravé lorsque la victime a été mise en contact avec l’auteur grâce :',
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (viol en série)',
     question: 'Le viol est aggravé lorsqu’il est commis en concours avec :',
     options: [
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Aggravation (conjoint/concubin/PACS)',
     question: 'Le viol est aggravé lorsqu’il est commis par :',
     options: [
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Complicité',
     question: 'La complicité de viol est :',
     options: [
@@ -1516,7 +1516,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol — Preuve de bonne foi',
     question:
         'Lorsque l’auteur prétend avoir cru au consentement, la jurisprudence récente tend à :',
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🟣 VIOL INCESTUEUX — SUITE (liste / autorité / nuances)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Liens (exemples)',
     question:
         'Parmi ces personnes, laquelle peut entrer dans la liste 222-22-3 ?',
@@ -1545,7 +1545,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Liens (neveux/nièces)',
     question:
         'Les neveux/nièces de la victime sont visés par la liste 222-22-3 :',
@@ -1556,7 +1556,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Autorité de droit',
     question:
         'Une autorité “de droit” sur la victime correspond typiquement à :',
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Viol incestueux — Autorité de fait',
     question: 'Une autorité “de fait” peut être :',
     options: [
@@ -1585,7 +1585,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Consentement du mineur',
     question:
         'En matière incestueuse sur mineur, la violence/contrainte/menace/surprise :',
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Inceste — Victime majeure (cas)',
     question: 'Si la victime est majeure, on retient en principe :',
     options: [
@@ -1619,7 +1619,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🟣 AGRESSION SEXUELLE INCESTUEUSE (222-29-3) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Article',
     question: 'L’agression sexuelle incestueuse est définie par :',
     options: [
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Peines',
     question:
         'Les peines principales prévues pour l’agression sexuelle incestueuse sont :',
@@ -1648,7 +1648,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Tentative',
     question: 'La tentative d’agression sexuelle incestueuse est :',
     options: [
@@ -1662,7 +1662,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle incestueuse — Contact',
     question: 'L’atteinte sexuelle (agression sexuelle) se définit comme :',
     options: [
@@ -1680,7 +1680,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔵 HARCÈLEMENT SEXUEL — SUITE (aggravations / peines / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Article',
     question: 'Le harcèlement sexuel est prévu par :',
     options: [
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Deux formes',
     question: 'Le cours distingue :',
     options: [
@@ -1709,7 +1709,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Effet sur la victime',
     question: 'La forme répétée peut être constituée si les faits :',
     options: [
@@ -1724,7 +1724,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Pluralité de victimes',
     question:
         'Des propos tenus devant un groupe peuvent constituer un harcèlement envers plusieurs victimes :',
@@ -1739,7 +1739,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (mineur <15)',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1753,7 +1753,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (vulnérabilité)',
     question:
         'Le harcèlement sexuel est aggravé lorsqu’il est commis sur une personne vulnérable :',
@@ -1769,7 +1769,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (précarité)',
     question: 'Le harcèlement sexuel est aggravé si la vulnérabilité résulte :',
     options: [
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (plusieurs auteurs)',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -1797,7 +1797,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation (mineur présent)',
     question: 'Le harcèlement sexuel est aggravé lorsque :',
     options: [
@@ -1810,7 +1810,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Peines (simple)',
     question: 'Le harcèlement sexuel simple est puni de :',
     options: [
@@ -1824,7 +1824,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Peines (aggravé)',
     question: 'Le harcèlement sexuel aggravé est puni de :',
     options: [
@@ -1837,7 +1837,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Tentative',
     question: 'La tentative de harcèlement sexuel est :',
     options: ['Non', 'Oui', 'Oui uniquement si la victime est mineure'],
@@ -1847,7 +1847,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Complicité',
     question: 'La complicité de harcèlement sexuel est :',
     options: [
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ MAJEUR / MINEUR <15 — PREUVES D’ÂGE (pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Preuve de l’âge',
     question: 'L’âge de la victime s’apprécie :',
     options: [
@@ -1877,7 +1877,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Calcul de l’âge',
     question: 'Selon le cours, l’âge se calcule :',
     options: ['D’heure à heure', 'Par année civile', 'Par trimestre'],
@@ -1887,7 +1887,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Connaissance de l’âge',
     question:
         'En principe, le texte précise que la minorité de 15 ans doit être apparente ou connue de l’auteur :',
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineur <15 — Erreur sur l’âge',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -1919,7 +1919,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES AUTRES QUE LE VIOL (222-22 / 222-27)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Article',
     question:
         'Les agressions sexuelles commises avec violence, contrainte, menace ou surprise sont définies par :',
@@ -1934,7 +1934,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Répression',
     question:
         'Les agressions sexuelles autres que le viol sont prévues et réprimées par :',
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Définition',
     question: 'Une agression sexuelle “autre que le viol” suppose :',
     options: [
@@ -1963,7 +1963,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Distinction',
     question:
         'La différence principale avec le viol est que l’agression sexuelle :',
@@ -1978,7 +1978,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Exemples',
     question:
         'Le plus grand nombre d’agressions sexuelles (autres que le viol) correspond à :',
@@ -1993,7 +1993,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Jurisprudence',
     question:
         'Selon la jurisprudence citée, peut constituer une agression sexuelle :',
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Auteur/Victime',
     question: 'L’agression sexuelle peut être :',
     options: [
@@ -2023,7 +2023,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Cadavre',
     question: 'Une agression sexuelle peut-elle être retenue sur un cadavre ?',
     options: [
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agressions sexuelles autres que le viol — Condition de la victime',
     question:
@@ -2053,7 +2053,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Mariage',
     question:
         'Les faits peuvent être constitués même si l’auteur et la victime :',
@@ -2068,7 +2068,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Consentement',
     question:
         'Comme le viol, l’agression sexuelle “autre que le viol” suppose :',
@@ -2082,7 +2082,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Violence',
     question: 'La violence, au sens du cours, correspond à :',
     options: [
@@ -2097,7 +2097,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Appréciation',
     question:
         'Le caractère contraignant de la violence employée est apprécié :',
@@ -2112,7 +2112,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agressions sexuelles autres que le viol — Jurisprudence (violence)',
     question:
@@ -2128,7 +2128,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Contrainte/Menace',
     question:
         'La contrainte ou la menace sont assimilées par la jurisprudence à :',
@@ -2143,7 +2143,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Contrainte (222-22-1)',
     question: 'L’article 222-22-1 précise que la contrainte peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -2152,7 +2152,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Menace (critère)',
     question: 'Pour être retenue, la menace/contrainte doit inspirer :',
     options: [
@@ -2166,7 +2166,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Surprise (sens)',
     question: 'La surprise s’entend comme :',
     options: [
@@ -2180,7 +2180,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Surprise (prétexte)',
     question: 'La surprise peut être caractérisée lorsque l’auteur utilise :',
     options: [
@@ -2194,7 +2194,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Surprise (sommeil)',
     question:
         'La surprise peut être retenue si l’auteur procède à des attouchements :',
@@ -2208,7 +2208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Mineur (15-18)',
     question:
         'Pour les agressions sexuelles 222-27, l’article 222-22-1 (différence d’âge/autorité) concerne :',
@@ -2223,7 +2223,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -2238,7 +2238,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sexuelles autres que le viol — Mobile',
     question: 'Le mobile de l’auteur (haine, vengeance, lubricité…) :',
     options: [
@@ -2254,7 +2254,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES — CIRCONSTANCES AGGRAVANTES (222-28)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation',
     question:
         'Les circonstances aggravantes des agressions sexuelles (autres que le viol) sont prévues par :',
@@ -2268,7 +2268,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation ITT',
     question:
         'Une agression sexuelle est aggravée notamment lorsqu’elle a entraîné :',
@@ -2283,7 +2283,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Concours réel',
     question:
         'Si l’agression sexuelle s’accompagne de tortures/barbarie ou entraîne la mort :',
@@ -2299,7 +2299,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation autorité',
     question: 'Une agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2314,7 +2314,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation abus de fonctions',
     question: 'Le fait d’abuser de l’autorité que confèrent ses fonctions :',
     options: [
@@ -2327,7 +2327,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation pluralité',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2341,7 +2341,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation arme',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2354,7 +2354,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation réseau public',
     question:
         'L’agression sexuelle est aggravée lorsque la victime a été mise en contact grâce :',
@@ -2370,7 +2370,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation conjoint',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise par :',
     options: [
@@ -2383,7 +2383,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation ivresse',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2397,7 +2397,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation prostitution',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation mineur témoin',
     question: 'L’agression sexuelle est aggravée lorsque :',
     options: [
@@ -2425,7 +2425,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Aggravation substance',
     question: 'L’agression sexuelle est aggravée lorsque :',
     options: [
@@ -2440,7 +2440,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Peines (simple)',
     question: 'L’agression sexuelle simple (222-27) est punie de :',
     options: [
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Peines (aggravée)',
     question: 'L’agression sexuelle aggravée (222-28) est punie de :',
     options: [
@@ -2466,7 +2466,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Tentative',
     question: 'La tentative d’agression sexuelle est :',
     options: [
@@ -2480,7 +2480,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Complicité',
     question: 'La complicité d’agression sexuelle est :',
     options: [
@@ -2495,7 +2495,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (infraction distincte)',
     question:
         'L’“instigateur” d’une agression sexuelle (offres/promesses pour la faire commettre) est puni par :',
@@ -2510,7 +2510,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (condition)',
     question:
         'La provocation à commettre une agression sexuelle est punissable :',
@@ -2525,7 +2525,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (peines)',
     question:
         'La provocation à commettre une agression sexuelle (222-30-2) est punie de :',
@@ -2539,7 +2539,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (mineur)',
     question:
         'Si l’agression sexuelle devait être commise sur un mineur, la provocation est punie de :',
@@ -2554,7 +2554,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation suivie d’effet',
     question:
         'Si la provocation est suivie d’une agression sexuelle ou d’une tentative :',
@@ -2573,7 +2573,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES IMPOSÉES À UN MINEUR DE 15 ANS (222-29-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 (V/C/M/S) — Article',
     question:
         'Les agressions sexuelles autres que le viol imposées à un mineur de 15 ans (V/C/M/S) sont réprimées par :',
@@ -2588,7 +2588,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Victime vivante',
     question: 'Pour 222-29-1, une agression sexuelle sur un cadavre :',
     options: [
@@ -2602,7 +2602,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Âge',
     question: 'L’âge du mineur s’apprécie :',
     options: [
@@ -2615,7 +2615,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Connaissance de l’âge',
     question:
         'Pour un mineur de 15 ans, le texte exige que la minorité soit apparente ou connue :',
@@ -2626,7 +2626,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Consentement',
     question: 'Pour 222-29-1, l’absence de consentement résulte de :',
     options: [
@@ -2640,7 +2640,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Surprise et vulnérabilité',
     question:
         'Pour les mineurs de 15 ans, la contrainte morale ou la surprise peuvent être caractérisées par :',
@@ -2655,7 +2655,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Peines',
     question: 'Les peines principales de 222-29-1 sont :',
     options: [
@@ -2668,7 +2668,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Circonstances aggravantes',
     question: 'Les agressions sexuelles 222-29-1 comportent, selon le cours :',
     options: [
@@ -2682,7 +2682,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Tentative',
     question:
         'La tentative d’agression sexuelle sur mineur de 15 ans (222-29-1) est :',
@@ -2692,7 +2692,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Complicité',
     question: 'La complicité (121-6/121-7) est :',
     options: ['Oui', 'Non', 'Seulement si l’auteur est majeur'],
@@ -2702,7 +2702,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur <15 — Erreur sur l’âge',
     question: 'L’erreur sur l’âge du mineur :',
     options: [
@@ -2720,7 +2720,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES IMPOSÉES À UNE PERSONNE VULNÉRABLE (222-29 / 222-30)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Article',
     question:
         'Les agressions sexuelles autres que le viol imposées à une personne vulnérable sont prévues par :',
@@ -2735,7 +2735,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Aggravations',
     question: 'Les circonstances aggravantes de 222-29 sont prévues par :',
     options: [
@@ -2749,7 +2749,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Vulnérabilité',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -2763,7 +2763,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Causes',
     question: 'Les causes de vulnérabilité visées incluent :',
     options: [
@@ -2777,7 +2777,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Préexistence',
     question: 'La vulnérabilité doit :',
     options: [
@@ -2792,7 +2792,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Âge seul',
     question:
         'Le seul âge de la victime suffit à caractériser la vulnérabilité :',
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Précarité',
     question: 'La précarité économique ou sociale peut être comprise comme :',
     options: [
@@ -2822,7 +2822,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Peines (simple)',
     question:
         'L’agression sexuelle sur personne vulnérable (222-29) est punie de :',
@@ -2836,7 +2836,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Peines (aggravée)',
     question:
         'L’agression sexuelle sur personne vulnérable aggravée (222-30) est punie de :',
@@ -2850,7 +2850,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle sur personne vulnérable — Aggravation (lésion)',
     question:
@@ -2865,7 +2865,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Aggravation (arme)',
     question: 'Selon 222-30, est aggravée l’agression sexuelle commise :',
     options: [
@@ -2878,7 +2878,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle sur personne vulnérable — Aggravation (ivresse)',
     question:
@@ -2894,7 +2894,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Agression sexuelle sur personne vulnérable — Aggravation (substance)',
     question: 'Selon 222-30, est aggravée l’agression sexuelle lorsque :',
@@ -2910,7 +2910,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Tentative',
     question: 'La tentative d’agression sexuelle sur personne vulnérable est :',
     options: ['Oui (222-31)', 'Non', 'Oui uniquement si arme'],
@@ -2919,7 +2919,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable — Complicité',
     question: 'La complicité est :',
     options: [
@@ -2937,7 +2937,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — BANQUE ÉNORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Article',
     question: 'L’exhibition sexuelle est prévue et réprimée par :',
     options: [
@@ -2950,7 +2950,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Contact',
     question: 'Dans l’exhibition sexuelle, il existe :',
     options: [
@@ -2964,7 +2964,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Nature',
     question: 'L’exhibition sexuelle s’entend :',
     options: [
@@ -2978,7 +2978,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Qualifications voisines',
     question:
         'Des paroles/écrits/affiches obscènes peuvent relever notamment :',
@@ -2993,7 +2993,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Évolution (loi 2021)',
     question:
         'Depuis la loi du 21 avril 2021, l’exhibition sexuelle peut être constituée :',
@@ -3009,7 +3009,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Exemple (sous vêtements)',
     question: 'Selon le cours, peut entrer dans l’exhibition sexuelle :',
     options: [
@@ -3024,7 +3024,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Ce qui est puni',
     question: 'Ce qui est puni, ce n’est pas l’acte sexuel en soi mais :',
     options: [
@@ -3037,7 +3037,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Indifférence',
     question: 'Peu importe que les relations soient :',
     options: [
@@ -3051,7 +3051,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Jurisprudence (péage)',
     question:
         'Selon la jurisprudence citée, constitue une exhibition sexuelle :',
@@ -3066,7 +3066,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Jurisprudence (berge)',
     question:
         'Selon la jurisprudence citée (24 nov. 2021), l’exhibition est caractérisée si l’auteur :',
@@ -3081,7 +3081,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Publicité',
     question: 'Pour être constituée, l’exhibition doit être imposée :',
     options: [
@@ -3095,7 +3095,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu public',
     question: 'Dans un lieu public, la publicité de l’acte est :',
     options: [
@@ -3109,7 +3109,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Vu ou non vu',
     question:
         'Dans un lieu public, l’exhibition peut être constituée même si :',
@@ -3124,7 +3124,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieux concernés',
     question: 'Sont notamment considérés comme lieux publics :',
     options: [
@@ -3138,7 +3138,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu privé mais visible',
     question: 'L’exhibition peut être retenue dans un lieu privé si :',
     options: [
@@ -3152,7 +3152,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Voyeurisme / naturisme',
     question: 'L’infraction n’est pas retenue si :',
     options: [
@@ -3167,7 +3167,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -3180,7 +3180,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Aggravation',
     question:
         'L’exhibition sexuelle est aggravée lorsque les faits sont commis :',
@@ -3195,7 +3195,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines (simple)',
     question: 'L’exhibition sexuelle simple est punie de :',
     options: [
@@ -3208,7 +3208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines (aggravée)',
     question: 'L’exhibition sexuelle aggravée (mineur <15) est punie de :',
     options: [
@@ -3221,7 +3221,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: ['Non', 'Oui', 'Oui uniquement si mineur'],
@@ -3233,7 +3233,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES AUTRES QUE LE VIOL — BANQUE (NIVEAUX MIXTES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément matériel',
     question: 'L’agression sexuelle suppose nécessairement :',
     options: [
@@ -3247,7 +3247,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Qualification',
     question: 'Un acte sexuel sans contact physique relève en principe :',
     options: [
@@ -3261,7 +3261,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Acte sur soi',
     question:
         'Un individu qui se livre à un acte obscène sur lui-même devant des témoins commet :',
@@ -3272,7 +3272,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Acte imposé',
     question: 'Il y a agression sexuelle lorsque :',
     options: [
@@ -3285,7 +3285,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Victime contrainte',
     question:
         'Une agression sexuelle peut être constituée si la victime est contrainte :',
@@ -3300,7 +3300,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Absence de consentement',
     question: 'L’absence de consentement se caractérise par :',
     options: [
@@ -3314,7 +3314,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence',
     question: 'La violence doit être suffisante pour :',
     options: [
@@ -3328,7 +3328,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence (appréciation)',
     question:
         'L’appréciation du caractère contraignant de la violence appartient :',
@@ -3338,7 +3338,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte morale',
     question: 'La contrainte morale peut être assimilée à :',
     options: [
@@ -3352,7 +3352,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Menace',
     question: 'La menace doit inspirer à la victime :',
     options: [
@@ -3366,7 +3366,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise',
     question: 'La surprise correspond à :',
     options: [
@@ -3380,7 +3380,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (sommeil)',
     question: 'Des attouchements commis sur une victime endormie relèvent :',
     options: ['De la surprise', 'D’un simple trouble', 'D’une contravention'],
@@ -3389,7 +3389,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (tromperie)',
     question:
         'L’utilisation d’un faux prétexte médical pour toucher une victime constitue :',
@@ -3403,7 +3403,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Intention',
     question: 'L’élément moral exige que l’auteur :',
     options: [
@@ -3417,7 +3417,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mobile',
     question: 'Le mobile de l’auteur est :',
     options: [
@@ -3434,7 +3434,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE — QUESTIONS PAR NIVEAUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Définition',
     question: 'L’exhibition sexuelle suppose :',
     options: [
@@ -3447,7 +3447,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu',
     question: 'L’acte doit être commis :',
     options: [
@@ -3460,7 +3460,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu public',
     question: 'Dans un lieu public, la publicité de l’acte est :',
     options: ['Présumée', 'À prouver systématiquement', 'Impossible'],
@@ -3469,7 +3469,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Visible ou non',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -3482,7 +3482,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Loi 2021',
     question:
         'Depuis la loi du 21 avril 2021, l’exhibition peut être constituée :',
@@ -3496,7 +3496,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Consentement des témoins',
     question: 'L’infraction n’est pas constituée si les témoins :',
     options: [
@@ -3510,7 +3510,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Mineur',
     question: 'L’exhibition sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -3523,7 +3523,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: ['Non punissable', 'Punissable', 'Punissable seulement si mineur'],
@@ -3536,7 +3536,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // ✅ AGRESSIONS SEXUELLES (HORS VIOL) + MINEUR 15 + VULNÉRABLE + EXHIBITION
   // ✅ SUITE — 3 NIVEAUX : Facile / Moyenne / Difficile
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Définition (222-22 / 222-27)',
     question:
         'Les agressions sexuelles autres que le viol sont réprimées par :',
@@ -3551,7 +3551,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément matériel',
     question: 'Une agression sexuelle (hors viol) se distingue du viol par :',
     options: [
@@ -3565,7 +3565,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contact',
     question: 'Le plus grand nombre d’agressions sexuelles est constitué :',
     options: [
@@ -3580,7 +3580,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Victime',
     question:
         'La condition de la victime (ex : prostituée, hôtesse de bar, ex-partenaire) :',
@@ -3595,7 +3595,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mariage',
     question: 'Une agression sexuelle peut être constituée entre époux :',
     options: [
@@ -3610,7 +3610,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Cadavre',
     question: 'Une agression sexuelle sur un cadavre :',
     options: [
@@ -3624,7 +3624,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence',
     question: 'La violence, pour l’agression sexuelle, correspond :',
     options: [
@@ -3639,7 +3639,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contrainte (222-22-1)',
     question: 'La contrainte prévue pour les agressions sexuelles peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -3649,7 +3649,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Menace/Contrainte',
     question: 'La menace ou la contrainte doit inspirer :',
     options: [
@@ -3663,7 +3663,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise',
     question: 'La surprise s’entend principalement comme :',
     options: [
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (prétexte)',
     question:
         'Un prétexte fallacieux de visite médicale utilisé pour toucher une personne caractérise :',
@@ -3688,7 +3688,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur 15-18 (222-22-1)',
     question:
         'Pour les agressions sexuelles (222-27), la contrainte morale ou la surprise par différence d’âge et autorité concerne :',
@@ -3703,7 +3703,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément moral',
     question: 'L’élément moral de l’agression sexuelle exige :',
     options: [
@@ -3718,7 +3718,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Circonstances aggravantes (222-28)',
     question: 'L’une des circonstances aggravantes de l’article 222-28 est :',
     options: [
@@ -3732,7 +3732,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Circonstances aggravantes (222-28)',
     question:
         'La circonstance aggravante “par plusieurs personnes agissant en qualité d’auteur ou de complice” concerne :',
@@ -3747,7 +3747,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Circonstances aggravantes (222-28)',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -3761,7 +3761,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Substances',
     question:
         'Le fait qu’une substance ait été administrée à l’insu de la victime afin d’altérer son discernement est :',
@@ -3776,7 +3776,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Répression (222-27)',
     question:
         'Les peines principales de l’agression sexuelle simple (222-27) sont :',
@@ -3790,7 +3790,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Répression aggravée (222-28)',
     question:
         'Les peines principales de l’agression sexuelle aggravée (222-28) sont :',
@@ -3804,7 +3804,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Tentative',
     question: 'La tentative d’agression sexuelle est :',
     options: [
@@ -3817,7 +3817,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (222-30-2)',
     question:
         'La provocation à commettre une agression sexuelle (222-30-2) est :',
@@ -3833,7 +3833,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation (peine)',
     question:
         'La provocation à commettre une agression sexuelle (hors cas mineur) est punie de :',
@@ -3847,7 +3847,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Provocation sur mineur',
     question:
         'Si l’agression sexuelle provoquée devait être commise sur un mineur, la peine de la provocation est portée à :',
@@ -3865,7 +3865,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES IMPOSÉES À UN MINEUR DE 15 ANS (222-29-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (222-29-1)',
     question:
         'L’article réprimant les agressions sexuelles (hors viol) imposées à un mineur de 15 ans est :',
@@ -3876,7 +3876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'Pour 222-29-1, les faits doivent être commis :',
     options: [
@@ -3890,7 +3890,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question:
         'L’âge pris en compte pour déterminer si la victime a moins de 15 ans est :',
@@ -3905,7 +3905,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (erreur)',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -3920,7 +3920,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (peines)',
     question: 'Les peines principales de 222-29-1 sont :',
     options: [
@@ -3933,7 +3933,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question:
         'Pour un mineur de 15 ans, la contrainte morale ou la surprise peuvent être caractérisées par :',
@@ -3952,7 +3952,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ AGRESSIONS SEXUELLES SUR PERSONNE VULNÉRABLE (222-29 / 222-30)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Personne vulnérable (222-29)',
     question:
         'L’article réprimant l’agression sexuelle (hors viol) imposée à une personne vulnérable est :',
@@ -3963,7 +3963,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question: 'La vulnérabilité prise en compte par 222-29 doit :',
     options: [
@@ -3977,7 +3977,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -3991,7 +3991,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (âge)',
     question: 'Concernant la vulnérabilité liée à l’âge :',
     options: [
@@ -4006,7 +4006,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (précarité)',
     question:
         'La précarité économique ou sociale peut rendre une personne vulnérable car elle :',
@@ -4021,7 +4021,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable (peines)',
     question:
         'Les peines principales de l’agression sexuelle sur personne vulnérable (222-29) sont :',
@@ -4035,7 +4035,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée (222-30)',
     question:
         'L’agression sexuelle sur personne vulnérable est aggravée (222-30) notamment lorsqu’elle :',
@@ -4050,7 +4050,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée (peines)',
     question: 'Les peines principales en cas d’aggravation (222-30) sont :',
     options: [
@@ -4066,7 +4066,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Texte',
     question: 'L’exhibition sexuelle est prévue et réprimée par :',
     options: [
@@ -4080,7 +4080,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Contact',
     question: 'L’exhibition sexuelle se caractérise par :',
     options: [
@@ -4094,7 +4094,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Publicité',
     question: 'L’exhibition doit être imposée :',
     options: [
@@ -4108,7 +4108,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu privé',
     question:
         'Une exhibition commise dans un lieu privé peut être retenue si :',
@@ -4123,7 +4123,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Nudité',
     question:
         'Depuis l’évolution légale, l’exhibition est constituée même sans nudité visible si :',
@@ -4139,7 +4139,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément moral',
     question: 'L’auteur doit avoir :',
     options: [
@@ -4153,7 +4153,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines simples',
     question: 'Les peines principales de l’exhibition sexuelle simple sont :',
     options: [
@@ -4166,7 +4166,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Aggravation (mineur 15)',
     question: 'L’exhibition sexuelle est aggravée si commise au préjudice :',
     options: [
@@ -4180,7 +4180,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines aggravées',
     question:
         'Les peines principales de l’exhibition sexuelle aggravée (mineur de 15 ans) sont :',
@@ -4195,7 +4195,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: [
@@ -4208,7 +4208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Diffusion de messages',
     question:
         'Des photos obscènes diffusées (sans acte imposé à la vue dans un lieu accessible) relèvent plutôt :',
@@ -4230,7 +4230,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // ✅ EXHIBITION (222-32)
   // ✅ 3 NIVEAUX : Facile / Moyenne / Difficile
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Élément légal',
     question: 'L’article 222-22 du Code pénal :',
     options: [
@@ -4245,7 +4245,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contenu',
     question:
         'Une agression sexuelle (hors viol) peut être constituée lorsque :',
@@ -4261,7 +4261,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Jurisprudence (C.A. Agen)',
     question:
         'Le fait de caresser le dos de la victime en passant la main sous son pull-over a été qualifié :',
@@ -4276,7 +4276,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Consentement',
     question:
         'L’absence de consentement dans l’agression sexuelle (hors viol) est établie par :',
@@ -4291,7 +4291,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Violence et résistance',
     question: 'Concernant la violence, il faut établir que :',
     options: [
@@ -4305,7 +4305,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Menace/Contrainte (appréciation)',
     question: 'L’appréciation de la menace ou de la contrainte doit être :',
     options: [
@@ -4319,7 +4319,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Surprise (endormissement)',
     question:
         'Des attouchements commis sur une victime endormie peuvent être qualifiés par :',
@@ -4334,7 +4334,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur présent',
     question:
         'Le fait qu’un mineur soit présent au moment des faits et y assiste est :',
@@ -4349,7 +4349,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Réseaux électroniques',
     question:
         'Le fait que la victime ait été mise en contact avec l’auteur via un réseau de communication électronique est :',
@@ -4364,7 +4364,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Concours réel',
     question:
         'Si l’agression sexuelle entraîne la mort ou s’accompagne de tortures :',
@@ -4380,7 +4380,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Complicité',
     question: 'La complicité en matière d’agression sexuelle :',
     options: [
@@ -4397,7 +4397,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ MINEUR DE 15 ANS (222-29-1) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'Concernant 222-29-1, la minorité de 15 ans :',
     options: [
@@ -4411,7 +4411,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'La preuve de l’âge du mineur peut se faire :',
     options: [
@@ -4425,7 +4425,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question: 'L’âge de la victime se calcule :',
     options: [
@@ -4438,7 +4438,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans (élément moral)',
     question: 'Pour l’élément moral, il faut notamment :',
     options: [
@@ -4456,7 +4456,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ PERSONNE VULNÉRABLE (222-29 / 222-30) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Personne vulnérable',
     question: 'Les causes de vulnérabilité visées par 222-29 sont :',
     options: [
@@ -4471,7 +4471,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (grossesse)',
     question: 'La grossesse peut entraîner une vulnérabilité particulière :',
     options: [
@@ -4485,7 +4485,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité (déficience)',
     question:
         'La maladie, infirmité ou déficience physique/psychique renvoie à :',
@@ -4501,7 +4501,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée',
     question: 'L’usage ou menace d’une arme dans 222-30 :',
     options: [
@@ -4515,7 +4515,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérable aggravée (substance)',
     question:
         'Si une substance est administrée à l’insu de la victime pour altérer discernement/contrôle :',
@@ -4533,7 +4533,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — SUITE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Nature',
     question: 'L’exhibition sexuelle sanctionne principalement :',
     options: [
@@ -4547,7 +4547,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieux publics',
     question: 'Dans un lieu public, la publicité est :',
     options: [
@@ -4562,7 +4562,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Victime “voyeur”',
     question: 'L’exhibition sexuelle n’est pas retenue si :',
     options: [
@@ -4577,7 +4577,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Exemple',
     question: 'Exhiber ses parties sexuelles à la vue d’employés de péage :',
     options: [
@@ -4591,7 +4591,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Acte sexuel simulé',
     question:
         'Depuis l’évolution du texte, un acte sexuel simulé imposé à la vue d’autrui :',
@@ -4611,7 +4611,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // ✅ + EXHIBITION SEXUELLE / PROVOCATION (222-30-2)
   // ✅ 3 NIVEAUX : Facile / Moyenne / Difficile
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (222-27) — Élément légal',
     question: 'L’article 222-27 du Code pénal :',
     options: [
@@ -4625,7 +4625,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Définition',
     question: 'Une agression sexuelle (hors viol) se caractérise par :',
     options: [
@@ -4639,7 +4639,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Cadavre',
     question: 'Concernant la victime, une agression sexuelle :',
     options: [
@@ -4653,7 +4653,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Relations entre personnes',
     question: 'Les faits d’agression sexuelle sont constitués :',
     options: [
@@ -4667,7 +4667,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Surprise',
     question: 'La surprise s’entend :',
     options: [
@@ -4682,7 +4682,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Exemple (prétexte médical)',
     question:
         'L’utilisation d’un prétexte fallacieux de visite médicale pour commettre une agression sexuelle illustre :',
@@ -4693,7 +4693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Contrainte',
     question: 'La contrainte prévue par le Code pénal peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -4703,7 +4703,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — ITT',
     question: 'Selon 222-28, l’agression sexuelle est aggravée notamment :',
     options: [
@@ -4717,7 +4717,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Autorité',
     question: 'L’agression sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -4732,7 +4732,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Pluralité',
     question:
         'La circonstance aggravante “plusieurs personnes auteurs ou complices” suppose :',
@@ -4748,7 +4748,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Substance',
     question:
         'Administrer une substance à l’insu de la victime pour altérer son discernement :',
@@ -4763,7 +4763,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Répression',
     question: 'Les peines de base (222-27) sont :',
     options: [
@@ -4777,7 +4777,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Répression aggravée',
     question: 'En cas d’aggravation (222-28), les peines passent à :',
     options: [
@@ -4790,7 +4790,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle (hors viol) — Tentative',
     question: 'La tentative d’agression sexuelle :',
     options: [
@@ -4807,7 +4807,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ PROVOCATION À COMMETTRE UNE AGRESSION SEXUELLE (222-30-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation à agression sexuelle (222-30-2)',
     question: 'La provocation à commettre une agression sexuelle est :',
     options: [
@@ -4822,7 +4822,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation à agression sexuelle (222-30-2)',
     question:
         'La provocation à commettre une agression sexuelle (infraction distincte) est punie de :',
@@ -4837,7 +4837,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation à agression sexuelle (mineur)',
     question:
         'Si l’agression sexuelle devait être commise sur un mineur, les peines de provocation sont :',
@@ -4852,7 +4852,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation suivie d’effet',
     question:
         'Si la provocation est suivie d’une agression sexuelle (ou tentative) :',
@@ -4871,7 +4871,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ MINEUR -15 (222-29-1) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur mineur -15 (222-29-1)',
     question: 'Les peines prévues pour 222-29-1 sont :',
     options: [
@@ -4888,7 +4888,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ PERSONNE VULNÉRABLE (222-29 / 222-30) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle sur personne vulnérable (222-29)',
     question: 'Les peines de base pour 222-29 sont :',
     options: [
@@ -4902,7 +4902,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle vulnérable aggravée (222-30)',
     question: 'En cas d’aggravation (222-30), les peines deviennent :',
     options: [
@@ -4918,7 +4918,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ EXHIBITION SEXUELLE (222-32) — PEINES + MINEUR
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines',
     question: 'L’exhibition sexuelle (222-32) est punie de :',
     options: [
@@ -4931,7 +4931,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Aggravation',
     question: 'L’exhibition sexuelle est aggravée lorsqu’elle est commise :',
     options: [
@@ -4948,7 +4948,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 AGRESSIONS SEXUELLES — DISTINCTIONS FINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Distinction viol',
     question:
         'Quel élément permet de distinguer une agression sexuelle d’un viol ?',
@@ -4963,7 +4963,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Contact physique',
     question: 'Une agression sexuelle suppose nécessairement :',
     options: [
@@ -4977,7 +4977,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Exhibition',
     question:
         'Un auteur qui se masturbe devant des témoins sans contact physique commet :',
@@ -4988,7 +4988,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Consentement',
     question:
         'Le consentement de la victime exclut-il toujours l’agression sexuelle ?',
@@ -5007,7 +5007,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 AGRESSIONS SEXUELLES — SUR MINEUR DE 15 ANS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur de 15 ans',
     question:
         'Pour une agression sexuelle sur un mineur de 15 ans, il faut démontrer :',
@@ -5022,7 +5022,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur',
     question: 'Concernant l’âge du mineur, l’appréciation se fait :',
     options: [
@@ -5036,7 +5036,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Mineur',
     question: 'L’erreur sur l’âge du mineur :',
     options: [
@@ -5053,7 +5053,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 AGRESSIONS SEXUELLES — PERSONNE VULNÉRABLE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question: 'La vulnérabilité retenue par l’article 222-29 doit être :',
     options: [
@@ -5066,7 +5066,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Vulnérabilité',
     question:
         'Le seul âge avancé de la victime suffit-il à caractériser la vulnérabilité ?',
@@ -5081,7 +5081,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agression sexuelle — Précarité',
     question: 'La précarité économique ou sociale peut caractériser :',
     options: [
@@ -5098,7 +5098,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 EXHIBITION SEXUELLE — CONDITIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément matériel',
     question: 'L’exhibition sexuelle suppose :',
     options: [
@@ -5112,7 +5112,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Lieu',
     question: 'L’exhibition sexuelle peut être constituée dans :',
     options: [
@@ -5125,7 +5125,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Publicité',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -5142,7 +5142,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 🔴 EXHIBITION SEXUELLE — INTENTION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Élément moral',
     question: 'L’auteur doit avoir conscience :',
     options: [
@@ -5156,7 +5156,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Tentative',
     question: 'La tentative d’exhibition sexuelle est :',
     options: [
@@ -5169,7 +5169,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: [
@@ -5183,7 +5183,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Peines aggravées',
     question:
         'L’exhibition sexuelle aggravée (mineur de 15 ans) est punie de :',
@@ -5197,7 +5197,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: [
@@ -5210,7 +5210,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: ['Punissable', 'Impossible', 'Une contravention'],
@@ -5219,7 +5219,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exhibition sexuelle — Complicité',
     question: 'La complicité d’exhibition sexuelle est :',
     options: [
@@ -5231,7 +5231,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : complicité punissable selon les règles générales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion d’informations personnelles — Fondement',
     question:
@@ -5246,7 +5246,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 223-1-1 C.P. définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance à personne en péril — Fondement',
     question: 'La non-assistance à personne en péril est incriminée par :',
     options: [
@@ -5259,7 +5259,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 223-6 al.2 = incrimination ; art. 223-6 al.1 = peine applicable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle à la commission d’un crime ou délit — Fondement',
     question:
         'Le non-obstacle à la commission d’un crime ou d’un délit contre l’intégrité corporelle est prévu par :',
@@ -5272,7 +5272,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : non-obstacle = art. 223-6 al.1 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Fondement',
     question: 'Le délit de risques causés à autrui est prévu par :',
     options: [
@@ -5285,7 +5285,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : art. 223-1 C.P. prévoit et réprime les risques causés à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement d’une personne vulnérable — Fondement',
     question:
         'Le délaissement d’une personne qui n’est pas en mesure de se protéger est prévu par :',
@@ -5299,7 +5299,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : délaissement = art. 223-3 C.P. (les conséquences graves relèvent de l’art. 223-4).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion d’informations personnelles — Nature',
     question:
@@ -5314,7 +5314,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’incrimination n’exige pas que la diffusion soit publique (SMS/courriels possibles).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Faits non répréhensibles',
     question:
         'Parmi ces comportements, lequel n’est pas répréhensible au titre de l’article 223-1-1 ?',
@@ -5328,7 +5328,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la simple réception/captation/détention des informations n’est pas répréhensible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Définition',
     question:
         'La non-assistance à personne en péril consiste principalement à :',
@@ -5342,7 +5342,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : abstention volontaire de porter assistance (action personnelle ou en provoquant un secours).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Champ',
     question: 'Le non-obstacle vise :',
     options: [
@@ -5355,7 +5355,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’incrimination est limitée aux crimes/délits contre l’intégrité corporelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Condition',
     question: 'Le délit de l’article 223-1 exige notamment :',
     options: [
@@ -5369,7 +5369,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’intention coupable est la violation délibérée de la règle, pas l’intention de blesser.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Nature',
     question: 'Le délaissement (art. 223-3) suppose :',
     options: [
@@ -5382,7 +5382,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : comportement positif (placer la personne et l’abandonner ou s’éloigner volontairement).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Mineurs',
     question:
         'Les mineurs de 15 ans sont-ils visés par l’article 223-3 (délaissement) ?',
@@ -5396,7 +5396,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : les mineurs de 15 ans sont exclus du champ (délaissement spécifique art. 227-1).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Objet',
     question:
         'Les informations visées par l’article 223-1-1 sont relatives à :',
@@ -5410,7 +5410,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : informations relatives à la vie privée, familiale ou professionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Fondement',
     question:
         'L’abus frauduleux de l’état d’ignorance ou de faiblesse est prévu par :',
@@ -5424,7 +5424,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : art. 223-15-2 C.P. prévoit et réprime l’abus frauduleux de faiblesse/ignorance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Victimes protégées',
     question: 'L’article 223-15-2 protège notamment :',
     options: [
@@ -5438,7 +5438,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : protection limitée à des catégories (mineurs / vulnérabilité apparente ou connue).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Absence de risque',
     question:
         'La non-assistance impose d’agir uniquement si l’aide peut être apportée :',
@@ -5452,7 +5452,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la loi n’impose pas l’héroïsme ; assistance sans risque pour l’intervenant/les tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Dommage',
     question:
         'Pour le délit de risques causés à autrui (223-1), faut-il un dommage réalisé ?',
@@ -5466,7 +5466,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : il s’agit d’exposer directement autrui à un risque immédiat grave.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Intention',
     question: 'L’élément moral de l’article 223-1-1 est principalement :',
     options: [
@@ -5483,7 +5483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MOYENNE (conditions précises / subtilités)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Finalité',
     question:
         'La révélation/diffusion/transmission devient pénalement répréhensible (223-1-1) si elle est faite :',
@@ -5498,7 +5498,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : finalité = exposer à un risque direct d’atteinte aux personnes ou aux biens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Identification/localisation',
     question: 'L’information diffusée doit permettre :',
     options: [
@@ -5511,7 +5511,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : informations permettant d’identifier ou de localiser la personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Exemples',
     question:
         'Selon le cours, lequel peut constituer une information relevant de la vie privée/familiale/professionnelle ?',
@@ -5525,7 +5525,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite notamment adresses/numéros de téléphone (et parfois photographies selon contexte).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Photographie',
     question:
         'Une photographie peut être une information visée par l’article 223-1-1 notamment lorsqu’elle est :',
@@ -5539,7 +5539,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : une photo peut relever de la vie privée, notamment si prise en lieu privé à l’insu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Réseaux sociaux',
     question: 'Le cours souligne que l’infraction vise particulièrement :',
     options: [
@@ -5552,7 +5552,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : incriminer les propos haineux en ligne poursuivant des objectifs similaires à des provocations/complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Journaliste',
     question: 'Un journaliste peut-il être auteur de l’infraction (223-1-1) ?',
     options: [
@@ -5565,7 +5565,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : vise toute personne, y compris journaliste, si la preuve de l’intention de nuire gravement est rapportée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Information du public',
     question:
         'L’infraction 223-1-1 a-t-elle pour objet de réprimer la diffusion faite pour informer le public ?',
@@ -5580,7 +5580,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : n’a pas pour objet de réprimer l’information du public, même si un tiers pourrait en faire usage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion — Circonstances aggravantes (catégories)',
     question:
@@ -5595,7 +5595,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation si victime dépositaire autorité publique / mission service public / mandat électif / candidat / journaliste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Aggravation (proches)',
     question:
         'L’article 223-1-1 al.2 vise aussi des proches de la personne protégée lorsqu’ils sont ciblés :',
@@ -5609,7 +5609,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation si conjoint/ascendant/descendant/autre personne vivant au domicile, en raison des fonctions de la personne protégée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Aggravation (mineur)',
     question: 'La circonstance aggravante de l’article 223-1-1 al.3 vise :',
     options: [
@@ -5622,7 +5622,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : al.3 = lorsque les faits sont commis au préjudice d’une personne mineure.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Aggravation (vulnérabilité)',
     question: 'La vulnérabilité aggravante (223-1-1 al.4) doit être :',
     options: [
@@ -5635,7 +5635,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : vulnérabilité due à âge/maladie/infirmité/déficience/état de grossesse, apparente ou connue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Peines (simple)',
     question:
         'Pour la qualification simple (223-1-1 al.1), les peines principales encourues par une personne physique sont :',
@@ -5648,7 +5648,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours : simple = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Peines (aggravée)',
     question:
         'Pour les formes aggravées de l’article 223-1-1, la peine principale indiquée par le cours est :',
@@ -5661,7 +5661,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours : aggravée = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Tentative/complicité',
     question: 'Pour l’article 223-1-1, le cours indique :',
     options: [
@@ -5673,7 +5673,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : tentative non ; complicité oui (121-6/121-7).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Péril',
     question: 'Le péril exigé pour la non-assistance doit être :',
     options: [
@@ -5686,7 +5686,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : péril caractérisé, non simplement présumé ; danger présent, pas risques éventuels.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Cause du péril',
     question:
         'Concernant la cause ou la nature du péril (non-assistance), le cours retient :',
@@ -5700,7 +5700,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : indifférence de la cause du péril (péril naturel, accidentel ou infractionnel).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Forme de l’assistance',
     question: 'L’assistance peut être apportée :',
     options: [
@@ -5713,7 +5713,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : action personnelle ou recherche/provocation de secours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Obligation de moyens',
     question: 'La non-assistance impose une obligation :',
     options: [
@@ -5727,7 +5727,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : obligation de moyens ; l’infraction n’est pas de ne pas sauver, mais de ne pas avoir prêté aide.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Élément moral',
     question: 'L’élément moral de la non-assistance suppose notamment :',
     options: [
@@ -5740,7 +5740,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : connaissance d’un péril immédiat et refus volontaire d’intervenir par les modes possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Aggravation',
     question:
         'La circonstance aggravante de l’article 223-6 al.3 (non-assistance) vise :',
@@ -5754,7 +5754,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation lorsque la personne en péril est un mineur de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Peines',
     question:
         'Pour la non-assistance simple (223-6 al.2), les peines principales indiquées sont :',
@@ -5768,7 +5768,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours : non-assistance simple = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Peines aggravées',
     question:
         'Pour la non-assistance aggravée (223-6 al.3), les peines principales indiquées sont :',
@@ -5781,7 +5781,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours : aggravée = 7 ans + 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Exclusion suicide',
     question:
         'Le non-obstacle (223-6 al.1) peut-il sanctionner l’abstention d’empêcher un suicide ?',
@@ -5795,7 +5795,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas d’application au suicide, qui ne constitue pas un crime/délit contre l’intégrité au sens de l’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Action immédiate',
     question:
         'Le non-obstacle réprime l’abstention de la personne qui pouvait empêcher l’infraction par :',
@@ -5809,7 +5809,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : proximité temporelle ; possibilité d’empêcher par action immédiate, sans risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Forme de l’action',
     question: 'Pour faire obstacle (223-6 al.1), l’action exigée :',
     options: [
@@ -5823,7 +5823,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : formes non définies ; appel à tiers/autorités possible si meilleur moyen, sans risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Absence de risque',
     question: 'Le non-obstacle n’est punissable que si l’action omise était :',
     options: [
@@ -5836,7 +5836,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : condition explicite “sans risque pour lui ou pour les tiers”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Élément moral',
     question: 'L’élément moral du non-obstacle suppose notamment :',
     options: [
@@ -5849,7 +5849,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas d’abstention volontaire si ignorance ; volonté coupable si abstention en sachant pouvoir empêcher.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Source de l’obligation',
     question:
         'L’obligation particulière de prudence/sécurité (223-1) doit être imposée par :',
@@ -5863,7 +5863,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : condition de source textuelle ; loi ou règlement (au sens d’actes généraux et impersonnels).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Notion de règlement',
     question: 'Au sens du cours (223-1), sont retenus comme “règlement” :',
     options: [
@@ -5876,7 +5876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : seuls actes administratifs à caractère général et impersonnel (exclusion règlement intérieur, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Obligation “particulière”',
     question: 'Une obligation “particulière” (223-1) correspond plutôt à :',
     options: [
@@ -5890,7 +5890,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : obligation particulière = règles précises/cla(i)res, sans part d’interprétation subjective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Gravité du risque',
     question: 'Le risque exigé par l’article 223-1 doit être :',
     options: [
@@ -5904,7 +5904,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : seules mises en danger les plus graves (mort / mutilation / infirmité permanente).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Lien de causalité',
     question: 'Pour 223-1, le lien entre la violation et le risque doit être :',
     options: [
@@ -5917,7 +5917,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la violation doit être la cause directe et immédiate du risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Peines',
     question: 'Les peines principales pour 223-1 (personnes physiques) sont :',
     options: [
@@ -5929,7 +5929,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 223-1 = 1 an + 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Circonstances aggravantes',
     question: 'Le cours indique, pour 223-1, des circonstances aggravantes :',
     options: [
@@ -5941,7 +5941,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : “Aucune” circonstance aggravante mentionnée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Élément moral',
     question: 'L’élément moral du délaissement (223-3) est :',
     options: [
@@ -5954,7 +5954,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : comportement intentionnel consistant en la volonté d’abandonner définitivement la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Tentative',
     question: 'Selon le cours, pour le délaissement :',
     options: [
@@ -5968,7 +5968,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : tentative non pour 223-3 (délit) ; mais en matière criminelle (223-4), la tentative est punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Peines (simple)',
     question:
         'Pour le délaissement simple (223-3), les peines principales sont :',
@@ -5981,7 +5981,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 223-3 = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Nature de l’abus',
     question:
         'Selon le cours, l’abus frauduleux (223-15-2) peut consister notamment en :',
@@ -5995,7 +5995,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’abus n’est pas défini, peut être manœuvres, simple mensonge, pressions suscitant la crainte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — “Conduire”',
     question:
         'Le terme “conduire” la victime à un acte/abstention (223-15-2) signifie :',
@@ -6009,7 +6009,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la Cour de cassation a précisé que “conduire” ne voulait pas dire contraindre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Minorité',
     question:
         'Pour une victime mineure, la seule minorité suffit-elle à établir l’état d’ignorance/faiblesse ?',
@@ -6024,7 +6024,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la seule minorité ne suffit pas, d’autres critères doivent être appréciés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Préjudice',
     question: 'L’acte ou l’abstention doit être :',
     options: [
@@ -6037,7 +6037,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’acte/abstention doit être gravement préjudiciable (patrimoine, santé, vie familiale, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Aggravation numérique',
     question:
         'Le cours prévoit une aggravation lorsque l’infraction est commise :',
@@ -6052,7 +6052,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation prévue à l’alinéa 2 (en ligne / support numérique).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Aggravation bande organisée',
     question:
         'L’abus de faiblesse est aggravé lorsque l’infraction est commise :',
@@ -6062,7 +6062,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation prévue à l’alinéa 3 (bande organisée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Peines (simple)',
     question:
         'Selon le cours, l’abus de faiblesse simple (223-15-2 al.1) est puni de :',
@@ -6075,7 +6075,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours : simple = 3 ans + 375 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Peines (aggravation numérique)',
     question:
         'Selon le cours, l’abus de faiblesse aggravé par usage d’un service en ligne/support numérique (al.2) est puni de :',
@@ -6088,7 +6088,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours : aggravation al.2 = 5 ans + 750 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Peines (bande organisée)',
     question:
         'Selon le cours, l’abus de faiblesse en bande organisée (al.3) est puni de :',
@@ -6101,7 +6101,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours : bande organisée = 7 ans + 1 000 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Tentative/complicité',
     question: 'Pour 223-15-2, le cours indique :',
     options: [
@@ -6117,7 +6117,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DIFFICILE (raisonnement / cas-limites / jurisprudence / articulations)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Auteur/tiers',
     question:
         'Le texte (223-1-1) admet que la personne “identifiée/localisée” par les informations diffusées peut être :',
@@ -6131,7 +6131,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : “Il peut s’agir d’une personne distincte de celle visée à titre principal par la divulgation.”',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Notion de risque',
     question: 'Pour 223-1-1, le risque exigé est :',
     options: [
@@ -6144,7 +6144,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exige un risque direct d’atteinte à la personne ou aux biens (victime ou famille).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — “Ne pouvait ignorer”',
     question: 'L’infraction 223-1-1 exige que l’auteur :',
     options: [
@@ -6157,7 +6157,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : “risque direct … que l’auteur ne pouvait ignorer”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Jurisprudence 11 février 2025',
     question:
         'Selon l’exemple jurisprudentiel (Cass. crim., 11 fév. 2025), la diffusion concomitante de la qualité de fonctionnaire de police, dans un contexte visant les forces de police, peut :',
@@ -6171,7 +6171,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite cet arrêt : diffusion de la qualité de policier dans un contexte hostile pouvant exposer à un risque direct.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Péril “constaté”',
     question:
         'Le cours insiste que le péril doit être “impérativement et expressément constaté” : cela signifie surtout que :',
@@ -6185,7 +6185,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : péril caractérisé, pas seulement présumé ; risques éventuels/hypothétiques exclus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Auteur du péril',
     question: 'En non-assistance, le fait que l’auteur du péril soit :',
     options: [
@@ -6199,7 +6199,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’auteur du péril est indifférent (tiers, débiteur, voire la victime).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Cumul avec violences',
     question:
         'Le cours indique que non-assistance et violences volontaires peuvent :',
@@ -6213,7 +6213,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : cumul possible si deux temps d’action différents, protection de valeurs sociales différentes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Appel à autrui insuffisant',
     question:
         'Selon le cours, l’appel à autrui (provoquer un secours) peut ne pas suffire si :',
@@ -6227,7 +6227,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’appel à autrui n’acquitte pas si l’action personnelle était manifestement plus efficace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Temporalité',
     question:
         'Le cours admet que l’obligation d’agir pour le non-obstacle peut viser :',
@@ -6241,7 +6241,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : obligation d’agir dès la certitude de l’imminence (même si pas encore en cours).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Dissuasion verbale',
     question:
         'Selon l’exemple du cours, une simple protestation/dissuasion verbale est :',
@@ -6255,7 +6255,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’action doit être apte à empêcher ; la dissuasion verbale est souvent jugée insuffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Cause “exclusive”',
     question: 'Le cours précise que le comportement dangereux doit être :',
     options: [
@@ -6268,7 +6268,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : lien direct ; comportement dangereux = seule cause du risque (cause directe et immédiate).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Vitesse excessive',
     question: 'Selon le cours, la vitesse excessive seule :',
     options: [
@@ -6282,7 +6282,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : dépassement vitesse autorisée seul insuffisant ; un comportement exposant à un risque immédiat grave doit s’ajouter.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Élément intentionnel',
     question: 'Pour 223-1, l’intention coupable porte principalement sur :',
     options: [
@@ -6296,7 +6296,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : intention = violer la règle ; pas nécessaire d’avoir une vision précise des risques réellement encourus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Complicité',
     question:
         'Le cours rappelle que, même si 223-1 appartient aux infractions non intentionnelles, la complicité :',
@@ -6310,7 +6310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la mise en danger d’autrui n’exclut pas la complicité (exemple : passager ordonnant de franchir un feu).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Lieu indifférent',
     question: 'Pour le délaissement, le lieu :',
     options: [
@@ -6326,7 +6326,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // FACILE (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Actes visés',
     question:
         'Quels verbes décrivent l’acte matériel visé par l’article 223-1-1 ?',
@@ -6340,7 +6340,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise la révélation, diffusion ou transmission, par quelque moyen que ce soit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Moyen',
     question:
         'La révélation/diffusion/transmission (223-1-1) peut être réalisée :',
@@ -6354,7 +6354,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise “par quelque moyen que ce soit” (réseaux sociaux, SMS, courriels…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Réseaux sociaux',
     question: 'Le cours précise que l’infraction vise particulièrement :',
     options: [
@@ -6367,7 +6367,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’infraction vise particulièrement les réseaux sociaux.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Publicité',
     question: 'L’acte de diffusion doit être public pour être incriminé ?',
     options: [
@@ -6380,7 +6380,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’incrimination n’exige pas que la diffusion soit publique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — SMS/Courriel',
     question:
         'Des moyens confidentiels (SMS/courriel) peuvent-ils tomber sous 223-1-1 ?',
@@ -6390,7 +6390,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : des moyens de transmission plus confidentiels comme SMS/courriels sont visés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Éléments exclus',
     question:
         'Parmi ces éléments, lequel seul ne suffit pas à caractériser l’infraction 223-1-1 ?',
@@ -6404,7 +6404,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : simple réception/captation/détention n’est pas répréhensible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Objet',
     question: 'Les informations doivent être relatives à la vie :',
     options: [
@@ -6416,7 +6416,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours liste la vie privée, familiale ou professionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Exemples',
     question: 'Le cours cite comme exemples d’informations visées :',
     options: [
@@ -6428,7 +6428,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours donne ces exemples (téléphone, adresse).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6 al.2) — Définition',
     question: 'La non-assistance à personne en péril consiste à :',
     options: [
@@ -6442,7 +6442,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : s’abstenir volontairement d’aider sans risque pour soi/tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6 al.2) — Modes',
     question: 'L’assistance peut être apportée :',
     options: [
@@ -6455,7 +6455,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : soit par action personnelle, soit en provoquant un secours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6 al.2) — Risque',
     question:
         'L’obligation d’assistance existe seulement si l’aide peut être apportée :',
@@ -6469,7 +6469,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la loi n’impose pas l’héroïsme ; assistance sans risque.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Définition',
     question: 'Le non-obstacle sanctionne le fait de :',
     options: [
@@ -6483,7 +6483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 223-6 al.1 vise l’abstention d’empêcher un crime/délit contre l’intégrité corporelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Définition',
     question:
         'Le risque causé à autrui consiste notamment à exposer directement autrui à :',
@@ -6497,7 +6497,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : risque immédiat de mort ou blessures graves (mutilation/infirmité permanente).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement (223-3) — Définition',
     question: 'Le délaissement vise le fait :',
     options: [
@@ -6511,7 +6511,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : délaissement = abandon d’une personne hors d’état de se protéger.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Définition',
     question:
         'L’abus de faiblesse consiste à exploiter l’état d’ignorance/faiblesse pour conduire la victime à :',
@@ -6529,7 +6529,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MOYENNE (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Élément moral',
     question: 'L’élément moral de 223-1-1 est caractérisé par :',
     options: [
@@ -6542,7 +6542,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : intention manifeste qu’il soit porté gravement atteinte à la personne/proches/biens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Faisceau d’indices',
     question: 'Selon le cours, l’intention de nuire peut être caractérisée :',
     options: [
@@ -6555,7 +6555,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : soit intention clairement exprimée, soit déduite d’un faisceau d’indices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Personnes visées',
     question: 'L’incrimination vise :',
     options: [
@@ -6568,7 +6568,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : vise toute personne (y compris journaliste sous condition d’intention).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Aggravation (qualités)',
     question:
         'Parmi ces qualités, laquelle figure dans les aggravations de l’al.2 ?',
@@ -6582,7 +6582,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : al.2 vise notamment le candidat à un mandat électif public pendant la campagne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion (223-1-1) — Aggravation (journaliste)',
     question:
@@ -6597,7 +6597,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : journaliste visé au sens du 2e alinéa de l’article 2 de la loi du 29 juillet 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Aggravation (domicile)',
     question:
         'L’aggravation vise aussi “toute autre personne vivant habituellement au domicile” de la personne protégée :',
@@ -6612,7 +6612,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation si ciblage du conjoint/ascendant/descendant/autre vivant au domicile, en raison des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Responsabilité PM',
     question: 'Pour 223-1-1, la responsabilité pénale des personnes morales :',
     options: [
@@ -6625,7 +6625,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : responsabilité des personnes morales selon le principe général de l’art. 121-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Péril présent',
     question: 'Le péril suppose une situation :',
     options: [
@@ -6638,7 +6638,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : péril = danger présent ; risques éventuels ou hypothétiques non retenus.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Obligation d’intervenir',
     question: 'Le délit est constitué lorsque la personne :',
     options: [
@@ -6652,7 +6652,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours (Cass. crim., 25 juin 1964) : connaissance péril immédiat et refus volontaire d’intervenir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Efficacité',
     question: 'L’assistance doit-elle réussir pour éviter l’infraction ?',
     options: [
@@ -6665,7 +6665,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : peu importe que l’assistance soit efficace ; obligation de moyens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Appel + action',
     question: 'Le cours admet que l’on peut devoir utiliser :',
     options: [
@@ -6679,7 +6679,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : obligation d’intervenir par le mode que la nécessité commande, et même cumulativement si besoin.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Domaine',
     question: 'Le non-obstacle exclut notamment :',
     options: [
@@ -6692,7 +6692,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’incrimination n’inclut pas les délits contre les biens ou contre la Nation/État/paix publique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Résultat',
     question:
         'Pour le non-obstacle, il est exigé que l’action omise ait réussi ?',
@@ -6707,7 +6707,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas exigé que l’action ait réussi ; obligation d’agir si moyen d’empêcher sans risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Règlement intérieur',
     question:
         'Un règlement intérieur d’entreprise est-il un “règlement” au sens de 223-1 ?',
@@ -6717,7 +6717,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : sont exclus les règlements intérieurs d’entreprise.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement (223-3) — Mineurs de 15 ans',
     question: 'Les mineurs de 15 ans relèvent du délaissement 223-3 ?',
     options: [
@@ -6729,7 +6729,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : mineurs de 15 ans exclus car texte spécifique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — “Conduire”',
     question: 'Selon le cours, “conduire” la victime à un acte signifie :',
     options: [
@@ -6742,7 +6742,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : “conduire” ne veut pas dire contraindre (Cass. crim.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Vulnérabilité',
     question: 'La vulnérabilité peut être due notamment à :',
     options: [
@@ -6758,7 +6758,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DIFFICILE (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Non-public',
     question:
         'Un message privé envoyé à une seule personne contenant une adresse peut relever de 223-1-1 si :',
@@ -6773,7 +6773,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas besoin de publicité ; condition = finalité d’exposition + risque direct + auteur ne pouvait ignorer + intention de nuire gravement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Personne distincte',
     question:
         'Pour 223-1-1, la personne identifiée/localisée peut être distincte de la cible principale : conséquence pratique ?',
@@ -6787,7 +6787,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la personne identifiée/localisée peut être distincte de la personne visée à titre principal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Péril et dépistage',
     question:
         'Le cours illustre que l’absence de dépistage VIH n’est pas non-assistance lorsque :',
@@ -6801,7 +6801,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Exemple jurisprudentiel du cours : péril imminent non établi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Deux temps d’action',
     question:
         'Pourquoi violences volontaires + non-assistance peuvent se cumuler ?',
@@ -6816,7 +6816,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : cumul si deux temps distincts et valeurs sociales différentes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Crainte de représailles',
     question:
         'La crainte de représailles futures constitue-t-elle un “risque” exonérant l’auteur du non-obstacle ?',
@@ -6831,7 +6831,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas de risque justificatif si risque futur lié à crainte de représailles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Obligation particulière',
     question:
         'Une simple “règle générale de manœuvre” sur un aérodrome est-elle une obligation particulière (223-1) ?',
@@ -6846,7 +6846,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rapporte un exemple : règles générales de circulation/manœuvre ≠ obligation particulière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Vitesse (nuance)',
     question:
         'Selon le cours, rouler trop vite ne suffit pas toujours pour 223-1 car :',
@@ -6861,7 +6861,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : vitesse excessive seule insuffisante ; il faut un comportement ajoutant un risque immédiat de mort/blessures graves.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement (223-3 / 223-4) — Tentative',
     question:
         'Pourquoi la tentative est-elle retenue surtout quand on bascule en 223-4 ?',
@@ -6876,7 +6876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas de tentative pour le délit 223-3 ; mais en matière criminelle (223-4), la tentative est punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Consentement',
     question:
         'Le cours insiste : le consentement de la personne vulnérable est apprécié :',
@@ -6890,7 +6890,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : consentement doit être libre/éclairé au moment de l’acte ; sinon il n’est pas valable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Préjudice potentiel',
     question: 'Le préjudice exigé doit-il être déjà réalisé ?',
     options: [
@@ -6904,7 +6904,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Gravité et qualification',
     question:
         'Selon le cours, si le délaissement entraîne la mort de la victime, on bascule :',
@@ -6919,7 +6919,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 223-4 al.2 = crime, 20 ans de réclusion lorsque le délaissement entraîne la mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Mutilation/infirmité permanente',
     question:
         'Si le délaissement entraîne une mutilation ou une infirmité permanente, le cours indique :',
@@ -6933,7 +6933,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : premier degré (223-4 al.1) = 15 ans de réclusion en cas de mutilation/infirmité permanente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Consentement',
     question:
         'Le cours insiste que le consentement de la personne vulnérable doit être :',
@@ -6947,7 +6947,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : consentement libre/éclairé au moment où l’acte est passé ; consentement du vulnérable n’est pas valable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Vulnérabilité “apparente ou connue”',
     question:
         'Pour la vulnérabilité (hors minorité), le cours exige qu’elle soit :',
@@ -6962,7 +6962,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : vulnérabilité “apparente ou connue” ; la Cour de cassation exige que la connaissance soit démontrée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Préjudice potentiel',
     question: 'Le cours indique que le préjudice exigé peut être :',
     options: [
@@ -6975,7 +6975,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la jurisprudence n’exige pas que l’acte préjudiciable soit déjà réalisé ; il peut être potentiel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion d’informations personnelles — Fondement',
     question:
@@ -6990,7 +6990,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 223-1-1 C.P. définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance à personne en péril — Fondement',
     question: 'La non-assistance à personne en péril est incriminée par :',
     options: [
@@ -7007,7 +7007,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ✅ NOUVEAU BLOC — DIFFUSION / ENREGISTREMENT D’IMAGES DE VIOLENCE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Fondement',
     question: 'La diffusion d’images de violence est incriminée par :',
     options: [
@@ -7020,7 +7020,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’art. 222-33-3 al.2 incrimine la diffusion de l’enregistrement des images des atteintes listées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Nature juridique',
     question:
         'Le fait d’enregistrer sciemment des images de violences (happy slapping) constitue :',
@@ -7034,7 +7034,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-33-3 al.1 qualifie l’enregistrement sciemment d’images comme un acte de complicité au sens du droit commun.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément matériel',
     question: 'La diffusion s’entend notamment comme :',
     options: [
@@ -7047,7 +7047,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours retient une acception large : transmission de portable à portable, internet, prêt de l’original, copies, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Auteur',
     question:
         'Pour être poursuivi pour diffusion d’images de violence, il faut être :',
@@ -7061,7 +7061,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il n’est pas nécessaire que le diffuseur soit l’enregistreur : diffuser suffit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Définition',
     question: 'Le “happy slapping” désigne :',
     options: [
@@ -7074,7 +7074,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours qualifie l’enregistrement sciemment des images de violences comme le happy slapping.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Liste',
     question:
         'La liste des infractions dont l’enregistrement ou la diffusion d’images est visée est :',
@@ -7088,7 +7088,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les infractions visées par l’art. 222-33-3 sont limitativement énumérées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Tentative',
     question: 'La tentative de diffusion d’images de violence est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -7097,7 +7097,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : TENTATIVE : NON pour la diffusion d’images de violence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Complicité',
     question: 'La complicité de diffusion d’images de violence est :',
     options: [
@@ -7110,7 +7110,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : COMPLICITÉ : OUI (articles 121-6 et 121-7 du C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Répression',
     question:
         'La diffusion d’images de violence est punie (personnes physiques) de :',
@@ -7128,7 +7128,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MOYENNE (Compréhension / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Champ',
     question:
         'La diffusion d’images est visée lorsqu’elle concerne des atteintes volontaires prévues notamment par :',
@@ -7142,7 +7142,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’art. 222-33-3 vise une liste d’atteintes volontaires à l’intégrité de la personne (violences, viol, agressions sexuelles, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infraction autonome',
     question:
         'La diffusion d’images de violence est qualifiée par le cours comme :',
@@ -7156,7 +7156,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la diffusion d’images de violences est érigée en infraction autonome.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Supports',
     question: 'La diffusion peut être caractérisée par :',
     options: [
@@ -7169,7 +7169,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La diffusion est entendue largement : même une transmission d’un portable à un autre suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Ce qui est exclu',
     question: 'Le happy slapping exclut notamment :',
     options: [
@@ -7182,7 +7182,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’enregistrement vise une représentation visuelle : la fixation sonore est exclue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Représentation analogique',
     question:
         'Quel support est exclu de la notion d’enregistrement au sens du happy slapping ?',
@@ -7196,7 +7196,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exclut la représentation analogique (peinture, dessin).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Moment décisif',
     question:
         'Pour entrer dans le champ du happy slapping, l’enregistrement doit être réalisé :',
@@ -7211,7 +7211,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la commission inclut la période d’exécution : consommation et tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Actes postérieurs',
     question: 'Filmer uniquement la victime déjà au sol après les violences :',
     options: [
@@ -7224,7 +7224,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le moment est décisif : l’enregistrement doit porter sur l’instant où l’atteinte se commet.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Actes antérieurs',
     question:
         'Filmer uniquement l’auteur qui s’approche et menace avant de frapper :',
@@ -7238,7 +7238,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exclut l’enregistrement d’actes antérieurs (approche, menaces) s’ils ne coïncident pas avec l’exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Images préalablement créées',
     question:
         'Enregistrer sur son ordinateur une vidéo de violences trouvée sur internet relève plutôt :',
@@ -7252,7 +7252,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’enregistrement d’images préalablement créées n’entre pas dans l’incrimination ; l’exemple évoque le recel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Hébergeur',
     question: 'Un hébergeur de site peut être poursuivi s’il :',
     options: [
@@ -7266,7 +7266,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’un hébergeur peut voir sa responsabilité engagée s’il a autorisé la diffusion en connaissant l’illicéité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Fait justificatif',
     question:
         'La diffusion par des professionnels de l’information peut être justifiée au titre :',
@@ -7280,7 +7280,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la diffusion peut être justifiée lorsque réalisée par des professionnels pour informer le public.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Limites',
     question:
         'Même en cas d’exception d’information, la diffusion doit notamment :',
@@ -7295,7 +7295,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle les limites : dignité et non-identification, et respect de la loi du 29 juillet 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Fait justificatif probatoire',
     question:
         'L’enregistrement d’images de violences est justifié s’il est réalisé :',
@@ -7310,7 +7310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reconnaît une exception probatoire lorsque l’enregistrement sert à établir les faits ou identifier les auteurs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Exception probatoire',
     question:
         'Concernant la diffusion d’images, l’exception probatoire est, selon le cours :',
@@ -7325,7 +7325,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’il paraît impossible de diffuser sur TV/internet “pour servir de preuve” sans constituer l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Circonstances aggravantes',
     question:
         'La diffusion d’images de violence comporte-t-elle des circonstances aggravantes propres ?',
@@ -7343,7 +7343,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DIFFICILE (Niveau concours / subtilités)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Consentement de la victime',
     question:
         'Le fait d’enregistrer des violences commises sur un individu consentant :',
@@ -7357,7 +7357,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les violences volontaires sont constituées même si la victime est consentante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Élément moral',
     question: 'L’élément moral du happy slapping suppose notamment :',
     options: [
@@ -7370,7 +7370,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : enregistrement volontaire (conscience de filmer) + conscience que ce sont des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Erreur de fait',
     question:
         'La responsabilité peut être exclue si l’auteur filme en croyant :',
@@ -7384,7 +7384,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’erreur de fait : l’auteur croit qu’il n’y a pas d’atteinte illicite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément moral',
     question:
         'Pour la diffusion d’images de violence, l’élément moral inclut :',
@@ -7398,7 +7398,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : connaissance que ce sont des images de violences + diffusion intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Portée “complicité”',
     question:
         'L’enregistrement d’images de violence est assimilé à la complicité :',
@@ -7413,7 +7413,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’acte d’enregistrement est assimilé à un cas de complicité au sens du droit commun.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Répression',
     question: 'La peine applicable au happy slapping dépend :',
     options: [
@@ -7426,7 +7426,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la répression est celle des infractions faisant l’objet de l’enregistrement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Circonstances communicables',
     question:
         'Les circonstances aggravantes de l’infraction principale peuvent :',
@@ -7440,7 +7440,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les circonstances aggravantes attachées à l’infraction principale peuvent être communicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Réunion',
     question: 'Selon le cours, l’enregistreur peut également se voir retenir :',
     options: [
@@ -7454,7 +7454,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours évoque la possibilité de retenir la circonstance aggravante de réunion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Auteur principal et complicité',
     question:
         'L’auteur des violences peut-il être complice du happy slapping s’il demande à être filmé ?',
@@ -7468,7 +7468,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’auteur de l’infraction principale ne peut être considéré comme complice s’il demande à être filmé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Complicité de complicité',
     question: 'La complicité de complicité est :',
     options: [
@@ -7481,7 +7481,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne expressément : la complicité de complicité est répréhensible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infractions incluses',
     question:
         'La diffusion d’images de violence vise notamment des images relatives :',
@@ -7496,7 +7496,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La liste limitative inclut viol, agressions sexuelles délictuelles, administration de substance à cette fin, harcèlement sexuel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infractions exclues',
     question:
         'Selon le cours, les infractions voisines non mentionnées par la liste :',
@@ -7510,7 +7510,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : liste limitative ; infractions voisines exclues.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Tentative',
     question: 'La tentative de happy slapping (enregistrement) est :',
     options: [
@@ -7523,7 +7523,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : TENTATIVE : NON pour l’enregistrement d’images de violence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Personnes morales',
     question:
         'Les personnes morales peuvent-elles être pénalement responsables de diffusion d’images de violence ?',
@@ -7537,7 +7537,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MOYENNE / DIFFICILE — QUESTIONS PIÈGES (CAS COURTS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Happy slapping',
     question:
         'Une personne filme sciemment une agression sexuelle délictuelle en cours d’exécution sans y participer. Sa qualification principale est :',
@@ -7551,7 +7551,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’enregistrement sciemment d’images relatives à certaines atteintes est un acte de complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Moment de l’enregistrement',
     question:
         'Une personne ne filme que les secondes suivant l’agression, quand la victime est au sol. Selon le cours, le happy slapping :',
@@ -7565,7 +7565,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exclut les actes postérieurs si l’enregistrement ne porte pas sur la phase de commission.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Diffusion',
     question:
         'Une personne reçoit une vidéo de violences sur messagerie et la transfère à plusieurs amis. Elle :',
@@ -7579,7 +7579,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La diffusion s’entend largement, y compris par transmission de téléphone à téléphone.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Information du public',
     question:
         'Un journaliste diffuse une séquence de violences dans le cadre d’un reportage d’actualité. Le fait justificatif mobilisable est :',
@@ -7593,7 +7593,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la diffusion est justifiée pour informer le public, sous réserve de respecter dignité, non-identification et loi de 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Probatoire',
     question:
         'Un témoin filme une scène de violences afin de faciliter l’identification des auteurs et remet la vidéo aux enquêteurs sans la publier. Le fait justificatif applicable est :',
@@ -7607,7 +7607,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-33-3 al.3 prévoit l’exception probatoire pour l’enregistrement destiné à servir de preuve.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Qualification',
     question: 'La diffusion d’images de violence est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -7616,7 +7616,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours classe la diffusion d’images de violence (art. 222-33-3 al.2) comme un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Fondement',
     question: 'Le “happy slapping” est prévu par :',
     options: [
@@ -7629,7 +7629,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 222-33-3 C.P. incrimine l’enregistrement sciemment d’images de violences (happy slapping).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Répression',
     question:
         'La répression du happy slapping (enregistrement) est prévue par :',
@@ -7643,7 +7643,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’enregistrement est un acte de complicité : la peine suit l’infraction faisant l’objet de l’enregistrement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Support',
     question: 'L’image enregistrée peut être fixée :',
     options: [
@@ -7656,7 +7656,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : pellicule, cassette, carte mémoire, disque dur…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément moral',
     question: 'Pour la diffusion, il faut notamment :',
     options: [
@@ -7669,7 +7669,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise une diffusion intentionnelle : volonté de diffuser et connaissance du contenu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Complicité',
     question: 'Les règles de la complicité applicables sont :',
     options: [
@@ -7686,7 +7686,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MOYENNE (Compréhension / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Liste limitative',
     question:
         'Parmi les infractions suivantes, laquelle est explicitement visée dans la liste du cours ?',
@@ -7700,7 +7700,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite expressément le harcèlement sexuel dans la liste de l’art. 222-33-3 (diffusion/enregistrement).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infractions exclues',
     question: 'Si une infraction n’est pas dans la liste, selon le cours :',
     options: [
@@ -7713,7 +7713,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : liste limitative, les infractions voisines sont exclues.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Ce qui est enregistré',
     question: 'Le happy slapping vise l’enregistrement :',
     options: [
@@ -7726,7 +7726,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte vise des images relatives à la commission d’infractions listées (violences, viol, agressions sexuelles, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Commission et tentative',
     question: 'Pour le happy slapping, la “commission” inclut :',
     options: [
@@ -7739,7 +7739,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la phase de commission comprend la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Hypothèse de recel',
     question:
         'Enregistrer une vidéo déjà existante trouvée en ligne, selon le cours, renvoie plutôt à :',
@@ -7753,7 +7753,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne l’exemple d’une vidéo trouvée sur internet enregistrée sur disque dur : orientation recel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Hébergement',
     question: 'Un hébergeur peut engager sa responsabilité pénale s’il :',
     options: [
@@ -7766,7 +7766,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours évoque l’hébergeur qui autorise, même tacitement, en connaissant l’illicéité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Fait justificatif',
     question: 'L’exception d’information profite principalement :',
     options: [
@@ -7779,7 +7779,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la diffusion peut être justifiée lorsqu’elle est effectuée par des professionnels de l’information.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Conditions',
     question:
         'Selon le cours, l’exception d’information suppose notamment de :',
@@ -7793,7 +7793,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours impose le respect de la dignité et l’absence d’identification, avec la loi du 29 juillet 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Exception probatoire',
     question:
         'L’exception probatoire s’applique quand l’enregistrement est fait :',
@@ -7811,7 +7811,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DIFFICILE (Niveau concours / subtilités)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément matériel',
     question:
         'Concernant l’acte de diffusion, quel comportement est explicitement cité par le cours ?',
@@ -7825,7 +7825,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère : transmettre, internet, prêter l’original, distribuer des copies…',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Fixation sonore',
     question: 'Pourquoi une simple captation audio (cris) est-elle exclue ?',
     options: [
@@ -7838,7 +7838,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : l’enregistrement d’images = représentation visuelle ; la fixation sonore seule est exclue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Moment décisif',
     question: 'Quel scénario correspond le mieux au champ du happy slapping ?',
     options: [
@@ -7851,7 +7851,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’enregistrement doit être fait à l’instant même où l’atteinte se commet.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Exception probatoire',
     question:
         'Selon le cours, l’exception probatoire est difficilement applicable à la diffusion car :',
@@ -7865,7 +7865,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique qu’il paraît impossible de diffuser sur TV/internet “pour servir de preuve” sans constituer l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Circonstances aggravantes',
     question: 'En tant que complice, l’enregistreur peut se voir appliquer :',
     options: [
@@ -7878,7 +7878,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : les circonstances aggravantes de l’infraction principale peuvent être communicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Réunion',
     question:
         'Pourquoi la circonstance aggravante de réunion peut viser l’enregistreur ?',
@@ -7893,7 +7893,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours évoque que l’enregistreur étant complice, la circonstance aggravante de réunion peut être retenue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Complicité de complicité',
     question:
         'Une personne aide l’enregistreur à filmer (lumière, angle, etc.). Selon le cours :',
@@ -7907,7 +7907,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : Cass. crim., 15 décembre 2004 — la complicité de complicité est répréhensible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Auteur principal',
     question:
         'Selon le cours, l’auteur de l’infraction principale ne peut pas être complice du happy slapping s’il :',
@@ -7921,7 +7921,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’auteur principal ne peut être complice s’il demande à ce qu’on le filme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Personnes morales',
     question: 'Quel énoncé est conforme au cours ?',
     options: [
@@ -7938,7 +7938,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // CAS PRATIQUES (Mix moyen/difficile)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Diffusion',
     question:
         'Une personne reçoit une vidéo de viol filmé par un tiers et la republie sur un groupe privé. Juridiquement, elle risque :',
@@ -7952,7 +7952,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la diffusion est large (même entre téléphones / groupes). L’auteur n’a pas besoin d’être le filmeur, mais doit connaître le contenu et vouloir diffuser.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Information',
     question:
         'Un média diffuse une vidéo de violences en floutant parfaitement la victime et sans atteinte à la dignité dans un sujet d’actualité. Cela se rattache à :',
@@ -7966,7 +7966,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours admet l’exception d’information, mais sous réserve (dignité, non-identification, loi de 1881).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Probatoire',
     question:
         'Un témoin filme une scène de violences pour identifier les auteurs et remet la vidéo à la police, sans la transmettre à d’autres. Selon le cours :',
@@ -7980,7 +7980,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit que l’enregistrement est autorisé s’il sert à établir la matérialité des faits ou faciliter l’identification.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fondement',
     question: 'L’infraction de dissimulation forcée du visage est prévue par :',
     options: [
@@ -7993,7 +7993,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La dissimulation forcée du visage est expressément prévue et réprimée par l’article 225-4-10 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation de sépultures — Fondement',
     question:
         'La violation ou la profanation de tombeaux, sépultures, urnes cinéraires ou monuments à la mémoire des morts est prévue par :',
@@ -8007,7 +8007,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 225-17 al.2 du C.P. prévoit et réprime la violation/profanation de ces lieux/objets.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Fondement',
     question: 'L’atteinte à l’intégrité du cadavre est prévue par :',
     options: [
@@ -8020,7 +8020,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’article 225-17 al.1 du C.P. réprime l’atteinte à l’intégrité du cadavre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Objets protégés',
     question:
         'Parmi les éléments suivants, lequel est protégé par l’article 225-17 al.2 du C.P. ?',
@@ -8034,7 +8034,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste explicitement : tombeaux, sépultures, urnes cinéraires, monuments édifiés à la mémoire des morts.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Acte matériel',
     question: 'L’acte de violation ou de profanation suppose :',
     options: [
@@ -8047,7 +8047,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’acte doit être matérialisé par une action (dégradation, ouverture de caveau, inscriptions, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Moment',
     question:
         'Pour caractériser l’atteinte à l’intégrité du cadavre, il est nécessaire qu’il y ait eu inhumation :',
@@ -8057,7 +8057,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’inhumation n’est pas nécessaire : l’atteinte peut être constatée sur les lieux du décès, à la morgue, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Circonstance aggravante',
     question:
         'La violation/profanation (225-17 al.2) est aggravée lorsqu’elle est accompagnée :',
@@ -8071,7 +8071,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : art. 225-17 al.3 = aggravation si atteinte à l’intégrité du cadavre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Peine (simple)',
     question:
         'La violation/profanation de tombeaux, sépultures, urnes ou monuments (225-17 al.2) est punie de :',
@@ -8085,7 +8085,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-17 al.2 = 1 an et 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Peine (aggravée)',
     question: 'La violation/profanation aggravée (225-17 al.3) est punie de :',
     options: [
@@ -8098,7 +8098,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 225-17 al.3 (avec atteinte à l’intégrité du cadavre) = 2 ans et 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Peine',
     question:
         'L’atteinte à l’intégrité du cadavre (225-17 al.1) est punie de :',
@@ -8112,7 +8112,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-17 al.1 = 1 an et 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Responsabilité des personnes morales',
     question:
         'La responsabilité des personnes morales pour ces infractions est prévue par :',
@@ -8126,7 +8126,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la responsabilité des personnes morales est prévue expressément par l’article 225-18-1 du C.P.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Fait justificatif',
     question:
         'Le cours précise que l’infraction ne peut pas être retenue contre un médecin pratiquant une autopsie car :',
@@ -8141,7 +8141,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’article 122-4 du C.P. : n’est pas pénalement responsable la personne accomplissant un acte prescrit/autorisé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Actes concernés',
     question:
         'Parmi les exemples suivants, lequel peut constituer une atteinte à l’intégrité du cadavre selon le cours ?',
@@ -8155,7 +8155,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : dépeçage, coups de feu/couteau/bâton, morsures, exhumation illicite, prélèvements hors cadre légal, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Tombeau',
     question: 'Selon le cours, un “tombeau” est :',
     options: [
@@ -8168,7 +8168,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit le tombeau comme un monument élevé sur les restes d’un mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Sépulture',
     question: 'Selon le cours, la “sépulture” peut désigner :',
     options: [
@@ -8182,7 +8182,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la sépulture = lieu où le défunt est enterré, mais aussi drap mortuaire ou cercueil avant l’inhumation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Monuments à la mémoire des morts',
     question:
         'Selon le cours, un monument édifié à la mémoire des morts peut être :',
@@ -8196,7 +8196,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : monuments collectifs en mémoire des morts, plaques commémoratives, lieux où un soldat/résistant a été tué, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Élément moral',
     question:
         'L’élément moral de la violation/profanation repose principalement sur :',
@@ -8211,7 +8211,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’auteur agit en connaissance de cause ; le mobile est indifférent.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Élément moral',
     question:
         'Pour l’atteinte à l’intégrité du cadavre, le mobile (raison) de l’auteur :',
@@ -8225,7 +8225,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’auteur a conscience de porter atteinte au respect dû aux morts ; le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Tentative',
     question: 'La tentative de violation/profanation de sépultures est :',
     options: [
@@ -8238,7 +8238,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : TENTATIVE : NON pour l’infraction de 225-17 (violation/profanation).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte au cadavre — Tentative',
     question: 'La tentative d’atteinte à l’intégrité du cadavre est :',
     options: ['Non punissable', 'Punissable', 'Toujours un crime'],
@@ -8247,7 +8247,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne : TENTATIVE : NON pour l’atteinte à l’intégrité du cadavre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fondement',
     question:
         'L’infraction de dissimulation forcée du visage (imposée en raison du sexe) est prévue par :',
@@ -8261,7 +8261,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : l’infraction est prévue et réprimée à l’article 225-4-10 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Moyens',
     question:
         'Quels moyens peuvent caractériser la dissimulation forcée du visage selon l’article 225-4-10 ?',
@@ -8275,7 +8275,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste 5 moyens : menace, violence, contrainte, abus d’autorité, abus de pouvoir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Condition',
     question:
         'Pour que l’infraction de dissimulation forcée du visage soit constituée, la dissimulation doit être imposée :',
@@ -8289,7 +8289,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la dissimulation doit être imposée sur le fondement du sexe de la victime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Élément moral',
     question:
         'L’élément moral de la dissimulation forcée du visage repose sur :',
@@ -8304,7 +8304,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne : conscience d’exercer une pression + volonté d’imposer à autrui de dissimuler son visage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Menace',
     question: 'Dans le cadre de 225-4-10, la menace se définit comme :',
     options: [
@@ -8317,7 +8317,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : menace = acte d’intimidation inspirant la crainte d’un mal (atteinte à l’intégrité morale).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Violence',
     question:
         'Selon le cours, la violence au sens de 225-4-10 peut être retenue :',
@@ -8332,7 +8332,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la violence peut exister sans contact physique si elle impressionne fortement la victime (choc émotif).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Contrainte',
     question: 'Selon le cours, la contrainte doit être appréciée :',
     options: [
@@ -8345,7 +8345,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la contrainte s’apprécie concrètement selon la capacité de résistance de la victime (référence jurisprudentielle).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Abus d’autorité/pouvoir',
     question: 'L’abus d’autorité ou de pouvoir peut résulter :',
     options: [
@@ -8359,7 +8359,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : autorité = légale (ex : parentale), employeur, ou autorité de fait (ascendant).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fait justificatif (contrainte)',
     question:
         'La victime contrainte à dissimuler son visage peut invoquer une exonération sur le fondement de :',
@@ -8373,7 +8373,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’article 122-2 : pas responsable la personne ayant agi sous une force/contrainte irrésistible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Aggravation',
     question:
         'La dissimulation forcée du visage est aggravée lorsque les faits sont commis :',
@@ -8383,7 +8383,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 225-4-10 al.2 = aggravation lorsque la victime est mineure.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Peines (simple)',
     question:
         'Les peines encourues pour la dissimulation forcée du visage (simple) sont :',
@@ -8397,7 +8397,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-4-10 al.1 = 1 an et 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Peines (aggravée)',
     question:
         'Les peines encourues pour la dissimulation forcée du visage aggravée (victime mineure) sont :',
@@ -8410,7 +8410,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : 225-4-10 al.2 = 2 ans et 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Tentative',
     question: 'La tentative de dissimulation forcée du visage est :',
     options: [
@@ -8422,7 +8422,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Complicité',
     question: 'La complicité de dissimulation forcée du visage est :',
     options: [
@@ -8436,7 +8436,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Fondement',
     question:
         'La rétribution inexistante ou insuffisante du travail d’une personne vulnérable ou dépendante est prévue par :',
@@ -8450,7 +8450,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’article 225-13 du C.P. définit et réprime la rétribution inexistante/insuffisante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Nature des faits',
     question: 'L’article 225-13 vise principalement :',
     options: [
@@ -8464,7 +8464,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : il s’agit d’obtenir des services ; la remise de biens/sommes relève plutôt de l’abus frauduleux (223-15-2).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — “Services” au pluriel',
     question: 'Selon le cours, l’article 225-13 exige :',
     options: [
@@ -8477,7 +8477,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la loi exige une fourniture de services au pluriel, et non une simple prestation isolée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Absence totale',
     question: 'L’absence totale de rémunération au sens de 225-13 s’entend :',
     options: [
@@ -8490,7 +8490,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : absence totale = aucune contrepartie, y compris en nature (logement, nourriture, etc.).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Insuffisance',
     question: 'Pour entrer dans le champ de 225-13, il faut établir :',
     options: [
@@ -8504,7 +8504,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : le non-respect du SMIC ou des heures supp. ne suffit pas ; il faut une disproportion manifeste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Victime',
     question:
         'Pour 225-13, la vulnérabilité ou la dépendance de la victime doit être :',
@@ -8518,7 +8518,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : la vulnérabilité/dépendance doit être apparente ou connue de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Rémunération inexistante/insuffisante — Vulnérabilité (exemples)',
     question: 'Selon le cours, une vulnérabilité peut être liée notamment :',
@@ -8533,7 +8533,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : grossesse, âge, maladie, handicap… mais aussi environnement économique/social/culturel (immigrés, chômeurs, sans-abri…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Dépendance',
     question: 'La dépendance au sens du cours peut être :',
     options: [
@@ -8546,7 +8546,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : dépendance économique (précarité) ou morale (domination : maître/domestique, parents/enfants, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Élément moral',
     question: 'L’élément moral de 225-13 suppose notamment :',
     options: [
@@ -8560,7 +8560,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la double conscience : état de la victime + exploitation de cet état pour obtenir les services.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — 1er degré aggravation',
     question:
         'Parmi les propositions suivantes, laquelle correspond à un premier degré d’aggravation prévu par le cours ?',
@@ -8574,7 +8574,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 225-15 I 1° = à l’égard de plusieurs personnes (1er degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Aggravation mineur',
     question: 'L’aggravation liée au mineur est prévue par :',
     options: [
@@ -8587,7 +8587,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 225-15 II 1° = lorsqu’elle est commise à l’égard d’un mineur (1er degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — 2nd degré aggravation',
     question: 'Le second degré d’aggravation (225-15 III 1°) vise :',
     options: [
@@ -8601,7 +8601,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 225-15 III 1° = plusieurs personnes dont un ou plusieurs mineurs (2nd degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Peines (simple)',
     question: 'Les peines encourues pour 225-13 (simple) sont :',
     options: [
@@ -8614,7 +8614,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-13 al.1 = 5 ans et 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Rémunération inexistante/insuffisante — Peines (aggravée 1er degré)',
     question: 'Les peines encourues pour 225-13 aggravée (1er degré) sont :',
@@ -8628,7 +8628,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : aggravation 1er degré = 7 ans et 200 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Rémunération inexistante/insuffisante — Peines (aggravée 2nd degré)',
     question: 'Les peines encourues pour 225-13 aggravée (2nd degré) sont :',
@@ -8642,7 +8642,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 2nd degré (225-15 III 1°) = 10 ans et 300 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Tentative',
     question: 'La tentative de l’infraction 225-13 est :',
     options: [
@@ -8654,7 +8654,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : TENTATIVE : NON pour 225-13.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Personnes morales',
     question:
         'La responsabilité des personnes morales pour 225-13 est prévue par :',
@@ -8668,7 +8668,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : responsabilité des personnes morales prévue expressément par 225-16 du C.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Fondement',
     question:
         'La soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine est prévue par :',
@@ -8682,7 +8682,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’article 225-14 du C.P. définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Notion de dignité',
     question:
         'La notion de dignité humaine, utilisée à l’article 225-14, est :',
@@ -8696,7 +8696,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le Code pénal ne définit pas la dignité humaine : il appartient aux juges d’en fixer les contours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Travail',
     question: 'Contrairement à l’article 225-13, l’article 225-14 :',
     options: [
@@ -8709,7 +8709,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 225-14 suppose un travail, mais pas nécessairement une rémunération inexistante ou insuffisante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Exemples',
     question:
         'Peuvent caractériser des conditions de travail incompatibles avec la dignité humaine :',
@@ -8723,7 +8723,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite notamment l’insalubrité, les cadences intolérables et les violences morales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Hébergement',
     question: 'Pour être retenu au titre de 225-14, l’hébergement doit :',
     options: [
@@ -8736,7 +8736,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : contrepartie + hébergement destiné à fournir un logement pour y vivre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Victime',
     question:
         'La vulnérabilité ou la dépendance exigée par l’article 225-14 doit être :',
@@ -8750,7 +8750,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Comme pour 225-13, le cours insiste sur le caractère apparent ou connu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Élément moral',
     question: 'L’élément moral de 225-14 suppose notamment :',
     options: [
@@ -8763,7 +8763,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise la double conscience exigée chez l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Peines (simple)',
     question: 'Les peines encourues pour 225-14 (simple) sont :',
     options: [
@@ -8775,7 +8775,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours indique : 225-14 = 7 ans et 200 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Aggravation mineur',
     question:
         'Lorsque les faits sont commis à l’égard d’un mineur, la qualification devient :',
@@ -8789,7 +8789,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 225-15 I 2° et II 2° = aggravation liée au mineur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soumission à des conditions indignes — Crime',
     question:
         'La soumission à des conditions indignes devient un crime lorsque :',
@@ -8805,7 +8805,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Fondement',
     question: 'L’atteinte à l’intégrité du cadavre est prévue par :',
     options: [
@@ -8818,7 +8818,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 225-17 al.1 réprime l’atteinte à l’intégrité du cadavre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Objet',
     question: 'L’infraction d’atteinte à l’intégrité du cadavre protège :',
     options: [
@@ -8831,7 +8831,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’infraction peut être réalisée indépendamment de l’inhumation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Exemples',
     question: 'Peuvent constituer une atteinte à l’intégrité du cadavre :',
     options: [
@@ -8844,7 +8844,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste de nombreux exemples, hors actes légalement autorisés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Élément moral',
     question:
         'L’élément moral de l’atteinte à l’intégrité du cadavre repose sur :',
@@ -8858,7 +8858,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : le mobile importe peu, seule compte la conscience de l’atteinte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intégrité du cadavre — Peines',
     question:
         'Les peines encourues pour atteinte à l’intégrité du cadavre sont :',
@@ -8872,7 +8872,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation de sépulture — Fondement',
     question:
         'La violation ou la profanation de tombeaux, sépultures ou urnes cinéraires est prévue par :',
@@ -8886,7 +8886,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 225-17 al.2 vise la violation ou la profanation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation — Actes',
     question: 'Constituent des actes de violation ou de profanation :',
     options: [
@@ -8899,7 +8899,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : bris de pierre tombale, inscriptions, retrait de cercueil, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation — Aggravation',
     question: 'La violation ou profanation est aggravée lorsque :',
     options: [
@@ -8912,7 +8912,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 225-17 al.3 = circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Fondement',
     question:
         'L’infraction de traite des êtres humains est définie et réprimée par :',
@@ -8927,7 +8927,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Actes matériels',
     question:
         'Parmi les actes suivants, lequel peut constituer un acte matériel de traite ?',
@@ -8942,7 +8942,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Mise à disposition',
     question: 'La traite des êtres humains est constituée même si :',
     options: [
@@ -8956,7 +8956,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Mineur',
     question:
         'Concernant un mineur, la traite des êtres humains est constituée :',
@@ -8971,7 +8971,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Consentement',
     question: 'Le consentement de la victime en matière de traite :',
     options: [
@@ -8985,7 +8985,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Objectif criminel',
     question:
         'L’un des objectifs criminels expressément visés par la traite est :',
@@ -9000,7 +9000,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Bande organisée',
     question: 'La traite commise en bande organisée entraîne :',
     options: [
@@ -9014,7 +9014,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Tentative',
     question: 'La tentative de traite des êtres humains est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -9023,7 +9023,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Exemption de peine',
     question: 'L’exemption de peine en matière de traite suppose que :',
     options: [
@@ -9037,7 +9037,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Définition',
     question: 'Le proxénétisme consiste notamment à :',
     options: [
@@ -9051,7 +9051,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Aide',
     question: 'L’aide à la prostitution d’autrui suppose :',
     options: [
@@ -9064,7 +9064,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Profit',
     question: 'Partager les produits de la prostitution signifie :',
     options: [
@@ -9078,7 +9078,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Incitation',
     question: 'L’incitation à la prostitution est constituée même si :',
     options: [
@@ -9091,7 +9091,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Aggravation',
     question: 'Le proxénétisme est aggravé lorsqu’il est commis :',
     options: [
@@ -9104,7 +9104,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Proxénétisme — Bande organisée',
     question: 'Le proxénétisme commis en bande organisée est puni de :',
     options: [
@@ -9117,7 +9117,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Fondement',
     question: 'La définition générale de la discrimination figure à :',
     options: [
@@ -9130,7 +9130,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Situations incriminées',
     question: 'Parmi les situations suivantes, laquelle est visée par 225-2 ?',
     options: [
@@ -9144,7 +9144,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Élément moral',
     question: 'L’élément moral du délit de discrimination suppose :',
     options: [
@@ -9158,7 +9158,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Test',
     question: 'Les tests de discrimination sont :',
     options: [
@@ -9170,7 +9170,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’article 225-3-1 et la jurisprudence admettent ces tests.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Critères',
     question:
         'Parmi les critères suivants, lequel est expressément visé par l’article 225-1 du Code pénal ?',
@@ -9184,7 +9184,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 225-1 énumère limitativement les critères prohibés, dont l’orientation sexuelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Liste des critères',
     question:
         'La liste des critères de discrimination prévue à l’article 225-1 est :',
@@ -9194,7 +9194,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Seuls les critères expressément mentionnés par la loi peuvent être retenus.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Distinction licite',
     question:
         'Une différence de traitement n’est pas constitutive de discrimination lorsqu’elle :',
@@ -9208,7 +9208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’article 225-3 prévoit des cas de justification objective.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Refus de bien ou service',
     question:
         'Refuser l’accès à un bien ou à un service pour un motif discriminatoire constitue :',
@@ -9218,7 +9218,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le refus discriminatoire est expressément incriminé par l’article 225-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Personne morale',
     question:
         'Les personnes morales peuvent être pénalement responsables du délit de discrimination :',
@@ -9228,7 +9228,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La responsabilité pénale des personnes morales est prévue par l’article 225-4.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Tentative',
     question: 'La tentative de discrimination est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -9236,7 +9236,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’article 225-3-1 prévoit expressément la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Test situationnel',
     question: 'Le test de discrimination permet principalement de :',
     options: [
@@ -9250,7 +9250,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Fondement',
     question: 'L’infraction de harcèlement sexuel est prévue par :',
     options: [
@@ -9263,7 +9263,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le harcèlement sexuel est spécifiquement réprimé par l’article 222-33-2-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Formes',
     question: 'Le harcèlement sexuel peut résulter :',
     options: [
@@ -9275,7 +9275,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte vise aussi bien les propos que les comportements.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Répétition',
     question: 'Le harcèlement sexuel est constitué en cas de faits :',
     options: [
@@ -9288,7 +9288,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Un acte unique peut suffire lorsqu’il est assimilable à un chantage sexuel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Chantage',
     question:
         'Le fait d’imposer un acte unique en échange d’un avantage constitue :',
@@ -9301,7 +9301,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte prévoit expressément cette hypothèse.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Élément moral',
     question: 'L’élément moral du harcèlement sexuel suppose :',
     options: [
@@ -9314,7 +9314,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le mobile importe peu : seule la conscience des faits est exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Aggravation',
     question: 'Le harcèlement sexuel est aggravé lorsqu’il est commis :',
     options: [
@@ -9327,7 +9327,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’abus d’autorité constitue une circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Peines',
     question: 'Les peines encourues pour harcèlement sexuel simple sont :',
     options: [
@@ -9340,7 +9340,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : peine de droit commun prévue par l’article 222-33-2-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Harcèlement sexuel — Tentative',
     question: 'La tentative de harcèlement sexuel est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -9349,7 +9349,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Discrimination — Peines',
     question: 'La peine encourue pour discrimination simple est :',
     options: [
@@ -9363,7 +9363,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ou profanation — Peines aggravées',
     question: 'Les peines encourues en cas de profanation aggravée sont :',
     options: [
@@ -9377,7 +9377,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Rémunération inexistante/insuffisante — Complicité',
     question: 'La complicité de 225-13 est :',
     options: [
@@ -9391,7 +9391,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation/profanation — Complicité',
     question:
         'La complicité de violation/profanation (tombeaux/sépultures/urnes/monuments) est :',
@@ -9406,7 +9406,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Définition',
     question: 'La dissimulation forcée du visage constitue :',
     options: [
@@ -9419,7 +9419,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte qualifie la dissimulation imposée comme une forme de violence exercée contre la victime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Victime',
     question: 'Cette infraction peut viser :',
     options: [
@@ -9432,7 +9432,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 225-4-10 vise l’imposition à une ou plusieurs personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Sexe',
     question: 'La dissimulation doit être imposée :',
     options: [
@@ -9449,7 +9449,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DISSIMULATION FORCÉE DU VISAGE — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Moyens',
     question:
         'Lequel des moyens suivants n’est PAS prévu par l’article 225-4-10 CP ?',
@@ -9459,7 +9459,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Les moyens énumérés sont : menace, violence, contrainte, abus d’autorité ou de pouvoir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Menace',
     question: 'La menace se caractérise juridiquement par :',
     options: [
@@ -9472,7 +9472,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La menace constitue une atteinte à l’intégrité morale (Cass. crim., 11 juin 1937).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Violence',
     question: 'La violence peut être caractérisée :',
     options: [
@@ -9485,7 +9485,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence admet la violence sans contact physique si elle provoque un choc émotif.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Contrainte',
     question: 'La contrainte s’apprécie principalement :',
     options: [
@@ -9502,7 +9502,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DISSIMULATION FORCÉE DU VISAGE — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Fait justificatif',
     question:
         'La victime contrainte de dissimuler son visage peut être exonérée pénalement sur le fondement :',
@@ -9516,7 +9516,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La contrainte irrésistible constitue un fait justificatif (art. 122-2 CP).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dissimulation forcée du visage — Aggravation',
     question:
         'La circonstance aggravante est constituée lorsque les faits sont commis :',
@@ -9530,7 +9530,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // RÉTRIBUTION INSUFFISANTE — FACILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Fondement',
     question: 'La rétribution inexistante ou insuffisante est prévue par :',
     options: [
@@ -9542,7 +9542,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’article 225-13 définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Objet',
     question: 'Cette infraction vise :',
     options: [
@@ -9559,7 +9559,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // RÉTRIBUTION INSUFFISANTE — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Rémunération',
     question: 'L’absence totale de rémunération suppose :',
     options: [
@@ -9572,7 +9572,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Aucune contrepartie ne doit exister, y compris logement ou nourriture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Vulnérabilité',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -9585,7 +9585,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La vulnérabilité ou dépendance doit être apparente ou connue de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions de travail/hébergement indignes — Fondement',
     question:
         'La soumission d’une personne vulnérable ou dépendante à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine est prévue par :',
@@ -9599,7 +9599,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 225-14 du C.P. définit et réprime la soumission à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Victime',
     question: 'Pour l’article 225-14 CP, la victime doit être :',
     options: [
@@ -9612,7 +9612,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’infraction vise une personne dont la vulnérabilité ou l’état de dépendance est apparent ou connu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Champs',
     question: 'L’article 225-14 CP vise :',
     options: [
@@ -9625,7 +9625,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte vise la soumission à des conditions de travail ou d’hébergement incompatibles avec la dignité humaine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Tentative',
     question:
         'La tentative de l’infraction prévue par l’article 225-14 CP est :',
@@ -9634,7 +9634,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : TENTATIVE : NON.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Complicité',
     question:
         'La complicité de l’infraction prévue à l’article 225-14 CP est :',
@@ -9652,7 +9652,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 225-14 — CONDITIONS INDIGNES — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Dignité humaine',
     question:
         'Selon le cours, la notion de dignité humaine en droit français est affirmée comme principe à valeur constitutionnelle par :',
@@ -9666,7 +9666,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : Cons. const., 27 juillet 1994 : principe à valeur constitutionnelle de sauvegarde de la dignité humaine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Dignité humaine',
     question: 'Est incompatible avec la dignité humaine ce qui :',
     options: [
@@ -9680,7 +9680,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’incompatibilité avec la dignité humaine correspond à ce qui abaisse/avilit l’être humain.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail',
     question: 'Contrairement à l’article 225-13 CP, l’article 225-14 CP :',
     options: [
@@ -9693,7 +9693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         '225-14 vise les conditions indignes, indépendamment de la rémunération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail',
     question:
         'Parmi les éléments suivants, lequel peut caractériser des conditions de travail incompatibles avec la dignité humaine ?',
@@ -9707,7 +9707,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : insalubrité, manque d’aération, cadences intolérables, durée excessive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail',
     question:
         'Les relations de travail (insultes, brimades, comportements vexatoires) peuvent être retenues au titre :',
@@ -9721,7 +9721,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’atteinte peut résulter d’insultes/brimades assimilables à des violences morales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Hébergement',
     question:
         'Pour être qualifié d’« hébergement » au sens de l’article 225-14 CP, il faut notamment :',
@@ -9735,7 +9735,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exige : contrepartie (loyer/avantage) et hébergement sur un certain temps (logement pour y vivre).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Hébergement',
     question:
         'La contrepartie de l’hébergement au sens de l’article 225-14 CP peut être :',
@@ -9750,7 +9750,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la contrepartie peut être un loyer ou des avantages en nature.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Vulnérabilité',
     question:
         'La vulnérabilité/dépendance au sens de l’article 225-14 CP doit être :',
@@ -9764,7 +9764,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Condition centrale : vulnérabilité/dépendance apparente ou connue de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Vulnérabilité',
     question: 'La vulnérabilité peut résulter :',
     options: [
@@ -9778,7 +9778,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise : grossesse, âge, maladie, handicap mais aussi immigrés, chômeurs, sans-abri, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Dépendance',
     question: 'La dépendance au sens du cours peut être :',
     options: [
@@ -9795,7 +9795,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 225-14 — CONDITIONS INDIGNES — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Élément moral',
     question: 'L’élément moral de l’article 225-14 CP suppose notamment :',
     options: [
@@ -9809,7 +9809,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exige : connaissance de la vulnérabilité/dépendance et connaissance de l’incompatibilité avec la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail forcé',
     question:
         'Le cours indique que le travail forcé est en soi incompatible avec la dignité humaine et renvoie notamment à :',
@@ -9823,7 +9823,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la Convention OIT du 28 juin 1930 : travail exigé sous menace d’une peine et non offert de plein gré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Travail forcé',
     question: 'Dans le cours, la notion de travail forcé implique :',
     options: [
@@ -9837,7 +9837,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'C’est la définition reprise du texte OIT mentionnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Hébergement',
     question:
         'Le cours précise que des conditions d’hébergement indignes peuvent être caractérisées notamment par :',
@@ -9852,7 +9852,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste ces exemples comme causes possibles d’hébergement contraire à la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Cumul',
     question:
         'Selon la note du cours, les délits de l’article 225-14 CP peuvent :',
@@ -9867,7 +9867,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les deux délits peuvent être caractérisés simultanément et retenus avec d’autres infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Répression',
     question: 'La qualification « simple » de l’article 225-14 CP est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -9876,7 +9876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 225-14 CP constitue un délit en qualification simple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Peines (simple)',
     question:
         'Les peines principales encourues pour la qualification simple (225-14) sont :',
@@ -9894,7 +9894,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 225-15 — CIRCONSTANCES AGGRAVANTES (1er degré) — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (1er degré)',
     question:
         'Pour l’article 225-14 CP, le premier degré d’aggravation vise notamment :',
@@ -9908,7 +9908,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 225-15 I 2° (plusieurs personnes) et 225-15 II 2° (mineur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (1er degré)',
     question:
         'Le premier degré d’aggravation de l’article 225-14 CP est prévu par :',
@@ -9926,7 +9926,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 225-15 — AGGRAVATION (2nd degré) — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (2nd degré)',
     question:
         'Le second degré d’aggravation (crime) pour 225-14 CP est prévu par :',
@@ -9939,7 +9939,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne : second degré = 225-15 III 2°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Aggravation (2nd degré)',
     question: 'Le second degré d’aggravation suppose notamment :',
     options: [
@@ -9952,7 +9952,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 225-15 III 2° : plusieurs personnes dont au moins un mineur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Peines (1er degré)',
     question:
         'Les peines principales prévues en 1er degré d’aggravation (225-15 I/II) pour 225-14 sont :',
@@ -9966,7 +9966,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression indique 10 ans et 300 000 € pour le 1er degré d’aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Peines (2nd degré)',
     question:
         'Les peines principales prévues en 2nd degré d’aggravation (crime) pour 225-14 sont :',
@@ -9984,7 +9984,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 225-16 — PERSONNES MORALES — MOYENNE / DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Personnes morales',
     question:
         'La responsabilité des personnes morales pour les infractions 225-14 / 225-15 est prévue :',
@@ -9998,7 +9998,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : responsabilité des personnes morales prévue expressément par l’article 225-16.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Personnes morales',
     question:
         'Parmi les peines complémentaires possibles pour les personnes morales (cours), on trouve notamment :',
@@ -10012,7 +10012,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours renvoie aux peines de l’article 131-39 : dissolution, interdiction d’exercer, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Fondement',
     question: 'La traite des êtres humains est définie et réprimée par :',
     options: [
@@ -10025,7 +10025,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 225-4-1 du C.P. définit et réprime la traite des êtres humains.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Actes matériels',
     question: 'La traite des êtres humains suppose notamment un acte tel que :',
     options: [
@@ -10038,7 +10038,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte vise le recrutement, le transport, le transfert, l’hébergement ou l’accueil à des fins d’exploitation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation',
     question: 'L’exploitation au sens de la traite consiste notamment à :',
     options: [
@@ -10052,7 +10052,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit l’exploitation comme la mise à disposition de la victime pour permettre certaines infractions listées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Mineur',
     question:
         'La traite des êtres humains à l’égard d’un mineur est constituée :',
@@ -10066,7 +10066,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : pour un mineur, la traite est constituée même si aucune circonstance 1° à 4° n’est caractérisée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Tentative',
     question: 'La tentative de la traite des êtres humains est :',
     options: ['Punissable', 'Non punissable', 'Une simple contravention'],
@@ -10075,7 +10075,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : TENTATIVE : OUI, prévue expressément à l’article 225-4-7 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Tentative',
     question: 'La tentative de traite des êtres humains est prévue par :',
     options: [
@@ -10088,7 +10088,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la tentative est prévue expressément par l’article 225-4-7 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Complicité',
     question: 'La complicité en matière de traite des êtres humains est :',
     options: [
@@ -10105,7 +10105,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TRAITE — MOYENNE (circonstances 1° à 4°, notions clés)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstances',
     question:
         'Pour un majeur, la traite est constituée si l’acte est commis dans :',
@@ -10119,7 +10119,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : à l’égard d’un majeur, la traite suppose au moins une des circonstances 1° à 4°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 1°',
     question: 'La circonstance 1° de l’article 225-4-1 I vise notamment :',
     options: [
@@ -10132,7 +10132,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste : menace/contrainte/violence/manœuvre dolosive visant la victime, sa famille ou une personne en relation habituelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Manœuvre dolosive',
     question: 'Dans le cours, la manœuvre dolosive correspond à :',
     options: [
@@ -10146,7 +10146,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la manœuvre dolosive comme des agissements trompeurs (ruse) conduisant la victime à être abusée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 2°',
     question: 'La circonstance 2° de l’article 225-4-1 I vise :',
     options: [
@@ -10160,7 +10160,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’ascendant (légitime/naturel/adoptif) ou une personne ayant autorité ou abusant de l’autorité que lui confèrent ses fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Autorité',
     question: 'Selon le cours, l’autorité visée peut être :',
     options: [
@@ -10174,7 +10174,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : autorité de droit (tuteur), de fait (concubin), ou conférée par les fonctions (professeur, médecin).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 3°',
     question: 'La circonstance 3° de l’article 225-4-1 I correspond à :',
     options: [
@@ -10188,7 +10188,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la vulnérabilité doit être due à des causes limitatives (âge, maladie, infirmité, déficience physique/psychique, grossesse) et être apparente ou connue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Circonstance 4°',
     question: 'La circonstance 4° de l’article 225-4-1 I vise :',
     options: [
@@ -10202,7 +10202,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la traite peut être constituée en échange d’une rémunération/avantage (ou promesse) convenu initialement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Rémunération',
     question:
         'Selon le cours, si l’opération est réalisée à titre gratuit (sans échange) :',
@@ -10216,7 +10216,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’échange est nécessaire ; à titre gratuit, la circonstance 4° n’est pas remplie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Mise à disposition',
     question:
         'Concernant la « mise à disposition », le cours précise qu’elle peut être :',
@@ -10230,7 +10230,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la mise à disposition peut être pour l’auteur (ajout de « à sa disposition ») ou pour un tiers non identifié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Objectif criminel',
     question:
         'Selon le cours, la traite n’est constituée que si l’objectif vise :',
@@ -10248,7 +10248,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TRAITE — DIFFICILE (liste exploitation, aggravations, peines, exemption/réduction)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation (liste)',
     question:
         'Parmi les éléments suivants, lequel fait partie de la liste d’exploitation visée par le cours ?',
@@ -10258,7 +10258,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite expressément l’exploitation de la mendicité parmi les objectifs criminels listés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation (liste)',
     question:
         'La traite peut viser la mise à disposition de la victime afin de permettre :',
@@ -10272,7 +10272,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours inclut le prélèvement d’organe dans la liste limitative des exploitations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation (liste)',
     question: 'Selon le cours, la liste d’exploitation inclut notamment :',
     options: [
@@ -10286,7 +10286,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste ces objectifs criminels parmi ceux visés par la traite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Exploitation',
     question:
         'Pour que la traite des êtres humains soit constituée, il est nécessaire que les infractions visées soient effectivement commises :',
@@ -10296,7 +10296,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’il n’est pas nécessaire que les infractions visées soient commises : la mise à disposition à cette fin suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Contraindre à commettre',
     question:
         'Lorsque la traite vise le fait de contraindre la victime à commettre un crime ou un délit, le texte ne vise pas :',
@@ -10306,7 +10306,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que « tout crime ou délit » n’a pas vocation à s’appliquer aux contraventions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Élément moral',
     question: 'L’élément moral exige notamment :',
     options: [
@@ -10320,7 +10320,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : infraction intentionnelle = l’auteur sait à quoi la victime est destinée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite des êtres humains — Consentement',
     question:
         'Selon le cours, l’incrimination de traite repose sur la notion de consentement de la victime :',
@@ -10338,7 +10338,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // AGGRAVATIONS — 225-4-2 / 225-4-3 / 225-4-4 — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation délictuelle',
     question:
         'La traite des êtres humains aggravée délictuelle (mineur sans autre circonstance) est prévue par :',
@@ -10352,7 +10352,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne : traite aggravée délictuelle (mineur même sans circonstances 1° à 4°) = 225-4-1 II.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question:
         'La traite aggravée délictuelle peut être caractérisée lorsqu’elle est commise :',
@@ -10366,7 +10366,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise : 225-4-2 I lorsque la traite est commise dans deux des circonstances 1° à 4°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question: 'La traite aggravée criminelle est notamment prévue par :',
     options: [
@@ -10383,7 +10383,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // AGGRAVATIONS — DIFFICILE (BO, tortures, liste 225-4-2 I)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question:
         'La traite des êtres humains commise en bande organisée est prévue par :',
@@ -10396,7 +10396,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite : 225-4-3 = traite commise en bande organisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation',
     question:
         'La traite des êtres humains commise en recourant à des tortures ou actes de barbarie est prévue par :',
@@ -10410,7 +10410,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 225-4-4 = traite commise en recourant à des tortures ou actes de barbarie.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Parmi les circonstances supplémentaires de l’article 225-4-2 I, on trouve notamment :',
@@ -10424,7 +10424,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’utilisation d’un réseau de communication électronique pour diffuser des messages à un public non déterminé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Selon le cours, une circonstance aggravante peut être retenue lorsque les faits exposent directement la victime :',
@@ -10438,7 +10438,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite explicitement cette circonstance aggravante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Selon le cours, la traite peut être aggravée lorsqu’elle est commise :',
@@ -10453,7 +10453,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste cette circonstance aggravante liée aux fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question:
         'Le cours mentionne une aggravation lorsque les violences ont causé :',
@@ -10467,7 +10467,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : violences ayant causé une ITT de plus de 8 jours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Aggravation (225-4-2 I)',
     question: 'Selon le cours, la traite peut être aggravée lorsque :',
     options: [
@@ -10484,7 +10484,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // RÉPRESSION — PEINES — MOYENNE / DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (simple)',
     question: 'La traite des êtres humains « simple » (225-4-1) est punie de :',
     options: [
@@ -10497,7 +10497,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-4-1 (simple) = 7 ans et 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (aggravée délictuelle)',
     question: 'La traite aggravée délictuelle (mineur) est punie de :',
     options: [
@@ -10510,7 +10510,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-4-1 II = 10 ans et 1 500 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (aggravée criminelle)',
     question: 'La traite aggravée criminelle (225-4-2 II) est punie de :',
     options: [
@@ -10523,7 +10523,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-4-2 II = 15 ans de réclusion et 1 500 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (bande organisée)',
     question: 'La traite commise en bande organisée (225-4-3) est punie de :',
     options: [
@@ -10536,7 +10536,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 225-4-3 = 20 ans et 3 000 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Peines (tortures / barbarie)',
     question:
         'La traite commise en recourant à des tortures ou actes de barbarie (225-4-4) est punie de :',
@@ -10554,7 +10554,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 225-4-5 — PEINES PLUS ÉLEVÉES SI CRIME/DELIT SOUS-JACENT + GRAVE — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Règle spéciale de peine',
     question:
         'Selon l’article 225-4-5, si le crime/délit commis (ou devant être commis) contre la victime est puni d’une peine supérieure :',
@@ -10573,7 +10573,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PERSONNES MORALES — 225-4-6 — MOYENNE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Personnes morales',
     question:
         'La responsabilité des personnes morales en matière de traite est prévue par :',
@@ -10591,7 +10591,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EXEMPTION / RÉDUCTION DE PEINE — 225-4-9 — DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Exemption de peine',
     question: 'L’exemption de peine en matière de traite est prévue par :',
     options: [
@@ -10603,7 +10603,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : exemption de peine = 225-4-9 al.1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Exemption de peine',
     question: 'Pour bénéficier de l’exemption de peine, il faut notamment :',
     options: [
@@ -10617,7 +10617,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours résume : exemption au stade de la tentative + avertissement de l’autorité + éviter la réalisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Réduction de peine',
     question: 'La réduction de peine en matière de traite est prévue par :',
     options: [
@@ -10629,7 +10629,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : réduction de peine = 225-4-9 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Réduction de peine',
     question:
         'Selon le cours, la réduction de peine est accordée si l’auteur/complice :',
@@ -10644,7 +10644,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit les conditions : faire cesser / éviter mort ou infirmité permanente / identifier autres auteurs ou complices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Traite — Réduction de peine',
     question:
         'Quand la peine encourue est la réclusion criminelle à perpétuité, la réduction prévue par 225-4-9 al.2 la ramène à :',
@@ -10657,7 +10657,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : si perpétuité, elle est ramenée à 20 ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions indignes — Personnes morales',
     question: 'Le cours précise une peine spécifique possible :',
     options: [
@@ -10683,7 +10683,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
 
   // ---------- 222-17 : CONDITIONS DE CONSTITUTION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Condition de punissabilité',
     question: 'La menace 222-17 est punissable lorsqu’elle est :',
     options: [
@@ -10695,7 +10695,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 exige la réitération OU la matérialisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Domaine',
     question: '222-17 vise la menace de :',
     options: [
@@ -10709,7 +10709,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 exclut les menaces de violences (tentative non réprimée) → R.623-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Menace à la cantonade',
     question: 'Une menace « à la cantonade » (non dirigée) :',
     options: [
@@ -10721,7 +10721,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Réitération',
     question: 'La réitération suppose :',
     options: [
@@ -10733,7 +10733,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : menace répétée au moins deux fois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Réitération (même personne)',
     question: 'Pour être punissables, les menaces réitérées doivent viser :',
     options: [
@@ -10745,7 +10745,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : réitération à l’égard de la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Matérialisation',
     question: 'La matérialisation peut se faire par :',
     options: [
@@ -10757,7 +10757,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : écrit / image / objet.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Gestuelle seule',
     question: 'Une gestuelle seule (mimer une arme sans support) :',
     options: [
@@ -10769,7 +10769,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : gestuelle seule exclue de la matérialisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Élément moral',
     question: 'L’élément moral de 222-17 est :',
     options: [
@@ -10784,7 +10784,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-18 : CONDITION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Définition',
     question: '222-18 vise la menace de crime ou délit contre les personnes :',
     options: [
@@ -10796,7 +10796,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 = menace avec condition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Domaine',
     question: 'Contrairement à 222-17, 222-18 vise :',
     options: [
@@ -10810,7 +10810,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18 couvre tout délit contre les personnes, sans condition “tentative punissable”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Moyen',
     question: 'Le moyen de la menace dans 222-18 est :',
     options: [
@@ -10822,7 +10822,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : moyen indéterminé, pas besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Condition',
     question: 'La condition peut être :',
     options: [
@@ -10834,7 +10834,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : obligation de faire ou de ne pas faire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Élément moral',
     question: 'L’élément moral de 222-18 correspond à :',
     options: [
@@ -10849,7 +10849,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-16 : APPELS / MESSAGES / AGRESSIONS SONORES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Champ',
     question: '222-16 réprime notamment :',
     options: [
@@ -10862,7 +10862,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : appels malveillants réitérés, messages malveillants réitérés, agressions sonores.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération (minimum)',
     question: 'Pour caractériser la réitération (222-16), il faut au moins :',
     options: ['2 appels successifs', '5 appels', '10 appels'],
@@ -10870,7 +10870,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 2 appels successifs suffisent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Agressions sonores',
     question: 'Les agressions sonores (222-16) exigent :',
     options: [
@@ -10883,7 +10883,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : intention “en vue de troubler”, pas de réitération exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Aggravation',
     question: '222-16 est aggravé lorsque commis par :',
     options: [
@@ -10897,7 +10897,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-15-1 : EMBUSCADE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Définition',
     question: 'L’embuscade (222-15-1) est :',
     options: [
@@ -10911,7 +10911,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : guet-apens + but de violences avec arme (usage ou menace).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Stade',
     question: '222-15-1 permet d’intervenir :',
     options: [
@@ -10923,7 +10923,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : infraction préparée, violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Tentative',
     question: 'La tentative du délit d’embuscade est :',
     options: [
@@ -10935,7 +10935,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : l’infraction est antérieure à la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Aggravation',
     question: 'L’embuscade est aggravée lorsqu’elle est commise :',
     options: ['En réunion', 'Avec ITT > 8 jours', 'Avec préméditation'],
@@ -10945,7 +10945,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-14 : VIOLENCES HABITUELLES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Habitude',
     question: 'La notion d’habitude suppose :',
     options: [
@@ -10957,7 +10957,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : répétition des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violence psychologique',
     question: 'Les violences peuvent être constituées :',
     options: [
@@ -10971,7 +10971,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-14-5 : FORCES DE SÉCURITÉ / ÉLUS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Victimes',
     question: '222-14-5 vise notamment :',
     options: [
@@ -10984,7 +10984,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : liste (gendarmerie, police, municipale, douanes, pompiers, AP, élus...).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT (seuil)',
     question: '222-14-5 distingue :',
     options: [
@@ -11000,7 +11000,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // B) 60 CAS PRATIQUES — CONCOURS (ÉNONCÉS LONGS, PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-17 vs R.623-1',
     question:
         'En dispute, X dit une seule fois : « Je vais te casser la gueule ». Aucune lettre, aucun SMS, aucune répétition. Texte le plus adapté ?',
@@ -11010,7 +11010,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 exclut les menaces de violences (tentative non punissable) → R.623-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-17 (matérialisée)',
     question:
         'X envoie un seul courrier : « Je vais te brûler ». Pas d’autre message. Qualification principale ?',
@@ -11023,7 +11023,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : écrit = matérialisation, pas besoin de répétition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-18 (condition explicite)',
     question:
         'X dit : « Donne-moi 500 € sinon je te tue ». Une seule fois, oral. Qualification ?',
@@ -11033,7 +11033,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : condition = injonction “donne-moi…”, moyen indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-18 (condition + pas de mort)',
     question:
         'X dit : « Si tu ne retires pas ta plainte, je te frappe ». Une seule fois. Qualification la plus adaptée ?',
@@ -11047,7 +11047,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18 vise tout délit contre les personnes, sans exigence “tentative punissable”, dès lors qu’il y a condition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-16 (messages)',
     question:
         'Pendant 2 semaines, X envoie 2 SMS par jour : insultes, propos humiliants, aucun chantage. Qualification ?',
@@ -11060,7 +11060,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : messages malveillants réitérés = 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-16 (agressions sonores)',
     question:
         'Un voisin met la musique très fort chaque nuit “pour faire craquer” la voisine. Qualification la plus adaptée ?',
@@ -11074,7 +11074,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : agressions sonores = volonté de troubler la tranquillité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-15-1 (embuscade)',
     question:
         'Deux individus repèrent les horaires d’un agent pénitentiaire, l’attendent chaque soir près de son domicile avec un couteau “pour lui faire peur”. Ils sont interpellés avant toute attaque. Qualification ?',
@@ -11088,7 +11088,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : guet-apens + but de menacer/commettre violences avec arme ; violences non réalisées OK.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-15-1 (si passage à l’acte)',
     question:
         'Même situation, mais ils sortent le couteau et le menacent réellement. On poursuit :',
@@ -11102,7 +11102,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-15-1 vise les violences en voie de réalisation ; si passage à l’action → textes des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — Tortures/Barbarie (critère)',
     question:
         'Une victime est soumise à des actes d’une gravité exceptionnelle, dépassant de simples violences, visant à nier sa dignité. Qualification ?',
@@ -11115,7 +11115,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : gravité exceptionnelle + volonté de nier dignité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-14 (habitude)',
     question:
         'X frappe sa compagne “souvent”, sur plusieurs mois. Certificats médicaux établissent des ITT variables. Texte principal ?',
@@ -11128,7 +11128,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : répétition + lien conjugal = 222-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-14-5 (élu local)',
     question:
         'Après une décision municipale, un conseiller municipal est frappé “en représailles”. La qualité était connue. Texte ?',
@@ -11144,7 +11144,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // (Pour rester lisible ici, je te mets un gros pack de 50
   //  sous forme condensée — mêmes règles, 3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — Menace indirecte',
     question:
         'X menace Y en passant par Z (“dis-lui que je vais le tuer”). Condition 222-17 ?',
@@ -11157,7 +11157,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : menace directe ou indirecte (tiers/rapportée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-17 (infraction pas précisée)',
     question:
         'X écrit : “Tu vas payer, tu vas mourir” sans préciser comment. 222-17 possible ?',
@@ -11171,7 +11171,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : l’infraction menacée n’a pas à être expressément désignée si le sens est clair.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-16 (contenu vs fréquence)',
     question:
         'X appelle 30 fois sans parler. Le caractère malveillant peut se déduire :',
@@ -11185,7 +11185,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : malveillance déductible de la multiplication des appels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-18 (condition implicite)',
     question:
         'X dit : “Si tu continues à témoigner, tu vas y passer”. Qualification la plus adaptée ?',
@@ -11195,7 +11195,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : condition peut être formulée comme un ordre/contrainte (faire/ne pas faire).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-15-1 (victime proche)',
     question:
         'On attend le fils d’un policier à la sortie de l’école pour lui “mettre un couteau sous la gorge” en raison du métier du père. Texte ?',
@@ -11209,7 +11209,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // D) 20 Q "RÉFLEXE PEINE" (chronométré concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-17 al.1',
     question: '222-17 al.1 :',
     options: ['6 mois + 7 500 €', '1 an + 15 000 €', '3 ans + 45 000 €'],
@@ -11217,7 +11217,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : barème 222-17 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-17 al.2',
     question: '222-17 al.2 :',
     options: ['3 ans + 45 000 €', '5 ans + 75 000 €', '7 ans + 100 000 €'],
@@ -11225,7 +11225,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : menace de mort 222-17 al.2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-16 (simple)',
     question: '222-16 (simple) :',
     options: ['1 an + 15 000 €', '6 mois + 7 500 €', '3 ans + 45 000 €'],
@@ -11233,7 +11233,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : barème 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-15-1 (simple)',
     question: '222-15-1 (simple) :',
     options: ['5 ans + 75 000 €', '7 ans + 100 000 €', '3 ans + 45 000 €'],
@@ -11241,7 +11241,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : barème 222-15-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-1',
     question: '222-1 (tortures/barbarie) :',
     options: [
@@ -11254,7 +11254,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Définition',
     question:
         'La menace de commettre un crime ou un délit contre les personnes constitue une infraction lorsque :',
@@ -11269,7 +11269,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-17 CP exige une réitération ou une matérialisation de la menace.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Fondement légal',
     question:
         'La menace de commettre un crime ou un délit contre les personnes est prévue par :',
@@ -11283,7 +11283,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 222-17 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Nature',
     question: 'Selon la jurisprudence, une menace est :',
     options: [
@@ -11296,7 +11296,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Définition issue de la jurisprudence (Cass. crim., 11 juin 1937).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Infraction visée',
     question: 'La menace doit porter sur :',
     options: [
@@ -11310,7 +11310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte exclut les menaces portant sur des violences dont la tentative n’est pas punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Direction',
     question: 'La menace doit être :',
     options: [
@@ -11323,7 +11323,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Une menace faite à la cantonade ne constitue pas l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Réitération',
     question: 'La réitération de la menace suppose :',
     options: [
@@ -11336,7 +11336,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence exige une répétition à l’égard de la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Matérialisation',
     question: 'Une menace matérialisée peut l’être notamment par :',
     options: [
@@ -11348,7 +11348,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise les modes de matérialisation admis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Élément moral',
     question: 'L’élément moral de la menace consiste en :',
     options: [
@@ -11360,7 +11360,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Il suffit d’avoir conscience d’impressionner la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Aggravation',
     question: 'La menace est aggravée lorsqu’elle constitue :',
     options: [
@@ -11372,7 +11372,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-17 alinéa 2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Tentative',
     question: 'La tentative de menace est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -11384,7 +11384,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMBUSCADE (222-15-1 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Définition',
     question: 'L’embuscade consiste à :',
     options: [
@@ -11397,7 +11397,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours définit l’embuscade comme un guet-apens préparé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Fondement',
     question: 'Le délit d’embuscade est prévu par :',
     options: [
@@ -11410,7 +11410,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 222-15-1 CP réprime l’embuscade.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Résultat',
     question: 'L’infraction d’embuscade est constituée :',
     options: [
@@ -11422,7 +11422,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’embuscade est une infraction préparée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Tentative',
     question: 'La tentative d’embuscade est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -11434,7 +11434,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // APPELS MALVEILLANTS / MESSAGES / AGRESSIONS SONORES (222-16)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Définition',
     question: 'Les appels téléphoniques malveillants réitérés constituent :',
     options: [
@@ -11446,7 +11446,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-16 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Réitération',
     question: 'La réitération est caractérisée à partir de :',
     options: [
@@ -11459,7 +11459,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence admet deux appels, même à des destinataires différents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Élément moral',
     question: 'L’élément moral repose sur :',
     options: ['La malveillance', 'La préméditation', 'La négligence'],
@@ -11471,7 +11471,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC ORDRE DE REMPLIR UNE CONDITION (222-18 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition — Définition',
     question: 'La menace avec ordre de remplir une condition consiste à :',
     options: [
@@ -11484,7 +11484,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’article 222-18 CP vise l’atteinte à la liberté d’agir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition — Tentative',
     question: 'La tentative de menace avec condition est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -11500,7 +11500,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE (222-17 CP) — APPROFONDISSEMENT / CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Exclusion',
     question:
         'Quand la menace porte sur des violences dont la tentative n’est pas réprimée, il convient de viser :',
@@ -11514,7 +11514,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les menaces de violences (tentative non réprimée) sortent du champ de 222-17 et relèvent de R.623-1 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Réitération',
     question: 'Pour être punissables, les menaces doivent être réitérées :',
     options: [
@@ -11527,7 +11527,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Jurisprudence citée au cours : menaces réitérées envers la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Matérialisation',
     question:
         'La matérialisation de la menace par un écrit rend la réitération :',
@@ -11541,7 +11541,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la matérialisation représente la répétition nécessaire de la pensée de l’agent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Moyen',
     question: 'Dans le cadre de l’article 222-17 CP, la menace doit être :',
     options: [
@@ -11554,7 +11554,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte exige l’une des deux modalités : réitération ou matérialisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Direction',
     question: 'La menace faite « à la cantonade » :',
     options: [
@@ -11566,7 +11566,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Élément moral',
     question: 'Pour caractériser l’infraction de menace, la loi exige :',
     options: [
@@ -11580,7 +11580,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’auteur n’a pas à vouloir exécuter la menace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Aggravation',
     question:
         'La menace est aggravée au titre de l’article 222-17 al.2 CP lorsqu’il s’agit :',
@@ -11593,7 +11593,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravation spécifique pour la menace de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Répression',
     question: 'La menace simple (222-17 al.1 CP) est punie de :',
     options: [
@@ -11606,7 +11606,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau de répression du cours pour l’article 222-17 al.1 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Répression',
     question: 'La menace de mort (222-17 al.2 CP) est punie de :',
     options: [
@@ -11619,7 +11619,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation « menace de mort » à 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Conjugalité',
     question:
         'L’article 222-18-3 CP prévoit deux degrés d’aggravation lorsque les menaces sont commises :',
@@ -11633,7 +11633,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-18-3 CP organise l’aggravation en contexte conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Conjugalité',
     question: 'Le second degré d’aggravation (222-18-3 CP) concerne :',
     options: [
@@ -11651,7 +11651,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC CONDITION (222-18 CP) — CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Fondement',
     question:
         'La menace de commettre un crime ou un délit avec ordre de remplir une condition est prévue par :',
@@ -11664,7 +11664,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-18 CP réprime la menace avec condition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Champ',
     question: 'À la différence de 222-17, 222-18 vise :',
     options: [
@@ -11678,7 +11678,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-18 ne conditionne pas à la punissabilité de la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Condition',
     question: 'La « condition » peut prendre la forme :',
     options: [
@@ -11691,7 +11691,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : action ou abstention, obligation de faire ou ne pas faire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Moyen',
     question: 'Le moyen de menace au sens de 222-18 est :',
     options: [
@@ -11703,7 +11703,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : pas besoin de réitération, moyen indéterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Élément moral',
     question: 'L’élément moral de 222-18 consiste dans :',
     options: [
@@ -11716,7 +11716,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : dessein de peser méchamment par contrainte morale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Aggravation',
     question: 'L’aggravation spécifique de 222-18 al.2 CP vise :',
     options: [
@@ -11729,7 +11729,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation lorsqu’il s’agit d’une menace de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Répression',
     question: 'La menace avec condition (222-18 al.1 CP) est punie de :',
     options: [
@@ -11741,7 +11741,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau de répression du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Répression',
     question:
         'La menace de mort avec condition (222-18 al.2 CP) est punie de :',
@@ -11754,7 +11754,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravation à 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Conjugalité',
     question:
         'En contexte conjugal, 222-18-3 CP prévoit pour la menace avec condition :',
@@ -11767,7 +11767,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-18-3 CP s’applique à 222-18 al.1 et al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Tentative',
     question: 'La tentative de menace avec condition est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -11779,7 +11779,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMBUSCADE (222-15-1 CP) — ENORME BANQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Fondement',
     question: 'L’embuscade est définie comme :',
     options: [
@@ -11793,7 +11793,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : définition du guet-apens dans le délit d’embuscade.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — But',
     question: 'Le but de l’embuscade est de commettre :',
     options: [
@@ -11805,7 +11805,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte vise violences avec usage ou menace d’une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Arme',
     question: 'Dans l’embuscade, la notion d’arme vise :',
     options: [
@@ -11817,7 +11817,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne arme à feu, couteau, bâton, chien, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Violence non réalisée',
     question: 'Concernant l’embuscade, les violences projetées :',
     options: [
@@ -11830,7 +11830,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le législateur permet d’intervenir avant la consommation des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Passage à l’action',
     question:
         'Si l’auteur passe à l’action et commet les violences, il est poursuivi :',
@@ -11844,7 +11844,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : embuscade vise les violences en voie de réalisation, pas celles déjà réalisées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Victimes',
     question: 'Les victimes visées incluent :',
     options: [
@@ -11858,7 +11858,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Liste prévue au cours (agents force publique, AP, DDAP, pompiers, transport).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Proches',
     question: 'Constitue aussi une embuscade le fait d’attendre :',
     options: [
@@ -11872,7 +11872,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte étend l’embuscade aux proches vivant habituellement au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Contexte',
     question: 'L’embuscade doit être commise :',
     options: [
@@ -11885,7 +11885,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : deux alternatives de contexte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Élément moral',
     question: 'L’embuscade doit être caractérisée par :',
     options: [
@@ -11899,7 +11899,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : matérialisation de la volonté d’agir par des faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Aggravation',
     question: 'L’embuscade est aggravée lorsqu’elle est commise :',
     options: ['En réunion', 'Avec une ITT > 8 jours', 'Sur mineur de 15 ans'],
@@ -11907,7 +11907,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-15-1 al.4 CP : aggravation en réunion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peines',
     question: 'L’embuscade simple est punie de :',
     options: [
@@ -11919,7 +11919,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau de répression du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peines',
     question: 'L’embuscade aggravée (en réunion) est punie de :',
     options: [
@@ -11931,7 +11931,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravation en réunion → 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Tentative',
     question: 'La tentative d’embuscade est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -11939,7 +11939,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la consommation se situe avant la tentative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Complicité',
     question: 'La complicité d’embuscade est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -11951,7 +11951,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // APPELS / MESSAGES / AGRESSIONS SONORES (222-16 CP) — ENORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Fondement',
     question:
         'Les appels téléphoniques malveillants réitérés sont prévus par :',
@@ -11964,7 +11964,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-16 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Supports',
     question: 'Sont visés par 222-16 CP :',
     options: [
@@ -11978,7 +11978,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte vise appels, messages électroniques, agressions sonores.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Répondeur',
     question: 'Les appels reçus sur répondeur/boîte vocale :',
     options: [
@@ -11991,7 +11991,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Jurisprudence au cours : appels reçus directement ou sur boîte vocale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages malveillants (222-16) — Réitération',
     question: 'Les messages malveillants visés peuvent être :',
     options: [
@@ -12003,7 +12003,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite ces exemples de communications électroniques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Malveillance',
     question: 'La malveillance se définit comme :',
     options: [
@@ -12015,7 +12015,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition donnée par le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Preuve',
     question: 'Le caractère malveillant peut être déduit :',
     options: [
@@ -12027,7 +12027,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la seule multiplication peut suffire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Réitération',
     question: 'La réitération est caractérisée dès lors qu’il existe :',
     options: [
@@ -12039,7 +12039,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cass. crim. (4 mars 2003) citée au cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sonores (222-16) — Réitération',
     question: 'Pour les agressions sonores, la réitération est :',
     options: ['Non exigée', 'Toujours exigée', 'Exigée seulement la nuit'],
@@ -12048,7 +12048,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sonores (222-16) — Intention',
     question: 'L’élément intentionnel des agressions sonores est :',
     options: [
@@ -12060,7 +12060,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte vise des agissements commis « en vue de troubler ».',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Tentative',
     question: 'La tentative de l’infraction prévue à l’article 222-16 CP est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -12068,7 +12068,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Aggravation',
     question:
         'L’infraction 222-16 CP est aggravée lorsque les faits sont commis :',
@@ -12081,7 +12081,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-16 al.2 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Répression',
     question: 'La forme simple (222-16 CP) est punie de :',
     options: [
@@ -12093,7 +12093,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 1 an / 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Répression',
     question: 'La forme aggravée (222-16 al.2 CP) est punie de :',
     options: [
@@ -12105,7 +12105,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravée conjugalité → 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Complicité',
     question: 'La complicité pour 222-16 CP est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -12117,7 +12117,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TORTURES ET ACTES DE BARBARIE (222-1 et s.) — ENORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Fondement',
     question:
         'Le fait de soumettre une personne à des actes de torture ou de barbarie est prévu par :',
@@ -12130,7 +12130,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Définition ONU',
     question: 'La Convention ONU (10 décembre 1984) définit la torture comme :',
     options: [
@@ -12144,7 +12144,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la Convention des Nations Unies contre la torture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Jurisprudence',
     question:
         'Selon la jurisprudence, les tortures ou actes de barbarie supposent :',
@@ -12159,7 +12159,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Définition jurisprudentielle reprise au cours (gravité exceptionnelle, dignité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Souffrance',
     question: 'La souffrance infligée peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -12167,7 +12167,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : souffrance d’ordre physique ou moral.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Victime',
     question: 'Les tortures et actes de barbarie doivent être commis :',
     options: [
@@ -12179,7 +12179,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : personne humaine, vivante, distincte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Élément moral',
     question: 'L’élément moral comprend :',
     options: [
@@ -12192,7 +12192,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : volonté de nier la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 1er degré (222-3)',
     question:
         'Le premier degré d’aggravation (222-3 CP) vise notamment des faits commis :',
@@ -12207,7 +12207,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les circonstances de 222-3 CP (alinéas 2 à 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 2e degré',
     question: 'Le deuxième degré d’aggravation peut résulter notamment :',
     options: [
@@ -12221,7 +12221,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-4 (bande organisée…), 222-5 (mutilation/infirmité permanente).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 3e degré',
     question: 'Le troisième degré d’aggravation peut viser :',
     options: [
@@ -12235,7 +12235,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue 222-2 et 222-6 (mort sans intention de la donner).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine simple',
     question: 'Les tortures/actes de barbarie (forme simple) sont punis de :',
     options: [
@@ -12248,7 +12248,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau du cours : 222-1 CP → 15 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 1er degré',
     question:
         'Les tortures/actes de barbarie aggravés (1er degré) sont punis de :',
@@ -12262,7 +12262,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau du cours : 222-3 CP → 20 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 2e degré',
     question:
         'Le 2e degré (ex : bande organisée / habitude sur mineur / vulnérabilité / sujétion) est puni de :',
@@ -12276,7 +12276,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravations 2e degré → 30 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 3e degré',
     question:
         'Le 3e degré (ex : mort sans intention de la donner / concours crime autre que meurtre ou viol) est puni de :',
@@ -12290,7 +12290,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravations 3e degré → perpétuité + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative',
     question: 'La tentative de tortures/actes de barbarie est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -12298,7 +12298,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : tentative de crime toujours punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Complicité',
     question: 'La complicité de tortures/actes de barbarie est :',
     options: [
@@ -12310,7 +12310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : complicité oui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Provocation',
     question: 'La provocation à commettre des tortures/actes de barbarie est :',
     options: [
@@ -12322,7 +12322,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : incrimination autonome (222-6-4 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Exemption',
     question:
         'L’exemption de peine est possible si la personne ayant tenté d’un crime du paragraphe :',
@@ -12336,7 +12336,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-6-2 al.1 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Réduction',
     question:
         'La réduction de peine intervient si l’auteur/complice a averti l’autorité et a permis :',
@@ -12354,7 +12354,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES AU SEIN DU COUPLE / EX (222-14 al.6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Fondement',
     question:
         'Les violences habituelles au sein du couple ou commises par un « ex » sont définies par :',
@@ -12367,7 +12367,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : définition 222-14 al.6 ; répression al.2 à 5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Habitude',
     question: 'L’habitude suppose que les violences aient été commises :',
     options: ['À plusieurs reprises', 'Une seule fois', 'Uniquement de nuit'],
@@ -12375,7 +12375,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : répétition nécessaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Nature',
     question: 'Les violences volontaires peuvent être :',
     options: [
@@ -12387,7 +12387,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : violences psychologiques reconnues et codifiées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Omission',
     question: 'La simple abstention (omission) constitue :',
     options: [
@@ -12400,7 +12400,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : violence = acte positif, sinon qualification différente (privation de soins, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Lien',
     question: 'Le lien exigé entre l’auteur et la victime vise :',
     options: [
@@ -12412,7 +12412,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : couple, même sans cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Ex',
     question:
         'L’alinéa 6 renvoie à l’article 132-80 al.2 : la circonstance est constituée lorsque les faits sont commis :',
@@ -12426,7 +12426,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours reprend le mécanisme de 132-80 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Résultat',
     question: 'Le résultat dommageable se caractérise notamment par :',
     options: [
@@ -12439,7 +12439,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : certificat médical, atteinte physique/psychique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Préjudices',
     question:
         'L’article 222-14 distingue notamment les violences selon qu’elles :',
@@ -12453,7 +12453,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 4 catégories de préjudices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine ITT ≤ 8',
     question:
         'Les violences habituelles (couple/ex) avec ITT de 0 à 8 jours sont punies de :',
@@ -12466,7 +12466,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours pour 222-14 (délit).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine ITT > 8',
     question:
         'Les violences habituelles (couple/ex) avec ITT > 8 jours sont punies de :',
@@ -12479,7 +12479,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : ITT > 8 jours → 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine infirmité',
     question:
         'Les violences habituelles (couple/ex) ayant entraîné une mutilation ou infirmité permanente sont punies de :',
@@ -12492,7 +12492,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : passage en crime → 20 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine mort',
     question:
         'Les violences habituelles (couple/ex) ayant entraîné la mort sans intention de la donner sont punies de :',
@@ -12505,7 +12505,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : mort sans intention → 30 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Tentative',
     question:
         'La tentative en matière de violences délictuelles (dont 222-14) est :',
@@ -12519,7 +12519,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Complicité',
     question: 'La complicité pour les violences habituelles (222-14) est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -12531,7 +12531,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES SUR MINEUR / VULNÉRABLE (222-14 al.1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Fondement',
     question:
         'Les violences habituelles sur mineur de 15 ans ou personne vulnérable sont définies par :',
@@ -12544,7 +12544,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : alinéa 1 définit, alinéas 2 à 5 répriment.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Mineur',
     question: 'La condition de minorité visée est :',
     options: ['Mineur de 15 ans', 'Mineur de 18 ans', 'Mineur de 13 ans'],
@@ -12552,7 +12552,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : mineur de 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Vulnérabilité',
     question: 'La particulière vulnérabilité peut être due :',
     options: [
@@ -12565,7 +12565,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours reprend la liste classique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Préexistence',
     question: 'La vulnérabilité doit :',
     options: [
@@ -12577,7 +12577,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : état préexistant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Sujétion',
     question: 'L’état de sujétion (223-15-3 CP) résulte :',
     options: [
@@ -12590,7 +12590,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition détaillée donnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine ITT ≤ 8',
     question:
         'Les violences habituelles sur mineur/vulnérable avec ITT ≤ 8 jours sont punies de :',
@@ -12603,7 +12603,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : même échelle 222-14 selon résultat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine ITT > 8',
     question:
         'Les violences habituelles sur mineur/vulnérable avec ITT > 8 jours sont punies de :',
@@ -12616,7 +12616,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine infirmité',
     question:
         'Les violences habituelles sur mineur/vulnérable ayant entraîné une infirmité permanente sont punies de :',
@@ -12629,7 +12629,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : crime → 20 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine mort',
     question:
         'Les violences habituelles sur mineur/vulnérable ayant entraîné la mort sans intention de la donner sont punies de :',
@@ -12646,7 +12646,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES SUR FORCES DE SÉCURITÉ INTÉRIEURE / ÉLUS (222-14-5)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Fondement',
     question:
         'Les violences sur les forces de sécurité intérieure ou sur les élus locaux sont définies et réprimées par :',
@@ -12659,7 +12659,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : article 222-14-5 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Victimes',
     question: 'Parmi les victimes visées, on trouve notamment :',
     options: [
@@ -12672,7 +12672,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours énumère la liste exhaustive du I.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Élus',
     question:
         'Sont aussi visés les anciens titulaires d’un mandat électif public :',
@@ -12685,7 +12685,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : limite de six ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Proches',
     question:
         'Les proches pouvant être victimes en raison des fonctions du proche sont :',
@@ -12699,7 +12699,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-14-5 II 1°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Personnels concourants',
     question:
         'Sont visées les personnes affectées dans les services (PN/GN/PM/AP) agissant sous l’autorité des FSI/élus, comme :',
@@ -12713,7 +12713,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours donne ces exemples.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Contexte',
     question: 'Les violences doivent être commises :',
     options: [
@@ -12727,7 +12727,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : exercice ou du fait + qualité apparente ou connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Résultat',
     question: 'L’article 222-14-5 distingue les violences selon qu’elles :',
     options: [
@@ -12739,7 +12739,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : deux catégories seulement pour 222-14-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Élément moral',
     question: 'L’élément moral implique :',
     options: [
@@ -12755,7 +12755,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // --- Aggravations ITT ≤ 8 / aucune ITT (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Aggravation',
     question:
         'Pour les violences ITT ≤ 8 jours / aucune ITT, 222-14-5 prévoit :',
@@ -12769,7 +12769,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : premier degré (1 circonstance), second degré (au moins 2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — 1er degré',
     question:
         'Le premier degré d’aggravation (ITT ≤ 8) s’applique lorsque les faits sont accompagnés :',
@@ -12782,7 +12782,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : renvoi aux 8° à 15° de 222-12.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — 2e degré',
     question:
         'Le deuxième degré d’aggravation (ITT ≤ 8) s’applique lorsque les faits sont accompagnés :',
@@ -12795,7 +12795,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : cumul d’au moins deux circonstances.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Exemples circonst. 222-12',
     question:
         'Parmi les circonstances 8° à 15° de 222-12, on retrouve notamment :',
@@ -12811,7 +12811,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // --- Aggravation ITT > 8 (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8',
     question:
         'Pour les violences ayant entraîné une ITT > 8 jours, 222-14-5 prévoit :',
@@ -12827,7 +12827,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // --- Peines (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine de base',
     question:
         'Les violences (aucune ITT ou ITT ≤ 8 jours) sur FSI/élus sont punies de :',
@@ -12840,7 +12840,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : 222-14-5 I/2°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine 1 circonstance',
     question:
         'Si (ITT ≤ 8) + une circonstance 8° à 15° de 222-12, la peine est :',
@@ -12853,7 +12853,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : 222-14-5 al.4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine 2 circonstances',
     question:
         'Si (ITT ≤ 8) + deux circonstances 8° à 15° de 222-12, la peine est :',
@@ -12866,7 +12866,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : second degré d’aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8 (base)',
     question:
         'Les violences ayant entraîné une ITT > 8 jours sur FSI/élus sont punies de :',
@@ -12879,7 +12879,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : 222-14-5 I/1°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8 + circonstance',
     question:
         'Si ITT > 8 jours + une circonstance 8° à 15° de 222-12, la peine est :',
@@ -12893,7 +12893,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau du cours : aggravation ITT > 8 + circonstance → 10 ans + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Personnes morales',
     question:
         'Les personnes morales peuvent être déclarées pénalement responsables et encourent :',
@@ -12906,7 +12906,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : renvoi à 222-16-1 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Tentative',
     question:
         'La tentative pour les violences délictuelles visées par 222-14-5 est :',
@@ -12920,7 +12920,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : les textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Complicité',
     question: 'La complicité pour 222-14-5 est :',
     options: [
@@ -12936,7 +12936,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // BONUS — QUESTIONS "PIÈGES CONCOURS" (MÉLANGE DES THÈMES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Distinction 222-17 / 222-18',
     question: 'Quelle affirmation est exacte ?',
     options: [
@@ -12949,7 +12949,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Synthèse fidèle au cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Embuscade',
     question: 'Dans l’embuscade, le cœur de l’infraction est :',
     options: [
@@ -12963,7 +12963,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : infraction préparée, violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-16',
     question: 'Quel couple est correct ?',
     options: [
@@ -12977,7 +12977,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : réitération pour appels/messages, pas pour agressions sonores.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Tortures',
     question:
         'Ce qui distingue principalement tortures/barbarie des violences « simples » est :',
@@ -12991,7 +12991,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition jurisprudentielle reprise par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Violences habituelles',
     question: 'La notion « d’habitude » signifie :',
     options: [
@@ -13003,7 +13003,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : répétition obligatoire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-5',
     question: 'Sous 222-14-5, les préjudices pris en compte sont :',
     options: [
@@ -13015,7 +13015,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : deux catégories pour 222-14-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-5 aggravations',
     question:
         'Pour ITT ≤ 8 (ou aucune), l’aggravation « second degré » suppose :',
@@ -13036,7 +13036,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE 222-17 — CAS PRATIQUES / PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une personne dit à la victime : « Je vais te tuer » puis le répète plus tard à la même victime. L’élément matériel est :',
@@ -13050,7 +13050,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         '222-17 : menace réitérée (au moins deux fois) ou matérialisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une menace est formulée une seule fois mais envoyée par message écrit. L’infraction 222-17 est :',
@@ -13063,7 +13063,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La matérialisation par écrit dispense de la réitération.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une personne mime une arme avec ses doigts en disant « pan pan » sans autre élément. Selon le cours, cela :',
@@ -13077,7 +13077,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence excluant la gestuelle seule de la matérialisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Sens clair',
     question: 'La menace doit :',
     options: [
@@ -13091,7 +13091,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas besoin d’infraction explicitement désignée si sens clair.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Tiers',
     question:
         'Une menace adressée à un tiers pour être rapportée à la victime :',
@@ -13104,7 +13104,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : menace directe ou indirecte (tiers / transmise).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cantonade',
     question:
         '« Je tirerai sur quiconque touche ma voiture » (sans viser une personne) :',
@@ -13117,7 +13117,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Tentative punissable',
     question:
         '222-17 réprime une menace portant sur un crime ou délit contre les personnes :',
@@ -13130,7 +13130,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Condition spécifique de 222-17 rappelée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Contravention R.623-1',
     question:
         'Les menaces de commettre des violences (tentative non réprimée) basculent vers :',
@@ -13147,7 +13147,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC CONDITION 222-18 — CAS PRATIQUES / PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Cas pratique',
     question:
         '« Si tu ne me donnes pas ton téléphone, je te plante. » Cette situation relève :',
@@ -13161,7 +13161,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La condition est une injonction (faire/ne pas faire) pour éviter le mal annoncé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Moyen',
     question: 'Pour 222-18, la menace peut être extériorisée :',
     options: [
@@ -13174,7 +13174,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : moyen indéterminé, pas besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Élément moral',
     question: 'L’intention exigée est :',
     options: [
@@ -13187,7 +13187,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : dessein de peser méchamment sur la volonté d’autrui.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Tentative',
     question: 'La tentative de 222-18 est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -13199,7 +13199,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMBUSCADE 222-15-1 — GROS BLOC "CONCOURS"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Conditions',
     question: 'L’embuscade est constituée lorsque l’auteur :',
     options: [
@@ -13213,7 +13213,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Synthèse fidèle du cours : guet-apens + but + faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Surprise',
     question: 'Le guet-apens vise notamment à provoquer :',
     options: [
@@ -13226,7 +13226,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : surprise qui interdit à la victime de préparer sa défense.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Menace avec arme',
     question:
         'L’embuscade vise aussi le fait de menacer avec une arme afin de provoquer :',
@@ -13239,7 +13239,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : menace avec arme = choc/trouble psychologique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Seuil du processus',
     question: 'Pourquoi la tentative d’embuscade n’est pas punissable ?',
     options: [
@@ -13252,7 +13252,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : consommation située avant la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Aggravation',
     question: 'La circonstance aggravante spécifique est :',
     options: [
@@ -13268,7 +13268,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // APPELS / MESSAGES / AGRESSIONS SONORES 222-16 — PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Violence psychologique',
     question:
         'Selon le cours, les appels malveillants et agressions sonores constituent :',
@@ -13282,7 +13282,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : rattachement au régime des violences (nature y compris psychologique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération (minimum)',
     question: 'Le minimum d’appels pour caractériser la réitération est :',
     options: ['Deux appels successifs', 'Trois appels', 'Cinq appels'],
@@ -13290,7 +13290,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Jurisprudence citée : 2 appels suffisent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Destinataires',
     question:
         'Deux appels successifs effectués à des destinataires différents :',
@@ -13303,7 +13303,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : même à des destinataires différents.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Bruit',
     question: 'Le terme « agression sonore » suppose :',
     options: [
@@ -13315,7 +13315,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : bruit d’une certaine importance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Mobile',
     question:
         'Le texte de 222-16 prend en compte le mobile en exigeant que les agissements soient commis :',
@@ -13328,7 +13328,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Formule citée par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Infraction voisine',
     question:
         'Le cours indique que l’élément intentionnel permet de distinguer 222-16 de :',
@@ -13345,7 +13345,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TORTURES / BARBARIE — CAS PRATIQUES (3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Cas pratique',
     question:
         'Une personne inflige volontairement des souffrances aiguës pendant plusieurs heures en humiliant la victime. La qualification la plus cohérente est :',
@@ -13359,7 +13359,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : souffrances aiguës + gravité exceptionnelle + atteinte dignité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative (cas)',
     question:
         'Ligoter une victime en vue de lui infliger des sévices, interrompu par l’arrivée de tiers, peut relever :',
@@ -13372,7 +13372,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours donne précisément cet exemple pour la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-6',
     question:
         'Lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner, on vise :',
@@ -13385,7 +13385,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-6 = mort sans intention de la donner.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-2',
     question:
         'Lorsque les tortures/actes de barbarie précèdent, accompagnent ou suivent un crime autre que meurtre ou viol, on vise :',
@@ -13403,7 +13403,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES — PIÈGES + CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Cas pratique',
     question:
         'Des violences répétées sur une période de deux mois peuvent caractériser :',
@@ -13417,7 +13417,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence : période de deux mois suffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Psychologique',
     question:
         'Le délit de violences peut être constitué sans atteinte physique par :',
@@ -13432,7 +13432,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence et 222-14-3 (violences psychologiques).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Différence',
     question:
         'La particularité des violences habituelles par rapport aux violences « simples » est :',
@@ -13445,7 +13445,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : l’habitude suppose plusieurs reprises.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Tentative',
     question: 'Pour les violences délictuelles, la tentative est en principe :',
     options: [
@@ -13461,7 +13461,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14-5 — CAS PRATIQUES "CONCOURS"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'Un agent de police municipale est agressé pendant une intervention. La qualification spéciale applicable est :',
@@ -13471,7 +13471,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : PM fait partie des forces de sécurité intérieure visées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'Un élu local est frappé en raison d’une décision prise dans l’exercice de son mandat. Condition de contexte :',
@@ -13484,7 +13484,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : exercice ou du fait des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'La victime est l’ascendant vivant au domicile d’un gendarme, agressé en raison des fonctions du gendarme. Cela entre dans :',
@@ -13498,7 +13498,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : proches (conjoint, ascendants/descendants, cohabitants) en raison des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation (cas)',
     question:
         'Violences sur FSI sans ITT, commises avec dissimulation du visage (circonstance 222-12). Peine attendue :',
@@ -13512,7 +13512,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'ITT ≤ 8 (ou aucune) + 1 circonstance 8° à 15° → 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation (cas)',
     question:
         'Violences sur FSI sans ITT, commises avec arme + préméditation (2 circonstances). Peine attendue :',
@@ -13526,7 +13526,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'ITT ≤ 8 (ou aucune) + au moins 2 circonstances → second degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation ITT > 8 (cas)',
     question:
         'Violences sur FSI avec ITT > 8 jours, commises avec usage d’une arme. Peine attendue :',
@@ -13544,7 +13544,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MÉGA "VRAI/FAUX" (FORMAT QCM) — PIÈGES CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « Une menace verbale unique non matérialisée peut relever de 222-17. »',
@@ -13558,7 +13558,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         '222-17 exige réitération OU matérialisation. Une menace unique verbale ne suffit pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « L’embuscade est constituée même si aucune violence n’a été commise. »',
@@ -13567,7 +13567,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Infraction préparée : violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « Les agressions sonores exigent une réitération. »',
@@ -13577,7 +13577,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « La tentative de tortures et actes de barbarie est punissable. »',
@@ -13593,7 +13593,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE 222-17 — PEINES / AGGRAVATIONS (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Peine simple',
     question: 'La menace (222-17 al.1) réitérée ou matérialisée est punie de :',
     options: [
@@ -13605,7 +13605,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 al.1 (simple) = 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Menace de mort',
     question:
         'Lorsque la menace visée à 222-17 est une menace de mort (al.2), la peine est :',
@@ -13618,7 +13618,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 al.2 = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Aggravation couple',
     question:
         'L’aggravation « couple/ex-couple » des menaces est traitée par :',
@@ -13632,7 +13632,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18-3 prévoit deux degrés d’aggravation selon menace simple ou menace de mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Couple (1er degré)',
     question:
         'Menaces (222-17 al.1) commises par conjoint/concubin/PACS : peine (1er degré) ?',
@@ -13646,7 +13646,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18-3 (1er degré) aggrave la menace simple à 3 ans / 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Couple (2e degré)',
     question:
         'Menaces de mort (222-17 al.2) commises par conjoint/concubin/PACS : peine (2e degré) ?',
@@ -13664,7 +13664,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC CONDITION 222-18 — PEINES / AGGRAVATIONS (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Peine simple',
     question:
         'La menace avec ordre de remplir une condition (222-18 al.1) est punie de :',
@@ -13677,7 +13677,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 al.1 = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Menace de mort',
     question:
         'La menace avec condition lorsqu’il s’agit d’une menace de mort (222-18 al.2) est punie de :',
@@ -13690,7 +13690,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 al.2 = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-18) — Couple (1er degré)',
     question:
         'Menace avec condition (222-18 al.1) commise par conjoint/concubin/PACS (aggravation 222-18-3) :',
@@ -13703,7 +13703,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18-3 aggrave 222-18 al.1 à 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-18) — Couple (2e degré)',
     question:
         'Menace de mort avec condition (222-18 al.2) commise par conjoint/concubin/PACS (222-18-3) :',
@@ -13721,7 +13721,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-16 — APPELS / MESSAGES / AGRESSIONS SONORES — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Peine simple',
     question:
         'Les appels malveillants réitérés / messages malveillants réitérés / agressions sonores (222-16) sont punis de :',
@@ -13734,7 +13734,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-16 (simple) = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Aggravation couple',
     question:
         'Lorsque 222-16 est commis par conjoint/concubin/PACS (al.2), la peine est :',
@@ -13747,7 +13747,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-16 al.2 = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Tentative',
     question: 'La tentative de 222-16 est :',
     options: ['Non punissable', 'Punissable', 'Toujours criminelle'],
@@ -13759,7 +13759,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-15-1 — EMBUSCADE — PEINES + CAS (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peine simple',
     question: 'L’embuscade (222-15-1) est punie (simple) de :',
     options: [
@@ -13771,7 +13771,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-15-1 (simple) = 5 ans / 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peine aggravée',
     question: 'L’embuscade aggravée (en réunion, 222-15-1 al.4) est punie de :',
     options: [
@@ -13783,7 +13783,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : réunion = 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Cas pratique',
     question:
         'Un individu attend un policier dans un lieu déterminé avec un couteau, repéré avant l’attaque. Qualification :',
@@ -13801,7 +13801,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-1 à 222-6 — TORTURES/BARBARIE — PEINES (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine simple',
     question: 'Les tortures ou actes de barbarie (222-1) sont punis de :',
     options: [
@@ -13814,7 +13814,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-1 (simple) = 15 ans de réclusion (période de sûreté).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 1er degré (222-3)',
     question:
         'Les tortures/actes de barbarie aggravés par une circonstance du 1er degré (222-3) :',
@@ -13827,7 +13827,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-3 = 20 ans de réclusion (période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 222-5 (mutilation/infirmité)',
     question:
         'Lorsque les tortures/actes de barbarie entraînent une mutilation ou une infirmité permanente (222-5) :',
@@ -13840,7 +13840,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-5 = 30 ans de réclusion (période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 222-6 (mort sans intention)',
     question:
         'Lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner (222-6) :',
@@ -13853,7 +13853,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-6 = perpétuité (période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Provocation',
     question:
         'Le fait de faire des offres/promesses/dons pour provoquer des tortures et actes de barbarie (si non commis ni tenté) relève :',
@@ -13871,7 +13871,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14 (VIOLENCES HABITUELLES) — BARÈME / RÉSULTATS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — ITT 0-8',
     question:
         'Les violences habituelles (mineur/vulnérable ou couple/ex) ayant entraîné une ITT de 0 à 8 jours :',
@@ -13885,7 +13885,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : barème violences habituelles ITT 0-8 = 5 ans / 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — ITT > 8',
     question:
         'Les violences habituelles ayant entraîné une ITT > 8 jours sont punies de :',
@@ -13898,7 +13898,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : ITT > 8 = 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — Mutilation/infirmité',
     question:
         'Les violences habituelles ayant entraîné une mutilation ou infirmité permanente :',
@@ -13912,7 +13912,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : mutilation/infirmité permanente = 20 ans de réclusion (période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — Mort',
     question:
         'Les violences habituelles ayant entraîné la mort sans intention de la donner :',
@@ -13930,7 +13930,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14-1 (ARME + BO / GUET-APENS sur DAP, SP, TRANSPORT) — BARÈME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — ITT 0-8',
     question:
         'Violences avec arme sur dépositaire/SP/transport, commises en bande organisée OU avec guet-apens, ITT 0-8 :',
@@ -13944,7 +13944,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-1 4° = 10 ans / 150 000 € (+ période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — ITT > 8',
     question: 'Violences 222-14-1 avec ITT > 8 jours :',
     options: [
@@ -13957,7 +13957,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-1 3° = 15 ans de réclusion (+ période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Infirmité',
     question:
         'Violences 222-14-1 ayant entraîné une mutilation/infirmité permanente :',
@@ -13971,7 +13971,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-1 2° = 20 ans de réclusion (+ période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Mort',
     question:
         'Violences 222-14-1 ayant entraîné la mort sans intention de la donner :',
@@ -13989,7 +13989,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MINI-SÉRIES "MOTS-CLÉS" — ULTRA EFFICACE CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mots-clés — 222-17',
     question: 'Le duo clé de l’élément matériel de 222-17 est :',
     options: [
@@ -14001,7 +14001,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : c’est le pivot de 222-17.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mots-clés — 222-18',
     question: 'Le mot-clé de 222-18 est :',
     options: [
@@ -14014,7 +14014,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : contrainte par condition = atteinte à la liberté d’agir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mots-clés — 222-15-1',
     question: 'Le mot-clé de 222-15-1 est :',
     options: [
@@ -14031,7 +14031,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // SÉRIE "QCM MÉLANGÉS" — POUR T’ENTRAÎNER COMME AU QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mix concours — Qualification',
     question:
         '« Si tu ne me réponds pas, je te tue » envoyé une fois par SMS :',
@@ -14045,7 +14045,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Condition (« si tu ne… ») + moyen indifférent + menace de mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mix concours — Qualification',
     question:
         'Attendre un agent de la force publique dans un lieu déterminé, avec un bâton, dans l’intention de le menacer avec l’arme :',
@@ -14059,7 +14059,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Attente + lieu déterminé + but violences avec usage/menace d’une arme.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mix concours — Qualification',
     question:
         'Deux appels successifs (sans paroles) à la victime, uniquement pour la réveiller et la gêner :',
@@ -14076,7 +14076,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-17 — MENACE (SANS CONDITION) — CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Cas pratique',
     question:
         'Un individu dit à son voisin : « Je vais te tuer », une seule fois, oralement, sans écrit, sans image, sans objet. Qualification ?',
@@ -14090,7 +14090,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 exige une menace réitérée OU matérialisée (écrit/image/objet).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Cas pratique',
     question:
         'Un individu envoie une lettre : « Je vais te casser la mâchoire » (une seule lettre). Qualification la plus adaptée ?',
@@ -14105,7 +14105,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 = réitérée OU matérialisée. Attention : doit viser crime/délit contre les personnes dont la tentative est punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Menace de violence',
     question:
         'Le texte 222-17 exclut les menaces de commettre des violences (dont la tentative n’est pas réprimée). Dans ce cas, on vise :',
@@ -14115,7 +14115,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : menaces de violences (tentative non réprimée) → R.623-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Réitération',
     question: 'La menace doit être réitérée à l’égard :',
     options: [
@@ -14128,7 +14128,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : menaces punissables si réitérées envers la même personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Matérialisation',
     question: 'La matérialisation d’une menace peut se faire par :',
     options: [
@@ -14145,7 +14145,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-18 — MENACE AVEC CONDITION — CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-18 — Cas pratique',
     question:
         '« Donne-moi 500 € sinon je te tue » (oral, une seule fois). Qualification ?',
@@ -14159,7 +14159,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18 = menace avec ordre de remplir une condition ; moyen indifférent ; menace de mort = al.2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-18 — Condition',
     question: 'La condition au sens de 222-18 peut être :',
     options: [
@@ -14172,7 +14172,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : condition = injonction, obligation de faire ou de ne pas faire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-18 — Moyen',
     question: 'Pour 222-18 (menace avec condition), la menace :',
     options: [
@@ -14188,7 +14188,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-16 — APPELS / MESSAGES MALVEILLANTS — CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération',
     question:
         'Le minimum pour caractériser la réitération au sens de 222-16 est :',
@@ -14198,7 +14198,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : deux appels successifs suffisent à caractériser la réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Messages',
     question: 'Les messages visés par 222-16 peuvent être :',
     options: [
@@ -14211,7 +14211,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : messages malveillants réitérés émis par voie électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Agressions sonores',
     question: 'Pour les agressions sonores (222-16), la réitération :',
     options: [
@@ -14224,7 +14224,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Élément moral',
     question: 'L’élément intentionnel des agressions sonores (222-16) est :',
     options: [
@@ -14240,7 +14240,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-15-1 — EMBUSCADE — CAS PRATIQUES PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Définition',
     question: 'L’embuscade consiste principalement à :',
     options: [
@@ -14254,7 +14254,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : « attendre un certain temps et dans un lieu déterminé » (guet-apens).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Objet',
     question: 'L’embuscade vise une préparation en vue de :',
     options: [
@@ -14267,7 +14267,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : but = violences avec usage/menace d’une arme (arme par nature ou destination).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Point clé',
     question: 'L’embuscade est constituée :',
     options: [
@@ -14280,7 +14280,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : infraction préparée, intervention possible avant consommation des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Tentative',
     question: 'La tentative du délit d’embuscade est :',
     options: [
@@ -14297,7 +14297,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TORTURES / BARBARIE — DÉFINITIONS + CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Définition jurisprudentielle',
     question:
         'Les tortures ou actes de barbarie se caractérisent notamment par :',
@@ -14312,7 +14312,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : gravité exceptionnelle + volonté de nier la dignité de la personne humaine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Élément moral',
     question:
         'L’élément moral principal des tortures et actes de barbarie est :',
@@ -14327,7 +14327,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : volonté de souffrance exceptionnelle (physique ou morale) / atteinte à la dignité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-4',
     question:
         'Parmi les cas suivants, lequel correspond à une aggravation de 2e degré (222-4) ?',
@@ -14336,7 +14336,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-4 (2e degré) vise notamment la bande organisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative',
     question: 'La tentative de tortures et actes de barbarie est :',
     options: [
@@ -14352,7 +14352,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES 222-14 — PIÈGES "HABITUDE"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Notion',
     question: 'La notion d’habitude (222-14) implique :',
     options: [
@@ -14364,7 +14364,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : l’habitude suppose la répétition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Couple/ex',
     question:
         'Les violences habituelles commises par un ancien conjoint/concubin/PACS sont visées via :',
@@ -14381,7 +14381,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14-5 — VIOLENCES SUR FSI / ÉLUS — BARÈME + CIRCONSTANCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Texte',
     question:
         'Les violences sur forces de sécurité intérieure / élus locaux relèvent de :',
@@ -14394,7 +14394,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-14-5 définit et réprime ces violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Peine de base (≤8j)',
     question: 'Violences 222-14-5 sans ITT ou ITT ≤ 8 jours : peine de base ?',
     options: [
@@ -14406,7 +14406,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-14-5 /2° (base) = 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — 1 circonstance (≤8j)',
     question:
         'Violences 222-14-5 (≤8j) + une circonstance 8° à 15° de 222-12 : peine ?',
@@ -14420,7 +14420,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-5 al.4 (≤8j) + 1 circonstance = 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — 2 circonstances (≤8j)',
     question:
         'Violences 222-14-5 (≤8j) + deux circonstances 8° à 15° de 222-12 : peine ?',
@@ -14434,7 +14434,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-5 al.5 (≤8j) + 2 circonstances = 10 ans / 150 000 € (+ période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT > 8',
     question: 'Violences 222-14-5 avec ITT > 8 jours : peine de base ?',
     options: [
@@ -14446,7 +14446,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-14-5 I/1° = 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT > 8 + circonstance',
     question:
         'Violences 222-14-5 avec ITT > 8 jours + une circonstance 8° à 15° de 222-12 :',
@@ -14464,7 +14464,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // SÉRIE "VRAI/FAUX" — ULTRA CONCOURS (3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 222-17',
     question:
         'Vrai ou faux : une menace verbale unique peut constituer 222-17 si elle fait peur.',
@@ -14474,7 +14474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 exige réitération OU matérialisation, pas seulement la peur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 222-18',
     question:
         'Vrai ou faux : pour 222-18, la menace doit être matérialisée par écrit.',
@@ -14483,7 +14483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 = « par quelque moyen que ce soit ».',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 222-16',
     question:
         'Vrai ou faux : le caractère malveillant se déduit uniquement du contenu des appels/messages.',
@@ -14493,7 +14493,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : la seule multiplication des appels peut suffire à caractériser la malveillance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — Embuscade',
     question:
         'Vrai ou faux : l’embuscade suppose que les violences aient été consommées.',
@@ -14511,7 +14511,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACES 222-17 — PEINES (BARÈME) + AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Répression — Base',
     question: 'La peine encourue pour la menace (222-17 al.1) est :',
     options: [
@@ -14523,7 +14523,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 al.1 = 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Répression — Menace de mort',
     question: 'La peine encourue pour la menace de mort (222-17 al.2) est :',
     options: [
@@ -14535,7 +14535,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 al.2 (menace de mort) = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Aggravation — Premier degré',
     question: '222-18-3 (1er degré) aggrave :',
     options: [
@@ -14548,7 +14548,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18-3 prévoit deux degrés (conjoint/concubin/PACS) et s’applique aux menaces.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Menaces (base)',
     question:
         'Quand les menaces (sans mort) sont aggravées par 222-18-3 : peine ?',
@@ -14562,7 +14562,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18-3 aggrave l’infraction prévue à 222-17 al.1 → 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Menaces de mort',
     question: 'Quand les menaces de mort sont aggravées par 222-18-3 : peine ?',
     options: [
@@ -14579,7 +14579,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACES 222-18 — PEINES + AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Répression — Base',
     question:
         'La peine encourue pour la menace avec condition (222-18 al.1) est :',
@@ -14592,7 +14592,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 al.1 = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Répression — Menace de mort',
     question:
         'La peine encourue pour 222-18 al.2 (menace de mort avec condition) est :',
@@ -14605,7 +14605,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 al.2 = 5 ans + 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Condition (base)',
     question: 'Quand 222-18 (sans mort) est aggravé par 222-18-3 : peine ?',
     options: [
@@ -14618,7 +14618,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18-3 aggrave l’infraction prévue à 222-18 al.1 → 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Condition + mort',
     question:
         'Quand 222-18 (menace de mort) est aggravé par 222-18-3 : peine ?',
@@ -14636,7 +14636,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-16 — APPELS / MESSAGES / AGRESSIONS SONORES — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Répression — Base',
     question: 'La peine encourue pour 222-16 (base) est :',
     options: [
@@ -14648,7 +14648,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-16 (simple) = 1 an / 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Répression — Conjoint/concubin/PACS',
     question: 'La peine encourue pour 222-16 al.2 (aggravé) est :',
     options: [
@@ -14672,7 +14672,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
 
   // ---------- 222-17 : CONDITIONS DE CONSTITUTION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Condition de punissabilité',
     question: 'La menace 222-17 est punissable lorsqu’elle est :',
     options: [
@@ -14684,7 +14684,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 exige la réitération OU la matérialisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Domaine',
     question: '222-17 vise la menace de :',
     options: [
@@ -14698,7 +14698,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 exclut les menaces de violences (tentative non réprimée) → R.623-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Menace à la cantonade',
     question: 'Une menace « à la cantonade » (non dirigée) :',
     options: [
@@ -14710,7 +14710,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Réitération',
     question: 'La réitération suppose :',
     options: [
@@ -14722,7 +14722,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : menace répétée au moins deux fois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Réitération (même personne)',
     question: 'Pour être punissables, les menaces réitérées doivent viser :',
     options: [
@@ -14734,7 +14734,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : réitération à l’égard de la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Matérialisation',
     question: 'La matérialisation peut se faire par :',
     options: [
@@ -14746,7 +14746,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : écrit / image / objet.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Gestuelle seule',
     question: 'Une gestuelle seule (mimer une arme sans support) :',
     options: [
@@ -14758,7 +14758,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : gestuelle seule exclue de la matérialisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Élément moral',
     question: 'L’élément moral de 222-17 est :',
     options: [
@@ -14773,7 +14773,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-18 : CONDITION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Définition',
     question: '222-18 vise la menace de crime ou délit contre les personnes :',
     options: [
@@ -14785,7 +14785,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-18 = menace avec condition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Domaine',
     question: 'Contrairement à 222-17, 222-18 vise :',
     options: [
@@ -14799,7 +14799,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18 couvre tout délit contre les personnes, sans condition “tentative punissable”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Moyen',
     question: 'Le moyen de la menace dans 222-18 est :',
     options: [
@@ -14811,7 +14811,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : moyen indéterminé, pas besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Condition',
     question: 'La condition peut être :',
     options: [
@@ -14823,7 +14823,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : obligation de faire ou de ne pas faire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Élément moral',
     question: 'L’élément moral de 222-18 correspond à :',
     options: [
@@ -14838,7 +14838,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-16 : APPELS / MESSAGES / AGRESSIONS SONORES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Champ',
     question: '222-16 réprime notamment :',
     options: [
@@ -14851,7 +14851,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : appels malveillants réitérés, messages malveillants réitérés, agressions sonores.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération (minimum)',
     question: 'Pour caractériser la réitération (222-16), il faut au moins :',
     options: ['2 appels successifs', '5 appels', '10 appels'],
@@ -14859,7 +14859,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 2 appels successifs suffisent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Agressions sonores',
     question: 'Les agressions sonores (222-16) exigent :',
     options: [
@@ -14872,7 +14872,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : intention “en vue de troubler”, pas de réitération exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Aggravation',
     question: '222-16 est aggravé lorsque commis par :',
     options: [
@@ -14886,7 +14886,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-15-1 : EMBUSCADE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Définition',
     question: 'L’embuscade (222-15-1) est :',
     options: [
@@ -14900,7 +14900,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : guet-apens + but de violences avec arme (usage ou menace).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Stade',
     question: '222-15-1 permet d’intervenir :',
     options: [
@@ -14912,7 +14912,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : infraction préparée, violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Tentative',
     question: 'La tentative du délit d’embuscade est :',
     options: [
@@ -14924,7 +14924,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : l’infraction est antérieure à la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Aggravation',
     question: 'L’embuscade est aggravée lorsqu’elle est commise :',
     options: ['En réunion', 'Avec ITT > 8 jours', 'Avec préméditation'],
@@ -14934,7 +14934,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-14 : VIOLENCES HABITUELLES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Habitude',
     question: 'La notion d’habitude suppose :',
     options: [
@@ -14946,7 +14946,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : répétition des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violence psychologique',
     question: 'Les violences peuvent être constituées :',
     options: [
@@ -14960,7 +14960,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // ---------- 222-14-5 : FORCES DE SÉCURITÉ / ÉLUS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Victimes',
     question: '222-14-5 vise notamment :',
     options: [
@@ -14973,7 +14973,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : liste (gendarmerie, police, municipale, douanes, pompiers, AP, élus...).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT (seuil)',
     question: '222-14-5 distingue :',
     options: [
@@ -14989,7 +14989,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // B) 60 CAS PRATIQUES — CONCOURS (ÉNONCÉS LONGS, PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-17 vs R.623-1',
     question:
         'En dispute, X dit une seule fois : « Je vais te casser la gueule ». Aucune lettre, aucun SMS, aucune répétition. Texte le plus adapté ?',
@@ -14999,7 +14999,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-17 exclut les menaces de violences (tentative non punissable) → R.623-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-17 (matérialisée)',
     question:
         'X envoie un seul courrier : « Je vais te brûler ». Pas d’autre message. Qualification principale ?',
@@ -15012,7 +15012,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : écrit = matérialisation, pas besoin de répétition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-18 (condition explicite)',
     question:
         'X dit : « Donne-moi 500 € sinon je te tue ». Une seule fois, oral. Qualification ?',
@@ -15022,7 +15022,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : condition = injonction “donne-moi…”, moyen indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-18 (condition + pas de mort)',
     question:
         'X dit : « Si tu ne retires pas ta plainte, je te frappe ». Une seule fois. Qualification la plus adaptée ?',
@@ -15036,7 +15036,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-18 vise tout délit contre les personnes, sans exigence “tentative punissable”, dès lors qu’il y a condition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-16 (messages)',
     question:
         'Pendant 2 semaines, X envoie 2 SMS par jour : insultes, propos humiliants, aucun chantage. Qualification ?',
@@ -15049,7 +15049,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : messages malveillants réitérés = 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-16 (agressions sonores)',
     question:
         'Un voisin met la musique très fort chaque nuit “pour faire craquer” la voisine. Qualification la plus adaptée ?',
@@ -15063,7 +15063,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : agressions sonores = volonté de troubler la tranquillité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-15-1 (embuscade)',
     question:
         'Deux individus repèrent les horaires d’un agent pénitentiaire, l’attendent chaque soir près de son domicile avec un couteau “pour lui faire peur”. Ils sont interpellés avant toute attaque. Qualification ?',
@@ -15077,7 +15077,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : guet-apens + but de menacer/commettre violences avec arme ; violences non réalisées OK.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-15-1 (si passage à l’acte)',
     question:
         'Même situation, mais ils sortent le couteau et le menacent réellement. On poursuit :',
@@ -15091,7 +15091,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-15-1 vise les violences en voie de réalisation ; si passage à l’action → textes des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — Tortures/Barbarie (critère)',
     question:
         'Une victime est soumise à des actes d’une gravité exceptionnelle, dépassant de simples violences, visant à nier sa dignité. Qualification ?',
@@ -15104,7 +15104,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : gravité exceptionnelle + volonté de nier dignité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-14 (habitude)',
     question:
         'X frappe sa compagne “souvent”, sur plusieurs mois. Certificats médicaux établissent des ITT variables. Texte principal ?',
@@ -15117,7 +15117,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : répétition + lien conjugal = 222-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-14-5 (élu local)',
     question:
         'Après une décision municipale, un conseiller municipal est frappé “en représailles”. La qualité était connue. Texte ?',
@@ -15133,7 +15133,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // (Pour rester lisible ici, je te mets un gros pack de 50
   //  sous forme condensée — mêmes règles, 3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — Menace indirecte',
     question:
         'X menace Y en passant par Z (“dis-lui que je vais le tuer”). Condition 222-17 ?',
@@ -15146,7 +15146,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : menace directe ou indirecte (tiers/rapportée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-17 (infraction pas précisée)',
     question:
         'X écrit : “Tu vas payer, tu vas mourir” sans préciser comment. 222-17 possible ?',
@@ -15160,7 +15160,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : l’infraction menacée n’a pas à être expressément désignée si le sens est clair.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-16 (contenu vs fréquence)',
     question:
         'X appelle 30 fois sans parler. Le caractère malveillant peut se déduire :',
@@ -15174,7 +15174,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : malveillance déductible de la multiplication des appels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-18 (condition implicite)',
     question:
         'X dit : “Si tu continues à témoigner, tu vas y passer”. Qualification la plus adaptée ?',
@@ -15184,7 +15184,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : condition peut être formulée comme un ordre/contrainte (faire/ne pas faire).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-15-1 (victime proche)',
     question:
         'On attend le fils d’un policier à la sortie de l’école pour lui “mettre un couteau sous la gorge” en raison du métier du père. Texte ?',
@@ -15198,7 +15198,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // D) 20 Q "RÉFLEXE PEINE" (chronométré concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-17 al.1',
     question: '222-17 al.1 :',
     options: ['6 mois + 7 500 €', '1 an + 15 000 €', '3 ans + 45 000 €'],
@@ -15206,7 +15206,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : barème 222-17 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-17 al.2',
     question: '222-17 al.2 :',
     options: ['3 ans + 45 000 €', '5 ans + 75 000 €', '7 ans + 100 000 €'],
@@ -15214,7 +15214,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : menace de mort 222-17 al.2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-16 (simple)',
     question: '222-16 (simple) :',
     options: ['1 an + 15 000 €', '6 mois + 7 500 €', '3 ans + 45 000 €'],
@@ -15222,7 +15222,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : barème 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-15-1 (simple)',
     question: '222-15-1 (simple) :',
     options: ['5 ans + 75 000 €', '7 ans + 100 000 €', '3 ans + 45 000 €'],
@@ -15230,7 +15230,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : barème 222-15-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-1',
     question: '222-1 (tortures/barbarie) :',
     options: [
@@ -15253,7 +15253,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-15-1 — EMBUSCADE — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Répression — Base',
     question: 'La peine encourue pour l’embuscade (222-15-1) est :',
     options: [
@@ -15265,7 +15265,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-15-1 (simple) = 5 ans / 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Répression — Réunion',
     question: 'La peine encourue pour l’embuscade aggravée (réunion) est :',
     options: [
@@ -15281,7 +15281,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-1 et s. — TORTURES / BARBARIE — PEINES (RÉCAP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — Base',
     question: 'La peine encourue pour 222-1 (tortures/actes de barbarie) est :',
     options: [
@@ -15293,7 +15293,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-1 = 15 ans de réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — 1er degré',
     question: 'La peine encourue pour 222-3 (1er degré d’aggravation) est :',
     options: [
@@ -15305,7 +15305,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-3 = 20 ans de réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — 2e degré',
     question: 'La peine encourue pour 222-4 (2e degré d’aggravation) est :',
     options: [
@@ -15317,7 +15317,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-4 = 30 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — Mutilation/infirmité',
     question:
         'Quand les tortures/actes de barbarie entraînent une mutilation ou une infirmité permanente (222-5), la peine est :',
@@ -15331,7 +15331,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-5 (mutilation/infirmité) = 30 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — Mort sans intention',
     question:
         'Quand les tortures/actes de barbarie entraînent la mort sans intention de la donner (222-6), la peine est :',
@@ -15348,7 +15348,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14 — VIOLENCES HABITUELLES (COUPLE / MINEUR / VULNÉRABLE) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — ITT 0 à 8',
     question: 'Violences habituelles (222-14) avec ITT 0 à 8 jours :',
     options: [
@@ -15360,7 +15360,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : tableau 222-14 : ITT 0-8 = 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — ITT > 8',
     question: 'Violences habituelles (222-14) avec ITT > 8 jours :',
     options: [
@@ -15372,7 +15372,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : tableau 222-14 : ITT > 8 = 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — Infirmité',
     question:
         'Violences habituelles (222-14) ayant entraîné une mutilation ou une infirmité permanente :',
@@ -15386,7 +15386,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : tableau 222-14 : mutilation/infirmité = 20 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — Mort',
     question:
         'Violences habituelles (222-14) ayant entraîné la mort sans intention de la donner :',
@@ -15404,7 +15404,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14-1 — VIOLENCES AVEC ARME SUR DAP / SP / TRANSPORT (bande/guet-apens) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — ITT 0 à 8',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) avec ITT 0 à 8 jours :',
@@ -15417,7 +15417,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-14-1 4° (ITT 0-8) = 10 ans / 150 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — ITT > 8',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) avec ITT > 8 jours :',
@@ -15431,7 +15431,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-1 3° = 15 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — Infirmité',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) avec mutilation/infirmité permanente :',
@@ -15445,7 +15445,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-1 2° = 20 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — Mort',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) ayant entraîné la mort sans intention de la donner :',
@@ -15463,7 +15463,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 30 CAS PRATIQUES ULTRA PIÈGES (QUALIF + TEXTE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-16 vs 222-17',
     question:
         'Un individu appelle 2 fois un médecin à 3h du matin, sans parler, juste pour le réveiller. Qualification la plus adaptée ?',
@@ -15477,7 +15477,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-16 = appels malveillants réitérés ; 2 appels suffisent pour la réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-17 (écrit)',
     question:
         'Un individu écrit sur un mur : « Je vais te tuer ». Qualification principale ?',
@@ -15491,7 +15491,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : matérialisation par écrit = 222-17, sans besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-17 (gestuelle seule)',
     question:
         'Une personne mime un pistolet avec ses doigts et fait « pan pan », sans rien écrire ni répéter. Qualification 222-17 ?',
@@ -15505,7 +15505,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : la gestuelle seule est exclue de la matérialisation de la menace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-18 (condition par abstention)',
     question:
         '« Si tu ne quittes pas la ville, je te tue » (oral, une seule fois). Qualification ?',
@@ -15518,7 +15518,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : condition = faire/ne pas faire ; moyen indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Embuscade',
     question:
         'Deux individus attendent cachés près d’un commissariat avec un bâton pour « faire peur » à un policier à la sortie. Ils sont interpellés avant tout acte. Qualification ?',
@@ -15533,7 +15533,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : embuscade = guet-apens + but de violences avec usage/menace d’une arme ; violences non réalisées OK.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-14-5 (victime)',
     question:
         'Des violences sont commises sur le conjoint d’un gendarme « pour se venger » du gendarme. Texte adapté ?',
@@ -15547,7 +15547,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : 222-14-5 vise aussi le conjoint/ascendants/descendants/domiciliés en raison des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-16 (SMS)',
     question:
         'Une personne envoie chaque jour 1 SMS insultant pendant 10 jours. Qualification ?',
@@ -15560,7 +15560,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : SMS réitérés malveillants = 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Tortures/Barbarie',
     question:
         'Une victime est ligotée et subit des sévices destinés à l’humilier et nier sa dignité pendant plusieurs heures. Qualification la plus adaptée ?',
@@ -15578,7 +15578,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MINI RAFRAÎCHISSEMENT "TENTATIVE / COMPLICITÉ" (Consolidation)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-17',
     question: 'La tentative de 222-17 est :',
     options: [
@@ -15590,7 +15590,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-17 : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-16',
     question: 'La tentative de 222-16 est :',
     options: ['Non', 'Oui', 'Oui uniquement si aggravé'],
@@ -15598,7 +15598,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : 222-16 : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-15-1',
     question: 'La tentative de 222-15-1 (embuscade) est :',
     options: ['Non', 'Oui', 'Oui uniquement en réunion'],
@@ -15607,7 +15607,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Cours : tentative non, l’infraction est déjà au stade préparatoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-1',
     question: 'La tentative de tortures/actes de barbarie (222-1) est :',
     options: ['Oui', 'Non', 'Oui seulement si la victime est blessée'],
@@ -15615,7 +15615,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : tentative de crime punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Complicité — Menaces',
     question: 'La complicité pour les menaces 222-17 / 222-18 est :',
     options: ['Oui (121-6 / 121-7)', 'Non', 'Oui seulement si menace de mort'],
@@ -15623,7 +15623,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : complicité oui, selon 121-6 et 121-7.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — Tortures/Barbarie',
     question:
         'Vrai ou faux : les tortures/actes de barbarie se distinguent des violences simples par une gravité exceptionnelle et l’atteinte à la dignité.',
@@ -15632,7 +15632,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cours : gravité exceptionnelle + volonté de nier la dignité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « En 222-14-5, les anciens élus sont protégés sans limite de temps. »',
@@ -15646,7 +15646,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : protection dans la limite de 6 ans après expiration du mandat.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Tentatives',
     question: 'Quelle combinaison est correcte ?',
     options: [
@@ -15659,7 +15659,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : menaces et embuscade non ; crime de torture oui.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Définition',
     question: 'Les tortures et actes de barbarie se caractérisent par :',
     options: [
@@ -15672,7 +15672,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition jurisprudentielle reprise au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Fondement',
     question: 'Les tortures et actes de barbarie sont prévus par :',
     options: [
@@ -15684,7 +15684,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite l’article 222-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Définition',
     question:
         'Les atteintes volontaires à l’intégrité physique et/ou psychique sont qualifiées :',
@@ -15694,7 +15694,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les atteintes volontaires à l’intégrité physique et/ou psychique constituent des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Textes',
     question:
         'Les violences contraventionnelles sont définies et réprimées par :',
@@ -15708,7 +15708,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne R. 624-1 et R. 625-1 CP pour les violences contraventionnelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Délit (fondement)',
     question: 'Les violences délictuelles sont définies et réprimées par :',
     options: [
@@ -15721,7 +15721,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 222-11 CP définit et réprime les violences délictuelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément matériel',
     question: 'L’élément matériel des violences volontaires repose sur :',
     options: [
@@ -15734,7 +15734,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que les violences supposent une action positive : la simple abstention ne constitue pas une violence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contact',
     question: 'Les violences supposent nécessairement :',
     options: [
@@ -15748,7 +15748,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le contact peut être indirect : arme, objet, morsure d’animal excité par l’auteur, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Psychologiques',
     question: 'Selon le cours, des violences volontaires peuvent être :',
     options: [
@@ -15761,7 +15761,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la jurisprudence : un acte impressionnant vivement la victime et causant un choc émotif peut constituer une violence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Victime',
     question: 'Les violences volontaires doivent être commises :',
     options: [
@@ -15774,7 +15774,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : personne humaine, vivante, distincte de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Résultat',
     question: 'La réalité de l’atteinte (dommage) est notamment établie par :',
     options: [
@@ -15787,7 +15787,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la réalité de l’atteinte doit être établie, notamment par la production d’un certificat médical.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément moral',
     question: 'L’élément moral des violences volontaires suppose :',
     options: [
@@ -15800,7 +15800,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : violences consommées si elles sont intentionnelles (conscience qu’il en résultera un préjudice).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — ITT',
     question:
         'Dans la logique du cours, la qualification/gravité des violences varie notamment selon :',
@@ -15818,7 +15818,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES — CIRC. AGGRAVANTES (222-13 / 222-12 / 222-10 / 222-8)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Mineur',
     question:
         'Selon 222-13, commettre des violences (ITT ≤ 8 jours ou aucune) sur un mineur de 15 ans constitue :',
@@ -15832,7 +15832,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste “sur un mineur de 15 ans” parmi les circonstances du 1er degré de 222-13.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Vulnérabilité',
     question: 'La particulière vulnérabilité aggravante suppose qu’elle soit :',
     options: [
@@ -15845,7 +15845,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : vulnérabilité due à âge/maladie/infirmité/déficience/grossesse apparente ou connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Personne dépositaire',
     question:
         'Parmi les circonstances aggravantes du 1er degré (222-13), on trouve :',
@@ -15860,7 +15860,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère la qualité de la victime (dépositaire de l’autorité publique, etc.) comme circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Réunion',
     question:
         '“Par plusieurs personnes agissant en qualité d’auteur ou de complice” correspond à :',
@@ -15874,7 +15874,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste la réunion (plusieurs personnes auteurs/complices) parmi les circonstances aggravantes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Arme',
     question: 'L’usage ou la menace d’une arme est :',
     options: [
@@ -15887,7 +15887,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’usage ou menace d’une arme parmi les circonstances aggravantes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Visage dissimulé',
     question:
         'Selon le cours, “dissimuler volontairement en tout ou partie son visage” est :',
@@ -15901,7 +15901,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la dissimulation volontaire du visage afin de ne pas être identifié comme circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — 2e degré (222-13)',
     question:
         'Dans 222-13 (ITT ≤ 8 jours/0 ITT), le 2e degré est caractérisé notamment lorsque :',
@@ -15915,7 +15915,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 2e degré = deux circonstances du 1er degré (ou situations spécifiques avec mineur/autorité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — 3e degré (222-13)',
     question: 'Dans 222-13, le 3e degré correspond :',
     options: [
@@ -15933,7 +15933,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // VIOLENCES 222-14-1 — ARME + BANDE ORGANISÉE OU GUET-APENS
   // (victimes spécifiques : DAP, pompiers, transport, etc.)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Fondement',
     question:
         'Les violences avec arme sur une personne dépositaire de l’autorité publique (bande organisée ou guet-apens) sont prévues par :',
@@ -15947,7 +15947,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 222-14-1 CP définit et réprime cette infraction spécifique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Conditions',
     question:
         'Pour 222-14-1, la condition “bande organisée ou guet-apens” est :',
@@ -15960,7 +15960,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise que les deux conditions sont alternatives.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Bande organisée',
     question: 'La bande organisée (132-71 CP) suppose :',
     options: [
@@ -15974,7 +15974,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition de 132-71 CP : préparation caractérisée par un ou plusieurs faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Guet-apens',
     question: 'Le guet-apens se caractérise par :',
     options: [
@@ -15988,7 +15988,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit le guet-apens comme l’attente de la victime dans un lieu déterminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Arme',
     question: 'Dans 222-14-1, les violences doivent être commises :',
     options: [
@@ -16001,7 +16001,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : usage ou menace d’une arme, quelle qu’elle soit (par nature ou destination).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Victimes visées',
     question: 'Une des catégories de victimes visées par 222-14-1 est :',
     options: [
@@ -16015,7 +16015,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les agents de la force publique parmi les victimes visées par le texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Contexte',
     question: 'Pour relever de 222-14-1, les violences doivent être commises :',
     options: [
@@ -16028,7 +16028,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise le contexte requis : exercice, occasion ou raison des fonctions/mission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — ITT / types de préjudices',
     question:
         'Le cours indique que 222-14-1 distingue notamment selon que les violences :',
@@ -16043,7 +16043,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère quatre types de préjudices dans 222-14-1 (mort, MIP, ITT > 8, ITT ≤ 8).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Tentative',
     question: 'Selon le cours, pour 222-14-1, la tentative est :',
     options: [
@@ -16057,7 +16057,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : pas de tentative visée pour les violences délictuelles ; en criminel c’est théoriquement possible mais difficile à établir.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Complicité',
     question: 'Pour 222-14-1, la complicité est :',
     options: ['Oui', 'Non', 'Non sauf pour les personnes morales'],
@@ -16070,7 +16070,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MEURTRE (221-1) — ELEMENTS + AGGRAVATIONS + TENTATIVE/COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Définition',
     question: 'Le meurtre correspond au fait de :',
     options: [
@@ -16083,7 +16083,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit le meurtre comme le fait de donner volontairement la mort à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Fondement',
     question: 'Le meurtre est défini et réprimé par :',
     options: [
@@ -16095,7 +16095,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : 221-1 CP définit et réprime le meurtre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément matériel',
     question: 'L’élément matériel du meurtre nécessite :',
     options: [
@@ -16108,7 +16108,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : acte positif de violence ; l’omission relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Moyen',
     question:
         'Dans le meurtre, le moyen utilisé (mains nues, arme, etc.) est :',
@@ -16122,7 +16122,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le moyen utilisé est indifférent (arme par nature/destination, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Victime',
     question: 'Le meurtre s’applique :',
     options: [
@@ -16135,7 +16135,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : personne humaine vivante ; le meurtre ne s’applique pas à un animal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Suicide',
     question: 'Selon le cours, le suicide :',
     options: [
@@ -16148,7 +16148,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : la victime doit être distincte de l’auteur ; le suicide n’est pas incriminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Consentement',
     question:
         'Le consentement de la victime (ex : euthanasie/suicide assisté) :',
@@ -16162,7 +16162,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : même à la prière de la victime, donner la mort constitue un meurtre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Causalité',
     question: 'Pour le meurtre, il faut établir :',
     options: [
@@ -16175,7 +16175,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle : l’acte doit avoir provoqué directement la mort ; la mort est conséquence de l’acte incriminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément moral',
     question: 'L’élément moral du meurtre est :',
     options: [
@@ -16188,7 +16188,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : volonté de donner la mort, détermination de tuer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Intention (indices)',
     question:
         'Selon la jurisprudence rappelée au cours, l’intention homicide peut s’induire notamment :',
@@ -16202,7 +16202,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’induction de l’intention par l’arme et la région du corps frappée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Préméditation',
     question:
         'Ce qui distingue principalement le meurtre de l’assassinat est :',
@@ -16216,7 +16216,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : l’intention homicide concomitante suffit au meurtre ; l’assassinat requiert la préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Mobile',
     question: 'Les mobiles (politique, euthanasie, etc.) sont :',
     options: ['Indifférents', 'Toujours aggravants', 'Toujours exonératoires'],
@@ -16224,7 +16224,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : les mobiles sont indifférents.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Erreur sur la personne',
     question: 'L’erreur sur la personne (victime différente de celle visée) :',
     options: [
@@ -16237,7 +16237,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la volonté reste présente, le meurtre est constitué.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Aggravation 221-3',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -16250,7 +16250,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : article 221-3 CP (préméditation ou guet-apens).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Tentative',
     question: 'La tentative de meurtre est :',
     options: [
@@ -16263,7 +16263,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : tentative = OUI (commencement d’exécution).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Complicité',
     question: 'La complicité de meurtre est :',
     options: [
@@ -16276,7 +16276,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Fondement',
     question:
         'La participation à un groupement violent est définie et réprimée par :',
@@ -16290,7 +16290,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 222-14-2 CP définit et réprime la participation à un groupement violent.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Commencement d’exécution',
     question: 'Pour retenir la tentative de meurtre, il faut notamment :',
     options: [
@@ -16304,7 +16304,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que la tentative est punissable en cas de commencement d’exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Indifférence du lieu et de la date',
     question: 'Un homicide volontaire peut être retenu même si :',
     options: [
@@ -16318,7 +16318,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence citée dans le cours admet des moyens multiples et successifs, sans exigence de lieu/date unique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Infraction impossible',
     question:
         'Si l’auteur frappe une victime déjà décédée, la qualification la plus juste selon le cours est :',
@@ -16332,7 +16332,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’acte sur cadavre relève de l’infraction impossible, assimilée à la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Consentement de la victime',
     question:
         'Le fait de donner la mort à une personne à sa demande explicite :',
@@ -16346,7 +16346,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que le consentement de la victime n’exclut pas l’infraction (euthanasie/suicide assisté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Lien de causalité',
     question:
         'Pour caractériser le meurtre, il faut établir que les violences sont :',
@@ -16360,7 +16360,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste sur la nécessité d’un lien de causalité entre l’acte et le décès.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Intention concomitante',
     question: 'L’intention homicide doit être :',
     options: [
@@ -16373,7 +16373,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’intention homicide doit exister au moment des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Mobiles',
     question: 'Les mobiles (politique, euthanasie…) :',
     options: [
@@ -16386,7 +16386,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique expressément que les mobiles sont indifférents.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Erreur sur la personne',
     question: 'Si l’auteur se trompe de victime (erreur sur la personne) :',
     options: [
@@ -16399,7 +16399,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que l’erreur sur la personne ne fait pas disparaître l’intention.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (principe)',
     question: 'Le meurtre est aggravé (221-2 CP) lorsqu’il est :',
     options: [
@@ -16412,7 +16412,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise l’aggravation quand le meurtre est concomitant à un autre crime (221-2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (condition)',
     question: 'Pour retenir 221-2, l’auteur du meurtre doit :',
     options: [
@@ -16425,7 +16425,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’aggravation suppose que l’auteur (ou un auteur/complice) soit déclaré coupable du crime concomitant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (ordre/lieu)',
     question:
         'Pour 221-2, le lieu et l’ordre de commission du meurtre et de l’autre crime :',
@@ -16439,7 +16439,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le lieu et l’ordre de commission des infractions sont indifférents.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (tentative)',
     question: 'Selon le cours, l’aggravation 221-2 peut s’appliquer même si :',
     options: [
@@ -16452,7 +16452,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que peu importe que le meurtre ou l’autre crime ait seulement été tenté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (corrélation)',
     question: 'Pour retenir 221-2, il faut notamment :',
     options: [
@@ -16466,7 +16466,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exige un rapport de cause à effet et un plan unique (faciliter/favoriser la fuite/assurer l’impunité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-3',
     question: 'Le meurtre commis avec préméditation ou guet-apens relève :',
     options: [
@@ -16479,7 +16479,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 221-3 vise la préméditation ou le guet-apens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (mineur)',
     question: 'Le meurtre est aggravé lorsqu’il est commis sur :',
     options: [
@@ -16491,7 +16491,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours vise l’aggravation sur mineur de 15 ans (221-4).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (ascendant)',
     question: 'Le meurtre est aggravé lorsqu’il est commis sur :',
     options: [
@@ -16504,7 +16504,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste l’ascendant et les parents adoptifs parmi les aggravations de 221-4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (vulnérabilité)',
     question:
         'Le meurtre est aggravé s’il est commis sur une personne vulnérable :',
@@ -16519,7 +16519,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la vulnérabilité apparente ou connue (221-4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (sujétion)',
     question: 'Le meurtre est aggravé lorsqu’il est commis sur une personne :',
     options: [
@@ -16533,7 +16533,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’état de sujétion (223-15-3) comme circonstance aggravante (221-4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (qualité)',
     question:
         'Le meurtre est aggravé lorsqu’il vise un dépositaire de l’autorité publique :',
@@ -16548,7 +16548,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la condition de contexte et la qualité apparente/connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (conjoint)',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -16562,7 +16562,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise l’application aussi à l’ancien conjoint/concubin/partenaire en raison des relations ayant existé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (refus de mariage)',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -16576,7 +16576,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste le refus de mariage/union parmi les aggravations (221-4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (ivresse/stupéfiants)',
     question: 'Le meurtre est aggravé lorsqu’il est commis par une personne :',
     options: [
@@ -16593,7 +16593,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMPOISONNEMENT — APPROFONDISSEMENT (CONCOURS / PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Fondement',
     question: 'L’empoisonnement est défini et réprimé par :',
     options: [
@@ -16605,7 +16605,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise l’article 221-5 CP comme fondement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Mode d’administration',
     question:
         'Le code pénal ne définit pas expressément le mode d’administration : cela signifie que :',
@@ -16620,7 +16620,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la façon de procéder à l’empoisonnement est indifférente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Administration indirecte',
     question: 'Le mode d’administration peut être indirect lorsque :',
     options: [
@@ -16634,7 +16634,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit une administration indirecte via un tiers de bonne foi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime trompée',
     question: 'L’empoisonnement peut être caractérisé même si :',
     options: [
@@ -16647,7 +16647,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’administration peut être le fait de la victime elle-même si elle a été trompée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Caractère mortifère',
     question: 'Le caractère mortifère de la substance s’apprécie :',
     options: [
@@ -16661,7 +16661,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise une appréciation in concreto : caractéristiques + usage + sensibilité connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Mélanges',
     question:
         'L’administration en connaissance de cause de produits associés :',
@@ -16675,7 +16675,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : l’association de produits peut constituer l’élément matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Infraction formelle',
     question:
         'Dire que l’empoisonnement est une infraction formelle signifie que :',
@@ -16690,7 +16690,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique l’indifférence du résultat : la consommation ne dépend pas du décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Connaissance',
     question: 'Si l’auteur ignore la nature mortelle de la substance, alors :',
     options: [
@@ -16703,7 +16703,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exige la connaissance du caractère mortifère de la substance employée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Intention',
     question: 'Selon la Cour de cassation (cours), l’empoisonnement suppose :',
     options: [
@@ -16716,7 +16716,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle le principe : « ne peut être caractérisé que si l’auteur a agi avec l’intention de donner la mort ».',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Tentative (frontière)',
     question: 'La consommation de l’empoisonnement intervient :',
     options: [
@@ -16729,7 +16729,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours situe la consommation au moment où la substance est introduite dans l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Actes préparatoires',
     question:
         'Sont qualifiés d’actes préparatoires (trop éloignés) par le cours :',
@@ -16747,7 +16747,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PROVOCATION (221-5-1) / RÉDUCTION (221-5-3) — EMP. & MEURTRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation — Principe',
     question:
         'La provocation (offres/promesses/dons) à commettre un assassinat ou un empoisonnement, non suivi d’effet :',
@@ -16761,7 +16761,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’« instigateur » est poursuivi même si le crime n’a été ni commis ni tenté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réduction de peine — Empoisonnement',
     question:
         'Pour l’empoisonnement, la peine peut être réduite des deux tiers si :',
@@ -16780,7 +16780,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES 222-14-1 — APPROFONDISSEMENT (CONCOURS / PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Alternative',
     question: 'Pour retenir 222-14-1, la commission doit être :',
     options: [
@@ -16792,7 +16792,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise que les deux conditions sont alternatives.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Arme (nature/destination)',
     question: 'Pour 222-14-1, l’arme peut être :',
     options: [
@@ -16805,7 +16805,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise une arme quelle qu’elle soit (par nature ou destination).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Violences psychologiques',
     question: 'Selon le cours, les violences peuvent être :',
     options: [
@@ -16818,7 +16818,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que les violences sont constituées quelle que soit leur nature, y compris psychologiques.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Contexte (exercice/occasion/raison)',
     question: '« En raison des fonctions » signifie notamment que :',
     options: [
@@ -16832,7 +16832,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue : exercice des fonctions / à l’occasion / en raison (motivation par la qualité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Proches',
     question:
         'La protection s’étend aux proches vivant habituellement au domicile :',
@@ -16847,7 +16847,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise l’extension aux proches au domicile, en raison des fonctions exercées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Fondement',
     question: 'Le meurtre est défini et réprimé par :',
     options: [
@@ -16860,7 +16860,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 221-1 CP définit et réprime le meurtre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément matériel',
     question: 'L’élément matériel du meurtre suppose :',
     options: [
@@ -16873,7 +16873,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le meurtre repose sur un acte positif de violence ; l’omission relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Acte d’omission',
     question: 'Une privation de soins est :',
     options: [
@@ -16887,7 +16887,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’un comportement négatif (privation de soins) ne caractérise pas l’élément matériel du meurtre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Personne visée',
     question: 'Le meurtre suppose une victime :',
     options: ['Humaine et vivante', 'Animale', 'Indéterminée mais non humaine'],
@@ -16896,7 +16896,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le meurtre vise une personne humaine, vivante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Suicide',
     question: 'Le suicide :',
     options: [
@@ -16908,7 +16908,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours rappelle que le suicide n’est pas incriminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Intention homicide (preuve)',
     question: 'L’intention homicide peut s’induire notamment :',
     options: [
@@ -16921,7 +16921,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : arme utilisée + région du corps frappée peuvent révéler l’intention.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Qualification',
     question:
         'Un meurtre commis avec préméditation ou guet-apens correspond à :',
@@ -16931,7 +16931,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 221-3 vise le meurtre avec préméditation ou guet-apens : c’est l’assassinat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Bande organisée',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -16944,7 +16944,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste la bande organisée parmi les circonstances de l’article 221-4 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Répression (simple)',
     question: 'La peine encourue pour meurtre simple (221-1) est :',
     options: [
@@ -16957,7 +16957,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique 30 ans de réclusion pour le meurtre simple.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Tentative',
     question: 'La tentative de meurtre est :',
     options: [
@@ -16970,7 +16970,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : tentative de meurtre = OUI (si commencement d’exécution).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Complicité',
     question: 'La complicité de meurtre est :',
     options: [
@@ -16983,7 +16983,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que la complicité est punissable conformément aux articles 121-6 et 121-7.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre / Empoisonnement — Exemption',
     question:
         'Selon le cours, une personne ayant tenté meurtre/empoisonnement est exempte de peine si :',
@@ -16998,7 +16998,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’exemption spécifique : avertir l’autorité et éviter la mort de la victime.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Réduction de peine',
     question: 'La réduction de peine (2/3) pour meurtre est possible si :',
     options: [
@@ -17016,7 +17016,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMPOISONNEMENT — SUITE (CONCOURS / TENTATIVE / PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Acte positif',
     question:
         'L’empoisonnement est une infraction de commission : cela suppose :',
@@ -17030,7 +17030,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’empoisonnement suppose un acte positif : une abstention ne suffit pas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Emploi vs administration',
     question: 'Selon le cours, « l’emploi » de la substance mortifère :',
     options: [
@@ -17044,7 +17044,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue emploi (préparation, mise à disposition) et administration (faire pénétrer dans l’organisme).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Exemple emploi',
     question: 'Selon le cours, mélanger du poison à un plat constitue :',
     options: [
@@ -17057,7 +17057,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne cet exemple : mélanger du poison à un plat = emploi, non administration.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime déterminée',
     question: 'L’empoisonnement peut être constitué même si la victime est :',
     options: [
@@ -17070,7 +17070,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’infraction peut viser une victime déterminée ou indéterminée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Sur un animal',
     question: 'L’empoisonnement (221-5) :',
     options: [
@@ -17083,7 +17083,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’empoisonnement vise une personne humaine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Substances mortifères',
     question: 'Une substance « de nature à entraîner la mort » :',
     options: [
@@ -17096,7 +17096,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’elle peut tuer, sans que la mort soit certaine dans tous les cas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Incubation',
     question: 'Le caractère mortifère peut s’exprimer :',
     options: [
@@ -17110,7 +17110,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours évoque une action rapide ou une mort à long terme (répétition, incubation).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Tentative (commencement)',
     question:
         'Le commencement d’exécution de l’empoisonnement est retenu notamment lorsque :',
@@ -17124,7 +17124,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : commencement d’exécution dès lors que le poison est présenté ou mis à disposition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Complicité',
     question: 'La complicité d’empoisonnement est :',
     options: [
@@ -17136,7 +17136,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours rappelle : complicité = OUI.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Provocation',
     question:
         'La provocation à commettre un empoisonnement, non suivie d’effet, est :',
@@ -17154,7 +17154,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES 222-14-1 — SUITE (RÉSULTATS / PEINES / TECHNIQUE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Victimes protégées',
     question: '222-14-1 vise notamment comme victimes :',
     options: [
@@ -17168,7 +17168,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère les catégories de victimes spécifiquement protégées par 222-14-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Dépositaire autorité publique',
     question: 'Selon le cours, est dépositaire de l’autorité publique :',
     options: [
@@ -17182,7 +17182,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne une définition fonctionnelle du dépositaire de l’autorité publique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Maire',
     question:
         'Selon le cours, les responsables des exécutifs locaux (ex : maires) :',
@@ -17196,7 +17196,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les maires et exécutifs locaux ont cette qualité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — ITT et constat',
     question: 'Selon le cours, l’ITT (222-14-1) peut être constatée :',
     options: [
@@ -17210,7 +17210,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique expressément cette possibilité de constat par médecin expert.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Qualification ITT 0-8 jours',
     question:
         'Les violences 222-14-1 ayant entraîné une ITT de 0 à 8 jours constituent :',
@@ -17220,7 +17220,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique que l’ITT 0 à 8 jours (222-14-1 4°) est un délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT 0-8)',
     question: 'Pour 222-14-1 avec ITT 0 à 8 jours, la peine principale est :',
     options: [
@@ -17233,7 +17233,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours (tableau) fixe 10 ans et 150 000 € pour 222-14-1 (ITT 0-8 jours).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Qualification ITT > 8 jours',
     question:
         'Les violences 222-14-1 ayant entraîné une ITT > 8 jours constituent :',
@@ -17242,7 +17242,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours classe l’ITT > 8 jours (222-14-1 3°) comme crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT > 8)',
     question: 'Pour 222-14-1 avec ITT > 8 jours, la peine principale est :',
     options: [
@@ -17255,7 +17255,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique 15 ans de réclusion (période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Mutilation/infirmité',
     question:
         'En cas de mutilation ou infirmité permanente (222-14-1), la peine est :',
@@ -17269,7 +17269,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique 20 ans de réclusion (période de sûreté) en cas de mutilation/infirmité permanente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Mort',
     question:
         'Si les violences 222-14-1 entraînent la mort sans intention de la donner, la peine est :',
@@ -17283,7 +17283,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique 30 ans de réclusion (période de sûreté) lorsque les violences entraînent la mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Tentative',
     question: 'Pour les violences délictuelles 222-14-1, la tentative est :',
     options: [
@@ -17300,7 +17300,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // ATTEINTES INVOLONTAIRES — CONTRAVENTIONS — ITT ≤ 3 MOIS
   // (R. 622-1 / R. 625-2 / R. 625-3 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Principe',
     question:
         'Hors les cas prévus par 222-20 et 222-20-1, causer une ITT ≤ 3 mois par maladresse/imprudence constitue :',
@@ -17314,7 +17314,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue les atteintes involontaires contraventionnelles (ITT ≤ 3 mois) hors régimes délictuels spécifiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Faute',
     question:
         'La liste des fautes (maladresse, imprudence, inattention, négligence, manquement à une obligation) en matière contraventionnelle est :',
@@ -17324,7 +17324,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la liste est limitative et doit être caractérisée par les juges.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Négligence',
     question: 'Selon le cours, la négligence correspond surtout :',
     options: [
@@ -17337,7 +17337,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la négligence comme le fait de ne pas se soucier des conséquences de son abstention.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Obligation',
     question:
         'Le “règlement” au sens du cours (obligation de prudence/sécurité) vise :',
@@ -17351,7 +17351,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le règlement s’entend des actes des autorités administratives à caractère général et impersonnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Source',
     question:
         'En cas de manquement à une obligation textuelle, les magistrats doivent :',
@@ -17365,7 +17365,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’exigence de précision sur la source et la nature de l’obligation (logique Cass. crim., 18 juin 2002).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — ITT',
     question: 'Pour R. 625-2 CP, l’ITT retenue doit être :',
     options: [
@@ -17378,7 +17378,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : ITT ≤ 3 mois consécutifs et non des périodes additionnées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Sans ITT',
     question: 'R. 622-1 CP vise :',
     options: [
@@ -17391,7 +17391,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours présente R. 622-1 comme l’atteinte involontaire sans ITT (2e classe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Aggravation',
     question: 'La contravention de 5e classe (R. 625-3) correspond :',
     options: [
@@ -17405,7 +17405,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que R. 625-3 aggrave R. 622-1 lorsque la violation est manifestement délibérée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Moral',
     question:
         'En matière contraventionnelle d’atteintes involontaires, l’élément moral est :',
@@ -17419,7 +17419,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : “Non exigé en matière contraventionnelle”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Tentative',
     question: 'La tentative des contraventions d’atteintes involontaires est :',
     options: ['Non', 'Oui', 'Oui si ITT = 0'],
@@ -17427,7 +17427,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : tentative = NON en contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Complicité',
     question:
         'La complicité en matière de contraventions d’atteintes involontaires est :',
@@ -17442,7 +17442,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // ATTEINTES INVOLONTAIRES — DÉLIT — ITT ≤ 3 MOIS (CONDUCTEUR)
   // (222-20-1 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Fondement',
     question:
         'Les atteintes involontaires commises par conducteur (ITT ≤ 3 mois) sont prévues par :',
@@ -17456,7 +17456,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les blessures involontaires par conducteur avec ITT ≤ 3 mois sont prévues et réprimées à 222-20-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Faute',
     question: 'Pour 222-20-1, les fautes de base sont notamment :',
     options: [
@@ -17470,7 +17470,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours renvoie à 222-19 et 121-3 : cinq comportements fautifs (faute d’imprudence simple).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Peines (simple)',
     question: 'Pour 222-20-1 (régime simple), les peines principales sont :',
     options: [
@@ -17483,7 +17483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique 2 ans et 30 000 € pour 222-20-1 (simple).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Aggravation',
     question: 'Dans 222-20-1, le “2e degré” correspond :',
     options: [
@@ -17496,7 +17496,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue l’aggravation lorsque deux ou plus des circonstances sont réunies.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Complicité',
     question:
         'Pour 222-20-1 (blessures involontaires conducteur), la complicité est :',
@@ -17506,7 +17506,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : complicité = NON pour ce délit non intentionnel (222-20-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Tentative',
     question: 'Pour 222-20-1, la tentative est :',
     options: [
@@ -17524,7 +17524,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // ATTEINTES INVOLONTAIRES — DÉLIT — ITT > 3 MOIS
   // (222-19 CP + aggravations 222-19-1 / 222-19-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Fondement',
     question:
         'Les blessures involontaires avec ITT > 3 mois sont prévues par :',
@@ -17538,7 +17538,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’ITT > 3 mois relève de 222-19 al.1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Élément moral',
     question:
         'Pour les infractions non intentionnelles (blessures involontaires), l’élément moral est :',
@@ -17552,7 +17552,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle : l’élément moral n’est pas requis pour les infractions non intentionnelles (sauf cas de violation délibérée à caractériser).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Violation délibérée',
     question:
         'La circonstance aggravante “violation manifestement délibérée” (222-19 al.2) suppose :',
@@ -17567,7 +17567,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : obligation particulière + connaissance + choix délibéré de ne pas la respecter.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Conducteur',
     question: 'Le 1er degré d’aggravation (222-19-1) vise notamment :',
     options: [
@@ -17580,7 +17580,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 222-19-1 prévoit une aggravation lorsque l’infraction est commise par conducteur de VTAM.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — 2e degré (routier)',
     question:
         'Le 2e degré (222-19-1) peut être caractérisé si les blessures s’accompagnent notamment :',
@@ -17595,7 +17595,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste ces infractions routières comme circonstances d’aggravation du 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — 3e degré (routier)',
     question: 'Le 3e degré (222-19-1) correspond :',
     options: [
@@ -17608,7 +17608,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 3e degré = deux ou plusieurs circonstances prévues.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Délit de fuite',
     question:
         'Selon le cours, une aggravation spécifique peut exister lorsque les blessures sont suivies :',
@@ -17622,7 +17622,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’article 434-10 CP pour le cas du délit de fuite (hors régime 222-19-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Complicité',
     question:
         'En matière de blessures involontaires (ITT > 3 mois), la complicité est :',
@@ -17641,7 +17641,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // BLESSURES INVOLONTAIRES — VIOLATION MANIFESTEMENT DÉLIBÉRÉE
   // (222-20 CP + aggravation 222-20-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Fondement',
     question:
         'Les blessures involontaires par violation manifestement délibérée (ITT ≤ 3 mois) sont prévues par :',
@@ -17655,7 +17655,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’infraction est prévue et réprimée par 222-20 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Obligation particulière',
     question:
         'L’obligation particulière de prudence ou de sécurité doit être prévue par :',
@@ -17669,7 +17669,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’obligation particulière doit être prévue par un texte (loi/décret/arrêté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Connaissance',
     question: 'Pour caractériser 222-20, il faut établir que la personne :',
     options: [
@@ -17682,7 +17682,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la personne doit avoir connaissance de l’obligation (formation/fonctions/compétences/responsabilités).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Volonté',
     question: 'La “violation manifestement délibérée” implique :',
     options: [
@@ -17695,7 +17695,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : le dommage n’est pas voulu, mais le risque est pleinement assumé (choix de transgresser).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Complicité',
     question: 'Pour 222-20 (faute délibérée), la complicité est :',
     options: ['Oui', 'Non', 'Impossible par nature'],
@@ -17704,7 +17704,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : complicité = OUI, car il s’agit d’une faute délibérée (ex : instigation).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Tentative',
     question: 'Pour 222-20, la tentative est :',
     options: ['Non', 'Oui', 'Oui si deux circonstances aggravantes'],
@@ -17716,7 +17716,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // HOMICIDE INVOLONTAIRE (221-6 + aggravations 221-6-1 / 221-6-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Fondement',
     question: 'L’homicide involontaire est prévu et réprimé par :',
     options: [
@@ -17729,7 +17729,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 221-6 CP prévoit et réprime l’homicide involontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Résultat',
     question: 'Le dommage de l’homicide involontaire est :',
     options: [
@@ -17741,7 +17741,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : le dommage est la mort d’autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Faute',
     question: 'La faute simple (221-6) peut être :',
     options: [
@@ -17755,7 +17755,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours renvoie à 121-3 : cinq comportements fautifs (liste limitative).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité',
     question: 'Selon le cours, le lien de causalité exigé par 221-6 :',
     options: [
@@ -17769,7 +17769,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’un lien direct et immédiat n’est pas exigé : il suffit qu’il soit certain.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité indirecte',
     question: 'L’auteur indirect (121-3 al.4) est celui qui :',
     options: [
@@ -17783,7 +17783,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la définition légale des auteurs indirects (création de situation dangereuse / omission de mesures).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Aggravation (violation délibérée)',
     question: 'L’homicide involontaire est aggravé (221-6 al.2) lorsque :',
     options: [
@@ -17797,7 +17797,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise 221-6 al.2 : violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Aggravation conducteur',
     question:
         '221-6-1 prévoit une aggravation lorsque l’homicide involontaire est commis :',
@@ -17811,7 +17811,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 221-6-1 (1er degré) si commis par conducteur de VTAM.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Peines (simple)',
     question:
         'La peine principale de l’homicide involontaire simple (221-6 al.1) est :',
@@ -17825,7 +17825,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 3 ans et 45 000 € pour 221-6 al.1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Complicité',
     question: 'Pour l’homicide involontaire, la complicité est :',
     options: ['Non (jurisprudence)', 'Oui', 'Oui si bande organisée'],
@@ -17834,7 +17834,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence exclut la complicité en matière d’infraction non intentionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: ['Non (résultat non souhaité)', 'Oui', 'Oui uniquement si alcool'],
@@ -17844,7 +17844,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Complicité',
     question: 'La complicité est :',
     options: [
@@ -17858,7 +17858,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique complicité = OUI et rappelle le lien avec la bande organisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Fondement',
     question:
         'Les atteintes involontaires avec ITT ≤ 3 mois, hors délits, sont prévues par :',
@@ -17876,7 +17876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MEURTRE — art. 221-1 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Définition',
     question: 'Le meurtre est :',
     options: [
@@ -17889,7 +17889,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit le meurtre comme le fait de donner volontairement la mort à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Fondement',
     question: 'Le meurtre est défini et réprimé par :',
     options: [
@@ -17902,7 +17902,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 221-1 CP définit et réprime le meurtre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément matériel',
     question: 'L’élément matériel du meurtre suppose :',
     options: [
@@ -17915,7 +17915,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le meurtre exige un acte positif de violence; l’omission relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Moyen',
     question: 'Le moyen utilisé pour commettre un meurtre est :',
     options: [
@@ -17928,7 +17928,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le moyen est indifférent : mains nues, arme par nature ou destination…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Actes successifs',
     question: 'Un homicide volontaire peut résulter :',
     options: [
@@ -17942,7 +17942,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence admet des moyens multiples et successifs, sans date/lieu unique nécessaire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Victime',
     question: 'Le meurtre vise :',
     options: ['Une personne humaine', 'Un animal', 'Un bien meuble'],
@@ -17950,7 +17950,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le meurtre ne s’applique pas à un animal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Personne vivante',
     question:
         'Si l’acte est accompli sur un cadavre (victime déjà décédée), la qualification retenue est :',
@@ -17964,7 +17964,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’acte sur cadavre relève de l’infraction impossible, assimilée à la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Suicide',
     question: 'Le suicide est :',
     options: [
@@ -17976,7 +17976,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise que le suicide n’est pas incriminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Consentement',
     question: 'Le consentement de la victime (à sa prière/ordre exprès) :',
     options: [
@@ -17989,7 +17989,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’indifférence du consentement (euthanasie / suicide assisté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Lien de causalité',
     question: 'Pour le meurtre, il faut établir :',
     options: [
@@ -18002,7 +18002,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’acte doit avoir provoqué la mort : les violences sont la cause efficiente du décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément moral',
     question: 'L’élément moral du meurtre est :',
     options: [
@@ -18015,7 +18015,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le meurtre suppose une intention homicide : la détermination de donner la mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Indices d’intention',
     question: 'L’intention homicide peut notamment s’induire :',
     options: [
@@ -18028,7 +18028,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’induction par l’arme utilisée et la région du corps visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Mobiles',
     question: 'Les mobiles en matière de meurtre sont :',
     options: ['Indifférents', 'Toujours aggravants', 'Toujours atténuants'],
@@ -18037,7 +18037,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les mobiles sont indifférents (politique, euthanasie…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Erreur sur la personne',
     question: 'L’erreur sur la personne visée :',
     options: [
@@ -18049,7 +18049,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La volonté de tuer demeure : le meurtre reste constitué.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Tentative',
     question: 'La tentative de meurtre est :',
     options: [
@@ -18062,7 +18062,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la tentative est punissable en présence d’un commencement d’exécution.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Complicité',
     question: 'La complicité de meurtre est :',
     options: [
@@ -18079,7 +18079,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MEURTRE — CIRCONSTANCES AGGRAVANTES (221-2 / 221-3 / 221-4)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Crime concomitant',
     question:
         'Le meurtre est aggravé lorsqu’il est précédé, accompagné ou suivi :',
@@ -18093,7 +18093,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’aggravation de l’article 221-2 CP (concomitance avec un crime).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Préméditation',
     question: 'Le meurtre commis avec préméditation ou guet-apens relève :',
     options: [
@@ -18106,7 +18106,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique l’article 221-3 CP pour préméditation/guet-apens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Victime',
     question: 'Le meurtre est aggravé notamment lorsqu’il est commis sur :',
     options: [
@@ -18119,7 +18119,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste l’aggravation sur mineur de 15 ans (art. 221-4 CP).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Qualité de la victime',
     question:
         'Le meurtre est aggravé lorsqu’il est commis sur une personne dépositaire de l’autorité publique :',
@@ -18134,7 +18134,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’exigence de contexte + qualité apparente/connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Bande organisée',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -18147,7 +18147,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la bande organisée parmi les aggravations de l’art. 221-4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Peines',
     question: 'Le meurtre simple (art. 221-1 CP) est puni de :',
     options: [
@@ -18160,7 +18160,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la peine du meurtre simple : 30 ans de réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Peine',
     question: 'Le meurtre aggravé (221-2/221-3/221-4) est puni de :',
     options: [
@@ -18176,7 +18176,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PROVOCATION / EXEMPTION / RÉDUCTION (MEURTRE & EMPOISONNEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation — Assassinat/Empoisonnement',
     question:
         'Le fait de faire des offres/promesses/dons pour faire commettre un assassinat ou un empoisonnement non commis ni tenté est :',
@@ -18190,7 +18190,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’« instigateur » : infraction autonome si pas de crime/tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemption — Tentative',
     question:
         'Une personne ayant tenté un meurtre ou un empoisonnement peut être exempte de peine si :',
@@ -18203,7 +18203,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite l’exemption spécifique (221-5-3 al.1 CP).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réduction de peine — Meurtre',
     question:
         'Pour le meurtre, la peine peut être réduite des deux tiers si l’auteur/complice :',
@@ -18222,7 +18222,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMPOISONNEMENT — art. 221-5 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Définition',
     question: 'L’empoisonnement est :',
     options: [
@@ -18236,7 +18236,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit l’empoisonnement par emploi/administration de substances mortifères.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Fondement',
     question: 'L’empoisonnement est défini et réprimé par :',
     options: [
@@ -18248,7 +18248,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique l’article 221-5 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Acte positif',
     question: 'L’empoisonnement est une infraction :',
     options: [
@@ -18260,7 +18260,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise qu’une simple abstention ne suffit pas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Emploi vs Administration',
     question: 'Dans le cours, « administrer » désigne :',
     options: [
@@ -18273,7 +18273,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’administration vise l’action directe : ingérer, injecter, inoculer…',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Emploi vs Administration',
     question: 'Dans le cours, « emploi » désigne :',
     options: [
@@ -18287,7 +18287,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’emploi est en amont : ex. poison mélangé au plat / mise à disposition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime',
     question: 'L’empoisonnement vise :',
     options: ['Une personne humaine', 'Un animal', 'Un objet'],
@@ -18296,7 +18296,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que l’empoisonnement ne s’applique pas à un animal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime indéterminée',
     question: 'L’empoisonnement est constitué même si la victime est :',
     options: [
@@ -18309,7 +18309,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours admet la victime indéterminée (ex : contamination d’un puits).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Substance',
     question: 'Une « substance de nature à entraîner la mort » :',
     options: [
@@ -18322,7 +18322,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : peut entraîner la mort, pas nécessairement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Résultat',
     question: 'L’empoisonnement est une infraction :',
     options: [
@@ -18335,7 +18335,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le crime est réalisé du seul fait de l’administration, quelles qu’en soient les suites.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Élément moral',
     question: 'Pour caractériser l’empoisonnement, il faut :',
     options: [
@@ -18349,7 +18349,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la seule connaissance ne suffit pas : intention de tuer requise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Tentative',
     question:
         'Pour l’empoisonnement, la frontière tentative/consommé se situe :',
@@ -18363,7 +18363,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours place la consommation dès que la substance pénètre dans l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Commencement d’exécution',
     question:
         'Le commencement d’exécution (tentative) est retenu notamment lorsque :',
@@ -18377,7 +18377,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la tentative peut commencer dès la présentation/mise à disposition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Complicité',
     question: 'La complicité d’empoisonnement est :',
     options: ['Punissable (121-6 et 121-7 CP)', 'Exclue', 'Uniquement civile'],
@@ -18385,7 +18385,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours rappelle la complicité punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Provocation',
     question:
         'La provocation à commettre un empoisonnement non commis ni tenté (offres/promesses) est :',
@@ -18399,7 +18399,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’« instigateur » : infraction autonome en l’absence de crime/tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Peine',
     question: 'L’empoisonnement simple (art. 221-5 CP) est puni de :',
     options: [
@@ -18412,7 +18412,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique 30 ans de réclusion avec période de sûreté pour la forme simple.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement aggravé — Peine',
     question: 'L’empoisonnement aggravé est puni de :',
     options: [
@@ -18428,7 +18428,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES AVEC ARME SUR D.A.P / SP / TRANSPORT — art. 222-14-1
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Fondement',
     question:
         'Les violences avec arme sur personne dépositaire de l’autorité publique (bande organisée ou guet-apens) sont définies par :',
@@ -18442,7 +18442,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’article 222-14-1 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Condition alternative',
     question:
         'Pour l’article 222-14-1, la condition « bande organisée ou guet-apens » est :',
@@ -18455,7 +18455,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise que les deux conditions sont alternatives.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Bande organisée',
     question: 'La bande organisée (132-71 CP) suppose :',
     options: [
@@ -18469,7 +18469,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la définition de l’article 132-71 CP (préparation + faits matériels).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Guet-apens',
     question: 'Le guet-apens se caractérise par :',
     options: [
@@ -18483,7 +18483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique l’attente en un lieu déterminé, créant l’effet de surprise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Arme',
     question: 'Pour 222-14-1, les violences doivent être commises :',
     options: [
@@ -18496,7 +18496,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’usage ou la menace d’une arme, quelle qu’elle soit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Victimes visées',
     question:
         'Parmi les victimes visées explicitement par 222-14-1, on trouve :',
@@ -18511,7 +18511,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère ces catégories parmi les victimes protégées par 222-14-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Dépositaire A.P.',
     question: 'Une personne dépositaire de l’autorité publique est notamment :',
     options: [
@@ -18525,7 +18525,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne la définition : pouvoir de décision/contrainte investi par délégation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Autres victimes',
     question: 'Sont aussi visés par 222-14-1 :',
     options: [
@@ -18539,7 +18539,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement les sapeurs-pompiers et agents de transport public.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Proches',
     question: 'L’article 222-14-1 vise aussi les violences commises contre :',
     options: [
@@ -18553,7 +18553,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours étend la protection aux proches vivant habituellement au domicile, en raison des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Contexte',
     question: 'L’infraction doit être commise :',
     options: [
@@ -18566,7 +18566,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les trois hypothèses : exercice / à l’occasion / en raison.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Résultat',
     question: 'Le texte 222-14-1 distingue notamment selon que les violences :',
     options: [
@@ -18580,7 +18580,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours présente les 4 niveaux de résultat retenus par 222-14-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — ITT',
     question:
         'L’ITT, à la demande de la victime ou du poursuivi, est constatée par :',
@@ -18590,7 +18590,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la constatation par médecin expert sur demande.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Élément moral',
     question: 'Pour 222-14-1, l’élément moral suppose :',
     options: [
@@ -18604,7 +18604,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la conscience + la volonté de violences sur une victime visée par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Aggravantes',
     question:
         'Le cours indique, pour 222-14-1, des circonstances aggravantes :',
@@ -18618,7 +18618,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne : « Aucune » circonstance aggravante additionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Tentative',
     question: 'La tentative des violences délictuelles 222-14-1 est :',
     options: [
@@ -18631,7 +18631,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Complicité',
     question: 'La complicité pour 222-14-1 est :',
     options: ['Punissable', 'Exclue', 'Uniquement civile'],
@@ -18640,7 +18640,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la complicité punissable (121-6/121-7) et cohérente avec bande organisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT 0 à 8 jours)',
     question: 'Les violences (ITT 0 à 8 jours) de 222-14-1 sont punies de :',
     options: [
@@ -18652,7 +18652,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique 10 ans et 150 000 € pour ITT 0 à 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT > 8 jours)',
     question: 'Les violences (ITT > 8 jours) de 222-14-1 sont punies de :',
     options: [
@@ -18664,7 +18664,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours prévoit 15 ans de réclusion pour ITT > 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (Infirmité)',
     question:
         'Les violences ayant entraîné mutilation/infirmité permanente (222-14-1) sont punies de :',
@@ -18678,7 +18678,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique 20 ans de réclusion en cas de mutilation/infirmité permanente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (Mort)',
     question:
         'Les violences ayant entraîné la mort sans intention de la donner (222-14-1) sont punies de :',
@@ -18696,7 +18696,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // QUESTIONS "CONCOURS" — PIÈGES & DISTINCTIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Meurtre vs Omission',
     question: 'Un comportement négatif (privation de soins) constitue :',
     options: [
@@ -18710,7 +18710,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exclut l’omission du meurtre : d’autres infractions peuvent s’appliquer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Empoisonnement (intention)',
     question:
         'Si l’auteur sait que la substance est mortifère mais n’a pas l’intention de tuer :',
@@ -18724,7 +18724,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que l’empoisonnement exige aussi l’intention de donner la mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Empoisonnement (consommation)',
     question: 'L’empoisonnement est consommé :',
     options: [
@@ -18738,7 +18738,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Infraction formelle : consommation dès que la substance est introduite dans l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-1 (structure)',
     question: 'Pour retenir 222-14-1, il faut notamment :',
     options: [
@@ -18752,7 +18752,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours structure l’infraction autour de ces conditions cumulatives (avec alternative bande/guet-apens).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Fondement',
     question:
         'La participation à un groupement violent est définie et réprimée par :',
@@ -18769,7 +18769,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTES INVOLONTAIRES — CONTRAVENTIONS — ITT ≤ 3 MOIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Fondement',
     question:
         'Les atteintes involontaires avec ITT ≤ 3 mois, hors délits, sont prévues par :',
@@ -18783,7 +18783,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les atteintes involontaires contraventionnelles relèvent des articles R. 625-2, R. 625-3 et R. 622-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Faute',
     question: 'En matière contraventionnelle, la faute exigée est :',
     options: [
@@ -18796,7 +18796,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Les contraventions reposent sur une faute simple d’imprudence ou de négligence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — ITT',
     question: 'Pour l’article R. 625-2 du CP, la victime doit avoir subi :',
     options: ['Une ITT ≤ 3 mois', 'Une ITT > 3 mois', 'Aucune atteinte'],
@@ -18805,7 +18805,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article R. 625-2 CP vise une ITT inférieure ou égale à trois mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Violation délibérée',
     question: 'L’article R. 625-3 CP réprime :',
     options: [
@@ -18819,7 +18819,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'R. 625-3 CP vise l’atteinte sans ITT en cas de violation manifestement délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Tentative',
     question: 'La tentative d’atteinte involontaire contraventionnelle est :',
     options: [
@@ -18836,7 +18836,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTES INVOLONTAIRES — ITT > 3 MOIS — art. 222-19 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Fondement',
     question:
         'Les atteintes involontaires avec ITT > 3 mois sont prévues par :',
@@ -18850,7 +18850,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-19 CP définit les blessures involontaires avec ITT supérieure à trois mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Élément matériel',
     question: 'L’élément matériel repose sur :',
     options: [
@@ -18863,7 +18863,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il s’agit d’une infraction non intentionnelle fondée sur une faute.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Causalité indirecte',
     question: 'En cas de causalité indirecte, la responsabilité exige :',
     options: [
@@ -18876,7 +18876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 121-3 CP impose une faute caractérisée ou délibérée en causalité indirecte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Complicité',
     question: 'La complicité en matière d’atteintes involontaires est :',
     options: [
@@ -18893,7 +18893,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLATION MANIFESTEMENT DÉLIBÉRÉE — art. 222-20 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Fondement',
     question:
         'La violation manifestement délibérée d’une obligation de sécurité est prévue par :',
@@ -18907,7 +18907,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-20 CP vise les blessures involontaires par violation délibérée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Élément moral',
     question: 'La violation délibérée suppose :',
     options: [
@@ -18920,7 +18920,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’auteur doit connaître l’obligation et choisir délibérément de ne pas la respecter.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Tentative',
     question: 'La tentative de violation délibérée est :',
     options: [
@@ -18937,7 +18937,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES VOLONTAIRES — art. 222-7 et s.
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Définition',
     question: 'Les violences volontaires sont :',
     options: [
@@ -18950,7 +18950,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Les violences supposent un acte volontaire affectant l’intégrité d’autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Acte matériel',
     question: 'L’acte matériel des violences suppose :',
     options: ['Un acte positif', 'Une simple abstention', 'Un accident'],
@@ -18958,7 +18958,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Les violences nécessitent une action positive de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Violence psychologique',
     question: 'Les violences psychologiques sont :',
     options: [
@@ -18971,7 +18971,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-14-3 CP reconnaît les violences psychologiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Tentative',
     question: 'La tentative de violences volontaires est :',
     options: [
@@ -18988,7 +18988,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // HOMICIDE INVOLONTAIRE — art. 221-6 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Fondement',
     question: 'L’homicide involontaire est prévu par :',
     options: [
@@ -19001,7 +19001,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 221-6 CP définit et réprime l’homicide involontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Élément matériel',
     question: 'L’homicide involontaire suppose :',
     options: ['La mort d’autrui', 'Une ITT', 'Une mutilation'],
@@ -19009,7 +19009,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le résultat exigé est le décès de la victime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: [
@@ -19025,7 +19025,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — CONTRAVENTIONS ITT ≤ 3 MOIS (R. 622-1 / R. 625-2 / R. 625-3)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Distinction',
     question: 'L’article R. 622-1 du CP réprime principalement :',
     options: [
@@ -19038,7 +19038,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rattache R. 622-1 aux atteintes involontaires sans ITT (contravention de 2e classe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Classe',
     question:
         'L’infraction prévue à l’article R. 622-1 du CP est une contravention de :',
@@ -19047,7 +19047,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : R. 622-1 = contravention de 2e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — ITT consécutive',
     question: 'Selon le cours, l’ITT ≤ 3 mois (R. 625-2) s’apprécie :',
     options: [
@@ -19060,7 +19060,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’ITT doit être consécutive et non une addition de périodes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Faute listée',
     question:
         'Pour retenir R. 625-2 (ou R. 625-3), les juges doivent caractériser :',
@@ -19074,7 +19074,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : la liste des fautes (maladresse, imprudence, inattention, négligence, manquement) est limitative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Manquement',
     question:
         'Le “manquement à une obligation de sécurité ou de prudence” suppose :',
@@ -19088,7 +19088,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’obligation doit être imposée par la loi ou le règlement (actes administratifs généraux et impersonnels).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Élément moral',
     question:
         'En matière contraventionnelle d’atteintes involontaires, l’élément moral est :',
@@ -19102,7 +19102,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’élément moral n’est pas requis en matière contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Aggravation',
     question: 'R. 625-3 constitue :',
     options: [
@@ -19116,7 +19116,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que R. 625-3 (5e classe) aggrave R. 622-1 (2e classe) en cas de violation manifestement délibérée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Responsabilité personnes morales',
     question:
         'La responsabilité pénale des personnes morales pour ces contraventions est prévue par :',
@@ -19130,7 +19130,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne expressément R. 625-5 et R. 622-1 al. 3 pour les personnes morales.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Complicité',
     question:
         'La complicité d’atteintes involontaires contraventionnelles est :',
@@ -19148,7 +19148,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — ITT > 3 MOIS (222-19) + AGGRAVATIONS (222-19-1 / 222-19-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Seuil',
     question: 'Le délit de l’article 222-19 al.1 suppose une ITT :',
     options: [
@@ -19161,7 +19161,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise explicitement l’ITT “pendant plus de trois mois” pour 222-19 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Circonstance aggravante (222-19 al.2)',
     question: 'L’article 222-19 al.2 aggrave lorsque l’infraction résulte :',
     options: [
@@ -19175,7 +19175,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-19 al.2 = aggravation par violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Obligation particulière',
     question:
         'La circonstance aggravante de violation délibérée ne peut pas résulter :',
@@ -19189,7 +19189,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la violation délibérée d’une circulaire ou d’un règlement intérieur ne constitue pas l’aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Aggravation conducteur (structure)',
     question: 'Les aggravations “conducteur VTM” sont structurées par :',
     options: [
@@ -19202,7 +19202,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-19-1 CP prévoit trois degrés d’aggravation pour le conducteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Aggravation conducteur (2e degré)',
     question:
         'Au 2e degré (222-19-1), peut notamment constituer une circonstance :',
@@ -19216,7 +19216,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère, au 2e degré, des délits routiers dont le délit de fuite.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Aggravation conducteur (3e degré)',
     question: 'Le 3e degré (222-19-1) correspond :',
     options: [
@@ -19229,7 +19229,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 3e degré = cumul de deux (ou +) circonstances listées au 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Chien (structure)',
     question:
         'Les aggravations liées à une agression commise par un chien relèvent de :',
@@ -19243,7 +19243,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-19-2 CP = aggravations “blessures involontaires” liées à l’agression par un chien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Délit de fuite (hors conducteur)',
     question:
         'Selon le cours, l’aggravation “délit de fuite” (hors 222-19-1) est rattachée à :',
@@ -19257,7 +19257,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne 434-10 CP pour le délit de fuite, hors cas prévus par 222-19-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Causalité directe',
     question: 'La causalité est dite “directe” lorsque l’auteur :',
     options: [
@@ -19271,7 +19271,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend l’idée de causalité immédiate (frapper/heurté ou contrôler le mouvement d’un objet causal).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Causalité indirecte',
     question: 'Sont auteurs indirects (121-3 al.4) ceux qui :',
     options: [
@@ -19289,7 +19289,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLATION MANIFESTEMENT DÉLIBÉRÉE (222-20) + COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Source de l’obligation',
     question:
         'L’obligation particulière de prudence ou de sécurité doit être prévue par :',
@@ -19303,7 +19303,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours exige une obligation “particulière” prévue par un texte normatif (loi/décret/arrêté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Exclusion (jurisprudence)',
     question:
         'Selon le cours, ne constitue pas une obligation particulière au sens de 222-20 :',
@@ -19318,7 +19318,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’exemple jurisprudentiel : l’arrêté préfectoral “immeuble insalubre” ne suffit pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Élément moral (précision)',
     question: 'La violation manifestement délibérée implique que l’auteur :',
     options: [
@@ -19332,7 +19332,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : le dommage n’est pas voulu, mais le risque est assumé, avec connaissance de l’obligation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Complicité',
     question:
         'Contrairement aux infractions non intentionnelles “pures”, la complicité est admise pour 222-20 car :',
@@ -19346,7 +19346,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la complicité est possible car 222-20 repose sur une violation délibérée (faute délibérée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Exemple complicité (cours)',
     question:
         'Selon le cours, un exemple de complicité par instigation pourrait être :',
@@ -19360,7 +19360,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours illustre la complicité par instigation : le passager qui ordonne un comportement risqué.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Chien (222-20-2)',
     question: 'Les circonstances aggravantes “chien” pour 222-20 relèvent de :',
     options: [
@@ -19377,7 +19377,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES (R.624-1 / R.625-1 / 222-11 / 222-13 / 222-12 / 222-9 / 222-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (aucune ITT)',
     question:
         'Les violences volontaires n’ayant entraîné aucune ITT relèvent de :',
@@ -19391,7 +19391,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : R. 624-1 CP vise les violences contraventionnelles sans ITT (4e classe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (ITT ≤ 8 jours)',
     question: 'Les violences volontaires avec ITT ≤ 8 jours relèvent de :',
     options: [
@@ -19404,7 +19404,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : R. 625-1 CP = violences contraventionnelles avec ITT ≤ 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Délit (ITT > 8 jours)',
     question:
         'Les violences volontaires délictuelles de base (ITT > 8 jours) sont prévues par :',
@@ -19418,7 +19418,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-11 CP réprime les violences délictuelles (ITT > 8 jours).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Violences psychologiques',
     question: 'Les violences peuvent être constituées :',
     options: [
@@ -19432,7 +19432,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : acte de nature à impressionner vivement et causer un choc émotif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Preuve du résultat',
     question: 'La réalité du dommage des violences est notamment établie par :',
     options: [
@@ -19445,7 +19445,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’atteinte doit être établie, notamment par certificat médical.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-13 (logique)',
     question: 'L’article 222-13 du CP concerne principalement :',
     options: [
@@ -19459,7 +19459,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-13 = violences “faible ITT” aggravées (plusieurs degrés).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Réunion vs “avec mineur”',
     question:
         'Selon la circulaire citée par le cours, si un majeur agit avec l’aide d’un mineur, il est préférable de retenir pour le majeur :',
@@ -19474,7 +19474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rapporte la recommandation de la circulaire : privilégier cette circonstance pour le majeur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violences volontaires — Complicité contraventionnelle (exception)',
     question:
@@ -19489,7 +19489,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : aide/assistance punie des mêmes peines en contravention de violences (R. 624-1 / R. 625-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Tentative',
     question: 'Selon le cours, la tentative des violences délictuelles est :',
     options: [
@@ -19506,7 +19506,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE (221-6 / 221-6-1 / 221-6-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Définition (faute)',
     question: 'L’homicide involontaire suppose une mort causée notamment par :',
     options: [
@@ -19520,7 +19520,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la liste des cinq comportements fautifs renvoyant à 121-3 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité (principe)',
     question: 'Pour 221-6, la causalité exigée :',
     options: [
@@ -19533,7 +19533,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas besoin d’un lien direct et immédiat, il suffit que le lien soit certain.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Violation délibérée (aggravation)',
     question:
         'L’aggravation de 221-6 al.2 est retenue lorsque la mort résulte :',
@@ -19548,7 +19548,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-6 al.2 aggrave en cas de violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Conducteur (structure)',
     question: 'Les trois degrés d’aggravation “conducteur VTM” relèvent de :',
     options: [
@@ -19561,7 +19561,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-6-1 CP structure l’aggravation en trois degrés pour le conducteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Conducteur (3e degré)',
     question: 'Le 3e degré (221-6-1) est constitué lorsque :',
     options: [
@@ -19574,7 +19574,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 3e degré = cumul de deux (ou plus) circonstances mentionnées au 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Chien (structure)',
     question:
         'Les aggravations liées à une agression commise par un chien relèvent de :',
@@ -19588,7 +19588,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-6-2 CP = aggravations d’homicide involontaire en cas d’agression par un chien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Délit de fuite (hors conducteur)',
     question:
         'Selon le cours, l’aggravation “délit de fuite” (hors 221-6-1) est rattachée à :',
@@ -19602,7 +19602,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite 434-10 CP lorsque l’homicide involontaire est suivi d’un délit de fuite (hors cas 221-6-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Complicité',
     question: 'La complicité en matière d’homicide involontaire est :',
     options: [
@@ -19615,7 +19615,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : la jurisprudence exclut la complicité en matière d’infractions non intentionnelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Personnes morales',
     question:
         'La responsabilité pénale des personnes morales pour l’homicide involontaire est prévue par :',
@@ -19629,7 +19629,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-7 CP prévoit la responsabilité pénale des personnes morales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — R. 625-2 (objet)',
     question: 'L’article R. 625-2 du CP vise :',
     options: [
@@ -19642,7 +19642,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : R. 625-2 réprime les atteintes involontaires avec ITT ≤ 3 mois (contravention de 5e classe).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — R. 625-2 (classe)',
     question: 'La qualification de l’article R. 625-2 du CP est :',
     options: [
@@ -19654,7 +19654,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours classe R. 625-2 en contravention de 5e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Source de l’obligation',
     question:
         'Pour un manquement à une obligation de prudence ou de sécurité, le “règlement” s’entend :',
@@ -19668,7 +19668,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le “règlement” vise les actes des autorités administratives à caractère général et impersonnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Contraventions ITT ≤ 3 mois — Exigence de précision (Cass. crim.)',
     question:
@@ -19683,7 +19683,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’exigence : identifier précisément l’obligation (Cass. crim., 18 juin 2002).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Lien de causalité',
     question:
         'Pour retenir une atteinte involontaire contraventionnelle, il faut :',
@@ -19697,7 +19697,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste sur la nécessité d’un lien de causalité entre la faute et le dommage, même en matière contraventionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Causalité immédiate',
     question:
         'Selon la circulaire citée, la causalité directe (immédiate) correspond notamment à :',
@@ -19712,7 +19712,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition fonctionnelle : action directe sur la victime ou sur l’objet causal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Dommage psychique',
     question: 'Dans les atteintes involontaires, le dommage peut être :',
     options: [
@@ -19725,7 +19725,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’un choc émotionnel peut constituer le résultat d’une atteinte involontaire à l’intégrité de la personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Tentative',
     question:
         'La tentative d’atteintes involontaires contraventionnelles est :',
@@ -19743,7 +19743,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — ITT > 3 MOIS (222-19) : FAUTE / CAUSALITÉ / AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Faute simple (liste)',
     question: 'La faute simple de 222-19 renvoie à cinq comportements, dont :',
     options: [
@@ -19756,7 +19756,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la liste limitative issue de 121-3 et visée par 222-19.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Faute caractérisée (condition)',
     question:
         'En causalité indirecte, pour engager une personne physique, il faut notamment :',
@@ -19770,7 +19770,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle : en causalité indirecte (personnes physiques), la responsabilité requiert une faute délibérée ou caractérisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Faute caractérisée (définition concours)',
     question: 'La faute caractérisée est :',
     options: [
@@ -19784,7 +19784,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la faute caractérisée comme une faute lourde, grossière, exposant à un danger d’une particulière gravité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Pluralité de fautes',
     question:
         'Quand plusieurs fautes concourent au dommage, le lien de causalité :',
@@ -19798,7 +19798,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : “la faute a concouru au dommage” et la pluralité d’auteurs n’exclut pas la causalité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Dommage dans son dernier état',
     question:
         'Selon le cours, la chambre criminelle prend en compte le dommage :',
@@ -19812,7 +19812,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le dommage peut s’aggraver et est apprécié dans son dernier état.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Personnes morales (principe)',
     question:
         'Selon le cours, les personnes morales sont pénalement responsables des infractions non intentionnelles :',
@@ -19831,7 +19831,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — BLESSURES INVOLONTAIRES CONDUCTEUR (ITT ≤ 3 MOIS : 222-20-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — Base légale',
     question:
         'Les atteintes involontaires (ITT ≤ 3 mois) commises par un conducteur VTM relèvent de :',
@@ -19845,7 +19845,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-20-1 CP vise les blessures involontaires par conducteur avec ITT ≤ 3 mois.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — Visée préventive',
     question:
         'L’incrimination liée au “groupement violent” a une visée préventive ; pour 222-20-1, la logique principale est plutôt :',
@@ -19859,7 +19859,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue : 222-20-1 sanctionne le dommage (ITT) causé par une faute du conducteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 1er degré d’aggravation (liste)',
     question:
         'Selon le cours, une circonstance du 1er degré (222-20-1) est notamment :',
@@ -19873,7 +19873,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère parmi les circonstances : alcool (ou refus de vérification).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 1er degré (stupéfiants)',
     question: 'Au 1er degré, est aussi visée la situation où :',
     options: [
@@ -19887,7 +19887,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’usage de stupéfiants ou le refus des vérifications prévues par le code de la route.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 1er degré (permis)',
     question: 'Constitue une circonstance (222-20-1) :',
     options: [
@@ -19900,7 +19900,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement l’absence de permis ou les situations d’annulation/invalidation/suspension/retrait.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 2e degré',
     question: 'Le 2e degré d’aggravation correspond :',
     options: [
@@ -19913,7 +19913,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 2e degré = deux (ou plus) des circonstances prévues au 1° à 7°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — Complicité',
     question: 'Pour 222-20-1 (conducteur ITT ≤ 3 mois), la complicité est :',
     options: ['Non', 'Oui', 'Uniquement en contravention'],
@@ -19926,7 +19926,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES : ÉLÉMENTS CONSTITUTIFS / AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément matériel',
     question: 'Les violences volontaires supposent :',
     options: [
@@ -19939,7 +19939,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : les violences supposent une action positive ; l’abstention relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contact indirect',
     question: 'Le contact avec la victime peut être :',
     options: [
@@ -19952,7 +19952,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la violence peut être réalisée par un moyen, même sans contact direct.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément moral',
     question: 'L’élément moral des violences volontaires est :',
     options: [
@@ -19966,7 +19966,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : violences = acte intentionnel, avec conscience du préjudice possible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Mobile',
     question:
         'Selon le cours (jurisprudence), les violences sont constituées :',
@@ -19981,7 +19981,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’idée jurisprudentielle : le mobile n’empêche pas la constitution de l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-12 vs 222-13',
     question: 'Dans le cours, 222-12 concerne principalement :',
     options: [
@@ -19994,7 +19994,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-12 organise les aggravations lorsque l’ITT dépasse 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-7 (qualification)',
     question:
         'Les violences ayant entraîné la mort sans intention de la donner relèvent de :',
@@ -20008,7 +20008,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 222-7 CP réprime les violences ayant entraîné la mort sans intention de la donner.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-9 (qualification)',
     question:
         'Les violences ayant entraîné une mutilation ou une infirmité permanente relèvent de :',
@@ -20026,7 +20026,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE : FAUTE / CAUSALITÉ / AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Base légale',
     question: 'L’homicide involontaire est prévu et réprimé par :',
     options: [
@@ -20039,7 +20039,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-6 CP définit et réprime l’homicide involontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Faute simple (appréciation)',
     question: 'Les fautes d’imprudence simples sont appréciées par rapport :',
     options: [
@@ -20053,7 +20053,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : référence à “l’homme normalement prudent” et, le cas échéant, au professionnel moyen/diligent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité indirecte (définition)',
     question: 'En causalité indirecte, l’auteur est celui qui :',
     options: [
@@ -20067,7 +20067,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition légale de l’auteur indirect (121-3 al.4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Homicide involontaire — Causalité directe (paramètre déterminant)',
     question: 'Selon le cours, la causalité directe peut inclure :',
@@ -20082,7 +20082,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la chambre criminelle retient une conception large : paramètre déterminant du dommage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Violation délibérée (preuve)',
     question: 'Pour retenir 221-6 al.2, il faut notamment établir :',
     options: [
@@ -20096,7 +20096,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : obligation prévue par un texte, précisément déterminée, et violation consciente créant un risque mortel réalisé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: [
@@ -20109,7 +20109,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la tentative n’est pas envisageable car le résultat dommageable n’est pas voulu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Complicité',
     question:
         'Selon le cours, la complicité en matière d’homicide involontaire est :',
@@ -20123,7 +20123,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : “COMPLICITÉ : NON” pour l’homicide involontaire (infraction non intentionnelle).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Aggravation (conducteur)',
     question:
         'L’article 221-6-1 prévoit une aggravation lorsque l’homicide involontaire est commis :',
@@ -20137,7 +20137,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-6-1 organise les aggravations spécifiques liées au conducteur VTM.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-1 (2e degré)',
     question:
         'Au 2e degré de 221-6-1, l’homicide involontaire est aggravé notamment si :',
@@ -20152,7 +20152,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les délits routiers déclenchant le 2e degré d’aggravation (221-6-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-1 (3e degré)',
     question: 'Le 3e degré d’aggravation (221-6-1) correspond :',
     options: [
@@ -20165,7 +20165,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 3e degré = deux ou plus des circonstances mentionnées au 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-2 (chien)',
     question:
         'L’article 221-6-2 vise l’aggravation lorsque l’homicide involontaire résulte :',
@@ -20179,7 +20179,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 221-6-2 prévoit des degrés d’aggravation liés à l’agression par un chien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-2 (2e degré)',
     question: 'Au 2e degré de 221-6-2, l’aggravation peut être retenue si :',
     options: [
@@ -20193,7 +20193,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite parmi les situations aggravantes : ivresse manifeste ou emprise de stupéfiants du propriétaire/détenteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Délit de fuite (434-10)',
     question:
         'Le cours indique une aggravation spécifique lorsque l’homicide involontaire est suivi :',
@@ -20211,7 +20211,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLATION MANIFESTEMENT DÉLIBÉRÉE — 222-20 (ITT ≤ 3 MOIS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Base légale',
     question:
         'Les atteintes involontaires par violation manifestement délibérée (ITT ≤ 3 mois) relèvent de :',
@@ -20225,7 +20225,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’infraction délictuelle de violation manifestement délibérée (ITT ≤ 3 mois) est prévue par 222-20.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Obligation particulière',
     question:
         'L’obligation particulière de prudence/sécurité doit être prévue par :',
@@ -20239,7 +20239,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : obligation particulière = prévue par un texte (loi/décret/arrêté) ; le “règlement” = actes administratifs généraux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Connaissance',
     question: 'Pour retenir la violation délibérée, il faut que la personne :',
     options: [
@@ -20253,7 +20253,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la personne doit avoir connaissance de l’obligation, notamment via son rôle/formation/responsabilités.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Volonté',
     question: 'La violation manifestement délibérée implique :',
     options: [
@@ -20267,7 +20267,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : le risque est assumé, le dommage n’est pas recherché, mais l’obligation est sciemment transgressée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Complicité',
     question: 'Pour 222-20, la complicité est :',
     options: [
@@ -20280,7 +20280,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que malgré la nature non intentionnelle, la faute délibérée n’exclut pas la complicité (121-6/121-7).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Exemple concours',
     question:
         'Le cours donne comme exemple possible de complicité par instigation :',
@@ -20294,7 +20294,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours illustre : une instigation peut constituer complicité car il s’agit d’une faute délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Chien (222-20-2)',
     question:
         'L’article 222-20-2 prévoit des degrés d’aggravation lorsque l’atteinte résulte :',
@@ -20312,7 +20312,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES VOLONTAIRES — CONTRAVENTIONNELLES / DÉLICTUELLES (R. 624-1, R. 625-1, 222-11, 222-13)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (aucune ITT)',
     question: 'Les violences volontaires sans ITT relèvent notamment de :',
     options: [
@@ -20325,7 +20325,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : R. 624-1 définit/réprime les violences contraventionnelles sans ITT.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (ITT ≤ 8 jours)',
     question:
         'Les violences volontaires avec ITT ≤ 8 jours relèvent notamment de :',
@@ -20339,7 +20339,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : R. 625-1 vise les violences contraventionnelles avec ITT ≤ 8 jours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Délit (base)',
     question: 'Les violences délictuelles sont définies et réprimées par :',
     options: [
@@ -20352,7 +20352,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-11 CP vise les violences délictuelles (ITT > 8 jours ou hypothèses prévues).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Aggravation (ITT ≤ 8 jours)',
     question:
         'Les violences avec ITT ≤ 8 jours ou sans ITT sont aggravées par :',
@@ -20366,7 +20366,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-13 prévoit trois degrés d’aggravation pour ITT ≤ 8 jours ou aucune ITT.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-13 (degrés)',
     question: 'Selon le cours, 222-13 prévoit :',
     options: ['Trois degrés d’aggravation', 'Un seul degré', 'Cinq degrés'],
@@ -20379,7 +20379,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PARTICIPATION À UN GROUPEMENT VIOLENT — 222-14-2 (niveau concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Base légale',
     question:
         'La participation à un groupement violent est définie et réprimée par :',
@@ -20393,7 +20393,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-14-2 CP définit et réprime la participation à un groupement violent.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Condition (préparation)',
     question:
         'L’infraction vise la participation à un groupement en vue de la préparation :',
@@ -20407,7 +20407,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : préparation “caractérisée” par des faits matériels (barres de fer, cagoules, messages, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Résultat nécessaire ?',
     question: 'Pour 222-14-2, la réalisation des violences/dégradations :',
     options: [
@@ -20420,7 +20420,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’objectif est de démanteler avant commission, donc la réalisation n’est pas exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Participation brève',
     question:
         'Le cours précise que la participation peut être caractérisée même si elle est :',
@@ -20434,7 +20434,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : la simple présence suffit si la personne participe au groupement (intégration), même brièvement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Élément moral',
     question:
         'L’élément moral de la participation à un groupement violent suppose que l’auteur :',
@@ -20449,7 +20449,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’auteur doit participer sciemment et avoir connaissance des faits matériels préparatoires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Connaissance indirecte',
     question: 'La connaissance des faits de préparation peut résulter :',
     options: [
@@ -20462,7 +20462,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence admet que l’auteur ait connaissance de faits matériels réalisés par d’autres.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Qualification',
     question: 'La participation à un groupement violent est classée comme :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -20470,7 +20470,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours qualifie l’infraction de “simple délit”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Tentative',
     question: 'La tentative de participation à un groupement violent est :',
     options: [
@@ -20483,7 +20483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La tentative n’est pas punissable faute de disposition expresse en matière correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Complicité',
     question:
         'La complicité en matière de participation à un groupement violent est :',
@@ -20497,7 +20497,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // RÉCAP NIVEAU CONCOURS — DISTINCTIONS ESSENTIELLES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Faute simple',
     question: 'La faute simple se distingue principalement par :',
     options: [
@@ -20510,7 +20510,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La faute simple repose sur une imprudence, maladresse, inattention ou négligence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Faute caractérisée',
     question: 'La faute caractérisée suppose notamment :',
     options: [
@@ -20523,7 +20523,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la faute caractérisée comme une imprudence lourde et grossière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Causalité directe',
     question:
         'La causalité directe est retenue lorsque le comportement de l’auteur :',
@@ -20537,7 +20537,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La chambre criminelle adopte une conception large de la causalité directe.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Causalité indirecte',
     question: 'En causalité indirecte, l’auteur est celui qui :',
     options: [
@@ -20549,7 +20549,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition issue de l’article 121-3 al.4 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Infractions non intentionnelles',
     question: 'Les infractions non intentionnelles se caractérisent par :',
     options: [
@@ -20562,7 +20562,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le résultat n’est pas recherché par l’auteur, ce qui exclut la tentative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Tentative (principe)',
     question:
         'En matière d’infractions non intentionnelles, la tentative est :',
@@ -20576,7 +20576,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le résultat n’étant pas voulu, la tentative n’est pas retenue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Complicité (principe)',
     question: 'La complicité est en principe :',
     options: [
@@ -20589,7 +20589,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Principe jurisprudentiel, avec exception notable en cas de faute délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Exception complicité',
     question:
         'Une exception à l’exclusion de la complicité existe notamment lorsque :',
@@ -20603,7 +20603,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours souligne l’exception en matière de violation manifestement délibérée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Personnes morales',
     question:
         'En matière d’infractions non intentionnelles, les personnes morales :',
@@ -20617,7 +20617,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que les personnes morales restent pénalement responsables même en causalité indirecte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Logique générale',
     question: 'La logique générale des atteintes involontaires est de :',
     options: [
@@ -20633,7 +20633,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — CAS PRATIQUES & PIÈGES FRÉQUENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — ITT ≤ 3 mois',
     question:
         'Un agent municipal oublie de signaler un trou sur la voie publique. Un piéton chute et subit une ITT de 2 mois. La qualification la plus adaptée est :',
@@ -20647,7 +20647,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Faute d’imprudence/négligence + ITT ≤ 3 mois = contravention R. 625-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — ITT > 3 mois',
     question:
         'Un chef de chantier omet de sécuriser une tranchée. Un ouvrier chute et subit une ITT de 5 mois. La qualification pénale est :',
@@ -20661,7 +20661,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Faute non intentionnelle + ITT > 3 mois = délit de blessures involontaires (222-19).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Causalité indirecte',
     question:
         'Un maire n’instaure aucune règle de sécurité sur une piste dangereuse. Un accident survient. Le maire est qualifié :',
@@ -20671,7 +20671,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il a contribué à créer la situation dangereuse sans être l’auteur matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Faute caractérisée',
     question:
         'Confier volontairement les clés d’un véhicule à une personne ivre et sans permis constitue :',
@@ -20685,7 +20685,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Jurisprudence constante : exposition consciente à un danger grave.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Violation délibérée',
     question:
         'Un conducteur franchit volontairement un feu rouge connu comme dangereux. Un piéton est blessé (ITT 1 mois). Qualification :',
@@ -20699,7 +20699,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Obligation connue + choix délibéré de la violer + ITT ≤ 3 mois.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Complicité exceptionnelle',
     question:
         'Un passager ordonne au conducteur de forcer un barrage, causant des blessures involontaires par violation délibérée. Le passager est :',
@@ -20713,7 +20713,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — DISTINCTIONS FINES & QCM SÉLECTIFS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — ITT',
     question: 'L’ITT s’apprécie :',
     options: [
@@ -20725,7 +20725,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise que l’ITT n’est pas cumulative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Dommage psychique',
     question: 'Un choc émotionnel sans lésion physique peut constituer :',
     options: [
@@ -20737,7 +20737,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le dommage peut être psychique (atteinte à l’intégrité).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Infractions non intentionnelles',
     question: 'Quel élément est toujours exigé ?',
     options: ['Un dommage', 'Une intention', 'Une préméditation'],
@@ -20746,7 +20746,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Sans dommage, l’infraction non intentionnelle n’est pas constituée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Violences psychologiques',
     question: 'Les violences psychologiques sont constituées lorsque :',
     options: [
@@ -20758,7 +20758,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cass. crim. + codification à l’article 222-14-3 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Violences volontaires',
     question: 'Les violences volontaires supposent nécessairement :',
     options: [
@@ -20775,7 +20775,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS DE SYNTHÈSE RAPIDE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Contravention vs Délit',
     question:
         'La distinction principale entre contravention et délit d’atteintes involontaires repose sur :',
@@ -20788,7 +20788,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: '≤ 3 mois : contravention / > 3 mois : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Auteur indirect',
     question: 'Un auteur indirect est celui qui :',
     options: [
@@ -20800,7 +20800,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition issue de l’article 121-3 al.4 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Logique préventive',
     question:
         'Certaines infractions (ex : groupement violent) ont une logique principalement :',
@@ -20810,7 +20810,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Elles permettent d’intervenir avant la commission des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Tentative',
     question:
         'Pourquoi la tentative est-elle exclue en matière non intentionnelle ?',
@@ -20823,7 +20823,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Principe fondamental rappelé dans tout le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Concours',
     question: 'Au concours, les questions pièges portent le plus souvent sur :',
     options: [
@@ -20840,7 +20840,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — PIÈGES JURISPRUDENTIELS & FORMULATIONS SUBTILES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — Causalité large',
     question:
         'Selon la chambre criminelle, la causalité directe peut être retenue lorsque le comportement de l’auteur :',
@@ -20854,7 +20854,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La Cour adopte une conception large : même sans geste matériel, le comportement peut être déterminant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — Auteur direct sans geste',
     question:
         'Un supérieur hiérarchique peut être auteur direct d’une infraction non intentionnelle même s’il n’a pas accompli le geste matériel si :',
@@ -20868,7 +20868,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Jurisprudence : le manquement déterminant peut suffire à caractériser l’auteur direct.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — Personne morale',
     question:
         'Pour engager la responsabilité pénale d’une personne morale, il faut :',
@@ -20881,7 +20881,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Principe issu des articles 121-2 et suivants du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — ITT et certificat',
     question:
         'La réalité de l’atteinte dans les violences est généralement établie par :',
@@ -20899,7 +20899,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — COMPARAISONS CLASSIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparaison — Violences / Atteintes involontaires',
     question:
         'La différence essentielle entre violences volontaires et atteintes involontaires tient à :',
@@ -20909,7 +20909,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Les violences supposent un acte intentionnel, les atteintes involontaires non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparaison — Faute simple / Faute délibérée',
     question: 'La faute délibérée se distingue de la faute simple par :',
     options: [
@@ -20922,7 +20922,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La faute délibérée implique un choix conscient de transgresser une obligation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparaison — Faute caractérisée / Faute délibérée',
     question:
         'La faute caractérisée se distingue de la faute délibérée en ce que :',
@@ -20941,7 +20941,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS PIÈGES À RÉPONSE UNIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Absence de dommage',
     question: 'Sans dommage, une infraction non intentionnelle est :',
     options: ['Inexistante', 'Toujours constituée', 'Une tentative'],
@@ -20949,7 +20949,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le dommage est un élément constitutif indispensable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Simple présence',
     question:
         'La simple présence sur les lieux d’un accident suffit à engager la responsabilité pénale pour atteinte involontaire :',
@@ -20958,7 +20958,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Il faut une faute et un lien de causalité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Abstention',
     question:
         'Une abstention peut constituer une faute pénale non intentionnelle lorsque :',
@@ -20975,7 +20975,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — MÉMO FINAL (FORMULATIONS EXACTES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Formule clé',
     question:
         'Quelle formule correspond à la définition de l’auteur indirect ?',
@@ -20989,7 +20989,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Formulation exacte issue de l’article 121-3 al.4 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Logique pénale',
     question: 'Les infractions non intentionnelles reposent sur le triptyque :',
     options: [
@@ -21001,7 +21001,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Structure fondamentale à maîtriser au concours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Objectif',
     question:
         'L’objectif principal de la répression des atteintes involontaires est de :',
@@ -21017,7 +21017,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — CONFUSIONS FRÉQUENTES AU QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Confusion concours — Tentative',
     question:
         'La tentative est punissable en matière d’atteintes involontaires à l’intégrité physique :',
@@ -21027,7 +21027,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le résultat dommageable n’étant pas recherché, la tentative n’est pas envisageable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Confusion concours — Complicité',
     question:
         'En matière d’infractions non intentionnelles, la complicité est en principe :',
@@ -21037,7 +21037,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence exclut la complicité, sauf cas particuliers de faute délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Confusion concours — Faute et dommage',
     question:
         'Une faute pénale sans dommage permet de retenir une atteinte involontaire :',
@@ -21050,7 +21050,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS À DOUBLE NÉGATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Double négation — Élément moral',
     question:
         'Il n’est pas inexact d’affirmer que l’élément moral est absent en matière d’infractions non intentionnelles :',
@@ -21060,7 +21060,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’élément moral n’est pas requis, sauf faute délibérée particulière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Double négation — Violence',
     question:
         'Il ne peut être exclu que des violences soient constituées sans contact physique :',
@@ -21074,7 +21074,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — SCÉNARIOS TYPE QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Causalité indirecte',
     question:
         'Un maire n’ayant pas réglementé une activité dangereuse peut être poursuivi sur le fondement de :',
@@ -21088,7 +21088,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il a contribué à créer la situation dangereuse sans être l’auteur du geste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Conducteur',
     question:
         'Un conducteur en excès de vitesse supérieur à 50 km/h causant une ITT > 3 mois commet :',
@@ -21106,7 +21106,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS DE MÉMO JURIDIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Définition exacte',
     question: 'La faute caractérisée est définie comme :',
     options: [
@@ -21118,7 +21118,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Elle est lourde, grossière et inacceptable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Répression',
     question: 'La qualification des violences dépend principalement :',
     options: ['De l’ITT', 'Du mobile', 'De la plainte'],
@@ -21131,7 +21131,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS ULTRA PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Certitude',
     question: 'Le lien de causalité doit être :',
     options: ['Certain', 'Direct et immédiat', 'Exclusif'],
@@ -21139,7 +21139,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La causalité n’a pas à être directe ni immédiate.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Personne vivante',
     question: 'Une atteinte involontaire suppose que la victime soit :',
     options: [
@@ -21155,7 +21155,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — FORMULES À SAVOIR PAR CŒUR
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Formule concours — Cour de cassation',
     question:
         'Selon la Cour de cassation, la causalité directe inclut les comportements qui ont été :',
@@ -21168,7 +21168,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Formule jurisprudentielle récurrente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Formule concours — Responsabilité',
     question:
         'La responsabilité pénale des personnes morales est engagée en cas de :',
@@ -21181,7 +21181,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — PIÈGES CLASSIQUES DE QUALIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Qualification — ITT',
     question: 'Une ITT de 2 mois causée involontairement relève en principe :',
     options: ['Du délit', 'De la contravention', 'Du crime'],
@@ -21190,7 +21190,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Les atteintes involontaires avec ITT ≤ 3 mois constituent un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Qualification — ITT',
     question: 'Une atteinte involontaire sans aucune ITT relève en principe :',
     options: ['D’une contravention', 'D’un délit', 'D’un crime'],
@@ -21202,7 +21202,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLATION MANIFESTEMENT DÉLIBÉRÉE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Définition',
     question: 'La violation manifestement délibérée suppose :',
     options: [
@@ -21216,7 +21216,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’auteur connaît l’obligation et décide sciemment de la transgresser.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Texte',
     question:
         'Une obligation issue uniquement d’un règlement intérieur peut fonder une violation délibérée :',
@@ -21230,7 +21230,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — CAUSALITÉ (QCM PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Causalité — Principe',
     question: 'En matière pénale, le lien de causalité doit être :',
     options: ['Certain', 'Direct et immédiat', 'Exclusif'],
@@ -21238,7 +21238,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La causalité n’a pas à être directe ni immédiate.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Causalité — Indirecte',
     question: 'Un auteur indirect est celui qui :',
     options: [
@@ -21254,7 +21254,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — CONDUCTEUR DE VÉHICULE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur — Aggravation',
     question: 'Le simple fait d’être conducteur constitue :',
     options: [
@@ -21266,7 +21266,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le législateur prévoit une aggravation spécifique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur — Délit de fuite',
     question: 'Un délit de fuite après blessures involontaires constitue :',
     options: [
@@ -21282,7 +21282,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — PERSONNES MORALES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Personnes morales — Principe',
     question: 'Les personnes morales sont pénalement responsables :',
     options: [
@@ -21294,7 +21294,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La responsabilité des personnes morales est plus large.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Personnes morales — Causalité',
     question: 'Pour une personne morale, la causalité indirecte :',
     options: [
@@ -21310,7 +21310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Acte',
     question: 'Les violences volontaires supposent nécessairement :',
     options: ['Un acte positif', 'Une abstention', 'Un résultat grave'],
@@ -21318,7 +21318,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’abstention relève d’autres qualifications.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Psychiques',
     question:
         'Les violences psychologiques peuvent constituer une infraction :',
@@ -21331,7 +21331,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Élément matériel',
     question: 'L’homicide involontaire suppose :',
     options: [
@@ -21343,7 +21343,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le résultat mortel est indispensable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: ['Impossible', 'Punissable', 'Une contravention'],
@@ -21355,7 +21355,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS FINALES PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège final — Intention',
     question: 'Une faute délibérée implique :',
     options: [
@@ -21367,7 +21367,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le dommage n’est pas recherché.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège final — Résultat',
     question: 'Sans résultat dommageable, une infraction non intentionnelle :',
     options: [
@@ -21382,7 +21382,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — CONFUSIONS FAUTE SIMPLE / CARACTÉRISÉE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute — Distinction',
     question:
         'En cas de causalité directe, la responsabilité pénale d’une personne physique suppose :',
@@ -21395,7 +21395,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'En causalité directe, toute faute suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute — Distinction',
     question:
         'En cas de causalité indirecte, la responsabilité pénale d’une personne physique exige :',
@@ -21412,7 +21412,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — OBLIGATION DE PRUDENCE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Obligation — Source',
     question: 'Une obligation particulière de prudence peut résulter :',
     options: [
@@ -21424,7 +21424,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Seuls les textes normatifs sont admis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Obligation — Preuve',
     question: 'Les juges doivent préciser :',
     options: [
@@ -21440,7 +21440,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — ITT (QUESTIONS PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT — Calcul',
     question: 'L’ITT prise en compte est celle :',
     options: ['Consécutive', 'Additionnée', 'Estimée'],
@@ -21448,7 +21448,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Les périodes discontinues ne s’additionnent pas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT — Qualification',
     question: 'Une ITT de 3 mois jour pour jour relève :',
     options: ['Du seuil ≤ 3 mois', 'Du seuil > 3 mois', 'D’une contravention'],
@@ -21460,7 +21460,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — PERSONNE D’AUTRUI
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Victime — Condition',
     question: 'Une atteinte involontaire suppose une victime :',
     options: [
@@ -21472,7 +21472,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'On ne peut être victime de soi-même.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Victime — Personne vivante',
     question: 'La victime doit être :',
     options: [
@@ -21488,7 +21488,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Intention',
     question: 'L’intention exigée en matière de violences est :',
     options: [
@@ -21500,7 +21500,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le dommage précis n’a pas à être voulu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Moyen',
     question: 'Une violence peut être exercée par :',
     options: ['Un objet ou un animal', 'Une abstention', 'Une négligence'],
@@ -21512,7 +21512,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide — Faute',
     question: 'L’homicide involontaire peut résulter :',
     options: [
@@ -21524,7 +21524,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'En causalité directe, la faute simple suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide — Aggravation',
     question: 'La conduite sous l’empire d’un état alcoolique constitue :',
     options: [
@@ -21540,7 +21540,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS ULTRA PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Prévention',
     question:
         'La création de l’infraction de participation à un groupement violent vise principalement :',
@@ -21553,7 +21553,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Objectif de démantèlement en amont.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Groupement',
     question: 'La simple présence dans un groupement violent :',
     options: [
@@ -21566,7 +21566,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Nature du groupement',
     question: 'Le groupement visé par l’article 222-14-2 peut être :',
     options: [
@@ -21578,7 +21578,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte vise un groupement même formé de façon temporaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Objet de l’infraction',
     question: 'Le groupement constitue :',
     options: [
@@ -21591,7 +21591,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le groupement est le moyen de préparation, non l’objet de l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Distinction juridique',
     question: 'Ce groupement n’est ni une association de malfaiteurs, ni :',
     options: [
@@ -21604,7 +21604,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue ce groupement de l’association de malfaiteurs, de la bande organisée et de l’attroupement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Participation',
     question: 'La participation au groupement est caractérisée :',
     options: [
@@ -21617,7 +21617,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La simple présence suffit dès lors que la personne s’intègre au groupement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Actes préparatoires',
     question: 'Les actes préparatoires doivent être caractérisés par :',
     options: [
@@ -21630,7 +21630,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’intention délictueuse doit être établie par des faits matériels précis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Exemples d’actes préparatoires',
     question:
         'Lequel constitue un fait matériel caractérisant la préparation ?',
@@ -21644,7 +21644,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite notamment le port d’armes improvisées ou de cagoules.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Finalité',
     question: 'L’infraction vise principalement à :',
     options: [
@@ -21657,7 +21657,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il s’agit d’une infraction à visée préventive, en amont des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Élément moral',
     question: 'L’auteur doit participer au groupement :',
     options: [
@@ -21669,7 +21669,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La participation doit être consciente et volontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Connaissance des faits',
     question: 'L’auteur est responsable s’il :',
     options: [
@@ -21682,7 +21682,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il suffit d’avoir accompli ou d’avoir connaissance des faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Tentative',
     question: 'La tentative de participation à un groupement violent est :',
     options: [
@@ -21694,7 +21694,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La tentative n’est pas punissable faute de texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Peines',
     question: 'La participation à un groupement violent est punie de :',
     options: [
@@ -21711,7 +21711,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTES INVOLONTAIRES — CONDUCTEUR VTAM — ITT ≤ 3 MOIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Fondement',
     question:
         'Les atteintes involontaires par conducteur avec ITT ≤ 3 mois sont prévues par :',
@@ -21725,7 +21725,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 222-20-1 CP réprime ces atteintes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Faute',
     question: 'L’infraction repose sur :',
     options: [
@@ -21738,7 +21738,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Il s’agit d’une infraction non intentionnelle fondée sur une faute.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Types de faute',
     question: 'La faute simple peut résulter de :',
     options: [
@@ -21750,7 +21750,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Ces comportements fautifs sont listés à l’article 121-3 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Obligation',
     question: 'Le manquement à une obligation de prudence doit être :',
     options: [
@@ -21762,7 +21762,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’obligation doit être législative ou réglementaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Lien de causalité',
     question: 'La faute doit :',
     options: [
@@ -21774,7 +21774,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La faute n’a pas besoin d’être unique ou immédiate.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fondement',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -21787,7 +21787,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 226-10 C.P. définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Définition',
     question:
         'La dénonciation calomnieuse suppose une dénonciation dirigée contre :',
@@ -21801,7 +21801,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 226-10 exige une dénonciation dirigée contre une personne déterminée (physique ou morale), identifiable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Nature des faits',
     question:
         'Pour relever de la dénonciation calomnieuse, le fait dénoncé doit être :',
@@ -21816,7 +21816,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la dénonciation doit être préjudiciable : le fait dénoncé doit être de nature à entraîner des sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Forme',
     question: 'La dénonciation calomnieuse peut être faite :',
     options: [
@@ -21829,7 +21829,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte prévoit “par tout moyen” : lettre, plainte, pétition, oral, téléphone… sous réserve de preuve.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Moment de consommation',
     question:
         'Selon la jurisprudence, l’infraction est consommée et la prescription commence à courir :',
@@ -21843,7 +21843,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence retient la date de réception par l’autorité comme point de consommation et de départ de prescription.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire',
     question: 'La dénonciation doit être adressée notamment à une autorité :',
     options: [
@@ -21857,7 +21857,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise les autorités pouvant donner suite ou saisir l’autorité compétente, ainsi que supérieurs hiérarchiques/employeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Caractère spontané',
     question:
         'La jurisprudence exige que la dénonciation calomnieuse présente un caractère :',
@@ -21871,7 +21871,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que seule est coupable la personne ayant pris l’initiative : les dénonciations provoquées perdent le caractère spontané.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation provoquée',
     question:
         'N’a pas le caractère spontané (donc, en principe, n’entre pas dans 226-10) la dénonciation :',
@@ -21886,7 +21886,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que répondre à des questions ou rédiger un rapport sur demande fait perdre le caractère spontané.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Inexactitude',
     question:
         'L’infraction requiert que l’auteur sache que les faits dénoncés sont :',
@@ -21900,7 +21900,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend l’exigence : dénoncer un fait que l’on sait totalement ou partiellement inexact.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Preuve de la fausseté',
     question:
         'Depuis la réforme rappelée au cours (loi du 9 juillet 2010), la fausseté résulte nécessairement d’une décision définitive :',
@@ -21915,7 +21915,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : acquittement/relaxe/non-lieu définitifs constatant expressément l’absence de fait ou d’imputabilité => fausseté automatique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autres cas',
     question:
         'Si la décision définitive est rendue faute de charges suffisantes, la fausseté du fait dénoncé est :',
@@ -21930,7 +21930,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que dans les autres cas (ex : faute de charges), le tribunal apprécie la pertinence des accusations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément moral',
     question:
         'L’élément moral suppose notamment la conscience, au moment de la dénonciation :',
@@ -21944,7 +21944,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours souligne que l’auteur doit connaître l’inexactitude des faits au jour de la dénonciation.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Découverte après coup',
     question:
         'Si l’auteur découvre après coup son erreur (il croyait les faits vrais au moment de dénoncer), alors :',
@@ -21958,7 +21958,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : il faut la connaissance de l’inexactitude au moment de dénoncer. L’erreur découverte après coup exclut 226-10.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peines',
     question:
         'Pour une personne physique, la dénonciation calomnieuse (forme simple) est punie de :',
@@ -21972,7 +21972,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : délit, art. 226-10, 5 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'La tentative de dénonciation calomnieuse est :',
     options: [
@@ -21985,7 +21985,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement : TENTATIVE : NON pour l’art. 226-10.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Complicité',
     question: 'La complicité de dénonciation calomnieuse est :',
     options: [
@@ -22002,7 +22002,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PORNODIVULGATION — art. 226-2-1 al.2 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Fondement',
     question:
         'La diffusion, sans accord, d’un enregistrement à caractère sexuel obtenu avec consentement est prévue par :',
@@ -22016,7 +22016,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’art. 226-2-1 al.2 C.P. pour la diffusion sans accord d’un contenu sexuel obtenu avec consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Notion',
     question: 'Le terme “revenge porn” correspond en France à :',
     options: [
@@ -22029,7 +22029,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que ces agissements ont été popularisés sous “revenge porn”, aujourd’hui aussi appelé pornodivulgation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Support',
     question: 'Peuvent constituer le support matériel de la pornodivulgation :',
     options: [
@@ -22042,7 +22042,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : support visuel, audio, audiovisuel ou écrit (messages), peu importe le support matériel/numérique.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Consentement',
     question:
         'Dans la pornodivulgation, le fait que la victime ait consenti à être filmée/photographiée signifie :',
@@ -22056,7 +22056,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : l’accord à la captation ne vaut pas accord à la diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément matériel',
     question:
         'L’élément matériel principal de l’infraction est une diffusion :',
@@ -22070,7 +22070,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit : porter à la connaissance du public ou d’un tiers sans accord (opposition ou absence de consultation).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peines',
     question:
         'La pornodivulgation (art. 226-2-1 al.2) est punie (personne physique) de :',
@@ -22084,7 +22084,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 226-2-1 al.2, délit, 2 ans + 60 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question: 'La tentative de pornodivulgation (226-2-1) est :',
     options: [
@@ -22097,7 +22097,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne que l’art. 226-5 prévoit expressément la tentative pour 226-2-1.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Fondement',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -22111,7 +22111,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : art. 226-4 C.P. définit et réprime la violation de domicile (particulier).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Définition',
     question: 'La violation de domicile vise notamment :',
     options: [
@@ -22125,7 +22125,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : introduction illicite + maintien à l’issue de cette introduction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Notion de domicile',
     question: 'Constitue un domicile (au sens du cours) :',
     options: [
@@ -22139,7 +22139,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours retient une définition extensive : local d’habitation protégeant l’intimité (résidence, lieu de séjour, etc.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendances',
     question:
         'Peuvent être assimilées à des dépendances du domicile (si proximité et prolongement) :',
@@ -22153,7 +22153,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite des exemples de dépendances : garage, débarras, balcon, terrasse… sous condition de lien/proximité.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Exclusions',
     question:
         'N’est pas considéré comme un domicile (selon les exemples du cours) :',
@@ -22167,7 +22167,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste parmi les exclusions : immeuble en construction, logement vide de meubles, etc.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Moyens',
     question:
         'Les “manœuvres” au sens de la violation de domicile correspondent à :',
@@ -22181,7 +22181,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit les manœuvres comme tout procédé astucieux/ruse permettant l’introduction illicite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait',
     question: 'Constitue une voie de fait (exemples du cours) :',
     options: [
@@ -22194,7 +22194,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : forçage de serrure, bris de vitre, défoncer la porte, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Infraction continue',
     question:
         'La violation de domicile est qualifiée par le cours comme une infraction :',
@@ -22208,7 +22208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que c’est une infraction continue, permettant la flagrance tant que perdure l’occupation illicite.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Cas légitimes',
     question:
         'Peut constituer un cas d’introduction légitime (hors les cas où la loi le permet) :',
@@ -22223,7 +22223,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’assistance à personne en péril et d’autres hypothèses (incendie, inondation, appel au secours).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peines',
     question:
         'La violation de domicile (art. 226-4) est punie (personne physique) de :',
@@ -22236,7 +22236,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : art. 226-4 C.P., 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question: 'La tentative de violation de domicile est :',
     options: [
@@ -22248,7 +22248,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne : tentative oui, prévue à l’art. 226-5.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande de “mode d’emploi du squat” — Fondement',
     question:
         'Le fait de faire la propagande ou publicité en faveur de méthodes facilitant la violation de domicile est incriminé par :',
@@ -22262,7 +22262,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’art. 226-4-2-1 C.P. pour la propagande/publicité en faveur de méthodes facilitant ces délits.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande de “mode d’emploi du squat” — Sanction',
     question:
         'La commission du délit de propagande/publicité en faveur de méthodes de violation de domicile est sanctionnée par :',
@@ -22277,7 +22277,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement',
     question:
         'La violation des correspondances émises par la voie électronique (particulier) est définie par :',
@@ -22291,7 +22291,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue : al.2 = définition (voie électronique) ; al.1 = répression (peines).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Objet',
     question: 'Sont visées par l’article 226-15 al.2 des correspondances :',
     options: [
@@ -22304,7 +22304,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours parle de correspondances “dématérialisées” (appels, emails, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter',
     question: '“Intercepter” une correspondance électronique consiste à :',
     options: [
@@ -22317,7 +22317,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : intercepter = prendre au passage, capter pendant la transmission (matériel quelconque).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détourner',
     question:
         '“Détourner” une correspondance électronique renvoie notamment au fait :',
@@ -22332,7 +22332,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours retient le détournement notamment quand un tiers ouvre des messages en attente d’être lus par le destinataire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Divulguer',
     question: '“Divulguer” au sens du cours signifie :',
     options: [
@@ -22346,7 +22346,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : divulgation = révélation du contenu à un tiers (ex : faire écouter une conversation enregistrée).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mauvaise foi',
     question: 'La “mauvaise foi” est définie par la Cour de cassation comme :',
     options: [
@@ -22360,7 +22360,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite : Cass. crim., 15 mai 1990, mauvaise foi = connaissance que le message ne lui était pas destiné.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Aggravation',
     question:
         'La violation des correspondances électroniques est aggravée lorsque les faits sont commis :',
@@ -22374,7 +22374,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : art. 226-15 al.3 prévoit une circonstance aggravante liée au lien conjugal/concubinage/PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peines simples',
     question: 'En forme simple (226-15 al.2), la peine encourue est :',
     options: [
@@ -22386,7 +22386,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : 226-15 al.2 = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peines aggravées',
     question: 'En forme aggravée (226-15 al.3), la peine encourue est :',
     options: [
@@ -22402,7 +22402,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTE À LA REPRÉSENTATION — 226-8 + deepfake
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Fondement',
     question: 'L’atteinte à la représentation de la personne est prévue par :',
     options: [
@@ -22415,7 +22415,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : l’art. 226-8 C.P. définit et réprime l’atteinte à la représentation de la personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Condition',
     question:
         'Le délit est constitué si le montage est diffusé sans consentement et :',
@@ -22430,7 +22430,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : infraction si montage non apparent et non signalé, sans consentement.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Deepfake',
     question:
         'Le cours assimile à l’infraction la diffusion d’un contenu visuel/sonore :',
@@ -22445,7 +22445,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours intègre explicitement les contenus générés algorithmiquement (hypertrucage/deepfake) dans 226-8.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement',
     question:
         'Le consentement pertinent en matière d’atteinte à la représentation porte sur :',
@@ -22459,7 +22459,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : le consentement exigé concerne la publication/révélation à un tiers.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation',
     question:
         'La circonstance aggravante de l’art. 226-8 al.2 est constituée lorsque :',
@@ -22474,7 +22474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : aggravation lorsque le montage/deepfake est réalisé en utilisant un service de communication au public en ligne.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines',
     question: 'En forme simple (226-8 al.1), la peine est :',
     options: [
@@ -22486,7 +22486,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : art. 226-8 al.1 => 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines aggravées',
     question: 'En forme aggravée (226-8 al.2), la peine est :',
     options: [
@@ -22498,7 +22498,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : art. 226-8 al.2 => 2 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question: 'La tentative de l’atteinte à la représentation (226-8) est :',
     options: [
@@ -22511,7 +22511,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Fondement',
     question: 'Les atteintes à l’intimité de la vie privée sont prévues par :',
     options: [
@@ -22524,7 +22524,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : art. 226-1 C.P. réprime la captation/enregistrement/transmission des paroles privées, de l’image en lieu privé, et la localisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles',
     question: 'Constitue une atteinte (226-1) :',
     options: [
@@ -22538,7 +22538,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste explicitement cette première branche de 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image',
     question: 'Constitue une atteinte (226-1) :',
     options: [
@@ -22552,7 +22552,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : l’image est protégée quand la personne est dans un lieu privé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé',
     question: 'Un lieu privé est défini (au cours) comme :',
     options: [
@@ -22565,7 +22565,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition jurisprudentielle : endroit non ouvert à personne sauf autorisation de celui qui l’occupe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation',
     question: 'Depuis les précisions du cours, 226-1 vise aussi :',
     options: [
@@ -22579,7 +22579,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la localisation (temps réel ou différé) comme branche autonome de 226-1.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Présomption de consentement',
     question:
         'Le consentement est présumé lorsque l’atteinte (paroles/images) est accomplie :',
@@ -22594,7 +22594,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique cette présomption pour paroles/images (mais pas pour la localisation).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation et consentement',
     question:
         'Selon le cours, la présomption “au vu et au su” ne s’applique pas à :',
@@ -22608,7 +22608,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que cette présomption ne vaut pas pour la localisation car elle est très facilement clandestine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Infraction de conséquence',
     question:
         'La conservation, l’utilisation ou la divulgation d’un enregistrement issu d’une atteinte à la vie privée est réprimée par :',
@@ -22622,7 +22622,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 226-2 réprime la conservation/diffusion/utilisation des documents/enregistrements obtenus via 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peines',
     question: 'La peine de base pour l’atteinte à la vie privée (226-1) est :',
     options: [
@@ -22635,7 +22635,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-1 (simple) => 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation conjoint/PACS',
     question:
         'L’atteinte à la vie privée est aggravée (226-1 al.7) lorsqu’elle est commise :',
@@ -22649,7 +22649,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’art. 226-1 al.7 comme circonstance aggravante liée au lien conjugal/concubinage/PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation DAP/Mission public',
     question:
         'Le cours prévoit une aggravation (226-1 al.8) lorsque les faits sont commis au préjudice :',
@@ -22664,7 +22664,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement cette aggravation (226-1 al.8).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Contenu sexuel',
     question:
         'Le cours mentionne une aggravation (226-2-1 al.1) quand les faits portent sur :',
@@ -22679,7 +22679,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’art. 226-2-1 al.1 comme circonstance aggravante liée au caractère sexuel.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Tentative',
     question: 'La tentative des délits 226-1 et 226-2 est :',
     options: [
@@ -22693,7 +22693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Fondement',
     question:
         'L’atteinte à l’intimité d’une personne (“upskirting”) est prévue par :',
@@ -22707,7 +22707,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : art. 226-3-1 C.P. réprime le fait d’apercevoir les parties intimes dissimulées, à l’insu ou sans consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Élément matériel',
     question:
         'Le délit est constitué si l’auteur use de tout moyen afin d’apercevoir :',
@@ -22722,7 +22722,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : observation des parties intimes cachées par vêtement ou parce que la personne est dans un lieu clos.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Condition',
     question: 'L’acte doit être commis :',
     options: [
@@ -22734,7 +22734,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours l’énonce comme condition expresse de 226-3-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Aggravations',
     question:
         'Parmi les aggravations prévues au cours (226-3-1 al.2), on trouve :',
@@ -22748,7 +22748,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours liste ces circonstances aggravantes à l’alinéa 2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peines simples',
     question: 'En forme simple (226-3-1 al.1), la peine est :',
     options: [
@@ -22760,7 +22760,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 226-3-1 al.1 => 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peines aggravées',
     question: 'En forme aggravée (226-3-1 al.2), la peine est :',
     options: [
@@ -22772,7 +22772,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 226-3-1 al.2 => 2 ans + 30 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Tentative',
     question: 'La tentative de 226-3-1 est :',
     options: [
@@ -22789,7 +22789,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // SECRET DES CORRESPONDANCES (papier) — 226-15 al.1
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Fondement',
     question:
         'L’atteinte au secret des correspondances (ouverture/suppression/retard/détournement) est prévue par :',
@@ -22803,7 +22803,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 226-15 al.1 vise les correspondances “arrivées ou non à destination” (papier), et les actes d’atteinte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Actes',
     question: 'Parmi les actes visés par 226-15 al.1, on trouve :',
     options: [
@@ -22817,7 +22817,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste explicitement ces verbes d’action comme éléments matériels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Ouvrir',
     question: '“Ouvrir” une correspondance au sens du cours consiste à :',
     options: [
@@ -22831,7 +22831,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : ouvrir = violer la fermeture, atteinte à l’intégrité du support donnant accès au contenu.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Accord de la victime',
     question:
         'Selon le cours (226-14), pour certains signalements effectués par un médecin, il est en principe nécessaire :',
@@ -22845,7 +22845,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que, pour certains signalements par un professionnel de santé, l’accord de la victime est requis (sauf exceptions).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mineur et accord',
     question:
         'Selon le cours (226-14), lorsque la victime est un mineur, l’accord de la victime pour le signalement :',
@@ -22859,7 +22859,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que lorsque la victime est mineure, l’accord n’est pas nécessaire pour le signalement dans les cas prévus par 226-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Incapacité de se protéger',
     question:
         'Selon le cours (226-14), lorsque la victime n’est pas en mesure de se protéger en raison de son âge ou de son incapacité physique ou psychique, l’accord :',
@@ -22873,7 +22873,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’exception : si la victime ne peut se protéger (âge/incapacité), l’accord n’est pas requis pour le signalement prévu par 226-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Sujétion psychologique ou physique',
     question:
         'Selon le cours (226-14), un médecin peut informer le procureur de faits de sujétion psychologique ou physique (223-15-3) lorsque :',
@@ -22888,7 +22888,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’exception : signalement possible si la sujétion entraîne une altération grave ou un acte/abstention gravement préjudiciable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Information de la victime',
     question:
         'Selon le cours (226-14), en cas d’impossibilité d’obtenir l’accord de la victime (dans les cas prévus), le médecin doit :',
@@ -22902,7 +22902,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’en cas d’impossibilité d’obtenir l’accord, le professionnel doit informer la victime du signalement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Détention d’arme',
     question:
         'Selon le cours (226-14), les professionnels de la santé ou de l’action sociale peuvent informer le préfet (à Paris le préfet de police) lorsque :',
@@ -22917,7 +22917,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste cette exception : information au préfet/préfet de police en cas de dangerosité + détention/intention d’acquérir une arme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement vétérinaire',
     question:
         'Selon le cours (226-14), le vétérinaire peut porter à la connaissance du procureur :',
@@ -22932,7 +22932,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours inclut une exception propre au vétérinaire concernant les sévices graves, cruauté, atteinte sexuelle et mauvais traitements sur un animal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Responsabilité de l’auteur du signalement',
     question:
@@ -22952,7 +22952,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DÉNONCIATION CALOMNIEUSE — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne morale',
     question:
         'Selon le cours, la “personne déterminée” visée par la dénonciation peut être :',
@@ -22966,7 +22966,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la personne dénoncée peut être physique ou morale dès lors qu’elle est identifiable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Identification sans nom',
     question:
         'Selon le cours, même sans nommer la victime, la dénonciation peut viser une personne déterminée si :',
@@ -22981,7 +22981,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’identification peut résulter de détails permettant de reconnaître la personne visée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation anonyme',
     question:
         'Selon le cours, en cas de dénonciation anonyme, l’infraction peut être poursuivie si :',
@@ -22995,7 +22995,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que dans le cas d’une dénonciation anonyme, il faut que l’auteur puisse être identifié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur moral',
     question:
         'Selon le cours, est assimilé à l’auteur de la dénonciation celui qui :',
@@ -23010,7 +23010,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’auteur moral (celui qui fait effectuer) est assimilé à l’auteur de la dénonciation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Exécutant sur ordre',
     question:
         'Selon le cours, la personne qui exécute matériellement une dénonciation sur instructions hiérarchiques n’est poursuivable que si :',
@@ -23025,7 +23025,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue : l’exécutant n’est poursuivi que s’il participe personnellement, contrairement à celui n’ayant eu qu’un rôle matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Sanction effective',
     question:
         'Selon le cours, pour que la dénonciation soit “préjudiciable”, il faut :',
@@ -23040,7 +23040,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que peu importe qu’une sanction ait été prononcée : il suffit que le fait soit de nature à entraîner des sanctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Différence avec diffamation',
     question:
         'Selon le cours, la dénonciation calomnieuse se distingue de la diffamation car elle est aussi :',
@@ -23055,7 +23055,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours souligne la différence : au-delà de l’atteinte à l’honneur, elle expose à des sanctions par une autorité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataires possibles',
     question:
         'Selon le cours, peuvent recevoir une dénonciation entrant dans 226-10 :',
@@ -23070,7 +23070,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite notamment : autorités pouvant donner suite/saisir, supérieurs hiérarchiques, employeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réception',
     question:
         'Selon le cours, il n’est pas nécessaire que la dénonciation soit remise en main propre car il suffit :',
@@ -23089,7 +23089,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLATION DE DOMICILE — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Proximité des dépendances',
     question:
         'Selon le cours, une dépendance ne peut entrer dans la notion de domicile que si :',
@@ -23104,7 +23104,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste sur la nécessité d’un lien étroit et immédiat (annexe + proximité) entre dépendance et habitation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux protégés',
     question: 'Selon le cours, peuvent être considérés comme domiciles :',
     options: [
@@ -23118,7 +23118,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste comme domiciles : chambre d’hôtel, véhicule aménagé, caravane, roulotte, tente, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux ouverts au public',
     question:
         'Selon le cours, les locaux professionnels bénéficient de la protection du domicile :',
@@ -23133,7 +23133,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les lieux ouverts au public ne bénéficient pas de la protection pendant les heures d’ouverture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Porte non fermée',
     question:
         'Selon le cours, l’introduction illicite par voie de fait peut ne pas être retenue lorsque :',
@@ -23147,7 +23147,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne qu’une introduction illicite n’a pas pu être retenue lorsque la porte n’était pas fermée à clés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien en connaissance de cause',
     question:
         'Selon le cours, des personnes venues ensuite occuper les lieux peuvent être poursuivies si :',
@@ -23166,7 +23166,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // CORRESPONDANCES ÉLECTRONIQUES — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Moment protégé',
     question:
         'Selon le cours, 226-15 al.2 s’applique aux correspondances en cours de transmission ou :',
@@ -23181,7 +23181,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le texte vise les messages en transmission ou arrivés mais pas encore pris connaissance par le destinataire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Après lecture',
     question:
         'Selon le cours, dès que le destinataire a pris connaissance d’un mail, celui-ci :',
@@ -23200,7 +23200,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTE À LA REPRÉSENTATION — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Blogs/profils fictifs',
     question:
         'Selon la jurisprudence citée au cours, créer un profil de réseau social au nom d’un tiers sans montage image/voix relève :',
@@ -23214,7 +23214,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence : un simple procédé écrit (sans montage image/voix) ne relève pas de 226-8.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage caractérisé',
     question: 'Selon le cours, le montage réprimé est celui qui tend à :',
     options: [
@@ -23231,7 +23231,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTE À LA REPRÉSENTATION — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Trucage manifestement apparent',
     question:
         'Selon le cours (226-8), le consentement à la publication n’est pas nécessaire lorsque :',
@@ -23245,7 +23245,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que si le montage est manifestement apparent, le public ne peut pas être dupé : l’incrimination n’est pas constituée dans ce cas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Mention explicite',
     question:
         'Selon le cours (226-8), le consentement à la publication n’est pas nécessaire si :',
@@ -23259,7 +23259,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’une mention claire et univoque (“montage”) évite la méprise et neutralise la condition de consentement à la publication.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — But recherché',
     question:
         'Selon le cours, pour 226-8, le but recherché (notoriété, profit, etc.) :',
@@ -23273,7 +23273,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le résultat escompté par la diffusion (profit, notoriété…) est indifférent pour l’élément moral.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-8 repose sur :',
     options: [
@@ -23290,7 +23290,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // ATTEINTE À L’INTIMITÉ DE LA VIE PRIVÉE — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Procédé quelconque',
     question: 'Selon le cours (226-1), l’atteinte peut être réalisée :',
     options: [
@@ -23303,7 +23303,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que toutes les méthodes sont visées, y compris sans appareil, dès lors qu’elles permettent l’atteinte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles en lieu public',
     question:
         'Selon le cours, le délit de captation/enregistrement de paroles privées (226-1) est constitué si les paroles sont prononcées :',
@@ -23318,7 +23318,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’élément déterminant est le caractère privé/confidentiel des propos, pas le lieu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement inaudible',
     question:
         'Selon le cours, l’infraction d’enregistrement de paroles privées est constituée :',
@@ -23332,7 +23332,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’infraction est constituée quels que soient les résultats techniques, y compris si les propos enregistrés sont inaudibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Transmission',
     question: 'Selon le cours, la “transmission” de paroles privées vise :',
     options: [
@@ -23346,7 +23346,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que toute mise à disposition à des destinataires avertis peut constituer une transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Mineur et consentement',
     question:
         'Selon le cours (226-1), dans le cas d’un mineur, le consentement doit émaner :',
@@ -23360,7 +23360,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que pour un mineur, l’accord vient des titulaires de l’autorité parentale (dans le respect du code civil).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image et lieu privé',
     question:
         'Selon le cours, 226-1 réprime l’image d’une personne lorsqu’elle est prise :',
@@ -23374,7 +23374,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que pour l’image, le champ est restreint : la personne doit se trouver dans un lieu privé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Exemples de lieux privés',
     question:
         'Selon le cours, peuvent être considérés comme des lieux privés :',
@@ -23388,7 +23388,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite ces exemples jurisprudentiels comme lieux privés au sens de 226-1 (appréciation au cas par cas).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation et moyens',
     question:
         'Selon le cours, la captation de localisation peut notamment résulter :',
@@ -23403,7 +23403,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne des exemples de dispositifs techniques : balise, logiciel espion sur un moyen de communication mobile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Opposition d’un parent',
     question: 'Selon le cours, pour la localisation d’un mineur, il suffit :',
     options: [
@@ -23417,7 +23417,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que pour la localisation, l’opposition d’un parent suffit à rendre la localisation illicite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Infraction de conséquence',
     question:
         'Selon le cours, la conservation/utilisation/divulgation (226-2) est :',
@@ -23431,7 +23431,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que 226-2 sanctionne le “produit” d’une atteinte à la vie privée prévue par 226-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Conservation',
     question: 'Selon le cours (226-2), la “conservation” signifie :',
     options: [
@@ -23445,7 +23445,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le simple fait de garder le produit de l’atteinte est réprimé, indépendamment de toute diffusion ou utilisation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Utilisation en justice',
     question:
         'Selon le cours (226-2), utiliser un enregistrement illicite dans une procédure (ex : divorce) :',
@@ -23460,7 +23460,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne l’exemple : l’utilisation, même en privé, notamment en procédure, peut tomber sous 226-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Diffusion à un tiers',
     question:
         'Selon le cours (226-2), la “diffusion/divulgation” peut être constituée :',
@@ -23474,7 +23474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise une conception large : presse/radio/télévision mais aussi communication à un tiers jusqu’alors ignorant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Personne tenue d’empêcher',
     question:
         'Selon le cours (226-2), peut être considéré comme auteur celui qui, ayant connaissance de l’illicéité et le pouvoir d’empêcher la diffusion :',
@@ -23493,7 +23493,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PORNODIVULGATION — Approfondissement
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Consentement et preuve',
     question:
         'Selon le cours, lorsque la victime affirme ne pas avoir donné son accord à la diffusion, il appartient :',
@@ -23508,7 +23508,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’accord à être filmé ne vaut pas accord à diffuser : l’auteur doit prouver l’accord de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Différence avec 226-1',
     question: 'Selon le cours, la pornodivulgation se distingue de 226-1 car :',
     options: [
@@ -23526,7 +23526,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // SECRET DES CORRESPONDANCES — Approfondissement (papier)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Notion',
     question: 'Selon le cours, une “correspondance” est :',
     options: [
@@ -23540,7 +23540,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence assimile “correspondance” à “message” (lettre, carte postale, télégramme…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — À destination d’un tiers',
     question:
         'Selon le cours, on viole le secret des correspondances lorsque le message est adressé :',
@@ -23554,7 +23554,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’atteinte vise le message adressé à autrui, on ne viole pas le secret de sa propre correspondance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Suppression',
     question: 'Selon le cours, “supprimer” une correspondance signifie :',
     options: [
@@ -23568,7 +23568,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition jurisprudentielle : tout acte empêchant la correspondance de parvenir à destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Retarder',
     question: 'Selon le cours, “retarder” une correspondance consiste à :',
     options: [
@@ -23582,7 +23582,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que retarder revient à faire arriver plus tard en retenant le message et en interrompant l’acheminement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Prise frauduleuse de connaissance',
     question:
         'Selon le cours, “prendre frauduleusement connaissance” peut exister :',
@@ -23601,7 +23601,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLATION DES CORRESPONDANCES ÉLECTRONIQUES — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation d’appareils',
     question:
         'Selon le cours (226-15 al.2), “procéder à l’installation d’appareils” vise :',
@@ -23616,7 +23616,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours inclut l’installation de dispositifs (ou logiciels) de nature à permettre l’atteinte aux correspondances.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intention de nuire',
     question:
         'Selon le cours, pour 226-15 (correspondances), l’intention de nuire :',
@@ -23634,7 +23634,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // SECRET PROFESSIONNEL — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Caractère secret après décès',
     question: 'Selon le cours, le caractère secret de l’information :',
     options: [
@@ -23647,7 +23647,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le caractère secret de l’information ne disparaît pas du fait du décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation à un autre dépositaire',
     question:
         'Selon le cours, la révélation à une personne également soumise au secret professionnel :',
@@ -23662,7 +23662,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’il suffit que l’information soit transmise à une seule personne, même tenue au secret, pour constituer l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Intention de nuire',
     question: 'Selon le cours, pour 226-13, l’intention de nuire :',
     options: [
@@ -23679,7 +23679,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // DÉNONCIATION CALOMNIEUSE — Approfondissement (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponse à une question',
     question:
         'Selon le cours, une dénonciation faite dans les réponses aux questions d’un magistrat instructeur :',
@@ -23693,7 +23693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite des cas où la dénonciation est provoquée (réponses aux questions d’un magistrat) et perd donc le caractère spontané.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Défense du prévenu',
     question:
         'Selon le cours, la dénonciation faite par un prévenu peut perdre son caractère spontané si :',
@@ -23710,7 +23710,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (1/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fait partiellement inexact',
     question:
         'Selon le cours (226-10), la dénonciation calomnieuse peut être constituée si les faits dénoncés sont :',
@@ -23724,7 +23724,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’auteur doit savoir le fait “totalement ou partiellement inexact”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Moyen de preuve (oral)',
     question:
         'Selon le cours, la dénonciation orale (ex : téléphone) est prise en compte si :',
@@ -23738,7 +23738,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la dénonciation orale est possible, mais doit pouvoir être prouvée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Plainte et 226-10',
     question:
         'Selon le cours, la dénonciation écrite peut notamment prendre la forme :',
@@ -23752,7 +23752,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la plainte auprès des services de police ou de gendarmerie comme forme de dénonciation écrite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Pétition',
     question: 'Selon le cours, une dénonciation écrite peut aussi être :',
     options: [
@@ -23765,7 +23765,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère la pétition parmi les supports possibles de la dénonciation écrite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Lettre anonyme',
     question: 'Selon le cours, une dénonciation peut être :',
     options: [
@@ -23778,7 +23778,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la dénonciation écrite peut être une lettre signée ou anonyme (à condition que l’auteur soit identifiable pour poursuivre).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité de police administrative',
     question:
         'Selon le cours, parmi les destinataires possibles figurent des officiers de police administrative (exemples) :',
@@ -23792,7 +23792,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite notamment notaires, huissiers, préfets, recteurs comme officiers de police administrative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité de police judiciaire',
     question:
         'Selon le cours, parmi les destinataires possibles figurent des officiers de police judiciaire (exemples) :',
@@ -23806,7 +23806,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne notamment maires/adjoints, policiers et gendarmes comme destinataires possibles au titre des autorités visées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité “pouvant saisir”',
     question:
         'Selon le cours, peut être destinataire une personne qui n’a pas le pouvoir de sanctionner mais qui peut saisir l’autorité compétente, par exemple :',
@@ -23820,7 +23820,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite des exemples de personnes pouvant saisir l’autorité compétente, comme le médecin ou l’assistante sociale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Initiative personnelle',
     question:
         'Selon le cours, l’article 226-10 exige que la dénonciation soit “adressée”, ce qui suppose :',
@@ -23834,7 +23834,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que “adressée” implique une initiative personnelle, d’où l’exigence de spontanéité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Rapport sur demande',
     question:
         'Selon le cours, un rapport établi sur demande d’un supérieur est en principe :',
@@ -23848,7 +23848,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que rapports/comptes rendus sur demande font perdre le caractère spontané.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Devoir d’informer',
     question:
         'Selon le cours, la dénonciation faite par un subordonné à ses supérieurs qu’il avait le devoir d’informer :',
@@ -23862,7 +23862,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que lorsqu’il existe un devoir d’informer, la dénonciation est provoquée et perd la spontanéité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faits prescrits',
     question:
         'Selon le cours, la dénonciation peut rester “préjudiciable” même si l’éventualité de sanction est écartée par :',
@@ -23876,7 +23876,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que peu importe qu’une sanction soit finalement impossible (prescription, immunité, amnistie, décès…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tribunal compétent (appréciation)',
     question:
         'Selon le cours, en dehors des cas de fausseté “automatique”, la pertinence des accusations est appréciée par :',
@@ -23890,7 +23890,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le tribunal apprécie la pertinence des accusations dans les autres cas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Omission de témoigner',
     question:
         'Selon le cours, si l’auteur découvre son erreur après coup, il pourrait être poursuivi pour :',
@@ -23904,7 +23904,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la possibilité d’une poursuite pour omission de témoigner en faveur d’un innocent (434-11).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Obtention préalable',
     question:
         'Selon le cours (226-2-1 al.2), le contenu diffusé sans accord doit avoir été préalablement obtenu :',
@@ -23918,7 +23918,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la pornodivulgation vise un contenu obtenu avec le consentement (ou fourni par la personne) puis diffusé sans accord.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Caractère sexuel',
     question: 'Selon le cours, le “caractère sexuel” des paroles ou images :',
     options: [
@@ -23931,7 +23931,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que l’appréciation du caractère sexuel relève des juridictions, les termes étant jugés suffisamment clairs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Diffusion',
     question:
         'Selon le cours, la “diffusion” vise le fait de porter le contenu :',
@@ -23945,7 +23945,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la diffusion consiste à porter le contenu à la connaissance du public ou d’un tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Plainte (mention du cours)',
     question:
         'Selon le cours, l’article 226-6 impose le dépôt d’une plainte notamment parce que :',
@@ -23960,7 +23960,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que l’absence d’accord à la diffusion est fréquemment établie par la déclaration de la victime, d’où l’exigence de plainte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Complicité',
     question: 'Selon le cours, la complicité de pornodivulgation est :',
     options: [
@@ -23973,7 +23973,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle : complicité oui, selon les règles générales (aide/assistance, provocation, instructions).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Introduction',
     question:
         'Selon le cours (226-4), l’infraction vise l’introduction dans le domicile d’autrui à l’aide de :',
@@ -23987,7 +23987,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énonce explicitement les moyens : manœuvres, menaces, voies de fait ou contrainte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Contrainte',
     question: 'Selon le cours, la “contrainte” correspond à une situation où :',
     options: [
@@ -24000,7 +24000,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la contrainte comme toute situation où le consentement n’est pas libre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Menaces',
     question: 'Selon le cours, les menaces peuvent être caractérisées par :',
     options: [
@@ -24014,7 +24014,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les menaces peuvent résulter de comportements inquiétants ou de paroles annonçant des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Manœuvres (exemple type)',
     question: 'Selon le cours, une “manœuvre” peut être :',
     options: [
@@ -24027,7 +24027,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit les manœuvres comme des procédés astucieux/ruses facilitant l’introduction illicite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et meubles',
     question:
         'Selon le cours, un logement inoccupé peut être considéré comme domicile si :',
@@ -24042,7 +24042,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la présence de meubles significatifs peut révéler un droit à s’y dire chez soi (appréciation du juge).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Cour non close',
     question:
         'Selon le cours, la cour d’un immeuble n’est pas un domicile lorsque :',
@@ -24056,7 +24056,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la cour d’un immeuble lorsqu’elle n’est pas close parmi les exclusions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Locaux proposés à la location',
     question:
         'Selon la note du cours, les logements vacants non meublés ou proposés à la location (meublés ou non) :',
@@ -24070,7 +24070,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que ces logements ne sont pas des domiciles au sens de 226-4, l’occupation frauduleuse relevant d’autres articles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Interception sans lecture',
     question:
         'Selon le cours, l’interception d’une correspondance électronique peut être constituée :',
@@ -24084,7 +24084,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que pour l’interception, il n’est pas nécessaire que l’auteur lise le contenu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple d’utilisation',
     question:
         'Selon le cours, “utiliser” une correspondance électronique peut viser notamment :',
@@ -24098,7 +24098,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne l’exemple : effacer un email non destiné ou le transférer à un tiers, même sans l’ouvrir, relève de “utiliser”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation pour un tiers',
     question:
         'Selon le cours, celui qui installe un dispositif d’interception pour le compte d’un tiers est :',
@@ -24113,7 +24113,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’en l’absence de précision légale, l’installateur est considéré comme auteur, même s’il agit pour un tiers.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Consentement présumé',
     question:
         'Selon le cours, pour les paroles/images (226-1), le consentement peut être présumé si la personne :',
@@ -24127,7 +24127,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la présomption : au vu et au su, sans opposition possible.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation et clandestinité',
     question:
         'Selon le cours, la présomption de consentement “au vu et au su” ne s’applique pas à la localisation car :',
@@ -24141,7 +24141,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que la localisation est facilement clandestine (logiciels espions, balises), donc pas de présomption.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Captation de paroles',
     question: 'Selon le cours, la “captation” de paroles vise principalement :',
     options: [
@@ -24155,7 +24155,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne notamment l’audition de conversations téléphoniques via des moyens techniques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image (objet exclu)',
     question:
         'Selon le cours, est exclue du champ de l’atteinte à l’image (226-1) :',
@@ -24170,7 +24170,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’incrimination vise l’image d’une personne, pas la seule photo du lieu ou de biens.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé (définition)',
     question: 'Selon le cours (jurisprudence), un lieu privé est :',
     options: [
@@ -24184,7 +24184,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition : non ouvert à personne sans autorisation de l’occupant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Conservation (but)',
     question:
         'Selon le cours, réprimer la “conservation” (226-2) permet notamment :',
@@ -24199,7 +24199,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que la conservation est punissable pour prévenir la diffusion et limiter les risques de chantage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Lieu clos',
     question:
         'Selon le cours (226-3-1), l’infraction peut être constituée si la victime a caché son intimité :',
@@ -24213,7 +24213,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : intimité cachée par habillement ou par présence dans un lieu clos.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Fixation d’images',
     question:
         'Selon le cours (226-3-1 al.2), constitue une aggravation le fait que :',
@@ -24227,7 +24227,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la fixation/enregistrement/transmission d’images figure parmi les circonstances aggravantes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Transport collectif',
     question:
         'Selon le cours (226-3-1 al.2), l’infraction est aggravée lorsqu’elle est commise :',
@@ -24242,7 +24242,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste comme aggravation : transport collectif et lieux destinés à l’accès à un moyen de transport collectif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Repartage',
     question:
         'Selon le cours, l’incrimination de 226-8 permet aussi de sanctionner :',
@@ -24256,7 +24256,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que “par quelque voie que ce soit” englobe aussi les repartages du contenu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Hiérarchie loi 1881',
     question:
         'Selon le cours, en matière de presse, la détermination des responsables renvoie notamment à :',
@@ -24270,7 +24270,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’article 42 de la loi de 1881 (directeur de publication, auteur, imprimeur, etc.).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Achèvement',
     question:
         'Selon le cours, 226-15 al.1 vise les correspondances “arrivées ou non à destination”, ce qui signifie :',
@@ -24285,7 +24285,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’atteinte peut se produire même si la correspondance n’est pas encore ou n’est plus acheminée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Moyen indifférent',
     question:
         'Selon le cours, pour “ouvrir” une correspondance, le moyen utilisé est :',
@@ -24299,7 +24299,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’ouverture peut être violente (déchirer) ou subtile (décacheter à la vapeur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Renvoi au destinataire',
     question:
         'Selon le cours, l’infraction d’ouverture peut être constituée même si le courrier est ensuite :',
@@ -24313,7 +24313,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que peu importe que la correspondance ait été renvoyée vers son destinataire après ouverture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire par mission temporaire',
     question:
         'Selon le cours, peuvent être dépositaires du secret en raison d’une mission temporaire :',
@@ -24327,7 +24327,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne notamment jurés, experts, membres assesseurs parmi les missions temporaires pouvant exposer au secret.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation déjà publique',
     question:
         'Selon le cours, si l’information a déjà été rendue publique, l’infraction peut être retenue si le dépositaire :',
@@ -24341,7 +24341,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que même si l’info est déjà publique, le dépositaire peut être condamné s’il confirme ou infirme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Nature de la révélation',
     question: 'Selon le cours, la révélation peut être commise :',
     options: [
@@ -24355,7 +24355,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la forme importe peu : parole ou transmission de documents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Élément moral',
     question:
         'Selon le cours, l’atteinte au secret professionnel (226-13) est constituée si l’auteur agit :',
@@ -24370,7 +24370,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : la révélation est intentionnelle et réalisée en connaissance de cause (sans exiger l’intention de nuire).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Complicité',
     question:
         'Selon le cours, la complicité de l’atteinte au secret professionnel est :',
@@ -24384,7 +24384,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : complicité oui, selon les règles générales (aide/assistance, provocation, instructions).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Tentative',
     question:
         'Selon le cours, la tentative de violation du secret professionnel (226-13) est :',
@@ -24397,7 +24397,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne : tentative non pour 226-13.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-1 suppose notamment :',
     options: [
@@ -24410,7 +24410,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique la conscience d’illégalité et la volonté de ne pas respecter la vie privée, le mobile important peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Volonté',
     question: 'Selon le cours, l’auteur de 226-1 a pris le parti :',
     options: [
@@ -24423,7 +24423,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la “volonté de porter atteinte à la vie privée d’autrui”, quelle que soit la motivation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément moral (double conscience)',
     question: 'Selon le cours, l’élément moral de 226-4 implique :',
     options: [
@@ -24437,7 +24437,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la volonté d’entrer/ rester à l’insu/contre gré, et la conscience d’agir hors les cas permis par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Complicité',
     question: 'Selon le cours, la complicité de violation de domicile :',
     options: [
@@ -24451,7 +24451,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Mauvaise foi',
     question: 'L’élément moral (mauvaise foi) suppose la conscience :',
     options: [
@@ -24465,7 +24465,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition jurisprudentielle : connaissance de la destination à autrui et conservation volontaire empêchant/retardant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Aggravation',
     question:
         'L’aggravation de 226-15 al.3 (secret des correspondances) vise notamment les faits commis par :',
@@ -24479,7 +24479,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : al.3 prévoit l’aggravation lorsque l’auteur est conjoint/concubin/PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peines',
     question: 'En forme simple (226-15 al.1), la peine est :',
     options: [
@@ -24492,7 +24492,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-15 al.1 (simple) => 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Tentative',
     question: 'La tentative pour 226-15 al.1 est :',
     options: [
@@ -24509,7 +24509,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // SECRET PROFESSIONNEL — 226-13 + exceptions 226-14
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Fondement',
     question: 'L’atteinte au secret professionnel est prévue par :',
     options: [
@@ -24522,7 +24522,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : art. 226-13 C.P. réprime la révélation d’une information à caractère secret par un dépositaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Personne dépositaire',
     question:
         'Est “dépositaire” du secret au sens de 226-13 une personne qui en a connaissance :',
@@ -24536,7 +24536,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la formule : par état/profession/fonction/mission temporaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Définition du secret',
     question: 'Selon le cours (jurisprudence), le secret couvre :',
     options: [
@@ -24550,7 +24550,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique l’extension : pas seulement la confidence, mais aussi ce qui est constaté/découvert/déduit.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Élément matériel',
     question: 'L’acte réprimé par 226-13 consiste en :',
     options: [
@@ -24563,7 +24563,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 226-13 = révélation d’une information secrète par un dépositaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Transmission minimale',
     question:
         'Le délit est constitué dès lors que l’information secrète est transmise :',
@@ -24577,7 +24577,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : il suffit d’une seule transmission à autrui pour constituer l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Peines',
     question:
         'L’atteinte au secret professionnel (226-13) est punie (personne physique) de :',
@@ -24590,7 +24590,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : 226-13 => 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exceptions',
     question:
         'Le cours rappelle que 226-13 n’est pas applicable dans certains cas prévus par :',
@@ -24604,7 +24604,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les exceptions/levées du secret prévues par l’art. 226-14 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement maltraitances',
     question:
         'Selon le cours (226-14), le secret ne s’applique pas à celui qui informe les autorités de :',
@@ -24622,7 +24622,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (2/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fondement',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -24635,7 +24635,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 226-10 C.P. définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire (supérieur/employeur)',
     question:
         'Selon le cours, la dénonciation calomnieuse peut être constituée si elle est adressée :',
@@ -24650,7 +24650,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement les supérieurs hiérarchiques ou l’employeur parmi les destinataires visés par 226-10.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Consommation (date)',
     question:
         'Selon la jurisprudence citée au cours, l’infraction est consommée :',
@@ -24664,7 +24664,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la jurisprudence retient la date de réception pour la consommation et le départ de prescription.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Prescription (point de départ)',
     question:
         'Selon le cours, le délai de prescription de l’action publique commence à courir :',
@@ -24678,7 +24678,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence fixe le point de départ au jour de réception de la dénonciation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fausseté automatique',
     question:
         'Selon le cours, la fausseté du fait dénoncé résulte nécessairement d’une décision définitive de :',
@@ -24693,7 +24693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que seules certaines décisions définitives constatant expressément l’absence de fait ou d’imputabilité établissent automatiquement la fausseté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faute de charges suffisantes',
     question:
         'Selon le cours, si la décision définitive de relaxe/non-lieu est rendue “faute de charges suffisantes” :',
@@ -24707,7 +24707,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que dans ce cas, la fausseté n’est pas automatique : le tribunal saisi contre le dénonciateur apprécie la pertinence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément moral (moment)',
     question:
         'Selon le cours, l’auteur doit connaître l’inexactitude des faits :',
@@ -24721,7 +24721,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : la conscience de l’inexactitude doit exister au jour de la dénonciation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Volonté de nuire',
     question:
         'Selon le cours, l’auteur de la dénonciation calomnieuse exprime :',
@@ -24735,7 +24735,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la connaissance de l’inexactitude révèle la volonté de nuire à la personne dénoncée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'Selon le cours, la tentative de dénonciation calomnieuse est :',
     options: [
@@ -24747,7 +24747,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne : TENTATIVE : NON pour l’article 226-10.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peine (principale)',
     question: 'Selon le cours, la dénonciation calomnieuse est punie de :',
     options: [
@@ -24761,7 +24761,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Fondement',
     question:
         'La diffusion, sans accord, d’un contenu intime à caractère sexuel obtenu avec le consentement est réprimée par :',
@@ -24775,7 +24775,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 226-2-1 al.2 réprime la diffusion sans accord d’un enregistrement/document sexuel obtenu avec consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Support possible',
     question: 'Selon le cours, le support du contenu diffusé peut être :',
     options: [
@@ -24788,7 +24788,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le support peut être photo, audio, vidéo ou échange de messages (sexting).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord à la captation',
     question: 'Selon le cours, l’accord à être filmé ou photographié :',
     options: [
@@ -24801,7 +24801,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : consentir à la captation n’implique pas consentir à la diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Menace et chantage',
     question:
         'Selon la note du cours, si l’auteur obtient une signature/engagement/remise de fonds en menaçant de diffuser le contenu intime, il s’agit de :',
@@ -24815,7 +24815,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne : si la menace de diffusion sert à obtenir signature/engagement/remise, le chantage (312-10) est constitué.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Menace et harcèlement sexuel',
     question:
         'Selon la note du cours, si l’auteur exige des faveurs sexuelles en menaçant de diffuser le contenu intime, il s’agit de :',
@@ -24829,7 +24829,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la menace de diffusion pour obtenir des faveurs sexuelles caractérise le harcèlement sexuel (222-33 II).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question:
         'Selon le cours, la tentative de pornodivulgation (226-2-1) est :',
@@ -24843,7 +24843,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’article 226-5 prévoit la tentative du délit 226-2-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peine',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) est punie de :',
@@ -24858,7 +24858,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Fondement',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -24872,7 +24872,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-4 définit et réprime la violation de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien',
     question: 'Selon le cours, constitue également une violation de domicile :',
     options: [
@@ -24886,7 +24886,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le maintien après une entrée illégitime constitue aussi l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Infraction continue',
     question: 'Selon le cours, la violation de domicile est :',
     options: [
@@ -24899,7 +24899,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la violation de domicile est continue, ce qui a des conséquences en flagrance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Flagrance',
     question: 'Selon le cours, une enquête de flagrance est possible :',
     options: [
@@ -24912,7 +24912,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : infraction continue → flagrance tant que l’occupation illicite se poursuit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Appel au secours',
     question: 'Selon le cours, l’introduction peut être légitime en cas de :',
     options: [
@@ -24925,7 +24925,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit un cas d’introduction légitime : appel au secours (cris/hurlements), même si l’appel est fantaisiste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Incendie/inondation',
     question:
         'Selon le cours, l’introduction peut être justifiée si la maison est :',
@@ -24939,7 +24939,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’incendie/inondation comme cas d’introduction légitime, même sans réclamation depuis l’intérieur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Assistance à personne en péril',
     question:
         'Selon le cours, l’introduction est justifiée par ordre de la loi pour :',
@@ -24954,7 +24954,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne que l’introduction peut être justifiée si des indices font croire qu’une personne est gravement en péril dans le domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question: 'Selon le cours, la tentative de violation de domicile est :',
     options: [
@@ -24966,7 +24966,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : tentative oui, prévue par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peine',
     question: 'Selon le cours, la violation de domicile (226-4) est punie de :',
     options: [
@@ -24979,7 +24979,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Fondement',
     question:
         'Le fait de faire la propagande ou publicité de méthodes facilitant la violation de domicile est incriminé par :',
@@ -24993,7 +24993,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-4-2-1 incrimine la propagande/publicité en faveur de méthodes visant à faciliter la violation de domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Objet',
     question:
         'Selon le cours, 226-4-2-1 vise notamment les contenus qui sont de véritables :',
@@ -25008,7 +25008,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne les vidéos “mode d’emploi du squat” comme exemple typique de ce délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Peine',
     question:
         'Selon le cours, la propagande/publicité en faveur de méthodes de squat est sanctionnée de :',
@@ -25019,7 +25019,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement',
     question:
         'La violation des correspondances émises par voie électronique est définie par :',
@@ -25033,7 +25033,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 226-15 al.2 définit la violation des correspondances par voie électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Répression',
     question:
         'Selon le cours, la répression (peines) de la violation des correspondances électroniques est prévue par :',
@@ -25047,7 +25047,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-15 al.2 définit, et 226-15 al.1 prévoit la répression.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mauvaise foi',
     question: 'Selon le cours, la “mauvaise foi” correspond à :',
     options: [
@@ -25061,7 +25061,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la Cour de cassation : mauvaise foi = connaissance que les messages ne lui étaient pas destinés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Erreur',
     question:
         'Selon le cours, violer des correspondances électroniques par méprise ou erreur :',
@@ -25075,7 +25075,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’erreur/méprise ne permet pas de caractériser l’infraction (absence d’intention).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Aggravation (conjoint)',
     question:
         'Selon le cours, la circonstance aggravante (226-15 al.3) est retenue lorsque les faits sont commis par :',
@@ -25089,7 +25089,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’aggravation lorsque l’auteur est conjoint/concubin/partenaire de PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peine aggravée',
     question:
         'Selon le cours, la peine en cas d’infraction aggravée (226-15 al.3) est :',
@@ -25103,7 +25103,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : aggravé (226-15 al.3) = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Tentative',
     question:
         'Selon le cours, la tentative de violation des correspondances électroniques (226-15 al.2) est :',
@@ -25118,7 +25118,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Fondement',
     question:
         'L’atteinte à la représentation de la personne (montage/déepfake) est prévue par :',
@@ -25132,7 +25132,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-8 définit et réprime l’atteinte à la représentation de la personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu généré',
     question:
         'Selon le cours, est assimilé à l’infraction le fait de diffuser un contenu représentant l’image ou la voix d’une personne :',
@@ -25147,7 +25147,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours assimile le contenu visuel/sonore généré algorithmiquement (deepfake) si absence de consentement et absence de mention/évidence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation (en ligne)',
     question:
         'Selon le cours, 226-8 est aggravé lorsque l’acte est réalisé via :',
@@ -25161,7 +25161,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : circonstance aggravante si commis via un service de communication au public en ligne (226-8 al.2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine simple',
     question: 'Selon le cours, la peine principale pour 226-8 (simple) est :',
     options: [
@@ -25173,7 +25173,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours indique : 226-8 al.1 = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine aggravée',
     question:
         'Selon le cours, la peine principale pour 226-8 (aggravée en ligne) est :',
@@ -25187,7 +25187,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-8 al.2 (en ligne) = 2 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question:
         'Selon le cours, la tentative de l’atteinte à la représentation (226-8) est :',
@@ -25201,7 +25201,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Fondement (paroles/images/localisation)',
     question:
@@ -25216,7 +25216,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-1 définit et réprime les atteintes à l’intimité de la vie privée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Document de conséquence',
     question:
         'La conservation, diffusion ou utilisation d’un enregistrement/document obtenu par atteinte à la vie privée est prévue par :',
@@ -25230,7 +25230,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-2 réprime la conservation/diffusion/utilisation d’un document issu d’une atteinte 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Captation localisation',
     question: 'Selon le cours, 226-1 vise aussi :',
     options: [
@@ -25244,7 +25244,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours inclut explicitement la localisation (temps réel ou différé) parmi les atteintes 226-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Niveau de précision',
     question:
         'Selon le cours, pour la localisation (226-1), le niveau de précision :',
@@ -25258,7 +25258,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le niveau de précision est indifférent : zone couverte par relais ou GPS.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Consentement localisation',
     question: 'Selon le cours, concernant la localisation, le consentement :',
     options: [
@@ -25275,7 +25275,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (3/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation (conjoint)',
     question:
         'Selon le cours, 226-1 est aggravé lorsque les faits sont commis par :',
@@ -25289,7 +25289,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’article 226-1 al.7 : aggravation lorsque l’auteur est conjoint/concubin/partenaire de PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Aggravation (dépositaire autorité publique)',
     question:
@@ -25305,7 +25305,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’article 226-1 al.8 : aggravation quand la victime est dépositaire de l’autorité publique, MSP, titulaire/candidat à un mandat, ou membre de sa famille.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Aggravation (contenu sexuel)',
     question:
         'Selon le cours, une circonstance aggravante existe lorsque les faits portent sur :',
@@ -25319,7 +25319,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne une aggravation lorsque les faits portent sur des paroles/images à caractère sexuel (226-2-1 al.1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine simple',
     question: 'Selon le cours, la peine principale (simple) pour 226-1 est :',
     options: [
@@ -25332,7 +25332,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-1 (simple) = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine aggravée',
     question:
         'Selon le cours, la peine principale lorsque l’infraction est aggravée (226-1 al.7/8 ou 226-2-1 al.1) est :',
@@ -25345,7 +25345,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours mentionne : aggravé = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Tentative',
     question: 'Selon le cours, la tentative des délits 226-1 et 226-2 est :',
     options: [
@@ -25358,7 +25358,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : l’article 226-5 prévoit la tentative des délits 226-1 et 226-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Complicité',
     question: 'Selon le cours, la complicité pour 226-1/226-2 :',
     options: [
@@ -25371,7 +25371,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Fondement',
     question:
         'L’atteinte à l’intimité d’une personne (upskirting, observation parties intimes) est prévue par :',
@@ -25385,7 +25385,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-3-1 prévoit et réprime l’atteinte à l’intimité d’une personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Condition (parties cachées)',
     question:
@@ -25400,7 +25400,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise les deux hypothèses : cachées par les habits ou par présence dans un lieu clos.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — À l’insu',
     question: 'Selon le cours, l’auteur doit avoir agi :',
     options: [
@@ -25413,7 +25413,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement cette condition : à l’insu ou sans consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (abus d’autorité)',
     question: 'Selon le cours, 226-3-1 est aggravé lorsqu’il est commis :',
@@ -25428,7 +25428,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste l’abus d’autorité liée aux fonctions parmi les circonstances aggravantes de 226-3-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (mineur)',
     question:
@@ -25443,7 +25443,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement l’aggravation lorsque les faits sont commis sur un mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (vulnérabilité)',
     question:
@@ -25458,7 +25458,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : vulnérabilité due à divers facteurs, apparente ou connue de l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité d’une personne — Circonstance aggravante (plusieurs)',
     question:
@@ -25474,7 +25474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste l’action de plusieurs personnes (auteur/complice) comme circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peine simple',
     question: 'Selon le cours, la peine principale (simple) pour 226-3-1 est :',
     options: [
@@ -25487,7 +25487,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-3-1 al.1 = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Peine aggravée',
     question:
         'Selon le cours, la peine principale (aggravée) pour 226-3-1 al.2 est :',
@@ -25501,7 +25501,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : aggravé (226-3-1 al.2) = 2 ans + 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Tentative',
     question: 'Selon le cours, la tentative de 226-3-1 est :',
     options: [
@@ -25514,7 +25514,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : tentative expressément prévue par 226-5 pour 226-3-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité d’une personne — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-3-1 implique notamment :',
     options: [
@@ -25529,7 +25529,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Fondement (papier)',
     question:
         'L’atteinte au secret des correspondances (courrier) commise par un particulier est prévue par :',
@@ -25543,7 +25543,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-15 al.1 définit et réprime l’atteinte au secret des correspondances (support tangible).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Actes visés',
     question: 'Selon le cours, 226-15 al.1 réprime notamment le fait :',
     options: [
@@ -25557,7 +25557,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère ces actes matériels constitutifs de l’atteinte au secret des correspondances.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Altération partielle',
     question:
         'Selon le cours, l’ouverture est caractérisée par tout acte portant atteinte à l’intégrité du support et donnant accès au contenu, même si :',
@@ -25571,7 +25571,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’altération peut être totale ou partielle : l’infraction peut être constituée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Détournement (sens)',
     question: 'Selon le cours, “détourner” une correspondance consiste à :',
     options: [
@@ -25584,7 +25584,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le détournement se matérialise en modifiant le cours normal de la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Mauvaise foi (papier)',
     question:
         'Selon le cours, la mauvaise foi (226-15 al.1) implique notamment la connaissance :',
@@ -25599,7 +25599,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la Cour de cassation : connaissance du caractère “non destiné” + conservation volontaire pour empêcher/retarder.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Intention de nuire',
     question: 'Selon le cours, pour 226-15 al.1, l’intention de nuire :',
     options: [
@@ -25612,7 +25612,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’intention de nuire n’est pas exigée : le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Tentative',
     question:
         'Selon le cours, la tentative d’atteinte au secret des correspondances (226-15 al.1) est :',
@@ -25625,7 +25625,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne : TENTATIVE : NON pour 226-15 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine simple',
     question:
         'Selon le cours, la peine principale (simple) pour 226-15 al.1 est :',
@@ -25639,7 +25639,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : simple (226-15 al.1) = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine aggravée (conjoint)',
     question: 'Selon le cours, la peine aggravée (226-15 al.3) est :',
     options: [
@@ -25653,7 +25653,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Fondement',
     question:
         'L’atteinte au secret professionnel est définie et réprimée par :',
@@ -25667,7 +25667,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 226-13 définit et réprime l’atteinte au secret professionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire',
     question:
         'Selon le cours, est dépositaire du secret celui qui détient l’information :',
@@ -25681,7 +25681,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la formule de 226-13 : dépositaire par état/profession/fonction/mission temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — “État” (sens)',
     question: 'Selon le cours, “par son état” renvoie notamment :',
     options: [
@@ -25695,7 +25695,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que “l’état” renvoie à la situation de fait/droit, au statut (ex : ministre du culte, élèves orthophonistes…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — “Profession” (sens)',
     question: 'Selon le cours, la “profession” est :',
     options: [
@@ -25708,7 +25708,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la profession comme l’activité exercée habituellement pour vivre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — “Fonction”',
     question: 'Selon le cours, la “fonction” correspond :',
     options: [
@@ -25724,7 +25724,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (4/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mission temporaire (définition)',
     question: 'Selon le cours, une “mission temporaire” correspond :',
     options: [
@@ -25738,7 +25738,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la mission temporaire est une tâche ponctuelle qui expose à des informations confidentielles/destinées à l’être.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Définition du secret (portée)',
     question: 'Selon le cours, le secret professionnel couvre :',
     options: [
@@ -25752,7 +25752,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours étend le secret à ce qui a été constaté/découvert/déduit personnellement dans le cadre professionnel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation (condition minimale)',
     question:
         'Selon le cours, il suffit que l’information couverte par le secret soit transmise :',
@@ -25766,7 +25766,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : transmission à une seule personne suffit à caractériser la révélation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Personnes morales (responsabilité)',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales pour 226-13 est prévue par :',
@@ -25780,7 +25780,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la responsabilité des personnes morales sur le fondement de l’article 121-2 C.P.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Peine (personne physique)',
     question:
         'Selon le cours, la violation du secret professionnel (226-13) est punie de :',
@@ -25794,7 +25794,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-13 = 1 an d’emprisonnement + 15 000 € d’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exceptions (principe)',
     question:
         'Selon le cours, les exceptions au secret professionnel sont prévues par :',
@@ -25808,7 +25808,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle que 226-14 prévoit les cas où 226-13 n’est pas applicable (signalements).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement (mineur/vulnérable)',
     question:
         'Selon le cours (226-14), l’exception vise notamment le signalement de :',
@@ -25823,7 +25823,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite explicitement cette exception majeure au secret professionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Santé (cellule infos préoccupantes)',
     question:
         'Selon le cours (226-14), un professionnel de santé peut porter à la connaissance :',
@@ -25838,7 +25838,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la possibilité de signaler à la cellule compétente (infos préoccupantes) pour les mineurs.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Accords (victime mineure)',
     question:
         'Selon le cours (226-14), lorsque la victime est un mineur ou une personne incapable de se protéger, l’accord de la victime :',
@@ -25852,7 +25852,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’accord de la victime n’est pas nécessaire si la victime est mineure ou incapable de se protéger.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Sujétion (223-15-3)',
     question:
         'Selon le cours (226-14), un professionnel de santé peut signaler des faits de sujétion (223-15-3) si :',
@@ -25867,7 +25867,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit précisément cette exception : signalement si sujétion causant altération grave ou conduite gravement préjudiciable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Violence au sein du couple (danger immédiat)',
     question:
@@ -25883,7 +25883,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours fixe les conditions : danger immédiat + impossibilité de se protéger en raison de l’emprise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Violence au sein du couple (accord)',
     question:
         'Selon le cours (226-14), le médecin/professionnel de santé doit :',
@@ -25897,7 +25897,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le médecin doit s’efforcer d’obtenir l’accord ; à défaut, il informe la victime du signalement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Violence au sein du couple (information)',
     question:
         'Selon le cours (226-14), en cas d’impossibilité d’obtenir l’accord, le professionnel doit :',
@@ -25911,7 +25911,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que si l’accord est impossible, la victime doit être informée du signalement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Détention d’arme (préfet)',
     question:
         'Selon le cours (226-14), des professionnels peuvent informer le préfet (ou préfet de police à Paris) lorsqu’ils savent que la personne :',
@@ -25926,7 +25926,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’exception permettant d’informer le préfet si la personne est dangereuse et détient/veut acquérir une arme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Vétérinaire (maltraitance animale)',
     question:
         'Selon le cours (226-14), le vétérinaire peut signaler au procureur :',
@@ -25941,7 +25941,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’exception spécifique au vétérinaire pour signaler des faits graves sur un animal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Immunité (bonne foi)',
     question:
         'Selon le cours (226-14), le signalement fait dans ces conditions :',
@@ -25956,7 +25956,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (condition trompeuse)',
     question:
         'Selon le cours (226-8), l’infraction est constituée si le montage est diffusé sans consentement et :',
@@ -25971,7 +25971,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours pose la condition : absence d’évidence ou absence de mention explicite.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Création de profils (exclusion)',
     question:
         'Selon la jurisprudence citée au cours, créer un profil sur un réseau social au nom d’un tiers, sans montage parole/image, relève :',
@@ -25985,7 +25985,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite que l’écrit seul (sans montage parole/image) ne relève pas de 226-8.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (définition générale)',
     question: 'Selon le cours, le montage peut résulter :',
     options: [
@@ -25999,7 +25999,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la jurisprudence : montage réprimé lorsqu’il déforme délibérément par ajout/retrait d’éléments étrangers.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement (portée)',
     question: 'Selon le cours (226-8), le consentement porte sur :',
     options: [
@@ -26014,7 +26014,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Courriel (définition LCEN)',
     question:
         'Selon le cours, la loi du 21 juin 2004 définit le courrier électronique comme :',
@@ -26029,7 +26029,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition LCEN : message stocké sur serveur/terminal jusqu’à récupération.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Limite “données informatiques”',
     question:
         'Selon le cours, une fois que le destinataire a pris connaissance du mail, il :',
@@ -26044,7 +26044,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’après lecture par le destinataire, la correspondance perd son statut spécifique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détournement (mail en attente)',
     question: 'Selon le cours, le “détournement” peut viser des messages :',
     options: [
@@ -26058,7 +26058,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence retient le détournement pour des messages ouverts par un tiers alors qu’ils attendent d’être lus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Divulgation (exemple)',
     question:
         'Selon le cours, “divulguer” une correspondance électronique peut consister à :',
@@ -26073,7 +26073,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile (définition générale)',
     question: 'Selon le cours, le domicile comprend notamment :',
     options: [
@@ -26087,7 +26087,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne une définition large : local d’habitation avec biens meubles, résidence principale ou non, habitation effective ou non.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendances',
     question: 'Selon le cours, peuvent être des domiciles (prolongement) :',
     options: [
@@ -26100,7 +26100,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite diverses dépendances constituant le prolongement du domicile si elles sont à proximité immédiate.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Nécessité de proximité',
     question:
         'Selon le cours, pour qu’une dépendance soit assimilée au domicile, il faut :',
@@ -26114,7 +26114,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste sur la proximité et le lien étroit unissant la dépendance à l’habitation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule aménagé',
     question: 'Selon le cours, peut être un domicile :',
     options: [
@@ -26128,7 +26128,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne ces formes d’habitat comme entrant dans la notion de domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux professionnels',
     question:
         'Selon le cours, les locaux professionnels peuvent être considérés comme domicile :',
@@ -26144,7 +26144,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne déterminée',
     question: 'Selon le cours (226-10), la dénonciation doit viser :',
     options: [
@@ -26157,7 +26157,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la victime doit être déterminée et identifiable, personne physique ou morale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Identification sans nom',
     question:
         'Selon le cours, même sans nomination, une personne peut être identifiée si :',
@@ -26172,7 +26172,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que des détails suffisamment précis peuvent permettre l’identification sans nom.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur moral',
     question: 'Selon le cours, est assimilé à l’auteur juridique :',
     options: [
@@ -26186,7 +26186,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’auteur moral est assimilé à l’auteur juridique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation anonyme',
     question: 'Selon le cours, en cas de dénonciation anonyme, il faut que :',
     options: [
@@ -26200,7 +26200,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles (consentement présumé)',
     question:
         'Selon le cours, le consentement aux captations de paroles peut être présumé si l’acte est réalisé :',
@@ -26215,7 +26215,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la présomption de consentement au vu et au su, à condition qu’elle puisse s’opposer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Image (droit général)',
     question: 'Selon le cours, toute personne a le droit :',
     options: [
@@ -26230,7 +26230,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — “Revenge porn” (terme)',
     question:
         'Selon le cours, la pornodivulgation a été popularisée sous le terme :',
@@ -26240,7 +26240,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que ces agissements ont été popularisés en France sous l’appellation anglophone “revenge porn”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Définition pratique',
     question: 'Selon le cours, la pornodivulgation consiste à :',
     options: [
@@ -26255,7 +26255,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Mode de commission',
     question: 'Selon le cours, 226-4-2-1 réprime la propagande/publicité :',
     options: [
@@ -26268,7 +26268,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : propagande/publicité “quel qu’en soit le mode”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande “squat” — Presse (règles spéciales)',
     question:
         'Selon le cours, lorsque 226-4-2-1 est commis par voie de presse écrite ou audiovisuelle :',
@@ -26285,7 +26285,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (5/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Procédé quelconque',
     question:
         'Selon le cours (226-1), les atteintes à la vie privée peuvent être commises :',
@@ -26299,7 +26299,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que sont visés tous procédés permettant le résultat, avec ou sans appareil.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement inaudible',
     question:
         'Selon le cours (226-1), l’infraction d’enregistrement de paroles privées est constituée :',
@@ -26313,7 +26313,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’infraction est constituée quels que soient les résultats techniques : même inaudible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles en lieu public',
     question:
         'Selon le cours (226-1), la captation/enregistrement de paroles privées peut être constituée :',
@@ -26328,7 +26328,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le délit est constitué même en lieu public si les paroles n’ont pas vocation à être rendues publiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Mineur (consentement)',
     question:
         'Selon le cours (226-1), dans le cas d’un mineur, le consentement doit émaner :',
@@ -26342,7 +26342,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que pour un mineur, le consentement relève des titulaires de l’autorité parentale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé (exemples)',
     question:
         'Selon le cours (jurisprudence), peuvent être considérés comme lieu privé :',
@@ -26356,7 +26356,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite ces exemples comme lieux privés au cas par cas (jurisprudences).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Photographie vitesse',
     question: 'Selon le cours (jurisprudence), ne tombe pas sous 226-1 :',
     options: [
@@ -26369,7 +26369,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’exception : procédé photo pour matérialité excès de vitesse.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Signalisation anthropométrique',
     question: 'Selon le cours (jurisprudence), ne relève pas de 226-1 :',
     options: [
@@ -26383,7 +26383,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la prise de photos anthropométriques en enquête judiciaire comme non visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (mineur)',
     question:
         'Selon le cours, pour la localisation d’un mineur, le consentement :',
@@ -26397,7 +26397,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la localisation d’un mineur nécessite le consentement des titulaires de l’autorité parentale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Opposition d’un parent',
     question: 'Selon le cours, pour la localisation d’un mineur, il suffit :',
     options: [
@@ -26411,7 +26411,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’une opposition d’un seul titulaire peut rendre la localisation illicite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (infraction de conséquence)',
     question: 'Selon le cours, l’infraction de 226-2 est :',
     options: [
@@ -26425,7 +26425,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-2 sanctionne le produit d’une atteinte 226-1 (document/enregistrement).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (conservation seule)',
     question:
         'Selon le cours, pour 226-2, le simple fait de conserver le produit de l’atteinte :',
@@ -26439,7 +26439,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la conservation est réprimée indépendamment de toute divulgation/utilisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (utilisation en divorce)',
     question:
         'Selon le cours, l’utilisation en justice (ex : divorce) d’enregistrements illicites :',
@@ -26453,7 +26453,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne l’exemple : un conjoint utilisant des enregistrements illicites dans une procédure peut relever de 226-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — 226-2 (laisser porter à la connaissance)',
     question: 'Selon le cours, 226-2 peut viser aussi celui qui :',
@@ -26468,7 +26468,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que celui qui a le pouvoir d’empêcher la diffusion et ne le fait pas peut être considéré auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Presse (hiérarchie)',
     question:
         'Selon le cours, la hiérarchie des responsables en matière de presse renvoie à :',
@@ -26484,7 +26484,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — “Par tout moyen”',
     question: 'Selon le cours (226-10), la dénonciation peut être effectuée :',
     options: [
@@ -26497,7 +26497,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-10 prévoit une dénonciation “par tout moyen” (écrit ou oral).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire (remise)',
     question:
         'Selon le cours, il n’est pas nécessaire que la dénonciation soit remise en main propre :',
@@ -26512,7 +26512,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’il suffit de l’adresser ou de faire en sorte qu’elle parvienne au destinataire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Dénonciation calomnieuse — Fait “de nature à entraîner sanctions”',
     question:
@@ -26528,7 +26528,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend le texte : préjudiciable si de nature à entraîner des sanctions judiciaires/administratives/disciplinaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Diffamation (différence)',
     question:
         'Selon le cours, la dénonciation calomnieuse se distingue de la diffamation car elle est :',
@@ -26542,7 +26542,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la dénonciation calomnieuse expose à des sanctions par l’autorité judiciaire/administrative/disciplinaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation provoquée',
     question:
         'Selon le cours, révéler des faits (même faux) en réponse à une interpellation de l’autorité :',
@@ -26558,7 +26558,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord à la diffusion (preuve)',
     question: 'Selon le cours, il appartient à l’auteur :',
     options: [
@@ -26571,7 +26571,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’accord à la captation ne vaut pas accord à la diffusion, et l’auteur doit prouver l’accord de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Absence d’opposition',
     question:
         'Selon le cours, même si la victime avait conscience d’être filmée (assentiment présumé), cela ne suffit pas pour :',
@@ -26586,7 +26586,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter (définition)',
     question: 'Selon le cours, “intercepter” consiste à :',
     options: [
@@ -26600,7 +26600,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit l’interception comme la captation au passage pendant la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détourner (définition)',
     question: 'Selon le cours, “détourner” consiste à :',
     options: [
@@ -26614,7 +26614,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit le détournement comme la modification du cours de transmission avec dérivation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation d’appareils',
     question: 'Selon le cours (226-15 al.2), est aussi réprimé le fait :',
     options: [
@@ -26629,7 +26629,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait (exemples)',
     question: 'Selon le cours, une voie de fait peut consister notamment à :',
     options: [
@@ -26643,7 +26643,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste de nombreux exemples de violences contre les choses (forçage, bris, escalade…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Porte non fermée à clé',
     question:
         'Selon le cours, l’introduction illicite n’a pas pu être retenue lorsque :',
@@ -26659,7 +26659,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Mention “montage”',
     question:
         'Selon le cours (226-8), la publication peut être licite sans consentement si :',
@@ -26673,7 +26673,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit une exception : mention claire et univoque indiquant qu’il s’agit d’un montage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage évident',
     question:
         'Selon le cours (226-8), la publication peut ne pas nécessiter de consentement si :',
@@ -26689,7 +26689,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — “Tout moyen”',
     question:
         'Selon le cours, l’atteinte à l’intimité (226-3-1) peut être commise :',
@@ -26704,7 +26704,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Supprimer (définition)',
     question:
         'Selon le cours (226-15 al.1), “supprimer” une correspondance est :',
@@ -26719,7 +26719,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la définition jurisprudentielle : empêcher qu’elle parvienne à destination (destruction, mise au rebut, conservation…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Retarder (définition)',
     question: 'Selon le cours, “retarder” une correspondance consiste à :',
     options: [
@@ -26734,7 +26734,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Caractère secret après décès',
     question: 'Selon le cours, le caractère secret de l’information :',
     options: [
@@ -26750,7 +26750,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
 
   // (Pour garder le pack à 50 sans exploser la taille, je continue sur des points
   // très proches et toujours issus de ton cours.)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Complicité',
     question: 'Selon le cours, la complicité de dénonciation calomnieuse est :',
     options: [
@@ -26763,7 +26763,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : COMPLICITÉ : OUI, selon les règles générales (aide/assistance, provocation, instructions).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Aide/assistance',
     question: 'Selon le cours, la complicité suppose notamment :',
     options: [
@@ -26777,7 +26777,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Aucune circonstance aggravante',
     question: 'Selon le cours, la pornodivulgation (226-2-1 al.2) comporte :',
     options: [
@@ -26789,7 +26789,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : IV — Circonstances aggravantes : Aucune.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Aucune circonstance aggravante',
     question: 'Selon le cours, la violation de domicile (226-4) comporte :',
     options: [
@@ -26802,7 +26802,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne : IV — Circonstances aggravantes : Aucune.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Aucune circonstance aggravante',
     question:
         'Selon le cours, l’atteinte au secret professionnel (226-13) comporte :',
@@ -26816,7 +26816,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-8 est :',
     options: [
@@ -26829,7 +26829,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : volonté de créer un montage afin de tromper le public, le résultat escompté importe peu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Mobile',
     question:
         'Selon le cours, pour 226-8, le résultat escompté (notoriété, profit…) :',
@@ -26847,7 +26847,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (6/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Champ (en transmission)',
     question: 'Selon le cours, 226-15 al.2 protège les correspondances :',
     options: [
@@ -26861,7 +26861,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le texte vise les correspondances en transmission ou arrivées mais non encore lues.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mail déjà ouvert',
     question:
         'Selon le cours, lire un mail déjà ouvert par le destinataire ne relève plus de 226-15 al.2 car :',
@@ -26875,7 +26875,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’après lecture, la correspondance perd son caractère spécifique et devient une donnée informatique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple d’interception (radio)',
     question: 'Selon le cours, constitue une interception le fait de :',
     options: [
@@ -26888,7 +26888,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’exemple jurisprudentiel : capter des échanges radio entre patrouilles constitue une interception.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Exemple de détournement (employeur)',
     question: 'Selon le cours, constitue un détournement :',
@@ -26903,7 +26903,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite un exemple jurisprudentiel : accès aux courriels non encore consultés par le salarié = détournement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intention de nuire',
     question:
         'Selon le cours, pour 226-15 (électronique), l’intention de nuire :',
@@ -26917,7 +26917,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’intention de nuire n’est pas exigée, le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Peine simple',
     question: 'Selon le cours, la peine principale (226-15 al.2) est :',
     options: [
@@ -26931,7 +26931,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Box fermé non attenant',
     question:
         'Selon le cours (jurisprudence), peut être assimilé à un domicile :',
@@ -26945,7 +26945,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : un box fermé non attenant peut être assimilé à un domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Garage parking souterrain',
     question:
         'Selon le cours (jurisprudence), peut être assimilé à une annexe au domicile :',
@@ -26959,7 +26959,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : garage dans parking souterrain considéré comme annexe au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Logement vide entre deux locations',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -26972,7 +26972,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite les exclusions : logement vide de meubles entre deux locations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Immeuble en construction',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -26985,7 +26985,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste l’immeuble en construction parmi les lieux non considérés comme domiciles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Local réservé à la vente',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -26998,7 +26998,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne le local réservé à la vente parmi les exclusions de la notion de domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule automobile (non domicile)',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -27013,7 +27013,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Objet',
     question: 'Selon le cours (226-15 al.1), une correspondance est :',
     options: [
@@ -27026,7 +27026,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence assimile “correspondance” à “message” quel qu’en soit le support, dès lors qu’il circule.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Destination à un tiers',
     question:
         'Selon le cours, on viole le secret des correspondances quand l’atteinte porte sur un message :',
@@ -27040,7 +27040,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’auteur doit s’en prendre à un message adressé à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Acheminement indifférent',
     question:
         'Selon le cours, le mode d’acheminement de la correspondance est :',
@@ -27054,7 +27054,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation à un autre dépositaire',
     question:
         'Selon le cours, l’infraction peut être constituée même si la révélation est faite :',
@@ -27068,7 +27068,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’infraction peut être retenue même si l’information est révélée à une personne aussi tenue au secret.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mobile',
     question: 'Selon le cours, pour 226-13, le mobile :',
     options: [
@@ -27082,7 +27082,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu généré (condition)',
     question:
         'Selon le cours, pour le deepfake (226-8), l’infraction est constituée sans consentement si :',
@@ -27098,7 +27098,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-2-1 al.2 suppose :',
     options: [
@@ -27115,7 +27115,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (7/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Caractère spontané',
     question:
         'Selon le cours, la jurisprudence exige que la dénonciation calomnieuse ait un caractère :',
@@ -27129,7 +27129,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que seule la personne ayant pris l’initiative de révéler les faits inexacts peut être coupable (spontanéité).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation provoquée',
     question: 'Selon le cours, une dénonciation “provoquée” (sur demande) :',
     options: [
@@ -27142,7 +27142,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les dénonciations provoquées perdent leur spontanéité (rapports demandés, réponses aux questions, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Rapport demandé par un supérieur',
     question:
         'Selon le cours, un rapport/compte rendu établi sur demande d’un supérieur :',
@@ -27157,7 +27157,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite les rapports demandés par un supérieur comme exemple de dénonciation provoquée (perte de spontanéité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Devoir d’informer',
     question:
         'Selon le cours (Cass. crim., 03 mai 2000), la dénonciation faite par un subordonné qui avait le devoir d’informer :',
@@ -27171,7 +27171,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne que la dénonciation faite par un subordonné ayant le devoir d’informer est provoquée (pas spontanée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponses au magistrat',
     question:
         'Selon le cours (Cass. crim., 16 juin 1988), les dénonciations contenues dans les réponses aux questions d’un magistrat instructeur :',
@@ -27185,7 +27185,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite les réponses aux questions d’un magistrat instructeur comme dénonciations provoquées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Défense du prévenu',
     question:
         'Selon le cours (Cass. crim., 03 mai 2000), une dénonciation faite par un prévenu si elle se rattache étroitement à sa défense :',
@@ -27199,7 +27199,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que si la dénonciation est étroitement liée à la défense, elle est provoquée (pas spontanée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation préjudiciable',
     question:
         'Selon le cours, la dénonciation est “préjudiciable” si elle est de nature à entraîner :',
@@ -27213,7 +27213,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend l’exigence de l’article 226-10 : fait de nature à entraîner des sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Sanction effective',
     question:
         'Selon le cours, pour la dénonciation calomnieuse, il est nécessaire que la sanction soit effectivement prononcée :',
@@ -27227,7 +27227,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la dénonciation doit être “de nature” à entraîner des sanctions, même sans sanction effective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Obstacles (prescription/amnistie)',
     question:
         'Selon le cours, l’infraction peut être constituée même si l’éventualité de sanction est écartée par :',
@@ -27241,7 +27241,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que ces obstacles n’empêchent pas la caractérisation si le fait est de nature à entraîner sanction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Inexactitude totale ou partielle',
     question:
         'Selon le cours, la dénonciation calomnieuse vise un fait que l’on sait :',
@@ -27256,7 +27256,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Moyens (liste)',
     question:
         'Selon le cours (226-4), l’introduction illégitime doit être réalisée à l’aide de :',
@@ -27270,7 +27270,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère les moyens : manœuvres/menaces/voies de fait/contrainte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Manœuvres (définition)',
     question: 'Selon le cours, les “manœuvres” sont :',
     options: [
@@ -27283,7 +27283,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours définit les manœuvres comme ruse/procédé astucieux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Menaces (définition)',
     question: 'Selon le cours, les “menaces” peuvent être caractérisées par :',
     options: [
@@ -27297,7 +27297,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que menaces = comportements inquiétants/paroles annonçant violence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Contrainte (définition)',
     question: 'Selon le cours, la “contrainte” correspond à :',
     options: [
@@ -27310,7 +27310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la contrainte comme absence de consentement libre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Occupant présent ou non',
     question:
         'Selon le cours, les moyens d’introduction illicite montrent que l’entrée est non désirée, que l’occupant légitime soit :',
@@ -27320,7 +27320,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’entrée est non désirée même si l’occupant n’est pas présent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Personne initialement invitée',
     question: 'Selon le cours, la violation de domicile ne concerne pas :',
     options: [
@@ -27333,7 +27333,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que ce n’est pas une personne initialement invitée : l’entrée est “non désirée”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien après entrée par un tiers',
     question:
         'Selon le cours, peuvent être poursuivies des personnes venues ensuite se maintenir dans le domicile si :',
@@ -27348,7 +27348,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’un maintien en connaissance de cause après une entrée illicite par un tiers peut être poursuivi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Enquête de flagrance',
     question:
         'Selon le cours, en raison du caractère continu, on peut agir en flagrance :',
@@ -27362,7 +27362,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’infraction continue : flagrance tant que l’occupation continue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait (toiture)',
     question: 'Selon le cours, une voie de fait peut être caractérisée par :',
     options: [
@@ -27375,7 +27375,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Public ou tiers',
     question:
         'Selon le cours (226-8), l’infraction suppose de porter le montage à la connaissance :',
@@ -27389,7 +27389,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : porter à la connaissance du public ou d’un tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Repartage',
     question:
         'Selon le cours, le dispositif 226-8 permet aussi de sanctionner :',
@@ -27403,7 +27403,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que sont englobés les moyens de révéler le montage et que cela peut sanctionner le repartage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu IA (définition générale)',
     question: 'Selon le cours, l’hypertrucage (deepfake) repose sur :',
     options: [
@@ -27417,7 +27417,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit le deepfake comme une technique IA de synthèse multimédia.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Exemples deepfake',
     question: 'Selon le cours, le deepfake peut notamment servir à :',
     options: [
@@ -27431,7 +27431,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne ces exemples : changement de visage ou substitution de propos/voix.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement requis',
     question: 'Selon le cours (226-8), le consentement requis porte sur :',
     options: [
@@ -27445,7 +27445,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Obtention avec consentement',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) suppose un contenu :',
@@ -27460,7 +27460,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le contenu a été obtenu avec consentement ou fourni par la personne concernée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord absent',
     question: 'Selon le cours, la diffusion est “sans accord” si :',
     options: [
@@ -27474,7 +27474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit l’absence d’accord : opposition ou impossibilité de s’opposer faute d’avoir été consultée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Caractère sexuel (appréciation)',
     question:
         'Selon le cours, l’appréciation du caractère sexuel des paroles/images revient :',
@@ -27488,7 +27488,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours (référence Conseil constitutionnel) souligne que l’appréciation du caractère sexuel relève des juridictions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Qualification',
     question: 'Selon le cours, la pornodivulgation (226-2-1 al.2) est un :',
     options: ['Délit', 'Crime', 'Contravention'],
@@ -27497,7 +27497,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Actes matériels',
     question:
         'Selon le cours (226-15 al.2), l’acte matériel peut consister à :',
@@ -27511,7 +27511,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère les actes matériels : intercepter/détourner/utiliser/divulguer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter sans lire',
     question:
         'Selon le cours, pour l’interception, il est nécessaire que l’auteur prenne connaissance du contenu :',
@@ -27525,7 +27525,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’auteur peut intercepter sans forcément prendre connaissance du contenu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Utiliser (exemple effacer)',
     question:
         'Selon le cours, “utiliser” une correspondance électronique peut viser :',
@@ -27540,7 +27540,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne l’exemple : effacer un mail non destiné, sans l’ouvrir, peut caractériser “utiliser”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Divulguer (téléphone enregistré)',
     question: 'Selon le cours, commet une divulgation celui qui :',
@@ -27554,7 +27554,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne cet exemple : faire écouter à un tiers une conversation enregistrée = divulgation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Installation pour un tiers',
     question:
         'Selon le cours, celui qui installe un dispositif d’interception pour le compte d’un tiers est :',
@@ -27569,7 +27569,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — “Arrivées ou non à destination”',
     question:
         'Selon le cours (226-15 al.1), l’atteinte peut viser des correspondances :',
@@ -27583,7 +27583,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’expression légale : “arrivées ou non à destination”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Ouverture (vapeur)',
     question:
         'Selon le cours, l’ouverture d’une correspondance peut être réalisée :',
@@ -27597,7 +27597,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’ouverture peut être violente ou subtile (décachetage à la vapeur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Renvoi après ouverture',
     question:
         'Selon le cours, peu importe que la correspondance soit ensuite renvoyée au destinataire :',
@@ -27612,7 +27612,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Lieu privé (définition)',
     question: 'Selon le cours, un lieu privé est :',
     options: [
@@ -27626,7 +27626,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la définition jurisprudentielle : lieu privé = non ouvert à tous sauf autorisation de l’occupant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Véhicule et lieu privé',
     question:
         'Selon le cours (Cass. crim., 28 mars 2023), filmer un conducteur au volant lors d’un contrôle routier, au vu et au su :',
@@ -27640,7 +27640,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle cette jurisprudence : acte au vu et au su → il faut rechercher l’opposition, la preuve ne pèse pas sur le prévenu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (clandestine)',
     question:
         'Selon le cours, la présomption “au vu et au su” ne s’applique pas à la localisation car :',
@@ -27656,7 +27656,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire (exemples)',
     question:
         'Selon le cours, parmi les exemples de professions souvent tenues au secret, on trouve :',
@@ -27670,7 +27670,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite de nombreux exemples de personnes tenues au secret professionnel (médecins, policiers, magistrats, avocats…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Détermination par les juges',
     question:
         'Selon le cours, en l’absence de texte, la question de savoir si une personne est tenue au secret est déterminée :',
@@ -27684,7 +27684,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique qu’en l’absence de texte, les juges déterminent au cas par cas l’obligation de secret.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation (document)',
     question: 'Selon le cours, la révélation peut consister :',
     options: [
@@ -27698,7 +27698,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à l’intimité — Circonstance aggravante (transport collectif)',
     question:
@@ -27714,7 +27714,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste le transport collectif et les lieux d’accès comme circonstance aggravante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Circonstance aggravante (images fixées)',
     question: 'Selon le cours (226-3-1), il y a circonstance aggravante si :',
     options: [
@@ -27730,7 +27730,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (8/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fondement',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -27743,7 +27743,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : l’article 226-10 C.P. définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Forme écrite',
     question:
         'Selon le cours, une dénonciation écrite peut notamment prendre la forme :',
@@ -27758,7 +27758,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite ces exemples de dénonciations écrites (lettre, pétition, plainte…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Forme orale',
     question: 'Selon le cours, une dénonciation orale peut être faite :',
     options: [
@@ -27771,7 +27771,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : dénonciation orale possible (vive voix/téléphone) et doit pouvoir être prouvée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur matériel vs personnel',
     question:
         'Selon le cours, l’exécutant agissant sur instructions hiérarchiques ne peut être poursuivi que :',
@@ -27786,7 +27786,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue la participation personnelle de celui qui n’a qu’un rôle matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne déterminée',
     question: 'Selon le cours, la dénonciation doit viser :',
     options: [
@@ -27799,7 +27799,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la nécessité d’une personne déterminée et identifiable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Consommation (date)',
     question: 'Selon le cours, l’infraction est consommée :',
     options: [
@@ -27812,7 +27812,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la jurisprudence fixe la consommation au jour de réception (point de départ de la prescription).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataires',
     question:
         'Selon le cours, les destinataires visés par 226-10 peuvent inclure :',
@@ -27827,7 +27827,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère les destinataires : magistrats, autorités aptes, supérieurs/employeur, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Notion de “préjudiciable”',
     question:
         'Selon le cours, “préjudiciable” signifie que le fait dénoncé est de nature à entraîner :',
@@ -27841,7 +27841,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la condition légale : fait de nature à entraîner sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fausseté (décisions automatiques)',
     question:
         'Selon le cours, la fausseté résulte nécessairement d’une décision définitive :',
@@ -27856,7 +27856,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que seules certaines décisions définitives constatant expressément l’absence de fait/imputabilité établissent automatiquement la fausseté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — “Faute de charges suffisantes”',
     question:
         'Selon le cours, si la décision définitive est rendue faute de charges suffisantes :',
@@ -27870,7 +27870,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que dans les autres cas (ex : faute de charges suffisantes), le tribunal apprécie la pertinence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément moral',
     question:
         'Selon le cours, l’auteur doit connaître l’inexactitude des faits :',
@@ -27884,7 +27884,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : la connaissance de l’inexactitude doit exister au jour de la dénonciation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Erreur découverte après coup',
     question: 'Selon le cours, si l’auteur découvre son erreur après coup :',
     options: [
@@ -27898,7 +27898,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : pas de 226-10 si erreur découverte après coup, mais possible poursuite pour omission de témoigner en faveur d’un innocent (434-11).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Omission de témoigner',
     question:
         'Selon le cours, si l’auteur découvre son erreur après coup, il peut être poursuivi pour :',
@@ -27912,7 +27912,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite explicitement l’article 434-11 (omission de témoigner en faveur d’un innocent).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Circonstances aggravantes',
     question: 'Selon le cours, la dénonciation calomnieuse comporte :',
     options: [
@@ -27924,7 +27924,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : IV — Circonstances aggravantes : Aucune.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peine',
     question:
         'Selon le cours, la peine principale (personne physique) de 226-10 est :',
@@ -27938,7 +27938,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique : 226-10 = 5 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'Selon le cours, la tentative de dénonciation calomnieuse est :',
     options: [
@@ -27951,7 +27951,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Fondement',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -27965,7 +27965,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-4 définit et réprime la violation de domicile commise par un particulier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien',
     question: 'Selon le cours, constitue aussi l’infraction :',
     options: [
@@ -27979,7 +27979,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le maintien après l’introduction illégitime est également incriminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — “Hors les cas où la loi le permet”',
     question: 'Selon le cours, la violation de domicile est punissable :',
     options: [
@@ -27992,7 +27992,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la réserve légale : l’infraction est “hors les cas où la loi le permet”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Introduction légitime (appel au secours)',
     question: 'Selon le cours, une introduction peut être légitime en cas de :',
@@ -28007,7 +28007,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’appel au secours justifie l’introduction, même si l’appel est fantaisiste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Introduction légitime (incendie/inondation)',
     question: 'Selon le cours, l’introduction est justifiée si la maison est :',
@@ -28021,7 +28021,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement l’incendie/inondation comme cas d’introduction légitime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Introduction légitime (assistance personne en péril)',
     question:
@@ -28036,7 +28036,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’assistance à personne en péril (indices : appel sans réponse, odeur suspecte, absence anormale…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Logement vacant non meublé',
     question:
         'Selon le cours, les logements vacants non meublés ne sont pas des domiciles au sens de 226-4, et l’occupation frauduleuse relève de :',
@@ -28050,7 +28050,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’occupation frauduleuse de tels locaux est prévue et réprimée aux articles 315-1 et 315-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément moral',
     question: 'Selon le cours, l’élément moral implique :',
     options: [
@@ -28064,7 +28064,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la volonté d’entrer/se maintenir à l’insu/contre gré et la conscience d’être hors cas légaux.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peine',
     question: 'Selon le cours, la violation de domicile (226-4) est punie de :',
     options: [
@@ -28076,7 +28076,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours indique : 226-4 = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question:
         'Selon le cours, la tentative de violation de domicile (226-4) est :',
@@ -28090,7 +28090,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande/ publicité “squat” — Fondement',
     question:
         'Le fait de faire la propagande ou publicité en faveur de méthodes incitant à la violation de domicile est incriminé par :',
@@ -28104,7 +28104,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-4-2-1 incrimine la propagande/publicité en faveur de méthodes visant à faciliter ou inciter à la violation de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande/ publicité “squat” — Objet',
     question: 'Selon le cours, 226-4-2-1 vise notamment les contenus de type :',
     options: [
@@ -28118,7 +28118,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite explicitement les vidéos “mode d’emploi du squat”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propagande/ publicité “squat” — Peine',
     question:
         'Selon le cours, la commission du délit 226-4-2-1 est sanctionnée par :',
@@ -28133,7 +28133,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Aggravation (conjoint/PACS)',
     question:
         'Selon le cours, l’atteinte au secret des correspondances (226-15) est aggravée lorsque les faits sont commis par :',
@@ -28147,7 +28147,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’alinéa 3 : aggravation si conjoint/concubin/partenaire de PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Électronique (fondement)',
     question:
         'La violation des correspondances émises par la voie électronique est prévue par :',
@@ -28161,7 +28161,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-15 al.2 définit la violation des correspondances émises par voie électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Électronique (mauvaise foi)',
     question: 'Selon le cours, la “mauvaise foi” (226-15) correspond à :',
     options: [
@@ -28175,7 +28175,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la Cour de cassation : mauvaise foi = connaissance que les lettres ne lui étaient pas destinées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Électronique (tentative)',
     question:
         'Selon le cours, la tentative pour la violation des correspondances électroniques (226-15 al.2) est :',
@@ -28185,7 +28185,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation (en ligne)',
     question:
         'Selon le cours, l’atteinte à la représentation (226-8) est aggravée lorsque les faits sont commis :',
@@ -28199,7 +28199,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’article 226-8 al.2 : aggravation si usage d’un service de communication au public en ligne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine simple',
     question:
         'Selon le cours, la peine principale (simple) de 226-8 al.1 est :',
@@ -28212,7 +28212,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le tableau du cours indique : 226-8 al.1 = 1 an + 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peine aggravée',
     question:
         'Selon le cours, la peine principale (aggravée) de 226-8 al.2 est :',
@@ -28226,7 +28226,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : aggravé (226-8 al.2) = 2 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question:
         'Selon le cours, la tentative de l’atteinte à la représentation (226-8) est :',
@@ -28241,7 +28241,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Fondement',
     question:
         'La diffusion sans accord d’un enregistrement à caractère sexuel obtenu avec consentement est prévue par :',
@@ -28255,7 +28255,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : 226-2-1 al.2 définit et réprime la pornodivulgation (diffusion sans accord).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peine',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) est punie de :',
@@ -28269,7 +28269,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours mentionne : 226-2-1 al.2 = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question:
         'Selon le cours, la tentative de pornodivulgation (226-2-1) est :',
@@ -28284,7 +28284,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Fondement',
     question:
         'Les atteintes à l’intimité de la vie privée sont définies et réprimées par :',
@@ -28298,7 +28298,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-1 définit et réprime les atteintes à l’intimité de la vie privée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — 226-2 (fondement)',
     question:
         'La conservation, diffusion ou utilisation d’un document issu d’une atteinte à la vie privée est prévue par :',
@@ -28313,7 +28313,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (inclut différé)',
     question:
         'Selon le cours, l’atteinte à la vie privée peut aussi consister en :',
@@ -28328,7 +28328,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours ajoute explicitement la localisation (temps réel ou différé) au champ de 226-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (précision)',
     question:
         'Selon le cours, le niveau de précision de la localisation (zone relais vs GPS précis) :',
@@ -28343,7 +28343,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Élément moral (2 composantes)',
     question:
         'Selon le cours, l’élément moral des atteintes à la vie privée implique :',
@@ -28359,7 +28359,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Définition (acte)',
     question:
         'Selon le cours, l’atteinte au secret professionnel consiste en :',
@@ -28374,7 +28374,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit 226-13 : révélation d’une information secrète par le dépositaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Confirmation d’info déjà publique',
     question:
         'Selon le cours, si l’information a déjà fait l’objet de publicité, l’infraction peut être retenue contre le dépositaire qui :',
@@ -28389,7 +28389,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et meubles',
     question:
         'Selon le cours, un logement inoccupé peut être considéré domicile si :',
@@ -28404,7 +28404,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que la présence de meubles “d’occupation effective” peut permettre de qualifier domicile (appréciation du juge).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Bicyclette/ carton de livres',
     question:
         'Selon le cours, la seule présence d’une bicyclette ou d’un carton de livres dans un logement vacant :',
@@ -28421,7 +28421,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (9/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Circonstance aggravante (conjoint/PACS)',
     question:
@@ -28436,7 +28436,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’aggravation prévue à l’article 226-1 al.7 (conjoint/concubin/PACS).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Circonstance aggravante (DAP/MSP/mandat)',
     question:
@@ -28452,7 +28452,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise l’aggravation de l’article 226-1 al.8 (DAP/MSP/mandat électif/candidat + membre de la famille).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Paroles/images sexuelles (aggravation)',
     question:
@@ -28468,7 +28468,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’article 226-2-1 al.1 comme circonstance aggravante quand le contenu est sexuel (lieu public ou privé).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine (simple 226-1)',
     question:
         'Selon le cours, la peine principale (simple) des atteintes à la vie privée (226-1) est :',
@@ -28482,7 +28482,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique (simple) : 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Peine aggravée',
     question:
         'Selon le cours, en cas de circonstance aggravante (ex : 226-1 al.7/8), la peine principale peut être :',
@@ -28496,7 +28496,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique une peine aggravée à 2 ans et 60 000 € pour les circonstances prévues.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Tentative',
     question:
         'Selon le cours, la tentative des délits prévus aux articles 226-1 et 226-2 est :',
@@ -28510,7 +28510,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne expressément la tentative prévue à l’article 226-5 pour 226-1 et 226-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Complicité',
     question:
         'Selon le cours, la complicité des atteintes à la vie privée est :',
@@ -28525,7 +28525,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Fondement (particulier)',
     question:
         'L’atteinte au secret des correspondances commise par un particulier est prévue par :',
@@ -28539,7 +28539,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-15 al.1 définit et réprime l’atteinte au secret des correspondances (non électronique).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Actes matériels (liste)',
     question: 'Selon le cours (226-15 al.1), l’atteinte peut consister à :',
     options: [
@@ -28553,7 +28553,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère précisément les actes matériels de l’alinéa 1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Ouvrir (notion)',
     question: 'Selon le cours, “ouvrir” une correspondance consiste à :',
     options: [
@@ -28567,7 +28567,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que tout acte portant atteinte à l’intégrité du support et donnant accès au contenu constitue l’ouverture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Supprimer (exemple)',
     question:
         'Selon le cours (jurisprudence citée), peut constituer une suppression :',
@@ -28582,7 +28582,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite l’exemple de la secrétaire de mairie ayant jeté une lettre après l’avoir lue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Retarder (exemples)',
     question: 'Selon le cours, peut caractériser un retard de correspondance :',
     options: [
@@ -28595,7 +28595,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit le retard comme la rétention qui interrompt le cours normal d’acheminement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Détourner (notion)',
     question:
         'Selon le cours, “détourner” une correspondance (226-15 al.1) consiste à :',
@@ -28610,7 +28610,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le détournement modifie le cours normal de la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret des correspondances — Connaissance frauduleuse (autonome)',
     question:
@@ -28626,7 +28626,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le législateur sanctionne cet acte de façon autonome.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Élément moral (mauvaise foi)',
     question: 'Selon le cours, la mauvaise foi implique notamment :',
     options: [
@@ -28640,7 +28640,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la définition jurisprudentielle : connaissance + action volontaire (conserver/empêcher/retarder).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Intention de nuire',
     question: 'Selon le cours, l’intention de nuire pour 226-15 al.1 :',
     options: [
@@ -28653,7 +28653,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’intention de nuire n’est pas exigée (mobile indifférent).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine (simple)',
     question:
         'Selon le cours, la peine principale (simple) de 226-15 al.1 est :',
@@ -28667,7 +28667,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression indique : 226-15 al.1 (simple) = 1 an + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Peine (aggravée conjoint/PACS)',
     question:
         'Selon le cours, lorsque 226-15 al.3 s’applique (conjoint/concubin/PACS), la peine est :',
@@ -28681,7 +28681,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression indique : aggravé (226-15 al.3) = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Tentative',
     question: 'Selon le cours, la tentative pour 226-15 est :',
     options: [
@@ -28693,7 +28693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : TENTATIVE : NON.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Complicité',
     question: 'Selon le cours, la complicité pour 226-15 est :',
     options: [
@@ -28706,7 +28706,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Fondement',
     question:
         'L’atteinte à l’intimité d’une personne (observation des parties intimes dissimulées) est prévue par :',
@@ -28720,7 +28720,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-3-1 prévoit et réprime l’atteinte à l’intimité d’une personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Condition (parties intimes cachées)',
     question:
         'Selon le cours, l’infraction suppose d’apercevoir des parties intimes que la victime a cachées :',
@@ -28734,7 +28734,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique les 2 cas : habillement ou présence dans un lieu clos.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — À l’insu ou sans consentement',
     question: 'Selon le cours, l’auteur doit avoir agi :',
     options: [
@@ -28747,7 +28747,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la condition : à l’insu ou sans consentement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-3-1 implique :',
     options: [
@@ -28761,7 +28761,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne ces deux composantes : conscience + volonté d’atteinte à l’intimité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (abus d’autorité)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -28776,7 +28776,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste cette circonstance aggravante : abus d’autorité liée aux fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (mineur)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -28790,7 +28790,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne explicitement l’aggravation quand la victime est mineure.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (vulnérabilité)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -28805,7 +28805,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise la vulnérabilité apparente ou connue (âge/maladie/infirmité/déficience/grossesse).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Aggravation (pluralité)',
     question:
         'Selon le cours (226-3-1 al.2), il y a circonstance aggravante lorsqu’ils sont commis :',
@@ -28819,7 +28819,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne l’aggravation en cas de pluralité d’auteurs/complices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Peine simple',
     question:
         'Selon le cours, la peine principale (simple) de 226-3-1 al.1 est :',
@@ -28833,7 +28833,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-3-1 al.1 = 1 an + 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Peine aggravée',
     question:
         'Selon le cours, la peine principale (aggravée) de 226-3-1 al.2 est :',
@@ -28846,7 +28846,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : aggravé = 2 ans + 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Tentative',
     question:
         'Selon le cours, la tentative de l’atteinte à l’intimité (226-3-1) est :',
@@ -28860,7 +28860,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la tentative de 226-3-1 est prévue expressément par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à l’intimité — Complicité',
     question: 'Selon le cours, la complicité de 226-3-1 est :',
     options: [
@@ -28874,7 +28874,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Fondement',
     question:
         'L’atteinte au secret professionnel est définie et réprimée par :',
@@ -28888,7 +28888,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-13 définit et réprime l’atteinte au secret professionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire (formule)',
     question:
         'Selon le cours, est dépositaire du secret la personne qui en a connaissance :',
@@ -28902,7 +28902,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la formule légale : état/profession/fonction/mission temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Secret (définition étendue)',
     question:
         'Selon le cours, le secret couvre aussi ce que le professionnel a pu :',
@@ -28917,7 +28917,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le secret est étendu à tout ce que le dépositaire constate/découvre/déduit dans l’exercice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation (une seule personne suffit)',
     question:
         'Selon le cours, il suffit que l’information secrète soit transmise :',
@@ -28930,7 +28930,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : transmission à une seule personne suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-13 suppose :',
     options: [
@@ -28943,7 +28943,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique une révélation intentionnelle, en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Peine',
     question:
         'Selon le cours, l’atteinte au secret professionnel (226-13) est punie de :',
@@ -28958,7 +28958,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exceptions (principe)',
     question:
         'Selon le cours, l’article 226-14 prévoit que 226-13 ne s’applique pas dans certains cas de :',
@@ -28972,7 +28972,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les exceptions de 226-14 : signalements/procédure encadrée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Exception maltraitances (mineur/vulnérable)',
     question:
@@ -28988,7 +28988,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle l’exception de signalement aux autorités en cas de maltraitances envers mineur/personne vulnérable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Exception professionnel de santé (avec accord)',
     question:
@@ -29004,7 +29004,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours détaille plusieurs hypothèses encadrées (accord de la victime selon situation, danger, etc.).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Exception sujétion (223-15-3)',
     question:
         'Selon le cours (226-14), un professionnel de santé peut signaler des faits de sujétion (223-15-3) si :',
@@ -29019,7 +29019,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise l’exception 226-14 liée à 223-15-3 et ses conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Secret professionnel — Exception violences couple (danger immédiat)',
     question:
@@ -29035,7 +29035,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne cette exception spécifique : danger immédiat + impossibilité de se protéger (emprise/contrainte morale).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Signalement violences couple (accord)',
     question:
         'Selon le cours (226-14), en matière de violences au sein du couple, le professionnel de santé :',
@@ -29050,7 +29050,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : effort pour obtenir l’accord, et information de la victime en cas d’impossibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Prefet/prefet de police (armes)',
     question:
         'Selon le cours (226-14), les professionnels de santé ou de l’action sociale peuvent informer le préfet (à Paris, préfet de police) :',
@@ -29065,7 +29065,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne cette exception 226-14 : information au préfet/prefet de police liée au danger et aux armes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Vétérinaire (sévices animaux)',
     question:
         'Selon le cours (226-14), le vétérinaire peut porter à la connaissance du procureur :',
@@ -29081,7 +29081,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Protection de l’auteur du signalement',
     question:
         'Selon le cours (226-14), le signalement effectué dans les conditions prévues :',
@@ -29098,7 +29098,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (10/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — “Par tout moyen”',
     question:
         'Selon le cours (226-10), la dénonciation calomnieuse peut être faite :',
@@ -29112,7 +29112,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-10 vise une dénonciation “par tout moyen” : écrite ou verbale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation anonyme',
     question:
         'Selon le cours, en cas de dénonciation anonyme, pour poursuivre il faut que :',
@@ -29126,7 +29126,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que si la dénonciation est anonyme, il faut que son auteur puisse être identifié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personne morale',
     question:
         'Selon le cours, la personne visée par une dénonciation calomnieuse peut être :',
@@ -29140,7 +29140,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la victime peut être une personne physique ou morale, à condition d’être déterminée/identifiable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Identification sans nom',
     question:
         'Selon le cours, même sans nommer la victime, la dénonciation peut viser une personne déterminée si :',
@@ -29155,7 +29155,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que des détails peuvent suffire à identifier la personne même sans la nommer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Remise en main propre',
     question:
         'Selon le cours, il est nécessaire que la dénonciation soit remise en main propre à l’autorité :',
@@ -29170,7 +29170,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise qu’il n’est pas nécessaire d’une remise en main propre : il suffit qu’elle parvienne au destinataire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faits “de nature à entraîner”',
     question: 'Selon le cours, pour 226-10, le fait dénoncé doit être :',
     options: [
@@ -29184,7 +29184,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours rappelle la condition “de nature à entraîner” des sanctions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Diffamation vs 226-10',
     question:
         'Selon le cours, une différence essentielle entre dénonciation calomnieuse et diffamation est que la dénonciation calomnieuse :',
@@ -29199,7 +29199,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique que 226-10 va au-delà de l’atteinte à l’honneur : elle expose à sanctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tribunal (autres cas)',
     question:
         'Selon le cours, en dehors des cas où une décision définitive constate expressément l’absence de fait/imputabilité :',
@@ -29214,7 +29214,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Notion extensive',
     question:
         'Selon le cours, la jurisprudence retient une définition du domicile :',
@@ -29229,7 +29229,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours souligne une approche extensive de la notion de domicile en jurisprudence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendances (proximité)',
     question: 'Selon le cours, une dépendance peut relever du domicile si :',
     options: [
@@ -29243,7 +29243,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste sur la nécessité d’un lien étroit et immédiat + proximité pour les dépendances.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Chambre d’hôtel',
     question:
         'Selon le cours, une chambre d’hôtel peut être considérée comme :',
@@ -29253,7 +29253,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite explicitement la chambre d’hôtel parmi les domiciles possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule aménagé',
     question: 'Selon le cours, peut constituer un domicile :',
     options: [
@@ -29266,7 +29266,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite les véhicules aménagés (caravane, roulotte, tente) comme pouvant être des domiciles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieux professionnels',
     question:
         'Selon le cours, les locaux professionnels peuvent être protégés comme domicile, mais les lieux ouverts au public :',
@@ -29281,7 +29281,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les lieux ouverts au public ne bénéficient pas de la protection du domicile pendant les heures d’ouverture.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieu non domicile',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -29294,7 +29294,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste l’immeuble en construction parmi les lieux non considérés comme domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Porte non fermée à clé',
     question:
         'Selon le cours, l’introduction illicite n’a pas pu être retenue lorsque :',
@@ -29308,7 +29308,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne ce cas : l’introduction illicite n’a pas été retenue lorsque la porte n’était pas fermée à clé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Voies de fait (escalade/forçage)',
     question: 'Selon le cours, une voie de fait peut consister en :',
     options: [
@@ -29323,7 +29323,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Objet protégé',
     question:
         'Selon le cours (226-15 al.2), sont protégées les correspondances :',
@@ -29337,7 +29337,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-15 al.2 protège les correspondances dématérialisées (électroniques).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Moment de protection',
     question: 'Selon le cours, 226-15 al.2 s’applique aux correspondances :',
     options: [
@@ -29351,7 +29351,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la protection vise l’en-cours de transmission ou à destination non encore lue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mail déjà ouvert',
     question:
         'Selon le cours, une fois que le destinataire a pris connaissance du mail, celui-ci :',
@@ -29366,7 +29366,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique qu’après lecture par le destinataire, le message perd la spécificité de correspondance au sens 226-15 al.2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intercepter (définition)',
     question: 'Selon le cours, “intercepter” consiste à :',
     options: [
@@ -29380,7 +29380,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit l’interception comme la captation pendant le cours de la transmission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Détourner (définition)',
     question:
         'Selon le cours, “détourner” en matière électronique consiste à :',
@@ -29396,7 +29396,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (condition)',
     question:
         'Selon le cours (226-8), l’infraction suppose la diffusion d’un montage sans consentement si :',
@@ -29411,7 +29411,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise la condition : montage non évident et/ou non signalé expressément.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Exceptions (montage évident)',
     question:
         'Selon le cours, le consentement à la publication n’est pas nécessaire si :',
@@ -29425,7 +29425,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit l’exception : montage manifestement apparent → pas besoin de consentement à la publication.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Exceptions (mention expresse)',
     question:
         'Selon le cours, le consentement à la publication n’est pas nécessaire si :',
@@ -29439,7 +29439,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit l’exception : mention claire/univoque du montage pour éviter la méprise.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Finalité humoristique',
     question:
         'Selon le cours, les limites (montage évident ou mentionné) permettent notamment de ne pas sanctionner :',
@@ -29455,7 +29455,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Accord filmé ≠ accord diffusion',
     question:
         'Selon le cours, l’accord à être filmé/photographié vaut accord à la diffusion :',
@@ -29469,7 +29469,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : consentement à la captation ≠ consentement à la diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Preuve de l’accord de diffusion',
     question:
         'Selon le cours, si la victime dit ne pas avoir approuvé la diffusion, il appartient à l’auteur :',
@@ -29483,7 +29483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que c’est à l’auteur de démontrer l’accord spécifique de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Notion “revenge porn”',
     question:
         'Selon le cours, la pornodivulgation a été popularisée sous l’appellation :',
@@ -29494,7 +29494,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Paroles privées (lieu)',
     question:
         'Selon le cours, l’atteinte (paroles privées/confidentielles) est constituée si les paroles ont été prononcées :',
@@ -29509,7 +29509,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le lieu (public/privé) importe peu pour les paroles, si elles sont privées/confidentielles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement inaudible',
     question:
         'Selon le cours, l’infraction d’enregistrement de paroles privées est constituée même si :',
@@ -29523,7 +29523,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’infraction existe quels que soient les résultats techniques, même si inaudible.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Consentement présumé (paroles/images)',
     question:
@@ -29539,7 +29539,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours prévoit la présomption de consentement “au vu et au su” (paroles/images), sous réserve d’opposition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Mineur (consentement)',
     question:
         'Selon le cours, pour un mineur, le consentement (paroles/images/localisation) doit émaner :',
@@ -29553,7 +29553,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le consentement doit provenir des titulaires de l’autorité parentale (art. 372-1 C. civ.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Localisation (opposition d’un parent)',
     question: 'Selon le cours, pour la localisation d’un mineur, il suffit :',
@@ -29569,7 +29569,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — Conservation (infraction autonome)',
     question:
         'Selon le cours, la simple conservation du produit d’une atteinte à la vie privée :',
@@ -29583,7 +29583,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que garder à disposition le produit de l’atteinte est réprimé indépendamment d’une diffusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — Utilisation (divorce)',
     question: 'Selon le cours, peut constituer une “utilisation” (226-2) :',
     options: [
@@ -29597,7 +29597,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne l’exemple : usage d’enregistrements illicites dans une procédure de divorce.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — Diffusion (notion large)',
     question: 'Selon le cours, la “diffusion/divulgation” (226-2) vise :',
     options: [
@@ -29611,7 +29611,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise une conception large : diffusion à grande échelle ou simple révélation à un tiers.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '226-2 — “Laisser porter à la connaissance du public”',
     question:
         'Selon le cours, peut être considéré auteur (226-2) celui qui, connaissant l’illicéité et ayant le pouvoir d’empêcher la diffusion :',
@@ -29626,7 +29626,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Caractère secret après décès',
     question: 'Selon le cours, le caractère secret d’une information :',
     options: [
@@ -29639,7 +29639,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le caractère secret ne s’éteint pas avec le décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Révélation à un autre dépositaire',
     question:
         'Selon le cours, révéler une information secrète à une personne également soumise au secret professionnel :',
@@ -29653,7 +29653,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que même si le destinataire est soumis au secret, la transmission suffit à caractériser la révélation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Tentative',
     question:
         'Selon le cours, la tentative de violation du secret professionnel (226-13) est :',
@@ -29666,7 +29666,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : TENTATIVE : NON pour 226-13.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Complicité',
     question: 'Selon le cours, la complicité de 226-13 est :',
     options: [
@@ -29680,7 +29680,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-8 implique :',
     options: [
@@ -29693,7 +29693,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la volonté de tromper le public (le mobile/notoriété/profit importe peu).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Procédé numérique',
     question: 'Selon le cours, l’article 226-8 s’applique :',
     options: [
@@ -29708,7 +29708,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Objet (supports)',
     question: 'Selon le cours, le support du contenu pornodivulgué peut être :',
     options: [
@@ -29722,7 +29722,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le support peut être photo/son/vidéo/messages, peu importe le format matériel ou numérique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément moral',
     question: 'Selon le cours, l’élément moral de 226-2-1 al.2 suppose :',
     options: [
@@ -29739,7 +29739,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (11/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Notion d’auteur',
     question: 'Selon le cours, l’auteur de la dénonciation est :',
     options: [
@@ -29752,7 +29752,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’auteur est celui qui dénonce ou fait dénoncer (auteur moral assimilé à l’auteur juridique).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Auteur moral',
     question: 'Selon le cours, l’auteur moral est :',
     options: [
@@ -29765,7 +29765,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’auteur moral est assimilé à l’auteur juridique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Victime identifiable',
     question: 'Selon le cours, la personne dénoncée doit être :',
     options: [
@@ -29778,7 +29778,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours impose une personne déterminée, pouvant être identifiée (physique ou morale).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Prescription',
     question: 'Selon le cours, le délai de prescription commence à courir :',
     options: [
@@ -29791,7 +29791,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la consommation (et la prescription) est fixée au jour de réception.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataire (pouvoir de sanction)',
     question: 'Selon le cours, le destinataire doit être :',
     options: [
@@ -29805,7 +29805,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le destinataire doit pouvoir sanctionner ou saisir l’autorité compétente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Supérieur hiérarchique',
     question: 'Selon le cours, une dénonciation peut être adressée :',
     options: [
@@ -29819,7 +29819,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite expressément supérieurs hiérarchiques/employeur parmi les destinataires possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Nature des sanctions',
     question: 'Selon le cours, les sanctions visées par 226-10 peuvent être :',
     options: [
@@ -29832,7 +29832,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte du cours vise des sanctions judiciaires, administratives ou disciplinaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Connaissance de l’inexactitude',
     question: 'Selon le cours, l’infraction suppose que l’auteur :',
     options: [
@@ -29846,7 +29846,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise l’exigence de connaissance de l’inexactitude au jour de la dénonciation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Volonté de nuire',
     question:
         'Selon le cours, l’auteur exprime sa volonté de nuire notamment par :',
@@ -29860,7 +29860,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours relie l’élément moral à la connaissance de l’inexactitude et à la volonté de nuire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personnes morales (responsabilité)',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales pour 226-10 est prévue par :',
@@ -29875,7 +29875,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile (définition générale)',
     question: 'Selon le cours, constitue notamment un domicile :',
     options: [
@@ -29889,7 +29889,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne cette définition générale : local d’habitation + biens meubles, habitation effective ou non.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Résidence principale ou non',
     question: 'Selon le cours, la protection du domicile s’applique :',
     options: [
@@ -29902,7 +29902,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le domicile peut être la résidence principale ou non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Lieu occupé sans titre',
     question: 'Selon le cours, peut être considéré comme domicile :',
     options: [
@@ -29915,7 +29915,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite le logement occupé sans titre et pacifiquement comme pouvant être un domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et bureau',
     question: 'Selon le cours, le bureau et les locaux professionnels :',
     options: [
@@ -29929,7 +29929,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les locaux professionnels peuvent être un domicile, mais pas les lieux ouverts au public pendant les heures d’ouverture.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Dépendance (exemples)',
     question:
         'Selon le cours, peuvent être des dépendances assimilées au domicile :',
@@ -29944,7 +29944,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite plusieurs dépendances : garage, balcon, terrasse… sous condition de proximité et prolongement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Box fermé non attenant',
     question: 'Selon le cours, a pu être assimilé à un domicile :',
     options: [
@@ -29957,7 +29957,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence assimilant un box fermé non attenant au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Non-domicile (cour non close)',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -29970,7 +29970,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste la cour non close parmi les lieux non considérés comme domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Non-domicile (casier de consigne)',
     question: 'Selon le cours, n’est pas un domicile :',
     options: [
@@ -29983,7 +29983,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite le casier de consigne de gare parmi les lieux non considérés comme domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Non-domicile (local réservé à la vente)',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -29996,7 +29996,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste le local réservé à la vente parmi les lieux non considérés comme domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Introduction (ruse)',
     question: 'Selon le cours, entrer grâce à une ruse est un exemple de :',
     options: ['Manœuvres', 'Menaces', 'Voies de fait uniquement'],
@@ -30006,7 +30006,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple (radio police)',
     question:
         'Selon le cours (jurisprudence citée), peut constituer une interception :',
@@ -30020,7 +30020,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence : capter les échanges radio de patrouilles = interception.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Exemple (employeur et mails)',
     question:
         'Selon le cours (jurisprudence citée), peut constituer un détournement :',
@@ -30035,7 +30035,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence où l’employeur accède aux mails du salarié non encore appréhendés = détournement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Courrier électronique (définition LCEN)',
     question:
@@ -30051,7 +30051,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours reprend la définition LCEN : message stocké sur serveur/terminal jusqu’à récupération par le destinataire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Correspondances électroniques — Installation (logiciel/matériel)',
     question: 'Selon le cours, “procéder à l’installation d’appareils” vise :',
@@ -30066,7 +30066,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’installation vise tout dispositif ou logiciel permettant ces atteintes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Intention de nuire',
     question:
         'Selon le cours, pour 226-15 (voie électronique), l’intention de nuire :',
@@ -30080,7 +30080,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’intention de nuire n’est pas exigée (mobile indifférent).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Erreur/méprise',
     question:
         'Selon le cours, violer une correspondance électronique par méprise :',
@@ -30095,7 +30095,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Blogs/profils sans image',
     question:
         'Selon le cours (jurisprudence citée), créer un blog/profil au nom d’un tiers sans recourir à parole/image/montage :',
@@ -30109,7 +30109,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence : sans montage utilisant parole ou image, 226-8 ne s’applique pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Montage (ajout/retrait)',
     question:
         'Selon le cours (jurisprudence citée), le montage réprimé est celui qui déforme délibérément par :',
@@ -30123,7 +30123,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence : montage déformant par ajout/retrait d’éléments étrangers.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Voix',
     question: 'Selon le cours, un montage peut porter sur :',
     options: [
@@ -30136,7 +30136,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le montage peut porter sur la voix (imitation/déformation).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Consentement (publication)',
     question:
         'Selon le cours, le consentement exigé par 226-8 porte principalement sur :',
@@ -30150,7 +30150,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique : consentement sur la publication/révélation, pas seulement sur la création.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Contenu algorithmique assimilé',
     question: 'Selon le cours, est assimilé à 226-8 le fait de diffuser :',
     options: [
@@ -30165,7 +30165,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Procédé quelconque',
     question:
         'Selon le cours, les atteintes à la vie privée peuvent être commises :',
@@ -30179,7 +30179,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que toutes les méthodes sont visées, même sans appareil.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Captation (paroles)',
     question: 'Selon le cours, la captation vise notamment :',
     options: [
@@ -30193,7 +30193,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours évoque l’audition au moyen de techniques (captation) notamment sur conversations téléphoniques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Transmission (paroles)',
     question: 'Selon le cours, la transmission des paroles vise :',
     options: [
@@ -30207,7 +30207,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la transmission comme mise à disposition des paroles captées à des destinataires avertis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Images (lieu privé)',
     question:
         'Selon le cours, l’incrimination de l’image (226-1) exige que la personne soit :',
@@ -30221,7 +30221,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la fixation/enregistrement/transmission de l’image est réprimée si la personne se trouve dans un lieu privé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Image d’un lieu vs image d’une personne',
     question: 'Selon le cours, est exclue de 226-1 (image) :',
@@ -30236,7 +30236,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la photo du lieu ou des biens est exclue : l’infraction vise l’image de la personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Lieu privé (exemples jurisprudentiels)',
     question: 'Selon le cours, ont pu être considérés comme lieux privés :',
@@ -30251,7 +30251,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Notion',
     question: 'Selon le cours, la pornodivulgation consiste à :',
     options: [
@@ -30265,7 +30265,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la pornodivulgation : obtention consentie, diffusion non consentie.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — “Sexting”',
     question:
         'Selon le cours, le “sexting” peut relever de la pornodivulgation s’il s’agit :',
@@ -30280,7 +30280,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite le sexting parmi les supports possibles (messages) du contenu pornodivulgué.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Plainte (mention du cours)',
     question:
         'Selon le cours, l’article 226-6 impose le dépôt d’une plainte notamment car :',
@@ -30296,7 +30296,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Dépositaire (mission temporaire)',
     question:
         'Selon le cours, peut être dépositaire d’un secret en raison d’une mission temporaire :',
@@ -30310,7 +30310,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite les jurés, experts, membres assesseurs comme exemples de mission temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Forme de la révélation',
     question: 'Selon le cours, la forme de la révélation :',
     options: [
@@ -30323,7 +30323,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la révélation peut se faire par la parole ou un document ; la forme importe peu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Mobile',
     question: 'Selon le cours, pour 226-13, le mobile (raison de révéler) :',
     options: ['Importe peu', 'Doit être un profit', 'Doit être une vengeance'],
@@ -30333,7 +30333,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Correspondance (définition)',
     question: 'Selon le cours, une “correspondance” est :',
     options: [
@@ -30346,7 +30346,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la correspondance est un message quel que soit le support, dès lors qu’il a vocation à circuler.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Nature (privée/pro)',
     question: 'Selon le cours, une correspondance peut être :',
     options: [
@@ -30359,7 +30359,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la nature de la correspondance (privée ou pro) importe peu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Message à destination d’un tiers',
     question: 'Selon le cours, pour 226-15, la correspondance doit être :',
     options: [
@@ -30373,7 +30373,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’auteur s’en prend à un message adressé à autrui.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Mode d’acheminement',
     question: 'Selon le cours, le mode d’acheminement de la correspondance :',
     options: [
@@ -30385,7 +30385,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise que le mode d’acheminement importe peu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Arrivée ou non',
     question: 'Selon le cours, l’atteinte peut se produire :',
     options: [
@@ -30399,7 +30399,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : “arrivées ou non à destination” (peut être avant/pendant/après acheminement).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances — Erreur',
     question:
         'Selon le cours, ouvrir/détourner une correspondance par erreur :',
@@ -30417,7 +30417,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (12/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Caractère spontané',
     question:
         'Selon le cours, la jurisprudence exige que la dénonciation ait un caractère :',
@@ -30431,7 +30431,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la dénonciation calomnieuse suppose une initiative personnelle : caractère spontané.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponse à interpellation',
     question:
         'Selon le cours, révéler des faits (même faux) en réponse à une interpellation d’un supérieur/autorité :',
@@ -30446,7 +30446,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la dénonciation perd son caractère spontané lorsqu’elle est provoquée (réponse à une demande).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Rapport demandé par supérieur',
     question:
         'Selon le cours, un rapport/compte rendu établi sur demande d’un supérieur :',
@@ -30460,7 +30460,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite les rapports établis sur demande d’un supérieur comme exemple de dénonciation provoquée (non spontanée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Réponses au magistrat instructeur',
     question:
         'Selon le cours (jurisprudence citée), des dénonciations contenues dans des réponses aux questions d’un magistrat instructeur :',
@@ -30474,7 +30474,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : réponses aux questions d’un magistrat instructeur → dénonciation provoquée, donc non spontanée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Défense du prévenu',
     question:
         'Selon le cours (jurisprudence citée), la dénonciation faite par un prévenu :',
@@ -30489,7 +30489,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence : dénonciation liée étroitement à la défense du prévenu → perd spontanéité au sens 226-10.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation préjudiciable',
     question:
         'Selon le cours, la dénonciation doit être “préjudiciable” car le fait dénoncé doit être :',
@@ -30503,7 +30503,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours lie l’exigence de préjudice au fait que la dénonciation doit être de nature à entraîner des sanctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Sanction effective',
     question: 'Selon le cours, pour 226-10, il faut une sanction effective :',
     options: [
@@ -30516,7 +30516,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la dénonciation doit être “de nature à” entraîner des sanctions, même sans sanction effective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Prescription/amnistie/décès',
     question:
         'Selon le cours, l’infraction peut être constituée même si l’éventualité de sanction est écartée par :',
@@ -30530,7 +30530,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que ces causes n’empêchent pas la constitution de l’infraction : le fait reste “de nature à” entraîner des sanctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Fausseté automatique (loi 2010)',
     question:
         'Selon le cours, depuis la modification (loi 2010), la fausseté résulte nécessairement d’une décision définitive de :',
@@ -30545,7 +30545,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que seules ces décisions définitives, constatant expressément absence de fait/imputabilité, établissent automatiquement la fausseté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Faute de charges suffisantes',
     question:
         'Selon le cours, si la décision définitive est rendue “faute de charges suffisantes”, alors :',
@@ -30560,7 +30560,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Formes de l’infraction',
     question: 'Selon le cours, la violation de domicile vise :',
     options: [
@@ -30573,7 +30573,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’introduction et le maintien à l’issue de l’entrée illégitime constituent l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Introduction (moyens)',
     question:
         'Selon le cours (226-4), l’introduction doit être réalisée à l’aide de :',
@@ -30587,7 +30587,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours énumère les 4 moyens : manœuvres, menaces, voies de fait, contrainte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Contrainte (définition)',
     question: 'Selon le cours, la contrainte correspond à :',
     options: [
@@ -30600,7 +30600,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours définit la contrainte comme toute situation où le consentement n’est pas libre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Infraction continue',
     question: 'Selon le cours, la violation de domicile est une infraction :',
     options: [
@@ -30613,7 +30613,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le délit est continu : la flagrance peut durer tant que le maintien se poursuit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Enquête de flagrance',
     question: 'Selon le cours, une enquête de flagrance est possible :',
     options: [
@@ -30626,7 +30626,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la flagrance est possible tant que se poursuit l’occupation (délit continu).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Maintien (tiers arrivé après)',
     question:
         'Selon le cours, peuvent être poursuivies des personnes venues ensuite demeurer dans le lieu si :',
@@ -30641,7 +30641,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que le maintien peut viser ceux qui profitent de l’entrée illicite commise par un tiers, s’ils agissent en connaissance de cause.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Hors les cas où la loi le permet',
     question:
         'Selon le cours, l’introduction n’est infraction que “hors les cas où la loi le permet”, par exemple :',
@@ -30656,7 +30656,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite des cas d’introduction légitime : appel au secours, incendie/inondation, assistance à personne en péril.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Réclamation de l’intérieur',
     question:
         'Selon le cours, une réclamation faite de l’intérieur (cris/hurlements) :',
@@ -30670,7 +30670,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’introduction est justifiée même si l’appel au secours s’avère fantaisiste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violation de domicile — Assistance à personne en péril (indices)',
     question:
@@ -30685,7 +30685,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours évoque des indices (appel sans réponse, odeur suspecte, absence anormale) justifiant l’entrée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément moral',
     question: 'Selon le cours, l’élément moral implique :',
     options: [
@@ -30700,7 +30700,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement (définition)',
     question:
         'La violation des correspondances émises par voie électronique est définie par :',
@@ -30714,7 +30714,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 226-15 al.2 définit l’infraction pour les correspondances électroniques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Fondement (répression)',
     question:
         'La répression de la violation des correspondances (voie électronique) est prévue par :',
@@ -30728,7 +30728,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : al.2 définit l’infraction, al.1 prévoit la répression.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Actes matériels (liste)',
     question: 'Selon le cours (226-15 al.2), les actes matériels sont :',
     options: [
@@ -30742,7 +30742,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste : intercepter/détourner/utiliser/divulguer + installation d’appareils.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Utiliser (exemple)',
     question:
         'Selon le cours, “utiliser” une correspondance électronique peut viser :',
@@ -30757,7 +30757,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne ces exemples d’“utiliser” : effacer ou transférer un message sans qualité pour en connaître.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Divulguer (définition)',
     question: 'Selon le cours, “divulguer” suppose :',
     options: [
@@ -30771,7 +30771,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que divulguer = révéler à un tiers le contenu d’une correspondance qui ne lui est pas destinée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Mauvaise foi (définition)',
     question: 'Selon le cours, la “mauvaise foi” est définie comme :',
     options: [
@@ -30784,7 +30784,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une définition jurisprudentielle : la mauvaise foi = connaissance que ce n’était pas destiné à lui.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Correspondances électroniques — Circonstance aggravante',
     question:
         'Selon le cours, 226-15 al.3 aggrave l’infraction lorsque les faits sont commis par :',
@@ -30799,7 +30799,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Aggravation “en ligne”',
     question:
         'Selon le cours, 226-8 al.2 prévoit une circonstance aggravante lorsque les faits sont réalisés :',
@@ -30813,7 +30813,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique l’aggravation à 226-8 al.2 lorsque le montage/deepfake est diffusé via un service de communication au public en ligne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines (simple)',
     question:
         'Selon le cours, la peine principale (simple) de 226-8 al.1 est :',
@@ -30827,7 +30827,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau de répression du cours indique : 226-8 al.1 = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Peines (aggravée)',
     question:
         'Selon le cours, la peine principale (aggravée) de 226-8 al.2 est :',
@@ -30841,7 +30841,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-8 al.2 (aggravée) = 2 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Tentative',
     question: 'Selon le cours, la tentative de 226-8 est :',
     options: [
@@ -30853,7 +30853,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne que la tentative est prévue par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Personnes morales',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales en matière de 226-8 est prévue par :',
@@ -30868,7 +30868,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (nouveau type)',
     question: 'Selon le cours, l’atteinte à la vie privée inclut désormais :',
     options: [
@@ -30882,7 +30882,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la localisation en temps réel ou différé comme modalité d’atteinte (sans consentement).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Atteinte à la vie privée — Localisation (pas de consentement présumé)',
     question:
@@ -30897,7 +30897,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la présomption de consentement ne vaut pas pour la localisation (installation facilement clandestine).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (moyens techniques)',
     question:
         'Selon le cours, la captation de localisation peut se faire via :',
@@ -30911,7 +30911,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la balise et le logiciel espion comme exemples de captation de localisation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (niveau de précision)',
     question:
         'Selon le cours, le niveau de précision de la localisation (GPS ou zone relais) :',
@@ -30926,7 +30926,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Propagande “mode d’emploi squat”',
     question: 'Selon le cours, l’article 226-4-2-1 incrimine :',
     options: [
@@ -30940,7 +30940,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours décrit ce délit visant notamment les “modes d’emploi du squat” diffusés sur réseaux sociaux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Propagande (peine)',
     question:
         'Selon le cours, la propagande/publicité visée par 226-4-2-1 est sanctionnée d’une amende de :',
@@ -30949,7 +30949,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique une amende de 3 750 euros pour 226-4-2-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Peine (226-4)',
     question: 'Selon le cours, la violation de domicile (226-4) est punie de :',
     options: [
@@ -30961,7 +30961,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : 226-4 = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Tentative',
     question:
         'Selon le cours, la tentative de violation de domicile (226-4) est :',
@@ -30974,7 +30974,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise : tentative prévue par 226-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Complicité',
     question: 'Selon le cours, la complicité de violation de domicile :',
     options: [
@@ -30989,7 +30989,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // PACK 50 QUESTIONS (13/50)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Élément légal',
     question: 'La dénonciation calomnieuse est définie et réprimée par :',
     options: [
@@ -31002,7 +31002,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise expressément : 226-10 définit et réprime la dénonciation calomnieuse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Dénonciation calomnieuse — Plainte avec constitution de partie civile',
     question: 'Selon le cours, une dénonciation écrite peut prendre la forme :',
@@ -31016,7 +31016,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la plainte (avec ou sans constitution de partie civile) parmi les formes écrites possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Dénonciation orale',
     question: 'Selon le cours, la dénonciation orale peut être faite :',
     options: [
@@ -31029,7 +31029,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la dénonciation orale est possible, mais doit être prouvée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Agent sur instruction hiérarchique',
     question:
         'Selon le cours, l’auteur agissant sur instructions hiérarchiques ne peut être poursuivi que :',
@@ -31044,7 +31044,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue participation personnelle vs rôle purement matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Destinataires possibles',
     question: 'Selon le cours (226-10), un destinataire possible est :',
     options: [
@@ -31057,7 +31057,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours vise les autorités ayant pouvoir de donner suite ou de saisir l’autorité compétente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Officiers de police administrative',
     question:
         'Selon le cours, peuvent être destinataires en tant qu’officiers de police administrative :',
@@ -31071,7 +31071,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours donne ces exemples d’officiers de police administrative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Dénonciation calomnieuse — Officiers de police judiciaire (exemples)',
     question:
@@ -31086,7 +31086,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite notamment maires/adjoints, policiers, gendarmes comme destinataires possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Personnes pouvant saisir',
     question:
         'Selon le cours, peut être destinataire une personne n’ayant pas le pouvoir de sanction mais pouvant saisir l’autorité compétente, par exemple :',
@@ -31100,7 +31100,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite médecin/assistante sociale comme personnes pouvant saisir l’autorité compétente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Tentative',
     question: 'Selon le cours, la tentative de dénonciation calomnieuse est :',
     options: [
@@ -31112,7 +31112,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : TENTATIVE : NON pour 226-10.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Peines (personne physique)',
     question:
         'Selon le cours, la dénonciation calomnieuse (226-10) est punie (personne physique) de :',
@@ -31126,7 +31126,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Élément légal',
     question:
         'La diffusion sans accord d’un enregistrement/document à caractère sexuel obtenu avec consentement est prévue par :',
@@ -31140,7 +31140,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-2-1 al.2 définit et réprime la pornodivulgation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Obtention consentie',
     question: 'Selon le cours, la pornodivulgation se distingue de 226-1 car :',
     options: [
@@ -31154,7 +31154,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que contrairement à 226-1, la captation initiale est consentie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Caractère sexuel',
     question: 'Selon le cours, la notion de “caractère sexuel” a été jugée :',
     options: [
@@ -31168,7 +31168,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne la décision du Conseil constitutionnel : notion claire/précise, appréciation par les juridictions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Diffusion sans accord',
     question:
         'Selon le cours, la diffusion sans accord signifie que le contenu est porté à la connaissance :',
@@ -31182,7 +31182,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : diffusion = connaissance du public ou d’un tiers, sans accord.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Opposition vs absence de consultation',
     question: 'Selon le cours, l’absence d’accord peut résulter :',
     options: [
@@ -31196,7 +31196,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours explique : diffusion sans accord si opposition ou absence de consultation permettant opposition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Tentative',
     question: 'Selon le cours, la tentative du délit prévu à 226-2-1 est :',
     options: [
@@ -31208,7 +31208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : tentative prévue par 226-5 pour 226-2-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Peines',
     question:
         'Selon le cours, la pornodivulgation (226-2-1 al.2) est punie de :',
@@ -31222,7 +31222,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-2-1 al.2 = 2 ans + 60 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pornodivulgation — Personnes morales',
     question:
         'Selon le cours, la responsabilité pénale des personnes morales pour 226-2-1 est prévue par :',
@@ -31237,7 +31237,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Fondement (226-1)',
     question:
         'Les atteintes à l’intimité de la vie privée (paroles/image/localisation) sont prévues par :',
@@ -31251,7 +31251,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que 226-1 définit et réprime les atteintes à l’intimité de la vie privée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Infraction de conséquence (226-2)',
     question:
         'La conservation, l’utilisation ou la divulgation d’un document issu d’une atteinte à la vie privée est prévue par :',
@@ -31265,7 +31265,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que 226-2 réprime la conservation/diffusion/utilisation des documents/enregistrements issus de 226-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Localisation (inclusion 226-1)',
     question: 'Selon le cours, 226-1 vise aussi :',
     options: [
@@ -31279,7 +31279,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours inclut explicitement la localisation parmi les atteintes à la vie privée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Consentement (localisation)',
     question: 'Selon le cours, pour la localisation, la victime doit :',
     options: [
@@ -31292,7 +31292,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que la présomption de consentement ne s’applique pas à la localisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la vie privée — Enregistrement GAV (jurisprudence)',
     question:
         'Selon le cours (jurisprudence citée), enregistrer la parole ou l’image d’une personne en garde à vue :',
@@ -31307,7 +31307,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Élément légal',
     question:
         'La violation de domicile commise par un particulier est prévue par :',
@@ -31321,7 +31321,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise : 226-4 définit et réprime la violation de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Logements vacants non meublés',
     question:
         'Selon le cours (nota), les logements vacants non meublés ne sont pas des domiciles au sens de 226-4 et relèvent de :',
@@ -31335,7 +31335,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que les logements vacants non meublés (ou proposés à la location) relèvent de 315-1 et 315-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Domicile et meubles',
     question:
         'Selon le cours, la présence de meubles peut permettre d’apprécier l’existence d’un domicile si elle signale :',
@@ -31350,7 +31350,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que des meubles “signant” l’occupation effective (table/lit/électroménager) sont des indices, contrairement à vélo/carton.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation de domicile — Véhicule automobile',
     question: 'Selon le cours, n’est pas considéré comme domicile :',
     options: [
@@ -31365,7 +31365,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances électroniques — Peine (simple)',
     question: 'Selon le cours, la peine (simple) pour 226-15 al.2 est :',
     options: [
@@ -31378,7 +31378,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le tableau du cours indique : 226-15 al.2 (simple) = 1 an + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances électroniques — Peine (aggravée)',
     question: 'Selon le cours, la peine (aggravée) pour 226-15 al.3 est :',
     options: [
@@ -31390,7 +31390,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours indique : 226-15 al.3 = 2 ans + 60 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret des correspondances électroniques — Tentative',
     question:
         'Selon le cours, la tentative de 226-15 (voie électronique) est :',
@@ -31404,7 +31404,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Diffusion et repartage',
     question:
         'Selon le cours, “porter à la connaissance du public ou d’un tiers” englobe :',
@@ -31418,7 +31418,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que le dispositif permet aussi de sanctionner les personnes repartageant le contenu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte à la représentation — Presse (hiérarchie 1881)',
     question:
         'Selon le cours, en cas de voie de presse, la hiérarchie de responsabilité (loi 1881, art.42) commence par :',
@@ -31429,7 +31429,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dénonciation calomnieuse — Autorité compétente',
     question: 'Selon le cours, le destinataire peut être une autorité :',
     options: [
@@ -31444,7 +31444,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Secret professionnel — Violence au sein du couple',
     question:
         'Selon le cours (226-14), un médecin peut signaler au procureur des violences au sein du couple lorsque :',
@@ -31459,7 +31459,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours mentionne cette exception spécifique (danger immédiat + impossibilité de se protéger).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Tentative',
     question: 'La tentative de tortures et actes de barbarie est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -31467,7 +31467,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La tentative de crime est toujours punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Qualification',
     question:
         'Le non-respect du SMIC suffit-il à caractériser l’article 225-13 CP ?',
@@ -31477,7 +31477,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le non-respect du SMIC ne suffit pas : il faut une disproportion manifeste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Travail non ou insuffisamment rémunéré — Tentative',
     question: 'La tentative de l’infraction prévue à l’article 225-13 CP est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -31485,7 +31485,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La tentative n’est pas prévue par le texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Définition',
     question:
         'La menace de commettre un crime ou un délit contre les personnes constitue une infraction lorsque :',
@@ -31500,7 +31500,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'L’article 222-17 CP exige une réitération ou une matérialisation de la menace.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Fondement légal',
     question:
         'La menace de commettre un crime ou un délit contre les personnes est prévue par :',
@@ -31514,7 +31514,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 222-17 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Nature',
     question: 'Selon la jurisprudence, une menace est :',
     options: [
@@ -31527,7 +31527,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Définition issue de la jurisprudence (Cass. crim., 11 juin 1937).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Infraction visée',
     question: 'La menace doit porter sur :',
     options: [
@@ -31541,7 +31541,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte exclut les menaces portant sur des violences dont la tentative n’est pas punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Direction',
     question: 'La menace doit être :',
     options: [
@@ -31554,7 +31554,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Une menace faite à la cantonade ne constitue pas l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Réitération',
     question: 'La réitération de la menace suppose :',
     options: [
@@ -31567,7 +31567,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence exige une répétition à l’égard de la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Matérialisation',
     question: 'Une menace matérialisée peut l’être notamment par :',
     options: [
@@ -31579,7 +31579,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours précise les modes de matérialisation admis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Élément moral',
     question: 'L’élément moral de la menace consiste en :',
     options: [
@@ -31591,7 +31591,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Il suffit d’avoir conscience d’impressionner la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Aggravation',
     question: 'La menace est aggravée lorsqu’elle constitue :',
     options: [
@@ -31603,7 +31603,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-17 alinéa 2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Tentative',
     question: 'La tentative de menace est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -31615,7 +31615,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMBUSCADE (222-15-1 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Définition',
     question: 'L’embuscade consiste à :',
     options: [
@@ -31628,7 +31628,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours définit l’embuscade comme un guet-apens préparé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Fondement',
     question: 'Le délit d’embuscade est prévu par :',
     options: [
@@ -31641,7 +31641,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que l’article 222-15-1 CP réprime l’embuscade.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Résultat',
     question: 'L’infraction d’embuscade est constituée :',
     options: [
@@ -31653,7 +31653,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’embuscade est une infraction préparée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Tentative',
     question: 'La tentative d’embuscade est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -31665,7 +31665,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // APPELS MALVEILLANTS / MESSAGES / AGRESSIONS SONORES (222-16)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Définition',
     question: 'Les appels téléphoniques malveillants réitérés constituent :',
     options: [
@@ -31677,7 +31677,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-16 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Réitération',
     question: 'La réitération est caractérisée à partir de :',
     options: [
@@ -31690,7 +31690,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La jurisprudence admet deux appels, même à des destinataires différents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Élément moral',
     question: 'L’élément moral repose sur :',
     options: ['La malveillance', 'La préméditation', 'La négligence'],
@@ -31702,7 +31702,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC ORDRE DE REMPLIR UNE CONDITION (222-18 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition — Définition',
     question: 'La menace avec ordre de remplir une condition consiste à :',
     options: [
@@ -31715,7 +31715,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'L’article 222-18 CP vise l’atteinte à la liberté d’agir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition — Tentative',
     question: 'La tentative de menace avec condition est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -31731,7 +31731,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE (222-17 CP) — APPROFONDISSEMENT / CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Exclusion',
     question:
         'Quand la menace porte sur des violences dont la tentative n’est pas réprimée, il convient de viser :',
@@ -31745,7 +31745,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que les menaces de violences (tentative non réprimée) sortent du champ de 222-17 et relèvent de R.623-1 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Réitération',
     question: 'Pour être punissables, les menaces doivent être réitérées :',
     options: [
@@ -31758,7 +31758,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Jurisprudence citée au cours : menaces réitérées envers la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Matérialisation',
     question:
         'La matérialisation de la menace par un écrit rend la réitération :',
@@ -31772,7 +31772,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours indique que la matérialisation représente la répétition nécessaire de la pensée de l’agent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Moyen',
     question: 'Dans le cadre de l’article 222-17 CP, la menace doit être :',
     options: [
@@ -31785,7 +31785,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte exige l’une des deux modalités : réitération ou matérialisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Direction',
     question: 'La menace faite « à la cantonade » :',
     options: [
@@ -31797,7 +31797,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Élément moral',
     question: 'Pour caractériser l’infraction de menace, la loi exige :',
     options: [
@@ -31811,7 +31811,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours précise que l’auteur n’a pas à vouloir exécuter la menace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Aggravation',
     question:
         'La menace est aggravée au titre de l’article 222-17 al.2 CP lorsqu’il s’agit :',
@@ -31824,7 +31824,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravation spécifique pour la menace de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Répression',
     question: 'La menace simple (222-17 al.1 CP) est punie de :',
     options: [
@@ -31837,7 +31837,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau de répression du cours pour l’article 222-17 al.1 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Répression',
     question: 'La menace de mort (222-17 al.2 CP) est punie de :',
     options: [
@@ -31850,7 +31850,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation « menace de mort » à 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Conjugalité',
     question:
         'L’article 222-18-3 CP prévoit deux degrés d’aggravation lorsque les menaces sont commises :',
@@ -31864,7 +31864,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-18-3 CP organise l’aggravation en contexte conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Conjugalité',
     question: 'Le second degré d’aggravation (222-18-3 CP) concerne :',
     options: [
@@ -31882,7 +31882,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC CONDITION (222-18 CP) — CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Fondement',
     question:
         'La menace de commettre un crime ou un délit avec ordre de remplir une condition est prévue par :',
@@ -31895,7 +31895,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-18 CP réprime la menace avec condition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Champ',
     question: 'À la différence de 222-17, 222-18 vise :',
     options: [
@@ -31909,7 +31909,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-18 ne conditionne pas à la punissabilité de la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Condition',
     question: 'La « condition » peut prendre la forme :',
     options: [
@@ -31922,7 +31922,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : action ou abstention, obligation de faire ou ne pas faire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Moyen',
     question: 'Le moyen de menace au sens de 222-18 est :',
     options: [
@@ -31934,7 +31934,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : pas besoin de réitération, moyen indéterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Élément moral',
     question: 'L’élément moral de 222-18 consiste dans :',
     options: [
@@ -31947,7 +31947,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : dessein de peser méchamment par contrainte morale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Aggravation',
     question: 'L’aggravation spécifique de 222-18 al.2 CP vise :',
     options: [
@@ -31960,7 +31960,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravation lorsqu’il s’agit d’une menace de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Répression',
     question: 'La menace avec condition (222-18 al.1 CP) est punie de :',
     options: [
@@ -31972,7 +31972,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau de répression du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Répression',
     question:
         'La menace de mort avec condition (222-18 al.2 CP) est punie de :',
@@ -31985,7 +31985,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravation à 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Conjugalité',
     question:
         'En contexte conjugal, 222-18-3 CP prévoit pour la menace avec condition :',
@@ -31998,7 +31998,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-18-3 CP s’applique à 222-18 al.1 et al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Tentative',
     question: 'La tentative de menace avec condition est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -32010,7 +32010,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMBUSCADE (222-15-1 CP) — ENORME BANQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Fondement',
     question: 'L’embuscade est définie comme :',
     options: [
@@ -32024,7 +32024,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : définition du guet-apens dans le délit d’embuscade.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — But',
     question: 'Le but de l’embuscade est de commettre :',
     options: [
@@ -32036,7 +32036,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte vise violences avec usage ou menace d’une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Arme',
     question: 'Dans l’embuscade, la notion d’arme vise :',
     options: [
@@ -32048,7 +32048,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours mentionne arme à feu, couteau, bâton, chien, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Violence non réalisée',
     question: 'Concernant l’embuscade, les violences projetées :',
     options: [
@@ -32061,7 +32061,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le législateur permet d’intervenir avant la consommation des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Passage à l’action',
     question:
         'Si l’auteur passe à l’action et commet les violences, il est poursuivi :',
@@ -32075,7 +32075,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : embuscade vise les violences en voie de réalisation, pas celles déjà réalisées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Victimes',
     question: 'Les victimes visées incluent :',
     options: [
@@ -32089,7 +32089,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Liste prévue au cours (agents force publique, AP, DDAP, pompiers, transport).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Proches',
     question: 'Constitue aussi une embuscade le fait d’attendre :',
     options: [
@@ -32103,7 +32103,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte étend l’embuscade aux proches vivant habituellement au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Contexte',
     question: 'L’embuscade doit être commise :',
     options: [
@@ -32116,7 +32116,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : deux alternatives de contexte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Élément moral',
     question: 'L’embuscade doit être caractérisée par :',
     options: [
@@ -32130,7 +32130,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : matérialisation de la volonté d’agir par des faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Aggravation',
     question: 'L’embuscade est aggravée lorsqu’elle est commise :',
     options: ['En réunion', 'Avec une ITT > 8 jours', 'Sur mineur de 15 ans'],
@@ -32138,7 +32138,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-15-1 al.4 CP : aggravation en réunion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peines',
     question: 'L’embuscade simple est punie de :',
     options: [
@@ -32150,7 +32150,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau de répression du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peines',
     question: 'L’embuscade aggravée (en réunion) est punie de :',
     options: [
@@ -32162,7 +32162,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravation en réunion → 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Tentative',
     question: 'La tentative d’embuscade est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -32170,7 +32170,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la consommation se situe avant la tentative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Complicité',
     question: 'La complicité d’embuscade est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -32182,7 +32182,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // APPELS / MESSAGES / AGRESSIONS SONORES (222-16 CP) — ENORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Fondement',
     question:
         'Les appels téléphoniques malveillants réitérés sont prévus par :',
@@ -32195,7 +32195,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-16 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Supports',
     question: 'Sont visés par 222-16 CP :',
     options: [
@@ -32209,7 +32209,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le texte vise appels, messages électroniques, agressions sonores.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Répondeur',
     question: 'Les appels reçus sur répondeur/boîte vocale :',
     options: [
@@ -32222,7 +32222,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Jurisprudence au cours : appels reçus directement ou sur boîte vocale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages malveillants (222-16) — Réitération',
     question: 'Les messages malveillants visés peuvent être :',
     options: [
@@ -32234,7 +32234,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite ces exemples de communications électroniques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Malveillance',
     question: 'La malveillance se définit comme :',
     options: [
@@ -32246,7 +32246,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition donnée par le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Preuve',
     question: 'Le caractère malveillant peut être déduit :',
     options: [
@@ -32258,7 +32258,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la seule multiplication peut suffire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Réitération',
     question: 'La réitération est caractérisée dès lors qu’il existe :',
     options: [
@@ -32270,7 +32270,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Cass. crim. (4 mars 2003) citée au cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sonores (222-16) — Réitération',
     question: 'Pour les agressions sonores, la réitération est :',
     options: ['Non exigée', 'Toujours exigée', 'Exigée seulement la nuit'],
@@ -32279,7 +32279,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sonores (222-16) — Intention',
     question: 'L’élément intentionnel des agressions sonores est :',
     options: [
@@ -32291,7 +32291,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le texte vise des agissements commis « en vue de troubler ».',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Tentative',
     question: 'La tentative de l’infraction prévue à l’article 222-16 CP est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -32299,7 +32299,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Aggravation',
     question:
         'L’infraction 222-16 CP est aggravée lorsque les faits sont commis :',
@@ -32312,7 +32312,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Article 222-16 al.2 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Répression',
     question: 'La forme simple (222-16 CP) est punie de :',
     options: [
@@ -32324,7 +32324,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 1 an / 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Répression',
     question: 'La forme aggravée (222-16 al.2 CP) est punie de :',
     options: [
@@ -32336,7 +32336,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : aggravée conjugalité → 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Complicité',
     question: 'La complicité pour 222-16 CP est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -32348,7 +32348,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TORTURES ET ACTES DE BARBARIE (222-1 et s.) — ENORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Fondement',
     question:
         'Le fait de soumettre une personne à des actes de torture ou de barbarie est prévu par :',
@@ -32361,7 +32361,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Définition ONU',
     question: 'La Convention ONU (10 décembre 1984) définit la torture comme :',
     options: [
@@ -32375,7 +32375,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la Convention des Nations Unies contre la torture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Jurisprudence',
     question:
         'Selon la jurisprudence, les tortures ou actes de barbarie supposent :',
@@ -32390,7 +32390,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Définition jurisprudentielle reprise au cours (gravité exceptionnelle, dignité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Souffrance',
     question: 'La souffrance infligée peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -32398,7 +32398,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : souffrance d’ordre physique ou moral.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Victime',
     question: 'Les tortures et actes de barbarie doivent être commis :',
     options: [
@@ -32410,7 +32410,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : personne humaine, vivante, distincte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Élément moral',
     question: 'L’élément moral comprend :',
     options: [
@@ -32423,7 +32423,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : volonté de nier la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 1er degré (222-3)',
     question:
         'Le premier degré d’aggravation (222-3 CP) vise notamment des faits commis :',
@@ -32438,7 +32438,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours liste les circonstances de 222-3 CP (alinéas 2 à 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 2e degré',
     question: 'Le deuxième degré d’aggravation peut résulter notamment :',
     options: [
@@ -32452,7 +32452,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : 222-4 (bande organisée…), 222-5 (mutilation/infirmité permanente).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 3e degré',
     question: 'Le troisième degré d’aggravation peut viser :',
     options: [
@@ -32466,7 +32466,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours distingue 222-2 et 222-6 (mort sans intention de la donner).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine simple',
     question: 'Les tortures/actes de barbarie (forme simple) sont punis de :',
     options: [
@@ -32479,7 +32479,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau du cours : 222-1 CP → 15 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 1er degré',
     question:
         'Les tortures/actes de barbarie aggravés (1er degré) sont punis de :',
@@ -32493,7 +32493,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau du cours : 222-3 CP → 20 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 2e degré',
     question:
         'Le 2e degré (ex : bande organisée / habitude sur mineur / vulnérabilité / sujétion) est puni de :',
@@ -32507,7 +32507,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravations 2e degré → 30 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 3e degré',
     question:
         'Le 3e degré (ex : mort sans intention de la donner / concours crime autre que meurtre ou viol) est puni de :',
@@ -32521,7 +32521,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : aggravations 3e degré → perpétuité + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative',
     question: 'La tentative de tortures/actes de barbarie est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -32529,7 +32529,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : tentative de crime toujours punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Complicité',
     question: 'La complicité de tortures/actes de barbarie est :',
     options: [
@@ -32541,7 +32541,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : complicité oui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Provocation',
     question: 'La provocation à commettre des tortures/actes de barbarie est :',
     options: [
@@ -32553,7 +32553,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : incrimination autonome (222-6-4 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Exemption',
     question:
         'L’exemption de peine est possible si la personne ayant tenté d’un crime du paragraphe :',
@@ -32567,7 +32567,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-6-2 al.1 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Réduction',
     question:
         'La réduction de peine intervient si l’auteur/complice a averti l’autorité et a permis :',
@@ -32585,7 +32585,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES AU SEIN DU COUPLE / EX (222-14 al.6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Fondement',
     question:
         'Les violences habituelles au sein du couple ou commises par un « ex » sont définies par :',
@@ -32598,7 +32598,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : définition 222-14 al.6 ; répression al.2 à 5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Habitude',
     question: 'L’habitude suppose que les violences aient été commises :',
     options: ['À plusieurs reprises', 'Une seule fois', 'Uniquement de nuit'],
@@ -32606,7 +32606,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : répétition nécessaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Nature',
     question: 'Les violences volontaires peuvent être :',
     options: [
@@ -32618,7 +32618,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : violences psychologiques reconnues et codifiées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Omission',
     question: 'La simple abstention (omission) constitue :',
     options: [
@@ -32631,7 +32631,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : violence = acte positif, sinon qualification différente (privation de soins, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Lien',
     question: 'Le lien exigé entre l’auteur et la victime vise :',
     options: [
@@ -32643,7 +32643,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : couple, même sans cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Ex',
     question:
         'L’alinéa 6 renvoie à l’article 132-80 al.2 : la circonstance est constituée lorsque les faits sont commis :',
@@ -32657,7 +32657,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours reprend le mécanisme de 132-80 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Résultat',
     question: 'Le résultat dommageable se caractérise notamment par :',
     options: [
@@ -32670,7 +32670,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : certificat médical, atteinte physique/psychique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Préjudices',
     question:
         'L’article 222-14 distingue notamment les violences selon qu’elles :',
@@ -32684,7 +32684,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 4 catégories de préjudices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine ITT ≤ 8',
     question:
         'Les violences habituelles (couple/ex) avec ITT de 0 à 8 jours sont punies de :',
@@ -32697,7 +32697,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours pour 222-14 (délit).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine ITT > 8',
     question:
         'Les violences habituelles (couple/ex) avec ITT > 8 jours sont punies de :',
@@ -32710,7 +32710,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : ITT > 8 jours → 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine infirmité',
     question:
         'Les violences habituelles (couple/ex) ayant entraîné une mutilation ou infirmité permanente sont punies de :',
@@ -32723,7 +32723,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : passage en crime → 20 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine mort',
     question:
         'Les violences habituelles (couple/ex) ayant entraîné la mort sans intention de la donner sont punies de :',
@@ -32736,7 +32736,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : mort sans intention → 30 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Tentative',
     question:
         'La tentative en matière de violences délictuelles (dont 222-14) est :',
@@ -32750,7 +32750,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Complicité',
     question: 'La complicité pour les violences habituelles (222-14) est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -32762,7 +32762,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES SUR MINEUR / VULNÉRABLE (222-14 al.1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Fondement',
     question:
         'Les violences habituelles sur mineur de 15 ans ou personne vulnérable sont définies par :',
@@ -32775,7 +32775,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : alinéa 1 définit, alinéas 2 à 5 répriment.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Mineur',
     question: 'La condition de minorité visée est :',
     options: ['Mineur de 15 ans', 'Mineur de 18 ans', 'Mineur de 13 ans'],
@@ -32783,7 +32783,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : mineur de 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Vulnérabilité',
     question: 'La particulière vulnérabilité peut être due :',
     options: [
@@ -32796,7 +32796,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours reprend la liste classique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Préexistence',
     question: 'La vulnérabilité doit :',
     options: [
@@ -32808,7 +32808,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : état préexistant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Sujétion',
     question: 'L’état de sujétion (223-15-3 CP) résulte :',
     options: [
@@ -32821,7 +32821,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition détaillée donnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine ITT ≤ 8',
     question:
         'Les violences habituelles sur mineur/vulnérable avec ITT ≤ 8 jours sont punies de :',
@@ -32834,7 +32834,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : même échelle 222-14 selon résultat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine ITT > 8',
     question:
         'Les violences habituelles sur mineur/vulnérable avec ITT > 8 jours sont punies de :',
@@ -32847,7 +32847,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine infirmité',
     question:
         'Les violences habituelles sur mineur/vulnérable ayant entraîné une infirmité permanente sont punies de :',
@@ -32860,7 +32860,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : crime → 20 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine mort',
     question:
         'Les violences habituelles sur mineur/vulnérable ayant entraîné la mort sans intention de la donner sont punies de :',
@@ -32877,7 +32877,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES SUR FORCES DE SÉCURITÉ INTÉRIEURE / ÉLUS (222-14-5)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Fondement',
     question:
         'Les violences sur les forces de sécurité intérieure ou sur les élus locaux sont définies et réprimées par :',
@@ -32890,7 +32890,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : article 222-14-5 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Victimes',
     question: 'Parmi les victimes visées, on trouve notamment :',
     options: [
@@ -32903,7 +32903,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours énumère la liste exhaustive du I.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Élus',
     question:
         'Sont aussi visés les anciens titulaires d’un mandat électif public :',
@@ -32916,7 +32916,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : limite de six ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Proches',
     question:
         'Les proches pouvant être victimes en raison des fonctions du proche sont :',
@@ -32930,7 +32930,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-14-5 II 1°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Personnels concourants',
     question:
         'Sont visées les personnes affectées dans les services (PN/GN/PM/AP) agissant sous l’autorité des FSI/élus, comme :',
@@ -32944,7 +32944,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours donne ces exemples.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Contexte',
     question: 'Les violences doivent être commises :',
     options: [
@@ -32958,7 +32958,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : exercice ou du fait + qualité apparente ou connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Résultat',
     question: 'L’article 222-14-5 distingue les violences selon qu’elles :',
     options: [
@@ -32970,7 +32970,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : deux catégories seulement pour 222-14-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Élément moral',
     question: 'L’élément moral implique :',
     options: [
@@ -32986,7 +32986,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // --- Aggravations ITT ≤ 8 / aucune ITT (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Aggravation',
     question:
         'Pour les violences ITT ≤ 8 jours / aucune ITT, 222-14-5 prévoit :',
@@ -33000,7 +33000,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : premier degré (1 circonstance), second degré (au moins 2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — 1er degré',
     question:
         'Le premier degré d’aggravation (ITT ≤ 8) s’applique lorsque les faits sont accompagnés :',
@@ -33013,7 +33013,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : renvoi aux 8° à 15° de 222-12.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — 2e degré',
     question:
         'Le deuxième degré d’aggravation (ITT ≤ 8) s’applique lorsque les faits sont accompagnés :',
@@ -33026,7 +33026,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : cumul d’au moins deux circonstances.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Exemples circonst. 222-12',
     question:
         'Parmi les circonstances 8° à 15° de 222-12, on retrouve notamment :',
@@ -33042,7 +33042,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // --- Aggravation ITT > 8 (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8',
     question:
         'Pour les violences ayant entraîné une ITT > 8 jours, 222-14-5 prévoit :',
@@ -33058,7 +33058,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   ),
 
   // --- Peines (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine de base',
     question:
         'Les violences (aucune ITT ou ITT ≤ 8 jours) sur FSI/élus sont punies de :',
@@ -33071,7 +33071,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : 222-14-5 I/2°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine 1 circonstance',
     question:
         'Si (ITT ≤ 8) + une circonstance 8° à 15° de 222-12, la peine est :',
@@ -33084,7 +33084,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : 222-14-5 al.4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine 2 circonstances',
     question:
         'Si (ITT ≤ 8) + deux circonstances 8° à 15° de 222-12, la peine est :',
@@ -33097,7 +33097,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : second degré d’aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8 (base)',
     question:
         'Les violences ayant entraîné une ITT > 8 jours sur FSI/élus sont punies de :',
@@ -33110,7 +33110,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Tableau du cours : 222-14-5 I/1°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8 + circonstance',
     question:
         'Si ITT > 8 jours + une circonstance 8° à 15° de 222-12, la peine est :',
@@ -33124,7 +33124,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Tableau du cours : aggravation ITT > 8 + circonstance → 10 ans + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Personnes morales',
     question:
         'Les personnes morales peuvent être déclarées pénalement responsables et encourent :',
@@ -33137,7 +33137,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : renvoi à 222-16-1 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Tentative',
     question:
         'La tentative pour les violences délictuelles visées par 222-14-5 est :',
@@ -33151,7 +33151,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : les textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Complicité',
     question: 'La complicité pour 222-14-5 est :',
     options: [
@@ -33167,7 +33167,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // BONUS — QUESTIONS "PIÈGES CONCOURS" (MÉLANGE DES THÈMES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Distinction 222-17 / 222-18',
     question: 'Quelle affirmation est exacte ?',
     options: [
@@ -33180,7 +33180,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Synthèse fidèle au cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Embuscade',
     question: 'Dans l’embuscade, le cœur de l’infraction est :',
     options: [
@@ -33194,7 +33194,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours insiste : infraction préparée, violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-16',
     question: 'Quel couple est correct ?',
     options: [
@@ -33208,7 +33208,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : réitération pour appels/messages, pas pour agressions sonores.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Tortures',
     question:
         'Ce qui distingue principalement tortures/barbarie des violences « simples » est :',
@@ -33222,7 +33222,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition jurisprudentielle reprise par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Violences habituelles',
     question: 'La notion « d’habitude » signifie :',
     options: [
@@ -33234,7 +33234,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : répétition obligatoire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-5',
     question: 'Sous 222-14-5, les préjudices pris en compte sont :',
     options: [
@@ -33246,7 +33246,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : deux catégories pour 222-14-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-5 aggravations',
     question:
         'Pour ITT ≤ 8 (ou aucune), l’aggravation « second degré » suppose :',
@@ -33267,7 +33267,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE 222-17 — CAS PRATIQUES / PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une personne dit à la victime : « Je vais te tuer » puis le répète plus tard à la même victime. L’élément matériel est :',
@@ -33281,7 +33281,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         '222-17 : menace réitérée (au moins deux fois) ou matérialisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une menace est formulée une seule fois mais envoyée par message écrit. L’infraction 222-17 est :',
@@ -33294,7 +33294,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'La matérialisation par écrit dispense de la réitération.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une personne mime une arme avec ses doigts en disant « pan pan » sans autre élément. Selon le cours, cela :',
@@ -33308,7 +33308,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence excluant la gestuelle seule de la matérialisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Sens clair',
     question: 'La menace doit :',
     options: [
@@ -33322,7 +33322,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas besoin d’infraction explicitement désignée si sens clair.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Tiers',
     question:
         'Une menace adressée à un tiers pour être rapportée à la victime :',
@@ -33335,7 +33335,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : menace directe ou indirecte (tiers / transmise).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cantonade',
     question:
         '« Je tirerai sur quiconque touche ma voiture » (sans viser une personne) :',
@@ -33348,7 +33348,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Tentative punissable',
     question:
         '222-17 réprime une menace portant sur un crime ou délit contre les personnes :',
@@ -33361,7 +33361,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Condition spécifique de 222-17 rappelée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Contravention R.623-1',
     question:
         'Les menaces de commettre des violences (tentative non réprimée) basculent vers :',
@@ -33378,7 +33378,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MENACE AVEC CONDITION 222-18 — CAS PRATIQUES / PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Cas pratique',
     question:
         '« Si tu ne me donnes pas ton téléphone, je te plante. » Cette situation relève :',
@@ -33392,7 +33392,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'La condition est une injonction (faire/ne pas faire) pour éviter le mal annoncé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Moyen',
     question: 'Pour 222-18, la menace peut être extériorisée :',
     options: [
@@ -33405,7 +33405,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : moyen indéterminé, pas besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Élément moral',
     question: 'L’intention exigée est :',
     options: [
@@ -33418,7 +33418,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : dessein de peser méchamment sur la volonté d’autrui.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Tentative',
     question: 'La tentative de 222-18 est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -33430,7 +33430,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // EMBUSCADE 222-15-1 — GROS BLOC "CONCOURS"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Conditions',
     question: 'L’embuscade est constituée lorsque l’auteur :',
     options: [
@@ -33444,7 +33444,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Synthèse fidèle du cours : guet-apens + but + faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Surprise',
     question: 'Le guet-apens vise notamment à provoquer :',
     options: [
@@ -33457,7 +33457,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : surprise qui interdit à la victime de préparer sa défense.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Menace avec arme',
     question:
         'L’embuscade vise aussi le fait de menacer avec une arme afin de provoquer :',
@@ -33470,7 +33470,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : menace avec arme = choc/trouble psychologique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Seuil du processus',
     question: 'Pourquoi la tentative d’embuscade n’est pas punissable ?',
     options: [
@@ -33483,7 +33483,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : consommation située avant la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Aggravation',
     question: 'La circonstance aggravante spécifique est :',
     options: [
@@ -33499,7 +33499,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // APPELS / MESSAGES / AGRESSIONS SONORES 222-16 — PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Violence psychologique',
     question:
         'Selon le cours, les appels malveillants et agressions sonores constituent :',
@@ -33513,7 +33513,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : rattachement au régime des violences (nature y compris psychologique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération (minimum)',
     question: 'Le minimum d’appels pour caractériser la réitération est :',
     options: ['Deux appels successifs', 'Trois appels', 'Cinq appels'],
@@ -33521,7 +33521,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Jurisprudence citée : 2 appels suffisent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Destinataires',
     question:
         'Deux appels successifs effectués à des destinataires différents :',
@@ -33534,7 +33534,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : même à des destinataires différents.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Bruit',
     question: 'Le terme « agression sonore » suppose :',
     options: [
@@ -33546,7 +33546,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : bruit d’une certaine importance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Mobile',
     question:
         'Le texte de 222-16 prend en compte le mobile en exigeant que les agissements soient commis :',
@@ -33559,7 +33559,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Formule citée par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Infraction voisine',
     question:
         'Le cours indique que l’élément intentionnel permet de distinguer 222-16 de :',
@@ -33576,7 +33576,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // TORTURES / BARBARIE — CAS PRATIQUES (3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Cas pratique',
     question:
         'Une personne inflige volontairement des souffrances aiguës pendant plusieurs heures en humiliant la victime. La qualification la plus cohérente est :',
@@ -33590,7 +33590,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : souffrances aiguës + gravité exceptionnelle + atteinte dignité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative (cas)',
     question:
         'Ligoter une victime en vue de lui infliger des sévices, interrompu par l’arrivée de tiers, peut relever :',
@@ -33603,7 +33603,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours donne précisément cet exemple pour la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-6',
     question:
         'Lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner, on vise :',
@@ -33616,7 +33616,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : 222-6 = mort sans intention de la donner.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-2',
     question:
         'Lorsque les tortures/actes de barbarie précèdent, accompagnent ou suivent un crime autre que meurtre ou viol, on vise :',
@@ -33634,7 +33634,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // VIOLENCES HABITUELLES — PIÈGES + CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Cas pratique',
     question:
         'Des violences répétées sur une période de deux mois peuvent caractériser :',
@@ -33648,7 +33648,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite une jurisprudence : période de deux mois suffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Psychologique',
     question:
         'Le délit de violences peut être constitué sans atteinte physique par :',
@@ -33663,7 +33663,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours cite la jurisprudence et 222-14-3 (violences psychologiques).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Différence',
     question:
         'La particularité des violences habituelles par rapport aux violences « simples » est :',
@@ -33676,7 +33676,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : l’habitude suppose plusieurs reprises.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Tentative',
     question: 'Pour les violences délictuelles, la tentative est en principe :',
     options: [
@@ -33692,7 +33692,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // 222-14-5 — CAS PRATIQUES "CONCOURS"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'Un agent de police municipale est agressé pendant une intervention. La qualification spéciale applicable est :',
@@ -33702,7 +33702,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : PM fait partie des forces de sécurité intérieure visées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'Un élu local est frappé en raison d’une décision prise dans l’exercice de son mandat. Condition de contexte :',
@@ -33715,7 +33715,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : exercice ou du fait des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'La victime est l’ascendant vivant au domicile d’un gendarme, agressé en raison des fonctions du gendarme. Cela entre dans :',
@@ -33729,7 +33729,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : proches (conjoint, ascendants/descendants, cohabitants) en raison des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation (cas)',
     question:
         'Violences sur FSI sans ITT, commises avec dissimulation du visage (circonstance 222-12). Peine attendue :',
@@ -33743,7 +33743,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'ITT ≤ 8 (ou aucune) + 1 circonstance 8° à 15° → 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation (cas)',
     question:
         'Violences sur FSI sans ITT, commises avec arme + préméditation (2 circonstances). Peine attendue :',
@@ -33757,7 +33757,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'ITT ≤ 8 (ou aucune) + au moins 2 circonstances → second degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation ITT > 8 (cas)',
     question:
         'Violences sur FSI avec ITT > 8 jours, commises avec usage d’une arme. Peine attendue :',
@@ -33775,7 +33775,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
   // =========================================================
   // MÉGA "VRAI/FAUX" (FORMAT QCM) — PIÈGES CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « Une menace verbale unique non matérialisée peut relever de 222-17. »',
@@ -33789,7 +33789,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         '222-17 exige réitération OU matérialisation. Une menace unique verbale ne suffit pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « L’embuscade est constituée même si aucune violence n’a été commise. »',
@@ -33798,7 +33798,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Infraction préparée : violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « Les agressions sonores exigent une réitération. »',
@@ -33808,7 +33808,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « La tentative de tortures et actes de barbarie est punissable. »',
@@ -33817,7 +33817,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Crime : tentative punissable (121-4 2°).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « En 222-14-5, les anciens élus sont protégés sans limite de temps. »',
@@ -33831,7 +33831,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
         'Le cours : protection dans la limite de 6 ans après expiration du mandat.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Tentatives',
     question: 'Quelle combinaison est correcte ?',
     options: [
@@ -33844,7 +33844,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours : menaces et embuscade non ; crime de torture oui.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Définition',
     question: 'Les tortures et actes de barbarie se caractérisent par :',
     options: [
@@ -33857,7 +33857,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Définition jurisprudentielle reprise au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Fondement',
     question: 'Les tortures et actes de barbarie sont prévus par :',
     options: [
@@ -33869,7 +33869,7 @@ final List<QuizQuestion> questionCrimeDelitPersonne = [
     explanation: 'Le cours cite l’article 222-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Tentative',
     question: 'La tentative de tortures et actes de barbarie est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -34234,7 +34234,7 @@ class _QuizCrimeDelitsPersonneState extends State<QuizCrimeDelitsPersonne>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -34437,7 +34437,7 @@ class _QuizCrimeDelitsPersonneState extends State<QuizCrimeDelitsPersonne>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -34620,7 +34620,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -35153,10 +35152,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -35527,7 +35527,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -35568,9 +35568,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

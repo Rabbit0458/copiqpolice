@@ -4435,7 +4435,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
 class QuizViolationOrdonnancesJafPA extends StatefulWidget {
   static const String grade = 'pa';
   static const String routeName =
-      '/gpx_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf/quiz_ordonnances_jaf';
+      '/pa_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf/quiz_ordonnances_jaf';
   final String uid;
   final String email;
 

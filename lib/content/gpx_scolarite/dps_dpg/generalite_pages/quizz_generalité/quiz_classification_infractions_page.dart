@@ -98,7 +98,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   // =========================
   //         FACILE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Quelle juridiction est compétente pour juger les crimes ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -107,7 +107,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Crimes → cour d’assises (ou, pour certains crimes, cour criminelle départementale).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Le tribunal correctionnel juge :',
     options: ['Les contraventions', 'Les délits', 'Les crimes'],
@@ -115,7 +115,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétence de principe pour les délits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Quelle juridiction connaît des contraventions ?',
     options: ['Tribunal correctionnel', 'Cour d’assises', 'Tribunal de police'],
@@ -123,7 +123,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Contraventions → tribunal de police.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Gravité',
     question: 'Classe de gravité (du moins grave au plus grave) :',
     options: [
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Hiérarchie légale classique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Le non-port de la ceinture de sécurité est en principe :',
     options: ['Une contravention', 'Un délit', 'Un crime'],
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction routière contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Le vol simple (sans circonstance aggravante) est :',
     options: ['Une contravention', 'Un délit', 'Un crime'],
@@ -151,7 +151,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Puni correctionnellement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La cour d’assises juge en principe :',
     options: ['Les délits', 'Les crimes', 'Les contraventions'],
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Juridiction criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Les crimes sont principalement punis par :',
     options: [
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'La réclusion est la peine criminelle de référence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'Une “peine principale” est celle qui :',
     options: [
@@ -183,7 +183,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Elle peut être complétée par des peines complémentaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La classification impacte :',
     options: [
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'C’est le socle de l’orientation pénale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La chambre spécialisée pour mineurs peut connaître :',
     options: [
@@ -208,7 +208,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Organisation spéciale pour les mineurs délinquants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines complémentaires',
     question: 'La suspension du permis de conduire est :',
     options: [
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Peine privative/restrictive de droits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Astreintes',
     question: 'Le TIG (travail d’intérêt général) est-il rémunéré ?',
     options: ['Oui', 'Non', 'Seulement au SMIC'],
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Travail non rémunéré au profit d’une structure habilitée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de contravention est :',
     options: [
@@ -240,7 +240,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Principe : pas de tentative pour les contraventions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Complicité',
     question: 'La complicité de crime ou de délit est :',
     options: [
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Principe pénal général.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question: 'Combien de classes de contraventions ?',
     options: ['3', '4', '5'],
@@ -260,7 +260,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'De la 1re à la 5e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'La “sanction-réparation” vise principalement :',
     options: [
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Réparation du dommage causé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Gravité',
     question: 'Quelle affirmation est correcte ?',
     options: [
@@ -284,7 +284,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Sans aggravation, c’est correctionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge le tapage nocturne (hors récidive) ?',
     options: ['Cour d’assises', 'Tribunal correctionnel', 'Tribunal de police'],
@@ -292,7 +292,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Conduite sans ceinture :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Routier contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Homicide involontaire par maladresse (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -308,7 +308,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Juridiquement correctionnel en principe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Homicide volontaire :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -316,7 +316,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétence criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Le juge unique du tribunal de police statue sur :',
     options: ['Crimes', 'Délits', 'Contraventions'],
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétence de principe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question:
         'Principe : prescription de l’action publique des contraventions :',
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Délai de principe pour les contraventions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: '“Jours-amende”, c’est :',
     options: [
@@ -345,7 +345,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Montant global = nb jours × montant/jour.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'L’amende contraventionnelle maximale de principe est :',
     options: ['375 €', '750 €', '1500 €'],
@@ -353,7 +353,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Hors récidive/texte spécial.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de crime est :',
     options: [
@@ -365,7 +365,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Même si le crime n’a pas abouti.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question: 'La tentative de délit est :',
     options: [
@@ -377,7 +377,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Selon les textes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge un “délit de fuite” (cas simple) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -385,7 +385,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Délit routier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question:
         'Qui juge les “violences volontaires ayant entraîné ITT < 8 jours” (sans circonstance aggravante) ?',
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Contravention de 4e classe (selon cas).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge un “abus de confiance” ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction correctionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge une “extorsion” (cas général) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Délit (sauf formes aggravées relevant du criminel).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui juge un “meurtre” ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -418,7 +418,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Une interdiction de détenir des armes est :',
     options: [
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Peine privative/restrictive de droits possible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exécution',
     question: 'Les peines privatives/restrictives de droits :',
     options: [
@@ -442,7 +442,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Elles complètent la peine principale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'La diffamation publique relève :',
     options: [
@@ -454,7 +454,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Droit de la presse : règles spécifiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'La classification de l’infraction conditionne-t-elle les modes de poursuite ?',
@@ -463,7 +463,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'CRPC, composition pénale, information, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La contravention de 5e classe est jugée par :',
     options: ['Cour d’assises', 'Tribunal correctionnel', 'Tribunal de police'],
@@ -471,7 +471,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Toujours contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Conduite sans assurance (première constatation) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction correctionnelle (Code des assurances).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Menaces de mort réitérées (sans mise à exécution) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel (selon circonstances).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemples',
     question: 'Tags/dégradations légères (dommages mineurs) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Selon évaluation du dommage (seuils).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui connaît des crimes avec participation de jurés ?',
     options: ['Tribunal correctionnel', 'Cour d’assises', 'Tribunal de police'],
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Jury populaire (selon degré).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'Qui connaît des délits de presse (hors exceptions) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -511,7 +511,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétence de principe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Un stage de citoyenneté peut être :',
     options: [
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   // =========================
   //         MOYENNE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'Prescription (principe) pour les délits :',
     options: ['1 an', '3 ans', '6 ans'],
@@ -535,7 +535,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Délai de principe (hors régimes spéciaux).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'Prescription (principe) pour les crimes :',
     options: ['6 ans', '10 ans', '20 ans'],
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Délai de principe (hors dérogations).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'Crimes contre l’humanité :',
     options: ['Prescrits à 20 ans', 'Prescrits à 30 ans', 'Imprescriptibles'],
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Régime d’imprescriptibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La “cour criminelle départementale” juge :',
     options: [
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Crimes punis de 15 ou 20 ans réclusion (selon périmètre légal).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Composition',
     question: 'Cour d’assises (premier ressort) : nombre de jurés populaires ?',
     options: ['6', '9', '12'],
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: '6 jurés + 3 magistrats = 9 membres délibérants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Composition',
     question: 'Cour d’assises d’appel : nombre de jurés populaires ?',
     options: ['6', '9', '12'],
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: '9 jurés + 3 magistrats = 12 membres délibérants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question:
         'Cour d’assises (premier ressort) : majorité requise pour déclarer coupable ?',
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Majorité qualifiée (sur 9 votants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'Cour d’assises d’appel : majorité requise pour la culpabilité ?',
     options: ['7 voix', '8 voix', '9 voix'],
@@ -597,7 +597,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Majorité qualifiée (sur 12 votants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question:
         'Le tribunal correctionnel connaît des délits dont la peine encourue est :',
@@ -611,7 +611,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Peines correctionnelles (emprisonnement/ amende).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question: 'Récidive de 5e classe : le plafond de l’amende peut atteindre :',
     options: ['1500 €', '2000 €', '3000 €'],
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Plafond relevé en récidive pour certaines contraventions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Jours-amende : le montant maximal usuel par jour (principe) :',
     options: ['100 €', '500 €', '1000 €'],
@@ -627,7 +627,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Plafond légal courant par jour.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Jours-amende : nombre de jours maximal usuel (principe) :',
     options: ['90', '180', '360'],
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Fixé par le juge dans la limite légale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La classification (crime/délit/contravention) influe sur :',
     options: [
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Modes de poursuite et organisation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Dégradation légère d’un abribus (dommage mineur) : juridiction ?',
@@ -656,7 +656,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Contravention selon l’évaluation du dommage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Vol simple d’un téléphone dans un café, sans violence :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -664,7 +664,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Vol simple → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Vol avec arme et blessure grave de la victime :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -672,7 +672,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Circonstances aggravantes → criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Blanchiment d’argent (cas courant sans crime connexe) :',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Délit économique/financier.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Tentative de vol à main armée (non aboutie) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Tentative de crime punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence territoriale',
     question:
         'En principe, la juridiction territorialement compétente est celle :',
@@ -701,7 +701,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Règles de compétence territoriale pénale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question:
         'Certaines matières (terrorisme, trafic de stupéfiants en bande organisée…) :',
@@ -714,7 +714,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétences spécialisées prévues par la loi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, qui participe au vote ?',
     options: [
@@ -726,7 +726,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Collégialité mixte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures',
     question:
         'La détention à domicile sous surveillance électronique (DDSE) est :',
@@ -739,7 +739,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Substitut/ aménagement de l’emprisonnement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stages',
     question: 'Des “peines de stage” peuvent viser :',
     options: [
@@ -751,7 +751,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Divers stages prévus par les textes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Blessures involontaires avec ITT de 15 jours par imprudence simple :',
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Seuil d’ITT et faute → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Outrage simple à une personne dépositaire de l’autorité publique :',
@@ -769,7 +769,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel (Code pénal).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Usage de faux document administratif (premiers faits) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -777,7 +777,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte à l’autorité publique et à la confiance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'Injure publique simple :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -785,7 +785,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Régime spécial de la presse.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'La classification influe sur la durée maximale de détention provisoire :',
@@ -794,7 +794,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Durées et seuils varient selon la gravité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'La classification oriente aussi les compétences d’instruction (juge d’instruction) :',
@@ -804,7 +804,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Information judiciaire plus fréquente pour les crimes/délits complexes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'La réclusion criminelle à perpétuité relève :',
     options: [
@@ -816,7 +816,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Peine criminelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions',
     question: 'La CRPC (“plaider-coupable”) est possible :',
     options: [
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Procédure applicable à des délits déterminés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Recel d’un bien volé (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -836,7 +836,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction autonome correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Violences volontaires avec ITT de 10 jours sans arme ni circonstance aggravante :',
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Seuil d’ITT > 8 jours → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Vol simple commis de nuit dans un lieu habité avec effraction :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -853,7 +853,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Aggravations pouvant faire basculer au criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Complicité',
     question: 'La complicité de contravention :',
     options: [
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Spécificité du droit contraventionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question: 'Contravention : la juridiction statue en principe avec :',
     options: [
@@ -877,7 +877,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Tribunal de police (juge unique).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Un délit commis sur Internet : compétence territoriale possible :',
@@ -890,7 +890,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Multiplicité de rattachements en cyberdélinquance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'La confiscation d’un bien est :',
     options: [
@@ -902,7 +902,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Selon texte d’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Conduite après usage de stupéfiants (premiers faits, hors aggravation) :',
@@ -911,7 +911,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel routier.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Conduite avec 0,25 mg/l d’air expiré (0,5 g/l sang), première constatation :',
@@ -920,7 +920,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Seuil contraventionnel (hors récidive/ circonstances).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Conduite avec 0,50 mg/l d’air expiré (1,0 g/l sang) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Seuil délictuel dépassé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Terrorisme : compétence :',
     options: [
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Organisation centralisée (PNAT, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La publicité des débats en cour d’assises est :',
     options: [
@@ -952,7 +952,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Huis clos possible selon cas (mineurs, ordre public…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'Le secret du vote en cour d’assises :',
     options: [
@@ -964,7 +964,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Jurés et magistrats votent au secret.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'L’interdiction d’exercer une activité professionnelle est :',
     options: [
@@ -976,7 +976,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Selon les textes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Port d’arme prohibée (couteau) sans motif légitime :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -984,7 +984,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte à l’ordre public.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions routières',
     question:
         'Grand excès de vitesse (≥ 50 km/h au-dessus) première constatation :',
@@ -994,7 +994,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Contravention de 5e classe (mesures administratives associées).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions routières',
     question: 'Grand excès de vitesse en récidive dans un délai légal :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1002,7 +1002,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Récidive légale → correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Entrave à la circulation sans dommage humain (manifestation non déclarée) :',
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte à l’ordre public (textes spéciaux).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Incendie volontaire d’un véhicule sans victime ni propagation :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1019,7 +1019,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Destructions volontaires par incendie → criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question: 'Qui juge la “réception d’un bien volé” (recel) ?',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -1027,7 +1027,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'Le jury de cour d’assises prête serment :',
     options: ['Vrai', 'Faux'],
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Serment avant de siéger et de juger.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction commise à bord d’un avion français en vol international :',
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Règles de compétence extraterritoriale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Trafic de stupéfiants en bande organisée :',
     options: [
@@ -1061,7 +1061,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Organisation spécialisée, peines correctionnelles très élevées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Harcèlement moral au travail (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1069,7 +1069,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel (Code pénal/Code du travail).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Escroquerie à la carte bancaire (sommes modestes, sans bande organisée) :',
@@ -1078,7 +1078,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Infraction patrimoniale correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, le président et les assesseurs votent :',
     options: [
@@ -1090,7 +1090,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Un seul collège de vote.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction du territoire français (ITF) :',
     options: [
@@ -1102,7 +1102,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Prévue pour certaines infractions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'La contrainte pénale (ou suivi renforcé) appartient :',
     options: ['Aux mesures d’enquête', 'Aux peines', 'Aux mesures civiles'],
@@ -1110,7 +1110,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Peine alternative/ aménagement, selon régime en vigueur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'Délais de prescription en matière de presse sont :',
     options: [
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Règles spéciales (ex. délais brefs).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence matérielle',
     question: 'Les juridictions de proximité pénale ont été :',
     options: [
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Évolutions organisationnelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Faux et usage de faux en écriture privée (cas simple) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Agression sexuelle sans pénétration, majeure sur majeure, hors circonstances aggravantes :',
@@ -1151,7 +1151,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel (atteinte sexuelle ≠ viol).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Viol (pénétration sexuelle imposée) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte sexuelle la plus grave → criminel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'L’appel d’un jugement correctionnel est porté devant :',
     options: ['Cour d’assises', 'Cour d’appel', 'Cour de cassation'],
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Double degré de juridiction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'Le pourvoi contre un arrêt d’assises se fait devant :',
     options: ['Cour d’appel', 'Cour de cassation', 'Conseil d’État'],
@@ -1175,7 +1175,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Contrôle de droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, la peine est votée :',
     options: [
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Même collège délibérant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question: 'Infraction commise à bord d’un navire français en haute mer :',
     options: [
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Rattachement pavillon.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Crimes commis par un mineur de 16 ans :',
     options: [
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Organisation spécifique (juridictions pour mineurs).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction d’entrer en contact avec la victime est :',
     options: [
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Peine restrictive de droits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Introduction dans un domicile par ruse de jour sans violence ni effraction (vol) :',
@@ -1232,7 +1232,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Aggravation possible, mais reste correctionnel selon faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Administration de substances nuisibles sans ITT :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1240,7 +1240,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte à l’intégrité physique (selon résultats).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Classes',
     question: 'Une contravention de 3e classe est jugée :',
     options: [
@@ -1252,7 +1252,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Contraventions → tribunal de police.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Infractions de presse',
     question: 'Diffamation envers un particulier :',
     options: [
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Droit de la presse.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Traite des êtres humains :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1272,7 +1272,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte grave à la dignité humaine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En assises, l’acquittement est adopté :',
     options: [
@@ -1284,7 +1284,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Mêmes règles de majorité que la culpabilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La présence d’un avocat est obligatoire en cour d’assises :',
     options: ['Vrai', 'Faux'],
@@ -1292,7 +1292,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Garanties procédurales renforcées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction de paraître dans certains lieux :',
     options: ['Peine complémentaire', 'Mesure civile', 'Contravention'],
@@ -1304,7 +1304,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   // =========================
   //        DIFFICILE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question:
         'Pour certaines infractions commises contre des mineurs, la prescription peut courir :',
@@ -1317,7 +1317,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Point de départ retardé par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dérogations',
     question: 'Infractions de presse : délais de prescription :',
     options: [
@@ -1329,7 +1329,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Régime dérogatoire (délais brefs).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour criminelle',
     question: 'La cour criminelle départementale statue :',
     options: [
@@ -1341,7 +1341,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Composition collégiale de magistrats.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour criminelle',
     question: 'La cour criminelle connaît en principe des crimes punis :',
     options: ['De 10 ans', 'De 15 ou 20 ans', 'Uniquement de la perpétuité'],
@@ -1349,7 +1349,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Périmètre légal (hors exceptions).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En assises, le vote sur la peine doit respecter :',
     options: ['Une majorité simple', 'Une majorité qualifiée', 'L’unanimité'],
@@ -1357,7 +1357,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Règles identiques à la culpabilité (selon degré).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'L’“information judiciaire” est :',
     options: [
@@ -1369,7 +1369,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Surtout pour crimes/délits complexes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Crimes contre l’humanité : juridiction :',
     options: [
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétence criminelle spécifique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction commise par un Français à l’étranger contre un Français :',
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Compétences extraterritoriales sous conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction commise à l’étranger par un étranger contre un Français :',
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Conditions de recevabilité/ plainte / double incrimination.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: '“Crime flagrant” :',
     options: [
@@ -1419,7 +1419,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Mode d’enquête spécifique (flagrance).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La détention provisoire est plus encadrée pour :',
     options: ['Les contraventions', 'Les délits', 'Les crimes'],
@@ -1428,7 +1428,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Seuils et durées maximales plus élevées mais fortement encadrées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En assises, en cas de doute sur la culpabilité :',
     options: [
@@ -1440,7 +1440,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Principe de présomption d’innocence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Interdiction des droits civiques (vote, éligibilité…) :',
     options: ['Peine complémentaire', 'Mesure de sûreté', 'Contravention'],
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Possible en correctionnel/criminel selon texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Homicide involontaire avec violation délibérée d’une obligation de prudence (alcool + vitesse) :',
@@ -1457,7 +1457,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Correctionnel avec aggravation de la peine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Vol avec arme en bande organisée avec enlèvement de la victime :',
@@ -1466,7 +1466,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Multiples aggravations → criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Séquestration de 8 heures sans motifs légitimes :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Atteinte grave à la liberté → criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour criminelle',
     question:
         'En cour criminelle départementale, le nombre de magistrats est :',
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Collégialité de cinq magistrats.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La participation du public en cour d’assises est :',
     options: ['Active', 'Par tirage au sort de jurés', 'Inexistante'],
@@ -1491,7 +1491,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Jury populaire tiré au sort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infraction continue commise sur plusieurs ressorts (escroquerie en série) :',
@@ -1505,7 +1505,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Règles cumulatives de compétence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question:
         'En assises, si la majorité requise n’est pas atteinte pour la culpabilité :',
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Le doute profite à l’accusé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question:
         'Violences volontaires ayant entraîné une mutilation permanente :',
@@ -1523,7 +1523,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Gravité des conséquences corporelles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Spéciales',
     question: 'Association de malfaiteurs en vue d’un crime :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1531,7 +1531,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Finalité criminelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'En matière criminelle, l’instruction par un juge d’instruction est :',
@@ -1545,7 +1545,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Instruction criminelle obligatoire (sauf régimes dérogatoires).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'La peine de sûreté (période incompressible de réclusion) :',
     options: ['Contravention', 'Délit', 'Criminel'],
@@ -1553,7 +1553,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Attachée aux peines criminelles lourdes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Corruption d’agent public (corruption active) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Atteinte à la probité publique → correctionnel (peines élevées).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Trafic d’armes à feu en bande organisée :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1570,7 +1570,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Gravité et organisation → criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Aide à l’entrée/ séjour irrégulier en bande organisée, avec mise en danger :',
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Aggravations pouvant relever du criminel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Infractions boursières commises sur une place étrangère impactant un marché français :',
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // --- Suite après 'territoriale' ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question: 'En cour d’assises, le président a-t-il une voix prépondérante ?',
     options: ['Oui', 'Non'],
@@ -1605,7 +1605,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ JURIDICTIONS / COMPOSITION ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour d’assises',
     question: 'Combien de jurés populaires siègent en première instance ?',
     options: ['3', '6', '9'],
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'En première instance : 6 jurés + 3 magistrats professionnels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour d’assises',
     question: 'Combien de jurés populaires siègent en appel ?',
     options: ['6', '9', '12'],
@@ -1622,7 +1622,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'En appel : 9 jurés + 3 magistrats professionnels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cour d’assises',
     question: 'La cour d’assises juge principalement :',
     options: ['Les contraventions', 'Les délits', 'Les crimes'],
@@ -1631,7 +1631,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Compétence criminelle de principe (infractions les plus graves).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tribunal correctionnel',
     question: 'Le tribunal correctionnel statue en principe en formation :',
     options: ['Collégiale', 'Juge unique', 'Avec jurés populaires'],
@@ -1640,7 +1640,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Formation collégiale de principe ; le juge unique est possible pour certains délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tribunal de police',
     question: 'Le tribunal de police statue en principe avec :',
     options: ['Un juge unique', 'Trois juges', 'Des jurés'],
@@ -1649,7 +1649,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Juridiction compétente pour les contraventions, siégeant à juge unique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question: 'Une contravention de 5e classe relève en principe :',
     options: [
@@ -1662,7 +1662,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Toutes les contraventions, y compris la 5e classe, relèvent du tribunal de police.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question:
         'Un homicide involontaire commis par imprudence à la circulation est en principe :',
@@ -1671,7 +1671,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Il relève du tribunal correctionnel (délit).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Compétence',
     question: 'Un viol est en principe jugé par :',
     options: ['Tribunal de police', 'Tribunal correctionnel', 'Cour d’assises'],
@@ -1681,7 +1681,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ TERRITORIALE / LIEU DE L’INFRACTION ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'Une escroquerie réalisée en ligne depuis l’étranger, avec des victimes en France, peut-elle être poursuivie en France ?',
@@ -1695,7 +1695,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Compétence possible si un élément constitutif ou le résultat a lieu en France.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Territoriale',
     question:
         'En cas d’infraction commise dans plusieurs ressorts, est compétent :',
@@ -1711,7 +1711,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ MINEURS ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineurs',
     question: 'Qui juge en principe un délit commis par un mineur ?',
     options: [
@@ -1724,7 +1724,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Le tribunal pour enfants juge les délits des mineurs (procédure et peines adaptées).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mineurs',
     question: 'Un crime commis par un mineur relève :',
     options: [
@@ -1739,7 +1739,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ PRESCRIPTION (rappels généraux sûrs) ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Prescription',
     question: 'La prescription de l’action publique court en principe :',
     options: [
@@ -1754,7 +1754,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ PROCÉDURE / MODES DE POURSUITE ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La composition pénale peut viser :',
     options: [
@@ -1766,7 +1766,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Mesure proposée par le procureur pour certaines infractions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question: 'La CRPC (plaider-coupable) concerne :',
     options: ['Les délits', 'Les crimes', 'Toutes les contraventions'],
@@ -1775,7 +1775,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Procédure de comparution sur reconnaissance préalable de culpabilité : uniquement pour des délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Procédure',
     question:
         'L’ordonnance pénale est un mode de poursuite possible notamment pour :',
@@ -1791,7 +1791,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ PEINES / PRINCIPES ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Le sursis probatoire est :',
     options: [
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Sursis assorti d’obligations (soins, travail, indemnisation, etc.), suivi par le SPIP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Peines',
     question: 'Un stage de sensibilisation à la sécurité routière est :',
     options: [
@@ -1819,7 +1819,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ EXEMPLES / MISES EN SITUATION ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Tapage nocturne (réitéré) avec constat par procès-verbal : relève en principe de…',
@@ -1829,7 +1829,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Les troubles de voisinage/tapage relèvent généralement du régime contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Vol à l’étalage simple (faible valeur, sans circonstance aggravante) :',
@@ -1839,7 +1839,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Le vol est un délit sauf aggravations (bande organisée, armes, violences…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question:
         'Conduite sous l’empire d’un état alcoolique délictuel (taux délit) :',
@@ -1849,7 +1849,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Les délits routiers (seuils délictueux) relèvent du tribunal correctionnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en situation',
     question: 'Harcèlement moral au travail (hors cas contraventionnels) :',
     options: ['Contravention', 'Délit', 'Crime'],
@@ -1860,7 +1860,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ APPEL / COUR D’APPEL ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appel',
     question: 'Les arrêts de la cour d’assises sont susceptibles :',
     options: ['D’opposition', 'D’appel', 'Uniquement de pourvoi en cassation'],
@@ -1869,7 +1869,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Possibilité d’appel des arrêts d’assises devant une autre cour d’assises d’appel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appel',
     question: 'Les jugements du tribunal correctionnel sont susceptibles :',
     options: ['D’appel', 'Uniquement de pourvoi', 'Jamais de recours'],
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ ÉLÉMENTS GÉNÉRAUX / RAPPELS ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Gravité',
     question: 'Classement par gravité croissante :',
     options: [
@@ -1892,7 +1892,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
     explanation: 'Ordre légal : contravention < délit < crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Juridictions spécialisées',
     question:
         'Des juridictions/compétences spécialisées existent (presse, terrorisme, mineurs, éco-financier…).',
@@ -1904,7 +1904,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
   ),
 
   // ------ AUTRES POINTS CIBLES ------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vote',
     question:
         'En cour d’assises, la culpabilité est acquise si la majorité requise est atteinte lors du vote à bulletins secrets.',
@@ -1914,7 +1914,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Le vote se fait à bulletins secrets ; une majorité qualifiée est exigée par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définitions',
     question: 'Une peine complémentaire :',
     options: [
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionsClassificationInfractions = [
         'Suspension de permis, interdictions, confiscations… selon textes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exécution',
     question:
         'La DDSE (détention à domicile sous surveillance électronique) est :',
@@ -2185,7 +2185,7 @@ class _QuizClassificationInfractionsPageState
 
       // 🎨 Couleurs ANSI : vert pour bonne réponse, rouge pour mauvaise
       final color = isCorrect ? '\x1B[32m' : '\x1B[31m'; // vert ou rouge
-      final reset = '\x1B[0m';
+      const reset = '\x1B[0m';
 
       debugPrint(
         '$color📝 Réponse #${res['id']} sauvegardée (${isCorrect ? "✔️  Correcte" : "❌ Incorrecte"})$reset',
@@ -2338,7 +2338,7 @@ class _QuizClassificationInfractionsPageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2528,7 +2528,7 @@ class _QuizClassificationInfractionsPageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2680,7 +2680,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3208,10 +3207,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);

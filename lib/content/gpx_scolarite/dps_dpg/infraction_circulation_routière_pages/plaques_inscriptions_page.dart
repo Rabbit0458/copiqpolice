@@ -123,18 +123,18 @@ class PlaquesInscriptionsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Les articles "),
+                TextSpan(text: "Les articles "),
                 TextSpan(
                   text:
                       "L. 317-2 I, L. 317-3 I, L. 317-4 I et L. 317-4-1 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " définissent et répriment les délits relatifs aux plaques et inscriptions apposées sur les véhicules.",
                 ),
@@ -150,134 +150,134 @@ class PlaquesInscriptionsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Tout véhicule, au moment de sa fabrication, est doté de plaques et inscriptions apposées par le constructeur "
                 "(marque, type, cylindrée, numéro de série, poids, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Dès la première mise en circulation, l’acquéreur doit faire installer des plaques reproduisant le numéro "
                 "d’immatriculation inscrit sur le certificat d’immatriculation.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références réglementaires : "),
+                TextSpan(text: "Références réglementaires : "),
                 TextSpan(
                   text:
                       "articles R. 317-8, R. 317-12 et R. 322-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Usage de plaque/inscription fausse (fausses plaques)",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 317-2 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : faire usage d’une plaque ou d’une inscription exigée portant un numéro, un nom ou un domicile faux ou supposé.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il s’agit de l’utilisation de « fausses plaques » : apposition ou usage de plaques/inscriptions comportant des indications "
                 "ne correspondant pas au certificat d’immatriculation.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Circuler sans plaques + fausse déclaration"),
+              _SubTitle("B) Circuler sans plaques + fausse déclaration"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 317-3 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : faire circuler un véhicule sans plaques/inscriptions exigées et, en outre, déclarer un numéro/nom/domicile autre que le sien ou celui du propriétaire.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Sont visés les véhicules démunis de plaques pour lesquels le conducteur déclare de fausses informations "
                 "concernant l’identification du véhicule ou du propriétaire.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Plaque/inscription ne correspondant pas à la qualité du véhicule ou de l’utilisateur",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 317-4 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : mettre en circulation un véhicule muni d’une plaque ou d’une inscription ne correspondant pas à la qualité du véhicule ou à celle de l’utilisateur.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Utilisation de plaques et documents administratifs d’un véhicule accidenté pour mettre en service un autre véhicule non assuré ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 15 février 1978)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Usurpation de plaque (numéro attribué à un autre véhicule)",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 317-4-1 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : mettre en circulation ou faire circuler un véhicule muni d’une plaque portant un numéro attribué à un autre véhicule, "
                       "dans des circonstances ayant déterminé ou pouvant déterminer des poursuites pénales contre un tiers.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il s’agit notamment d’utiliser un numéro d’immatriculation que l’on sait déjà attribué à un autre véhicule, "
                 "afin de commettre une ou plusieurs infractions susceptibles d’entraîner des poursuites à l’encontre du titulaire "
                 "du certificat d’immatriculation correspondant à ce numéro.",
@@ -326,67 +326,67 @@ class PlaquesInscriptionsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues"),
+            children: const [
+              _SubTitle("Peines encourues"),
               _Paragraph.rich([
-                const TextSpan(text: "Délits prévus par "),
+                TextSpan(text: "Délits prévus par "),
                 TextSpan(
                   text:
                       "L. 317-2 I, L. 317-3 I et L. 317-4 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : "),
-                const TextSpan(
+                TextSpan(text: " : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 3 750 € d’amende.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Délit prévu par "),
+                TextSpan(text: "Délit prévu par "),
                 TextSpan(
                   text: "L. 317-4-1 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : "),
-                const TextSpan(
+                TextSpan(text: " : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 30 000 € d’amende.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Rappel",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La complicité est punissable au regard de l’infraction consommée, comme au regard de l’infraction tentée. "
                         "Elle suppose un fait matériel de complicité prévu par la loi et l’intention de s’associer à l’action de l’auteur principal.",
@@ -429,10 +429,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -497,7 +497,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -540,7 +540,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -602,7 +602,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -634,7 +634,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -647,7 +647,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

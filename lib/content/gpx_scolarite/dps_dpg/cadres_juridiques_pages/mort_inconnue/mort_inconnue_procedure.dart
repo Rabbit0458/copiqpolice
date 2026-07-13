@@ -19,7 +19,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
     final Color accent = isDark
         ? const Color(0xFF64B5F6)
         : const Color(0xFF1565C0);
@@ -63,7 +63,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          _Paragraph.rich([
+          const _Paragraph.rich([
             TextSpan(
               text:
                   'Ce chapitre présente les autorités habilitées à intervenir lorsqu’une '
@@ -76,7 +76,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
               text: 'articles 74 et 80-4 du Code de procédure pénale',
               style: TextStyle(color: _lawColor, fontWeight: FontWeight.w700),
             ),
-            const TextSpan(
+            TextSpan(
               text:
                   ', ainsi que l’articulation entre enquête dirigée par le parquet et '
                   'information judiciaire pour recherche des causes de la mort.',
@@ -90,7 +90,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph(
                 'Plusieurs intervenants peuvent être compétents dans le cadre de la '
                 'recherche des causes de la mort : les magistrats (procureur de la '
@@ -98,8 +98,8 @@ class MortInconnueProcedurePage extends StatelessWidget {
                 'judiciaire qui agissent, selon les cas, par délégation du parquet ou '
                 'sur commission rogatoire.',
               ),
-              const SizedBox(height: 8),
-              const _SubTitle('2.1.1 — Les magistrats'),
+              SizedBox(height: 8),
+              _SubTitle('2.1.1 — Les magistrats'),
             ],
           ),
           const SizedBox(height: 16),
@@ -112,7 +112,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
             titleColor: textMain,
             children: [
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'En application du deuxième alinéa de l’article 74 du Code de '
                       'procédure pénale, le procureur de la République, avisé '
@@ -154,8 +154,8 @@ class MortInconnueProcedurePage extends StatelessWidget {
                     'dessaisir le service initialement saisi pour confier l’enquête à un autre '
                     'officier ou agent de police judiciaire de son choix ;',
               ),
-              _BulletPoint.rich([
-                const TextSpan(
+              const _BulletPoint.rich([
+                TextSpan(
                   text:
                       'requérir l’ouverture d’une information judiciaire pour recherche des '
                       'causes de la mort : dans ce cas, ',
@@ -164,7 +164,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
                   text: 'le juge d’instruction',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' reçoit compétence pour agir sur le fondement de l’article 80-4 du '
                       'Code de procédure pénale.',
@@ -180,7 +180,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text:
@@ -194,27 +194,27 @@ class MortInconnueProcedurePage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', qui précise que le procureur de la République peut requérir '
                       'une telle information. ',
                 ),
                 TextSpan(
                   text: 'L’article 80-4 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' organise ensuite les pouvoirs du juge d’instruction dans ce cadre '
                       'particulier.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le deuxième alinéa de l’article 80-4 prévoit que les membres de la '
                       'famille ou les proches de la personne décédée peuvent se constituer '
@@ -226,7 +226,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
                       'recherche des causes de la mort',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', cette prérogative demeurant réservée au procureur de la République. '
                       'En cas d’inaction du parquet, la famille conserve toutefois la '
@@ -234,9 +234,9 @@ class MortInconnueProcedurePage extends StatelessWidget {
                       'invoquant la commission d’une infraction déterminée.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'L’information ouverte sur le fondement des articles 74 et 80-4 du '
                       'Code de procédure pénale présente un caractère particulier : ',
@@ -245,14 +245,14 @@ class MortInconnueProcedurePage extends StatelessWidget {
                   text: 'elle est exorbitante du droit commun',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' car elle a pour seul but la recherche des causes de la mort et ne '
                       'saisit pas le juge de l’ensemble des faits. Elle ne met pas, à ce '
                       'stade, en mouvement l’action publique.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text:
@@ -261,21 +261,21 @@ class MortInconnueProcedurePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: '(article 80-4 du Code de procédure pénale)',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', sous une réserve importante : la durée des interceptions de '
                       'correspondances émises par la voie des communications électroniques '
                       'est limitée à deux mois renouvelables.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le juge d’instruction conserve par ailleurs la faculté de déléguer, '
                       'par commission rogatoire, à un officier de police judiciaire les actes '
@@ -294,7 +294,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph(
                 'L’officier de police judiciaire, ou l’agent de police judiciaire agissant '
                 'sous son contrôle, peut se voir déléguer les pouvoirs du procureur de la '
@@ -302,9 +302,9 @@ class MortInconnueProcedurePage extends StatelessWidget {
                 'investigations de terrain (constatations, auditions, réquisitions, '
                 'examens techniques) dans le cadre fixé par le parquet.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Lorsque le juge d’instruction est saisi d’une information pour '
                       'recherche des causes de la mort, l’officier de police judiciaire peut '
@@ -314,7 +314,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
                   text: 'commission rogatoire',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       '. Il agit alors au nom du juge d’instruction, dans les limites de la '
                       'mission définie par la commission, et doit lui rendre compte des actes '
@@ -326,7 +326,7 @@ class MortInconnueProcedurePage extends StatelessWidget {
           const SizedBox(height: 16),
 
           // ====================== NOTA FINAL ===============================
-          _NotaBox(
+          const _NotaBox(
             bodySpans: [
               TextSpan(
                 text:
@@ -373,10 +373,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -441,7 +441,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -484,7 +484,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -533,7 +533,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     Widget child;
 
@@ -576,10 +576,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -591,13 +590,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -610,13 +608,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

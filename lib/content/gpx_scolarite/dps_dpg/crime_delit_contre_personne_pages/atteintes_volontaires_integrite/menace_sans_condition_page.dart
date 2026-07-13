@@ -110,16 +110,16 @@ class MenaceSansConditionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime la menace de commettre un crime ou un délit contre les personnes.",
                 ),
@@ -135,178 +135,178 @@ class MenaceSansConditionPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Menace d’un crime ou d’un délit dont la tentative est punissable",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Est considéré comme une menace « tout acte d’intimidation qui inspire la crainte d’un mal » — ",
                 ),
                 TextSpan(
                   text: "Cass. crim., 11 juin 1937",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La menace doit porter sur la commission d’un crime ou d’un délit contre les personnes "
                 "dont la tentative est punissable. Le texte exclut les menaces de commettre des violences, "
                 "dont la tentative n’est pas réprimée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En pratique, si la menace vise des violences (tentative non punissable), on peut viser la contravention de ",
                   ),
                   TextSpan(
                     text: "l’article R. 623-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Dirigée contre une personne"),
-              const _Paragraph(
+              _SubTitle("B) Dirigée contre une personne"),
+              _Paragraph(
                 "La menace doit être dirigée contre une ou plusieurs personnes. "
                 "La menace « à la cantonade » ne constitue pas l’infraction (ex. menacer de tirer sur quiconque toucherait à une voiture).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle peut être :\n"
                 "• directe (adressée à la personne visée),\n"
                 "• indirecte (émise en présence de tiers, transmise/rapportée à l’intéressé).",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un moyen déterminé"),
-              const _Paragraph(
+              _SubTitle("C) Un moyen déterminé"),
+              _Paragraph(
                 "Pour être punissable, la menace doit être :\n"
                 "• soit réitérée,\n"
                 "• soit matérialisée (écrit, image ou objet).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Menace réitérée"),
-              const _Paragraph(
+              _SubTitle("1) Menace réitérée"),
+              _Paragraph(
                 "La réitération consiste en la répétition de la menace : au moins deux fois.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les menaces doivent être réitérées à l’égard de la même personne — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 24 octobre 2007 (n°07-83.726)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Menaces réitérées au cours d’une seule et même phrase dès lors qu’elles ont été répétées — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 26 février 2002",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La répétition de propos suffit à caractériser la réitération et il n’existe pas de délai maximum — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 4 janvier 2017",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La gestuelle seule n’est pas une matérialisation : pointer le doigt comme une arme en disant « pan… » ne suffit pas — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 22 septembre 2015 (n°14-82.435)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Menace matérialisée"),
-              const _Paragraph(
+              _SubTitle("2) Menace matérialisée"),
+              _Paragraph(
                 "La matérialisation peut se faire par un écrit, une image ou tout autre objet. "
                 "La réitération n’est alors pas nécessaire : la matérialisation vaut « répétition » de la pensée.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Écrit : lettre, fax, inscription sur un mur, support informatique, etc.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Image : dessin (ex. tête de mort) ou toute représentation inspirant la crainte d’une atteinte à la personne.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Objet : par exemple un cercueil miniature, des figurines transpercées d’aiguilles, etc.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Déverser de l’essence sur une victime en évoquant la possibilité d’y mettre le feu peut constituer une matérialisation suffisante — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 9 juin 2004",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -341,38 +341,38 @@ class MenaceSansConditionPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-17 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsqu’il s’agit d’une menace de mort.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-18-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (deux degrés) :"),
+                TextSpan(text: " (deux degrés) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Premier degré : lorsque les menaces sont commises par le conjoint, concubin ou partenaire PACS.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Second degré : lorsque les menaces de mort sont commises par le conjoint, concubin ou partenaire PACS.",
               ),
@@ -400,9 +400,9 @@ class MenaceSansConditionPage extends StatelessWidget {
                 const TextSpan(
                   text: "6 mois d’emprisonnement et 7 500 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-17 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -421,9 +421,9 @@ class MenaceSansConditionPage extends StatelessWidget {
                 const TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-17 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -440,9 +440,9 @@ class MenaceSansConditionPage extends StatelessWidget {
                   ),
                 ),
                 const TextSpan(text: "jusqu’à 5 ans et 75 000 € — "),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-18-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -453,40 +453,40 @@ class MenaceSansConditionPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(text: "Peines applicables prévues par "),
+              const _Paragraph.rich([
+                TextSpan(text: "Peines applicables prévues par "),
                 TextSpan(
                   text: "l’article 222-18-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
               const _SubTitle("Tentative & complicité"),
               const _BulletPoint(text: "Tentative : NON."),
-              _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+              const _Paragraph.rich([
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -524,10 +524,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -592,7 +592,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -635,7 +635,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -697,7 +697,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -708,10 +708,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -723,13 +722,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -742,13 +740,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -110,30 +110,30 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit la violation des correspondances émises par la voie électronique (commise par un particulier).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : prévoit la répression de cette infraction.",
                 ),
               ]),
@@ -148,25 +148,25 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Des correspondances émises, transmises ou reçues par la voie électronique",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le texte protège les correspondances « dématérialisées » (sans support tangible), "
                 "par exemple : appels téléphoniques, courrier électronique, messages électroniques.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il vise les correspondances en cours de transmission ou parvenues à destination mais non encore appréhendées "
                 "par leur destinataire. Une fois la correspondance ouverte/prise de connaissance, elle perd ce régime spécifique "
                 "et peut relever d’autres qualifications (ex. vol de données copiées, accès/maintien frauduleux dans un STAD).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "DÉFINITION LÉGALE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le courrier électronique est défini comme « tout message, sous forme de texte, de voix, de son ou d’image, "
                         "envoyé par un réseau public de communications, stocké sur un serveur du réseau ou dans l’équipement terminal "
@@ -175,7 +175,7 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
                   TextSpan(
                     text:
                         "article 1er de la loi n° 2004-575 du 21 juin 2004 (LCEN)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
@@ -183,113 +183,113 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un acte matériel d’atteinte"),
-              const _Paragraph(
+              _SubTitle("B) Un acte matériel d’atteinte"),
+              _Paragraph(
                 "L’infraction est constituée par l’un des actes suivants : intercepter, détourner, utiliser, divulguer "
                 "ou installer des appareils permettant ces atteintes.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Intercepter"),
-              const _Paragraph(
+              _SubTitle("1) Intercepter"),
+              _Paragraph(
                 "Intercepter consiste à « prendre au passage » ce qui est destiné à autrui, pendant le cours de la transmission, "
                 "au moyen d’un matériel quelconque. Il n’est pas nécessaire que l’auteur prenne connaissance du contenu pour que "
                 "l’interception soit réprimée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "JURISPRUDENCE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’interception suppose la captation pendant la transmission (",
                   ),
                   TextSpan(
                     text: "Cass. crim., 14 avril 1999",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "EXEMPLE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Interception d’échanges radio entre différentes patrouilles de police (",
                   ),
                   TextSpan(
                     text: "C.A. Paris, 15 septembre 2005",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Détourner"),
-              const _Paragraph(
+              _SubTitle("2) Détourner"),
+              _Paragraph(
                 "Détourner consiste à modifier le cours de la transmission, notamment par l’installation d’un dispositif permettant "
                 "une dérivation de la correspondance vers un point choisi par l’auteur. Le détournement peut viser des messages en attente "
                 "d’être lus par le destinataire (ils ne sont plus « en cours de transmission », mais pas encore appréhendés).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "JURISPRUDENCE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Détournement retenu à l’encontre d’un employeur accédant aux courriers électroniques d’un salarié "
                         "avant que celui-ci en ait eu connaissance (",
                   ),
                   TextSpan(
                     text: "C.A. Pau, 24 novembre 2005",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) Utiliser"),
-              const _Paragraph(
+              _SubTitle("3) Utiliser"),
+              _Paragraph(
                 "Utiliser consiste à se servir de la correspondance comme si l’on en était le destinataire (ex. effacer un courriel "
                 "dont on n’est pas destinataire, ou le transférer à un tiers, sans qualité pour en connaître).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4) Divulguer"),
-              const _Paragraph(
+              _SubTitle("4) Divulguer"),
+              _Paragraph(
                 "Divulguer consiste à révéler à un tiers le contenu d’une correspondance qui ne vous est pas destinée. "
                 "La divulgation peut faire suite à une interception (ex. faire écouter une conversation enregistrée, transmettre un courriel intercepté).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "5) Installer un dispositif permettant l’interception",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’installation consiste à mettre en œuvre un dispositif (matériel ou logiciel) permettant d’intercepter, détourner, "
                 "utiliser ou divulguer des correspondances émises par la voie électronique.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Même sans précision légale, la personne réalisant l’installation peut être considérée comme auteur de la violation "
                 "du secret des correspondances, y compris si elle agit pour le compte d’un tiers qui recueille les informations interceptées.",
               ),
@@ -304,27 +304,27 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’infraction suppose la mauvaise foi : l’auteur agit en toute connaissance de cause en violant le secret des correspondances.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Cour de cassation définit la « mauvaise foi » comme la connaissance que les correspondances ne lui étaient pas destinées (",
                 ),
                 TextSpan(
                   text: "Cass. crim., 15 mai 1990",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
                   TextSpan(
@@ -345,19 +345,19 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-15 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque les faits sont commis par le conjoint, le concubin ou le partenaire lié à la victime par un pacte civil de solidarité (PACS).",
               ),
@@ -372,79 +372,79 @@ class ViolationCorrespondancesVoieElectroniquePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
 
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-15 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Qualification aggravée (conjoint/concubin/PACS) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "2 ans d’emprisonnement et 60 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-15 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale possible via "),
+                TextSpan(text: "Responsabilité pénale possible via "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (responsabilité généralisée depuis le 31 décembre 2005, notamment suite à l’article 54 de la loi n° 2004-204 du 9 mars 2004).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation, instructions données).",
                 ),
@@ -485,10 +485,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -553,7 +553,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -596,7 +596,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -658,7 +658,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -690,7 +690,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -703,7 +703,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

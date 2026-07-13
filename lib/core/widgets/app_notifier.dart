@@ -205,7 +205,6 @@ class AppNotifier {
     _dismiss();
 
     final overlay = Overlay.of(context, rootOverlay: true);
-    if (overlay == null) return;
 
     _entry = OverlayEntry(
       builder: (_) => _NotifierBanner(

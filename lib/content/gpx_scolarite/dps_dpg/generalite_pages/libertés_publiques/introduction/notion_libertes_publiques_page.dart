@@ -35,7 +35,7 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF00897B)
         : const Color(0xFF00796B);
@@ -121,7 +121,7 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La tendance contemporaine est de superposer "libertés publiques" et '
                 '"droits de l’Homme". Pourtant, la notion de libertés publiques relève '
                 'd’abord du droit : c’est une catégorie de droits de l’Homme intégrée '
@@ -220,7 +220,7 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'La liberté, dans son sens le plus large, est une notion complexe qui '
                 'intéresse autant la philosophie que la politique, la culture, l’économie '
                 'ou encore les sciences humaines. Le polycopié la définit comme le pouvoir '
@@ -252,8 +252,8 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'La notion de libertés publiques présente deux facettes complémentaires :\n\n',
                 ),
@@ -261,7 +261,7 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                   text: '• La notion de liberté : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'elle renvoie aux choix individuels, aux convictions, à la vie privée.\n',
                 ),
@@ -269,7 +269,7 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                   text: '• Le qualificatif "publiques" : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'il souligne l’intervention de l’État, qui reconnaît, encadre et '
                       'protège ces libertés par le biais de normes juridiques.',
@@ -390,10 +390,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -436,7 +436,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -470,7 +470,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -479,7 +479,7 @@ class _BulletPoint extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.95);
+        : const Color(0xFF1F1F1F).withValues(alpha: .95);
 
     return Padding(
       padding: const EdgeInsets.only(left: 4, bottom: 6),
@@ -525,7 +525,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -550,7 +550,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -585,7 +585,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .75 : .96),
+        color: bgColor.withValues(alpha: isDark ? .75 : .96),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -598,7 +598,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

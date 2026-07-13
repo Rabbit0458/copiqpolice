@@ -79,7 +79,7 @@ class _DetailsPageState extends State<DetailsPage> {
     if (diff.inHours < 24) return '${diff.inHours} h';
     if (diff.inDays < 7) return '${diff.inDays} j';
     final weeks = (diff.inDays / 7).floor();
-    return '${weeks} sem';
+    return '$weeks sem';
   }
 
   List<QuizAttempt> _sortedAttempts(List<QuizAttempt> attempts) {
@@ -196,7 +196,7 @@ class _DetailsPageState extends State<DetailsPage> {
 
                 if (_section == DetailsSection.overview) ...[
                   // Overview = themes summary + history preview
-                  _SectionTitle('Par thème'),
+                  const _SectionTitle('Par thème'),
                   const SizedBox(height: 10),
                   ...themes.map(
                     (th) => Padding(
@@ -211,7 +211,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                   ),
                   const SizedBox(height: 16),
-                  _SectionTitle('Historique'),
+                  const _SectionTitle('Historique'),
                   const SizedBox(height: 10),
                   _HistorySortRow(
                     value: _sort,
@@ -256,7 +256,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ],
 
                 if (_section == DetailsSection.themes) ...[
-                  _SectionTitle('Par thème'),
+                  const _SectionTitle('Par thème'),
                   const SizedBox(height: 10),
                   ...themes.map(
                     (th) => Padding(
@@ -273,7 +273,7 @@ class _DetailsPageState extends State<DetailsPage> {
                 ],
 
                 if (_section == DetailsSection.history) ...[
-                  _SectionTitle('Historique complet'),
+                  const _SectionTitle('Historique complet'),
                   const SizedBox(height: 10),
                   _HistorySortRow(
                     value: _sort,
@@ -293,7 +293,7 @@ class _DetailsPageState extends State<DetailsPage> {
                     ),
                   ),
                   const SizedBox(height: 8),
-                  _InlineHint(
+                  const _InlineHint(
                     text:
                         'Astuce : tire vers le bas pour actualiser tes stats.',
                   ),
@@ -1050,8 +1050,8 @@ class _SkeletonRowChips extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         Expanded(child: _SkeletonPill()),
         SizedBox(width: 8),
         Expanded(child: _SkeletonPill()),

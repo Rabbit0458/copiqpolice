@@ -99,25 +99,25 @@ class AmendeForfaitairePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles 529 et suivants du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text:
                       "articles R. 48-1 et suivants du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : encadrent la procédure de l’amende forfaitaire.",
                 ),
               ]),
@@ -160,80 +160,80 @@ class AmendeForfaitairePage extends StatelessWidget {
             cardColor: cardTypes,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Amende forfaitaire « ordinaire »"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Amende forfaitaire « ordinaire »"),
+              _Paragraph(
                 "Concerne notamment les contraventions au Code de la route qui ne sont pas minorées, "
                 "les contraventions en matière d’arrêt/stationnement, d’assurance des véhicules, "
                 "ou encore celles liées à la réglementation des transports routiers.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Amende forfaitaire minorée"),
+              SizedBox(height: 12),
+              _SubTitle("B) Amende forfaitaire minorée"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le montant est minoré pour les contraventions routières des 2e, 3e, 4e et certaines 5e classes mentionnées à ",
                 ),
                 TextSpan(
                   text: "l’article R. 48-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
-                const TextSpan(
+                TextSpan(text: ", "),
+                TextSpan(
                   text:
                       "à l’exception de certaines contraventions relatives au stationnement.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exception stationnement : "),
+                  TextSpan(text: "Exception stationnement : "),
                   TextSpan(
                     text: "articles R. 417-1 à R. 417-13",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et "),
+                  TextSpan(text: " et "),
                   TextSpan(
                     text: "article R. 421-7 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La minoration est conditionnée au paiement dans les délais prévus à ",
                 ),
                 TextSpan(
                   text: "l’article 529-8 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". En cas de non-paiement dans les délais : application du montant « ordinaire ».",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("C) Amende forfaitaire majorée"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("C) Amende forfaitaire majorée"),
+              _Paragraph(
                 "Le contrevenant qui ne règle pas l’amende ou ne conteste pas dans les délais se voit appliquer de plein droit une majoration.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Un titre rendu exécutoire par le ministère public permet au Trésor public de recouvrer le montant de l’amende forfaitaire majorée.",
               ),
             ],
@@ -248,32 +248,32 @@ class AmendeForfaitairePage extends StatelessWidget {
             accent: accentPink,
             titleColor: textMain,
             children: [
-              _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+              const _Paragraph.rich([
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "article R. 49 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (ordinaire), "),
+                TextSpan(text: " (ordinaire), "),
                 TextSpan(
                   text: "article R. 49-9 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (minorée) et "),
+                TextSpan(text: " (minorée) et "),
                 TextSpan(
                   text: "article R. 49-7 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (majorée)."),
+                TextSpan(text: " (majorée)."),
               ]),
               const SizedBox(height: 12),
               _AmountTable(
@@ -384,88 +384,88 @@ class AmendeForfaitairePage extends StatelessWidget {
             cardColor: cardContest,
             accent: accentSteel,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’amende forfaitaire peut être contestée conformément aux ",
                 ),
                 TextSpan(
                   text:
                       "articles 529-2, 529-10 et 530 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Amende forfaitaire « ordinaire » ou minorée"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("A) Amende forfaitaire « ordinaire » ou minorée"),
+              _Paragraph(
                 "Deux voies existent selon le type de contravention.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title:
                     "Requête en exonération (cas CI / locataire / acquéreur / représentant légal)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si la contravention vise la responsabilité pécuniaire du titulaire du certificat d’immatriculation (ou assimilé) lorsque le conducteur n’a pas été interpellé (contrôle automatisé, vidéo-verbalisation). Référence : ",
                   ),
                   TextSpan(
                     text: "L. 121-3 et R. 121-6 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "→ Requête (courrier RAR au CNT de Rennes ou via ANTAI) avec : "
                 "formulaire rempli + pièces justificatives (vol, destruction, cession, usurpation de plaque) "
                 "ou exposé des motifs + preuve de consignation (si autre motif).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "En cas de classement sans suite, la somme consignée est restituée par le comptable du Trésor.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Requête en exonération simple",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si l’amende forfaitaire concerne une contravention autre que celles liées à la responsabilité pécuniaire : envoi du formulaire + avis de contravention au CNT de Rennes (ou contestation dématérialisée). Référence : ",
                   ),
                   TextSpan(
                     text: "article 529-2 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Amende forfaitaire majorée"),
+              SizedBox(height: 12),
+              _SubTitle("B) Amende forfaitaire majorée"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Réclamation (annule le titre exécutoire) — ",
                 ),
                 TextSpan(
                   text: "article 530 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réclamation accompagnée de l’avis d’amende forfaitaire majorée correspondant.",
                 ),
@@ -481,79 +481,79 @@ class AmendeForfaitairePage extends StatelessWidget {
             cardColor: cardSuite,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Après examen de la recevabilité d’une requête en exonération ou d’une réclamation, le ministère public peut :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Renoncer aux poursuites (classement sans suite).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Saisir le tribunal par voie d’ordonnance pénale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Citer directement le contrevenant devant le tribunal de police.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Ordonnance pénale"),
+              SizedBox(height: 12),
+              _SubTitle("A) Ordonnance pénale"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles 524 et suivants du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : procédure simplifiée permettant au juge de statuer sans débat préalable (relaxe ou condamnation).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "À compter de l’envoi de la notification d’une ordonnance pénale de condamnation, le prévenu dispose de 30 jours pour former opposition ou payer l’amende.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Citation directe devant le tribunal de police",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles 531 et suivants du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : applicable aux contraventions ne pouvant relever de l’amende forfaitaire ou lorsque l’ordonnance pénale est écartée.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La citation précise la juridiction saisie, le lieu, l’heure et la date d’audience. "
                 "Le juge prononce des sanctions proportionnées à la gravité de l’infraction.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Point pratique : l’agent verbalisateur doit relever avec précision et impartialité les circonstances de commission de l’infraction (qualité du PV, cohérence des mentions).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(text: "Mis à jour le "),
-                const TextSpan(
+                TextSpan(text: "Mis à jour le "),
+                TextSpan(
                   text: "15/06/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -720,7 +720,7 @@ class _AmountTable extends StatelessWidget {
                 ],
               ),
             );
-          }).toList(),
+          }),
         ],
       ),
     );
@@ -755,10 +755,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -823,7 +823,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -866,7 +866,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -928,7 +928,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -960,7 +960,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -973,7 +973,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

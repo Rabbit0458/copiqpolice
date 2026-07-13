@@ -111,77 +111,77 @@ class SignauxSonoresLumineuxPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 311-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit les véhicules d’intérêt général (prioritaires / facilités de passage).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Catégories d’avertisseurs : "),
+                TextSpan(text: "Catégories d’avertisseurs : "),
                 TextSpan(
                   text: "articles R. 313-34 et R. 313-27 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Dérogations possibles (si urgence + avertisseurs) : ",
                 ),
                 TextSpan(
                   text: "articles R. 432-1 à R. 432-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Obligation des autres usagers de faciliter le passage : ",
                 ),
                 TextSpan(
                   text: "articles R. 414-2 et R. 414-9 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Certains véhicules lents / encombrants peuvent être dotés de feux jaune-orangé : ",
                   ),
                   TextSpan(
                     text: "article R. 313-31 (2°) du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -195,74 +195,74 @@ class SignauxSonoresLumineuxPage extends StatelessWidget {
             cardColor: cardTypes,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Véhicules d’intérêt général prioritaires"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Véhicules d’intérêt général prioritaires"),
+              _Paragraph(
                 "Exemples : police (banalisés ou non), unités militaires de sécurité civile, gendarmerie, "
                 "pompiers (incendie et secours), services de déminage, douanes, SAMU/SMUR, "
                 "ministère de la justice (transport de détenus / rétablissement de l’ordre pénitentiaire).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Avertisseurs — Catégorie A",
                 bodySpans: [
-                  const TextSpan(text: "• Sonore : « deux tons »\n"),
-                  const TextSpan(
+                  TextSpan(text: "• Sonore : « deux tons »\n"),
+                  TextSpan(
                     text:
                         "• Lumineux : gyrophares bleus (fixes ou amovibles), à faisceaux tournants.\n",
                   ),
-                  const TextSpan(text: "• Dérogations : "),
+                  TextSpan(text: "• Dérogations : "),
                   TextSpan(
                     text: "toutes les règles relatives à l’usage des voies",
-                    style: const TextStyle(fontWeight: FontWeight.w900),
+                    style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " (si urgence + avertisseurs + prudence).",
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Véhicules bénéficiant de facilités de passage",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Exemples : ambulances, premiers secours à personnes (associations agréées), "
                 "interventions des gestionnaires d’infrastructures électriques et gazières, "
                 "surveillance SNCF/RATP, transports de fonds Banque de France, permanence des soins, "
                 "transports de produits sanguins / organes humains, engins de service hivernal, "
                 "interventions sur autoroutes et routes à chaussées séparées.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Avertisseurs — Catégorie B",
                 bodySpans: [
-                  const TextSpan(text: "• Sonore : « trois tons »\n"),
-                  const TextSpan(
+                  TextSpan(text: "• Sonore : « trois tons »\n"),
+                  TextSpan(
                     text:
                         "• Lumineux : feux bleus à éclats (fixes ou amovibles), à faisceaux stationnaires.\n",
                   ),
-                  const TextSpan(text: "• Dérogations principales : "),
+                  TextSpan(text: "• Dérogations principales : "),
                   TextSpan(
                     text: "vitesse + circulation sur voies réservées",
-                    style: const TextStyle(fontWeight: FontWeight.w900),
+                    style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(text: "Les articles "),
+                  TextSpan(text: "Les articles "),
                   TextSpan(
                     text: "R. 432-3 et R. 432-4 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " prévoient, dans certains cas, des dérogations supplémentaires (autoroute/route express, engins hivernaux, etc.).",
                   ),
@@ -322,41 +322,41 @@ class SignauxSonoresLumineuxPage extends StatelessWidget {
             cardColor: cardInfra,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le fait de détenir, d’utiliser, d’adapter, de placer, d’appliquer ou de transporter "
                 "les feux / avertisseurs sonores spéciaux réservés aux véhicules d’intérêt général "
                 "est sanctionné (contravention de 4ᵉ classe).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Feux spéciaux"),
+              _SubTitle("Feux spéciaux"),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article R. 313-29 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Usage irrégulier de feux spéciaux réservés aux véhicules d’intérêt général (contravention 4ᵉ classe).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Installation irrégulière de feux spéciaux réservés aux véhicules d’intérêt général.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Détention / transport irrégulier de feux spéciaux réservés aux véhicules d’intérêt général.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Mesures possibles",
                 bodySpans: [
                   TextSpan(
@@ -366,35 +366,35 @@ class SignauxSonoresLumineuxPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Avertisseur sonore"),
+              _SubTitle("Avertisseur sonore"),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article R. 313-35 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Usage irrégulier d’un avertisseur sonore spécial réservé aux véhicules d’intérêt général (contravention 4ᵉ classe).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Installation irrégulière d’un avertisseur sonore réservé aux véhicules d’intérêt général.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Détention / transport irrégulier d’un avertisseur sonore réservé aux véhicules d’intérêt général.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Mesures possibles",
                 bodySpans: [
                   TextSpan(
@@ -414,34 +414,34 @@ class SignauxSonoresLumineuxPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les accidents graves lors de poursuites rappellent une réalité : la poursuite expose "
                 "policiers et usagers à des risques très importants au regard de l’enjeu.\n\n"
                 "Elle ne peut se justifier qu’en raison d’un fait particulièrement grave et connu des policiers.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Conduite à tenir (réflexes pro)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Conduite à tenir (réflexes pro)"),
+              _BulletPoint(
                 text:
                     "Se poser la question en permanence : « Le jeu en vaut-il la chandelle ? »",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Respecter les règles élémentaires : ceinture, avertisseurs, ralentissement aux intersections.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Informer le CIC : progression, signalements, comportement, description, direction de fuite.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Appliquer les instructions du CIC (arrêt de la poursuite si le risque devient disproportionné).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "À retenir",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Abandonner une poursuite après évaluation des risques n’est pas un aveu d’échec : "
@@ -449,10 +449,10 @@ class SignauxSonoresLumineuxPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Focus sécurité",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Attention à l’« effet tunnel » : en poursuite, le conducteur se focalise sur le fuyard "
@@ -497,10 +497,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -565,7 +565,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -608,7 +608,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -670,7 +670,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -702,7 +702,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -715,7 +715,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

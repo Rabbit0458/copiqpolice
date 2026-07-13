@@ -107,16 +107,16 @@ class AbusDeConfiancePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 314-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime l’abus de confiance.",
                 ),
               ]),
@@ -131,94 +131,94 @@ class AbusDeConfiancePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’abus de confiance est une appropriation frauduleuse de la propriété d’autrui, "
                 "caractérisée par un détournement. L’auteur a légitimement la chose entre les mains "
                 "à titre précaire, après une remise librement consentie en vertu d’un accord.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Une remise préalable de la chose"),
-              const _Paragraph(
+              _SubTitle("A) Une remise préalable de la chose"),
+              _Paragraph(
                 "La remise est une condition préalable : elle intervient avant le détournement, dans un cadre précis. "
                 "Elle ne confère qu’une détention précaire à celui qui reçoit.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Cadre juridique de la remise"),
-              const _Paragraph(
+              _SubTitle("1) Cadre juridique de la remise"),
+              _Paragraph(
                 "La remise peut s’opérer dans différents cadres :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Un cadre contractuel : tout contrat impliquant une remise à titre précaire (louage, crédit-bail, dépôt, gage, nantissement, société, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Des dispositions légales ou réglementaires.",
               ),
-              const _BulletPoint(text: "Une décision de justice."),
-              const _BulletPoint(
+              _BulletPoint(text: "Une décision de justice."),
+              _BulletPoint(
                 text:
                     "Une simple situation de fait : accord non contractuel (relations amicales), sans engagement juridique formel.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’abus de confiance ne suppose pas nécessairement une remise en vertu d’un contrat. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 octobre 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Contenu de la remise"),
-              const _Paragraph("La remise peut porter sur :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Des fonds : sommes d’argent."),
-              const _BulletPoint(
+              _SubTitle("2) Contenu de la remise"),
+              _Paragraph("La remise peut porter sur :"),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Des fonds : sommes d’argent."),
+              _BulletPoint(
                 text:
                     "Des valeurs : titres négociables (actions, obligations…) ou objets de valeur (bijoux, lingots, tableaux, pièces…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Un bien quelconque : tout bien susceptible d’appropriation, mobilier ou immobilier, avec ou sans valeur économique.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le bien peut être incorporel s’il est exploitable matériellement (ex. fichier clientèle, scénario, numéro de carte bancaire, connexion internet, temps de travail…). ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 13 mars 2024, n° 22-83.689)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Affectation de la remise"),
-              const _Paragraph(
+              _SubTitle("3) Affectation de la remise"),
+              _Paragraph(
                 "La remise poursuit un but déterminé : le bénéficiaire accepte :\n"
                 "• de rendre (restituer) la chose ;\n"
                 "• de la représenter (la montrer) ;\n"
@@ -226,10 +226,10 @@ class AbusDeConfiancePage extends StatelessWidget {
                 "Il n’a donc pas la libre disposition : la détention est bien précaire.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un acte matériel de détournement"),
-              const _Paragraph(
+              _SubTitle("B) Un acte matériel de détournement"),
+              _Paragraph(
                 "Le détournement est caractérisé par la non-restitution de la chose remise à titre précaire.\n"
                 "Il peut résulter :\n"
                 "• d’une transgression de l’affectation ;\n"
@@ -237,64 +237,64 @@ class AbusDeConfiancePage extends StatelessWidget {
                 "• ou d’une disparition.\n"
                 "Le délit est caractérisé par le seul détournement, sans qu’une mise en demeure de restituer soit nécessaire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Aucune mise en demeure nécessaire. "),
+                  TextSpan(text: "Aucune mise en demeure nécessaire. "),
                   TextSpan(
                     text: "(Cass. crim., 24 mars 1969)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Repères pédagogiques (formes fréquentes)"),
-              const _BulletPoint(
+              _SubTitle("Repères pédagogiques (formes fréquentes)"),
+              _BulletPoint(
                 text:
                     "Usage abusif : en principe seulement civil, sauf abus manifeste directement contraire aux prévisions acceptées.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Retard de restitution : en principe inexécution contractuelle, sauf retard injustifié devenant frauduleux.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Refus de restituer : caractérise en principe le détournement, sauf droit de rétention/compensation légitime.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Impossibilité de restituer : si volontaire (hors force majeure/cas fortuit), manifeste la volonté de ne pas respecter la finalité.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Au préjudice d’autrui"),
-              const _Paragraph(
+              _SubTitle("C) Au préjudice d’autrui"),
+              _Paragraph(
                 "Le préjudice est un élément essentiel : il suffit que l’acte soit susceptible de priver "
                 "le propriétaire/possesseur de ses droits. Il n’est pas nécessaire que l’auteur ait tiré profit "
                 "ou que le bien soit entré dans son patrimoine.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le préjudice peut être réel ou éventuel ; il peut découler de la seule constatation du détournement. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 3 décembre 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -308,37 +308,37 @@ class AbusDeConfiancePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’abus de confiance est un délit intentionnel : aucune condamnation ne peut intervenir "
                 "sans constater le caractère frauduleux des faits.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Le caractère frauduleux découle de la conscience : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "1) de la précarité de la détention, et 2) de l’obligation de restitution / représentation / usage déterminé, ",
                 ),
-                const TextSpan(text: "et de la volonté d’y contrevenir."),
+                TextSpan(text: "et de la volonté d’y contrevenir."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’intention frauduleuse peut se déduire des circonstances (présomptions de fraude). ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 30 juin 2010)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -352,29 +352,29 @@ class AbusDeConfiancePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 314-1-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : abus de confiance commis en bande organisée.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 314-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : circonstances aggravantes liées notamment à l’appel au public pour obtenir la remise, "
                       "à l’exercice habituel d’opérations portant sur les biens des tiers, "
@@ -382,16 +382,16 @@ class AbusDeConfiancePage extends StatelessWidget {
                       "ou au préjudice d’une personne vulnérable (âge, maladie, infirmité, déficience, grossesse).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 314-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation lorsque l’auteur est mandataire de justice ou officier public/ministériel, "
                       "dans l’exercice, à l’occasion, ou en raison de ses fonctions/qualité.",
@@ -408,140 +408,140 @@ class AbusDeConfiancePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 375 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 314-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Bande organisée : "),
-                const TextSpan(
+                TextSpan(text: "Bande organisée : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 750 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 314-1-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravations spécifiques : "),
-                const TextSpan(
+                TextSpan(text: "Aggravations spécifiques : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 750 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 314-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Officier public / mandataire de justice : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 500 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 314-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale selon "),
+                TextSpan(text: "Responsabilité pénale selon "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", pour les infractions des "),
+                TextSpan(text: ", pour les infractions des "),
                 TextSpan(
                   text: "articles 314-1 et 314-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", et peines prévues par "),
+                TextSpan(text: ", et peines prévues par "),
                 TextSpan(
                   text: "l’article 314-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Tentative : OUI — prévue expressément par ",
                 ),
                 TextSpan(
                   text: "l’article 314-1-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (toujours punissable)."),
+                TextSpan(text: " (toujours punissable)."),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Complicité : OUI (punissable pour l’infraction consommée ou tentée, personne physique ou morale).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Immunité familiale"),
+              _SubTitle("Immunité familiale"),
               _Paragraph.rich([
-                const TextSpan(text: "Immunité familiale : OUI — "),
+                TextSpan(text: "Immunité familiale : OUI — "),
                 TextSpan(
                   text: "article 314-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " renvoyant aux dispositions de "),
+                TextSpan(text: " renvoyant aux dispositions de "),
                 TextSpan(
                   text: "l’article 311-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -579,10 +579,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -647,7 +647,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -690,7 +690,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -752,7 +752,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -763,10 +763,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -778,13 +777,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -797,13 +795,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

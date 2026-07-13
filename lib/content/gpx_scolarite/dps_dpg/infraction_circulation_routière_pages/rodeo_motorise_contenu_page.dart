@@ -112,16 +112,16 @@ class RodeoMotorisePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 236-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le rodéo motorisé.",
                 ),
               ]),
@@ -136,18 +136,18 @@ class RodeoMotorisePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Conduite d’un véhicule terrestre à moteur"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Conduite d’un véhicule terrestre à moteur"),
+              _Paragraph(
                 "Tous les véhicules terrestres à moteur sont concernés, qu’ils soient ou non soumis à réception.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Des manœuvres répétées constituant des violations d’obligations de sécurité ou de prudence",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les violations doivent résulter d’obligations particulières de sécurité ou de prudence prévues "
                 "par des dispositions législatives ou réglementaires du code de la route.\n"
                 "Les faits peuvent être commis dans tous les lieux où le code de la route s’applique : voies ouvertes "
@@ -155,59 +155,59 @@ class RodeoMotorisePage extends StatelessWidget {
                 "(aires de stationnement à usage public, voies privées desservant un lotissement, sortie d’un parking privé à usage public, "
                 "cour d’une gare, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Une manœuvre dangereuse unique ne suffit pas : les violations doivent être répétées.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Exemples (illustrations)"),
-              const _IntroBullet(
+              SizedBox(height: 12),
+              _SubTitle("Exemples (illustrations)"),
+              _IntroBullet(
                 text:
                     "Ne pas respecter l’arrêt imposé par plusieurs feux rouges fixes successifs.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Circuler à plusieurs reprises sur la voie opposée au sens de circulation malgré une ligne blanche continue.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ces violations, ainsi que leur caractère répété, doivent être relevés et décrits précisément "
                 "pour caractériser l’infraction.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Un danger pour la sécurité des usagers OU un trouble à la tranquillité publique",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il n’est pas exigé que le comportement ait causé un risque immédiat de mort ou de blessure grave. "
                 "Il suffit de caractériser la compromission de la sécurité des autres usagers.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Exemples"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("Exemples"),
+              _IntroBullet(
                 text:
                     "Véhicules arrivant en sens inverse, piétons à proximité immédiate.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les usagers concernés peuvent être des tiers (piétons, conducteurs extérieurs) mais aussi "
                 "d’autres conducteurs participant eux-mêmes au rodéo motorisé.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le trouble à la tranquillité publique peut résulter de la nature des comportements relevés "
                 "(nuisances sonores excessives, blocage de la circulation, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "L’exploitation a posteriori d’images de vidéoprotection peut permettre de caractériser "
@@ -253,62 +253,62 @@ class RodeoMotorisePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 236-1 II du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (1er degré) :"),
+                TextSpan(text: " (1er degré) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsque les faits sont commis en réunion.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 236-1 III du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (2e degré) :"),
+                TextSpan(text: " (2e degré) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Usage de stupéfiants établi (analyse sanguine/salivaire) ou refus de se soumettre aux vérifications destinées à l’établir.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "État alcoolique caractérisé (taux légal sang/air expiré) ou refus de se soumettre aux vérifications destinées à l’établir.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Absence du permis exigé, ou permis annulé / invalidé / suspendu / retenu.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 236-1 IV du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (3e degré) :"),
+                TextSpan(text: " (3e degré) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Cumul d’au moins deux des circonstances aggravantes prévues au III.",
               ),
@@ -323,145 +323,145 @@ class RodeoMotorisePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues (personnes physiques)"),
+            children: const [
+              _SubTitle("Peines encourues (personnes physiques)"),
 
               _Paragraph.rich([
-                const TextSpan(text: "Rodéo simple : "),
-                const TextSpan(
+                TextSpan(text: "Rodéo simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 236-1 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(text: "Aggravé (réunion) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravé (réunion) : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 236-1 II du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(text: "Aggravé (une circonstance du III) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravé (une circonstance du III) : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 236-1 III du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravé (au moins deux circonstances du III) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 236-1 IV du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Mesures sur le véhicule"),
+              _SubTitle("Mesures sur le véhicule"),
               _Paragraph.rich([
-                const TextSpan(text: "Confiscation obligatoire du véhicule : "),
+                TextSpan(text: "Confiscation obligatoire du véhicule : "),
                 TextSpan(
                   text: "article L. 236-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (si la juridiction ne la prononce pas, elle doit motiver sa décision).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Immobilisation administrative et mise en fourrière : ",
                 ),
                 TextSpan(
                   text: "article L. 325-1-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (sans autorisation préalable du procureur, qui doit néanmoins être informé immédiatement par tout moyen).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Infraction autonome : le fait d’inciter à participer à un rodéo, de l’organiser ou d’en faire la promotion est réprimé par ",
                   ),
                   TextSpan(
                     text: "l’article L. 236-2 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -500,10 +500,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -568,7 +568,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -611,7 +611,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -673,7 +673,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -684,10 +684,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -699,13 +698,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -718,13 +716,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Commission rogatoire",
     question: "Dans quel cadre juridique intervient la commission rogatoire ?",
     options: [
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Commission rogatoire",
     question:
         "Quelle est la finalité principale de la commission rogatoire pour le juge d’instruction ?",
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégantes",
     question:
         "Quelle juridiction d’instruction peut délivrer une commission rogatoire ?",
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégantes",
     question:
         "Parmi les juridictions suivantes, laquelle peut délivrer une commission rogatoire ?",
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégantes",
     question:
         "Dans la pratique courante, de quel magistrat émanent le plus souvent les commissions rogatoires ?",
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégataires",
     question:
         "Selon l’article 151 du Code de procédure pénale, qui peut être requis par commission rogatoire ?",
@@ -190,7 +190,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégataires",
     question:
         "Dans la pratique policière, quels agents sont principalement chargés d’exécuter les commissions rogatoires ?",
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Matérielle OPJ",
     question: "Les actes exécutés par l’OPJ sur commission rogatoire doivent :",
     options: [
@@ -219,7 +219,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Matérielle OPJ",
     question:
         "Parmi les actes suivants, lequel l’OPJ ne peut PAS faire sur commission rogatoire ?",
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Matérielle OPJ",
     question:
         "L’OPJ peut-il interroger une personne mise en examen sur commission rogatoire ?",
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Territoriale OPJ",
     question:
         "En principe, dans quelles limites territoriales l’OPJ est-il compétent ?",
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Territoriale OPJ",
     question:
         "L’extension de compétence de l’OPJ à l’ensemble du territoire national est possible :",
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme — Commission rogatoire",
     question:
         "Quel élément doit obligatoirement figurer dans la commission rogatoire selon l’article 151 al. 2 ?",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme — Commission rogatoire",
     question: "Sous quelle forme la commission rogatoire doit-elle exister ?",
     options: [
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Générale / Spéciale",
     question: "Une commission rogatoire dite « générale » est :",
     options: [
@@ -325,7 +325,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Générale / Spéciale",
     question: "Une commission rogatoire « spéciale » :",
     options: [
@@ -339,7 +339,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Contre personne dénommée / X",
     question:
         "Lorsqu’une commission rogatoire est délivrée contre une personne dénommée, elle doit :",
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Contre personne dénommée / X",
     question: "Une commission rogatoire délivrée « contre X » signifie que :",
     options: [
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "International — Forme",
     question:
         "Une commission rogatoire internationale doit notamment comporter :",
@@ -385,7 +385,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Constatations",
     question:
         "Sur commission rogatoire, l’OPJ peut effectuer des constatations :",
@@ -400,7 +400,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Signalétiques",
     question:
         "Quels types d’opérations l’OPJ peut-il faire réaliser sur commission rogatoire au titre des relevés signalétiques ?",
@@ -415,7 +415,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question: "En commission rogatoire, le témoin est en principe tenu :",
     options: [
@@ -429,7 +429,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quelle formule de serment doit prêter le témoin sur commission rogatoire ?",
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Parmi les personnes suivantes, laquelle est dispensée de prêter serment comme témoin ?",
@@ -459,7 +459,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Une personne gardée à vue entendue comme témoin sur commission rogatoire :",
@@ -475,7 +475,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions — Témoins",
     question:
         "Le témoin qui refuse de comparaître, de prêter serment ou de déposer sans excuse valable encourt :",
@@ -490,7 +490,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté",
     question:
         "L’audition d’un témoin assisté par l’OPJ sur commission rogatoire est possible :",
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté",
     question: "Le témoin assisté entendu par l’OPJ :",
     options: [
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parties — Personne mise en examen",
     question: "Après sa mise en examen, la personne :",
     options: [
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parties — Partie civile",
     question:
         "La partie civile peut être entendue par l’OPJ sur commission rogatoire :",
@@ -548,7 +548,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Généralités",
     question:
         "Les perquisitions en matière d’information judiciaire sont notamment régies par :",
@@ -563,7 +563,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Domicile mis en examen",
     question:
         "En principe, la perquisition au domicile de la personne mise en examen doit se faire :",
@@ -579,7 +579,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Domicile tiers",
     question:
         "Lors d’une perquisition au domicile d’un tiers, ce dernier est :",
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies / Scellés",
     question:
         "Les objets, documents ou données informatiques saisis doivent être :",
@@ -609,7 +609,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Conditions",
     question:
         "En commission rogatoire, qui contrôle la garde à vue prévue par l’article 154 du Code de procédure pénale ?",
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Généralités",
     question:
         "Sur commission rogatoire, les OPJ et APJ ne peuvent pas adresser de réquisitions techniques ou scientifiques fondées sur les articles 60 et 77-1 parce que :",
@@ -636,7 +636,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Ordre général",
     question:
         "Les réquisitions d’ordre général de l’article 99-3 du Code de procédure pénale permettent notamment à l’OPJ :",
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Géolocalisation",
     question:
         "Les réquisitions de géolocalisation en temps réel (art. 230-32 à 230-44) peuvent viser :",
@@ -667,7 +667,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interceptions",
     question:
         "Qui est compétent pour ordonner l’interception de correspondances émises par la voie des communications électroniques (art. 100) ?",
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire — Violation contrôle judiciaire",
     question:
         "En cas de présomption de violation de certaines obligations du contrôle judiciaire, la personne peut être retenue :",
@@ -694,7 +694,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégataires",
     question:
         "Pourquoi la délivrance de commissions rogatoires à plusieurs services de police ou de gendarmerie dans une même affaire peut-elle être envisagée ?",
@@ -710,7 +710,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Territoriale OPJ",
     question:
         "Dans quel cas l’OPJ n’a-t-il pas à informer le juge d’instruction lorsqu’il se transporte hors de son ressort habituel ?",
@@ -726,7 +726,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "International — Exécution",
     question:
         "Selon la jurisprudence de la Cour de cassation, quel droit s’applique aux conditions de fond et de forme des actes réalisés à l’étranger sur commission rogatoire internationale ?",
@@ -741,7 +741,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Juge d’instruction",
     question:
         "Que permet l’article 152 al. 3 du Code de procédure pénale au juge d’instruction dans le cadre d’une commission rogatoire ?",
@@ -757,7 +757,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — PV de saisine",
     question:
         "En matière d’instruction, à quoi correspond le procès-verbal de saisine établi par l’OPJ ?",
@@ -773,7 +773,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Délais",
     question:
         "En l’absence de délai fixé par le juge d’instruction, dans quel délai l’OPJ doit-il transmettre la commission rogatoire et les procès-verbaux après la fin des opérations ?",
@@ -784,7 +784,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Refus",
     question:
         "Le refus par une personne soupçonnée de commettre une infraction de se soumettre aux prélèvements et signalisation ordonnés par l’OPJ constitue :",
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Les personnes astreintes au secret professionnel entendues comme témoins :",
@@ -815,7 +815,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Journalistes",
     question:
         "Quel droit particulier l’article 109 al. 2 du Code de procédure pénale reconnaît-il au journaliste entendu comme témoin ?",
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices graves et concordants",
     question:
         "Lorsqu’apparaissent, au cours de l’audition, des indices graves et concordants à l’encontre d’une personne entendue comme simple témoin, l’OPJ doit :",
@@ -847,7 +847,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices graves et concordants",
     question:
         "Parmi les caractéristiques suivantes, lesquelles doivent être réunies pour parler d’indices « graves et concordants » au sens de l’article 105 du Code de procédure pénale ?",
@@ -862,7 +862,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté",
     question:
         "Le témoin assisté entendu par l’OPJ peut-il être soumis à une mesure de garde à vue pour la durée de son audition ?",
@@ -878,7 +878,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Personne sous contrôle judiciaire",
     question:
         "La perquisition au domicile d’une personne placée sous contrôle judiciaire ou assignée à résidence avec surveillance électronique, et interdite de détenir une arme, est possible :",
@@ -894,7 +894,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies / Données informatiques",
     question:
         "Lorsqu’une copie des données informatiques est réalisée dans le cadre d’une saisie, que peut ordonner le juge d’instruction pour le support d’origine non placé sous main de justice ?",
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisie pénale — Comptes bancaires",
     question:
         "Dans quel cadre l’OPJ peut-il procéder à la saisie pénale de sommes figurant sur un compte bancaire ou d’actifs numériques ?",
@@ -925,7 +925,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat de recherche",
     question: "Le mandat de recherche peut être décerné :",
     options: [
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Prolongation",
     question:
         "En commission rogatoire, qui est compétent pour autoriser la prolongation de la garde à vue au-delà de la première période ?",
@@ -955,7 +955,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "En garde à vue exécutée sur commission rogatoire, quel renseignement supplémentaire l’avocat doit-il recevoir ?",
@@ -971,7 +971,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Informatique / Télécom",
     question:
         "Pour requérir les opérateurs de télécommunications de préserver le contenu des informations consultées par les utilisateurs (art. 60-2, al. 2), l’OPJ doit :",
@@ -986,7 +986,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Géolocalisation / Urgence",
     question:
         "En cas d’urgence, lorsque l’OPJ met en place une géolocalisation en temps réel, que doit-il faire dans les 24 heures ?",
@@ -1002,7 +1002,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Nature des infractions",
     question:
         "En matière d’interception de correspondances (art. 100), quand le seuil de trois ans d’emprisonnement n’est-il pas exigé ?",
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "En principe, une interception ne peut porter sur une ligne dépendant du cabinet d’un avocat ou de son domicile que :",
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Informations préalables",
     question:
         "Selon l’article 100-7 du Code de procédure pénale, une interception sur la ligne d’un député ou d’un sénateur ne peut avoir lieu que :",
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Conditions de forme",
     question: "La décision d’interception de correspondances doit notamment :",
     options: [
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Destruction des enregistrements",
     question:
         "À l’expiration du délai de prescription de l’action publique, que devient l’enregistrement des interceptions ?",
@@ -1080,7 +1080,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire — Droits de la personne",
     question:
         "Dans le cadre de la retenue judiciaire pour présomption de violation du contrôle judiciaire, la personne bénéficie notamment :",
@@ -1097,7 +1097,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "International — Conventions UE",
     question:
         "Selon la convention du 29 mai 2000 relative à l’entraide judiciaire entre États membres de l’Union européenne, l’État requis :",
@@ -1113,7 +1113,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoin assisté / Plainte avec CPC",
     question:
         "Lorsqu’une personne est nommément visée par une plainte avec constitution de partie civile, la Chancellerie considère qu’elle doit :",
@@ -1129,7 +1129,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices graves et concordants — Nullité",
     question:
         "Quelles sont les conséquences sur la procédure si l’OPJ poursuit l’audition d’une personne comme simple témoin alors que des indices graves et concordants de culpabilité sont apparus ?",
@@ -1145,7 +1145,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Indices graves et concordants",
     question:
         "L’article 105 du Code de procédure pénale, relatif à l’interdiction d’entendre comme témoin une personne contre laquelle existent des indices graves et concordants, s’applique-t-il au témoin assisté ?",
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Article 56 et renvoi",
     question:
         "Pourquoi le renvoi à l’article 56 du Code de procédure pénale, pour les perquisitions au domicile d’un tiers sur commission rogatoire, est-il important ?",
@@ -1176,7 +1176,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies / Scellés",
     question:
         "Qui peut ouvrir les scellés fermés et dépouiller les documents saisis dans le cadre de l’instruction (art. 97 al. 6) ?",
@@ -1192,7 +1192,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Lieux privés",
     question:
         "Pour l’introduction dans des lieux d’habitation en dehors des heures légales afin de mettre en place un dispositif de géolocalisation, qui doit délivrer l’autorisation ?",
@@ -1207,7 +1207,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Activation à distance",
     question:
         "L’activation à distance d’un appareil électronique en vue de sa localisation en temps réel ne peut pas concerner :",
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Correspondances protégées",
     question:
         "Selon l’article 100-5 du Code de procédure pénale, quelles correspondances ne peuvent pas être transcrites, à peine de nullité ?",
@@ -1239,7 +1239,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Agents requis",
     question:
         "Les agents requis pour installer un dispositif d’interception (art. 100-3) sont astreints :",
@@ -1255,7 +1255,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire — Limites des investigations",
     question:
         "Pendant la retenue judiciaire prévue à l’article 141-4, la personne peut-elle faire l’objet d’investigations corporelles internes ?",
@@ -1276,7 +1276,7 @@ final List<QuizQuestion> questionsCommissionRogatoireProcedure = [
 // PAGE
 // ============================================================================
 class QuizCommissionRogatoirePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/commission_rogatoire';
+  static const String routeName = '/gpx/dps/generalites/quiz/commission_rogatoire';
   final String uid;
   final String email;
 
@@ -1602,7 +1602,7 @@ class _QuizCommissionRogatoirePageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1791,7 +1791,7 @@ class _QuizCommissionRogatoirePageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1943,7 +1943,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2469,10 +2468,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2842,7 +2842,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2883,9 +2883,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -103,7 +103,7 @@ final List<QuizQuestion> questionsCJPM = [
   // =====================================================
 
   // PRINCIPES GÉNÉRAUX
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Principes généraux',
     question:
         'Le code de la justice pénale des mineurs (CJPM) fixe notamment comme principe :',
@@ -118,7 +118,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Principes généraux',
     question:
         'Parmi ces principes, lequel fait partie des fondements de la justice pénale des mineurs ?',
@@ -133,7 +133,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Principes généraux',
     question:
         'Le CJPM rappelle en liminaire que l’intérêt supérieur de l’enfant :',
@@ -150,7 +150,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // PRÉSOMPTION DE DISCERNEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question:
         'Le seuil d’âge de la capacité de discernement, et donc de la responsabilité pénale, est fixé à :',
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question: 'Pour les mineurs de moins de 13 ans, la présomption est :',
     options: [
@@ -175,7 +175,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question: 'Pour les mineurs de plus de 13 ans, la présomption est :',
     options: [
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question:
         'La capacité de discernement d’un mineur se définit notamment par :',
@@ -206,7 +206,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // MINEUR < 13 / ≥ 13
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Responsabilité pénale',
     question: 'Pour un mineur de moins de 13 ans, en principe :',
     options: [
@@ -221,7 +221,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Responsabilité pénale',
     question: 'Pour un mineur âgé d’au moins 13 ans :',
     options: [
@@ -236,7 +236,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // SPÉCIALISATION DES ACTEURS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées',
     question:
         'Quel juge est spécialement compétent pour les affaires pénales concernant les mineurs ?',
@@ -251,7 +251,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées',
     question: 'Les crimes reprochés à un mineur sont jugés par :',
     options: [
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées',
     question:
         'Les fonctions du ministère public en matière de crimes, délits et contraventions de 5ᵉ classe reprochés à un mineur sont remplies par :',
@@ -282,7 +282,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // DROITS SPÉCIFIQUES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Droits spécifiques',
     question: 'En principe, le mineur poursuivi pénalement est assisté :',
     options: [
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Droits spécifiques',
     question: 'La publicité des audiences concernant un mineur est :',
     options: [
@@ -311,7 +311,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // INSTRUCTION — JUGE D’INSTRUCTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Instruction',
     question: 'Les crimes et délits reprochés à un mineur sont instruits par :',
     options: [
@@ -325,7 +325,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Ouverture d’information',
     question:
         'En matière criminelle, pour les mineurs, l’information préalable :',
@@ -337,7 +337,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // RÉTENTION ET MANDATS — GROS PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (mandats)',
     question: 'Un mineur peut être placé en rétention dans le cadre :',
     options: [
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (droits)',
     question:
         'Lorsqu’un mineur est placé en rétention dans le cadre d’un mandat, l’enregistrement audiovisuel de ses auditions :',
@@ -371,7 +371,7 @@ final List<QuizQuestion> questionsCJPM = [
   // =====================================================
 
   // DISCERNEMENT — APPRÉCIATION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement (Moyen)',
     question:
         'La capacité ou l’absence de discernement d’un mineur peut être établie à partir :',
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // SPÉCIALISATION DES ACTEURS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées (Moyen)',
     question:
         'Parmi ces juridictions, laquelle n’intervient PAS comme juridiction spécialisée pour les mineurs ?',
@@ -403,7 +403,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — PJJ',
     question:
         'La mise en œuvre des décisions prises en application du CJPM est confiée principalement :',
@@ -420,7 +420,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // DROITS SPÉCIFIQUES — AVOCAT / INFO
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Avocat (Moyen)',
     question: 'S’agissant de l’avocat du mineur, le CJPM prévoit que :',
     options: [
@@ -435,7 +435,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Information',
     question: 'La notification des droits au mineur doit être faite :',
     options: [
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Représentants légaux',
     question: 'Le CJPM impose que les représentants légaux :',
     options: [
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // INSTRUCTION — OUVERTURE & COMPÉTENCE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Ouverture d’information (Moyen)',
     question:
         'Pour un délit reproché à un mineur, l’ouverture d’une information :',
@@ -476,7 +476,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Compétence territoriale',
     question:
         'L’information est ouverte auprès du tribunal judiciaire siège d’un tribunal pour enfants compétent notamment en fonction :',
@@ -492,7 +492,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // ENQUÊTE DE PERSONNALITÉ & MJIE / MEJP
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Enquête de personnalité',
     question:
         'L’enquête de personnalité ordonnée par le procureur de la République est réalisée :',
@@ -507,7 +507,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — MJIE',
     question:
         'Le juge d’instruction, lorsqu’il est saisi d’une affaire concernant un mineur, doit :',
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — MEJP',
     question:
         'La mesure éducative judiciaire provisoire (MEJP) peut comprendre :',
@@ -539,7 +539,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // CONTRÔLE JUDICIAIRE — CONDITIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (conditions)',
     question:
         'Un mineur de moins de 13 ans peut-il être placé sous contrôle judiciaire ?',
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (conditions)',
     question:
         'Un mineur de moins de 16 ans peut être placé sous contrôle judiciaire notamment s’il :',
@@ -570,7 +570,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (16-18 ans)',
     question:
         'Un mineur d’au moins 16 ans peut être placé sous contrôle judiciaire :',
@@ -585,7 +585,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // CONTRÔLE JUDICIAIRE — OBLIGATIONS & RÉTENTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (obligations)',
     question: 'Les obligations du contrôle judiciaire des mineurs sont :',
     options: [
@@ -599,7 +599,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (rétention)',
     question:
         'En cas de soupçon de non-respect des obligations du contrôle judiciaire, le mineur peut :',
@@ -615,7 +615,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // DÉTENTION PROVISOIRE — PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire',
     question:
         'Un mineur de moins de 13 ans peut-il être placé en détention provisoire ?',
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire',
     question:
         'En matière criminelle, pour un mineur de moins de 16 ans, la détention provisoire peut être prononcée pour :',
@@ -646,7 +646,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // CLÔTURE DE L’INSTRUCTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Clôture de l’instruction',
     question:
         'À l’issue de l’instruction, le juge peut renvoyer devant le tribunal pour enfants :',
@@ -663,7 +663,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // RÉTENTION — DROITS SPÉCIFIQUES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (droits)',
     question:
         'En rétention, l’OPJ doit informer les représentants légaux du mineur :',
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Examen médical',
     question: 'Pour un mineur de moins de 16 ans placé en rétention :',
     options: [
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // ACCOMPAGNEMENT / ADULTE APPROPRIÉ
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Accompagnement',
     question:
         'En principe, le mineur a le droit d’être accompagné lors de ses auditions :',
@@ -714,7 +714,7 @@ final List<QuizQuestion> questionsCJPM = [
   // =====================================================
 
   // CONTRÔLE JUDICIAIRE — RÉVOCATION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (Difficile)',
     question:
         'La révocation du contrôle judiciaire d’un mineur de 16 à 18 ans n’est possible que si :',
@@ -730,7 +730,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (modification)',
     question:
         'La modification ou la mainlevée du contrôle judiciaire d’un mineur peut être décidée :',
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // ARSE MINEURS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — ARSE mineurs',
     question:
         'L’assignation à résidence sous surveillance électronique (ARSE) dans le CJPM :',
@@ -763,7 +763,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — ARSE mineurs',
     question:
         'La vérification de la faisabilité technique de l’ARSE pour un mineur est confiée :',
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // DÉTENTION PROVISOIRE — DURÉES COMPLEXES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire (Difficile)',
     question:
         'En matière correctionnelle, pour un mineur de 16 à 18 ans encourant une peine d’emprisonnement supérieure à 7 ans, la détention provisoire peut être prononcée :',
@@ -794,7 +794,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire (terrorisme)',
     question:
         'En matière criminelle de terrorisme, la détention provisoire d’un mineur de 16 à 18 ans peut atteindre :',
@@ -806,7 +806,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // CLÔTURE INSTRUCTION — ORIENTATIONS COMPLEXES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Clôture instruction (Difficile)',
     question:
         'En cas de crime reproché à un mineur d’au moins 16 ans, le juge d’instruction :',
@@ -822,7 +822,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Clôture instruction (connexité)',
     question:
         'La cour d’assises des mineurs peut être saisie, en raison de la connexité, de crimes commis par un mineur :',
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // RÉTENTION — AVIS, AVOCAT, MÉDECIN
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (Difficile)',
     question:
         'Lorsqu’un mineur de plus de 16 ans est placé en rétention, qui peut demander un examen médical ?',
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Assistance avocat (rétention)',
     question:
         'Si le mineur ou ses représentants légaux n’ont pas désigné d’avocat pour la rétention :',
@@ -872,7 +872,7 @@ final List<QuizQuestion> questionsCJPM = [
   ),
 
   // ACCOMPAGNEMENT — ADULTE APPROPRIÉ / EXCEPTIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Exceptions accompagnement',
     question:
         'Les représentants légaux peuvent être écartés de l’information et de l’accompagnement du mineur lorsque :',
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Adulte approprié',
     question: 'L’adulte approprié désigné pour accompagner le mineur :',
     options: [
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionsCJPM = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Administrateur ad hoc',
     question:
         'Si aucun adulte approprié ne peut être désigné parmi les proches du mineur, le procureur, le juge des enfants ou le juge d’instruction :',
@@ -1275,7 +1275,7 @@ class _QuizDispositionsApplicablesMineursState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1478,7 +1478,7 @@ class _QuizDispositionsApplicablesMineursState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1661,7 +1661,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2194,10 +2193,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2568,7 +2568,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2609,9 +2609,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

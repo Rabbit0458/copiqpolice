@@ -89,38 +89,38 @@ class PVProcedurePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 20 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit les agents de police judiciaire (A.P.J.) et leurs missions dans le cadre de la procédure pénale.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Mission des A.P.J. (article 20 CPP)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Mission des A.P.J. (article 20 CPP)"),
+              _BulletPoint(
                 text: "Seconder les officiers de police judiciaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Constater les crimes, les délits et les contraventions et en dresser procès-verbal.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Recevoir par procès-verbal les déclarations de toutes personnes susceptibles de fournir des renseignements sur les auteurs et complices des infractions.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les A.P.J. ne peuvent exercer effectivement leurs attributions judiciaires que si leurs activités consistent, à titre principal, en des missions comportant l’exercice de la police judiciaire.",
                   ),
@@ -181,27 +181,27 @@ class PVProcedurePage extends StatelessWidget {
             cardColor: cardFlow,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Le premier acte : la saisine"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Le premier acte : la saisine"),
+              _Paragraph(
                 "Le premier acte de la procédure, appelé « saisine », décrit la manière dont les services de police ont connaissance des faits.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) La procédure : un ensemble cohérent de PV"),
-              const _Paragraph(
+              _SubTitle("B) La procédure : un ensemble cohérent de PV"),
+              _Paragraph(
                 "L’ensemble des procès-verbaux rédigés au cours d’une même enquête constitue une procédure.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les différents actes d’investigation sont généralement classés de manière chronologique.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Objectif",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Permettre une lecture fluide : comprendre l’affaire du début à la fin, sans zones d’ombre.",
                   ),
@@ -263,10 +263,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -331,7 +331,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -374,7 +374,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -436,7 +436,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -468,7 +468,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -481,7 +481,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

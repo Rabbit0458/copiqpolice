@@ -110,16 +110,16 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-13 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’atteinte au secret professionnel.",
                 ),
@@ -135,116 +135,116 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "L’article 226-13 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " incrimine la révélation d’une information à caractère secret par une personne qui en est dépositaire. "
                       "Ce délit protège la confiance nécessaire à l’exercice de certaines professions ou fonctions, mais aussi "
                       "l’intérêt des particuliers.",
                 ),
               ]),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("A) Une personne dépositaire d’un secret"),
+              _SubTitle("A) Une personne dépositaire d’un secret"),
               _Paragraph.rich([
                 TextSpan(
                   text: "L’article 226-13 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " vise la personne dépositaire « soit par son état ou sa profession, soit en raison d’une fonction ou d’une mission temporaire ». "
                       "Cette formule évite une énumération trop longue (médecin, pharmacien, policier, magistrat, greffier, avocat, banquier, expert-comptable, etc.).",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "En l’absence de texte spécial, les juges apprécient au cas par cas si une personne est tenue au secret professionnel.",
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Le dépositaire n’est pas seulement un confident : c’est celui qui a appris des données à caractère confidentiel, "
                 "de quelque manière que ce soit, à l’occasion de son état, profession, fonction ou mission.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("• Dépositaire en raison de son état"),
-              const _Paragraph(
+              _SubTitle("• Dépositaire en raison de son état"),
+              _Paragraph(
                 "L’« état » renvoie à une situation de fait ou de droit et à un statut juridique professionnel. "
                 "Exemples : ministre du culte, étudiants/élèves en formation vers une profession soumise au secret "
                 "(ex. élèves orthophonistes, masseurs-kinésithérapeutes, etc.).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• Dépositaire en raison de sa profession"),
-              const _Paragraph(
+              _SubTitle("• Dépositaire en raison de sa profession"),
+              _Paragraph(
                 "La profession est l’activité habituellement exercée pour subvenir à ses besoins. Certaines professions, "
                 "par leurs règles, astreignent leurs membres au secret (professions médicales, avocats, professions financières/commerciales, "
                 "policiers, magistrats, etc.).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• Dépositaire en raison de sa fonction"),
-              const _Paragraph(
+              _SubTitle("• Dépositaire en raison de sa fonction"),
+              _Paragraph(
                 "La fonction est une charge et l’activité qu’elle occasionne. Le secret s’applique aux destinataires d’informations "
                 "en raison de leurs fonctions (catégorie interprétée par la jurisprudence : agents de la fonction publique, services divers, etc.).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "• Dépositaire en raison d’une mission temporaire",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La mission temporaire vise une tâche ponctuelle confiée : jurés, membres assesseurs, experts, etc. "
                 "Il faut que l’intéressé ait accès à des informations confidentielles ou destinées à l’être.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un secret"),
-              const _Paragraph(
+              _SubTitle("B) Un secret"),
+              _Paragraph(
                 "Le secret peut être une confidence, une situation, une formule, ou plus largement toute information "
                 "dont le dépositaire a connaissance à l’occasion de sa profession/fonction.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La Cour de cassation étend la notion à tout ce que la personne tenue au secret a pu constater, découvrir "
                 "ou déduire personnellement dans l’exercice de ses missions.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le caractère secret de l’information ne s’éteint pas avec le décès de la personne concernée.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un acte de révélation"),
-              const _Paragraph(
+              _SubTitle("C) Un acte de révélation"),
+              _Paragraph(
                 "La forme de la révélation importe peu : elle peut être orale, écrite, ou résulter de la transmission d’un document "
                 "couvert par le secret.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le délit est constitué dès que l’information est communiquée à une seule personne, même si elle est elle-même soumise "
                 "au secret professionnel.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Si l’information a déjà été rendue publique, l’infraction peut quand même être retenue contre le dépositaire "
                 "qui la confirme ou l’infirme.",
               ),
@@ -293,90 +293,90 @@ class AtteinteSecretProfessionnelPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-13 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : 1 an d’emprisonnement et 15 000€ d'amende (peine principale) et délit constitué par la révélation d’un secret.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Peines complémentaires possibles (notamment) via ",
                 ),
                 TextSpan(
                   text: "l’article 226-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : affichage/diffusion de la décision, interdiction définitive ou temporaire d’exercer une activité sociale ou professionnelle.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text: "Tentative : NON (non prévue / non punissable).",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elle suppose un des faits constitutifs de complicité prévus par la loi : aide et assistance, provocation ou instructions données.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               _NotaBox(
                 title: "Exception (article 226-14 C.P.)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’article 226-14 du Code pénal prévoit des cas où l’article 226-13 n’est pas applicable, notamment :\n"
                         "• Signalement aux autorités (judiciaires, médicales ou administratives) de maltraitances, privations ou sévices "
@@ -431,10 +431,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -499,7 +499,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -542,7 +542,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -604,7 +604,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -636,7 +636,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -649,7 +649,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

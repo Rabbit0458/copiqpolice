@@ -4,7 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 class PaCadresEnqueteContenuPage extends StatelessWidget {
   const PaCadresEnqueteContenuPage({super.key});
 
-  static const String routeName = '/pa/dps_dpg/cadres_juridiques/cadres_enquete';
+  static const String routeName = '/pa/dps_dpg/cadres_juridiques/cadres_enquete/contenu';
 
   @override
   Widget build(BuildContext context) {

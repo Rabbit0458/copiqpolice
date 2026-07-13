@@ -89,27 +89,27 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le contrôle d’identité est l’opération par laquelle une personne est invitée à justifier "
                 "sur-le-champ de son identité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Rappel",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le contrôle se déroule sans qu’il soit porté atteinte à la dignité de la personne qui en fait l’objet — ",
                   ),
                   TextSpan(
                     text: "art. R. 434-16 du C.S.I.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -123,30 +123,30 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 78-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : toute personne sur le territoire national doit accepter de se prêter à un contrôle d’identité réalisé dans les conditions légales.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 78-2 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixe les principaux régimes du contrôle d’identité (judiciaire, réquisitions, préventif, zone frontière…).",
                 ),
@@ -164,19 +164,19 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
             titleColor: textMain,
             children: [
               const _SubTitle("A) Personnes concernées"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Toute personne se trouvant sur le territoire national doit accepter de se prêter à un contrôle d’identité effectué légalement — ",
                 ),
                 TextSpan(
                   text: "art. 78-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
@@ -190,19 +190,19 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
                     "Dans les cas prévus par le C.P.P. : O.P.J. et, sur leur ordre et sous leur responsabilité, A.P.J. et certains A.P.J. adjoints.",
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Certains cas spécifiques (ex. cadres prévus par les articles 78-2-2 et 78-2-4) concernent aussi des A.P.J. adjoints listés par le C.P.P. — références dans ",
                 ),
                 TextSpan(
                   text: "l’art. 21-1° ter (C.P.P.)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
 
@@ -219,9 +219,9 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
                   ),
                 ),
                 const TextSpan(text: " — "),
-                TextSpan(
+                const TextSpan(
                   text: "art. 78-2 (C.P.P.)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -262,49 +262,49 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
             titleColor: textMain,
             children: [
               const _SubTitle("A) Contrôles relevant de la police judiciaire"),
-              _Paragraph.rich([
-                const TextSpan(text: "Référence principale : "),
+              const _Paragraph.rich([
+                TextSpan(text: "Référence principale : "),
                 TextSpan(
                   text: "art. 78-2 (alinéas 1 à 7) du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
               const _SubTitle("1) À l’initiative des policiers"),
-              _Paragraph.rich([
-                const TextSpan(text: "Raisons plausibles de soupçonner ("),
+              const _Paragraph.rich([
+                TextSpan(text: "Raisons plausibles de soupçonner ("),
                 TextSpan(
                   text: "art. 78-2 (alinéas 2 à 6) du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") :"),
+                TextSpan(text: ") :"),
               ]),
               const SizedBox(height: 8),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Qu’elle a commis ou tenté de commettre une infraction (crime, délit ou contravention) — art. 78-2 al. 2.",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Qu’elle se prépare à commettre un crime ou un délit — art. 78-2 al. 3 (ex. comportement anormal, fuite, changements brusques…).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Qu’elle est susceptible de fournir des renseignements utiles à l’enquête en cas de crime ou délit — art. 78-2 al. 4 (contraventions exclues).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Qu’elle a violé des obligations/interdictions (contrôle judiciaire, ARSE, peine/mesure suivie) — art. 78-2 al. 5.",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Qu’elle fait l’objet de recherches ordonnées par une autorité judiciaire — art. 78-2 al. 6.",
               ),
@@ -312,15 +312,15 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("2) Sur réquisitions du procureur"),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Art. 78-2 al. 7 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réquisitions écrites précisant les infractions à rechercher, les lieux et la période. "
                       "Le contrôle vise toute personne présente dans le périmètre défini.",
@@ -341,9 +341,9 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
                     ),
                   ),
                   const TextSpan(text: " — "),
-                  TextSpan(
+                  const TextSpan(
                     text: "art. 78-2 al. 7 (C.P.P.)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
@@ -355,15 +355,15 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               const _SubTitle("B) Contrôles d’identité préventifs"),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Art. 78-2 al. 8 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’identité de toute personne peut être contrôlée pour prévenir une atteinte à l’ordre public, "
                       "notamment à la sécurité des personnes et des biens.",
@@ -392,15 +392,15 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               const _SubTitle("C) Contrôles en zone frontière"),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Art. 78-2 al. 9 à 17 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : vérification du respect des obligations de détention, port et présentation de titres dans certaines zones (Schengen, ports/aéroports/gares, trains transnationaux, etc.).",
                 ),
@@ -418,15 +418,15 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
               const SizedBox(height: 14),
 
               const _SubTitle("D) Contrôles dans des locaux professionnels"),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Art. 78-2-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : sur réquisitions écrites du procureur (durée max 1 mois), pour vérifier notamment le travail dissimulé. "
                       "Visent les personnes occupées dans l’entreprise (locaux à usage exclusivement professionnel).",
@@ -438,16 +438,16 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
               const _SubTitle(
                 "E) Visites de véhicules & inspection/fouille de bagages",
               ),
-              _Paragraph.rich([
-                const TextSpan(text: "Cadre principal : "),
+              const _Paragraph.rich([
+                TextSpan(text: "Cadre principal : "),
                 TextSpan(
                   text: "art. 78-2-2 à 78-2-5 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               const _IntroBullet(
@@ -473,68 +473,68 @@ class ControleIdentiteGeneralitesPage extends StatelessWidget {
             cardColor: cardVerif,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Vérification d’identité"),
+            children: const [
+              _SubTitle("A) Vérification d’identité"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 78-3 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : si la personne refuse ou ne peut justifier de son identité, elle peut être retenue sur place "
                       "ou conduite au local pour vérification, et doit être présentée à un O.P.J.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Durée maximale : 4 heures (responsabilité exclusive de l’O.P.J.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Droits possibles notifiés par un O.P.J. (ou A.P.J. sous contrôle d’un O.P.J.) : aviser le procureur, prévenir un proche, etc. — ",
                   ),
                   TextSpan(
                     text: "art. 78-3 (C.P.P.)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Vérification de situation"),
+              _SubTitle("B) Vérification de situation"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 78-3-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’un contrôle/vérification révèle des raisons sérieuses de penser que le comportement peut être lié à des activités terroristes, "
                       "une retenue peut être décidée même en présence d’un justificatif d’identité.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Responsabilité exclusive de l’O.P.J., sur place ou au local.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Durée maximale : 4 heures, limitée au temps nécessaire (consultation fichiers, contacts services, etc.).",
               ),
@@ -574,10 +574,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -642,7 +642,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -685,7 +685,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -747,7 +747,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -779,7 +779,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -792,7 +792,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

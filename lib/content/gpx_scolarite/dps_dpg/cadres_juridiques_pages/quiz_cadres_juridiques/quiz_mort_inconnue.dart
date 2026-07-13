@@ -101,7 +101,7 @@ final List<QuizQuestion> questionsMortInconnue = [
   // =========================================================
   //                     NIVEAU FACILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Cadre juridique",
     question:
         "Dans quel texte est prévue la procédure de recherche des causes de la mort de cause inconnue ou suspecte ?",
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Finalité",
     question:
         "Quel est l’objectif principal de l’enquête prévue par l’article 74 du Code de procédure pénale ?",
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application",
     question:
         "Quelle est la première condition pour appliquer l’article 74 du Code de procédure pénale ?",
@@ -146,7 +146,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application",
     question:
         "Outre la découverte d’un cadavre, quelle autre condition est exigée pour l’application de l’article 74 du Code de procédure pénale ?",
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Découverte de cadavre",
     question:
         "Que signifie l’expression « découverte de cadavre » au sens de l’article 74 du Code de procédure pénale ?",
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie des morts",
     question:
         "Parmi les propositions suivantes, laquelle NE fait PAS partie des trois catégories de décès distinguées par la loi ?",
@@ -192,7 +192,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mort naturelle",
     question:
         "La mort naturelle, au sens de l’article 78 du Code civil, trouve son origine :",
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mort violente non pénale",
     question:
         "La mort violente non criminelle ni délictuelle recouvre notamment :",
@@ -223,7 +223,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procureur de la République",
     question:
         "Qui doit être informé immédiatement par l’officier ou l’agent de police judiciaire en cas de découverte d’un cadavre de cause inconnue ou suspecte ?",
@@ -238,7 +238,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Premières constatations",
     question:
         "Que doit faire l’officier de police judiciaire, ou l’agent agissant sous son contrôle, après avoir été avisé d’une mort suspecte ?",
@@ -257,7 +257,7 @@ final List<QuizQuestion> questionsMortInconnue = [
   // =========================================================
   //                   NIVEAU INTERMÉDIAIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Rôle du procureur",
     question:
         "Selon l’article 74 du Code de procédure pénale, que peut faire le procureur de la République après avoir été informé d’une mort suspecte ?",
@@ -273,7 +273,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Enquête art. 74",
     question:
         "Dans le cadre de l’enquête pour recherche des causes de la mort (article 74 du Code de procédure pénale), quels actes peuvent être réalisés sur instructions du procureur de la République ?",
@@ -288,7 +288,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Durée",
     question:
         "À l’issue d’un délai de huit jours à compter des instructions du procureur de la République, que peuvent devenir les investigations menées au titre de l’article 74 du Code de procédure pénale ?",
@@ -304,7 +304,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information judiciaire",
     question:
         "Dans le cadre de la mort de cause inconnue ou suspecte, qui peut requérir l’ouverture d’une information pour recherche des causes de la mort ?",
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Article 80-4",
     question:
         "Selon l’article 80-4 du Code de procédure pénale, les membres de la famille ou les proches de la personne décédée peuvent :",
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rôle de la famille",
     question:
         "En cas d’inaction du parquet concernant une mort suspecte, que peut faire la famille du défunt ?",
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Autopsie",
     question:
         "Dans le cadre de l’article 74 du Code de procédure pénale, l’autopsie est encadrée par :",
@@ -366,7 +366,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Autopsie",
     question:
         "À qui la réquisition d’autopsie peut-elle être adressée dans le cadre de l’enquête pour recherche des causes de la mort ?",
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Réquisitions",
     question:
         "Dans le cadre de l’article 74 du Code de procédure pénale, les réquisitions du procureur de la République concernent notamment :",
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Réquisitions",
     question:
         "Quelle est l’obligation des personnes requises (non inscrites sur les listes d’experts) selon l’article 74 du Code de procédure pénale ?",
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Limites",
     question:
         "Dans le cadre de l’enquête de l’article 74 du Code de procédure pénale, l’officier de police judiciaire :",
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites de l’enquête",
     question:
         "Lorsque l’enquête de l’article 74 du Code de procédure pénale établit une mort naturelle ou une mort violente sans responsabilité d’un tiers, que peut faire le procureur de la République ?",
@@ -445,7 +445,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites de l’enquête",
     question:
         "Si des doutes subsistent sur les causes de la mort après l’enquête de l’article 74 du Code de procédure pénale, le procureur de la République peut :",
@@ -461,7 +461,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites de l’enquête",
     question:
         "Si l’enquête permet d’établir le caractère criminel ou délictuel de l’événement, le procureur de la République peut notamment :",
@@ -480,7 +480,7 @@ final List<QuizQuestion> questionsMortInconnue = [
   // =========================================================
   //                    NIVEAU DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Découverte de corps",
     question:
         "Vous êtes officier de police judiciaire. On vous signale la découverte d’un corps dans un appartement, sans trace évidente de lutte, mais dans un contexte ambigu. Quelle démarche est conforme à l’article 74 du Code de procédure pénale ?",
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mort violente non pénale",
     question:
         "Une personne décède à la suite d’une chute d’échelle sur un chantier, sans élément laissant supposer une infraction. Comment qualifier juridiquement la mort ?",
@@ -511,7 +511,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Autopsie",
     question:
         "Une autopsie a été ordonnée dans le cadre de l’article 74 du Code de procédure pénale. Quelle affirmation est exacte ?",
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Limites art. 74",
     question:
         "Dans le cadre strict de l’enquête pour recherche des causes de la mort (article 74 du Code de procédure pénale), quelle est la position concernant la garde à vue ?",
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Ouverture d’information",
     question:
         "Après une enquête de l’article 74 du Code de procédure pénale, des doutes sérieux subsistent. Le procureur de la République requiert une information pour recherche des causes de la mort. Quelle conséquence majeure en découle ?",
@@ -559,7 +559,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juge d’instruction — Pouvoirs",
     question:
         "Dans le cadre d’une information pour recherche des causes de la mort (articles 74 et 80-4 du Code de procédure pénale), le juge d’instruction dispose :",
@@ -575,7 +575,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes délégués — Juge d’instruction",
     question:
         "Dans une information pour recherche des causes de la mort, le juge d’instruction peut déléguer par commission rogatoire à un officier de police judiciaire :",
@@ -591,7 +591,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Limites",
     question:
         "Dans une information pour recherche des causes de la mort, les interceptions de correspondances émises par la voie des télécommunications peuvent être réalisées :",
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Suites de l’enquête",
     question:
         "À l’issue d’une enquête menée en application de l’article 74 du Code de procédure pénale, un faisceau d’indices graves et concordants laisse supposer un homicide volontaire. Quelle est l’option la plus cohérente pour le procureur de la République ?",
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Exhumation",
     question:
         "Après l’inhumation d’un corps, de nouveaux éléments font suspecter une cause pénale du décès. Quel mécanisme procédural permet, le cas échéant, l’exhumation du corps aux fins d’autopsie ?",
@@ -638,7 +638,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police technique — APJ",
     question:
         "Dans le cadre d’une information pour recherche des causes de la mort, les agents de police judiciaire, sous le contrôle de l’officier de police judiciaire commis par le juge d’instruction, peuvent notamment :",
@@ -654,7 +654,7 @@ final List<QuizQuestion> questionsMortInconnue = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Personne grièvement blessée",
     question:
         "Les dispositions de l’article 74 du Code de procédure pénale s’appliquent également en cas de découverte d’une personne grièvement blessée lorsque :",
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionsMortInconnue = [
 // PAGE
 // ============================================================================
 class QuizMortInconnuePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/mort_inconnue';
+  static const String routeName = '/gpx/dps/generalites/quiz/mort_inconnue';
   final String uid;
   final String email;
 
@@ -998,7 +998,7 @@ class _QuizMortInconnuePageState extends State<QuizMortInconnuePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1187,7 +1187,7 @@ class _QuizMortInconnuePageState extends State<QuizMortInconnuePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1339,7 +1339,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1865,10 +1864,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2238,7 +2238,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2279,9 +2279,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

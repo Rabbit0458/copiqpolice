@@ -158,18 +158,18 @@ class PermisConduirePage extends StatelessWidget {
                 "• Par le préfet : mesure de sûreté administrative, notamment pendant la rétention, ou à la suite d’un PV / contrôle médical d’aptitude.\n"
                 "• Par la juridiction pénale : peine alternative ou complémentaire (durées variables selon le fondement).",
               ),
-              _NotaBox(
+              const _NotaBox(
                 title: "Repères NATINF",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Suspension liée au Code de la route : ",
                   ),
-                  const TextSpan(text: "NATINF 5707"),
-                  const TextSpan(
+                  TextSpan(text: "NATINF 5707"),
+                  TextSpan(
                     text: " ; suspension suite à infraction à un autre code : ",
                   ),
-                  const TextSpan(text: "NATINF 7953"),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "NATINF 7953"),
+                  TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 12),
@@ -248,16 +248,16 @@ class PermisConduirePage extends StatelessWidget {
             cardColor: cardDocs,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les permis délivrés avant le 19 janvier 2013 restent valables pour la conduite des véhicules concernés. "
                 "Ils doivent être échangés contre un nouveau modèle avant le 19/01/2033. "
                 "Les équivalences associées sont reconnues même si elles ne sont pas mentionnées sur le titre.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "NOTA : une catégorie B obtenue avant le 20/01/1975 autorise la conduite des camping-cars de PTAC > 3,5 t "
                         "(mention « 79 : B motorhome >3500 kg »).",
@@ -274,23 +274,23 @@ class PermisConduirePage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) UE / EEE"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) UE / EEE"),
+              _Paragraph(
                 "Reconnu en France s’il est en cours de validité. Échange possible sans nouvel examen si le titulaire réside normalement en France. "
                 "L’échange devient obligatoire notamment en cas d’infraction en France ayant entraîné une mesure de restriction/suspension/retrait du droit de conduire "
                 "ou un retrait de points (NATINF 21944).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Hors UE / hors EEE"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Hors UE / hors EEE"),
+              _Paragraph(
                 "Reconnu pendant 1 an après l’acquisition de la résidence normale en France. Au-delà, le permis n’est plus reconnu et le titulaire perd le droit de conduire "
                 "pour les véhicules soumis à permis (NATINF 7536). Échange possible pendant un an si accord de réciprocité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Définition",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Résidence normale : lieu où une personne demeure habituellement, soit 185 jours par année civile.",
@@ -379,13 +379,13 @@ class PermisConduirePage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("B) Délits « défaut de permis » (NATINF)"),
-              _Paragraph.rich([
-                const TextSpan(text: "Conduite sans permis : "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "Conduite sans permis : "),
+                TextSpan(
                   text: "NATINF 7536",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               _Paragraph.rich([
                 const TextSpan(
@@ -411,16 +411,16 @@ class PermisConduirePage extends StatelessWidget {
                 _lawSpan("L. 221-2-1 du Code de la route"),
                 const TextSpan(text: "."),
               ]),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Conduite malgré suspension administrative/judiciaire : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "NATINF 5707",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               _Paragraph.rich([
                 const TextSpan(
@@ -434,20 +434,20 @@ class PermisConduirePage extends StatelessWidget {
                 _lawSpan("L. 224-16 du Code de la route"),
                 const TextSpan(text: "."),
               ]),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Conduite malgré interdiction d’obtenir la délivrance : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "NATINF 5709",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
-                bodySpans: const [
+              const _NotaBox(
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
@@ -490,10 +490,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -558,7 +558,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -601,7 +601,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -663,7 +663,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -695,7 +695,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -708,7 +708,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

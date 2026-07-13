@@ -112,51 +112,51 @@ class NonJustificationRessources extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 321-6 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la non-justification de ressources.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Il existe des incriminations spécifiques en matière de : ",
                   ),
                   TextSpan(
                     text: "terrorisme (article 421-2-3 C.P.)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ", "),
+                  TextSpan(text: ", "),
                   TextSpan(
                     text: "proxénétisme (article 225-6 3° C.P.)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ", "),
+                  TextSpan(text: ", "),
                   TextSpan(
                     text: "mendicité (article 225-12-5 alinéa 6 C.P.)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -170,130 +170,130 @@ class NonJustificationRessources extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Absence de justification"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Absence de justification"),
+              _Paragraph(
                 "L’infraction suppose :\n"
                 "• l’absence de justification de ressources correspondant au train de vie ; ou\n"
                 "• l’absence de justification de l’origine d’un bien détenu.\n"
                 "La preuve se construit à partir d’éléments objectifs (revenus connus, dépenses, patrimoine, mouvements de fonds, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 "1) Ressources ne correspondant pas au train de vie",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le patrimoine ou le train de vie est sans rapport avec les revenus. "
                 "Il revient au mis en cause de justifier de ses moyens d’existence par des documents probants "
                 "(factures, bulletins de paye, déclarations de revenus…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La loi n’édicte aucune présomption de responsabilité pénale : il appartient à l’accusation d’en rapporter la preuve ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 13 juin 2012)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Condamnation d’un couple (train de vie modeste) mais avoirs bancaires disproportionnés, nombreux mouvements de fonds et paiements en espèces ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 6 février 2008)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Possession d’importantes liquidités sans rapport avec les ressources issues de l’exploitation d’un bar-restaurant ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 19 mai 1999)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Origine indéterminée d’un bien détenu"),
-              const _Paragraph(
+              _SubTitle("2) Origine indéterminée d’un bien détenu"),
+              _Paragraph(
                 "L’infraction peut aussi porter sur un bien (mobilier ou immobilier) dont l’origine n’est pas justifiée. "
                 "La justification de la détention licite se fait notamment par la production de factures.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Non-justification de sommes versées sur un compte bancaire, de la possession d’un véhicule Mercedes et de la construction d’une maison individuelle ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 27 avril 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Relations habituelles"),
-              const _Paragraph(
+              _SubTitle("B) Relations habituelles"),
+              _Paragraph(
                 "Le mis en cause doit être en relations habituelles :\n"
                 "• avec un ou plusieurs auteurs d’infractions (crimes/délits punis d’au moins 5 ans) procurant un profit direct ou indirect ; ou\n"
                 "• avec la victime d’une de ces infractions.\n"
                 "Les relations habituelles peuvent être prouvées par des rencontres, visites, entrevues…",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Parents en possession de numéraires/vêtements provenant de vols réalisés par leurs enfants, vivant en groupe étroit et organisé, ressources insuffisantes pour expliquer la fortune ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 08 février 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La condamnation peut intervenir sans condamnation définitive préalable de la personne fréquentée (relation habituelle avec une personne se livrant à des infractions punies d’au moins 5 ans)",
                   ),
@@ -310,36 +310,36 @@ class NonJustificationRessources extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Conscience de bénéficier du produit d’infractions",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur doit avoir conscience de bénéficier du produit d’infractions commises par une personne "
                 "avec laquelle il entretient des relations habituelles.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "N’est pas coupable la compagne d’un trafiquant de drogue qui « croit » vivre avec un dirigeant de société ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 25 juin 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Conscience de profiter des ressources de la victime",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur peut aussi avoir conscience de bénéficier de ressources provenant de la victime "
                 "(ex. traite des êtres humains, proxénétisme, extorsion…).",
               ),
@@ -354,44 +354,44 @@ class NonJustificationRessources extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 321-6-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque les crimes/délits sont commis par un mineur sur lequel l’auteur a autorité.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 321-6-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque les infractions concernées relèvent notamment de la traite des êtres humains, extorsion, association de malfaiteurs, armes/explosifs, trafic de stupéfiants (y compris relations avec usagers).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 321-6-1 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’il s’agit d’une infraction mentionnée à l’alinéa précédent commise par un ou plusieurs mineurs.",
                 ),
@@ -407,110 +407,110 @@ class NonJustificationRessources extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Forme simple : "),
-                const TextSpan(
+                TextSpan(text: "Forme simple : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 321-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (alinéa 1) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (alinéa 1) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 321-6-1 al. 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (alinéa 2) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (alinéa 2) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 200 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 321-6-1 al. 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (alinéa 3) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (alinéa 3) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 321-6-1 al. 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La confiscation des biens saisis dont le propriétaire ne peut justifier de l’origine est ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "obligatoire",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(text: " en cas de condamnation au titre de "),
+                  TextSpan(text: " en cas de condamnation au titre de "),
                   TextSpan(
                     text: "l’article 321-6 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              SizedBox(height: 12),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
@@ -550,10 +550,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -618,7 +618,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -661,7 +661,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -723,7 +723,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -734,10 +734,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -749,13 +748,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -768,13 +766,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -89,7 +89,7 @@ class QuizQuestion {
 /// Banque de questions du **QUIZ Complicité**
 final List<QuizQuestion> questionsComplicite = [
   // ===================== FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définition',
     question: 'Qu’est-ce que la complicité en droit pénal français ?',
     options: [
@@ -103,7 +103,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le cours précise que la complicité consiste en une entente momentanée entre plusieurs personnes dans le but d’accomplir une infraction déterminée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Acteurs',
     question:
         'Le complice est celui qui, selon l’article 121-7 du Code pénal, est…',
@@ -118,7 +118,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Art. 121-7 C. pén. : est complice celui qui, volontairement, aide ou assiste l’auteur dans la préparation ou la consommation de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Acteurs',
     question: 'Qui est le coauteur d’une infraction ?',
     options: [
@@ -132,7 +132,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le coauteur participe directement à la réalisation des éléments constitutifs de l’infraction, contrairement au complice qui se situe en soutien.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions',
     question:
         'Combien de conditions sont classiquement exigées pour qu’une complicité punissable soit retenue ?',
@@ -142,7 +142,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le cours rappelle les trois conditions : un fait principal punissable, une participation à l’infraction et une intention de participer à cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal',
     question: 'La complicité punissable suppose en premier lieu l’existence :',
     options: [
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Sans fait principal punissable, il n’y a pas de « criminalité d’emprunt » et donc pas de complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Participation',
     question:
         'La participation à l’infraction, au sens de la complicité, peut notamment prendre la forme :',
@@ -170,7 +170,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La complicité par aide ou assistance consiste à fournir un soutien matériel ou moral facilitant la préparation ou la consommation de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'La troisième condition de la complicité punissable concerne l’intention. Le complice doit :',
@@ -184,7 +184,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice doit vouloir s’associer à l’acte délictueux et connaître le caractère délictueux des faits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'Selon l’article 121-6 du Code pénal, comment le complice est-il puni ?',
@@ -198,7 +198,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Art. 121-6 C. pén. : le complice d’un crime ou d’un délit est puni comme auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal',
     question:
         'La complicité peut-elle être retenue si l’auteur principal n’est pas identifié mais que le fait principal est établi ?',
@@ -208,7 +208,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice peut être poursuivi même si l’auteur principal n’est pas poursuivi ou identifié, dès lors que le fait principal punissable est démontré.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question:
         'En matière contraventionnelle, la complicité par provocation ou instructions :',
@@ -222,7 +222,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Certaines contraventions sont expressément réprimées par provocation ou instructions (référence à l’article R. 610-2 C. pén.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Définition',
     question:
         'La complicité par aide ou assistance consiste principalement à :',
@@ -236,7 +236,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice facilite l’infraction en soutenant l’auteur, sans réaliser lui-même tous les éléments de l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration',
     question:
         'Une personne laisse volontairement sa voiture à disposition pour que son ami aille commettre un braquage. Elle :',
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Elle met sciemment un moyen à disposition pour faciliter l’infraction, ce qui caractérise l’aide ou assistance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration',
     question:
         'Une personne garde la porte pendant que l’auteur principal vole dans le magasin. Elle est :',
@@ -264,7 +264,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La surveillance de l’arrivée de la police ou du personnel est une aide matérielle à la commission du vol.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Présence sur les lieux',
     question:
         'La seule présence sur les lieux d’une infraction, sans acte positif ni accord préalable :',
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Il faut un acte positif ou au minimum un comportement significatif d’une volonté d’adhésion à l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal',
     question:
         'Le fait principal punissable, pour fonder la complicité, doit être :',
@@ -291,7 +291,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Tous les crimes et délits sont en principe susceptibles de complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative',
     question:
         'La complicité est-elle possible lorsqu’il n’y a qu’une tentative de l’infraction principale ?',
@@ -301,7 +301,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Dès lors que la tentative est elle-même punissable, la complicité de cette tentative peut être retenue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'Pour que la complicité soit retenue, le complice doit connaître :',
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Il suffit qu’il sache qu’il se joint à un comportement interdit par la loi pénale, sans connaître tous les détails.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'Un individu pensant aider à un acte licite (ex : déménagement) alors qu’il s’agit en réalité d’un vol organisé :',
@@ -329,7 +329,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La complicité suppose la connaissance du caractère délictueux des faits.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'En pratique, pourquoi la peine du complice peut-elle être différente de celle de l’auteur ?',
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Même peine encourue, mais le juge tient compte du rôle concret, des antécédents, de la personnalité, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions',
     question:
         'En matière de contravention, la complicité par aide ou assistance :',
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le principe est l’absence de complicité de contravention, sauf disposition expresse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Filmer sciemment une agression pour la diffuser sur les réseaux sociaux :',
@@ -368,7 +368,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le dispositif dit de « happy slapping » assimile l’enregistrement à un acte de complicité des atteintes volontaires à l’intégrité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemple',
     question:
         'Une personne qui indique « la porte reste toujours ouverte à telle heure » à un voleur :',
@@ -381,7 +381,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Elle donne une indication précise destinée à faciliter le cambriolage.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemple',
     question:
         'Un ami qui garde les bijoux volés « le temps que ça se calme » est :',
@@ -391,7 +391,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La garde postérieure des choses provenant d’un crime ou délit caractérise le recel, non la complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Auteur moral',
     question:
         'Comment désigne-t-on celui qui incite autrui à commettre une infraction sans y participer matériellement ?',
@@ -405,7 +405,7 @@ final List<QuizQuestion> questionsComplicite = [
         'C’est l’exemple type du complice par provocation : il pousse une personne déterminée à commettre un crime ou un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conditions',
     question:
         'La complicité suppose-t-elle que l’infraction principale soit effectivement consommée ?',
@@ -417,7 +417,7 @@ final List<QuizQuestion> questionsComplicite = [
   ),
 
   // ===================== MOYENNE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question: 'La complicité ne sera pas retenue lorsque le fait principal :',
     options: [
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Si le fait principal est justifié (légitime défense, ordre de la loi, commandement de l’autorité légitime), il n’est pas punissable : la criminalité d’emprunt fait défaut.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'La complicité ne pourra pas non plus être retenue si le fait principal :',
@@ -445,7 +445,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Si le fait principal n’est plus punissable en raison de la prescription ou d’une amnistie, la complicité tombe également.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'Selon l’article 121-7 du Code pénal, les crimes et délits sont en principe :',
@@ -459,7 +459,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Art. 121-7 C. pén. : en principe, tous les crimes et délits peuvent donner lieu à complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question: 'En matière contraventionnelle, la complicité :',
     options: [
@@ -473,7 +473,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La complicité de contravention est réprimée uniquement lorsqu’un texte le prévoit (ex. R. 610-2 C. pén.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aide ou assistance',
     question:
         'Quelle formule décrit le mieux la complicité par aide ou assistance ?',
@@ -488,7 +488,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Exemples : fournir une arme, prêter un véhicule, héberger les auteurs avant les faits…',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aide ou assistance',
     question:
         'Parmi les exemples suivants, lequel illustre une complicité par aide ou assistance ?',
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Fournir l’arme ou le poison ayant servi à l’infraction est un cas classique de complicité par aide ou assistance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation',
     question:
         'Pour qu’il y ait complicité par provocation, la provocation doit notamment :',
@@ -518,7 +518,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le « provocateur » est l’auteur moral de l’infraction ; la provocation doit être déterminée et avoir produit au moins une tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation',
     question:
         'La Chambre criminelle a jugé que le passager d’un véhicule qui donne l’ordre de forcer un barrage de gendarmerie :',
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Cass. crim. 18 mars 2003 : le passager incitant le conducteur à forcer le barrage est complice par provocation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fourniture d’instructions',
     question: 'La complicité par fourniture d’instructions suppose :',
     options: [
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Exemple : indiquer les heures d’absence des occupants pour faciliter un cambriolage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention criminelle',
     question: 'Pour l’intention criminelle du complice, il faut notamment :',
     options: [
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le cours insiste sur ces deux éléments : connaissance et volonté d’agir « ensemble et de concert ». ',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'A prête sa maison à B pour « une petite soirée », en sachant que B souhaite y organiser un trafic de stupéfiants. A :',
@@ -573,7 +573,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Il met volontairement un lieu à disposition en connaissance du projet délictueux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'Une personne donne au futur auteur un conseil juridique abstrait sur la notion de vol, sans savoir qu’il compte commettre un cambriolage le soir même. Elle :',
@@ -587,7 +587,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La complicité exige un lien avec une infraction concrète connue du complice.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Temporalité',
     question:
         'Les actes de participation du complice doivent, sauf texte contraire, intervenir :',
@@ -600,7 +600,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Il n’y a en principe pas de complicité postérieure ; les actes postérieurs relèvent d’autres infractions (recel, non-dénonciation…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Criminalité d’emprunt',
     question: 'La complicité est qualifiée de « criminalité d’emprunt » car :',
     options: [
@@ -613,7 +613,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice est puni par référence à l’infraction principale commise ou tentée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'Les peines encourues par le complice et l’auteur sont identiques, mais le juge :',
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionsComplicite = [
         'C’est l’« application de la règle » : même peine possible, mais dosages différents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances personnelles',
     question:
         'Une circonstance personnelle liée à la personne de l’auteur (ex : récidive) :',
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Les circonstances strictement personnelles à l’auteur restent attachées à sa seule personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances réelles',
     question:
         'Une circonstance réelle tenant aux modalités de l’acte (ex : vol commis de nuit) :',
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Les circonstances liées à la matérialité des faits s’appliquent à tous les participants, auteurs et complices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Dans le dispositif du happy slapping, pour être puni comme complice, l’auteur de l’enregistrement doit avoir :',
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionsComplicite = [
         'L’élément intentionnel demeure essentiel : l’enregistrement doit être réalisé en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'Un étudiant filme une bagarre grave en riant et en encourageant les coups pour partager la vidéo. Sur le plan pénal, il risque :',
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le texte assimile l’enregistrement volontaire à un acte de complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Limites',
     question:
         'Le simple silence d’une personne informée d’un projet d’infraction, sans obligation légale d’agir :',
@@ -696,7 +696,7 @@ final List<QuizQuestion> questionsComplicite = [
   ),
 
   // ===================== DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Criminalité d’emprunt',
     question:
         'Pourquoi dit-on que la complicité est une « criminalité d’emprunt » ?',
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice n’est punissable que par référence à l’infraction principale, même s’il n’en a pas commis les éléments matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'La complicité reste possible même si l’auteur principal n’est pas puni lorsque :',
@@ -725,7 +725,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le cours liste les hypothèses où le complice peut être poursuivi malgré l’absence de poursuites contre l’auteur : fuite, décès, irresponsabilité, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal punissable',
     question:
         'La complicité ne pourra pas être retenue si le fait principal échappe à la loi pénale parce que :',
@@ -739,7 +739,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Un fait principal justifié ou bénéficiant d’une amnistie n’est plus punissable : la complicité disparaît.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Participation matérielle',
     question:
         'Les actes de participation du complice doivent être, par principe :',
@@ -753,7 +753,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Il n’y a pas de complicité postérieure à l’infraction ; les actes doivent précéder ou accompagner la commission.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation',
     question:
         'Le simple conseil donné à une personne de commettre une infraction, sans don, menace, ou promesse :',
@@ -766,7 +766,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le cours précise que le « simple conseil » ne suffit pas ; il faut des circonstances telles qu’un don, une promesse, un ordre, une menace ou un abus d’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Dans le cas du « happy slapping », l’enregistrement d’images de violences volontaires est :',
@@ -780,7 +780,7 @@ final List<QuizQuestion> questionsComplicite = [
         'L’article 222-33-3-1 C. pén. assimile l’enregistrement sciemment réalisé à un acte de complicité des atteintes principales.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question:
         'En matière de répression de la complicité, les peines encourues par le complice et l’auteur :',
@@ -795,7 +795,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le sens de la règle (art. 121-6) : même peine encourue, mais individualisation par le juge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances personnelles',
     question:
         'Les circonstances personnelles à l’auteur (ex : récidive, démence) :',
@@ -808,7 +808,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Les circonstances personnelles aggravant ou atténuant la culpabilité de l’auteur ne s’étendent pas au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances réelles',
     question:
         'Les circonstances réelles qui touchent à la matérialité de l’acte (ex : réunion pour un vol) :',
@@ -821,7 +821,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Les circonstances matérielles aggravant l’infraction (arme, réunion…) s’appliquent au complice, même s’il ne les connaissait pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances mixtes',
     question:
         'Les circonstances mixtes qui concernent à la fois la personne et l’acte (ex : qualité professionnelle de l’auteur) :',
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La Cour de cassation a admis que certaines circonstances aggravantes liées à la qualité de l’auteur principal peuvent aussi s’appliquer au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative & complicité',
     question:
         'La complicité d’une tentative manquée (exécution complète mais résultat non atteint par hasard) :',
@@ -848,7 +848,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice emprunte la qualification de la tentative manquée, dès lors qu’elle est incriminée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'A donne à B l’ordre de tirer sur C. B tire mais manque sa cible. Quelle qualification pour A ?',
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionsComplicite = [
         'B est auteur d’une tentative d’homicide, A en est complice par provocation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario',
     question:
         'A fournit un pistolet à B pour tuer C. L’arme était en réalité déchargée, ce que B ignorait. B tire. A :',
@@ -874,7 +874,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La tentative impossible demeure punissable lorsque l’intention et le commencement d’exécution sont caractérisés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Limites',
     question:
         'Peut-on retenir une complicité si l’acte principal est finalement qualifié de fait justificatif (ex : légitime défense) ?',
@@ -887,7 +887,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Si le fait principal n’est pas infractionnel, la criminalité d’emprunt disparaît pour tous les participants.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Auteur / Complice',
     question: 'On parle de « coaction » lorsque plusieurs personnes :',
     options: [
@@ -899,7 +899,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Dans ce cas, chacun est coauteur, non complice : ils réalisent l’infraction de concert.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Pour que l’enregistrement soit qualifié de complicité dans le happy slapping, il faut notamment que :',
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionsComplicite = [
         'L’esprit du texte est de viser les enregistrements qui participent à la mise en scène de la violence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     question: 'La complicité d’un crime jugé en cour d’assises :',
     options: [
@@ -927,7 +927,7 @@ final List<QuizQuestion> questionsComplicite = [
   ),
 
   // ===================== EXPERT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Fait principal & tentative',
     question: 'La complicité de tentative d’infraction est-elle punissable ?',
     options: [
@@ -939,7 +939,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le complice emprunte la criminalité du fait principal : si la tentative est incriminée, la complicité demeure possible.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Temporalité des actes',
     question:
         'Une personne qui aide l’auteur à dissimuler le corps après un homicide déjà consommé :',
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Les actes purement postérieurs ne constituent pas, en principe, une complicité.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Instigation vs aide',
     question:
         'Quelle nuance principale distingue la complicité par provocation (instigation) de la complicité par aide ou assistance ?',
@@ -967,7 +967,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le provocateur est l’auteur moral : il déclenche la décision criminelle.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping',
     question:
         'Dans le dispositif sur le « happy slapping », pourquoi le législateur a-t-il choisi de qualifier l’enregistrement d’images de violences de complicité plutôt que d’infraction autonome ?',
@@ -981,7 +981,7 @@ final List<QuizQuestion> questionsComplicite = [
         'L’enregistrement est directement rattaché aux violences principales comme forme de participation.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances mixtes',
     question:
         'Que décide l’arrêt n° 04-84.235 du 7 septembre 2005 à propos des circonstances aggravantes liées à la qualité de l’auteur principal ?',
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La Cour de cassation admet l’extension au complice de certaines circonstances liées à la qualité de l’auteur.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Intention',
     question:
         'Un individu fournit un tournevis à un ami en sachant qu’il va « s’en servir pour entrer chez quelqu’un et voler », mais prétend ensuite n’avoir voulu qu’un simple « service ». Sur le plan pénal :',
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Le mobile (amitié, service) est indifférent : ce qui compte est la volonté de s’associer à un projet délictueux connu.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Application de la règle',
     question:
         'Un complice ayant joué un rôle limité peut-il recevoir une peine plus faible que l’auteur principal ?',
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Individualisation des peines : le rôle concret du complice peut justifier une sanction moindre.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration pratique',
     question:
         'Une personne qui joue de la musique très fort pour couvrir les cris de la victime pendant l’agression :',
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionsComplicite = [
     explanation: 'Elle facilite sciemment l’agression en empêchant l’alerte.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Illustration pratique',
     question:
         'Une personne indique au cambrioleur les heures précises d’absence des occupants :',
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Elle fournit une information déterminante, en connaissance de cause, pour la réalisation du cambriolage.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Limites de la complicité',
     question:
         'Peut-on retenir la complicité de complicité (une personne aidant un complice et non directement l’auteur) ?',
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionsComplicite = [
         'La théorie classique reste réticente à admettre une « complicité de complicité » déconnectée de l’infraction principale.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario avancé',
     question:
         'A fournit une arme à B en sachant que B va la revendre à C, lequel envisage un homicide. A :',
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionsComplicite = [
         'Il faut un lien intentionnel avec l’infraction déterminée, pas seulement une connaissance vague d’un usage possible.',
     difficulty: 'Expert',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Scénario avancé',
     question:
         'A organise un plan détaillé de braquage et remet ce plan à B, mais ne participe pas matériellement. B réalise le vol. A est :',
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionsComplicite = [
 // PAGE — Quiz des Complicite
 // ============================================================================
 class QuizComplicitePage extends StatefulWidget {
-  static const String routeName = '/gpx/complicite/quiz/complicite';
+  static const String routeName = '/gpx/dps/complicite/quiz/complicite';
 
   final String uid;
   final String email;
@@ -1472,7 +1472,7 @@ class _QuizComplicitePageState extends State<QuizComplicitePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1660,7 +1660,7 @@ class _QuizComplicitePageState extends State<QuizComplicitePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1812,7 +1812,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,

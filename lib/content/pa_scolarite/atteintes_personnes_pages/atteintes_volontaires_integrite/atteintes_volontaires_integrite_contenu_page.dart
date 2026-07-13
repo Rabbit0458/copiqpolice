@@ -13,7 +13,9 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
 
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark ? Colors.white70 : const Color(0xFF222222).withValues(alpha: .70);
+    final Color textSoft = isDark
+        ? Colors.white70
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -178,12 +180,29 @@ class PaAtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
             tag: 'violences_sur_fsi',
             title: "Les violences sur FSI",
             subtitle: "Qualification, aggravations et répression.",
-            imagePath: 'assets/images/atteintes_integrite.jpeg',
+            imagePath: 'assets/images/violence_pdap.png',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
               '/pa/dps_dpg/atteintes_personnes/atteintes_volontaires_integrite/violences_sur_fsi',
+            ),
+          ),
+
+          const SizedBox(height: 14),
+
+          // MODULE — OUTRAGE SEXISTE
+          _ModuleCard(
+            tag: 'outrage_sexiste',
+            title: "L'outrage sexiste et sexuel",
+            subtitle:
+                "Art. 621-1 Cp — définition, éléments constitutifs, aggravations et répression.",
+            imagePath: 'assets/images/atteintes_integrite.jpeg',
+            textMain: textMain,
+            textSoft: textSoft,
+            onTap: () => _openRoute(
+              context,
+              '/pa/dps_dpg/atteintes_personnes/atteintes_volontaires_integrite/outrage_sexiste',
             ),
           ),
 

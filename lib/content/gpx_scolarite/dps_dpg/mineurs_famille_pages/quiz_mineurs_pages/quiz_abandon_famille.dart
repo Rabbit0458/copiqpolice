@@ -107,7 +107,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — FONDEMENT / DÉFINITION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Fondement',
     question: 'Le délit d’abandon de famille est prévu et réprimé par :',
     options: [
@@ -120,7 +120,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’élément légal du délit d’abandon de famille est fixé par l’article 227-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Définition',
     question: 'L’abandon de famille consiste notamment à :',
     options: [
@@ -134,7 +134,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise l’inexécution d’une obligation de paiement pendant plus de deux mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Définition',
     question:
         'Le délit d’abandon de famille peut viser des sommes dues au profit :',
@@ -149,7 +149,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne ces bénéficiaires (enfant mineur, descendant, ascendant, conjoint).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Définition',
     question: 'L’obligation visée par 227-3 porte sur :',
     options: [
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — OBLIGATIONS FAMILIALES (EXEMPLES)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Obligations familiales',
     question:
         'Parmi les obligations familiales entrant dans le champ de 227-3, on trouve :',
@@ -181,7 +181,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite les contributions aux charges du mariage parmi les obligations familiales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Obligations familiales',
     question:
         'Parmi les obligations familiales entrant dans le champ de 227-3, on trouve aussi :',
@@ -200,7 +200,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — ACTE EXÉCUTOIRE : PRINCIPE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'L’abandon de famille suppose l’inexécution :',
     options: [
@@ -214,7 +214,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’obligation pénalement protégée doit être fondée sur une décision ou un titre exécutoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'Le support rappelle que l’acte fondant l’obligation peut être :',
     options: [
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne une décision juridictionnelle parmi les actes possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question:
         'Le support indique que l’acte fondant l’obligation peut aussi être :',
@@ -241,7 +241,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La convention homologuée est citée parmi les titres possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question:
         'Le support indique que l’acte fondant l’obligation peut aussi être :',
@@ -254,7 +254,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la convention 229-1 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question:
         'Le support indique que l’acte fondant l’obligation peut aussi être :',
@@ -267,7 +267,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite l’acte notarié parmi les titres.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'Le support mentionne aussi comme titre possible :',
     options: [
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite cette hypothèse de force exécutoire donnée par l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'Le support évoque aussi comme fondement possible :',
     options: [
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — CONNAISSANCE / NOTIFICATION DE LA DÉCISION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Notification',
     question:
         'Pour que l’inexécution soit pénalement sanctionnée, le support rappelle que la décision doit :',
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support expose ces modalités de connaissance/notoriété de l’acte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Période d’obligation',
     question: 'L’obligation de payer se poursuit :',
     options: [
@@ -332,7 +332,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — DÉFAUT DE PAIEMENT : INTÉGRALITÉ / PARTIEL / NATURE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur doit s’acquitter :',
     options: [
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support insiste sur l’intégralité du paiement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'L’infraction est constituée si le non-paiement est :',
     options: ['Total ou partiel', 'Uniquement total', 'Uniquement partiel'],
@@ -353,7 +353,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que le délit est constitué même en cas de paiement partiel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur peut être exonéré par des paiements partiels :',
     options: ['Non', 'Oui', 'Oui uniquement si bonne foi'],
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : paiements partiels ne permettent pas d’exonération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur peut être exonéré par des paiements en nature :',
     options: ['Non', 'Oui', 'Oui si accord oral'],
@@ -371,7 +371,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support exclut les paiements en nature comme exonératoires.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur peut être exonéré par compensation :',
     options: ['Non', 'Oui', 'Oui si dette réciproque'],
@@ -379,7 +379,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support exclut la compensation comme moyen d’exonération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Indexation',
     question:
         'Le délit peut être constitué lorsque le débiteur refuse de prendre en compte une indexation (réévaluation) :',
@@ -393,7 +393,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — DÉLAI DE DEUX MOIS : RÈGLES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'Le défaut de paiement doit durer :',
     options: ['Plus de deux mois', 'Deux mois exactement', 'Un mois'],
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : le débiteur doit être resté plus de deux mois sans s’acquitter intégralement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question:
         'Selon la jurisprudence citée (CA Paris, 16 mars 1994), le délit suppose :',
@@ -417,7 +417,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite CA Paris, 16 mars 1994 : “plus de deux mois”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Point de départ',
     question: 'Le point de départ du délai peut être :',
     options: [
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support fixe comme point de départ la signification de la décision.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Point de départ',
     question:
         'En cas d’interruption des paiements, le point de départ peut être :',
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : point de départ = dernier versement intégral.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Constitution du délit',
     question: 'Le délit est constitué :',
     options: [
@@ -457,7 +457,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que l’infraction est constituée dès expiration du délai.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effet du paiement tardif',
     question:
         'Un paiement intervenant tardivement efface rétroactivement le délit :',
@@ -471,7 +471,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — SITUATIONS POSTÉRIEURES (CASSATION / RÉFORMATION)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Selon le support, l’infraction subsiste même si la décision de base est ensuite cassée :',
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite Cass. crim., 26 juillet 1977 : la cassation ultérieure n’efface pas rétroactivement le délit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Selon le support, l’infraction subsiste même si la décision de base fait l’objet d’une réformation partielle :',
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — ÉLÉMENT MORAL (VOLONTÉ) + PRÉCARITÉ
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Élément moral',
     question: 'L’élément moral de 227-3 repose sur :',
     options: [
@@ -508,7 +508,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le délit sanctionne l’inexécution volontaire de l’acte fixant le montant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Élément moral',
     question:
         'Le délit d’abandon de famille suppose notamment que l’auteur ait :',
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que l’inexécution volontaire suppose la notification de la décision.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Preuve',
     question:
         'Selon le support, la charge de la preuve (notamment sur le caractère volontaire) appartient :',
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que la charge de la preuve appartient à la partie poursuivante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Exclusion',
     question: 'Le délit n’est pas constitué si le non-paiement est dû à :',
     options: [
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — INTERMÉDIATION FINANCIÈRE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intermédiation',
     question:
         'Lorsque l’intermédiation financière des pensions alimentaires est mise en œuvre, l’infraction est constituée si le parent débiteur :',
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — CIRCONSTANCES AGGRAVANTES / RÉPRESSION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Circonstances aggravantes',
     question: 'Le support indique des circonstances aggravantes pour 227-3 :',
     options: ['Aucune', 'Oui, 227-9', 'Oui, 227-10'],
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Répression',
     question:
         'Les peines encourues (personne physique) pour l’abandon de famille (227-3) sont :',
@@ -593,7 +593,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe : 2 ans + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour 227-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui si paiement partiel'],
@@ -601,7 +601,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour 227-3, la complicité est :',
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — PERSONNES MORALES (RAPPEL)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Personnes morales',
     question:
         'Le support mentionne que la responsabilité des personnes morales est prévue par :',
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite 227-4-1 pour la responsabilité des personnes morales.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Personnes morales',
     question:
         'En cas de responsabilité d’une personne morale, l’amende est encourue suivant :',
@@ -646,7 +646,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support renvoie aux modalités d’amende de l’article 131-38 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Personnes morales',
     question:
         'Le support mentionne aussi des peines complémentaires applicables aux personnes morales via :',
@@ -664,7 +664,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // CAS PRATIQUES (QCM) — ABANDON DE FAMILLE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Un parent débiteur cesse de payer la pension fixée par décision exécutoire et notifiée. Il ne verse plus rien pendant 2 mois exactement. L’infraction 227-3 est constituée :',
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte exige plus de deux mois ; la jurisprudence citée précise que deux mois seulement ne suffisent pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Un débiteur effectue des paiements partiels pendant 3 mois au lieu du montant intégral. L’infraction 227-3 peut être constituée :',
@@ -692,7 +692,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le délit est constitué même en cas de paiement partiel et que le paiement doit être intégral.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Un débiteur refuse d’appliquer l’indexation prévue, en payant l’ancien montant pendant plus de deux mois. L’infraction peut être constituée :',
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite que le refus de prendre en compte l’indexation peut constituer le délit (Cass. crim., 26 octobre 1987).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Le débiteur ne paye pas pendant plus de deux mois mais démontre une précarité persistante non volontaire. Le délit est :',
@@ -716,7 +716,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que la précarité persistante non volontaire exclut le délit (ex. CA Aix-en-Provence, 01/07/1994).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Après l’expiration du délai de plus de deux mois, le débiteur régularise intégralement. Cela efface rétroactivement l’infraction :',
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — CIBLES / BÉNÉFICIAIRES (QUI PEUT ÊTRE PROTÉGÉ ?)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question:
         'L’abandon de famille (227-3) peut concerner des sommes dues au profit :',
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise notamment l’enfant mineur parmi les bénéficiaires possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question: 'Le texte de 227-3 vise également des sommes dues au profit :',
     options: [
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le champ d’incrimination vise les obligations au profit d’un descendant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question: 'Le texte de 227-3 vise également des sommes dues au profit :',
     options: [
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le champ d’incrimination vise aussi les obligations au profit d’un ascendant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question: 'Le texte de 227-3 vise également des sommes dues au profit :',
     options: [
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — NATURE DES SOMMES (QUOI EXACTEMENT ?)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise le non-paiement d’une :',
     options: ['Pension', 'Prime de performance', 'Facture téléphonique'],
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise notamment les pensions dues au titre d’obligations familiales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise aussi le non-paiement d’une :',
     options: ['Contribution', 'Caution bancaire', 'Dette commerciale'],
@@ -808,7 +808,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise les contributions dues au titre des obligations familiales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise aussi le non-paiement de :',
     options: [
@@ -820,7 +820,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise les subsides.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise aussi le non-paiement de :',
     options: [
@@ -838,7 +838,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — ACTE EXÉCUTOIRE : LISTE DES TITRES (ENTRAÎNEMENT)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -852,7 +852,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite la décision juridictionnelle parmi les actes possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la convention homologuée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -878,7 +878,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne la convention 229-1 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne l’acte notarié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -906,7 +906,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite ce type de convention ayant reçu force exécutoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la transaction parmi les actes possibles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -930,7 +930,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne un accord issu d’une médiation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -942,7 +942,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne un accord issu d’une conciliation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — EXÉCUTOIRE / CONNAISSANCE : CONDITIONS
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'L’obligation pénalement protégée doit présenter un caractère :',
     options: ['Exécutoire', 'Facultatif', 'Moral seulement'],
@@ -968,7 +968,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support exige le caractère exécutoire de la décision ou du titre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Connaissance',
     question:
         'Le support indique que l’acte peut fonder des poursuites s’il a été :',
@@ -982,7 +982,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support insiste sur la notification légale au débiteur (ou autres formes de connaissance).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Connaissance',
     question:
         'Le support indique aussi que l’acte peut fonder des poursuites si :',
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support évoque la “connaissance légale” du débiteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Connaissance',
     question:
         'Le support précise aussi qu’à défaut, l’acte peut fonder des poursuites s’il a été :',
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — DÉFAUT DE PAIEMENT : TOTAL / PARTIEL / REFUS INDEXATION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Paiement intégral',
     question:
         'Le délit peut être constitué même si le débiteur a payé “un peu” :',
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le délit est constitué en cas de paiement partiel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Indexation',
     question:
         'Le refus de prendre en compte une indexation (réévaluation) peut :',
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite Cass. crim., 26 octobre 1987 sur le refus d’indexation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Paiement en nature',
     question:
         'Le débiteur peut échapper à l’infraction en payant “en nature” (cadeaux, courses, etc.) :',
@@ -1047,7 +1047,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que paiements en nature ne permettent pas d’exonération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Compensation',
     question:
         'Le débiteur peut échapper à l’infraction en compensant avec une dette de l’autre parent :',
@@ -1060,7 +1060,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — DÉLAI : + DE 2 MOIS (PIÈGES CLASSIQUES)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'Le texte exige que le débiteur demeure plus de deux mois :',
     options: [
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise “plus de deux mois sans s’acquitter intégralement”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question:
         'Si le débiteur ne paie pas pendant exactement deux mois, l’infraction est :',
@@ -1087,7 +1087,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite CA Paris, 16 mars 1994 : il faut dépasser les deux mois.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'Le point de départ du délai est fixé notamment à :',
     options: [
@@ -1099,7 +1099,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique la signification comme point de départ.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'En cas d’interruption des paiements, le point de départ est :',
     options: [
@@ -1115,7 +1115,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — “RÉTROACTIVITÉ” : AUCUNE SITUATION POSTÉRIEURE N’EFFACE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Une situation postérieure peut effacer rétroactivement l’existence du délit :',
@@ -1125,7 +1125,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique qu’aucune situation postérieure n’efface rétroactivement l’existence du délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Le délit peut subsister même si la décision de base est cassée ultérieurement :',
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 26 juillet 1977.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Le délit peut subsister même si la décision est réformée partiellement ensuite :',
@@ -1147,7 +1147,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 21 mai 1980.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Le paiement tardif après expiration du délai de plus de deux mois :',
@@ -1164,7 +1164,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — ÉLÉMENT MORAL : VOLONTÉ + PRÉCARITÉ
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intention',
     question: 'L’abandon de famille sanctionne :',
     options: [
@@ -1177,7 +1177,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise l’inexécution volontaire (à condition de notification).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intention',
     question:
         'Le délit n’est pas constitué si le non-paiement résulte d’une précarité persistante :',
@@ -1190,7 +1190,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite CA Aix-en-Provence, 01 juillet 1994.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Preuve',
     question:
         'La preuve (notamment de la notification et du caractère volontaire) relève :',
@@ -1208,7 +1208,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — INTERMÉDIATION FINANCIÈRE (CAF / ORGANISME)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intermédiation',
     question:
         'Avec intermédiation financière, le débiteur commet l’infraction s’il ne paye pas intégralement pendant plus de deux mois :',
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — RÉPRESSION / PROCÉDURE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Répression',
     question: 'Les peines principales prévues par 227-3 sont :',
     options: [
@@ -1238,7 +1238,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 2 ans + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Circonstances aggravantes',
     question: 'Le support prévoit des circonstances aggravantes pour 227-3 :',
     options: ['Aucune', 'Oui, au-delà de 5 jours', 'Oui, si à l’étranger'],
@@ -1246,7 +1246,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne : Aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour l’abandon de famille (227-3), la tentative est :',
     options: ['Non', 'Oui', 'Oui si paiement partiel'],
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour l’abandon de famille (227-3), la complicité est :',
     options: [
@@ -1270,7 +1270,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // CAS PRATIQUES (NIVEAUX MIXÉS)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Décision exécutoire notifiée : pension 300 €/mois. Le débiteur paye 150 € pendant 4 mois. L’infraction 227-3 peut être constituée :',
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le délit est constitué en cas de non-paiement total ou partiel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Décision notifiée : pension indexée. Le débiteur paye l’ancien montant pendant plus de deux mois et refuse l’indexation. Le délit peut être :',
@@ -1295,7 +1295,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne que le refus d’indexation peut constituer le délit (Cass. crim., 26/10/1987).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Le débiteur ne paye pas pendant plus de deux mois, puis régularise après 3 mois. L’infraction :',
@@ -1661,7 +1661,7 @@ class _QuizAbandonFamilleState extends State<QuizAbandonFamille>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1864,7 +1864,7 @@ class _QuizAbandonFamilleState extends State<QuizAbandonFamille>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2047,7 +2047,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2580,10 +2579,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2954,7 +2954,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2995,9 +2995,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

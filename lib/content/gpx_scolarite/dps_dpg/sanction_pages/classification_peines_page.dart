@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 
 /// Page : La sanction — Classification des peines et mesures de sûreté
-/// Route alignée avec la config : /sanction/classification_peines
+/// Route alignée avec la config : /gpx/sanction/classification_peines
 class ClassificationPeinesPage extends StatelessWidget {
-  static const String routeName = '/sanction/classification_peines';
+  static const String routeName = '/gpx/sanction/classification_peines';
   const ClassificationPeinesPage({super.key});
 
   @override
@@ -32,9 +32,9 @@ class ClassificationPeinesPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Finalité',
-                  child: const Text(
+                  child: Text(
                     'Qualifier la nature de la peine (criminelle, correctionnelle, contraventionnelle), '
                     'distinguer peines principales, complémentaires et alternatives, et situer les mesures de sûreté.',
                   ),
@@ -52,12 +52,12 @@ class ClassificationPeinesPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '1) Natures de peines',
                   caption: 'Qualification pénale & échelles',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Criminelles : réclusion/criminalité organisée — cour d’assises.',
                       ),
@@ -72,12 +72,12 @@ class ClassificationPeinesPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '2) Peines principales / alternatives',
                   caption: 'Prononcé & articulation',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Principales : privatives de liberté, amendes, jours-amende, TIG.',
                       ),
@@ -92,12 +92,12 @@ class ClassificationPeinesPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '3) Peines complémentaires',
                   caption: 'Interdictions · Confiscations · Affichage',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Interdictions de droits, d’exercer, de paraître ; suspension permis, armes, etc.',
                       ),
@@ -112,12 +112,12 @@ class ClassificationPeinesPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '4) Mesures de sûreté',
                   caption: 'Prévention de la récidive/risque',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Mesures non répressives : ex. suivi socio-judiciaire, interdictions, soins.',
                       ),
@@ -129,12 +129,12 @@ class ClassificationPeinesPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '5) Points de vigilance',
                   caption: 'Légalité du prononcé & motivation',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Motivation de la peine : individualisation (personnalité, faits, insertion).',
                       ),
@@ -157,13 +157,13 @@ class ClassificationPeinesPage extends StatelessWidget {
                 const _LinkTile(
                   title: 'Causes d’aggravation de la sanction',
                   subtitle: 'Récidive · Circonstances aggravantes',
-                  route: '/sanction/causes_aggravation',
+                  route: '/gpx/sanction/causes_aggravation',
                 ),
                 const SizedBox(height: 10),
                 const _LinkTile(
                   title: 'Pluralité d’infractions',
                   subtitle: 'Cumul/Concours · Confusion de peines',
-                  route: '/sanction/pluralite_infractions',
+                  route: '/gpx/sanction/pluralite_infractions',
                 ),
               ],
             ),

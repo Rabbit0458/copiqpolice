@@ -16,7 +16,7 @@ class ConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.72);
+        : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
         ? const Color(0xFF424242)
@@ -151,8 +151,8 @@ class ConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Les opérations peuvent être décidées aux fins de recherche et de poursuite des '
                 'infractions suivantes :',
               ),
@@ -199,19 +199,19 @@ class ConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Le législateur distingue les agents pouvant réaliser les différents types de mesures '
                 'prévues par les réquisitions :',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les contrôles d’identité peuvent être réalisés par les officiers de police judiciaire '
                     'et, sur leur ordre et sous leur responsabilité, par les agents de police judiciaire '
                     'et les agents de police judiciaire adjoints mentionnés aux 1°, 1° bis et 1° ter de '
                     'l’article 21 du code de procédure pénale ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les visites de véhicules ou de navires ainsi que les inspections visuelles et fouilles '
                     'de bagages doivent être effectuées par des officiers de police judiciaire ; la '
@@ -227,91 +227,91 @@ class ConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Les opérations ne peuvent avoir lieu que sur réquisitions écrites du procureur '
                       'de la République, qui en fixe les lieux et la durée. Cette durée ne peut excéder ',
                 ),
                 TextSpan(
                   text: 'vingt-quatre heures consécutives',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', renouvelables sur décision expresse et motivée du même magistrat. La Cour de '
                       'cassation rappelle que plusieurs jours de contrôles ne peuvent être couverts par '
                       'une réquisition unique (Crim., 13 septembre 2017, n°17-83.986).',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle('La visite des véhicules'),
-              const _Paragraph(
+              _SubTitle('La visite des véhicules'),
+              _Paragraph(
                 'La visite des véhicules se déroule différemment selon que le véhicule est en circulation '
                 'ou à l’arrêt :',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'véhicule en circulation : il ne peut être immobilisé que le temps strictement '
                     'nécessaire au déroulement de la visite et en présence du conducteur ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'véhicule à l’arrêt ou en stationnement : la visite doit avoir lieu en présence du '
                     'conducteur ou du propriétaire. À défaut, l’officier ou l’agent de police judiciaire '
                     'requiert une personne extérieure ne relevant pas de son autorité administrative, '
                     'sauf si la visite comporte des risques graves pour la sécurité des personnes et des biens.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'En cas de découverte d’une infraction, si le conducteur ou le propriétaire du véhicule '
                 'en fait la demande, ou si la visite a eu lieu en leur absence, un procès-verbal est établi. '
                 'Il indique le lieu, les dates et heures de début et de fin des opérations. Un exemplaire est '
                 'remis à l’intéressé, un autre est transmis sans délai au procureur de la République.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'La visite des véhicules spécialement aménagés à usage d’habitation et effectivement '
                 'utilisés comme résidence ne peut être effectuée que selon les règles applicables aux '
                 'perquisitions et visites domiciliaires.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle('La visite des navires'),
-              const _Paragraph(
+              _SubTitle('La visite des navires'),
+              _Paragraph(
                 'Le navire ne peut être immobilisé que le temps strictement nécessaire à la visite, '
                 'sans que celle-ci puisse excéder douze heures. Elle se déroule en présence du '
                 'capitaine ou de son représentant et comprend l’inspection des extérieurs, des cales, '
                 'des soutes et des locaux, à l’exception de ceux aménagés à un usage d’habitation.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 'L’inspection visuelle des bagages ou leur fouille',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Dans les mêmes conditions de réquisitions et pour les mêmes infractions, les officiers '
                 'de police judiciaire peuvent, assistés le cas échéant des agents de police judiciaire et '
                 'des agents de police judiciaire adjoints (articles 21, 1°, 1° bis et 1° ter du code de '
                 'procédure pénale), procéder à l’inspection visuelle des bagages ou à leur fouille en '
                 'tous lieux accessibles au public.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Les propriétaires des bagages ne peuvent être retenus que le temps strictement '
                 'nécessaire au déroulement de l’inspection ou de la fouille, et l’opération se déroule '
                 'en leur présence.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'En cas de découverte d’une infraction, si le propriétaire le demande, un procès-verbal '
                 'mentionnant le lieu, les dates et heures de début et de fin des opérations est rédigé. '
                 'Un exemplaire est remis à l’intéressé, un autre transmis sans délai au procureur de la '
                 'République.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'La loi n° 2025-379 du 28 avril 2025 relative au renforcement de la sûreté dans les '
                         'transports permet désormais aux officiers de police judiciaire et, sous leur contrôle, '
@@ -320,7 +320,7 @@ class ConntroleIdentiteVisiteGpxSchool extends StatelessWidget {
                         'leur propre initiative, à l’inspection visuelle des bagages et, avec le consentement du '
                         'propriétaire, à leur fouille :\n',
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         '• sur les lignes et dans les gares des réseaux ferroviaires et guidés (article L. 2241-1-2 du code des transports) ;\n'
                         '• dans les services de transport public routier de personnes réguliers ou à la demande, '
@@ -476,10 +476,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -544,7 +544,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -587,7 +587,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -649,7 +649,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -660,10 +660,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -675,13 +674,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -694,13 +692,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

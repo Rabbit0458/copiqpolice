@@ -89,16 +89,16 @@ class InterpellationGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 73 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : en cas de crime flagrant ou de délit flagrant puni d’emprisonnement, toute personne peut appréhender l’auteur et le conduire devant l’OPJ le plus proche. "
                       "La GAV n’est pas obligatoire si la personne n’est pas tenue sous contrainte et est informée qu’elle peut quitter les locaux à tout moment (sauf conduite par la force publique).",
@@ -115,29 +115,29 @@ class InterpellationGeneralitesPage extends StatelessWidget {
             cardColor: cardGen,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Généralités"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Généralités"),
+              _BulletPoint(
                 text:
                     "Autorisée uniquement en cas de crime flagrant ou de délit flagrant puni d’emprisonnement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Impossible pour un délit puni seulement d’une amende ou une contravention.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’interpellation par un agent de police judiciaire est possible dans les lieux publics "
                 "(ou lieux libres d’accès).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’introduction dans des lieux privés (lieux normalement clos) pour interpeller "
                 "un auteur présumé (crime/délit flagrant puni d’emprisonnement) n’est possible que par les seuls O.P.J., "
                 "pendant les heures légales (6h–21h).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 "Cas particuliers : entrée possible pour un A.P.J",
               ),
               _BulletPoint(
@@ -147,65 +147,65 @@ class InterpellationGeneralitesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 59 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " — réclamation faite de l’intérieur d’un domicile.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 223-6 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " — assistance à personne en péril."),
+                TextSpan(text: " — assistance à personne en péril."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "État de nécessité (ex. fuite de gaz, alarme intempestive…).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Une introduction légale dans un lieu clos permet ensuite d’accomplir les actes autorisés par la loi "
                 "(dont l’interpellation, si les conditions sont réunies).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Mandats & contrainte"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Mandats & contrainte"),
+              _Paragraph(
                 "Mandat d’amener / d’arrêt / de recherche : intervention uniquement pendant les heures légales "
                 "et au dernier domicile connu, pour la seule appréhension de la personne visée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En enquête préliminaire, une personne convoquée par un OPJ doit comparaître. À défaut, contrainte possible "
                       "avec autorisation du procureur : ",
                 ),
                 TextSpan(
                   text: "art. 78 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". L’appréhension forcée n’est possible que sur la voie publique.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Sécurité : analyser, garder son sang-froid, demander des effectifs si infériorité numérique "
                         "ou lieu sensible. Les circonstances conditionnent ensuite la décision de GAV par l’OPJ.",
@@ -223,63 +223,63 @@ class InterpellationGeneralitesPage extends StatelessWidget {
             cardColor: cardCoerc,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Principe : nécessité + proportionnalité — ",
                 ),
                 TextSpan(
                   text: "art. R. 434-18 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Tout recours injustifié à la force peut constituer des violences illégitimes et engager la responsabilité pénale et disciplinaire.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Décrire précisément la résistance et les moyens de coercition utilisés (rapport/PV).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préciser les blessures : celles dues à l’interpellation vs celles préexistantes (constat médical si besoin).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si l’état de santé est déficient : déclencher immédiatement les secours.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Personne conduite sous contrainte par la force publique (menottée / contrainte à monter dans un véhicule) : "
                       "GAV si conditions réunies. ",
                 ),
                 TextSpan(
                   text: "(rappel art. 73 C.P.P.)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si l’OPJ ne souhaite pas maintenir immédiatement la personne à disposition et que la GAV "
                         "n’est pas l’unique moyen d’atteindre un objectif, il peut la remettre en liberté et la convoquer.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Une personne mise à disposition ne sera pas nécessairement placée en GAV si elle est appréhendée "
                 "sans contrainte par une personne autre qu’un agent de la force publique, et accepte d’être conduite au service "
                 "sans coercition.",
@@ -295,36 +295,36 @@ class InterpellationGeneralitesPage extends StatelessWidget {
             cardColor: cardPalp,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Elle doit être effectuée lorsqu’il est nécessaire de vérifier que la personne ne détient aucun objet dangereux — ",
                 ),
                 TextSpan(
                   text: "art. R. 434-16 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Effectuée par une personne du même sexe (sauf dangerosité/urgence exceptionnelle).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par un seul fonctionnaire, pendant qu’un ou deux collègues sécurisent l’environnement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Au travers des vêtements : aucune dénudation n’est possible.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Dès la découverte d’un objet suspect, informer immédiatement les autres intervenants. "
                 "Armes/objets dangereux : appréhension et remise à l’OPJ.",
               ),
@@ -339,42 +339,42 @@ class InterpellationGeneralitesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Justifié uniquement si dangerosité pour soi/autrui ou risque de fuite — ",
                 ),
                 TextSpan(
                   text: "art. 803 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "art. R. 434-17 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Décision sous responsabilité personnelle du fonctionnaire (appréciation des risques). "
                 "Rester mesuré : mineurs, personnes âgées, santé fragile…",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text: "Menottage excessivement serré : interdit.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Transport : dans un véhicule de service, l’interpellé est positionné à l’arrière, côté droit.",
                   ),
@@ -391,30 +391,30 @@ class InterpellationGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Dès la fin de l’intervention, conduire sans délai la personne devant un OPJ, "
                 "dans des conditions de transport dignes. Cette rapidité permet de respecter "
                 "les obligations légales liées à une éventuelle garde à vue.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si la présentation ne peut être réalisée dans un délai raisonnable, l’OPJ (avisé par radio) "
                       "peut décider une GAV et ordonner la notification verbale des droits — ",
                 ),
                 TextSpan(
                   text: "art. 63-1 à 63-4-3 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’interpellation se concrétise par la rédaction d’un acte : procès-verbal (APJ/OPJ) "
                 "ou rapport de mise à disposition (APJA).",
               ),
@@ -454,10 +454,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -522,7 +522,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -565,7 +565,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -627,7 +627,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -638,10 +638,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -653,13 +652,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -672,13 +670,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

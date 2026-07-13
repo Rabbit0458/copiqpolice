@@ -40,14 +40,14 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF5E35B1)
         : const Color(0xFF4527A0);
     final Color referenceColor = isDark
         ? const Color(0xFF90CAF9)
         : const Color(0xFF1565C0);
-    final Color dangerColor = const Color(0xFFFF3B30);
+    const Color dangerColor = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: background,
@@ -85,8 +85,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'Il ne peut exister de liberté publique absolue : sans règles, la liberté se transforme en anarchie. '
                   'Le droit encadre donc l’exercice des libertés pour concilier protection des droits et maintien de l’ordre public. '
@@ -95,7 +95,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 16),
-          _NotaBox(
+          const _NotaBox(
             title: 'Idée directrice',
             bodySpans: [
               TextSpan(
@@ -118,7 +118,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Deux grands acteurs interviennent pour encadrer les libertés publiques : '
                 'le législateur (compétence de principe) et le pouvoir exécutif (pouvoir réglementaire).',
               ),
@@ -134,8 +134,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Traditionnellement, la loi est l’outil principal pour fixer le régime des libertés publiques. '
                       'La Déclaration de 1789 rappelle que seule la loi peut poser les "bornes" à l’exercice des droits. '
@@ -145,15 +145,15 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 TextSpan(
                   text:
                       'Le législateur dispose donc d’une compétence de principe ',
-                  style: const TextStyle(fontWeight: FontWeight.w600),
+                  style: TextStyle(fontWeight: FontWeight.w600),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'en matière de libertés publiques, sous réserve du respect de la hiérarchie des normes (Constitution, traités, lois…).',
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph('Concrètement, la loi peut :'),
+              const _Paragraph('Concrètement, la loi peut :'),
               const SizedBox(height: 6),
               const _BulletPoint.rich([
                 TextSpan(
@@ -181,17 +181,17 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'En revanche, le législateur ne peut revenir sur une liberté publique déjà acquise que dans deux cas : ',
                 ),
                 TextSpan(
                   text:
                       'soit parce qu’elle n’a jamais été légalement consacrée, ',
-                  style: const TextStyle(fontWeight: FontWeight.w600),
+                  style: TextStyle(fontWeight: FontWeight.w600),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'soit parce que sa remise en cause est indispensable pour atteindre un objectif de valeur constitutionnelle '
                       '(sécurité, ordre public, continuité du service, etc.).',
@@ -223,8 +223,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Si la loi fixe les principes fondamentaux, le pouvoir exécutif (gouvernement, préfet, maire…) est chargé de mettre en œuvre, '
                       'par des règlements, l’aménagement concret des libertés. '
@@ -247,7 +247,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Le pouvoir réglementaire peut donc restreindre l’exercice d’une liberté, mais à condition de respecter les principes de légalité, de nécessité et de proportionnalité. '
                 'Son intensité varie selon que l’on se trouve en période normale ou en période exceptionnelle.',
               ),
@@ -277,7 +277,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'En période ordinaire, la réglementation des libertés doit rester mesurée. '
                 'Deux règles classiques gouvernent l’action de l’autorité administrative :',
               ),
@@ -297,7 +297,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Plus une liberté est regardée comme fondamentale (liberté d’aller et venir, de réunion, d’expression…), '
                 'plus le juge administratif contrôle strictement la proportionnalité des restrictions décidées par l’exécutif.',
               ),
@@ -313,8 +313,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Lorsque la survie des institutions, l’indépendance de la Nation ou la sécurité intérieure sont gravement menacées, '
                       'le droit prévoit des régimes d’exception permettant un renforcement temporaire des pouvoirs de l’exécutif. '
@@ -333,7 +333,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Issu d’une loi du XIXᵉ siècle et désormais prévu par la Constitution, l’état de siège est proclamé '
                 'en cas de péril résultant d’une guerre étrangère ou d’une insurrection armée. '
                 'Il entraîne le transfert de certaines compétences de police à l’autorité militaire et autorise des mesures restrictives importantes '
@@ -351,7 +351,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Lorsque les institutions de la République, l’indépendance de la Nation ou l’intégrité du territoire sont gravement et immédiatement menacées, '
                 'et que le fonctionnement régulier des pouvoirs publics est interrompu, le Président de la République peut mettre en œuvre les pouvoirs exceptionnels prévus à l’article 16. '
                 'Après consultation de plusieurs autorités (Premier ministre, présidents des Assemblées, Conseil constitutionnel), il concentre temporairement la plénitude des pouvoirs exécutifs et réglementaires, '
@@ -369,8 +369,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Créé en 1955 et plusieurs fois modifié, ce régime permet de faire face à des situations de péril imminent résultant d’atteintes graves à l’ordre public '
                       'ou de calamités publiques. Il autorise notamment l’assignation à résidence, les perquisitions administratives, les interdictions de réunions ou de '
@@ -379,7 +379,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 TextSpan(
                   text:
                       'Les lois adoptées à la suite des attentats récents ont étendu ces prérogatives, notamment en matière de lutte antiterroriste.',
-                  style: const TextStyle(fontStyle: FontStyle.italic),
+                  style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
               const SizedBox(height: 10),
@@ -394,7 +394,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Institué pour faire face à la pandémie de Covid-19, ce régime permet au gouvernement de prendre des mesures exceptionnelles '
                 'pour lutter contre une catastrophe sanitaire : restrictions de déplacements, fermetures d’établissements recevant du public, limitation des rassemblements, '
                 'fixation de plafonds de prix pour certains produits, etc. Il illustre la manière dont l’exécutif peut, sous contrôle du Parlement et du juge, '
@@ -412,7 +412,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Élaborée par la jurisprudence administrative, cette théorie permet au juge d’admettre que, dans des circonstances anormales '
                 '(guerre, troubles graves, catastrophes…), l’administration puisse disposer de pouvoirs plus étendus que ceux prévus en temps normal, '
                 'afin d’assurer la continuité du service public et la sauvegarde de l’ordre. '
@@ -431,13 +431,13 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Le plan Vigipirate est un dispositif gouvernemental permanent, associant autorités civiles et militaires, visant à prévenir la menace terroriste. '
                 'Il repose sur différents niveaux d’alerte et permet de déclencher, sans basculer dans un régime d’exception formel, '
                 'un ensemble de mesures graduées de protection de la population et des infrastructures sensibles.',
               ),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Objectifs principaux : assurer en permanence une protection adaptée du territoire, développer la culture de vigilance de l’ensemble des acteurs, '
                 'et permettre une réaction rapide et coordonnée en cas de menace identifiée.',
               ),
@@ -461,7 +461,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _NotaBox(
+              const _NotaBox(
                 title: 'Attention',
                 bodySpans: [
                   TextSpan(
@@ -486,7 +486,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Aménager une liberté publique, c’est fixer les limites de son exercice. '
                 'En régime démocratique, deux techniques se partagent cette fonction : le régime répressif et le régime préventif.',
               ),
@@ -518,13 +518,13 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Abuse de sa liberté celui qui commet une infraction prévue par la loi (délit de presse, provocation à la haine, atteintes à la vie privée, etc.) '
                 'ou qui trouble gravement l’ordre public. La sanction est alors prononcée par le juge, à l’issue d’une procédure contradictoire, '
                 'sur le fondement des textes pénaux ou administratifs applicables.',
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: 'Point clef',
                 bodySpans: [
                   TextSpan(
@@ -562,7 +562,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Ce régime repose sur l’action du pouvoir exécutif, responsable de l’ordre public. '
                 'Trois techniques principales sont utilisées : l’autorisation préalable, la déclaration préalable et l’interdiction préalable.',
               ),
@@ -578,7 +578,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Certaines activités ne peuvent être exercées que si l’autorité administrative a donné son accord à l’avance. '
                 'À défaut d’autorisation, la liberté ne peut s’exercer licitement.',
               ),
@@ -599,7 +599,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’administration peut disposer d’un pouvoir d’appréciation plus ou moins large. '
                 'Le juge administratif contrôle que le refus d’autorisation repose sur des motifs légaux, proportionnés et exempts d’erreur manifeste.',
               ),
@@ -615,7 +615,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Dans ce régime, la liberté peut s’exercer, mais son titulaire doit informer préalablement l’autorité administrative, '
                 'qui enregistre la déclaration et peut éventuellement prendre des mesures d’encadrement.',
               ),
@@ -639,8 +639,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'L’omission de la déclaration peut entraîner des sanctions pénales ou administratives. '
                       'Elle ne supprime pas la liberté en elle-même, mais expose celui qui l’exerce à un risque juridique accru. ',
@@ -658,8 +658,8 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Technique la plus attentatoire aux libertés, l’interdiction préalable permet à l’autorité administrative de prohiber, avant qu’elle ne se réalise, '
                       'une activité jugée dangereuse pour l’ordre public. ',
@@ -667,7 +667,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 TextSpan(
                   text:
                       'Elle doit rester l’ultime recours, strictement encadré par le juge.',
-                  style: const TextStyle(fontWeight: FontWeight.w600),
+                  style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
               const SizedBox(height: 6),
@@ -680,7 +680,7 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Certains textes prévoient explicitement la possibilité d’interdire l’exercice d’une liberté particulière : '
                 'interdiction de manifester sur la voie publique en cas de risque manifeste de troubles graves, dissolution d’associations représentant une menace pour l’ordre public, etc.',
               ),
@@ -694,12 +694,12 @@ class RegimeJuridiqueLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'En dehors de tout texte spécial, le maire ou le préfet peuvent interdire une manifestation ou une réunion lorsqu’il apparaît qu’aucune autre mesure '
                 'ne permet de prévenir un trouble grave à l’ordre public. Dans les communes à police étatisée, le préfet détient seul ce pouvoir pour les manifestations.',
               ),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Le juge administratif contrôle : la compétence de l’auteur de la décision, la forme de l’acte, le but poursuivi, les motifs invoqués et l’examen complet des circonstances. '
                 'Ce contrôle est particulièrement approfondi lorsque sont en cause des libertés fondamentales (réunion, association, circulation…).',
               ),
@@ -753,10 +753,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -799,7 +799,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -833,7 +833,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -886,7 +886,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -911,7 +911,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -946,7 +946,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -959,7 +959,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

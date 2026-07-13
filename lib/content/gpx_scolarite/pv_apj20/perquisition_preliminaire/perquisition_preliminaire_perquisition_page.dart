@@ -119,24 +119,24 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 76 du Code de procédure pénale (CPP)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixe le cadre de la perquisition en enquête préliminaire (assentiment préalable, conditions de régularité).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’APJ ne perquisitionne en préliminaire que sous le contrôle de l’OPJ et dans un cadre juridiquement justifié. "
                         "Le visa doit apparaître en haut du PV.",
@@ -213,40 +213,40 @@ class PerquisitionPreliminairePerquisitionPage extends StatelessWidget {
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("7) Transport"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("7) Transport"),
+              _BulletPoint(
                 text:
                     "Localisation exacte : ville, rue, numéro, immeuble, étage, porte.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Indiquer l’heure précise d’arrivée et la manière d’entrer dans les lieux.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("8) Présence de l’occupant"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("8) Présence de l’occupant"),
+              _Paragraph(
                 "La perquisition doit être opérée en présence constante et effective de la personne au domicile de laquelle se déroule l’opération "
                 "(ou de la personne désignée pour la représenter), sous peine de nullité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Point sensible : la présence doit être continue, réelle et traçable (horaires / déplacements / incidents).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("9) Perquisition (description du local)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("9) Perquisition (description du local)"),
+              _BulletPoint(
                 text:
                     "Définir le local (nombre de pièces, dépendances, accès, particularités).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("10) Énonciation terminale (clôture)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("10) Énonciation terminale (clôture)"),
+              _BulletPoint(
                 text:
                     "Mentionner l’heure de fin, incidents éventuels, fermeture des lieux, signature de la personne présente.",
               ),
@@ -379,10 +379,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -447,7 +447,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -490,7 +490,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -552,7 +552,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -563,10 +563,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -578,13 +577,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -597,13 +595,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -649,10 +643,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -758,8 +752,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -827,10 +821,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -897,10 +891,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -939,9 +933,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -976,7 +970,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

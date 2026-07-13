@@ -102,7 +102,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-8 — ATTEINTE À L'INVIOLABILITÉ DU DOMICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Définition",
     question:
         "Constitue une atteinte à l’inviolabilité du domicile le fait, par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, de :",
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "L’article vise l’introduction ou la tentative d’introduction, contre le gré, hors les cas légaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Texte",
     question:
         "L’infraction d’atteinte à l’inviolabilité du domicile est prévue par :",
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que l’infraction est prévue et réprimée par l’article 432-8 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Auteur",
     question: "Peut être auteur de l’infraction (432-8) :",
     options: [
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’infraction vise spécifiquement ces qualités.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépositaire autorité publique",
     question: "Est dépositaire de l’autorité publique celui qui :",
     options: [
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Définition donnée : pouvoir de décision lié à l’autorité publique conférée par les fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Exemples",
     question:
         "Parmi les personnes citées comme dépositaires de l’autorité publique, on retrouve notamment :",
@@ -172,7 +172,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite policiers, gendarmes, douaniers, huissiers, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Mission de service public",
     question: "Est chargé d’une mission de service public celui qui :",
     options: [
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition textuelle du cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Contexte d’action",
     question: "Pour que 432-8 soit constitué, l’auteur doit agir :",
     options: [
@@ -198,7 +198,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition explicitement mentionnée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Abus de qualité",
     question:
         "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile, ce qui exclut :",
@@ -211,7 +211,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique que les raisons personnelles sont exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Notion de domicile",
     question: "Le domicile est :",
     options: [
@@ -224,7 +224,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition du cours : droit de se dire chez soi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Étendue",
     question: "Peuvent entrer dans la notion de domicile :",
     options: [
@@ -236,7 +236,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours étend la notion à résidence et séjour occasionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Logements inoccupés",
     question: "Un logement inoccupé peut être considéré comme un domicile si :",
     options: [
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que des meubles caractérisant l’occupation peuvent suffire selon appréciation du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépendances",
     question: "Le domicile comprend aussi :",
     options: [
@@ -262,7 +262,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours vise l’habitation avec ses dépendances.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Cours/Jardins",
     question:
         "Cours, jardins et parcs sont assimilés au domicile lorsqu’ils sont :",
@@ -275,7 +275,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition explicitement mentionnée (clos + attenants).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Proximité",
     question: "Pour une dépendance, la jurisprudence exige :",
     options: [
@@ -287,7 +287,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours insiste sur l’annexe au domicile et la proximité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Acte matériel",
     question: "L’action incriminée au 432-8 est :",
     options: [
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le texte précise que le maintien n’est pas visé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement",
     question:
         "L’article 432-8 réprime l’introduction seulement si elle est effectuée :",
@@ -312,7 +312,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition : contre le gré, sinon pas d’infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement vicié",
     question: "Le consentement de l’occupant ne doit pas être vicié par :",
     options: [
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours mentionne le consentement vicié par stratagèmes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — À l’insu",
     question: "L’absence de consentement englobe le fait de pénétrer :",
     options: [
@@ -337,7 +337,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite l’exemple de pénétrer à l’insu (fenêtre ouverte).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Cas légaux",
     question: "Le 432-8 sanctionne l’introduction lorsqu’elle est faite :",
     options: [
@@ -349,7 +349,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le texte vise uniquement les introductions hors cas légaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Élément moral",
     question: "L’élément moral du 432-8 suppose :",
     options: [
@@ -361,7 +361,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Conscience de l’irrégularité des agissements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Circonstances aggravantes",
     question: "Pour l’infraction 432-8, les circonstances aggravantes sont :",
     options: ["Aucune", "Toujours présentes", "Uniquement si violence"],
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Répression",
     question: "Peines principales encourues (personnes physiques) pour 432-8 :",
     options: [
@@ -381,7 +381,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Répression mentionnée : 2 ans + 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Tentative",
     question: "La tentative pour 432-8 est :",
     options: [
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise : TENTATIVE : OUI (spécifiquement incriminée).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Complicité",
     question: "La complicité (432-8) est :",
     options: [
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Texte",
     question:
         "L’atteinte au secret des correspondances est prévue et réprimée par :",
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : article 432-9 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Définition",
     question:
         "L’infraction (432-9) peut consister à ordonner, commettre ou faciliter :",
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition textuelle du cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Auteurs",
     question: "Peuvent être auteurs (432-9) :",
     options: [
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours vise aussi des agents exploitants de réseaux/fournisseurs télécoms.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Réseau ouvert au public",
     question: "Un réseau ouvert au public (CPCE) est :",
     options: [
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition reprise du cours (CPCE).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Communications électroniques",
     question: "Les communications électroniques s’entendent comme :",
     options: [
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Formulation du cours : câble, hertzien, optique, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Correspondances matérielles",
     question: "Sont protégées comme correspondances matérielles :",
     options: [
@@ -490,7 +490,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que les plis clos comme ouverts sont protégés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Contenu",
     question: "Le contenu de la correspondance protégée peut être :",
     options: [
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Peu importe le contenu : pro ou privé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Télécommunications",
     question:
         "Pour les correspondances par télécommunications, elles doivent être :",
@@ -516,7 +516,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition donnée pour correspondances dématérialisées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Modalités",
     question: "Dans 432-9, 'ordonner' correspond à :",
     options: [
@@ -529,7 +529,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours relie ordonner à l’abus de pouvoir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Contenu de l’atteinte",
     question: "Le 'détournement' d’une correspondance vise :",
     options: [
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise : atteinte à l’acheminement = détourner/modifier le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Inviolabilité du support",
     question: "L’atteinte à l’inviolabilité du support peut consister en :",
     options: [
@@ -555,7 +555,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Exemple clair donné dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Suppression",
     question: "La suppression d’une correspondance consiste en :",
     options: [
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition du cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Télécoms",
     question: "Pour les télécommunications, l’atteinte peut consister en :",
     options: [
@@ -579,7 +579,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours liste ces formes pour télécommunications.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Divulgation",
     question: "La divulgation consiste à :",
     options: [
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition du cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Élément moral",
     question: "L’élément moral (432-9) suppose :",
     options: [
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours insiste sur la conscience d’agir sans droit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Erreur de fait",
     question: "L’erreur de fait :",
     options: [
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours : l’erreur de fait entraîne la disparition de l’intention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Circonstances aggravantes",
     question: "Pour 432-9, circonstances aggravantes :",
     options: ["Aucune", "Toujours présentes", "Uniquement si récidive"],
@@ -627,7 +627,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Répression",
     question: "Peines (432-9) :",
     options: [
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Répression indiquée : 3 ans + 45 000 € (al.1 et al.2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Tentative",
     question: "La tentative (432-9) est :",
     options: ["NON", "OUI", "OUI uniquement pour télécoms"],
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Complicité",
     question: "La complicité (432-9) est :",
     options: ["OUI", "NON", "Uniquement si l’auteur est un magistrat"],
@@ -655,7 +655,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : COMPLICITÉ : OUI.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Faits justificatifs",
     question: "432-9 exclut l’infraction lorsqu’elle est réalisée :",
     options: [
@@ -667,7 +667,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Cas prévus par la loi : procédure judiciaire notamment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Interceptions judiciaires",
     question:
         "Les interceptions télécoms peuvent être autorisées par le juge d’instruction :",
@@ -685,7 +685,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS PAR PERSONNE EXERÇANT FONCTION PUBLIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Texte",
     question:
         "L’infraction de discrimination (par une personne exerçant une fonction publique) est prévue par :",
@@ -698,7 +698,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : article 432-7 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Définition",
     question:
         "La discrimination (432-7) commise par une personne dépositaire/chargée mission SP consiste notamment à :",
@@ -712,7 +712,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition donnée en 1° et 2°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Fondements",
     question:
         "La discrimination vise une distinction opérée entre personnes sur certains fondements, par exemple :",
@@ -726,7 +726,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours liste de nombreux critères (225-1 et 225-1-1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Qualité de l’auteur",
     question: "Pour 432-7, l’auteur doit être :",
     options: [
@@ -739,7 +739,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition de qualité rappelée dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Exemples de droits",
     question: "Le 'droit accordé par la loi' peut consister en :",
     options: [
@@ -752,7 +752,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Exemples donnés dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Discrétion",
     question: "Ne constitue pas un 'droit accordé par la loi' :",
     options: [
@@ -765,7 +765,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours le précise explicitement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Activité économique",
     question: "Entraver une activité économique consiste à :",
     options: [
@@ -778,7 +778,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours donne des exemples d’entrave.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Victime",
     question: "Les agissements discriminatoires peuvent viser :",
     options: [
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise les deux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "L’élément moral de 432-7 exige :",
     options: [
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours : existence d’une volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Circonstances aggravantes",
     question: "Circonstances aggravantes pour 432-7 :",
     options: ["Aucune", "Uniquement si récidive", "Uniquement si violence"],
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Répression",
     question: "Peines principales (personnes physiques) pour 432-7 :",
     options: [
@@ -823,7 +823,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Répression mentionnée : 5 ans + 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative (432-7) est :",
     options: ["NON", "OUI", "OUI uniquement si entrave économique"],
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise : la tentative n’est pas incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Complicité",
     question: "La complicité (432-7) est :",
     options: [
@@ -846,7 +846,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   ),
 
   // ✅ Questions supplémentaires à ajouter après celles-ci (432-8 — inviolabilité du domicile)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Conditions",
     question:
         "Pour que l’infraction (432-8) soit constituée, l’auteur doit agir :",
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le texte exige que l’auteur agisse dans l’exercice ou à l’occasion de l’exercice de ses fonctions/mission.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Abus de qualité",
     question:
         "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile, ce qui exclut :",
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que l’auteur doit avoir abusé de sa qualité et que les raisons personnelles sont exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Notion de domicile",
     question: "Le domicile se définit comme :",
     options: [
@@ -889,7 +889,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours définit le domicile comme le lieu où la personne a le droit de se dire chez elle, indépendamment du titre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Étendue",
     question: "La notion de domicile peut recouvrir :",
     options: [
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que le domicile peut être légal, résidence, ou lieu de séjour occasionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Logement inoccupé",
     question: "Un logement inoccupé peut être considéré comme un domicile si :",
     options: [
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que la présence de meubles peut caractériser le domicile si elle permet de s’y dire chez soi; vélo/carton seuls insuffisants.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépendances",
     question: "Le domicile se comprend comme :",
     options: [
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours inclut les dépendances (caves, terrasses…) dans la notion de domicile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Jardins/Parcs",
     question: "Cours, jardins et parcs sont assimilés au domicile lorsque :",
     options: [
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise l’assimilation dès lors que ces lieux sont clos et attenants à l’habitation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Proximité",
     question:
         "Pour qu’une dépendance entre dans la notion de domicile, la jurisprudence exige :",
@@ -958,7 +958,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours insiste sur la nécessité d’un lien étroit et immédiat et d’une proximité entre dépendance et habitation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Acte matériel",
     question: "L’action incriminée par l’article 432-8 vise :",
     options: [
@@ -971,7 +971,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le texte vise l’introduction/tentative; il ne vise pas le maintien dans les lieux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Moyen",
     question: "L’introduction illicite (432-8) peut être réalisée :",
     options: [
@@ -984,7 +984,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que l’introduction est répréhensible quel que soit le moyen, même sans violence ni artifice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Contre le gré",
     question:
         "L’article 432-8 ne réprime l’introduction que si elle est effectuée :",
@@ -998,7 +998,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Condition centrale : l’introduction doit être contre le gré de l’occupant; sinon l’infraction n’est pas constituée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Absence de consentement",
     question:
         "Même sans opposition formelle, l’absence de consentement peut être retenue notamment si l’auteur pénètre :",
@@ -1012,7 +1012,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique qu’il suffit que la personne n’ait pas consenti, ce qui englobe une entrée à l’insu de l’occupant.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement vicié",
     question: "Le consentement de l’occupant ne doit pas être vicié par :",
     options: [
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que le consentement vicié par des manœuvres/stratagèmes ne fait pas obstacle à la caractérisation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Cas légaux",
     question: "432-8 sanctionne l’introduction lorsque celle-ci intervient :",
     options: [
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours rappelle que certains textes autorisent l’entrée; 432-8 sanctionne l’entrée hors de ces cas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Élément moral",
     question: "L’élément moral de l’infraction (432-8) implique :",
     options: [
@@ -1051,7 +1051,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours vise la conscience de l’irrégularité des agissements (intention).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Circonstances aggravantes",
     question:
         "Concernant l’article 432-8, les circonstances aggravantes sont :",
@@ -1060,7 +1060,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : IV - Circonstances aggravantes : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Répression",
     question: "Peines encourues (personne physique) pour 432-8 :",
     options: [
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours mentionne comme peines principales : 2 ans d’emprisonnement et 30 000 € d’amende.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Tentative",
     question:
         "La tentative de violation de domicile par une personne dépositaire/chargée mission SP (432-8) est :",
@@ -1087,7 +1087,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique explicitement : TENTATIVE : OUI (incriminée spécifiquement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Complicité",
     question: "La complicité (432-8) est :",
     options: [
@@ -1102,7 +1102,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   ),
 
   // ✅ Suite — encore plus de questions 432-8 (Inviolabilité du domicile)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépositaire de l'autorité publique",
     question:
         "Sont notamment concernés comme dépositaires de l’autorité publique :",
@@ -1116,7 +1116,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite explicitement policiers, gendarmes, douaniers, huissiers, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Responsables exécutifs locaux",
     question: "Ont aussi la qualité de dépositaires de l’autorité publique :",
     options: [
@@ -1130,7 +1130,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours vise les responsables des exécutifs locaux (et certains adjoints/délégués).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Adjoints et délégués",
     question:
         "Le cours indique que possèdent la qualité de dépositaires de l’autorité publique :",
@@ -1144,7 +1144,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Ils sont mentionnés comme ayant la qualité de dépositaires de l’autorité publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Mission de service public",
     question: "Une personne chargée d’une mission de service public :",
     options: [
@@ -1158,7 +1158,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise qu’elle participe à une mission d’intérêt général sans prérogatives de puissance publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Élus locaux et mission SP",
     question:
         "Les élus locaux peuvent être qualifiés de 'chargés d’une mission de service public' :",
@@ -1173,7 +1173,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que sans délégation de prérogatives de puissance publique, ils sont chargés d’une mission SP.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — 'À l’occasion' des fonctions",
     question:
         "Agir 'à l’occasion de l’exercice des fonctions' implique que l’agent :",
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours distingue agir dans l’exercice ou à l’occasion : l’acte reste rattaché aux fonctions/mission.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Domicile et titre juridique",
     question: "Pour caractériser un domicile, il faut :",
     options: [
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que le titre juridique importe peu : c’est le droit de s’y dire chez soi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Condition d’intimité",
     question:
         "La seule condition rappelée par le cours pour retenir la notion de domicile est que :",
@@ -1216,7 +1216,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique : la condition est la protection de l’intimité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Exemples meubles suffisants",
     question:
         "Parmi les éléments cités comme pouvant signaler une occupation effective d’un logement vacant :",
@@ -1230,7 +1230,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours donne ces exemples et précise que bicyclette/carton seuls ne suffisent pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Moyen d’introduction",
     question: "Pour 432-8, l’introduction peut être caractérisée :",
     options: [
@@ -1243,7 +1243,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise : quel que soit le moyen, même sans violence ou artifice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Non visé",
     question: "Le cours indique que n’est pas visé par 432-8 :",
     options: [
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Il est précisé : l’action incriminée est l’introduction ou la tentative, pas le maintien.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Enquête préliminaire (exemple)",
     question:
         "Selon l’exemple du cours, un OPJ en enquête préliminaire qui refuse de quitter les lieux après retrait du consentement écrit :",
@@ -1271,7 +1271,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours donne cet exemple pour illustrer que le maintien n’est pas visé par 432-8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Jurisprudence (hôtel)",
     question:
         "D’après la jurisprudence citée, des policiers qui invitent par téléphone un occupant d’hôtel à les rejoindre dans le hall :",
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite une décision où le hall d’hôtel + invitation ne vaut pas pénétration dans un domicile.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Jurisprudence (garage)",
     question:
         "D’après la jurisprudence citée, des gendarmes sur le seuil d’un garage ouvert par l’agent immobilier, sans y pénétrer :",
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite une décision : photographie sur le seuil sans pénétrer ≠ introduction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement",
     question:
         "L’infraction n’est pas constituée si l’agent de la force publique pénètre au domicile :",
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le texte précise : pas d’infraction si l’entrée est consentie (hors consentement vicié).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement vicié (rappel)",
     question:
         "Le consentement n’empêche pas l’infraction s’il est obtenu par :",
@@ -1327,7 +1327,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que le consentement vicié par manœuvres/stratagèmes ne vaut pas consentement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Hors les cas prévus par la loi",
     question:
         "Pourquoi 432-8 est qualifié de sanction du non-respect des conditions de fond ?",
@@ -1342,7 +1342,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que 432-8 sanctionne le non-respect des conditions de fond encadrant les interventions publiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Personnes morales",
     question: "Le cours indique que les personnes morales :",
     options: [
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le tableau de répression mentionne : personnes morales peuvent être reconnues responsables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Complicité (formes)",
     question: "La complicité peut résulter notamment de :",
     options: [
@@ -1372,7 +1372,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Définition",
     question:
         "L’atteinte au secret des correspondances consiste notamment, pour une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, à :",
@@ -1387,7 +1387,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Définition complète de l’atteinte au secret des correspondances donnée par le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Texte",
     question:
         "L’infraction d’atteinte au secret des correspondances est prévue par :",
@@ -1401,7 +1401,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que l’infraction est prévue et réprimée par l’article 432-9 du C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Auteurs",
     question: "Peut être auteur de l’infraction prévue à l’article 432-9 :",
     options: [
@@ -1414,7 +1414,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le texte vise spécifiquement ces catégories d’auteurs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Autres auteurs",
     question: "Peut également être auteur de l’atteinte aux correspondances :",
     options: [
@@ -1428,7 +1428,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours étend l’infraction à certains agents des réseaux et télécommunications.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Agissement",
     question: "L’auteur doit agir :",
     options: [
@@ -1441,7 +1441,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition identique à celle des autres abus d’autorité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Correspondances matérielles",
     question: "Sont considérées comme correspondances matérielles :",
     options: [
@@ -1454,7 +1454,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que les plis clos comme ouverts sont protégés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Télécommunications",
     question:
         "Les correspondances émises par la voie des télécommunications sont :",
@@ -1468,7 +1468,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours définit les correspondances télécoms comme dématérialisées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — État de la correspondance",
     question:
         "Pour être protégées, les correspondances télécoms doivent être :",
@@ -1482,7 +1482,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition précisée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Actes matériels",
     question: "L’atteinte peut consister notamment à :",
     options: [
@@ -1495,7 +1495,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Liste des actes matériels constitutifs de l’infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Détournement",
     question: "Le détournement d’une correspondance consiste à :",
     options: [
@@ -1508,7 +1508,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours vise l’atteinte à l’acheminement de la correspondance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Ouverture",
     question: "L’ouverture d’une correspondance constitue :",
     options: [
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours qualifie l’ouverture comme atteinte à l’inviolabilité du support.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Révélation",
     question: "La révélation du contenu d’une correspondance consiste à :",
     options: [
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition donnée par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Élément moral",
     question: "L’élément moral de l’infraction 432-9 suppose :",
     options: [
@@ -1547,7 +1547,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise que l’intention de nuire n’est pas exigée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Erreur de fait",
     question: "L’erreur de fait peut entraîner :",
     options: [
@@ -1559,7 +1559,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Exemple : ouverture par méprise pour réexpédier une lettre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Tentative",
     question:
         "La tentative d’atteinte au secret des correspondances (432-9) est :",
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise expressément : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Répression",
     question: "Les peines encourues pour l’article 432-9 sont :",
     options: [
@@ -1588,7 +1588,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS PAR PERSONNE EXERÇANT UNE FONCTION PUBLIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Définition",
     question:
         "La discrimination commise par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public consiste notamment à :",
@@ -1602,7 +1602,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition donnée par l’article 432-7 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Texte",
     question: "L’infraction de discrimination est prévue par :",
     options: [
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique que l’infraction est prévue par l’article 432-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Critères",
     question: "La discrimination peut être fondée notamment sur :",
     options: [
@@ -1629,7 +1629,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Liste non exhaustive des critères mentionnés par le Code pénal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Droit accordé par la loi",
     question: "Le 'droit accordé par la loi' s’entend :",
     options: [
@@ -1642,7 +1642,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que la notion de loi n’est pas entendue de manière restrictive.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Activité économique",
     question: "Entraver l’exercice d’une activité économique consiste à :",
     options: [
@@ -1655,7 +1655,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite notamment les tracasseries administratives, pressions, dénigrement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "L’élément moral de la discrimination suppose :",
     options: [
@@ -1667,7 +1667,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise l’existence d’une volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative de discrimination (432-7) est :",
     options: [
@@ -1679,7 +1679,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise que la tentative n’est pas incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Répression",
     question: "Les peines encourues pour l’article 432-7 sont :",
     options: [
@@ -1695,7 +1695,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (SUITE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Ordonner",
     question:
         "Dans le cadre de l’article 432-9, l’action d’« ordonner » suppose :",
@@ -1710,7 +1710,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que l’ordre doit émaner d’une personne dépositaire de l’autorité publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Commettre",
     question: "Dans l’article 432-9, le terme « commettre » vise :",
     options: [
@@ -1723,7 +1723,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours distingue clairement ordonner / commettre / faciliter.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Faciliter",
     question:
         "Faciliter une atteinte au secret des correspondances consiste à :",
@@ -1738,7 +1738,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "La facilitation correspond à une aide matérielle ou intellectuelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Photocopie",
     question:
         "La photocopie de documents contenus dans une correspondance constitue :",
@@ -1752,7 +1752,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite expressément la photocopie comme modalité d’atteinte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Interception",
     question: "L’interception d’une correspondance consiste à :",
     options: [
@@ -1764,7 +1764,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Définition donnée pour les correspondances télécoms.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Utilisation",
     question: "L’utilisation du contenu d’une correspondance vise :",
     options: [
@@ -1777,7 +1777,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’utilisation est distincte de la divulgation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Jurisprudence",
     question:
         "Selon la jurisprudence citée, la lecture et la divulgation de mails d’un étudiant constituent :",
@@ -1790,7 +1790,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "C.A. Paris, 17 décembre 2001.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Intention",
     question: "L’élément intentionnel de l’article 432-9 :",
     options: [
@@ -1803,7 +1803,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "La Cour de cassation précise que l’intention de nuire n’est pas requise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Erreur de fait (limite)",
     question:
         "L’erreur de fait en matière de correspondances télécoms ne s’applique que si :",
@@ -1818,7 +1818,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Précision du cours concernant l’application de l’erreur de fait.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Faits justificatifs",
     question:
         "L’atteinte au secret des correspondances n’est pas constituée lorsqu’elle est réalisée :",
@@ -1835,7 +1835,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (SUITE ET APPROFONDISSEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Qualité de l’auteur",
     question: "L’article 432-7 vise les discriminations commises par :",
     options: [
@@ -1848,7 +1848,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition de qualité indispensable à la qualification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Refus de droit",
     question:
         "Refuser le bénéfice d’un droit accordé par la loi peut concerner :",
@@ -1861,7 +1861,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours cite explicitement les documents administratifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Libertés publiques",
     question: "Le droit accordé par la loi peut consister en :",
     options: [
@@ -1873,7 +1873,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours mentionne expressément les libertés publiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Exclusion",
     question:
         "Ne constitue pas un refus du bénéfice d’un droit accordé par la loi :",
@@ -1887,7 +1887,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Cass. crim., 17 juin 2008.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Entrave économique",
     question: "L’entrave à une activité économique peut résulter :",
     options: [
@@ -1899,7 +1899,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours cite les tracasseries, pressions, dénigrement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Victime",
     question:
         "Les discriminations réprimées par l’article 432-7 peuvent viser :",
@@ -1912,7 +1912,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise que les deux sont visées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "La discrimination suppose :",
     options: [
@@ -1924,7 +1924,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’élément moral est une volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Fait justificatif",
     question:
         "La répression est écartée lorsque les agissements discriminatoires sont :",
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Exemple : directives gouvernementales prévues par la loi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative de discrimination est :",
     options: [
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise expressément : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Complicité",
     question: "La complicité de discrimination est punissable :",
     options: [
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (ENCORE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Réseau ouvert au public",
     question:
         "Un réseau ouvert au public de communications électroniques est un réseau :",
@@ -1980,7 +1980,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Définition reprise du code des postes et communications électroniques citée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Exemples de réseaux",
     question:
         "Sont cités comme pouvant être des réseaux de communications électroniques :",
@@ -1994,7 +1994,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours énumère ces exemples de réseaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Auteur (agent de réseau)",
     question:
         "Pour être auteur en tant qu’agent d’un exploitant de réseau ouvert au public, il faut :",
@@ -2009,7 +2009,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que cela vise toute personne relevant de l’autorité de l’exploitant, salariée ou non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Fournisseur télécoms",
     question:
         "Un agent d’un fournisseur de services de télécommunications est :",
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Définition large donnée par le cours : salariée ou non, quelle que soit la position.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Peu importe le contenu",
     question: "Pour 432-9, le contenu de la correspondance :",
     options: [
@@ -2037,7 +2037,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que peu importe le contenu : privé ou professionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Moment de protection",
     question:
         "Une correspondance par télécommunications est protégée lorsqu’elle est :",
@@ -2051,7 +2051,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Condition exacte rappelée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Détournement (mail)",
     question: "Le détournement d’un courrier électronique peut consister à :",
     options: [
@@ -2063,7 +2063,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Exemple de manipulation informatique cité dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Divulgation (tiers)",
     question: "Effectue une divulgation le tiers qui :",
     options: [
@@ -2075,7 +2075,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours donne cet exemple pour qualifier la divulgation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Complicité",
     question:
         "Un particulier peut être complice d’un dépositaire de l’autorité publique (432-9) s’il :",
@@ -2090,7 +2090,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours indique qu’un particulier peut se rendre complice en fournissant des moyens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Élément intentionnel (Cass.)",
     question:
         "Selon la jurisprudence citée (27 février 2018), l’élément intentionnel implique :",
@@ -2105,7 +2105,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours cite : intention de porter atteinte au contenu (sans exigence d’intention de nuire).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Circonstances aggravantes",
     question: "Pour l’infraction 432-9, les circonstances aggravantes sont :",
     options: [
@@ -2121,7 +2121,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (ENCORE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Définition (2 branches)",
     question: "L’article 432-7 vise deux types d’actes discriminatoires :",
     options: [
@@ -2134,7 +2134,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le texte liste expressément 1° et 2°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Droit accordé par la loi",
     question: "Le mot « loi » au sens de 432-7 doit être compris comme :",
     options: [
@@ -2146,7 +2146,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise que la notion n’est pas restrictive.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Exemples de droits",
     question:
         "Parmi les exemples de « droit accordé par la loi » cités par le cours :",
@@ -2160,7 +2160,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Liste d’exemples donnée dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Ne constitue pas un droit",
     question: "Ne constitue pas un « droit accordé par la loi » :",
     options: [
@@ -2173,7 +2173,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise qu’un pouvoir discrétionnaire (ex : distinction) n’est pas un droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Entrave économique (formes)",
     question:
         "Selon le cours, l’entrave à une activité économique peut résulter de :",
@@ -2187,7 +2187,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Exemples explicitement donnés dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Victime",
     question:
         "Les agissements discriminatoires peuvent être commis au détriment :",
@@ -2200,7 +2200,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours vise les deux hypothèses.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "La volonté discriminatoire se caractérise par :",
     options: [
@@ -2212,7 +2212,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’élément moral est une conscience/volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Circonstances aggravantes",
     question: "Pour 432-7, les circonstances aggravantes sont :",
     options: [
@@ -2224,7 +2224,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours indique : IV - Circonstances aggravantes : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Répression",
     question: "Les peines principales encourues pour 432-7 sont :",
     options: [
@@ -2236,7 +2236,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours fixe la répression à 5 ans et 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative en matière de discrimination (432-7) est :",
     options: [
@@ -2248,7 +2248,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours précise : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Complicité",
     question: "La complicité de discrimination suppose :",
     options: [
@@ -2265,7 +2265,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (APPROFONDISSEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Moment de l’atteinte",
     question:
         "L’atteinte au secret des correspondances peut être constituée même si :",
@@ -2279,7 +2279,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que les correspondances sont protégées tant qu’elles ne sont pas appréhendées par leur destinataire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Support",
     question:
         "Pour les correspondances télécoms, l’absence de support matériel implique que :",
@@ -2293,7 +2293,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Les correspondances dématérialisées sont protégées pendant leur transmission.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Enquête pénale",
     question:
         "Hors autorisation judiciaire, l’interception d’une correspondance dans le cadre d’une enquête constitue :",
@@ -2307,7 +2307,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Les interceptions ne sont licites que dans les cas prévus par la loi (CPP).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — CPP",
     question:
         "Les interceptions judiciaires de correspondances sont encadrées par :",
@@ -2320,7 +2320,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Référence expresse citée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — JLD",
     question:
         "Dans certaines enquêtes, les interceptions peuvent être autorisées par :",
@@ -2334,7 +2334,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours vise les autorisations dans le cadre des enquêtes de flagrance/préliminaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Utilisation interne",
     question:
         "Se servir du contenu d’une correspondance interceptée à des fins personnelles constitue :",
@@ -2347,7 +2347,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’utilisation est une modalité autonome de l’atteinte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Qualité de la victime",
     question: "La qualité de la victime est indifférente car :",
     options: [
@@ -2361,7 +2361,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que le contenu et la qualité des personnes importent peu.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Absence de préjudice",
     question: "L’absence de préjudice pour la victime :",
     options: [
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (APPROFONDISSEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Principe d’égalité",
     question:
         "L’infraction de discrimination sanctionne une atteinte au principe :",
@@ -2390,7 +2390,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "La discrimination porte atteinte au principe d’égalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Situation de famille",
     question:
         "Refuser un droit en raison de la situation de famille constitue :",
@@ -2403,7 +2403,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "La situation de famille figure parmi les critères prohibés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Langue",
     question:
         "La capacité à s’exprimer dans une langue autre que le français peut constituer :",
@@ -2416,7 +2416,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Ce critère est expressément visé par les textes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Lanceur d’alerte",
     question:
         "Le fait de discriminer une personne en raison de sa qualité de lanceur d’alerte est :",
@@ -2429,7 +2429,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "La qualité de lanceur d’alerte est expressément protégée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Absence de droit",
     question: "Si aucun droit n’est accordé par la loi, il ne peut y avoir :",
     options: [
@@ -2441,7 +2441,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’existence d’un droit légal est une condition essentielle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Activité économique (preuve)",
     question:
         "Pour caractériser l’entrave à une activité économique, il suffit de démontrer que :",
@@ -2454,7 +2454,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "La cessation ou le préjudice chiffré ne sont pas exigés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Motivation",
     question: "Une motivation administrative apparemment neutre peut :",
     options: [
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "La volonté discriminatoire peut être déduite des circonstances.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Absence d’intention",
     question: "Si l’auteur n’a pas conscience de discriminer :",
     options: [
@@ -2479,7 +2479,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’élément moral exige une conscience discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Personnes morales",
     question:
         "Les personnes morales peuvent être reconnues responsables de discrimination :",
@@ -2489,7 +2489,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Le cours précise que la responsabilité pénale des personnes morales peut être retenue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Finalité",
     question: "La répression de la discrimination vise principalement à :",
     options: [
@@ -2506,7 +2506,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (NIVEAU EXPERT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Infraction formelle",
     question: "L’infraction prévue par l’article 432-9 est une infraction :",
     options: [
@@ -2518,7 +2518,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Aucun préjudice n’est exigé : l’atteinte suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Lecture partielle",
     question: "Le fait de lire partiellement une correspondance constitue :",
     options: [
@@ -2531,7 +2531,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Toute prise de connaissance non autorisée du contenu est réprimée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Professionnel / privé",
     question: "Une correspondance professionnelle est protégée :",
     options: [
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le contenu professionnel ou privé est indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Courrier arrivé",
     question:
         "Une correspondance arrivée à destination mais non encore ouverte :",
@@ -2557,7 +2557,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "La protection cesse uniquement après appréhension par le destinataire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Consentement du tiers",
     question: "Le consentement d’un tiers non destinataire :",
     options: [
@@ -2569,7 +2569,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Seul le destinataire peut consentir.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Conservation",
     question:
         "La conservation d’une correspondance interceptée sans en révéler le contenu :",
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Selon les circonstances, elle peut révéler une utilisation illicite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Suppression",
     question:
         "La suppression d’une correspondance empêchement sa réception constitue :",
@@ -2596,7 +2596,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "La suppression est expressément visée par le texte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Autorité hiérarchique",
     question:
         "L’ordre donné par un supérieur hiérarchique n’exonère pas l’exécutant :",
@@ -2613,7 +2613,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (NIVEAU EXPERT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Infraction intentionnelle",
     question:
         "La discrimination prévue par l’article 432-7 est une infraction :",
@@ -2622,7 +2622,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Elle suppose une volonté discriminatoire consciente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Neutralité apparente",
     question:
         "Une décision apparemment neutre peut constituer une discrimination si :",
@@ -2636,7 +2636,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "La forme de la décision n’écarte pas l’intention discriminatoire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Charge de travail",
     question:
         "Alourdir volontairement la charge administrative d’un professionnel pour un motif discriminatoire constitue :",
@@ -2649,7 +2649,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Rendre l’activité plus difficile suffit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Dénigrement",
     question:
         "Le dénigrement d’un professionnel auprès de ses partenaires peut caractériser :",
@@ -2662,7 +2662,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "Le cours cite expressément le dénigrement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Absence de texte",
     question:
         "En l’absence de texte accordant un droit, la qualification de discrimination :",
@@ -2675,7 +2675,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "L’existence d’un droit légal est indispensable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Critère multiple",
     question: "Une discrimination peut être fondée sur :",
     options: [
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
     explanation: "La pluralité de critères n’exclut pas l’infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Personnes morales",
     question: "La responsabilité pénale d’une personne morale suppose :",
     options: [
@@ -2701,7 +2701,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
         "Application du droit commun de la responsabilité pénale des personnes morales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — But poursuivi",
     question: "Le but poursuivi par l’auteur est :",
     options: [
@@ -2719,7 +2719,7 @@ final List<QuizQuestion> questionAbusAutoriteParticuliers = [
 // PAGE
 // ============================================================================
 class QuizAbusAutoriteGPXSchool extends StatefulWidget {
-  static const String routeName = '/gpx/nation/quiz/abus_autorite_particuliers';
+  static const String routeName = '/gpx/dps/nation/quiz/abus_autorite_particuliers';
   final String uid;
   final String email;
 
@@ -3069,7 +3069,7 @@ class _QuizAbusAutoriteGPXSchoolState extends State<QuizAbusAutoriteGPXSchool>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3272,7 +3272,7 @@ class _QuizAbusAutoriteGPXSchoolState extends State<QuizAbusAutoriteGPXSchool>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3455,7 +3455,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3988,10 +3987,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4362,7 +4362,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4403,9 +4403,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

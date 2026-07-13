@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsPersonnesFuite = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 74-2 C.P.P.",
     question:
         "Quel est l’objectif principal de la procédure prévue par l’article 74-2 du C.P.P. ?",
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 74-2 C.P.P.",
     question:
         "Sur instructions de quelle autorité la procédure de l’article 74-2 du C.P.P. peut-elle être mise en œuvre ?",
@@ -129,7 +129,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 74-2 C.P.P.",
     question:
         "Les actes réalisés dans le cadre de l’article 74-2 du C.P.P. renvoient principalement aux articles :",
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandat d’arrêt",
     question:
         "La procédure de l’article 74-2 du C.P.P. est notamment applicable à une personne en fuite qui :",
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandat d’arrêt",
     question:
         "Un mandat d’arrêt permettant la mise en œuvre de l’article 74-2 peut être délivré notamment par :",
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandat d’arrêt",
     question:
         "La procédure de recherche des personnes en fuite peut s’appliquer à un mandat d’arrêt délivré par :",
@@ -190,7 +190,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Peines",
     question:
         "La procédure 74-2 peut s’appliquer à une personne condamnée à une peine privative de liberté :",
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Fichiers nationaux",
     question:
         "Les personnes inscrites au fichier judiciaire national automatisé des auteurs d’infractions terroristes (FIJAIT) sont concernées par l’article 74-2 lorsqu’elles :",
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Fichiers nationaux",
     question:
         "Les personnes inscrites au fichier judiciaire national automatisé des auteurs d’infractions sexuelles ou violentes (FIJAISV) sont concernées si elles :",
@@ -235,7 +235,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Aménagements de peine",
     question:
         "L’article 74-2 peut être appliqué à une personne ayant fait l’objet d’une décision de retrait ou de révocation :",
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Quantum de peine",
     question:
         "Pour que l’article 74-2 s’applique à une décision de mise à exécution d’un reliquat de peine, la durée d’emprisonnement à exécuter doit être :",
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — OPJ/APJ",
     question:
         "Dans le cadre de l’article 74-2, qui peut être assisté d’agents de police judiciaire pour accomplir les actes de l’enquête ?",
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — OPJ",
     question:
         "Dans le cadre de l’article 74-2, qui peut rédiger les actes de procédure ?",
@@ -295,7 +295,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Garde à vue",
     question:
         "Dans le cadre de la procédure de l’article 74-2, l’OPJ peut-il placer une personne en garde à vue ?",
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Flagrance",
     question:
         "Les actes que l’OPJ peut réaliser dans le cadre de l’article 74-2 correspondent à ceux :",
@@ -325,7 +325,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Autorisation",
     question:
         "Dans le cadre de l’article 74-2, qui autorise les interceptions téléphoniques ?",
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Durée",
     question:
         "Dans le cadre de l’article 74-2, la durée initiale maximale d’une autorisation d’interception téléphonique est de :",
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Limite en matière correctionnelle",
     question:
         "En matière correctionnelle, la durée totale des interceptions autorisées dans le cadre de l’article 74-2 est limitée à :",
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Rappel",
     question:
         "Les techniques spéciales d’enquête mobilisables via l’article 74-2 renvoient à celles applicables :",
@@ -377,7 +377,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extension — Mandat d’arrêt européen et extradition",
     question:
         "Les dispositions de l’article 74-2 du C.P.P. sont également applicables en matière :",
@@ -393,7 +393,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Synthèse",
     question:
         "Parmi les propositions suivantes, laquelle ne correspond PAS à une condition d’application de l’article 74-2 du C.P.P. ?",
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandats",
     question:
         "Dans le cadre du 1° de l’article 74-2, le mandat d’arrêt délivré par le juge d’instruction concerne une personne :",
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Condamnation",
     question:
         "Pour le 3° de l’article 74-2, la condamnation privative de liberté prenant en compte un sursis révoqué doit :",
@@ -439,7 +439,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Procureur",
     question:
         "Dans le cadre de l’article 74-2, le procureur de la République peut demander aux OPJ :",
@@ -455,7 +455,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Procureur",
     question:
         "Dans le cadre des interceptions 74-2, les attributions normalement confiées au juge d’instruction par les articles 100-3 à 100-5 C.P.P. sont exercées par :",
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — JLD",
     question:
         "Selon l’article 74-2, le juge des libertés et de la détention doit être informé :",
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Conditions générales",
     question:
         "Pour autoriser des interceptions dans le cadre de l’article 74-2, la peine encourue pour l’infraction doit être :",
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "À peine de nullité, les lignes dépendant du cabinet ou domicile d’un député, sénateur, avocat ou magistrat ne peuvent être interceptées que :",
@@ -511,7 +511,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Secret professionnel",
     question:
         "Les correspondances avec un avocat ne peuvent être transcrites dans le cadre des interceptions 74-2 que si :",
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — OPJ",
     question:
         "Parmi les actes suivants, lesquels peuvent être accomplis par l’OPJ dans le cadre de l’article 74-2 ?",
@@ -542,7 +542,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — PV d’interception",
     question:
         "Que doit faire l’OPJ après les opérations d’interception téléphonique en application de l’article 74-2 ?",
@@ -558,7 +558,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Interprète",
     question:
         "Si des interceptions portent sur des conversations en langue étrangère, l’OPJ doit :",
@@ -573,7 +573,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Liste",
     question:
         "Parmi les techniques suivantes, laquelle fait partie des techniques spéciales d’enquête mobilisables via l’article 74-2 ?",
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Accès à distance",
     question:
         "L’accès à distance aux correspondances stockées par la voie des communications électroniques (articles 706-95 à 706-95-3) permet :",
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Conditions",
     question:
         "Les techniques spéciales d’enquête via l’article 74-2 (surveillance, infiltration, etc.) ne sont applicables que si :",
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Moment d’utilisation",
     question:
         "L’article 74-2 du C.P.P. vise en particulier la recherche d’une personne faisant l’objet d’un mandat d’arrêt :",
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Renouvellement",
     question:
         "Dans le cadre 74-2, le renouvellement de l’autorisation d’interception téléphonique :",
@@ -651,7 +651,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Nature de la décision",
     question:
         "La décision du JLD autorisant les interceptions dans le cadre de l’article 74-2 :",
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Sonorisation",
     question:
         "La sonorisation et fixation d’images mobilisable via l’article 74-2 correspond à :",
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Captation de données",
     question:
         "La captation de données informatiques (706-102-1 à 706-102-5) permet notamment :",
@@ -699,7 +699,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Analyse fine",
     question:
         "Parmi les situations suivantes, laquelle permet de mettre en œuvre à la fois l’article 74-2 et les techniques spéciales d’enquête du titre XXV ?",
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Fichiers",
     question:
         "Une personne inscrite au FIJAIT ou au fichier des infractions sexuelles/violentes peut être concernée par l’article 74-2 si :",
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Répartition des rôles",
     question:
         "Dans le cadre des interceptions autorisées par 74-2, la répartition des rôles est la suivante :",
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Limites",
     question:
         "Pourquoi la garde à vue est-elle exclue de la procédure de l’article 74-2 du C.P.P. ?",
@@ -763,7 +763,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Correctionnel / Criminel",
     question:
         "En matière criminelle, la durée totale des interceptions autorisées dans le cadre de l’article 74-2 est :",
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes d’avocat",
     question:
         "Dans quel cas une ligne dépendant du cabinet ou domicile d’un avocat peut-elle être interceptée dans le cadre 74-2 ?",
@@ -795,7 +795,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Conditions cumulatives",
     question:
         "Pour recourir à l’IMSI-catcher dans le cadre 74-2, il faut notamment :",
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Respect des lieux protégés",
     question:
         "Dans le cadre d’une sonorisation via 74-2, quel est l’un des risques majeurs de nullité ?",
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Mandat d’arrêt européen",
     question:
         "Dans le cadre d’un mandat d’arrêt européen, l’utilisation de la procédure 74-2 permet :",
@@ -843,7 +843,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Extradition",
     question: "En matière d’extradition, le recours à l’article 74-2 permet :",
     options: [
@@ -858,7 +858,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Information du JLD",
     question:
         "Pourquoi le législateur impose-t-il d’informer sans délai le JLD des actes accomplis dans le cadre des interceptions 74-2 ?",
@@ -874,7 +874,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Déclenchement de 74-2",
     question:
         "Quel serait le défaut majeur d’une enquête prétendument menée sur le fondement de l’article 74-2 alors qu’aucune instruction écrite ou orale du procureur n’apparaît en procédure ?",
@@ -890,7 +890,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Proportionnalité",
     question:
         "Dans le cadre de 74-2, le recours à des techniques spéciales très intrusives (sonorisation, captation de données) doit respecter principalement :",
@@ -911,7 +911,7 @@ final List<QuizQuestion> questionsPersonnesFuite = [
 // PAGE
 // ============================================================================
 class QuizPersonnesFuitePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/personnes_fuite';
+  static const String routeName = '/gpx/dps/generalites/quiz/personnes_fuite';
   final String uid;
   final String email;
 
@@ -1235,7 +1235,7 @@ class _QuizPersonnesFuitePageState extends State<QuizPersonnesFuitePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1424,7 +1424,7 @@ class _QuizPersonnesFuitePageState extends State<QuizPersonnesFuitePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1576,7 +1576,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2102,10 +2101,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2475,7 +2475,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2516,9 +2516,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

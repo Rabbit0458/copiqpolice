@@ -110,16 +110,16 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la participation à un groupement violent.",
                 ),
@@ -135,19 +135,19 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Cette infraction vise spécifiquement la participation à une « bande » ayant l’intention de commettre, "
                 "de manière concertée, des violences contre les personnes ou des atteintes aux biens. "
                 "Elle a pour objectif de compléter l’incrimination d’association de malfaiteurs, limitée aux projets "
                 "de délits punis d’au moins cinq ans d’emprisonnement.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Participer à un groupement, même formé temporairement",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le groupement est ici le moyen de préparation, et non l’objet même de l’infraction. "
                 "Ce n’est ni une association de malfaiteurs (pas la même constance/organisation), "
                 "ni une bande organisée, ni un attroupement.\n\n"
@@ -156,9 +156,9 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
                 "La simple présence peut suffire à caractériser la participation, même brève, dès lors que la personne "
                 "s’intègre au groupement. Il n’est pas nécessaire de prendre part soi-même aux actes préparatoires.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "L’infraction ne réprime pas le simple fait d’être en groupe : une promenade pacifique entre amis n’est pas visée.",
@@ -166,53 +166,53 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) En vue d’une préparation caractérisée par un ou plusieurs faits matériels",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les actes préparatoires, situés en amont des violences/destructions, traduisent l’intention délictueuse. "
                 "Ils doivent être établis à partir de faits matériels (indices concrets).",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Port de barres de fer, battes, objets contondants, etc.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Port de cagoules / dissimulation du visage.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Publications ou messages annonçant des violences (blog, réseaux sociaux).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Envois de SMS / messages coordonnant l’action.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) But : violences volontaires contre les personnes ou destructions/dégradations",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La réalisation des violences ou destructions n’est pas nécessaire : l’infraction permet "
                 "d’intervenir avant le passage à l’acte, avec une visée principalement préventive.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Exemple de référence liée aux violences psychologiques : ",
                 ),
                 TextSpan(
                   text: "article 222-14-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -225,36 +225,36 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Participation sciemment au groupement"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Participation sciemment au groupement"),
+              _Paragraph(
                 "L’auteur doit participer de manière intentionnelle. Le texte vise à exclure toute incrimination "
                 "de la personne qui se trouverait mêlée malgré elle à un groupement.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Connaissance des faits de préparation"),
+              _SubTitle("B) Connaissance des faits de préparation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’auteur participe sciemment au groupement en ayant connaissance des faits matériels de préparation, "
                       "qu’il les ait accomplis lui-même ou qu’ils aient été commis par d’autres. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., n° 24-80.051, 5 février 2025)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Soit il a personnellement réalisé un ou plusieurs faits matériels de préparation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Soit il a connaissance de tels faits réalisés par d’autres membres du groupement.",
               ),
@@ -284,66 +284,66 @@ class ParticipationGroupementViolentPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification : délit — "),
+                TextSpan(text: "Qualification : délit — "),
                 TextSpan(
                   text: "article 222-14-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "1 an d’emprisonnement."),
-              const _BulletPoint(text: "15 000 € d’amende."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "1 an d’emprisonnement."),
+              _BulletPoint(text: "15 000 € d’amende."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La responsabilité pénale des personnes morales peut être engagée conformément à ",
                 ),
                 TextSpan(
                   text: "l’article 222-16-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : NON (non punissable faute de disposition expresse en matière correctionnelle).",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément aux "),
+                TextSpan(text: "Complicité : OUI, conformément aux "),
                 TextSpan(
                   text: "articles 121-6",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -381,10 +381,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -449,7 +449,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -492,7 +492,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -554,7 +554,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -565,10 +565,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -580,13 +579,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -599,13 +597,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

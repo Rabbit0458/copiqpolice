@@ -2041,7 +2041,7 @@ final List<QuizQuestion> questionAutoriteParentale = [
 class QuizAutoriteParentalePA extends StatefulWidget {
   static const String grade = 'pa';
   static const String routeName =
-      '/gpx_scolarite_pages/mineurs_famille_pages/autorite_parentale/quiz_autorite_parentale';
+      '/pa_scolarite_pages/mineurs_famille_pages/autorite_parentale/quiz_autorite_parentale';
   final String uid;
   final String email;
 

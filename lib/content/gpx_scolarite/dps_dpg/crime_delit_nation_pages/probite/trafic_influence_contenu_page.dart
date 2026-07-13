@@ -113,16 +113,16 @@ class TraficInfluencePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-11 alinéas 1 et 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le trafic d’influence.",
                 ),
               ]),
@@ -137,144 +137,144 @@ class TraficInfluencePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un auteur particulier"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un auteur particulier"),
+              _Paragraph(
                 "L’infraction suppose un auteur appartenant à l’une des catégories suivantes.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Personne dépositaire de l’autorité publique : détient un pouvoir de décision lié à une parcelle d’autorité publique (ex. policiers, gendarmes, douaniers, magistrats, militaires, officiers publics, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Personne investie d’un mandat électif public : élus nationaux, régionaux, départementaux, communaux, et certains élus d’établissements publics administratifs (chambres consulaires, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Personne chargée d’une mission de service public : accomplit ou participe à une mission d’intérêt général, temporaire ou permanente, sans nécessaire pouvoir de décision/commandement.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un acte : sollicitation ou agrément"),
-              const _Paragraph(
+              _SubTitle("B) Un acte : sollicitation ou agrément"),
+              _Paragraph(
                 "Le trafic d’influence repose sur l’un des deux comportements suivants :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "La sollicitation : démarche/initiative de l’auteur (directe ou détournée) laissant entendre qu’il faut « payer » pour obtenir la décision recherchée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’agrément : accord donné par l’auteur à la proposition (accord de volontés entre celui qui propose et celui qui accepte).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La sollicitation ou l’agrément peut être direct(e) ou indirect(e) (par personne interposée).",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Le texte vise des faits possibles « à tout moment » : il inclut aussi les avantages demandés/acceptés en remerciement d’actes accomplis antérieurement.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un bénéfice attendu"),
-              const _Paragraph(
+              _SubTitle("C) Un bénéfice attendu"),
+              _Paragraph(
                 "L’avantage peut prendre des formes très variées : somme d’argent, cadeau, service, voyage, droits, etc. "
                 "Les termes « offres, promesses, dons, présents ou avantages quelconques » sont entendus largement.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un acte d’influence (réelle ou supposée)"),
-              const _Paragraph(
+              _SubTitle("D) Un acte d’influence (réelle ou supposée)"),
+              _Paragraph(
                 "L’auteur doit abuser (ou accepter d’abuser) de son influence réelle ou supposée auprès d’une autorité ou d’une administration publique.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’influence doit être directe : c’est l’auteur qui est censé intervenir lui-même auprès du service ou de la personne disposant d’un pouvoir de décision.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : sollicitation d’une somme pour « intervenir » afin que des PV n’aient aucune suite pénale, alors même que l’auteur n’avait pas le pouvoir de classer ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 06 juin 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Peu importe que la personne sollicitée obtienne concrètement l’avantage recherché : l’infraction peut être caractérisée même si l’influence se révèle vaine.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Finalité : obtenir une décision favorable"),
-              const _Paragraph(
+              _SubTitle("E) Finalité : obtenir une décision favorable"),
+              _Paragraph(
                 "L’influence doit tendre à faire obtenir d’une autorité ou d’une administration publique :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Des distinctions (décorations, médailles, récompenses, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Des emplois (tout poste, quel que soit le niveau, nommé/investi par l’autorité).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Des marchés (même privés, dès lors qu’ils nécessitent l’agrément de l’autorité publique).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Toute autre décision favorable (même régulière en elle-même : ce sont les moyens d’influence irréguliers qui constituent l’infraction).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : acceptation de sommes pour tenter d’obtenir la délivrance d’un titre de séjour et intervention auprès d’un assistant parlementaire ",
                   ),
                   TextSpan(
                     text: "(C.A. Toulouse, 31 janvier 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : marché privé nécessitant l’agrément de l’autorité publique ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 15 mars 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -309,16 +309,16 @@ class TraficInfluencePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-11 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation lorsque l’infraction est commise en bande organisée.",
                 ),
@@ -334,90 +334,90 @@ class TraficInfluencePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 000 000 € d’amende ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
                 ),
                 TextSpan(
                   text: "article 432-11 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (bande organisée) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (bande organisée) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 2 000 000 € d’amende ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
                 ),
                 TextSpan(
                   text: "article 432-11 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph(
+              _SubTitle("Personnes morales"),
+              _Paragraph(
                 "Les personnes morales peuvent être reconnues responsables.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide/assistance, provocation, instructions données).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Réduction ou exemption de peine"),
+              _SubTitle("Réduction ou exemption de peine"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-11-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’auteur ou le complice de trafic d’influence qui permet soit de faire cesser l’infraction, "
                       "soit d’identifier les autres auteurs/complices, voit sa peine privative de liberté réduite de moitié.",
@@ -459,10 +459,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -527,7 +527,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -570,7 +570,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -632,7 +632,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -643,10 +643,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -658,13 +657,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -677,13 +675,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

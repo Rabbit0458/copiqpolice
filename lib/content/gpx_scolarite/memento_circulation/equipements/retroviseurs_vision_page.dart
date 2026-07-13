@@ -178,65 +178,65 @@ class RetroviseursVisionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Repères issus du mémento (à utiliser comme aide en contrôle) :",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Véhicule particulier"),
-              const _BulletPoint(
+              _SubTitle("Véhicule particulier"),
+              _BulletPoint(
                 text: "1 intérieur + 1 latéral (extérieur gauche).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 "Véhicule particulier (cas imposant un miroir droit)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "1 intérieur + 2 latéraux (extérieur gauche + extérieur droit).",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Exemples : carrosserie commerciale/break, conduite accompagnée, ou traction d’une remorque "
                 "dépassant la largeur ou masquant la visibilité.",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Transport en commun de personnes"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Transport en commun de personnes"),
+              _BulletPoint(
                 text: "2 latéraux (extérieur gauche + extérieur droit).",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Transport de marchandises (PTAC > 3,5 t)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Transport de marchandises (PTAC > 3,5 t)"),
+              _BulletPoint(
                 text: "2 latéraux (extérieur gauche + extérieur droit).",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Tricycle à moteur avec cabine"),
-              const _BulletPoint(text: "1 latéral (extérieur gauche)."),
+              SizedBox(height: 12),
+              _SubTitle("Tricycle à moteur avec cabine"),
+              _BulletPoint(text: "1 latéral (extérieur gauche)."),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Quadricycle à moteur"),
-              const _BulletPoint(text: "1 latéral (extérieur gauche)."),
+              SizedBox(height: 12),
+              _SubTitle("Quadricycle à moteur"),
+              _BulletPoint(text: "1 latéral (extérieur gauche)."),
 
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "Motocyclette / cyclomoteur / tricycle sans cabine",
               ),
-              const _BulletPoint(text: "1 latéral (extérieur gauche)."),
+              _BulletPoint(text: "1 latéral (extérieur gauche)."),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Véhicule/appareil agricole à cabine fermée"),
-              const _BulletPoint(text: "1 latéral (extérieur gauche)."),
+              SizedBox(height: 12),
+              _SubTitle("Véhicule/appareil agricole à cabine fermée"),
+              _BulletPoint(text: "1 latéral (extérieur gauche)."),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "RAPPEL",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ce tableau sert de mémo opérationnel. En cas de doute (véhicule modifié, usage particulier), "
                         "vérifier l’efficacité réelle de la vision arrière et la conformité attendue.",
@@ -254,15 +254,15 @@ class RetroviseursVisionPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Ici on est sur une obligation d’équipement : la contravention est généralement caractérisée "
                 "par le simple constat du défaut d’équipement conforme, sans qu’il soit nécessaire de prouver une intention particulière.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En pratique : ce qui compte, c’est la conformité de l’équipement et la capacité de surveillance arrière depuis le siège conducteur.",
                   ),
@@ -298,9 +298,9 @@ class RetroviseursVisionPage extends StatelessWidget {
                     "D.I.A. / Dépistage stupéfiants : facultatifs (selon ton mémento).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Bon réflexe : photographier/constater l’absence ou la non-conformité (nombre/position) si nécessaire pour la procédure interne.",
                   ),
@@ -317,13 +317,13 @@ class RetroviseursVisionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _BulletPoint(
+            children: const [
+              _BulletPoint(
                 text:
                     "Tentative : NON (non applicable : contravention d’équipement constatée).",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Complicité : NON (pas pertinente ici : contravention d’équipement).",
                 ),
@@ -364,10 +364,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -432,7 +432,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -475,7 +475,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -537,7 +537,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -569,7 +569,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -582,7 +582,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

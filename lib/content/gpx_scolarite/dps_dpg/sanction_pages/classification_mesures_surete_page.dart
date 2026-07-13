@@ -14,7 +14,7 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
     final Color bg = isDark ? const Color(0xFF373737) : const Color(0xFFFFFFFF);
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
 
-    final Color lawRed = const Color(0xFFE53935);
+    const Color lawRed = Color(0xFFE53935);
 
     Color cardBg(Color light, Color dark) => isDark ? dark : light;
 
@@ -79,28 +79,28 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
             cardColor: cardBg(const Color(0xFFEFF7FF), const Color(0xFF263244)),
             accent: const Color(0xFF42A5F5),
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Elles concernent essentiellement les alcooliques et toxicomanes.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("1.1 — Le contrôle judiciaire"),
+              SizedBox(height: 10),
+              _SubTitle("1.1 — Le contrôle judiciaire"),
               _Paragraph.rich([
-                const TextSpan(text: "Seul "),
+                TextSpan(text: "Seul "),
                 TextSpan(
                   text: "l’article 138 10° du C.P.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " prévoit, dans le cadre du contrôle judiciaire, l’obligation pour la personne "
                       "de se soumettre à des mesures de traitement ou de soins, notamment aux fins "
                       "de désintoxication.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("1.2 — Les mesures thérapeutiques"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("1.2 — Les mesures thérapeutiques"),
+              _Paragraph(
                 "Le législateur a mis en place un système qui donne la priorité aux mesures "
                 "thérapeutiques sur les sanctions pénales. Une injonction thérapeutique est prévue.",
               ),
@@ -114,15 +114,15 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
             cardColor: cardBg(const Color(0xFFFFF8E1), const Color(0xFF2F2A1B)),
             accent: const Color(0xFFF9A825),
             titleColor: isDark ? Colors.white : const Color(0xFF5D4037),
-            children: [
-              const _SubTitle("2.1 — Le suivi socio-judiciaire"),
+            children: const [
+              _SubTitle("2.1 — Le suivi socio-judiciaire"),
               _Paragraph.rich([
-                const TextSpan(text: "Le suivi socio-judiciaire ("),
+                TextSpan(text: "Le suivi socio-judiciaire ("),
                 TextSpan(
                   text: "art. 131-36-1 à 131-36-8 C.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") oblige le condamné, majeur ou mineur ayant commis des infractions de nature "
                       "sexuelle ou des violences, à se soumettre, sous le contrôle du juge de "
@@ -130,26 +130,26 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
                       "une durée fixée par la juridiction de jugement.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Peut être assorti d’une injonction de soins si cela est bénéfique au condamné.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Peut être assorti d’un placement sous surveillance électronique mobile (décidé par la juridiction ou ultérieurement par le JAP).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "2.2 — La surveillance judiciaire des personnes dangereuses",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Cette mesure prévue à "),
+                TextSpan(text: "Cette mesure prévue à "),
                 TextSpan(
                   text: "l’article 723-29 du C.P.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " vise à prévenir la récidive lorsque le risque paraît avéré. Elle peut être "
                       "prononcée notamment pour des auteurs condamnés à une peine privative de liberté "
@@ -169,24 +169,24 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
             cardColor: cardBg(const Color(0xFFF3E5F5), const Color(0xFF2D2230)),
             accent: const Color(0xFF8E24AA),
             titleColor: isDark ? Colors.white : const Color(0xFF4A148C),
-            children: [
-              const _SubTitle("3.1 — Mesures applicables aux mineurs"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("3.1 — Mesures applicables aux mineurs"),
+              _Paragraph(
                 "Le code de la justice pénale des mineurs érige en principe fondamental la primauté "
                 "de la réponse éducative sur la réponse répressive.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "3.1.1 — La mesure éducative judiciaire provisoire (M.E.J.P.)",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "La M.E.J.P. ("),
+                TextSpan(text: "La M.E.J.P. ("),
                 TextSpan(
                   text: "art. L323-1 à L323-3 du C.J.P.M.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") peut être prise à tout moment au cours de la procédure, avant le prononcé de la "
                       "sanction, pour une durée d’un an renouvelable (",
@@ -195,40 +195,40 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
                   text: "art. L432-2 du C.J.P.M.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "). Elle est modulable selon les besoins et l’évolution du mineur.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
-              const _SubTitle("3.1.2 — Mesures d’investigation et de sûreté"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("3.1.2 — Mesures d’investigation et de sûreté"),
+              _BulletPoint(
                 text:
                     "La M.E.J.P. peut s’accompagner d’une mesure judiciaire d’investigation éducative (M.J.I.E.) : évaluation approfondie et interdisciplinaire de la personnalité et de la situation du mineur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Placement sous contrôle judiciaire possible avec obligations/interdictions (lieux, contacts…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Avant jugement : assignation à résidence avec surveillance électronique ou détention provisoire (sous conditions).",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("3.1.3 — Rétention et surveillance de sûreté"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("3.1.3 — Rétention et surveillance de sûreté"),
+              _Paragraph(
                 "La loi du 25 février 2008 n’exclut pas les mineurs du dispositif de protection "
                 "contre les criminels dangereux.",
               ),
 
-              const SizedBox(height: 14),
-              const _SubTitle("3.2 — Mesures applicables aux majeurs"),
+              SizedBox(height: 14),
+              _SubTitle("3.2 — Mesures applicables aux majeurs"),
 
-              const _SubTitle("3.2.1 — Interdiction de séjour"),
+              _SubTitle("3.2.1 — Interdiction de séjour"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Défense de paraître dans certains lieux, avec mesures de surveillance et d’assistance (",
                 ),
@@ -236,13 +236,13 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
                   text: "art. 131-31 C.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
 
-              const SizedBox(height: 10),
-              const _SubTitle("3.2.2 — Interdiction de manifester"),
+              SizedBox(height: 10),
+              _SubTitle("3.2.2 — Interdiction de manifester"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Défense de manifester sur la voie publique dans certains lieux, pour une durée ≤ 3 ans (",
                 ),
@@ -250,25 +250,25 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
                   text: "art. 131-32-1 C.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
 
-              const SizedBox(height: 10),
-              const _SubTitle("3.2.3 — Mesures concernant les étrangers"),
-              const _BulletPoint(text: "Interdiction du territoire"),
-              const _BulletPoint(text: "Expulsion"),
-              const _BulletPoint(text: "Assignation à résidence"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("3.2.3 — Mesures concernant les étrangers"),
+              _BulletPoint(text: "Interdiction du territoire"),
+              _BulletPoint(text: "Expulsion"),
+              _BulletPoint(text: "Assignation à résidence"),
+              _BulletPoint(
                 text:
                     "Assignation à résidence avec surveillance électronique mobile",
               ),
-              const _BulletPoint(text: "Obligation de quitter le territoire"),
-              const _BulletPoint(text: "Rétention administrative"),
+              _BulletPoint(text: "Obligation de quitter le territoire"),
+              _BulletPoint(text: "Rétention administrative"),
 
-              const SizedBox(height: 12),
-              const _SubTitle("3.2.4 — Obligation d’accomplir un stage"),
+              SizedBox(height: 12),
+              _SubTitle("3.2.4 — Obligation d’accomplir un stage"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "But : prévenir la réitération des comportements dangereux ou inciviques (",
                 ),
@@ -276,92 +276,92 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
                   text: "art. 131-5-1 C.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Stage de citoyenneté"),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Stage de citoyenneté"),
+              _BulletPoint(
                 text: "Stage de sensibilisation à la sécurité routière",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Stage de sensibilisation aux dangers de l’usage de stupéfiants",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Stage de responsabilisation pour la prévention et la lutte contre les violences au sein du couple et sexistes",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Stage de sensibilisation à la lutte contre l’achat d’actes sexuels",
               ),
-              const _BulletPoint(text: "Stage de responsabilité parentale"),
-              const _BulletPoint(
+              _BulletPoint(text: "Stage de responsabilité parentale"),
+              _BulletPoint(
                 text:
                     "Stage de lutte contre le sexisme et sensibilisation à l’égalité femmes-hommes",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Stage de sensibilisation à la prévention et à la lutte contre la maltraitance animale",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Stage de sensibilisation au respect des personnes dans l’espace numérique et à la prévention des infractions commises en ligne (dont cyberharcèlement)",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("3.2.5 — Interdictions et restrictions"),
+              SizedBox(height: 12),
+              _SubTitle("3.2.5 — Interdictions et restrictions"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Ensemble d’interdictions pouvant être prononcées (",
                 ),
                 TextSpan(
                   text: "art. 131-6 C.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(text: "). Exemples :"),
+                TextSpan(text: "). Exemples :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Interdictions professionnelles / d’exercer des fonctions publiques",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Suspension / annulation du permis de conduire",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Interdiction de conduire certains véhicules",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Confiscation / immobilisation de véhicules",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Confiscation / interdiction de port et détention d’armes",
               ),
-              const _BulletPoint(text: "Retrait du permis de chasser"),
-              const _BulletPoint(
+              _BulletPoint(text: "Retrait du permis de chasser"),
+              _BulletPoint(
                 text:
                     "Interdiction d’émettre des chèques / d’utiliser des cartes de paiement",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Confiscation de la chose ayant servi / destinée / produit",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Interdiction de paraître en certains lieux",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Interdiction de fréquenter ou d’entrer en relation avec certaines personnes",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "3.2.6 — Hospitalisation complète pour trouble mental",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Admission en soins psychiatriques sous forme d’hospitalisation complète possible (",
                 ),
@@ -369,52 +369,52 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
                   text: "art. 706-135 C.P.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "). D’autres mesures peuvent être prononcées : interdiction de rencontrer la victime, interdiction de porter une arme…",
                 ),
               ]),
 
-              const SizedBox(height: 12),
-              const _SubTitle("3.2.7 — Rétention et surveillance de sûreté"),
+              SizedBox(height: 12),
+              _SubTitle("3.2.7 — Rétention et surveillance de sûreté"),
               _Paragraph.rich([
-                const TextSpan(text: "Prévue aux "),
+                TextSpan(text: "Prévue aux "),
                 TextSpan(
                   text: "art. 706-53-13 à 706-53-22 C.P.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : placement dans un centre socio-médico-judiciaire de sûreté où des soins médicaux sont proposés.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text: "Peine prononcée ≥ 15 ans de réclusion criminelle",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Condamnation portant sur des crimes précis",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Dangerosité : probabilité très élevée de récidive",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "À l’issue de la rétention, la personne peut faire l’objet d’une surveillance de sûreté "
                 "renouvelable (injonction de soins, surveillance électronique, etc.).",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "3.2.8 — Placement sous surveillance électronique",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Mesure prévue aux "),
+                TextSpan(text: "Mesure prévue aux "),
                 TextSpan(
                   text: "art. 763-10 à 763-14 C.P.P.",
                   style: TextStyle(fontWeight: FontWeight.w800, color: lawRed),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : bracelet GPS après libération pour renforcer la prévention de la récidive. "
                       "Constitue une obligation possible du suivi socio-judiciaire, et peut aussi "
@@ -426,9 +426,9 @@ class ClassificationMesuresSuretePage extends StatelessWidget {
 
           const SizedBox(height: 14),
 
-          _NotaBox(
+          const _NotaBox(
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     "Les mesures de sûreté poursuivent un objectif de prévention. Elles visent la dangerosité "
                     "et s’additionnent souvent à des mécanismes de suivi et d’assistance (JAP, injonction de soins, "
@@ -472,10 +472,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -540,7 +540,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -583,7 +583,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -645,7 +645,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -656,10 +656,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -671,13 +670,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -690,13 +688,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -14,7 +14,7 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -53,8 +53,8 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           // ====================== INTRO / DÉFINITION ========================
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'La police judiciaire est chargée de « constater les infractions à la loi pénale, '
                   'à en rassembler les preuves et à en rechercher les auteurs, tant qu’une information '
@@ -62,12 +62,12 @@ class AutoriteInvestiesLoiPage extends StatelessWidget {
             ),
             TextSpan(
               text: 'l’Article 14 du Code de Procédure Pénale',
-              style: const TextStyle(
+              style: TextStyle(
                 color: Colors.red,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            const TextSpan(
+            TextSpan(
               text:
                   '. La police judiciaire désigne également l’ensemble des fonctionnaires chargés, '
                   'sous la direction du procureur de la République, d’accomplir les actes prévus par cet article.',
@@ -174,9 +174,9 @@ class _ModuleCard extends StatelessWidget {
 
     final Color subtitleColor = isDark
         ? textSoft
-        : Colors.white.withOpacity(0.92);
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+        : Colors.white.withValues(alpha: 0.92);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -205,8 +205,8 @@ class _ModuleCard extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Colors.black.withOpacity(.25),
-                    Colors.black.withOpacity(.60),
+                    Colors.black.withValues(alpha: .25),
+                    Colors.black.withValues(alpha: .60),
                   ],
                 ),
               ),
@@ -288,7 +288,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -336,7 +336,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(

@@ -110,25 +110,25 @@ class CorruptionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph(
                 "La qualification « active » ou « passive » ne dépend pas de l’initiative, mais de la qualité de l’auteur :\n"
                 "• Un particulier : corruption active (même s’il accepte une proposition).\n"
                 "• Un agent public : corruption passive (même s’il est à l’origine de la demande).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "La corruption passive est prévue et réprimée par ",
                 ),
                 TextSpan(
                   text: "l’article 432-11 alinéas 1 et 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -141,174 +141,174 @@ class CorruptionPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Il y a corruption passive lorsqu’un agent public utilise sa fonction en sollicitant ou en acceptant "
                 "des avantages pour accomplir ou avoir accompli, ou pour s’abstenir ou s’être abstenu d’accomplir "
                 "un acte de sa fonction (ou facilité par sa fonction).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Un auteur : le corrompu"),
-              const _Paragraph(
+              _SubTitle("A) Un auteur : le corrompu"),
+              _Paragraph(
                 "Le texte vise :\n"
                 "• la personne dépositaire de l’autorité publique ;\n"
                 "• la personne chargée d’une mission de service public ;\n"
                 "• la personne investie d’un mandat électif public.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Personne dépositaire de l’autorité publique"),
-              const _Paragraph(
+              _SubTitle("1) Personne dépositaire de l’autorité publique"),
+              _Paragraph(
                 "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle d’autorité publique "
                 "conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou ministériel, etc.).\n\n"
                 "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers, commissaires-priseurs, fonctionnaires des eaux et forêts.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Personne investie d’un mandat électif public",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Sont visés les membres des grands corps nationaux (Sénat, Assemblée nationale), mais aussi les assemblées régionales, "
                 "départementales et communales (conseil municipal, conseiller départemental, etc.).\n\n"
                 "Sont également visés les présidents et membres élus de certains établissements publics administratifs "
                 "(chambres de commerce et d’industrie, chambres d’agriculture, chambres des métiers).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Personne chargée d’une mission de service public",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Est chargée d’une mission de service public la personne qui accomplit, à titre temporaire ou permanent, volontairement "
                 "ou sur réquisition, un service public quelconque. Elle participe à une mission d’intérêt général sans pouvoir de décision "
                 "ou de commandement.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un comportement : solliciter ou agréer"),
-              const _SubTitle("1) La sollicitation"),
-              const _Paragraph(
+              _SubTitle("B) Un comportement : solliciter ou agréer"),
+              _SubTitle("1) La sollicitation"),
+              _Paragraph(
                 "La sollicitation suppose une démarche de l’intéressé : il fait comprendre, directement ou indirectement, "
                 "qu’il faut « payer » pour obtenir l’accomplissement (ou le non-accomplissement) de l’acte.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("2) L’agrément"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("2) L’agrément"),
+              _Paragraph(
                 "L’agrément est l’accord donné à la proposition : il existe alors un accord de volontés entre corrupteur et corrompu, "
                 "souvent appelé « pacte de corruption ». Il est indifférent que cet accord soit suivi d’exécution.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Modalités importantes"),
-              const _BulletPoint(
+              _SubTitle("Modalités importantes"),
+              _BulletPoint(
                 text:
                     "Directement ou indirectement : la sollicitation par personne interposée est punissable (si le rôle délictueux est établi).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "À tout moment : le pacte peut être conclu avant l’acte, après l’acte, ou même pour remercier un acte déjà accompli.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Acceptation d’avantages postérieurement à l’accomplissement d’un acte de la fonction (mandat électif) : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 27 octobre 1997",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un bénéfice attendu"),
-              const _Paragraph(
+              _SubTitle("C) Un bénéfice attendu"),
+              _Paragraph(
                 "Les « offres, promesses, dons, présents ou avantages quelconques » s’entendent largement : "
                 "argent, objets de valeur, immeubles, voyages, droits de chasse, etc.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Prise en charge de dépenses personnelles imposée à des entreprises (voyages d’agrément, frais de chasse) : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 16 mai 2001",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Un lien avec un acte de la fonction (ou facilité)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il faut un lien entre la sollicitation/l’agrément et l’accomplissement (ou l’abstention) d’un acte :\n"
                 "• acte de la fonction/mission/mandat (au sens large : textes + discipline de la fonction) ;\n"
                 "• ou acte « facilité » par la fonction/mission/mandat (ex. monnayer des renseignements obtenus grâce aux facilités du poste).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Fonctionnaire de police proposant/acceptant qu’on ne dresse pas procès-verbal d’un fait délictueux qu’il avait compétence pour constater : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 17 novembre 1955",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Fonctionnaire de préfecture recevant de l’argent pour faciliter la délivrance d’un titre de séjour : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 03 juin 1997",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "E) L’avantage peut profiter à l’auteur ou à un tiers",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’avantage peut être reçu par l’agent public lui-même ou par un tiers : proche, ami, ou une personne morale "
                 "(ex. parti, société écran, etc.).",
               ),
@@ -345,16 +345,16 @@ class CorruptionPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-11 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation lorsque l’infraction est commise en bande organisée.",
                 ),
@@ -370,90 +370,90 @@ class CorruptionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 000 000 € d’amende ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
                 ),
                 TextSpan(
                   text: "article 432-11 alinéas 1 et 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Bande organisée : "),
-                const TextSpan(
+                TextSpan(text: "Bande organisée : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 2 000 000 € d’amende ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "(montant pouvant être porté au double du produit tiré de l’infraction). — ",
                 ),
                 TextSpan(
                   text: "article 432-11 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph(
+              _SubTitle("Personnes morales"),
+              _Paragraph(
                 "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — application de "),
+                TextSpan(text: "Complicité : OUI — application de "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Réduction ou exemption de peine"),
+              _SubTitle("Réduction ou exemption de peine"),
               _Paragraph.rich([
-                const TextSpan(text: "OUI — "),
+                TextSpan(text: "OUI — "),
                 TextSpan(
                   text: "article 432-11-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’auteur ou le complice qui permet de faire cesser l’infraction ou d’identifier les autres auteurs/complices "
                       "peut voir sa peine privative de liberté réduite de moitié.",
@@ -495,10 +495,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -563,7 +563,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -606,7 +606,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -668,7 +668,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -700,7 +700,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -713,7 +713,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

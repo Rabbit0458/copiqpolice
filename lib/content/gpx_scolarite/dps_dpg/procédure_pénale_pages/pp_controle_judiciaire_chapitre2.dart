@@ -16,7 +16,7 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color accent = isDark
         ? const Color(0xFF64B5F6)
@@ -125,96 +125,96 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _SubTitle('2.2.1 — Rôle du juge d’instruction'),
+            children: const [
+              _SubTitle('2.2.1 — Rôle du juge d’instruction'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La mainlevée du contrôle judiciaire peut intervenir à tout moment au cours de l’instruction. '
                       'Selon ',
                 ),
                 TextSpan(
                   text: 'l’article 140 alinéa 1 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: ', la mainlevée peut :'),
+                TextSpan(text: ', la mainlevée peut :'),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'être ordonnée d’office par le juge d’instruction, lorsqu’il estime que les mesures ne sont plus nécessaires ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'intervenir à la suite de réquisitions du procureur de la République ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'faire suite à une demande de l’intéressé, après avis du ministère public.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle('2.2.2 — Saisine de la chambre de l’instruction'),
-              const _SubTitle(
+              _SubTitle('2.2.2 — Saisine de la chambre de l’instruction'),
+              _SubTitle(
                 '2.2.2.1 — En cas de carence du juge d’instruction',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'En cas de silence du juge d’instruction, un mécanisme de « carence » permet la saisine de la chambre de l’instruction. '
                       'Conformément à ',
                 ),
                 TextSpan(
                   text: 'l’article 140 alinéa 3 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', lorsque le juge d’instruction n’a pas répondu dans les 5 jours à une demande de mainlevée :',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'la chambre de l’instruction est saisie et doit statuer dans un délai de 20 jours ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'si la chambre de l’instruction ne statue pas dans ce délai, la mainlevée du contrôle judiciaire est de plein droit ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'le procureur de la République peut également saisir directement la chambre de l’instruction lorsque, '
                     'suite à ses réquisitions adressées au juge d’instruction, il n’a pas obtenu de réponse dans les 5 jours.',
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle('2.2.2.2 — Autres cas de saisine'),
-              const _Paragraph(
+              _SubTitle('2.2.2.2 — Autres cas de saisine'),
+              _Paragraph(
                 'La chambre de l’instruction peut encore être saisie :',
               ),
-              const SizedBox(height: 4),
-              const _BulletPoint(
+              SizedBox(height: 4),
+              _BulletPoint(
                 text:
                     'en cas de dessaisissement du juge d’instruction par une ordonnance de règlement, à la suite de l’évocation de l’affaire par la chambre de l’instruction ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'lorsque la chambre de l’instruction s’est expressément réservée le contentieux du contrôle judiciaire.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle('2.2.3 — Rôle des juridictions de jugement'),
-              const _Paragraph(
+              _SubTitle('2.2.3 — Rôle des juridictions de jugement'),
+              _Paragraph(
                 'Lorsque les juridictions de jugement (tribunal correctionnel, cour d’assises, juridiction pour mineurs) '
                 'sont saisies de la procédure, elles disposent des mêmes pouvoirs que le juge d’instruction pour statuer '
                 'sur les demandes de mainlevée du contrôle judiciaire. Elles peuvent ainsi maintenir, modifier ou lever '
@@ -231,79 +231,79 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 '2.3.1 — La durée normale du contrôle judiciaire',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'En principe, le contrôle judiciaire se poursuit jusqu’à la fin de l’information. Il prend fin lorsque '
                 'l’instruction est close et que l’affaire est soit réglée, soit renvoyée devant une juridiction de jugement.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'En matière correctionnelle, l’ordonnance de renvoi devant le tribunal correctionnel met en principe fin '
                 'au contrôle judiciaire, sauf décision contraire spécialement motivée.',
               ),
-              const SizedBox(height: 4),
-              const _Paragraph(
+              SizedBox(height: 4),
+              _Paragraph(
                 'En matière criminelle, l’ordonnance de mise en accusation ne met pas fin au contrôle judiciaire, '
                 'qui continue de produire ses effets jusqu’au jugement devant la cour d’assises.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 '2.3.2 — Transformation du contrôle judiciaire en placement en détention',
               ),
 
-              const _SubTitle(
+              _SubTitle(
                 '2.3.2.1 — En cas d’insuffisance du contrôle judiciaire',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Lorsque le contrôle judiciaire ne suffit plus à garantir le bon déroulement de l’instruction, '
                       'il peut être remplacé par une détention provisoire. ',
                 ),
                 TextSpan(
                   text: 'L’article 137 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' prévoit en effet que, si le contrôle judiciaire ne permet pas d’atteindre les objectifs poursuivis, '
                       'la détention provisoire peut être ordonnée. Le juge d’instruction doit alors saisir le juge des libertés '
                       'et de la détention, compétent pour décider du placement en détention.',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'La chambre de l’instruction peut également, lorsqu’elle est saisie du dossier, substituer la détention provisoire '
                 'au contrôle judiciaire si elle estime les obligations insuffisantes au regard des nécessités de la procédure.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 '2.3.2.2 — Les manquements aux obligations du contrôle judiciaire',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'En cas de manquement aux obligations, un régime spécifique d’appréhension et de retenue est prévu. '
                       'Selon ',
                 ),
                 TextSpan(
                   text: 'l’article 141-4 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', les services de police et les unités de gendarmerie peuvent, d’office ou sur instructions du juge '
                       'd’instruction, appréhender toute personne placée sous contrôle judiciaire lorsqu’il existe une ou '
@@ -312,23 +312,23 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle('2.3.2.3 — La révocation du contrôle judiciaire'),
+              _SubTitle('2.3.2.3 — La révocation du contrôle judiciaire'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La révocation du contrôle judiciaire intervient lorsque la personne se soustrait volontairement aux obligations '
                       'qui lui ont été imposées. ',
                 ),
                 TextSpan(
                   text: 'L’article 141-2 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' prévoit que, dans une telle hypothèse, le juge d’instruction peut, quelle que soit la peine '
                       'd’emprisonnement encourue, décerner contre l’intéressé un mandat d’arrêt ou un mandat d’amener. '
@@ -336,18 +336,18 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                       'La détention provisoire est alors possible quel que soit le quantum de la peine encourue.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La chambre de l’instruction peut, elle aussi, révoquer le contrôle judiciaire lorsqu’elle statue sur un appel '
                       'relatif à ce contrôle, lorsqu’elle est saisie de l’ensemble du dossier d’information ou lorsqu’elle s’est '
                       'réservée le contentieux du contrôle judiciaire. ',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Lorsque la personne se soustrait aux obligations du contrôle judiciaire alors qu’elle est déjà renvoyée '
                       'devant la juridiction de jugement, le procureur de la République peut saisir le juge des libertés et de la '
@@ -356,17 +356,17 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 141-2 alinéa 2 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Dans ce cadre, la personne peut être retenue, sur décision d’un officier de police judiciaire, pour une '
                       'durée maximale de 24 heures dans un local de police ou de gendarmerie, afin que sa situation soit vérifiée '
@@ -374,30 +374,30 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 141-4 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'Dès le début de cette mesure, l’officier de police judiciaire informe le juge d’instruction.',
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle('Les droits de la personne retenue'),
+              _SubTitle('Les droits de la personne retenue'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La personne retenue est immédiatement informée, dans une langue qu’elle comprend, de la durée maximale '
                       'de la mesure, de la nature des obligations qu’elle est soupçonnée d’avoir violées et des droits dont elle '
                       'bénéficie :',
                 ),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(
                   text:
@@ -406,14 +406,14 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 63-2 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: ' ;'),
+                TextSpan(text: ' ;'),
               ]),
-              const SizedBox(height: 4),
+              SizedBox(height: 4),
               _Paragraph.rich([
                 TextSpan(
                   text:
@@ -421,14 +421,14 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 63-3 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: ' ;'),
+                TextSpan(text: ' ;'),
               ]),
-              const SizedBox(height: 4),
+              SizedBox(height: 4),
               _Paragraph.rich([
                 TextSpan(
                   text:
@@ -436,74 +436,74 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'articles 63-3-1 à 63-4-3 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: ' ;'),
+                TextSpan(text: ' ;'),
               ]),
-              const SizedBox(height: 4),
-              const _Paragraph(
+              SizedBox(height: 4),
+              _Paragraph(
                 '4°) le cas échéant, du droit d’être assistée par un interprète ;',
               ),
-              const SizedBox(height: 4),
-              const _Paragraph(
+              SizedBox(height: 4),
+              _Paragraph(
                 '5°) du droit, lors des auditions, après avoir décliné son identité, de faire des déclarations, '
                 'de répondre aux questions qui lui sont posées ou de se taire.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Les pouvoirs normalement conférés au procureur de la République par ',
                 ),
                 TextSpan(
                   text: 'les articles 63-2 et 63-3 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' sont, dans ce cadre, exercés par le juge d’instruction.',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'La retenue doit s’exécuter dans des conditions assurant le respect de la dignité de la personne. '
                 'Seules peuvent être imposées les mesures de sécurité strictement nécessaires. La personne retenue ne peut '
                 'faire l’objet d’investigations corporelles internes durant la mesure.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Un procès-verbal récapitulatif de la mesure est établi conformément à ',
                 ),
                 TextSpan(
                   text: 'l’article 64 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'À l’issue de la retenue, le juge d’instruction peut ordonner que la personne soit conduite devant lui, '
                 'le cas échéant afin qu’il saisisse le juge des libertés et de la détention aux fins de révocation du contrôle '
                 'judiciaire. Il peut également demander à un officier ou à un agent de police judiciaire d’aviser la personne '
                 'qu’elle est convoquée devant lui à une date ultérieure.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'Cette procédure de retenue est également applicable lorsque la personne se soustrait aux obligations '
                         'du contrôle judiciaire alors qu’elle est déjà renvoyée devant la juridiction de jugement, conformément à ',
@@ -511,34 +511,34 @@ class PPControleJudiciaireChapitre2Page extends StatelessWidget {
                   TextSpan(
                     text:
                         'l’article 141-2 alinéa 2 du Code de procédure pénale',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: articleRed,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ', ou lorsqu’elle est invitée à comparaître devant le tribunal par le procureur de la République, en vertu de ',
                   ),
                   TextSpan(
                     text: 'l’article 394 alinéa 3 du Code de procédure pénale',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: articleRed,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         '. Dans ces hypothèses, les attributions normalement confiées au juge d’instruction par ',
                   ),
                   TextSpan(
                     text: 'l’article 141-4 du Code de procédure pénale',
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: articleRed,
                       fontWeight: FontWeight.w700,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ' sont alors exercées par le procureur de la République.',
                   ),
@@ -582,10 +582,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -650,7 +650,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -693,7 +693,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -755,7 +755,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -766,10 +766,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -781,13 +780,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -800,13 +798,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

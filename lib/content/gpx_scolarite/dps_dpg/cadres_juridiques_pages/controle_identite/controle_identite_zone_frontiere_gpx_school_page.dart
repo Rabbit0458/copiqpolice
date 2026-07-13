@@ -16,7 +16,7 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.72);
+        : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
         ? const Color(0xFF424242)
@@ -213,13 +213,13 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Les contrôles en zone frontière ne peuvent être pratiqués que dans des endroits '
                 'strictement délimités par la loi.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     'Dans une zone située à moins de vingt kilomètres de la frontière terrestre entre '
                     'la France et les États limitrophes parties à la convention de Schengen, ainsi que '
@@ -227,7 +227,7 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
                     'ou routières ouverts au trafic international et désignés par arrêté interministériel, '
                     'ainsi que dans les abords de ces gares.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'À bord d’un train effectuant une liaison internationale, sur la portion du trajet '
                     'comprise entre la frontière et le premier arrêt situé au-delà des vingt kilomètres. '
@@ -235,46 +235,46 @@ class ConntroleIdentiteFrontiereGpxSchool extends StatelessWidget {
                     'et un arrêt situé dans la limite des cinquante kilomètres suivants, lorsque la '
                     'ligne et les arrêts sont désignés par arrêté.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Sur une section autoroutière qui commence dans la zone des vingt kilomètres, '
                     'jusqu’au premier péage autoroutier situé au-delà de cette limite, ainsi que sur les '
                     'aires de stationnement attenantes. Les péages concernés sont fixés par arrêté.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Dans un rayon maximal de dix kilomètres autour des ports et aéroports '
                     'constituant des points de passage frontaliers en raison de leur fréquentation et '
                     'de leur vulnérabilité, tels que définis par arrêté, avec extension possible jusqu’au '
                     'premier péage autoroutier dans les mêmes conditions que ci-dessus.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Dans une zone comprise entre les frontières terrestres ou le littoral du '
                     'département de la Guyane et une ligne tracée à vingt kilomètres en deçà, ainsi '
                     'que sur une ligne tracée à cinq kilomètres de part et d’autre, et sur la route '
                     'nationale 2 sur le territoire de la commune de Régina.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'En Guadeloupe, dans une zone comprise entre le littoral et une ligne tracée à un '
                     'kilomètre en deçà, ainsi que sur le territoire des communes traversées par les '
                     'routes nationales 1, 2, 4, 5, 6, 9, 10 et 11.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: 'À Mayotte, sur l’ensemble du territoire.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'À Saint-Martin, dans une zone comprise entre le littoral et une ligne tracée à un '
                     'kilomètre en deçà.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'À Saint-Barthélémy, dans une zone comprise entre le littoral et une ligne tracée '
                     'à un kilomètre en deçà.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'En Martinique, dans une zone comprise entre le littoral et une ligne tracée à un '
                     'kilomètre en deçà, ainsi que dans une zone d’un kilomètre de part et d’autre des '
@@ -388,10 +388,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -456,7 +456,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -499,7 +499,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -561,7 +561,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -572,10 +572,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -587,13 +586,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -606,13 +604,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

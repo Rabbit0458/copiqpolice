@@ -111,16 +111,16 @@ class AtteintesInvolontairesConducteurVtmPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-20-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime les atteintes involontaires à l’intégrité de la personne "
                       "commises par le conducteur d’un véhicule terrestre à moteur (ITT ≤ 3 mois).",
@@ -137,215 +137,215 @@ class AtteintesInvolontairesConducteurVtmPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte involontaire : la faute"),
+            children: const [
+              _SubTitle("A) Un acte involontaire : la faute"),
               _Paragraph.rich([
-                const TextSpan(text: "Le texte renvoie à "),
+                TextSpan(text: "Le texte renvoie à "),
                 TextSpan(
                   text: "l’article 222-19 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (en référence à "),
+                TextSpan(text: " (en référence à "),
                 TextSpan(
                   text: "l’article 121-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "), qui énumère cinq comportements fautifs : il s’agit d’une faute d’imprudence simple.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) La faute simple"),
-              const _Paragraph("Deux grands cas :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              _SubTitle("1) La faute simple"),
+              _Paragraph("Deux grands cas :"),
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "La maladresse, l’imprudence, l’inattention, la négligence : agir sans précautions ou ne pas se soucier des conséquences d’une abstention.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le manquement à une obligation particulière de prudence ou de sécurité imposée par la loi ou le règlement.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ces fautes s’apprécient par comparaison avec le comportement qu’aurait dû adopter un individu "
                 "normalement prudent, attentif, diligent (ou, selon les cas, le professionnel moyen/diligent).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les magistrats doivent pouvoir préciser la source et la nature exacte de l’obligation violée : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 18 juin 2002",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) La faute caractérisée"),
-              const _Paragraph(
+              _SubTitle("2) La faute caractérisée"),
+              _Paragraph(
                 "Si la faute est en lien direct avec le dommage, une faute simple peut suffire. "
                 "En revanche, si l’auteur a causé indirectement le dommage, il faut établir une faute "
                 "d’une particulière gravité : la faute caractérisée (imprudence lourde), exposant autrui à "
                 "un danger d’une particulière gravité, que l’auteur ne pouvait ignorer.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Remettre volontairement les clés à une victime alcoolisée et sans permis : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 14 décembre 2010",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Médecin du SAMU n’ayant pas posé les bonnes questions : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 2 décembre 2003",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un lien de causalité"),
-              const _Paragraph(
+              _SubTitle("B) Un lien de causalité"),
+              _Paragraph(
                 "La faute doit avoir concouru au dommage. La causalité n’a pas besoin d’être immédiate : "
                 "le dommage est pris en compte dans son dernier état.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Causalité indirecte (personnes physiques)"),
+              _SubTitle("1) Causalité indirecte (personnes physiques)"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 121-3 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : sont auteurs indirects ceux qui ont créé/contribué à créer la situation ayant permis le dommage "
                       "ou n’ont pas pris les mesures permettant de l’éviter.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple : loueur qui confie un scooter des mers à une personne sans permis requis : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 5 octobre 2004",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudences (maire)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Buse non fixée sur une aire de jeux communale : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 20 mars 2001",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Absence de réglementation des déplacements de dameuses sur piste de luge : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 18 mars 2003",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Causalité directe"),
-              const _Paragraph(
+              _SubTitle("2) Causalité directe"),
+              _Paragraph(
                 "La causalité directe vise l’auteur dont le comportement a été un paramètre déterminant dans la survenance du dommage. "
                 "Le lien de causalité est direct lorsque l’imprudence/la négligence reprochée est la cause unique/exclusive ou la cause immédiate/déterminante.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Paramètre déterminant dans la survenance du dommage : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 25 septembre 2001",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Sur la personne d’autrui & un dommage"),
-              const _BulletPoint(
+              _SubTitle("C) Sur la personne d’autrui & un dommage"),
+              _BulletPoint(
                 text: "La victime doit être une personne humaine vivante.",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Les atteintes peuvent être physiques ou psychiques (un choc émotionnel peut suffire).",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "La victime doit avoir subi une ITT inférieure ou égale à trois mois.",
               ),
@@ -360,8 +360,8 @@ class AtteintesInvolontairesConducteurVtmPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les infractions non intentionnelles ne supposent pas d’intention de nuire. "
                 "Toutefois, lorsqu’il existe une violation manifestement délibérée d’une obligation particulière "
                 "de prudence ou de sécurité, il faut établir que l’auteur a adopté un comportement risqué en connaissance de cause "
@@ -378,41 +378,41 @@ class AtteintesInvolontairesConducteurVtmPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Deux degrés d’aggravation"),
-              const _SubTitle("1) Premier degré"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Deux degrés d’aggravation"),
+              _SubTitle("1) Premier degré"),
+              _Paragraph(
                 "Constituent des circonstances aggravantes notamment :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Violation manifestement délibérée d’une obligation particulière de prudence ou de sécurité prévue par la loi ou le règlement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "État d’ivresse manifeste / état alcoolique caractérisé (ou refus de vérifications).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Usage de stupéfiants (analyse sanguine/salivaire) ou refus de vérifications.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Absence de permis exigé, permis annulé/invalidé/suspendu/retenu.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dépassement de la vitesse maximale autorisée égal ou supérieur à 50 km/h.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Délit de fuite : ne pas s’arrêter après avoir causé/occasionné un accident pour échapper à la responsabilité.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Deuxième degré"),
-              const _BulletPoint(
+              _SubTitle("2) Deuxième degré"),
+              _BulletPoint(
                 text:
                     "Lorsque l’infraction a été commise avec deux (ou plus) des circonstances aggravantes ci-dessus.",
               ),
@@ -427,92 +427,92 @@ class AtteintesInvolontairesConducteurVtmPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (1 circonstance) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (1 circonstance) : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (2+ circonstances) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (2+ circonstances) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20-1 alinéa 9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 222-21 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les personnes morales demeurent responsables pénalement des infractions non intentionnelles, "
                         "que le dommage soit direct ou indirect. Référence : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 24 octobre 2000",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non envisagée)."),
-              const _Paragraph(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non envisagée)."),
+              _Paragraph(
                 "Le résultat dommageable n’étant pas recherché par l’auteur, la tentative n’a pas vocation à s’appliquer.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Complicité : NON."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Complicité : NON."),
             ],
           ),
         ],
@@ -549,10 +549,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -617,7 +617,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -660,7 +660,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -722,7 +722,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -754,7 +754,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -767,7 +767,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

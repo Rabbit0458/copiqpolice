@@ -155,8 +155,8 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
                 "sont exclues du champ d’application.",
               ),
               const SizedBox(height: 8),
-              _BulletPoint(text: "Tortures et actes de barbarie."),
-              _BulletPoint(
+              const _BulletPoint(text: "Tortures et actes de barbarie."),
+              const _BulletPoint(
                 text:
                     "Violences délictuelles même aggravées (hors violences sur FSI prévues à l’article 222-14-5).",
               ),
@@ -201,10 +201,10 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
                 "Le texte prévoit des hypothèses limitatives où l’enregistrement/diffusion n’est pas applicable.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Exception d’information",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La diffusion est justifiée lorsqu’elle est effectuée par des professionnels de l’information. "
                         "La liberté d’informer peut justifier la reproduction d’une image d’actualité, sous réserve du respect "
@@ -213,10 +213,10 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Exception probatoire",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Elle est difficilement applicable à la diffusion : si la personne diffuse les images, "
                         "l’infraction est en principe constituée. Il paraît incompatible qu’une diffusion TV/Internet "
@@ -235,14 +235,14 @@ class DiffusionImagesViolenceContenuPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Connaissance du contenu des images"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Connaissance du contenu des images"),
+              _Paragraph(
                 "L’auteur doit savoir que les images qu’il diffuse sont des images d’atteintes à l’intégrité physique des personnes.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Volonté de diffuser"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Volonté de diffuser"),
+              _Paragraph(
                 "La diffusion doit être intentionnelle : l’auteur transmet volontairement des images de violences qu’il détient.",
               ),
             ],
@@ -335,10 +335,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -403,7 +403,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -446,7 +446,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -508,7 +508,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -540,7 +540,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -553,7 +553,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

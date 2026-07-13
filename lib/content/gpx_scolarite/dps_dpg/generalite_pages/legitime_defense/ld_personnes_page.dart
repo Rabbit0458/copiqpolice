@@ -27,11 +27,11 @@ class LdPersonnesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accent = isDark
         ? const Color(0xFF4CAF50)
         : const Color(0xFF2E7D32);
-    final Color redAccent = const Color(0xFFFF3B30);
+    const Color redAccent = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: bg,
@@ -93,13 +93,13 @@ class LdPersonnesPage extends StatelessWidget {
           const SizedBox(height: 6),
 
           // ===== BULLETS INTRO =====
-          _BulletPoint.rich([
+          const _BulletPoint.rich([
             TextSpan(
               text: 'Atteinte INJUSTIFIÉE, ACTUELLE et RÉELLE.',
               style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
-          _BulletPoint.rich([
+          const _BulletPoint.rich([
             TextSpan(
               text: 'Défense NÉCESSAIRE, SIMULTANÉE et PROPORTIONNÉE.',
               style: TextStyle(fontWeight: FontWeight.w700),
@@ -117,12 +117,12 @@ class LdPersonnesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Pour invoquer la légitime défense, la personne doit être confrontée '
                 'à une atteinte clairement caractérisée. Trois conditions cumulatives sont exigées.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // ----- INJUSTIFIÉE -----
               _BulletPoint.rich([
@@ -133,7 +133,7 @@ class LdPersonnesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : sans motif légitime, contraire au droit. Aucun droit de riposte '
                       'contre une action régulière de police.',
@@ -149,7 +149,7 @@ class LdPersonnesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : en cours ou imminente. Une attaque passée ne justifie pas '
                       'une riposte de vengeance.',
@@ -165,16 +165,16 @@ class LdPersonnesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : l’atteinte doit exister objectivement. Une simple peur subjective '
                       'ne suffit pas.',
                 ),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _ExempleBox(
+              _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
@@ -199,12 +199,12 @@ class LdPersonnesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La riposte doit également respecter trois exigences cumulatives pour '
                 'être couverte par la légitime défense.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // ----- NÉCESSAIRE -----
               _BulletPoint.rich([
@@ -215,7 +215,7 @@ class LdPersonnesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : pas d’alternative raisonnable (fuite impossible, aide indisponible).',
                 ),
@@ -230,7 +230,7 @@ class LdPersonnesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : la défense doit intervenir au même moment que l’atteinte.',
                 ),
@@ -245,15 +245,15 @@ class LdPersonnesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : les moyens utilisés doivent rester adaptés à la gravité du danger.',
                 ),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _ExempleBox(
+              _ExempleBox(
                 title: 'Exemples',
                 bodySpans: [
                   TextSpan(
@@ -266,9 +266,9 @@ class LdPersonnesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _NotaBox(
+              _NotaBox(
                 title: 'À retenir',
                 bodySpans: [
                   TextSpan(
@@ -316,10 +316,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -364,7 +364,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -400,7 +400,7 @@ class _Paragraph extends StatelessWidget {
 class _BulletPoint extends StatelessWidget {
   final List<InlineSpan> spans;
 
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   @override
   Widget build(BuildContext context) {
@@ -451,7 +451,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -476,7 +476,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -511,7 +511,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -524,7 +524,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -166,10 +166,10 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
                 text: "B.S.R. (référence : contrôle via la base légale).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Info",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "À titre expérimental, le permis peut être présenté en version numérique via « France Identité ». "
                         "Le contrôle s’effectue depuis NEOFIC via le module « France titre » disponible sur NEO.",
@@ -293,9 +293,9 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
                 const TextSpan(text: " (NATINF 179)."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
                   ),
@@ -311,50 +311,50 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
             cardColor: cardNatinf,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Non-présentation immédiate (exemples)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Non-présentation immédiate (exemples)"),
+              _BulletPoint(
                 text:
                     "Permis de conduire / assimilé : NATINF 6227 (base : R. 233-1 CR).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Attestation formation motocyclette légère (cat. B) : NATINF 28094 ; tricycle L5e : NATINF 28096.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Élève conducteur — preuve de la demande : NATINF 22878.",
               ),
-              const _BulletPoint(text: "Document E.A.D. : NATINF 32023."),
-              const _BulletPoint(
+              _BulletPoint(text: "Document E.A.D. : NATINF 32023."),
+              _BulletPoint(
                 text:
                     "Certificat d’immatriculation : NATINF 6204 (remorque PTAC > 500 kg : NATINF 32028/32029).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Assurance (véhicules non soumis à immatriculation) : NATINF 6168 ; certificat/apposition : NATINF 6166.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Triangle : NATINF 26986 — gilet : NATINF 26987.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Obligation de justifier ensuite la possession",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La non-présentation des pièces visées (et, pour les véhicules non immatriculés, l’attestation d’assurance) "
                 "entraîne l’obligation d’en justifier la possession dans un délai de 5 jours "
                 "(délai porté à 12 jours dans le cadre du PVe).",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "NATINF (exemples) : 7553, 7554, 21213, 22879, 28095, 28097, 32024, 32030, 32031, 6164, 32030, 32031.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La consultation des fichiers (SNPC, SIV, FVA) permet de traiter en temps réel les infractions "
                         "liées au défaut ou au retrait du document (ex. conduite sans permis / malgré suspension, "
@@ -372,32 +372,32 @@ class CadreLegalControleRoutierPage extends StatelessWidget {
             cardColor: cardNotes,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("B.S.R. (brevet de sécurité routière)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("B.S.R. (brevet de sécurité routière)"),
+              _Paragraph(
                 "La non-présentation immédiate du B.S.R. n’est pas réprimée. "
                 "Le titulaire doit néanmoins justifier de ce document dans un délai de cinq jours (NATINF 21213).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Ouverture du capot moteur"),
-              const _Paragraph(
+              _SubTitle("Ouverture du capot moteur"),
+              _Paragraph(
                 "La fouille ou la visite du coffre n’est pas autorisée lors d’un simple contrôle routier. "
                 "En revanche, le policier peut demander l’ouverture du capot moteur afin de vérifier la conformité "
                 "du numéro d’identification du véhicule avec celui figurant sur le certificat d’immatriculation.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Conséquences fréquentes d’un contrôle"),
-              const _IntroBullet(
+              _SubTitle("Conséquences fréquentes d’un contrôle"),
+              _IntroBullet(
                 text:
                     "Vérifier le respect de la réglementation en matière de contrôle technique.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Contrôler la présence, conformité et bon état des équipements réglementaires (pneus, éclairage…).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Constater, le cas échéant, la violation de l’interdiction de fumer en présence d’un mineur (Code de la santé publique).",
               ),
@@ -437,10 +437,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -505,7 +505,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -548,7 +548,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -610,7 +610,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -642,7 +642,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -655,7 +655,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -312,96 +312,96 @@ class MementoPriseDeNotesMethodologiePage extends StatelessWidget {
             cardColor: cardOrg,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Planifier son travail"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Planifier son travail"),
+              _Paragraph(
                 "Travaille régulièrement :\n"
                 "• un temps quotidien de reprise des notes (chaque jour) ;\n"
                 "• un temps de consolidation (généralement le week-end).\n\n"
                 "À cela s’ajoutent des périodes de révision selon les évaluations.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Repère",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "50% du contenu d’un cours est oublié en 24h si on ne l’apprend pas.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Calendrier simple (très efficace)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Calendrier simple (très efficace)"),
+              _BulletPoint(
                 text:
                     "J0 (le jour même) : relire, compléter les trous, souligner/surligner, réécrire si besoin, classer ; annoter les supports distribués.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "J+1 : apprendre une première fois le lendemain (tu maîtrises encore le plan et l’enchaînement). Creuser ce qui n’est pas compris.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Week-end suivant : revoir plus facilement, refaire exercices/études de cas, commencer les fiches de révision.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Stratégie d’apprentissage & mémorisation"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Stratégie d’apprentissage & mémorisation"),
+              _BulletPoint(
                 text:
                     "Identifier les mots-clés et écrire des questions (dont les réponses sont dans tes notes).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Masquer les notes et reformuler l’info (écrit ou oral) à partir des mots-clés/questions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Questionner le contenu : qui ? quoi ? quand ? où ? comment ? pourquoi ? combien ?",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "10 minutes par jour : réviser en s’assurant de comprendre (pas juste relire).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("La fiche de révision"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("La fiche de révision"),
+              _Paragraph(
                 "Une fiche de révision est une synthèse de tes notes :\n"
                 "• elle aide à mémoriser en la rédigeant ;\n"
                 "• elle aide à préparer les examens en l’apprenant.\n\n"
                 "Fais pareil pour les supports distribués.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Une couleur de fiche par thématique + titres clairs + numérotation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Une fiche par thème à partir des notes + supports.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Reprendre schématiquement les éléments clefs en gardant la cohérence.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mettre en avant les points importants et en rouge les éléments à savoir par cœur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Au verso : écrire des questions pour s’auto-interroger (seul ou en groupe).",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // Pas d'article de loi dans cette page, mais on garde _lawRed prêt si besoin
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Astuce : note en rouge les références à retenir (définitions, mots-clés, points à connaître).",
                 ),
-                const TextSpan(text: " "),
+                TextSpan(text: " "),
                 TextSpan(
                   text: "(même logique que les références juridiques en rouge)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),

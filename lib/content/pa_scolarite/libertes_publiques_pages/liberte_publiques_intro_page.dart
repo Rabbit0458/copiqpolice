@@ -214,7 +214,7 @@ class _LibertesPubliquesIntroPageState extends State<PaLibertesPubliquesIntroPag
 }
 
 class _CopiqHeroBackButton extends StatelessWidget {
-  const _CopiqHeroBackButton();
+  const _CopiqHeroBackButton({this.iconColor, this.backgroundColor});
 
   /// Permet d’override la couleur de l’icône si besoin
   final Color? iconColor;

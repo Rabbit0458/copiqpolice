@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppSettingsController, AppNotifier;
+import 'package:copiqpolice/legal/legal_content.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({super.key, this.onSignedUp});
@@ -165,8 +165,9 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
   }
 
   String? _validatePwd2(String? v) {
-    if ((v ?? '') != _pwdCtrl.text)
+    if ((v ?? '') != _pwdCtrl.text) {
       return "Les mots de passe ne correspondent pas.";
+    }
     return null;
   }
 
@@ -485,9 +486,9 @@ class _SignUpPageState extends State<SignUpPage> with TickerProviderStateMixin {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          Colors.black.withOpacity(0.18),
+                          Colors.black.withValues(alpha: 0.18),
                           Colors.transparent,
-                          Colors.black.withOpacity(0.30),
+                          Colors.black.withValues(alpha: 0.30),
                         ],
                       ),
                     ),
@@ -677,23 +678,23 @@ class _TopBackPill extends StatelessWidget {
         child: Ink(
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.10),
+            color: Colors.white.withValues(alpha: 0.10),
             borderRadius: BorderRadius.circular(999),
-            border: Border.all(color: Colors.white.withOpacity(0.14)),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.14)),
           ),
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
               Icon(
                 Icons.chevron_left_rounded,
-                color: Colors.white.withOpacity(0.9),
+                color: Colors.white.withValues(alpha: 0.9),
                 size: 18,
               ),
               const SizedBox(width: 2),
               Text(
                 "Précédent",
                 style: GoogleFonts.montserrat(
-                  color: Colors.white.withOpacity(0.90),
+                  color: Colors.white.withValues(alpha: 0.90),
                   fontWeight: FontWeight.w800,
                   fontSize: 12.5,
                 ),
@@ -727,14 +728,14 @@ class _DropletProgress extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(999),
               color: active
-                  ? Colors.white.withOpacity(0.90)
-                  : Colors.white.withOpacity(0.22),
+                  ? Colors.white.withValues(alpha: 0.90)
+                  : Colors.white.withValues(alpha: 0.22),
               boxShadow: active
                   ? [
                       BoxShadow(
                         blurRadius: 10,
                         offset: const Offset(0, 4),
-                        color: Colors.black.withOpacity(0.14),
+                        color: Colors.black.withValues(alpha: 0.14),
                       ),
                     ]
                   : null,
@@ -755,13 +756,13 @@ class _GlassCardPremium extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.white.withOpacity(0.075),
-        border: Border.all(color: Colors.white.withOpacity(0.10), width: 1),
+        color: Colors.white.withValues(alpha: 0.075),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
         boxShadow: [
           BoxShadow(
             blurRadius: 28,
             offset: const Offset(0, 16),
-            color: Colors.black.withOpacity(0.22),
+            color: Colors.black.withValues(alpha: 0.22),
           ),
         ],
       ),
@@ -777,9 +778,9 @@ class _GlassCardPremium extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.white.withOpacity(0.10),
+                        Colors.white.withValues(alpha: 0.10),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.06),
+                        Colors.black.withValues(alpha: 0.06),
                       ],
                     ),
                   ),
@@ -838,14 +839,14 @@ class _WelcomeStep extends StatelessWidget {
                   Icon(
                     Icons.verified_rounded,
                     size: 18,
-                    color: Colors.white.withOpacity(0.90),
+                    color: Colors.white.withValues(alpha: 0.90),
                   ),
                   const SizedBox(width: 10),
                   Text(
                     "Chaque étape est vérifiée automatiquement",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.88),
+                      color: Colors.white.withValues(alpha: 0.88),
                       fontWeight: FontWeight.w800,
                       fontSize: 13.2,
                       height: 1.2,
@@ -865,8 +866,8 @@ class _FadeSlideIn extends StatefulWidget {
   const _FadeSlideIn({
     required this.child,
     this.delay = Duration.zero,
-    this.fromY = 10,
-    this.duration = const Duration(milliseconds: 420),
+    this.fromY = 24.0,
+    this.duration = const Duration(milliseconds: 400),
   });
 
   final Widget child;
@@ -1133,8 +1134,8 @@ class _EmailAvailabilityPill extends StatelessWidget {
       child: DecoratedBox(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: color.withOpacity(0.6)),
-          color: Colors.white.withOpacity(0.06),
+          border: Border.all(color: color.withValues(alpha: 0.6)),
+          color: Colors.white.withValues(alpha: 0.06),
         ),
         child: Center(
           child: Text(
@@ -1153,7 +1154,6 @@ class _EmailAvailabilityPill extends StatelessWidget {
 
 class _EmailStatusPill extends StatefulWidget {
   const _EmailStatusPill({
-    super.key,
     required this.ok,
     required this.a,
     required this.b,
@@ -1243,21 +1243,21 @@ class _EmailStatusPillState extends State<_EmailStatusPill>
           width: double.infinity,
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(bgOpacity),
+              color: Colors.white.withValues(alpha: bgOpacity),
               borderRadius: BorderRadius.circular(radius),
-              border: Border.all(color: color.withOpacity(borderOpacity)),
+              border: Border.all(color: color.withValues(alpha: borderOpacity)),
               boxShadow: [
                 if (isOk)
                   BoxShadow(
                     blurRadius: 22,
                     spreadRadius: 0.5,
                     offset: const Offset(0, 10),
-                    color: okColor.withOpacity(glowOpacity),
+                    color: okColor.withValues(alpha: glowOpacity),
                   ),
                 BoxShadow(
                   blurRadius: 16,
                   offset: const Offset(0, 10),
-                  color: Colors.black.withOpacity(0.14),
+                  color: Colors.black.withValues(alpha: 0.14),
                 ),
               ],
             ),
@@ -1271,7 +1271,7 @@ class _EmailStatusPillState extends State<_EmailStatusPill>
                     text,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.92),
+                      color: Colors.white.withValues(alpha: 0.92),
                       fontWeight: FontWeight.w900,
                       fontSize: 14.2,
                       height: 1.0,
@@ -1406,7 +1406,7 @@ class _PasswordStepState extends State<_PasswordStep> {
                               widget.obscure1
                                   ? Icons.visibility_off_rounded
                                   : Icons.visibility_rounded,
-                              color: Colors.white.withOpacity(0.85),
+                              color: Colors.white.withValues(alpha: 0.85),
                             ),
                           ),
                           textInputAction: TextInputAction.next,
@@ -1436,7 +1436,7 @@ class _PasswordStepState extends State<_PasswordStep> {
                               widget.obscure2
                                   ? Icons.visibility_off_rounded
                                   : Icons.visibility_rounded,
-                              color: Colors.white.withOpacity(0.85),
+                              color: Colors.white.withValues(alpha: 0.85),
                             ),
                           ),
                           textInputAction: TextInputAction.done,
@@ -1501,9 +1501,9 @@ class _PasswordLiveRules extends StatelessWidget {
         return Container(
           padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.07),
+            color: Colors.white.withValues(alpha: 0.07),
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: Colors.white.withOpacity(0.12)),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
           ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -1511,7 +1511,7 @@ class _PasswordLiveRules extends StatelessWidget {
               Text(
                 "Critères de sécurité",
                 style: GoogleFonts.montserrat(
-                  color: Colors.white.withOpacity(0.92),
+                  color: Colors.white.withValues(alpha: 0.92),
                   fontWeight: FontWeight.w900,
                   fontSize: 12.6,
                   letterSpacing: -0.1,
@@ -1616,21 +1616,21 @@ class _PasswordStatusPillState extends State<_PasswordStatusPill>
           width: double.infinity,
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(bgOpacity),
+              color: Colors.white.withValues(alpha: bgOpacity),
               borderRadius: BorderRadius.circular(radius),
-              border: Border.all(color: color.withOpacity(borderOpacity)),
+              border: Border.all(color: color.withValues(alpha: borderOpacity)),
               boxShadow: [
                 if (isOk)
                   BoxShadow(
                     blurRadius: 22,
                     spreadRadius: 0.5,
                     offset: const Offset(0, 10),
-                    color: okColor.withOpacity(glowOpacity),
+                    color: okColor.withValues(alpha: glowOpacity),
                   ),
                 BoxShadow(
                   blurRadius: 16,
                   offset: const Offset(0, 10),
-                  color: Colors.black.withOpacity(0.14),
+                  color: Colors.black.withValues(alpha: 0.14),
                 ),
               ],
             ),
@@ -1644,7 +1644,7 @@ class _PasswordStatusPillState extends State<_PasswordStatusPill>
                     text,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.92),
+                      color: Colors.white.withValues(alpha: 0.92),
                       fontWeight: FontWeight.w900,
                       fontSize: 14.2,
                       height: 1.0,
@@ -1669,9 +1669,9 @@ class _RuleLine extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final okColor = const Color(0xFF2AE08A);
-    final offColor = Colors.white.withOpacity(0.78);
-    final border = Colors.white.withOpacity(0.18);
+    const okColor = Color(0xFF2AE08A);
+    final offColor = Colors.white.withValues(alpha: 0.78);
+    final border = Colors.white.withValues(alpha: 0.18);
 
     return AnimatedContainer(
       duration: const Duration(milliseconds: 160),
@@ -1686,17 +1686,17 @@ class _RuleLine extends StatelessWidget {
             width: 18,
             decoration: BoxDecoration(
               color: ok
-                  ? okColor.withOpacity(0.18)
-                  : Colors.white.withOpacity(0.06),
+                  ? okColor.withValues(alpha: 0.18)
+                  : Colors.white.withValues(alpha: 0.06),
               borderRadius: BorderRadius.circular(6),
               border: Border.all(
-                color: ok ? okColor.withOpacity(0.70) : border,
+                color: ok ? okColor.withValues(alpha: 0.70) : border,
               ),
             ),
             child: Icon(
               ok ? Icons.check_rounded : Icons.circle_outlined,
               size: 14,
-              color: ok ? okColor : Colors.white.withOpacity(0.45),
+              color: ok ? okColor : Colors.white.withValues(alpha: 0.45),
             ),
           ),
           const SizedBox(width: 10),
@@ -1798,7 +1798,7 @@ class _TermsStepState extends State<_TermsStep> {
                   BoxShadow(
                     blurRadius: 18,
                     offset: const Offset(0, 10),
-                    color: Colors.black.withOpacity(0.18),
+                    color: Colors.black.withValues(alpha: 0.18),
                   ),
                 ],
               ),
@@ -1807,13 +1807,7 @@ class _TermsStepState extends State<_TermsStep> {
                 child: SingleChildScrollView(
                   controller: _scrollCtrl,
                   child: Text(
-                    // 🔧 TU METTRAS LE VRAI TEXTE PLUS TARD
-                    List.generate(
-                      25,
-                      (_) =>
-                          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                          "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n\n",
-                    ).join(),
+                    kCopiqLegalFullText,
                     style: GoogleFonts.montserrat(
                       color: Colors.black87,
                       fontSize: 13.8,
@@ -1948,7 +1942,7 @@ class _ChoiceCtaState extends State<_ChoiceCta> {
 }
 
 class _TermsStatusPill extends StatefulWidget {
-  const _TermsStatusPill({super.key, required this.ok, required this.text});
+  const _TermsStatusPill({required this.ok, required this.text});
 
   final bool ok;
   final String text;
@@ -2019,21 +2013,21 @@ class _TermsStatusPillState extends State<_TermsStatusPill>
           width: double.infinity,
           child: DecoratedBox(
             decoration: BoxDecoration(
-              color: Colors.white.withOpacity(bgOpacity),
+              color: Colors.white.withValues(alpha: bgOpacity),
               borderRadius: BorderRadius.circular(radius),
-              border: Border.all(color: color.withOpacity(borderOpacity)),
+              border: Border.all(color: color.withValues(alpha: borderOpacity)),
               boxShadow: [
                 if (isOk)
                   BoxShadow(
                     blurRadius: 22,
                     spreadRadius: 0.5,
                     offset: const Offset(0, 10),
-                    color: okColor.withOpacity(glowOpacity),
+                    color: okColor.withValues(alpha: glowOpacity),
                   ),
                 BoxShadow(
                   blurRadius: 16,
                   offset: const Offset(0, 10),
-                  color: Colors.black.withOpacity(0.14),
+                  color: Colors.black.withValues(alpha: 0.14),
                 ),
               ],
             ),
@@ -2047,7 +2041,7 @@ class _TermsStatusPillState extends State<_TermsStatusPill>
                     widget.text,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.montserrat(
-                      color: Colors.white.withOpacity(0.92),
+                      color: Colors.white.withValues(alpha: 0.92),
                       fontWeight: FontWeight.w900,
                       fontSize: 14.2,
                       height: 1.0,
@@ -2077,7 +2071,7 @@ class _Bullet extends StatelessWidget {
           width: 6,
           height: 6,
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(opacity),
+            color: Colors.white.withValues(alpha: opacity),
             shape: BoxShape.circle,
           ),
         ),
@@ -2086,7 +2080,7 @@ class _Bullet extends StatelessWidget {
           child: Text(
             text,
             style: GoogleFonts.montserrat(
-              color: Colors.white.withOpacity(opacity),
+              color: Colors.white.withValues(alpha: opacity),
               fontWeight: FontWeight.w700,
               fontSize: 13,
             ),
@@ -2189,7 +2183,7 @@ class _GlowFieldState extends State<_GlowField> {
         : const Color(0xFF355BE0);
 
     // Glow super léger
-    final glowColor = Colors.white.withOpacity(widget.isDark ? 0.12 : 0.16);
+    final glowColor = Colors.white.withValues(alpha: widget.isDark ? 0.12 : 0.16);
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -2239,7 +2233,7 @@ class _GlowFieldState extends State<_GlowField> {
                 vertical: 12,
               ),
               enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: border.withOpacity(0.70)),
+                borderSide: BorderSide(color: border.withValues(alpha: 0.70)),
                 borderRadius: BorderRadius.circular(12),
               ),
               focusedBorder: OutlineInputBorder(
@@ -2411,7 +2405,7 @@ class _ChoiceButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          backgroundColor: onPressed == null ? bg.withOpacity(0.45) : bg,
+          backgroundColor: onPressed == null ? bg.withValues(alpha: 0.45) : bg,
           foregroundColor: fg,
           elevation: 0,
           shape: RoundedRectangleBorder(
@@ -2486,11 +2480,11 @@ class _DynamicBlobsBackgroundState extends State<_DynamicBlobsBackground>
         final dy2 = lerpDouble(0.22, -0.06, t)!;
 
         final c1 = widget.isDark
-            ? Colors.white.withOpacity(0.06)
-            : Colors.white.withOpacity(0.10);
+            ? Colors.white.withValues(alpha: 0.06)
+            : Colors.white.withValues(alpha: 0.10);
         final c2 = widget.isDark
-            ? Colors.white.withOpacity(0.04)
-            : Colors.white.withOpacity(0.08);
+            ? Colors.white.withValues(alpha: 0.04)
+            : Colors.white.withValues(alpha: 0.08);
 
         return Stack(
           children: [

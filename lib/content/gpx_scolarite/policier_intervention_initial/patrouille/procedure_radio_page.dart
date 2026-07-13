@@ -117,63 +117,63 @@ class ProcedureRadioPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Avant l’essai"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Avant l’essai"),
+              _BulletPoint(
                 text:
                     "S’assurer que les ondes sont libres avant de procéder à l’essai.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Après appui PTT, attendre ~1 seconde avant de parler (activation des circuits).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Message à émettre (modèle)"),
+              _SubTitle("Message à émettre (modèle)"),
               _NotaBox(
                 title: "MODÈLE",
                 bodySpans: [
-                  const TextSpan(text: "« TN "),
+                  TextSpan(text: "« TN "),
                   TextSpan(
                     text: "**",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " de TV… pour un essai radio, comment reçu ? »",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Réponse attendue du CIC (exemple)"),
+              _SubTitle("Réponse attendue du CIC (exemple)"),
               _NotaBox(
                 title: "RÉPONSE",
                 bodySpans: [
-                  const TextSpan(text: "« TV… de TN "),
+                  TextSpan(text: "« TV… de TN "),
                   TextSpan(
                     text: "**",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " je vous reçois 5/5, fort et clair. »"),
+                  TextSpan(text: " je vous reçois 5/5, fort et clair. »"),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("À faire ensuite"),
-              const _BulletPoint(
+              _SubTitle("À faire ensuite"),
+              _BulletPoint(
                 text:
                     "Accuser réception pour confirmer que l’émission est bonne en retour.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "EN CAS D’ANOMALIE",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Aviser la supervision du réseau radio (chefs de poste), le référent logistique local, le référent ACROPOL et le CIC.",
@@ -316,47 +316,47 @@ class ProcedureRadioPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Avant émission"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Avant émission"),
+              _BulletPoint(
                 text:
                     "S’assurer que les ondes sont libres avant de procéder à l’émission.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Message de prise d’ondes (modèle)"),
+              SizedBox(height: 12),
+              _SubTitle("Message de prise d’ondes (modèle)"),
               _NotaBox(
                 title: "MODÈLE",
                 bodySpans: [
-                  const TextSpan(text: "« TN "),
+                  TextSpan(text: "« TN "),
                   TextSpan(
                     text: "**",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " de TV… annonce sa prise de service »"),
+                  TextSpan(text: " de TV… annonce sa prise de service »"),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Éléments à énoncer (obligatoires)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Éléments à énoncer (obligatoires)"),
+              _BulletPoint(
                 text: "Nombre d’effectifs (présence de gradés, ADS, H/F).",
               ),
-              const _BulletPoint(text: "Immatriculation du véhicule."),
-              const _BulletPoint(
+              _BulletPoint(text: "Immatriculation du véhicule."),
+              _BulletPoint(
                 text:
                     "Numéros radio : embarquée + portatifs (communiquer les 5 derniers chiffres du RFGI).",
               ),
-              const _BulletPoint(text: "Matériel embarqué (MO, PIE, terro…)."),
-              const _BulletPoint(
+              _BulletPoint(text: "Matériel embarqué (MO, PIE, terro…)."),
+              _BulletPoint(
                 text: "Mission (patrouille portée, pédestre, etc.).",
               ),
-              const _BulletPoint(text: "Horaires de vacation."),
-              const SizedBox(height: 10),
+              _BulletPoint(text: "Horaires de vacation."),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "GÉOLOCALISATION",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La géolocalisation d’un véhicule dépend de la mise en fonction de la radio embarquée (ou d’un P2G dans le BIV) et de l’annonce du numéro RFGI (voire du numéro de la poire géolocalisée si utilisée sur un P2G).",
@@ -457,10 +457,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -525,7 +525,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -568,7 +568,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -630,7 +630,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -662,7 +662,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -675,7 +675,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -19,11 +19,11 @@ class LdCasPresumesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accent = isDark
         ? const Color(0xFF8E24AA)
         : const Color(0xFF6A1B9A);
-    final Color redAccent = const Color(0xFFFF3B30);
+    const Color redAccent = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: bg,
@@ -82,15 +82,15 @@ class LdCasPresumesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
 
-          _BulletPoint.rich([
-            const TextSpan(
+          const _BulletPoint.rich([
+            TextSpan(
               text:
                   'La défense de nuit contre l’entrée frauduleuse dans un lieu d’habitation ;',
               style: TextStyle(fontWeight: FontWeight.w600),
             ),
           ]),
-          _BulletPoint.rich([
-            const TextSpan(
+          const _BulletPoint.rich([
+            TextSpan(
               text:
                   'La défense contre les auteurs de vols ou de pillages exécutés avec violence.',
               style: TextStyle(fontWeight: FontWeight.w600),
@@ -108,12 +108,12 @@ class LdCasPresumesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Est présumé avoir agi en état de légitime défense celui qui, '
                 'pour repousser, DE NUIT, l’entrée dans un lieu habité, accomplit un acte de défense.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
@@ -123,25 +123,25 @@ class LdCasPresumesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : l’intervalle de temps est compris entre le coucher et le lever du soleil. '
                       'La présomption ne joue pas de jour.',
                 ),
               ]),
               _BulletPoint.rich([
-                const TextSpan(
+                TextSpan(
                   text: 'Lieu visé : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'un lieu habité (maison ou appartement occupé). Les dépendances '
                       'ou locaux purement professionnels peuvent poser davantage de difficultés.',
                 ),
               ]),
               _BulletPoint.rich([
-                const TextSpan(
+                TextSpan(
                   text: 'Modalités d’entrée : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
@@ -152,15 +152,15 @@ class LdCasPresumesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' L’entrée doit donc être obtenue par un procédé irrégulier ou agressif.',
                 ),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _ExempleBox(
+              _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
@@ -187,13 +187,13 @@ class LdCasPresumesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Est également présumé avoir agi en état de légitime défense celui qui, '
                 'pour se défendre, de jour comme de nuit, contre les auteurs de certains '
                 'vols ou pillages exécutés avec violence, accomplit un acte de défense.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
@@ -203,7 +203,7 @@ class LdCasPresumesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(text: ' ou '),
+                TextSpan(text: ' ou '),
                 TextSpan(
                   text: 'PILLAGES',
                   style: TextStyle(
@@ -211,7 +211,7 @@ class LdCasPresumesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : il doit s’agir d’atteintes graves aux biens, généralement commises '
                       'en groupe ou dans un contexte de trouble important à l’ordre public.',
@@ -225,7 +225,7 @@ class LdCasPresumesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : les vols ou pillages doivent être exécutés avec violences '
                       '(coups, sévices, agressions physiques). La simple présence de menaces '
@@ -233,20 +233,20 @@ class LdCasPresumesPage extends StatelessWidget {
                 ),
               ]),
               _BulletPoint.rich([
-                const TextSpan(
+                TextSpan(
                   text: 'Moment de l’acte de défense : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'l’acte doit intervenir pour se défendre contre les auteurs, '
                       'pendant l’attaque ou dans son immédiate continuité.',
                 ),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _ExempleBox(
+              _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
@@ -321,10 +321,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -368,7 +368,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -404,7 +404,7 @@ class _Paragraph extends StatelessWidget {
 class _BulletPoint extends StatelessWidget {
   final List<InlineSpan> spans;
 
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   @override
   Widget build(BuildContext context) {
@@ -455,7 +455,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -480,7 +480,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF311B3F).withOpacity(.95),
+                    : const Color(0xFF311B3F).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -515,7 +515,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -528,7 +528,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

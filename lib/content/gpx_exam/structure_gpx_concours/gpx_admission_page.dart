@@ -113,36 +113,36 @@ class GPXAdmissionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Arrêté du 18 mars 2024 modifiant l’arrêté du 8 mars 2022",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixe l’organisation générale et la nature des épreuves des concours de gardien de la paix.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les modalités et le barème des épreuves physiques sont fixés par ",
                   ),
                   TextSpan(
                     text: "arrêté du ministre de l’Intérieur et des Outre-mer",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -156,56 +156,56 @@ class GPXAdmissionPage extends StatelessWidget {
             cardColor: cardSport,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Contenu"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Contenu"),
+              _BulletPoint(
                 text:
                     "Parcours d’habileté motrice (PHM) + Test d’endurance cardio-respiratoire (TECR).",
               ),
-              const _BulletPoint(text: "Coefficient : 4."),
-              const SizedBox(height: 10),
+              _BulletPoint(text: "Coefficient : 4."),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Note éliminatoire : "),
+                  TextSpan(text: "Note éliminatoire : "),
                   TextSpan(
                     text: "inférieure à 7/20",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " (à l’une ou l’autre des 2 épreuves sportives).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Certificat médical"),
+              SizedBox(height: 12),
+              _SubTitle("Certificat médical"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le candidat doit être en possession d’un certificat médical d’aptitude, ",
                 ),
                 TextSpan(
                   text: "datant de moins de 3 mois",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", délivré par un médecin de son choix, pour pouvoir se présenter aux épreuves sportives.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "IMPORTANT",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les candidats éliminés aux épreuves sportives ne sont pas convoqués à l’épreuve orale.",
                   ),
@@ -222,44 +222,44 @@ class GPXAdmissionPage extends StatelessWidget {
             cardColor: cardOral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Objectif"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Objectif"),
+              _Paragraph(
                 "L’entretien vise à évaluer ton aptitude et ta motivation à occuper les fonctions de gardien de la paix, "
                 "à apprécier ta personnalité, tes qualités de réflexion et tes connaissances.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Aides à la décision du jury"),
-              const _BulletPoint(
+              _SubTitle("Aides à la décision du jury"),
+              _BulletPoint(
                 text:
                     "Résultats des tests psychotechniques (interprétés par le psychologue).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Un CV détaillé remis le jour même (parcours scolaire et extrascolaire + raisons du choix professionnel).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _AdmissionPills(
                 left: "Durée : 25 min",
                 middle: "Dont 5 min de présentation",
                 right: "Coef. 5",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Note éliminatoire : "),
+                  TextSpan(text: "Note éliminatoire : "),
                   TextSpan(
                     text: "inférieure à 5/20",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -273,34 +273,34 @@ class GPXAdmissionPage extends StatelessWidget {
             cardColor: cardConseils,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "« Ce qui est recherché lors des entretiens avec le jury, c'est avant tout de connaître "
                 "la femme ou l'homme qu'on a en face de nous. Le but est d'évaluer sa motivation à intégrer "
                 "la police nationale et surtout de savoir s'il ferait un bon collègue. Trop souvent, on cherche "
                 "à se “sur-vendre”, or cela se remarque vite. Il convient d'être préparé (présentation fluide), "
                 "mais surtout de répondre de manière sincère (pas de piège). »",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Prépare une présentation simple : qui tu es, ton parcours, pourquoi la police nationale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sois cohérent : motivation, sens du collectif, rigueur, sang-froid, disponibilité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Reste sincère : pas de “personnage”, le jury repère vite le discours artificiel.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Source : "),
+                  TextSpan(text: "Source : "),
                   TextSpan(
                     text: "Abdel B., commissaire de police et membre de jury.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
@@ -377,10 +377,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -486,8 +486,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -555,10 +555,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -625,10 +625,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -667,9 +667,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -704,7 +704,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,
@@ -728,12 +728,12 @@ class _AdmissionPills extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .06);
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.10);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .10);
 
     final Color fg = isDark ? Colors.white70 : Colors.black87;
 
@@ -792,10 +792,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -860,7 +860,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -903,7 +903,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -965,7 +965,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -997,7 +997,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1010,7 +1010,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

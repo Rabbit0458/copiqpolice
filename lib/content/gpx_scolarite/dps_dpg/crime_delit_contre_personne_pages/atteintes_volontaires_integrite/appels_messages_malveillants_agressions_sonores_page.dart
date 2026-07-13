@@ -110,16 +110,16 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-16 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime les appels téléphoniques malveillants, les envois réitérés de messages malveillants "
                       "émis par la voie des communications électroniques, ou les agressions sonores.",
@@ -137,21 +137,21 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
             accent: accentGreen,
             titleColor: textMain,
             children: [
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les appels téléphoniques malveillants ou les agressions sonores constituent une forme de violences "
                         "physiques ou psychologiques (référence utile : ",
                   ),
                   TextSpan(
                     text: "article 222-14-3 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
               const SizedBox(height: 14),
@@ -164,20 +164,20 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 "sur répondeur ou boîte vocale.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : le trouble peut être caractérisé que les appels soient reçus directement ou sur boîte vocale ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 20 février 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
@@ -188,38 +188,38 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 "(SMS, MMS, courriers électroniques, etc.).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : messages écrits et verbaux réitérés quasi quotidiennement ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 7 janvier 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : la réception d’un SMS se manifeste par un signal sonore émis par le téléphone du destinataire ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 30 septembre 2009)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
@@ -238,8 +238,8 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 "• mais aussi de la seule multiplication des appels.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
-                bodySpans: const [
+              const _NotaBox(
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le caractère malveillant peut être démontré par la fréquence des appels, notamment lorsque la victime a "
@@ -269,9 +269,9 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                   text:
                       ", même adressés à des destinataires différents, suffisent. ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "(Cass. crim., 4 mars 2003, n°02-86.172)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -279,38 +279,38 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : appels multipliés à un médecin jusqu’à troubler le fonctionnement du cabinet ",
                   ),
                   TextSpan(
                     text: "(C.A. Grenoble, 23 octobre 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : harcèlement d’un couple (~20 appels/24h) + menaces/injures, obligeant à bloquer puis changer de numéro ",
                   ),
                   TextSpan(
                     text: "(C.A. Pau, 10 juillet 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
@@ -328,38 +328,38 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 "Il n’y a pas de condition de réitération pour les agressions sonores.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : en attisant les aboiements de ses chiens et en s’abstenant de limiter la nuisance, l’auteur a agi en vue de troubler la tranquillité publique ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 2 juin 2015)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : directeur de centre de vacances condamné pour répétition d’excès sonores (week-ends d’intégration) malgré interventions des forces de l’ordre ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 30 mars 2004)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
@@ -374,83 +374,83 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) La malveillance"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) La malveillance"),
+              _Paragraph(
                 "La malveillance est la condition nécessaire et suffisante pour caractériser l’élément moral "
                 "des appels téléphoniques malveillants et des envois réitérés de messages malveillants.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Volonté de troubler la tranquillité d’autrui (agressions sonores)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Pour les agressions sonores, l’élément intentionnel est la volonté de troubler la tranquillité d’autrui : "
                       "les faits doivent être commis « en vue de troubler ». (",
                 ),
                 TextSpan(
                   text: "article 222-16 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph("L’intention se déduit des actes matériels."),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
+              _Paragraph("L’intention se déduit des actes matériels."),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : jouer du tam-tam/tambour entre 3h et 4h du matin, empêchant la voisine (77 ans) de dormir ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 13 novembre 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : aboiements nombreux et réitérés jour et nuit ",
                   ),
                   TextSpan(
                     text: "(C.A. Montpellier, 28 avril 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Jurisprudence",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Cet élément intentionnel permet de distinguer l’infraction des bruits/tapages injurieux ou nocturnes prévus à ",
                 ),
                 TextSpan(
                   text: "l’article R. 623-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -463,19 +463,19 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-16 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque les faits sont commis par le conjoint, le concubin ou le partenaire lié à la victime par un pacte civil de solidarité.",
               ),
@@ -503,9 +503,9 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 const TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-16 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -524,9 +524,9 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
                 const TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-16 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -537,40 +537,40 @@ class AppelsMessagesMalveillantsAgressionsSonoresPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(text: "Peines applicables prévues par "),
+              const _Paragraph.rich([
+                TextSpan(text: "Peines applicables prévues par "),
                 TextSpan(
                   text: "l’article 222-16-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
               const _SubTitle("Tentative & complicité"),
               const _BulletPoint(text: "Tentative : NON (non punissable)."),
-              _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+              const _Paragraph.rich([
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -608,10 +608,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -676,7 +676,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -719,7 +719,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -781,7 +781,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -813,7 +813,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -826,7 +826,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

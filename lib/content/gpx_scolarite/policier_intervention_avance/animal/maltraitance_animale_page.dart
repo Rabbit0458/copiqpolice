@@ -89,40 +89,40 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les animaux sont des êtres vivants doués de sensibilité : ",
                 ),
                 TextSpan(
                   text: "article 515-14 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Ils doivent être placés par leur propriétaire dans des conditions compatibles avec les impératifs biologiques de leur espèce : ",
                 ),
                 TextSpan(
                   text: "article L. 214-1 du CRPM",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Organisation",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les OPJ/APJ recherchent et constatent les infractions (Code pénal / Code rural). "
@@ -141,25 +141,25 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Sévices graves / actes de cruauté : "),
+                TextSpan(text: "Sévices graves / actes de cruauté : "),
                 TextSpan(
                   text: "article 521-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (animal domestique, apprivoisé ou tenu en captivité).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Non applicable aux courses de taureaux et combats de coqs lorsque qu’une tradition locale ininterrompue peut être invoquée/établie.",
                   ),
@@ -228,28 +228,28 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Aggravations prévues par "),
+                TextSpan(text: "Aggravations prévues par "),
                 TextSpan(
                   text: "l’article 521-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (selon les cas) :"),
+                TextSpan(text: " (selon les cas) :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Animal détenu par un agent dans l’exercice d’une mission de service public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Faits commis par le propriétaire ou le gardien.",
               ),
-              const _BulletPoint(text: "Faits commis en présence d’un mineur."),
-              const _BulletPoint(
+              _BulletPoint(text: "Faits commis en présence d’un mineur."),
+              _BulletPoint(
                 text: "Faits ayant entraîné la mort de l’animal.",
               ),
             ],
@@ -263,39 +263,39 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _NotaBox(
                 title: "Complicité (images)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Enregistrer sciemment des images de sévices graves / actes de cruauté ou d’atteintes sexuelles sur un animal peut constituer un acte de complicité, "
                         "sauf si l’enregistrement vise un débat public d’intérêt général ou sert de preuve en justice : ",
                   ),
                   TextSpan(
                     text: "article 521-1-2 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Diffusion sur internet de ces images : délit prévu par ",
                 ),
                 TextSpan(
                   text: "l’article 521-1-2 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -308,146 +308,146 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Atteintes à la vie"),
+            children: const [
+              _SubTitle("Atteintes à la vie"),
               _Paragraph.rich([
-                const TextSpan(text: "Atteinte volontaire à la vie : "),
+                TextSpan(text: "Atteinte volontaire à la vie : "),
                 TextSpan(
                   text: "article 522-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Atteinte involontaire (contravention) : ",
                 ),
                 TextSpan(
                   text: "article R. 653-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Atteintes sexuelles / sollicitations"),
+              _SubTitle("Atteintes sexuelles / sollicitations"),
               _Paragraph.rich([
-                const TextSpan(text: "Atteinte sexuelle sur animal : "),
+                TextSpan(text: "Atteinte sexuelle sur animal : "),
                 TextSpan(
                   text: "article 521-1-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Proposition / sollicitation : "),
+                TextSpan(text: "Proposition / sollicitation : "),
                 TextSpan(
                   text: "article 521-1-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Abandon"),
+              _SubTitle("Abandon"),
               _Paragraph.rich([
-                const TextSpan(text: "Abandon volontaire : "),
+                TextSpan(text: "Abandon volontaire : "),
                 TextSpan(
                   text: "article 521-1 alinéa 13 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Abandon exposant à un risque immédiat/imminent de mort : ",
                 ),
                 TextSpan(
                   text: "article 521-1 alinéa 15 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Expériences / recherches"),
+              _SubTitle("Expériences / recherches"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Expériences/recherches sans prescriptions : ",
                 ),
                 TextSpan(
                   text: "article 521-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (renvoi CRPM)."),
+                TextSpan(text: " (renvoi CRPM)."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Mauvais traitements (contraventions / délits)"),
+              _SubTitle("Mauvais traitements (contraventions / délits)"),
               _Paragraph.rich([
-                const TextSpan(text: "Mauvais traitements (contravention) : "),
+                TextSpan(text: "Mauvais traitements (contravention) : "),
                 TextSpan(
                   text: "article R. 654-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Manquements du gardien/détenteur (nourriture, soins, habitat…) : ",
                 ),
                 TextSpan(
                   text: "article R. 215-4 du CRPM",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Mauvais traitements par un professionnel : ",
                 ),
                 TextSpan(
                   text: "article L. 215-11 du CRPM",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -477,57 +477,57 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Pouvoirs CRPM (protection animale)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Pouvoirs CRPM (protection animale)"),
+              _BulletPoint(
                 text:
                     "Accès aux locaux/installations où se trouvent des animaux (hors domiciles) entre 8h et 20h (ou si accès public/activité en cours).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ouverture et contrôle de véhicules professionnels transportant des animaux (jour/nuit) et, en cas de danger vital, ouverture de tout véhicule.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Sur instructions du procureur, dans l’attente d’une mesure judiciaire prévue par ",
                 ),
                 TextSpan(
                   text: "l’article 99-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", possibilité de saisie/retrait et de confier l’animal à un tiers (association/fondation…).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Frais",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les frais de garde sont en principe à la charge du propriétaire/détenteur (sauf décision contraire du magistrat).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "En urgence, l’état de nécessité peut être invoqué : ",
                 ),
                 TextSpan(
                   text: "article 122-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (ex. bris de vitre pour extraire un chien enfermé en plein soleil, propriétaire injoignable).",
                 ),
@@ -543,37 +543,37 @@ class MaltraitanceAnimalePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Il est interdit de laisser divaguer les animaux domestiques et les animaux sauvages apprivoisés ou tenus en captivité.\n\n"
                 "Chien divagant (hors chasse/garde/protection troupeau) : plus sous surveillance, hors portée de voix/rappel, éloigné de plus de 100 m, ou abandonné.\n\n"
                 "Chat divagant : non identifié à plus de 200 m des habitations, ou à plus de 1 000 m du domicile sans surveillance, ou propriétaire inconnu saisi sur la voie publique.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Divagation d’un animal dangereux (contravention) : ",
                 ),
                 TextSpan(
                   text: "article R. 622-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Amende forfaitaire possible : "),
+                TextSpan(text: "Amende forfaitaire possible : "),
                 TextSpan(
                   text: "article R. 48-1 (7°) du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -639,10 +639,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -707,7 +707,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -750,7 +750,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -812,7 +812,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -844,7 +844,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -857,7 +857,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

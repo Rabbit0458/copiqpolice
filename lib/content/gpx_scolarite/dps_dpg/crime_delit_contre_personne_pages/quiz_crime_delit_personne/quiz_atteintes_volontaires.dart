@@ -102,7 +102,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // VIOLENCES VOLONTAIRES — PRINCIPES (R. 624-1 / R. 625-1 / 222-11 / 222-7…)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Définition',
     question:
         'Les atteintes volontaires à l’intégrité physique et/ou psychique sont qualifiées :',
@@ -112,7 +112,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que les atteintes volontaires à l’intégrité physique et/ou psychique constituent des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Textes',
     question:
         'Les violences contraventionnelles sont définies et réprimées par :',
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne R. 624-1 et R. 625-1 CP pour les violences contraventionnelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Délit (fondement)',
     question: 'Les violences délictuelles sont définies et réprimées par :',
     options: [
@@ -139,7 +139,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’article 222-11 CP définit et réprime les violences délictuelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément matériel',
     question: 'L’élément matériel des violences volontaires repose sur :',
     options: [
@@ -152,7 +152,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que les violences supposent une action positive : la simple abstention ne constitue pas une violence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contact',
     question: 'Les violences supposent nécessairement :',
     options: [
@@ -166,7 +166,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que le contact peut être indirect : arme, objet, morsure d’animal excité par l’auteur, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Psychologiques',
     question: 'Selon le cours, des violences volontaires peuvent être :',
     options: [
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle la jurisprudence : un acte impressionnant vivement la victime et causant un choc émotif peut constituer une violence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Victime',
     question: 'Les violences volontaires doivent être commises :',
     options: [
@@ -192,7 +192,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : personne humaine, vivante, distincte de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Résultat',
     question: 'La réalité de l’atteinte (dommage) est notamment établie par :',
     options: [
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que la réalité de l’atteinte doit être établie, notamment par la production d’un certificat médical.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément moral',
     question: 'L’élément moral des violences volontaires suppose :',
     options: [
@@ -218,7 +218,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : violences consommées si elles sont intentionnelles (conscience qu’il en résultera un préjudice).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — ITT',
     question:
         'Dans la logique du cours, la qualification/gravité des violences varie notamment selon :',
@@ -236,7 +236,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // VIOLENCES — CIRC. AGGRAVANTES (222-13 / 222-12 / 222-10 / 222-8)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Mineur',
     question:
         'Selon 222-13, commettre des violences (ITT ≤ 8 jours ou aucune) sur un mineur de 15 ans constitue :',
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste “sur un mineur de 15 ans” parmi les circonstances du 1er degré de 222-13.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Vulnérabilité',
     question: 'La particulière vulnérabilité aggravante suppose qu’elle soit :',
     options: [
@@ -263,7 +263,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : vulnérabilité due à âge/maladie/infirmité/déficience/grossesse apparente ou connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Personne dépositaire',
     question:
         'Parmi les circonstances aggravantes du 1er degré (222-13), on trouve :',
@@ -278,7 +278,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours énumère la qualité de la victime (dépositaire de l’autorité publique, etc.) comme circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Réunion',
     question:
         '“Par plusieurs personnes agissant en qualité d’auteur ou de complice” correspond à :',
@@ -292,7 +292,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste la réunion (plusieurs personnes auteurs/complices) parmi les circonstances aggravantes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Arme',
     question: 'L’usage ou la menace d’une arme est :',
     options: [
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours cite l’usage ou menace d’une arme parmi les circonstances aggravantes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — Visage dissimulé',
     question:
         'Selon le cours, “dissimuler volontairement en tout ou partie son visage” est :',
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne la dissimulation volontaire du visage afin de ne pas être identifié comme circonstance aggravante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — 2e degré (222-13)',
     question:
         'Dans 222-13 (ITT ≤ 8 jours/0 ITT), le 2e degré est caractérisé notamment lorsque :',
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : 2e degré = deux circonstances du 1er degré (ou situations spécifiques avec mineur/autorité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Aggravation — 3e degré (222-13)',
     question: 'Dans 222-13, le 3e degré correspond :',
     options: [
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // VIOLENCES 222-14-1 — ARME + BANDE ORGANISÉE OU GUET-APENS
   // (victimes spécifiques : DAP, pompiers, transport, etc.)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Fondement',
     question:
         'Les violences avec arme sur une personne dépositaire de l’autorité publique (bande organisée ou guet-apens) sont prévues par :',
@@ -365,7 +365,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : 222-14-1 CP définit et réprime cette infraction spécifique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Conditions',
     question:
         'Pour 222-14-1, la condition “bande organisée ou guet-apens” est :',
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise que les deux conditions sont alternatives.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Bande organisée',
     question: 'La bande organisée (132-71 CP) suppose :',
     options: [
@@ -392,7 +392,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours reprend la définition de 132-71 CP : préparation caractérisée par un ou plusieurs faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Guet-apens',
     question: 'Le guet-apens se caractérise par :',
     options: [
@@ -406,7 +406,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours définit le guet-apens comme l’attente de la victime dans un lieu déterminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Arme',
     question: 'Dans 222-14-1, les violences doivent être commises :',
     options: [
@@ -419,7 +419,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : usage ou menace d’une arme, quelle qu’elle soit (par nature ou destination).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Victimes visées',
     question: 'Une des catégories de victimes visées par 222-14-1 est :',
     options: [
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste les agents de la force publique parmi les victimes visées par le texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Contexte',
     question: 'Pour relever de 222-14-1, les violences doivent être commises :',
     options: [
@@ -446,7 +446,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise le contexte requis : exercice, occasion ou raison des fonctions/mission.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — ITT / types de préjudices',
     question:
         'Le cours indique que 222-14-1 distingue notamment selon que les violences :',
@@ -461,7 +461,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours énumère quatre types de préjudices dans 222-14-1 (mort, MIP, ITT > 8, ITT ≤ 8).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Tentative',
     question: 'Selon le cours, pour 222-14-1, la tentative est :',
     options: [
@@ -475,7 +475,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : pas de tentative visée pour les violences délictuelles ; en criminel c’est théoriquement possible mais difficile à établir.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Complicité',
     question: 'Pour 222-14-1, la complicité est :',
     options: ['Oui', 'Non', 'Non sauf pour les personnes morales'],
@@ -488,7 +488,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // MEURTRE (221-1) — ELEMENTS + AGGRAVATIONS + TENTATIVE/COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Définition',
     question: 'Le meurtre correspond au fait de :',
     options: [
@@ -501,7 +501,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours définit le meurtre comme le fait de donner volontairement la mort à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Fondement',
     question: 'Le meurtre est défini et réprimé par :',
     options: [
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise : 221-1 CP définit et réprime le meurtre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément matériel',
     question: 'L’élément matériel du meurtre nécessite :',
     options: [
@@ -526,7 +526,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : acte positif de violence ; l’omission relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Moyen',
     question:
         'Dans le meurtre, le moyen utilisé (mains nues, arme, etc.) est :',
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que le moyen utilisé est indifférent (arme par nature/destination, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Victime',
     question: 'Le meurtre s’applique :',
     options: [
@@ -553,7 +553,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : personne humaine vivante ; le meurtre ne s’applique pas à un animal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Suicide',
     question: 'Selon le cours, le suicide :',
     options: [
@@ -566,7 +566,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : la victime doit être distincte de l’auteur ; le suicide n’est pas incriminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Consentement',
     question:
         'Le consentement de la victime (ex : euthanasie/suicide assisté) :',
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : même à la prière de la victime, donner la mort constitue un meurtre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Causalité',
     question: 'Pour le meurtre, il faut établir :',
     options: [
@@ -593,7 +593,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle : l’acte doit avoir provoqué directement la mort ; la mort est conséquence de l’acte incriminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément moral',
     question: 'L’élément moral du meurtre est :',
     options: [
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : volonté de donner la mort, détermination de tuer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Intention (indices)',
     question:
         'Selon la jurisprudence rappelée au cours, l’intention homicide peut s’induire notamment :',
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle l’induction de l’intention par l’arme et la région du corps frappée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Préméditation',
     question:
         'Ce qui distingue principalement le meurtre de l’assassinat est :',
@@ -634,7 +634,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : l’intention homicide concomitante suffit au meurtre ; l’assassinat requiert la préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Mobile',
     question: 'Les mobiles (politique, euthanasie, etc.) sont :',
     options: ['Indifférents', 'Toujours aggravants', 'Toujours exonératoires'],
@@ -642,7 +642,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise : les mobiles sont indifférents.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Erreur sur la personne',
     question: 'L’erreur sur la personne (victime différente de celle visée) :',
     options: [
@@ -655,7 +655,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : la volonté reste présente, le meurtre est constitué.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Aggravation 221-3',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : article 221-3 CP (préméditation ou guet-apens).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Tentative',
     question: 'La tentative de meurtre est :',
     options: [
@@ -681,7 +681,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : tentative = OUI (commencement d’exécution).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Complicité',
     question: 'La complicité de meurtre est :',
     options: [
@@ -694,7 +694,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Fondement',
     question:
         'La participation à un groupement violent est définie et réprimée par :',
@@ -708,7 +708,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’article 222-14-2 CP définit et réprime la participation à un groupement violent.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Commencement d’exécution',
     question: 'Pour retenir la tentative de meurtre, il faut notamment :',
     options: [
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que la tentative est punissable en cas de commencement d’exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Indifférence du lieu et de la date',
     question: 'Un homicide volontaire peut être retenu même si :',
     options: [
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'La jurisprudence citée dans le cours admet des moyens multiples et successifs, sans exigence de lieu/date unique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Infraction impossible',
     question:
         'Si l’auteur frappe une victime déjà décédée, la qualification la plus juste selon le cours est :',
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’acte sur cadavre relève de l’infraction impossible, assimilée à la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Consentement de la victime',
     question:
         'Le fait de donner la mort à une personne à sa demande explicite :',
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que le consentement de la victime n’exclut pas l’infraction (euthanasie/suicide assisté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Lien de causalité',
     question:
         'Pour caractériser le meurtre, il faut établir que les violences sont :',
@@ -778,7 +778,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours insiste sur la nécessité d’un lien de causalité entre l’acte et le décès.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Intention concomitante',
     question: 'L’intention homicide doit être :',
     options: [
@@ -791,7 +791,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’intention homicide doit exister au moment des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Mobiles',
     question: 'Les mobiles (politique, euthanasie…) :',
     options: [
@@ -804,7 +804,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique expressément que les mobiles sont indifférents.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Erreur sur la personne',
     question: 'Si l’auteur se trompe de victime (erreur sur la personne) :',
     options: [
@@ -817,7 +817,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que l’erreur sur la personne ne fait pas disparaître l’intention.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (principe)',
     question: 'Le meurtre est aggravé (221-2 CP) lorsqu’il est :',
     options: [
@@ -830,7 +830,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise l’aggravation quand le meurtre est concomitant à un autre crime (221-2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (condition)',
     question: 'Pour retenir 221-2, l’auteur du meurtre doit :',
     options: [
@@ -843,7 +843,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’aggravation suppose que l’auteur (ou un auteur/complice) soit déclaré coupable du crime concomitant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (ordre/lieu)',
     question:
         'Pour 221-2, le lieu et l’ordre de commission du meurtre et de l’autre crime :',
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que le lieu et l’ordre de commission des infractions sont indifférents.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (tentative)',
     question: 'Selon le cours, l’aggravation 221-2 peut s’appliquer même si :',
     options: [
@@ -870,7 +870,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que peu importe que le meurtre ou l’autre crime ait seulement été tenté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-2 (corrélation)',
     question: 'Pour retenir 221-2, il faut notamment :',
     options: [
@@ -884,7 +884,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours exige un rapport de cause à effet et un plan unique (faciliter/favoriser la fuite/assurer l’impunité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-3',
     question: 'Le meurtre commis avec préméditation ou guet-apens relève :',
     options: [
@@ -897,7 +897,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que 221-3 vise la préméditation ou le guet-apens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (mineur)',
     question: 'Le meurtre est aggravé lorsqu’il est commis sur :',
     options: [
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours vise l’aggravation sur mineur de 15 ans (221-4).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (ascendant)',
     question: 'Le meurtre est aggravé lorsqu’il est commis sur :',
     options: [
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste l’ascendant et les parents adoptifs parmi les aggravations de 221-4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (vulnérabilité)',
     question:
         'Le meurtre est aggravé s’il est commis sur une personne vulnérable :',
@@ -937,7 +937,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours reprend la vulnérabilité apparente ou connue (221-4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (sujétion)',
     question: 'Le meurtre est aggravé lorsqu’il est commis sur une personne :',
     options: [
@@ -951,7 +951,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne l’état de sujétion (223-15-3) comme circonstance aggravante (221-4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (qualité)',
     question:
         'Le meurtre est aggravé lorsqu’il vise un dépositaire de l’autorité publique :',
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise la condition de contexte et la qualité apparente/connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (conjoint)',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -980,7 +980,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise l’application aussi à l’ancien conjoint/concubin/partenaire en raison des relations ayant existé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (refus de mariage)',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -994,7 +994,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste le refus de mariage/union parmi les aggravations (221-4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — 221-4 (ivresse/stupéfiants)',
     question: 'Le meurtre est aggravé lorsqu’il est commis par une personne :',
     options: [
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // EMPOISONNEMENT — APPROFONDISSEMENT (CONCOURS / PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Fondement',
     question: 'L’empoisonnement est défini et réprimé par :',
     options: [
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise l’article 221-5 CP comme fondement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Mode d’administration',
     question:
         'Le code pénal ne définit pas expressément le mode d’administration : cela signifie que :',
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que la façon de procéder à l’empoisonnement est indifférente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Administration indirecte',
     question: 'Le mode d’administration peut être indirect lorsque :',
     options: [
@@ -1052,7 +1052,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours prévoit une administration indirecte via un tiers de bonne foi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime trompée',
     question: 'L’empoisonnement peut être caractérisé même si :',
     options: [
@@ -1065,7 +1065,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’administration peut être le fait de la victime elle-même si elle a été trompée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Caractère mortifère',
     question: 'Le caractère mortifère de la substance s’apprécie :',
     options: [
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise une appréciation in concreto : caractéristiques + usage + sensibilité connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Mélanges',
     question:
         'L’administration en connaissance de cause de produits associés :',
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours cite la jurisprudence : l’association de produits peut constituer l’élément matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Infraction formelle',
     question:
         'Dire que l’empoisonnement est une infraction formelle signifie que :',
@@ -1108,7 +1108,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique l’indifférence du résultat : la consommation ne dépend pas du décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Connaissance',
     question: 'Si l’auteur ignore la nature mortelle de la substance, alors :',
     options: [
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours exige la connaissance du caractère mortifère de la substance employée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Intention',
     question: 'Selon la Cour de cassation (cours), l’empoisonnement suppose :',
     options: [
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle le principe : « ne peut être caractérisé que si l’auteur a agi avec l’intention de donner la mort ».',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Tentative (frontière)',
     question: 'La consommation de l’empoisonnement intervient :',
     options: [
@@ -1147,7 +1147,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours situe la consommation au moment où la substance est introduite dans l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Actes préparatoires',
     question:
         'Sont qualifiés d’actes préparatoires (trop éloignés) par le cours :',
@@ -1165,7 +1165,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // PROVOCATION (221-5-1) / RÉDUCTION (221-5-3) — EMP. & MEURTRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation — Principe',
     question:
         'La provocation (offres/promesses/dons) à commettre un assassinat ou un empoisonnement, non suivi d’effet :',
@@ -1179,7 +1179,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’« instigateur » est poursuivi même si le crime n’a été ni commis ni tenté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réduction de peine — Empoisonnement',
     question:
         'Pour l’empoisonnement, la peine peut être réduite des deux tiers si :',
@@ -1198,7 +1198,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // VIOLENCES 222-14-1 — APPROFONDISSEMENT (CONCOURS / PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Alternative',
     question: 'Pour retenir 222-14-1, la commission doit être :',
     options: [
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise que les deux conditions sont alternatives.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Arme (nature/destination)',
     question: 'Pour 222-14-1, l’arme peut être :',
     options: [
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours vise une arme quelle qu’elle soit (par nature ou destination).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Violences psychologiques',
     question: 'Selon le cours, les violences peuvent être :',
     options: [
@@ -1236,7 +1236,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que les violences sont constituées quelle que soit leur nature, y compris psychologiques.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Contexte (exercice/occasion/raison)',
     question: '« En raison des fonctions » signifie notamment que :',
     options: [
@@ -1250,7 +1250,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours distingue : exercice des fonctions / à l’occasion / en raison (motivation par la qualité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Proches',
     question:
         'La protection s’étend aux proches vivant habituellement au domicile :',
@@ -1265,7 +1265,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise l’extension aux proches au domicile, en raison des fonctions exercées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Fondement',
     question: 'Le meurtre est défini et réprimé par :',
     options: [
@@ -1278,7 +1278,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’article 221-1 CP définit et réprime le meurtre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément matériel',
     question: 'L’élément matériel du meurtre suppose :',
     options: [
@@ -1291,7 +1291,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que le meurtre repose sur un acte positif de violence ; l’omission relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Acte d’omission',
     question: 'Une privation de soins est :',
     options: [
@@ -1305,7 +1305,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique qu’un comportement négatif (privation de soins) ne caractérise pas l’élément matériel du meurtre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Personne visée',
     question: 'Le meurtre suppose une victime :',
     options: ['Humaine et vivante', 'Animale', 'Indéterminée mais non humaine'],
@@ -1314,7 +1314,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que le meurtre vise une personne humaine, vivante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Suicide',
     question: 'Le suicide :',
     options: [
@@ -1326,7 +1326,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours rappelle que le suicide n’est pas incriminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Intention homicide (preuve)',
     question: 'L’intention homicide peut s’induire notamment :',
     options: [
@@ -1339,7 +1339,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours cite la jurisprudence : arme utilisée + région du corps frappée peuvent révéler l’intention.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Qualification',
     question:
         'Un meurtre commis avec préméditation ou guet-apens correspond à :',
@@ -1349,7 +1349,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’article 221-3 vise le meurtre avec préméditation ou guet-apens : c’est l’assassinat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Bande organisée',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -1362,7 +1362,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste la bande organisée parmi les circonstances de l’article 221-4 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Répression (simple)',
     question: 'La peine encourue pour meurtre simple (221-1) est :',
     options: [
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le tableau de répression du cours indique 30 ans de réclusion pour le meurtre simple.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Tentative',
     question: 'La tentative de meurtre est :',
     options: [
@@ -1388,7 +1388,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : tentative de meurtre = OUI (si commencement d’exécution).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Complicité',
     question: 'La complicité de meurtre est :',
     options: [
@@ -1401,7 +1401,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que la complicité est punissable conformément aux articles 121-6 et 121-7.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre / Empoisonnement — Exemption',
     question:
         'Selon le cours, une personne ayant tenté meurtre/empoisonnement est exempte de peine si :',
@@ -1416,7 +1416,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne l’exemption spécifique : avertir l’autorité et éviter la mort de la victime.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Réduction de peine',
     question: 'La réduction de peine (2/3) pour meurtre est possible si :',
     options: [
@@ -1434,7 +1434,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // EMPOISONNEMENT — SUITE (CONCOURS / TENTATIVE / PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Acte positif',
     question:
         'L’empoisonnement est une infraction de commission : cela suppose :',
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’empoisonnement suppose un acte positif : une abstention ne suffit pas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Emploi vs administration',
     question: 'Selon le cours, « l’emploi » de la substance mortifère :',
     options: [
@@ -1462,7 +1462,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours distingue emploi (préparation, mise à disposition) et administration (faire pénétrer dans l’organisme).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Exemple emploi',
     question: 'Selon le cours, mélanger du poison à un plat constitue :',
     options: [
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours donne cet exemple : mélanger du poison à un plat = emploi, non administration.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime déterminée',
     question: 'L’empoisonnement peut être constitué même si la victime est :',
     options: [
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’infraction peut viser une victime déterminée ou indéterminée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Sur un animal',
     question: 'L’empoisonnement (221-5) :',
     options: [
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’empoisonnement vise une personne humaine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Substances mortifères',
     question: 'Une substance « de nature à entraîner la mort » :',
     options: [
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise qu’elle peut tuer, sans que la mort soit certaine dans tous les cas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Incubation',
     question: 'Le caractère mortifère peut s’exprimer :',
     options: [
@@ -1528,7 +1528,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours évoque une action rapide ou une mort à long terme (répétition, incubation).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Tentative (commencement)',
     question:
         'Le commencement d’exécution de l’empoisonnement est retenu notamment lorsque :',
@@ -1542,7 +1542,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : commencement d’exécution dès lors que le poison est présenté ou mis à disposition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Complicité',
     question: 'La complicité d’empoisonnement est :',
     options: [
@@ -1554,7 +1554,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours rappelle : complicité = OUI.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Provocation',
     question:
         'La provocation à commettre un empoisonnement, non suivie d’effet, est :',
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // VIOLENCES 222-14-1 — SUITE (RÉSULTATS / PEINES / TECHNIQUE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Victimes protégées',
     question: '222-14-1 vise notamment comme victimes :',
     options: [
@@ -1586,7 +1586,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours énumère les catégories de victimes spécifiquement protégées par 222-14-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Dépositaire autorité publique',
     question: 'Selon le cours, est dépositaire de l’autorité publique :',
     options: [
@@ -1600,7 +1600,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours donne une définition fonctionnelle du dépositaire de l’autorité publique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Maire',
     question:
         'Selon le cours, les responsables des exécutifs locaux (ex : maires) :',
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que les maires et exécutifs locaux ont cette qualité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — ITT et constat',
     question: 'Selon le cours, l’ITT (222-14-1) peut être constatée :',
     options: [
@@ -1628,7 +1628,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique expressément cette possibilité de constat par médecin expert.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Qualification ITT 0-8 jours',
     question:
         'Les violences 222-14-1 ayant entraîné une ITT de 0 à 8 jours constituent :',
@@ -1638,7 +1638,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le tableau de répression du cours indique que l’ITT 0 à 8 jours (222-14-1 4°) est un délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT 0-8)',
     question: 'Pour 222-14-1 avec ITT 0 à 8 jours, la peine principale est :',
     options: [
@@ -1651,7 +1651,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours (tableau) fixe 10 ans et 150 000 € pour 222-14-1 (ITT 0-8 jours).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Qualification ITT > 8 jours',
     question:
         'Les violences 222-14-1 ayant entraîné une ITT > 8 jours constituent :',
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours classe l’ITT > 8 jours (222-14-1 3°) comme crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT > 8)',
     question: 'Pour 222-14-1 avec ITT > 8 jours, la peine principale est :',
     options: [
@@ -1673,7 +1673,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le tableau de répression du cours indique 15 ans de réclusion (période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Mutilation/infirmité',
     question:
         'En cas de mutilation ou infirmité permanente (222-14-1), la peine est :',
@@ -1687,7 +1687,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique 20 ans de réclusion (période de sûreté) en cas de mutilation/infirmité permanente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Mort',
     question:
         'Si les violences 222-14-1 entraînent la mort sans intention de la donner, la peine est :',
@@ -1701,7 +1701,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique 30 ans de réclusion (période de sûreté) lorsque les violences entraînent la mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Tentative',
     question: 'Pour les violences délictuelles 222-14-1, la tentative est :',
     options: [
@@ -1718,7 +1718,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // ATTEINTES INVOLONTAIRES — CONTRAVENTIONS — ITT ≤ 3 MOIS
   // (R. 622-1 / R. 625-2 / R. 625-3 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Principe',
     question:
         'Hors les cas prévus par 222-20 et 222-20-1, causer une ITT ≤ 3 mois par maladresse/imprudence constitue :',
@@ -1732,7 +1732,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours distingue les atteintes involontaires contraventionnelles (ITT ≤ 3 mois) hors régimes délictuels spécifiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Faute',
     question:
         'La liste des fautes (maladresse, imprudence, inattention, négligence, manquement à une obligation) en matière contraventionnelle est :',
@@ -1742,7 +1742,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que la liste est limitative et doit être caractérisée par les juges.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Négligence',
     question: 'Selon le cours, la négligence correspond surtout :',
     options: [
@@ -1755,7 +1755,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours définit la négligence comme le fait de ne pas se soucier des conséquences de son abstention.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Obligation',
     question:
         'Le “règlement” au sens du cours (obligation de prudence/sécurité) vise :',
@@ -1769,7 +1769,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que le règlement s’entend des actes des autorités administratives à caractère général et impersonnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Source',
     question:
         'En cas de manquement à une obligation textuelle, les magistrats doivent :',
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle l’exigence de précision sur la source et la nature de l’obligation (logique Cass. crim., 18 juin 2002).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — ITT',
     question: 'Pour R. 625-2 CP, l’ITT retenue doit être :',
     options: [
@@ -1796,7 +1796,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : ITT ≤ 3 mois consécutifs et non des périodes additionnées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Sans ITT',
     question: 'R. 622-1 CP vise :',
     options: [
@@ -1809,7 +1809,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours présente R. 622-1 comme l’atteinte involontaire sans ITT (2e classe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Aggravation',
     question: 'La contravention de 5e classe (R. 625-3) correspond :',
     options: [
@@ -1823,7 +1823,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que R. 625-3 aggrave R. 622-1 lorsque la violation est manifestement délibérée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Moral',
     question:
         'En matière contraventionnelle d’atteintes involontaires, l’élément moral est :',
@@ -1837,7 +1837,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : “Non exigé en matière contraventionnelle”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Tentative',
     question: 'La tentative des contraventions d’atteintes involontaires est :',
     options: ['Non', 'Oui', 'Oui si ITT = 0'],
@@ -1845,7 +1845,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise : tentative = NON en contraventionnel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Complicité',
     question:
         'La complicité en matière de contraventions d’atteintes involontaires est :',
@@ -1860,7 +1860,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // ATTEINTES INVOLONTAIRES — DÉLIT — ITT ≤ 3 MOIS (CONDUCTEUR)
   // (222-20-1 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Fondement',
     question:
         'Les atteintes involontaires commises par conducteur (ITT ≤ 3 mois) sont prévues par :',
@@ -1874,7 +1874,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que les blessures involontaires par conducteur avec ITT ≤ 3 mois sont prévues et réprimées à 222-20-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Faute',
     question: 'Pour 222-20-1, les fautes de base sont notamment :',
     options: [
@@ -1888,7 +1888,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours renvoie à 222-19 et 121-3 : cinq comportements fautifs (faute d’imprudence simple).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Peines (simple)',
     question: 'Pour 222-20-1 (régime simple), les peines principales sont :',
     options: [
@@ -1901,7 +1901,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le tableau de répression du cours indique 2 ans et 30 000 € pour 222-20-1 (simple).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Aggravation',
     question: 'Dans 222-20-1, le “2e degré” correspond :',
     options: [
@@ -1914,7 +1914,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours distingue l’aggravation lorsque deux ou plus des circonstances sont réunies.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Complicité',
     question:
         'Pour 222-20-1 (blessures involontaires conducteur), la complicité est :',
@@ -1924,7 +1924,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : complicité = NON pour ce délit non intentionnel (222-20-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Conducteur — Tentative',
     question: 'Pour 222-20-1, la tentative est :',
     options: [
@@ -1942,7 +1942,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // ATTEINTES INVOLONTAIRES — DÉLIT — ITT > 3 MOIS
   // (222-19 CP + aggravations 222-19-1 / 222-19-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Fondement',
     question:
         'Les blessures involontaires avec ITT > 3 mois sont prévues par :',
@@ -1956,7 +1956,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’ITT > 3 mois relève de 222-19 al.1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Élément moral',
     question:
         'Pour les infractions non intentionnelles (blessures involontaires), l’élément moral est :',
@@ -1970,7 +1970,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle : l’élément moral n’est pas requis pour les infractions non intentionnelles (sauf cas de violation délibérée à caractériser).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Violation délibérée',
     question:
         'La circonstance aggravante “violation manifestement délibérée” (222-19 al.2) suppose :',
@@ -1985,7 +1985,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : obligation particulière + connaissance + choix délibéré de ne pas la respecter.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Conducteur',
     question: 'Le 1er degré d’aggravation (222-19-1) vise notamment :',
     options: [
@@ -1998,7 +1998,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : 222-19-1 prévoit une aggravation lorsque l’infraction est commise par conducteur de VTAM.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — 2e degré (routier)',
     question:
         'Le 2e degré (222-19-1) peut être caractérisé si les blessures s’accompagnent notamment :',
@@ -2013,7 +2013,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste ces infractions routières comme circonstances d’aggravation du 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — 3e degré (routier)',
     question: 'Le 3e degré (222-19-1) correspond :',
     options: [
@@ -2026,7 +2026,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : 3e degré = deux ou plusieurs circonstances prévues.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Délit de fuite',
     question:
         'Selon le cours, une aggravation spécifique peut exister lorsque les blessures sont suivies :',
@@ -2040,7 +2040,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne l’article 434-10 CP pour le cas du délit de fuite (hors régime 222-19-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Complicité',
     question:
         'En matière de blessures involontaires (ITT > 3 mois), la complicité est :',
@@ -2059,7 +2059,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // BLESSURES INVOLONTAIRES — VIOLATION MANIFESTEMENT DÉLIBÉRÉE
   // (222-20 CP + aggravation 222-20-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Fondement',
     question:
         'Les blessures involontaires par violation manifestement délibérée (ITT ≤ 3 mois) sont prévues par :',
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : l’infraction est prévue et réprimée par 222-20 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Obligation particulière',
     question:
         'L’obligation particulière de prudence ou de sécurité doit être prévue par :',
@@ -2087,7 +2087,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’obligation particulière doit être prévue par un texte (loi/décret/arrêté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Connaissance',
     question: 'Pour caractériser 222-20, il faut établir que la personne :',
     options: [
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que la personne doit avoir connaissance de l’obligation (formation/fonctions/compétences/responsabilités).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Volonté',
     question: 'La “violation manifestement délibérée” implique :',
     options: [
@@ -2113,7 +2113,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise : le dommage n’est pas voulu, mais le risque est pleinement assumé (choix de transgresser).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Complicité',
     question: 'Pour 222-20 (faute délibérée), la complicité est :',
     options: ['Oui', 'Non', 'Impossible par nature'],
@@ -2122,7 +2122,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : complicité = OUI, car il s’agit d’une faute délibérée (ex : instigation).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Tentative',
     question: 'Pour 222-20, la tentative est :',
     options: ['Non', 'Oui', 'Oui si deux circonstances aggravantes'],
@@ -2134,7 +2134,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // HOMICIDE INVOLONTAIRE (221-6 + aggravations 221-6-1 / 221-6-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Fondement',
     question: 'L’homicide involontaire est prévu et réprimé par :',
     options: [
@@ -2147,7 +2147,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’article 221-6 CP prévoit et réprime l’homicide involontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Résultat',
     question: 'Le dommage de l’homicide involontaire est :',
     options: [
@@ -2159,7 +2159,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours indique : le dommage est la mort d’autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Faute',
     question: 'La faute simple (221-6) peut être :',
     options: [
@@ -2173,7 +2173,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours renvoie à 121-3 : cinq comportements fautifs (liste limitative).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité',
     question: 'Selon le cours, le lien de causalité exigé par 221-6 :',
     options: [
@@ -2187,7 +2187,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique qu’un lien direct et immédiat n’est pas exigé : il suffit qu’il soit certain.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité indirecte',
     question: 'L’auteur indirect (121-3 al.4) est celui qui :',
     options: [
@@ -2201,7 +2201,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours cite la définition légale des auteurs indirects (création de situation dangereuse / omission de mesures).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Aggravation (violation délibérée)',
     question: 'L’homicide involontaire est aggravé (221-6 al.2) lorsque :',
     options: [
@@ -2215,7 +2215,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise 221-6 al.2 : violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Aggravation conducteur',
     question:
         '221-6-1 prévoit une aggravation lorsque l’homicide involontaire est commis :',
@@ -2229,7 +2229,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : 221-6-1 (1er degré) si commis par conducteur de VTAM.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Peines (simple)',
     question:
         'La peine principale de l’homicide involontaire simple (221-6 al.1) est :',
@@ -2243,7 +2243,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le tableau du cours indique : 3 ans et 45 000 € pour 221-6 al.1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Complicité',
     question: 'Pour l’homicide involontaire, la complicité est :',
     options: ['Non (jurisprudence)', 'Oui', 'Oui si bande organisée'],
@@ -2252,7 +2252,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que la jurisprudence exclut la complicité en matière d’infraction non intentionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: ['Non (résultat non souhaité)', 'Oui', 'Oui uniquement si alcool'],
@@ -2262,7 +2262,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Complicité',
     question: 'La complicité est :',
     options: [
@@ -2276,7 +2276,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique complicité = OUI et rappelle le lien avec la bande organisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Fondement',
     question:
         'Les atteintes involontaires avec ITT ≤ 3 mois, hors délits, sont prévues par :',
@@ -2294,7 +2294,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // MEURTRE — art. 221-1 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Définition',
     question: 'Le meurtre est :',
     options: [
@@ -2307,7 +2307,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours définit le meurtre comme le fait de donner volontairement la mort à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Fondement',
     question: 'Le meurtre est défini et réprimé par :',
     options: [
@@ -2320,7 +2320,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’article 221-1 CP définit et réprime le meurtre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément matériel',
     question: 'L’élément matériel du meurtre suppose :',
     options: [
@@ -2333,7 +2333,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le meurtre exige un acte positif de violence; l’omission relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Moyen',
     question: 'Le moyen utilisé pour commettre un meurtre est :',
     options: [
@@ -2346,7 +2346,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que le moyen est indifférent : mains nues, arme par nature ou destination…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Actes successifs',
     question: 'Un homicide volontaire peut résulter :',
     options: [
@@ -2360,7 +2360,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'La jurisprudence admet des moyens multiples et successifs, sans date/lieu unique nécessaire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Victime',
     question: 'Le meurtre vise :',
     options: ['Une personne humaine', 'Un animal', 'Un bien meuble'],
@@ -2368,7 +2368,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le meurtre ne s’applique pas à un animal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Personne vivante',
     question:
         'Si l’acte est accompli sur un cadavre (victime déjà décédée), la qualification retenue est :',
@@ -2382,7 +2382,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que l’acte sur cadavre relève de l’infraction impossible, assimilée à la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Suicide',
     question: 'Le suicide est :',
     options: [
@@ -2394,7 +2394,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise que le suicide n’est pas incriminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Consentement',
     question: 'Le consentement de la victime (à sa prière/ordre exprès) :',
     options: [
@@ -2407,7 +2407,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle l’indifférence du consentement (euthanasie / suicide assisté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Lien de causalité',
     question: 'Pour le meurtre, il faut établir :',
     options: [
@@ -2420,7 +2420,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'L’acte doit avoir provoqué la mort : les violences sont la cause efficiente du décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Élément moral',
     question: 'L’élément moral du meurtre est :',
     options: [
@@ -2433,7 +2433,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le meurtre suppose une intention homicide : la détermination de donner la mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Indices d’intention',
     question: 'L’intention homicide peut notamment s’induire :',
     options: [
@@ -2446,7 +2446,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne l’induction par l’arme utilisée et la région du corps visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Mobiles',
     question: 'Les mobiles en matière de meurtre sont :',
     options: ['Indifférents', 'Toujours aggravants', 'Toujours atténuants'],
@@ -2455,7 +2455,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que les mobiles sont indifférents (politique, euthanasie…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Erreur sur la personne',
     question: 'L’erreur sur la personne visée :',
     options: [
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'La volonté de tuer demeure : le meurtre reste constitué.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Tentative',
     question: 'La tentative de meurtre est :',
     options: [
@@ -2480,7 +2480,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que la tentative est punissable en présence d’un commencement d’exécution.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Complicité',
     question: 'La complicité de meurtre est :',
     options: [
@@ -2497,7 +2497,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // MEURTRE — CIRCONSTANCES AGGRAVANTES (221-2 / 221-3 / 221-4)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Crime concomitant',
     question:
         'Le meurtre est aggravé lorsqu’il est précédé, accompagné ou suivi :',
@@ -2511,7 +2511,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours vise l’aggravation de l’article 221-2 CP (concomitance avec un crime).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Préméditation',
     question: 'Le meurtre commis avec préméditation ou guet-apens relève :',
     options: [
@@ -2524,7 +2524,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique l’article 221-3 CP pour préméditation/guet-apens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Victime',
     question: 'Le meurtre est aggravé notamment lorsqu’il est commis sur :',
     options: [
@@ -2537,7 +2537,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste l’aggravation sur mineur de 15 ans (art. 221-4 CP).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Qualité de la victime',
     question:
         'Le meurtre est aggravé lorsqu’il est commis sur une personne dépositaire de l’autorité publique :',
@@ -2552,7 +2552,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle l’exigence de contexte + qualité apparente/connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Bande organisée',
     question: 'Le meurtre est aggravé lorsqu’il est commis :',
     options: [
@@ -2565,7 +2565,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne la bande organisée parmi les aggravations de l’art. 221-4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre — Peines',
     question: 'Le meurtre simple (art. 221-1 CP) est puni de :',
     options: [
@@ -2578,7 +2578,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle la peine du meurtre simple : 30 ans de réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Meurtre aggravé — Peine',
     question: 'Le meurtre aggravé (221-2/221-3/221-4) est puni de :',
     options: [
@@ -2594,7 +2594,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // PROVOCATION / EXEMPTION / RÉDUCTION (MEURTRE & EMPOISONNEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation — Assassinat/Empoisonnement',
     question:
         'Le fait de faire des offres/promesses/dons pour faire commettre un assassinat ou un empoisonnement non commis ni tenté est :',
@@ -2608,7 +2608,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours vise l’« instigateur » : infraction autonome si pas de crime/tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Exemption — Tentative',
     question:
         'Une personne ayant tenté un meurtre ou un empoisonnement peut être exempte de peine si :',
@@ -2621,7 +2621,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours cite l’exemption spécifique (221-5-3 al.1 CP).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réduction de peine — Meurtre',
     question:
         'Pour le meurtre, la peine peut être réduite des deux tiers si l’auteur/complice :',
@@ -2640,7 +2640,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // EMPOISONNEMENT — art. 221-5 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Définition',
     question: 'L’empoisonnement est :',
     options: [
@@ -2654,7 +2654,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours définit l’empoisonnement par emploi/administration de substances mortifères.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Fondement',
     question: 'L’empoisonnement est défini et réprimé par :',
     options: [
@@ -2666,7 +2666,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours indique l’article 221-5 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Acte positif',
     question: 'L’empoisonnement est une infraction :',
     options: [
@@ -2678,7 +2678,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise qu’une simple abstention ne suffit pas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Emploi vs Administration',
     question: 'Dans le cours, « administrer » désigne :',
     options: [
@@ -2691,7 +2691,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'L’administration vise l’action directe : ingérer, injecter, inoculer…',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Emploi vs Administration',
     question: 'Dans le cours, « emploi » désigne :',
     options: [
@@ -2705,7 +2705,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'L’emploi est en amont : ex. poison mélangé au plat / mise à disposition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime',
     question: 'L’empoisonnement vise :',
     options: ['Une personne humaine', 'Un animal', 'Un objet'],
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que l’empoisonnement ne s’applique pas à un animal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Victime indéterminée',
     question: 'L’empoisonnement est constitué même si la victime est :',
     options: [
@@ -2727,7 +2727,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours admet la victime indéterminée (ex : contamination d’un puits).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Substance',
     question: 'Une « substance de nature à entraîner la mort » :',
     options: [
@@ -2740,7 +2740,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique : peut entraîner la mort, pas nécessairement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Résultat',
     question: 'L’empoisonnement est une infraction :',
     options: [
@@ -2753,7 +2753,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le crime est réalisé du seul fait de l’administration, quelles qu’en soient les suites.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Élément moral',
     question: 'Pour caractériser l’empoisonnement, il faut :',
     options: [
@@ -2767,7 +2767,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que la seule connaissance ne suffit pas : intention de tuer requise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Tentative',
     question:
         'Pour l’empoisonnement, la frontière tentative/consommé se situe :',
@@ -2781,7 +2781,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours place la consommation dès que la substance pénètre dans l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Commencement d’exécution',
     question:
         'Le commencement d’exécution (tentative) est retenu notamment lorsque :',
@@ -2795,7 +2795,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que la tentative peut commencer dès la présentation/mise à disposition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Complicité',
     question: 'La complicité d’empoisonnement est :',
     options: ['Punissable (121-6 et 121-7 CP)', 'Exclue', 'Uniquement civile'],
@@ -2803,7 +2803,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours rappelle la complicité punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Provocation',
     question:
         'La provocation à commettre un empoisonnement non commis ni tenté (offres/promesses) est :',
@@ -2817,7 +2817,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours vise l’« instigateur » : infraction autonome en l’absence de crime/tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement — Peine',
     question: 'L’empoisonnement simple (art. 221-5 CP) est puni de :',
     options: [
@@ -2830,7 +2830,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique 30 ans de réclusion avec période de sûreté pour la forme simple.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Empoisonnement aggravé — Peine',
     question: 'L’empoisonnement aggravé est puni de :',
     options: [
@@ -2846,7 +2846,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // VIOLENCES AVEC ARME SUR D.A.P / SP / TRANSPORT — art. 222-14-1
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Fondement',
     question:
         'Les violences avec arme sur personne dépositaire de l’autorité publique (bande organisée ou guet-apens) sont définies par :',
@@ -2860,7 +2860,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise que l’article 222-14-1 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Condition alternative',
     question:
         'Pour l’article 222-14-1, la condition « bande organisée ou guet-apens » est :',
@@ -2873,7 +2873,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours précise que les deux conditions sont alternatives.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Bande organisée',
     question: 'La bande organisée (132-71 CP) suppose :',
     options: [
@@ -2887,7 +2887,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle la définition de l’article 132-71 CP (préparation + faits matériels).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Guet-apens',
     question: 'Le guet-apens se caractérise par :',
     options: [
@@ -2901,7 +2901,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique l’attente en un lieu déterminé, créant l’effet de surprise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Arme',
     question: 'Pour 222-14-1, les violences doivent être commises :',
     options: [
@@ -2914,7 +2914,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours vise l’usage ou la menace d’une arme, quelle qu’elle soit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Victimes visées',
     question:
         'Parmi les victimes visées explicitement par 222-14-1, on trouve :',
@@ -2929,7 +2929,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours énumère ces catégories parmi les victimes protégées par 222-14-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Dépositaire A.P.',
     question: 'Une personne dépositaire de l’autorité publique est notamment :',
     options: [
@@ -2943,7 +2943,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours donne la définition : pouvoir de décision/contrainte investi par délégation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Autres victimes',
     question: 'Sont aussi visés par 222-14-1 :',
     options: [
@@ -2957,7 +2957,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne explicitement les sapeurs-pompiers et agents de transport public.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Proches',
     question: 'L’article 222-14-1 vise aussi les violences commises contre :',
     options: [
@@ -2971,7 +2971,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours étend la protection aux proches vivant habituellement au domicile, en raison des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Contexte',
     question: 'L’infraction doit être commise :',
     options: [
@@ -2984,7 +2984,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours liste les trois hypothèses : exercice / à l’occasion / en raison.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Résultat',
     question: 'Le texte 222-14-1 distingue notamment selon que les violences :',
     options: [
@@ -2998,7 +2998,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours présente les 4 niveaux de résultat retenus par 222-14-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — ITT',
     question:
         'L’ITT, à la demande de la victime ou du poursuivi, est constatée par :',
@@ -3008,7 +3008,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise la constatation par médecin expert sur demande.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Élément moral',
     question: 'Pour 222-14-1, l’élément moral suppose :',
     options: [
@@ -3022,7 +3022,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle la conscience + la volonté de violences sur une victime visée par la loi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Aggravantes',
     question:
         'Le cours indique, pour 222-14-1, des circonstances aggravantes :',
@@ -3036,7 +3036,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours mentionne : « Aucune » circonstance aggravante additionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Tentative',
     question: 'La tentative des violences délictuelles 222-14-1 est :',
     options: [
@@ -3049,7 +3049,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique que les textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Complicité',
     question: 'La complicité pour 222-14-1 est :',
     options: ['Punissable', 'Exclue', 'Uniquement civile'],
@@ -3058,7 +3058,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours précise la complicité punissable (121-6/121-7) et cohérente avec bande organisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT 0 à 8 jours)',
     question: 'Les violences (ITT 0 à 8 jours) de 222-14-1 sont punies de :',
     options: [
@@ -3070,7 +3070,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours indique 10 ans et 150 000 € pour ITT 0 à 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (ITT > 8 jours)',
     question: 'Les violences (ITT > 8 jours) de 222-14-1 sont punies de :',
     options: [
@@ -3082,7 +3082,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
     explanation: 'Le cours prévoit 15 ans de réclusion pour ITT > 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (Infirmité)',
     question:
         'Les violences ayant entraîné mutilation/infirmité permanente (222-14-1) sont punies de :',
@@ -3096,7 +3096,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours indique 20 ans de réclusion en cas de mutilation/infirmité permanente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences 222-14-1 — Peine (Mort)',
     question:
         'Les violences ayant entraîné la mort sans intention de la donner (222-14-1) sont punies de :',
@@ -3114,7 +3114,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
   // =========================================================
   // QUESTIONS "CONCOURS" — PIÈGES & DISTINCTIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Meurtre vs Omission',
     question: 'Un comportement négatif (privation de soins) constitue :',
     options: [
@@ -3128,7 +3128,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours exclut l’omission du meurtre : d’autres infractions peuvent s’appliquer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Empoisonnement (intention)',
     question:
         'Si l’auteur sait que la substance est mortifère mais n’a pas l’intention de tuer :',
@@ -3142,7 +3142,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Le cours rappelle que l’empoisonnement exige aussi l’intention de donner la mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Empoisonnement (consommation)',
     question: 'L’empoisonnement est consommé :',
     options: [
@@ -3156,7 +3156,7 @@ final List<QuizQuestion> questionAtteinteVolontaire = [
         'Infraction formelle : consommation dès que la substance est introduite dans l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-1 (structure)',
     question: 'Pour retenir 222-14-1, il faut notamment :',
     options: [
@@ -3526,7 +3526,7 @@ class _QuizAtteinteVolontaireState extends State<QuizAtteinteVolontaire>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3729,7 +3729,7 @@ class _QuizAtteinteVolontaireState extends State<QuizAtteinteVolontaire>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3912,7 +3912,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4445,10 +4444,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4819,7 +4819,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4860,9 +4860,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

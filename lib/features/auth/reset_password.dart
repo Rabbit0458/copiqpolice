@@ -2105,7 +2105,6 @@ class _CountdownPill extends StatelessWidget {
   final bool enabledShine;
 
   const _CountdownPill({
-    super.key,
     required this.countdown,
     required this.progress,
     required this.enabledShine,
@@ -2180,7 +2179,7 @@ class _CountdownPill extends StatelessWidget {
 }
 
 class _ReadyPill extends StatelessWidget {
-  const _ReadyPill({super.key});
+  const _ReadyPill();
 
   @override
   Widget build(BuildContext context) {

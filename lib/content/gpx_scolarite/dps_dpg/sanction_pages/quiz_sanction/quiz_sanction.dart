@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 
 final List<QuizQuestion> questionGPPluraliteInfractions = [
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La réitération d’infractions est définie comme :',
     options: [
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-16-7 al. 1 du code pénal définit la réitération comme la commission d’une nouvelle infraction après une condamnation définitive, sans remplir les conditions de la récidive légale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Classification légale des peines (généralités)',
     question:
         'La classification tripartite des infractions (crimes, délits, contraventions) est commandée par :',
@@ -127,7 +127,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : le code pénal établit une échelle des peines qui commande la classification tripartite des infractions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Classification légale des peines (généralités)',
     question: 'L’échelle des peines figure notamment :',
     options: [
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite expressément ces ensembles d’articles du code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Classification légale des peines (généralités)',
     question:
         'La classification légale des peines sert principalement à déterminer :',
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES CRIMINELLES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Une peine criminelle principale peut être :',
     options: [
@@ -172,7 +172,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : en matière criminelle, les peines principales sont la réclusion ou la détention criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Les peines principales en matière criminelle comprennent :',
     options: [
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours liste la perpétuité comme peine principale criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question:
         'Le maximum de réclusion/détention criminelle temporaire listé est :',
@@ -194,7 +194,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : 30 ans au plus (puis 20, puis 15).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'La réclusion criminelle est applicable :',
     options: [
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la réclusion s’applique aux crimes de droit commun.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'La détention criminelle est applicable :',
     options: [
@@ -219,7 +219,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : la détention s’applique aux crimes politiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question:
         'Le juge peut prononcer une durée inférieure à celles mentionnées à l’art. 131-1 C.P., mais la durée doit être au moins :',
@@ -229,7 +229,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise : la durée de la réclusion ou de la détention doit être de 10 ans au moins.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Une peine d’amende en matière criminelle est possible :',
     options: [
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’amende peut s’ajouter uniquement si le texte la prévoit expressément.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Les peines complémentaires en matière criminelle :',
     options: [
@@ -255,7 +255,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines complémentaires prévues à l’art. 131-10 C.P., spécialement prévues par le texte réprimant l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question:
         'Les peines complémentaires applicables aux personnes physiques sont prévues notamment à :',
@@ -273,7 +273,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES CORRECTIONNELLES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'Les peines correctionnelles sont énumérées à :',
     options: [
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les peines correctionnelles sont énumérées à l’article 131-3 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'La peine principale correctionnelle peut être :',
     options: [
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : en matière correctionnelle, la peine principale est notamment l’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question:
         'L’échelle de l’emprisonnement correctionnel comporte, selon le cours :',
@@ -309,7 +309,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’emprisonnement comporte une échelle comprenant 8 degrés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question:
         'Parmi ces durées, laquelle figure dans l’échelle des 8 degrés de l’emprisonnement correctionnel ?',
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite : 10, 7, 5, 3, 2, 1 an, 6 mois, 2 mois (au plus).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'L’emprisonnement correctionnel peut faire l’objet :',
     options: [
@@ -331,7 +331,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise ces possibilités.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'Le montant minimum de l’amende correctionnelle est :',
     options: ['3 750 €', '1 500 €', '38 €'],
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES ALTERNATIVES (DÉLITS)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'La détention à domicile sous surveillance électronique (DDSE) est prévue par :',
@@ -356,7 +356,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : DDSE (15 jours à 6 mois) — art. 131-4-1 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'La DDSE (détention à domicile sous surveillance électronique) doit durer :',
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : durée comprise entre 15 jours et 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'La DDSE ne peut pas excéder :',
     options: [
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la DDSE s’exécute sans excéder l’emprisonnement encouru.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'La peine de jour-amende est prévue à :',
     options: [
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : jour-amende à la place de l’amende si le délit est puni d’emprisonnement (art. 131-5 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'Les peines privatives ou restrictives de droits (délits) sont prévues à :',
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines privatives ou restrictives de droits prévues à l’art. 131-6 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'Le travail d’intérêt général (TIG) peut être prononcé :',
     options: [
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : TIG à la place de la peine d’emprisonnement (art. 131-8 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'Le TIG peut durer, selon le cours :',
     options: [
@@ -434,7 +434,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : TIG pour une durée de 20 à 400 heures.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'Les peines alternatives (délits) figurent dans le texte réprimant l’infraction :',
@@ -448,7 +448,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elles ne figurent pas dans le texte d’incrimination, elles sont prévues par des dispositions générales.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'Le juge peut décider de substituer des peines alternatives :',
     options: [
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — STAGE & SANCTION-RÉPARATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La peine de stage est prévue à :',
     options: [
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : peine de stage (art. 131-5-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La peine de stage consiste principalement :',
     options: [
@@ -491,7 +491,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours définit la peine de stage : obligation d’accomplir un stage (≤ 1 mois) dont les modalités sont fixées par la juridiction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La durée maximale d’un stage est :',
     options: ['Un mois', 'Six mois', 'Un an'],
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : durée ne pouvant excéder un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La peine de sanction-réparation est prévue à :',
     options: [
@@ -511,7 +511,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : sanction-réparation (art. 131-8-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La sanction-réparation consiste :',
     options: [
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : obligation de procéder à l’indemnisation du préjudice de la victime dans le délai et selon les modalités fixées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'Le stage et la sanction-réparation peuvent être prononcés :',
     options: [
@@ -542,7 +542,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES CONTRAVENTIONNELLES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question: 'Les peines contraventionnelles sont prévues à :',
     options: [
@@ -555,7 +555,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines contraventionnelles prévues à l’article 131-12 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Constituent des contraventions les infractions punies d’une amende n’excédant pas :',
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 131-13 C.P. — amende n’excédant pas 3 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 1ère classe est :',
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : 38 € au plus pour les contraventions de 1ère classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 2ème classe est :',
@@ -584,7 +584,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : 150 € au plus pour les contraventions de 2ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 3ème classe est :',
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : 450 € au plus pour les contraventions de 3ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 4ème classe est :',
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : 750 € au plus pour les contraventions de 4ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 5ème classe est :',
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : 1 500 € au plus pour la 5ème classe, porté à 3 000 € en cas de récidive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Les peines alternatives en matière contraventionnelle (personnes physiques) sont prévues :',
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines alternatives uniquement pour la 5ème classe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Les peines alternatives pour contraventions de 5ème classe consistent en :',
@@ -646,7 +646,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines privatives ou restrictives de droits prévues à l’art. 131-14 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Les peines complémentaires contraventionnelles (personnes physiques) sont listées notamment aux :',
@@ -660,7 +660,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines complémentaires listées aux art. 131-16 et 131-17 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le juge peut prononcer les peines complémentaires contraventionnelles :',
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : le juge peut les prononcer soit en plus, soit à titre principal à la place de l’amende.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'La sanction-réparation en contravention (personnes physiques) est prévue :',
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : sanction-réparation uniquement pour la 5ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'La sanction-réparation contraventionnelle (5ème classe) peut être prononcée :',
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle peut être prononcée à la place ou en même temps que l’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question: 'La sanction-réparation contraventionnelle est prévue à :',
     options: [
@@ -719,7 +719,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — PEINES (GÉNÉRAL)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (généralités)',
     question:
         'La répression applicable aux personnes morales figure aux articles :',
@@ -733,7 +733,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la répression des personnes morales figure aux art. 131-37 à 131-49 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (généralités)',
     question:
         'Les peines criminelles et correctionnelles encourues par les personnes morales figurent à :',
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : elles figurent à l’article 131-37 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'La sanction — Personnes morales (peines criminelles/correctionnelles)',
     question:
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : amende + (si la loi le prévoit) peines de l’art. 131-39 et 131-39-2, et en correctionnel la sanction-réparation (131-39-1).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'La sanction — Personnes morales (peines criminelles/correctionnelles)',
     question:
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : en matière correctionnelle, la personne morale encourt la sanction-réparation prévue à l’art. 131-39-1 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (amende)',
     question: 'Le taux maximum de l’amende des personnes morales est :',
     options: [
@@ -789,7 +789,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : art. 131-38 C.P. — maximum = quintuple du maximum prévu pour les personnes physiques.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (amende)',
     question:
         'Pour déterminer le maximum d’amende encouru par une personne morale, il faut :',
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : on multiplie par cinq le maximum prévu pour la personne physique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (amende)',
     question:
         'Si un crime ne prévoit aucune amende pour les personnes physiques, l’amende encourue par la personne morale est :',
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : en présence d’un crime sans amende pour les personnes physiques, amende pour la personne morale = 1 000 000 €.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Les peines contraventionnelles encourues par les personnes morales sont énoncées à :',
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines contraventionnelles des personnes morales — art. 131-40 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Pour les contraventions de 5ème classe, les personnes morales peuvent encourir :',
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : art. 131-42 (droits) + art. 131-44-1 (sanction-réparation).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Les peines complémentaires des personnes morales en matière contraventionnelle figurent à :',
@@ -856,7 +856,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : peines complémentaires des personnes morales (contraventions) — art. 131-43 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Les peines complémentaires des personnes morales peuvent être prononcées :',
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CLASSIFICATION DES MESURES DE SÛRETÉ — GÉNÉRALITÉS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (généralités)',
     question: 'Le but principal d’une mesure de sûreté est :',
     options: [
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : but préventif en neutralisant, surveillant ou traitant les individus dangereux.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (généralités)',
     question: 'Les mesures de sûreté visent notamment à :',
     options: [
@@ -901,7 +901,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : neutralisation / surveillance / traitement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (généralités)',
     question:
         'Les mesures de sûreté font l’objet d’un titre unique et complet dans le code pénal :',
@@ -919,7 +919,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SÛRETÉ CURATIVES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question: 'Les mesures de sûreté curatives concernent essentiellement :',
     options: [
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : mesures curatives = alcooliques et toxicomanes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question:
         'Dans le cadre du contrôle judiciaire, l’obligation de se soumettre à des soins est prévue par :',
@@ -945,7 +945,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : seul l’art. 138 10° C.P.P. prévoit cette obligation (traitement/soins, désintoxication).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question:
         'L’obligation de soins dans le contrôle judiciaire vise notamment :',
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : mesures de traitement/soins, notamment aux fins de désintoxication.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question:
         'Le législateur a mis en place un système donnant la priorité aux :',
@@ -977,7 +977,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SURVEILLANCE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire est prévu aux articles :',
     options: [
@@ -990,7 +990,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : suivi socio-judiciaire — art. 131-36-1 à 131-36-8 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire oblige le condamné à se soumettre :',
     options: [
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : sous le contrôle du juge de l’application des peines, surveillance et assistance pendant une durée fixée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire concerne notamment des infractions :',
     options: [
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : infractions de nature sexuelle ou des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire peut être assorti :',
     options: [
@@ -1029,7 +1029,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : injonction de soins possible si bénéfique au condamné.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'Le suivi socio-judiciaire peut être assorti d’un placement sous surveillance électronique mobile :',
@@ -1044,7 +1044,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : PSEM mobile possible, décidé par la juridiction ou ultérieurement par le JAP.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire des personnes dangereuses est prévue à :',
@@ -1057,7 +1057,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : surveillance judiciaire — art. 723-29 C.P.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire des personnes dangereuses a pour finalité :',
@@ -1071,7 +1071,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : uniquement envisageable aux fins de prévenir la récidive au risque avéré.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire peut viser les auteurs condamnés à une peine privative de liberté d’une durée :',
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : >=7 ans si le suivi socio-judiciaire était encouru mais n’a pas été prononcé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire peut aussi viser une peine privative de liberté :',
@@ -1100,7 +1100,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : >=5 ans si crime/délit commis une nouvelle fois en état de récidive légale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Dans son contenu, la surveillance judiciaire ressemble :',
     options: [
@@ -1116,7 +1116,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES PORTANT ATTEINTE À LA LIBERTÉ — MINEURS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'En matière de mineurs, le principe fondamental affirmé est :',
     options: [
@@ -1128,7 +1128,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : le CJPM érige ce principe en fondamental.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question:
         'La mesure éducative judiciaire provisoire (M.E.J.P.) est prévue aux articles :',
@@ -1141,7 +1141,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : MEJP — art. L323-1 à L323-3 CJPM.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La M.E.J.P. peut être prise :',
     options: [
@@ -1155,7 +1155,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle peut être prise à tout moment avant la sanction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La durée de la M.E.J.P. est :',
     options: [
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : durée d’un an renouvelable (art. L432-2 CJPM).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La M.E.J.P. est modulable :',
     options: [
@@ -1179,7 +1179,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : modulable selon besoins/évolution.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La M.E.J.P. peut s’accompagner d’une M.J.I.E., qui est :',
     options: [
@@ -1193,7 +1193,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : MJIE = évaluation approfondie (éducation, santé, scolarité, famille…).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question:
         'Avant jugement, un mineur peut, sous conditions, faire l’objet :',
@@ -1208,7 +1208,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : possibilité d’ARSE ou placement en détention provisoire sous conditions.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La loi du 25 février 2008 :',
     options: [
@@ -1225,7 +1225,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES PORTANT ATTEINTE À LA LIBERTÉ — MAJEURS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de séjour :',
     options: [
@@ -1239,7 +1239,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : interdiction de séjour = défense de paraître + surveillance/assistance (art. 131-31 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de séjour est prévue à :',
     options: [
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : interdiction de séjour — art. 131-31 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de manifester :',
     options: [
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : défense de manifester sur la voie publique dans certains lieux (art. 131-32-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question:
         'La durée maximale de l’interdiction de manifester (selon le cours) est :',
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : durée ne pouvant excéder trois ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de manifester est prévue à :',
     options: [
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 131-32-1 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (étrangers)',
     question:
         'Parmi ces mesures, laquelle concerne explicitement les étrangers (selon le cours) ?',
@@ -1295,7 +1295,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : mesures concernant les étrangers : interdiction du territoire, expulsion, assignation à résidence, OQTF, rétention administrative…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (étrangers)',
     question: 'Parmi les mesures concernant les étrangers, on trouve :',
     options: [
@@ -1308,7 +1308,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’expulsion parmi les mesures concernant les étrangers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (étrangers)',
     question: 'L’obligation de quitter le territoire (OQTF) est :',
     options: [
@@ -1325,7 +1325,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SÛRETÉ — STAGES / INTERDICTIONS / RESTRICTIONS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'L’obligation d’accomplir un stage est prévue à :',
     options: [
@@ -1338,7 +1338,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : obligation d’accomplir un stage (art. 131-5-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Le but du stage (art. 131-5-1 C.P.) est :',
     options: [
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : prévention de la réitération.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1363,7 +1363,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : stage de citoyenneté fait partie des stages possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1388,7 +1388,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1401,7 +1401,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite dans la liste.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1414,7 +1414,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite dans la liste.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1426,7 +1426,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : stage de responsabilité parentale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1439,7 +1439,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1452,7 +1452,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1469,7 +1469,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SÛRETÉ — INTERDICTIONS & RESTRICTIONS (ART. 131-6 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question: 'Les interdictions et restrictions sont prévues à :',
     options: [
@@ -1481,7 +1481,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : interdictions et restrictions — art. 131-6 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1495,7 +1495,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : suspension/annulation du permis de conduire est listée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1508,7 +1508,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours le cite explicitement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : confiscation/immobilisation de véhicules.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite cette interdiction/confiscation.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1543,7 +1543,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : retrait du permis de chasser est listé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1556,7 +1556,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite cette interdiction parmi les restrictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1574,7 +1574,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // HOSPITALISATION COMPLÈTE (TROUBLE MENTAL)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (trouble mental)',
     question:
         'Après une décision d’irresponsabilité pénale pour cause de trouble mental, une juridiction peut prononcer :',
@@ -1589,7 +1589,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : hospitalisation complète possible par ordonnance motivée.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (trouble mental)',
     question:
         'L’hospitalisation complète en soins psychiatriques (dans ce cadre) est prévue à :',
@@ -1607,7 +1607,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉTENTION & SURVEILLANCE DE SÛRETÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'La rétention et la surveillance de sûreté sont prévues aux articles :',
@@ -1621,7 +1621,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : rétention/surveillance de sûreté — art. 706-53-13 à 706-53-22 C.P.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question: 'La rétention consiste :',
     options: [
@@ -1634,7 +1634,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours définit la rétention de sûreté ainsi.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'La rétention de sûreté s’applique seulement si la peine prononcée est :',
@@ -1647,7 +1647,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : condition n°1 = peine >= 15 ans.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question: 'Une condition de la rétention de sûreté est que :',
     options: [
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : condition n°2 = crimes précis.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'Une condition de la rétention de sûreté est que le condamné présente :',
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : condition n°3 = dangerosité + probabilité très élevée de récidive.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'À l’issue de la rétention de sûreté, la personne peut faire l’objet :',
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : surveillance de sûreté possible après la rétention.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question: 'La surveillance de sûreté peut être renouvelée pour une durée :',
     options: ['De deux ans', 'De cinq ans', 'D’un mois'],
@@ -1700,7 +1700,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PLACEMENT SOUS SURVEILLANCE ÉLECTRONIQUE (763-10 à 763-14 C.P.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question:
         'Le placement sous surveillance électronique (bracelet GPS) est prévu aux articles :',
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : placement sous surveillance électronique — art. 763-10 à 763-14 C.P.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question: 'Le but du bracelet GPS après libération est principalement :',
     options: [
@@ -1728,7 +1728,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : renforcer la prévention de la récidive des infractions les plus graves.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question: 'Le bracelet GPS permet notamment :',
     options: [
@@ -1740,7 +1740,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : connaître déplacements/localisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question: 'Le placement sous surveillance électronique peut être :',
     options: [
@@ -1754,7 +1754,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : nouvelle obligation du SSJ, peut aussi être prononcé en libération conditionnelle ou dans la surveillance des personnes dangereuses.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -1773,7 +1773,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LA PRÉMÉDITATION (art. 132-72 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est définie comme :',
     options: [
@@ -1787,7 +1787,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend la définition légale : la préméditation est un dessein formé avant l’action.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est définie par :',
     options: [
@@ -1800,7 +1800,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’article 132-72 du code pénal définit la préméditation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Selon le cours, la préméditation traduit principalement :',
     options: [
@@ -1813,7 +1813,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours parle d’une résolution d’agir marquant une volonté mûre et réfléchie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'Pour matérialiser la préméditation, il faut notamment une antériorité de la résolution :',
@@ -1827,7 +1827,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’antériorité à l’acte est nécessaire pour matérialiser la préméditation (Cass. crim., 9 janv. 1990).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps lié à la préméditation se situe entre :',
     options: [
@@ -1840,7 +1840,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours situe l’intervalle entre la décision de commettre l’acte et son exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Un acte prémédité est un acte :',
     options: [
@@ -1853,7 +1853,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’acte prémédité est médité et préparé et ne peut pas faire suite à une pulsion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Selon le cours, la préméditation vise indifféremment :',
     options: [
@@ -1866,7 +1866,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette circonstance vise indifféremment une infraction commise ou tentée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'D’après la jurisprudence citée, la préméditation doit être recherchée :',
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite : “Elle doit être recherchée dans les faits qui ont accompagné l’acte de l’auteur principal” (Cass. crim., 4 sept. 1976).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'Parmi les éléments suivants, lequel peut illustrer la préméditation selon le cours ?',
@@ -1894,7 +1894,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne des exemples : actes préparatoires, menaces, confidences, nature complexe de l’acte, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'Dans le champ d’application, le meurtre commis avec préméditation est qualifié :',
@@ -1912,7 +1912,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE CONJOINT / CONCUBIN / PARTENAIRE PACS (art. 132-80 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’article 132-80 du code pénal définit cette circonstance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question: 'Cette circonstance aggravante est, selon le cours :',
@@ -1941,7 +1941,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle dont les effets ne s’étendent pas aux coauteurs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -1957,7 +1957,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que cette circonstance vise à réprimer plus sévèrement les infractions commises au sein du couple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -1972,7 +1972,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le texte vise expressément la circonstance “y compris lorsqu’ils ne cohabitent pas”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -1987,7 +1987,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend le second alinéa : elle vaut aussi pour l’ancien conjoint/concubin/partenaire PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -2002,7 +2002,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que, pour l’ancien conjoint/concubin/partenaire, il faut que l’infraction soit commise en raison des relations passées : c’est le mobile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question: 'La définition du concubinage (art. 515-8 C. civ.) renvoie à :',
@@ -2016,7 +2016,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’art. 515-8 du code civil : union de fait, vie commune, stabilité et continuité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -2031,7 +2031,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’état de concubinage est établi dès lors qu’il est prouvé qu’il y a communauté de vie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question: 'Le pacte civil de solidarité (art. 515-1 C. civ.) est :',
@@ -2050,7 +2050,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE HOMOPHOBE / SEXISTE / TRANSPHOBE (art. 132-77 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question:
@@ -2065,7 +2065,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’article 132-77 du code pénal définit le caractère homophobe ou sexiste.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question: 'Cette circonstance aggravante est, selon le cours :',
@@ -2075,7 +2075,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette circonstance est réelle et s’étend à tous les auteurs, coauteurs et complices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question:
@@ -2090,7 +2090,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours énumère ces éléments comme modes de matérialisation du mobile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question: 'Cette circonstance vise notamment les personnes :',
@@ -2104,7 +2104,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la circonstance vise aussi les personnes transsexuelles, transgenres ou travesties.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question:
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE RACISTE / XÉNOPHOBE / ANTISÉMITE (art. 132-76 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Le caractère raciste d’une infraction est défini par :',
     options: [
@@ -2137,7 +2137,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’article 132-76 du code pénal définit le caractère raciste.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Selon le cours, cette circonstance aggravante est :',
     options: [
@@ -2150,7 +2150,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'Le crime ou délit est aggravé notamment s’il est précédé, accompagné ou suivi de :',
@@ -2164,7 +2164,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend cette liste d’éléments objectifs permettant de caractériser l’aggravation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'L’article 132-76 vise notamment l’appartenance (vraie ou supposée) à :',
@@ -2179,7 +2179,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours liste ces quatre catégories (prétendue race, ethnie, nation, religion).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'Peu importe que l’appartenance soit vraie : la circonstance peut jouer si elle est :',
@@ -2193,7 +2193,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’auteur peut agir à tort : l’appartenance/non-appartenance peut être vraie ou supposée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'Dans l’exemple de la circulaire du 20 avril 2017 cité par le cours, l’aggravation peut s’appliquer même sans propos injurieux si :',
@@ -2212,7 +2212,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LE GUET-APENS (art. 132-71-1 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens consiste dans le fait :',
     options: [
@@ -2226,7 +2226,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend la définition légale du guet-apens (art. 132-71-1 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est, selon le cours :',
     options: [
@@ -2239,7 +2239,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question:
         'Le cours précise que le guet-apens est proche de l’embuscade, mais que l’embuscade :',
@@ -2253,7 +2253,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’embuscade (art. 222-15-1 C.P.) est une infraction autonome, alors que le guet-apens est une circonstance aggravante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question:
         'Concernant l’attente (durée, nature du lieu), le cours indique que le législateur :',
@@ -2271,7 +2271,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PORT OU USAGE D’UNE ARME (art. 132-75 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme (au sens de l’art. 132-75 C.P.) est :',
     options: [
@@ -2284,7 +2284,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend l’alinéa 1 : “est une arme tout objet conçu pour tuer ou blesser”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Un objet non conçu pour tuer/blesser peut être assimilé à une arme s’il est :',
@@ -2298,7 +2298,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours vise les armes “par destination” : objets dangereux assimilés s’ils sont utilisés/destinés à tuer, blesser ou menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice est assimilée à une arme si elle :',
     options: [
@@ -2312,7 +2312,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il faut une ressemblance créant confusion et une utilisation/destination de menace de tuer ou blesser.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'L’utilisation d’un animal pour tuer, blesser ou menacer est :',
     options: [
@@ -2325,7 +2325,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique expressément que l’utilisation d’un animal est assimilée à l’usage d’une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Pour l’“usage et menace d’une arme”, il ne suffit pas que l’auteur soit porteur : il faut qu’il l’ait utilisée pour :',
@@ -2339,7 +2339,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le port ne suffit pas : il faut une utilisation/menace pour tuer, blesser ou menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Le “port d’une arme” comme circonstance aggravante est caractérisé si l’auteur était porteur :',
@@ -2353,7 +2353,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le port suffit si l’arme est apparente ou cachée au moment des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Parmi les infractions suivantes, laquelle est citée dans le cours comme aggravée par l’usage ou la menace d’une arme ?',
@@ -2371,7 +2371,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // L’ESCALADE (art. 132-74 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est :',
     options: [
@@ -2385,7 +2385,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend la définition légale de l’escalade (art. 132-74 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est, selon le cours :',
     options: [
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question:
         'Pour caractériser l’escalade, il faut un endroit clos dont l’accès est normalement interdit par :',
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’un lieu clos interdit aux tiers par une clôture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question:
         'Le moyen utilisé pour l’escalade (échelle, corde, échafaudage, etc.) :',
@@ -2426,7 +2426,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que le moyen utilisé importe peu (prévu, improvisé, trouvé par hasard).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Selon le cours, l’escalade ne peut être réalisée que :',
     options: [
@@ -2443,7 +2443,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // INCAPACITÉ TOTALE DE TRAVAIL (I.T.T.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'L’I.T.T. (au sens pénal) mesure principalement :',
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’I.T.T. mesure la gravité des atteintes corporelles ou psychiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'L’I.T.T. ne doit pas être confondue avec :',
@@ -2472,7 +2472,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’I.T.T. pénale est différente de l’arrêt de travail en droit social.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question:
@@ -2483,7 +2483,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’une victime sans activité professionnelle peut se voir prescrire une I.T.T.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question:
@@ -2494,7 +2494,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’I.T.T. doit être totale pour constituer la circonstance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'Selon le cours, l’I.T.T. s’étend :',
@@ -2509,7 +2509,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’I.T.T. ne concerne pas seulement le travail mais toute l’activité courante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question:
@@ -2524,7 +2524,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours présente des paliers de durée, dont inférieur/égal à 8 jours et supérieur à 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'Concernant la preuve de l’I.T.T., le juge :',
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // UTILISATION D’UN MOYEN DE CRYPTOLOGIE (art. 132-79 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'L’utilisation d’un moyen de cryptologie est définie par :',
     options: [
@@ -2556,7 +2556,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’article 132-79 du code pénal définit cette circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'Cette circonstance aggravante est, selon le cours :',
     options: [
@@ -2569,7 +2569,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'Un moyen de cryptologie sert principalement à assurer :',
     options: [
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours explique que la cryptologie vise surtout la confidentialité, l’authentification ou l’intégrité des données.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'Selon le cours, l’article 132-79 est de portée :',
     options: [
@@ -2596,7 +2596,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’article 132-79 s’applique à tous les crimes et délits, commis ou tentés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question:
         'L’aggravation de l’article 132-79 ne s’applique pas à l’auteur/complice qui, à la demande des autorités, a :',
@@ -2611,7 +2611,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise l’exception : remise de la version en clair et des conventions secrètes nécessaires au déchiffrement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question:
         'Selon la jurisprudence citée (11 octobre 2020), le code de déverrouillage d’un téléphone peut constituer :',
@@ -2626,7 +2626,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite que le code de déverrouillage peut être une clé de déchiffrement si le téléphone embarque un moyen de cryptologie.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la grande majorité des décisions refusent de voir dans l’ivresse une cause légale d’exemption de peine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours souligne que l’usage volontaire de stupéfiants est illicite, contrairement à la consommation d’alcool, ce qui renforce l’approche.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -2672,7 +2672,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours renvoie à l’article L. 3354-1 du CSP qui impose aux OPJ/APJ de faire procéder à des vérifications en cas de crime, délit ou accident.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le texte cité précise que ces vérifications sont obligatoires dans tous les cas suivis de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il n’existe pas, dans ce passage, de procédure spéciale équivalente à celle de l’alcool pour les stupéfiants.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -2717,7 +2717,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // AVEC UTILISATION D’UN RÉSEAU DE COMMUNICATION ÉLECTRONIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -2732,7 +2732,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours retient expressément la diffusion de messages à destination d’un public non déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'La formule “public non déterminé” exclut :',
@@ -2746,7 +2746,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette formule exclut l’envoi d’un courrier électronique identique à plusieurs personnes identifiées.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -2761,7 +2761,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique expressément Internet et le réseau téléphonique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -2776,7 +2776,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours rappelle qu’il s’agit d’une circonstance aggravante réelle, dont les effets s’étendent à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -2795,7 +2795,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // DANS UN ÉTABLISSEMENT D’ENSEIGNEMENT / LOCAUX DE L’ADMINISTRATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question:
@@ -2810,7 +2810,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours explique qu’elle vise notamment le milieu scolaire, mais aussi les locaux de l’administration visés par le texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question:
@@ -2826,7 +2826,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite un arrêt de la chambre criminelle du 14 octobre 2020 limitant l’extension de la notion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question: 'Les faits peuvent être commis “dans” l’établissement :',
@@ -2841,7 +2841,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les faits peuvent être commis dans n’importe quelle partie de l’établissement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question: 'Pour les abords, les faits doivent être commis :',
@@ -2856,7 +2856,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours impose, pour les abords, le moment des entrées et sorties ou un temps très voisin.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question: 'Cette circonstance aggravante est :',
@@ -2874,7 +2874,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LA BANDE ORGANISÉE (ARTICLE 132-71 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Selon l’article 132-71 du code pénal, la bande organisée est :',
     options: [
@@ -2888,7 +2888,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'C’est la définition légale reprise dans le cours (article 132-71 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est qualifiée par le cours comme :',
     options: [
@@ -2901,7 +2901,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que c’est une circonstance aggravante réelle, s’étendant aux auteurs, coauteurs et complices.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'La bande organisée se distingue de l’association de malfaiteurs car l’association de malfaiteurs :',
@@ -2916,7 +2916,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours rappelle que l’association de malfaiteurs (450-1 C.P.) est autonome et peut être constituée au stade des actes préparatoires.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La “réunion” (au sens du cours) se caractérise plutôt par :',
     options: [
@@ -2929,7 +2929,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours oppose la réunion (fortuite/occasionnelle) à la bande organisée (plan concerté, organisation).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Selon le cours, la bande organisée suppose :',
     options: [
@@ -2942,7 +2942,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite la jurisprudence : la bande organisée suppose un plan concerté et des contacts préliminaires.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée suppose une certaine organisation avec :',
     options: [
@@ -2955,7 +2955,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours évoque une organisation structurée et hiérarchisée avec répartition des rôles.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'D’après la jurisprudence citée (8 juillet 2015), la seule constitution d’une équipe de malfaiteurs ne suffit pas si :',
@@ -2974,7 +2974,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LA MINORITÉ DE QUINZE ANS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La circonstance aggravante “sur un mineur de 15 ans” vise :',
     options: [
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la limite retenue est 15 ans accompli : quel que soit l’âge en dessous de 15 ans, l’aggravation peut jouer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'Pour déterminer l’âge, on retient :',
     options: [
@@ -3000,7 +3000,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que c’est l’âge au moment des faits qui doit être pris en considération (jurisprudence citée).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question:
         'Le calcul de l’âge “au moment des faits” se fait, selon le cours :',
@@ -3010,7 +3010,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite une jurisprudence indiquant que l’âge se calcule d’heure à heure.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question:
         'Concernant la minorité de quinze ans, le législateur exige que cet âge soit :',
@@ -3028,7 +3028,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LA MORT (AYANT ENTRAÎNÉ LA MORT SANS INTENTION DE LA DONNER)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question:
         'La circonstance aggravante “ayant entraîné la mort sans intention de la donner” suppose que :',
@@ -3043,7 +3043,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’infraction a entraîné la mort, sans intention homicide de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question: 'Pour retenir cette circonstance, il faut :',
     options: [
@@ -3056,7 +3056,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours mentionne la nécessité d’un lien de causalité entre l’acte et le décès.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question:
         'L’état de santé préexistant de la victime (même s’il a concouru au décès) rend la circonstance :',
@@ -3070,7 +3070,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la circonstance peut être retenue quel que soit l’état préexistant de la victime.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question: 'Cette circonstance aggravante est :',
     options: [
@@ -3087,7 +3087,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LA MUTILATION OU L’INFIRMITÉ PERMANENTE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Selon le cours, la mutilation correspond plutôt à :',
     options: [
@@ -3101,7 +3101,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend l’idée d’une atteinte irréversible à l’intégrité physique liée à la perte/ablation d’un membre ou partie externe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'L’infirmité permanente peut être :',
     options: [
@@ -3114,7 +3114,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que l’infirmité peut être physique mais aussi toucher les facultés mentales ou intellectuelles.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Pour l’infirmité, le critère central est son caractère :',
     options: ['Réversible', 'Irréversible / définitif', 'Hypothétique'],
@@ -3123,7 +3123,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours exige une infirmité irréversible ou définitive (jurisprudences citées).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question:
         'La preuve de la mutilation/infirmité permanente peut être rapportée notamment par :',
@@ -3141,7 +3141,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // LA PARTICULIÈRE VULNÉRABILITÉ DE LA VICTIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question: 'La particulière vulnérabilité doit être due à des causes :',
@@ -3155,7 +3155,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les causes sont limitatives et doivent résulter d’un état préexistant, non de la conséquence des faits.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question: 'Pour être retenue, la vulnérabilité doit être :',
@@ -3169,7 +3169,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours exige que la cause de vulnérabilité soit apparente (visible) ou connue (révélée) de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question: 'S’agissant de l’âge, le cours précise que :',
@@ -3184,7 +3184,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la minorité de 15 ans ne relève pas de cette vulnérabilité car elle fait l’objet d’une aggravation spécifique.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question:
@@ -3203,7 +3203,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ D’AUTEUR ABUSANT DE SON AUTORITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question:
         'La circonstance aggravante « par une personne qui abuse de l’autorité que lui confèrent ses fonctions » est :',
@@ -3217,7 +3217,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle dont les effets ne s’étendent pas aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question:
         'Cette circonstance vise les personnes disposant principalement :',
@@ -3231,7 +3231,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique qu’elle concerne les personnes ayant une autorité générale due aux fonctions exercées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question:
         'Les personnes concernées par cette circonstance sont notamment :',
@@ -3245,7 +3245,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite explicitement ces exemples de personnes ayant autorité sur la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Les fonctions exercées par l’auteur peuvent être :',
     options: [
@@ -3258,7 +3258,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les fonctions exercées peuvent être publiques ou privées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'L’aggravation est retenue lorsque l’auteur :',
     options: [
@@ -3276,7 +3276,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ D’AUTEUR ASCENDANT OU AYANT AUTORITÉ SUR LA VICTIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question:
@@ -3291,7 +3291,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle dont les effets ne s’étendent pas aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question: 'Sont considérés comme ascendants de la victime :',
@@ -3305,7 +3305,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours vise les père, mère et autres ascendants directs, légitimes, naturels ou adoptifs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question:
@@ -3320,7 +3320,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la circonstance peut s’appliquer s’ils exercent une autorité de fait sur la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question: 'L’autorité sur la victime peut être :',
@@ -3338,7 +3338,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ D’AUTEUR DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question:
@@ -3353,7 +3353,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question: 'Est dépositaire de l’autorité publique celui qui :',
@@ -3368,7 +3368,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend la définition jurisprudentielle de la qualité de dépositaire de l’autorité publique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question: 'Font notamment partie des dépositaires de l’autorité publique :',
@@ -3381,7 +3381,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite explicitement ces professions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question: 'La circonstance est retenue si les faits sont commis :',
@@ -3399,7 +3399,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME ASCENDANT DE L’AUTEUR
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime ascendant de l’auteur',
     question:
         'La qualité de victime ascendant de l’auteur est une circonstance aggravante :',
@@ -3409,7 +3409,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que cette circonstance est de nature personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime ascendant de l’auteur',
     question: 'Cette circonstance a été réintroduite après la suppression de :',
     options: [
@@ -3422,7 +3422,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette circonstance a été réintroduite après la suppression du parricide.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime ascendant de l’auteur',
     question: 'La filiation naturelle doit être :',
     options: ['Supposée', 'Légalement établie', 'Reconnaissable moralement'],
@@ -3435,7 +3435,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME CHARGÉE D’UNE MISSION DE SERVICE PUBLIC
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime chargée d’une mission de service public',
     question: 'Cette circonstance aggravante est :',
@@ -3445,7 +3445,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime chargée d’une mission de service public',
     question: 'Elle vise à protéger principalement :',
@@ -3459,7 +3459,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que cette circonstance accroît la protection due aux personnes exposées en raison de leur mission.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime chargée d’une mission de service public',
     question: 'La qualité de la victime doit être :',
@@ -3477,7 +3477,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Cette circonstance protège :',
@@ -3491,7 +3491,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la protection concerne la personne et, à travers elle, la fonction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Pour retenir cette circonstance, l’infraction doit être :',
@@ -3509,7 +3509,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME SE LIVRANT À LA PROSTITUTION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Cette circonstance aggravante a été créée par la loi du :',
@@ -3519,7 +3519,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette circonstance a été créée par la loi n°2016-444 du 13 avril 2016.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'La prostitution peut être retenue :',
@@ -3533,7 +3533,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’un acte unique de prostitution peut suffire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Les faits doivent avoir été commis :',
@@ -3551,7 +3551,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE TÉMOIN, VICTIME OU PARTIE CIVILE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin, victime ou partie civile',
     question: 'Cette circonstance vise principalement à protéger :',
     options: [
@@ -3564,7 +3564,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette circonstance vise à préserver l’administration de la justice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin, victime ou partie civile',
     question:
         'L’auteur peut agir avec une intention dite « préventive » pour :',
@@ -3578,7 +3578,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’intention préventive vise à empêcher plainte, dénonciation ou témoignage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin, victime ou partie civile',
     question:
         'Lorsque l’auteur agit par vengeance après une plainte ou une déposition, l’intention est dite :',
@@ -3591,7 +3591,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE VICTIME PARENTE D’UNE PERSONNE DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime parente d’un dépositaire de l’autorité publique',
     question: 'Cette circonstance aggravante est :',
@@ -3601,7 +3601,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette circonstance est réelle et s’étend à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime parente d’un dépositaire de l’autorité publique',
     question: 'Sont notamment protégés :',
@@ -3615,7 +3615,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours énumère précisément ces catégories de proches.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime parente d’un dépositaire de l’autorité publique',
     question: 'L’infraction doit avoir été commise :',
@@ -3632,7 +3632,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // GÉNÉRALITÉS — CIRCONSTANCES AGGRAVANTES (rappels)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance n’est aggravante que lorsque :',
     options: [
@@ -3645,7 +3645,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’une circonstance n’est aggravante que lorsque la loi le décide expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes sont énumérées par la loi :',
     options: [
@@ -3658,7 +3658,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la loi les énumère de manière limitative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante peut :',
     options: [
@@ -3671,7 +3671,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elle peut modifier la nature de la peine et, par conséquence, la nature de l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes “réelles” :',
     options: [
@@ -3684,7 +3684,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours oppose les réelles (matérialité) aux personnelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance “personnelle” :',
     options: [
@@ -3698,7 +3698,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : personnelles = liées à la personnalité/qualité de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Selon Cass. crim. 7 février 2007, une même circonstance peut :',
     options: [
@@ -3711,7 +3711,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite que rien ne s’oppose à ce qu’une même circonstance aggrave des crimes distincts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes dites “spéciales” :',
     options: [
@@ -3725,7 +3725,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elles ne valent que pour les infractions visées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'La doctrine ajoute parfois une 3e catégorie :',
     options: [
@@ -3742,7 +3742,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PRÉMÉDITATION (art. 132-72 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est :',
     options: [
@@ -3755,7 +3755,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition légale reprise au cours (art. 132-72 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est définie par :',
     options: [
@@ -3767,7 +3767,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Référence donnée par le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Elle traduit une volonté :',
     options: [
@@ -3779,7 +3779,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : résolution d’agir, volonté mûre et réfléchie.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Condition essentielle : la résolution doit être :',
     options: [
@@ -3791,7 +3791,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Antériorité nécessaire (Cass. crim., 9 janv. 1990).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps se situe entre :',
     options: [
@@ -3803,7 +3803,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : entre décision et exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Un acte prémédité est :',
     options: [
@@ -3815,7 +3815,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Non spontané, pas une pulsion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation vise :',
     options: [
@@ -3827,7 +3827,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : indifféremment commise ou tentée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Elle se matérialise par des faits situés :',
     options: [
@@ -3840,7 +3840,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours insiste sur les faits/circonstances précédant l’acte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Exemple de matérialisation :',
     options: [
@@ -3852,7 +3852,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Exemples cités par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La jurisprudence qualifie parfois la préméditation :',
     options: [
@@ -3864,7 +3864,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours mentionne cette hésitation jurisprudentielle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Le meurtre avec préméditation devient :',
     options: ['Un assassinat', 'Un homicide involontaire', 'Une contravention'],
@@ -3872,7 +3872,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Art. 221-3 al.1 : meurtre qualifié d’assassinat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Le champ d’application inclut notamment :',
     options: [
@@ -3888,7 +3888,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // GUET-APENS (art. 132-71-1 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens consiste à :',
     options: [
@@ -3901,7 +3901,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition de l’art. 132-71-1 reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Purement disciplinaire'],
@@ -3909,7 +3909,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une forme particulière de :',
     options: ['Préméditation', 'Récidive', 'Tentative'],
@@ -3917,7 +3917,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : forme particulière de préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Concernant la durée minimale de l’attente, le texte :',
     options: [
@@ -3929,7 +3929,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : notion large, pas de durée minimum.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'La qualité de la victime est :',
     options: [
@@ -3941,7 +3941,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : “toute personne quelle que soit sa qualité”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le but poursuivi est caractérisé par :',
     options: [
@@ -3954,7 +3954,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : actes préparatoires en relation avec l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens se distingue de l’embuscade car l’embuscade :',
     options: [
@@ -3967,7 +3967,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : embuscade = infraction autonome (même au stade préparatoire).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Champ d’application : guet-apens peut aggraver :',
     options: [
@@ -3983,7 +3983,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PORT / USAGE / MENACE D’UNE ARME (art. 132-75 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Selon l’art. 132-75, une arme est :',
     options: [
@@ -3995,7 +3995,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Arme par nature (alinéa 1).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Un objet du quotidien devient arme “par destination” s’il est :',
     options: [
@@ -4007,7 +4007,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Alinéa 2 : assimilation par destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice est assimilée si elle :',
     options: [
@@ -4019,7 +4019,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Alinéa 3 : ressemblance + menace/destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'L’utilisation d’un animal pour menacer est :',
     options: [
@@ -4031,7 +4031,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Alinéa 4 : animal assimilé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'La circonstance “arme” est :',
     options: ['Réelle', 'Personnelle', 'Uniquement mixte'],
@@ -4039,7 +4039,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour l’usage/menace, il faut que l’arme serve à :',
     options: ['Tuer, blesser ou menacer', 'Décorer', 'Travailler uniquement'],
@@ -4048,7 +4048,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : pas seulement porteur, usage pour tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour le “port”, il suffit que l’arme soit :',
     options: [
@@ -4060,7 +4060,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : port apparente ou cachée au moment des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice peut être considérée comme :',
     options: [
@@ -4073,7 +4073,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Cass. crim. 05/08/1992 citée : arme factice = apparente ou cachée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Exemple d’arme par nature :',
     options: [
@@ -4085,7 +4085,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite armes à feu/engins explosifs/incendiaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Exemple d’arme par destination :',
     options: [
@@ -4098,7 +4098,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Objets du quotidien assimilés s’ils sont utilisés pour tuer/blesser/menacer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Champ d’application : l’usage/menace d’arme peut aggraver :',
     options: [
@@ -4114,7 +4114,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // ESCALADE (art. 132-74 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est :',
     options: [
@@ -4127,7 +4127,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition légale (art. 132-74).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -4135,7 +4135,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Elle suppose un endroit :',
     options: ['Clos', 'Public sans clôture', 'Virtuel uniquement'],
@@ -4143,7 +4143,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Lieu clos dont l’accès est interdit par une clôture.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Le moyen utilisé :',
     options: [
@@ -4155,7 +4155,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : échelle, corde, échafaudage… peu importe.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade ne peut être réalisée que :',
     options: [
@@ -4167,7 +4167,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le texte : “s’introduire…”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Intrusion par une issue non destinée à servir d’entrée :',
     options: [
@@ -4179,7 +4179,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Champ d’application : l’escalade aggrave notamment :',
     options: [
@@ -4195,7 +4195,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // INCAPACITÉ TOTALE DE TRAVAIL (I.T.T.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale mesure :',
     options: [
@@ -4207,7 +4207,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale ne se confond pas avec :',
     options: [
@@ -4219,7 +4219,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours insiste sur la différence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Une personne sans emploi peut avoir une I.T.T. :',
     options: ['Oui', 'Non', 'Uniquement si elle est salariée'],
@@ -4227,7 +4227,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Enfant/retraité… possible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Pour la circonstance aggravante, l’incapacité doit être :',
     options: ['Totale', 'Partielle', 'Symbolique'],
@@ -4235,7 +4235,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : caractère total.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. s’étend :',
     options: [
@@ -4247,7 +4247,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Cass. crim. 7 mars 1967 citée : vie quotidienne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La durée se mesure par paliers, dont :',
     options: [
@@ -4259,7 +4259,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Paliers mentionnés au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Le juge :',
     options: [
@@ -4271,7 +4271,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : appréciation, certificats + experts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La preuve est rapportée par :',
     options: [
@@ -4283,7 +4283,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : preuve par la partie poursuivante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Un effort ménager possible n’exclut pas l’I.T.T. totale :',
     options: ['Vrai', 'Faux', 'Uniquement si l’auteur avoue'],
@@ -4296,7 +4296,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CRYPTOLOGIE (art. 132-79 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’utilisation d’un moyen de cryptologie est prévue par :',
     options: ['Art. 132-79 C.P.', 'Art. 132-72 C.P.', 'Art. 132-74 C.P.'],
@@ -4304,7 +4304,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Référence du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cette circonstance aggravante est :',
     options: ['Réelle', 'Personnelle', 'Uniquement disciplinaire'],
@@ -4312,7 +4312,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Le moyen de cryptologie sert à assurer :',
     options: [
@@ -4324,7 +4324,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition issue de la loi du 21 juin 2004 (art. 29) citée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Art. 132-79 s’applique :',
     options: [
@@ -4336,7 +4336,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Portée générale selon le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’exception d’application vaut si l’auteur/complice a remis :',
     options: [
@@ -4348,7 +4348,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Exception du texte : remise aux autorités.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question:
         'Selon Cass. crim. 11 oct. 2020, le code de déverrouillage peut être :',
@@ -4366,7 +4366,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR ABUSANT DE SON AUTORITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Cette circonstance est :',
     options: ['Personnelle', 'Réelle', 'Une excuse de provocation'],
@@ -4374,7 +4374,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : personnelle, non étendue aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Elle vise une autorité :',
     options: [
@@ -4387,7 +4387,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : autorité générale à l’égard d’un certain nombre de personnes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Exemple de personnes concernées :',
     options: [
@@ -4399,7 +4399,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Exemples donnés au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Les fonctions peuvent être :',
     options: [
@@ -4411,7 +4411,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Condition 2.2 du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'L’aggravation suppose :',
     options: [
@@ -4423,7 +4423,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Condition 2.3 : abus de l’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Champ d’application : figure notamment :',
     options: [
@@ -4439,7 +4439,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR ASCENDANT OU AYANT AUTORITÉ SUR LA VICTIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Cette circonstance est :',
@@ -4448,7 +4448,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Ascendants visés :',
@@ -4461,7 +4461,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise la liste des ascendants directs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Les collatéraux (oncle/tante/cousin) :',
@@ -4475,7 +4475,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : parents/alliés collatéraux non visés comme ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Mais un collatéral peut entrer si :',
@@ -4489,7 +4489,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : si oncle/tante/cousin ont autorité de fait, la circonstance peut jouer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'L’autorité sur la victime peut être :',
@@ -4502,7 +4502,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours distingue tuteur (droit) et autorité de fait.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Exemple d’autorité de fait :',
@@ -4519,7 +4519,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE / MISSION SERVICE PUBLIC (auteur)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Cette circonstance (auteur dépositaire) est :',
@@ -4528,7 +4528,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Dépositaire de l’autorité publique = personne avec :',
@@ -4541,7 +4541,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition citée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Exemples :',
@@ -4554,7 +4554,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Exemples listés au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question:
@@ -4569,7 +4569,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition issue de la circulaire du 14 mai 1993 citée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Les faits doivent être commis :',
@@ -4586,7 +4586,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE (victime)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'Cette circonstance est :',
@@ -4595,7 +4595,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'Elle protège :',
@@ -4608,7 +4608,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours insiste sur la protection de la fonction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'Condition : la qualité doit être :',
@@ -4621,7 +4621,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Condition du cours : apparente ou connue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'La victime doit être atteinte :',
@@ -4638,7 +4638,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME CHARGÉE D’UNE MISSION DE SERVICE PUBLIC (victime)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Une excuse de minorité'],
@@ -4646,7 +4646,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Elle vise notamment :',
     options: [
@@ -4659,7 +4659,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Liste détaillée dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Condition temporelle : la victime doit être :',
     options: [
@@ -4671,7 +4671,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : en service / acte entrant dans ses attributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Condition de connaissance : qualité :',
     options: ['Apparente ou connue', 'Toujours ignorée', 'Jamais exigée'],
@@ -4684,7 +4684,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME SE LIVRANT À LA PROSTITUTION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Cette circonstance est :',
@@ -4693,7 +4693,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Condition : la personne doit se livrer à la prostitution =',
@@ -4706,7 +4706,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition donnée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'La prostitution peut être :',
@@ -4715,7 +4715,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : un acte unique peut suffire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Les faits doivent être commis :',
@@ -4728,7 +4728,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours exclut les contentieux sans lien avec l’activité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Texte créateur : loi du :',
@@ -4741,7 +4741,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE TÉMOIN / VICTIME / PARTIE CIVILE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Cette circonstance est de nature :',
     options: ['Personnelle', 'Réelle', 'Toujours mixte'],
@@ -4749,7 +4749,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : dépend de l’intention et du but poursuivi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Elle vise à protéger :',
     options: [
@@ -4762,7 +4762,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : pressions menacent l’administration de la justice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Elle suppose qu’une infraction :',
     options: [
@@ -4775,7 +4775,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : une nouvelle infraction vise à éviter/vengeance/dissuader.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “préventive” =',
     options: [
@@ -4787,7 +4787,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : retirer plainte, influencer déclarations, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “répressive” =',
     options: [
@@ -4803,7 +4803,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME PARENTE D’UN DÉPOSITAIRE / PERSONNE PROTÉGÉE (proches)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Une cause d’excuse'],
@@ -4811,7 +4811,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Sont protégés notamment :',
     options: [
@@ -4823,7 +4823,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Liste du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Est aussi visée :',
     options: [
@@ -4835,7 +4835,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : personne hébergée, quel que soit lien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Condition essentielle : faits commis :',
     options: [
@@ -4847,7 +4847,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : lien avec fonctions du proche.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cela implique que l’auteur :',
     options: [
@@ -4863,7 +4863,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE RACISTE (art. 132-76)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Le caractère raciste est défini par :',
     options: ['Art. 132-76 C.P.', 'Art. 132-77 C.P.', 'Art. 132-80 C.P.'],
@@ -4871,7 +4871,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Référence du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Toujours mixte'],
@@ -4879,7 +4879,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Elle vise l’appartenance (vraie ou supposée) à :',
     options: [
@@ -4891,7 +4891,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: '4 catégories du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'La matérialisation peut venir de :',
     options: [
@@ -4903,7 +4903,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Éléments objectifs listés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'L’appartenance peut être :',
     options: [
@@ -4919,7 +4919,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE HOMOPHOBE / SEXISTE / TRANSPHOBE (art. 132-77)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Le caractère homophobe/sexiste est défini par :',
@@ -4928,7 +4928,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Référence du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Cette circonstance est :',
@@ -4937,7 +4937,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Elle peut être établie par :',
@@ -4952,7 +4952,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne les 2 branches : atteinte ou preuve du mobile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Elle vise notamment :',
@@ -4965,7 +4965,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours l’indique expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'L’identité/orientation peut être :',
@@ -4994,7 +4994,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
 
   // --- PRÉMÉDITATION (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation suppose une résolution :',
     options: ['Instantanée', 'Mûre et réfléchie', 'Toujours involontaire'],
@@ -5002,7 +5002,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Volonté persistante et plan tracé à l’avance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps requis est :',
     options: ['Fixé à 48h', 'Non déterminé (plus ou moins long)', 'Fixé à 1h'],
@@ -5010,7 +5010,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : durée non déterminée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Une pulsion immédiate exclut en principe :',
     options: ['La réunion', 'La préméditation', 'La tentative'],
@@ -5018,7 +5018,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Acte prémédité ≠ spontané.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation doit être recherchée dans :',
     options: ['Les faits accompagnant l’acte', 'Le seul casier', 'La rumeur'],
@@ -5026,7 +5026,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Cass. crim. 4 sept. 1976 citée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Menaces avant les faits peuvent :',
     options: [
@@ -5038,7 +5038,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Exemple du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Achat de matériel pour commettre l’acte :',
     options: [
@@ -5050,7 +5050,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Acte préparatoire typique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut aggraver :',
     options: [
@@ -5062,7 +5062,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Champ d’application du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Cass. crim. 9 janvier 1990 : exigence d’ :',
     options: ['Antériorité', 'Cohabitation', 'Récidive'],
@@ -5072,7 +5072,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- GUET-APENS (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Guet-apens : “attendre” implique :',
     options: [
@@ -5084,7 +5084,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Notion large non précisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le lieu doit être :',
     options: ['Déterminé', 'Toujours public', 'Toujours privé'],
@@ -5092,7 +5092,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition : lieu déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Guet-apens s’applique si la loi a :',
     options: [
@@ -5104,7 +5104,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'La loi doit l’avoir expressément prévu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est :',
     options: ['Personnel', 'Réel', 'Une immunité'],
@@ -5114,7 +5114,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- ARME (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Arme par nature = objet :',
     options: [
@@ -5126,7 +5126,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Art. 132-75 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Arme par destination :',
     options: [
@@ -5138,7 +5138,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Assimilation si utilisé/destiné à tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Chaîne à vélo utilisée pour frapper =',
     options: ['Arme par nature', 'Arme par destination', 'Jamais une arme'],
@@ -5146,7 +5146,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Objet du quotidien détourné.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Port d’arme =',
     options: [
@@ -5158,7 +5158,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Port caractérisé sans usage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Menacer avec une imitation réaliste :',
     options: [
@@ -5172,7 +5172,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- ESCALADE (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Escalade = franchir :',
     options: [
@@ -5184,7 +5184,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition légale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Une fenêtre peut caractériser :',
     options: ['L’escalade', 'La préméditation', 'La cryptologie'],
@@ -5192,7 +5192,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Ouverture non destinée à servir d’entrée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Lieu clos = accès interdit par :',
     options: ['Clôture', 'Téléphone', 'Facture'],
@@ -5202,7 +5202,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- ITT (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'I.T.T. =',
     options: ['Gravité atteintes', 'Salaire perdu', 'Nombre de PV'],
@@ -5210,7 +5210,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Atteintes corporelles/psychiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'I.T.T. totale n’exige pas :',
     options: [
@@ -5222,7 +5222,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Tâches ménagères possibles ≠ exclure ITT.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Preuve I.T.T. :',
     options: ['Certificats/expertises', 'Réseaux sociaux', 'Rumeur'],
@@ -5232,7 +5232,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- CRYPTOLOGIE (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cryptologie = moyen pour :',
     options: ['Confidentialité', 'Publicité', 'Aucune transformation'],
@@ -5240,7 +5240,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Sécurité des communications/données.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: '132-79 : maximum de peine est :',
     options: ['Réduit', 'Relevé', 'Supprimé'],
@@ -5248,7 +5248,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le texte : “maximum … est relevé”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Exception 132-79 si remise aux autorités :',
     options: [
@@ -5262,7 +5262,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- AUTEUR ABUSANT DE SON AUTORITÉ (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Cette circonstance ne concerne pas :',
     options: [
@@ -5275,7 +5275,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : ces personnes ne rentrent pas dans le cadre des ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Effets sur coauteurs :',
     options: ['S’étend', 'Ne s’étend pas', 'S’étend si complice'],
@@ -5285,7 +5285,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- AUTEUR ASCENDANT/AUTORITÉ (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Ascendant =',
@@ -5294,7 +5294,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Ascendants directs uniquement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Tuteur d’un mineur = autorité :',
@@ -5305,7 +5305,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- VICTIME PROSTITUTION (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Acte unique de prostitution :',
@@ -5318,7 +5318,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Occasionnelle admise.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Sans lien avec activité : circonstance :',
@@ -5329,7 +5329,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // --- TÉMOIN/VICTIME/PARTIE CIVILE (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Catégories visées :',
     options: [
@@ -5341,7 +5341,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : exclusivement ces personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'But : influencer déclarations = intention :',
     options: ['Préventive', 'Répressive', 'Involontaire'],
@@ -5352,7 +5352,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q001–Q020 — GÉNÉRALITÉS (circonstances aggravantes, réelles/personnelles)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance n’est aggravante que lorsque :',
     options: [
@@ -5365,7 +5365,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’une circonstance n’est aggravante que lorsque la loi le décide expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes sont énumérées par la loi :',
     options: [
@@ -5378,7 +5378,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la loi les énumère de manière limitative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante peut :',
     options: [
@@ -5391,7 +5391,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elle peut modifier la nature de la peine encourue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante peut aussi :',
     options: [
@@ -5404,7 +5404,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique qu’en modifiant la peine, elle peut modifier la nature de l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes dites “spéciales” :',
     options: [
@@ -5417,7 +5417,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elles ne s’appliquent qu’aux infractions pour lesquelles la loi les prévoit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante “réelle” :',
     options: [
@@ -5430,7 +5430,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les circonstances réelles s’attachent à la matérialité du fait poursuivi.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante “réelle” vaut :',
     options: [
@@ -5443,7 +5443,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle ne peut exister pour l’un sans exister pour les autres (auteurs/coauteurs/complices).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante “personnelle” :',
     options: [
@@ -5456,7 +5456,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les circonstances personnelles sont liées à la personnalité/qualité de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question:
         'Exemple typique de circonstance “purement” personnelle (cours) :',
@@ -5466,7 +5466,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite la récidive comme circonstance “purement” personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question:
         'Selon la jurisprudence citée, certaines circonstances personnelles liées à la qualité :',
@@ -5480,7 +5480,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 7 septembre 2005 : circonstances liées à la qualité de l’auteur principal applicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Le “principe de l’emprunt de criminalité” signifie (cours) :',
     options: [
@@ -5493,7 +5493,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que le complice encourt la responsabilité des circonstances qualifiant l’acte poursuivi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une même circonstance peut aggraver :',
     options: [
@@ -5506,7 +5506,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 7 février 2007 sur l’aggravation possible de crimes distincts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes peuvent tenir :',
     options: [
@@ -5519,7 +5519,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne ces grandes familles de circonstances aggravantes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Le cours traite notamment des circonstances des articles :',
     options: [
@@ -5532,7 +5532,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours annonce le périmètre : articles 132-71 à 132-80 du code pénal (et communes).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances “mixtes” (doctrine) tiennent :',
     options: [
@@ -5544,7 +5544,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours mentionne cette catégorie doctrinale “mixte”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question:
         'Une circonstance aggravante peut exister sans que le complice l’ait connue (cours) :',
@@ -5558,7 +5558,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 21 mai 1996 : pas nécessaire qu’elles aient été connues du complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante réelle :',
     options: [
@@ -5571,7 +5571,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle s’attache à la matérialité du fait dont elle ne peut être séparée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance personnelle s’étend aux coauteurs :',
     options: [
@@ -5584,7 +5584,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : personnelle = augmente la culpabilité de celui qui agit, sans extension aux coauteurs (principe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'La loi détermine, pour chaque circonstance, l’aggravation :',
     options: ['De manière précise', 'Au choix de l’auteur', 'Sans encadrement'],
@@ -5593,7 +5593,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la loi détermine pour chaque cas l’aggravation de la peine encourue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance ne peut pas :',
     options: [
@@ -5610,7 +5610,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q021–Q040 — PRÉMÉDITATION (art. 132-72 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est :',
     options: [
@@ -5622,7 +5622,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition de l’art. 132-72 C.P. reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation vise :',
     options: [
@@ -5634,7 +5634,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : crime ou délit déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation traduit une volonté :',
     options: ['Mûre et réfléchie', 'Spontanée', 'Purement accidentelle'],
@@ -5642,7 +5642,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : résolution d’agir, volonté mûre et réfléchie.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’antériorité de la résolution à l’acte est :',
     options: ['Nécessaire', 'Indifférente', 'Interdite'],
@@ -5651,7 +5651,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 9 janvier 1990 : antériorité nécessaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps entre résolution et exécution est :',
     options: [
@@ -5663,7 +5663,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours indique que cet intervalle n’est pas déterminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Un acte prémédité est :',
     options: [
@@ -5675,7 +5675,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : non spontané, pas une pulsion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut viser :',
     options: [
@@ -5687,7 +5687,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : indifféremment commise ou tentée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation se matérialise par :',
     options: [
@@ -5700,7 +5700,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle se recherche dans l’intervalle précédant l’acte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Exemples de matérialisation (cours) :',
     options: [
@@ -5712,7 +5712,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Exemples cités dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La jurisprudence qualifie parfois la préméditation :',
     options: [
@@ -5724,7 +5724,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours signale des hésitations jurisprudentielles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Le meurtre avec préméditation est qualifié :',
     options: ['D’assassinat', 'D’homicide involontaire', 'De contravention'],
@@ -5733,7 +5733,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : meurtre + préméditation = assassinat (art. 221-3).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est une forme de :',
     options: ['Résolution d’agir', 'Force majeure', 'Erreur de droit'],
@@ -5741,7 +5741,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : elle se traduit par une résolution d’agir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation exclut en principe :',
     options: ['La spontanéité', 'La préparation', 'La persistance'],
@@ -5749,7 +5749,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : l’acte prémédité n’est pas spontané.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Une préparation visant une seule infraction peut suffire :',
     options: [
@@ -5762,7 +5762,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle vise une infraction commise ou tentée, même unique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut aggraver (cours) :',
     options: ['Le meurtre', 'La diffamation', 'Le recel'],
@@ -5770,7 +5770,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Champ d’application : meurtre (assassinat).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut aussi aggraver :',
     options: ['L’empoisonnement', 'Le stationnement gênant', 'La mendicité'],
@@ -5778,7 +5778,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : empoisonnement (art. 221-5 al. 3).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut être déduite :',
     options: [
@@ -5791,7 +5791,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite la complexité traduisant une nécessaire préparation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Une confidence préalable sur l’intention de commettre l’acte :',
     options: [
@@ -5803,7 +5803,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite les confidences parmi les indices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation doit être appréciée :',
     options: [
@@ -5820,7 +5820,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q041–Q060 — GUET-APENS (art. 132-71-1 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens consiste à :',
     options: [
@@ -5833,7 +5833,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition de l’art. 132-71-1 C.P. reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une circonstance aggravante :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -5842,7 +5842,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est proche de :',
     options: ['L’embuscade', 'La récidive', 'La contrainte'],
@@ -5850,7 +5850,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours compare guet-apens et embuscade.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Différence principale avec l’embuscade : l’embuscade est :',
     options: [
@@ -5863,7 +5863,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : embuscade = infraction autonome même au stade des actes préparatoires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'L’article qui définit le guet-apens est :',
     options: ['132-71-1 C.P.', '132-72 C.P.', '132-75 C.P.'],
@@ -5871,7 +5871,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Référence donnée dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le texte précise une durée minimale d’attente :',
     options: [
@@ -5883,7 +5883,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : notion très large, pas de durée minimum fixée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le texte précise la nature du lieu (public/privé) :',
     options: [
@@ -5895,7 +5895,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : pas de précision sur la nature du lieu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'La qualité de la victime (profession/âge) est :',
     options: ['Indifférente', 'Limitée aux mineurs', 'Limitée aux policiers'],
@@ -5903,7 +5903,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : “toute personne quelle que soit sa qualité”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une forme particulière de :',
     options: ['Préméditation', 'Vulnérabilité', 'Récidive'],
@@ -5911,7 +5911,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : forme particulière de préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le but poursuivi est caractérisé par :',
     options: [
@@ -5924,7 +5924,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : actes préparatoires déterminent le caractère délibéré du “piège”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le nombre de victimes possibles est :',
     options: ['Une ou plusieurs', 'Uniquement une', 'Uniquement deux'],
@@ -5932,7 +5932,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : “une ou plusieurs personnes”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aggraver des infractions :',
     options: [
@@ -5945,7 +5945,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : application si la loi a expressément visé les infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aggraver :',
     options: ['Le meurtre', 'Le vol simple sans texte', 'La diffamation'],
@@ -5953,7 +5953,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : champ d’application inclut le meurtre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aussi aggraver :',
     options: [
@@ -5966,7 +5966,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : champ d’application inclut tortures/actes de barbarie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut également aggraver :',
     options: [
@@ -5979,7 +5979,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : champ d’application inclut violences (articles listés).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aggraver l’empoisonnement :',
     options: ['Oui', 'Non', 'Uniquement si la victime est mineure'],
@@ -5987,7 +5987,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : champ d’application inclut l’empoisonnement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est apprécié :',
     options: [
@@ -6000,7 +6000,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la question se pose après commission ou tentative de certaines infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens suppose un “lieu déterminé” :',
     options: ['Oui', 'Non', 'Seulement en milieu scolaire'],
@@ -6008,7 +6008,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition : attente dans un lieu déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens s’étend aux complices car il est :',
     options: ['Réel', 'Personnel', 'Mixte au sens légal obligatoire'],
@@ -6021,7 +6021,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q061–Q080 — BANDE ORGANISÉE (art. 132-71 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est définie par :',
     options: [
@@ -6034,7 +6034,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que l’article 132-71 du code pénal définit la bande organisée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Constitue une bande organisée :',
     options: [
@@ -6047,7 +6047,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition légale reprise au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Uniquement civile'],
@@ -6056,7 +6056,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est proche de :',
     options: [
@@ -6068,7 +6068,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours rapproche les deux notions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Différence majeure : l’association de malfaiteurs est :',
     options: [
@@ -6081,7 +6081,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : association de malfaiteurs = infraction autonome même au stade préparatoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée se pose :',
     options: [
@@ -6094,7 +6094,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la question se pose après commission ou tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est une forme particulière de :',
     options: ['Préméditation', 'Vulnérabilité', 'Récidive'],
@@ -6102,7 +6102,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : forme particulière de préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'À la différence de la réunion, la bande organisée suppose :',
     options: [
@@ -6115,7 +6115,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 14 mai 1993 : moyens matériels impliquant organisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La réunion a un caractère :',
     options: [
@@ -6127,7 +6127,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : réunion = concertation simple sans préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Condition : il faut une résolution d’agir en commun :',
     options: [
@@ -6140,7 +6140,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : résolution d’agir en commun antérieure à l’action.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée implique :',
     options: ['Un plan concerté', 'Une impulsion', 'Une erreur'],
@@ -6149,7 +6149,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 30 novembre 2005 : “plan concerté”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'Une organisation “structurée et hiérarchisée” est un indice de :',
@@ -6159,7 +6159,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite la nécessité d’une organisation structurée et hiérarchisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'La bande organisée nécessite de démontrer une participation continuelle :',
@@ -6169,7 +6169,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : pas nécessaire de démontrer une participation continuelle à l’organisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'Le nombre de personnes nécessaire est fixé par la jurisprudence :',
@@ -6183,7 +6183,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la jurisprudence ne se prononce pas sur un nombre précis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'Selon le cours, pour constituer une bande organisée, il est nécessaire d’être :',
@@ -6192,7 +6192,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise qu’il est nécessaire d’être plus de deux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La Convention ONU évoquée parle d’un groupe de :',
     options: ['Trois personnes ou plus', 'Deux personnes', 'Une personne'],
@@ -6201,7 +6201,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite la définition ONU : groupe structuré de trois personnes ou plus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La seule constitution d’une équipe peut être insuffisante si :',
     options: [
@@ -6214,7 +6214,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 8 juillet 2015 : critère de structure dans le temps.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Les actes préparatoires peuvent être :',
     options: [
@@ -6226,7 +6226,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours donne ces exemples d’actes préparatoires.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée peut aggraver (exemple du cours) :',
     options: [
@@ -6239,7 +6239,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours liste le vol (art. 311-9) parmi les infractions aggravées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée peut aussi aggraver :',
     options: ['L’escroquerie', 'La diffamation', 'Le tapage'],
@@ -6251,7 +6251,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q081–Q100 — ARME + ESCALADE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Selon l’art. 132-75, est une arme :',
     options: [
@@ -6263,7 +6263,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : arme par nature (alinéa 1).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Les armes par nature comprennent notamment :',
     options: [
@@ -6276,7 +6276,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite armes à feu, engins explosifs/incendiaires, gaz toxiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Les armes blanches (cours) incluent :',
     options: [
@@ -6289,7 +6289,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite des exemples d’armes blanches tranchantes/perçantes/contondantes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme par destination est :',
     options: [
@@ -6302,7 +6302,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : assimilation si objet susceptible de danger est utilisé/destiné à tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Un véhicule automobile utilisé pour blesser peut être :',
     options: [
@@ -6315,7 +6315,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite le véhicule automobile comme exemple d’arme par destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice est assimilée si elle :',
     options: [
@@ -6328,7 +6328,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : ressemblance de nature à créer confusion + usage/destination pour menacer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'L’utilisation d’un animal pour menacer est :',
     options: [
@@ -6341,7 +6341,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’utilisation d’un animal pour tuer/blesser/menacer est assimilée à une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'La circonstance “arme” est :',
     options: ['Réelle', 'Personnelle', 'Une excuse légale'],
@@ -6349,7 +6349,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour l’usage/menace d’arme, il faut :',
     options: [
@@ -6362,7 +6362,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : être porteur ne suffit pas, il faut usage pour tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour le port d’arme, il suffit :',
     options: [
@@ -6374,7 +6374,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : port apparente ou cachée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Le port illégal d’arme est :',
     options: [
@@ -6387,7 +6387,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’arme peut aussi constituer l’élément matériel d’infractions autonomes (ex. port illégal).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est :',
     options: [
@@ -6400,7 +6400,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Définition de l’art. 132-74 reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Exclusivement civile'],
@@ -6408,7 +6408,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Elle suppose un endroit :',
     options: ['Clos', 'Toujours ouvert', 'Virtuel uniquement'],
@@ -6417,7 +6417,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : endroit clos dont l’accès est interdit aux tiers par une clôture.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Le moyen utilisé (échelle, corde…) :',
     options: ['Importe peu', 'Doit être une échelle', 'Doit être un grappin'],
@@ -6425,7 +6425,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : moyen prévu, improvisé ou trouvé par hasard.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Entrer par une fenêtre peut relever de :',
     options: ['L’escalade', 'La cryptologie', 'La vulnérabilité'],
@@ -6434,7 +6434,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : issue non destinée à servir d’entrée (fenêtre, soupirail…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'La circonstance d’escalade se réalise :',
     options: [
@@ -6447,7 +6447,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : “s’introduire…”, donc de l’extérieur vers l’intérieur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Comme l’effraction, l’escalade implique :',
     options: [
@@ -6460,7 +6460,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours compare escalade et effraction : moyen illicite pour pénétrer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade peut aggraver :',
     options: ['Le vol', 'Le mariage', 'La grève'],
@@ -6472,7 +6472,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q101–Q120 — ITT + MORT + MUTILATION/INFIRMITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale mesure :',
     options: [
@@ -6484,7 +6484,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : l’I.T.T. mesure la gravité des atteintes subies.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale ne doit pas être confondue avec :',
     options: [
@@ -6496,7 +6496,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours distingue I.T.T. pénale et arrêt de travail social.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question:
         'Une victime sans activité professionnelle peut avoir une I.T.T. :',
@@ -6506,7 +6506,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : enfant/retraité… peut se voir prescrire une I.T.T.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Pour constituer la circonstance, l’incapacité doit être :',
     options: ['Totale', 'Partielle', 'Mentale uniquement'],
@@ -6515,7 +6515,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’I.T.T. doit être totale pour constituer la circonstance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. s’étend :',
     options: [
@@ -6528,7 +6528,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours (jurisprudence) : s’étend à toute l’activité courante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La durée de l’I.T.T. est prise en compte par :',
     options: ['Paliers', 'Pourcentage fixe', 'Appréciation libre sans seuil'],
@@ -6536,7 +6536,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : paliers (≤8j, >8j, ≤3 mois, >3 mois).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La preuve de l’I.T.T. est rapportée :',
     options: ['Par la partie poursuivante', 'Par l’auteur', 'Par la presse'],
@@ -6545,7 +6545,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la preuve doit être rapportée par la partie poursuivante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Le juge peut se baser sur :',
     options: [
@@ -6558,7 +6558,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : certificats et expertises, avec pouvoir d’appréciation du juge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question:
         'La circonstance “ayant entraîné la mort sans intention de la donner” suppose :',
@@ -6572,7 +6572,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’auteur n’a jamais voulu donner volontairement la mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'La circonstance “mort” est :',
     options: ['Réelle', 'Personnelle', 'Toujours mixte'],
@@ -6580,7 +6580,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'Condition essentielle : il faut une relation :',
     options: [
@@ -6593,7 +6593,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 17 janvier 1991 : relation de cause à effet.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'L’état préexistant de la victime (santé fragile) est :',
     options: ['Indifférent', 'Excluant la circonstance', 'Toujours atténuant'],
@@ -6602,7 +6602,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : circonstance retenue même si l’état a concouru au décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'Cette circonstance peut aggraver :',
     options: [
@@ -6614,7 +6614,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours liste des violences ayant entraîné la mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'La mutilation correspond à :',
     options: [
@@ -6628,7 +6628,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend la définition (Robert) : atteinte irréversible à l’intégrité physique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'L’infirmité permanente est :',
     options: [
@@ -6642,7 +6642,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 24 nov. 2021 : atteinte majeure et irréversible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'L’infirmité peut être :',
     options: [
@@ -6655,7 +6655,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’infirmité peut affecter aussi les facultés mentales/intellectuelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Le caractère permanent de l’infirmité signifie :',
     options: ['Irréversible/définitif', 'Temporaire', 'Réversible'],
@@ -6664,7 +6664,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : infirmité doit être irréversible ou définitive (jurisprudence citée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'La preuve est rapportée par :',
     options: [
@@ -6676,7 +6676,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : preuve par certificats médicaux ou expertises.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Exclusivement administrative'],
@@ -6688,7 +6688,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q121–Q140 — VULNÉRABILITÉ + MINORITÉ 15 ANS + PROSTITUTION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité particulière vise :',
     options: [
@@ -6701,7 +6701,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : elle protège les victimes en situation de faiblesse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'Les causes de vulnérabilité sont :',
     options: ['Limitatives', 'Illimitées', 'Au choix du juge sans texte'],
@@ -6710,7 +6710,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elles sont limitatives (au nombre de sept).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -6723,7 +6723,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : condition d’apparence ou de connaissance par l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité doit résulter :',
     options: [
@@ -6736,7 +6736,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours (jurisprudence) : vulnérabilité préexistante, pas conséquence des faits.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'Concernant l’âge, le cours précise que :',
     options: [
@@ -6749,7 +6749,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la minorité de 15 ans ne rentre pas dans ce champ car aggravation spécifique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'Le seul grand âge suffit à caractériser la vulnérabilité :',
     options: [
@@ -6762,7 +6762,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite la jurisprudence : l’âge ne suffit pas sans autres constatations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La maladie/infirmité/déficience concerne :',
     options: [
@@ -6775,7 +6775,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : dysfonctionnements corporels, physiques ou mentaux, innés ou acquis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'L’état de grossesse peut entraîner une vulnérabilité :',
     options: [
@@ -6788,7 +6788,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : vulnérabilité possible pendant la grossesse et après l’accouchement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La précarité économique/sociale se définit comme :',
     options: [
@@ -6802,7 +6802,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne une définition inspirée : absence de sécurités, notamment emploi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Toujours mixte'],
@@ -6810,7 +6810,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La “minorité de quinze ans” vise :',
     options: [
@@ -6822,7 +6822,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : c’est l’âge de 15 ans accompli qui est la limite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'L’âge pris en compte est celui :',
     options: [
@@ -6835,7 +6835,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 21 mars 1957 : âge au moment des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'Le calcul de l’âge se fait :',
     options: ['D’heure à heure', 'Par année civile', 'Par trimestre'],
@@ -6844,7 +6844,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 3 septembre 1985 : calcul d’heure à heure.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'À défaut d’acte probant, la preuve de l’âge se fait :',
     options: [
@@ -6857,7 +6857,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite Cass. crim., 17 juillet 1991 : preuve par tout moyen.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La minorité de 15 ans doit être apparente/connue de l’auteur :',
     options: [
@@ -6870,7 +6870,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : pas d’exigence d’apparence ou de connaissance pour cette circonstance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La minorité de 15 ans est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Exclusivement civile'],
@@ -6878,7 +6878,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Cette circonstance est :',
@@ -6887,7 +6887,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: '“Se livrer à la prostitution” implique :',
@@ -6901,7 +6901,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : existence de rapports sexuels contre rémunération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'La prostitution peut être :',
@@ -6910,7 +6910,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : un acte unique peut suffire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Les faits doivent être commis :',
@@ -6928,7 +6928,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q141–Q160 — RÉSEAU DE COMMUNICATION ÉLECTRONIQUE + CRYPTOLOGIE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance vise l’utilisation :',
@@ -6942,7 +6942,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : diffusion de messages à destination d’un public non déterminé via réseau électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Elle est une circonstance :',
@@ -6951,7 +6951,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'La formule “public non déterminé” exclut :',
@@ -6965,7 +6965,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que cette formule exclut cet envoi ciblé à personnes identifiées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Le réseau de communication électronique visé est :',
@@ -6978,7 +6978,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : internet + réseau téléphonique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance vise :',
@@ -6991,7 +6991,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : vise mineurs et majeurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Le développement d’Internet a rendu certaines infractions :',
@@ -7005,7 +7005,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours souligne la facilité de contact massif et la difficulté d’identification.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Ces procédés peuvent induire :',
@@ -7018,7 +7018,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours mentionne l’internationalisation des délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance peut aggraver (cours) :',
@@ -7028,7 +7028,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : harcèlement moral (art. 222-33-2-2, 4°) figure dans la liste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance peut aussi aggraver :',
@@ -7042,7 +7042,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : corruption de mineurs (art. 227-22) figure dans la liste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Elle peut également aggraver :',
@@ -7055,7 +7055,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 227-23 figure dans la liste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’utilisation d’un moyen de cryptologie est prévue par :',
     options: ['Art. 132-79 C.P.', 'Art. 132-77 C.P.', 'Art. 132-74 C.P.'],
@@ -7063,7 +7063,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : article 132-79 du code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -7071,7 +7071,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Le moyen de cryptologie sert principalement à garantir :',
     options: [
@@ -7083,7 +7083,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : confidentialité, authentification, intégrité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’article 132-79 a une portée :',
     options: [
@@ -7096,7 +7096,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : portée générale, s’applique à tous crimes et délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cette circonstance ne s’applique pas si l’auteur/complice :',
     options: [
@@ -7109,7 +7109,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : exception si remise aux autorités de la version en clair + conventions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question:
         'Un téléphone équipé d’un moyen de cryptologie + code de déverrouillage :',
@@ -7122,7 +7122,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite Cass. crim., 11 octobre 2020.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question:
         'L’objectif de cette aggravation est de réprimer plus sévèrement :',
@@ -7137,7 +7137,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : réprimer l’usage de moyens techniques de confidentialité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Un “moyen de cryptologie” peut être :',
     options: [
@@ -7151,7 +7151,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours reprend la définition de l’art. 29 de la loi du 21 juin 2004.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'La cryptologie vise notamment :',
     options: [
@@ -7165,7 +7165,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : sécurité du stockage/transmission, confidentialité/authentification/intégrité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Cette circonstance est définie par :',
     options: ['Art. 132-80 C.P.', 'Art. 132-75 C.P.', 'Art. 132-72 C.P.'],
@@ -7173,7 +7173,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : article 132-80 du code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Elle est une circonstance aggravante :',
     options: ['Personnelle', 'Réelle', 'Disciplinaire'],
@@ -7182,7 +7182,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : circonstance aggravante personnelle, non étendue aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Elle s’applique même si les personnes :',
     options: [
@@ -7194,7 +7194,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : y compris lorsqu’ils ne cohabitent pas.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Elle peut aussi être constituée par :',
     options: [
@@ -7207,7 +7207,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : le texte vise aussi l’ancien conjoint/concubin/partenaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question:
         'Pour l’ancien conjoint/concubin/partenaire, il faut que l’infraction soit commise :',
@@ -7221,7 +7221,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : condition du mobile (lien avec la relation passée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Le concubinage est défini par le code civil comme :',
     options: [
@@ -7233,7 +7233,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours reprend l’art. 515-8 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Le PACS est :',
     options: [
@@ -7245,7 +7245,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours reprend l’art. 515-1 du code civil.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'Cette circonstance est :',
@@ -7255,7 +7255,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : circonstance aggravante personnelle, non étendue aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'Ascendants visés :',
@@ -7269,7 +7269,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : ascendants directs, légitimes, naturels ou adoptifs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'L’autorité peut être :',
@@ -7283,7 +7283,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : tuteur (droit) ou autorité de fait permanente/discontinue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'Exemple d’autorité de fait (cours) :',
@@ -7296,7 +7296,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite ces exemples d’autorité de fait.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: '“Abusant de l’autorité que lui confèrent ses fonctions” est :',
     options: ['Personnelle', 'Réelle', 'Une cause d’exemption'],
@@ -7304,7 +7304,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Les fonctions exercées peuvent être :',
     options: [
@@ -7316,7 +7316,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : fonctions publiques ou privées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Exemples de personnes concernées (cours) :',
     options: [
@@ -7328,7 +7328,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours donne ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'La condition centrale est :',
     options: [
@@ -7341,7 +7341,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : aggravation encourue lorsque l’auteur abuse de l’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: 'Cette circonstance (auteur DAP/MSP) est :',
@@ -7351,7 +7351,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : circonstance aggravante personnelle, non étendue aux coauteurs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: 'Dépositaire de l’autorité publique =',
@@ -7365,7 +7365,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne cette définition (policiers, gendarmes, douaniers, huissiers…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: '“Dans l’exercice ou à l’occasion de l’exercice” signifie :',
@@ -7379,7 +7379,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : dans l’exercice (en service) ou à l’occasion/du fait des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: 'La “mission de service public” (cours) vise :',
@@ -7398,7 +7398,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // Q181–Q200 — VICTIMES PROTÉGÉES (DAP/MSP) + PROCHES + TÉMOIN/VICTIME/PC + IVRESSE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Cette circonstance est :',
@@ -7407,7 +7407,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Pour la retenir, il faut un lien :',
@@ -7421,7 +7421,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’infraction doit être en rapport direct avec la fonction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'La qualité de la victime doit être :',
@@ -7434,7 +7434,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : condition d’apparence/connaissance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'Cette circonstance (victime MSP) est :',
     options: ['Réelle', 'Personnelle', 'Une excuse légale'],
@@ -7442,7 +7442,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'Elle protège notamment :',
     options: [
@@ -7455,7 +7455,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours détaille ces catégories.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'La victime doit être atteinte :',
     options: [
@@ -7468,7 +7468,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : victime en service ou effectuant un acte entrant dans ses attributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'La qualité doit être :',
     options: [
@@ -7480,7 +7480,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : condition identique (apparente/connue).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cette circonstance (proches) est :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -7488,7 +7488,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Sont visés notamment :',
     options: [
@@ -7502,7 +7502,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours énumère ces liens et la personne vivant habituellement au domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Condition essentielle : faits commis :',
     options: [
@@ -7515,7 +7515,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : l’infraction principale doit être commise en raison des fonctions du proche.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cela implique que l’auteur :',
     options: [
@@ -7528,7 +7528,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : condition de connaissance de la qualité du proche.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Cette circonstance est de nature :',
     options: ['Personnelle', 'Réelle', 'Toujours mixte'],
@@ -7537,7 +7537,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : dépend de l’intention de l’auteur et du but poursuivi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Elle vise à préserver :',
     options: [
@@ -7550,7 +7550,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : pressions sur témoins/parties menacent l’administration de la justice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “préventive” :',
     options: [
@@ -7563,7 +7563,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : empêcher, contraindre à retirer plainte, influencer déclarations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “répressive” :',
     options: [
@@ -7575,7 +7575,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : intention répressive = volonté de vengeance.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question:
         'La circonstance “ivresse manifeste ou emprise manifeste de stupéfiants” est :',
@@ -7585,7 +7585,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question:
         'Concernant l’ivresse, la jurisprudence majoritaire considère que l’ivresse :',
@@ -7599,7 +7599,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la majorité des décisions refusent d’y voir une cause légale d’exemption de peine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question: 'L’usage volontaire de stupéfiants est, par nature :',
     options: [
@@ -7612,7 +7612,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours souligne que l’usage de stupéfiants est illicite, contrairement à la consommation d’alcool.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question: 'La preuve de l’état manifeste peut être délicate car :',
     options: [
@@ -7626,7 +7626,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Catégories 132-76 :',
     options: ['Ethnie/nation/race/religion', 'Âge/sexe', 'Profession/salaire'],
@@ -7634,7 +7634,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Liste du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Peut viser identité de genre :',
@@ -7643,7 +7643,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : erreur possible de l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question:
@@ -7659,7 +7659,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours définit la précarité comme l’absence de sécurités (dont l’emploi) pouvant placer la victime en dépendance.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La notion de réitération a été consacrée par la loi du :',
     options: ['9 mars 2004', '12 décembre 2005', '23 mars 2019'],
@@ -7668,7 +7668,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La loi du 12 décembre 2005 a consacré la notion de réitération jusque-là jurisprudentielle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La réitération suppose nécessairement :',
     options: [
@@ -7681,7 +7681,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La réitération suppose que la nouvelle infraction soit commise après une condamnation devenue définitive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'La réitération se distingue de la récidive légale car :',
     options: [
@@ -7694,7 +7694,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La réitération concerne les situations qui ne remplissent pas les conditions strictes de la récidive légale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question:
         'Une infraction commise après une condamnation pour un délit puni de moins de 10 ans peut relever :',
@@ -7708,7 +7708,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Lorsque la première infraction est punie d’une peine inférieure à 10 ans et que les conditions de la récidive ne sont pas réunies, la nouvelle infraction relève de la réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'Les infractions commises en réitération sont traitées :',
     options: [
@@ -7721,7 +7721,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les infractions commises en réitération sont juridiquement traitées comme des infractions uniques.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'En matière de réitération, les peines prononcées :',
     options: [
@@ -7737,7 +7737,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — NOTIONS GÉNÉRALES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question: 'La récidive est juridiquement définie comme :',
     options: [
@@ -7751,7 +7751,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La récidive suppose une condamnation définitive constituant le premier terme et une nouvelle infraction constituant le second terme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question: 'La récidive permet au juge :',
     options: [
@@ -7764,7 +7764,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La récidive est la principale cause légale permettant le dépassement du maximum normal de la peine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question: 'La récidive suppose obligatoirement :',
     options: [
@@ -7777,7 +7777,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La condamnation doit être définitive avant la commission de la seconde infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive',
     question:
         'Lorsque la seconde infraction est commise avant que la première condamnation soit définitive, il s’agit :',
@@ -7795,7 +7795,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — PREMIER TERME : CONDAMNATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Le premier terme de la récidive doit être :',
     options: [
@@ -7808,7 +7808,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Les sanctions administratives et mesures de sûreté ne peuvent constituer le premier terme de la récidive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Un acquittement peut-il constituer le premier terme de la récidive ?',
@@ -7818,7 +7818,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Un acquittement ne constitue pas une condamnation et ne peut servir de premier terme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Une mesure de rééducation prononcée à l’encontre d’un mineur peut constituer le premier terme :',
@@ -7827,7 +7827,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Les mesures de rééducation ne constituent pas des peines.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Pour apprécier la récidive, sont prises en compte :',
     options: [
@@ -7844,7 +7844,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ORIGINE DE LA CONDAMNATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'La condamnation constituant le premier terme peut être prononcée :',
@@ -7859,7 +7859,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Les condamnations prononcées par un État membre de l’Union européenne sont prises en compte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Les condamnations prononcées hors Union européenne :',
     options: [
@@ -7872,7 +7872,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Elles peuvent révéler la dangerosité mais ne constituent pas le premier terme légal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Lorsque la condamnation a été prononcée dans l’UE, la qualification des faits se fait :',
@@ -7890,7 +7890,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — CARACTÈRE DÉFINITIF
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Une condamnation devient définitive :',
     options: [
@@ -7902,7 +7902,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'La condamnation doit être passée en force de chose jugée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Le délai d’appel du procureur général est de :',
     options: ['10 jours', '15 jours', '20 jours'],
@@ -7915,7 +7915,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — SUR SIS, AMNISTIE, GRÂCE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Une condamnation avec sursis non révoqué peut constituer le premier terme :',
@@ -7925,7 +7925,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La Cour de cassation admet qu’un sursis non révoqué peut constituer le premier terme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question:
         'Une condamnation effacée par une amnistie peut servir de premier terme :',
@@ -7938,7 +7938,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — SECOND TERME : PRINCIPES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : second terme',
     question: 'Le second terme de la récidive correspond :',
     options: [
@@ -7952,7 +7952,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le second terme est l’infraction nouvelle commise après une condamnation devenue définitive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : second terme',
     question:
         'Le code pénal prévoit, en droit commun, combien de cas de récidive ?',
@@ -7966,7 +7966,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ART. 132-8 : CRIME OU DÉLIT PUNI DE 10 ANS → CRIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question:
         'Selon l’article 132-8 du code pénal, la récidive est constituée lorsque :',
@@ -7981,7 +7981,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-8 vise le cas “crime ou délit puni de 10 ans” suivi d’un crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question:
         'Dans la récidive de l’article 132-8, le second terme doit être :',
@@ -7995,7 +7995,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-8 exige que l’infraction ultérieure soit un crime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question: 'La récidive de l’article 132-8 est :',
     options: [
@@ -8008,7 +8008,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Elle est générale (pas besoin de similarité) et perpétuelle (pas de délai tant que la condamnation n’est pas effacée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question:
         'En matière d’article 132-8, le temps écoulé entre les deux infractions :',
@@ -8021,7 +8021,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise que cette récidive est perpétuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-8)',
     question: 'Dans l’article 132-8, sont assimilés aux crimes :',
     options: [
@@ -8038,7 +8038,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ART. 132-9 : CRIME OU DÉLIT PUNI DE 10 ANS → DÉLIT
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question:
         'Selon l’article 132-9 du code pénal, la récidive est constituée lorsque :',
@@ -8053,7 +8053,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-9 vise le cas “crime ou délit puni de 10 ans” suivi d’un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question: 'Dans l’article 132-9, le second terme doit être :',
     options: [
@@ -8066,7 +8066,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le second terme est un délit dont la peine encourue est supérieure à un an.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question: 'La récidive de l’article 132-9 est :',
     options: [
@@ -8079,7 +8079,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Générale (pas d’exigence d’identité) mais temporaire (délai à respecter).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question:
         'Quand le second délit est puni de 10 ans d’emprisonnement, le délai de récidive est de :',
@@ -8089,7 +8089,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique : délai de 10 ans si le second délit est puni de 10 ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive (art. 132-9)',
     question:
         'Quand le second délit est puni d’une peine inférieure à 10 ans, le délai de récidive est de :',
@@ -8103,7 +8103,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE — ART. 132-10 : RÉCIDIVE CORRECTIONNELLE (SPÉCIALE + TEMPORAIRE)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question: 'La récidive correctionnelle (art. 132-10) suppose :',
@@ -8117,7 +8117,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la récidive correctionnelle est spéciale (identité/assimilation) et temporaire (5 ans).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question:
@@ -8132,7 +8132,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le point de départ retenu par le cours est l’expiration ou la prescription de la peine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question: 'Le premier terme de la récidive correctionnelle est constitué :',
@@ -8146,7 +8146,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la récidive correctionnelle porte sur un délit puni de moins de 10 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question:
@@ -8161,7 +8161,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le second terme doit être un délit ; l’emprisonnement n’est pas forcément requis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle (art. 132-10)',
     question: 'La récidive correctionnelle est qualifiée de :',
@@ -8179,7 +8179,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // ASSIMILATIONS DE DÉLITS (ART. 132-16 ET SUIVANTS + 321-5)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -8194,7 +8194,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite explicitement ces délits comme assimilés pour la récidive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -8209,7 +8209,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours renvoie à l’article 132-16-1 pour l’assimilation agressions sexuelles / atteintes sexuelles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -8224,7 +8224,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’article 132-16-3 pour l’assimilation traite des êtres humains / proxénétisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -8239,7 +8239,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours vise l’article 132-16-4 pour l’assimilation des violences volontaires et délits commis avec violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive correctionnelle : assimilations',
     question:
@@ -8258,7 +8258,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉCIDIVE CONTRAVENTIONNELLE — ART. 132-11
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question: 'La récidive contraventionnelle concerne :',
@@ -8272,7 +8272,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la récidive contraventionnelle est prévue pour les contraventions de 5e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -8290,7 +8290,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // EFFETS DE LA RÉCIDIVE — PRINCIPES GÉNÉRAUX
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive',
     question: 'La récidive a principalement pour effet :',
     options: [
@@ -8303,7 +8303,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que la récidive permet une aggravation des peines prévues par la loi.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive',
     question: 'En matière de récidive, le juge peut :',
     options: [
@@ -8320,7 +8320,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — ART. 132-8
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-8)',
     question:
         'Lorsque la seconde infraction est punissable de 20 ou 30 ans de réclusion criminelle, le maximum encouru devient :',
@@ -8330,7 +8330,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-8 prévoit la perpétuité lorsque la seconde infraction est punie de 20 ou 30 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-8)',
     question:
         'Si la seconde infraction entraîne une peine de 15 ans de réclusion criminelle, le maximum devient :',
@@ -8340,7 +8340,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le maximum est porté à 30 ans lorsque la seconde infraction est punie de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-8)',
     question:
         'La récidive a-t-elle un effet sur la période de sûreté maximale de 22 ans ?',
@@ -8358,7 +8358,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — ART. 132-9
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-9)',
     question: 'Dans la récidive prévue à l’article 132-9, le juge peut :',
     options: [
@@ -8371,7 +8371,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-9 permet le doublement de la peine maximale prévue pour le second délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive (art. 132-9)',
     question: 'Le doublement prévu par l’article 132-9 peut s’appliquer :',
     options: [
@@ -8388,7 +8388,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — RÉCIDIVE CORRECTIONNELLE (ART. 132-10)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive correctionnelle',
     question: 'En récidive correctionnelle, le juge peut :',
     options: [
@@ -8400,7 +8400,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'L’article 132-10 permet le doublement des peines encourues.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive correctionnelle',
     question: 'La récidive correctionnelle concerne principalement :',
     options: ['Les crimes', 'Les délits', 'Les contraventions'],
@@ -8413,7 +8413,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — RÉCIDIVE CONTRAVENTIONNELLE (ART. 132-11)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Effets de la récidive contraventionnelle',
     question:
@@ -8424,7 +8424,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-11 prévoit un plafond de 3 000 € en cas de récidive contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Effets de la récidive contraventionnelle',
     question:
@@ -8443,7 +8443,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — PRINCIPES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive des personnes morales',
     question: 'Le code pénal prévoit la récidive pour :',
     options: [
@@ -8460,7 +8460,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — ART. 132-12
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-12)',
     question:
@@ -8471,7 +8471,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-12 vise le cas crime (ou délit assimilé) suivi d’un crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-12)',
     question: 'La récidive prévue à l’article 132-12 est :',
@@ -8489,7 +8489,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — ART. 132-13
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-13)',
     question:
@@ -8499,7 +8499,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'L’article 132-13 prévoit un doublement du taux de l’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-13)',
     question:
@@ -8510,7 +8510,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise un délai de 10 ans lorsque le second délit est puni de 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-13)',
     question:
@@ -8524,7 +8524,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — ART. 132-14 ET 132-15
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-14)',
     question: 'La récidive de délit à délit pour les personnes morales est :',
@@ -8538,7 +8538,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'L’article 132-14 prévoit une récidive spéciale et temporaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-14)',
     question: 'En récidive art. 132-14, le taux maximum de l’amende est :',
@@ -8547,7 +8547,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le taux maximum de l’amende est porté au double.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive personne morale (art. 132-15)',
     question:
@@ -8561,7 +8561,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUESTIONS TABLEAU & CAS PRATIQUES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive : cas pratique',
     question:
         'Un délit puni de 5 ans d’emprisonnement commis en récidive correctionnelle permet au juge de prononcer :',
@@ -8571,7 +8571,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le doublement de la peine maximale est autorisé en récidive correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive : cas pratique',
     question:
         'Une contravention de 5e classe en récidive permet de porter l’amende maximale à :',
@@ -8580,7 +8580,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le plafond légal est fixé à 3 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Effets de la récidive : cas pratique',
     question:
         'La récidive d’une personne morale pour un délit puni de 100 000 € d’amende entraîne :',
@@ -8593,7 +8593,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise le doublement du taux de l’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question: 'La récidive contraventionnelle est :',
@@ -8607,7 +8607,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Elle est spéciale (même contravention) et temporaire (délai d’un an).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -8618,7 +8618,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours prévoit un délai de 12 mois suivant l’expiration ou la prescription de la peine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -8629,7 +8629,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise qu’elle est spéciale : même contravention que le premier terme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Récidive contraventionnelle (art. 132-11)',
     question:
@@ -8640,7 +8640,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise : délai de 3 ans quand la loi érige la récidive de 5e classe en délit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'Une personne condamnée pour un crime commet un autre crime 15 ans après, la condamnation n’est pas effacée. Le régime applicable est :',
@@ -8654,7 +8654,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Pour l’article 132-8, la récidive est perpétuelle tant que la condamnation n’est pas effacée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'Une personne condamnée définitivement pour un délit puni de 10 ans commet un délit puni de 5 ans 8 ans après expiration de la peine. On retient :',
@@ -8668,7 +8668,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Si le second délit est puni d’une peine inférieure à 10 ans, le délai est de 5 ans : 8 ans => hors délai.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'En récidive correctionnelle, les deux infractions doivent être :',
@@ -8678,7 +8678,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La récidive correctionnelle est spéciale : identité ou assimilation exigée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : cas pratiques',
     question:
         'Si la seconde infraction intervient avant que la première condamnation soit définitive, on est :',
@@ -8689,7 +8689,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Récidive : premier terme',
     question: 'Une condamnation ayant bénéficié d’une grâce :',
     options: [
@@ -8703,7 +8703,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Réitération d’infractions',
     question: 'En cas de réitération, la confusion des peines est :',
     options: ['Obligatoire', 'Facultative', 'Exclue'],
@@ -8715,7 +8715,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // CASIER JUDICIAIRE — BASE LÉGALE / DÉFINITION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : notions',
     question:
         'L’organisation et le fonctionnement du casier judiciaire sont prévus par :',
@@ -8729,7 +8729,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que le casier judiciaire est organisé par les articles 768 et suivants du CPP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : notions',
     question: 'Le casier judiciaire national est :',
     options: [
@@ -8742,7 +8742,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours évoque un “casier judiciaire national automatisé”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : notions',
     question: 'Le casier judiciaire national automatisé dépend de l’autorité :',
     options: [
@@ -8759,7 +8759,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°1 — CONTENU / DESTINATAIRES / RETRAIT
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Le bulletin n°1 correspond :',
     options: [
@@ -8772,7 +8772,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le B1 est un relevé intégral contenant toutes les condamnations.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Le bulletin n°1 contient :',
     options: [
@@ -8784,7 +8784,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours indique qu’il contient toutes les condamnations.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Le bulletin n°1 ne peut être délivré qu’à :',
     options: [
@@ -8797,7 +8797,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : le B1 est délivré uniquement aux autorités judiciaires (art. 774 CPP).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Pour les personnes morales, le bulletin n°1 :',
     options: [
@@ -8811,7 +8811,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique un B1 spécifique pour les personnes morales (art. 774-1 CPP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°1',
     question: 'Ne peuvent figurer au bulletin n°1 :',
     options: [
@@ -8829,7 +8829,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°2 — CONTENU / DÉLIVRANCE / EXCLUSIONS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question: 'Le bulletin n°2 est :',
     options: [
@@ -8841,7 +8841,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : B2 = relevé avec exclusions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Le bulletin n°2 (personne physique) peut être délivré notamment :',
@@ -8856,7 +8856,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours liste les autorités pouvant obtenir le B2 (art. 775 et s. CPP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question: 'Le bulletin n°2 peut être délivré :',
     options: [
@@ -8869,7 +8869,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite ces destinataires du B2 (art. 776 CPP).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Le bulletin n°2 peut être délivré aux présidents de tribunaux de commerce et juges commis :',
@@ -8883,7 +8883,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite ces autorités comme destinataires possibles du B2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Le bulletin n°2 peut être demandé par les présidents de conseils départementaux :',
@@ -8896,7 +8896,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours liste ce cas dans les délivrances du B2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Concernant le B2, le tribunal qui prononce une condamnation peut :',
@@ -8910,7 +8910,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le tribunal peut exclure la mention au B2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Lorsque la mention d’une décision est exclue du bulletin n°2, cela entraîne :',
@@ -8925,7 +8925,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique cet effet, tout en précisant des exceptions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°2',
     question:
         'Même si la mention est exclue du bulletin n°2, demeurent notamment :',
@@ -8944,7 +8944,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°2 — PERSONNES MORALES : DESTINATAIRES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : B2 personne morale',
     question:
@@ -8960,7 +8960,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite les destinataires du B2 des personnes morales (art. 776-1 CPP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : B2 personne morale',
     question:
@@ -8979,7 +8979,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BULLETIN N°3 — DESTINATAIRES / PHILOSOPHIE / CONTENU
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question: 'Le bulletin n°3 concerne :',
     options: [
@@ -8992,7 +8992,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que le B3 concerne exclusivement les personnes physiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question: 'Le bulletin n°3 est :',
     options: [
@@ -9004,7 +9004,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : B3 = extrait expurgé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question: 'Le bulletin n°3 est délivré :',
     options: [
@@ -9018,7 +9018,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : délivré à la personne ou représentant légal (mineur / majeur sous tutelle).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : bulletin n°3',
     question:
         'Le législateur a limité le contenu du bulletin n°3 principalement pour :',
@@ -9036,7 +9036,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // COMMUNICATION DES BULLETINS — DEMANDES (PERSONNES PHYSIQUES / MORALES)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : communication',
     question:
         'Pour obtenir communication du relevé intégral, la personne doit adresser sa demande :',
@@ -9050,7 +9050,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise la demande au procureur de la République du lieu de résidence.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : communication',
     question: 'Pour obtenir communication, la personne doit :',
     options: [
@@ -9062,7 +9062,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours précise que l’identité doit être justifiée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : communication',
     question: 'Une personne morale doit adresser sa demande de communication :',
     options: [
@@ -9079,7 +9079,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // UTILISATION PAR LE JUGE — PREUVE DE LA RÉCIDIVE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : preuve de la récidive',
     question:
@@ -9094,7 +9094,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que le juge se base essentiellement sur le casier judiciaire pour prouver la récidive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : preuve de la récidive',
     question: 'Les mentions de quel bulletin font preuve de la récidive ?',
@@ -9104,7 +9104,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que les mentions du bulletin n°1 font preuve de la récidive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Casier judiciaire : preuve de la récidive',
     question:
@@ -9122,7 +9122,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 6 — CONCOURS RÉEL D’INFRACTIONS : NOTION (ART. 132-2 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : notion',
     question:
         'Selon l’article 132-2 du code pénal, il y a concours d’infractions lorsque :',
@@ -9137,7 +9137,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’art. 132-2 C.P. : concours si une infraction est commise avant condamnation définitive pour une autre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : notion',
     question: 'Le concours réel correspond à la situation dans laquelle :',
     options: [
@@ -9151,7 +9151,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Définition du cours : plusieurs infractions sans condamnation définitive entre elles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : hypothèses',
     question:
         'Un individu commet un vol, est jugé mais le jugement n’est pas définitif, puis commet un nouveau vol. Il s’agit :',
@@ -9165,7 +9165,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'La 1re condamnation n’est pas définitive : on est en concours réel (art. 132-2 C.P.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : hypothèses',
     question:
         'Un individu outrage un gardien de la paix, se rebelle, puis commet des violences lors de la même intervention :',
@@ -9179,7 +9179,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne l’exemple d’infractions quasi concomitantes (outrage, rébellion, violences).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : vocabulaire',
     question: 'Le terme “concours idéal” est utilisé lorsque :',
     options: [
@@ -9195,7 +9195,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 7 — SOLUTION LÉGALE : ART. 132-3 / 132-4 + PRINCIPES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : solution légale',
     question:
         'Sous l’ancien code pénal (art. 5), le principe en cas de plusieurs crimes ou délits était :',
@@ -9209,7 +9209,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours rappelle l’art. 5 ancien : seule la peine la plus forte était prononcée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-3',
     question:
         'En cas de concours de plusieurs infractions poursuivies dans une même procédure (art. 132-3 C.P.), le juge peut :',
@@ -9223,7 +9223,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Art. 132-3 : chacune des peines encourues peut être prononcée (avec limites pour peines de même nature).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-3',
     question:
         'Quand plusieurs peines de même nature sont encourues en poursuite unique (art. 132-3 C.P.), il est prononcé :',
@@ -9237,7 +9237,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : une seule peine de même nature, plafonnée au maximum légal le plus élevé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-4',
     question:
         'En cas de concours poursuivi à l’occasion de procédures distinctes (art. 132-4 C.P.), les peines :',
@@ -9252,7 +9252,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Art. 132-4 : exécution cumulative plafonnée, avec possibilité de confusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : art. 132-4',
     question:
         'Toujours selon l’art. 132-4 C.P., la confusion des peines de même nature peut être :',
@@ -9262,7 +9262,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise la possibilité de confusion totale ou partielle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Concours réel : philosophie',
     question: 'Le cours indique que le principe général en concours réel est :',
     options: [
@@ -9278,7 +9278,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 8 — CONFLITS DE QUALIFICATIONS : NON BIS IN IDEM / INCOMPATIBLES / ABSORBANTES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications',
     question: 'Le conflit de qualifications apparaît lorsque :',
     options: [
@@ -9292,7 +9292,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : conflit de qualifications si mêmes faits susceptibles de plusieurs infractions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications',
     question: 'Le principe est :',
     options: [
@@ -9305,7 +9305,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : interdiction du cumul de qualifications si les faits sont identiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Conflits de qualifications : incompatibles',
     question: 'Les qualifications sont dites incompatibles lorsque :',
@@ -9319,7 +9319,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : qualifications incompatibles/exclusives, impossibilité de retenir les deux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications : exemples',
     question:
         'Selon le cours, est un exemple de qualifications incompatibles :',
@@ -9333,7 +9333,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite meurtre / homicide involontaire comme incompatibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Conflits de qualifications : exemples',
     question:
         'Selon le cours, est un exemple de qualifications incompatibles :',
@@ -9347,7 +9347,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite recel et infraction d’origine comme incompatibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Non bis in idem',
     question: 'La règle “non bis in idem” signifie :',
     options: [
@@ -9360,7 +9360,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : non bis in idem = pas de double déclaration de culpabilité pour un même fait autrement qualifié.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Non bis in idem : formulation',
     question: 'Selon le cours, la Cour de cassation énonce que :',
     options: [
@@ -9373,7 +9373,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Formule du cours relative à la règle non bis in idem.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Qualifications absorbantes',
     question: 'Il y a “qualification absorbante” lorsque :',
     options: [
@@ -9387,7 +9387,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours décrit les qualifications absorbantes de cette façon.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Qualifications générales/spéciales',
     question:
         'Le conflit “qualification générale / qualification spéciale” signifie que :',
@@ -9405,7 +9405,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 9 — DOMAINES D’APPLICATION + ATTÉNUATIONS/EXCLUSIONS + EXCEPTIONS SPÉCIALES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Non-cumul : portée',
     question: 'La règle du non-cumul des peines en concours réel a :',
     options: [
@@ -9417,7 +9417,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : principe d’application générale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Atténuations : contraventions',
     question: 'Selon l’article 132-7 C.P., en matière de contraventions :',
     options: [
@@ -9429,7 +9429,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Art. 132-7 : cumul des amendes contraventionnelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Atténuations : sanctions non pénales',
     question:
         'La jurisprudence exclut la règle du non-cumul lorsque sont en concours :',
@@ -9443,7 +9443,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : non-cumul écarté en concours peine + sanction disciplinaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Atténuations : fiscal',
     question: 'Selon le cours, les amendes fiscales :',
     options: [
@@ -9456,7 +9456,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours précise que les amendes fiscales se cumulent avec les peines de droit commun.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exclusion : nature des peines',
     question:
         'Selon l’article 132-5 C.P., les peines privatives de liberté sont :',
@@ -9469,7 +9469,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 132-5, privatives de liberté = même nature.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exclusion : nature des peines',
     question:
         'Conséquence (art. 132-5) : des peines privatives de liberté ne peuvent se cumuler que :',
@@ -9483,7 +9483,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : cumul plafonné au maximum de la peine la plus forte pour peines de même nature.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Peines complémentaires',
     question: 'En concours réel, les peines complémentaires :',
     options: [
@@ -9498,7 +9498,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // EXCEPTIONS SPÉCIALES (cumul imposé)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : évasion',
     question:
         'Selon l’article 434-31 C.P., les peines prononcées pour l’évasion :',
@@ -9511,7 +9511,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 434-31, cumul des peines d’évasion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : rébellion de prisonniers',
     question:
         'Selon l’article 433-9 C.P., la peine pour rébellion (de prisonniers) :',
@@ -9524,7 +9524,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 433-9, cumul avec la peine en cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : usurpation d’identité',
     question:
         'Selon l’article 434-23 C.P., les peines pour usurpation d’identité :',
@@ -9538,7 +9538,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite l’exception de cumul de l’art. 434-23.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : insolvabilité',
     question:
         'Selon l’article 314-8 al. 2 C.P., en matière d’organisation frauduleuse d’insolvabilité, le tribunal peut décider :',
@@ -9552,7 +9552,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : art. 314-8 al. 2, le tribunal peut décider de ne pas confondre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : refus d’obtempérer',
     question:
         'Selon l’article L.233-1/II du code de la route, les peines pour refus d’obtempérer :',
@@ -9567,7 +9567,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite l’exception de cumul en matière de refus d’obtempérer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : CDO en détention',
     question:
         'Selon l’article 132-6-1 C.P., lorsqu’une infraction (706-73 / 706-73-1 CPP) est commise pendant la détention :',
@@ -9581,7 +9581,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : art. 132-6-1, cumul sans confusion en principe.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Exceptions : CDO en détention',
     question:
         'Toujours selon l’article 132-6-1 C.P., la dernière juridiction peut décider de ne pas appliquer ces dispositions :',
@@ -9599,7 +9599,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 10 — MISE EN ŒUVRE : POURSUITE UNIQUE vs PLURALITÉ DE POURSUITES + CONFUSION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : poursuite unique',
     question: 'En poursuite unique, les infractions en concours :',
     options: [
@@ -9612,7 +9612,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : poursuite unique = juridiction unique examinant chaque infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : poursuite unique',
     question:
         'En poursuite unique, le cumul des peines de nature différente est :',
@@ -9626,7 +9626,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : art. 132-3 autorise le prononcé cumulatif de peines de nature différente.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : poursuite unique',
     question: 'En poursuite unique, le cumul a un caractère :',
     options: [
@@ -9639,7 +9639,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : cumul autorisé mais pas obligatoire, le juge peut ne prononcer que certaines peines.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Mise en œuvre : peine la plus forte',
     question:
         'Pour déterminer la peine la plus forte encourue, le cours précise qu’il faut tenir compte :',
@@ -9655,7 +9655,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Cas pratique “vol + escroquerie”
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Poursuite unique : cas pratique',
     question:
         'Vol + escroquerie en concours réel (poursuite unique) : la peine d’emprisonnement prononcée ne peut dépasser :',
@@ -9671,7 +9671,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Pluralité de poursuites
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Mise en œuvre : pluralité de poursuites',
     question: 'La pluralité de poursuites correspond notamment au cas où :',
@@ -9688,7 +9688,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Confusion : principe
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : principe',
     question:
         'En pluralité de poursuites, lorsque les peines de même nature cumulées dépassent le maximum légal :',
@@ -9701,7 +9701,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : si cumul > maximum légal, confusion obligatoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : principe',
     question:
         'Lorsque le cumul aboutit à une peine au-dessous du maximum légal :',
@@ -9715,7 +9715,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : si cumul < maximum, confusion possible mais non obligatoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : portée',
     question: 'La confusion des peines peut être :',
     options: [
@@ -9727,7 +9727,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours : confusion totale ou partielle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Confusion des peines : peines complémentaires',
     question: 'La confusion peut s’appliquer :',
@@ -9743,7 +9743,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Peines perpétuelles
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion : perpétuité',
     question: 'Le cours indique que les peines perpétuelles :',
     options: [
@@ -9758,7 +9758,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Effets de la confusion
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : effets',
     question:
         'La confusion enlève aux peines confondues leur existence propre :',
@@ -9768,7 +9768,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les condamnations subsistent, la confusion n’efface pas l’existence propre des peines.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : effets',
     question:
         'Selon le cours, l’exécution de la peine la plus forte entraîne :',
@@ -9785,7 +9785,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   ),
 
   // Procédure de la confusion : art. 132-4 CP et 710-1 CPP
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : procédure',
     question: 'La procédure de confusion des peines est prévue notamment par :',
     options: [
@@ -9797,7 +9797,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite expressément 132-4 C.P. et 710-1 C.P.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : procédure',
     question:
         'La juridiction saisie de la 2e infraction, si elle connaît le passé judiciaire, peut :',
@@ -9811,7 +9811,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : la juridiction de la 2e infraction peut prononcer la confusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : requête',
     question:
         'Si la juridiction ne s’est pas prononcée sur la confusion, une requête peut être adressée au procureur de la République par :',
@@ -9824,7 +9824,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours cite ces deux possibilités.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : compétence',
     question:
         'Après définitivité, la demande de confusion de peines du condamné est portée devant :',
@@ -9838,7 +9838,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : demande portée devant le tribunal correctionnel (décision susceptible d’appel).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Confusion des peines : appel',
     question:
         'La décision du tribunal correctionnel sur la confusion peut faire l’objet :',
@@ -9851,7 +9851,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours mentionne la possibilité d’appel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Confusion des peines : tribunaux compétents',
     question: 'Sont compétents pour statuer sur la confusion :',
@@ -9865,7 +9865,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le cours liste ces compétences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Pluralité d’infractions — Confusion des peines : lieu de détention',
     question:
@@ -9884,7 +9884,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // BLOC 6→10 — PACK CAS PRATIQUES / QCM PIÈGES (RENFORCEMENT)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Cas pratique : non bis in idem',
     question:
         'Un même fait est qualifié à la fois de “viol commis par violence” et de “violences volontaires” sur les mêmes faits. Le cours indique qu’on est dans :',
@@ -9898,7 +9898,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : une qualification peut absorber l’autre si elle constitue un élément/circonstance de l’autre.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Cas pratique : cumul possible',
     question:
         'Un accident cause un décès et une autre victime blessée avec I.T.T. ≤ 3 mois :',
@@ -9912,7 +9912,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours donne cet exemple de cumul possible : victimes différentes et éléments distincts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Cas pratique : faux & escroquerie',
     question:
         'Production de fausses attestations et tromperie pour obtenir la vente : le cours indique que l’auteur peut être poursuivi cumulativement pour :',
@@ -9926,7 +9926,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : faux/usage de faux et escroquerie ne sont pas incompatibles et ne s’absorbent pas nécessairement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Piège : faits distincts',
     question:
         'Si les faits incriminés sont distincts, le cumul de qualifications est :',
@@ -9941,7 +9941,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : pièges',
     question:
         'Un extrait délivré uniquement à la personne concernée correspond :',
@@ -9951,7 +9951,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le B3 est délivré uniquement à l’intéressé (ou représentant légal dans certains cas).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : pièges',
     question:
         'Une condamnation effacée par amnistie peut-elle encore figurer au B1 ?',
@@ -9961,7 +9961,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : les condamnations effacées par l’amnistie ne peuvent figurer au B1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : pièges',
     question: 'Le B2 peut être utilisé pour :',
     options: [
@@ -9978,7 +9978,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // SÉRIES “QUI PEUT L’OBTENIR ?” — BULLETIN N°2 (ENTRAINEMENT)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : B2 destinataires',
     question:
         'Le bulletin n°2 peut être délivré aux autorités compétentes pour recevoir les déclarations de candidatures à une élection afin de vérifier certaines peines d’inéligibilité :',
@@ -9988,7 +9988,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours cite ce cas : vérification des mentions liées à certaines peines (131-26 et suivants).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : B2 destinataires',
     question:
         'Le bulletin n°2 peut être délivré à des dirigeants de personnes morales exerçant auprès des mineurs, pour le recrutement, sous condition que :',
@@ -10006,7 +10006,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // PACK “DIFFÉRENCES” — B1 / B2 / B3
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : comparatif',
     question: 'Quel bulletin est un relevé intégral ?',
     options: ['B1', 'B2', 'B3'],
@@ -10014,7 +10014,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le B1 est le relevé intégral des fiches.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : comparatif',
     question: 'Quel bulletin est un relevé avec exclusions ?',
     options: ['B1', 'B2', 'B3'],
@@ -10022,7 +10022,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
     explanation: 'Le B2 exclut certaines condamnations.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : comparatif',
     question:
         'Quel bulletin est un extrait expurgé délivré au seul intéressé ?',
@@ -10035,7 +10035,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
   //////////////////////////////////////////////////////////////////////////////
   // QUESTIONS “CASIER & RÉCIDIVE” — LIENS DIRECTS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire & récidive',
     question:
         'Pour que la récidive puisse être retenue, la condamnation antérieure doit être :',
@@ -10049,7 +10049,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours indique que la condamnation doit encore être inscrite au casier au moment de la seconde infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire & récidive',
     question:
         'Une condamnation effacée par amnistie peut servir de premier terme de récidive :',
@@ -10059,7 +10059,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
         'Le cours : si la condamnation a été effacée (amnistie), elle ne peut plus servir de premier terme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pluralité d’infractions — Casier judiciaire : contestation',
     question:
         'Si l’intéressé conteste le contenu utilisé pour établir la récidive, la preuve peut nécessiter :',
@@ -10079,7 +10079,7 @@ final List<QuizQuestion> questionGPPluraliteInfractions = [
 // PAGE
 // ============================================================================
 class QuizSanction extends StatefulWidget {
-  static const String routeName = '/gpx/sanction/quiz/sanction_page';
+  static const String routeName = '/gpx/dps/sanction/quiz/sanction_page';
   final String uid;
   final String email;
 
@@ -10421,7 +10421,7 @@ class _QuizSanctionState extends State<QuizSanction>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -10624,7 +10624,7 @@ class _QuizSanctionState extends State<QuizSanction>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -10807,7 +10807,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -11340,10 +11339,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -11714,7 +11714,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -11755,9 +11755,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

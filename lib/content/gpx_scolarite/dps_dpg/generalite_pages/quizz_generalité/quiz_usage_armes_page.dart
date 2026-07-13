@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsUsageArmes = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre général",
     question:
         "Le cadre légal spécifique d’usage des armes par les policiers et gendarmes est prévu par :",
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le document précise que le cadre commun aux agents de la police et de la gendarmerie nationales est fixé par l’article L. 435-1 du Code de la sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre général",
     question:
         "L’article L. 435-1 du Code de la sécurité intérieure s’applique aux policiers lorsqu’ils :",
@@ -127,7 +127,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "L’article vise les policiers et gendarmes régulièrement armés qui font usage de leur arme dans l’exercice de leurs fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "Combien de conditions préalables l’article L. 435-1 du Code de la sécurité intérieure impose-t-il avant tout usage d’une arme par un policier ?",
@@ -137,7 +137,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte indique que l’article L. 435-1 du Code de la sécurité intérieure impose trois conditions préalables à l’usage d’une arme : l’exercice des fonctions, le port de l’uniforme ou d’insignes apparents, et l’absolue nécessité avec proportionnalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "La première condition préalable à l’usage d’une arme par un policier est :",
@@ -151,7 +151,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le policier doit agir dans l’exercice de ses fonctions, soit pendant son temps de service, soit hors service lorsqu’il agit au titre des obligations d’assistance aux personnes en danger.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "La deuxième condition préalable à l’usage d’une arme par un policier est :",
@@ -166,7 +166,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte impose que le policier soit en uniforme ou porte des insignes extérieurs et apparents de sa qualité (par exemple le brassard police).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables",
     question:
         "La troisième condition préalable exige que l’usage de l’arme soit :",
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "L’article L. 435-1 du Code de la sécurité intérieure impose une absolue nécessité et une stricte proportionnalité entre la menace et la riposte armée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policiers adjoints",
     question:
         "Les policiers adjoints peuvent-ils conserver leur arme individuelle en dehors des heures de service ?",
@@ -195,7 +195,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le document précise que, contrairement aux fonctionnaires actifs, les policiers adjoints ne peuvent concevoir l’usage de leur arme hors service car ils ne sont pas autorisés à la conserver en dehors des heures de service.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situations — Vue d’ensemble",
     question:
         "Lorsque les trois conditions préalables sont remplies, l’article L. 435-1 du Code de la sécurité intérieure autorise l’usage de l’arme dans :",
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le cadre juridique spécifique prévoit cinq situations limitativement énumérées dans lesquelles l’usage de l’arme peut intervenir.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situations — Somations",
     question:
         "Dans plusieurs situations prévues par l’article L. 435-1 (défense de lieux, fuite d’un individu dangereux, véhicule dangereux), les sommations :",
@@ -219,7 +219,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte parle de sommations obligatoires faites à haute voix, sauf impossibilité pratique liée à l’urgence ou à la nature de la menace.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lien avec la légitime défense",
     question:
         "En dehors des cinq situations prévues à l’article L. 435-1 du Code de la sécurité intérieure (et hors dispersion d’attroupement), quel régime de droit commun reste applicable pour justifier l’usage des armes ?",
@@ -235,7 +235,7 @@ final List<QuizQuestion> questionsUsageArmes = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 1 — Atteintes à la vie",
     question:
         "La première situation de l’article L. 435-1 du Code de la sécurité intérieure permet l’usage des armes lorsque :",
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "La situation 1 vise les atteintes à la vie ou à l’intégrité physique du policier ou d’un tiers, ou la menace d’une telle atteinte par des personnes armées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 1 — Atteintes à la vie",
     question:
         "Dans la situation 1 (atteintes à la vie ou à l’intégrité physique), le texte indique qu’il n’est pas prévu de procéder à des sommations car :",
@@ -264,7 +264,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Compte tenu de l’imminence de l’atteinte à la vie ou à l’intégrité physique, la réalisation de sommations peut être incompatible avec la sauvegarde des personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 2 — Lieux occupés",
     question:
         "La deuxième situation de l’article L. 435-1 concerne la défense des lieux occupés par les policiers ou des personnes qui leur sont confiées. L’usage des armes est possible :",
@@ -279,7 +279,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte prévoit des sommations obligatoires à haute voix avant l’usage des armes pour défendre des lieux ou des personnes confiées, sauf impossibilité matérielle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 2 — Lieux occupés",
     question:
         "La défense des lieux occupés à titre permanent par les policiers peut viser par exemple :",
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le document cite comme exemples un poste de police ou un centre de rétention administrative provisoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 3 — Fuite individu dangereux",
     question:
         "Dans la troisième situation (fuite d’un individu dangereux placé sous leur garde), l’usage des armes est possible après sommations lorsque :",
@@ -308,7 +308,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte vise la personne placée sous garde à vue ou sous escorte qui tente de s’échapper alors qu’elle est sous la garde des policiers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 3 — Individu dangereux",
     question:
         "Dans la troisième situation, l’usage des armes n’est légitime que si les policiers disposent :",
@@ -323,7 +323,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte exige des raisons réelles et objectives de penser que l’individu, au moment de sa fuite, peut porter atteinte à la vie ou à l’intégrité physique des policiers ou d’autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Véhicule dangereux",
     question:
         "Dans la quatrième situation, les policiers peuvent faire usage de leur arme pour immobiliser un véhicule lorsque :",
@@ -338,7 +338,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "L’article vise le refus d’obtempérer à un ordre d’arrêt accompagné de raisons réelles et objectives de penser que le véhicule ou ses occupants sont dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Véhicule dangereux",
     question: "L’ordre d’arrêt, dans la quatrième situation, doit être :",
     options: [
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte précise que l’ordre d’arrêt doit être dépourvu d’ambiguïté et clairement entendu par le conducteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Limites",
     question:
         "Selon l’article L. 435-1, il ne peut être fait usage des armes pour immobiliser un véhicule dans le seul but :",
@@ -367,7 +367,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte rappelle que l’on ne peut pas utiliser l’arme pour contraindre un véhicule à s’arrêter lorsque ce véhicule n’est pas dangereux pour ses occupants ou pour autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 5 — Périple meurtrier",
     question:
         "Dans la cinquième situation, le périple meurtrier, les policiers peuvent faire usage de leur arme contre un individu lorsque la première condition suivante est remplie :",
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le périple meurtrier concerne un individu qui vient de commettre ou de tenter de commettre un ou plusieurs meurtres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 5 — Périple meurtrier",
     question:
         "Toujours dans la cinquième situation, les policiers doivent avoir des raisons réelles et objectives de penser que :",
@@ -399,7 +399,7 @@ final List<QuizQuestion> questionsUsageArmes = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions préalables — Exercice des fonctions",
     question:
         "Un policier hors service, en tenue civile, assiste à une agression mortelle et intervient en utilisant son arme sans porter d’insigne extérieur. Pour apprécier la légalité de son geste, on pourra :",
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le cadre spécial ne peut s’appliquer faute d’insignes apparents, mais le policier peut encore invoquer la légitime défense de droit commun s’il en remplit les conditions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Somations — Appréciation",
     question:
         "Dans une situation de fuite d’un individu dangereux placé sous garde, les sommations ne sont pas matériellement possibles (tir immédiat nécessaire pour protéger une victime menacée d’un couteau). Juridiquement :",
@@ -429,7 +429,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte prévoit les sommations « sauf impossibilité », ce qui permet de les écarter en cas de danger immédiat pour la vie ou l’intégrité physique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 3 — Individu dangereux",
     question:
         "Un individu placé en garde à vue pour un délit mineur s’enfuit en courant, sans antécédent violent connu. Le policier, après deux sommations, fait usage de son arme pour l’empêcher de fuir. Quel critère fait le plus défaut ?",
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "La seule fuite ne suffit pas : il faut en plus des raisons réelles et objectives de penser que l’individu représente une menace grave pour la vie ou l’intégrité physique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 4 — Véhicule",
     question:
         "Lors d’un simple refus d’obtempérer à un contrôle routier, un véhicule prend la fuite à faible vitesse sur une route déserte. Aucun élément ne laisse penser que le conducteur est armé ou dangereux. Le tir sur le véhicule pour le contraindre à s’arrêter :",
@@ -459,7 +459,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le texte interdit d’utiliser les armes pour contraindre un véhicule à s’arrêter en l’absence de dangerosité réelle de ce véhicule ou de ses occupants.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Situation 5 — Périple meurtrier",
     question:
         "Dans la situation de périple meurtrier, l’usage des armes par les policiers suppose notamment que :",
@@ -474,7 +474,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Les conditions cumulatives sont la commission ou tentative de meurtre, la probabilité d’une réitération dans un temps rapproché et le caractère exclusif du recours aux armes pour l’empêcher.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lien avec la légitime défense",
     question:
         "Un policier en uniforme, dans l’exercice de ses fonctions, fait usage de son arme dans une situation qui n’entre dans aucune des cinq hypothèses de l’article L. 435-1. Pour apprécier sa responsabilité, il conviendra :",
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le régime spécial n’exclut pas le recours au régime général de la légitime défense lorsque les conditions de ce dernier sont remplies.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupement — Lien L. 211-9",
     question: "L’article L. 211-9 du Code de la sécurité intérieure traite :",
     options: [
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le document rappelle que la dispersion d’un attroupement relève d’un régime spécifique prévu à l’article L. 211-9 du Code de la sécurité intérieure.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appréciation in concreto",
     question:
         "Pour apprécier la condition d’« absolue nécessité » posée par l’article L. 435-1, le juge tient compte notamment :",
@@ -517,7 +517,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Comme pour la légitime défense, la nécessité et la proportionnalité sont appréciées in concreto à partir de tous les éléments de la situation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Policier adjoint — Hors service",
     question:
         "Un policier adjoint conserve illégalement son arme à son domicile et s’en sert pour intervenir dans une agression de rue en dehors de tout service. Même si les critères de la légitime défense sont par ailleurs remplis, sur le terrain de l’article L. 435-1 :",
@@ -534,7 +534,7 @@ final List<QuizQuestion> questionsUsageArmes = [
   ),
 
   // ===================== NIVEAU EXPERT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation régimes spéciaux / droit commun",
     question:
         "Lorsque l’usage des armes par un policier ne remplit pas une des conditions préalables de l’article L. 435-1 du Code de la sécurité intérieure mais que la situation correspond à une agression mortelle en cours, la juridiction pénale pourra :",
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le cadre spécial n’exclut pas l’application subsidiaire du régime général de la légitime défense dès lors que ses conditions sont réunies.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Périple meurtrier — Exclusivité du moyen",
     question:
         "Dans la situation de périple meurtrier, l’exclusivité du moyen signifie que :",
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "La loi exige que l’usage de l’arme ait pour but exclusif d’empêcher la réitération des meurtres lorsqu’aucun autre moyen n’est réellement disponible.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicule dangereux — Analyse fine",
     question:
         "Un véhicule vient de forcer un barrage, a tenté de percuter des piétons et continue sa course à grande vitesse vers une zone très fréquentée. Les policiers, après sommations à la radio et gestes réglementaires, ouvrent le feu sur le conducteur. L’analyse juridique au regard de l’article L. 435-1 se fonde principalement sur :",
@@ -579,7 +579,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le véhicule-bélier rend la menace grave et actuelle, ce qui permet d’entrer dans la quatrième situation si les autres conditions sont remplies.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Somations — Formule",
     question:
         "Les sommations en matière d’usage des armes doivent être faites à haute voix avec des formules explicites telles que :",
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionsUsageArmes = [
         "Le document reprend l’exemple classique de sommations successives « Halte police » puis « Halte ou je fais feu », qui doivent se succéder dans un temps court.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appréciation judiciaire",
     question:
         "En pratique, lors d’un contentieux pénal sur l’usage des armes, les juges vont confronter la version du policier :",
@@ -615,7 +615,7 @@ final List<QuizQuestion> questionsUsageArmes = [
 // PAGE
 // ============================================================================
 class QuizUsageArmesPage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/usagearmes';
+  static const String routeName = '/gpx/dps/generalites/quiz/usagearmes';
   final String uid;
   final String email;
 
@@ -942,7 +942,7 @@ class _QuizUsageArmesPageState extends State<QuizUsageArmesPage>
         // hauteur “structurelle” du bas (bouton + marges)
         const double kButtonHeight = 56;
         const double kButtonVPad = 16; // safe area min bottom padding = 16
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1144,7 +1144,7 @@ class _QuizUsageArmesPageState extends State<QuizUsageArmesPage>
       barrierDismissible: true,
       barrierLabel: 'Résultat',
       // On garde un léger assombrissement, le flou sera appliqué par-dessus.
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1298,7 +1298,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1826,10 +1825,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2200,7 +2200,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2241,9 +2241,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

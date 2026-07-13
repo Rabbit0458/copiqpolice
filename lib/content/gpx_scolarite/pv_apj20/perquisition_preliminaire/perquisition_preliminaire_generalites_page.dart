@@ -115,35 +115,35 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Perquisition préliminaire : "),
-                const TextSpan(
+                TextSpan(text: "Perquisition préliminaire : "),
+                TextSpan(
                   text: "article 76 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (assentiment / autorisation JLD et règles spécifiques, notamment pour majeurs protégés).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Heures légales : "),
-                const TextSpan(
+                TextSpan(text: "Heures légales : "),
+                TextSpan(
                   text: "article 59 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " (6h à 21h)."),
+                TextSpan(text: " (6h à 21h)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Biens confiscables : "),
-                const TextSpan(
+                TextSpan(text: "Biens confiscables : "),
+                TextSpan(
                   text: "article 131-21 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (confiscation — pièces/biens pouvant faire l’objet d’une saisie).",
                 ),
@@ -159,88 +159,88 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Lieu & temps de la perquisition"),
+            children: const [
+              _SubTitle("A) Lieu & temps de la perquisition"),
 
-              const _SubTitle("1) Lieu de la perquisition"),
-              const _Paragraph(
+              _SubTitle("1) Lieu de la perquisition"),
+              _Paragraph(
                 "Une perquisition peut être réalisée :\n"
                 "• au domicile de toute personne susceptible d’avoir participé à l’infraction ;\n"
                 "• au domicile de toute personne susceptible de détenir des pièces, objets ou documents relatifs aux faits.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Définition du domicile : tout lieu où une personne a son principal établissement, ainsi que tout lieu où, "
                         "qu’elle y habite ou non, elle a le droit de se dire chez elle (peu importe le titre d’occupation et l’affectation des locaux).",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Peut inclure : résidence, lieu de séjour occasionnel (propriétaire ou occupant précaire), "
                 "dépendances et annexes indissociables proches du lieu principal. Sont assimilés : box/garage, parking souterrain, cave privative.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Lieux protégés / règles particulières"),
-              const _Paragraph(
+              _SubTitle("Lieux protégés / règles particulières"),
+              _Paragraph(
                 "Certains lieux privés sont protégés :\n"
                 "• certains n’autorisent aucune perquisition (ex. locaux diplomatiques/consulaires) ;\n"
                 "• d’autres imposent des règles spécifiques (ex. cabinet/domicile d’un avocat, entreprise de presse, "
                 "cabinet d’un médecin, notaire/huissier, lieux couverts par le secret défense, locaux d’une juridiction, "
                 "ou domicile d’une personne exerçant des fonctions juridictionnelles).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Majeur protégé"),
+              _SubTitle("Majeur protégé"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si la perquisition doit avoir lieu au domicile d’un majeur protégé qui ne peut pas exercer seul son droit de s’opposer : l’OPJ avise au préalable le tuteur/curateur. "
                       "L’assentiment ne peut être donné qu’après entretien tuteur/curateur ↔ majeur protégé. À défaut : autorisation JLD. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 76 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Temps de la perquisition"),
+              _SubTitle("2) Temps de la perquisition"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les perquisitions se déroulent entre 6h00 et 21h00. Une perquisition débutée avant 21h00 peut se poursuivre au-delà. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 59 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Assentiment préalable"),
+              _SubTitle("B) Assentiment préalable"),
 
-              const _SubTitle("1) Assentiment exprès et écrit"),
+              _SubTitle("1) Assentiment exprès et écrit"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En enquête préliminaire, les perquisitions/saisies/scellés de pièces à conviction ou de biens confiscables nécessitent l’assentiment exprès et écrit du maître des lieux. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 76 alinéa 1 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’autorisation doit être :\n"
                 "• rédigée avant la perquisition,\n"
                 "• manuscrite,\n"
@@ -248,46 +248,46 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
                 "Elle est personnelle et irrévocable.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Absence d’assentiment"),
+              _SubTitle("2) Absence d’assentiment"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si l’infraction est un crime ou un délit puni d’une peine d’emprisonnement égale ou supérieure à 3 ans, "
                       "la perquisition peut avoir lieu sans assentiment, sur autorisation du juge des libertés et de la détention, à la requête du procureur. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 76 alinéa 4 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’autorisation doit être écrite et motivée. Elle doit préciser, à peine de nullité :\n"
                 "• la qualification de l’infraction,\n"
                 "• l’adresse des lieux où les opérations peuvent être effectuées.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Déroulement de la perquisition"),
-              const _Paragraph(
+              _SubTitle("C) Déroulement de la perquisition"),
+              _Paragraph(
                 "Dès l’entrée dans les lieux : inspection rapide de sécurité de toutes les pièces.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Présence de l’occupant"),
-              const _Paragraph(
+              _SubTitle("1) Présence de l’occupant"),
+              _Paragraph(
                 "La perquisition doit être effectuée en présence de la personne chez qui elle a lieu, "
                 "qui doit assister personnellement et de manière constante à l’opération.\n"
                 "En cas de refus ou d’impossibilité : elle peut désigner une personne pour la représenter.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Rétention sur place"),
-              const _Paragraph(
+              _SubTitle("2) Rétention sur place"),
+              _Paragraph(
                 "Toute personne présente (autre que le maître des lieux) peut être retenue sur place si elle est susceptible "
                 "de fournir des renseignements sur les objets/documents saisis, uniquement le temps strictement nécessaire.",
               ),
@@ -302,46 +302,46 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
             cardColor: cardFouilles,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La fouille est la recherche, dans tous autres endroits qu’un lieu immobilier clos, d’indices ou d’objets confiscables "
                 "utiles à la manifestation de la vérité et intéressant l’enquête.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) La fouille intégrale"),
+              _SubTitle("A) La fouille intégrale"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Elle ne peut être pratiquée que sur une personne gardée à vue, pour les nécessités de l’enquête, décidée par un OPJ. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 63-7 du C.P.P.",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il ne peut y être recouru que si une palpation ou l’utilisation de moyens électroniques de détection ne peuvent être réalisées.\n"
                 "Assimilée à une perquisition : soumise à l’assentiment de la personne, mais sans contrainte des heures légales.\n"
                 "Elle doit être réalisée dans un espace fermé et par une personne du même sexe.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) La fouille de véhicule"),
-              const _Paragraph(
+              _SubTitle("B) La fouille de véhicule"),
+              _Paragraph(
                 "Le véhicule n’est pas considéré comme un domicile (ni le prolongement du domicile).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La fouille de véhicule obéit aux mêmes règles que la perquisition :\n"
                 "• réalisée en présence de la personne trouvée en possession du véhicule,\n"
                 "• après autorisation délivrée par celle-ci dans des formes identiques à l’assentiment de perquisition.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Heures légales :\n"
                 "• pas d’obligation si le véhicule n’a jamais constitué un domicile,\n"
                 "• MAIS si le véhicule est dans l’enceinte du domicile perquisitionné (garage/cour), la fouille suit le régime du domicile (respect des heures légales).",
@@ -357,27 +357,27 @@ class PerquisitionPreliminaireGeneralitesPage extends StatelessWidget {
             cardColor: cardCaution,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _BulletPoint(
+            children: const [
+              _BulletPoint(
                 text:
                     "Toujours qualifier le cadre : préliminaire = assentiment écrit (sauf autorisation JLD).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Respecter les heures légales 6h–21h (sauf cas particulier prévu).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Présence du maître des lieux (ou représentant) + inspection de sécurité dès l’entrée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Attention aux lieux protégés et aux majeurs protégés (avis tuteur/curateur ou JLD).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Astuce rédaction : toujours faire apparaître clairement le fondement (CPP/CP), "
                         "l’assentiment (ou l’autorisation JLD) et les horaires, pour sécuriser la procédure.",
@@ -420,10 +420,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -488,7 +488,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -531,7 +531,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -593,7 +593,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -604,10 +604,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -619,13 +618,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -638,13 +636,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

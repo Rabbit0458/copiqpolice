@@ -116,38 +116,38 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le refus initial de dépistage (alcool ou stupéfiants) n’est pas, en lui-même, l’infraction : il déclenche l’obligation de se soumettre aux vérifications. Si la personne refuse ensuite les vérifications, elle commet un délit : ",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "• Refus stupéfiants : "),
+                TextSpan(text: "• Refus stupéfiants : "),
                 TextSpan(
                   text: "Article L. 235-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " — 2 ans d’emprisonnement / 4 500 € d’amende.",
                 ),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "• Refus alcool : "),
+                TextSpan(text: "• Refus alcool : "),
                 TextSpan(
                   text: "Article L. 234-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " — 2 ans d’emprisonnement / 4 500 € d’amende.",
                 ),
               ]),
@@ -260,16 +260,16 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "7) Dépistages et résultats (alcool & stupéfiants) / ou refus",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Préciser la nature des dépistages effectués (alcool, stupéfiants), l’heure, le matériel utilisé (si pertinent), "
                 "et consigner les résultats. En cas de refus : le mentionner clairement.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -278,55 +278,55 @@ class ConduitePosteDepistagesPositifsOuRefusPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Si le dépistage stupéfiants est positif : préciser la/les familles concernées par le test positif : "
                 "cannabiniques, amphétaminiques, cocaïniques ou opiacés.",
               ),
-              const SizedBox(height: 14),
-              const _SubTitle(
+              SizedBox(height: 14),
+              _SubTitle(
                 "8) Information relative à l’obligation de se soumettre aux vérifications",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Rappeler que le refus de dépistage (alcool ou stupéfiants) ne constitue pas une infraction pénale en soi, "
                 "mais entraîne l’obligation de se soumettre aux vérifications.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le conducteur est face à une alternative : consentir aux vérifications, ou les refuser — auquel cas il commet :\n",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "• le délit de refus de se soumettre aux analyses/examens stupéfiants : ",
                 ),
                 TextSpan(
                   text: "Article L. 235-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "• le délit de refus de se soumettre aux vérifications alcool : ",
                 ),
                 TextSpan(
                   text: "Article L. 234-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -427,10 +427,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -495,7 +495,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -538,7 +538,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -600,7 +600,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -611,10 +611,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -626,13 +625,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -645,13 +643,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -697,10 +691,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -806,8 +800,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -875,10 +869,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -945,10 +939,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -987,9 +981,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1024,7 +1018,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

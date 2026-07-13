@@ -154,10 +154,10 @@ class GiletHauteVisibilitePage extends StatelessWidget {
                 text: "Autres véhicules : à portée de main du conducteur.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Contrôle",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le gilet doit être présenté à toute réquisition. En cas de non-présentation immédiate, "
                         "le conducteur n’est pas tenu de justifier de sa possession.",
@@ -183,9 +183,9 @@ class GiletHauteVisibilitePage extends StatelessWidget {
                 "sur la chaussée ou ses abords à la suite d’un arrêt d’urgence.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Présignalisation",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La présignalisation de l’obstacle doit également être assurée (feux de détresse + triangle de présignalisation).",
@@ -215,9 +215,9 @@ class GiletHauteVisibilitePage extends StatelessWidget {
                 "• un équipement rétro-réfléchissant.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Option",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Il peut également porter un dispositif d’éclairage complémentaire non éblouissant et non clignotant.",
@@ -397,10 +397,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -465,7 +465,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -508,7 +508,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -570,7 +570,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -602,7 +602,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -615,7 +615,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

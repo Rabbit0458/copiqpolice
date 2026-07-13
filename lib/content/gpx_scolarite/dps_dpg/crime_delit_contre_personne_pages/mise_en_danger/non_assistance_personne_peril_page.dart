@@ -107,24 +107,24 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-6 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : incrimination.\n"),
+                TextSpan(text: " : incrimination.\n"),
                 TextSpan(
                   text: "Article 223-6 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : peine applicable."),
+                TextSpan(text: " : peine applicable."),
               ]),
             ],
           ),
@@ -160,31 +160,31 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card4,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Des médecins qui s’abstiennent de faire passer un test de dépistage du sida à une patiente "
                       "polytransfusée ne sont pas coupables de non-assistance, car le caractère imminent du péril n’est pas établi. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 4 novembre 1999)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "C.A. Poitiers, 03 février 1977",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le péril doit être constaté expressément, pas seulement présumé.",
                 ),
@@ -200,54 +200,54 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("B) Nature du péril"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("B) Nature du péril"),
+              _Paragraph(
                 "L’état de péril correspond à un état dangereux ou une situation critique qui fait craindre "
                 "de graves conséquences : risque de mort ou d’atteintes corporelles graves.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Le péril peut être d’origine "),
-                  const TextSpan(
+                  TextSpan(text: "Le péril peut être d’origine "),
+                  TextSpan(
                     text: "naturelle, accidentelle ou infractionnelle. ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "\nPrincipe d’indifférence confirmé par ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 31 mai 1949",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : aucune distinction selon la cause ou la nature du péril.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) L’auteur du péril est indifférent"),
-              const _Paragraph(
+              _SubTitle("C) L’auteur du péril est indifférent"),
+              _Paragraph(
                 "Peu importe que le péril soit le fait d’un tiers, du débiteur de l’obligation de secours "
                 "ou même de la victime. Il est fréquent que l’auteur d’un accident soit la personne la mieux placée "
                 "pour porter les premiers secours.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Exemple : "),
+                TextSpan(text: "Exemple : "),
                 TextSpan(
                   text: "Cass. crim., 04 mars 1998",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’auteur d’un accident qui néglige de porter secours peut être coupable.",
                 ),
@@ -263,35 +263,35 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les qualifications de violences volontaires et de non-assistance à personne en péril peuvent "
                 "être retenues cumulativement si elles sont constituées dans des temps d’action différents.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 24 juin 1980",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’inculpation de violences n’est pas nécessairement exclusive de celle d’abstention volontaire de porter secours.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 22 mars 2016",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : deux temps d’action différents → poursuites concomitantes possibles.",
                 ),
@@ -307,80 +307,80 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("D) Une absence d’assistance"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("D) Une absence d’assistance"),
+              _Paragraph(
                 "Infraction formelle : elle existe du seul fait de l’abstention de secours. "
                 "L’assistance doit être suffisante (apte à faire cesser le péril), mais peu importe qu’elle réussisse.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "C.A. Nancy, 27 octobre 1965",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’infraction n’est pas de ne pas avoir sauvé, mais de ne pas avoir prêté une aide.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("E) Possibilité d’intervenir"),
-              const _Paragraph(
+              _SubTitle("E) Possibilité d’intervenir"),
+              _Paragraph(
                 "Le délit vise une abstention d’assistance à la victime, pas une abstention de combattre le péril. "
                 "On ne peut pas se défendre en disant que le secours aurait été inefficace.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 23 mars 1953",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’auteur ne peut invoquer l’inefficacité supposée du secours.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "F) Nature de l’assistance : agir ou provoquer un secours",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’assistance peut consister à agir personnellement ou à rechercher/provoquer l’intervention d’autrui. "
                 "Mais l’appel à autrui ne suffit pas si une action personnelle aurait été manifestement plus efficace.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 26 juillet 1954",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : obligation d’intervenir par le mode que la nécessité commande, voire cumulativement.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 07 mars 1991",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : tenter de provoquer un secours n’exclut pas le délit si une action immédiate était possible sans risque.",
                 ),
@@ -413,9 +413,9 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card3,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Pour que le délit soit constitué, il faut que la personne ait connu l’existence d’un péril "
                       "immédiat et constant rendant son intervention nécessaire, et qu’elle ait volontairement refusé "
@@ -423,47 +423,47 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: "(Cass. crim., 25 juin 1964)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Conscience du péril imminent"),
+              SizedBox(height: 12),
+              _SubTitle("A) Conscience du péril imminent"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le délit n’est constitué que si le prévenu a eu conscience du degré de gravité du péril et s’est abstenu volontairement. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 3 février 1993)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple : un pilote d’avion militaire survolant à basse altitude un accident d’hélicoptère dont il est à l’origine "
                         "ne pouvait ignorer que les occupants avaient besoin de soins urgents. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 04 mars 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Volonté de ne pas agir"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Volonté de ne pas agir"),
+              _Paragraph(
                 "Elle se traduit par une volonté consciente et assumée de ne pas porter assistance à une personne "
                 "que l’on sait en péril.",
               ),
@@ -478,19 +478,19 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-6 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsque la personne en péril est un mineur de 15 ans.",
               ),
             ],
@@ -504,73 +504,73 @@ class NonAssistancePersonnePerilPage extends StatelessWidget {
             cardColor: card2,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. ",
                 ),
-                const TextSpan(text: "— "),
+                TextSpan(text: "— "),
                 TextSpan(
                   text: "article 223-6 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. ",
                 ),
-                const TextSpan(text: "— "),
+                TextSpan(text: "— "),
                 TextSpan(
                   text: "article 223-6 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 223-7-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -608,10 +608,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -676,7 +676,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -719,7 +719,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -781,7 +781,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -792,10 +792,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -807,13 +806,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -826,13 +824,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

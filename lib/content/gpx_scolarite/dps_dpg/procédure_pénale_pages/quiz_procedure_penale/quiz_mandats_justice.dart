@@ -98,7 +98,7 @@ class QuizQuestion {
 ///  (tu peux bien sûr l’enrichir encore si besoin)
 /// =============================================================
 final List<QuizQuestion> questionsMandatsJustice = [
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice sont :',
     options: [
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice peuvent être délivrés :',
     options: [
@@ -127,7 +127,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Selon l’article 122 alinéa 1 du C.P.P., combien de types de mandats de justice sont énumérés ?',
@@ -141,7 +141,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
   // QUESTIONS SUPPLÉMENTAIRES — NIVEAU 1 (FACILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Les mandats de justice se trouvent principalement dans le C.P.P. au chapitre consacré :',
@@ -156,7 +156,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice ordonnent notamment :',
     options: [
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes',
     question: 'Les mandats de justice sont valables :',
     options: [
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Forme',
     question: 'Pour être régulier, un mandat doit être :',
     options: [
@@ -199,7 +199,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Personnes visées',
     question: 'Le mandat de recherche ne peut pas être délivré contre :',
     options: [
@@ -213,7 +213,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Usage',
     question: 'Le mandat de comparution est principalement utilisé :',
     options: [
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Notification',
     question: 'La notification d’un mandat de comparution peut être faite :',
     options: [
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Objet',
     question: 'L’objectif principal du mandat d’amener est :',
     options: [
@@ -256,7 +256,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Nature',
     question: 'Le mandat d’arrêt est à la fois :',
     options: [
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Effet',
     question:
         'La remise de la personne par l’agent au chef d’établissement pénitentiaire en exécution d’un mandat de dépôt :',
@@ -285,7 +285,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Sanctions',
     question:
         'En cas d’irrégularité non substantielle dans la notification d’un mandat, la conséquence la plus probable est :',
@@ -303,7 +303,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
   // QUESTIONS SUPPLÉMENTAIRES — NIVEAU 2 (MOYEN)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Exécution',
     question:
         'Lorsqu’un mandat de recherche est exécuté au domicile de la personne recherchée, la perquisition effectuée :',
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Enquête préliminaire',
     question:
         'En enquête préliminaire, un mandat de recherche délivré par le procureur de la République :',
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Choix du magistrat',
     question:
         'Pourquoi le juge préfère-t-il souvent décerner un mandat de comparution plutôt qu’une simple convocation ?',
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Témoins assistés',
     question: 'Le mandat d’amener peut également être délivré à l’encontre :',
     options: [
@@ -365,7 +365,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Régime horaire',
     question:
         'L’agent chargé de l’exécution d’un mandat d’amener ne peut pénétrer dans le domicile d’un citoyen :',
@@ -380,7 +380,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Rapport écrit',
     question:
         'Lorsque l’agent n’a pas trouvé la personne faisant l’objet d’un mandat d’amener, il doit :',
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Règlement de l’information',
     question:
         'Après le règlement de l’information, le mandat d’arrêt conserve :',
@@ -411,7 +411,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Personnes condamnées',
     question:
         'Le juge de l’application des peines peut décerner un mandat d’arrêt :',
@@ -427,7 +427,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Chambre de l’instruction',
     question:
         'La chambre de l’instruction peut décerner un mandat de dépôt ou d’arrêt lorsque :',
@@ -443,7 +443,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Discipline des magistrats',
     question:
         'Les sanctions disciplinaires contre un juge d’instruction ou un JLD pour irrégularités de mandats :',
@@ -462,7 +462,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
   // QUESTIONS SUPPLÉMENTAIRES — NIVEAU 3 (DIFFICILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cas avancés',
     question:
         'Une personne est appréhendée sous mandat d’amener, à plus de 200 km du siège du juge d’instruction mandant. Faute de pouvoir l’interroger immédiatement, le magistrat local :',
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Transfert après mandat d’amener',
     question:
         'Lorsque le JLD prolonge la retenue d’une personne appréhendée hors du ressort du juge d’instruction, le transfert vers la maison d’arrêt désignée sur le mandat doit intervenir :',
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Présentation au JLD',
     question:
         'Lorsqu’une personne recherchée sous mandat d’arrêt est arrêtée à plus de 200 km du siège du magistrat mandant, elle doit être présentée :',
@@ -509,7 +509,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Vidéo-audience',
     question:
         'Selon l’article 135-2 C.P.P., le recours à la visioconférence pour l’audition d’une personne détenue sous mandat d’arrêt :',
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Personne en fuite',
     question:
         'Les recherches d’une personne en fuite faisant l’objet d’un mandat d’arrêt peuvent être confiées :',
@@ -541,7 +541,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Exécution',
     question:
         'En exécution d’un mandat de dépôt, la notification de l’ordonnance de placement en détention provisoire :',
@@ -556,7 +556,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Nullité et droits de la défense',
     question:
         'Parmi les irrégularités suivantes, laquelle est la plus susceptible d’entraîner la nullité du mandat lui-même ?',
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Responsabilité du greffier',
     question:
         'Le greffier est responsable de la régularité formelle des mandats. S’il laisse partir un mandat sans sceau ni signature :',
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Détention arbitraire et responsabilité',
     question:
         'Un juge d’instruction laisse volontairement une personne en détention au-delà des délais légaux après un mandat d’amener. Il peut être poursuivi sur le fondement :',
@@ -607,7 +607,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
   // SALVE SUPPLÉMENTAIRE — NIVEAU 1 (FACILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Quel article du C.P.P. énumère les cinq types de mandats de justice ?',
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice sont principalement utilisés par :',
     options: [
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Non-délégation',
     question:
         'Pourquoi dit-on que les mandats de justice sont des actes « incommunicables » ?',
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Contenu minimal',
     question: 'Pour être valable, tout mandat doit au minimum contenir :',
     options: [
@@ -662,7 +662,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Types',
     question:
         'Lequel de ces documents correspond à un mandat de contrainte et non à une simple convocation ?',
@@ -677,7 +677,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Finalité',
     question: 'La finalité d’un mandat de recherche est de :',
     options: [
@@ -691,7 +691,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Sanction du défaut de présentation',
     question:
         'Si la personne ne se présente pas à la date indiquée sur un mandat de comparution, le juge peut :',
@@ -707,7 +707,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Personne visée',
     question: 'Le mandat d’amener est destiné :',
     options: [
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Personne en fuite',
     question: 'Le mandat d’arrêt est particulièrement adapté lorsque :',
     options: [
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Qualité',
     question: 'Le mandat de dépôt permet :',
     options: [
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Territoire',
     question: 'Les mandats de justice sont exécutoires :',
     options: [
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Greffier',
     question: 'Le greffier, en matière de mandats, doit notamment vérifier :',
     options: [
@@ -782,7 +782,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
   // SALVE SUPPLÉMENTAIRE — NIVEAU 2 (MOYEN)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Notification',
     question:
         'Lorsqu’une personne détenue pour une autre cause fait l’objet d’un mandat de recherche, la notification du mandat :',
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Effets selon l’auteur',
     question:
         'Lorsque le mandat de recherche est délivré par le procureur de la République et que la personne n’est pas découverte :',
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Public visé',
     question:
         'Pourquoi le mandat de comparution ne vise-t-il en principe pas les personnes supposées en fuite ?',
@@ -829,7 +829,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Exécution',
     question:
         'Dans la pratique, lorsque la personne visée par un mandat de comparution est introuvable à l’adresse indiquée :',
@@ -844,7 +844,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Conversion depuis un mandat de comparution',
     question: 'Le plus souvent, un mandat d’amener est décerné :',
     options: [
@@ -859,7 +859,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Force utilisée',
     question:
         'L’article 134 du C.P.P. précise que la force utilisée pour exécuter un mandat d’amener :',
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Formules d’arrestation',
     question:
         'Les formalités d’arrestation applicables lors de l’exécution d’un mandat d’arrêt (article 133 C.P.P.) imposent notamment :',
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Maintien en rétention',
     question:
         'Lorsqu’une personne arrêtée sous mandat d’arrêt est retenue 24 heures avant d’être conduite devant le juge :',
@@ -907,7 +907,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Notification',
     question:
         'Pourquoi dit-on que la notification de l’ordonnance de placement en détention provisoire vaut notification du mandat de dépôt ?',
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Nullité et défense',
     question:
         'Une irrégularité dans la délivrance d’un mandat n’entraîne nullité qu’à condition :',
@@ -938,7 +938,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Discipline et pénal',
     question:
         'En cas de détention arbitraire liée à un dépassement injustifié des délais de présentation après mandat d’amener :',
@@ -957,7 +957,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
   // SALVE SUPPLÉMENTAIRE — NIVEAU 3 (DIFFICILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cas pratiques complexes',
     question:
         'Un mandat d’arrêt a été délivré, mais l’acte ne mentionne pas la qualification juridique des faits alors que la loi l’exige. La personne arrêtée soulève l’irrégularité :',
@@ -973,7 +973,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Distance et transferts',
     question:
         'Une personne arrêtée à plus de 200 km du siège du juge d’instruction mandant reste 48 heures avant d’être présentée au JLD local. Quel est le risque principal ?',
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Interaction avec la garde à vue',
     question:
         'Une personne est arrêtée sous mandat de recherche et immédiatement placée en garde à vue. Pour être régulière, cette garde à vue :',
@@ -1005,7 +1005,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Recours et indemnisation',
     question:
         'Une personne obtient devant le premier président de la cour d’appel une indemnité pour détention irrégulière consécutive à un mandat d’arrêt. L’État décide de se retourner contre le dénonciateur de mauvaise foi. Ce recours :',
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Hiérarchie des mesures',
     question:
         'Sur le plan théorique, comment peut-on classer les mandats de justice par intensité croissante de contrainte ?',
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Choix de l’outil procédural',
     question:
         'Dans une information criminelle, le juge d’instruction souhaite interroger un mis en examen qui reste au domicile mais refuse de se déplacer. Quel mandat est, en principe, le plus adapté ?',
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Publicité et diffusion',
     question:
         'En matière de sécurité intérieure, certains mandats d’amener ou d’arrêt peuvent être inscrits au fichier des personnes recherchées. Cette inscription :',
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cumul des irrégularités',
     question:
         'Plusieurs irrégularités mineures affectent un mandat (erreur de date, coquilles dans l’adresse) mais aucune n’a porté atteinte aux droits de la défense. La défense invoque la nullité du mandat :',
@@ -1080,7 +1080,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Interaction avec le contrôle judiciaire',
     question:
         'Une personne ne respecte pas de manière répétée les obligations de son contrôle judiciaire. Le juge d’instruction décide de la faire arrêter pour l’entendre sur ces manquements. L’outil procédural logique est :',
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Équilibre libertés / ordre public',
     question:
         'Sur le plan théorique, le recours aux mandats de justice s’analyse comme :',
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Recours et indemnisation',
     question:
         'Une personne a subi une détention jugée irrégulière à la suite d’un mandat. Elle obtient une indemnisation. L’État :',
@@ -1127,7 +1127,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Parmi ces propositions, lequel N’EST PAS un type de mandat de justice ?',
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Les mandats de justice sont des actes incommunicables, c’est-à-dire :',
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // PRINCIPES GÉNÉRAUX — FORME
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes généraux',
     question:
         'Tout mandat doit préciser l’identité de la personne à l’encontre de laquelle il est décerné et :',
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes généraux',
     question:
         'Les mandats d’amener, de dépôt, d’arrêt ou de recherche doivent mentionner :',
@@ -1191,7 +1191,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT DE RECHERCHE — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Notions de base',
     question: 'Le mandat de recherche est défini comme :',
     options: [
@@ -1206,7 +1206,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Personnes visées',
     question: 'Le mandat de recherche peut être délivré contre :',
     options: [
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Personnes visées',
     question:
         'Outre le mis en examen, le mandat de recherche peut être délivré contre :',
@@ -1232,7 +1232,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT DE COMPARUTION — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Notions de base',
     question: 'Le mandat de comparution a pour objet de :',
     options: [
@@ -1247,7 +1247,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Public visé',
     question:
         'Le mandat de comparution est surtout utilisé à l’égard de personnes :',
@@ -1263,7 +1263,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT D’AMENER — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Notions de base',
     question: 'Le mandat d’amener est l’ordre de :',
     options: [
@@ -1277,7 +1277,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Nature',
     question: 'Le mandat d’amener est :',
     options: [
@@ -1292,7 +1292,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT D’ARRÊT — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Notions de base',
     question: 'Le mandat d’arrêt est l’ordre :',
     options: [
@@ -1308,7 +1308,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT DE DÉPÔT — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Notions de base',
     question: 'Le mandat de dépôt est avant tout :',
     options: [
@@ -1322,7 +1322,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Exécution',
     question: 'L’agent de la force publique qui exécute un mandat de dépôt :',
     options: [
@@ -1338,7 +1338,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // SANCTIONS — PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Sanctions',
     question:
         'Qui est considéré comme responsable de la régularité formelle des mandats ?',
@@ -1358,7 +1358,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
 
   // PRINCIPES — DIFFUSION ET FORMES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes (niveau 2)',
     question:
         'En cas d’urgence, les mandats d’amener, d’arrêt et de recherche peuvent être diffusés :',
@@ -1374,7 +1374,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes (niveau 2)',
     question: 'Les mandats sont des actes individuels, cela signifie que :',
     options: [
@@ -1389,7 +1389,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT DE RECHERCHE — REMARQUES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Délivrance (niveau 2)',
     question:
         'Selon l’article 70 du C.P.P., le procureur de la République peut décerner un mandat de recherche :',
@@ -1405,7 +1405,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Agents habilités',
     question:
         'L’exécution d’un mandat de recherche est notifiée et exécutée par :',
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Effets',
     question:
         'Lorsque le mandat de recherche est délivré par le juge d’instruction et que la personne est découverte, elle est alors :',
@@ -1437,7 +1437,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT DE COMPARUTION — NON-COMPARUTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Non-présentation',
     question:
         'Si la personne ne se présente pas en exécution d’un mandat de comparution :',
@@ -1454,7 +1454,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT D’AMENER — PERSONNES VISÉES ET CONDITIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Délivrance (niveau 2)',
     question:
         'Le mandat d’amener peut être décerné à l’encontre d’une personne :',
@@ -1470,7 +1470,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Diffusion',
     question: 'En principe, le mandat d’amener n’a pas vocation à être :',
     options: [
@@ -1485,7 +1485,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // RÈGLES D’EXÉCUTION — PERQUISITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Exécution (niveau 2)',
     question:
         'Selon l’article 134 du C.P.P., l’agent chargé d’exécuter un mandat d’amener, d’arrêt ou de recherche :',
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Exécution (niveau 2)',
     question:
         'La perquisition effectuée lors de l’exécution d’un mandat d’amener ou de recherche :',
@@ -1518,7 +1518,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT D’ARRÊT — SITUATIONS PARTICULIÈRES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Conditions (niveau 2)',
     question: 'Le mandat d’arrêt peut être décerné notamment à l’encontre :',
     options: [
@@ -1532,7 +1532,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Notifications',
     question:
         'Les agents habilités à notifier et exécuter un mandat d’arrêt sont :',
@@ -1549,7 +1549,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // MANDAT DE DÉPÔT — TRIBUNAL CORRECTIONNEL
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Tribunal correctionnel',
     question:
         'Le tribunal correctionnel peut décerner un mandat de dépôt contre un prévenu :',
@@ -1566,7 +1566,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // SANCTIONS — NULLITÉS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Sanctions (niveau 2)',
     question:
         'Les irrégularités de forme commises lors de la délivrance d’un mandat peuvent entraîner :',
@@ -1581,7 +1581,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Sanctions (niveau 2)',
     question:
         'Les irrégularités commises lors de la notification ou de l’exécution d’un mandat entraînent en principe :',
@@ -1597,7 +1597,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // RESPONSABILITÉ PÉNALE DES MAGISTRATS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Responsabilité pénale',
     question:
         'Selon l’article 126 du C.P.P., les sanctions pénales des articles 432-4 à 432-6 du Code pénal s’appliquent :',
@@ -1618,7 +1618,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   // =====================================================
 
   // CAS PRATIQUES — MANDAT DE RECHERCHE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cas pratiques (niveau 3)',
     question:
         'Un mandat de recherche délivré par le procureur de la République dans le cadre d’une enquête n’a pas permis de retrouver la personne. Il n’y a aucun élément nominatif contre elle. Le procureur peut alors :',
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Garde à vue et droits',
     question:
         'Lorsqu’une personne est retenue en vertu d’un mandat d’amener, les droits relatifs à la garde à vue lui sont reconnus, notamment :',
@@ -1648,7 +1648,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Délai de 24 heures',
     question:
         'En matière de mandat d’amener, le délai maximal de 24 heures prévu par l’article 128 du C.P.P. concerne :',
@@ -1664,7 +1664,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Exécution à plus de 200 km',
     question:
         'Lorsqu’une personne arrêtée en vertu d’un mandat d’arrêt se trouve à plus de 200 km du siège du magistrat mandant, elle doit être présentée à un magistrat de ce ressort dans un délai maximal de :',
@@ -1675,7 +1675,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Transfert ultérieur',
     question:
         'Après audition de la personne par le juge ou le JLD du lieu d’arrestation, le transfert vers la maison d’arrêt désignée par le mandat doit intervenir :',
@@ -1691,7 +1691,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Après règlement de l’information',
     question:
         'Après règlement de l’information, l’exécution d’un mandat d’arrêt reste possible. Dans ce cas, la rétention de la personne par les services de police :',
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Comparution immédiate',
     question:
         'En procédure de comparution immédiate, le tribunal correctionnel peut décerner un mandat de dépôt lorsque :',
@@ -1723,7 +1723,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Trouble à l’audience',
     question:
         'En cas de trouble à l’audience, le président du tribunal correctionnel peut :',
@@ -1740,7 +1740,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
   ),
 
   // SANCTIONS — DÉTENTION ARBITRAIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Détention arbitraire (niveau 3)',
     question:
         'En cas de dépassement injustifié du délai de 24 heures pour l’interrogatoire d’une personne arrêtée en vertu d’un mandat d’amener, la responsabilité pénale peut être engagée :',
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Nullités et indemnisation',
     question:
         'La jurisprudence admet que les irrégularités commises lors de la délivrance ou de l’exécution d’un mandat entraînent nullité ou indemnisation :',
@@ -1772,7 +1772,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Indemnisation',
     question:
         'L’indemnisation d’une détention irrégulière liée à un mandat est allouée :',
@@ -1787,7 +1787,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Recours contre le dénonciateur',
     question:
         'Lorsque la détention résulte d’une dénonciation mensongère, l’État :',
@@ -1808,7 +1808,7 @@ final List<QuizQuestion> questionsMandatsJustice = [
 // PAGE
 // ============================================================================
 class QuizMandatsPage extends StatefulWidget {
-  static const String routeName = '/gpx/procedure_penale/quiz/mandats_justice';
+  static const String routeName = '/gpx/dps/procedure_penale/quiz/mandats_justice';
   final String uid;
   final String email;
 
@@ -2153,7 +2153,7 @@ class _QuizMandatsPageState extends State<QuizMandatsPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2356,7 +2356,7 @@ class _QuizMandatsPageState extends State<QuizMandatsPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2539,7 +2539,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3072,10 +3071,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3446,7 +3446,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3487,9 +3487,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

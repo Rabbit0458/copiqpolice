@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionPsycotechniquesVerbal = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Voiture.",
     options: ["Pomme", "Banane", "Voiture"],
@@ -100,7 +100,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chat est à _____.",
     options: ["Chien", "Animal", "Souris"],
@@ -109,7 +109,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Pigeon.",
     options: ["Chien", "Chat", "Pigeon"],
@@ -119,7 +119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à _____.",
     options: ["Rivière", "Océan", "Lac"],
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Triangle.",
     options: ["Rouge", "Bleu", "Triangle"],
@@ -138,7 +138,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Arbre est à _____.",
     options: ["Feuille", "Fleur", "Soleil"],
@@ -148,7 +148,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chanson est à _____.",
     options: ["Musique", "Danse", "Poésie"],
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Stylo, Table.",
     options: ["Livre", "Stylo", "Table"],
@@ -168,7 +168,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Été est à _____.",
     options: ["Printemps", "Hiver", "Automne"],
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à _____.",
     options: ["Fraise", "Fruit", "Légume"],
@@ -187,7 +187,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Lieu.",
     options: ["École", "Université", "Lieu"],
@@ -197,7 +197,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à _____.",
     options: ["Colline", "Vallée", "Plage"],
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lune est à _____.",
     options: ["Étoile", "Soleil", "Planète"],
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Poème.",
     options: ["Piano", "Guitare", "Poème"],
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Hiver est à _____.",
     options: ["Neige", "Soleil", "Température"],
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Film est à _____.",
     options: ["Livre", "Théâtre", "Musique"],
@@ -247,7 +247,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Éléphant, Lion, Serpent.",
     options: ["Éléphant", "Lion", "Serpent"],
@@ -257,7 +257,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Sombre est à _____.",
     options: ["Clair", "Noir", "Foncé"],
@@ -267,7 +267,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Vitesse est à _____.",
     options: ["Accélération", "Distance", "Temps"],
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Oiseau est à _____.",
     options: ["Voler", "Chanter", "Nid"],
@@ -287,7 +287,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chat", "Chien", "Voiture"],
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["D", "E", "F"],
@@ -306,7 +306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Pomme", "Banane", "Chauffage"],
@@ -316,7 +316,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["D", "E", "G"],
@@ -325,7 +325,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rond", "Carré", "Rouge"],
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Université", "Bureau"],
@@ -345,7 +345,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Poisson", "Requin", "Chien"],
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Savon", "Shampoing", "Brosse"],
@@ -365,7 +365,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Tarte"],
@@ -375,7 +375,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Manteau", "Chapeau", "Lunettes"],
@@ -385,7 +385,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Peinture"],
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Yaourt", "Biscuit"],
@@ -405,7 +405,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pomme", "Banane", "Voiture"],
@@ -415,7 +415,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chien est à _____",
     options: ["Chat", "Oiseau", "Souris"],
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Vert", "Triangle"],
@@ -434,7 +434,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lundi est à _____",
     options: ["Mardi", "Janvier", "Fête"],
@@ -443,7 +443,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Table"],
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Lecture", "Écriture", "Dessine"],
@@ -462,7 +462,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Élève", "Professeur", "Cours"],
@@ -471,7 +471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Bicyclette", "Avion", "Poisson"],
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pain est à _____",
     options: ["Beurre", "Soleil", "Lait"],
@@ -490,7 +490,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à _____",
     options: ["Rivière", "Plaine", "Colline"],
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Étoile est à _____",
     options: ["Ciel", "Lune", "Soleil"],
@@ -508,7 +508,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Arbre est à _____",
     options: ["Forêt", "Fleur", "Fruit"],
@@ -517,7 +517,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écriture est à _____",
     options: ["Lecture", "Parole", "Silence"],
@@ -526,7 +526,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Brique"],
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Hiver est à _____",
     options: ["Été", "Automne", "Printemps"],
@@ -545,7 +545,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Feu est à _____",
     options: ["Eau", "Air", "Terre"],
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Distinction est à _____",
     options: ["Mention", "Échec", "Succès"],
@@ -563,7 +563,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Clé est à _____",
     options: ["Cadenas", "Porte", "Verrou"],
@@ -571,7 +571,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     explanation: "La clé est utilisée pour ouvrir une porte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chat", "Chien", "Voiture"],
@@ -581,7 +581,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["D", "E", "F"],
@@ -590,7 +590,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["D", "G", "E"],
@@ -600,7 +600,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["École", "Université", "Chanson"],
@@ -610,7 +610,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["F", "E", "G"],
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Table", "Chaise", "Lit"],
@@ -629,7 +629,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["X", "Y", "Z"],
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rose", "Tulipe", "Moteur"],
@@ -649,7 +649,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["X", "V", "W"],
@@ -659,7 +659,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Tracteur"],
@@ -669,7 +669,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["H", "I", "J"],
@@ -679,7 +679,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Piano", "Guitare", "Brosse"],
@@ -689,7 +689,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["R", "Q", "S"],
@@ -698,7 +698,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Mer", "Montagne", "Livre"],
@@ -708,7 +708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["N", "M", "O"],
@@ -717,7 +717,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Fraise", "Avion"],
@@ -727,7 +727,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Q", "R", "P"],
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Chiffre",
     options: ["Rouge", "Vert", "Chiffre"],
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Octobre",
     options: ["Lundi", "Mardi", "Octobre"],
@@ -756,7 +756,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____",
     options: ["Reptile", "Mammifère", "Abeille"],
@@ -766,7 +766,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ciel est à _____",
     options: ["Terre", "Espace", "Nuage"],
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Éléphant",
     options: ["Chien", "Chat", "Éléphant"],
@@ -786,7 +786,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lait est à _____",
     options: ["Eau", "Jus", "Fromage"],
@@ -796,7 +796,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mère est à _____",
     options: ["Fille", "Sœur", "Ami"],
@@ -805,7 +805,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Pigeon, Éléphant",
     options: ["Aigle", "Pigeon", "Éléphant"],
@@ -815,7 +815,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Voiture",
     options: ["École", "Université", "Voiture"],
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Tablette",
     options: ["Piano", "Guitare", "Tablette"],
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Verre est à _____",
     options: ["Bouteille", "Carafe", "Tasse"],
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Étoile est à _____",
     options: ["Planète", "Soleil", "Galaxie"],
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chien", "Chat", "Banane"],
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Banque"],
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rond", "Carré", "Triangle"],
@@ -884,7 +884,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Savon", "Shampoing", "Brosse"],
@@ -894,7 +894,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Pain"],
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Gâteau", "École"],
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chauffage", "Climatisation", "Soleil"],
@@ -923,7 +923,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Brosse", "Peigne", "Savon"],
@@ -933,7 +933,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiens comme Chat est à _____",
@@ -943,7 +943,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pommes", "Bananes", "Chocolat"],
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Semaine est à _____",
@@ -964,7 +964,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Jus"],
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Étudiant comme Hôpital est à _____",
@@ -985,7 +985,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Rose est à Fleur comme Chêne est à _____",
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Vert", "Taille"],
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Manger est à Nourriture comme Boire est à _____",
@@ -1015,7 +1015,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lire comme Film est à _____",
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Étoile", "Lune", "Planète"],
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Code est à _____",
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Photographie est à Image comme Musique est à _____",
@@ -1055,7 +1055,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Peinture"],
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le piano et la guitare sont des instruments de musique, la peinture est une forme d'art visuel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Pomme", "Banane", "Table"],
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["D", "F", "E"],
@@ -1082,7 +1082,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Eau", "Chocolat"],
@@ -1091,7 +1091,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Université", "Chaise"],
@@ -1100,7 +1100,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Poisson", "Oiseau", "Bateau"],
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Chanson"],
@@ -1118,7 +1118,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lune", "Soleil", "Étoile"],
@@ -1128,7 +1128,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____",
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Boule", "Pyramide", "Cercle"],
@@ -1149,7 +1149,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lundi est à Mardi comme Janvier est à _____",
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Bibliothèque"],
@@ -1168,7 +1168,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Poisson est à Mer comme Oiseau est à _____",
@@ -1178,7 +1178,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Fleur est à Jardin comme Arbre est à _____",
@@ -1189,7 +1189,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Chauffage"],
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lire comme Musique est à _____",
@@ -1209,7 +1209,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Nuit comme Soleil est à _____",
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Grotte"],
@@ -1230,7 +1230,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Manteau est à Hiver comme Short est à _____",
@@ -1240,7 +1240,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Terre est à Planète comme Lune est à _____",
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Corde est à Noeud comme Fil est à _____",
@@ -1262,7 +1262,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Voiture.",
     options: ["Pomme", "Orange", "Voiture"],
@@ -1272,7 +1272,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Roue est à _____ :",
     options: ["Voiture", "Bicyclette", "Aile"],
@@ -1282,7 +1282,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Serpent.",
     options: ["Chien", "Chat", "Serpent"],
@@ -1292,7 +1292,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Clé est à _____ :",
     options: ["Cadenas", "Serrure", "Fermeture"],
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Fromage, Pain.",
     options: ["Lait", "Fromage", "Pain"],
@@ -1311,7 +1311,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Chêne.",
     options: ["Rose", "Tulipe", "Chêne"],
@@ -1321,7 +1321,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Trottinette, Vélo, Avion.",
     options: ["Trottinette", "Vélo", "Avion"],
@@ -1331,7 +1331,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à _____ :",
     options: ["Fraise", "Cerise", "Kiwi"],
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon.",
     options: ["Piano", "Guitare", "Violon"],
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Hiver, Printemps.",
     options: ["Été", "Hiver", "Printemps"],
@@ -1360,7 +1360,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chat", "Chien", "Poisson"],
@@ -1370,7 +1370,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien d'aveugle comme Chat est à _____",
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Eau", "Lait", "Brique"],
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lecture comme Film est à _____",
@@ -1402,7 +1402,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Sucre", "Légume"],
@@ -1412,7 +1412,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Feuille comme Fleur est à _____",
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Avion", "Train", "Bateau"],
@@ -1433,7 +1433,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Santé comme Enseignant est à _____",
@@ -1444,7 +1444,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chaise", "Table", "Lit"],
@@ -1454,7 +1454,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Photographe est à Photo comme Écrivain est à _____",
@@ -1465,7 +1465,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Oiseau", "Chat", "Serpent"],
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanson est à Musique comme Poème est à _____",
@@ -1486,7 +1486,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Bicyclette", "Moto", "Camion"],
@@ -1496,7 +1496,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Pomme est à _____",
@@ -1507,7 +1507,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Bleu", "Chaud"],
@@ -1517,7 +1517,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Musicien est à _____",
@@ -1528,7 +1528,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Lumière est à _____",
@@ -1539,7 +1539,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chien", "Chat", "Souris"],
@@ -1549,7 +1549,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Élève comme Médecin est à _____",
@@ -1560,7 +1560,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lien est à Relation comme Clé est à _____",
@@ -1570,7 +1570,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La serrure est l'élément qui s'ouvre avec la clé, tout comme la relation est l'élément qui découle du lien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chien", "Chat", "Tigre"],
@@ -1580,7 +1580,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Pomme", "Banane", "Carotte"],
@@ -1590,7 +1590,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Lune", "Soleil", "Étoile"],
@@ -1600,7 +1600,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["1", "2", "3"],
@@ -1609,7 +1609,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Piano", "Guitare", "Violon"],
@@ -1619,7 +1619,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Bleu", "Rouge", "Vert"],
@@ -1629,7 +1629,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Roi", "Reine", "Prince"],
@@ -1639,7 +1639,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Automobile", "Bicyclette", "Avion"],
@@ -1649,7 +1649,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Hiver", "Printemps", "Été"],
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -1669,7 +1669,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["École", "Université", "Bibliothèque"],
@@ -1679,7 +1679,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chien", "Chat", "Lapin"],
@@ -1689,7 +1689,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Savon", "Shampoing", "Dentifrice"],
@@ -1699,7 +1699,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pomme", "Banane", "Chien"],
@@ -1708,7 +1708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rond", "Carré", "Rouge"],
@@ -1718,7 +1718,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____",
@@ -1729,7 +1729,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Bureau"],
@@ -1739,7 +1739,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Peintre est à _____",
@@ -1750,7 +1750,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ordinateur est à Internet comme Téléphone est à _____",
@@ -1761,7 +1761,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Voleur est à Crime comme Médecin est à _____",
@@ -1772,7 +1772,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lune est à Nuit comme Soleil est à _____",
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chanson", "Musique", "Danse"],
@@ -1793,7 +1793,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Enfant comme Professeur est à _____",
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mécanicien est à Voiture comme Médecin est à _____",
@@ -1815,7 +1815,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Garçon est à _____",
@@ -1826,7 +1826,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Vert", "Cercle"],
@@ -1836,7 +1836,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lait est à Fromage comme Œuf est à _____",
@@ -1847,7 +1847,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Montagne"],
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Hiver", "Printemps", "Aube"],
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Bibliothèque comme Film est à _____",
@@ -1878,7 +1878,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Bateau", "Avion", "Train"],
@@ -1888,7 +1888,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Papier", "Cahier", "Stylo"],
@@ -1897,7 +1897,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Été est à _____",
     options: ["Hiver", "Printemps", "Automne"],
@@ -1907,7 +1907,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Lait.",
     options: ["Table", "Chaise", "Lait"],
@@ -1917,7 +1917,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à _____",
     options: ["Rivière", "Lac", "Montagne"],
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Professeur est à _____",
     options: ["Élève", "Salle", "Cours"],
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à _____",
     options: ["Colline", "Vallée", "Plaine"],
@@ -1947,7 +1947,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Université, Lycée, Avion.",
     options: ["Université", "Lycée", "Avion"],
@@ -1957,7 +1957,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ordinateur est à _____",
     options: ["Clavier", "Écran", "Tablette"],
@@ -1967,7 +1967,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Galaxie.",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -1977,7 +1977,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Saxophone"],
@@ -1987,7 +1987,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Sable"],
@@ -1996,7 +1996,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chien", "Chat", "Voiture"],
@@ -2006,7 +2006,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : A est une fleur, B est une rose, C est une tulipe.",
@@ -2016,7 +2016,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Pomme", "Banane", "Chocolat"],
@@ -2026,7 +2026,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : A est un poisson, B est un saumon, C est une truite.",
@@ -2036,7 +2036,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : A est un livre, B est un chapitre, C est un article.",
@@ -2047,7 +2047,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Lait", "Jus", "Pain"],
@@ -2057,7 +2057,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : A est un arbre, B est un chêne, C est un buisson.",
@@ -2068,7 +2068,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Bicyclette", "Trottinette", "Avion"],
@@ -2077,7 +2077,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "L'avion est un moyen de transport aérien, tandis que les autres sont terrestres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Orange", "Pomme", "Banane"],
@@ -2086,7 +2086,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["École", "Université", "Chanson"],
@@ -2096,7 +2096,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lundi", "Mardi", "Juillet"],
@@ -2106,7 +2106,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Livre", "Écrivain", "Bibliothèque"],
@@ -2116,7 +2116,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Rouge", "Bleu", "Vert"],
@@ -2125,7 +2125,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Couturier", "Robe", "Accessoire"],
@@ -2135,7 +2135,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -2145,7 +2145,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Soleil", "Lune", "Étoile"],
@@ -2155,7 +2155,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chat est à Chien comme Souris est à ____.",
@@ -2166,7 +2166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bicyclette.",
     options: ["École", "Université", "Bicyclette"],
@@ -2176,7 +2176,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Feuille est à Arbre comme Fleur est à ____.",
@@ -2187,7 +2187,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Roue, Moteur, École.",
     options: ["Roue", "Moteur", "École"],
@@ -2197,7 +2197,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Lait est à Fromage comme Œuf est à ____.",
@@ -2208,7 +2208,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Canard.",
     options: ["Chien", "Chat", "Canard"],
@@ -2218,7 +2218,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Livre est à Lecture comme Film est à ____.",
@@ -2229,7 +2229,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Peinture.",
     options: ["Piano", "Guitare", "Peinture"],
@@ -2239,7 +2239,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Médecin est à Soin comme Professeur est à ____.",
@@ -2250,7 +2250,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chiffre, Lettre, Mot.",
     options: ["Chiffre", "Lettre", "Mot"],
@@ -2260,7 +2260,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Montagne est à Vallée comme Mer est à ____.",
@@ -2271,7 +2271,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Clé est à Serrure comme Code est à ____.",
@@ -2282,7 +2282,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Nuit.",
     options: ["Lune", "Étoile", "Nuit"],
@@ -2292,7 +2292,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Artiste est à Peinture comme Musicien est à ____.",
@@ -2303,7 +2303,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Carotte",
     options: ["Pomme", "Orange", "Carotte"],
@@ -2313,7 +2313,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Chat est à _____",
@@ -2323,7 +2323,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Cahier, Stylo",
     options: ["Livre", "Cahier", "Stylo"],
@@ -2333,7 +2333,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Roi est à Reine comme Homme est à _____",
@@ -2344,7 +2344,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Vitesse est à Temps comme Distance est à _____",
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Tasse, Assiette, Fourchette",
     options: ["Tasse", "Assiette", "Fourchette"],
@@ -2365,7 +2365,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Oiseau",
     options: ["Chien", "Chat", "Oiseau"],
@@ -2375,7 +2375,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écriture est à Stylo comme Peinture est à _____",
@@ -2386,7 +2386,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Serpent, Reptile, Oiseau",
     options: ["Serpent", "Reptile", "Oiseau"],
@@ -2396,7 +2396,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mémoire est à Souvenir comme Apprentissage est à _____",
@@ -2407,7 +2407,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Bateau est à Mer comme Avion est à _____",
@@ -2418,7 +2418,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Chien",
     options: ["Rouge", "Vert", "Chien"],
@@ -2428,7 +2428,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pluie est à _____",
     options: ["Soleil", "Neige", "Vent"],
@@ -2438,7 +2438,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Avion",
     options: ["Chien", "Chat", "Avion"],
@@ -2448,7 +2448,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Oiseau est à _____",
     options: ["Voler", "Nager", "Courir"],
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Écriture, Lecture, Chanson",
     options: ["Écriture", "Lecture", "Chanson"],
@@ -2468,7 +2468,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Printemps, Chaleur",
     options: ["Hiver", "Printemps", "Chaleur"],
@@ -2478,7 +2478,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Train est à _____",
     options: ["Voiture", "Aéroport", "Gare"],
@@ -2488,7 +2488,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mars, Terre, Lune.",
     options: ["Mars", "Terre", "Lune"],
@@ -2498,7 +2498,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Réfrigérateur.",
     options: ["École", "Université", "Réfrigérateur"],
@@ -2508,7 +2508,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Oiseau est à _____.",
     options: ["Voler", "Aile", "Poisson"],
@@ -2518,7 +2518,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Platane, Pomme.",
     options: ["Chêne", "Platane", "Pomme"],
@@ -2528,7 +2528,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Jour est à _____.",
     options: ["Soleil", "Nuit", "Lune"],
@@ -2537,7 +2537,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Table.",
     options: ["Chanson", "Poème", "Table"],
@@ -2547,7 +2547,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrivain est à _____.",
     options: ["Livre", "Lecture", "École"],
@@ -2556,7 +2556,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Chemise, Chaise.",
     options: ["Manteau", "Chemise", "Chaise"],
@@ -2566,7 +2566,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Art est à _____.",
     options: ["Musée", "Peinture", "Sculpture"],
@@ -2575,7 +2575,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Chien",
     options: ["Pomme", "Banane", "Chien"],
@@ -2584,7 +2584,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le chien est un animal, tandis que les deux autres sont des fruits.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chêne", "Sapin", "Roue"],
@@ -2593,7 +2593,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaud est à _____",
     options: ["Froid", "Lumière", "Sombre"],
@@ -2602,7 +2602,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Étudiant", "Professeur", "Livre"],
@@ -2611,7 +2611,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Chanson"],
@@ -2621,7 +2621,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Temps est à _____",
     options: ["Montre", "Calendrier", "Heure"],
@@ -2630,7 +2630,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Art est à _____",
     options: ["Peinture", "Musique", "Éducation"],
@@ -2639,7 +2639,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ordinateur est à _____",
     options: ["Technologie", "Internet", "Écran"],
@@ -2648,7 +2648,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Boulanger", "Médecin", "Chocolatier"],
@@ -2658,7 +2658,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Fleur", "Arbre", "Plante"],
@@ -2668,7 +2668,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Chien", "Chat", "Souris"],
@@ -2677,7 +2677,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Piano", "Guitare", "Bureau"],
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Lune", "Soleil", "Étoile"],
@@ -2697,7 +2697,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Poisson", "Oiseau", "Bateau"],
@@ -2707,7 +2707,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Café", "Thé", "Bouteille"],
@@ -2717,7 +2717,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Couteau", "Fourchette", "Assiette"],
@@ -2727,7 +2727,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Chocolat", "Sucre", "Farine"],
@@ -2737,7 +2737,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chien", "Chat", "Poisson"],
@@ -2747,7 +2747,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rose", "Tulipe", "Chêne"],
@@ -2757,7 +2757,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme eau est à _____",
     options: ["verre", "pluie", "bouteille"],
@@ -2767,7 +2767,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Jupe", "Pantalon", "Chaussette"],
@@ -2777,7 +2777,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Pomme", "Banane", "Carotte"],
@@ -2787,7 +2787,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Étoile", "Lune", "Planète"],
@@ -2797,7 +2797,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme fleur est à _____",
     options: ["plante", "arbre", "racine"],
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lunettes", "Chapeau", "Montre"],
@@ -2817,7 +2817,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme insecte est à _____",
     options: ["araignée", "papillon", "oiseau"],
@@ -2827,7 +2827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Soleil", "Lune", "Étoile filante"],
@@ -2837,7 +2837,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme chemin est à _____",
     options: ["route", "voyage", "destination"],
@@ -2847,7 +2847,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme hiver est à _____",
     options: ["printemps", "été", "automne"],
@@ -2857,7 +2857,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien de garde comme Chat est à _____",
@@ -2868,7 +2868,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pomme", "Banane", "Carotte"],
@@ -2878,7 +2878,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Docteur est à Patient comme Professeur est à _____",
@@ -2889,7 +2889,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Bicyclette", "Voiture", "Avion"],
@@ -2899,7 +2899,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Fleur est à _____",
@@ -2910,7 +2910,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Roue est à Véhicule comme Aile est à _____",
@@ -2921,7 +2921,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Fils comme Père est à _____",
@@ -2932,7 +2932,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Mango", "Pêche", "Cerise"],
@@ -2942,7 +2942,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Philosophie est à Savoir comme Art est à _____",
@@ -2953,7 +2953,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lait est à Vache comme Œuf est à _____",
@@ -2963,7 +2963,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Carotte.",
     options: ["Pomme", "Banane", "Carotte"],
@@ -2973,7 +2973,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chat est à _____.",
     options: ["Chien", "Souris", "Oiseau"],
@@ -2982,7 +2982,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Voiture.",
     options: ["Table", "Chaise", "Voiture"],
@@ -2992,7 +2992,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Éléphant.",
     options: ["Piano", "Guitare", "Éléphant"],
@@ -3002,7 +3002,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Rivière.",
     options: ["Mer", "Montagne", "Rivière"],
@@ -3012,7 +3012,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Sombre est à _____.",
     options: ["Lumineux", "Foncé", "Obscur"],
@@ -3021,7 +3021,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Boulangerie.",
     options: ["École", "Université", "Boulangerie"],
@@ -3031,7 +3031,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fruits, Légumes, Meubles.",
     options: ["Fruits", "Légumes", "Meubles"],
@@ -3041,7 +3041,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Train, Avion.",
     options: ["Bicyclette", "Train", "Avion"],
@@ -3051,7 +3051,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Chat est à ?",
@@ -3061,7 +3061,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lire comme Film est à ?",
@@ -3071,7 +3071,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chat", "Chien", "Arbre"],
@@ -3080,7 +3080,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "L'arbre est une plante, tandis que les autres sont des animaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Manteau est à _____",
     options: ["Chapeau", "Pantalon", "Chemise"],
@@ -3089,7 +3089,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Planète",
     options: ["Lune", "Étoile", "Planète"],
@@ -3099,7 +3099,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à _____",
     options: ["Fraise", "Cerise", "Légume"],
@@ -3109,7 +3109,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bateau, Bus",
     options: ["Train", "Avion", "Bateau"],
@@ -3119,7 +3119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Chanson",
     options: ["Piano", "Guitare", "Chanson"],
@@ -3129,7 +3129,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ordinateur, Smartphone, Tablette, Crayon",
     options: ["Ordinateur", "Smartphone", "Crayon"],
@@ -3139,7 +3139,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Langue est à _____",
     options: ["Parole", "Écrit", "Son"],
@@ -3149,7 +3149,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Boucle, Tresse, Épingle",
     options: ["Boucle", "Tresse", "Épingle"],
@@ -3159,7 +3159,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Jus, Pain",
     options: ["Lait", "Jus", "Pain"],
@@ -3169,7 +3169,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Poisson, Oiseau",
     options: ["Chien", "Chat", "Poisson"],
@@ -3179,7 +3179,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Été est à _____",
@@ -3190,7 +3190,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Bleu, Manteau",
     options: ["Rouge", "Vert", "Manteau"],
@@ -3200,7 +3200,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Ronronnement comme Chien est à _____",
@@ -3211,7 +3211,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Plume, Crayon, Feuille, Tablette",
     options: ["Plume", "Crayon", "Tablette"],
@@ -3221,7 +3221,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Maison est à _____",
@@ -3232,7 +3232,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Chêne, Orange",
     options: ["Pomme", "Banane", "Chêne"],
@@ -3242,7 +3242,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chapeau, Casquette, Écharpe, Cravate",
     options: ["Chapeau", "Casquette", "Écharpe"],
@@ -3252,7 +3252,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artisan est à Ouvrier comme Docteur est à _____",
@@ -3263,7 +3263,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Lune, Nuage",
     options: ["Étoile", "Planète", "Nuage"],
@@ -3273,7 +3273,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Code est à _____",
@@ -3284,7 +3284,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Jus, Farine",
     options: ["Lait", "Eau", "Farine"],
@@ -3294,7 +3294,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Élève comme Chef est à _____",
@@ -3305,7 +3305,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Océan, Rivière, Montagne",
     options: ["Mer", "Océan", "Montagne"],
@@ -3315,7 +3315,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Savoir comme Livre est à _____",
@@ -3326,7 +3326,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rose", "Tulipe", "Chêne"],
@@ -3336,7 +3336,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Matin est à _____",
@@ -3347,7 +3347,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien comme Chat est à _____",
@@ -3358,7 +3358,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Bois comme Pierre est à _____",
@@ -3369,7 +3369,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Abeille", "Mouche", "Papillon"],
@@ -3379,7 +3379,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Rivière est à _____",
@@ -3390,7 +3390,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lune", "Soleil", "Étoile"],
@@ -3400,7 +3400,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaise est à Asseoir comme Lit est à _____",
@@ -3411,7 +3411,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Feuille est à Arbre comme Plume est à _____",
@@ -3422,7 +3422,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____",
@@ -3433,7 +3433,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Homme", "Femme", "Chat"],
@@ -3443,7 +3443,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lumière est à Obscurité comme Jour est à _____",
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Feuille est à Arbre comme Fleur est à _____",
@@ -3465,7 +3465,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Gâteau est à Sucre comme Salade est à _____",
@@ -3476,7 +3476,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Étoile", "Lune", "Nuage"],
@@ -3486,7 +3486,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Chien : Animal, Chat : ?)",
     options: ["Félin", "Oiseau", "Poisson"],
@@ -3495,7 +3495,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (École : Apprentissage, Maison : ?)",
@@ -3506,7 +3506,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chêne", "Pin", "Fleur"],
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Écrivain : Livre, Musicien : ?)",
@@ -3526,7 +3526,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Piano", "Guitare", "Chanson"],
@@ -3536,7 +3536,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Chauffeur : Voiture, Pilote : ?)",
@@ -3547,7 +3547,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Abeille", "Papillon", "Poisson"],
@@ -3556,7 +3556,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Guerre : Paix, Jour : ?)",
     options: ["Nuit", "Soleil", "Lune"],
@@ -3566,7 +3566,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Loup", "Tigre", "Bison"],
@@ -3575,7 +3575,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Mer : Eau, Désert : ?)",
     options: ["Sable", "Pierre", "Arbre"],
@@ -3585,7 +3585,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -3593,7 +3593,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     explanation: "Le triangle n'a pas de côtés égaux comme les autres options.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rond", "Carré", "Triangle"],
@@ -3603,7 +3603,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mer est à Océan comme Rivière est à _____.",
@@ -3614,7 +3614,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Université", "Bibliothèque"],
@@ -3624,7 +3624,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Livre est à Lecture comme Film est à _____.",
@@ -3635,7 +3635,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fraise", "Cerise", "Pêche"],
@@ -3645,7 +3645,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Oiseau est à Voler comme Poisson est à _____.",
@@ -3656,7 +3656,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Pizza"],
@@ -3666,7 +3666,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Clé est à Serrure comme Code est à _____.",
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Terre est à Planète comme Soleil est à _____.",
@@ -3688,7 +3688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Pomme", "Banane", "Chien"],
@@ -3698,7 +3698,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["École", "Université", "Pompe"],
@@ -3708,7 +3708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rouge", "Bleu", "Chauffage"],
@@ -3718,7 +3718,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Félins comme Chien est à _____",
@@ -3729,7 +3729,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Avion", "Bateau", "Ciel"],
@@ -3739,7 +3739,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Artiste est à _____",
@@ -3750,7 +3750,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Enfant comme Père est à _____",
@@ -3760,7 +3760,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Ciel comme Plante est à _____",
@@ -3771,7 +3771,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Bâtiment est à Architecture comme Livre est à _____",
@@ -3782,7 +3782,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Cactus.",
     options: ["Rose", "Tulipe", "Cactus"],
@@ -3791,7 +3791,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____.",
     options: ["Écrire", "Lire", "Dictionnaire"],
@@ -3801,7 +3801,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Lit.",
     options: ["Chaise", "Table", "Lit"],
@@ -3811,7 +3811,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____.",
     options: ["Aquarium", "Mer", "Oiseau"],
@@ -3821,7 +3821,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Clé, Serrure, Fenêtre.",
     options: ["Clé", "Serrure", "Fenêtre"],
@@ -3831,7 +3831,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Peinture est à _____.",
     options: ["Artiste", "Toile", "Palette"],
@@ -3840,7 +3840,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bateau.",
     options: ["Train", "Avion", "Bateau"],
@@ -3850,7 +3850,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaussure est à _____.",
     options: ["Chaussette", "Pantalon", "Vêtement"],
@@ -3860,7 +3860,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____",
@@ -3871,7 +3871,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Hôpital est à _____",
@@ -3882,7 +3882,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Orchestre", "Piano", "Guitare"],
@@ -3892,7 +3892,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Rivière est à _____",
@@ -3903,7 +3903,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Leclerc est à Supermarché comme Renault est à _____",
@@ -3914,7 +3914,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaleur est à Été comme Froid est à _____",
@@ -3925,7 +3925,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Étoile", "Lune", "Ciel"],
@@ -3935,7 +3935,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Feuille est à Arbre comme Pétale est à _____",
@@ -3946,7 +3946,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Sommet comme Océan est à _____",
@@ -3957,7 +3957,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Chat est à _____",
@@ -3967,7 +3967,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Bibliothèque est à _____",
@@ -3978,7 +3978,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Érable", "Chêne", "Fleur"],
@@ -3988,7 +3988,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Écriture comme Peinture est à _____",
@@ -3999,7 +3999,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Aboyer comme Chat est à _____",
@@ -4009,7 +4009,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Hiver", "Été", "Matin"],
@@ -4019,7 +4019,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Train est à Voyage comme Avion est à _____",
@@ -4029,7 +4029,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chat", "Lapin", "Éléphant"],
@@ -4039,7 +4039,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Cuisine est à _____",
@@ -4050,7 +4050,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Savon"],
@@ -4060,7 +4060,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chèvre est à Lait comme Vache est à _____",
@@ -4071,7 +4071,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Abeille", "Papillon", "Oiseau"],
@@ -4081,7 +4081,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Plage comme Montagne est à _____",
@@ -4092,7 +4092,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["F", "G", "H"],
@@ -4102,7 +4102,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["Z", "Y", "X"],
@@ -4111,7 +4111,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Si A=1 et B=2, alors C=3 et Y=4, suivant la même progression.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Chat", "Chien", "Poisson"],
@@ -4121,7 +4121,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A : Livre, B : Lecture, C : Film",
@@ -4131,7 +4131,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Fleur", "Arbre", "Racine"],
@@ -4141,7 +4141,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? A : Chaud, B : Froid, C : Sec",
     options: ["Humide", "Tiède", "Lourd"],
@@ -4150,7 +4150,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Pomme", "Banane", "Voiture"],
@@ -4160,7 +4160,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A : Drapeau, B : Pays, C : Étoile",
@@ -4170,7 +4170,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Bateau", "Avion", "Train"],
@@ -4180,7 +4180,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A : École, B : Étudiant, C : Médecin",
@@ -4191,7 +4191,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Chocolat", "Sucre", "Salé"],
@@ -4200,7 +4200,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A : Montagne, B : Vallée, C : Mer",
@@ -4210,7 +4210,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Loup", "Chat", "Serpent"],
@@ -4220,7 +4220,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A : Peinture, B : Artiste, C : Musique",
@@ -4231,7 +4231,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Couture", "Tissage", "Peinture"],
@@ -4241,7 +4241,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A : Énergie, B : Électricité, C : Carburant",
@@ -4252,7 +4252,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Livre", "Revue", "Journal"],
@@ -4262,7 +4262,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme chat est à ____",
     options: ["Chien", "Souris", "Oiseau"],
@@ -4272,7 +4272,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chêne", "Pin", "Rivière"],
@@ -4281,7 +4281,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme hiver est à ____",
     options: ["Printemps", "Automne", "Soleil"],
@@ -4290,7 +4290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme livre est à ____",
     options: ["Auteur", "Écriture", "Papier"],
@@ -4300,7 +4300,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme élève est à ____",
     options: ["Professeur", "École", "Classe"],
@@ -4310,7 +4310,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme voiture est à ____",
     options: ["Route", "Essence", "Conducteur"],
@@ -4320,7 +4320,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme médecin est à ____",
     options: ["Patient", "Hôpital", "Ordonnance"],
@@ -4330,7 +4330,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme ciel est à ____",
     options: ["Nuage", "Terre", "Étoile"],
@@ -4339,7 +4339,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme ordinateur est à ____",
     options: ["Logiciel", "Écran", "Clavier"],
@@ -4349,7 +4349,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme fleur est à ____",
     options: ["Jardin", "Plante", "Terre"],
@@ -4359,7 +4359,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme éléphant est à ____",
     options: ["Animal", "Savane", "Loup"],
@@ -4369,7 +4369,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Chien comme Souris est à ?",
@@ -4380,7 +4380,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Verre est à Boisson comme Assiette est à ?",
@@ -4391,7 +4391,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Livre", "Stylo", "Chaise"],
@@ -4401,7 +4401,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Patient comme Professeur est à ?",
@@ -4412,7 +4412,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Aboyer comme Chat est à ?",
@@ -4422,7 +4422,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Mousse"],
@@ -4432,7 +4432,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Soleil est à Jour comme Lune est à ?",
@@ -4443,7 +4443,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Poisson", "Requin", "Dauphin"],
@@ -4453,7 +4453,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mouton est à Laine comme Vache est à ?",
@@ -4464,7 +4464,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Saxophone"],
@@ -4474,7 +4474,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Artiste est à ?",
@@ -4485,7 +4485,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Noir est à _____.",
     options: ["Blanc", "Rouge", "Vert"],
@@ -4494,7 +4494,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à _____.",
     options: ["Terre", "Ciel", "Montagne"],
@@ -4503,7 +4503,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____.",
     options: ["Éducation", "Savoir", "Professeur"],
@@ -4512,7 +4512,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Aube est à _____.",
     options: ["Crépuscule", "Jour", "Nuit"],
@@ -4521,7 +4521,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Fête",
     options: ["Table", "Chaise", "Fête"],
@@ -4531,7 +4531,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livres, Stylos, Chanson",
     options: ["Livres", "Stylos", "Chanson"],
@@ -4541,7 +4541,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Jardin",
     options: ["École", "Université", "Jardin"],
@@ -4551,7 +4551,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ordinateur, Tablette, Chaise",
     options: ["Ordinateur", "Tablette", "Chaise"],
@@ -4561,7 +4561,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à _____",
     options: ["Fraise", "Cerise", "Poire"],
@@ -4571,7 +4571,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Mathématiques, Chanson",
     options: ["Philosophie", "Mathématiques", "Chanson"],
@@ -4581,7 +4581,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Train est à _____",
     options: ["Voiture", "Avion", "Bateau"],
@@ -4591,7 +4591,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Oiseau, Chèvre",
     options: ["Poisson", "Oiseau", "Chèvre"],
@@ -4601,7 +4601,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Écriture, Lecture, Cuisine",
     options: ["Écriture", "Lecture", "Cuisine"],
@@ -4610,7 +4610,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La cuisine n'est pas une activité liée à la langue, contrairement aux autres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Mer, B : Océan, C : Lac.",
     options: ["Rivière", "Plage", "Montagne"],
@@ -4620,7 +4620,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Oiseau, B : Voler, C : Poisson.",
     options: ["Nager", "Sauter", "Courir"],
@@ -4630,7 +4630,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Livre, B : Lecture, C : Film.",
     options: ["Visionnage", "Projection", "Écriture"],
@@ -4640,7 +4640,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Université", "Travail"],
@@ -4650,7 +4650,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Chanson, B : Musique, C : Poème.",
     options: ["Récital", "Slam", "Lecture"],
@@ -4660,7 +4660,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Neige, B : Hiver, C : Plage.",
     options: ["Soleil", "Chaleur", "Tempête"],
@@ -4670,7 +4670,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Éléphant", "Tigre", "Lapin"],
@@ -4680,7 +4680,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? A : Fer, B : Magnetisme, C : Électricité.",
@@ -4691,7 +4691,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Gâteau, B : Sucre, C : Salé.",
     options: ["Sucre", "Épice", "Ail"],
@@ -4701,7 +4701,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? A : Clé, B : Serrure, C : Code.",
     options: ["Cadenas", "Chiffre", "Système"],
@@ -4711,7 +4711,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fleur", "Arbre", "Brouillard"],
@@ -4721,7 +4721,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : Chat, Chien, Poisson.",
@@ -4731,7 +4731,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien de garde comme Chat est à _____",
@@ -4742,7 +4742,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Docteur est à Santé comme Enseignant est à _____",
@@ -4753,7 +4753,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Hiver est à Froid comme Été est à _____",
@@ -4764,7 +4764,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Règle est à Mesurer comme Balance est à _____",
@@ -4775,7 +4775,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chien", "Chat", "Gâteau"],
@@ -4784,7 +4784,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Table", "Chaise", "École"],
@@ -4793,7 +4793,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fleur", "Arbre", "Rivière"],
@@ -4802,7 +4802,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["1", "2", "3"],
@@ -4812,7 +4812,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["Rouge", "Bleu", "Jaune"],
@@ -4822,7 +4822,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Sable", "Terre", "Eau"],
@@ -4831,7 +4831,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["Hiver", "Printemps", "Été"],
@@ -4841,7 +4841,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["Abeille", "Guêpe", "Mouche"],
@@ -4851,7 +4851,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Montagne", "Colline", "Océan"],
@@ -4860,7 +4860,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Poisson",
     options: ["Chat", "Chien", "Poisson"],
@@ -4870,7 +4870,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Rose est à _____",
@@ -4881,7 +4881,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Étudier comme Cuisine est à _____",
@@ -4892,7 +4892,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Vendredi, Janvier",
     options: ["Lundi", "Mardi", "Janvier"],
@@ -4902,7 +4902,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Loup est à Meute comme Oiseau est à _____",
@@ -4913,7 +4913,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Soleil, Lune, Étoile, Nuage",
     options: ["Soleil", "Lune", "Nuage"],
@@ -4923,7 +4923,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Humide comme Vent est à _____",
@@ -4934,7 +4934,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Peinture est à Art comme Science est à _____",
@@ -4945,7 +4945,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Cerveau est à Pensée comme Cœur est à _____",
@@ -4956,7 +4956,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Cerise, Pêcheur",
     options: ["Pêche", "Cerise", "Pêcheur"],
@@ -4966,7 +4966,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Musique est à Son comme Peinture est à _____",
@@ -4977,7 +4977,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mercure, Vénus, Mars, Pluton",
     options: ["Mercure", "Vénus", "Pluton"],
@@ -4987,7 +4987,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Vélo, Avion, École",
     options: ["Voiture", "Vélo", "École"],
@@ -4997,7 +4997,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____",
     options: ["Mer", "Terre", "Air"],
@@ -5007,7 +5007,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, Bouleau, Fleur",
     options: ["Chêne", "Pin", "Fleur"],
@@ -5017,7 +5017,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Football, Basketball, Tennis, Piano",
     options: ["Football", "Tennis", "Piano"],
@@ -5027,7 +5027,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaise est à _____",
     options: ["Table", "Bureau", "Lit"],
@@ -5037,7 +5037,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Hamster, Serpent",
     options: ["Chien", "Hamster", "Serpent"],
@@ -5047,7 +5047,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Printemps, Été, Automne, Fête",
     options: ["Hiver", "Printemps", "Fête"],
@@ -5057,7 +5057,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Bleu, Étoile",
     options: ["Rouge", "Vert", "Étoile"],
@@ -5067,7 +5067,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à _____",
     options: ["Rivière", "Lac", "Plage"],
@@ -5076,7 +5076,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Froid est à _____",
     options: ["Chaud", "Tempéré", "Saisonnier"],
@@ -5085,7 +5085,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Sucre", "Sel"],
@@ -5095,7 +5095,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chien", "Chat", "Arbre"],
@@ -5105,7 +5105,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Bicyclettes", "Voitures", "Camions"],
@@ -5114,7 +5114,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Bicyclettes sont des véhicules à deux roues, tandis que les autres sont à quatre roues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Chat est à _____.",
@@ -5125,7 +5125,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Hiver, Printemps.",
     options: ["Été", "Hiver", "Automne"],
@@ -5135,7 +5135,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Élève comme Maison est à _____.",
@@ -5146,7 +5146,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Canapé.",
     options: ["Table", "Chaise", "Lit"],
@@ -5156,7 +5156,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Cerveau, Cœur, Main.",
     options: ["Cerveau", "Cœur", "Pied"],
@@ -5166,7 +5166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Arc-en-ciel comme Neige est à _____.",
@@ -5177,7 +5177,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bibliothèque.",
     options: ["École", "Université", "Musée"],
@@ -5187,7 +5187,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Horloge est à Temps comme Règle est à _____.",
@@ -5198,7 +5198,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lundi est à Semaine comme Janvier est à _____.",
@@ -5209,7 +5209,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Roman.",
     options: ["Chanson", "Poème", "Film"],
@@ -5219,7 +5219,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artiste est à œuvre comme Auteur est à _____.",
@@ -5230,7 +5230,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Mot de passe est à _____.",
@@ -5241,7 +5241,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Satellite.",
     options: ["Étoile", "Planète", "Comète"],
@@ -5251,7 +5251,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : chat, chien, oiseau.",
     options: ["chat", "chien", "poisson"],
@@ -5261,7 +5261,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : jour est à nuit comme soleil est à ____.",
@@ -5272,7 +5272,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : chaud est à froid comme haut est à ____.",
@@ -5282,7 +5282,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : arbre est à forêt comme fleur est à ____.",
@@ -5293,7 +5293,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : livre est à lecteur comme film est à ____.",
@@ -5304,7 +5304,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : professeur est à élève comme médecin est à ____.",
@@ -5315,7 +5315,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : océan est à vague comme montagne est à ____.",
@@ -5326,7 +5326,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : étoile est à ciel comme fleur est à ____.",
@@ -5337,7 +5337,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : peinture est à artiste comme musique est à ____.",
@@ -5348,7 +5348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : film est à réalisateur comme livre est à ____.",
@@ -5359,7 +5359,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : bateau est à mer comme avion est à ____.",
@@ -5370,7 +5370,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : chat, chien, voiture.",
@@ -5381,7 +5381,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme L est à _____.",
     options: ["M", "N", "O"],
@@ -5390,7 +5390,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : pomme, banane, voiture.",
@@ -5401,7 +5401,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme haut est à _____.",
     options: ["bas", "gauche", "droite"],
@@ -5411,7 +5411,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : carré, triangle, rouge.",
@@ -5422,7 +5422,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : livre, crayon, table.",
@@ -5433,7 +5433,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme soleil est à _____.",
     options: ["lune", "étoile", "planète"],
@@ -5443,7 +5443,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme voiture est à _____.",
     options: ["moto", "vélo", "camion"],
@@ -5453,7 +5453,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : chat, souris, ordinateur.",
@@ -5464,7 +5464,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme neige est à _____.",
     options: ["glace", "sable", "pluie"],
@@ -5473,7 +5473,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Poisson",
     options: ["Chien", "Chat", "Poisson"],
@@ -5483,7 +5483,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Manteau est à _____",
     options: ["Écharpe", "Chapeau", "Pantalon"],
@@ -5493,7 +5493,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Violon, Guitare",
     options: ["Piano", "Violon", "Guitare"],
@@ -5503,7 +5503,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Livre",
     options: ["École", "Université", "Livre"],
@@ -5513,7 +5513,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Drapeau est à _____",
     options: ["Pays", "Ligne", "Couleur"],
@@ -5523,7 +5523,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Rooster est à _____",
@@ -5534,7 +5534,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Sec est à _____",
@@ -5544,7 +5544,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["avion", "train", "route"],
@@ -5554,7 +5554,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Docteur est à Malade comme Professeur est à _____",
@@ -5565,7 +5565,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["orange", "kiwi", "salade"],
@@ -5575,7 +5575,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lune est à Nuit comme Mer est à _____",
@@ -5586,7 +5586,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pomme est à Rouge comme Banane est à _____",
@@ -5597,7 +5597,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Umbrella comme Neige est à _____",
@@ -5608,7 +5608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pomme est à Fruit comme Carotte est à _____ ?",
@@ -5619,7 +5619,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprendre comme Hôpital est à _____ ?",
@@ -5629,7 +5629,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Épinard", "Carotte", "Pommes de terre"],
@@ -5638,7 +5638,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Les épinards et les carottes sont des légumes-feuilles, tandis que les pommes de terre sont des tubercules.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["G", "H", "I"],
@@ -5648,7 +5648,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Table"],
@@ -5658,7 +5658,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["J", "K", "L"],
@@ -5668,7 +5668,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rose", "Tulipe", "Fleur"],
@@ -5678,7 +5678,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["M", "N", "O"],
@@ -5688,7 +5688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Caramel", "Caisse"],
@@ -5698,7 +5698,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Q", "R", "S"],
@@ -5708,7 +5708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fiction", "Roman", "Tablette"],
@@ -5718,7 +5718,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["T", "U", "V"],
@@ -5728,7 +5728,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["W", "X", "Y"],
@@ -5738,7 +5738,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Piano", "Guitare", "Bureau"],
@@ -5748,7 +5748,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chiffre est à Nombre comme Lettre est à _____",
@@ -5759,7 +5759,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Été est à Hiver comme Jour est à _____",
@@ -5770,7 +5770,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Roue est à Vélo comme Aile est à _____",
@@ -5781,7 +5781,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rose", "Tulipe", "Cactus"],
@@ -5791,7 +5791,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Hiver est à Froid comme Été est à _____",
@@ -5802,7 +5802,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Oiseau est à Voler comme Poisson est à _____",
@@ -5812,7 +5812,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Médicament"],
@@ -5822,7 +5822,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -5832,7 +5832,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Hôpital comme Professeur est à _____",
@@ -5843,7 +5843,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Code est à _____",
@@ -5854,7 +5854,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lune est à _____",
     options: ["Soleil", "Étoile", "Terre"],
@@ -5864,7 +5864,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____",
     options: ["Abeille", "Oiseau", "Mammifère"],
@@ -5874,7 +5874,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Canapé",
     options: ["Table", "Chaise", "Canapé"],
@@ -5884,7 +5884,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Bicyclette est à _____",
     options: ["Vélo", "Moto", "Voiture"],
@@ -5894,7 +5894,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Cuillère est à _____",
     options: ["Fourchette", "Couteau", "Assiette"],
@@ -5904,7 +5904,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Canard, Serpent",
     options: ["Aigle", "Canard", "Serpent"],
@@ -5914,7 +5914,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chien", "Chat", "Oiseau"],
@@ -5924,7 +5924,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Rouge est à Couleur comme Chien est à _____",
@@ -5935,7 +5935,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Salé"],
@@ -5945,7 +5945,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Plume comme Lire est à _____",
@@ -5955,7 +5955,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Squelette est à Corps comme Racine est à _____",
@@ -5966,7 +5966,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Table", "Chaise", "Canapé"],
@@ -5976,7 +5976,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Roi est à _____",
@@ -5987,7 +5987,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Pomme",
     options: ["Lundi", "Mardi", "Pomme"],
@@ -5997,7 +5997,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Oiseau, Poisson",
     options: ["Chien", "Chat", "Poisson"],
@@ -6007,7 +6007,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Arbre comme Neige est à _____",
@@ -6018,7 +6018,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Marteau, Tournevis, Clé",
     options: ["Marteau", "Tournevis", "Clé"],
@@ -6028,7 +6028,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lecture comme Musique est à _____",
@@ -6039,7 +6039,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Éléphant, Lion, Chien, Tigre",
     options: ["Éléphant", "Lion", "Chien"],
@@ -6049,7 +6049,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Auto",
     options: ["Piano", "Guitare", "Auto"],
@@ -6059,7 +6059,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Fête est à Célébration comme Réunion est à _____",
@@ -6070,7 +6070,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mercure, Vénus, Lune",
     options: ["Mercure", "Vénus", "Lune"],
@@ -6080,7 +6080,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["B", "A", "C"],
@@ -6090,7 +6090,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["A", "C", "D"],
@@ -6099,7 +6099,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -6109,7 +6109,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["F", "G", "H"],
@@ -6119,7 +6119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Eau", "Soda"],
@@ -6129,7 +6129,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Rond", "Carré", "Triangle"],
@@ -6138,7 +6138,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -6146,7 +6146,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     explanation: "A et B sont des parfums de glace, C est également un parfum.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["L", "M", "N"],
@@ -6156,7 +6156,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Table", "Chaise", "Lait"],
@@ -6166,7 +6166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l’intrus parmi les mots suivants :",
     options: ["Épinard", "Carotte", "Pomme de terre"],
@@ -6176,7 +6176,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l’intrus parmi les mots suivants :",
     options: ["Bière", "Vin", "Jus"],
@@ -6186,7 +6186,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme 1 est à _____.",
     options: ["2", "3", "4"],
@@ -6196,7 +6196,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme rouge est à _____.",
     options: ["Bleu", "Vert", "Jaune"],
@@ -6205,7 +6205,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme 10 est à _____.",
     options: ["20", "30", "40"],
@@ -6214,7 +6214,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme 4 est à _____.",
     options: ["8", "6", "10"],
@@ -6223,7 +6223,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fiction", "Roman", "Poème"],
@@ -6233,7 +6233,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme 5 est à _____.",
     options: ["15", "10", "20"],
@@ -6242,7 +6242,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chêne", "Érable", "Fleur"],
@@ -6252,7 +6252,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chat", "Souris", "Crocodile"],
@@ -6262,7 +6262,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Roue est à _____",
     options: ["Vélo", "Moteur", "Volant"],
@@ -6272,7 +6272,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mère est à _____",
     options: ["Fils", "Père", "Frère"],
@@ -6282,7 +6282,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Pêche"],
@@ -6292,7 +6292,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Terre est à _____",
     options: ["Lune", "Soleil", "Étoile"],
@@ -6302,7 +6302,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chiffre est à _____",
     options: ["Nombre", "Lettre", "Symbole"],
@@ -6312,7 +6312,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Page", "Chapitre", "Écrivain"],
@@ -6322,7 +6322,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Aigle est à Oiseau comme Lion est à _____",
@@ -6332,7 +6332,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Carotte", "Brocoli", "Couteau"],
@@ -6342,7 +6342,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Lac est à _____",
@@ -6353,7 +6353,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Batterie"],
@@ -6363,7 +6363,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Terre est à Planète comme Soleil est à _____",
@@ -6374,7 +6374,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Femme est à Mère comme Homme est à _____",
@@ -6385,7 +6385,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Café", "Soda"],
@@ -6395,7 +6395,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Plage"],
@@ -6405,7 +6405,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chat", "Cane", "Chien"],
@@ -6415,7 +6415,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Serpent", "Abeille", "Chien"],
@@ -6425,7 +6425,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme élève est à _____",
     options: ["Professeur", "Classe", "École"],
@@ -6435,7 +6435,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme 2 est à _____",
     options: ["4", "3", "5"],
@@ -6444,7 +6444,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme couleur est à _____",
     options: ["Peinture", "Palette", "Art"],
@@ -6454,7 +6454,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Biscuit"],
@@ -6464,7 +6464,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mercure, Vénus, Mars, Soleil.",
     options: ["Mercure", "Vénus", "Soleil"],
@@ -6474,7 +6474,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____.",
     options: ["Professeur", "Élève", "Classe"],
@@ -6483,7 +6483,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Voiture.",
     options: ["Rouge", "Vert", "Voiture"],
@@ -6492,7 +6492,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrivain est à _____.",
     options: ["Roman", "Lecture", "Bibliothèque"],
@@ -6501,7 +6501,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Chapeau, Chaussure, Table.",
     options: ["Manteau", "Chapeau", "Table"],
@@ -6510,7 +6510,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciel, Mer, Terre, Vent.",
     options: ["Ciel", "Mer", "Vent"],
@@ -6520,7 +6520,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Tasse, Assiette, Fourchette, Cuillère.",
     options: ["Assiette", "Cuillère", "Tasse"],
@@ -6530,7 +6530,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Peinture.",
     options: ["Piano", "Guitare", "Peinture"],
@@ -6540,7 +6540,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Jardin est à _____.",
     options: ["Plante", "Fleur", "Arbre"],
@@ -6549,7 +6549,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Comète, Vent.",
     options: ["Lune", "Comète", "Vent"],
@@ -6559,7 +6559,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chiennet comme Chat est à ____.",
@@ -6570,7 +6570,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Rivière, Montagne.",
     options: ["Mer", "Rivière", "Montagne"],
@@ -6580,7 +6580,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Pluie est à Arbre comme Neige est à ____.",
@@ -6591,7 +6591,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Cahier, Crayon.",
     options: ["Livre", "Cahier", "Crayon"],
@@ -6601,7 +6601,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Apprentissage comme Bibliothèque est à ____.",
@@ -6612,7 +6612,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Livre.",
     options: ["Chaise", "Table", "Livre"],
@@ -6622,7 +6622,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mère est à Fils comme Père est à ____.",
@@ -6633,7 +6633,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Lune est à Nuit comme Soleil est à ____.",
@@ -6643,7 +6643,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le soleil est visible durant le jour, tout comme la lune est visible durant la nuit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pomme est à Fruit comme Carotte est à ?",
@@ -6654,7 +6654,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Rose est à ?",
@@ -6665,7 +6665,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Table", "Chaise", "Soleil"],
@@ -6674,7 +6674,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Musicien est à ?",
@@ -6685,7 +6685,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Élève comme Médecin est à ?",
@@ -6696,7 +6696,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -6706,7 +6706,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Bibliothèque est à ?",
@@ -6717,7 +6717,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Fromage", "Pain"],
@@ -6726,7 +6726,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Ciel comme Poisson est à ?",
@@ -6737,7 +6737,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chef est à Cuisine comme Conducteur est à ?",
@@ -6748,7 +6748,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien de garde comme Chat est à _____ ?",
@@ -6759,7 +6759,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Pomme", "Banane", "Brocoli"],
@@ -6769,7 +6769,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Vitesse est à Temps comme Distance est à _____ ?",
@@ -6780,7 +6780,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaise est à Asseoir comme Table est à _____ ?",
@@ -6790,7 +6790,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Cercle", "Triangle", "Carré"],
@@ -6800,7 +6800,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanteur est à Chanson comme Écrivain est à _____ ?",
@@ -6811,7 +6811,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Rouge", "Bleu", "Rond"],
@@ -6821,7 +6821,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pêche est à Fruit comme Carotte est à _____ ?",
@@ -6831,7 +6831,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Écran", "Clavier", "Souris"],
@@ -6841,7 +6841,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Poisson est à _____",
@@ -6851,7 +6851,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rose", "Tulipe", "Brouillon"],
@@ -6860,7 +6860,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Lac est à _____",
@@ -6870,7 +6870,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Cane"],
@@ -6879,7 +6879,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chiffre est à Nombre comme Lettre est à _____",
@@ -6889,7 +6889,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Ciel comme Fleur est à _____",
@@ -6899,7 +6899,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Philosophie", "Mathématiques", "Sculpture"],
@@ -6908,7 +6908,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Vallée comme Plage est à _____",
@@ -6918,7 +6918,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Manger", "Boire", "Dormir"],
@@ -6927,7 +6927,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienne comme Chat est à ____.",
@@ -6938,7 +6938,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Livre est à Lire comme Film est à ____.",
@@ -6948,7 +6948,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Récréation.",
     options: ["École", "Université", "Récréation"],
@@ -6958,7 +6958,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écrivain est à Écriture comme Artiste est à ____.",
@@ -6969,7 +6969,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Professeur est à Élève comme Médecin est à ____.",
@@ -6980,7 +6980,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Viande.",
     options: ["Piano", "Guitare", "Viande"],
@@ -6990,7 +6990,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Manteau est à Hiver comme Maillot est à ____.",
@@ -7001,7 +7001,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Pigeon, Poisson.",
     options: ["Aigle", "Pigeon", "Poisson"],
@@ -7011,7 +7011,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Étoile est à Ciel comme Vague est à ____.",
@@ -7022,7 +7022,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Réveil est à Sommeil comme Horloge est à ____.",
@@ -7033,7 +7033,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Bateau est à Mer comme Camion est à ____.",
@@ -7044,7 +7044,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Chat est à _____",
@@ -7054,7 +7054,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lait est à Fromage comme Raisin est à _____",
@@ -7065,7 +7065,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Bibliothèque comme Vêtement est à _____",
@@ -7076,7 +7076,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Lune", "Étoile", "Nuage"],
@@ -7086,7 +7086,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chèvre est à Bouc comme Vache est à _____",
@@ -7097,7 +7097,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Épinard", "Brocoli", "Pomme"],
@@ -7107,7 +7107,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chocolat", "Vanille", "Café"],
@@ -7117,7 +7117,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Crayon est à Papier comme Peinture est à _____",
@@ -7128,7 +7128,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Élève comme Hôpital est à _____",
@@ -7139,7 +7139,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Chaise",
     options: ["Rose", "Tulipe", "Chaise"],
@@ -7149,7 +7149,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Oiseau, Avion, Poisson",
     options: ["Oiseau", "Avion", "Poisson"],
@@ -7158,7 +7158,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le poisson vit dans l'eau, tandis que les autres peuvent voler.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pomme", "Banane", "Tomate"],
@@ -7168,7 +7168,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Manteau", "Pull", "Chaussure"],
@@ -7178,7 +7178,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Café"],
@@ -7188,7 +7188,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Q", "R", "P"],
@@ -7197,7 +7197,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Sucre"],
@@ -7207,7 +7207,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["J", "I", "K"],
@@ -7217,7 +7217,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Bateau", "Avion", "Train"],
@@ -7227,7 +7227,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["L", "M", "N"],
@@ -7237,7 +7237,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["O", "P", "Q"],
@@ -7247,7 +7247,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Limonade.",
     options: ["Rose", "Tulipe", "Limonade"],
@@ -7257,7 +7257,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Manger est à _____ ?",
     options: ["Boire", "Dormir", "Jouer"],
@@ -7266,7 +7266,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Plage.",
     options: ["Train", "Avion", "Plage"],
@@ -7276,7 +7276,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Été, Chaussure.",
     options: ["Hiver", "Été", "Chaussure"],
@@ -7286,7 +7286,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Livre.",
     options: ["Mer", "Montagne", "Livre"],
@@ -7296,7 +7296,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Orange.",
     options: ["Lait", "Eau", "Orange"],
@@ -7306,7 +7306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Cuisine est à _____ ?",
     options: ["Chambre", "Salle de bain", "Repas"],
@@ -7315,7 +7315,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Chaud est à Froid comme Lumière est à ?",
@@ -7326,7 +7326,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Mère est à Enfant comme Professeur est à ?",
@@ -7337,7 +7337,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Lundi est à Semaine comme Janvier est à ?",
@@ -7348,7 +7348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Écrivain est à Livre comme Artiste est à ?",
@@ -7359,7 +7359,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Piano est à Musique comme Plume est à ?",
@@ -7370,7 +7370,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Arbre est à Feuille comme Fleur est à ?",
@@ -7381,7 +7381,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Guitare est à Musique comme Plat est à ?",
@@ -7392,7 +7392,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : bleu, rouge, voiture.",
     options: ["bleu", "rouge", "voiture"],
@@ -7402,7 +7402,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : montagne, mer, ciel.",
     options: ["montagne", "mer", "ciel"],
@@ -7412,7 +7412,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme neige est à _____",
     options: ["glace", "eau", "pluie"],
@@ -7422,7 +7422,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme médecin est à _____",
     options: ["hôpital", "patient", "maladie"],
@@ -7432,7 +7432,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : livre, magazine, table.",
     options: ["livre", "magazine", "table"],
@@ -7442,7 +7442,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme fleur est à _____",
     options: ["plante", "jardin", "arbre"],
@@ -7452,7 +7452,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme oeuf est à _____",
     options: ["poule", "cuisine", "omelette"],
@@ -7462,7 +7462,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : ordinateur, imprimante, livre.",
     options: ["ordinateur", "imprimante", "livre"],
@@ -7472,7 +7472,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme film est à _____",
     options: ["acteur", "scénario", "cinéma"],
@@ -7482,7 +7482,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme route est à _____",
     options: ["voiture", "carrefour", "panneau"],
@@ -7492,7 +7492,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Lion est à _____",
@@ -7503,7 +7503,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["École", "Université", "Soleil"],
@@ -7513,7 +7513,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Jour est à _____",
@@ -7524,7 +7524,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chat", "Chien", "Oiseau"],
@@ -7534,7 +7534,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fraise", "Cerise", "Bateau"],
@@ -7544,7 +7544,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Philosophie est à Pensée comme Mathématiques est à _____",
@@ -7555,7 +7555,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Château", "Palais", "Arbre"],
@@ -7565,7 +7565,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Art est à Création comme Science est à _____",
@@ -7576,7 +7576,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Poésie", "Roman", "Peinture"],
@@ -7586,7 +7586,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprendre comme Maison est à _____",
@@ -7596,7 +7596,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lait est à Fromage comme Vin est à _____",
@@ -7607,7 +7607,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Élève", "Professeur", "Livre"],
@@ -7617,7 +7617,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Fleuve est à Rivière comme Océan est à _____",
@@ -7628,7 +7628,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pêche", "Poire", "Brocoli"],
@@ -7637,7 +7637,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaleur est à Froid comme Lumière est à _____",
@@ -7648,7 +7648,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Chien",
     options: ["Rouge", "Bleu", "Chien"],
@@ -7658,7 +7658,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Chaise",
     options: ["École", "Université", "Chaise"],
@@ -7667,7 +7667,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La chaise est un meuble, tandis que les autres sont des établissements d'enseignement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Avion.",
     options: ["École", "Université", "Avion"],
@@ -7677,7 +7677,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Fuchsia.",
     options: ["Rouge", "Vert", "Fuchsia"],
@@ -7687,7 +7687,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____.",
     options: ["Article", "Roman", "Journal"],
@@ -7697,7 +7697,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mètre, Centimètre, Kilomètre.",
     options: ["Mètre", "Centimètre", "Kilomètre"],
@@ -7707,7 +7707,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Chanson.",
     options: ["Piano", "Guitare", "Chanson"],
@@ -7717,7 +7717,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manger, Boire, Lire.",
     options: ["Manger", "Boire", "Lire"],
@@ -7727,7 +7727,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____.",
     options: ["Oiseau", "Mammifère", "Reptile"],
@@ -7737,7 +7737,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mars, Vénus, Étoile.",
     options: ["Mars", "Vénus", "Étoile"],
@@ -7747,7 +7747,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Écrivain, Lecteur, Bibliothèque.",
     options: ["Écrivain", "Lecteur", "Bibliothèque"],
@@ -7757,7 +7757,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Rouge", "Vert", "Cercle"],
@@ -7767,7 +7767,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme jour est à _____.",
     options: ["Semaine", "Nuit", "Heure"],
@@ -7777,7 +7777,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Lion", "Tigre", "Éléphant"],
@@ -7787,7 +7787,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Chocolat", "Vanille", "Chocolatier"],
@@ -7797,7 +7797,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme train est à _____.",
     options: ["Avion", "Bus", "Voiture"],
@@ -7807,7 +7807,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Rugby", "Football", "Chanson"],
@@ -7817,7 +7817,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Journal, Table.",
     options: ["Livre", "Journal", "Table"],
@@ -7827,7 +7827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Maison.",
     options: ["École", "Université", "Maison"],
@@ -7837,7 +7837,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Écharpe, Chaise.",
     options: ["Manteau", "Écharpe", "Chaise"],
@@ -7847,7 +7847,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Océan, Montagne.",
     options: ["Mer", "Océan", "Montagne"],
@@ -7857,7 +7857,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sucre, Sel, Poivre.",
     options: ["Sucre", "Sel", "Poivre"],
@@ -7867,7 +7867,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Arbre est à _____.",
     options: ["Fleur", "Feuille", "Fruit"],
@@ -7877,7 +7877,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Enfant comme Père est à _____",
@@ -7887,7 +7887,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Voiture est à Route comme Bateau est à _____",
@@ -7898,7 +7898,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Bûche"],
@@ -7908,7 +7908,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Été est à Soleil comme Hiver est à _____",
@@ -7919,7 +7919,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Bière"],
@@ -7929,7 +7929,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Femme", "Homme", "Enfant"],
@@ -7939,7 +7939,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Voiture, Orange",
     options: ["Pomme", "Banane", "Voiture"],
@@ -7949,7 +7949,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Enfant comme Frère est à _____",
@@ -7960,7 +7960,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Automne, Été, Hiver, Montagne",
     options: ["Automne", "Été", "Montagne"],
@@ -7970,7 +7970,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Moineau, Serpent, Faucon",
     options: ["Aigle", "Moineau", "Serpent"],
@@ -7980,7 +7980,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Soleil est à Jour comme Lune est à _____",
@@ -7991,7 +7991,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaussure est à Pied comme Gant est à _____",
@@ -8002,7 +8002,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artiste est à Œuvre comme Écrivain est à _____",
@@ -8013,7 +8013,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Avion est à Vol comme Bateau est à _____",
@@ -8024,7 +8024,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaleur est à Feu comme Froid est à _____",
@@ -8035,7 +8035,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chien est à _____",
     options: ["Chat", "Animal", "Oiseau"],
@@ -8045,7 +8045,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Vert", "Chiffre"],
@@ -8055,7 +8055,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Plage est à _____",
     options: ["Montagne", "Soleil", "Mer"],
@@ -8064,7 +8064,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Verre est à _____",
     options: ["Boisson", "Tasse", "Table"],
@@ -8074,7 +8074,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Papier", "Écrit", "Bibliothèque"],
@@ -8084,7 +8084,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Poisson.",
     options: ["Rouge", "Vert", "Poisson"],
@@ -8094,7 +8094,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chèvre, Vache, Table.",
     options: ["Chèvre", "Vache", "Table"],
@@ -8104,7 +8104,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fer, Cuivre, Pierre.",
     options: ["Fer", "Cuivre", "Pierre"],
@@ -8114,7 +8114,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Ciel.",
     options: ["Lune", "Étoile", "Ciel"],
@@ -8124,7 +8124,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____.",
     options: ["Écrivain", "Chapitre", "Papier"],
@@ -8133,7 +8133,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sauter, Marcher, Écrire.",
     options: ["Sauter", "Marcher", "Écrire"],
@@ -8143,7 +8143,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Voiture.",
     options: ["Chaise", "Table", "Voiture"],
@@ -8153,7 +8153,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Neige est à _____",
     options: ["Froid", "Chaud", "Vent"],
@@ -8162,7 +8162,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Juillet.",
     options: ["Lundi", "Mardi", "Juillet"],
@@ -8171,7 +8171,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Lundi et mardi sont des jours de la semaine, juillet est un mois.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lecture comme Film est à ?",
@@ -8181,7 +8181,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaise est à Asseoir comme Lit est à ?",
@@ -8192,7 +8192,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sombre est à Lumière comme Froid est à ?",
@@ -8203,7 +8203,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Roman comme Peintre est à ?",
@@ -8214,7 +8214,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Forte", "Guitare"],
@@ -8224,7 +8224,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Cours est à Étudiant comme Réunion est à ?",
@@ -8235,7 +8235,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Roi est à ?",
@@ -8246,7 +8246,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Feuille comme Fleur est à ?",
@@ -8257,7 +8257,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Conducteur est à Voiture comme Pilote est à ?",
@@ -8268,7 +8268,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Éducation comme Hôpital est à ?",
@@ -8279,7 +8279,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Horloge est à Temps comme Thermomètre est à ?",
@@ -8290,7 +8290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artiste est à Œuvre comme Écrivain est à ?",
@@ -8301,7 +8301,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Soins comme Enseignant est à ?",
@@ -8312,7 +8312,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanson est à Musique comme Poème est à ?",
@@ -8323,7 +8323,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Chien est à Chien-guide comme Chat est à ?)",
@@ -8334,7 +8334,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Roi est à Reine comme Homme est à ?)",
@@ -8345,7 +8345,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Eau", "Jus", "Bouteille"],
@@ -8355,7 +8355,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (École est à Apprendre comme Maison est à ?)",
@@ -8365,7 +8365,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Piano", "Guitare", "Batterie"],
@@ -8375,7 +8375,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Lumière est à Obscurité comme Jour est à ?)",
@@ -8386,7 +8386,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Français", "Espagnol", "Banane"],
@@ -8396,7 +8396,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Mère est à Enfant comme Père est à ?)",
@@ -8407,7 +8407,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Salé"],
@@ -8417,7 +8417,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Neige est à Hiver comme Fleur est à ?)",
@@ -8428,7 +8428,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Froide est à Chaud comme Sombre est à ?)",
@@ -8439,7 +8439,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Gâteau", "Pain"],
@@ -8449,7 +8449,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Couteau.",
     options: ["Table", "Chaise", "Couteau"],
@@ -8458,7 +8458,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chèvre, Vache, Banane.",
     options: ["Chèvre", "Vache", "Banane"],
@@ -8467,7 +8467,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Voiture est à _____.",
     options: ["Mécanicien", "Essence", "Bicyclette"],
@@ -8476,7 +8476,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Terre.",
     options: ["Étoile", "Lune", "Terre"],
@@ -8486,7 +8486,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Chat", "Chien", "Table"],
@@ -8496,7 +8496,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Pomme", "Banane", "Voiture"],
@@ -8506,7 +8506,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Mars", "Jupiter", "Terre"],
@@ -8516,7 +8516,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Hiver", "Printemps", "Chaud"],
@@ -8526,7 +8526,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["G", "H", "I"],
@@ -8536,7 +8536,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Chien", "Chat", "Oiseau"],
@@ -8546,7 +8546,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Café", "Thé", "Bouteille"],
@@ -8556,7 +8556,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["U", "V", "W"],
@@ -8566,7 +8566,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Abeille", "Mouche", "Papillon"],
@@ -8576,7 +8576,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["École", "Université", "Bibliothèque"],
@@ -8586,7 +8586,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Brocoli.",
     options: ["Pomme", "Banane", "Brocoli"],
@@ -8596,7 +8596,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mercredi, Octobre.",
     options: ["Lundi", "Mercredi", "Octobre"],
@@ -8606,7 +8606,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Vitesse est à _____.",
     options: ["Temps", "Distance", "Accélération"],
@@ -8616,7 +8616,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Canapé.",
     options: ["Chaise", "Table", "Canapé"],
@@ -8626,7 +8626,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lait est à _____.",
     options: ["Eau", "Jus", "Crème"],
@@ -8635,7 +8635,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____.",
     options: ["Requin", "Oiseau", "Mammifère"],
@@ -8644,7 +8644,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Roue est à _____.",
     options: ["Voiture", "Moteur", "Pneu"],
@@ -8653,7 +8653,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Feuille est à _____.",
     options: ["Arbre", "Fleur", "Racine"],
@@ -8662,7 +8662,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Océan, Désert.",
     options: ["Mer", "Océan", "Désert"],
@@ -8672,7 +8672,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Aboyer comme Chat est à _____",
@@ -8681,7 +8681,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     explanation: "Le chien aboie et le chat miaule.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Chiffre.",
     options: ["Rouge", "Bleu", "Chiffre"],
@@ -8691,7 +8691,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fraise, Cerise, École.",
     options: ["Fraise", "Cerise", "École"],
@@ -8700,7 +8700,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Écriture.",
     options: ["Table", "Chaise", "Écriture"],
@@ -8709,7 +8709,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manger, Boire, Dormir.",
     options: ["Manger", "Boire", "Dormir"],
@@ -8719,7 +8719,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Moineau, Serpent.",
     options: ["Aigle", "Moineau", "Serpent"],
@@ -8729,7 +8729,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Printemps, Aube.",
     options: ["Hiver", "Printemps", "Aube"],
@@ -8739,7 +8739,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Océan.",
     options: ["Étoile", "Lune", "Océan"],
@@ -8749,7 +8749,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Pierre.",
     options: ["Chêne", "Bouleau", "Pierre"],
@@ -8759,7 +8759,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Langue, Dialecte, Cuisine.",
     options: ["Langue", "Dialecte", "Cuisine"],
@@ -8769,7 +8769,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Temps est à _____",
     options: ["Histoire", "Calendrier", "Montre"],
@@ -8779,7 +8779,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Science, Art.",
     options: ["Philosophie", "Science", "Art"],
@@ -8789,7 +8789,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Éducation est à _____",
     options: ["Scolarité", "Apprentissage", "Formation"],
@@ -8799,7 +8799,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Forêt, Désert, Océan.",
     options: ["Forêt", "Désert", "Océan"],
@@ -8809,7 +8809,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Printemps, Hiver.",
     options: ["Été", "Printemps", "Automne"],
@@ -8819,7 +8819,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lait est à _____.",
     options: ["Eau", "Fromage", "Yaourt"],
@@ -8829,7 +8829,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Soleil.",
     options: ["Étoile", "Lune", "Nuage"],
@@ -8839,7 +8839,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pluie est à _____.",
     options: ["Neige", "Soleil", "Vent"],
@@ -8849,7 +8849,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pinceau, Palette, Caméra.",
     options: ["Pinceau", "Palette", "Caméra"],
@@ -8859,7 +8859,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Bateau.",
     options: ["Avion", "Train", "Bicyclette"],
@@ -8869,7 +8869,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Oiseau.",
     options: ["Chat", "Chien", "Poisson"],
@@ -8879,7 +8879,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienne comme Chat est à ____.",
@@ -8890,7 +8890,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Pull, Chaussure.",
     options: ["Manteau", "Pull", "Chaussure"],
@@ -8900,7 +8900,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bibliothèque.",
     options: ["École", "Université", "Bibliothèque"],
@@ -8910,7 +8910,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écrivain est à Livre comme Peintre est à ____.",
@@ -8921,7 +8921,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Été, Printemps.",
     options: ["Hiver", "Été", "Printemps"],
@@ -8931,7 +8931,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Pierre.",
     options: ["Rose", "Tulipe", "Pierre"],
@@ -8941,7 +8941,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chanson est à Musique comme Poème est à ____.",
@@ -8952,7 +8952,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Vélo, Bateau.",
     options: ["Voiture", "Vélo", "Bateau"],
@@ -8962,7 +8962,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mère est à Fille comme Père est à ____.",
@@ -8972,7 +8972,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Matin, Midi, Soirée.",
     options: ["Matin", "Midi", "Soirée"],
@@ -8982,7 +8982,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, École.",
     options: ["Lundi", "Mardi", "École"],
@@ -8992,7 +8992,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Arbre.",
     options: ["Rose", "Tulipe", "Arbre"],
@@ -9002,7 +9002,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Bateau, Train, Avion.",
     options: ["Voiture", "Bateau", "Train"],
@@ -9012,7 +9012,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrire est à _____.",
     options: ["Lire", "Dessiner", "Parler"],
@@ -9022,7 +9022,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Éléphant.",
     options: ["Chat", "Chien", "Éléphant"],
@@ -9032,7 +9032,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manger, Boire, Dormir, Écrire.",
     options: ["Manger", "Boire", "Écrire"],
@@ -9042,7 +9042,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Planète, Nuage.",
     options: ["Étoile", "Lune", "Nuage"],
@@ -9052,7 +9052,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Film est à _____.",
     options: ["Acteur", "Scène", "Livre"],
@@ -9062,7 +9062,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fer, Cuivre, Bois.",
     options: ["Fer", "Cuivre", "Bois"],
@@ -9072,7 +9072,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Plage",
     options: ["École", "Université", "Plage"],
@@ -9082,7 +9082,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Pluie",
     options: ["Chêne", "Bouleau", "Pluie"],
@@ -9092,7 +9092,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mozart, Beethoven, Peinture",
     options: ["Mozart", "Beethoven", "Peinture"],
@@ -9102,7 +9102,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poésie, Roman, Sculpture",
     options: ["Poésie", "Roman", "Sculpture"],
@@ -9112,7 +9112,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Vent est à _____",
     options: ["Tempête", "Soleil", "Pluie"],
@@ -9121,7 +9121,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Médecine est à _____",
     options: ["Santé", "Chirurgie", "Maladie"],
@@ -9130,7 +9130,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : pomme, banane, carotte.",
@@ -9141,7 +9141,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : rouge, bleu, triangle.",
@@ -9152,7 +9152,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme livre est à _____",
     options: ["papier", "stylo", "écriture"],
@@ -9161,7 +9161,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme éléphant est à _____",
     options: ["souris", "tigre", "lion"],
@@ -9170,7 +9170,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme lumière est à _____",
     options: ["obscurité", "éclat", "clarté"],
@@ -9178,7 +9178,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     explanation: "Lumière et obscurité sont des opposés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Étudiant", "Professeur", "Savoir"],
@@ -9188,7 +9188,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Verre est à _____",
     options: ["Eau", "Bouteille", "Table"],
@@ -9198,7 +9198,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Serpent est à ?",
@@ -9209,7 +9209,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Nuit est à Jour comme Hiver est à ?",
@@ -9220,7 +9220,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rose", "Tulipe", "Brouillon"],
@@ -9230,7 +9230,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Étudiant comme Hôpital est à ?",
@@ -9241,7 +9241,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -9251,7 +9251,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Argent est à Richesse comme Temps est à ?",
@@ -9262,7 +9262,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Aboyer comme Chat est à ?",
@@ -9273,7 +9273,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Stylo comme Dessiner est à ?",
@@ -9284,7 +9284,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pomme est à Verger comme Raisin est à _____",
@@ -9295,7 +9295,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fiction", "Roman", "Histoire"],
@@ -9305,7 +9305,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chat", "Lapin", "Serpent"],
@@ -9315,7 +9315,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanson est à Musique comme Poème est à _____",
@@ -9326,7 +9326,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chef est à Plat comme Directeur est à _____",
@@ -9337,7 +9337,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Chien est à Animal comme Canard est à ?)",
@@ -9348,7 +9348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Voiture", "Bicyclette", "Chocolat"],
@@ -9358,7 +9358,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Rouge est à Couleur comme Cerise est à ?)",
@@ -9369,7 +9369,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Livre", "Cahier", "Pomme"],
@@ -9379,7 +9379,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Chien est à Aboiement comme Chat est à ?)",
@@ -9390,7 +9390,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -9400,7 +9400,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Piano est à Musique comme Livre est à ?)",
@@ -9411,7 +9411,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Bison", "Éléphant", "Flocon"],
@@ -9421,7 +9421,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Université", "Livre"],
@@ -9431,7 +9431,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Mer", "Montagne", "Lune"],
@@ -9441,7 +9441,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bateau",
     options: ["École", "Université", "Bateau"],
@@ -9451,7 +9451,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Cheval",
     options: ["Train", "Avion", "Cheval"],
@@ -9461,7 +9461,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, Fleur",
     options: ["Chêne", "Pin", "Fleur"],
@@ -9471,7 +9471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Vigne",
     options: ["Mer", "Montagne", "Vigne"],
@@ -9481,7 +9481,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaleur est à _____",
     options: ["Froid", "Lumière", "Vent"],
@@ -9490,7 +9490,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sauter, Courir, Dessiner",
     options: ["Sauter", "Courir", "Dessiner"],
@@ -9500,7 +9500,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Rire est à _____",
     options: ["Pleurer", "Sourire", "Chanter"],
@@ -9509,7 +9509,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants.",
     options: ["Rouge", "Jaune", "Carré"],
@@ -9519,7 +9519,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants.",
     options: ["Chocolat", "Fraise", "Comptabilité"],
@@ -9529,7 +9529,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme musique est à _____",
     options: ["Danse", "Peinture", "Littérature"],
@@ -9538,7 +9538,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mercredi, Vitesse.",
     options: ["Lundi", "Mercredi", "Vitesse"],
@@ -9548,7 +9548,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Parapluie.",
     options: ["École", "Université", "Parapluie"],
@@ -9558,7 +9558,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Enseignant est à _____.",
     options: ["Élève", "Livre", "Salle"],
@@ -9568,7 +9568,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Avion.",
     options: ["Mer", "Montagne", "Avion"],
@@ -9578,7 +9578,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fête, Anniversaire, Chaise.",
     options: ["Fête", "Anniversaire", "Chaise"],
@@ -9588,7 +9588,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chiffre est à _____.",
     options: ["Lettre", "Nombre", "Symbole"],
@@ -9598,7 +9598,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Ciel.",
     options: ["Étoile", "Planète", "Ciel"],
@@ -9608,7 +9608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Art, Musique, Montagne.",
     options: ["Art", "Musique", "Montagne"],
@@ -9618,7 +9618,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Livre est à _____",
@@ -9629,7 +9629,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Salée comme Rivière est à _____",
@@ -9640,7 +9640,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artiste est à Peinture comme Musicien est à _____",
@@ -9651,7 +9651,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rose", "Tulipe", "Feuille"],
@@ -9661,7 +9661,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Voiture est à Route comme Avion est à _____",
@@ -9672,7 +9672,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Pomme", "Fraise", "Orange"],
@@ -9682,7 +9682,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Chien", "Chat", "Oiseau"],
@@ -9691,7 +9691,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Les trois mots désignent des animaux, chaque paire ayant une sorte d'habitat différent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["X", "Z", "Y"],
@@ -9701,7 +9701,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Brique.",
     options: ["Rose", "Tulipe", "Brique"],
@@ -9711,7 +9711,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Balle.",
     options: ["Piano", "Guitare", "Balle"],
@@ -9721,7 +9721,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Chien.",
     options: ["Train", "Avion", "Chien"],
@@ -9731,7 +9731,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Nuage.",
     options: ["Mer", "Montagne", "Nuage"],
@@ -9741,7 +9741,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Vent.",
     options: ["Lune", "Étoile", "Vent"],
@@ -9751,7 +9751,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Moto, Livre.",
     options: ["Voiture", "Moto", "Livre"],
@@ -9761,7 +9761,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Jour est à Nuit comme Semaine est à ____.",
@@ -9772,7 +9772,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Carré, Bleu.",
     options: ["Rouge", "Vert", "Carré"],
@@ -9782,7 +9782,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mère est à Fils comme Femme est à ____.",
@@ -9793,7 +9793,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Canapé, Couteau.",
     options: ["Table", "Chaise", "Couteau"],
@@ -9803,7 +9803,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Été est à Hiver comme Printemps est à ____.",
@@ -9814,7 +9814,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Étoile.",
     options: ["Piano", "Guitare", "Étoile"],
@@ -9824,7 +9824,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Manger est à Nourriture comme Boire est à ____.",
@@ -9835,7 +9835,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Chêne, Lys.",
     options: ["Rose", "Tulipe", "Chêne"],
@@ -9844,7 +9844,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Lundi est à Semaine comme Janvier est à ____.",
@@ -9855,7 +9855,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fête, Anniversaire, Vacances, Pluie.",
     options: ["Fête", "Anniversaire", "Pluie"],
@@ -9864,7 +9864,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Professeur est à Élève comme Docteur est à ____.",
@@ -9875,7 +9875,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Camion, Bateau, Avion.",
     options: ["Voiture", "Camion", "Bateau"],
@@ -9885,7 +9885,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Terre, Comète.",
     options: ["Lune", "Étoile", "Terre"],
@@ -9895,7 +9895,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Manteau", "Chapeau", "Chaussure"],
@@ -9905,7 +9905,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Bicyclette", "Voiture", "Avion"],
@@ -9915,7 +9915,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Souris", "Rat", "Éléphant"],
@@ -9925,7 +9925,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots :",
     options: ["Chien", "Chat", "Arbre"],
@@ -9935,7 +9935,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Chat est à ?",
@@ -9946,7 +9946,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots :",
     options: ["Rouge", "Bleu", "Triangle"],
@@ -9956,7 +9956,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sable est à Plage comme Neige est à ?",
@@ -9967,7 +9967,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lait est à Vache comme Œuf est à ?",
@@ -9978,7 +9978,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots :",
     options: ["Pomme", "Banane", "Voiture"],
@@ -9988,7 +9988,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lecture comme Musique est à ?",
@@ -9998,7 +9998,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Poisson est à Eau comme Oiseau est à ?",
@@ -10009,7 +10009,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots :",
     options: ["Table", "Chaise", "Montagne"],
@@ -10019,7 +10019,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Code est à ?",
@@ -10030,7 +10030,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lune est à Nuit comme Soleil est à ?",
@@ -10041,7 +10041,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots :",
     options: ["Chocolat", "Vanille", "Chaises"],
@@ -10051,7 +10051,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Sec est à ?",
@@ -10062,7 +10062,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pêche est à Fruit comme Carotte est à ?",
@@ -10072,7 +10072,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots :",
     options: ["Piano", "Guitare", "Chanson"],
@@ -10082,7 +10082,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Ombre", "Lumière", "Soleil"],
@@ -10092,7 +10092,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Pomme", "Poire", "Banane"],
@@ -10102,7 +10102,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -10112,7 +10112,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Fête", "Célébration", "Réunion"],
@@ -10122,7 +10122,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Écriture", "Lecture", "Dessin"],
@@ -10132,7 +10132,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Artisan", "Professionnel", "Ouvrier"],
@@ -10142,7 +10142,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Chien",
     options: ["École", "Université", "Chien"],
@@ -10152,7 +10152,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Chaise",
     options: ["Piano", "Guitare", "Chaise"],
@@ -10162,7 +10162,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Brique",
     options: ["Lait", "Eau", "Brique"],
@@ -10172,7 +10172,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Éclair est à _____",
     options: ["Tonnerre", "Vent", "Pluie"],
@@ -10181,7 +10181,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Boulanger",
     options: ["Rose", "Tulipe", "Boulanger"],
@@ -10191,7 +10191,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mouton, Chèvre, Avion",
     options: ["Mouton", "Chèvre", "Avion"],
@@ -10200,7 +10200,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le mouton et la chèvre sont des animaux, l'avion est un moyen de transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Frère est à Sœur comme Oncle est à _____",
@@ -10211,7 +10211,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Ombre comme Neige est à _____",
@@ -10222,7 +10222,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Pommes"],
@@ -10232,7 +10232,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanteur est à Chanson comme Peintre est à _____",
@@ -10243,7 +10243,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Vitesse est à Temps comme Distance est à _____",
@@ -10254,7 +10254,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chèvre", "Mouton", "Boeuf"],
@@ -10264,7 +10264,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Santé comme Ingénieur est à _____",
@@ -10275,7 +10275,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Été est à Chaleur comme Hiver est à _____",
@@ -10286,7 +10286,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rouge", "Vert", "Lait"],
@@ -10296,7 +10296,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Jupe", "Pantalon", "Chemise"],
@@ -10306,7 +10306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jardin est à Plante comme Cuisine est à _____",
@@ -10317,7 +10317,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Voiture.",
     options: ["Chien", "Chat", "Voiture"],
@@ -10326,7 +10326,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrire est à _____.",
     options: ["Dessin", "Parler", "Lecture"],
@@ -10335,7 +10335,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, École.",
     options: ["Table", "Chaise", "École"],
@@ -10345,7 +10345,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Garçon est à ?",
@@ -10356,7 +10356,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprendre comme Livre est à ?",
@@ -10367,7 +10367,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Eau", "Café"],
@@ -10377,7 +10377,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chèvre est à Bouc comme Vache est à ?",
@@ -10388,7 +10388,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Froid est à Glace comme Chaud est à ?",
@@ -10399,7 +10399,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Pomme", "Banane", "Fraise"],
@@ -10409,7 +10409,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Code est à ?",
@@ -10420,7 +10420,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Mouton", "Chèvre", "Porc"],
@@ -10430,7 +10430,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Parapluie comme Neige est à ?",
@@ -10441,7 +10441,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sourd est à Audition comme Aveugle est à ?",
@@ -10452,7 +10452,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Sucre"],
@@ -10462,7 +10462,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Oiseau est à Voler comme Poisson est à ?",
@@ -10472,7 +10472,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Ciel", "Mer", "Terre"],
@@ -10482,7 +10482,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chien est à ____.",
     options: ["Chat", "Oiseau", "Souris"],
@@ -10491,7 +10491,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Jour est à ____.",
     options: ["Nuit", "Soleil", "Lune"],
@@ -10500,7 +10500,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à ____.",
     options: ["Étudiant", "Professeur", "Livre"],
@@ -10509,7 +10509,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Arbre est à ____.",
     options: ["Feuille", "Racine", "Fleur"],
@@ -10519,7 +10519,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Salé, Sucré, Voleur.",
     options: ["Salé", "Sucré", "Voleur"],
@@ -10529,7 +10529,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à ____.",
     options: ["Montagne", "Rivière", "Sable"],
@@ -10538,7 +10538,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à ____.",
     options: ["Lecture", "Papier", "Écrivain"],
@@ -10547,7 +10547,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Violon, Peinture.",
     options: ["Piano", "Violon", "Peinture"],
@@ -10557,7 +10557,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Lait est à ____.",
     options: ["Fromage", "Eau", "Pain"],
@@ -10566,7 +10566,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pluie est à ____.",
     options: ["Soleil", "Nuage", "Vent"],
@@ -10576,7 +10576,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Maison.",
     options: ["Chat", "Chien", "Maison"],
@@ -10586,7 +10586,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Étoile est à ____.",
     options: ["Ciel", "Planète", "Lune"],
@@ -10595,7 +10595,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à ____.",
     options: ["Fruits", "Légumes", "Fleurs"],
@@ -10604,7 +10604,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme livre est à _____",
     options: ["magazine", "journal", "stylo"],
@@ -10614,7 +10614,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rapide", "Lent", "Vélo"],
@@ -10624,7 +10624,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Soleil", "Terre", "Lune"],
@@ -10634,7 +10634,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["P", "Q", "R"],
@@ -10644,7 +10644,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fiction", "Roman", "Réel"],
@@ -10654,7 +10654,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Monde", "Univers", "Chiffre"],
@@ -10664,7 +10664,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["K", "L", "M"],
@@ -10673,7 +10673,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Ronde", "Carrée", "Ligne"],
@@ -10683,7 +10683,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["T", "U", "V"],
@@ -10692,7 +10692,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chanson", "Film", "Tableau"],
@@ -10701,7 +10701,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Les deux premiers sont des formes d'art audiovisuel, tandis que le tableau est une forme d'art visuel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme eau est à _____",
     options: ["Sable", "Feu", "Glace"],
@@ -10711,7 +10711,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme arbre est à _____",
     options: ["Racine", "Feuille", "Soleil"],
@@ -10721,7 +10721,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Brouillard"],
@@ -10731,7 +10731,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Table", "Chaise", "Lit"],
@@ -10741,7 +10741,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Pomme", "Banane", "Chien"],
@@ -10751,7 +10751,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -10761,7 +10761,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Café", "Thé", "Bouteille"],
@@ -10771,7 +10771,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme fer est à _____",
     options: ["Métal", "Bois", "Plastique"],
@@ -10781,7 +10781,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme père est à _____",
     options: ["Fils", "Mère", "Enfant"],
@@ -10791,7 +10791,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Piano", "Guitare", "Chanson"],
@@ -10801,7 +10801,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme route est à _____",
     options: ["Voiture", "Trajet", "Voyage"],
@@ -10810,7 +10810,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lait est à Fromage comme Pain est à _____",
@@ -10821,7 +10821,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Galaxie",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -10831,7 +10831,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Mars, Soleil",
     options: ["Lune", "Mars", "Soleil"],
@@ -10841,7 +10841,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Langue est à Parole comme Musique est à _____",
@@ -10852,7 +10852,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Pomme est à Fruit comme Carotte est à _____",
@@ -10863,7 +10863,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Chien est à Aboyer comme Chat est à _____",
@@ -10874,7 +10874,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Avion est à Voler comme Bateau est à _____",
@@ -10885,7 +10885,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Épinard", "Laitue", "Tasse"],
@@ -10895,7 +10895,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Chiffre est à Nombre comme Lettre est à _____",
@@ -10906,7 +10906,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Poisson est à Eau comme Oiseau est à _____",
@@ -10917,7 +10917,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Livre est à Lecture comme Film est à _____",
@@ -10927,7 +10927,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Train est à Rail comme Voiture est à _____",
@@ -10938,7 +10938,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Rouge", "Bleu", "Chaud"],
@@ -10948,7 +10948,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Pomme", "Banane", "Chocolat"],
@@ -10958,7 +10958,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Carotte", "Brocoli", "Dessert"],
@@ -10968,7 +10968,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Table", "Chaise", "Bureau"],
@@ -10978,7 +10978,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Hiver", "Été", "Automne"],
@@ -10988,7 +10988,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme étudier est à _____.",
     options: ["Jouer", "Apprendre", "Dormir"],
@@ -10997,7 +10997,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Voiture.",
     options: ["Avion", "Train", "Voiture"],
@@ -11007,7 +11007,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poids, Mesure, Longueur.",
     options: ["Poids", "Mesure", "Longueur"],
@@ -11017,7 +11017,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Bateau, Train.",
     options: ["Voiture", "Bateau", "Train"],
@@ -11027,7 +11027,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Peinture.",
     options: ["Chanson", "Poème", "Peinture"],
@@ -11037,7 +11037,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Trompette"],
@@ -11047,7 +11047,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ciel est à Nuage comme Mer est à ?",
@@ -11057,7 +11057,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Sommet comme Océan est à ?",
@@ -11067,7 +11067,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Été est à ?",
@@ -11077,7 +11077,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Orchestre"],
@@ -11086,7 +11086,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -11096,7 +11096,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chauffage", "Climatisation", "Fenêtre"],
@@ -11106,7 +11106,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fleur", "Arbre", "Montagne"],
@@ -11116,7 +11116,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["R", "S", "T"],
@@ -11126,7 +11126,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Loup", "Tigre", "Singe"],
@@ -11136,7 +11136,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["A", "B", "C"],
@@ -11146,7 +11146,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Table", "Chaise", "Lampe"],
@@ -11156,7 +11156,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mercredi, Janvier.",
     options: ["Lundi", "Mercredi", "Janvier"],
@@ -11166,7 +11166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chèvre, Vache, Chien.",
     options: ["Chèvre", "Vache", "Chien"],
@@ -11176,7 +11176,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Boulanger.",
     options: ["Piano", "Guitare", "Boulanger"],
@@ -11186,7 +11186,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Cuisine.",
     options: ["Chanson", "Poème", "Cuisine"],
@@ -11195,7 +11195,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La cuisine est une activité, les autres sont des formes d'art.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Souris",
     options: ["Chien", "Chat", "Souris"],
@@ -11205,7 +11205,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Vélo, École",
     options: ["Voiture", "Vélo", "École"],
@@ -11215,7 +11215,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Huile, Beurre, Sel",
     options: ["Huile", "Beurre", "Sel"],
@@ -11225,7 +11225,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Crayon, Stylo, Cahier",
     options: ["Crayon", "Stylo", "Cahier"],
@@ -11235,7 +11235,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Lac, Montagne",
     options: ["Mer", "Lac", "Montagne"],
@@ -11245,7 +11245,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Chaussures, Sable.",
     options: ["Manteau", "Chaussures", "Sable"],
@@ -11255,7 +11255,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, Rivière.",
     options: ["Chêne", "Pin", "Rivière"],
@@ -11265,7 +11265,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Asie, Europe, Océan.",
     options: ["Asie", "Europe", "Océan"],
@@ -11275,7 +11275,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____.",
     options: ["Eau", "Terre", "Ciel"],
@@ -11285,7 +11285,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Printemps, Voiture",
     options: ["Été", "Printemps", "Voiture"],
@@ -11295,7 +11295,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Éclair est à Foudre comme Pluie est à _____",
@@ -11306,7 +11306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Carotte, Brocoli, Chou",
     options: ["Carotte", "Brocoli", "Chou"],
@@ -11316,7 +11316,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Auteur est à Livre comme Compositeur est à _____",
@@ -11327,7 +11327,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Lune",
     options: ["Avion", "Train", "Lune"],
@@ -11337,7 +11337,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -11347,7 +11347,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Artiste est à _____",
@@ -11358,7 +11358,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -11368,7 +11368,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ordinateur est à Technologie comme Livre est à _____",
@@ -11379,7 +11379,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Papier", "Plastique", "Verre"],
@@ -11389,7 +11389,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiot comme Chat est à _____ ?",
@@ -11400,7 +11400,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fleur", "Herbe", "Arbre"],
@@ -11410,7 +11410,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Soleil", "Lune", "Nuage"],
@@ -11420,7 +11420,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chef est à Équipe comme Directeur est à _____ ?",
@@ -11431,7 +11431,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Peinture est à _____ ?",
@@ -11442,7 +11442,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Savoir", "Compréhension", "Ignorance"],
@@ -11452,7 +11452,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Classe comme Médecin est à _____ ?",
@@ -11463,7 +11463,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Table", "Chaise", "Lit"],
@@ -11473,7 +11473,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Train est à _____",
     options: ["Vélo", "Transport", "Avion"],
@@ -11482,7 +11482,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Sable est à _____",
     options: ["Mer", "Plage", "Terre"],
@@ -11491,7 +11491,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Cerveau est à _____",
     options: ["Intelligence", "Corps", "Psyche"],
@@ -11500,7 +11500,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Frère est à _____",
     options: ["Sœur", "Famille", "Parent"],
@@ -11509,7 +11509,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Automobile", "Bicyclette", "Trottoir"],
@@ -11518,7 +11518,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____.",
@@ -11529,7 +11529,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Fer est à Métal comme Bois est à _____.",
@@ -11539,7 +11539,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Été est à Chaud comme Hiver est à _____.",
@@ -11550,7 +11550,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rouge", "Vert", "Vélo"],
@@ -11559,7 +11559,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étudiant est à École comme Professeur est à _____.",
@@ -11570,7 +11570,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les termes suivants ?",
     options: ["Rose", "Tulipe", "Brouette"],
@@ -11580,7 +11580,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Boulanger"],
@@ -11590,7 +11590,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Crayon est à _____ ?",
@@ -11601,7 +11601,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les termes suivants ?",
     options: ["Rouge", "Bleu", "Fleur"],
@@ -11611,7 +11611,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Plage comme Montagne est à _____ ?",
@@ -11622,7 +11622,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Philosophe est à Pensée comme Artiste est à _____ ?",
@@ -11632,7 +11632,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien de garde comme Chat est à _____",
@@ -11643,7 +11643,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Poisson est à Eau comme Oiseau est à _____",
@@ -11654,7 +11654,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, École",
     options: ["Piano", "Guitare", "École"],
@@ -11664,7 +11664,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mars, Saturne, Voiture",
     options: ["Mars", "Saturne", "Voiture"],
@@ -11674,7 +11674,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Requin, Chat",
     options: ["Poisson", "Requin", "Chat"],
@@ -11684,7 +11684,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Hôpital est à _____",
@@ -11695,7 +11695,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Trèfle, Coquelicot, Chien",
     options: ["Trèfle", "Coquelicot", "Chien"],
@@ -11704,7 +11704,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le chien est un animal, tandis que les autres sont des plantes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienceau comme Chat est à _____",
@@ -11715,7 +11715,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Roue, Moteur, Volant, Écran",
     options: ["Moteur", "Volant", "Écran"],
@@ -11725,7 +11725,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bibliothèque, Boulangerie",
     options: ["École", "Université", "Boulangerie"],
@@ -11735,7 +11735,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Microphone",
     options: ["Piano", "Guitare", "Microphone"],
@@ -11745,7 +11745,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Automne, Été, Printemps, Hiver, Pluie",
     options: ["Automne", "Printemps", "Pluie"],
@@ -11755,7 +11755,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Carotte, Brocoli, Frite, Tomate",
     options: ["Carotte", "Brocoli", "Frite"],
@@ -11765,7 +11765,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanteur est à Chanson comme Peintre est à _____",
@@ -11776,7 +11776,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Amour, Colère, Joie, Cuisine",
     options: ["Amour", "Colère", "Cuisine"],
@@ -11786,7 +11786,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Trompette, Flûte, École",
     options: ["Piano", "Flûte", "École"],
@@ -11796,7 +11796,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Art est à Culture comme Science est à _____",
@@ -11807,7 +11807,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Médecine", "Chimie", "Philosophie"],
@@ -11817,7 +11817,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Livre comme Peindre est à _____",
@@ -11827,7 +11827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fleur", "Arbre", "Cactus"],
@@ -11837,7 +11837,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rond", "Carré", "Rouge"],
@@ -11847,7 +11847,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Cercle", "Triangle", "Couleur"],
@@ -11856,7 +11856,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["D", "J", "I"],
@@ -11865,7 +11865,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Chanson",
     options: ["Rouge", "Vert", "Chanson"],
@@ -11875,7 +11875,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Papier", "Stylo", "Lecteur"],
@@ -11885,7 +11885,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Carotte, Brocoli, Table",
     options: ["Carotte", "Brocoli", "Table"],
@@ -11895,7 +11895,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Vitesse, Distance, Temps, Livre",
     options: ["Vitesse", "Livre", "Temps"],
@@ -11905,7 +11905,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bateau, Lune",
     options: ["Train", "Avion", "Lune"],
@@ -11915,7 +11915,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Fête est à _____",
     options: ["Célébration", "Chanson", "Réunion"],
@@ -11925,7 +11925,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Smartphone, Ordinateur, Chaise",
     options: ["Smartphone", "Chaise", "Ordinateur"],
@@ -11935,7 +11935,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Hiver", "Automne", "Printemps"],
@@ -11944,7 +11944,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Poisson", "Aigle", "Dauphin"],
@@ -11954,7 +11954,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Chaud", "Froid", "Tiède"],
@@ -11963,7 +11963,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Ciel", "Mer", "Terre"],
@@ -11972,7 +11972,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Aile", "Voiture", "Bicyclette"],
@@ -11982,7 +11982,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Sable", "Pierre", "Plage"],
@@ -11991,7 +11991,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Miel", "Sucre", "Sel"],
@@ -12000,7 +12000,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Pigeon est à _____",
@@ -12011,7 +12011,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sable est à Plage comme Neige est à _____",
@@ -12022,7 +12022,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Professeur"],
@@ -12032,7 +12032,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Maison est à _____",
@@ -12043,7 +12043,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Compositeur est à _____",
@@ -12054,7 +12054,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Poisson est à _____",
@@ -12065,7 +12065,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pomme est à Fruit comme Chien est à _____",
@@ -12076,7 +12076,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaise est à S'asseoir comme Lit est à _____",
@@ -12086,7 +12086,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ciel est à Bleu comme Herbe est à _____",
@@ -12096,7 +12096,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Tigre", "Lion", "Vache"],
@@ -12106,7 +12106,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Météo est à Temps comme Économie est à _____",
@@ -12117,7 +12117,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Raison est à Logique comme Émotion est à _____",
@@ -12128,7 +12128,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Fille comme Père est à _____",
@@ -12138,7 +12138,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien comme Chat est à ?",
@@ -12148,7 +12148,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Élève comme Maison est à ?",
@@ -12159,7 +12159,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Fille comme Père est à ?",
@@ -12170,7 +12170,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Salé"],
@@ -12180,7 +12180,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chèvre est à Mouton comme Chien est à ?",
@@ -12191,7 +12191,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Rivière est à ?",
@@ -12202,7 +12202,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fruits", "Légumes", "Viande"],
@@ -12211,7 +12211,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Les deux premiers mots désignent des aliments d'origine végétale, tandis que 'Viande' est d'origine animale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Abeille est à Miel comme Vache est à _____",
     options: ["Lait", "Viande", "Poil"],
@@ -12221,7 +12221,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Bateau est à Mer comme Avion est à _____",
     options: ["Ciel", "Terre", "Voiture"],
@@ -12231,7 +12231,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Tableau", "Pomme"],
@@ -12241,7 +12241,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Lune est à Nuit comme Soleil est à _____",
     options: ["Jour", "Étoile", "Ciel"],
@@ -12251,7 +12251,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Chien est à Aboyer comme Chat est à _____",
     options: ["Miauler", "Courir", "Jouer"],
@@ -12260,7 +12260,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Arbre est à Feuille comme Fleur est à _____",
     options: ["Pétale", "Tige", "Racine"],
@@ -12270,7 +12270,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Piano est à Musique comme Crayon est à _____",
     options: ["Dessin", "Écriture", "Peinture"],
@@ -12280,7 +12280,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Écrivain est à Livre comme Artiste est à _____",
     options: ["Peinture", "Musique", "Danse"],
@@ -12290,7 +12290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Cercle est à Rond comme Carré est à _____",
     options: ["Plat", "Angle", "Rectangulaire"],
@@ -12300,7 +12300,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Étoile.",
     options: ["Rouge", "Bleu", "Étoile"],
@@ -12310,7 +12310,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Arbre, Fleur, Montagne.",
     options: ["Arbre", "Fleur", "Montagne"],
@@ -12320,7 +12320,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Pomme.",
     options: ["Chaise", "Table", "Pomme"],
@@ -12329,7 +12329,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à _____.",
     options: ["Lac", "Rivière", "Barrage"],
@@ -12338,7 +12338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Voiture, Train.",
     options: ["Bicyclette", "Voiture", "Train"],
@@ -12348,7 +12348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Thermomètre est à _____.",
     options: ["Celsius", "Fahrenheit", "Température"],
@@ -12358,7 +12358,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Crayon est à _____.",
     options: ["Papier", "Gomme", "Cahier"],
@@ -12367,7 +12367,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Dessin.",
     options: ["Piano", "Guitare", "Dessin"],
@@ -12377,7 +12377,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaud est à Froid comme Jour est à ____",
@@ -12388,7 +12388,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Apprentissage comme Hôpital est à ____",
@@ -12399,7 +12399,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Piano est à Musique comme Crayon est à ____",
@@ -12410,7 +12410,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Plage",
     options: ["Avion", "Train", "Plage"],
@@ -12420,7 +12420,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Égal, Plus, Moins",
     options: ["Égal", "Plus", "Moins"],
@@ -12430,7 +12430,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Ciel est à Bleu comme Herbe est à ____",
@@ -12441,7 +12441,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Mer",
     options: ["Lune", "Étoile", "Mer"],
@@ -12451,7 +12451,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaise est à Assise comme Lit est à ____",
@@ -12461,7 +12461,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Clé, Serrure, Mur",
     options: ["Clé", "Serrure", "Mur"],
@@ -12471,7 +12471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Étoile.",
     options: ["Lundi", "Mardi", "Étoile"],
@@ -12480,7 +12480,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Bateau est à _____.",
     options: ["Mer", "Montagne", "Rivière"],
@@ -12489,7 +12489,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Fromage, Banane.",
     options: ["Lait", "Fromage", "Banane"],
@@ -12499,7 +12499,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants.",
     options: ["Chocolat", "Vanille", "Chiffon"],
@@ -12509,7 +12509,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Livre",
     options: ["Table", "Chaise", "Livre"],
@@ -12518,7 +12518,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à _____",
     options: ["Poire", "Fraise", "Abricot"],
@@ -12527,7 +12527,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Tracteur",
     options: ["Chêne", "Bouleau", "Tracteur"],
@@ -12536,7 +12536,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Bouclier est à _____",
     options: ["Épée", "Armure", "Casque"],
@@ -12546,7 +12546,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Vélo est à _____",
     options: ["Voiture", "Moto", "Bateau"],
@@ -12556,7 +12556,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Pomme.",
     options: ["École", "Université", "Pomme"],
@@ -12565,7 +12565,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Bateau, Arbre.",
     options: ["Train", "Bateau", "Arbre"],
@@ -12574,7 +12574,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ordinateur est à _____.",
     options: ["Clavier", "Écran", "Chaise"],
@@ -12583,7 +12583,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Janvier.",
     options: ["Lundi", "Mardi", "Janvier"],
@@ -12593,7 +12593,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Photographe est à _____.",
     options: ["Photo", "Film", "Écran"],
@@ -12602,7 +12602,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Nuage.",
     options: ["Étoile", "Planète", "Nuage"],
@@ -12611,7 +12611,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Pomme", "Banane", "Chocolat"],
@@ -12620,7 +12620,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Plage", "Montagne", "Soleil"],
@@ -12630,7 +12630,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["École", "Université", "Magasin"],
@@ -12640,7 +12640,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Table", "Chaise", "Couteau"],
@@ -12650,7 +12650,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Éléphant", "Tigre", "Rhinocéros"],
@@ -12660,7 +12660,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -12670,7 +12670,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____. : Chiffre, Nombre, Lettre.",
     options: ["Chiffre", "Nombre", "Lettre"],
@@ -12680,7 +12680,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : Pomme, Banane, École.",
@@ -12691,7 +12691,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____. : Livre, Lecture, Écriture.",
     options: ["Livre", "Lecture", "Écriture"],
@@ -12700,7 +12700,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Livre et lecture sont des actions liées à la lecture, tandis qu'écriture est une action différente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Voyage est à Découverte comme Lecture est à _____",
@@ -12711,7 +12711,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Cuisine est à _____",
@@ -12722,7 +12722,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Artiste est à _____",
@@ -12733,7 +12733,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____.",
@@ -12744,7 +12744,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Loup", "Chien", "Chat"],
@@ -12754,7 +12754,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pierre est à Roche comme Grains est à _____.",
@@ -12765,7 +12765,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Arrosage comme Neige est à _____.",
@@ -12776,7 +12776,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Or est à Argent comme Diamant est à _____.",
@@ -12787,7 +12787,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lapis est à Crayon comme Pinceau est à _____.",
@@ -12798,7 +12798,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Aigle est à Oiseau comme Poisson est à _____.",
@@ -12809,7 +12809,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Eau comme Montagne est à _____",
@@ -12820,7 +12820,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Peintre est à _____",
@@ -12831,7 +12831,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Facteur est à Lettre comme Médecin est à _____",
@@ -12842,7 +12842,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Classe comme Chef est à _____",
@@ -12853,7 +12853,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Cerveau est à Pensée comme Cœur est à _____",
@@ -12864,7 +12864,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rose", "Tulipe", "Bouteille"],
@@ -12874,7 +12874,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["D", "B", "C"],
@@ -12884,7 +12884,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Tigre", "Lion", "Souris"],
@@ -12894,7 +12894,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Fleur est à Pétale comme Arbre est à ?)",
@@ -12905,7 +12905,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Père est à Fils comme Mère est à ?)",
@@ -12916,7 +12916,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Médecin est à Santé comme Professeur est à ?)",
@@ -12927,7 +12927,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Terre est à Planète comme Lune est à ?)",
@@ -12938,7 +12938,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Froid est à Glace comme Chaud est à ?)",
@@ -12949,7 +12949,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ecole est à ____.",
     options: ["Université", "Bureau", "Maison"],
@@ -12958,7 +12958,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Éléphant, Girafe, Chaise.",
     options: ["Éléphant", "Girafe", "Chaise"],
@@ -12967,7 +12967,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ronde est à ____.",
     options: ["Carré", "Triangle", "Rectangle"],
@@ -12976,7 +12976,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Plat.",
     options: ["Mer", "Montagne", "Plat"],
@@ -12985,7 +12985,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaleur est à ____.",
     options: ["Froid", "Lumière", "Énergie"],
@@ -12994,7 +12994,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Vitesse est à ____.",
     options: ["Accélération", "Distance", "Temps"],
@@ -13003,7 +13003,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Eau est à ____.",
     options: ["Verre", "Bouteille", "Sable"],
@@ -13012,7 +13012,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrire est à ____.",
     options: ["Lire", "Parler", "Dessiner"],
@@ -13021,7 +13021,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Musique est à ____.",
     options: ["Danse", "Peinture", "Écriture"],
@@ -13030,7 +13030,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Arbre est à ____.",
     options: ["Forêt", "Buisson", "Herbe"],
@@ -13039,7 +13039,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Chat est à Chien comme Souris est à ____.",
@@ -13049,7 +13049,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Hamster.",
     options: ["Chien", "Chat", "Arbre"],
@@ -13059,7 +13059,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Livre est à Lire comme Film est à ____.",
@@ -13069,7 +13069,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Requin, Avion.",
     options: ["Poisson", "Requin", "Avion"],
@@ -13079,7 +13079,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : École est à Apprendre comme Église est à ____.",
@@ -13089,7 +13089,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Planète.",
     options: ["Étoile", "Lune", "Nuage"],
@@ -13099,7 +13099,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Arbre est à Feuille comme Fleur est à ____.",
@@ -13110,7 +13110,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Voiture, Bicyclette.",
     options: ["Train", "Voiture", "Montagne"],
@@ -13120,7 +13120,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Chanson est à Écouter comme Livre est à ____.",
@@ -13130,7 +13130,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Pêcheur est à Poisson comme Chasseur est à ____.",
@@ -13141,7 +13141,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Crayon, Stylo, Tableau.",
     options: ["Crayon", "Stylo", "Tableau"],
@@ -13151,7 +13151,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Ciel est à Bleu comme Herbe est à ____.",
@@ -13162,7 +13162,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ? : Médecin est à Santé comme Enseignant est à ____.",
@@ -13173,7 +13173,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manger, Boire, Dormir.",
     options: ["Manger", "Boire", "Écrire"],
@@ -13183,7 +13183,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bateau.",
     options: ["Train", "Avion", "Bureau"],
@@ -13193,7 +13193,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Journal", "Magazine", "Tablette"],
@@ -13203,7 +13203,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Canapé.",
     options: ["Chaise", "Table", "Lit"],
@@ -13212,7 +13212,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le lit est un meuble pour dormir, les autres sont pour s'asseoir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Montagne.",
     options: ["École", "Université", "Montagne"],
@@ -13221,7 +13221,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Couteau est à _____.",
     options: ["Fourchette", "Assiette", "Verre"],
@@ -13230,7 +13230,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciseaux, Colle, Livre.",
     options: ["Ciseaux", "Colle", "Livre"],
@@ -13240,7 +13240,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Nuit est à _____.",
     options: ["Jour", "Soleil", "Étoile"],
@@ -13250,7 +13250,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Lune.",
     options: ["Chaise", "Table", "Lune"],
@@ -13260,7 +13260,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Montagne, Rivière, Avion.",
     options: ["Montagne", "Rivière", "Avion"],
@@ -13270,7 +13270,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Livre.",
     options: ["Chanson", "Poème", "Livre"],
@@ -13280,7 +13280,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mère est à _____.",
     options: ["Fille", "Père", "Enfant"],
@@ -13290,7 +13290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Soleil, Lune, Pluie.",
     options: ["Soleil", "Lune", "Pluie"],
@@ -13300,7 +13300,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Rose est à _____",
     options: ["Fleur", "Arbre", "Plante"],
@@ -13309,7 +13309,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mercure, Vénus, Étoile",
     options: ["Mercure", "Vénus", "Étoile"],
@@ -13319,7 +13319,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Table",
     options: ["Piano", "Guitare", "Table"],
@@ -13328,7 +13328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Crayon, Stylo, Livre",
     options: ["Crayon", "Stylo", "Livre"],
@@ -13338,7 +13338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Soleil, Planète",
     options: ["Lune", "Soleil", "Planète"],
@@ -13348,7 +13348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chèvre, Mouton, Loup",
     options: ["Chèvre", "Mouton", "Loup"],
@@ -13358,7 +13358,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Pomme", "Banane", "Carotte"],
@@ -13368,7 +13368,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Violon"],
@@ -13378,7 +13378,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Fleuve est à Rivière comme Mer est à _____",
@@ -13389,7 +13389,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Pâté"],
@@ -13399,7 +13399,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fiction", "Roman", "Biographie"],
@@ -13409,7 +13409,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Moto, Avion.",
     options: ["Bicyclette", "Moto", "Avion"],
@@ -13419,7 +13419,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Piano est à _____",
     options: ["Guitare", "Violoncelle", "Musique"],
@@ -13429,7 +13429,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Matin, Midi, Semaine.",
     options: ["Matin", "Midi", "Semaine"],
@@ -13439,7 +13439,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Voiture est à _____",
     options: ["Essence", "Route", "Conducteur"],
@@ -13449,7 +13449,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Fête est à _____",
     options: ["Anniversaire", "Journée", "Semaine"],
@@ -13458,7 +13458,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, École.",
     options: ["Chêne", "Bouleau", "École"],
@@ -13468,7 +13468,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Artiste est à _____",
     options: ["Peinture", "Musique", "Sculpture"],
@@ -13478,7 +13478,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Pinceau.",
     options: ["Chanson", "Poème", "Pinceau"],
@@ -13488,7 +13488,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fleuve, Montagne, Vigne.",
     options: ["Fleuve", "Montagne", "Vigne"],
@@ -13498,7 +13498,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Fleur", "Arbre", "Montagne"],
@@ -13508,7 +13508,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -13518,7 +13518,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Étudiant comme Université est à _____",
@@ -13529,7 +13529,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrit est à Lecture comme Parole est à _____",
@@ -13540,7 +13540,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Rose", "Tulipe", "Brouillon"],
@@ -13550,7 +13550,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Vélo", "Moto", "Avion"],
@@ -13560,7 +13560,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Avocat",
     options: ["École", "Université", "Avocat"],
@@ -13570,7 +13570,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Guitare, Piano, Chanson",
     options: ["Guitare", "Piano", "Chanson"],
@@ -13580,7 +13580,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Thé, Café, Sucre",
     options: ["Thé", "Café", "Sucre"],
@@ -13589,7 +13589,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Crayon, Feutre, Table",
     options: ["Crayon", "Feutre", "Table"],
@@ -13599,7 +13599,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme arbre est à _____",
     options: ["Fleur", "Feuille", "Brique"],
@@ -13608,7 +13608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fleur", "Racine", "Pierre"],
@@ -13618,7 +13618,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rire", "Sourire", "Tristesse"],
@@ -13628,7 +13628,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme route est à _____",
     options: ["Voiture", "Bicyclette", "Piste"],
@@ -13638,7 +13638,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Écrivain", "Poète", "Peintre"],
@@ -13648,7 +13648,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Chien : Animal, Chat : ?)",
     options: ["Plante", "Animal", "Objet"],
@@ -13657,7 +13657,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Chaud : Froid, Lumière : ?)",
     options: ["Sombre", "Brillant", "Transparent"],
@@ -13667,7 +13667,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Rond : Ovale, Carré : ?)",
     options: ["Rectangulaire", "Rond", "Plat"],
@@ -13677,7 +13677,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Chauffage : Froid, Ventilateur : ?)",
@@ -13688,7 +13688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Écrivain : Livre, Artiste : ?)",
     options: ["Tableau", "Musique", "Film"],
@@ -13697,7 +13697,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Pêche", "Bananier", "Cerise"],
@@ -13706,7 +13706,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Les deux premiers mots désignent des fruits, tandis que 'bananier' est un arbre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bar",
     options: ["École", "Université", "Bar"],
@@ -13715,7 +13715,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Tapis",
     options: ["Chaise", "Table", "Tapis"],
@@ -13724,7 +13724,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Stylo comme Lire est à _____",
@@ -13735,7 +13735,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Tablette",
     options: ["Chanson", "Poème", "Tablette"],
@@ -13745,7 +13745,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Verre est à Liquide comme Assiette est à _____",
@@ -13756,7 +13756,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Lune",
     options: ["Étoile", "Planète", "Lune"],
@@ -13766,7 +13766,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à École comme Médecin est à _____",
@@ -13777,7 +13777,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Montagne, Vallée, Océan",
     options: ["Montagne", "Vallée", "Océan"],
@@ -13787,7 +13787,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Chat", "Chien", "Cercle"],
@@ -13797,7 +13797,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Pomme", "Banane", "Voiture"],
@@ -13806,7 +13806,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sombre est à Nuit comme Lumineux est à ?",
@@ -13817,7 +13817,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Rose", "Tulipe", "Arbre"],
@@ -13827,7 +13827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Bateau est à Mer comme Avion est à ?",
@@ -13837,7 +13837,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["École", "Université", "Livre"],
@@ -13847,7 +13847,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Abeille", "Fleur", "Papillon"],
@@ -13857,7 +13857,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Humidité comme Vent est à ?",
@@ -13868,7 +13868,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -13878,7 +13878,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Docteur est à Santé comme Professeur est à ?",
@@ -13889,7 +13889,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Savon", "Shampoing", "Rasoir"],
@@ -13899,7 +13899,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Poisson comme Forêt est à ?",
@@ -13909,7 +13909,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Chanson", "Musique", "Table"],
@@ -13919,7 +13919,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Sable est à Plage comme Neige est à ____.",
@@ -13930,7 +13930,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bateau.",
     options: ["Train", "Avion", "Bouteille"],
@@ -13940,7 +13940,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Poisson.",
     options: ["Chien", "Chat", "Oiseau"],
@@ -13950,7 +13950,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écrivain est à Livre comme Artiste est à ____.",
@@ -13961,7 +13961,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Pluie est à Arc-en-ciel comme Neige est à ____.",
@@ -13972,7 +13972,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mémoire est à Oubli comme Lumière est à ____.",
@@ -13983,7 +13983,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Lune.",
     options: ["Étoile", "Planète", "Soleil"],
@@ -13993,7 +13993,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mer est à Océan comme Lac est à ____.",
@@ -14004,7 +14004,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Artisan est à Ouvrage comme Chef est à ____.",
@@ -14015,7 +14015,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Moto, Table.",
     options: ["Bicyclette", "Moto", "Table"],
@@ -14025,7 +14025,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Épée", "Bouclier", "Château"],
@@ -14035,7 +14035,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Umbrella comme Neige est à _____",
@@ -14046,7 +14046,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Violon", "Guitare"],
@@ -14056,7 +14056,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Vague comme Montagne est à _____",
@@ -14067,7 +14067,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Art est à Créativité comme Science est à _____",
@@ -14078,7 +14078,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chimie", "Biologie", "Astronomie"],
@@ -14088,7 +14088,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Philosophie est à Pensée comme Histoire est à _____",
@@ -14099,7 +14099,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Chat", "Chien", "Poisson"],
@@ -14109,7 +14109,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? A: Oiseau, B: Voler, C: Poisson",
     options: ["Nager", "Ramper", "Marcher"],
@@ -14118,7 +14118,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Pomme", "Banane", "Chocolat"],
@@ -14128,7 +14128,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? A: Lune, B: Nuit, C: Soleil",
     options: ["Matin", "Étoile", "Jour"],
@@ -14137,7 +14137,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["École", "Université", "Restaurant"],
@@ -14147,7 +14147,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Lait", "Eau", "Jus"],
@@ -14157,7 +14157,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? A: Chien, B: Chasse, C: Chat",
     options: ["Pêche", "Félin", "Souris"],
@@ -14166,7 +14166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Piano", "Guitare", "Violon"],
@@ -14176,7 +14176,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A: Chiffre, B: Nombre, C: Lettre",
@@ -14187,7 +14187,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Nouveau", "Récemment", "Ancien"],
@@ -14197,7 +14197,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? A: Écrivain, B: Roman, C: Artiste",
@@ -14207,7 +14207,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Éléphant", "Tigre", "Rhinocéros"],
@@ -14216,7 +14216,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le tigre est un prédateur, tandis que les autres sont principalement herbivores.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Semaine est à ?",
@@ -14227,7 +14227,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Haut est à ?",
@@ -14237,7 +14237,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pantalon est à Vêtement comme Chaise est à ?",
@@ -14248,7 +14248,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chiffre est à Nombre comme Lettre est à ?",
@@ -14259,7 +14259,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Étoile est à ?",
@@ -14270,7 +14270,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Fleur", "Arbre", "Lac"],
@@ -14280,7 +14280,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Été", "Hiver", "Printemps"],
@@ -14290,7 +14290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Marteau", "Clou", "Vis"],
@@ -14300,7 +14300,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["École", "Élève", "Professeur"],
@@ -14309,7 +14309,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Piano", "Guitare", "Chanson"],
@@ -14318,7 +14318,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Lait", "Eau", "Vin"],
@@ -14328,7 +14328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Voiture", "Bicyclette", "Avion"],
@@ -14337,7 +14337,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Clé", "Serrure", "Fenêtre"],
@@ -14346,7 +14346,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -14355,7 +14355,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Mouton", "Chèvre", "Lapin"],
@@ -14364,7 +14364,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Couture", "Fil", "Aiguille"],
@@ -14374,7 +14374,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : rouge, bleu, voiture.",
@@ -14385,7 +14385,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : écriture, lecture, peinture.",
@@ -14396,7 +14396,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme rouge est à _____",
     options: ["Bleu", "Vert", "Jaune"],
@@ -14406,7 +14406,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chien", "Loup", "Lion"],
@@ -14416,7 +14416,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme métal est à _____",
     options: ["Fer", "Bois", "Pierre"],
@@ -14426,7 +14426,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme peinture est à _____",
     options: ["Art", "Canevas", "Pinceau"],
@@ -14436,7 +14436,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rond", "Carré", "Jaune"],
@@ -14446,7 +14446,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Café"],
@@ -14456,7 +14456,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Piano", "Guitare", "Écriture"],
@@ -14466,7 +14466,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mathématiques, Histoire, Chanson",
     options: ["Mathématiques", "Histoire", "Chanson"],
@@ -14476,7 +14476,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Sable est à _____",
     options: ["Mer", "Terre", "Ciel"],
@@ -14485,7 +14485,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sol, Plafond, Mur",
     options: ["Sol", "Plafond", "Mur"],
@@ -14495,7 +14495,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Guitare, Piano, Peinture",
     options: ["Guitare", "Piano", "Peinture"],
@@ -14505,7 +14505,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Pomme est à _____",
@@ -14516,7 +14516,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Jupe"],
@@ -14525,7 +14525,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Roue est à Véhicule comme Plume est à _____",
@@ -14536,7 +14536,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mouton est à Berger comme Vache est à _____",
@@ -14547,7 +14547,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Écran", "Clavier", "Souris"],
@@ -14557,7 +14557,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Léger est à _____",
@@ -14568,7 +14568,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Lecture comme Parler est à _____",
@@ -14579,7 +14579,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Abeille", "Papillon", "Escargot"],
@@ -14589,7 +14589,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme livre est à _____ :",
     options: ["Auteur", "Écriture", "Papier"],
@@ -14599,7 +14599,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme océan est à _____ :",
     options: ["Mer", "Rivière", "Lac"],
@@ -14609,7 +14609,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chiffre est à Nombre comme Lettre est à ?",
@@ -14620,7 +14620,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Apprentissage comme Maison est à ?",
@@ -14631,7 +14631,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Lait.",
     options: ["Pomme", "Orange", "Lait"],
@@ -14641,7 +14641,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Livre est à Lecture comme Film est à ?",
@@ -14651,7 +14651,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Canard, Poule, Chien.",
     options: ["Canard", "Poule", "Chien"],
@@ -14661,7 +14661,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Professeur est à Élève comme Médecin est à ?",
@@ -14672,7 +14672,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écrivain est à Livre comme Artiste est à ?",
@@ -14683,7 +14683,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Clé est à Serrure comme Code est à ?",
@@ -14694,7 +14694,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Montagne, Rivière, Voiture.",
     options: ["Montagne", "Rivière", "Voiture"],
@@ -14704,7 +14704,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Jardin est à Plante comme Cuisine est à ?",
@@ -14715,7 +14715,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Électricité est à Lumière comme Eau est à ?",
@@ -14725,7 +14725,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "L'eau est essentielle à la vie, tout comme l'électricité produit de la lumière.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Rouge", "Vert", "Chocolat"],
@@ -14734,7 +14734,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Lait", "Eau", "Pain"],
@@ -14743,7 +14743,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -14753,7 +14753,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Tigre", "Lion", "Bison"],
@@ -14762,7 +14762,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Identifiez l'intrus parmi les mots suivants : chat, chien, voiture.",
@@ -14773,7 +14773,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Identifiez l'intrus parmi les mots suivants : rouge, bleu, éléphant.",
@@ -14784,7 +14784,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Identifiez l'intrus parmi les mots suivants : pomme, banane, voiture.",
@@ -14795,7 +14795,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Identifiez l'intrus parmi les mots suivants : mars, avril, rouge.",
@@ -14806,7 +14806,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme insecte est à _____.",
     options: ["araignée", "mammifère", "reptile"],
@@ -14816,7 +14816,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Identifiez l'intrus parmi les mots suivants : ordinateur, téléphone, livre.",
@@ -14827,7 +14827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Identifiez l'intrus parmi les mots suivants : tennis, football, peinture.",
@@ -14838,7 +14838,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Cahier, Table.",
     options: ["Livre", "Cahier", "Table"],
@@ -14848,7 +14848,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Poisson.",
     options: ["Piano", "Guitare", "Poisson"],
@@ -14858,7 +14858,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, École.",
     options: ["Chaise", "Table", "École"],
@@ -14868,7 +14868,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Mathématiques, Cuisinier.",
     options: ["Philosophie", "Mathématiques", "Cuisinier"],
@@ -14878,7 +14878,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Voiture.",
     options: ["Chanson", "Poème", "Voiture"],
@@ -14888,7 +14888,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chat est à _____",
     options: ["Chien", "Souris", "Oiseau"],
@@ -14897,7 +14897,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lune", "Soleil", "Rivières"],
@@ -14906,7 +14906,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Pomme de terre"],
@@ -14915,7 +14915,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chien", "Chat", "Lapin"],
@@ -14924,7 +14924,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Rose", "Tulipe", "Cactus"],
@@ -14934,7 +14934,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -14944,7 +14944,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme cerveau est à _____",
     options: ["Main", "Cœur", "Estomac"],
@@ -14953,7 +14953,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme flamme est à _____",
     options: ["Chaleur", "Fumée", "Cendre"],
@@ -14963,7 +14963,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Abeille", "Papillon", "Araignée"],
@@ -14973,7 +14973,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -14983,7 +14983,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Lundi est à Semaine comme Janvier est à _____",
     options: ["Année", "Jour", "Mois"],
@@ -14993,7 +14993,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à C comme B est à _____",
     options: ["D", "E", "F"],
@@ -15003,7 +15003,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Bicyclette", "Voiture", "Avion"],
@@ -15013,7 +15013,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "L'arbre est à Forêt comme le poisson est à _____",
     options: ["Mer", "Rivière", "Océan"],
@@ -15023,7 +15023,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Table", "Chaise", "Soleil"],
@@ -15033,7 +15033,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Tigre", "Lion", "Bison"],
@@ -15043,7 +15043,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Piano", "Guitare", "Trompette"],
@@ -15053,7 +15053,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Tableau.",
     options: ["Chien", "Chat", "Tableau"],
@@ -15063,7 +15063,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Hiver, Chaise.",
     options: ["Été", "Hiver", "Chaise"],
@@ -15073,7 +15073,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Bicyclette.",
     options: ["Chat", "Chien", "Bicyclette"],
@@ -15083,7 +15083,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Orange, Pomme, Pêche.",
     options: ["Orange", "Pomme", "Pêche"],
@@ -15093,7 +15093,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Fleur est à _____.",
     options: ["Rose", "Terre", "Oiseau"],
@@ -15103,7 +15103,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Camion.",
     options: ["Train", "Avion", "Camion"],
@@ -15113,7 +15113,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lait", "Eau", "Bière"],
@@ -15123,7 +15123,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fleur", "Arbre", "Pierre"],
@@ -15133,7 +15133,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["D", "B", "A"],
@@ -15143,7 +15143,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Hiver est à _____",
@@ -15154,7 +15154,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pêche est à Frui comme Carotte est à _____",
@@ -15165,7 +15165,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Abeille", "Papillon", "Ruche"],
@@ -15175,7 +15175,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaleur est à Température comme Humidité est à _____",
@@ -15186,7 +15186,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Livre", "Magazine", "Écrire"],
@@ -15195,7 +15195,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Écrire est une action, tandis que les autres sont des objets imprimés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chat", "Chien", "Poisson"],
@@ -15205,7 +15205,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Fleur", "Rose", "Arbre"],
@@ -15215,7 +15215,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -15225,7 +15225,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Fiction", "Roman", "Film"],
@@ -15235,7 +15235,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Poisson", "Aigle", "Requin"],
@@ -15245,7 +15245,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Corde"],
@@ -15255,7 +15255,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Vélo", "Voiture", "Train"],
@@ -15265,7 +15265,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -15275,7 +15275,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Matin", "Midi", "Nuit"],
@@ -15285,7 +15285,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Plume est à Oiseau comme Écailles est à _____",
@@ -15296,7 +15296,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Lune",
     options: ["École", "Université", "Lune"],
@@ -15306,7 +15306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Éducation est à Apprentissage comme Nutrition est à _____",
@@ -15317,7 +15317,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Miroir est à Réflexion comme Fenêtre est à _____",
@@ -15328,7 +15328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Clé, Serrure, Montre",
     options: ["Clé", "Serrure", "Montre"],
@@ -15338,7 +15338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chef est à Cuisine comme Pilote est à _____",
@@ -15349,7 +15349,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Neige, Pluie, Été",
     options: ["Neige", "Pluie", "Été"],
@@ -15359,7 +15359,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Poisson est à _____",
@@ -15370,7 +15370,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Santé comme Avocat est à _____",
@@ -15381,7 +15381,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Fleur est à _____.",
     options: ["Pollen", "Racine", "Terre"],
@@ -15391,7 +15391,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Amour, Haine, Montagne.",
     options: ["Amour", "Haine", "Montagne"],
@@ -15401,7 +15401,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Eau est à _____.",
     options: ["Vapeur", "Glace", "Lac"],
@@ -15411,7 +15411,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manger, Dormir, Étoile.",
     options: ["Manger", "Dormir", "Étoile"],
@@ -15421,7 +15421,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mercredi, Juillet.",
     options: ["Lundi", "Mercredi", "Juillet"],
@@ -15431,7 +15431,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme orange est à _____",
     options: ["banane", "citron", "fraise"],
@@ -15441,7 +15441,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme plume est à _____",
     options: ["stylo", "crayon", "papier"],
@@ -15451,7 +15451,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Train, Avion.",
     options: ["Voiture", "Train", "Avion"],
@@ -15461,7 +15461,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme ombre est à _____",
     options: ["lumière", "silhouette", "nuit"],
@@ -15470,7 +15470,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme lecture est à _____",
     options: ["écriture", "étude", "recherche"],
@@ -15480,7 +15480,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Pomme", "Banane", "Chien"],
@@ -15490,7 +15490,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Chat", "Lapin", "Voiture"],
@@ -15500,7 +15500,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Fleur", "Arbre", "Galaxie"],
@@ -15510,7 +15510,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Tigre", "Lion", "Poisson"],
@@ -15520,7 +15520,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Étoile", "Planète", "Nuage"],
@@ -15530,7 +15530,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["1", "3", "5"],
@@ -15539,7 +15539,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Soleil", "Lune", "Montagne"],
@@ -15549,7 +15549,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus dans cette liste ?",
     options: ["Chien", "Chat", "Bureau"],
@@ -15559,7 +15559,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Dessert"],
@@ -15569,7 +15569,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Écrivain", "Peintre", "Musique"],
@@ -15579,7 +15579,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Café est à _____",
     options: ["Thé", "Boisson", "Repas"],
@@ -15589,7 +15589,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Loup", "Chien", "Tigre"],
@@ -15598,7 +15598,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chocolat", "Sucre", "Savon"],
@@ -15608,7 +15608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Orange", "Citron", "Fraise"],
@@ -15617,7 +15617,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Mars", "Terre", "Jupiter"],
@@ -15626,7 +15626,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Chien", "Chat", "Arbre"],
@@ -15636,7 +15636,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Poisson", "Requin", "Oiseau"],
@@ -15646,7 +15646,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Plume est à Oiseau comme Écailles sont à _____",
@@ -15657,7 +15657,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Bougie est à Lumière comme Ventilateur est à _____",
@@ -15668,7 +15668,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Serpent est à _____ ?",
@@ -15679,7 +15679,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus :",
     options: ["Chocolat", "Vanille", "Chocolatier"],
@@ -15689,7 +15689,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Éducation comme Hôpital est à _____ ?",
@@ -15699,7 +15699,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "L'hôpital est lié à la santé, tout comme l'école est liée à l'éducation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Voiture",
     options: ["Chat", "Chien", "Voiture"],
@@ -15708,7 +15708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Avion est à _____",
     options: ["Train", "Voiture", "Vélo"],
@@ -15717,7 +15717,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Poire, Éléphant",
     options: ["Pêche", "Poire", "Éléphant"],
@@ -15726,7 +15726,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Danse, Pinceau",
     options: ["Chanson", "Danse", "Pinceau"],
@@ -15736,7 +15736,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Boulanger est à _____",
     options: ["Pain", "Gâteau", "Cuisine"],
@@ -15746,7 +15746,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Voiture",
     options: ["Étoile", "Lune", "Voiture"],
@@ -15756,7 +15756,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Plume est à _____",
@@ -15767,7 +15767,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Photographie, Peinture, Sculpture",
     options: ["Photographie", "Peinture", "Sculpture"],
@@ -15777,7 +15777,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Roman comme Artiste est à _____",
@@ -15787,7 +15787,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Satellite",
     options: ["Étoile", "Planète", "Satellite"],
@@ -15797,7 +15797,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Forêt est à Arbre comme Océan est à _____",
@@ -15808,7 +15808,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Médecin, Infirmier, Pilote",
     options: ["Médecin", "Infirmier", "Pilote"],
@@ -15818,7 +15818,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : chien, chat, oiseau.",
     options: ["chien", "chat", "voiture"],
@@ -15828,7 +15828,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : soleil est à jour comme lune est à ____.",
@@ -15839,7 +15839,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : rouge, bleu, fruit.",
     options: ["rouge", "bleu", "fruit"],
@@ -15849,7 +15849,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : arbre est à forêt comme fleur est à ____.",
@@ -15860,7 +15860,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : livre, magazine, peinture.",
@@ -15871,7 +15871,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : marteau, clou, vis.",
     options: ["marteau", "clou", "scie"],
@@ -15881,7 +15881,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : fleur est à jardin comme poisson est à ____.",
@@ -15892,7 +15892,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : hiver est à froid comme été est à ____.",
@@ -15903,7 +15903,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : neige est à hiver comme fleur est à ____.",
@@ -15914,7 +15914,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ecriture est à Stylo comme Peinture est à _____",
@@ -15925,7 +15925,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rose", "Tulipe", "Herbe"],
@@ -15935,7 +15935,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Tableau", "Sculpture", "Musée"],
@@ -15945,7 +15945,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Formation"],
@@ -15955,7 +15955,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Magazine, Chaise",
     options: ["Livre", "Magazine", "Chaise"],
@@ -15965,7 +15965,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Bureau, Chaise",
     options: ["Table", "Bureau", "Chaise"],
@@ -15975,7 +15975,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Semence est à _____",
     options: ["Plante", "Terre", "Fleur"],
@@ -15985,7 +15985,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Philosophie est à _____",
     options: ["Science", "Art", "Littérature"],
@@ -15995,7 +15995,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Énergie est à _____",
     options: ["Force", "Matière", "Vitesse"],
@@ -16005,7 +16005,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Rivière est à ?",
@@ -16016,7 +16016,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Maison est à ?",
@@ -16027,7 +16027,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Peinture est à ?",
@@ -16038,7 +16038,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Vitesse est à Temps comme Distance est à ?",
@@ -16049,7 +16049,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Pâtisserie"],
@@ -16059,7 +16059,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Chien", "Chat", "Oiseau"],
@@ -16069,7 +16069,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Chocolat", "Sucre", "Thé"],
@@ -16079,7 +16079,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Écrivain", "Peintre", "Tableau"],
@@ -16089,7 +16089,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Fleur", "Plante", "Terre"],
@@ -16099,7 +16099,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["École", "Professeur", "Élève"],
@@ -16109,7 +16109,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chanson", "Danse", "Film"],
@@ -16119,7 +16119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Cahier, Ordinateur",
     options: ["Livre", "Cahier", "Ordinateur"],
@@ -16129,7 +16129,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Lire", "Écrire", "Bibliothèque"],
@@ -16138,7 +16138,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chien est à _____",
     options: ["Loup", "Chat", "Lapin"],
@@ -16148,7 +16148,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Vache, Chèvre, Banane",
     options: ["Vache", "Chèvre", "Banane"],
@@ -16158,7 +16158,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Orchidée, Érable.",
     options: ["Rose", "Orchidée", "Érable"],
@@ -16167,7 +16167,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Couteau.",
     options: ["Chaise", "Table", "Couteau"],
@@ -16177,7 +16177,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Terre est à _____.",
     options: ["Espace", "Océan", "Montagne"],
@@ -16186,7 +16186,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Moto, Chien.",
     options: ["Bicyclette", "Moto", "Chien"],
@@ -16195,7 +16195,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La bicyclette et la moto sont des véhicules, le chien est un animal.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Sable est à _____",
     options: ["Eau", "Pierre", "Terre"],
@@ -16205,7 +16205,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Lune.",
     options: ["Train", "Avion", "Lune"],
@@ -16215,7 +16215,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Feu est à _____",
     options: ["Froid", "Chaleur", "Lumière"],
@@ -16224,7 +16224,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Plante est à _____",
     options: ["Forêt", "Racine", "Fleur"],
@@ -16234,7 +16234,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Stylo, Ordinateur.",
     options: ["Livre", "Stylo", "Ordinateur"],
@@ -16244,7 +16244,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Arbre est à _____",
     options: ["Feuille", "Bois", "Fruit"],
@@ -16254,7 +16254,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Chien : Animal, Chat : ?)",
     options: ["Félin", "Rongeur", "Oiseau"],
@@ -16263,7 +16263,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Chêne", "Sapin", "Rivière"],
@@ -16273,7 +16273,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Roi : Reine, Homme : ?)",
     options: ["Femme", "Prince", "Souverain"],
@@ -16283,7 +16283,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Lait", "Eau", "Jupe"],
@@ -16293,7 +16293,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Père : Mère, Frère : ?)",
     options: ["Sœur", "Ami", "Cousin"],
@@ -16303,7 +16303,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Chauffeur : Voiture, Pilote : ?)",
@@ -16314,7 +16314,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -16324,7 +16324,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Livre : Bibliothèque, Film : ?)",
     options: ["Salle de cinéma", "Réfrigérateur", "Salon"],
@@ -16334,7 +16334,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Été : Hiver, Jour : ?)",
     options: ["Nuit", "Matin", "Après-midi"],
@@ -16344,7 +16344,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Guitariste : Guitare, Pianiste : ?)",
@@ -16355,7 +16355,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ? (Oiseau : Voler, Poisson : ?)",
     options: ["Nager", "Sauter", "Courir"],
@@ -16364,7 +16364,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Table", "Chaise", "Assiette"],
@@ -16374,7 +16374,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Docteur : Santé, Enseignant : ?)",
@@ -16385,7 +16385,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Banane, Chêne.",
     options: ["Pomme", "Banane", "Chêne"],
@@ -16395,7 +16395,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Chaleur.",
     options: ["Rouge", "Bleu", "Chaleur"],
@@ -16405,7 +16405,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Éléphant, Tigre, Poisson rouge.",
     options: ["Éléphant", "Tigre", "Poisson rouge"],
@@ -16415,7 +16415,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Boule, Cube, Cylindre.",
     options: ["Boule", "Cube", "Cercle"],
@@ -16424,7 +16424,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mouton, Chèvre, Camion.",
     options: ["Mouton", "Chèvre", "Camion"],
@@ -16433,7 +16433,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienne comme Chat est à ?",
@@ -16443,7 +16443,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Lecture comme Film est à ?",
@@ -16454,7 +16454,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Élève comme Hôpital est à ?",
@@ -16465,7 +16465,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écriture est à Stylo comme Peinture est à ?",
@@ -16476,7 +16476,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Enfant comme Professeur est à ?",
@@ -16487,7 +16487,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Vallée comme Mer est à ?",
@@ -16498,7 +16498,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["D", "E", "F"],
@@ -16508,7 +16508,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["D", "G", "F"],
@@ -16518,7 +16518,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["E", "D", "C"],
@@ -16528,7 +16528,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["X", "Y", "Z"],
@@ -16538,7 +16538,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["Q", "R", "S"],
@@ -16548,7 +16548,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["G", "H", "I"],
@@ -16558,7 +16558,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Oiseau est à Vol comme Poisson est à ?",
@@ -16568,7 +16568,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artiste est à Peinture comme Musicien est à ?",
@@ -16579,7 +16579,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Saison est à Printemps comme Mois est à ?",
@@ -16589,7 +16589,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Roman comme Compositeur est à ?",
@@ -16600,7 +16600,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Jour est à ?",
@@ -16611,7 +16611,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Été est à Hiver comme Matin est à ?",
@@ -16622,7 +16622,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Avion", "Bateau", "Terre"],
@@ -16631,7 +16631,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Orchestre", "Concert", "Danse"],
@@ -16640,7 +16640,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Peintre est à ?",
@@ -16651,7 +16651,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rouge", "Vert", "Cercle"],
@@ -16661,7 +16661,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Café", "Thé", "Bouteille"],
@@ -16671,7 +16671,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Mère", "Père", "Enfant"],
@@ -16681,7 +16681,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Piano", "Guitare", "Orchestre"],
@@ -16691,7 +16691,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Café", "Thé", "Tasse"],
@@ -16700,7 +16700,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La tasse est un objet, tandis que les autres sont des boissons.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Avion",
     options: ["Table", "Chaise", "Avion"],
@@ -16710,7 +16710,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrivain est à _____",
     options: ["Poète", "Lecture", "Écriture"],
@@ -16719,7 +16719,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Bicyclette",
     options: ["Rose", "Tulipe", "Bicyclette"],
@@ -16729,7 +16729,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sable, Eau, Montagne",
     options: ["Sable", "Eau", "Montagne"],
@@ -16739,7 +16739,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Pomme", "Banane", "Voiture"],
@@ -16749,7 +16749,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Été", "Automne", "Français"],
@@ -16759,7 +16759,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Poisson", "Requin", "Avion"],
@@ -16769,7 +16769,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Piano", "Guitare", "Peinture"],
@@ -16779,7 +16779,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Roi", "Reine", "Prince"],
@@ -16789,7 +16789,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Chocolat", "Gâteau", "Lait"],
@@ -16799,7 +16799,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Fleur", "Arbre", "Brouillard"],
@@ -16809,7 +16809,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Femme", "Homme", "Chien"],
@@ -16819,7 +16819,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["École", "Livre", "Musique"],
@@ -16829,7 +16829,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus parmi les suivants ?",
     options: ["Étoile", "Planète", "Lumière"],
@@ -16839,7 +16839,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Maillot est à Sport comme Costume est à _____.",
@@ -16850,7 +16850,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Ciel comme Vague est à _____.",
@@ -16861,7 +16861,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Brosse est à _____.",
@@ -16872,7 +16872,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Cours est à École comme Formation est à _____.",
@@ -16883,7 +16883,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienne comme Garçon est à ?",
@@ -16894,7 +16894,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Soleil est à Jour comme Lune est à ?",
@@ -16905,7 +16905,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Livre est à Lire comme Film est à ?",
@@ -16915,7 +16915,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Éducateur comme Hôpital est à ?",
@@ -16926,7 +16926,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaleur est à Feu comme Froid est à ?",
@@ -16937,7 +16937,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écriture est à Stylo comme Peinture est à ?",
@@ -16947,7 +16947,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mère est à Enfant comme Professeur est à ?",
@@ -16958,7 +16958,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Arbre est à Feuille comme Fleur est à ?",
@@ -16969,7 +16969,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Route est à Voiture comme Rail est à ?",
@@ -16980,7 +16980,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Cuir est à Chaussure comme Laine est à ?",
@@ -16991,7 +16991,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : Livre, Journal, Tablette.",
@@ -17002,7 +17002,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Lait est à Vache comme Miel est à ____ .",
@@ -17013,7 +17013,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écrivain est à Roman comme Peintre est à ____ .",
@@ -17024,7 +17024,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chiffre, Lettre, Mot.",
     options: ["Chiffre", "Lettre", "Mot"],
@@ -17034,7 +17034,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Orgue.",
     options: ["Piano", "Guitare", "Orgue"],
@@ -17044,7 +17044,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Arbre est à Feuille comme Fleur est à ____ .",
@@ -17055,7 +17055,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Sable est à Plage comme Neige est à ____ .",
@@ -17066,7 +17066,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Couleur.",
     options: ["Chanson", "Poème", "Couleur"],
@@ -17076,7 +17076,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mouton est à Laine comme Vache est à ____ .",
@@ -17087,7 +17087,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants.",
     options: ["Tigre", "Lion", "Chèvre"],
@@ -17097,7 +17097,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants.",
     options: ["Football", "Basketball", "Natation"],
@@ -17107,7 +17107,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Érable, Bicyclette",
     options: ["Chêne", "Érable", "Bicyclette"],
@@ -17116,7 +17116,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Chapeau, Chaise",
     options: ["Manteau", "Chapeau", "Chaise"],
@@ -17125,7 +17125,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Oiseau est à _____",
     options: ["Vol", "Nager", "Grimper"],
@@ -17134,7 +17134,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Argent est à _____",
     options: ["Richesse", "Pauvreté", "Travail"],
@@ -17143,7 +17143,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poêle, Four, Assiette",
     options: ["Poêle", "Four", "Assiette"],
@@ -17152,7 +17152,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Cheval est à _____",
     options: ["Cavalier", "Écurie", "Selle"],
@@ -17161,7 +17161,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Thé, Café, Chaise",
     options: ["Thé", "Café", "Chaise"],
@@ -17170,7 +17170,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rose", "Tulipe", "Roue"],
@@ -17180,7 +17180,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Mer", "Montagne", "Rivière"],
@@ -17190,7 +17190,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Table", "Chaise", "Lit"],
@@ -17200,7 +17200,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Semaine est à _____",
@@ -17210,7 +17210,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le weekend est une partie de la semaine, tout comme la nuit est une partie du jour.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Canapé",
     options: ["Table", "Chaise", "Canard"],
@@ -17220,7 +17220,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Université", "Professeur", "Livre"],
@@ -17230,7 +17230,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Orange, Citron, Voiture",
     options: ["Orange", "Citron", "Voiture"],
@@ -17240,7 +17240,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Pain, Voiture",
     options: ["Lait", "Pain", "Voiture"],
@@ -17250,7 +17250,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à _____",
     options: ["Valley", "Rivière", "Plaine"],
@@ -17260,7 +17260,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Stylo, Crayon, Ordinateur",
     options: ["Stylo", "Crayon", "Ordinateur"],
@@ -17270,7 +17270,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chocolat", "Sucre", "Sel"],
@@ -17279,7 +17279,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Lumière", "Éteindre", "Allumer"],
@@ -17289,7 +17289,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Soleil", "Étoile", "Nuage"],
@@ -17298,7 +17298,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chauffeur", "Voiture", "Bicyclette"],
@@ -17308,7 +17308,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Écrivain", "Roman", "Poème"],
@@ -17318,7 +17318,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Soleil", "Jour", "Nuit"],
@@ -17328,7 +17328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -17338,7 +17338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Manger", "Boire", "Sauter"],
@@ -17348,7 +17348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Semaine est à ?",
@@ -17359,7 +17359,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Fête est à Célébration comme Réunion est à ?",
@@ -17370,7 +17370,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Livre", "Cahier", "Stylo"],
@@ -17380,7 +17380,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Gâteau",
     options: ["Rouge", "Bleu", "Gâteau"],
@@ -17390,7 +17390,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciel, Mer, Montagne",
     options: ["Ciel", "Mer", "Montagne"],
@@ -17400,7 +17400,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bateau",
     options: ["Train", "Avion", "Bateau"],
@@ -17410,7 +17410,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Pinceau",
     options: ["Piano", "Guitare", "Pinceau"],
@@ -17420,7 +17420,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Nuage",
     options: ["Lune", "Étoile", "Nuage"],
@@ -17430,7 +17430,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Lit",
     options: ["Chaise", "Table", "Lit"],
@@ -17440,7 +17440,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Smartphone est à _____",
     options: ["Ordinateur", "Télévision", "Radio"],
@@ -17450,7 +17450,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bougie, Lampe, Couteau",
     options: ["Bougie", "Lampe", "Couteau"],
@@ -17460,7 +17460,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien comme Chat est à _____",
@@ -17471,7 +17471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Bleu", "Véhicule"],
@@ -17481,7 +17481,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Mélodie"],
@@ -17491,7 +17491,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Eau est à Glace comme Vapeur est à _____",
@@ -17502,7 +17502,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -17512,7 +17512,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Stylo comme Peindre est à _____",
@@ -17522,7 +17522,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chat", "Chien", "Souris"],
@@ -17532,7 +17532,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme terre est à _____.",
     options: ["Mer", "Ciel", "Soleil"],
@@ -17541,7 +17541,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lait", "Eau", "Sable"],
@@ -17551,7 +17551,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["École", "Université", "Tennis"],
@@ -17561,7 +17561,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Biscuit"],
@@ -17571,7 +17571,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lune", "Soleil", "Planète"],
@@ -17581,7 +17581,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Universitaire", "Scolaire"],
@@ -17591,7 +17591,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Roman comme Peintre est à _____",
@@ -17602,7 +17602,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sable est à Plage comme Neige est à _____",
@@ -17613,7 +17613,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Sculpture est à _____",
@@ -17624,7 +17624,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Vent est à Air comme Eau est à _____",
@@ -17635,7 +17635,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Méditerranée", "Atlantique", "Désert"],
@@ -17645,7 +17645,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Chien",
     options: ["Pomme", "Orange", "Chien"],
@@ -17655,7 +17655,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienne comme Garçon est à ____",
@@ -17666,7 +17666,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Été est à Hiver comme Jour est à ____",
@@ -17677,7 +17677,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chat est à Chatterie comme Chien est à ____",
@@ -17688,7 +17688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Docteur est à Médecine comme Professeur est à ____",
@@ -17699,7 +17699,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Désert",
     options: ["Mer", "Montagne", "Désert"],
@@ -17709,7 +17709,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Clé est à Serrure comme Code est à ____",
@@ -17719,7 +17719,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le cadenas est un objet qui se ferme avec un code, tout comme la serrure s'ouvre avec une clé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["D", "G", "H"],
@@ -17729,7 +17729,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Pomme", "Banane", "Chien"],
@@ -17738,7 +17738,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Table", "Chaise", "Soleil"],
@@ -17747,7 +17747,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Fleur", "Arbre", "Voiture"],
@@ -17756,7 +17756,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Eau est à Glace comme Vapeur est à _____",
@@ -17767,7 +17767,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Piano", "Guitare", "Chanson"],
@@ -17777,7 +17777,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Chat", "Chien", "Oiseau"],
@@ -17787,7 +17787,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Étoile", "Planète", "Satellite"],
@@ -17797,7 +17797,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Musique est à Danse comme Peinture est à _____",
@@ -17808,7 +17808,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Sommet comme Vallée est à _____",
@@ -17819,7 +17819,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Poisson, Oiseau",
     options: ["Chat", "Chien", "Poisson"],
@@ -17829,7 +17829,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Carotte, Banane",
     options: ["Pomme", "Orange", "Carotte"],
@@ -17839,7 +17839,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Lit, Tapis",
     options: ["Table", "Chaise", "Tapis"],
@@ -17849,7 +17849,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Printemps, Automne, Neige",
     options: ["Étés", "Printemps", "Neige"],
@@ -17859,7 +17859,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Orchestre",
     options: ["Piano", "Guitare", "Orchestre"],
@@ -17869,7 +17869,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mercure est à Vénus comme Terre est à _____",
@@ -17880,7 +17880,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Collège, Bibliothèque",
     options: ["École", "Université", "Bibliothèque"],
@@ -17890,7 +17890,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Ronron comme Chien est à _____",
@@ -17900,7 +17900,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Orange, Pêche, Cerise, Brocoli",
     options: ["Orange", "Pêche", "Brocoli"],
@@ -17910,7 +17910,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chapeau, Ceinture, Montre, Chaussure",
     options: ["Chapeau", "Ceinture", "Montre"],
@@ -17920,7 +17920,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Mars", "Jupiter", "Terre"],
@@ -17930,7 +17930,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Mathématiques", "Biologie", "Cuisine"],
@@ -17940,7 +17940,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Bleu, Circle",
     options: ["Rouge", "Vert", "Circle"],
@@ -17950,7 +17950,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Chaise",
     options: ["Piano", "Guitare", "Chaise"],
@@ -17960,7 +17960,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Hélicoptère, Train, Bicyclette",
     options: ["Avion", "Hélicoptère", "Bicyclette"],
@@ -17970,7 +17970,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Satellite, Comète",
     options: ["Étoile", "Satellite", "Comète"],
@@ -17980,7 +17980,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Printemps, Été, Automne, Semaine",
     options: ["Printemps", "Automne", "Semaine"],
@@ -17990,7 +17990,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fiction", "Roman", "Poésie"],
@@ -18000,7 +18000,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Eau comme Désert est à _____",
@@ -18011,7 +18011,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Londres", "Paris", "Bretagne"],
@@ -18021,7 +18021,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Manger est à Nourriture comme Lire est à _____",
@@ -18032,7 +18032,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Matin", "Midi", "Saison"],
@@ -18042,7 +18042,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chien", "Chat", "Tracteur"],
@@ -18052,7 +18052,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Table", "Chaise", "Plante"],
@@ -18062,7 +18062,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Piano", "Guitare", "Mallette"],
@@ -18072,7 +18072,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Rose", "Tulipe", "Fleuriste"],
@@ -18082,7 +18082,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Lait", "Eau", "Sable"],
@@ -18092,7 +18092,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Café", "Thé", "Biscuit"],
@@ -18102,7 +18102,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Fiction", "Roman", "Éditeur"],
@@ -18112,7 +18112,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["H", "I", "J"],
@@ -18122,7 +18122,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Canapé, Tapis",
     options: ["Chaise", "Canapé", "Tapis"],
@@ -18132,7 +18132,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Horloge est à _____",
     options: ["Temps", "Calendrier", "Montre"],
@@ -18141,7 +18141,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Reptile, Oiseau",
     options: ["Poisson", "Reptile", "Oiseau"],
@@ -18151,7 +18151,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Automne, Hiver, Été",
     options: ["Automne", "Hiver", "Été"],
@@ -18161,7 +18161,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme livre est à ____ ?",
     options: ["Page", "Cahier", "Stylo"],
@@ -18171,7 +18171,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme feu est à ____ ?",
     options: ["Eau", "Cendre", "Fumée"],
@@ -18180,7 +18180,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Canard", "Singe", "Serpent"],
@@ -18190,7 +18190,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme voiture est à ____ ?",
     options: ["Route", "Essence", "Moteur"],
@@ -18199,7 +18199,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Une voiture circule sur une route, tout comme A est en relation avec B.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Hiver, Vague.",
     options: ["ÉtÉ", "Hiver", "Vague"],
@@ -18209,7 +18209,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Soleil, Étoile.",
     options: ["Lune", "Soleil", "Étoile"],
@@ -18219,7 +18219,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lion, Tigre, Chèvre.",
     options: ["Lion", "Tigre", "Chèvre"],
@@ -18229,7 +18229,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Jardin est à _____",
     options: ["Fleur", "Arbre", "Bâtiment"],
@@ -18239,7 +18239,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Oiseau, Chien",
     options: ["Poisson", "Oiseau", "Chien"],
@@ -18249,7 +18249,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Film, Livre",
     options: ["Chanson", "Film", "Livre"],
@@ -18259,7 +18259,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Été est à _____",
     options: ["Printemps", "Automne", "Hiver"],
@@ -18269,7 +18269,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sable, Terre, Eau",
     options: ["Sable", "Terre", "Eau"],
@@ -18279,7 +18279,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pomme est à _____",
     options: ["Poire", "Orange", "Banane"],
@@ -18288,7 +18288,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Professeur", "Élève", "Classe"],
@@ -18298,7 +18298,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Cercle, Triangle, Rectangle.",
     options: ["Cercle", "Triangle", "Rectangle"],
@@ -18308,7 +18308,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, Brique.",
     options: ["Chêne", "Pin", "Brique"],
@@ -18318,7 +18318,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Trompette.",
     options: ["Piano", "Guitare", "Trompette"],
@@ -18328,7 +18328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pantalon, Chemise, Chaussure.",
     options: ["Pantalon", "Chemise", "Chaussure"],
@@ -18338,7 +18338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Mars, Étoile.",
     options: ["Lune", "Mars", "Étoile"],
@@ -18348,7 +18348,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Avion est à _____",
     options: ["Pilote", "Aéroport", "Voyageur"],
@@ -18358,7 +18358,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fête, Anniversaire, Réunion.",
     options: ["Fête", "Anniversaire", "Réunion"],
@@ -18368,7 +18368,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Loup est à Meute comme Oiseau est à _____",
@@ -18379,7 +18379,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Énergie est à Travail comme Force est à _____",
@@ -18390,7 +18390,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fer", "Or", "Plastique"],
@@ -18400,7 +18400,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Ciel comme Poisson est à _____",
@@ -18411,7 +18411,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rouge", "Bleu", "Chaleur"],
@@ -18421,7 +18421,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Écrit", "Lu", "Chanté"],
@@ -18431,7 +18431,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["V", "W", "X"],
@@ -18441,7 +18441,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprendre comme Maison est à _____",
@@ -18451,7 +18451,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Lunette"],
@@ -18461,7 +18461,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Canard.",
     options: ["Chat", "Chien", "Canard"],
@@ -18471,7 +18471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Roue est à _____.",
     options: ["Véhicule", "Moteur", "Essence"],
@@ -18481,7 +18481,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Requin, Baleine.",
     options: ["Poisson", "Requin", "Baleine"],
@@ -18491,7 +18491,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Planète.",
     options: ["Étoile", "Lune", "Planète"],
@@ -18501,7 +18501,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaise est à _____.",
     options: ["Meuble", "Table", "Salon"],
@@ -18511,7 +18511,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciel, Mer, Montagne.",
     options: ["Ciel", "Mer", "Montagne"],
@@ -18521,7 +18521,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Vin est à _____.",
     options: ["Raisin", "Bouteille", "Cave"],
@@ -18531,7 +18531,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Horloge est à _____.",
     options: ["Temps", "Minute", "Seconde"],
@@ -18540,7 +18540,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Hiver, Pluie.",
     options: ["Été", "Hiver", "Pluie"],
@@ -18550,7 +18550,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Manteau.",
     options: ["Table", "Chaise", "Manteau"],
@@ -18560,7 +18560,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à ____.",
     options: ["Professeur", "Élève", "Classe"],
@@ -18569,7 +18569,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mer est à ____.",
     options: ["Rivière", "Lac", "Montagne"],
@@ -18579,7 +18579,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaud est à ____.",
     options: ["Froid", "Élevé", "Bas"],
@@ -18589,7 +18589,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Clé est à ____.",
     options: ["Verrou", "Serrure", "Chambre"],
@@ -18599,7 +18599,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Roue, Moteur, Chaîne.",
     options: ["Roue", "Moteur", "Chaîne"],
@@ -18609,7 +18609,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à ____.",
     options: ["Vallée", "Rivière", "Plaine"],
@@ -18619,7 +18619,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Vélo, Avion.",
     options: ["Voiture", "Vélo", "Avion"],
@@ -18629,7 +18629,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Pomme", "Banane", "Tomate"],
@@ -18639,7 +18639,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Jupe est à Vêtements comme Bouteille est à ?)",
@@ -18650,7 +18650,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Maître est à Élève comme Docteur est à ?)",
@@ -18661,7 +18661,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (École est à Apprentissage comme Cuisine est à ?)",
@@ -18672,7 +18672,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chauffeur", "Conducteur", "Pilote"],
@@ -18682,7 +18682,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Écrivain est à Livre comme Artiste est à ?)",
@@ -18693,7 +18693,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fiction", "Roman", "Poésie"],
@@ -18702,7 +18702,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La fiction est un genre, tandis que les autres sont des formats littéraires.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un arbre est à une forêt comme une fleur est à _____",
@@ -18713,7 +18713,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un élève est à une école comme un patient est à _____",
@@ -18724,7 +18724,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un livre est à une bibliothèque comme un film est à _____",
@@ -18735,7 +18735,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un peintre est à une toile comme un écrivain est à _____",
@@ -18746,7 +18746,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un roi est à un royaume comme un président est à _____",
@@ -18757,7 +18757,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Une montre est à un temps comme un thermomètre est à _____",
@@ -18768,7 +18768,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un architecte est à un bâtiment comme un chef est à _____",
@@ -18779,7 +18779,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Une clé est à une serrure comme un mot de passe est à _____",
@@ -18790,7 +18790,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : Un chef d'orchestre est à une symphonie comme un réalisateur est à _____",
@@ -18801,7 +18801,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme terre est à _____.",
     options: ["eau", "air", "feu"],
@@ -18811,7 +18811,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Tableau.",
     options: ["Chanson", "Poème", "Tableau"],
@@ -18821,7 +18821,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Bateau.",
     options: ["Avion", "Train", "Bateau"],
@@ -18831,7 +18831,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Pomme est à Fruit comme Carotte est à ____",
@@ -18842,7 +18842,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mer est à Océan comme Rivière est à ____",
@@ -18853,7 +18853,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Aboyer comme Chat est à ____",
@@ -18864,7 +18864,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rouge", "Bleu", "Pomme"],
@@ -18874,7 +18874,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Étoile est à Ciel comme Poisson est à ____",
@@ -18885,7 +18885,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Étudiant comme Hôpital est à ____",
@@ -18896,7 +18896,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Maman est à Enfant comme Professeur est à ____",
@@ -18907,7 +18907,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ordinateur est à _____",
     options: ["Imprimante", "Livre", "Papier"],
@@ -18916,7 +18916,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Écrivain est à _____",
     options: ["Roman", "Poésie", "Journaliste"],
@@ -18926,7 +18926,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Tablette, Smartphone, Chaise",
     options: ["Tablette", "Smartphone", "Chaise"],
@@ -18936,7 +18936,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Docteur est à _____",
     options: ["Médecine", "Patient", "Hôpital"],
@@ -18946,7 +18946,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Artiste est à _____",
     options: ["Peinture", "Musique", "Danse"],
@@ -18956,7 +18956,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Clé",
     options: ["Chanson", "Poème", "Clé"],
@@ -18965,7 +18965,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Cahier, Stylo, Tablette",
     options: ["Livre", "Cahier", "Stylo"],
@@ -18975,7 +18975,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Poisson est à Nager comme Oiseau est à _____",
@@ -18985,7 +18985,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ordinateur est à Logiciel comme Chaise est à _____",
@@ -18996,7 +18996,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Matin, Midi, Soir, Nuit.",
     options: ["Matin", "Midi", "Nuit"],
@@ -19006,7 +19006,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bureau, Collège.",
     options: ["École", "Université", "Bureau"],
@@ -19016,7 +19016,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Lit, Voiture.",
     options: ["Chaise", "Table", "Voiture"],
@@ -19026,7 +19026,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Roman, Film.",
     options: ["Chanson", "Poème", "Film"],
@@ -19036,7 +19036,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Cerise, Orange, Lait.",
     options: ["Pêche", "Cerise", "Lait"],
@@ -19046,7 +19046,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrire est à Stylo comme Dessiner est à _____",
@@ -19057,7 +19057,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Plage, Forêt.",
     options: ["Mer", "Montagne", "Plage"],
@@ -19067,7 +19067,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Clé, Serrure, Porte, Fenêtre.",
     options: ["Clé", "Serrure", "Fenêtre"],
@@ -19077,7 +19077,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Fleur est à jardin comme poisson est à _____",
     options: ["eau", "mer", "lac"],
@@ -19087,7 +19087,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Livre est à lecture comme film est à _____",
     options: ["visionnage", "écriture", "musique"],
@@ -19096,7 +19096,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanson est à Mélodie comme Poème est à _____",
@@ -19107,7 +19107,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Architecte est à Bâtiment comme Médecin est à _____",
@@ -19118,7 +19118,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Éducation comme Artiste est à _____",
@@ -19129,7 +19129,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Terre est à Planète comme Mer est à _____",
@@ -19140,7 +19140,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Élève comme Université est à _____",
@@ -19151,7 +19151,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : \"Arbre est à forêt comme fleur est à _____.\"",
@@ -19162,7 +19162,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : \"Roue est à voiture comme aile est à _____.\"",
@@ -19173,7 +19173,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : \"Chaud est à froid comme rapide est à _____.\"",
@@ -19184,7 +19184,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : \"Lune est à nuit comme soleil est à _____.\"",
@@ -19195,7 +19195,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : \"Guitare est à musicien comme pinceau est à _____.\"",
@@ -19206,7 +19206,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : \"Montagne est à vallée comme océan est à _____.\"",
@@ -19217,7 +19217,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Poème", "Roman", "Essai"],
@@ -19226,7 +19226,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le poème est une forme de littérature différente des autres, qui sont des formes de prose.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Livre est à Éducation comme Sport est à _____",
@@ -19237,7 +19237,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Orange", "Fraise", "Gâteau"],
@@ -19247,7 +19247,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Clé", "Serrure", "Fenêtre"],
@@ -19257,7 +19257,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Chien",
     options: ["Table", "Chaise", "Chien"],
@@ -19267,7 +19267,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Oiseau, Avion",
     options: ["Poisson", "Oiseau", "Avion"],
@@ -19277,7 +19277,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ordinateur, Smartphone, Livre",
     options: ["Ordinateur", "Smartphone", "Livre"],
@@ -19287,7 +19287,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poire, Citron, Carotte",
     options: ["Poire", "Citron", "Carotte"],
@@ -19297,7 +19297,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Jus de fruit"],
@@ -19307,7 +19307,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lecture est à Livre comme Écriture est à _____",
@@ -19318,7 +19318,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Ciseau", "Colle", "Règle"],
@@ -19328,7 +19328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Voiture.",
     options: ["Rose", "Tulipe", "Voiture"],
@@ -19338,7 +19338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Automne est à _____.",
     options: ["Été", "Hiver", "Printemps"],
@@ -19347,7 +19347,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Cerise, Épinard.",
     options: ["Pêche", "Cerise", "Épinard"],
@@ -19357,7 +19357,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Nuage est à _____.",
     options: ["Pluie", "Ciel", "Vent"],
@@ -19367,7 +19367,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Étoile est à _____.",
     options: ["Lune", "Galaxie", "Soleil"],
@@ -19377,7 +19377,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Ordinateur.",
     options: ["Table", "Chaise", "Ordinateur"],
@@ -19387,7 +19387,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : chat, chien, oiseau.",
     options: ["chat", "chien", "poisson"],
@@ -19396,7 +19396,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : rouge est à feu comme vert est à ?",
@@ -19406,7 +19406,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : livre, magazine, télévision.",
     options: ["livre", "magazine", "ordinateur"],
@@ -19415,7 +19415,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : clou est à marteau comme vis est à ?",
@@ -19426,7 +19426,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : pomme, banane, tomate.",
     options: ["pomme", "banane", "carotte"],
@@ -19436,7 +19436,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : fleur est à jardin comme arbre est à ?",
@@ -19447,7 +19447,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : ciel, terre, étoile.",
     options: ["ciel", "terre", "lune"],
@@ -19457,7 +19457,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : maître est à élève comme médecin est à ?",
@@ -19468,7 +19468,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : table, chaise, livre.",
     options: ["table", "chaise", "bureau"],
@@ -19478,7 +19478,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : chat est à ronronner comme chien est à ?",
@@ -19488,7 +19488,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : hiver, été, automne.",
     options: ["hiver", "été", "printemps"],
@@ -19498,7 +19498,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : orange, fraise, kiwi.",
     options: ["orange", "fraise", "carotte"],
@@ -19508,7 +19508,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : peinture est à artiste comme musique est à ?",
@@ -19519,7 +19519,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : avion, bateau, voiture.",
     options: ["avion", "bateau", "moto"],
@@ -19529,7 +19529,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Chaud est à Froid comme Éclair est à ?)",
@@ -19540,7 +19540,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Lumière est à Obscurité comme Jour est à ?)",
@@ -19551,7 +19551,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Chanson est à Musique comme Poème est à ?)",
@@ -19562,7 +19562,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Froid est à Glace comme Chaud est à ?)",
@@ -19573,7 +19573,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Lent est à Rapide comme Sombre est à ?)",
@@ -19584,7 +19584,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Hiver est à Neige comme Été est à ?)",
@@ -19595,7 +19595,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ ? (Ciel est à Nuage comme Mer est à ?)",
@@ -19606,7 +19606,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pomme est à Pommier comme Cerise est à _____",
@@ -19617,7 +19617,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Aigle est à Oiseau comme Requin est à _____",
@@ -19628,7 +19628,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Hiver est à Neige comme Été est à _____",
@@ -19639,7 +19639,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Livres, Collège",
     options: ["École", "Université", "Livres"],
@@ -19649,7 +19649,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Noir est à Blanc comme Jour est à _____",
@@ -19660,7 +19660,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Soleil, Terre",
     options: ["Lune", "Étoile", "Terre"],
@@ -19670,7 +19670,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrit est à Livre comme Écoute est à _____",
@@ -19681,7 +19681,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Canard, Pingouin, Serpent",
     options: ["Aigle", "Canard", "Serpent"],
@@ -19691,7 +19691,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Croissant est à Boulangerie comme Pizza est à _____",
@@ -19702,7 +19702,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Sapin, Roseau",
     options: ["Chêne", "Bouleau", "Roseau"],
@@ -19712,7 +19712,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mémoire est à Oubli comme Connaissance est à _____",
@@ -19723,7 +19723,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["Fleur", "Plante", "Arbre"],
@@ -19733,7 +19733,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ____ ?",
     options: ["École", "Université", "Livre"],
@@ -19742,7 +19742,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Un livre est un outil d'apprentissage, tout comme une école est un lieu d'apprentissage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chat est à Chien comme Oiseau est à ____.",
@@ -19753,7 +19753,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Triangle.",
     options: ["Rouge", "Vert", "Triangle"],
@@ -19763,7 +19763,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Ciel est à Nuage comme Mer est à ____.",
@@ -19774,7 +19774,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Livre est à Lecture comme Musique est à ____.",
@@ -19785,7 +19785,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Coucher, Lever, Table.",
     options: ["Coucher", "Lever", "Table"],
@@ -19795,7 +19795,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Terre est à Sol comme Mer est à ____.",
@@ -19806,7 +19806,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Moto, Livre.",
     options: ["Bicyclette", "Moto", "Livre"],
@@ -19816,7 +19816,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Apprentissage comme Cuisine est à ____.",
@@ -19827,7 +19827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Hiver est à Neige comme Été est à ____.",
@@ -19838,7 +19838,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chanson est à Mélodie comme Poème est à ____.",
@@ -19849,7 +19849,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Étoile est à Ciel comme Lune est à ____.",
@@ -19860,7 +19860,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Pain.",
     options: ["Lait", "Eau", "Pain"],
@@ -19870,7 +19870,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Pull, Chaussures.",
     options: ["Manteau", "Pull", "Chaussures"],
@@ -19880,7 +19880,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Vélo, Train.",
     options: ["Voiture", "Vélo", "Train"],
@@ -19890,7 +19890,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Roi", "Reine", "Soleil"],
@@ -19899,7 +19899,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Chaud", "Froid", "Température"],
@@ -19908,7 +19908,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Lumière", "Obscurité", "Sombre"],
@@ -19918,7 +19918,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Nuit", "Jour", "Étoile"],
@@ -19927,7 +19927,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["Abeille", "Oiseau", "Insecte"],
@@ -19937,7 +19937,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ :",
     options: ["École", "Éducation", "Livre"],
@@ -19946,7 +19946,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Table", "Chaise", "Bureau"],
@@ -19956,7 +19956,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rond", "Carré", "Triangle"],
@@ -19966,7 +19966,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Sable", "Eau", "Mer"],
@@ -19976,7 +19976,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Vin", "Bière", "Jus"],
@@ -19986,7 +19986,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -19996,7 +19996,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["École", "Université", "Professeur"],
@@ -20006,7 +20006,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Mer.",
     options: ["Étoile", "Lune", "Mer"],
@@ -20016,7 +20016,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Sapin, Fleur.",
     options: ["Chêne", "Sapin", "Fleur"],
@@ -20026,7 +20026,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Bougie est à _____",
     options: ["Flamme", "Cire", "Chaleur"],
@@ -20036,7 +20036,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sable, Terre, Ciel.",
     options: ["Sable", "Terre", "Ciel"],
@@ -20046,7 +20046,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Vache, Chèvre, Chien.",
     options: ["Vache", "Chèvre", "Chien"],
@@ -20056,7 +20056,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Pluie est à Arbre comme Neige est à ____.",
@@ -20067,7 +20067,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Triangle, Carré, Hexagone.",
     options: ["Triangle", "Carré", "Hexagone"],
@@ -20077,7 +20077,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Couteau est à Tranchant comme Marteau est à ____.",
@@ -20087,7 +20087,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaleur est à Feu comme Froid est à ____.",
@@ -20098,7 +20098,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Océan, Rivière.",
     options: ["Mer", "Océan", "Rivière"],
@@ -20108,7 +20108,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Poisson est à Nager comme Oiseau est à ____.",
@@ -20119,7 +20119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Scolarité comme Maison est à _____",
@@ -20130,7 +20130,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Verre est à Boisson comme Assiette est à _____",
@@ -20141,7 +20141,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Rose", "Tulipe", "Cactus"],
@@ -20151,7 +20151,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["École", "Université", "Bureau"],
@@ -20161,7 +20161,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Hiver", "Printemps", "Automne"],
@@ -20171,7 +20171,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Canapé, Voiture",
     options: ["Chaise", "Table", "Voiture"],
@@ -20181,7 +20181,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Serpent, Éléphant",
     options: ["Serpent", "Éléphant", "Chien"],
@@ -20191,7 +20191,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Musique est à _____",
     options: ["Son", "Image", "Danse"],
@@ -20200,7 +20200,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Guitare, Piano, Violon, Avion",
     options: ["Guitare", "Piano", "Avion"],
@@ -20210,7 +20210,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Sapin, Orange, Bouleau",
     options: ["Chêne", "Sapin", "Orange"],
@@ -20220,7 +20220,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme voiture est à _____.",
     options: ["Moto", "Bicyclette", "Avion"],
@@ -20229,7 +20229,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La voiture et la moto sont des moyens de transport terrestres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Soleil, Lune, Étoile, Vent",
     options: ["Soleil", "Lune", "Vent"],
@@ -20239,7 +20239,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Sapin, Roseau",
     options: ["Chêne", "Sapin", "Roseau"],
@@ -20249,7 +20249,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Rivières est à _____",
     options: ["Lacs", "Montagnes", "Océans"],
@@ -20258,7 +20258,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Éclair, Tonnerre, Calme",
     options: ["Éclair", "Tonnerre", "Calme"],
@@ -20268,7 +20268,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Roman, Tablette",
     options: ["Chanson", "Poème", "Tablette"],
@@ -20278,7 +20278,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Montagne, Vallée, Océan, Ciel",
     options: ["Montagne", "Vallée", "Ciel"],
@@ -20288,7 +20288,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Artiste est à _____",
     options: ["Peinture", "Concert", "Sculpture"],
@@ -20298,7 +20298,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Cerveau, Cœur, Voiture",
     options: ["Cerveau", "Cœur", "Voiture"],
@@ -20308,7 +20308,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Soleil est à jour comme lune est à _____",
     options: ["nuit", "étoile", "ciel"],
@@ -20318,7 +20318,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Abeille est à ruche comme oiseau est à _____",
     options: ["nid", "arbre", "cage"],
@@ -20328,7 +20328,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Chèvre est à lait comme poule est à _____",
     options: ["oeufs", "plumes", "viande"],
@@ -20338,7 +20338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Professeur", "Élève", "Bureau"],
@@ -20347,7 +20347,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Furet",
     options: ["Chien", "Chat", "Furet"],
@@ -20357,7 +20357,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Guitare, Piano, Chaise",
     options: ["Guitare", "Piano", "Chaise"],
@@ -20367,7 +20367,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Galaxie, Planète",
     options: ["Étoile", "Galaxie", "Planète"],
@@ -20377,7 +20377,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ordinateur, Tablette, Téléphone",
     options: ["Ordinateur", "Tablette", "Téléphone"],
@@ -20387,7 +20387,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaussure, Chapeau, Table",
     options: ["Chaussure", "Chapeau", "Table"],
@@ -20397,7 +20397,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Chocolatine"],
@@ -20407,7 +20407,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Étoile", "Galaxie", "Planète"],
@@ -20417,7 +20417,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Lait", "Souris", "Fromage"],
@@ -20427,7 +20427,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Montagne", "Rivière", "Désert"],
@@ -20437,7 +20437,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Loup", "Tigre", "Bison"],
@@ -20447,7 +20447,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Café", "Thé", "Lait"],
@@ -20456,7 +20456,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Fleur", "Feuille", "Racine"],
@@ -20466,7 +20466,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Yaourt", "Salade"],
@@ -20476,7 +20476,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Rose", "Tulipe", "Fleuriste"],
@@ -20486,7 +20486,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fusée", "Avion", "Bateau"],
@@ -20496,7 +20496,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaleur est à Chaud comme Froid est à _____",
@@ -20507,7 +20507,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Table", "Chaise", "Coussin"],
@@ -20517,7 +20517,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Lourd est à _____",
@@ -20527,7 +20527,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Théâtre", "Musée", "Roman"],
@@ -20537,7 +20537,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rose", "Tulipe", "Chêne"],
@@ -20546,7 +20546,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lundi", "Mardi", "Fête"],
@@ -20556,7 +20556,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Eau", "Vin"],
@@ -20566,7 +20566,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Table.",
     options: ["Rose", "Tulipe", "Table"],
@@ -20575,7 +20575,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Guitariste, Pianiste, Poésie.",
     options: ["Guitariste", "Pianiste", "Poésie"],
@@ -20585,7 +20585,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Livre.",
     options: ["Avion", "Train", "Livre"],
@@ -20595,7 +20595,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Mathématiques, Poème.",
     options: ["Philosophie", "Mathématiques", "Poème"],
@@ -20605,7 +20605,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Historien, Chimie, Biologie.",
     options: ["Historien", "Chimie", "Biologie"],
@@ -20615,7 +20615,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Voiture",
     options: ["Piano", "Guitare", "Voiture"],
@@ -20625,7 +20625,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Jardin est à _____",
     options: ["Fleur", "Plante", "Bâtiment"],
@@ -20634,7 +20634,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Film, Crayon",
     options: ["Livre", "Film", "Crayon"],
@@ -20644,7 +20644,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chèvre, Vache, Pomme",
     options: ["Chèvre", "Vache", "Pomme"],
@@ -20654,7 +20654,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Étoile",
     options: ["Rose", "Tulipe", "Étoile"],
@@ -20663,7 +20663,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Bibliothèque, Ordinateur",
     options: ["École", "Bibliothèque", "Ordinateur"],
@@ -20673,7 +20673,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Livre",
     options: ["Train", "Avion", "Livre"],
@@ -20682,7 +20682,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le train et l'avion sont des moyens de transport, le livre est un objet de lecture.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaud est à Froid comme Grand est à _____",
@@ -20693,7 +20693,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mars, Venus, Terre, Lune",
     options: ["Mars", "Venus", "Lune"],
@@ -20703,7 +20703,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ronde, Carrée, Rouge",
     options: ["Ronde", "Carrée", "Rouge"],
@@ -20713,7 +20713,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Sapin, Herbe, Bouleau",
     options: ["Chêne", "Sapin", "Herbe"],
@@ -20723,7 +20723,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Montagne, Vallée, Océan, Rivière",
     options: ["Montagne", "Vallée", "Océan"],
@@ -20733,7 +20733,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Table",
     options: ["Piano", "Guitare", "Table"],
@@ -20743,7 +20743,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Train est à Voyager comme Livre est à ?",
@@ -20754,7 +20754,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fusée", "Avion", "Bateau"],
@@ -20764,7 +20764,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lieu est à Situation comme Moment est à ?",
@@ -20775,7 +20775,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Hiver est à Froid comme Été est à ?",
@@ -20786,7 +20786,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Sage", "Fou", "Équilibré"],
@@ -20795,7 +20795,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Jour est à Nuit comme Été est à ____.",
@@ -20806,7 +20806,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Apprendre comme Hôpital est à ____.",
@@ -20817,7 +20817,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Journal, Stylo.",
     options: ["Livre", "Journal", "Stylo"],
@@ -20827,7 +20827,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Canapé, Lit, Voiture.",
     options: ["Chaise", "Table", "Voiture"],
@@ -20837,7 +20837,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chanteur est à Chanson comme Écrivain est à ____.",
@@ -20848,7 +20848,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Énergie est à Travail comme Force est à ____.",
@@ -20859,7 +20859,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Verbe, Adjectif, Nom, Phrase, Adverbe.",
     options: ["Phrase", "Nom", "Adverbe"],
@@ -20869,7 +20869,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Code est à Déchiffrer comme Enigme est à ____.",
@@ -20879,7 +20879,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Clé est à Serrure comme Mot de passe est à ____.",
@@ -20890,7 +20890,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Fleur", "Arbre", "Rivière"],
@@ -20900,7 +20900,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Savon"],
@@ -20910,7 +20910,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Banane, Brocoli",
     options: ["Pomme", "Orange", "Brocoli"],
@@ -20920,7 +20920,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Lac, Montagne, Rivière",
     options: ["Mer", "Montagne", "Lac"],
@@ -20930,7 +20930,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Vert, Ronde",
     options: ["Rouge", "Ronde", "Bleu"],
@@ -20940,7 +20940,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bibliothèque, Jardin",
     options: ["École", "Jardin", "Bibliothèque"],
@@ -20950,7 +20950,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme voiture est à _____",
     options: ["véhicule", "moto", "bicyclette"],
@@ -20960,7 +20960,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanteur, Pianiste, Écrivain, Peintre",
     options: ["Chanteur", "Écrivain", "Pianiste"],
@@ -20970,7 +20970,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus : Philosophie, Mathématiques, Histoire, Musique",
@@ -20981,7 +20981,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Noir, Blanc, Gris, Rouge",
     options: ["Noir", "Rouge", "Blanc"],
@@ -20991,7 +20991,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Écrit", "Oral", "Lecture"],
@@ -21001,7 +21001,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Guerre", "Paix", "Conflit"],
@@ -21010,7 +21010,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Énergie est à Électricité comme Eau est à _____",
@@ -21021,7 +21021,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Mélodie", "Harmonie", "Chanson"],
@@ -21031,7 +21031,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Bicyclettes", "Voitures", "Avions"],
@@ -21041,7 +21041,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Écriture", "Lecture", "Dessin"],
@@ -21051,7 +21051,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Feu est à Chaleur comme Glace est à _____",
@@ -21062,7 +21062,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chêne", "Sapin", "Ronce"],
@@ -21072,7 +21072,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pierre est à Roche comme Grain est à _____",
@@ -21083,7 +21083,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lait", "Fromage", "Yaourt"],
@@ -21093,7 +21093,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Bicyclette est à Cycliste comme Voiture est à _____",
@@ -21104,7 +21104,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poisson, Dauphin, Chien",
     options: ["Poisson", "Dauphin", "Chien"],
@@ -21114,7 +21114,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Clé est à _____",
     options: ["Cadenas", "Porte", "Fenêtre"],
@@ -21123,7 +21123,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Récit est à _____",
     options: ["Narration", "Histoire", "Roman"],
@@ -21132,7 +21132,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voleur, Policier, Avocat",
     options: ["Voleur", "Policier", "Avocat"],
@@ -21141,7 +21141,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le voleur est un criminel, les autres exercent des professions légales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiens comme Chat est à _____",
@@ -21152,7 +21152,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pêche est à Poisson comme Chasse est à _____",
@@ -21162,7 +21162,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Plante", "Vase"],
@@ -21172,7 +21172,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Couteau est à Couper comme Fourchette est à _____",
@@ -21183,7 +21183,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Cercle", "Triangle", "Règle"],
@@ -21193,7 +21193,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Table.",
     options: ["Chien", "Chat", "Table"],
@@ -21203,7 +21203,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Peinture est à _____.",
     options: ["Dessiner", "Écrire", "Lire"],
@@ -21212,7 +21212,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Réveil, Horloge, Chaise.",
     options: ["Réveil", "Horloge", "Chaise"],
@@ -21222,7 +21222,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rouge", "Bleu", "Chaud"],
@@ -21232,7 +21232,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Eau", "Sel"],
@@ -21242,7 +21242,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Tasse", "Verre", "Cuillère"],
@@ -21252,7 +21252,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Sombre est à Clair comme Nuit est à ?",
@@ -21263,7 +21263,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaud est à Froid comme Été est à ?",
@@ -21274,7 +21274,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Orange, Pomme, Carotte.",
     options: ["Orange", "Pomme", "Carotte"],
@@ -21284,7 +21284,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Pain est à Boulanger comme Vin est à ?",
@@ -21295,7 +21295,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Clé est à Serrure comme Code est à ?",
@@ -21306,7 +21306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Artisan est à Ouvrier comme Chef est à ?",
@@ -21317,7 +21317,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Physique, Art.",
     options: ["Philosophie", "Physique", "Art"],
@@ -21327,7 +21327,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Guitare, Piano, Violon, Peinture.",
     options: ["Guitare", "Piano", "Peinture"],
@@ -21337,7 +21337,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Stylo, Chaise.",
     options: ["Livre", "Stylo", "Chaise"],
@@ -21347,7 +21347,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Hôpital.",
     options: ["École", "Université", "Hôpital"],
@@ -21357,7 +21357,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciel, Mer, Montagne.",
     options: ["Ciel", "Mer", "Montagne"],
@@ -21367,7 +21367,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ordinateur, Téléphone, Chaussure.",
     options: ["Ordinateur", "Téléphone", "Chaussure"],
@@ -21377,7 +21377,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Cuisinier est à _____ :",
     options: ["Restaurant", "Repas", "Ingrédients"],
@@ -21387,7 +21387,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Voiture", "Bicyclette", "Chalet"],
@@ -21397,7 +21397,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fiction", "Réel", "Imagination"],
@@ -21407,7 +21407,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chiffre est à Nombre comme Lettre est à ?",
@@ -21418,7 +21418,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Plage comme Montagne est à ?",
@@ -21429,7 +21429,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanson est à Musique comme Poème est à ?",
@@ -21440,7 +21440,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sucre est à Doux comme Citron est à ?",
@@ -21450,7 +21450,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Nuit comme Soleil est à ?",
@@ -21461,7 +21461,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Clé est à Serrure comme Code est à ?",
@@ -21471,7 +21471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Peinture est à Art comme Science est à ?",
@@ -21482,7 +21482,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Langue est à Parole comme Écriture est à ?",
@@ -21493,7 +21493,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Hiver est à Froid comme Été est à ?",
@@ -21504,7 +21504,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Brosse est à _____",
@@ -21515,7 +21515,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Été", "Automne", "Mer"],
@@ -21525,7 +21525,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Étoile est à _____",
@@ -21536,7 +21536,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["École", "Université", "Livre"],
@@ -21546,7 +21546,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mouton est à Laine comme Vache est à _____",
@@ -21557,7 +21557,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Météo est à Prévision comme Trafic est à _____",
@@ -21567,7 +21567,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Cercle", "Carré", "Triangle"],
@@ -21577,7 +21577,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Langue est à Parole comme Chiffre est à _____",
@@ -21588,7 +21588,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Fleur", "Plante", "Papier"],
@@ -21597,7 +21597,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme Chat est à _____",
@@ -21608,7 +21608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["École", "Université", "Magasin"],
@@ -21618,7 +21618,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Tableau", "Livre", "Stylo"],
@@ -21628,7 +21628,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Musique est à Oreilles comme Odeur est à _____",
@@ -21639,7 +21639,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Étoile est à Ciel comme Poisson est à _____",
@@ -21650,7 +21650,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme jour est à ?",
     options: ["Nuit", "Semaine", "Matin"],
@@ -21659,7 +21659,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le jour et la nuit sont des opposés dans le cycle de 24 heures.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ecole, Université, Avion",
     options: ["Ecole", "Université", "Avion"],
@@ -21669,7 +21669,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Maître est à _____",
     options: ["Élève", "Savoir", "École"],
@@ -21679,7 +21679,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Paris, Londres, Aéroport",
     options: ["Paris", "Londres", "Aéroport"],
@@ -21689,7 +21689,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Chien", "Chat", "Souris"],
@@ -21699,7 +21699,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Eau est à Glace comme Vapeur est à _____",
@@ -21710,7 +21710,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lecture est à Livre comme Écriture est à _____",
@@ -21721,7 +21721,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Cercle", "Carré", "Triangle"],
@@ -21731,7 +21731,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Lac est à _____",
@@ -21742,7 +21742,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Vélo", "Train", "Avion"],
@@ -21752,7 +21752,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Sapin, Oiseau",
     options: ["Chêne", "Sapin", "Oiseau"],
@@ -21762,7 +21762,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sable, Pierre, Arbre",
     options: ["Sable", "Pierre", "Arbre"],
@@ -21772,7 +21772,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Livre",
     options: ["Rose", "Tulipe", "Livre"],
@@ -21782,7 +21782,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Tasse, Assiette, Chaise",
     options: ["Tasse", "Assiette", "Chaise"],
@@ -21792,7 +21792,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Artiste est à _____",
     options: ["Peinture", "Musique", "Création"],
@@ -21802,7 +21802,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Vent",
     options: ["Étoile", "Lune", "Vent"],
@@ -21812,7 +21812,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Marguerite, Chêne.",
     options: ["Rose", "Marguerite", "Chêne"],
@@ -21822,7 +21822,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciseaux, Colle, Pinceau.",
     options: ["Ciseaux", "Colle", "Pinceau"],
@@ -21832,7 +21832,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Nuage.",
     options: ["Étoile", "Lune", "Nuage"],
@@ -21842,7 +21842,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Piano est à _____.",
     options: ["Guitare", "Musique", "Violon"],
@@ -21851,7 +21851,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["École", "Université", "Livraison"],
@@ -21861,7 +21861,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Rose", "Tulipe", "Chêne"],
@@ -21871,7 +21871,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Tasse", "Assiette", "Tablette"],
@@ -21881,7 +21881,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Roue, Moteur, Avion",
     options: ["Roue", "Moteur", "Avion"],
@@ -21891,7 +21891,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Loup, Serpent",
     options: ["Chien", "Loup", "Serpent"],
@@ -21901,7 +21901,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Bateau",
     options: ["Avion", "Train", "Bateau"],
@@ -21911,7 +21911,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Vin",
     options: ["Lait", "Eau", "Vin"],
@@ -21921,7 +21921,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rond", "Carré", "Violet"],
@@ -21931,7 +21931,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Vert, Ciel",
     options: ["Rouge", "Vert", "Ciel"],
@@ -21941,7 +21941,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____",
     options: ["Journal", "Stylo", "Papier"],
@@ -21951,7 +21951,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Sapin, Table",
     options: ["Chêne", "Sapin", "Table"],
@@ -21961,7 +21961,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Guitare est à _____",
     options: ["Piano", "Batterie", "Flûte"],
@@ -21971,7 +21971,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Nickel, Cuivre, Plomb",
     options: ["Nickel", "Cuivre", "Plomb"],
@@ -21981,7 +21981,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Avion est à _____",
     options: ["Train", "Voiture", "Bateau"],
@@ -21991,7 +21991,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chanson est à _____",
     options: ["Poème", "Roman", "Essai"],
@@ -22001,7 +22001,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Casserole, Poêle, Fourchette",
     options: ["Casserole", "Poêle", "Fourchette"],
@@ -22011,7 +22011,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Chien", "Chat", "Voiture"],
@@ -22021,7 +22021,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Soleil", "Lune", "Bateau"],
@@ -22031,7 +22031,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Fleur", "Arbre", "Montagne"],
@@ -22041,7 +22041,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Chocolat", "Vanille", "Biscuit"],
@@ -22051,7 +22051,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Écriture", "Lecture", "Peinture"],
@@ -22061,7 +22061,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Chanson", "Film", "Livre"],
@@ -22071,7 +22071,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus dans la liste suivante ?",
     options: ["Matin", "Après-midi", "Nocturne"],
@@ -22081,7 +22081,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Cerise, Carotte.",
     options: ["Pêche", "Cerise", "Carotte"],
@@ -22091,7 +22091,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Oiseau, Poisson, Chat.",
     options: ["Oiseau", "Poisson", "Chat"],
@@ -22101,7 +22101,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Terre, Lune, Étoile.",
     options: ["Terre", "Lune", "Étoile"],
@@ -22110,7 +22110,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Lune et étoile sont des corps célestes, tandis que terre est une planète.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme créatif est à _____.",
     options: ["Innovant", "Banal", "Ordinaire"],
@@ -22119,7 +22119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme avant est à _____.",
     options: ["Après", "Précédent", "Suivant"],
@@ -22128,7 +22128,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme langue est à _____.",
     options: ["Parole", "Écriture", "Communication"],
@@ -22137,7 +22137,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme voiture est à _____.",
     options: ["Transport", "Route", "Conducteur"],
@@ -22146,7 +22146,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Somme est à ____.",
     options: ["Différence", "Produit", "Quotient"],
@@ -22156,7 +22156,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Mère est à ____.",
     options: ["Père", "Enfant", "Ami"],
@@ -22165,7 +22165,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Carotte, Brocoli, Poisson.",
     options: ["Carotte", "Brocoli", "Poisson"],
@@ -22175,7 +22175,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à ____.",
     options: ["Plage", "Fleuve", "Forêt"],
@@ -22185,7 +22185,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Avion est à ____.",
     options: ["Train", "Voiture", "Bateau"],
@@ -22194,7 +22194,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Film.",
     options: ["Chanson", "Poème", "Film"],
@@ -22204,7 +22204,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Sombre est à Lumière comme Froid est à _____",
@@ -22215,7 +22215,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écriture est à Livre comme Musique est à _____",
@@ -22226,7 +22226,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artisan est à Ouvrier comme Professeur est à _____",
@@ -22237,7 +22237,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Animal comme École est à _____",
@@ -22248,7 +22248,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Pinceau"],
@@ -22258,7 +22258,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Frigo"],
@@ -22268,7 +22268,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Cercle", "Triangle", "Cube"],
@@ -22278,7 +22278,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprentissage comme Maison est à _____",
@@ -22289,7 +22289,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mouton est à Laine comme Serpent est à _____",
@@ -22299,7 +22299,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Boule", "Cube", "Cône"],
@@ -22309,7 +22309,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chef est à Cuisine comme Médecin est à _____",
@@ -22320,7 +22320,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Neige est à Froid comme Feu est à _____",
@@ -22331,7 +22331,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Chocolat", "Vanille", "Menthe"],
@@ -22341,7 +22341,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Stylo", "Crayon", "Papier"],
@@ -22351,7 +22351,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Spoon"],
@@ -22361,7 +22361,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pêche est à Mer comme Pomme est à _____",
@@ -22372,7 +22372,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Bureau", "Chaise", "Tablette"],
@@ -22382,7 +22382,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme École est à _____",
     options: ["Professeur", "Élève", "Livre"],
@@ -22392,7 +22392,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Crayon, Stylo, Papier",
     options: ["Crayon", "Stylo", "Table"],
@@ -22402,7 +22402,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ciel est à _____",
     options: ["Soleil", "Lune", "Étoile"],
@@ -22412,7 +22412,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Dentiste, Médecin, Poisson",
     options: ["Dentiste", "Médecin", "Poisson"],
@@ -22422,7 +22422,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Autre",
     options: ["École", "Université", "Autre"],
@@ -22432,7 +22432,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Arbre",
     options: ["Chien", "Chat", "Arbre"],
@@ -22442,7 +22442,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Feu est à _____",
     options: ["Cendre", "Eau", "Fumée"],
@@ -22451,7 +22451,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à _____",
     options: ["Vallee", "Rivière", "Plage"],
@@ -22460,7 +22460,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Salé, Sucré, Chaud",
     options: ["Salé", "Sucré", "Chaud"],
@@ -22470,7 +22470,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Animal comme Chat est à ____.",
@@ -22480,7 +22480,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaud est à Froid comme Sec est à ____.",
@@ -22491,7 +22491,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Aigle est à Oiseau comme Requin est à ____.",
@@ -22501,7 +22501,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Étoile.",
     options: ["Piano", "Guitare", "Étoile"],
@@ -22511,7 +22511,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Lien est à Relation comme Clé est à ____.",
@@ -22522,7 +22522,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Informatique, Mathématiques, Musique.",
     options: ["Informatique", "Mathématiques", "Musique"],
@@ -22532,7 +22532,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Avion est à Voler comme Bateau est à ____.",
@@ -22543,7 +22543,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Serpent.",
     options: ["Chat", "Chien", "Serpent"],
@@ -22553,7 +22553,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Été est à Chaud comme Hiver est à ____.",
@@ -22564,7 +22564,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Miel", "Sucre", "Sel"],
@@ -22574,7 +22574,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Clé", "Serrure", "Fenêtre"],
@@ -22584,7 +22584,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Rose", "Tulipe", "Bouteille"],
@@ -22593,7 +22593,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La rose et la tulipe sont des fleurs, tandis que la bouteille est un objet.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, Rose.",
     options: ["Chêne", "Pin", "Rose"],
@@ -22603,7 +22603,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Vélo, Avion.",
     options: ["Voiture", "Vélo", "Avion"],
@@ -22613,7 +22613,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chien d'aveugle comme Chat est à _____",
@@ -22624,7 +22624,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Racine"],
@@ -22634,7 +22634,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Aigle est à oiseau comme requin est à _____",
     options: ["poisson", "mammifère", "reptile"],
@@ -22644,7 +22644,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Chaleur est à froid comme jour est à _____",
     options: ["nuit", "matin", "soir"],
@@ -22654,7 +22654,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Arbre est à forêt comme poisson est à _____",
     options: ["océan", "lac", "rivière"],
@@ -22664,7 +22664,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Cercle est à rond comme carré est à _____",
     options: ["plat", "rectangle", "carré"],
@@ -22674,7 +22674,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Eau est à liquide comme glace est à _____",
     options: ["solide", "air", "vapeur"],
@@ -22684,7 +22684,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Lumière est à obscurité comme chaleur est à _____",
     options: ["froid", "température", "énergie"],
@@ -22694,7 +22694,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Réunion",
     options: ["École", "Université", "Réunion"],
@@ -22704,7 +22704,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Pluie est à mouiller comme soleil est à _____",
     options: ["brûler", "éclaircir", "réchauffer"],
@@ -22713,7 +22713,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Lundi", "Mardi", "Janvier"],
@@ -22723,7 +22723,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Professeur est à Élève comme Conducteur est à _____",
@@ -22734,7 +22734,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Maire est à Ville comme Président est à _____",
@@ -22745,7 +22745,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Éléphant", "Tigre", "Rose"],
@@ -22755,7 +22755,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lait", "Jus", "Viande"],
@@ -22765,7 +22765,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fleur", "Arbre", "Pierre"],
@@ -22775,7 +22775,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Bâton est à Frapper comme Plume est à _____.",
@@ -22785,7 +22785,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lumière est à Obscurité comme Savoir est à _____.",
@@ -22796,7 +22796,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienne comme Roi est à ____.",
@@ -22807,7 +22807,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Ordinateur.",
     options: ["Chaise", "Table", "Ordinateur"],
@@ -22817,7 +22817,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Tranquille est à Bruyant comme Calme est à ____.",
@@ -22828,7 +22828,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Élève comme Hôpital est à ____.",
@@ -22839,7 +22839,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Soleil.",
     options: ["Étoile", "Lune", "Soleil"],
@@ -22849,7 +22849,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Boulanger est à Pain comme Boucher est à ____.",
@@ -22860,7 +22860,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chanteur est à Chanson comme Artiste est à ____.",
@@ -22871,7 +22871,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Tennis, Natation.",
     options: ["Pêche", "Tennis", "Natation"],
@@ -22881,7 +22881,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Jour est à Nuit comme Été est à ?",
@@ -22892,7 +22892,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chaise est à Table comme Lit est à ?",
@@ -22903,7 +22903,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Écrire est à Stylo comme Lire est à ?",
@@ -22914,7 +22914,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciseaux, Colle, Règle.",
     options: ["Ciseaux", "Colle", "Règle"],
@@ -22924,7 +22924,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Nourriture est à Manger comme Boisson est à ?",
@@ -22935,7 +22935,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon.",
     options: ["Piano", "Guitare", "Chaise"],
@@ -22945,7 +22945,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienneté comme Chat est à ?",
@@ -22956,7 +22956,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mer est à Océan comme Rivière est à ?",
@@ -22967,7 +22967,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Enseignant est à Élève comme Médecin est à ?",
@@ -22978,7 +22978,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Trousseau est à Clé comme Équipe est à ?",
@@ -22989,7 +22989,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Chaud : Froid, Éclair : ?)",
     options: ["Orage", "Lumière", "Nuage"],
@@ -22999,7 +22999,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Père : Mère, Frère : ?)",
     options: ["Sœur", "Ami", "Cousin"],
@@ -23009,7 +23009,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Livre", "Revue", "Bibliothèque"],
@@ -23019,7 +23019,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Chien : Animal, Rose : ?)",
     options: ["Fleur", "Plante", "Arbre"],
@@ -23029,7 +23029,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Jupe : Pantalon, Chemise : ?)",
     options: ["Veste", "Chapeau", "Ceinture"],
@@ -23038,7 +23038,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Écrire : Stylo, Peindre : ?)",
     options: ["Pinceau", "Papier", "Couleur"],
@@ -23048,7 +23048,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Mer : Océan, Rivière : ?)",
     options: ["Lac", "Fleuve", "Étang"],
@@ -23058,7 +23058,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Clé : Serrure, Code : ?)",
     options: ["Sécurité", "Chiffre", "Cadenas"],
@@ -23068,7 +23068,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Automobile", "Avion", "Bateau"],
@@ -23078,7 +23078,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["J", "K", "L"],
@@ -23088,7 +23088,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Saxophone"],
@@ -23098,7 +23098,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Tigre", "Lion", "Serpent"],
@@ -23107,7 +23107,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le serpent est un reptile, tandis que le tigre et le lion sont des mammifères.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Chiffon.",
     options: ["Rouge", "Bleu", "Chiffon"],
@@ -23117,7 +23117,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Étoile.",
     options: ["Train", "Avion", "Étoile"],
@@ -23127,7 +23127,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____.",
     options: ["Abeille", "Oiseau", "Baleine"],
@@ -23136,7 +23136,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Couteau, Fourchette, Éponge.",
     options: ["Couteau", "Fourchette", "Éponge"],
@@ -23146,7 +23146,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Soupe.",
     options: ["Lait", "Eau", "Soupe"],
@@ -23156,7 +23156,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Bureau, Lune.",
     options: ["École", "Bureau", "Lune"],
@@ -23166,7 +23166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sol, Mur, Nuage.",
     options: ["Sol", "Mur", "Nuage"],
@@ -23176,7 +23176,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Hamster",
     options: ["Chien", "Chat", "Loup"],
@@ -23186,7 +23186,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Lit, Casserole",
     options: ["Table", "Chaise", "Casserole"],
@@ -23195,7 +23195,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Plage comme Montagne est à _____",
@@ -23206,7 +23206,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Tablette",
     options: ["Piano", "Guitare", "Tablette"],
@@ -23216,7 +23216,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Route est à Voiture comme Rail est à _____",
@@ -23227,7 +23227,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Table, Roman",
     options: ["Chanson", "Poème", "Table"],
@@ -23237,7 +23237,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Comète, Nuage",
     options: ["Étoile", "Planète", "Nuage"],
@@ -23247,7 +23247,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Printemps, Chaise",
     options: ["Hiver", "Printemps", "Chaise"],
@@ -23257,7 +23257,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme vélo est à _____",
     options: ["route", "conducteur", "véhicule"],
@@ -23267,7 +23267,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme chêne est à _____",
     options: ["arbre", "feuille", "forêt"],
@@ -23277,7 +23277,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme océan est à _____",
     options: ["rivière", "plage", "lac"],
@@ -23287,7 +23287,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ordinateur, Tablette, Sphère",
     options: ["Ordinateur", "Tablette", "Sphère"],
@@ -23297,7 +23297,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Sombre est à _____",
@@ -23308,7 +23308,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Océan est à _____",
@@ -23319,7 +23319,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mains sont à Doigts comme Pieds sont à _____",
@@ -23330,7 +23330,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Livre comme Architecte est à _____",
@@ -23341,7 +23341,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Piano est à Musique comme Crayon est à _____",
@@ -23352,7 +23352,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme soleil est à ____ ?",
     options: ["lune", "nuage", "étoile"],
@@ -23361,7 +23361,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme hiver est à ____ ?",
     options: ["été", "printemps", "automne"],
@@ -23370,7 +23370,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ronde est à _____",
     options: ["Carré", "Triangle", "Rectangulaire"],
@@ -23379,7 +23379,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Journal, Montre",
     options: ["Livre", "Journal", "Montre"],
@@ -23389,7 +23389,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Ciel, Terre, Étoile",
     options: ["Ciel", "Terre", "Étoile"],
@@ -23399,7 +23399,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pique, Carreau, Cerf",
     options: ["Pique", "Carreau", "Cerf"],
@@ -23409,7 +23409,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaleur est à _____",
     options: ["Froideur", "Température", "Énergie"],
@@ -23419,7 +23419,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme eau est à _____",
     options: ["Feu", "Glace", "Vapeur"],
@@ -23429,7 +23429,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chat", "Chien", "Furet"],
@@ -23439,7 +23439,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Docteur est à _____",
     options: ["Infirmier", "Patient", "Hôpital"],
@@ -23449,7 +23449,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Musique est à _____",
     options: ["Chanson", "Danse", "Son"],
@@ -23458,7 +23458,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaussure, Chapeau, Crayon",
     options: ["Chaussure", "Chapeau", "Crayon"],
@@ -23468,7 +23468,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Arbre.",
     options: ["Chêne", "Bouleau", "Arbre"],
@@ -23478,7 +23478,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Bicyclette est à cycliste comme voiture est à _____.",
     options: ["conducteur", "route", "mécanicien"],
@@ -23488,7 +23488,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Canapé, Étagère.",
     options: ["Chaise", "Table", "Étagère"],
@@ -23498,7 +23498,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : A, B, C, D, 1.",
     options: ["A", "B", "1"],
@@ -23508,7 +23508,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Pain est à boulanger comme vin est à _____.",
     options: ["vigneron", "distillateur", "fermier"],
@@ -23517,7 +23517,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Printemps, Été, Montagne.",
     options: ["Hiver", "Printemps", "Montagne"],
@@ -23527,7 +23527,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Lune est à satellite comme Terre est à _____.",
     options: ["planète", "étoile", "comète"],
@@ -23537,7 +23537,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Violon, Guitare, Orchestre.",
     options: ["Piano", "Orchestre", "Violon"],
@@ -23547,7 +23547,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Chocolat est à sucré comme citron est à _____.",
     options: ["acide", "amer", "salé"],
@@ -23557,7 +23557,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Feuille, Racine, Tronc, Fleur.",
     options: ["Racine", "Tronc", "Fleur"],
@@ -23567,7 +23567,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Oiseau est à _____.",
     options: ["Aile", "Nid", "Voler"],
@@ -23577,7 +23577,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Érable, Aigle.",
     options: ["Chêne", "Érable", "Aigle"],
@@ -23587,7 +23587,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Triangle, Cercle, Cube.",
     options: ["Triangle", "Cercle", "Cube"],
@@ -23597,7 +23597,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Argent, Or, École.",
     options: ["Argent", "Or", "École"],
@@ -23606,7 +23606,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "L'école est un lieu d'apprentissage, tandis que l'argent et l'or sont des métaux précieux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chiennet comme Chat est à _____.",
@@ -23617,7 +23617,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lait", "Eau", "Vin"],
@@ -23627,7 +23627,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Éléphant", "Tigre", "Chien"],
@@ -23637,7 +23637,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Guitare est à Musique comme Pinceau est à _____.",
@@ -23648,7 +23648,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Balle", "Raquette", "Filet"],
@@ -23658,7 +23658,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Sel"],
@@ -23668,7 +23668,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Roue, Moteur, Écran",
     options: ["Roue", "Moteur", "Écran"],
@@ -23678,7 +23678,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Pain, Chocolat",
     options: ["Lait", "Pain", "Chocolat"],
@@ -23688,7 +23688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lecture, Écriture, Dessin",
     options: ["Lecture", "Écriture", "Dessin"],
@@ -23698,7 +23698,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Mathématiques, Musique",
     options: ["Philosophie", "Mathématiques", "Musique"],
@@ -23708,7 +23708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Avion, Lune",
     options: ["Voiture", "Avion", "Lune"],
@@ -23718,7 +23718,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Pomme", "Fraise", "Fruits"],
@@ -23728,7 +23728,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Eau", "Banane"],
@@ -23738,7 +23738,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Tablette"],
@@ -23748,7 +23748,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rouge", "Bleu", "Poire"],
@@ -23758,7 +23758,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Chien", "Animal", "Félin"],
@@ -23768,7 +23768,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Rond", "Carré", "Bleu"],
@@ -23778,7 +23778,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Étoile", "Galaxie", "Univers"],
@@ -23788,7 +23788,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Chocolat", "Vanille", "Chips"],
@@ -23798,7 +23798,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Chanson", "Musique", "Danse"],
@@ -23808,7 +23808,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Fleur", "Arbre", "Racine"],
@@ -23818,7 +23818,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Canapé, Voiture",
     options: ["Table", "Chaise", "Voiture"],
@@ -23828,7 +23828,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fer, Acier, Bois, Aluminium",
     options: ["Fer", "Bois", "Aluminium"],
@@ -23838,7 +23838,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bibliothèque, Bureau",
     options: ["École", "Bureau", "Bibliothèque"],
@@ -23848,7 +23848,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Souris, Lézard",
     options: ["Souris", "Chien", "Lézard"],
@@ -23858,7 +23858,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon, Livre",
     options: ["Livre", "Guitare", "Violon"],
@@ -23868,7 +23868,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Poire, Fraise, Orange",
     options: ["Pêche", "Orange", "Poire"],
@@ -23878,7 +23878,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Fromage, Pain, Beurre",
     options: ["Pain", "Lait", "Fromage"],
@@ -23888,7 +23888,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Lait", "Eau", "Bière"],
@@ -23898,7 +23898,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Chaud", "Froid", "Tiède"],
@@ -23908,7 +23908,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Ciel", "Nuage", "Pluie"],
@@ -23918,7 +23918,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Professeur", "Élève"],
@@ -23928,7 +23928,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Voiture", "Bicyclette", "Marche"],
@@ -23938,7 +23938,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les outils suivants :",
     options: ["Marteau", "Tournevis", "Éponge"],
@@ -23948,7 +23948,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les fruits suivants :",
     options: ["Pomme", "Banane", "Carotte"],
@@ -23958,7 +23958,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les couleurs suivantes :",
     options: ["Rouge", "Vert", "Cercle"],
@@ -23968,7 +23968,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les moyens de transport suivants :",
     options: ["Voiture", "Bateau", "Table"],
@@ -23978,7 +23978,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les animaux suivants :",
     options: ["Lion", "Tigre", "Fleur"],
@@ -23988,7 +23988,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les formes géométriques suivantes :",
     options: ["Carré", "Triangle", "Chanson"],
@@ -23998,7 +23998,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les instruments de musique suivants :",
     options: ["Guitare", "Piano", "Bouteille"],
@@ -24008,7 +24008,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["École", "Université", "Bibliothèque"],
@@ -24018,7 +24018,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme chaud est à ?",
     options: ["Froid", "Tiède", "Bouillant"],
@@ -24028,7 +24028,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme livre est à ?",
     options: ["Lecture", "Écriture", "Papier"],
@@ -24038,7 +24038,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Cercle", "Carré", "Triangle"],
@@ -24048,7 +24048,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme fleur est à ?",
     options: ["Jardin", "Plante", "Fruit"],
@@ -24058,7 +24058,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme hiver est à ?",
     options: ["Printemps", "Été", "Automne"],
@@ -24067,7 +24067,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme étoile est à ?",
     options: ["Planète", "Galaxie", "Univers"],
@@ -24077,7 +24077,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme élève est à ?",
     options: ["Professeur", "École", "Classe"],
@@ -24087,7 +24087,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les mots suivants, lequel est l'intrus ?",
     options: ["Poisson", "Oiseau", "Mammifère"],
@@ -24097,7 +24097,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme ordinateur est à ?",
     options: ["Logiciel", "Clavier", "Écran"],
@@ -24106,7 +24106,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Un ordinateur fonctionne avec un logiciel, tout comme A est lié à B.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Lune", "Soleil", "Étoile"],
@@ -24116,7 +24116,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Poisson", "Oiseau", "Chien"],
@@ -24126,7 +24126,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Rouge", "Vert", "Chocolat"],
@@ -24135,7 +24135,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Chauffage", "Climatisation", "Ventilation"],
@@ -24145,7 +24145,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Ami", "Ennemi", "Connaissance"],
@@ -24155,7 +24155,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ?",
     options: ["Ami", "Rival", "Camarade"],
@@ -24165,7 +24165,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Piano", "Guitare", "Papier"],
@@ -24175,7 +24175,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Chien comme Souris est à _____",
@@ -24186,7 +24186,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Moto, Bateau",
     options: ["Voiture", "Moto", "Bateau"],
@@ -24196,7 +24196,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Livre est à _____ : Page est à Chapitre comme Livre est à _____",
@@ -24207,7 +24207,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Été, Printemps, Neige",
     options: ["Été", "Printemps", "Neige"],
@@ -24217,7 +24217,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Chien est à _____ : Chien est à Animal comme Chat est à _____",
@@ -24227,7 +24227,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Jour est à _____ : Jour est à Nuit comme Semaine est à _____",
@@ -24238,7 +24238,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Salade, Tomate, Pêche",
     options: ["Salade", "Tomate", "Pêche"],
@@ -24248,7 +24248,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Mer est à _____ : Mer est à Océan comme Rivière est à _____",
@@ -24259,7 +24259,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Ciel est à _____ : Ciel est à Étoile comme Mer est à _____",
@@ -24270,7 +24270,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Chêne est à _____ : Chêne est à Arbre comme Rose est à _____",
@@ -24280,7 +24280,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Montagne est à _____ : Montagne est à Sommet comme Vallée est à _____",
@@ -24290,7 +24290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Avion, Train",
     options: ["Bicyclette", "Avion", "Train"],
@@ -24300,7 +24300,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme Clé est à _____ : Clé est à Serrure comme Code est à _____",
@@ -24311,7 +24311,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Boutique",
     options: ["École", "Université", "Boutique"],
@@ -24321,7 +24321,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pinceau, Palette, Document",
     options: ["Pinceau", "Palette", "Document"],
@@ -24331,7 +24331,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Écran",
     options: ["Piano", "Guitare", "Écran"],
@@ -24341,7 +24341,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Train est à _____",
     options: ["Voiture", "Métro", "Aéroport"],
@@ -24351,7 +24351,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Jour est à Nuit comme Semaine est à ?",
@@ -24362,7 +24362,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mer est à Océan comme Lac est à ?",
@@ -24373,7 +24373,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mère est à Fils comme Père est à ?",
@@ -24384,7 +24384,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Apprendre comme Bibliothèque est à ?",
@@ -24395,7 +24395,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Chanson.",
     options: ["École", "Université", "Chanson"],
@@ -24404,7 +24404,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à _____.",
     options: ["Écrit", "Papier", "Bibliothèque"],
@@ -24413,7 +24413,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Soleil, Lune, Étoile.",
     options: ["Soleil", "Lune", "Étoile"],
@@ -24422,7 +24422,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pinceau, Crayon, Ordinateur.",
     options: ["Pinceau", "Crayon", "Ordinateur"],
@@ -24431,7 +24431,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chemise, Pantalon, Chaussure.",
     options: ["Chemise", "Pantalon", "Chaussure"],
@@ -24441,7 +24441,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Employé est à _____",
     options: ["Travailleur", "Bureau", "Employeur"],
@@ -24451,7 +24451,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Éclair, Pluie, Soleil",
     options: ["Éclair", "Pluie", "Soleil"],
@@ -24461,7 +24461,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Pêche est à _____",
     options: ["Fruits", "Légumes", "Céréales"],
@@ -24471,7 +24471,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme École est à _____",
@@ -24482,7 +24482,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fiction", "Réalité", "Roman"],
@@ -24492,7 +24492,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chanteur est à Chanson comme Danseur est à _____",
@@ -24503,7 +24503,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Médecin est à Santé comme Ingénieur est à _____",
@@ -24514,7 +24514,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Soleil", "Lune", "Éclipse"],
@@ -24524,7 +24524,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chanson", "Melodie", "Littérature"],
@@ -24534,7 +24534,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lundi est à Semaine comme Janvier est à _____",
@@ -24545,7 +24545,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chien est à Chienneté comme Chat est à _____",
@@ -24556,7 +24556,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Abeille", "Moustique", "Papillon"],
@@ -24566,7 +24566,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Eau est à Boisson comme Pain est à _____",
@@ -24576,7 +24576,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : École est à Étude comme Gymnase est à _____",
@@ -24587,7 +24587,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Piano", "Guitare", "Symphonie"],
@@ -24597,7 +24597,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Écrivain est à Roman comme Artiste est à _____",
@@ -24608,7 +24608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Loup est à Meute comme Oiseau est à _____",
@@ -24618,7 +24618,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le vol est le terme utilisé pour désigner un groupe d'oiseaux, tout comme la meute pour les loups.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Lit.",
     options: ["Table", "Chaise", "Lit"],
@@ -24628,7 +24628,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Stylo, Crayon, Livre.",
     options: ["Stylo", "Crayon", "Livre"],
@@ -24638,7 +24638,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Or est à _____",
     options: ["Argent", "Platine", "Cuivre"],
@@ -24647,7 +24647,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Trèfle, Pique, Cœur.",
     options: ["Trèfle", "Pique", "Cœur"],
@@ -24657,7 +24657,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Temps est à _____",
     options: ["Horloge", "Calendrier", "Saison"],
@@ -24667,7 +24667,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pommes", "Bananes", "Carottes"],
@@ -24677,7 +24677,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Neige est à Hiver comme Fleurs sont à _____",
@@ -24688,7 +24688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Fruits", "Légumes", "Viande"],
@@ -24698,7 +24698,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Cercle", "Rectangle", "Cylindre"],
@@ -24708,7 +24708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Roi", "Reine", "Château"],
@@ -24718,7 +24718,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Piano", "Violon", "Basketball"],
@@ -24728,7 +24728,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lait", "Eau", "Soda"],
@@ -24738,7 +24738,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Samedi",
     options: ["Lundi", "Mardi", "Janvier"],
@@ -24748,7 +24748,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Asie, Europe, Canard",
     options: ["Asie", "Europe", "Canard"],
@@ -24758,7 +24758,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Crayon, Feutre, Papillon",
     options: ["Crayon", "Feutre", "Papillon"],
@@ -24768,7 +24768,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Poisson",
     options: ["Chat", "Chien", "Oiseau"],
@@ -24778,7 +24778,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lait, Eau, Boulanger",
     options: ["Lait", "Eau", "Boulanger"],
@@ -24788,7 +24788,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Pomme",
     options: ["Rose", "Tulipe", "Pomme"],
@@ -24798,7 +24798,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Montagne, Voiture",
     options: ["Mer", "Montagne", "Voiture"],
@@ -24808,7 +24808,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bateau, Avion, Train",
     options: ["Bateau", "Avion", "Train"],
@@ -24818,7 +24818,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Livre",
     options: ["Piano", "Guitare", "Livre"],
@@ -24828,7 +24828,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chocolat, Vanille, Salé",
     options: ["Chocolat", "Vanille", "Salé"],
@@ -24838,7 +24838,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Livre est à B : Lecture comme C : Film est à _____ ?",
     options: ["Visionnage", "Écriture", "Scénario"],
@@ -24848,7 +24848,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Chaleur est à froid comme B : Lumière est à _____ ?",
     options: ["obscurité", "clarté", "éclat"],
@@ -24858,7 +24858,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Thé, Café, Pain.",
     options: ["Thé", "Café", "Pain"],
@@ -24868,7 +24868,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Chaise est à table comme lit est à _____ ?",
     options: ["matelas", "chambre", "dormir"],
@@ -24878,7 +24878,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Chien est à aboyer comme chat est à _____ ?",
     options: ["miauler", "courir", "manger"],
@@ -24888,7 +24888,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Frère, Sœur, Oncle.",
     options: ["Frère", "Sœur", "Oncle"],
@@ -24898,7 +24898,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Pêche est à arbre comme carotte est à _____ ?",
     options: ["plante", "sol", "légume"],
@@ -24908,7 +24908,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Piano est à musique comme pinceau est à _____ ?",
     options: ["peinture", "art", "dessin"],
@@ -24918,7 +24918,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A : Lune est à nuit comme soleil est à _____ ?",
     options: ["jour", "étoiles", "ciel"],
@@ -24928,7 +24928,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Aigle est à _____.",
     options: ["Oiseau", "Poisson", "Reptile"],
@@ -24938,7 +24938,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Sable, Pierre, Eau.",
     options: ["Sable", "Pierre", "Eau"],
@@ -24948,7 +24948,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Miel est à _____.",
     options: ["Sucre", "Fleur", "Cire"],
@@ -24958,7 +24958,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Piano est à _____.",
     options: ["Instrument", "Guitare", "Violoncelle"],
@@ -24968,7 +24968,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Roue est à voiture comme aile est à _____ ?",
     options: ["avion", "bateau", "train"],
@@ -24978,7 +24978,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Orchidée.",
     options: ["Chêne", "Bouleau", "Orchidée"],
@@ -24987,7 +24987,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Chaud est à froid comme jour est à _____ ?",
     options: ["nuit", "matin", "soir"],
@@ -24997,7 +24997,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mercure, Vénus, Jupiter.",
     options: ["Mercure", "Vénus", "Jupiter"],
@@ -25007,7 +25007,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Tigre est à félin comme perroquet est à _____ ?",
     options: ["oiseau", "animal", "reptile"],
@@ -25017,7 +25017,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Étoile est à ciel comme poisson est à _____ ?",
     options: ["eau", "terre", "air"],
@@ -25026,7 +25026,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Soleil est à lumière comme lune est à _____ ?",
     options: ["nuit", "étoiles", "sombre"],
@@ -25036,7 +25036,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bicyclette, Voiture, Avion.",
     options: ["Bicyclette", "Voiture", "Avion"],
@@ -25046,7 +25046,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Lune est à Terre comme Soleil est à _____",
@@ -25057,7 +25057,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Vitesse est à Temps comme Distance est à _____",
@@ -25068,7 +25068,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Savoir est à Apprentissage comme Compétence est à _____",
@@ -25079,7 +25079,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Médecin", "Ingénieur", "Écrivain"],
@@ -25089,7 +25089,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ordinateur est à Technologie comme Livre est à _____",
@@ -25100,7 +25100,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Chat", "Chien", "Poisson"],
@@ -25110,7 +25110,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus ?",
     options: ["Chocolat", "Vanille", "Fraise"],
@@ -25119,7 +25119,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le chocolat et la vanille sont des saveurs, tandis que la fraise est un fruit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Fleur est à _____",
     options: ["Arbre", "Herbe", "Boue"],
@@ -25129,7 +25129,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Poisson est à _____",
     options: ["Amphibien", "Reptile", "Mammifère"],
@@ -25138,7 +25138,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Paris, Londres, Mer",
     options: ["Paris", "Londres", "Mer"],
@@ -25148,7 +25148,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Ciel est à _____",
     options: ["Terre", "Espace", "Nuages"],
@@ -25157,7 +25157,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Poésie",
     options: ["École", "Université", "Poésie"],
@@ -25167,7 +25167,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Violon",
     options: ["Piano", "Guitare", "Arbre"],
@@ -25177,7 +25177,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Avion est à Vol comme Train est à _____",
@@ -25188,7 +25188,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Violon, Accordéon",
     options: ["Piano", "Violoncelle", "Accordéon"],
@@ -25198,7 +25198,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rose, Tulipe, Érable",
     options: ["Rose", "Tulipe", "Érable"],
@@ -25208,7 +25208,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mars, Jupiter, Lune",
     options: ["Mars", "Jupiter", "Lune"],
@@ -25218,7 +25218,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Couteau, Fourchette, Assiette",
     options: ["Couteau", "Fourchette", "Assiette"],
@@ -25228,7 +25228,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Écriture, Lecture, Parole",
     options: ["Écriture", "Lecture", "Parole"],
@@ -25238,7 +25238,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Vallée comme Océan est à _____",
@@ -25249,7 +25249,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaleur est à Froid comme Lumière est à _____",
@@ -25260,7 +25260,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Banane, Carotte",
     options: ["Pomme", "Orange", "Carotte"],
@@ -25270,7 +25270,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lune, Étoile, Soleil, Nuage",
     options: ["Lune", "Soleil", "Nuage"],
@@ -25280,7 +25280,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, Bouleau, Rose",
     options: ["Chêne", "Pin", "Rose"],
@@ -25290,7 +25290,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mars, Jupiter, Terre, Comète",
     options: ["Mars", "Jupiter", "Comète"],
@@ -25299,7 +25299,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Faucon, Canard, Vautour",
     options: ["Aigle", "Faucon", "Canard"],
@@ -25309,7 +25309,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Violon, Flûte, Guitare",
     options: ["Piano", "Flûte", "Guitare"],
@@ -25319,7 +25319,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Montagne est à Vallée comme Désert est à _____",
@@ -25330,7 +25330,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Bibliothèque, Lycée",
     options: ["École", "Bibliothèque", "Université"],
@@ -25340,7 +25340,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Fer, Cuivre, Tissu.",
     options: ["Fer", "Cuivre", "Tissu"],
@@ -25350,7 +25350,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Thé, Café, Gâteau.",
     options: ["Thé", "Café", "Gâteau"],
@@ -25360,7 +25360,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Pluie est à Arc-en-ciel comme Neige est à _____",
@@ -25371,7 +25371,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Ordinateur est à Logiciel comme Voiture est à _____",
@@ -25382,7 +25382,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Artiste est à Peinture comme Musicien est à _____",
@@ -25393,7 +25393,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Lune, Planète.",
     options: ["Étoile", "Lune", "Planète"],
@@ -25403,7 +25403,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Banane",
     options: ["Chien", "Chat", "Banane"],
@@ -25412,7 +25412,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lecture, Écriture, Peinture",
     options: ["Lecture", "Écriture", "Peinture"],
@@ -25421,7 +25421,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Écran",
     options: ["Chaise", "Table", "Écran"],
@@ -25430,7 +25430,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Fruit est à _____",
     options: ["Légume", "Fleur", "Arbre"],
@@ -25439,7 +25439,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Moto, Avion",
     options: ["Voiture", "Moto", "Avion"],
@@ -25448,7 +25448,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Mathématiques, Cuisine",
     options: ["Philosophie", "Mathématiques", "Cuisine"],
@@ -25457,7 +25457,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Souris comme Chien est à _____",
@@ -25468,7 +25468,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Épée, Bouclier, Casque, Boussole",
     options: ["Épée", "Bouclier", "Boussole"],
@@ -25478,7 +25478,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Arbre est à Forêt comme Poisson est à _____",
@@ -25489,7 +25489,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Noir, Blanc, Rouge",
     options: ["Noir", "Blanc", "Rouge"],
@@ -25499,7 +25499,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Philosophie, Mathématiques, Peinture",
     options: ["Philosophie", "Mathématiques", "Peinture"],
@@ -25509,7 +25509,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Train est à Rail comme Avion est à _____",
@@ -25520,7 +25520,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Moineau, Poisson",
     options: ["Aigle", "Moineau", "Poisson"],
@@ -25530,7 +25530,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : élève est à classe comme professeur est à ?",
@@ -25541,7 +25541,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : marteau est à clou comme tournevis est à ?",
@@ -25552,7 +25552,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : chat est à miaulement comme chien est à ?",
@@ -25562,7 +25562,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lundi", "Mardi", "Noël"],
@@ -25572,7 +25572,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : fleur est à jardin comme poisson est à ?",
@@ -25583,7 +25583,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : peinture est à artiste comme musique est à ?",
@@ -25594,7 +25594,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : écrivain est à livre comme sculpteur est à ?",
@@ -25605,7 +25605,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : ordinateur est à logiciel comme voiture est à ?",
@@ -25616,7 +25616,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chat est à Souris comme Chien est à _____",
@@ -25626,7 +25626,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le chien chasse la souris, tout comme le chat chasse la souris.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Piano est à Musique comme Crayon est à _____ ?",
     options: ["Dessin", "Écriture", "Papier"],
@@ -25636,7 +25636,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Orange", "Poire", "École"],
@@ -25646,7 +25646,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Chien est à Aboyer comme Chat est à _____ ?",
     options: ["Miaulement", "Jouer", "Dormir"],
@@ -25655,7 +25655,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Pluie est à Arc-en-ciel comme Neige est à _____ ?",
     options: ["Flocon", "Chaud", "Froid"],
@@ -25665,7 +25665,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Bicyclettes", "Voitures", "Avions"],
@@ -25675,7 +25675,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Étoile est à Ciel comme Mer est à _____ ?",
     options: ["Eau", "Sable", "Plage"],
@@ -25685,7 +25685,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Bateau", "Avion", "Train"],
@@ -25695,7 +25695,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Français", "Mathématiques", "Chaise"],
@@ -25705,7 +25705,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pomme, Orange, Brocoli.",
     options: ["Pomme", "Orange", "Brocoli"],
@@ -25715,7 +25715,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Bateau, Chien.",
     options: ["Avion", "Train", "Chien"],
@@ -25725,7 +25725,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Carotte, Brocoli, Pomme de terre, Chocolat.",
     options: ["Carotte", "Brocoli", "Chocolat"],
@@ -25735,7 +25735,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à _____",
     options: ["Valée", "Rivière", "Lac"],
@@ -25744,7 +25744,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Bureau, Canapé, Étagère.",
     options: ["Bureau", "Chaise", "Canapé"],
@@ -25754,7 +25754,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Rond", "Carré", "Triangle"],
@@ -25764,7 +25764,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Jupe", "Pantalon", "Chaussette"],
@@ -25774,7 +25774,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Piano", "Guitare", "Brosse"],
@@ -25784,7 +25784,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____.",
     options: ["Oiseau", "Poisson", "Chien"],
@@ -25793,7 +25793,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme peinture est à _____.",
     options: ["Art", "Brosse", "Couleur"],
@@ -25802,7 +25802,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme histoire est à _____.",
     options: ["Roman", "Livre", "Fiction"],
@@ -25811,7 +25811,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Soleil", "Lune", "Pluie"],
@@ -25820,7 +25820,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : chien, chat, oiseau.",
     options: ["chien", "chat", "poisson"],
@@ -25830,7 +25830,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : rouge est à feu comme vert est à _____.",
@@ -25841,7 +25841,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : chat est à ronronner comme chien est à _____.",
@@ -25851,7 +25851,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : mer est à liquide comme glace est à _____.",
@@ -25862,7 +25862,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : chat, chien, souris.",
     options: ["chat", "chien", "souris"],
@@ -25872,7 +25872,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : arbre est à forêt comme poisson est à _____",
@@ -25883,7 +25883,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants : rouge, bleu, table.",
     options: ["rouge", "bleu", "table"],
@@ -25893,7 +25893,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : livre est à bibliothèque comme film est à _____",
@@ -25904,7 +25904,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : éléphant, tigre, voiture.",
@@ -25915,7 +25915,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : professeur est à élève comme médecin est à _____",
@@ -25926,7 +25926,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : marteau est à clou comme tournevis est à _____",
@@ -25937,7 +25937,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : fleur, arbre, ordinateur.",
@@ -25948,7 +25948,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : chaleur est à froid comme lumière est à _____",
@@ -25959,7 +25959,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : chef est à cuisine comme directeur est à _____",
@@ -25970,7 +25970,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : canard, oie, voiture.",
@@ -25981,7 +25981,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Complétez l'analogie : étoile est à ciel comme poisson est à _____",
@@ -25992,7 +25992,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Complétez l'analogie : clé est à serrure comme code est à _____",
     options: ["cadenas", "mot", "phrase"],
@@ -26002,7 +26002,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi les mots suivants : neige, pluie, chaleur.",
@@ -26013,7 +26013,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Voiture", "Bicyclette", "École"],
@@ -26023,7 +26023,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Piano", "Guitare", "Cahier"],
@@ -26033,7 +26033,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Manteau", "Chapeau", "Chauffage"],
@@ -26043,7 +26043,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["V", "W", "X"],
@@ -26052,7 +26052,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les suivants :",
     options: ["Montagne", "Rivière", "Table"],
@@ -26062,7 +26062,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Cuivre : Métal, Or : ?)",
     options: ["Pierre", "Métal", "Verre"],
@@ -26071,7 +26071,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ ? (Piano : Instrument, Guitare : ?)",
@@ -26081,7 +26081,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Écrivain : Livre, Peintre : ?)",
     options: ["Toile", "Écriture", "Canevas"],
@@ -26091,7 +26091,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Banc", "Chaise", "Table"],
@@ -26101,7 +26101,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Mer : Océan, Rivière : ?)",
     options: ["Lac", "Bord", "Plage"],
@@ -26111,7 +26111,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Pantalon", "Chemise", "Bottine"],
@@ -26121,7 +26121,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ? (Chanson : Musique, Poème : ?)",
     options: ["Récit", "Prose", "Vers"],
@@ -26130,7 +26130,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "Le poème est constitué de vers, tout comme la chanson est une forme de musique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Pompe", "Bicycle", "Voiture"],
@@ -26140,7 +26140,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Rouge", "Bleu", "Chaud"],
@@ -26149,7 +26149,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Chocolat", "Vanille", "Chiffon"],
@@ -26159,7 +26159,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Bureau, Stylo",
     options: ["Chaise", "Bureau", "Stylo"],
@@ -26169,7 +26169,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Guitare, Platine",
     options: ["Piano", "Guitare", "Platine"],
@@ -26179,7 +26179,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Manteau, Chapeau, Vent",
     options: ["Manteau", "Chapeau", "Vent"],
@@ -26189,7 +26189,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Film, Livre, Télévision",
     options: ["Film", "Livre", "Télévision"],
@@ -26199,7 +26199,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Télévision",
     options: ["École", "Université", "Télévision"],
@@ -26209,7 +26209,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Chaise est à Table comme Lit est à _____",
@@ -26220,7 +26220,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Semence est à Plante comme Œuf est à _____",
@@ -26231,7 +26231,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Érable, Tasse.",
     options: ["Chêne", "Érable", "Tasse"],
@@ -26241,7 +26241,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Récit est à _____.",
     options: ["Histoire", "Roman", "Nouvelle"],
@@ -26251,7 +26251,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Frère, Sœur, Oncle.",
     options: ["Frère", "Sœur", "Oncle"],
@@ -26261,7 +26261,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Soleil", "Lune", "Étoile"],
@@ -26271,7 +26271,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Lunette", "Telescope", "Boussole"],
@@ -26281,7 +26281,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Étoile", "Planète", "Comète"],
@@ -26291,7 +26291,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Pomme", "Banane", "Tomate"],
@@ -26301,7 +26301,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Article", "Nom", "Verbe"],
@@ -26310,7 +26310,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Éducation", "Apprentissage", "Enseignement"],
@@ -26319,7 +26319,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Bicyclette", "Vélo", "Trottinette"],
@@ -26329,7 +26329,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Lait", "Eau", "Jus"],
@@ -26338,7 +26338,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les suivants ?",
     options: ["Mars", "Jupiter", "Pluton"],
@@ -26347,7 +26347,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Rouge, Bleu, Arbre.",
     options: ["Rouge", "Bleu", "Arbre"],
@@ -26357,7 +26357,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Couteau, Fourchette, Assiette.",
     options: ["Couteau", "Fourchette", "Assiette"],
@@ -26367,7 +26367,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Oiseau.",
     options: ["Chat", "Chien", "Oiseau"],
@@ -26377,7 +26377,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Voiture, Train, École.",
     options: ["Voiture", "Train", "École"],
@@ -26387,7 +26387,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Neige est à _____.",
     options: ["Soleil", "Pluie", "Vent"],
@@ -26397,7 +26397,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Frère, Sœur, Cousin.",
     options: ["Frère", "Sœur", "Cousin"],
@@ -26407,7 +26407,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Pommes", "Poires", "Carottes"],
@@ -26417,7 +26417,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Fleur", "Rose", "Arbre"],
@@ -26427,7 +26427,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["École", "Université", "Collège"],
@@ -26437,7 +26437,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Balle", "Raquette", "Filet"],
@@ -26447,7 +26447,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____",
     options: ["Piano", "Guitare", "Flûte"],
@@ -26457,7 +26457,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Bureau, Crayon",
     options: ["Chaise", "Bureau", "Crayon"],
@@ -26467,7 +26467,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Livre, Journal, Ordinateur",
     options: ["Livre", "Journal", "Ordinateur"],
@@ -26477,7 +26477,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Manteau est à Hiver comme Maillot est à _____",
@@ -26488,7 +26488,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Piano, Violon, Chanson",
     options: ["Piano", "Violon", "Chanson"],
@@ -26498,7 +26498,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Photographe est à Photo comme Écrivain est à _____",
@@ -26509,7 +26509,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Moineau, Voiture",
     options: ["Aigle", "Moineau", "Voiture"],
@@ -26519,7 +26519,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Poème, Chiffre",
     options: ["Chanson", "Poème", "Chiffre"],
@@ -26529,7 +26529,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Lundi, Mardi, Aube",
     options: ["Lundi", "Mardi", "Aube"],
@@ -26539,7 +26539,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Bouleau, Parapluie",
     options: ["Chêne", "Bouleau", "Parapluie"],
@@ -26549,7 +26549,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Mer, Rivière, Étoile",
     options: ["Mer", "Rivière", "Étoile"],
@@ -26559,7 +26559,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Aigle, Moineau, Poisson",
     options: ["Aigle", "Moineau", "Poisson"],
@@ -26569,7 +26569,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Cerise, Fraise, Voiture",
     options: ["Cerise", "Fraise", "Voiture"],
@@ -26579,7 +26579,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chanson, Danse, Crayon",
     options: ["Chanson", "Danse", "Crayon"],
@@ -26588,7 +26588,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "La chanson et la danse sont des formes d'expression artistique, tandis que le crayon est un outil.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel est l'intrus parmi les mots suivants ?",
     options: ["Lundi", "Mardi", "Juillet"],
@@ -26598,7 +26598,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Étagère",
     options: ["Table", "Chaise", "Étagère"],
@@ -26608,7 +26608,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Langue est à _____",
     options: ["Dialecte", "Parole", "Écriture"],
@@ -26618,7 +26618,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Économie est à _____",
     options: ["Finance", "Commerce", "Politique"],
@@ -26628,7 +26628,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chat est à ____",
     options: ["Chien", "Souris", "Oiseau"],
@@ -26638,7 +26638,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Livre est à ____",
     options: ["Papier", "Plume", "Table"],
@@ -26648,7 +26648,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Avion, Train, Poisson",
     options: ["Avion", "Train", "Poisson"],
@@ -26658,7 +26658,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Chaise est à ____",
     options: ["Table", "Canapé", "Lit"],
@@ -26668,7 +26668,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Hiver, Été, Semaine",
     options: ["Hiver", "Été", "Semaine"],
@@ -26678,7 +26678,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Souris, Clavier, Écran",
     options: ["Souris", "Clavier", "Écran"],
@@ -26688,7 +26688,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Montagne est à ____",
     options: ["Mer", "Plage", "Rivière"],
@@ -26698,7 +26698,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme Verre est à ____",
     options: ["Eau", "Bouteille", "Table"],
@@ -26708,7 +26708,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pâtes, Riz, Livre",
     options: ["Pâtes", "Riz", "Livre"],
@@ -26718,7 +26718,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Table, Chaise, Canapé.",
     options: ["Table", "Chaise", "Canapé"],
@@ -26728,7 +26728,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Tigre", "Lion", "Singe"],
@@ -26737,7 +26737,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Poire, Pêche, Salade",
     options: ["Poire", "Pêche", "Salade"],
@@ -26747,7 +26747,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Or, Argent, Plastique",
     options: ["Or", "Argent", "Plastique"],
@@ -26757,7 +26757,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Avion est à Vol comme Train est à _____",
@@ -26768,7 +26768,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Satellite, Galaxie",
     options: ["Étoile", "Planète", "Galaxie"],
@@ -26778,7 +26778,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Mémoire est à Oubli comme Amour est à _____",
@@ -26789,7 +26789,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pantalon, Chemise, Livre",
     options: ["Pantalon", "Chemise", "Livre"],
@@ -26799,7 +26799,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Prendre est à Recevoir comme Donner est à _____",
@@ -26810,7 +26810,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["École", "Collège", "Chauffeur"],
@@ -26820,7 +26820,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Chien", "Chat", "Poisson"],
@@ -26830,7 +26830,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Arbre", "Feuille", "Brique"],
@@ -26840,7 +26840,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Chauffage", "Froid", "Chaleur"],
@@ -26850,7 +26850,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à _____ ?",
     options: ["Lune", "Soleil", "Étoile"],
@@ -26859,7 +26859,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Bouche, Oreille, Chanson.",
     options: ["Bouche", "Oreille", "Chanson"],
@@ -26869,7 +26869,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Cerise, Table.",
     options: ["Pêche", "Cerise", "Table"],
@@ -26879,7 +26879,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chat, Chien, Fourchette.",
     options: ["Chat", "Chien", "Fourchette"],
@@ -26889,7 +26889,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Framboise, Voiture.",
     options: ["Pêche", "Framboise", "Voiture"],
@@ -26899,7 +26899,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chien, Chat, Bouche.",
     options: ["Chien", "Chat", "Bouche"],
@@ -26909,7 +26909,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Chat.",
     options: ["École", "Université", "Chat"],
@@ -26919,7 +26919,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : Pomme, Banane, Voiture.",
     options: ["Pomme", "Banane", "Voiture"],
@@ -26929,7 +26929,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienne comme Chat est à ?",
@@ -26940,7 +26940,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : Mer, Océan, Montagne.",
     options: ["Mer", "Océan", "Montagne"],
@@ -26950,7 +26950,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Jour est à Nuit comme Semaine est à ?",
@@ -26961,7 +26961,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : Or, Argent, Bois.",
     options: ["Or", "Argent", "Bois"],
@@ -26971,7 +26971,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Élève comme Hôpital est à ?",
@@ -26982,7 +26982,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : Chien, Chat, Oiseau, Poisson.",
     options: ["Chien", "Chat", "Poisson"],
@@ -26992,7 +26992,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Lait est à Fromage comme Raisin est à ?",
@@ -27003,7 +27003,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Poésie est à Poète comme Peinture est à ?",
@@ -27014,7 +27014,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus parmi ces mots : Piano, Guitare, Violon, Chanson.",
@@ -27025,7 +27025,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Été est à Chaleur comme Hiver est à ?",
@@ -27036,7 +27036,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi ces mots : Étoile, Lune, Planète, Nuage.",
     options: ["Étoile", "Lune", "Nuage"],
@@ -27046,7 +27046,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chef est à Restaurant comme Professeur est à ?",
@@ -27056,7 +27056,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
         "L'école est l'endroit où enseigne le professeur, tout comme le restaurant est l'endroit où travaille le chef.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Chat", "Chien", "Arbre"],
@@ -27066,7 +27066,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Pomme", "Banane", "Voiture"],
@@ -27076,7 +27076,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Rond", "Carré", "Triangle"],
@@ -27086,7 +27086,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Fleur", "Arbre", "Rivière"],
@@ -27096,7 +27096,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Orage", "Soleil", "Pluie"],
@@ -27106,7 +27106,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Ciel", "Nuage", "Terre"],
@@ -27116,7 +27116,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Parmi les trois mots suivants, lequel est l'intrus ?",
     options: ["Mer", "Montagne", "Plage"],
@@ -27126,7 +27126,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Pêche, Cerise, Voiture",
     options: ["Pêche", "Cerise", "Voiture"],
@@ -27136,7 +27136,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chaise, Table, Chien",
     options: ["Chaise", "Table", "Chien"],
@@ -27146,7 +27146,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Chêne, Pin, École",
     options: ["Chêne", "Pin", "École"],
@@ -27156,7 +27156,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Étoile, Planète, Tablette",
     options: ["Étoile", "Planète", "Tablette"],
@@ -27166,7 +27166,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus dans cette série : chat, chien, oiseau, poisson.",
@@ -27177,7 +27177,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : chaud est à froid comme jour est à ?",
@@ -27188,7 +27188,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus dans cette série : rouge, bleu, vert, carré.",
     options: ["rouge", "bleu", "carré"],
@@ -27198,7 +27198,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : livre est à lire comme film est à ?",
@@ -27209,7 +27209,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus dans cette série : pomme, banane, carotte.",
     options: ["pomme", "banane", "carotte"],
@@ -27219,7 +27219,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : terre est à sol comme mer est à ?",
@@ -27230,7 +27230,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus dans cette série : hiver, printemps, été, automne, chaleur.",
@@ -27241,7 +27241,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : voiture est à conduire comme vélo est à ?",
@@ -27252,7 +27252,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : étoile est à ciel comme poisson est à ?",
@@ -27263,7 +27263,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus dans cette série : or, argent, cuivre, bois.",
     options: ["or", "argent", "bois"],
@@ -27273,7 +27273,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : peintre est à tableau comme sculpteur est à ?",
@@ -27284,7 +27284,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "Trouver l'intrus dans cette série : chat, chien, hamster, serpent.",
@@ -27295,7 +27295,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : livre est à papier comme film est à ?",
@@ -27306,7 +27306,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Chien : Animal, Chat : ?)",
     options: ["Félin", "Chien", "Oiseau"],
@@ -27316,7 +27316,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Arbre : Feuille, Fleur : ?)",
     options: ["Pétale", "Racine", "Tronc"],
@@ -27326,7 +27326,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["École", "Université", "Chambre"],
@@ -27335,7 +27335,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Roi : Reine, Homme : ?)",
     options: ["Femme", "Prince", "Sire"],
@@ -27345,7 +27345,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Lune : Nuit, Soleil : ?)",
     options: ["Jour", "Étoile", "Ciel"],
@@ -27355,7 +27355,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Piano : Musique, Plongée : ?)",
     options: ["Eau", "Sport", "École"],
@@ -27365,7 +27365,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Chauffage : Hiver, Ventilateur : ?)",
     options: ["Été", "Printemps", "Automne"],
@@ -27375,7 +27375,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "A est à B comme C est à ? (Bateau : Mer, Train : ?)",
     options: ["Route", "Voie", "Aéroport"],
@@ -27385,7 +27385,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Quel mot est l'intrus ?",
     options: ["Montagne", "Plage", "Rivière"],
@@ -27395,7 +27395,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chienneté comme Chat est à ____.",
@@ -27406,7 +27406,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Orange, Pomme, Brocoli.",
     options: ["Orange", "Pomme", "Brocoli"],
@@ -27416,7 +27416,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chiffre est à Nombre comme Lettre est à ____.",
@@ -27427,7 +27427,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : École est à Apprentissage comme Maison est à ____.",
@@ -27438,7 +27438,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : Train, Avion, Bicyclette.",
     options: ["Train", "Avion", "Bicyclette"],
@@ -27448,7 +27448,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Pluie est à Arrosage comme Vent est à ____.",
@@ -27458,7 +27458,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Rire est à Joie comme Pleurer est à ____.",
@@ -27469,7 +27469,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Poème est à Poète comme Peinture est à _____",
@@ -27480,7 +27480,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à _____ : Cours est à Étudiant comme Réunion est à _____",
@@ -27491,7 +27491,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus parmi les mots suivants :",
     options: ["Chocolat", "Vanille", "Chips"],
@@ -27501,7 +27501,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Chien est à Chien de garde comme Chat est à ____.",
@@ -27511,7 +27511,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question: "Trouver l'intrus : École, Université, Magasin.",
     options: ["École", "Université", "Magasin"],
@@ -27520,7 +27520,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Mère est à Enfant comme Professeur est à ____.",
@@ -27531,7 +27531,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Avion est à Vol comme Train est à ____.",
@@ -27542,7 +27542,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Docteur est à Santé comme Ingénieur est à ____.",
@@ -27553,7 +27553,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Cuisinier est à Plat comme Boulanger est à ____.",
@@ -27564,7 +27564,7 @@ final List<QuizQuestion> questionPsycotechniquesVerbal = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Logique verbale",
     question:
         "A est à B comme C est à ____ : Artisan est à Ouvrage comme Artiste est à ____.",
@@ -27931,7 +27931,7 @@ class _QuizPsycotechniquesVerbalState extends State<QuizPsycotechniquesVerbal>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -28134,7 +28134,7 @@ class _QuizPsycotechniquesVerbalState extends State<QuizPsycotechniquesVerbal>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -28317,7 +28317,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -28850,10 +28849,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -29224,7 +29224,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -29265,9 +29265,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

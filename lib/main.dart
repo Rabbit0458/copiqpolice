@@ -24,13 +24,13 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/features/home/home_bootstrap.dart';
 import 'package:copiqpolice/features/home/abonnement_page.dart';
+import 'package:copiqpolice/features/home/premium_required_page.dart';
 import 'package:copiqpolice/core/services/subscription_gate.dart';
 import 'package:copiqpolice/core/services/subscription_service.dart';
 
 // === Écrans (imports unifiés) ===
 import 'package:copiqpolice/features/warning/warning_screen.dart';
 import 'package:copiqpolice/features/onboarding/onboarding_screen.dart';
-import 'package:copiqpolice/features/onboarding/discovery_tutorial.dart';
 import 'package:copiqpolice/features/auth/signup.dart';
 import 'package:copiqpolice/features/auth/signin.dart';
 import 'package:copiqpolice/features/auth/reset_password.dart';
@@ -46,10 +46,9 @@ import 'package:copiqpolice/content/gpx_scolarite/shared/institution_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/shared/procedure_penale_page.dart';
 import 'package:copiqpolice/features/reserve/accueil_reserve.dart';
 import 'package:copiqpolice/features/onboarding/gpx_school.dart'
-    show GpxSchoolArt, GpxSchoolProgram;
+    show GpxSchoolArt;
 
 // Pages
-import 'package:copiqpolice/content/gpx_scolarite/shared/procedure_penale_page.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // GPX School
@@ -61,12 +60,11 @@ import 'package:copiqpolice/features/home/home_page_pa_school.dart';
 import 'package:copiqpolice/features/home/home_page_pa_exam.dart';
 
 //═══════════════════════════════════════════════════════════════════════
-//  GPX — Scolarité | DPS & DPG
+//  GPX - Scolarité | DPS & DPG
 //═══════════════════════════════════════════════════════════════════════
 
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_contenu_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/crime_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/delit_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/contravention_page.dart';
@@ -222,7 +220,6 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_page
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/quiz_cadres_juridiques/quiz_criminalite_organisee.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/quiz_cadres_juridiques/quiz_personnes_fuite.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/quiz_cadres_juridiques/quiz_disparitions_inquietantes.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/quiz_cadres_juridiques/quiz_controle_identite.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/quiz_cadres_juridiques/quiz_controle_identite.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/quiz_cadres_juridiques/quiz_page_cadres_juridique.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/proc%C3%A9dure_p%C3%A9nale_pages/pp_action_publique_autorites_pj_page.dart';
@@ -565,7 +562,7 @@ import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/stup%C3%A9fiants_pages
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/stup%C3%A9fiants_pages/usage_illicite_contenu_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/stup%C3%A9fiants_pages/quiz_stup%C3%A9fiants.dart';
 //═══════════════════════════════════════════════════════════════════════
-//  GPX — Scolarité | Institutions & Valeurs
+//  GPX - Scolarité | Institutions & Valeurs
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_formation_initiale_formation_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/formation_initiale/gpx_memento_prise_de_note_methodologie_page.dart';
@@ -592,7 +589,7 @@ import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/quiz_inst
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/quiz_institutions_valeurs/quiz_deontologie.dart';
 import 'package:copiqpolice/content/gpx_scolarite/institutions_valeurs/quiz_institutions_valeurs/quiz_accueil_public.dart';
 //═══════════════════════════════════════════════════════════════════════
-//  GPX — Scolarité | Mémentos & Procédures
+//  GPX - Scolarité | Mémentos & Procédures
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/memento_circulation/procedures/amende_forfaitaire_delictuelle_page.dart';
@@ -622,7 +619,7 @@ import 'package:copiqpolice/content/gpx_scolarite/memento_circulation/equipement
 import 'package:copiqpolice/content/gpx_scolarite/memento_circulation/equipements/gilet_haute_visibilite_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/memento_circulation/regles_usage_voies/principes_generaux_circulation_page.dart';
 //═══════════════════════════════════════════════════════════════════════
-//  GPX — Scolarité | Policier en Intervention Initiale
+//  GPX - Scolarité | Policier en Intervention Initiale
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_appel_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/policier_intervention_initial/prise_de_service/prise_service_registres_page.dart';
@@ -689,7 +686,7 @@ import 'package:copiqpolice/content/gpx_scolarite/policier_intervention_avance/a
 import 'package:copiqpolice/content/gpx_scolarite/policier_intervention_avance/autres/violation_bar_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/policier_intervention_avance/autres/plan_vigipirate_page.dart';
 //═════════════════════════════════════════════════════════════════════
-//  GPX — Scolarité | Procédures & APJ 2.0
+//  GPX - Scolarité | Procédures & APJ 2.0
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/gpx_scolarite/pv_apj20/introduction/preambule_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/pv_apj20/introduction/procedure_page.dart';
@@ -771,7 +768,7 @@ import 'package:copiqpolice/content/gpx_scolarite/pv_apj20/ipm/ipm_generalites_p
 import 'package:copiqpolice/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_examen_medical_page.dart';
 import 'package:copiqpolice/content/gpx_scolarite/pv_apj20/ipm/pv_ipm_remise_tiers_page.dart';
 //═════════════════════════════════════════════════════════════════════
-//  GPX — Concours | Organisation PN & Structure Concours
+//  GPX - Concours | Organisation PN & Structure Concours
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/gpx_exam/structure_gpx_concours/tableau_recapitulatif_epreuves_gpx_page.dart';
 import 'package:copiqpolice/content/gpx_exam/structure_gpx_concours/gpx_admissibilite_page.dart';
@@ -785,11 +782,12 @@ import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_4_page.dart';
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_5_page.dart';
 import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_6_page.dart';
+import 'package:copiqpolice/content/gpx_exam/cas_pratique/cas_pratique_excercice/case_dynamic_page.dart';
 
 import 'package:copiqpolice/content/gpx_exam/psycotechniques/attention_visuelle_page.dart';
 
 //═════════════════════════════════════════════════════════════════════
-//  GPX — Concours | Quiz Culture Générale & Langues Étrangères
+//  GPX - Concours | Quiz Culture Générale & Langues Étrangères
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/gpx_exam/culture_generale/quiz_culture_generale_histoire_france.dart';
 import 'package:copiqpolice/content/gpx_exam/culture_generale/quiz_culture_generale_institutions_europeens.dart';
@@ -814,7 +812,7 @@ import 'package:copiqpolice/content/gpx_exam/psycotechniques/quiz_tests_psycotec
 import 'package:copiqpolice/content/gpx_exam/psycotechniques/quiz_tests_psycotechniques_suite_verbal.dart';
 
 //═════════════════════════════════════════════════════════════════════
-//  PA — Scolarité | Organisation PN & Formation Initiale & Circulation
+//  PA - Scolarité | Organisation PN & Formation Initiale & Circulation
 //═══════════════════════════════════════════════════════════════════════
 import 'package:copiqpolice/content/pa_scolarite/circulation_pages/agents_verbalisateurs_circulation_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/formation_initiale/formation_initiale_policier_adjoint_page.dart';
@@ -827,6 +825,561 @@ import 'package:copiqpolice/content/pa_scolarite/organisation_pn/organigrammes_p
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/hierarchie_pn_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/regles_emploi_pa_page.dart';
 import 'package:copiqpolice/content/pa_scolarite/organisation_pn/horaires_service_sp_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete/autres_cadres_enquete_page.dart' hide PaAutresCadresEnquetePage;
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete/cadres_enquete_page.dart' hide PaCadresEnquetePage;
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_enquete_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/cadres_juridiques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre1_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre2_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_chapitre3_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/commission_rogatoire_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/garde_a_vue.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/mandat_recherche.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/perquisitions_fouilles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/requisitions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/saisies_scelles.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/commission_rogatoire/violation_cj_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_cadre_general_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_chap1_introduction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap1_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_chap3_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_controles_preventifs_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_distinction_identite_reglementation_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_locaux_professionnels_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_moyens_preuve_identite_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_sejour_etrangers_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_visites_vehicules_bagages_navires_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/controle_identite_zone_frontiere_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/releve_identite_gpx_school_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/verification_identite_introduction_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/verification_identite_procedure_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/verification_identite_proces_verbal_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/verification_identite_recherche_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/controle_identite/verification_identite_retention_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/autres_techniques_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/commission_rogatoire_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/criminalite_deliquance_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/criminalite_organisee_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/enquete_preliminaire_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/garde_a_vue_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/infraction_criminalite_organisee.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/interceptions_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/lutte_financement_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/perquisition_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/criminalite_deliquance/regles_derogatoires_criminalite_organisee_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_conditions_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparition_inquietante_intro_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_enquete_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/disparition/disparitions_inquietantes_procedure_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit/enquete_flagrant_delit_page.dart' hide PaEnqueteFlagrantDelitPage;
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_flagrant_delit_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/audition_enquete_preliminaire_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_prelim_saisie_comptes_bancaires_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre1_domaine_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_chapitre2_procedure_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_constatations_requisitions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_fouilles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_garde_a_vue_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire/enquete_preliminaire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/enquete_preliminaire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_internationale_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/entraide_judiciaire_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/eurojust_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/extradition_droit_commun_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/extradition_modalites_transmission_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/extradition_simplifiee_ue_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_definition_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_execution_par_juridictions_fr_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_mandat_par_juridictions_fr_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/mae_mise_en_oeuvre_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/reseau_judiciaire_europeen_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/entraide_judiciaire/traite_prum_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/flagrant_delit/flagrant_delit_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/flagrant_delit/flagrant_delit_domaine_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/flagrant_delit/flagrant_delit_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/flagrant_delit/flagrant_delit_notion_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/flagrant_delit/flagrant_delit_panorama_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/flagrant_delit/flagrant_delit_procedure_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_delegues.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_enquete.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_actes_juge_instruction.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_condition.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_page_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_procedure.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/mort_inconnue/mort_inconnue_suites_enquete.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personne_grievement_blessee/personne_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personne_grievement_blessee/personne_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_en_fuite_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_condition_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_intro_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_procedure_gpx_school.dart';
+import 'package:copiqpolice/content/pa_scolarite/cadres_juridiques_pages/personnes_en_fuite/personnes_fuite_techniques_speciales_gpx_school.dart';
+// ===== PA ATTEINTES PERSONNES =====
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_violation_manifestement_deliberee_obligation_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/violences_volontaires_arme_personne_depositaire_transport_pompier_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/diffusion_enregistrement_document_caractere_sexuel_sans_accord_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/recours_prostitution_mineurs_personnes_vulnerables_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/retribution_inexistante_insuffisante_personne_vulnerable_dependante_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/soumission_conditions_travail_hebergement_incompatibles_dignite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/violation_profanation_tombeaux_sepultures_urnes_monuments_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_personnes_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/menaces_violences_intimidation_derogation_service_public_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_causes_irresponsabilite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_complicite_coaction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_personnes_morales_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_responsabilite_penale_principes_generaux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/defaut_notification_changement_domicile_creancier_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/non_respect_obligations_interdictions_ordonnance_protection_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_2_sujets_action_publique_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_3_exercice_action_publique_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_4_extinction_action_publique_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/tentative/tentative_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/tentative/tentative_intro_page.dart';
+// ===== QUIZ PA =====
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_abandon_famille.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_abus_autorite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_action_publique_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_armes_munitions_pages.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_atteinte_personnalite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_atteintes_action_justice.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_atteintes_administration.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_atteintes_integrite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_atteintes_involontaires.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_atteintes_volontaires.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_autorite_parentale.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_bracelet_electronique.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_circulation_routiere.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_classification_infractions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_commission_rogatoire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_complicite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_controle_identite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_controle_judiciaire.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_crimes_delits_bien.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_crimes_delits_nation.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_crimes_delits_personne.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_criminalite_organisee.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_destructions_degradations.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_detention_provisoire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_dignite_personne.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_disparitions_inquietantes.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_dispositions_applicables_mineurs.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_droit_penale.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_enquete_preliminaire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_enregistrement_diffusion_images.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_faux_usage_faux.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_flagrant_delit_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_generalite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_hierarchie_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_infraction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_instruction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_introduction.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_juridiction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_legitime_defense_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_libertes_publiques_collectives_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_libertes_publiques_garanties_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_libertes_publiques_individuelles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_libertes_publiques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_mandats_justice.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_mineurs_famille.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_mise_en_danger.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_mise_peril_mineurs.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_mort_inconnue.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_nullite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_page_cadres_juridique.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_personnes_fuite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_probite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_recel_non_justification.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_responsabilite_penal_general.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_retention_locaux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_sanction.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_sanction_aggravation.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_sanction_classification.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_sanction_pluralite.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_stad.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_stupéfiants.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_tentative_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_usage_armes_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_viol_inceste_agressions.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_violation_ordonnances_jaf.dart';
+import 'package:copiqpolice/content/pa_scolarite/quiz_scolarite_pa/pa_quiz_voisines_du_vol.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_personne.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_intimite_vie_privee.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_personnalite_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_representation_personne_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_secret_correspondances_particulier.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/atteinte_secret_professionnel.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/denonciation_calomnieuse_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_correspondances_voie_electronique_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_personnalite/violation_domicile_particulier_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/atteintes_volontaires_vie_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/empoisonnement_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteinte_volontaire/meurtre_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_conducteur_vtm_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_itt_inferieure_3_mois_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_involontaires_itt_superieure_3_mois_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/atteintes_volontaires_qualifiees_violences_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/homicide_involontaire_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_involontaires/participation_groupement_violent_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/appels_messages_malveillants_agressions_sonores_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/atteintes_volontaires_integrite_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/embuscade_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/menace_sans_condition_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/menaces_avec_condition_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/outrage_sexiste_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/tortures_actes_barbarie_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_couple_ex_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_habituelles_mineur_vulnerable_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/atteintes_volontaires_integrite/violences_sur_fsi_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/atteinte_integrite_cadavre_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/dignite_personne_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/discriminations_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/dissimulation_forcee_visage_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_assimilation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_hotelier_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/proxenetisme_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/dignite_personne/traite_etres_humains_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/enlevement_sequestration_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/enregistrement_diffusion_images/diffusion_images_violence_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/enregistrement_diffusion_images/enregistrement_diffusion_images_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/enregistrement_diffusion_images/enregistrement_images_violence_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/abus_frauduleux_ignorance_faiblesse_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/delaissement_personne_hors_etat_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/mise_en_danger_diffusion_informations_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_assistance_personne_peril_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/non_obstacle_commission_crime_delit_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/mise_en_danger/risque_cause_autrui_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/administration_substances_nuisibles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_majeur_mineur_15_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agression_sexuelle_incestueuse_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/agressions_sexuelles_autres_que_viol_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/contrainte_atteinte_sexuelle_tiers_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/exhibition_sexuelle_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/harcelement_sexuel_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/mineur_15_violences_contrainte_menace_surprise_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/personne_vulnerable_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/substance_pour_viol_ou_agression_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_avertissement_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_inceste_agressions_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_incestueux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_majeur_mineur_15_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_personnes_pages/viol_inceste_agressions/viol_page.dart';
+// ===== PA MODULES COMPLÉMENTAIRES =====
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_acquisition_detention_ab_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_classification_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_definitions_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_introduction_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_materiels_guerre_elements_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_port_transport_cd_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_regles_acquisition_detention_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/armes_munitions_pages/armes_regles_port_transport_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/contrefacons_falsifications/contrefacons_falsifications_cheques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/biens_culturels_publics_classes_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/destructions_degradations_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_sans_motif_legitime_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/detention_transport_substances_preparation_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/fausses_alertes_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/menaces_avec_condition_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/menaces_sans_condition_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_important_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/sans_danger_dommage_leger_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/tags_inscriptions_signes_dessins_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/dangereuses_personnes_intentionnelle_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/dangereuses_personnes_non_intentionnelle_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/destructions_degradations/diffusion_procedes_fabrication_engins_destruction_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/non_justification_ressources.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_non_justification_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/recel_non_justification/recel_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/stad/acces_maintien_frauduleux_stad_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/stad/association_malfaiteurs_informatique_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/stad/donnees_adaptees_commettre_infractions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/stad/introduction_suppression_modification_donnees_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/stad/stad_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/abus_de_confiance_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/chantage_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/demande_fonds_sous_contrainte_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/escroquerie_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/extorsion_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/filouteries_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/voisines_du_vol/voisines_du_vol_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_biens_pages/vol_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/abus_autorite/abus_autorite_particuliers_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_inviolabilite_domicile_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/abus_autorite/atteintes_secret_correspondances_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/abus_autorite/discriminations_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/association_malfaiteurs_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/atteintes_action_justice_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/non_denonciation_crime_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_action_justice/temoignage_mensonger_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/atteintes_administration_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/menaces_envers_depositaire_autorite_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/provocation_directe_rebellion_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/atteintes_administration/rebellion_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/delivrance_indue_document_administratif_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_certificats_ou_attestations_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_document_administratif_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_ecriture_publique_ou_authentique_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_et_usage_de_faux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/faux_usage_faux_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/faux_usage_faux/obtention_indue_document_administratif_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/probite/concussion_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/probite/corruption_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/probite/probite_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/atteintes_nation_pages/probite/trafic_influence_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/conduite_stupefiants_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/defaut_assurance_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/defaut_permis_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/delit_fuite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/etat_alcoolique_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/grand_exces_vitesse_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/incitation_organisation_promotion_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/ivresse_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/plaques_inscriptions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/refus_obtemperer_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/refus_verifications_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/circulation_pages/rodeo_motorise_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/classification_infractions_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/classification_infractions_page_loi_penal.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_elements_constitutifs_infraction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_etendue_application_lois_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/gpx_school_generalites_legislation_penale_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/loi_penale_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/responsabilite_penale_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/dpg_pages/responsabilite_penale_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/accueil_public/charte_accueil_public_victimes_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/accueil_public/demarches_administratives_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/accueil_public/gpx_doctrine_accueil_victimes_vc_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/accueil_public/protection_locaux_police_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/accueil_public/referentiel_marianne_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/droits_obligations_policiers_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/enquete_administrative_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/gpx_code_deontologie_commente_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/hors_service_amaris_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/marques_exterieures_respect_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/reseaux_sociaux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/deontologie/sanctions_recompenses_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/hierarchie_info/compte_rendu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/hierarchie_info/formalisme_rapport_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/hierarchie_info/modeles_rapports_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/histoire/histoire_reperes_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/laicite/charte_laicite_services_publics_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/laicite/gpx_laicite_dlpaj_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/institution_valeurs/laicite/rites_cultes_france_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/collectives/liberte_presse_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/collectives/regime_attroupements_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/collectives/regime_manifestations_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/garanties/controle_constitutionnalite_lois_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/garanties/recours_juridictionnels_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/garanties/recours_non_juridictionnels_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/garanties/recours_organes_internationaux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/garanties_protection_libertes_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/individuelles/cnil_protection_donnees_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/individuelles/droit_vie_privee_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/individuelles/liberte_aller_venir_detail_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/individuelles/respect_personne_legislation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/individuelles/surete_liberte_individuelle_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/introduction/declaration_droits_homme_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/introduction/notion_libertes_publiques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/introduction/regime_juridique_libertes_publiques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/introduction/sources_libertes_publiques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/introduction_libertes_publiques_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/liberte_publiques_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/libertes_expression_collectives_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/libertes_publiques_pages/libertes_individuelles_vie_privee_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_de_famille_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/abandon_famille/abandon_famille_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/autorite_parentale/autorite_parentale_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/autorite_parentale/defaut_notification_transfert_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/autorite_parentale/non_representation_enfant_mineur_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_par_ascendant_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/autorite_parentale/soustraction_enfant_mineur_sans_fraude_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_15_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/atteintes_sexuelles_majeur_mineur_plus_15_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/corruption_mineur_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/diffusion_message_violent_mineur_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/exploitation_image_porno_mineur_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/mise_en_peril_des_mineurs_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/privation_aliments_soins_mineur_15_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/propositions_sexuelles_mineur_15_en_ligne_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_directe_mineur_crime_delit_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_alcool_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_mineur_stupefiants_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/provocation_pedopornographie_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/mise_en_peril/soustraction_parent_obligations_legales_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/mineurs_famille_pages/violation_ordonnances_jaf/violation_ordonnances_jaf_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_judiciaire_pages/organisation_judiciaire_hub_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_judiciaire_pages/juge_instruction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_judiciaire_pages/juridictions_penales_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_judiciaire_pages/ministere_public_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_judiciaire_pages/structure_judiciaire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/organisation_judiciaire_pages/voies_recours_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/accident_circulation/regulation_circulation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/accident_circulation/securite_trajet_lieux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/accident_circulation/types_accidents_circulation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/autres/alertes_a_la_bombe_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/autres/identification_detection_produits_suspects_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/autres/ivresse_publique_manifeste_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/autres/plans_orsec_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/autres/primo_scene_infraction_amaris_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/domicile/bruits_tapages_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/domicile/differend_familial_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/domicile/violation_domicile_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/domicile/violences_conjugales_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/formulaires_utiles/avis_retention_permis_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/formulaires_utiles/fiche_descriptive_fourriere_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/formulaires_utiles/fiche_immobilisation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/camera_pieton_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/communication_radio_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/conduite_vehicules_police_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/enregistrement_diffusion_images_paroles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/equipements_securite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/interrogation_fpr_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/memo_tph_900_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/menottage_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/palpation_securite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/patrouille_patrouille_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/principaux_fichiers_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/procedure_radio_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/signalement_descriptif_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/signaux_sonores_lumineux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/synthese_indicateurs_basculement_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/patrouille/utilite_camera_pieton_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_appel_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_applications_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_fouille_integrale_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_garde_a_vue_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_registres_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/policier_intervention_pages/prise_de_service/prise_service_risque_evasion_fuite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/autorites_investies_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/autorites_investies_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/bracelet_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/controle_judiciaire_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/controle_mission_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/controle_mission_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/detention_provisoire_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/detention_provisoire_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_contenu_detail.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/instruction_preparatoire_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/juridiction_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/juridiction_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/juridictions_execution_decisions_justice_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/juridictions_principes_generaux_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/mandats_justice_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/nullite_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/nullite_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/organisation_ministere_intro.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_en_nullite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_chapitre_1_titre_preliminaire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_action_civile_tableau_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_intro_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_action_publique_autorites_pj_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_assignation_residence_conditions.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_auditions_pv_regles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_autorites_investies_pj_habituelles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_autorites_investies_pj_occasionnelles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_bracelet_deroulement_mesure.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_bracelet_modalites_placement.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_chambre_instruction.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_chapitre1.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_chapitre2.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_controle_judiciaire_tableau.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_controle_mission_pj_chambre_instruction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_controle_mission_pj_inspection_generale_justice_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_controle_mission_pj_role_procureur_general_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_deroulement_detention_provisoire.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_detention_provisoire_tableau.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_dispositions_mineurs_instruction_contenu.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_effets_nullite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_fin_detention_provisoire.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_gav_conditions_placement_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_gav_droits_personne_gardee_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_instruction_chapitre_1.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_instruction_cloture.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_instruction_ouverture.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_instruction_pouvoirs.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_jld.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_juridictions_penales_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_mandats_principes_generaux.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_mandats_sanctions_irregularites.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_mandats_types.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_mineurs_instruction_preparatoire.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_mineurs_principes_generaux.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_mineurs_retention_mandats.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_nullites_substantielles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_nullites_textuelles_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_organisation_ministere_public_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_placement_detention_provisoire.dart';
+import 'package:copiqpolice/content/pa_scolarite/procedure_penale_pages/pp_reparation_detention_injustifiee.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_abusant_autorite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_ascendant_victime_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_depositaire_autorite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/auteur_ivre_ou_stupefiants_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/bande_organisee_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_homophobe_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/caractere_raciste_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/circonstances_aggravantes_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/effraction_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/escalade_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/etablissement_enseignement_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/guet_apens_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/incapacite_totale_travail_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/minorite_quinze_ans_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/mort_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/moyen_cryptologie_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/mutilation_infirmité_permanente_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/port_ou_usage_arme_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/premeditation_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/qualite_conjoint_concubin_partenaire_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/temoin_victime_partie_civile_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/utilisation_reseau_communication_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_ascendant_auteur_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_chargee_mission_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_depositaire_autorite_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_parente_personne_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/victime_prostitution_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction/vulnerabilite_victime_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/causes_aggravation_sanction_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/classification_legale_peines_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/classification_mesures_surete_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/classification_peines_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/classification_peines_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/pluralite_infractions/concours_reel_infractions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/pluralite_infractions/recidive_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/pluralite_infractions/reiteration_infractions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/pluralite_infractions_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/sanction_pages/pluralite_infractions_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/blanchiment_produit_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/cession_offre_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/direction_organisation_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/facilitation_usage_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/import_export_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/introduction_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/production_fabrication_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/provocation_majeur_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/transport_detention_offre_contenu_page.dart';
+import 'package:copiqpolice/content/pa_scolarite/stupefiants_pages/usage_illicite_contenu_page.dart';
+
 
 import 'package:copiqpolice/features/home/gpx_exam_concours_home_page.dart';
 import 'package:copiqpolice/features/home/gpx_exam_culture_generale_page.dart';
@@ -947,100 +1500,105 @@ Future<void> _installUsernameLoader() async {
 }
 
 /// ================== APP BOOTSTRAP ==================
+/// Completer résolu dès que Supabase + AppConsoleLogger sont prêts.
+/// _MyAppState._bootstrap() l'attend avant d'utiliser le client Supabase.
+final Completer<void> _backendReady = Completer<void>();
+
 Future<void> main() async {
   await runZonedGuarded<Future<void>>(
     () async {
       WidgetsFlutterBinding.ensureInitialized();
 
-      // 2) Logger Flutter
-      FlutterError.onError = (FlutterErrorDetails details) async {
+      // Erreur Flutter basique (AppConsoleLogger pas encore dispo)
+      FlutterError.onError = (FlutterErrorDetails details) {
         FlutterError.dumpErrorToConsole(details);
-        await AppConsoleLogger.error(
-          'flutter_error: ${details.exceptionAsString()}',
-        );
-        await AppConsoleLogger.debug('flutter_stack: ${details.stack}');
       };
 
-      // 3) Supabase
-      try {
-        await Supabase.initialize(
-          url: kSupabaseUrl,
-          anonKey: kSupabaseAnonKey,
-          authOptions: const AppAuthClientOptions(
-            autoRefreshToken: true,
-            persistSession: true,
-            detectSessionInUrl: true,
-          ).toFlutter(),
-        );
-
-        await Supabase.instance.client.auth.recoverSessionFromStorage();
-
-        print(
-          '$_green[COP’IQ] [SUCCESS] Supabase correctement initialisé ✅$_rst',
-        );
-
-        // 👇👇 AJOUTE CETTE LIGNE APRÈS L’INIT SUPABASE
-        await _installUsernameLoader();
-
-        await AppConsoleLogger.init(
-          env: kDeveloperMode ? 'development' : 'production',
-          initHooks: true,
-          batchSize: 25,
-          flushEvery: const Duration(seconds: 5),
-        );
-
-        final supa = Supabase.instance.client;
-        final token = supa.auth.currentSession?.accessToken ?? '';
-        final platform = kIsWeb
-            ? 'web'
-            : defaultTargetPlatform.toString().split('.').last;
-
-        if (kDebugMode) {
-          // ignore: avoid_print
-          print('$_cyan[COP’IQ] [INFO]  Supabase URL: $kSupabaseUrl$_rst');
-          // ignore: avoid_print
-          print(
-            '$_cyan[COP’IQ] [INFO]  Anon key: ${_mask(kSupabaseAnonKey)}$_rst',
-          );
-          if (token.isNotEmpty) {
-            // ignore: avoid_print
-            print('$_cyan[COP’IQ] [INFO]  Access token: ${_mask(token)}$_rst');
-          }
-          // ignore: avoid_print
-          print(
-            '$_cyan[COP’IQ] [BOOT]  Platform=$platform  Debug=$kDebugMode  DevMode=$kDeveloperMode$_rst',
-          );
-          // ignore: avoid_print
-          print(
-            '$_cyan[COP’IQ] [ROUTES] ${RouteRegistry.routes.keys.toList()}$_rst',
-          );
-        }
-      } catch (e) {
-        await AppConsoleLogger.error('supabase:init_failed: $e');
-        if (kDebugMode) {
-          // ignore: avoid_print
-          print('$_red[COP’IQ] [ERROR] Échec initialisation Supabase: $e$_rst');
-        }
-      }
-
-      // 4) **Charge les préférences UI (thème) avant runApp** -> défaut LIGHT
+      // Thème uniquement (SharedPreferences, ~10 ms) - requis avant le 1er frame
       await AppSettingsController.I.load();
 
-      // 5) Lisse le premier frame (facultatif)
-      await Future.delayed(const Duration(milliseconds: 60));
-
-      // 6) Lance l’app : le ThemeMode vient du contrôleur (LIGHT par défaut)
+      // ★ Lance l'app IMMÉDIATEMENT → la native splash disparaît dès le 1er frame
+      //   Flutter (_BootSplash fond blanc) → 0 écran blanc perçu.
       runApp(const MyApp());
+
+      // Init Supabase + logger EN PARALLÈLE pendant que le splash joue
+      unawaited(_initBackend());
     },
-    (error, stack) async {
-      await AppConsoleLogger.error('zone_uncaught: $error');
-      await AppConsoleLogger.debug('zone_uncaught_stack: $stack');
+    (error, stack) {
       if (kDebugMode) {
         // ignore: avoid_print
-        print('$_red[COP’IQ] [FATAL] $error$_rst');
+        print('$_red[COP\'IQ] [FATAL] $error$_rst');
       }
     },
   );
+}
+
+/// Initialise Supabase + AppConsoleLogger sans bloquer runApp().
+Future<void> _initBackend() async {
+  try {
+    await Supabase.initialize(
+      url: kSupabaseUrl,
+      anonKey: kSupabaseAnonKey,
+      authOptions: const AppAuthClientOptions(
+        autoRefreshToken: true,
+        persistSession: true,
+        detectSessionInUrl: true,
+      ).toFlutter(),
+    );
+
+    await Supabase.instance.client.auth.recoverSessionFromStorage();
+
+    // ignore: avoid_print
+    print('$_green[COP\'IQ] [SUCCESS] Supabase initialisé ✅$_rst');
+
+    await _installUsernameLoader();
+
+    await AppConsoleLogger.init(
+      env: kDeveloperMode ? 'development' : 'production',
+      initHooks: true,
+      batchSize: 25,
+      flushEvery: const Duration(seconds: 5),
+    );
+
+    // Réactive le handler d'erreur complet maintenant que le logger est dispo
+    FlutterError.onError = (FlutterErrorDetails details) async {
+      FlutterError.dumpErrorToConsole(details);
+      await AppConsoleLogger.error(
+          'flutter_error: ${details.exceptionAsString()}');
+      await AppConsoleLogger.debug('flutter_stack: ${details.stack}');
+    };
+
+    if (kDebugMode) {
+      final supa = Supabase.instance.client;
+      final token = supa.auth.currentSession?.accessToken ?? '';
+      final platform =
+          kIsWeb ? 'web' : defaultTargetPlatform.toString().split('.').last;
+      // ignore: avoid_print
+      print('$_cyan[COP\'IQ] [INFO]  Supabase URL: $kSupabaseUrl$_rst');
+      // ignore: avoid_print
+      print(
+          '$_cyan[COP\'IQ] [INFO]  Anon key: ${_mask(kSupabaseAnonKey)}$_rst');
+      if (token.isNotEmpty) {
+        // ignore: avoid_print
+        print(
+            '$_cyan[COP\'IQ] [INFO]  Access token: ${_mask(token)}$_rst');
+      }
+      // ignore: avoid_print
+      print(
+          '$_cyan[COP\'IQ] [BOOT]  Platform=$platform  Debug=$kDebugMode  DevMode=$kDeveloperMode$_rst');
+      // ignore: avoid_print
+      print(
+          '$_cyan[COP\'IQ] [ROUTES] ${RouteRegistry.routes.keys.toList()}$_rst');
+    }
+
+    _backendReady.complete();
+  } catch (e, st) {
+    if (kDebugMode) {
+      // ignore: avoid_print
+      print('$_red[COP\'IQ] [ERROR] Échec init backend: $e$_rst');
+    }
+    if (!_backendReady.isCompleted) _backendReady.completeError(e, st);
+  }
 }
 
 class MyApp extends StatefulWidget {
@@ -1055,53 +1613,19 @@ class _MyAppState extends State<MyApp> {
   _Route _route = _Route.loading;
   StreamSubscription<AuthState>? _authSub;
 
+  /// Completer déclenché par le SplashScreen quand l'animation se termine
+  /// (2300 ms). _bootstrap() attend ce signal avant de changer de route.
+  final Completer<void> _splashCompleter = Completer<void>();
+
+  void _onSplashComplete() {
+    if (!_splashCompleter.isCompleted) _splashCompleter.complete();
+  }
+
   @override
   void initState() {
     super.initState();
-    SubscriptionService.instance.startAutoSync(); // ✅
-
-    _authSub = Supabase.instance.client.auth.onAuthStateChange.listen((
-      event,
-    ) async {
-      final e = event.event;
-      final u = event.session?.user;
-
-      switch (e) {
-        case AuthChangeEvent.signedIn:
-          // ignore: avoid_print
-          print(
-            '$_green[COP’IQ] [AUTH] signedIn — user=${u?.id} email=${u?.email}$_rst',
-          );
-          await AppConsoleLogger.info(
-            'auth:signed_in',
-            context: {'user_id': u?.id, 'email': u?.email},
-          );
-          break;
-        case AuthChangeEvent.signedOut:
-          // ignore: avoid_print
-          print('$_yellow[COP’IQ] [AUTH] signedOut$_rst');
-          await AppConsoleLogger.info('auth:signed_out');
-          break;
-        case AuthChangeEvent.tokenRefreshed:
-          // ignore: avoid_print
-          print('$_green[COP’IQ] [AUTH] tokenRefreshed$_rst');
-          await AppConsoleLogger.debug('auth:token_refreshed');
-          break;
-        case AuthChangeEvent.userUpdated:
-          // ignore: avoid_print
-          print('$_cyan[COP’IQ] [AUTH] userUpdated — user=${u?.id}$_rst');
-          await AppConsoleLogger.debug(
-            'auth:user_updated',
-            context: {'user_id': u?.id},
-          );
-          break;
-        default:
-          // ignore: avoid_print
-          print('$_cyan[COP’IQ] [AUTH] ${e.name}$_rst');
-          await AppConsoleLogger.debug('auth:${e.name}');
-      }
-    });
-
+    // Auth listener + SubscriptionService déplacés dans _bootstrap()
+    // car Supabase n'est pas encore initialisé à ce stade.
     _bootstrap();
   }
 
@@ -1112,6 +1636,58 @@ class _MyAppState extends State<MyApp> {
   }
 
   Future<void> _bootstrap() async {
+    // ── 1. Attendre que Supabase + AppConsoleLogger soient prêts ─────────────
+    //    (init parallèle lancée dans _initBackend() depuis main())
+    try {
+      await _backendReady.future;
+    } catch (e) {
+      if (kDebugMode) {
+        // ignore: avoid_print
+        print('$_red[COP\'IQ] [BOOT] Backend init failed: $e$_rst');
+      }
+      // On continue quand même pour ne pas bloquer l'app
+    }
+
+    // ── 2. Brancher le listener auth maintenant que Supabase est dispo ───────
+    _authSub = Supabase.instance.client.auth.onAuthStateChange.listen((
+      event,
+    ) async {
+      final e = event.event;
+      final u = event.session?.user;
+      switch (e) {
+        case AuthChangeEvent.signedIn:
+          // ignore: avoid_print
+          print(
+              '$_green[COP\'IQ] [AUTH] signedIn - user=${u?.id} email=${u?.email}$_rst');
+          await AppConsoleLogger.info('auth:signed_in',
+              context: {'user_id': u?.id, 'email': u?.email});
+          break;
+        case AuthChangeEvent.signedOut:
+          // ignore: avoid_print
+          print('$_yellow[COP\'IQ] [AUTH] signedOut$_rst');
+          await AppConsoleLogger.info('auth:signed_out');
+          break;
+        case AuthChangeEvent.tokenRefreshed:
+          // ignore: avoid_print
+          print('$_green[COP\'IQ] [AUTH] tokenRefreshed$_rst');
+          await AppConsoleLogger.debug('auth:token_refreshed');
+          break;
+        case AuthChangeEvent.userUpdated:
+          // ignore: avoid_print
+          print('$_cyan[COP\'IQ] [AUTH] userUpdated - user=${u?.id}$_rst');
+          await AppConsoleLogger.debug('auth:user_updated',
+              context: {'user_id': u?.id});
+          break;
+        default:
+          // ignore: avoid_print
+          print('$_cyan[COP\'IQ] [AUTH] ${e.name}$_rst');
+          await AppConsoleLogger.debug('auth:${e.name}');
+      }
+    });
+
+    // ── 3. Démarrer la synchro abonnements ───────────────────────────────────
+    SubscriptionService.instance.startAutoSync();
+
     await AppConsoleLogger.info('app:bootstrap:start');
 
     final prefs = await SharedPreferences.getInstance();
@@ -1125,27 +1701,27 @@ class _MyAppState extends State<MyApp> {
       obDone = false;
       // ignore: avoid_print
       print(
-        '$_yellow[COP’IQ] [BOOT] Mode production: reset des flags warning/onboarding$_rst',
-      );
+          '$_yellow[COP\'IQ] [BOOT] Mode production: reset des flags warning/onboarding$_rst');
       await AppConsoleLogger.warn('app:bootstrap:reset_flags');
     }
 
-    await Future.delayed(const Duration(milliseconds: 300));
+    // ── 4. Attendre la fin de l'animation du SplashScreen ────────────────────
+    await _splashCompleter.future;
 
     if (!ack) {
       setState(() => _route = _Route.warning);
       // ignore: avoid_print
-      print('$_cyan[COP’IQ] [NAV] -> /warning$_rst');
+      print("$_cyan[COP'IQ] [NAV] -> /warning$_rst");
       await AppConsoleLogger.info('nav:goto', message: '/warning');
     } else if (!obDone) {
       setState(() => _route = _Route.onboarding);
       // ignore: avoid_print
-      print('$_cyan[COP’IQ] [NAV] -> /onboarding$_rst');
+      print("$_cyan[COP'IQ] [NAV] -> /onboarding$_rst");
       await AppConsoleLogger.info('nav:goto', message: '/onboarding');
     } else {
       setState(() => _route = _Route.home);
       // ignore: avoid_print
-      print('$_cyan[COP’IQ] [NAV] -> /home$_rst');
+      print("$_cyan[COP'IQ] [NAV] -> /home$_rst");
       await AppConsoleLogger.info('nav:goto', message: '/home');
     }
 
@@ -1221,14 +1797,14 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    // 🔗 Source unique (AppSettingsController) — LIGHT par défaut
+    // 🔗 Source unique (AppSettingsController) - LIGHT par défaut
     final settingsCtrl = AppSettingsController.I;
 
     return ValueListenableBuilder<ThemeMode>(
       valueListenable: settingsCtrl.themeMode,
       builder: (_, mode, __) {
         return MaterialApp(
-          title: 'COP’IQ',
+          title: "COP'IQ",
           debugShowCheckedModeBanner: false,
           theme: _lightTheme(),
           darkTheme: _darkTheme(),
@@ -1237,42 +1813,236 @@ class _MyAppState extends State<MyApp> {
           navigatorObservers: [_LoggerRouteObserver()],
           routes: RouteRegistry.routes,
           onGenerateRoute: appOnGenerateRoute,
-          // Splash Flutter interne qui matche le thème courant
-          home: switch (_route) {
-            _Route.loading => const _BootSplash(),
+          // AnimatedSwitcher : assure le fade de sortie du SplashScreen
+          // (300 ms, soit la fenêtre 2300–2600 ms demandée dans les specs).
+          home: AnimatedSwitcher(
+            duration: const Duration(milliseconds: 300),
+            child: switch (_route) {
+              _Route.loading => _BootSplash(
+                  key: const ValueKey('splash'),
+                  onAnimationComplete: _onSplashComplete,
+                ),
 
-            _Route.warning => WarningScreen(onAccepted: _onWarningAccepted),
+              _Route.warning => WarningScreen(
+                  key: const ValueKey('warning'),
+                  onAccepted: _onWarningAccepted,
+                ),
 
-            _Route.onboarding => OnboardingScreen(
-              onSkip: _goToSignupAfterOnboarding,
-              onFinish: _goToSignupAfterOnboarding,
-              onLogin: _goToLoginAfterOnboarding,
-            ),
+              _Route.onboarding => OnboardingScreen(
+                  key: const ValueKey('onboarding'),
+                  onSkip: _goToSignupAfterOnboarding,
+                  onFinish: _goToSignupAfterOnboarding,
+                  onLogin: _goToLoginAfterOnboarding,
+                ),
 
-            _Route.home => SubscriptionGate(child: const ModePickerScreen()),
-          },
+              _Route.home => const ModePickerScreen(
+                  key: ValueKey('home'),
+                ),
+            },
+          ),
         );
       },
     );
   }
 }
 
-// Splash Flutter interne (couleur = thème courant)
-// → garantit une continuité visuelle avec le splash natif light
-class _BootSplash extends StatelessWidget {
-  const _BootSplash();
+// ============================================================================
+// _BootSplash - Splash Screen animé, synchronisé avec AppSettingsController
+// Source de vérité : AppSettingsController.I.themeMode (jamais de variable locale isolée)
+// Thème clair : fond #FFFFFF → #F6F8FF, texte légal #5F6472
+// Thème sombre : fond #06111F → #0B1B33, texte #D7DCE8, glow #4DA3FF à faible opacité
+// Timeline :
+//   0 ms         : fond affiché immédiatement avec la bonne couleur
+//   200 ms       : logo apparaît en fondu (opacity 0→1)
+//   200–900 ms   : scale 0.92 → 1.0  (Curves.easeOutCubic)
+//   1000 ms      : texte légal commence à apparaître
+//   1000–1600 ms : fade-in fluide du texte
+//   4800 ms      : onAnimationComplete() → _MyAppState complète son Completer
+//   4800–5100 ms : AnimatedSwitcher cross-fade vers l'écran suivant
+// ============================================================================
+class _BootSplash extends StatefulWidget {
+  final VoidCallback? onAnimationComplete;
+  const _BootSplash({super.key, this.onAnimationComplete});
+
+  @override
+  State<_BootSplash> createState() => _BootSplashState();
+}
+
+class _BootSplashState extends State<_BootSplash>
+    with TickerProviderStateMixin {
+  // ---- Contrôleurs --------------------------------------------------------
+  late final AnimationController _logoCtrl;
+  late final AnimationController _textCtrl;
+
+  // Logo : opacity  0 → 1   et  scale 0.92 → 1.0
+  // Les 200 premières ms sont muettes via Interval(200/900, 1.0).
+  late final Animation<double> _logoOpacity;
+  late final Animation<double> _logoScale;
+
+  @override
+  void initState() {
+    super.initState();
+
+    // ── LOGO : 800 ms de fondu dès le départ ─────────────────────────────
+    _logoCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 800),
+    );
+
+    _logoOpacity = Tween<double>(begin: 0.0, end: 1.0).animate(
+      CurvedAnimation(parent: _logoCtrl, curve: Curves.easeOut),
+    );
+    _logoScale = Tween<double>(begin: 0.90, end: 1.0).animate(
+      CurvedAnimation(parent: _logoCtrl, curve: Curves.easeOutCubic),
+    );
+
+    // ── TEXTE : 700 ms de fondu, démarre 400 ms après la fin du logo ─────
+    // → logo visible seul de 800 ms à 1200 ms, texte apparaît à 1200 ms.
+    _textCtrl = AnimationController(
+      vsync: this,
+      duration: const Duration(milliseconds: 700),
+    );
+
+    _runSequence();
+  }
+
+  Future<void> _runSequence() async {
+    // Étape 1 : logo monte en fondu (0 → 800 ms).
+    _logoCtrl.forward();
+
+    // Étape 2 : on attend que le logo soit entièrement visible + 400 ms de pause.
+    await Future.delayed(const Duration(milliseconds: 1200));
+    if (!mounted) return;
+
+    // Étape 3 : texte monte en fondu (1200 → 1900 ms).
+    _textCtrl.forward();
+
+    // Étape 4 : on laisse ~3 s de lecture confortable, puis on signale la fin.
+    // → transition à 4800 ms, AnimatedSwitcher fade 300 ms → ~5100 ms au total.
+    await Future.delayed(const Duration(milliseconds: 3600));
+    if (!mounted) return;
+    widget.onAnimationComplete?.call();
+  }
+
+  @override
+  void dispose() {
+    _logoCtrl.dispose();
+    _textCtrl.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
-    final cs = Theme.of(context).colorScheme;
+    // ── Source de vérité unique : AppSettingsController ──────────────────
+    final isDark =
+        AppSettingsController.I.themeMode.value == ThemeMode.dark;
+
+    // Palettes selon les specs
+    const Color bgLight   = Color(0xFFFFFFFF);
+    const Color altLight  = Color(0xFFF6F8FF);
+    const Color bgDark    = Color(0xFF06111F);
+    const Color altDark   = Color(0xFF0B1B33);
+    const Color textLight = Color(0xFF5F6472);
+    const Color textDark  = Color(0xFFD7DCE8);
+
+    final Color bg         = isDark ? bgDark   : bgLight;
+    final Color altBg      = isDark ? altDark  : altLight;
+    final Color legalColor = isDark ? textDark : textLight;
+    final Color glowColor  =
+        const Color(0xFF4DA3FF).withOpacity(isDark ? 0.14 : 0.06);
+
     return Scaffold(
-      backgroundColor: cs.surface,
-      body: const Center(
-        child: SizedBox(
-          width: 48,
-          height: 48,
-          child: CircularProgressIndicator(strokeWidth: 4),
-        ),
+      backgroundColor: bg,
+      body: Stack(
+        children: [
+          // ── Dégradé de fond subtil ───────────────────────────────────
+          Positioned.fill(
+            child: DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [bg, altBg],
+                ),
+              ),
+            ),
+          ),
+
+          // ── Logo centré avec glow ────────────────────────────────────
+          // RepaintBoundary isole la couche d'opacité → corrige les erreurs Impeller
+          Center(
+            child: RepaintBoundary(
+              child: FadeTransition(
+                opacity: _logoOpacity,
+                child: ScaleTransition(
+                  scale: _logoScale,
+                  child: SizedBox(
+                    width: 260,
+                    height: 260,
+                    child: Stack(
+                      alignment: Alignment.center,
+                      children: [
+                        // Glow derrière le logo
+                        Container(
+                          width: 260,
+                          height: 260,
+                          decoration: BoxDecoration(
+                            shape: BoxShape.circle,
+                            boxShadow: [
+                              BoxShadow(
+                                color: glowColor,
+                                blurRadius: 100,
+                                spreadRadius: 40,
+                              ),
+                            ],
+                          ),
+                        ),
+                        // Logo officiel COP'IQ
+                        Image.network(
+                          'https://nuoonagnkhbeeymtvrcn.supabase.co/storage/v1/object/public/assets/logo_gris.png',
+                          width: 240,
+                          height: 240,
+                          fit: BoxFit.contain,
+                          errorBuilder: (_, __, ___) => Icon(
+                            Icons.shield_outlined,
+                            size: 80,
+                            color: const Color(0xFF4DA3FF).withOpacity(0.85),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ),
+          ),
+
+          // ── Texte légal en bas ───────────────────────────────────────
+          Positioned(
+            bottom: 52,
+            left: 28,
+            right: 28,
+            child: RepaintBoundary(
+              child: FadeTransition(
+                opacity: _textCtrl,
+                child: Text(
+                  "COP'IQ est une application indépendante à but pédagogique.\n"
+                  "Elle n'est ni affiliée, ni soutenue, ni officiellement "
+                  "reconnue par le Ministère de l’Intérieur, la Police "
+                  "nationale, la Gendarmerie nationale ou toute autre "
+                  "institution gouvernementale.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: legalColor,
+                    fontSize: 11,
+                    height: 1.55,
+                    letterSpacing: 0.1,
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -1304,7 +2074,7 @@ class _NotFoundScreen extends StatelessWidget {
                 onPressed: () => Navigator.of(
                   context,
                 ).pushNamedAndRemoveUntil(HomePage.routeName, (r) => false),
-                child: const Text('Retour à l’accueil'),
+                child: const Text('Retour à l\'accueil'),
               ),
             ],
           ),

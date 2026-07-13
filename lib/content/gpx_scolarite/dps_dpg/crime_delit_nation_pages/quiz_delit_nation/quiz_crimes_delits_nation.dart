@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionCrimesDelitsNation = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Définition",
     question: "La concussion consiste notamment à :",
     options: [
@@ -104,7 +104,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La concussion porte sur des droits, contributions, impôts ou taxes publics indus.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : la concussion est prévue par l’article 432-10 du Code pénal.",
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La concussion est prévue et réprimée par l’article 432-10 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "La concussion consiste notamment à :",
     options: [
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La concussion porte sur une perception indue à titre de droits/contributions/impôts/taxes publics.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Auteur possible de concussion :",
     options: [
@@ -142,7 +142,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise un auteur particulier : dépositaire de l’autorité publique ou mission de service public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Les moyens utilisés pour percevoir la somme indue :",
     options: [
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ce qui compte est l’illégalité de la perception, pas le moyen employé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "La « somme » peut être :",
     options: [
@@ -168,7 +168,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La notion de somme est large et peut inclure des prestations en nature.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : la somme peut être partiellement indue (excéder ce qui est dû).",
@@ -178,7 +178,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La somme est indue si non prévue ou si elle excède ce qui est dû.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "La concussion peut aussi consister à :",
     options: [
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’alinéa 2 vise l’exonération/franchise illégale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Élément moral de la concussion :",
     options: [
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Les mobiles sont indifférents ; la conscience du caractère indu est centrale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : une erreur de fait/droit peut faire disparaître l’intention.",
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Si la perception résulte d’une erreur ou d’une mauvaise interprétation, l’intention peut manquer.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Peines principales de la concussion (432-10) :",
     options: [
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "432-10 : 5 ans + 500 000 € (pouvant être porté au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : la concussion prévoit des circonstances aggravantes spécifiques.",
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : AUCUNE circonstance aggravante.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Vrai/Faux : la tentative de concussion est punissable.",
     options: ["Vrai", "Faux", "Uniquement pour l’alinéa 2"],
@@ -245,7 +245,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La tentative est prévue par l’alinéa 3 de l’article 432-10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "La concussion se caractérise surtout par :",
     options: [
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "On compare ce qui est perçu/réclamé à ce que les textes autorisent.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Un régisseur exige 20€ alors que le tarif légal est 10€. Qualification :",
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Somme excédant ce qui est dû = perception indue (concussion).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Concussion : l’infraction peut être constituée si la somme indue est :",
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise recevoir, exiger OU ordonner de percevoir.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Si un supérieur ordonne une perception indue et le subordonné exécute sciemment :",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption passive est réprimée par :",
     options: ["Article 432-11 CP", "Article 432-10 CP", "Article 441-1 CP"],
@@ -304,7 +304,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Corruption passive : article 432-11 al.1 et 2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption passive consiste à :",
     options: [
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Pacte de corruption : avantage ↔ acte/abstention/acte facilité par la fonction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption est dite « passive » lorsque l’auteur est :",
     options: [
@@ -332,7 +332,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La qualification active/passive dépend de la qualité de l’auteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption passive peut être constituée :",
     options: [
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le pacte suffit : suivi d’exécution indifférent.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "« À tout moment » signifie que l’accord peut être :",
     options: ["Avant ou après l’acte", "Uniquement avant", "Uniquement après"],
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Gratification postérieure possible (remerciement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "L’avantage en corruption passive peut être :",
     options: [
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Interprétation large des avantages.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "L’avantage peut bénéficier :",
     options: [
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise « pour elle-même ou pour autrui ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Élément moral de la corruption passive :",
     options: [
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Il faut que l’agent sache la contrepartie et agisse sciemment.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Circonstance aggravante prévue :",
     options: ["Bande organisée", "Réunion", "Arme"],
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Peines corruption passive simple :",
     options: [
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 : 10 ans + 1 000 000 € (double du produit possible).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Peines corruption passive aggravée (bande organisée) :",
     options: [
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 al.4 : 10 ans + 2 000 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Vrai/Faux : tentative de corruption passive punissable.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un policier accepte de l’argent pour ne pas dresser PV. Qualification :",
@@ -443,7 +443,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Avantage contre abstention d’un acte de la fonction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un agent reçoit un cadeau après l’acte, sans demande explicite, mais en le sachant contrepartie. Qualification :",
@@ -456,7 +456,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Pacte possible postérieurement ; « à tout moment ». ",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption vs Concussion",
     question:
         "Un agent exige un « supplément » non prévu par la loi pour une formalité. Qualification prioritaire :",
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Le trafic d’influence (agent public) est défini/réprimé par :",
     options: [
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Trafic d’influence : 432-11 alinéa 3 CP (selon ta fiche).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Trafic d’influence : l’influence peut être :",
     options: ["Réelle ou supposée", "Uniquement réelle", "Uniquement supposée"],
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’influence peut être réelle ou supposée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Le trafic d’influence vise l’obtention de :",
     options: [
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’auteur abuse de son influence pour faire obtenir une décision favorable d’une autorité/administration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Élément moral du trafic d’influence :",
     options: [
@@ -514,7 +514,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Il faut que l’agent sache la contrepartie et agisse sciemment.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Peines trafic d’influence simple :",
     options: [
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Trafic d’influence : mêmes peines que la corruption passive simple (fiche).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Aggravation trafic d’influence :",
     options: ["Bande organisée", "Réunion", "Arme"],
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "432-11 al.4 : aggravation en bande organisée (aussi pour trafic d’influence).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Vrai/Faux : tentative de trafic d’influence punissable.",
     options: ["Vrai", "Faux", "Seulement si influence réelle"],
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question:
         "Un élu est payé pour « appeler quelqu’un » afin d’obtenir un poste. Qualification :",
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Abus d’influence réelle/supposée en vue de faire obtenir un emploi (contre avantage).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question: "En trafic d’influence, la décision obtenue peut être :",
     options: [
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Même régulière : ce sont les moyens d’influence irréguliers qui constituent l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question:
         "Vrai/Faux : trafic d’influence = pacte d’avantage pour accomplir un acte de la fonction.",
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent public propose : « Donne-moi 200€ et je ne verbalise pas ». Qualification la plus juste :",
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre abstention d’un acte de la fonction : corruption passive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent exige 50€ « frais obligatoires » inventés pour délivrer un document. Qualification :",
@@ -598,7 +598,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Perception indue à titre de droits/taxes publics (même si appelée « frais »).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent est payé pour intervenir auprès d’une autre administration afin d’obtenir une décision favorable. Qualification :",
@@ -608,7 +608,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Monnayer une influence auprès d’une autorité/administration publique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent public accepte un cadeau pour transmettre des infos obtenues grâce à l’accès aux dossiers. Qualification :",
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre acte facilité par la fonction (accès aux infos).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Distinction",
     question:
         "Le critère le plus discriminant entre concussion et corruption est :",
@@ -637,7 +637,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Concussion : sommes publiques indûment réclamées/reçues. Corruption : pacte d’avantage en échange d’un acte/abstention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Distinction",
     question:
         "Le trafic d’influence se distingue surtout de la corruption car il vise :",
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Trafic d’influence = monnayer l’influence réelle/supposée pour obtenir distinctions/emplois/marchés/décisions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Élément matériel",
     question: "La perception indue peut être :",
     options: [
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Indue si non prévue par texte, ou si excédant ce qui est dû (partiellement indue).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Notion de droits",
     question: "La jurisprudence inclut dans les « droits » visés par 432-10 :",
     options: [
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La notion de « droits » est interprétée largement par la jurisprudence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Prestation fictive",
     question:
         "Percevoir une rémunération pour une fonction non exercée (prestation fictive) peut relever de :",
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La jurisprudence retient souvent la concussion lorsque des prestations payées dépassent la réalité de celles tarifées/exercées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Comparaison aux textes",
     question: "Pour prouver la concussion, on doit montrer que la somme :",
     options: [
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le caractère illicite résulte de l’absence de base légale/réglementaire ou du dépassement du dû.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Exonération",
     question: "Accorder une exonération illégale correspond à une concussion :",
     options: [
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise aussi l’exonération/franchise illégale (forme quelconque, motif quelconque).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Vrai/Faux",
     question:
         "Vrai/Faux : la concussion exige que l’auteur s’enrichisse personnellement.",
@@ -725,7 +725,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’infraction vise la perception illégale ; l’enrichissement n’est pas un élément constitutif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Vrai/Faux",
     question:
         "Vrai/Faux : la concussion peut être constituée sans violence ni menace.",
@@ -735,7 +735,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le moyen importe peu : pas besoin d’abus d’autorité, menaces ou manœuvres.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Tentative",
     question: "La tentative de concussion est :",
     options: [
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La tentative est prévue par l’alinéa 3 de l’article 432-10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Un agent « invente » un tarif et le fait payer à l’usager, en prétendant que c’est obligatoire. On retient :",
@@ -757,7 +757,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Perception indue à titre de droits/contributions/taxes (même appelée « frais »).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "Une somme « indue » peut être :",
     options: [
@@ -769,7 +769,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise non due ou excédant ce qui est dû.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "Le délit de concussion peut exister même si l’auteur :",
     options: [
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Définition",
     question: "La corruption passive est constituée si l’agent public :",
     options: [
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Pacte avantage ↔ acte/abstention/acte facilité (article 432-11).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Sollicitation/Agrément",
     question: "La différence entre sollicitation et agrément est :",
     options: [
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La sollicitation est une démarche de l’agent ; l’agrément est l’accord donné à la proposition.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Direct/Indirect",
     question: "La corruption « indirecte » correspond à :",
     options: [
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La sollicitation/acceptation peut transiter via un intermédiaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — À tout moment",
     question: "En corruption passive, l’accord peut intervenir après l’acte :",
     options: ["Oui", "Non", "Uniquement si acte illégal"],
@@ -833,7 +833,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte précise « à tout moment » : pacte possible postérieurement à l’acte (remerciement).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Acte facilité",
     question: "L’« acte facilité par la fonction » vise :",
     options: [
@@ -847,7 +847,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ex : monnayer des informations surprises grâce aux facilités de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Élément moral",
     question: "Pour l’élément moral, on recherche :",
     options: [
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Devoir de probité + volonté d’obtenir avantage ; le mobile importe peu.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Vrai/Faux",
     question:
         "Vrai/Faux : la corruption passive exige un écrit ou un pacte formalisé.",
@@ -871,7 +871,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’accord de volontés peut être tacite ; aucun écrit n’est exigé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Vrai/Faux",
     question:
         "Vrai/Faux : l’avantage peut être une promesse non encore exécutée.",
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise aussi les offres et promesses.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Aggravation",
     question: "La corruption passive est aggravée lorsqu’elle est commise :",
     options: ["En bande organisée", "En réunion", "Avec arme"],
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Peines",
     question: "Peines corruption passive simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "3 ans + 45 000 €"],
@@ -897,7 +897,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Article 432-11 : 10 ans et 1 000 000 € (double du produit possible).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Peines",
     question: "Peines corruption passive aggravée (bande organisée) :",
     options: [
@@ -910,7 +910,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Article 432-11 al.4 : 10 ans et 2 000 000 € (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Tentative",
     question: "Vrai/Faux : la tentative de corruption passive est punissable.",
     options: ["Vrai", "Faux", "Uniquement en bande organisée"],
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : tentative non punissable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un agent public accepte un voyage en échange d’une abstention de contrôle. Qualification :",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage (voyage) contre abstention d’un acte de la fonction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un agent reçoit un cadeau « de remerciement » après un acte accompli, et il savait que ce cadeau était la contrepartie. Qualification :",
@@ -941,7 +941,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le pacte peut être postérieur (« à tout moment »).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption vs Trafic",
     question:
         "Un agent est payé pour « intervenir auprès » d’une autre administration afin d’obtenir une décision favorable. Qualification typique :",
@@ -952,7 +952,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Définition",
     question: "Le trafic d’influence (agent public) consiste à :",
     options: [
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Trafic d’influence : avantage ↔ abus d’influence réelle/supposée pour obtenir une décision favorable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Influence",
     question: "L’influence en trafic d’influence peut être :",
     options: ["Réelle ou supposée", "Uniquement réelle", "Uniquement supposée"],
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise l’influence réelle ou supposée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Destinataire",
     question: "L’influence doit viser :",
     options: [
@@ -988,7 +988,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le destinataire à influencer doit disposer d’un pouvoir de décision (autorité/administration).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Objet",
     question: "Le trafic d’influence vise l’obtention de :",
     options: [
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cœur de l’infraction : obtenir une décision favorable d’une autorité/administration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Décision régulière",
     question:
         "Vrai/Faux : la décision recherchée doit être illégale pour retenir le trafic d’influence.",
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Même une décision régulière peut être visée : ce sont les moyens d’influence achetée qui sont illégaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Acte exercé",
     question:
         "Vrai/Faux : le trafic d’influence exige que l’influence soit effectivement exercée et réussisse.",
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Peu importe que l’influence ne soit finalement pas exercée ou qu’elle soit vaine.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Peines",
     question: "Peines trafic d’influence simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "3 ans + 45 000 €"],
@@ -1030,7 +1030,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Trafic d’influence (agent public) : mêmes peines que corruption passive simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Aggravation",
     question: "Trafic d’influence aggravé si commis :",
     options: ["En bande organisée", "En réunion", "Avec arme"],
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 432-11 al.4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Tentative",
     question: "Vrai/Faux : la tentative de trafic d’influence est punissable.",
     options: ["Vrai", "Faux", "Uniquement si influence réelle"],
@@ -1046,7 +1046,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche : TENTATIVE NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question:
         "Un élu est payé pour « faire obtenir » un marché public via ses relations. Qualification :",
@@ -1057,7 +1057,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent public accepte 500€ pour transmettre un renseignement non public obtenu grâce à l’accès aux dossiers. Qualification + article ?",
@@ -1071,7 +1071,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre un acte facilité par la fonction (accès aux dossiers).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent invente un « droit obligatoire » et encaisse 30€ pour un document. Qualification + article ?",
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Perception indue à titre de droits/taxes publics. Peines: 5 ans + 500 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un élu accepte un cadeau pour user de son influence afin d’obtenir une nomination. Qualification + article ?",
@@ -1099,7 +1099,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre abus d’influence (réelle ou supposée) pour obtenir un emploi/décision.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Peine",
     question:
         "Une corruption passive aggravée est retenue : peine principale (selon fiche) ?",
@@ -1113,7 +1113,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Bande organisée : 10 ans d’emprisonnement + 2 000 000 € d’amende (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Pour retenir la concussion, la somme doit être réclamée/reçue à titre de :",
@@ -1127,7 +1127,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La concussion vise la perception indue à titre de prélèvements publics (au sens large).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question: "La concussion est constituée si la perception :",
     options: [
@@ -1140,7 +1140,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le caractère indu se prouve par comparaison avec les textes applicables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Un agent public se fait remettre gratuitement un bien/service par un usager en prétendant que c’est « obligatoire ». Qualification la plus proche :",
@@ -1150,7 +1150,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La notion de somme peut inclure des prestations en nature si assimilables à une perception indue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Vrai/Faux : la concussion nécessite que la victime soit déterminée nominativement.",
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’infraction porte sur la perception indue ; la détermination nominative n’est pas une condition constitutive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "La concussion peut être retenue lorsque la somme est versée sur :",
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La jurisprudence retient la concussion même si les fonds sont orientés vers un compte occulte d’un établissement public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "En matière de concussion, ce qui est sanctionné en priorité est :",
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Pas besoin de menaces/manœuvres : le moyen importe peu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion (exonération)",
     question:
         "Accorder illégalement une exonération d’un impôt/taxe public constitue :",
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’article 432-10 vise aussi l’exonération/franchise illégale (alinéa 2).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Vrai/Faux : l’intention est exclue si la perception indue résulte d’une erreur de fait.",
@@ -1212,7 +1212,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La fiche précise que l’intention peut disparaître en cas d’erreur ou de mauvaise interprétation d’un texte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-10",
     question: "Peine principale 432-10 :",
     options: ["5 ans + 500 000 €", "10 ans + 1 000 000 €", "2 ans + 30 000 €"],
@@ -1221,7 +1221,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Concussion : 5 ans et 500 000 € (amende possible au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-10",
     question:
         "Vrai/Faux : la concussion a des circonstances aggravantes prévues par le texte.",
@@ -1231,7 +1231,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "En corruption passive, l’avantage doit être :",
     options: [
@@ -1244,7 +1244,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise « solliciter/agréer sans droit » des avantages.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "La corruption passive est constituée même si l’agent public :",
     options: [
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le pacte suffit ; l’exécution est indifférente.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question:
         "Un cadeau « de remerciement » après l’acte peut être de la corruption passive car :",
@@ -1270,7 +1270,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La fiche insiste sur le caractère « à tout moment » (pacte possible après l’acte).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "L’« acte de la fonction » comprend aussi :",
     options: [
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Les actes de la fonction ne se limitent pas aux textes : ils incluent la discipline de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "« Acte facilité par la fonction » =",
     options: [
@@ -1297,7 +1297,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ex : consulter des dossiers non accessibles et monnayer des renseignements.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11",
     question: "Peine corruption passive simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "3 ans + 45 000 €"],
@@ -1305,7 +1305,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 : 10 ans et 1 000 000 € (double du produit possible).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11",
     question: "Aggravation principale :",
     options: ["Bande organisée", "Réunion", "Arme"],
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11",
     question: "Vrai/Faux : tentative corruption passive punissable.",
     options: ["Vrai", "Faux", "Uniquement si bande organisée"],
@@ -1321,7 +1321,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : tentative NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "L’avantage en corruption passive peut profiter :",
     options: [
@@ -1334,7 +1334,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Trafic d’influence",
     question: "Le trafic d’influence porte sur :",
     options: [
@@ -1347,7 +1347,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Trafic d’influence : monnayer une influence, pas percevoir une taxe (concussion) ni acte de la fonction (corruption).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Trafic d’influence",
     question: "La décision favorable recherchée peut être :",
     options: [
@@ -1360,7 +1360,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’irrégularité réside dans les moyens (influence achetée), pas forcément dans la décision.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Trafic d’influence",
     question: "Le trafic d’influence vise notamment :",
     options: [
@@ -1373,7 +1373,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Objet du trafic : obtenir une décision favorable d’une autorité/administration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11 al.3",
     question: "Peine trafic d’influence simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "2 ans + 30 000 €"],
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La fiche donne les mêmes peines que corruption passive simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Trafic",
     question: "Vrai/Faux : tentative trafic d’influence punissable.",
     options: ["Vrai", "Faux", "Uniquement si influence réelle"],
@@ -1390,7 +1390,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : tentative NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Distinction",
     question:
         "Un agent public demande 50€ « pour ne pas verbaliser ». Qualification la plus juste :",
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre abstention d’un acte de la fonction (ne pas verbaliser).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Distinction",
     question:
         "Un agent public impose un « droit » inventé pour instruire un dossier. Qualification :",
@@ -1410,7 +1410,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Perception indue à titre de droits/contributions/taxes publics.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Distinction",
     question:
         "Un élu monnaye ses relations pour obtenir une distinction. Qualification :",
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article + Peine",
     question:
         "Un agent public accepte 300€ pour accélérer un acte relevant de ses fonctions. Quelle réponse est correcte ?",
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre acte de la fonction = corruption passive. Peines : 10 ans + 1 000 000 € (double du produit possible).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article + Peine",
     question:
         "Un maire dispense illégalement un proche du paiement d’un loyer communal, sans base légale. Bonne réponse ?",
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exonération/franchise illégale = concussion assimilée. Peines : 5 ans + 500 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article + Peine",
     question:
         "Un élu reçoit un avantage pour user de son influence afin d’obtenir un marché. Bonne réponse ?",
@@ -1463,7 +1463,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Monnayer une influence pour obtenir un marché/décision favorable = trafic d’influence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Concussion",
     question:
         "Vrai/Faux : la concussion suppose nécessairement un enrichissement personnel.",
@@ -1473,7 +1473,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’enrichissement personnel n’est pas requis : seule compte la perception ou exonération illégale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Concussion",
     question:
         "Vrai/Faux : la concussion peut porter sur des prestations en nature.",
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La jurisprudence assimile certaines prestations en nature à des sommes (ex : repas gratuits).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Concussion",
     question: "Vrai/Faux : la concussion nécessite une manœuvre frauduleuse.",
     options: ["Vrai", "Faux", "Uniquement si taxe locale"],
@@ -1493,7 +1493,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Concussion",
     question:
         "Un agent réclame une somme prévue par un texte, mais supérieure au tarif légal. Qualification ?",
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La perception peut être totalement ou partiellement indue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Concussion",
     question:
         "La concussion peut être constituée même si la somme est reversée à :",
@@ -1517,7 +1517,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Article",
     question: "Article réprimant la concussion :",
     options: ["432-10 CP", "432-11 CP", "433-1 CP"],
@@ -1527,7 +1527,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Corruption passive",
     question:
         "Vrai/Faux : en corruption passive, le corrupteur est toujours un particulier.",
@@ -1537,7 +1537,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Si l’auteur est un agent public, l’infraction est toujours qualifiée de corruption passive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Corruption passive",
     question:
         "Vrai/Faux : la corruption passive suppose un acte illégal de la fonction.",
@@ -1548,7 +1548,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Corruption passive",
     question:
         "Un agent accepte un avantage pour accomplir plus rapidement un acte légal. Qualification ?",
@@ -1558,7 +1558,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Même un acte légal peut constituer la corruption s’il est monnayé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Corruption passive",
     question: "L’accord de corruption est constitué dès lors que :",
     options: [
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Corruption",
     question: "Peine maximale corruption passive aggravée (bande organisée) :",
     options: [
@@ -1584,7 +1584,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Trafic d’influence",
     question:
         "Vrai/Faux : le trafic d’influence suppose un acte relevant de la fonction.",
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le trafic d’influence porte sur l’abus d’influence, pas sur l’acte de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Trafic d’influence",
     question: "Vrai/Faux : l’influence peut être seulement supposée.",
     options: ["Vrai", "Faux", "Uniquement réelle"],
@@ -1603,7 +1603,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Trafic d’influence",
     question:
         "Un agent promet d’user de ses relations, sans avoir de pouvoir décisionnel. Qualification ?",
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Trafic",
     question: "Article trafic d’influence (agent public) :",
     options: ["432-11 al.3 CP", "432-10 CP", "433-5 CP"],
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinction concours — Ultra piège",
     question:
         "Un agent impose un « droit fictif » pour instruire un dossier. Qualification exacte ?",
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Perception indue à titre de droits publics, même sans pacte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinction concours — Ultra piège",
     question:
         "Un agent accepte de l’argent pour fermer les yeux sur une infraction. Qualification ?",
@@ -1642,7 +1642,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Avantage contre abstention d’un acte de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinction concours — Ultra piège",
     question:
         "Un élu est payé pour intervenir auprès d’un préfet afin d’obtenir une décision. Qualification ?",
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent réclame 20€ « obligatoires » non prévus par un texte pour un service administratif. Qualification + article ?",
@@ -1665,7 +1665,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Perception indue à titre de droits publics.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent accepte un avantage pour accélérer un acte relevant de ses fonctions. Qualification + article ?",
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Avantage contre acte de la fonction, même légal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent accepte de l’argent pour user de ses relations afin d’obtenir une décision favorable. Qualification + article ?",
@@ -1692,7 +1692,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question: "La concussion est réprimée par :",
     options: ["Article 432-10 CP", "Article 432-11 CP", "Article 433-10 CP"],
@@ -1701,7 +1701,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La concussion est prévue et réprimée par l’article 432-10 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question: "La corruption passive (agent public) est réprimée par :",
     options: [
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’infraction de corruption passive est prévue par l’article 432-11 al.1 et 2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question: "Le trafic d’influence (agent public) est réprimé par :",
     options: [
@@ -1726,7 +1726,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Trafic d’influence : 432-11 alinéa 3 CP (selon ta fiche).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question: "Peines principales de la concussion (432-10) :",
     options: [
@@ -1739,7 +1739,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "432-10 : 5 ans d’emprisonnement + 500 000 € d’amende (pouvant être portée au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question: "Peines principales de la corruption passive simple (432-11) :",
     options: [
@@ -1752,7 +1752,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "432-11 : 10 ans + 1 000 000 € (peut être porté au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question: "Corruption passive aggravée (bande organisée) :",
     options: [
@@ -1765,7 +1765,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "432-11 al.4 : 10 ans + 2 000 000 € (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question:
         "Peines principales du trafic d’influence simple (agent public) :",
@@ -1778,7 +1778,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 al.3 : mêmes peines que corruption passive simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative",
     question: "Tentative de concussion (432-10) :",
     options: [
@@ -1791,7 +1791,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "432-10 al.3 prévoit expressément la tentative (alinéa 1 et alinéa 2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative",
     question: "Tentative de corruption passive (432-11) :",
     options: ["Non punissable", "Punissable", "Punissable si somme > 150 €"],
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative",
     question: "Tentative de trafic d’influence (432-11 al.3) :",
     options: ["Non punissable", "Punissable", "Punissable si influence réelle"],
@@ -1807,7 +1807,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Aggravantes",
     question: "La concussion comporte :",
     options: ["Aucune circonstance aggravante", "Bande organisée", "Réunion"],
@@ -1815,7 +1815,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La fiche : IV — AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Aggravantes",
     question: "Corruption passive aggravée si commise :",
     options: ["En bande organisée", "De nuit", "En réunion"],
@@ -1823,7 +1823,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : la corruption passive exige que l’acte soit effectivement réalisé.",
@@ -1832,7 +1832,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le « pacte de corruption » suffit, même sans exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question: "Vrai/Faux : la concussion nécessite des manœuvres ou menaces.",
     options: ["Vrai", "Faux", "Uniquement si agent public"],
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le moyen importe peu : seul compte le caractère illégal de la perception.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en corruption, l’avantage peut bénéficier à un tiers.",
@@ -1851,7 +1851,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’avantage peut bénéficier à l’auteur OU à autrui (tiers, société, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en trafic d’influence, l’influence doit être réelle et prouvée.",
@@ -1860,7 +1860,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Elle peut être réelle OU supposée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en trafic d’influence, peu importe que la décision favorable soit régulière.",
@@ -1870,7 +1870,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ce sont les moyens irréguliers (l’influence achetée) qui constituent l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en concussion, la somme indue peut être partiellement indue.",
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Somme totalement OU partiellement indue (excède ce qui est dû).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question: "Vrai/Faux : le mobile (bonne intention) excuse la concussion.",
     options: ["Vrai", "Faux", "Seulement si somme faible"],
@@ -1889,7 +1889,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Les mobiles ne sont pas retenus ; seule compte la conscience du caractère indu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Complicité",
     question: "Complicité en concussion :",
     options: ["Oui", "Non", "Seulement si bande organisée"],
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // QCM ULTRA-PIÈGES (distinctions concours) — (31-75)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion vs Corruption",
     question:
         "Un agent public exige « des frais de dossier » non prévus par les textes pour traiter une demande. On retient d’abord :",
@@ -1916,7 +1916,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Perception indue à titre de droits/taxes/contributions, sans nécessité d’avantage offert.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "La concussion peut être constituée même si l’agent :",
     options: [
@@ -1929,7 +1929,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le moyen importe peu : caractère illégal de la perception suffit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question: "En corruption passive, l’élément central est :",
     options: [
@@ -1942,7 +1942,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Pacte de corruption : avantage ↔ acte/abstention/acte facilité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption (moment)",
     question:
         "Un agent reçoit un cadeau « après coup » pour un service déjà rendu. Cela peut être :",
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le pacte peut être postérieur à l’acte ; gratification de remerciement peut entrer dans l’incrimination.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question: "Le trafic d’influence vise principalement :",
     options: [
@@ -1964,7 +1964,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Distinctions, emplois, marchés, toute décision favorable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence vs Corruption",
     question:
         "Un élu est payé pour « appeler quelqu’un » afin d’obtenir un poste à un proche. On retient plutôt :",
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Contre avantage, abus d’influence réelle/supposée pour obtenir un emploi/décision.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption vs Trafic d’influence",
     question:
         "Un agent public est payé pour accomplir un acte qu’il a compétence à réaliser. Qualification la plus typique :",
@@ -1983,7 +1983,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Acte de la fonction contre avantage = corruption passive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence (influence)",
     question: "En trafic d’influence, l’auteur :",
     options: [
@@ -1996,7 +1996,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Il n’est pas nécessaire qu’il ait lui-même un pouvoir décisionnel ; il monnaye une influence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (objet)",
     question: "La concussion porte sur :",
     options: [
@@ -2009,7 +2009,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cœur de la concussion : perception indue de sommes publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (en nature)",
     question:
         "Un directeur d’hôpital se fait nourrir gratuitement chaque jour par la cuisine de l’établissement. Cela peut entrer dans :",
@@ -2023,7 +2023,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La « somme » peut inclure des prestations en nature (jurisprudence).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (salaires)",
     question:
         "Un agent public perçoit des indemnités au-delà de ce à quoi il a droit. Qualification la plus proche :",
@@ -2033,7 +2033,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La jurisprudence inclut salaires/traitements/fournitures dans les « droits ». ",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (excédent)",
     question: "La somme est « indue » notamment lorsque :",
     options: [
@@ -2046,7 +2046,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Indue = non prévue OU excédant ce qui est dû (partiellement indue).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (exonération)",
     question:
         "Accorder volontairement une exonération de redevance du domaine public sans base légale :",
@@ -2060,7 +2060,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exonération/franchise illégale = concussion assimilée (abstention).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption (avantage)",
     question: "En corruption passive, l’avantage peut prendre la forme :",
     options: [
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Offres/promesses/dons/présents/avantages : interprétation large.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Pacte",
     question: "Le « pacte de corruption » est :",
     options: [
@@ -2085,7 +2085,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Accord de volontés ; exécution indifférente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Direct/indirect",
     question: "La corruption peut être :",
     options: [
@@ -2098,7 +2098,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La sollicitation/agrément peut transiter par un intermédiaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — « À tout moment »",
     question: "« À tout moment » signifie que la corruption peut être :",
     options: [
@@ -2110,7 +2110,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le pacte peut intervenir après l’acte (remerciement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Acte facilité",
     question: "« Acte facilité par la fonction » vise notamment :",
     options: [
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Acte non strictement dans les attributions mais rendu possible par la position.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Mandat électif",
     question:
         "Les personnes investies d’un mandat électif public peuvent être auteurs de :",
@@ -2137,7 +2137,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 vise aussi mandat électif public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion vs Corruption (clé)",
     question: "Différence la plus tranchée :",
     options: [
@@ -2155,7 +2155,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // VRAI/FAUX CONCOURS — (76-105)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai/Faux : la concussion peut être commise sans abus d’autorité.",
@@ -2165,7 +2165,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte précise qu’il n’est pas nécessaire d’abuser de l’autorité ou d’employer menaces/manœuvres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai/Faux : la concussion porte uniquement sur des taxes au sens strict.",
@@ -2175,7 +2175,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Elle vise droits/contributions/impôts/taxes, et la jurisprudence inclut même salaires/indemnités/fournitures.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai/Faux : si l’agent se trompe de bonne foi sur un texte, l’intention peut disparaître.",
@@ -2185,7 +2185,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Erreur de fait ou mauvaise interprétation peut exclure l’intention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai/Faux : la corruption passive suppose nécessairement que l’agent soit à l’initiative.",
@@ -2195,7 +2195,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Que l’agent sollicite ou agrée, c’est toujours corruption passive (dès lors qu’il a la qualité).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai/Faux : l’exécution de l’acte promis n’est pas indispensable pour caractériser la corruption.",
@@ -2204,7 +2204,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le pacte suffit ; suivi d’exécution indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai/Faux : un avantage peut être versé à une association ou une société écran.",
@@ -2214,7 +2214,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage possible au profit d’un tiers, y compris personne morale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Trafic d’influence",
     question:
         "Vrai/Faux : le trafic d’influence peut exister même si l’influence n’est jamais exercée.",
@@ -2224,7 +2224,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Peu importe que l’influence soit vaine ou non exercée : l’accord suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Trafic d’influence",
     question:
         "Vrai/Faux : la décision recherchée doit forcément être illégale pour constituer le trafic d’influence.",
@@ -2234,7 +2234,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Même une décision régulière peut être visée : ce sont les moyens irréguliers qui caractérisent l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Bande organisée",
     question: "Vrai/Faux : la bande organisée aggrave la corruption passive.",
     options: ["Vrai", "Faux", "Uniquement la concussion"],
@@ -2242,7 +2242,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "432-11 al.4.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Tentative",
     question:
         "Vrai/Faux : la tentative est punissable en concussion mais pas en corruption passive.",
@@ -2255,7 +2255,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MINI CAS PRATIQUES — QUALIFICATION + ARTICLE + PEINE (106-135)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Qualification + Peine",
     question:
         "Un régisseur exige 20€ alors que le droit de place légal est 10€. Qualification + article ?",
@@ -2269,7 +2269,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Perception excédant ce qui est dû = concussion (C.A. Versailles 26/04/2006). Peine: 5 ans + 500 000 € (double du produit possible).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Qualification + Peine",
     question:
         "Un agent public accepte 300€ pour accélérer un dossier relevant de sa compétence. Qualification ?",
@@ -2283,7 +2283,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Avantage contre acte de la fonction. Peine: 10 ans + 1 000 000 € (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Qualification + Peine",
     question:
         "Un élu est payé pour user de son réseau afin d’obtenir une décoration pour quelqu’un. Qualification ?",
@@ -2297,7 +2297,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Monnayer une influence (réelle/supposée) en vue d’obtenir une distinction. Peine: 10 ans + 1 000 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Concussion (exonération)",
     question:
         "Un maire dispense volontairement son fils du paiement d’une redevance du domaine public prévue par la loi. Qualification ?",
@@ -2311,7 +2311,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exonération/franchise accordée illégalement = concussion assimilée (jurisprudence). Peine: 5 ans + 500 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Corruption (après l’acte)",
     question:
         "Un agent reçoit un cadeau après avoir rendu un service relevant de sa mission, car il avait « anticipé » la gratification. Qualification ?",
@@ -2325,7 +2325,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le pacte peut être postérieur : gratification en remerciement d’un acte accompli.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Aggravation",
     question:
         "Un réseau organisé d’agents publics accepte des avantages contre actes de fonction. Qualification + aggravation ?",
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // SÉRIES “ULTRA QCM” — MÉCANISMES, ÉLÉMENTS, PIÈGES (136-165)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Comparaison aux textes",
     question: "Pour caractériser l’illicéité en concussion, on compare :",
     options: [
@@ -2357,7 +2357,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le caractère illicite se juge au regard de ce que les textes autorisent à percevoir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Ordre de percevoir",
     question:
         "Celui qui ordonne à un subordonné de percevoir un droit non dû est :",
@@ -2367,7 +2367,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Est puni comme concussionnaire celui qui ordonne la perception indue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Subordonné",
     question: "Le subordonné qui exécute sciemment l’ordre illégal peut être :",
     options: [
@@ -2379,7 +2379,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Complicité si aide et assistance sciemment apportées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption — Sollicitation",
     question: "La sollicitation en corruption passive implique :",
     options: [
@@ -2392,7 +2392,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’agent fait comprendre qu’il faut payer pour l’acte/abstention.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption — Agrément",
     question: "L’agrément correspond à :",
     options: [
@@ -2404,7 +2404,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Accord de volontés = pacte de corruption.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption — Direct/Indirect",
     question: "Une corruption « indirecte » suppose :",
     options: [
@@ -2416,7 +2416,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La sollicitation/agrément peut transiter par un tiers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Destinataire",
     question: "Le destinataire à influencer doit être :",
     options: [
@@ -2429,7 +2429,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’influence vise une autorité/administration publique décisionnaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Décision régulière",
     question: "En trafic d’influence, si la décision obtenue est régulière :",
     options: [
@@ -2445,7 +2445,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // BONUS — V/F “FLASH” (166-200) pour révisions rapides
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-10",
     question:
         "Vrai/Faux : la concussion peut porter sur une prestation en nature.",
@@ -2454,7 +2454,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Notion large de somme (prestations en nature admises).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-10",
     question:
         "Vrai/Faux : la concussion nécessite un pacte entre deux personnes.",
@@ -2463,7 +2463,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Pas de pacte : perception indue suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-11",
     question:
         "Vrai/Faux : en corruption passive, l’avantage peut être une promesse.",
@@ -2472,7 +2472,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Offres/promesses/dons/présents/avantages.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-11",
     question:
         "Vrai/Faux : la corruption passive exige que l’avantage soit « sans droit ».",
@@ -2481,7 +2481,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise « sans droit ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-11",
     question:
         "Vrai/Faux : la bande organisée change la peine d’emprisonnement en corruption passive.",
@@ -2491,7 +2491,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La peine d’emprisonnement reste à 10 ans, l’amende passe à 2 000 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — Trafic",
     question:
         "Vrai/Faux : en trafic d’influence, l’influence doit être exercée par l’auteur lui-même.",
@@ -2501,7 +2501,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La fiche précise une influence directe : l’intéressé est censé l’exercer lui-même.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — Trafic",
     question:
         "Vrai/Faux : en trafic d’influence, peu importe que l’avantage demandé profite à un tiers.",
@@ -2510,7 +2510,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Avantage pour lui-même ou pour autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — Réduction",
     question:
         "Vrai/Faux : une réduction de peine est prévue en corruption/traﬁc si l’auteur aide à identifier d’autres auteurs.",
@@ -2521,7 +2521,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Auteur",
     question: "Peut être auteur de concussion :",
     options: [
@@ -2536,7 +2536,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Élément matériel",
     question: "La perception indue peut consister à :",
     options: [
@@ -2550,7 +2550,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Moyen",
     question: "Les moyens utilisés pour percevoir la somme :",
     options: [
@@ -2563,7 +2563,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Somme",
     question: "La notion de somme inclut :",
     options: [
@@ -2577,7 +2577,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Droits",
     question: "La notion de « droits » inclut :",
     options: [
@@ -2591,7 +2591,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Exonération",
     question: "Accorder illégalement une exonération de taxe constitue :",
     options: [
@@ -2604,7 +2604,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -2618,7 +2618,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Erreur",
     question: "L’erreur de fait ou de droit :",
     options: [
@@ -2632,7 +2632,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Peines",
     question: "Peines principales de la concussion :",
     options: [
@@ -2645,7 +2645,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai ou Faux : la concussion comporte des circonstances aggravantes.",
@@ -2655,7 +2655,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question: "Vrai ou Faux : la tentative de concussion est punissable.",
     options: ["Vrai", "Faux", "Seulement pour l’alinéa 2"],
@@ -2664,7 +2664,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Concussion",
     question:
         "Un maire impose une somme non prévue par les textes pour chaque logement construit. Qualification ?",
@@ -2678,7 +2678,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // CORRUPTION PASSIVE — 432-11 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Définition",
     question: "La corruption passive consiste à :",
     options: [
@@ -2691,7 +2691,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Qualification",
     question: "La qualification passive dépend :",
     options: [
@@ -2705,7 +2705,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Auteur",
     question: "Peut être auteur de corruption passive :",
     options: [
@@ -2719,7 +2719,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Acte",
     question: "La corruption peut porter sur :",
     options: [
@@ -2732,7 +2732,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Moment",
     question: "Le pacte de corruption peut intervenir :",
     options: ["Avant ou après l’acte", "Uniquement avant", "Uniquement après"],
@@ -2741,7 +2741,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Avantage",
     question: "L’avantage peut être :",
     options: [
@@ -2754,7 +2754,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Élément moral",
     question: "Il faut établir :",
     options: [
@@ -2767,7 +2767,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Aggravation",
     question: "La corruption est aggravée lorsqu’elle est commise :",
     options: ["En bande organisée", "En réunion", "Avec arme"],
@@ -2776,7 +2776,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Peines",
     question: "Peines de la corruption passive simple :",
     options: [
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai ou Faux : la tentative de corruption passive est punissable.",
@@ -2799,7 +2799,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Corruption",
     question:
         "Un policier accepte de l’argent pour ne pas dresser un PV. Qualification ?",
@@ -2813,7 +2813,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // TRAFIC D’INFLUENCE — 432-11 AL.3 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Définition",
     question: "Le trafic d’influence consiste à :",
     options: [
@@ -2826,7 +2826,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Influence",
     question: "L’influence peut être :",
     options: ["Réelle ou supposée", "Uniquement réelle", "Uniquement supposée"],
@@ -2835,7 +2835,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Objet",
     question: "L’influence vise à obtenir :",
     options: [
@@ -2848,7 +2848,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Acte",
     question: "L’auteur agit :",
     options: [
@@ -2861,7 +2861,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Peines",
     question: "Peines du trafic d’influence simple :",
     options: [
@@ -2874,7 +2874,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Trafic d’influence",
     question:
         "Vrai ou Faux : la tentative de trafic d’influence est punissable.",
@@ -2883,7 +2883,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La tentative n’est pas punissable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Définition",
     question: "Le faux (441-1 CP) consiste en :",
     options: [
@@ -2897,7 +2897,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-1 : altération de la vérité + nature à causer un préjudice + support destiné/ayant pour effet d’établir la preuve d’un droit ou d’un fait à conséquences juridiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Définition",
     question: "441-4 réprime :",
     options: [
@@ -2911,7 +2911,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Texte spécial : écriture publique/authentique + enregistrements.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Préjudice",
     question: "Dans 441-4, le préjudice éventuel :",
     options: [
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Valeur probatoire particulière des actes publics/authentiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Peine simple",
     question: "441-4 (simple) :",
     options: ["10 ans", "7 ans + 100k", "5 ans + 75k"],
@@ -2932,7 +2932,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 10 ans d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Aggravation",
     question: "Aggravation 441-4 si :",
     options: ["Dépositaire/Mission SP en exercice", "En réunion", "La nuit"],
@@ -2940,7 +2940,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-4 al.3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-4 — Peine aggravée",
     question: "441-4 aggravé :",
     options: ["15 ans de réclusion", "10 ans", "7 ans + 100k"],
@@ -2948,7 +2948,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Crime : 15 ans (tableau).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-4",
     question:
         "Vrai/Faux : 441-4 peut viser un enregistrement ordonné par l’autorité publique.",
@@ -2958,7 +2958,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise aussi enregistrements sonores/visuels/audiovisuels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-4 vs 441-2",
     question: "Falsifier un PV d’OPJ (acte de procédure) relève plutôt de :",
     options: ["441-4", "441-2", "441-6"],
@@ -2966,7 +2966,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Acte judiciaire/procédural = écriture publique/authentique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-4",
     question: "Peine simple 441-4 :",
     options: ["10 ans", "5 ans + 75k", "3 ans + 45k"],
@@ -2976,7 +2976,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // mini-cas 9-25 (17)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-4",
     question: "Faux acte notarié :",
     options: ["441-4", "441-1", "441-7"],
@@ -2984,7 +2984,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Acte authentique = 441-4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-4 usage",
     question: "Utiliser un faux acte authentique en banque :",
     options: ["Usage 441-4", "441-6", "441-5"],
@@ -2992,7 +2992,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage d’un faux en écriture authentique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-4 aggravé",
     question: "Officier public falsifie un acte dans sa mission :",
     options: ["441-4 aggravé (15 ans)", "441-2 aggravé", "441-1"],
@@ -3004,7 +3004,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =======================
   // 441-5 — DÉLIVRANCE INDUE (26-60)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Définition",
     question: "441-5 :",
     options: [
@@ -3017,7 +3017,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Acteur = celui qui procure/délivre à autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Authentique",
     question: "441-5 concerne :",
     options: ["Docs authentiques", "Docs falsifiés", "Uniquement attestations"],
@@ -3025,7 +3025,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ce n’est pas un faux : c’est une délivrance indue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Élément moral",
     question: "Il faut :",
     options: [
@@ -3037,7 +3037,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Remise en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Aggravation 1°",
     question: "Aggravé si auteur :",
     options: ["Dépositaire/Mission SP en exercice", "Mineur", "Témoin"],
@@ -3045,7 +3045,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-5 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Aggravation 2°",
     question: "Aggravé si :",
     options: ["Habituelle", "De nuit", "Avec casier judiciaire"],
@@ -3053,7 +3053,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-5 2°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Aggravation 3°",
     question: "Aggravé si dessein :",
     options: [
@@ -3065,7 +3065,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-5 3°.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Peine simple",
     question: "441-5 simple :",
     options: ["5 ans + 75 000 €", "2 ans + 30 000 €", "3 ans + 45 000 €"],
@@ -3073,7 +3073,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-5 — Peine aggravée",
     question: "441-5 aggravée :",
     options: ["7 ans + 100 000 €", "10 ans", "15 ans réclusion"],
@@ -3081,7 +3081,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-5 aggravée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai/Faux : 441-5 exige une falsification matérielle du document.",
@@ -3090,7 +3090,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "C’est un document authentique délivré indûment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6",
     question: "Auteur = celui qui remet/procure à autrui :",
     options: ["441-5", "441-6", "441-7"],
@@ -3100,7 +3100,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // mini-cas 36-60 (25)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-5",
     question: "Fonctionnaire donne un document à un non-droit :",
     options: ["441-5", "441-6", "441-2"],
@@ -3108,7 +3108,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Délivrance indue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-5",
     question:
         "Particulier fait remettre le document par un tiers de bonne foi :",
@@ -3117,7 +3117,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Procurer = même si remise via tiers de bonne foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Définition",
     question: "441-6 al.1 :",
     options: [
@@ -3130,7 +3130,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Auteur = bénéficiaire (ou celui qui obtient pour autrui).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Fraude",
     question: "Moyen frauduleux =",
     options: [
@@ -3142,7 +3142,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "« Quelque moyen frauduleux que ce soit ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Organismes",
     question: "441-6 vise aussi :",
     options: [
@@ -3155,7 +3155,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Extension prévue par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Alinéa 2",
     question: "441-6 al.2 :",
     options: [
@@ -3168,7 +3168,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Incrimination assimilée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Consommation al.2",
     question: "Al.2 : l’avantage doit être versé ?",
     options: ["Non (but suffit)", "Oui obligatoire", "Seulement si écrit"],
@@ -3176,7 +3176,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Obtenir/tenter d’obtenir (ou faire obtenir).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Élément moral",
     question: "Il faut :",
     options: [
@@ -3189,7 +3189,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Intention frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Aggravantes",
     question: "441-6 comporte :",
     options: ["Aucune aggravante", "Réunion", "Arme"],
@@ -3197,7 +3197,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : IV AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-6 — Peines",
     question: "441-6 :",
     options: ["2 ans + 30 000 €", "3 ans + 45 000 €", "5 ans + 75 000 €"],
@@ -3205,7 +3205,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question: "Vrai/Faux : 441-6 exige un préjudice effectif.",
     options: ["Vrai", "Faux", "Seulement si allocation"],
@@ -3214,7 +3214,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que l’infraction peut être qualifiée sans préjudice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-6 vs 441-2",
     question:
         "Fausse date d’entrée sur formulaire de séjour (doc ensuite délivré authentique) :",
@@ -3225,7 +3225,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // mini-cas 11-45 (35)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6",
     question: "Mensonge pour obtenir un plan de chasse :",
     options: ["441-6", "441-2", "441-5"],
@@ -3233,7 +3233,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Obtention indue par fausse déclaration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6",
     question: "Mariage de complaisance pour titre de séjour :",
     options: ["441-6 (manœuvres)", "441-2", "441-7"],
@@ -3242,7 +3242,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Manœuvres frauduleuses pour obtention indue (selon ton cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6 al.2",
     question: "Omission volontaire de revenus pour aide sociale :",
     options: ["441-6 al.2", "441-7", "441-5"],
@@ -3250,7 +3250,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Déclaration incomplète volontaire + avantage indu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-6 al.2",
     question: "Déclaration fausse verbale puis consignée et signée :",
     options: ["Peut relever 441-6 al.2", "Jamais 441-6", "Toujours 441-7"],
@@ -3259,7 +3259,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours admet fausse déclaration verbale (selon modalités) / ou écrite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — acteur",
     question: "Celui qui ment pour obtenir pour lui-même :",
     options: ["441-6", "441-5", "441-2"],
@@ -3271,7 +3271,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =======================
   // 441-7 — ATTESTATIONS/CERTIFICATS (46-100)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Définition",
     question: "441-7 réprime :",
     options: [
@@ -3283,7 +3283,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial attestations/certificats.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Écrit",
     question: "Condition :",
     options: ["Écrit obligatoire", "Oral suffit", "SMS oral suffit"],
@@ -3291,7 +3291,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Renseignements oraux ne suffisent pas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Profit d’un tiers",
     question: "Le document doit être :",
     options: [
@@ -3303,7 +3303,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Attestation pour soi-même exclue (selon ton cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Faits matériellement inexacts",
     question: "Cela vise :",
     options: ["Faits objectifs vérifiables", "Opinions", "Suppositions"],
@@ -3311,7 +3311,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Éléments susceptibles de preuve contraire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Consommation",
     question: "Établissement est consommé :",
     options: [
@@ -3323,7 +3323,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Indépendant de l’usage futur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Élément moral",
     question: "Il faut :",
     options: ["Connaissance de l’inexactitude", "Imprudence", "Bonne foi"],
@@ -3331,7 +3331,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Intention : savoir que c’est inexact.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Usage",
     question: "Usage 441-7 suppose :",
     options: [
@@ -3343,7 +3343,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Comme l’usage de faux : acte + connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Aggravation al.5",
     question: "Aggravé si :",
     options: [
@@ -3356,7 +3356,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Selon ton cours (alinéa 5).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Peine simple",
     question: "441-7 simple :",
     options: ["1 an + 15 000 €", "2 ans + 30 000 €", "3 ans + 45 000 €"],
@@ -3364,7 +3364,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-7 — Peine aggravée",
     question: "441-7 aggravée :",
     options: ["3 ans + 45 000 €", "5 ans + 75 000 €", "7 ans + 100 000 €"],
@@ -3372,7 +3372,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-7 aggravé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question: "Vrai/Faux : l’auteur doit prévoir l’usage futur par le tiers.",
     options: ["Vrai", "Faux", "Seulement si juge"],
@@ -3382,7 +3382,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // 57-100 mini-cas + pièges (44 items)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-7",
     question: "Attestation mensongère pour prud’hommes :",
     options: ["441-7", "441-6", "441-2"],
@@ -3390,7 +3390,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Attestation écrite inexacte en faveur d’un tiers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-7",
     question: "Falsifier une attestation sincère (modifier date) :",
     options: ["441-7", "441-2", "441-6"],
@@ -3398,7 +3398,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Falsification d’attestation sincère.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-7 usage",
     question: "Produire en divorce un certificat de mariage fabriqué :",
     options: [
@@ -3411,7 +3411,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Si certificat de mariage = doc admin (selon ton cours), usage doc admin falsifié.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-7 vs 441-1",
     question: "Attestation = texte spécial :",
     options: ["441-7 prioritaire", "441-1 toujours", "441-6 toujours"],
@@ -3419,7 +3419,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial pour attestations/certificats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai/Faux : une attestation sur l’honneur faite pour soi-même entre dans 441-7.",
@@ -3433,7 +3433,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =======================
   // TENTATIVE / COMPLICITÉ / PM (101-110)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tentative — 441-9",
     question: "La tentative des délits 441-1 à 441-7 :",
     options: ["Est punissable (441-9)", "Ne l’est jamais", "Seulement 441-1"],
@@ -3441,7 +3441,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial 441-9.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Complicité — Principe",
     question: "La complicité est :",
     options: [
@@ -3453,7 +3453,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aide/assistance, provocation, instructions (121-6/121-7).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes morales — 441-12",
     question: "PM pénalement responsables :",
     options: ["Oui (441-12)", "Non", "Seulement associations"],
@@ -3461,7 +3461,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Selon tes pages : responsabilité PM prévue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux/usage de faux général :",
     options: ["441-1", "441-2", "441-6"],
@@ -3469,7 +3469,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte général.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux doc administratif :",
     options: ["441-2", "441-5", "441-7"],
@@ -3477,7 +3477,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial doc admin.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux écriture publique/authentique :",
     options: ["441-4", "441-1", "441-6"],
@@ -3485,7 +3485,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Délivrance indue doc administratif :",
     options: ["441-5", "441-6", "441-2"],
@@ -3493,7 +3493,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Procure à autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Obtention indue doc administratif :",
     options: ["441-6", "441-5", "441-1"],
@@ -3501,7 +3501,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Se fait délivrer par fraude.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Faux certificats/attestations :",
     options: ["441-7", "441-2", "441-6"],
@@ -3509,7 +3509,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial attestations.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-6 :",
     options: ["2 ans + 30k", "3 ans + 45k", "5 ans + 75k"],
@@ -3517,7 +3517,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-5 simple :",
     options: ["5 ans + 75k", "2 ans + 30k", "1 an + 15k"],
@@ -3525,7 +3525,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-2 simple :",
     options: ["5 ans + 75k", "3 ans + 45k", "2 ans + 30k"],
@@ -3533,7 +3533,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-1 :",
     options: ["3 ans + 45k", "5 ans + 75k", "10 ans"],
@@ -3541,7 +3541,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-4 simple :",
     options: ["10 ans", "7 ans + 100k", "3 ans + 45k"],
@@ -3549,7 +3549,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-4 aggravé :",
     options: ["15 ans réclusion", "10 ans", "7 ans + 100k"],
@@ -3557,7 +3557,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Crime (al.3).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peine",
     question: "Peine 441-7 simple :",
     options: ["1 an + 15k", "2 ans + 30k", "3 ans + 45k"],
@@ -3567,7 +3567,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // 21-60 — Vrai/Faux (pièges)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Spécialité",
     question: "Vrai/Faux : si doc administratif, 441-2 prime sur 441-1.",
     options: ["Vrai", "Faux", "Toujours 441-7"],
@@ -3575,7 +3575,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial généralement appliqué.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question: "Vrai/Faux : 441-6 exige une falsification matérielle.",
     options: ["Vrai", "Faux", "Seulement si permis"],
@@ -3583,7 +3583,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Fraude à l’obtention d’un doc authentique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai/Faux : 441-5 vise un document authentique délivré indûment.",
@@ -3592,7 +3592,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Oui, pas un faux matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question: "Vrai/Faux : l’usage nécessite un acte positif.",
     options: ["Vrai", "Faux", "Uniquement 441-1"],
@@ -3600,7 +3600,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage ≠ détention.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question: "Vrai/Faux : 441-7 peut être constitué sans usage du document.",
     options: ["Vrai", "Faux", "Uniquement si aggravé"],
@@ -3610,7 +3610,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // 61-110 — Cas pratiques “flash” (50)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Modifier physiquement un titre de séjour :",
     options: ["441-2", "441-6", "441-5"],
@@ -3618,7 +3618,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Falsification doc administratif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question:
         "Mentir sur formulaire pour obtenir titre de séjour authentique :",
@@ -3627,7 +3627,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Obtention indue par moyen frauduleux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Agent délivre permis à non-droit :",
     options: ["441-5", "441-6", "441-2"],
@@ -3635,7 +3635,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Délivrance indue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Attestation mensongère signée pour un ami :",
     options: ["441-7", "441-1", "441-6"],
@@ -3643,7 +3643,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial attestations.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Utiliser un permis falsifié au contrôle :",
     options: ["Usage 441-2", "441-6", "441-5"],
@@ -3651,7 +3651,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage d’un doc admin falsifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Omettre revenu pour prestation sociale :",
     options: ["441-6 al.2", "441-7", "441-5"],
@@ -3659,7 +3659,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Déclaration incomplète volontaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Qualification",
     question: "Faux acte notarié fabriqué :",
     options: ["441-4", "441-2", "441-7"],
@@ -3667,7 +3667,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Acte authentique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Peine",
     question: "Qualification 441-6 → peine :",
     options: ["2 ans + 30k", "3 ans + 45k", "5 ans + 75k"],
@@ -3675,7 +3675,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Peine",
     question: "Qualification 441-2 simple → peine :",
     options: ["5 ans + 75k", "2 ans + 30k", "1 an + 15k"],
@@ -3683,7 +3683,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Peine",
     question: "Qualification 441-7 simple → peine :",
     options: ["1 an + 15k", "2 ans + 30k", "3 ans + 45k"],
@@ -3695,7 +3695,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // Pour atteindre 110 sans te pondre un roman illisible,
   // je continue avec une rafale de cas ultra courts (mêmes règles).
   // (Tu peux les laisser tels quels, ils sont valides et variés.)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "Doc authentique délivré indûment (pas falsifié) :",
     options: ["441-5/441-6 selon acteur", "441-2", "441-4"],
@@ -3703,7 +3703,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Procure à autrui = 441-5 ; se fait délivrer = 441-6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "Le bénéficiaire ment, l’agent ne sait pas :",
     options: ["441-6", "441-5", "441-2"],
@@ -3711,7 +3711,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Fraude côté bénéficiaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "L’agent sait et délivre quand même :",
     options: ["441-5", "441-6", "441-7"],
@@ -3719,7 +3719,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Délivrance indue en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas flash — Piège",
     question: "Un tiers remet le document à la place de l’auteur :",
     options: ["Peut rester 441-5", "Devient 441-6", "Devient 441-7"],
@@ -3727,7 +3727,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Procurer = même si remise via tiers de bonne foi (cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-5 aggravé",
     question: "Réseau qui délivre indûment des permis « à la chaîne » :",
     options: ["441-5 aggravé (habitude)", "441-6", "441-7"],
@@ -3735,7 +3735,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Commission habituelle = aggravation 2°.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Faux vs obtention indue",
     question:
         "Une personne obtient un document administratif authentique en mentant sur sa situation. Aucune falsification matérielle n’est constatée. Quelle qualification ?",
@@ -3750,7 +3750,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Faux vs délivrance indue",
     question:
         "Un agent administratif délivre volontairement un permis à une personne qu’il sait ne pas y avoir droit, sans falsifier le document. Qualification ?",
@@ -3765,7 +3765,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-6",
     question:
         "Une carte d’identité est matériellement modifiée après sa délivrance pour changer la date de naissance. Qualification ?",
@@ -3780,7 +3780,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Usage ou simple détention",
     question:
         "Une personne conserve chez elle un faux document administratif sans jamais l’utiliser. Quelle infraction est la plus adaptée ?",
@@ -3798,7 +3798,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // VRAI / FAUX — ULTRA PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Faux intellectuel",
     question:
         "Vrai ou Faux : le faux intellectuel suppose nécessairement une falsification matérielle du support.",
@@ -3809,7 +3809,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage de faux",
     question:
         "Vrai ou Faux : chaque utilisation d’un même document falsifié constitue une nouvelle infraction.",
@@ -3820,7 +3820,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question:
         "Vrai ou Faux : l’obtention indue d’un document administratif suppose obligatoirement un préjudice effectif.",
@@ -3830,7 +3830,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai ou Faux : une attestation mensongère établie pour son propre usage personnel entre dans le champ de 441-7.",
@@ -3843,7 +3843,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // QCM — ÉLÉMENT MORAL (ULTRA CLASSIQUE EXAM)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — Faux (441-1)",
     question: "Quel élément intentionnel est requis pour le faux (441-1) ?",
     options: [
@@ -3858,7 +3858,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — Usage de faux",
     question: "Pour caractériser l’usage de faux, il faut :",
     options: [
@@ -3872,7 +3872,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — 441-5",
     question: "L’élément moral de la délivrance indue (441-5) repose sur :",
     options: [
@@ -3886,7 +3886,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — 441-6",
     question: "Concernant l’obtention indue (441-6), l’auteur doit :",
     options: [
@@ -3903,7 +3903,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MINI CAS PRATIQUES — QUALIFICATION EXPRESS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Attestation",
     question:
         "Un individu rédige une attestation écrite mensongère en faveur d’un ami pour l’aider dans un litige prud’homal. Qualification + peine ?",
@@ -3918,7 +3918,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Usage répété",
     question:
         "Une personne utilise à plusieurs reprises le même faux document administratif pour différentes démarches. Combien d’infractions d’usage ?",
@@ -3932,7 +3932,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Agent public",
     question:
         "Un fonctionnaire falsifie un document administratif dans l’exercice de ses fonctions. Qualification principale ?",
@@ -3946,7 +3946,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Faux administratif + qualité dépositaire de l’autorité publique → circonstance aggravante.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Définition",
     question: "Le faux (441-1 CP) suppose :",
     options: [
@@ -3960,7 +3960,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le faux = altération de la vérité + nature à causer préjudice + support destiné/pouvant servir de preuve d’un droit/fait à conséquences juridiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Support",
     question: "Le support du faux peut être :",
     options: [
@@ -3974,7 +3974,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise aussi les supports informatiques (clé USB, disque dur, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Valeur probatoire",
     question: "Pour relever de 441-1, le support doit :",
     options: [
@@ -3988,7 +3988,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Notion de valeur probatoire : supports prévus pour prouver, ou pouvant servir de preuve.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Document de hasard",
     question: "Un document « de hasard » peut être support du faux si :",
     options: [
@@ -4002,7 +4002,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Même si non créé pour prouver, il peut acquérir une valeur probatoire par son usage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Falsification matérielle",
     question: "Le faux matériel correspond à :",
     options: [
@@ -4016,7 +4016,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Faux matériel = atteinte au support, souvent détectable à l’examen du document.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Falsification intellectuelle",
     question: "Le faux intellectuel correspond à :",
     options: [
@@ -4030,7 +4030,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le mensonge atteint le contenu (faits) et non l’aspect matériel du support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Préjudice",
     question: "Le préjudice exigé par 441-1 :",
     options: [
@@ -4044,7 +4044,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Condition : altération de nature à causer un préjudice, même potentiel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Usage",
     question: "L’usage de faux suppose :",
     options: [
@@ -4058,7 +4058,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage = utilisation effective (acte positif), en connaissance du caractère faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Infraction instantanée",
     question: "L’usage de faux est une infraction :",
     options: [
@@ -4072,7 +4072,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Tout acte d’usage est distinct : plusieurs utilisations = plusieurs usages.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Peines",
     question: "Les peines principales de 441-1 sont :",
     options: [
@@ -4088,7 +4088,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-2 — FAUX DANS UN DOCUMENT ADMINISTRATIF (+ USAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Définition",
     question: "441-2 réprime :",
     options: [
@@ -4102,7 +4102,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Faux administratif = document délivré par administration pour droit/identité/qualité/autorisation, falsifié.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Documents visés",
     question: "Un document administratif (441-2) peut viser :",
     options: [
@@ -4116,7 +4116,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ce sont des documents délivrés par l’administration pour constater/autoriser.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Usage vs R.645-8",
     question:
         "Utiliser un document administratif non falsifié mais devenu inexact/incomplet correspond plutôt à :",
@@ -4130,7 +4130,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Si le document n’est pas falsifié mais simplement inexact/incomplet → R.645-8 (selon ta page).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation qualité",
     question: "441-2 est aggravé si commis :",
     options: [
@@ -4143,7 +4143,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Circonstance aggravante 441-2 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation dessein",
     question: "441-2 est aggravé si commis :",
     options: [
@@ -4156,7 +4156,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Circonstance aggravante (dessein) prévue par le texte (3°).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines simples",
     question: "441-2 (simple) :",
     options: [
@@ -4168,7 +4168,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-2 simple = 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines aggravées",
     question: "441-2 (aggravé) :",
     options: [
@@ -4184,7 +4184,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-4 — FAUX DANS ÉCRITURE PUBLIQUE / AUTHENTIQUE (+ USAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Définition",
     question: "441-4 vise :",
     options: [
@@ -4198,7 +4198,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Écritures publiques/authentiques et enregistrements ordonnés par l’autorité publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Préjudice",
     question: "Dans 441-4, le préjudice éventuel est considéré :",
     options: [
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La valeur probatoire des actes publics/authentiques fonde l’atteinte à la foi publique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine simple",
     question: "441-4 (simple) :",
     options: [
@@ -4224,7 +4224,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Tableau : faux en écriture publique/authentique simple = 10 ans.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine aggravée",
     question: "441-4 (aggravé par qualité en exercice) :",
     options: [
@@ -4240,7 +4240,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-5 — DÉLIVRANCE INDUE DE DOCUMENT ADMINISTRATIF
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Cœur du texte",
     question: "441-5 réprime le fait de :",
     options: [
@@ -4254,7 +4254,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 = délivrance/procurement à autrui (acteur = celui qui fait obtenir).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Document authentique",
     question: "441-5 concerne :",
     options: [
@@ -4267,7 +4267,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : ce ne sont pas des faux, mais des documents authentiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Élément moral",
     question: "L’auteur de 441-5 doit :",
     options: [
@@ -4280,7 +4280,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Remise en toute connaissance de cause = élément intentionnel central.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation habitude",
     question: "441-5 est aggravé si commis :",
     options: [
@@ -4292,7 +4292,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation 2° : commission habituelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peine simple",
     question: "441-5 (simple) :",
     options: [
@@ -4304,7 +4304,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-5 simple = 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peine aggravée",
     question: "441-5 (aggravé) :",
     options: [
@@ -4320,7 +4320,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-6 — OBTENTION INDUE (+ FAUSSE / INCOMPLÈTE DÉCLARATION AL.2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Définition",
     question: "441-6 (alinéa 1) vise :",
     options: [
@@ -4334,7 +4334,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-6 = obtention par le bénéficiaire (ou pour autrui) via fraude.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Moyens frauduleux",
     question: "Les moyens de 441-6 peuvent être :",
     options: [
@@ -4348,7 +4348,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise « quelque moyen frauduleux que ce soit » et donne des exemples.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Alinéa 2",
     question: "441-6 al.2 vise :",
     options: [
@@ -4362,7 +4362,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Al.2 = avantages indus (personne publique / protection sociale / mission SP).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Consommation al.2",
     question: "Pour 441-6 al.2, l’infraction est consommée :",
     options: [
@@ -4376,7 +4376,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le but suffit : obtenir ou tenter d’obtenir (ou faire obtenir).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Circonstances aggravantes",
     question: "441-6 comporte des circonstances aggravantes :",
     options: ["Aucune", "En réunion", "Avec arme"],
@@ -4384,7 +4384,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : IV — AUCUNE circonstance aggravante.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Peines",
     question: "441-6 (alinéa 1 et 2) :",
     options: [
@@ -4400,7 +4400,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-7 — FAUX CERTIFICATS / ATTESTATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Définition",
     question: "441-7 réprime notamment :",
     options: [
@@ -4414,7 +4414,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-7 vise établissement / falsification / usage d’attestations ou certificats.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Écrit uniquement",
     question: "441-7 exige :",
     options: [
@@ -4427,7 +4427,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : seuls certificats/attestations écrits entrent dans le champ.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Au profit d’un tiers",
     question: "Pour relever de 441-7, le document doit être établi :",
     options: [
@@ -4440,7 +4440,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours exclut l’attestation sur l’honneur établie pour soi-même.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Peine simple",
     question: "441-7 (simple) :",
     options: [
@@ -4452,7 +4452,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-7 simple = 1 an + 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux attestations (441-7) — Peine aggravée",
     question: "441-7 (aggravé, notamment al.5) :",
     options: [
@@ -4468,7 +4468,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-9 — TENTATIVE (COMMUN AUX 441-1 / 441-2 / 441-4 / 441-5 / 441-6 / 441-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tentative — Principe (441-9)",
     question: "La tentative des délits 441-1 à 441-7 est :",
     options: [
@@ -4485,7 +4485,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-12 — PERSONNES MORALES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes morales — 441-12",
     question:
         "La responsabilité pénale des personnes morales pour ces infractions est prévue par :",
@@ -4503,7 +4503,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // VRAI / FAUX — SÉRIES (format options)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai ou Faux : 441-5 réprime la fabrication d’un faux document administratif.",
@@ -4513,7 +4513,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 vise la délivrance/procurement indus de documents authentiques (pas la falsification).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question:
         "Vrai ou Faux : 441-2 réprime aussi l’usage du faux document administratif.",
@@ -4523,7 +4523,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte réprime le faux et l’usage de ce faux (documents administratifs).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6 al.2",
     question:
         "Vrai ou Faux : une déclaration incomplète peut constituer 441-6 al.2 si elle est volontaire et vise un avantage indu.",
@@ -4533,7 +4533,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Omission volontaire (déclaration incomplète) + but d’obtenir un avantage indu suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question:
         "Vrai ou Faux : la simple détention d’un faux constitue automatiquement un usage de faux.",
@@ -4543,7 +4543,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage = acte positif d’utilisation ; la détention seule ne suffit pas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai ou Faux : l’infraction 441-7 peut être constituée même si l’auteur n’a pas prévu l’usage que fera le tiers.",
@@ -4557,7 +4557,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // QCM “PIÈGES” — DISTINCTIONS EXPRESS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6 (acteur)",
     question:
         "Qui est typiquement l’auteur principal de 441-5 (délivrance indue) ?",
@@ -4572,7 +4572,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 = acteur “délivreur” (fonctionnaire complaisant ou particulier) qui procure à autrui.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-6 (bénéficiaire)",
     question:
         "Qui est typiquement l’auteur principal de 441-6 (obtention indue) ?",
@@ -4585,7 +4585,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-6 = obtention indue par moyen frauduleux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-1 vs 441-7",
     question:
         "Pourquoi une attestation mensongère est plutôt qualifiée sous 441-7 que 441-1 ?",
@@ -4604,7 +4604,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MINI CAS PRATIQUES — QUALIF + ARTICLE + PEINE (style concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Fausse déclaration (441-6)",
     question:
         "Un individu fournit sciemment de faux renseignements pour obtenir un plan de chasse. Qualification + peine ?",
@@ -4618,7 +4618,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Document authentique obtenu par fraude (fausse déclaration) → 441-6 (2 ans / 30 000 €).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Agent complaisant (441-5)",
     question:
         "Un agent remet un titre de séjour authentique à une personne qu’il sait ne pas y avoir droit. Qualification + peine simple ?",
@@ -4632,7 +4632,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Procurer frauduleusement à autrui un document authentique → 441-5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Modification physique (441-2)",
     question:
         "Une personne gratte et remplace une date sur un permis de conduire. Qualification + peine simple ?",
@@ -4646,7 +4646,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Falsification matérielle d’un document administratif → 441-2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Usage (441-1)",
     question:
         "Une personne utilise un document falsifié pour prouver un droit dans une procédure. Qualification + peine ?",
@@ -4660,7 +4660,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage d’une pièce fausse à finalité probatoire → usage de faux (441-1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Attestation mensongère (441-7)",
     question:
         "Une personne signe une attestation écrite mensongère au profit d’un voisin. Qualification + peine simple ?",
@@ -4674,7 +4674,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Attestation au profit d’autrui, faits matériellement inexacts → 441-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Avantage indu (441-6 al.2)",
     question:
         "Un demandeur omet volontairement de déclarer un revenu pour obtenir une prestation sociale. Qualification + peine ?",
@@ -4688,7 +4688,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Déclaration incomplète volontaire pour avantage indu → 441-6 al.2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Écriture publique (441-4)",
     question:
         "Un faux est commis dans une écriture publique/authentique. Qualification + peine simple ?",
@@ -4702,7 +4702,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Faux en écriture publique/authentique : 441-4 (simple) = 10 ans.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Écriture publique aggravée (441-4)",
     question:
         "Le faux en écriture publique est commis par un dépositaire de l’autorité publique dans l’exercice des fonctions. Peine ?",
@@ -4720,7 +4720,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // SÉRIES “ULTRA COURTES” — RÉFLEXES (mix niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question:
         "Quel article réprime l’obtention indue de document administratif ?",
@@ -4729,7 +4729,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Obtention indue = 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question:
         "Quel article réprime la délivrance indue de document administratif ?",
@@ -4738,7 +4738,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Délivrance indue = 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Quel article réprime le faux dans un document administratif ?",
     options: ["441-2", "441-1", "441-4"],
@@ -4746,7 +4746,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Faux dans document administratif = 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Article",
     question: "Quel article réprime les faux certificats/attestations ?",
     options: ["441-7", "441-6", "441-5"],
@@ -4754,7 +4754,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Faux certificats/attestations = 441-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-6 (obtenir un document/avantage indu par fraude) :",
     options: ["2 ans et 30 000 €", "3 ans et 45 000 €", "5 ans et 75 000 €"],
@@ -4762,7 +4762,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-5 (délivrance indue) simple :",
     options: ["5 ans et 75 000 €", "2 ans et 30 000 €", "1 an et 15 000 €"],
@@ -4770,7 +4770,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-2 (faux doc administratif) simple :",
     options: ["5 ans et 75 000 €", "3 ans et 45 000 €", "10 ans"],
@@ -4778,7 +4778,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — Peines",
     question: "Peine de 441-1 (faux/usage de faux) :",
     options: ["3 ans et 45 000 €", "2 ans et 30 000 €", "5 ans et 75 000 €"],
@@ -4786,7 +4786,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage de faux — Acte positif",
     question: "Quel comportement correspond le plus à un usage de faux ?",
     options: [
@@ -4799,7 +4799,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage = utilisation effective (acte positif) de la pièce fausse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage de faux — Piège abstention",
     question:
         "Vrai ou Faux : ne pas produire un document falsifié mais espérer qu’un tiers le produise suffit pour l’usage.",
@@ -4809,7 +4809,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’usage de faux ne peut résulter de la seule abstention (il faut un fait positif).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage de faux — Multi-usages",
     question: "Une même pièce fausse est utilisée 3 fois :",
     options: [
@@ -4825,7 +4825,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // PIÈGES SUR “AUTHENTIQUE” vs “FALSIFIÉ”
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Authentique vs falsifié",
     question: "Quel couple est correct ?",
     options: [
@@ -4839,7 +4839,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5/441-6 = délivrance/obtention indue d’authentiques ; 441-2/441-4 = faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-6 vs 441-2",
     question:
         "Si la fraude repose sur une fausse déclaration, sans falsification du document délivré :",
@@ -4849,7 +4849,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document est authentique, seule l’obtention est frauduleuse → 441-6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6",
     question:
         "Si l’auteur est celui qui “donne” le document à une personne qui n’y a pas droit :",
@@ -4863,7 +4863,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-7 — SÉRIES ATTESTATIONS (plus techniques)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Faits vérifiables",
     question: "« Faits matériellement inexacts » vise :",
     options: [
@@ -4877,7 +4877,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise des faits objectivement constatables/vérifiables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Consommation",
     question: "L’établissement d’une attestation inexacte est consommé :",
     options: [
@@ -4889,7 +4889,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’infraction d’établissement est indépendante de l’usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Élément moral",
     question: "Pour l’établissement (441-7), il faut :",
     options: [
@@ -4901,7 +4901,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Connaissance de l’inexactitude = élément moral central.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attestations (441-7) — Aggravation (but)",
     question: "441-7 est aggravé notamment si commis :",
     options: [
@@ -4918,7 +4918,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-2 — SÉRIES DOCUMENT ADMINISTRATIF (technique)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Condition",
     question: "441-2 vise des documents administratifs établis pour :",
     options: [
@@ -4931,7 +4931,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Finalité administrative : constater/autoriser.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Usage",
     question: "L’usage de faux (441-2) suppose :",
     options: [
@@ -4947,7 +4947,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 441-5 / 441-6 — SÉRIES “DOCUMENTS VISÉS”
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Documents visés — 441-5/441-6",
     question: "Lequel est un document typiquement visé par 441-5/441-6 ?",
     options: [
@@ -4960,7 +4960,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Documents délivrés pour constater identité/droit/qualité ou accorder autorisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Documents visés — 441-6 (organisme SP)",
     question: "441-6 peut viser un document délivré par :",
     options: [
@@ -4977,7 +4977,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // QCM VRAI/FAUX — MIX NIVEAUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-1",
     question:
         "Vrai ou Faux : les mobiles de l’auteur du faux ont une importance pour caractériser l’infraction.",
@@ -4987,7 +4987,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Les mobiles sont indifférents : ce qui compte = volonté d’altérer la vérité + nature à causer préjudice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question:
         "Vrai ou Faux : 441-6 exige une falsification matérielle du document obtenu.",
@@ -4997,7 +4997,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-6 vise l’obtention par fraude de documents authentiques (sans falsification du document).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question:
         "Vrai ou Faux : 441-2 est un « faux spécial » par rapport à 441-1.",
@@ -5011,7 +5011,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // CAS PRATIQUES — PIÈGES DE QUALIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-5 vs 441-6",
     question:
         "Un particulier fournit à un ami un document administratif authentique obtenu grâce à un agent complaisant, sachant que l’ami n’y a pas droit. Pour le particulier qui remet le document :",
@@ -5025,7 +5025,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Celui qui procure/remet à autrui un document authentique indûment = 441-5.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-6 al.2",
     question:
         "Une personne écrit volontairement une déclaration incomplète pour tenter d’obtenir un avantage indu, mais l’administration refuse. Qualification + peine ?",
@@ -5038,7 +5038,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’avantage n’a pas besoin d’être obtenu : le but suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-7 usage",
     question:
         "Une personne utilise devant un juge une attestation falsifiée (préexistante) en sachant qu’elle est fausse. Qualification ?",
@@ -5053,7 +5053,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage d’une attestation/certificat faux/falsifié = 441-7 (usage).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Déclarations mensongères",
     question:
         "Une personne omet volontairement de déclarer un revenu pour percevoir une allocation sociale. Qualification ?",
@@ -5067,7 +5067,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Omission volontaire destinée à obtenir un avantage indu → 441-6 al.2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Élément légal",
     question:
         "Le texte qui définit et réprime le faux et l’usage de faux (général) est :",
@@ -5080,7 +5080,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base générale : 441-1 CP (hors faux spéciaux 441-2 à 441-7).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Support",
     question: "Le support du faux peut être :",
     options: [
@@ -5093,7 +5093,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise aussi d’autres supports (CD, DVD, clés USB, disque dur, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Valeur probatoire",
     question: "Pour entrer dans 441-1 CP, le support doit :",
     options: [
@@ -5107,7 +5107,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exigence de valeur probatoire : preuve d’un droit/fait à conséquences juridiques (ou pouvant servir à cela).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Document de hasard",
     question: "Un « document de hasard » peut être un support du faux s’il :",
     options: [
@@ -5121,7 +5121,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le code vise aussi les supports qui peuvent avoir un effet probatoire, même s’ils n’ont pas été créés pour cela.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Exemple probatoire",
     question: "Selon la jurisprudence citée, peut constituer un faux :",
     options: [
@@ -5134,7 +5134,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exemple de document utilisé à des fins probatoires : constat amiable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Factures",
     question: "Les factures :",
     options: [
@@ -5148,7 +5148,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que la valeur probatoire peut découler de leur usage (comptabilité).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Photocopie",
     question: "La production en justice d’une photocopie contrefaite :",
     options: [
@@ -5161,7 +5161,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La possibilité dépend de la valeur probatoire reconnue à la copie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Faux matériel",
     question: "Le faux matériel se caractérise par :",
     options: [
@@ -5175,7 +5175,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Faux matériel = falsification du support (suppression/modification/adjonction, imitation, fabrication…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Faux intellectuel",
     question: "Le faux intellectuel correspond plutôt à :",
     options: [
@@ -5189,7 +5189,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Mensonge atteint le contenu de l’écrit/support, pas l’aspect matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Préjudice",
     question: "Le préjudice exigé par 441-1 CP :",
     options: [
@@ -5203,7 +5203,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte exige « de nature à causer un préjudice », pas un préjudice effectivement subi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Préjudice social",
     question: "Le préjudice social concerne :",
     options: [
@@ -5216,7 +5216,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours distingue préjudice matériel / moral / social.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Usage",
     question: "L’usage de faux (441-1) suppose :",
     options: [
@@ -5229,7 +5229,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage = utilisation positive de la pièce fausse ; l’abstention ne suffit pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Infraction instantanée",
     question: "L’usage de faux est une infraction :",
     options: [
@@ -5242,7 +5242,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Chaque utilisation = nouvelle infraction ; prescription court à partir de la dernière utilisation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Élément moral (faux)",
     question: "Concernant le faux (441-1), l’élément moral exige :",
     options: [
@@ -5255,7 +5255,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Volonté + conscience ; mobiles indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Élément moral (usage)",
     question: "Concernant l’usage de faux (441-1), l’élément moral exige :",
     options: [
@@ -5268,7 +5268,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Double exigence : volonté d’utiliser la pièce + connaissance qu’elle est fausse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Circonstances aggravantes",
     question: "Le cours indique des circonstances aggravantes pour 441-1 :",
     options: [
@@ -5281,7 +5281,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Dans ta page : IV — circonstances aggravantes : AUCUNE pour 441-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Peines",
     question: "Les peines principales prévues par 441-1 (faux et usage) sont :",
     options: [
@@ -5293,7 +5293,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines 441-1 : 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux / Usage de faux (441-1) — Tentative",
     question: "La tentative des délits prévus par 441-1 est :",
     options: [
@@ -5310,7 +5310,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // FAUX DANS UN DOCUMENT ADMINISTRATIF + USAGE (441-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Définition",
     question: "Le faux dans un document administratif (441-2) consiste à :",
     options: [
@@ -5324,7 +5324,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-2 vise les faux matériels (et réprime aussi l’usage) sur des documents administratifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Texte",
     question: "Le faux commis dans un document administratif est réprimé par :",
     options: [
@@ -5336,7 +5336,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 441-2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Documents visés",
     question:
         "Les documents administratifs visés par 441-2 sont établis pour :",
@@ -5351,7 +5351,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte reprend la finalité probatoire/autorisation des documents administratifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Exemples",
     question: "Parmi ces documents, lequel est typiquement visé par 441-2 ?",
     options: [
@@ -5365,7 +5365,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exemples cités : CNI, titre de séjour, certificat de nationalité, permis de construire/chasser/conduire, carte grise, certificat de mariage…",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Nature du faux",
     question: "Selon ta page, 441-2 vise principalement :",
     options: [
@@ -5378,7 +5378,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours insiste sur la contrefaçon/falsification matérielle du document administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Préjudice",
     question: "Concernant 441-2, la jurisprudence indique que le préjudice :",
     options: [
@@ -5391,7 +5391,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page cite la jurisprudence : le préjudice découle de la nature de la pièce faussée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Usage",
     question: "L’usage de faux (441-2) suppose :",
     options: [
@@ -5404,7 +5404,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Usage ne se conçoit que sur un document falsifié. Sinon, on est sur autre chose (ex : R.645-8).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Contravention",
     question:
         "L’usage d’un document administratif dont les mentions sont devenues incomplètes ou inexactes constitue :",
@@ -5418,7 +5418,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page le précise : document non falsifié mais mentions inexactes/incomplètes → R.645-8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Élément moral (faux)",
     question: "Pour le faux (441-2), l’élément moral implique :",
     options: [
@@ -5432,7 +5432,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’acte de falsification révèle l’intention ; mobiles indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Élément moral (usage)",
     question: "Pour l’usage de faux (441-2), il faut :",
     options: [
@@ -5444,7 +5444,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Conditions classiques rappelées dans ta page.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation 1°",
     question: "441-2 est aggravé lorsque le faux ou l’usage est commis :",
     options: [
@@ -5457,7 +5457,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation prévue par 441-2 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Aggravation 3°",
     question: "441-2 est aggravé lorsque le faux/usage est commis :",
     options: [
@@ -5471,7 +5471,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Aggravation : dessein de faciliter un crime / procurer impunité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines simples",
     question:
         "Les peines principales du faux/usage de faux administratif (441-2) simple sont :",
@@ -5484,7 +5484,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-2 al.1 et 2 → 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Peines aggravées",
     question: "Les peines aggravées (441-2) sont :",
     options: [
@@ -5496,7 +5496,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : aggravations 1°/2°/3° → 7 ans + 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Tentative",
     question: "La tentative des délits 441-2 est :",
     options: [
@@ -5508,7 +5508,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-9 prévoit expressément la tentative des délits 441-2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux doc administratif (441-2) — Auteur de faux",
     question:
         "Peut être considéré comme auteur du faux (pas seulement complice) :",
@@ -5527,7 +5527,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // FAUX DANS ÉCRITURE PUBLIQUE / AUTHENTIQUE + USAGE (441-4)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Définition",
     question: "Le faux (441-4) vise :",
     options: [
@@ -5541,7 +5541,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-4 : faux dans écritures publiques/authentiques + enregistrements ordonnés + usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Texte",
     question: "Le texte applicable est :",
     options: [
@@ -5553,7 +5553,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 441-4 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux écriture publique/authentique (441-4) — Écritures publiques",
     question: "Les écritures publiques sont des écrits rédigés par :",
@@ -5568,7 +5568,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition dans ta page : représentant de l’autorité publique en fonction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux écriture publique/authentique (441-4) — Écritures authentiques",
     question: "Les écritures authentiques sont établies par :",
@@ -5582,7 +5582,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Notaire, huissier, greffier… selon les catégories évoquées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Actes judiciaires",
     question:
         "Parmi ces exemples, lequel correspond à un acte judiciaire cité ?",
@@ -5596,7 +5596,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : actes judiciaires = décisions, PV OPJ/APJ, actes de procédure (assignation, appel…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Enregistrements",
     question:
         "Les enregistrements ordonnés par l’autorité publique peuvent être :",
@@ -5611,7 +5611,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : enregistrements ordonnés par autorité publique (écoutes, interrogatoires mineurs…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Préjudice",
     question: "Pour 441-4, le préjudice éventuel est :",
     options: [
@@ -5624,7 +5624,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Falsification d’un acte public/authentique porte atteinte à la foi publique → préjudice éventuel établi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Usage",
     question: "L’usage de faux (441-4) est constitué si :",
     options: [
@@ -5638,7 +5638,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : il suffit d’un acte quelconque d’utilisation en vue du résultat final (ou de nature à causer préjudice).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Aggravation",
     question: "441-4 est aggravé lorsque le faux/usage est commis :",
     options: [
@@ -5652,7 +5652,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Article 441-4 al.3 : circonstance aggravante de qualité + exercice des fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine simple",
     question:
         "La peine principale du faux en écriture publique/authentique (441-4) simple est :",
@@ -5665,7 +5665,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-4 (simple) → 10 ans d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Peine aggravée",
     question:
         "La peine aggravée du 441-4 (qualité dépositaire/service public) est :",
@@ -5678,7 +5678,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-4 al.3 → crime : 15 ans de réclusion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux écriture publique/authentique (441-4) — Tentative",
     question: "La tentative des délits 441-4 est :",
     options: [
@@ -5694,7 +5694,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // DÉLIVRANCE INDUE DE DOCUMENT ADMINISTRATIF (441-5)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Définition",
     question:
         "La délivrance indue de document administratif (441-5) consiste à :",
@@ -5709,7 +5709,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 vise des documents authentiques procurés frauduleusement à une personne qui n’y a pas droit (pas des faux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Texte",
     question:
         "La délivrance indue de document administratif est réprimée par :",
@@ -5722,7 +5722,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 441-5 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Nature du document",
     question: "Les documents visés par 441-5 sont :",
     options: [
@@ -5735,7 +5735,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours insiste : 441-5 ne s’applique pas à des faux mais à des documents authentiques délivrés indûment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Exemples",
     question: "Lequel est un exemple de document visé par 441-5 ?",
     options: [
@@ -5747,7 +5747,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Documents d’identité cités dans la page.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Documents de droit/qualité",
     question:
         "Parmi ces exemples, lesquels peuvent constater un droit ou une qualité ?",
@@ -5762,7 +5762,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Catégorie citée : droit/qualité (certificat de nationalité, carte grise, récépissés…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Autorisations",
     question:
         "Lequel correspond à un document accordant une autorisation (441-5) ?",
@@ -5776,7 +5776,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite explicitement ces permis comme documents d’autorisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Procurer à autrui",
     question: "« Procurer » un document à autrui signifie :",
     options: [
@@ -5789,7 +5789,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le fait de procurer est réalisé même si le document est remis par un tiers de bonne foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Fraude (caractérisation)",
     question: "Le caractère frauduleux est caractérisé dès lors que l’auteur :",
     options: [
@@ -5803,7 +5803,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : fraude caractérisée par la connaissance de l’absence de droit (Cass. crim., 26 janv. 1993).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Élément moral",
     question: "L’élément moral de 441-5 exige :",
     options: [
@@ -5817,7 +5817,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : l’agent sait qu’il procure un document à des personnes qui n’y ont pas droit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation 1°",
     question: "441-5 est aggravé lorsque l’infraction est commise :",
     options: [
@@ -5830,7 +5830,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-5 1° : qualité + exercice des fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation 2°",
     question: "441-5 est aggravé lorsque l’infraction est commise :",
     options: [
@@ -5842,7 +5842,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-5 2° : commission habituelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Aggravation 3°",
     question: "441-5 est aggravé lorsqu’il est commis :",
     options: [
@@ -5855,7 +5855,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-5 3° : dessein de faciliter crime / procurer impunité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peines simples",
     question: "Les peines principales de 441-5 simple sont :",
     options: [
@@ -5867,7 +5867,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-5 al.1 : 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Peines aggravées",
     question: "Les peines aggravées de 441-5 (1°,2°,3°) sont :",
     options: [
@@ -5879,7 +5879,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : aggravée → 7 ans (réclusion) + 100 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Tentative",
     question: "La tentative des délits 441-5 est :",
     options: [
@@ -5891,7 +5891,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : 441-9 prévoit la tentative des délits de 441-5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Délivrance indue (441-5) — Personnes morales",
     question:
         "La responsabilité pénale des personnes morales est prévue pour 441-5 par :",
@@ -5909,7 +5909,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // OBTENTION INDUE DE DOCUMENT ADMINISTRATIF + FAUSSE DÉCLARATION (441-6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Définition",
     question:
         "L’obtention indue de document administratif (441-6) consiste à :",
@@ -5924,7 +5924,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-6 vise l’action de se faire délivrer indûment un document (authentique) par quelque moyen frauduleux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Texte",
     question: "Le texte qui définit et réprime l’obtention indue est :",
     options: [
@@ -5936,7 +5936,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 441-6 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Document authentique",
     question: "441-6 s’applique à :",
     options: [
@@ -5949,7 +5949,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Comme 441-5, l’infraction ne vise pas des faux mais des documents authentiques obtenus indûment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Organismes visés",
     question:
         "En plus des administrations, 441-6 vise aussi les documents délivrés par :",
@@ -5964,7 +5964,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte étend l’incrimination aux organismes chargés d’une mission de SP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Moyens frauduleux",
     question: "Les moyens frauduleux peuvent être :",
     options: [
@@ -5978,7 +5978,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page détaille plusieurs moyens : fausses déclarations, faux renseignements, tiers, manœuvres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Mariage de complaisance",
     question:
         "Le mariage de complaisance peut constituer des manœuvres frauduleuses lorsqu’il vise :",
@@ -5992,7 +5992,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page cite le mariage de complaisance comme manœuvre pour obtenir indûment un titre de séjour.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Préjudice",
     question: "Pour 441-6, l’infraction :",
     options: [
@@ -6005,7 +6005,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : pas nécessaire qu’elle soit préjudiciable pour être qualifiée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Alinéa 2 (avantages indus)",
     question: "441-6 al.2 assimile aussi à l’infraction :",
     options: [
@@ -6019,7 +6019,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : al.2 = fausse/incomplète déclaration pour obtenir ou tenter d’obtenir un avantage indu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Fausse vs incomplète",
     question: "Une déclaration « incomplète » peut consister en :",
     options: [
@@ -6032,7 +6032,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : altération de la vérité = affirmation de faits faux OU omission de faits exacts.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Consommation",
     question: "Concernant 441-6 al.2, l’infraction est consommée :",
     options: [
@@ -6046,7 +6046,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : pas besoin que l’avantage soit obtenu ; suffit du but (obtenir ou faire obtenir).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Élément moral",
     question: "L’élément moral de 441-6 implique :",
     options: [
@@ -6060,7 +6060,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : conscience + volonté d’employer un moyen frauduleux (et pour al.2 : fausse/incomplète volontaire).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Circonstances aggravantes",
     question: "441-6 prévoit des circonstances aggravantes :",
     options: ["Aucune", "En réunion", "Si arme"],
@@ -6068,7 +6068,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : IV — Circonstances aggravantes : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Peines",
     question: "Les peines principales de 441-6 (alinéa 1 et 2) sont :",
     options: [
@@ -6080,7 +6080,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau : 441-6 al.1 / al.2 → 2 ans + 30 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obtention indue (441-6) — Tentative",
     question: "La tentative des délits 441-6 est :",
     options: [
@@ -6096,7 +6096,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // FAUX CERTIFICATS / ATTESTATIONS (441-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Définition",
     question: "441-7 incrimine notamment :",
     options: [
@@ -6109,7 +6109,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : établissement (inexact) / falsification / usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Texte",
     question: "Le texte applicable est :",
     options: [
@@ -6121,7 +6121,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 441-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux certificats/attestations (441-7) — Définition jurisprudentielle",
     question: "Selon la jurisprudence, une attestation/certificat est :",
@@ -6135,7 +6135,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition rappelée dans ta page.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Écrit uniquement",
     question: "441-7 nécessite :",
     options: [
@@ -6148,7 +6148,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : seul l’écrit est pris en compte ; l’oral ne constitue pas 441-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Signature",
     question: "Le document inexact doit notamment comporter :",
     options: [
@@ -6161,7 +6161,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : exigence jurisprudentielle de signature authentique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Profit d’un tiers",
     question: "Pour entrer dans 441-7, l’attestation doit être établie :",
     options: [
@@ -6174,7 +6174,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : l’attestation sur l’honneur à son propre profit n’entre pas dans 441-7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Établissement",
     question: "« Établir » une attestation signifie :",
     options: [
@@ -6186,7 +6186,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : établissement = rédaction + signature.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Faux certificats/attestations (441-7) — Faits matériellement inexacts",
     question: "« Faits matériellement inexacts » correspond à :",
@@ -6199,7 +6199,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : éléments objectifs, vérifiables/constatables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Consommation",
     question:
         "L’infraction d’établissement d’une attestation inexacte est consommée :",
@@ -6212,7 +6212,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : consommée indépendamment de l’usage par la suite.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Falsification",
     question:
         "La falsification d’un certificat sincère à l’origine correspond à :",
@@ -6227,7 +6227,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : exemples de surcharge de date, modification d’analyse de sang.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Usage",
     question: "L’usage d’un certificat/attestation falsifié suppose :",
     options: [
@@ -6240,7 +6240,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage = utilisation d’un document déjà inexact/falsifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Élément moral",
     question: "L’élément moral de l’établissement (441-7) repose sur :",
     options: [
@@ -6253,7 +6253,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : connaissance de l’inexactitude ; pas besoin d’anticiper l’usage que le tiers en fera.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Aggravation al.5",
     question:
         "L’infraction 441-7 est aggravée notamment lorsqu’elle est commise :",
@@ -6267,7 +6267,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : 441-7 al.5 prévoit ces hypothèses aggravantes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Peines simples",
     question: "Les peines principales de 441-7 (simple) sont :",
     options: [
@@ -6279,7 +6279,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : simple → 1 an + 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Peines aggravées",
     question: "Les peines aggravées de 441-7 sont :",
     options: [
@@ -6291,7 +6291,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ta page : aggravée → 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux certificats/attestations (441-7) — Tentative",
     question: "La tentative de 441-7 est :",
     options: [
@@ -6307,7 +6307,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // DISTINCTIONS “PIÈGES” — 441-1 / 441-2 / 441-4 / 441-5 / 441-6 / 441-7
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-5 vs 441-6",
     question: "La différence clé entre 441-5 et 441-6 est que :",
     options: [
@@ -6321,7 +6321,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 = délivrance/procure à autrui ; 441-6 = obtention indue par le bénéficiaire (ou pour autrui via fraude).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Document authentique vs faux",
     question: "Quel duo correspond correctement ?",
     options: [
@@ -6335,7 +6335,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 et 441-6 ≠ faux : ce sont des documents authentiques délivrés/obtenus frauduleusement. 441-2/441-4 = faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-4",
     question: "La différence principale entre 441-2 et 441-4 :",
     options: [
@@ -6349,7 +6349,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Deux faux “spéciaux” différents : administratif vs écriture publique/authentique/enregistrement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-7 vs 441-1",
     question: "Pourquoi 441-7 est un texte « spécial » par rapport à 441-1 ?",
     options: [
@@ -6367,7 +6367,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // VRAI / FAUX — format QCM (3 options)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-5",
     question:
         "Vrai ou Faux : 441-5 s’applique à des documents falsifiés (faux documents).",
@@ -6377,7 +6377,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-5 vise des documents authentiques procurés indûment (pas des faux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-6",
     question:
         "Vrai ou Faux : 441-6 peut viser un document délivré par un organisme chargé d’une mission de service public.",
@@ -6387,7 +6387,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte étend l’incrimination aux organismes de mission de SP (ex : sécu, OFPRA, Pôle emploi).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-1",
     question:
         "Vrai ou Faux : pour 441-1, il faut un préjudice déjà subi pour que l’infraction existe.",
@@ -6397,7 +6397,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Il suffit que l’altération soit de nature à causer un préjudice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question:
         "Vrai ou Faux : l’usage de faux peut résulter d’une simple abstention (ne rien faire).",
@@ -6407,7 +6407,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ta page : usage = fait positif d’utilisation ; l’abstention ne suffit pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-7",
     question:
         "Vrai ou Faux : une simple déclaration orale inexacte peut constituer 441-7.",
@@ -6420,7 +6420,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MINI CAS PRATIQUES — Qualification + article + peine
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-6 (obtention indue)",
     question:
         "Une personne fournit une fausse date d’entrée en France sur un formulaire pour obtenir un titre de séjour. Qualification + peine ?",
@@ -6435,7 +6435,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Moyen frauduleux pour se faire délivrer un document authentique (titre de séjour) : 441-6. Peines : 2 ans + 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-5 (délivrance indue)",
     question:
         "Un agent sait qu’un demandeur n’a pas droit au document, mais fait quand même délivrer une attestation administrative à son profit. Qualification + peine simple ?",
@@ -6449,7 +6449,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Procurer frauduleusement un document authentique à autrui = 441-5 (simple : 5 ans / 75 000 €).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-2 (faux administratif) + usage",
     question:
         "Une personne falsifie matériellement une carte grise puis la présente pour obtenir un crédit. Qualification la plus adaptée ?",
@@ -6464,7 +6464,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Document administratif falsifié (carte grise) + usage : 441-2 (simple : 5 ans / 75 000 €).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-7 (attestation inexacte)",
     question:
         "Une personne rédige et signe une attestation pour aider un ami, en affirmant des faits vérifiables faux. Qualification + peine simple ?",
@@ -6478,7 +6478,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Attestation écrite en faveur d’autrui, faits matériellement inexacts : 441-7 (simple : 1 an / 15 000 €).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 441-4 (écriture publique) aggravée",
     question:
         "Un agent public falsifie une écriture publique dans l’exercice de ses fonctions. Qualification + peine aggravée ?",
@@ -6493,7 +6493,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-4 al.3 : aggravation si dépositaire/mission SP en exercice → crime : 15 ans de réclusion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Définition",
     question: "Le faux (441-1) est :",
     options: [
@@ -6507,7 +6507,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "441-1 = altération + préjudice possible + support servant/pouvant servir de preuve.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Support",
     question: "Le support peut être :",
     options: [
@@ -6520,7 +6520,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Écrit OU tout autre support d’expression de la pensée (y compris numérique).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Valeur probatoire",
     question: "Le support doit :",
     options: [
@@ -6533,7 +6533,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Objet OU effet probatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Préjudice",
     question: "Le préjudice exigé :",
     options: [
@@ -6545,7 +6545,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "« De nature à causer » suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Faux matériel",
     question: "Faux matériel =",
     options: [
@@ -6557,7 +6557,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Atteinte à l’aspect physique du document.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Faux intellectuel",
     question: "Faux intellectuel =",
     options: [
@@ -6569,7 +6569,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Altération porte sur les faits, pas le support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Usage de faux",
     question: "Usage de faux suppose :",
     options: [
@@ -6581,7 +6581,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage = utiliser volontairement en sachant que c’est faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Instantané",
     question: "L’usage de faux est :",
     options: [
@@ -6594,7 +6594,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Chaque utilisation = potentiellement une nouvelle infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Mobiles",
     question: "Les mobiles de l’auteur :",
     options: [
@@ -6606,7 +6606,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ce qui compte = intention d’altérer la vérité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-1 — Peines",
     question: "441-1 (faux/usage) :",
     options: ["3 ans + 45 000 €", "2 ans + 30 000 €", "5 ans + 75 000 €"],
@@ -6616,7 +6616,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // (11) V/F
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-1",
     question:
         "Vrai/Faux : un document « de hasard » peut être support du faux.",
@@ -6625,7 +6625,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "S’il acquiert une valeur probatoire ensuite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Usage",
     question: "Vrai/Faux : la détention d’un faux = usage de faux.",
     options: ["Vrai", "Faux", "Uniquement si CNI"],
@@ -6633,7 +6633,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage nécessite un acte positif d’utilisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Préjudice",
     question: "Vrai/Faux : le préjudice doit être effectif pour 441-1.",
     options: ["Vrai", "Faux", "Seulement si argent"],
@@ -6643,7 +6643,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // (14-25) mini-cas 441-1
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Photocopie contrefaite produite en justice :",
     options: [
@@ -6656,7 +6656,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Production d’une copie contrefaite à valeur probatoire = faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Usage 441-1",
     question: "Même pièce fausse utilisée 4 fois :",
     options: ["4 usages possibles", "1 usage unique", "0 si ancien"],
@@ -6664,7 +6664,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Infraction instantanée : chaque acte d’usage compte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Lettre falsifiée pour prouver une embauche :",
     options: ["Faux (441-1)", "441-7", "441-2"],
@@ -6672,7 +6672,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Support privé devenu probatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Facture falsifiée passée en comptabilité :",
     options: ["Possible faux (441-1)", "Jamais faux", "Seulement 441-7"],
@@ -6680,7 +6680,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peut acquérir valeur probatoire via comptabilité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Mensonge oral sans écrit/support :",
     options: ["Pas 441-1", "Toujours 441-1", "Toujours 441-2"],
@@ -6688,7 +6688,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-1 exige support d’expression de la pensée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-1",
     question: "Faux document créé mais jamais utilisé :",
     options: [
@@ -6701,7 +6701,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le faux peut être constitué dès la création (usage distinct).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Usage",
     question: "Présenter un faux à une banque pour ouvrir compte :",
     options: ["Usage de faux", "Détention seule", "Aucune infraction"],
@@ -6709,7 +6709,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Acte positif d’utilisation + connaissance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-1 vs 441-7",
     question: "Attestation écrite mensongère au profit d’un tiers :",
     options: [
@@ -6721,7 +6721,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial prime souvent sur général.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-1",
     question: "441-1 incrimine :",
     options: ["Faux et usage", "Obtention indue", "Délivrance indue"],
@@ -6733,7 +6733,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =======================
   // 441-2 — DOC ADMIN (26-55)
   // =======================
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Définition",
     question: "441-2 vise :",
     options: [
@@ -6745,7 +6745,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial « document administratif ». ",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Document administratif",
     question: "Document administratif = délivré pour :",
     options: [
@@ -6757,7 +6757,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Critère finalité du document.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Faux matériel",
     question: "Gratter et modifier un permis :",
     options: ["441-2", "441-6", "441-5"],
@@ -6765,7 +6765,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Falsification matérielle d’un doc administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Usage",
     question: "Présenter un permis falsifié au contrôle :",
     options: ["Usage 441-2", "441-6", "441-7"],
@@ -6773,7 +6773,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Utiliser un doc administratif falsifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Préjudice",
     question: "Le préjudice du faux administratif :",
     options: [
@@ -6785,7 +6785,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Jurisprudence : préjudice déduit de la nature de la pièce.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Aggravation qualité",
     question: "Aggravé si commis par :",
     options: [
@@ -6797,7 +6797,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-2 1°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Aggravation dessein",
     question: "Aggravé si but :",
     options: [
@@ -6809,7 +6809,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-2 3°.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Peine simple",
     question: "441-2 simple :",
     options: ["5 ans + 75 000 €", "3 ans + 45 000 €", "2 ans + 30 000 €"],
@@ -6817,7 +6817,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "441-2 — Peine aggravée",
     question: "441-2 aggravé :",
     options: ["7 ans + 100 000 €", "10 ans", "1 an + 15 000 €"],
@@ -6825,7 +6825,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2 aggravé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question: "Vrai/Faux : 441-2 réprime aussi l’usage.",
     options: ["Vrai", "Faux", "Seulement si fonctionnaire"],
@@ -6833,7 +6833,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte vise faux + usage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-6",
     question: "Document authentique obtenu par mensonge (sans falsification) :",
     options: ["441-6", "441-2", "441-4"],
@@ -6841,7 +6841,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "441-2 suppose falsification/contrefaçon.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — R.645-8",
     question: "Doc administratif non falsifié mais devenu inexact, utilisé :",
     options: ["Contravention R.645-8", "Usage 441-2", "441-6"],
@@ -6851,7 +6851,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // 38-55 = mini-cas rapides (18)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2",
     question: "Fausse carte grise utilisée pour s’approprier un véhicule :",
     options: ["441-2", "441-6", "441-7"],
@@ -6859,7 +6859,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Falsification de doc administratif (carte grise).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2 usage",
     question: "Présenter une carte grise falsifiée à l’assurance :",
     options: ["Usage 441-2", "441-1", "441-6"],
@@ -6867,7 +6867,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Usage d’un faux doc administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2",
     question: "Imitation de signature sur un doc administratif :",
     options: ["441-2", "441-7", "441-6"],
@@ -6875,7 +6875,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Procédé donnant apparence d’authenticité → faux matériel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2",
     question: "Fabriquer de toutes pièces un permis :",
     options: ["441-2", "441-5", "441-6"],
@@ -6883,7 +6883,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Contrefaçon d’un doc administratif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — 441-2 aggravé",
     question: "Agent public falsifie une CNI en service :",
     options: ["441-2 aggravé", "441-6", "441-7"],
@@ -6891,7 +6891,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Qualité + exercice = aggravation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 441-2",
     question: "Vrai/Faux : 441-2 vise uniquement des écrits papier.",
     options: ["Vrai", "Faux", "Seulement si permis"],
@@ -6899,7 +6899,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peut viser support autre que l’écrit (renvoi cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — 441-2 vs 441-1",
     question:
         "Si le support est un document administratif, on retient plutôt :",
@@ -6908,7 +6908,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Texte spécial doc administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-2",
     question: "Peine simple 441-2 :",
     options: ["5 ans + 75k", "2 ans + 30k", "3 ans + 45k"],
@@ -6916,7 +6916,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe — 441-2",
     question: "Peine aggravée 441-2 :",
     options: ["7 ans + 100k", "10 ans", "15 ans réclusion"],
@@ -6924,7 +6924,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Tableau 441-2 aggravé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — But de l’infraction",
     question:
         "La provocation directe à la rébellion vise principalement à réprimer :",
@@ -6939,7 +6939,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte indique que l’objectif est de sanctionner ceux qui compliquent la mission (interpellation, expulsion, etc.) en incitant directement à une rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Lien exigé",
     question: "Pour être répréhensible, la provocation doit présenter :",
     options: [
@@ -6952,7 +6952,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La provocation doit être directe : lien étroit et précis avec les faits visés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Opposition violente",
     question: "Les termes de la provocation doivent tendre sans ambiguïté à :",
     options: [
@@ -6966,7 +6966,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Condition centrale : l’incitation doit viser une opposition violente à l’action de l’autorité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Personne visée",
     question: "La provocation directe à la rébellion doit s’adresser :",
     options: [
@@ -6979,7 +6979,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’article vise aussi la distribution d’écrits / moyens de diffusion : pas besoin d’une cible déterminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Cris et discours",
     question: "Les cris ou discours incriminés doivent avoir été tenus :",
     options: [
@@ -6992,7 +6992,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le support “cris/discours publics” suppose la voie publique ou un lieu public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Écrits",
     question: "Les écrits peuvent constituer une provocation s’ils sont :",
     options: [
@@ -7004,7 +7004,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise les écrits affichés ou distribués.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Tracts",
     question:
         "Des tracts appelant à la rébellion peuvent caractériser l’infraction s’ils sont :",
@@ -7018,7 +7018,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document cite explicitement ces modes de distribution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Presse",
     question:
         "Si la provocation est commise par presse écrite ou audiovisuelle, on applique :",
@@ -7033,7 +7033,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "433-10 al.2 renvoie aux règles spécifiques de la presse (loi 1881).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Infraction formelle",
     question:
         "On dit que la provocation à la rébellion est une infraction formelle car :",
@@ -7047,7 +7047,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Peu importe que l’incitation ait été suivie d’effet : le résultat est indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Tentative",
     question:
         "Concernant la provocation directe à la rébellion (433-10), la tentative est :",
@@ -7060,7 +7060,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Complicité",
     question: "La complicité de provocation directe à la rébellion est :",
     options: [
@@ -7073,7 +7073,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document indique que la complicité est punissable selon 121-6 et 121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Base légale complicité",
     question: "Les textes généraux de la complicité mentionnés sont :",
     options: [
@@ -7085,7 +7085,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document renvoie aux articles 121-6 et 121-7 CP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Personnes morales",
     question:
         "Les personnes morales peuvent être pénalement responsables sur le fondement de :",
@@ -7099,7 +7099,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document précise la responsabilité pénale des personnes morales (121-2 CP).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Circonstances aggravantes",
     question:
         "La provocation directe à la rébellion (433-10) comporte des circonstances aggravantes :",
@@ -7109,7 +7109,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document indique explicitement : IV — CIRCONSTANCES AGGRAVANTES : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Notion de complice",
     question:
         "Si la provocation est suivie d’effet, l’auteur peut être poursuivi comme :",
@@ -7123,7 +7123,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Nota : si suivie d’effet, poursuites possibles comme complice par instruction (121-7).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Exemple jurisprudentiel",
     question:
         "Dans Cass. crim., 21 février 2017, la provocation est caractérisée notamment car le prévenu :",
@@ -7143,7 +7143,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // RÉBELLION — ARTICLES 433-6 À 433-9 CP
   // (Banque étendue)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Définition complète",
     question:
         "La rébellion correspond au fait d’opposer une résistance violente à :",
@@ -7158,7 +7158,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition issue de 433-6 CP : résistance violente à une personne protégée agissant dans l’exercice de ses fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Répression",
     question: "La rébellion est définie par 433-6 CP et réprimée par :",
     options: [
@@ -7170,7 +7170,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document précise : 433-6 définit, 433-7 réprime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Dépositaire autorité publique",
     question: "Est dépositaire de l’autorité publique celui qui :",
     options: [
@@ -7184,7 +7184,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition rappelée : pouvoir de décision attaché aux fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exemples dépositaires",
     question:
         "Parmi ces personnes, lesquelles sont notamment citées comme dépositaires de l’autorité publique ?",
@@ -7198,7 +7198,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document liste plusieurs exemples : policiers, gendarmes, douaniers, huissiers, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élus locaux",
     question:
         "Les responsables des exécutifs locaux (maires, présidents d’intercommunalités, etc.) sont cités comme :",
@@ -7212,7 +7212,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ils figurent dans la liste des personnes concernées comme dépositaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Mission de service public",
     question: "Est chargé d’une mission de service public celui qui :",
     options: [
@@ -7226,7 +7226,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition donnée dans le document (mission d’intérêt général sans pouvoir de décision).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exemple service public",
     question:
         "Le document donne comme exemple de personne chargée d’une mission de service public :",
@@ -7239,7 +7239,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple explicite : serrurier requis par l’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Condition d’exercice",
     question:
         "Il n’y a rébellion que si la résistance se manifeste alors que l’agent agit :",
@@ -7252,7 +7252,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition essentielle : exercice des fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — RGE police nationale",
     question:
         "Selon l’art. 113-3 du règlement général d’emploi, un policier même hors service est tenu :",
@@ -7267,7 +7267,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document rappelle l’obligation d’intervention même hors service.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Jurisprudence hors service",
     question:
         "Cass. crim., 15 décembre 2015 retient qu’un policier est en service s’il intervient :",
@@ -7281,7 +7281,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Jurisprudence citée dans le document.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Pour l’exécution des lois",
     question: "Il y a rébellion si l’agent agit notamment dans le cadre :",
     options: [
@@ -7294,7 +7294,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document vise PJ (flagrant, préliminaire, CR, mandats...) et PA (ordre public).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Ordre implicite",
     question:
         "Le document précise que l’ordre à l’origine de l’intervention peut être :",
@@ -7309,7 +7309,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’ordre peut être implicite ou nécessiter autorisation/réquisition selon les cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Illégalité de l’acte",
     question:
         "Même si l’acte accompli par l’agent se révèle illégal, la rébellion :",
@@ -7323,7 +7323,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 1er sept. 2004 : l’illégalité supposée est sans incidence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Litige privé",
     question:
         "Si l’agent commet un acte sans lien avec sa mission (litige privé), la résistance :",
@@ -7337,7 +7337,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document précise que l’absence de lien missionnel exclut la rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Résistance violente",
     question: "La rébellion suppose un acte de résistance :",
     options: [
@@ -7349,7 +7349,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Sont exclus : simple désobéissance et obstacle passif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exclusion obstacle passif",
     question:
         "Quel exemple est cité comme ne caractérisant pas la rébellion (obstacle passif) ?",
@@ -7363,7 +7363,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 1er mars 2006 : refus passif d’un sexagénaire frêle accroché au volant.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Violence sans coups",
     question: "La jurisprudence peut retenir la rébellion même si l’auteur :",
     options: [
@@ -7376,7 +7376,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 7 nov. 2006 : résistance active, fuite, sans coups portés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Distinction violences/rébellion",
     question:
         "On retient plutôt la rébellion lorsque l’acte violent est commis :",
@@ -7390,7 +7390,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 21 fév. 2006 : si l’acte violent répond à l’exercice des fonctions envers l’auteur → rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Actes distincts",
     question:
         "Si les violences ne sont pas distinctes de la résistance violente, la Cour retient :",
@@ -7404,7 +7404,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 21 fév. 2006 : pas d’actes distincts → qualification de rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élément moral 1",
     question: "L’élément moral suppose généralement :",
     options: [
@@ -7418,7 +7418,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La connaissance découle souvent de l’uniforme/signes distinctifs et des explications données.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élément moral 2",
     question: "Le mobile de l’auteur de la rébellion est :",
     options: ["Indifférent", "Toujours aggravant", "Toujours justificatif"],
@@ -7427,7 +7427,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Infraction intentionnelle : volonté de résister, mobile indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Circonstance aggravante réunion",
     question: "La rébellion est aggravée lorsqu’elle est commise :",
     options: [
@@ -7439,7 +7439,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation expressément prévue à 433-7 al.2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Circonstance aggravante arme",
     question: "La rébellion est aggravée lorsque l’auteur est :",
     options: [
@@ -7451,7 +7451,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation prévue par 433-8 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Aggravation maximale",
     question:
         "Un degré d’aggravation supplémentaire est prévu lorsque la rébellion armée est commise :",
@@ -7461,7 +7461,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document mentionne une aggravation supplémentaire si rébellion armée + réunion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Auteur détenu",
     question:
         "La rébellion est traitée spécifiquement par l’article 433-9 CP lorsque l’auteur :",
@@ -7470,7 +7470,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "433-9 vise la rébellion commise par une personne détenue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines simple",
     question: "La rébellion simple (433-7 al.1) est punie de :",
     options: [
@@ -7482,7 +7482,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines principales : 2 ans + 30 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines réunion",
     question: "La rébellion aggravée en réunion (433-7 al.2) est punie de :",
     options: [
@@ -7494,7 +7494,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation en réunion : 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines arme",
     question: "La rébellion avec port d’arme (433-8 al.1) est punie de :",
     options: [
@@ -7506,7 +7506,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "433-8 al.1 : 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines arme + réunion",
     question:
         "La rébellion armée commise en réunion (433-8 al.2) est punie de :",
@@ -7519,7 +7519,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation maximale : 10 ans + 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Rébellion détenu",
     question:
         "Lorsque l’auteur de la rébellion est détenu (433-9), la répression prévoit :",
@@ -7533,7 +7533,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document indique un cumul des peines dans ce cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Tentative",
     question: "Concernant la rébellion, la tentative est :",
     options: [
@@ -7545,7 +7545,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Complicité",
     question: "Concernant la rébellion, la complicité est :",
     options: [
@@ -7557,7 +7557,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Complicité punissable selon 121-6/121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exemple complicité",
     question:
         "Dans Cass. crim., 8 décembre 2009, constitue une complicité de rébellion le fait :",
@@ -7572,7 +7572,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document cite cet exemple comme aide/assistance à la résistance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Personnes morales",
     question:
         "Les personnes morales peuvent être responsables de rébellion conformément à :",
@@ -7590,7 +7590,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // MENACES DE CRIME OU DÉLIT ENVERS PERSONNES PROTÉGÉES — 433-3
   // (Banque étendue)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Définition (objet)",
     question: "L’article 433-3 vise la menace de commettre :",
     options: [
@@ -7603,7 +7603,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La menace doit annoncer la commission prochaine d’un crime/délit contre personnes ou biens.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Bien visé",
     question:
         "Si la menace concerne un bien, elle peut consister en l’annonce :",
@@ -7617,7 +7617,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document précise la nature possible du mal annoncé concernant un bien.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Réitération",
     question: "La menace 433-3 est punissable :",
     options: [
@@ -7630,7 +7630,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document indique l’absence d’exigence de réitération ou matérialisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Destinataires",
     question: "Les destinataires des menaces 433-3 sont :",
     options: [
@@ -7643,7 +7643,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La loi liste précisément les catégories de victimes protégées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Mandat électif",
     question:
         "Sont visées par l’expression “mandat électif public” notamment :",
@@ -7658,7 +7658,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document détaille des exemples de mandats électifs publics.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Dépositaire autorité",
     question:
         "Parmi les catégories citées comme dépositaires de l’autorité publique :",
@@ -7672,7 +7672,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document énumère ces catégories au titre de 433-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Mission service public",
     question:
         "Sont cités comme personnes chargées d’une mission de service public (433-3) :",
@@ -7686,7 +7686,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document cite ces exemples (alinéas 1 et 2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Activité privée de sécurité",
     question:
         "L’article 433-3 protège aussi les personnes exerçant une activité privée de sécurité :",
@@ -7701,7 +7701,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document vise explicitement ces activités privées de sécurité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Proches",
     question: "L’article 433-3 protège aussi :",
     options: [
@@ -7715,7 +7715,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Alinéa 4 : proches et cohabitants, en raison des fonctions exercées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Lien avec fonctions",
     question:
         "Pour les personnes du 1er alinéa, l’infraction est constituée si les menaces interviennent :",
@@ -7729,7 +7729,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document distingue : alinéa 1 = dans l’exercice ou du fait ; alinéas 2 et 3 = dans l’exercice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Alinéas 2 et 3",
     question:
         "Pour les victimes des alinéas 2 et 3, la menace doit avoir lieu :",
@@ -7743,7 +7743,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document précise : alinéas 2 et 3 → dans l’exercice des fonctions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Qualité connue",
     question: "La qualité de la victime doit être :",
     options: [
@@ -7755,7 +7755,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition : l’auteur agit en raison de cette qualité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Élément moral",
     question: "L’élément moral des menaces 433-3 suppose que l’auteur :",
     options: [
@@ -7768,7 +7768,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Peu importe intention/moyens d’exécution ; il faut conscience du trouble.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Intention d’exécution",
     question:
         "Pour caractériser l’infraction 433-3, l’intention de mettre la menace à exécution :",
@@ -7782,7 +7782,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document le dit clairement : peu importe intention/moyens.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Texte",
     question:
         "Les menaces envers personnes protégées sont définies et réprimées par :",
@@ -7795,7 +7795,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 433-3 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Infractions spécifiques justice",
     question:
         "Le document rappelle que certaines menaces pour entraver l’action de la justice relèvent d’infractions spécifiques :",
@@ -7809,7 +7809,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Mention explicite : menaces visant la justice → infractions spécifiques 434-5/434-8/434-15.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Aggravation al.5",
     question:
         "L’article 433-3 al.5 prévoit une aggravation notamment lorsque :",
@@ -7823,7 +7823,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation prévue à l’alinéa 5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Aggravation al.6 (but)",
     question:
         "L’article 433-3 al.6 vise les menaces/violences/intimidations utilisées pour :",
@@ -7838,7 +7838,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Al.6 : pression pour obtenir action/abstention liée aux fonctions/mission/mandat.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Aggravation al.6 (abus d’autorité)",
     question:
         "L’alinéa 6 vise aussi le fait de faire pression pour qu’une personne abuse de son autorité (vraie ou supposée) afin d’obtenir :",
@@ -7853,7 +7853,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Al.6 : obtenir une décision favorable via abus d’autorité vraie ou supposée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Exclusion 433-3-1",
     question:
         "Le document précise que les dispositions de l’alinéa 6 ne s’appliquent pas aux faits prévus par :",
@@ -7867,7 +7867,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Exclusion explicite : al.6 ne s’applique pas aux faits relevant de 433-3-1.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Peines simples",
     question: "Les menaces simples (433-3) sont punies de :",
     options: [
@@ -7879,7 +7879,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines principales : 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Peines aggravées al.5",
     question:
         "Les menaces aggravées par l’alinéa 5 (menace de mort / biens dangereuse) sont punies de :",
@@ -7892,7 +7892,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation al.5 : 5 ans + 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Peines aggravées al.6",
     question:
         "Les faits aggravés par l’alinéa 6 (pression pour acte de fonction/abus d’autorité) sont punis de :",
@@ -7905,7 +7905,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aggravation al.6 : 10 ans + 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Tentative",
     question: "Concernant les menaces 433-3, la tentative est :",
     options: ["Non (TENTATIVE : NON)", "Oui", "Oui si menace de mort"],
@@ -7913,7 +7913,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Complicité",
     question: "Concernant les menaces 433-3, la complicité est :",
     options: [
@@ -7931,7 +7931,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // AUX RÈGLES DE FONCTIONNEMENT D’UN SERVICE PUBLIC
   // (Banque complète)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Définition",
     question:
         "L’infraction 433-3-1 consiste à user de menaces/violences/intimidation :",
@@ -7946,7 +7946,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "But central : obtenir une application dérogatoire des règles de fonctionnement d’un service public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Élément légal",
     question:
         "L’infraction relative à la dérogation aux règles d’un service public est définie et réprimée par :",
@@ -7959,7 +7959,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Base légale : 433-3-1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Comportements visés",
     question:
         "Le 433-3-1 permet de sanctionner des comportements variés car il vise :",
@@ -7974,7 +7974,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise menaces, violences et tout acte d’intimidation, et les menaces même sans réitération.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Victime",
     question: "La victime visée par 433-3-1 est :",
     options: [
@@ -7988,7 +7988,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Sans condition de statut, fonction ou responsabilités : toute personne participant au service public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Condition de statut",
     question:
         "Pour 433-3-1, il existe une condition de statut/fonction/responsabilités pour la victime :",
@@ -8002,7 +8002,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte précise : sans condition de statut, de fonction ou de responsabilités.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Intention particulière",
     question: "Pour caractériser 433-3-1, il faut démontrer :",
     options: [
@@ -8016,7 +8016,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document insiste sur la démonstration d’une intention particulière (objectif précis).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Preuve de l’intention",
     question: "L’intention d’obtenir un régime dérogatoire peut être prouvée :",
     options: [
@@ -8029,7 +8029,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document indique que la preuve peut venir d’une expression claire ou du contexte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Exemples (piscine)",
     question: "Exemple donné par le document d’un objectif de dérogation :",
     options: [
@@ -8042,7 +8042,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple cité : horaires réservés pour accès piscine.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Exemples (cantine)",
     question: "Autre exemple de dérogation cité :",
     options: [
@@ -8055,7 +8055,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple cité : régime alimentaire particulier en cantine.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Bénéfice",
     question:
         "Le comportement incriminé doit poursuivre l’objectif d’obtenir une dérogation :",
@@ -8068,7 +8068,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document précise : au bénéfice de soi-même ou d’autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Élément moral (trouble)",
     question: "Pour 433-3-1, l’auteur doit avoir conscience :",
     options: [
@@ -8081,7 +8081,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte reprend la logique : conscience du trouble ; intention d’obtenir la dérogation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Intention d’exécution",
     question: "Pour 433-3-1, l’intention de mettre les menaces à exécution :",
     options: [
@@ -8094,7 +8094,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Peu importe intention/moyens d’exécution, c’est l’objectif dérogatoire qui compte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Circonstances aggravantes",
     question:
         "Le document indique pour 433-3-1 des circonstances aggravantes :",
@@ -8103,7 +8103,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "IV — CIRCONSTANCES AGGRAVANTES : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Peines",
     question: "Les peines principales encourues pour 433-3-1 sont :",
     options: [
@@ -8115,7 +8115,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "V — Répression : 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Personnes morales",
     question: "Concernant 433-3-1, les personnes morales :",
     options: [
@@ -8128,7 +8128,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le document précise que les personnes morales peuvent être reconnues responsables.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Tentative",
     question: "Concernant 433-3-1, la tentative est :",
     options: ["Non (TENTATIVE : NON)", "Oui", "Oui uniquement si violence"],
@@ -8136,7 +8136,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Complicité",
     question: "Concernant 433-3-1, la complicité est :",
     options: [
@@ -8148,7 +8148,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Complicité punissable selon 121-6/121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Nature de l’objectif",
     question: "L’objectif visé par 433-3-1 est d’obtenir :",
     options: [
@@ -8176,7 +8176,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // Ici, je reste sur le socle classique : outrage = propos/gestes/écrits
   // portant atteinte à la dignité/respect dû à la fonction, pendant/dû aux fonctions.
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Outrage",
     question: "La différence principale entre outrage et rébellion est que :",
     options: [
@@ -8190,7 +8190,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Outrage = paroles/gestes/écrits atteinte au respect dû à la fonction. Rébellion = résistance violente à l’action de l’agent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Refus d’obtempérer",
     question:
         "Le refus d’obtempérer se distingue classiquement de la rébellion car :",
@@ -8205,7 +8205,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Dans ton cours : rébellion = violence/résistance active. Le refus d’obtempérer = non-exécution d’un ordre (souvent en circulation) sans nécessaire violence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Obstacle passif",
     question: "Un obstacle purement passif à l’action de l’agent :",
     options: [
@@ -8218,7 +8218,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ton doc : la simple désobéissance et l’obstacle passif sont exclus de la rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion (violence) : exemple",
     question:
         "Lequel de ces comportements correspond le plus à une rébellion ?",
@@ -8232,7 +8232,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Résistance active et violente = rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Violences volontaires vs Rébellion",
     question:
         "On retient plutôt les violences volontaires aggravées (plutôt que la rébellion) lorsque :",
@@ -8247,7 +8247,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ton doc : si l’agent n’exerce pas sa mission envers l’individu, on bascule plutôt sur violences aggravées. Sinon, rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Violences distinctes",
     question:
         "Si les coups portés ne sont pas distincts de la résistance violente lors de l’interpellation :",
@@ -8262,7 +8262,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ton doc cite Cass. crim. (21 fév. 2006) : pas d’actes de violences distincts -> rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Outrage vs Menaces 433-3",
     question:
         "Dire à un policier : 'Je vais brûler ta voiture ce soir' (en raison de ses fonctions) correspond plutôt à :",
@@ -8276,7 +8276,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Menace d’atteinte aux biens = 433-3 si victime protégée et qualité connue + lien fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Menaces vs Outrage",
     question: "L’outrage se distingue d’une menace car la menace contient :",
     options: [
@@ -8290,7 +8290,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Menace = annonce de mal criminel/délictuel, outrage = atteinte au respect/dignité (sans annonce d’infraction).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Provocation à la rébellion vs Outrage",
     question:
         "Crier à une foule : 'Allez-y, tapez les policiers !' correspond plutôt à :",
@@ -8304,7 +8304,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Incitation directe à opposition violente à l’autorité = 433-10 (infraction formelle).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Provocation vs Complicité",
     question:
         "Si après une provocation, la rébellion est réellement commise, l’auteur de la provocation peut être poursuivi :",
@@ -8318,7 +8318,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Nota de ton doc 433-10 : si suivie d’effet → complicité possible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion en réunion",
     question: "La rébellion est aggravée lorsqu’elle est commise :",
     options: ["En réunion (433-7 al.2 CP)", "En plein jour", "Sans témoin"],
@@ -8326,7 +8326,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Circonstance aggravante prévue à 433-7 al.2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion armée",
     question: "La rébellion est aggravée lorsque l’auteur est :",
     options: [
@@ -8342,7 +8342,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // ---------------------------------------------------------
   // QCM “VRAI/FAUX” — format options (3 choix)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Provocation 433-10",
     question:
         "Vrai ou Faux : La provocation directe à la rébellion n’est punissable que si la rébellion a effectivement lieu.",
@@ -8352,7 +8352,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Infraction formelle : punissable même sans résultat (sans être suivie d’effet).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Provocation 433-10",
     question:
         "Vrai ou Faux : La provocation directe à la rébellion doit viser une personne déterminée.",
@@ -8362,7 +8362,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Elle peut être diffusée par tracts/écrits/moyens de transmission sans destinataire déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Rébellion",
     question:
         "Vrai ou Faux : Un obstacle passif (se laisser porter, s’agripper sans violence) suffit à caractériser une rébellion.",
@@ -8372,7 +8372,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ton doc : obstacle passif et simple désobéissance exclus du champ de la rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Rébellion",
     question:
         "Vrai ou Faux : La rébellion peut être retenue même si l’acte accompli par l’agent était illégal.",
@@ -8382,7 +8382,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 1er septembre 2004 : illégalité supposée sans incidence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Menaces 433-3",
     question:
         "Vrai ou Faux : Pour être punissable, la menace 433-3 doit être réitérée.",
@@ -8391,7 +8391,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Punissable même sans réitération ni matérialisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Menaces 433-3",
     question:
         "Vrai ou Faux : Peu importe que l’auteur ait réellement l’intention ou les moyens d’exécuter la menace.",
@@ -8401,7 +8401,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Élément moral : conscience du trouble. Intention/moyens d’exécution indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 433-3-1",
     question:
         "Vrai ou Faux : L’infraction 433-3-1 exige de prouver une intention particulière d’obtenir une dérogation aux règles du service public.",
@@ -8411,7 +8411,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte insiste sur l’objectif précis : exemption/application différenciée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Rébellion (aggravations)",
     question:
         "Vrai ou Faux : La rébellion commise en réunion est moins sévèrement punie que la rébellion simple.",
@@ -8426,7 +8426,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // MINI CAS PRATIQUES — Qualification + article + peine
   // (Chaque cas = QCM)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Interpellation (violence)",
     question:
         "Lors d’une interpellation, un homme se débat violemment, bouscule un policier et tente de s’enfuir. Quelle qualification principale ?",
@@ -8440,7 +8440,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Résistance active et violente à l’action d’un agent dans l’exercice de ses fonctions = rébellion (simple).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Obstacle passif",
     question:
         "Un homme refuse de descendre de sa voiture et s’agrippe au volant sans donner de coups ni bousculer. Qualification la plus adaptée ?",
@@ -8455,7 +8455,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ton cours : simple désobéissance/obstacle passif ≠ rébellion (exemple Cass. crim., 1er mars 2006).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Rébellion en réunion",
     question:
         "Trois individus entourent des policiers pour empêcher une interpellation et se débattent violemment avec eux. Qualification/peine ?",
@@ -8469,7 +8469,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Réunion = circonstance aggravante spécifique de la rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Rébellion armée",
     question:
         "Lors d’un contrôle, un individu se débat violemment. Une arme blanche est retrouvée sur lui (cachée). Qualification/peine ?",
@@ -8483,7 +8483,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Port d’une arme, apparente ou cachée, pendant la rébellion = aggravation 433-8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Arme + réunion",
     question:
         "Deux individus se rebellent violemment contre les policiers. L’un d’eux est porteur d’une arme. Qualification/peine maximale dans ton tableau ?",
@@ -8497,7 +8497,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cumul arme + réunion = niveau d’aggravation supérieur (10 ans / 150k).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Provocation à la rébellion",
     question:
         "Un individu crie sur la voie publique : « Venez, ils ne sont que deux, on va les défoncer ! » pour empêcher son interpellation. Qualification/peine ?",
@@ -8511,7 +8511,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Incitation directe à opposition violente (infraction formelle) = 433-10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Menaces envers policier",
     question:
         "En raison d’un contrôle, un homme dit à un policier en uniforme : « Je vais te casser la gueule ce soir ». Qualification/peine (simple) ?",
@@ -8526,7 +8526,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Annonce d’un délit à venir contre la personne + qualité apparente/connue + lien fonctions = 433-3 (simple).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Menace de mort",
     question:
         "Un individu dit à un enseignant : « Je vais te tuer » pendant qu’il est en fonction. Qualification/peine ?",
@@ -8539,7 +8539,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Menace de mort = aggravation al.5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Pression pour acte de fonction (al.6)",
     question:
         "Un individu menace un agent public pour qu’il falsifie une décision administrative en sa faveur. Qualification/peine ?",
@@ -8554,7 +8554,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Al.6 vise la pression pour faire accomplir/s’abstenir un acte de fonction ou abus d’autorité pour décision favorable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Dérogation service public (433-3-1)",
     question:
         "Un usager menace un agent municipal pour obtenir une exemption aux règles d’accès d’un service public (traitement différencié). Qualification/peine ?",
@@ -8568,7 +8568,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "But = application dérogatoire des règles du service public → 433-3-1 (intention particulière).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Dérogation (cantine)",
     question:
         "Après plusieurs refus, un parent menace le personnel d’une cantine pour obtenir un régime alimentaire non prévu par le règlement. Qualification/peine ?",
@@ -8586,7 +8586,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // ---------------------------------------------------------
   // SUPER PIÈGES — cas “mixte” et questions à choix proches
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Outrage + Rébellion (ordre logique)",
     question:
         "Pendant l’interpellation, un individu insulte l’agent puis se débat violemment pour échapper. La qualification principale liée à l’acte physique est :",
@@ -8601,7 +8601,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La résistance violente = rébellion. Les insultes peuvent constituer outrage si distinctes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Menace vs Outrage",
     question:
         "Dire à un policier : « T’es nul, t’es un clown » correspond plutôt à :",
@@ -8615,7 +8615,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Pas d’annonce d’un crime/délit futur : c’est insultant/dégradant = outrage (si conditions réunies).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Menace de bien",
     question:
         "Dire à un gardien d’immeuble assermenté : « Je vais dégrader ta loge » en raison de sa fonction correspond plutôt à :",
@@ -8629,7 +8629,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Menace d’atteinte aux biens + victime protégée (gardien assermenté cité) + lien fonctions → 433-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Provocation vs Rébellion",
     question:
         "Un individu crie à la foule d’empêcher l’interpellation, mais personne ne bouge. Qualification ?",
@@ -8642,7 +8642,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Infraction formelle : pas besoin d’effet.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Menaces vs 433-3-1",
     question:
         "Un usager menace un agent d’un service public pour obtenir un traitement 'hors règle' (dérogation). Qualification la plus pertinente ?",
@@ -8657,7 +8657,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Définition",
     question: "La provocation directe à la rébellion consiste à :",
     options: [
@@ -8670,7 +8670,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’article 433-10 CP vise la provocation directe à commettre le délit de rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Texte",
     question: "La provocation directe à la rébellion est prévue par :",
     options: [
@@ -8682,7 +8682,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le délit est défini et réprimé par l’article 433-10 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Caractère direct",
     question: "Pour être punissable, la provocation doit :",
     options: [
@@ -8696,7 +8696,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La provocation doit présenter un lien précis et incontestable avec l’acte de rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Résultat",
     question: "La provocation directe à la rébellion est constituée :",
     options: [
@@ -8709,7 +8709,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Il s’agit d’une infraction formelle : le résultat est indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Moyens",
     question: "La provocation peut être réalisée notamment par :",
     options: [
@@ -8722,7 +8722,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’article 433-10 vise divers moyens de transmission de la parole, de l’écrit ou de l’image.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Presse",
     question:
         "Lorsque la provocation est commise par la presse écrite ou audiovisuelle :",
@@ -8736,7 +8736,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’alinéa 2 de l’article 433-10 renvoie aux règles spécifiques de la presse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Élément moral",
     question: "L’élément moral de la provocation à la rébellion suppose :",
     options: [
@@ -8748,7 +8748,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Il s’agit d’une infraction intentionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Peines",
     question:
         "Les peines encourues pour la provocation directe à la rébellion sont :",
@@ -8765,7 +8765,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // RÉBELLION — ARTICLES 433-6 À 433-9 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Définition",
     question: "La rébellion consiste à :",
     options: [
@@ -8779,7 +8779,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’article 433-6 CP définit la rébellion par une résistance violente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Texte",
     question: "La rébellion est définie par l’article :",
     options: [
@@ -8791,7 +8791,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’article 433-6 CP définit la rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Victime",
     question: "La victime de la rébellion doit être :",
     options: [
@@ -8804,7 +8804,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La qualité de la victime est un élément constitutif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exercice des fonctions",
     question: "Il y a rébellion uniquement si l’agent agit :",
     options: [
@@ -8817,7 +8817,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La résistance doit intervenir pendant l’exercice des fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Illégalité de l’acte",
     question: "L’illégalité éventuelle de l’acte accompli par l’agent :",
     options: [
@@ -8829,7 +8829,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La Cour de cassation juge l’illégalité sans incidence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Résistance",
     question: "La rébellion suppose :",
     options: [
@@ -8841,7 +8841,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La simple désobéissance ou l’obstacle passif sont exclus.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élément moral",
     question: "L’élément moral de la rébellion suppose :",
     options: [
@@ -8855,7 +8855,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’auteur doit avoir conscience de s’opposer à un agent public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Réunion",
     question: "La rébellion est aggravée lorsqu’elle est commise :",
     options: ["En réunion", "La nuit", "En état d’ivresse"],
@@ -8863,7 +8863,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 433-7 al.2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Arme",
     question: "La rébellion est aggravée lorsque l’auteur :",
     options: [
@@ -8875,7 +8875,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 433-8 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines simples",
     question: "Les peines encourues pour la rébellion simple sont :",
     options: [
@@ -8891,7 +8891,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MENACES ENVERS PERSONNE DÉPOSITAIRE / SERVICE PUBLIC — 433-3
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Définition",
     question: "Les menaces réprimées par l’article 433-3 CP consistent à :",
     options: [
@@ -8904,7 +8904,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’article 433-3 vise les menaces de crime ou de délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Résultat",
     question: "La menace est punissable :",
     options: [
@@ -8916,7 +8916,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La matérialisation ou l’exécution est indifférente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Qualité de la victime",
     question:
         "Pour constituer l’infraction, la qualité de la victime doit être :",
@@ -8930,7 +8930,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La menace doit être motivée par les fonctions connues de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Élément moral",
     question: "L’auteur des menaces doit avoir :",
     options: [
@@ -8942,7 +8942,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’intention de réaliser la menace est indifférente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Peines simples",
     question: "Les peines encourues pour les menaces simples sont :",
     options: [
@@ -8954,7 +8954,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines prévues par l’article 433-3 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Condition d’utilité",
     question:
         "La dénonciation doit être considérée comme « utile » lorsqu’elle peut :",
@@ -8969,7 +8969,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que l’obligation concerne les crimes dont la dénonciation peut prévenir/limiter/empêcher.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nature des infractions",
     question: "L’obligation de dénonciation vise :",
     options: [
@@ -8982,7 +8982,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : « infractions de nature criminelle, peu importe la nature du crime ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative",
     question: "L’incrimination est également applicable :",
     options: [
@@ -8995,7 +8995,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que la non-dénonciation concerne aussi la tentative de crime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Simple projet",
     question:
         "Le simple projet criminel, en l’absence de tout commencement d’exécution :",
@@ -9009,7 +9009,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours exclut explicitement le simple projet criminel sans commencement d’exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Infraction d’omission",
     question: "La non-dénonciation de crime est une infraction :",
     options: [
@@ -9022,7 +9022,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : l’individu avait la possibilité d’avertir et il ne l’a pas fait.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Autorités",
     question:
         "Sont visées comme autorités judiciaires ou administratives susceptibles de recevoir l’information :",
@@ -9037,7 +9037,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise le ministère public, police, gendarmerie et toute autorité utile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Exemples d’autorités",
     question: "Le cours cite notamment comme destinataires possibles :",
     options: [
@@ -9050,7 +9050,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemples expressément mentionnés dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Dénonciation indirecte",
     question: "La jurisprudence admet que la dénonciation puisse être faite :",
     options: [
@@ -9063,7 +9063,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que la dénonciation peut être faite auprès d’un intermédiaire agissant pour leur compte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Objet de la révélation",
     question: "L’obligation implique la révélation :",
     options: [
@@ -9076,7 +9076,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : l’information doit porter sur les faits, pas nécessairement sur l’identité de l’auteur/complice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Identité de l’auteur",
     question: "Selon la jurisprudence citée, l’obligation porte :",
     options: [
@@ -9089,7 +9089,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 26 février 1959 : obligation de dénoncer le crime, pas l’identité/refuge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Modalités",
     question: "Les modalités de dénonciation sont :",
     options: [
@@ -9102,7 +9102,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : « toutes les modalités de dénonciation sont admissibles ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Finalité",
     question: "L’information vise principalement à :",
     options: [
@@ -9115,7 +9115,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : l’information est destinée à prévenir un trouble à l’ordre public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Prévenir/limiter",
     question: "La dénonciation peut prévenir ou limiter les effets notamment :",
     options: [
@@ -9128,7 +9128,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours donne l’exemple : tentative où la dénonciation est susceptible d’éviter le crime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nouveaux crimes",
     question: "La dénonciation peut aussi permettre :",
     options: [
@@ -9142,7 +9142,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : éviter de nouveaux crimes, notamment par identification des auteurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Élément moral",
     question: "L’élément moral est caractérisé si la personne :",
     options: [
@@ -9156,7 +9156,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : connaissance + absence de dénonciation → intention ; Cass. crim., 7 novembre 1990.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Mobile",
     question: "Le mobile expliquant l’abstention :",
     options: [
@@ -9168,7 +9168,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : le mobile importe peu.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Aggravation (434-2)",
     question:
         "La non-dénonciation est aggravée lorsque le crime non dénoncé constitue :",
@@ -9182,7 +9182,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 434-2 : trahison, espionnage, attentat, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité familiale et 434-2",
     question: "En cas de 434-2, l’immunité familiale :",
     options: [
@@ -9195,7 +9195,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : l’immunité familiale de 434-1 n’est pas applicable en 434-2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (simple)",
     question: "Peines encourues (434-1 al.1) :",
     options: [
@@ -9207,7 +9207,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines de la forme simple indiquées dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (aggravée)",
     question: "Peines encourues (434-2) :",
     options: [
@@ -9219,7 +9219,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines aggravées indiquées par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative",
     question: "La tentative de non-dénonciation est :",
     options: [
@@ -9231,7 +9231,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Complicité",
     question: "La complicité est possible notamment si une personne :",
     options: [
@@ -9244,7 +9244,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite explicitement ce cas de complicité (provocation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Secret professionnel",
     question:
         "Les personnes astreintes au secret professionnel (226-13) sont :",
@@ -9257,7 +9257,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours prévoit l’exception liée au secret professionnel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Participant au crime",
     question: "Celui qui a participé au crime :",
     options: [
@@ -9270,7 +9270,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : celui qui a participé au crime est excepté de l’obligation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité familiale (principe)",
     question: "L’immunité familiale bénéficie notamment :",
     options: [
@@ -9284,7 +9284,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Liste donnée par le cours, incluant concubin et partenaire de PACS.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Crimes sur mineurs",
     question: "Concernant les crimes commis sur les mineurs :",
     options: [
@@ -9301,7 +9301,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // AJOUTS — FAUX TÉMOIGNAGE / TÉMOIGNAGE MENSONGER (434-13 / 434-14)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Définition",
     question: "Le faux témoignage est constitué par :",
     options: [
@@ -9315,7 +9315,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : mensonge sous serment, devant juridiction ou OPJ en commission rogatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Texte",
     question: "Le faux témoignage est réprimé par :",
     options: [
@@ -9327,7 +9327,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : 434-13 définit et réprime le délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Juridictions concernées",
     question: "Le faux témoignage peut être commis devant :",
     options: [
@@ -9340,7 +9340,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le terme juridiction est général : pénales, civiles, administratives, financières.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — OPJ et commission rogatoire",
     question: "Le faux témoignage peut aussi être retenu devant un OPJ si :",
     options: [
@@ -9353,7 +9353,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : punissable devant OPJ uniquement en exécution d’une commission rogatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Préliminaire / flagrance",
     question:
         "Les déclarations mensongères faites au cours d’une enquête préliminaire ou de flagrance sont :",
@@ -9366,7 +9366,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours l’indique expressément.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Serment",
     question: "Le faux témoignage suppose obligatoirement :",
     options: [
@@ -9379,7 +9379,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le mensonge seul ne suffit pas : il faut la violation du serment.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Formule",
     question: "La formule du serment consiste à jurer :",
     options: [
@@ -9391,7 +9391,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Formule rappelée dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mineurs <16 ans",
     question: "L’infraction ne peut être retenue contre :",
     options: [
@@ -9404,7 +9404,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : pas de serment avant 16 ans → pas de faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Garde à vue",
     question:
         "La personne entendue par l’OPJ sur commission rogatoire sous le régime de la garde à vue :",
@@ -9418,7 +9418,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : pas de serment en GAV → pas de faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Nature du mensonge",
     question: "Le Code pénal :",
     options: [
@@ -9432,7 +9432,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : toute altération sciemment faite de la vérité est incriminée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Commission",
     question: "Le faux témoignage est une infraction de :",
     options: ["Commission (acte positif)", "Omission", "Négligence"],
@@ -9441,7 +9441,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : acte positif requis, refus de déposer ≠ faux témoignage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Refus de déposer",
     question: "Le refus de comparaître ou de déposer :",
     options: [
@@ -9453,7 +9453,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours l’indique explicitement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Affirmation inexacte",
     question: "Le faux témoignage peut consister en :",
     options: [
@@ -9465,7 +9465,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple classique rappelé dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Négation d’un fait vrai",
     question: "Constitue un faux témoignage le fait :",
     options: [
@@ -9479,7 +9479,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : la négation d’un fait vrai (dire ne pas savoir) est visée si c’est sciemment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Omission",
     question: "Le mensonge peut résulter d’une omission lorsque :",
     options: [
@@ -9493,7 +9493,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours admet le mensonge par omission si la présentation incomplète dénature la vérité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Caractère déterminant",
     question: "Le faux témoignage est punissable seulement si :",
     options: [
@@ -9506,7 +9506,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : le témoignage doit être déterminant (circonstances essentielles).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Circonstances essentielles",
     question: "Une circonstance est dite « essentielle » lorsqu’elle est :",
     options: [
@@ -9519,7 +9519,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : essentielle = susceptible d’entraîner la conviction du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Élément moral",
     question: "Le faux témoignage suppose :",
     options: [
@@ -9532,7 +9532,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : infraction intentionnelle, volonté délibérée de tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mauvaise foi",
     question: "Le mensonge sanctionné est :",
     options: [
@@ -9545,7 +9545,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : volonté délibérée de tromper, mensonge intentionnel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Erreur de bonne foi",
     question: "Le témoin qui se trompe ou commet une erreur de bonne foi :",
     options: [
@@ -9558,7 +9558,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : la loi ne punit pas l’erreur, mais le mensonge volontaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Circonstances aggravantes",
     question:
         "Le faux témoignage est aggravé notamment lorsqu’il est provoqué par :",
@@ -9571,7 +9571,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 434-14 1° : don/récompense.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Récompense (sens large)",
     question: "La « récompense quelconque » vise :",
     options: [
@@ -9584,7 +9584,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : toute contrepartie déterminante (même non monétaire).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Aggravation (peine criminelle)",
     question:
         "Le faux témoignage est aggravé lorsque celui contre lequel ou en faveur duquel il est commis :",
@@ -9597,7 +9597,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 434-14 2° : passible d’une peine criminelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (simple)",
     question: "Peines encourues (faux témoignage simple) :",
     options: [
@@ -9609,7 +9609,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines indiquées par le cours pour 434-13 al.1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (aggravé)",
     question: "Peines encourues (faux témoignage aggravé) :",
     options: [
@@ -9621,7 +9621,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peines indiquées par le cours pour 434-14.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Tentative",
     question: "La tentative de faux témoignage est :",
     options: [
@@ -9633,7 +9633,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Complicité",
     question: "La complicité de faux témoignage est :",
     options: [
@@ -9647,7 +9647,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : complicité possible + lien possible avec subornation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Rétractation (exemption)",
     question: "Le faux témoin est exempt de peine s’il rétracte :",
     options: [
@@ -9660,7 +9660,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "434-13 al.2 : exemption si rétractation spontanée avant la décision de fin de procédure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Effet de la rétractation",
     question: "La rétractation entraîne :",
     options: [
@@ -9672,7 +9672,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : reconnu coupable mais exempté de peine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Spontanéité (non)",
     question: "N’est pas une rétractation spontanée :",
     options: [
@@ -9684,7 +9684,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite cette hypothèse comme non spontanée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Spontanéité après mise en examen",
     question: "N’est pas spontanée :",
     options: [
@@ -9696,7 +9696,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite ce cas comme non spontané.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Limite temporelle",
     question:
         "Selon la jurisprudence rappelée, la limite au-delà de laquelle la rétractation est tardive est :",
@@ -9714,7 +9714,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MINI-CAS (QUALIFICATION) — TRÈS UTILE EXAM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (tentative)",
     question:
         "Une personne apprend qu’un crime est sur le point d’être commis (commencement d’exécution) et qu’une alerte pourrait l’empêcher. Elle se tait. On retient :",
@@ -9728,7 +9728,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : vise aussi la tentative si la dénonciation peut éviter le crime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (tentative en cours)",
     question:
         "Une personne surprend un individu armé prêt à tirer sur quelqu’un, début de commencement d’exécution d’un meurtre, et sait qu’un appel immédiat à la police pourrait empêcher le crime. Elle ne fait rien. On retient :",
@@ -9743,7 +9743,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (projet vague)",
     question:
         "Une personne entend dans un bar : ‘Un jour, je braquerai une banque’, sans aucune précision ni préparation concrète. Elle ne signale rien aux autorités. On retient :",
@@ -9758,7 +9758,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (crime consommé, plus rien à sauver)",
     question:
@@ -9774,7 +9774,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (nouveaux crimes à éviter)",
     question:
         "Une personne sait qu’un individu a commis un assassinat et se prépare à tuer à nouveau. Prévenir la police permettrait de l’arrêter avant le second crime. Elle se tait. On retient :",
@@ -9789,7 +9789,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (secret professionnel de l’avocat)",
     question:
@@ -9805,7 +9805,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (médecin tenu au secret)",
     question:
         "Un médecin apprend, dans le cadre de son activité professionnelle, qu’un patient a commis un crime et se vante de vouloir recommencer. Le médecin se tait. On retient :",
@@ -9821,7 +9821,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (immunité familiale, victime majeure)",
     question:
@@ -9837,7 +9837,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (immunité familiale, mineur victime)",
     question:
@@ -9853,7 +9853,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (concubin auteur du crime)",
     question:
         "Une personne vivant notoirement en concubinage avec l’auteur d’un crime apprend les faits et se tait, pour ‘ne pas trahir son compagnon’. Victime majeure. On retient :",
@@ -9869,7 +9869,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (crime sur mineur par concubin)",
     question:
         "Une personne vit en concubinage avec l’auteur d’un crime de viol sur un mineur. Malgré sa connaissance des faits, elle ne dénonce pas. On retient :",
@@ -9884,7 +9884,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (atteinte aux intérêts fondamentaux de la Nation)",
     question:
@@ -9900,7 +9900,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (terrorisme, proche auteur)",
     question:
         "Une femme sait que son frère prépare un attentat terroriste imminent. Par loyauté familiale, elle garde le silence. On retient :",
@@ -9915,7 +9915,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (dénonciation à une autorité administrative)",
     question:
@@ -9931,7 +9931,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (révélation des faits, pas de l’auteur)",
     question:
@@ -9947,7 +9947,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (impossibilité matérielle d’alerter)",
     question:
@@ -9963,7 +9963,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (complicité par provocation à se taire)",
     question:
@@ -9979,7 +9979,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (nature de l’infraction)",
     question:
         "La non-dénonciation de crime prévue par l’article 434-1 du Code pénal est :",
@@ -9994,7 +9994,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (infractions concernées)",
     question:
         "Quelles infractions sont visées par l’obligation de dénonciation de l’article 434-1 du Code pénal ?",
@@ -10009,7 +10009,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (tentative et complicité)",
     question:
         "Concernant la non-dénonciation de crime (434-1), laquelle de ces affirmations est exacte ?",
@@ -10024,7 +10024,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (immunité familiale, principe)",
     question:
         "Parmi les personnes suivantes, lesquelles bénéficient en principe de l’immunité familiale prévue par l’article 434-1 ?",
@@ -10040,7 +10040,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (exclusions de l’immunité)",
     question:
         "Dans quel cas l’immunité familiale de l’article 434-1 ne s’applique-t-elle pas ?",
@@ -10055,7 +10055,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (régime aggravé 434-2)",
     question:
         "Quelle est la principale conséquence de l’application de l’article 434-2 du Code pénal ?",
@@ -10071,7 +10071,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (définition textuelle)",
     question:
         "Selon l’article 434-13 du Code pénal, le faux témoignage consiste en :",
@@ -10087,7 +10087,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (élément matériel)",
     question:
         "Lequel de ces éléments n’est pas requis pour caractériser le faux témoignage au sens de l’article 434-13 ?",
@@ -10102,7 +10102,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (champ des juridictions)",
     question:
         "Le faux témoignage de l’article 434-13 peut-il être retenu devant une juridiction civile ou prud’homale ?",
@@ -10117,7 +10117,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (peine encourue simple)",
     question:
         "Quelle est la peine maximale encourue pour le faux témoignage simple selon l’article 434-13 ?",
@@ -10132,7 +10132,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (peines aggravées)",
     question:
         "En cas de faux témoignage aggravé par l’une des circonstances de l’article 434-14, quelle est la peine maximale encourue ?",
@@ -10147,7 +10147,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (circ. aggravante de contrepartie)",
     question:
         "La circonstance aggravante prévue à l’article 434-14, 1° suppose :",
@@ -10163,7 +10163,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (circ. aggravante peine criminelle)",
     question:
         "La circonstance aggravante prévue à l’article 434-14, 2° est liée :",
@@ -10179,7 +10179,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (rétractation et exemption de peine)",
     question:
         "Selon l’article 434-13, à quelle condition le faux témoin peut-il être exempté de peine ?",
@@ -10195,7 +10195,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (commission rogatoire, serment prêté)",
     question:
@@ -10211,7 +10211,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (garde à vue, pas de serment)",
     question:
         "Un mis en examen, entendu sous le régime de la garde à vue par un OPJ sur commission rogatoire, ment volontairement sur sa participation aux faits. Il ne prête pas serment. On retient :",
@@ -10226,7 +10226,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (enquête préliminaire, simple témoin)",
     question:
@@ -10242,7 +10242,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (omission volontaire, point essentiel)",
     question:
@@ -10259,7 +10259,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (élément non déterminant)",
     question:
         "Sous serment, un témoin ment volontairement sur la couleur de la chemise d’un prévenu, élément qui n’a aucune incidence sur la solution du litige. On retient :",
@@ -10274,7 +10274,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (erreur de bonne foi)",
     question:
         "Un témoin, très stressé, prête serment et indique une heure de commission des faits erronée, en toute bonne foi, sans intention de tromper. On retient :",
@@ -10289,7 +10289,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (don d’argent, affaire délictuelle)",
     question:
@@ -10305,7 +10305,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (affaire criminelle, sans don)",
     question:
         "Un témoin mensonge sous serment devant la cour d’assises pour faire acquitter un accusé poursuivi pour assassinat, sans recevoir aucune contrepartie. On retient :",
@@ -10320,7 +10320,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (rétractation spontanée avant la décision)",
     question:
@@ -10337,7 +10337,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (rétractation tardive)",
     question:
         "Un témoin ment sous serment à l’audience d’un tribunal correctionnel. Il ne se rétracte qu’après le prononcé du jugement définitif. On retient :",
@@ -10352,7 +10352,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (subornation et complicité)",
     question:
         "Une personne fournit un faux récit à une prostituée et l’incite à le répéter sous serment devant un OPJ agissant sur commission rogatoire, afin de mettre en cause à tort des suspects passibles d’une peine criminelle. Elle obtient qu’elle mente effectivement. On retient pour la première personne :",
@@ -10367,7 +10367,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (tentative et complicité)",
     question:
         "Quel est le régime de la tentative et de la complicité de faux témoignage au regard de l’article 434-13 ?",
@@ -10382,7 +10382,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (personnes exclues)",
     question:
         "Parmi les personnes suivantes, laquelle ne peut, en principe, être poursuivie pour faux témoignage au sens de l’article 434-13 ?",
@@ -10397,7 +10397,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (délit et non crime)",
     question:
         "Une personne apprend qu’un voisin a commis un vol simple, qualifié de délit, et qu’il pourrait recommencer. Elle se tait. On retient :",
@@ -10413,7 +10413,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (dénonciation téléphonique anonyme)",
     question:
@@ -10429,7 +10429,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (information imprécise mais utile)",
     question:
@@ -10445,7 +10445,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (commission d’enquête parlementaire)",
     question:
@@ -10462,7 +10462,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (témoin assisté)",
     question:
         "Un témoin assisté, entendu par le juge d’instruction, ne prête pas serment. Il ment pour se protéger. On retient :",
@@ -10477,7 +10477,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (juridiction administrative)",
     question:
         "Devant un tribunal administratif, un témoin prête serment et ment volontairement sur des faits essentiels à un contentieux de responsabilité de l’État. On retient :",
@@ -10492,7 +10492,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (information indirecte mais précise)",
     question:
@@ -10508,7 +10508,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (participation au crime)",
     question:
         "Une personne participe au crime comme co-auteur puis s’abstient de le dénoncer. On envisage la non-dénonciation de crime à son encontre. On retient :",
@@ -10522,7 +10522,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Celui qui a participé au crime n’est pas soumis à l’obligation de se dénoncer lui-même ; il répond d’abord de l’infraction principale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (préliminaire)",
     question:
         "En audition libre en enquête préliminaire, une personne ment (sans serment). On retient :",
@@ -10536,7 +10536,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : mensonges en préliminaire/flagrance non punissables au titre de 434-13.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (commission rogatoire)",
     question:
         "Devant un OPJ agissant sur commission rogatoire, un témoin prête serment puis ment sur un point essentiel. On retient :",
@@ -10550,7 +10550,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Conditions réunies : commission rogatoire + serment + altération volontaire de la vérité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Définition",
     question:
         "La non-dénonciation de crime consiste, pour une personne ayant connaissance d’un crime, à :",
@@ -10565,7 +10565,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise l’abstention d’informer les autorités lorsque la dénonciation peut être utile (prévenir/limiter/empêcher).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Texte",
     question: "Le délit de non-dénonciation de crime est prévu par :",
     options: [
@@ -10578,7 +10578,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que l’article 434-1 prévoit et réprime le délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nature des faits",
     question: "L’obligation de dénonciation concerne :",
     options: [
@@ -10592,7 +10592,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Sont visées les infractions criminelles, sans distinction de type de crime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Utilité de la dénonciation",
     question: "La dénonciation doit être :",
     options: [
@@ -10606,7 +10606,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours insiste : obligation liée aux crimes dont il est encore possible de prévenir/limiter ou d’empêcher des récidives criminelles.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative de crime",
     question: "La non-dénonciation peut aussi concerner :",
     options: [
@@ -10619,7 +10619,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que l’incrimination est applicable à la tentative de crime, mais pas au simple projet sans commencement d’exécution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Projet criminel",
     question: "Le simple projet criminel, sans commencement d’exécution, est :",
     options: [
@@ -10632,7 +10632,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique : pas d’obligation au stade du simple projet criminel sans commencement d’exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Infraction d’omission",
     question: "La non-dénonciation de crime est :",
     options: [
@@ -10645,7 +10645,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : infraction d’omission, l’individu pouvait avertir et ne l’a pas fait.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Autorités compétentes",
     question: "Peut recevoir une dénonciation au sens du cours :",
     options: [
@@ -10659,7 +10659,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise ministère public, police, gendarmerie… et toute autorité utile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Exemples d’autorités",
     question:
         "Parmi les autorités mentionnées comme pouvant recevoir l’information :",
@@ -10673,7 +10673,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours donne ces exemples d’autorités susceptibles d’agir.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-dénonciation de crime — Personne intervenant pour leur compte",
     question: "La jurisprudence admet que la dénonciation peut être faite :",
@@ -10687,7 +10687,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que la dénonciation peut être faite à une personne qui intervient pour le compte des autorités.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Objet de l’information",
     question: "L’information donnée doit porter :",
     options: [
@@ -10701,7 +10701,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Cass. crim., 26 février 1959 : obligation de dénoncer le crime, pas l’identité ou le refuge des auteurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Modalités",
     question: "Les modalités de dénonciation sont :",
     options: [
@@ -10714,7 +10714,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique : toutes modalités de dénonciation sont admissibles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Finalité",
     question: "L’objectif de la dénonciation est de :",
     options: [
@@ -10728,7 +10728,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours insiste sur la prévention du trouble et la limitation/empêchement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nouveaux crimes",
     question: "La dénonciation peut être utile pour :",
     options: [
@@ -10742,7 +10742,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours mentionne l’objectif d’empêcher de nouveaux crimes, notamment par l’identification.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Élément moral",
     question: "L’élément moral suppose :",
     options: [
@@ -10756,7 +10756,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : intention déduite de la connaissance du crime et de l’absence de dénonciation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Mobile",
     question: "Le mobile expliquant l’abstention :",
     options: [
@@ -10768,7 +10768,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise que le mobile importe peu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Jurisprudence (preuve des éléments)",
     question: "La Cour de cassation impose aux juges du fond :",
     options: [
@@ -10785,7 +10785,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 434-1 — EXCEPTIONS / IMMUNITÉS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité familiale",
     question: "L’immunité familiale prévue par 434-1 s’applique :",
     options: [
@@ -10799,7 +10799,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte exclut l’immunité familiale lorsque les crimes sont commis sur les mineurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Proches concernés",
     question: "Sont visés par l’immunité familiale (434-1) :",
     options: [
@@ -10813,7 +10813,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours liste précisément ces proches et inclut concubin/PACS.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Crimes sur mineurs",
     question: "Concernant les crimes commis sur les mineurs :",
     options: [
@@ -10826,7 +10826,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique : immunité familiale OUI sauf crimes commis sur mineurs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Secret professionnel",
     question: "Les personnes astreintes au secret professionnel :",
     options: [
@@ -10839,7 +10839,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise l’exemption liée au secret professionnel (226-13).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Participant au crime",
     question: "Celui qui a participé au crime :",
     options: [
@@ -10856,7 +10856,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 434-2 — CIRCONSTANCES AGGRAVANTES (NON-DÉNONCIATION)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Aggravation",
     question:
         "La circonstance aggravante de la non-dénonciation est prévue par :",
@@ -10870,7 +10870,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : aggravation lorsque le crime non dénoncé porte sur intérêts fondamentaux de la Nation ou terrorisme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Crimes concernés (434-2)",
     question: "L’aggravation 434-2 vise notamment :",
     options: [
@@ -10883,7 +10883,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite trahison, espionnage, attentat, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité et 434-2",
     question: "En cas de 434-2, les dispositions d’immunité familiale :",
     options: [
@@ -10896,7 +10896,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : en 434-2, l’immunité familiale de 434-1 ne s’applique pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (simple)",
     question: "Peines encourues (434-1 al.1) :",
     options: [
@@ -10908,7 +10908,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression indiquée par le cours pour la forme simple.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (aggravée)",
     question: "Peines encourues en cas d’application de 434-2 :",
     options: [
@@ -10920,7 +10920,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression aggravée indiquée par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Personnes morales",
     question: "Les personnes morales :",
     options: [
@@ -10933,7 +10933,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise la responsabilité pénale des personnes morales.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative",
     question: "La tentative de non-dénonciation de crime est :",
     options: [
@@ -10945,7 +10945,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Complicité",
     question: "La complicité de non-dénonciation est :",
     options: [
@@ -10958,7 +10958,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : complicité possible, notamment celui qui incite à ne pas dénoncer.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Exemple de complicité",
     question: "Peut se rendre complice :",
     options: [
@@ -10975,7 +10975,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 434-13 — FAUX TÉMOIGNAGE / TÉMOIGNAGE MENSONGER (PRINCIPES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Définition",
     question: "Le témoignage mensonger consiste en :",
     options: [
@@ -10989,7 +10989,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition donnée : mensonge sous serment, juridiction ou OPJ sur commission rogatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Texte",
     question: "Le délit de faux témoignage est réprimé par :",
     options: [
@@ -11001,7 +11001,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : défini et réprimé par l’article 434-13 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Où ?",
     question: "Le faux témoignage est punissable s’il est fait :",
     options: [
@@ -11015,7 +11015,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours exclut les mensonges en enquête préliminaire/flagrance (hors commission rogatoire).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Juridiction (sens large)",
     question: "Le terme « juridiction » doit être compris :",
     options: [
@@ -11028,7 +11028,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise le caractère général du terme juridiction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Enquête préliminaire/flagrance",
     question:
         "Des déclarations mensongères en enquête préliminaire ou de flagrance :",
@@ -11042,7 +11042,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : faux témoignage punissable en justice ou CR ; pas en préliminaire/flagrance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Condition du serment",
     question: "Le faux témoignage suppose :",
     options: [
@@ -11055,7 +11055,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le mensonge ne suffit pas : il faut la violation d’un serment.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Formule du serment",
     question: "Le serment consiste à promettre :",
     options: [
@@ -11067,7 +11067,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Formule indiquée : vérité, toute la vérité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mineurs",
     question: "Le faux témoignage ne peut être retenu contre :",
     options: [
@@ -11080,7 +11080,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : pas de serment exigé avant 16 ans → pas de faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Incapacité de témoigner",
     question: "Le faux témoignage ne peut viser :",
     options: [
@@ -11094,7 +11094,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours mentionne les incapacités, notamment l’interdiction de témoigner.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Personnes au statut particulier",
     question:
         "Parmi les personnes dont le statut peut empêcher le faux témoignage :",
@@ -11108,7 +11108,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite des incapacités liées au statut (intérêt au litige, témoin assisté…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Garde à vue sur commission rogatoire",
     question:
         "La personne entendue par l’OPJ en commission rogatoire sous le régime de la garde à vue :",
@@ -11127,7 +11127,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 434-13 — CARACTÉRISATION DU MENSONGE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Altération de la vérité",
     question: "Le faux témoignage consiste en :",
     options: [
@@ -11140,7 +11140,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le code n’énumère pas : toute altération sciemment faite de la vérité est incriminée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Infraction de commission",
     question: "Le faux témoignage est une infraction de :",
     options: ["Commission (acte positif)", "Omission", "Négligence"],
@@ -11149,7 +11149,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : acte positif requis. Refus de comparaître/de déposer ≠ faux témoignage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Refus de déposer",
     question: "Le refus de comparaître ou de déposer :",
     options: [
@@ -11162,7 +11162,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : refus ≠ faux témoignage (infraction de commission).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mensonge par affirmation",
     question: "Le faux témoignage peut consister en :",
     options: [
@@ -11175,7 +11175,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite l’affirmation d’un fait inexact comme forme classique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mensonge par négation",
     question: "Constitue un faux témoignage le fait :",
     options: [
@@ -11188,7 +11188,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : le témoin qui déclare ne pas savoir alors qu’il sait tombe sous le coup de la loi pénale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mensonge par omission",
     question: "Le mensonge peut être réalisé par omission lorsque :",
     options: [
@@ -11202,7 +11202,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours admet l’omission lorsque la présentation incomplète dénature les faits.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Déclarations déterminantes",
     question: "Le faux témoignage n’est punissable que si :",
     options: [
@@ -11216,7 +11216,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Analyse jurisprudentielle : le témoignage doit être déterminant (incidence sur la solution).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Circonstances essentielles",
     question: "Pour être déterminant, le mensonge doit porter :",
     options: [
@@ -11230,7 +11230,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite : altération volontaire portant sur circonstances essentielles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Élément moral",
     question: "L’infraction de faux témoignage est :",
     options: [
@@ -11244,7 +11244,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : mensonge intentionnel, volonté délibérée de tromper la justice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Erreur / inattention",
     question: "Le témoin qui se trompe de bonne foi :",
     options: [
@@ -11257,7 +11257,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : la loi ne punit pas l’erreur de bonne foi, mais le mensonge volontaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mobile",
     question: "Le mobile du faux témoin :",
     options: [
@@ -11273,7 +11273,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 434-14 — CIRCONSTANCES AGGRAVANTES (FAUX TÉMOIGNAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Aggravation (don/récompense)",
     question: "Le faux témoignage est aggravé lorsque :",
     options: [
@@ -11286,7 +11286,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 434-14 1° : don/récompense quelconque.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Récompense quelconque",
     question: "La notion de « récompense quelconque » est interprétée comme :",
     options: [
@@ -11299,7 +11299,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : toute contrepartie déterminant le témoignage mensonger.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Aggravation (peine criminelle)",
     question: "Le faux témoignage est aggravé lorsque :",
     options: [
@@ -11312,7 +11312,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Article 434-14 2° : passible d’une peine criminelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (simple)",
     question: "Peines encourues pour le faux témoignage simple (434-13) :",
     options: [
@@ -11324,7 +11324,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression indiquée dans le cours (forme simple).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (aggravé)",
     question: "Peines encourues pour le faux témoignage aggravé (434-14) :",
     options: [
@@ -11336,7 +11336,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression indiquée pour les formes aggravées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Tentative",
     question: "La tentative de faux témoignage est :",
     options: [
@@ -11348,7 +11348,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Complicité",
     question: "La complicité de faux témoignage est :",
     options: [
@@ -11366,7 +11366,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 434-13 al.2 — RÉTRACTATION / EXEMPTION DE PEINE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Rétractation",
     question: "Le faux témoin est exempt de peine s’il :",
     options: [
@@ -11380,7 +11380,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "434-13 al.2 : exemption si rétractation spontanée avant décision de fin de procédure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Spontanéité",
     question: "N’est pas considérée comme spontanée :",
     options: [
@@ -11392,7 +11392,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : rétractation à la demande du juge ≠ spontanée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Rétractation après mise en examen",
     question: "N’est pas spontanée :",
     options: [
@@ -11404,7 +11404,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite ce cas comme non spontané.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Effet de la rétractation",
     question: "La rétractation :",
     options: [
@@ -11417,7 +11417,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le témoin reste coupable mais n’est pas condamné à une peine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Moment limite",
     question:
         "En jurisprudence, la limite au-delà de laquelle la rétractation est tardive est :",
@@ -11431,7 +11431,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que la clôture des débats marque traditionnellement la limite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Délit aggravé et rétractation",
     question: "La rétractation/exemption :",
     options: [
@@ -11444,7 +11444,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique qu’il semble logique d’appliquer l’exemption aussi à l’aggravé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Définition de la rétractation",
     question: "Une rétractation est :",
     options: [
@@ -11462,7 +11462,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // MINI-CAS / PIÈGES (MIXTE) — ACTION DE LA JUSTICE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation",
     question:
         "Une personne sait qu’un crime est en cours de préparation (commencement d’exécution), et la dénonciation peut empêcher le passage à l’acte. Elle se tait. On retient :",
@@ -11476,7 +11476,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : applicable aux crimes encore évitables ou limitables, y compris tentative.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Projet criminel",
     question:
         "Une personne entend un voisin parler d’un « projet » de crime, sans commencement d’exécution. Elle ne dit rien. Selon le cours :",
@@ -11491,7 +11491,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours exclut le simple projet criminel non suivi d’un commencement d’exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage et enquête",
     question:
         "Une personne ment en audition libre en enquête préliminaire, sans serment. On retient :",
@@ -11505,7 +11505,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : les déclarations mensongères en préliminaire/flagrance ne sont pas punissables au titre du faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — OPJ commission rogatoire",
     question:
         "Une personne ment sous serment devant un OPJ agissant sur commission rogatoire. On retient :",
@@ -11519,7 +11519,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le faux témoignage est punissable devant l’OPJ en exécution d’une commission rogatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Trafic d’influence",
     question:
         "Un élu accepte de l’argent pour user de son réseau afin d’obtenir un marché public. Qualification ?",
@@ -11528,7 +11528,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Abus d’influence réelle ou supposée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Définition",
     question:
         "Constitue une atteinte à l’inviolabilité du domicile le fait, par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, de :",
@@ -11543,7 +11543,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "L’article vise l’introduction ou la tentative d’introduction, contre le gré, hors les cas légaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Texte",
     question:
         "L’infraction d’atteinte à l’inviolabilité du domicile est prévue par :",
@@ -11557,7 +11557,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que l’infraction est prévue et réprimée par l’article 432-8 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Auteur",
     question: "Peut être auteur de l’infraction (432-8) :",
     options: [
@@ -11570,7 +11570,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’infraction vise spécifiquement ces qualités.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépositaire autorité publique",
     question: "Est dépositaire de l’autorité publique celui qui :",
     options: [
@@ -11584,7 +11584,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition donnée : pouvoir de décision lié à l’autorité publique conférée par les fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Exemples",
     question:
         "Parmi les personnes citées comme dépositaires de l’autorité publique, on retrouve notamment :",
@@ -11598,7 +11598,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite policiers, gendarmes, douaniers, huissiers, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Mission de service public",
     question: "Est chargé d’une mission de service public celui qui :",
     options: [
@@ -11611,7 +11611,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition textuelle du cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Contexte d’action",
     question: "Pour que 432-8 soit constitué, l’auteur doit agir :",
     options: [
@@ -11624,7 +11624,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition explicitement mentionnée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Abus de qualité",
     question:
         "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile, ce qui exclut :",
@@ -11637,7 +11637,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique que les raisons personnelles sont exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Notion de domicile",
     question: "Le domicile est :",
     options: [
@@ -11650,7 +11650,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition du cours : droit de se dire chez soi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Étendue",
     question: "Peuvent entrer dans la notion de domicile :",
     options: [
@@ -11662,7 +11662,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours étend la notion à résidence et séjour occasionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Logements inoccupés",
     question: "Un logement inoccupé peut être considéré comme un domicile si :",
     options: [
@@ -11676,7 +11676,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que des meubles caractérisant l’occupation peuvent suffire selon appréciation du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépendances",
     question: "Le domicile comprend aussi :",
     options: [
@@ -11688,7 +11688,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours vise l’habitation avec ses dépendances.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Cours/Jardins",
     question:
         "Cours, jardins et parcs sont assimilés au domicile lorsqu’ils sont :",
@@ -11701,7 +11701,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition explicitement mentionnée (clos + attenants).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Proximité",
     question: "Pour une dépendance, la jurisprudence exige :",
     options: [
@@ -11713,7 +11713,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours insiste sur l’annexe au domicile et la proximité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Acte matériel",
     question: "L’action incriminée au 432-8 est :",
     options: [
@@ -11725,7 +11725,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte précise que le maintien n’est pas visé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement",
     question:
         "L’article 432-8 réprime l’introduction seulement si elle est effectuée :",
@@ -11738,7 +11738,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition : contre le gré, sinon pas d’infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement vicié",
     question: "Le consentement de l’occupant ne doit pas être vicié par :",
     options: [
@@ -11750,7 +11750,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours mentionne le consentement vicié par stratagèmes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — À l’insu",
     question: "L’absence de consentement englobe le fait de pénétrer :",
     options: [
@@ -11763,7 +11763,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite l’exemple de pénétrer à l’insu (fenêtre ouverte).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Cas légaux",
     question: "Le 432-8 sanctionne l’introduction lorsqu’elle est faite :",
     options: [
@@ -11775,7 +11775,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise uniquement les introductions hors cas légaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Élément moral",
     question: "L’élément moral du 432-8 suppose :",
     options: [
@@ -11787,7 +11787,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Conscience de l’irrégularité des agissements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Circonstances aggravantes",
     question: "Pour l’infraction 432-8, les circonstances aggravantes sont :",
     options: ["Aucune", "Toujours présentes", "Uniquement si violence"],
@@ -11795,7 +11795,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Répression",
     question: "Peines principales encourues (personnes physiques) pour 432-8 :",
     options: [
@@ -11807,7 +11807,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression mentionnée : 2 ans + 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Tentative",
     question: "La tentative pour 432-8 est :",
     options: [
@@ -11820,7 +11820,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : TENTATIVE : OUI (spécifiquement incriminée).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Complicité",
     question: "La complicité (432-8) est :",
     options: [
@@ -11836,7 +11836,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Texte",
     question:
         "L’atteinte au secret des correspondances est prévue et réprimée par :",
@@ -11849,7 +11849,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : article 432-9 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Définition",
     question:
         "L’infraction (432-9) peut consister à ordonner, commettre ou faciliter :",
@@ -11863,7 +11863,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition textuelle du cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Auteurs",
     question: "Peuvent être auteurs (432-9) :",
     options: [
@@ -11877,7 +11877,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise aussi des agents exploitants de réseaux/fournisseurs télécoms.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Réseau ouvert au public",
     question: "Un réseau ouvert au public (CPCE) est :",
     options: [
@@ -11890,7 +11890,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition reprise du cours (CPCE).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Communications électroniques",
     question: "Les communications électroniques s’entendent comme :",
     options: [
@@ -11903,7 +11903,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Formulation du cours : câble, hertzien, optique, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Correspondances matérielles",
     question: "Sont protégées comme correspondances matérielles :",
     options: [
@@ -11916,7 +11916,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que les plis clos comme ouverts sont protégés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Contenu",
     question: "Le contenu de la correspondance protégée peut être :",
     options: [
@@ -11928,7 +11928,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Peu importe le contenu : pro ou privé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Télécommunications",
     question:
         "Pour les correspondances par télécommunications, elles doivent être :",
@@ -11942,7 +11942,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition donnée pour correspondances dématérialisées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Modalités",
     question: "Dans 432-9, 'ordonner' correspond à :",
     options: [
@@ -11955,7 +11955,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours relie ordonner à l’abus de pouvoir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Contenu de l’atteinte",
     question: "Le 'détournement' d’une correspondance vise :",
     options: [
@@ -11969,7 +11969,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : atteinte à l’acheminement = détourner/modifier le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Inviolabilité du support",
     question: "L’atteinte à l’inviolabilité du support peut consister en :",
     options: [
@@ -11981,7 +11981,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple clair donné dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Suppression",
     question: "La suppression d’une correspondance consiste en :",
     options: [
@@ -11993,7 +11993,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition du cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Télécoms",
     question: "Pour les télécommunications, l’atteinte peut consister en :",
     options: [
@@ -12005,7 +12005,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours liste ces formes pour télécommunications.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Divulgation",
     question: "La divulgation consiste à :",
     options: [
@@ -12018,7 +12018,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition du cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Élément moral",
     question: "L’élément moral (432-9) suppose :",
     options: [
@@ -12031,7 +12031,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours insiste sur la conscience d’agir sans droit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Erreur de fait",
     question: "L’erreur de fait :",
     options: [
@@ -12045,7 +12045,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours : l’erreur de fait entraîne la disparition de l’intention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Circonstances aggravantes",
     question: "Pour 432-9, circonstances aggravantes :",
     options: ["Aucune", "Toujours présentes", "Uniquement si récidive"],
@@ -12053,7 +12053,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Répression",
     question: "Peines (432-9) :",
     options: [
@@ -12065,7 +12065,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression indiquée : 3 ans + 45 000 € (al.1 et al.2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Tentative",
     question: "La tentative (432-9) est :",
     options: ["NON", "OUI", "OUI uniquement pour télécoms"],
@@ -12073,7 +12073,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Complicité",
     question: "La complicité (432-9) est :",
     options: ["OUI", "NON", "Uniquement si l’auteur est un magistrat"],
@@ -12081,7 +12081,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : COMPLICITÉ : OUI.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Faits justificatifs",
     question: "432-9 exclut l’infraction lorsqu’elle est réalisée :",
     options: [
@@ -12093,7 +12093,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Cas prévus par la loi : procédure judiciaire notamment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Interceptions judiciaires",
     question:
         "Les interceptions télécoms peuvent être autorisées par le juge d’instruction :",
@@ -12111,7 +12111,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS PAR PERSONNE EXERÇANT FONCTION PUBLIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Texte",
     question:
         "L’infraction de discrimination (par une personne exerçant une fonction publique) est prévue par :",
@@ -12124,7 +12124,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : article 432-7 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Définition",
     question:
         "La discrimination (432-7) commise par une personne dépositaire/chargée mission SP consiste notamment à :",
@@ -12138,7 +12138,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition donnée en 1° et 2°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Fondements",
     question:
         "La discrimination vise une distinction opérée entre personnes sur certains fondements, par exemple :",
@@ -12152,7 +12152,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours liste de nombreux critères (225-1 et 225-1-1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Qualité de l’auteur",
     question: "Pour 432-7, l’auteur doit être :",
     options: [
@@ -12165,7 +12165,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition de qualité rappelée dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Exemples de droits",
     question: "Le 'droit accordé par la loi' peut consister en :",
     options: [
@@ -12178,7 +12178,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemples donnés dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Discrétion",
     question: "Ne constitue pas un 'droit accordé par la loi' :",
     options: [
@@ -12191,7 +12191,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours le précise explicitement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Activité économique",
     question: "Entraver une activité économique consiste à :",
     options: [
@@ -12204,7 +12204,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours donne des exemples d’entrave.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Victime",
     question: "Les agissements discriminatoires peuvent viser :",
     options: [
@@ -12216,7 +12216,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise les deux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "L’élément moral de 432-7 exige :",
     options: [
@@ -12229,7 +12229,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours : existence d’une volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Circonstances aggravantes",
     question: "Circonstances aggravantes pour 432-7 :",
     options: ["Aucune", "Uniquement si récidive", "Uniquement si violence"],
@@ -12237,7 +12237,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Répression",
     question: "Peines principales (personnes physiques) pour 432-7 :",
     options: [
@@ -12249,7 +12249,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Répression mentionnée : 5 ans + 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative (432-7) est :",
     options: ["NON", "OUI", "OUI uniquement si entrave économique"],
@@ -12257,7 +12257,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : la tentative n’est pas incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Complicité",
     question: "La complicité (432-7) est :",
     options: [
@@ -12272,7 +12272,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // ✅ Questions supplémentaires à ajouter après celles-ci (432-8 — inviolabilité du domicile)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Conditions",
     question:
         "Pour que l’infraction (432-8) soit constituée, l’auteur doit agir :",
@@ -12287,7 +12287,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte exige que l’auteur agisse dans l’exercice ou à l’occasion de l’exercice de ses fonctions/mission.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Abus de qualité",
     question:
         "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile, ce qui exclut :",
@@ -12301,7 +12301,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que l’auteur doit avoir abusé de sa qualité et que les raisons personnelles sont exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Notion de domicile",
     question: "Le domicile se définit comme :",
     options: [
@@ -12315,7 +12315,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours définit le domicile comme le lieu où la personne a le droit de se dire chez elle, indépendamment du titre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Étendue",
     question: "La notion de domicile peut recouvrir :",
     options: [
@@ -12329,7 +12329,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que le domicile peut être légal, résidence, ou lieu de séjour occasionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Logement inoccupé",
     question: "Un logement inoccupé peut être considéré comme un domicile si :",
     options: [
@@ -12343,7 +12343,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que la présence de meubles peut caractériser le domicile si elle permet de s’y dire chez soi; vélo/carton seuls insuffisants.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépendances",
     question: "Le domicile se comprend comme :",
     options: [
@@ -12357,7 +12357,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours inclut les dépendances (caves, terrasses…) dans la notion de domicile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Jardins/Parcs",
     question: "Cours, jardins et parcs sont assimilés au domicile lorsque :",
     options: [
@@ -12370,7 +12370,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise l’assimilation dès lors que ces lieux sont clos et attenants à l’habitation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Proximité",
     question:
         "Pour qu’une dépendance entre dans la notion de domicile, la jurisprudence exige :",
@@ -12384,7 +12384,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours insiste sur la nécessité d’un lien étroit et immédiat et d’une proximité entre dépendance et habitation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Acte matériel",
     question: "L’action incriminée par l’article 432-8 vise :",
     options: [
@@ -12397,7 +12397,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte vise l’introduction/tentative; il ne vise pas le maintien dans les lieux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Moyen",
     question: "L’introduction illicite (432-8) peut être réalisée :",
     options: [
@@ -12410,7 +12410,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que l’introduction est répréhensible quel que soit le moyen, même sans violence ni artifice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Contre le gré",
     question:
         "L’article 432-8 ne réprime l’introduction que si elle est effectuée :",
@@ -12424,7 +12424,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Condition centrale : l’introduction doit être contre le gré de l’occupant; sinon l’infraction n’est pas constituée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Absence de consentement",
     question:
         "Même sans opposition formelle, l’absence de consentement peut être retenue notamment si l’auteur pénètre :",
@@ -12438,7 +12438,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique qu’il suffit que la personne n’ait pas consenti, ce qui englobe une entrée à l’insu de l’occupant.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement vicié",
     question: "Le consentement de l’occupant ne doit pas être vicié par :",
     options: [
@@ -12451,7 +12451,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que le consentement vicié par des manœuvres/stratagèmes ne fait pas obstacle à la caractérisation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Cas légaux",
     question: "432-8 sanctionne l’introduction lorsque celle-ci intervient :",
     options: [
@@ -12464,7 +12464,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours rappelle que certains textes autorisent l’entrée; 432-8 sanctionne l’entrée hors de ces cas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Élément moral",
     question: "L’élément moral de l’infraction (432-8) implique :",
     options: [
@@ -12477,7 +12477,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise la conscience de l’irrégularité des agissements (intention).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Circonstances aggravantes",
     question:
         "Concernant l’article 432-8, les circonstances aggravantes sont :",
@@ -12486,7 +12486,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : IV - Circonstances aggravantes : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Répression",
     question: "Peines encourues (personne physique) pour 432-8 :",
     options: [
@@ -12499,7 +12499,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours mentionne comme peines principales : 2 ans d’emprisonnement et 30 000 € d’amende.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Tentative",
     question:
         "La tentative de violation de domicile par une personne dépositaire/chargée mission SP (432-8) est :",
@@ -12513,7 +12513,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique explicitement : TENTATIVE : OUI (incriminée spécifiquement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Complicité",
     question: "La complicité (432-8) est :",
     options: [
@@ -12528,7 +12528,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   ),
 
   // ✅ Suite — encore plus de questions 432-8 (Inviolabilité du domicile)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Dépositaire de l'autorité publique",
     question:
         "Sont notamment concernés comme dépositaires de l’autorité publique :",
@@ -12542,7 +12542,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite explicitement policiers, gendarmes, douaniers, huissiers, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Responsables exécutifs locaux",
     question: "Ont aussi la qualité de dépositaires de l’autorité publique :",
     options: [
@@ -12556,7 +12556,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise les responsables des exécutifs locaux (et certains adjoints/délégués).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Adjoints et délégués",
     question:
         "Le cours indique que possèdent la qualité de dépositaires de l’autorité publique :",
@@ -12570,7 +12570,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Ils sont mentionnés comme ayant la qualité de dépositaires de l’autorité publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Mission de service public",
     question: "Une personne chargée d’une mission de service public :",
     options: [
@@ -12584,7 +12584,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise qu’elle participe à une mission d’intérêt général sans prérogatives de puissance publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Élus locaux et mission SP",
     question:
         "Les élus locaux peuvent être qualifiés de 'chargés d’une mission de service public' :",
@@ -12599,7 +12599,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que sans délégation de prérogatives de puissance publique, ils sont chargés d’une mission SP.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — 'À l’occasion' des fonctions",
     question:
         "Agir 'à l’occasion de l’exercice des fonctions' implique que l’agent :",
@@ -12614,7 +12614,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours distingue agir dans l’exercice ou à l’occasion : l’acte reste rattaché aux fonctions/mission.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Domicile et titre juridique",
     question: "Pour caractériser un domicile, il faut :",
     options: [
@@ -12628,7 +12628,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que le titre juridique importe peu : c’est le droit de s’y dire chez soi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Condition d’intimité",
     question:
         "La seule condition rappelée par le cours pour retenir la notion de domicile est que :",
@@ -12642,7 +12642,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique : la condition est la protection de l’intimité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Exemples meubles suffisants",
     question:
         "Parmi les éléments cités comme pouvant signaler une occupation effective d’un logement vacant :",
@@ -12656,7 +12656,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours donne ces exemples et précise que bicyclette/carton seuls ne suffisent pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Moyen d’introduction",
     question: "Pour 432-8, l’introduction peut être caractérisée :",
     options: [
@@ -12669,7 +12669,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise : quel que soit le moyen, même sans violence ou artifice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Non visé",
     question: "Le cours indique que n’est pas visé par 432-8 :",
     options: [
@@ -12682,7 +12682,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Il est précisé : l’action incriminée est l’introduction ou la tentative, pas le maintien.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Enquête préliminaire (exemple)",
     question:
         "Selon l’exemple du cours, un OPJ en enquête préliminaire qui refuse de quitter les lieux après retrait du consentement écrit :",
@@ -12697,7 +12697,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours donne cet exemple pour illustrer que le maintien n’est pas visé par 432-8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Jurisprudence (hôtel)",
     question:
         "D’après la jurisprudence citée, des policiers qui invitent par téléphone un occupant d’hôtel à les rejoindre dans le hall :",
@@ -12711,7 +12711,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite une décision où le hall d’hôtel + invitation ne vaut pas pénétration dans un domicile.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Jurisprudence (garage)",
     question:
         "D’après la jurisprudence citée, des gendarmes sur le seuil d’un garage ouvert par l’agent immobilier, sans y pénétrer :",
@@ -12725,7 +12725,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite une décision : photographie sur le seuil sans pénétrer ≠ introduction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement",
     question:
         "L’infraction n’est pas constituée si l’agent de la force publique pénètre au domicile :",
@@ -12739,7 +12739,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le texte précise : pas d’infraction si l’entrée est consentie (hors consentement vicié).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Consentement vicié (rappel)",
     question:
         "Le consentement n’empêche pas l’infraction s’il est obtenu par :",
@@ -12753,7 +12753,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que le consentement vicié par manœuvres/stratagèmes ne vaut pas consentement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Hors les cas prévus par la loi",
     question:
         "Pourquoi 432-8 est qualifié de sanction du non-respect des conditions de fond ?",
@@ -12768,7 +12768,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que 432-8 sanctionne le non-respect des conditions de fond encadrant les interventions publiques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Personnes morales",
     question: "Le cours indique que les personnes morales :",
     options: [
@@ -12781,7 +12781,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le tableau de répression mentionne : personnes morales peuvent être reconnues responsables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Inviolabilité du domicile — Complicité (formes)",
     question: "La complicité peut résulter notamment de :",
     options: [
@@ -12798,7 +12798,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Définition",
     question:
         "L’atteinte au secret des correspondances consiste notamment, pour une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, à :",
@@ -12813,7 +12813,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition complète de l’atteinte au secret des correspondances donnée par le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Texte",
     question:
         "L’infraction d’atteinte au secret des correspondances est prévue par :",
@@ -12827,7 +12827,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que l’infraction est prévue et réprimée par l’article 432-9 du C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Auteurs",
     question: "Peut être auteur de l’infraction prévue à l’article 432-9 :",
     options: [
@@ -12840,7 +12840,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte vise spécifiquement ces catégories d’auteurs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Autres auteurs",
     question: "Peut également être auteur de l’atteinte aux correspondances :",
     options: [
@@ -12854,7 +12854,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours étend l’infraction à certains agents des réseaux et télécommunications.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Agissement",
     question: "L’auteur doit agir :",
     options: [
@@ -12867,7 +12867,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition identique à celle des autres abus d’autorité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Correspondances matérielles",
     question: "Sont considérées comme correspondances matérielles :",
     options: [
@@ -12880,7 +12880,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que les plis clos comme ouverts sont protégés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Télécommunications",
     question:
         "Les correspondances émises par la voie des télécommunications sont :",
@@ -12894,7 +12894,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours définit les correspondances télécoms comme dématérialisées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — État de la correspondance",
     question:
         "Pour être protégées, les correspondances télécoms doivent être :",
@@ -12908,7 +12908,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition précisée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Actes matériels",
     question: "L’atteinte peut consister notamment à :",
     options: [
@@ -12921,7 +12921,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Liste des actes matériels constitutifs de l’infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Détournement",
     question: "Le détournement d’une correspondance consiste à :",
     options: [
@@ -12934,7 +12934,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise l’atteinte à l’acheminement de la correspondance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Ouverture",
     question: "L’ouverture d’une correspondance constitue :",
     options: [
@@ -12947,7 +12947,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours qualifie l’ouverture comme atteinte à l’inviolabilité du support.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Révélation",
     question: "La révélation du contenu d’une correspondance consiste à :",
     options: [
@@ -12960,7 +12960,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition donnée par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Élément moral",
     question: "L’élément moral de l’infraction 432-9 suppose :",
     options: [
@@ -12973,7 +12973,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise que l’intention de nuire n’est pas exigée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Erreur de fait",
     question: "L’erreur de fait peut entraîner :",
     options: [
@@ -12985,7 +12985,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple : ouverture par méprise pour réexpédier une lettre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Tentative",
     question:
         "La tentative d’atteinte au secret des correspondances (432-9) est :",
@@ -12998,7 +12998,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise expressément : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Répression",
     question: "Les peines encourues pour l’article 432-9 sont :",
     options: [
@@ -13014,7 +13014,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS PAR PERSONNE EXERÇANT UNE FONCTION PUBLIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Définition",
     question:
         "La discrimination commise par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public consiste notamment à :",
@@ -13028,7 +13028,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition donnée par l’article 432-7 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Texte",
     question: "L’infraction de discrimination est prévue par :",
     options: [
@@ -13041,7 +13041,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique que l’infraction est prévue par l’article 432-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Critères",
     question: "La discrimination peut être fondée notamment sur :",
     options: [
@@ -13055,7 +13055,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Liste non exhaustive des critères mentionnés par le Code pénal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Droit accordé par la loi",
     question: "Le 'droit accordé par la loi' s’entend :",
     options: [
@@ -13068,7 +13068,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que la notion de loi n’est pas entendue de manière restrictive.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Activité économique",
     question: "Entraver l’exercice d’une activité économique consiste à :",
     options: [
@@ -13081,7 +13081,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite notamment les tracasseries administratives, pressions, dénigrement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "L’élément moral de la discrimination suppose :",
     options: [
@@ -13093,7 +13093,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise l’existence d’une volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative de discrimination (432-7) est :",
     options: [
@@ -13105,7 +13105,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise que la tentative n’est pas incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Répression",
     question: "Les peines encourues pour l’article 432-7 sont :",
     options: [
@@ -13121,7 +13121,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (SUITE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Ordonner",
     question:
         "Dans le cadre de l’article 432-9, l’action d’« ordonner » suppose :",
@@ -13136,7 +13136,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que l’ordre doit émaner d’une personne dépositaire de l’autorité publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Commettre",
     question: "Dans l’article 432-9, le terme « commettre » vise :",
     options: [
@@ -13149,7 +13149,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours distingue clairement ordonner / commettre / faciliter.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Faciliter",
     question:
         "Faciliter une atteinte au secret des correspondances consiste à :",
@@ -13164,7 +13164,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La facilitation correspond à une aide matérielle ou intellectuelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Photocopie",
     question:
         "La photocopie de documents contenus dans une correspondance constitue :",
@@ -13178,7 +13178,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite expressément la photocopie comme modalité d’atteinte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Interception",
     question: "L’interception d’une correspondance consiste à :",
     options: [
@@ -13190,7 +13190,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Définition donnée pour les correspondances télécoms.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Utilisation",
     question: "L’utilisation du contenu d’une correspondance vise :",
     options: [
@@ -13203,7 +13203,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’utilisation est distincte de la divulgation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Jurisprudence",
     question:
         "Selon la jurisprudence citée, la lecture et la divulgation de mails d’un étudiant constituent :",
@@ -13216,7 +13216,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "C.A. Paris, 17 décembre 2001.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Intention",
     question: "L’élément intentionnel de l’article 432-9 :",
     options: [
@@ -13229,7 +13229,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La Cour de cassation précise que l’intention de nuire n’est pas requise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Erreur de fait (limite)",
     question:
         "L’erreur de fait en matière de correspondances télécoms ne s’applique que si :",
@@ -13244,7 +13244,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Précision du cours concernant l’application de l’erreur de fait.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Faits justificatifs",
     question:
         "L’atteinte au secret des correspondances n’est pas constituée lorsqu’elle est réalisée :",
@@ -13261,7 +13261,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (SUITE ET APPROFONDISSEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Qualité de l’auteur",
     question: "L’article 432-7 vise les discriminations commises par :",
     options: [
@@ -13274,7 +13274,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition de qualité indispensable à la qualification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Refus de droit",
     question:
         "Refuser le bénéfice d’un droit accordé par la loi peut concerner :",
@@ -13287,7 +13287,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite explicitement les documents administratifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Libertés publiques",
     question: "Le droit accordé par la loi peut consister en :",
     options: [
@@ -13299,7 +13299,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours mentionne expressément les libertés publiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Exclusion",
     question:
         "Ne constitue pas un refus du bénéfice d’un droit accordé par la loi :",
@@ -13313,7 +13313,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Cass. crim., 17 juin 2008.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Entrave économique",
     question: "L’entrave à une activité économique peut résulter :",
     options: [
@@ -13325,7 +13325,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite les tracasseries, pressions, dénigrement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Victime",
     question:
         "Les discriminations réprimées par l’article 432-7 peuvent viser :",
@@ -13338,7 +13338,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise que les deux sont visées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "La discrimination suppose :",
     options: [
@@ -13350,7 +13350,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’élément moral est une volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Fait justificatif",
     question:
         "La répression est écartée lorsque les agissements discriminatoires sont :",
@@ -13363,7 +13363,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple : directives gouvernementales prévues par la loi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative de discrimination est :",
     options: [
@@ -13375,7 +13375,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise expressément : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Complicité",
     question: "La complicité de discrimination est punissable :",
     options: [
@@ -13391,7 +13391,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (ENCORE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Réseau ouvert au public",
     question:
         "Un réseau ouvert au public de communications électroniques est un réseau :",
@@ -13406,7 +13406,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition reprise du code des postes et communications électroniques citée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Exemples de réseaux",
     question:
         "Sont cités comme pouvant être des réseaux de communications électroniques :",
@@ -13420,7 +13420,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours énumère ces exemples de réseaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Auteur (agent de réseau)",
     question:
         "Pour être auteur en tant qu’agent d’un exploitant de réseau ouvert au public, il faut :",
@@ -13435,7 +13435,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que cela vise toute personne relevant de l’autorité de l’exploitant, salariée ou non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Fournisseur télécoms",
     question:
         "Un agent d’un fournisseur de services de télécommunications est :",
@@ -13450,7 +13450,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Définition large donnée par le cours : salariée ou non, quelle que soit la position.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Peu importe le contenu",
     question: "Pour 432-9, le contenu de la correspondance :",
     options: [
@@ -13463,7 +13463,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que peu importe le contenu : privé ou professionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Moment de protection",
     question:
         "Une correspondance par télécommunications est protégée lorsqu’elle est :",
@@ -13477,7 +13477,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Condition exacte rappelée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Détournement (mail)",
     question: "Le détournement d’un courrier électronique peut consister à :",
     options: [
@@ -13489,7 +13489,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemple de manipulation informatique cité dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Divulgation (tiers)",
     question: "Effectue une divulgation le tiers qui :",
     options: [
@@ -13501,7 +13501,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours donne cet exemple pour qualifier la divulgation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Complicité",
     question:
         "Un particulier peut être complice d’un dépositaire de l’autorité publique (432-9) s’il :",
@@ -13516,7 +13516,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours indique qu’un particulier peut se rendre complice en fournissant des moyens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Élément intentionnel (Cass.)",
     question:
         "Selon la jurisprudence citée (27 février 2018), l’élément intentionnel implique :",
@@ -13531,7 +13531,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours cite : intention de porter atteinte au contenu (sans exigence d’intention de nuire).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Circonstances aggravantes",
     question: "Pour l’infraction 432-9, les circonstances aggravantes sont :",
     options: [
@@ -13547,7 +13547,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (ENCORE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Définition (2 branches)",
     question: "L’article 432-7 vise deux types d’actes discriminatoires :",
     options: [
@@ -13560,7 +13560,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le texte liste expressément 1° et 2°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Droit accordé par la loi",
     question: "Le mot « loi » au sens de 432-7 doit être compris comme :",
     options: [
@@ -13572,7 +13572,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise que la notion n’est pas restrictive.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Exemples de droits",
     question:
         "Parmi les exemples de « droit accordé par la loi » cités par le cours :",
@@ -13586,7 +13586,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Liste d’exemples donnée dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Ne constitue pas un droit",
     question: "Ne constitue pas un « droit accordé par la loi » :",
     options: [
@@ -13599,7 +13599,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise qu’un pouvoir discrétionnaire (ex : distinction) n’est pas un droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Entrave économique (formes)",
     question:
         "Selon le cours, l’entrave à une activité économique peut résulter de :",
@@ -13613,7 +13613,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Exemples explicitement donnés dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Victime",
     question:
         "Les agissements discriminatoires peuvent être commis au détriment :",
@@ -13626,7 +13626,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours vise les deux hypothèses.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Élément moral",
     question: "La volonté discriminatoire se caractérise par :",
     options: [
@@ -13638,7 +13638,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’élément moral est une conscience/volonté discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Circonstances aggravantes",
     question: "Pour 432-7, les circonstances aggravantes sont :",
     options: [
@@ -13650,7 +13650,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours indique : IV - Circonstances aggravantes : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Répression",
     question: "Les peines principales encourues pour 432-7 sont :",
     options: [
@@ -13662,7 +13662,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours fixe la répression à 5 ans et 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Tentative",
     question: "La tentative en matière de discrimination (432-7) est :",
     options: [
@@ -13674,7 +13674,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours précise : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Complicité",
     question: "La complicité de discrimination suppose :",
     options: [
@@ -13691,7 +13691,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (APPROFONDISSEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Moment de l’atteinte",
     question:
         "L’atteinte au secret des correspondances peut être constituée même si :",
@@ -13705,7 +13705,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que les correspondances sont protégées tant qu’elles ne sont pas appréhendées par leur destinataire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Support",
     question:
         "Pour les correspondances télécoms, l’absence de support matériel implique que :",
@@ -13719,7 +13719,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Les correspondances dématérialisées sont protégées pendant leur transmission.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Enquête pénale",
     question:
         "Hors autorisation judiciaire, l’interception d’une correspondance dans le cadre d’une enquête constitue :",
@@ -13733,7 +13733,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Les interceptions ne sont licites que dans les cas prévus par la loi (CPP).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — CPP",
     question:
         "Les interceptions judiciaires de correspondances sont encadrées par :",
@@ -13746,7 +13746,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Référence expresse citée dans le cours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — JLD",
     question:
         "Dans certaines enquêtes, les interceptions peuvent être autorisées par :",
@@ -13760,7 +13760,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours vise les autorisations dans le cadre des enquêtes de flagrance/préliminaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Utilisation interne",
     question:
         "Se servir du contenu d’une correspondance interceptée à des fins personnelles constitue :",
@@ -13773,7 +13773,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’utilisation est une modalité autonome de l’atteinte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Qualité de la victime",
     question: "La qualité de la victime est indifférente car :",
     options: [
@@ -13787,7 +13787,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que le contenu et la qualité des personnes importent peu.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Absence de préjudice",
     question: "L’absence de préjudice pour la victime :",
     options: [
@@ -13803,7 +13803,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (APPROFONDISSEMENT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Principe d’égalité",
     question:
         "L’infraction de discrimination sanctionne une atteinte au principe :",
@@ -13816,7 +13816,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La discrimination porte atteinte au principe d’égalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Situation de famille",
     question:
         "Refuser un droit en raison de la situation de famille constitue :",
@@ -13829,7 +13829,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La situation de famille figure parmi les critères prohibés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Langue",
     question:
         "La capacité à s’exprimer dans une langue autre que le français peut constituer :",
@@ -13842,7 +13842,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Ce critère est expressément visé par les textes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Lanceur d’alerte",
     question:
         "Le fait de discriminer une personne en raison de sa qualité de lanceur d’alerte est :",
@@ -13855,7 +13855,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La qualité de lanceur d’alerte est expressément protégée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Absence de droit",
     question: "Si aucun droit n’est accordé par la loi, il ne peut y avoir :",
     options: [
@@ -13867,7 +13867,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’existence d’un droit légal est une condition essentielle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Activité économique (preuve)",
     question:
         "Pour caractériser l’entrave à une activité économique, il suffit de démontrer que :",
@@ -13880,7 +13880,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La cessation ou le préjudice chiffré ne sont pas exigés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Motivation",
     question: "Une motivation administrative apparemment neutre peut :",
     options: [
@@ -13893,7 +13893,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La volonté discriminatoire peut être déduite des circonstances.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Absence d’intention",
     question: "Si l’auteur n’a pas conscience de discriminer :",
     options: [
@@ -13905,7 +13905,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’élément moral exige une conscience discriminatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Personnes morales",
     question:
         "Les personnes morales peuvent être reconnues responsables de discrimination :",
@@ -13915,7 +13915,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Le cours précise que la responsabilité pénale des personnes morales peut être retenue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Finalité",
     question: "La répression de la discrimination vise principalement à :",
     options: [
@@ -13932,7 +13932,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-9 — ATTEINTE AU SECRET DES CORRESPONDANCES (NIVEAU EXPERT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Infraction formelle",
     question: "L’infraction prévue par l’article 432-9 est une infraction :",
     options: [
@@ -13944,7 +13944,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Aucun préjudice n’est exigé : l’atteinte suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Lecture partielle",
     question: "Le fait de lire partiellement une correspondance constitue :",
     options: [
@@ -13957,7 +13957,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Toute prise de connaissance non autorisée du contenu est réprimée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Professionnel / privé",
     question: "Une correspondance professionnelle est protégée :",
     options: [
@@ -13969,7 +13969,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le contenu professionnel ou privé est indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Courrier arrivé",
     question:
         "Une correspondance arrivée à destination mais non encore ouverte :",
@@ -13983,7 +13983,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La protection cesse uniquement après appréhension par le destinataire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Consentement du tiers",
     question: "Le consentement d’un tiers non destinataire :",
     options: [
@@ -13995,7 +13995,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Seul le destinataire peut consentir.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Conservation",
     question:
         "La conservation d’une correspondance interceptée sans en révéler le contenu :",
@@ -14009,7 +14009,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Selon les circonstances, elle peut révéler une utilisation illicite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Suppression",
     question:
         "La suppression d’une correspondance empêchement sa réception constitue :",
@@ -14022,7 +14022,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La suppression est expressément visée par le texte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances — Autorité hiérarchique",
     question:
         "L’ordre donné par un supérieur hiérarchique n’exonère pas l’exécutant :",
@@ -14039,7 +14039,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
   // =========================================================
   // 432-7 — DISCRIMINATIONS (NIVEAU EXPERT)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Infraction intentionnelle",
     question:
         "La discrimination prévue par l’article 432-7 est une infraction :",
@@ -14048,7 +14048,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Elle suppose une volonté discriminatoire consciente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Neutralité apparente",
     question:
         "Une décision apparemment neutre peut constituer une discrimination si :",
@@ -14062,7 +14062,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "La forme de la décision n’écarte pas l’intention discriminatoire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Charge de travail",
     question:
         "Alourdir volontairement la charge administrative d’un professionnel pour un motif discriminatoire constitue :",
@@ -14075,7 +14075,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Rendre l’activité plus difficile suffit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Dénigrement",
     question:
         "Le dénigrement d’un professionnel auprès de ses partenaires peut caractériser :",
@@ -14088,7 +14088,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "Le cours cite expressément le dénigrement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Absence de texte",
     question:
         "En l’absence de texte accordant un droit, la qualification de discrimination :",
@@ -14101,7 +14101,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "L’existence d’un droit légal est indispensable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Critère multiple",
     question: "Une discrimination peut être fondée sur :",
     options: [
@@ -14113,7 +14113,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
     explanation: "La pluralité de critères n’exclut pas l’infraction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — Personnes morales",
     question: "La responsabilité pénale d’une personne morale suppose :",
     options: [
@@ -14127,7 +14127,7 @@ final List<QuizQuestion> questionCrimesDelitsNation = [
         "Application du droit commun de la responsabilité pénale des personnes morales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discriminations — But poursuivi",
     question: "Le but poursuivi par l’auteur est :",
     options: [
@@ -14495,7 +14495,7 @@ class _QuizCrimesDelitsNationState extends State<QuizCrimesDelitsNation>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -14698,7 +14698,7 @@ class _QuizCrimesDelitsNationState extends State<QuizCrimesDelitsNation>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -14881,7 +14881,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -15414,10 +15413,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -15788,7 +15788,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -15829,9 +15829,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

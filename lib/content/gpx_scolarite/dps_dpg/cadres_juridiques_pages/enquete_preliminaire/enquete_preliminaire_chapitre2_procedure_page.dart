@@ -359,7 +359,7 @@ class EnquetePreliminaireChapitre2ProcedurePage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             children: [
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text:
                       'Les modalités d’ouverture au contradictoire de l’enquête préliminaire sont prévues par l’article 77-2 du code de procédure pénale, ',
@@ -370,47 +370,47 @@ class EnquetePreliminaireChapitre2ProcedurePage extends StatelessWidget {
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
               ]),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
-              _SubTitle(
+              const _SubTitle(
                 '2.2.2.1 — À l’initiative du procureur de la République',
               ),
-              _Paragraph(
+              const _Paragraph(
                 'À tout moment, le procureur de la République peut, s’il estime que cela ne risque pas de porter atteinte à l’efficacité des investigations, '
                 'indiquer à la personne mise en cause, à la victime ou à leurs avocats qu’une copie de tout ou partie du dossier de la procédure est mise à leur disposition '
                 'et que les intéressés ont la possibilité de formuler des observations.',
               ),
-              SizedBox(height: 6),
-              _Paragraph(
+              const SizedBox(height: 6),
+              const _Paragraph(
                 'Ces observations peuvent notamment porter sur la régularité de la procédure, sur la qualification des faits, sur la nécessité de procéder à de nouveaux actes '
                 'et sur les modalités d’engagement éventuel des poursuites.',
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
 
-              _SubTitle('2.2.2.2 — À la demande de la personne mise en cause'),
-              _Paragraph(
+              const _SubTitle('2.2.2.2 — À la demande de la personne mise en cause'),
+              const _Paragraph(
                 'Toute personne contre laquelle il existe une ou plusieurs raisons plausibles de soupçonner qu’elle a commis ou tenté de commettre une infraction punie d’une peine '
                 'd’emprisonnement peut demander à consulter le dossier.',
               ),
-              SizedBox(height: 6),
-              _Paragraph(
+              const SizedBox(height: 6),
+              const _Paragraph(
                 'Cette demande ne pourra toutefois aboutir que si l’une des conditions suivantes est remplie :',
               ),
-              SizedBox(height: 6),
-              _BulletPoint(
+              const SizedBox(height: 6),
+              const _BulletPoint(
                 text:
                     'La personne mise en cause a été interrogée dans le cadre d’une audition libre ou d’une garde à vue qui s’est tenue il y a plus d’un an ;',
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Il a été procédé à une perquisition chez la personne en cause il y a plus d’un an ;',
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Il a été porté atteinte à la présomption d’innocence de la personne par un moyen de communication au public.',
               ),
-              SizedBox(height: 6),
-              _NotaBox(
+              const SizedBox(height: 6),
+              const _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -420,40 +420,40 @@ class EnquetePreliminaireChapitre2ProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
 
-              _SubTitle('2.2.2.3 — À la demande de la victime'),
-              _Paragraph(
+              const _SubTitle('2.2.2.3 — À la demande de la victime'),
+              const _Paragraph(
                 'Lorsque la personne mise en cause a obtenu l’accès à la procédure, la victime, si elle a déposé plainte, est avisée par le procureur de la République '
                 'qu’elle dispose alors du même droit d’accès au dossier.',
               ),
-              SizedBox(height: 12),
+              const SizedBox(height: 12),
 
-              _SubTitle('2.2.2.4 — De droit'),
-              _Paragraph(
+              const _SubTitle('2.2.2.4 — De droit'),
+              const _Paragraph(
                 'L’ouverture au contradictoire est automatique lorsque deux conditions sont réunies :',
               ),
-              SizedBox(height: 6),
-              _BulletPoint(
+              const SizedBox(height: 6),
+              const _BulletPoint(
                 text:
                     'L’enquête fait l’objet d’une prolongation exceptionnelle au-delà de trois ans, en application du quatrième alinéa de l’article 75-3 du C.P.P. ;',
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Les personnes soupçonnées n’ont pas fait l’objet d’une audition libre, d’une garde à vue ou d’une perquisition depuis plus de deux ans.',
               ),
-              SizedBox(height: 8),
-              _Paragraph(
+              const SizedBox(height: 8),
+              const _Paragraph(
                 'Dans ce cas, lorsque le procureur de la République décide d’une prolongation exceptionnelle de l’enquête, l’intégralité de la procédure doit être communiquée '
                 'à la personne mise en cause, à la victime ou à leurs avocats. Les intéressés ont alors la possibilité de formuler des observations et des demandes d’actes.',
               ),
-              SizedBox(height: 8),
-              _Paragraph(
+              const SizedBox(height: 8),
+              const _Paragraph(
                 'De plus, l’avocat de la personne soupçonnée doit être convoqué au moins cinq jours ouvrables avant toute audition réalisée en application de l’article 61-1 du C.P.P. '
                 '(audition libre).',
               ),
-              SizedBox(height: 8),
-              _NotaBox(
+              const SizedBox(height: 8),
+              const _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -470,7 +470,7 @@ class EnquetePreliminaireChapitre2ProcedurePage extends StatelessWidget {
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: [
+                children: const [
                   _SubTitle('2.3.7.1 — L’audition du témoin'),
                   _Paragraph(
                     "L'article 78 alinéa 1 du C.P.P. pose le principe selon lequel les personnes convoquées par un O.P.J. pour les nécessités de l'enquête sont tenues de comparaître. "
@@ -607,10 +607,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -682,7 +682,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -728,7 +728,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -777,7 +777,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -830,7 +830,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -855,7 +855,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -870,10 +870,9 @@ class _ExempleBox extends StatelessWidget {
 /// BLOC NOTA
 /// ------------------------------------------------------------------
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -884,13 +883,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -903,13 +901,9 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

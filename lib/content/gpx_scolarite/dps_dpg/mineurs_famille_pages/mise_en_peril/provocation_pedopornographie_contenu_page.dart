@@ -90,29 +90,29 @@ class ProvocationPedopornographiePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le fait de faire à une personne des offres ou des promesses, ou de lui proposer des dons, présents "
                 "ou avantages quelconques, afin qu’elle commette à l’encontre d’un mineur l’un des crimes ou délits "
                 "visés par la loi, constitue une infraction.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Infractions visées (liste légale)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Sont notamment concernés : proxénétisme, corruption de mineur, exploitation pornographique d’un mineur, atteintes sexuelles sur mineur. ",
                   ),
-                  const TextSpan(text: "La liste exacte est fixée par "),
-                  const TextSpan(
+                  TextSpan(text: "La liste exacte est fixée par "),
+                  TextSpan(
                     text: "l’article 227-28-3 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -126,13 +126,13 @@ class ProvocationPedopornographiePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 227-28-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime la provocation à la pédopornographie.",
                 ),
@@ -148,93 +148,93 @@ class ProvocationPedopornographiePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte de provocation"),
+            children: const [
+              _SubTitle("A) Un acte de provocation"),
               _Paragraph.rich([
-                const TextSpan(text: "La provocation consiste à "),
-                const TextSpan(
+                TextSpan(text: "La provocation consiste à "),
+                TextSpan(
                   text:
                       "faire à une personne des offres ou des promesses, ou proposer des dons, présents ou avantages quelconques",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: ". — "),
-                const TextSpan(
+                TextSpan(text: ". — "),
+                TextSpan(
                   text: "article 227-28-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il s’agit d’agissements directs qui encouragent ou incitent autrui à commettre un crime ou un délit "
                 "à l’encontre d’un mineur.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) À commettre un crime ou un délit à l’encontre d’un mineur",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le texte vise uniquement des infractions précises : la provocation n’est punissable que si elle porte sur "
                 "un des crimes ou délits listés par la loi.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Crimes / délits visés",
                 bodySpans: [
-                  const TextSpan(text: "• Proxénétisme — "),
-                  const TextSpan(
+                  TextSpan(text: "• Proxénétisme — "),
+                  TextSpan(
                     text: "articles 225-5 à 225-11 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "\n• Corruption de mineur — "),
-                  const TextSpan(
+                  TextSpan(text: "\n• Corruption de mineur — "),
+                  TextSpan(
                     text: "article 227-22 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "\n• Exploitation de l’image / représentation pornographique d’un mineur — ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "article 227-23 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "\n• Atteintes sexuelles par un majeur — ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "articles 227-25 à 227-28 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Un mineur victime + absence de réalisation de l’infraction provoquée",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La victime visée doit être un mineur (en l’absence de précision, mineur de moins de 18 ans).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’infraction réside dans la provocation : le crime ou le délit provoqué ne doit être ni commis ni tenté. "
                 "Si l’infraction est commise ou tentée, une autre qualification pénale s’appliquera.",
               ),
@@ -249,16 +249,16 @@ class ProvocationPedopornographiePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Volonté de faire commettre à un tiers une infraction contre un mineur",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il s’agit d’une infraction intentionnelle : l’auteur doit vouloir faire commettre à autrui "
                 "un crime ou un délit à l’encontre d’un mineur.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cette volonté se déduit des moyens employés : offres, promesses, propositions de dons, présents, avantages, etc.",
               ),
             ],
@@ -285,58 +285,58 @@ class ProvocationPedopornographiePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Provocation portant sur un délit : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 227-28-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Provocation portant sur un crime : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 227-28-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les personnes morales peuvent être déclarées responsables pénalement dans les conditions prévues par ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article 121-2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
-              const _BulletPoint(text: "Complicité : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _BulletPoint(text: "Complicité : NON."),
             ],
           ),
         ],
@@ -373,10 +373,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -441,7 +441,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -484,7 +484,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -546,7 +546,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -578,7 +578,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -591,7 +591,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

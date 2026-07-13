@@ -110,16 +110,16 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’association de malfaiteurs en informatique.",
                 ),
@@ -135,76 +135,76 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un groupement ou une entente"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un groupement ou une entente"),
+              _Paragraph(
                 "La loi ne définit ni le groupement, ni l’entente. L’objectif est de permettre une défense avancée "
                 "des systèmes contre le danger que représentent certains « clubs »/« hackers » mettant en commun "
                 "leurs connaissances pour commettre des délits informatiques.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le nombre de participants importe peu : l’entente a même été retenue pour deux personnes. "
                 "Il peut s’agir de personnes physiques comme de personnes morales.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : entente retenue pour deux personnes ",
                   ),
                   TextSpan(
                     text: "(Tr. corr. Limoges, 14 mars 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Il n’est pas nécessaire que le groupement ait été formé à l’origine pour préparer des délits informatiques. "
                 "Si une association régulièrement déclarée dérive vers la délinquance informatique, seuls ceux qui continuent "
                 "à y participer peuvent tomber sous le coup de la loi.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) La préparation d’une ou plusieurs infractions",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La préparation se situe en amont de la commission. La participation à l’entente doit se concrétiser "
                 "par un ou plusieurs faits matériels.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Sont notamment visés : échanges d’informations sur les modes opératoires (communication de codes d’accès, "
                 "moyens utilisés pour « casser » un code, méthodes techniques, etc.).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Les infractions visées"),
-              const _Paragraph(
+              _SubTitle("C) Les infractions visées"),
+              _Paragraph(
                 "Les infractions préparées doivent relever des atteintes aux STAD visées par le Code pénal :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Accès ou maintien frauduleux dans un système de traitement automatisé de données.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Entrave au fonctionnement d’un système de traitement automatisé de données.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Introduction, extraction, détention, reproduction, transmission, suppression ou modification frauduleuse de données.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Importation, détention, offre, cession ou mise à disposition de données adaptées/conçues pour commettre des infractions d’atteintes aux STAD.",
               ),
@@ -219,27 +219,27 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le délit suppose une participation volontaire au groupement ou à l’entente. "
                 "L’auteur doit avoir conscience qu’au sein de cette structure se préparait une ou plusieurs infractions "
                 "d’atteinte au système de traitement automatisé de données.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : il n’est pas nécessaire que chaque membre soit au courant de toutes les activités des autres membres ",
                   ),
                   TextSpan(
                     text: "(C.A. Aix, 02 juin 1993)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -253,81 +253,81 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’infraction définie à l’association de malfaiteurs en informatique est punie des peines prévues "
                 "respectivement pour l’infraction elle-même ou pour l’infraction la plus sévèrement réprimée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : mécanisme de renvoi aux peines de l’infraction préparée (ou la plus sévère).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Renvois (exemples)"),
+              _SubTitle("Renvois (exemples)"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravations si suppression/modification de données ou altération du fonctionnement, ou si STAD à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation si STAD à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation si STAD à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-3-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : reprend le même mécanisme répressif que l’article 323-4 (renvoi à l’infraction la plus sévère).",
                 ),
@@ -343,77 +343,77 @@ class AssociationMalfaiteursInformatiquePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Principe (peines variables)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Principe (peines variables)"),
+              _Paragraph(
                 "En cas de pluralité d’infractions préparées, la peine retenue est celle de l’infraction la plus sévèrement réprimée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Repères usuels (selon l’infraction préparée)"),
+              _SubTitle("Repères usuels (selon l’infraction préparée)"),
               _Paragraph.rich([
-                const TextSpan(text: "Base (ex. "),
+                TextSpan(text: "Base (ex. "),
                 TextSpan(
                   text: "article 323-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") : "),
-                const TextSpan(
+                TextSpan(text: ") : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 100 000 € d’amende.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravations possibles (ex. "),
+                TextSpan(text: "Aggravations possibles (ex. "),
                 TextSpan(
                   text: "article 323-1 alinéa 2 et 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") : "),
-                const TextSpan(
+                TextSpan(text: ") : "),
+                TextSpan(
                   text:
                       "jusqu’à 5 ans / 150 000 € puis 7 ans / 300 000 € selon les cas.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 323-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (amende selon l’article 131-38 et peines de l’article 131-39 ; interdiction d’activité liée à l’infraction).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non prévue)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non prévue)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -454,10 +454,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -522,7 +522,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -565,7 +565,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -627,7 +627,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -638,10 +638,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -653,13 +652,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -672,13 +670,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -84,7 +84,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionAccueilPublic = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Principes généraux",
     question: "L’accueil du public constitue pour la police nationale :",
     options: [
@@ -98,7 +98,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Qualité de l’accueil",
     question: "La qualité de l’accueil repose notamment sur :",
     options: [
@@ -112,7 +112,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Comportement",
     question: "Lors de l’accueil du public, les policiers doivent adopter :",
     options: [
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Droit des citoyens",
     question: "Être écouté à tout moment par la police constitue :",
     options: [
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Dépôt de plainte",
     question: "Les policiers sont tenus de recevoir les plaintes :",
     options: [
@@ -154,7 +154,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Traitement des plaintes",
     question: "Le service recevant une plainte doit :",
     options: [
@@ -168,7 +168,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Disparition",
     question: "Tout signalement de disparition fait l’objet :",
     options: [
@@ -182,7 +182,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Disparition",
     question: "Un signalement de disparition concerne :",
     options: [
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Écoute",
     question: "Toute personne sollicitant la police fait l’objet :",
     options: [
@@ -210,7 +210,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Requêtes",
     question: "Toute requête, quel que soit son degré de gravité :",
     options: [
@@ -224,7 +224,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Politesse",
     question: "La qualité de l’accueil repose sur :",
     options: [
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Attitude",
     question: "Les policiers doivent s’abstenir :",
     options: [
@@ -251,7 +251,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Comportement",
     question: "Face au public, les policiers agissent avec :",
     options: [
@@ -264,7 +264,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Impartialité",
     question: "Les policiers doivent rester :",
     options: [
@@ -278,7 +278,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Tenue",
     question: "Les missions au contact du public sont assurées :",
     options: [
@@ -292,7 +292,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Réponse",
     question: "En cas d’impossibilité de répondre immédiatement :",
     options: [
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question: "Les victimes d’infractions pénales bénéficient :",
     options: [
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question: "Les policiers doivent préserver chez les victimes :",
     options: [
@@ -331,7 +331,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Personnes vulnérables",
     question:
         "À l’égard des personnes vulnérables, les policiers manifestent :",
@@ -345,7 +345,7 @@ final List<QuizQuestion> questionAccueilPublic = [
         "La charte prévoit une attention particulière aux personnes vulnérables.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Principes",
     question: "L’accueil du public par la police nationale doit être :",
     options: [
@@ -359,7 +359,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Disponibilité",
     question:
         "La disponibilité des services de police à l’égard du public est :",
@@ -374,7 +374,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Délai d’attente",
     question: "La réduction des délais d’attente vise principalement à :",
     options: [
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Orientation",
     question: "Lorsqu’une demande ne relève pas de la police, l’usager doit :",
     options: [
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Neutralité",
     question: "Dans l’accueil du public, les policiers doivent faire preuve :",
     options: [
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Respect",
     question: "Le respect de la dignité des personnes implique notamment :",
     options: [
@@ -429,7 +429,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Confidentialité",
     question: "Les échanges avec le public doivent se dérouler :",
     options: [
@@ -443,7 +443,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question: "Les victimes doivent être accueillies avec :",
     options: [
@@ -456,7 +456,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question: "La prise en charge des victimes vise notamment à :",
     options: [
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Information",
     question: "Informer la victime sur la procédure permet :",
     options: [
@@ -483,7 +483,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Suivi",
     question: "Le suivi de la plainte permet à la victime :",
     options: [
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Attitude",
     question: "Un comportement impatient ou ironique à l’accueil est :",
     options: [
@@ -509,7 +509,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Personnes vulnérables",
     question: "Une personne vulnérable doit faire l’objet :",
     options: [
@@ -523,7 +523,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Violence",
     question: "Face à une personne agressive, le policier doit :",
     options: [
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Égalité",
     question: "L’égalité de traitement implique :",
     options: [
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Langage",
     question: "Le langage employé avec le public doit être :",
     options: [
@@ -563,7 +563,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Orientation victimes",
     question: "Lorsque nécessaire, la victime doit être orientée vers :",
     options: [
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Image institutionnelle",
     question: "La qualité de l’accueil influence directement :",
     options: [
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Continuité",
     question: "La continuité de l’accueil du public est assurée :",
     options: [
@@ -602,7 +602,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Service public",
     question: "L’accueil du public s’inscrit avant tout dans la mission :",
     options: [
@@ -615,7 +615,7 @@ final List<QuizQuestion> questionAccueilPublic = [
         "L’accueil est une composante essentielle du service public de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Principes",
     question: "L’assistance aux victimes a pour objectif principal :",
     options: [
@@ -629,7 +629,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Accueil",
     question: "Toute victime doit être accueillie :",
     options: [
@@ -643,7 +643,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Dépôt de plainte",
     question: "Refuser de prendre une plainte constitue :",
     options: [
@@ -656,7 +656,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Information",
     question: "La victime doit être informée :",
     options: [
@@ -670,7 +670,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Confidentialité",
     question: "Les propos tenus par une victime doivent être :",
     options: [
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Orientation",
     question: "L’orientation vers une association d’aide aux victimes est :",
     options: [
@@ -698,7 +698,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Suivi",
     question: "Informer la victime de l’évolution de sa procédure permet :",
     options: [
@@ -712,7 +712,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Neutralité",
     question: "L’assistance aux victimes doit s’exercer :",
     options: [
@@ -726,7 +726,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Écoute",
     question: "L’écoute de la victime doit être :",
     options: [
@@ -739,7 +739,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Revictimisation",
     question: "La revictimisation correspond :",
     options: [
@@ -752,7 +752,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Vulnérabilité",
     question: "Les victimes vulnérables nécessitent :",
     options: [
@@ -766,7 +766,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Langage",
     question: "Le langage utilisé avec la victime doit être :",
     options: [
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Respect",
     question: "Un propos culpabilisant à l’égard d’une victime est :",
     options: [
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Temps",
     question: "La prise en charge d’une victime doit :",
     options: [
@@ -805,7 +805,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Protection",
     question: "La protection de la victime vise notamment :",
     options: [
@@ -818,7 +818,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Orientation médicale",
     question: "Lorsque l’état de la victime le nécessite, elle doit être :",
     options: [
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Violence",
     question: "Face à une victime en état de choc, le policier doit :",
     options: [
@@ -844,7 +844,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Droits",
     question: "La victime a le droit :",
     options: [
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Confiance",
     question: "Une bonne assistance aux victimes permet :",
     options: [
@@ -870,7 +870,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Service public",
     question: "L’assistance aux victimes s’inscrit dans :",
     options: [
@@ -883,7 +883,7 @@ final List<QuizQuestion> questionAccueilPublic = [
         "L’assistance aux victimes fait partie intégrante du service public de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Violence conjugale",
     question: "Face à une victime de violences conjugales, le policier doit :",
     options: [
@@ -896,7 +896,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Violence conjugale",
     question: "Une victime qui hésite à déposer plainte doit être :",
     options: [
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Mineur",
     question: "Lorsqu’un mineur est victime, la priorité est :",
     options: [
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Audition",
     question: "Une audition mal conduite peut entraîner :",
     options: [
@@ -935,7 +935,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Écoute",
     question: "Interrompre régulièrement une victime lors de son récit est :",
     options: [
@@ -948,7 +948,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Violence sexuelle",
     question: "En cas de violences sexuelles, le policier doit :",
     options: [
@@ -961,7 +961,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Dignité",
     question: "Le respect de la dignité impose notamment :",
     options: [
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Handicap",
     question: "Une victime en situation de handicap nécessite :",
     options: [
@@ -987,7 +987,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Information judiciaire",
     question: "Informer la victime sur les suites judiciaires permet :",
     options: [
@@ -1000,7 +1000,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Neutralité",
     question: "Manifester de l’émotion excessive face à une victime est :",
     options: ["À éviter", "Recommandé", "Sans conséquence"],
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Confidentialité",
     question: "Parler d’une affaire de victime en dehors du service est :",
     options: ["Interdit", "Toléré sans nom", "Acceptable entre collègues"],
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Temps judiciaire",
     question: "Le temps judiciaire doit être expliqué à la victime afin :",
     options: [
@@ -1031,7 +1031,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Stress",
     question: "Face à une victime agressive par stress, le policier doit :",
     options: [
@@ -1044,7 +1044,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Orientation",
     question: "Orienter une victime vers un service inadapté est :",
     options: [
@@ -1057,7 +1057,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Prise de plainte",
     question: "Conditionner la prise de plainte à des preuves est :",
     options: ["Illégal", "Recommandé", "Toléré"],
@@ -1066,7 +1066,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Respect",
     question: "Le vouvoiement envers une victime est :",
     options: ["Obligatoire", "Optionnel", "Réservé aux personnes âgées"],
@@ -1075,7 +1075,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Égalité",
     question: "Toutes les victimes doivent être traitées :",
     options: [
@@ -1088,7 +1088,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Service public",
     question: "Refuser d’aider une victime par manque de temps est :",
     options: [
@@ -1101,7 +1101,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Image",
     question: "Une mauvaise prise en charge des victimes nuit :",
     options: [
@@ -1114,7 +1114,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Assistance aux victimes — Engagement",
     question: "L’assistance aux victimes traduit :",
     options: [
@@ -1126,7 +1126,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     explanation: "Elle fait partie intégrante du rôle du policier.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Quel est l’objectif principal de la charte Marianne ?",
     options: [
@@ -1140,7 +1140,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "La charte Marianne concerne l’accueil :",
     options: [
@@ -1154,7 +1154,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Faciliter l’accès des usagers dans les services fait partie :",
     options: [
@@ -1168,7 +1168,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Accueillir les usagers de manière attentive et courtoise est :",
     options: [
@@ -1182,7 +1182,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question:
         "Répondre de manière compréhensible et dans un délai annoncé relève :",
@@ -1197,7 +1197,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Le traitement systématique des réclamations est :",
     options: [
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Recueillir les propositions des usagers permet :",
     options: [
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Le référentiel Marianne est :",
     options: [
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "La certification Marianne est délivrée par :",
     options: ["Un organisme indépendant", "Le chef de service", "Le préfet"],
@@ -1246,7 +1246,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Le référentiel Marianne comprend :",
     options: ["19 engagements", "10 engagements", "25 engagements"],
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Les engagements du référentiel Marianne sont structurés en :",
     options: [
@@ -1269,7 +1269,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Les cinq premières rubriques du référentiel concernent :",
     options: [
@@ -1282,7 +1282,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "La dernière rubrique du référentiel Marianne est dédiée :",
     options: [
@@ -1295,7 +1295,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Police nationale",
     question: "Dans la police nationale, le texte de référence reste :",
     options: [
@@ -1309,7 +1309,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Qualité",
     question: "Les enquêtes mystère ont pour objectif :",
     options: [
@@ -1322,7 +1322,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Qualité",
     question: "Les enquêtes mystère peuvent prendre la forme :",
     options: [
@@ -1335,7 +1335,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Qualité",
     question: "Les enquêtes mystère sont diligentées notamment par :",
     options: [
@@ -1348,7 +1348,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Qualité",
     question: "Le respect du référentiel Marianne engage directement :",
     options: [
@@ -1361,7 +1361,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Qualité",
     question: "La qualité de l’accueil participe directement :",
     options: [
@@ -1377,7 +1377,7 @@ final List<QuizQuestion> questionAccueilPublic = [
   // ===============================
   // ACCUEIL DU PUBLIC – MARIANNE (SÉRIE)
   // ===============================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Quel est l’objectif principal de la charte Marianne ?",
     options: [
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "La charte Marianne concerne quel type d’accueil ?",
     options: [
@@ -1404,7 +1404,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Combien de grands engagements comporte la charte Marianne ?",
     options: ["3", "5", "10"],
@@ -1413,7 +1413,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "Quel engagement vise l’accessibilité des services ?",
     options: [
@@ -1426,7 +1426,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Qu’est-ce que le référentiel Marianne ?",
     options: [
@@ -1440,7 +1440,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Combien d’engagements comprend le référentiel Marianne ?",
     options: ["10", "15", "19"],
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question:
         "Combien de grandes rubriques structurent le référentiel Marianne ?",
@@ -1459,7 +1459,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "À quoi sert la dernière rubrique du référentiel Marianne ?",
     options: [
@@ -1473,7 +1473,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Téléphone",
     question:
         "Dans quel délai un appel téléphonique doit-il être pris en charge ?",
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Courriel",
     question:
         "Quel est le délai maximal pour une première réponse à un courriel ?",
@@ -1499,7 +1499,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Courriel",
     question: "Que doit recevoir systématiquement l’usager après un courriel ?",
     options: [
@@ -1512,7 +1512,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Courrier postal",
     question: "Quel est le délai maximal de traitement d’un courrier postal ?",
     options: ["7 jours ouvrés", "10 jours ouvrés", "15 jours ouvrés"],
@@ -1522,7 +1522,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Public vulnérable",
     question: "Face à une personne en difficulté, l’agent doit :",
     options: [
@@ -1536,7 +1536,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Langage",
     question: "Comment doivent être rédigées les réponses aux usagers ?",
     options: [
@@ -1549,7 +1549,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Identification",
     question: "Que doivent comporter les réponses écrites aux usagers ?",
     options: [
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Accessibilité",
     question: "Pour les personnes à mobilité réduite, l’administration doit :",
     options: [
@@ -1575,7 +1575,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Contrôles",
     question: "Que sont les « enquêtes mystère » ?",
     options: [
@@ -1589,7 +1589,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Ministère de l’Intérieur",
     question: "Qui peut diligenter des enquêtes mystère ?",
     options: [
@@ -1602,7 +1602,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Police nationale",
     question: "Quel texte reste la référence dans la police nationale ?",
     options: [
@@ -1618,7 +1618,7 @@ final List<QuizQuestion> questionAccueilPublic = [
   // ===============================
   // ACCUEIL DU PUBLIC – VICTIMES & DROITS (SÉRIE SUIVANTE)
   // ===============================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Dépôt de plainte",
     question:
         "Les services de police sont-ils tenus de recevoir toutes les plaintes ?",
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Dépôt de plainte",
     question:
         "Une plainte peut-elle être refusée en raison de l’absence de certificat médical ?",
@@ -1644,7 +1644,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question: "Dans quel type de lieu une victime doit-elle être reçue ?",
     options: [
@@ -1658,7 +1658,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question: "Quel comportement l’agent doit-il impérativement éviter ?",
     options: ["L’écoute active", "Le jugement", "La neutralité"],
@@ -1668,7 +1668,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question:
         "Vers qui la victime doit-elle être orientée en priorité si possible ?",
@@ -1683,7 +1683,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victimes",
     question:
         "Qui est informé en dehors des heures ouvrables lorsqu’une victime se présente ?",
@@ -1698,7 +1698,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Droits des victimes",
     question: "Une victime peut-elle être accompagnée lors de sa plainte ?",
     options: [
@@ -1711,7 +1711,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Droits des victimes",
     question:
         "La victime peut-elle élire domicile à une autre adresse que la sienne ?",
@@ -1725,7 +1725,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — MCI",
     question: "Dans quel cas une déclaration MCI est-elle utilisée ?",
     options: [
@@ -1738,7 +1738,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — MCI",
     question: "Que doit-on mentionner impérativement dans une MCI ?",
     options: [
@@ -1751,7 +1751,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Discrimination",
     question: "Qu’est-ce qu’une discrimination ?",
     options: [
@@ -1765,7 +1765,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Discrimination",
     question:
         "Quel article du code pénal définit les critères de discrimination ?",
@@ -1776,7 +1776,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Discrimination",
     question:
         "Combien de critères de discrimination sont répertoriés par la loi ?",
@@ -1786,7 +1786,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Harcèlement moral",
     question: "Le harcèlement moral repose principalement sur :",
     options: [
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Harcèlement moral",
     question: "Quel est l’effet principal du harcèlement moral ?",
     options: [
@@ -1813,7 +1813,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Harcèlement sexuel",
     question: "Le harcèlement sexuel nécessite-t-il une répétition ?",
     options: ["Toujours", "Jamais", "Pas forcément"],
@@ -1823,7 +1823,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Cellule d’écoute",
     question: "Quel est le rôle principal des cellules d’écoute ?",
     options: [
@@ -1837,7 +1837,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Cellule d’écoute",
     question:
         "Les cellules d’écoute sont-elles soumises à la confidentialité ?",
@@ -1848,7 +1848,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Signalement",
     question: "Un signalement peut-il être effectué de manière anonyme ?",
     options: ["Non", "Oui", "Uniquement par écrit"],
@@ -1860,7 +1860,7 @@ final List<QuizQuestion> questionAccueilPublic = [
   // ===============================
   // ACCUEIL DU PUBLIC – PROCÉDURES & VICTIMES (SÉRIE SUIVANTE)
   // ===============================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question:
         "Quel est l’un des engagements fondamentaux de la charte Marianne ?",
@@ -1874,7 +1874,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Charte Marianne",
     question: "La charte Marianne concerne quels types d’accueil ?",
     options: [
@@ -1887,7 +1887,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Le référentiel Marianne est :",
     options: [
@@ -1900,7 +1900,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question: "Combien d’engagements comprend le référentiel Marianne ?",
     options: ["10", "15", "19"],
@@ -1909,7 +1909,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Référentiel Marianne",
     question:
         "Combien de grandes rubriques structurent le référentiel Marianne ?",
@@ -1919,7 +1919,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Appels téléphoniques",
     question:
         "Quel est le délai maximal de prise en charge d’un appel téléphonique ?",
@@ -1930,7 +1930,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Courrier électronique",
     question:
         "Quel est le délai maximal pour une première réponse à un courriel ?",
@@ -1941,7 +1941,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Courrier postal",
     question: "Quel est le délai maximal de traitement d’un courrier postal ?",
     options: ["10 jours ouvrés", "15 jours ouvrés", "30 jours ouvrés"],
@@ -1950,7 +1950,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Enquêtes mystère",
     question:
         "À quoi servent les enquêtes mystère dans les services de police ?",
@@ -1964,7 +1964,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Enquêtes mystère",
     question: "Qui peut diligenter des enquêtes mystère ?",
     options: [
@@ -1977,7 +1977,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Personnes en difficulté",
     question: "À quelles personnes l’agent doit-il adapter son comportement ?",
     options: [
@@ -1990,7 +1990,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Langage",
     question:
         "Comment doivent être rédigées les réponses apportées aux usagers ?",
@@ -2004,7 +2004,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Mobilité réduite",
     question:
         "Que doivent faciliter les services pour les personnes à mobilité réduite ?",
@@ -2018,7 +2018,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Discrimination",
     question:
         "Un propos sexiste peut-il entraîner une sanction disciplinaire ?",
@@ -2029,7 +2029,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Sanctions",
     question: "Quelle est la peine maximale pour discrimination pénale ?",
     options: [
@@ -2042,7 +2042,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Harcèlement moral",
     question: "Quelle est la peine maximale pour harcèlement moral ?",
     options: [
@@ -2055,7 +2055,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Harcèlement sexuel",
     question: "Quelle est la peine maximale pour harcèlement sexuel ?",
     options: [
@@ -2068,7 +2068,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Discipline",
     question: "Quelle sanction disciplinaire maximale peut être prononcée ?",
     options: ["Blâme", "Suspension", "Radiation des cadres ou révocation"],
@@ -2077,7 +2077,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Cellules d’écoute",
     question: "Qui peut saisir une cellule d’écoute ?",
     options: [
@@ -2094,7 +2094,7 @@ final List<QuizQuestion> questionAccueilPublic = [
   // ===============================
   // ACCUEIL DU PUBLIC – VICTIMES & PROCÉDURES (SUITE)
   // ===============================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Dépôt de plainte",
     question: "Les policiers sont-ils tenus de recevoir toutes les plaintes ?",
     options: [
@@ -2108,7 +2108,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victime",
     question:
         "Une victime peut-elle être accompagnée lors du dépôt de plainte ?",
@@ -2122,7 +2122,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Victime",
     question: "Une victime peut-elle demander un interprète ?",
     options: [
@@ -2135,7 +2135,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Confidentialité",
     question:
         "Dans quel lieu doit être reçue une victime de violences conjugales ?",
@@ -2149,7 +2149,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Attitude policière",
     question: "Quelle attitude est exigée de l’agent face à une victime ?",
     options: [
@@ -2163,7 +2163,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Violences conjugales",
     question:
         "Le dépôt de plainte peut-il être refusé faute de certificat médical ?",
@@ -2173,7 +2173,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Violences conjugales",
     question:
         "Vers quels policiers la victime doit-elle être orientée en priorité ?",
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Permanence",
     question:
         "Qui est informé hors heures ouvrables de la présence d’une victime ?",
@@ -2203,7 +2203,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Procédure",
     question:
         "Quel acte est privilégié pour une victime de violences conjugales ?",
@@ -2217,7 +2217,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — MCI",
     question: "Quand peut-on recourir à une déclaration MCI ?",
     options: [
@@ -2230,7 +2230,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — MCI",
     question: "Le refus de plainte doit-il être mentionné en MCI ?",
     options: [
@@ -2243,7 +2243,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Hospitalier",
     question: "Une plainte peut-elle être recueillie en milieu hospitalier ?",
     options: [
@@ -2256,7 +2256,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Hospitalier",
     question:
         "Qui doit garantir la confidentialité lors d’une plainte à l’hôpital ?",
@@ -2266,7 +2266,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Signalement en ligne",
     question: "Le portail de signalement est accessible :",
     options: ["Uniquement en semaine", "24h/24 et 7j/7", "Uniquement de jour"],
@@ -2275,7 +2275,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Signalement en ligne",
     question: "Qui échange avec les victimes via le tchat du portail ?",
     options: ["Des bénévoles", "Des policiers formés", "Des magistrats"],
@@ -2284,7 +2284,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Urgence",
     question:
         "En cas d’urgence avérée, que doit faire l’opérateur du portail ?",
@@ -2298,7 +2298,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Sécurisation",
     question: "Quelle est la priorité lors d’une intervention police secours ?",
     options: [
@@ -2311,7 +2311,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Hébergement",
     question: "Quel numéro peut être contacté pour un hébergement d’urgence ?",
     options: ["17", "115", "3919"],
@@ -2320,7 +2320,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Effets personnels",
     question:
         "La police peut-elle accompagner une victime pour récupérer ses effets ?",
@@ -2333,7 +2333,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     explanation: "L’accompagnement est possible pour la sécurité.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question: "Selon l’article R. 434-21, le policier doit respecter :",
     options: [
@@ -2347,7 +2347,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question: "L’utilisation des fichiers de police doit être :",
     options: [
@@ -2361,7 +2361,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question: "Consulter un fichier par curiosité personnelle est :",
     options: ["Autorisé", "Toléré sans diffusion", "Interdit"],
@@ -2371,7 +2371,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question: "Partager son code d’accès à une application est :",
     options: [
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Données personnelles",
     question: "Créer un fichier nominatif personnel est :",
     options: [
@@ -2397,7 +2397,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sources humaines",
     question: "Le recours à des informateurs doit respecter :",
     options: [
@@ -2411,7 +2411,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sources humaines",
     question:
         "Une relation non encadrée avec un informateur peut être analysée comme :",
@@ -2425,7 +2425,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle",
     question: "La police nationale est soumise au contrôle :",
     options: [
@@ -2438,7 +2438,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle judiciaire",
     question: "Les missions judiciaires sont contrôlées par :",
     options: [
@@ -2451,7 +2451,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Défenseur des droits",
     question: "Le Défenseur des droits peut :",
     options: [
@@ -2464,7 +2464,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Défenseur des droits",
     question: "Un policier convoqué par le Défenseur des droits doit :",
     options: [
@@ -2477,7 +2477,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Inspection",
     question: "Le policier doit faciliter :",
     options: [
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Inspection",
     question: "L’IGPN est un organe :",
     options: ["De contrôle externe", "De contrôle interne", "Judiciaire"],
@@ -2499,7 +2499,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle des pairs",
     question: "Le respect du code de déontologie relève :",
     options: [
@@ -2512,7 +2512,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Contrôle des pairs",
     question: "Le silence face à un manquement déontologique vaut :",
     options: ["Neutralité", "Consentement", "Protection du collègue"],
@@ -2521,7 +2521,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question: "Un manquement déontologique expose à :",
     options: [
@@ -2534,7 +2534,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Sanctions",
     question: "Les sanctions disciplinaires sont :",
     options: [
@@ -2547,7 +2547,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Responsabilité",
     question: "Un même comportement peut constituer :",
     options: [
@@ -2559,7 +2559,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     explanation: "Un acte peut violer plusieurs obligations.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question: "Selon l’article R. 434-28, la fonction de policier implique :",
     options: [
@@ -2573,7 +2573,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question: "Le policier honore la mémoire de ceux qui ont péri :",
     options: [
@@ -2587,7 +2587,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Police nationale",
     question: "L’absence injustifiée lors d’une minute de silence constitue :",
     options: [
@@ -2600,7 +2600,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve",
     question: "Selon l’article R. 434-29, le policier est tenu à :",
     options: [
@@ -2613,7 +2613,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve",
     question: "En service, le policier peut exprimer ses convictions :",
     options: ["Religieuses", "Politiques", "Aucune"],
@@ -2622,7 +2622,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve",
     question: "Hors service, le policier s’exprime librement :",
     options: [
@@ -2635,7 +2635,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve",
     question: "Tenir des propos irrespectueux sur une autorité hiérarchique :",
     options: [
@@ -2648,7 +2648,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve",
     question:
         "L’affichage de documents politiques sur le lieu de travail est :",
@@ -2659,7 +2659,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question: "Selon l’article R. 434-30, le policier doit être :",
     options: [
@@ -2672,7 +2672,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question: "Éteindre volontairement son téléphone pour éviter un rappel :",
     options: [
@@ -2685,7 +2685,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question: "Le changement de résidence doit être :",
     options: [
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Disponibilité",
     question: "Une absence injustifiée lors d’un contrôle administratif est :",
     options: ["Tolérée", "Fautive", "Sans conséquence"],
@@ -2707,7 +2707,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Synthèse",
     question: "Le devoir de réserve vise principalement à protéger :",
     options: [
@@ -2721,7 +2721,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Synthèse",
     question: "La disponibilité du policier est liée :",
     options: [
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     explanation: "La mission impose une disponibilité permanente.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "Selon l’article R. 434-31, l’état militaire exige notamment :",
     options: [
@@ -2747,7 +2747,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "L’état militaire peut exiger :",
     options: [
@@ -2761,7 +2761,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "Les devoirs et sujétions du gendarme méritent :",
     options: [
@@ -2775,7 +2775,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "Les honneurs militaires sont rendus aux gendarmes :",
     options: [
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question:
         "Refuser de recevoir une personne peu avant la fermeture administrative :",
@@ -2803,7 +2803,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "L’exécution partielle d’une mission sans en rendre compte est :",
     options: ["Tolérée en cas d’urgence", "Fautive", "Autorisé hors service"],
@@ -2812,7 +2812,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve (GN)",
     question:
         "Selon l’article R. 434-32, les gendarmes peuvent exprimer leurs opinions :",
@@ -2822,7 +2822,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Devoir de réserve (GN)",
     question:
         "Exprimer une opinion politique en faisant état de son statut militaire est :",
@@ -2832,7 +2832,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Dialogue interne",
     question: "Les gendarmes disposent d’instances de concertation :",
     options: [
@@ -2845,7 +2845,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Dialogue interne",
     question: "Favoriser le dialogue interne est considéré comme :",
     options: [
@@ -2858,7 +2858,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Autres textes",
     question: "Selon l’article R. 434-33, le gendarme est soumis :",
     options: [
@@ -2871,7 +2871,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "L’obligation de logement en gendarmerie est liée :",
     options: [
@@ -2884,7 +2884,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Gendarmerie nationale",
     question: "Cette obligation de logement vise principalement :",
     options: [
@@ -2897,7 +2897,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Comparatif",
     question: "Le devoir de réserve est plus strict pour :",
     options: [
@@ -2910,7 +2910,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Comparatif",
     question: "La neutralité politique est exigée :",
     options: [
@@ -2923,7 +2923,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Déontologie — Protection",
     question: "Le code de déontologie est aussi :",
     options: [
@@ -2936,7 +2936,7 @@ final List<QuizQuestion> questionAccueilPublic = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accueil du public — Information",
     question: "Le plaignant doit être informé :",
     options: [
@@ -3296,7 +3296,7 @@ class _QuiAccueilGpxState extends State<QuiAccueilGpx>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3499,7 +3499,7 @@ class _QuiAccueilGpxState extends State<QuiAccueilGpx>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3682,7 +3682,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4257,10 +4256,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4631,7 +4631,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4672,9 +4672,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

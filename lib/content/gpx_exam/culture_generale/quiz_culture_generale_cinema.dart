@@ -1,27 +1,168 @@
 // ignore_for_file: use_build_context_synchronously
 
-// ============================================================================
-//  Quiz Hiérarchie – version refondue
-//  - Splash full-screen (FR), sans blur, fond animé, cartes fluides
-//  - Bouton "Aléatoire" (mix des 3 niveaux) sous "Commencer"
-//  - Création immédiate d'une ligne dans quiz_history à Start + update à la fin
-//  - Animation de feedback (✓ / ✕) minimaliste et fluide
-//  - Résultat : anneau animé infini, typographies unifiées, aucun soulignement
-// ============================================================================
-
 import 'dart:async';
 import 'dart:math' as math;
+import 'dart:convert';
 import 'dart:ui';
-import 'package:shared_preferences/shared_preferences.dart';
+
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:flutter/services.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:audioplayers/audioplayers.dart';
+
 import 'package:copiqpolice/core/widgets/app_notifier.dart'
     show AppNotifier, AppSettingsController;
 
 // Utilitaire alpha (évite withOpacity déprécié)
 Color _opa(Color c, double a) => c.withValues(alpha: a);
+
+String _fmtInt(int v) {
+  final s = v.toString();
+  final b = StringBuffer();
+  for (int i = 0; i < s.length; i++) {
+    final idxFromEnd = s.length - i;
+    b.write(s[i]);
+    if (idxFromEnd > 1 && idxFromEnd % 3 == 1) {
+      b.write(' ');
+    }
+  }
+  return b.toString();
+}
+
+class _LoadingOverlay extends StatelessWidget {
+  final bool isDark;
+  final int total;
+  final int animated;
+  final int loaded;
+  final int readyTarget;
+  final VoidCallback onRetry;
+
+  const _LoadingOverlay({
+    required this.isDark,
+    required this.total,
+    required this.animated,
+    required this.loaded,
+    required this.readyTarget,
+    required this.onRetry,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final bg = isDark ? Colors.black : _Brand.bgLight;
+    final card = isDark ? _opa(Colors.white, .08) : _Brand.white;
+    final text = isDark ? _opa(Colors.white, .92) : _Brand.textDark;
+    final sub = isDark ? _opa(Colors.white, .70) : _opa(_Brand.textDark, .72);
+
+    final safeTotal = total <= 0 ? null : total;
+    final shownTotal = safeTotal == null ? '…' : _fmtInt(safeTotal);
+    final shownAnimated = safeTotal == null ? '…' : _fmtInt(animated);
+
+    final readyPct = safeTotal == null || readyTarget <= 0
+        ? null
+        : (loaded / readyTarget).clamp(0.0, 1.0);
+
+    return Material(
+      color: Colors.transparent,
+      child: Stack(
+        children: [
+          Positioned.fill(
+            child: BackdropFilter(
+              filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+              child: Container(color: _opa(bg, .62)),
+            ),
+          ),
+          Center(
+            child: Container(
+              width: 360,
+              padding: const EdgeInsets.all(18),
+              margin: const EdgeInsets.symmetric(horizontal: 22),
+              decoration: BoxDecoration(
+                color: card,
+                borderRadius: BorderRadius.circular(22),
+                border: Border.all(
+                  color: isDark
+                      ? _opa(Colors.white, .10)
+                      : _opa(Colors.black, .06),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.black.withValues(alpha: isDark ? .35 : .08),
+                    blurRadius: 30,
+                    offset: const Offset(0, 14),
+                  ),
+                ],
+              ),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const SizedBox(height: 4),
+                  const CircularProgressIndicator(),
+                  const SizedBox(height: 14),
+                  Text(
+                    'Chargement des questions…',
+                    textAlign: TextAlign.center,
+                    style: _Brand.option(context).copyWith(color: text),
+                  ),
+                  const SizedBox(height: 10),
+                  Text(
+                    safeTotal == null
+                        ? 'Connexion à la base…'
+                        : 'Questions disponibles : $shownTotal',
+                    textAlign: TextAlign.center,
+                    style: _Brand.small(context).copyWith(color: sub),
+                  ),
+                  const SizedBox(height: 10),
+                  if (safeTotal != null)
+                    Column(
+                      children: [
+                        Text(
+                          'Indexation : $shownAnimated / $shownTotal',
+                          textAlign: TextAlign.center,
+                          style: _Brand.small(context).copyWith(color: sub),
+                        ),
+                        const SizedBox(height: 8),
+                        ClipRRect(
+                          borderRadius: BorderRadius.circular(999),
+                          child: LinearProgressIndicator(
+                            value: readyPct,
+                            minHeight: 8,
+                            backgroundColor: isDark
+                                ? _opa(Colors.white, .12)
+                                : _opa(Colors.black, .06),
+                          ),
+                        ),
+                        const SizedBox(height: 8),
+                        Text(
+                          'Questions prêtes : ${_fmtInt(loaded)} / ${_fmtInt(readyTarget)}',
+                          textAlign: TextAlign.center,
+                          style: _Brand.small(context).copyWith(color: sub),
+                        ),
+                      ],
+                    ),
+                  const SizedBox(height: 14),
+                  SizedBox(
+                    width: double.infinity,
+                    child: TextButton(
+                      onPressed: onRetry,
+                      child: Text(
+                        'Réessayer',
+                        style: _Brand.option(context).copyWith(
+                          color: isDark ? _Brand.white : _Brand.accent,
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 // ============================================================================
 // THEME
@@ -67,10 +208,12 @@ class _Brand {
 }
 
 // ============================================================================
-// DATA
+// DATA MODEL
 // ============================================================================
 class QuizQuestion {
-  final String category;
+  final int id; // id unique en BDD
+  final String module; //
+  final String category; //
   final String question;
   final List<String> options;
   final String answer;
@@ -79,6 +222,8 @@ class QuizQuestion {
   final String? sub;
 
   const QuizQuestion({
+    required this.id,
+    required this.module,
     required this.category,
     required this.question,
     required this.options,
@@ -87,6 +232,144 @@ class QuizQuestion {
     required this.difficulty,
     this.sub,
   });
+
+  factory QuizQuestion.fromJson(Map<String, dynamic> json) {
+    // options peut être stocké comme String JSON (double-encodé) ou List dans JSONB
+    final _rawOpts = json['options'];
+    final rawOptions = _rawOpts is String
+        ? ((jsonDecode(_rawOpts) as List?) ?? const [])
+        : ((_rawOpts as List?) ?? const []);
+    final answer = (json['answer'] ?? '') as String;
+
+    // Normalise options: trim, remove empty/null strings, remove duplicates.
+    final seen = <String>{};
+    final opts = <String>[];
+    for (final e in rawOptions) {
+      final s = e.toString().trim();
+      if (s.isEmpty) continue;
+      if (s.toLowerCase() == 'null') continue;
+      if (seen.add(s)) opts.add(s);
+    }
+
+    // S'assure que la bonne réponse est présente dans les options (sinon ajout).
+    final ans = answer.trim();
+    if (ans.isNotEmpty && !seen.contains(ans)) {
+      opts.add(ans);
+    }
+
+    // Supabase renvoie les bigint en int (Dart 64-bit). Si un jour ça arrive en String, on fallback.
+    final dynamic rawId = json['id'];
+    final int id = rawId is int
+        ? rawId
+        : int.tryParse(rawId?.toString() ?? '') ?? 0;
+
+    return QuizQuestion(
+      id: id,
+      module: (json['module'] ?? '') as String,
+      category: (json['category'] ?? '') as String,
+      question: (json['question'] ?? '') as String,
+      options: opts,
+      answer: answer,
+      explanation: (json['explanation'] ?? '') as String,
+      difficulty: (json['difficulty'] ?? '') as String,
+      sub: json['sub'] as String?,
+    );
+  }
+}
+
+// ============================================================================
+// SUPABASE REPO (lazy-load / pagination / 1M+ friendly)
+// ============================================================================
+
+class QuizQuestionsRepository {
+  final SupabaseClient sb;
+  QuizQuestionsRepository(this.sb);
+
+  static const _fields =
+      'id,module,category,question,options,answer,explanation,difficulty,sub,rand_key';
+
+  /// Récupère un lot de questions "pseudo-aléatoires" SANS ORDER BY random()
+  /// pour éviter les timeouts sur de grosses tables.
+  ///
+  /// Principe:
+  /// - on génère un seed [0..1[
+  /// - on prend les lignes avec rand_key >= seed triées par rand_key
+  /// - si on n'a pas assez, on "wrap" avec rand_key < seed
+  ///
+  /// ✅ Rapide si un index existe sur (category, difficulty, rand_key)
+  Future<List<QuizQuestion>> fetchRandomSet({
+    required String category,
+    String? difficulty,
+    required int limit,
+    double? seed,
+  }) async {
+    final s = seed ?? math.Random().nextDouble();
+
+    dynamic base() {
+      var q = sb
+          .from('quiz_questions')
+          .select(_fields)
+          .eq('category', category);
+
+      if (difficulty != null) {
+        q = q.eq('difficulty', difficulty);
+      }
+      return q;
+    }
+
+    // 1) rand_key >= seed
+    final first = await base()
+        .gte('rand_key', s)
+        .order('rand_key', ascending: true)
+        .limit(limit);
+
+    final firstList = (first is List)
+        ? first.cast<Map<String, dynamic>>()
+        : <Map<String, dynamic>>[];
+    if (firstList.length >= limit) {
+      return firstList.map(QuizQuestion.fromJson).toList();
+    }
+
+    // 2) wrap rand_key < seed
+    final remaining = limit - firstList.length;
+    final second = await base()
+        .lt('rand_key', s)
+        .order('rand_key', ascending: true)
+        .limit(remaining);
+
+    final secondList = (second is List)
+        ? second.cast<Map<String, dynamic>>()
+        : <Map<String, dynamic>>[];
+
+    final combined = <Map<String, dynamic>>[...firstList, ...secondList];
+
+    return combined.map(QuizQuestion.fromJson).toList();
+  }
+
+  /// Fetch paginé (batch) — conservé si besoin plus tard.
+  Future<List<QuizQuestion>> fetchBatch({
+    required String category,
+    String? difficulty,
+    required int fromInclusive,
+    required int toInclusive,
+  }) async {
+    var query = sb
+        .from('quiz_questions')
+        .select(
+          'id,module,category,question,options,answer,explanation,difficulty,sub',
+        )
+        .eq('category', category);
+
+    if (difficulty != null) {
+      query = query.eq('difficulty', difficulty);
+    }
+
+    final data = await query.range(fromInclusive, toInclusive);
+    return data
+        .cast<Map<String, dynamic>>()
+        .map(QuizQuestion.fromJson)
+        .toList();
+  }
 }
 
 // ============================================================================
@@ -94,6 +377,7 @@ class QuizQuestion {
 // ============================================================================
 class QuizCultureGeneraleCinema extends StatefulWidget {
   static const String routeName = '/gpx_exam/concours/culture_generale_cinema';
+
   final String uid;
   final String email;
 
@@ -110,39 +394,44 @@ class QuizCultureGeneraleCinema extends StatefulWidget {
 
 class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
     with TickerProviderStateMixin {
-  // ================================================================
-  // CONFIG
-  // ================================================================
-  static const int _kBatchSize = 1000;
-  static const int _kPrefetchThreshold = 8;
+  // ===========================================================================
+  // CONFIG QUIZ
+  // ===========================================================================
+  static const String _categoryNameDb = 'Cinema';
+  static const int _pageSize = 500;
 
-  // ================================================================
-  // CORE
-  // ================================================================
   SupabaseClient get _sb => Supabase.instance.client;
+  late final QuizQuestionsRepository _repo = QuizQuestionsRepository(_sb);
 
   late final PageController _page;
   late math.Random _rng;
 
-  // Questions en cours (flux)
-  final List<QuizQuestion> _qs = [];
-  final List<List<String>> _opts = [];
-  final List<String?> _answers = [];
+  // Questions cache: index -> question
+  final Map<int, QuizQuestion> _cache = {};
+  final Map<int, List<String>> _optsCache = {};
 
+  // Answers (map) to avoid allocating 1M entries
+  final Map<int, String> _answers = {};
+
+  // Progress / state
+  bool _showSplash = true;
+  bool _loading = false;
   bool _hasQuiz = false;
-  int get _qsSafeLength => _hasQuiz ? _qs.length : 0;
 
-  // UI state
-  bool _loadingQuiz = false;
-  bool _isPrefetching = false;
-
-  // verrous anti multi-tap / anti race conditions
-  bool _isStarting = false;
-  bool _isNavigating = false;
-
-  // Index / score
   int _index = 0;
   int _score = 0;
+  int _total = 0;
+
+  // Loading UX counters
+  int _loadedCount = 0;
+  int _animatedCount = 0;
+  Timer? _counterTimer;
+
+  final int _startOffset = 0;
+  int _loadedUntilVirtualIndex = -1;
+
+  final Set<int> _pendingEnsure = <int>{};
+  final Map<int, Future<void>> _inFlightBatches = <int, Future<void>>{};
 
   // Sélection & validation
   String? _currentChoice;
@@ -150,68 +439,58 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
   bool _isCorrect = false;
 
   // Splash / difficulté
-  bool _showSplash = true;
   String? _selectedDifficulty; // "Facile" | "Moyenne" | "Difficile" | null
-  bool _mixMode = false;
+  bool _mixMode = false; // true si clic sur "Aléatoire"
 
-  // ✅ INTRO : doit apparaître À CHAQUE entrée sur la page
-  bool _showIntro = true;
+  // Historique
+  int? _historyRowId;
+  bool _historyFinished = false; // ✅ évite double finish/abandon
 
-  // évite de pousser l'intro 2x (hot reload / rebuild)
-  bool _introPushed = false;
-
-  // Prefetch buffer
-  final List<QuizQuestion> _prefetchBuffer = [];
-
-  // Anti-doublon
-  final Set<int> _seenIds = <int>{};
-  final Set<String> _seenFallback = <String>{};
-
-  // Audio
+  // Audio (✓ / ✕)
   late final AudioPlayer _goodSfx;
   late final AudioPlayer _badSfx;
 
-  // Animations
+  // Splash animation
   late final AnimationController _splashCtrl = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 800),
   )..forward();
-
   late final Animation<double> _splashFade = CurvedAnimation(
     parent: _splashCtrl,
     curve: Curves.easeOutCubic,
   );
 
+  // Feedback animation
   late final AnimationController _pulseCtrl = AnimationController(
     vsync: this,
     duration: const Duration(milliseconds: 700),
   );
 
-  // Historique
-  int? _historyRowId;
-
-  // ================================================================
-  // LIFECYCLE
-  // ================================================================
+  // ===========================================================================
+  // INIT / DISPOSE
+  // ===========================================================================
   @override
   void initState() {
     super.initState();
+
+    // ✅ Edge-to-edge = pas de bandes noires système en haut/bas
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+
     _page = PageController(initialPage: 0);
     _rng = math.Random(DateTime.now().millisecondsSinceEpoch);
 
     _goodSfx = AudioPlayer()..setReleaseMode(ReleaseMode.stop);
     _badSfx = AudioPlayer()..setReleaseMode(ReleaseMode.stop);
-
     unawaited(_goodSfx.setSource(AssetSource('sfx/correct_answer.mp3')));
     unawaited(_badSfx.setSource(AssetSource('sfx/wrong_answer.mp3')));
 
-    WidgetsBinding.instance.addPostFrameCallback((_) {
-      _showIntroAndHandleResult();
-    });
+    // ❌ IMPORTANT : PAS D’HISTORIQUE ICI
+    // L’historique se crée uniquement quand l’utilisateur appuie sur "Commencer".
   }
 
   @override
   void dispose() {
+    _counterTimer?.cancel();
     _page.dispose();
     _splashCtrl.dispose();
     _pulseCtrl.dispose();
@@ -220,426 +499,258 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
     super.dispose();
   }
 
-  // ================================================================
-  // INTRO (TOUJOURS)
-  // UX visée:
-  // 🟢 arrivée page -> INTRO
-  // 🟢 Continuer -> difficulté
-  // 🟢 quitter page
-  // 🔁 revenir -> INTRO encore
-  // ================================================================
-  Future<void> _presentIntroEveryTime() async {
+  // ===========================================================================
+  // SAFE SETSTATE
+  // ===========================================================================
+  void _safeSetState(VoidCallback fn) {
     if (!mounted) return;
-    if (_introPushed) return; // anti double push
-    _introPushed = true;
-
-    // tant que l'intro n'est pas fermée, on masque le splash
-    if (mounted) setState(() => _showIntro = true);
-
-    try {
-      // Ton écran EXISTANT (route modale)
-      // Il pop(true) sur "Continuer" et pop(false) sur "Plus tard"
-      await Navigator.of(context).push<bool>(
-        MaterialPageRoute(builder: (_) => const CinemaQuestionsIntroScreen()),
-      );
-    } catch (e) {
-      debugPrint('❌ intro push failed: $e');
-    } finally {
-      if (!mounted) return;
-      // Dans tous les cas (continuer / plus tard / retour), on passe à la difficulté.
-      setState(() => _showIntro = false);
+    final phase = SchedulerBinding.instance.schedulerPhase;
+    final shouldDefer =
+        phase == SchedulerPhase.persistentCallbacks ||
+        phase == SchedulerPhase.transientCallbacks;
+    if (shouldDefer) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (!mounted) return;
+        setState(fn);
+      });
+    } else {
+      setState(fn);
     }
   }
 
-  // ================================================================
-  // DB — RPC random batch (FAST)
-  // RPC Supabase :
-  // public.get_random_quiz_questions_fast(p_module, p_category, p_difficulty, p_limit)
-  // ================================================================
-  Future<List<Map<String, dynamic>>> _rpcRandomRows({
-    required String module,
-    required String category,
-    required String? difficulty,
-    required int limit,
-  }) async {
-    final res = await _sb.rpc(
-      'get_random_quiz_questions_fast',
-      params: {
-        'p_module': module,
-        'p_category': category,
-        'p_difficulty': difficulty,
-        'p_limit': limit,
-      },
-    );
-    return (res as List).cast<Map<String, dynamic>>();
+  // ===========================================================================
+  // DB HELPERS
+  // ===========================================================================
+  String? get _difficultyFilter => _mixMode ? null : _selectedDifficulty;
+
+  int _quizIndexToDbOffset(int quizIndex) {
+    if (_total <= 0) return 0;
+    return (_startOffset + quizIndex) % _total;
   }
 
-  QuizQuestion _qqFromRow(Map<String, dynamic> r) {
-    final opts = (r['options'] as List? ?? const [])
-        .map((e) => e.toString())
-        .where((s) => s.trim().isNotEmpty)
-        .toList();
+  Future<void> _ensureBatchForQuizIndex(int quizIndex) async {
+    if (!_hasQuiz) return;
+    if (_total <= 0) return;
+    if (quizIndex <= _loadedUntilVirtualIndex) return;
 
-    return QuizQuestion(
-      category: (r['category'] ?? '').toString(),
-      question: (r['question'] ?? '').toString(),
-      options: opts,
-      answer: (r['answer'] ?? '').toString(),
-      explanation: (r['explanation'] ?? '').toString(),
-      difficulty: (r['difficulty'] ?? '').toString(),
-      sub: (r['sub'] as String?),
-    );
-  }
+    final batchStartQuiz = (quizIndex ~/ _pageSize) * _pageSize;
+    final batchEndQuiz = math.min(batchStartQuiz + _pageSize - 1, _total - 1);
 
-  String _fallbackKeyFromRow(Map<String, dynamic> r) {
-    final q = (r['question'] ?? '').toString().trim();
-    final a = (r['answer'] ?? '').toString().trim();
-    final d = (r['difficulty'] ?? '').toString().trim();
-    return '$d|$q|$a';
-  }
-
-  Future<void> _showIntroAndHandleResult() async {
-    if (!mounted) return;
-
-    final navigator = Navigator.of(context);
-
-    final bool? res = await navigator.push<bool>(
-      MaterialPageRoute(
-        fullscreenDialog: true,
-        builder: (_) => const CinemaQuestionsIntroScreen(),
-      ),
-    );
-
-    if (!mounted) return;
-
-    // ✅ Tout ce qui n'est pas "true" = Plus tard
-    if (res != true) {
-      if (!mounted) return;
-      Navigator.of(context).pop(); // ✅ et on STOP ici
+    final inFlight = _inFlightBatches[batchStartQuiz];
+    if (inFlight != null) {
+      await inFlight;
       return;
     }
 
-    // Continuer => on laisse le quiz vivre et on affiche la difficulté
-    setState(() {
-      _showIntro = false;
-      _showSplash = true;
+    final startDb = _quizIndexToDbOffset(batchStartQuiz);
+    final endDb = _quizIndexToDbOffset(batchEndQuiz);
+
+    Future<void> doFetch() async {
+      _safeSetState(() => _loading = true);
+
+      const maxAttempts = 3;
+      final delays = <Duration>[
+        const Duration(milliseconds: 350),
+        const Duration(milliseconds: 900),
+      ];
+
+      for (int attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+          if (startDb <= endDb) {
+            final list = await _repo.fetchBatch(
+              category: _categoryNameDb,
+              difficulty: _difficultyFilter,
+              fromInclusive: startDb,
+              toInclusive: endDb,
+            );
+            _mapBatchToCache(batchStartQuiz: batchStartQuiz, questions: list);
+          } else {
+            final seg1 = await _repo.fetchBatch(
+              category: _categoryNameDb,
+              difficulty: _difficultyFilter,
+              fromInclusive: startDb,
+              toInclusive: _total - 1,
+            );
+            final seg2 = await _repo.fetchBatch(
+              category: _categoryNameDb,
+              difficulty: _difficultyFilter,
+              fromInclusive: 0,
+              toInclusive: endDb,
+            );
+            final merged = <QuizQuestion>[...seg1, ...seg2];
+            _mapBatchToCache(batchStartQuiz: batchStartQuiz, questions: merged);
+          }
+
+          _loadedUntilVirtualIndex = batchEndQuiz;
+          return;
+        } catch (e) {
+          debugPrint('❌ fetchBatch failed (attempt $attempt/$maxAttempts): $e');
+          if (attempt < maxAttempts) {
+            await Future<void>.delayed(
+              delays[math.min(attempt - 1, delays.length - 1)],
+            );
+            continue;
+          }
+          if (mounted) {
+            AppNotifier.error(
+              context,
+              title: 'Chargement en cours…',
+              message:
+                  "La base répond lentement. Attends quelques secondes, ou réessaie.",
+            );
+          }
+        }
+      }
+    }
+
+    final f = doFetch().whenComplete(() {
+      _inFlightBatches.remove(batchStartQuiz);
+      _safeSetState(() => _loading = false);
+    });
+
+    _inFlightBatches[batchStartQuiz] = f;
+    await f;
+  }
+
+  void _mapBatchToCache({
+    required int batchStartQuiz,
+    required List<QuizQuestion> questions,
+  }) {
+    final shuffled = List<QuizQuestion>.from(questions);
+    shuffled.shuffle(_rng);
+
+    for (int i = 0; i < shuffled.length; i++) {
+      final quizIdx = batchStartQuiz + i;
+      if (quizIdx >= _total) break;
+
+      final q = shuffled[i];
+      final isNew = !_cache.containsKey(quizIdx);
+      _cache[quizIdx] = q;
+      if (isNew) {
+        _loadedCount = math.min(_total, _loadedCount + 1);
+      }
+
+      final opts = List<String>.from(q.options);
+      opts.shuffle(_rng);
+      _optsCache[quizIdx] = opts;
+    }
+  }
+
+  // ===========================================================================
+  // PREFETCH
+  // ===========================================================================
+  void _requestEnsure(int quizIndex) {
+    if (!_hasQuiz || _total <= 0) return;
+    if (_pendingEnsure.contains(quizIndex)) return;
+    _pendingEnsure.add(quizIndex);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _pendingEnsure.remove(quizIndex);
+      unawaited(_ensureBatchForQuizIndex(quizIndex));
     });
   }
 
-  // ================================================================
-  // HELPERS — seed + shuffle
-  // ================================================================
-  void _seedFromPool(List<QuizQuestion> pool) {
-    _qs
-      ..clear()
-      ..addAll(pool);
-
-    _opts
-      ..clear()
-      ..addAll(
-        pool.map((q) {
-          final list = List<String>.from(q.options);
-          list.shuffle(_rng);
-          return list;
-        }),
-      );
-
-    _answers
-      ..clear()
-      ..addAll(List<String?>.filled(pool.length, null));
-
-    _hasQuiz = true;
-  }
-
-  void _appendPool(List<QuizQuestion> add) {
-    if (add.isEmpty) return;
-
-    _qs.addAll(add);
-
-    _opts.addAll(
-      add.map((q) {
-        final list = List<String>.from(q.options);
-        list.shuffle(_rng);
-        return list;
-      }),
-    );
-
-    _answers.addAll(List<String?>.filled(add.length, null));
-  }
-
-  // ================================================================
-  // PREFETCH / APPEND
-  // ================================================================
-  Future<void> _prefetchNextBatch({required String? diff}) async {
-    if (_isPrefetching) return;
-    _isPrefetching = true;
-
-    try {
-      final rows = await _rpcRandomRows(
-        module: 'Culture générale',
-        category: 'Cinéma',
-        difficulty: diff,
-        limit: _kBatchSize,
-      );
-
-      final filtered = <QuizQuestion>[];
-      for (final r in rows) {
-        final id = (r['id'] as num?)?.toInt();
-        if (id != null) {
-          if (_seenIds.contains(id)) continue;
-          _seenIds.add(id);
-        } else {
-          final key = _fallbackKeyFromRow(r);
-          if (_seenFallback.contains(key)) continue;
-          _seenFallback.add(key);
-        }
-        filtered.add(_qqFromRow(r));
-      }
-
-      _prefetchBuffer
-        ..clear()
-        ..addAll(filtered);
-    } catch (e) {
-      debugPrint('❌ prefetch failed: $e');
-    } finally {
-      _isPrefetching = false;
-    }
-  }
-
-  Future<void> _appendNextBatchIfNeeded() async {
-    if (!_hasQuiz) return;
-
-    final remaining = _qs.length - 1 - _index;
-    if (remaining > _kPrefetchThreshold) return;
-
-    if (_prefetchBuffer.isNotEmpty) {
-      final add = List<QuizQuestion>.from(_prefetchBuffer);
-      _prefetchBuffer.clear();
-      _appendPool(add);
-
-      final String? diff = _mixMode ? null : _selectedDifficulty;
-      unawaited(_prefetchNextBatch(diff: diff));
-
-      if (mounted) setState(() {});
-      return;
-    }
-
-    final String? diff = _mixMode ? null : _selectedDifficulty;
-    await _prefetchNextBatch(diff: diff);
-
-    if (_prefetchBuffer.isNotEmpty) {
-      await _appendNextBatchIfNeeded();
-    }
-  }
-
-  // ================================================================
-  // SUPABASE — HISTORY
-  // ================================================================
-  Future<void> _createHistoryOnStart() async {
-    try {
-      final res = await _sb
-          .from('quiz_history')
-          .insert({
-            'uid': widget.uid,
-            'email': widget.email,
-            'module_name': 'Culture générale',
-            'quiz_name': 'Quiz culture générale cinéma',
-            'score': 0,
-            'total_questions': _qs.length,
-            'correct_count': 0,
-            'started_at': DateTime.now().toUtc().toIso8601String(),
-          })
-          .select('id')
-          .single();
-
-      _historyRowId = (res['id'] as num).toInt();
-    } catch (e) {
-      debugPrint('❌ quiz_history (start) insert failed: $e');
-    }
-  }
-
-  Future<void> _updateHistoryOnFinish() async {
-    if (_historyRowId == null) return;
-
-    try {
-      final int answered = _answers.where((a) => a != null).length;
-      final int totalForScore = answered <= 0 ? 1 : answered;
-      final int percent = ((_score / totalForScore) * 100).round();
-
-      await _sb
-          .from('quiz_history')
-          .update({
-            'score': percent,
-            'correct_count': _score,
-            'total_questions': answered,
-            'finished_at': DateTime.now().toUtc().toIso8601String(),
-            'completed_at': DateTime.now().toIso8601String(),
-          })
-          .eq('id', _historyRowId!)
-          .eq('uid', widget.uid);
-    } catch (e) {
-      debugPrint('❌ quiz_history (finish) update failed: $e');
-    }
-  }
-
-  Future<void> _endQuizNow() async {
-    if (!_hasQuiz) return;
-
-    final int answered = _answers.where((a) => a != null).length;
-    final int totalForScore = answered <= 0 ? 1 : answered;
-
-    await _updateHistoryOnFinish();
-
-    if (!mounted) return;
-    _openResultDialog(_score, totalForScore);
-  }
-
-  Future<void> _saveAnswer({
-    required String question,
-    required String userAnswer,
-    required String correctAnswer,
-    required bool isCorrect,
-    required String difficulty,
-  }) async {
-    try {
-      await _sb.from('quiz_culture_generale_cinema_pages').insert({
-        'user_uid': widget.uid,
-        'email': widget.email,
-        'question': question,
-        'user_answer': userAnswer,
-        'correct_answer': correctAnswer,
-        'is_correct': isCorrect,
-        'score': _score,
-        'difficulty': difficulty,
-      });
-    } catch (e) {
-      debugPrint('❌ quiz_culture_generale_cinema_pages insert failed: $e');
-    }
-  }
-
-  // ================================================================
-  // AUDIO
-  // ================================================================
-  Future<void> _playAnswerSfx(bool good) async {
-    try {
-      HapticFeedback.mediumImpact();
-      final AudioPlayer p = good ? _goodSfx : _badSfx;
-      await p.stop();
-      await p.setSource(
-        AssetSource(good ? 'sfx/correct_answer.mp3' : 'sfx/wrong_answer.mp3'),
-      );
-      await p.resume();
-    } catch (_) {}
-  }
-
-  // ================================================================
-  // ACTIONS — START / SELECT / VALIDATE / NEXT / RESTART
-  // ================================================================
+  // ===========================================================================
+  // QUIZ FLOW
+  // ===========================================================================
   Future<void> _startQuiz({bool mix = false}) async {
-    if (_isStarting || _loadingQuiz) return;
-    _isStarting = true;
-
     _mixMode = mix;
 
-    if (!_mixMode && _selectedDifficulty == null) {
+    if (!mix && _selectedDifficulty == null) {
       AppNotifier.info(
         context,
         title: 'Choisis un niveau',
         message: 'Sélectionne une difficulté pour commencer.',
       );
-      _isStarting = false;
       return;
     }
 
-    if (mounted) setState(() => _loadingQuiz = true);
-
-    try {
-      final String? diff = _mixMode ? null : _selectedDifficulty;
-
-      _seenIds.clear();
-      _seenFallback.clear();
-      _prefetchBuffer.clear();
-
-      _qs.clear();
-      _opts.clear();
-      _answers.clear();
+    setState(() {
+      _loading = true;
       _hasQuiz = false;
 
-      if (_page.hasClients) _page.jumpToPage(0);
+      _cache.clear();
+      _optsCache.clear();
+      _answers.clear();
 
-      final rows = await _rpcRandomRows(
-        module: 'Culture générale',
-        category: 'Cinéma',
-        difficulty: diff,
-        limit: _kBatchSize,
+      _index = 0;
+      _score = 0;
+
+      _validated = false;
+      _isCorrect = false;
+      _currentChoice = null;
+
+      _loadedCount = 0;
+      _animatedCount = 0;
+      _total = 0;
+
+      // ✅ reset historique
+      _historyRowId = null;
+      _historyFinished = false;
+    });
+
+    try {
+      const int quizLength = 50;
+      final seed = _rng.nextDouble();
+
+      final questions = await _repo.fetchRandomSet(
+        category: _categoryNameDb,
+        difficulty: _difficultyFilter,
+        limit: quizLength,
+        seed: seed,
       );
 
-      final pool = <QuizQuestion>[];
-      for (final r in rows) {
-        final id = (r['id'] as num?)?.toInt();
-        if (id != null) {
-          if (_seenIds.contains(id)) continue;
-          _seenIds.add(id);
-        } else {
-          final key = _fallbackKeyFromRow(r);
-          if (_seenFallback.contains(key)) continue;
-          _seenFallback.add(key);
-        }
-        pool.add(_qqFromRow(r));
-      }
-
-      if (!mounted) return;
-
-      if (pool.isEmpty) {
-        setState(() => _loadingQuiz = false);
+      if (questions.isEmpty) {
+        setState(() {
+          _total = 0;
+          _hasQuiz = false;
+          _loading = false;
+        });
         AppNotifier.warning(
           context,
           title: 'Aucune question',
-          message: 'Aucune question trouvée pour ces filtres.',
+          message: 'Aucune question trouvée pour ce filtre.',
         );
         return;
       }
 
-      _seedFromPool(pool);
+      // ✅ on a les questions -> on connaît le total
+      for (var i = 0; i < questions.length; i++) {
+        final q = questions[i];
+        _cache[i] = q;
+        final opts = List<String>.from(q.options);
+        opts.shuffle(_rng);
+        _optsCache[i] = opts;
+      }
 
       setState(() {
-        _index = 0;
-        _score = 0;
-        _validated = false;
-        _isCorrect = false;
-        _currentChoice = null;
+        _total = questions.length;
+        _loadedCount = questions.length;
+        _animatedCount = questions.length;
+        _hasQuiz = true;
         _showSplash = false;
-        _loadingQuiz = false;
+        _loading = false;
       });
 
+      // ✅ CRÉE L’HISTORIQUE ICI (comme ta page grammaire)
       await _createHistoryOnStart();
-      unawaited(_prefetchNextBatch(diff: diff));
-    } catch (e, st) {
-      debugPrint('❌ start quiz failed: $e');
-      debugPrint('$st');
-      if (!mounted) return;
-      setState(() => _loadingQuiz = false);
+    } catch (e) {
+      debugPrint('❌ startQuiz failed: $e');
+      setState(() => _loading = false);
       AppNotifier.error(
         context,
-        title: 'Erreur de chargement',
-        message: "Impossible de charger les questions depuis la base.",
+        title: 'Erreur',
+        message: 'Impossible de démarrer le quiz.',
       );
-    } finally {
-      _isStarting = false;
     }
   }
 
   void _select(String v) {
-    if (!_hasQuiz || _validated) return;
+    if (_validated) return;
     setState(() => _currentChoice = v);
   }
 
   Future<void> _validate() async {
-    if (!_hasQuiz || _validated) return;
-    if (_index < 0 || _index >= _qs.length) return;
-
-    final choice = _currentChoice;
-    if (choice == null) {
+    if (_currentChoice == null) {
       AppNotifier.error(
         context,
         title: 'Réponse requise',
@@ -648,13 +759,22 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
       return;
     }
 
-    final q = _qs[_index];
-    final ok = choice == q.answer;
+    final q = _cache[_index];
+    if (q == null) {
+      AppNotifier.info(
+        context,
+        title: 'Chargement…',
+        message: 'La question arrive, réessaie dans 1 seconde.',
+      );
+      return;
+    }
+
+    final ok = _currentChoice == q.answer;
 
     setState(() {
       _validated = true;
       _isCorrect = ok;
-      _answers[_index] = choice;
+      _answers[_index] = _currentChoice!;
       if (ok) _score++;
     });
 
@@ -667,7 +787,7 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
     unawaited(
       _saveAnswer(
         question: q.question,
-        userAnswer: choice,
+        userAnswer: _currentChoice!,
         correctAnswer: q.answer,
         isCorrect: ok,
         difficulty: q.difficulty,
@@ -676,24 +796,17 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
   }
 
   Future<void> _next() async {
-    if (_isNavigating) return;
-    if (!_validated || !_hasQuiz) return;
+    if (!_validated) return;
 
-    _isNavigating = true;
+    if (_index < _total - 1) {
+      final nextIndex = _index + 1;
 
-    try {
       setState(() {
-        _index++;
+        _index = nextIndex;
         _validated = false;
         _isCorrect = false;
         _currentChoice = null;
       });
-
-      if (_index >= _qs.length) {
-        await _appendNextBatchIfNeeded();
-      } else {
-        unawaited(_appendNextBatchIfNeeded());
-      }
 
       if (mounted && _page.hasClients) {
         await _page.nextPage(
@@ -701,10 +814,14 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
           curve: Curves.easeOutCubic,
         );
       }
-    } catch (e) {
-      debugPrint('❌ next failed: $e');
-    } finally {
-      _isNavigating = false;
+    } else {
+      // ✅ fin “naturelle”
+      final answered = _answers.length;
+      final totalForDialog = answered <= 0 ? 1 : answered;
+
+      await _updateHistoryOnFinish();
+      if (!mounted) return;
+      _openResultDialog(_score, totalForDialog);
     }
   }
 
@@ -715,31 +832,504 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
       _validated = false;
       _isCorrect = false;
       _currentChoice = null;
-
       _showSplash = true;
       _selectedDifficulty = null;
       _mixMode = false;
-
-      _prefetchBuffer.clear();
-      _seenIds.clear();
-      _seenFallback.clear();
-
-      _qs.clear();
-      _opts.clear();
-      _answers.clear();
       _hasQuiz = false;
-      _loadingQuiz = false;
+      _total = 0;
+      _cache.clear();
+      _optsCache.clear();
+      _answers.clear();
+
+      _historyRowId = null;
+      _historyFinished = false;
     });
-
-    if (_page.hasClients) _page.jumpToPage(0);
-
-    // ✅ IMPORTANT : on ne relance PAS l'intro sur restart.
-    // L'intro est "à chaque entrée sur la page", pas "à chaque restart".
+    _page.jumpToPage(0);
   }
 
-  // ================================================================
+  Future<void> _endQuizNow() async {
+    if (!_hasQuiz) return;
+
+    final int answered = _answers.length;
+    final int totalForScore = answered <= 0 ? 1 : answered;
+
+    await _updateHistoryOnFinish();
+    if (!mounted) return;
+
+    _openResultDialog(_score, totalForScore);
+  }
+
+  // ===========================================================================
+  // SUPABASE HISTORY / ANSWERS
+  // ===========================================================================
+  Future<void> _createHistoryOnStart() async {
+    if (_historyRowId != null) {
+      debugPrint('⚠️ quiz_history already created: id=$_historyRowId');
+      return;
+    }
+
+    try {
+      final nowUtc = DateTime.now().toUtc().toIso8601String();
+
+      final payload = <String, dynamic>{
+        'uid': widget.uid,
+        'email': widget.email,
+        'module_name': 'Culture générale',
+        'quiz_name': 'Quiz culture générale cinéma',
+
+        // 🔥 LIVE : 0 / 50 affiché immédiatement
+        'score': 0,
+        'correct_count': 0,
+        'total_questions': 500,
+
+        'mode': 'exam',
+        'track': 'gpx',
+
+        'started_at': nowUtc,
+
+        // ⚠️ si ta colonne finished_at est NOT NULL → obligé de mettre une valeur
+        'finished_at': nowUtc,
+
+        // doit être NULL tant que pas terminé
+        'completed_at': null,
+      };
+
+      final res = await _sb
+          .from('quiz_history')
+          .insert(payload)
+          .select('id')
+          .single();
+
+      _historyRowId = (res['id'] as num).toInt();
+      _historyFinished = false;
+
+      debugPrint('✅ quiz_history START created id=$_historyRowId');
+    } catch (e, st) {
+      debugPrint('❌ quiz_history (start) insert failed: $e');
+      debugPrint('STACK: $st');
+    }
+  }
+
+  Future<void> _updateHistoryOnFinish() async {
+    if (_historyFinished) return; // ✅ anti double
+    if (_historyRowId == null) return;
+
+    try {
+      final int answered = _answers.length;
+      final int totalForScore = answered <= 0 ? 1 : answered;
+      final int percent = ((_score / totalForScore) * 100).round();
+
+      final nowUtc = DateTime.now().toUtc().toIso8601String();
+
+      await _sb
+          .from('quiz_history')
+          .update({
+            'score': percent,
+            'correct_count': _score,
+            'total_questions':
+                answered, // 🔥 comme grammaire: questions traitées
+            'finished_at': nowUtc,
+            'completed_at': nowUtc,
+
+            'mode': 'exam',
+            'track': 'gpx',
+          })
+          .eq('id', _historyRowId!)
+          .eq('uid', widget.uid);
+
+      _historyFinished = true;
+
+      debugPrint('✅ quiz_history (finish) updated id=$_historyRowId');
+    } catch (e) {
+      debugPrint('❌ quiz_history (finish) update failed: $e');
+    }
+  }
+
+  Future<void> _updateHistoryOnAbandon() async {
+    if (_historyFinished) return;
+    if (_historyRowId == null) return;
+
+    try {
+      final nowUtc = DateTime.now().toUtc().toIso8601String();
+
+      await _sb
+          .from('quiz_history')
+          .update({
+            'score': 0,
+            'correct_count': 0,
+            'total_questions': 0, // ✅ ton repère 0/0
+            'finished_at': nowUtc,
+            'completed_at': nowUtc,
+
+            'mode': 'exam',
+            'track': 'gpx',
+          })
+          .eq('id', _historyRowId!)
+          .eq('uid', widget.uid);
+
+      _historyFinished = true;
+      debugPrint('✅ quiz_history (abandon) updated id=$_historyRowId');
+    } catch (e) {
+      debugPrint('❌ quiz_history (abandon) update failed: $e');
+    }
+  }
+
+  Future<void> _saveAnswer({
+    required String question,
+    required String userAnswer,
+    required String correctAnswer,
+    required bool isCorrect,
+    required String difficulty,
+  }) async {
+    try {
+      final payload = <String, dynamic>{
+        'user_uid': widget.uid,
+        'email': widget.email,
+        'question': question,
+        'user_answer': userAnswer,
+        'correct_answer': correctAnswer,
+        'is_correct': isCorrect,
+        'score': _score,
+        'difficulty': difficulty,
+        'created_at': DateTime.now().toUtc().toIso8601String(),
+
+        // 🔥 si tu ajoutes cette colonne dans la table :
+        // 'history_id': _historyRowId,
+      };
+
+      await _sb.from('quiz_culture_generale_cinema_pages').insert(payload);
+    } catch (e, st) {
+      debugPrint('❌ quiz_culture_generale_cinema_pages insert failed: $e');
+      debugPrint('STACK: $st');
+    }
+  }
+
+  Future<void> _playAnswerSfx(bool good) async {
+    try {
+      HapticFeedback.mediumImpact();
+      final AudioPlayer p = good ? _goodSfx : _badSfx;
+      await p.stop();
+      await p.setSource(
+        AssetSource(good ? 'sfx/correct_answer.mp3' : 'sfx/wrong_answer.mp3'),
+      );
+      await p.resume();
+    } catch (_) {}
+  }
+
+  // ===========================================================================
+  // REPORT (signalement question)
+  // ===========================================================================
+
+  QuizQuestion? get _currentQuestion => _cache[_index];
+
+  Future<void> _insertReportCultureGenerale({
+    required QuizQuestion q,
+    required String reportType, // 'bug' | 'probleme' | 'autre'
+    required String message,
+  }) async {
+    final payload = <String, dynamic>{
+      'created_at': DateTime.now().toUtc().toIso8601String(),
+      'user_uid': widget.uid,
+      'email': widget.email,
+      'question_id': q.id,
+      'module': q.module,
+      'category': q.category,
+      'difficulty': q.difficulty,
+      'question': q.question,
+      'options': q.options,
+      'answer': q.answer,
+      'explanation': q.explanation,
+      'sub': q.sub,
+      'report_type': reportType,
+      'message': message,
+      'page': QuizCultureGeneraleCinema.routeName,
+      'status': 'new',
+    };
+
+    await _sb.from('report_culture_generale').insert(payload);
+  }
+
+  Future<void> _openReportDialog({required bool isDark}) async {
+    final q = _currentQuestion;
+    if (!_hasQuiz || q == null) {
+      if (!mounted) return;
+      AppNotifier.warning(
+        context,
+        title: 'Question indisponible',
+        message: 'Question indisponible pour le moment.',
+      );
+      return;
+    }
+
+    final textCol = isDark ? _opa(Colors.white, .92) : _Brand.textDark;
+    final subCol = isDark
+        ? _opa(Colors.white, .72)
+        : _opa(_Brand.textDark, .72);
+    final card = isDark ? _opa(Colors.white, .08) : _Brand.white;
+    final border = isDark ? _opa(Colors.white, .12) : _opa(Colors.black, .08);
+
+    await showDialog<void>(
+      context: context,
+      barrierDismissible: true,
+      builder: (ctx) {
+        String? type; // bug/probleme/autre
+        final msgCtrl = TextEditingController();
+        bool sending = false;
+        bool sent = false;
+
+        Future<void> onSend(StateSetter setState) async {
+          final t = type;
+          final m = msgCtrl.text.trim();
+          if (t == null) {
+            AppNotifier.warning(
+              context,
+              title: 'Type de signalement requis',
+              message: 'Choisis un type de signalement.',
+            );
+            return;
+          }
+          if (m.isEmpty) {
+            AppNotifier.warning(
+              context,
+              title: 'Description requise',
+              message: 'Explique rapidement le problème.',
+            );
+            return;
+          }
+
+          setState(() => sending = true);
+          try {
+            await _insertReportCultureGenerale(q: q, reportType: t, message: m);
+            setState(() {
+              sending = false;
+              sent = true;
+            });
+            HapticFeedback.lightImpact();
+            await Future<void>.delayed(const Duration(milliseconds: 700));
+            if (Navigator.of(ctx).canPop()) Navigator.of(ctx).pop();
+            if (!mounted) return;
+            AppNotifier.success(
+              context,
+              title: 'Signalement envoyé',
+              message: 'Merci !',
+            );
+          } catch (e) {
+            setState(() => sending = false);
+            debugPrint('❌ report insert failed: $e');
+            if (!mounted) return;
+            AppNotifier.error(
+              context,
+              title: 'Erreur lors de l\'envoi',
+              message: 'Réessaie plus tard.',
+            );
+          }
+        }
+
+        InputDecoration deco(String label, {String? hint}) => InputDecoration(
+          labelText: label,
+          hintText: hint,
+          labelStyle: TextStyle(color: subCol, fontWeight: FontWeight.w700),
+          hintStyle: TextStyle(color: subCol),
+          enabledBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(14),
+            borderSide: BorderSide(color: border),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(14),
+            borderSide: BorderSide(
+              color: isDark ? _Brand.white : _Brand.accent,
+            ),
+          ),
+          filled: true,
+          fillColor: isDark ? _opa(Colors.white, .06) : _opa(Colors.black, .03),
+          contentPadding: const EdgeInsets.symmetric(
+            horizontal: 14,
+            vertical: 12,
+          ),
+        );
+
+        return StatefulBuilder(
+          builder: (ctx, setState) {
+            return Dialog(
+              backgroundColor: card,
+              insetPadding: const EdgeInsets.symmetric(
+                horizontal: 18,
+                vertical: 18,
+              ),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(22),
+              ),
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(22),
+                  border: Border.all(color: border),
+                ),
+                padding: const EdgeInsets.all(16),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.flag_rounded,
+                          color: isDark ? _Brand.white : _Brand.accent,
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            'Signaler cette question',
+                            style: _Brand.option(
+                              context,
+                            ).copyWith(color: textCol),
+                          ),
+                        ),
+                        IconButton(
+                          onPressed: () => Navigator.of(ctx).pop(),
+                          icon: Icon(Icons.close_rounded, color: subCol),
+                          tooltip: 'Fermer',
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 8),
+
+                    // Champs pré-remplis (read-only)
+                    Row(
+                      children: [
+                        Expanded(
+                          child: TextFormField(
+                            initialValue: q.id.toString(),
+                            readOnly: true,
+                            decoration: deco('ID question'),
+                            style: TextStyle(
+                              color: textCol,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: TextFormField(
+                            initialValue: q.difficulty,
+                            readOnly: true,
+                            decoration: deco('Difficulté'),
+                            style: TextStyle(
+                              color: textCol,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 10),
+                    TextFormField(
+                      initialValue: q.category,
+                      readOnly: true,
+                      decoration: deco('Catégorie'),
+                      style: TextStyle(
+                        color: textCol,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                    const SizedBox(height: 10),
+
+                    DropdownButtonFormField<String>(
+                      initialValue: type,
+                      decoration: deco('Type de signalement', hint: 'Choisir…'),
+                      dropdownColor: card,
+                      iconEnabledColor: subCol,
+                      items: const [
+                        DropdownMenuItem(value: 'bug', child: Text('Bug')),
+                        DropdownMenuItem(
+                          value: 'probleme',
+                          child: Text('Problème'),
+                        ),
+                        DropdownMenuItem(value: 'autre', child: Text('Autre')),
+                      ],
+                      onChanged: (v) => setState(() => type = v),
+                    ),
+
+                    AnimatedSwitcher(
+                      duration: const Duration(milliseconds: 180),
+                      child: (type == null)
+                          ? const SizedBox(height: 0, key: ValueKey('no_msg'))
+                          : Padding(
+                              key: const ValueKey('msg'),
+                              padding: const EdgeInsets.only(top: 10),
+                              child: TextField(
+                                controller: msgCtrl,
+                                minLines: 3,
+                                maxLines: 6,
+                                decoration: deco(
+                                  'Explique le souci',
+                                  hint:
+                                      'Ex: faute, réponse incorrecte, doublon…',
+                                ),
+                                style: TextStyle(
+                                  color: textCol,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                            ),
+                    ),
+
+                    const SizedBox(height: 14),
+                    SizedBox(
+                      height: 50,
+                      child: ElevatedButton(
+                        onPressed: sending || sent
+                            ? null
+                            : () => onSend(setState),
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: isDark
+                              ? _Brand.white
+                              : _Brand.accent,
+                          foregroundColor: isDark ? Colors.black : Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          elevation: 0,
+                        ),
+                        child: AnimatedSwitcher(
+                          duration: const Duration(milliseconds: 200),
+                          child: sent
+                              ? const Icon(
+                                  Icons.check_rounded,
+                                  key: ValueKey('ok'),
+                                )
+                              : sending
+                              ? const SizedBox(
+                                  key: ValueKey('loading'),
+                                  height: 18,
+                                  width: 18,
+                                  child: CircularProgressIndicator(
+                                    strokeWidth: 2,
+                                  ),
+                                )
+                              : Text(
+                                  'Envoyer',
+                                  key: const ValueKey('send'),
+                                  style: _Brand.option(context).copyWith(
+                                    color: isDark ? Colors.black : Colors.white,
+                                    fontSize: 16,
+                                  ),
+                                ),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
+        );
+      },
+    );
+  }
+
+  // ===========================================================================
   // UI
-  // ================================================================
+  // ===========================================================================
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<ThemeMode>(
@@ -756,14 +1346,27 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
         final textCol = isDark ? Colors.white : _Brand.textDark;
         final base = isDark ? ThemeData.dark() : ThemeData.light();
 
+        final overlay = SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          systemNavigationBarColor: Colors.transparent,
+          systemNavigationBarDividerColor: Colors.transparent,
+          statusBarIconBrightness: isDark ? Brightness.light : Brightness.dark,
+          systemNavigationBarIconBrightness: isDark
+              ? Brightness.light
+              : Brightness.dark,
+          statusBarBrightness: isDark ? Brightness.dark : Brightness.light,
+        );
+
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+
+        final totalSafe = _total <= 0 ? 1 : _total;
+        final double topInset =
+            MediaQuery.of(context).padding.top + kToolbarHeight;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
-          value: isDark
-              ? SystemUiOverlayStyle.light
-              : SystemUiOverlayStyle.dark,
+          value: overlay,
           child: Theme(
             data: base.copyWith(
               scaffoldBackgroundColor: bg,
@@ -776,233 +1379,251 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
                 surface: bg,
               ),
             ),
-            child: Scaffold(
-              backgroundColor: bg,
-              appBar: AppBar(
-                backgroundColor: Colors.transparent,
-                elevation: 0,
-                scrolledUnderElevation: 0,
-                leading: IconButton(
-                  icon: Icon(Icons.close_rounded, color: textCol),
-                  onPressed: () => Navigator.maybePop(context),
-                  tooltip: 'Fermer',
+            child: WillPopScope(
+              onWillPop: () async {
+                if (_hasQuiz && !_historyFinished) {
+                  await _updateHistoryOnAbandon();
+                }
+                return true;
+              },
+              child: Scaffold(
+                backgroundColor: bg,
+                extendBody: true,
+                extendBodyBehindAppBar: true,
+                appBar: AppBar(
+                  backgroundColor: Colors.transparent,
+                  elevation: 0,
+                  scrolledUnderElevation: 0,
+                  leading: IconButton(
+                    icon: Icon(Icons.close_rounded, color: textCol),
+                    onPressed: () async {
+                      if (_hasQuiz && !_historyFinished) {
+                        await _updateHistoryOnAbandon();
+                      }
+                      if (mounted) Navigator.maybePop(context);
+                    },
+                    tooltip: 'Fermer',
+                  ),
+                  actions: [
+                    IconButton(
+                      tooltip: 'Signaler',
+                      onPressed: _hasQuiz
+                          ? () => _openReportDialog(isDark: isDark)
+                          : null,
+                      icon: Icon(
+                        Icons.flag_outlined,
+                        color: _hasQuiz ? textCol : _opa(textCol, .35),
+                      ),
+                    ),
+                    const SizedBox(width: 6),
+                  ],
                 ),
-              ),
-              body: SafeArea(
-                top: false,
-                child: LayoutBuilder(
-                  builder: (context, viewport) {
-                    final double animSize = (viewport.maxWidth * 0.56).clamp(
-                      140.0,
-                      240.0,
-                    );
 
-                    return Stack(
-                      clipBehavior: Clip.none,
-                      children: [
-                        Column(
-                          children: [
-                            Padding(
-                              padding: const EdgeInsets.fromLTRB(20, 0, 20, 8),
-                              child: _TopProgressBar(
-                                index: _qsSafeLength == 0
-                                    ? 0
-                                    : _index.clamp(0, _qs.length - 1),
-                                total: _qsSafeLength == 0 ? 1 : _qs.length,
-                                accent: isDark ? _Brand.white : _Brand.accent,
-                              ),
-                            ),
-                            Expanded(
-                              child: PageView.builder(
-                                controller: _page,
-                                physics: const NeverScrollableScrollPhysics(),
-                                itemCount: _qsSafeLength == 0 ? 1 : _qs.length,
-                                itemBuilder: (_, i) {
-                                  if (_qsSafeLength == 0) {
-                                    return Center(
-                                      child: _loadingQuiz
-                                          ? const CircularProgressIndicator()
-                                          : const Text(
-                                              'Sélectionne une difficulté pour commencer.',
-                                            ),
-                                    );
-                                  }
+                // ✅ ton UI inchangé dessous
+                body: SafeArea(
+                  top: false,
+                  child: LayoutBuilder(
+                    builder: (context, viewport) {
+                      final double animSize = (viewport.maxWidth * 0.56).clamp(
+                        140.0,
+                        240.0,
+                      );
 
-                                  final q = _qs[i];
-                                  final opts = _opts[i];
-                                  final bool animVisible =
-                                      i == _index && _validated;
+                      return Stack(
+                        clipBehavior: Clip.none,
+                        children: [
+                          Column(
+                            children: [
+                              SizedBox(height: topInset),
 
-                                  final double bottomInsetForThisPage =
-                                      (animVisible ? animSize : 0) +
-                                      bottomBarReserved;
-
-                                  return Padding(
-                                    padding: const EdgeInsets.fromLTRB(
-                                      20,
-                                      8,
-                                      20,
-                                      0,
-                                    ),
-                                    child: KeyedSubtree(
-                                      key: ValueKey(
-                                        'page_${i}_${animVisible}_${_isCorrect}_${_currentChoice ?? ''}',
-                                      ),
-                                      child: _QuestionCard(
-                                        question: q,
-                                        options: opts,
-                                        selected: i == _index
-                                            ? _currentChoice
-                                            : null,
-                                        onSelect: _select,
-                                        locked: _validated,
-                                        showOutcome: animVisible,
-                                        isCorrect: _isCorrect,
-                                        bottomSafeInset: bottomInsetForThisPage,
-                                      ),
-                                    ),
-                                  );
-                                },
-                              ),
-                            ),
-                            SafeArea(
-                              top: false,
-                              minimum: const EdgeInsets.fromLTRB(20, 8, 20, 16),
-                              child: Row(
-                                children: [
-                                  Expanded(
-                                    child: SizedBox(
-                                      height: kButtonHeight,
-                                      child: _PrimaryButton(
-                                        label: !_validated
-                                            ? 'Valider'
-                                            : 'Suivant',
-                                        onTap:
-                                            (_qsSafeLength == 0 || _loadingQuiz)
-                                            ? null
-                                            : (!_validated
-                                                  ? (_currentChoice == null
-                                                        ? null
-                                                        : _validate)
-                                                  : _next),
-                                      ),
-                                    ),
-                                  ),
-                                  if (_qsSafeLength != 0) ...[
-                                    const SizedBox(width: 12),
-                                    SizedBox(
-                                      height: kButtonHeight,
-                                      child: _DangerButton(
-                                        label: 'Mettre fin',
-                                        onTap: _endQuizNow,
-                                      ),
-                                    ),
-                                  ],
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-
-                        if (_validated)
-                          Positioned(
-                            left: 0,
-                            right: 0,
-                            bottom: bottomBarReserved,
-                            child: IgnorePointer(
-                              child: SizedBox(
-                                height: animSize,
-                                child: Center(
-                                  child: _FeedbackStrip(
-                                    controller: _pulseCtrl,
-                                    good: _isCorrect,
-                                  ),
+                              Padding(
+                                padding: const EdgeInsets.fromLTRB(
+                                  20,
+                                  0,
+                                  20,
+                                  8,
+                                ),
+                                child: _TopProgressBar(
+                                  index: _hasQuiz ? _index : 0,
+                                  total: totalSafe,
+                                  accent: isDark ? _Brand.white : _Brand.accent,
                                 ),
                               ),
-                            ),
-                          ),
+                              Expanded(
+                                child: PageView.builder(
+                                  controller: _page,
+                                  physics: const NeverScrollableScrollPhysics(),
+                                  itemCount: _hasQuiz ? totalSafe : 1,
+                                  itemBuilder: (_, i) {
+                                    if (!_hasQuiz) {
+                                      return Center(
+                                        child: _loading
+                                            ? const CircularProgressIndicator()
+                                            : const Text(
+                                                'Sélectionne une difficulté pour commencer.',
+                                              ),
+                                      );
+                                    }
 
-                        // ✅ Choix difficulté UNIQUEMENT après l'intro
-                        if (_showSplash && !_showIntro)
-                          _DifficultySplash(
-                            fade: _splashFade,
-                            isDark: isDark,
-                            selected: _selectedDifficulty,
-                            onSelect: (d) => setState(() {
-                              _selectedDifficulty = d;
-                              _mixMode = false;
-                            }),
-                            onStart: () => _startQuiz(mix: false),
-                            onStartRandom: () => _startQuiz(mix: true),
-                          ),
+                                    final q = _cache[i];
+                                    final opts = _optsCache[i];
 
-                        // ✅ WAITING OVERLAY PRO
-                        if (_loadingQuiz)
-                          Positioned.fill(
-                            child: Container(
-                              color: Colors.black.withAlpha(90),
-                              child: Center(
-                                child: Container(
-                                  padding: const EdgeInsets.fromLTRB(
-                                    18,
-                                    16,
-                                    18,
-                                    14,
-                                  ),
-                                  decoration: BoxDecoration(
-                                    color:
-                                        (isDark ? Colors.white : Colors.black)
-                                            .withAlpha(22),
-                                    borderRadius: BorderRadius.circular(22),
-                                    border: Border.all(
-                                      color: Colors.white.withAlpha(
-                                        isDark ? 55 : 35,
+                                    final bool animVisible =
+                                        i == _index && _validated;
+
+                                    final double bottomInsetForThisPage =
+                                        (animVisible ? animSize : 0) +
+                                        bottomBarReserved;
+
+                                    if (q == null || opts == null) {
+                                      _requestEnsure(i);
+                                      return Center(
+                                        child: Column(
+                                          mainAxisSize: MainAxisSize.min,
+                                          children: [
+                                            const CircularProgressIndicator(),
+                                            const SizedBox(height: 12),
+                                            Text(
+                                              'Chargement des questions…',
+                                              style: TextStyle(
+                                                color: textCol.withAlpha(200),
+                                                fontWeight: FontWeight.w600,
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      );
+                                    }
+
+                                    return Padding(
+                                      padding: const EdgeInsets.fromLTRB(
+                                        20,
+                                        8,
+                                        20,
+                                        0,
+                                      ),
+                                      child: KeyedSubtree(
+                                        key: ValueKey(
+                                          'page_${i}_${animVisible}_${_isCorrect}_${_currentChoice ?? ''}',
+                                        ),
+                                        child: _QuestionCard(
+                                          question: q,
+                                          options: opts,
+                                          selected: i == _index
+                                              ? _currentChoice
+                                              : null,
+                                          onSelect: _select,
+                                          locked: _validated,
+                                          showOutcome: animVisible,
+                                          isCorrect: _isCorrect,
+                                          bottomSafeInset:
+                                              bottomInsetForThisPage,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+                              ),
+                              SafeArea(
+                                top: false,
+                                minimum: const EdgeInsets.fromLTRB(
+                                  20,
+                                  8,
+                                  20,
+                                  16,
+                                ),
+                                child: Row(
+                                  children: [
+                                    Expanded(
+                                      child: SizedBox(
+                                        height: kButtonHeight,
+                                        child: _PrimaryButton(
+                                          label: !_validated
+                                              ? 'Valider'
+                                              : (_index == totalSafe - 1
+                                                    ? 'Terminer'
+                                                    : 'Suivant'),
+                                          onTap: !_hasQuiz
+                                              ? null
+                                              : (!_validated
+                                                    ? (_currentChoice == null
+                                                          ? null
+                                                          : _validate)
+                                                    : _next),
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  child: Column(
-                                    mainAxisSize: MainAxisSize.min,
-                                    children: [
-                                      const SizedBox(
-                                        width: 44,
-                                        height: 44,
-                                        child: CircularProgressIndicator(
-                                          strokeWidth: 4,
-                                        ),
-                                      ),
-                                      const SizedBox(height: 12),
-                                      Text(
-                                        'Préparation du quiz…',
-                                        style: TextStyle(
-                                          fontFamily: 'InstrumentSans',
-                                          fontWeight: FontWeight.w900,
-                                          fontSize: 16,
-                                          color: Colors.white.withAlpha(245),
-                                          decoration: TextDecoration.none,
-                                        ),
-                                      ),
-                                      const SizedBox(height: 6),
-                                      Text(
-                                        'Chargement d’un lot de questions',
-                                        textAlign: TextAlign.center,
-                                        style: TextStyle(
-                                          fontFamily: 'InstrumentSans',
-                                          fontWeight: FontWeight.w600,
-                                          fontSize: 13,
-                                          height: 1.25,
-                                          color: Colors.white.withAlpha(200),
-                                          decoration: TextDecoration.none,
+                                    if (_hasQuiz) ...[
+                                      const SizedBox(width: 12),
+                                      SizedBox(
+                                        height: kButtonHeight,
+                                        child: _DangerButton(
+                                          label: 'Mettre fin',
+                                          onTap: _endQuizNow,
                                         ),
                                       ),
                                     ],
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+
+                          if (_validated)
+                            Positioned(
+                              left: 0,
+                              right: 0,
+                              bottom: bottomBarReserved,
+                              child: IgnorePointer(
+                                child: SizedBox(
+                                  height: animSize,
+                                  child: Center(
+                                    child: _FeedbackStrip(
+                                      controller: _pulseCtrl,
+                                      good: _isCorrect,
+                                    ),
                                   ),
                                 ),
                               ),
                             ),
-                          ),
-                      ],
-                    );
-                  },
+
+                          if (_showSplash)
+                            _DifficultySplash(
+                              fade: _splashFade,
+                              isDark: isDark,
+                              selected: _selectedDifficulty,
+                              onSelect: (d) => setState(() {
+                                _selectedDifficulty = d;
+                                _mixMode = false;
+                              }),
+                              onStart: () => _startQuiz(mix: false),
+                              onStartRandom: () => _startQuiz(mix: true),
+                            ),
+
+                          if (_loading)
+                            Positioned.fill(
+                              child: _LoadingOverlay(
+                                isDark: isDark,
+                                total: _total,
+                                animated: _animatedCount,
+                                loaded: _loadedCount,
+                                readyTarget: math.min(
+                                  23,
+                                  (_total <= 0 ? 23 : _total),
+                                ),
+                                onRetry: () {
+                                  if (!_hasQuiz) {
+                                    unawaited(_startQuiz(mix: _mixMode));
+                                    return;
+                                  }
+                                  unawaited(_ensureBatchForQuizIndex(_index));
+                                },
+                              ),
+                            ),
+                        ],
+                      );
+                    },
+                  ),
                 ),
               ),
             ),
@@ -1012,9 +1633,9 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
     );
   }
 
-  // ================================================================
-  // RESULT (inchangé)
-  // ================================================================
+  // ===========================================================================
+  // RESULT DIALOG (inchangé)
+  // ===========================================================================
   void _openResultDialog(int score, int total) {
     final pct = (score / total * 100).round();
 
@@ -1022,7 +1643,7 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1088,8 +1709,9 @@ class _QuizCultureGeneraleCinemaState extends State<QuizCultureGeneraleCinema>
 }
 
 // ============================================================================
-// WIDGETS
+// WIDGETS (UI inchangée)
 // ============================================================================
+
 class _TopProgressBar extends StatelessWidget {
   final int index, total;
   final Color accent;
@@ -1112,7 +1734,7 @@ class _TopProgressBar extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          '${index + 1}/$totalSafe',
+          'Question ${index + 1}',
           style: _Brand.small(
             context,
           ).copyWith(color: labelColor, fontWeight: FontWeight.w800),
@@ -1200,12 +1822,9 @@ class _QuestionCard extends StatelessWidget {
   final bool locked;
   final bool showOutcome;
   final bool isCorrect;
-
-  /// Marge basse à ajouter dans le scroll pour éviter toute coupe
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -1216,19 +1835,32 @@ class _QuestionCard extends StatelessWidget {
     this.bottomSafeInset = 0,
   });
 
+  bool _shouldShowSub(String? raw) {
+    final s = raw?.trim();
+    if (s == null || s.isEmpty) return false;
+
+    // Filtre les valeurs techniques/import JSON (ex: droit_justice_fr_quiz_json)
+    final lower = s.toLowerCase();
+    if (lower.contains('_quiz_json')) return false;
+    if (lower.endsWith('.json')) return false;
+
+    // Si tu veux être ultra strict et virer tout ce qui ressemble à un slug technique :
+    // if (s.contains('_')) return false;
+
+    return true;
+  }
+
   @override
   Widget build(BuildContext context) {
     final textCol = Theme.of(context).brightness == Brightness.dark
         ? Colors.white
         : _Brand.textDark;
 
+    final sub = question.sub?.trim();
+
     return SingleChildScrollView(
       physics: const BouncingScrollPhysics(),
-      padding: EdgeInsets.only(
-        top: 8,
-        // marge bas normale + réserve (animation + bouton)
-        bottom: 12 + bottomSafeInset,
-      ),
+      padding: EdgeInsets.only(top: 8, bottom: 12 + bottomSafeInset),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -1236,10 +1868,12 @@ class _QuestionCard extends StatelessWidget {
             question.question,
             style: _Brand.h1(context).copyWith(color: textCol),
           ),
-          if (question.sub != null) ...[
+
+          // ✅ Sous-titre uniquement si pertinent (et pas un tag technique)
+          if (_shouldShowSub(sub)) ...[
             const SizedBox(height: 6),
             Text(
-              question.sub!,
+              sub!, // safe car _shouldShowSub(sub) => sub non null & non vide
               style: TextStyle(
                 color: textCol.withAlpha(180),
                 fontWeight: FontWeight.w600,
@@ -1247,9 +1881,9 @@ class _QuestionCard extends StatelessWidget {
               ),
             ),
           ],
+
           const SizedBox(height: 16),
 
-          // Options
           ...options.map((o) {
             final isSel = selected == o;
             final correctShown = showOutcome && o == question.answer;
@@ -1268,7 +1902,6 @@ class _QuestionCard extends StatelessWidget {
             );
           }),
 
-          // Explication
           AnimatedSwitcher(
             duration: const Duration(milliseconds: 280),
             switchInCurve: Curves.easeOutCubic,
@@ -1364,7 +1997,6 @@ class _OptionTile extends StatelessWidget {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       curve: Curves.easeOutCubic,
-      // ⬇️ plus de height fixe !
       constraints: const BoxConstraints(minHeight: 64),
       decoration: BoxDecoration(
         color: bg(),
@@ -1383,14 +2015,12 @@ class _OptionTile extends StatelessWidget {
         onTap: locked ? null : onTap,
         borderRadius: BorderRadius.circular(22),
         child: Padding(
-          // ⬇️ padding vertical pour laisser respirer du texte multi-lignes
           padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 14),
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               dot(selected || correct || wrong),
               const SizedBox(width: 14),
-              // ⬇️ le texte peut prendre plusieurs lignes
               Expanded(
                 child: Text(
                   label,
@@ -1425,7 +2055,6 @@ class _OutcomeCard extends StatelessWidget {
     final icon = good ? Icons.check_circle_rounded : Icons.cancel_rounded;
 
     return Material(
-      // Bordure interne évitant toute “coupure”
       type: MaterialType.transparency,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(16),
@@ -1498,6 +2127,7 @@ class _PrimaryButton extends StatelessWidget {
   }
 }
 
+// Feedback widgets (identiques à ton fichier)
 class _FeedbackStrip extends StatelessWidget {
   final AnimationController controller;
   final bool good;
@@ -1509,7 +2139,6 @@ class _FeedbackStrip extends StatelessWidget {
     return LayoutBuilder(
       builder: (_, constraints) {
         final maxW = constraints.maxWidth;
-        // Taille dépend de la largeur du bloc, plus raisonnable
         final size = (maxW * 0.4).clamp(80.0, 160.0);
 
         return SizedBox(
@@ -1525,117 +2154,6 @@ class _FeedbackStrip extends StatelessWidget {
       },
     );
   }
-}
-
-class _FeedbackStrokeDraw extends StatelessWidget {
-  final AnimationController controller;
-  final bool good;
-  final double size;
-  const _FeedbackStrokeDraw({
-    required this.controller,
-    required this.good,
-    required this.size,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    final color = good ? _Brand.good : _Brand.bad;
-    return AnimatedBuilder(
-      animation: controller,
-      builder: (_, __) => CustomPaint(
-        size: Size.square(size),
-        painter: _StrokePainter(
-          t: CurvedAnimation(parent: controller, curve: Curves.easeOut).value,
-          color: color,
-          good: good,
-        ),
-      ),
-    );
-  }
-}
-
-class _StrokePainter extends CustomPainter {
-  final double t; // 0..1
-  final Color color;
-  final bool good;
-  _StrokePainter({required this.t, required this.color, required this.good});
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final stroke = Paint()
-      ..color = color
-      ..style = PaintingStyle.stroke
-      ..strokeWidth = size.width * .06
-      ..strokeCap = StrokeCap.round
-      ..isAntiAlias = true;
-
-    final r = size.width * .38;
-    final c = Offset(size.width / 2, size.height / 2);
-
-    // 1) Cercle (0 → 0.55 du temps)
-    final tCircle = (t / .55).clamp(0.0, 1.0);
-    if (tCircle > 0) {
-      final sweep = 2 * math.pi * tCircle;
-      canvas.drawArc(
-        Rect.fromCircle(center: c, radius: r),
-        -math.pi / 2,
-        sweep,
-        false,
-        stroke,
-      );
-    }
-
-    // 2) Symbole (0.55 → 1.0)
-    final tMark = ((t - .55) / .45).clamp(0.0, 1.0);
-    if (tMark <= 0) return;
-
-    if (good) {
-      // Check ✓
-      final p = Path();
-      final a = Offset(c.dx - r * .6, c.dy + r * .05);
-      final b = Offset(c.dx - r * .15, c.dy + r * .45);
-      final d = Offset(c.dx + r * .55, c.dy - r * .35);
-      p.moveTo(a.dx, a.dy);
-      p.lineTo(b.dx, b.dy);
-      p.lineTo(d.dx, d.dy);
-
-      _drawPartialPath(canvas, p, stroke, tMark);
-    } else {
-      // X : deux traits se dessinent
-      final p1 = Path()
-        ..moveTo(c.dx - r * .5, c.dy - r * .5)
-        ..lineTo(c.dx + r * .5, c.dy + r * .5);
-      final p2 = Path()
-        ..moveTo(c.dx + r * .5, c.dy - r * .5)
-        ..lineTo(c.dx - r * .5, c.dy + r * .5);
-
-      final half = (tMark * 2).clamp(0.0, 1.0);
-      _drawPartialPath(canvas, p1, stroke, half);
-      if (tMark > .5) {
-        final second = ((tMark - .5) * 2).clamp(0.0, 1.0);
-        _drawPartialPath(canvas, p2, stroke, second);
-      }
-    }
-  }
-
-  void _drawPartialPath(Canvas canvas, Path path, Paint paint, double t) {
-    final metrics = path.computeMetrics().toList();
-    if (metrics.isEmpty) return;
-    double remain = t;
-    final out = Path();
-    for (final m in metrics) {
-      final len = m.length;
-      final take = (remain.clamp(0.0, 1.0)) * len;
-      out.addPath(m.extractPath(0, take), Offset.zero);
-      remain -= 1;
-      if (remain <= 0) break;
-    }
-    canvas.drawPath(out, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant _StrokePainter old) =>
-      old.t != t || old.color != color || old.good != good;
 }
 
 class _FeedbackSparkles extends StatelessWidget {
@@ -1656,20 +2174,15 @@ class _FeedbackSparkles extends StatelessWidget {
     return AnimatedBuilder(
       animation: controller,
       builder: (_, __) {
-        // Normalisation 0 → 1
         final t = controller.value.clamp(0.0, 1.0);
-
         final icon = good ? Icons.check_rounded : Icons.close_rounded;
         final iconSize = size * .30;
 
         const n = 8;
         final maxR = size * .58;
-
-        // ⭐⭐⭐ MASQUER LES ÉTOILES SI t == 1.0 ⭐⭐⭐
         final showStars = t < 0.999;
 
         final kids = <Widget>[];
-
         if (showStars) {
           for (var i = 0; i < n; i++) {
             final ang = (i / n) * 2 * math.pi;
@@ -1698,7 +2211,7 @@ class _FeedbackSparkles extends StatelessWidget {
         return Stack(
           alignment: Alignment.center,
           children: [
-            ...kids, // Étoiles si showStars == true
+            ...kids,
             Transform.scale(
               scale: 0.86 + t * 0.24,
               child: Icon(icon, size: iconSize, color: base),
@@ -1738,10 +2251,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -1751,6 +2265,7 @@ class _StarPainter extends CustomPainter {
   bool shouldRepaint(covariant _StarPainter old) => old.color != color;
 }
 
+// Result card (identique à ton fichier)
 class _ResultCard extends StatefulWidget {
   final int score;
   final int total;
@@ -1855,14 +2370,12 @@ class _ResultCardState extends State<_ResultCard>
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  // Anneau animé infini autour de l'icône
                   SizedBox(
                     width: 120,
                     height: 120,
                     child: Stack(
                       alignment: Alignment.center,
                       children: [
-                        // Cercle d'arrière-plan
                         Container(
                           width: 96,
                           height: 96,
@@ -1871,9 +2384,7 @@ class _ResultCardState extends State<_ResultCard>
                             color: accent.withValues(alpha: .12),
                           ),
                         ),
-                        // Icône
                         Icon(icon, color: accent, size: 44),
-                        // Anneau 1 (spin)
                         AnimatedBuilder(
                           animation: spinCtrl,
                           builder: (_, __) => Transform.rotate(
@@ -1883,7 +2394,7 @@ class _ResultCardState extends State<_ResultCard>
                               height: 108,
                               child: CircularProgressIndicator(
                                 strokeWidth: 8,
-                                value: null, // indéterminé = spin infini
+                                value: null,
                                 valueColor: AlwaysStoppedAnimation<Color>(
                                   accent,
                                 ),
@@ -1993,282 +2504,8 @@ class _ResultCardState extends State<_ResultCard>
 }
 
 // ============================================================================
-// SPLASH: Choix de difficulté — full-screen, sans flou, FR + bouton ALÉATOIRE
+// SPLASH (copié de ton fichier, inchangé)
 // ============================================================================
-class CinemaQuestionsIntroScreen extends StatefulWidget {
-  static const routeName = '/intro/cinema_questions';
-  const CinemaQuestionsIntroScreen({super.key});
-
-  @override
-  State<CinemaQuestionsIntroScreen> createState() =>
-      _CinemaQuestionsIntroScreenState();
-}
-
-class _CinemaQuestionsIntroScreenState extends State<CinemaQuestionsIntroScreen>
-    with TickerProviderStateMixin {
-  static const int kTotal = 617000;
-
-  late final AnimationController _bgCtrl = AnimationController(
-    vsync: this,
-    duration: const Duration(seconds: 8),
-  )..repeat(reverse: true);
-
-  late final AnimationController _countCtrl = AnimationController(
-    vsync: this,
-    duration: const Duration(milliseconds: 2600),
-  )..forward();
-
-  int _value = 0;
-
-  @override
-  void initState() {
-    super.initState();
-
-    _countCtrl.addListener(() {
-      if (!mounted) return; // ✅ important
-      final t = Curves.easeOutCubic.transform(_countCtrl.value);
-      final v = (kTotal * t).round();
-      if (v != _value) setState(() => _value = v);
-    });
-  }
-
-  @override
-  void dispose() {
-    _bgCtrl.dispose();
-    _countCtrl.dispose();
-    super.dispose();
-  }
-
-  String _format(int n) {
-    // Format FR simple: 617 000
-    final s = n.toString();
-    final buf = StringBuffer();
-    for (int i = 0; i < s.length; i++) {
-      final left = s.length - i;
-      buf.write(s[i]);
-      if (left > 1 && left % 3 == 1) buf.write(' ');
-    }
-    return buf.toString();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final isDark = Theme.of(context).brightness == Brightness.dark;
-
-    final bg1 = isDark ? const Color(0xFF0B0C10) : const Color(0xFFF7F8FA);
-    final bg2 = isDark ? const Color(0xFF11131A) : const Color(0xFFFFFFFF);
-    final textMain = isDark ? Colors.white : const Color(0xFF212529);
-    final sub = isDark ? Colors.white.withAlpha(210) : textMain.withAlpha(190);
-
-    return Scaffold(
-      body: Stack(
-        children: [
-          // Fond animé
-          AnimatedBuilder(
-            animation: _bgCtrl,
-            builder: (_, __) {
-              final t = _bgCtrl.value;
-              final a1 = Alignment.lerp(
-                const Alignment(-0.9, -1.0),
-                const Alignment(0.6, -0.6),
-                t,
-              )!;
-              final a2 = Alignment.lerp(
-                const Alignment(0.9, 1.0),
-                const Alignment(-0.6, 0.6),
-                t,
-              )!;
-              return Container(
-                decoration: BoxDecoration(
-                  gradient: LinearGradient(
-                    begin: a1,
-                    end: a2,
-                    colors: [bg1, bg2],
-                  ),
-                ),
-              );
-            },
-          ),
-
-          // Halos
-          _Halo(
-            color: const Color(0xFF6C63FF),
-            size: 260,
-            dx: -140,
-            dy: -160,
-            ctrl: _bgCtrl,
-            strength: isDark ? .18 : .14,
-          ),
-          _Halo(
-            color: const Color(0xFF27C93F),
-            size: 220,
-            dx: 120,
-            dy: 260,
-            ctrl: _bgCtrl,
-            strength: isDark ? .15 : .12,
-          ),
-          _Halo(
-            color: const Color(0xFFFF3B30),
-            size: 180,
-            dx: -10,
-            dy: 120,
-            ctrl: _bgCtrl,
-            strength: isDark ? .12 : .10,
-          ),
-
-          SafeArea(
-            child: Center(
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 520),
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(22, 18, 22, 22),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      const SizedBox(height: 8),
-                      Text(
-                        'Culture générale • Cinéma',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'InstrumentSans',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w800,
-                          letterSpacing: .4,
-                          color: sub,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                      const SizedBox(height: 12),
-                      Text(
-                        'Une base gigantesque\nde questions t’attend 🎬',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'InstrumentSans',
-                          fontSize: 26,
-                          height: 1.15,
-                          fontWeight: FontWeight.w900,
-                          color: textMain,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-                      const SizedBox(height: 14),
-
-                      // Compteur
-                      Container(
-                        padding: const EdgeInsets.symmetric(
-                          horizontal: 18,
-                          vertical: 16,
-                        ),
-                        decoration: BoxDecoration(
-                          color: (isDark ? Colors.white : Colors.black)
-                              .withAlpha(isDark ? 18 : 10),
-                          borderRadius: BorderRadius.circular(22),
-                          border: Border.all(
-                            color: (isDark ? Colors.white : Colors.black)
-                                .withAlpha(40),
-                          ),
-                        ),
-                        child: Column(
-                          children: [
-                            Text(
-                              _format(_value),
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontSize: 42,
-                                fontWeight: FontWeight.w900,
-                                letterSpacing: .2,
-                                color: isDark
-                                    ? Colors.white
-                                    : const Color(0xFF212529),
-                                decoration: TextDecoration.none,
-                              ),
-                            ),
-                            const SizedBox(height: 6),
-                            Text(
-                              'questions de culture générale\nsur le cinéma',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontFamily: 'InstrumentSans',
-                                fontSize: 14,
-                                fontWeight: FontWeight.w700,
-                                color: sub,
-                                height: 1.25,
-                                decoration: TextDecoration.none,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-
-                      const SizedBox(height: 18),
-
-                      Text(
-                        'Tu vas choisir ton niveau juste après.',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          fontFamily: 'InstrumentSans',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w600,
-                          color: sub,
-                          decoration: TextDecoration.none,
-                        ),
-                      ),
-
-                      const SizedBox(height: 18),
-
-                      SizedBox(
-                        height: 56,
-                        width: double.infinity,
-                        child: ElevatedButton(
-                          onPressed: () => Navigator.of(context).pop(true),
-                          style: ElevatedButton.styleFrom(
-                            elevation: 0,
-                            backgroundColor: isDark
-                                ? Colors.white
-                                : const Color(0xFF212529),
-                            foregroundColor: isDark
-                                ? Colors.black
-                                : Colors.white,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(28),
-                            ),
-                            textStyle: const TextStyle(
-                              fontFamily: 'InstrumentSans',
-                              fontWeight: FontWeight.w900,
-                              fontSize: 18,
-                              decoration: TextDecoration.none,
-                            ),
-                          ),
-                          child: const Text('Continuer'),
-                        ),
-                      ),
-
-                      const SizedBox(height: 10),
-                      TextButton(
-                        onPressed: () => Navigator.of(context).pop(false),
-                        child: Text(
-                          'Plus tard',
-                          style: TextStyle(
-                            fontFamily: 'InstrumentSans',
-                            fontWeight: FontWeight.w800,
-                            color: sub,
-                            decoration: TextDecoration.none,
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
-
 class _DifficultySplash extends StatefulWidget {
   final Animation<double> fade;
   final bool isDark;
@@ -2322,7 +2559,6 @@ class _DifficultySplashState extends State<_DifficultySplash>
         opacity: widget.fade,
         child: Stack(
           children: [
-            // Fond dégradé animé + halos doux
             Positioned.fill(
               child: _AnimatedBackground(ctrl: _bgCtrl, isDark: isDark),
             ),
@@ -2351,8 +2587,10 @@ class _DifficultySplashState extends State<_DifficultySplash>
               strength: isDark ? .12 : .10,
             ),
 
-            // Contenu
+            // ✅ MODIF: on ne protège plus le bas (zone geste),
+            // sinon ça crée un "padding" qui ressemble à une bande en bas.
             SafeArea(
+              bottom: false,
               child: Center(
                 child: ConstrainedBox(
                   constraints: const BoxConstraints(maxWidth: 460),
@@ -2380,15 +2618,14 @@ class _DifficultySplashState extends State<_DifficultySplash>
                           ),
                         ),
                         const SizedBox(height: 20),
-
-                        // Trois cartes
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
+
                             final children = [
                               _LevelCard(
                                 label: 'Facile',
@@ -2426,9 +2663,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );
@@ -2445,10 +2682,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                             }
                           },
                         ),
-
                         const SizedBox(height: 20),
-
-                        // Bouton Commencer
                         SizedBox(
                           height: 56,
                           width: double.infinity,
@@ -2479,10 +2713,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                             child: const Text('Commencer'),
                           ),
                         ),
-
                         const SizedBox(height: 10),
-
-                        // Bouton Aléatoire (mix 3 niveaux)
                         SizedBox(
                           height: 52,
                           width: double.infinity,
@@ -2641,7 +2872,7 @@ class _LevelCard extends StatelessWidget {
       animation: floatCtrl,
       builder: (_, __) {
         final t = ((floatCtrl.value + floatDelay) % 1.0);
-        final y = 2.0 * math.sin(2 * math.pi * t); // léger flottement
+        final y = 2.0 * math.sin(2 * math.pi * t);
         final scale = active ? 1.02 : 1.0;
 
         return Transform.translate(
@@ -2676,7 +2907,6 @@ class _LevelCard extends StatelessWidget {
                 ),
                 child: Row(
                   children: [
-                    // pastille
                     Container(
                       width: 48,
                       height: 48,
@@ -2695,7 +2925,6 @@ class _LevelCard extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(width: 14),
-                    // label
                     Expanded(
                       child: Text(
                         label,
@@ -2707,7 +2936,6 @@ class _LevelCard extends StatelessWidget {
                         ),
                       ),
                     ),
-                    // radio
                     Container(
                       width: 24,
                       height: 24,

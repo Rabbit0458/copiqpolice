@@ -108,16 +108,16 @@ class RisqueCauseAutruiPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : prévoit et réprime les risques causés à autrui.",
                 ),
               ]),
@@ -132,14 +132,14 @@ class RisqueCauseAutruiPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Obligation particulière de prudence ou de sécurité",
               ),
-              const _Paragraph("1) Imposée par la loi ou le règlement"),
-              const SizedBox(height: 8),
+              _Paragraph("1) Imposée par la loi ou le règlement"),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La source textuelle de l’obligation est une condition essentielle. "
                       "S’agissant du « règlement », ne sont retenus que les actes des autorités administratives "
@@ -147,93 +147,93 @@ class RisqueCauseAutruiPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: "(Cass. crim., 10 mai 2000)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Sont exclus notamment : un règlement intérieur d’entreprise, ou un arrêté préfectoral "
                       "déclarant un immeuble insalubre.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph("2) Obligation « particulière »"),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              _Paragraph("2) Obligation « particulière »"),
+              SizedBox(height: 8),
+              _Paragraph(
                 "Le texte ne définit pas précisément l’obligation particulière. La jurisprudence retient "
                 "des critères : règles objectives, précises et claires, ne laissant aucune place à une interprétation "
                 "subjective personnelle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple (CAA / CA) : obligation particulière = règle objective précise, claire, "
                         "ne permettant aucune part d’interprétation subjective personnelle ",
                   ),
                   TextSpan(
                     text: "(C.A. Grenoble, 19 février 1999)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Obligation particulière reconnue : prescription du ",
                   ),
                   TextSpan(
                     text: "Code de la route, article R. 414-4",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " imposant au conducteur de se porter suffisamment sur la gauche pour ne pas risquer "
                         "d’accrocher l’usager dépassé ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 23 juin 1999)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Exposition directe au risque"),
-              const _Paragraph(
+              _SubTitle("B) Exposition directe au risque"),
+              _Paragraph(
                 "1) Risque de mort, mutilation ou infirmité permanente",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Seules les mises en danger les plus graves sont incriminées : il doit s’agir d’un péril physique "
                 "d’extrême gravité. Le danger peut être individuel ou collectif, mais doit être potentiellement certain. "
                 "Si le risque n’est pas d’une gravité suffisante, le délit n’est pas constitué.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph(
+              _Paragraph(
                 "2) Risque direct et immédiat : lien de causalité",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le lien entre la violation de l’obligation et le risque doit être direct : "
                       "le comportement dangereux doit être la seule cause du risque (cause directe, exclusive et unique). "
@@ -241,92 +241,92 @@ class RisqueCauseAutruiPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: "(Cass. crim., 16 février 1999)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : mise en cause de la société TOTAL pour un pic de pollution ; "
                         "absence de risque de mort ou de blessures établi dans les termes du Code pénal ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 4 octobre 2005)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : la seule vitesse excessive ne suffit pas ; il faut un comportement "
                         "exposant autrui à un risque immédiat de mort ou blessures graves en plus du dépassement ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 décembre 2015)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les juges du fond apprécient concrètement la gravité du risque, ce qui explique des écarts "
                 "de jurisprudence selon les circonstances.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Délit non retenu : automobiliste à 200 km/h sur autoroute en journée, circulation fluide, "
                         "conditions atmosphériques et visibilité excellentes ",
                   ),
                   TextSpan(
                     text: "(C.A. Douai, 26 octobre 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Exemple",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Délit retenu : automobiliste roulant de nuit à 180 km/h en zone urbaine, "
                         "multiples déplacements droite/gauche ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 27 octobre 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "Exemple",
               ),
@@ -341,40 +341,40 @@ class RisqueCauseAutruiPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Violation manifestement délibérée d’une obligation",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le risque de mort ou de blessures graves est l’effet de la violation. Il importe peu que l’auteur "
                 "ait une vision précise des risques réellement encourus : l’élément moral tient à la conscience de "
                 "violer la norme de prudence ou de sécurité destinée à éviter le danger.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Lorsque la personne viole délibérément une obligation légale ou réglementaire, elle a "
                 "nécessairement conscience du risque créé pour autrui : il s’agit d’une faute délibérée.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’intention coupable est donc celle de violer la règle, et non celle de porter atteinte à l’intégrité "
                 "physique d’autrui.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’élément intentionnel résulte de la violation manifestement délibérée d’une obligation particulière "
                       "exposant autrui à un risque grave ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 1er juin 1999)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -402,80 +402,80 @@ class RisqueCauseAutruiPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit — "),
+                TextSpan(text: "Délit — "),
                 TextSpan(
                   text: "article 223-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : 1 an d’emprisonnement et 15 000 € d’amende.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 223-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les personnes morales peuvent être déclarées responsables pénalement des infractions définies "
                       "à l’article 223-1.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _Paragraph("Tentative : NON"),
-              const SizedBox(height: 8),
+              _SubTitle("Tentative & complicité"),
+              _Paragraph("Tentative : NON"),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Même si l’infraction est classée parmi les infractions non intentionnelles, elle n’exclut pas "
                         "la complicité ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 6 juin 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ". Exemple : complicité par instigation retenue pour un passager ordonnant à son chauffeur de franchir un feu rouge.",
                   ),
@@ -519,10 +519,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -587,7 +587,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -630,7 +630,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -692,7 +692,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -724,7 +724,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -737,7 +737,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

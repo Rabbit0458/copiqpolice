@@ -30,7 +30,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF00796B)
         : const Color(0xFF00695C);
@@ -73,8 +73,8 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 6),
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'La Constitution est la norme suprême de l’État : toutes les lois devraient lui être conformes. '
                   'Mais cette supériorité n’a de sens que si elle est accompagnée d’un mécanisme de contrôle. '
@@ -105,7 +105,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Dans la plupart des États modernes, la Constitution est considérée comme une norme '
                 'supérieure aux autres, notamment aux lois ordinaires. Mais cette supériorité ne se '
                 'manifeste pas de la même manière partout : tout dépend du type de Constitution adopté.',
@@ -162,13 +162,13 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'La manière dont on révise la Constitution dépend du type de régime : souple ou rigide. '
                 'Cette procédure révèle le degré de protection accordé au texte constitutionnel.',
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              SizedBox(height: 10),
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Dans un État à Constitution souple : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -179,7 +179,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                       '(même organe, même majorité, même procédure). Elle est donc facilement révisable.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Dans un État à Constitution rigide : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -191,7 +191,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                       'rendre la révision plus solennelle et plus difficile, afin de préserver la stabilité du texte.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _ExempleBox(
                 title: 'Exemple français',
                 bodySpans: [
@@ -218,13 +218,13 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Au-delà de la révision, se pose la question du respect quotidien de la Constitution par les lois. '
                 'Là encore, tout dépend du système adopté.',
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint.rich([
+              SizedBox(height: 10),
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Dans une Constitution souple : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -236,7 +236,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                       'La supériorité de la Constitution reste alors largement théorique.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Dans une Constitution rigide : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -248,7 +248,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                       'est dite inconstitutionnelle et devrait être écartée ou annulée.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph(
                 'Il devient alors indispensable de prévoir un mécanisme de contrôle pour constater '
                 'l’inconstitutionnalité et empêcher l’application de la loi contraire. Sans cela, '
@@ -270,7 +270,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'L’exercice réel du contrôle suppose la saisine d’organes juridictionnels compétents. '
                 'Deux grands modèles existent classiquement : le contrôle par voie d’exception et le '
                 'contrôle par une juridiction constitutionnelle spécialisée. En France, s’ajoute un '
@@ -288,7 +288,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Dans ce système (emblématique des États-Unis), n’importe quel juge ordinaire peut, '
                 'à l’occasion d’un litige, vérifier la conformité de la loi qu’il doit appliquer à la Constitution. '
                 'S’il estime que la loi est contraire à la Constitution, il refuse simplement de l’appliquer au litige en cours.',
@@ -393,7 +393,7 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'La procédure se déroule en trois grandes étapes, encadrées par une loi organique et un décret de 2010 :',
               ),
               const SizedBox(height: 6),
@@ -459,22 +459,22 @@ class ControleConstitutionnaliteLoisPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Pour le policier, la Constitution n’est pas un texte abstrait réservé aux juristes : '
                 'elle irrigue l’ensemble des lois qu’il applique au quotidien. Savoir qu’une mesure peut '
                 'être contrôlée, censurée ou abrogée en cas d’atteinte excessive aux droits fondamentaux '
                 'est un repère essentiel dans l’exercice de ses missions.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Toujours garder à l’esprit la hiérarchie des normes : la loi n’est valable '
                       'que si elle respecte la Constitution et les textes qui en font partie intégrante.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Les mécanismes de contrôle (Conseil constitutionnel, QPC, conventions internationales) '
@@ -518,10 +518,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -564,7 +564,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -598,7 +598,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -651,7 +651,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -676,7 +676,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF00251A).withOpacity(.95),
+                    : const Color(0xFF00251A).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -711,7 +711,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -724,7 +724,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

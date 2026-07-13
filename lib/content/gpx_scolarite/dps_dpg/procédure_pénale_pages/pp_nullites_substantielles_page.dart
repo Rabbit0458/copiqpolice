@@ -14,7 +14,7 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final Color cardLight = isDark
         ? const Color(0xFF424242)
@@ -74,8 +74,8 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
 
           const _SubTitle('1.2 – Les nullités substantielles'),
 
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'Les nullités substantielles interviennent lorsque la méconnaissance d’une formalité importante, '
                   'prévue par une disposition de procédure pénale, porte atteinte aux intérêts de la partie qu’elle concerne. '
@@ -108,25 +108,25 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Selon le système des nullités substantielles, la nullité peut être prononcée même si la loi est silencieuse sur la sanction. '
                 'L’irrégularité n’est pas forcément assortie d’une mention « à peine de nullité », mais son importance impose qu’elle soit sanctionnée '
                 'lorsqu’elle porte atteinte aux droits fondamentaux des parties.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La jurisprudence de la chambre criminelle de la Cour de cassation exige, pour prononcer une nullité substantielle, '
                       'qu’il y ait : ',
                 ),
               ]),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Une atteinte grave aux droits de la défense (droit à un avocat, droit de se taire, droit à l’information, etc.).',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'Ou un vice fondamental dans la recherche et l’établissement de la vérité (actes d’enquête ou d’instruction déloyaux, irréguliers ou trompeurs).',
               ),
@@ -192,17 +192,17 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
           const SizedBox(height: 18),
 
           // =============== NOTA — CONSEIL CONSTITUTIONNEL ==================
-          _NotaBox(
+          const _NotaBox(
             title: 'POINT CLÉ – CRIMINALITÉ ORGANISÉE',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'Le Conseil constitutionnel, dans la décision n° 2004-492 du 2 mars 2004, a censuré une disposition qui tendait à valider a posteriori, '
                     'de manière automatique, toute procédure menée selon le régime de la criminalité organisée alors qu’en définitive la circonstance aggravante '
                     'de bande organisée ne pouvait pas être retenue.',
               ),
-              const TextSpan(text: ' '),
-              const TextSpan(
+              TextSpan(text: ' '),
+              TextSpan(
                 text:
                     'Cette décision implique que l’autorité judiciaire ne peut autoriser le recours aux procédures spéciales de criminalité organisée que lorsqu’elle dispose '
                     'd’une ou plusieurs raisons plausibles de soupçonner que les faits constituent l’une des infractions énumérées à l’',
@@ -214,13 +214,13 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
                   color: Colors.redAccent,
                 ),
               ),
-              const TextSpan(
+              TextSpan(
                 text:
                     '. Les actes d’enquête ou d’instruction peuvent être exonérés de nullité si, au jour où ils ont été autorisés, la circonstance aggravante de bande organisée '
                     'paraissait caractérisée.',
               ),
-              const TextSpan(text: ' '),
-              const TextSpan(
+              TextSpan(text: ' '),
+              TextSpan(
                 text:
                     'En revanche, les actes autorisés sans circonstance de bande organisée, ou sans raisons plausibles de soupçonner l’une des infractions concernées, '
                     'peuvent faire l’objet d’une annulation au titre des nullités substantielles.',
@@ -237,19 +237,19 @@ class PPNullitesSubstantiellesPage extends StatelessWidget {
             cardColor: cardLight,
             accent: cardAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Lorsque la loi impose l’enregistrement audiovisuel de l’audition d’un mineur placé en garde à vue, une impossibilité technique peut être rencontrée. '
                 'Dans ce cas, il doit en être fait mention dans un procès-verbal d’interrogatoire qui précise la nature de cette impossibilité, et le procureur de la République '
                 'ou le juge d’instruction doit être immédiatement avisé.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le non-respect de ces modalités a été jugé comme une cause de nullité par la chambre criminelle de la Cour de cassation (arrêt du 26 mars 2008). ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'Bien que cette nullité ne relève pas à proprement parler d’un texte mentionnant une sanction expresse, la Cour n’a pas exigé la démonstration d’une atteinte grave '
                       'aux intérêts de l’enfant pour annuler : le défaut d’enregistrement semble alors relever d’une nullité d’ordre public, tant la garantie est jugée essentielle.',
@@ -308,10 +308,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -376,7 +376,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -419,7 +419,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -481,7 +481,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -513,7 +513,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -526,7 +526,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

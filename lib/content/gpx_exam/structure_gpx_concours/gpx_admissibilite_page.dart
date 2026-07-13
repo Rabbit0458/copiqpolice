@@ -127,24 +127,24 @@ class GPXAdmissibilitePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Arrêté du 18 mars 2024 modifiant l’arrêté du 8 mars 2022",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : précise l’organisation générale et la nature des épreuves du concours de gardien de la paix, "
                       "et confirme l’intégration des épreuves écrites dans une phase unique d’admission.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Pour la résolution de cas pratique, le libellé réglementaire est (en substance) : "
                 "à partir d’un dossier ne pouvant excéder 15 pages, résolution d’un ou plusieurs cas pratiques "
                 "consistant en des mises en situation guidées par des questions.",
@@ -193,55 +193,56 @@ class GPXAdmissibilitePage extends StatelessWidget {
             cardColor: cardMetho,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’objectif est d’aboutir à des réponses pragmatiques et argumentées. "
                 "Tu n’as pas besoin de rédiger en parties/sous-parties : tu réponds aux questions "
                 "de façon claire, structurée et opérationnelle.\n\n"
                 "Tu dois montrer que tu sais comprendre une situation, hiérarchiser l’information, "
                 "et choisir des actions adaptées au contexte, dans le respect d’une logique de service et d’organisation.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Compétences attendues"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Compétences attendues"),
+              _BulletPoint(
                 text:
                     "Analyser la situation professionnelle proposée et repérer l’essentiel.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Hiérarchiser et synthétiser les informations contenues dans le dossier.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Rechercher des solutions appropriées et prioriser les actions nécessaires.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Prendre des initiatives réalistes et formuler des propositions pratiques.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Se projeter dans un collectif de travail et une organisation hiérarchique (droits/devoirs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Soigner la rédaction : expression, clarté, orthographe, et gestion du temps.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
+                title: "À noter",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Gestion du temps : l’épreuve de cas pratique se traite en ",
                   ),
                   TextSpan(
                     text: "2 heures",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ". Prends l’habitude de minuter : lecture + tri des infos + réponses + relecture.",
                   ),
@@ -258,12 +259,12 @@ class GPXAdmissibilitePage extends StatelessWidget {
             cardColor: cardRecap,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les écrits comportent 4 épreuves. Les QCM de culture générale et de langue se déroulent "
                 "simultanément (1 heure au total). Les tests psychotechniques sont obligatoires et non notés.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _ExamRowCard(
                 title: "Cas pratique",
                 badgeLeft: "2 h",
@@ -274,7 +275,7 @@ class GPXAdmissibilitePage extends StatelessWidget {
                     "Évalue la rédaction, la compréhension d’une situation professionnelle, l’analyse, "
                     "la synthèse et la projection dans les futures missions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _ExamRowCard(
                 title: "QCM culture générale",
                 badgeLeft: "1 h (avec langue)",
@@ -284,7 +285,7 @@ class GPXAdmissibilitePage extends StatelessWidget {
                     "Actualité France/monde, cadre institutionnel/politique FR & UE, valeurs et symboles "
                     "républicains, et grandes périodes de l’histoire de France.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _ExamRowCard(
                 title: "QCM langue étrangère",
                 badgeLeft: "1 h (avec CG)",
@@ -294,7 +295,7 @@ class GPXAdmissibilitePage extends StatelessWidget {
                     "Évalue tes compétences linguistiques (anglais, espagnol ou allemand). "
                     "La langue est choisie à l’inscription et ne peut plus être changée après clôture.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _ExamRowCard(
                 title: "Tests psychotechniques",
                 badgeLeft: "2 h",
@@ -316,38 +317,39 @@ class GPXAdmissibilitePage extends StatelessWidget {
             cardColor: cardConseils,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "« Gardez à l’esprit que les réponses se trouvent dans le dossier documentaire. "
                 "Il ne faut donc pas avoir des connaissances policières pour cette épreuve. "
                 "L’essentiel : bien lire le sujet (indispensable). Dès la première lecture, notez ce qui vous "
                 "vient à l’esprit en tant que citoyen. Normalement du pur bon sens. »",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "Faire preuve de discernement."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(text: "Faire preuve de discernement."),
+              _BulletPoint(
                 text: "Analyser la situation avec les questions posées.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exploiter les informations du dossier : tout est fait pour apporter la réponse.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Toujours justifier : qui fait quoi, quand, pourquoi et comment.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur les questions ouvertes : la pertinence compte. Une réponse « bateau » ne donne pas la note max.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
+                title: "Source",
                 bodySpans: [
-                  const TextSpan(text: "Source : "),
+                  TextSpan(text: "Source : "),
                   TextSpan(
                     text:
                         "Armelle C., commandante de police, correctrice d’épreuves.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
@@ -406,18 +408,18 @@ class _ExamRowCard extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color bg = isDark
-        ? Colors.white.withOpacity(.06)
-        : Colors.black.withOpacity(.03);
+        ? Colors.white.withValues(alpha: .06)
+        : Colors.black.withValues(alpha: .03);
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.10);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .10);
 
     final Color titleColor = isDark ? Colors.white : Colors.black;
 
     final Color pillBg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .06);
 
     final Color pillFg = isDark ? Colors.white70 : Colors.black87;
 
@@ -478,7 +480,7 @@ class _ExamRowCard extends StatelessWidget {
               fontSize: 13.6,
               height: 1.4,
               fontWeight: FontWeight.w600,
-              color: isDark ? Colors.white70 : Colors.black.withOpacity(.82),
+              color: isDark ? Colors.white70 : Colors.black.withValues(alpha: .82),
             ),
           ),
         ],
@@ -515,10 +517,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -583,7 +585,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -626,7 +628,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -688,7 +690,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -699,10 +701,10 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.title, required this.bodySpans});
 
-  final List<TextSpan> bodySpans;
   final String title;
+  final List<TextSpan> bodySpans;
 
   @override
   Widget build(BuildContext context) {
@@ -720,7 +722,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -733,7 +735,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -785,10 +787,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -894,8 +896,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -963,10 +965,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -1033,10 +1035,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -1075,9 +1077,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1112,9 +1114,9 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
-      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 5),
       child: child,
     );
   }

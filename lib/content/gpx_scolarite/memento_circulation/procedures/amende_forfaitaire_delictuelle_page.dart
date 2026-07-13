@@ -93,46 +93,46 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L. 221-2 et L. 324-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ; "),
+                TextSpan(text: " ; "),
                 TextSpan(
                   text: "articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ; "),
+                TextSpan(text: " ; "),
                 TextSpan(
                   text:
                       "articles D. 45-3 à D. 45-21 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ; "),
+                TextSpan(text: " ; "),
                 TextSpan(
                   text:
                       "articles A. 36-14 à A. 36-18 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
@@ -150,31 +150,31 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
             cardColor: cardCadre,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les délits concernés sont constatés par procès-verbal électronique (PVe). "
                 "Au moment de la verbalisation, l’intéressé doit être avisé (mention inscrite dans le PVe) :",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text:
                     "Qu’il recevra par lettre simple à son domicile : avis d’amende forfaitaire, notice de paiement et formulaire de requête en exonération.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Qu’il peut payer immédiatement l’A.F.D. minorée entre les mains de l’agent verbalisateur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence paiement immédiat : "),
+                TextSpan(text: "Référence paiement immédiat : "),
                 TextSpan(
                   text: "article A. 37-27-6 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -215,88 +215,88 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
             cardColor: cardExclu,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’A.F.D. ne peut pas être mise en œuvre si l’auteur des faits :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "N’est pas formellement identifié."),
-              const _BulletPoint(text: "Est mineur."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "N’est pas formellement identifié."),
+              _BulletPoint(text: "Est mineur."),
+              _BulletPoint(
                 text:
                     "Présente une difficulté de compréhension (pas dans un état normal, ne maîtrise pas la langue française, discernement altéré, majeur protégé).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Est en état de récidive légale (même délit ou délit assimilé).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "TAJ",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La consultation préalable du traitement des antécédents judiciaires (T.A.J.) est impérative.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(text: "Récidive (délai 5 ans) : "),
+                TextSpan(text: "Récidive (délai 5 ans) : "),
                 TextSpan(
                   text: "article 132-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — sauf délits ayant déjà fait l’objet d’une A.F.D. (une succession d’A.F.D. pour le même délit est possible).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Délits assimilés : "),
+                TextSpan(text: "Délits assimilés : "),
                 TextSpan(
                   text: "article 132-16-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (exemples listés ci-dessous)."),
+                TextSpan(text: " (exemples listés ci-dessous)."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Défaut de permis de conduire : L. 221-2 C. route.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "CEEA / CEI / refus de se soumettre aux vérifications : L. 234-1 C. route.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Conduite après usage de stupéfiants / refus de vérifications : L. 235-1 C. route.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Délit de grande vitesse : L. 413-1 C. route.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Refus d’obtempérer (y compris aggravé) : L. 233-1 et L. 233-1-1 C. route.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Autres situations excluant l’A.F.D."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Autres situations excluant l’A.F.D."),
+              _BulletPoint(
                 text:
                     "Si le délit n’est pas constaté sur les lieux du contrôle et en présence du conducteur (ex : constaté après enquête suite à non présentation / non justification).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En cas de commission de plusieurs infractions dont l’une au moins ne peut donner lieu à amende forfaitaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En cas de commission simultanée des délits de défaut d’assurance et de défaut de permis de conduire.",
               ),
@@ -312,44 +312,44 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
             accent: accentPink,
             titleColor: textMain,
             children: [
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text:
                       "Références : L. 221-2 IV et L. 324-2 IV du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 12),
               _AfdAmountTable(isDark: isDark),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Assurance — majoration FGAO",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pour le délit de circulation sans assurance : majoration de 50% au profit du fonds de garantie des assurances obligatoires de dommages (FGAO). Références : ",
                   ),
                   TextSpan(
                     text: "article D. 45-5 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et "),
+                  TextSpan(text: " et "),
                   TextSpan(
                     text: "article L. 211-27 du Code des assurances",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text:
                         "Montants portés à 600 € (minorée), 750 € (ordinaire) et 1 500 € (majorée).",
                     style: TextStyle(fontWeight: FontWeight.w800),
@@ -367,50 +367,50 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
             cardColor: cardPaiement,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les délais de paiement / contestation et les modalités de paiement sont identiques à ceux de l’amende forfaitaire contraventionnelle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Références : article D. 45-8 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article R. 49-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Les conditions de recevabilité (requête en exonération / réclamation), ainsi que les modalités de consignation (hors cas d’exonération) sont précisées dans les documents reçus (formulaire / avis d’amende majorée).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Dispense de consignation",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’auteur de la requête (ou réclamation) est dispensé du paiement de la consignation s’il adresse :",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Une photocopie du permis de conduire en cours de validité à la date de constatation des faits.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Une photocopie d’une attestation d’assurance en cours de validité à la date de constatation des faits.",
               ),
@@ -418,26 +418,26 @@ class AmendeForfaitaireDelictuellePage extends StatelessWidget {
                 text:
                     "Le récépissé de dépôt de plainte pour usurpation d’identité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Usurpation d’identité : "),
+                TextSpan(text: "Usurpation d’identité : "),
                 TextSpan(
                   text: "article 434-23 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(text: "Mis à jour le "),
-                const TextSpan(
+                TextSpan(text: "Mis à jour le "),
+                TextSpan(
                   text: "15/06/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -597,10 +597,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -665,7 +665,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -708,7 +708,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -770,7 +770,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -802,7 +802,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -815,7 +815,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

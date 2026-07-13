@@ -16,7 +16,7 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardColor = isDark
         ? const Color(0xFF1E1E1E)
@@ -80,17 +80,17 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
+            children: const [
               // ---------- 3.4.1 Contenu du PV --------------------------------
-              const _SubTitle('Le contenu du procès-verbal'),
-              const _Paragraph(
+              _SubTitle('Le contenu du procès-verbal'),
+              _Paragraph(
                 'Le procès-verbal de vérification d’identité n’est établi que lorsqu’une mesure '
                 'de rétention a effectivement été prononcée, c’est-à-dire uniquement en cas '
                 'd’exécution d’une vérification d’identité. Il répond à un formalisme proche de '
                 'celui utilisé pour la garde à vue, même si les heures de rétention ne sont pas '
                 'portées sur un registre spécial.',
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'Le procès-verbal est présenté à la signature de l’intéressé. En cas de refus '
@@ -105,40 +105,40 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(text: ').'),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'Afin de permettre un contrôle sérieux par la personne concernée, son défenseur '
                 'et le procureur de la République, le procès-verbal doit comporter un certain '
                 'nombre de mentions obligatoires :',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Les motifs précis justifiant le contrôle et la vérification, en démontrant de '
                     'façon concrète la légalité du contrôle initial et de la vérification d’identité.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les conditions dans lesquelles la personne a été présentée devant l’officier '
                     'de police judiciaire, informée de ses droits et mise en mesure de les exercer, '
                     'ainsi que l’identification des personnes contactées par téléphone.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le jour et l’heure à partir desquels le contrôle d’identité ou le relevé '
                     'd’identité a été effectué.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le jour et l’heure de la fin de la rétention, ainsi que la durée totale de celle-ci.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le recours éventuel à une prise d’empreintes digitales ou de photographies, '
                     'avec les raisons concrètes ayant justifié l’utilisation de ces moyens, en '
                     'précisant qu’il n’était pas possible d’établir l’identité autrement.',
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'Cette motivation doit apparaître de manière claire dans le procès-verbal, '
@@ -154,60 +154,60 @@ class VerificationIdentiteProcesVerbalGpxSchool extends StatelessWidget {
                 TextSpan(text: '.'),
               ]),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // ---------- 3.4.2 Destination du PV ----------------------------
-              const _SubTitle('La destination du procès-verbal'),
-              const _Paragraph(
+              _SubTitle('La destination du procès-verbal'),
+              _Paragraph(
                 'Le procès-verbal de vérification d’identité est systématiquement transmis au '
                 'procureur de la République. Une copie peut, dans certains cas, être remise à '
                 'l’intéressé.',
               ),
-              const _Paragraph('Deux hypothèses doivent être distinguées :'),
-              const _IntroBullet(
+              _Paragraph('Deux hypothèses doivent être distinguées :'),
+              _IntroBullet(
                 text:
                     'La vérification est suivie d’une procédure d’enquête ou d’exécution :',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Lorsque la vérification d’identité aboutit à la constatation d’une infraction, à '
                 'l’arrestation d’une personne faisant l’objet d’un mandat d’arrêt ou s’inscrit dans '
                 'l’exécution d’une commission rogatoire, le procès-verbal est versé à la procédure. '
                 'Il suit alors le sort du dossier pénal et aucune copie n’est remise à l’intéressé à '
                 'ce stade.',
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     'La vérification n’est suivie d’aucune procédure d’enquête ou d’exécution :',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Si la vérification d’identité ne débouche sur aucune enquête, ni sur aucune '
                 'mesure d’exécution, l’original du procès-verbal est transmis au parquet et une '
                 'copie est remise à la personne ayant fait l’objet de la rétention.',
               ),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // ---------- 3.4.3 Interdiction de mise en mémoire -------------
-              const _SubTitle(
+              _SubTitle(
                 'L’interdiction de mettre en mémoire les éléments d’identification',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Lorsque la vérification d’identité n’est suivie d’aucune enquête ni d’aucune '
                 'mesure d’exécution, elle ne peut pas donner lieu à une mise en mémoire des '
                 'éléments d’identification recueillis pendant la rétention.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Cette interdiction vise à empêcher que les contrôles d’identité ne soient '
                 'détournés de leur finalité légale. Tout fichage, archivage ou conservation durable '
                 'des données d’identification obtenues dans ce cadre est donc prohibé.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'En conséquence, le procès-verbal et toutes les pièces relatives à la vérification '
                 'doivent être détruits dans un délai de six mois, sous le contrôle du procureur de '
                 'la République.',
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -257,10 +257,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -325,7 +325,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -368,7 +368,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -430,7 +430,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -462,7 +462,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -475,7 +475,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -16,9 +16,9 @@ class AnnulationConditionsPage extends StatelessWidget {
 
     final subtle = t.colorScheme.onSurface.withValues(alpha: isDark ? .75 : .70);
 
-    final danger = const Color(0xFFD94841);
-    final warning = const Color(0xFFF08C00);
-    final success = const Color(0xFF2F9E44);
+    const danger = Color(0xFFD94841);
+    const warning = Color(0xFFF08C00);
+    const success = Color(0xFF2F9E44);
 
     Widget sectionTitle(String text) => Padding(
       padding: const EdgeInsets.only(bottom: 8),

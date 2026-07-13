@@ -106,16 +106,16 @@ class EmpoisonnementPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime l’empoisonnement."),
+                TextSpan(text: " : définit et réprime l’empoisonnement."),
               ]),
             ],
           ),
@@ -128,118 +128,118 @@ class EmpoisonnementPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte d’emploi ou d’administration"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte d’emploi ou d’administration"),
+              _Paragraph(
                 "L’empoisonnement est une infraction de commission : un acte positif est nécessaire. "
                 "Une simple abstention ne suffit pas.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le mode d’administration est indifférent : piqûre, absorption, imprégnation, inhalation, respiration, "
                 "radiation, relation sexuelle, etc.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Administration vs emploi"),
-              const _Paragraph(
+              _SubTitle("B) Administration vs emploi"),
+              _Paragraph(
                 "• L’administration vise l’action de faire prendre le produit : faire ingurgiter/boire, injecter, inoculer…\n"
                 "• L’emploi se situe en amont : actes de préparation (mélanger le poison à un plat, mettre le plat à disposition, etc.).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Acte unique ou répété"),
-              const _Paragraph(
+              _SubTitle("C) Acte unique ou répété"),
+              _Paragraph(
                 "L’administration peut être unique ou répétée dans le temps. "
                 "Même si chaque absorption isolée est insuffisante, l’ensemble des administrations peut constituer un fait unique.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Remise directe ou indirecte"),
-              const _Paragraph(
+              _SubTitle("D) Remise directe ou indirecte"),
+              _Paragraph(
                 "Le mode peut être :\n"
                 "• Direct (l’auteur administre lui-même)\n"
                 "• Indirect (remise via un tiers de bonne foi)\n"
                 "• Par la victime elle-même si elle a été trompée.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Sur la personne d’autrui"),
-              const _Paragraph(
+              _SubTitle("E) Sur la personne d’autrui"),
+              _Paragraph(
                 "• La victime doit être une personne humaine (pas un animal).\n"
                 "• La victime doit être vivante : l’acte sur un cadavre relève de l’infraction impossible (assimilée à la tentative).\n"
                 "• La victime doit être distincte de l’auteur (le suicide n’est pas incriminé).\n"
                 "• La victime peut être déterminée ou indéterminée : l’infraction existe même si l’auteur ne sait pas précisément qui sera atteint.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : produit mortifère jeté dans un puits alimentant en eau potable un grand nombre de personnes ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 5 février 1958)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("F) Substances de nature à entraîner la mort"),
-              const _Paragraph(
+              _SubTitle("F) Substances de nature à entraîner la mort"),
+              _Paragraph(
                 "La substance doit être de nature mortifère : appréciation au cas par cas (poison végétal/animal/minéral, virus, gaz toxique, etc.).\n"
                 "Elle « peut » entraîner la mort, sans devoir nécessairement la provoquer.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : l’arséniate de plomb dans l’eau de boisson, de nature à provoquer une intoxication lente pouvant aboutir à la mort ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 5 février 1958)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Le caractère mortifère s’apprécie aussi selon l’usage (mélanges, doses anormales/trop nombreuses) "
                 "ou une sensibilité particulière connue de l’auteur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : l’administration en connaissance de cause de produits associés peut constituer l’élément matériel de l’empoisonnement ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 8 juin 1993)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "G) Indifférence du résultat (infraction formelle)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’empoisonnement est une infraction formelle : le crime est réalisé du seul fait de l’administration "
                 "de la substance mortifère, quelles qu’en soient les suites.",
               ),
@@ -254,31 +254,31 @@ class EmpoisonnementPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Connaissance de la nature mortelle"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Connaissance de la nature mortelle"),
+              _Paragraph(
                 "Si l’auteur ignore le caractère mortifère de la substance, il ne peut pas y avoir empoisonnement.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Intention de donner la mort"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Intention de donner la mort"),
+              _Paragraph(
                 "La seule connaissance du caractère mortifère ne suffit pas : il faut établir l’intention de donner la mort.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : le crime d’empoisonnement ne peut être caractérisé que si l’auteur a agi avec l’intention de donner la mort ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 juin 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -292,16 +292,16 @@ class EmpoisonnementPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles 221-2, 221-3 et 221-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les circonstances aggravantes applicables à l’empoisonnement sont celles prévues pour le meurtre (crime concomitant, objectif de faciliter un délit / assurer l’impunité, préméditation/guet-apens, mineur de 15 ans, vulnérabilité, dépositaire de l’autorité publique, enseignant/transport/service public/santé, témoin/victime/partie civile, bande organisée, conjoint/concubin/PACS, refus de mariage/union, ivresse manifeste/stupéfiants, etc.).",
                 ),
@@ -317,130 +317,130 @@ class EmpoisonnementPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Empoisonnement (simple) : "),
-                const TextSpan(
+                TextSpan(text: "Empoisonnement (simple) : "),
+                TextSpan(
                   text:
                       "30 ans de réclusion criminelle + période de sûreté. — ",
                 ),
                 TextSpan(
                   text: "article 221-5 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Empoisonnement aggravé : "),
-                const TextSpan(
+                TextSpan(text: "Empoisonnement aggravé : "),
+                TextSpan(
                   text:
                       "réclusion criminelle à perpétuité + période de sûreté. — ",
                 ),
                 TextSpan(
                   text: "article 221-5 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 221-5-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative"),
-              const _BulletPoint(text: "Tentative : OUI."),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              _SubTitle("Tentative"),
+              _BulletPoint(text: "Tentative : OUI."),
+              SizedBox(height: 6),
+              _Paragraph(
                 "La frontière entre tentative et crime consommé se situe au moment où la substance est introduite dans l’organisme "
                 "(absorption/pénétration). Avant, il s’agit d’un commencement d’exécution ; après, le crime est consommé quel qu’en soit le résultat.\n\n"
                 "Le commencement d’exécution est retenu dès lors que le poison est présenté à la victime ou mis à sa disposition. "
                 "Les actes trop éloignés sont de simples actes préparatoires (parfois punissables : conspiration, achat/fabrication, mélange aux aliments…).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Complicité"),
+              _SubTitle("Complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Provocation à commettre un empoisonnement"),
+              _SubTitle("Provocation à commettre un empoisonnement"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : incrimine l’instigation (offres/promesses/dons/avantages) afin qu’une personne commette un empoisonnement, "
                       "y compris hors du territoire national, lorsque le crime n’a été ni commis ni tenté (infraction distincte).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Exemption / réduction de peine"),
+              _SubTitle("Exemption / réduction de peine"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5-3 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : exemption si, ayant averti l’autorité administrative ou judiciaire, l’auteur a permis d’éviter la mort de la victime.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5-3 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réduction des deux tiers si l’avertissement permet d’éviter la mort ou d’identifier d’autres auteurs/complices ; "
                       "si perpétuité encourue, ramenée à 15 ans.",
@@ -482,10 +482,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -550,7 +550,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -593,7 +593,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -655,7 +655,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -666,10 +666,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -681,13 +680,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -700,13 +698,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

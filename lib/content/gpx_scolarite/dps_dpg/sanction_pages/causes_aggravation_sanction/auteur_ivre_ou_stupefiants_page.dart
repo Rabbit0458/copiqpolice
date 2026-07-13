@@ -15,7 +15,7 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final Color cardColor = isDark ? const Color(0xFF2F2F2F) : Colors.white;
     final Color accent = isDark
@@ -25,14 +25,12 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
 
     const Color lawRed = Color(0xFFE53935);
 
-    TextSpan law(String s) => const TextSpan(text: '');
-
-    TextSpan _law(String s) => TextSpan(
+    TextSpan law(String s) => TextSpan(
       text: s,
       style: const TextStyle(color: lawRed, fontWeight: FontWeight.w800),
     );
 
-    TextSpan _t(String s) => TextSpan(text: s);
+    TextSpan t(String s) => TextSpan(text: s);
 
     return Scaffold(
       backgroundColor: bg,
@@ -134,17 +132,17 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
               const SizedBox(height: 10),
 
               _Paragraph.rich([
-                _t("On peut néanmoins retenir "),
-                _law("l’article L. 3354-1 du C.S.P."),
-                _t(
+                t("On peut néanmoins retenir "),
+                law("l’article L. 3354-1 du C.S.P."),
+                t(
                   " qui prévoit que les officiers ou agents de police judiciaire doivent, lors de la constatation "
                   "d’un crime, d’un délit ou d’un accident de la circulation, faire procéder sur la personne de "
                   "l’auteur présumé aux vérifications prévues au ",
                 ),
-                _law("I de l’article L. 234-1 du code de la route"),
-                _t(" et à "),
-                _law("l’article L. 4274-14 du code des transports"),
-                _t(
+                law("I de l’article L. 234-1 du code de la route"),
+                t(" et à "),
+                law("l’article L. 4274-14 du code des transports"),
+                t(
                   ", destinées à établir la preuve de la présence d’alcool dans son organisme lorsqu’il semble que "
                   "le crime, le délit ou l’accident a été commis ou causé sous l’empire d’un état alcoolique. "
                   "Ces vérifications sont obligatoires dans tous les cas de crimes, délits ou accidents suivis de mort ; "
@@ -184,7 +182,7 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
               _NotaBox(
                 title: "Éclairage",
                 bodySpans: [
-                  _t(
+                  t(
                     "Les représentants du Conseil national de l’Ordre des médecins indiquent que la conjugaison "
                     "de trois types de dépistage (analyses d’urine, de sang et des cheveux) permet de détecter "
                     "précisément le niveau de consommation de stupéfiants (faible, moyen ou important) et la date "
@@ -211,14 +209,14 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
 
               _Paragraph.rich([
                 const TextSpan(text: "• Le meurtre ("),
-                _law("article 221-4, 11° C.P."),
+                law("article 221-4, 11° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
                 const TextSpan(text: "• Les violences volontaires ("),
-                _law(
+                law(
                   "articles 222-8 et 222-10, 11°, 222-12 et 222-13, 14°, et 222-14-5 al. 4 C.P.",
                 ),
                 const TextSpan(text: ")."),
@@ -227,14 +225,14 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
 
               _Paragraph.rich([
                 const TextSpan(text: "• Le viol ("),
-                _law("article 222-24, 12° C.P."),
+                law("article 222-24, 12° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
                 const TextSpan(text: "• Les agressions sexuelles ("),
-                _law("article 222-28, 8° C.P."),
+                law("article 222-28, 8° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
@@ -244,7 +242,7 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
                   text:
                       "• Les agressions sexuelles sur mineur de quinze ans ou personne vulnérable (",
                 ),
-                _law("article 222-30, 7° C.P."),
+                law("article 222-30, 7° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
@@ -254,21 +252,21 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
                   text:
                       "• Les atteintes sexuelles sans violence sur mineur de quinze ans (",
                 ),
-                _law("article 227-26, 5° C.P."),
+                law("article 227-26, 5° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
                 const TextSpan(text: "• L’empoisonnement ("),
-                _law("article 221-5 al. 3 C.P."),
+                law("article 221-5 al. 3 C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
 
               _Paragraph.rich([
                 const TextSpan(text: "• Les tortures ou actes de barbarie ("),
-                _law("article 222-3, 11° C.P."),
+                law("article 222-3, 11° C.P."),
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 6),
@@ -277,7 +275,7 @@ class AuteurIvreOuStupefiantsPage extends StatelessWidget {
                 const TextSpan(
                   text: "• L’administration de substances nuisibles (",
                 ),
-                _law("article 222-15 C.P."),
+                law("article 222-15 C.P."),
                 const TextSpan(text: ")."),
               ]),
             ],
@@ -318,10 +316,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -386,7 +384,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -429,7 +427,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -491,7 +489,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -523,7 +521,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -536,7 +534,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

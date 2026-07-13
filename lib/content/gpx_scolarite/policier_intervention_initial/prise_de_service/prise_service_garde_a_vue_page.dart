@@ -90,58 +90,58 @@ class PriseServiceGardeAVuePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Devoir de protection et de dignité — "),
+                TextSpan(text: "Devoir de protection et de dignité — "),
                 TextSpan(
                   text: "article R. 434-17 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le policier doit préserver la vie, la santé et la dignité de la personne appréhendée.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Objets nécessaires pendant l’audition — ",
                 ),
                 TextSpan(
                   text: "article 63-6 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : possibilité pour le gardé à vue de disposer d’effets indispensables au respect de sa dignité (lunettes, appareil auditif, etc.), avec retrait à l’issue de chaque acte.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Vidéosurveillance des locaux de GAV — "),
+                TextSpan(text: "Vidéosurveillance des locaux de GAV — "),
                 TextSpan(
                   text:
                       "articles L. 256-1 à L. 256-5 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : encadrement du dispositif (motivation, durée, notification, droits, conservation).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "RAPPEL",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La garde à vue doit s’exécuter dans des conditions assurant le respect de la dignité de la personne.",
@@ -216,31 +216,31 @@ class PriseServiceGardeAVuePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le policier chargé de la garde doit être attentif à l’état physique et psychologique de la personne et prendre toutes mesures possibles pour préserver sa vie, sa santé et sa dignité — ",
                 ),
                 TextSpan(
                   text: "art. R. 434-17 CSI",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Règles administratives"),
-              const _SubTitle("1) Le billet d’ordre"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("A) Règles administratives"),
+              _SubTitle("1) Le billet d’ordre"),
+              _Paragraph(
                 "Document remis par l’O.P.J. Il doit être conservé et rester à disposition des policiers "
                 "chargés de la surveillance.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("2) Registre des personnes gardées à vue"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("2) Registre des personnes gardées à vue"),
+              _Paragraph(
                 "Le registre doit être renseigné avec rigueur. Il mentionne notamment :\n"
                 "• les informations figurant sur l’ordre de GAV ;\n"
                 "• l’éventuelle fouille de sécurité (avec déshabillage non intégral) et ses raisons ;\n"
@@ -257,36 +257,36 @@ class PriseServiceGardeAVuePage extends StatelessWidget {
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Alimentation"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Alimentation"),
+              _Paragraph(
                 "Sauf exceptions circonstancielles, les gardés à vue doivent recevoir des repas chauds aux heures habituelles. "
                 "Les menus sont définis selon les principes religieux dont ils font état.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("2) Hygiène & repos"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("2) Hygiène & repos"),
+              _Paragraph(
                 "Les cellules doivent être maintenues dans un bon état de propreté et disposer des éléments d’hygiène nécessaires. "
                 "Les services doivent veiller à la disponibilité de locaux permettant le repos auquel les personnes gardées à vue peuvent prétendre.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("3) Effets personnels durant l’audition"),
+              SizedBox(height: 12),
+              _SubTitle("3) Effets personnels durant l’audition"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le gardé à vue peut disposer, au cours de son audition, d’objets nécessaires au respect de sa dignité — ",
                 ),
                 TextSpan(
                   text: "art. 63-6 CPP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Objectif : s’assurer que l’intéressé entend, comprend et signe en parfaite connaissance de cause les PV.\n\n"
                 "À l’issue de chaque acte, ces objets (lunettes, appareil auditif, etc.) sont retirés. "
                 "Une vigilance particulière est nécessaire lors des retraits/restitutions successifs.",
@@ -386,38 +386,38 @@ class PriseServiceGardeAVuePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La vidéosurveillance des locaux de GAV complète la surveillance humaine, sans s’y substituer — ",
                 ),
                 TextSpan(
                   text: "art. L. 256-1 à L. 256-5 CSI",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Principes techniques"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Principes techniques"),
+              _BulletPoint(
                 text:
                     "Contrôle en temps réel + enregistrement des séquences vidéo (sans le son).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le simple renvoi d’images sans enregistrement est proscrit.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dispositif limité aux gardes à vue et retenues douanières.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Décision & motif"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Décision & motif"),
+              _Paragraph(
                 "Décidé par le chef de service responsable de la sécurité des lieux (ou son représentant), "
                 "en lien avec l’O.P.J. en charge de la procédure, et motivé par des raisons sérieuses "
                 "de penser que la personne pourrait :\n"
@@ -425,41 +425,41 @@ class PriseServiceGardeAVuePage extends StatelessWidget {
                 "• agresser autrui ;\n"
                 "• s’évader.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Durée"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Durée"),
+              _Paragraph(
                 "Limitée au temps strictement nécessaire au regard du comportement. Elle cesse dès que les conditions ne sont plus réunies.\n\n"
                 "Durée maximale : 24 heures, renouvelable par périodes de 24 heures jusqu’à la fin de la garde à vue.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Notification & information"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Notification & information"),
+              _Paragraph(
                 "La décision doit être notifiée à la personne concernée (chef de service ou représentant). "
                 "À défaut, notification par l’O.P.J., l’A.P.J. ou, sous leur contrôle, par l’assistant d’enquête.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Droit de demander à tout moment à l’autorité judiciaire compétente qu’il soit mis fin à la mesure.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit de demander la conservation des enregistrements + information sur la durée de conservation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droits « informatique et libertés » : accès, rectification, effacement, limitation (sauf droit d’opposition).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Avis & diligences"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Avis & diligences"),
+              _Paragraph(
                 "L’autorité judiciaire est informée sans délai. Les représentants légaux du mineur, tuteur/curateur du majeur protégé "
                 "et l’avocat sont informés sans délai (sauf report autorisé par magistrat).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "ADMINISTRATIF",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le placement sous vidéosurveillance est une mesure administrative décorrélée de la procédure judiciaire : "
@@ -619,10 +619,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -687,7 +687,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -730,7 +730,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -792,7 +792,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -824,7 +824,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -837,7 +837,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -107,16 +107,16 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la soustraction d’un parent à ses obligations légales.",
                 ),
@@ -132,22 +132,22 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Les personnes visées par l’infraction"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Les personnes visées par l’infraction"),
+              _Paragraph(
                 "Deux conditions personnelles structurent l’infraction : une victime mineure et un auteur déterminé (le père ou la mère).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• Une victime mineure"),
-              const _Paragraph(
+              _SubTitle("• Une victime mineure"),
+              _Paragraph(
                 "La victime doit être un mineur, sans condition d’âge : toute personne âgée de moins de 18 ans est concernée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• L’auteur : le père ou la mère"),
+              _SubTitle("• L’auteur : le père ou la mère"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le texte vise exclusivement le père et la mère (à l’exclusion des autres ascendants). "
                       "Aucune référence n’est faite à l’exercice de l’autorité parentale ou à la garde : "
@@ -156,25 +156,25 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une soustraction aux obligations légales"),
-              const _Paragraph(
+              _SubTitle("B) Une soustraction aux obligations légales"),
+              _Paragraph(
                 "Le texte incrimine le fait de se soustraire aux obligations découlant de la qualité de père ou mère "
                 "et, notamment, aux devoirs liés à l’autorité parentale.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Référence utile",
                 bodySpans: [
                   TextSpan(
                     text: "Article 371-1 du Code civil",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : l’autorité parentale appartient aux parents jusqu’à la majorité ou l’émancipation de l’enfant "
                         "pour le protéger dans sa sécurité, sa santé et sa moralité, assurer son éducation et permettre son développement, "
@@ -182,15 +182,15 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Il n’est pas nécessaire que le parent ait quitté le domicile familial : ce qui est réprimé est un abandon moral "
                 "consistant à se soustraire à ses devoirs, même en étant physiquement présent.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exemples fréquents",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Peuvent caractériser l’abandon moral ou matériel : mauvais traitements, inconduite notoire, "
@@ -199,127 +199,127 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Des conséquences éventuelles pour le mineur"),
+              _SubTitle("C) Des conséquences éventuelles pour le mineur"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’infraction n’est constituée que si la soustraction est susceptible de ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "« compromettre la santé, la sécurité, la moralité ou l’éducation de l’enfant »",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les juges apprécient au cas par cas. Il n’est pas requis que la compromission soit irréversible : "
                 "le texte n’exige pas que le dommage se soit effectivement réalisé ; il suffit qu’il soit susceptible de se réaliser. "
                 "En revanche, la carence des parents doit être effective.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(text: "Carence effective exigée — "),
+                  TextSpan(text: "Carence effective exigée — "),
                   TextSpan(
                     text: "Cass. crim., 11 juillet 1994",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exemple",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Père poursuivi pour avoir abandonné ses deux enfants (12 et 17 ans) sur une aire d’autoroute et avoir indiqué "
                         "ne pas avoir eu l’intention de revenir les chercher — ",
                   ),
                   TextSpan(
                     text: "C.A. Douai, 17 novembre 2004",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exemple",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Père ayant conditionné psychologiquement ses enfants, sans scolarisation ni suivi médical (absence de vaccination), "
                         "les maintenant hors circuit scolaire — ",
                   ),
                   TextSpan(
                     text: "C.A. Paris, 30 juin 2006",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Une absence de motif légitime"),
-              const _Paragraph(
+              _SubTitle("D) Une absence de motif légitime"),
+              _Paragraph(
                 "Les faits ne sont punissables que si le parent s’est soustrait sans motif légitime. "
                 "C’est au prévenu d’apporter la preuve d’un motif grave ; l’appréciation de la légitimité relève du juge.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Appréciation des juges",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les tribunaux retiennent généralement le motif légitime de manière restrictive :\n"
                         "• Une demande en divorce ne constitue pas, en soi, un motif grave — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 30 mai 1967",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ".\n• L’incarcération peut constituer un motif légitime si le parent n’a pas cessé d’habiter au domicile conjugal avant et après — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 26 mars 1957",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ".\n• Les convictions religieuses n’excusent pas la carence parentale — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 11 juillet 1994",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -333,27 +333,27 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Il s’agit d’une infraction intentionnelle : le parent se soustrait volontairement à ses devoirs parentaux "
                 "avec la conscience que cette carence pourrait avoir des conséquences dommageables pour l’enfant.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’intention repose sur la conscience du danger moral encouru par le mineur — ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 21 octobre 1998",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -367,35 +367,35 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-17 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque la soustraction a directement conduit à la commission, par le mineur, d’au moins un crime "
                     "ou de plusieurs délits ayant donné lieu à une condamnation définitive.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-17 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _BulletPoint(
                 text:
                     "Lorsque l’auteur s’est rendu coupable, sur le même mineur ou au détriment de ce dernier, "
@@ -413,86 +413,86 @@ class SoustractionParentObligationsLegalesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Forme simple : "),
-                const TextSpan(
+                TextSpan(text: "Forme simple : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Forme aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Forme aggravée : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-17 alinéas 2 et 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité possible prévue par "),
+                TextSpan(text: "Responsabilité possible prévue par "),
                 TextSpan(
                   text: "l’article 227-17-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : amende selon "),
+                TextSpan(text: " : amende selon "),
                 TextSpan(
                   text: "l’article 131-38 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et peines complémentaires prévues par "),
+                TextSpan(text: " et peines complémentaires prévues par "),
                 TextSpan(
                   text: "l’article 131-39 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (dissolution, placement sous surveillance judiciaire, interdiction d’exercer, etc.).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non prévue)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non prévue)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -533,10 +533,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -601,7 +601,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -644,7 +644,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -706,7 +706,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -738,7 +738,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -751,7 +751,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

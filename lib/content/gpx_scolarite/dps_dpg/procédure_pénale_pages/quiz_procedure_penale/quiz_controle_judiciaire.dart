@@ -103,7 +103,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   // =====================================================
 
   // NOTIONS GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question:
         "Quel est l’objectif principal du contrôle judiciaire instauré par la loi du 17 juillet 1970 ?",
@@ -119,7 +119,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question: "Le contrôle judiciaire est :",
     options: [
@@ -133,7 +133,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question:
         "À quelle personne le contrôle judiciaire peut-il être appliqué ?",
@@ -148,7 +148,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question: "Le contrôle judiciaire est une mesure :",
     options: [
@@ -163,7 +163,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // CONDITIONS GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de mise en œuvre",
     question:
         "Selon l’article 138 al. 1 C.P.P., le contrôle judiciaire n’est possible que si :",
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de mise en œuvre",
     question: "Le contrôle judiciaire peut être prononcé :",
     options: [
@@ -195,7 +195,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // AUTORITÉS COMPÉTENTES PLACEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "Parmi les autorités suivantes, laquelle peut ordonner un contrôle judiciaire ?",
@@ -206,7 +206,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "Quel magistrat peut décider d’un contrôle judiciaire lorsqu’il est saisi pour une demande de détention provisoire ?",
@@ -221,7 +221,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "La chambre de l’instruction peut ordonner un contrôle judiciaire :",
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "Les juridictions de jugement peuvent ordonner un contrôle judiciaire :",
@@ -253,7 +253,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // OBLIGATIONS PERSONNES PHYSIQUES & MORALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations",
     question:
         "Les obligations du contrôle judiciaire applicables aux personnes physiques sont listées :",
@@ -268,7 +268,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations",
     question:
         "Les obligations du contrôle judiciaire applicables aux personnes morales sont prévues par :",
@@ -284,7 +284,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // ORGANISATION & SUIVI
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Organisation",
     question:
         "Qui doit veiller à l’application des mesures de contrôle judiciaire ?",
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Organisation",
     question:
         "Les services de police et de gendarmerie chargés de surveiller la personne sous contrôle judiciaire doivent :",
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // MODIFICATION & MAINLEVÉE — PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Modification",
     question: "La modification du contrôle judiciaire peut consister à :",
     options: [
@@ -329,7 +329,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée",
     question: "La mainlevée du contrôle judiciaire signifie :",
     options: [
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // FIN NORMALE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Fin normale",
     question: "En principe, le contrôle judiciaire prend fin :",
     options: [
@@ -358,7 +358,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Fin en matière correctionnelle",
     question:
         "En matière correctionnelle, l’ordonnance de renvoi devant le tribunal correctionnel :",
@@ -374,7 +374,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // TRANSFORMATION EN DÉTENTION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Transformation",
     question:
         "Si le contrôle judiciaire ne suffit plus à assurer le bon déroulement de l’instruction, il peut être :",
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   // =====================================================
 
   // RÔLE DU JUGE D’INSTRUCTION (MAINLEVÉE & MODIFICATION)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (rôle du juge d’instruction)",
     question:
         "Selon l’article 140 al. 1 C.P.P., à quel moment le juge d’instruction peut-il ordonner la mainlevée du contrôle judiciaire ?",
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (rôle du juge d’instruction)",
     question:
         "La mainlevée du contrôle judiciaire par le juge d’instruction peut être :",
@@ -425,7 +425,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // SAISINE DE LA CHAMBRE DE L’INSTRUCTION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (chambre de l’instruction)",
     question:
         "En cas de silence du juge d’instruction pendant 5 jours après une demande de mainlevée, la chambre de l’instruction doit être saisie dans un délai de :",
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (chambre de l’instruction)",
     question:
         "Lorsque la chambre de l’instruction est saisie d’une demande de mainlevée du contrôle judiciaire, elle peut :",
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // JURIDICTIONS DE JUGEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Rôle des juridictions de jugement",
     question:
         "Les juridictions de jugement peuvent-elles modifier ou lever un contrôle judiciaire ordonné pendant l’instruction ?",
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // OBLIGATIONS — PRÉCISIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations (personnes physiques)",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une obligation de contrôle judiciaire prévue par l’article 138 C.P.P. ?",
@@ -484,7 +484,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations (personnes physiques)",
     question:
         "Parmi ces obligations, laquelle peut être imposée dans le cadre du contrôle judiciaire ?",
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations (personnes morales)",
     question:
         "Dans le cadre de l’article 706-45 C.P.P., une personne morale placée sous contrôle judiciaire peut être notamment tenue :",
@@ -515,7 +515,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // ORGANISATION & SURVEILLANCE (ART. 141-4)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Surveillance (art. 141-4)",
     question:
         "Selon l’article 141-4 du C.P.P., qui peut retenir une personne sous contrôle judiciaire en cas de soupçon de manquement ?",
@@ -531,7 +531,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Surveillance (art. 141-4)",
     question: "La retenue prévue par l’article 141-4 C.P.P. ne peut excéder :",
     options: ["24 heures", "48 heures", "72 heures"],
@@ -542,7 +542,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // DROITS DE LA PERSONNE RETENUE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Droits de la personne retenue",
     question:
         "Parmi ces droits, lequel est expressément reconnu à la personne retenue en application de l’article 141-4 C.P.P. ?",
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Droits de la personne retenue",
     question:
         "La personne retenue au titre de l’article 141-4 C.P.P. bénéficie notamment :",
@@ -573,7 +573,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // FIN / TRANSFORMATION / RÉVOCATION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Transformation en détention",
     question:
         "Lorsque la personne ne respecte pas ses obligations de contrôle judiciaire, le juge d’instruction peut :",
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Fin de la mesure",
     question:
         "En matière criminelle, l’ordonnance de mise en accusation devant la cour d’assises :",
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // TABLEAU SYNTHÉTIQUE (PAGE FINALE)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Tableau récapitulatif",
     question:
         "Selon le tableau de synthèse, le juge des libertés et de la détention peut prononcer le contrôle judiciaire :",
@@ -626,7 +626,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   // =====================================================
 
   // CAS PRATIQUES & ARTICULATIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Cas pratique",
     question:
         "Une personne mise en examen pour un délit correctionnel ne respecte plus l’interdiction de contacter la victime. Sur quel fondement juridique le juge d’instruction peut-il demander sa retenue par un officier de police judiciaire ?",
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Cas pratique",
     question:
         "Durant la retenue prévue par l’article 141-4, la personne est interrogée. Quel droit doit impérativement lui être notifié, à peine de nullité potentielle ?",
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // ARTICULATION AVEC LA DÉTENTION PROVISOIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Articulation avec la détention provisoire",
     question:
         "Selon l’article 137 C.P.P., dans quel cas le juge peut-il substituer une détention provisoire au contrôle judiciaire ?",
@@ -673,7 +673,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Articulation avec la détention provisoire",
     question:
         "En cas de révocation du contrôle judiciaire et de placement en détention provisoire, qui décide de cette détention ?",
@@ -690,7 +690,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // PERSONNES MORALES — DÉTAILS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Personnes morales",
     question:
         "L’article 706-45 C.P.P. permet d’imposer à une personne morale des obligations. Laquelle de ces mesures en fait partie ?",
@@ -706,7 +706,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // CHAMBRE DE L’INSTRUCTION — DÉTAILS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Chambre de l’instruction",
     question:
         "Lorsque la chambre de l’instruction statue sur l’appel d’une ordonnance de placement sous contrôle judiciaire, elle peut :",
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Chambre de l’instruction",
     question:
         "En cas de carence du juge d’instruction (absence de réponse dans le délai de 5 jours à la demande de mainlevée), la chambre de l’instruction :",
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // GARANTIES PROCÉDURALES — RÉSULTAT DE LA RETENUE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Issue de la retenue (art. 141-4)",
     question:
         "À l’issue de la retenue prévue par l’article 141-4 C.P.P., le juge d’instruction peut :",
@@ -755,7 +755,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // DROITS DURANT LA RETENUE — PRÉCISIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Droits procéduraux",
     question:
         "Pendant la retenue liée au non-respect du contrôle judiciaire, le droit de garder le silence est-il applicable ?",
@@ -771,7 +771,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // NOTE / PARTICULARITÉS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Note explicative",
     question:
         "La note figurant en bas de page précise que la procédure de retenue est également applicable :",
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
   ),
 
   // SYNTHÈSE : QUI FAIT QUOI ?
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Synthèse des compétences",
     question:
         "Parmi ces propositions, laquelle décrit correctement la répartition des compétences pour le contrôle judiciaire ?",
@@ -804,7 +804,7 @@ final List<QuizQuestion> questionsControleJudiciaire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Cas avancé",
     question:
         "Une personne mise en examen demande la mainlevée de son contrôle judiciaire. Le juge d’instruction rejette sa demande. Quel recours a-t-elle ?",
@@ -1175,7 +1175,7 @@ class _QuizControleJudiciairePageState extends State<QuizControleJudiciairePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1378,7 +1378,7 @@ class _QuizControleJudiciairePageState extends State<QuizControleJudiciairePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1561,7 +1561,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2094,10 +2093,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2468,7 +2468,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2509,9 +2509,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

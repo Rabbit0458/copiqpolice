@@ -102,7 +102,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE DE COMMETTRE UN CRIME OU UN DÉLIT (222-17 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Définition',
     question:
         'La menace de commettre un crime ou un délit contre les personnes constitue une infraction lorsque :',
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'L’article 222-17 CP exige une réitération ou une matérialisation de la menace.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Fondement légal',
     question:
         'La menace de commettre un crime ou un délit contre les personnes est prévue par :',
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours indique que l’article 222-17 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Nature',
     question: 'Selon la jurisprudence, une menace est :',
     options: [
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Définition issue de la jurisprudence (Cass. crim., 11 juin 1937).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Infraction visée',
     question: 'La menace doit porter sur :',
     options: [
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le texte exclut les menaces portant sur des violences dont la tentative n’est pas punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Direction',
     question: 'La menace doit être :',
     options: [
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Une menace faite à la cantonade ne constitue pas l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Réitération',
     question: 'La réitération de la menace suppose :',
     options: [
@@ -184,7 +184,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'La jurisprudence exige une répétition à l’égard de la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Matérialisation',
     question: 'Une menace matérialisée peut l’être notamment par :',
     options: [
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours précise les modes de matérialisation admis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Élément moral',
     question: 'L’élément moral de la menace consiste en :',
     options: [
@@ -208,7 +208,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Il suffit d’avoir conscience d’impressionner la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Aggravation',
     question: 'La menace est aggravée lorsqu’elle constitue :',
     options: [
@@ -220,7 +220,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Article 222-17 alinéa 2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace — Tentative',
     question: 'La tentative de menace est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -232,7 +232,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // EMBUSCADE (222-15-1 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Définition',
     question: 'L’embuscade consiste à :',
     options: [
@@ -245,7 +245,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours définit l’embuscade comme un guet-apens préparé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Fondement',
     question: 'Le délit d’embuscade est prévu par :',
     options: [
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours indique que l’article 222-15-1 CP réprime l’embuscade.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Résultat',
     question: 'L’infraction d’embuscade est constituée :',
     options: [
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'L’embuscade est une infraction préparée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade — Tentative',
     question: 'La tentative d’embuscade est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -282,7 +282,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // APPELS MALVEILLANTS / MESSAGES / AGRESSIONS SONORES (222-16)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Définition',
     question: 'Les appels téléphoniques malveillants réitérés constituent :',
     options: [
@@ -294,7 +294,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Article 222-16 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Réitération',
     question: 'La réitération est caractérisée à partir de :',
     options: [
@@ -307,7 +307,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'La jurisprudence admet deux appels, même à des destinataires différents.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants — Élément moral',
     question: 'L’élément moral repose sur :',
     options: ['La malveillance', 'La préméditation', 'La négligence'],
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE AVEC ORDRE DE REMPLIR UNE CONDITION (222-18 CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition — Définition',
     question: 'La menace avec ordre de remplir une condition consiste à :',
     options: [
@@ -332,7 +332,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'L’article 222-18 CP vise l’atteinte à la liberté d’agir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition — Tentative',
     question: 'La tentative de menace avec condition est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -348,7 +348,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE (222-17 CP) — APPROFONDISSEMENT / CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Exclusion',
     question:
         'Quand la menace porte sur des violences dont la tentative n’est pas réprimée, il convient de viser :',
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours précise que les menaces de violences (tentative non réprimée) sortent du champ de 222-17 et relèvent de R.623-1 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Réitération',
     question: 'Pour être punissables, les menaces doivent être réitérées :',
     options: [
@@ -375,7 +375,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Jurisprudence citée au cours : menaces réitérées envers la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Matérialisation',
     question:
         'La matérialisation de la menace par un écrit rend la réitération :',
@@ -389,7 +389,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours indique que la matérialisation représente la répétition nécessaire de la pensée de l’agent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Moyen',
     question: 'Dans le cadre de l’article 222-17 CP, la menace doit être :',
     options: [
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le texte exige l’une des deux modalités : réitération ou matérialisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Direction',
     question: 'La menace faite « à la cantonade » :',
     options: [
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Élément moral',
     question: 'Pour caractériser l’infraction de menace, la loi exige :',
     options: [
@@ -428,7 +428,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours précise que l’auteur n’a pas à vouloir exécuter la menace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Aggravation',
     question:
         'La menace est aggravée au titre de l’article 222-17 al.2 CP lorsqu’il s’agit :',
@@ -441,7 +441,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : aggravation spécifique pour la menace de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Répression',
     question: 'La menace simple (222-17 al.1 CP) est punie de :',
     options: [
@@ -454,7 +454,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Tableau de répression du cours pour l’article 222-17 al.1 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Répression',
     question: 'La menace de mort (222-17 al.2 CP) est punie de :',
     options: [
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : aggravation « menace de mort » à 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Conjugalité',
     question:
         'L’article 222-18-3 CP prévoit deux degrés d’aggravation lorsque les menaces sont commises :',
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : 222-18-3 CP organise l’aggravation en contexte conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Conjugalité',
     question: 'Le second degré d’aggravation (222-18-3 CP) concerne :',
     options: [
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE AVEC CONDITION (222-18 CP) — CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Fondement',
     question:
         'La menace de commettre un crime ou un délit avec ordre de remplir une condition est prévue par :',
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-18 CP réprime la menace avec condition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Champ',
     question: 'À la différence de 222-17, 222-18 vise :',
     options: [
@@ -526,7 +526,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : 222-18 ne conditionne pas à la punissabilité de la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Condition',
     question: 'La « condition » peut prendre la forme :',
     options: [
@@ -539,7 +539,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : action ou abstention, obligation de faire ou ne pas faire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Moyen',
     question: 'Le moyen de menace au sens de 222-18 est :',
     options: [
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : pas besoin de réitération, moyen indéterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Élément moral',
     question: 'L’élément moral de 222-18 consiste dans :',
     options: [
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : dessein de peser méchamment par contrainte morale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Aggravation',
     question: 'L’aggravation spécifique de 222-18 al.2 CP vise :',
     options: [
@@ -577,7 +577,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : aggravation lorsqu’il s’agit d’une menace de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Répression',
     question: 'La menace avec condition (222-18 al.1 CP) est punie de :',
     options: [
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau de répression du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Répression',
     question:
         'La menace de mort avec condition (222-18 al.2 CP) est punie de :',
@@ -602,7 +602,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : aggravation à 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Conjugalité',
     question:
         'En contexte conjugal, 222-18-3 CP prévoit pour la menace avec condition :',
@@ -615,7 +615,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-18-3 CP s’applique à 222-18 al.1 et al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Tentative',
     question: 'La tentative de menace avec condition est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -627,7 +627,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // EMBUSCADE (222-15-1 CP) — ENORME BANQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Fondement',
     question: 'L’embuscade est définie comme :',
     options: [
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : définition du guet-apens dans le délit d’embuscade.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — But',
     question: 'Le but de l’embuscade est de commettre :',
     options: [
@@ -653,7 +653,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le texte vise violences avec usage ou menace d’une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Arme',
     question: 'Dans l’embuscade, la notion d’arme vise :',
     options: [
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours mentionne arme à feu, couteau, bâton, chien, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Violence non réalisée',
     question: 'Concernant l’embuscade, les violences projetées :',
     options: [
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le législateur permet d’intervenir avant la consommation des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Passage à l’action',
     question:
         'Si l’auteur passe à l’action et commet les violences, il est poursuivi :',
@@ -692,7 +692,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : embuscade vise les violences en voie de réalisation, pas celles déjà réalisées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Victimes',
     question: 'Les victimes visées incluent :',
     options: [
@@ -706,7 +706,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Liste prévue au cours (agents force publique, AP, DDAP, pompiers, transport).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Proches',
     question: 'Constitue aussi une embuscade le fait d’attendre :',
     options: [
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le texte étend l’embuscade aux proches vivant habituellement au domicile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Contexte',
     question: 'L’embuscade doit être commise :',
     options: [
@@ -733,7 +733,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : deux alternatives de contexte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Élément moral',
     question: 'L’embuscade doit être caractérisée par :',
     options: [
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : matérialisation de la volonté d’agir par des faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Aggravation',
     question: 'L’embuscade est aggravée lorsqu’elle est commise :',
     options: ['En réunion', 'Avec une ITT > 8 jours', 'Sur mineur de 15 ans'],
@@ -755,7 +755,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Article 222-15-1 al.4 CP : aggravation en réunion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peines',
     question: 'L’embuscade simple est punie de :',
     options: [
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau de répression du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peines',
     question: 'L’embuscade aggravée (en réunion) est punie de :',
     options: [
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : aggravation en réunion → 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Tentative',
     question: 'La tentative d’embuscade est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -787,7 +787,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : la consommation se situe avant la tentative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Complicité',
     question: 'La complicité d’embuscade est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // APPELS / MESSAGES / AGRESSIONS SONORES (222-16 CP) — ENORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Fondement',
     question:
         'Les appels téléphoniques malveillants réitérés sont prévus par :',
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-16 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Supports',
     question: 'Sont visés par 222-16 CP :',
     options: [
@@ -826,7 +826,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le texte vise appels, messages électroniques, agressions sonores.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Répondeur',
     question: 'Les appels reçus sur répondeur/boîte vocale :',
     options: [
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Jurisprudence au cours : appels reçus directement ou sur boîte vocale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages malveillants (222-16) — Réitération',
     question: 'Les messages malveillants visés peuvent être :',
     options: [
@@ -851,7 +851,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours cite ces exemples de communications électroniques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Malveillance',
     question: 'La malveillance se définit comme :',
     options: [
@@ -863,7 +863,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Définition donnée par le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Preuve',
     question: 'Le caractère malveillant peut être déduit :',
     options: [
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : la seule multiplication peut suffire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels malveillants (222-16) — Réitération',
     question: 'La réitération est caractérisée dès lors qu’il existe :',
     options: [
@@ -887,7 +887,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cass. crim. (4 mars 2003) citée au cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sonores (222-16) — Réitération',
     question: 'Pour les agressions sonores, la réitération est :',
     options: ['Non exigée', 'Toujours exigée', 'Exigée seulement la nuit'],
@@ -896,7 +896,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Agressions sonores (222-16) — Intention',
     question: 'L’élément intentionnel des agressions sonores est :',
     options: [
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le texte vise des agissements commis « en vue de troubler ».',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Tentative',
     question: 'La tentative de l’infraction prévue à l’article 222-16 CP est :',
     options: ['Non punissable', 'Punissable', 'Toujours retenue'],
@@ -916,7 +916,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Aggravation',
     question:
         'L’infraction 222-16 CP est aggravée lorsque les faits sont commis :',
@@ -929,7 +929,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Article 222-16 al.2 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Répression',
     question: 'La forme simple (222-16 CP) est punie de :',
     options: [
@@ -941,7 +941,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 1 an / 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Répression',
     question: 'La forme aggravée (222-16 al.2 CP) est punie de :',
     options: [
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : aggravée conjugalité → 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Appels/mails (222-16) — Complicité',
     question: 'La complicité pour 222-16 CP est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -965,7 +965,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // TORTURES ET ACTES DE BARBARIE (222-1 et s.) — ENORME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Fondement',
     question:
         'Le fait de soumettre une personne à des actes de torture ou de barbarie est prévu par :',
@@ -978,7 +978,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Définition ONU',
     question: 'La Convention ONU (10 décembre 1984) définit la torture comme :',
     options: [
@@ -992,7 +992,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours cite la Convention des Nations Unies contre la torture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Jurisprudence',
     question:
         'Selon la jurisprudence, les tortures ou actes de barbarie supposent :',
@@ -1007,7 +1007,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Définition jurisprudentielle reprise au cours (gravité exceptionnelle, dignité).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Souffrance',
     question: 'La souffrance infligée peut être :',
     options: ['Physique ou morale', 'Uniquement physique', 'Uniquement morale'],
@@ -1015,7 +1015,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : souffrance d’ordre physique ou moral.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Victime',
     question: 'Les tortures et actes de barbarie doivent être commis :',
     options: [
@@ -1027,7 +1027,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : personne humaine, vivante, distincte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Élément moral',
     question: 'L’élément moral comprend :',
     options: [
@@ -1040,7 +1040,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : volonté de nier la dignité humaine.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 1er degré (222-3)',
     question:
         'Le premier degré d’aggravation (222-3 CP) vise notamment des faits commis :',
@@ -1055,7 +1055,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours liste les circonstances de 222-3 CP (alinéas 2 à 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 2e degré',
     question: 'Le deuxième degré d’aggravation peut résulter notamment :',
     options: [
@@ -1069,7 +1069,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : 222-4 (bande organisée…), 222-5 (mutilation/infirmité permanente).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 3e degré',
     question: 'Le troisième degré d’aggravation peut viser :',
     options: [
@@ -1083,7 +1083,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours distingue 222-2 et 222-6 (mort sans intention de la donner).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine simple',
     question: 'Les tortures/actes de barbarie (forme simple) sont punis de :',
     options: [
@@ -1096,7 +1096,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Tableau du cours : 222-1 CP → 15 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 1er degré',
     question:
         'Les tortures/actes de barbarie aggravés (1er degré) sont punis de :',
@@ -1110,7 +1110,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Tableau du cours : 222-3 CP → 20 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 2e degré',
     question:
         'Le 2e degré (ex : bande organisée / habitude sur mineur / vulnérabilité / sujétion) est puni de :',
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : aggravations 2e degré → 30 ans réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine 3e degré',
     question:
         'Le 3e degré (ex : mort sans intention de la donner / concours crime autre que meurtre ou viol) est puni de :',
@@ -1138,7 +1138,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : aggravations 3e degré → perpétuité + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative',
     question: 'La tentative de tortures/actes de barbarie est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -1146,7 +1146,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : tentative de crime toujours punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Complicité',
     question: 'La complicité de tortures/actes de barbarie est :',
     options: [
@@ -1158,7 +1158,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : complicité oui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Provocation',
     question: 'La provocation à commettre des tortures/actes de barbarie est :',
     options: [
@@ -1170,7 +1170,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : incrimination autonome (222-6-4 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Exemption',
     question:
         'L’exemption de peine est possible si la personne ayant tenté d’un crime du paragraphe :',
@@ -1184,7 +1184,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-6-2 al.1 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Réduction',
     question:
         'La réduction de peine intervient si l’auteur/complice a averti l’autorité et a permis :',
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // VIOLENCES HABITUELLES AU SEIN DU COUPLE / EX (222-14 al.6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Fondement',
     question:
         'Les violences habituelles au sein du couple ou commises par un « ex » sont définies par :',
@@ -1215,7 +1215,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : définition 222-14 al.6 ; répression al.2 à 5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Habitude',
     question: 'L’habitude suppose que les violences aient été commises :',
     options: ['À plusieurs reprises', 'Une seule fois', 'Uniquement de nuit'],
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : répétition nécessaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Nature',
     question: 'Les violences volontaires peuvent être :',
     options: [
@@ -1235,7 +1235,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : violences psychologiques reconnues et codifiées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Omission',
     question: 'La simple abstention (omission) constitue :',
     options: [
@@ -1248,7 +1248,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : violence = acte positif, sinon qualification différente (privation de soins, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Lien',
     question: 'Le lien exigé entre l’auteur et la victime vise :',
     options: [
@@ -1260,7 +1260,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : couple, même sans cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Ex',
     question:
         'L’alinéa 6 renvoie à l’article 132-80 al.2 : la circonstance est constituée lorsque les faits sont commis :',
@@ -1274,7 +1274,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours reprend le mécanisme de 132-80 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Résultat',
     question: 'Le résultat dommageable se caractérise notamment par :',
     options: [
@@ -1287,7 +1287,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : certificat médical, atteinte physique/psychique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Préjudices',
     question:
         'L’article 222-14 distingue notamment les violences selon qu’elles :',
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 4 catégories de préjudices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine ITT ≤ 8',
     question:
         'Les violences habituelles (couple/ex) avec ITT de 0 à 8 jours sont punies de :',
@@ -1314,7 +1314,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours pour 222-14 (délit).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine ITT > 8',
     question:
         'Les violences habituelles (couple/ex) avec ITT > 8 jours sont punies de :',
@@ -1327,7 +1327,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : ITT > 8 jours → 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine infirmité',
     question:
         'Les violences habituelles (couple/ex) ayant entraîné une mutilation ou infirmité permanente sont punies de :',
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : passage en crime → 20 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Peine mort',
     question:
         'Les violences habituelles (couple/ex) ayant entraîné la mort sans intention de la donner sont punies de :',
@@ -1353,7 +1353,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : mort sans intention → 30 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Tentative',
     question:
         'La tentative en matière de violences délictuelles (dont 222-14) est :',
@@ -1367,7 +1367,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (couple/ex) — Complicité',
     question: 'La complicité pour les violences habituelles (222-14) est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -1379,7 +1379,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // VIOLENCES HABITUELLES SUR MINEUR / VULNÉRABLE (222-14 al.1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Fondement',
     question:
         'Les violences habituelles sur mineur de 15 ans ou personne vulnérable sont définies par :',
@@ -1392,7 +1392,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : alinéa 1 définit, alinéas 2 à 5 répriment.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Mineur',
     question: 'La condition de minorité visée est :',
     options: ['Mineur de 15 ans', 'Mineur de 18 ans', 'Mineur de 13 ans'],
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : mineur de 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Vulnérabilité',
     question: 'La particulière vulnérabilité peut être due :',
     options: [
@@ -1413,7 +1413,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours reprend la liste classique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Préexistence',
     question: 'La vulnérabilité doit :',
     options: [
@@ -1425,7 +1425,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : état préexistant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Sujétion',
     question: 'L’état de sujétion (223-15-3 CP) résulte :',
     options: [
@@ -1438,7 +1438,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Définition détaillée donnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine ITT ≤ 8',
     question:
         'Les violences habituelles sur mineur/vulnérable avec ITT ≤ 8 jours sont punies de :',
@@ -1451,7 +1451,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : même échelle 222-14 selon résultat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine ITT > 8',
     question:
         'Les violences habituelles sur mineur/vulnérable avec ITT > 8 jours sont punies de :',
@@ -1464,7 +1464,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine infirmité',
     question:
         'Les violences habituelles sur mineur/vulnérable ayant entraîné une infirmité permanente sont punies de :',
@@ -1477,7 +1477,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : crime → 20 ans réclusion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (mineur/vulnérable) — Peine mort',
     question:
         'Les violences habituelles sur mineur/vulnérable ayant entraîné la mort sans intention de la donner sont punies de :',
@@ -1494,7 +1494,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // VIOLENCES SUR FORCES DE SÉCURITÉ INTÉRIEURE / ÉLUS (222-14-5)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Fondement',
     question:
         'Les violences sur les forces de sécurité intérieure ou sur les élus locaux sont définies et réprimées par :',
@@ -1507,7 +1507,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : article 222-14-5 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Victimes',
     question: 'Parmi les victimes visées, on trouve notamment :',
     options: [
@@ -1520,7 +1520,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours énumère la liste exhaustive du I.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Élus',
     question:
         'Sont aussi visés les anciens titulaires d’un mandat électif public :',
@@ -1533,7 +1533,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : limite de six ans.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Proches',
     question:
         'Les proches pouvant être victimes en raison des fonctions du proche sont :',
@@ -1547,7 +1547,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-14-5 II 1°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Personnels concourants',
     question:
         'Sont visées les personnes affectées dans les services (PN/GN/PM/AP) agissant sous l’autorité des FSI/élus, comme :',
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours donne ces exemples.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Contexte',
     question: 'Les violences doivent être commises :',
     options: [
@@ -1575,7 +1575,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : exercice ou du fait + qualité apparente ou connue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Résultat',
     question: 'L’article 222-14-5 distingue les violences selon qu’elles :',
     options: [
@@ -1587,7 +1587,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : deux catégories seulement pour 222-14-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Élément moral',
     question: 'L’élément moral implique :',
     options: [
@@ -1603,7 +1603,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // --- Aggravations ITT ≤ 8 / aucune ITT (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Aggravation',
     question:
         'Pour les violences ITT ≤ 8 jours / aucune ITT, 222-14-5 prévoit :',
@@ -1617,7 +1617,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : premier degré (1 circonstance), second degré (au moins 2).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — 1er degré',
     question:
         'Le premier degré d’aggravation (ITT ≤ 8) s’applique lorsque les faits sont accompagnés :',
@@ -1630,7 +1630,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : renvoi aux 8° à 15° de 222-12.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — 2e degré',
     question:
         'Le deuxième degré d’aggravation (ITT ≤ 8) s’applique lorsque les faits sont accompagnés :',
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : cumul d’au moins deux circonstances.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Exemples circonst. 222-12',
     question:
         'Parmi les circonstances 8° à 15° de 222-12, on retrouve notamment :',
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // --- Aggravation ITT > 8 (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8',
     question:
         'Pour les violences ayant entraîné une ITT > 8 jours, 222-14-5 prévoit :',
@@ -1675,7 +1675,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // --- Peines (222-14-5) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine de base',
     question:
         'Les violences (aucune ITT ou ITT ≤ 8 jours) sur FSI/élus sont punies de :',
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : 222-14-5 I/2°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine 1 circonstance',
     question:
         'Si (ITT ≤ 8) + une circonstance 8° à 15° de 222-12, la peine est :',
@@ -1701,7 +1701,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : 222-14-5 al.4.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Peine 2 circonstances',
     question:
         'Si (ITT ≤ 8) + deux circonstances 8° à 15° de 222-12, la peine est :',
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : second degré d’aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8 (base)',
     question:
         'Les violences ayant entraîné une ITT > 8 jours sur FSI/élus sont punies de :',
@@ -1727,7 +1727,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Tableau du cours : 222-14-5 I/1°.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — ITT > 8 + circonstance',
     question:
         'Si ITT > 8 jours + une circonstance 8° à 15° de 222-12, la peine est :',
@@ -1741,7 +1741,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Tableau du cours : aggravation ITT > 8 + circonstance → 10 ans + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Personnes morales',
     question:
         'Les personnes morales peuvent être déclarées pénalement responsables et encourent :',
@@ -1754,7 +1754,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : renvoi à 222-16-1 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Tentative',
     question:
         'La tentative pour les violences délictuelles visées par 222-14-5 est :',
@@ -1768,7 +1768,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : les textes relatifs aux violences délictuelles ne visent pas la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences FSI/Élus (222-14-5) — Complicité',
     question: 'La complicité pour 222-14-5 est :',
     options: [
@@ -1784,7 +1784,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // BONUS — QUESTIONS "PIÈGES CONCOURS" (MÉLANGE DES THÈMES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Distinction 222-17 / 222-18',
     question: 'Quelle affirmation est exacte ?',
     options: [
@@ -1797,7 +1797,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Synthèse fidèle au cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Embuscade',
     question: 'Dans l’embuscade, le cœur de l’infraction est :',
     options: [
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours insiste : infraction préparée, violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-16',
     question: 'Quel couple est correct ?',
     options: [
@@ -1825,7 +1825,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : réitération pour appels/messages, pas pour agressions sonores.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Tortures',
     question:
         'Ce qui distingue principalement tortures/barbarie des violences « simples » est :',
@@ -1839,7 +1839,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Définition jurisprudentielle reprise par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Violences habituelles',
     question: 'La notion « d’habitude » signifie :',
     options: [
@@ -1851,7 +1851,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : répétition obligatoire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-5',
     question: 'Sous 222-14-5, les préjudices pris en compte sont :',
     options: [
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : deux catégories pour 222-14-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — 222-14-5 aggravations',
     question:
         'Pour ITT ≤ 8 (ou aucune), l’aggravation « second degré » suppose :',
@@ -1884,7 +1884,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE 222-17 — CAS PRATIQUES / PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une personne dit à la victime : « Je vais te tuer » puis le répète plus tard à la même victime. L’élément matériel est :',
@@ -1898,7 +1898,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         '222-17 : menace réitérée (au moins deux fois) ou matérialisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une menace est formulée une seule fois mais envoyée par message écrit. L’infraction 222-17 est :',
@@ -1911,7 +1911,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'La matérialisation par écrit dispense de la réitération.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cas pratique',
     question:
         'Une personne mime une arme avec ses doigts en disant « pan pan » sans autre élément. Selon le cours, cela :',
@@ -1925,7 +1925,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours cite une jurisprudence excluant la gestuelle seule de la matérialisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Sens clair',
     question: 'La menace doit :',
     options: [
@@ -1939,7 +1939,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : pas besoin d’infraction explicitement désignée si sens clair.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Tiers',
     question:
         'Une menace adressée à un tiers pour être rapportée à la victime :',
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : menace directe ou indirecte (tiers / transmise).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Cantonade',
     question:
         '« Je tirerai sur quiconque touche ma voiture » (sans viser une personne) :',
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Tentative punissable',
     question:
         '222-17 réprime une menace portant sur un crime ou délit contre les personnes :',
@@ -1978,7 +1978,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Condition spécifique de 222-17 rappelée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Contravention R.623-1',
     question:
         'Les menaces de commettre des violences (tentative non réprimée) basculent vers :',
@@ -1995,7 +1995,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE AVEC CONDITION 222-18 — CAS PRATIQUES / PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Cas pratique',
     question:
         '« Si tu ne me donnes pas ton téléphone, je te plante. » Cette situation relève :',
@@ -2009,7 +2009,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'La condition est une injonction (faire/ne pas faire) pour éviter le mal annoncé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Moyen',
     question: 'Pour 222-18, la menace peut être extériorisée :',
     options: [
@@ -2022,7 +2022,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : moyen indéterminé, pas besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Élément moral',
     question: 'L’intention exigée est :',
     options: [
@@ -2035,7 +2035,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : dessein de peser méchamment sur la volonté d’autrui.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Tentative',
     question: 'La tentative de 222-18 est :',
     options: ['Non punissable', 'Punissable', 'Un crime'],
@@ -2047,7 +2047,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // EMBUSCADE 222-15-1 — GROS BLOC "CONCOURS"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Conditions',
     question: 'L’embuscade est constituée lorsque l’auteur :',
     options: [
@@ -2061,7 +2061,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Synthèse fidèle du cours : guet-apens + but + faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Surprise',
     question: 'Le guet-apens vise notamment à provoquer :',
     options: [
@@ -2074,7 +2074,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : surprise qui interdit à la victime de préparer sa défense.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Menace avec arme',
     question:
         'L’embuscade vise aussi le fait de menacer avec une arme afin de provoquer :',
@@ -2087,7 +2087,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : menace avec arme = choc/trouble psychologique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Seuil du processus',
     question: 'Pourquoi la tentative d’embuscade n’est pas punissable ?',
     options: [
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : consommation située avant la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Aggravation',
     question: 'La circonstance aggravante spécifique est :',
     options: [
@@ -2116,7 +2116,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // APPELS / MESSAGES / AGRESSIONS SONORES 222-16 — PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Violence psychologique',
     question:
         'Selon le cours, les appels malveillants et agressions sonores constituent :',
@@ -2130,7 +2130,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : rattachement au régime des violences (nature y compris psychologique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération (minimum)',
     question: 'Le minimum d’appels pour caractériser la réitération est :',
     options: ['Deux appels successifs', 'Trois appels', 'Cinq appels'],
@@ -2138,7 +2138,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Jurisprudence citée : 2 appels suffisent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Destinataires',
     question:
         'Deux appels successifs effectués à des destinataires différents :',
@@ -2151,7 +2151,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : même à des destinataires différents.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Bruit',
     question: 'Le terme « agression sonore » suppose :',
     options: [
@@ -2163,7 +2163,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : bruit d’une certaine importance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Mobile',
     question:
         'Le texte de 222-16 prend en compte le mobile en exigeant que les agissements soient commis :',
@@ -2176,7 +2176,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Formule citée par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Infraction voisine',
     question:
         'Le cours indique que l’élément intentionnel permet de distinguer 222-16 de :',
@@ -2193,7 +2193,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // TORTURES / BARBARIE — CAS PRATIQUES (3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Cas pratique',
     question:
         'Une personne inflige volontairement des souffrances aiguës pendant plusieurs heures en humiliant la victime. La qualification la plus cohérente est :',
@@ -2207,7 +2207,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : souffrances aiguës + gravité exceptionnelle + atteinte dignité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative (cas)',
     question:
         'Ligoter une victime en vue de lui infliger des sévices, interrompu par l’arrivée de tiers, peut relever :',
@@ -2220,7 +2220,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours donne précisément cet exemple pour la tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-6',
     question:
         'Lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner, on vise :',
@@ -2233,7 +2233,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : 222-6 = mort sans intention de la donner.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-2',
     question:
         'Lorsque les tortures/actes de barbarie précèdent, accompagnent ou suivent un crime autre que meurtre ou viol, on vise :',
@@ -2251,7 +2251,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // VIOLENCES HABITUELLES — PIÈGES + CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Cas pratique',
     question:
         'Des violences répétées sur une période de deux mois peuvent caractériser :',
@@ -2265,7 +2265,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours cite une jurisprudence : période de deux mois suffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Psychologique',
     question:
         'Le délit de violences peut être constitué sans atteinte physique par :',
@@ -2280,7 +2280,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours cite la jurisprudence et 222-14-3 (violences psychologiques).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Différence',
     question:
         'La particularité des violences habituelles par rapport aux violences « simples » est :',
@@ -2293,7 +2293,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : l’habitude suppose plusieurs reprises.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Tentative',
     question: 'Pour les violences délictuelles, la tentative est en principe :',
     options: [
@@ -2309,7 +2309,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-14-5 — CAS PRATIQUES "CONCOURS"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'Un agent de police municipale est agressé pendant une intervention. La qualification spéciale applicable est :',
@@ -2319,7 +2319,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : PM fait partie des forces de sécurité intérieure visées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'Un élu local est frappé en raison d’une décision prise dans l’exercice de son mandat. Condition de contexte :',
@@ -2332,7 +2332,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : exercice ou du fait des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Cas pratique',
     question:
         'La victime est l’ascendant vivant au domicile d’un gendarme, agressé en raison des fonctions du gendarme. Cela entre dans :',
@@ -2346,7 +2346,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : proches (conjoint, ascendants/descendants, cohabitants) en raison des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation (cas)',
     question:
         'Violences sur FSI sans ITT, commises avec dissimulation du visage (circonstance 222-12). Peine attendue :',
@@ -2360,7 +2360,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'ITT ≤ 8 (ou aucune) + 1 circonstance 8° à 15° → 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation (cas)',
     question:
         'Violences sur FSI sans ITT, commises avec arme + préméditation (2 circonstances). Peine attendue :',
@@ -2374,7 +2374,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'ITT ≤ 8 (ou aucune) + au moins 2 circonstances → second degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Aggravation ITT > 8 (cas)',
     question:
         'Violences sur FSI avec ITT > 8 jours, commises avec usage d’une arme. Peine attendue :',
@@ -2392,7 +2392,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MÉGA "VRAI/FAUX" (FORMAT QCM) — PIÈGES CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « Une menace verbale unique non matérialisée peut relever de 222-17. »',
@@ -2406,7 +2406,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         '222-17 exige réitération OU matérialisation. Une menace unique verbale ne suffit pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « L’embuscade est constituée même si aucune violence n’a été commise. »',
@@ -2415,7 +2415,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Infraction préparée : violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « Les agressions sonores exigent une réitération. »',
@@ -2425,7 +2425,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « La tentative de tortures et actes de barbarie est punissable. »',
@@ -2441,7 +2441,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE 222-17 — PEINES / AGGRAVATIONS (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Peine simple',
     question: 'La menace (222-17 al.1) réitérée ou matérialisée est punie de :',
     options: [
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-17 al.1 (simple) = 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Menace de mort',
     question:
         'Lorsque la menace visée à 222-17 est une menace de mort (al.2), la peine est :',
@@ -2466,7 +2466,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-17 al.2 = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Aggravation couple',
     question:
         'L’aggravation « couple/ex-couple » des menaces est traitée par :',
@@ -2480,7 +2480,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18-3 prévoit deux degrés d’aggravation selon menace simple ou menace de mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Couple (1er degré)',
     question:
         'Menaces (222-17 al.1) commises par conjoint/concubin/PACS : peine (1er degré) ?',
@@ -2494,7 +2494,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18-3 (1er degré) aggrave la menace simple à 3 ans / 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-17) — Couple (2e degré)',
     question:
         'Menaces de mort (222-17 al.2) commises par conjoint/concubin/PACS : peine (2e degré) ?',
@@ -2512,7 +2512,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACE AVEC CONDITION 222-18 — PEINES / AGGRAVATIONS (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Peine simple',
     question:
         'La menace avec ordre de remplir une condition (222-18 al.1) est punie de :',
@@ -2525,7 +2525,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18 al.1 = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace avec condition (222-18) — Menace de mort',
     question:
         'La menace avec condition lorsqu’il s’agit d’une menace de mort (222-18 al.2) est punie de :',
@@ -2538,7 +2538,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18 al.2 = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-18) — Couple (1er degré)',
     question:
         'Menace avec condition (222-18 al.1) commise par conjoint/concubin/PACS (aggravation 222-18-3) :',
@@ -2551,7 +2551,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18-3 aggrave 222-18 al.1 à 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace (222-18) — Couple (2e degré)',
     question:
         'Menace de mort avec condition (222-18 al.2) commise par conjoint/concubin/PACS (222-18-3) :',
@@ -2569,7 +2569,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-16 — APPELS / MESSAGES / AGRESSIONS SONORES — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Peine simple',
     question:
         'Les appels malveillants réitérés / messages malveillants réitérés / agressions sonores (222-16) sont punis de :',
@@ -2582,7 +2582,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-16 (simple) = 1 an + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Aggravation couple',
     question:
         'Lorsque 222-16 est commis par conjoint/concubin/PACS (al.2), la peine est :',
@@ -2595,7 +2595,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-16 al.2 = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Tentative',
     question: 'La tentative de 222-16 est :',
     options: ['Non punissable', 'Punissable', 'Toujours criminelle'],
@@ -2607,7 +2607,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-15-1 — EMBUSCADE — PEINES + CAS (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peine simple',
     question: 'L’embuscade (222-15-1) est punie (simple) de :',
     options: [
@@ -2619,7 +2619,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-15-1 (simple) = 5 ans / 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Peine aggravée',
     question: 'L’embuscade aggravée (en réunion, 222-15-1 al.4) est punie de :',
     options: [
@@ -2631,7 +2631,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : réunion = 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade (222-15-1) — Cas pratique',
     question:
         'Un individu attend un policier dans un lieu déterminé avec un couteau, repéré avant l’attaque. Qualification :',
@@ -2649,7 +2649,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-1 à 222-6 — TORTURES/BARBARIE — PEINES (CONCOURS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Peine simple',
     question: 'Les tortures ou actes de barbarie (222-1) sont punis de :',
     options: [
@@ -2662,7 +2662,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-1 (simple) = 15 ans de réclusion (période de sûreté).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 1er degré (222-3)',
     question:
         'Les tortures/actes de barbarie aggravés par une circonstance du 1er degré (222-3) :',
@@ -2675,7 +2675,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-3 = 20 ans de réclusion (période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 222-5 (mutilation/infirmité)',
     question:
         'Lorsque les tortures/actes de barbarie entraînent une mutilation ou une infirmité permanente (222-5) :',
@@ -2688,7 +2688,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-5 = 30 ans de réclusion (période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — 222-6 (mort sans intention)',
     question:
         'Lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner (222-6) :',
@@ -2701,7 +2701,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-6 = perpétuité (période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Provocation',
     question:
         'Le fait de faire des offres/promesses/dons pour provoquer des tortures et actes de barbarie (si non commis ni tenté) relève :',
@@ -2719,7 +2719,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-14 (VIOLENCES HABITUELLES) — BARÈME / RÉSULTATS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — ITT 0-8',
     question:
         'Les violences habituelles (mineur/vulnérable ou couple/ex) ayant entraîné une ITT de 0 à 8 jours :',
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : barème violences habituelles ITT 0-8 = 5 ans / 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — ITT > 8',
     question:
         'Les violences habituelles ayant entraîné une ITT > 8 jours sont punies de :',
@@ -2746,7 +2746,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : ITT > 8 = 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — Mutilation/infirmité',
     question:
         'Les violences habituelles ayant entraîné une mutilation ou infirmité permanente :',
@@ -2760,7 +2760,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : mutilation/infirmité permanente = 20 ans de réclusion (période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles (222-14) — Mort',
     question:
         'Les violences habituelles ayant entraîné la mort sans intention de la donner :',
@@ -2778,7 +2778,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-14-1 (ARME + BO / GUET-APENS sur DAP, SP, TRANSPORT) — BARÈME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — ITT 0-8',
     question:
         'Violences avec arme sur dépositaire/SP/transport, commises en bande organisée OU avec guet-apens, ITT 0-8 :',
@@ -2792,7 +2792,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-1 4° = 10 ans / 150 000 € (+ période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — ITT > 8',
     question: 'Violences 222-14-1 avec ITT > 8 jours :',
     options: [
@@ -2805,7 +2805,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-1 3° = 15 ans de réclusion (+ période de sûreté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Infirmité',
     question:
         'Violences 222-14-1 ayant entraîné une mutilation/infirmité permanente :',
@@ -2819,7 +2819,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-1 2° = 20 ans de réclusion (+ période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Mort',
     question:
         'Violences 222-14-1 ayant entraîné la mort sans intention de la donner :',
@@ -2837,7 +2837,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MINI-SÉRIES "MOTS-CLÉS" — ULTRA EFFICACE CONCOURS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mots-clés — 222-17',
     question: 'Le duo clé de l’élément matériel de 222-17 est :',
     options: [
@@ -2849,7 +2849,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : c’est le pivot de 222-17.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mots-clés — 222-18',
     question: 'Le mot-clé de 222-18 est :',
     options: [
@@ -2862,7 +2862,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : contrainte par condition = atteinte à la liberté d’agir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mots-clés — 222-15-1',
     question: 'Le mot-clé de 222-15-1 est :',
     options: [
@@ -2879,7 +2879,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // SÉRIE "QCM MÉLANGÉS" — POUR T’ENTRAÎNER COMME AU QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mix concours — Qualification',
     question:
         '« Si tu ne me réponds pas, je te tue » envoyé une fois par SMS :',
@@ -2893,7 +2893,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Condition (« si tu ne… ») + moyen indifférent + menace de mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mix concours — Qualification',
     question:
         'Attendre un agent de la force publique dans un lieu déterminé, avec un bâton, dans l’intention de le menacer avec l’arme :',
@@ -2907,7 +2907,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Attente + lieu déterminé + but violences avec usage/menace d’une arme.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mix concours — Qualification',
     question:
         'Deux appels successifs (sans paroles) à la victime, uniquement pour la réveiller et la gêner :',
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-17 — MENACE (SANS CONDITION) — CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Cas pratique',
     question:
         'Un individu dit à son voisin : « Je vais te tuer », une seule fois, oralement, sans écrit, sans image, sans objet. Qualification ?',
@@ -2938,7 +2938,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-17 exige une menace réitérée OU matérialisée (écrit/image/objet).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Cas pratique',
     question:
         'Un individu envoie une lettre : « Je vais te casser la mâchoire » (une seule lettre). Qualification la plus adaptée ?',
@@ -2953,7 +2953,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-17 = réitérée OU matérialisée. Attention : doit viser crime/délit contre les personnes dont la tentative est punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Menace de violence',
     question:
         'Le texte 222-17 exclut les menaces de commettre des violences (dont la tentative n’est pas réprimée). Dans ce cas, on vise :',
@@ -2963,7 +2963,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : menaces de violences (tentative non réprimée) → R.623-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Réitération',
     question: 'La menace doit être réitérée à l’égard :',
     options: [
@@ -2976,7 +2976,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : menaces punissables si réitérées envers la même personne.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-17 — Matérialisation',
     question: 'La matérialisation d’une menace peut se faire par :',
     options: [
@@ -2993,7 +2993,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-18 — MENACE AVEC CONDITION — CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-18 — Cas pratique',
     question:
         '« Donne-moi 500 € sinon je te tue » (oral, une seule fois). Qualification ?',
@@ -3007,7 +3007,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18 = menace avec ordre de remplir une condition ; moyen indifférent ; menace de mort = al.2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-18 — Condition',
     question: 'La condition au sens de 222-18 peut être :',
     options: [
@@ -3020,7 +3020,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : condition = injonction, obligation de faire ou de ne pas faire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Menace 222-18 — Moyen',
     question: 'Pour 222-18 (menace avec condition), la menace :',
     options: [
@@ -3036,7 +3036,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-16 — APPELS / MESSAGES MALVEILLANTS — CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération',
     question:
         'Le minimum pour caractériser la réitération au sens de 222-16 est :',
@@ -3046,7 +3046,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : deux appels successifs suffisent à caractériser la réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Messages',
     question: 'Les messages visés par 222-16 peuvent être :',
     options: [
@@ -3059,7 +3059,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : messages malveillants réitérés émis par voie électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Agressions sonores',
     question: 'Pour les agressions sonores (222-16), la réitération :',
     options: [
@@ -3072,7 +3072,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : pas de condition de réitération pour les agressions sonores.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Élément moral',
     question: 'L’élément intentionnel des agressions sonores (222-16) est :',
     options: [
@@ -3088,7 +3088,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-15-1 — EMBUSCADE — CAS PRATIQUES PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Définition',
     question: 'L’embuscade consiste principalement à :',
     options: [
@@ -3102,7 +3102,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : « attendre un certain temps et dans un lieu déterminé » (guet-apens).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Objet',
     question: 'L’embuscade vise une préparation en vue de :',
     options: [
@@ -3115,7 +3115,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : but = violences avec usage/menace d’une arme (arme par nature ou destination).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Point clé',
     question: 'L’embuscade est constituée :',
     options: [
@@ -3128,7 +3128,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : infraction préparée, intervention possible avant consommation des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Embuscade 222-15-1 — Tentative',
     question: 'La tentative du délit d’embuscade est :',
     options: [
@@ -3145,7 +3145,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // TORTURES / BARBARIE — DÉFINITIONS + CAS PRATIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Définition jurisprudentielle',
     question:
         'Les tortures ou actes de barbarie se caractérisent notamment par :',
@@ -3160,7 +3160,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : gravité exceptionnelle + volonté de nier la dignité de la personne humaine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Élément moral',
     question:
         'L’élément moral principal des tortures et actes de barbarie est :',
@@ -3175,7 +3175,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : volonté de souffrance exceptionnelle (physique ou morale) / atteinte à la dignité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Aggravation 222-4',
     question:
         'Parmi les cas suivants, lequel correspond à une aggravation de 2e degré (222-4) ?',
@@ -3184,7 +3184,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-4 (2e degré) vise notamment la bande organisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Tentative',
     question: 'La tentative de tortures et actes de barbarie est :',
     options: [
@@ -3200,7 +3200,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // VIOLENCES HABITUELLES 222-14 — PIÈGES "HABITUDE"
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Notion',
     question: 'La notion d’habitude (222-14) implique :',
     options: [
@@ -3212,7 +3212,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : l’habitude suppose la répétition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences habituelles — Couple/ex',
     question:
         'Les violences habituelles commises par un ancien conjoint/concubin/PACS sont visées via :',
@@ -3229,7 +3229,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-14-5 — VIOLENCES SUR FSI / ÉLUS — BARÈME + CIRCONSTANCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Texte',
     question:
         'Les violences sur forces de sécurité intérieure / élus locaux relèvent de :',
@@ -3242,7 +3242,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-14-5 définit et réprime ces violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Peine de base (≤8j)',
     question: 'Violences 222-14-5 sans ITT ou ITT ≤ 8 jours : peine de base ?',
     options: [
@@ -3254,7 +3254,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-14-5 /2° (base) = 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — 1 circonstance (≤8j)',
     question:
         'Violences 222-14-5 (≤8j) + une circonstance 8° à 15° de 222-12 : peine ?',
@@ -3268,7 +3268,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-5 al.4 (≤8j) + 1 circonstance = 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — 2 circonstances (≤8j)',
     question:
         'Violences 222-14-5 (≤8j) + deux circonstances 8° à 15° de 222-12 : peine ?',
@@ -3282,7 +3282,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-5 al.5 (≤8j) + 2 circonstances = 10 ans / 150 000 € (+ période de sûreté).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT > 8',
     question: 'Violences 222-14-5 avec ITT > 8 jours : peine de base ?',
     options: [
@@ -3294,7 +3294,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-14-5 I/1° = 7 ans / 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT > 8 + circonstance',
     question:
         'Violences 222-14-5 avec ITT > 8 jours + une circonstance 8° à 15° de 222-12 :',
@@ -3312,7 +3312,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // SÉRIE "VRAI/FAUX" — ULTRA CONCOURS (3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 222-17',
     question:
         'Vrai ou faux : une menace verbale unique peut constituer 222-17 si elle fait peur.',
@@ -3322,7 +3322,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-17 exige réitération OU matérialisation, pas seulement la peur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 222-18',
     question:
         'Vrai ou faux : pour 222-18, la menace doit être matérialisée par écrit.',
@@ -3331,7 +3331,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18 = « par quelque moyen que ce soit ».',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 222-16',
     question:
         'Vrai ou faux : le caractère malveillant se déduit uniquement du contenu des appels/messages.',
@@ -3341,7 +3341,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : la seule multiplication des appels peut suffire à caractériser la malveillance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — Embuscade',
     question:
         'Vrai ou faux : l’embuscade suppose que les violences aient été consommées.',
@@ -3359,7 +3359,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACES 222-17 — PEINES (BARÈME) + AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Répression — Base',
     question: 'La peine encourue pour la menace (222-17 al.1) est :',
     options: [
@@ -3371,7 +3371,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-17 al.1 = 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Répression — Menace de mort',
     question: 'La peine encourue pour la menace de mort (222-17 al.2) est :',
     options: [
@@ -3383,7 +3383,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-17 al.2 (menace de mort) = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Aggravation — Premier degré',
     question: '222-18-3 (1er degré) aggrave :',
     options: [
@@ -3396,7 +3396,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18-3 prévoit deux degrés (conjoint/concubin/PACS) et s’applique aux menaces.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Menaces (base)',
     question:
         'Quand les menaces (sans mort) sont aggravées par 222-18-3 : peine ?',
@@ -3410,7 +3410,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18-3 aggrave l’infraction prévue à 222-17 al.1 → 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Menaces de mort',
     question: 'Quand les menaces de mort sont aggravées par 222-18-3 : peine ?',
     options: [
@@ -3427,7 +3427,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MENACES 222-18 — PEINES + AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Répression — Base',
     question:
         'La peine encourue pour la menace avec condition (222-18 al.1) est :',
@@ -3440,7 +3440,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18 al.1 = 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Répression — Menace de mort',
     question:
         'La peine encourue pour 222-18 al.2 (menace de mort avec condition) est :',
@@ -3453,7 +3453,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18 al.2 = 5 ans + 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Condition (base)',
     question: 'Quand 222-18 (sans mort) est aggravé par 222-18-3 : peine ?',
     options: [
@@ -3466,7 +3466,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18-3 aggrave l’infraction prévue à 222-18 al.1 → 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18-3 — Répression — Condition + mort',
     question:
         'Quand 222-18 (menace de mort) est aggravé par 222-18-3 : peine ?',
@@ -3484,7 +3484,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-16 — APPELS / MESSAGES / AGRESSIONS SONORES — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Répression — Base',
     question: 'La peine encourue pour 222-16 (base) est :',
     options: [
@@ -3496,7 +3496,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-16 (simple) = 1 an / 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Répression — Conjoint/concubin/PACS',
     question: 'La peine encourue pour 222-16 al.2 (aggravé) est :',
     options: [
@@ -3520,7 +3520,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
 
   // ---------- 222-17 : CONDITIONS DE CONSTITUTION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Condition de punissabilité',
     question: 'La menace 222-17 est punissable lorsqu’elle est :',
     options: [
@@ -3532,7 +3532,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-17 exige la réitération OU la matérialisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Domaine',
     question: '222-17 vise la menace de :',
     options: [
@@ -3546,7 +3546,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-17 exclut les menaces de violences (tentative non réprimée) → R.623-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Menace à la cantonade',
     question: 'Une menace « à la cantonade » (non dirigée) :',
     options: [
@@ -3558,7 +3558,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : la menace doit être dirigée contre une personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Réitération',
     question: 'La réitération suppose :',
     options: [
@@ -3570,7 +3570,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : menace répétée au moins deux fois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Réitération (même personne)',
     question: 'Pour être punissables, les menaces réitérées doivent viser :',
     options: [
@@ -3582,7 +3582,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : réitération à l’égard de la même personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Matérialisation',
     question: 'La matérialisation peut se faire par :',
     options: [
@@ -3594,7 +3594,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : écrit / image / objet.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Gestuelle seule',
     question: 'Une gestuelle seule (mimer une arme sans support) :',
     options: [
@@ -3606,7 +3606,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : gestuelle seule exclue de la matérialisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-17 — Élément moral',
     question: 'L’élément moral de 222-17 est :',
     options: [
@@ -3621,7 +3621,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // ---------- 222-18 : CONDITION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Définition',
     question: '222-18 vise la menace de crime ou délit contre les personnes :',
     options: [
@@ -3633,7 +3633,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-18 = menace avec condition.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Domaine',
     question: 'Contrairement à 222-17, 222-18 vise :',
     options: [
@@ -3647,7 +3647,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18 couvre tout délit contre les personnes, sans condition “tentative punissable”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Moyen',
     question: 'Le moyen de la menace dans 222-18 est :',
     options: [
@@ -3659,7 +3659,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : moyen indéterminé, pas besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Condition',
     question: 'La condition peut être :',
     options: [
@@ -3671,7 +3671,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : obligation de faire ou de ne pas faire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-18 — Élément moral',
     question: 'L’élément moral de 222-18 correspond à :',
     options: [
@@ -3686,7 +3686,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // ---------- 222-16 : APPELS / MESSAGES / AGRESSIONS SONORES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Champ',
     question: '222-16 réprime notamment :',
     options: [
@@ -3699,7 +3699,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : appels malveillants réitérés, messages malveillants réitérés, agressions sonores.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Réitération (minimum)',
     question: 'Pour caractériser la réitération (222-16), il faut au moins :',
     options: ['2 appels successifs', '5 appels', '10 appels'],
@@ -3707,7 +3707,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 2 appels successifs suffisent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Agressions sonores',
     question: 'Les agressions sonores (222-16) exigent :',
     options: [
@@ -3720,7 +3720,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : intention “en vue de troubler”, pas de réitération exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-16 — Aggravation',
     question: '222-16 est aggravé lorsque commis par :',
     options: [
@@ -3734,7 +3734,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // ---------- 222-15-1 : EMBUSCADE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Définition',
     question: 'L’embuscade (222-15-1) est :',
     options: [
@@ -3748,7 +3748,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : guet-apens + but de violences avec arme (usage ou menace).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Stade',
     question: '222-15-1 permet d’intervenir :',
     options: [
@@ -3760,7 +3760,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : infraction préparée, violences non réalisées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Tentative',
     question: 'La tentative du délit d’embuscade est :',
     options: [
@@ -3772,7 +3772,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : l’infraction est antérieure à la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Aggravation',
     question: 'L’embuscade est aggravée lorsqu’elle est commise :',
     options: ['En réunion', 'Avec ITT > 8 jours', 'Avec préméditation'],
@@ -3782,7 +3782,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // ---------- 222-14 : VIOLENCES HABITUELLES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Habitude',
     question: 'La notion d’habitude suppose :',
     options: [
@@ -3794,7 +3794,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : répétition des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violence psychologique',
     question: 'Les violences peuvent être constituées :',
     options: [
@@ -3808,7 +3808,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   ),
 
   // ---------- 222-14-5 : FORCES DE SÉCURITÉ / ÉLUS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — Victimes',
     question: '222-14-5 vise notamment :',
     options: [
@@ -3821,7 +3821,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : liste (gendarmerie, police, municipale, douanes, pompiers, AP, élus...).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-5 — ITT (seuil)',
     question: '222-14-5 distingue :',
     options: [
@@ -3837,7 +3837,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // B) 60 CAS PRATIQUES — CONCOURS (ÉNONCÉS LONGS, PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-17 vs R.623-1',
     question:
         'En dispute, X dit une seule fois : « Je vais te casser la gueule ». Aucune lettre, aucun SMS, aucune répétition. Texte le plus adapté ?',
@@ -3847,7 +3847,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-17 exclut les menaces de violences (tentative non punissable) → R.623-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-17 (matérialisée)',
     question:
         'X envoie un seul courrier : « Je vais te brûler ». Pas d’autre message. Qualification principale ?',
@@ -3860,7 +3860,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : écrit = matérialisation, pas besoin de répétition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-18 (condition explicite)',
     question:
         'X dit : « Donne-moi 500 € sinon je te tue ». Une seule fois, oral. Qualification ?',
@@ -3870,7 +3870,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : condition = injonction “donne-moi…”, moyen indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-18 (condition + pas de mort)',
     question:
         'X dit : « Si tu ne retires pas ta plainte, je te frappe ». Une seule fois. Qualification la plus adaptée ?',
@@ -3884,7 +3884,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-18 vise tout délit contre les personnes, sans exigence “tentative punissable”, dès lors qu’il y a condition.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-16 (messages)',
     question:
         'Pendant 2 semaines, X envoie 2 SMS par jour : insultes, propos humiliants, aucun chantage. Qualification ?',
@@ -3897,7 +3897,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : messages malveillants réitérés = 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-16 (agressions sonores)',
     question:
         'Un voisin met la musique très fort chaque nuit “pour faire craquer” la voisine. Qualification la plus adaptée ?',
@@ -3911,7 +3911,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : agressions sonores = volonté de troubler la tranquillité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-15-1 (embuscade)',
     question:
         'Deux individus repèrent les horaires d’un agent pénitentiaire, l’attendent chaque soir près de son domicile avec un couteau “pour lui faire peur”. Ils sont interpellés avant toute attaque. Qualification ?',
@@ -3925,7 +3925,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : guet-apens + but de menacer/commettre violences avec arme ; violences non réalisées OK.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-15-1 (si passage à l’acte)',
     question:
         'Même situation, mais ils sortent le couteau et le menacent réellement. On poursuit :',
@@ -3939,7 +3939,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-15-1 vise les violences en voie de réalisation ; si passage à l’action → textes des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — Tortures/Barbarie (critère)',
     question:
         'Une victime est soumise à des actes d’une gravité exceptionnelle, dépassant de simples violences, visant à nier sa dignité. Qualification ?',
@@ -3952,7 +3952,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : gravité exceptionnelle + volonté de nier dignité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-14 (habitude)',
     question:
         'X frappe sa compagne “souvent”, sur plusieurs mois. Certificats médicaux établissent des ITT variables. Texte principal ?',
@@ -3965,7 +3965,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : répétition + lien conjugal = 222-14.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas concours — 222-14-5 (élu local)',
     question:
         'Après une décision municipale, un conseiller municipal est frappé “en représailles”. La qualité était connue. Texte ?',
@@ -3981,7 +3981,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // (Pour rester lisible ici, je te mets un gros pack de 50
   //  sous forme condensée — mêmes règles, 3 niveaux)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — Menace indirecte',
     question:
         'X menace Y en passant par Z (“dis-lui que je vais le tuer”). Condition 222-17 ?',
@@ -3994,7 +3994,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : menace directe ou indirecte (tiers/rapportée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-17 (infraction pas précisée)',
     question:
         'X écrit : “Tu vas payer, tu vas mourir” sans préciser comment. 222-17 possible ?',
@@ -4008,7 +4008,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : l’infraction menacée n’a pas à être expressément désignée si le sens est clair.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-16 (contenu vs fréquence)',
     question:
         'X appelle 30 fois sans parler. Le caractère malveillant peut se déduire :',
@@ -4022,7 +4022,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : malveillance déductible de la multiplication des appels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-18 (condition implicite)',
     question:
         'X dit : “Si tu continues à témoigner, tu vas y passer”. Qualification la plus adaptée ?',
@@ -4032,7 +4032,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : condition peut être formulée comme un ordre/contrainte (faire/ne pas faire).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pack concours — 222-15-1 (victime proche)',
     question:
         'On attend le fils d’un policier à la sortie de l’école pour lui “mettre un couteau sous la gorge” en raison du métier du père. Texte ?',
@@ -4046,7 +4046,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // D) 20 Q "RÉFLEXE PEINE" (chronométré concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-17 al.1',
     question: '222-17 al.1 :',
     options: ['6 mois + 7 500 €', '1 an + 15 000 €', '3 ans + 45 000 €'],
@@ -4054,7 +4054,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : barème 222-17 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-17 al.2',
     question: '222-17 al.2 :',
     options: ['3 ans + 45 000 €', '5 ans + 75 000 €', '7 ans + 100 000 €'],
@@ -4062,7 +4062,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : menace de mort 222-17 al.2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-16 (simple)',
     question: '222-16 (simple) :',
     options: ['1 an + 15 000 €', '6 mois + 7 500 €', '3 ans + 45 000 €'],
@@ -4070,7 +4070,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : barème 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-15-1 (simple)',
     question: '222-15-1 (simple) :',
     options: ['5 ans + 75 000 €', '7 ans + 100 000 €', '3 ans + 45 000 €'],
@@ -4078,7 +4078,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : barème 222-15-1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Réflexe peine — 222-1',
     question: '222-1 (tortures/barbarie) :',
     options: [
@@ -4101,7 +4101,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-15-1 — EMBUSCADE — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Répression — Base',
     question: 'La peine encourue pour l’embuscade (222-15-1) est :',
     options: [
@@ -4113,7 +4113,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-15-1 (simple) = 5 ans / 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-15-1 — Répression — Réunion',
     question: 'La peine encourue pour l’embuscade aggravée (réunion) est :',
     options: [
@@ -4129,7 +4129,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-1 et s. — TORTURES / BARBARIE — PEINES (RÉCAP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — Base',
     question: 'La peine encourue pour 222-1 (tortures/actes de barbarie) est :',
     options: [
@@ -4141,7 +4141,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-1 = 15 ans de réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — 1er degré',
     question: 'La peine encourue pour 222-3 (1er degré d’aggravation) est :',
     options: [
@@ -4153,7 +4153,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-3 = 20 ans de réclusion + période de sûreté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — 2e degré',
     question: 'La peine encourue pour 222-4 (2e degré d’aggravation) est :',
     options: [
@@ -4165,7 +4165,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-4 = 30 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — Mutilation/infirmité',
     question:
         'Quand les tortures/actes de barbarie entraînent une mutilation ou une infirmité permanente (222-5), la peine est :',
@@ -4179,7 +4179,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-5 (mutilation/infirmité) = 30 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures/Barbarie — Répression — Mort sans intention',
     question:
         'Quand les tortures/actes de barbarie entraînent la mort sans intention de la donner (222-6), la peine est :',
@@ -4196,7 +4196,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-14 — VIOLENCES HABITUELLES (COUPLE / MINEUR / VULNÉRABLE) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — ITT 0 à 8',
     question: 'Violences habituelles (222-14) avec ITT 0 à 8 jours :',
     options: [
@@ -4208,7 +4208,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : tableau 222-14 : ITT 0-8 = 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — ITT > 8',
     question: 'Violences habituelles (222-14) avec ITT > 8 jours :',
     options: [
@@ -4220,7 +4220,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : tableau 222-14 : ITT > 8 = 10 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — Infirmité',
     question:
         'Violences habituelles (222-14) ayant entraîné une mutilation ou une infirmité permanente :',
@@ -4234,7 +4234,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : tableau 222-14 : mutilation/infirmité = 20 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14 — Violences habituelles — Mort',
     question:
         'Violences habituelles (222-14) ayant entraîné la mort sans intention de la donner :',
@@ -4252,7 +4252,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 222-14-1 — VIOLENCES AVEC ARME SUR DAP / SP / TRANSPORT (bande/guet-apens) — PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — ITT 0 à 8',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) avec ITT 0 à 8 jours :',
@@ -4265,7 +4265,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-14-1 4° (ITT 0-8) = 10 ans / 150 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — ITT > 8',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) avec ITT > 8 jours :',
@@ -4279,7 +4279,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-1 3° = 15 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — Infirmité',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) avec mutilation/infirmité permanente :',
@@ -4293,7 +4293,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-1 2° = 20 ans de réclusion + période de sûreté.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: '222-14-1 — Répression — Mort',
     question:
         '222-14-1 (arme + bande organisée ou guet-apens) ayant entraîné la mort sans intention de la donner :',
@@ -4311,7 +4311,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // 30 CAS PRATIQUES ULTRA PIÈGES (QUALIF + TEXTE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-16 vs 222-17',
     question:
         'Un individu appelle 2 fois un médecin à 3h du matin, sans parler, juste pour le réveiller. Qualification la plus adaptée ?',
@@ -4325,7 +4325,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-16 = appels malveillants réitérés ; 2 appels suffisent pour la réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-17 (écrit)',
     question:
         'Un individu écrit sur un mur : « Je vais te tuer ». Qualification principale ?',
@@ -4339,7 +4339,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : matérialisation par écrit = 222-17, sans besoin de réitération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-17 (gestuelle seule)',
     question:
         'Une personne mime un pistolet avec ses doigts et fait « pan pan », sans rien écrire ni répéter. Qualification 222-17 ?',
@@ -4353,7 +4353,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : la gestuelle seule est exclue de la matérialisation de la menace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-18 (condition par abstention)',
     question:
         '« Si tu ne quittes pas la ville, je te tue » (oral, une seule fois). Qualification ?',
@@ -4366,7 +4366,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : condition = faire/ne pas faire ; moyen indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Embuscade',
     question:
         'Deux individus attendent cachés près d’un commissariat avec un bâton pour « faire peur » à un policier à la sortie. Ils sont interpellés avant tout acte. Qualification ?',
@@ -4381,7 +4381,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : embuscade = guet-apens + but de violences avec usage/menace d’une arme ; violences non réalisées OK.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-14-5 (victime)',
     question:
         'Des violences sont commises sur le conjoint d’un gendarme « pour se venger » du gendarme. Texte adapté ?',
@@ -4395,7 +4395,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : 222-14-5 vise aussi le conjoint/ascendants/descendants/domiciliés en raison des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 222-16 (SMS)',
     question:
         'Une personne envoie chaque jour 1 SMS insultant pendant 10 jours. Qualification ?',
@@ -4408,7 +4408,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : SMS réitérés malveillants = 222-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Tortures/Barbarie',
     question:
         'Une victime est ligotée et subit des sévices destinés à l’humilier et nier sa dignité pendant plusieurs heures. Qualification la plus adaptée ?',
@@ -4426,7 +4426,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
   // =========================================================
   // MINI RAFRAÎCHISSEMENT "TENTATIVE / COMPLICITÉ" (Consolidation)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-17',
     question: 'La tentative de 222-17 est :',
     options: [
@@ -4438,7 +4438,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-17 : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-16',
     question: 'La tentative de 222-16 est :',
     options: ['Non', 'Oui', 'Oui uniquement si aggravé'],
@@ -4446,7 +4446,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : 222-16 : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-15-1',
     question: 'La tentative de 222-15-1 (embuscade) est :',
     options: ['Non', 'Oui', 'Oui uniquement en réunion'],
@@ -4455,7 +4455,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Cours : tentative non, l’infraction est déjà au stade préparatoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 222-1',
     question: 'La tentative de tortures/actes de barbarie (222-1) est :',
     options: ['Oui', 'Non', 'Oui seulement si la victime est blessée'],
@@ -4463,7 +4463,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : tentative de crime punissable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Complicité — Menaces',
     question: 'La complicité pour les menaces 222-17 / 222-18 est :',
     options: ['Oui (121-6 / 121-7)', 'Non', 'Oui seulement si menace de mort'],
@@ -4471,7 +4471,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : complicité oui, selon 121-6 et 121-7.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — Tortures/Barbarie',
     question:
         'Vrai ou faux : les tortures/actes de barbarie se distinguent des violences simples par une gravité exceptionnelle et l’atteinte à la dignité.',
@@ -4480,7 +4480,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Cours : gravité exceptionnelle + volonté de nier la dignité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Vrai/Faux',
     question:
         'Affirmation : « En 222-14-5, les anciens élus sont protégés sans limite de temps. »',
@@ -4494,7 +4494,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
         'Le cours : protection dans la limite de 6 ans après expiration du mandat.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Concours — Tentatives',
     question: 'Quelle combinaison est correcte ?',
     options: [
@@ -4507,7 +4507,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours : menaces et embuscade non ; crime de torture oui.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Définition',
     question: 'Les tortures et actes de barbarie se caractérisent par :',
     options: [
@@ -4520,7 +4520,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Définition jurisprudentielle reprise au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Fondement',
     question: 'Les tortures et actes de barbarie sont prévus par :',
     options: [
@@ -4532,7 +4532,7 @@ final List<QuizQuestion> questionAtteinteIntegrite = [
     explanation: 'Le cours cite l’article 222-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tortures — Tentative',
     question: 'La tentative de tortures et actes de barbarie est :',
     options: ['Punissable', 'Non punissable', 'Une contravention'],
@@ -4896,7 +4896,7 @@ class _QuizAtteinteIntegriteState extends State<QuizAtteinteIntegrite>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -5099,7 +5099,7 @@ class _QuizAtteinteIntegriteState extends State<QuizAtteinteIntegrite>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -5282,7 +5282,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5815,10 +5814,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -6189,7 +6189,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -6230,9 +6230,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

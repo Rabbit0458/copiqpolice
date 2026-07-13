@@ -77,7 +77,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
 
-          _Paragraph(
+          const _Paragraph(
             'L’enquête de flagrant délit se caractérise par l’urgence et par des pouvoirs '
             'élargis reconnus aux autorités de police judiciaire. Ce chapitre précise : '
             'quelles autorités peuvent agir, pendant combien de temps l’enquête peut se '
@@ -966,24 +966,24 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'en garde à vue. Certaines catégories bénéficient cependant d’un statut particulier.',
               ),
               SizedBox(height: 6),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les agents diplomatiques et certaines personnes bénéficiant d’immunités internationales ne peuvent être soumis à la garde à vue.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le président de la République bénéficie d’une inviolabilité pendant la durée de son mandat, hors hypothèses spéciales prévues par la Constitution.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les parlementaires peuvent, en cas de crime ou délit flagrant, être placés en garde à vue sous réserve de conditions renforcées et d’une information immédiate de l’autorité compétente.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les mineurs peuvent être placés en garde à vue sous des règles spécifiques, adaptées à leur âge et à leur vulnérabilité.',
               ),
-              const SizedBox(height: 8),
-              const _NotaBox(
+              SizedBox(height: 8),
+              _NotaBox(
                 title: 'Principe',
                 bodySpans: [
                   TextSpan(
@@ -993,7 +993,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // 3.3.9.2 DOMAINE D’APPLICATION QUANT AUX INFRACTIONS
               _SubTitle(
@@ -1004,32 +1004,32 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'd’emprisonnement. Elle n’est pas applicable pour les simples contraventions.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // 3.3.9.3 CONDITIONS DE PLACEMENT EN GARDE À VUE
               _SubTitle('3.3.9.3 — Les conditions de placement en garde à vue'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La décision de placer une personne en garde à vue relève de l’O.P.J., qui exerce cette prérogative sous le contrôle de l’autorité judiciaire. ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'Elle doit répondre à un double test : nécessité pour l’enquête et proportionnalité de l’atteinte à la liberté individuelle.',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Il doit exister une ou plusieurs raisons plausibles de soupçonner que la personne a commis ou tenté de commettre un crime ou un délit puni d’emprisonnement.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La garde à vue doit constituer l’unique moyen de parvenir à au moins un des objectifs prévus par la loi (exécution des investigations, présentation au magistrat, prévention des pressions sur les témoins ou des concertations avec les complices, etc.).',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Rappel jurisprudentiel',
                 bodySpans: [
                   TextSpan(
@@ -1039,19 +1039,19 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // 3.3.9.4 DURÉE DE LA GARDE À VUE
               _SubTitle('3.3.9.4 — La durée de la garde à vue'),
               _Paragraph(
                 'La durée initiale de la garde à vue est de vingt-quatre heures. Elle peut être prolongée une fois pour une nouvelle période de vingt-quatre heures, lorsque la personne est soupçonnée d’un crime ou d’un délit dont la peine d’emprisonnement encourue est supérieure ou égale à un an et que cette prolongation constitue toujours le seul moyen d’atteindre les objectifs légaux.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'La prolongation est autorisée par le procureur de la République, après présentation de la personne ou, le cas échéant, par un moyen de télécommunication audiovisuelle. Elle doit être spécialement motivée au regard des éléments propres au dossier.',
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.3.9.5 CARACTÈRE FACULTATIF DE LA GARDE À VUE
               _SubTitle(
@@ -1062,8 +1062,8 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'L’article 73 alinéa 2 C.P.P. permet, dans certains cas, de laisser la personne libre après interpellation, '
                 'lorsqu’elle présente des garanties suffisantes de représentation et que les nécessités de l’enquête peuvent être satisfaites autrement.',
               ),
-              const SizedBox(height: 6),
-              const _ExempleBox(
+              SizedBox(height: 6),
+              _ExempleBox(
                 title: 'Illustration',
                 bodySpans: [
                   TextSpan(
@@ -1073,7 +1073,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // 3.3.9.6 DÉBUT DE LA GARDE À VUE
               _SubTitle('3.3.9.6 — Le début de la garde à vue'),
@@ -1084,7 +1084,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'devant être prise en compte pour respecter la durée maximale autorisée, elle doit être précisément mentionnée en procédure.',
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.3.9.7 ISSUE DE LA GARDE À VUE
               _SubTitle('3.3.9.7 — L’issue de la garde à vue'),
@@ -1093,7 +1093,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'donner : remise en liberté, éventuellement accompagnée de convocations ultérieures, ou déferrement devant la juridiction compétente.',
               ),
 
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 3.3.9.8 GARANTIES ENTOURANT LA GARDE À VUE
               _SubTitle('3.3.9.8 — Les garanties entourant la garde à vue'),
@@ -1101,19 +1101,19 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'La garde à vue est encadrée par un ensemble de garanties visant à assurer le respect des droits fondamentaux '
                 'de la personne retenue et le contrôle de la mesure par l’autorité judiciaire.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.9.8.1 Garanties concernant la mise en œuvre
               _SubTitle(
                 '3.3.9.8.1 — Garanties concernant la mise en œuvre de la garde à vue',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'La mise en œuvre matérielle de la garde à vue relève de l’O.P.J., qui ne peut déléguer que certaines tâches pratiques '
                 'à des A.P.J. ou assistants d’enquête. Les conditions de déroulement (hébergement, alimentation, hygiène, accès aux soins, '
                 'temps de repos, déplacements) doivent respecter la dignité de la personne gardée à vue.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Traçabilité',
                 bodySpans: [
                   TextSpan(
@@ -1124,7 +1124,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // 3.3.9.8.2 Garanties touchant au contrôle
               _SubTitle(
@@ -1136,7 +1136,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Des autorités indépendantes (Contrôleur général des lieux de privation de liberté, Défenseur des droits, C.P.T., etc.) peuvent également visiter les locaux de garde à vue.',
               ),
 
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // 3.3.9.8.3 DROITS DE LA PERSONNE GARDEE À VUE
               _SubTitle('3.3.9.8.3 — Droits de la personne gardée à vue'),
@@ -1145,26 +1145,26 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'l’O.P.J. doit assurer l’effectivité : être informée de ses droits, faire prévenir un tiers, communiquer, être examinée par un médecin, '
                 'bénéficier de l’assistance d’un avocat, être assistée d’un interprète si nécessaire, et exercer son droit de se taire.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.9.8.3.1 Droit d’être informée
               _SubTitle('3.3.9.8.3.1 — Le droit d’être informée'),
-              const _Paragraph(
+              _Paragraph(
                 'Toute personne placée en garde à vue doit être immédiatement informée, dans une langue qu’elle comprend, '
                 'de la nature de l’infraction, de la durée possible de la mesure, de la possibilité de la prolonger, ainsi que '
                 'de l’ensemble de ses droits (prévenir un proche, consulter un médecin, être assistée par un avocat, garder le silence, etc.).',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Les droits sont notifiés verbalement et, en principe, par la remise d’un formulaire écrit récapitulant ces informations.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Si la personne ne comprend pas le français, les droits lui sont communiqués avec l’aide d’un interprète ou au moyen de formulaires adaptés.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // 3.3.9.8.3.2 Droit de faire prévenir un tiers
               _SubTitle(
@@ -1175,8 +1175,8 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Sauf circonstances insurmontables ou décision motivée du procureur de la République, cette information doit intervenir dans un délai maximal de trois heures '
                 'à compter de la demande.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Refus exceptionnel',
                 bodySpans: [
                   TextSpan(
@@ -1187,7 +1187,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // 3.3.9.8.3.3 Droit de communiquer
               _SubTitle('3.3.9.8.3.3 — Le droit de communiquer'),
@@ -1197,7 +1197,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'et la communication peut être refusée ou limitée si elle risque de favoriser la commission d’une infraction ou de nuire gravement à l’enquête.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // 3.3.9.8.3.4 Droit à un examen médical
               _SubTitle('3.3.9.8.3.4 — Le droit à un examen médical'),
@@ -1205,42 +1205,42 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Toute personne gardée à vue peut demander à être examinée par un médecin. Ce droit peut être exercé dès le début de la garde à vue, '
                 'puis renouvelé en cas de prolongation. Le médecin est désigné par le procureur de la République ou par l’O.P.J. sur instruction de celui-ci.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'L’examen a lieu à l’abri des regards, dans le respect du secret médical et de la dignité de la personne.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le médecin apprécie l’aptitude de la personne à rester en garde à vue et peut formuler des prescriptions ou recommandations relatives à son état de santé.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // 3.3.9.8.3.5 Droit de garder le silence
               _SubTitle('3.3.9.8.3.5 — Le droit de garder le silence'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'En matière pénale, toute personne soupçonnée dispose du droit de se taire sur les faits qui lui sont reprochés. ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'Ce droit, rappelé par le code de procédure pénale, s’applique dès la première audition en garde à vue et tout au long de la procédure.',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'La notification du droit au silence doit être faite dès le placement en garde à vue et rappelée en cas de besoin.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La personne peut choisir de répondre à certaines questions seulement, ou de ne faire aucune déclaration sans que cela puisse être interprété comme un aveu.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Conséquence procédurale',
                 bodySpans: [
                   TextSpan(
@@ -1250,94 +1250,94 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 3.3.9.8.3.6 — Le droit à l’assistance d’un avocat
               _SubTitle('3.3.9.8.3.6 — Le droit à l’assistance d’un avocat'),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Dès le début de la garde à vue et à tout moment de la mesure, la personne peut demander à être assistée par un avocat '
                       '(art. 63-3-1 et 63-4 C.P.P.). ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'Ce droit constitue une garantie essentielle de la défense et de l’équilibre de la procédure pénale.',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Principe et contenu du droit'),
-              const _BulletPoint(
+              _SubTitle('Principe et contenu du droit'),
+              _BulletPoint(
                 text:
                     'Entretien confidentiel avec l’avocat, dans la limite de trente minutes par tranche de vingt-quatre heures.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Possibilité pour l’avocat de consulter certaines pièces de la procédure limitativement énumérées (procès-verbal de notification, certificat médical, procès-verbaux d’audition et de confrontation, etc.).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Possibilité pour l’avocat d’assister aux auditions, confrontations, reconstitutions d’infraction et présentations pour identification de la victime ou du témoin.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Notification et renonciation'),
-              const _Paragraph(
+              _SubTitle('Notification et renonciation'),
+              _Paragraph(
                 'Le droit à l’assistance d’un avocat doit être notifié à la personne dès le début de la garde à vue, puis à chaque éventuelle prolongation. '
                 'Si la personne renonce à l’assistance d’un avocat, cette renonciation doit être exprimée de manière claire et non équivoque et actée dans la procédure. '
                 'La personne peut revenir sur sa décision à tout moment et demander finalement l’assistance d’un avocat.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Personne ne parlant pas français'),
-              const _Paragraph(
+              _SubTitle('Personne ne parlant pas français'),
+              _Paragraph(
                 'Lorsque la personne gardée à vue ne comprend pas la langue française, elle a droit à l’assistance d’un interprète pour l’informer de son droit à un avocat '
                 'et pour permettre les échanges avec celui-ci, y compris au moyen d’outils de télécommunication lorsque cela est nécessaire.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Désignation et contact de l’avocat'),
-              const _Paragraph(
+              _SubTitle('Désignation et contact de l’avocat'),
+              _Paragraph(
                 'La personne gardée à vue peut demander à être assistée par un avocat choisi ou par un avocat commis d’office. '
                 'L’assistance peut également être sollicitée par un tiers (membre de la famille, employeur, autorités consulaires) qui informe l’O.P.J. de cette demande. '
                 'L’avocat doit être avisé sans délai de la demande d’assistance, par tout moyen (appel, message, fax, courriel…).',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'En cas de choix d’un avocat déterminé, l’O.P.J. ou l’assistant d’enquête tente de le joindre par tous moyens et consigne les diligences accomplies (nombre d’appels, horaires, etc.).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'En cas de difficulté ou d’impossibilité de joindre l’avocat choisi, le bâtonnier est saisi pour désigner un avocat de permanence (art. 21-3 C.P.P.).',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Information donnée à l’avocat'),
-              const _Paragraph(
+              _SubTitle('Information donnée à l’avocat'),
+              _Paragraph(
                 'L’avocat doit être informé de la nature et de la date présumée de l’infraction reprochée, afin de pouvoir exercer utilement son rôle. '
                 'Cette information peut être délivrée lors de son arrivée dans les locaux de police ou par échange téléphonique préalable.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Consultation de certaines pièces'),
-              const _Paragraph(
+              _SubTitle('Consultation de certaines pièces'),
+              _Paragraph(
                 'L’avocat peut consulter, sans en prendre copie, certaines pièces limitativement prévues à l’article 63-4-1 C.P.P. '
                 '(procès-verbal de notification, certificat médical, procès-verbaux d’audition et de confrontation, etc.). '
                 'Il peut choisir de les lire avant ou après l’entretien avec la personne gardée à vue.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _SubTitle('Entretien et présence aux actes'),
-              const _Paragraph(
+              _SubTitle('Entretien et présence aux actes'),
+              _Paragraph(
                 'L’avocat peut s’entretenir avec la personne gardée à vue pendant trente minutes, au début de la mesure puis à chaque tranche de vingt-quatre heures. '
                 'Il peut, sous réserve des dispositions spécifiques, assister aux auditions et confrontations de la personne, aux opérations de reconstitution, ainsi qu’aux séances d’identification auxquelles elle participe.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
-              const _NotaBox(
+              _NotaBox(
                 title: 'Limites à la présence de l’avocat',
                 bodySpans: [
                   TextSpan(
@@ -1348,7 +1348,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 3.3.10 — LES AUDITIONS
               _SubTitle('3.3.10 — Les auditions'),
@@ -1356,7 +1356,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Les auditions sont les actes par lesquels l’O.P.J., ou l’A.P.J. agissant sous son contrôle, recueille les déclarations des témoins, des personnes mises en cause '
                 'ou des personnes suspectes. Elles peuvent être réalisées en enquête de flagrance ou dans tout autre cadre procédural.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _SubTitle('3.3.10.1 — Les parties à l’acte'),
               _SubTitle('3.3.10.1.1 — Les agents habilités'),
@@ -1364,7 +1364,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Il s’agit de l’O.P.J. ou, sous son contrôle, de l’A.P.J. Les procès-verbaux d’audition dressés par les A.P.J. sont transmis à l’O.P.J., qui vérifie leur régularité '
                 'et leur conformité aux règles de procédure (circ. 1er mars 1993).',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _SubTitle(
                 '3.3.10.1.2 — Les personnes susceptibles d’être entendues',
@@ -1374,7 +1374,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'ou toute personne en possession d’éléments relatifs à l’infraction. Certaines catégories (agents diplomatiques, représentants d’États étrangers, etc.) '
                 'bénéficient toutefois de règles particulières ou d’immunités.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _SubTitle('3.3.10.2 — L’audition de témoin'),
               _Paragraph(
@@ -1382,16 +1382,16 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 '(art. 62 al. 1 C.P.P.). Il est entendu sans mesure de garde à vue. L’audition peut, si les nécessités de l’enquête le justifient, se dérouler sous contrainte '
                 'pendant une durée maximale de quatre heures (art. 62 al. 2 C.P.P.).',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Le témoin convoqué doit comparaître. Il peut, dans certains cas, être contraint à comparaître par la force publique sur autorisation du magistrat.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Dans le cadre d’infractions graves, la loi permet de protéger l’adresse réelle de certains témoins en ne mentionnant qu’une adresse administrative (art. 706-58 C.P.P.).',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _SubTitle(
                 '3.3.10.3 — Audition du témoin qui devient auteur présumé',
@@ -1401,21 +1401,21 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'il ne peut plus être entendu comme simple témoin. L’enquêteur doit soit lui faire immédiatement bénéficier des droits du mis en cause entendu librement '
                 'ou placé en garde à vue, soit mettre fin à l’audition et lui notifier ses droits avant toute nouvelle audition.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _SubTitle('3.3.10.4 — Audition du mis en cause'),
               _Paragraph(
                 'Le mis en cause peut être entendu sous différents statuts : personne gardée à vue, suspect libre ou personne entendue dans un autre cadre procédural. '
                 'Dans tous les cas, il doit être informé de ses droits fondamentaux (droit à un interprète, à un avocat, au silence, etc.).',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _SubTitle('3.3.10.4.1 — La personne placée en garde à vue'),
               _Paragraph(
                 'La personne gardée à vue est informée de la possibilité d’être assistée par un avocat aux auditions et confrontations. '
                 'L’avocat peut poser des questions à la fin de l’audition, qui sont consignées au procès-verbal si elles sont pertinentes pour la manifestation de la vérité.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _SubTitle('3.3.10.4.2 — Le suspect libre'),
               _Paragraph(
@@ -1423,7 +1423,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'des faits supposés, de son droit de quitter les locaux à tout moment, d’être assisté par un avocat, de se taire ou de répondre aux questions, '
                 'et d’être assisté par un interprète si nécessaire.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _SubTitle(
                 '3.3.10.5 — Enregistrement audiovisuel des auditions en matière criminelle',
@@ -1432,7 +1432,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'En matière criminelle, lorsque la personne est placée en garde à vue pour un crime mentionné à l’article 706-73 C.P.P. ou pour atteinte grave aux intérêts fondamentaux de la nation, '
                 'les auditions doivent faire l’objet d’un enregistrement audiovisuel (art. 64-1 et D. 15-6 C.P.P.), sauf impossibilité technique dûment constatée.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               _SubTitle(
                 '3.3.10.6 — Auditions sur le territoire d’un État étranger',
@@ -1441,7 +1441,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'L’article 18 al. 4 C.P.P. permet à l’O.P.J. de procéder à des auditions sur le territoire d’un État étranger, avec l’accord des autorités compétentes de cet État '
                 'et sur réquisitions du procureur de la République. Ces opérations sont strictement encadrées par le droit international et la coopération judiciaire.',
               ),
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 3.3.11 — LES RÉQUISITIONS
               _SubTitle('3.3.11 — Les réquisitions'),
@@ -1449,7 +1449,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'La réquisition est l’acte par lequel une autorité judiciaire ou un O.P.J., agissant dans les conditions prévues par la loi, demande à une personne, un service ou une '
                 'organisation de lui communiquer des informations, de réaliser un examen technique ou scientifique ou de fournir une prestation utile à l’enquête.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _SubTitle(
                 '3.3.11.1 — Les réquisitions à personnes qualifiées (art. 60 C.P.P.)',
@@ -1458,17 +1458,17 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Les personnes qualifiées (médecins, experts, services de police technique et scientifique, etc.) peuvent être requises pour procéder à des examens, constatations ou analyses. '
                 'Elles interviennent en raison de leurs compétences dans une discipline donnée et peuvent placer sous scellés les objets examinés ou les prélèvements effectués.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Les examens techniques ou scientifiques peuvent être réalisés en urgence, sans réquisition formalisée immédiatement, lorsque les nécessités de l’enquête l’imposent, '
                     'la régularisation intervenant ensuite en procédure.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La différence entre examen technique et expertise résulte de la jurisprudence : l’expertise implique une analyse et des conclusions pouvant être débattues contradictoirement.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               _SubTitle(
                 '3.3.11.2 — Les réquisitions d’ordre général (art. 60-1 C.P.P.)',
@@ -1477,8 +1477,8 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'Le procureur de la République, l’O.P.J. ou, sous son contrôle, l’A.P.J. peuvent, par réquisition écrite ou électronique, demander à toute personne, organisme ou service '
                 'de communiquer des documents, informations ou enregistrements utiles à l’enquête (données administratives, images de vidéosurveillance, données de transport, etc.).',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Secret professionnel et limites',
                 bodySpans: [
                   TextSpan(
@@ -1489,36 +1489,36 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _SubTitle(
                 '3.3.11.3 — Réquisitions portant sur les données de connexion (art. 60-1-2 C.P.P.)',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Les réquisitions visant les données de connexion (données techniques permettant d’identifier la source d’une communication, données de trafic et de localisation) '
                       'sont strictement encadrées. Elles ne sont possibles que si : ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'les nécessités de la procédure l’exigent et que l’enquête porte sur un crime ou un délit puni d’au moins trois ans d’emprisonnement, ou dans certains cas précis (personne disparue, criminalité grave, etc.).',
                   style: TextStyle(fontStyle: FontStyle.italic),
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Les données peuvent être demandées aux opérateurs de communications électroniques, aux fournisseurs d’accès à Internet ou aux hébergeurs de contenus en ligne.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les informations sollicitées concernent uniquement ce qui est nécessaire à l’identification de la source ou au reconstitution du parcours de communication, '
                     'dans le respect du droit au respect de la vie privée et des décisions des juridictions nationales et européennes.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
-              const _NotaBox(
+              _NotaBox(
                 title: 'Protection des droits fondamentaux',
                 bodySpans: [
                   TextSpan(
@@ -1528,7 +1528,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 26),
+              SizedBox(height: 26),
               // 3.3.11.4 — Les réquisitions informatiques et téléphoniques
               _SubTitle(
                 '3.3.11.4 — Les réquisitions informatiques et téléphoniques (art. 60-2 et 60-3 C.P.P.)',
@@ -1542,17 +1542,17 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'secrets protégés (secret professionnel, secret des affaires, secret religieux, '
                 'philosophique, politique ou syndical…).',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Les organismes techniques de police ou de gendarmerie peuvent être saisis directement pour procéder à des examens techniques ou scientifiques, sans qu’il soit nécessaire d’établir une réquisition formelle.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les réquisitions adressées à des opérateurs de télécommunications visent à préserver, pour les besoins de l’enquête, le contenu des informations consultées ou échangées par les utilisateurs.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Refus de déférer',
                 bodySpans: [
                   TextSpan(
@@ -1564,7 +1564,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.3.11.5 — Les réquisitions à interprète
               _SubTitle('3.3.11.5 — Les réquisitions à interprète'),
@@ -1575,16 +1575,16 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'compréhension des droits notifiés et des questions posées, ainsi que la fidélité des réponses '
                 'rapportées en procédure.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'L’interprète peut intervenir physiquement ou, sous conditions de sécurité et de confidentialité, par un moyen de télécommunication audiovisuelle.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Il prête serment de traduire fidèlement les déclarations et peut être choisi sur une liste spécialisée ou désigné à titre occasionnel.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.11.6 — Réquisitions aux fins d’examen médical
               _SubTitle(
@@ -1596,17 +1596,17 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'République réquisitionne alors un médecin, conformément aux dispositions de l’article 63-3 C.P.P. et des textes '
                 'spéciaux applicables aux mineurs ou majeurs protégés.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'L’examen médical a pour objet d’apprécier l’aptitude de la personne à demeurer en garde à vue ou en retenue, et de constater les éventuelles lésions ou blessures.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le certificat médical doit décrire l’état clinique et les blessures éventuelles, sans préjuger de la responsabilité pénale ni des incapacités civiles ou professionnelles.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Mineurs et personnes vulnérables',
                 bodySpans: [
                   TextSpan(
@@ -1616,7 +1616,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.3.11.7 — Réquisitions aux fins d’autopsie
               _SubTitle('3.3.11.7 — Les réquisitions aux fins d’autopsie'),
@@ -1626,17 +1626,17 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'instructions du procureur de la République, réquisitionne un praticien qualifié en médecine légale au sens des articles '
                 '230-28 et suivants du C.P.P.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Seul un médecin spécialisé, titulaire des qualifications requises, peut être requis pour pratiquer une autopsie judiciaire.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les prélèvements effectués lors de l’autopsie sont placés sous scellés et destinés à une éventuelle exploitation ultérieure (analyses, contre-expertise…).',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Information des proches',
                 bodySpans: [
                   TextSpan(
@@ -1645,7 +1645,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.3.11.8 — Géolocalisation en temps réel
               _SubTitle(
@@ -1658,21 +1658,21 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'et ne peut être mise en œuvre que pour les crimes et les délits punis d’au moins trois ans d’emprisonnement, '
                 'lorsque les nécessités de l’enquête l’exigent.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'En enquête de flagrance, la géolocalisation est autorisée par le procureur de la République pour une durée limitée (8 ou 15 jours selon la nature de l’infraction, renouvelable sous contrôle du juge des libertés et de la détention).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'L’introduction dans un lieu d’habitation pour installer ou retirer un dispositif de géolocalisation nécessite l’autorisation écrite et motivée du juge des libertés et de la détention.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'L’activation à distance d’un appareil électronique appartenant à certaines catégories protégées (médecin, avocat, parlementaire, journaliste…) est exclue ou soumise à un régime renforcé.',
               ),
-              const SizedBox(height: 6),
-              const _NotaBox(
+              SizedBox(height: 6),
+              _NotaBox(
                 title: 'Jurisprudence',
                 bodySpans: [
                   TextSpan(
@@ -1681,11 +1681,11 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _ExempleBox(
                 title: 'Tableau de synthèse — Géolocalisation',
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         'Champ d’application : crimes et délits punis d’au moins 3 ans ; toute personne ou tout objet, même à son insu. '
@@ -1696,7 +1696,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 18),
+              SizedBox(height: 18),
 
               // 3.3.11.9 — La réquisition à manœuvrer
               _SubTitle('3.3.11.9 — La réquisition à manœuvrer'),
@@ -1705,12 +1705,12 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'l’enquête (par exemple, un serrurier pour ouvrir une porte, un grutier pour déplacer un conteneur…). Elle ne repose '
                 'pas sur des compétences d’expertise mais sur une prestation technique déterminée.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'La réquisition est fondée, en flagrant délit, sur les dispositions générales relatives aux constatations ou perquisitions ainsi que sur l’article R. 642-1 du code pénal sanctionnant le refus de déférer.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.11.10 — Réquisition de l’art. L. 3354-1 du code de la santé publique
               _SubTitle(
@@ -1722,12 +1722,12 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'd’alcool (analyses cliniques, examens biologiques). Ces vérifications sont réalisées par un médecin, un interne, un étudiant '
                 'en médecine autorisé ou un infirmier habilité.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Les vérifications sont obligatoires en cas d’accident mortel ou grave de la circulation et peuvent également concerner la victime.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.11.11 — Réquisitions des articles L. 234-4 et L. 234-9 du code de la route
               _SubTitle(
@@ -1738,7 +1738,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'ou d’impossibilité de se soumettre aux épreuves de dépistage. Elles autorisent un prélèvement sanguin réalisé par un '
                 'professionnel de santé habilité, sur décision de l’O.P.J. ou du parquet.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // 3.3.11.12 — Réquisitions de l’art. L. 235-2 du code de la route
               _SubTitle(
@@ -1749,7 +1749,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'ou grave, ou en cas de refus de dépistage, l’O.P.J. peut requérir un médecin ou un autre professionnel habilité pour '
                 'effectuer des prélèvements destinés à rechercher la présence de substances stupéfiantes.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.11.13 — Le policier requis
               _SubTitle('3.3.11.13 — Le policier requis'),
@@ -1758,7 +1758,7 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'missions dans le cadre de l’enquête : par le procureur général, le procureur de la République ou le juge d’instruction. '
                 'Dans ce cadre, il agit comme auxiliaire de justice et doit se conformer strictement aux instructions reçues.',
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // 3.3.12 — La saisie des comptes bancaires
               _SubTitle('3.3.12 — La saisie des comptes bancaires'),
@@ -1767,16 +1767,16 @@ class FlagrantDelitProcedurePage extends StatelessWidget {
                 'mobiles incorporels (sommes inscrites sur un compte de dépôt, de paiement, avoirs numériques, etc.), lorsque la loi prévoit '
                 'une peine de confiscation ou en cas de crime ou délit puni d’une peine d’emprisonnement supérieure à un an.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'L’O.P.J., sur autorisation du procureur de la République, peut saisir les sommes figurant sur les comptes visés, afin d’éviter leur disparition avant jugement.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le juge des libertés et de la détention, saisi par le procureur, statue par ordonnance motivée sur le maintien ou la mainlevée de la saisie dans un délai de dix jours, y compris lorsque la juridiction de jugement est déjà saisie.',
               ),
-              const SizedBox(height: 24),
+              SizedBox(height: 24),
             ],
           ),
         ],
@@ -1812,10 +1812,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1886,7 +1886,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1932,7 +1932,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1981,7 +1981,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -2034,7 +2034,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -2059,7 +2059,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -2094,7 +2094,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -2107,7 +2107,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

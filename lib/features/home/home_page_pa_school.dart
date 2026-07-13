@@ -23,8 +23,12 @@ import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/details_page.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
 import 'package:copiqpolice/features/home/parametre_home.dart';
-import 'package:copiqpolice/features/onboarding/pa_school.dart' show PaSchoolProgram;
+import 'package:copiqpolice/features/onboarding/pa_school.dart'
+    show PaSchoolProgram, PaSchoolArt;
 
+import 'package:copiqpolice/core/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/premium_guard.dart';
+import 'package:copiqpolice/features/home/premium_required_page.dart';
 class _T {
   static const ink = Color(0xFF1C1C1C);
   static const g300 = Color(0xFFE0E0E0);
@@ -47,7 +51,7 @@ class _T {
 
 Color _muted(BuildContext context, [double opacity = .7]) {
   final isDark = Theme.of(context).brightness == Brightness.dark;
-  return (isDark ? Colors.white : Colors.black).withOpacity(opacity);
+  return (isDark ? Colors.white : Colors.black).withValues(alpha: opacity);
 }
 
 // ======================================================================
@@ -382,13 +386,9 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
     required String route,
     List<SubCategoryConfig>? subs,
   }) async {
-    // ✅ Sauvegarde "Reprendre"
-    _saveLastOpened(route: route, label: label);
-
-    final redirectRoute = redirectConfig[route];
-    final target = redirectRoute ?? route;
-
     if (subs != null && subs.isNotEmpty) {
+      // ✅ Liste de cours → accès libre
+      _saveLastOpened(route: route, label: label);
       await Navigator.of(context).push(
         MaterialPageRoute(
           builder: (_) =>
@@ -396,17 +396,40 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
         ),
       );
     } else {
+      // ✅ Contenu direct → guard premium
+      final subState = SubscriptionService.instance.state.value;
+      if (!canAccessPremiumContent(subState)) {
+        await Navigator.of(context).pushNamed(PremiumRequiredPage.routeName);
+        return;
+      }
+      _saveLastOpened(route: route, label: label);
+      final redirectRoute = redirectConfig[route];
+      final target = redirectRoute ?? route;
       await Navigator.of(context).pushNamed(target);
     }
 
-    // ✅ refresh après retour d’un module/quiz
+    // ✅ refresh après retour d'un module/quiz
     _refreshProgress();
-    await _loadLastOpened(); // ✅ important : met à jour _lastRoute/_lastLabel après retour
+    await _loadLastOpened();
   }
 
   void _goToTab(int index) {
     HapticFeedback.selectionClick();
     setState(() => _currentTab = index);
+  }
+
+  /// Ouvre le sélecteur de programme PA et recharge la home avec le nouveau choix.
+  Future<void> _pickNewPaProgram() async {
+    final nav = Navigator.of(context);
+    final picked = await nav.push<PaSchoolProgram>(
+      MaterialPageRoute(builder: (_) => const PaSchoolArt()),
+    );
+    if (picked == null || !mounted) return;
+    HomePagePaSchool.program = picked;
+    nav.pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const HomePagePaSchool()),
+      (_) => false,
+    );
   }
 
   // =====================  BUILD  =====================
@@ -433,10 +456,10 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
         )
         .toList(growable: false);
 
-    final icons = const [
+    const icons = [
       Icons.home_rounded,
       Icons.article_rounded,
-      Icons.qr_code_rounded,
+      Icons.grid_view_rounded, // Changer de catégorie PA
       Icons.favorite_rounded,
       Icons.person_rounded,
     ];
@@ -704,7 +727,14 @@ class _HomePageGpxSchoolState extends State<HomePagePaSchool>
       ),
       bottomNavigationBar: _SlidingPillNavBar(
         currentIndex: _currentTab,
-        onTap: (i) => _goToTab(i),
+        onTap: (i) {
+          if (i == 2) {
+            HapticFeedback.selectionClick();
+            _pickNewPaProgram();
+            return;
+          }
+          _goToTab(i);
+        },
         height: 64,
         icons: icons,
       ),
@@ -776,14 +806,14 @@ class _HeroDeck extends StatefulWidget {
   final void Function(_DeckItem item)? onOpen;
 
   const _HeroDeck({
-    Key? key,
+    super.key,
     required this.height,
     required this.items,
     required this.initialIndex,
     this.onIndexChanged,
     this.ctaLabelBuilder,
     this.onOpen,
-  }) : super(key: key);
+  });
 
   @override
   State<_HeroDeck> createState() => _HeroDeckState();
@@ -923,7 +953,7 @@ class _HeroDeckState extends State<_HeroDeck>
     const stiffness = 420.0;
     const damping = 32.0;
 
-    final spring = phys.SpringDescription(
+    const spring = phys.SpringDescription(
       mass: 1,
       stiffness: stiffness,
       damping: damping,
@@ -982,7 +1012,7 @@ class _HeroDeckState extends State<_HeroDeck>
               opacity: opacity,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(radius),
-                child: HeroCard(
+                child: _HeroCard(
                   key: ValueKey(item.route),
                   item: item,
                   isDark: isDark,
@@ -1016,7 +1046,7 @@ class _HeroDeckState extends State<_HeroDeck>
   }
 }
 
-class HeroCard extends StatefulWidget {
+class _HeroCard extends StatefulWidget {
   final _DeckItem item;
   final bool isDark;
 
@@ -1026,19 +1056,19 @@ class HeroCard extends StatefulWidget {
   /// ✅ Injecté par _HeroDeck (le parent gère la nav + persistance)
   final VoidCallback? onOpen;
 
-  const HeroCard({
-    Key? key,
+  const _HeroCard({
+    super.key,
     required this.item,
     required this.isDark,
     this.ctaLabel = 'Découvrir',
     this.onOpen,
-  }) : super(key: key);
+  });
 
   @override
-  State<HeroCard> createState() => _HeroCardState();
+  State<_HeroCard> createState() => _HeroCardState();
 }
 
-class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
+class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
   bool _isFav = false;
 
   late final AnimationController _popCtrl = AnimationController(
@@ -1072,7 +1102,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
   }
 
   @override
-  void didUpdateWidget(covariant HeroCard oldWidget) {
+  void didUpdateWidget(covariant _HeroCard oldWidget) {
     super.didUpdateWidget(oldWidget);
     if (oldWidget.item.route != widget.item.route) {
       FavoritesStore.I.isFavorite(widget.item.route).then((v) {
@@ -1108,18 +1138,19 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
   void _open() {
     HapticFeedback.selectionClick();
 
-    // ✅ priorité : le parent gère la nav (et donc "Reprendre" persisté)
+    // Priorité : le parent gère la nav (et donc le check premium)
     if (widget.onOpen != null) {
       widget.onOpen!.call();
       return;
     }
 
-    // fallback (au cas où)
+    // Fallback direct
     final redirectRoute = redirectConfig[widget.item.route];
     final targetRoute = redirectRoute ?? widget.item.route;
     final subs = widget.item.subcategories;
 
     if (subs != null && subs.isNotEmpty) {
+      // Liste de cours → accès libre
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (_) => _CategoryDetailPage(
@@ -1129,6 +1160,12 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
         ),
       );
     } else {
+      // Contenu direct → guard premium
+      final subState = SubscriptionService.instance.state.value;
+      if (!canAccessPremiumContent(subState)) {
+        Navigator.of(context).pushNamed(PremiumRequiredPage.routeName);
+        return;
+      }
       Navigator.of(context).pushNamed(targetRoute);
     }
   }
@@ -1139,12 +1176,12 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
     try {
       img = Image.asset(widget.item.image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: const Color(0xFF9E9E9E).withOpacity(.25));
+      img = Container(color: const Color(0xFF9E9E9E).withValues(alpha: .25));
     }
 
     final colors = [
-      Colors.black.withOpacity(.65),
-      Colors.black.withOpacity(.30),
+      Colors.black.withValues(alpha: .65),
+      Colors.black.withValues(alpha: .30),
       Colors.transparent,
     ];
 
@@ -1182,7 +1219,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
             top: 12,
             right: 12,
             child: Material(
-              color: Theme.of(context).cardColor.withOpacity(.95),
+              color: Theme.of(context).cardColor.withValues(alpha: .95),
               shape: const CircleBorder(),
               child: InkWell(
                 customBorder: const CircleBorder(),
@@ -1231,7 +1268,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.poppins(
-                      color: Colors.white.withOpacity(.85),
+                      color: Colors.white.withValues(alpha: .85),
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                       letterSpacing: .2,
@@ -1281,7 +1318,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                         color: ctaBg,
                         borderRadius: BorderRadius.circular(18),
                         border: Border.all(
-                          color: Colors.white.withOpacity(.10),
+                          color: Colors.white.withValues(alpha: .10),
                         ),
                       ),
                       child: Row(
@@ -1351,7 +1388,7 @@ class _DepthCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       elevation: elevation,
-      shadowColor: Colors.black.withOpacity(shadowOpacity),
+      shadowColor: Colors.black.withValues(alpha: shadowOpacity),
       borderRadius: BorderRadius.circular(_T.r24),
       clipBehavior: Clip.antiAlias,
       child: child,
@@ -1503,7 +1540,7 @@ class _SlidingPillNavBar extends StatelessWidget {
     final dotSize = (h * 0.62).clamp(30.0, 44.0);
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final barColor = isDark ? Colors.white.withOpacity(.08) : _T.ink;
+    final barColor = isDark ? Colors.white.withValues(alpha: .08) : _T.ink;
 
     return SafeArea(
       top: false,
@@ -1599,7 +1636,7 @@ class _HomeActionCard extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     final ink = isDark ? Colors.white : const Color(0xFF1C1C1C);
-    final muted = (isDark ? Colors.white : Colors.black).withOpacity(.65);
+    final muted = (isDark ? Colors.white : Colors.black).withValues(alpha: .65);
 
     return Material(
       color: theme.cardColor,
@@ -1620,8 +1657,8 @@ class _HomeActionCard extends StatelessWidget {
                 width: 44,
                 height: 44,
                 decoration: BoxDecoration(
-                  color: (isDark ? Colors.white : Colors.black).withOpacity(
-                    .06,
+                  color: (isDark ? Colors.white : Colors.black).withValues(
+                    alpha: .06,
                   ),
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -1677,13 +1714,8 @@ class _CategoryDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
-
-    // Couleurs de base
     final Color bg = isDark ? const Color(0xFF0E0F12) : Colors.white;
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
-    final Color textSoft = isDark
-        ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -1719,9 +1751,6 @@ class _CategoryDetailPage extends StatelessWidget {
             title: sub.label,
             subtitle: _subtitleFor(sub.label),
             imagePath: sub.image ?? _imageFor(sub.label),
-            textMain: textMain,
-            textSoft: textSoft,
-            isDark: isDark,
             onTap: () => Navigator.of(context).pushNamed(sub.route),
           );
         },
@@ -1738,10 +1767,12 @@ class _CategoryDetailPage extends StatelessWidget {
     if (l.contains('quiz generalite') || l.contains('quiz generalite')) {
       return 'assets/images/quiz.jpeg';
     }
-    if (l.contains('classification'))
+    if (l.contains('classification')) {
       return 'assets/images/classification.jpeg';
-    if (l.contains('infraction'))
+    }
+    if (l.contains('infraction')) {
       return 'assets/images/infraction_materiel.jpeg';
+    }
     if (l.contains('tentative')) return 'assets/images/infraction_legal.jpeg';
     if (l.contains('complic')) return 'assets/images/complicite.jpeg';
     if (l.contains('légitime') || l.contains('legitime')) {
@@ -1872,8 +1903,9 @@ class _CategoryDetailPage extends StatelessWidget {
     }
 
     // Contre la personne
-    if (l.contains('mise en danger'))
+    if (l.contains('mise en danger')) {
       return 'assets/images/mise_en_danger.jpeg';
+    }
     if (l.contains('viol') || l.contains('agressions sexuelles')) {
       return 'assets/images/viol_agressions.jpeg';
     }
@@ -2040,8 +2072,9 @@ class _CategoryDetailPage extends StatelessWidget {
     if (l.contains('direction') || l.contains('organisation')) {
       return 'assets/images/stup_direction_org.jpeg';
     }
-    if (l.contains('facilitation'))
+    if (l.contains('facilitation')) {
       return 'assets/images/stup_facilitation.jpeg';
+    }
     if (l.contains('production') || l.contains('fabrication')) {
       return 'assets/images/stup_production.jpeg';
     }
@@ -2180,9 +2213,6 @@ class _ModuleCard extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.imagePath,
-    required this.textMain,
-    required this.textSoft,
-    required this.isDark,
     required this.onTap,
   });
 
@@ -2190,9 +2220,6 @@ class _ModuleCard extends StatelessWidget {
   final String title;
   final String subtitle;
   final String imagePath;
-  final Color textMain;
-  final Color textSoft;
-  final bool isDark;
   final VoidCallback onTap;
 
   static const double _minHeight = 190;
@@ -2206,19 +2233,30 @@ class _ModuleCard extends StatelessWidget {
       text: TextSpan(text: text, style: style),
       textDirection: TextDirection.ltr,
       textAlign: TextAlign.left,
-      maxLines: null, // ✅ on laisse le texte prendre la place nécessaire
+      maxLines: null,
     )..layout(maxWidth: maxWidth);
-
     return tp.size.height;
+  }
+
+  Future<void> _guardedOpen(BuildContext context) async {
+    final ok = await SubscriptionService.instance.guardAppAccess(context);
+    if (!ok) return;
+    onTap();
   }
 
   @override
   Widget build(BuildContext context) {
-    final Color badgeBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-    final Color borderClr = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+    return ValueListenableBuilder<SubscriptionState>(
+      valueListenable: SubscriptionService.instance.state,
+      builder: (context, s, _) {
+        final locked = s.isLocked;
+        final isDark = Theme.of(context).brightness == Brightness.dark;
 
-    return LayoutBuilder(
-      builder: (context, c) {
+        final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+        final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
+
+        return LayoutBuilder(
+          builder: (context, c) {
         // ---- Layout constants (doivent matcher ton design) ----
         const double pad = 16;
         const double badgeHApprox = 28; // approx (12px font + padding)
@@ -2247,7 +2285,7 @@ class _ModuleCard extends StatelessWidget {
         final subtitleStyle = GoogleFonts.fustat(
           fontWeight: FontWeight.w600,
           fontSize: 14,
-          color: Colors.white.withOpacity(.85),
+          color: Colors.white.withValues(alpha: .85),
           height: 1.15,
         );
 
@@ -2280,14 +2318,14 @@ class _ModuleCard extends StatelessWidget {
             : computedHeight;
 
         return GestureDetector(
-          onTap: onTap,
+          onTap: () => _guardedOpen(context),
           child: Semantics(
             button: true,
             label: '$title — découvrir',
             child: ClipRRect(
               borderRadius: BorderRadius.circular(18),
               child: SizedBox(
-                height: cardHeight, // ✅ hauteur bornée => plus de hasSize
+                height: cardHeight,
                 child: Stack(
                   fit: StackFit.expand,
                   children: [
@@ -2308,9 +2346,9 @@ class _ModuleCard extends StatelessWidget {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black.withOpacity(.10),
-                            Colors.black.withOpacity(.55),
-                            Colors.black.withOpacity(.78),
+                            Colors.black.withValues(alpha: .10),
+                            Colors.black.withValues(alpha: .55),
+                            Colors.black.withValues(alpha: .78),
                           ],
                           stops: const [0.0, 0.55, 1.0],
                         ),
@@ -2322,7 +2360,7 @@ class _ModuleCard extends StatelessWidget {
                       padding: const EdgeInsets.all(pad),
                       child: Stack(
                         children: [
-                          // Badge
+                          // Badge "Module" (haut gauche)
                           Align(
                             alignment: Alignment.topLeft,
                             child: Container(
@@ -2346,7 +2384,16 @@ class _ModuleCard extends StatelessWidget {
                             ),
                           ),
 
-                          // Texte (bas gauche) — ✅ ne se fait jamais recouvrir par le CTA
+                          // Badge Premium (haut droite)
+                          if (locked)
+                            Align(
+                              alignment: Alignment.topRight,
+                              child: _PremiumBadge(
+                                onTap: () => Navigator.of(context).pushNamed('/abonnement'),
+                              ),
+                            ),
+
+                          // Texte (bas gauche)
                           Positioned(
                             left: 0,
                             right: ctaApproxW + gapBetweenTextAndCta,
@@ -2378,7 +2425,7 @@ class _ModuleCard extends StatelessWidget {
                           Positioned(
                             right: 0,
                             bottom: 0,
-                            child: _RoundCTA(onTap: onTap),
+                            child: _RoundCTA(onTap: () => _guardedOpen(context)),
                           ),
                         ],
                       ),
@@ -2389,7 +2436,55 @@ class _ModuleCard extends StatelessWidget {
             ),
           ),
         );
+          },
+        );
       },
+    );
+  }
+}
+
+class _PremiumBadge extends StatelessWidget {
+  final VoidCallback? onTap;
+  const _PremiumBadge({this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final child = Container(
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+      decoration: BoxDecoration(
+        color: Colors.black.withValues(alpha: 0.36),
+        borderRadius: BorderRadius.circular(999),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.24), width: 1),
+        boxShadow: const [
+          BoxShadow(blurRadius: 18, offset: Offset(0, 10), color: Color(0x22000000)),
+        ],
+      ),
+      child: Row(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          const Icon(Icons.lock_rounded, size: 14, color: Colors.white),
+          const SizedBox(width: 6),
+          Text(
+            'Premium',
+            style: GoogleFonts.poppins(
+              fontSize: 12,
+              fontWeight: FontWeight.w900,
+              color: Colors.white,
+              letterSpacing: .2,
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (onTap == null) return child;
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(999),
+        child: child,
+      ),
     );
   }
 }
@@ -2401,7 +2496,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const StadiumBorder(),
       child: InkWell(
         customBorder: const StadiumBorder(),
@@ -2542,18 +2637,18 @@ class UiTokensV4 {
     final isDark = theme.brightness == Brightness.dark;
 
     final ink = isDark ? Colors.white : const Color(0xFF111111);
-    final muted = ink.withOpacity(.62);
+    final muted = ink.withValues(alpha: .62);
 
     final surface = isDark
-        ? Colors.white.withOpacity(.06)
-        : Colors.black.withOpacity(.03);
+        ? Colors.white.withValues(alpha: .06)
+        : Colors.black.withValues(alpha: .03);
 
     final glass = isDark
-        ? Colors.white.withOpacity(.055)
-        : Colors.white.withOpacity(.74);
+        ? Colors.white.withValues(alpha: .055)
+        : Colors.white.withValues(alpha: .74);
 
-    final border = ink.withOpacity(isDark ? .12 : .10);
-    final track = ink.withOpacity(isDark ? .14 : .10);
+    final border = ink.withValues(alpha: isDark ? .12 : .10);
+    final track = ink.withValues(alpha: isDark ? .14 : .10);
 
     final brand =
         brandAccent ??
@@ -2580,25 +2675,28 @@ class UiTokensV4 {
   SweepGradient brandSweep(double t) => SweepGradient(
     transform: GradientRotation(t * 2 * math.pi),
     colors: [
-      brand.withOpacity(isDark ? .95 : .85),
-      brand.withOpacity(isDark ? .22 : .16),
-      brand.withOpacity(isDark ? .95 : .85),
+      brand.withValues(alpha: isDark ? .95 : .85),
+      brand.withValues(alpha: isDark ? .22 : .16),
+      brand.withValues(alpha: isDark ? .95 : .85),
     ],
   );
 
   SweepGradient scoreSweep(double t) => SweepGradient(
     transform: GradientRotation((t + .18) * 2 * math.pi),
     colors: [
-      score.withOpacity(isDark ? .95 : .85),
-      score.withOpacity(isDark ? .22 : .16),
-      score.withOpacity(isDark ? .95 : .85),
+      score.withValues(alpha: isDark ? .95 : .85),
+      score.withValues(alpha: isDark ? .22 : .16),
+      score.withValues(alpha: isDark ? .95 : .85),
     ],
   );
 
   LinearGradient brandTint() => LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [brand.withOpacity(isDark ? .18 : .14), Colors.transparent],
+    colors: [
+      brand.withValues(alpha: isDark ? .18 : .14),
+      Colors.transparent,
+    ],
   );
 }
 
@@ -2617,8 +2715,8 @@ class ProgressCardV4 extends StatelessWidget {
   String _formatDuration(Duration d) {
     final h = d.inHours;
     final m = d.inMinutes.remainder(60);
-    if (h <= 0) return '${m} min';
-    return '${h} h ${m.toString().padLeft(2, '0')}';
+    if (h <= 0) return '$m min';
+    return '$h h ${m.toString().padLeft(2, '0')}';
   }
 
   // Niveau = moyenne des 5 derniers quiz (ou moins si <5)
@@ -2815,15 +2913,15 @@ class ProgressCardV4 extends StatelessWidget {
                         width: 10,
                         height: 10,
                         decoration: BoxDecoration(
-                          color: mastery.color.withOpacity(
-                            uiT.isDark ? .90 : .85,
+                          color: mastery.color.withValues(
+                            alpha: uiT.isDark ? .90 : .85,
                           ),
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 12,
-                              color: mastery.color.withOpacity(
-                                uiT.isDark ? .20 : .14,
+                              color: mastery.color.withValues(
+                                alpha: uiT.isDark ? .20 : .14,
                               ),
                             ),
                           ],
@@ -2853,10 +2951,10 @@ class ProgressCardV4 extends StatelessWidget {
                             vertical: 7,
                           ),
                           decoration: BoxDecoration(
-                            color: mastery.color.withOpacity(.10),
+                            color: mastery.color.withValues(alpha: .10),
                             borderRadius: BorderRadius.circular(999),
                             border: Border.all(
-                              color: mastery.color.withOpacity(.22),
+                              color: mastery.color.withValues(alpha: .22),
                             ),
                           ),
                           child: Text(
@@ -2928,9 +3026,9 @@ class _TinyPill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
       decoration: BoxDecoration(
-        color: uiT.brand.withOpacity(uiT.isDark ? .10 : .08),
+        color: uiT.brand.withValues(alpha: uiT.isDark ? .10 : .08),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: uiT.brand.withOpacity(.18)),
+        border: Border.all(color: uiT.brand.withValues(alpha: .18)),
       ),
       child: Text(
         text,
@@ -2963,9 +3061,9 @@ class _MasteryChipV4 extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
       decoration: BoxDecoration(
-        color: color.withOpacity(.10),
+        color: color.withValues(alpha: .10),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: color.withOpacity(.22)),
+        border: Border.all(color: color.withValues(alpha: .22)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -3012,7 +3110,10 @@ class _BrandIconTile extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [uiT.brand.withOpacity(uiT.isDark ? .22 : .16), uiT.surface],
+          colors: [
+            uiT.brand.withValues(alpha: uiT.isDark ? .22 : .16),
+            uiT.surface,
+          ],
         ),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: uiT.border),
@@ -3034,9 +3135,9 @@ class _ScoreChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: uiT.score.withOpacity(uiT.isDark ? .14 : .10),
+        color: uiT.score.withValues(alpha: uiT.isDark ? .14 : .10),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: uiT.score.withOpacity(.26)),
+        border: Border.all(color: uiT.score.withValues(alpha: .26)),
       ),
       child: Text(
         label,
@@ -3079,14 +3180,16 @@ class _DetailsButtonV4State extends State<_DetailsButtonV4> {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(999),
-            color: widget.uiT.brand.withOpacity(widget.uiT.isDark ? .12 : .10),
-            border: Border.all(color: widget.uiT.brand.withOpacity(.28)),
+            color: widget.uiT.brand.withValues(
+              alpha: widget.uiT.isDark ? .12 : .10,
+            ),
+            border: Border.all(color: widget.uiT.brand.withValues(alpha: .28)),
             boxShadow: [
               BoxShadow(
                 blurRadius: 18,
                 offset: const Offset(0, 10),
-                color: widget.uiT.brand.withOpacity(
-                  widget.uiT.isDark ? .12 : .08,
+                color: widget.uiT.brand.withValues(
+                  alpha: widget.uiT.isDark ? .12 : .08,
                 ),
               ),
             ],
@@ -3134,9 +3237,9 @@ class _StatPillV4 extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: uiT.brand.withOpacity(uiT.isDark ? .10 : .08),
+        color: uiT.brand.withValues(alpha: uiT.isDark ? .10 : .08),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: uiT.brand.withOpacity(.22)),
+        border: Border.all(color: uiT.brand.withValues(alpha: .22)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -3156,13 +3259,13 @@ class _StatPillV4 extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
             decoration: BoxDecoration(
-              color: (uiT.isDark ? Colors.white : Colors.black).withOpacity(
-                .06,
+              color: (uiT.isDark ? Colors.white : Colors.black).withValues(
+                alpha: .06,
               ),
               borderRadius: BorderRadius.circular(999),
               border: Border.all(
-                color: (uiT.isDark ? Colors.white : Colors.black).withOpacity(
-                  .08,
+                color: (uiT.isDark ? Colors.white : Colors.black).withValues(
+                  alpha: .08,
                 ),
               ),
             ),
@@ -3363,7 +3466,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         ),
         SubCategoryConfig(
           label: 'Direction générale de la sécurité intérieure',
-          route: '/pa/institution/organisation_pn/dgsi.jpeg',
+          route: '/pa/institution/organisation_pn/dgsi',
           image: 'assets/images/dgsi.jpeg',
         ),
         SubCategoryConfig(
@@ -3587,53 +3690,55 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
       route: '/pa/dps_dpg/socle_initial/cadres_juridiques',
       subcategories: [
         SubCategoryConfig(
-          label: 'Les cadres d\'enquête',
-          route: '/gpx/generalites/cadres_enquete_intro',
+          label: "Les cadres d'enquête",
+          route: '/pa/dps_dpg/cadres_juridiques/cadres_enquete_intro',
         ),
         SubCategoryConfig(
-          label: 'L’enquête de flagrant délit',
-          route: '/gpx/generalites/flagrant_delit_intro',
+          label: "L'enquête de flagrant délit",
+          route: '/pa/dps_dpg/cadres_juridiques/flagrant_delit_intro',
         ),
         SubCategoryConfig(
-          label: 'L’enquête préliminaire',
-          route: '/gpx/generalites/enquete_preliminaire_intro',
+          label: "L'enquête préliminaire",
+          route: '/pa/dps_dpg/cadres_juridiques/enquete_preliminaire_intro',
         ),
         SubCategoryConfig(
           label: 'La commission rogatoire',
-          route: '/gpx/generalites/commission_rogatoire_intro',
+          route: '/pa/dps_dpg/cadres_juridiques/commission_rogatoire_intro',
         ),
         SubCategoryConfig(
-          label: 'Découverte d’une personne grièvement blessée',
-          route: '/gpx/generalites/personne_blessee_intro',
+          label: "Découverte d'une personne grièvement blessée",
+          route: '/pa/dps_dpg/cadres_juridiques/personne_blessee_intro',
         ),
         SubCategoryConfig(
           label: 'Mort de cause inconnue ou suspecte',
-          route: '/gpx/generalites/mort_inconnue_intro',
+          route: '/pa/dps_dpg/cadres_juridiques/mort_inconnue/intro',
         ),
         SubCategoryConfig(
           label: 'Délinquance & criminalité organisées',
-          route: '/gpx/generalites/criminalite_deliquance_intro',
+          route: '/pa/dps_dpg/cadres_juridiques/criminalite_organisee_contenu',
         ),
         SubCategoryConfig(
           label: 'Recherche des personnes en fuite',
-          route: '/gpx/generalites/personnes_fuite_intro',
+          route:
+              '/pa/dps_dpg/cadres_juridiques/recherche_personnes_fuite/intro',
         ),
         SubCategoryConfig(
           label: 'Disparitions inquiétantes',
-          route: '/gpx/cadres_juridiques/disparitions_inquietantes_intro',
+          route:
+              '/pa/dps_dpg/cadres_juridiques/disparitions_inquietantes_intro',
         ),
       ],
     ),
 
     CategoryConfig(
-      label: 'Contrôle d’identité',
+      label: "Contrôle d'identité",
       badge: 'Socle initial',
       image: 'assets/images/controle_identite.jpeg',
       route: '/pa/dps_dpg/socle_initial/controle_identite',
       subcategories: [
         SubCategoryConfig(
-          label: 'Contrôles et vérifications d’identité',
-          route: '/gpx/generalites/flagrant_delit_intro',
+          label: "Contrôles et vérifications d'identité",
+          route: '/pa/dps_dpg/cadres_juridiques/controle_identite',
         ),
       ],
     ),
@@ -3647,71 +3752,61 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Compétences des agents verbalisateurs',
           route: '/pa/dps_dpg/socle_initial/circulation/agents_verbalisateurs',
+          image: 'assets/images/agents_verbalisateurs.png',
         ),
         SubCategoryConfig(
           label: 'Conduite après usage de stupéfiants',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/conduite_stupefiants',
+          route: '/pa/dps_dpg/socle_initial/circulation/conduite_stupefiants',
         ),
         SubCategoryConfig(
-          label: 'Conduite en état d’ivresse',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/ivresse',
+          label: "Conduite en état d'ivresse",
+          route: '/pa/dps_dpg/socle_initial/circulation/ivresse',
         ),
         SubCategoryConfig(
-          label: 'Conduite sous l’empire d’un état alcoolique',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/etat_alcoolique',
+          label: "Conduite sous l'empire d'un état alcoolique",
+          route: '/pa/dps_dpg/socle_initial/circulation/etat_alcoolique',
         ),
         SubCategoryConfig(
-          label: 'Défaut d’assurance',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_assurance',
+          label: "Défaut d'assurance",
+          route: '/pa/dps_dpg/socle_initial/circulation/defaut_assurance',
         ),
         SubCategoryConfig(
           label: 'Défaut de permis de conduire',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/defaut_permis',
+          route: '/pa/dps_dpg/socle_initial/circulation/defaut_permis',
         ),
         SubCategoryConfig(
           label: 'Délit de fuite',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/delit_fuite',
+          route: '/pa/dps_dpg/socle_initial/circulation/delit_fuite',
         ),
         SubCategoryConfig(
           label: 'Grand excès de vitesse',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/grand_exces_vitesse',
+          route: '/pa/dps_dpg/socle_initial/circulation/grand_exces_vitesse',
         ),
         SubCategoryConfig(
           label: 'Refus de vérifications',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_verifications',
+          route: '/pa/dps_dpg/socle_initial/circulation/refus_verifications',
         ),
         SubCategoryConfig(
-          label: 'Refus d’obtempérer',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/refus_obtemperer',
+          label: "Refus d'obtempérer",
+          route: '/pa/dps_dpg/socle_initial/circulation/refus_obtemperer',
         ),
         SubCategoryConfig(
           label: 'Rodéo motorisé',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/rodeo_motorise',
+          route: '/pa/dps_dpg/socle_initial/circulation/rodeo_motorise',
         ),
         SubCategoryConfig(
           label: 'Plaques & inscriptions (délits liés)',
-          route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/plaques_inscriptions',
+          route: '/pa/dps_dpg/socle_initial/circulation/plaques_inscriptions',
         ),
         SubCategoryConfig(
           label: 'Incitation / organisation / promotion',
           route:
-              '/gpx_scolarité_pages/infraction_circulation_routière_pages/incitation_organisation_promotion',
+              '/pa/dps_dpg/socle_initial/circulation/incitation_organisation_promotion',
+          image: 'assets/images/incitation.png',
         ),
         SubCategoryConfig(
           label: 'Quiz — Infractions à la circulation routière',
-          route:
-              '/gpx/infraction_circulation_routière_pages/quiz/quiz_circulation_routiere',
+          route: '/pa/dps_dpg/quiz/quiz_circulation_routiere',
         ),
       ],
     ),
@@ -3731,6 +3826,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           label: 'La magistrature',
           route:
               '/pa/dps_dpg/socle_initial/organisation_judiciaire/magistrature',
+          image: 'assets/images/magistrature.png',
         ),
       ],
     ),
@@ -3738,7 +3834,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Atteintes aux biens',
       badge: 'Socle initial',
-      image: 'assets/images/contre_biens.png',
+      image: 'assets/images/atteintes_biens.jpeg',
       route: '/pa/dps_dpg/socle_initial/atteintes_biens',
       subcategories: [
         SubCategoryConfig(
@@ -3762,6 +3858,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Tags et graffitis',
           route: '/pa/dps_dpg/socle_initial/atteintes_biens/tags_graffitis',
+          image: 'assets/images/tags_graffitis.png',
         ),
       ],
     ),
@@ -3769,13 +3866,14 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Atteintes aux personnes',
       badge: 'Socle initial',
-      image: 'assets/images/contre_personne.png',
+      image: 'assets/images/atteintes_personnes.jpeg',
       route: '/pa/dps_dpg/socle_initial/atteintes_personnes',
       subcategories: [
         SubCategoryConfig(
           label: 'Les discriminations',
           route:
               '/pa/dps_dpg/socle_initial/atteintes_personnes/discriminations',
+          image: 'assets/images/discriminations.png',
         ),
         SubCategoryConfig(
           label: 'Les violences volontaires',
@@ -3790,6 +3888,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Violences contre les forces de sécurité intérieure',
           route: '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_fsi',
+          image: 'assets/images/violence_pdap.png',
         ),
         SubCategoryConfig(
           label: 'Atteintes volontaires à la vie',
@@ -3827,6 +3926,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
           label: 'Outrage sexiste et sexuel',
           route:
               '/pa/dps_dpg/socle_initial/atteintes_personnes/outrage_sexiste',
+          image: 'assets/images/outrage_sexiste.png',
         ),
       ],
     ),
@@ -3834,25 +3934,29 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Autorité de l’État',
       badge: 'Socle initial',
-      image: 'assets/images/repression.png',
+      image: 'assets/images/autorite_etat.png',
       route: '/pa/dps_dpg/socle_initial/autorite_etat',
       subcategories: [
         SubCategoryConfig(
           label: 'Refus d’obtempérer',
           route: '/pa/dps_dpg/socle_initial/autorite_etat/refus_obtemperer',
+          image: 'assets/images/refus_obtemperer_pn.png',
         ),
         SubCategoryConfig(
           label: 'L’outrage',
           route: '/pa/dps_dpg/socle_initial/autorite_etat/outrage',
+          image: 'assets/images/outrage_pn.png',
         ),
         SubCategoryConfig(
           label: 'La rébellion',
           route: '/pa/dps_dpg/socle_initial/autorite_etat/rebellion',
+          image: 'assets/images/rebellion_pn.png',
         ),
         SubCategoryConfig(
           label: 'Provocation directe à la rébellion',
           route:
               '/pa/dps_dpg/socle_initial/autorite_etat/provocation_rebellion',
+          image: 'assets/images/provocation_rebellion_pn.png',
         ),
       ],
     ),
@@ -3869,15 +3973,18 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Le droit pénal',
           route: '/pa/dps_dpg/socle_avance/generalites/droit_penal',
+          image: 'assets/images/droit_penal_generalite.png',
         ),
         SubCategoryConfig(
           label: 'Immunités et inviolabilités',
           route:
               '/pa/dps_dpg/socle_avance/generalites/immunites_inviolabilites',
+          image: 'assets/images/immunite.png',
         ),
         SubCategoryConfig(
           label: 'La responsabilité pénale',
           route: '/pa/dps_dpg/socle_avance/generalites/responsabilite_penale',
+          image: 'assets/images/responsabilite_penale.png',
         ),
       ],
     ),
@@ -3885,32 +3992,38 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Acteurs de la Police Judiciaire',
       badge: 'Socle avancé',
-      image: 'assets/images/pp_action_publique_autorites_pj.png',
+      image: 'assets/images/police_judiciaire.png',
       route: '/pa/dps_dpg/socle_avance/acteurs_pj',
       subcategories: [
         SubCategoryConfig(
           label: 'Compétences des OPJ',
           route: '/pa/dps_dpg/socle_avance/acteurs_pj/opj',
+          image: 'assets/images/opj.png',
         ),
         SubCategoryConfig(
           label: 'Compétences des APJ',
           route: '/pa/dps_dpg/socle_avance/acteurs_pj/apj',
+          image: 'assets/images/gardien_de_la_paix.png',
         ),
         SubCategoryConfig(
           label: 'Assistants d’enquête',
           route: '/pa/dps_dpg/socle_avance/acteurs_pj/assistants_enquete',
+          image: 'assets/images/assistant_enquete.png',
         ),
         SubCategoryConfig(
           label: 'Prérogatives judiciaires (OPJ / APJ / APJA)',
           route: '/pa/dps_dpg/socle_avance/acteurs_pj/prerogatives',
+          image: 'assets/images/prerogative.png',
         ),
         SubCategoryConfig(
           label: 'Le procureur de la République',
           route: '/pa/dps_dpg/socle_avance/acteurs_pj/procureur',
+          image: 'assets/images/procureur.png',
         ),
         SubCategoryConfig(
           label: 'Le juge d’instruction',
           route: '/pa/dps_dpg/socle_avance/acteurs_pj/juge_instruction',
+          image: 'assets/images/juge_instruction.png',
         ),
       ],
     ),
@@ -3918,32 +4031,38 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Atteintes aux biens',
       badge: 'Socle avancé',
-      image: 'assets/images/contre_biens.png',
+      image: 'assets/images/atteintes_biens.jpeg',
       route: '/pa/dps_dpg/socle_avance/atteintes_biens',
       subcategories: [
         SubCategoryConfig(
           label: 'L’extorsion',
           route: '/pa/dps_dpg/socle_avance/atteintes_biens/extorsion',
+          image: 'assets/images/extorsion.png',
         ),
         SubCategoryConfig(
           label: 'L’escroquerie',
           route: '/pa/dps_dpg/socle_avance/atteintes_biens/escroquerie',
+          image: 'assets/images/escroquerie.png',
         ),
         SubCategoryConfig(
           label: 'L’abus de confiance',
           route: '/pa/dps_dpg/socle_avance/atteintes_biens/abus_confiance',
+          image: 'assets/images/abus_confiance.png',
         ),
         SubCategoryConfig(
           label: 'La filouterie',
           route: '/pa/dps_dpg/socle_avance/atteintes_biens/filouterie',
+          image: 'assets/images/filouterie.png',
         ),
         SubCategoryConfig(
           label: 'Le recel',
           route: '/pa/dps_dpg/socle_avance/atteintes_biens/recel',
+          image: 'assets/images/recel_vol.png',
         ),
         SubCategoryConfig(
           label: 'Abstention volontaire de combattre un sinistre',
           route: '/pa/dps_dpg/socle_avance/atteintes_biens/abstention_sinistre',
+          image: 'assets/images/abstention_volontaire.png',
         ),
       ],
     ),
@@ -3951,37 +4070,44 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Atteintes aux personnes',
       badge: 'Socle avancé',
-      image: 'assets/images/contre_personne.png',
+      image: 'assets/images/contre_personne.jpeg',
       route: '/pa/dps_dpg/socle_avance/atteintes_personnes',
       subcategories: [
         SubCategoryConfig(
           label: 'Atteintes involontaires à la vie et à l’intégrité',
           route: '/pa/dps_dpg/socle_avance/atteintes_personnes/involontaires',
+          image: 'assets/images/atteintes_involontaires.png',
         ),
         SubCategoryConfig(
           label: 'Menaces contre les personnes',
           route: '/pa/dps_dpg/socle_avance/atteintes_personnes/menaces',
+          image: 'assets/images/menaces.png',
         ),
         SubCategoryConfig(
           label: 'Entrave volontaire à l’arrivée des secours',
           route: '/pa/dps_dpg/socle_avance/atteintes_personnes/entrave_secours',
+          image: 'assets/images/entrave_secours.png',
         ),
         SubCategoryConfig(
           label: 'Non-obstacle à la commission d’un crime ou délit',
           route: '/pa/dps_dpg/socle_avance/atteintes_personnes/non_obstacle',
+          image: 'assets/images/non_obstacle.png',
         ),
         SubCategoryConfig(
           label: 'Non-assistance à personne en péril',
           route: '/pa/dps_dpg/socle_avance/atteintes_personnes/non_assistance',
+          image: 'assets/images/non_assistance.png',
         ),
         SubCategoryConfig(
           label: 'Appels téléphoniques malveillants',
           route:
               '/pa/dps_dpg/socle_avance/atteintes_personnes/appels_malveillants',
+          image: 'assets/images/appels_malveillants.png',
         ),
         SubCategoryConfig(
           label: 'Risque causé à autrui',
           route: '/pa/dps_dpg/socle_avance/atteintes_personnes/risque_autrui',
+          image: 'assets/images/risque_autrui.png',
         ),
       ],
     ),
@@ -3999,6 +4125,7 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Incitation / organisation / promotion',
           route: '/pa/dps_dpg/socle_avance/delits_routiers/incitation',
+          image: 'assets/images/incitation.png',
         ),
         SubCategoryConfig(
           label: 'Délit de fuite',
@@ -4007,11 +4134,13 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Refus d’obtempérer',
           route: '/pa/dps_dpg/socle_avance/delits_routiers/refus_obtemperer',
+          image: 'assets/images/refus_obtemperer.png',
         ),
         SubCategoryConfig(
           label:
               'Autres délits routiers (alcool, stup, permis, vérifications…)',
           route: '/pa/dps_dpg/socle_avance/delits_routiers/autres',
+          image: 'assets/images/autres_delits_routiers.png',
         ),
       ],
     ),
@@ -4019,20 +4148,23 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
     CategoryConfig(
       label: 'Autorité de l’État',
       badge: 'Socle avancé',
-      image: 'assets/images/repression.png',
+      image: 'assets/images/autorite_etat.png',
       route: '/pa/dps_dpg/socle_avance/autorite_etat',
       subcategories: [
         SubCategoryConfig(
           label: 'Menaces envers les dépositaires de l’autorité publique',
           route: '/pa/dps_dpg/socle_avance/autorite_etat/menaces',
+          image: 'assets/images/menaces_pdap.png',
         ),
         SubCategoryConfig(
           label: 'Corruption passive',
           route: '/pa/dps_dpg/socle_avance/autorite_etat/corruption_passive',
+          image: 'assets/images/corruption_passive.png',
         ),
         SubCategoryConfig(
           label: 'Corruption active',
           route: '/pa/dps_dpg/socle_avance/autorite_etat/corruption_active',
+          image: 'assets/images/corruption_active.png',
         ),
       ],
     ),
@@ -4050,6 +4182,189 @@ const Map<PaSchoolProgram, List<CategoryConfig>> paSchoolCategoriesConfig = {
         SubCategoryConfig(
           label: 'Cession / offre illicites (consommation personnelle)',
           route: '/pa/dps_dpg/socle_avance/stupefiants/cession_offre',
+        ),
+      ],
+    ),
+  ],
+
+  PaSchoolProgram.mememtoCirculationRoutiere: [
+    // =========================================================
+    // 1) PROCÉDURES EN MATIÈRE DE CIRCULATION ROUTIÈRE
+    // =========================================================
+    CategoryConfig(
+      label: 'Procédures circulation routière',
+      badge: 'Procédures',
+      image: 'assets/images/memento_procedures.jpeg',
+      route: '/pa/memento_circulation/procedures',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'L’amende forfaitaire',
+          route: '/pa/memento_circulation/procedures/amende_forfaitaire',
+          image: 'assets/images/amende_forfaitaire.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’amende forfaitaire délictuelle',
+          route: '/pa/memento_circulation/procedures/amende_forfaitaire_delictuelle',
+          image: 'assets/images/amende_forfaitaire_delictuelle.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La consignation',
+          route: '/pa/memento_circulation/procedures/consignation',
+          image: 'assets/images/consignation.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’immobilisation du véhicule',
+          route: '/pa/memento_circulation/procedures/immobilisation',
+          image: 'assets/images/immobilisation.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La mise en fourrière',
+          route: '/pa/memento_circulation/procedures/mise_en_fourriere',
+          image: 'assets/images/mise_en_fourriere.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La conduite sous l’influence de l’alcool',
+          route: '/pa/memento_circulation/procedures/conduite_alcool',
+          image: 'assets/images/ivresse.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La conduite après usage de stupéfiants',
+          route: '/pa/memento_circulation/procedures/conduite_stupefiants',
+          image: 'assets/images/stupefiants.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'La rétention du permis de conduire',
+          route: '/pa/memento_circulation/procedures/retention_permis',
+          image: 'assets/images/retention_permis.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Le permis à points',
+          route: '/pa/memento_circulation/procedures/permis_a_points',
+          image: 'assets/images/permis_points.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Procédures circulation',
+          route: '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere',
+          image: 'assets/images/quiz.jpeg',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // 2) CONTRÔLE ROUTIER & PIÈCES
+    // =========================================================
+    CategoryConfig(
+      label: 'Contrôle routier & pièces',
+      badge: 'Contrôle',
+      image: 'assets/images/memento_controle_routier.jpeg',
+      route: '/pa/memento_circulation/controle_routier',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Le cadre légal du contrôle routier',
+          route: '/pa/memento_circulation/controle_routier/cadre_legal',
+          image: 'assets/images/cadres_juridiques.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Le permis de conduire',
+          route: '/pa/memento_circulation/controle_routier/permis_conduire',
+          image: 'assets/images/permis_conduire.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Le brevet de sécurité routière',
+          route: '/pa/memento_circulation/controle_routier/bsr',
+          image: 'assets/images/bsr.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Les certificats d’immatriculation',
+          route: '/pa/memento_circulation/controle_routier/certificat_immatriculation',
+          image: 'assets/images/certificat_immatriculation.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Le contrôle technique des véhicules',
+          route: '/pa/memento_circulation/controle_routier/controle_technique',
+          image: 'assets/images/controle_technique.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'L’assurance',
+          route: '/pa/memento_circulation/controle_routier/assurance_obligatoire',
+          image: 'assets/images/assurance_obligatoire.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Contrôle routier',
+          route: '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere',
+          image: 'assets/images/quiz.jpeg',
+        ),
+      ],
+    ),
+
+    // =========================================================
+    // 3) ÉQUIPEMENTS VÉHICULES & USAGERS
+    // =========================================================
+    CategoryConfig(
+      label: 'Équipements véhicules & usagers',
+      badge: 'Équipements',
+      image: 'assets/images/memento_equipements.jpeg',
+      route: '/pa/memento_circulation/equipements',
+      subcategories: [
+        SubCategoryConfig(
+          label: 'Les pneumatiques',
+          route: '/pa/memento_circulation/equipements/pneumatiques',
+          image: 'assets/images/pneumatiques.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Éclairage et signalisation',
+          route: '/pa/memento_circulation/equipements/eclairage_signalisation',
+          image: 'assets/images/eclairage_signalisation.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Chargement',
+          route: '/pa/memento_circulation/equipements/chargement',
+          image: 'assets/images/chargement.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Les plaques',
+          route: '/pa/memento_circulation/equipements/plaques',
+          image: 'assets/images/plaques.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Miroirs / rétroviseurs / vision indirecte',
+          route: '/pa/memento_circulation/equipements/retroviseurs_vision',
+          image: 'assets/images/retroviseurs.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Les essuie-glace',
+          route: '/pa/memento_circulation/equipements/essuie_glace',
+          image: 'assets/images/essuie_glace.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Nuisances des véhicules (fumées, bruit, avertisseur sonore)',
+          route: '/pa/memento_circulation/equipements/nuisances',
+          image: 'assets/images/nuisances.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Ceinture de sécurité / retenue enfant',
+          route: '/pa/memento_circulation/equipements/ceinture_retenue_enfant',
+          image: 'assets/images/ceinture_retenue_enfant.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Casque et gants de protection',
+          route: '/pa/memento_circulation/equipements/casque_gants',
+          image: 'assets/images/casque_gants.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Casque "cycliste"',
+          route: '/pa/memento_circulation/equipements/casque_cycliste',
+          image: 'assets/images/casque_cycliste.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Gilet de haute visibilité',
+          route: '/pa/memento_circulation/equipements/gilet_haute_visibilite',
+          image: 'assets/images/gilet_haute_visibilite.jpeg',
+        ),
+        SubCategoryConfig(
+          label: 'Quiz — Équipements',
+          route: '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere',
+          image: 'assets/images/quiz.jpeg',
         ),
       ],
     ),

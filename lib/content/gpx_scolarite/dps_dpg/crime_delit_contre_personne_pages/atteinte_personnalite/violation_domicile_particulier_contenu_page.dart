@@ -110,16 +110,16 @@ class ViolationDomicileParticulierPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la violation de domicile commise par un particulier "
                       "(introduction ou maintien illicites).",
@@ -136,23 +136,23 @@ class ViolationDomicileParticulierPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un domicile"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un domicile"),
+              _Paragraph(
                 "Le domicile s’entend largement : tout local d’habitation contenant des biens meubles appartenant à une personne, "
                 "qu’elle y habite ou non, résidence principale ou secondaire.\n"
                 "La condition essentielle est que le lieu protège l’intimité.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La notion peut inclure des logements inoccupés contenant des meubles caractérisant une occupation effective "
                 "(table, chaises, lit, canapé, électroménager…). À l’inverse, quelques objets isolés (ex. bicyclette, carton de livres) "
                 "ne suffisent pas à caractériser un domicile.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Exemples retenus comme domiciles"),
-              const _BulletPoint(
+              _SubTitle("Exemples retenus comme domiciles"),
+              _BulletPoint(
                 text:
                     "Appartement loué, maison de campagne/vacances, même inoccupés temporairement.",
               ),
@@ -161,99 +161,99 @@ class ViolationDomicileParticulierPage extends StatelessWidget {
                     "Dépendances proches constituant le prolongement : débarras, garage, balcon, terrasse… "
                     "(ex. Cass. crim., 8 février 1994, n° 92-83.151).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Logement occupé sans titre mais pacifiquement.",
               ),
-              const _BulletPoint(text: "Chambre d’hôtel."),
-              const _BulletPoint(
+              _BulletPoint(text: "Chambre d’hôtel."),
+              _BulletPoint(
                 text:
                     "Bureau / locaux professionnels (sauf zones ouvertes au public pendant les heures d’ouverture).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Véhicule aménagé pour l’habitation, caravane, roulotte, tente.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Navire habitable : yacht de plaisance, voilier, péniche.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Assimilations jurisprudentielles : box fermé non attenant (",
                   ),
                   TextSpan(
                     text: "Cass. crim., 29 mars 1994",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "), garage en parking souterrain annexe au domicile (",
                   ),
                   TextSpan(
                     text: "Cass. crim., 23 janvier 2013",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Ne sont pas considérés comme domiciles"),
-              const _BulletPoint(
+              _SubTitle("Ne sont pas considérés comme domiciles"),
+              _BulletPoint(
                 text: "Logement vide de meubles entre deux locations.",
               ),
-              const _BulletPoint(text: "Immeuble en construction."),
-              const _BulletPoint(
+              _BulletPoint(text: "Immeuble en construction."),
+              _BulletPoint(
                 text: "Appartement partiellement détruit / inhabitable.",
               ),
-              const _BulletPoint(text: "Cour d’immeuble non close."),
-              const _BulletPoint(
+              _BulletPoint(text: "Cour d’immeuble non close."),
+              _BulletPoint(
                 text: "Local réservé à la vente (zone commerciale ouverte).",
               ),
-              const _BulletPoint(text: "Hutte de chasse sans aménagement."),
-              const _BulletPoint(text: "Casier de consigne en gare."),
-              const _BulletPoint(
+              _BulletPoint(text: "Hutte de chasse sans aménagement."),
+              _BulletPoint(text: "Casier de consigne en gare."),
+              _BulletPoint(
                 text:
                     "Véhicule automobile non aménagé pour l’habitation (hors notion de domicile).",
               ),
-              const _BulletPoint(text: "Bateau sans aménagement intérieur."),
-              const SizedBox(height: 12),
+              _BulletPoint(text: "Bateau sans aménagement intérieur."),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Une introduction par manœuvres, menaces, voies de fait ou contrainte",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’entrée doit être non désirée (peu importe la présence de l’occupant). "
                 "Il ne s’agit pas d’une personne initialement invitée à entrer ou à séjourner.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• Manœuvres"),
-              const _Paragraph(
+              _SubTitle("• Manœuvres"),
+              _Paragraph(
                 "Procédé astucieux ou ruse mis en œuvre pour favoriser l’introduction illicite.",
               ),
-              const _SubTitle("• Menaces"),
-              const _Paragraph(
+              _SubTitle("• Menaces"),
+              _Paragraph(
                 "Paroles ou comportements intimidants d’une personne prête à accomplir des violences.",
               ),
-              const _SubTitle("• Voies de fait"),
-              const _Paragraph(
+              _SubTitle("• Voies de fait"),
+              _Paragraph(
                 "Violences contre les biens ou les personnes (défoncer une porte, briser une vitre, forcer une serrure, "
                 "escalader, passer par une fenêtre ouverte, enlever une partie de toiture, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple : la violence contre les choses peut consister en un forçage de serrure, un bris de vitre, "
                         "ou un descellement de barreaux. Attention : certaines décisions ont écarté l’introduction illicite lorsque "
@@ -262,64 +262,64 @@ class ViolationDomicileParticulierPage extends StatelessWidget {
                 ],
                 title: "POINT PRATIQUE",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• Contrainte"),
-              const _Paragraph(
+              _SubTitle("• Contrainte"),
+              _Paragraph(
                 "Toute situation où le consentement de l’occupant n’est pas libre.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Le maintien à l’issue d’une entrée illégitime",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le maintien vise la durée : l’occupation se prolonge au-delà du moment de l’entrée. "
                 "Peuvent aussi être poursuivies des personnes arrivées ensuite et demeurant sur place en connaissance de cause.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La violation de domicile est une infraction continue : tant que perdure l’occupation illicite, "
                 "l’enquête de flagrance peut être possible, sans devoir établir de nouvelles manœuvres/menaces/voies de fait/contrainte.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Hors les cas où la loi le permet"),
-              const _Paragraph(
+              _SubTitle("D) Hors les cas où la loi le permet"),
+              _Paragraph(
                 "Certaines introductions sont légitimes par ordre de la loi, notamment :\n"
                 "• appels au secours depuis l’intérieur (même si l’appel est fantaisiste)\n"
                 "• incendie ou inondation menaçant le domicile\n"
                 "• assistance à personne en péril (indices sérieux : odeur suspecte, absence anormale, appel sans réponse, etc.)",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les logements vacants non meublés, ainsi que les logements proposés à la location (meublés ou non), "
                         "ne sont pas des domiciles au sens de ",
                   ),
                   TextSpan(
                     text: "l’article 226-4 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ". L’occupation frauduleuse de tels locaux relève des infractions prévues aux ",
                   ),
                   TextSpan(
                     text: "articles 315-1 et 315-2 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "NOTA",
               ),
@@ -368,69 +368,69 @@ class ViolationDomicileParticulierPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI, prévue par "),
+                TextSpan(text: "Tentative : OUI, prévue par "),
                 TextSpan(
                   text: "l’article 226-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Complicité : OUI (règles générales applicables).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "Infraction distincte : propagande / publicité en faveur du squat",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-4-2-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : incrimine la propagande ou publicité (quel qu’en soit le mode) en faveur de méthodes "
                       "visant à faciliter ou inciter la commission du délit de violation de domicile et/ou l’occupation frauduleuse.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ce délit vise notamment les contenus diffusés en ligne assimilables à des « modes d’emploi du squat » "
                 "(techniques pour forcer une serrure, conseils pour faciliter l’installation ou la pérennisation d’un squat).",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "Peine : 3 750 € d’amende."),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _BulletPoint(text: "Peine : 3 750 € d’amende."),
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "PRESSE",
                 bodySpans: [
                   TextSpan(
@@ -476,10 +476,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -544,7 +544,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -587,7 +587,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -649,7 +649,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -681,7 +681,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -694,7 +694,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

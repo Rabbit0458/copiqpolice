@@ -25,9 +25,9 @@ class EnquetePreliminairePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Définition pratique',
-                  child: const Text(
+                  child: Text(
                     'L’enquête préliminaire s’ouvre hors flagrance. Elle est dirigée par le Procureur de la République '
                     'et nécessite, pour certains actes attentatoires, des autorisations préalables (JLD/JI selon les cas).',
                   ),
@@ -43,12 +43,12 @@ class EnquetePreliminairePage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Actes possibles',
                   caption: 'Exemples usuels',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Auditions libres, réquisitions, surveillances, constats, saisies sur autorisation.',
                       ),
@@ -62,12 +62,12 @@ class EnquetePreliminairePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Réflexes PV',
                   caption: 'Sécuriser la procédure',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _ChecklistLine(
                         'Citer la base légale et la saisine du Procureur.',
                       ),

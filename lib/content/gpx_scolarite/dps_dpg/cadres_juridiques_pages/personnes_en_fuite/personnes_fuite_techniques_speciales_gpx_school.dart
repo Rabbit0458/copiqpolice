@@ -105,8 +105,8 @@ class PersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: [
-                  const _Paragraph(
+                children: const [
+                  _Paragraph(
                     'Ces dispositions ne sont applicables que lorsque la personne concernée '
                     'a fait l’objet, pour l’une des infractions visées par les Articles 706-73 '
                     'ou 706-73-1 du Code de procédure pénale (infractions relevant de la '
@@ -114,17 +114,17 @@ class PersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
                     'et financières ou atteintes aux systèmes de traitement automatisé de '
                     'données), de l’une des décisions suivantes :',
                   ),
-                  const SizedBox(height: 10),
-                  const _BulletPoint(
+                  SizedBox(height: 10),
+                  _BulletPoint(
                     text:
                         'Mandat d’arrêt visant une personne renvoyée devant une juridiction de jugement ;',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'Mandat d’arrêt délivré par une juridiction de jugement ou par le juge '
                         'de l’application des peines ;',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'Condamnation à une peine privative de liberté sans sursis supérieure '
                         'ou égale à un an, ou à une peine privative de liberté supérieure ou '
@@ -132,7 +132,7 @@ class PersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
                         'd’une probation, lorsque cette condamnation est exécutoire ou '
                         'passée en force de chose jugée ;',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'Décision de retrait ou de révocation d’un aménagement de peine ou '
                         'd’une libération sous contrainte, ou décision de mise à exécution de '
@@ -142,8 +142,8 @@ class PersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
                         'd’un quantum ou d’un reliquat de peine d’emprisonnement supérieur '
                         'à un an.',
                   ),
-                  const SizedBox(height: 14),
-                  const _NotaBox(
+                  SizedBox(height: 14),
+                  _NotaBox(
                     bodySpans: [
                       TextSpan(
                         text:
@@ -155,8 +155,8 @@ class PersonnesFuiteTechniqueSpecialesGpxSchool extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(height: 10),
-                  const _NotaBox(
+                  SizedBox(height: 10),
+                  _NotaBox(
                     title: 'Rappel',
                     bodySpans: [
                       TextSpan(
@@ -206,10 +206,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -274,7 +274,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -317,7 +317,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -379,7 +379,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -411,7 +411,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -424,7 +424,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -101,10 +101,15 @@ flutter:
           style: italic
 
 flutter_native_splash:
-  color: "#1147D9"
-  image: assets/images/logo.png
+  # Fond blanc pur sans aucun logo — 1er frame identique à _BootSplash Flutter
+  color: "#FFFFFF"
+  color_dark: "#06111F"
+  image: assets/splash/transparent.png
 
+  # Android 12 : icône transparente pour supprimer le logo système forcé
   android_12:
-    color: "#1147D9"
-    image: assets/images/logo.png
-    icon_background_color: "#1AFFFFFF"
+    color: "#FFFFFF"
+    color_dark: "#06111F"
+    image: assets/splash/transparent.png
+    icon_background_color: "#FFFFFF"
+    icon_background_color_dark: "#06111F"

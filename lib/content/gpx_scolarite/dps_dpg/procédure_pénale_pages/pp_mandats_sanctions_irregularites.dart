@@ -207,16 +207,16 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
                     ? const Color(0xFF64B5F6)
                     : const Color(0xFF1565C0),
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-                children: [
-                  const _Paragraph(
+                children: const [
+                  _Paragraph(
                     'Les irrégularités peuvent porter soit sur la délivrance même du mandat '
                     '(vice de forme ou de fond), soit sur sa notification ou son exécution. '
                     'Les conséquences juridiques ne sont pas les mêmes.',
                   ),
 
-                  const SizedBox(height: 10),
-                  const _SubTitle('Irrégularités affectant la délivrance'),
-                  const _Paragraph(
+                  SizedBox(height: 10),
+                  _SubTitle('Irrégularités affectant la délivrance'),
+                  _Paragraph(
                     'Lorsque le mandat ne respecte pas les conditions de forme ou de fond '
                     'prévues par la loi (mentions obligatoires, compétence du magistrat, '
                     'base légale…), ces irrégularités peuvent entraîner la nullité du '
@@ -224,40 +224,40 @@ class PPMandatsSanctionsIrregularitesPage extends StatelessWidget {
                     'alors sur un titre irrégulier.',
                   ),
 
-                  const SizedBox(height: 10),
-                  const _SubTitle(
+                  SizedBox(height: 10),
+                  _SubTitle(
                     'Irrégularités de notification ou d’exécution',
                   ),
-                  const _Paragraph(
+                  _Paragraph(
                     'Les vices affectant la notification ou les modalités d’exécution '
                     'du mandat ne remettent pas nécessairement en cause l’existence du '
                     'mandat. Ils peuvent, en revanche, entraîner :',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'la nullité de l’exécution (par exemple, si les droits de la défense '
                         'n’ont pas été respectés) ;',
                   ),
-                  const _BulletPoint(
+                  _BulletPoint(
                     text:
                         'ou la caducité du mandat lorsque son inexécution ou son exécution '
                         'irrégulière en a vidé les effets.',
                   ),
 
-                  const SizedBox(height: 10),
-                  const _SubTitle('Appréciation par la jurisprudence'),
-                  const _Paragraph(
+                  SizedBox(height: 10),
+                  _SubTitle('Appréciation par la jurisprudence'),
+                  _Paragraph(
                     'La jurisprudence considère que seules les irrégularités substantielles, '
                     'de nature à porter atteinte aux droits de la défense ou aux garanties '
                     'fondamentales de la personne, justifient la nullité. Les simples '
                     'irrégularités de pure forme, sans grief, ne suffisent pas.',
                   ),
 
-                  const SizedBox(height: 12),
+                  SizedBox(height: 12),
                   _NotaBox(
                     title: 'INDEMNISATION',
                     bodySpans: [
-                      const TextSpan(
+                      TextSpan(
                         text:
                             'Lorsqu’une détention irrégulière a été subie, une indemnisation '
                             'peut être accordée. Elle est décidée par le premier président de '
@@ -305,10 +305,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -373,7 +373,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -416,7 +416,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -478,7 +478,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -510,7 +510,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -523,7 +523,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

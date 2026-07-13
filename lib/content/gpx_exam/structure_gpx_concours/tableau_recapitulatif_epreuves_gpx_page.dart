@@ -48,12 +48,12 @@ class TableauRecapitulatifEpreuvesGPXPage extends StatelessWidget {
 
     // Table styles
     final Color tableBorder = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.10);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .10);
 
     final Color tableHeaderBg = isDark
-        ? Colors.white.withOpacity(.06)
-        : Colors.black.withOpacity(.04);
+        ? Colors.white.withValues(alpha: .06)
+        : Colors.black.withValues(alpha: .04);
 
     final Color tableText = isDark ? Colors.white70 : Colors.black87;
 
@@ -127,51 +127,51 @@ class TableauRecapitulatifEpreuvesGPXPage extends StatelessWidget {
             cardColor: cardAccess,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Accessible aux candidats titulaires du baccalauréat (ou équivalent / niveau 4), "
                       "âgés de ",
                 ),
                 TextSpan(
                   text: "17 ans à moins de 45 ans",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " au 1er janvier de l’année du concours (sauf dérogations).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Pour s’inscrire, le candidat doit :"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Pour s’inscrire, le candidat doit :"),
+              _BulletPoint(
                 text:
                     "Être titulaire du baccalauréat ou équivalent (ou diplôme de niveau 4).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Avoir entre 17 ans et moins de 45 ans au 1er janvier de l’année du concours.",
               ),
-              const _BulletPoint(text: "Être de nationalité française."),
-              const _BulletPoint(
+              _BulletPoint(text: "Être de nationalité française."),
+              _BulletPoint(
                 text:
                     "Être de bonne moralité : le bulletin n°2 du casier judiciaire ne doit comporter aucune mention incompatible avec l’exercice des fonctions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Répondre aux aptitudes physiques requises lors de la visite médicale (référence : arrêté du 25 novembre 2022 sur les conditions de santé particulières exigées).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Être en règle avec les obligations de service national (JDC).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "JDC : pour les moins de 25 ans n’ayant pas encore accompli la JDC, "
@@ -248,16 +248,16 @@ class TableauRecapitulatifEpreuvesGPXPage extends StatelessWidget {
               ),
 
               const SizedBox(height: 12),
-              _NotaBox(
+              const _NotaBox(
                 title: "Méthodo (cas pratique)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Garde à l’esprit que les réponses se trouvent dans le dossier documentaire : "
                         "pas besoin de « connaissances policières ». Lis attentivement, analyse avec discernement, "
                         "et justifie toujours les actions : ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "pourquoi je fais cela et ai-je le droit de le faire ?",
                     style: TextStyle(
@@ -305,9 +305,9 @@ class TableauRecapitulatifEpreuvesGPXPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Certificat médical",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le candidat doit être en possession d’un certificat médical d’aptitude "
@@ -316,9 +316,9 @@ class TableauRecapitulatifEpreuvesGPXPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Conséquence directe",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les candidats éliminés aux épreuves sportives ne sont pas convoqués à l’épreuve orale.",
@@ -352,9 +352,9 @@ class TableauRecapitulatifEpreuvesGPXPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Aide à la décision du jury",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le jury dispose notamment :\n"
@@ -587,8 +587,8 @@ class _ExamRowCard extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final bg = isDark
-        ? Colors.white.withOpacity(.06)
-        : Colors.black.withOpacity(.03);
+        ? Colors.white.withValues(alpha: .06)
+        : Colors.black.withValues(alpha: .03);
 
     Widget line(String label, String value) {
       return Padding(
@@ -679,10 +679,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -747,7 +747,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -790,7 +790,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -852,7 +852,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -884,7 +884,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -897,7 +897,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

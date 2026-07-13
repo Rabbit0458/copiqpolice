@@ -120,32 +120,32 @@ class PrelevementSanguinPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les vérifications destinées à établir la preuve de l’état alcoolique peuvent être faites au moyen d’analyses et examens médicaux, cliniques et biologiques : ",
                 ),
                 TextSpan(
                   text: "articles L. 234-3 et suivants du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text:
                       "articles R. 3354-1 et suivants du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "En pratique, l’A.P.J. recourt au prélèvement sanguin lorsque le conducteur (ou l’accompagnateur de l’élève conducteur) "
                 "se trouve dans un état rendant impossible l’exécution des vérifications par éthylomètre (ex : ivresse manifeste).",
               ),
@@ -218,103 +218,103 @@ class PrelevementSanguinPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1 — Lieu de vérification"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1 — Lieu de vérification"),
+              _Paragraph(
                 "Mentionner l’endroit exact où se situe l’équipage et où se déroule l’acte : service, centre hospitalier, unité d’accueil, etc.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2 — Instructions (flagrance)"),
-              const _Paragraph(
+              _SubTitle("2 — Instructions (flagrance)"),
+              _Paragraph(
                 "En flagrant délit, l’agent de police judiciaire agit conformément aux instructions reçues de l’officier de police judiciaire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3 — Assistants"),
-              const _Paragraph(
+              _SubTitle("3 — Assistants"),
+              _Paragraph(
                 "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("4 — Cadre juridique (rappel)"),
+              _SubTitle("4 — Cadre juridique (rappel)"),
               _Paragraph.rich([
-                const TextSpan(text: "Base légale : "),
+                TextSpan(text: "Base légale : "),
                 TextSpan(
                   text: "L. 234-3 et s. du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "R. 3354-1 et s. du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5 — Visa de la réquisition"),
+              _SubTitle("5 — Visa de la réquisition"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Remettre au médecin (ou interne / étudiant en médecine autorisé / infirmier habilité) une réquisition aux fins d’examen clinique médical et de prélèvement sanguin : ",
                 ),
                 TextSpan(
                   text: "article R. 3354-5 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("6 — Mise à disposition du matériel"),
-              const _Paragraph(
+              _SubTitle("6 — Mise à disposition du matériel"),
+              _Paragraph(
                 "Fournir au praticien requis le matériel nécessaire, comprenant notamment :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Tampon de stérilisation sans alcool."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Tampon de stérilisation sans alcool."),
+              _BulletPoint(
                 text:
                     "Deux tubes de prélèvement sous vide (10 ml) avec héparinate de lithium + étiquettes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Aiguille à prélèvement sous vide avec adaptateur adéquat.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Deux contenants permettant l’apposition d’un scellé et la protection des tubes.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("7 — Fiches réglementaires (A / B-C)"),
+              _SubTitle("7 — Fiches réglementaires (A / B-C)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Renseigner la fiche d’examen de comportement dite « fiche A » : ",
                 ),
                 TextSpan(
                   text: "article R. 3354-4 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Concordance",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Vérifier la cohérence des rubriques : par exemple, si « Nature des faits : conduite en état d’ivresse », "
@@ -322,47 +322,47 @@ class PrelevementSanguinPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le médecin consigne les résultats de l’examen clinique médical sur la partie B de la fiche B-C ; "
                 "le laboratoire (ou le biologiste expert) consigne les résultats de l’analyse sur la partie C.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("8 — Prélèvement sanguin (scellés)"),
-              const _Paragraph(
+              _SubTitle("8 — Prélèvement sanguin (scellés)"),
+              _Paragraph(
                 "L’A.P.J. assiste au prélèvement. Le prélèvement est réparti entre deux tubes étiquetés. "
                 "Chaque tube est placé dans un contenant identifié et scellé par l’A.P.J. ayant assisté à l’opération.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("9 — Retour au service"),
-              const _Paragraph(
+              _SubTitle("9 — Retour au service"),
+              _Paragraph(
                 "Mentionner le retour au service et la mise en sécurité des scellés, en attente de transmission selon la procédure.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("10 — Énonciation terminale (clôture)"),
-              const _Paragraph(
+              _SubTitle("10 — Énonciation terminale (clôture)"),
+              _Paragraph(
                 "Clôturer le procès-verbal (lecture, mentions utiles, signature si possible, ou mention des difficultés / refus).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("11 — Compte-rendu O.P.J."),
-              const _Paragraph(
+              _SubTitle("11 — Compte-rendu O.P.J."),
+              _Paragraph(
                 "Effectuer un compte-rendu verbal à l’O.P.J. Mentionner les instructions éventuellement données.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("12 — Mention de police (transmission)"),
-              const _Paragraph(
+              _SubTitle("12 — Mention de police (transmission)"),
+              _Paragraph(
                 "Transmettre les échantillons scellés ainsi que les fiches A et B-C à l’officier (ou l’agent) "
                 "chargé d’établir la réquisition au laboratoire ou à l’expert (selon le service d’affectation).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Annexe"),
-              const _Paragraph(
+              _SubTitle("Annexe"),
+              _Paragraph(
                 "Annexer : copie de la réquisition remise au praticien requis.",
               ),
             ],
@@ -436,10 +436,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -504,7 +504,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -547,7 +547,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -609,7 +609,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -641,7 +641,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -654,7 +654,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -706,10 +706,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -815,8 +815,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -884,10 +884,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -954,10 +954,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -996,9 +996,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1033,7 +1033,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

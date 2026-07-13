@@ -107,41 +107,41 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lorsque l’infraction concernée est un crime ou un délit puni d’une peine d’emprisonnement, l’assistance de l’avocat peut s’appliquer. ",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Victime confrontée avec une personne gardée à vue : ",
                 ),
                 TextSpan(
                   text: "article 63-4-5 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Victime confrontée avec une personne soupçonnée entendue librement : ",
                 ),
                 TextSpan(
                   text: "article 61-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -189,9 +189,9 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
             cardColor: cardDuring,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Assistance de l’avocat"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Assistance de l’avocat"),
+              _Paragraph(
                 "➤ Pour la victime\n"
                 "La victime peut être assistée d’un avocat lorsqu’elle est confrontée avec une personne gardée à vue "
                 "ou une personne soupçonnée entendue librement. Elle doit être préalablement informée :\n"
@@ -199,40 +199,40 @@ class ConfrontationGeneralitesPage extends StatelessWidget {
                 "• des frais à sa charge (sauf conditions d’aide juridictionnelle).\n"
                 "L’avocat peut consulter les procès-verbaux d’audition de la victime.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "➤ Pour le suspect\n"
                 "La personne suspectée (gardée à vue ou entendue librement) peut également être assistée par un avocat lors de la confrontation.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les avocats peuvent prendre des notes, mais ne peuvent ni conseiller leur client, ni intervenir pendant la confrontation.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Déroulement"),
-              const _Paragraph(
+              _SubTitle("B) Déroulement"),
+              _Paragraph(
                 "L’enquêteur met en présence les intéressés et donne lecture des déclarations respectives.\n"
                 "Point par point, il demande à chacun s’il maintient ou non ses déclarations antérieures.\n"
                 "Chaque contradiction est consignée et soulignée sur un seul et même procès-verbal.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’officier ou l’agent de police judiciaire conserve la direction de l’opération. "
                         "Il peut y mettre fin si le comportement d’une partie empêche le bon déroulement : une mention est portée au procès-verbal.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "À l’issue de la confrontation, l’avocat peut poser des questions au suspect et/ou à la victime. "
                 "L’enquêteur peut s’opposer aux questions si elles risquent de nuire au bon déroulement de l’enquête.",
               ),
@@ -293,10 +293,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -361,7 +361,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -404,7 +404,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -466,7 +466,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -477,10 +477,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -492,13 +491,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -511,13 +509,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

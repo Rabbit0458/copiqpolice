@@ -109,44 +109,44 @@ class RefusVerificationsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 233-2 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le refus de se soumettre aux vérifications.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "À l’exclusion des vérifications relatives à l’alcoolémie ou à l’usage de stupéfiants, "
                         "qui sont respectivement prévues et réprimées par ",
                   ),
                   TextSpan(
                     text: "les articles L. 234-8",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et "),
+                  TextSpan(text: " et "),
                   TextSpan(
                     text: "L. 235-3 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -160,37 +160,37 @@ class RefusVerificationsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les vérifications portent sur le respect des règles administratives et techniques afférentes "
                 "à la conduite et à la circulation des véhicules. Elles sont effectuées par des agents munis "
                 "des signes extérieurs de leurs fonctions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Base légale d’exécution : "),
+                TextSpan(text: "Base légale d’exécution : "),
                 TextSpan(
                   text: "articles R. 233-1",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "R. 233-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("A) Le refus"),
-              const _Paragraph(
+              _SubTitle("A) Le refus"),
+              _Paragraph(
                 "Le refus est caractérisé lorsque le conducteur n’accepte pas de se soumettre "
                 "aux injonctions de l’agent agissant en application des articles précités.\n"
                 "Après avoir été informé du motif du contrôle, le conducteur exprime son refus :\n"
@@ -198,29 +198,29 @@ class RefusVerificationsPage extends StatelessWidget {
                 "• ou de façon passive (ne pas se conformer aux demandes).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Les vérifications"),
-              const _SubTitle("1) Concernant la personne"),
-              const _Paragraph(
+              _SubTitle("B) Les vérifications"),
+              _SubTitle("1) Concernant la personne"),
+              _Paragraph(
                 "Les vérifications s’attachent essentiellement à la présentation d’un permis de conduire valable "
                 "mais aussi de tout titre justifiant une autorisation de conduire.\n"
                 "Elles permettent de s’assurer du droit de conduire en examinant les pièces administratives "
                 "que le conducteur doit obligatoirement présenter.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Concernant le véhicule"),
-              const _Paragraph(
+              _SubTitle("2) Concernant le véhicule"),
+              _Paragraph(
                 "Il s’agit notamment des vérifications portant sur :\n"
                 "• le certificat d’immatriculation ;\n"
                 "• l’attestation d’assurance ;\n"
                 "• le procès-verbal de contrôle technique périodique ;\n"
                 "• et, le cas échéant, d’autres documents (ex. transport routier de marchandises…).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Elles peuvent également porter sur la présence, le bon état ou le bon fonctionnement "
                 "de certains équipements réglementaires (éclairage, plaques d’immatriculation, gilet de haute visibilité, "
                 "triangle de pré-signalisation…).",
@@ -266,28 +266,28 @@ class RefusVerificationsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues"),
+            children: const [
+              _SubTitle("Peines encourues"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(text: "délit. — "),
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(text: "délit. — "),
                 TextSpan(
                   text: "article L. 233-2 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "3 mois d’emprisonnement."),
-              const _BulletPoint(text: "3 750 € d’amende."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "3 mois d’emprisonnement."),
+              _BulletPoint(text: "3 750 € d’amende."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Des peines spécifiques existent pour le refus de se soumettre aux vérifications concernant "
                         "l’alcool au volant et la conduite sous l’influence de stupéfiants : ce sont des infractions autonomes "
@@ -295,28 +295,28 @@ class RefusVerificationsPage extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "L. 234-8",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et "),
+                  TextSpan(text: " et "),
                   TextSpan(
                     text: "L. 235-3 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
-              const _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
+              _BulletPoint(text: "Complicité : OUI."),
             ],
           ),
         ],
@@ -353,10 +353,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -421,7 +421,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -464,7 +464,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -526,7 +526,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -537,10 +537,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -552,13 +551,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -571,13 +569,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

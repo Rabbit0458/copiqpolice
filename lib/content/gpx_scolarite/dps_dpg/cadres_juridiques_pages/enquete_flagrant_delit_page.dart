@@ -26,9 +26,9 @@ class EnqueteFlagrantDelitPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Définition pratique',
-                  child: const Text(
+                  child: Text(
                     'La flagrance s’applique lorsque l’infraction se commet actuellement ou vient de se commettre. '
                     'Elle confère aux OPJ des pouvoirs étendus pour agir vite, conserver la preuve et rechercher les auteurs.',
                   ),
@@ -44,12 +44,12 @@ class EnqueteFlagrantDelitPage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Conditions de la flagrance',
                   caption: 'Indices apparents & temporalité',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet('Infraction en cours ou tout juste commise.'),
                       _Bullet(
                         'Indices apparents d’un comportement infractionnel.',
@@ -61,12 +61,12 @@ class EnqueteFlagrantDelitPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Pouvoirs principaux',
                   caption: 'Actes réalisables',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Interpellations immédiates, GAV si conditions réunies.',
                       ),
@@ -80,11 +80,11 @@ class EnqueteFlagrantDelitPage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Réflexes opérationnels',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _ChecklistLine(
                         'Justifier clairement le caractère flagrant (faits/horodatage).',
                       ),

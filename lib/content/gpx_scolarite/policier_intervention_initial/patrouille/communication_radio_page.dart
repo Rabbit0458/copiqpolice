@@ -214,18 +214,18 @@ class CommunicationRadioPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les noms propres, groupes de lettres, mots importants ou pouvant prêter à confusion "
                 "sont épelés selon le tableau d’analogie phonétique. "
                 "Les chiffres sont « décomposés » selon une formulation standard.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("A) Énoncé des lettres (exemples clés)"),
+              _SubTitle("A) Énoncé des lettres (exemples clés)"),
               _NotaBox(
                 title: "LETTRES",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(text: "A Alpha — B Bravo — C Charlie — D Delta\n"),
                   TextSpan(text: "E Écho — F Fox-trot — G Golf — H Hôtel\n"),
                   TextSpan(text: "I India — J Juliette — K Kilo — L Lima\n"),
@@ -235,10 +235,10 @@ class CommunicationRadioPage extends StatelessWidget {
                   TextSpan(text: "Y Yankee — Z Zoulou"),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "EXEMPLE",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "PARIS, j’épelle : « Papa » — « Alpha » — « Roméo » — « India » — « Sierra ».",
@@ -247,12 +247,12 @@ class CommunicationRadioPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Énoncé des chiffres"),
+              _SubTitle("B) Énoncé des chiffres"),
               _NotaBox(
                 title: "CHIFFRES",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(text: "0 Zéro\n"),
                   TextSpan(text: "1 Un tout seul\n"),
                   TextSpan(text: "2 Un et un\n"),
@@ -351,20 +351,20 @@ class CommunicationRadioPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Autorités centrales"),
+            children: const [
+              _SubTitle("Autorités centrales"),
               _BulletPoint(
                 text:
                     "DNSP : JURA — adjoint : JURA Alpha — adjoint renseignement : JURA Bravo — chef d’État-Major : JURA Charlie.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Autorités zonales"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Autorités zonales"),
+              _BulletPoint(
                 text: "Directeur zonal : TI + numéro de zone.",
               ),
               _NotaBox(
                 title: "ZONES",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(text: "TI 2000 : Nord\n"),
                   TextSpan(text: "TI 3000 : Est\n"),
                   TextSpan(text: "TI 4000 : Sud-Est\n"),
@@ -373,17 +373,17 @@ class CommunicationRadioPage extends StatelessWidget {
                   TextSpan(text: "TI 7000 : Ouest"),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Autorités départementales"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Autorités départementales"),
+              _BulletPoint(
                 text:
                     "DDPN : TI + numéro du département ; DDPN adjoint : ajouter « A » (ex : TI 63, TI 63 A).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Autorités locales (grades — repères)"),
+              SizedBox(height: 12),
+              _SubTitle("Autorités locales (grades — repères)"),
               _NotaBox(
                 title: "GRADES",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Commissaire (chef) : TI + numéro du service (ex : TI 100). "
@@ -621,10 +621,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -689,7 +689,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -732,7 +732,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -794,7 +794,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -826,7 +826,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -839,7 +839,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

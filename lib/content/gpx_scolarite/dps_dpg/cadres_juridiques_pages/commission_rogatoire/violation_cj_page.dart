@@ -16,12 +16,12 @@ class ViolationControleJudiciairePage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.88);
+        : const Color(0xFF1F1F1F).withValues(alpha: .88);
 
     final Color cardBlue = isDark
         ? const Color(0xFF0D1B2A)
         : const Color(0xFFE3F2FD);
-    final Color cardBlueAccent = const Color(0xFF1565C0);
+    const Color cardBlueAccent = Color(0xFF1565C0);
 
     final lawStyle = TextStyle(
       color: Colors.red.shade700,
@@ -124,21 +124,21 @@ class ViolationControleJudiciairePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Sur décision d’un officier de police judiciaire, cette personne peut alors '
                 'être retenue pour une durée maximale de vingt-quatre heures dans un '
                 'local de police ou de gendarmerie afin que sa situation soit vérifiée et '
                 'qu’elle soit entendue sur la violation de ses obligations.',
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Dès le début de la mesure, l’officier de police judiciaire informe sans '
                 'délai le juge d’instruction.',
               ),
               const SizedBox(height: 14),
 
               const _SubTitle('Information immédiate de la personne retenue'),
-              _Paragraph(
+              const _Paragraph(
                 'La personne retenue est immédiatement informée, par l’officier de police '
                 'judiciaire ou, sous son contrôle, par un agent de police judiciaire, dans '
                 'une langue qu’elle comprend, de la durée maximale de la mesure, de la '
@@ -148,7 +148,7 @@ class ViolationControleJudiciairePage extends StatelessWidget {
               const SizedBox(height: 10),
 
               const _SubTitle('Droits reconnus pendant la retenue'),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Droit de faire prévenir un proche et son employeur ainsi que, si elle '
                     'est de nationalité étrangère, les autorités consulaires de l’État dont '
@@ -176,7 +176,7 @@ class ViolationControleJudiciairePage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 8),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Droit d’être examinée par un médecin, conformément à l’article 63-3 du '
                     'Code de procédure pénale.',
@@ -189,7 +189,7 @@ class ViolationControleJudiciairePage extends StatelessWidget {
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 4),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Droit d’être assistée par un avocat, conformément aux articles 63-3-1 à '
                     '63-4-3 du Code de procédure pénale (droit à l’entretien confidentiel, '
@@ -234,13 +234,13 @@ class ViolationControleJudiciairePage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle('Conditions d’exécution de la retenue'),
-              _Paragraph(
+              const _Paragraph(
                 'La retenue doit s’exécuter dans des conditions assurant le respect de la '
                 'dignité de la personne. Seules peuvent être imposées les mesures de '
                 'sécurité strictement nécessaires.',
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'La personne retenue ne peut pas faire l’objet d’investigations corporelles '
                 'internes au cours de la retenue par le service de police ou par l’unité '
                 'de gendarmerie.',
@@ -260,20 +260,20 @@ class ViolationControleJudiciairePage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle('Issue de la mesure'),
-              _Paragraph(
+              const _Paragraph(
                 'À l’issue de la retenue, le juge d’instruction peut ordonner que la '
                 'personne soit conduite devant lui, notamment pour envisager la '
                 'révocation du contrôle judiciaire, le cas échéant en saisissant le juge '
                 'des libertés et de la détention.',
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Le juge d’instruction peut également demander à un officier ou à un agent '
                 'de police judiciaire d’aviser la personne qu’elle est convoquée devant '
                 'lui à une date ultérieure.',
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Les dispositions de cet article sont également applicables aux personnes '
                 'placées sous assignation à résidence avec surveillance électronique.',
               ),
@@ -314,10 +314,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -382,7 +382,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -425,7 +425,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -487,7 +487,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -498,10 +498,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -513,13 +512,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -532,13 +530,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

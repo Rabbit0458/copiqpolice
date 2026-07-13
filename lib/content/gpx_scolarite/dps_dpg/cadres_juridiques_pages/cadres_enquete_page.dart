@@ -25,9 +25,9 @@ class CadresEnquetePage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Vue d’ensemble',
-                  child: const Text(
+                  child: Text(
                     'L’enquête judiciaire repose sur plusieurs cadres légaux. '
                     'Chaque cadre détermine les pouvoirs d’enquête, la durée, les autorisations requises '
                     'et les garanties procédurales. Le choix du cadre sécurise la preuve et conditionne la suite procédurale.',
@@ -44,12 +44,12 @@ class CadresEnquetePage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Pourquoi qualifier le cadre ?',
                   caption: 'Sécurisation de la preuve',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Détermine l’étendue des actes possibles (perquisition, saisie, interceptions…).',
                       ),
@@ -63,12 +63,12 @@ class CadresEnquetePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Cadres principaux',
                   caption: 'Les trois blocs usuels',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Enquête de flagrance : infraction en train de se commettre ou venant de se commettre.',
                       ),
@@ -82,11 +82,11 @@ class CadresEnquetePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: 'Réflexes PV',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _ChecklistLine(
                         'Poser le contexte factuel justifiant le cadre choisi.',
                       ),

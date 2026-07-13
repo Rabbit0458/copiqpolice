@@ -120,16 +120,16 @@ class BiensCulturelsPublicsClassesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-3-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les destructions, dégradations ou détériorations portant sur des biens culturels publics ou classés.",
                 ),
@@ -145,47 +145,47 @@ class BiensCulturelsPublicsClassesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une atteinte matérielle"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une atteinte matérielle"),
+              _Paragraph(
                 "Le législateur ne précise pas les moyens : n’importe quel moyen peut être employé "
                 "(à l’exception de l’incendie et de l’usage de substances explosives, qui relèvent d’autres incriminations).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Sur un bien culturel public ou classé"),
-              const _Paragraph(
+              _SubTitle("B) Sur un bien culturel public ou classé"),
+              _Paragraph(
                 "Les biens faisant partie du patrimoine national font l’objet d’une protection particulière afin d’éviter "
                 "la disparition d’objets liés à l’histoire et à l’identité du pays.\n"
                 "La protection renforcée s’applique notamment aux biens suivants :",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _BulletPoint(
                 text:
                     "Immeuble ou objet mobilier classé ou inscrit (code du patrimoine) ou document d’archives privées classé.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Patrimoine archéologique au sens de "),
+                TextSpan(text: "Patrimoine archéologique au sens de "),
                 TextSpan(
                   text: "l’article L. 510-1 du code du patrimoine",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Bien culturel du domaine public mobilier ou exposé / conservé / déposé (même temporairement) dans un musée de France, une bibliothèque, une médiathèque, un service d’archives, ou dans un lieu dépendant d’une personne publique/mission d’intérêt général, ou dans un édifice affecté au culte.",
               ),
-              const _BulletPoint(text: "Édifice affecté au culte."),
+              _BulletPoint(text: "Édifice affecté au culte."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Entraînant un dommage"),
-              const _Paragraph(
+              _SubTitle("C) Entraînant un dommage"),
+              _Paragraph(
                 "Les résultats visés sont identiques à ceux des destructions volontaires : destruction, dégradation, détérioration.\n"
                 "Le dommage peut être léger ou important : il suffit que le bien endommagé fasse partie de ceux protégés "
                 "par l’article 322-3-1 du Code pénal.",
@@ -218,20 +218,20 @@ class BiensCulturelsPublicsClassesPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-3, 1° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : circonstance aggravante lorsque l’infraction est commise ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "par plusieurs personnes agissant en qualité d’auteur ou de complice.",
                 ),
@@ -247,83 +247,83 @@ class BiensCulturelsPublicsClassesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
 
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple (délit) — "),
+                TextSpan(text: "Qualification simple (délit) — "),
                 TextSpan(
                   text: "article 322-3-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "7 ans d’emprisonnement et 100 000 € d’amende (ou 1/2 de la valeur du bien).",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée — "),
+                TextSpan(text: "Qualification aggravée — "),
                 TextSpan(
                   text: "article 322-3-1 alinéa 6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (avec la circonstance du 1° de l’article 322-3) :",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "10 ans d’emprisonnement et 150 000 € d’amende (ou 1/2 de la valeur du bien).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les personnes morales encourent les peines prévues par ",
                 ),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 322-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (tentative punissable pour ces délits).",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Complicité : OUI (punissable pour l’infraction consommée comme pour l’infraction tentée, pour personnes physiques ou morales).",
               ),
@@ -363,10 +363,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -431,7 +431,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -474,7 +474,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -536,7 +536,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -547,10 +547,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -562,13 +561,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -581,13 +579,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

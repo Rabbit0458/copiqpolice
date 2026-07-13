@@ -40,7 +40,7 @@ class _ProcedurePenalePageState extends State<ProcedurePenalePage> {
   Future<void> _toggleFavorite() async {
     setState(() => _isFav = !_isFav);
     await FavoritesStore.I.toggle(
-      FavoriteItem(
+      const FavoriteItem(
         route: ProcedurePenalePage.routeName,
         title: 'Procédure Pénale',
         subtitle: 'Cadres juridiques et actes de PJ',
@@ -212,7 +212,7 @@ class _HeroHeader extends StatelessWidget {
               child: Row(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  _IconBadge(icon: Icons.gavel_rounded),
+                  const _IconBadge(icon: Icons.gavel_rounded),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Column(
@@ -233,7 +233,7 @@ class _HeroHeader extends StatelessWidget {
                           ),
                         ),
                         const Spacer(),
-                        Wrap(
+                        const Wrap(
                           spacing: 8,
                           runSpacing: 8,
                           children: [
@@ -739,8 +739,8 @@ class _Chapter {
     required this.id,
     required this.title,
     required this.content,
-    this.tags = const [],
     this.quiz,
+    this.tags = const [],
   });
 }
 
@@ -762,7 +762,7 @@ class _Question {
 
 List<_Section> _demoData() {
   return [
-    _Section(
+    const _Section(
       id: 'ci',
       title: 'Contrôles & vérifications d’identité',
       icon: Icons.badge_rounded,
@@ -829,7 +829,7 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    _Section(
+    const _Section(
       id: 'flagrance',
       title: 'Enquête de flagrance',
       icon: Icons.warning_amber_rounded,
@@ -890,7 +890,7 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    _Section(
+    const _Section(
       id: 'prelim',
       title: 'Enquête préliminaire',
       icon: Icons.search_rounded,
@@ -917,7 +917,7 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    _Section(
+    const _Section(
       id: 'cr',
       title: 'Commission rogatoire',
       icon: Icons.assignment_rounded,
@@ -939,7 +939,7 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    _Section(
+    const _Section(
       id: 'co',
       title: 'Criminalité organisée',
       icon: Icons.security_rounded,
@@ -961,7 +961,7 @@ List<_Section> _demoData() {
         ),
       ],
     ),
-    _Section(
+    const _Section(
       id: 'cas',
       title: 'Cas particuliers',
       icon: Icons.cases_rounded,

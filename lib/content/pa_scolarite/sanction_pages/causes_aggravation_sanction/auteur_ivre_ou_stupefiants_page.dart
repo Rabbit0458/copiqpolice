@@ -25,8 +25,6 @@ class PaAuteurIvreOuStupefiantsPage extends StatelessWidget {
 
     const Color lawRed = Color(0xFFE53935);
 
-    TextSpan law(String s) => const TextSpan(text: '');
-
     TextSpan law(String s) => TextSpan(
       text: s,
       style: const TextStyle(color: lawRed, fontWeight: FontWeight.w800),

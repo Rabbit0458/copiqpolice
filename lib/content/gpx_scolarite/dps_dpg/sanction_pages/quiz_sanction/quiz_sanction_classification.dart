@@ -101,7 +101,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // CLASSIFICATION LÉGALE DES PEINES — GÉNÉRALITÉS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Classification légale des peines (généralités)',
     question:
         'La classification tripartite des infractions (crimes, délits, contraventions) est commandée par :',
@@ -115,7 +115,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : le code pénal établit une échelle des peines qui commande la classification tripartite des infractions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Classification légale des peines (généralités)',
     question: 'L’échelle des peines figure notamment :',
     options: [
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours cite expressément ces ensembles d’articles du code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Classification légale des peines (généralités)',
     question:
         'La classification légale des peines sert principalement à déterminer :',
@@ -147,7 +147,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES CRIMINELLES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Une peine criminelle principale peut être :',
     options: [
@@ -160,7 +160,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : en matière criminelle, les peines principales sont la réclusion ou la détention criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Les peines principales en matière criminelle comprennent :',
     options: [
@@ -173,7 +173,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours liste la perpétuité comme peine principale criminelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question:
         'Le maximum de réclusion/détention criminelle temporaire listé est :',
@@ -182,7 +182,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : 30 ans au plus (puis 20, puis 15).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'La réclusion criminelle est applicable :',
     options: [
@@ -195,7 +195,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : la réclusion s’applique aux crimes de droit commun.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'La détention criminelle est applicable :',
     options: [
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : la détention s’applique aux crimes politiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question:
         'Le juge peut prononcer une durée inférieure à celles mentionnées à l’art. 131-1 C.P., mais la durée doit être au moins :',
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours précise : la durée de la réclusion ou de la détention doit être de 10 ans au moins.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Une peine d’amende en matière criminelle est possible :',
     options: [
@@ -230,7 +230,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : l’amende peut s’ajouter uniquement si le texte la prévoit expressément.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question: 'Les peines complémentaires en matière criminelle :',
     options: [
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines complémentaires prévues à l’art. 131-10 C.P., spécialement prévues par le texte réprimant l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines criminelles)',
     question:
         'Les peines complémentaires applicables aux personnes physiques sont prévues notamment à :',
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES CORRECTIONNELLES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'Les peines correctionnelles sont énumérées à :',
     options: [
@@ -274,7 +274,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : les peines correctionnelles sont énumérées à l’article 131-3 du C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'La peine principale correctionnelle peut être :',
     options: [
@@ -287,7 +287,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : en matière correctionnelle, la peine principale est notamment l’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question:
         'L’échelle de l’emprisonnement correctionnel comporte, selon le cours :',
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : l’emprisonnement comporte une échelle comprenant 8 degrés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question:
         'Parmi ces durées, laquelle figure dans l’échelle des 8 degrés de l’emprisonnement correctionnel ?',
@@ -307,7 +307,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours cite : 10, 7, 5, 3, 2, 1 an, 6 mois, 2 mois (au plus).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'L’emprisonnement correctionnel peut faire l’objet :',
     options: [
@@ -319,7 +319,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours précise ces possibilités.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines correctionnelles)',
     question: 'Le montant minimum de l’amende correctionnelle est :',
     options: ['3 750 €', '1 500 €', '38 €'],
@@ -331,7 +331,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES ALTERNATIVES (DÉLITS)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'La détention à domicile sous surveillance électronique (DDSE) est prévue par :',
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : DDSE (15 jours à 6 mois) — art. 131-4-1 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'La DDSE (détention à domicile sous surveillance électronique) doit durer :',
@@ -357,7 +357,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : durée comprise entre 15 jours et 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'La DDSE ne peut pas excéder :',
     options: [
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : la DDSE s’exécute sans excéder l’emprisonnement encouru.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'La peine de jour-amende est prévue à :',
     options: [
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : jour-amende à la place de l’amende si le délit est puni d’emprisonnement (art. 131-5 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'Les peines privatives ou restrictives de droits (délits) sont prévues à :',
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines privatives ou restrictives de droits prévues à l’art. 131-6 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'Le travail d’intérêt général (TIG) peut être prononcé :',
     options: [
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : TIG à la place de la peine d’emprisonnement (art. 131-8 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'Le TIG peut durer, selon le cours :',
     options: [
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : TIG pour une durée de 20 à 400 heures.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question:
         'Les peines alternatives (délits) figurent dans le texte réprimant l’infraction :',
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : elles ne figurent pas dans le texte d’incrimination, elles sont prévues par des dispositions générales.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (peines alternatives)',
     question: 'Le juge peut décider de substituer des peines alternatives :',
     options: [
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — STAGE & SANCTION-RÉPARATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La peine de stage est prévue à :',
     options: [
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : peine de stage (art. 131-5-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La peine de stage consiste principalement :',
     options: [
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours définit la peine de stage : obligation d’accomplir un stage (≤ 1 mois) dont les modalités sont fixées par la juridiction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La durée maximale d’un stage est :',
     options: ['Un mois', 'Six mois', 'Un an'],
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : durée ne pouvant excéder un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La peine de sanction-réparation est prévue à :',
     options: [
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : sanction-réparation (art. 131-8-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'La sanction-réparation consiste :',
     options: [
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : obligation de procéder à l’indemnisation du préjudice de la victime dans le délai et selon les modalités fixées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (stage / sanction-réparation)',
     question: 'Le stage et la sanction-réparation peuvent être prononcés :',
     options: [
@@ -530,7 +530,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES PHYSIQUES — PEINES CONTRAVENTIONNELLES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question: 'Les peines contraventionnelles sont prévues à :',
     options: [
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines contraventionnelles prévues à l’article 131-12 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Constituent des contraventions les infractions punies d’une amende n’excédant pas :',
@@ -552,7 +552,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : art. 131-13 C.P. — amende n’excédant pas 3 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 1ère classe est :',
@@ -562,7 +562,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : 38 € au plus pour les contraventions de 1ère classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 2ème classe est :',
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : 150 € au plus pour les contraventions de 2ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 3ème classe est :',
@@ -582,7 +582,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : 450 € au plus pour les contraventions de 3ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 4ème classe est :',
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : 750 € au plus pour les contraventions de 4ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le plafond de l’amende pour une contravention de 5ème classe est :',
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : 1 500 € au plus pour la 5ème classe, porté à 3 000 € en cas de récidive.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Les peines alternatives en matière contraventionnelle (personnes physiques) sont prévues :',
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines alternatives uniquement pour la 5ème classe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Les peines alternatives pour contraventions de 5ème classe consistent en :',
@@ -634,7 +634,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines privatives ou restrictives de droits prévues à l’art. 131-14 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Les peines complémentaires contraventionnelles (personnes physiques) sont listées notamment aux :',
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines complémentaires listées aux art. 131-16 et 131-17 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'Le juge peut prononcer les peines complémentaires contraventionnelles :',
@@ -662,7 +662,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : le juge peut les prononcer soit en plus, soit à titre principal à la place de l’amende.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'La sanction-réparation en contravention (personnes physiques) est prévue :',
@@ -676,7 +676,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : sanction-réparation uniquement pour la 5ème classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question:
         'La sanction-réparation contraventionnelle (5ème classe) peut être prononcée :',
@@ -690,7 +690,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : elle peut être prononcée à la place ou en même temps que l’amende.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes physiques (contraventions)',
     question: 'La sanction-réparation contraventionnelle est prévue à :',
     options: [
@@ -707,7 +707,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PERSONNES MORALES — PEINES (GÉNÉRAL)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (généralités)',
     question:
         'La répression applicable aux personnes morales figure aux articles :',
@@ -721,7 +721,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : la répression des personnes morales figure aux art. 131-37 à 131-49 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (généralités)',
     question:
         'Les peines criminelles et correctionnelles encourues par les personnes morales figurent à :',
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : elles figurent à l’article 131-37 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'La sanction — Personnes morales (peines criminelles/correctionnelles)',
     question:
@@ -749,7 +749,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : amende + (si la loi le prévoit) peines de l’art. 131-39 et 131-39-2, et en correctionnel la sanction-réparation (131-39-1).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'La sanction — Personnes morales (peines criminelles/correctionnelles)',
     question:
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : en matière correctionnelle, la personne morale encourt la sanction-réparation prévue à l’art. 131-39-1 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (amende)',
     question: 'Le taux maximum de l’amende des personnes morales est :',
     options: [
@@ -777,7 +777,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : art. 131-38 C.P. — maximum = quintuple du maximum prévu pour les personnes physiques.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (amende)',
     question:
         'Pour déterminer le maximum d’amende encouru par une personne morale, il faut :',
@@ -791,7 +791,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : on multiplie par cinq le maximum prévu pour la personne physique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (amende)',
     question:
         'Si un crime ne prévoit aucune amende pour les personnes physiques, l’amende encourue par la personne morale est :',
@@ -801,7 +801,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : en présence d’un crime sans amende pour les personnes physiques, amende pour la personne morale = 1 000 000 €.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Les peines contraventionnelles encourues par les personnes morales sont énoncées à :',
@@ -815,7 +815,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines contraventionnelles des personnes morales — art. 131-40 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Pour les contraventions de 5ème classe, les personnes morales peuvent encourir :',
@@ -830,7 +830,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : art. 131-42 (droits) + art. 131-44-1 (sanction-réparation).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Les peines complémentaires des personnes morales en matière contraventionnelle figurent à :',
@@ -844,7 +844,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : peines complémentaires des personnes morales (contraventions) — art. 131-43 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Personnes morales (contraventions)',
     question:
         'Les peines complémentaires des personnes morales peuvent être prononcées :',
@@ -863,7 +863,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // CLASSIFICATION DES MESURES DE SÛRETÉ — GÉNÉRALITÉS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (généralités)',
     question: 'Le but principal d’une mesure de sûreté est :',
     options: [
@@ -876,7 +876,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : but préventif en neutralisant, surveillant ou traitant les individus dangereux.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (généralités)',
     question: 'Les mesures de sûreté visent notamment à :',
     options: [
@@ -889,7 +889,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : neutralisation / surveillance / traitement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (généralités)',
     question:
         'Les mesures de sûreté font l’objet d’un titre unique et complet dans le code pénal :',
@@ -907,7 +907,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SÛRETÉ CURATIVES
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question: 'Les mesures de sûreté curatives concernent essentiellement :',
     options: [
@@ -919,7 +919,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : mesures curatives = alcooliques et toxicomanes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question:
         'Dans le cadre du contrôle judiciaire, l’obligation de se soumettre à des soins est prévue par :',
@@ -933,7 +933,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : seul l’art. 138 10° C.P.P. prévoit cette obligation (traitement/soins, désintoxication).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question:
         'L’obligation de soins dans le contrôle judiciaire vise notamment :',
@@ -947,7 +947,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : mesures de traitement/soins, notamment aux fins de désintoxication.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (curatives)',
     question:
         'Le législateur a mis en place un système donnant la priorité aux :',
@@ -965,7 +965,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SURVEILLANCE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire est prévu aux articles :',
     options: [
@@ -978,7 +978,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : suivi socio-judiciaire — art. 131-36-1 à 131-36-8 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire oblige le condamné à se soumettre :',
     options: [
@@ -992,7 +992,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : sous le contrôle du juge de l’application des peines, surveillance et assistance pendant une durée fixée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire concerne notamment des infractions :',
     options: [
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : infractions de nature sexuelle ou des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Le suivi socio-judiciaire peut être assorti :',
     options: [
@@ -1017,7 +1017,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : injonction de soins possible si bénéfique au condamné.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'Le suivi socio-judiciaire peut être assorti d’un placement sous surveillance électronique mobile :',
@@ -1032,7 +1032,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : PSEM mobile possible, décidé par la juridiction ou ultérieurement par le JAP.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire des personnes dangereuses est prévue à :',
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : surveillance judiciaire — art. 723-29 C.P.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire des personnes dangereuses a pour finalité :',
@@ -1059,7 +1059,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : uniquement envisageable aux fins de prévenir la récidive au risque avéré.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire peut viser les auteurs condamnés à une peine privative de liberté d’une durée :',
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : >=7 ans si le suivi socio-judiciaire était encouru mais n’a pas été prononcé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question:
         'La surveillance judiciaire peut aussi viser une peine privative de liberté :',
@@ -1088,7 +1088,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : >=5 ans si crime/délit commis une nouvelle fois en état de récidive légale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance)',
     question: 'Dans son contenu, la surveillance judiciaire ressemble :',
     options: [
@@ -1104,7 +1104,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES PORTANT ATTEINTE À LA LIBERTÉ — MINEURS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'En matière de mineurs, le principe fondamental affirmé est :',
     options: [
@@ -1116,7 +1116,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : le CJPM érige ce principe en fondamental.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question:
         'La mesure éducative judiciaire provisoire (M.E.J.P.) est prévue aux articles :',
@@ -1129,7 +1129,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : MEJP — art. L323-1 à L323-3 CJPM.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La M.E.J.P. peut être prise :',
     options: [
@@ -1143,7 +1143,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : elle peut être prise à tout moment avant la sanction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La durée de la M.E.J.P. est :',
     options: [
@@ -1155,7 +1155,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : durée d’un an renouvelable (art. L432-2 CJPM).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La M.E.J.P. est modulable :',
     options: [
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : modulable selon besoins/évolution.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La M.E.J.P. peut s’accompagner d’une M.J.I.E., qui est :',
     options: [
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : MJIE = évaluation approfondie (éducation, santé, scolarité, famille…).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question:
         'Avant jugement, un mineur peut, sous conditions, faire l’objet :',
@@ -1196,7 +1196,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : possibilité d’ARSE ou placement en détention provisoire sous conditions.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / mineurs)',
     question: 'La loi du 25 février 2008 :',
     options: [
@@ -1213,7 +1213,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES PORTANT ATTEINTE À LA LIBERTÉ — MAJEURS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de séjour :',
     options: [
@@ -1227,7 +1227,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : interdiction de séjour = défense de paraître + surveillance/assistance (art. 131-31 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de séjour est prévue à :',
     options: [
@@ -1239,7 +1239,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : interdiction de séjour — art. 131-31 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de manifester :',
     options: [
@@ -1252,7 +1252,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : défense de manifester sur la voie publique dans certains lieux (art. 131-32-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question:
         'La durée maximale de l’interdiction de manifester (selon le cours) est :',
@@ -1261,7 +1261,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : durée ne pouvant excéder trois ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (liberté / majeurs)',
     question: 'L’interdiction de manifester est prévue à :',
     options: [
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : art. 131-32-1 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (étrangers)',
     question:
         'Parmi ces mesures, laquelle concerne explicitement les étrangers (selon le cours) ?',
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : mesures concernant les étrangers : interdiction du territoire, expulsion, assignation à résidence, OQTF, rétention administrative…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (étrangers)',
     question: 'Parmi les mesures concernant les étrangers, on trouve :',
     options: [
@@ -1296,7 +1296,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours cite l’expulsion parmi les mesures concernant les étrangers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (étrangers)',
     question: 'L’obligation de quitter le territoire (OQTF) est :',
     options: [
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SÛRETÉ — STAGES / INTERDICTIONS / RESTRICTIONS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'L’obligation d’accomplir un stage est prévue à :',
     options: [
@@ -1326,7 +1326,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : obligation d’accomplir un stage (art. 131-5-1 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Le but du stage (art. 131-5-1 C.P.) est :',
     options: [
@@ -1338,7 +1338,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : prévention de la réitération.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1351,7 +1351,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : stage de citoyenneté fait partie des stages possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1363,7 +1363,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1376,7 +1376,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1389,7 +1389,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite dans la liste.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1402,7 +1402,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite dans la liste.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1414,7 +1414,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : stage de responsabilité parentale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1427,7 +1427,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1440,7 +1440,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite expressément.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (stages)',
     question: 'Parmi ces stages, lequel figure dans la liste du cours ?',
     options: [
@@ -1457,7 +1457,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // MESURES DE SÛRETÉ — INTERDICTIONS & RESTRICTIONS (ART. 131-6 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question: 'Les interdictions et restrictions sont prévues à :',
     options: [
@@ -1469,7 +1469,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : interdictions et restrictions — art. 131-6 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : suspension/annulation du permis de conduire est listée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1496,7 +1496,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours le cite explicitement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1509,7 +1509,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : confiscation/immobilisation de véhicules.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1522,7 +1522,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours cite cette interdiction/confiscation.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1531,7 +1531,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : retrait du permis de chasser est listé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1544,7 +1544,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours cite cette interdiction parmi les restrictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (interdictions / restrictions)',
     question:
         'Parmi ces mesures, laquelle figure dans la liste associée à l’art. 131-6 C.P. ?',
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // HOSPITALISATION COMPLÈTE (TROUBLE MENTAL)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (trouble mental)',
     question:
         'Après une décision d’irresponsabilité pénale pour cause de trouble mental, une juridiction peut prononcer :',
@@ -1577,7 +1577,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : hospitalisation complète possible par ordonnance motivée.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (trouble mental)',
     question:
         'L’hospitalisation complète en soins psychiatriques (dans ce cadre) est prévue à :',
@@ -1595,7 +1595,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉTENTION & SURVEILLANCE DE SÛRETÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'La rétention et la surveillance de sûreté sont prévues aux articles :',
@@ -1609,7 +1609,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : rétention/surveillance de sûreté — art. 706-53-13 à 706-53-22 C.P.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question: 'La rétention consiste :',
     options: [
@@ -1622,7 +1622,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours définit la rétention de sûreté ainsi.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'La rétention de sûreté s’applique seulement si la peine prononcée est :',
@@ -1635,7 +1635,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : condition n°1 = peine >= 15 ans.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question: 'Une condition de la rétention de sûreté est que :',
     options: [
@@ -1647,7 +1647,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : condition n°2 = crimes précis.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'Une condition de la rétention de sûreté est que le condamné présente :',
@@ -1662,7 +1662,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : condition n°3 = dangerosité + probabilité très élevée de récidive.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question:
         'À l’issue de la rétention de sûreté, la personne peut faire l’objet :',
@@ -1676,7 +1676,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : surveillance de sûreté possible après la rétention.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (rétention / surveillance)',
     question: 'La surveillance de sûreté peut être renouvelée pour une durée :',
     options: ['De deux ans', 'De cinq ans', 'D’un mois'],
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
   //////////////////////////////////////////////////////////////////////////////
   // PLACEMENT SOUS SURVEILLANCE ÉLECTRONIQUE (763-10 à 763-14 C.P.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question:
         'Le placement sous surveillance électronique (bracelet GPS) est prévu aux articles :',
@@ -1702,7 +1702,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : placement sous surveillance électronique — art. 763-10 à 763-14 C.P.P.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question: 'Le but du bracelet GPS après libération est principalement :',
     options: [
@@ -1716,7 +1716,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
         'Le cours : renforcer la prévention de la récidive des infractions les plus graves.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question: 'Le bracelet GPS permet notamment :',
     options: [
@@ -1728,7 +1728,7 @@ final List<QuizQuestion> questionGPXSchoolSanctionClassification = [
     explanation: 'Le cours : connaître déplacements/localisation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'La sanction — Mesures de sûreté (surveillance électronique)',
     question: 'Le placement sous surveillance électronique peut être :',
     options: [
@@ -2099,7 +2099,7 @@ class _QuizSanctionClassificationState extends State<QuizSanctionClassification>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2302,7 +2302,7 @@ class _QuizSanctionClassificationState extends State<QuizSanctionClassification>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2485,7 +2485,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3018,10 +3017,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3392,7 +3392,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3433,9 +3433,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

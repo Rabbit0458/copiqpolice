@@ -26,9 +26,9 @@ class MoyenCryptologiePage extends StatelessWidget {
         ? const Color(0xFF0F1E1B)
         : const Color(0xFFF0FFFB);
 
-    final Color accentBlue = const Color(0xFF1565C0);
-    final Color accentAmber = const Color(0xFFF9A825);
-    final Color accentTeal = const Color(0xFF00897B);
+    const Color accentBlue = Color(0xFF1565C0);
+    const Color accentAmber = Color(0xFFF9A825);
+    const Color accentTeal = Color(0xFF00897B);
 
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0B1B3A);
 
@@ -70,30 +70,30 @@ class MoyenCryptologiePage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withOpacity(
+                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                       .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withOpacity(
+                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                         .08,
                       ),
                     ),
                   ),
-                  child: _Paragraph.rich([
-                    const TextSpan(text: "« "),
-                    const TextSpan(
+                  child: const _Paragraph.rich([
+                    TextSpan(text: "« "),
+                    TextSpan(
                       text:
                           "Lorsqu'un moyen de cryptologie au sens de l'article 29 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique a été utilisé pour préparer ou commettre un crime ou un délit, ou pour en faciliter la préparation ou la commission, le maximum de la peine privative de liberté est relevé. ",
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
-                    const TextSpan(text: "\n\n"),
-                    const TextSpan(
+                    TextSpan(text: "\n\n"),
+                    TextSpan(
                       text:
                           "Les dispositions du présent article ne sont toutefois pas applicables à l'auteur ou au complice de l'infraction qui, à la demande des autorités judiciaires ou administratives, leur a remis la version en clair des messages chiffrés ainsi que les conventions secrètes nécessaires au déchiffrement.",
                       style: TextStyle(fontWeight: FontWeight.w700),
                     ),
-                    const TextSpan(text: " »"),
+                    TextSpan(text: " »"),
                   ]),
                 ),
 
@@ -238,10 +238,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -306,7 +306,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -349,7 +349,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -411,7 +411,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -443,7 +443,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -456,7 +456,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

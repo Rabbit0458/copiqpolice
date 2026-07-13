@@ -16,7 +16,7 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.72);
+        : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
         ? const Color(0xFF424242)
@@ -82,7 +82,7 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
             titleColor: titleColor,
             children: [
               // ===================== EN-TÊTE CHAPITRE ====================
-              _SubTitle('Fondement juridique'),
+              const _SubTitle('Fondement juridique'),
               _Paragraph.rich([
                 const TextSpan(
                   text:
@@ -148,7 +148,7 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
               ]),
               const SizedBox(height: 12),
 
-              _SubTitle('Infractions concernées'),
+              const _SubTitle('Infractions concernées'),
               const _Paragraph(
                 'Le relevé d’identité peut être effectué à l’encontre des contrevenants aux arrêtés de police du maire, '
                 'aux dispositions du code de la route dont la liste est fixée par décret en Conseil d’État, ou encore '
@@ -157,7 +157,7 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              _SubTitle('Nature du relevé d’identité'),
+              const _SubTitle('Nature du relevé d’identité'),
               const _Paragraph(
                 'Le relevé d’identité d’une personne est une opération de nature judiciaire : une infraction doit avoir '
                 'été préalablement commise pour pouvoir y procéder. Il s’agit d’une procédure intermédiaire entre le '
@@ -172,7 +172,7 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              _SubTitle('Pouvoirs des agents de police judiciaire adjoints'),
+              const _SubTitle('Pouvoirs des agents de police judiciaire adjoints'),
               const _Paragraph(
                 'Les agents de police judiciaire adjoints précités peuvent, quant à eux, exiger du contrevenant la '
                 'présentation d’une pièce d’identité afin d’en relever les mentions. Le plus souvent, le relevé d’identité '
@@ -180,7 +180,7 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              _SubTitle('Refus ou impossibilité de justifier de son identité'),
+              const _SubTitle('Refus ou impossibilité de justifier de son identité'),
               const _Paragraph(
                 'En cas de refus ou d’impossibilité pour le contrevenant de justifier de son identité, l’agent de police '
                 'judiciaire adjoint en rend compte à l’officier de police judiciaire territorialement compétent, qui peut '
@@ -200,19 +200,19 @@ class ReleveIdentiteGpxSchool extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'Outre les agents de police judiciaire adjoints précités, le législateur a autorisé, pour certains '
                         'domaines de réglementation particuliers, d’autres agents de contrôle à relever l’identité des '
                         'contrevenants. ',
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'Ainsi, les agents de l’exploitant d’un service public de transports terrestres',
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ' (SNCF, RATP, etc.) sont habilités par l’article L. 2241-2 du code des transports, dans les '
                         'conditions prévues par l’article 529-4 du code de procédure pénale, à relever l’identité et '
@@ -281,10 +281,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -349,7 +349,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -392,7 +392,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -454,7 +454,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -465,10 +465,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -480,13 +479,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -499,13 +497,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

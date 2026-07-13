@@ -125,7 +125,7 @@ class _WarningScreenState extends State<WarningScreen>
   TextStyle _p() => GoogleFonts.montserrat(
     fontSize: 13.8,
     fontWeight: FontWeight.w600,
-    color: Colors.white.withOpacity(0.86),
+    color: Colors.white.withValues(alpha: 0.86),
     height: 1.45,
   );
 
@@ -179,9 +179,9 @@ class _WarningScreenState extends State<WarningScreen>
                                 begin: const Alignment(-0.8, -0.9),
                                 end: const Alignment(0.8, 0.9),
                                 colors: [
-                                  Colors.white.withOpacity(0.0),
-                                  Colors.white.withOpacity(o),
-                                  Colors.white.withOpacity(0.0),
+                                  Colors.white.withValues(alpha: 0.0),
+                                  Colors.white.withValues(alpha: o),
+                                  Colors.white.withValues(alpha: 0.0),
                                 ],
                               ),
                             ),
@@ -200,9 +200,9 @@ class _WarningScreenState extends State<WarningScreen>
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black.withOpacity(0.18),
+                            Colors.black.withValues(alpha: 0.18),
                             Colors.transparent,
-                            Colors.black.withOpacity(0.30),
+                            Colors.black.withValues(alpha: 0.30),
                           ],
                         ),
                       ),
@@ -284,13 +284,13 @@ class _GlassCardPremium extends StatelessWidget {
     return DecoratedBox(
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.white.withOpacity(0.075),
-        border: Border.all(color: Colors.white.withOpacity(0.10), width: 1),
+        color: Colors.white.withValues(alpha: 0.075),
+        border: Border.all(color: Colors.white.withValues(alpha: 0.10), width: 1),
         boxShadow: [
           BoxShadow(
             blurRadius: 28,
             offset: const Offset(0, 16),
-            color: Colors.black.withOpacity(0.22),
+            color: Colors.black.withValues(alpha: 0.22),
           ),
         ],
       ),
@@ -306,9 +306,9 @@ class _GlassCardPremium extends StatelessWidget {
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.white.withOpacity(0.10),
+                        Colors.white.withValues(alpha: 0.10),
                         Colors.transparent,
-                        Colors.black.withOpacity(0.06),
+                        Colors.black.withValues(alpha: 0.06),
                       ],
                     ),
                   ),
@@ -369,7 +369,7 @@ class _CardContent extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: _danger.withOpacity(glow),
+                    color: _danger.withValues(alpha: glow),
                     blurRadius: 30,
                     spreadRadius: 1.5,
                     offset: const Offset(0, 12),
@@ -391,7 +391,7 @@ class _CardContent extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: _danger.withOpacity(0.22),
+              color: _danger.withValues(alpha: 0.22),
               blurRadius: 26,
               spreadRadius: 1,
               offset: const Offset(0, 10),
@@ -433,15 +433,15 @@ class _CardContent extends StatelessWidget {
           width: double.infinity,
           padding: const EdgeInsets.fromLTRB(12, 12, 12, 12),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.06),
+            color: Colors.white.withValues(alpha: 0.06),
             borderRadius: BorderRadius.circular(16),
-            border: Border.all(color: Colors.white.withOpacity(0.12)),
+            border: Border.all(color: Colors.white.withValues(alpha: 0.12)),
           ),
           child: Row(
             children: [
               Icon(
                 Icons.lock_outline_rounded,
-                color: Colors.white.withOpacity(0.88),
+                color: Colors.white.withValues(alpha: 0.88),
                 size: 18,
               ),
               const SizedBox(width: 10),
@@ -449,7 +449,7 @@ class _CardContent extends StatelessWidget {
                 child: Text(
                   "En continuant, tu confirmes avoir lu cet avertissement.",
                   style: GoogleFonts.montserrat(
-                    color: Colors.white.withOpacity(0.88),
+                    color: Colors.white.withValues(alpha: 0.88),
                     fontWeight: FontWeight.w700,
                     fontSize: 13.0,
                     height: 1.25,
@@ -494,7 +494,7 @@ class _CardContent extends StatelessWidget {
             onPressed: onOpenPrivacy,
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
-              side: BorderSide(color: Colors.white.withOpacity(0.25), width: 1),
+              side: BorderSide(color: Colors.white.withValues(alpha: 0.25), width: 1),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(16),
               ),
@@ -541,7 +541,7 @@ class _RedirectingView extends StatelessWidget {
                 shape: BoxShape.circle,
                 boxShadow: [
                   BoxShadow(
-                    color: _success.withOpacity(glow),
+                    color: _success.withValues(alpha: glow),
                     blurRadius: 28,
                     spreadRadius: 1.0,
                   ),
@@ -558,7 +558,7 @@ class _RedirectingView extends StatelessWidget {
           shape: BoxShape.circle,
           boxShadow: [
             BoxShadow(
-              color: _success.withOpacity(0.22),
+              color: _success.withValues(alpha: 0.22),
               blurRadius: 24,
               spreadRadius: 1,
             ),
@@ -589,7 +589,7 @@ class _RedirectingView extends StatelessWidget {
             "Redirection vers COP’IQ…",
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(
-              color: Colors.white.withOpacity(0.78),
+              color: Colors.white.withValues(alpha: 0.78),
               fontSize: 16,
               fontWeight: FontWeight.w700,
             ),
@@ -662,11 +662,11 @@ class _DynamicBlobsBackgroundState extends State<_DynamicBlobsBackground>
         final dy2 = lerpDouble(0.22, -0.06, t)!;
 
         final c1 = widget.isDark
-            ? Colors.white.withOpacity(0.06)
-            : Colors.white.withOpacity(0.10);
+            ? Colors.white.withValues(alpha: 0.06)
+            : Colors.white.withValues(alpha: 0.10);
         final c2 = widget.isDark
-            ? Colors.white.withOpacity(0.04)
-            : Colors.white.withOpacity(0.08);
+            ? Colors.white.withValues(alpha: 0.04)
+            : Colors.white.withValues(alpha: 0.08);
 
         return Stack(
           children: [

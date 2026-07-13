@@ -101,7 +101,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // PRINCIPES GÉNÉRAUX — RESPONSABILITÉ PÉNALE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'En droit pénal, la responsabilité pénale consiste principalement :',
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'La responsabilité pénale est :',
     options: [
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Quel principe est posé par l’article 121-1 du Code pénal ?',
     options: [
@@ -145,7 +145,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'Le principe « nul n’est responsable que de son propre fait » est applicable :',
@@ -160,7 +160,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'Pour qu’il y ait responsabilité pénale au sens strict, il faut :',
@@ -178,7 +178,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // LA COACTION (COAUTEURS)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Lorsque plusieurs personnes participent à égalité à la réalisation de l’infraction, elles sont :',
@@ -193,7 +193,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Pourquoi les coauteurs sont-ils considérés comme auteurs principaux ?',
@@ -209,7 +209,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'En cas d’infraction collective, la jurisprudence peut qualifier :',
@@ -224,7 +224,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Dans le cas de violences commises par plusieurs individus, ils peuvent être qualifiés de coauteurs selon la jurisprudence (ex : Cass. crim. 1er oct. 1984).',
@@ -235,7 +235,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'La jurisprudence tend à considérer comme coauteurs :',
     options: [
@@ -250,7 +250,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Exemple typique d’une qualification de coauteur (tendance jurisprudentielle) :',
@@ -268,7 +268,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // LA COMPLICITÉ — DÉFINITION & PRINCIPE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question: 'La complicité est définie par quel article du Code pénal ?',
     options: ['Article 121-1', 'Article 121-7', 'Article 122-5'],
@@ -278,7 +278,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question: 'Le complice est celui qui :',
     options: [
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question:
         'Le Code pénal assimile le complice à l’auteur au niveau de la répression (article 121-6). Cela signifie :',
@@ -308,7 +308,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question:
         'La complicité est une « criminalité d’emprunt ». Cela signifie :',
@@ -327,7 +327,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // COMPLICITÉ — CONDITIONS RELATIVES AU FAIT PRINCIPAL
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Si le fait principal échappe à la loi pénale (pas d’infraction), le complice :',
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question: 'La complicité de tentative est :',
     options: [
@@ -356,7 +356,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Si l’auteur principal ne réalise que des actes préparatoires ou se désiste volontairement, le complice :',
@@ -372,7 +372,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'La complicité ne peut pas être retenue lorsque le fait principal est :',
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'La complicité peut être retenue même si l’auteur principal n’est pas puni, notamment si :',
@@ -403,7 +403,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Selon l’article 121-7 du Code pénal, sont susceptibles de complicité :',
@@ -418,7 +418,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (contraventions)',
     question:
         'En matière de contraventions, la complicité par provocation ou instructions est :',
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (contraventions)',
     question:
         'En matière de contraventions, la complicité par aide ou assistance est :',
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // COMPLICITÉ — PARTICIPATION MATÉRIELLE (ART. 121-7)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question: 'Les actes de complicité doivent être :',
     options: [
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question: 'Les actes de complicité doivent être :',
     options: [
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question:
         'Une personne simple spectatrice d’une infraction peut être qualifiée de complice :',
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes — provocation)',
     question:
         'La provocation, pour constituer une complicité, doit notamment :',
@@ -510,7 +510,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes — provocation)',
     question: 'La provocation doit être :',
     options: [
@@ -524,7 +524,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes — provocation)',
     question: 'La provocation doit être suivie d’effets. Cela signifie :',
     options: [
@@ -538,7 +538,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes — instructions)',
     question: 'La fourniture d’instructions correspond à :',
     options: [
@@ -553,7 +553,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes — aide/assistance)',
     question: 'L’aide ou l’assistance suppose que l’acte ait :',
     options: [
@@ -570,7 +570,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // COMPLICITÉ — INTENTION CRIMINELLE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (intention)',
     question: 'L’intention criminelle du complice requiert :',
     options: [
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // HAPPY SLAPPING (CAS PARTICULIER)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (happy slapping)',
     question:
         'Quel article assimile à un acte de complicité le fait d’enregistrer sciemment des images de violences volontaires (happy slapping) ?',
@@ -603,7 +603,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (happy slapping)',
     question:
         'Selon le cours, la particularité de l’article 222-33-3 du Code pénal est qu’il :',
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // RÉPRESSION DE LA COMPLICITÉ (ART. 121-6)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question:
         'Dire que « le complice est puni comme auteur » (article 121-6) signifie :',
@@ -638,7 +638,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question:
         'Les circonstances personnelles à l’auteur (ex : démence, contrainte, récidive) sont applicables au complice :',
@@ -653,7 +653,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Les circonstances réelles (touchant la matérialité de l’acte) :',
     options: [
@@ -667,7 +667,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question:
         'Les circonstances réelles aggravantes peuvent s’étendre au complice même s’il les ignorait :',
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question:
         'Concernant les circonstances aggravantes liées à la qualité de l’auteur principal, la Cour de cassation a jugé qu’elles sont applicables au complice (arrêt du 7 septembre 2005).',
@@ -692,7 +692,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // TABLEAU - SYNTHÈSE COMPLICITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (synthèse)',
     question: 'La complicité repose sur trois blocs :',
     options: [
@@ -706,7 +706,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le tableau de synthèse rappelle les 3 éléments : fait principal punissable, participation (actes de l’art. 121-7), intention criminelle (connaissance + volonté).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'En droit pénal, la responsabilité pénale correspond principalement :',
@@ -721,7 +721,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : la responsabilité pénale = répondre de ses actes délictueux + exécuter la sanction en cas de condamnation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'La responsabilité pénale est :',
     options: [
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : ce n’est pas un élément de l’infraction, mais son effet/conséquence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Selon l’article 121-1 du Code pénal, le principe est :',
     options: [
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Art. 121-1 C.P. : responsabilité personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Le principe de l’article 121-1 s’applique :',
     options: [
@@ -759,7 +759,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : principe applicable aux deux (innovation à l’époque).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'Pour qu’il y ait responsabilité pénale au sens strict, il faut :',
@@ -772,7 +772,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : culpabilité + imputabilité.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'En droit pénal, le Code pénal prend principalement en compte :',
     options: [
@@ -784,7 +784,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : prise en compte de la personne du délinquant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'Pour être déclarée pénalement responsable, une personne doit avoir participé à l’infraction en qualité :',
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : auteur/complice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Les causes d’irresponsabilité ou d’atténuation agissent sur :',
     options: [
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : elles affectent la responsabilité (ou l’atténuent) sans effacer nécessairement les faits.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Imputabilité signifie principalement :',
     options: [
@@ -823,7 +823,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : responsabilité stricte = faute + faute imputable.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Dans un raisonnement pénal, la responsabilité est plutôt :',
     options: [
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : conséquence juridique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Une personne morale peut être responsable pénalement :',
     options: [
@@ -847,7 +847,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : responsabilité possible des personnes morales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'L’idée centrale du principe « nul n’est responsable que de son propre fait » vise surtout :',
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Responsabilité personnelle : pas de responsabilité pénale générale du fait d’autrui.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Une cause d’irresponsabilité implique généralement que :',
     options: [
@@ -874,7 +874,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : faits justificatifs / non-imputabilité.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Dans le cours, la responsabilité pénale n’est pas :',
     options: [
@@ -886,7 +886,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours le dit expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'Le principe de l’article 121-1 est :',
     options: [
@@ -898,7 +898,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : principe général, y compris personnes morales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'Participer à une infraction « en qualité de complice » suppose en général :',
@@ -911,7 +911,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Définition de la complicité dans le cours.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'La responsabilité pénale peut être atténuée notamment lorsque :',
     options: [
@@ -924,7 +924,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : atténuations possibles.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question:
         'Dire que la responsabilité pénale « n’est pas un élément de l’infraction » signifie :',
@@ -938,7 +938,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Conséquence juridique : elle découle de l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Responsabilité pénale (principes)',
     question: 'La responsabilité pénale implique en cas de condamnation :',
     options: [
@@ -954,7 +954,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   /// COACTION / COAUTEURS (21 → 45)
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'L’auteur de l’infraction est celui qui :',
     options: [
@@ -967,7 +967,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : auteur = réalisation personnelle des actes incriminés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Lorsque plusieurs personnes participent à égalité à la réalisation, elles sont :',
@@ -976,7 +976,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Coaction : participation à égalité = coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'Les coauteurs sont considérés comme auteurs principaux car :',
     options: [
@@ -988,7 +988,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : chaque coauteur réalise matériel + moral.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'La coaction se rencontre souvent dans :',
     options: [
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : infraction possible par plusieurs personnes : coauteurs / auteur + complices.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'En cas d’infraction collective, la jurisprudence peut :',
     options: [
@@ -1014,7 +1014,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : difficulté d’identifier le rôle -> coauteur pour le groupe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'Exemple jurisprudentiel cité pour des violences à plusieurs :',
     options: ['Cass. crim. 1er oct. 1984', 'Cass. civ. 2001', 'CE 1995'],
@@ -1022,7 +1022,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours cite Cass. crim 1er oct. 1984.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'La théorie de la « complicité corespective » visait historiquement à :',
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : théorie jurisprudentielle ancienne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Aujourd’hui, l’intérêt pratique du subterfuge « complicité corespective » a diminué car :',
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : complice puni comme auteur -> intérêt perdu.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'La jurisprudence tend à considérer comme coauteurs aussi :',
     options: [
@@ -1061,7 +1061,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : ex. guet pendant vol.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Exemple : celui qui fait le guet pendant un vol est souvent qualifié :',
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Exemple direct du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'La coaction suppose une participation « à égalité ». Cela renvoie surtout à :',
@@ -1083,7 +1083,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Coaction : réalisation de l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Coauteur et complice : la différence centrale porte surtout sur :',
@@ -1097,7 +1097,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Cours : coauteur réalise; complice aide/intention.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'Une infraction peut être commise par :',
     options: [
@@ -1110,7 +1110,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : infraction peut être le fait de plusieurs personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question: 'La coaction se distingue de la complicité car le coauteur :',
     options: [
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Cours : coauteur = auteur principal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Coaction (coauteurs)',
     question:
         'Dans une infraction collective, la difficulté d’application vient surtout de :',
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   /// COMPLICITÉ — DÉFINITION & FAIT PRINCIPAL (46 → 95)
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question: 'La complicité est définie par :',
     options: [
@@ -1151,7 +1151,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. 121-7 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question: 'La complicité consiste en :',
     options: [
@@ -1163,7 +1163,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : entente momentanée + infraction déterminée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question: 'Le complice est celui qui :',
     options: [
@@ -1175,7 +1175,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Définition du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question:
         'La participation du complice à la commission de l’infraction est :',
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : participation intentionnelle par acte matériel.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité',
     question:
         'Le Code pénal assimile le complice à l’auteur au niveau de la répression via :',
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. 121-6 = complice puni comme auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question: 'La complicité est une « criminalité d’emprunt » car :',
     options: [
@@ -1214,7 +1214,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : rattachement à un fait principal punissable.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question: 'La complicité suppose l’existence :',
     options: [
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : existence d’une infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question: 'Si le fait principal n’est pas punissable, le complice :',
     options: [
@@ -1238,7 +1238,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : pas d’infraction -> pas de complicité.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Le suicide n’étant pas incriminé en droit français, celui qui le favorise :',
@@ -1252,7 +1252,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : éventuellement poursuites sur un délit distinct (provocation au suicide).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question: 'La complicité de tentative est :',
     options: [
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : complicité de tentative punissable.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Si l’auteur principal s’est désisté volontairement, le complice :',
@@ -1279,7 +1279,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : si auteur = actes préparatoires / désistement -> pas de poursuite du complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'La complicité ne peut pas être retenue si le fait principal est justifié par :',
@@ -1293,7 +1293,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : légitime défense / ordre de la loi / commandement autorité légitime.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'La complicité ne peut pas être retenue si le fait principal n’est plus punissable en cas :',
@@ -1307,7 +1307,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : prescription ou amnistie -> fait principal plus punissable.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Le complice peut être poursuivi même si l’auteur principal n’est pas puni lorsque :',
@@ -1321,7 +1321,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : fuite, inconnu, décès, irresponsabilité, exemption légale.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Le complice peut être poursuivi si l’auteur principal bénéficie :',
@@ -1334,7 +1334,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours l’indique clairement.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (fait principal)',
     question:
         'Selon l’article 121-7, en principe, la complicité est possible pour :',
@@ -1347,7 +1347,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : crimes et délits susceptibles de complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (contraventions)',
     question:
         'En matière de contraventions, la complicité par provocation ou instructions est :',
@@ -1360,7 +1360,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. R. 610-2 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (contraventions)',
     question:
         'En matière de contraventions, la complicité par aide/assistance est :',
@@ -1374,7 +1374,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : aide/assistance contraventionnelle seulement si texte express.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (contraventions)',
     question:
         'La complicité par aide/assistance en contravention est réprimée :',
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   /// COMPLICITÉ — ACTES DE PARTICIPATION (ART. 121-7) (96 → 135)
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question: 'Les actes de complicité sont :',
     options: [
@@ -1403,7 +1403,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : abstention ≠ acte de complicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question: 'L’abstention peut être retenue comme acte de complicité :',
     options: [
@@ -1415,7 +1415,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : actes positifs requis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question: 'Les actes de complicité doivent être :',
     options: [
@@ -1427,7 +1427,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : pas de complicité postérieure.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question: 'Il existe une complicité postérieure à l’infraction :',
     options: ['Oui', 'Non', 'Uniquement en crime'],
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : pas de complicité postérieure.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (provocation)',
     question: 'La provocation comme mode de complicité suppose notamment :',
     options: [
@@ -1447,7 +1447,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : simple conseil insuffisant.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (provocation)',
     question:
         'Un simple conseil donné à quelqu’un pour commettre une infraction entraîne :',
@@ -1461,7 +1461,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : la provocation doit être accompagnée de circonstances (don/promesse/ordre…).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (provocation)',
     question: 'La provocation doit être :',
     options: [
@@ -1473,7 +1473,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : provocation individuelle.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (provocation)',
     question: 'Pour être retenue, la provocation doit être suivie :',
     options: [
@@ -1485,7 +1485,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : exigence d’effets.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (instructions)',
     question: 'La fourniture d’instructions correspond :',
     options: [
@@ -1498,7 +1498,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : instructions précises + connaissance.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (instructions)',
     question:
         'Donner les horaires d’absence d’une personne en vue d’un cambriolage illustre :',
@@ -1511,7 +1511,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Exemple du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (aide/assistance)',
     question: 'L’aide ou l’assistance suppose que l’acte ait :',
     options: [
@@ -1523,7 +1523,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : aide/assistance = facilitation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (aide/assistance)',
     question: 'Fournir une arme en connaissance de cause à l’auteur illustre :',
     options: ['Aide/assistance', 'Erreur de droit', 'Contrainte morale'],
@@ -1531,7 +1531,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Exemple du cours : fourniture de moyens matériels.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (aide/assistance)',
     question:
         'Jouer de la musique pour couvrir les cris pendant une agression illustre :',
@@ -1544,7 +1544,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Exemple du cours.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (actes)',
     question:
         'La liste des actes de participation est énumérée principalement à :',
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   /// COMPLICITÉ — INTENTION / HAPPY SLAPPING / RÉPRESSION (136 → 170)
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (intention)',
     question: 'L’intention criminelle du complice exige :',
     options: [
@@ -1573,7 +1573,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : deux conditions cumulatives.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (intention)',
     question:
         'Dire que le complice et l’auteur ont agi « ensemble et de concert » renvoie à :',
@@ -1586,7 +1586,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : volonté de s’associer.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (happy slapping)',
     question: 'Le « happy slapping » est traité comme un cas particulier de :',
     options: ['Complicité', 'Légitime défense', 'Erreur de droit'],
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : cas particulier de complicité via art. 222-33-3.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (happy slapping)',
     question: 'Le happy slapping est prévu à :',
     options: [
@@ -1606,7 +1606,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. 222-33-3.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité (happy slapping)',
     question: 'Selon le cours, l’article 222-33-3 a pour particularité de :',
     options: [
@@ -1619,7 +1619,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : filmer ≠ aide matérielle, pourtant assimilé à complicité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Selon l’article 121-6 du Code pénal :',
     options: [
@@ -1631,7 +1631,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. 121-6.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Même peines encourues pour auteur et complice signifie que :',
     options: [
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : pas d’obligation de peines identiques.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Le complice peut être puni plus fortement que l’auteur si :',
     options: [
@@ -1656,7 +1656,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : circonstances propres au complice + atténuations pour l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Les circonstances personnelles à l’auteur :',
     options: [
@@ -1669,7 +1669,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : démence/contrainte/récidive de l’auteur ne s’appliquent pas au complice.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Les circonstances réelles touchant la matérialité de l’acte :',
     options: [
@@ -1682,7 +1682,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : circonstances de fait modifiant la nature de l’infraction.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question: 'Une circonstance réelle aggravante peut s’étendre au complice :',
     options: [
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : ex. réunion pour le vol.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question:
         'La question des circonstances aggravantes liées à la qualité de l’auteur principal a été tranchée par :',
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours cite cet arrêt : applicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Répression de la complicité',
     question:
         'Selon le cours, sont applicables au complice les circonstances aggravantes :',
@@ -1724,7 +1724,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   /// PERSONNES MORALES — CHAMP / CONDITIONS / PEINES (171 → 200)
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Le principe de responsabilité pénale des personnes morales est prévu par :',
@@ -1737,7 +1737,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. 121-2 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'En droit public, la seule personne morale pénalement irresponsable est :',
@@ -1746,7 +1746,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : seul l’État n’est pas pénalement responsable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Les établissements publics peuvent être pénalement responsables :',
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : autres personnes morales de droit public responsables.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question: 'Les collectivités territoriales ont une responsabilité pénale :',
     options: [
@@ -1769,7 +1769,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : art. 121-2 al. 2 C.P.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question: 'Une délégation de service public est :',
     options: [
@@ -1782,7 +1782,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Définition donnée dans le cours (cantine scolaire, eau…).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question: 'Une personne morale de droit privé suppose notamment :',
     options: [
@@ -1795,7 +1795,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : personnalité morale + formalités obligatoires.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Sont concernées par la responsabilité pénale des personnes morales de droit privé :',
@@ -1808,7 +1808,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : sociétés/associations/syndicats/partis…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Deux conditions cumulatives pour engager la responsabilité pénale d’une personne morale :',
@@ -1822,7 +1822,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : 2 conditions cumulatives.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'L’infraction commise par un salarié sans mandat de représentation engage en principe la personne morale :',
@@ -1835,7 +1835,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : pas de mandat = en principe pas d’engagement.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'L’action « pour le compte » de la personne morale implique souvent :',
@@ -1849,7 +1849,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : intérêt retiré ou acte pour assurer l’objet.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Si l’infraction est commise au seul profit personnel du dirigeant, la personne morale :',
@@ -1862,7 +1862,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : profit personnel seul -> pas « pour le compte ». ',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question: 'Les personnes morales peuvent être responsables en qualité :',
     options: [
@@ -1875,7 +1875,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : art. 121-2 renvoie aux distinctions auteur/complice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'La responsabilité pénale des personnes morales est une règle de portée générale, sauf exception notamment :',
@@ -1889,7 +1889,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : art. 121-2 — portée générale, exception presse/communication audiovisuelle.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'La responsabilité de la personne morale exclut celle des personnes physiques :',
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : cumul possible des responsabilités.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question: 'La personne morale peut parfois être poursuivie seule si :',
     options: [
@@ -1915,7 +1915,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : négligence/décision collective, vote secret…',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales (peines)',
     question: 'Pour les personnes morales, l’amende encourue est en principe :',
     options: [
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : amende = quintuple.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales (peines)',
     question:
         'Si aucun crime ne prévoit d’amende pour les personnes physiques, l’amende encourue par la personne morale est :',
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
         'Le cours : crime sans amende pour personne physique -> 1 000 000 € pour personne morale.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales (peines)',
     question:
         'Les peines énumérées notamment à l’article 131-39 du Code pénal concernent :',
@@ -1951,7 +1951,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     explanation: 'Le cours : 131-39 (liste) + 131-39-2.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales (peines)',
     question: 'La sanction-réparation (131-39-1) consiste à :',
     options: [
@@ -1967,7 +1967,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // RESPONSABILITÉ PÉNALE DES PERSONNES MORALES (ART. 121-2)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Le principe de responsabilité pénale des personnes morales est prévu par :',
@@ -1982,7 +1982,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Concernant les personnes morales de droit public, laquelle n’est pas pénalement responsable ?',
@@ -1997,7 +1997,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Les collectivités territoriales (régions, départements, communes) voient leur responsabilité pénale limitée :',
@@ -2013,7 +2013,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Pour engager la responsabilité pénale d’une personne morale, deux conditions cumulatives sont nécessaires :',
@@ -2029,7 +2029,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'La responsabilité pénale de la personne morale exclut celle des personnes physiques impliquées :',
@@ -2045,7 +2045,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'La responsabilité pénale des personnes morales est une règle de portée générale, sauf exception notamment :',
@@ -2060,7 +2060,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'Une infraction commise de son propre chef par un salarié sans mandat de représentation engage en principe la personne morale :',
@@ -2075,7 +2075,7 @@ final List<QuizQuestion> questionsGPXSchoolResponsabilitePenalGeneral = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Personnes morales',
     question:
         'L’action « pour le compte » de la personne morale se matérialise notamment par :',
@@ -2448,7 +2448,7 @@ class _QuizResponsabilitePenalePageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2651,7 +2651,7 @@ class _QuizResponsabilitePenalePageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2834,7 +2834,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3367,10 +3366,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3741,7 +3741,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3782,9 +3782,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

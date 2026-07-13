@@ -17,7 +17,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardBg = isDark
         ? const Color(0xFF2B3036)
@@ -204,8 +204,8 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
               const SizedBox(height: 8),
 
               const _SubTitle('2.1.2.1 — Administration chargée des forêts'),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'En matière d’infractions forestières soumises au tribunal de police, ',
                 ),
@@ -214,7 +214,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
                       'le directeur régional de l’administration chargée des forêts ou le fonctionnaire qu’il désigne ',
                   style: TextStyle(fontWeight: FontWeight.w600),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'remplit toutes les fonctions du ministère public, sous l’autorité du procureur de la République.',
                 ),
@@ -263,7 +263,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
 
               const _SubTitle('2.1.2.2 — Administration de l’équipement'),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'Le directeur départemental de l’équipement ou l’agent qu’il désigne, ',
                 ),
@@ -301,7 +301,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
 
               const _SubTitle('2.1.2.4 — Contributions indirectes'),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'L’administration des contributions indirectes, représentée par son directeur départemental, ',
                 ),
@@ -319,7 +319,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
 
               const _SubTitle('2.1.2.5 — Administration des douanes'),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'L’administration des douanes dispose du droit de poursuivre les infractions douanières. ',
                 ),
@@ -394,7 +394,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
                 '2.1.3.1 — Juridictions de jugement et chambre de l’instruction',
               ),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'Lorsque des infractions sont commises à l’audience des cours et tribunaux, ',
                 ),
@@ -455,7 +455,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
 
               const _SubTitle('2.1.3.3 — La partie lésée'),
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'La victime, bien qu’elle ne puisse exercer elle-même l’action publique, peut la déclencher. ',
                 ),
@@ -568,7 +568,7 @@ class PPActionPubliqueChapitre2SujetsActionPubliquePage
               ]),
               const SizedBox(height: 6),
 
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     'Exemple : les amendes prononcées contre les conducteurs d’un véhicule '
                     'peuvent, en tout ou partie, être supportées par l’employeur.',
@@ -644,10 +644,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -712,7 +712,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -755,7 +755,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -817,7 +817,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -849,7 +849,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -862,7 +862,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -112,16 +112,16 @@ class DefautPermisPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 221-2 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le défaut de permis de conduire.",
                 ),
@@ -137,17 +137,17 @@ class DefautPermisPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un conducteur de véhicule"),
+            children: const [
+              _SubTitle("A) Un conducteur de véhicule"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 221-1-1 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : « nul ne peut conduire un véhicule (ou un ensemble) pour lequel le permis est exigé s’il "
                       "n’est titulaire de la catégorie correspondante du permis en état de validité et s’il ne respecte "
@@ -155,90 +155,90 @@ class DefautPermisPage extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Un défaut de permis de conduire (au sens strict)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les règles relatives au permis de conduire sont précisées notamment par :\n"
                 "• les articles R. 221-1-1 à R. 221-21 du Code de la route (délivrance) ;\n"
                 "• et les articles R. 222-1 à R. 222-8 du Code de la route (reconnaissances et équivalences).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 221-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : précise que sont assimilés au permis de conduire certains titres prévus par les règlements "
                       "pour la conduite des véhicules à moteur, lorsque le permis n’est pas exigé.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le brevet de sécurité routière (BSR) n’entre pas dans le champ de l’infraction définie pour le défaut de permis "
                         "au sens de l’article ",
                   ),
                   TextSpan(
                     text: "L. 221-2 / I du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) À ne pas confondre"),
-              const _BulletPoint(
+              _SubTitle("C) À ne pas confondre"),
+              _BulletPoint(
                 text:
                     "Non-présentation du permis : ce n’est pas le défaut de permis, mais une contravention distincte.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "→ Non-présentation : "),
+                TextSpan(text: "→ Non-présentation : "),
                 TextSpan(
                   text: "article R. 233-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Conduite malgré suspension / rétention / annulation / interdiction d’obtenir un permis : infraction différente.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "→ Conduite malgré mesure : "),
+                TextSpan(text: "→ Conduite malgré mesure : "),
                 TextSpan(
                   text: "article L. 224-16 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’article L. 221-2 / I du Code de la route prévoit une liste d’exceptions.",
                   ),
@@ -274,19 +274,19 @@ class DefautPermisPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 221-2-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Défaut de permis de conduire avec usage d’un permis faux ou falsifié.",
               ),
@@ -301,41 +301,41 @@ class DefautPermisPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues"),
+            children: const [
+              _SubTitle("Peines encourues"),
               _Paragraph.rich([
-                const TextSpan(text: "Simple : "),
-                const TextSpan(
+                TextSpan(text: "Simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 221-2 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (permis faux/falsifié) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (permis faux/falsifié) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 221-2-1 / I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
-              const _BulletPoint(text: "Complicité : OUI."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
+              _BulletPoint(text: "Complicité : OUI."),
             ],
           ),
 
@@ -347,62 +347,62 @@ class DefautPermisPage extends StatelessWidget {
             cardColor: cardConst,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’action publique peut être éteinte par le paiement d’une amende forfaitaire délictuelle "
                       "fixée par la loi dans les conditions prévues à ",
                 ),
                 TextSpan(
                   text: "l’article D. 45-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Champ d’application"),
-              const _BulletPoint(text: "Conduite d’un véhicule sans permis."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Champ d’application"),
+              _BulletPoint(text: "Conduite d’un véhicule sans permis."),
+              _BulletPoint(
                 text:
                     "Conduite avec un permis n’autorisant pas la conduite du véhicule concerné.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Condition pratique"),
-              const _Paragraph(
+              _SubTitle("Condition pratique"),
+              _Paragraph(
                 "L’infraction doit être constatée par procès-verbal électronique (PVe) dressé au moyen d’un appareil sécurisé "
                 "(terminaux Néo).\n"
                 "Cette procédure doit être limitée aux cas ne laissant aucun doute sur la caractérisation de l’infraction "
                 "et ne nécessitant pas d’investigations complémentaires.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(text: "La procédure AFD n’est pas applicable ("),
+                TextSpan(text: "La procédure AFD n’est pas applicable ("),
                 TextSpan(
                   text: "article 495-17 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") :"),
+                TextSpan(text: ") :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Si le délit a été commis par un mineur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si le délit a été commis en état de récidive légale (mention TAJ pour le même délit ou un délit assimilé), sauf disposition contraire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si plusieurs infractions sont constatées simultanément et qu’au moins l’une ne peut donner lieu à une amende forfaitaire.",
               ),
@@ -442,10 +442,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -510,7 +510,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -553,7 +553,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -615,7 +615,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -647,7 +647,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -660,7 +660,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

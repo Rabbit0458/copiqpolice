@@ -1,0 +1,26 @@
+User-Agent: *
+Allow: /
+Allow: /blog/
+Allow: /tarifs
+Allow: /contact
+Allow: /beta
+Allow: /cgu
+Allow: /privacy
+Disallow: /dashboard/
+Disallow: /pa/
+Disallow: /gpx/
+Disallow: /forum/
+Disallow: /concours-blanc/
+Disallow: /psychotechniques/
+Disallow: /culture-generale/
+Disallow: /langues/
+Disallow: /api/
+Disallow: /abonnement/
+Disallow: /profil/
+Disallow: /parametres/
+Disallow: /progression/
+Disallow: /historique/
+Disallow: /favoris/
+Disallow: /notifications/
+
+Sitemap: https://copiq.fr/sitemap.xml

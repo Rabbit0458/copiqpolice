@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsDetentionProvisoire = [
   // NOTIONS GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question: "La détention provisoire est une mesure de :",
     options: [
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "À l’égard de quelle catégorie de personnes la détention provisoire peut-elle être prononcée ?",
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "La détention provisoire est-elle la règle ou l’exception selon l’article 137 du C.P.P. ?",
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Pourquoi la détention provisoire est-elle difficilement compatible avec la présomption d’innocence ?",
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Quels articles du C.P.P. encadrent principalement la détention provisoire ?",
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question: "La détention provisoire peut-elle être assimilée à une peine ?",
     options: [
@@ -188,7 +188,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Quel principe doit toujours guider le choix entre contrôle judiciaire, assignation à résidence avec bracelet électronique et détention provisoire ?",
@@ -203,7 +203,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Parmi les propositions suivantes, quelle affirmation est exacte concernant la détention provisoire ?",
@@ -218,7 +218,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "La détention provisoire peut-elle avoir pour seule finalité de faire pression sur la personne mise en examen pour qu’elle avoue ?",
@@ -233,7 +233,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "L’opinion publique peut-elle justifier à elle seule le placement en détention provisoire ?",
@@ -249,7 +249,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // CONDITIONS DU PLACEMENT — PERSONNE ET NATURE DE L’INFRACTION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question: "Qui ne peut jamais faire l’objet d’une détention provisoire ?",
     options: [
@@ -263,7 +263,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Selon les conditions tenant à la nature de l’infraction, la détention provisoire est possible :",
@@ -278,7 +278,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "La détention provisoire peut aussi être décidée lorsque la personne mise en examen :",
@@ -294,7 +294,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "La détention provisoire ne peut être ordonnée ou prolongée que si elle constitue :",
@@ -309,7 +309,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Lequel des objectifs suivants figure parmi ceux permettant de justifier la détention provisoire selon l’art. 144 C.P.P. ?",
@@ -325,7 +325,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Empêcher une pression sur les témoins ou les victimes ainsi que sur leur famille est :",
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Quel objectif concerne spécifiquement la protection de la personne mise en examen ?",
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "La détention provisoire peut être ordonnée pour garantir la mise à disposition de la justice de la personne mise en examen :",
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Mettre fin à une infraction ou éviter son renouvellement constitue :",
@@ -385,7 +385,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Le trouble exceptionnel et persistant à l’ordre public causé par l’infraction peut-il justifier une détention provisoire ?",
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // JUGE DES LIBERTÉS ET DE LA DÉTENTION — PLACEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Quel magistrat est compétent pour décider du placement en détention provisoire ?",
@@ -417,7 +417,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Le J.L.D. peut-il se saisir d’office pour décider d’une détention provisoire ?",
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Dans quelles hypothèses le juge d’instruction peut-il saisir le J.L.D. pour un placement en détention ?",
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question: "À peine de nullité, le J.L.D. ne peut pas :",
     options: [
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "La saisine du J.L.D. pour un placement en détention provisoire en matière criminelle se fait :",
@@ -480,7 +480,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "En matière délictuelle, pour les délits punis de moins de 10 ans d’emprisonnement, le procureur de la République peut-il saisir directement le J.L.D. ?",
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Que doit contenir l’ordonnance de placement en détention provisoire rendue par le J.L.D. ?",
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // CHAMBRE DE L’INSTRUCTION — PLACEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Chambre de l’instruction",
     question:
         "La chambre de l’instruction peut-elle ordonner un placement en détention provisoire ?",
@@ -529,7 +529,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // DURÉE DE LA DÉTENTION PROVISOIRE — RÈGLES GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Selon l’article 144-1 du C.P.P., la détention provisoire ne peut excéder une durée raisonnable appréciée :",
@@ -545,7 +545,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "En matière correctionnelle, la durée initiale maximale de la détention provisoire est en principe de :",
@@ -556,7 +556,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Toujours en matière correctionnelle, la durée maximale de la détention provisoire, après prolongations possibles, ne peut excéder :",
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "En matière criminelle, hors régimes spéciaux, la durée initiale maximale de détention provisoire est de :",
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Pour un crime de droit commun, la durée maximale totale de détention provisoire (initiale + prolongations) est en principe de :",
@@ -589,7 +589,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "La détention provisoire peut-elle dépasser 4 ans en matière criminelle ?",
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Pour les délits commis en bande organisée punis d’au moins 10 ans d’emprisonnement (trafic de stupéfiants, proxénétisme aggravé, etc.), la durée de détention correctionnelle peut atteindre :",
@@ -616,7 +616,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Lorsque la chambre de l’instruction est saisie pour une procédure de « mise en état » (art. 221-3 C.P.P.), l’un de ses pouvoirs est notamment :",
@@ -631,7 +631,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Le dépassement des délais pour statuer sur une demande de mise en liberté entraîne :",
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // PROLONGATION DE LA DÉTENTION PROVISOIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "De qui relève la décision de prolonger la détention provisoire ?",
@@ -663,7 +663,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Toute prolongation de détention provisoire doit se faire après :",
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // FIN DE LA DÉTENTION PROVISOIRE — RÈGLEMENT DE LA PROCÉDURE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Fin de la détention provisoire",
     question: "La détention provisoire prend fin automatiquement en cas :",
     options: [
@@ -695,7 +695,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Fin de la détention provisoire",
     question:
         "En cas de renvoi devant le tribunal correctionnel, l’ordonnance de renvoi :",
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Fin de la détention provisoire",
     question:
         "En cas de renvoi devant la cour d’assises, la détention provisoire :",
@@ -728,7 +728,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // DEMANDES DE MISE EN LIBERTÉ — RÈGLES GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Selon l’article 148 C.P.P., qui peut demander à tout moment la mise en liberté de la personne détenue ?",
@@ -743,7 +743,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Après renvoi devant une juridiction de jugement, l’intéressé peut demander sa mise en liberté :",
@@ -758,7 +758,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Lorsque le juge d’instruction reçoit une demande de mise en liberté, il doit :",
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question: "Si le juge d’instruction refuse la mise en liberté, il doit :",
     options: [
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Quand la chambre de l’instruction est saisie d’une demande de mise en liberté, elle doit statuer :",
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "En cas de carence du juge des libertés et de la détention qui n’a pas statué dans les 5 jours ouvrables, la demande de mise en liberté est portée :",
@@ -819,7 +819,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // MISE EN LIBERTÉ DE PLEIN DROIT / D’OFFICE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté de plein droit",
     question:
         "À l’expiration de la durée légale de détention provisoire, prolongations comprises, la mise en liberté :",
@@ -834,7 +834,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté de plein droit",
     question:
         "Quelle conséquence entraîne l’inobservation des délais pour statuer sur une demande de mise en liberté ?",
@@ -849,7 +849,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté d’office",
     question: "La mise en liberté d’office peut être décidée :",
     options: [
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté d’office",
     question:
         "Avant d’ordonner une mise en liberté d’office, le juge d’instruction doit :",
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // MISE EN LIBERTÉ POUR RAISONS DE SANTÉ
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté pour raison de santé",
     question:
         "La mise en liberté pour raison de santé peut être ordonnée lorsqu’une expertise médicale établit que :",
@@ -896,7 +896,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté pour raison de santé",
     question:
         "La mise en liberté pour raison de santé peut-elle être refusée en cas de risque grave de renouvellement de l’infraction ?",
@@ -912,7 +912,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // RÉPARATION D’UNE DÉTENTION PROVISOIRE INJUSTIFIÉE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question:
         "Selon l’article 149 C.P.P., qui peut prétendre à une réparation pour détention provisoire injustifiée ?",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question:
         "L’indemnisation pour détention provisoire injustifiée est accordée :",
@@ -943,7 +943,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question: "La réparation d’une détention provisoire injustifiée couvre :",
     options: [
@@ -957,7 +957,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question:
         "Certaines personnes sont exclues du droit à indemnisation pour détention provisoire injustifiée, notamment :",
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // TABLEAU DÉLITS — APPLICATION CHIFFRÉE (CAS PRATIQUES)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux délits",
     question:
         "Un mis en examen pour un délit puni de 3 ans d’emprisonnement encourt au maximum, en matière correctionnelle de droit commun, une détention provisoire de :",
@@ -985,7 +985,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux délits",
     question:
         "Pour un délit puni de 7 ans d’emprisonnement mais ne relevant pas de la criminalité organisée, la durée initiale de détention provisoire est de :",
@@ -996,7 +996,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux délits",
     question:
         "Pour un délit de trafic de stupéfiants commis en bande organisée, puni de 10 ans, la durée maximale de détention provisoire peut atteindre :",
@@ -1008,7 +1008,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // TABLEAU CRIMES — APPLICATION CHIFFRÉE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux crimes",
     question:
         "Pour un crime puni de 20 ans de réclusion criminelle, la durée initiale de détention provisoire est de :",
@@ -1019,7 +1019,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux crimes",
     question:
         "Pour certains crimes graves, la durée totale maximale de détention provisoire peut atteindre 3 ans. Cela suppose :",
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux crimes",
     question:
         "Dans les hypothèses les plus graves prévues par le C.P.P. (criminalité organisée, terrorisme…), la durée totale de détention provisoire peut aller jusqu’à :",
@@ -1047,7 +1047,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
   ),
 
   // CAS PRATIQUES — MISE EN SITUATION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un individu est mis en examen pour un délit puni de 2 ans d’emprisonnement. Peut-il être placé en détention provisoire ?",
@@ -1063,7 +1063,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne mise en examen respecte toutes les obligations de son contrôle judiciaire, mais l’affaire est très médiatisée. Le seul motif avancé est l’apaisement du trouble à l’ordre public. La détention provisoire est-elle possible en matière délictuelle ?",
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un mis en examen est sans domicile fixe et n’a pas de attaches stables. Quel objectif de l’article 144 peut justifier sa détention provisoire ?",
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne mise en examen pour un crime est détenue depuis 8 mois. L’enquête est peu complexe et les principaux témoins ont déjà été entendus. Le juge souhaite prolonger la détention par simple crainte d’un émoi médiatique. Cette prolongation est-elle conforme aux principes de la détention provisoire ?",
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un détenu dépose une demande de mise en liberté. Le juge des libertés et de la détention ne statue pas dans le délai de 5 jours ouvrables. Quelle est la conséquence ?",
@@ -1126,7 +1126,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un mis en examen détenu pour un délit punissable de 5 ans est toujours incarcéré après 7 mois de détention, sans régime aggravé applicable. Quelle est la situation ?",
@@ -1141,7 +1141,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne a bénéficié d’un non-lieu après 9 mois de détention provisoire. Elle souhaite obtenir réparation. Vers quelle autorité doit-elle se tourner ?",
@@ -1156,7 +1156,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une expertise médicale conclut à l’incompatibilité de l’état psychique d’un détenu avec la détention, sans risque particulier de récidive. Quelle mesure doit être privilégiée ?",
@@ -1171,7 +1171,7 @@ final List<QuizQuestion> questionsDetentionProvisoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne détenue voit sa demande de mise en liberté rejetée par le juge d’instruction. Quel recours peut-elle exercer ?",
@@ -1543,7 +1543,7 @@ class _QuizDetentionProvisoirePageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1746,7 +1746,7 @@ class _QuizDetentionProvisoirePageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1929,7 +1929,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2462,10 +2461,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2836,7 +2836,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2877,9 +2877,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

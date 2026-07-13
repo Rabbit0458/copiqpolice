@@ -107,16 +107,16 @@ class ChantagePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime le chantage."),
+                TextSpan(text: " : définit et réprime le chantage."),
               ]),
             ],
           ),
@@ -129,304 +129,304 @@ class ChantagePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "C’est la nature de la menace qui distingue le chantage de l’extorsion : "
                 "il ne s’agit pas de menaces de violences ou de contrainte morale, mais de menace de diffamation. "
                 "En revanche, le but recherché est identique à celui de l’extorsion.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Menace de révélations ou d’imputations diffamatoires",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le chantage repose sur une menace à caractère diffamatoire : menace de révéler ou d’imputer un fait "
                 "de nature à porter atteinte à l’honneur ou à la considération.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "La diffamation est définie par "),
+                  TextSpan(text: "La diffamation est définie par "),
                   TextSpan(
                     text: "l’article 29 de la loi du 29 juillet 1881",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : « toute allégation ou imputation d’un fait portant atteinte à l’honneur ou à la considération… ».",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le chantage consiste à menacer quelqu’un de faire connaître à des tiers des faits portant atteinte à l’honneur ou à la considération ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 24 mars 1953)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La menace de révélation d’une relation adultère en demandant de l’argent pour le prix du silence est de nature à porter atteinte à la considération de la victime ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 28 janvier 2015)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Révélation vs imputation"),
-              const _Paragraph(
+              _SubTitle("B) Révélation vs imputation"),
+              _Paragraph(
                 "La révélation consiste à reprendre / répéter / reproduire des propos ou écrits attribués à des tiers. "
                 "L’imputation renvoie plutôt à l’affirmation personnelle d’un fait dont l’auteur assume la responsabilité.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Menace visant une personne physique ou morale",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’atteinte diffamatoire doit être dirigée contre une personne physique ou une personne morale "
                 "(les deux peuvent être atteintes dans leur honneur ou leur considération). "
                 "Le chantage peut donc viser une société.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Menace proférée par l’employé d’une banque de saisir la Commission des opérations de bourse d’un dossier compromettant sur des pratiques de ladite banque ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 12 octobre 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph(
+              _Paragraph(
                 "La personne sous la menace peut ne pas être la victime directe : le délit existe dès lors que la menace "
                 "porte sur un fait pouvant atteindre l’honneur/la considération d’un tiers, si cette menace permet d’obtenir "
                 "une remise (fonds, valeurs, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un proche parent peut exercer une contrainte morale sur la personne menacée afin d’obtenir une remise d’argent ou de valeurs ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 15 avril 1896)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Menace visant un fait déterminé (vrai ou faux)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La menace doit se référer à un fait précis, déterminant pour amener la victime à céder. "
                 "Peu importe que le fait soit vrai ou faux : l’« imputation » peut porter sur des faits imaginaires, "
                 "la « révélation » suppose plutôt la véracité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Menace de dévoiler à la famille et aux proches les liaisons vraies ou supposées de la victime ",
                   ),
                   TextSpan(
                     text: "(C.A. Aix-en-Provence, 7 juin 1993)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Menace de divulguer à la presse et à l’opinion publique des agissements prétendus frauduleux ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 8 mars 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Expression de la menace"),
-              const _BulletPoint(
+              _SubTitle("E) Expression de la menace"),
+              _BulletPoint(
                 text: "Menace écrite ou verbale : aucune distinction en droit.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "La forme est indifférente au regard de "),
+                TextSpan(text: "La forme est indifférente au regard de "),
                 TextSpan(
                   text: "l’article 312-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La menace peut être implicite (termes voilés, sous-entendus) dès lors qu’elle est facilement compréhensible "
                 "et qu’elle exerce une pression conduisant à la remise demandée.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Même commis par voie de presse, le chantage reste traité comme un délit de droit commun (règles spécifiques de la loi de 1881 écartées).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("F) Objet de la menace (ce qui est exigé)"),
-              const _Paragraph(
+              _SubTitle("F) Objet de la menace (ce qui est exigé)"),
+              _Paragraph(
                 "L’objet est le même que pour l’extorsion : obtenir quelque chose sous la pression de la menace. "
                 "Il faut que l’exigence résulte directement des menaces.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Point-clé",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pas de chantage si l’exigence n’est pas clairement établie ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 25 mai 1999)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("G) Exemples d’objets visés par la loi"),
-              const _BulletPoint(
+              _SubTitle("G) Exemples d’objets visés par la loi"),
+              _BulletPoint(
                 text: "Une signature (même sur une feuille blanche).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Un engagement ou une renonciation (contrats, quittances, reçus, démission, mainlevées…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La révélation d’un secret (personnel, professionnel, correspondance, affaires…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La remise de fonds, valeurs ou d’un bien quelconque (mobiliers/immobiliers, corporel ou non).",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exigence par un salarié d’une promotion professionnelle et d’une lettre de recommandation ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 12 octobre 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pression exercée pour obtenir une somme correspondant à une partie d’héritage avant détermination notariale ",
                   ),
                   TextSpan(
                     text: "(C.A. Orléans, 9 janvier 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -440,31 +440,31 @@ class ChantagePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’élément intentionnel réside dans la volonté de contraindre autrui afin d’obtenir ce qui n’aurait "
                 "pas pu être obtenu par un accord librement consenti (le mobile est indifférent).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Définition (Cour de cassation)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "« Le dessein de contraindre autrui à souscrire des engagements ou à remettre des fonds » ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 25 octobre 1973)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cette définition permet de réprimer aussi bien le maître chanteur agissant par vengeance, intérêt personnel, "
                 "ou même en se croyant « justicier ».",
               ),
@@ -479,38 +479,38 @@ class ChantagePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-10 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque le chantage est exercé par un service de communication au public en ligne :",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Au moyen d’images ou de vidéos à caractère sexuel.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En vue d’obtenir des images ou des vidéos à caractère sexuel.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-11 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : lorsque l’auteur a mis sa menace à exécution.",
                 ),
               ]),
@@ -525,117 +525,117 @@ class ChantagePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Simple : "),
-                const TextSpan(
+                TextSpan(text: "Simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 312-10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (en ligne, al. 3) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (en ligne, al. 3) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 312-10 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (menace exécutée) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (menace exécutée) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 312-11 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 312-15 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI, réprimée par "),
+                TextSpan(text: "Tentative : OUI, réprimée par "),
                 TextSpan(
                   text: "l’article 312-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (même peine que l’infraction consommée).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Immunité familiale"),
+              _SubTitle("Immunité familiale"),
               _Paragraph.rich([
-                const TextSpan(text: "OUI : "),
+                TextSpan(text: "OUI : "),
                 TextSpan(
                   text: "l’article 312-12 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " renvoie à l’immunité familiale de "),
+                TextSpan(text: " renvoie à l’immunité familiale de "),
                 TextSpan(
                   text: "l’article 311-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -673,10 +673,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -741,7 +741,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -784,7 +784,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -846,7 +846,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -878,7 +878,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -891,7 +891,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

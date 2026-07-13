@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Cadre général",
     question:
         "La manifestation sur la voie publique est principalement encadrée par :",
@@ -105,7 +105,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le régime juridique des cortèges, défilés et rassemblements sur la voie publique est organisé par les articles L.211-1 et suivants du Code de la sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration",
     question:
         "L’un des principaux objectifs de la déclaration préalable de manifestation est :",
@@ -120,7 +120,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La déclaration permet la préparation opérationnelle : évaluation des risques, effectifs à prévoir, itinéraire, mesures de sécurité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Itinéraire",
     question: "L’itinéraire d’un cortège déclaré doit être :",
     options: [
@@ -134,7 +134,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La déclaration doit comporter l’itinéraire lorsqu’il s’agit d’un défilé, afin de dimensionner les moyens et de sécuriser le parcours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Organisateurs",
     question:
         "Les organisateurs d’une manifestation sont particulièrement responsables :",
@@ -149,7 +149,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Les organisateurs sont interlocuteurs de l’autorité et doivent veiller au respect des modalités arrêtées (itinéraire, horaires, encadrement).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Non-déclaration",
     question: "Une manifestation organisée sans déclaration préalable est :",
     options: [
@@ -165,7 +165,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   // ===================== BLOC 3 – Nouvelles questions (50) =====================
 
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales",
     question:
         "Parmi les propositions suivantes, laquelle relève d’une liberté publique collective ?",
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La liberté de manifester s’exerce collectivement, contrairement à des libertés essentiellement individuelles comme la vie privée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Distinction",
     question:
         "La manifestation sur la voie publique se distingue principalement de l’attroupement par :",
@@ -193,7 +193,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La manifestation est en principe déclarée, alors que l’attroupement est un rassemblement susceptible de troubler l’ordre public sans nécessaire déclaration.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Lieu de déclaration",
     question:
         "À Paris, la déclaration préalable de manifestation doit être déposée :",
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "À Paris, c’est la préfecture de police qui reçoit les déclarations de manifestations (art. L.211-1 C.S.I. et suivants).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Délai",
     question:
         "Le délai légal pour déposer une déclaration de manifestation est de :",
@@ -221,7 +221,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Ce délai permet à l’autorité d’anticiper et d’organiser les mesures nécessaires au maintien de l’ordre.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Exceptions",
     question:
         "Les manifestations traditionnelles à caractère folklorique ou religieux :",
@@ -235,7 +235,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article L.211-1 C.S.I. réserve une exception pour certaines manifestations traditionnelles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Organisateurs",
     question: "Les organisateurs d’une manifestation doivent être :",
     options: [
@@ -248,7 +248,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’autorité doit pouvoir identifier des interlocuteurs responsables et joignables.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Récépissé",
     question:
         "Lorsqu’une déclaration de manifestation est déposée, l’autorité doit :",
@@ -262,7 +262,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le récépissé atteste de la déclaration et pourra être présenté lors de contrôles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Sanction organisateur",
     question:
         "Organiser une manifestation non déclarée ou interdite est puni :",
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le Code pénal sanctionne sévèrement l’organisation d’une manifestation illégale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Nombre de personnes",
     question: "Pour qu’il y ait attroupement au sens de la loi pénale :",
     options: [
@@ -290,7 +290,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le texte ne fixe pas de seuil chiffré ; c’est l’aptitude à troubler l’ordre public qui caractérise l’attroupement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Sommations",
     question:
         "Avant d’avoir recours à la force pour disperser un attroupement, il est en principe nécessaire :",
@@ -304,7 +304,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article R.211-11 C.S.I. impose en principe deux sommations avant l’usage de la force.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Visage dissimulé",
     question:
         "Participer à un attroupement après sommations en dissimulant volontairement son visage :",
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Les textes aggravent la répression lorsque la personne dissimule son visage pour échapper à l’identification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Fondement constitutionnel",
     question: "La liberté de la presse trouve son principal fondement dans :",
     options: [
@@ -331,7 +331,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 11 consacre la libre communication des pensées et des opinions, base de la liberté de la presse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Grande loi",
     question: "La « charte » de la liberté de la presse en France est :",
     options: [
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cette loi organise le régime libéral de la presse et les délits de presse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Journalistes",
     question: "La carte d’identité de journaliste professionnel :",
     options: [
@@ -357,7 +357,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Une commission composée de journalistes et d’éditeurs attribue la carte, selon des critères précis.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délit de fausses nouvelles",
     question:
         "La publication de fausses nouvelles de nature à troubler la paix publique :",
@@ -371,7 +371,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 27 de la loi de 1881 réprime la diffusion de fausses nouvelles dangereuses pour la paix publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délai de prescription",
     question:
         "En matière de délits de presse, le délai de prescription « de droit commun » est :",
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contenu déclaration",
     question:
         "La déclaration préalable d’une manifestation doit notamment comporter :",
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Ces informations permettent à l’autorité d’apprécier les risques et d’organiser le maintien de l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Pouvoir de substitution",
     question:
         "Si le maire refuse d’interdire une manifestation alors que le risque de trouble grave est manifeste, le préfet :",
@@ -413,7 +413,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le préfet peut se substituer au maire défaillant en matière de maintien de l’ordre (police administrative).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contravention R.644-4 du Code Pénal.",
     question: "L’article R.644-4 du Code pénal vise :",
     options: [
@@ -427,7 +427,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cet article prévoit une contravention de 4 ème classe pour la participation à une manifestation interdite.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Peines complémentaires",
     question:
         "L’interdiction de participer à des manifestations sur la voie publique pour une durée maximale de 3 ans :",
@@ -442,7 +442,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le juge peut l’ordonner pour certains délits commis lors de manifestations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Responsabilité de l’État",
     question:
         "Les dommages causés lors de crimes ou délits commis à force ouverte ou par violence au cours d’une manifestation :",
@@ -457,7 +457,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’État peut ensuite se retourner contre les auteurs, mais répond de plein droit vis-à-vis des victimes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Textes applicables",
     question:
         "Le régime juridique des attroupements est principalement fixé par :",
@@ -472,7 +472,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Ces textes organisent définition, dispersion, infractions et réparation des dommages.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Nature politique",
     question:
         "Le fait que le délit d’attroupement soit qualifié de « délit politique » par la Cour de cassation :",
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi a expressément prévu la possibilité des procédures rapides malgré cette qualification.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Insignes distinctifs",
     question:
         "Lors des sommations de dispersion, les autorités habilitées doivent :",
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article R.211-12 C.S.I. impose ces insignes pour matérialiser l’autorité civile qui procède aux sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Participation armée",
     question:
         "Participer à un attroupement en étant porteur d’une arme (art. 431-5 du Code Pénal.) est puni :",
@@ -517,7 +517,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le texte prévoit une aggravation si le visage est dissimulé après sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Transparence capitalistique",
     question:
         "Les règles de transparence des entreprises de presse visant à identifier actionnaires et dirigeants ont pour but principal :",
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La transparence est un outil de protection de la liberté d’expression et du pluralisme.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Clause de conscience",
     question: "La clause de conscience permet au journaliste :",
     options: [
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Elle protège l’indépendance morale du journaliste en cas de cession ou de changement de ligne éditoriale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Entreprise de presse",
     question:
         "Les règles limitant les investissements étrangers dans les entreprises de presse ont pour objectif :",
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Elles visent à éviter que des puissances étrangères contrôlent des organes d’information stratégique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources (limites)",
     question: "Le secret des sources des journalistes peut être levé :",
     options: [
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "C’est l’équilibre recherché par la loi et la jurisprudence entre liberté de la presse et exigences de la justice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Responsabilité en cascade",
     question:
         "En matière de délits de presse, la personne principalement responsable est :",
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi de 1881 organise un système de responsabilité dite « en cascade » qui commence par le directeur de publication.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Publication jeunesse",
     question:
         "Lorsqu’un juge ordonne la saisie d’une publication dangereuse pour la jeunesse (incitation à la violence, pornographie) :",
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   ),
 
   // ===================== NIVEAU DIFFICILE (inclut Expert) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Mesures préventives",
     question:
         "L’article L.211-3 C.S.I. autorisant l’interdiction temporaire du port d’objets pouvant constituer une arme par destination suppose :",
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La mesure doit être justifiée, ciblée et proportionnée au risque anticipé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Réquisitions 78-2-5 CPP",
     question:
         "Les réquisitions du procureur de la République fondées sur l’article 78-2-5 CPP lors d’une manifestation doivent :",
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Elles encadrent les contrôles de bagages ou de véhicules, pour garantir le respect des libertés individuelles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – État d’urgence & contrôle",
     question:
         "Même en état d’urgence ou régime d’exception, les interdictions générales de manifester :",
@@ -650,7 +650,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Les juridictions administratives veillent à la conciliation entre sauvegarde de l’ordre public et libertés fondamentales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Article 431-4 du Code Pénal.",
     question:
         "Pour que l’infraction de participation à un attroupement après sommations (art. 431-4 du Code Pénal.) soit constituée, il faut notamment :",
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La preuve des sommations et de la présence persistante de la personne est centrale pour la qualification.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Article 431-6 du Code Pénal.",
     question:
         "La provocation directe à un attroupement armé réprimée par l’article 431-6 du Code Pénal. vise :",
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le champ est large et inclut les différents vecteurs de diffusion, y compris modernes (réseaux sociaux).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Documentation pour l’action récursoire",
     question:
         "En vue de l’action récursoire de l’État après des dégradations commises lors d’attroupements, les forces de l’ordre doivent :",
@@ -695,7 +695,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La qualité des procès-verbaux conditionne la possibilité pour l’État d’agir contre les auteurs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage des armes non létales",
     question:
         "L’usage de certaines armes non létales (ex. LBD, grenades de désencerclement) dans le cadre des attroupements :",
@@ -710,7 +710,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’usage est encadré par le C.S.I. (nécessité, proportionnalité, procédure) et doit pouvoir être justifié.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Pluralisme (C. const.)",
     question:
         "Le Conseil constitutionnel a érigé le pluralisme des courants d’expression en :",
@@ -724,7 +724,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Les décisions notamment de 1984 et 1986 reconnaissent au pluralisme une valeur constitutionnelle forte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Décision de 1984",
     question:
         "Dans sa décision du 11 octobre 1984, le Conseil constitutionnel a particulièrement insisté sur :",
@@ -739,7 +739,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La transparence permet au public de mesurer les influences qui pèsent sur l’information.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Perquisitions (magistrat)",
     question:
         "En matière de perquisitions dans les locaux de presse, il est exigé que :",
@@ -754,7 +754,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cette exigence renforce les garanties entourant la liberté de la presse et le secret des sources.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Diffamation/non public",
     question:
         "La diffamation non publique (par exemple dans un courrier privé) :",
@@ -769,7 +769,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La publicité est un élément aggravant ; son absence entraîne un régime contraventionnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Apologie / provocation",
     question: "Les articles 23 et 24 de la loi de 1881 répriment notamment :",
     options: [
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi encadre fermement les discours de haine ou de glorification de crimes graves.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Injure discriminatoire",
     question: "L’injure publique à caractère raciste ou discriminatoire :",
     options: [
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le législateur a renforcé la répression des propos discriminatoires, y compris sur la durée de prescription.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Équilibre enquête / sources",
     question:
         "Lorsqu’un enquêteur doit entendre un journaliste sur une affaire en cours, il doit :",
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La liberté de la presse impose un équilibre subtil entre besoin d’enquête et protection des sources.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Rôle pratique du policier",
     question:
         "Pour un policier sur la voie publique, filmer ou photographier des journalistes en action lors d’une manifestation :",
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La captation d’images doit rester proportionnée, justifiée et respectueuse des libertés fondamentales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contraventions",
     question:
         "La participation à une manifestation interdite sur le fondement de l’article L.211-4 C.S.I. peut être sanctionnée :",
@@ -841,7 +841,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article R.644-4 du Code Pénal. prévoit une contravention de 4 ème classe pour la participation à une manifestation interdite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Notion d’ordre public",
     question:
         "Lorsqu’il apprécie la légalité d’une manifestation, le préfet doit notamment tenir compte :",
@@ -856,7 +856,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le pouvoir de police administrative générale vise le maintien de l’ordre public, non la censure d’opinions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – État d’urgence / régime exceptionnel",
     question:
         "En période d’état d’urgence ou de régime exceptionnel, les pouvoirs de police :",
@@ -871,7 +871,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Les régimes d’exception permettent des restrictions plus fortes aux libertés publiques, sous contrôle du juge.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Voie publique",
     question: "Un attroupement suppose un rassemblement :",
     options: [
@@ -884,7 +884,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La notion d’attroupement vise les espaces publics, susceptibles de troubler l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Troubles effectifs",
     question:
         "Pour qu’il y ait attroupement au sens de l’article 431-3 du Code Pénal., il est :",
@@ -899,7 +899,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La simple susceptibilité de trouble suffit : il n’est pas exigé que des violences soient déjà réalisées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Sommations",
     question:
         "La formule traditionnellement utilisée lors des sommations de dispersion est introduite par :",
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cette formule, ou toute formule équivalente rappelant la loi et la nécessité de se disperser, est utilisée pour matérialiser les sommations.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Participation après sommations",
     question:
         "Après les sommations réglementaires, les personnes qui restent volontairement dans l’attroupement :",
@@ -927,7 +927,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Rester dans un attroupement après sommations constitue le délit visé par l’article 431-4 du Code Pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Port d’arme",
     question: "Participer à un attroupement en étant porteur d’une arme :",
     options: [
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-5 du Code Pénal. aggrave la répression lorsque le participant est porteur d’une arme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – 4ème pouvoir",
     question: "La presse est parfois qualifiée de « 4 ème pouvoir » car :",
     options: [
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "En informant, dénonçant et analysant, la presse influence durablement l’opinion et contrôle symboliquement les pouvoirs institués.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délits de presse",
     question:
         "Les infractions commises par voie de presse (injure, diffamation, etc.) sont régies principalement par :",
@@ -967,7 +967,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La plupart des infractions commises par voie de presse trouvent leur régime spécifique dans la loi de 1881.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Injure publique",
     question: "L’injure publique se définit comme :",
     options: [
@@ -981,7 +981,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’injure vise le propos dégradant, sans fait précis susceptible de preuve, contrairement à la diffamation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Diffamation",
     question: "La diffamation suppose :",
     options: [
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Il faut un fait déterminé, susceptible de débat probatoire, pour caractériser la diffamation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Personnes protégées",
     question:
         "Les injures ou diffamations visant un agent public dans l’exercice de ses fonctions :",
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi de 1881 prévoit des circonstances aggravantes lorsque la victime est dépositaire de l’autorité publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Jeunesse",
     question: "Les publications destinées à la jeunesse :",
     options: [
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Multi-communes",
     question:
         "Lorsque le cortège d’une manifestation doit traverser plusieurs communes :",
@@ -1039,7 +1039,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Chaque autorité de police municipale concernée doit être informée, pour adapter les mesures de maintien de l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Notification interdiction",
     question: "Une décision d’interdiction de manifestation doit :",
     options: [
@@ -1053,7 +1053,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La notification peut être individuelle ou, si ce n’est pas possible, réalisée par voie d’affichage ou autre moyen public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Référé",
     question: "Un arrêté d’interdiction de manifestation peut être contesté :",
     options: [
@@ -1066,7 +1066,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le juge administratif, saisi en urgence, contrôle la réalité du risque et la proportionnalité de l’interdiction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Interdiction d’objets",
     question:
         "L’interdiction temporaire de port d’objets pouvant constituer une arme par destination (L.211-3 C.S.I.) vise :",
@@ -1080,7 +1080,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La mesure doit être ciblée dans l’espace et le temps, en lien avec le risque identifié.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Outrage au drapeau",
     question:
         "L’outrage public au drapeau tricolore lors d’une manifestation est :",
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 433-5-1 du Code Pénal. réprime l’outrage au drapeau ou à l’hymne national, notamment en réunion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Autorités habilitées",
     question:
         "Parmi les autorités suivantes, laquelle peut être habilitée à procéder aux sommations de dispersion :",
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Outre le préfet, certaines autorités comme le directeur de cabinet, les maires, ou certains officiers de police peuvent être habilitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Signal visuel/sonore",
     question:
         "Lorsque l’usage d’un haut-parleur est impossible lors des sommations :",
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le texte prévoit la possibilité d’employer d’autres moyens pour matérialiser les sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Proportionnalité",
     question:
         "En matière de dispersion d’attroupements, la proportionnalité de la force signifie que :",
@@ -1138,7 +1138,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La force doit cesser lorsque le trouble disparaît et ne peut excéder ce qui est nécessaire pour rétablir l’ordre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Procès-verbal",
     question:
         "En cas d’interpellation lors d’un attroupement, il est essentiel de mentionner dans le procès-verbal :",
@@ -1153,7 +1153,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Ces éléments conditionnent la qualification pénale (431-4, 431-5, 431-6 du Code Pénal.) et la solidité du dossier.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Responsabilité de l’État",
     question:
         "L’article L.211-10 C.S.I. concernant les attroupements prévoit une responsabilité :",
@@ -1168,7 +1168,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La responsabilité de plein droit de l’État permet aux victimes d’être indemnisées, l’État pouvant ensuite exercer un recours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Création d’un journal",
     question: "Pour créer un journal au regard de la loi de 1881, il faut :",
     options: [
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi de 1881 consacre un régime très libéral pour la création d’un journal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Directeur de publication",
     question: "Le directeur de la publication d’un journal :",
     options: [
@@ -1195,7 +1195,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le système de responsabilité en cascade place le directeur de publication au premier rang.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources et témoignage",
     question:
         "Lorsqu’un journaliste est entendu comme témoin sur des faits révélés par ses articles :",
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La protection des sources est un élément central de la liberté de la presse, rappelée par la CEDH et la Cour de cassation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Pluralisme et concentration",
     question:
         "Les règles limitant les concentrations d’entreprises de presse visent avant tout à :",
@@ -1224,7 +1224,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le pluralisme est un objectif de valeur constitutionnelle ; les règles de concentration visent à éviter des situations de monopole d’information.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Aides publiques",
     question:
         "Les aides publiques à la presse (fiscales, postales, directes) soulèvent notamment la question :",
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   ),
 
   // ===================== NIVEAU DIFFICILE (inclut Expert) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Réquisitions 78-2-5 CPP",
     question:
         "Les réquisitions fondées sur l’article 78-2-5 CPP lors d’une manifestation doivent notamment :",
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le procureur doit détailler le cadre spatial, temporel et matériel des contrôles pour respecter la proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôle d’identité préventif",
     question:
         "Les contrôles d’identité aux abords d’une manifestation sur le fondement de l’art. 78-2 al. 8 CPP sont possibles :",
@@ -1271,7 +1271,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Il s’agit de contrôles préventifs encadrés, justifiés par des risques d’atteintes aux personnes et aux biens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – État de siège / état d’urgence",
     question:
         "En état de siège ou d’urgence, certaines mesures comme la censure de la presse et l’interdiction généralisée de manifestations :",
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Même en régime d’exception, les limitations aux libertés doivent se fonder sur la loi et restent contrôlées par les juridictions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Délit politique",
     question:
         "La qualification de « délit politique » du délit d’attroupement (431-4 du Code Pénal.) par la Cour de cassation implique notamment :",
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi a précisément prévu la compatibilité de ce caractère politique avec les procédures prévues aux art. 393 à 397-7 et 495-7 à 495-15-1 CPP.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage des armes réglementé",
     question:
         "Les armes susceptibles d’être utilisées dans le cadre de la dispersion d’attroupements sont listées :",
@@ -1315,7 +1315,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cet article énumère les armes (grenades à effet sonore, lacrymogènes, LBD, etc.) utilisables dans ce cadre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage immédiat de la force",
     question:
         "L’article L.211-9 C.S.I. permet de faire usage immédiatement de la force, sans attendre l’issue des sommations, lorsque :",
@@ -1330,7 +1330,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Il s’agit de situations d’urgence où la sécurité des forces ou de certains lieux ne permet plus de suivre intégralement la procédure ordinaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Provocation et responsabilité",
     question:
         "En cas de provocation à un attroupement armé (art. 431-6 du Code Pénal.), la responsabilité pénale :",
@@ -1345,7 +1345,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La peine est aggravée lorsque l’attroupement armé a effectivement eu lieu, mais l’infraction existe déjà au stade de la simple provocation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources (principe)",
     question:
         "Selon la jurisprudence de la CEDH, la protection des sources des journalistes est :",
@@ -1359,7 +1359,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La Cour européenne rappelle régulièrement que la protection des sources est essentielle à la liberté journalistique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Perquisitions nulles",
     question:
         "Une perquisition irrégulière dans les locaux d’un organe de presse :",
@@ -1374,7 +1374,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le non-respect des garanties légales en matière de perquisitions peut conduire à l’annulation des actes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Publication d’informations secrètes",
     question:
         "La publication d’informations relatives à la défense nationale ou au secret de l’instruction :",
@@ -1389,7 +1389,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Plusieurs textes encadrent la diffusion d’informations sensibles, notamment pour protéger la défense nationale et le bon déroulement de la justice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Droit de réponse",
     question: "La personne mise en cause par un article de presse dispose :",
     options: [
@@ -1403,7 +1403,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi de 1881 organise le droit de réponse, en plus des actions civiles ou pénales éventuelles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délais de prescription raciste",
     question:
         "Pourquoi le législateur a-t-il allongé à un an la prescription pour certains délits de presse à caractère raciste ou discriminatoire ?",
@@ -1418,7 +1418,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le délai plus long permet un traitement plus effectif de ces infractions, en tenant compte de leur gravité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Intervention policière en rédaction",
     question:
         "Lorsqu’un policier intervient dans les locaux d’un média sur réquisition judiciaire, il doit veiller :",
@@ -1433,7 +1433,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Toute intervention dans un média est sensible : l’agent doit strictement respecter le cadre légal fixé par la réquisition et les garanties protectrices.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Définition",
     question:
         "Une manifestation sur la voie publique se caractérise principalement par :",
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "On entend généralement par manifestation l’occupation momentanée de la voie publique par un rassemblement statique ou mobile (cortège), à caractère revendicatif, festif ou protestataire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Liberté fondamentale",
     question:
         "La liberté de manifester est principalement rattachée en droit français :",
@@ -1463,7 +1463,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La manifestation est un mode collectif d’exercice de la liberté d’expression, reconnue comme principe à valeur constitutionnelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration",
     question:
         "Selon l’article L.211-1 du C.S.I., les cortèges et rassemblements sur la voie publique :",
@@ -1477,7 +1477,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article L.211-1 du Code de la sécurité intérieure soumet les cortèges, défilés et rassemblements sur la voie publique à une obligation de déclaration préalable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Exceptions",
     question:
         "Parmi les manifestations suivantes, laquelle est en principe dispensée de déclaration préalable ?",
@@ -1492,7 +1492,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article L.211-1 C.S.I. prévoit une exception pour certaines manifestations traditionnelles à caractère folklorique ou religieux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Autorité compétente",
     question:
         "À Paris, l’autorité compétente pour recevoir la déclaration préalable de manifestation est :",
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "À Paris, la déclaration préalable est déposée auprès de la préfecture de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Délai",
     question:
         "Le délai légal pour déposer une déclaration de manifestation est en principe :",
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La déclaration doit parvenir entre 3 et 15 jours francs avant la manifestation, afin de permettre à l’autorité de préparer le dispositif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration",
     question:
         "La déclaration de manifestation doit obligatoirement comporter :",
@@ -1535,7 +1535,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le contenu de la déclaration comprend notamment l’identité des organisateurs, l’objet, le lieu, la date, l’horaire et l’itinéraire envisagé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Interdiction",
     question:
         "L’article L.211-4 du C.S.I. permet d’interdire une manifestation lorsque :",
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’interdiction est une mesure grave, justifiée seulement en cas de risques sérieux de troubles graves à l’ordre public et en l’absence d’autres moyens suffisants.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Sanctions pénales",
     question:
         "Organiser une manifestation non déclarée ou malgré interdiction est puni par l’article 431-9 du Code Pénal. de :",
@@ -1564,7 +1564,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-9 du Code pénal sanctionne l’organisation d’une manifestation non déclarée, interdite ou déclarée de manière mensongère.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Participants",
     question:
         "La simple participation à une manifestation interdite sur le fondement de l’article L.211-4 C.S.I. est :",
@@ -1578,7 +1578,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article R.644-4 du Code pénal punit la participation à une manifestation interdite d’une contravention de 4 ème classe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Port d’arme",
     question:
         "Participer à une manifestation ou réunion publique en étant porteur d’une arme constitue :",
@@ -1592,7 +1592,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-10 du Code pénal réprime le fait de participer armé à une manifestation ou réunion publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Dissimulation du visage",
     question:
         "Sans motif légitime, dissimuler volontairement son visage lors d’une manifestation, dans un contexte de risque d’atteintes à l’ordre public, est puni :",
@@ -1606,7 +1606,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-9-1 du Code pénal réprime la dissimulation volontaire du visage dans certaines manifestations, en vue d’échapper à l’identification.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Définition",
     question:
         "Selon l’article 431-3 du Code pénal, constitue un attroupement :",
@@ -1621,7 +1621,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’attroupement vise un rassemblement sur la voie publique ou dans un lieu public susceptible de troubler l’ordre public, même sans violences effectives.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Sommations",
     question:
         "En principe, avant de disperser un attroupement par la force, l’autorité compétente doit :",
@@ -1635,7 +1635,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article R.211-11 C.S.I. prévoit deux sommations avant l’usage de la force pour disperser un attroupement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Participation",
     question:
         "Continuer à participer volontairement à un attroupement après les sommations, sans être porteur d’une arme, est puni :",
@@ -1649,7 +1649,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-4 du Code pénal réprime la participation à un attroupement après sommations, même sans arme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Nature politique",
     question:
         "Le délit d’attroupement prévu à l’article 431-4 du Code pénal a été qualifié par la Cour de cassation comme :",
@@ -1663,7 +1663,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Par un arrêt du 28 mars 2017, la chambre criminelle a qualifié le délit d’attroupement comme un délit politique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Textes fondateurs",
     question:
         "La grande « charte » de la liberté de la presse en France est la loi du :",
@@ -1673,7 +1673,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi du 29 juillet 1881 constitue la grande loi de référence sur la liberté de la presse en France.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Référence constitutionnelle",
     question:
         "La liberté d’expression et la libre communication des pensées et des opinions sont proclamées par :",
@@ -1687,7 +1687,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 11 de la Déclaration des droits de l’Homme et du citoyen proclame la libre communication des pensées et des opinions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Principe",
     question:
         "Selon la loi du 29 juillet 1881, la presse est en principe soumise :",
@@ -1702,7 +1702,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi de 1881 rompt avec les régimes d’autorisation et de censure, pour consacrer un régime de liberté sous responsabilité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Entreprise de presse",
     question:
         "L’article 5 de la loi du 29 juillet 1881 prévoit que tout journal ou écrit périodique peut être publié :",
@@ -1716,7 +1716,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 5 consacre un régime de simple déclaration, sans autorisation ni cautionnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Journaliste",
     question:
         "Le journaliste professionnel est, en principe, une personne qui :",
@@ -1733,7 +1733,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   ),
 
   // ===================== NIVEAU MOYEN =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Lieu de déclaration",
     question:
         "Dans une commune où la police n’est pas étatisée, la déclaration de manifestation sur la voie publique est normalement déposée :",
@@ -1747,7 +1747,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "En dehors de Paris et des communes à police étatisée, la déclaration se fait en mairie ; si la manifestation traverse plusieurs communes, chaque maire doit être saisi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôle du préfet",
     question:
         "Lorsqu’un maire interdit une manifestation dans une zone de police non étatisée, son arrêté :",
@@ -1761,7 +1761,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’arrêté d’interdiction du maire doit être transmis au préfet, qui peut saisir le tribunal administratif en cas de désaccord.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôle du juge",
     question:
         "Le juge administratif contrôle la légalité d’un arrêté d’interdiction de manifestation en particulier au regard :",
@@ -1776,7 +1776,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Comme pour tout acte de police, le juge vérifie la nécessité, l’adaptation et la proportionnalité de l’interdiction aux risques allégués.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Contrôles d’identité",
     question:
         "Les contrôles d’identité aux abords d’une manifestation, pour prévenir les atteintes aux personnes et aux biens, peuvent reposer sur :",
@@ -1790,7 +1790,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 78-2 CPP permet notamment des contrôles préventifs aux abords des manifestations en cas de risque avéré.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Fouilles",
     question:
         "Les réquisitions permettant de contrôler bagages et véhicules aux abords d’une manifestation reposent sur :",
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 78-2-5 CPP autorise le procureur à délivrer des réquisitions pour fouilles de bagages et visites de véhicules dans un périmètre et une durée limités.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Objets dangereux",
     question:
         "En cas de risques sérieux de troubles graves à l’ordre public, l’article L.211-3 C.S.I. permet :",
@@ -1819,7 +1819,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article L.211-3 C.S.I. est une mesure préventive liée au risque de violence lors de certaines manifestations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Responsabilité de l’État",
     question:
         "Selon l’article L.211-10 du C.S.I., l’État est civilement responsable :",
@@ -1834,7 +1834,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article L.211-10 pose une responsabilité de plein droit de l’État pour certains dommages causés en lien avec des manifestations ou attroupements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Autorité compétente",
     question:
         "En matière d’attroupements, le maintien de l’ordre relève, selon le C.S.I., principalement :",
@@ -1848,7 +1848,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article D.211-10 C.S.I. précise que le maintien de l’ordre dans ces cas relève exclusivement du ministre de l’Intérieur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Forces armées",
     question:
         "Les forces armées autres que la gendarmerie nationale peuvent participer au maintien de l’ordre :",
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La participation de forces militaires au maintien de l’ordre suppose une réquisition régulière de l’autorité civile compétente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Insignes",
     question:
         "Lorsqu’une autorité exécute les sommations de dispersion d’un attroupement, elle doit :",
@@ -1877,7 +1877,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article R.211-12 C.S.I. impose le port d’insignes distinctifs aux autorités procédant aux sommations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Usage de la force",
     question:
         "Selon l’article R.211-13 C.S.I., le recours à la force pour disperser un attroupement :",
@@ -1891,7 +1891,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La force ne peut être employée que si elle est absolument nécessaire et proportionnée au trouble à faire cesser.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Dispense de sommations",
     question: "Dans certains cas, l’article L.211-9 C.S.I. permet :",
     options: [
@@ -1905,7 +1905,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "En cas de violences ou de menaces graves contre les forces de l’ordre ou certains lieux, la loi autorise un recours immédiat à la force.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Dissimulation et arme",
     question:
         "Participer à un attroupement après sommations, en étant porteur d’une arme et le visage dissimulé pour ne pas être identifié, est puni au maximum :",
@@ -1919,7 +1919,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-5 du Code pénal aggrave les peines lorsque le participant porte une arme et dissimule son visage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Pluralisme",
     question:
         "Le pluralisme des courants d’expression, en matière de presse, a été reconnu par le Conseil constitutionnel comme :",
@@ -1933,7 +1933,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le Conseil constitutionnel, dans sa décision du 11 octobre 1984 notamment, fait du pluralisme un principe à valeur constitutionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Transparence",
     question:
         "Les règles de transparence sur la propriété et la direction des entreprises de presse ont été renforcées notamment par :",
@@ -1947,7 +1947,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Ces textes visent à favoriser la transparence des organes de presse pour informer le public sur leurs responsables et leurs propriétaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Carte professionnelle",
     question:
         "La carte d’identité professionnelle des journalistes est délivrée :",
@@ -1962,7 +1962,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cette Commission paritaire décide de l’octroi ou du retrait de la carte de presse, décision susceptible de recours devant le juge administratif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Clause de conscience",
     question: "La « clause de conscience » d’un journaliste lui permet :",
     options: [
@@ -1976,7 +1976,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La clause de conscience protège le journaliste lorsqu’un changement de l’orientation du journal porte atteinte à son honneur ou à ses intérêts moraux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources",
     question: "Le secret des sources des journalistes peut être levé :",
     options: [
@@ -1990,7 +1990,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La loi protège le secret des sources ; les atteintes doivent rester exceptionnelles, justifiées et proportionnées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Injure / diffamation",
     question:
         "La diffamation se distingue de l’injure publique notamment parce qu’elle comporte :",
@@ -2005,7 +2005,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La diffamation implique un fait précis susceptible de preuve, alors que l’injure consiste en des propos outrageants sans fait précis.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Prescription",
     question:
         "En matière de délits de presse, le délai de prescription de l’action publique est en principe :",
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
   ),
 
   // ===================== NIVEAU DIFFICILE (inclut Expert) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Déclaration mensongère",
     question:
         "Selon l’article 431-9 du Code pénal, est puni comme organisateur de manifestation illicite celui qui :",
@@ -2036,7 +2036,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 431-9 vise aussi la déclaration frauduleuse destinée à tromper l’autorité, assimilée à l’organisation d’une manifestation non conforme.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Dissimulation du visage (contravention)",
     question:
         "À côté du délit de dissimulation du visage (art. 431-9-1 du Code Pénal.), une contravention de 5ᵉ classe (art. R.645-14 du Code Pénal.) peut viser :",
@@ -2051,7 +2051,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Lorsque le contexte est moins grave, l’infraction est requalifiée en contravention de 5ᵉ classe, toujours pour dissimulation illicite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations – Substances explosives",
     question: "L’article 322-11-1 du Code pénal réprime notamment :",
     options: [
@@ -2065,7 +2065,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Cette disposition vise les comportements préparatoires à des violences graves contre les personnes ou les biens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Procédures rapides",
     question:
         "L’article 431-8-1 du Code pénal permet, pour les délits commis à l’occasion d’attroupements :",
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’attroupement étant qualifié de délit politique, le texte précise la compatibilité avec les procédures pénales rapides.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Provocation armée",
     question:
         "L’article 431-6 du Code pénal réprime la provocation directe à un attroupement armé. Lorsque cette provocation a été suivie d’effet, la peine maximale est :",
@@ -2094,7 +2094,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La peine est aggravée lorsque l’attroupement armé s’est effectivement produit à la suite de la provocation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Attroupements – Loi du 29 juillet 1881",
     question:
         "L’article 24 de la loi du 29 juillet 1881 est mobilisable lorsque :",
@@ -2109,7 +2109,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’article 24 réprime la provocation à certains crimes ou délits, ce qui peut concerner des faits commis lors d’attroupements.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Droit au respect de la vie privée",
     question:
         "La publication en presse écrite de détails intimes non justifiés par l’intérêt général constitue :",
@@ -2123,7 +2123,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "La divulgation non autorisée d’éléments de la vie personnelle (adresse, santé, vie sentimentale…) engage la responsabilité de l’éditeur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Fausses nouvelles",
     question:
         "La publication de fausses nouvelles, au sens de la loi de 1881, suppose notamment :",
@@ -2138,7 +2138,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "L’infraction vise la diffusion de nouvelles inexactes ou falsifiées susceptibles de troubler l’ordre public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Secret des sources et perquisitions",
     question:
         "Une perquisition dans les locaux d’un journal pour obtenir les sources d’un journaliste :",
@@ -2153,7 +2153,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le secret des sources est fortement protégé ; les perquisitions doivent être encadrées par un magistrat et justifiées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Personne responsable",
     question:
         "En matière de délits de presse, la personne responsable principale est en principe :",
@@ -2167,7 +2167,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le système de la loi de 1881 établit une hiérarchie des responsabilités, plaçant en tête le directeur de la publication.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Délits racistes",
     question:
         "Pour certains délits de presse à caractère raciste ou discriminatoire, le délai de prescription est porté :",
@@ -2177,7 +2177,7 @@ final List<QuizQuestion> questionsLibertesPubliquesCollectives = [
         "Le législateur a prolongé la prescription à un an pour tenir compte de la gravité particulière de ces infractions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Presse – Interventions policières",
     question:
         "Lorsqu’une enquête vise un média ou un journaliste, le policier doit notamment :",
@@ -2525,7 +2525,7 @@ class _QuizLibertesPubliquesCollectivesPageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2714,7 +2714,7 @@ class _QuizLibertesPubliquesCollectivesPageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2866,7 +2866,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3394,10 +3393,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3768,7 +3768,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3809,9 +3809,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

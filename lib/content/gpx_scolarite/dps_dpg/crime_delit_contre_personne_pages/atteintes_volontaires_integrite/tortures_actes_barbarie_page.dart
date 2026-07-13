@@ -117,13 +117,13 @@ class TorturesActesBarbariePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime les actes de torture et de barbarie.",
                 ),
@@ -139,107 +139,107 @@ class TorturesActesBarbariePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le texte ne donne pas une définition exhaustive du comportement sanctionné : l’analyse repose sur la gravité des actes "
                 "et la souffrance infligée à la victime.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Des actes d’une gravité exceptionnelle"),
+              _SubTitle("A) Des actes d’une gravité exceptionnelle"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Convention des Nations Unies contre la torture (10 décembre 1984) vise ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "« tout acte par lequel une douleur ou des souffrances aiguës, physiques ou mentales, sont intentionnellement infligées à une personne ».",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Définition jurisprudentielle",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les tortures ou actes de barbarie supposent la commission d’un ou plusieurs actes d’une gravité exceptionnelle "
                         "dépassant de simples violences, et traduisant la volonté de nier dans la victime la dignité de la personne humaine ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(C.A. Lyon, 19 janvier 1996)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemples : sévices d’une extrême violence sur une victime dénudée, ligotée et attachée, ayant entraîné la mort ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 10 janvier 2006, n° 05-86.216)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Exorcisme de plusieurs heures : flagellations répétées, ingestion forcée d’eau salée, étranglement, serviette enfoncée dans la bouche, immersions répétées ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 3 septembre 1996)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une souffrance infligée"),
-              const _Paragraph(
+              _SubTitle("B) Une souffrance infligée"),
+              _Paragraph(
                 "La notion de torture est souvent liée à l’intensité de la souffrance infligée (physique ou morale), "
                 "ce qui permet de distinguer ces actes des violences « simples ».",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Cour de cassation retient que les tortures constituent des souffrances physiques pouvant faire naître un sentiment de terreur "
                       "d’une intensité insupportable physiquement ou moralement ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 3 septembre 1996)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Sur la personne d’autrui"),
-              const _Paragraph("Les actes doivent être commis sur :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Une personne humaine."),
-              const _BulletPoint(text: "Une personne vivante."),
-              const _BulletPoint(text: "Une personne distincte de l’auteur."),
+              _SubTitle("C) Sur la personne d’autrui"),
+              _Paragraph("Les actes doivent être commis sur :"),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Une personne humaine."),
+              _BulletPoint(text: "Une personne vivante."),
+              _BulletPoint(text: "Une personne distincte de l’auteur."),
             ],
           ),
 
@@ -251,16 +251,16 @@ class TorturesActesBarbariePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Intention coupable"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Intention coupable"),
+              _Paragraph(
                 "L’auteur a l’intention de porter atteinte à l’intégrité d’autrui. Cette intention peut se déduire de la nature des faits commis.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Volonté de causer une souffrance / nier la dignité",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’élément moral consiste dans la volonté de causer à la victime une souffrance exceptionnellement aiguë "
                 "ou de nier en elle l’existence de la dignité de la personne humaine.",
               ),
@@ -275,30 +275,30 @@ class TorturesActesBarbariePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " (1er degré d’aggravation) :"),
+                TextSpan(text: " (1er degré d’aggravation) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Sur un mineur de 15 ans."),
-              const _BulletPoint(text: "Sur une personne vulnérable."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Sur un mineur de 15 ans."),
+              _BulletPoint(text: "Sur une personne vulnérable."),
               _BulletPoint(
                 text:
                     "Sur une personne en état de sujétion psychologique ou physique au sens de l’article 223-15-3 du Code pénal.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur un ascendant légitime/naturel ou sur les père/mère adoptifs.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur certaines personnes protégées (police/gendarmerie, administration pénitentiaire, dépositaire de l’autorité publique, sapeur-pompier, etc.) dans l’exercice ou du fait des fonctions (qualité apparente ou connue).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur enseignant/personnels scolaires, agent de transport public, mission de service public, professionnel de santé (qualité apparente ou connue).",
               ),
@@ -306,68 +306,68 @@ class TorturesActesBarbariePage extends StatelessWidget {
                 text:
                     "Sur le conjoint/ascendants/descendants (ou personne vivant au domicile) des personnes protégées, en raison des fonctions de ces dernières.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur un témoin, une victime ou une partie civile (empêcher de dénoncer/porter plainte/déposer, ou en raison de la dénonciation/plainte/déposition).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur une personne se livrant à la prostitution (même occasionnellement), si les faits sont commis dans l’exercice de cette activité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par le conjoint/concubin/partenaire lié par un pacte civil de solidarité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Pour contraindre à contracter un mariage/une union, ou en raison du refus.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par plusieurs personnes agissant comme auteur ou complice.",
               ),
-              const _BulletPoint(text: "Avec préméditation ou guet-apens."),
-              const _BulletPoint(text: "Avec usage ou menace d’une arme."),
-              const _BulletPoint(
+              _BulletPoint(text: "Avec préméditation ou guet-apens."),
+              _BulletPoint(text: "Avec usage ou menace d’une arme."),
+              _BulletPoint(
                 text:
                     "Par une personne en état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Avec des agressions sexuelles autres que le viol.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-3 alinéa 19 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (2e degré) : sur un mineur de 15 ans par un ascendant (légitime/naturel/adoptif) ou une personne ayant autorité sur le mineur.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " (2e degré) :"),
+                TextSpan(text: " (2e degré) :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "En bande organisée."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "En bande organisée."),
+              _BulletPoint(
                 text: "De manière habituelle sur un mineur de 15 ans.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur une personne dont la vulnérabilité (âge, maladie, infirmité, déficience, grossesse) est apparente ou connue.",
               ),
@@ -376,48 +376,48 @@ class TorturesActesBarbariePage extends StatelessWidget {
                     "Sur une personne en état de sujétion psychologique/physique au sens de l’article 223-15-3 du Code pénal (connu de l’auteur).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (2e degré) : lorsque les tortures/actes de barbarie ont entraîné une mutilation ou une infirmité permanente.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (3e degré) : lorsque les tortures/actes de barbarie précèdent, accompagnent ou suivent un crime autre que le meurtre ou le viol.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-6 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (3e degré) : lorsque les tortures/actes de barbarie entraînent la mort sans intention de la donner.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Référence (CSI)",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Certaines aggravations mentionnent aussi un cadre spécifique lié à des fonctions de gardiennage/surveillance d’immeubles.",
@@ -445,167 +445,167 @@ class TorturesActesBarbariePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "15 ans de réclusion criminelle + période de sûreté — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (1er degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (1er degré) : "),
+                TextSpan(
                   text: "20 ans de réclusion criminelle + période de sûreté — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (2e degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (2e degré) : "),
+                TextSpan(
                   text: "30 ans de réclusion criminelle + période de sûreté — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "articles 222-3 al. 19, 222-4 et 222-5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (3e degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (3e degré) : "),
+                TextSpan(
                   text:
                       "réclusion criminelle à perpétuité + période de sûreté — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "articles 222-2 et 222-6 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(
                   text: "l’article 222-6-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Tentative : OUI — "),
+                TextSpan(
                   text: "article 121-4 (2°) du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Exemple : ligoter la victime en vue de sévices (commencement d’exécution interrompu/empêché).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(
                   text: "l’article 121-6 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " et "),
-                const TextSpan(
+                TextSpan(text: " et "),
+                TextSpan(
                   text: "l’article 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence (complicité)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Condamnation pour complicité de tortures et actes de barbarie ayant entraîné la mort : maintien fermé d’un local dans lequel l’auteur principal brûlait la victime ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(C. assises, 8 avril 2006)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Provocation (infraction distincte)"),
+              _SubTitle("Provocation (infraction distincte)"),
               _Paragraph.rich([
-                const TextSpan(text: "Le "),
-                const TextSpan(
+                TextSpan(text: "Le "),
+                TextSpan(
                   text: "fait de faire des offres/promesses/dons/avantages",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " pour qu’une personne commette (y compris hors du territoire national) des tortures et actes de barbarie est incriminé : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-6-4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "L’auteur de la provocation est poursuivi même si les faits ne sont pas suivis d’effet (10 ans et 150 000 €).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si la provocation est suivie de faits ou d’une tentative, les règles de complicité s’appliquent.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle("Exemption & réduction de peine"),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : "),
-                const TextSpan(
+                TextSpan(text: "Exemption de peine : "),
+                TextSpan(
                   text: "article 222-6-2 alinéa 1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (avertissement de l’autorité administrative/judiciaire permettant d’éviter la réalisation de l’infraction).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : "),
-                const TextSpan(
+                TextSpan(text: "Réduction de peine : "),
+                TextSpan(
                   text: "article 222-6-2 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (réduction des 2/3 si avertissement permettant de faire cesser les faits, d’éviter mort/infirmité, ou d’identifier les autres auteurs/complices ; perpétuité ramenée à 20 ans).",
                 ),
@@ -646,10 +646,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -714,7 +714,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -757,7 +757,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -819,7 +819,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -851,7 +851,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -864,7 +864,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

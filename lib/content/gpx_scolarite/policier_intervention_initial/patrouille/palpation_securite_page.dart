@@ -108,54 +108,54 @@ class PalpationSecuritePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 434-16 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la palpation est exclusivement une mesure de sûreté, non systématique, réservée aux cas où elle est nécessaire "
                       "pour la sécurité du policier/gendarme ou d’autrui ; elle vise à vérifier l’absence d’objet dangereux.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Principe : "),
-                  const TextSpan(
+                  TextSpan(text: "Principe : "),
+                  TextSpan(
                     text: "pratiquée à l’abri du regard du public ",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "lorsque les circonstances le permettent.\n",
                   ),
-                  const TextSpan(text: "Règle : "),
-                  const TextSpan(
+                  TextSpan(text: "Règle : "),
+                  TextSpan(
                     text: "réalisée par une personne du même sexe",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (sauf situations exceptionnelles liées à la dangerosité/urgence).",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "À distinguer de la fouille intégrale : "),
+                TextSpan(text: "À distinguer de la fouille intégrale : "),
                 TextSpan(
                   text: "article 63-7 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (mesure de recherche de preuve, pouvant aller jusqu’au déshabillage complet).",
                 ),
@@ -208,42 +208,42 @@ class PalpationSecuritePage extends StatelessWidget {
             cardColor: cardModal,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Quand la pratiquer ?"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Quand la pratiquer ?"),
+              _BulletPoint(
                 text:
                     "Jamais systématique : uniquement si les circonstances (temps/lieux/comportement) rendent nécessaire la recherche d’un objet dangereux.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Respect et discernement : pas de caractère vexatoire, pas d’agressivité.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Comment la pratiquer ? (méthodique)"),
-              const _BulletPoint(
+              _SubTitle("Comment la pratiquer ? (méthodique)"),
+              _BulletPoint(
                 text:
                     "Un seul agent effectue la palpation pendant qu’un ou deux collègues assurent la couverture et la sécurité de l’environnement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Aucune dénudation : palpation au travers des vêtements uniquement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Cibler d’abord les zones à risque (ceinture abdominale, creux lombaire, aisselles), puis compléter du haut vers le bas.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dès découverte d’un objet suspect : informer immédiatement les collègues.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Technique recommandée (AMARIS)",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Privilégier la technique de pince : pressions successives avec le pouce et l’index, "
@@ -252,12 +252,12 @@ class PalpationSecuritePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Saisie / procédure",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La palpation ne nécessite pas la qualité d’OPJ. Les objets dangereux découverts (armes, outils d’effraction…) "
                         "sont appréhendés matériellement puis remis à l’OPJ aux fins de saisie dans les formes de droit.",
@@ -275,43 +275,43 @@ class PalpationSecuritePage extends StatelessWidget {
             cardColor: cardCases,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Avant un contrôle d’identité"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Avant un contrôle d’identité"),
+              _Paragraph(
                 "Si la personne apparaît potentiellement dangereuse, il est conseillé d’effectuer une palpation de sécurité "
                 "avant la mise en œuvre du contrôle.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Indice apparent : forme d’une arme sous un vêtement, objet saillant…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Comportement : alcool/stupéfiants, agressivité, agitation…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Connaissance/infos utiles : antécédents (si consultation de traitements possible), contexte à risque…",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Après un contrôle d’identité sans infraction"),
-              const _Paragraph(
+              _SubTitle("Après un contrôle d’identité sans infraction"),
+              _Paragraph(
                 "Une palpation postérieure ne se justifie plus si aucun comportement dangereux ou suspect n’est constaté.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "En revanche, si la personne devient menaçante ou si la situation dégénère, la palpation peut redevenir nécessaire "
                 "car elle protège policiers et tiers.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Trace écrite",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Si le contrôle intervient dans des conditions dangereuses, il faut faire apparaître dans la procédure "
@@ -320,11 +320,11 @@ class PalpationSecuritePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Attention",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Une palpation non justifiée peut être qualifiée d’atteinte à la dignité : les saisies incidentes "
@@ -333,18 +333,18 @@ class PalpationSecuritePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(text: "Exemple jurisprudentiel : "),
+                TextSpan(text: "Exemple jurisprudentiel : "),
                 TextSpan(
                   text: "Cass. crim., 27 septembre 1988",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — opération jugée régulière dès lors que les policiers se sont bornés à prendre les mesures nécessaires "
                       "à leur sécurité et à celle des tiers.",
@@ -400,36 +400,36 @@ class PalpationSecuritePage extends StatelessWidget {
             cardColor: cardPrivate,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La loi autorise, sous conditions, des palpations par des agents de sécurité privée. "
                 "Dans tous les cas : la personne doit donner son accord exprès et l’agent doit être du même sexe.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 613-2 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : agents d’entreprises de surveillance/gardiennage ou services internes de sécurité, "
                       "en cas de menaces graves pour la sécurité publique ou périmètre de protection par arrêté préfectoral.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 613-3 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : sécurité à l’entrée d’enceintes de manifestations sportives/récréatives/culturelles "
                       "rassemblant plus de 300 spectateurs (agents/membres du service d’ordre).",
@@ -527,10 +527,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -595,7 +595,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -638,7 +638,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -700,7 +700,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -732,7 +732,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -745,7 +745,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

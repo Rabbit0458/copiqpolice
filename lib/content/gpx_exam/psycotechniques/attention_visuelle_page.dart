@@ -473,8 +473,9 @@ class _AttentionVisuellePageState extends State<AttentionVisuellePage>
   }
 
   Future<void> answer(bool userAnswer, {bool timeout = false}) async {
-    if (showResult || currentQuestion == null || isSaving || answerLocked)
+    if (showResult || currentQuestion == null || isSaving || answerLocked) {
       return;
+    }
 
     timerController.stop();
     answerLocked = true;
@@ -767,7 +768,7 @@ class _AttentionVisuellePageState extends State<AttentionVisuellePage>
               subtitle: subtitle,
               onBack: () {
                 Navigator.of(context).pop();
-                Navigator.of(this.context).maybePop();
+                Navigator.of(context).maybePop();
               },
               onRestart: () {
                 Navigator.of(context).pop();
@@ -1042,7 +1043,7 @@ class _AttentionVisuellePageState extends State<AttentionVisuellePage>
                     ),
                     const SizedBox(height: 10),
                     DropdownButtonFormField<String>(
-                      value: type,
+                      initialValue: type,
                       decoration: deco('Type de signalement'),
                       items: const [
                         DropdownMenuItem(value: 'bug', child: Text('Bug')),
@@ -1211,7 +1212,7 @@ class _AttentionVisuellePageState extends State<AttentionVisuellePage>
                           LayoutBuilder(
                             builder: (ctx, c) {
                               final wide = c.maxWidth >= 420;
-                              final spacing = 12.0;
+                              const spacing = 12.0;
                               final itemW = wide
                                   ? (c.maxWidth - spacing * 2) / 3
                                   : c.maxWidth;
@@ -1269,9 +1270,9 @@ class _AttentionVisuellePageState extends State<AttentionVisuellePage>
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
                                     SizedBox(width: itemW, child: children[0]),
-                                    SizedBox(width: spacing),
+                                    const SizedBox(width: spacing),
                                     SizedBox(width: itemW, child: children[1]),
-                                    SizedBox(width: spacing),
+                                    const SizedBox(width: spacing),
                                     SizedBox(width: itemW, child: children[2]),
                                   ],
                                 );
@@ -1915,7 +1916,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -1957,9 +1958,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

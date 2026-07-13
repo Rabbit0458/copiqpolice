@@ -93,7 +93,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // AJOUTS — NON-DÉNONCIATION DE CRIME (434-1 / 434-2)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Condition d’utilité",
     question:
         "La dénonciation doit être considérée comme « utile » lorsqu’elle peut :",
@@ -108,7 +108,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise que l’obligation concerne les crimes dont la dénonciation peut prévenir/limiter/empêcher.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nature des infractions",
     question: "L’obligation de dénonciation vise :",
     options: [
@@ -121,7 +121,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : « infractions de nature criminelle, peu importe la nature du crime ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative",
     question: "L’incrimination est également applicable :",
     options: [
@@ -134,7 +134,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique que la non-dénonciation concerne aussi la tentative de crime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Simple projet",
     question:
         "Le simple projet criminel, en l’absence de tout commencement d’exécution :",
@@ -148,7 +148,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours exclut explicitement le simple projet criminel sans commencement d’exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Infraction d’omission",
     question: "La non-dénonciation de crime est une infraction :",
     options: [
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : l’individu avait la possibilité d’avertir et il ne l’a pas fait.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Autorités",
     question:
         "Sont visées comme autorités judiciaires ou administratives susceptibles de recevoir l’information :",
@@ -176,7 +176,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours vise le ministère public, police, gendarmerie et toute autorité utile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Exemples d’autorités",
     question: "Le cours cite notamment comme destinataires possibles :",
     options: [
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Exemples expressément mentionnés dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Dénonciation indirecte",
     question: "La jurisprudence admet que la dénonciation puisse être faite :",
     options: [
@@ -202,7 +202,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise que la dénonciation peut être faite auprès d’un intermédiaire agissant pour leur compte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Objet de la révélation",
     question: "L’obligation implique la révélation :",
     options: [
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : l’information doit porter sur les faits, pas nécessairement sur l’identité de l’auteur/complice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Identité de l’auteur",
     question: "Selon la jurisprudence citée, l’obligation porte :",
     options: [
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Cass. crim., 26 février 1959 : obligation de dénoncer le crime, pas l’identité/refuge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Modalités",
     question: "Les modalités de dénonciation sont :",
     options: [
@@ -241,7 +241,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : « toutes les modalités de dénonciation sont admissibles ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Finalité",
     question: "L’information vise principalement à :",
     options: [
@@ -254,7 +254,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : l’information est destinée à prévenir un trouble à l’ordre public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Prévenir/limiter",
     question: "La dénonciation peut prévenir ou limiter les effets notamment :",
     options: [
@@ -267,7 +267,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours donne l’exemple : tentative où la dénonciation est susceptible d’éviter le crime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nouveaux crimes",
     question: "La dénonciation peut aussi permettre :",
     options: [
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : éviter de nouveaux crimes, notamment par identification des auteurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Élément moral",
     question: "L’élément moral est caractérisé si la personne :",
     options: [
@@ -295,7 +295,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : connaissance + absence de dénonciation → intention ; Cass. crim., 7 novembre 1990.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Mobile",
     question: "Le mobile expliquant l’abstention :",
     options: [
@@ -307,7 +307,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours : le mobile importe peu.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Aggravation (434-2)",
     question:
         "La non-dénonciation est aggravée lorsque le crime non dénoncé constitue :",
@@ -321,7 +321,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Article 434-2 : trahison, espionnage, attentat, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité familiale et 434-2",
     question: "En cas de 434-2, l’immunité familiale :",
     options: [
@@ -334,7 +334,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : l’immunité familiale de 434-1 n’est pas applicable en 434-2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (simple)",
     question: "Peines encourues (434-1 al.1) :",
     options: [
@@ -346,7 +346,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Peines de la forme simple indiquées dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (aggravée)",
     question: "Peines encourues (434-2) :",
     options: [
@@ -358,7 +358,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Peines aggravées indiquées par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative",
     question: "La tentative de non-dénonciation est :",
     options: [
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours précise : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Complicité",
     question: "La complicité est possible notamment si une personne :",
     options: [
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours cite explicitement ce cas de complicité (provocation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Secret professionnel",
     question:
         "Les personnes astreintes au secret professionnel (226-13) sont :",
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours prévoit l’exception liée au secret professionnel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Participant au crime",
     question: "Celui qui a participé au crime :",
     options: [
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : celui qui a participé au crime est excepté de l’obligation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité familiale (principe)",
     question: "L’immunité familiale bénéficie notamment :",
     options: [
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Liste donnée par le cours, incluant concubin et partenaire de PACS.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Crimes sur mineurs",
     question: "Concernant les crimes commis sur les mineurs :",
     options: [
@@ -440,7 +440,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // AJOUTS — FAUX TÉMOIGNAGE / TÉMOIGNAGE MENSONGER (434-13 / 434-14)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Définition",
     question: "Le faux témoignage est constitué par :",
     options: [
@@ -454,7 +454,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : mensonge sous serment, devant juridiction ou OPJ en commission rogatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Texte",
     question: "Le faux témoignage est réprimé par :",
     options: [
@@ -466,7 +466,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours : 434-13 définit et réprime le délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Juridictions concernées",
     question: "Le faux témoignage peut être commis devant :",
     options: [
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le terme juridiction est général : pénales, civiles, administratives, financières.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — OPJ et commission rogatoire",
     question: "Le faux témoignage peut aussi être retenu devant un OPJ si :",
     options: [
@@ -492,7 +492,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : punissable devant OPJ uniquement en exécution d’une commission rogatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Préliminaire / flagrance",
     question:
         "Les déclarations mensongères faites au cours d’une enquête préliminaire ou de flagrance sont :",
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours l’indique expressément.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Serment",
     question: "Le faux témoignage suppose obligatoirement :",
     options: [
@@ -518,7 +518,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le mensonge seul ne suffit pas : il faut la violation du serment.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Formule",
     question: "La formule du serment consiste à jurer :",
     options: [
@@ -530,7 +530,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Formule rappelée dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mineurs <16 ans",
     question: "L’infraction ne peut être retenue contre :",
     options: [
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : pas de serment avant 16 ans → pas de faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Garde à vue",
     question:
         "La personne entendue par l’OPJ sur commission rogatoire sous le régime de la garde à vue :",
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours : pas de serment en GAV → pas de faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Nature du mensonge",
     question: "Le Code pénal :",
     options: [
@@ -571,7 +571,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : toute altération sciemment faite de la vérité est incriminée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Commission",
     question: "Le faux témoignage est une infraction de :",
     options: ["Commission (acte positif)", "Omission", "Négligence"],
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : acte positif requis, refus de déposer ≠ faux témoignage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Refus de déposer",
     question: "Le refus de comparaître ou de déposer :",
     options: [
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours l’indique explicitement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Affirmation inexacte",
     question: "Le faux témoignage peut consister en :",
     options: [
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Exemple classique rappelé dans le cours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Négation d’un fait vrai",
     question: "Constitue un faux témoignage le fait :",
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : la négation d’un fait vrai (dire ne pas savoir) est visée si c’est sciemment.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Omission",
     question: "Le mensonge peut résulter d’une omission lorsque :",
     options: [
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours admet le mensonge par omission si la présentation incomplète dénature la vérité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Caractère déterminant",
     question: "Le faux témoignage est punissable seulement si :",
     options: [
@@ -645,7 +645,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : le témoignage doit être déterminant (circonstances essentielles).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Circonstances essentielles",
     question: "Une circonstance est dite « essentielle » lorsqu’elle est :",
     options: [
@@ -658,7 +658,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : essentielle = susceptible d’entraîner la conviction du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Élément moral",
     question: "Le faux témoignage suppose :",
     options: [
@@ -671,7 +671,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : infraction intentionnelle, volonté délibérée de tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mauvaise foi",
     question: "Le mensonge sanctionné est :",
     options: [
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : volonté délibérée de tromper, mensonge intentionnel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Erreur de bonne foi",
     question: "Le témoin qui se trompe ou commet une erreur de bonne foi :",
     options: [
@@ -697,7 +697,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : la loi ne punit pas l’erreur, mais le mensonge volontaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Circonstances aggravantes",
     question:
         "Le faux témoignage est aggravé notamment lorsqu’il est provoqué par :",
@@ -710,7 +710,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Article 434-14 1° : don/récompense.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Récompense (sens large)",
     question: "La « récompense quelconque » vise :",
     options: [
@@ -723,7 +723,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : toute contrepartie déterminante (même non monétaire).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Aggravation (peine criminelle)",
     question:
         "Le faux témoignage est aggravé lorsque celui contre lequel ou en faveur duquel il est commis :",
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Article 434-14 2° : passible d’une peine criminelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (simple)",
     question: "Peines encourues (faux témoignage simple) :",
     options: [
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Peines indiquées par le cours pour 434-13 al.1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (aggravé)",
     question: "Peines encourues (faux témoignage aggravé) :",
     options: [
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Peines indiquées par le cours pour 434-14.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Tentative",
     question: "La tentative de faux témoignage est :",
     options: [
@@ -772,7 +772,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours précise : tentative non incriminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Complicité",
     question: "La complicité de faux témoignage est :",
     options: [
@@ -786,7 +786,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : complicité possible + lien possible avec subornation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Rétractation (exemption)",
     question: "Le faux témoin est exempt de peine s’il rétracte :",
     options: [
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "434-13 al.2 : exemption si rétractation spontanée avant la décision de fin de procédure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Effet de la rétractation",
     question: "La rétractation entraîne :",
     options: [
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours : reconnu coupable mais exempté de peine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Spontanéité (non)",
     question: "N’est pas une rétractation spontanée :",
     options: [
@@ -823,7 +823,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours cite cette hypothèse comme non spontanée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Spontanéité après mise en examen",
     question: "N’est pas spontanée :",
     options: [
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours cite ce cas comme non spontané.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Limite temporelle",
     question:
         "Selon la jurisprudence rappelée, la limite au-delà de laquelle la rétractation est tardive est :",
@@ -853,7 +853,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // MINI-CAS (QUALIFICATION) — TRÈS UTILE EXAM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (tentative)",
     question:
         "Une personne apprend qu’un crime est sur le point d’être commis (commencement d’exécution) et qu’une alerte pourrait l’empêcher. Elle se tait. On retient :",
@@ -867,7 +867,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : vise aussi la tentative si la dénonciation peut éviter le crime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (tentative en cours)",
     question:
         "Une personne surprend un individu armé prêt à tirer sur quelqu’un, début de commencement d’exécution d’un meurtre, et sait qu’un appel immédiat à la police pourrait empêcher le crime. Elle ne fait rien. On retient :",
@@ -882,7 +882,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (projet vague)",
     question:
         "Une personne entend dans un bar : ‘Un jour, je braquerai une banque’, sans aucune précision ni préparation concrète. Elle ne signale rien aux autorités. On retient :",
@@ -897,7 +897,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (crime consommé, plus rien à sauver)",
     question:
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (nouveaux crimes à éviter)",
     question:
         "Une personne sait qu’un individu a commis un assassinat et se prépare à tuer à nouveau. Prévenir la police permettrait de l’arrêter avant le second crime. Elle se tait. On retient :",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (secret professionnel de l’avocat)",
     question:
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (médecin tenu au secret)",
     question:
         "Un médecin apprend, dans le cadre de son activité professionnelle, qu’un patient a commis un crime et se vante de vouloir recommencer. Le médecin se tait. On retient :",
@@ -960,7 +960,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (immunité familiale, victime majeure)",
     question:
@@ -976,7 +976,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (immunité familiale, mineur victime)",
     question:
@@ -992,7 +992,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (concubin auteur du crime)",
     question:
         "Une personne vivant notoirement en concubinage avec l’auteur d’un crime apprend les faits et se tait, pour ‘ne pas trahir son compagnon’. Victime majeure. On retient :",
@@ -1008,7 +1008,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (crime sur mineur par concubin)",
     question:
         "Une personne vit en concubinage avec l’auteur d’un crime de viol sur un mineur. Malgré sa connaissance des faits, elle ne dénonce pas. On retient :",
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (atteinte aux intérêts fondamentaux de la Nation)",
     question:
@@ -1039,7 +1039,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (terrorisme, proche auteur)",
     question:
         "Une femme sait que son frère prépare un attentat terroriste imminent. Par loyauté familiale, elle garde le silence. On retient :",
@@ -1054,7 +1054,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (dénonciation à une autorité administrative)",
     question:
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (révélation des faits, pas de l’auteur)",
     question:
@@ -1086,7 +1086,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (impossibilité matérielle d’alerter)",
     question:
@@ -1102,7 +1102,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (complicité par provocation à se taire)",
     question:
@@ -1118,7 +1118,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (nature de l’infraction)",
     question:
         "La non-dénonciation de crime prévue par l’article 434-1 du Code pénal est :",
@@ -1133,7 +1133,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (infractions concernées)",
     question:
         "Quelles infractions sont visées par l’obligation de dénonciation de l’article 434-1 du Code pénal ?",
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (tentative et complicité)",
     question:
         "Concernant la non-dénonciation de crime (434-1), laquelle de ces affirmations est exacte ?",
@@ -1163,7 +1163,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (immunité familiale, principe)",
     question:
         "Parmi les personnes suivantes, lesquelles bénéficient en principe de l’immunité familiale prévue par l’article 434-1 ?",
@@ -1179,7 +1179,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (exclusions de l’immunité)",
     question:
         "Dans quel cas l’immunité familiale de l’article 434-1 ne s’applique-t-elle pas ?",
@@ -1194,7 +1194,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Non-dénonciation (régime aggravé 434-2)",
     question:
         "Quelle est la principale conséquence de l’application de l’article 434-2 du Code pénal ?",
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (définition textuelle)",
     question:
         "Selon l’article 434-13 du Code pénal, le faux témoignage consiste en :",
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (élément matériel)",
     question:
         "Lequel de ces éléments n’est pas requis pour caractériser le faux témoignage au sens de l’article 434-13 ?",
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (champ des juridictions)",
     question:
         "Le faux témoignage de l’article 434-13 peut-il être retenu devant une juridiction civile ou prud’homale ?",
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (peine encourue simple)",
     question:
         "Quelle est la peine maximale encourue pour le faux témoignage simple selon l’article 434-13 ?",
@@ -1271,7 +1271,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (peines aggravées)",
     question:
         "En cas de faux témoignage aggravé par l’une des circonstances de l’article 434-14, quelle est la peine maximale encourue ?",
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (circ. aggravante de contrepartie)",
     question:
         "La circonstance aggravante prévue à l’article 434-14, 1° suppose :",
@@ -1302,7 +1302,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (circ. aggravante peine criminelle)",
     question:
         "La circonstance aggravante prévue à l’article 434-14, 2° est liée :",
@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (rétractation et exemption de peine)",
     question:
         "Selon l’article 434-13, à quelle condition le faux témoin peut-il être exempté de peine ?",
@@ -1334,7 +1334,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (commission rogatoire, serment prêté)",
     question:
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (garde à vue, pas de serment)",
     question:
         "Un mis en examen, entendu sous le régime de la garde à vue par un OPJ sur commission rogatoire, ment volontairement sur sa participation aux faits. Il ne prête pas serment. On retient :",
@@ -1365,7 +1365,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (enquête préliminaire, simple témoin)",
     question:
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (omission volontaire, point essentiel)",
     question:
@@ -1398,7 +1398,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (élément non déterminant)",
     question:
         "Sous serment, un témoin ment volontairement sur la couleur de la chemise d’un prévenu, élément qui n’a aucune incidence sur la solution du litige. On retient :",
@@ -1413,7 +1413,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (erreur de bonne foi)",
     question:
         "Un témoin, très stressé, prête serment et indique une heure de commission des faits erronée, en toute bonne foi, sans intention de tromper. On retient :",
@@ -1428,7 +1428,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (don d’argent, affaire délictuelle)",
     question:
@@ -1444,7 +1444,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (affaire criminelle, sans don)",
     question:
         "Un témoin mensonge sous serment devant la cour d’assises pour faire acquitter un accusé poursuivi pour assassinat, sans recevoir aucune contrepartie. On retient :",
@@ -1459,7 +1459,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (rétractation spontanée avant la décision)",
     question:
@@ -1476,7 +1476,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (rétractation tardive)",
     question:
         "Un témoin ment sous serment à l’audience d’un tribunal correctionnel. Il ne se rétracte qu’après le prononcé du jugement définitif. On retient :",
@@ -1491,7 +1491,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (subornation et complicité)",
     question:
         "Une personne fournit un faux récit à une prostituée et l’incite à le répéter sous serment devant un OPJ agissant sur commission rogatoire, afin de mettre en cause à tort des suspects passibles d’une peine criminelle. Elle obtient qu’elle mente effectivement. On retient pour la première personne :",
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (tentative et complicité)",
     question:
         "Quel est le régime de la tentative et de la complicité de faux témoignage au regard de l’article 434-13 ?",
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Faux témoignage (personnes exclues)",
     question:
         "Parmi les personnes suivantes, laquelle ne peut, en principe, être poursuivie pour faux témoignage au sens de l’article 434-13 ?",
@@ -1536,7 +1536,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (délit et non crime)",
     question:
         "Une personne apprend qu’un voisin a commis un vol simple, qualifié de délit, et qu’il pourrait recommencer. Elle se tait. On retient :",
@@ -1552,7 +1552,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (dénonciation téléphonique anonyme)",
     question:
@@ -1568,7 +1568,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (information imprécise mais utile)",
     question:
@@ -1584,7 +1584,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Faux témoignage (commission d’enquête parlementaire)",
     question:
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (témoin assisté)",
     question:
         "Un témoin assisté, entendu par le juge d’instruction, ne prête pas serment. Il ment pour se protéger. On retient :",
@@ -1616,7 +1616,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (juridiction administrative)",
     question:
         "Devant un tribunal administratif, un témoin prête serment et ment volontairement sur des faits essentiels à un contentieux de responsabilité de l’État. On retient :",
@@ -1631,7 +1631,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Cas pratique — Non-dénonciation (information indirecte mais précise)",
     question:
@@ -1647,7 +1647,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation (participation au crime)",
     question:
         "Une personne participe au crime comme co-auteur puis s’abstient de le dénoncer. On envisage la non-dénonciation de crime à son encontre. On retient :",
@@ -1661,7 +1661,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Celui qui a participé au crime n’est pas soumis à l’obligation de se dénoncer lui-même ; il répond d’abord de l’infraction principale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (préliminaire)",
     question:
         "En audition libre en enquête préliminaire, une personne ment (sans serment). On retient :",
@@ -1675,7 +1675,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : mensonges en préliminaire/flagrance non punissables au titre de 434-13.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage (commission rogatoire)",
     question:
         "Devant un OPJ agissant sur commission rogatoire, un témoin prête serment puis ment sur un point essentiel. On retient :",
@@ -1689,7 +1689,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Conditions réunies : commission rogatoire + serment + altération volontaire de la vérité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Définition",
     question:
         "La non-dénonciation de crime consiste, pour une personne ayant connaissance d’un crime, à :",
@@ -1704,7 +1704,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le texte vise l’abstention d’informer les autorités lorsque la dénonciation peut être utile (prévenir/limiter/empêcher).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Texte",
     question: "Le délit de non-dénonciation de crime est prévu par :",
     options: [
@@ -1717,7 +1717,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique que l’article 434-1 prévoit et réprime le délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nature des faits",
     question: "L’obligation de dénonciation concerne :",
     options: [
@@ -1731,7 +1731,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Sont visées les infractions criminelles, sans distinction de type de crime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Utilité de la dénonciation",
     question: "La dénonciation doit être :",
     options: [
@@ -1745,7 +1745,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours insiste : obligation liée aux crimes dont il est encore possible de prévenir/limiter ou d’empêcher des récidives criminelles.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative de crime",
     question: "La non-dénonciation peut aussi concerner :",
     options: [
@@ -1758,7 +1758,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise que l’incrimination est applicable à la tentative de crime, mais pas au simple projet sans commencement d’exécution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Projet criminel",
     question: "Le simple projet criminel, sans commencement d’exécution, est :",
     options: [
@@ -1771,7 +1771,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique : pas d’obligation au stade du simple projet criminel sans commencement d’exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Infraction d’omission",
     question: "La non-dénonciation de crime est :",
     options: [
@@ -1784,7 +1784,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : infraction d’omission, l’individu pouvait avertir et ne l’a pas fait.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Autorités compétentes",
     question: "Peut recevoir une dénonciation au sens du cours :",
     options: [
@@ -1798,7 +1798,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours vise ministère public, police, gendarmerie… et toute autorité utile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Exemples d’autorités",
     question:
         "Parmi les autorités mentionnées comme pouvant recevoir l’information :",
@@ -1812,7 +1812,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours donne ces exemples d’autorités susceptibles d’agir.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-dénonciation de crime — Personne intervenant pour leur compte",
     question: "La jurisprudence admet que la dénonciation peut être faite :",
@@ -1826,7 +1826,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique que la dénonciation peut être faite à une personne qui intervient pour le compte des autorités.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Objet de l’information",
     question: "L’information donnée doit porter :",
     options: [
@@ -1840,7 +1840,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Cass. crim., 26 février 1959 : obligation de dénoncer le crime, pas l’identité ou le refuge des auteurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Modalités",
     question: "Les modalités de dénonciation sont :",
     options: [
@@ -1853,7 +1853,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique : toutes modalités de dénonciation sont admissibles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Finalité",
     question: "L’objectif de la dénonciation est de :",
     options: [
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours insiste sur la prévention du trouble et la limitation/empêchement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Nouveaux crimes",
     question: "La dénonciation peut être utile pour :",
     options: [
@@ -1881,7 +1881,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours mentionne l’objectif d’empêcher de nouveaux crimes, notamment par l’identification.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Élément moral",
     question: "L’élément moral suppose :",
     options: [
@@ -1895,7 +1895,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : intention déduite de la connaissance du crime et de l’absence de dénonciation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Mobile",
     question: "Le mobile expliquant l’abstention :",
     options: [
@@ -1907,7 +1907,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours précise que le mobile importe peu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Jurisprudence (preuve des éléments)",
     question: "La Cour de cassation impose aux juges du fond :",
     options: [
@@ -1924,7 +1924,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // 434-1 — EXCEPTIONS / IMMUNITÉS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité familiale",
     question: "L’immunité familiale prévue par 434-1 s’applique :",
     options: [
@@ -1938,7 +1938,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le texte exclut l’immunité familiale lorsque les crimes sont commis sur les mineurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Proches concernés",
     question: "Sont visés par l’immunité familiale (434-1) :",
     options: [
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours liste précisément ces proches et inclut concubin/PACS.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Crimes sur mineurs",
     question: "Concernant les crimes commis sur les mineurs :",
     options: [
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique : immunité familiale OUI sauf crimes commis sur mineurs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Secret professionnel",
     question: "Les personnes astreintes au secret professionnel :",
     options: [
@@ -1978,7 +1978,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise l’exemption liée au secret professionnel (226-13).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Participant au crime",
     question: "Celui qui a participé au crime :",
     options: [
@@ -1995,7 +1995,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // 434-2 — CIRCONSTANCES AGGRAVANTES (NON-DÉNONCIATION)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Aggravation",
     question:
         "La circonstance aggravante de la non-dénonciation est prévue par :",
@@ -2009,7 +2009,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : aggravation lorsque le crime non dénoncé porte sur intérêts fondamentaux de la Nation ou terrorisme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Crimes concernés (434-2)",
     question: "L’aggravation 434-2 vise notamment :",
     options: [
@@ -2022,7 +2022,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours cite trahison, espionnage, attentat, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Immunité et 434-2",
     question: "En cas de 434-2, les dispositions d’immunité familiale :",
     options: [
@@ -2035,7 +2035,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : en 434-2, l’immunité familiale de 434-1 ne s’applique pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (simple)",
     question: "Peines encourues (434-1 al.1) :",
     options: [
@@ -2047,7 +2047,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Répression indiquée par le cours pour la forme simple.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Peines (aggravée)",
     question: "Peines encourues en cas d’application de 434-2 :",
     options: [
@@ -2059,7 +2059,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Répression aggravée indiquée par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Personnes morales",
     question: "Les personnes morales :",
     options: [
@@ -2072,7 +2072,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise la responsabilité pénale des personnes morales.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Tentative",
     question: "La tentative de non-dénonciation de crime est :",
     options: [
@@ -2084,7 +2084,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Complicité",
     question: "La complicité de non-dénonciation est :",
     options: [
@@ -2097,7 +2097,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : complicité possible, notamment celui qui incite à ne pas dénoncer.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-dénonciation de crime — Exemple de complicité",
     question: "Peut se rendre complice :",
     options: [
@@ -2114,7 +2114,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // 434-13 — FAUX TÉMOIGNAGE / TÉMOIGNAGE MENSONGER (PRINCIPES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Définition",
     question: "Le témoignage mensonger consiste en :",
     options: [
@@ -2128,7 +2128,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Définition donnée : mensonge sous serment, juridiction ou OPJ sur commission rogatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Texte",
     question: "Le délit de faux témoignage est réprimé par :",
     options: [
@@ -2140,7 +2140,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours : défini et réprimé par l’article 434-13 C.P.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Où ?",
     question: "Le faux témoignage est punissable s’il est fait :",
     options: [
@@ -2154,7 +2154,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours exclut les mensonges en enquête préliminaire/flagrance (hors commission rogatoire).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Juridiction (sens large)",
     question: "Le terme « juridiction » doit être compris :",
     options: [
@@ -2167,7 +2167,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours précise le caractère général du terme juridiction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Enquête préliminaire/flagrance",
     question:
         "Des déclarations mensongères en enquête préliminaire ou de flagrance :",
@@ -2181,7 +2181,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : faux témoignage punissable en justice ou CR ; pas en préliminaire/flagrance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Condition du serment",
     question: "Le faux témoignage suppose :",
     options: [
@@ -2194,7 +2194,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le mensonge ne suffit pas : il faut la violation d’un serment.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Formule du serment",
     question: "Le serment consiste à promettre :",
     options: [
@@ -2206,7 +2206,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Formule indiquée : vérité, toute la vérité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mineurs",
     question: "Le faux témoignage ne peut être retenu contre :",
     options: [
@@ -2219,7 +2219,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours précise : pas de serment exigé avant 16 ans → pas de faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Incapacité de témoigner",
     question: "Le faux témoignage ne peut viser :",
     options: [
@@ -2233,7 +2233,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours mentionne les incapacités, notamment l’interdiction de témoigner.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Personnes au statut particulier",
     question:
         "Parmi les personnes dont le statut peut empêcher le faux témoignage :",
@@ -2247,7 +2247,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours cite des incapacités liées au statut (intérêt au litige, témoin assisté…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Garde à vue sur commission rogatoire",
     question:
         "La personne entendue par l’OPJ en commission rogatoire sous le régime de la garde à vue :",
@@ -2266,7 +2266,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // 434-13 — CARACTÉRISATION DU MENSONGE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Altération de la vérité",
     question: "Le faux témoignage consiste en :",
     options: [
@@ -2279,7 +2279,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le code n’énumère pas : toute altération sciemment faite de la vérité est incriminée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Infraction de commission",
     question: "Le faux témoignage est une infraction de :",
     options: ["Commission (acte positif)", "Omission", "Négligence"],
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : acte positif requis. Refus de comparaître/de déposer ≠ faux témoignage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Refus de déposer",
     question: "Le refus de comparaître ou de déposer :",
     options: [
@@ -2301,7 +2301,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : refus ≠ faux témoignage (infraction de commission).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mensonge par affirmation",
     question: "Le faux témoignage peut consister en :",
     options: [
@@ -2314,7 +2314,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours cite l’affirmation d’un fait inexact comme forme classique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mensonge par négation",
     question: "Constitue un faux témoignage le fait :",
     options: [
@@ -2327,7 +2327,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : le témoin qui déclare ne pas savoir alors qu’il sait tombe sous le coup de la loi pénale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mensonge par omission",
     question: "Le mensonge peut être réalisé par omission lorsque :",
     options: [
@@ -2341,7 +2341,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours admet l’omission lorsque la présentation incomplète dénature les faits.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Déclarations déterminantes",
     question: "Le faux témoignage n’est punissable que si :",
     options: [
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Analyse jurisprudentielle : le témoignage doit être déterminant (incidence sur la solution).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Circonstances essentielles",
     question: "Pour être déterminant, le mensonge doit porter :",
     options: [
@@ -2369,7 +2369,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours cite : altération volontaire portant sur circonstances essentielles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Élément moral",
     question: "L’infraction de faux témoignage est :",
     options: [
@@ -2383,7 +2383,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : mensonge intentionnel, volonté délibérée de tromper la justice.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Erreur / inattention",
     question: "Le témoin qui se trompe de bonne foi :",
     options: [
@@ -2396,7 +2396,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : la loi ne punit pas l’erreur de bonne foi, mais le mensonge volontaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Mobile",
     question: "Le mobile du faux témoin :",
     options: [
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // 434-14 — CIRCONSTANCES AGGRAVANTES (FAUX TÉMOIGNAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Aggravation (don/récompense)",
     question: "Le faux témoignage est aggravé lorsque :",
     options: [
@@ -2425,7 +2425,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Article 434-14 1° : don/récompense quelconque.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Récompense quelconque",
     question: "La notion de « récompense quelconque » est interprétée comme :",
     options: [
@@ -2438,7 +2438,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : toute contrepartie déterminant le témoignage mensonger.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Aggravation (peine criminelle)",
     question: "Le faux témoignage est aggravé lorsque :",
     options: [
@@ -2451,7 +2451,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Article 434-14 2° : passible d’une peine criminelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (simple)",
     question: "Peines encourues pour le faux témoignage simple (434-13) :",
     options: [
@@ -2463,7 +2463,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Répression indiquée dans le cours (forme simple).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Peines (aggravé)",
     question: "Peines encourues pour le faux témoignage aggravé (434-14) :",
     options: [
@@ -2475,7 +2475,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Répression indiquée pour les formes aggravées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Tentative",
     question: "La tentative de faux témoignage est :",
     options: [
@@ -2487,7 +2487,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Complicité",
     question: "La complicité de faux témoignage est :",
     options: [
@@ -2505,7 +2505,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // 434-13 al.2 — RÉTRACTATION / EXEMPTION DE PEINE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Rétractation",
     question: "Le faux témoin est exempt de peine s’il :",
     options: [
@@ -2519,7 +2519,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "434-13 al.2 : exemption si rétractation spontanée avant décision de fin de procédure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Spontanéité",
     question: "N’est pas considérée comme spontanée :",
     options: [
@@ -2531,7 +2531,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours : rétractation à la demande du juge ≠ spontanée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Rétractation après mise en examen",
     question: "N’est pas spontanée :",
     options: [
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
     explanation: "Le cours cite ce cas comme non spontané.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Effet de la rétractation",
     question: "La rétractation :",
     options: [
@@ -2556,7 +2556,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le témoin reste coupable mais n’est pas condamné à une peine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Moment limite",
     question:
         "En jurisprudence, la limite au-delà de laquelle la rétractation est tardive est :",
@@ -2570,7 +2570,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique que la clôture des débats marque traditionnellement la limite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Délit aggravé et rétractation",
     question: "La rétractation/exemption :",
     options: [
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours indique qu’il semble logique d’appliquer l’exemption aussi à l’aggravé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Faux témoignage — Définition de la rétractation",
     question: "Une rétractation est :",
     options: [
@@ -2601,7 +2601,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
   // =========================================================
   // MINI-CAS / PIÈGES (MIXTE) — ACTION DE LA JUSTICE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-dénonciation",
     question:
         "Une personne sait qu’un crime est en cours de préparation (commencement d’exécution), et la dénonciation peut empêcher le passage à l’acte. Elle se tait. On retient :",
@@ -2615,7 +2615,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : applicable aux crimes encore évitables ou limitables, y compris tentative.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Projet criminel",
     question:
         "Une personne entend un voisin parler d’un « projet » de crime, sans commencement d’exécution. Elle ne dit rien. Selon le cours :",
@@ -2630,7 +2630,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours exclut le simple projet criminel non suivi d’un commencement d’exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux témoignage et enquête",
     question:
         "Une personne ment en audition libre en enquête préliminaire, sans serment. On retient :",
@@ -2644,7 +2644,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
         "Le cours : les déclarations mensongères en préliminaire/flagrance ne sont pas punissables au titre du faux témoignage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — OPJ commission rogatoire",
     question:
         "Une personne ment sous serment devant un OPJ agissant sur commission rogatoire. On retient :",
@@ -2664,7 +2664,7 @@ final List<QuizQuestion> questionAtteinteActionJustice = [
 // PAGE
 // ============================================================================
 class QuizAtteinteActionJusticeGPXSchool extends StatefulWidget {
-  static const String routeName = '/gpx/nation/quiz/atteintes_action_justice';
+  static const String routeName = '/gpx/dps/nation/quiz/atteintes_action_justice';
   final String uid;
   final String email;
 
@@ -3015,7 +3015,7 @@ class _QuizAtteinteActionJusticeGPXSchoolState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3218,7 +3218,7 @@ class _QuizAtteinteActionJusticeGPXSchoolState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3401,7 +3401,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3934,10 +3933,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4308,7 +4308,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4349,9 +4349,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

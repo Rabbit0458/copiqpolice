@@ -16,22 +16,22 @@ class RequisitionsPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.88);
+        : const Color(0xFF1F1F1F).withValues(alpha: .88);
 
     final Color cardBlue = isDark
         ? const Color(0xFF0D1B2A)
         : const Color(0xFFE3F2FD);
-    final Color cardBlueAccent = const Color(0xFF1565C0);
+    const Color cardBlueAccent = Color(0xFF1565C0);
 
     final Color cardIndigo = isDark
         ? const Color(0xFF1A1533)
         : const Color(0xFFEDE7F6);
-    final Color cardIndigoAccent = const Color(0xFF4527A0);
+    const Color cardIndigoAccent = Color(0xFF4527A0);
 
     final Color cardTeal = isDark
         ? const Color(0xFF00363A)
         : const Color(0xFFE0F2F1);
-    final Color cardTealAccent = const Color(0xFF00695C);
+    const Color cardTealAccent = Color(0xFF00695C);
 
     final lawStyle = TextStyle(
       color: Colors.red.shade700,
@@ -317,7 +317,7 @@ class RequisitionsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Le recours à cette technique n’est pas limité à la personne soupçonnée : '
                 'il peut également viser l’entourage familial ou amical du suspect, '
                 'lorsque les nécessités de l’enquête l’exigent.',
@@ -358,7 +358,7 @@ class RequisitionsPage extends StatelessWidget {
               const _SubTitle(
                 'Introduction dans des lieux privés ou des véhicules',
               ),
-              _Paragraph(
+              const _Paragraph(
                 'Pour mettre en place ou retirer le moyen technique de géolocalisation, le '
                 'juge d’instruction peut autoriser l’introduction dans des lieux privés ou '
                 'dans des véhicules, y compris en dehors des heures légales, dans des '
@@ -519,7 +519,7 @@ class RequisitionsPage extends StatelessWidget {
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Ce seuil de trois ans n’est pas exigé lorsqu’il s’agit d’un délit puni '
                 'd’emprisonnement commis par la voie des communications électroniques sur '
                 'la ligne de la victime, et que l’interception intervient sur cette ligne à '
@@ -531,7 +531,7 @@ class RequisitionsPage extends StatelessWidget {
               const _SubTitle(
                 '3.8.4.3 — Personnes susceptibles d’être écoutées',
               ),
-              _Paragraph(
+              const _Paragraph(
                 'L’interception peut viser les personnes mises en examen, celles paraissant '
                 'avoir participé aux faits ou toute personne susceptible de détenir des '
                 'renseignements utiles à la manifestation de la vérité.',
@@ -603,7 +603,7 @@ class RequisitionsPage extends StatelessWidget {
                 const TextSpan(text: '.'),
               ]),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'La décision est prise pour une durée maximale de quatre mois, renouvelable '
                 'dans les mêmes conditions de forme et de durée, sans que la durée totale '
                 'ne puisse excéder un an (sauf dispositions spécifiques pour la criminalité '
@@ -779,10 +779,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -847,7 +847,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -890,7 +890,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -952,7 +952,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -963,10 +963,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -978,13 +977,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -997,13 +995,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

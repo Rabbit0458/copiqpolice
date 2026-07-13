@@ -118,52 +118,52 @@ class InterpellationEtatIvressePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Contrôle obligatoire de l’alcoolémie (ivresse) : peine complémentaire de suspension du permis — ",
                 ),
                 TextSpan(
                   text: "article L. 234-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "NOTA",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le dépistage préalable d’imprégnation alcoolique n’est pas obligatoire : "
                         "le conducteur peut être soumis directement aux vérifications destinées à établir l’état alcoolique — ",
                   ),
                   TextSpan(
                     text: "article L. 234-3 alinéa 1 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et "),
+                  TextSpan(text: " et "),
                   TextSpan(
                     text: "article L. 234-6 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Point important",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le refus de subir le dépistage n’est pas une infraction pénale ; "
@@ -255,141 +255,141 @@ class InterpellationEtatIvressePage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1 — Lieu de saisine"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1 — Lieu de saisine"),
+              _Paragraph(
                 "Indiquer l’endroit exact où se situe l’équipage (adresse précise, repère, sens de circulation, point kilométrique si utile).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2 — Instructions"),
-              const _Paragraph(
+              _SubTitle("2 — Instructions"),
+              _Paragraph(
                 "Dans le PV de saisine, préciser que l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3 — Assistants"),
-              const _Paragraph(
+              _SubTitle("3 — Assistants"),
+              _Paragraph(
                 "Mentionner les fonctionnaires qui t’accompagnent et préciser la tenue de l’équipage (uniforme, tenue bourgeoise, port du brassard police).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("4 — Mission"),
-              const _Paragraph(
+              _SubTitle("4 — Mission"),
+              _Paragraph(
                 "Indiquer le but de la mission initiale (patrouille générale, contrôle routier, prévention, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5 — Interception du véhicule"),
-              const _Paragraph(
+              _SubTitle("5 — Interception du véhicule"),
+              _Paragraph(
                 "Relater le contexte :\n"
                 "• suite à une infraction au Code de la route (décrire les faits observés)\n"
                 "• ou contrôle routier sans infraction préalable\n"
                 "• ou contrôle préventif de l’imprégnation alcoolique\n"
                 "• à l’initiative de l’agent ou sur instructions du procureur de la République.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("6 — Contrôle"),
-              const _Paragraph(
+              _SubTitle("6 — Contrôle"),
+              _Paragraph(
                 "Contrôle des pièces afférentes à la conduite et à la circulation, de l’obligation d’assurance "
                 "(consultation du F.V.A. si véhicule à moteur immatriculé) et identification en style indirect : "
                 "état civil et adresse uniquement, sans autre élément de personnalité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("7 — Constatation de l’état d’ivresse manifeste"),
-              const _Paragraph(
+              _SubTitle("7 — Constatation de l’état d’ivresse manifeste"),
+              _Paragraph(
                 "Caractériser l’ivresse par des signes extérieurs visibles par tous : haleine sentant l’alcool, "
                 "propos incohérents / explications embrouillées, élocution hésitante, titubation, attitude, etc. "
                 "Décrire concrètement ce que tu constates (pas de généralités).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("8 — Dépistage / Vérifications"),
+              _SubTitle("8 — Dépistage / Vérifications"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Rappeler que la conduite en état d’ivresse entraîne le contrôle obligatoire de l’alcoolémie, "
                       "notamment en raison de la peine complémentaire de suspension du permis — ",
                 ),
                 TextSpan(
                   text: "article L. 234-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le dépistage préalable n’est pas obligatoire : il peut être procédé directement aux vérifications "
                         "destinées à établir l’état alcoolique — ",
                   ),
                   TextSpan(
                     text: "article L. 234-3 alinéa 1 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et "),
+                  TextSpan(text: " et "),
                   TextSpan(
                     text: "article L. 234-6 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Préciser clairement ce qui a été fait : dépistage ou vérifications directes, et rappeler que "
                 "le refus de dépistage n’est pas une infraction pénale mais impose les vérifications.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("9 — Cadre juridique"),
-              const _Paragraph(
+              _SubTitle("9 — Cadre juridique"),
+              _Paragraph(
                 "Vu les faits constatés, indiquer le cadre juridique de la flagrance (raisonner à partir des constats "
                 "et de l’infraction apparente).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("10 — Interpellation"),
-              const _Paragraph(
+              _SubTitle("10 — Interpellation"),
+              _Paragraph(
                 "L’heure exacte est fondamentale : c’est également l’heure de début de la garde à vue. "
                 "Indiquer le lieu exact si différent du lieu de saisine ou du point d’interception.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("11 — Palpation de sécurité / Menottage"),
+              _SubTitle("11 — Palpation de sécurité / Menottage"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si menottage : préciser le recours, les motifs et le contexte — ",
                 ),
                 TextSpan(
                   text: "article 803 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Le menottage n’est possible que si la personne manifeste l’intention de se soustraire "
                       "à la mesure ou si elle est susceptible d’être dangereuse pour elle-même ou pour autrui.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Si des objets sont découverts : les situer et les décrire. La personne étant en état d’ivresse, "
                 "prévoir la représentation ultérieure des objets après complet dégrisement. "
                 "Préciser qu’ils sont appréhendés aux fins de remise à l’OPJ (D.A.).",
@@ -496,10 +496,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -564,7 +564,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -607,7 +607,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -669,7 +669,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -701,7 +701,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -714,7 +714,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -766,10 +766,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -875,8 +875,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -944,10 +944,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -1014,10 +1014,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -1056,9 +1056,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1093,7 +1093,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

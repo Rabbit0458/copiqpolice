@@ -110,25 +110,25 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Visa obligatoire des articles "),
+                TextSpan(text: "Visa obligatoire des articles "),
                 TextSpan(
                   text: "62-2 à 63-4-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " relatifs à la décision de placement en garde à vue et aux droits de la personne.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le PV doit rappeler expressément que la mesure a été décidée par un O.P.J. (même si l’A.P.J. notifie).",
                   ),
@@ -145,129 +145,129 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Voici les rubriques attendues dans un PV de notification du placement en garde à vue et des droits.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Lieu de rédaction"),
-              const _Paragraph(
+              _SubTitle("1) Lieu de rédaction"),
+              _Paragraph(
                 "Indiquer précisément le lieu où le procès-verbal est établi.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) Cadre juridique"),
-              const _Paragraph(
+              _SubTitle("2) Cadre juridique"),
+              _Paragraph(
                 "Situer l’action dans un cadre juridique clair : enquête de flagrance ou enquête préliminaire.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Visa des articles du C.P.P. relatifs à la G.A.V.",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Viser les textes applicables, notamment ",
                 ),
                 TextSpan(
                   text: "62-2 à 63-4-3 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("4) Instructions"),
-              const _Paragraph(
+              _SubTitle("4) Instructions"),
+              _Paragraph(
                 "Rappeler clairement que la garde à vue a été décidée par un O.P.J. (instructions reçues / décision).",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5) Identité (petite identité)"),
-              const _Paragraph(
+              _SubTitle("5) Identité (petite identité)"),
+              _Paragraph(
                 "Mentionner les éléments d’identité utiles de la personne faisant l’objet de la mesure.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("6) Visa du ou des objectifs"),
+              _SubTitle("6) Visa du ou des objectifs"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La mesure doit être l’unique moyen de parvenir à au moins un objectif de l’",
                 ),
                 TextSpan(
                   text: "article 62-2 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Permettre l’exécution des investigations impliquant la présence/participation de la personne.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Garantir la présentation devant le procureur de la République (suite à l’enquête).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Empêcher la modification des preuves/indices matériels.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Empêcher des pressions sur témoins/victimes ainsi que leurs familles/proches.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Empêcher la concertation avec coauteurs/complices.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Garantir la mise en œuvre de mesures destinées à faire cesser l’infraction.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("7) Information (dans une langue comprise)"),
+              _SubTitle("7) Information (dans une langue comprise)"),
               _Paragraph.rich([
-                const TextSpan(text: "Conformément à "),
+                TextSpan(text: "Conformément à "),
                 TextSpan(
                   text: "l’article 63-1 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", informer la personne :"),
+                TextSpan(text: ", informer la personne :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "De la qualification juridique des faits, de la date et du lieu présumés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "De son placement en garde à vue, sur décision de l’O.P.J.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "De la durée de la mesure et des éventuelles prolongations.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si l’infraction est punie d’une peine d’emprisonnement inférieure à un an, la mention relative à la prolongation ne doit pas apparaître.",
                   ),
@@ -284,45 +284,45 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Informer la personne des droits visés aux articles ",
                 ),
                 TextSpan(
                   text: "63-1 à 63-4-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", et le cas échéant : "),
+                TextSpan(text: ", et le cas échéant : "),
                 TextSpan(
                   text: "706-112-1 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (mesure de protection juridique)."),
+                TextSpan(text: " (mesure de protection juridique)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Droits à notifier (liste pédagogique)"),
-              const _BulletPoint(
+              _SubTitle("Droits à notifier (liste pédagogique)"),
+              _BulletPoint(
                 text:
                     "Lors des auditions : faire des déclarations, répondre aux questions, ou se taire (droit au silence).",
               ),
-              const _BulletPoint(text: "Être assisté par un interprète."),
-              const _BulletPoint(
+              _BulletPoint(text: "Être assisté par un interprète."),
+              _BulletPoint(
                 text:
                     "Consulter certaines pièces de procédure (PV de notification, certificat médical, PV d’audition(s)).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Présenter des observations au magistrat (en cas de prolongation) ou via PV d’audition communiqué avant décision.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Se faire remettre un document énonçant ses droits.",
               ),
             ],
@@ -336,34 +336,34 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
             cardColor: cardProtected,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Si la personne fait l’objet d’une mesure de protection juridique (tutelle, curatelle, sauvegarde de justice), "
                 "elle doit être informée des conséquences pratiques liées à cette situation.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article 706-112-1 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("À notifier en plus"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("À notifier en plus"),
+              _BulletPoint(
                 text:
                     "Le tuteur/curateur/mandataire spécial sera également avisé de la mesure.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Il pourra désigner un avocat (choisi ou commis d’office) si la personne ne l’a pas demandé.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Il pourra solliciter un examen médical si la personne ne l’a pas demandé.",
               ),
@@ -378,21 +378,21 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Acter clairement les demandes formulées par la personne gardée à vue.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Avis à la famille / à une personne désignée / à l’employeur / aux autorités consulaires.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit de communiquer avec un tiers (famille, personne désignée, employeur, autorités consulaires, tuteur/curateur/mandataire).",
               ),
-              const _BulletPoint(text: "Droit d’être examiné par un médecin."),
-              const _BulletPoint(text: "Droit d’être assisté par un avocat."),
+              _BulletPoint(text: "Droit d’être examiné par un médecin."),
+              _BulletPoint(text: "Droit d’être assisté par un avocat."),
             ],
           ),
 
@@ -404,20 +404,20 @@ class NotificationGavDroitsApjPage extends StatelessWidget {
             cardColor: cardClosure,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Énonciation terminale (clôture)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Énonciation terminale (clôture)"),
+              _Paragraph(
                 "Terminer le PV par une clôture claire : date/heure, lecture faite, signatures (ou refus de signer mentionné).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Mention"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Mention"),
+              _Paragraph(
                 "La décision de placement en garde à vue figure, en procédure, avant le PV de notification. "
                 "Le procureur de la République a été informé de cette mesure par l’O.P.J.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Avis O.P.J."),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Avis O.P.J."),
+              _Paragraph(
                 "Faire apparaître l’avis à l’O.P.J. et la décision de placement en garde à vue dans la procédure (PV ou mention dans le PV d’interpellation).",
               ),
             ],
@@ -483,10 +483,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -551,7 +551,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -594,7 +594,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -656,7 +656,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -667,10 +667,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -682,13 +681,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -701,13 +699,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -747,8 +741,8 @@ class ZoomableAssetImage extends StatelessWidget {
         ? const Color(0xFF1F1F1F)
         : const Color(0xFFFFFFFF);
     final Color border = isDark
-        ? Colors.white.withOpacity(.08)
-        : Colors.black.withOpacity(.06);
+        ? Colors.white.withValues(alpha: .08)
+        : Colors.black.withValues(alpha: .06);
 
     final tag = heroTag ?? assetPath;
 
@@ -766,7 +760,7 @@ class ZoomableAssetImage extends StatelessWidget {
               border: Border.all(color: border, width: 1),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.black.withOpacity(isDark ? .35 : .10),
+                  color: Colors.black.withValues(alpha: isDark ? .35 : .10),
                   blurRadius: 16,
                   offset: const Offset(0, 10),
                 ),
@@ -828,7 +822,7 @@ class ZoomableAssetImage extends StatelessWidget {
       PageRouteBuilder(
         opaque: false,
         barrierDismissible: true,
-        barrierColor: Colors.black.withOpacity(.55),
+        barrierColor: Colors.black.withValues(alpha: .55),
         pageBuilder: (_, __, ___) => _ZoomViewerPage(
           assetPath: assetPath,
           heroTag: tag,
@@ -869,7 +863,7 @@ class _ZoomViewerPage extends StatelessWidget {
     final Color iconColor = isDark ? Colors.white : Colors.black;
 
     return Scaffold(
-      backgroundColor: background.withOpacity(.98),
+      backgroundColor: background.withValues(alpha: .98),
       body: SafeArea(
         child: Stack(
           children: [

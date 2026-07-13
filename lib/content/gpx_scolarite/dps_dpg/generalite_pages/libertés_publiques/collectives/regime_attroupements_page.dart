@@ -19,7 +19,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF5E35B1)
         : const Color(0xFF512DA8);
@@ -128,7 +128,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Le régime des attroupements est régi par les articles 431-3 à 431-8-1 du Code Pénal '
                 'et par les articles L.211-9 et L.211-10 du Code de la Sécurité Intérieure.',
               ),
@@ -175,7 +175,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: 'Réflexe policier',
                 bodySpans: [
                   TextSpan(
@@ -201,12 +201,12 @@ class RegimeAttroupementsPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Dans les cas d’attroupements prévus à l’article 431-3 du Code Pénal, le maintien de l’ordre relève '
                 'exclusivement du ministre de l’Intérieur (article D.211-10 du C.S.I.).',
               ),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Les forces armées, à l’exception de la gendarmerie nationale, ne peuvent participer au maintien de l’ordre '
                 'que lorsqu’elles sont légalement requises. La réquisition est adressée par l’autorité civile territoriale '
                 'responsable au commandant militaire compétent.',
@@ -257,7 +257,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’article 431-3 alinéa 2 du Code Pénal et l’article L.211-9 du Code de la Sécurité Intérieure énumèrent '
                 'les autorités habilitées à effectuer les sommations (préfet, sous-préfet, directeur de cabinet, maire ou adjoint, '
                 'directeur de service territorial de la police, commandant de groupement de gendarmerie, commissaire mandaté, etc.).',
@@ -293,7 +293,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'L’article R.211-11 du Code de la Sécurité Intérieure prévoit que l’autorité habilitée doit procéder '
                 'à deux sommations avant d’ordonner la dispersion par la force :',
               ),
@@ -339,7 +339,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’article R.211-13 C.S.I. précise que le recours à la force ne doit intervenir que lorsque les circonstances '
                 'le rendent “absolument nécessaire au maintien de l’ordre public”. Si une autre solution est envisageable, '
                 'elle doit être privilégiée.',
@@ -377,7 +377,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’article L.211-9 C.S.I. permet, dans certains cas, un recours immédiat à la force publique sans attendre la fin '
                 'des sommations, notamment lorsque des violences ou voies de fait sont exercées contre les forces de l’ordre '
                 'ou lorsque des lieux stratégiques sont menacés.',
@@ -391,7 +391,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _ExempleBox(
+              const _ExempleBox(
                 title: 'Point de vigilance opérationnelle',
                 bodySpans: [
                   TextSpan(
@@ -484,7 +484,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Selon l’article 24 de la loi du 29 juillet 1881, la provocation à certains crimes ou délits commis à l’occasion '
                 'd’attroupements peut être punie de 5 ans d’emprisonnement et 45 000 € d’amende. Sont notamment visés :',
               ),
@@ -499,7 +499,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: 'À retenir pour le procès-verbal',
                 bodySpans: [
                   TextSpan(
@@ -558,7 +558,7 @@ class RegimeAttroupementsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _ExempleBox(
+              const _ExempleBox(
                 title: 'Conséquence pratique',
                 bodySpans: [
                   TextSpan(
@@ -607,10 +607,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.10),
+              color: Colors.black.withValues(alpha: .10),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -649,7 +649,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     final baseStyle = GoogleFonts.fustat(
       fontSize: 14,
@@ -687,7 +687,7 @@ class _BulletPoint extends StatelessWidget {
       fontSize: 13.8,
       height: 1.4,
       fontWeight: FontWeight.w500,
-      color: isDark ? Colors.white70 : const Color(0xFF1F1F1F).withOpacity(.92),
+      color: isDark ? Colors.white70 : const Color(0xFF1F1F1F).withValues(alpha: .92),
     );
 
     return Padding(
@@ -731,9 +731,9 @@ class _NotaBox extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: border.withOpacity(.65), width: 0.9),
+        border: Border.all(color: border.withValues(alpha: .65), width: 0.9),
         color: isDark
-            ? const Color(0xFF0D47A1).withOpacity(.18)
+            ? const Color(0xFF0D47A1).withValues(alpha: .18)
             : const Color(0xFFE3F2FD),
       ),
       child: Row(
@@ -763,7 +763,7 @@ class _NotaBox extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       color: isDark
                           ? Colors.white70
-                          : const Color(0xFF1F1F1F).withOpacity(.92),
+                          : const Color(0xFF1F1F1F).withValues(alpha: .92),
                     ),
                     children: bodySpans,
                   ),
@@ -796,9 +796,9 @@ class _ExempleBox extends StatelessWidget {
       padding: const EdgeInsets.fromLTRB(12, 10, 12, 10),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: border.withOpacity(.7), width: 0.9),
+        border: Border.all(color: border.withValues(alpha: .7), width: 0.9),
         color: isDark
-            ? const Color(0xFFFFA726).withOpacity(.16)
+            ? const Color(0xFFFFA726).withValues(alpha: .16)
             : const Color(0xFFFFF3E0),
       ),
       child: Row(
@@ -828,7 +828,7 @@ class _ExempleBox extends StatelessWidget {
                       fontWeight: FontWeight.w500,
                       color: isDark
                           ? Colors.white70
-                          : const Color(0xFF1F1F1F).withOpacity(.92),
+                          : const Color(0xFF1F1F1F).withValues(alpha: .92),
                     ),
                     children: bodySpans,
                   ),

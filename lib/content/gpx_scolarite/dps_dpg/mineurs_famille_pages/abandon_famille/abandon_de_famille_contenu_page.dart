@@ -93,19 +93,19 @@ class AbandonDeFamillePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le fait, pour une personne, de ne pas exécuter une décision judiciaire ou l’un des titres "
                 "mentionnés aux 2° à 6° du I de l’article 373-2-2 du code civil lui imposant de verser au profit "
                 "d’un enfant mineur, d’un descendant, d’un ascendant ou du conjoint une pension, une contribution, "
                 "des subsides ou des prestations de toute nature dues en raison d’une obligation familiale, "
                 "en demeurant plus de deux mois sans s’acquitter intégralement de cette obligation, constitue une infraction.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Intermédiation financière",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Lorsque l’intermédiation financière des pensions alimentaires est mise en œuvre, "
                         "le fait pour le parent débiteur de demeurer plus de deux mois sans s’acquitter intégralement "
@@ -125,16 +125,16 @@ class AbandonDeFamillePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le délit d’abandon de famille.",
                 ),
               ]),
@@ -149,11 +149,11 @@ class AbandonDeFamillePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Un acte imposant le versement d’une somme d’argent",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’infraction suppose l’existence d’une obligation familiale portant sur une pension, une contribution, "
                 "des subsides ou une prestation de toute nature (obligations prévues par le code civil) au profit :\n"
                 "• d’un enfant mineur\n"
@@ -162,26 +162,26 @@ class AbandonDeFamillePage extends StatelessWidget {
                 "• du conjoint\n\n"
                 "Exemples : contribution aux charges du mariage, pension alimentaire, prestation compensatoire après divorce, etc.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un acte exécutoire (décision ou titre)"),
+              _SubTitle("B) Un acte exécutoire (décision ou titre)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’abandon de famille consiste à ne pas exécuter une décision judiciaire ou l’un des titres "
                       "mentionnés aux 2° à 6° du I de ",
                 ),
                 TextSpan(
                   text: "l’article 373-2-2 du code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ". L’obligation doit être exécutoire."),
+                TextSpan(text: ". L’obligation doit être exécutoire."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Peuvent notamment constituer un fondement exécutoire :\n"
                 "• une décision juridictionnelle\n"
                 "• une convention judiciairement homologuée\n"
@@ -192,11 +192,11 @@ class AbandonDeFamillePage extends StatelessWidget {
                 "La décision doit être exécutoire et portée légalement à la connaissance du débiteur (ou exécutée volontairement, "
                 "ou dont il a eu légalement connaissance).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Durée",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’obligation de payer se poursuit pendant toute la période prévue par l’acte exécutoire, "
                         "tant qu’une décision ultérieure ne l’a pas supprimée.",
@@ -204,65 +204,65 @@ class AbandonDeFamillePage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un défaut de paiement"),
-              const _SubTitle("1) Inexécution de l’intégralité du paiement"),
-              const _Paragraph(
+              _SubTitle("C) Un défaut de paiement"),
+              _SubTitle("1) Inexécution de l’intégralité du paiement"),
+              _Paragraph(
                 "Le débiteur doit s’acquitter intégralement de l’obligation :\n"
                 "• le délit est constitué si le non-paiement est total ou partiel\n"
                 "• des paiements partiels, en nature, des compensations ne permettent pas d’exonérer\n"
                 "• le refus de prendre en compte une indexation peut aussi caractériser l’infraction.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Refus d’indexation (réévaluation) : "),
+                  TextSpan(text: "Refus d’indexation (réévaluation) : "),
                   TextSpan(
                     text: "(Cass. crim., 26 octobre 1987)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Défaut de paiement pendant plus de deux mois",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le texte exige que le débiteur demeure plus de deux mois sans s’acquitter intégralement : "
                 "le délai doit être dépassé (plus de deux mois et non deux mois seulement).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Délai « plus de deux mois » : "),
+                  TextSpan(text: "Délai « plus de deux mois » : "),
                   TextSpan(
                     text: "(C.A. Paris, 16 mars 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Point de départ du délai :\n"
                 "• la date de signification de la décision ordonnant le versement, ou\n"
                 "• le jour du dernier versement intégral (en cas d’interruption des paiements).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Effet du délai",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délit est constitué dès l’expiration des deux mois : aucune situation postérieure "
                         "n’efface rétroactivement l’infraction (même si le paiement intervient tardivement, "
@@ -270,36 +270,36 @@ class AbandonDeFamillePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Cassation ultérieure sans effet : "),
+                  TextSpan(text: "Cassation ultérieure sans effet : "),
                   TextSpan(
                     text: "(Cass. crim., 26 juillet 1977)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Réformation partielle sans effet : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Réformation partielle sans effet : "),
                   TextSpan(
                     text: "(Cass. crim., 21 mai 1980)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Paiement tardif sans effet : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Paiement tardif sans effet : "),
                   TextSpan(
                     text: "(Cass. crim., 23 mars 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -313,19 +313,19 @@ class AbandonDeFamillePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Volonté de ne pas exécuter l’acte imposant le versement",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le délit d’abandon de famille sanctionne l’inexécution volontaire de l’acte fixant le montant "
                 "de la pension/prestation, à condition que l’auteur ait eu connaissance légale de l’acte.\n\n"
                 "La charge de la preuve (caractère intentionnel et connaissance de l’acte) appartient à la partie poursuivante.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le délit n’est pas constitué si le non-paiement résulte d’une situation de précarité persistante "
                         "ne dépendant pas de la volonté du débiteur : ces circonstances peuvent établir le caractère involontaire "
@@ -333,12 +333,12 @@ class AbandonDeFamillePage extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "(C.A. Aix-en-Provence, 01 juillet 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -367,75 +367,75 @@ class AbandonDeFamillePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "2 ans d’emprisonnement."),
-              const _BulletPoint(text: "15 000 € d’amende."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "2 ans d’emprisonnement."),
+              _BulletPoint(text: "15 000 € d’amende."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-4-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit la responsabilité pénale des personnes morales.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Peines encourues : amende selon "),
+                TextSpan(text: "Peines encourues : amende selon "),
                 TextSpan(
                   text: "l’article 131-38 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ", et peines complémentaires prévues par ",
                 ),
                 TextSpan(
                   text: "l’article 131-39, 2° à 9° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (interdiction d’exercer, etc.)."),
+                TextSpan(text: " (interdiction d’exercer, etc.)."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide et assistance, provocation ou instructions).",
                 ),
               ]),
@@ -475,10 +475,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -543,7 +543,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -586,7 +586,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -648,7 +648,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -680,7 +680,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -693,7 +693,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

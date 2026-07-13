@@ -105,35 +105,35 @@ class InterrogationFprPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les décisions judiciaires donnant lieu à inscription sont notamment prévues par ",
                 ),
                 TextSpan(
                   text: "l’article 230-19 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le policier doit respecter les finalités du fichier et interroger dans le cadre légal, notamment via CHEOPS NG (rappel : ",
                 ),
                 TextSpan(
                   text: "article R. 434-21 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
             ],
           ),
@@ -145,27 +145,27 @@ class InterrogationFprPage extends StatelessWidget {
             cardColor: cardCat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Sont inscrites dans le F.P.R. les personnes faisant l’objet :",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _BulletPoint(
                 text:
                     "De décisions judiciaires mentionnées à l’article 230-19 du CPP (mandat de recherche, interdiction de paraître, interdiction du territoire, inscription FIJAIT…), y compris celles ordonnées par un autre État de l’UE.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "D’une recherche pour les besoins d’une enquête de police judiciaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "De certaines décisions administratives ou situations particulières (opposition de sortie du territoire, malades mentaux à placer d’office, reconduite frontière non exécutée, interdiction de stade, mineurs en fugue, non-restitution d’un permis de conduire invalidé…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Important : l’existence d’une inscription ne signifie pas automatiquement interpellation. La conduite à tenir dépend de la catégorie et du numéro associés.",
                   ),
@@ -215,36 +215,36 @@ class InterrogationFprPage extends StatelessWidget {
             cardColor: cardEx,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("PJ 01 — Recherche d’adresse"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("PJ 01 — Recherche d’adresse"),
+              _Paragraph(
                 "Conduite à tenir : ne pas interpeller l’intéressé, ni attirer son attention sur la recherche, "
                 "mais rechercher sa résidence et la faire connaître d’urgence au service demandeur.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "AL 01 — Internés administratifs en état d’évasion",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Conduite à tenir : appréhender l’intéressé, prendre toutes les mesures de sécurité utiles "
                 "et aviser d’urgence le service demandeur (qui donnera les indications et instructions).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("J 55 — Mandat d’arrêt européen"),
-              const _Paragraph(
+              _SubTitle("J 55 — Mandat d’arrêt européen"),
+              _Paragraph(
                 "Conduite à tenir : procéder à l’arrestation de l’intéressé.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le passage au fichier doit toujours s’effectuer à distance de la personne contrôlée. En cas de réponse positive, le CIC notifiera la conduite à tenir. ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le service à l’origine de l’ordre de recherche doit également être contacté afin de confirmer la validité de la fiche.",
                   ),
@@ -286,10 +286,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -354,7 +354,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -397,7 +397,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -459,7 +459,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -470,10 +470,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -485,13 +484,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -504,13 +502,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

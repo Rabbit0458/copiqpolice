@@ -90,22 +90,22 @@ class ArmesClassificationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 311-2 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixe la classification des armes et munitions en catégories A, B, C et D.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cette classification organise le régime juridique (interdiction, autorisation, déclaration ou liberté "
                 "d’acquisition/détention) selon la dangerosité et l’usage des armes/munitions.",
               ),
@@ -148,93 +148,93 @@ class ArmesClassificationPage extends StatelessWidget {
             cardColor: cardA,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La catégorie A regroupe les matériels de guerre et les armes interdits à l’acquisition et à la détention. "
                 "Elle se subdivise en A1 et A2.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Catégorie A1"),
-              const _Paragraph(
+              _SubTitle("A) Catégorie A1"),
+              _Paragraph(
                 "Armes et éléments d’armes interdits, ainsi que certains systèmes d’alimentation et munitions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Points clés (A1)"),
-              const _BulletPoint(
+              _SubTitle("Points clés (A1)"),
+              _BulletPoint(
                 text: "Armes à feu camouflées sous la forme d’un autre objet.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes de poing tirant plus de 21 munitions sans réapprovisionnement (avec chargeur > 20 intégré ou inséré).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes d’épaule semi-auto : annulaire (> 31 coups) ou centrale (> 11 coups) selon chargeur intégré/inséré.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes d’épaule alimentées par bande (quelle qu’en soit la capacité).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes à canon rayé + munitions si projectile ≥ 20 mm (sauf projectiles non métalliques exclusivement).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes à canon lisse + munitions de calibre supérieur au calibre 8 (exceptions selon arrêtés).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Munitions dont le projectile ≥ 20 mm (sauf celles utilisées par armes classées en catégorie C).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Éléments d’armes/munitions + systèmes d’alimentation : poing > 20, épaule annulaire > 30, épaule centrale > 10, répétition manuelle centrale > 30.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Catégorie A2"),
-              const _Paragraph(
+              _SubTitle("B) Catégorie A2"),
+              _Paragraph(
                 "Matériels de guerre, équipements destinés au combat, certaines munitions et matériels spécialisés.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Points clés (A2)"),
-              const _BulletPoint(
+              _SubTitle("Points clés (A2)"),
+              _BulletPoint(
                 text:
                     "Armes automatiques et dispositifs permettant le tir en rafale (ou assimilé).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Munitions à projectiles perforants, explosifs ou incendiaires.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes à effets laser/ondes électromagnétiques de grande puissance.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Canons, obusiers, mortiers, lance-roquettes, lance-grenades et équipements associés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Bombes, torpilles, mines, missiles, grenades, engins incendiaires, leurres, équipements de lancement/largage.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Engins nucléaires explosifs + composants spécifiques + matériels/logiciels spécialisés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Véhicules de combat, aéronefs militaires (pilotés ou non), navires de guerre et éléments associés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Matériels de transmission/télécommunication militaires, contre-mesures électroniques, moyens de cryptologie.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Matériels d’observation/visée, vision nocturne, conduite de tir, détection/brouillage, protection NBC/radiologique.",
               ),
@@ -249,38 +249,38 @@ class ArmesClassificationPage extends StatelessWidget {
             cardColor: cardB,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La catégorie B regroupe les armes soumises à autorisation pour l’acquisition et la détention.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Principaux ensembles"),
-              const _BulletPoint(
+              _SubTitle("Principaux ensembles"),
+              _BulletPoint(
                 text:
                     "B 1° : armes à feu de poing (et armes converties en armes de poing non classées ailleurs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "B 2° : armes à feu d’épaule (semi-auto centrale/annulaire selon capacités, longueurs, apparence, pompe…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "B 4° : armes chambrant certains calibres (ex. 7,62x39 ; 5,56x45 ; 5,45x39 ; 12,7x99 ; 14,5x114) + munitions, douilles.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "B 6° / B 7° : armes à impulsion électrique (distance / contact) selon classement par arrêté.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "B 8° : générateurs d’aérosols incapacitants/lacrymogènes > 100 ml (ou classés par arrêté).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "B 10° / B 11° : certaines munitions à percussion centrale + systèmes d’alimentation des armes de catégorie B.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "B 12° : armes à répétition manuelle avec mécanisme transportant la munition par action sur la détente (définition légale).",
               ),
@@ -295,36 +295,36 @@ class ArmesClassificationPage extends StatelessWidget {
             cardColor: cardC,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La catégorie C concerne les armes soumises à déclaration : principalement certaines armes d’épaule, "
                 "leurs éléments, et certaines munitions/éléments associés.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Points clés"),
-              const _BulletPoint(
+              _SubTitle("Points clés"),
+              _BulletPoint(
                 text:
                     "C 1° : armes à feu d’épaule (semi-auto limitée à 3 coups, répétition manuelle limitée à 11 coups, un coup par canon, pompe à canon rayé sous conditions…).",
               ),
-              const _BulletPoint(text: "C 2° : éléments de ces armes."),
-              const _BulletPoint(
+              _BulletPoint(text: "C 2° : éléments de ces armes."),
+              _BulletPoint(
                 text:
                     "C 4° : armes/lanceurs non pyrotechniques avec énergie à la bouche ≥ 20 joules.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "C 6° à C 8° : munitions/éléments classés selon modalités prévues, y compris arrêtés conjoints.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "C 9° : armes neutralisées selon modalités fixées par arrêté.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "C 10° : systèmes d’alimentation des armes de catégorie C.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "C 12° : armes d’alarme et de signalisation.",
               ),
             ],
@@ -338,47 +338,47 @@ class ArmesClassificationPage extends StatelessWidget {
             cardColor: cardD,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La catégorie D regroupe des armes et matériels dont l’acquisition et la détention sont libres, "
                 "dans les conditions fixées par les textes (et selon certains arrêtés).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Exemples et ensembles"),
-              const _BulletPoint(
+              _SubTitle("Exemples et ensembles"),
+              _BulletPoint(
                 text:
                     "Objets susceptibles de constituer une arme dangereuse (armes non à feu camouflées, poignards, matraques… selon arrêtés).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Aérosols lacrymogènes/incapacitants ≤ 100 ml (sauf reclassement par arrêté).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes à impulsions électriques de contact (sauf reclassement par arrêté).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes historiques et de collection (modèle antérieur au 1er janvier 1900) et certaines reproductions (conditions techniques/arrêtés).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Armes/lanceurs non pyrotechniques : énergie à la bouche entre 2 et 20 joules.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Certaines munitions et éléments (poudre noire, sans étui métallique, fabrications anciennes…), selon listes et conditions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Certains matériels de guerre selon modèle et neutralisation (avant/après 1946), selon arrêtés.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La classification exacte dépend parfois d’arrêtés conjoints (Intérieur, Défense, Douanes, Industrie). "
                         "En pratique, on vérifie toujours la catégorie précise dans les textes applicables.",
@@ -421,10 +421,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -489,7 +489,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -532,7 +532,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -594,7 +594,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -605,10 +605,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -620,13 +619,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -639,13 +637,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -98,7 +98,7 @@ class QuizQuestion {
 ///  (tu peux bien sûr l’enrichir encore si besoin)
 /// =============================================================
 final List<QuizQuestion> questionsCadresJuridiquePages = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Commission rogatoire",
     question: "Dans quel cadre juridique intervient la commission rogatoire ?",
     options: [
@@ -112,7 +112,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Commission rogatoire",
     question:
         "Quelle est la finalité principale de la commission rogatoire pour le juge d’instruction ?",
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégantes",
     question:
         "Quelle juridiction d’instruction peut délivrer une commission rogatoire ?",
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégantes",
     question:
         "Parmi les juridictions suivantes, laquelle peut délivrer une commission rogatoire ?",
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégantes",
     question:
         "Dans la pratique courante, de quel magistrat émanent le plus souvent les commissions rogatoires ?",
@@ -173,7 +173,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégataires",
     question:
         "Selon l’article 151 du Code de procédure pénale, qui peut être requis par commission rogatoire ?",
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégataires",
     question:
         "Dans la pratique policière, quels agents sont principalement chargés d’exécuter les commissions rogatoires ?",
@@ -204,7 +204,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Matérielle OPJ",
     question: "Les actes exécutés par l’OPJ sur commission rogatoire doivent :",
     options: [
@@ -218,7 +218,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Matérielle OPJ",
     question:
         "Parmi les actes suivants, lequel l’OPJ ne peut PAS faire sur commission rogatoire ?",
@@ -233,7 +233,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Matérielle OPJ",
     question:
         "L’OPJ peut-il interroger une personne mise en examen sur commission rogatoire ?",
@@ -249,7 +249,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Territoriale OPJ",
     question:
         "En principe, dans quelles limites territoriales l’OPJ est-il compétent ?",
@@ -265,7 +265,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Territoriale OPJ",
     question:
         "L’extension de compétence de l’OPJ à l’ensemble du territoire national est possible :",
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme — Commission rogatoire",
     question:
         "Quel élément doit obligatoirement figurer dans la commission rogatoire selon l’article 151 al. 2 ?",
@@ -295,7 +295,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme — Commission rogatoire",
     question: "Sous quelle forme la commission rogatoire doit-elle exister ?",
     options: [
@@ -309,7 +309,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Générale / Spéciale",
     question: "Une commission rogatoire dite « générale » est :",
     options: [
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Générale / Spéciale",
     question: "Une commission rogatoire « spéciale » :",
     options: [
@@ -338,7 +338,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Contre personne dénommée / X",
     question:
         "Lorsqu’une commission rogatoire est délivrée contre une personne dénommée, elle doit :",
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie — Contre personne dénommée / X",
     question: "Une commission rogatoire délivrée « contre X » signifie que :",
     options: [
@@ -368,7 +368,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "International — Forme",
     question:
         "Une commission rogatoire internationale doit notamment comporter :",
@@ -384,7 +384,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Constatations",
     question:
         "Sur commission rogatoire, l’OPJ peut effectuer des constatations :",
@@ -399,7 +399,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Signalétiques",
     question:
         "Quels types d’opérations l’OPJ peut-il faire réaliser sur commission rogatoire au titre des relevés signalétiques ?",
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question: "En commission rogatoire, le témoin est en principe tenu :",
     options: [
@@ -428,7 +428,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quelle formule de serment doit prêter le témoin sur commission rogatoire ?",
@@ -443,7 +443,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Parmi les personnes suivantes, laquelle est dispensée de prêter serment comme témoin ?",
@@ -458,7 +458,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Une personne gardée à vue entendue comme témoin sur commission rogatoire :",
@@ -474,7 +474,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions — Témoins",
     question:
         "Le témoin qui refuse de comparaître, de prêter serment ou de déposer sans excuse valable encourt :",
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté",
     question:
         "L’audition d’un témoin assisté par l’OPJ sur commission rogatoire est possible :",
@@ -504,7 +504,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté",
     question: "Le témoin assisté entendu par l’OPJ :",
     options: [
@@ -518,7 +518,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parties — Personne mise en examen",
     question: "Après sa mise en examen, la personne :",
     options: [
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parties — Partie civile",
     question:
         "La partie civile peut être entendue par l’OPJ sur commission rogatoire :",
@@ -547,7 +547,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Généralités",
     question:
         "Les perquisitions en matière d’information judiciaire sont notamment régies par :",
@@ -562,7 +562,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Domicile mis en examen",
     question:
         "En principe, la perquisition au domicile de la personne mise en examen doit se faire :",
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Domicile tiers",
     question:
         "Lors d’une perquisition au domicile d’un tiers, ce dernier est :",
@@ -593,7 +593,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies / Scellés",
     question:
         "Les objets, documents ou données informatiques saisis doivent être :",
@@ -608,7 +608,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Conditions",
     question:
         "En commission rogatoire, qui contrôle la garde à vue prévue par l’article 154 du Code de procédure pénale ?",
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Généralités",
     question:
         "Sur commission rogatoire, les OPJ et APJ ne peuvent pas adresser de réquisitions techniques ou scientifiques fondées sur les articles 60 et 77-1 parce que :",
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Ordre général",
     question:
         "Les réquisitions d’ordre général de l’article 99-3 du Code de procédure pénale permettent notamment à l’OPJ :",
@@ -651,7 +651,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Géolocalisation",
     question:
         "Les réquisitions de géolocalisation en temps réel (art. 230-32 à 230-44) peuvent viser :",
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interceptions",
     question:
         "Qui est compétent pour ordonner l’interception de correspondances émises par la voie des communications électroniques (art. 100) ?",
@@ -681,7 +681,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire — Violation contrôle judiciaire",
     question:
         "En cas de présomption de violation de certaines obligations du contrôle judiciaire, la personne peut être retenue :",
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Délégataires",
     question:
         "Pourquoi la délivrance de commissions rogatoires à plusieurs services de police ou de gendarmerie dans une même affaire peut-elle être envisagée ?",
@@ -709,7 +709,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Territoriale OPJ",
     question:
         "Dans quel cas l’OPJ n’a-t-il pas à informer le juge d’instruction lorsqu’il se transporte hors de son ressort habituel ?",
@@ -725,7 +725,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "International — Exécution",
     question:
         "Selon la jurisprudence de la Cour de cassation, quel droit s’applique aux conditions de fond et de forme des actes réalisés à l’étranger sur commission rogatoire internationale ?",
@@ -740,7 +740,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Juge d’instruction",
     question:
         "Que permet l’article 152 al. 3 du Code de procédure pénale au juge d’instruction dans le cadre d’une commission rogatoire ?",
@@ -756,7 +756,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — PV de saisine",
     question:
         "En matière d’instruction, à quoi correspond le procès-verbal de saisine établi par l’OPJ ?",
@@ -772,7 +772,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Délais",
     question:
         "En l’absence de délai fixé par le juge d’instruction, dans quel délai l’OPJ doit-il transmettre la commission rogatoire et les procès-verbaux après la fin des opérations ?",
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Refus",
     question:
         "Le refus par une personne soupçonnée de commettre une infraction de se soumettre aux prélèvements et signalisation ordonnés par l’OPJ constitue :",
@@ -798,7 +798,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Les personnes astreintes au secret professionnel entendues comme témoins :",
@@ -814,7 +814,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Journalistes",
     question:
         "Quel droit particulier l’article 109 al. 2 du Code de procédure pénale reconnaît-il au journaliste entendu comme témoin ?",
@@ -830,7 +830,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices graves et concordants",
     question:
         "Lorsqu’apparaissent, au cours de l’audition, des indices graves et concordants à l’encontre d’une personne entendue comme simple témoin, l’OPJ doit :",
@@ -846,7 +846,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices graves et concordants",
     question:
         "Parmi les caractéristiques suivantes, lesquelles doivent être réunies pour parler d’indices « graves et concordants » au sens de l’article 105 du Code de procédure pénale ?",
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté",
     question:
         "Le témoin assisté entendu par l’OPJ peut-il être soumis à une mesure de garde à vue pour la durée de son audition ?",
@@ -877,7 +877,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Personne sous contrôle judiciaire",
     question:
         "La perquisition au domicile d’une personne placée sous contrôle judiciaire ou assignée à résidence avec surveillance électronique, et interdite de détenir une arme, est possible :",
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies / Données informatiques",
     question:
         "Lorsqu’une copie des données informatiques est réalisée dans le cadre d’une saisie, que peut ordonner le juge d’instruction pour le support d’origine non placé sous main de justice ?",
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisie pénale — Comptes bancaires",
     question:
         "Dans quel cadre l’OPJ peut-il procéder à la saisie pénale de sommes figurant sur un compte bancaire ou d’actifs numériques ?",
@@ -924,7 +924,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat de recherche",
     question: "Le mandat de recherche peut être décerné :",
     options: [
@@ -939,7 +939,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Prolongation",
     question:
         "En commission rogatoire, qui est compétent pour autoriser la prolongation de la garde à vue au-delà de la première période ?",
@@ -954,7 +954,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "En garde à vue exécutée sur commission rogatoire, quel renseignement supplémentaire l’avocat doit-il recevoir ?",
@@ -970,7 +970,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Informatique / Télécom",
     question:
         "Pour requérir les opérateurs de télécommunications de préserver le contenu des informations consultées par les utilisateurs (art. 60-2, al. 2), l’OPJ doit :",
@@ -985,7 +985,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Géolocalisation / Urgence",
     question:
         "En cas d’urgence, lorsque l’OPJ met en place une géolocalisation en temps réel, que doit-il faire dans les 24 heures ?",
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Nature des infractions",
     question:
         "En matière d’interception de correspondances (art. 100), quand le seuil de trois ans d’emprisonnement n’est-il pas exigé ?",
@@ -1017,7 +1017,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "En principe, une interception ne peut porter sur une ligne dépendant du cabinet d’un avocat ou de son domicile que :",
@@ -1033,7 +1033,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Informations préalables",
     question:
         "Selon l’article 100-7 du Code de procédure pénale, une interception sur la ligne d’un député ou d’un sénateur ne peut avoir lieu que :",
@@ -1049,7 +1049,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Conditions de forme",
     question: "La décision d’interception de correspondances doit notamment :",
     options: [
@@ -1063,7 +1063,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Destruction des enregistrements",
     question:
         "À l’expiration du délai de prescription de l’action publique, que devient l’enregistrement des interceptions ?",
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire — Droits de la personne",
     question:
         "Dans le cadre de la retenue judiciaire pour présomption de violation du contrôle judiciaire, la personne bénéficie notamment :",
@@ -1096,7 +1096,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "International — Conventions UE",
     question:
         "Selon la convention du 29 mai 2000 relative à l’entraide judiciaire entre États membres de l’Union européenne, l’État requis :",
@@ -1112,7 +1112,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoin assisté / Plainte avec CPC",
     question:
         "Lorsqu’une personne est nommément visée par une plainte avec constitution de partie civile, la Chancellerie considère qu’elle doit :",
@@ -1128,7 +1128,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices graves et concordants — Nullité",
     question:
         "Quelles sont les conséquences sur la procédure si l’OPJ poursuit l’audition d’une personne comme simple témoin alors que des indices graves et concordants de culpabilité sont apparus ?",
@@ -1144,7 +1144,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Indices graves et concordants",
     question:
         "L’article 105 du Code de procédure pénale, relatif à l’interdiction d’entendre comme témoin une personne contre laquelle existent des indices graves et concordants, s’applique-t-il au témoin assisté ?",
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Article 56 et renvoi",
     question:
         "Pourquoi le renvoi à l’article 56 du Code de procédure pénale, pour les perquisitions au domicile d’un tiers sur commission rogatoire, est-il important ?",
@@ -1175,7 +1175,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies / Scellés",
     question:
         "Qui peut ouvrir les scellés fermés et dépouiller les documents saisis dans le cadre de l’instruction (art. 97 al. 6) ?",
@@ -1191,7 +1191,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Lieux privés",
     question:
         "Pour l’introduction dans des lieux d’habitation en dehors des heures légales afin de mettre en place un dispositif de géolocalisation, qui doit délivrer l’autorisation ?",
@@ -1206,7 +1206,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Activation à distance",
     question:
         "L’activation à distance d’un appareil électronique en vue de sa localisation en temps réel ne peut pas concerner :",
@@ -1222,7 +1222,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Correspondances protégées",
     question:
         "Selon l’article 100-5 du Code de procédure pénale, quelles correspondances ne peuvent pas être transcrites, à peine de nullité ?",
@@ -1238,7 +1238,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Agents requis",
     question:
         "Les agents requis pour installer un dispositif d’interception (art. 100-3) sont astreints :",
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Retenue judiciaire — Limites des investigations",
     question:
         "Pendant la retenue judiciaire prévue à l’article 141-4, la personne peut-elle faire l’objet d’investigations corporelles internes ?",
@@ -1269,7 +1269,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "Le texte interdit expressément les investigations corporelles internes durant la retenue par les services de police ou de gendarmerie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Contrôle d'identité",
     question:
         "Quel est l'objectif principal des contrôles, relevés et vérifications d'identité ?",
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Textes applicables",
     question:
         "Quels articles du code de procédure pénale encadrent les contrôles, relevés et vérifications d'identité ?",
@@ -1300,7 +1300,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — CESEDA",
     question:
         "En complément du CPP, quel code fixe les obligations de présentation de documents pour les étrangers lors d'un contrôle d'identité ?",
@@ -1316,7 +1316,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Champ d'application",
     question:
         "Selon l'article 78-1 du CPP, sur qui peut s'exercer un contrôle d'identité ?",
@@ -1331,7 +1331,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Distinction",
     question:
         "Quelle est la différence principale entre contrôle d'identité et vérification d'identité ?",
@@ -1348,7 +1348,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== PERSONNES HABILITÉES ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Contrôle d'identité",
     question:
         "Quels personnels sont habilités à procéder à un contrôle d'identité selon l'article 78-2 du CPP ?",
@@ -1364,7 +1364,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Exclusions",
     question:
         "Parmi les personnels suivants, lesquels ne peuvent PAS procéder eux-mêmes à un contrôle d'identité ?",
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Formule légale",
     question:
         "Que signifie la formule « sur ordre et sous la responsabilité » de l’OPJ concernant l’action des APJ et APJA ?",
@@ -1392,7 +1392,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== CONTROLES RELEVANT DE LA POLICE JUDICIAIRE (INITIATIVE POLICIERS) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Article 78-2",
     question:
         "Dans le cadre de la police judiciaire, sur quelle base un policier peut-il décider de procéder à un contrôle d'identité de sa propre initiative ?",
@@ -1408,7 +1408,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cinq cas de l'article 78-2",
     question:
         "Parmi les propositions suivantes, laquelle fait partie des cinq cas permettant un contrôle d'identité à l'initiative des policiers (police judiciaire) ?",
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Personne auteur",
     question:
         "Dans quel cas un contrôle d'identité peut-il être réalisé lorsque la personne est soupçonnée d'être l'auteur d'une infraction ?",
@@ -1438,7 +1438,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Renseignements utiles",
     question:
         "Dans quel cas un contrôle d'identité peut-il viser une personne qui n'est pas suspecte mais peut aider l'enquête ?",
@@ -1454,7 +1454,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Contrôle judiciaire",
     question:
         "Quel cas prévu à l'article 78-2 permet de contrôler une personne déjà soumise à une mesure judiciaire ?",
@@ -1470,7 +1470,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Personne recherchée",
     question:
         "Que prévoit l’article 78-2 pour une personne qui fait l’objet de recherches ordonnées par une autorité judiciaire ?",
@@ -1485,7 +1485,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Raisons plausibles",
     question:
         "Qu'est-ce qui caractérise les « raisons plausibles » justifiant un contrôle d'identité en police judiciaire ?",
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== CONTROLES SUR RÉQUISITIONS DU PROCUREUR ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Forme",
     question:
         "Sous quelle forme le procureur de la République doit-il donner ses réquisitions pour des contrôles d'identité généralisés ?",
@@ -1516,7 +1516,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Infractions visées",
     question:
         "Lors de contrôles d'identité sur réquisitions, que doivent obligatoirement préciser les réquisitions du procureur de la République ?",
@@ -1531,7 +1531,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Durée",
     question:
         "En pratique, quelle durée les opérations de contrôles d'identité sur réquisitions ne doivent-elles pas dépasser ?",
@@ -1542,7 +1542,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Lieux et temps",
     question:
         "Que doivent préciser les réquisitions du parquet concernant les contrôles d'identité ?",
@@ -1557,7 +1557,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions du procureur — Toute personne",
     question:
         "Lors d'un contrôle d'identité sur réquisitions du procureur, qui peut être contrôlé ?",
@@ -1574,7 +1574,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== CONTROLES PRÉVENTIFS (POLICE ADMINISTRATIVE) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Finalité",
     question:
         "Quel est l’objectif principal des contrôles d'identité préventifs prévus à l’alinéa 8 de l’article 78-2 du CPP ?",
@@ -1590,7 +1590,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Comportement",
     question:
         "Dans le cadre d'un contrôle préventif (alinéa 8 de l'article 78-2 CPP), le comportement de la personne est-il une condition de régularité du contrôle ?",
@@ -1606,7 +1606,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Lieux",
     question:
         "Dans quels types de lieux peuvent être mis en œuvre les contrôles d'identité préventifs ?",
@@ -1622,7 +1622,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Motivation",
     question:
         "Que rappelle le Conseil constitutionnel concernant les contrôles généralisés et discrétionnaires ?",
@@ -1639,7 +1639,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== CONTROLES EN ZONE FRONTIÈRE ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Zone frontière — Finalité",
     question:
         "À quoi sont principalement destinés les contrôles d'identité en zone frontière prévus par l’article 78-2 alinéas 9 à 17 ?",
@@ -1655,7 +1655,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Zone frontière — Bande des 20 km",
     question:
         "Dans quelle zone peut-on effectuer des contrôles d'identité fondés sur l’article 78-2 en lien avec la frontière terrestre Schengen ?",
@@ -1671,7 +1671,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Zone frontière — Durée contrôles ports/aéroports",
     question:
         "Quelle est la durée maximale d'une opération de contrôles d'identité autour des ports et aéroports constituant des points de passage frontaliers ?",
@@ -1687,7 +1687,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== CONTROLES DANS LES LOCAUX PROFESSIONNELS ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Locaux professionnels — Réquisitions",
     question:
         "Quelle condition est nécessaire pour que les policiers puissent pénétrer dans des locaux professionnels afin de vérifier l'absence de travail dissimulé ?",
@@ -1702,7 +1702,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Locaux professionnels — Lieux visés",
     question:
         "Quels lieux peuvent être visés par les réquisitions pour contrôle dans les locaux professionnels ?",
@@ -1718,7 +1718,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== VISITES DE VÉHICULES / BAGAGES / NAVIRES (RÉQUISITIONS) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Visites véhicules — Réquisitions",
     question:
         "Selon l’article 78-2-2 CPP, pour quelles infractions les visites de véhicules sur réquisitions du procureur peuvent-elles être ordonnées ?",
@@ -1734,7 +1734,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Visites véhicules — Présence",
     question:
         "Lors d'une visite de véhicule à l'arrêt ou en stationnement sur réquisitions du procureur, en présence de qui la visite doit-elle avoir lieu ?",
@@ -1750,7 +1750,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Visites véhicules — Durée réquisitions",
     question:
         "Quelle est la durée maximale d'une opération de visites de véhicules sur réquisitions du procureur selon l'article 78-2-2 ?",
@@ -1766,7 +1766,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== DISTINCTION CONTROLE D'IDENTITÉ / CONTROLE DE RÉGLEMENTATION ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle d'identité vs réglementation",
     question:
         "Qu'est-ce qui caractérise un contrôle de réglementation par rapport au contrôle d'identité de l’article 78-2 CPP ?",
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== CONTRÔLE DES ÉTRANGERS / CESEDA ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — CESEDA",
     question:
         "Selon l’article L. 812-2 du CESEDA, à quel moment un étranger doit-il être en mesure de présenter les documents l’autorisant à séjourner ou circuler en France ?",
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Critères objectifs",
     question:
         "Le contrôle de la situation administrative d’un étranger peut-il être fondé sur la couleur de peau ou le nom de famille ?",
@@ -1816,7 +1816,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== MOYENS DE PREUVE DE L’IDENTITÉ ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Tout moyen",
     question:
         "Que prévoit l’article 78-2 CPP concernant les moyens de justifier de son identité lors d’un contrôle ?",
@@ -1831,7 +1831,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Documents probants",
     question:
         "Parmi les documents suivants, lequel est considéré comme probant et officiel pour établir l'identité ?",
@@ -1846,7 +1846,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Documents non probants",
     question:
         "Un livret de famille présenté lors d’un contrôle d’identité constitue :",
@@ -1862,7 +1862,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve identité — Témoignages",
     question:
         "Dans quelles conditions les témoignages peuvent-ils être utilisés pour confirmer l'identité lors d’un contrôle ?",
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
   // ==== RELEVÉ D’IDENTITÉ ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Personnels habilités",
     question:
         "Quels agents peuvent procéder à un relevé d’identité pour dresser procès-verbal de certaines contraventions selon l'article 78-6 CPP ?",
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Nature",
     question:
         "De quelle nature est l'opération de relevé d'identité prévue à l'article 78-6 du CPP ?",
@@ -1912,7 +1912,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Refus du contrevenant",
     question:
         "En cas de refus du contrevenant de justifier de son identité lors d’un relevé, que doit faire l’APJA ?",
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Coercition",
     question:
         "L’agent de police judiciaire adjoint peut-il user de la coercition pour maintenir sur place un contrevenant le temps d’aviser l’OPJ ?",
@@ -1945,7 +1945,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== VÉRIFICATION D’IDENTITÉ & RÉTENTION ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Définition",
     question:
         "Comment peut-on définir la vérification d'identité au sens de l'article 78-3 CPP ?",
@@ -1961,7 +1961,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Rétention",
     question:
         "Quelle est la durée maximale de la rétention d’une personne pour vérification d'identité sur le territoire métropolitain (hors régimes particuliers) ?",
@@ -1972,7 +1972,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Début du délai",
     question:
         "À partir de quand commence à courir le délai maximal de 4 heures de rétention pour vérification d’identité ?",
@@ -1988,7 +1988,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Sort de la personne",
     question:
         "À l'issue de la durée maximale de rétention pour vérification d'identité, que doit-il se passer si l'identité n'est toujours pas établie et qu'il n’y a pas de placement en garde à vue ?",
@@ -2003,7 +2003,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Garde à vue",
     question:
         "Si une garde à vue fait suite à une vérification d'identité, comment se calcule la durée totale de privation de liberté ?",
@@ -2018,7 +2018,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Prise d’empreintes",
     question:
         "Dans quelles conditions l’O.P.J. peut-il recourir à la prise d’empreintes ou de photographies pour établir l’identité ?",
@@ -2034,7 +2034,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Droit d'aviser",
     question:
         "Lors d'une vérification d'identité, de quel droit la personne doit-elle être informée immédiatement ?",
@@ -2050,7 +2050,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d'identité — Délit de refus",
     question:
         "Quel risque pénal encourt la personne qui refuse de se prêter aux prises d’empreintes ou photographies dûment autorisées par le magistrat ?",
@@ -2066,7 +2066,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== PROCÈS-VERBAL DE VÉRIFICATION ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "PV de vérification — Mentions obligatoires",
     question:
         "Parmi les éléments suivants, lequel doit obligatoirement figurer dans le procès-verbal de vérification d’identité ?",
@@ -2082,7 +2082,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "PV de vérification — Signature",
     question:
         "Que doit faire l’O.P.J. si la personne refuse de signer le procès-verbal de vérification d’identité ?",
@@ -2097,7 +2097,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "PV de vérification — Conservation données",
     question:
         "Si la vérification d’identité n’est suivie d’aucune enquête ou mesure d’exécution, que devient le procès-verbal et les éléments d’identification ?",
@@ -2115,7 +2115,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ===================== NOUVELLE SÉRIE GÉANTE — NIVEAU FACILE =====================
 
   // ==== Contenu général ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Objectifs",
     question: "Les opérations de contrôle d'identité visent principalement à :",
     options: [
@@ -2130,7 +2130,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 78-1 CPP",
     question:
         "Selon l’article 78-1 CPP, qui peut être soumis à un contrôle d’identité ?",
@@ -2145,7 +2145,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Début d'un contrôle",
     question: "Quand commence légalement un contrôle d’identité ?",
     options: [
@@ -2159,7 +2159,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Documents acceptés",
     question: "Quel document permet de prouver son identité ?",
     options: [
@@ -2173,7 +2173,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Absence de papiers",
     question:
         "Si une personne n’a aucun document sur elle lors d’un contrôle d’identité :",
@@ -2190,7 +2190,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Agents habilités ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Distinction",
     question: "Quels agents NE PEUVENT PAS procéder à un contrôle d’identité ?",
     options: ["Les agents de police municipale", "Les OPJ", "Les APJ"],
@@ -2200,7 +2200,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — APJ",
     question:
         "Un APJ peut-il procéder à un contrôle d’identité sans ordre préalable de l’OPJ ?",
@@ -2215,7 +2215,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Nullité",
     question:
         "Quelle mention doit obligatoirement figurer dans un PV de contrôle sous peine de nullité ?",
@@ -2231,7 +2231,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôles Police Judiciaire — Raisons plausibles ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 1",
     question:
         "Un contrôle d’identité pour police judiciaire peut avoir lieu si la personne :",
@@ -2246,7 +2246,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 2",
     question:
         "Quel exemple correspond à une raison plausible de soupçonner un acte préparatoire ?",
@@ -2260,7 +2260,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Renseignement",
     question:
         "Une personne peut être contrôlée si elle est susceptible de fournir :",
@@ -2274,7 +2274,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Personne recherchée",
     question: "Une personne peut être contrôlée si elle fait l’objet :",
     options: [
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôle sur réquisitions du procureur ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Écrit",
     question:
         "Les réquisitions du procureur pour un contrôle d’identité doivent être :",
@@ -2303,7 +2303,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Périmètre",
     question: "Que doit obligatoirement indiquer la réquisition du procureur ?",
     options: [
@@ -2317,7 +2317,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Population visée",
     question:
         "Lors d’un contrôle sur réquisitions, quelles personnes peuvent être contrôlées ?",
@@ -2333,7 +2333,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôles préventifs (Police administrative) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Objectif",
     question:
         "Les contrôles préventifs prévus par l’alinéa 8 de 78-2 servent à :",
@@ -2348,7 +2348,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Comportement",
     question: "Dans un contrôle préventif, le comportement de la personne :",
     options: [
@@ -2361,7 +2361,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Lieux",
     question: "Les contrôles préventifs peuvent être réalisés dans :",
     options: [
@@ -2376,7 +2376,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôles zone frontière ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Bande des 20km",
     question: "Les contrôles dans la bande des 20 km visent principalement :",
     options: [
@@ -2389,7 +2389,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Durée",
     question:
         "La durée maximale d’un contrôle autour d’un port ou aéroport ne peut dépasser :",
@@ -2401,7 +2401,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Moyens de preuve de l’identité ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Photographie",
     question: "Un document probant d’identité doit de préférence comporter :",
     options: [
@@ -2414,7 +2414,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Témoins",
     question:
         "Les témoignages permettant de confirmer l'identité doivent être :",
@@ -2431,7 +2431,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ===================== NIVEAU INTERMÉDIAIRE =====================
 
   // ==== Relevé d’identité ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Nature juridique",
     question: "Le relevé d’identité prévu par 78-6 CPP est :",
     options: [
@@ -2444,7 +2444,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Refus",
     question:
         "En cas de refus de justifier de son identité lors d’un relevé, l’agent peut :",
@@ -2460,7 +2460,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Vérification d’identité & rétention ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Compétence",
     question: "Qui est compétent pour ordonner une vérification d’identité ?",
     options: ["L’APJ", "L’OPJ exclusivement", "Le préfet"],
@@ -2469,7 +2469,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Début du délai",
     question:
         "Quand commence le délai légal de la rétention pour vérification d’identité ?",
@@ -2484,7 +2484,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Droit d’aviser",
     question:
         "La personne retenue peut demander d’aviser une personne de son choix :",
@@ -2494,7 +2494,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — OPJ",
     question: "Pendant la rétention, le procureur de la République peut :",
     options: [
@@ -2507,7 +2507,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Garde à vue",
     question:
         "Si une garde à vue est décidée après une vérification d’identité :",
@@ -2522,7 +2522,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — OPJ",
     question:
         "Que doit contenir la motivation de la demande d’empreintes/photographies ?",
@@ -2540,7 +2540,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ===================== NIVEAU DIFFICILE =====================
 
   // ==== Jurisprudence, cas pratiques ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Jurisprudence — Fouille",
     question:
         "Selon la jurisprudence (Cass. crim 23 mars 2016), une palpation de sécurité lors d’un contrôle d’identité :",
@@ -2556,7 +2556,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Étranger",
     question:
         "Un étranger peut être contrôlé sur sa situation administrative si :",
@@ -2572,7 +2572,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Document douteux",
     question: "Si un document d’identité présenté paraît falsifié :",
     options: [
@@ -2587,7 +2587,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Refus de décliner l'identité",
     question: "Une personne refuse de donner son identité lors du contrôle :",
     options: [
@@ -2601,7 +2601,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Témoins",
     question:
         "Une personne affirme que deux passants peuvent attester de son identité, mais ceux-ci sont déjà partis :",
@@ -2615,7 +2615,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Jeune mineur",
     question:
         "Lors d’une vérification d’identité d’un mineur supposé, l’agent doit :",
@@ -2629,7 +2629,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Contrôle professionnel",
     question: "Une visite dans des locaux professionnels peut être effectuée :",
     options: [
@@ -2643,7 +2643,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Refus empreintes",
     question:
         "Une personne retenue refuse de donner ses empreintes malgré l’autorisation du procureur :",
@@ -2660,7 +2660,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ===================== NOUVELLE FOURNÉE DE QUESTIONS SUPPLÉMENTAIRES =====================
 
   // ==== Cadre général & principes ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Libertés individuelles",
     question:
         "Qui est gardienne des libertés individuelles dans le cadre des contrôles d’identité ?",
@@ -2675,7 +2675,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature des opérations",
     question:
         "Les contrôles, relevés et vérifications d’identité sont principalement :",
@@ -2690,7 +2690,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Distinction phases",
     question:
         "Quelle affirmation est exacte concernant les différentes phases d’identification ?",
@@ -2706,7 +2706,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôle d’identité — Fondements supplémentaires ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 3 (contrôle judiciaire)",
     question:
         "Quel exemple illustre une personne pouvant être contrôlée car elle viole les obligations d’un contrôle judiciaire ?",
@@ -2722,7 +2722,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Cas 4 (renseignements)",
     question:
         "Un contrôle peut viser une personne simplement témoin de faits si :",
@@ -2738,7 +2738,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police judiciaire — Initiatives OPJ",
     question:
         "Qui peut prendre l’initiative d’un contrôle d’identité dans un cadre purement judiciaire, sans réquisition du parquet ?",
@@ -2750,7 +2750,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôles préventifs — Conditions plus fines ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Menace à l’ordre public",
     question: "Pour mettre en place un contrôle préventif, il faut :",
     options: [
@@ -2765,7 +2765,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Justification a posteriori",
     question:
         "En cas de contestation, que devront démontrer les policiers à propos du contrôle préventif ?",
@@ -2781,7 +2781,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Préventif — Lieu privé",
     question:
         "Un contrôle préventif au domicile d’une personne peut-il être effectué ?",
@@ -2798,7 +2798,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôles en zone frontière — Variantes ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Section autoroutière",
     question:
         "Un contrôle en zone frontière sur autoroute peut se poursuivre au-delà des 20 km si :",
@@ -2813,7 +2813,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Points de passage frontaliers",
     question:
         "Dans un rayon de 10 km autour d’un aéroport désigné comme point de passage frontalier, on peut :",
@@ -2829,7 +2829,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Frontière — Territoires ultras-marins",
     question:
         "Quelle particularité concerne la Guyane en matière de contrôles d’identité en zone frontière ?",
@@ -2846,7 +2846,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Contrôle de réglementation vs contrôle d’identité ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réglementation — Différence",
     question:
         "Un contrôle du permis de conduire d’un automobiliste en circulation est :",
@@ -2861,7 +2861,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réglementation — Caractère autonome",
     question:
         "Un contrôle de réglementation (ex : permis de chasse) peut-il être effectué sans contrôle d’identité préalable ?",
@@ -2878,7 +2878,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Étrangers & CESEDA — Approfondissement ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Durée contrôle situation",
     question:
         "Le contrôle de situation administrative prévu à l’article L. 812-2 CESEDA ne peut excéder :",
@@ -2889,7 +2889,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Contrôle systématique",
     question:
         "Le contrôle de situation administrative des étrangers peut-il être systématique dans une zone donnée ?",
@@ -2904,7 +2904,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers — Critères objectifs",
     question:
         "Parmi les éléments suivants, lequel peut constituer un critère objectif d’extranéité ?",
@@ -2920,7 +2920,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Moyens de preuve de l’identité — Approfondissement ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Document privé",
     question:
         "Une carte de membre d’un club sportif avec photo peut-elle être prise en compte ?",
@@ -2935,7 +2935,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Absence totale de document",
     question:
         "Si la personne ne présente aucun document et aucun témoin n’est disponible :",
@@ -2951,7 +2951,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Relevé d’identité — Approfondissement ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Contraventions visées",
     question: "Le relevé d’identité par les APJA selon 78-6 peut viser :",
     options: [
@@ -2966,7 +2966,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Recueil simple",
     question:
         "Quelle différence entre recueil d’identité et relevé d’identité ?",
@@ -2981,7 +2981,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Relevé d'identité — Durée maintien sur place",
     question:
         "La rétention sur la voie publique par un APJA dans l’attente des instructions de l’OPJ doit durer :",
@@ -2996,7 +2996,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Vérification d’identité — Détails procéduraux ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Lieu d’exécution",
     question: "La rétention pour vérification d’identité peut avoir lieu :",
     options: [
@@ -3010,7 +3010,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Information des droits",
     question:
         "À quel moment la personne doit-elle être informée de son droit de faire aviser le procureur de la République ?",
@@ -3024,7 +3024,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — PV",
     question:
         "Si la vérification d’identité n’est suivie d’aucune enquête, une copie du procès-verbal :",
@@ -3039,7 +3039,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification — Heures à mentionner",
     question: "Le procès-verbal de vérification d’identité doit mentionner :",
     options: [
@@ -3055,7 +3055,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Visites de véhicules / bagages (identité et sécurité) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicules — Présence OPJ",
     question:
         "Lors d’une visite de véhicule sur réquisitions du procureur (78-2-2), la visite doit être faite :",
@@ -3069,7 +3069,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Bagages — Inspection visuelle",
     question:
         "Lors d’une inspection visuelle des bagages sur réquisitions, le propriétaire :",
@@ -3085,7 +3085,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicules — Prévention atteinte grave",
     question:
         "Pour prévenir une atteinte grave à la sécurité (78-2-4), la visite de véhicule peut être réalisée :",
@@ -3102,7 +3102,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Manifestations & armes (78-2-5) ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestation — Contrôles possibles",
     question:
         "Sur les lieux d’une manifestation sur la voie publique, que permet l’article 78-2-5 ?",
@@ -3118,7 +3118,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestation — Limites",
     question: "Dans le cadre de l’article 78-2-5, les contrôles d’identité :",
     options: [
@@ -3132,7 +3132,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ==== Nullités & contrôles du procureur ====
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullité — Mentions manquantes",
     question:
         "L’absence de mention de la durée de rétention dans le PV de vérification d’identité peut entraîner :",
@@ -3146,7 +3146,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle parquet — Pendant la rétention",
     question:
         "Pendant la vérification d’identité, le procureur de la République peut :",
@@ -3160,7 +3160,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     explanation: "Le parquet exerce un contrôle concret sur la mesure.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Champ d’application",
     question:
         "Quel est l’objectif principal du dispositif procédural spécifique à la criminalité et délinquance organisées ?",
@@ -3176,7 +3176,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Généralités",
     question:
         "Quel est l’objectif principal du régime procédural spécial de la criminalité organisée ?",
@@ -3191,7 +3191,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Généralités",
     question:
         "Sous quel titre du code de procédure pénale se trouve la procédure applicable à la criminalité et délinquance organisées ?",
@@ -3202,7 +3202,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Champ",
     question:
         "Les infractions relevant de la criminalité organisée sont principalement définies dans :",
@@ -3217,7 +3217,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Infractions visées",
     question:
         "Parmi les infractions suivantes, laquelle relève de l’article 706-73 CPP ?",
@@ -3232,7 +3232,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Infractions visées",
     question:
         "Les crimes et délits constituant des actes de terrorisme sont visés par :",
@@ -3247,7 +3247,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Exemples",
     question:
         "Le meurtre commis en bande organisée entre dans le champ de la criminalité organisée au titre :",
@@ -3262,7 +3262,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73-1 — Infractions visées",
     question: "L’escroquerie commise en bande organisée relève de :",
     options: [
@@ -3276,7 +3276,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-74 — Rappel",
     question:
         "Les infractions de l’article 706-74 CPP bénéficient des règles de criminalité organisée :",
@@ -3291,7 +3291,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Bande organisée",
     question: "La bande organisée est une circonstance :",
     options: ["Atténuante", "Aggravante", "Neutre sur la peine"],
@@ -3301,7 +3301,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Intérêt",
     question:
         "Un intérêt majeur de la procédure spéciale de criminalité organisée est :",
@@ -3317,7 +3317,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== GÉOLOCALISATION & SURVEILLANCE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Durée",
     question:
         "En matière de criminalité organisée, la géolocalisation peut durer au maximum :",
@@ -3328,7 +3328,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Autorité",
     question:
         "Qui délivre l’autorisation initiale de géolocalisation en enquête de flagrance pour une infraction 706-73 ?",
@@ -3343,7 +3343,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Champ",
     question: "La surveillance (art. 706-80 CPP) peut porter sur :",
     options: [
@@ -3357,7 +3357,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Territoire",
     question:
         "La surveillance mise en place au titre de l’article 706-80 CPP peut être étendue :",
@@ -3373,7 +3373,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== INFILTRATION =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Principe",
     question: "L’infiltration consiste pour l’enquêteur à :",
     options: [
@@ -3387,7 +3387,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Autorisation",
     question:
         "Qui autorise une opération d’infiltration en enquête de flagrance ou préliminaire ?",
@@ -3402,7 +3402,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Durée",
     question:
         "La durée initiale maximale d’une autorisation d’infiltration est de :",
@@ -3413,7 +3413,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Interdiction",
     question: "Quelle limite importante s’applique à l’agent infiltré ?",
     options: [
@@ -3427,7 +3427,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Protection",
     question: "La révélation de l’identité réelle d’un agent infiltré est :",
     options: [
@@ -3442,7 +3442,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== GARDE À VUE — DURÉES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Droit commun",
     question:
         "La durée maximale d’une garde à vue de droit commun (hors criminalité organisée) est en principe de :",
@@ -3453,7 +3453,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Criminalité organisée",
     question:
         "Pour une infraction relevant de l’article 706-73 CPP (hors terrorisme et mules), la garde à vue peut aller jusqu’à :",
@@ -3464,7 +3464,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Procédure",
     question: "La garde à vue en matière de terrorisme peut aller jusqu’à :",
     options: ["48h", "96h", "144h"],
@@ -3474,7 +3474,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mules",
     question:
         "Pour un passeur de stupéfiants in corpore (mule), la garde à vue peut atteindre :",
@@ -3485,7 +3485,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "En matière de criminalité organisée, l’intervention de l’avocat peut être différée pour :",
@@ -3501,7 +3501,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Médecin",
     question:
         "Lors d’une prolongation supplémentaire de GAV en criminalité organisée, l’examen médical :",
@@ -3516,7 +3516,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Garde à vue",
     question:
         "Le régime de GAV des majeurs en criminalité organisée (706-88) s’applique aux mineurs :",
@@ -3532,7 +3532,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== PERQUISITIONS =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit",
     question:
         "En criminalité organisée, les perquisitions de nuit au domicile :",
@@ -3547,7 +3547,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Stupéfiants",
     question: "L’article 706-28 CPP permet des perquisitions de nuit :",
     options: [
@@ -3561,7 +3561,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Proxénétisme",
     question: "L’article 706-35 CPP autorise des perquisitions de nuit :",
     options: [
@@ -3576,7 +3576,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisition — Absence de la personne",
     question:
         "En criminalité organisée, la perquisition au domicile d’une personne gardée à vue en son absence :",
@@ -3592,7 +3592,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== INTERCEPTIONS & TECHNIQUES SPÉCIALES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — 706-95",
     question:
         "L’article 706-95 CPP permet, en enquête de flagrance ou préliminaire :",
@@ -3607,7 +3607,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Durée",
     question:
         "La durée d’une interception de correspondances autorisée en vertu de l’article 706-95 est :",
@@ -3622,7 +3622,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "IMSI-catcher — Objet",
     question: "Un IMSI-catcher permet notamment :",
     options: [
@@ -3637,7 +3637,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sonorisation — Objet",
     question:
         "La sonorisation au sens des articles 706-96 et suivants permet :",
@@ -3652,7 +3652,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Captation de données — 706-102-1",
     question: "La captation de données informatiques permet :",
     options: [
@@ -3667,7 +3667,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Objet",
     question: "Le « dossier coffre » (art. 706-104 CPP) sert à :",
     options: [
@@ -3682,7 +3682,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== ENQUÊTE PRÉLIMINAIRE & DURÉES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Durée",
     question:
         "En matière de criminalité organisée, la durée maximale d’une enquête préliminaire est de :",
@@ -3697,7 +3697,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Sanction",
     question:
         "Que deviennent les actes concernant une personne, réalisés après l’expiration du délai butoir de l’enquête préliminaire en criminalité organisée ?",
@@ -3713,7 +3713,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== MESURES CONSERVATOIRES & FINANCEMENT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — 706-103",
     question:
         "L’article 706-103 CPP permet au JLD d’ordonner des mesures conservatoires pour :",
@@ -3728,7 +3728,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — Champ",
     question:
         "Les mesures conservatoires de l’article 706-103 peuvent porter sur :",
@@ -3745,7 +3745,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
   // ================ QUESTIONS PLUS TECHNIQUES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Blanchiment",
     question: "Le blanchiment visé au 14° de l’article 706-73 CPP concerne :",
     options: [
@@ -3759,7 +3759,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73-1 — Blanchiment",
     question: "Le 3° bis de l’article 706-73-1 CPP vise :",
     options: [
@@ -3774,7 +3774,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association de malfaiteurs — 706-73",
     question:
         "L’association de malfaiteurs relève de 706-73 CPP lorsqu’elle a pour objet :",
@@ -3789,7 +3789,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources",
     question:
         "Le délit de non-justification de ressources (art. 321-6-1 CP) relève de la criminalité organisée lorsqu’il est :",
@@ -3805,7 +3805,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel — Gravité",
     question:
         "Concernant le vol en bande organisée, le Conseil constitutionnel a précisé que les mesures dérogatoires ne s’appliquent que si :",
@@ -3821,7 +3821,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Aide au séjour irrégulier — Limites",
     question:
         "Le Conseil constitutionnel a indiqué que le délit d’aide au séjour irrégulier en bande organisée :",
@@ -3837,7 +3837,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Rapport",
     question: "Qui rédige le rapport retraçant l’opération d’infiltration ?",
     options: [
@@ -3851,7 +3851,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Poursuite de la couverture",
     question:
         "Après la fin officielle de l’infiltration, l’agent peut poursuivre ses activités :",
@@ -3867,7 +3867,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Terrorisme",
     question:
         "En matière terroriste, la prolongation de GAV au-delà de 96 heures :",
@@ -3883,7 +3883,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Avocat — Report d’intervention",
     question:
         "Le report de l’intervention de l’avocat en GAV 706-88 au-delà de la 24e heure :",
@@ -3898,7 +3898,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit à l’examen médical — Longue GAV",
     question:
         "En GAV longue (criminalité organisée), un nouvel examen médical :",
@@ -3913,7 +3913,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Enquête préliminaire",
     question:
         "En enquête préliminaire, les perquisitions de nuit hors locaux d’habitation pour des infractions 706-73 ou 706-73-1 :",
@@ -3928,7 +3928,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Sans assentiment",
     question:
         "En enquête préliminaire, les perquisitions sans l’assentiment de la personne chez qui elles ont lieu :",
@@ -3944,7 +3944,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "Les interceptions visant une ligne d’avocat, magistrat ou parlementaire :",
@@ -3960,7 +3960,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Durée",
     question:
         "La durée initiale des techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) en enquête est :",
@@ -3975,7 +3975,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Techniques spéciales",
     question:
         "En information judiciaire, la durée des techniques spéciales d’enquête peut aller jusqu’à :",
@@ -3990,7 +3990,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Contestation",
     question:
         "Le versement d’informations dans le « dossier coffre » peut être contesté :",
@@ -4007,7 +4007,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ================ CAS PRATIQUES & QUESTIONS PIÈGES ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Surveillance",
     question:
         "Des OPJ suivent discrètement un véhicule transportant des biens issus d’un trafic de stupéfiants entre plusieurs régions françaises. Quel dispositif juridique permet d’étendre cette surveillance sur tout le territoire ?",
@@ -4022,7 +4022,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Infiltration",
     question:
         "Un agent infiltré, autorisé pour une enquête sur un réseau de traite des êtres humains (706-73), propose lui-même l’idée d’augmenter la violence des faits pour faire réagir le groupe. Quelle conséquence procédurale principale risque-t-on ?",
@@ -4038,7 +4038,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Perquisition de nuit",
     question:
         "Un JLD autorise une perquisition de nuit dans un domicile pour une enquête préliminaire en escroquerie en bande organisée (706-73-1). L’ordonnance ne précise pas l’adresse exacte. Quel risque ?",
@@ -4054,7 +4054,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Interceptions",
     question:
         "Dans une enquête 706-73, les enquêteurs interceptent la ligne d’un avocat sans avis au bâtonnier. Les interceptions révèlent néanmoins des informations accablantes. Que risque-t-on ?",
@@ -4069,7 +4069,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — IMSI-catcher",
     question:
         "Un IMSI-catcher est installé dans le cabinet d’un journaliste pour une affaire de trafic de stupéfiants (706-73). L’autorisation vise la captation des données techniques de connexion. Que dire ?",
@@ -4084,7 +4084,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Captation de données",
     question:
         "Pour capter les données d’un ordinateur utilisé par un magistrat, dans une enquête 706-73, les enquêteurs sollicitent une autorisation 706-102-1. Quelle est la réponse correcte ?",
@@ -4099,7 +4099,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Durée enquête préliminaire",
     question:
         "Une enquête préliminaire pour association de malfaiteurs liée à un trafic de stupéfiants dure 3 ans et 6 mois sans renouvellement formel par le procureur. Un acte est réalisé à 3 ans et 4 mois au préjudice de M. X. Quelle conséquence ?",
@@ -4114,7 +4114,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Dossier coffre",
     question:
         "Des informations relatives à l’identité d’un technicien ayant posé une sonorisation sont conservées dans un dossier distinct non accessible aux parties. Sur quel fondement ?",
@@ -4129,7 +4129,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mineur et GAV",
     question:
         "Un mineur de 15 ans est mis en cause pour trafic de stupéfiants (706-73). Peut-on appliquer le régime de GAV 706-88 ?",
@@ -4144,7 +4144,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mesures conservatoires",
     question:
         "Dans une information pour trafic de stupéfiants, le parquet souhaite garantir le paiement des amendes et l’indemnisation des victimes. Quelle procédure utiliser ?",
@@ -4159,7 +4159,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Infiltration et témoignage",
     question:
         "En jugement, le prévenu demande la confrontation directe avec l’agent infiltré dont les déclarations sont à l’origine de sa mise en examen. Que se passe-t-il ?",
@@ -4175,7 +4175,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Champ d’application",
     question:
         "Quels articles du CPP définissent principalement le champ d’application de la procédure applicable à la criminalité organisée ?",
@@ -4190,7 +4190,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature des infractions",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une caractéristique typique de la criminalité organisée selon le CPP ?",
@@ -4206,7 +4206,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73 — Infractions visées",
     question:
         "Quel type d’infraction fait partie de la liste de l’article 706-73 du CPP ?",
@@ -4221,7 +4221,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73 — Infractions visées",
     question:
         "Quelle affirmation est exacte à propos du crime de meurtre commis en bande organisée ?",
@@ -4236,7 +4236,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73 — Terrorisme",
     question:
         "Les crimes et délits constituant des actes de terrorisme relèvent-ils de la criminalité organisée au sens de l’article 706-73 ?",
@@ -4251,7 +4251,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73-1 — Infractions économiques",
     question:
         "Quel délit figure parmi ceux visés par l’article 706-73-1 du CPP ?",
@@ -4266,7 +4266,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-74 — Champ résiduel",
     question:
         "Que vise principalement l’article 706-74 du CPP en matière de criminalité organisée ?",
@@ -4285,7 +4285,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //                 NIVEAU FACILE — GARDE À VUE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Durée",
     question:
         "En matière de criminalité organisée relevant de l’article 706-73 (hors exceptions), quelle peut être la durée maximale d’une garde à vue d’un majeur ?",
@@ -4296,7 +4296,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Terrorisme",
     question:
         "En matière de terrorisme (706-73, 11°), quelle peut être la durée maximale exceptionnelle d’une garde à vue ?",
@@ -4307,7 +4307,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mules",
     question:
         "Pour une « mule » (transport de stupéfiants in corpore), la garde à vue peut, à titre exceptionnel, atteindre :",
@@ -4318,7 +4318,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "Dans la procédure de criminalité organisée (706-73), l’intervention de l’avocat peut être :",
@@ -4334,7 +4334,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mineurs",
     question:
         "Pour un mineur de moins de 16 ans, la garde à vue en matière de criminalité organisée peut-elle dépasser 48 heures ?",
@@ -4349,7 +4349,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Examen médical",
     question:
         "En criminalité organisée, lors de la première prolongation supplémentaire (au-delà de 48 h), que prévoit la loi concernant l’examen médical ?",
@@ -4367,7 +4367,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //             NIVEAU INTERMÉDIAIRE — SURVEILLANCE / INFILTRATION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Champ d’application",
     question:
         "Selon l’article 706-80 du CPP, dans quel cadre les opérations de surveillance étendue à tout le territoire peuvent-elles être mises en œuvre ?",
@@ -4383,7 +4383,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Non-intervention",
     question:
         "Dans le cadre des opérations de surveillance (706-80-1 CPP), que peuvent demander les enquêteurs à d’autres services ?",
@@ -4399,7 +4399,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Principe",
     question:
         "Quel est l’objectif principal d’une opération d’infiltration (art. 706-81 CPP) ?",
@@ -4415,7 +4415,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Autorisation",
     question:
         "Qui autorise l’opération d’infiltration dans le cadre d’une enquête (hors instruction) ?",
@@ -4430,7 +4430,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Durée",
     question:
         "Quelle est la durée maximale initiale d’une opération d’infiltration autorisée par le magistrat ?",
@@ -4445,7 +4445,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Interdictions",
     question:
         "Quelle limite majeure est posée à l’opération d’infiltration à peine de nullité ?",
@@ -4461,7 +4461,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Protection de l’agent",
     question:
         "Quelle affirmation est exacte concernant la protection de l’agent infiltré ?",
@@ -4480,7 +4480,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //     NIVEAU INTERMÉDIAIRE — PERQUISITIONS / INTERCEPTIONS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit et criminalité organisée",
     question:
         "En enquête de flagrance sur une infraction relevant de 706-73 ou 706-73-1, qui peut autoriser une perquisition de nuit au domicile ?",
@@ -4496,7 +4496,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Trafic de stupéfiants",
     question:
         "En matière de trafic de stupéfiants (706-28 CPP), les perquisitions de nuit sont possibles :",
@@ -4512,7 +4512,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Proxénétisme",
     question:
         "En matière de proxénétisme (706-35 CPP), les perquisitions de nuit peuvent être réalisées :",
@@ -4528,7 +4528,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Absence de la personne",
     question:
         "En matière de criminalité organisée, la perquisition au domicile d’une personne gardée à vue ou détenue, en son absence, est possible :",
@@ -4544,7 +4544,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Communications",
     question:
         "En enquête préliminaire ou de flagrance, qui autorise les interceptions de correspondances émises par la voie des communications électroniques pour les infractions de 706-73 et 706-73-1 ?",
@@ -4560,7 +4560,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Durée",
     question:
         "Quelle est la durée initiale maximale d’une interception de correspondances autorisée par le JLD au titre de l’article 706-95 ?",
@@ -4575,7 +4575,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "Les interceptions visant les lignes d’un avocat, d’un parlementaire ou d’un magistrat sont :",
@@ -4594,7 +4594,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //   NIVEAU INTERMÉDIAIRE — TECHNIQUES SPÉCIALES (IMSI, SONO, DATA)
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Champ d’application",
     question:
         "Les techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) prévues aux articles 706-95-11 à 706-102-5 peuvent être utilisées :",
@@ -4610,7 +4610,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Autorisation",
     question:
         "En enquête, qui autorise le recours aux techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) ?",
@@ -4626,7 +4626,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Durée",
     question:
         "Pour ces techniques spéciales (enquête), quelle est la durée maximale initiale d’autorisation par le JLD ?",
@@ -4641,7 +4641,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Vie privée",
     question:
         "Que doit-il être fait des séquences ou données sans lien avec les infractions et portant sur la vie privée ?",
@@ -4660,7 +4660,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //           NIVEAU INTERMÉDIAIRE — ENQUÊTE PRÉLIMINAIRE / INSTRUCTION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Durée",
     question:
         "En matière de criminalité organisée, quelle est la durée maximale d’une enquête préliminaire avant renouvellement ?",
@@ -4671,7 +4671,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Perquisitions de nuit",
     question:
         "En enquête préliminaire, les perquisitions de nuit dans des locaux non d’habitation pour des infractions de 706-73 ou 706-73-1 sont possibles :",
@@ -4687,7 +4687,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Perquisitions de nuit au domicile",
     question:
         "En information judiciaire, qui autorise les perquisitions de nuit au domicile en matière de criminalité organisée ?",
@@ -4702,7 +4702,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Techniques spéciales",
     question:
         "En information judiciaire, qui autorise l’emploi des techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) ?",
@@ -4717,7 +4717,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Durée techniques spéciales",
     question:
         "En information judiciaire, la durée maximale d’autorisation d’une technique spéciale d’enquête (renouvellements compris) ne peut dépasser :",
@@ -4731,7 +4731,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //           NIVEAU INTERMÉDIAIRE — DOSSIER COFFRE / MESURES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Objet",
     question:
         "À quoi sert le « dossier coffre » prévu aux articles 706-104 et 706-104-1 CPP ?",
@@ -4747,7 +4747,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Conditions",
     question: "Le recours au dossier coffre n’est possible que :",
     options: [
@@ -4762,7 +4762,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — Objet",
     question:
         "Quel est l’objectif des mesures conservatoires prévues à l’article 706-103 du CPP en matière de criminalité organisée ?",
@@ -4778,7 +4778,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — Compétence",
     question:
         "Qui peut ordonner les mesures conservatoires prévues à l’article 706-103 du CPP ?",
@@ -4797,7 +4797,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // ==========================================================
   //              NIVEAU DIFFICILE — CAS FIN / FINESSE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitutionnel — Vol en bande organisée",
     question:
         "Selon la décision du Conseil constitutionnel du 2 mars 2004, les mesures dérogatoires en matière de procédure pénale pour le vol en bande organisée :",
@@ -4813,7 +4813,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitutionnel — Aide au séjour",
     question:
         "Le Conseil constitutionnel a précisé, à propos du délit d’aide au séjour irrégulier en bande organisée, que :",
@@ -4829,7 +4829,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Report avocat",
     question:
         "Le report de l’intervention de l’avocat au-delà de la 24e heure (criminalité organisée) est décidé :",
@@ -4845,7 +4845,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Nullité",
     question:
         "En matière de criminalité organisée, tout acte d’enquête concernant une personne après l’expiration des délais de 3 ans (ou 3 + 2 ans) est :",
@@ -4860,7 +4860,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Lieux protégés",
     question:
         "Les techniques spéciales comme la sonorisation ou la captation informatique ne peuvent jamais être mises en œuvre :",
@@ -4876,7 +4876,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "IMSI-catcher — Finalité",
     question: "L’IMSI-catcher permet notamment :",
     options: [
@@ -4891,7 +4891,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Captation de données — Lieux d’installation",
     question:
         "La captation de données informatiques (706-102-1 et s.) peut être mise en place dans un lieu d’habitation la nuit :",
@@ -4907,7 +4907,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Droit de prévenir",
     question:
         "En matière de terrorisme ou pour une « mule », si la demande de prévenir un proche n’a pas été satisfaite au début de la garde à vue, la personne peut la réitérer :",
@@ -4922,7 +4922,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Conditions GAV 706-88",
     question:
         "Pour appliquer à un mineur de plus de 16 ans le régime de garde à vue de l’article 706-88 (criminalité organisée), quelles conditions doivent être réunies ?",
@@ -4937,7 +4937,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "L’article L. 413-11 CJPM exige ces deux conditions cumulatives.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Disparitions inquiétantes",
     question:
         "Quel est l’objectif principal du cadre de l’article 74-1 du C.P.P. ?",
@@ -4952,7 +4952,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Disparitions inquiétantes",
     question:
         "Sur quel type de personnes l’article 74-1 du C.P.P. s’applique-t-il à l’origine ?",
@@ -4967,7 +4967,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparition flagrante",
     question:
         "Quelle condition de temporalité est exigée par l’article 74-1 pour la disparition ?",
@@ -4982,7 +4982,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Caractère inquiétant",
     question:
         "Quelles sont les deux conditions générales pour appliquer les articles 74-1 et 80-4 du C.P.P. ?",
@@ -4997,7 +4997,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions obligatoirement inquiétantes",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une disparition obligatoirement inquiétante ?",
@@ -5012,7 +5012,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions obligatoirement inquiétantes",
     question:
         "La disparition de quel type de personne est automatiquement considérée comme inquiétante au sens de l’article 74-1 ?",
@@ -5027,7 +5027,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions inquiétantes par circonstances",
     question:
         "La disparition d’un adulte non protégé peut être jugée inquiétante lorsqu’elle fait craindre :",
@@ -5043,7 +5043,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Qui doit obligatoirement être avisé lorsque les enquêteurs souhaitent utiliser le cadre de l’article 74-1 du C.P.P. ?",
@@ -5058,7 +5058,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Quel choix n’appartient PAS au procureur de la République lorsqu’il est avisé d’une disparition inquiétante ?",
@@ -5073,7 +5073,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — OPJ / APJ",
     question:
         "Sous l’empire de l’article 74-1, qui peut accomplir les actes des articles 56 à 62 du C.P.P. ?",
@@ -5088,7 +5088,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Garde à vue",
     question:
         "Une garde à vue peut-elle être décidée sur le seul fondement de l’article 74-1 C.P.P. ?",
@@ -5103,7 +5103,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions — Non-signalement",
     question:
         "Quelle est la peine encourue pour une personne qui, connaissant la disparition d’un mineur de moins de 15 ans, n’en informe pas les autorités pour retarder les recherches (art. 434-4-1 C.P.) ?",
@@ -5118,7 +5118,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Personne retrouvée",
     question:
         "Lorsque la personne disparue (mineur ou majeur protégé) est retrouvée et que les causes ne sont ni criminelles ni délictuelles, l’adresse peut être communiquée aux proches :",
@@ -5134,7 +5134,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Personne retrouvée",
     question:
         "Lorsque la personne disparue est majeure non protégée et retrouvée, à quelle condition son adresse peut-elle être communiquée ?",
@@ -5150,7 +5150,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature du cadre 74-1",
     question:
         "Pourquoi dit-on que le cadre de l’article 74-1 du C.P.P. est « spécifique » ?",
@@ -5166,7 +5166,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature transitoire",
     question:
         "En quoi le cadre de l’article 74-1 du C.P.P. est-il qualifié de « transitoire » ?",
@@ -5182,7 +5182,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Disparitions inquiétantes par circonstances",
     question:
         "La disparition d’un adulte non protégé traité pour une grave dépression, disparu subitement sans explication, doit être appréciée comme :",
@@ -5198,7 +5198,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Le procureur de la République, avisé d’une disparition inquiétante, ne peut PAS :",
@@ -5214,7 +5214,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Procureur de la République",
     question:
         "Dans quel cas le procureur peut-il déclencher le plan « Alerte enlèvement » ?",
@@ -5229,7 +5229,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Juge d’instruction",
     question:
         "Lorsque le procureur requiert l’ouverture d’une information sur le fondement de l’article 80-4 du C.P.P., le juge d’instruction est saisi pour :",
@@ -5244,7 +5244,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Juge d’instruction",
     question:
         "L’information ouverte sur le fondement des articles 74-1 et 80-4 du C.P.P. a pour particularité :",
@@ -5259,7 +5259,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Famille / partie civile",
     question:
         "Dans le cadre de l’article 80-4 du C.P.P., comment la famille de la personne disparue peut-elle intervenir dans la procédure ?",
@@ -5275,7 +5275,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — OPJ / APJ",
     question:
         "Que doit faire l’OPJ ou l’APJ lorsqu’une disparition lui est signalée et qu’il la juge inquiétante ?",
@@ -5291,7 +5291,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Pouvoirs de l’OPJ (art. 56 à 62)",
     question:
         "Dans le cadre de l’article 74-1, quels types d’actes l’OPJ peut-il accomplir sur instructions du procureur de la République ?",
@@ -5307,7 +5307,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Durée du cadre 74-1",
     question:
         "Combien de temps les investigations peuvent-elles être menées sous le régime de l’article 74-1 avant de basculer éventuellement vers un autre cadre ?",
@@ -5322,7 +5322,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Suite après 8 jours",
     question:
         "À l’issue des huit jours d’enquête sous article 74-1, si la disparition demeure inquiétante, le procureur peut :",
@@ -5338,7 +5338,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Information 80-4",
     question:
         "Dans le cadre d’une information « recherche des causes de la disparition », quelle est la durée maximale des interceptions téléphoniques possibles ?",
@@ -5353,7 +5353,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Personne non retrouvée",
     question:
         "Si la personne disparue n’est pas retrouvée, quelle option ne figure PAS parmi les suites possibles mentionnées par le texte ?",
@@ -5368,7 +5368,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Caractère criminel ou délictuel",
     question:
         "Lorsque l’enquête diligentée au titre de l’article 74-1 permet d’établir l’existence d’une infraction à l’origine de la disparition, le procureur peut :",
@@ -5384,7 +5384,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exemples pratiques — Cas de mineur fugueur",
     question:
         "Un mineur placé en foyer, connu pour des fugues répétées, ne rentre pas à l’heure et reste introuvable. Comment doit être qualifiée cette disparition ?",
@@ -5399,7 +5399,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exemples pratiques — Adulte en bonne santé",
     question:
         "Un adulte de 30 ans, sans antécédent médical ni difficulté particulière, quitte son domicile après une dispute et ne donne plus de nouvelles depuis 3 heures. Sans élément supplémentaire, comment apprécier cette situation ?",
@@ -5415,7 +5415,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exemples pratiques — Personne malade",
     question:
         "Une personne âgée souffrant de la maladie d’Alzheimer quitte son domicile sans prévenir et ne revient pas. Cette disparition doit être :",
@@ -5432,7 +5432,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Analyse juridique — Articulation 74-1 / préliminaire",
     question:
         "Dans quel cas le procureur peut-il décider de ne pas appliquer l’article 74-1, mais de recourir directement à l’enquête préliminaire ?",
@@ -5448,7 +5448,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Analyse juridique — Nature de l’information 80-4",
     question:
         "Pourquoi l’information ouverte sur le fondement de l’article 80-4 du C.P.P. est-elle qualifiée d’« exorbitante du droit commun » ?",
@@ -5464,7 +5464,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Analyse juridique — Garde à vue et découverte d’infraction",
     question:
         "Dans le cadre d’une information ouverte pour recherche des causes de la disparition, une garde à vue peut être décidée :",
@@ -5480,7 +5480,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Réquisitions et informatique",
     question:
         "Dans le cadre d’une information pour recherche des causes de la disparition, quelles opérations informatiques l’OPJ commis par le juge peut-il réaliser ?",
@@ -5496,7 +5496,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Réquisitions opérateurs",
     question:
         "Quel est l’objet principal des réquisitions aux opérateurs de télécommunications mentionnées dans le cadre des disparitions inquiétantes ?",
@@ -5512,7 +5512,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Juges compétents",
     question:
         "Dans le cadre de l’article 74-1 (sans information), qui autorise les interceptions de correspondances par la voie des télécommunications ?",
@@ -5528,7 +5528,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "Sous peine de nullité, quelles lignes téléphoniques ne peuvent être interceptées qu’après avis de leur autorité supérieure ?",
@@ -5543,7 +5543,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Communication du dossier",
     question:
         "Pourquoi le droit à la communication du dossier prévu à l’article 114 du C.P.P. est-il restreint lorsque la personne disparue (mineur ou majeur protégé) est retrouvée ?",
@@ -5559,7 +5559,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Article 74-1 vs recherche administrative",
     question:
         "En quoi le recours à l’article 74-1 du C.P.P. permet-il des investigations plus poussées que la simple procédure administrative de recherche de personnes ?",
@@ -5575,7 +5575,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Disparition volontaire révélée",
     question:
         "Une enquête 74-1 est ouverte pour un majeur protégé. Deux jours plus tard, il est retrouvé sain et sauf, ayant quitté volontairement son domicile pour rejoindre un proche. Quelle conséquence procédurale en découle ?",
@@ -5591,7 +5591,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Suspicion de crime",
     question:
         "Au cours d’une enquête 74-1, les indices convergent vers un possible homicide commis sur la personne disparue. Quelle est la réaction juridiquement adaptée du parquet ?",
@@ -5606,7 +5606,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "Dès qu’un crime est suspecté, le cadre spécifique 74-1 doit céder la place aux procédures de droit commun adaptées (flagrance, préliminaire, instruction).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Saisie comptes bancaires",
     question:
         "Dans le cadre de l’enquête préliminaire, la saisie des comptes bancaires sert principalement à :",
@@ -5621,7 +5621,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "La saisie des comptes bancaires permet de préserver des sommes d’argent, y compris numériques, pour éviter leur disparition avant la fin de la procédure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature",
     question: "L’enquête préliminaire est :",
     options: [
@@ -5635,7 +5635,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Procureur",
     question: "L’objectif principal de l’enquête préliminaire est :",
     options: [
@@ -5650,7 +5650,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Police judiciaire",
     question: "Qui diligente l’enquête préliminaire ?",
     options: ["La police judiciaire", "Le maire", "Le juge civil"],
@@ -5660,7 +5660,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Initiative — Déclenchement",
     question: "Une enquête préliminaire peut être ouverte :",
     options: [
@@ -5674,7 +5674,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Risques",
     question:
         "Pourquoi l’enquête préliminaire doit-elle être strictement encadrée ?",
@@ -5689,7 +5689,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Champ",
     question:
         "Quelles infractions peuvent faire l’objet d’une enquête préliminaire ?",
@@ -5704,7 +5704,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Flagrance",
     question:
         "Peut-on traiter une infraction flagrante en enquête préliminaire ?",
@@ -5719,7 +5719,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Limitations — Information judiciaire",
     question:
         "Quand la police judiciaire doit-elle cesser d’agir en enquête préliminaire ?",
@@ -5735,7 +5735,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Principe",
     question:
         "Selon le texte, qui peut être impliqué dans une enquête préliminaire ?",
@@ -5751,7 +5751,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Fondement",
     question:
         "Quels articles du Code de procédure pénale encadrent l’enquête préliminaire ?",
@@ -5762,7 +5762,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature — Caractère",
     question: "L’enquête préliminaire est décrite comme une enquête :",
     options: [
@@ -5775,7 +5775,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Renseignement",
     question: "L’enquête préliminaire permet d’obtenir :",
     options: [
@@ -5788,7 +5788,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Finalité — Procureur",
     question:
         "La décision que le procureur prend à l’issue de l’enquête préliminaire concerne :",
@@ -5803,7 +5803,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — PJ",
     question: "Qui met en œuvre l’enquête préliminaire ?",
     options: ["La police judiciaire", "Les pompiers", "Le préfet"],
@@ -5812,7 +5812,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Initiative — Parquet",
     question: "L’enquête préliminaire peut être diligentée :",
     options: [
@@ -5825,7 +5825,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Besoin d’encadrement",
     question:
         "Pourquoi l’enquête préliminaire nécessite-t-elle un encadrement strict ?",
@@ -5841,7 +5841,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Portée",
     question: "L’enquête préliminaire peut porter sur :",
     options: [
@@ -5854,7 +5854,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Alternative",
     question:
         "Pourquoi un délit flagrant peut-il être traité en enquête préliminaire ?",
@@ -5869,7 +5869,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information judiciaire — Connaissance",
     question:
         "Les actes d’enquête préliminaire deviennent irréguliers lorsque :",
@@ -5885,7 +5885,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Validité — Rétroactivité",
     question:
         "Le passage à l’information judiciaire invalide-t-il rétroactivement les actes d’enquête préliminaire ?",
@@ -5900,7 +5900,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Résidence",
     question:
         "Selon le texte, qui peut être concerné par une enquête préliminaire ?",
@@ -5915,7 +5915,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Diplomates",
     question:
         "Quelle caractéristique limite les mesures d’enquête envers les agents diplomatiques ?",
@@ -5930,7 +5930,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut — Président",
     question: "Le Président de la République est :",
     options: [
@@ -5944,7 +5944,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Règles spéciales",
     question: "Les agents consulaires bénéficient :",
     options: [
@@ -5958,7 +5958,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Suspension",
     question:
         "En enquête préliminaire, les poursuites contre un parlementaire peuvent être :",
@@ -5972,7 +5972,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Mesures coercitives",
     question:
         "Avant d’appliquer une garde à vue à un parlementaire, il faut obtenir :",
@@ -5986,7 +5986,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Domicile",
     question:
         "L’introduction dans un domicile en enquête préliminaire est en principe subordonnée à :",
@@ -6000,7 +6000,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Consentement",
     question:
         "L’assentiment pour une perquisition en enquête préliminaire doit être :",
@@ -6010,7 +6010,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — C.J.penal",
     question:
         "Le recours au J.L.D. pour une perquisition en enquête préliminaire intervient :",
@@ -6025,7 +6025,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information judiciaire — Effet",
     question:
         "Quel principe fait que la police judiciaire cesse d’agir librement en enquête préliminaire après l’ouverture d’une information judiciaire ?",
@@ -6040,7 +6040,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Diplomatie",
     question:
         "Les immunités des agents diplomatiques en enquête préliminaire ont pour origine :",
@@ -6055,7 +6055,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Fondement",
     question:
         "Le régime dérogatoire applicable aux parlementaires en enquête préliminaire vise à protéger :",
@@ -6069,7 +6069,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Gravité",
     question:
         "Pourquoi une perquisition sans assentiment peut-elle être autorisée en enquête préliminaire ?",
@@ -6084,7 +6084,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JLD — Rôle",
     question:
         "Le rôle du J.L.D. dans les perquisitions sans assentiment consiste à :",
@@ -6099,7 +6099,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Vie privée",
     question:
         "Quelle raison justifie la protection renforcée du domicile en enquête préliminaire ?",
@@ -6113,7 +6113,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisition — Formalisme",
     question:
         "Pourquoi l’assentiment écrit doit-il être annexé à la procédure ?",
@@ -6127,7 +6127,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions graves — 706-73",
     question:
         "Les perquisitions sans assentiment en enquête préliminaire peuvent viser les infractions listées dans :",
@@ -6141,7 +6141,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Garanties",
     question:
         "L'intervention du J.L.D. dans les perquisitions sans consentement représente :",
@@ -6156,7 +6156,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== BLOC 3 — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Qualification",
     question:
         "Comment l’enquête préliminaire est-elle classiquement caractérisée ?",
@@ -6171,7 +6171,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Fréquence",
     question: "Dans la pratique, l’enquête préliminaire est :",
     options: [
@@ -6185,7 +6185,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Rôle du procureur",
     question: "L’enquête préliminaire a pour but d’aider le procureur à :",
     options: [
@@ -6199,7 +6199,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Types d’enquêteurs",
     question:
         "Quels membres de la police judiciaire peuvent diligenter une enquête préliminaire ?",
@@ -6213,7 +6213,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Choix du cadre",
     question:
         "Le choix entre enquête de flagrance et enquête préliminaire pour un crime flagrant relève :",
@@ -6228,7 +6228,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Risque",
     question:
         "Que rappelle le texte à propos des libertés individuelles en enquête préliminaire ?",
@@ -6244,7 +6244,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Champ personnel",
     question:
         "Le principe posé en matière de personnes concernées par l’enquête préliminaire est :",
@@ -6259,7 +6259,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Exceptions",
     question:
         "Les exceptions au principe de compétence personnelle large sont principalement liées :",
@@ -6274,7 +6274,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Notion de lieu privé",
     question:
         "En enquête préliminaire, l’introduction dans un lieu privé, notamment un domicile, suppose :",
@@ -6289,7 +6289,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Objet",
     question:
         "Les perquisitions en enquête préliminaire visent notamment à découvrir :",
@@ -6305,7 +6305,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== BLOC 3 — NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Confiscation",
     question:
         "Les perquisitions peuvent viser des biens dont la confiscation est prévue par :",
@@ -6320,7 +6320,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Consentement",
     question:
         "En principe, pour perquisitionner un lieu privé en enquête préliminaire, il faut :",
@@ -6335,7 +6335,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Forme de l’assentiment",
     question:
         "Selon le texte, l’assentiment écrit exigé pour une perquisition en enquête préliminaire doit être :",
@@ -6350,7 +6350,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Pièce de procédure",
     question:
         "Que devient l’écrit matérialisant l’assentiment à la perquisition ?",
@@ -6365,7 +6365,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime dérogatoire — Crimes et délits graves",
     question:
         "Pour quels faits le J.L.D. peut-il autoriser une perquisition sans l’assentiment de l’occupant en enquête préliminaire ?",
@@ -6380,7 +6380,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime dérogatoire — Criminalité organisée",
     question:
         "Les perquisitions sans assentiment en enquête préliminaire peuvent aussi viser certaines infractions prévues par :",
@@ -6395,7 +6395,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Catégories protégées",
     question:
         "Parmi les catégories ci-dessous, laquelle fait l’objet de règles particulières en enquête préliminaire ?",
@@ -6410,7 +6410,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Mesures restrictives",
     question:
         "Les mesures privatives ou restrictives de liberté envisagées contre un parlementaire en enquête préliminaire :",
@@ -6425,7 +6425,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Mise en œuvre",
     question: "Le texte précise que l’enquête préliminaire est :",
     options: [
@@ -6438,7 +6438,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Encadrement procédural",
     question:
         "L’existence de risques pour les libertés individuelles en enquête préliminaire justifie :",
@@ -6454,7 +6454,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== BLOC 3 — NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Enquête préliminaire / Information judiciaire",
     question:
         "Pourquoi les actes accomplis en enquête préliminaire avant la connaissance de l’ouverture d’une information judiciaire demeurent-ils valables ?",
@@ -6470,7 +6470,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Caractère non rétroactif",
     question:
         "Quelle notion juridique illustre le fait que l’ouverture d’une information judiciaire n’annule pas les actes déjà accomplis en enquête préliminaire ?",
@@ -6485,7 +6485,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Portée pratique",
     question:
         "En pratique, que provoque l’immunité dont bénéficient les agents diplomatiques en enquête préliminaire ?",
@@ -6501,7 +6501,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Risque et contrôle",
     question:
         "Comment concilier l’absence de coercition « classique » de l’enquête préliminaire avec le risque pour les libertés individuelles ?",
@@ -6517,7 +6517,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Régime mixte",
     question:
         "Pourquoi le régime des perquisitions en enquête préliminaire est-il présenté comme particulièrement protecteur ?",
@@ -6533,7 +6533,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Conciliation des intérêts",
     question:
         "Que cherche à concilier le régime particulier applicable aux parlementaires en enquête préliminaire ?",
@@ -6549,7 +6549,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Atteinte aux droits fondamentaux",
     question:
         "Pourquoi la perquisition sans assentiment dans un domicile est-elle soumise à l’intervention du J.L.D. ?",
@@ -6565,7 +6565,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domaine — Actualisation des règles",
     question:
         "Quel enseignement tire-t-on de la mention « Version au 01/07/2025 — SDCP — Tous droits réservés UoPl » figurant en fin de texte ?",
@@ -6581,7 +6581,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Domaine matériel et personnel",
     question:
         "Que révèle la combinaison des sections « infractions », « personnes » et « lieux » du chapitre 1 sur le domaine d’application de l’enquête préliminaire ?",
@@ -6599,7 +6599,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== CONSTATATIONS, RÉQUISITIONS & PRÉLÈVEMENTS — BLOC 1 =====================
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Ouverture de l’enquête",
     question: "Quel acte ouvre concrètement l’enquête préliminaire ?",
     options: [
@@ -6613,7 +6613,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Origine",
     question: "Le procès-verbal de saisine peut être ouvert notamment :",
     options: [
@@ -6628,7 +6628,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Rôle de l’OPJ",
     question: "À compter du premier procès-verbal de saisine, l’O.P.J. :",
     options: [
@@ -6642,7 +6642,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport sur les lieux — Possibilité",
     question:
         "En enquête préliminaire, les enquêteurs peuvent-ils se transporter sur les lieux ?",
@@ -6657,7 +6657,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport sur les lieux — Lieux privés",
     question:
         "En enquête préliminaire, l’introduction dans des lieux privés lors du transport sur les lieux suppose :",
@@ -6673,7 +6673,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport sur les lieux — Autorisation",
     question:
         "Comment doit être consignée l’autorisation donnée pour entrer dans un lieu privé lors du transport sur les lieux ?",
@@ -6688,7 +6688,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport vs perquisition",
     question:
         "Quelle différence est rappelée entre l’autorisation d’entrer dans un lieu privé et l’assentiment en matière de perquisition ?",
@@ -6704,7 +6704,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Définition",
     question: "Les constatations désignent principalement :",
     options: [
@@ -6718,7 +6718,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Finalité",
     question: "La finalité des constatations en enquête préliminaire est :",
     options: [
@@ -6732,7 +6732,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Principe",
     question: "Les réquisitions permettent à l’O.P.J. ou au procureur :",
     options: [
@@ -6748,7 +6748,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Constatations & réquisitions",
     question:
         "Les constatations et réquisitions en enquête préliminaire sont notamment encadrées par :",
@@ -6764,7 +6764,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions judiciaires — Art. 77-1",
     question:
         "Selon l’article 77-1 C.P.P., pour procéder à des constatations ou examens techniques ou scientifiques, l’O.P.J. :",
@@ -6780,7 +6780,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personne qualifiée — Statut",
     question:
         "La personne qualifiée requise sur le fondement de l’article 77-1 C.P.P. :",
@@ -6795,7 +6795,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif des réquisitions — Petites infractions",
     question:
         "Quel objectif le législateur poursuit-il en encadrant les réquisitions d’examens ou d’expertises pour les petites infractions ?",
@@ -6811,7 +6811,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes qualifiées — Article 39-3",
     question: "En application de l’article 39-3 C.P.P., le procureur peut :",
     options: [
@@ -6826,7 +6826,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Exemples de personnes qualifiées",
     question:
         "Parmi les personnes suivantes, lesquelles peuvent être requises comme personnes qualifiées ?",
@@ -6842,7 +6842,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Jurisprudence — Limite des missions 77-1",
     question:
         "Selon la jurisprudence rappelée, une mission confiée à une « personne qualifiée » sur le fondement de l’article 77-1 C.P.P. :",
@@ -6857,7 +6857,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions d’ordre général — Art. 77-1-1",
     question:
         "Les réquisitions d’ordre général prévues par l’article 77-1-1 C.P.P. permettent :",
@@ -6873,7 +6873,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions d’ordre général — Secret pro",
     question:
         "Face à une réquisition d’ordre général, le secret professionnel :",
@@ -6888,7 +6888,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Refus de déférer",
     question:
         "Le refus injustifié de répondre à une réquisition régulièrement formulée est susceptible de constituer :",
@@ -6904,7 +6904,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE (suite) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Conditions",
     question:
         "Les réquisitions portant sur les données de connexion ne sont possibles que si l’enquête concerne :",
@@ -6920,7 +6920,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Nature",
     question: "Les données de connexion visées peuvent notamment comprendre :",
     options: [
@@ -6935,7 +6935,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Détenteurs",
     question: "Les données de connexion sont détenues principalement par :",
     options: [
@@ -6950,7 +6950,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Vie privée",
     question:
         "Pourquoi la Cour de cassation insiste-t-elle sur un contrôle renforcé du recours aux données de connexion ?",
@@ -6965,7 +6965,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Proportionnalité",
     question:
         "En cas de contestation d’une réquisition de données de connexion, le juge doit vérifier :",
@@ -6980,7 +6980,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions informatiques/téléphoniques — Contenu",
     question:
         "Les réquisitions informatiques ou téléphoniques peuvent porter sur :",
@@ -6995,7 +6995,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions informatiques — Limites",
     question:
         "Les limitations de l’article 60-1-2 C.P.P. en matière de réquisitions informatiques concernent notamment :",
@@ -7011,7 +7011,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Police technique et scientifique",
     question: "Les services de police technique et scientifique peuvent être :",
     options: [
@@ -7026,7 +7026,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autopsie — Conditions",
     question:
         "Selon l’article 230-28 C.P.P., une autopsie en enquête préliminaire peut être ordonnée lorsque :",
@@ -7041,7 +7041,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autopsie — Médecin légiste",
     question:
         "Qui peut pratiquer une autopsie judiciaire dans le cadre de l’enquête préliminaire ?",
@@ -7057,7 +7057,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Conditions d’infraction",
     question:
         "La géolocalisation en temps réel en enquête préliminaire ne peut être utilisée que pour :",
@@ -7072,7 +7072,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Autorité compétente",
     question:
         "En enquête préliminaire, la décision initiale de mise en œuvre de la géolocalisation appartient :",
@@ -7087,7 +7087,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Durées",
     question:
         "En matière de géolocalisation en enquête préliminaire, les durées de l’autorisation initiale par le procureur sont :",
@@ -7103,7 +7103,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Rôle du JLD",
     question:
         "En enquête préliminaire, le Juge des libertés et de la détention intervient en matière de géolocalisation pour :",
@@ -7119,7 +7119,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Intrusion dans domicile",
     question:
         "L’introduction dans un domicile pour installer ou retirer un dispositif de géolocalisation nécessite :",
@@ -7135,7 +7135,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Durée maximale",
     question:
         "Selon le tableau de synthèse, la durée maximale de géolocalisation sous contrôle du J.L.D. est :",
@@ -7151,7 +7151,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Activation à distance",
     question:
         "L’activation à distance d’un appareil électronique pour la géolocalisation est :",
@@ -7167,7 +7167,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements & signalétique — Base légale",
     question:
         "Les prélèvements externes et relevés signalétiques sont prévus en enquête préliminaire par :",
@@ -7181,7 +7181,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Finalité",
     question:
         "La finalité principale des prélèvements externes et relevés signalétiques est :",
@@ -7197,7 +7197,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Refus de se soumettre",
     question:
         "Le refus injustifié de se soumettre à certaines opérations de signalisation ou de prélèvement, lorsqu’elles constituent le seul moyen d’identification ou de vérification de l’implication, est :",
@@ -7213,7 +7213,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== FOUILLES EN ENQUÊTE PRÉLIMINAIRE — BLOC 1 =====================
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Définition",
     question:
         "Les fouilles, en enquête préliminaire, ont pour finalité principale :",
@@ -7229,7 +7229,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Catégories",
     question:
         "Quelles sont les deux grandes catégories de fouilles distinguées en enquête préliminaire ?",
@@ -7245,7 +7245,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Intrusion",
     question:
         "Par rapport aux palpations de sécurité, les fouilles se caractérisent par :",
@@ -7260,7 +7260,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Personne concernée",
     question:
         "Selon l’article 63-7 du C.P.P., la fouille intégrale ne peut être pratiquée que :",
@@ -7275,7 +7275,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Décision",
     question: "Qui décide de la mise en œuvre d’une fouille intégrale ?",
     options: [
@@ -7289,7 +7289,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Voies moins intrusives",
     question: "Avant de recourir à une fouille intégrale, il faut :",
     options: [
@@ -7304,7 +7304,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Assimilation",
     question: "En enquête préliminaire, la fouille intégrale est assimilée à :",
     options: [
@@ -7318,7 +7318,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Heures légales",
     question:
         "Les heures légales applicables aux perquisitions s’appliquent-elles à la fouille intégrale de la personne ?",
@@ -7333,7 +7333,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Sexe de l’agent",
     question: "La fouille intégrale doit être effectuée :",
     options: [
@@ -7347,7 +7347,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille véhicule — Domicile",
     question:
         "Un véhicule, en principe, constitue-t-il un domicile au sens du droit des perquisitions ?",
@@ -7364,7 +7364,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Encadrement",
     question:
         "Pourquoi les fouilles en enquête préliminaire sont-elles strictement encadrées ?",
@@ -7380,7 +7380,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Base légale",
     question:
         "Quel article de loi encadre directement la fouille intégrale de la personne gardée à vue ?",
@@ -7395,7 +7395,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Conditions cumulatives",
     question:
         "Parmi les conditions suivantes, lesquelles sont requises pour recourir à une fouille intégrale ?",
@@ -7410,7 +7410,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Assentiment",
     question:
         "En enquête préliminaire, puisque la fouille intégrale est assimilée à une perquisition, elle suppose :",
@@ -7426,7 +7426,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Lieu de réalisation",
     question:
         "Dans quelles conditions matérielles doit être réalisée une fouille intégrale ?",
@@ -7441,7 +7441,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dignité — Limitation de la mesure",
     question: "Le caractère intrusif de la fouille intégrale implique que :",
     options: [
@@ -7456,7 +7456,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Nature juridique",
     question:
         "Comment est qualifiée juridiquement la fouille de véhicule selon la jurisprudence rappelée ?",
@@ -7472,7 +7472,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Heures légales",
     question:
         "Les fouilles de véhicule sont-elles soumises au respect des heures légales applicables aux perquisitions domiciliaires ?",
@@ -7487,7 +7487,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Présence de la personne",
     question:
         "En enquête préliminaire, la fouille de véhicule doit être réalisée :",
@@ -7502,7 +7502,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Assentiment",
     question:
         "Quelle autorisation est requise pour fouiller un véhicule en enquête préliminaire ?",
@@ -7518,7 +7518,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Référence légale",
     question:
         "Selon la jurisprudence citée (Cass. crim., 16 janv. 2024, n° 22-87.593), sauf texte spécial, la fouille du véhicule ne peut être effectuée qu’avec l’assentiment recueilli selon :",
@@ -7534,7 +7534,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Qualification procédurale",
     question:
         "Pourquoi, en enquête préliminaire, la fouille intégrale d’une personne gardée à vue est-elle assimilée à une perquisition au sens du C.P.P. ?",
@@ -7550,7 +7550,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Articulation avec garde à vue",
     question:
         "Quelle articulation entre la garde à vue et la fouille intégrale ressort de l’article 63-7 C.P.P. et du texte étudié ?",
@@ -7566,7 +7566,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Heures légales vs perquisitions",
     question:
         "Que révèle la possibilité de pratiquer une fouille intégrale de jour comme de nuit sur la logique du régime des fouilles par rapport aux perquisitions domiciliaires ?",
@@ -7582,7 +7582,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Vie privée",
     question:
         "Pourquoi la jurisprudence assimile-t-elle la fouille d’un véhicule à une perquisition, alors même que le véhicule n’est pas un domicile au sens strict ?",
@@ -7598,7 +7598,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Assentiment et formalisme",
     question:
         "D’un point de vue pratique, quel formalisme l’assentiment à la fouille d’un véhicule doit-il respecter ?",
@@ -7614,7 +7614,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Proportionnalité",
     question:
         "Comment le principe de proportionnalité se manifeste-t-il dans le régime des fouilles en enquête préliminaire ?",
@@ -7630,7 +7630,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Distinction avec palpations",
     question:
         "Sur le plan théorique, quelle distinction majeure le texte opère entre la fouille et la simple palpation de sécurité ?",
@@ -7646,7 +7646,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Domaine personnel vs matériel",
     question:
         "En synthèse, que révèle la distinction entre fouille intégrale et fouille de véhicule sur les domaines d’atteinte en enquête préliminaire ?",
@@ -7662,7 +7662,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Logique d’ensemble",
     question:
         "En quoi le régime des fouilles (intégrale et véhicule) illustre-t-il la logique générale de l’enquête préliminaire ?",
@@ -7678,7 +7678,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Jurisprudence Cass. crim. 2024",
     question:
         "Selon l’arrêt Cass. crim., 16 janv. 2024, n° 22-87.593, à défaut de texte spécial autorisant la fouille de véhicule :",
@@ -7696,7 +7696,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== GARDE À VUE EN ENQUÊTE PRÉLIMINAIRE =====================
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Enquête préliminaire",
     question:
         "Quel article du Code de procédure pénale précise que les règles de la garde à vue s’appliquent à l’enquête préliminaire ?",
@@ -7711,7 +7711,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Articles applicables",
     question:
         "Les règles générales de la garde à vue applicables à l’enquête préliminaire sont prévues aux :",
@@ -7726,7 +7726,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Raison plausible",
     question: "Une personne peut être placée en garde à vue lorsqu’il existe :",
     options: [
@@ -7741,7 +7741,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectifs — Article 62-2",
     question: "Les objectifs légaux de la garde à vue sont définis par :",
     options: [
@@ -7755,7 +7755,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature — Caractère coercitif",
     question: "En enquête préliminaire, la garde à vue :",
     options: [
@@ -7769,7 +7769,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Nécessité",
     question: "La garde à vue ne peut être décidée que si :",
     options: [
@@ -7784,7 +7784,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hypothèses — Présentation volontaire",
     question:
         "Une première hypothèse de mise en garde à vue en enquête préliminaire est celle de :",
@@ -7800,7 +7800,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Départ du délai — Présentation volontaire",
     question:
         "En cas de placement en garde à vue après une présentation volontaire, le point de départ du délai de 24 heures est :",
@@ -7815,7 +7815,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Définition",
     question:
         "Le titre de contrainte qui permet de conduire une personne devant le service d’enquête est :",
@@ -7830,7 +7830,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Durée — Garde à vue initiale",
     question:
         "En enquête préliminaire, la durée initiale maximale de la garde à vue est de :",
@@ -7842,7 +7842,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Rappel synthétique",
     question:
         "Selon la section A, le placement en garde à vue en enquête préliminaire suppose :",
@@ -7858,7 +7858,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Proportionnalité — Garde à vue",
     question: "Le texte rappelle que la garde à vue doit toujours demeurer :",
     options: [
@@ -7872,7 +7872,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Apparition des soupçons",
     question:
         "Lorsqu’une personne est conduite par titre de contrainte sans raison plausible initiale de soupçon, à quel moment la garde à vue devient-elle possible ?",
@@ -7888,7 +7888,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Point de départ du délai",
     question:
         "En cas de placement en garde à vue après un titre de contrainte sans soupçons initiaux, le point de départ du délai est fixé :",
@@ -7903,7 +7903,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Personne déjà soupçonnée",
     question:
         "Lorsque des raisons plausibles de soupçonner existent déjà au moment du titre de contrainte, la personne est placée en garde à vue :",
@@ -7919,7 +7919,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Imputation du temps",
     question:
         "À l’issue d’une rétention pour vérification d’identité, si une garde à vue est décidée, la durée de la rétention :",
@@ -7934,7 +7934,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Vérification d’identité",
     question:
         "Quelle disposition prévoit l’imputation de la durée de la rétention pour vérification d’identité sur celle de la garde à vue ?",
@@ -7949,7 +7949,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices lors d’une perquisition — Garde à vue",
     question:
         "Lors d’une perquisition, si des raisons plausibles de soupçonner apparaissent à l’égard d’une personne présente sur les lieux :",
@@ -7965,7 +7965,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin retenu — Article 76 al. 3",
     question:
         "Pour un témoin retenu sur le fondement de l’article 76, alinéa 3 C.P.P., si une garde à vue devient nécessaire, le temps de rétention lors de la perquisition :",
@@ -7980,7 +7980,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Durée — Prolongation",
     question:
         "En enquête préliminaire, la garde à vue peut être prolongée une fois pour :",
@@ -7995,7 +7995,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prolongation — Moment",
     question: "La décision de prolongation de la garde à vue doit intervenir :",
     options: [
@@ -8009,7 +8009,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prolongation — Motivation",
     question: "La décision de prolongation de la garde à vue :",
     options: [
@@ -8023,7 +8023,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prolongation — Présentation au magistrat",
     question:
         "Avant de décider la prolongation, il appartient aux magistrats :",
@@ -8039,7 +8039,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extension de compétence — Prolongation",
     question:
         "En cas d’extension de compétence, qui peut ordonner la prolongation de la garde à vue ?",
@@ -8056,7 +8056,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extension de compétence — Rôle du procureur directeur d’enquête",
     question:
         "Avant de décider la prolongation en cas d’extension de compétence, l’O.P.J. doit :",
@@ -8072,7 +8072,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sort de la garde à vue — Fin de mesure",
     question:
         "À l’issue de la garde à vue en enquête préliminaire, lorsque des éléments suffisants existent à l’encontre de la personne :",
@@ -8088,7 +8088,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Information initiale",
     question:
         "Le droit d’être immédiatement informé de la nature de l’infraction reprochée et de ses droits en garde à vue est prévu par :",
@@ -8103,7 +8103,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Prévenir un proche et l’employeur",
     question:
         "Le droit pour la personne gardée à vue de faire prévenir un proche, son employeur ou les autorités consulaires est prévu par :",
@@ -8118,7 +8118,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Examen médical",
     question:
         "Le droit à un examen médical pour la personne gardée à vue est prévu par :",
@@ -8133,7 +8133,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Assistance d’un avocat",
     question:
         "Le droit à l’assistance d’un avocat pour la personne gardée à vue est prévu par :",
@@ -8148,7 +8148,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme — PV et enregistrement",
     question:
         "Le procès-verbal de garde à vue et l’enregistrement audiovisuel des auditions en matière criminelle sont prévus respectivement par :",
@@ -8163,7 +8163,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régimes dérogatoires — Criminalité organisée",
     question:
         "Les régimes dérogatoires de garde à vue en matière de criminalité organisée sont prévus par :",
@@ -8178,7 +8178,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Applicabilité",
     question:
         "Les dispositions spécifiques applicables aux mineurs en matière de garde à vue, de retenue et de défèrement :",
@@ -8194,7 +8194,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Nature de la garde à vue en préliminaire",
     question:
         "Sur le plan théorique, que montre l’application des articles 62-2 à 64-1 à l’enquête préliminaire via l’article 77 C.P.P. ?",
@@ -8210,7 +8210,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Proportionnalité — Analyse globale",
     question:
         "En synthèse, quelle exigence majeure ressort de l’ensemble des règles relatives à la garde à vue en enquête préliminaire ?",
@@ -8226,7 +8226,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Dignité & vulnérabilité",
     question:
         "Les prélèvements externes et relevés signalétiques doivent être réalisés :",
@@ -8242,7 +8242,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Domaine d’application",
     question:
         "En synthèse, le « domaine d’application » de l’enquête préliminaire renvoie principalement :",
@@ -8258,7 +8258,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Doctrine — Document officiel",
     question: "L’exemple documentaire en fin de texte souligne que :",
     options: [
@@ -8271,7 +8271,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Principe",
     question:
         "L’introduction dans un domicile en enquête préliminaire suppose :",
@@ -8286,7 +8286,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature de la saisie",
     question: "La saisie des comptes bancaires s’inscrit dans la logique de :",
     options: [
@@ -8300,7 +8300,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Infraction",
     question:
         "La saisie des sommes inscrites sur un compte bancaire peut intervenir notamment lorsque :",
@@ -8316,7 +8316,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compte visé — Types de comptes",
     question:
         "Quels types de comptes peuvent être visés par la saisie dans ce cadre ?",
@@ -8332,7 +8332,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorité compétente — Procureur",
     question:
         "Qui autorise la saisie des comptes bancaires dans le cadre de l’enquête préliminaire ?",
@@ -8347,7 +8347,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorité compétente — Délivrance",
     question:
         "Sous quelle forme le procureur de la République peut-il délivrer son autorisation de saisie ?",
@@ -8362,7 +8362,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Juge des libertés et de la détention",
     question:
         "Quel magistrat est chargé du contrôle juridictionnel de la saisie des comptes bancaires ?",
@@ -8377,7 +8377,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Délai",
     question:
         "Dans quel délai le Juge des libertés et de la détention doit-il se prononcer sur le maintien ou la mainlevée de la saisie ?",
@@ -8394,7 +8394,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre juridique — Références légales",
     question:
         "La définition des comptes pouvant être saisis (dont les comptes d’actifs numériques) renvoie à :",
@@ -8409,7 +8409,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre juridique — Procédure pénale",
     question:
         "La saisie des sommes inscrites sur un compte bancaire dans ce cadre est notamment prévue par :",
@@ -8424,7 +8424,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Peine de confiscation",
     question:
         "Parmi les conditions, la saisie des comptes bancaires est possible lorsque :",
@@ -8439,7 +8439,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature de la mesure — Conservatoire",
     question:
         "Quelle est la nature juridique principale de la saisie des comptes bancaires décrite dans le texte ?",
@@ -8454,7 +8454,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Préservation des fonds",
     question:
         "Quelle finalité principale poursuit le caractère conservatoire de la saisie ?",
@@ -8470,7 +8470,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Réactivité",
     question:
         "La possibilité pour le procureur de délivrer l’autorisation de saisie « par tout moyen » permet principalement :",
@@ -8486,7 +8486,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Ordonnance",
     question:
         "Sous quelle forme le Juge des libertés et de la détention se prononce-t-il sur la saisie ?",
@@ -8501,7 +8501,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Moment",
     question:
         "Le Juge des libertés et de la détention doit se prononcer sur la saisie des comptes bancaires :",
@@ -8516,7 +8516,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Défense et propriété",
     question:
         "Le contrôle du J.L.D. en matière de saisie des comptes bancaires vise notamment à garantir :",
@@ -8532,7 +8532,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Portée — Actifs numériques",
     question:
         "En matière de saisie des comptes bancaires dans l’enquête préliminaire, les « actifs numériques » visés par le texte :",
@@ -8548,7 +8548,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Enquête préliminaire / confiscation",
     question:
         "Pourquoi la saisie des comptes bancaires en enquête préliminaire s’inscrit-elle dans la logique de la confiscation ?",
@@ -8564,7 +8564,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des acteurs — Procureur / JLD",
     question:
         "Quelle affirmation décrit le mieux l’articulation entre le procureur de la République et le J.L.D. dans la saisie des comptes bancaires ?",
@@ -8580,7 +8580,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Efficacité — Investigations financières",
     question:
         "Le texte souligne que le contrôle par le J.L.D. doit concilier :",
@@ -8596,7 +8596,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Portée temporelle — Effets de la saisie",
     question:
         "En pratique, le caractère conservatoire de la saisie des comptes bancaires signifie que :",
@@ -8611,7 +8611,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "Le texte précise que la saisie est conservatoire : elle n’anticipe pas la décision de confiscation mais garantit la disponibilité future des fonds.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Flagrance",
     question: "L’enquête de flagrant délit se caractérise principalement par :",
     options: [
@@ -8625,7 +8625,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Procureur",
     question:
         "Qui peut accomplir personnellement les actes de police judiciaire en flagrance ?",
@@ -8636,7 +8636,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — OPJ",
     question:
         "Quels agents sont compétents pour conduire l’enquête de flagrant délit ?",
@@ -8651,7 +8651,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Durée",
     question: "La durée initiale maximale de l’enquête de flagrance est de :",
     options: ["24 heures", "8 jours", "15 jours"],
@@ -8661,7 +8661,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Durée",
     question: "L’enquête de flagrance peut être prolongée par :",
     options: [
@@ -8675,7 +8675,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Généralités",
     question: "Les O.P.J. et A.P.J. sont tenus de recevoir les plaintes :",
     options: [
@@ -8689,7 +8689,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Formalités",
     question: "Toute plainte donne obligatoirement lieu à :",
     options: [
@@ -8703,7 +8703,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Droits",
     question: "Parmi les droits suivants, lequel appartient à la victime ?",
     options: [
@@ -8717,7 +8717,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations",
     question: "Le transport sur les lieux en flagrance doit être effectué :",
     options: [
@@ -8731,7 +8731,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Horaires",
     question: "Les perquisitions en droit commun doivent commencer entre :",
     options: ["5h et 22h", "6h et 21h", "7h et 20h"],
@@ -8740,7 +8740,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Interpellation",
     question:
         "Selon l’article 73 C.P.P., qui peut appréhender l’auteur présumé d’un crime ou délit flagrant ?",
@@ -8755,7 +8755,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Domaine",
     question: "La garde à vue est possible pour :",
     options: [
@@ -8769,7 +8769,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Durée",
     question: "La durée initiale de la garde à vue est de :",
     options: ["12 heures", "24 heures", "48 heures"],
@@ -8778,7 +8778,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Nature",
     question: "La fouille intégrale judiciaire est assimilée à :",
     options: [
@@ -8792,7 +8792,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interprète",
     question: "Un interprète peut être requis lorsque :",
     options: [
@@ -8806,7 +8806,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Investigation — Prélèvements",
     question: "Les prélèvements externes (empreintes, ADN…) sont :",
     options: [
@@ -8820,7 +8820,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicules — Fouilles",
     question: "En flagrance, la fouille d’un véhicule peut être réalisée :",
     options: [
@@ -8834,7 +8834,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Lieux protégés",
     question: "La perquisition dans un cabinet d’avocat doit être faite par :",
     options: [
@@ -8848,7 +8848,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Silence",
     question: "Le droit de garder le silence :",
     options: [
@@ -8865,7 +8865,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // (Je continue immédiatement jusqu'à environ 70 questions dans cette partie)
   // Je poursuis maintenant avec les questions 21 à 70 :
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Victimes",
     question: "Une copie du PV de plainte peut être remise :",
     options: [
@@ -8879,7 +8879,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures de protection — Victimes",
     question:
         "Certaines victimes peuvent bénéficier d’une audition à huis clos afin :",
@@ -8894,7 +8894,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Saisie",
     question: "La saisie a pour objectif :",
     options: [
@@ -8907,7 +8907,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question: "Un témoin peut être entendu sous contrainte pendant :",
     options: ["1 heure", "4 heures", "8 heures"],
@@ -8916,7 +8916,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Statut",
     question:
         "Si un témoin devient suspect au cours de son audition, l’enquêteur doit :",
@@ -8930,7 +8930,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Investigation — Signalisation",
     question:
         "Le refus injustifié de se soumettre à certaines opérations de signalisation peut constituer :",
@@ -8944,7 +8944,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures — Rétention",
     question:
         "Lors d’une perquisition, une personne peut être retenue sur place :",
@@ -8959,7 +8959,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellation — Mandat de recherche",
     question: "Un mandat de recherche peut être décerné pour :",
     options: [
@@ -8972,7 +8972,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Médecin",
     question: "Toute personne gardée à vue peut demander :",
     options: [
@@ -8986,7 +8986,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Avocat",
     question:
         "La personne gardée à vue peut bénéficier d’un entretien confidentiel avec son avocat pendant :",
@@ -8997,7 +8997,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ---------- Nous sommes à ~35 questions. J’en envoie 35 autres dans cette partie. ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Information des droits",
     question: "Les droits en garde à vue doivent être notifiés :",
     options: [
@@ -9011,7 +9011,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Lieux protégés",
     question: "Les entreprises de presse bénéficient :",
     options: [
@@ -9025,7 +9025,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Contrôle",
     question: "La garde à vue est placée sous le contrôle :",
     options: [
@@ -9038,7 +9038,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données",
     question: "Les réquisitions de données de connexion sont possibles pour :",
     options: [
@@ -9052,7 +9052,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Fin",
     question: "À l’issue de la garde à vue, la personne peut être :",
     options: [
@@ -9065,7 +9065,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Saisine",
     question: "L’enquête de flagrance débute dès :",
     options: [
@@ -9079,7 +9079,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Sécurité",
     question: "La palpation de sécurité doit être réalisée :",
     options: [
@@ -9093,7 +9093,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Saisies informatiques",
     question: "Les données informatiques saisies doivent être :",
     options: [
@@ -9107,7 +9107,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellations — Mise à disposition",
     question:
         "Lors d'une interpellation en flagrance, les forces de l’ordre doivent :",
@@ -9121,7 +9121,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Notions",
     question: "La flagrance implique :",
     options: [
@@ -9134,7 +9134,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Protection",
     question: "L’évaluation personnalisée des besoins de protection concerne :",
     options: [
@@ -9147,7 +9147,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Médecins",
     question: "Un médecin réquisitionné doit :",
     options: [
@@ -9161,7 +9161,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Danger",
     question: "Le retrait d’objets dangereux (lacets, ceintures…) est :",
     options: [
@@ -9175,7 +9175,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Généralités",
     question: "L’urgence est une caractéristique essentielle de :",
     options: [
@@ -9190,7 +9190,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
 
   // ===================== PARTIE 2 / 3 =====================
   // (On continue la liste à la suite de la PARTIE 1)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Conditions",
     question:
         "Pour qu'il y ait flagrance, il faut notamment que l’infraction soit :",
@@ -9205,7 +9205,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Conditions",
     question: "La flagrance suppose un lien entre le suspect et :",
     options: [
@@ -9219,7 +9219,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Continuité",
     question:
         "Pour maintenir le cadre de la flagrance pendant les huit jours, il faut :",
@@ -9234,7 +9234,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Perte du cadre",
     question:
         "Si une longue interruption survient dans l’enquête de flagrance :",
@@ -9249,7 +9249,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Prolongation",
     question: "La prolongation de la flagrance nécessite :",
     options: [
@@ -9262,7 +9262,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Prolongation",
     question:
         "La seconde condition pour prolonger l’enquête de flagrance est :",
@@ -9277,7 +9277,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspects",
     question: "Un suspect ne peut être entendu librement que si :",
     options: [
@@ -9291,7 +9291,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspects",
     question: "Si une personne refuse de répondre en audition libre :",
     options: [
@@ -9304,7 +9304,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Tiers prévenu",
     question: "La demande de prévenir un proche doit être satisfaite :",
     options: ["Dans l’heure", "Dans les 3 heures", "À la fin de la GAV"],
@@ -9314,7 +9314,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Avocat",
     question: "L’avocat peut consulter certaines pièces de la procédure :",
     options: [
@@ -9328,7 +9328,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Proportionnalité",
     question: "Même si les conditions légales sont réunies, la GAV :",
     options: [
@@ -9341,7 +9341,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Médecin — GAV",
     question: "Le médecin peut prescrire :",
     options: [
@@ -9354,7 +9354,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Consentement",
     question: "Le consentement à la perquisition doit être :",
     options: [
@@ -9367,7 +9367,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Absence du mis en cause",
     question:
         "Une perquisition peut se faire en l’absence du mis en cause si :",
@@ -9382,7 +9382,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Cabinet médical",
     question: "Une perquisition dans un cabinet médical doit préserver :",
     options: ["Le matériel informatique", "Le secret médical", "Le mobilier"],
@@ -9392,7 +9392,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Véhicules",
     question: "La fouille d’un véhicule en flagrance nécessite :",
     options: [
@@ -9405,7 +9405,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Appellation",
     question: "On parle de flagrant délit lorsque l’infraction :",
     options: [
@@ -9418,7 +9418,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Enregistrement",
     question: "L’audition d’une victime peut être enregistrée :",
     options: [
@@ -9431,7 +9431,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Traduction",
     question: "Les droits doivent être traduits :",
     options: [
@@ -9444,7 +9444,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Comptes bancaires",
     question: "La saisie d’un compte bancaire peut être effectuée :",
     options: [
@@ -9457,7 +9457,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données téléphoniques",
     question: "Les données de géolocalisation en temps réel nécessitent :",
     options: [
@@ -9470,7 +9470,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit",
     question: "Une perquisition de nuit en criminalité organisée nécessite :",
     options: [
@@ -9483,7 +9483,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoins — Identité",
     question: "Un témoin doit fournir :",
     options: [
@@ -9496,7 +9496,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ — Responsabilités",
     question: "L’O.P.J. doit informer le procureur :",
     options: [
@@ -9509,7 +9509,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Mineurs",
     question: "Un mineur témoin doit être entendu :",
     options: [
@@ -9522,7 +9522,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Avocats",
     question: "Une perquisition chez un avocat nécessite :",
     options: ["Le bâtonnier", "Le procureur seulement", "Le maire"],
@@ -9531,7 +9531,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Lieux",
     question: "Le gel des lieux permet de :",
     options: [
@@ -9544,7 +9544,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Enregistrements",
     question: "L’enregistrement audiovisuel est obligatoire pour :",
     options: [
@@ -9557,7 +9557,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Qualification",
     question: "La qualification de flagrance appartient :",
     options: ["Au maire", "À l’O.P.J.", "À un expert judiciaire"],
@@ -9567,7 +9567,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures — Inventaires",
     question: "L’inventaire des objets saisis doit être :",
     options: [
@@ -9580,7 +9580,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — PV",
     question: "Un PV doit contenir :",
     options: [
@@ -9597,7 +9597,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // (suite directe des PARTIES 1 et 2)
 
   // ===================== NIVEAU INTERMÉDIAIRE / DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Saisine",
     question: "La saisine en flagrance intervient lorsque :",
     options: [
@@ -9610,7 +9610,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Début",
     question:
         "Pour vérifier le respect des heures légales (6h–21h), on retient :",
@@ -9625,7 +9625,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Interruption",
     question:
         "Que se passe-t-il si l’enquête est interrompue durant la flagrance ?",
@@ -9639,7 +9639,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaintes — Droit commun",
     question: "Tout dépôt de plainte doit obligatoirement donner lieu à :",
     options: [
@@ -9652,7 +9652,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaintes — Récépissé",
     question: "Le récépissé remis après une plainte doit mentionner :",
     options: [
@@ -9666,7 +9666,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Droits",
     question: "Le droit des victimes inclut :",
     options: [
@@ -9680,7 +9680,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Adresses",
     question: "Une victime peut déclarer une adresse de domiciliation :",
     options: [
@@ -9694,7 +9694,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Évaluation",
     question:
         "L’évaluation personnalisée des besoins de protection est réalisée par :",
@@ -9708,7 +9708,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Mesures renforcées",
     question: "Le téléphone grave danger fait partie :",
     options: [
@@ -9721,7 +9721,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Témoins",
     question: "L’OPJ peut retenir des témoins sur place :",
     options: [
@@ -9735,7 +9735,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Prélèvements",
     question: "Un refus injustifié de prélèvements signalétiques :",
     options: [
@@ -9749,7 +9749,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Protection",
     question: "Certaines catégories de lieux (ex : presse) imposent :",
     options: [
@@ -9762,7 +9762,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit",
     question: "La perquisition de nuit peut être autorisée lorsque :",
     options: [
@@ -9775,7 +9775,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Personnes présentes",
     question: "En flagrance, la perquisition doit se faire :",
     options: [
@@ -9788,7 +9788,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Intégrale",
     question: "La fouille intégrale judiciaire est assimilée :",
     options: [
@@ -9801,7 +9801,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Intégrale",
     question: "Une fouille intégrale doit être effectuée :",
     options: [
@@ -9814,7 +9814,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Sécurité",
     question: "La palpation de sécurité peut être réalisée :",
     options: [
@@ -9828,7 +9828,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Vêtements",
     question: "Le retrait de vêtements en GAV :",
     options: [
@@ -9841,7 +9841,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Véhicules",
     question: "La fouille d’un véhicule en flagrance :",
     options: [
@@ -9854,7 +9854,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Données informatiques",
     question: "Les données informatiques peuvent être :",
     options: [
@@ -9867,7 +9867,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellations — Article 73",
     question: "L’article 73 permet à tout citoyen :",
     options: [
@@ -9880,7 +9880,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellations — Menottes",
     question: "Les menottes doivent être utilisées de manière :",
     options: [
@@ -9893,7 +9893,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat — Recherche",
     question: "Le mandat de recherche peut être délivré pour :",
     options: [
@@ -9906,7 +9906,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat — Notif",
     question: "Le mandat de recherche doit être :",
     options: [
@@ -9919,7 +9919,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Début",
     question: "Le début de la GAV correspond :",
     options: [
@@ -9932,7 +9932,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Durée",
     question: "La GAV de droit commun peut durer :",
     options: [
@@ -9945,7 +9945,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Silence",
     question: "Le droit au silence s’applique :",
     options: [
@@ -9958,7 +9958,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Avocat",
     question: "La renonciation à l’avocat doit être :",
     options: [
@@ -9971,7 +9971,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Contrôle",
     question: "Le contrôle de la GAV appartient :",
     options: ["Au maire", "Au procureur de la République", "Au préfet"],
@@ -9980,7 +9980,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoin",
     question: "La contrainte sur un témoin ne peut excéder :",
     options: ["2h", "4h", "6h"],
@@ -9989,7 +9989,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoin",
     question: "Un témoin convoqué doit :",
     options: [
@@ -10002,7 +10002,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspect devenu auteur",
     question: "Si un témoin devient suspect durant l’audition :",
     options: [
@@ -10015,7 +10015,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Criminel",
     question: "L’enregistrement audiovisuel est obligatoire :",
     options: [
@@ -10028,7 +10028,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — 60 CPP",
     question: "Une réquisition à personne qualifiée sert à :",
     options: [
@@ -10041,7 +10041,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Secret professionnel",
     question: "Les personnes astreintes au secret professionnel peuvent :",
     options: [
@@ -10054,7 +10054,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données de connexion",
     question: "Les données de connexion ne peuvent être demandées que pour :",
     options: [
@@ -10068,7 +10068,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interprète",
     question: "L’interprète intervient pour garantir :",
     options: [
@@ -10081,7 +10081,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Examen médical",
     question: "Le certificat médical établi comporte :",
     options: [
@@ -10094,7 +10094,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Autopsie",
     question: "Seul peut pratiquer une autopsie judiciaire :",
     options: [
@@ -10107,7 +10107,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Autopsie",
     question: "Les prélèvements d’autopsie sont :",
     options: [
@@ -10120,7 +10120,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Conditions",
     question: "La géolocalisation en temps réel concerne :",
     options: [
@@ -10133,7 +10133,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Autorisation",
     question: "L’autorisation initiale en flagrance est donnée par :",
     options: [
@@ -10146,7 +10146,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Renouvellement",
     question: "Le renouvellement de la géolocalisation est décidé par :",
     options: ["L’OPJ", "Le JLD", "La victime"],
@@ -10155,7 +10155,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Manœuvrer",
     question: "La réquisition à manœuvrer peut viser :",
     options: ["Un serrurier", "Un avocat", "Un magistrat"],
@@ -10164,7 +10164,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Alcool",
     question: "Les vérifications d’alcoolémie sont obligatoires :",
     options: [
@@ -10177,7 +10177,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Stupéfiants",
     question: "Les prélèvements stupéfiants sont possibles :",
     options: [
@@ -10190,7 +10190,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Policiers requis",
     question: "Un policier requis agit :",
     options: [
@@ -10203,7 +10203,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Banques",
     question:
         "La mainlevée de la saisie d’un compte bancaire est décidée par :",
@@ -10212,7 +10212,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     explanation: "Sur requête du procureur dans les 10 jours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Généralités",
     question: "Le dépôt de plainte a pour principal effet :",
     options: [
@@ -10226,7 +10226,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — En ligne",
     question: "La plainte en ligne permet notamment :",
     options: [
@@ -10241,7 +10241,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Visio-plainte",
     question: "La « visio-plainte » a pour but principal :",
     options: [
@@ -10255,7 +10255,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Violences conjugales",
     question: "Pour les violences conjugales, les services de police :",
     options: [
@@ -10269,7 +10269,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Droits",
     question: "La victime peut se constituer :",
     options: ["Partie civile", "Témoin assisté", "Mis en examen"],
@@ -10279,7 +10279,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Associations",
     question: "Les associations d’aide aux victimes peuvent :",
     options: [
@@ -10293,7 +10293,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Traces",
     question: "Lors des premières constatations, la priorité est :",
     options: [
@@ -10307,7 +10307,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Scellés",
     question: "Un objet saisi et placé sous scellés doit :",
     options: [
@@ -10321,7 +10321,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Dépendances",
     question: "Les dépendances d’un domicile (cave, garage) :",
     options: [
@@ -10335,7 +10335,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Lieux diplomatiques",
     question: "Les locaux diplomatiques :",
     options: [
@@ -10350,7 +10350,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mineurs",
     question: "La garde à vue d’un mineur :",
     options: [
@@ -10365,7 +10365,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Informer des droits",
     question: "L’information des droits en garde à vue doit être :",
     options: [
@@ -10379,7 +10379,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Interprète",
     question: "Si la personne gardée à vue ne comprend pas le français :",
     options: [
@@ -10393,7 +10393,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Médecin",
     question: "Le médecin en garde à vue examine la personne :",
     options: [
@@ -10407,7 +10407,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Avocat",
     question: "Lors d’une audition en GAV, l’avocat :",
     options: [
@@ -10421,7 +10421,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Tiers de confiance",
     question: "Lors d’une audition, une victime peut être :",
     options: [
@@ -10434,7 +10434,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Lieux adaptés",
     question: "Pour certaines victimes, l’audition peut avoir lieu :",
     options: [
@@ -10449,7 +10449,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interprète",
     question: "L’interprète requis doit :",
     options: [
@@ -10462,7 +10462,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Refus de déférer",
     question:
         "Le refus sans motif légitime de répondre à une réquisition régulière :",
@@ -10476,7 +10476,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Personne qualifiée",
     question: "Une « personne qualifiée » peut être :",
     options: ["Un expert en identification ADN", "La victime", "Le maire"],
@@ -10487,7 +10487,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Cadre juridique",
     question: "Lorsque le caractère de flagrance est perdu, l’OPJ doit :",
     options: [
@@ -10501,7 +10501,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Prolongation",
     question:
         "La prolongation de l’enquête de flagrance est justifiée lorsque :",
@@ -10517,7 +10517,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Scénario",
     question:
         "De nuit, en matière de trafic de stupéfiants relevant de la criminalité organisée, l’OPJ veut perquisitionner un domicile :",
@@ -10533,7 +10533,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Cabinet d’avocat",
     question:
         "Lors d’une perquisition dans un cabinet d’avocat, si le bâtonnier n’est pas présent :",
@@ -10548,7 +10548,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Investigations corporelles",
     question:
         "Les investigations corporelles internes (recherche de corps étranger) doivent être effectuées :",
@@ -10562,7 +10562,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures de sécurité — GAV",
     question:
         "Les mesures de sécurité (retrait d’objets, palpation de sécurité) :",
@@ -10577,7 +10577,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Prolongation",
     question:
         "La prolongation de la garde à vue de 24 heures supplémentaires est possible si :",
@@ -10593,7 +10593,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Nullités",
     question: "Un défaut de notification des droits en GAV peut :",
     options: [
@@ -10607,7 +10607,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspect libre",
     question: "Le suspect libre doit être informé, avant toute audition :",
     options: [
@@ -10622,7 +10622,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "En cas de difficulté à joindre l’avocat choisi par la personne gardée à vue :",
@@ -10637,7 +10637,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Enregistrement",
     question:
         "En cas d’impossibilité technique d’enregistrement audiovisuel obligatoire :",
@@ -10653,7 +10653,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données informatiques",
     question:
         "Une réquisition informatique (art. 60-2 et 60-3 CPP) peut viser :",
@@ -10668,7 +10668,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données de connexion",
     question: "Les réquisitions de données de connexion doivent respecter :",
     options: [
@@ -10682,7 +10682,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Intrusion dans un domicile",
     question:
         "L’installation d’une balise de géolocalisation dans un domicile nécessite :",
@@ -10697,7 +10697,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures — Recours",
     question:
         "Une personne perquisitionnée peut saisir le JLD pour contester la régularité de l’acte dans un délai :",
@@ -10709,7 +10709,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Jurisprudence",
     question:
         "Selon la jurisprudence, la validité de la flagrance est appréciée en fonction :",
@@ -10724,7 +10724,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Jurisprudence",
     question:
         "Une condamnation fondée exclusivement sur des déclarations obtenues en méconnaissance du droit au silence :",
@@ -10739,7 +10739,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat (décalage)",
     question: "Le procureur peut décider de différer la présence de l’avocat :",
     options: [
@@ -10753,7 +10753,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données de connexion (CJUE/CE)",
     question:
         "En pratique, la délivrance de réquisitions portant sur des données de connexion doit intégrer :",
@@ -10769,7 +10769,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Gravité",
     question: "Le recours à la géolocalisation est regardé comme :",
     options: [
@@ -10783,7 +10783,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Presse",
     question:
         "En matière de presse et de secret des sources, l’OPJ ou le magistrat doivent :",
@@ -10799,7 +10799,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Défense nationale",
     question:
         "Lorsque des lieux sont couverts par le secret de la défense nationale, les éléments classifiés saisis :",
@@ -10815,7 +10815,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autopsie — Information des proches",
     question:
         "En matière d’autopsie judiciaire, l’information de la famille du défunt :",
@@ -10830,7 +10830,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Confiscation",
     question: "La saisie spéciale (ex : comptes bancaires) a pour finalité :",
     options: [
@@ -10844,7 +10844,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Traçabilité",
     question: "Le procès-verbal de fin de garde à vue doit récapituler :",
     options: [
@@ -10858,7 +10858,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "La traçabilité complète permet le contrôle de la régularité de la GAV.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Cadre juridique",
     question:
         "Dans quel texte est prévue la procédure de recherche des causes de la mort de cause inconnue ou suspecte ?",
@@ -10873,7 +10873,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Finalité",
     question:
         "Quel est l’objectif principal de l’enquête prévue par l’article 74 du Code de procédure pénale ?",
@@ -10888,7 +10888,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application",
     question:
         "Quelle est la première condition pour appliquer l’article 74 du Code de procédure pénale ?",
@@ -10903,7 +10903,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application",
     question:
         "Outre la découverte d’un cadavre, quelle autre condition est exigée pour l’application de l’article 74 du Code de procédure pénale ?",
@@ -10918,7 +10918,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Découverte de cadavre",
     question:
         "Que signifie l’expression « découverte de cadavre » au sens de l’article 74 du Code de procédure pénale ?",
@@ -10934,7 +10934,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Typologie des morts",
     question:
         "Parmi les propositions suivantes, laquelle NE fait PAS partie des trois catégories de décès distinguées par la loi ?",
@@ -10949,7 +10949,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mort naturelle",
     question:
         "La mort naturelle, au sens de l’article 78 du Code civil, trouve son origine :",
@@ -10964,7 +10964,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mort violente non pénale",
     question:
         "La mort violente non criminelle ni délictuelle recouvre notamment :",
@@ -10980,7 +10980,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procureur de la République",
     question:
         "Qui doit être informé immédiatement par l’officier ou l’agent de police judiciaire en cas de découverte d’un cadavre de cause inconnue ou suspecte ?",
@@ -10995,7 +10995,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Premières constatations",
     question:
         "Que doit faire l’officier de police judiciaire, ou l’agent agissant sous son contrôle, après avoir été avisé d’une mort suspecte ?",
@@ -11014,7 +11014,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // =========================================================
   //                   NIVEAU INTERMÉDIAIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Rôle du procureur",
     question:
         "Selon l’article 74 du Code de procédure pénale, que peut faire le procureur de la République après avoir été informé d’une mort suspecte ?",
@@ -11030,7 +11030,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Enquête art. 74",
     question:
         "Dans le cadre de l’enquête pour recherche des causes de la mort (article 74 du Code de procédure pénale), quels actes peuvent être réalisés sur instructions du procureur de la République ?",
@@ -11045,7 +11045,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Durée",
     question:
         "À l’issue d’un délai de huit jours à compter des instructions du procureur de la République, que peuvent devenir les investigations menées au titre de l’article 74 du Code de procédure pénale ?",
@@ -11061,7 +11061,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information judiciaire",
     question:
         "Dans le cadre de la mort de cause inconnue ou suspecte, qui peut requérir l’ouverture d’une information pour recherche des causes de la mort ?",
@@ -11076,7 +11076,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Article 80-4",
     question:
         "Selon l’article 80-4 du Code de procédure pénale, les membres de la famille ou les proches de la personne décédée peuvent :",
@@ -11092,7 +11092,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rôle de la famille",
     question:
         "En cas d’inaction du parquet concernant une mort suspecte, que peut faire la famille du défunt ?",
@@ -11108,7 +11108,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Autopsie",
     question:
         "Dans le cadre de l’article 74 du Code de procédure pénale, l’autopsie est encadrée par :",
@@ -11123,7 +11123,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Autopsie",
     question:
         "À qui la réquisition d’autopsie peut-elle être adressée dans le cadre de l’enquête pour recherche des causes de la mort ?",
@@ -11139,7 +11139,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Réquisitions",
     question:
         "Dans le cadre de l’article 74 du Code de procédure pénale, les réquisitions du procureur de la République concernent notamment :",
@@ -11155,7 +11155,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Réquisitions",
     question:
         "Quelle est l’obligation des personnes requises (non inscrites sur les listes d’experts) selon l’article 74 du Code de procédure pénale ?",
@@ -11171,7 +11171,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Limites",
     question:
         "Dans le cadre de l’enquête de l’article 74 du Code de procédure pénale, l’officier de police judiciaire :",
@@ -11187,7 +11187,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites de l’enquête",
     question:
         "Lorsque l’enquête de l’article 74 du Code de procédure pénale établit une mort naturelle ou une mort violente sans responsabilité d’un tiers, que peut faire le procureur de la République ?",
@@ -11202,7 +11202,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites de l’enquête",
     question:
         "Si des doutes subsistent sur les causes de la mort après l’enquête de l’article 74 du Code de procédure pénale, le procureur de la République peut :",
@@ -11218,7 +11218,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites de l’enquête",
     question:
         "Si l’enquête permet d’établir le caractère criminel ou délictuel de l’événement, le procureur de la République peut notamment :",
@@ -11237,7 +11237,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   // =========================================================
   //                    NIVEAU DIFFICILE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Découverte de corps",
     question:
         "Vous êtes officier de police judiciaire. On vous signale la découverte d’un corps dans un appartement, sans trace évidente de lutte, mais dans un contexte ambigu. Quelle démarche est conforme à l’article 74 du Code de procédure pénale ?",
@@ -11253,7 +11253,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mort violente non pénale",
     question:
         "Une personne décède à la suite d’une chute d’échelle sur un chantier, sans élément laissant supposer une infraction. Comment qualifier juridiquement la mort ?",
@@ -11268,7 +11268,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Autopsie",
     question:
         "Une autopsie a été ordonnée dans le cadre de l’article 74 du Code de procédure pénale. Quelle affirmation est exacte ?",
@@ -11284,7 +11284,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Limites art. 74",
     question:
         "Dans le cadre strict de l’enquête pour recherche des causes de la mort (article 74 du Code de procédure pénale), quelle est la position concernant la garde à vue ?",
@@ -11300,7 +11300,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Suites — Ouverture d’information",
     question:
         "Après une enquête de l’article 74 du Code de procédure pénale, des doutes sérieux subsistent. Le procureur de la République requiert une information pour recherche des causes de la mort. Quelle conséquence majeure en découle ?",
@@ -11316,7 +11316,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juge d’instruction — Pouvoirs",
     question:
         "Dans le cadre d’une information pour recherche des causes de la mort (articles 74 et 80-4 du Code de procédure pénale), le juge d’instruction dispose :",
@@ -11332,7 +11332,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes délégués — Juge d’instruction",
     question:
         "Dans une information pour recherche des causes de la mort, le juge d’instruction peut déléguer par commission rogatoire à un officier de police judiciaire :",
@@ -11348,7 +11348,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Limites",
     question:
         "Dans une information pour recherche des causes de la mort, les interceptions de correspondances émises par la voie des télécommunications peuvent être réalisées :",
@@ -11363,7 +11363,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Suites de l’enquête",
     question:
         "À l’issue d’une enquête menée en application de l’article 74 du Code de procédure pénale, un faisceau d’indices graves et concordants laisse supposer un homicide volontaire. Quelle est l’option la plus cohérente pour le procureur de la République ?",
@@ -11379,7 +11379,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Exhumation",
     question:
         "Après l’inhumation d’un corps, de nouveaux éléments font suspecter une cause pénale du décès. Quel mécanisme procédural permet, le cas échéant, l’exhumation du corps aux fins d’autopsie ?",
@@ -11395,7 +11395,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police technique — APJ",
     question:
         "Dans le cadre d’une information pour recherche des causes de la mort, les agents de police judiciaire, sous le contrôle de l’officier de police judiciaire commis par le juge d’instruction, peuvent notamment :",
@@ -11411,7 +11411,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Personne grièvement blessée",
     question:
         "Les dispositions de l’article 74 du Code de procédure pénale s’appliquent également en cas de découverte d’une personne grièvement blessée lorsque :",
@@ -11425,7 +11425,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
         "Le texte précise que les alinéas 1 à 4 sont également applicables en cas de découverte d’une personne grièvement blessée dont la cause des blessures est inconnue ou suspecte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 74-2 C.P.P.",
     question:
         "Quel est l’objectif principal de la procédure prévue par l’article 74-2 du C.P.P. ?",
@@ -11440,7 +11440,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 74-2 C.P.P.",
     question:
         "Sur instructions de quelle autorité la procédure de l’article 74-2 du C.P.P. peut-elle être mise en œuvre ?",
@@ -11455,7 +11455,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Article 74-2 C.P.P.",
     question:
         "Les actes réalisés dans le cadre de l’article 74-2 du C.P.P. renvoient principalement aux articles :",
@@ -11470,7 +11470,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandat d’arrêt",
     question:
         "La procédure de l’article 74-2 du C.P.P. est notamment applicable à une personne en fuite qui :",
@@ -11485,7 +11485,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandat d’arrêt",
     question:
         "Un mandat d’arrêt permettant la mise en œuvre de l’article 74-2 peut être délivré notamment par :",
@@ -11500,7 +11500,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandat d’arrêt",
     question:
         "La procédure de recherche des personnes en fuite peut s’appliquer à un mandat d’arrêt délivré par :",
@@ -11516,7 +11516,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Peines",
     question:
         "La procédure 74-2 peut s’appliquer à une personne condamnée à une peine privative de liberté :",
@@ -11531,7 +11531,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Fichiers nationaux",
     question:
         "Les personnes inscrites au fichier judiciaire national automatisé des auteurs d’infractions terroristes (FIJAIT) sont concernées par l’article 74-2 lorsqu’elles :",
@@ -11546,7 +11546,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Fichiers nationaux",
     question:
         "Les personnes inscrites au fichier judiciaire national automatisé des auteurs d’infractions sexuelles ou violentes (FIJAISV) sont concernées si elles :",
@@ -11561,7 +11561,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Aménagements de peine",
     question:
         "L’article 74-2 peut être appliqué à une personne ayant fait l’objet d’une décision de retrait ou de révocation :",
@@ -11576,7 +11576,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Quantum de peine",
     question:
         "Pour que l’article 74-2 s’applique à une décision de mise à exécution d’un reliquat de peine, la durée d’emprisonnement à exécuter doit être :",
@@ -11591,7 +11591,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — OPJ/APJ",
     question:
         "Dans le cadre de l’article 74-2, qui peut être assisté d’agents de police judiciaire pour accomplir les actes de l’enquête ?",
@@ -11606,7 +11606,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — OPJ",
     question:
         "Dans le cadre de l’article 74-2, qui peut rédiger les actes de procédure ?",
@@ -11621,7 +11621,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Garde à vue",
     question:
         "Dans le cadre de la procédure de l’article 74-2, l’OPJ peut-il placer une personne en garde à vue ?",
@@ -11636,7 +11636,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Flagrance",
     question:
         "Les actes que l’OPJ peut réaliser dans le cadre de l’article 74-2 correspondent à ceux :",
@@ -11651,7 +11651,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Autorisation",
     question:
         "Dans le cadre de l’article 74-2, qui autorise les interceptions téléphoniques ?",
@@ -11666,7 +11666,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Durée",
     question:
         "Dans le cadre de l’article 74-2, la durée initiale maximale d’une autorisation d’interception téléphonique est de :",
@@ -11677,7 +11677,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Limite en matière correctionnelle",
     question:
         "En matière correctionnelle, la durée totale des interceptions autorisées dans le cadre de l’article 74-2 est limitée à :",
@@ -11688,7 +11688,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Rappel",
     question:
         "Les techniques spéciales d’enquête mobilisables via l’article 74-2 renvoient à celles applicables :",
@@ -11703,7 +11703,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extension — Mandat d’arrêt européen et extradition",
     question:
         "Les dispositions de l’article 74-2 du C.P.P. sont également applicables en matière :",
@@ -11719,7 +11719,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Synthèse",
     question:
         "Parmi les propositions suivantes, laquelle ne correspond PAS à une condition d’application de l’article 74-2 du C.P.P. ?",
@@ -11735,7 +11735,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Mandats",
     question:
         "Dans le cadre du 1° de l’article 74-2, le mandat d’arrêt délivré par le juge d’instruction concerne une personne :",
@@ -11750,7 +11750,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Condamnation",
     question:
         "Pour le 3° de l’article 74-2, la condamnation privative de liberté prenant en compte un sursis révoqué doit :",
@@ -11765,7 +11765,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Procureur",
     question:
         "Dans le cadre de l’article 74-2, le procureur de la République peut demander aux OPJ :",
@@ -11781,7 +11781,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Procureur",
     question:
         "Dans le cadre des interceptions 74-2, les attributions normalement confiées au juge d’instruction par les articles 100-3 à 100-5 C.P.P. sont exercées par :",
@@ -11796,7 +11796,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — JLD",
     question:
         "Selon l’article 74-2, le juge des libertés et de la détention doit être informé :",
@@ -11811,7 +11811,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Conditions générales",
     question:
         "Pour autoriser des interceptions dans le cadre de l’article 74-2, la peine encourue pour l’infraction doit être :",
@@ -11822,7 +11822,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "À peine de nullité, les lignes dépendant du cabinet ou domicile d’un député, sénateur, avocat ou magistrat ne peuvent être interceptées que :",
@@ -11837,7 +11837,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Secret professionnel",
     question:
         "Les correspondances avec un avocat ne peuvent être transcrites dans le cadre des interceptions 74-2 que si :",
@@ -11853,7 +11853,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — OPJ",
     question:
         "Parmi les actes suivants, lesquels peuvent être accomplis par l’OPJ dans le cadre de l’article 74-2 ?",
@@ -11868,7 +11868,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — PV d’interception",
     question:
         "Que doit faire l’OPJ après les opérations d’interception téléphonique en application de l’article 74-2 ?",
@@ -11884,7 +11884,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Interprète",
     question:
         "Si des interceptions portent sur des conversations en langue étrangère, l’OPJ doit :",
@@ -11899,7 +11899,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Liste",
     question:
         "Parmi les techniques suivantes, laquelle fait partie des techniques spéciales d’enquête mobilisables via l’article 74-2 ?",
@@ -11914,7 +11914,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Accès à distance",
     question:
         "L’accès à distance aux correspondances stockées par la voie des communications électroniques (articles 706-95 à 706-95-3) permet :",
@@ -11930,7 +11930,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Conditions",
     question:
         "Les techniques spéciales d’enquête via l’article 74-2 (surveillance, infiltration, etc.) ne sont applicables que si :",
@@ -11946,7 +11946,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Moment d’utilisation",
     question:
         "L’article 74-2 du C.P.P. vise en particulier la recherche d’une personne faisant l’objet d’un mandat d’arrêt :",
@@ -11961,7 +11961,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Renouvellement",
     question:
         "Dans le cadre 74-2, le renouvellement de l’autorisation d’interception téléphonique :",
@@ -11977,7 +11977,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Nature de la décision",
     question:
         "La décision du JLD autorisant les interceptions dans le cadre de l’article 74-2 :",
@@ -11992,7 +11992,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Sonorisation",
     question:
         "La sonorisation et fixation d’images mobilisable via l’article 74-2 correspond à :",
@@ -12008,7 +12008,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Captation de données",
     question:
         "La captation de données informatiques (706-102-1 à 706-102-5) permet notamment :",
@@ -12025,7 +12025,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Analyse fine",
     question:
         "Parmi les situations suivantes, laquelle permet de mettre en œuvre à la fois l’article 74-2 et les techniques spéciales d’enquête du titre XXV ?",
@@ -12041,7 +12041,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions d’application — Fichiers",
     question:
         "Une personne inscrite au FIJAIT ou au fichier des infractions sexuelles/violentes peut être concernée par l’article 74-2 si :",
@@ -12057,7 +12057,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités habilitées — Répartition des rôles",
     question:
         "Dans le cadre des interceptions autorisées par 74-2, la répartition des rôles est la suivante :",
@@ -12073,7 +12073,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes de l’enquête — Limites",
     question:
         "Pourquoi la garde à vue est-elle exclue de la procédure de l’article 74-2 du C.P.P. ?",
@@ -12089,7 +12089,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Correctionnel / Criminel",
     question:
         "En matière criminelle, la durée totale des interceptions autorisées dans le cadre de l’article 74-2 est :",
@@ -12105,7 +12105,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes d’avocat",
     question:
         "Dans quel cas une ligne dépendant du cabinet ou domicile d’un avocat peut-elle être interceptée dans le cadre 74-2 ?",
@@ -12121,7 +12121,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Conditions cumulatives",
     question:
         "Pour recourir à l’IMSI-catcher dans le cadre 74-2, il faut notamment :",
@@ -12137,7 +12137,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Respect des lieux protégés",
     question:
         "Dans le cadre d’une sonorisation via 74-2, quel est l’un des risques majeurs de nullité ?",
@@ -12153,7 +12153,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Mandat d’arrêt européen",
     question:
         "Dans le cadre d’un mandat d’arrêt européen, l’utilisation de la procédure 74-2 permet :",
@@ -12169,7 +12169,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Extradition",
     question: "En matière d’extradition, le recours à l’article 74-2 permet :",
     options: [
@@ -12184,7 +12184,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Information du JLD",
     question:
         "Pourquoi le législateur impose-t-il d’informer sans délai le JLD des actes accomplis dans le cadre des interceptions 74-2 ?",
@@ -12200,7 +12200,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Déclenchement de 74-2",
     question:
         "Quel serait le défaut majeur d’une enquête prétendument menée sur le fondement de l’article 74-2 alors qu’aucune instruction écrite ou orale du procureur n’apparaît en procédure ?",
@@ -12216,7 +12216,7 @@ final List<QuizQuestion> questionsCadresJuridiquePages = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Proportionnalité",
     question:
         "Dans le cadre de 74-2, le recours à des techniques spéciales très intrusives (sonorisation, captation de données) doit respecter principalement :",
@@ -12588,7 +12588,7 @@ class _QuizCadresPrincipalesPageState extends State<QuizCadresPrincipalesPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -12791,7 +12791,7 @@ class _QuizCadresPrincipalesPageState extends State<QuizCadresPrincipalesPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -12974,7 +12974,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -13507,10 +13506,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -13881,7 +13881,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -13922,9 +13922,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

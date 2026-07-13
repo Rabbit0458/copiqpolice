@@ -3,8 +3,9 @@
 // - 2 cartes "Découvrir" -> redirige vers GradePickerScreen
 // - Persistance du mode (SharedPreferences + Supabase user_profiles.user_mode)
 // - Redirection immédiate vers le grade picker
+// ✅ V2 : Plus de lock premium sur la carte "Je suis en scolarité"
+//         Le blocage premium intervient à l'ouverture du contenu réel (modules).
 import 'dart:ui';
-import 'dart:math' as math;
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -13,11 +14,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'package:copiqpolice/features/home/home_page.dart'
     show UserMode, UserModeController;
-// Import du grade picker
 import 'package:copiqpolice/features/onboarding/grade_picker.dart';
-
-// ✅ NEW: abonnement / lock
-import 'package:copiqpolice/core/services/subscription_service.dart';
 
 class _T {
   static const Color ink = Color(0xFF212529);
@@ -44,19 +41,16 @@ class ModePickerScreen extends StatefulWidget {
     this.lockToSchoolOnly = false,
   });
 
-  /// ✅ Tutoriel : permet de récupérer la position exacte de la carte "Scolarité"
-  /// pour afficher un spotlight parfaitement aligné.
+  /// Tutoriel : permet de récupérer la position exacte de la carte "Scolarité"
   final GlobalKey? schoolCardKey;
 
-  /// ✅ Tutoriel : permet de récupérer la position exacte de la carte "Concours"
-  /// (si tu veux un spotlight dessus plus tard).
+  /// Tutoriel : permet de récupérer la position exacte de la carte "Concours"
   final GlobalKey? examCardKey;
 
-  /// ✅ Tutoriel : si défini, le ModePicker ne fait pas de navigation ni de save.
-  /// Il appelle simplement ce callback avec le mode choisi.
+  /// Tutoriel : si défini, le ModePicker ne fait pas de navigation ni de save.
   final Future<void> Function(UserMode mode)? onModeSelectedOverride;
 
-  /// ✅ Tutoriel : si true, empêche l’utilisateur de choisir "Je prépare le concours".
+  /// Tutoriel : si true, empêche l'utilisateur de choisir "Je prépare le concours".
   final bool lockToSchoolOnly;
 
   @override
@@ -66,130 +60,6 @@ class ModePickerScreen extends StatefulWidget {
 class _ModePickerScreenState extends State<ModePickerScreen> {
   UserMode? _mode;
   bool _saving = false;
-
-  // ✅ NEW: entitlements
-  bool _loadingEntitlements = true;
-  bool _isPremium = false;
-  final _sub = SubscriptionService.instance;
-
-  @override
-  void initState() {
-    super.initState();
-    _loadEntitlements();
-  }
-
-  Future<void> _loadEntitlements() async {
-    try {
-      await _sub.refresh(force: true);
-      _isPremium = _sub.state.value.isPremium;
-    } catch (_) {
-      _isPremium = false;
-    } finally {
-      if (mounted) {
-        setState(() => _loadingEntitlements = false);
-      }
-    }
-  }
-
-  void _showSubscriptionRequiredSheet() {
-    final theme = Theme.of(context);
-    final isDark = theme.brightness == Brightness.dark;
-
-    showModalBottomSheet<void>(
-      context: context,
-      backgroundColor: Colors.transparent,
-      isScrollControlled: true,
-      builder: (_) {
-        return SafeArea(
-          child: Padding(
-            padding: const EdgeInsets.fromLTRB(14, 0, 14, 14),
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(22),
-              child: Container(
-                color: isDark ? const Color(0xFF14171A) : Colors.white,
-                child: Padding(
-                  padding: const EdgeInsets.fromLTRB(18, 16, 18, 16),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Container(
-                        width: 44,
-                        height: 5,
-                        decoration: BoxDecoration(
-                          color: (isDark ? Colors.white : Colors.black)
-                              .withValues(alpha: .12),
-                          borderRadius: BorderRadius.circular(99),
-                        ),
-                      ),
-                      const SizedBox(height: 14),
-                      Row(
-                        children: [
-                          Container(
-                            width: 44,
-                            height: 44,
-                            decoration: BoxDecoration(
-                              color: Colors.amber.withValues(alpha: .18),
-                              borderRadius: BorderRadius.circular(14),
-                            ),
-                            child: const Icon(Icons.lock_rounded),
-                          ),
-                          const SizedBox(width: 12),
-                          Expanded(
-                            child: Text(
-                              'Abonnement requis',
-                              style: GoogleFonts.instrumentSans(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w900,
-                                color: isDark ? Colors.white : _T.ink,
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const SizedBox(height: 10),
-                      Text(
-                        'Le mode “Je suis en scolarité” est inclus dans Premium.\nActive Premium pour débloquer l’accès complet.',
-                        style: theme.textTheme.bodyMedium?.copyWith(
-                          color: _muted(context, .78),
-                          height: 1.35,
-                        ),
-                      ),
-                      const SizedBox(height: 16),
-                      Row(
-                        children: [
-                          Expanded(
-                            child: OutlinedButton(
-                              onPressed: () => Navigator.pop(context),
-                              child: const Text('Plus tard'),
-                            ),
-                          ),
-                          const SizedBox(width: 10),
-                          Expanded(
-                            child: ElevatedButton(
-                              onPressed: () {
-                                Navigator.pop(context);
-                                // ✅ Mets ici ta navigation vers l'écran abonnement
-                                // Exemple:
-                                // Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SubscriptionScreen()));
-                                Navigator.of(
-                                  context,
-                                ).pushNamed('/subscription');
-                              },
-                              child: const Text('Voir Premium'),
-                            ),
-                          ),
-                        ],
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
-          ),
-        );
-      },
-    );
-  }
 
   /// Upsert dans `public.user_profiles` (clé unique: user_id)
   Future<void> _upsertProfile({required String userMode}) async {
@@ -203,7 +73,6 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
         'updated_at': DateTime.now().toIso8601String(),
       }, onConflict: 'user_id');
     } catch (e) {
-      // Réseau/permissions: on ignore, le cache local est déjà bon
       debugPrint('[ModePicker] upsert user_profiles failed: $e');
     }
   }
@@ -211,26 +80,19 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
   Future<void> _select(UserMode mode) async {
     if (_saving) return;
 
-    // ✅ TUTORIEL : on bloque "concours" si demandé
+    // Tutoriel : on bloque "concours" si demandé
     if (widget.lockToSchoolOnly && mode == UserMode.exam) {
       HapticFeedback.selectionClick();
       return;
     }
 
-    // ✅ LOCK PREMIUM : scolarité interdite si FREE
-    if (mode == UserMode.school && !_isPremium) {
-      HapticFeedback.selectionClick();
-      _showSubscriptionRequiredSheet();
-      return;
-    }
-
-    // ✅ TUTORIEL : si override, on délègue au tuto (pas de save / pas de nav)
+    // Tutoriel : si override, on délègue au tuto (pas de save / pas de nav)
     if (widget.onModeSelectedOverride != null) {
       await widget.onModeSelectedOverride!(mode);
       return;
     }
 
-    // ✅ COMPORTEMENT NORMAL (inchangé)
+    // Comportement normal
     setState(() {
       _mode = mode;
       _saving = true;
@@ -261,8 +123,6 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
     final theme = Theme.of(context);
     final isDark = theme.brightness == Brightness.dark;
 
-    final bool schoolLocked = !_isPremium; // ✅ lock uniquement sur scolarité
-
     return Scaffold(
       backgroundColor: theme.scaffoldBackgroundColor,
       body: SafeArea(
@@ -279,7 +139,7 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
             ),
             const SizedBox(height: 6),
             Text(
-              'Choisis ton mode pour adapter l’application.',
+              "Choisis ton mode pour adapter l'application.",
               style: theme.textTheme.bodyMedium?.copyWith(
                 color: _muted(context, .8),
               ),
@@ -302,17 +162,12 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
               title: 'Je suis en scolarité',
               selected: _mode == UserMode.school,
               onTap: () => _select(UserMode.school),
-              // ✅ NEW: lock sans changer le design
-              locked: schoolLocked,
-              onLockedTap: _showSubscriptionRequiredSheet,
-              showLoadingLock:
-                  _loadingEntitlements, // optionnel (pendant check)
             ),
 
             const SizedBox(height: 22),
             Center(
               child: Text(
-                'Tu pourras modifier ce choix plus tard dans “Mon compte”.',
+                'Tu pourras modifier ce choix plus tard dans "Mon compte".',
                 textAlign: TextAlign.center,
                 style: theme.textTheme.bodySmall?.copyWith(
                   color: _muted(context, .7),
@@ -327,18 +182,12 @@ class _ModePickerScreenState extends State<ModePickerScreen> {
 }
 
 /// --- Carte héro (visuel + bouton "Découvrir") ---
-/// ✅ DESIGN INCHANGÉ : on ajoute uniquement un overlay lock + interception du tap.
 class _ChoiceHeroCard extends StatelessWidget {
   final String image;
   final String badge;
   final String title;
   final bool selected;
   final VoidCallback onTap;
-
-  // ✅ NEW
-  final bool locked;
-  final VoidCallback? onLockedTap;
-  final bool showLoadingLock;
 
   const _ChoiceHeroCard({
     super.key,
@@ -347,9 +196,6 @@ class _ChoiceHeroCard extends StatelessWidget {
     required this.title,
     required this.selected,
     required this.onTap,
-    this.locked = false,
-    this.onLockedTap,
-    this.showLoadingLock = false,
   });
 
   @override
@@ -363,8 +209,6 @@ class _ChoiceHeroCard extends StatelessWidget {
       img = Container(color: Colors.black.withValues(alpha: .06));
     }
 
-    final effectiveTap = locked ? (onLockedTap ?? () {}) : onTap;
-
     return AnimatedScale(
       scale: selected ? 1.0 : 0.97,
       duration: const Duration(milliseconds: 220),
@@ -373,7 +217,7 @@ class _ChoiceHeroCard extends StatelessWidget {
         duration: const Duration(milliseconds: 220),
         opacity: selected ? 1 : 0.96,
         child: GestureDetector(
-          onTap: effectiveTap,
+          onTap: onTap,
           child: Container(
             height: 220,
             clipBehavior: Clip.antiAlias,
@@ -398,10 +242,10 @@ class _ChoiceHeroCard extends StatelessWidget {
             child: Stack(
               fit: StackFit.expand,
               children: [
-                // IMG
+                // Image
                 Positioned.fill(child: img),
 
-                // FLUO GLOBAL
+                // Overlay blur
                 Positioned.fill(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 7, sigmaY: 7),
@@ -409,7 +253,7 @@ class _ChoiceHeroCard extends StatelessWidget {
                   ),
                 ),
 
-                // SPOTLIGHT DERRIÈRE LE TITRE (effet premium)
+                // Spotlight derrière le titre
                 Center(
                   child: Container(
                     width: 260,
@@ -429,7 +273,7 @@ class _ChoiceHeroCard extends StatelessWidget {
                   ),
                 ),
 
-                // TITRE SANS BACKGROUND
+                // Titre
                 Center(
                   child: Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
@@ -454,71 +298,13 @@ class _ChoiceHeroCard extends StatelessWidget {
                   ),
                 ),
 
-                // BOUTON EN BAS (design inchangé, mais tap redirigé si locked)
+                // Bouton en bas
                 Positioned(
                   left: 14,
                   right: 14,
                   bottom: 14,
-                  child: _DiscoverButton(onTap: effectiveTap),
+                  child: _DiscoverButton(onTap: onTap),
                 ),
-
-                // ✅ LOCK OVERLAY (très léger, ne change pas la carte)
-                if (locked || showLoadingLock)
-                  Positioned.fill(
-                    child: IgnorePointer(
-                      ignoring: true,
-                      child: Container(
-                        color: Colors.black.withValues(alpha: locked ? 0.12 : 0.06),
-                      ),
-                    ),
-                  ),
-
-                // ✅ Petit badge lock discret (pro, sans casser ton design)
-                if (locked)
-                  Positioned(
-                    right: 14,
-                    top: 14,
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 10,
-                        vertical: 8,
-                      ),
-                      decoration: BoxDecoration(
-                        color: _T.ink.withValues(alpha: .82),
-                        borderRadius: BorderRadius.circular(18),
-                      ),
-                      child: Row(
-                        mainAxisSize: MainAxisSize.min,
-                        children: const [
-                          Icon(
-                            Icons.lock_rounded,
-                            size: 16,
-                            color: Colors.white,
-                          ),
-                          SizedBox(width: 6),
-                          Text(
-                            'Premium',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-
-                // ✅ Loading discret (pendant check abonnement)
-                if (showLoadingLock)
-                  const Positioned(
-                    right: 18,
-                    top: 18,
-                    child: SizedBox(
-                      width: 18,
-                      height: 18,
-                      child: CircularProgressIndicator(strokeWidth: 2),
-                    ),
-                  ),
               ],
             ),
           ),
@@ -543,9 +329,9 @@ class _DiscoverButton extends StatelessWidget {
           color: _T.ink.withValues(alpha: .92),
           borderRadius: BorderRadius.circular(18),
         ),
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Expanded(
               child: Center(
                 child: Text(

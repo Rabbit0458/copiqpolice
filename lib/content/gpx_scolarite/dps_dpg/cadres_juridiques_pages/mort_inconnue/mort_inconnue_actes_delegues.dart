@@ -61,8 +61,8 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
           ),
           const SizedBox(height: 10),
 
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'L’article 74 du Code de procédure pénale dresse une liste précise des actes '
                   'que peuvent réaliser les officiers de police judiciaire (O.P.J.) ou, sous leur contrôle, '
@@ -102,44 +102,44 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'L’article 230-28 du Code de procédure pénale dispose qu’une autopsie peut être ordonnée '
                       'dans le cadre d’une enquête judiciaire mise en œuvre selon ',
                 ),
                 TextSpan(
                   text: 'l’article 74 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       '. Les règles particulières figurent aux articles 230-28 à 230-31.',
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     'L’autopsie ne peut être confiée qu’à un médecin titulaire d’un diplôme en médecine légale '
                     'ou disposant d’une expertise reconnue.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Le médecin procède aux prélèvements biologiques nécessaires et peut les placer sous scellés.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La présence des enquêteurs n’est pas obligatoire, sauf si la nature de l’enquête justifie '
                     'leur présence pour guider le légiste ou être informés immédiatement.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'Il est recommandé d’inclure explicitement dans la réquisition judiciaire la possibilité '
                         'de placer sous scellés les objets ou prélèvements effectués lors de l’autopsie '
@@ -147,8 +147,8 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'Le médecin légiste doit veiller à la meilleure restauration possible du corps avant sa remise '
                 'aux proches. Ceux-ci doivent être informés dans les meilleurs délais qu’une autopsie a été '
                 'ordonnée et que des prélèvements ont été réalisés, sauf impératifs de santé publique.',
@@ -165,34 +165,34 @@ class MortInconnueActesDeleguesPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'L’officier ou l’agent de police judiciaire reçoit délégation du procureur de la République '
                       'pour requérir toute personne qualifiée afin ',
                 ),
-                const TextSpan(
+                TextSpan(
                   text: '« d’apprécier la nature des circonstances du décès »',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     'Le médecin est prioritairement requis : constatation du décès et examen externe du corps.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'D’autres experts peuvent être requis selon la situation : armurier, serrurier, électricien, '
                     'mécanicien, expert incendie, etc.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les personnes requises doivent prêter serment par écrit, sauf si elles figurent sur l’une des listes prévues à l’article 157 du Code de procédure pénale.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
@@ -284,10 +284,10 @@ class _ConditionCard extends StatelessWidget {
       decoration: BoxDecoration(
         color: cardColor,
         borderRadius: BorderRadius.circular(18),
-        border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+        border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(.12),
+            color: Colors.black.withValues(alpha: .12),
             blurRadius: 18,
             offset: const Offset(0, 10),
           ),
@@ -325,7 +325,7 @@ class _Paragraph extends StatelessWidget {
     final isRich = spans != null;
     final color = Theme.of(context).brightness == Brightness.dark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -429,14 +429,14 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
+    final Color titleColor = borderColor;
 
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -448,7 +448,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

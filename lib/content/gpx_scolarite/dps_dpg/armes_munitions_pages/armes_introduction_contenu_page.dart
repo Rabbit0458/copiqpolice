@@ -90,22 +90,22 @@ class ArmesIntroductionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Loi n°2012-304 du 06 mars 2012",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : relative à l’établissement d’un contrôle des armes moderne, simplifié et préventif.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cette loi met en place une nomenclature des armes selon leur régime juridique d’acquisition et de détention, "
                 "avec un objectif de modernisation des procédures et de renforcement de la sécurité.",
               ),
@@ -187,47 +187,47 @@ class ArmesIntroductionPage extends StatelessWidget {
             cardColor: cardMeasures,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Rendre obligatoires certaines peines complémentaires",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Dans le cadre de certaines infractions (atteintes à la vie, atteintes à l’intégrité physique ou psychique…), "
                 "les peines complémentaires auparavant laissées à l’appréciation du juge peuvent être rendues obligatoires.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Interdiction de détenir et de porter une arme.",
               ),
-              const _BulletPoint(text: "Retrait du permis de chasser."),
-              const _BulletPoint(text: "Confiscation des armes."),
-              const SizedBox(height: 12),
+              _BulletPoint(text: "Retrait du permis de chasser."),
+              _BulletPoint(text: "Confiscation des armes."),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Renforcer le volet pénal (trafic illégal d’armes)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Renforcer la répression pour mieux lutter contre les filières et le trafic illégal d’armes.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Créer de nouvelles mesures pour interdire l’accès aux armes",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’objectif est d’empêcher l’accès aux armes aux personnes condamnées pour des infractions "
                 "révélant un comportement violent.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Renforcer les saisies administratives"),
-              const _Paragraph(
+              _SubTitle("D) Renforcer les saisies administratives"),
+              _Paragraph(
                 "Désormais, toutes les catégories d’armes peuvent faire l’objet d’une saisie administrative.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "En pratique : la logique de la loi = simplifier pour les détenteurs légitimes, "
@@ -271,10 +271,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -339,7 +339,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -382,7 +382,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -444,7 +444,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -455,10 +455,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -470,13 +469,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -489,13 +487,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -140,8 +140,8 @@ class RefusVerificationsGPXPage extends StatelessWidget {
             accent: accentBlue,
             titleColor: textMain,
             children: [
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Le refus de se soumettre aux vérifications constitue un délit dès lors qu’une injonction régulière a été faite au conducteur : ",
                 ),
@@ -169,8 +169,8 @@ class RefusVerificationsGPXPage extends StatelessWidget {
                 ],
               ),
               const SizedBox(height: 12),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Important : le refus de dépistage (souffle/salivaire) n’est pas, à lui seul, une infraction pénale ; il déclenche l’obligation de se soumettre aux vérifications : ",
                 ),
@@ -249,188 +249,188 @@ class RefusVerificationsGPXPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de saisine"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Lieu de saisine"),
+              _Paragraph(
                 "Mentionner l’endroit exact où se situe l’équipage (commune, voie, point de repère).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) Instructions"),
-              const _Paragraph(
+              _SubTitle("2) Instructions"),
+              _Paragraph(
                 "Indiquer que l’équipage, en patrouille, agit conformément aux instructions permanentes du chef de service "
                 "(ou selon les instructions reçues).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3) Assistants"),
-              const _Paragraph(
+              _SubTitle("3) Assistants"),
+              _Paragraph(
                 "Citer les fonctionnaires accompagnants et préciser la tenue (uniforme, tenue civile, port du brassard POLICE).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("4) Mission"),
-              const _Paragraph("Indiquer le but de la mission initiale."),
-              const SizedBox(height: 10),
+              _SubTitle("4) Mission"),
+              _Paragraph("Indiquer le but de la mission initiale."),
+              SizedBox(height: 10),
 
-              const _SubTitle("5) Interception du véhicule"),
-              const _Paragraph(
+              _SubTitle("5) Interception du véhicule"),
+              _Paragraph(
                 "Préciser le cadre :\n"
                 "• suite à la constatation d’une infraction au code de la route (relater les faits observés), ou\n"
                 "• suite à un contrôle routier sans infraction préalable, ou\n"
                 "• suite à un contrôle préventif (initiative de l’agent / réquisition du procureur de la République).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("6) Contrôle"),
-              const _Paragraph(
+              _SubTitle("6) Contrôle"),
+              _Paragraph(
                 "Mentionner le contrôle : pièces afférentes à la conduite et à la circulation, obligation d’assurance "
                 "(consultation du fichier des véhicules assurés), et identification en style indirect (état civil + adresse), "
                 "à l’exclusion de tout autre élément de personnalité (familial/professionnel).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("7) Dépistages (alcool et stupéfiants)"),
+              _SubTitle("7) Dépistages (alcool et stupéfiants)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Rappeler que le refus de dépistage n’est pas une infraction pénale, mais entraîne l’obligation de se soumettre aux vérifications (",
                 ),
                 TextSpan(
                   text: "Article L. 234-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "Article L. 235-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("8) Information"),
-              const _Paragraph(
+              _SubTitle("8) Information"),
+              _Paragraph(
                 "En cas de refus du dépistage, préciser que le conducteur est informé que ce refus entraîne l’obligation "
                 "de procéder aux vérifications destinées à :\n"
                 "• établir un état alcoolique,\n"
                 "• rechercher et confirmer la présence d’un ou plusieurs produits stupéfiants.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("9) Déclarations"),
-              const _Paragraph(
+              _SubTitle("9) Déclarations"),
+              _Paragraph(
                 "Consigner les déclarations du contrevenant sur son premier refus de se soumettre aux vérifications "
                 "(style direct si possible).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("10) Réitération de l’injonction"),
+              _SubTitle("10) Réitération de l’injonction"),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Refus alcool — "),
+                  TextSpan(text: "Refus alcool — "),
                   TextSpan(
                     text: "Article L. 234-8 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : puni de 2 ans d’emprisonnement et de 4 500 € d’amende.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Refus stupéfiants — "),
+                  TextSpan(text: "Refus stupéfiants — "),
                   TextSpan(
                     text: "Article L. 235-3 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : puni de 2 ans d’emprisonnement et de 4 500 € d’amende.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("11) Réitération du refus"),
-              const _Paragraph(
+              _SubTitle("11) Réitération du refus"),
+              _Paragraph(
                 "Le refus doit être persistant et déterminé : il doit faire apparaître la volonté délibérée du conducteur "
                 "de refuser les vérifications. Détailler précisément.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("12) Cadre juridique"),
-              const _Paragraph(
+              _SubTitle("12) Cadre juridique"),
+              _Paragraph(
                 "Dès que les délits sont caractérisés, l’action de l’agent de police judiciaire se situe dans le cadre "
                 "du flagrant délit (à qualifier selon la situation).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("13) Retour au service"),
-              const _Paragraph(
+              _SubTitle("13) Retour au service"),
+              _Paragraph(
                 "Mentionner que la personne appréhendée accepte d’accompagner de son plein gré les fonctionnaires de police.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("14) Palpation de sécurité"),
-              const _Paragraph(
+              _SubTitle("14) Palpation de sécurité"),
+              _Paragraph(
                 "Uniquement si nécessaire (temps/lieu/risque). Si découverte d’objets : situer, décrire, présenter à la personne "
                 "qui peut faire une brève déclaration sur l’appartenance (style direct) sans que cela constitue une audition. "
                 "Objets appréhendés aux fins de remise à l’OPJ (D.R.D.A).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("15) Compte-rendu OPJ"),
-              const _Paragraph(
+              _SubTitle("15) Compte-rendu OPJ"),
+              _Paragraph(
                 "Compte-rendu verbal à l’OPJ. Mentionner les instructions éventuellement données.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("16) Énonciation terminale (clôture)"),
-              const _Paragraph(
+              _SubTitle("16) Énonciation terminale (clôture)"),
+              _Paragraph(
                 "Signature : si déclarations au style direct, la personne doit signer. "
                 "Si déclarations au style indirect, pas de signature. L’heure est facultative.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("17) Présentation à l’OPJ"),
-              const _Paragraph(
+              _SubTitle("17) Présentation à l’OPJ"),
+              _Paragraph(
                 "Présentation de l’individu en précisant l’heure. Compte-rendu verbal et éventuelle remise d’objets appréhendés. "
                 "Mentionner les instructions reçues.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("18) Mention — fichiers"),
-              const _Paragraph(
+              _SubTitle("18) Mention — fichiers"),
+              _Paragraph(
                 "Recherches administratives (FPR, SNPC). Préciser que les recherches ont été effectuées et que la personne ne fait l’objet d’aucune recherche.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("19) Mention — immobilisation"),
-              const _Paragraph(
+              _SubTitle("19) Mention — immobilisation"),
+              _Paragraph(
                 "Il peut être procédé d’office à l’immobilisation du véhicule pendant la durée de rétention du permis de conduire. "
                 "Elle est levée dès qu’un conducteur qualifié (proposé par le conducteur / l’accompagnateur de l’élève conducteur / "
                 "ou le propriétaire) peut assurer la conduite. Remettre un exemplaire de la fiche d’immobilisation.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("20) Mention — avis de rétention"),
-              const _Paragraph(
+              _SubTitle("20) Mention — avis de rétention"),
+              _Paragraph(
                 "Remettre un exemplaire de l’avis de rétention du permis de conduire au conducteur.",
               ),
             ],
@@ -444,52 +444,52 @@ class RefusVerificationsGPXPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentIndigo,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines principales (rappel)"),
+            children: const [
+              _SubTitle("Peines principales (rappel)"),
               _Paragraph.rich([
-                const TextSpan(text: "Refus alcool : "),
-                const TextSpan(
+                TextSpan(text: "Refus alcool : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 4 500 € d’amende — ",
                 ),
                 TextSpan(
                   text: "Article L. 234-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Refus stupéfiants : "),
-                const TextSpan(
+                TextSpan(text: "Refus stupéfiants : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 4 500 € d’amende — ",
                 ),
                 TextSpan(
                   text: "Article L. 235-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : en pratique, le refus se consomme instantanément ; la tentative est rarement pertinente à caractériser.",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Complicité : possible en théorie, mais à apprécier au cas par cas selon l’aide ou l’assistance apportée au refus.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Conseil rédactionnel : rester factuel (paroles, injonctions, refus) et bien chronologiser. "
@@ -533,10 +533,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -601,7 +601,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -644,7 +644,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -706,7 +706,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -717,10 +717,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -732,13 +731,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -751,13 +749,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -803,10 +797,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -912,8 +906,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -981,10 +975,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -1051,10 +1045,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -1093,9 +1087,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1130,7 +1124,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

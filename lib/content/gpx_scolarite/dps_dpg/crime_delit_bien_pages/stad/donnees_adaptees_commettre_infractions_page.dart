@@ -111,16 +111,16 @@ class DonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-3-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’importation, la détention, l’offre, la cession et la mise à disposition "
                       "de moyens/données adaptés pour commettre des atteintes aux systèmes de traitement automatisé de données.",
@@ -137,59 +137,59 @@ class DonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une fourniture de moyens"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une fourniture de moyens"),
+              _Paragraph(
                 "L’infraction vise plusieurs actes portant sur un équipement, un instrument, un programme informatique "
                 "ou toute donnée permettant de commettre une ou plusieurs atteintes à un système de traitement automatisé de données.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph("Sont sanctionnées :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _Paragraph("Sont sanctionnées :"),
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "L’importation : introduire quelque chose d’étranger.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "La détention : avoir en sa possession.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "L’offre : proposer/donner quelque chose à quelqu’un.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "La cession : abandonner/remettre à autrui.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "La mise à disposition : donner pour usage.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Des moyens conçus ou spécialement adaptés"),
-              const _Paragraph(
+              _SubTitle("B) Des moyens conçus ou spécialement adaptés"),
+              _Paragraph(
                 "Les moyens doivent être conçus ou spécialement adaptés pour commettre les infractions des articles 323-1 à 323-3 du Code pénal, à savoir :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Accès ou maintien frauduleux dans un système de traitement automatisé de données.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Entrave au fonctionnement d’un système de traitement automatisé de données.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Introduction, modification ou suppression frauduleuse de données.",
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Ces infractions peuvent ne pas avoir été commises (ou ne pas être révélées). "
                 "À l’inverse, si une atteinte est réalisée, le prévenu pourra être poursuivi comme complice de l’infraction commise.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette incrimination permet de sanctionner, par exemple, la simple détention ou mise à disposition de virus informatiques, "
                         "sans qu’il soit nécessaire que le virus ait été effectivement introduit dans un système.",
@@ -197,20 +197,20 @@ class DonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une absence de motif légitime"),
-              const _Paragraph(
+              _SubTitle("C) Une absence de motif légitime"),
+              _Paragraph(
                 "L’infraction ne devrait pas être retenue lorsque l’importation, la détention, l’offre, la cession "
                 "ou la mise à disposition est expressément justifiée par un motif légitime.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les motifs légitimes ne sont pas listés : peuvent notamment entrer en compte la recherche scientifique et technique "
                 "et la sécurisation des réseaux de communications électroniques et des systèmes d’information.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cette notion étant appréciée au cas par cas, il appartient aux magistrats d’évaluer la légitimité des motifs invoqués.",
               ),
             ],
@@ -245,80 +245,80 @@ class DonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’infraction est punie des peines prévues respectivement pour l’infraction elle-même "
                 "ou pour l’infraction la plus sévèrement réprimée (mécanisme de renvoi).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Renvois (principaux textes)"),
+              _SubTitle("Renvois (principaux textes)"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravations en cas de suppression/modification de données, altération du fonctionnement, "
                       "ou STAD à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation si l’infraction vise un STAD à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aggravation si l’infraction vise un STAD à caractère personnel mis en œuvre par l’État.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque l’infraction est commise en bande organisée.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 323-4-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque l’infraction expose autrui à un risque immédiat de mort/blessures graves ou fait obstacle aux secours.",
                 ),
@@ -334,94 +334,94 @@ class DonneesAdapteesCommettreInfractionsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines — repères usuels (selon le renvoi)"),
+            children: const [
+              _SubTitle("Peines — repères usuels (selon le renvoi)"),
               _Paragraph.rich([
-                const TextSpan(text: "Base (ex. "),
+                TextSpan(text: "Base (ex. "),
                 TextSpan(
                   text: "article 323-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") : "),
-                const TextSpan(
+                TextSpan(text: ") : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 100 000 € d’amende.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravations possibles (ex. "),
+                TextSpan(text: "Aggravations possibles (ex. "),
                 TextSpan(
                   text: "articles 323-1 alinéas 2 et 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "323-4-1",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "323-4-2",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") : jusqu’à 5 ans / 150 000 €, 7 ans / 300 000 € ou 10 ans / 300 000 € selon les cas.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 323-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (amende selon l’article 131-38 et peines de l’article 131-39 ; interdiction d’activité liée à l’infraction).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _BulletPoint(
                 text:
                     "Tentative : OUI — prévue et réprimée par l’article 323-7 du Code pénal.",
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 "Comme pour toute tentative : commencement d’exécution et absence de résultat en raison de circonstances indépendantes de la volonté de l’auteur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — conformément à "),
+                TextSpan(text: "Complicité : OUI — conformément à "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -462,10 +462,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -530,7 +530,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -573,7 +573,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -635,7 +635,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -646,10 +646,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -661,13 +660,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -680,13 +678,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -102,7 +102,7 @@ class QuizQuestion {
 
 final List<QuizQuestion> questionsLegitimeDefense = [
   // ===================== FACILE (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités",
     question:
         "La légitime défense fait partie de quelle catégorie juridique en droit pénal ?",
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La légitime défense est un fait justificatif qui rend l'acte pénalement non punissable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités",
     question:
         "Lorsque la légitime défense est reconnue, la personne ayant commis l'acte de défense est :",
@@ -130,7 +130,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte précise : « N'est pas pénalement responsable la personne qui… accomplit un acte commandé par la nécessité de la légitime défense ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des personnes",
     question:
         "Selon le document, la légitime défense des personnes est prévue par :",
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le titre I indique : « LA LÉGITIME DÉFENSE D'UNE PERSONNE art. 122-5 C.P. ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des personnes",
     question:
         "La légitime défense des personnes suppose une atteinte injustifiée envers :",
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte vise « une atteinte injustifiée envers elle-même ou autrui ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des personnes",
     question:
         "Combien de conditions principales sont listées pour qu'une personne soit en situation de légitime défense DES PERSONNES ?",
@@ -172,7 +172,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma distingue : I- Lorsqu'une personne subit une atteinte ; II- Elle ou une autre personne peut accomplir un acte de défense.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Atteinte - Personnes",
     question:
         "Pour la légitime défense des personnes, l'atteinte doit être injustifiée. Cela signifie :",
@@ -186,7 +186,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le document précise : « INJUSTIFIÉE : sans motif légitime, contraire au droit ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Atteinte - Personnes",
     question:
         "Une atteinte \"actuelle\" au sens de la légitime défense des personnes signifie :",
@@ -200,7 +200,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte précise : « ACTUELLE : en train de se produire ou sur le point de se réaliser (imminente) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Atteinte - Personnes",
     question:
         "Pour être en état de légitime défense, l'atteinte doit être réelle. Cela implique :",
@@ -214,7 +214,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le document indique : « RÉELLE : L'atteinte doit exister de manière certaine. Une crainte subjective ne suffit pas ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Pour la légitime défense des personnes, un acte de défense \"nécessaire\" signifie :",
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte précise : « Il faut que la personne atteinte n'ait aucun autre moyen de se soustraire au danger ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Dans la légitime défense des personnes, l'acte de défense doit être :",
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma liste ces trois conditions pour l'acte de défense : nécessaire, simultané, proportionné.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Un acte de défense \"simultané\" signifie que la personne se défend :",
@@ -256,7 +256,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le document indique : « SIMULTANÉ : immédiat par rapport à l'atteinte ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "Peut-on invoquer la légitime défense pour une réaction tardive à une agression passée (vengeance) ?",
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma précise qu'on ne peut se défendre « par réaction tardive à une atteinte déjà passée (vengeance) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acte de défense - Personnes",
     question:
         "La condition de proportionnalité, pour la légitime défense des personnes, signifie que :",
@@ -285,7 +285,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte indique : « Les moyens de défense employés doivent être mesurés et en rapport avec la gravité de l'atteinte ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "La légitime défense des biens est prévue par quel texte selon le document ?",
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le titre II mentionne : « LA LÉGITIME DÉFENSE D'UN BIEN art. 122-5 al. 2 C.P. ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question: "La légitime défense des biens est décrite comme :",
     options: [
@@ -312,7 +312,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte précise : « Plus limitée que celle des personnes, elle est autorisée… ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "Pour invoquer la légitime défense d'un bien, celui-ci doit être menacé par :",
@@ -326,7 +326,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma indique : « Lorsqu'un bien est menacé par l'exécution d'un CRIME ou d'un DÉLIT ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "Dans la légitime défense d'un bien, l'acte de défense NE doit PAS être :",
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte précise : « un acte de défense, autre qu'un homicide volontaire ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Légitime défense des biens",
     question:
         "La légitime défense des biens impose que l'acte de défense soit :",
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte mentionne : « lorsque cet acte est strictement nécessaire au but poursuivi ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés",
     question: "Les cas présumés de légitime défense sont prévus à l'article :",
     options: [
@@ -367,7 +367,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le titre III indique : « CAS PRÉSUMÉS DE LÉGITIME DÉFENSE art. 122-6 C.P. ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés",
     question:
         "Dans les cas présumés de légitime défense, la personne ayant accompli l'acte est :",
@@ -381,7 +381,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte d'en-tête précise : « EST PRÉSUMÉ AVOIR AGI EN ÉTAT DE LÉGITIME DÉFENSE : CELUI QUI ACCOMPLIT L'ACTE… ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Dans le premier cas présumé de légitime défense, l'acte vise à :",
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma indique : « pour REPOUSSER, DE NUIT [...] L'ENTRÉE [...] DANS UN LIEU HABITÉ ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question: "Le premier cas présumé de légitime défense suppose une entrée :",
     options: [
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte liste : « par EFFRACTION ou par VIOLENCE ou par RUSE ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Le lieu visé dans le premier cas présumé de légitime défense est :",
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma précise : « DANS UN LIEU HABITÉ : (maison ou appartement habités.) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Dans le premier cas présumé, la notion de \"nuit\" est définie comme :",
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le document rappelle : « DE NUIT (intervalle de temps compris entre le coucher et le lever du soleil) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Dans le deuxième cas présumé de légitime défense, on se défend contre les auteurs :",
@@ -450,7 +450,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma vise : « contre les auteurs de VOLS ou de PILLAGES ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Dans le deuxième cas présumé, les vols ou pillages doivent être :",
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le schéma précise : « EXÉCUTÉS avec VIOLENCE : (Coups, tortures, etc.) ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Le deuxième cas présumé de légitime défense s'applique lorsque la personne se défend :",
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte indique : « Pour SE DÉFENDRE DE JOUR comme de NUIT contre les auteurs… ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - nature de la présomption",
     question:
         "La présomption de légitime défense prévue à l'article 122-6 est :",
@@ -493,7 +493,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le document précise : « Dans les 2 cas, il s'agit d'une PRÉSOMPTION de légitime défense qui peut donc céder devant la preuve contraire. »",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités",
     question:
         "Dans les cas présumés de légitime défense, qui peut apporter la preuve contraire pour renverser la présomption ?",
@@ -509,7 +509,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
   ),
 
   // ===================== MOYENNE (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Atteinte",
     question:
         "Une personne reçoit un message anonyme disant : « Je te frapperai demain ». Elle frappe aujourd'hui l'auteur supposé. Peut-elle invoquer la légitime défense des personnes ?",
@@ -523,7 +523,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La légitime défense exige une atteinte ACTUELLE ou imminente, pas une simple menace future basée sur une crainte subjective.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Atteinte",
     question:
         "Un individu estime que son voisin pourrait un jour l'agresser en raison d'un conflit de voisinage. Il achète une arme et tire préventivement. Selon le document, la légitime défense :",
@@ -538,7 +538,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte précise que l'acte de défense ne peut viser « une attaque future ou éventuelle (peur) ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Atteinte",
     question:
         "Un automobiliste pense qu'un piéton va peut-être l'insulter et le frappe avant toute parole. L'atteinte qu'il invoque est-elle réelle au sens du document ?",
@@ -552,7 +552,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le document souligne qu'une « crainte subjective ne suffit pas » : l'atteinte doit exister de manière certaine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Acte de défense",
     question:
         "Une victime poursuivie dans la rue peut fuir sans danger mais préfère rester et frapper lourdement son poursuivant. La condition de nécessité est-elle remplie ?",
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La défense doit être NÉCESSAIRE : s'il existe une autre issue sûre pour échapper au danger, cette condition peut faire défaut.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Simultanéité",
     question:
         "Une personne est giflée dans un bar. Dix minutes plus tard, à l'extérieur, elle revient frapper violemment l'auteur de la gifle. Peut-elle invoquer la légitime défense ?",
@@ -582,7 +582,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte exclut « la réaction tardive à une atteinte déjà passée (vengeance) » de la légitime défense.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Proportionnalité",
     question:
         "Quel exemple illustre un défaut de proportionnalité entre l'atteinte et la défense ?",
@@ -596,7 +596,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La riposte doit être proportionnée à la gravité de l'atteinte ; ici, l'emploi d'une arme létale est manifestement excessif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Infraction en cours",
     question:
         "Pour la légitime défense d'un bien, l'acte de défense a pour but principal :",
@@ -610,7 +610,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte parle d'un acte de défense visant à « interrompre l'exécution d'un crime ou d'un délit contre un bien ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Homicide exclu",
     question:
         "Un propriétaire surprend un voleur en train de briser la vitre de sa voiture et lui tire dessus mortellement. Peut-il en principe invoquer la légitime défense DES BIENS ?",
@@ -625,7 +625,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'article 122-5 al. 2 vise un « acte de défense, autre qu'un homicide volontaire ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Proportionnalité",
     question:
         "Un commerçant surprend un voleur qui emporte une tablette de chocolat. Il le frappe avec une barre de fer lui causant une ITT de 30 jours. La condition de proportionnalité est-elle respectée ?",
@@ -640,7 +640,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Les moyens employés doivent être proportionnés à la gravité de l'infraction ; une violence grave pour un objet de faible valeur est excessive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Charge de la preuve",
     question:
         "Selon le document, en cas de légitime défense des biens, qui doit démontrer que la proportionnalité des moyens a été respectée ?",
@@ -654,7 +654,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte indique : « Il appartient à la personne poursuivie de démontrer que le principe de proportionnalité a été respecté ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Nature de l'infraction",
     question:
         "La tentative de vol d'un bien (délit) en cours d'exécution peut-elle, en principe, justifier la légitime défense des biens ?",
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La condition est l'exécution d'un crime ou d'un délit contre un bien, ce qui inclut l'exécution d'un vol en cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Une personne repousse à coups de bâton, de nuit, l'entrée par effraction d'un inconnu dans son appartement occupé. Ce cas entre-t-il dans la présomption de légitime défense de l'article 122-6 ?",
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "De nuit, entrée par effraction, dans un lieu habité, pour repousser l'entrée : la présomption de l'article 122-6 joue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Le premier cas présumé de légitime défense (repousser de nuit l'entrée par effraction dans un lieu habité) s'applique-t-il à un garage désaffecté non habité ?",
@@ -696,7 +696,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte vise explicitement « un lieu habité : maison ou appartement habités ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 1er cas",
     question:
         "Un occupant repousse de jour l'entrée par ruse dans son appartement habité. La présomption de légitime défense de l'article 122-6 s'applique-t-elle ?",
@@ -710,7 +710,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le premier cas présumé exige expressément que l'entrée soit repoussée « DE NUIT ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Une personne se défend de jour contre des auteurs de vol avec violence dans la rue. Peut-elle bénéficier du deuxième cas présumé de légitime défense ?",
@@ -724,7 +724,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le deuxième cas présumé concerne la défense « de jour comme de nuit » contre les auteurs de vols ou pillages exécutés avec violence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - 2e cas",
     question:
         "Une personne se défend contre des voleurs qui tentent de la dépouiller sans violence (vol à la tire discret). La présomption de l'article 122-6 s'applique-t-elle ?",
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte mentionne des « VOLS ou PILLAGES exécutés avec violence » ; l'absence de violence exclut la présomption.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Preuve contraire",
     question:
         "Dans un cas présumé de légitime défense, il apparaît que la personne a poursuivi l'agresseur en fuite et l'a frappé à terre. Que peut faire le juge ?",
@@ -752,7 +752,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La présomption est simple et « peut céder devant la preuve contraire ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison personnes/biens",
     question:
         "Quelle différence majeure existe entre la légitime défense des personnes et celle des biens ?",
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'article 122-5 al. 2 vise expressément un acte de défense « autre qu'un homicide volontaire » pour les biens.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités - Personnes",
     question:
         "Dans la formule générale de l'article 122-5, la légitime défense des personnes exige que l'acte soit commandé par :",
@@ -781,7 +781,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte parle d'un acte « commandé par la nécessité de la légitime défense d'elle-même ou d'autrui ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Autrui",
     question:
         "Un passant intervient pour protéger une victime inconnue violemment agressée dans le métro. Peut-il, en principe, invoquer la légitime défense des personnes ?",
@@ -795,7 +795,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'article 122-5 vise la légitime défense d'elle-même ou d'autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Strictement nécessaire",
     question:
         "Un commerçant enferme un voleur dans une réserve, l'attache et le frappe pendant une heure. L'exigence d'acte « strictement nécessaire au but poursuivi » est-elle respectée ?",
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'acte doit être strictement nécessaire au but d'interrompre l'exécution du crime ou du délit, ce qui n'est plus le cas ici.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Crime ou délit",
     question:
         "La dégradation légère d'un bien constituant une contravention (et non un délit) permet-elle de se prévaloir de la légitime défense des biens de l'article 122-5 al. 2 ?",
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte vise « un crime ou un délit contre un bien » ; les simples contraventions sont en principe exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Simultanéité",
     question:
         "Lors d'une agression, une personne reçoit un coup de poing puis, dans le même mouvement, repousse violemment l'agresseur qui chute. La condition de simultanéité est-elle a priori remplie ?",
@@ -840,7 +840,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
   ),
 
   // ===================== DIFFICILE (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Analyse fine",
     question:
         "Une personne insultée gravement (mais sans geste physique) frappe immédiatement l'auteur des insultes. Quel élément de la légitime défense des personnes fait défaut le plus clairement ?",
@@ -854,7 +854,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La légitime défense des personnes vise une atteinte injustifiée à la personne, généralement corporelle ou du moins sérieuse ; de simples injures ne caractérisent pas toujours une atteinte justifiant une riposte violente.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Analyse fine",
     question:
         "Une personne menacée au couteau par un agresseur peut, pour se défendre, saisir un objet contondant et blesser gravement l'agresseur. En cas de poursuites, l'analyse de la proportionnalité se fera en comparant :",
@@ -869,7 +869,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La proportionnalité se mesure entre gravité de l'attaque (arme blanche) et moyens de défense choisis.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Cas limite",
     question:
         "Un agent de sécurité repousse un individu qui tente de le frapper avec un poing, en utilisant une clé d'étranglement prolongée, causant un grave dommage. Quel critère risque-t-il d'être jugé non respecté ?",
@@ -883,7 +883,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le maintien prolongé d'une clé d'étranglement peut être jugé excessif au regard d'un simple coup de poing.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Cas pratique",
     question:
         "Un propriétaire déclenche manuellement, au moment où il aperçoit un voleur pénétrer dans son entrepôt pour voler du matériel, un dispositif automatique qui enferme le voleur dans une cage métallique sans lui causer de blessure. Au regard de l'article 122-5 al. 2, cette riposte :",
@@ -898,7 +898,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le dispositif vise à interrompre le délit sans porter d'atteinte corporelle grave, ce qui peut répondre aux exigences de nécessité et proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Homicide et personnes",
     question:
         "Un individu vole un sac à main en tirant violemment sur la victime, qui chute. Le compagnon de la victime tire immédiatement, à balle réelle, sur le voleur et le tue. Sur le terrain de la légitime défense DES PERSONNES, l'homicide pourrait-il être examiné ?",
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La défense porte ici sur la personne agressée (violence au moment du vol) ; la légitime défense des PERSONNES peut théoriquement aller jusqu'à l'homicide si les autres conditions sont réunies.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Interprétation",
     question:
         "Dans le premier cas présumé (entrée de nuit par effraction dans un lieu habité), la personne qui frappe l'intrus à l'extérieur de l'immeuble, alors que celui-ci rebrousse chemin avant l'entrée, peut-elle bénéficier automatiquement de la présomption ?",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La présomption suppose que l'acte soit accompli pour « repousser l'entrée » ; une poursuite à l'extérieur peut apparaître détachée de ce but.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Interprétation",
     question:
         "Un occupant blesse gravement un individu qui, de nuit, force la porte de son appartement habité à coups de pied (violence) et réussit à pénétrer. L'occupant le frappe alors. La présomption de l'article 122-6 :",
@@ -943,7 +943,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La jurisprudence admet que la défense pendant la pénétration peut encore être rattachée au fait de repousser l'entrée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas présumés - Vols violents",
     question:
         "Une victime se défend de jour contre les auteurs d'un pillage commis sans violence sur les personnes (uniquement dégradations de biens). Peut-elle bénéficier du deuxième cas présumé ?",
@@ -958,7 +958,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Le texte souligne expressément l'exécution « avec violence ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes/Biens - Qualification",
     question:
         "Un individu tente d'incendier un immeuble habité de nuit. Un occupant sort et lui inflige des blessures pour l'empêcher de poursuivre. Juridiquement, la défense peut être analysée prioritairement comme :",
@@ -973,7 +973,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'incendie met en danger les personnes et les biens ; la défense des personnes (plus favorable) sera souvent mobilisée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Biens - Charge probatoire",
     question:
         "Dans une affaire de défense de biens, le prévenu affirme avoir seulement poussé un voleur pour l'arrêter, tandis que les blessures constatées laissent penser à des coups répétés. Concernant la proportionnalité, le document rappelle que :",
@@ -988,7 +988,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'article précise que « la personne poursuivie » doit démontrer que le principe de proportionnalité a été respecté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Nécessité",
     question:
         "Un policier en civil est frappé par un individu. Il se trouve à proximité immédiate de collègues en uniforme vers lesquels il pourrait se réfugier sans danger. Il choisit malgré tout une riposte très violente. Quel critère de la légitime défense peut être contesté ?",
@@ -1002,7 +1002,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La possibilité de se soustraire au danger en rejoignant les collègues peut conduire à considérer que la riposte n'était pas strictement nécessaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes - Peur vs réalité",
     question:
         "Une personne souffrant de paranoïa croit que son voisin veut la tuer. Sans geste hostile de ce voisin, elle l'attaque par \"prévention\". Selon le document, la légitime défense :",
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
   ),
 
   // ===================== EXPERT (≈30) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Articulation 122-5 / 122-6",
     question:
         "Lorsque la présomption de légitime défense de l'article 122-6 est écartée par la preuve contraire, le juge :",
@@ -1033,7 +1033,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'échec de la présomption n'exclut pas l'examen de la légitime défense classique.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Qualification mixte",
     question:
         "Lorsqu'une personne repousse, de nuit, l'entrée par effraction d'un cambrioleur dans sa maison, en lui tirant mortellement dessus, l'analyse juridique la plus complète consiste à :",
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "L'homicide interdit la légitime défense DES BIENS mais la défense DES PERSONNES reste envisageable, sous contrôle strict de proportionnalité.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Biens et personnes",
     question:
         "Dans un vol avec violence, la victime protège à la fois son intégrité physique et son sac à main. La légitime défense sera en priorité fondée sur :",
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "En pratique, lorsqu'une atteinte aux personnes existe, le régime plus large de la défense des personnes est privilégié.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Crime contre un bien",
     question:
         "Un individu tente de commettre un crime d'incendie volontaire contre un entrepôt vide. Le propriétaire intervient et blesse légèrement l'auteur avec une arme non létale. Sur le terrain de la légitime défense des biens, le juge devra principalement vérifier :",
@@ -1077,7 +1077,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Ce sont les trois axes d'analyse prévus à l'article 122-5 al. 2.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Intrusion nocturne",
     question:
         "Une personne installe un piège automatique létal dans son couloir (fusil relié à la porte) pour se protéger des intrusions nocturnes. Aucune présence humaine n'est requise au déclenchement. En cas de décès d'un cambrioleur, la qualification de légitime défense :",
@@ -1092,7 +1092,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La légitime défense suppose un acte humain accompli dans le même temps en réaction à l'atteinte ; un piège automatique préprogrammé ne répond pas à cette exigence.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Appréciation in concreto",
     question:
         "Dans l'appréciation de la proportionnalité en légitime défense, la jurisprudence tient compte :",
@@ -1107,7 +1107,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La proportionnalité est appréciée in concreto, au regard de l'ensemble de la situation au moment des faits.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Poursuite de l'agresseur",
     question:
         "Une victime parvient à faire fuir son agresseur. Dix minutes plus tard, elle le retrouve à distance, sans danger immédiat, et le frappe. Sur le terrain de la légitime défense :",
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "La défense ne peut être une « réaction tardive à une atteinte déjà passée (vengeance) ».",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Défense d'autrui",
     question:
         "Un individu neutralise violemment un agresseur qui tente d'étrangler une victime. Il est poursuivi pour violences aggravées. Pour caractériser la légitime défense d'autrui, le juge devra examiner notamment :",
@@ -1137,7 +1137,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
         "Les mêmes critères que pour la défense de soi s'appliquent à la défense d'autrui.",
     difficulty: "Expert",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expert - Chevauchement biens/personnes",
     question:
         "Lorsqu'un cambrioleur pénètre de nuit dans un appartement occupé, armé d'un couteau, la défense de l'occupant sera juridiquement fondée :",
@@ -1158,7 +1158,7 @@ final List<QuizQuestion> questionsLegitimeDefense = [
 // PAGE
 // ============================================================================
 class QuizLegitimeDefensePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/legitimedefense';
+  static const String routeName = '/gpx/dps/generalites/quiz/legitimedefense';
   final String uid;
   final String email;
 
@@ -1490,7 +1490,7 @@ class _QuizLegitimeDefensePageState extends State<QuizLegitimeDefensePage>
         // hauteur “structurelle” du bas (bouton + marges)
         const double kButtonHeight = 56;
         const double kButtonVPad = 16; // safe area min bottom padding = 16
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1692,7 +1692,7 @@ class _QuizLegitimeDefensePageState extends State<QuizLegitimeDefensePage>
       barrierDismissible: true,
       barrierLabel: 'Résultat',
       // On garde un léger assombrissement, le flou sera appliqué par-dessus.
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1846,7 +1846,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2374,10 +2373,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2748,7 +2748,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2789,9 +2789,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsEnquetePrelim = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Saisie comptes bancaires",
     question:
         "Dans le cadre de l’enquête préliminaire, la saisie des comptes bancaires sert principalement à :",
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
         "La saisie des comptes bancaires permet de préserver des sommes d’argent, y compris numériques, pour éviter leur disparition avant la fin de la procédure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature",
     question: "L’enquête préliminaire est :",
     options: [
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Procureur",
     question: "L’objectif principal de l’enquête préliminaire est :",
     options: [
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Police judiciaire",
     question: "Qui diligente l’enquête préliminaire ?",
     options: ["La police judiciaire", "Le maire", "Le juge civil"],
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Initiative — Déclenchement",
     question: "Une enquête préliminaire peut être ouverte :",
     options: [
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Risques",
     question:
         "Pourquoi l’enquête préliminaire doit-elle être strictement encadrée ?",
@@ -182,7 +182,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Champ",
     question:
         "Quelles infractions peuvent faire l’objet d’une enquête préliminaire ?",
@@ -197,7 +197,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Flagrance",
     question:
         "Peut-on traiter une infraction flagrante en enquête préliminaire ?",
@@ -212,7 +212,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Limitations — Information judiciaire",
     question:
         "Quand la police judiciaire doit-elle cesser d’agir en enquête préliminaire ?",
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Principe",
     question:
         "Selon le texte, qui peut être impliqué dans une enquête préliminaire ?",
@@ -244,7 +244,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Fondement",
     question:
         "Quels articles du Code de procédure pénale encadrent l’enquête préliminaire ?",
@@ -255,7 +255,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature — Caractère",
     question: "L’enquête préliminaire est décrite comme une enquête :",
     options: [
@@ -268,7 +268,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Renseignement",
     question: "L’enquête préliminaire permet d’obtenir :",
     options: [
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Finalité — Procureur",
     question:
         "La décision que le procureur prend à l’issue de l’enquête préliminaire concerne :",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — PJ",
     question: "Qui met en œuvre l’enquête préliminaire ?",
     options: ["La police judiciaire", "Les pompiers", "Le préfet"],
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Initiative — Parquet",
     question: "L’enquête préliminaire peut être diligentée :",
     options: [
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Besoin d’encadrement",
     question:
         "Pourquoi l’enquête préliminaire nécessite-t-elle un encadrement strict ?",
@@ -334,7 +334,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Portée",
     question: "L’enquête préliminaire peut porter sur :",
     options: [
@@ -347,7 +347,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Alternative",
     question:
         "Pourquoi un délit flagrant peut-il être traité en enquête préliminaire ?",
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information judiciaire — Connaissance",
     question:
         "Les actes d’enquête préliminaire deviennent irréguliers lorsque :",
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Validité — Rétroactivité",
     question:
         "Le passage à l’information judiciaire invalide-t-il rétroactivement les actes d’enquête préliminaire ?",
@@ -393,7 +393,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Résidence",
     question:
         "Selon le texte, qui peut être concerné par une enquête préliminaire ?",
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Diplomates",
     question:
         "Quelle caractéristique limite les mesures d’enquête envers les agents diplomatiques ?",
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Statut — Président",
     question: "Le Président de la République est :",
     options: [
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Règles spéciales",
     question: "Les agents consulaires bénéficient :",
     options: [
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Suspension",
     question:
         "En enquête préliminaire, les poursuites contre un parlementaire peuvent être :",
@@ -465,7 +465,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Mesures coercitives",
     question:
         "Avant d’appliquer une garde à vue à un parlementaire, il faut obtenir :",
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Domicile",
     question:
         "L’introduction dans un domicile en enquête préliminaire est en principe subordonnée à :",
@@ -493,7 +493,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Consentement",
     question:
         "L’assentiment pour une perquisition en enquête préliminaire doit être :",
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — C.J.penal",
     question:
         "Le recours au J.L.D. pour une perquisition en enquête préliminaire intervient :",
@@ -518,7 +518,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information judiciaire — Effet",
     question:
         "Quel principe fait que la police judiciaire cesse d’agir librement en enquête préliminaire après l’ouverture d’une information judiciaire ?",
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Diplomatie",
     question:
         "Les immunités des agents diplomatiques en enquête préliminaire ont pour origine :",
@@ -548,7 +548,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Fondement",
     question:
         "Le régime dérogatoire applicable aux parlementaires en enquête préliminaire vise à protéger :",
@@ -562,7 +562,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Gravité",
     question:
         "Pourquoi une perquisition sans assentiment peut-elle être autorisée en enquête préliminaire ?",
@@ -577,7 +577,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JLD — Rôle",
     question:
         "Le rôle du J.L.D. dans les perquisitions sans assentiment consiste à :",
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Vie privée",
     question:
         "Quelle raison justifie la protection renforcée du domicile en enquête préliminaire ?",
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisition — Formalisme",
     question:
         "Pourquoi l’assentiment écrit doit-il être annexé à la procédure ?",
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions graves — 706-73",
     question:
         "Les perquisitions sans assentiment en enquête préliminaire peuvent viser les infractions listées dans :",
@@ -634,7 +634,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Garanties",
     question:
         "L'intervention du J.L.D. dans les perquisitions sans consentement représente :",
@@ -649,7 +649,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== BLOC 3 — NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Qualification",
     question:
         "Comment l’enquête préliminaire est-elle classiquement caractérisée ?",
@@ -664,7 +664,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Fréquence",
     question: "Dans la pratique, l’enquête préliminaire est :",
     options: [
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Rôle du procureur",
     question: "L’enquête préliminaire a pour but d’aider le procureur à :",
     options: [
@@ -692,7 +692,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acteurs — Types d’enquêteurs",
     question:
         "Quels membres de la police judiciaire peuvent diligenter une enquête préliminaire ?",
@@ -706,7 +706,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Choix du cadre",
     question:
         "Le choix entre enquête de flagrance et enquête préliminaire pour un crime flagrant relève :",
@@ -721,7 +721,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Risque",
     question:
         "Que rappelle le texte à propos des libertés individuelles en enquête préliminaire ?",
@@ -737,7 +737,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Champ personnel",
     question:
         "Le principe posé en matière de personnes concernées par l’enquête préliminaire est :",
@@ -752,7 +752,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Exceptions",
     question:
         "Les exceptions au principe de compétence personnelle large sont principalement liées :",
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Notion de lieu privé",
     question:
         "En enquête préliminaire, l’introduction dans un lieu privé, notamment un domicile, suppose :",
@@ -782,7 +782,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Objet",
     question:
         "Les perquisitions en enquête préliminaire visent notamment à découvrir :",
@@ -798,7 +798,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== BLOC 3 — NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Confiscation",
     question:
         "Les perquisitions peuvent viser des biens dont la confiscation est prévue par :",
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Consentement",
     question:
         "En principe, pour perquisitionner un lieu privé en enquête préliminaire, il faut :",
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Forme de l’assentiment",
     question:
         "Selon le texte, l’assentiment écrit exigé pour une perquisition en enquête préliminaire doit être :",
@@ -843,7 +843,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Pièce de procédure",
     question:
         "Que devient l’écrit matérialisant l’assentiment à la perquisition ?",
@@ -858,7 +858,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime dérogatoire — Crimes et délits graves",
     question:
         "Pour quels faits le J.L.D. peut-il autoriser une perquisition sans l’assentiment de l’occupant en enquête préliminaire ?",
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régime dérogatoire — Criminalité organisée",
     question:
         "Les perquisitions sans assentiment en enquête préliminaire peuvent aussi viser certaines infractions prévues par :",
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Catégories protégées",
     question:
         "Parmi les catégories ci-dessous, laquelle fait l’objet de règles particulières en enquête préliminaire ?",
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes — Mesures restrictives",
     question:
         "Les mesures privatives ou restrictives de liberté envisagées contre un parlementaire en enquête préliminaire :",
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Mise en œuvre",
     question: "Le texte précise que l’enquête préliminaire est :",
     options: [
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Libertés — Encadrement procédural",
     question:
         "L’existence de risques pour les libertés individuelles en enquête préliminaire justifie :",
@@ -947,7 +947,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== BLOC 3 — NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Enquête préliminaire / Information judiciaire",
     question:
         "Pourquoi les actes accomplis en enquête préliminaire avant la connaissance de l’ouverture d’une information judiciaire demeurent-ils valables ?",
@@ -963,7 +963,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Caractère non rétroactif",
     question:
         "Quelle notion juridique illustre le fait que l’ouverture d’une information judiciaire n’annule pas les actes déjà accomplis en enquête préliminaire ?",
@@ -978,7 +978,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Portée pratique",
     question:
         "En pratique, que provoque l’immunité dont bénéficient les agents diplomatiques en enquête préliminaire ?",
@@ -994,7 +994,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Risque et contrôle",
     question:
         "Comment concilier l’absence de coercition « classique » de l’enquête préliminaire avec le risque pour les libertés individuelles ?",
@@ -1010,7 +1010,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Régime mixte",
     question:
         "Pourquoi le régime des perquisitions en enquête préliminaire est-il présenté comme particulièrement protecteur ?",
@@ -1026,7 +1026,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parlementaires — Conciliation des intérêts",
     question:
         "Que cherche à concilier le régime particulier applicable aux parlementaires en enquête préliminaire ?",
@@ -1042,7 +1042,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Atteinte aux droits fondamentaux",
     question:
         "Pourquoi la perquisition sans assentiment dans un domicile est-elle soumise à l’intervention du J.L.D. ?",
@@ -1058,7 +1058,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domaine — Actualisation des règles",
     question:
         "Quel enseignement tire-t-on de la mention « Version au 01/07/2025 — SDCP — Tous droits réservés UoPl » figurant en fin de texte ?",
@@ -1074,7 +1074,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Domaine matériel et personnel",
     question:
         "Que révèle la combinaison des sections « infractions », « personnes » et « lieux » du chapitre 1 sur le domaine d’application de l’enquête préliminaire ?",
@@ -1092,7 +1092,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
 
   // ===================== CONSTATATIONS, RÉQUISITIONS & PRÉLÈVEMENTS — BLOC 1 =====================
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Ouverture de l’enquête",
     question: "Quel acte ouvre concrètement l’enquête préliminaire ?",
     options: [
@@ -1106,7 +1106,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Origine",
     question: "Le procès-verbal de saisine peut être ouvert notamment :",
     options: [
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Rôle de l’OPJ",
     question: "À compter du premier procès-verbal de saisine, l’O.P.J. :",
     options: [
@@ -1135,7 +1135,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport sur les lieux — Possibilité",
     question:
         "En enquête préliminaire, les enquêteurs peuvent-ils se transporter sur les lieux ?",
@@ -1150,7 +1150,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport sur les lieux — Lieux privés",
     question:
         "En enquête préliminaire, l’introduction dans des lieux privés lors du transport sur les lieux suppose :",
@@ -1166,7 +1166,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport sur les lieux — Autorisation",
     question:
         "Comment doit être consignée l’autorisation donnée pour entrer dans un lieu privé lors du transport sur les lieux ?",
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport vs perquisition",
     question:
         "Quelle différence est rappelée entre l’autorisation d’entrer dans un lieu privé et l’assentiment en matière de perquisition ?",
@@ -1197,7 +1197,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Définition",
     question: "Les constatations désignent principalement :",
     options: [
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Finalité",
     question: "La finalité des constatations en enquête préliminaire est :",
     options: [
@@ -1225,7 +1225,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Principe",
     question: "Les réquisitions permettent à l’O.P.J. ou au procureur :",
     options: [
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Constatations & réquisitions",
     question:
         "Les constatations et réquisitions en enquête préliminaire sont notamment encadrées par :",
@@ -1257,7 +1257,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions judiciaires — Art. 77-1",
     question:
         "Selon l’article 77-1 C.P.P., pour procéder à des constatations ou examens techniques ou scientifiques, l’O.P.J. :",
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personne qualifiée — Statut",
     question:
         "La personne qualifiée requise sur le fondement de l’article 77-1 C.P.P. :",
@@ -1288,7 +1288,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif des réquisitions — Petites infractions",
     question:
         "Quel objectif le législateur poursuit-il en encadrant les réquisitions d’examens ou d’expertises pour les petites infractions ?",
@@ -1304,7 +1304,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes qualifiées — Article 39-3",
     question: "En application de l’article 39-3 C.P.P., le procureur peut :",
     options: [
@@ -1319,7 +1319,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Exemples de personnes qualifiées",
     question:
         "Parmi les personnes suivantes, lesquelles peuvent être requises comme personnes qualifiées ?",
@@ -1335,7 +1335,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Jurisprudence — Limite des missions 77-1",
     question:
         "Selon la jurisprudence rappelée, une mission confiée à une « personne qualifiée » sur le fondement de l’article 77-1 C.P.P. :",
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions d’ordre général — Art. 77-1-1",
     question:
         "Les réquisitions d’ordre général prévues par l’article 77-1-1 C.P.P. permettent :",
@@ -1366,7 +1366,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions d’ordre général — Secret pro",
     question:
         "Face à une réquisition d’ordre général, le secret professionnel :",
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Refus de déférer",
     question:
         "Le refus injustifié de répondre à une réquisition régulièrement formulée est susceptible de constituer :",
@@ -1397,7 +1397,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE (suite) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Conditions",
     question:
         "Les réquisitions portant sur les données de connexion ne sont possibles que si l’enquête concerne :",
@@ -1413,7 +1413,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Nature",
     question: "Les données de connexion visées peuvent notamment comprendre :",
     options: [
@@ -1428,7 +1428,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Détenteurs",
     question: "Les données de connexion sont détenues principalement par :",
     options: [
@@ -1443,7 +1443,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Vie privée",
     question:
         "Pourquoi la Cour de cassation insiste-t-elle sur un contrôle renforcé du recours aux données de connexion ?",
@@ -1458,7 +1458,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données de connexion — Proportionnalité",
     question:
         "En cas de contestation d’une réquisition de données de connexion, le juge doit vérifier :",
@@ -1473,7 +1473,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions informatiques/téléphoniques — Contenu",
     question:
         "Les réquisitions informatiques ou téléphoniques peuvent porter sur :",
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions informatiques — Limites",
     question:
         "Les limitations de l’article 60-1-2 C.P.P. en matière de réquisitions informatiques concernent notamment :",
@@ -1504,7 +1504,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Police technique et scientifique",
     question: "Les services de police technique et scientifique peuvent être :",
     options: [
@@ -1519,7 +1519,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autopsie — Conditions",
     question:
         "Selon l’article 230-28 C.P.P., une autopsie en enquête préliminaire peut être ordonnée lorsque :",
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autopsie — Médecin légiste",
     question:
         "Qui peut pratiquer une autopsie judiciaire dans le cadre de l’enquête préliminaire ?",
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Conditions d’infraction",
     question:
         "La géolocalisation en temps réel en enquête préliminaire ne peut être utilisée que pour :",
@@ -1565,7 +1565,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Autorité compétente",
     question:
         "En enquête préliminaire, la décision initiale de mise en œuvre de la géolocalisation appartient :",
@@ -1580,7 +1580,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Durées",
     question:
         "En matière de géolocalisation en enquête préliminaire, les durées de l’autorisation initiale par le procureur sont :",
@@ -1596,7 +1596,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Rôle du JLD",
     question:
         "En enquête préliminaire, le Juge des libertés et de la détention intervient en matière de géolocalisation pour :",
@@ -1612,7 +1612,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Intrusion dans domicile",
     question:
         "L’introduction dans un domicile pour installer ou retirer un dispositif de géolocalisation nécessite :",
@@ -1628,7 +1628,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Durée maximale",
     question:
         "Selon le tableau de synthèse, la durée maximale de géolocalisation sous contrôle du J.L.D. est :",
@@ -1644,7 +1644,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Activation à distance",
     question:
         "L’activation à distance d’un appareil électronique pour la géolocalisation est :",
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements & signalétique — Base légale",
     question:
         "Les prélèvements externes et relevés signalétiques sont prévus en enquête préliminaire par :",
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Finalité",
     question:
         "La finalité principale des prélèvements externes et relevés signalétiques est :",
@@ -1690,7 +1690,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Refus de se soumettre",
     question:
         "Le refus injustifié de se soumettre à certaines opérations de signalisation ou de prélèvement, lorsqu’elles constituent le seul moyen d’identification ou de vérification de l’implication, est :",
@@ -1706,7 +1706,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
 
   // ===================== FOUILLES EN ENQUÊTE PRÉLIMINAIRE — BLOC 1 =====================
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Définition",
     question:
         "Les fouilles, en enquête préliminaire, ont pour finalité principale :",
@@ -1722,7 +1722,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Catégories",
     question:
         "Quelles sont les deux grandes catégories de fouilles distinguées en enquête préliminaire ?",
@@ -1738,7 +1738,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Intrusion",
     question:
         "Par rapport aux palpations de sécurité, les fouilles se caractérisent par :",
@@ -1753,7 +1753,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Personne concernée",
     question:
         "Selon l’article 63-7 du C.P.P., la fouille intégrale ne peut être pratiquée que :",
@@ -1768,7 +1768,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Décision",
     question: "Qui décide de la mise en œuvre d’une fouille intégrale ?",
     options: [
@@ -1782,7 +1782,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Voies moins intrusives",
     question: "Avant de recourir à une fouille intégrale, il faut :",
     options: [
@@ -1797,7 +1797,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Assimilation",
     question: "En enquête préliminaire, la fouille intégrale est assimilée à :",
     options: [
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Heures légales",
     question:
         "Les heures légales applicables aux perquisitions s’appliquent-elles à la fouille intégrale de la personne ?",
@@ -1826,7 +1826,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Sexe de l’agent",
     question: "La fouille intégrale doit être effectuée :",
     options: [
@@ -1840,7 +1840,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille véhicule — Domicile",
     question:
         "Un véhicule, en principe, constitue-t-il un domicile au sens du droit des perquisitions ?",
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Encadrement",
     question:
         "Pourquoi les fouilles en enquête préliminaire sont-elles strictement encadrées ?",
@@ -1873,7 +1873,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Base légale",
     question:
         "Quel article de loi encadre directement la fouille intégrale de la personne gardée à vue ?",
@@ -1888,7 +1888,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Conditions cumulatives",
     question:
         "Parmi les conditions suivantes, lesquelles sont requises pour recourir à une fouille intégrale ?",
@@ -1903,7 +1903,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Assentiment",
     question:
         "En enquête préliminaire, puisque la fouille intégrale est assimilée à une perquisition, elle suppose :",
@@ -1919,7 +1919,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Lieu de réalisation",
     question:
         "Dans quelles conditions matérielles doit être réalisée une fouille intégrale ?",
@@ -1934,7 +1934,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dignité — Limitation de la mesure",
     question: "Le caractère intrusif de la fouille intégrale implique que :",
     options: [
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Nature juridique",
     question:
         "Comment est qualifiée juridiquement la fouille de véhicule selon la jurisprudence rappelée ?",
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Heures légales",
     question:
         "Les fouilles de véhicule sont-elles soumises au respect des heures légales applicables aux perquisitions domiciliaires ?",
@@ -1980,7 +1980,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Présence de la personne",
     question:
         "En enquête préliminaire, la fouille de véhicule doit être réalisée :",
@@ -1995,7 +1995,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Assentiment",
     question:
         "Quelle autorisation est requise pour fouiller un véhicule en enquête préliminaire ?",
@@ -2011,7 +2011,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Référence légale",
     question:
         "Selon la jurisprudence citée (Cass. crim., 16 janv. 2024, n° 22-87.593), sauf texte spécial, la fouille du véhicule ne peut être effectuée qu’avec l’assentiment recueilli selon :",
@@ -2027,7 +2027,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Qualification procédurale",
     question:
         "Pourquoi, en enquête préliminaire, la fouille intégrale d’une personne gardée à vue est-elle assimilée à une perquisition au sens du C.P.P. ?",
@@ -2043,7 +2043,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Articulation avec garde à vue",
     question:
         "Quelle articulation entre la garde à vue et la fouille intégrale ressort de l’article 63-7 C.P.P. et du texte étudié ?",
@@ -2059,7 +2059,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille intégrale — Heures légales vs perquisitions",
     question:
         "Que révèle la possibilité de pratiquer une fouille intégrale de jour comme de nuit sur la logique du régime des fouilles par rapport aux perquisitions domiciliaires ?",
@@ -2075,7 +2075,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Vie privée",
     question:
         "Pourquoi la jurisprudence assimile-t-elle la fouille d’un véhicule à une perquisition, alors même que le véhicule n’est pas un domicile au sens strict ?",
@@ -2091,7 +2091,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Assentiment et formalisme",
     question:
         "D’un point de vue pratique, quel formalisme l’assentiment à la fouille d’un véhicule doit-il respecter ?",
@@ -2107,7 +2107,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Proportionnalité",
     question:
         "Comment le principe de proportionnalité se manifeste-t-il dans le régime des fouilles en enquête préliminaire ?",
@@ -2123,7 +2123,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Distinction avec palpations",
     question:
         "Sur le plan théorique, quelle distinction majeure le texte opère entre la fouille et la simple palpation de sécurité ?",
@@ -2139,7 +2139,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Domaine personnel vs matériel",
     question:
         "En synthèse, que révèle la distinction entre fouille intégrale et fouille de véhicule sur les domaines d’atteinte en enquête préliminaire ?",
@@ -2155,7 +2155,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Logique d’ensemble",
     question:
         "En quoi le régime des fouilles (intégrale et véhicule) illustre-t-il la logique générale de l’enquête préliminaire ?",
@@ -2171,7 +2171,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille de véhicule — Jurisprudence Cass. crim. 2024",
     question:
         "Selon l’arrêt Cass. crim., 16 janv. 2024, n° 22-87.593, à défaut de texte spécial autorisant la fouille de véhicule :",
@@ -2189,7 +2189,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
 
   // ===================== GARDE À VUE EN ENQUÊTE PRÉLIMINAIRE =====================
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Enquête préliminaire",
     question:
         "Quel article du Code de procédure pénale précise que les règles de la garde à vue s’appliquent à l’enquête préliminaire ?",
@@ -2204,7 +2204,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Articles applicables",
     question:
         "Les règles générales de la garde à vue applicables à l’enquête préliminaire sont prévues aux :",
@@ -2219,7 +2219,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Raison plausible",
     question: "Une personne peut être placée en garde à vue lorsqu’il existe :",
     options: [
@@ -2234,7 +2234,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectifs — Article 62-2",
     question: "Les objectifs légaux de la garde à vue sont définis par :",
     options: [
@@ -2248,7 +2248,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature — Caractère coercitif",
     question: "En enquête préliminaire, la garde à vue :",
     options: [
@@ -2262,7 +2262,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Nécessité",
     question: "La garde à vue ne peut être décidée que si :",
     options: [
@@ -2277,7 +2277,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hypothèses — Présentation volontaire",
     question:
         "Une première hypothèse de mise en garde à vue en enquête préliminaire est celle de :",
@@ -2293,7 +2293,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Départ du délai — Présentation volontaire",
     question:
         "En cas de placement en garde à vue après une présentation volontaire, le point de départ du délai de 24 heures est :",
@@ -2308,7 +2308,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Définition",
     question:
         "Le titre de contrainte qui permet de conduire une personne devant le service d’enquête est :",
@@ -2323,7 +2323,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Durée — Garde à vue initiale",
     question:
         "En enquête préliminaire, la durée initiale maximale de la garde à vue est de :",
@@ -2335,7 +2335,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Rappel synthétique",
     question:
         "Selon la section A, le placement en garde à vue en enquête préliminaire suppose :",
@@ -2351,7 +2351,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Proportionnalité — Garde à vue",
     question: "Le texte rappelle que la garde à vue doit toujours demeurer :",
     options: [
@@ -2365,7 +2365,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Apparition des soupçons",
     question:
         "Lorsqu’une personne est conduite par titre de contrainte sans raison plausible initiale de soupçon, à quel moment la garde à vue devient-elle possible ?",
@@ -2381,7 +2381,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Point de départ du délai",
     question:
         "En cas de placement en garde à vue après un titre de contrainte sans soupçons initiaux, le point de départ du délai est fixé :",
@@ -2396,7 +2396,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Titre de contrainte — Personne déjà soupçonnée",
     question:
         "Lorsque des raisons plausibles de soupçonner existent déjà au moment du titre de contrainte, la personne est placée en garde à vue :",
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Imputation du temps",
     question:
         "À l’issue d’une rétention pour vérification d’identité, si une garde à vue est décidée, la durée de la rétention :",
@@ -2427,7 +2427,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Base légale — Vérification d’identité",
     question:
         "Quelle disposition prévoit l’imputation de la durée de la rétention pour vérification d’identité sur celle de la garde à vue ?",
@@ -2442,7 +2442,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Indices lors d’une perquisition — Garde à vue",
     question:
         "Lors d’une perquisition, si des raisons plausibles de soupçonner apparaissent à l’égard d’une personne présente sur les lieux :",
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin retenu — Article 76 al. 3",
     question:
         "Pour un témoin retenu sur le fondement de l’article 76, alinéa 3 C.P.P., si une garde à vue devient nécessaire, le temps de rétention lors de la perquisition :",
@@ -2473,7 +2473,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Durée — Prolongation",
     question:
         "En enquête préliminaire, la garde à vue peut être prolongée une fois pour :",
@@ -2488,7 +2488,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prolongation — Moment",
     question: "La décision de prolongation de la garde à vue doit intervenir :",
     options: [
@@ -2502,7 +2502,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prolongation — Motivation",
     question: "La décision de prolongation de la garde à vue :",
     options: [
@@ -2516,7 +2516,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prolongation — Présentation au magistrat",
     question:
         "Avant de décider la prolongation, il appartient aux magistrats :",
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extension de compétence — Prolongation",
     question:
         "En cas d’extension de compétence, qui peut ordonner la prolongation de la garde à vue ?",
@@ -2549,7 +2549,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extension de compétence — Rôle du procureur directeur d’enquête",
     question:
         "Avant de décider la prolongation en cas d’extension de compétence, l’O.P.J. doit :",
@@ -2565,7 +2565,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sort de la garde à vue — Fin de mesure",
     question:
         "À l’issue de la garde à vue en enquête préliminaire, lorsque des éléments suffisants existent à l’encontre de la personne :",
@@ -2581,7 +2581,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Information initiale",
     question:
         "Le droit d’être immédiatement informé de la nature de l’infraction reprochée et de ses droits en garde à vue est prévu par :",
@@ -2596,7 +2596,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Prévenir un proche et l’employeur",
     question:
         "Le droit pour la personne gardée à vue de faire prévenir un proche, son employeur ou les autorités consulaires est prévu par :",
@@ -2611,7 +2611,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Examen médical",
     question:
         "Le droit à un examen médical pour la personne gardée à vue est prévu par :",
@@ -2626,7 +2626,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Assistance d’un avocat",
     question:
         "Le droit à l’assistance d’un avocat pour la personne gardée à vue est prévu par :",
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Formalisme — PV et enregistrement",
     question:
         "Le procès-verbal de garde à vue et l’enregistrement audiovisuel des auditions en matière criminelle sont prévus respectivement par :",
@@ -2656,7 +2656,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Régimes dérogatoires — Criminalité organisée",
     question:
         "Les régimes dérogatoires de garde à vue en matière de criminalité organisée sont prévus par :",
@@ -2671,7 +2671,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Applicabilité",
     question:
         "Les dispositions spécifiques applicables aux mineurs en matière de garde à vue, de retenue et de défèrement :",
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Nature de la garde à vue en préliminaire",
     question:
         "Sur le plan théorique, que montre l’application des articles 62-2 à 64-1 à l’enquête préliminaire via l’article 77 C.P.P. ?",
@@ -2703,7 +2703,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Proportionnalité — Analyse globale",
     question:
         "En synthèse, quelle exigence majeure ressort de l’ensemble des règles relatives à la garde à vue en enquête préliminaire ?",
@@ -2719,7 +2719,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prélèvements — Dignité & vulnérabilité",
     question:
         "Les prélèvements externes et relevés signalétiques doivent être réalisés :",
@@ -2735,7 +2735,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Théorie — Domaine d’application",
     question:
         "En synthèse, le « domaine d’application » de l’enquête préliminaire renvoie principalement :",
@@ -2751,7 +2751,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Doctrine — Document officiel",
     question: "L’exemple documentaire en fin de texte souligne que :",
     options: [
@@ -2764,7 +2764,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Lieux — Principe",
     question:
         "L’introduction dans un domicile en enquête préliminaire suppose :",
@@ -2779,7 +2779,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature de la saisie",
     question: "La saisie des comptes bancaires s’inscrit dans la logique de :",
     options: [
@@ -2793,7 +2793,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Infraction",
     question:
         "La saisie des sommes inscrites sur un compte bancaire peut intervenir notamment lorsque :",
@@ -2809,7 +2809,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compte visé — Types de comptes",
     question:
         "Quels types de comptes peuvent être visés par la saisie dans ce cadre ?",
@@ -2825,7 +2825,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorité compétente — Procureur",
     question:
         "Qui autorise la saisie des comptes bancaires dans le cadre de l’enquête préliminaire ?",
@@ -2840,7 +2840,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorité compétente — Délivrance",
     question:
         "Sous quelle forme le procureur de la République peut-il délivrer son autorisation de saisie ?",
@@ -2855,7 +2855,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Juge des libertés et de la détention",
     question:
         "Quel magistrat est chargé du contrôle juridictionnel de la saisie des comptes bancaires ?",
@@ -2870,7 +2870,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Délai",
     question:
         "Dans quel délai le Juge des libertés et de la détention doit-il se prononcer sur le maintien ou la mainlevée de la saisie ?",
@@ -2887,7 +2887,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre juridique — Références légales",
     question:
         "La définition des comptes pouvant être saisis (dont les comptes d’actifs numériques) renvoie à :",
@@ -2902,7 +2902,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cadre juridique — Procédure pénale",
     question:
         "La saisie des sommes inscrites sur un compte bancaire dans ce cadre est notamment prévue par :",
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conditions — Peine de confiscation",
     question:
         "Parmi les conditions, la saisie des comptes bancaires est possible lorsque :",
@@ -2932,7 +2932,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nature de la mesure — Conservatoire",
     question:
         "Quelle est la nature juridique principale de la saisie des comptes bancaires décrite dans le texte ?",
@@ -2947,7 +2947,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Objectif — Préservation des fonds",
     question:
         "Quelle finalité principale poursuit le caractère conservatoire de la saisie ?",
@@ -2963,7 +2963,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Réactivité",
     question:
         "La possibilité pour le procureur de délivrer l’autorisation de saisie « par tout moyen » permet principalement :",
@@ -2979,7 +2979,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Ordonnance",
     question:
         "Sous quelle forme le Juge des libertés et de la détention se prononce-t-il sur la saisie ?",
@@ -2994,7 +2994,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Moment",
     question:
         "Le Juge des libertés et de la détention doit se prononcer sur la saisie des comptes bancaires :",
@@ -3009,7 +3009,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Défense et propriété",
     question:
         "Le contrôle du J.L.D. en matière de saisie des comptes bancaires vise notamment à garantir :",
@@ -3025,7 +3025,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Portée — Actifs numériques",
     question:
         "En matière de saisie des comptes bancaires dans l’enquête préliminaire, les « actifs numériques » visés par le texte :",
@@ -3041,7 +3041,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articulation — Enquête préliminaire / confiscation",
     question:
         "Pourquoi la saisie des comptes bancaires en enquête préliminaire s’inscrit-elle dans la logique de la confiscation ?",
@@ -3057,7 +3057,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie des acteurs — Procureur / JLD",
     question:
         "Quelle affirmation décrit le mieux l’articulation entre le procureur de la République et le J.L.D. dans la saisie des comptes bancaires ?",
@@ -3073,7 +3073,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Efficacité — Investigations financières",
     question:
         "Le texte souligne que le contrôle par le J.L.D. doit concilier :",
@@ -3089,7 +3089,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Portée temporelle — Effets de la saisie",
     question:
         "En pratique, le caractère conservatoire de la saisie des comptes bancaires signifie que :",
@@ -3110,7 +3110,7 @@ final List<QuizQuestion> questionsEnquetePrelim = [
 // PAGE
 // ============================================================================
 class QuizEnquetePreliminairePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/enquete_preliminaire';
+  static const String routeName = '/gpx/dps/generalites/quiz/enquete_preliminaire';
   final String uid;
   final String email;
 
@@ -3236,7 +3236,7 @@ class _QuizEnquetePreliminairePageState
             'uid': widget.uid,
             'email': widget.email,
             'module_name': 'Cadres Juridiques',
-            'quiz_name': 'L`\enquête préliminaire',
+            'quiz_name': 'L`enquête préliminaire',
             'score': 0,
             'total_questions': _qs.length,
             'correct_count': 0,
@@ -3436,7 +3436,7 @@ class _QuizEnquetePreliminairePageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3625,7 +3625,7 @@ class _QuizEnquetePreliminairePageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3777,7 +3777,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4303,10 +4302,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4676,7 +4676,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4717,9 +4717,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

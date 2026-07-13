@@ -63,7 +63,7 @@ class _PlaintePageState extends State<PlaintePage> {
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      _IconBadge(icon: Icons.how_to_vote_rounded),
+                      const _IconBadge(icon: Icons.how_to_vote_rounded),
                       const SizedBox(width: 12),
                       Expanded(
                         child: Column(
@@ -84,10 +84,10 @@ class _PlaintePageState extends State<PlaintePage> {
                               ),
                             ),
                             const Spacer(),
-                            Wrap(
+                            const Wrap(
                               spacing: 8,
                               runSpacing: 8,
-                              children: const [
+                              children: [
                                 _TinyTag(
                                   icon: Icons.article_rounded,
                                   label: 'PV',
@@ -445,7 +445,7 @@ class _Item {
 
 List<_Bloc> _blocsPlainte() {
   return [
-    _Bloc(
+    const _Bloc(
       id: 'accueil',
       title: 'Accueil & sécurité',
       subtitle: 'Posture, confidentialité, besoins immédiats',
@@ -462,7 +462,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'mentions',
       title: 'Mentions obligatoires du PV de plainte',
       subtitle: 'Structure type et éléments à ne pas oublier',
@@ -482,7 +482,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'recueil',
       title: 'Recueil des faits — Checklist',
       subtitle: 'Ce qu’il faut documenter systématiquement',
@@ -503,7 +503,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'qualification',
       title: 'Qualification pénale — repères rapides',
       subtitle: 'Orienter la qualification dès le recueil',
@@ -536,7 +536,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'pieces',
       title: 'Pièces à joindre',
       subtitle: 'Consolider la plainte',
@@ -555,7 +555,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'droits',
       title: 'Droits & informations à délivrer',
       subtitle: 'Information victime (orientation, aides, suites)',
@@ -573,7 +573,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'distinctions',
       title: 'Plainte vs. Main courante',
       subtitle: 'Bien orienter la demande',
@@ -589,7 +589,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'suites',
       title: 'Suites procédurales',
       subtitle: 'Après l’enregistrement',
@@ -606,7 +606,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'trames',
       title: 'Trames prêtes à l’emploi (copier/coller)',
       subtitle: 'Modèles rapides avec variables à compléter',
@@ -672,7 +672,7 @@ List<_Bloc> _blocsPlainte() {
         ),
       ],
     ),
-    _Bloc(
+    const _Bloc(
       id: 'bonnespratiques',
       title: 'Bonnes pratiques de rédaction',
       subtitle: 'Lisibilité & solidité procédurale',

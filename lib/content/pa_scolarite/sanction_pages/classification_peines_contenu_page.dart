@@ -105,7 +105,7 @@ class PaClassificationPeinesContenuPage extends StatelessWidget {
             textSoft: textSoft,
             onTap: () => _openRoute(
               context,
-              '/gpx/pa/dps_dpg/sanctions/quiz/sanction_classification_peine',
+              '/pa/sanction/quiz/sanction_classification_peine',
             ),
           ),
           const SizedBox(height: 22),

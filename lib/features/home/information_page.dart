@@ -3,7 +3,6 @@
 
 import 'dart:io';
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:package_info_plus/package_info_plus.dart';
 import 'package:device_info_plus/device_info_plus.dart';
@@ -77,7 +76,7 @@ class _InformationPageState extends State<InformationPage>
         _os = 'Android ${a.version.release}';
       } else if (Platform.isIOS) {
         final i = await d.iosInfo;
-        _device = i.utsname.machine ?? 'iPhone';
+        _device = i.utsname.machine;
         _os = '${i.systemName} ${i.systemVersion}';
       } else {
         _device = Platform.operatingSystem;
@@ -238,10 +237,10 @@ class _InformationPageState extends State<InformationPage>
                       ),
                       const SizedBox(height: 8),
                       if (_loadingNotes)
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 8),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 8),
                           child: Row(
-                            children: const [
+                            children: [
                               SizedBox(
                                 height: 16,
                                 width: 16,
@@ -948,7 +947,7 @@ class _BugSheetState extends State<_BugSheet> {
             const SizedBox(height: 14),
 
             DropdownButtonFormField<String>(
-              value: _category,
+              initialValue: _category,
               items: const [
                 'UI',
                 'Performance',
@@ -967,7 +966,7 @@ class _BugSheetState extends State<_BugSheet> {
 
             const SizedBox(height: 10),
             DropdownButtonFormField<String>(
-              value: _severity,
+              initialValue: _severity,
               items:
                   const [
                         ['low', 'Mineur'],

@@ -947,6 +947,323 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
+  // ===================== NIVEAU MOYENNE ========================
+
+  const QuizQuestion(
+    category: "Bande organisée",
+    question:
+        "La bande organisée est définie par le Code pénal comme :",
+    options: [
+      "Tout groupement formé ou toute entente établie en vue de la préparation d'une ou plusieurs infractions",
+      "Un groupe d'au moins cinq personnes agissant de façon concertée",
+      "Une association de malfaiteurs dont les membres sont tous identifiés",
+    ],
+    answer:
+        "Tout groupement formé ou toute entente établie en vue de la préparation d'une ou plusieurs infractions",
+    explanation:
+        "Art. 132-71 Cp : la bande organisée est 'tout groupement formé ou toute entente établie en vue de la préparation, caractérisée par un ou plusieurs faits matériels, d'une ou de plusieurs infractions'.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Bande organisée",
+    question:
+        "En matière de criminalité organisée, la 'filière' désigne :",
+    options: [
+      "Un réseau structuré d'individus coordonnant des activités criminelles",
+      "Un simple complice agissant à la demande d'un auteur principal",
+      "Une infraction connexe commise lors d'une opération de police",
+    ],
+    answer:
+        "Un réseau structuré d'individus coordonnant des activités criminelles",
+    explanation:
+        "La filière caractérise l'organisation criminelle hiérarchisée, distincte de la simple complicité. Elle implique une division des rôles et une continuité dans l'activité délictuelle.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Association de malfaiteurs",
+    question:
+        "L'association de malfaiteurs (art. 450-1 Cp) est punissable :",
+    options: [
+      "Uniquement si l'infraction préparée a été commise ou tentée",
+      "Dès lors que le groupement ou l'entente est établi, même sans début d'exécution",
+      "Seulement si le groupement comprend au moins trois membres",
+    ],
+    answer:
+        "Dès lors que le groupement ou l'entente est établi, même sans début d'exécution",
+    explanation:
+        "L'association de malfaiteurs est une infraction obstacle : elle est consommée indépendamment de toute tentative ou commission de l'infraction projetée.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Association de malfaiteurs",
+    question:
+        "La peine prévue pour participation à une association de malfaiteurs en vue de commettre un crime puni de 10 ans est :",
+    options: [
+      "5 ans d'emprisonnement et 75 000 € d'amende",
+      "3 ans d'emprisonnement et 45 000 € d'amende",
+      "10 ans d'emprisonnement et 150 000 € d'amende",
+    ],
+    answer: "5 ans d'emprisonnement et 75 000 € d'amende",
+    explanation:
+        "Art. 450-1 Cp : participation à une association de malfaiteurs en vue de commettre un crime ou un délit puni d'au moins 10 ans → 5 ans et 75 000 €.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Techniques spéciales d'enquête",
+    question:
+        "L'infiltration (art. 706-81 à 706-87 CPP) consiste pour l'OPJ ou l'APJ à :",
+    options: [
+      "Surveiller à distance des suspects grâce à des moyens techniques",
+      "Surveiller des personnes suspectées en se faisant passer pour l'un de leurs complices",
+      "Interpeller discrètement un suspect en milieu criminel organisé",
+    ],
+    answer:
+        "Surveiller des personnes suspectées en se faisant passer pour l'un de leurs complices",
+    explanation:
+        "L'infiltration consiste pour l'agent à prendre sous une identité d'emprunt la qualité de membre d'un réseau ou groupe criminel pour en démanteler les activités.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Techniques spéciales d'enquête",
+    question:
+        "La livraison surveillée (art. 706-80 CPP) peut porter sur :",
+    options: [
+      "Uniquement les stupéfiants",
+      "Tout objet, bien ou produit tiré d'un crime ou délit ou servant à le commettre",
+      "Seulement les armes et les fonds criminels",
+    ],
+    answer:
+        "Tout objet, bien ou produit tiré d'un crime ou délit ou servant à le commettre",
+    explanation:
+        "Art. 706-80 CPP : la livraison surveillée peut porter sur tout produit, bien ou fond tiré d'un crime ou délit ou servant à le commettre.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Garde à vue renforcée",
+    question:
+        "En matière de criminalité organisée, la durée maximale de la garde à vue est de :",
+    options: [
+      "24 heures renouvelables une fois (48 h max)",
+      "48 heures pouvant être prolongées jusqu'à 96 heures",
+      "96 heures pouvant être prolongées jusqu'à 144 heures en cas de terrorisme",
+    ],
+    answer:
+        "96 heures pouvant être prolongées jusqu'à 144 heures en cas de terrorisme",
+    explanation:
+        "Pour les infractions relevant de la criminalité organisée (art. 706-73 CPP) : GAV portée à 96 h. Pour le terrorisme : jusqu'à 144 h (6 jours).",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Perquisitions dérogatoires",
+    question:
+        "En matière de criminalité organisée, une perquisition nocturne dans un domicile est possible :",
+    options: [
+      "Sans aucune autorisation particulière",
+      "Sur autorisation du juge des libertés et de la détention (JLD)",
+      "Uniquement entre 21 h et 6 h et avec l'accord du parquet",
+    ],
+    answer:
+        "Sur autorisation du juge des libertés et de la détention (JLD)",
+    explanation:
+        "Art. 706-89 à 706-94 CPP : les perquisitions nocturnes dans les domiciles sont possibles en matière de criminalité organisée sur autorisation du JLD.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Report de procédure",
+    question:
+        "Le report de procédure permet à l'OPJ de :",
+    options: [
+      "Différer l'interpellation pour mieux démanteler un réseau criminel",
+      "Classer sans suite une affaire de criminalité organisée",
+      "Reporter la saisine du parquet de 48 heures",
+    ],
+    answer:
+        "Différer l'interpellation pour mieux démanteler un réseau criminel",
+    explanation:
+        "Le report de procédure permet de ne pas interpeller immédiatement afin de surveiller plus longuement l'activité criminelle et identifier tous les membres du réseau.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Saisies pénales spéciales",
+    question:
+        "La saisie pénale spéciale (art. 706-141 CPP) vise à :",
+    options: [
+      "Bloquer ou saisir les avoirs criminels avant toute condamnation définitive",
+      "Confisquer automatiquement tous les biens d'un suspect mis en examen",
+      "Permettre la restitution immédiate des biens saisis à la victime",
+    ],
+    answer:
+        "Bloquer ou saisir les avoirs criminels avant toute condamnation définitive",
+    explanation:
+        "Les saisies pénales spéciales permettent, avant condamnation, de bloquer des biens ou avoirs pour s'assurer qu'ils seront disponibles en vue d'une confiscation ultérieure.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Infractions de la liste 706-73",
+    question:
+        "Lequel de ces crimes N'EST PAS inclus dans la liste de l'article 706-73 CPP ?",
+    options: [
+      "Le meurtre commis en bande organisée",
+      "Le recel simple",
+      "L'enlèvement et la séquestration commis en bande organisée",
+    ],
+    answer: "Le recel simple",
+    explanation:
+        "Le recel simple n'est pas une infraction de criminalité organisée au sens de l'art. 706-73 CPP. Seul le recel en bande organisée ou aggravé peut y figurer.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Infractions de la liste 706-73",
+    question:
+        "La traite des êtres humains commise en bande organisée relève-t-elle des dispositions dérogatoires de l'art. 706-73 CPP ?",
+    options: [
+      "Oui, elle figure expressément dans cette liste",
+      "Non, elle relève uniquement du droit commun",
+      "Seulement si la victime est mineure",
+    ],
+    answer: "Oui, elle figure expressément dans cette liste",
+    explanation:
+        "La traite des êtres humains en bande organisée est inscrite à l'art. 706-73 CPP, permettant le recours aux techniques spéciales d'enquête.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Sonorisation et fixation d'images",
+    question:
+        "La sonorisation et la fixation d'images (art. 706-96 CPP) dans un lieu privé nécessitent :",
+    options: [
+      "Une simple décision du procureur de la République",
+      "Une autorisation du juge d'instruction ou du JLD",
+      "L'accord écrit de la personne surveillée",
+    ],
+    answer: "Une autorisation du juge d'instruction ou du JLD",
+    explanation:
+        "Art. 706-96 CPP : la mise en place de dispositifs sonores ou d'images dans un lieu privé doit être autorisée par le juge d'instruction ou le juge des libertés et de la détention.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Captation de données informatiques",
+    question:
+        "La captation de données informatiques (art. 706-102-1 CPP) permet :",
+    options: [
+      "D'accéder à distance à un système informatique pour en extraire des données en temps réel",
+      "De bloquer l'accès internet d'un suspect",
+      "De saisir physiquement tout matériel informatique sans mandat",
+    ],
+    answer:
+        "D'accéder à distance à un système informatique pour en extraire des données en temps réel",
+    explanation:
+        "La captation de données permet, sur autorisation du juge d'instruction, d'accéder à un système informatique pour recueillir des données sans que la personne visée en soit informée.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Compétence JIRS",
+    question:
+        "Les Juridictions Interrégionales Spécialisées (JIRS) ont compétence pour :",
+    options: [
+      "Tout crime ou délit commis sur le ressort d'une cour d'appel",
+      "Les affaires d'une grande complexité relevant de la criminalité organisée, financière ou fiscale",
+      "Uniquement les affaires de terrorisme international",
+    ],
+    answer:
+        "Les affaires d'une grande complexité relevant de la criminalité organisée, financière ou fiscale",
+    explanation:
+        "Les JIRS (loi Perben II, 9 mars 2004) traitent les affaires d'une très grande complexité impliquant des réseaux criminels organisés, y compris les affaires financières et fiscales complexes.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Blanchiment",
+    question:
+        "Le blanchiment commis en bande organisée est puni de :",
+    options: [
+      "5 ans d'emprisonnement et 375 000 € d'amende",
+      "10 ans d'emprisonnement et 750 000 € d'amende",
+      "7 ans d'emprisonnement et 500 000 € d'amende",
+    ],
+    answer: "10 ans d'emprisonnement et 750 000 € d'amende",
+    explanation:
+        "Art. 324-2 Cp : le blanchiment commis en bande organisée est puni de 10 ans et 750 000 €.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Témoignage anonyme",
+    question:
+        "En matière de criminalité organisée, le témoignage anonyme (art. 706-58 CPP) est accordé :",
+    options: [
+      "Pour tout crime ou délit, sur simple demande du témoin",
+      "Lorsque l'audition à visage découvert exposerait le témoin à un risque grave pour sa vie ou son intégrité physique",
+      "Uniquement pour les témoins étrangers en situation irrégulière",
+    ],
+    answer:
+        "Lorsque l'audition à visage découvert exposerait le témoin à un risque grave pour sa vie ou son intégrité physique",
+    explanation:
+        "Art. 706-58 CPP : le témoignage anonyme est accordé lorsque l'identité du témoin risquerait de mettre en danger sa vie, son intégrité physique ou celle de ses proches.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Repentis",
+    question:
+        "Le dispositif de protection des repentis (art. 706-63-1 CPP) permet à l'État :",
+    options: [
+      "D'accorder l'immunité totale à tout membre d'un réseau qui se dénonce",
+      "De protéger et de modifier l'identité d'une personne qui coopère avec la justice",
+      "De remettre en liberté immédiatement tout repenti contre témoignage",
+    ],
+    answer:
+        "De protéger et de modifier l'identité d'une personne qui coopère avec la justice",
+    explanation:
+        "Le dispositif repenti permet de modifier l'identité d'une personne coopérant avec la justice en matière de criminalité organisée, et d'assurer sa protection policière.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Financement du terrorisme",
+    question:
+        "Le financement du terrorisme figure-t-il dans la liste de l'art. 706-73 CPP ?",
+    options: [
+      "Non, il relève uniquement du droit commun",
+      "Oui, il figure dans cette liste et bénéficie des dispositions dérogatoires",
+      "Seulement si des fonds étrangers sont impliqués",
+    ],
+    answer:
+        "Oui, il figure dans cette liste et bénéficie des dispositions dérogatoires",
+    explanation:
+        "Le financement d'une entreprise terroriste est inscrit à l'art. 706-73 CPP et bénéficie donc de la GAV renforcée, des techniques spéciales d'enquête, etc.",
+    difficulty: "Moyenne",
+  ),
+
+  const QuizQuestion(
+    category: "Gel des avoirs",
+    question:
+        "Le gel des avoirs en matière de criminalité organisée permet :",
+    options: [
+      "De bloquer provisoirement les fonds d'une personne soupçonnée afin d'en empêcher la dissipation",
+      "De transférer automatiquement les fonds saisis au Trésor public",
+      "De confisquer définitivement les biens avant tout jugement",
+    ],
+    answer:
+        "De bloquer provisoirement les fonds d'une personne soupçonnée afin d'en empêcher la dissipation",
+    explanation:
+        "Le gel des avoirs est une mesure conservatoire provisoire visant à empêcher la dissipation ou le transfert de fonds d'origine criminelle, dans l'attente d'une décision judiciaire.",
+    difficulty: "Moyenne",
+  ),
+
   // ===================== NIVEAU DIFFICILE =====================
   // ================ CAS PRATIQUES & QUESTIONS PIÈGES ==========
   const QuizQuestion(

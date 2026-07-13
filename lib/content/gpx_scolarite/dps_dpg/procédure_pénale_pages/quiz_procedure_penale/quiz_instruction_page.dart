@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ========== GÉNÉRALITÉS – INSTRUCTION PRÉPARATOIRE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel est l’objectif principal de l’instruction préparatoire (information judiciaire) ?",
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Dans quel cas une infraction fait-elle naître à la fois une action publique et une action civile ?",
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Quelle action est exercée pour obtenir la peine prévue par la loi à l’encontre de l’auteur d’une infraction ?",
@@ -145,7 +145,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "L’action publique vise à faire prononcer une peine afin de réparer le trouble causé à l’ordre social.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes fondamentaux",
     question:
         "Quel principe garantit le droit à un procès équitable dans la procédure pénale ?",
@@ -160,7 +160,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes fondamentaux",
     question:
         "La présomption d’innocence implique que la charge de la preuve incombe à qui ?",
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action publique",
     question:
         "Qui représente la société et exerce l’action publique en procédure pénale ?",
@@ -186,7 +186,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action civile",
     question: "Qui peut exercer l’action civile née d’une infraction ?",
     options: [
@@ -200,7 +200,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Différences action publique / civile",
     question:
         "Quelle est la différence essentielle entre l’action publique et l’action civile ?",
@@ -216,7 +216,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs",
     question:
         "Quel est le principal organe responsable de la mise en mouvement de l’action publique ?",
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs",
     question:
         "L’action publique peut-elle être dirigée contre les héritiers du délinquant ?",
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitoire",
     question: "Que permet le réquisitoire introductif ?",
     options: [
@@ -257,7 +257,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaintes",
     question:
         "Quelle est la différence entre une plainte simple et une plainte avec constitution de partie civile ?",
@@ -273,7 +273,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classement sans suite",
     question: "Le classement sans suite signifie-t-il un déni de justice ?",
     options: [
@@ -287,7 +287,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opportunité des poursuites",
     question: "L’article 40-1 du CPP consacre quel principe ?",
     options: [
@@ -301,7 +301,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits de la défense",
     question:
         "Quel droit fondamental permet à une personne suspectée d’être assistée par un avocat ?",
@@ -312,7 +312,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prescription",
     question: "Que produit la prescription de l’action publique ?",
     options: [
@@ -326,7 +326,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Amnistie",
     question: "Quelle est la portée d’une loi d’amnistie sur les infractions ?",
     options: [
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transaction pénale",
     question: "Qu’est-ce qu’une transaction pénale ?",
     options: [
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites",
     question:
         "Quelles sont certaines mesures alternatives aux poursuites possibles ?",
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en mouvement de l’action",
     question:
         "Quelles autorités peuvent mettre en mouvement l’action publique en cas d’infraction ?",
@@ -386,7 +386,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personne morale",
     question:
         "Qui peut être poursuivi lorsque l’infraction est commise par une personne morale ?",
@@ -400,7 +400,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "Les représentants agissent pour la personne morale mais peuvent aussi être poursuivis individuellement.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Quel est l’objectif principal de l’action civile née d’une infraction pénale ?",
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Notions générales — Actions",
     question:
         "Peut-il exister une action civile sans qu’aucune infraction pénale n’ait été commise ?",
@@ -432,7 +432,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Fondement",
     question:
         "Quel est le fondement de l’action publique lorsqu’une infraction est commise ?",
@@ -447,7 +447,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Fondement",
     question:
         "Sur quel élément l’action civile née d’une infraction trouve-t-elle principalement son fondement ?",
@@ -462,7 +462,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — But",
     question: "Quel est le but principal de l’action publique ?",
     options: [
@@ -476,7 +476,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — But",
     question:
         "Quel est le but principal de l’action civile exercée devant une juridiction répressive ?",
@@ -491,7 +491,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Exercice",
     question: "Par qui l’action publique est-elle en principe exercée ?",
     options: [
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Exercice",
     question: "À qui appartient l’action civile née d’une infraction pénale ?",
     options: [
@@ -520,7 +520,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Caractère",
     question: "Pourquoi dit-on que l’action publique est d’ordre public ?",
     options: [
@@ -535,7 +535,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Caractère",
     question:
         "Pourquoi l’action civile est-elle qualifiée d’action d’ordre privé ?",
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rapprochement — Actions",
     question:
         "Quel est le lien commun à l’origine de l’action publique et de l’action civile lorsqu’elles coexistent ?",
@@ -566,7 +566,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rapprochement — Juridiction",
     question:
         "Que se passe-t-il lorsque la victime exerce son action civile devant la juridiction répressive ?",
@@ -582,7 +582,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rapprochement — Autorité du pénal",
     question: "Que signifie l’adage « le criminel tient le civil en état » ?",
     options: [
@@ -597,7 +597,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Ministère public",
     question:
         "Quel organe exerce normalement l’action publique au nom de la société ?",
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Ministère public",
     question:
         "Pourquoi dit-on que le ministère public n’a pas la “disposition” de l’action publique ?",
@@ -628,7 +628,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Administrations",
     question:
         "Dans quelles hypothèses certaines administrations peuvent-elles exercer l’action publique ?",
@@ -644,7 +644,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Administrations",
     question:
         "Quelle particularité distingue les administrations comme les douanes ou les contributions indirectes du ministère public en matière de poursuites ?",
@@ -660,7 +660,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets actifs — Particuliers",
     question: "La victime peut-elle exercer elle-même l’action publique ?",
     options: [
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs — Personnalité des peines",
     question: "Contre qui l’action publique est-elle, en principe, dirigée ?",
     options: [
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs — Décès",
     question:
         "Quelle est la conséquence du décès de l’auteur des faits sur l’action publique ?",
@@ -703,7 +703,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sujets passifs — Personnes morales",
     question:
         "Lorsque l’infraction est commise par une personne morale, contre qui l’action publique est-elle exercée ?",
@@ -719,7 +719,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Information du parquet",
     question:
         "Selon le code de procédure pénale, qui doit informer sans délai le procureur de la République des crimes et délits dont il a connaissance dans l’exercice de ses fonctions ?",
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Légalité et opportunité",
     question:
         "Avant d’exercer l’action publique, que doit vérifier le procureur de la République ?",
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Opportunité",
     question: "Que consacre l’article 40-1 du code de procédure pénale ?",
     options: [
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exercice — Classement sans suite",
     question:
         "Dans quel cas le procureur de la République peut-il décider de classer une affaire sans suite ?",
@@ -780,7 +780,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Causes générales",
     question:
         "Laquelle de ces situations fait partie des causes générales d’extinction de l’action publique ?",
@@ -795,7 +795,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Amnistie",
     question:
         "Quel est l’effet principal d’une loi d’amnistie sur l’action publique ?",
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Principes",
     question:
         "Quel principe fondamental est affirmé au début de l’article préliminaire du code de procédure pénale ?",
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Séparation",
     question:
         "Quelle séparation institutionnelle la procédure pénale doit-elle garantir selon l’article préliminaire ?",
@@ -841,7 +841,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Égalité",
     question:
         "Comment l’égalité devant la justice pénale est-elle formulée dans l’article préliminaire ?",
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Victimes",
     question:
         "Quel rôle l’autorité judiciaire doit-elle assurer à l’égard des victimes, selon l’article préliminaire ?",
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Présomption d’innocence",
     question:
         "Que prévoit l’article préliminaire au sujet de la personne suspectée ou poursuivie ?",
@@ -889,7 +889,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Information de la personne",
     question:
         "Quel droit procédural essentiel est reconnu à toute personne suspectée ou poursuivie ?",
@@ -905,7 +905,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Langue",
     question:
         "Que prévoit l’article préliminaire pour une personne qui ne comprend pas le français ?",
@@ -921,7 +921,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Contraintes",
     question:
         "Comment les mesures de contrainte sont-elles encadrées par l’article préliminaire ?",
@@ -937,7 +937,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Délai raisonnable",
     question:
         "Que garantit l’article préliminaire quant au délai de jugement ?",
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Vie privée",
     question:
         "Dans quelles conditions les mesures portant atteinte à la vie privée peuvent-elles être prises au cours de la procédure pénale ?",
@@ -969,7 +969,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Droit au recours",
     question:
         "Quel droit est reconnu à toute personne condamnée par l’article préliminaire ?",
@@ -985,7 +985,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Assistance de l’avocat",
     question:
         "Quelle règle l’article préliminaire pose-t-il concernant les déclarations faites sans assistance d’un avocat ?",
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Droit de se taire",
     question:
         "Quand le droit de se taire doit-il être notifié à la personne suspectée ou poursuivie ?",
@@ -1017,7 +1017,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TITRE préliminaire — Secret professionnel",
     question:
         "Quel principe en matière de secret professionnel est rappelé par l’article préliminaire ?",
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ----- Actions : autres aspects, sujets, alternatives, etc. -----
-  QuizQuestion(
+  const QuizQuestion(
     category: "Information du parquet",
     question:
         "Quelle est l’obligation faite à tout citoyen par certaines dispositions du code pénal (par exemple pour certains crimes ou sévices sur mineurs) ?",
@@ -1050,7 +1050,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision du parquet — Choix",
     question:
         "Quels sont les trois grands types de réponses possibles du procureur de la République face à une infraction commise par une personne identifiée ?",
@@ -1065,7 +1065,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classement sans suite — Caractère",
     question:
         "Le classement sans suite décidé par le procureur de la République a-t-il un caractère définitif ?",
@@ -1080,7 +1080,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classement sans suite — Information",
     question:
         "Qui le procureur doit-il informer lorsqu’il décide un classement sans suite ?",
@@ -1096,7 +1096,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Poursuites — Irrévocabilité",
     question:
         "Une fois que le procureur de la République a engagé des poursuites, peut-il revenir sur sa décision ?",
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie — Ordres du procureur général",
     question:
         "Quelle est la conséquence d’un ordre écrit du procureur général adressé au procureur de la République ?",
@@ -1127,7 +1127,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie lésée — Plainte simple",
     question:
         "La simple plainte de la victime auprès du procureur de la République oblige-t-elle ce dernier à engager des poursuites ?",
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie lésée — Plainte avec constitution de partie civile",
     question:
         "Quel est l’effet principal d’une plainte avec constitution de partie civile devant le juge d’instruction ?",
@@ -1157,7 +1157,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaines préalables — Rôle",
     question:
         "Pourquoi la loi exige-t-elle parfois une plainte préalable de la victime pour que l’action publique puisse être engagée ?",
@@ -1173,7 +1173,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaines préalables — Effet du désistement",
     question:
         "Lorsque la plainte préalable est une condition nécessaire de la poursuite, quel est l’effet de son désistement ?",
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Immunités — Famille",
     question:
         "Donnez un exemple d’immunité familiale faisant obstacle à l’action du ministère public.",
@@ -1203,7 +1203,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation préalable — Parlementaires",
     question:
         "Pour quelles mesures l’autorisation préalable du bureau de l’assemblée est-elle requise à l’égard d’un parlementaire ?",
@@ -1219,7 +1219,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité pénale — Fait d’autrui",
     question:
         "Dans quel cas peut-on retenir la responsabilité pénale du chef d’entreprise pour une infraction commise par un salarié ?",
@@ -1235,7 +1235,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Avertissement pénal probatoire",
     question:
         "Qu’est-ce qu’un avertissement pénal probatoire dans le cadre des alternatives aux poursuites ?",
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Conditions",
     question:
         "L’alternative aux poursuites peut-elle être utilisée à l’égard d’un auteur récidiviste déjà condamné ?",
@@ -1267,7 +1267,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Médiation pénale",
     question:
         "Quel est l’objectif principal de la médiation pénale dans le cadre des alternatives aux poursuites ?",
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Composition pénale",
     question:
         "Que permet la composition pénale pour l’auteur d’une infraction délictuelle ?",
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternative aux poursuites — Composition pénale",
     question:
         "Quels sont les types de sanctions que la composition pénale peut proposer ?",
@@ -1315,7 +1315,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Citation directe",
     question: "Qu’est-ce que la citation directe ?",
     options: [
@@ -1330,7 +1330,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Réquisitoire introductif",
     question:
         "Par qui et comment est généralement mise en mouvement l’action publique ?",
@@ -1346,7 +1346,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Plainte avec constitution de partie civile",
     question:
         "Quel est l’effet d’une plainte avec constitution de partie civile sur l’action publique ?",
@@ -1362,7 +1362,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Causes d’extinction — Décès",
     question:
         "Que devient l’action publique à la suite du décès de l’auteur des faits ?",
@@ -1377,7 +1377,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Causes d’extinction — Amnistie",
     question: "Qu’est-ce que l’amnistie pénale ?",
     options: [
@@ -1392,7 +1392,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Causes d’extinction — Prescription",
     question:
         "Quelle est la conséquence de la prescription de l’action publique ?",
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Transaction pénale",
     question:
         "Quel est l’effet d’une transaction pénale acceptée par la victime et homologuée par le procureur ?",
@@ -1422,7 +1422,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitoire — Définition",
     question: "Qu’est-ce qu’un réquisitoire ?",
     options: [
@@ -1437,7 +1437,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juge d’instruction — Pouvoirs",
     question:
         "Quel rôle spécifique le juge d’instruction joue-t-il dans certaines procédures pénales ?",
@@ -1453,7 +1453,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Validité de l’action — Exception",
     question: "Dans quel cas la chose jugée peut-elle être remise en cause ?",
     options: [
@@ -1468,7 +1468,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de l’extinction",
     question: "Que signifie l’extinction de l’action publique ?",
     options: [
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Rôle",
     question:
         "Dans une procédure pénale, quel est le rôle principal de la partie civile ?",
@@ -1498,7 +1498,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procureur de la République — Pouvoirs",
     question:
         "Quelle est l’étendue du pouvoir du procureur de la République dans la conduite de l’action publique ?",
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en mouvement — Cas particuliers",
     question:
         "Quels sont certains cas particuliers où la mise en mouvement de l’action publique n’appartient pas au ministère public ?",
@@ -1530,7 +1530,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transaction pénale — Conditions",
     question:
         "Quelles sont les conditions essentielles pour qu’une transaction pénale soit valide ?",
@@ -1546,7 +1546,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Alternatives — Limites légales",
     question:
         "Les alternatives aux poursuites peuvent-elles s’appliquer à tous les types d’infractions ?",
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Prescription interrompue",
     question:
         "Qu’est-ce qui peut interrompre la prescription de l’action publique ?",
@@ -1578,7 +1578,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Effet de la chose jugée",
     question:
         "Selon le principe « non bis in idem », que signifie la chose jugée ?",
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Assistance",
     question:
         "Dans quels cas la personne suspectée a-t-elle le droit d’être assistée d’un défenseur ?",
@@ -1609,7 +1609,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Interprète",
     question:
         "Quelle garantie est offerte à une personne ne comprenant pas la langue française ?",
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits fondamentaux — Droit au silence",
     question:
         "Quelles conséquences a le fait qu’une personne n’ait pas été informée de son droit de se taire ?",
@@ -1641,7 +1641,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rôle du Ministère public",
     question:
         "Quelles sont les fonctions essentielles du ministère public dans la procédure pénale ?",
@@ -1657,7 +1657,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Transiger",
     question: "Le ministère public peut-il transiger sur l’action publique ?",
     options: [
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procureur général — Instructions",
     question:
         "Quel est le rôle du procureur général vis-à-vis du procureur de la République ?",
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions de jugement — Saisine d’office",
     question:
         "Dans quelles conditions une juridiction peut-elle se saisir d’office pour des infractions commises à l’audience ?",
@@ -1704,7 +1704,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Défenseur des droits — Pouvoirs pénaux",
     question:
         "Dans quelles circonstances particulières le Défenseur des droits peut-il proposer une transaction pénale ?",
@@ -1720,7 +1720,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Informations au procureur — Obligations",
     question:
         "Qui est tenu d’informer sans délai le procureur de la République de la commission d’une infraction ?",
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Obligations spécifiques — Autorités complémentaires",
     question:
         "Quels autres acteurs ont l’obligation de révéler des faits délictueux ?",
@@ -1752,7 +1752,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence territoriale et matérielle",
     question:
         "Quels sont les limitations que le procureur doit vérifier avant d’engager l’action publique ?",
@@ -1768,7 +1768,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Prescription — Calcul",
     question:
         "Quand commence à courir le délai de prescription de l’action publique ?",
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recours contre les décisions du parquet",
     question:
         "Le parquet est-il soumis à des recours lorsqu’il décide d’engager ou de classer une procédure ?",
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transaction pénale — Effet",
     question:
         "Une fois la transaction pénale conclue, que se passe-t-il concernant l’action publique ?",
@@ -1814,7 +1814,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Chose jugée",
     question:
         "Que signifie le principe « non bis in idem » en matière pénale ?",
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Notions générales',
     question:
         'La loi du 24 novembre 2009 a instauré l’assignation à résidence avec surveillance électronique (ARSE) pour :',
@@ -1846,7 +1846,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Notions générales',
     question:
         'L’assignation à résidence avec surveillance électronique (ARSE) concerne :',
@@ -1861,7 +1861,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Notions générales',
     question:
         'À quel article du Code de procédure pénale l’ARSE est-elle rattachée ?',
@@ -1877,7 +1877,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CONDITIONS DE MISE EN ŒUVRE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Conditions de mise en œuvre',
     question:
         'Selon l’article 142-5 alinéa 1 du C.P.P., l’assignation à résidence n’est possible que si la personne encourt :',
@@ -1894,7 +1894,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // PRONONCÉ DE LA MESURE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Prononcé de la mesure',
     question: 'Parmi ces autorités, laquelle peut ordonner une ARSE ?',
     options: ['Le juge d’instruction', 'Le maire de la commune', 'Le préfet'],
@@ -1904,7 +1904,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Prononcé de la mesure',
     question:
         'En plus du juge d’instruction, qui peut également ordonner l’assignation à résidence avec surveillance électronique ?',
@@ -1919,7 +1919,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Prononcé de la mesure',
     question:
         'Une juridiction de jugement peut-elle prononcer l’ARSE sans demande de la personne mise en examen ?',
@@ -1936,7 +1936,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // OBJET DE LA MESURE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Objet de la mesure',
     question:
         'L’objet principal de l’assignation à résidence avec surveillance électronique est :',
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Objet de la mesure',
     question:
         'L’assignation à résidence avec surveillance électronique peut comprendre, en plus de la présence au domicile :',
@@ -1969,7 +1969,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // FAISABILITÉ
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Faisabilité technique',
     question:
         'Quel service est chargé de vérifier la faisabilité technique de la mesure d’ARSE ?',
@@ -1984,7 +1984,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Consentement',
     question:
         'La personne placée sous ARSE doit être informée que l’installation du dispositif de surveillance :',
@@ -2005,7 +2005,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // FAISABILITÉ ET PLACEMENT PROVISOIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Faisabilité technique',
     question:
         'Lorsque la peine encourue est égale ou supérieure à 3 ans et que la faisabilité technique n’a pas encore été vérifiée, le juge des libertés et de la détention peut :',
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Faisabilité technique',
     question:
         'Dans le cadre de la vérification de faisabilité, le juge doit saisir :',
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MODALITÉS DE SURVEILLANCE ÉLECTRONIQUE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Modalités de la surveillance',
     question:
         'La surveillance électronique dans le cadre de l’ARSE se fait conformément aux dispositions de l’article :',
@@ -2049,7 +2049,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Modalités de la surveillance',
     question:
         'L’assignation à résidence avec mise sous surveillance électronique mobile peut notamment être mise en œuvre lorsque :',
@@ -2065,7 +2065,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Violences intrafamiliales',
     question:
         'L’ARSE peut être mise en œuvre lorsque la personne est mise en examen pour des violences ou menaces punies d’au moins 5 ans d’emprisonnement commises :',
@@ -2081,7 +2081,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Extradition et mandats',
     question:
         'Parmi ces situations, laquelle peut justifier l’assignation à résidence avec surveillance électronique mobile ?',
@@ -2097,7 +2097,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DURÉE ET RENOUVELLEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Durée de la mesure',
     question:
         'Selon l’article 142-7 du C.P.P., la durée maximale initiale de l’assignation à résidence avec surveillance électronique est de :',
@@ -2108,7 +2108,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Renouvellement',
     question: 'La mesure d’ARSE peut être renouvelée :',
     options: [
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANQUEMENTS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Manquements',
     question:
         'Si la personne ne respecte pas son assignation à résidence, le juge peut :',
@@ -2140,7 +2140,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — JLD et détention non justifiée',
     question:
         'Lorsque la personne est placée en détention provisoire pour non-respect de l’ARSE, le juge des libertés et de la détention, s’il estime que cette détention n’est pas justifiée, peut :',
@@ -2161,7 +2161,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // CAS PRATIQUES ET ARTICULATIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Cas pratique',
     question:
         'Une personne mise en examen pour un délit puni de 2 ans d’emprisonnement encourt-elle légalement l’ARSE au sens de l’article 142-5 alinéa 1 ?',
@@ -2176,7 +2176,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Articulation avec le contrôle judiciaire',
     question: 'Sur le plan des principes, l’ARSE est mise en œuvre :',
     options: [
@@ -2191,7 +2191,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Consentement et détention',
     question:
         'La personne mise en examen refuse l’installation du dispositif électronique chez elle. Juridiquement :',
@@ -2207,7 +2207,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Surveillance électronique mobile',
     question:
         'Dans le cadre d’une ARSE avec surveillance électronique mobile pour une infraction punie de plus de 7 ans d’emprisonnement, le juge d’instruction :',
@@ -2223,7 +2223,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Extradition et juridictions internationales',
     question:
         'L’ARSE avec surveillance électronique mobile peut être mise en œuvre lorsque la personne fait l’objet :',
@@ -2239,7 +2239,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Durée maximale',
     question:
         'Une personne est placée sous ARSE depuis 18 mois. Le juge souhaite renouveler la mesure pour une nouvelle période de 6 mois. Cette décision est-elle conforme au texte ?',
@@ -2254,7 +2254,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Non-respect réitéré',
     question:
         'En cas de non-respect répété de l’assignation à résidence malgré un premier rappel, la réponse la plus conforme à l’esprit des textes est :',
@@ -2270,7 +2270,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Contrôle de la durée',
     question:
         'Une mesure d’ARSE a été renouvelée sans débat contradictoire. En pratique, quel est le principal risque juridique ?',
@@ -2286,7 +2286,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Synthèse des acteurs',
     question:
         'Parmi ces affirmations, laquelle décrit le plus fidèlement la répartition des rôles dans la mise en œuvre de l’ARSE ?',
@@ -2302,7 +2302,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question:
         "Quel est l’objectif principal du contrôle judiciaire instauré par la loi du 17 juillet 1970 ?",
@@ -2318,7 +2318,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question: "Le contrôle judiciaire est :",
     options: [
@@ -2332,7 +2332,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question:
         "À quelle personne le contrôle judiciaire peut-il être appliqué ?",
@@ -2347,7 +2347,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Notions générales",
     question: "Le contrôle judiciaire est une mesure :",
     options: [
@@ -2362,7 +2362,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CONDITIONS GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de mise en œuvre",
     question:
         "Selon l’article 138 al. 1 C.P.P., le contrôle judiciaire n’est possible que si :",
@@ -2378,7 +2378,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de mise en œuvre",
     question: "Le contrôle judiciaire peut être prononcé :",
     options: [
@@ -2394,7 +2394,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // AUTORITÉS COMPÉTENTES PLACEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "Parmi les autorités suivantes, laquelle peut ordonner un contrôle judiciaire ?",
@@ -2405,7 +2405,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "Quel magistrat peut décider d’un contrôle judiciaire lorsqu’il est saisi pour une demande de détention provisoire ?",
@@ -2420,7 +2420,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "La chambre de l’instruction peut ordonner un contrôle judiciaire :",
@@ -2436,7 +2436,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Conditions de placement",
     question:
         "Les juridictions de jugement peuvent ordonner un contrôle judiciaire :",
@@ -2452,7 +2452,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // OBLIGATIONS PERSONNES PHYSIQUES & MORALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations",
     question:
         "Les obligations du contrôle judiciaire applicables aux personnes physiques sont listées :",
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations",
     question:
         "Les obligations du contrôle judiciaire applicables aux personnes morales sont prévues par :",
@@ -2483,7 +2483,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ORGANISATION & SUIVI
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Organisation",
     question:
         "Qui doit veiller à l’application des mesures de contrôle judiciaire ?",
@@ -2498,7 +2498,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Organisation",
     question:
         "Les services de police et de gendarmerie chargés de surveiller la personne sous contrôle judiciaire doivent :",
@@ -2514,7 +2514,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MODIFICATION & MAINLEVÉE — PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Modification",
     question: "La modification du contrôle judiciaire peut consister à :",
     options: [
@@ -2528,7 +2528,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée",
     question: "La mainlevée du contrôle judiciaire signifie :",
     options: [
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // FIN NORMALE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Fin normale",
     question: "En principe, le contrôle judiciaire prend fin :",
     options: [
@@ -2557,7 +2557,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Fin en matière correctionnelle",
     question:
         "En matière correctionnelle, l’ordonnance de renvoi devant le tribunal correctionnel :",
@@ -2573,7 +2573,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // TRANSFORMATION EN DÉTENTION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Transformation",
     question:
         "Si le contrôle judiciaire ne suffit plus à assurer le bon déroulement de l’instruction, il peut être :",
@@ -2593,7 +2593,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // RÔLE DU JUGE D’INSTRUCTION (MAINLEVÉE & MODIFICATION)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (rôle du juge d’instruction)",
     question:
         "Selon l’article 140 al. 1 C.P.P., à quel moment le juge d’instruction peut-il ordonner la mainlevée du contrôle judiciaire ?",
@@ -2608,7 +2608,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (rôle du juge d’instruction)",
     question:
         "La mainlevée du contrôle judiciaire par le juge d’instruction peut être :",
@@ -2624,7 +2624,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SAISINE DE LA CHAMBRE DE L’INSTRUCTION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (chambre de l’instruction)",
     question:
         "En cas de silence du juge d’instruction pendant 5 jours après une demande de mainlevée, la chambre de l’instruction doit être saisie dans un délai de :",
@@ -2635,7 +2635,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Mainlevée (chambre de l’instruction)",
     question:
         "Lorsque la chambre de l’instruction est saisie d’une demande de mainlevée du contrôle judiciaire, elle peut :",
@@ -2652,7 +2652,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // JURIDICTIONS DE JUGEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Rôle des juridictions de jugement",
     question:
         "Les juridictions de jugement peuvent-elles modifier ou lever un contrôle judiciaire ordonné pendant l’instruction ?",
@@ -2668,7 +2668,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // OBLIGATIONS — PRÉCISIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations (personnes physiques)",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une obligation de contrôle judiciaire prévue par l’article 138 C.P.P. ?",
@@ -2683,7 +2683,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations (personnes physiques)",
     question:
         "Parmi ces obligations, laquelle peut être imposée dans le cadre du contrôle judiciaire ?",
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Obligations (personnes morales)",
     question:
         "Dans le cadre de l’article 706-45 C.P.P., une personne morale placée sous contrôle judiciaire peut être notamment tenue :",
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ORGANISATION & SURVEILLANCE (ART. 141-4)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Surveillance (art. 141-4)",
     question:
         "Selon l’article 141-4 du C.P.P., qui peut retenir une personne sous contrôle judiciaire en cas de soupçon de manquement ?",
@@ -2730,7 +2730,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Surveillance (art. 141-4)",
     question: "La retenue prévue par l’article 141-4 C.P.P. ne peut excéder :",
     options: ["24 heures", "48 heures", "72 heures"],
@@ -2741,7 +2741,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DROITS DE LA PERSONNE RETENUE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Droits de la personne retenue",
     question:
         "Parmi ces droits, lequel est expressément reconnu à la personne retenue en application de l’article 141-4 C.P.P. ?",
@@ -2756,7 +2756,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Droits de la personne retenue",
     question:
         "La personne retenue au titre de l’article 141-4 C.P.P. bénéficie notamment :",
@@ -2772,7 +2772,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // FIN / TRANSFORMATION / RÉVOCATION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Transformation en détention",
     question:
         "Lorsque la personne ne respecte pas ses obligations de contrôle judiciaire, le juge d’instruction peut :",
@@ -2788,7 +2788,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Fin de la mesure",
     question:
         "En matière criminelle, l’ordonnance de mise en accusation devant la cour d’assises :",
@@ -2804,7 +2804,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // TABLEAU SYNTHÉTIQUE (PAGE FINALE)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Tableau récapitulatif",
     question:
         "Selon le tableau de synthèse, le juge des libertés et de la détention peut prononcer le contrôle judiciaire :",
@@ -2825,7 +2825,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // CAS PRATIQUES & ARTICULATIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Cas pratique",
     question:
         "Une personne mise en examen pour un délit correctionnel ne respecte plus l’interdiction de contacter la victime. Sur quel fondement juridique le juge d’instruction peut-il demander sa retenue par un officier de police judiciaire ?",
@@ -2840,7 +2840,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Cas pratique",
     question:
         "Durant la retenue prévue par l’article 141-4, la personne est interrogée. Quel droit doit impérativement lui être notifié, à peine de nullité potentielle ?",
@@ -2856,7 +2856,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ARTICULATION AVEC LA DÉTENTION PROVISOIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Articulation avec la détention provisoire",
     question:
         "Selon l’article 137 C.P.P., dans quel cas le juge peut-il substituer une détention provisoire au contrôle judiciaire ?",
@@ -2872,7 +2872,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Articulation avec la détention provisoire",
     question:
         "En cas de révocation du contrôle judiciaire et de placement en détention provisoire, qui décide de cette détention ?",
@@ -2889,7 +2889,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // PERSONNES MORALES — DÉTAILS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Personnes morales",
     question:
         "L’article 706-45 C.P.P. permet d’imposer à une personne morale des obligations. Laquelle de ces mesures en fait partie ?",
@@ -2905,7 +2905,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CHAMBRE DE L’INSTRUCTION — DÉTAILS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Chambre de l’instruction",
     question:
         "Lorsque la chambre de l’instruction statue sur l’appel d’une ordonnance de placement sous contrôle judiciaire, elle peut :",
@@ -2921,7 +2921,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Chambre de l’instruction",
     question:
         "En cas de carence du juge d’instruction (absence de réponse dans le délai de 5 jours à la demande de mainlevée), la chambre de l’instruction :",
@@ -2937,7 +2937,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // GARANTIES PROCÉDURALES — RÉSULTAT DE LA RETENUE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Issue de la retenue (art. 141-4)",
     question:
         "À l’issue de la retenue prévue par l’article 141-4 C.P.P., le juge d’instruction peut :",
@@ -2954,7 +2954,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DROITS DURANT LA RETENUE — PRÉCISIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Droits procéduraux",
     question:
         "Pendant la retenue liée au non-respect du contrôle judiciaire, le droit de garder le silence est-il applicable ?",
@@ -2970,7 +2970,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // NOTE / PARTICULARITÉS
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Note explicative",
     question:
         "La note figurant en bas de page précise que la procédure de retenue est également applicable :",
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SYNTHÈSE : QUI FAIT QUOI ?
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Synthèse des compétences",
     question:
         "Parmi ces propositions, laquelle décrit correctement la répartition des compétences pour le contrôle judiciaire ?",
@@ -3002,7 +3002,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "C’est une mesure qui suit le dossier tout au long de la chaîne judiciaire, avec des compétences réparties entre plusieurs magistrats.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question: "La détention provisoire est une mesure de :",
     options: [
@@ -3016,7 +3016,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "À l’égard de quelle catégorie de personnes la détention provisoire peut-elle être prononcée ?",
@@ -3031,7 +3031,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "La détention provisoire est-elle la règle ou l’exception selon l’article 137 du C.P.P. ?",
@@ -3046,7 +3046,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Pourquoi la détention provisoire est-elle difficilement compatible avec la présomption d’innocence ?",
@@ -3062,7 +3062,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Quels articles du C.P.P. encadrent principalement la détention provisoire ?",
@@ -3077,7 +3077,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question: "La détention provisoire peut-elle être assimilée à une peine ?",
     options: [
@@ -3091,7 +3091,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Quel principe doit toujours guider le choix entre contrôle judiciaire, assignation à résidence avec bracelet électronique et détention provisoire ?",
@@ -3106,7 +3106,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "Parmi les propositions suivantes, quelle affirmation est exacte concernant la détention provisoire ?",
@@ -3121,7 +3121,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "La détention provisoire peut-elle avoir pour seule finalité de faire pression sur la personne mise en examen pour qu’elle avoue ?",
@@ -3136,7 +3136,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Notions générales",
     question:
         "L’opinion publique peut-elle justifier à elle seule le placement en détention provisoire ?",
@@ -3152,7 +3152,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CONDITIONS DU PLACEMENT — PERSONNE ET NATURE DE L’INFRACTION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question: "Qui ne peut jamais faire l’objet d’une détention provisoire ?",
     options: [
@@ -3166,7 +3166,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Selon les conditions tenant à la nature de l’infraction, la détention provisoire est possible :",
@@ -3181,7 +3181,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "La détention provisoire peut aussi être décidée lorsque la personne mise en examen :",
@@ -3197,7 +3197,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "La détention provisoire ne peut être ordonnée ou prolongée que si elle constitue :",
@@ -3212,7 +3212,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Lequel des objectifs suivants figure parmi ceux permettant de justifier la détention provisoire selon l’art. 144 C.P.P. ?",
@@ -3228,7 +3228,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Empêcher une pression sur les témoins ou les victimes ainsi que sur leur famille est :",
@@ -3243,7 +3243,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Quel objectif concerne spécifiquement la protection de la personne mise en examen ?",
@@ -3258,7 +3258,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "La détention provisoire peut être ordonnée pour garantir la mise à disposition de la justice de la personne mise en examen :",
@@ -3273,7 +3273,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Mettre fin à une infraction ou éviter son renouvellement constitue :",
@@ -3288,7 +3288,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Conditions de placement",
     question:
         "Le trouble exceptionnel et persistant à l’ordre public causé par l’infraction peut-il justifier une détention provisoire ?",
@@ -3305,7 +3305,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // JUGE DES LIBERTÉS ET DE LA DÉTENTION — PLACEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Quel magistrat est compétent pour décider du placement en détention provisoire ?",
@@ -3320,7 +3320,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Le J.L.D. peut-il se saisir d’office pour décider d’une détention provisoire ?",
@@ -3336,7 +3336,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Dans quelles hypothèses le juge d’instruction peut-il saisir le J.L.D. pour un placement en détention ?",
@@ -3352,7 +3352,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question: "À peine de nullité, le J.L.D. ne peut pas :",
     options: [
@@ -3367,7 +3367,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "La saisine du J.L.D. pour un placement en détention provisoire en matière criminelle se fait :",
@@ -3383,7 +3383,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "En matière délictuelle, pour les délits punis de moins de 10 ans d’emprisonnement, le procureur de la République peut-il saisir directement le J.L.D. ?",
@@ -3398,7 +3398,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Juge des libertés et de la détention",
     question:
         "Que doit contenir l’ordonnance de placement en détention provisoire rendue par le J.L.D. ?",
@@ -3415,7 +3415,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CHAMBRE DE L’INSTRUCTION — PLACEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Chambre de l’instruction",
     question:
         "La chambre de l’instruction peut-elle ordonner un placement en détention provisoire ?",
@@ -3432,7 +3432,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DURÉE DE LA DÉTENTION PROVISOIRE — RÈGLES GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Selon l’article 144-1 du C.P.P., la détention provisoire ne peut excéder une durée raisonnable appréciée :",
@@ -3448,7 +3448,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "En matière correctionnelle, la durée initiale maximale de la détention provisoire est en principe de :",
@@ -3459,7 +3459,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Toujours en matière correctionnelle, la durée maximale de la détention provisoire, après prolongations possibles, ne peut excéder :",
@@ -3470,7 +3470,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "En matière criminelle, hors régimes spéciaux, la durée initiale maximale de détention provisoire est de :",
@@ -3481,7 +3481,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Pour un crime de droit commun, la durée maximale totale de détention provisoire (initiale + prolongations) est en principe de :",
@@ -3492,7 +3492,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "La détention provisoire peut-elle dépasser 4 ans en matière criminelle ?",
@@ -3508,7 +3508,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Pour les délits commis en bande organisée punis d’au moins 10 ans d’emprisonnement (trafic de stupéfiants, proxénétisme aggravé, etc.), la durée de détention correctionnelle peut atteindre :",
@@ -3519,7 +3519,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Lorsque la chambre de l’instruction est saisie pour une procédure de « mise en état » (art. 221-3 C.P.P.), l’un de ses pouvoirs est notamment :",
@@ -3534,7 +3534,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Le dépassement des délais pour statuer sur une demande de mise en liberté entraîne :",
@@ -3550,7 +3550,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // PROLONGATION DE LA DÉTENTION PROVISOIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "De qui relève la décision de prolonger la détention provisoire ?",
@@ -3566,7 +3566,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Durée et prolongations",
     question:
         "Toute prolongation de détention provisoire doit se faire après :",
@@ -3583,7 +3583,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // FIN DE LA DÉTENTION PROVISOIRE — RÈGLEMENT DE LA PROCÉDURE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Fin de la détention provisoire",
     question: "La détention provisoire prend fin automatiquement en cas :",
     options: [
@@ -3598,7 +3598,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Fin de la détention provisoire",
     question:
         "En cas de renvoi devant le tribunal correctionnel, l’ordonnance de renvoi :",
@@ -3614,7 +3614,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Fin de la détention provisoire",
     question:
         "En cas de renvoi devant la cour d’assises, la détention provisoire :",
@@ -3631,7 +3631,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DEMANDES DE MISE EN LIBERTÉ — RÈGLES GÉNÉRALES
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Selon l’article 148 C.P.P., qui peut demander à tout moment la mise en liberté de la personne détenue ?",
@@ -3646,7 +3646,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Après renvoi devant une juridiction de jugement, l’intéressé peut demander sa mise en liberté :",
@@ -3661,7 +3661,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Lorsque le juge d’instruction reçoit une demande de mise en liberté, il doit :",
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question: "Si le juge d’instruction refuse la mise en liberté, il doit :",
     options: [
@@ -3691,7 +3691,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "Quand la chambre de l’instruction est saisie d’une demande de mise en liberté, elle doit statuer :",
@@ -3706,7 +3706,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Demandes de mise en liberté",
     question:
         "En cas de carence du juge des libertés et de la détention qui n’a pas statué dans les 5 jours ouvrables, la demande de mise en liberté est portée :",
@@ -3722,7 +3722,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MISE EN LIBERTÉ DE PLEIN DROIT / D’OFFICE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté de plein droit",
     question:
         "À l’expiration de la durée légale de détention provisoire, prolongations comprises, la mise en liberté :",
@@ -3737,7 +3737,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté de plein droit",
     question:
         "Quelle conséquence entraîne l’inobservation des délais pour statuer sur une demande de mise en liberté ?",
@@ -3752,7 +3752,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté d’office",
     question: "La mise en liberté d’office peut être décidée :",
     options: [
@@ -3767,7 +3767,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté d’office",
     question:
         "Avant d’ordonner une mise en liberté d’office, le juge d’instruction doit :",
@@ -3783,7 +3783,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MISE EN LIBERTÉ POUR RAISONS DE SANTÉ
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté pour raison de santé",
     question:
         "La mise en liberté pour raison de santé peut être ordonnée lorsqu’une expertise médicale établit que :",
@@ -3799,7 +3799,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Mise en liberté pour raison de santé",
     question:
         "La mise en liberté pour raison de santé peut-elle être refusée en cas de risque grave de renouvellement de l’infraction ?",
@@ -3815,7 +3815,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // RÉPARATION D’UNE DÉTENTION PROVISOIRE INJUSTIFIÉE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question:
         "Selon l’article 149 C.P.P., qui peut prétendre à une réparation pour détention provisoire injustifiée ?",
@@ -3831,7 +3831,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question:
         "L’indemnisation pour détention provisoire injustifiée est accordée :",
@@ -3846,7 +3846,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question: "La réparation d’une détention provisoire injustifiée couvre :",
     options: [
@@ -3860,7 +3860,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Réparation",
     question:
         "Certaines personnes sont exclues du droit à indemnisation pour détention provisoire injustifiée, notamment :",
@@ -3877,7 +3877,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // TABLEAU DÉLITS — APPLICATION CHIFFRÉE (CAS PRATIQUES)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux délits",
     question:
         "Un mis en examen pour un délit puni de 3 ans d’emprisonnement encourt au maximum, en matière correctionnelle de droit commun, une détention provisoire de :",
@@ -3888,7 +3888,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux délits",
     question:
         "Pour un délit puni de 7 ans d’emprisonnement mais ne relevant pas de la criminalité organisée, la durée initiale de détention provisoire est de :",
@@ -3899,7 +3899,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux délits",
     question:
         "Pour un délit de trafic de stupéfiants commis en bande organisée, puni de 10 ans, la durée maximale de détention provisoire peut atteindre :",
@@ -3911,7 +3911,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // TABLEAU CRIMES — APPLICATION CHIFFRÉE
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux crimes",
     question:
         "Pour un crime puni de 20 ans de réclusion criminelle, la durée initiale de détention provisoire est de :",
@@ -3922,7 +3922,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux crimes",
     question:
         "Pour certains crimes graves, la durée totale maximale de détention provisoire peut atteindre 3 ans. Cela suppose :",
@@ -3938,7 +3938,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Tableaux crimes",
     question:
         "Dans les hypothèses les plus graves prévues par le C.P.P. (criminalité organisée, terrorisme…), la durée totale de détention provisoire peut aller jusqu’à :",
@@ -3950,7 +3950,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CAS PRATIQUES — MISE EN SITUATION
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un individu est mis en examen pour un délit puni de 2 ans d’emprisonnement. Peut-il être placé en détention provisoire ?",
@@ -3966,7 +3966,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne mise en examen respecte toutes les obligations de son contrôle judiciaire, mais l’affaire est très médiatisée. Le seul motif avancé est l’apaisement du trouble à l’ordre public. La détention provisoire est-elle possible en matière délictuelle ?",
@@ -3982,7 +3982,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un mis en examen est sans domicile fixe et n’a pas de attaches stables. Quel objectif de l’article 144 peut justifier sa détention provisoire ?",
@@ -3998,7 +3998,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne mise en examen pour un crime est détenue depuis 8 mois. L’enquête est peu complexe et les principaux témoins ont déjà été entendus. Le juge souhaite prolonger la détention par simple crainte d’un émoi médiatique. Cette prolongation est-elle conforme aux principes de la détention provisoire ?",
@@ -4014,7 +4014,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un détenu dépose une demande de mise en liberté. Le juge des libertés et de la détention ne statue pas dans le délai de 5 jours ouvrables. Quelle est la conséquence ?",
@@ -4029,7 +4029,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Un mis en examen détenu pour un délit punissable de 5 ans est toujours incarcéré après 7 mois de détention, sans régime aggravé applicable. Quelle est la situation ?",
@@ -4044,7 +4044,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne a bénéficié d’un non-lieu après 9 mois de détention provisoire. Elle souhaite obtenir réparation. Vers quelle autorité doit-elle se tourner ?",
@@ -4059,7 +4059,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une expertise médicale conclut à l’incompatibilité de l’état psychique d’un détenu avec la détention, sans risque particulier de récidive. Quelle mesure doit être privilégiée ?",
@@ -4073,7 +4073,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "L’article 147-1 C.P.P. prévoit la mise en liberté lorsque la détention est incompatible avec l’état de santé, en l’absence de risque grave de renouvellement de l’infraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Principes généraux',
     question:
         'Le code de la justice pénale des mineurs (CJPM) fixe notamment comme principe :',
@@ -4088,7 +4088,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Principes généraux',
     question:
         'Parmi ces principes, lequel fait partie des fondements de la justice pénale des mineurs ?',
@@ -4103,7 +4103,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Principes généraux',
     question:
         'Le CJPM rappelle en liminaire que l’intérêt supérieur de l’enfant :',
@@ -4120,7 +4120,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // PRÉSOMPTION DE DISCERNEMENT
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question:
         'Le seuil d’âge de la capacité de discernement, et donc de la responsabilité pénale, est fixé à :',
@@ -4131,7 +4131,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question: 'Pour les mineurs de moins de 13 ans, la présomption est :',
     options: [
@@ -4145,7 +4145,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question: 'Pour les mineurs de plus de 13 ans, la présomption est :',
     options: [
@@ -4159,7 +4159,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement',
     question:
         'La capacité de discernement d’un mineur se définit notamment par :',
@@ -4176,7 +4176,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MINEUR < 13 / ≥ 13
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Responsabilité pénale',
     question: 'Pour un mineur de moins de 13 ans, en principe :',
     options: [
@@ -4191,7 +4191,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Responsabilité pénale',
     question: 'Pour un mineur âgé d’au moins 13 ans :',
     options: [
@@ -4206,7 +4206,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SPÉCIALISATION DES ACTEURS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées',
     question:
         'Quel juge est spécialement compétent pour les affaires pénales concernant les mineurs ?',
@@ -4221,7 +4221,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées',
     question: 'Les crimes reprochés à un mineur sont jugés par :',
     options: [
@@ -4235,7 +4235,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées',
     question:
         'Les fonctions du ministère public en matière de crimes, délits et contraventions de 5ᵉ classe reprochés à un mineur sont remplies par :',
@@ -4252,7 +4252,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DROITS SPÉCIFIQUES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Droits spécifiques',
     question: 'En principe, le mineur poursuivi pénalement est assisté :',
     options: [
@@ -4266,7 +4266,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Droits spécifiques',
     question: 'La publicité des audiences concernant un mineur est :',
     options: [
@@ -4281,7 +4281,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // INSTRUCTION — JUGE D’INSTRUCTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Instruction',
     question: 'Les crimes et délits reprochés à un mineur sont instruits par :',
     options: [
@@ -4295,7 +4295,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Ouverture d’information',
     question:
         'En matière criminelle, pour les mineurs, l’information préalable :',
@@ -4307,7 +4307,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // RÉTENTION ET MANDATS — GROS PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (mandats)',
     question: 'Un mineur peut être placé en rétention dans le cadre :',
     options: [
@@ -4321,7 +4321,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (droits)',
     question:
         'Lorsqu’un mineur est placé en rétention dans le cadre d’un mandat, l’enregistrement audiovisuel de ses auditions :',
@@ -4341,7 +4341,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // DISCERNEMENT — APPRÉCIATION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Discernement (Moyen)',
     question:
         'La capacité ou l’absence de discernement d’un mineur peut être établie à partir :',
@@ -4358,7 +4358,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SPÉCIALISATION DES ACTEURS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Juridictions spécialisées (Moyen)',
     question:
         'Parmi ces juridictions, laquelle n’intervient PAS comme juridiction spécialisée pour les mineurs ?',
@@ -4373,7 +4373,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — PJJ',
     question:
         'La mise en œuvre des décisions prises en application du CJPM est confiée principalement :',
@@ -4390,7 +4390,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DROITS SPÉCIFIQUES — AVOCAT / INFO
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Avocat (Moyen)',
     question: 'S’agissant de l’avocat du mineur, le CJPM prévoit que :',
     options: [
@@ -4405,7 +4405,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Information',
     question: 'La notification des droits au mineur doit être faite :',
     options: [
@@ -4419,7 +4419,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Représentants légaux',
     question: 'Le CJPM impose que les représentants légaux :',
     options: [
@@ -4435,7 +4435,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // INSTRUCTION — OUVERTURE & COMPÉTENCE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Ouverture d’information (Moyen)',
     question:
         'Pour un délit reproché à un mineur, l’ouverture d’une information :',
@@ -4446,7 +4446,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Compétence territoriale',
     question:
         'L’information est ouverte auprès du tribunal judiciaire siège d’un tribunal pour enfants compétent notamment en fonction :',
@@ -4462,7 +4462,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ENQUÊTE DE PERSONNALITÉ & MJIE / MEJP
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Enquête de personnalité',
     question:
         'L’enquête de personnalité ordonnée par le procureur de la République est réalisée :',
@@ -4477,7 +4477,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — MJIE',
     question:
         'Le juge d’instruction, lorsqu’il est saisi d’une affaire concernant un mineur, doit :',
@@ -4492,7 +4492,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — MEJP',
     question:
         'La mesure éducative judiciaire provisoire (MEJP) peut comprendre :',
@@ -4509,7 +4509,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CONTRÔLE JUDICIAIRE — CONDITIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (conditions)',
     question:
         'Un mineur de moins de 13 ans peut-il être placé sous contrôle judiciaire ?',
@@ -4524,7 +4524,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (conditions)',
     question:
         'Un mineur de moins de 16 ans peut être placé sous contrôle judiciaire notamment s’il :',
@@ -4540,7 +4540,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (16-18 ans)',
     question:
         'Un mineur d’au moins 16 ans peut être placé sous contrôle judiciaire :',
@@ -4555,7 +4555,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CONTRÔLE JUDICIAIRE — OBLIGATIONS & RÉTENTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (obligations)',
     question: 'Les obligations du contrôle judiciaire des mineurs sont :',
     options: [
@@ -4569,7 +4569,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (rétention)',
     question:
         'En cas de soupçon de non-respect des obligations du contrôle judiciaire, le mineur peut :',
@@ -4585,7 +4585,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DÉTENTION PROVISOIRE — PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire',
     question:
         'Un mineur de moins de 13 ans peut-il être placé en détention provisoire ?',
@@ -4600,7 +4600,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire',
     question:
         'En matière criminelle, pour un mineur de moins de 16 ans, la détention provisoire peut être prononcée pour :',
@@ -4616,7 +4616,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CLÔTURE DE L’INSTRUCTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Clôture de l’instruction',
     question:
         'À l’issue de l’instruction, le juge peut renvoyer devant le tribunal pour enfants :',
@@ -4633,7 +4633,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // RÉTENTION — DROITS SPÉCIFIQUES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (droits)',
     question:
         'En rétention, l’OPJ doit informer les représentants légaux du mineur :',
@@ -4648,7 +4648,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Examen médical',
     question: 'Pour un mineur de moins de 16 ans placé en rétention :',
     options: [
@@ -4663,7 +4663,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ACCOMPAGNEMENT / ADULTE APPROPRIÉ
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Accompagnement',
     question:
         'En principe, le mineur a le droit d’être accompagné lors de ses auditions :',
@@ -4684,7 +4684,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // CONTRÔLE JUDICIAIRE — RÉVOCATION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (Difficile)',
     question:
         'La révocation du contrôle judiciaire d’un mineur de 16 à 18 ans n’est possible que si :',
@@ -4700,7 +4700,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Contrôle judiciaire (modification)',
     question:
         'La modification ou la mainlevée du contrôle judiciaire d’un mineur peut être décidée :',
@@ -4717,7 +4717,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ARSE MINEURS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — ARSE mineurs',
     question:
         'L’assignation à résidence sous surveillance électronique (ARSE) dans le CJPM :',
@@ -4733,7 +4733,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — ARSE mineurs',
     question:
         'La vérification de la faisabilité technique de l’ARSE pour un mineur est confiée :',
@@ -4749,7 +4749,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // DÉTENTION PROVISOIRE — DURÉES COMPLEXES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire (Difficile)',
     question:
         'En matière correctionnelle, pour un mineur de 16 à 18 ans encourant une peine d’emprisonnement supérieure à 7 ans, la détention provisoire peut être prononcée :',
@@ -4764,7 +4764,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Détention provisoire (terrorisme)',
     question:
         'En matière criminelle de terrorisme, la détention provisoire d’un mineur de 16 à 18 ans peut atteindre :',
@@ -4776,7 +4776,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // CLÔTURE INSTRUCTION — ORIENTATIONS COMPLEXES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Clôture instruction (Difficile)',
     question:
         'En cas de crime reproché à un mineur d’au moins 16 ans, le juge d’instruction :',
@@ -4792,7 +4792,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Clôture instruction (connexité)',
     question:
         'La cour d’assises des mineurs peut être saisie, en raison de la connexité, de crimes commis par un mineur :',
@@ -4809,7 +4809,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // RÉTENTION — AVIS, AVOCAT, MÉDECIN
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Rétention (Difficile)',
     question:
         'Lorsqu’un mineur de plus de 16 ans est placé en rétention, qui peut demander un examen médical ?',
@@ -4825,7 +4825,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Assistance avocat (rétention)',
     question:
         'Si le mineur ou ses représentants légaux n’ont pas désigné d’avocat pour la rétention :',
@@ -4842,7 +4842,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ACCOMPAGNEMENT — ADULTE APPROPRIÉ / EXCEPTIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Exceptions accompagnement',
     question:
         'Les représentants légaux peuvent être écartés de l’information et de l’accompagnement du mineur lorsque :',
@@ -4858,7 +4858,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Adulte approprié',
     question: 'L’adulte approprié désigné pour accompagner le mineur :',
     options: [
@@ -4873,7 +4873,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'CJPM — Administrateur ad hoc',
     question:
         'Si aucun adulte approprié ne peut être désigné parmi les proches du mineur, le procureur, le juge des enfants ou le juge d’instruction :',
@@ -4888,7 +4888,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quel est le rôle principal des juridictions pénales en droit français ?",
@@ -4903,7 +4903,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quel est le rôle principal des juridictions pénales en droit français ?",
@@ -4918,7 +4918,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Quel est l’objectif principal de la réforme du droit de la peine par la loi du 23 mars 2019 ?",
@@ -4934,7 +4934,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Réformes",
     question:
         "Quel est l’objectif principal de la loi n° 2019-222 du 23 mars 2019 concernant le droit de la peine ?",
@@ -4950,7 +4950,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Réformes",
     question:
         "La loi n° 2012-409 du 27 mars 2012 relative à l’exécution des peines vise notamment à :",
@@ -4966,7 +4966,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Juridictionnalisation",
     question:
         "Le mouvement de juridictionnalisation des peines s’est notamment traduit par :",
@@ -4982,7 +4982,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Acteurs",
     question:
         "Selon le texte, qui poursuit l’exécution des peines privatives de liberté et de certaines peines de substitution ainsi que des peines complémentaires ?",
@@ -4997,7 +4997,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Rôle du JAP",
     question:
         "Le juge de l’application des peines (JAP) intervient de plus en plus dans l’exécution des décisions de justice notamment pour :",
@@ -5013,7 +5013,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Individualisation",
     question:
         "Pour les peines privatives de liberté, l’individualisation de la peine doit notamment permettre :",
@@ -5029,7 +5029,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des décisions – Peines pécuniaires",
     question:
         "Pour les peines pécuniaires, quel mécanisme est prévu pour garantir l’exécution des amendes et condamnations pécuniaires ?",
@@ -5047,7 +5047,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CHAPITRE 1 – EXÉCUTION DES PEINES (PARTIES INTERVENANTES)
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Parties",
     question:
         "Selon l’Article 707-1 alinéa 1 du Code de procédure pénale, qui poursuit l’exécution de la sentence ?",
@@ -5063,7 +5063,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 1.1.1 La partie civile ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Partie civile",
     question:
         "En principe, quel type de réparation la partie civile obtient-elle ?",
@@ -5078,7 +5078,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Partie civile",
     question:
         "Outre les dommages et intérêts, la partie civile peut également bénéficier :",
@@ -5094,7 +5094,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Partie civile",
     question:
         "Qui a qualité pour faire exécuter les condamnations prononcées au profit de la partie civile ?",
@@ -5109,7 +5109,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Administrations",
     question:
         "Quelle administration est chargée du recouvrement des amendes à caractère fiscal et de certaines confiscations ?",
@@ -5124,7 +5124,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Administrations",
     question: "L’administration des douanes intervient notamment pour :",
     options: [
@@ -5142,7 +5142,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // NIVEAU MOYEN – JURIDICTIONS PÉNALES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Généralités",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une juridiction pénale de droit commun ?",
@@ -5157,7 +5157,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Quelle est la nature des infractions jugées par le tribunal de police ?",
@@ -5168,7 +5168,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Sauf texte particulier, quel tribunal de police est territorialement compétent pour juger une contravention ?",
@@ -5184,7 +5184,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Quelle formation est en principe compétente pour juger les délits en première instance ?",
@@ -5199,7 +5199,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Dans sa formation ordinaire, comment est composé le tribunal correctionnel ?",
@@ -5214,7 +5214,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Quel type d’infraction le tribunal correctionnel juge-t-il normalement ?",
@@ -5230,7 +5230,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Quelle est la compétence matérielle principale de la cour d’assises ?",
@@ -5245,7 +5245,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lorsque la cour d’assises statue en appel, combien de jurés composent en principe le jury ?",
@@ -5256,7 +5256,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Quel est le rôle du président de la cour d’assises pendant les débats ?",
@@ -5272,7 +5272,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question:
         "En matière correctionnelle, quelle juridiction connaît de l’appel d’un jugement rendu par le tribunal correctionnel ?",
@@ -5287,7 +5287,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question:
         "Quel est en principe l’effet d’un pourvoi en cassation contre une décision pénale ?",
@@ -5303,7 +5303,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence mineurs",
     question:
         "Pour les contraventions de 5ᵉ classe commises par des mineurs, quelle juridiction est compétente ?",
@@ -5318,7 +5318,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence connexité",
     question:
         "Lorsque des contraventions sont connexes à un délit poursuivi devant le tribunal correctionnel, comment sont-elles jugées ?",
@@ -5333,7 +5333,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Saisine",
     question:
         "Parmi les modes de saisine suivants, lequel permet au ministère public de faire juger rapidement un prévenu devant le tribunal correctionnel lorsque les charges sont suffisantes et l’affaire en état d’être jugée ?",
@@ -5351,7 +5351,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // NIVEAU DIFFICILE – JURIDICTIONS PÉNALES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence territoriale",
     question:
         "En matière délictuelle, plusieurs critères de compétence territoriale peuvent se cumuler. Lequel de ces critères n’est pas habituellement retenu par le Code de procédure pénale ?",
@@ -5366,7 +5366,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lors de la constitution du jury, quel pouvoir de récusation l’accusé possède-t-il devant la cour d’assises statuant en premier ressort ?",
@@ -5381,7 +5381,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Pour être juré d’assises, parmi les conditions suivantes, laquelle n’est pas exigée ?",
@@ -5396,7 +5396,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Incompatibilités jurés",
     question:
         "Parmi les personnes suivantes, laquelle est en principe incompatible avec les fonctions de juré d’assises ?",
@@ -5411,7 +5411,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Appel des décisions d’assises",
     question:
         "Quel est l’effet principal de l’appel formé contre un arrêt de condamnation rendu par une cour d’assises statuant en premier ressort ?",
@@ -5427,7 +5427,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Contraventions et mineurs",
     question:
         "En matière contraventionnelle, dans quel cas le tribunal de police perd-il sa compétence au profit des juridictions pour mineurs ?",
@@ -5443,7 +5443,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – CRPC",
     question:
         "La comparution sur reconnaissance préalable de culpabilité (CRPC) est une procédure applicable :",
@@ -5458,7 +5458,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Ordonnance pénale",
     question: "L’ordonnance pénale en matière délictuelle permet :",
     options: [
@@ -5473,7 +5473,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Lien civil/pénal",
     question:
         "Lorsque la victime se constitue partie civile devant le tribunal correctionnel, quel est l’effet principal sur la compétence civile ?",
@@ -5489,7 +5489,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Saisine d’office",
     question:
         "Dans quel cas une juridiction de jugement peut-elle se saisir d’office d’une infraction pénale ?",
@@ -5505,7 +5505,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions d’exception",
     question:
         "Parmi les juridictions suivantes, laquelle est une juridiction pénale d’exception au sens de la compétence matérielle ?",
@@ -5523,7 +5523,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // SUITE – QUESTIONS NIVEAU MOYEN & DIFFICILE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Le tribunal de police statue en matière pénale sur les contraventions. Quelle affirmation est exacte à propos des peines qu’il peut prononcer ?",
@@ -5539,7 +5539,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Parmi ces modes de saisine, lequel n’est pas utilisé pour le tribunal de police ?",
@@ -5554,7 +5554,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Quel est l’un des intérêts principaux de la possibilité de juge unique au tribunal correctionnel pour certains délits ?",
@@ -5570,7 +5570,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "En matière correctionnelle, dans quel délai l’appel doit-il en principe être formé à compter du prononcé du jugement ?",
@@ -5581,7 +5581,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "La comparution immédiate devant le tribunal correctionnel suppose notamment :",
@@ -5597,7 +5597,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lorsque la cour d’assises statue en appel, quelle formation professionnelle la compose, en plus des jurés ?",
@@ -5612,7 +5612,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lors de la constitution du jury, quel principe fondamental est rappelé par le serment des jurés ?",
@@ -5628,7 +5628,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions d’exception",
     question:
         "Quelle juridiction est compétente pour juger en matière pénale les mineurs de 13 à 18 ans pour les délits et certains crimes ?",
@@ -5643,7 +5643,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions d’exception",
     question:
         "Les crimes commis par des mineurs de 16 à 18 ans peuvent relever :",
@@ -5658,7 +5658,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action civile",
     question:
         "Si la victime ne s’est pas constituée partie civile devant la juridiction pénale, comment pourra-t-elle obtenir réparation ?",
@@ -5673,7 +5673,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Sursis à statuer civil",
     question:
         "Lorsqu’une instance civile est engagée alors que des poursuites pénales sont en cours pour les mêmes faits, le juge civil :",
@@ -5688,7 +5688,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Appels",
     question:
         "Quel est l’effet principal de l’appel sur l’exécution d’une peine d’emprisonnement lorsqu’un prévenu est détenu à l’issue de l’audience correctionnelle ?",
@@ -5704,7 +5704,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Rôle du ministère public",
     question:
         "Quel est le rôle principal du ministère public devant les juridictions pénales ?",
@@ -5720,7 +5720,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Débats",
     question:
         "En procédure pénale, le principe de publicité des débats signifie que :",
@@ -5736,7 +5736,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Exécution des peines",
     question:
         "En matière de peines privatives de liberté, quel est l’un des objectifs de l’intervention du juge de l’application des peines (JAP) ?",
@@ -5752,7 +5752,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Application des peines",
     question:
         "Le tribunal de l’application des peines (TAP) est compétent notamment pour :",
@@ -5768,7 +5768,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Chambre de l’application des peines",
     question:
         "La chambre de l’application des peines de la cour d’appel connaît :",
@@ -5784,7 +5784,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ===================== NIVEAU DIFFICILE ====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Compétence territoriale délictuelle",
     question:
         "En matière délictuelle, plusieurs tribunaux correctionnels peuvent être compétents. Laquelle de ces propositions ne constitue pas un critère légal de compétence territoriale ?",
@@ -5799,7 +5799,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Connexité et indivisibilité",
     question:
         "Lorsque plusieurs infractions sont connexes, quel peut être l’effet en matière de compétence des juridictions pénales ?",
@@ -5815,7 +5815,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Le nombre de jurés d’assises peut être augmenté pour certaines cours (Paris notamment). Quel est l’objectif principal de cette augmentation ?",
@@ -5831,7 +5831,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Débats d’assises",
     question:
         "En cour d’assises, quel principe gouverne l’intime conviction des jurés et des magistrats au moment du vote sur la culpabilité ?",
@@ -5847,7 +5847,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Majorité de condamnation",
     question:
         "En premier ressort, à la cour d’assises, quelle majorité est nécessaire pour déclarer l’accusé coupable ?",
@@ -5862,7 +5862,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – CRPC",
     question:
         "Dans le cadre de la CRPC, si le prévenu accepte la peine proposée par le procureur de la République :",
@@ -5878,7 +5878,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Ordonnance pénale délictuelle",
     question:
         "Dans la procédure d’ordonnance pénale délictuelle, quel est le droit spécifique reconnu au prévenu après notification de l’ordonnance ?",
@@ -5894,7 +5894,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Application des peines",
     question:
         "La libération conditionnelle d’un condamné à une peine criminelle lourde relève :",
@@ -5910,7 +5910,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Suspension de peine",
     question:
         "La suspension de peine pour raison médicale grave (hors période de sûreté) est décidée :",
@@ -5926,7 +5926,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Contrainte judiciaire",
     question:
         "La contrainte judiciaire prononcée en cas de non-paiement d’une amende :",
@@ -5941,7 +5941,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Recours application des peines",
     question:
         "Dans quel délai un pourvoi en cassation peut-il être formé contre un arrêt de la chambre de l’application des peines ?",
@@ -5956,7 +5956,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Primauté du pénal",
     question:
         "Le principe de primauté du pénal sur le civil implique notamment que :",
@@ -5971,7 +5971,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "Le juge civil ne peut contredire les constatations pénales définitives sur la matérialité des faits et la culpabilité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "En matière de contraventions, le tribunal de police peut connaître de certaines demandes civiles de la victime. Dans quelle limite principale ?",
@@ -5987,7 +5987,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal de police",
     question:
         "Lorsque le tribunal de police statue en l’absence du prévenu régulièrement cité qui n’a pas comparu, il rend :",
@@ -6002,7 +6002,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Dans quel cas le tribunal correctionnel, saisi d’un délit, peut-il également juger une contravention ?",
@@ -6018,7 +6018,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Tribunal correctionnel",
     question:
         "Que se passe-t-il si, devant le tribunal correctionnel, les faits poursuivis sous la qualification de délit constituent en réalité un crime ?",
@@ -6034,7 +6034,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Relaxe et acquittement",
     question:
         "Quelle affirmation distingue correctement la relaxe de l’acquittement ?",
@@ -6050,7 +6050,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Lorsque plusieurs accusés sont poursuivis pour un même crime, l’un d’eux peut-il être jugé séparément par une autre juridiction ?",
@@ -6066,7 +6066,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Cour d’assises",
     question:
         "Pourquoi la loi prévoit-elle des incompatibilités pour certaines professions (policiers, préfets, etc.) en matière de fonctions de juré ?",
@@ -6082,7 +6082,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Juridictions pour mineurs",
     question:
         "La chambre spécialisée des mineurs de la cour d’appel a pour fonction principale :",
@@ -6098,7 +6098,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Mineurs",
     question:
         "En matière de peines, quel principe gouverne la réponse pénale à l’égard des mineurs ?",
@@ -6114,7 +6114,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action publique",
     question:
         "Lorsque le ministère public décide de ne pas engager de poursuites, il peut notamment :",
@@ -6130,7 +6130,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action publique",
     question:
         "Dans quel cas l’action publique peut-elle être mise en mouvement par la seule plainte de la victime, sans intervention préalable du ministère public ?",
@@ -6146,7 +6146,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Action civile",
     question:
         "Lorsqu’une juridiction pénale relaxe le prévenu, peut-elle néanmoins accorder des dommages et intérêts à la partie civile ?",
@@ -6162,7 +6162,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question:
         "Lorsque le ministère public fait appel d’un jugement de relaxe, quelle est la conséquence pour le prévenu ?",
@@ -6178,7 +6178,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Voies de recours",
     question: "Le pourvoi en cassation formé contre un arrêt correctionnel :",
     options: [
@@ -6193,7 +6193,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Détention provisoire",
     question:
         "En matière criminelle, la détention provisoire est décidée et prolongée :",
@@ -6209,7 +6209,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Détention provisoire",
     question:
         "Parmi ces critères, lequel ne fait pas partie des motifs légaux justifiant la détention provisoire ?",
@@ -6225,7 +6225,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Peines",
     question:
         "Quelle est la différence principale entre une peine principale et une peine complémentaire ?",
@@ -6241,7 +6241,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Exécution des peines",
     question:
         "Qui assure concrètement le recouvrement des amendes pénales une fois la décision devenue exécutoire ?",
@@ -6257,7 +6257,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Exécution des peines",
     question:
         "Pourquoi l’exécution rapide des peines privatives de liberté est-elle considérée comme un objectif important ?",
@@ -6273,7 +6273,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – JAP",
     question:
         "Lorsque le condamné ne respecte pas ses obligations dans le cadre d’un sursis probatoire, le JAP peut :",
@@ -6289,7 +6289,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – TAP",
     question:
         "Le TAP est saisi pour décider d’un relèvement de la période de sûreté. Quelle est la conséquence principale de ce relèvement ?",
@@ -6305,7 +6305,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Chambre de l’application des peines",
     question:
         "L’appel de la décision du TAP formé par le ministère public dans les 24 heures :",
@@ -6321,7 +6321,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – CRPC",
     question:
         "Dans une procédure de CRPC, si le prévenu refuse la peine proposée par le procureur :",
@@ -6337,7 +6337,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Ordonnance pénale",
     question:
         "Pourquoi la procédure d’ordonnance pénale est-elle particulièrement adaptée à certaines infractions routières ou simples délits financiers ?",
@@ -6353,7 +6353,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Contrainte judiciaire",
     question:
         "Parmi ces condamnations, pour laquelle la contrainte judiciaire est-elle en principe exclue ?",
@@ -6368,7 +6368,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Publicité et huis clos",
     question:
         "Lorsque le huis clos total est ordonné, quelle formule décrit le mieux la publicité du prononcé de la décision ?",
@@ -6384,7 +6384,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales – Publicité restreinte",
     question:
         "Dans quels cas une juridiction pénale peut-elle décider de juger une affaire à huis clos ?",
@@ -6400,7 +6400,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Administrations",
     question:
         "Les administrations (impôts, douanes…) disposent notamment d’un pouvoir de :",
@@ -6416,7 +6416,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 1.1.3 Le ministère public ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Ministère public",
     question:
         "À qui appartient-il essentiellement d’assurer l’exécution des sanctions pénales ?",
@@ -6431,7 +6431,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Ministère public",
     question:
         "Selon l’Article 707-1 CPP, le ministère public fait exécuter notamment :",
@@ -6447,7 +6447,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Ministère public",
     question:
         "Le ministère public poursuit aussi l’exécution des sanctions pécuniaires prononcées par :",
@@ -6462,7 +6462,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Recouvrement pécuniaire",
     question: "Pour les peines pécuniaires, qui assure le recouvrement ?",
     options: [
@@ -6477,7 +6477,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exécution des peines – Force publique",
     question:
         "Selon l’Article 709 CPP, le procureur de la République et le procureur général peuvent :",
@@ -6493,7 +6493,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Principe",
     question: "Selon l’Article 708 alinéa 1 CPP, l’exécution a lieu lorsque :",
     options: [
@@ -6507,7 +6507,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Opposition",
     question:
         "Lorsque la décision a été rendue par défaut, l’exécution est suspendue :",
@@ -6522,7 +6522,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Appel",
     question:
         "Quel est le délai d’appel en matière pénale, selon les articles cités (380-9, 498, 547 CPP) ?",
@@ -6537,7 +6537,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Appel",
     question:
         "Pendant le délai d’appel et l’instance d’appel, il est en principe :",
@@ -6552,7 +6552,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive – Cassation",
     question: "En principe, le pourvoi en cassation est :",
     options: [
@@ -6566,7 +6566,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Rôle du parquet",
     question:
         "Qui doit faire exécuter les peines privatives de liberté prononcées par le tribunal correctionnel ou la cour d’assises ?",
@@ -6581,7 +6581,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Cour d’assises",
     question:
         "Lorsque la cour d’assises siège au niveau de la cour d’appel, qui assure l’exécution des peines ?",
@@ -6596,7 +6596,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Cour d’assises",
     question:
         "Lorsque la cour d’assises siège dans les locaux du tribunal judiciaire, l’exécution des peines est assurée par :",
@@ -6611,7 +6611,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Délai d’incarcération",
     question:
         "Quel délai est prescrit par l’instruction générale (Article C 816) pour la mise à exécution de la peine d’emprisonnement ?",
@@ -6622,7 +6622,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Extrait de décision",
     question:
         "Pour l’exécution d’une peine d’emprisonnement, le greffe établit :",
@@ -6638,7 +6638,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Mise à exécution",
     question:
         "Si le condamné est déjà détenu, comment se fait l’exécution de la nouvelle peine ?",
@@ -6653,7 +6653,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Mise à exécution",
     question: "Si le condamné est libre, le parquet peut :",
     options: [
@@ -6668,7 +6668,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives de liberté – Domicile",
     question:
         "L’intrusion au domicile d’un condamné pour exécuter une peine d’emprisonnement est encadrée par :",
@@ -6688,7 +6688,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
 
   // --- 1.4.1.1 Les amendes ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question:
         "Les condamnations pécuniaires (amendes, confiscations, réparations, etc.) deviennent exigibles :",
@@ -6703,7 +6703,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question:
         "Dans quel délai les extraits de jugement ou d’arrêt doivent-ils être adressés au Trésorier principal en vue du recouvrement ?",
@@ -6718,7 +6718,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question: "En matière d’amende, quelle solution est toujours privilégiée ?",
     options: [
@@ -6732,7 +6732,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Amendes",
     question:
         "Le défaut total ou partiel de paiement d’une amende peut entraîner :",
@@ -6748,7 +6748,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 1.4.1.2 Les jours-amende ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Jours-amende",
     question: "Les jours-amende constituent :",
     options: [
@@ -6762,7 +6762,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Jours-amende",
     question: "En cas de non-paiement des jours-amende, le JAP peut :",
     options: [
@@ -6778,7 +6778,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 1.4.1.3 Autres sanctions (substitution & complémentaires) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Substitution",
     question:
         "Les peines de substitution prévues à l’Article 131-6 du Code pénal comprennent notamment :",
@@ -6794,7 +6794,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Complémentaires",
     question:
         "Les peines complémentaires prévues par le Code pénal peuvent inclure :",
@@ -6810,7 +6810,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Sanction-réparation",
     question:
         "Selon l’Article 131-8-1 du Code pénal, la peine de sanction-réparation consiste à :",
@@ -6826,7 +6826,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Personnes morales",
     question: "Les personnes morales peuvent être condamnées :",
     options: [
@@ -6840,7 +6840,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Personnes morales",
     question:
         "En matière d’amendes, le recouvrement pour les personnes morales :",
@@ -6855,7 +6855,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives – Personnes morales",
     question: "La contrainte judiciaire :",
     options: [
@@ -6872,7 +6872,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CHAPITRE 2 – CONTRAINTE JUDICIAIRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Définition",
     question: "La contrainte judiciaire est définie comme :",
     options: [
@@ -6887,7 +6887,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Base légale",
     question:
         "Quel article du Code de procédure pénale consacre le rôle du JAP pour ordonner la contrainte judiciaire ?",
@@ -6898,7 +6898,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Conditions",
     question:
         "Parmi les conditions de mise en œuvre de la contrainte judiciaire, on trouve :",
@@ -6913,7 +6913,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Conditions",
     question: "La contrainte judiciaire concerne les amendes :",
     options: [
@@ -6927,7 +6927,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Exclusion",
     question: "La contrainte judiciaire ne s’applique pas lorsque :",
     options: [
@@ -6941,7 +6941,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Personnes concernées",
     question: "La contrainte judiciaire ne peut s’exercer que contre :",
     options: [
@@ -6957,7 +6957,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 2.4 Causes d’exemption ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Exemption",
     question:
         "Selon l’Article 751 CPP, la contrainte judiciaire ne peut être prononcée contre :",
@@ -6972,7 +6972,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Exemption",
     question:
         "Toujours selon l’Article 751 CPP, la contrainte judiciaire ne peut être exercée contre :",
@@ -6987,7 +6987,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Insolvabilité",
     question:
         "Selon l’Article 752 CPP, la contrainte judiciaire ne peut être exercée contre :",
@@ -7002,7 +7002,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Époux",
     question:
         "L’Article 753 CPP interdit d’exercer simultanément la contrainte judiciaire contre :",
@@ -7018,7 +7018,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 2.5 Procédure ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Procédure",
     question:
         "Avant toute incarcération sous contrainte judiciaire, la partie poursuivante doit :",
@@ -7033,7 +7033,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Demande d’incarcération",
     question:
         "Si, dans l’année de la signification du commandement, le condamné n’a pas payé, le procureur de la République peut :",
@@ -7049,7 +7049,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Durée",
     question:
         "La contrainte judiciaire est exclue lorsque le montant de l’amende est :",
@@ -7064,7 +7064,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Durée maximale",
     question:
         "En matière de trafic de stupéfiants, la durée maximale de contrainte judiciaire peut être portée à :",
@@ -7075,7 +7075,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Fin",
     question:
         "La libération anticipée en cas de contrainte judiciaire peut intervenir lorsque le débiteur :",
@@ -7091,7 +7091,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire – Dette",
     question:
         "Après l’exécution de la contrainte judiciaire, la dette pécuniaire :",
@@ -7109,7 +7109,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CHAPITRE 3 – JURIDICTIONS DE L’APPLICATION DES PEINES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions de l’application – Juridictionnalisation",
     question:
         "La loi n° 2000-516 du 15 juin 2000 a prévu la juridictionnalisation des décisions du JAP pour notamment :",
@@ -7125,7 +7125,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions de l’application – Juridictionnalisation",
     question: "La loi du 9 mars 2004 a :",
     options: [
@@ -7140,7 +7140,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 3.1.1 Le JAP ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Organisation",
     question:
         "Selon l’Article 712-2 CPP, où exerce-t-on les fonctions de juge de l’application des peines (JAP) ?",
@@ -7155,7 +7155,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Rôle",
     question: "Le juge de l’application des peines fixe principalement :",
     options: [
@@ -7170,7 +7170,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Milieu fermé",
     question: "En milieu fermé, le JAP intervient notamment pour :",
     options: [
@@ -7184,7 +7184,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Milieu ouvert",
     question: "En milieu ouvert, selon l’Article 712-6 CPP, le JAP :",
     options: [
@@ -7199,7 +7199,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Pouvoirs",
     question: "Parmi les pouvoirs du JAP, on peut citer :",
     options: [
@@ -7214,7 +7214,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "JAP – Victime",
     question: "Selon l’Article 712-16-1 CPP, le JAP peut :",
     options: [
@@ -7229,7 +7229,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 3.1.2 Tribunal de l’application des peines (TAP) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Organisation",
     question:
         "Selon l’Article 712-3 CPP, un tribunal de l’application des peines (TAP) est établi :",
@@ -7244,7 +7244,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Composition",
     question: "Le TAP est composé :",
     options: [
@@ -7259,7 +7259,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Compétence",
     question: "Le TAP est compétent notamment pour :",
     options: [
@@ -7274,7 +7274,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Voies de recours",
     question: "Les décisions du TAP sont :",
     options: [
@@ -7288,7 +7288,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "TAP – Appel du ministère public",
     question:
         "Lorsque l’appel du ministère public contre une décision du TAP est formé dans les 24 heures :",
@@ -7304,7 +7304,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // --- 3.2 Chambre de l’application des peines ---
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Compétence",
     question:
         "La chambre de l’application des peines de la cour d’appel connaît :",
@@ -7319,7 +7319,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Composition",
     question: "La chambre de l’application des peines est composée :",
     options: [
@@ -7333,7 +7333,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Compléments",
     question:
         "Pour certains jugements visés à l’Article 712-7 CPP, la chambre de l’application peut être complétée par :",
@@ -7349,7 +7349,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Décisions",
     question: "La chambre de l’application des peines statue :",
     options: [
@@ -7363,7 +7363,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’application – Pourvoi",
     question:
         "Les arrêts de la chambre de l’application des peines peuvent faire l’objet :",
@@ -7379,7 +7379,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Tribunal",
     question:
         "Que représente principalement le tribunal dans l’ordre judiciaire ?",
@@ -7395,7 +7395,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Types de tribunaux",
     question: "Selon la page, selon quoi les tribunaux sont-ils organisés ?",
     options: [
@@ -7409,7 +7409,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Ordre administratif",
     question:
         "Quelles juridictions règlent les litiges entre les citoyens et les pouvoirs publics ?",
@@ -7424,7 +7424,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Ordre judiciaire",
     question: "Dans quels cas les tribunaux judiciaires sont-ils compétents ?",
     options: [
@@ -7438,7 +7438,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux — Juridictions judiciaires",
     question: "Les tribunaux judiciaires comprennent :",
     options: [
@@ -7455,7 +7455,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // JURIDICTIONS PÉNALES — DROIT COMMUN / EXCEPTION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Typologie",
     question: "Parmi les juridictions pénales, on distingue principalement :",
     options: [
@@ -7469,7 +7469,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Droit commun",
     question: "Les juridictions de droit commun sont compétentes pour :",
     options: [
@@ -7484,7 +7484,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Exception",
     question: "La compétence des juridictions d’exception est :",
     options: [
@@ -7498,7 +7498,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Exception",
     question:
         "La compétence des juridictions d’exception peut être déterminée :",
@@ -7514,7 +7514,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juridictions pénales — Droit commun",
     question:
         "Parmi les juridictions suivantes, lesquelles sont citées comme juridictions pénales de droit commun ?",
@@ -7532,7 +7532,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL DE POLICE — ORGANISATION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Textes",
     question:
         "Par quels articles le tribunal de police est-il principalement régi ?",
@@ -7547,7 +7547,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question:
         "Selon l’Article 523 CPP, par quels membres est constitué le tribunal de police ?",
@@ -7563,7 +7563,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Ministère public",
     question:
         "Pour les contraventions de 5ᵉ classe ne relevant pas de l’amende forfaitaire, qui remplit obligatoirement les fonctions du ministère public ?",
@@ -7578,7 +7578,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Remplaçants",
     question:
         "En cas d’empêchement du commissaire de police, qui désigne les remplaçants pour un an ?",
@@ -7593,7 +7593,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Remplaçants",
     question:
         "Parmi qui le procureur général choisit-il les remplaçants du commissaire de police ?",
@@ -7609,7 +7609,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Infractions forestières",
     question:
         "Pour les infractions forestières, qui exerce les fonctions du ministère public ?",
@@ -7628,7 +7628,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL DE POLICE — COMPÉTENCE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Selon l’Article 521 CPP, le tribunal de police est compétent pour juger :",
@@ -7639,7 +7639,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "Selon l’Article 522 al. 1 CPP, quel tribunal de police est compétent ?",
@@ -7655,7 +7655,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Transports routiers",
     question:
         "Pour certaines infractions relatives, par exemple, au chargement ou à l’équipement des véhicules, quel tribunal de police est compétent ?",
@@ -7670,7 +7670,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Mineurs",
     question:
         "Les contraventions de 5ᵉ classe commises par des mineurs sont jugées :",
@@ -7685,7 +7685,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Mineurs",
     question:
         "Les contraventions des 4 premières classes commises par des mineurs relèvent :",
@@ -7703,7 +7703,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL DE POLICE — MODES DE SAISINE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question: "Les modes de saisine du tribunal de police sont définis par :",
     options: ["L’Article 381 CPP", "L’Article 531 CPP", "L’Article 231 CPP"],
@@ -7713,7 +7713,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question: "La citation directe devant le tribunal de police consiste à :",
     options: [
@@ -7728,7 +7728,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question:
         "La convocation en justice devant le tribunal de police peut être notifiée par :",
@@ -7744,7 +7744,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question:
         "Lorsque le prévenu est détenu, la convocation en justice devant le tribunal de police est notifiée par :",
@@ -7759,7 +7759,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Saisine",
     question:
         "Parmi ces modes, lequel est aussi un mode de saisine du tribunal de police ?",
@@ -7777,7 +7777,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — ORGANISATION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Textes",
     question: "Par quels articles le tribunal correctionnel est-il régi ?",
     options: [
@@ -7791,7 +7791,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Rôle",
     question: "Le tribunal correctionnel est :",
     options: [
@@ -7806,7 +7806,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question:
         "Dans sa formation ordinaire, le tribunal correctionnel est composé :",
@@ -7821,7 +7821,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Ministère public",
     question: "Qui représente le parquet devant le tribunal correctionnel ?",
     options: [
@@ -7835,7 +7835,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Juge unique",
     question: "Le tribunal correctionnel peut siéger à juge unique pour :",
     options: [
@@ -7853,7 +7853,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — COMPÉTENCE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence matérielle",
     question: "Selon l’Article 381 CPP, que juge le tribunal correctionnel ?",
     options: [
@@ -7868,7 +7868,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence",
     question: "Le tribunal correctionnel est compétent pour juger :",
     options: [
@@ -7883,7 +7883,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Connexité",
     question: "Que peut juger le tribunal correctionnel en plus d’un délit ?",
     options: [
@@ -7897,7 +7897,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence territoriale",
     question:
         "La compétence territoriale du tribunal correctionnel repose notamment sur :",
@@ -7916,7 +7916,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — SAISINE & PROCÉDURES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question: "Les modes de saisine du tribunal correctionnel sont listés à :",
     options: ["L’Article 388 CPP", "L’Article 531 CPP", "L’Article 231 CPP"],
@@ -7926,7 +7926,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "La comparution volontaire devant le tribunal correctionnel est prévue par :",
@@ -7937,7 +7937,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "La citation directe devant le tribunal correctionnel peut émaner :",
@@ -7953,7 +7953,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "La convocation par procès-verbal, dite du « rendez-vous judiciaire », est prévue par :",
@@ -7964,7 +7964,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "L’ordonnance pénale devant le tribunal correctionnel est prévue par :",
@@ -7978,7 +7978,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "La comparution sur reconnaissance préalable de culpabilité (CRPC) est régie par :",
@@ -7992,7 +7992,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question: "L’amende forfaitaire délictuelle est prévue par :",
     options: [
@@ -8009,7 +8009,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL — PARTIE CIVILE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Partie civile",
     question: "Le tribunal correctionnel peut statuer au civil sur :",
     options: [
@@ -8024,7 +8024,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Partie civile",
     question:
         "À quel moment la partie civile peut-elle se constituer devant le tribunal correctionnel ?",
@@ -8039,7 +8039,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Partie civile",
     question:
         "Par quels moyens la partie civile peut-elle se constituer avant l’audience, selon l’Article 420-1 CPP ?",
@@ -8057,7 +8057,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR D’ASSISES — COMPOSITION & JURY
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Textes",
     question: "Par quels articles la cour d’assises est-elle régie ?",
     options: [
@@ -8071,7 +8071,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Rôle",
     question: "La cour d’assises est compétente pour juger :",
     options: ["Les contraventions", "Les délits", "Les crimes"],
@@ -8081,7 +8081,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Répartition géographique",
     question: "Combien y a-t-il de cours d’assises selon la page ?",
     options: [
@@ -8095,7 +8095,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Localisation",
     question: "Où la cour d’assises se tient-elle en principe ?",
     options: [
@@ -8110,7 +8110,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Composition",
     question: "La cour d’assises rassemble :",
     options: [
@@ -8124,7 +8124,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Cour",
     question: "La cour (élément professionnel) est composée de :",
     options: [
@@ -8138,7 +8138,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Combien de jurés composent le jury lorsque la cour d’assises statue en premier ressort ?",
@@ -8149,7 +8149,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury appel",
     question:
         "Combien de jurés composent le jury lorsque la cour d’assises statue en appel ?",
@@ -8159,7 +8159,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Serment des jurés",
     question:
         "Le serment des jurés, prévu par l’Article 304 CPP, rappelle notamment :",
@@ -8175,7 +8175,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Conditions pour être juré",
     question: "Pour être juré, il faut notamment :",
     options: [
@@ -8190,7 +8190,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Incompatibilités",
     question:
         "Les incompatibilités prévues aux Articles 256 et 257 CPP peuvent notamment concerner :",
@@ -8206,7 +8206,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Dispenses",
     question:
         "Peuvent notamment être dispensées des fonctions de juré les personnes :",
@@ -8225,7 +8225,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR D’ASSISES — DÉSIGNATION DES JURÉS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Listes de jurés",
     question:
         "À partir de quoi chaque commune dresse-t-elle une liste de jurés potentiels ?",
@@ -8240,7 +8240,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Commission",
     question:
         "La commission qui établit la liste annuelle du jury est composée notamment :",
@@ -8256,7 +8256,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Liste de session",
     question:
         "Combien de jurés titulaires et suppléants figurent en principe sur la liste de session ?",
@@ -8271,7 +8271,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Paris & certaines cours",
     question:
         "Pour la cour d’assises de Paris et certaines autres cours, les nombres de jurés sont portés à :",
@@ -8286,7 +8286,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Augmentation du nombre de jurés",
     question:
         "Qui peut décider d’augmenter le nombre de jurés lorsqu’un fort absentéisme est à craindre ?",
@@ -8301,7 +8301,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Notification liste",
     question:
         "La liste des jurés de session doit être signifiée à chaque accusé au plus tard :",
@@ -8316,7 +8316,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Tirage au sort du jury de jugement",
     question:
         "À quel moment le président de la cour d’assises tire-t-il au sort les jurés qui composeront le jury de jugement ?",
@@ -8331,7 +8331,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Récusations",
     question:
         "Lors de la constitution du jury, l’accusé peut récuser jusqu’à :",
@@ -8346,7 +8346,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Convocation des jurés",
     question:
         "Dans quel délai minimum le greffier convoque-t-il les jurés titulaires et suppléants avant l’ouverture de la session ?",
@@ -8357,7 +8357,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Convocation des jurés",
     question:
         "Qui peut être requis pour rechercher les jurés qui n’auraient pas répondu à la convocation et leur remettre celle-ci ?",
@@ -8375,7 +8375,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR D’ASSISES — COMPÉTENCE & PARQUET
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Compétence",
     question:
         "Selon l’Article 231 CPP, la cour d’assises a plénitude de juridiction pour :",
@@ -8391,7 +8391,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Lorsque la cour d’assises siège au niveau de la cour d’appel, le ministère public est représenté par :",
@@ -8402,7 +8402,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Lorsque la cour d’assises siège dans les locaux du tribunal judiciaire, qui représente le ministère public ?",
@@ -8417,7 +8417,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "La loi du 27 mars 2012 relative à l’exécution des peines vise notamment à :",
@@ -8433,7 +8433,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Quel mouvement la loi du 9 mars 2004 poursuit-elle en matière d’exécution des peines ?",
@@ -8448,7 +8448,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Selon la page, qui poursuit l’exécution des peines privatives de liberté et de certaines peines de substitution ?",
@@ -8463,7 +8463,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question: "L’exécution des peines relève de plus en plus :",
     options: [
@@ -8477,7 +8477,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Intro — Exécution des décisions",
     question:
         "Pour les peines pécuniaires, quel mécanisme est prévu pour garantir l’exécution ?",
@@ -8495,7 +8495,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // 1.1 — PARTIES INTERVENANTES (ARTICLE 707-1 CPP)
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Parties intervenantes — Généralités",
     question:
         "Selon l’Article 707-1 alinéa 1 du Code de procédure pénale, qui poursuit l’exécution de la sentence ?",
@@ -8511,7 +8511,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // -------- Partie civile --------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile",
     question:
         "En principe, sous quelle forme la partie civile obtient-elle réparation ?",
@@ -8526,7 +8526,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile",
     question:
         "Qui a qualité pour faire exécuter les condamnations prononcées au profit de la partie civile ?",
@@ -8541,7 +8541,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile",
     question:
         "Parmi les réparations suivantes, laquelle peut également bénéficier à la partie civile selon la page ?",
@@ -8557,7 +8557,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // -------- Administrations --------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Administrations — Exécution",
     question:
         "Quelle administration est compétente pour le recouvrement des amendes à caractère fiscal et certaines confiscations ?",
@@ -8572,7 +8572,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Administrations — Exécution",
     question: "L’administration des douanes est chargée de l’exécution :",
     options: [
@@ -8586,7 +8586,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Administrations — Transaction",
     question:
         "Quelle faculté importante les administrations (impôts, douanes) peuvent-elles exercer selon la page ?",
@@ -8602,7 +8602,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // -------- Ministère public --------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Rôle",
     question:
         "Selon la page, à qui appartient-il « essentiellement d’assurer l’exécution des sanctions pénales » ?",
@@ -8617,7 +8617,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Peines concernées",
     question:
         "Parmi les attributions suivantes, laquelle relève du ministère public selon l’Article 707-1 CPP ?",
@@ -8632,7 +8632,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Peines du Code pénal",
     question:
         "Les peines prévues aux articles 131-1 à 131-49 du Code pénal sont :",
@@ -8647,7 +8647,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Sanctions UE",
     question:
         "L’Article 707-1 alinéa 6 CPP confie au ministère public la poursuite de l’exécution :",
@@ -8663,7 +8663,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Recouvrement pécuniaire",
     question:
         "Pour les peines pécuniaires, qui assure le recouvrement selon la page ?",
@@ -8678,7 +8678,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ministère public — Force publique",
     question:
         "Que prévoit l’Article 709 du Code de procédure pénale au profit du procureur de la République et du procureur général ?",
@@ -8697,7 +8697,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // 1.2 — DÉCISION DÉFINITIVE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Principe",
     question:
         "Selon l’Article 708 alinéa 1 CPP, quand l’exécution d’une décision pénale peut-elle intervenir ?",
@@ -8712,7 +8712,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Opposition",
     question:
         "Que se passe-t-il lorsqu’un jugement a été rendu par défaut et que le délai d’opposition court encore ?",
@@ -8727,7 +8727,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Appel",
     question:
         "Quel est le délai d’appel de principe pour un jugement du tribunal correctionnel, selon la page ?",
@@ -8738,7 +8738,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Appel",
     question:
         "Pendant le délai d’appel et durant l’instance d’appel, il est en principe :",
@@ -8753,7 +8753,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Décision définitive — Pourvoi",
     question: "En matière pénale, le pourvoi en cassation est en principe :",
     options: [
@@ -8770,7 +8770,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // 1.3 — PEINES PRIVATIVES DE LIBERTÉ
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Ministère public",
     question: "Qui doit faire exécuter les peines privatives de liberté ?",
     options: [
@@ -8784,7 +8784,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Parquet compétent",
     question:
         "Lorsque la cour d’assises siège au niveau de la cour d’appel, qui assure l’exécution des peines ?",
@@ -8799,7 +8799,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Parquet compétent",
     question:
         "Lorsque la cour d’assises siège dans les locaux du tribunal judiciaire, qui assure l’exécution ?",
@@ -8814,7 +8814,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Délai mise à exécution",
     question:
         "Quel délai est recommandé par l’instruction générale pour la mise à exécution d’une peine d’emprisonnement (Article C 816) ?",
@@ -8825,7 +8825,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Modalités",
     question:
         "Quel document est adressé à l’établissement pénitentiaire pour l’écrou du condamné ?",
@@ -8840,7 +8840,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines privatives — Domicile du condamné",
     question:
         "Selon l’Article 716-5 CPP, pour exécuter une peine d’emprisonnement, les agents de la force publique peuvent être autorisés à :",
@@ -8861,7 +8861,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
 
   // ---------- Amendes & peines pécuniaires ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Amendes",
     question:
         "À partir de quel moment les condamnations pécuniaires deviennent-elles exigibles ?",
@@ -8876,7 +8876,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Amendes",
     question:
         "Dans quel délai les extraits de jugement doivent-ils être adressés au Trésorier principal pour recouvrement des amendes (hors pourvoi) ?",
@@ -8887,7 +8887,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Amendes",
     question:
         "Que peut entraîner le défaut de paiement d’une amende selon la page ?",
@@ -8903,7 +8903,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Jours-amende ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Jours-amende",
     question: "Les jours-amende consistent pour le condamné à :",
     options: [
@@ -8917,7 +8917,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Jours-amende",
     question:
         "En cas de non-paiement des jours-amende, que peut décider le JAP ?",
@@ -8934,7 +8934,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Peines de substitution & complémentaires ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Peines de substitution",
     question:
         "L’Article 131-6 du Code pénal prévoit notamment comme peine de substitution :",
@@ -8949,7 +8949,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Peines complémentaires",
     question:
         "Parmi ces exemples, laquelle est une peine complémentaire citée dans la page ?",
@@ -8965,7 +8965,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Sanction-réparation ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Sanction-réparation",
     question:
         "Selon l’Article 131-8-1 du Code pénal, la peine de sanction-réparation :",
@@ -8981,7 +8981,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Sanction-réparation",
     question:
         "La peine de sanction-réparation consiste principalement pour le condamné à :",
@@ -8997,7 +8997,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Personnes morales ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Personnes morales",
     question: "Les personnes morales peuvent être condamnées à :",
     options: [
@@ -9011,7 +9011,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines non privatives — Personnes morales",
     question: "La contrainte judiciaire :",
     options: [
@@ -9028,7 +9028,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CHAPITRE 2 — CONTRAINTE JUDICIAIRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Définition",
     question: "La contrainte judiciaire est :",
     options: [
@@ -9043,7 +9043,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Juge compétent",
     question:
         "Quel juge est principalement chargé d’ordonner la contrainte judiciaire ?",
@@ -9058,7 +9058,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Conditions",
     question: "La contrainte judiciaire suppose notamment :",
     options: [
@@ -9072,7 +9072,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Nature de la peine",
     question:
         "Pour être susceptible de contrainte judiciaire, la peine d’amende doit :",
@@ -9088,7 +9088,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Personnes concernées",
     question: "La contrainte judiciaire ne peut s’exercer que contre :",
     options: [
@@ -9103,7 +9103,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Causes d’exemption ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Exemptions",
     question:
         "La contrainte judiciaire peut-elle être prononcée contre un mineur de moins de 18 ans ?",
@@ -9119,7 +9119,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Exemptions",
     question:
         "La contrainte judiciaire ne peut être exercée contre les débiteurs âgés :",
@@ -9134,7 +9134,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Insolvabilité",
     question:
         "Que prévoit l’Article 752 CPP en cas d’insolvabilité du condamné ?",
@@ -9150,7 +9150,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Conjoint",
     question: "Que prévoit l’Article 753 CPP concernant les époux ?",
     options: [
@@ -9166,7 +9166,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Procédure ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Commandement",
     question:
         "Quelle formalité précède obligatoirement l’incarcération au titre de la contrainte judiciaire ?",
@@ -9181,7 +9181,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Demande d’incarcération",
     question:
         "Si, dans l’année suivant la signification du commandement, le condamné n’a pas payé, qui peut requérir le JAP pour qu’il prononce la contrainte judiciaire ?",
@@ -9196,7 +9196,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Durée",
     question:
         "La contrainte judiciaire est exclue lorsque le montant de l’amende est :",
@@ -9211,7 +9211,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Durée",
     question:
         "En matière de trafic de stupéfiants, la durée maximale de la contrainte judiciaire peut être portée à :",
@@ -9222,7 +9222,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrainte judiciaire — Fin",
     question:
         "Selon l’Article 761-1 CPP, l’exécution de la contrainte judiciaire :",
@@ -9242,7 +9242,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
 
   // ---------- Juridictionnalisation ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Juridictionnalisation",
     question: "La loi du 15 juin 2000 a instauré notamment :",
     options: [
@@ -9257,7 +9257,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- JAP ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP",
     question:
         "Selon l’Article 712-2 CPP, où se trouvent les juges de l’application des peines ?",
@@ -9272,7 +9272,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP",
     question: "Le JAP fixe principalement :",
     options: [
@@ -9287,7 +9287,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP milieu fermé",
     question: "En milieu fermé, le JAP intervient notamment pour :",
     options: [
@@ -9302,7 +9302,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — JAP milieu ouvert",
     question: "En milieu ouvert, l’Article 712-6 CPP prévoit que le JAP :",
     options: [
@@ -9317,7 +9317,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Pouvoirs JAP",
     question: "Selon l’Article 712-19 CPP, le JAP peut :",
     options: [
@@ -9333,7 +9333,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- TAP ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP",
     question:
         "Selon l’Article 712-3 CPP, où est établi le tribunal de l’application des peines (TAP) ?",
@@ -9348,7 +9348,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP composition",
     question: "Comment est composé le TAP selon l’Article 712-10 al. 4 CPP ?",
     options: [
@@ -9362,7 +9362,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP compétence",
     question: "Le TAP est compétent notamment pour :",
     options: [
@@ -9377,7 +9377,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — TAP recours",
     question: "Les décisions du TAP sont :",
     options: [
@@ -9393,7 +9393,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ---------- Chambre de l’application des peines ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP",
     question:
         "La chambre de l’application des peines de la cour d’appel connaît :",
@@ -9408,7 +9408,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP composition",
     question: "De qui est composée la chambre de l’application des peines ?",
     options: [
@@ -9422,7 +9422,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP élargie",
     question:
         "Pour certains jugements, la chambre de l’application des peines peut être complétée par :",
@@ -9438,7 +9438,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Application des peines — Chambre AP pourvoi",
     question:
         "Les arrêts de la chambre de l’application des peines peuvent faire l’objet :",
@@ -9453,7 +9453,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quelle distinction fondamentale est opérée entre les juridictions pénales ?",
@@ -9468,7 +9468,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions de droit commun sont compétentes pour :",
     options: [
@@ -9483,7 +9483,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions d’exception :",
     options: [
@@ -9501,7 +9501,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL DE POLICE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Nature des infractions",
     question:
         "Quelle catégorie d’infractions est jugée par le tribunal de police ?",
@@ -9512,7 +9512,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question:
         "Quels sont les membres qui composent le tribunal de police dans son organisation de base ?",
@@ -9528,7 +9528,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Ministère public",
     question:
         "Qui assure les fonctions du ministère public devant le tribunal de police ?",
@@ -9544,7 +9544,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Selon l’article 521 du Code de procédure pénale, le tribunal de police est compétent pour :",
@@ -9559,7 +9559,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Connexité",
     question:
         "Outre les contraventions ordinaires, le tribunal de police peut également connaître :",
@@ -9574,7 +9574,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "En principe, quel tribunal de police est territorialement compétent ?",
@@ -9590,7 +9590,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Transports routiers",
     question:
         "Pour certaines infractions en matière de transports routiers, quel tribunal de police est compétent ?",
@@ -9605,7 +9605,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Modes de saisine",
     question:
         "Par quels moyens le tribunal de police peut-il être saisi, selon la page ?",
@@ -9624,7 +9624,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Nature des infractions",
     question:
         "Quelle catégorie d’infractions relève en principe du tribunal correctionnel ?",
@@ -9635,7 +9635,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Sanctions encourues",
     question:
         "Les délits jugés par le tribunal correctionnel sont des infractions :",
@@ -9650,7 +9650,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question: "Dans sa formation ordinaire, le tribunal correctionnel est :",
     options: [
@@ -9665,7 +9665,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Juge unique",
     question:
         "Dans quels cas le tribunal correctionnel peut-il siéger à juge unique ?",
@@ -9680,7 +9680,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Connexité",
     question: "Le tribunal correctionnel peut aussi connaître :",
     options: [
@@ -9694,7 +9694,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question:
         "Quel article du Code de procédure pénale liste les modes de saisine du tribunal correctionnel ?",
@@ -9705,7 +9705,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question:
         "Parmi les modes de saisine suivants, lequel est cité dans la page comme mode de saisine du tribunal correctionnel ?",
@@ -9720,7 +9720,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "La page mentionne que des procédures simplifiées existent devant le tribunal correctionnel. Lesquelles ?",
@@ -9738,7 +9738,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR D’ASSISES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Nature des infractions",
     question:
         "Quelle catégorie d’infractions relève en principe de la cour d’assises ?",
@@ -9749,7 +9749,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Définition",
     question:
         "Selon la page, l’article 231 du Code de procédure pénale définit la cour d’assises comme :",
@@ -9765,7 +9765,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Siège",
     question:
         "Il existe une cour d’assises par département. Où siège-t-elle en principe ?",
@@ -9780,7 +9780,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Composition",
     question: "La composition de la cour d’assises comprend :",
     options: [
@@ -9795,7 +9795,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Combien de jurés composent le jury de la cour d’assises en premier ressort et en appel, selon la page ?",
@@ -9810,7 +9810,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Serment des jurés",
     question:
         "Quel principe fondamental est rappelé dans le serment des jurés, selon la page ?",
@@ -9825,7 +9825,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Qui représente le ministère public lorsque la cour d’assises siège au siège de la cour d’appel ?",
@@ -9843,7 +9843,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR CRIMINELLE DÉPARTEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale — Objet",
     question: "La cour criminelle départementale est compétente pour juger :",
     options: [
@@ -9858,7 +9858,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale — Composition",
     question: "Comment est composée la cour criminelle départementale ?",
     options: [
@@ -9876,7 +9876,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // JURIDICTIONS POUR MINEURS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Généralités",
     question: "Les juridictions pour mineurs sont des juridictions :",
     options: ["De droit commun", "D’exception", "Administratives"],
@@ -9886,7 +9886,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Le juge des enfants est :",
     options: [
@@ -9900,7 +9900,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Selon la page, le juge des enfants est compétent pour juger :",
     options: [
@@ -9915,7 +9915,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Le tribunal pour enfants est présidé par :",
     options: [
@@ -9929,7 +9929,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Les assesseurs du tribunal pour enfants sont :",
     options: [
@@ -9944,7 +9944,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Cour d’assises des mineurs",
     question: "La cour d’assises des mineurs est compétente pour :",
     options: [
@@ -9959,7 +9959,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Appel",
     question:
         "Selon la page, à quelle juridiction sont portés les appels des jugements rendus à l’égard des mineurs ?",
@@ -9977,7 +9977,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TERRORISME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Juridictions spécialisées",
     question:
         "En matière de terrorisme, quelles juridictions sont compétentes selon la page ?",
@@ -9993,7 +9993,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Cour d’assises spéciale",
     question:
         "Quelle particularité présente la cour d’assises spéciale en matière de terrorisme, d’après la page ?",
@@ -10012,7 +10012,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // ECONOMIQUE & FINANCIER
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière — Compétence territoriale",
     question:
         "Dans les affaires économiques et financières complexes, la compétence territoriale d’un tribunal judiciaire peut :",
@@ -10027,7 +10027,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière — Procureur financier",
     question:
         "Le procureur de la République financier exerce ses attributions :",
@@ -10042,7 +10042,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière — Infractions boursières",
     question:
         "Les infractions boursières et financières mentionnées dans la page sont principalement prévues dans :",
@@ -10060,7 +10060,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CRIMINALITÉ ORGANISÉE & JIRS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Infractions",
     question: "Les articles 706-73 et 706-73-1 du CPP listent notamment :",
     options: [
@@ -10075,7 +10075,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Compétence territoriale",
     question:
         "En matière de criminalité organisée, la compétence territoriale d’un tribunal judiciaire ou d’une cour d’assises peut :",
@@ -10090,7 +10090,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Compétence concurrente",
     question:
         "Pour les infractions de criminalité organisée, la compétence du parquet, du juge d’instruction et de la formation correctionnelle spécialisée est :",
@@ -10105,7 +10105,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — JIRS",
     question:
         "Combien de juridictions interrégionales spécialisées (JIRS) sont mentionnées dans la page ?",
@@ -10119,7 +10119,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CRIMES CONTRE L’HUMANITÉ / GUERRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes contre l’humanité / Guerre",
     question:
         "Selon la page, les crimes contre l’humanité et les crimes et délits de guerre peuvent être jugés :",
@@ -10138,7 +10138,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CRIMES SERIELS / NON ELUCIDÉS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Quel tribunal est désigné comme pôle judiciaire national spécialisé pour les crimes sériels ou non élucidés ?",
@@ -10153,7 +10153,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Selon la page, le pôle spécialisé de Nanterre est notamment compétent lorsque :",
@@ -10171,7 +10171,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAUX MILITAIRES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires — Infractions en service",
     question:
         "Selon la page, les infractions militaires et les crimes ou délits de droit commun commis dans l’exercice du service par les militaires relèvent :",
@@ -10186,7 +10186,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires — Infractions hors service",
     question:
         "Toute infraction commise par un militaire en dehors de l’exercice du service relève :",
@@ -10201,7 +10201,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires — Hors du territoire national",
     question:
         "Certains tribunaux judiciaires sont spécialement compétents pour les infractions commises par ou à l’encontre de militaires français :",
@@ -10219,7 +10219,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // LITTORAL MARITIME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Littoral maritime — Objet",
     question:
         "Les juridictions du littoral maritime spécialisées sont compétentes notamment pour :",
@@ -10235,7 +10235,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Littoral maritime — Compétence",
     question:
         "La compétence des juridictions du littoral maritime spécialisées est :",
@@ -10253,7 +10253,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // SANITAIRE & ENVIRONNEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Textes",
     question:
         "Quels articles du Code de procédure pénale organisent la procédure applicable aux infractions en matière sanitaire et environnementale, d’après la page ?",
@@ -10268,7 +10268,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Compétence territoriale",
     question:
         "En matière sanitaire et environnementale, la compétence territoriale d’un tribunal judiciaire peut être étendue :",
@@ -10284,7 +10284,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Types d’affaires",
     question:
         "Les affaires sanitaires et environnementales visées concernent notamment :",
@@ -10300,7 +10300,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale — Pôles spécialisés",
     question:
         "Selon la page, quels tribunaux judiciaires sont actuellement désignés comme pôles spécialisés en matière sanitaire et environnementale ?",
@@ -10314,7 +10314,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // VOIES DE RECOURS — GENERALITES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question:
         "Une décision rendue par une juridiction répressive acquiert autorité de chose jugée lorsque :",
@@ -10329,7 +10329,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question:
         "Quelles sont les voies de recours ordinaires mentionnées dans la page ?",
@@ -10347,7 +10347,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // OPPOSITION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Conditions",
     question: "L’opposition est possible lorsque le jugement a été rendu :",
     options: [
@@ -10361,7 +10361,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Délai",
     question:
         "Selon la page, le délai de principe pour former opposition lorsque le prévenu réside en France métropolitaine est de :",
@@ -10372,7 +10372,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Effet extinctif",
     question:
         "Quel est l’effet principal de l’opposition sur la décision rendue par défaut ?",
@@ -10387,7 +10387,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Prescription",
     question: "Selon la page, l’opposition :",
     options: [
@@ -10402,7 +10402,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition — Itératif défaut",
     question:
         "En cas d’« itératif défaut » lors de l’audience d’opposition, la page indique que :",
@@ -10421,7 +10421,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // APPEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Définition",
     question:
         "L’appel est défini dans la page comme une voie de recours qui permet :",
@@ -10437,7 +10437,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Décisions susceptibles",
     question:
         "Selon la page, les jugements rendus en matière correctionnelle :",
@@ -10452,7 +10452,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Personnes ayant qualité",
     question:
         "Parmi les personnes suivantes, lesquelles peuvent interjeter appel en matière correctionnelle, d’après la page ?",
@@ -10468,7 +10468,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Délai",
     question:
         "En principe, quel est le délai pour interjeter appel d’un jugement contradictoire, selon la page ?",
@@ -10479,7 +10479,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Effets",
     question:
         "Quels sont les deux effets principaux de l’appel, tels que présentés dans la page ?",
@@ -10494,7 +10494,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question:
         "Quelle distinction fondamentale est opérée entre les juridictions pénales ?",
@@ -10509,7 +10509,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions de droit commun sont compétentes pour :",
     options: [
@@ -10524,7 +10524,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Juridictions pénales",
     question: "Les juridictions d’exception voient leur compétence :",
     options: [
@@ -10541,7 +10541,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL DE POLICE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Généralités",
     question:
         "Quelle catégorie d’infractions est jugée par le tribunal de police ?",
@@ -10552,7 +10552,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question: "Quel magistrat siège comme juge au tribunal de police ?",
     options: [
@@ -10566,7 +10566,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Organisation",
     question: "Quels sont les membres qui composent le tribunal de police ?",
     options: [
@@ -10581,7 +10581,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Selon l’article 521 du Code de procédure pénale, le tribunal de police est compétent pour :",
@@ -10596,7 +10596,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence matérielle",
     question:
         "Outre les contraventions simples, le tribunal de police peut également connaître :",
@@ -10611,7 +10611,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "En principe, quel tribunal de police est territorialement compétent ?",
@@ -10627,7 +10627,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Compétence territoriale",
     question:
         "Pour certaines infractions de transport routier, quel tribunal de police est compétent ?",
@@ -10642,7 +10642,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal de police — Modes de saisine",
     question: "Le tribunal de police peut être saisi notamment par :",
     options: [
@@ -10660,7 +10660,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAL CORRECTIONNEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Généralités",
     question:
         "Quelle catégorie d’infractions est jugée par le tribunal correctionnel ?",
@@ -10671,7 +10671,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question: "Dans sa formation ordinaire, le tribunal correctionnel est :",
     options: [
@@ -10686,7 +10686,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Composition",
     question:
         "Dans quels cas le tribunal correctionnel peut-il siéger à juge unique ?",
@@ -10701,7 +10701,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence",
     question: "Le tribunal correctionnel juge :",
     options: [
@@ -10716,7 +10716,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Compétence",
     question: "Le tribunal correctionnel peut également connaître :",
     options: [
@@ -10730,7 +10730,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Saisine",
     question:
         "Parmi les modes de saisine suivants, lequel ne concerne PAS le tribunal correctionnel ?",
@@ -10745,7 +10745,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "La comparution sur reconnaissance préalable de culpabilité (CRPC) est :",
@@ -10760,7 +10760,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Procédures simplifiées",
     question:
         "Parmi les procédures suivantes, laquelle est une procédure simplifiée devant le tribunal correctionnel ?",
@@ -10775,7 +10775,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunal correctionnel — Modes de saisine",
     question:
         "Les modes de saisine du tribunal correctionnel sont énumérés à :",
@@ -10793,7 +10793,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR D’ASSISES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Généralités",
     question:
         "Quelle catégorie d’infractions relève en principe de la cour d’assises ?",
@@ -10804,7 +10804,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Définition",
     question: "Selon l’article 231 du CPP, la cour d’assises a :",
     options: [
@@ -10819,7 +10819,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Siège",
     question: "Où siège en principe la cour d’assises ?",
     options: [
@@ -10833,7 +10833,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Composition",
     question: "La cour d’assises se compose de :",
     options: [
@@ -10847,7 +10847,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Combien de jurés composent le jury en premier ressort devant la cour d’assises ?",
@@ -10858,7 +10858,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Jury",
     question:
         "Quel principe fondamental est rappelé dans le serment des jurés ?",
@@ -10873,7 +10873,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Ministère public",
     question:
         "Qui représente le ministère public lorsque la cour d’assises siège au siège de la cour d’appel ?",
@@ -10888,7 +10888,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour d’assises — Décisions",
     question:
         "À quelle majorité une décision défavorable à l’accusé doit-elle être prise en cour d’assises ?",
@@ -10906,7 +10906,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // COUR CRIMINELLE DÉPARTEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale",
     question:
         "Quel est l’objet principal de la cour criminelle départementale ?",
@@ -10922,7 +10922,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cour criminelle départementale",
     question: "La cour criminelle départementale est composée :",
     options: [
@@ -10940,7 +10940,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // JURIDICTIONS POUR MINEURS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Généralités",
     question: "Les juridictions pour mineurs sont :",
     options: [
@@ -10954,7 +10954,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Le juge des enfants est :",
     options: [
@@ -10968,7 +10968,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Juge des enfants",
     question: "Le juge des enfants peut juger :",
     options: [
@@ -10983,7 +10983,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Le tribunal pour enfants est présidé par :",
     options: [
@@ -10997,7 +10997,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Tribunal pour enfants",
     question: "Les assesseurs du tribunal pour enfants sont :",
     options: [
@@ -11011,7 +11011,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Cour d’assises des mineurs",
     question: "La cour d’assises des mineurs est compétente pour :",
     options: [
@@ -11025,7 +11025,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Appel",
     question:
         "L’appel des jugements rendus à l’égard des mineurs est porté devant :",
@@ -11043,7 +11043,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TERRORISME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Juridictions spécialisées",
     question:
         "Pour les infractions terroristes, quelles juridictions sont souvent compétentes ?",
@@ -11059,7 +11059,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Cour d’assises spéciale",
     question:
         "Quelle particularité présente la cour d’assises spéciale en matière de terrorisme ?",
@@ -11078,7 +11078,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // ECONOMIQUE & FINANCIER
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière",
     question:
         "Dans les affaires économiques et financières complexes, la compétence territoriale d’un tribunal judiciaire peut :",
@@ -11093,7 +11093,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière",
     question:
         "Le procureur de la République financier exerce ses attributions :",
@@ -11108,7 +11108,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Économique et financière",
     question:
         "Les infractions boursières visées (manipulation de marché, etc.) sont principalement prévues dans :",
@@ -11126,7 +11126,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CRIMINALITE ORGANISEE & JIRS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Généralités",
     question: "L’article 706-73 du CPP énumère principalement :",
     options: [
@@ -11140,7 +11140,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Compétence",
     question:
         "En matière de criminalité organisée, la compétence territoriale peut :",
@@ -11155,7 +11155,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — JIRS",
     question:
         "Combien de juridictions interrégionales spécialisées (JIRS) sont prévues par le CPP ?",
@@ -11169,7 +11169,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CRIMES CONTRE L’HUMANITÉ / GUERRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes contre l’humanité / Guerre",
     question:
         "Les crimes contre l’humanité et les crimes et délits de guerre peuvent être jugés :",
@@ -11187,7 +11187,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // CRIMES SERIELS / NON ELUCIDES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Quel tribunal est désigné comme pôle judiciaire national spécialisé pour les crimes sériels ou non élucidés ?",
@@ -11202,7 +11202,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Crimes sériels ou non élucidés",
     question:
         "Le pôle spécialisé crimes sériels de Nanterre est compétent notamment lorsque :",
@@ -11220,7 +11220,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // TRIBUNAUX MILITAIRES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires",
     question:
         "Les infractions militaires et les crimes et délits de droit commun commis par les militaires dans l’exercice du service relèvent :",
@@ -11235,7 +11235,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tribunaux militaires",
     question:
         "Les infractions commises par un militaire en dehors de l’exercice du service relèvent :",
@@ -11253,7 +11253,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // LITTORAL MARITIME
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Littoral maritime",
     question:
         "Les juridictions du littoral maritime spécialisées sont compétentes notamment pour :",
@@ -11271,7 +11271,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // SANITAIRE & ENVIRONNEMENTALE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale",
     question: "Les articles 706-2 à 706-2-3 du CPP concernent :",
     options: [
@@ -11285,7 +11285,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanitaire et environnementale",
     question:
         "Les pôles spécialisés en matière sanitaire et environnementale sont actuellement situés à :",
@@ -11299,7 +11299,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // VOIES DE RECOURS — GENERALITES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question: "Une décision pénale acquiert autorité de chose jugée lorsque :",
     options: [
@@ -11313,7 +11313,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Voies de recours — Généralités",
     question: "Les voies de recours ordinaires comprennent principalement :",
     options: [
@@ -11330,7 +11330,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // OPPOSITION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question: "L’opposition est recevable lorsque :",
     options: [
@@ -11344,7 +11344,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question: "En principe, le délai pour former opposition est de :",
     options: ["3 jours", "10 jours", "1 mois pour tous"],
@@ -11354,7 +11354,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question:
         "Quel est l’effet principal de l’opposition sur la décision rendue par défaut ?",
@@ -11369,7 +11369,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Opposition",
     question:
         "En cas d’« itératif défaut » (nouveau défaut du prévenu lors de l’audience d’opposition), l’opposition :",
@@ -11387,7 +11387,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   // APPEL
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Généralités",
     question: "L’appel permet :",
     options: [
@@ -11401,7 +11401,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Décisions susceptibles",
     question: "En matière correctionnelle, les jugements sont en principe :",
     options: [
@@ -11415,7 +11415,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Personnes ayant qualité",
     question: "En matière correctionnelle, qui peut interjeter appel ?",
     options: [
@@ -11430,7 +11430,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Délai",
     question:
         "Quel est, en principe, le délai pour interjeter appel d’un jugement correctionnel contradictoire ?",
@@ -11440,7 +11440,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "Le délai d’appel est en principe de 10 jours à compter du prononcé du jugement ou de sa signification, selon les cas.",
     difficulty: "Intermédiaire",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice sont :',
     options: [
@@ -11455,7 +11455,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice peuvent être délivrés :',
     options: [
@@ -11469,7 +11469,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Selon l’article 122 alinéa 1 du C.P.P., combien de types de mandats de justice sont énumérés ?',
@@ -11483,7 +11483,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
   // QUESTIONS SUPPLÉMENTAIRES — NIVEAU 1 (FACILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Les mandats de justice se trouvent principalement dans le C.P.P. au chapitre consacré :',
@@ -11498,7 +11498,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice ordonnent notamment :',
     options: [
@@ -11513,7 +11513,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes',
     question: 'Les mandats de justice sont valables :',
     options: [
@@ -11527,7 +11527,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Forme',
     question: 'Pour être régulier, un mandat doit être :',
     options: [
@@ -11541,7 +11541,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Personnes visées',
     question: 'Le mandat de recherche ne peut pas être délivré contre :',
     options: [
@@ -11555,7 +11555,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Usage',
     question: 'Le mandat de comparution est principalement utilisé :',
     options: [
@@ -11570,7 +11570,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Notification',
     question: 'La notification d’un mandat de comparution peut être faite :',
     options: [
@@ -11584,7 +11584,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Objet',
     question: 'L’objectif principal du mandat d’amener est :',
     options: [
@@ -11598,7 +11598,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Nature',
     question: 'Le mandat d’arrêt est à la fois :',
     options: [
@@ -11612,7 +11612,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Effet',
     question:
         'La remise de la personne par l’agent au chef d’établissement pénitentiaire en exécution d’un mandat de dépôt :',
@@ -11627,7 +11627,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Sanctions',
     question:
         'En cas d’irrégularité non substantielle dans la notification d’un mandat, la conséquence la plus probable est :',
@@ -11645,7 +11645,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
   // QUESTIONS SUPPLÉMENTAIRES — NIVEAU 2 (MOYEN)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Exécution',
     question:
         'Lorsqu’un mandat de recherche est exécuté au domicile de la personne recherchée, la perquisition effectuée :',
@@ -11661,7 +11661,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Enquête préliminaire',
     question:
         'En enquête préliminaire, un mandat de recherche délivré par le procureur de la République :',
@@ -11677,7 +11677,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Choix du magistrat',
     question:
         'Pourquoi le juge préfère-t-il souvent décerner un mandat de comparution plutôt qu’une simple convocation ?',
@@ -11693,7 +11693,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Témoins assistés',
     question: 'Le mandat d’amener peut également être délivré à l’encontre :',
     options: [
@@ -11707,7 +11707,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Régime horaire',
     question:
         'L’agent chargé de l’exécution d’un mandat d’amener ne peut pénétrer dans le domicile d’un citoyen :',
@@ -11722,7 +11722,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Rapport écrit',
     question:
         'Lorsque l’agent n’a pas trouvé la personne faisant l’objet d’un mandat d’amener, il doit :',
@@ -11738,7 +11738,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Règlement de l’information',
     question:
         'Après le règlement de l’information, le mandat d’arrêt conserve :',
@@ -11753,7 +11753,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Personnes condamnées',
     question:
         'Le juge de l’application des peines peut décerner un mandat d’arrêt :',
@@ -11769,7 +11769,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Chambre de l’instruction',
     question:
         'La chambre de l’instruction peut décerner un mandat de dépôt ou d’arrêt lorsque :',
@@ -11785,7 +11785,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Discipline des magistrats',
     question:
         'Les sanctions disciplinaires contre un juge d’instruction ou un JLD pour irrégularités de mandats :',
@@ -11804,7 +11804,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
   // QUESTIONS SUPPLÉMENTAIRES — NIVEAU 3 (DIFFICILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cas avancés',
     question:
         'Une personne est appréhendée sous mandat d’amener, à plus de 200 km du siège du juge d’instruction mandant. Faute de pouvoir l’interroger immédiatement, le magistrat local :',
@@ -11820,7 +11820,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Transfert après mandat d’amener',
     question:
         'Lorsque le JLD prolonge la retenue d’une personne appréhendée hors du ressort du juge d’instruction, le transfert vers la maison d’arrêt désignée sur le mandat doit intervenir :',
@@ -11836,7 +11836,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Présentation au JLD',
     question:
         'Lorsqu’une personne recherchée sous mandat d’arrêt est arrêtée à plus de 200 km du siège du magistrat mandant, elle doit être présentée :',
@@ -11851,7 +11851,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Vidéo-audience',
     question:
         'Selon l’article 135-2 C.P.P., le recours à la visioconférence pour l’audition d’une personne détenue sous mandat d’arrêt :',
@@ -11867,7 +11867,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Personne en fuite',
     question:
         'Les recherches d’une personne en fuite faisant l’objet d’un mandat d’arrêt peuvent être confiées :',
@@ -11883,7 +11883,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Exécution',
     question:
         'En exécution d’un mandat de dépôt, la notification de l’ordonnance de placement en détention provisoire :',
@@ -11898,7 +11898,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Nullité et droits de la défense',
     question:
         'Parmi les irrégularités suivantes, laquelle est la plus susceptible d’entraîner la nullité du mandat lui-même ?',
@@ -11914,7 +11914,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Responsabilité du greffier',
     question:
         'Le greffier est responsable de la régularité formelle des mandats. S’il laisse partir un mandat sans sceau ni signature :',
@@ -11930,7 +11930,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Détention arbitraire et responsabilité',
     question:
         'Un juge d’instruction laisse volontairement une personne en détention au-delà des délais légaux après un mandat d’amener. Il peut être poursuivi sur le fondement :',
@@ -11949,7 +11949,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
   // SALVE SUPPLÉMENTAIRE — NIVEAU 1 (FACILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Quel article du C.P.P. énumère les cinq types de mandats de justice ?',
@@ -11960,7 +11960,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question: 'Les mandats de justice sont principalement utilisés par :',
     options: [
@@ -11974,7 +11974,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Non-délégation',
     question:
         'Pourquoi dit-on que les mandats de justice sont des actes « incommunicables » ?',
@@ -11990,7 +11990,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Contenu minimal',
     question: 'Pour être valable, tout mandat doit au minimum contenir :',
     options: [
@@ -12004,7 +12004,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Types',
     question:
         'Lequel de ces documents correspond à un mandat de contrainte et non à une simple convocation ?',
@@ -12019,7 +12019,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Finalité',
     question: 'La finalité d’un mandat de recherche est de :',
     options: [
@@ -12033,7 +12033,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Sanction du défaut de présentation',
     question:
         'Si la personne ne se présente pas à la date indiquée sur un mandat de comparution, le juge peut :',
@@ -12049,7 +12049,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Personne visée',
     question: 'Le mandat d’amener est destiné :',
     options: [
@@ -12064,7 +12064,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Personne en fuite',
     question: 'Le mandat d’arrêt est particulièrement adapté lorsque :',
     options: [
@@ -12078,7 +12078,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Qualité',
     question: 'Le mandat de dépôt permet :',
     options: [
@@ -12092,7 +12092,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Territoire',
     question: 'Les mandats de justice sont exécutoires :',
     options: [
@@ -12106,7 +12106,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Greffier',
     question: 'Le greffier, en matière de mandats, doit notamment vérifier :',
     options: [
@@ -12124,7 +12124,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
   // SALVE SUPPLÉMENTAIRE — NIVEAU 2 (MOYEN)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Notification',
     question:
         'Lorsqu’une personne détenue pour une autre cause fait l’objet d’un mandat de recherche, la notification du mandat :',
@@ -12139,7 +12139,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Effets selon l’auteur',
     question:
         'Lorsque le mandat de recherche est délivré par le procureur de la République et que la personne n’est pas découverte :',
@@ -12155,7 +12155,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Public visé',
     question:
         'Pourquoi le mandat de comparution ne vise-t-il en principe pas les personnes supposées en fuite ?',
@@ -12171,7 +12171,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Exécution',
     question:
         'Dans la pratique, lorsque la personne visée par un mandat de comparution est introuvable à l’adresse indiquée :',
@@ -12186,7 +12186,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Conversion depuis un mandat de comparution',
     question: 'Le plus souvent, un mandat d’amener est décerné :',
     options: [
@@ -12201,7 +12201,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Force utilisée',
     question:
         'L’article 134 du C.P.P. précise que la force utilisée pour exécuter un mandat d’amener :',
@@ -12217,7 +12217,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Formules d’arrestation',
     question:
         'Les formalités d’arrestation applicables lors de l’exécution d’un mandat d’arrêt (article 133 C.P.P.) imposent notamment :',
@@ -12233,7 +12233,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Maintien en rétention',
     question:
         'Lorsqu’une personne arrêtée sous mandat d’arrêt est retenue 24 heures avant d’être conduite devant le juge :',
@@ -12249,7 +12249,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Notification',
     question:
         'Pourquoi dit-on que la notification de l’ordonnance de placement en détention provisoire vaut notification du mandat de dépôt ?',
@@ -12264,7 +12264,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Nullité et défense',
     question:
         'Une irrégularité dans la délivrance d’un mandat n’entraîne nullité qu’à condition :',
@@ -12280,7 +12280,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Discipline et pénal',
     question:
         'En cas de détention arbitraire liée à un dépassement injustifié des délais de présentation après mandat d’amener :',
@@ -12299,7 +12299,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
   // SALVE SUPPLÉMENTAIRE — NIVEAU 3 (DIFFICILE)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cas pratiques complexes',
     question:
         'Un mandat d’arrêt a été délivré, mais l’acte ne mentionne pas la qualification juridique des faits alors que la loi l’exige. La personne arrêtée soulève l’irrégularité :',
@@ -12315,7 +12315,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Distance et transferts',
     question:
         'Une personne arrêtée à plus de 200 km du siège du juge d’instruction mandant reste 48 heures avant d’être présentée au JLD local. Quel est le risque principal ?',
@@ -12331,7 +12331,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Interaction avec la garde à vue',
     question:
         'Une personne est arrêtée sous mandat de recherche et immédiatement placée en garde à vue. Pour être régulière, cette garde à vue :',
@@ -12347,7 +12347,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Recours et indemnisation',
     question:
         'Une personne obtient devant le premier président de la cour d’appel une indemnité pour détention irrégulière consécutive à un mandat d’arrêt. L’État décide de se retourner contre le dénonciateur de mauvaise foi. Ce recours :',
@@ -12363,7 +12363,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Hiérarchie des mesures',
     question:
         'Sur le plan théorique, comment peut-on classer les mandats de justice par intensité croissante de contrainte ?',
@@ -12379,7 +12379,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Choix de l’outil procédural',
     question:
         'Dans une information criminelle, le juge d’instruction souhaite interroger un mis en examen qui reste au domicile mais refuse de se déplacer. Quel mandat est, en principe, le plus adapté ?',
@@ -12390,7 +12390,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Publicité et diffusion',
     question:
         'En matière de sécurité intérieure, certains mandats d’amener ou d’arrêt peuvent être inscrits au fichier des personnes recherchées. Cette inscription :',
@@ -12406,7 +12406,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cumul des irrégularités',
     question:
         'Plusieurs irrégularités mineures affectent un mandat (erreur de date, coquilles dans l’adresse) mais aucune n’a porté atteinte aux droits de la défense. La défense invoque la nullité du mandat :',
@@ -12422,7 +12422,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Interaction avec le contrôle judiciaire',
     question:
         'Une personne ne respecte pas de manière répétée les obligations de son contrôle judiciaire. Le juge d’instruction décide de la faire arrêter pour l’entendre sur ces manquements. L’outil procédural logique est :',
@@ -12437,7 +12437,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Équilibre libertés / ordre public',
     question:
         'Sur le plan théorique, le recours aux mandats de justice s’analyse comme :',
@@ -12453,7 +12453,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Recours et indemnisation',
     question:
         'Une personne a subi une détention jugée irrégulière à la suite d’un mandat. Elle obtient une indemnisation. L’État :',
@@ -12469,7 +12469,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Parmi ces propositions, lequel N’EST PAS un type de mandat de justice ?',
@@ -12484,7 +12484,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Notions générales',
     question:
         'Les mandats de justice sont des actes incommunicables, c’est-à-dire :',
@@ -12501,7 +12501,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // PRINCIPES GÉNÉRAUX — FORME
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes généraux',
     question:
         'Tout mandat doit préciser l’identité de la personne à l’encontre de laquelle il est décerné et :',
@@ -12516,7 +12516,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes généraux',
     question:
         'Les mandats d’amener, de dépôt, d’arrêt ou de recherche doivent mentionner :',
@@ -12533,7 +12533,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT DE RECHERCHE — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Notions de base',
     question: 'Le mandat de recherche est défini comme :',
     options: [
@@ -12548,7 +12548,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Personnes visées',
     question: 'Le mandat de recherche peut être délivré contre :',
     options: [
@@ -12562,7 +12562,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Personnes visées',
     question:
         'Outre le mis en examen, le mandat de recherche peut être délivré contre :',
@@ -12574,7 +12574,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT DE COMPARUTION — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Notions de base',
     question: 'Le mandat de comparution a pour objet de :',
     options: [
@@ -12589,7 +12589,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Public visé',
     question:
         'Le mandat de comparution est surtout utilisé à l’égard de personnes :',
@@ -12605,7 +12605,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT D’AMENER — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Notions de base',
     question: 'Le mandat d’amener est l’ordre de :',
     options: [
@@ -12619,7 +12619,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Nature',
     question: 'Le mandat d’amener est :',
     options: [
@@ -12634,7 +12634,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT D’ARRÊT — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Notions de base',
     question: 'Le mandat d’arrêt est l’ordre :',
     options: [
@@ -12650,7 +12650,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT DE DÉPÔT — DÉFINITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Notions de base',
     question: 'Le mandat de dépôt est avant tout :',
     options: [
@@ -12664,7 +12664,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Exécution',
     question: 'L’agent de la force publique qui exécute un mandat de dépôt :',
     options: [
@@ -12680,7 +12680,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SANCTIONS — PRINCIPES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Sanctions',
     question:
         'Qui est considéré comme responsable de la régularité formelle des mandats ?',
@@ -12700,7 +12700,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // PRINCIPES — DIFFUSION ET FORMES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes (niveau 2)',
     question:
         'En cas d’urgence, les mandats d’amener, d’arrêt et de recherche peuvent être diffusés :',
@@ -12716,7 +12716,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats de justice — Principes (niveau 2)',
     question: 'Les mandats sont des actes individuels, cela signifie que :',
     options: [
@@ -12731,7 +12731,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT DE RECHERCHE — REMARQUES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Délivrance (niveau 2)',
     question:
         'Selon l’article 70 du C.P.P., le procureur de la République peut décerner un mandat de recherche :',
@@ -12747,7 +12747,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Agents habilités',
     question:
         'L’exécution d’un mandat de recherche est notifiée et exécutée par :',
@@ -12763,7 +12763,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de recherche — Effets',
     question:
         'Lorsque le mandat de recherche est délivré par le juge d’instruction et que la personne est découverte, elle est alors :',
@@ -12779,7 +12779,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT DE COMPARUTION — NON-COMPARUTION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de comparution — Non-présentation',
     question:
         'Si la personne ne se présente pas en exécution d’un mandat de comparution :',
@@ -12796,7 +12796,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT D’AMENER — PERSONNES VISÉES ET CONDITIONS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Délivrance (niveau 2)',
     question:
         'Le mandat d’amener peut être décerné à l’encontre d’une personne :',
@@ -12812,7 +12812,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Diffusion',
     question: 'En principe, le mandat d’amener n’a pas vocation à être :',
     options: [
@@ -12827,7 +12827,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // RÈGLES D’EXÉCUTION — PERQUISITION
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Exécution (niveau 2)',
     question:
         'Selon l’article 134 du C.P.P., l’agent chargé d’exécuter un mandat d’amener, d’arrêt ou de recherche :',
@@ -12843,7 +12843,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Exécution (niveau 2)',
     question:
         'La perquisition effectuée lors de l’exécution d’un mandat d’amener ou de recherche :',
@@ -12860,7 +12860,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT D’ARRÊT — SITUATIONS PARTICULIÈRES
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Conditions (niveau 2)',
     question: 'Le mandat d’arrêt peut être décerné notamment à l’encontre :',
     options: [
@@ -12874,7 +12874,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Notifications',
     question:
         'Les agents habilités à notifier et exécuter un mandat d’arrêt sont :',
@@ -12891,7 +12891,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // MANDAT DE DÉPÔT — TRIBUNAL CORRECTIONNEL
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Tribunal correctionnel',
     question:
         'Le tribunal correctionnel peut décerner un mandat de dépôt contre un prévenu :',
@@ -12908,7 +12908,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SANCTIONS — NULLITÉS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Sanctions (niveau 2)',
     question:
         'Les irrégularités de forme commises lors de la délivrance d’un mandat peuvent entraîner :',
@@ -12923,7 +12923,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Moyen',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Sanctions (niveau 2)',
     question:
         'Les irrégularités commises lors de la notification ou de l’exécution d’un mandat entraînent en principe :',
@@ -12939,7 +12939,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // RESPONSABILITÉ PÉNALE DES MAGISTRATS
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Responsabilité pénale',
     question:
         'Selon l’article 126 du C.P.P., les sanctions pénales des articles 432-4 à 432-6 du Code pénal s’appliquent :',
@@ -12960,7 +12960,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // =====================================================
 
   // CAS PRATIQUES — MANDAT DE RECHERCHE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Cas pratiques (niveau 3)',
     question:
         'Un mandat de recherche délivré par le procureur de la République dans le cadre d’une enquête n’a pas permis de retrouver la personne. Il n’y a aucun élément nominatif contre elle. Le procureur peut alors :',
@@ -12975,7 +12975,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Garde à vue et droits',
     question:
         'Lorsqu’une personne est retenue en vertu d’un mandat d’amener, les droits relatifs à la garde à vue lui sont reconnus, notamment :',
@@ -12990,7 +12990,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’amener — Délai de 24 heures',
     question:
         'En matière de mandat d’amener, le délai maximal de 24 heures prévu par l’article 128 du C.P.P. concerne :',
@@ -13006,7 +13006,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Exécution à plus de 200 km',
     question:
         'Lorsqu’une personne arrêtée en vertu d’un mandat d’arrêt se trouve à plus de 200 km du siège du magistrat mandant, elle doit être présentée à un magistrat de ce ressort dans un délai maximal de :',
@@ -13017,7 +13017,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Transfert ultérieur',
     question:
         'Après audition de la personne par le juge ou le JLD du lieu d’arrestation, le transfert vers la maison d’arrêt désignée par le mandat doit intervenir :',
@@ -13033,7 +13033,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat d’arrêt — Après règlement de l’information',
     question:
         'Après règlement de l’information, l’exécution d’un mandat d’arrêt reste possible. Dans ce cas, la rétention de la personne par les services de police :',
@@ -13049,7 +13049,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Comparution immédiate',
     question:
         'En procédure de comparution immédiate, le tribunal correctionnel peut décerner un mandat de dépôt lorsque :',
@@ -13065,7 +13065,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandat de dépôt — Trouble à l’audience',
     question:
         'En cas de trouble à l’audience, le président du tribunal correctionnel peut :',
@@ -13082,7 +13082,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // SANCTIONS — DÉTENTION ARBITRAIRE
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Détention arbitraire (niveau 3)',
     question:
         'En cas de dépassement injustifié du délai de 24 heures pour l’interrogatoire d’une personne arrêtée en vertu d’un mandat d’amener, la responsabilité pénale peut être engagée :',
@@ -13098,7 +13098,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Nullités et indemnisation',
     question:
         'La jurisprudence admet que les irrégularités commises lors de la délivrance ou de l’exécution d’un mandat entraînent nullité ou indemnisation :',
@@ -13114,7 +13114,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Indemnisation',
     question:
         'L’indemnisation d’une détention irrégulière liée à un mandat est allouée :',
@@ -13129,7 +13129,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Quel est l’objectif principal de la nullité des actes de procédure pénale ?",
@@ -13144,7 +13144,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Que devient un procès-verbal qui a constaté une détention illégale lorsqu’il est annulé ?",
@@ -13160,7 +13160,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Combien de grandes catégories de nullités distingue-t-on classiquement en procédure pénale française ?",
@@ -13175,7 +13175,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question:
         "Selon l’Article 802 du Code de Procédure Pénale, quand la nullité peut-elle être prononcée ?",
@@ -13191,7 +13191,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nullité",
     question: "La nullité d’un acte de procédure pénale entraîne en principe :",
     options: [
@@ -13209,7 +13209,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //                  NULLITÉS TEXTUELLES — PRINCIPES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités textuelles — Principe",
     question:
         "Qu’est-ce qui caractérise une nullité textuelle en procédure pénale ?",
@@ -13225,7 +13225,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités textuelles — Répartition",
     question:
         "Où se trouvent les nullités textuelles dans le Code de Procédure Pénale ?",
@@ -13243,7 +13243,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //          NULLITÉS TEXTUELLES — PERQUISITIONS / SAISIES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nullité textuelle",
     question:
         "Quel article prévoit que les formalités des Articles 56, 56-1, 57 et 59 du Code de Procédure Pénale sont prescrites à peine de nullité ?",
@@ -13258,7 +13258,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Présence de la personne",
     question:
         "En principe, une perquisition au domicile doit se dérouler en présence :",
@@ -13274,7 +13274,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Heures légales",
     question:
         "Le non-respect des heures légales d’une perquisition (hors exceptions légales) peut entraîner :",
@@ -13289,7 +13289,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Cabinet d’avocat",
     question:
         "En cabinet d’avocat, quelle condition est requise à peine de nullité pour la perquisition ?",
@@ -13305,7 +13305,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Enquête préliminaire",
     question:
         "En enquête préliminaire, une perquisition sans l’assentiment de la personne est possible à condition :",
@@ -13324,7 +13324,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //          NULLITÉS TEXTUELLES — RÉQUISITIONS / PRESSE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Nullité textuelle",
     question:
         "Selon les Articles 60-1 et 77-1-1 du Code de Procédure Pénale, à peine de nullité, quels éléments ne peuvent pas être versés au dossier ?",
@@ -13343,7 +13343,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //   NULLITÉS TEXTUELLES — INTERCEPTIONS / CORRESPONDANCES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Information préalable",
     question:
         "En matière d’interception de correspondances, à peine de nullité, le juge d’instruction doit notamment informer :",
@@ -13359,7 +13359,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Avocat / secret professionnel",
     question:
         "À peine de nullité, que prévoit l’Article 100-5 du Code de Procédure Pénale pour les correspondances avec un avocat ?",
@@ -13375,7 +13375,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Journalistes",
     question:
         "Que prévoit l’Article 100-5 du Code de Procédure Pénale concernant les correspondances avec un journaliste ?",
@@ -13394,7 +13394,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //        NULLITÉS TEXTUELLES — INFILTRATION / EXORBITANTS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Nullité textuelle",
     question:
         "À peine de nullité, que ne doit pas faire un agent infiltré lors d’une opération d’infiltration ?",
@@ -13409,7 +13409,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Autorisation",
     question:
         "Selon l’Article 706-83 du Code de Procédure Pénale, à peine de nullité, l’autorisation d’infiltration doit être :",
@@ -13425,7 +13425,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Moyens exorbitants — Stupéfiants",
     question:
         "En matière de trafic de stupéfiants, que permet l’Article 706-32 du Code de Procédure Pénale aux officiers de police judiciaire et agents de police judiciaire ?",
@@ -13441,7 +13441,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête sous pseudonyme",
     question:
         "Selon l’Article 230-46 du Code de Procédure Pénale, dans quel but l’enquête sous pseudonyme est-elle autorisée ?",
@@ -13457,7 +13457,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête sous pseudonyme — Nullité",
     question:
         "À peine de nullité, que doit faire le magistrat lorsqu’il autorise les actes 3° et 4° de l’Article 230-46 du Code de Procédure Pénale (acquisition, mise à disposition de moyens) ?",
@@ -13475,7 +13475,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //         NULLITÉS TEXTUELLES — VÉRIFICATION D’IDENTITÉ
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Nullité",
     question:
         "Quelle durée maximale de rétention est prévue pour une vérification d’identité (hors régimes spécifiques) ?",
@@ -13490,7 +13490,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Mineurs",
     question:
         "À peine de nullité, que doit-on faire pour un mineur retenu lors d’une vérification d’identité ?",
@@ -13506,7 +13506,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vérification d’identité — Procès-verbal",
     question:
         "À peine de nullité, que doit contenir le procès-verbal de vérification d’identité ?",
@@ -13524,7 +13524,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //                  NULLITÉS SUBSTANTIELLES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Définition",
     question:
         "Selon l’Article 171 du Code de Procédure Pénale, quand y a-t-il nullité substantielle ?",
@@ -13540,7 +13540,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Garde à vue",
     question:
         "L’absence de notification du droit à être assisté par un avocat en garde à vue constitue :",
@@ -13556,7 +13556,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Commission rogatoire",
     question:
         "En commission rogatoire, que doit faire l’officier de police judiciaire lorsqu’apparaissent des indices graves et concordants contre une personne entendue comme témoin ?",
@@ -13572,7 +13572,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Bande organisée",
     question:
         "Que rappelle la décision du Conseil constitutionnel du 2 mars 2004 concernant l’usage de la procédure de criminalité organisée ?",
@@ -13588,7 +13588,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités substantielles — Enregistrement des mineurs",
     question:
         "Que se passe-t-il lorsque l’audition d’un mineur placé en garde à vue n’est pas enregistrée et que les modalités prévues ne sont pas respectées ?",
@@ -13607,7 +13607,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //           NULLITÉS D’ORDRE PRIVÉ / D’ORDRE PUBLIC
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités — Ordre privé",
     question:
         "Selon l’Article 802 du Code de Procédure Pénale, les nullités fondées sur la violation des formes prescrites à peine de nullité concernent :",
@@ -13622,7 +13622,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités — Ordre public",
     question:
         "Qu’est-ce qui caractérise une nullité d’ordre public par rapport à une nullité d’ordre privé ?",
@@ -13638,7 +13638,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Nullités — Ordre public (exemples)",
     question:
         "La délivrance d’une mission technique ayant le caractère d’une expertise à un officier de police judiciaire par commission rogatoire est :",
@@ -13656,7 +13656,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //        ACTION EN NULLITÉ — INFORMATION JUDICIAIRE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Compétence",
     question:
         "En cas d’information judiciaire, quelle juridiction est compétente pour apprécier les nullités d’actes d’instruction ?",
@@ -13671,7 +13671,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Juge d’instruction",
     question:
         "Lorsque le juge d’instruction constate qu’un acte est frappé de nullité, que doit-il faire ?",
@@ -13687,7 +13687,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Procureur de la République",
     question:
         "Comment le procureur de la République peut-il provoquer l’examen d’une nullité par la chambre de l’instruction ?",
@@ -13703,7 +13703,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Parties",
     question:
         "À quelles conditions une partie peut-elle saisir la chambre de l’instruction d’une requête en nullité ?",
@@ -13719,7 +13719,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Témoin assisté",
     question: "Le témoin assisté peut-il former une requête en nullité ?",
     options: [
@@ -13736,7 +13736,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //         ACTION EN NULLITÉ — RÔLE DU PRÉSIDENT / DÉLAIS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Président chambre",
     question:
         "Dans quel délai le président de la chambre de l’instruction peut-il constater l’irrecevabilité d’une requête en nullité après réception du dossier ?",
@@ -13747,7 +13747,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Irrecevabilité",
     question: "La requête en nullité est irrecevable notamment lorsque :",
     options: [
@@ -13762,7 +13762,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Délais de six mois",
     question:
         "Que prévoit l’Article 173-1 du Code de Procédure Pénale concernant certaines requêtes en nullité ?",
@@ -13778,7 +13778,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Action en nullité — Détention provisoire",
     question:
         "Lorsque la détention provisoire se poursuit au-delà de trois mois sans avis de fin d’information, que peut faire la chambre de l’instruction ?",
@@ -13797,7 +13797,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //         COMPÉTENCE HORS INFORMATION — ART. 385 CPP
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Tribunal correctionnel",
     question:
         "En matière délictuelle, lorsque les faits ne font pas l’objet d’une information judiciaire, qui est compétent pour constater les nullités de procédure ?",
@@ -13812,7 +13812,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Tribunal de police",
     question:
         "En matière contraventionnelle, qui est compétent pour statuer sur les nullités de procédure ?",
@@ -13828,7 +13828,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Compétence — Exception de nullité",
     question:
         "Selon l’Article 385 du Code de Procédure Pénale, à quel moment les exceptions de nullité doivent-elles être soulevées devant le tribunal correctionnel ?",
@@ -13846,7 +13846,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //                  EFFETS DE LA NULLITÉ — PROCÉDURE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Procédure",
     question:
         "Selon l’Article 174 du Code de Procédure Pénale, que peut décider la chambre de l’instruction lorsqu’elle prononce une nullité ?",
@@ -13862,7 +13862,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Dossier d’information",
     question: "Que devient un acte annulé au regard du dossier d’information ?",
     options: [
@@ -13877,7 +13877,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Canceller",
     question:
         "Que signifie le fait qu’un acte soit “cancellé” dans le cadre d’une annulation partielle ?",
@@ -13896,7 +13896,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   // ==========================================================
   //                  EFFETS DE LA NULLITÉ — PARTIES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Purge successive",
     question:
         "Que signifie l’expression “purge successive des nullités” utilisée à propos de la saisine de la chambre de l’instruction ?",
@@ -13912,7 +13912,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Débats devant la chambre",
     question:
         "Après la clôture des débats devant la chambre de l’instruction, que se passe-t-il pour les nullités dont les parties avaient connaissance ?",
@@ -13927,7 +13927,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Effets de la nullité — Article 595 CPP",
     question:
         "Que prévoit l’Article 595 du Code de Procédure Pénale pour la recevabilité des moyens de nullité devant la Cour de cassation ?",
@@ -13943,7 +13943,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mandats — Recours contre le dénonciateur',
     question:
         'Lorsque la détention résulte d’une dénonciation mensongère, l’État :',
@@ -13959,7 +13959,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Appel — Effets",
     question: "L’appel a en principe un effet :",
     options: [
@@ -13973,7 +13973,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention provisoire — Cas pratiques",
     question:
         "Une personne détenue voit sa demande de mise en liberté rejetée par le juge d’instruction. Quel recours peut-elle exercer ?",
@@ -13988,7 +13988,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle judiciaire — Cas avancé",
     question:
         "Une personne mise en examen demande la mainlevée de son contrôle judiciaire. Le juge d’instruction rejette sa demande. Quel recours a-t-elle ?",
@@ -14002,7 +14002,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "La décision refusant la mainlevée peut être contestée devant la chambre de l’instruction, qui réexaminera la nécessité de la mesure.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ARSE — Comparaison avec la détention provisoire',
     question: 'Sur le plan des libertés, l’ARSE se situe :',
     options: [
@@ -14017,7 +14017,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extinction — Prescription",
     question: "Quel est l’effet de la prescription de l’action publique ?",
     options: [
@@ -14031,7 +14031,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "Si aucune poursuite n’est exercée dans le délai légal, l’infraction ne peut plus donner lieu à une action publique.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question: "À combien de degrés se déroule l’instruction préparatoire ?",
     options: [
@@ -14045,7 +14045,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "L’instruction préparatoire est à deux degrés : au premier degré devant le juge d’instruction, au second degré devant la chambre de l’instruction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quelle est la mission principale du juge d’instruction pendant l’instruction préparatoire ?",
@@ -14061,7 +14061,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Sur quels éléments porte l’instruction préparatoire, en plus des faits eux-mêmes ?",
@@ -14078,7 +14078,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel est l’enjeu permanent de la procédure d’instruction préparatoire ?",
@@ -14096,7 +14096,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CARACTÈRE ÉCRIT ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Pourquoi le caractère écrit de la procédure d’instruction est-il important ?",
@@ -14113,7 +14113,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Quel élément traduit l’atténuation du caractère écrit devant la chambre de l’instruction ?",
@@ -14130,7 +14130,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CARACTÈRE SECRET ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Qui est tenu au secret professionnel en application de l’article 11 du Code de procédure pénale ?",
@@ -14146,7 +14146,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Quel est le risque pour un journaliste qui publie un acte de procédure avant sa lecture en audience publique ?",
@@ -14162,7 +14162,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Quel type de recours est prévu par l’article 9-1 du Code civil pour une personne présentée publiquement comme coupable alors qu’une instruction est en cours ?",
@@ -14179,7 +14179,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== PROCÉDURE NON CONTRADICTOIRE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Non-contradictoire",
     question:
         "Quel droit renforce particulièrement le caractère contradictoire de l’instruction ?",
@@ -14197,7 +14197,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== OUVERTURE DE L’INFORMATION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "En matière de contravention, dans quel cas une information peut-elle être ouverte ?",
@@ -14213,7 +14213,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Quel acte le procureur de la République rédige-t-il pour saisir le juge d’instruction ?",
@@ -14229,7 +14229,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Quelle est la conséquence d’une plainte avec constitution de partie civile recevable devant le juge d’instruction ?",
@@ -14246,7 +14246,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== PÔLES DE L’INSTRUCTION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation — Pôles de l’instruction",
     question:
         "Pour quel type d’affaires les pôles de l’instruction sont-ils spécialement compétents ?",
@@ -14263,7 +14263,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== EXPERTISE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Nomination",
     question:
         "Qui peut être à l’initiative d’une demande d’expertise en matière d’instruction préparatoire ?",
@@ -14279,7 +14279,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Choix de l’expert",
     question:
         "Où le juge d’instruction doit-il, en principe, choisir les experts ?",
@@ -14295,7 +14295,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Rapport",
     question: "Quelle formalité marque la fin de la mission de l’expert ?",
     options: [
@@ -14312,7 +14312,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== TÉMOINS ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quelle est la conséquence si le juge d’instruction recueille une déposition de témoin sans préciser son identité ?",
@@ -14328,7 +14328,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quelle sanction pénale encourt le témoin qui, régulièrement cité, ne comparaît pas devant le juge d’instruction sans excuse légitime ?",
@@ -14345,7 +14345,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== TÉMOIN ASSISTÉ (DÉTAIL) ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Conditions",
     question:
         "Dans quel cas le statut de témoin assisté est-il obligatoirement conféré à défaut de mise en examen ?",
@@ -14362,7 +14362,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Droits procéduraux",
     question: "Le témoin assisté a-t-il accès au dossier de la procédure ?",
     options: [
@@ -14378,7 +14378,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== MISE EN EXAMEN / INTERROGATOIRE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Interrogatoire",
     question:
         "Comment s’appelle le premier interrogatoire d’une personne dont la mise en examen est envisagée ?",
@@ -14394,7 +14394,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Garanties",
     question:
         "En matière criminelle, quelle garantie supplémentaire est prévue pour l’interrogatoire de première comparution ?",
@@ -14411,7 +14411,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== PARTIE CIVILE (DÉTAIL) ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Recevabilité",
     question:
         "Quelle condition est souvent requise pour qu’une plainte avec constitution de partie civile soit recevable ?",
@@ -14428,7 +14428,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Effets",
     question:
         "Quel est l’un des principaux avantages pour la victime de se constituer partie civile ?",
@@ -14446,7 +14446,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== ORDONNANCES DE RÈGLEMENT ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Renvoi",
     question:
         "Quel est l’effet principal d’une ordonnance de renvoi devant le tribunal correctionnel sur les mesures de sûreté ?",
@@ -14463,7 +14463,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Mise en accusation",
     question:
         "Devant quelle juridiction une ordonnance de mise en accusation renvoie-t-elle l’affaire ?",
@@ -14480,7 +14480,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== NON-LIEU (DÉTAIL) ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnance de non-lieu — Fondement",
     question:
         "Dans lequel des cas suivants le juge d’instruction peut-il rendre une ordonnance de non-lieu ?",
@@ -14497,7 +14497,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnance de non-lieu — Charges nouvelles",
     question:
         "Que désigne l’expression « charges nouvelles » au sens de l’article 189 du Code de procédure pénale ?",
@@ -14515,7 +14515,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CHAMBRE DE L’INSTRUCTION — POUVOIRS PARTICULIERS ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Pouvoir de révision",
     question:
         "À quel moment le pouvoir de révision de la chambre de l’instruction trouve-t-il à s’appliquer ?",
@@ -14532,7 +14532,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Droit d’évocation",
     question:
         "Que permet le droit d’évocation à la chambre de l’instruction lorsque l’information est encore en cours ?",
@@ -14550,7 +14550,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== AUDIENCE DE CONTRÔLE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Audience de contrôle",
     question:
         "Dans quel contexte l’article 221-3 du Code de procédure pénale prévoit-il une audience publique de contrôle ?",
@@ -14565,7 +14565,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "L’article 221-3 C. proc. pén. permet une audience publique de contrôle de l’instruction en présence d’une détention provisoire d’au moins trois mois.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel organe est principalement compétent pour conduire l’instruction préparatoire au premier degré ?",
@@ -14581,7 +14581,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Comment le juge d’instruction doit-il conduire ses investigations selon l’article 81 du Code de procédure pénale ?",
@@ -14597,7 +14597,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel est l’un des risques majeurs si les formalités de l’instruction ne sont pas respectées ?",
@@ -14613,7 +14613,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quelle tension fondamentale traverse l’ensemble de la procédure d’instruction préparatoire ?",
@@ -14631,7 +14631,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== CARACTÈRE ÉCRIT ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Que prévoit l’article 81 alinéas 2 et 3 du Code de procédure pénale concernant les actes de l’instruction ?",
@@ -14647,7 +14647,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Pourquoi autorise-t-on la copie ou la photocopie du dossier d’instruction ?",
@@ -14665,7 +14665,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== CARACTÈRE SECRET ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Quel est le principe général posé par l’article 11 du Code de procédure pénale concernant l’instruction ?",
@@ -14681,7 +14681,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Dans quel but le procureur de la République peut-il communiquer certains éléments de la procédure au public (art. 11 al. 3 C. proc. pén.) ?",
@@ -14698,7 +14698,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Qui supporte l’obligation de secret professionnel au titre de l’article 11 du Code de procédure pénale ?",
@@ -14715,7 +14715,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== CARACTÈRE NON CONTRADICTOIRE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Non contradictoire",
     question:
         "Quel élément illustre l’atténuation du caractère non contradictoire de l’instruction ?",
@@ -14732,7 +14732,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Non contradictoire",
     question:
         "Quelle difficulté majeure souligne l’évolution de la législation en matière d’instruction ?",
@@ -14750,7 +14750,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== OUVERTURE DE L’INFORMATION ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question: "En matière criminelle, l’ouverture d’une information est :",
     options: [
@@ -14765,7 +14765,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "En matière délictuelle, l’instruction préparatoire est en principe :",
@@ -14781,7 +14781,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Dans quel cas l’information est-elle ouverte pour une contravention ?",
@@ -14797,7 +14797,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Le juge d’instruction peut-il se saisir d’office d’une affaire pénale ?",
@@ -14814,7 +14814,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== SAISINE & EFFETS ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine du juge d’instruction",
     question:
         "Comment décrit-on la nature de la saisine du juge d’instruction lorsqu’il ne peut instruire que sur les faits visés dans l’acte de saisine ?",
@@ -14830,7 +14830,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine du juge d’instruction",
     question:
         "Que doit faire le juge d’instruction s’il découvre des faits nouveaux au cours de l’information ?",
@@ -14847,7 +14847,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== POUVOIRS D’INVESTIGATION – CONSTATATIONS ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Pouvoirs du juge — Constatations matérielles",
     question:
         "Que permet l’article 92 du Code de procédure pénale au juge d’instruction ?",
@@ -14863,7 +14863,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Pouvoirs du juge — Constatations matérielles",
     question:
         "Lorsqu’il se transporte sur les lieux pour procéder à des constatations, qui assiste le juge d’instruction ?",
@@ -14880,7 +14880,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== EXPERTISE – DÉTAIL ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Serment et mission",
     question:
         "À quel moment les experts inscrits sur une liste prêtent-ils serment d’« apporter leur concours à la justice en leur honneur et en leur conscience » ?",
@@ -14896,7 +14896,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Déroulement",
     question:
         "Sous le contrôle de quelle autorité les experts accomplissent-ils leur mission en matière d’instruction préparatoire ?",
@@ -14912,7 +14912,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Rapport",
     question:
         "Que doit contenir le rapport d’expertise remis au juge d’instruction ?",
@@ -14929,7 +14929,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== TÉMOINS – OBLIGATIONS ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Dans quelles conditions le juge d’instruction peut-il contraindre un témoin à comparaître ?",
@@ -14946,7 +14946,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quel serment les témoins doivent-ils en principe prêter devant le juge d’instruction ?",
@@ -14963,7 +14963,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== TÉMOIN ASSISTÉ – APPROFONDI ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Statut",
     question:
         "Le statut de témoin assisté représente une position intermédiaire entre :",
@@ -14979,7 +14979,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Évolution du statut",
     question:
         "Que peut demander à tout moment un témoin assisté au juge d’instruction concernant son statut ?",
@@ -14995,7 +14995,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Contraintes",
     question:
         "Le témoin assisté peut-il être placé en détention provisoire au titre de ce statut ?",
@@ -15012,7 +15012,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== MISE EN EXAMEN — DÉTAIL ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Conditions",
     question:
         "Quelle condition essentielle doit être réunie pour mettre une personne en examen ?",
@@ -15029,7 +15029,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Effets",
     question: "Une fois mise en examen, la personne :",
     options: [
@@ -15046,7 +15046,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== PARTIE CIVILE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Actions",
     question:
         "Quel est l’un des effets principaux de la constitution de partie civile pour la victime ?",
@@ -15062,7 +15062,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Consignation",
     question:
         "En cas de plainte avec constitution de partie civile initiant l’action publique, quelle obligation financière peut peser sur la victime ?",
@@ -15079,7 +15079,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== CLÔTURE DE L’INSTRUCTION ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture — Moment",
     question:
         "À quel moment le juge d’instruction communique-t-il le dossier au procureur de la République pour avis sur les suites à donner ?",
@@ -15095,7 +15095,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture — Demande des parties",
     question:
         "Qui peut demander la clôture de l’instruction sur le fondement de l’article 175-1 du Code de procédure pénale ?",
@@ -15112,7 +15112,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== ORDONNANCES DE RÈGLEMENT — SUITE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement",
     question:
         "Quel est l’effet principal d’une ordonnance de règlement sur la compétence du juge d’instruction ?",
@@ -15129,7 +15129,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ================== CHAMBRE DE L’INSTRUCTION — RÔLE PRATIQUE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Contrôle",
     question:
         "Quel est le rôle central de la chambre de l’instruction lorsqu’elle est saisie d’un recours ?",
@@ -15145,7 +15145,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "La chambre de l’instruction exerce un contrôle de légalité sur la procédure, pouvant confirmer, infirmer ou annuler les actes (art. 206 C. proc. pén.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel est l’un des objectifs majeurs de l’instruction préparatoire pour la juridiction de jugement ?",
@@ -15163,7 +15163,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 2
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Dans quel cas l’instruction préparatoire est-elle considérée comme un « second degré » d’instruction ?",
@@ -15180,7 +15180,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 3
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel type de procédure inspire principalement l’instruction préparatoire ?",
@@ -15197,7 +15197,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 4
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question: "Pourquoi dit-on que la procédure d’instruction est « écrite » ?",
     options: [
@@ -15214,7 +15214,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 5
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Quel est l’intérêt, pour l’administration de la justice, d’avoir un dossier écrit d’instruction en plusieurs exemplaires ou copies ?",
@@ -15232,7 +15232,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 6
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Pour quelle raison principale l’instruction est-elle secrète à l’égard du public ?",
@@ -15250,7 +15250,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 7
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Les avocats des parties ont-ils accès au dossier d’instruction malgré le secret ?",
@@ -15268,7 +15268,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 8
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Non contradictoire",
     question:
         "Quel droit illustre l’introduction d’éléments contradictoires dans l’instruction préparatoire ?",
@@ -15286,7 +15286,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 9
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Pourquoi l’information est-elle obligatoire en matière criminelle ?",
@@ -15304,7 +15304,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 10
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Dans quelle situation une plainte avec constitution de partie civile peut-elle provoquer l’ouverture d’une information ?",
@@ -15322,7 +15322,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 11
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Quelle est la règle en matière d’ouverture d’information pour les contraventions ?",
@@ -15340,7 +15340,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 12
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Ministère public",
     question:
         "Comment le procureur de la République saisit-il le juge d’instruction pour ouvrir une information ?",
@@ -15357,7 +15357,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 13
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Victime",
     question:
         "Quelle condition de recevabilité peut être exigée d’une victime qui dépose une plainte avec constitution de partie civile ?",
@@ -15375,7 +15375,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 14
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conséquences de la saisine",
     question:
         "Que signifie le fait que le juge d’instruction soit saisi « in rem » ?",
@@ -15392,7 +15392,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 15
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conséquences de la saisine",
     question:
         "Quelle est l’une des possibilités offertes au procureur de la République lorsque le juge lui signale des faits nouveaux (art. 80 C. proc. pén.) ?",
@@ -15410,7 +15410,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 16
-  QuizQuestion(
+  const QuizQuestion(
     category: "Pouvoirs — Constatations matérielles",
     question:
         "Pourquoi le juge d’instruction peut-il se transporter sur les lieux d’une infraction ?",
@@ -15427,7 +15427,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 17
-  QuizQuestion(
+  const QuizQuestion(
     category: "Pouvoirs — Constatations matérielles",
     question:
         "Lorsqu’il se transporte sur les lieux dans le cadre d’une commission rogatoire, le juge d’instruction :",
@@ -15444,7 +15444,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 18
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Initiative",
     question:
         "Qui peut être à l’initiative d’une demande d’expertise en matière d’instruction préparatoire ?",
@@ -15462,7 +15462,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 19
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Choix de l’expert",
     question:
         "En principe, parmi qui le juge d’instruction choisit-il les experts ?",
@@ -15480,7 +15480,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 20
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Rapport",
     question:
         "Que se passe-t-il une fois le rapport d’expertise remis au greffe ?",
@@ -15497,7 +15497,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 21
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quelles informations essentielles le juge doit-il vérifier au début de l’audition d’un témoin ?",
@@ -15515,7 +15515,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 22
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question: "Quels témoins sont dispensés de prêter serment ?",
     options: [
@@ -15532,7 +15532,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 23
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quelle est la sanction pénale prévue pour le témoin régulièrement cité qui, sans excuse légitime, refuse de comparaître ou de déposer ?",
@@ -15549,7 +15549,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 24
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Obligations",
     question:
         "Le témoin assisté régulièrement convoqué devant le juge d’instruction est-il tenu de comparaître ?",
@@ -15566,7 +15566,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 25
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Droits",
     question: "Le témoin assisté a-t-il accès au dossier d’instruction ?",
     options: [
@@ -15582,7 +15582,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 26
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Limites",
     question:
         "Quelles mesures ne peuvent pas être prononcées à l’encontre d’un témoin assisté en raison de son statut ?",
@@ -15600,7 +15600,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 27
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Procédure",
     question:
         "Lors de l’interrogatoire de première comparution, quelle garantie essentielle doit être donnée à la personne dont la mise en examen est envisagée ?",
@@ -15618,7 +15618,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 28
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Effets",
     question: "La mise en examen permet notamment :",
     options: [
@@ -15635,7 +15635,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 29
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Conditions",
     question:
         "La constitution de partie civile initiale devant le juge d’instruction (art. 85 C. proc. pén.) est possible :",
@@ -15652,7 +15652,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 30
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Effets procéduraux",
     question:
         "Quel droit important la partie civile obtient-elle en matière d’actes d’instruction ?",
@@ -15670,7 +15670,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 31
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture — Demande des parties",
     question:
         "Après quelle durée d’inertie procédurale les parties peuvent-elles demander la clôture de l’information (art. 175-1 C. proc. pén.) ?",
@@ -15687,7 +15687,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 32
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture — Réponse du juge",
     question:
         "Dans quel délai le juge d’instruction doit-il répondre par ordonnance à une demande de clôture fondée sur l’article 175-1 ?",
@@ -15699,7 +15699,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 33
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Renvoi",
     question:
         "Quel est l’effet d’une ordonnance de renvoi devenue définitive sur les vices de la procédure, que les parties pouvaient connaître ?",
@@ -15717,7 +15717,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 34
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Non-lieu",
     question: "Dans quel cas le juge rend-il une ordonnance de non-lieu ?",
     options: [
@@ -15734,7 +15734,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 35
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Charges nouvelles",
     question:
         "Que sont des « charges nouvelles » au sens de l’article 189 du Code de procédure pénale ?",
@@ -15752,7 +15752,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 36
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Effets non-lieu",
     question:
         "Quel est l’effet principal d’une ordonnance de non-lieu sur l’action publique ?",
@@ -15769,7 +15769,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 37
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnances de règlement — Réparation détention",
     question:
         "Quel droit spécifique a le bénéficiaire d’un non-lieu ayant subi une détention provisoire ?",
@@ -15786,7 +15786,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 38
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Appels",
     question:
         "Parmi les compétences suivantes, laquelle relève de la chambre de l’instruction ?",
@@ -15803,7 +15803,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 39
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Nullités",
     question:
         "Qui est compétent pour prononcer la nullité d’un acte d’instruction ?",
@@ -15820,7 +15820,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 40
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Révision",
     question:
         "Dans quel contexte la chambre de l’instruction exerce-t-elle surtout son pouvoir de révision ?",
@@ -15837,7 +15837,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 41
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Évocation",
     question: "Le droit d’évocation permet à la chambre de l’instruction :",
     options: [
@@ -15854,7 +15854,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 42
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Évocation (conditions)",
     question:
         "Parmi les situations suivantes, laquelle peut ouvrir la voie au droit d’évocation de la chambre de l’instruction ?",
@@ -15871,7 +15871,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 43
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Alternatives à l’évocation",
     question:
         "Si la chambre de l’instruction n’use pas de son droit d’évocation après une annulation ou une infirmation, que peut-elle décider ?",
@@ -15889,7 +15889,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 44
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Audience de contrôle",
     question:
         "Dans quel contexte une audience de contrôle de la procédure d’instruction peut-elle être organisée devant la chambre de l’instruction (art. 221-3 C. proc. pén.) ?",
@@ -15906,7 +15906,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 45
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Décisions audience de contrôle",
     question:
         "Parmi les décisions suivantes, laquelle peut être prise par la chambre de l’instruction à l’issue d’une audience de contrôle ?",
@@ -15923,7 +15923,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 46
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction et libertés individuelles",
     question:
         "Que révèle la place croissante des droits de la défense dans l’instruction préparatoire ?",
@@ -15941,7 +15941,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 47
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction et commissions rogatoires",
     question:
         "Pourquoi le juge d’instruction recourt-il aux commissions rogatoires ?",
@@ -15959,7 +15959,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 48
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction et OPJ",
     question:
         "Dans le cadre de l’exécution d’une commission rogatoire, l’OPJ peut-il interroger une personne déjà mise en examen dans cette information ?",
@@ -15976,7 +15976,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // 49
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction et rôle du procureur",
     question:
         "Quel rôle fondamental le procureur de la République joue-t-il dans l’ouverture et l’orientation de l’instruction préparatoire ?",
@@ -15992,7 +15992,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "Le parquet est maître de l’opportunité des poursuites et joue un rôle central dans la saisine et la poursuite de l’instruction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Qui mène principalement l’instruction préparatoire au premier degré ?",
@@ -16008,7 +16008,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Au second degré, qui exerce la fonction de juridiction d’instruction ?",
@@ -16024,7 +16024,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure",
     question:
         "Quel est l’un des trois caractères classiques de l’instruction préparatoire ?",
@@ -16040,7 +16040,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Écrit",
     question: "Quels éléments sont réunis dans le dossier d’instruction ?",
     options: [
@@ -16055,7 +16055,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret",
     question: "Le secret de l’instruction s’impose principalement :",
     options: [
@@ -16070,7 +16070,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret",
     question:
         "Qui peut, dans certains cas, communiquer des informations à la presse pour éviter la diffusion d’informations inexactes ?",
@@ -16086,7 +16086,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question: "En matière criminelle, l’ouverture d’une information est :",
     options: [
@@ -16101,7 +16101,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "En matière délictuelle, l’instruction préparatoire est en principe :",
@@ -16117,7 +16117,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Juge d’instruction",
     question:
         "Le juge d’instruction peut-il se saisir de lui-même (d’office) ?",
@@ -16133,7 +16133,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Ministère public",
     question:
         "Comment appelle-t-on l’acte par lequel le procureur saisit le juge d’instruction ?",
@@ -16149,7 +16149,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Victime",
     question:
         "Par quel acte une victime peut-elle saisir le juge d’instruction ?",
@@ -16165,7 +16165,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Pouvoirs du juge — Généralités",
     question: "Le juge d’instruction doit instruire :",
     options: [
@@ -16180,7 +16180,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations matérielles",
     question:
         "Lorsqu’il se transporte sur les lieux, le juge d’instruction est en principe assisté par :",
@@ -16196,7 +16196,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Notion",
     question: "À quoi sert l’expertise dans l’instruction préparatoire ?",
     options: [
@@ -16212,7 +16212,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoins — Généralités",
     question: "Qui le juge d’instruction peut-il faire citer comme témoin ?",
     options: [
@@ -16227,7 +16227,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoins — Serment",
     question: "La formule de serment du témoin est, en principe :",
     options: [
@@ -16243,7 +16243,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Notion",
     question: "Le témoin assisté se situe :",
     options: [
@@ -16258,7 +16258,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Condition",
     question: "Quelle condition est exigée pour mettre quelqu’un en examen ?",
     options: [
@@ -16274,7 +16274,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture — Rappel",
     question:
         "Que fait le juge d’instruction lorsqu’il estime que l’information est terminée ?",
@@ -16291,7 +16291,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Rôle",
     question: "La chambre de l’instruction statue par :",
     options: ["Jugements", "Arrêts", "Ordonnances", "Simples avis"],
@@ -16302,7 +16302,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ===================== MOYEN (21–40) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret / Publicité",
     question:
         "Dans quel cas certaines audiences se tenant normalement en chambre du conseil peuvent-elles devenir publiques ?",
@@ -16318,7 +16318,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret — Sanctions",
     question:
         "Les personnes qui concourent à la procédure d’instruction et ne respectent pas le secret encourent :",
@@ -16334,7 +16334,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Journalistes — Limites",
     question:
         "Que risque un journaliste qui publie des actes de procédure avant leur lecture publique à l’audience ?",
@@ -16350,7 +16350,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture — Délit",
     question:
         "Parmi les raisons suivantes, laquelle justifie souvent l’ouverture d’une information en matière délictuelle ?",
@@ -16366,7 +16366,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Faits nouveaux",
     question:
         "Lorsque le juge d’instruction découvre des faits nouveaux, que doit-il faire ?",
@@ -16382,7 +16382,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Pouvoirs du juge — Objectif",
     question:
         "Sur quels aspects le juge d’instruction doit-il porter son investigation ?",
@@ -16399,7 +16399,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Refus",
     question:
         "Si le juge d’instruction refuse une demande d’expertise présentée par une partie, il doit :",
@@ -16415,7 +16415,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoins — Anonymat",
     question:
         "Que se passe-t-il si l’identité d’un témoin n’est pas mentionnée au procès-verbal d’audition ?",
@@ -16431,7 +16431,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoins — Obligations",
     question:
         "Parmi les obligations suivantes, laquelle NE fait PAS partie des obligations normales du témoin ?",
@@ -16447,7 +16447,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Droits",
     question:
         "Quel droit renforce particulièrement la protection du témoin assisté ?",
@@ -16463,7 +16463,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Effets",
     question: "La mise en examen permet notamment à la personne :",
     options: [
@@ -16479,7 +16479,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Consignation",
     question:
         "En cas de constitution de partie civile initiale, la victime doit en principe :",
@@ -16495,7 +16495,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Avantages",
     question:
         "Quel avantage la partie civile a-t-elle par rapport à la simple victime non constituée ?",
@@ -16512,7 +16512,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture — Demande",
     question:
         "Qui peut demander au juge d’instruction de clore l’information sur le fondement de l’article 175-1 C. proc. pén. ?",
@@ -16528,7 +16528,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnance de renvoi — Effets",
     question:
         "Sur quelles mesures l’ordonnance de renvoi devant le tribunal correctionnel met-elle en principe fin ?",
@@ -16545,7 +16545,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-lieu — Effets civils",
     question:
         "Que peut faire le bénéficiaire d’un non-lieu envers une partie civile qui l’a mis en cause abusivement ?",
@@ -16561,7 +16561,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Nullités",
     question:
         "Lorsqu’elle annule un acte pour nullité, la chambre de l’instruction doit :",
@@ -16578,7 +16578,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Partie civile abusive",
     question:
         "Que peut décider la chambre de l’instruction à l’égard d’une partie civile jugée abusive ou dilatoire ?",
@@ -16594,7 +16594,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Audience de contrôle — Saisine",
     question:
         "Qui peut être à l’origine de la tenue d’une audience de contrôle de l’instruction (art. 221-3 C. proc. pén.) ?",
@@ -16612,7 +16612,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ===================== DIFFICILE (41–60) =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret — Exceptions et intérêts publics",
     question:
         "L’article 11-1 C. proc. pén. permet, sur autorisation, de communiquer certains éléments d’une procédure à des organismes habilités. Dans quel but principal ?",
@@ -16629,7 +16629,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-contradictoire — Atténuations",
     question:
         "Parmi les éléments suivants, lequel illustre le mieux l’atténuation du caractère non contradictoire de l’instruction ?",
@@ -16646,7 +16646,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine — Pôle de l’instruction",
     question:
         "Que doit faire le procureur d’un tribunal sans pôle de l’instruction lorsqu’il estime qu’une affaire relève d’un pôle ?",
@@ -16663,7 +16663,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conséquences de la saisine — In rem",
     question:
         "Quelle est la principale conséquence pratique du principe de saisine « in rem » du juge d’instruction ?",
@@ -16680,7 +16680,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Choix hors liste",
     question:
         "Dans quel cas le juge peut-il désigner un expert ne figurant sur aucune des listes officielles ?",
@@ -16697,7 +16697,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Expertise — Communication du rapport",
     question:
         "Dans quelles conditions les experts peuvent-ils communiquer directement leurs conclusions aux OPJ, parquet ou parties ?",
@@ -16713,7 +16713,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Obligation ou faculté",
     question:
         "Dans lequel des cas suivants le statut de témoin assisté est-il OBLIGATOIRE, à défaut de mise en examen ?",
@@ -16730,7 +16730,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Indices graves et concordants",
     question:
         "Que permet l’article 113-6 al. 2 C. proc. pén. concernant un témoin assisté contre lequel existent des indices graves et concordants ?",
@@ -16747,7 +16747,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interrogatoire de première comparution",
     question:
         "Quel est l’enjeu principal de l’interrogatoire de première comparution pour une personne qui n’était pas témoin assisté ?",
@@ -16764,7 +16764,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Conditions spéciales",
     question:
         "Sous quelle condition spécifique une personne morale à but lucratif peut-elle se constituer partie civile initialement ?",
@@ -16781,7 +16781,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Non-lieu et amende civile",
     question:
         "Quand le juge d’instruction peut-il condamner une partie civile à une amende civile pouvant aller jusqu’à 15 000 € (art. 177-2 C. proc. pén.) ?",
@@ -16798,7 +16798,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-lieu — Charges nouvelles",
     question:
         "Qui est compétent pour décider de rouvrir une information sur charges nouvelles après un non-lieu ?",
@@ -16814,7 +16814,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Pouvoir de révision",
     question:
         "Lorsqu’elle exerce son pouvoir de révision (art. 205 C. proc. pén.), la chambre de l’instruction peut notamment :",
@@ -16831,7 +16831,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Évocation",
     question:
         "La chambre de l’instruction peut procéder à une évocation partielle du dossier. Cela signifie :",
@@ -16848,7 +16848,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Audience de contrôle — Renouvellement",
     question:
         "Après une première audience de contrôle, dans quel délai une nouvelle saisine est-elle possible si la détention provisoire se poursuit ?",
@@ -16864,7 +16864,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Libertés et nullités",
     question:
         "Pourquoi la procédure d’instruction est-elle particulièrement formaliste, avec un risque important de nullités en cas de manquement ?",
@@ -16881,7 +16881,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Rôle global des parties",
     question:
         "Quel est l’apport majeur de l’évolution de la législation sur le rôle des parties dans l’instruction préparatoire ?",
@@ -16898,7 +16898,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
   // 50
-  QuizQuestion(
+  const QuizQuestion(
     category: "Synthèse — Instruction préparatoire",
     question:
         "Quelle affirmation décrit le mieux l’instruction préparatoire dans le système pénal français ?",
@@ -16914,7 +16914,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "L’instruction est une phase juridictionnelle à part entière, avec un juge du siège, des garanties procédurales et un contrôle de la chambre de l’instruction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Sanctions partie civile",
     question:
         "Quelle sanction peut prononcer la chambre de l’instruction contre une partie civile abusive ou dilatoire ?",
@@ -16929,7 +16929,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
         "La chambre peut condamner la partie civile à une amende civile en cas de constitution abusive ou dilatoire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Instruction préparatoire",
     question:
         "Quel type de procédure inspire principalement l’instruction préparatoire ?",
@@ -16945,7 +16945,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CARACTÈRES DE LA PROCÉDURE : ÉCRIT ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Que prévoit l’article 81 du Code de procédure pénale concernant la forme de l’instruction ?",
@@ -16961,7 +16961,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Procédure écrite",
     question:
         "Pourquoi des copies ou photocopies du dossier d’instruction sont-elles autorisées ?",
@@ -16978,7 +16978,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CARACTÈRE SECRET ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Quelle est la règle de principe posée par l’article 11 du Code de procédure pénale ?",
@@ -16993,7 +16993,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Dans quel but le procureur de la République peut-il, sur le fondement de l’article 11, communiquer certains éléments de la procédure ?",
@@ -17009,7 +17009,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Secret de l’instruction",
     question:
         "Les avocats des parties ont-ils accès au dossier d’instruction ?",
@@ -17025,7 +17025,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CARACTÈRE NON CONTRADICTOIRE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caractères — Non-contradictoire",
     question:
         "Pourquoi dit-on que le caractère non contradictoire de l’instruction est aujourd’hui atténué ?",
@@ -17042,7 +17042,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== OUVERTURE DE L’INFORMATION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question: "En matière criminelle, l’ouverture d’une information est :",
     options: ["Facultative", "Obligatoire", "Interdite sauf avis du J.L.D."],
@@ -17052,7 +17052,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question: "En matière délictuelle, l’information judiciaire est :",
     options: [
@@ -17066,7 +17066,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Qui peut provoquer l’ouverture d’une information par plainte avec constitution de partie civile ?",
@@ -17081,7 +17081,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ouverture de l’information",
     question:
         "Le juge d’instruction peut-il se saisir d’office d’une affaire pénale ?",
@@ -17097,7 +17097,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== SAISINE & LIMITES DU JUGE D’INSTRUCTION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine du juge d’instruction",
     question:
         "Que signifie l’expression « le juge d’instruction est saisi in rem » ?",
@@ -17112,7 +17112,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisine du juge d’instruction",
     question:
         "Que doit faire le juge d’instruction s’il découvre des faits nouveaux au cours de l’information ?",
@@ -17129,7 +17129,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== MISE EN EXAMEN ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Conditions",
     question:
         "Quelle condition de fond est indispensable pour mettre une personne en examen (à peine de nullité) ?",
@@ -17145,7 +17145,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en examen — Choix du statut",
     question:
         "Dans quel cas la mise en examen devient-elle obligatoire pour le juge d’instruction ?",
@@ -17162,7 +17162,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== TÉMOIN ASSISTÉ ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Notion",
     question: "Le statut de témoin assisté se situe :",
     options: [
@@ -17176,7 +17176,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Droits",
     question:
         "Le témoin assisté peut-il être placé sous contrôle judiciaire ou en détention provisoire ?",
@@ -17191,7 +17191,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Droits",
     question:
         "Quel droit particulier possède le témoin assisté concernant sa situation procédurale ?",
@@ -17206,7 +17206,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoin assisté — Obligations",
     question:
         "Le témoin assisté est-il tenu de comparaître lorsqu’il est convoqué par le juge d’instruction ?",
@@ -17222,7 +17222,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== TÉMOINS ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Le juge d’instruction peut-il entendre comme témoin une personne contre laquelle existent des indices graves et concordants de participation à l’infraction ?",
@@ -17238,7 +17238,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question:
         "Quel est le contenu du serment prêté par un témoin devant le juge d’instruction ?",
@@ -17254,7 +17254,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== PARTIE CIVILE ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Constitution",
     question:
         "Quel est l’effet principal de la constitution de partie civile devant le juge d’instruction ?",
@@ -17270,7 +17270,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Partie civile — Consignation",
     question:
         "Dans quel cas la partie civile doit-elle consigner une somme fixée par le juge d’instruction ?",
@@ -17287,7 +17287,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CLÔTURE DE L’INSTRUCTION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture de l’instruction",
     question:
         "Que doit faire le juge d’instruction lorsque l’information lui paraît terminée ?",
@@ -17303,7 +17303,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture de l’instruction",
     question:
         "Que permet l’article 175-1 du Code de procédure pénale aux personnes mises en examen, témoins assistés et parties civiles ?",
@@ -17319,7 +17319,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Clôture de l’instruction — Ordonnances",
     question:
         "Quelle est la conséquence commune aux ordonnances de renvoi et de mise en accusation lorsqu’elles deviennent définitives ?",
@@ -17336,7 +17336,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== NON-LIEU ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnance de non-lieu",
     question:
         "Quel est l’effet principal d’une ordonnance de non-lieu sur l’action publique ?",
@@ -17352,7 +17352,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ordonnance de non-lieu",
     question:
         "Que doit faire l’État à l’égard d’une personne ayant bénéficié d’un non-lieu après détention provisoire ?",
@@ -17369,7 +17369,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== CHAMBRE DE L’INSTRUCTION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Rôle",
     question: "Quel type de juridiction est la chambre de l’instruction ?",
     options: [
@@ -17383,7 +17383,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chambre de l’instruction — Compétences",
     question: "La chambre de l’instruction est seule compétente pour :",
     options: [
@@ -17398,7 +17398,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
   ),
 
   // ========== JUGE DES LIBERTÉS ET DE LA DÉTENTION ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juge des libertés et de la détention — Rôle",
     question:
         "Dans le cadre de l’instruction préparatoire, quelle est l’une des principales compétences du J.L.D. ?",
@@ -17414,7 +17414,7 @@ final List<QuizQuestion> questionsInstructionPreparatoire = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Juge des libertés et de la détention — Garde à vue",
     question:
         "Dans quels cas le J.L.D. peut-il autoriser une prolongation exceptionnelle de garde à vue au-delà de 48 heures ?",
@@ -17785,7 +17785,7 @@ class _QuizInstructionPageState extends State<QuizInstructionPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -17988,7 +17988,7 @@ class _QuizInstructionPageState extends State<QuizInstructionPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -18171,7 +18171,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -18704,10 +18703,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -19078,7 +19078,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -19119,9 +19119,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

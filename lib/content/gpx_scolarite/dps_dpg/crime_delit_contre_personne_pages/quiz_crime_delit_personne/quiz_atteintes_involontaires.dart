@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 
 final List<QuizQuestion> questionAtteinteInvolontaire = [
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Fondement',
     question:
         'La participation à un groupement violent est définie et réprimée par :',
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // ATTEINTES INVOLONTAIRES — CONTRAVENTIONS — ITT ≤ 3 MOIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Fondement',
     question:
         'Les atteintes involontaires avec ITT ≤ 3 mois, hors délits, sont prévues par :',
@@ -130,7 +130,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que les atteintes involontaires contraventionnelles relèvent des articles R. 625-2, R. 625-3 et R. 622-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Faute',
     question: 'En matière contraventionnelle, la faute exigée est :',
     options: [
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Les contraventions reposent sur une faute simple d’imprudence ou de négligence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — ITT',
     question: 'Pour l’article R. 625-2 du CP, la victime doit avoir subi :',
     options: ['Une ITT ≤ 3 mois', 'Une ITT > 3 mois', 'Aucune atteinte'],
@@ -152,7 +152,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’article R. 625-2 CP vise une ITT inférieure ou égale à trois mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Violation délibérée',
     question: 'L’article R. 625-3 CP réprime :',
     options: [
@@ -166,7 +166,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'R. 625-3 CP vise l’atteinte sans ITT en cas de violation manifestement délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — Contravention — Tentative',
     question: 'La tentative d’atteinte involontaire contraventionnelle est :',
     options: [
@@ -183,7 +183,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // ATTEINTES INVOLONTAIRES — ITT > 3 MOIS — art. 222-19 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Fondement',
     question:
         'Les atteintes involontaires avec ITT > 3 mois sont prévues par :',
@@ -197,7 +197,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’article 222-19 CP définit les blessures involontaires avec ITT supérieure à trois mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Élément matériel',
     question: 'L’élément matériel repose sur :',
     options: [
@@ -210,7 +210,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Il s’agit d’une infraction non intentionnelle fondée sur une faute.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Causalité indirecte',
     question: 'En cas de causalité indirecte, la responsabilité exige :',
     options: [
@@ -223,7 +223,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’article 121-3 CP impose une faute caractérisée ou délibérée en causalité indirecte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteintes involontaires — ITT > 3 mois — Complicité',
     question: 'La complicité en matière d’atteintes involontaires est :',
     options: [
@@ -240,7 +240,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // VIOLATION MANIFESTEMENT DÉLIBÉRÉE — art. 222-20 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Fondement',
     question:
         'La violation manifestement délibérée d’une obligation de sécurité est prévue par :',
@@ -254,7 +254,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’article 222-20 CP vise les blessures involontaires par violation délibérée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Élément moral',
     question: 'La violation délibérée suppose :',
     options: [
@@ -267,7 +267,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’auteur doit connaître l’obligation et choisir délibérément de ne pas la respecter.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Tentative',
     question: 'La tentative de violation délibérée est :',
     options: [
@@ -284,7 +284,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // VIOLENCES VOLONTAIRES — art. 222-7 et s.
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Définition',
     question: 'Les violences volontaires sont :',
     options: [
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Les violences supposent un acte volontaire affectant l’intégrité d’autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Acte matériel',
     question: 'L’acte matériel des violences suppose :',
     options: ['Un acte positif', 'Une simple abstention', 'Un accident'],
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Les violences nécessitent une action positive de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Violence psychologique',
     question: 'Les violences psychologiques sont :',
     options: [
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’article 222-14-3 CP reconnaît les violences psychologiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Tentative',
     question: 'La tentative de violences volontaires est :',
     options: [
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // HOMICIDE INVOLONTAIRE — art. 221-6 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Fondement',
     question: 'L’homicide involontaire est prévu par :',
     options: [
@@ -348,7 +348,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’article 221-6 CP définit et réprime l’homicide involontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Élément matériel',
     question: 'L’homicide involontaire suppose :',
     options: ['La mort d’autrui', 'Une ITT', 'Une mutilation'],
@@ -356,7 +356,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le résultat exigé est le décès de la victime.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: [
@@ -372,7 +372,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — CONTRAVENTIONS ITT ≤ 3 MOIS (R. 622-1 / R. 625-2 / R. 625-3)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Distinction',
     question: 'L’article R. 622-1 du CP réprime principalement :',
     options: [
@@ -385,7 +385,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours rattache R. 622-1 aux atteintes involontaires sans ITT (contravention de 2e classe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Classe',
     question:
         'L’infraction prévue à l’article R. 622-1 du CP est une contravention de :',
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le cours indique : R. 622-1 = contravention de 2e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — ITT consécutive',
     question: 'Selon le cours, l’ITT ≤ 3 mois (R. 625-2) s’apprécie :',
     options: [
@@ -407,7 +407,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que l’ITT doit être consécutive et non une addition de périodes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Faute listée',
     question:
         'Pour retenir R. 625-2 (ou R. 625-3), les juges doivent caractériser :',
@@ -421,7 +421,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours insiste : la liste des fautes (maladresse, imprudence, inattention, négligence, manquement) est limitative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Manquement',
     question:
         'Le “manquement à une obligation de sécurité ou de prudence” suppose :',
@@ -435,7 +435,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que l’obligation doit être imposée par la loi ou le règlement (actes administratifs généraux et impersonnels).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Élément moral',
     question:
         'En matière contraventionnelle d’atteintes involontaires, l’élément moral est :',
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise : l’élément moral n’est pas requis en matière contraventionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Aggravation',
     question: 'R. 625-3 constitue :',
     options: [
@@ -463,7 +463,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique que R. 625-3 (5e classe) aggrave R. 622-1 (2e classe) en cas de violation manifestement délibérée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Responsabilité personnes morales',
     question:
         'La responsabilité pénale des personnes morales pour ces contraventions est prévue par :',
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours mentionne expressément R. 625-5 et R. 622-1 al. 3 pour les personnes morales.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Complicité',
     question:
         'La complicité d’atteintes involontaires contraventionnelles est :',
@@ -495,7 +495,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — ITT > 3 MOIS (222-19) + AGGRAVATIONS (222-19-1 / 222-19-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Seuil',
     question: 'Le délit de l’article 222-19 al.1 suppose une ITT :',
     options: [
@@ -508,7 +508,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours vise explicitement l’ITT “pendant plus de trois mois” pour 222-19 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Circonstance aggravante (222-19 al.2)',
     question: 'L’article 222-19 al.2 aggrave lorsque l’infraction résulte :',
     options: [
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-19 al.2 = aggravation par violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Obligation particulière',
     question:
         'La circonstance aggravante de violation délibérée ne peut pas résulter :',
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise : la violation délibérée d’une circulaire ou d’un règlement intérieur ne constitue pas l’aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Aggravation conducteur (structure)',
     question: 'Les aggravations “conducteur VTM” sont structurées par :',
     options: [
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-19-1 CP prévoit trois degrés d’aggravation pour le conducteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Aggravation conducteur (2e degré)',
     question:
         'Au 2e degré (222-19-1), peut notamment constituer une circonstance :',
@@ -563,7 +563,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours énumère, au 2e degré, des délits routiers dont le délit de fuite.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Aggravation conducteur (3e degré)',
     question: 'Le 3e degré (222-19-1) correspond :',
     options: [
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 3e degré = cumul de deux (ou +) circonstances listées au 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Chien (structure)',
     question:
         'Les aggravations liées à une agression commise par un chien relèvent de :',
@@ -590,7 +590,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-19-2 CP = aggravations “blessures involontaires” liées à l’agression par un chien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Délit de fuite (hors conducteur)',
     question:
         'Selon le cours, l’aggravation “délit de fuite” (hors 222-19-1) est rattachée à :',
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours mentionne 434-10 CP pour le délit de fuite, hors cas prévus par 222-19-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Causalité directe',
     question: 'La causalité est dite “directe” lorsque l’auteur :',
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours reprend l’idée de causalité immédiate (frapper/heurté ou contrôler le mouvement d’un objet causal).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Causalité indirecte',
     question: 'Sont auteurs indirects (121-3 al.4) ceux qui :',
     options: [
@@ -636,7 +636,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLATION MANIFESTEMENT DÉLIBÉRÉE (222-20) + COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Source de l’obligation',
     question:
         'L’obligation particulière de prudence ou de sécurité doit être prévue par :',
@@ -650,7 +650,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours exige une obligation “particulière” prévue par un texte normatif (loi/décret/arrêté).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Exclusion (jurisprudence)',
     question:
         'Selon le cours, ne constitue pas une obligation particulière au sens de 222-20 :',
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours cite l’exemple jurisprudentiel : l’arrêté préfectoral “immeuble insalubre” ne suffit pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Élément moral (précision)',
     question: 'La violation manifestement délibérée implique que l’auteur :',
     options: [
@@ -679,7 +679,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : le dommage n’est pas voulu, mais le risque est assumé, avec connaissance de l’obligation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Complicité',
     question:
         'Contrairement aux infractions non intentionnelles “pures”, la complicité est admise pour 222-20 car :',
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : la complicité est possible car 222-20 repose sur une violation délibérée (faute délibérée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Exemple complicité (cours)',
     question:
         'Selon le cours, un exemple de complicité par instigation pourrait être :',
@@ -707,7 +707,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours illustre la complicité par instigation : le passager qui ordonne un comportement risqué.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Chien (222-20-2)',
     question: 'Les circonstances aggravantes “chien” pour 222-20 relèvent de :',
     options: [
@@ -724,7 +724,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES (R.624-1 / R.625-1 / 222-11 / 222-13 / 222-12 / 222-9 / 222-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (aucune ITT)',
     question:
         'Les violences volontaires n’ayant entraîné aucune ITT relèvent de :',
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : R. 624-1 CP vise les violences contraventionnelles sans ITT (4e classe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (ITT ≤ 8 jours)',
     question: 'Les violences volontaires avec ITT ≤ 8 jours relèvent de :',
     options: [
@@ -751,7 +751,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : R. 625-1 CP = violences contraventionnelles avec ITT ≤ 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Délit (ITT > 8 jours)',
     question:
         'Les violences volontaires délictuelles de base (ITT > 8 jours) sont prévues par :',
@@ -765,7 +765,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-11 CP réprime les violences délictuelles (ITT > 8 jours).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Violences psychologiques',
     question: 'Les violences peuvent être constituées :',
     options: [
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours cite la jurisprudence : acte de nature à impressionner vivement et causer un choc émotif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Preuve du résultat',
     question: 'La réalité du dommage des violences est notamment établie par :',
     options: [
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique que l’atteinte doit être établie, notamment par certificat médical.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-13 (logique)',
     question: 'L’article 222-13 du CP concerne principalement :',
     options: [
@@ -806,7 +806,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-13 = violences “faible ITT” aggravées (plusieurs degrés).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Réunion vs “avec mineur”',
     question:
         'Selon la circulaire citée par le cours, si un majeur agit avec l’aide d’un mineur, il est préférable de retenir pour le majeur :',
@@ -821,7 +821,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours rapporte la recommandation de la circulaire : privilégier cette circonstance pour le majeur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Violences volontaires — Complicité contraventionnelle (exception)',
     question:
@@ -836,7 +836,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise : aide/assistance punie des mêmes peines en contravention de violences (R. 624-1 / R. 625-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Tentative',
     question: 'Selon le cours, la tentative des violences délictuelles est :',
     options: [
@@ -853,7 +853,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE (221-6 / 221-6-1 / 221-6-2 / 434-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Définition (faute)',
     question: 'L’homicide involontaire suppose une mort causée notamment par :',
     options: [
@@ -867,7 +867,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours reprend la liste des cinq comportements fautifs renvoyant à 121-3 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité (principe)',
     question: 'Pour 221-6, la causalité exigée :',
     options: [
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : pas besoin d’un lien direct et immédiat, il suffit que le lien soit certain.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Violation délibérée (aggravation)',
     question:
         'L’aggravation de 221-6 al.2 est retenue lorsque la mort résulte :',
@@ -895,7 +895,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-6 al.2 aggrave en cas de violation manifestement délibérée d’une obligation particulière.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Conducteur (structure)',
     question: 'Les trois degrés d’aggravation “conducteur VTM” relèvent de :',
     options: [
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-6-1 CP structure l’aggravation en trois degrés pour le conducteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Conducteur (3e degré)',
     question: 'Le 3e degré (221-6-1) est constitué lorsque :',
     options: [
@@ -921,7 +921,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 3e degré = cumul de deux (ou plus) circonstances mentionnées au 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Chien (structure)',
     question:
         'Les aggravations liées à une agression commise par un chien relèvent de :',
@@ -935,7 +935,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-6-2 CP = aggravations d’homicide involontaire en cas d’agression par un chien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Délit de fuite (hors conducteur)',
     question:
         'Selon le cours, l’aggravation “délit de fuite” (hors 221-6-1) est rattachée à :',
@@ -949,7 +949,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours cite 434-10 CP lorsque l’homicide involontaire est suivi d’un délit de fuite (hors cas 221-6-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Complicité',
     question: 'La complicité en matière d’homicide involontaire est :',
     options: [
@@ -962,7 +962,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise : la jurisprudence exclut la complicité en matière d’infractions non intentionnelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Personnes morales',
     question:
         'La responsabilité pénale des personnes morales pour l’homicide involontaire est prévue par :',
@@ -976,7 +976,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-7 CP prévoit la responsabilité pénale des personnes morales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — R. 625-2 (objet)',
     question: 'L’article R. 625-2 du CP vise :',
     options: [
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : R. 625-2 réprime les atteintes involontaires avec ITT ≤ 3 mois (contravention de 5e classe).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — R. 625-2 (classe)',
     question: 'La qualification de l’article R. 625-2 du CP est :',
     options: [
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le cours classe R. 625-2 en contravention de 5e classe.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Source de l’obligation',
     question:
         'Pour un manquement à une obligation de prudence ou de sécurité, le “règlement” s’entend :',
@@ -1015,7 +1015,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que le “règlement” vise les actes des autorités administratives à caractère général et impersonnel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Contraventions ITT ≤ 3 mois — Exigence de précision (Cass. crim.)',
     question:
@@ -1030,7 +1030,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours rappelle l’exigence : identifier précisément l’obligation (Cass. crim., 18 juin 2002).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Lien de causalité',
     question:
         'Pour retenir une atteinte involontaire contraventionnelle, il faut :',
@@ -1044,7 +1044,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours insiste sur la nécessité d’un lien de causalité entre la faute et le dommage, même en matière contraventionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Causalité immédiate',
     question:
         'Selon la circulaire citée, la causalité directe (immédiate) correspond notamment à :',
@@ -1059,7 +1059,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours reprend la définition fonctionnelle : action directe sur la victime ou sur l’objet causal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Dommage psychique',
     question: 'Dans les atteintes involontaires, le dommage peut être :',
     options: [
@@ -1072,7 +1072,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise qu’un choc émotionnel peut constituer le résultat d’une atteinte involontaire à l’intégrité de la personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Contraventions ITT ≤ 3 mois — Tentative',
     question:
         'La tentative d’atteintes involontaires contraventionnelles est :',
@@ -1090,7 +1090,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — ITT > 3 MOIS (222-19) : FAUTE / CAUSALITÉ / AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Faute simple (liste)',
     question: 'La faute simple de 222-19 renvoie à cinq comportements, dont :',
     options: [
@@ -1103,7 +1103,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours reprend la liste limitative issue de 121-3 et visée par 222-19.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Faute caractérisée (condition)',
     question:
         'En causalité indirecte, pour engager une personne physique, il faut notamment :',
@@ -1117,7 +1117,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours rappelle : en causalité indirecte (personnes physiques), la responsabilité requiert une faute délibérée ou caractérisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Faute caractérisée (définition concours)',
     question: 'La faute caractérisée est :',
     options: [
@@ -1131,7 +1131,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours définit la faute caractérisée comme une faute lourde, grossière, exposant à un danger d’une particulière gravité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Pluralité de fautes',
     question:
         'Quand plusieurs fautes concourent au dommage, le lien de causalité :',
@@ -1145,7 +1145,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : “la faute a concouru au dommage” et la pluralité d’auteurs n’exclut pas la causalité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Dommage dans son dernier état',
     question:
         'Selon le cours, la chambre criminelle prend en compte le dommage :',
@@ -1159,7 +1159,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique que le dommage peut s’aggraver et est apprécié dans son dernier état.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT > 3 mois — Personnes morales (principe)',
     question:
         'Selon le cours, les personnes morales sont pénalement responsables des infractions non intentionnelles :',
@@ -1178,7 +1178,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — BLESSURES INVOLONTAIRES CONDUCTEUR (ITT ≤ 3 MOIS : 222-20-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — Base légale',
     question:
         'Les atteintes involontaires (ITT ≤ 3 mois) commises par un conducteur VTM relèvent de :',
@@ -1192,7 +1192,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-20-1 CP vise les blessures involontaires par conducteur avec ITT ≤ 3 mois.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — Visée préventive',
     question:
         'L’incrimination liée au “groupement violent” a une visée préventive ; pour 222-20-1, la logique principale est plutôt :',
@@ -1206,7 +1206,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours distingue : 222-20-1 sanctionne le dommage (ITT) causé par une faute du conducteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 1er degré d’aggravation (liste)',
     question:
         'Selon le cours, une circonstance du 1er degré (222-20-1) est notamment :',
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours énumère parmi les circonstances : alcool (ou refus de vérification).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 1er degré (stupéfiants)',
     question: 'Au 1er degré, est aussi visée la situation où :',
     options: [
@@ -1234,7 +1234,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours vise l’usage de stupéfiants ou le refus des vérifications prévues par le code de la route.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 1er degré (permis)',
     question: 'Constitue une circonstance (222-20-1) :',
     options: [
@@ -1247,7 +1247,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours mentionne explicitement l’absence de permis ou les situations d’annulation/invalidation/suspension/retrait.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — 2e degré',
     question: 'Le 2e degré d’aggravation correspond :',
     options: [
@@ -1260,7 +1260,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 2e degré = deux (ou plus) des circonstances prévues au 1° à 7°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur ITT ≤ 3 mois — Complicité',
     question: 'Pour 222-20-1 (conducteur ITT ≤ 3 mois), la complicité est :',
     options: ['Non', 'Oui', 'Uniquement en contravention'],
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES : ÉLÉMENTS CONSTITUTIFS / AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément matériel',
     question: 'Les violences volontaires supposent :',
     options: [
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : les violences supposent une action positive ; l’abstention relève d’autres qualifications.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contact indirect',
     question: 'Le contact avec la victime peut être :',
     options: [
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que la violence peut être réalisée par un moyen, même sans contact direct.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Élément moral',
     question: 'L’élément moral des violences volontaires est :',
     options: [
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : violences = acte intentionnel, avec conscience du préjudice possible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Mobile',
     question:
         'Selon le cours (jurisprudence), les violences sont constituées :',
@@ -1328,7 +1328,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours rappelle l’idée jurisprudentielle : le mobile n’empêche pas la constitution de l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-12 vs 222-13',
     question: 'Dans le cours, 222-12 concerne principalement :',
     options: [
@@ -1341,7 +1341,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-12 organise les aggravations lorsque l’ITT dépasse 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-7 (qualification)',
     question:
         'Les violences ayant entraîné la mort sans intention de la donner relèvent de :',
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique : 222-7 CP réprime les violences ayant entraîné la mort sans intention de la donner.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-9 (qualification)',
     question:
         'Les violences ayant entraîné une mutilation ou une infirmité permanente relèvent de :',
@@ -1373,7 +1373,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE : FAUTE / CAUSALITÉ / AGGRAVATIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Base légale',
     question: 'L’homicide involontaire est prévu et réprimé par :',
     options: [
@@ -1386,7 +1386,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-6 CP définit et réprime l’homicide involontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Faute simple (appréciation)',
     question: 'Les fautes d’imprudence simples sont appréciées par rapport :',
     options: [
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : référence à “l’homme normalement prudent” et, le cas échéant, au professionnel moyen/diligent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Causalité indirecte (définition)',
     question: 'En causalité indirecte, l’auteur est celui qui :',
     options: [
@@ -1414,7 +1414,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours reprend la définition légale de l’auteur indirect (121-3 al.4).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Homicide involontaire — Causalité directe (paramètre déterminant)',
     question: 'Selon le cours, la causalité directe peut inclure :',
@@ -1429,7 +1429,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique que la chambre criminelle retient une conception large : paramètre déterminant du dommage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Violation délibérée (preuve)',
     question: 'Pour retenir 221-6 al.2, il faut notamment établir :',
     options: [
@@ -1443,7 +1443,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : obligation prévue par un texte, précisément déterminée, et violation consciente créant un risque mortel réalisé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: [
@@ -1456,7 +1456,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : la tentative n’est pas envisageable car le résultat dommageable n’est pas voulu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Complicité',
     question:
         'Selon le cours, la complicité en matière d’homicide involontaire est :',
@@ -1470,7 +1470,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique : “COMPLICITÉ : NON” pour l’homicide involontaire (infraction non intentionnelle).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Aggravation (conducteur)',
     question:
         'L’article 221-6-1 prévoit une aggravation lorsque l’homicide involontaire est commis :',
@@ -1484,7 +1484,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-6-1 organise les aggravations spécifiques liées au conducteur VTM.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-1 (2e degré)',
     question:
         'Au 2e degré de 221-6-1, l’homicide involontaire est aggravé notamment si :',
@@ -1499,7 +1499,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours liste les délits routiers déclenchant le 2e degré d’aggravation (221-6-1).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-1 (3e degré)',
     question: 'Le 3e degré d’aggravation (221-6-1) correspond :',
     options: [
@@ -1512,7 +1512,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 3e degré = deux ou plus des circonstances mentionnées au 2e degré.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-2 (chien)',
     question:
         'L’article 221-6-2 vise l’aggravation lorsque l’homicide involontaire résulte :',
@@ -1526,7 +1526,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 221-6-2 prévoit des degrés d’aggravation liés à l’agression par un chien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — 221-6-2 (2e degré)',
     question: 'Au 2e degré de 221-6-2, l’aggravation peut être retenue si :',
     options: [
@@ -1540,7 +1540,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours cite parmi les situations aggravantes : ivresse manifeste ou emprise de stupéfiants du propriétaire/détenteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Délit de fuite (434-10)',
     question:
         'Le cours indique une aggravation spécifique lorsque l’homicide involontaire est suivi :',
@@ -1558,7 +1558,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // VIOLATION MANIFESTEMENT DÉLIBÉRÉE — 222-20 (ITT ≤ 3 MOIS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Base légale',
     question:
         'Les atteintes involontaires par violation manifestement délibérée (ITT ≤ 3 mois) relèvent de :',
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : l’infraction délictuelle de violation manifestement délibérée (ITT ≤ 3 mois) est prévue par 222-20.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Obligation particulière',
     question:
         'L’obligation particulière de prudence/sécurité doit être prévue par :',
@@ -1586,7 +1586,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : obligation particulière = prévue par un texte (loi/décret/arrêté) ; le “règlement” = actes administratifs généraux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Connaissance',
     question: 'Pour retenir la violation délibérée, il faut que la personne :',
     options: [
@@ -1600,7 +1600,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : la personne doit avoir connaissance de l’obligation, notamment via son rôle/formation/responsabilités.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Volonté',
     question: 'La violation manifestement délibérée implique :',
     options: [
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : le risque est assumé, le dommage n’est pas recherché, mais l’obligation est sciemment transgressée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Complicité',
     question: 'Pour 222-20, la complicité est :',
     options: [
@@ -1627,7 +1627,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que malgré la nature non intentionnelle, la faute délibérée n’exclut pas la complicité (121-6/121-7).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Exemple concours',
     question:
         'Le cours donne comme exemple possible de complicité par instigation :',
@@ -1641,7 +1641,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours illustre : une instigation peut constituer complicité car il s’agit d’une faute délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée (ITT ≤ 3 mois) — Chien (222-20-2)',
     question:
         'L’article 222-20-2 prévoit des degrés d’aggravation lorsque l’atteinte résulte :',
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // VIOLENCES VOLONTAIRES — CONTRAVENTIONNELLES / DÉLICTUELLES (R. 624-1, R. 625-1, 222-11, 222-13)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (aucune ITT)',
     question: 'Les violences volontaires sans ITT relèvent notamment de :',
     options: [
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : R. 624-1 définit/réprime les violences contraventionnelles sans ITT.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Contravention (ITT ≤ 8 jours)',
     question:
         'Les violences volontaires avec ITT ≤ 8 jours relèvent notamment de :',
@@ -1686,7 +1686,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : R. 625-1 vise les violences contraventionnelles avec ITT ≤ 8 jours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Délit (base)',
     question: 'Les violences délictuelles sont définies et réprimées par :',
     options: [
@@ -1699,7 +1699,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-11 CP vise les violences délictuelles (ITT > 8 jours ou hypothèses prévues).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Aggravation (ITT ≤ 8 jours)',
     question:
         'Les violences avec ITT ≤ 8 jours ou sans ITT sont aggravées par :',
@@ -1713,7 +1713,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-13 prévoit trois degrés d’aggravation pour ITT ≤ 8 jours ou aucune ITT.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — 222-13 (degrés)',
     question: 'Selon le cours, 222-13 prévoit :',
     options: ['Trois degrés d’aggravation', 'Un seul degré', 'Cinq degrés'],
@@ -1726,7 +1726,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // PARTICIPATION À UN GROUPEMENT VIOLENT — 222-14-2 (niveau concours)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Base légale',
     question:
         'La participation à un groupement violent est définie et réprimée par :',
@@ -1740,7 +1740,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : 222-14-2 CP définit et réprime la participation à un groupement violent.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Condition (préparation)',
     question:
         'L’infraction vise la participation à un groupement en vue de la préparation :',
@@ -1754,7 +1754,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours insiste : préparation “caractérisée” par des faits matériels (barres de fer, cagoules, messages, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Résultat nécessaire ?',
     question: 'Pour 222-14-2, la réalisation des violences/dégradations :',
     options: [
@@ -1767,7 +1767,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : l’objectif est de démanteler avant commission, donc la réalisation n’est pas exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Participation brève',
     question:
         'Le cours précise que la participation peut être caractérisée même si elle est :',
@@ -1781,7 +1781,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours : la simple présence suffit si la personne participe au groupement (intégration), même brièvement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Élément moral',
     question:
         'L’élément moral de la participation à un groupement violent suppose que l’auteur :',
@@ -1796,7 +1796,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours précise que l’auteur doit participer sciemment et avoir connaissance des faits matériels préparatoires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Connaissance indirecte',
     question: 'La connaissance des faits de préparation peut résulter :',
     options: [
@@ -1809,7 +1809,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La jurisprudence admet que l’auteur ait connaissance de faits matériels réalisés par d’autres.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Qualification',
     question: 'La participation à un groupement violent est classée comme :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -1817,7 +1817,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le cours qualifie l’infraction de “simple délit”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Tentative',
     question: 'La tentative de participation à un groupement violent est :',
     options: [
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La tentative n’est pas punissable faute de disposition expresse en matière correctionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Complicité',
     question:
         'La complicité en matière de participation à un groupement violent est :',
@@ -1844,7 +1844,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // RÉCAP NIVEAU CONCOURS — DISTINCTIONS ESSENTIELLES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Faute simple',
     question: 'La faute simple se distingue principalement par :',
     options: [
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La faute simple repose sur une imprudence, maladresse, inattention ou négligence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Faute caractérisée',
     question: 'La faute caractérisée suppose notamment :',
     options: [
@@ -1870,7 +1870,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours définit la faute caractérisée comme une imprudence lourde et grossière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Causalité directe',
     question:
         'La causalité directe est retenue lorsque le comportement de l’auteur :',
@@ -1884,7 +1884,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La chambre criminelle adopte une conception large de la causalité directe.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Causalité indirecte',
     question: 'En causalité indirecte, l’auteur est celui qui :',
     options: [
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Définition issue de l’article 121-3 al.4 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Infractions non intentionnelles',
     question: 'Les infractions non intentionnelles se caractérisent par :',
     options: [
@@ -1909,7 +1909,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le résultat n’est pas recherché par l’auteur, ce qui exclut la tentative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Tentative (principe)',
     question:
         'En matière d’infractions non intentionnelles, la tentative est :',
@@ -1923,7 +1923,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le résultat n’étant pas voulu, la tentative n’est pas retenue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Complicité (principe)',
     question: 'La complicité est en principe :',
     options: [
@@ -1936,7 +1936,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Principe jurisprudentiel, avec exception notable en cas de faute délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Exception complicité',
     question:
         'Une exception à l’exclusion de la complicité existe notamment lorsque :',
@@ -1950,7 +1950,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours souligne l’exception en matière de violation manifestement délibérée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Personnes morales',
     question:
         'En matière d’infractions non intentionnelles, les personnes morales :',
@@ -1964,7 +1964,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours rappelle que les personnes morales restent pénalement responsables même en causalité indirecte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse concours — Logique générale',
     question: 'La logique générale des atteintes involontaires est de :',
     options: [
@@ -1980,7 +1980,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — CAS PRATIQUES & PIÈGES FRÉQUENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — ITT ≤ 3 mois',
     question:
         'Un agent municipal oublie de signaler un trou sur la voie publique. Un piéton chute et subit une ITT de 2 mois. La qualification la plus adaptée est :',
@@ -1994,7 +1994,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Faute d’imprudence/négligence + ITT ≤ 3 mois = contravention R. 625-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — ITT > 3 mois',
     question:
         'Un chef de chantier omet de sécuriser une tranchée. Un ouvrier chute et subit une ITT de 5 mois. La qualification pénale est :',
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Faute non intentionnelle + ITT > 3 mois = délit de blessures involontaires (222-19).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Causalité indirecte',
     question:
         'Un maire n’instaure aucune règle de sécurité sur une piste dangereuse. Un accident survient. Le maire est qualifié :',
@@ -2018,7 +2018,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Il a contribué à créer la situation dangereuse sans être l’auteur matériel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Faute caractérisée',
     question:
         'Confier volontairement les clés d’un véhicule à une personne ivre et sans permis constitue :',
@@ -2032,7 +2032,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Jurisprudence constante : exposition consciente à un danger grave.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Violation délibérée',
     question:
         'Un conducteur franchit volontairement un feu rouge connu comme dangereux. Un piéton est blessé (ITT 1 mois). Qualification :',
@@ -2046,7 +2046,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Obligation connue + choix délibéré de la violer + ITT ≤ 3 mois.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique concours — Complicité exceptionnelle',
     question:
         'Un passager ordonne au conducteur de forcer un barrage, causant des blessures involontaires par violation délibérée. Le passager est :',
@@ -2060,7 +2060,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — DISTINCTIONS FINES & QCM SÉLECTIFS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — ITT',
     question: 'L’ITT s’apprécie :',
     options: [
@@ -2072,7 +2072,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le cours précise que l’ITT n’est pas cumulative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Dommage psychique',
     question: 'Un choc émotionnel sans lésion physique peut constituer :',
     options: [
@@ -2084,7 +2084,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le dommage peut être psychique (atteinte à l’intégrité).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Infractions non intentionnelles',
     question: 'Quel élément est toujours exigé ?',
     options: ['Un dommage', 'Une intention', 'Une préméditation'],
@@ -2093,7 +2093,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Sans dommage, l’infraction non intentionnelle n’est pas constituée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Violences psychologiques',
     question: 'Les violences psychologiques sont constituées lorsque :',
     options: [
@@ -2105,7 +2105,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Cass. crim. + codification à l’article 222-14-3 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'QCM concours — Violences volontaires',
     question: 'Les violences volontaires supposent nécessairement :',
     options: [
@@ -2122,7 +2122,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS DE SYNTHÈSE RAPIDE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Contravention vs Délit',
     question:
         'La distinction principale entre contravention et délit d’atteintes involontaires repose sur :',
@@ -2135,7 +2135,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: '≤ 3 mois : contravention / > 3 mois : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Auteur indirect',
     question: 'Un auteur indirect est celui qui :',
     options: [
@@ -2147,7 +2147,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Définition issue de l’article 121-3 al.4 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Logique préventive',
     question:
         'Certaines infractions (ex : groupement violent) ont une logique principalement :',
@@ -2157,7 +2157,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Elles permettent d’intervenir avant la commission des violences.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Tentative',
     question:
         'Pourquoi la tentative est-elle exclue en matière non intentionnelle ?',
@@ -2170,7 +2170,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Principe fondamental rappelé dans tout le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Synthèse — Concours',
     question: 'Au concours, les questions pièges portent le plus souvent sur :',
     options: [
@@ -2187,7 +2187,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — PIÈGES JURISPRUDENTIELS & FORMULATIONS SUBTILES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — Causalité large',
     question:
         'Selon la chambre criminelle, la causalité directe peut être retenue lorsque le comportement de l’auteur :',
@@ -2201,7 +2201,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La Cour adopte une conception large : même sans geste matériel, le comportement peut être déterminant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — Auteur direct sans geste',
     question:
         'Un supérieur hiérarchique peut être auteur direct d’une infraction non intentionnelle même s’il n’a pas accompli le geste matériel si :',
@@ -2215,7 +2215,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Jurisprudence : le manquement déterminant peut suffire à caractériser l’auteur direct.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — Personne morale',
     question:
         'Pour engager la responsabilité pénale d’une personne morale, il faut :',
@@ -2228,7 +2228,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Principe issu des articles 121-2 et suivants du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence concours — ITT et certificat',
     question:
         'La réalité de l’atteinte dans les violences est généralement établie par :',
@@ -2246,7 +2246,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — COMPARAISONS CLASSIQUES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparaison — Violences / Atteintes involontaires',
     question:
         'La différence essentielle entre violences volontaires et atteintes involontaires tient à :',
@@ -2256,7 +2256,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Les violences supposent un acte intentionnel, les atteintes involontaires non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparaison — Faute simple / Faute délibérée',
     question: 'La faute délibérée se distingue de la faute simple par :',
     options: [
@@ -2269,7 +2269,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La faute délibérée implique un choix conscient de transgresser une obligation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparaison — Faute caractérisée / Faute délibérée',
     question:
         'La faute caractérisée se distingue de la faute délibérée en ce que :',
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS PIÈGES À RÉPONSE UNIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Absence de dommage',
     question: 'Sans dommage, une infraction non intentionnelle est :',
     options: ['Inexistante', 'Toujours constituée', 'Une tentative'],
@@ -2296,7 +2296,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le dommage est un élément constitutif indispensable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Simple présence',
     question:
         'La simple présence sur les lieux d’un accident suffit à engager la responsabilité pénale pour atteinte involontaire :',
@@ -2305,7 +2305,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Il faut une faute et un lien de causalité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Abstention',
     question:
         'Une abstention peut constituer une faute pénale non intentionnelle lorsque :',
@@ -2322,7 +2322,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — MÉMO FINAL (FORMULATIONS EXACTES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Formule clé',
     question:
         'Quelle formule correspond à la définition de l’auteur indirect ?',
@@ -2336,7 +2336,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Formulation exacte issue de l’article 121-3 al.4 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Logique pénale',
     question: 'Les infractions non intentionnelles reposent sur le triptyque :',
     options: [
@@ -2348,7 +2348,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Structure fondamentale à maîtriser au concours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Objectif',
     question:
         'L’objectif principal de la répression des atteintes involontaires est de :',
@@ -2364,7 +2364,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — CONFUSIONS FRÉQUENTES AU QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Confusion concours — Tentative',
     question:
         'La tentative est punissable en matière d’atteintes involontaires à l’intégrité physique :',
@@ -2374,7 +2374,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le résultat dommageable n’étant pas recherché, la tentative n’est pas envisageable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Confusion concours — Complicité',
     question:
         'En matière d’infractions non intentionnelles, la complicité est en principe :',
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La jurisprudence exclut la complicité, sauf cas particuliers de faute délibérée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Confusion concours — Faute et dommage',
     question:
         'Une faute pénale sans dommage permet de retenir une atteinte involontaire :',
@@ -2397,7 +2397,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS À DOUBLE NÉGATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Double négation — Élément moral',
     question:
         'Il n’est pas inexact d’affirmer que l’élément moral est absent en matière d’infractions non intentionnelles :',
@@ -2407,7 +2407,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’élément moral n’est pas requis, sauf faute délibérée particulière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Double négation — Violence',
     question:
         'Il ne peut être exclu que des violences soient constituées sans contact physique :',
@@ -2421,7 +2421,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — SCÉNARIOS TYPE QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Causalité indirecte',
     question:
         'Un maire n’ayant pas réglementé une activité dangereuse peut être poursuivi sur le fondement de :',
@@ -2435,7 +2435,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Il a contribué à créer la situation dangereuse sans être l’auteur du geste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Conducteur',
     question:
         'Un conducteur en excès de vitesse supérieur à 50 km/h causant une ITT > 3 mois commet :',
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS DE MÉMO JURIDIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Définition exacte',
     question: 'La faute caractérisée est définie comme :',
     options: [
@@ -2465,7 +2465,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Elle est lourde, grossière et inacceptable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mémo concours — Répression',
     question: 'La qualification des violences dépend principalement :',
     options: ['De l’ITT', 'Du mobile', 'De la plainte'],
@@ -2478,7 +2478,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS ULTRA PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Certitude',
     question: 'Le lien de causalité doit être :',
     options: ['Certain', 'Direct et immédiat', 'Exclusif'],
@@ -2486,7 +2486,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'La causalité n’a pas à être directe ni immédiate.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Personne vivante',
     question: 'Une atteinte involontaire suppose que la victime soit :',
     options: [
@@ -2502,7 +2502,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — FORMULES À SAVOIR PAR CŒUR
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Formule concours — Cour de cassation',
     question:
         'Selon la Cour de cassation, la causalité directe inclut les comportements qui ont été :',
@@ -2515,7 +2515,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Formule jurisprudentielle récurrente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Formule concours — Responsabilité',
     question:
         'La responsabilité pénale des personnes morales est engagée en cas de :',
@@ -2528,7 +2528,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — PIÈGES CLASSIQUES DE QUALIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Qualification — ITT',
     question: 'Une ITT de 2 mois causée involontairement relève en principe :',
     options: ['Du délit', 'De la contravention', 'Du crime'],
@@ -2537,7 +2537,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Les atteintes involontaires avec ITT ≤ 3 mois constituent un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Qualification — ITT',
     question: 'Une atteinte involontaire sans aucune ITT relève en principe :',
     options: ['D’une contravention', 'D’un délit', 'D’un crime'],
@@ -2549,7 +2549,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLATION MANIFESTEMENT DÉLIBÉRÉE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Définition',
     question: 'La violation manifestement délibérée suppose :',
     options: [
@@ -2563,7 +2563,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’auteur connaît l’obligation et décide sciemment de la transgresser.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation délibérée — Texte',
     question:
         'Une obligation issue uniquement d’un règlement intérieur peut fonder une violation délibérée :',
@@ -2577,7 +2577,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — CAUSALITÉ (QCM PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Causalité — Principe',
     question: 'En matière pénale, le lien de causalité doit être :',
     options: ['Certain', 'Direct et immédiat', 'Exclusif'],
@@ -2585,7 +2585,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'La causalité n’a pas à être directe ni immédiate.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Causalité — Indirecte',
     question: 'Un auteur indirect est celui qui :',
     options: [
@@ -2601,7 +2601,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — CONDUCTEUR DE VÉHICULE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur — Aggravation',
     question: 'Le simple fait d’être conducteur constitue :',
     options: [
@@ -2613,7 +2613,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le législateur prévoit une aggravation spécifique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Conducteur — Délit de fuite',
     question: 'Un délit de fuite après blessures involontaires constitue :',
     options: [
@@ -2629,7 +2629,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — PERSONNES MORALES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Personnes morales — Principe',
     question: 'Les personnes morales sont pénalement responsables :',
     options: [
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'La responsabilité des personnes morales est plus large.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Personnes morales — Causalité',
     question: 'Pour une personne morale, la causalité indirecte :',
     options: [
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Acte',
     question: 'Les violences volontaires supposent nécessairement :',
     options: ['Un acte positif', 'Une abstention', 'Un résultat grave'],
@@ -2665,7 +2665,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'L’abstention relève d’autres qualifications.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences volontaires — Psychiques',
     question:
         'Les violences psychologiques peuvent constituer une infraction :',
@@ -2678,7 +2678,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Élément matériel',
     question: 'L’homicide involontaire suppose :',
     options: [
@@ -2690,7 +2690,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le résultat mortel est indispensable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide involontaire — Tentative',
     question: 'La tentative d’homicide involontaire est :',
     options: ['Impossible', 'Punissable', 'Une contravention'],
@@ -2702,7 +2702,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS FINALES PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège final — Intention',
     question: 'Une faute délibérée implique :',
     options: [
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le dommage n’est pas recherché.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège final — Résultat',
     question: 'Sans résultat dommageable, une infraction non intentionnelle :',
     options: [
@@ -2729,7 +2729,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — CONFUSIONS FAUTE SIMPLE / CARACTÉRISÉE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute — Distinction',
     question:
         'En cas de causalité directe, la responsabilité pénale d’une personne physique suppose :',
@@ -2742,7 +2742,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'En causalité directe, toute faute suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Faute — Distinction',
     question:
         'En cas de causalité indirecte, la responsabilité pénale d’une personne physique exige :',
@@ -2759,7 +2759,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — OBLIGATION DE PRUDENCE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Obligation — Source',
     question: 'Une obligation particulière de prudence peut résulter :',
     options: [
@@ -2771,7 +2771,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Seuls les textes normatifs sont admis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Obligation — Preuve',
     question: 'Les juges doivent préciser :',
     options: [
@@ -2787,7 +2787,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — ITT (QUESTIONS PIÈGES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT — Calcul',
     question: 'L’ITT prise en compte est celle :',
     options: ['Consécutive', 'Additionnée', 'Estimée'],
@@ -2795,7 +2795,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Les périodes discontinues ne s’additionnent pas.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'ITT — Qualification',
     question: 'Une ITT de 3 mois jour pour jour relève :',
     options: ['Du seuil ≤ 3 mois', 'Du seuil > 3 mois', 'D’une contravention'],
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — PERSONNE D’AUTRUI
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Victime — Condition',
     question: 'Une atteinte involontaire suppose une victime :',
     options: [
@@ -2819,7 +2819,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'On ne peut être victime de soi-même.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Victime — Personne vivante',
     question: 'La victime doit être :',
     options: [
@@ -2835,7 +2835,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — VIOLENCES VOLONTAIRES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Intention',
     question: 'L’intention exigée en matière de violences est :',
     options: [
@@ -2847,7 +2847,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le dommage précis n’a pas à être voulu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violences — Moyen',
     question: 'Une violence peut être exercée par :',
     options: ['Un objet ou un animal', 'Une abstention', 'Une négligence'],
@@ -2859,7 +2859,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — HOMICIDE INVOLONTAIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide — Faute',
     question: 'L’homicide involontaire peut résulter :',
     options: [
@@ -2871,7 +2871,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'En causalité directe, la faute simple suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Homicide — Aggravation',
     question: 'La conduite sous l’empire d’un état alcoolique constitue :',
     options: [
@@ -2887,7 +2887,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // NIVEAU CONCOURS — QUESTIONS ULTRA PIÈGES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Prévention',
     question:
         'La création de l’infraction de participation à un groupement violent vise principalement :',
@@ -2900,7 +2900,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Objectif de démantèlement en amont.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ultra piège — Groupement',
     question: 'La simple présence dans un groupement violent :',
     options: [
@@ -2913,7 +2913,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Nature du groupement',
     question: 'Le groupement visé par l’article 222-14-2 peut être :',
     options: [
@@ -2925,7 +2925,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Le texte vise un groupement même formé de façon temporaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Objet de l’infraction',
     question: 'Le groupement constitue :',
     options: [
@@ -2938,7 +2938,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le groupement est le moyen de préparation, non l’objet de l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Distinction juridique',
     question: 'Ce groupement n’est ni une association de malfaiteurs, ni :',
     options: [
@@ -2951,7 +2951,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours distingue ce groupement de l’association de malfaiteurs, de la bande organisée et de l’attroupement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Participation',
     question: 'La participation au groupement est caractérisée :',
     options: [
@@ -2964,7 +2964,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'La simple présence suffit dès lors que la personne s’intègre au groupement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Actes préparatoires',
     question: 'Les actes préparatoires doivent être caractérisés par :',
     options: [
@@ -2977,7 +2977,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'L’intention délictueuse doit être établie par des faits matériels précis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Exemples d’actes préparatoires',
     question:
         'Lequel constitue un fait matériel caractérisant la préparation ?',
@@ -2991,7 +2991,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours cite notamment le port d’armes improvisées ou de cagoules.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Finalité',
     question: 'L’infraction vise principalement à :',
     options: [
@@ -3004,7 +3004,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Il s’agit d’une infraction à visée préventive, en amont des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Élément moral',
     question: 'L’auteur doit participer au groupement :',
     options: [
@@ -3016,7 +3016,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'La participation doit être consciente et volontaire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Connaissance des faits',
     question: 'L’auteur est responsable s’il :',
     options: [
@@ -3029,7 +3029,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Il suffit d’avoir accompli ou d’avoir connaissance des faits matériels.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Tentative',
     question: 'La tentative de participation à un groupement violent est :',
     options: [
@@ -3041,7 +3041,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'La tentative n’est pas punissable faute de texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Groupement violent — Peines',
     question: 'La participation à un groupement violent est punie de :',
     options: [
@@ -3058,7 +3058,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
   // =========================================================
   // ATTEINTES INVOLONTAIRES — CONDUCTEUR VTAM — ITT ≤ 3 MOIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Fondement',
     question:
         'Les atteintes involontaires par conducteur avec ITT ≤ 3 mois sont prévues par :',
@@ -3072,7 +3072,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Le cours indique que l’article 222-20-1 CP réprime ces atteintes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Faute',
     question: 'L’infraction repose sur :',
     options: [
@@ -3085,7 +3085,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
         'Il s’agit d’une infraction non intentionnelle fondée sur une faute.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Types de faute',
     question: 'La faute simple peut résulter de :',
     options: [
@@ -3097,7 +3097,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'Ces comportements fautifs sont listés à l’article 121-3 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Obligation',
     question: 'Le manquement à une obligation de prudence doit être :',
     options: [
@@ -3109,7 +3109,7 @@ final List<QuizQuestion> questionAtteinteInvolontaire = [
     explanation: 'L’obligation doit être législative ou réglementaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte involontaire — VTAM — Lien de causalité',
     question: 'La faute doit :',
     options: [
@@ -3478,7 +3478,7 @@ class _QuizAtteinteInvolontaireState extends State<QuizAtteinteInvolontaire>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3681,7 +3681,7 @@ class _QuizAtteinteInvolontaireState extends State<QuizAtteinteInvolontaire>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3864,7 +3864,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4397,10 +4396,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4771,7 +4771,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4812,9 +4812,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

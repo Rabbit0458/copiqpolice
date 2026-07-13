@@ -121,72 +121,72 @@ class _PVPvSaisinePersonneInconnuePageState
               cardColor: cardLegal,
               accent: accentBlue,
               titleColor: textMain,
-              children: [
+              children: const [
                 _Paragraph.rich([
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris si le service est territorialement incompétent (transmission si besoin). — ",
                   ),
                   TextSpan(
                     text: "article 15-3 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ]),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
                 _Paragraph.rich([
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le plaignant est informé des droits des victimes lors du dépôt de plainte. — ",
                   ),
                   TextSpan(
                     text: "article 10-2 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ]),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
                 _Paragraph.rich([
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le dépôt de plainte donne lieu à un procès-verbal, à la délivrance immédiate d’un récépissé, et, si la victime le demande, à une copie du PV. — ",
                   ),
                   TextSpan(
                     text: "article 15-3 alinéa 2 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ]),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
                 _NotaBox(
                   bodySpans: [
-                    const TextSpan(
+                    TextSpan(
                       text:
                           "Cadre juridique à annoncer : enquête de flagrance ou enquête préliminaire. "
                           "On vise « articles 53 et suivants » ou « articles 75 et suivants » du CPP selon le cas.",
                     ),
                   ],
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
                 _Paragraph.rich([
-                  const TextSpan(text: "Dommages-intérêts (si demande) : "),
+                  TextSpan(text: "Dommages-intérêts (si demande) : "),
                   TextSpan(
                     text: "article 420-1 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (se conformer aux consignes du parquet local le cas échéant).",
                   ),
@@ -219,82 +219,82 @@ class _PVPvSaisinePersonneInconnuePageState
               cardColor: cardSteps,
               accent: accentGreen,
               titleColor: textMain,
-              children: [
-                const _SubTitle("1) Lieu de rédaction"),
-                const _BulletPoint(
+              children: const [
+                _SubTitle("1) Lieu de rédaction"),
+                _BulletPoint(
                   text:
                       "Service, domicile, hôpital… L’APJ peut recevoir la plainte ailleurs qu’au service.",
                 ),
 
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("2) Instructions"),
-                const _BulletPoint(
+                _SubTitle("2) Instructions"),
+                _BulletPoint(
                   text:
                       "En PV de saisine : agir sur « instructions permanentes du chef de service ».",
                 ),
 
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("3) Réception du déclarant"),
-                const _BulletPoint(
+                _SubTitle("3) Réception du déclarant"),
+                _BulletPoint(
                   text:
                       "Si la victime vient avec un interprète : mentionner ses coordonnées.",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Selon gravité / qualité victime-auteur : aviser immédiatement l’OPJ (avant toute rédaction si nécessaire).",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Faire une description succincte des circonstances pour annoncer la rubrique suivante.",
                 ),
 
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("4) Cadre juridique"),
-                const _BulletPoint(
+                _SubTitle("4) Cadre juridique"),
+                _BulletPoint(
                   text:
                       "Situer l’enquête : flagrance (articles 53 et s.) ou préliminaire (articles 75 et s.) du CPP.",
                 ),
 
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("5) Droits des victimes"),
+                _SubTitle("5) Droits des victimes"),
                 _Paragraph.rich([
-                  const TextSpan(text: "Informer le plaignant — "),
+                  TextSpan(text: "Informer le plaignant — "),
                   TextSpan(
                     text: "article 10-2 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ]),
-                const SizedBox(height: 8),
+                SizedBox(height: 8),
                 _NotaBox(
                   bodySpans: [
-                    const TextSpan(
+                    TextSpan(
                       text:
                           "Si demande de dommages-intérêts : appliquer les consignes du parquet local.",
                     ),
-                    const TextSpan(text: " "),
+                    TextSpan(text: " "),
                     TextSpan(
                       text: "(article 420-1 du Code de procédure pénale)",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(text: "."),
+                    TextSpan(text: "."),
                   ],
                 ),
 
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("6) Identité"),
-                const _BulletPoint(
+                _SubTitle("6) Identité"),
+                _BulletPoint(
                   text:
                       "Petite identité relevée lors de la création du CRI ; le rappel NOM + Prénom suffit dans le PV.",
                 ),
@@ -309,37 +309,37 @@ class _PVPvSaisinePersonneInconnuePageState
               cardColor: cardDecl,
               accent: accentPink,
               titleColor: textMain,
-              children: [
-                const _SubTitle("Déroulé des faits (H.L.M.)"),
-                const _BulletPoint(
+              children: const [
+                _SubTitle("Déroulé des faits (H.L.M.)"),
+                _BulletPoint(
                   text:
                       "Heure – Lieu – Motif : description précise, en première personne (« je… »).",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Récit libre d’abord (déclarations spontanées), puis questions ouvertes (sans suggérer).",
                 ),
-                const SizedBox(height: 12),
-                const _SubTitle("Signalement (auteur inconnu)"),
-                const _BulletPoint(
+                SizedBox(height: 12),
+                _SubTitle("Signalement (auteur inconnu)"),
+                _BulletPoint(
                   text:
                       "Sexe, âge apparent, taille, corpulence, cheveux, yeux, signes distinctifs, tenue vestimentaire…",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Tous renseignements utiles doivent apparaître clairement (mode opératoire, direction de fuite, véhicule, etc.).",
                 ),
-                const SizedBox(height: 12),
-                const _SubTitle("Reconnaissance"),
-                const _BulletPoint(
+                SizedBox(height: 12),
+                _SubTitle("Reconnaissance"),
+                _BulletPoint(
                   text:
                       "Reconnaissance possible : sur photographies et/ou présentation derrière une glace sans tain, selon procédure.",
                 ),
-                const SizedBox(height: 12),
+                SizedBox(height: 12),
                 _NotaBox(
                   title: "Important",
                   bodySpans: [
-                    const TextSpan(
+                    TextSpan(
                       text:
                           "Certaines infractions sont conditionnées par un dépôt de plainte (ex. diffamation). "
                           "Toujours vérifier si la qualification nécessite la plainte pour déclencher les suites.",
@@ -357,74 +357,74 @@ class _PVPvSaisinePersonneInconnuePageState
               cardColor: cardDocs,
               accent: accentAmber,
               titleColor: textMain,
-              children: [
-                const _SubTitle("Documents remis"),
-                const _BulletPoint(
+              children: const [
+                _SubTitle("Documents remis"),
+                _BulletPoint(
                   text:
                       "Certificats médicaux, chèques, factures, messages, captures… tout ce qui se rapporte à l’affaire.",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Tout document remis doit être annexé au PV (numérotation conseillée).",
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("Demande de copie"),
+                _SubTitle("Demande de copie"),
                 _Paragraph.rich([
-                  const TextSpan(
+                  TextSpan(
                     text: "Copie du PV si la victime le demande — ",
                   ),
                   TextSpan(
                     text: "article 15-3 alinéa 2 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ]),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("Énonciation terminale (clôture)"),
-                const _BulletPoint(
+                _SubTitle("Énonciation terminale (clôture)"),
+                _BulletPoint(
                   text:
                       "Mentionner la lecture faite par la personne ; si impossible : lecture faite par l’APJ (ex : ne sait pas lire).",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Signature sous l’énonciation terminale. Si interprète : lecture par son truchement + signature interprète.",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text: "Heure de fin d’audition : facultative.",
                 ),
-                const SizedBox(height: 10),
+                SizedBox(height: 10),
 
-                const _SubTitle("Remises & avis OPJ"),
-                const _BulletPoint(
+                _SubTitle("Remises & avis OPJ"),
+                _BulletPoint(
                   text:
                       "Remettre : formulaire droits des victimes + récépissé + copie du PV si demandée.",
                 ),
-                const _BulletPoint(
+                _BulletPoint(
                   text:
                       "Avis OPJ : l’APJ avise l’OPJ des faits contenus dans la plainte.",
                 ),
 
-                const SizedBox(height: 14),
+                SizedBox(height: 14),
 
-                const _SubTitle("Canevas visuel — auteur inconnu (anonyme)"),
-                const _Paragraph(
+                _SubTitle("Canevas visuel — auteur inconnu (anonyme)"),
+                _Paragraph(
                   "Tap sur l’image pour ouvrir en plein écran (zoom + rotation).",
                 ),
-                const SizedBox(height: 10),
-                const _ZoomRotateImage(
+                SizedBox(height: 10),
+                _ZoomRotateImage(
                   assetPath: 'assets/images/pv_canva_plainte_recto_anonyme.png',
                 ),
-                const SizedBox(height: 12),
-                const _ZoomRotateImage(
+                SizedBox(height: 12),
+                _ZoomRotateImage(
                   assetPath: 'assets/images/pv_canva_plainte_verso_anonyme.png',
                 ),
 
-                const SizedBox(height: 14),
+                SizedBox(height: 14),
               ],
             ),
           ],
@@ -470,8 +470,8 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.18)
-        : Colors.black.withOpacity(.10);
+        ? Colors.white.withValues(alpha: .18)
+        : Colors.black.withValues(alpha: .10);
 
     return Container(
       decoration: BoxDecoration(
@@ -484,7 +484,7 @@ class _ZoomRotateImageState extends State<_ZoomRotateImage> {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
-              color: isDark ? Colors.black.withOpacity(.18) : Colors.black12,
+              color: isDark ? Colors.black.withValues(alpha: .18) : Colors.black12,
               border: Border(bottom: BorderSide(color: border, width: 1)),
             ),
             child: Row(
@@ -554,7 +554,7 @@ class _FullScreenImageViewerState extends State<_FullScreenImageViewer> {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     return Scaffold(
-      backgroundColor: Colors.black.withOpacity(0.92),
+      backgroundColor: Colors.black.withValues(alpha: 0.92),
       body: SafeArea(
         child: Stack(
           children: [
@@ -648,10 +648,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -716,7 +716,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -759,7 +759,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -821,7 +821,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -853,7 +853,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -866,7 +866,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

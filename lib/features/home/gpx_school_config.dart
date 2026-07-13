@@ -7,10 +7,6 @@ import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolP
 
 // lib/home/gpx_school_config.dart
 
-import 'package:flutter/material.dart';
-import 'package:copiqpolice/features/home/home_page.dart'
-    show CategoryConfig, SubCategoryConfig;
-import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolProgram;
 
 /// =======================================================
 ///  GPX SCHOOL — CONFIG CENTRALISÉE
@@ -32,10 +28,12 @@ class GpxSchoolConfig {
     if (l.contains('quiz generalite') || l.contains('quiz generalite')) {
       return 'assets/images/quiz.jpeg';
     }
-    if (l.contains('classification'))
+    if (l.contains('classification')) {
       return 'assets/images/classification.jpeg';
-    if (l.contains('infraction'))
+    }
+    if (l.contains('infraction')) {
       return 'assets/images/infraction_materiel.jpeg';
+    }
     if (l.contains('tentative')) return 'assets/images/infraction_legal.jpeg';
     if (l.contains('complic')) return 'assets/images/complicite.jpeg';
     if (l.contains('légitime') || l.contains('legitime')) {
@@ -163,8 +161,9 @@ class GpxSchoolConfig {
     }
 
     // Contre la personne
-    if (l.contains('mise en danger'))
+    if (l.contains('mise en danger')) {
       return 'assets/images/mise_en_danger.jpeg';
+    }
     if (l.contains('viol') || l.contains('agressions sexuelles')) {
       return 'assets/images/viol_agressions.jpeg';
     }
@@ -331,8 +330,9 @@ class GpxSchoolConfig {
     if (l.contains('direction') || l.contains('organisation')) {
       return 'assets/images/stup_direction_org.jpeg';
     }
-    if (l.contains('facilitation'))
+    if (l.contains('facilitation')) {
       return 'assets/images/stup_facilitation.jpeg';
+    }
     if (l.contains('production') || l.contains('fabrication')) {
       return 'assets/images/stup_production.jpeg';
     }

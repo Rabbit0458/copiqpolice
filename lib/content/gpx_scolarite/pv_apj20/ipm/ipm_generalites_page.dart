@@ -107,31 +107,31 @@ class IpmGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 3341-1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : encadre la prise en charge d’une personne en état d’ivresse dans un lieu public, "
                       "la conduite dans un service/une chambre de sûreté, et la possibilité de remise à un tiers lorsque l’audition n’est pas nécessaire immédiatement.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 3353-1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit l’infraction d’ivresse publique et manifeste et la réprime par l’amende prévue pour les contraventions de 2ᵉ classe.",
                 ),
@@ -147,28 +147,28 @@ class IpmGeneralitesPage extends StatelessWidget {
             cardColor: cardScope,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Conditions cumulatives"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Conditions cumulatives"),
+              _BulletPoint(
                 text:
                     "Ivresse manifeste : évidente, constatable par tout le monde (signes extérieurs et troubles du comportement).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ivresse publique : constatée dans un lieu public ou un lieu privé ouvert au public (place, route, gare, café, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Appréciation de l’ivresse"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("Appréciation de l’ivresse"),
+              _Paragraph(
                 "L’ivresse s’apprécie indépendamment de toute mesure d’imprégnation alcoolique : "
                 "elle résulte du comportement de la personne et de la constatation de signes extérieurs "
                 "mettant en évidence un état d’ivresse manifeste.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "NOTA",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les critères ne doivent pas être nécessairement réunis de manière cumulative : "
@@ -177,20 +177,20 @@ class IpmGeneralitesPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Exemples de signes caractéristiques"),
-              const _BulletPoint(text: "Haleine sentant fortement l’alcool."),
-              const _BulletPoint(text: "Défaut d’équilibre."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Exemples de signes caractéristiques"),
+              _BulletPoint(text: "Haleine sentant fortement l’alcool."),
+              _BulletPoint(text: "Défaut d’équilibre."),
+              _BulletPoint(
                 text: "Élocution bégayante / trouble de l’expression.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Comportement anormal et incohérence des propos tenus.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Cette mesure concerne les personnes majeures. Les mineurs ne doivent pas être placés en chambre de sûreté.",
@@ -208,19 +208,19 @@ class IpmGeneralitesPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’IPM est une mesure de police administrative : son but est de prévenir les atteintes à l’ordre public "
                 "et de protéger la personne concernée (personne vulnérable).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Deux obligations fondamentales"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Deux obligations fondamentales"),
+              _BulletPoint(
                 text: "Devoir de protection et d’assistance aux personnes.",
               ),
-              const _BulletPoint(text: "Obligation de rendre compte."),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              _BulletPoint(text: "Obligation de rendre compte."),
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’équipage intervenant doit rendre compte régulièrement au C.I.C. de l’évolution de l’intervention "
                 "(contrôle de l’individu, placement sous responsabilité d’un tiers, prise en charge et conduite à l’hôpital, etc.). "
                 "La main courante informatisée doit également être renseignée.",
@@ -236,27 +236,27 @@ class IpmGeneralitesPage extends StatelessWidget {
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Prise en charge par les fonctionnaires"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Prise en charge par les fonctionnaires"),
+              _Paragraph(
                 "Retirée sans brutalité de la vue du public et soumise à une palpation de sécurité, la personne "
                 "peut être prise en charge selon deux modalités principales :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Conduite à l’hôpital : délivrance d’un certificat médical de non-admission (ou admission si nécessaire).",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "L’examen médical permet de déterminer si l’intéressé peut être maintenu dans les locaux de police "
                 "ou si son état de santé nécessite une admission à l’hôpital. Si l’état est compatible avec le maintien, "
                 "un certificat médical de non-admission est délivré à l’issue de l’examen.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "NOTA",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Certaines situations peuvent mimer l’ivresse (choc, prise de médicaments, malaise). "
@@ -264,62 +264,62 @@ class IpmGeneralitesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _BulletPoint(
                 text:
                     "Conduite au commissariat : présentation au chef de poste et mise en œuvre des mesures de sécurité.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Mesures de sécurité (chef de poste)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Mesures de sécurité (chef de poste)"),
+              _BulletPoint(
                 text:
                     "Fouille de sécurité : retrait des objets/accessoires dangereux (ceinture, lacets, médicaments…). "
                     "La fouille ne suppose pas un déshabillage complet ; détection électronique possible si besoin.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Inventaire au registre d’écrou : objets écartés, identité, heure de prise en charge.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Placement en chambre de sûreté : sous responsabilité du chef de poste, surveillance constante.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Rondes régulières : intervalle maximum de 15 minutes (feuille de rondes : heures, signature, observations).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Au moindre signe d’alerte : appel à un médecin.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Fin de mesure"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Fin de mesure"),
+              _Paragraph(
                 "La retenue en chambre de sûreté prend fin après le complet dégrisement, c’est-à-dire lorsque les caractéristiques "
                 "ayant révélé l’ivresse ont disparu. Les effets sont restitués et une décharge est faite par émargement du registre d’écrou.",
               ),
-              const SizedBox(height: 14),
-              const _SubTitle("B) Prise en charge par un tiers"),
-              const _Paragraph(
+              SizedBox(height: 14),
+              _SubTitle("B) Prise en charge par un tiers"),
+              _Paragraph(
                 "Lorsque l’audition n’est pas nécessaire immédiatement après le recouvrement de la raison "
                 "(ex. infraction connexe), la personne peut être placée sous la responsabilité d’un tiers qui se porte garante.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text:
                       "Article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "NOTA",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Si la remise à un tiers intervient avant l’examen médical, la remise d’un certificat de non-admission ne sera pas sollicitée.",
@@ -337,41 +337,41 @@ class IpmGeneralitesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La constatation de l’ivresse publique et manifeste (contravention de 2ᵉ classe) doit donner lieu à la rédaction d’un PV ordinaire, "
                       "faisant ressortir précisément tous les signes extérieurs caractérisant l’ivresse. — ",
                 ),
                 TextSpan(
                   text: "Article R. 3353-1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La personne est entendue sur procès-verbal séparé : soit à l’issue de la période de dégrisement, "
                 "soit ultérieurement si elle a été remise à un tiers. Il s’agit d’une audition libre.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’audition libre est précédée de la notification des droits listés à ",
                 ),
                 TextSpan(
                   text: "l’article 61-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", à l’exception du droit d’être assisté d’un avocat (selon le canevas IPM fourni).",
                 ),
@@ -412,10 +412,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -480,7 +480,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -523,7 +523,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -585,7 +585,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -617,7 +617,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -630,7 +630,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -682,10 +682,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -791,8 +791,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -860,10 +860,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -930,10 +930,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -972,9 +972,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1009,7 +1009,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

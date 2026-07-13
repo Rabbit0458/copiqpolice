@@ -1422,13 +1422,12 @@ class _Pressable extends StatefulWidget {
     required this.child,
     this.onTap,
     this.disabled = false,
-    this.disabledOpacity = 0.55,
     this.radius,
+    this.disabledOpacity = 0.45,
     this.pressedScale = 0.97,
-    this.pressedOpacity = 0.92,
-    this.duration = const Duration(milliseconds: 160),
-    this.curve = const Cubic(0.2, 0.0, 0.0, 1.0),
-    super.key,
+    this.pressedOpacity = 0.7,
+    this.duration = const Duration(milliseconds: 100),
+    this.curve = Curves.easeInOut,
   });
 
   @override
@@ -1796,7 +1795,7 @@ class _PostCard extends StatelessWidget {
 
 class ForumAvatar extends StatelessWidget {
   final int index;
-  const ForumAvatar({required this.index});
+  const ForumAvatar({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -1879,7 +1878,6 @@ class _PostStats extends StatelessWidget {
     required this.liked,
     required this.onLike,
     required this.onComments,
-    super.key,
   });
 
   @override
@@ -1968,7 +1966,6 @@ class _Fab extends StatelessWidget {
   const _Fab({
     required this.onCreatePost,
     required this.onCreateGroup,
-    super.key,
   });
 
   @override
@@ -2026,7 +2023,6 @@ class _FabActionSheet extends StatelessWidget {
   const _FabActionSheet({
     required this.onCreatePost,
     required this.onCreateGroup,
-    super.key,
   });
 
   @override
@@ -2140,7 +2136,6 @@ class _CreateTile extends StatelessWidget {
     required this.title,
     required this.subtitle,
     required this.onTap,
-    super.key,
   });
 
   @override
@@ -2224,7 +2219,6 @@ class _CreatePostSheet extends StatefulWidget {
   const _CreatePostSheet({
     required this.hint,
     required this.onSubmit,
-    super.key,
   });
 
   @override
@@ -2546,7 +2540,6 @@ class _SearchOverlay extends StatelessWidget {
     required this.onClose,
     required this.onChanged,
     required this.onOpenPost,
-    super.key,
   });
 
   @override
@@ -2682,7 +2675,6 @@ class _SearchBody extends StatelessWidget {
     required this.query,
     required this.hits,
     required this.onOpenPost,
-    super.key,
   });
 
   @override
@@ -2729,7 +2721,7 @@ class _SearchHitTile extends StatelessWidget {
   final _SearchHit hit;
   final VoidCallback onTap;
 
-  const _SearchHitTile({required this.hit, required this.onTap, super.key});
+  const _SearchHitTile({required this.hit, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -2843,7 +2835,6 @@ class _PostMenuSheet extends StatelessWidget {
     required this.isAlreadyBlocked,
     required this.targetRole,
     required this.canUnmute,
-    super.key,
   });
 
   @override
@@ -2963,7 +2954,7 @@ class _PostMenuSheet extends StatelessWidget {
 class _PostMenuButton extends StatelessWidget {
   final VoidCallback onTap;
 
-  const _PostMenuButton({required this.onTap, super.key});
+  const _PostMenuButton({required this.onTap});
 
   @override
   Widget build(BuildContext context) {
@@ -3163,7 +3154,6 @@ class _SheetAction extends StatelessWidget {
     required this.onTap,
     this.color,
     this.disabled = false,
-    super.key,
   });
 
   @override
@@ -3845,7 +3835,7 @@ class _ForumChatPageState extends State<ForumChatPage> {
           ),
           Container(
             padding: const EdgeInsets.fromLTRB(12, 10, 12, 12),
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Colors.white,
               border: Border(top: BorderSide(color: _ForumTheme.outline)),
             ),
@@ -3901,7 +3891,6 @@ class _CommentsSheet extends StatefulWidget {
     required this.onSendMessage,
     required this.onDeleteComment,
     required this.onReportComment,
-    super.key,
   });
 
   @override
@@ -4624,7 +4613,6 @@ class _CreateGroupSheet extends StatefulWidget {
   const _CreateGroupSheet({
     required this.supabase,
     required this.onCreated,
-    super.key,
   });
 
   @override
@@ -4926,7 +4914,7 @@ class _PostDetailPage extends StatefulWidget {
     required this.onToggleLike,
     required this.onOpenComments,
     required this.onOpenPostMenu,
-    this.showInlineComments = true,
+    this.showInlineComments = false,
   });
 
   @override
@@ -5270,7 +5258,6 @@ class _PostHeader extends StatelessWidget {
     required this.role,
     required this.avatarIndex,
     required this.onMore,
-    super.key,
   });
 
   @override

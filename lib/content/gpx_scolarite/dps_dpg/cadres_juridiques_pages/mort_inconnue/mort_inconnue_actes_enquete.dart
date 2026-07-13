@@ -58,8 +58,8 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          _Paragraph.rich([
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(
               text:
                   'Cette partie présente les principaux actes réalisés par les officiers '
                   'et agents de police judiciaire lorsqu’un décès de cause inconnue ou '
@@ -67,12 +67,12 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
             ),
             TextSpan(
               text: 'l’article 74 alinéa 1 du Code de procédure pénale',
-              style: const TextStyle(
+              style: TextStyle(
                 color: _lawColor,
                 fontWeight: FontWeight.w700,
               ),
             ),
-            const TextSpan(
+            TextSpan(
               text:
                   ' : transport sur les lieux, premières constatations, choix du cadre '
                   'juridique et information du procureur de la République.',
@@ -86,9 +86,9 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'L’enquête est toujours précédée d’un transport sur les lieux, effectué '
                       'par l’officier de police judiciaire ou, sous son contrôle, par '
@@ -96,34 +96,34 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 74 alinéa 1 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', l’enquêteur « procède aux premières constatations ». ',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'Ces premières constatations ont plusieurs objectifs : sécuriser les lieux, '
                 'préserver les traces et indices, identifier les témoins éventuels et '
                 'apprécier, de façon globale, le contexte du décès.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     'Observer la scène de manière méthodique (position du corps, désordre, '
                     'traces de lutte, objets à proximité, médicaments, armes, etc.).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Relever les éléments horaires (heure d’appel, arrivée sur les lieux, '
                     'présence éventuelle de secours médicaux).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Identifier immédiatement les personnes présentes (famille, voisins, '
                     'témoins directs, premiers intervenants).',
@@ -168,14 +168,14 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Les premières constatations ont pour but de déterminer le cadre juridique '
                 'd’enquête adapté à la situation. À partir des éléments recueillis sur les '
                 'lieux, l’enquêteur doit apprécier si la mort semble naturelle, violente, '
                 'accidentelle, suicidaire ou potentiellement liée à une infraction pénale.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _IntroBullet(
                 text:
                     'Lorsque les circonstances apparaissent compatibles avec une mort naturelle ou '
@@ -206,9 +206,9 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Dès lors qu’il apparaît que la mort procède d’une cause inconnue ou suspecte, '
                       'l’officier de police judiciaire ou l’agent de police judiciaire agissant sous '
@@ -217,34 +217,34 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 74 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawColor,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'Informé sur le champ, le procureur de la République peut décider de se rendre '
                 'sur place s’il le juge nécessaire et se faire assister de personnes capables '
                 'd’apprécier la nature des circonstances du décès (médecin, médecin légiste, '
                 'techniciens en identification criminelle, etc.).',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     'Le procureur peut laisser l’officier ou l’agent de police judiciaire '
                     'poursuivre les investigations dans le cadre de l’article 74 du Code de '
                     'procédure pénale.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Il peut dessaisir le service initialement saisi pour confier l’enquête à '
                     'un autre service spécialisé (par exemple brigade criminelle, SRPJ, '
                     'section de recherches).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Il peut enfin requérir l’ouverture d’une information pour recherche des '
                     'causes de la mort, permettant au juge d’instruction de prendre le relais '
@@ -256,7 +256,7 @@ class MortInconnueActesEnquetePage extends StatelessWidget {
           const SizedBox(height: 16),
 
           // ====================== NOTA =====================================
-          _NotaBox(
+          const _NotaBox(
             bodySpans: [
               TextSpan(
                 text:
@@ -302,10 +302,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -370,7 +370,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -413,7 +413,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -447,11 +447,12 @@ class _IntroBullet extends StatelessWidget {
 }
 
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint({required this.text}) : rich = null;
+  const _BulletPoint({required this.text, this.child}) : rich = null;
 
-  const _BulletPoint.rich(this.rich) : text = null;
+  const _BulletPoint.rich(this.rich) : text = null, child = null;
 
   final String? text;
+  final Widget? child;
   final List<TextSpan>? rich;
 
   @override
@@ -462,7 +463,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     final Widget child;
     if (rich != null) {
@@ -504,10 +505,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -519,13 +519,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -538,13 +537,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -107,7 +107,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — FONDEMENT / DÉFINITION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Fondement',
     question: 'Le délit d’abandon de famille est prévu et réprimé par :',
     options: [
@@ -120,7 +120,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’élément légal du délit d’abandon de famille est fixé par l’article 227-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Définition',
     question: 'L’abandon de famille consiste notamment à :',
     options: [
@@ -134,7 +134,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise l’inexécution d’une obligation de paiement pendant plus de deux mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Définition',
     question:
         'Le délit d’abandon de famille peut viser des sommes dues au profit :',
@@ -149,7 +149,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne ces bénéficiaires (enfant mineur, descendant, ascendant, conjoint).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Définition',
     question: 'L’obligation visée par 227-3 porte sur :',
     options: [
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — OBLIGATIONS FAMILIALES (EXEMPLES)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Obligations familiales',
     question:
         'Parmi les obligations familiales entrant dans le champ de 227-3, on trouve :',
@@ -181,7 +181,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite les contributions aux charges du mariage parmi les obligations familiales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Obligations familiales',
     question:
         'Parmi les obligations familiales entrant dans le champ de 227-3, on trouve aussi :',
@@ -200,7 +200,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — ACTE EXÉCUTOIRE : PRINCIPE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'L’abandon de famille suppose l’inexécution :',
     options: [
@@ -214,7 +214,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’obligation pénalement protégée doit être fondée sur une décision ou un titre exécutoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'Le support rappelle que l’acte fondant l’obligation peut être :',
     options: [
@@ -227,7 +227,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne une décision juridictionnelle parmi les actes possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question:
         'Le support indique que l’acte fondant l’obligation peut aussi être :',
@@ -241,7 +241,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La convention homologuée est citée parmi les titres possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question:
         'Le support indique que l’acte fondant l’obligation peut aussi être :',
@@ -254,7 +254,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la convention 229-1 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question:
         'Le support indique que l’acte fondant l’obligation peut aussi être :',
@@ -267,7 +267,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite l’acte notarié parmi les titres.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'Le support mentionne aussi comme titre possible :',
     options: [
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite cette hypothèse de force exécutoire donnée par l’organisme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'Le support évoque aussi comme fondement possible :',
     options: [
@@ -299,7 +299,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — CONNAISSANCE / NOTIFICATION DE LA DÉCISION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Notification',
     question:
         'Pour que l’inexécution soit pénalement sanctionnée, le support rappelle que la décision doit :',
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support expose ces modalités de connaissance/notoriété de l’acte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Période d’obligation',
     question: 'L’obligation de payer se poursuit :',
     options: [
@@ -332,7 +332,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — DÉFAUT DE PAIEMENT : INTÉGRALITÉ / PARTIEL / NATURE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur doit s’acquitter :',
     options: [
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support insiste sur l’intégralité du paiement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'L’infraction est constituée si le non-paiement est :',
     options: ['Total ou partiel', 'Uniquement total', 'Uniquement partiel'],
@@ -353,7 +353,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que le délit est constitué même en cas de paiement partiel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur peut être exonéré par des paiements partiels :',
     options: ['Non', 'Oui', 'Oui uniquement si bonne foi'],
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : paiements partiels ne permettent pas d’exonération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur peut être exonéré par des paiements en nature :',
     options: ['Non', 'Oui', 'Oui si accord oral'],
@@ -371,7 +371,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support exclut les paiements en nature comme exonératoires.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Défaut de paiement',
     question: 'Le débiteur peut être exonéré par compensation :',
     options: ['Non', 'Oui', 'Oui si dette réciproque'],
@@ -379,7 +379,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support exclut la compensation comme moyen d’exonération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Indexation',
     question:
         'Le délit peut être constitué lorsque le débiteur refuse de prendre en compte une indexation (réévaluation) :',
@@ -393,7 +393,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — DÉLAI DE DEUX MOIS : RÈGLES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'Le défaut de paiement doit durer :',
     options: ['Plus de deux mois', 'Deux mois exactement', 'Un mois'],
@@ -402,7 +402,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : le débiteur doit être resté plus de deux mois sans s’acquitter intégralement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question:
         'Selon la jurisprudence citée (CA Paris, 16 mars 1994), le délit suppose :',
@@ -417,7 +417,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite CA Paris, 16 mars 1994 : “plus de deux mois”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Point de départ',
     question: 'Le point de départ du délai peut être :',
     options: [
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support fixe comme point de départ la signification de la décision.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Point de départ',
     question:
         'En cas d’interruption des paiements, le point de départ peut être :',
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : point de départ = dernier versement intégral.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Constitution du délit',
     question: 'Le délit est constitué :',
     options: [
@@ -457,7 +457,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que l’infraction est constituée dès expiration du délai.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effet du paiement tardif',
     question:
         'Un paiement intervenant tardivement efface rétroactivement le délit :',
@@ -471,7 +471,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — SITUATIONS POSTÉRIEURES (CASSATION / RÉFORMATION)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Selon le support, l’infraction subsiste même si la décision de base est ensuite cassée :',
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite Cass. crim., 26 juillet 1977 : la cassation ultérieure n’efface pas rétroactivement le délit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Selon le support, l’infraction subsiste même si la décision de base fait l’objet d’une réformation partielle :',
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — ÉLÉMENT MORAL (VOLONTÉ) + PRÉCARITÉ
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Élément moral',
     question: 'L’élément moral de 227-3 repose sur :',
     options: [
@@ -508,7 +508,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le délit sanctionne l’inexécution volontaire de l’acte fixant le montant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Élément moral',
     question:
         'Le délit d’abandon de famille suppose notamment que l’auteur ait :',
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que l’inexécution volontaire suppose la notification de la décision.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Preuve',
     question:
         'Selon le support, la charge de la preuve (notamment sur le caractère volontaire) appartient :',
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que la charge de la preuve appartient à la partie poursuivante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Exclusion',
     question: 'Le délit n’est pas constitué si le non-paiement est dû à :',
     options: [
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — INTERMÉDIATION FINANCIÈRE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intermédiation',
     question:
         'Lorsque l’intermédiation financière des pensions alimentaires est mise en œuvre, l’infraction est constituée si le parent débiteur :',
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — CIRCONSTANCES AGGRAVANTES / RÉPRESSION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Circonstances aggravantes',
     question: 'Le support indique des circonstances aggravantes pour 227-3 :',
     options: ['Aucune', 'Oui, 227-9', 'Oui, 227-10'],
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Répression',
     question:
         'Les peines encourues (personne physique) pour l’abandon de famille (227-3) sont :',
@@ -593,7 +593,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe : 2 ans + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour 227-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui si paiement partiel'],
@@ -601,7 +601,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour 227-3, la complicité est :',
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // ABANDON DE FAMILLE — PERSONNES MORALES (RAPPEL)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Personnes morales',
     question:
         'Le support mentionne que la responsabilité des personnes morales est prévue par :',
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite 227-4-1 pour la responsabilité des personnes morales.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Personnes morales',
     question:
         'En cas de responsabilité d’une personne morale, l’amende est encourue suivant :',
@@ -646,7 +646,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support renvoie aux modalités d’amende de l’article 131-38 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Personnes morales',
     question:
         'Le support mentionne aussi des peines complémentaires applicables aux personnes morales via :',
@@ -664,7 +664,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // CAS PRATIQUES (QCM) — ABANDON DE FAMILLE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Un parent débiteur cesse de payer la pension fixée par décision exécutoire et notifiée. Il ne verse plus rien pendant 2 mois exactement. L’infraction 227-3 est constituée :',
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte exige plus de deux mois ; la jurisprudence citée précise que deux mois seulement ne suffisent pas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Un débiteur effectue des paiements partiels pendant 3 mois au lieu du montant intégral. L’infraction 227-3 peut être constituée :',
@@ -692,7 +692,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le délit est constitué même en cas de paiement partiel et que le paiement doit être intégral.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Un débiteur refuse d’appliquer l’indexation prévue, en payant l’ancien montant pendant plus de deux mois. L’infraction peut être constituée :',
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite que le refus de prendre en compte l’indexation peut constituer le délit (Cass. crim., 26 octobre 1987).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Le débiteur ne paye pas pendant plus de deux mois mais démontre une précarité persistante non volontaire. Le délit est :',
@@ -716,7 +716,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que la précarité persistante non volontaire exclut le délit (ex. CA Aix-en-Provence, 01/07/1994).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Après l’expiration du délai de plus de deux mois, le débiteur régularise intégralement. Cela efface rétroactivement l’infraction :',
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — CIBLES / BÉNÉFICIAIRES (QUI PEUT ÊTRE PROTÉGÉ ?)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question:
         'L’abandon de famille (227-3) peut concerner des sommes dues au profit :',
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise notamment l’enfant mineur parmi les bénéficiaires possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question: 'Le texte de 227-3 vise également des sommes dues au profit :',
     options: [
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le champ d’incrimination vise les obligations au profit d’un descendant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question: 'Le texte de 227-3 vise également des sommes dues au profit :',
     options: [
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le champ d’incrimination vise aussi les obligations au profit d’un ascendant.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Bénéficiaires',
     question: 'Le texte de 227-3 vise également des sommes dues au profit :',
     options: [
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — NATURE DES SOMMES (QUOI EXACTEMENT ?)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise le non-paiement d’une :',
     options: ['Pension', 'Prime de performance', 'Facture téléphonique'],
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise notamment les pensions dues au titre d’obligations familiales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise aussi le non-paiement d’une :',
     options: ['Contribution', 'Caution bancaire', 'Dette commerciale'],
@@ -808,7 +808,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise les contributions dues au titre des obligations familiales.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise aussi le non-paiement de :',
     options: [
@@ -820,7 +820,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise les subsides.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Sommes dues',
     question: '227-3 vise aussi le non-paiement de :',
     options: [
@@ -838,7 +838,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — ACTE EXÉCUTOIRE : LISTE DES TITRES (ENTRAÎNEMENT)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -852,7 +852,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite la décision juridictionnelle parmi les actes possibles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -865,7 +865,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la convention homologuée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -878,7 +878,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne la convention 229-1 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne l’acte notarié.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question:
         'Parmi les fondements possibles de l’obligation (selon le support) on trouve :',
@@ -906,7 +906,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite ce type de convention ayant reçu force exécutoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la transaction parmi les actes possibles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -930,7 +930,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne un accord issu d’une médiation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -942,7 +942,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne un accord issu d’une conciliation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Titres possibles',
     question: 'Le support mentionne aussi comme fondement :',
     options: [
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — EXÉCUTOIRE / CONNAISSANCE : CONDITIONS
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Acte exécutoire',
     question: 'L’obligation pénalement protégée doit présenter un caractère :',
     options: ['Exécutoire', 'Facultatif', 'Moral seulement'],
@@ -968,7 +968,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support exige le caractère exécutoire de la décision ou du titre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Connaissance',
     question:
         'Le support indique que l’acte peut fonder des poursuites s’il a été :',
@@ -982,7 +982,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support insiste sur la notification légale au débiteur (ou autres formes de connaissance).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Connaissance',
     question:
         'Le support indique aussi que l’acte peut fonder des poursuites si :',
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support évoque la “connaissance légale” du débiteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Connaissance',
     question:
         'Le support précise aussi qu’à défaut, l’acte peut fonder des poursuites s’il a été :',
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — DÉFAUT DE PAIEMENT : TOTAL / PARTIEL / REFUS INDEXATION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Paiement intégral',
     question:
         'Le délit peut être constitué même si le débiteur a payé “un peu” :',
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le délit est constitué en cas de paiement partiel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Indexation',
     question:
         'Le refus de prendre en compte une indexation (réévaluation) peut :',
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite Cass. crim., 26 octobre 1987 sur le refus d’indexation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Paiement en nature',
     question:
         'Le débiteur peut échapper à l’infraction en payant “en nature” (cadeaux, courses, etc.) :',
@@ -1047,7 +1047,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que paiements en nature ne permettent pas d’exonération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Compensation',
     question:
         'Le débiteur peut échapper à l’infraction en compensant avec une dette de l’autre parent :',
@@ -1060,7 +1060,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — DÉLAI : + DE 2 MOIS (PIÈGES CLASSIQUES)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'Le texte exige que le débiteur demeure plus de deux mois :',
     options: [
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise “plus de deux mois sans s’acquitter intégralement”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question:
         'Si le débiteur ne paie pas pendant exactement deux mois, l’infraction est :',
@@ -1087,7 +1087,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite CA Paris, 16 mars 1994 : il faut dépasser les deux mois.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'Le point de départ du délai est fixé notamment à :',
     options: [
@@ -1099,7 +1099,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique la signification comme point de départ.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Délai',
     question: 'En cas d’interruption des paiements, le point de départ est :',
     options: [
@@ -1115,7 +1115,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — “RÉTROACTIVITÉ” : AUCUNE SITUATION POSTÉRIEURE N’EFFACE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Une situation postérieure peut effacer rétroactivement l’existence du délit :',
@@ -1125,7 +1125,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique qu’aucune situation postérieure n’efface rétroactivement l’existence du délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Le délit peut subsister même si la décision de base est cassée ultérieurement :',
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 26 juillet 1977.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Le délit peut subsister même si la décision est réformée partiellement ensuite :',
@@ -1147,7 +1147,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 21 mai 1980.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Effets postérieurs',
     question:
         'Le paiement tardif après expiration du délai de plus de deux mois :',
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 23 mars 1981 (paiement tardif).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation d’enfant mineur — Fondement',
     question:
         'La non-représentation d’enfant mineur est définie et réprimée par :',
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-5 — NON-REPRÉSENTATION D’ENFANT : BASES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-5',
     question: 'La non-représentation d’enfant mineur est prévue par :',
     options: [
@@ -1194,7 +1194,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 227-5 définit et réprime la non-représentation d’enfant mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-5',
     question: 'Le délit de non-représentation d’enfant consiste à :',
     options: [
@@ -1208,7 +1208,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Élément matériel : refus indû de représenter le mineur à celui qui a droit de le réclamer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Définition du mineur',
     question: 'Selon l’article 388 du code civil, est mineure toute personne :',
     options: [
@@ -1225,7 +1225,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-5 — DROIT DE RÉCLAMER : ORIGINE ET CONDITIONS
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer le mineur provient le plus souvent :',
     options: [
@@ -1239,7 +1239,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que l’origine est généralement judiciaire ou conventionnelle (homologuée/229-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'Pour que le droit de réclamer soit opposable pénalement, la jurisprudence exige notamment que la décision :',
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Décision exécutoire + connaissance légale de l’auteur du refus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer l’enfant est aussi reconnu par la loi à :',
     options: [
@@ -1267,7 +1267,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne la reconnaissance légale à toute personne investie de l’autorité parentale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'À défaut d’une décision délimitant les droits, le délit ne peut être constitué si le conflit oppose :',
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-5 — REFUS : ACTIF DIRECT / ACTIF INDIRECT / PASSIF
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus (formes)',
     question: 'Le refus de représenter le mineur peut résulter :',
     options: [
@@ -1297,7 +1297,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support distingue actif direct, actif indirect et passif.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus actif direct',
     question: 'La dissimulation du mineur est un exemple de :',
     options: [
@@ -1310,7 +1310,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite la dissimulation du mineur comme actif direct.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus actif direct',
     question:
         'Le fait d’être volontairement absent du domicile quand l’autre parent vient exercer son droit est un :',
@@ -1324,7 +1324,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite l’absence du domicile comme exemple d’actif direct.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus actif indirect',
     question:
         'Manipuler le mineur pour l’inciter à refuser la visite/hébergement constitue :',
@@ -1338,7 +1338,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite la manipulation du mineur comme actif indirect.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Refus passif',
     question: 'Le refus peut être passif lorsque le parent gardien :',
     options: [
@@ -1351,7 +1351,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support décrit cette hypothèse de comportement passif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Jurisprudence',
     question: 'Selon la jurisprudence rappelée, la résistance du mineur :',
     options: [
@@ -1368,7 +1368,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-5 — ÉLÉMENT MORAL / JUSTIFICATION
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'Le terme « refus » implique :',
     options: [
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que « refus » indique une attitude consciente et volontaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'L’adverbe « indûment » souligne :',
     options: [
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que « indûment » souligne la mauvaise foi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'L’élément intentionnel suppose que l’auteur ait agi :',
     options: [
@@ -1406,7 +1406,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise la connaissance des droits empêchés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Cass. crim. 08/09/1999',
     question:
         'Selon Cass. crim., 08 septembre 1999, l’élément intentionnel est caractérisé par :',
@@ -1420,7 +1420,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite cette formule de la Cour de cassation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Justification',
     question:
         'La justification admise par la jurisprudence pour non-représentation suppose :',
@@ -1438,7 +1438,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-5 — AGGRAVATIONS 227-9 / 227-10 + PEINES + PROCÉDURE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'La circonstance aggravante (227-9) est constituée si l’enfant est retenu au-delà de cinq jours :',
@@ -1453,7 +1453,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne la rétention > 5 jours avec lieu inconnu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'La circonstance aggravante (227-9) est aussi constituée si l’enfant est retenu indûment :',
@@ -1467,7 +1467,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique l’aggravation en cas de rétention hors du territoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-10',
     question:
         'La circonstance aggravante (227-10) est constituée si l’auteur :',
@@ -1482,7 +1482,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise la déchéance ou le retrait de l’exercice de l’autorité parentale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Peines',
     question: 'La peine encourue (forme simple) pour 227-5 est :',
     options: [
@@ -1494,7 +1494,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 1 an + 15 000 € (forme simple).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Peines',
     question: 'En cas d’aggravation (227-9 ou 227-10), la peine encourue est :',
     options: [
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 3 ans + 45 000 € en aggravé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question: 'Pour 227-5, la tentative est :',
     options: ['Non', 'Oui', 'Oui si l’enfant est à l’étranger'],
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : tentative non prévue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question: 'Pour 227-5, la complicité est :',
     options: [
@@ -1530,7 +1530,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-6 — DÉFAUT DE NOTIFICATION DE TRANSFERT DE DOMICILE : BASES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'Le défaut de notification de transfert de domicile est prévu par :',
@@ -1544,7 +1544,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 227-6 définit et réprime le défaut de notification de transfert de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'L’infraction 227-6 vise le cas où un parent transfère son domicile alors que :',
@@ -1558,7 +1558,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Condition : enfants résident habituellement au domicile de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'Le délai légal de notification (227-6) est :',
     options: ['Un mois', 'Cinq jours', 'Six jours'],
@@ -1566,7 +1566,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support prévoit un délai d’un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'La notification du transfert de domicile (227-6) doit être adressée :',
@@ -1580,7 +1580,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise les titulaires du droit de visite/hébergement (autre parent ou tiers).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question:
         'La décision fondant le droit de visite/hébergement (227-6) doit être :',
@@ -1593,7 +1593,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : exécutoire et notifiée à l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'Concernant la forme de la notification (227-6) :',
     options: [
@@ -1605,7 +1605,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : aucune exigence sur la forme.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'L’élément moral de 227-6 est caractérisé par :',
     options: [
@@ -1618,7 +1618,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise l’intention et exclut la simple négligence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — 227-6',
     question: 'La simple négligence est punissable pour 227-6 :',
     options: ['Non', 'Oui', 'Oui seulement si déménagement loin'],
@@ -1627,7 +1627,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que la simple négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — Répression',
     question: 'La peine encourue (personne physique) pour 227-6 est :',
     options: [
@@ -1639,7 +1639,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la tentative est :',
     options: ['Non', 'Oui', 'Oui si l’enfant est déplacé'],
@@ -1647,7 +1647,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : tentative non prévue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la complicité est :',
     options: [
@@ -1663,7 +1663,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-7 — SOUSTRACTION PAR ASCENDANT : POINTS CLÉS
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — 227-7',
     question: 'La soustraction d’enfant mineur par ascendant est prévue par :',
     options: [
@@ -1676,7 +1676,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 227-7 définit la soustraction d’enfant mineur par ascendant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — 227-7',
     question: 'Pour 227-7, l’auteur doit avoir :',
     options: [
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : tout ascendant peut être auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — 227-7',
     question: 'La soustraction implique :',
     options: [
@@ -1702,7 +1702,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support définit la soustraction par un acte positif de déplacement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Jurisprudence',
     question:
         'Selon la jurisprudence citée, un déplacement de quelques heures :',
@@ -1715,7 +1715,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 23 décembre 1968.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément moral',
     question: 'L’infraction 227-7 est intentionnelle : l’auteur agit en :',
     options: [
@@ -1728,7 +1728,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : connaissance de l’absence de droit + déplacement durable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Peines',
     question: 'La peine encourue (forme simple) pour 227-7 est :',
     options: [
@@ -1740,7 +1740,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 1 an + 15 000 € (forme simple).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Tentative',
     question: 'La tentative de soustraction par ascendant est :',
     options: [
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-8 — SOUSTRACTION PAR TIERS SANS FRAUDE NI VIOLENCE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — 227-8',
     question:
         'La soustraction d’enfant mineur sans fraude ni violence par un non-ascendant est prévue par :',
@@ -1770,7 +1770,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 227-8 définit la soustraction sans fraude ni violence par un non-ascendant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — 227-8',
     question: 'Pour 227-8, l’auteur doit être :',
     options: [
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Condition : auteur non ascendant (tiers ou famille non ascendant).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — 227-8',
     question: 'Le support rappelle que 227-8 exige une soustraction :',
     options: ['Sans fraude ni violence', 'Avec violence', 'Avec fraude'],
@@ -1791,7 +1791,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte impose l’absence de fraude et de violence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Répression',
     question: 'La peine encourue (forme simple) pour 227-8 est :',
     options: [
@@ -1803,7 +1803,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 5 ans + 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Tentative',
     question: 'La tentative de soustraction par tiers (227-8) est :',
     options: [
@@ -1815,7 +1815,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : tentative prévue par 227-11 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Erreur sur l’âge',
     question:
         'Le support admet qu’il n’y a pas de délit si l’auteur a pu raisonnablement :',
@@ -1828,7 +1828,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne l’erreur raisonnable sur l’âge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Jurisprudence',
     question:
         'Selon Cass. crim., 3 sept. 2014 (cité), le délit est constitué si un tiers recueillant un mineur en fugue :',
@@ -1846,7 +1846,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-9 / 227-10 — AGGRAVATIONS COMMUNES (UTILISABLES SUR 227-5 ET 227-7)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aggravations — 227-9',
     question:
         'La circonstance aggravante 227-9 est constituée si l’enfant est retenu au-delà de cinq jours :',
@@ -1861,7 +1861,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         '227-9 : > 5 jours + lieu inconnu pour les titulaires du droit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aggravations — 227-9',
     question:
         'La circonstance aggravante 227-9 est aussi constituée si l’enfant est retenu indûment :',
@@ -1874,7 +1874,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-9 : rétention indue hors du territoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Aggravations — 227-10',
     question: 'La circonstance aggravante 227-10 vise le cas où l’auteur :',
     options: [
@@ -1892,7 +1892,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-11 — TENTATIVE (POINT COMMUN)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Tentative — 227-11',
     question: 'La tentative est expressément prévue par 227-11 pour :',
     options: [
@@ -1910,7 +1910,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // CAS PRATIQUES (QCM) — SUPER EFFICACES
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-5',
     question:
         'Un parent gardien refuse de remettre l’enfant à l’autre parent pendant le week-end prévu par une décision exécutoire portée à sa connaissance. Qualification la plus adaptée :',
@@ -1924,7 +1924,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Refus indû de représenter l’enfant à celui qui a le droit de le réclamer : 227-5.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-6',
     question:
         'Un parent gardien déménage avec les enfants et n’informe pas l’autre parent titulaire d’un droit de visite dans le mois. Qualification la plus adaptée :',
@@ -1938,7 +1938,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Changement de domicile du parent gardien + absence de notification dans le mois : 227-6.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-7',
     question:
         'Un grand-parent emmène durablement l’enfant du domicile habituel sans droit et le garde plusieurs jours. Qualification la plus adaptée :',
@@ -1951,7 +1951,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le grand-parent est un ascendant : 227-7.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-8',
     question:
         'Une tante héberge un mineur en fugue et ne prévient pas les parents. Qualification la plus adaptée selon le support :',
@@ -1967,7 +1967,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation d’enfant mineur — Fondement',
     question:
         'La non-représentation d’enfant mineur consiste principalement à :',
@@ -1982,7 +1982,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le délit est le refus indû de représenter le mineur à celui qui a le droit de le réclamer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation d’enfant mineur — Fondement',
     question:
         'Au sens de l’article 388 du code civil, est mineure toute personne :',
@@ -2000,7 +2000,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-REPRÉSENTATION — DROIT DE RÉCLAMER LE MINEUR (SOURCE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer le mineur a en général pour origine :',
     options: [
@@ -2014,7 +2014,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que le droit provient généralement d’une décision de justice, d’une convention homologuée ou d’une convention 229-1 C. civ.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'Le droit de garde, de visite ou d’hébergement peut être attribué :',
@@ -2028,7 +2028,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que ces droits peuvent être provisoires ou définitifs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'La jurisprudence exige que la décision fondant le droit de réclamer soit :',
@@ -2043,7 +2043,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que la décision doit être exécutoire et portée légalement à la connaissance de l’auteur du refus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question: 'Le droit de réclamer l’enfant est aussi reconnu par la loi à :',
     options: [
@@ -2056,7 +2056,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le droit est aussi reconnu à toute personne investie de l’autorité parentale (père, mère, tuteur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'En règle générale, les personnes investies de l’autorité parentale sont :',
@@ -2069,7 +2069,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite : père, mère ou tuteur du mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'À défaut d’une décision délimitant les droits de chacun, le délit ne peut pas être constitué lorsque le conflit oppose :',
@@ -2083,7 +2083,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique qu’en l’absence de décision délimitant les droits, le délit n’est pas constitué si les droits sont égaux (ex : parents séparés de fait).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Droit de réclamer',
     question:
         'Le cas typique où le délit ne peut être constitué faute de décision délimitant les droits est :',
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-REPRÉSENTATION — REFUS DE REPRÉSENTER : SCÉNARIOS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus de représenter le mineur peut être le fait :',
     options: [
@@ -2113,7 +2113,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que le refus est souvent le fait du parent ayant la garde refusant le droit de visite/hébergement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus peut aussi être commis par :',
     options: [
@@ -2127,7 +2127,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise aussi le parent qui ne remet pas l’enfant à l’issue de la période d’hébergement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus de représenter le mineur peut résulter :',
     options: [
@@ -2140,7 +2140,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne le comportement actif direct (refus pur et simple, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Parmi les exemples de comportement actif direct, on trouve :',
     options: [
@@ -2152,7 +2152,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la dissimulation du mineur comme exemple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question:
         'Parmi les exemples de comportement actif direct, on trouve également :',
@@ -2167,7 +2167,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite l’absence du domicile lors de la présentation du titulaire du droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Le refus de représenter le mineur peut aussi résulter :',
     options: [
@@ -2180,7 +2180,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne le comportement actif indirect (manipulation du mineur).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question: 'Un exemple de comportement actif indirect est :',
     options: [
@@ -2193,7 +2193,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la manipulation du mineur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question:
         'Le refus de représenter peut résulter d’un comportement passif lorsque :',
@@ -2207,7 +2207,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support décrit l’hypothèse du comportement passif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément matériel',
     question:
         'Selon la jurisprudence rappelée par le support, la résistance du mineur :',
@@ -2225,7 +2225,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-REPRÉSENTATION — ÉLÉMENT MORAL (INTENTION / MAUVAISE FOI)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'La non-représentation d’enfant mineur est une infraction :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Contraventionnelle'],
@@ -2233,7 +2233,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise que l’infraction est intentionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'Le terme « refus » indique :',
     options: [
@@ -2246,7 +2246,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que « refus » traduit une attitude consciente et volontaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'L’adverbe « indûment » souligne :',
     options: [
@@ -2259,7 +2259,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que « indûment » souligne la mauvaise foi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question:
         'Pour caractériser l’intention, une décision de justice préalable doit avoir été :',
@@ -2272,7 +2272,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support insiste sur la connaissance des droits empêchés.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question:
         'Selon la Cour de cassation (08/09/1999), l’élément intentionnel est caractérisé par :',
@@ -2287,7 +2287,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support cite Cass. crim., 08 septembre 1999 sur le refus délibéré/indû.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'D’après Cass. crim., 08/09/1999, le mobile de l’auteur :',
     options: [
@@ -2299,7 +2299,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise que le mobile importe peu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Élément moral',
     question: 'La non-représentation peut être justifiée si est démontrée :',
     options: [
@@ -2316,7 +2316,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-REPRÉSENTATION — CIRCONSTANCES AGGRAVANTES (227-9 / 227-10)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Circonstances aggravantes',
     question:
         'Les circonstances aggravantes de non-représentation d’enfant sont prévues par :',
@@ -2329,7 +2329,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne 227-9 CP et 227-10 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'Selon 227-9 CP, il y a aggravation si l’enfant est retenu au-delà de cinq jours :',
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite l’aggravation : > 5 jours + lieu inconnu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-9',
     question:
         'Selon 227-9 CP, il y a aggravation si l’enfant est retenu indûment :',
@@ -2357,7 +2357,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne l’aggravation en cas de rétention hors du territoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — 227-10',
     question:
         'Selon 227-10 CP, il y a aggravation si la personne coupable a été :',
@@ -2376,7 +2376,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-REPRÉSENTATION — RÉPRESSION (227-5 simple / aggravée)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Répression',
     question:
         'La peine encourue (forme simple) pour la non-représentation (227-5) est :',
@@ -2389,7 +2389,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 1 an + 15 000 € pour la forme simple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Répression',
     question:
         'En cas de circonstances aggravantes (227-9 ou 227-10), la peine encourue est :',
@@ -2402,7 +2402,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 3 ans + 45 000 € en aggravé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question: 'Pour la non-représentation d’enfant (227-5), la tentative est :',
     options: ['Non', 'Oui', 'Oui uniquement en aggravé'],
@@ -2410,7 +2410,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-représentation — Tentative / complicité',
     question:
         'Pour la non-représentation d’enfant (227-5), la complicité est :',
@@ -2427,7 +2427,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION DE TRANSFERT DE DOMICILE — FONDEMENTS (227-6)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Fondement',
     question:
         'Le défaut de notification de transfert de domicile est prévu par :',
@@ -2440,7 +2440,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’élément légal est fixé par l’article 227-6 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Fondement',
     question: 'L’infraction 227-6 vise le cas où :',
     options: [
@@ -2454,7 +2454,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : parent qui change de domicile avec des enfants résidant habituellement chez lui.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Fondement',
     question:
         '227-6 impose de notifier le changement de domicile dans un délai de :',
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-6 — ÉLÉMENT MATÉRIEL : TRANSFERT + ABSENCE DE NOTIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question:
         'Le transfert de domicile visé par 227-6 concerne principalement :',
@@ -2481,7 +2481,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : parent gardien chez qui l’enfant réside habituellement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question: 'Le support précise que sont visés par 227-6 :',
     options: [
@@ -2493,7 +2493,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique que tous ces parents sont visés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question: 'Pour caractériser 227-6, l’auteur doit :',
     options: [
@@ -2506,7 +2506,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support décrit l’idée d’emmener l’enfant avec le parent qui déménage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question:
         'Le droit de visite ou d’hébergement du bénéficiaire doit être prévu par :',
@@ -2520,7 +2520,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support renvoie à ces trois sources.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question: 'La décision fondant le droit de visite/hébergement doit être :',
     options: [
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support insiste sur l’exécutivité et la notification.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément matériel',
     question:
         'Concernant la forme de la notification du changement de domicile (227-6), le support indique :',
@@ -2549,7 +2549,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-6 — ÉLÉMENT MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément moral',
     question:
         'Le défaut de notification de transfert de domicile (227-6) est une infraction :',
@@ -2559,7 +2559,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise l’intention : volonté de faire échec au droit de visite/hébergement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément moral',
     question: 'Selon le support, l’intention dans 227-6 suppose :',
     options: [
@@ -2572,7 +2572,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que l’intention vise à empêcher l’exercice du droit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Élément moral',
     question: 'Pour 227-6, la simple négligence est punissable :',
     options: ['Non', 'Oui', 'Oui si le déménagement est loin'],
@@ -2585,7 +2585,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-6 — CIRCONSTANCES / RÉPRESSION / TENTATIVE / COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Circonstances',
     question: 'Pour 227-6, les circonstances aggravantes prévues sont :',
     options: [
@@ -2597,7 +2597,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Répression',
     question: 'La peine encourue pour 227-6 (personne physique) est :',
     options: [
@@ -2609,7 +2609,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la tentative est :',
     options: ['Non', 'Oui', 'Oui uniquement si l’enfant est à l’étranger'],
@@ -2617,7 +2617,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut notification transfert domicile — Tentative / complicité',
     question: 'Pour 227-6, la complicité est :',
     options: [
@@ -2633,7 +2633,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // SOUSTRACTION D’ENFANT MINEUR PAR ASCENDANT — FONDEMENTS (227-7)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Fondement',
     question: 'La soustraction d’enfant mineur par ascendant est prévue par :',
     options: [
@@ -2645,7 +2645,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’élément légal est fixé par l’article 227-7 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'Pour 227-7, l’auteur doit être :',
     options: [
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise que tout ascendant peut être auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'Sont notamment des ascendants au sens du support :',
     options: [
@@ -2669,7 +2669,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite ces exemples d’ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'Pour 227-7, il doit exister entre l’auteur et le mineur :',
     options: [
@@ -2682,7 +2682,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support exige un lien de filiation entre l’agent et le mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question:
         'Les personnes des mains desquelles le mineur est soustrait sont :',
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support reprend la formule du texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'L’acte de soustraction implique :',
     options: [
@@ -2710,7 +2710,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support définit la soustraction par un acte positif de déplacement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question:
         'Le support précise que l’infraction ne peut être retenue contre :',
@@ -2724,7 +2724,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique qu’on ne retient pas l’infraction si l’enfant a été confié volontairement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question: 'La soustraction peut consister aussi à :',
     options: [
@@ -2736,7 +2736,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne cette hypothèse.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément matériel',
     question:
         'Selon la jurisprudence citée, un déplacement de quelques heures :',
@@ -2749,7 +2749,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 23 décembre 1968.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Éléments spéciaux',
     question:
         'Le support indique que 227-7 ne limite pas la soustraction “sans fraude ni violence”, ce qui signifie :',
@@ -2768,7 +2768,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-7 — ÉLÉMENT MORAL / CIRCONSTANCES / RÉPRESSION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément moral',
     question:
         'La soustraction d’enfant mineur par ascendant (227-7) est une infraction :',
@@ -2777,7 +2777,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise que l’infraction est intentionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Élément moral',
     question: 'L’intention, selon le support, suppose que l’auteur agisse :',
     options: [
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : connaissance de son absence de droit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Répression',
     question: 'La peine encourue (forme simple) pour 227-7 est :',
     options: [
@@ -2801,7 +2801,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 1 an + 15 000 € pour la forme simple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Circonstances aggravantes',
     question:
         'Les circonstances aggravantes applicables à 227-7 sont prévues par :',
@@ -2814,7 +2814,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique 227-9 et 227-10 comme aggravations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Répression aggravée',
     question:
         'En cas de circonstances 227-9 ou 227-10, la peine encourue pour 227-7 est :',
@@ -2827,7 +2827,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 3 ans + 45 000 € en aggravé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Tentative / complicité',
     question: 'Pour 227-7, la tentative est :',
     options: [
@@ -2840,7 +2840,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : tentative expressément prévue par 227-11 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par ascendant — Tentative / complicité',
     question: 'Pour 227-7, la complicité est :',
     options: [
@@ -2856,7 +2856,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // SOUSTRACTION SANS FRAUDE NI VIOLENCE (TIERS) — FONDEMENTS (227-8)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Fondement',
     question:
         'La soustraction d’enfant mineur sans fraude ni violence par une personne autre qu’un ascendant est prévue par :',
@@ -2869,7 +2869,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’élément légal est fixé par l’article 227-8 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'Pour 227-8, l’auteur doit être :',
     options: [
@@ -2882,7 +2882,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : auteur non ascendant (tiers ou membre de famille non ascendant).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'Peut être auteur au sens de 227-8 :',
     options: [
@@ -2895,7 +2895,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support donne ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'Le texte 227-8 exige que la soustraction soit commise :',
     options: [
@@ -2907,7 +2907,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique la condition “sans fraude ni violence”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Jurisprudence',
     question:
         'Selon la jurisprudence citée (Cass. crim., 3 sept. 2014), le délit peut être constitué si le tiers qui recueille un mineur en fugue :',
@@ -2920,7 +2920,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite Cass. crim., 3 sept. 2014.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question: 'La soustraction, selon le support, implique :',
     options: [
@@ -2934,7 +2934,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Même définition générale de la soustraction par acte positif de déplacement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément matériel',
     question:
         'Le support rappelle que la fraude ou la violence orientent plutôt vers :',
@@ -2952,7 +2952,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-8 — ÉLÉMENT MORAL / CIRCONSTANCES / RÉPRESSION / TENTATIVE / COMPLICITÉ
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément moral',
     question:
         'La soustraction sans fraude ni violence (227-8) est une infraction :',
@@ -2962,7 +2962,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise l’intention : connaissance de son absence de droit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Élément moral',
     question:
         'Le support admet qu’il n’y a pas délit si l’auteur a pu raisonnablement :',
@@ -2975,7 +2975,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne l’erreur raisonnable sur l’âge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Circonstances aggravantes',
     question: 'Pour 227-8, les circonstances aggravantes prévues sont :',
     options: [
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Répression',
     question: 'La peine encourue (personne physique) pour 227-8 est :',
     options: [
@@ -2999,7 +2999,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe : 5 ans + 75 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Tentative / complicité',
     question: 'Pour 227-8, la tentative est :',
     options: [
@@ -3011,7 +3011,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : tentative prévue par 227-11 CP.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction par tiers — Tentative / complicité',
     question: 'Pour 227-8, la complicité est :',
     options: [
@@ -3027,7 +3027,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS COMPARATIVES ULTRA RENTABLES (227-5 / 227-6 / 227-7 / 227-8)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise le refus indû de représenter un enfant mineur ?',
@@ -3036,7 +3036,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-5 = non-représentation d’enfant mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise le défaut de notification de transfert de domicile du parent gardien ?',
@@ -3045,7 +3045,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-6 = défaut de notification de transfert de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise la soustraction d’enfant mineur commise par un ascendant ?',
@@ -3054,7 +3054,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-7 = soustraction par ascendant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Autorité parentale',
     question:
         'Quel article vise la soustraction d’enfant mineur sans fraude ni violence par un tiers ?',
@@ -3064,7 +3064,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         '227-8 = soustraction par personne autre qu’un ascendant, sans fraude ni violence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Peines',
     question:
         'Quelle infraction est la plus sévèrement punie en forme simple selon le support ?',
@@ -3077,7 +3077,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe 227-8 à 5 ans et 75 000 € (forme simple).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question: 'Selon le support, la tentative est prévue pour :',
     options: [
@@ -3090,7 +3090,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique tentative OUI pour 227-7 et 227-8, prévue par 227-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Fondement',
     question: 'L’infraction de corruption de mineur est prévue par :',
     options: [
@@ -3106,7 +3106,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // CORRUPTION DE MINEUR — 227-22
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Fondement',
     question: 'La corruption de mineur est prévue et réprimée par :',
     options: [
@@ -3119,7 +3119,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que la corruption de mineur est prévue par l’article 227-22 al.1 et 2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Auteur',
     question:
         'Concernant l’auteur de la corruption de mineur (art. 227-22), il peut être :',
@@ -3133,7 +3133,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’alinéa 1 ne fixe pas de condition d’âge : l’auteur peut être majeur ou mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Victime',
     question: 'La victime de la corruption de mineur doit être :',
     options: [
@@ -3146,7 +3146,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La victime est un mineur de 18 ans (sans condition de moralité, consentement indifférent).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Consentement',
     question: 'Le consentement du mineur, en matière de corruption de mineur :',
     options: [
@@ -3158,7 +3158,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il importe peu que le mineur soit consentant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Acte',
     question: 'La corruption de mineur vise notamment :',
     options: [
@@ -3172,7 +3172,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours définit l’acte de corruption par l’objectif de dépravation sexuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Propos obscènes',
     question: 'De simples propos obscènes ou de simples conseils sont :',
     options: [
@@ -3185,7 +3185,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que les simples propos/conseils ne suffisent pas : il faut persistance et précision.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Résultat',
     question:
         'Pour caractériser la corruption de mineur, il faut prouver que le mineur :',
@@ -3199,7 +3199,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Il n’est pas nécessaire d’établir un trouble effectif ni un passage à l’acte du mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Illustration (alinéa 2)',
     question: 'L’alinéa 2 de l’article 227-22 vise notamment :',
     options: [
@@ -3213,7 +3213,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Cas expressément prévu : réunions comportant exhibitions ou relations sexuelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunion',
     question:
         'Assister en connaissance de cause à une réunion comportant exhibitions ou relations sexuelles avec présence d’un mineur :',
@@ -3227,7 +3227,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’alinéa 2 réprime aussi l’assistance en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question: 'L’élément moral exige notamment :',
     options: [
@@ -3240,7 +3240,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur la conscience obscénité + âge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — But',
     question:
         'Si l’auteur agit uniquement pour assouvir ses pulsions personnelles sans chercher à dépraver le mineur :',
@@ -3254,7 +3254,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que l’intention de corrompre est nécessaire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Circonstance aggravante (réseaux)',
     question:
         'La corruption de mineur est aggravée si le mineur a été mis en contact via :',
@@ -3268,7 +3268,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Circ. aggravante prévue à l’article 227-22 al.1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Circonstance aggravante (lieux)',
     question: 'La corruption de mineur est aggravée si commise :',
     options: [
@@ -3281,7 +3281,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Circ. aggravante prévue à l’article 227-22 al.1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Aggravation âge',
     question: 'Lorsque le mineur est âgé de moins de 15 ans :',
     options: [
@@ -3293,7 +3293,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’âge < 15 ans constitue une circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Bande organisée',
     question: 'La corruption de mineur commise en bande organisée :',
     options: ['Est aggravée', 'N’est pas visée', 'Relève uniquement du civil'],
@@ -3301,7 +3301,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Art. 227-22 al.3 : bande organisée = aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur est :',
     options: [
@@ -3317,7 +3317,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // DIFFUSION MESSAGE VIOLENT / TERRORISME / PORNO / DANGEREUX — 227-24
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Fondement',
     question:
         'La diffusion d’un message violent/terroriste/pornographique/dangereux susceptible d’être vu par un mineur est prévue par :',
@@ -3330,7 +3330,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise l’article 227-24 al.1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Notion',
     question: 'Le terme « message » doit être compris :',
     options: [
@@ -3342,7 +3342,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise une acception très large du message.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Support',
     question: 'Le support du message (art. 227-24) est :',
     options: ['Indifférent', 'Uniquement papier', 'Uniquement numérique'],
@@ -3351,7 +3351,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Texte : « par quelque moyen que ce soit et quel qu’en soit le support ».',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Mineur atteint ?',
     question:
         'Pour caractériser l’infraction, il faut que le mineur ait effectivement vu le message :',
@@ -3364,7 +3364,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise la susceptibilité, pas l’atteinte effective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Négligence',
     question: 'L’infraction peut être constituée en cas :',
     options: [
@@ -3377,7 +3377,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours mentionne l’imprudence/négligence permettant l’accès.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Tentative',
     question: 'La tentative de l’infraction de l’article 227-24 est :',
     options: ['Non punissable', 'Punissable', 'Toujours punissable'],
@@ -3389,7 +3389,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PRIVATION D’ALIMENTS OU DE SOINS — 227-15 / 227-16
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Fondement',
     question:
         'La privation d’aliments ou de soins à mineur de 15 ans est prévue par :',
@@ -3402,7 +3402,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise expressément l’article 227-15 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Victime',
     question: 'La victime doit être :',
     options: [
@@ -3414,7 +3414,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Interprétation stricte : < 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Auteur',
     question: 'Peut être auteur de l’infraction (art. 227-15) :',
     options: [
@@ -3428,7 +3428,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise plusieurs catégories : ascendants, autorité parentale, autorité de fait.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Notion',
     question: 'La privation de soins concerne notamment :',
     options: [
@@ -3440,7 +3440,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours décrit la privation de soins au quotidien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Condition de santé',
     question: 'Pour être punissable, la privation doit :',
     options: [
@@ -3452,7 +3452,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition centrale : compromission de la santé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Résultat',
     question: 'L’article 227-15 exige :',
     options: [
@@ -3465,7 +3465,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Pas besoin d’atteinte grave effective : susceptibilité suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Présomption (moins de 6 ans)',
     question:
         'Maintenir un enfant de moins de 6 ans sur la voie publique pour solliciter la générosité :',
@@ -3478,7 +3478,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Présomption prévue à l’article 227-15 al.2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Mendicité',
     question: 'Le simple fait de mendier avec un enfant en bas âge est :',
     options: [
@@ -3490,7 +3490,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite : pas en soi constitutif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Élément moral',
     question: 'L’élément moral implique :',
     options: [
@@ -3503,7 +3503,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Cass. crim., 11 mars 1975 : conscience/prévision du mal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Aggravation mort',
     question: 'Si la privation entraîne la mort du mineur :',
     options: [
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne l’article 227-16 en cas de mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Tentative',
     question: 'La tentative de privation d’aliments ou de soins (227-15) est :',
     options: [
@@ -3531,7 +3531,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PROVOCATION DIRECTE D’UN MINEUR À COMMETTRE CRIME/DÉLIT — 227-21
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Fondement',
     question:
         'La provocation directe d’un mineur à commettre un crime ou un délit est prévue par :',
@@ -3544,7 +3544,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise expressément l’article 227-21 al.1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Directe',
     question: 'La provocation doit être :',
     options: [
@@ -3556,7 +3556,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur la relation précise et incontestable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Contravention',
     question: 'La provocation visée par l’article 227-21 concerne :',
     options: [
@@ -3568,7 +3568,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La provocation à une contravention n’est pas visée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Effet',
     question: 'Il est nécessaire que la provocation ait été suivie d’effet :',
     options: ['Oui', 'Non', 'Uniquement si le mineur < 15 ans'],
@@ -3576,7 +3576,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’infraction est autonome : effet indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Habitude',
     question: 'La provocation à un acte unique peut suffire :',
     options: [
@@ -3588,7 +3588,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise qu’un acte unique suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Aggravations',
     question: 'L’article 227-21 al.2 prévoit notamment l’aggravation si :',
     options: [
@@ -3600,7 +3600,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Circ. aggravante : mineur de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -3616,7 +3616,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PROPOSITIONS SEXUELLES À MINEUR < 15 ANS PAR INTERNET — 227-22-1
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Fondement',
     question:
         'Les propositions sexuelles à un mineur de 15 ans via communication électronique sont prévues par :',
@@ -3629,7 +3629,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise l’article 227-22-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Auteur',
     question: 'L’auteur des propositions sexuelles (227-22-1) doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -3637,7 +3637,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise expressément un majeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Victime',
     question: 'La victime peut être :',
     options: [
@@ -3650,7 +3650,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Il suffit que l’auteur ait cru échanger avec un mineur de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Objet',
     question: 'Les propositions doivent être :',
     options: [
@@ -3662,7 +3662,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur des propositions explicites.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Aggravation',
     question: 'L’infraction est aggravée lorsque :',
     options: [
@@ -3674,7 +3674,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Art. 227-22-1 al.2 : rencontre = aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Tentative',
     question:
         'La tentative des propositions sexuelles à mineur (227-22-1) est :',
@@ -3691,7 +3691,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // ATTEINTES SEXUELLES — MAJEUR SUR MINEUR < 15 ANS — 227-25 / 227-26
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Fondement',
     question:
         'L’atteinte sexuelle par un majeur sur mineur de 15 ans (hors viol/agression sexuelle) est prévue par :',
@@ -3704,7 +3704,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise l’article 227-25 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Définition',
     question: 'L’atteinte sexuelle suppose :',
     options: [
@@ -3716,7 +3716,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Sinon : viol/agression sexuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Auteur',
     question: 'L’auteur doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -3724,7 +3724,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise expressément le majeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Connaissance de l’âge',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -3737,7 +3737,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Principe : erreur non exonératoire, sauf hypothèses très particulières admises par la jurisprudence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Aggravation',
     question:
         'L’atteinte sexuelle (227-25) est aggravée (227-26) notamment si :',
@@ -3751,7 +3751,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Art. 227-26 : autorité, abus de fonctions, pluralité, réseau, ivresse/stupéfiants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Tentative',
     question: 'La tentative des atteintes sexuelles sur mineur est :',
     options: ['Punissable', 'Non punissable', 'Punissable seulement si ITT'],
@@ -3763,7 +3763,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // ATTEINTES SEXUELLES — MAJEUR SUR MINEUR > 15 — 227-27
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Fondement',
     question:
         'Les atteintes sexuelles sur mineur de plus de 15 ans (hors viol/agression sexuelle) sont prévues par :',
@@ -3776,7 +3776,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise l’article 227-27 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Condition',
     question: 'Pour relever de l’article 227-27, il faut notamment :',
     options: [
@@ -3788,7 +3788,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise ces deux hypothèses.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Victime',
     question: 'La victime doit être :',
     options: [
@@ -3800,7 +3800,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Critère d’âge au jour des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Tentative',
     question: 'La tentative des atteintes sexuelles sur mineur (227-27) est :',
     options: [
@@ -3816,7 +3816,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PÉDOPORNOGRAPHIE — 227-23 (fabrication / diffusion / consultation / détention)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement',
     question:
         'L’exploitation de l’image pornographique d’un mineur est prévue par :',
@@ -3829,7 +3829,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours détaille les alinéas 1, 2, 4, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Notion image/représentation',
     question: 'Le texte vise :',
     options: [
@@ -3842,7 +3842,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le terme représentation couvre dessins, montages, morphing, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Pornographique',
     question: 'La simple nudité d’un mineur, sans attitude sexuelle :',
     options: [
@@ -3854,7 +3854,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il faut un caractère pornographique (activité sexuelle).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fabrication (al.1)',
     question: 'L’alinéa 1 réprime notamment :',
     options: [
@@ -3867,7 +3867,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Fabrication en vue de diffusion (sauf mineur < 15 ans : diffusion pas exigée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Mineur < 15 ans',
     question: 'Si l’image concerne un mineur de moins de 15 ans :',
     options: [
@@ -3879,7 +3879,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Exception expressément prévue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Diffusion (al.2)',
     question: 'L’alinéa 2 réprime notamment :',
     options: [
@@ -3891,7 +3891,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Diffusion au sens large.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Rendre disponible',
     question: 'Rendre disponible correspond notamment au fait :',
     options: [
@@ -3904,7 +3904,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours donne précisément cet exemple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Consultation/détention (al.4)',
     question: 'L’alinéa 4 réprime notamment :',
     options: [
@@ -3917,7 +3917,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Texte : consultation habituelle ou payante + acquisition/détention.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Paiement',
     question: 'La consultation est punie même si occasionnelle lorsqu’elle :',
     options: [
@@ -3929,7 +3929,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La consultation occasionnelle devient punissable si payante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Aggravations',
     question: 'Le réseau de communications électroniques peut constituer :',
     options: [
@@ -3941,7 +3941,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Aggravation prévue par le texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Bande organisée',
     question: 'La bande organisée constitue :',
     options: [
@@ -3953,7 +3953,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Aggravation prévue au texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Tentative',
     question: 'La tentative des infractions prévues par l’article 227-23 est :',
     options: [
@@ -3965,7 +3965,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Prévue à l’alinéa 6.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Corruption vs atteinte sexuelle',
     question:
         'Un majeur réalise un acte à connotation sexuelle devant un mineur pour l’exciter/dépraver : on vise prioritairement :',
@@ -3978,7 +3978,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'But = dépravation sexuelle du mineur : corruption.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — 227-24',
     question:
         'Pour 227-24, l’accès d’un mineur via une simple case “j’ai +18 ans” :',
@@ -3992,7 +3992,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que l’infraction peut être constituée même dans ce cas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — 227-15',
     question: 'Privation de soins à mineur : il faut établir :',
     options: [
@@ -4004,7 +4004,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est l’exigence textuelle centrale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — 227-21',
     question:
         'Une incitation générale “devenez délinquants” sans infraction déterminée :',
@@ -4018,7 +4018,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Consentement',
     question: 'Le consentement du mineur en matière de corruption :',
     options: ['Est indifférent', 'Exclut l’infraction', 'Atténue la peine'],
@@ -4028,7 +4028,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Acte matériel',
     question: 'Les simples propos obscènes isolés sont :',
     options: [
@@ -4042,7 +4042,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Internet',
     question:
         'Le fait de mettre un mineur en contact via un réseau de communication électronique constitue :',
@@ -4056,7 +4056,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur est :',
     options: [
@@ -4070,7 +4070,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question:
         'Si l’auteur agit uniquement pour assouvir ses pulsions sans volonté de corrompre :',
@@ -4083,7 +4083,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’intention de corrompre est indispensable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Support',
     question: 'Le support du message dangereux :',
     options: [
@@ -4096,7 +4096,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Public',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -4109,7 +4109,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Jeux dangereux',
     question:
         'Les jeux incitant à une mise en danger physique (ex : jeu du foulard) :',
@@ -4123,7 +4123,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Élément moral',
     question: 'L’élément moral est caractérisé par :',
     options: [
@@ -4135,7 +4135,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La négligence suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Âge de la victime',
     question: 'La victime doit être :',
     options: [
@@ -4148,7 +4148,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Mendicité',
     question:
         'Maintenir un enfant de moins de 6 ans sur la voie publique pour mendier :',
@@ -4162,7 +4162,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Résultat',
     question: 'Le dommage à la santé du mineur :',
     options: [
@@ -4175,7 +4175,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Élément moral',
     question: 'La volonté de nuire est :',
     options: ['Inutile', 'Obligatoire', 'Présumée'],
@@ -4184,7 +4184,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Aggravation',
     question: 'La privation ayant entraîné la mort du mineur constitue :',
     options: ['Un crime', 'Un délit aggravé', 'Une contravention'],
@@ -4192,7 +4192,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Prévu à l’article 227-16 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Nature',
     question: 'Une simple apologie générale de la délinquance :',
     options: ['Ne suffit pas', 'Est constitutive', 'Vaut tentative'],
@@ -4201,7 +4201,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Infraction visée',
     question: 'La provocation doit porter sur :',
     options: [
@@ -4214,7 +4214,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Effet',
     question: 'Le passage à l’acte du mineur est :',
     options: ['Indifférent', 'Nécessaire', 'Atténuant'],
@@ -4223,7 +4223,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Aggravation',
     question: 'La provocation adressée à un mineur de 15 ans :',
     options: [
@@ -4236,7 +4236,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Élément moral',
     question: 'L’auteur doit avoir conscience :',
     options: [
@@ -4248,7 +4248,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Infraction intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Définition',
     question: 'La provocation à la pédopornographie consiste à :',
     options: [
@@ -4261,7 +4261,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Réalisation',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -4274,7 +4274,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -4287,7 +4287,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Tentative',
     question: 'La tentative de provocation à la pédopornographie est :',
     options: [
@@ -4299,7 +4299,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La tentative n’est pas prévue par le texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Définition',
     question: 'La provocation à la consommation d’alcool concerne :',
     options: [
@@ -4312,7 +4312,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Provocation directe',
     question: 'La provocation doit être :',
     options: ['Directe et précise', 'Générale', 'Symbolique'],
@@ -4321,7 +4321,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Mineur de 15 ans',
     question:
         'La provocation adressée à un mineur de moins de 15 ans constitue :',
@@ -4335,7 +4335,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Élément moral',
     question: 'L’auteur doit avoir conscience :',
     options: [
@@ -4347,7 +4347,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Infraction intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Usage',
     question: 'La provocation à l’usage de stupéfiants suppose :',
     options: [
@@ -4360,7 +4360,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Trafic',
     question: 'La provocation à devenir guetteur relève :',
     options: [
@@ -4373,7 +4373,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Élément moral',
     question: 'L’auteur doit agir :',
     options: ['En connaissance de cause', 'Par imprudence', 'Par négligence'],
@@ -4382,7 +4382,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Tentative',
     question: 'La tentative de provocation aux stupéfiants est :',
     options: [
@@ -4394,7 +4394,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La tentative n’est pas prévue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Auteur',
     question: 'L’infraction peut être commise par :',
     options: [
@@ -4407,7 +4407,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Abandon',
     question: 'L’abandon moral peut exister :',
     options: [
@@ -4420,7 +4420,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Motif légitime',
     question: 'Le motif légitime est apprécié :',
     options: ['Restrictivement par les juges', 'Largement', 'Automatiquement'],
@@ -4429,7 +4429,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Élément moral',
     question: 'L’élément moral repose sur :',
     options: [
@@ -4442,7 +4442,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Tentative',
     question: 'La tentative de soustraction aux obligations parentales est :',
     options: ['Non punissable', 'Punissable', 'Punissable en cas de récidive'],
@@ -4450,7 +4450,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La tentative n’est pas prévue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Auteur',
     question: 'Concernant l’auteur de la corruption de mineur :',
     options: [
@@ -4464,7 +4464,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Victime',
     question: 'La victime de la corruption de mineur doit être :',
     options: [
@@ -4478,7 +4478,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément matériel',
     question: 'Constitue un acte de corruption de mineur :',
     options: [
@@ -4492,7 +4492,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunions sexuelles',
     question:
         'Le fait pour un majeur d’organiser des réunions sexuelles auxquelles un mineur assiste constitue :',
@@ -4507,7 +4507,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question: 'L’élément moral de la corruption de mineur suppose :',
     options: [
@@ -4520,7 +4520,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’infraction est intentionnelle et suppose la volonté d’inciter le mineur à la dépravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Fondement',
     question:
         'La diffusion de messages violents ou pornographiques susceptibles d’être vus par un mineur est prévue par :',
@@ -4535,7 +4535,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Élément matériel',
     question: 'L’infraction est constituée lorsque le message est :',
     options: [
@@ -4549,7 +4549,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Négligence',
     question: 'L’infraction peut être constituée en cas de :',
     options: [
@@ -4562,7 +4562,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La négligence ou l’imprudence suffit à caractériser l’élément moral.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Fondement',
     question:
         'La privation d’aliments ou de soins à mineur de quinze ans est prévue par :',
@@ -4577,7 +4577,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Auteur',
     question: 'Peut être auteur de la privation d’aliments ou de soins :',
     options: [
@@ -4591,7 +4591,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Résultat',
     question: 'Pour être constituée, la privation doit :',
     options: [
@@ -4605,7 +4605,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Élément moral',
     question: 'L’élément moral de l’infraction suppose :',
     options: [
@@ -4618,7 +4618,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Il n’est pas nécessaire de vouloir nuire, la conscience du danger suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Fondement',
     question:
         'La provocation directe d’un mineur à commettre un crime ou un délit est prévue par :',
@@ -4633,7 +4633,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Nature',
     question: 'La provocation doit être :',
     options: ['Directe et précise', 'Générale et abstraite', 'Indirecte'],
@@ -4644,7 +4644,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // CORRUPTION DE MINEUR — 227-22 (suite + variations)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Qualification',
     question: 'La corruption de mineur (227-22) est :',
     options: ['Un délit', 'Un crime', 'Une contravention'],
@@ -4652,7 +4652,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours classe la corruption de mineur comme un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Mineur < 15 ans',
     question:
         'Dans la corruption de mineur, l’âge de moins de 15 ans de la victime constitue :',
@@ -4666,7 +4666,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que la minorité de 15 ans aggrave l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Objet',
     question: 'L’acte de corruption est défini principalement :',
     options: [
@@ -4679,7 +4679,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte mentionne “favoriser la corruption” : l’acte est défini par son objectif.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Obscénité',
     question: 'Si le caractère obscène de l’acte matériel fait défaut :',
     options: [
@@ -4692,7 +4692,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que sans caractère obscène, la corruption n’est pas retenue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunion sexuelle',
     question:
         'Organiser une réunion comportant des exhibitions/relations sexuelles à laquelle un mineur assiste :',
@@ -4706,7 +4706,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours cite l’article 227-22 al.2 : organisation de réunions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Assistance',
     question:
         'Assister en connaissance de cause à une réunion sexuelle avec présence d’un mineur :',
@@ -4720,7 +4720,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’alinéa 2 incrimine aussi l’assistance en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réseau électronique',
     question:
         'La corruption est aggravée si le mineur a été mis en contact via un réseau de communications électroniques :',
@@ -4730,7 +4730,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Circ. aggravante prévue à 227-22 (messages à destination d’un public non déterminé).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Lieux scolaires',
     question:
         'La corruption est aggravée si commise dans/aux abords d’un établissement scolaire (temps très voisin des entrées/sorties) :',
@@ -4739,7 +4739,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Circ. aggravante prévue à l’article 227-22 al.1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Bande organisée',
     question: 'La bande organisée en matière de corruption de mineur :',
     options: [
@@ -4751,7 +4751,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne l’aggravation si bande organisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Intention d’exécuter',
     question:
         'La loi exige que l’auteur ait voulu mettre ses actes à exécution au-delà de l’intimidation/dépravation :',
@@ -4761,7 +4761,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours explique que l’intention de corrompre suffit : pas besoin d’un “résultat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur est :',
     options: [
@@ -4773,7 +4773,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique que la tentative est expressément prévue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Complicité',
     question: 'La complicité en matière de corruption de mineur est :',
     options: ['Punissable', 'Non punissable', 'Uniquement contraventionnelle'],
@@ -4781,7 +4781,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : complicité oui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Peine simple',
     question:
         'La peine principale “simple” (cas de base) de la corruption de mineur est notamment :',
@@ -4795,7 +4795,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le tableau de répression indique 5 ans et 75 000 € en simple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Répression aggravée (réseau/lieux)',
     question: 'En cas d’aggravation (réseau/lieux), la peine peut passer à :',
     options: ['7 ans et 100 000 €', '5 ans et 75 000 €', '1 an et 15 000 €'],
@@ -4804,7 +4804,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le tableau du cours mentionne 7 ans et 100 000 € pour une aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Répression aggravée (mineur < 15)',
     question:
         'Lorsque la victime a moins de 15 ans, la peine peut être portée à :',
@@ -4818,7 +4818,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // DIFFUSION MESSAGE VIOLENT/TERRORISME/PORNO/DANGEREUX — 227-24 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Caractères',
     question: 'Le message visé par 227-24 peut être :',
     options: [
@@ -4831,7 +4831,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise plusieurs natures de messages.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Jeux dangereux',
     question: 'Le texte vise notamment les messages incitant des mineurs à :',
     options: [
@@ -4843,7 +4843,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite l’exemple du “jeu du foulard”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Actes matériels',
     question: 'Les actes matériels visés par 227-24 incluent notamment :',
     options: [
@@ -4855,7 +4855,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte liste fabrication/transport/diffusion/commerce.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Public',
     question:
         'Pour 227-24, il faut prouver que le message a été vu par un mineur :',
@@ -4868,7 +4868,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le critère est la susceptibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Négligence',
     question: 'La diffusion peut être retenue si l’accès des mineurs résulte :',
     options: [
@@ -4880,7 +4880,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours évoque l’imprudence ou la négligence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Mention “réservé adultes”',
     question:
         'Un message pornographique sans mention “réservé aux adultes” accessible à un mineur peut :',
@@ -4894,7 +4894,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours donne l’exemple des messages réservés aux majeurs accessibles aux mineurs.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Déclaration mineur',
     question:
         'L’infraction peut être constituée même si le mineur a simplement déclaré avoir 18 ans :',
@@ -4903,7 +4903,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise que ce cas n’exclut pas l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Élément moral',
     question: 'L’élément moral (227-24) est caractérisé :',
     options: [
@@ -4915,7 +4915,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Volonté ou insuffisance de précautions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Circonstances aggravantes',
     question:
         'Le texte (227-24) prévoit des circonstances aggravantes spécifiques :',
@@ -4928,7 +4928,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Répression',
     question: 'La peine principale prévue à 227-24 al.1 est :',
     options: [
@@ -4940,7 +4940,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours prévoit 3 ans et 75 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Tentative',
     question: 'La tentative de l’infraction 227-24 est :',
     options: [
@@ -4952,7 +4952,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Complicité',
     question: 'La complicité de 227-24 est :',
     options: ['Punissable', 'Non punissable', 'Uniquement civile'],
@@ -4964,7 +4964,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PROVOCATION À LA PÉDOPORNOGRAPHIE — 227-28-3 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Fondement',
     question: 'La provocation à la pédopornographie est prévue par :',
     options: [
@@ -4976,7 +4976,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise expressément 227-28-3.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Acte',
     question: 'La provocation (227-28-3) consiste notamment à :',
     options: [
@@ -4988,7 +4988,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte décrit les moyens de provocation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Infractions visées',
     question: 'La provocation vise notamment des infractions dont :',
     options: [
@@ -5001,7 +5001,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours liste : proxénétisme, corruption, 227-23, atteintes sexuelles, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Mineur',
     question: 'La victime des crimes/délits visés (227-28-3) doit être :',
     options: ['Un mineur', 'Un majeur', 'Indifférent'],
@@ -5009,7 +5009,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise des faits “à l’encontre d’un mineur”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Réalisation',
     question:
         'Pour 227-28-3, le crime ou le délit provoqué doit avoir été commis ou tenté :',
@@ -5023,7 +5023,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte précise que le crime/délit ne doit être ni commis ni tenté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Élément moral',
     question: 'L’élément moral repose sur :',
     options: [
@@ -5035,7 +5035,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Infraction intentionnelle (offres/promesses…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Aggravations',
     question: 'Le texte 227-28-3 prévoit des circonstances aggravantes :',
     options: ['Non', 'Oui, systématiquement', 'Oui, si mineur < 15 ans'],
@@ -5043,7 +5043,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression délit',
     question: 'Si la provocation porte sur un délit, la peine est :',
     options: [
@@ -5055,7 +5055,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours indique 3 ans et 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression crime',
     question: 'Si la provocation porte sur un crime, la peine est :',
     options: [
@@ -5067,7 +5067,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours indique 7 ans et 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Tentative',
     question: 'La tentative de 227-28-3 est :',
     options: [
@@ -5079,7 +5079,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Complicité',
     question: 'La complicité de 227-28-3 est :',
     options: ['Non', 'Oui', 'Uniquement civile'],
@@ -5091,7 +5091,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PROVOCATION MINEUR À L’ALCOOL — 227-19 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Fondement',
     question:
         'La provocation directe d’un mineur à la consommation excessive ou habituelle d’alcool est prévue par :',
@@ -5104,7 +5104,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise l’article 227-19 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Notion',
     question: 'Les “boissons alcooliques” visées sont celles comportant :',
     options: [
@@ -5116,7 +5116,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours renvoie au seuil du code de la santé publique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Excessive',
     question:
         'La provocation directe à la consommation excessive d’alcool consiste notamment à :',
@@ -5130,7 +5130,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours décrit cette hypothèse (présence/participation active).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Habituelle',
     question: 'La consommation habituelle d’alcool traduit :',
     options: [
@@ -5142,7 +5142,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours explique l’objectif de prévention de la dépendance.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Directe',
     question: 'La provocation doit être :',
     options: ['Directe', 'Indirecte seulement', 'Toujours par écrit'],
@@ -5150,7 +5150,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur la provocation directe et précise.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Mineur',
     question: 'La provocation doit s’adresser :',
     options: [
@@ -5162,7 +5162,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise tout mineur, avec aggravation si < 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Élément moral',
     question: 'L’élément moral consiste en :',
     options: [
@@ -5175,7 +5175,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Infraction intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Aggravations',
     question: 'L’article 227-19 al.3 aggrave notamment lorsque :',
     options: [
@@ -5188,7 +5188,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Circ. aggravante : mineur de 15 ans + lieux scolaires/administration.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Tentative',
     question: 'La tentative de 227-19 est :',
     options: ['Non punissable', 'Punissable', 'Toujours punissable'],
@@ -5196,7 +5196,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Complicité',
     question: 'La complicité de 227-19 est :',
     options: ['Punissable', 'Non punissable', 'Uniquement civile'],
@@ -5208,7 +5208,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // PROVOCATION MINEUR AUX STUPÉFIANTS — 227-18 / 227-18-1 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement usage',
     question:
         'La provocation d’un mineur à faire un usage illicite de stupéfiants est prévue par :',
@@ -5221,7 +5221,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours distingue usage (227-18) et trafic (227-18-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement trafic',
     question:
         'La provocation d’un mineur à transporter/détenir/offrir/céder des stupéfiants est prévue par :',
@@ -5235,7 +5235,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le trafic (transport/détention/offre/cession) est visé par 227-18-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Nature',
     question: 'La provocation visée doit être :',
     options: ['Directe', 'Indirecte', 'Toujours écrite'],
@@ -5244,7 +5244,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours insiste sur la provocation directe avec lien précis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Apologie',
     question:
         'L’apologie/propagande/publicité favorable à l’usage de stupéfiants est plutôt réprimée par :',
@@ -5258,7 +5258,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise la différence avec 227-18 (directe) et L.3421-4 (apologie).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Mineur',
     question: 'L’acte doit être adressé :',
     options: [
@@ -5270,7 +5270,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tout mineur, aggravation si mineur de 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Complicité trafic',
     question: 'La provocation à devenir “guetteur” est :',
     options: [
@@ -5283,7 +5283,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que la provocation à la complicité de trafic est visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Offrir stupéfiants',
     question:
         'Offrir des stupéfiants à un mineur pour sa consommation personnelle est spécialement prévu par :',
@@ -5297,7 +5297,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que ce cas est spécialement prévu et aggravé à 222-39 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Aggravations',
     question:
         'Les aggravations (227-18 al.2 et 227-18-1 al.2) incluent notamment :',
@@ -5310,7 +5310,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours liste ces deux aggravations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Tentative',
     question:
         'La tentative des infractions de provocation (227-18 / 227-18-1) est :',
@@ -5319,7 +5319,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Complicité',
     question:
         'La complicité des infractions de provocation (227-18 / 227-18-1) est :',
@@ -5332,7 +5332,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // SOUSTRACTION D’UN PARENT À SES OBLIGATIONS — 227-17 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Fondement',
     question:
         'La soustraction d’un parent à ses obligations légales est prévue par :',
@@ -5345,7 +5345,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise l’article 227-17 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Victime',
     question: 'La victime doit être :',
     options: [
@@ -5357,7 +5357,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise l’enfant mineur sans condition d’âge.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Auteur',
     question: 'L’auteur de l’infraction 227-17 est :',
     options: ['Le père ou la mère', 'Un ascendant quelconque', 'Tout adulte'],
@@ -5366,7 +5366,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise père et mère à l’exclusion des autres ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Autorité parentale',
     question:
         'L’infraction 227-17 exige que l’auteur ait l’autorité parentale ou la garde :',
@@ -5380,7 +5380,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que le texte ne conditionne pas à l’autorité parentale/garde.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Nature',
     question:
         'La soustraction peut être constituée même si le parent reste physiquement au domicile :',
@@ -5390,7 +5390,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours évoque un abandon moral possible sans départ du domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Obligation',
     question: 'Les obligations légales recouvrent notamment :',
     options: [
@@ -5402,7 +5402,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours renvoie à l’article 371-1 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Compromission',
     question:
         'Pour être punissable, la soustraction doit être susceptible de :',
@@ -5415,7 +5415,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte exige une compromission au moins potentielle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Dommage effectif',
     question: 'Le texte exige que le dommage se soit effectivement réalisé :',
     options: ['Non', 'Oui', 'Uniquement si mineur < 15'],
@@ -5423,7 +5423,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il suffit que ce soit susceptible de se réaliser.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Motif légitime',
     question:
         'Les faits ne sont punissables que si le parent s’est soustrait :',
@@ -5436,7 +5436,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise “sans motif légitime”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Preuve motif',
     question: 'La preuve du motif légitime :',
     options: [
@@ -5448,7 +5448,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique que c’est au prévenu d’apporter la preuve.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Élément moral',
     question: 'L’élément moral repose sur :',
     options: [
@@ -5461,7 +5461,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Infraction intentionnelle selon le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Aggravation (crime/délits du mineur)',
     question:
         'L’article 227-17 al.2 aggrave lorsque la soustraction a conduit à :',
@@ -5475,7 +5475,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Aggravation prévue à l’alinéa 2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Tentative',
     question: 'La tentative de 227-17 est :',
     options: ['Non punissable', 'Punissable', 'Punissable uniquement si al.2'],
@@ -5483,7 +5483,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Complicité',
     question: 'La complicité de 227-17 est :',
     options: ['Punissable', 'Non punissable', 'Uniquement civile'],
@@ -5495,7 +5495,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
   // MÉGA MIX — QUESTIONS TRANSVERSALES / QCM “PIÈGE”
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Âge victime',
     question:
         'Quel texte vise explicitement une victime “mineur de moins de 15 ans” ?',
@@ -5508,7 +5508,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-15 vise strictement la victime mineure de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Directe vs apologie',
     question: 'Quel texte exige explicitement une provocation “directe” ?',
     options: [
@@ -5520,7 +5520,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-21 vise une provocation directe avec lien précis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Tentative punissable',
     question:
         'Parmi ces infractions, laquelle a une tentative punissable selon le cours ?',
@@ -5533,7 +5533,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique tentative : oui pour 227-22.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Complicité non',
     question:
         'Parmi ces infractions, laquelle a “complicité : non” selon le cours ?',
@@ -5546,7 +5546,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : complicité non pour 227-28-3.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Susceptible d’être vu/perçu',
     question:
         'La formule “susceptible d’être vu ou perçu par un mineur” correspond à :',
@@ -5559,7 +5559,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est le critère central de 227-24.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Auteur limité',
     question: 'Quel texte limite explicitement l’auteur au “père ou la mère” ?',
     options: ['227-17', '227-15', '227-24'],
@@ -5567,7 +5567,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte 227-17 vise père et mère.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Élément moral “conscience du risque”',
     question:
         'Quel texte insiste sur la conscience/prévision d’un mal pour l’enfant sans exiger une volonté de nuire ?',
@@ -5576,7 +5576,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite Cass. crim. 11 mars 1975 : conscience du mal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Aucun aggravant',
     question:
         'Quel texte indique “Aucune” circonstance aggravante dans le cours ?',
@@ -5586,7 +5586,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise : aucune circonstance aggravante pour 227-24.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Réunion sexuelle',
     question:
         'L’organisation de réunions sexuelles avec présence d’un mineur renvoie principalement à :',
@@ -5595,7 +5595,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Cas expressément visé par 227-22 al.2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — “Sans motif légitime”',
     question: 'La formule “sans motif légitime” est une condition propre à :',
     options: ['227-17', '227-24', '227-28-3'],
@@ -5608,7 +5608,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
 
   // ---------- FACILE (1-34) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Fondement',
     question:
         'La privation d’aliments ou de soins à un mineur de quinze ans est prévue par :',
@@ -5622,7 +5622,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que l’article 227-15 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Victime',
     question: 'Pour 227-15, la victime doit être :',
     options: [
@@ -5634,7 +5634,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise un mineur de quinze ans (donc < 15).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Condition',
     question: 'L’infraction exige que la privation compromette :',
     options: [
@@ -5647,7 +5647,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise : privation au point de compromettre la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur',
     question: 'L’article 227-15 vise comme auteurs possibles notamment :',
     options: [
@@ -5659,7 +5659,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours vise ascendants (père, mère, grands-parents, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité parentale',
     question: 'L’article 227-15 vise aussi :',
     options: [
@@ -5671,7 +5671,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite expressément l’autorité parentale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité de fait',
     question: 'L’article 227-15 vise également :',
     options: [
@@ -5684,7 +5684,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours évoque nouveaux conjoints, personnes à qui le mineur est confié, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation aliments',
     question: 'La privation d’aliments correspond notamment au fait :',
     options: [
@@ -5696,7 +5696,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours définit la privation d’aliments ainsi.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation soins',
     question: 'La privation de soins peut être constituée par :',
     options: [
@@ -5708,7 +5708,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne hygiène et soins médicaux.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Présomption',
     question: 'Le cours mentionne une présomption de défaut de soins lorsque :',
     options: [
@@ -5721,7 +5721,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le 2e alinéa vise ce cas “notamment”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Âge < 6 ans',
     question:
         'La situation “enfant de moins de six ans sur la voie publique pour solliciter la générosité” concerne :',
@@ -5735,7 +5735,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours l’identifie comme “privation de soins” au sens de 227-15.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Complicité',
     question: 'La complicité de 227-15 est :',
     options: ['Punissable', 'Non punissable', 'Toujours exclue'],
@@ -5743,7 +5743,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : complicité oui (121-7).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Tentative',
     question: 'La tentative de 227-15 est :',
     options: ['Non punissable', 'Punissable', 'Toujours punissable'],
@@ -5751,7 +5751,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Personnes morales',
     question: 'Les personnes morales peuvent être responsables de 227-15 via :',
     options: [
@@ -5764,7 +5764,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise la responsabilité des personnes morales à 227-17-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Répression simple',
     question: 'La peine principale (simple) de 227-15 est :',
     options: [
@@ -5776,7 +5776,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours indique 7 ans / 100 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Aggravation al.3',
     question: 'L’article 227-15 al.3 prévoit une aggravation lorsque :',
     options: [
@@ -5789,7 +5789,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne expressément 227-15 al.3.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine aggravée al.3',
     question: 'En cas d’aggravation (227-15 al.3), la peine devient :',
     options: [
@@ -5801,7 +5801,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours indique 10 ans / 300 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mort',
     question: 'Lorsque la privation d’aliments/soins entraîne la mort :',
     options: [
@@ -5813,7 +5813,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : aggravation “mort” à 227-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nature 227-16',
     question:
         'Lorsque la privation entraîne la mort (227-16), l’infraction devient :',
@@ -5823,7 +5823,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le tableau du cours classe 227-16 comme crime (30 ans de réclusion).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine 227-16',
     question: 'La peine principale prévue à 227-16 est :',
     options: [
@@ -5835,7 +5835,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours indique 30 ans de réclusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mineur > 15',
     question: 'Si la victime a plus de 15 ans, 227-15 :',
     options: [
@@ -5848,7 +5848,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que 227-15 ne s’applique pas à un mineur > 15.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple du cours',
     question:
         'L’exemple “enfants laissés sans gaz/eau/électricité” est utilisé pour illustrer :',
@@ -5862,7 +5862,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours cite un arrêt (CA Douai, 15 février 2006) comme exemple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mendicité',
     question: 'Le simple fait de mendier avec un enfant en bas âge est :',
     options: [
@@ -5874,7 +5874,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite Cass. crim., 12 octobre 2005.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Résultat',
     question:
         'Pour 227-15, il faut prouver que la santé a été atteinte gravement :',
@@ -5884,7 +5884,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise qu’il suffit que les privations soient susceptibles d’altérer la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral',
     question: 'L’infraction 227-15 est :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Toujours involontaire'],
@@ -5892,7 +5892,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : infraction intentionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Intention de nuire',
     question: 'Pour 227-15, la volonté de nuire est :',
     options: [
@@ -5905,7 +5905,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : ni volonté de nuire ni de causer dommage nécessaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Convictions religieuses',
     question:
         'Les convictions religieuses peuvent justifier les privations au sens de 227-15 :',
@@ -5915,7 +5915,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que les convictions religieuses ne justifient pas si risque pour la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “Compromettre la santé”',
     question: '“Compromettre la santé” signifie notamment :',
     options: [
@@ -5927,7 +5927,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise que le dommage effectif n’est pas requis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lieu',
     question: 'La présomption de défaut de soins mentionne aussi :',
     options: [
@@ -5940,7 +5940,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours cite “voie publique ou espace affecté au transport collectif”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur tuteur',
     question: 'Un tuteur peut entrer dans 227-15 comme :',
     options: [
@@ -5952,7 +5952,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique qu’un tuteur peut être inclus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Qualité auteur',
     question: 'L’auteur peut être :',
     options: [
@@ -5964,7 +5964,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours liste ces trois catégories.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Objet',
     question: 'La privation de soins vise notamment :',
     options: [
@@ -5976,7 +5976,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours le précise.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Répression',
     question: 'La répression de 227-15 concerne des personnes :',
     options: [
@@ -5989,7 +5989,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours prévoit responsabilité des personnes morales via 227-17-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Crime/délit',
     question: '227-15 (simple) est classé comme :',
     options: ['Délit', 'Crime', 'Contravention'],
@@ -5997,7 +5997,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau de répression indique : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Objectif',
     question: 'Le critère central de 227-15 est :',
     options: [
@@ -6009,7 +6009,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition textuelle du 227-15.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mort',
     question: 'Si la privation entraîne la mort, la qualification est :',
     options: ['227-16', '227-15 al.3', '227-17'],
@@ -6017,7 +6017,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours isole la mort à l’article 227-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nécessité de résultat',
     question: 'Le résultat dommageable doit être effectif pour 227-15 :',
     options: ['Non', 'Oui', 'Uniquement si mineur < 6'],
@@ -6025,7 +6025,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il suffit qu’il soit susceptible de se réaliser.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Interprétation stricte',
     question:
         'Pourquoi 227-15 ne s’applique pas à un mineur de plus de 15 ans ?',
@@ -6038,7 +6038,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours invoque l’interprétation stricte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Objet 2',
     question:
         'Le maintien d’un enfant < 6 ans dans un transport collectif pour mendier est cité comme :',
@@ -6050,7 +6050,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- MOYENNE (35-68) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Domaine',
     question:
         '227-15 ne vise pas un mineur de plus de quinze ans. Dans ce cas, le cours indique qu’on peut viser :',
@@ -6065,7 +6065,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours évoque d’autres qualifications possibles hors champ de 227-15.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Condition “santé”',
     question: 'La compromission de la santé implique :',
     options: [
@@ -6077,7 +6077,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise que le résultat effectif n’est pas exigé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Appréciation',
     question:
         'Qui apprécie au cas par cas l’impact des privations sur la santé du mineur ?',
@@ -6087,7 +6087,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique : appréciation au cas par cas par les juges.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cas relaxe',
     question:
         'Le cours indique qu’une relaxe est possible si, malgré la situation “mendicité”, l’enfant est :',
@@ -6101,7 +6101,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Exemple du cours : enfant en bonne santé -> pas de compromission retenue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral',
     question: 'Selon le cours (Cass. crim., 11 mars 1975), il faut :',
     options: [
@@ -6114,7 +6114,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite cette formule pour l’élément moral.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Al.2 “notamment”',
     question: 'La mention “notamment” (al.2) signifie :',
     options: [
@@ -6126,7 +6126,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '“Notamment” indique une illustration non exhaustive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mendicité seule',
     question:
         'Pourquoi le “simple fait de mendier avec un enfant” n’est pas toujours suffisant ?',
@@ -6140,7 +6140,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours insiste sur l’exigence de compromission de la santé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur “autorité de fait”',
     question:
         'Un concubin du parent qui exerce une autorité sur le mineur peut être :',
@@ -6153,7 +6153,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite “nouveaux époux ou concubins”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple CA Douai',
     question:
         'Dans l’exemple CA Douai 15 février 2006, les enfants ne pouvaient pas cuire faute de :',
@@ -6162,7 +6162,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne absence de gaz, eau, électricité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “au point de”',
     question: 'L’expression “au point de compromettre” implique :',
     options: [
@@ -6175,7 +6175,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique la nécessité d’une compromission (au moins potentielle).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Personnes morales',
     question: 'Les personnes morales encourent notamment :',
     options: [
@@ -6187,7 +6187,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours renvoie à 131-38 et 131-39.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — 227-15 al.3',
     question: 'L’aggravation de 227-15 al.3 est liée à :',
     options: [
@@ -6199,7 +6199,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours le précise.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — 227-16',
     question: 'L’article 227-16 s’applique quand la privation :',
     options: ['A entraîné la mort', 'A duré plus d’un mois', 'A été filmée'],
@@ -6207,7 +6207,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 227-16 = mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Seuil gravité',
     question: 'Le cours précise que 227-15 n’exige pas :',
     options: [
@@ -6219,7 +6219,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il suffit que ce soit susceptible d’altérer la santé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple transport collectif',
     question:
         'Le maintien d’un enfant < 6 ans dans un espace de transport collectif est incriminé lorsqu’il est fait :',
@@ -6232,7 +6232,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition explicitement citée au 2e alinéa.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Interprétation stricte',
     question: 'La mention “mineur de quinze ans” impose que la victime ait :',
     options: [
@@ -6244,7 +6244,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours rappelle la lecture stricte : < 15.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral (but)',
     question:
         'Pour 227-15, l’auteur doit nécessairement agir avec un but de nuire :',
@@ -6253,7 +6253,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : pas besoin de volonté de nuire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Preuve',
     question: 'Les juges peuvent retenir l’infraction si les privations sont :',
     options: [
@@ -6265,7 +6265,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition rappelée par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nature',
     question: '227-15 réprime principalement :',
     options: [
@@ -6277,7 +6277,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Objet du texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “sans commentaire particulier”',
     question: 'Le cours indique que la privation d’aliments :',
     options: [
@@ -6289,7 +6289,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Formule reprise dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Soins au quotidien',
     question: 'La privation de soins inclut le fait :',
     options: [
@@ -6301,7 +6301,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours détaille cette notion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Compromission',
     question: 'Le texte exige :',
     options: [
@@ -6313,7 +6313,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Formule du texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Al.2 et preuve',
     question:
         'Même avec l’al.2 (“< 6 ans sur voie publique”), la défense peut soutenir l’absence d’infraction si :',
@@ -6327,7 +6327,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Exemple du cours : pas de compromission retenue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Structure',
     question: 'La mort de la victime bascule vers :',
     options: ['227-16', '227-15 al.3', '227-17 al.2'],
@@ -6335,7 +6335,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours distingue clairement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peines morales',
     question: 'Les personnes morales encourent des peines comme :',
     options: [
@@ -6347,7 +6347,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Référence à 131-39 dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Complicité (modes)',
     question: 'La complicité suppose un fait constitutif comme :',
     options: [
@@ -6359,7 +6359,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Rappel droit commun 121-7 indiqué dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Aggravation al.3 nature',
     question: '227-15 al.3 reste classé :',
     options: ['Délit', 'Crime', 'Contravention'],
@@ -6367,7 +6367,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours classe 227-15 al.3 comme délit aggravé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Crime 227-16',
     question: '227-16 est classé :',
     options: ['Crime', 'Délit', 'Contravention'],
@@ -6375,7 +6375,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours le classe crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Philosophie',
     question: 'La loi vise à protéger particulièrement :',
     options: [
@@ -6387,7 +6387,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition d’âge du texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple voisins',
     question:
         'Dans l’exemple du cours, les voisins intervenaient notamment pour :',
@@ -6397,7 +6397,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique “laissés à la charge des voisins qui leur donnaient à manger”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Sens “compromettre”',
     question: '“Compromettre la santé” signifie que :',
     options: [
@@ -6409,7 +6409,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur la susceptibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mineur > 15 (rappel)',
     question: 'Si la victime est mineure mais a 16 ans, 227-15 :',
     options: [
@@ -6421,7 +6421,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours le dit explicitement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — But de sollicitation',
     question: 'L’al.2 vise le maintien de l’enfant pour :',
     options: ['Solliciter la générosité des passants', 'Scolariser', 'Soigner'],
@@ -6429,7 +6429,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est la condition textuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Preuve santé',
     question:
         'Pour exclure l’infraction, la défense peut tenter de démontrer :',
@@ -6442,7 +6442,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours illustre cette idée via l’exemple.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cible',
     question: 'La loi pénale vise surtout à sanctionner :',
     options: [
@@ -6457,7 +6457,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- DIFFICILE (69-100) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Éléments constitutifs',
     question: 'Quel enchaînement correspond le mieux à 227-15 ?',
     options: [
@@ -6470,7 +6470,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours détaille éléments matériel et moral ainsi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral exact',
     question: 'Le cours indique que l’élément moral exige :',
     options: [
@@ -6484,7 +6484,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Formule citée (Cass. crim., 11 mars 1975) et commentaire du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Al.2 et interprétation',
     question:
         'Le 2e alinéa (“< 6 ans sur voie publique”) doit être compris comme :',
@@ -6499,7 +6499,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours montre qu’on discute encore la compromission via l’exemple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lien causal',
     question:
         'Pour 227-15, le texte exige que les privations aient effectivement causé une maladie :',
@@ -6508,7 +6508,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il suffit qu’elles soient susceptibles d’altérer la santé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Double incrimination',
     question:
         'Le fait de priver un mineur > 15 ans d’aliments/soins peut éventuellement relever :',
@@ -6521,7 +6521,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours suggère des qualifications alternatives.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur “ascendant”',
     question: 'Sont visés par “ascendants” au sens du cours :',
     options: [
@@ -6533,7 +6533,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours le précise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité parentale (délégation)',
     question:
         'Le cours évoque la délégation de l’autorité parentale prévue aux articles :',
@@ -6546,7 +6546,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Référence indiquée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité de fait (exemples)',
     question:
         'Lequel est un exemple d’autorité de fait mentionné dans le cours ?',
@@ -6560,7 +6560,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours les cite comme personnes pouvant exercer une autorité de fait.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cass. 12 oct. 2005',
     question:
         'Le cours indique qu’en 12 octobre 2005, le simple fait de mendier avec un enfant :',
@@ -6573,7 +6573,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Rappel de l’arrêt cité par le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — TGI Paris 13 janv. 2004',
     question:
         'Le cours cite un arrêt confirmant l’exigence “compromettre la santé” :',
@@ -6586,7 +6586,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Référence explicitement mentionnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Répartition peines',
     question: 'Quel triptyque correspond correctement aux niveaux de gravité ?',
     options: [
@@ -6598,7 +6598,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est la structure indiquée par le tableau du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lien 433-18-1',
     question:
         'L’aggravation 227-15 al.3 suppose que la personne s’est rendue coupable :',
@@ -6611,7 +6611,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition textuelle rappelée par le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Santé “en bonne santé”',
     question:
         'Selon le cours, même avec maintien sur voie publique, les juges peuvent relaxer si :',
@@ -6624,7 +6624,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Exemple commenté dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Négligence vs intention',
     question: '227-15 est intentionnel, mais n’exige pas :',
     options: [
@@ -6636,7 +6636,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : conscience du risque oui, volonté de nuire non.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Support “transport collectif”',
     question:
         'Le texte mentionne l’“espace affecté au transport collectif” pour viser :',
@@ -6649,7 +6649,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est un élément de l’al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Distinction 227-17',
     question: 'Différence principale entre 227-15 et 227-17 (cours) :',
     options: [
@@ -6662,7 +6662,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Distinction d’âge et d’objet indiquée dans les textes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Droit commun complicité',
     question: 'Le fondement de la complicité renvoyé par le cours est :',
     options: [
@@ -6675,7 +6675,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours renvoie explicitement au droit commun de la complicité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Non déclaration naissance',
     question:
         'Le délit de non déclaration d’une naissance à l’officier d’état civil est :',
@@ -6684,7 +6684,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Référence citée dans le cours à propos de l’aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nature “privation de soins”',
     question:
         'Le cours précise que la privation de soins consiste notamment à :',
@@ -6698,7 +6698,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Définition du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Champ strict',
     question: 'Pourquoi 227-15 est d’application stricte ?',
     options: [
@@ -6711,7 +6711,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur l’interprétation stricte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Échelle peines',
     question: 'Quelle progression de peine est correcte ?',
     options: [
@@ -6723,7 +6723,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Correspond aux tableaux 227-15, 227-15 al.3, 227-16.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Qualification “crime”',
     question: 'La bascule en “crime” intervient uniquement si :',
     options: [
@@ -6735,7 +6735,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Selon le tableau de répression.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lien voisinage',
     question:
         'Dans l’exemple, le fait que les voisins nourrissent les enfants montre surtout :',
@@ -6748,7 +6748,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’exemple sert à caractériser la privation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Responsabilité morale',
     question:
         'Le cours précise que les personnes morales encourent l’amende selon :',
@@ -6757,7 +6757,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Référence explicite dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peines complémentaires morales',
     question:
         'Les peines complémentaires des personnes morales sont mentionnées aux :',
@@ -6770,7 +6770,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours le détaille.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Logique “prévention”',
     question:
         'Le texte sanctionne même si le dommage ne s’est pas produit pour :',
@@ -6784,7 +6784,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : dommage effectif non requis, susceptibilité suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Carence effective',
     question:
         'Le cours insiste que, même si le dommage n’est pas effectif, la carence doit être :',
@@ -6793,7 +6793,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Il faut une privation réelle (faits matériels).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “but” al.2',
     question: 'Dans l’al.2, le but exigé est :',
     options: [
@@ -6805,7 +6805,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est dans la lettre du texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exclusion “mineur >15”',
     question: 'La conséquence directe de l’exclusion “mineur > 15” est :',
     options: [
@@ -6817,7 +6817,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours évoque des qualifications alternatives.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Privation aliments/soins — Distinction “privation” vs “soustraction”',
     question:
@@ -6831,7 +6831,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Selon les définitions du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Réalisation',
     question: 'La privation d’aliments/soins est une infraction :',
     options: [
@@ -6844,7 +6844,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte incrimine la privation (défaut de fournir).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Placement sous surveillance',
     question:
         'Parmi les peines possibles pour une personne morale, le cours cite :',
@@ -6857,7 +6857,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne cette peine dans l’énumération.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “nourriture qualité”',
     question:
         'La privation d’aliments inclut la qualité insuffisante, ce qui implique :',
@@ -6870,7 +6870,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours parle de quantité ou qualité suffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “soins médicaux”',
     question:
         'Le refus de soins médicaux nécessaires, avec conscience du risque, peut :',
@@ -6884,7 +6884,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Définition de la privation de soins + condition de santé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Échelle “temps”',
     question: 'Le texte 227-15 fixe un délai minimum de privation (ex : 48h) :',
     options: ['Non', 'Oui', 'Oui pour mineur < 6'],
@@ -6893,7 +6893,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours ne fixe pas de durée, il vise l’effet sur la santé (risque).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cumul',
     question: 'Si la privation mène à la mort, on retient en principe :',
     options: [
@@ -6905,7 +6905,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours distingue le cas mortel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Sens “autorité sur un mineur”',
     question: '“Ayant une autorité sur un mineur” inclut notamment :',
     options: [
@@ -6917,7 +6917,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Exemple mentionné dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Interprétation stricte (piège)',
     question:
         'Un mineur de 15 ans pile (le jour de ses 15 ans) est dans le champ de 227-15 :',
@@ -6931,7 +6931,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours explique : “donc âgé de moins de quinze ans”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Articulation',
     question: 'Le cœur de l’élément matériel est :',
     options: [
@@ -6943,7 +6943,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours insiste sur ce couple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Délit aggravé vs crime',
     question: 'Le seul cas où le cours qualifie “crime” ici est :',
     options: ['227-16 (mort)', '227-15 al.3', '227-15 simple'],
@@ -6951,7 +6951,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Les autres restent des délits.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exclusion “simple mendicité”',
     question:
         'Le cours précise que la mendicité avec un enfant ne suffit pas “en soi” car :',
@@ -6965,7 +6965,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Condition essentielle du texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Conclusion',
     question: 'Quel couple “tentative/complicité” est correct pour 227-15 ?',
     options: [
@@ -6984,7 +6984,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =====================
 
   // ---------- CORRUPTION DE MINEUR — 227-22 (FACILE 1-12) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Fondement',
     question: 'La corruption de mineur est prévue et réprimée par :',
     options: [
@@ -6997,7 +6997,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que 227-22 al.1 et 2 CP prévoit et réprime la corruption de mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Définition',
     question: 'Constitue notamment une corruption de mineur :',
     options: [
@@ -7010,7 +7010,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours vise le fait de favoriser ou tenter de favoriser la corruption d’un mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Auteur',
     question: 'Pour l’alinéa 1 de 227-22, l’auteur peut être :',
     options: [
@@ -7023,7 +7023,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise que l’alinéa 1 ne fixe pas de condition d’âge : auteur mineur ou majeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Victime',
     question: 'La victime de corruption de mineur doit être :',
     options: [
@@ -7036,7 +7036,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique : victime mineure de 18 ans, quel que soit le sexe/la moralité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Consentement',
     question: 'Le consentement du mineur (corruption de mineur) :',
     options: [
@@ -7048,7 +7048,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise : il importe peu qu’il soit consentant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Acte',
     question: 'Un acte de corruption vise notamment à :',
     options: [
@@ -7061,7 +7061,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Définition donnée : éveiller/exciter la dépravation sexuelle ou aider à satisfaire des pulsions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Propos',
     question: 'Les simples propos obscènes, seuls :',
     options: [
@@ -7074,7 +7074,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique qu’il faut des conseils persistants et précis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Effet sur la victime',
     question: 'Il faut prouver que le mineur a effectivement été troublé :',
     options: ['Non', 'Oui', 'Oui seulement si mineur < 15'],
@@ -7083,7 +7083,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours précise : pas nécessaire d’établir un trouble effectif ni un passage à l’acte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunions (al.2)',
     question: 'L’article 227-22 al.2 vise notamment un majeur qui :',
     options: [
@@ -7097,7 +7097,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours mentionne l’organisation de réunions avec exhibitions/relations sexuelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question: 'La corruption de mineur est :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Toujours involontaire'],
@@ -7106,7 +7106,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : conscience de l’obscénité + âge + volonté de corrompre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur (227-22) est :',
     options: [
@@ -7118,7 +7118,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : tentative OUI, prévue à l’alinéa 1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Complicité',
     question: 'La complicité en matière de corruption de mineur est :',
     options: [
@@ -7132,7 +7132,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- DIFFUSION MESSAGE — 227-24 (FACILE 13-22) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Fondement',
     question:
         'La diffusion d’un message violent/porno/dangereux susceptible d’être vu par un mineur est prévue par :',
@@ -7146,7 +7146,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-24 al.1 CP prévoit et réprime cette diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Message',
     question: 'Le terme « message » doit être entendu :',
     options: [
@@ -7159,7 +7159,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : message au sens large (lettre, œuvre, peinture, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Support',
     question: 'Le support (papier, vidéo, en ligne…) est :',
     options: [
@@ -7172,7 +7172,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : diffusion par quelque moyen que ce soit, quel qu’en soit le support.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Condition mineur',
     question:
         'Pour 227-24, il faut qu’un mineur ait effectivement vu le message :',
@@ -7182,7 +7182,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : il suffit que le message soit susceptible d’être vu ou perçu par un mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Actes matériels',
     question: 'Les actes matériels visés par 227-24 comprennent notamment :',
     options: [
@@ -7195,7 +7195,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours énumère ces actes (fabrication, transport, diffusion, commerce).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Jeux dangereux',
     question:
         'Sont visés les messages incitant des mineurs à des jeux les mettant :',
@@ -7208,7 +7208,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours cite l’exemple du “jeu du foulard”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Élément moral',
     question: 'L’élément moral de 227-24 est réalisé :',
     options: [
@@ -7222,7 +7222,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : intention + négligence/imprudence permettant l’accès des mineurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Circonstances aggravantes',
     question: '227-24 prévoit des circonstances aggravantes :',
     options: ['Non', 'Oui', 'Oui uniquement si mineur < 15'],
@@ -7230,7 +7230,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Tentative',
     question: 'La tentative de 227-24 est :',
     options: [
@@ -7242,7 +7242,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : tentative NON.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Peine',
     question: 'La peine principale prévue par 227-24 al.1 est :',
     options: [
@@ -7256,7 +7256,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- PROVOCATION À LA PÉDOPORNOGRAPHIE — 227-28-3 (MOYENNE 23-34) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Fondement',
     question: 'La provocation à la pédopornographie est prévue par :',
     options: [
@@ -7269,7 +7269,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-28-3 CP prévoit et réprime la provocation à la pédopornographie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Acte',
     question: 'La provocation (227-28-3) consiste notamment à :',
     options: [
@@ -7282,7 +7282,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours reprend les termes : offres, promesses, dons, présents, avantages.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Victime',
     question: 'La provocation vise des crimes/délits à l’encontre :',
     options: ['D’un mineur', 'D’un majeur', 'D’un fonctionnaire uniquement'],
@@ -7291,7 +7291,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : la victime des faits visés doit être un mineur (en l’absence de précision : < 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Condition',
     question:
         'Pour 227-28-3, l’infraction provoquée doit avoir été commise ou tentée :',
@@ -7305,7 +7305,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : l’infraction réside dans la provocation, crime/délit non commis ni tenté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Objet',
     question: 'Le texte 227-28-3 vise des infractions listées, dont :',
     options: [
@@ -7319,7 +7319,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours liste proxénétisme, corruption, 227-23, atteintes sexuelles 227-25 à 227-28.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Élément moral',
     question: '227-28-3 est une infraction :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Contraventionnelle'],
@@ -7328,7 +7328,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : volonté de faire commettre une infraction à autrui via offres/promesses.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression (délit)',
     question: 'Si la provocation porte sur un délit, la peine est :',
     options: [
@@ -7341,7 +7341,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 3 ans / 45 000 € si provocation portant sur un délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression (crime)',
     question: 'Si la provocation porte sur un crime, la peine est :',
     options: [
@@ -7354,7 +7354,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 7 ans / 100 000 € si provocation portant sur un crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Tentative',
     question: 'La tentative de 227-28-3 est :',
     options: [
@@ -7366,7 +7366,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : tentative NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Complicité',
     question: 'La complicité de 227-28-3 est :',
     options: ['Non', 'Oui', 'Oui seulement si bande organisée'],
@@ -7376,7 +7376,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- PROVOCATION DIRECTE D’UN MINEUR À COMMETTRE CRIME/DÉLIT — 227-21 (MOYENNE 35-44) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Fondement',
     question:
         'La provocation directe d’un mineur à commettre un crime ou un délit est prévue par :',
@@ -7390,7 +7390,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-21 al.1 CP réprime la provocation d’un mineur à commettre crime/délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Directe',
     question:
         'La provocation doit être qualifiée de “directe”, ce qui implique :',
@@ -7404,7 +7404,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : relation précise et incontestable + lien étroit, pas une incitation générale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Effet',
     question: 'Il faut que la provocation ait été suivie d’effet :',
     options: ['Non', 'Oui', 'Oui seulement si mineur < 15'],
@@ -7413,7 +7413,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : peu importe qu’elle ait été suivie ou non d’effet.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Objet',
     question: 'L’objet de la provocation visée par 227-21 doit être :',
     options: [
@@ -7426,7 +7426,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : n’est pas visée la provocation à des faits contraventionnels.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Âge du provocateur',
     question: 'Le provocateur (227-21) doit être obligatoirement majeur :',
     options: ['Non', 'Oui', 'Oui seulement si mineur < 15'],
@@ -7435,7 +7435,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : rien n’est spécifié, provocation possible par majeur ou mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Victime',
     question: 'La provocation doit s’adresser :',
     options: [
@@ -7447,7 +7447,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : adressée à un mineur (note : < 15 = aggravation).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Peine simple',
     question: 'La peine simple (227-21 al.1) est :',
     options: [
@@ -7459,7 +7459,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 5 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Aggravations',
     question: 'Sont des circonstances aggravantes (227-21 al.2) :',
     options: [
@@ -7472,7 +7472,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours liste ces aggravations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Peine aggravée',
     question: 'La peine aggravée (227-21 al.2) est :',
     options: [
@@ -7484,7 +7484,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 7 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Tentative',
     question: 'La tentative de 227-21 est :',
     options: [
@@ -7498,7 +7498,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- ALCOOL — 227-19 (DIFFICILE 45-52) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Fondement',
     question:
         'La provocation directe d’un mineur à la consommation de boissons alcooliques est prévue par :',
@@ -7512,7 +7512,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-19 CP prévoit et réprime la provocation directe à l’alcool.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Notion',
     question:
         'Les “boissons alcooliques” visées comportent des traces d’alcool supérieures à :',
@@ -7522,7 +7522,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours renvoie à l’article L.3321-1 du code de la santé publique (> 1,2°).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Formes',
     question: 'La consommation visée par 227-19 doit être :',
     options: [
@@ -7534,7 +7534,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise : habituelle ou excessive.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Directe',
     question:
         'Une simple suggestion sans lien précis peut être une provocation directe :',
@@ -7543,7 +7543,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : relation précise et lien étroit nécessaires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Peines',
     question:
         'La provocation directe à la consommation excessive (227-19 al.1) est punie de :',
@@ -7557,7 +7557,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours distingue al.1 (1 an/15 000 €) et al.2 (2 ans/45 000 €).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Habitude',
     question: 'La consommation habituelle (227-19 al.2) est punie de :',
     options: [
@@ -7569,7 +7569,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours : al.2 = 2 ans / 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Aggravation',
     question: 'En cas d’aggravation (227-19 al.3), il est prévu :',
     options: [
@@ -7581,7 +7581,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours mentionne : doublement du maximum.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Tentative/Complicité',
     question: 'Pour 227-19 :',
     options: [
@@ -7595,7 +7595,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- STUPÉFIANTS — 227-18 / 227-18-1 (DIFFICILE 53-60) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement usage',
     question:
         'La provocation d’un mineur à l’usage illicite de stupéfiants est prévue par :',
@@ -7608,7 +7608,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 227-18 al.1 réprime la provocation à l’usage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement trafic',
     question:
         'La provocation d’un mineur au transport/détention/offre/cession de stupéfiants est prévue par :',
@@ -7622,7 +7622,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-18-1 al.1 réprime la provocation au trafic visé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Directe',
     question: 'La provocation en matière 227-18/227-18-1 doit être :',
     options: ['Directe', 'Indirecte uniquement', 'Purement publicitaire'],
@@ -7631,7 +7631,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours insiste : provocation directe avec lien précis et étroit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Aggravations',
     question:
         'Sont des circonstances aggravantes (227-18 al.2 / 227-18-1 al.2) :',
@@ -7644,7 +7644,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours liste ces aggravations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Peine simple usage',
     question: 'La peine simple (227-18 al.1) est :',
     options: [
@@ -7656,7 +7656,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours : 5 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Peine simple trafic',
     question: 'La peine simple (227-18-1 al.1) est :',
     options: [
@@ -7677,7 +7677,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // PRIVATION D’ALIMENTS OU DE SOINS À MINEUR < 15 — 227-15/227-16
   // FACILE (1-20)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Fondement',
     question:
         'La privation d’aliments ou de soins à un mineur de quinze ans est prévue par :',
@@ -7691,7 +7691,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-15 CP définit et réprime la privation d’aliments ou de soins à mineur < 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Victime',
     question: 'Pour 227-15, la victime doit être :',
     options: [
@@ -7704,7 +7704,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : la privation ne constitue une infraction que si la victime est un mineur de quinze ans (donc < 15).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur',
     question: 'L’article 227-15 vise notamment comme auteurs :',
     options: [
@@ -7718,7 +7718,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : ascendants / autorité parentale / autorité de fait (nouveau conjoint, responsables, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Ascendants',
     question: 'Dans 227-15, “ascendants” regroupe notamment :',
     options: [
@@ -7730,7 +7730,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise les ascendants concernés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation d’aliments',
     question: 'La privation d’aliments correspond à :',
     options: [
@@ -7743,7 +7743,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : privation d’aliments = défaut de nourriture en quantité/qualité suffisante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation de soins',
     question: 'La privation de soins inclut notamment :',
     options: [
@@ -7756,7 +7756,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : soins au quotidien (hygiène, soins médicaux, prise en charge).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Condition de résultat',
     question: 'Pour 227-15, les privations doivent être :',
     options: [
@@ -7769,7 +7769,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte exige une compromission (au moins potentielle) de la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Dommage effectif',
     question: 'Il faut prouver que la santé a été effectivement altérée :',
     options: [
@@ -7782,7 +7782,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : pas nécessaire que le dommage se réalise, suffit que les privations soient susceptibles d’altérer la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Présomption (mineur < 6 ans)',
     question:
         'Constitue notamment une privation de soins (227-15 al.2) le fait de :',
@@ -7797,7 +7797,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : présomption de défaut de soins en cas de maintien < 6 ans sur voie publique/transport collectif pour mendicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mendicité',
     question: 'Le simple fait de mendier avec un enfant en bas âge :',
     options: [
@@ -7810,7 +7810,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : “Par contre, le simple fait de mendier avec un enfant en bas âge n’est pas en soi constitutif” (Cass. crim., 12 oct. 2005).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral',
     question: 'L’élément moral de 227-15 exige :',
     options: [
@@ -7824,7 +7824,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : conscience/connaissance/prévision du mal (Cass. crim., 11 mars 1975).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Volonté de nuire',
     question: 'Pour 227-15, la volonté de nuire est :',
     options: [
@@ -7837,7 +7837,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : ni volonté de nuire ni volonté de causer un dommage ne sont nécessaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Convictions',
     question:
         'Des convictions religieuses peuvent justifier des privations compromettant la santé :',
@@ -7847,7 +7847,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : convictions religieuses / souci d’éducation ne justifient pas si conscience du risque sur la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Aggravation (227-15 al.3)',
     question:
         'Une circonstance aggravante (227-15 al.3) existe notamment si l’auteur a commis sur le même mineur :',
@@ -7861,7 +7861,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-15 al.3 vise le cas où l’auteur s’est rendu coupable du délit 433-18-1 sur le même mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mort',
     question:
         'Lorsque la privation d’aliments ou de soins entraîne la mort, le texte visé est :',
@@ -7875,7 +7875,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-16 CP = aggravation lorsque la privation a entraîné la mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine simple',
     question: 'La peine principale (227-15) est :',
     options: [
@@ -7887,7 +7887,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau du cours : 7 ans / 100 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine aggravée (227-15 al.3)',
     question: 'La peine principale (227-15 al.3) est :',
     options: [
@@ -7899,7 +7899,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 10 ans / 300 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Crime (mort)',
     question: 'En cas de mort (227-16), la peine est :',
     options: [
@@ -7911,7 +7911,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 227-16 = crime, 30 ans de réclusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Tentative/Complicité',
     question: 'Pour 227-15 :',
     options: [
@@ -7928,7 +7928,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // SOUSTRACTION D’UN PARENT À SES OBLIGATIONS — 227-17
   // MOYENNE (21-45)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Fondement',
     question:
         'La soustraction d’un parent à ses obligations légales est prévue par :',
@@ -7942,7 +7942,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-17 CP définit et réprime la soustraction d’un parent à ses obligations légales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Auteur',
     question: 'L’auteur visé par 227-17 est :',
     options: [
@@ -7955,7 +7955,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : seuls père et mère (lien de filiation), exclusion des autres ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Victime',
     question: 'La victime de 227-17 doit être :',
     options: [
@@ -7967,7 +7967,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : mineur sans condition d’âge (= < 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Motif légitime',
     question:
         'Les faits ne sont punissables que si le parent s’est soustrait :',
@@ -7980,7 +7980,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte exige l’absence de motif légitime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Autorité parentale',
     question:
         'L’article du code civil cité au sujet de l’autorité parentale est :',
@@ -7994,7 +7994,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours rappelle 371-1 C. civ. (sécurité, santé, moralité, éducation, développement, sans violences).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Quitter le domicile',
     question: 'Pour 227-17, il faut que le parent quitte le domicile :',
     options: [
@@ -8007,7 +8007,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : pas nécessaire de quitter le domicile; c’est un abandon moral possible même présent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Contenu',
     question: 'Sont cités comme exemples d’abandon moral/matériel :',
     options: [
@@ -8020,7 +8020,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours liste ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Condition de compromission',
     question:
         'L’infraction est constituée si la soustraction est susceptible de compromettre :',
@@ -8033,7 +8033,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise ces quatre intérêts.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Dommage effectif',
     question: 'Il faut que la compromission soit irréversible et réalisée :',
     options: ['Non', 'Oui', 'Oui si mineur < 15'],
@@ -8042,7 +8042,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : pas requis que le dommage se soit réalisé; il suffit qu’il soit susceptible de se réaliser.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Carence effective',
     question: 'Pour 227-17, la carence parentale doit être :',
     options: ['Effective', 'Supposée', 'Présumée par le seul divorce'],
@@ -8051,7 +8051,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : la carence des parents doit être effective (Cass. crim., 11 juillet 1994).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Preuve motif légitime',
     question: 'La preuve du motif légitime est à la charge :',
     options: ['Du prévenu', 'Du ministère public', 'De l’enfant'],
@@ -8060,7 +8060,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : c’est au prévenu d’apporter la preuve d’un motif grave.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Appréciation motif',
     question: 'La légitimité du motif invoqué est appréciée :',
     options: ['Par le juge', 'Par la victime uniquement', 'Par l’école'],
@@ -8068,7 +8068,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : appréciation au cas par cas par le juge.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Divorce',
     question:
         'L’introduction d’une demande en divorce est un motif légitime justifiant l’abandon :',
@@ -8078,7 +8078,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : demande en divorce ≠ motif grave (Cass. crim., 30 mai 1967).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Incarcération',
     question: 'L’incarcération du parent peut constituer un motif légitime :',
     options: [
@@ -8091,7 +8091,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : incarcération reconnue comme motif légitime dans un cas (Cass. crim., 26 mars 1957).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Convictions religieuses',
     question:
         'Les convictions religieuses peuvent excuser la soustraction 227-17 :',
@@ -8101,7 +8101,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : convictions religieuses ne sauraient excuser (Cass. crim., 11 juillet 1994).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Élément moral',
     question: '227-17 est une infraction :',
     options: ['Intentionnelle', 'Involontaire', 'Contraventionnelle'],
@@ -8110,7 +8110,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : conscience de se soustraire et du risque de conséquences dommageables.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Aggravation al.2',
     question:
         'Une aggravation (227-17 al.2) existe si la soustraction a conduit à :',
@@ -8125,7 +8125,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : aggravation si lien direct + condamnation définitive du mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Peine simple',
     question: 'La peine simple (227-17) est :',
     options: [
@@ -8137,7 +8137,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 2 ans / 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Peine aggravée',
     question: 'La peine aggravée (227-17 al.2) est :',
     options: [
@@ -8149,7 +8149,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Tentative/Complicité',
     question: 'Pour 227-17 :',
     options: [
@@ -8166,7 +8166,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // PROPOSITIONS SEXUELLES À MINEUR < 15 PAR MOYEN ÉLECTRONIQUE — 227-22-1
   // MOYENNE (46-60)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Fondement',
     question:
         'Les propositions sexuelles à un mineur de quinze ans par moyen électronique sont prévues par :',
@@ -8180,7 +8180,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-22-1 CP réprime les propositions sexuelles via communication électronique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Auteur',
     question: 'L’auteur des propositions sexuelles (227-22-1) doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -8188,7 +8188,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : auteur = personne majeure.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Acte',
     question: 'Les propositions visées doivent être :',
     options: ['Sexuelles et explicites', 'Ambiguës uniquement', 'Politiques'],
@@ -8196,7 +8196,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : propositions sexuelles explicites.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Moyen',
     question: 'Le moyen exigé par 227-22-1 est :',
     options: [
@@ -8209,7 +8209,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise l’usage d’un moyen de communication électronique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Victime',
     question: 'La victime doit être :',
     options: [
@@ -8222,7 +8222,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : adressées à mineur < 15 ou personne se présentant comme telle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Croyance',
     question:
         'Il suffit que l’auteur ait cru être en présence d’un mineur de quinze ans :',
@@ -8232,7 +8232,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : il suffit qu’il ait cru être en présence d’un mineur < 15.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Nature',
     question: '227-22-1 réprime principalement :',
     options: [
@@ -8245,7 +8245,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : incriminer des comportements pouvant conduire à une atteinte sexuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Élément moral',
     question: 'L’élément moral (227-22-1) repose sur :',
     options: [
@@ -8259,7 +8259,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : infraction intentionnelle, volonté d’effectuer ces propositions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Aggravation',
     question: 'La circonstance aggravante (227-22-1 al.2) est :',
     options: [
@@ -8271,7 +8271,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : aggravation si rencontre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Peine simple',
     question: 'La peine simple (227-22-1 al.1) est :',
     options: [
@@ -8283,7 +8283,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 2 ans / 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Peine aggravée',
     question: 'La peine aggravée (227-22-1 al.2) est :',
     options: [
@@ -8295,7 +8295,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Tentative',
     question: 'La tentative (227-22-1) est :',
     options: [
@@ -8307,7 +8307,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : tentative NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Complicité',
     question: 'La complicité (227-22-1) est :',
     options: ['Oui', 'Non', 'Oui uniquement si rencontre'],
@@ -8320,7 +8320,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // EXPLOITATION IMAGE PORNOGRAPHIQUE D’UN MINEUR — 227-23
   // DIFFICILE (61-100)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement fixation',
     question:
         'Le fait de fixer/enregistrer/transmettre l’image pornographique d’un mineur en vue de diffusion est prévu par :',
@@ -8334,7 +8334,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-23 al.1 réprime la fixation/enregistrement/transmission en vue de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Mineur < 15 et diffusion',
     question:
         'Si l’image concerne un mineur de quinze ans, la fixation/enregistrement est punie :',
@@ -8348,7 +8348,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : pour mineur < 15, punissable même sans vue de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement diffusion',
     question:
         'Offrir/rendre disponible/diffuser/importer/exporter une image pornographique de mineur est prévu par :',
@@ -8362,7 +8362,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-23 al.2 réprime l’offre, mise à dispo, diffusion, import/export.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement consultation/détention',
     question:
         'Consulter habituellement ou en contrepartie d’un paiement un site pédopornographique / détenir ou acquérir est prévu par :',
@@ -8376,7 +8376,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-23 al.4 incrimine consultation habituelle ou payante + acquisition/détention.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Image vs représentation',
     question: 'Le terme “représentation” a été ajouté notamment pour viser :',
     options: [
@@ -8389,7 +8389,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : image réelle et représentation fictive/virtuelle (dessins, photomontage, morphing…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Support',
     question: 'L’image/représentation peut se trouver :',
     options: [
@@ -8401,7 +8401,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : support indifférent, exemples multiples.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Caractère pornographique',
     question: 'Le caractère pornographique vise :',
     options: [
@@ -8414,7 +8414,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : simple nudité hors attitude particulière n’entre pas dans l’incrimination.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Simple nudité',
     question:
         'La simple nudité d’un mineur, sans attitude particulière, entre dans 227-23 :',
@@ -8423,7 +8423,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : simple nudité seule n’est pas visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Œuvre artistique',
     question:
         'Pour des œuvres artistiques (tableaux, gravures), la qualification pornographique relève :',
@@ -8436,7 +8436,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : appréciation au cas par cas (art/pornographie).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Diffusion',
     question:
         'La diffusion au sens de 227-23 al.2 doit en principe impliquer :',
@@ -8450,7 +8450,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : diffusion suppose plusieurs destinataires (contrairement à une correspondance personnelle).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Correspondance',
     question:
         'Une lettre adressée à une seule personne (correspondance personnelle) est, en principe :',
@@ -8464,7 +8464,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : a contrario, une lettre à une seule personne ne peut être qualifiée de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Diffusion non publique',
     question: 'La diffusion doit être publique pour être incriminée :',
     options: ['Non', 'Oui', 'Oui sauf si mineur < 15'],
@@ -8473,7 +8473,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : diffusion incriminée même sans caractère public (ex : salon privé).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Offre',
     question: 'L’offre (227-23 al.2) s’entend :',
     options: [
@@ -8486,7 +8486,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : offre = mise à disposition d’autrui même gratuite, sans exiger pluralité de destinataires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Rendre disponible',
     question: 'Rendre disponible correspond notamment au fait de :',
     options: [
@@ -8500,7 +8500,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : laisser des fichiers accessibles sans diffuser directement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Import/export',
     question:
         'L’importation/exportation de documents pédopornographiques est incriminée :',
@@ -8513,7 +8513,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : incrimination spécifique, y compris transit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Consultation habituelle',
     question:
         'La consultation d’un site pédopornographique est incriminée si elle est :',
@@ -8526,7 +8526,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : consultation habituelle ou payante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Consultation payante',
     question: 'La consultation même occasionnelle est sanctionnée dès lors :',
     options: [
@@ -8539,7 +8539,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : consultation occasionnelle sanctionnée si paiement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Acquisition/détention',
     question: 'La détention/acquisition est caractérisée notamment par :',
     options: [
@@ -8553,7 +8553,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : présence sur matériel suffit si impossibilité d’établir qu’il ignorait l’existence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Repentir',
     question: 'Détruire ultérieurement les fichiers (repentir) :',
     options: [
@@ -8566,7 +8566,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : délit prouvé même si fichiers détruits; repentir sans influence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Apparence de mineur',
     question:
         'L’infraction peut être constituée si la personne a l’aspect physique d’un mineur :',
@@ -8581,7 +8581,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : aspect de mineur suffit sauf établissement de majorité au moment de la fixation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Élément moral',
     question: 'L’exploitation d’images pédopornographiques (227-23) est :',
     options: ['Intentionnelle', 'Involontaire', 'Contraventionnelle'],
@@ -8590,7 +8590,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : conscience du caractère contraire aux bonnes mœurs.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Mobile',
     question: 'Le mobile (sadisme, prétendue vocation artistique, etc.) :',
     options: [
@@ -8602,7 +8602,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : mobile importe peu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Connaissance minorité',
     question: 'La connaissance de la minorité du sujet représenté est :',
     options: ['Présumée', 'Toujours impossible à prouver', 'Jamais présumée'],
@@ -8611,7 +8611,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : connaissance par le prévenu de la minorité est présumée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Aggravation réseau',
     question: 'Une aggravation (227-23 al.3) existe lorsque :',
     options: [
@@ -8625,7 +8625,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : al.3 = usage d’un réseau électronique pour diffusion à public non déterminé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Aggravation bande organisée',
     question: 'Une aggravation (227-23 al.5) existe en cas de :',
     options: ['Bande organisée', 'Mariage', 'Divorce'],
@@ -8633,7 +8633,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : al.5 = bande organisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine fabrication simple',
     question:
         'La fabrication/fixation en vue de diffusion (227-23 al.1) est punie de :',
@@ -8646,7 +8646,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 5 ans / 75 000 € (fabrication simple).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine diffusion simple',
     question: 'La diffusion simple (227-23 al.2) est punie de :',
     options: [
@@ -8658,7 +8658,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 5 ans / 75 000 € (diffusion simple).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine consultation/détention',
     question:
         'La consultation habituelle ou la détention (227-23 al.4) est punie de :',
@@ -8671,7 +8671,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine aggravée réseau',
     question: 'La diffusion aggravée (227-23 al.3) est punie de :',
     options: [
@@ -8683,7 +8683,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 10 ans / 500 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Tentative',
     question: 'La tentative des infractions prévues par 227-23 est :',
     options: [
@@ -8696,7 +8696,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-23 al.6 prévoit la tentative punissable pour toutes les infractions de 227-23.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Complicité',
     question: 'La complicité en matière 227-23 est :',
     options: ['Oui', 'Non', 'Oui uniquement en bande organisée'],
@@ -8706,7 +8706,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- ATTEINTES SEXUELLES MAJEUR SUR MINEUR < 15 — 227-25 / 227-26 (DIFFICILE) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Fondement',
     question:
         'Les atteintes sexuelles commises par un majeur sur un mineur de quinze ans sont prévues par :',
@@ -8720,7 +8720,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-25 CP réprime l’atteinte sexuelle par majeur sur mineur < 15 (hors viol/agression sexuelle).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Définition',
     question: 'L’atteinte sexuelle suppose :',
     options: [
@@ -8732,7 +8732,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : contact physique entre agresseur et victime.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Absence de violence',
     question: 'L’atteinte sexuelle 227-25 correspond à un contact :',
     options: [
@@ -8744,7 +8744,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : sinon, bascule vers viol/agression sexuelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Auteur',
     question: 'L’auteur visé par 227-25 doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -8752,7 +8752,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : infraction imputable à un majeur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Âge victime',
     question: 'Pour 227-25, la victime doit être :',
     options: [
@@ -8764,7 +8764,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : on retient l’âge au moment des faits.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Calcul âge',
     question: 'Le cours précise que l’âge se calcule :',
     options: [
@@ -8777,7 +8777,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : Cass. crim., 03 septembre 1985 (calcul d’heure à heure).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Erreur âge',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -8790,7 +8790,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : erreur sur l’âge n’atténue pas, avec nuances jurisprudentielles très limitées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Aggravations',
     question:
         'Les circonstances aggravantes de l’atteinte sexuelle < 15 sont prévues par :',
@@ -8803,7 +8803,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : 227-26 CP prévoit les aggravations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Peine simple',
     question: 'La peine simple (227-25) est :',
     options: [
@@ -8815,7 +8815,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Peine aggravée',
     question: 'La peine aggravée (227-26) est :',
     options: [
@@ -8827,7 +8827,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 10 ans / 150 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Tentative',
     question: 'La tentative des délits d’atteintes sexuelles sur mineur est :',
     options: [
@@ -8841,7 +8841,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---------- ATTEINTES SEXUELLES MAJEUR SUR MINEUR > 15 — 227-27 (DIFFICILE) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Fondement',
     question:
         'Les atteintes sexuelles sur un mineur de plus de 15 ans (hors viol/agression sexuelle) sont prévues par :',
@@ -8855,7 +8855,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 227-27 CP réprime les atteintes sexuelles sur mineur > 15, sous conditions d’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Conditions',
     question:
         'Pour 227-27, l’infraction est constituée notamment lorsque l’acte est commis par un majeur :',
@@ -8870,7 +8870,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : 1° autorité de droit/de fait ; 2° abus de l’autorité conférée par les fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Âge victime',
     question: 'Pour 227-27, la victime doit être :',
     options: [
@@ -8882,7 +8882,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours : mineur > 15 et < 18, même émancipé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Peine',
     question: 'La peine principale (227-27) est :',
     options: [
@@ -8894,7 +8894,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Tableau : 5 ans / 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Tentative/Complicité',
     question: 'Pour 227-27 :',
     options: [
@@ -8907,7 +8907,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours : tentative OUI (227-27-2) ; complicité OUI (121-7).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le défaut de notification de changement de domicile au créancier est prévu par :',
@@ -8921,7 +8921,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’élément légal de l’infraction est fixé par l’article 227-4-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le défaut de notification de changement de domicile au créancier est prévu par :',
@@ -8935,7 +8935,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’élément légal de l’infraction est fixé par l’article 227-4-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'L’infraction vise une personne tenue de verser une contribution ou des subsides au titre :',
@@ -8950,7 +8950,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise la personne tenue de verser une contribution ou des subsides au titre de l’ordonnance de protection (art. 515-9 C. civ.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le débiteur doit notifier son changement de domicile au créancier dans un délai de :',
@@ -8964,7 +8964,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le délai légal est d’un mois à compter du changement de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Concernant la forme de la notification du changement de domicile, le texte :',
@@ -8978,7 +8978,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Aucune exigence n’est formulée quant à la forme de la notification : l’essentiel est d’informer dans le délai.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question:
         'Le défaut de notification de changement de domicile est une infraction :',
@@ -8996,7 +8996,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — PRÉCISIONS / MÉCANISME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'L’infraction a été prévue notamment car le JAF peut se prononcer dans le référé protection sur :',
@@ -9010,7 +9010,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que le JAF peut statuer sur la contribution aux charges du ménage, d’où l’intérêt dissuasif de l’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Dans ce cadre, la personne visée par 227-4-3 est principalement :',
@@ -9024,7 +9024,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’obligation de notifier pèse sur le débiteur tenu de verser la contribution/subsides.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'Pourquoi la simple négligence n’est-elle pas punissable ici ?',
     options: [
@@ -9038,7 +9038,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte insiste sur l’intention : la volonté de priver le créancier de l’exercice de son droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances',
     question:
         'Concernant les circonstances aggravantes du défaut de notification (227-4-3), il y en a :',
@@ -9056,7 +9056,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-3 est :',
     options: [
@@ -9068,7 +9068,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La répression prévue est : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La classification de l’infraction 227-4-3 est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -9076,7 +9076,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise : classification = délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La tentative de l’infraction 227-4-3 est :',
     options: [
@@ -9088,7 +9088,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le document indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La complicité pour 227-4-3 est :',
     options: [
@@ -9101,7 +9101,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La complicité est prévue selon l’article 121-7 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Personnes morales',
     question:
         'Depuis quand la responsabilité des personnes morales est applicable de façon généralisée (référence cours) ?',
@@ -9119,7 +9119,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-RESPECT DES OBLIGATIONS / INTERDICTIONS D’UNE ORDONNANCE DE PROTECTION — FONDEMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Fondement',
     question:
         'Le non-respect des obligations ou interdictions imposées par une ordonnance de protection est prévu par :',
@@ -9133,7 +9133,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’élément légal est fixé par l’article 227-4-2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'L’infraction vise le non-respect d’obligations/interdictions imposées dans :',
@@ -9147,7 +9147,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise l’ordonnance de protection rendue notamment en application des articles 515-9 ou 515-13 du code civil.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'Sont aussi visées par 227-4-2 les obligations/interdictions imposées dans :',
@@ -9162,7 +9162,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise aussi l’ordonnance provisoire de protection immédiate rendue sur le fondement de l’article 515-13-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ UE',
     question:
         'Les mêmes peines s’appliquent à la violation d’une mesure de protection civile d’un autre État membre de l’UE reconnue en France via :',
@@ -9180,7 +9180,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — CONDITIONS (515-9) / DÉLAIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'Selon l’article 515-9 C. civ., l’ordonnance de protection peut être délivrée lorsque des violences au sein du couple :',
@@ -9194,7 +9194,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La condition centrale : danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'L’ordonnance de protection peut être délivrée même lorsqu’il n’y a pas de cohabitation :',
@@ -9208,7 +9208,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise les violences au sein du couple y compris sans cohabitation, et même sans cohabitation passée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Délai',
     question:
         'Le JAF délivre l’ordonnance de protection dans un délai maximal de :',
@@ -9222,7 +9222,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : délai maximal de six jours (OP classique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Plainte',
     question:
         'La délivrance d’une ordonnance de protection est-elle conditionnée à une plainte pénale ?',
@@ -9240,7 +9240,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — MESURES POSSIBLES (515-11) : QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Parmi les mesures possibles, le JAF peut interdire à la partie défenderesse :',
@@ -9254,7 +9254,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est la mesure 1° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut interdire à la partie défenderesse de se rendre dans certains lieux fréquentés habituellement par la demanderesse :',
@@ -9268,7 +9268,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La mesure 1° bis prévoit l’interdiction de se rendre dans certains lieux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question: 'Concernant les armes, le JAF peut notamment :',
     options: [
@@ -9280,7 +9280,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est la mesure 2° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut ordonner à la partie défenderesse de remettre ses armes :',
@@ -9294,7 +9294,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 2° bis : remise au service de police/gendarmerie le plus proche.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut proposer une prise en charge sanitaire/sociale/psychologique ou un stage de responsabilisation :',
@@ -9308,7 +9308,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 2° ter : proposition de prise en charge ou stage ; en cas de refus, information immédiate du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Concernant le logement conjugal, sauf circonstances particulières, la jouissance est attribuée :',
@@ -9322,7 +9322,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le principe : protection de la victime, attribution au non-auteur des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut attribuer la jouissance de l’animal de compagnie détenu au sein du foyer :',
@@ -9332,7 +9332,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 515-11 prévoit la mesure 3° bis sur l’animal de compagnie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Pour des partenaires PACS/concubins, la jouissance du logement commun est attribuée en principe :',
@@ -9346,7 +9346,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le même principe protecteur est prévu au 4° pour PACS/concubins.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut se prononcer sur l’autorité parentale et aussi sur :',
@@ -9361,7 +9361,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 5° : autorité parentale, DVH, et contributions selon la situation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut autoriser la demanderesse à dissimuler son domicile et élire domicile :',
@@ -9376,7 +9376,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 6° : dissimulation + élection de domicile chez avocat ou auprès du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut aussi autoriser une élection de domicile « pour les besoins de la vie courante » :',
@@ -9390,7 +9390,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 6° bis : élection de domicile vie courante auprès d’une personne morale qualifiée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut prononcer l’admission provisoire à l’aide juridictionnelle :',
@@ -9407,7 +9407,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DISPOSITIF ANTI-RAPPROCHEMENT (515-11-1) — QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question:
         'Si l’interdiction d’entrer en relation (1°) est prononcée, le JAF peut aussi :',
@@ -9426,7 +9426,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE (515-13) — MARIAGE FORCÉ / SORTIE DU TERRITOIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’article 515-13 permet une ordonnance de protection en urgence pour :',
@@ -9440,7 +9440,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise expressément la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'Dans ce cadre, le JAF peut ordonner à la demande de la personne :',
@@ -9454,7 +9454,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 515-13 mentionne l’interdiction temporaire de sortie du territoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -9468,7 +9468,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE PROVISOIRE DE PROTECTION IMMÉDIATE (515-13-1) — 24H
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'L’ordonnance provisoire de protection immédiate est délivrée dans un délai de :',
@@ -9482,7 +9482,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte indique : délivrée dans un délai de vingt-quatre heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Qui peut demander, avec l’accord de la personne en danger, une OPPI en plus de la demande d’OP ?',
@@ -9492,7 +9492,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 515-13-1 prévoit la demande par le ministère public avec l’accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Pour délivrer l’OPPI, le JAF statue :',
     options: [
@@ -9509,7 +9509,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — ÉLÉMENT MATÉRIEL / MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément matériel',
     question: 'L’élément matériel de 227-4-2 consiste à :',
     options: [
@@ -9522,7 +9522,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La violation est le non-respect des obligations/interdictions fixées par l’ordonnance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'L’infraction 227-4-2 est :',
     options: [
@@ -9535,7 +9535,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise une infraction intentionnelle : l’auteur agit en connaissance de cause des obligations/interdictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'Pour caractériser l’élément moral, l’auteur doit notamment :',
     options: [
@@ -9548,7 +9548,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La connaissance des obligations/interdictions suppose que l’auteur ait été informé de l’ordonnance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Finalité',
     question: 'Le texte 227-4-2 vise à rendre l’ordonnance de protection :',
     options: [
@@ -9565,7 +9565,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-2 est :',
     options: [
@@ -9577,7 +9577,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La répression prévue par 227-4-2 est de 3 ans et 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Classification',
     question: 'La classification de l’infraction 227-4-2 est :',
     options: ['Un délit', 'Un crime', 'Une contravention'],
@@ -9585,7 +9585,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Circonstances',
     question:
         'Concernant les circonstances aggravantes de 227-4-2 (cours), il y en a :',
@@ -9594,7 +9594,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La tentative de 227-4-2 est :',
     options: [
@@ -9606,7 +9606,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le document précise : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La complicité pour 227-4-2 est :',
     options: [
@@ -9623,7 +9623,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS MIXTES (COMPARAISONS 227-4-2 / 227-4-3)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction est la plus lourdement sanctionnée (peine d’emprisonnement) ?',
@@ -9632,7 +9632,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-4-2 prévoit 3 ans, tandis que 227-4-3 prévoit 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction concerne spécifiquement le changement de domicile du débiteur ?',
@@ -9642,7 +9642,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         '227-4-3 incrimine le défaut de notification du changement de domicile au créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Élément moral',
     question: 'Point commun entre 227-4-2 et 227-4-3 :',
     options: [
@@ -9655,7 +9655,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Les deux supposent une volonté : ne pas se conformer / ne pas informer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question: 'Concernant la tentative, 227-4-2 et 227-4-3 :',
     options: [
@@ -9668,7 +9668,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique “TENTATIVE : NON” pour les deux infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Complicité',
     question: 'Concernant la complicité (121-7 CP), pour 227-4-2 et 227-4-3 :',
     options: [
@@ -9685,7 +9685,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS "PIÈGES" / PRÉCISION DE TEXTE (PLUS DIFFICILES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Durée',
     question:
         'Les mesures de l’ordonnance de protection peuvent être prises pour une durée maximale de :',
@@ -9699,7 +9699,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne une durée maximale de 12 mois, prolongeable sous certaines conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Logement',
     question:
         'Sauf circonstances particulières, la jouissance du logement est attribuée :',
@@ -9713,7 +9713,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Principe protecteur : attribution au non-auteur (sauf ordonnance motivée/circonstances particulières).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Domicile dissimulé',
     question:
         'Si un commissaire de justice doit connaître l’adresse réelle pour exécuter une décision :',
@@ -9728,7 +9728,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise la communication nécessaire pour l’exécution, avec interdiction de révélation au mandant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Information autorités',
     question:
         'Quand les mesures 6°/6° bis sont prononcées, qui peut être informé (avec accord de la personne) pour éviter la communication de l’adresse ?',
@@ -9742,7 +9742,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique l’information du maire et du représentant de l’État dans le département, sous réserve de l’accord de la personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Fin des mesures',
     question: 'Les mesures de l’OPPI prennent fin :',
     options: [
@@ -9764,7 +9764,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-3 — ÉLÉMENT LÉGAL / CHAMP
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le défaut de notification de changement de domicile au créancier est réprimé par :',
@@ -9777,7 +9777,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’élément légal est prévu à l’article 227-4-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'L’infraction 227-4-3 concerne une personne tenue de verser :',
     options: [
@@ -9791,7 +9791,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise la personne tenue de verser une contribution/subsides au titre de l’ordonnance de protection.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le délai légal pour notifier son changement de domicile au créancier est :',
@@ -9804,7 +9804,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe un délai d’un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'La notification du changement de domicile au créancier :',
     options: [
@@ -9816,7 +9816,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte précise qu’aucune forme n’est exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'L’ordonnance de protection visée pour 227-4-3 est rendue en application de :',
@@ -9834,7 +9834,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-3 — ÉLÉMENT MATÉRIEL / LOGIQUE DISUASIVE
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'L’incrimination 227-4-3 a été prévue notamment car le JAF peut statuer, en référé protection, sur :',
@@ -9848,7 +9848,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support justifie l’infraction par la nécessité dissuasive liée aux contributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question: 'L’acte matériel réprimé par 227-4-3 est :',
     options: [
@@ -9862,7 +9862,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cœur de l’infraction est l’absence de notification dans le délai d’un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question: 'Le délai d’un mois court :',
     options: [
@@ -9874,7 +9874,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte indique : “à compter de ce changement”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question: 'Le texte précise que la notification doit être faite :',
     options: [
@@ -9890,7 +9890,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-3 — ÉLÉMENT MORAL
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question:
         'Le défaut de notification de changement de domicile (227-4-3) est une infraction :',
@@ -9900,7 +9900,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique une volonté de ne pas informer le créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'La simple négligence est punissable pour 227-4-3 :',
     options: ['Non', 'Oui', 'Oui si le créancier le demande'],
@@ -9909,7 +9909,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que la simple négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'La volonté coupable, pour 227-4-3, consiste à :',
     options: [
@@ -9927,7 +9927,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-3 — RÉPRESSION / TENTATIVE / COMPLICITÉ
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La peine encourue pour 227-4-3 (personne physique) est :',
     options: [
@@ -9939,7 +9939,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La classification de 227-4-3 est :',
     options: ['Délit', 'Contravention', 'Crime'],
@@ -9947,7 +9947,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau répressif indique : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui si plusieurs déménagements'],
@@ -9955,7 +9955,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la complicité est :',
     options: [
@@ -9967,7 +9967,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : COMPLICITÉ : OUI, article 121-7 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances aggravantes',
     question: 'Pour 227-4-3, les circonstances aggravantes prévues sont :',
     options: ['Aucune', 'Deux', 'Une en cas d’enfant mineur'],
@@ -9983,7 +9983,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-2 — ÉLÉMENT LÉGAL / CHAMP
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question:
         'Le non-respect des obligations ou interdictions imposées par une ordonnance de protection est réprimé par :',
@@ -9996,7 +9996,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’élément légal est prévu à l’article 227-4-2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question:
         'Le texte vise une personne faisant l’objet d’une ou plusieurs obligations/interdictions imposées dans :',
@@ -10010,7 +10010,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support vise OP (515-9/515-13) + OPPI (515-13-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question:
         'Les mêmes peines s’appliquent aussi à la violation d’une mesure civile ordonnée dans un autre État membre de l’UE si elle est :',
@@ -10024,7 +10024,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support exige reconnaissance + force exécutoire en France.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'Le texte UE cité dans le support est :',
     options: [
@@ -10040,7 +10040,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-2 — ÉLÉMENT MATÉRIEL
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément matériel',
     question: 'L’élément matériel de 227-4-2 consiste à :',
     options: [
@@ -10054,7 +10054,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte incrimine la violation des obligations/interdictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément matériel',
     question: 'La finalité du texte 227-4-2 est de :',
     options: [
@@ -10067,7 +10067,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support insiste sur l’effectivité de l’OP en sanctionnant la violation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément matériel',
     question: 'L’ordonnance de protection a pour vocation de fournir :',
     options: [
@@ -10083,7 +10083,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-2 — ÉLÉMENT MORAL
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question: 'L’infraction 227-4-2 est une infraction :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Purement civile'],
@@ -10092,7 +10092,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique que l’auteur agit en pleine connaissance de cause.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question:
         'Pour que l’élément moral soit caractérisé, l’auteur doit notamment :',
@@ -10106,7 +10106,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : l’auteur doit avoir été informé des termes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question:
         'La connaissance par l’auteur des obligations/interdictions implique :',
@@ -10124,7 +10124,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // -----------------------------
   // 227-4-2 — RÉPRESSION / TENTATIVE / COMPLICITÉ
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Répression',
     question: 'La peine encourue pour 227-4-2 (personne physique) est :',
     options: [
@@ -10136,7 +10136,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe : 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Répression',
     question: 'La classification de 227-4-2 est :',
     options: ['Délit', 'Contravention', 'Crime'],
@@ -10144,7 +10144,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le tableau répressif indique : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la tentative est :',
     options: ['Non', 'Oui', 'Oui si la victime est mineure'],
@@ -10152,7 +10152,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la complicité est :',
     options: [
@@ -10164,7 +10164,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne l’article 121-7 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Circonstances aggravantes',
     question:
         'Pour 227-4-2, le support prévoit des circonstances aggravantes :',
@@ -10181,7 +10181,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // OP (515-9) — CONDITIONS / PRINCIPES (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Selon 515-9, l’ordonnance de protection peut être délivrée lorsque les violences :',
@@ -10195,7 +10195,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le critère central est le danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: '515-9 vise aussi les violences commises par :',
     options: [
@@ -10207,7 +10207,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support inclut les “anciens” liens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: 'L’ordonnance de protection peut être délivrée même si :',
     options: [
@@ -10219,7 +10219,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise les situations sans cohabitation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le juge délivre l’ordonnance de protection si, au vu des éléments, il existe :',
@@ -10234,7 +10234,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support utilise la formule “raisons sérieuses” + “vraisemblables”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'La délivrance de l’ordonnance de protection est conditionnée à une plainte pénale :',
@@ -10244,7 +10244,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : pas conditionnée à l’existence d’une plainte pénale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le délai maximal de délivrance (OP) indiqué dans le support est :',
@@ -10261,7 +10261,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // OP — 515-12 : DURÉE MAX (selon support)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — Durée',
     question:
         'Selon le support, les mesures sont prises pour une durée maximale de :',
@@ -10279,7 +10279,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11 — MESURES : QCM “CHOISIS LA BONNE MESURE” (EN SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Interdire de recevoir ou rencontrer certaines personnes et d’entrer en relation avec elles » correspond à :',
@@ -10288,7 +10288,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 1° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Interdire de se rendre dans certains lieux fréquentés habituellement par la demanderesse » correspond à :',
@@ -10297,7 +10297,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 1° bis de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question: '« Interdire de détenir ou porter une arme » correspond à :',
     options: ['2°', '2° bis', '2° ter'],
@@ -10305,7 +10305,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Ordonner la remise des armes au service de police/gendarmerie » correspond à :',
@@ -10314,7 +10314,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Proposer une prise en charge sanitaire/sociale/psychologique ou un stage » correspond à :',
@@ -10323,7 +10323,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° ter de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Statuer sur la résidence séparée des époux et la jouissance du logement conjugal » correspond à :',
@@ -10332,7 +10332,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 3° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Attribuer la jouissance de l’animal de compagnie du foyer » correspond à :',
@@ -10341,7 +10341,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 3° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Se prononcer sur le logement commun des partenaires PACS/concubins » correspond à :',
@@ -10350,7 +10350,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 4° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Modalités d’exercice de l’autorité parentale et droit de visite/hébergement » correspond à :',
@@ -10359,7 +10359,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 5° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Dissimuler son domicile et élire domicile chez l’avocat ou auprès du procureur » correspond à :',
@@ -10368,7 +10368,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 6° de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Élire domicile pour la vie courante chez une personne morale qualifiée » correspond à :',
@@ -10377,7 +10377,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 6° bis de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Admission provisoire à l’aide juridictionnelle » correspond à :',
@@ -10390,7 +10390,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11-1 — DISTANCE + DISPOSITIF ANTI-RAPPROCHEMENT
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'Si l’interdiction prévue au 1° de 515-11 est prononcée, le juge peut :',
@@ -10404,7 +10404,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support prévoit la fixation d’une distance minimale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question: 'Le dispositif anti-rapprochement est destiné à :',
     options: [
@@ -10421,7 +10421,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13 — MARIAGE FORCÉ / FIN DES MESURES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'Une ordonnance de protection peut être délivrée en urgence à la personne majeure :',
@@ -10435,7 +10435,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'Dans ce cadre, le juge peut ordonner l’interdiction temporaire de sortie du territoire :',
@@ -10448,7 +10448,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : “à sa demande”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'Les mesures prises sur 515-13 prennent fin :',
     options: [
@@ -10465,7 +10465,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13-1 — OPPI : SAISINE / DÉLAI / CONDITIONS / MESURES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est demandée par :',
     options: [
@@ -10478,7 +10478,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : ministère public + accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est délivrée dans un délai de :',
     options: [
@@ -10490,7 +10490,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne : délai de vingt-quatre heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Pour délivrer l’OPPI, le juge se fonde sur :',
     options: [
@@ -10503,7 +10503,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : “au vu des seuls éléments joints à la requête”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI exige la vraisemblance :',
     options: [
@@ -10515,7 +10515,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support vise “danger grave et immédiat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Mesures',
     question: 'Dans l’OPPI, le juge peut prononcer à titre provisoire :',
     options: [
@@ -10527,7 +10527,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support énumère ces mesures dans l’OPPI.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Mesures',
     question: 'Dans l’OPPI, le juge peut aussi ordonner :',
     options: [
@@ -10540,7 +10540,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne explicitement la suspension du DVH.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Mesures',
     question:
         'Dans l’OPPI, la dissimulation du domicile/résidence est possible selon :',
@@ -10553,7 +10553,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support renvoie aux 6° et 6° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Fin des mesures',
     question: 'Les mesures de l’OPPI prennent fin :',
     options: [
@@ -10570,7 +10570,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS COMPARATIVES (TRÈS UTILES EN QUIZ)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 / 227-4-3',
     question:
         'Quelle infraction vise spécifiquement le changement de domicile du débiteur ?',
@@ -10580,7 +10580,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         '227-4-3 = défaut de notification de changement de domicile au créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 / 227-4-3',
     question:
         'Quelle infraction vise le non-respect d’obligations/interdictions imposées par une OP/OPPI ?',
@@ -10589,7 +10589,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-4-2 = violation des obligations/interdictions OP/OPPI.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Peines',
     question:
         'Quelle infraction est la plus lourdement sanctionnée (emprisonnement) ?',
@@ -10598,7 +10598,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-4-2 : 3 ans ; 227-4-3 : 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Élément moral',
     question: 'Point commun entre 227-4-2 et 227-4-3 selon le support :',
     options: [
@@ -10610,7 +10610,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise l’intention pour les deux infractions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question:
         'Concernant la tentative, le support indique que pour 227-4-2 et 227-4-3 :',
@@ -10627,7 +10627,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // CAS PRATIQUES (QCM) — GROS RENDU MÉMOIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-2',
     question:
         'Une ordonnance de protection interdit à la défenderesse d’entrer en relation avec la demanderesse. Elle envoie un message via un tiers. La qualification la plus adaptée est :',
@@ -10641,7 +10641,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support souligne que l’interdiction peut viser toute forme de relation/contournement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-3',
     question:
         'Un débiteur soumis à une ordonnance de protection déménage, attend volontairement 35 jours et n’informe pas le créancier. La qualification la plus adaptée est :',
@@ -10655,7 +10655,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Délai d’un mois dépassé + intention : 227-4-3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 515-11-1',
     question:
         'Après une interdiction d’entrer en relation (1°), le juge fixe une distance minimale et ordonne un dispositif anti-rapprochement. Le fondement cité dans le support est :',
@@ -10676,7 +10676,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11 — MESURES : QCM “QUE PEUT FAIRE LE JAF ?” (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Le JAF peut, dans une ordonnance de protection, interdire à la partie défenderesse :',
@@ -10690,7 +10690,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 1° : interdiction de rencontrer/entrer en relation avec certaines personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La mesure qui permet d’interdire à la partie défenderesse de se rendre dans certains lieux est :',
@@ -10700,7 +10700,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 1° bis : lieux spécialement désignés où la demanderesse se trouve habituellement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Le juge peut interdire à la partie défenderesse de détenir ou porter une arme au titre :',
@@ -10713,7 +10713,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° : interdiction de détenir/porter une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La remise des armes au service de police ou de gendarmerie le plus proche relève :',
@@ -10726,7 +10726,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° bis : remise au service de police/gendarmerie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Une “prise en charge sanitaire, sociale ou psychologique” ou un “stage de responsabilisation” relève :',
@@ -10739,7 +10739,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° ter : proposition de prise en charge/stage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question: 'En cas de refus de la prise en charge/stage (2° ter), le juge :',
     options: [
@@ -10752,7 +10752,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support prévoit l’information immédiate du procureur en cas de refus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La mesure qui permet au juge de statuer sur la résidence séparée des époux est :',
@@ -10761,7 +10761,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 3° : résidence séparée + logement conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Sauf circonstances particulières, la jouissance du logement conjugal est attribuée :',
@@ -10774,7 +10774,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Principe de protection de la victime dans le support.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Le juge peut attribuer à la demanderesse la jouissance de l’animal de compagnie au titre :',
@@ -10787,7 +10787,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 3° bis : animal de compagnie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Pour des partenaires PACS ou concubins, la jouissance du logement commun est en principe attribuée :',
@@ -10800,7 +10800,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 4° : même logique protectrice que pour les époux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La mesure relative à l’autorité parentale et au droit de visite/hébergement est :',
@@ -10809,7 +10809,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 5° : autorité parentale + DVH + contributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La dissimulation du domicile/résidence et l’élection de domicile chez l’avocat ou le procureur relève :',
@@ -10819,7 +10819,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 6° : dissimulation + élection de domicile (avocat/parquet).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'L’élection de domicile “pour les besoins de la vie courante” chez une personne morale qualifiée relève :',
@@ -10829,7 +10829,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 6° bis : vie courante chez une personne morale qualifiée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question: 'L’admission provisoire à l’aide juridictionnelle relève :',
     options: ['Du 7°', 'Du 3° bis', 'Du 1°'],
@@ -10841,7 +10841,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11-1 — DISTANCE + DISPOSITIF ANTI-RAPPROCHEMENT (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'La possibilité d’interdire de se rapprocher à moins d’une certaine distance est prévue par :',
@@ -10854,7 +10854,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support rattache distance + dispositif à 515-11-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'Le juge peut ordonner le port d’un dispositif anti-rapprochement lorsque :',
@@ -10868,7 +10868,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : “Lorsque l’interdiction prévue au 1° a été prononcée…”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question: 'Le dispositif anti-rapprochement sert principalement à :',
     options: [
@@ -10885,7 +10885,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13 — ORDONNANCE POUR MENACE DE MARIAGE FORCÉ (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'L’article 515-13 permet une ordonnance de protection en urgence pour :',
@@ -10899,7 +10899,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise explicitement la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'Le juge peut ordonner, à la demande de la personne menacée, une :',
@@ -10913,7 +10913,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne l’interdiction temporaire de sortie du territoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -10926,7 +10926,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13-1 — OPPI : DEMANDE / CONDITIONS / FIN (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est demandée par le ministère public :',
     options: [
@@ -10938,7 +10938,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support exige l’accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Le juge délivre l’OPPI s’il estime vraisemblables :',
     options: [
@@ -10950,7 +10950,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support insiste sur “danger grave et immédiat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Le délai de délivrance de l’OPPI est :',
     options: [
@@ -10962,7 +10962,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : dans les 24 heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Dans l’OPPI, le juge peut prononcer provisoirement les mesures :',
@@ -10975,7 +10975,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support limite explicitement aux 1° à 2° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Le support indique que les mesures de l’OPPI prennent fin :',
     options: [
@@ -10993,7 +10993,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-4-2 — VIOLATION OP/OPPI : ÉLÉMENTS / PEINES (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'La violation d’une ordonnance de protection consiste à :',
     options: [
@@ -11006,7 +11006,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Élément matériel : non-respect des obligations/interdictions imposées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'L’élément moral de 227-4-2 repose sur :',
     options: [
@@ -11018,7 +11018,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support précise : infraction intentionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Répression',
     question:
         'La peine principale (personne physique) prévue par 227-4-2 est :',
@@ -11031,7 +11031,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la complicité est :',
     options: [
@@ -11043,7 +11043,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : COMPLICITÉ : OUI (121-7 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la tentative est :',
     options: ['Non', 'Oui', 'Oui si la distance n’est pas respectée'],
@@ -11055,7 +11055,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-4-3 — DÉFAUT DE NOTIFICATION : ÉLÉMENTS / PEINES (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'L’élément moral de 227-4-3 repose sur :',
     options: [
@@ -11069,7 +11069,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : infraction intentionnelle, négligence non punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question:
         'La peine principale (personne physique) prévue par 227-4-3 est :',
@@ -11082,7 +11082,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support fixe 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la complicité est :',
     options: [
@@ -11094,7 +11094,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : COMPLICITÉ : OUI (121-7 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui si le débiteur a déménagé deux fois'],
@@ -11106,7 +11106,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // CAS PRATIQUES — MIX 515 / 227 (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Mix',
     question:
         'Une OP interdit à la défenderesse de se rendre dans un lieu désigné (1° bis). Elle y va volontairement. Infraction la plus adaptée :',
@@ -11120,7 +11120,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le non-respect d’une interdiction imposée par l’OP est sanctionné par 227-4-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Mix',
     question:
         'Une OP prévoit remise des armes (2° bis). La défenderesse refuse et conserve une arme. Infraction la plus adaptée :',
@@ -11134,7 +11134,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La violation des obligations imposées (dont remise des armes) relève de 227-4-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Mix',
     question:
         'Un débiteur soumis à une OP déménage et décide de ne pas informer le créancier pour éviter l’exécution des paiements. Infraction la plus adaptée :',
@@ -11156,7 +11156,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-9 — CONDITIONS / CHAMP (SÉRIES D’ANCRAGE MÉMOIRE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'L’ordonnance de protection peut être délivrée lorsque les violences exercées :',
@@ -11170,7 +11170,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise le danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: 'Le champ de 515-9 inclut les violences exercées :',
     options: [
@@ -11182,7 +11182,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite expressément les “anciens” liens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: 'L’ordonnance de protection peut être délivrée même lorsque :',
     options: [
@@ -11195,7 +11195,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne l’absence de cohabitation (même jamais).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le juge délivre l’ordonnance s’il existe des raisons sérieuses de considérer vraisemblables :',
@@ -11209,7 +11209,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Formule du support : raisons sérieuses + vraisemblance + danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'La délivrance d’une ordonnance de protection est conditionnée à une plainte pénale :',
@@ -11219,7 +11219,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que la plainte pénale n’est pas une condition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le délai maximal de délivrance de l’ordonnance de protection indiqué par le support est :',
@@ -11232,7 +11232,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11 — MESURES : QCM “CHOISIS LA MESURE QUI CORRESPOND” (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « interdire à la défenderesse de recevoir ou rencontrer certaines personnes et d’entrer en relation avec elles » ?',
@@ -11241,7 +11241,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 1° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « interdire à la défenderesse de se rendre dans certains lieux spécialement désignés » ?',
@@ -11250,7 +11250,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 1° bis de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « interdire de détenir ou de porter une arme » ?',
@@ -11259,7 +11259,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 2° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « ordonner de remettre les armes au service de police ou de gendarmerie le plus proche » ?',
@@ -11268,7 +11268,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 2° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « proposer une prise en charge sanitaire, sociale ou psychologique ou un stage de responsabilisation » ?',
@@ -11277,7 +11277,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 2° ter de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « statuer sur la résidence séparée des époux et le logement conjugal » ?',
@@ -11286,7 +11286,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 3° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « attribuer la jouissance de l’animal de compagnie du foyer » ?',
@@ -11295,7 +11295,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 3° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « se prononcer sur le logement commun de partenaires PACS ou concubins » ?',
@@ -11304,7 +11304,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 4° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « se prononcer sur l’autorité parentale et le droit de visite/hébergement » ?',
@@ -11313,7 +11313,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 5° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « autoriser à dissimuler son domicile et à élire domicile chez l’avocat ou auprès du procureur » ?',
@@ -11322,7 +11322,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 6° de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « élire domicile pour les besoins de la vie courante chez une personne morale qualifiée » ?',
@@ -11331,7 +11331,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support liste cette mesure au 6° bis de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « admission provisoire à l’aide juridictionnelle » ?',
@@ -11344,7 +11344,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11 — QUESTIONS “DÉTAILS DE RÉDACTION” (TRÈS BON POUR DÉPISTAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (détails)',
     question:
         'Le support précise que la jouissance du logement (époux) est attribuée au non-auteur des violences :',
@@ -11359,7 +11359,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique ce principe avec l’exception (ordonnance motivée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (détails)',
     question:
         'Le support indique que la jouissance du logement peut être attribuée à la victime :',
@@ -11373,7 +11373,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise “et ce même s’il a bénéficié d’un hébergement d’urgence”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (détails)',
     question: 'La mesure 1° interdit d’entrer en relation :',
     options: [
@@ -11390,7 +11390,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-11-1 — “SI… ALORS…” (EXCELLENTS POUR LA MÉMOIRE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question: 'Si l’interdiction de contact (1°) est prononcée, le juge peut :',
     options: [
@@ -11402,7 +11402,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support prévoit la distance fixée par le juge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'Le support indique que le port du dispositif anti-rapprochement concerne :',
@@ -11419,7 +11419,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13 — MENACE DE MARIAGE FORCÉ : MESURES / FIN (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         '515-13 prévoit que le juge est compétent pour prendre les mesures mentionnées notamment aux :',
@@ -11433,7 +11433,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique cette compétence spécifique (liste restreinte) pour 515-13.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'En cas de menace de mariage forcé, le juge peut aussi ordonner :',
@@ -11446,7 +11446,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne l’ITST temporaire “à sa demande”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'La fin des mesures (515-13) intervient :',
     options: [
@@ -11463,7 +11463,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13-1 — OPPI : MESURES PRÉCISES (SÉRIES “LISTE”)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1 (mesures)',
     question: 'Dans l’OPPI, le juge peut prononcer provisoirement :',
     options: [
@@ -11475,7 +11475,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne explicitement 1° à 2° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1 (mesures)',
     question:
         'Le support précise que dans l’OPPI, le juge peut aussi prononcer :',
@@ -11489,7 +11489,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite la suspension du DVH.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1 (mesures)',
     question:
         'La dissimulation du domicile/résidence dans l’OPPI se fait selon :',
@@ -11506,7 +11506,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 227-4-2 / 227-4-3 — QUESTIONS “CHIFFRES” (PEINES / DÉLAIS) ULTRA RENTABLES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-2',
     question: 'Le quantum d’emprisonnement prévu par 227-4-2 est de :',
     options: ['3 ans', '6 mois', '1 an'],
@@ -11514,7 +11514,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 3 ans d’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-2',
     question: 'Le montant de l’amende prévu par 227-4-2 est de :',
     options: ['45 000 €', '7 500 €', '15 000 €'],
@@ -11522,7 +11522,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-3',
     question: 'Le quantum d’emprisonnement prévu par 227-4-3 est de :',
     options: ['6 mois', '3 ans', '2 ans'],
@@ -11530,7 +11530,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 6 mois d’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-3',
     question: 'Le montant de l’amende prévu par 227-4-3 est de :',
     options: ['7 500 €', '45 000 €', '30 000 €'],
@@ -11538,7 +11538,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-3',
     question: 'Le délai de notification (227-4-3) est de :',
     options: ['1 mois', '6 jours', '24 heures'],
@@ -11550,7 +11550,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // CAS PRATIQUES — “BON ARTICLE” (TRÈS EFFICACE POUR EXAMENS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Bon article',
     question:
         'Une personne visée par une OP ne respecte pas l’interdiction de se rendre dans un lieu désigné (1° bis). Quel article du Code pénal réprime ce non-respect ?',
@@ -11560,7 +11560,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le non-respect des obligations/interdictions de l’OP relève de 227-4-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Bon article',
     question:
         'Un débiteur tenu de verser une contribution au titre d’une OP déménage et ne prévient pas le créancier dans le délai. Quel article réprime ce comportement ?',
@@ -11570,7 +11570,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le défaut de notification de changement de domicile au créancier relève de 227-4-3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Bon article',
     question:
         'Le juge fixe une distance minimale et ordonne un dispositif anti-rapprochement. Quel article du code civil est cité dans le support ?',
@@ -11580,7 +11580,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'L’infraction de défaut de notification de changement de domicile au créancier est :',
@@ -11589,7 +11589,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support classe 227-4-3 comme un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le délai pour notifier le changement de domicile au créancier est de :',
@@ -11598,7 +11598,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte prévoit un délai d’un mois à compter du changement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le défaut de notification de changement de domicile au créancier suppose :',
@@ -11612,7 +11612,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'C’est une infraction intentionnelle : la simple négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'La notification du changement de domicile au créancier doit obligatoirement être faite :',
@@ -11625,7 +11625,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Aucune exigence de forme n’est imposée par le texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'Le défaut de notification de changement de domicile concerne :',
     options: [
@@ -11638,7 +11638,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise le débiteur tenu de verser une contribution/subsides au titre de l’ordonnance de protection.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question:
         'La peine principale encourue (personne physique) pour 227-4-3 est :',
@@ -11651,7 +11651,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Répression prévue : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui uniquement en cas de récidive'],
@@ -11659,7 +11659,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le document indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la complicité est :',
     options: [
@@ -11672,7 +11672,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La complicité est applicable conformément à l’article 121-7 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances aggravantes',
     question: 'Pour 227-4-3, les circonstances aggravantes sont :',
     options: [
@@ -11684,7 +11684,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : Aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Intention',
     question: 'La volonté coupable (élément moral) de 227-4-3 consiste à :',
     options: [
@@ -11702,7 +11702,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — 515-9 : CONTEXTE / CONDITIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question:
         'L’ordonnance de protection peut être délivrée lorsque les violences sont exercées :',
@@ -11716,7 +11716,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise aussi les anciens conjoints/partenaires/concubins, même sans cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question: 'Selon 515-9, l’ordonnance peut être délivrée même si :',
     options: [
@@ -11729,7 +11729,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise : y compris lorsqu’il n’y a jamais eu de cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question: 'Pour délivrer l’ordonnance, le juge doit retenir :',
     options: [
@@ -11743,7 +11743,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte parle de “raisons sérieuses” et de violences “vraisemblables” + danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question:
         'La délivrance de l’ordonnance de protection suppose obligatoirement :',
@@ -11757,7 +11757,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte indique que les éléments sont “produits devant lui et contradictoirement débattus”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question:
         'L’ordonnance de protection est délivrée dans un délai maximal de :',
@@ -11773,7 +11773,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
 
   // ---- Mesure 1° : interdiction de recevoir/rencontrer/entrer en relation
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1°)',
     question: 'La mesure 1° permet au JAF :',
     options: [
@@ -11786,7 +11786,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 1° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1°)',
     question: 'L’interdiction d’entrer en relation peut viser :',
     options: [
@@ -11800,7 +11800,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 1° bis : interdiction de se rendre dans certains lieux
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1° bis)',
     question: 'La mesure 1° bis permet au JAF :',
     options: [
@@ -11814,7 +11814,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 1° bis : lieux où se trouve habituellement la demanderesse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1° bis)',
     question:
         'Les lieux visés au 1° bis sont notamment ceux où la demanderesse se trouve :',
@@ -11830,7 +11830,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesures armes : 2°, 2° bis
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2°)',
     question: 'La mesure 2° permet au JAF :',
     options: [
@@ -11842,7 +11842,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° : interdiction armes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2° bis)',
     question: 'La mesure 2° bis prévoit :',
     options: [
@@ -11857,7 +11857,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 2° ter : prise en charge / stage + info parquet si refus
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2° ter)',
     question: 'La mesure 2° ter permet au JAF de proposer :',
     options: [
@@ -11870,7 +11870,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 2° ter.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2° ter)',
     question: 'En cas de refus de la partie défenderesse, le juge :',
     options: [
@@ -11885,7 +11885,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 3° : résidence séparée époux / logement conjugal
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3°)',
     question: 'La mesure 3° permet au JAF de statuer sur :',
     options: [
@@ -11898,7 +11898,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 3° : résidence séparée + logement conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3°)',
     question: 'En principe, la jouissance du logement conjugal est attribuée :',
     options: [
@@ -11911,7 +11911,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Principe protecteur : attribution au non-auteur, sauf ordonnance spécialement motivée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3°)',
     question:
         'Même si la victime a bénéficié d’un hébergement d’urgence, la jouissance du logement conjugal peut :',
@@ -11927,7 +11927,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 3° bis : animal de compagnie
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3° bis)',
     question: 'La mesure 3° bis concerne :',
     options: [
@@ -11941,7 +11941,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 4° : logement commun PACS/concubins
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (4°)',
     question: 'La mesure 4° permet au JAF de statuer sur :',
     options: [
@@ -11953,7 +11953,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure 4° : logement commun PACS/concubins.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (4°)',
     question:
         'En principe, la jouissance du logement commun (PACS/concubins) est attribuée :',
@@ -11968,7 +11968,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 5° : autorité parentale / DVH / contributions
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (5°)',
     question: 'La mesure 5° permet au JAF de se prononcer sur :',
     options: [
@@ -11983,7 +11983,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 6° : domicile dissimulé + élection de domicile avocat/parquet
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (6°)',
     question: 'La mesure 6° permet à la demanderesse :',
     options: [
@@ -11998,7 +11998,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 6° bis : élection domicile vie courante (personne morale qualifiée)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (6° bis)',
     question: 'La mesure 6° bis permet :',
     options: [
@@ -12013,7 +12013,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   ),
 
   // ---- Mesure 7° : AJ provisoire
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (7°)',
     question: 'La mesure 7° concerne :',
     options: [
@@ -12029,7 +12029,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — 515-11-1 : DISTANCE + DISPOSITIF ANTI-RAPPROCHEMENT
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question:
         'Quand le 1° (interdiction d’entrer en relation) est prononcé, le JAF peut :',
@@ -12043,7 +12043,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         '515-11-1 permet l’interdiction de se rapprocher à moins d’une distance fixée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question: 'Le dispositif anti-rapprochement a pour objectif :',
     options: [
@@ -12061,7 +12061,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13 : MENACE DE MARIAGE FORCÉ + OPPI
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'Une ordonnance de protection peut être délivrée en urgence à :',
     options: [
@@ -12073,7 +12073,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support vise la personne majeure menacée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'Le juge peut ordonner, à la demande de la personne menacée :',
     options: [
@@ -12085,7 +12085,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Mesure spécifique mentionnée à 515-13.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -12102,7 +12102,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // 515-13-1 : OPPI — CONDITIONS / MESURES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est délivrée si le juge estime vraisemblables :',
     options: [
@@ -12114,7 +12114,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte parle de danger “grave et immédiat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Dans l’OPPI, le juge est compétent pour prononcer à titre provisoire :',
@@ -12127,7 +12127,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte vise les mesures 1° à 2° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Dans l’OPPI, le juge peut aussi prononcer :',
     options: [
@@ -12139,7 +12139,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte mentionne la suspension du DVH mentionné au 5°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Dans l’OPPI, le juge peut permettre la dissimulation du domicile selon :',
@@ -12156,7 +12156,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // VIOLATION OP / OPPI — 227-4-2 : QUALIFICATION / PEINES / ÉLÉMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'La violation d’une ordonnance de protection est réprimée par :',
     options: [
@@ -12168,7 +12168,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Élément légal : 227-4-2 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'La peine principale encourue pour 227-4-2 est :',
     options: [
@@ -12180,7 +12180,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Répression : 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'Pour 227-4-2, la tentative est :',
     options: ['Non', 'Oui', 'Oui si l’OP date de moins de 6 jours'],
@@ -12188,7 +12188,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'Pour 227-4-2, la complicité est :',
     options: ['Oui (121-7 CP)', 'Non', 'Non si le complice est un proche'],
@@ -12196,7 +12196,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Complicité : OUI, article 121-7 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question: 'L’infraction 227-4-2 exige :',
     options: [
@@ -12209,7 +12209,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Infraction intentionnelle : connaissance + volonté de ne pas respecter.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question: 'Pour que 227-4-2 soit caractérisée, l’auteur doit avoir été :',
     options: [
@@ -12222,7 +12222,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que l’auteur doit avoir été informé des termes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Circonstances aggravantes',
     question: 'Le support prévoit des circonstances aggravantes pour 227-4-2 :',
     options: ['Non (aucune)', 'Oui (deux)', 'Oui (une seule)'],
@@ -12234,7 +12234,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // RÈGLEMENT UE 606/2013 — APPLICATION EN FRANCE (SÉRIE DIFFICILE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures UE — Règlement 606/2013',
     question:
         'Le texte mentionné prévoit la reconnaissance mutuelle des mesures de protection :',
@@ -12248,7 +12248,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise explicitement les mesures de protection “en matière civile”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures UE — Règlement 606/2013',
     question:
         'Les mêmes peines sont applicables à la violation d’une mesure UE si elle est :',
@@ -12266,7 +12266,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS DE SYNTHÈSE / CAS PRATIQUES (QCM)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-3',
     question:
         'Un débiteur soumis à une ordonnance de protection déménage et ne prévient pas le créancier pendant 40 jours, volontairement. Quelle qualification est la plus adaptée ?',
@@ -12281,7 +12281,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Délai d’un mois dépassé + intention de ne pas informer : 227-4-3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-2',
     question:
         'Une personne interdite de contacter la victime (OP) envoie des messages via un ami. Quelle infraction est la plus adaptée ?',
@@ -12296,7 +12296,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’interdiction porte sur “entrer en relation de quelque façon que ce soit”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 515-11-1',
     question:
         'Après une interdiction d’entrer en relation (1°), le juge fixe une distance minimale et impose un dispositif anti-rapprochement. Sur quel fondement ?',
@@ -12314,7 +12314,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // (GROS BLOC) QUESTIONS “LISTE” SUR 515-11 : REPÉRER LA BONNE MESURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « interdire de détenir ou porter une arme » ?',
@@ -12323,7 +12323,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Interdiction armes = 2°.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « remettre les armes au service de police/gendarmerie » ?',
@@ -12332,7 +12332,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Remise des armes = 2° bis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « attribuer la jouissance de l’animal de compagnie » ?',
@@ -12341,7 +12341,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Animal de compagnie = 3° bis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « autoriser la dissimulation du domicile et élection chez l’avocat/parquet » ?',
@@ -12350,7 +12350,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Dissimulation + élection avocat/parquet = 6°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « élection de domicile pour la vie courante chez une personne morale qualifiée » ?',
@@ -12359,7 +12359,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Vie courante personne morale qualifiée = 6° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « admission provisoire à l’aide juridictionnelle » ?',
@@ -12372,7 +12372,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // (SÉRIES) QUESTIONS “VRAI/FAUX” CONVERTIES EN QCM (OP / OPPI / CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — OP',
     question:
         'L’ordonnance de protection est conditionnée à une plainte pénale.',
@@ -12382,7 +12382,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte précise qu’elle n’est pas conditionnée à l’existence d’une plainte pénale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — OPPI',
     question:
         'L’OPPI est délivrée dans un délai de 24 heures à compter de la saisine.',
@@ -12391,7 +12391,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le texte mentionne : délivrée dans les 24 heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 227-4-2',
     question:
         'La violation d’une ordonnance de protection est punie de 6 mois d’emprisonnement.',
@@ -12400,7 +12400,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-4-2 prévoit 3 ans d’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 227-4-3',
     question:
         'Le défaut de notification de changement de domicile au créancier est une infraction non intentionnelle.',
@@ -12410,7 +12410,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'C’est une infraction intentionnelle : la négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'L’infraction vise une personne tenue de verser une contribution ou des subsides au titre :',
@@ -12425,7 +12425,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise la personne tenue de verser une contribution ou des subsides au titre de l’ordonnance de protection (art. 515-9 C. civ.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le débiteur doit notifier son changement de domicile au créancier dans un délai de :',
@@ -12439,7 +12439,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le délai légal est d’un mois à compter du changement de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Concernant la forme de la notification du changement de domicile, le texte :',
@@ -12453,7 +12453,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Aucune exigence n’est formulée quant à la forme de la notification : l’essentiel est d’informer dans le délai.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question:
         'Le défaut de notification de changement de domicile est une infraction :',
@@ -12471,7 +12471,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — PRÉCISIONS / MÉCANISME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'L’infraction a été prévue notamment car le JAF peut se prononcer dans le référé protection sur :',
@@ -12485,7 +12485,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le cours indique que le JAF peut statuer sur la contribution aux charges du ménage, d’où l’intérêt dissuasif de l’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Dans ce cadre, la personne visée par 227-4-3 est principalement :',
@@ -12499,7 +12499,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’obligation de notifier pèse sur le débiteur tenu de verser la contribution/subsides.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'Pourquoi la simple négligence n’est-elle pas punissable ici ?',
     options: [
@@ -12513,7 +12513,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte insiste sur l’intention : la volonté de priver le créancier de l’exercice de son droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances',
     question:
         'Concernant les circonstances aggravantes du défaut de notification (227-4-3), il y en a :',
@@ -12531,7 +12531,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-3 est :',
     options: [
@@ -12543,7 +12543,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La répression prévue est : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La classification de l’infraction 227-4-3 est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -12551,7 +12551,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise : classification = délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La tentative de l’infraction 227-4-3 est :',
     options: [
@@ -12563,7 +12563,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le document indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La complicité pour 227-4-3 est :',
     options: [
@@ -12576,7 +12576,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La complicité est prévue selon l’article 121-7 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Personnes morales',
     question:
         'Depuis quand la responsabilité des personnes morales est applicable de façon généralisée (référence cours) ?',
@@ -12594,7 +12594,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // NON-RESPECT DES OBLIGATIONS / INTERDICTIONS D’UNE ORDONNANCE DE PROTECTION — FONDEMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Fondement',
     question:
         'Le non-respect des obligations ou interdictions imposées par une ordonnance de protection est prévu par :',
@@ -12608,7 +12608,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’élément légal est fixé par l’article 227-4-2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'L’infraction vise le non-respect d’obligations/interdictions imposées dans :',
@@ -12622,7 +12622,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise l’ordonnance de protection rendue notamment en application des articles 515-9 ou 515-13 du code civil.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'Sont aussi visées par 227-4-2 les obligations/interdictions imposées dans :',
@@ -12637,7 +12637,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise aussi l’ordonnance provisoire de protection immédiate rendue sur le fondement de l’article 515-13-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ UE',
     question:
         'Les mêmes peines s’appliquent à la violation d’une mesure de protection civile d’un autre État membre de l’UE reconnue en France via :',
@@ -12655,7 +12655,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — CONDITIONS (515-9) / DÉLAIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'Selon l’article 515-9 C. civ., l’ordonnance de protection peut être délivrée lorsque des violences au sein du couple :',
@@ -12669,7 +12669,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La condition centrale : danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'L’ordonnance de protection peut être délivrée même lorsqu’il n’y a pas de cohabitation :',
@@ -12683,7 +12683,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise les violences au sein du couple y compris sans cohabitation, et même sans cohabitation passée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Délai',
     question:
         'Le JAF délivre l’ordonnance de protection dans un délai maximal de :',
@@ -12697,7 +12697,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique : délai maximal de six jours (OP classique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Plainte',
     question:
         'La délivrance d’une ordonnance de protection est-elle conditionnée à une plainte pénale ?',
@@ -12715,7 +12715,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — MESURES POSSIBLES (515-11) : QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Parmi les mesures possibles, le JAF peut interdire à la partie défenderesse :',
@@ -12729,7 +12729,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est la mesure 1° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut interdire à la partie défenderesse de se rendre dans certains lieux fréquentés habituellement par la demanderesse :',
@@ -12743,7 +12743,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La mesure 1° bis prévoit l’interdiction de se rendre dans certains lieux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question: 'Concernant les armes, le JAF peut notamment :',
     options: [
@@ -12755,7 +12755,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'C’est la mesure 2° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut ordonner à la partie défenderesse de remettre ses armes :',
@@ -12769,7 +12769,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 2° bis : remise au service de police/gendarmerie le plus proche.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut proposer une prise en charge sanitaire/sociale/psychologique ou un stage de responsabilisation :',
@@ -12783,7 +12783,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 2° ter : proposition de prise en charge ou stage ; en cas de refus, information immédiate du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Concernant le logement conjugal, sauf circonstances particulières, la jouissance est attribuée :',
@@ -12797,7 +12797,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le principe : protection de la victime, attribution au non-auteur des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut attribuer la jouissance de l’animal de compagnie détenu au sein du foyer :',
@@ -12807,7 +12807,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 515-11 prévoit la mesure 3° bis sur l’animal de compagnie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Pour des partenaires PACS/concubins, la jouissance du logement commun est attribuée en principe :',
@@ -12821,7 +12821,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le même principe protecteur est prévu au 4° pour PACS/concubins.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut se prononcer sur l’autorité parentale et aussi sur :',
@@ -12836,7 +12836,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 5° : autorité parentale, DVH, et contributions selon la situation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut autoriser la demanderesse à dissimuler son domicile et élire domicile :',
@@ -12851,7 +12851,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 6° : dissimulation + élection de domicile chez avocat ou auprès du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut aussi autoriser une élection de domicile « pour les besoins de la vie courante » :',
@@ -12865,7 +12865,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Mesure 6° bis : élection de domicile vie courante auprès d’une personne morale qualifiée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut prononcer l’admission provisoire à l’aide juridictionnelle :',
@@ -12882,7 +12882,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // DISPOSITIF ANTI-RAPPROCHEMENT (515-11-1) — QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question:
         'Si l’interdiction d’entrer en relation (1°) est prononcée, le JAF peut aussi :',
@@ -12901,7 +12901,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE (515-13) — MARIAGE FORCÉ / SORTIE DU TERRITOIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’article 515-13 permet une ordonnance de protection en urgence pour :',
@@ -12915,7 +12915,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte vise expressément la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'Dans ce cadre, le JAF peut ordonner à la demande de la personne :',
@@ -12929,7 +12929,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 515-13 mentionne l’interdiction temporaire de sortie du territoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -12943,7 +12943,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // ORDONNANCE PROVISOIRE DE PROTECTION IMMÉDIATE (515-13-1) — 24H
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'L’ordonnance provisoire de protection immédiate est délivrée dans un délai de :',
@@ -12957,7 +12957,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le texte indique : délivrée dans un délai de vingt-quatre heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Qui peut demander, avec l’accord de la personne en danger, une OPPI en plus de la demande d’OP ?',
@@ -12967,7 +12967,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'L’article 515-13-1 prévoit la demande par le ministère public avec l’accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Pour délivrer l’OPPI, le JAF statue :',
     options: [
@@ -12984,7 +12984,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — ÉLÉMENT MATÉRIEL / MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément matériel',
     question: 'L’élément matériel de 227-4-2 consiste à :',
     options: [
@@ -12997,7 +12997,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La violation est le non-respect des obligations/interdictions fixées par l’ordonnance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'L’infraction 227-4-2 est :',
     options: [
@@ -13010,7 +13010,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise une infraction intentionnelle : l’auteur agit en connaissance de cause des obligations/interdictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'Pour caractériser l’élément moral, l’auteur doit notamment :',
     options: [
@@ -13023,7 +13023,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'La connaissance des obligations/interdictions suppose que l’auteur ait été informé de l’ordonnance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Finalité',
     question: 'Le texte 227-4-2 vise à rendre l’ordonnance de protection :',
     options: [
@@ -13040,7 +13040,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-2 est :',
     options: [
@@ -13052,7 +13052,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'La répression prévue par 227-4-2 est de 3 ans et 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Classification',
     question: 'La classification de l’infraction 227-4-2 est :',
     options: ['Un délit', 'Un crime', 'Une contravention'],
@@ -13060,7 +13060,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le cours précise : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Circonstances',
     question:
         'Concernant les circonstances aggravantes de 227-4-2 (cours), il y en a :',
@@ -13069,7 +13069,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La tentative de 227-4-2 est :',
     options: [
@@ -13081,7 +13081,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le document précise : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La complicité pour 227-4-2 est :',
     options: [
@@ -13098,7 +13098,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS MIXTES (COMPARAISONS 227-4-2 / 227-4-3)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction est la plus lourdement sanctionnée (peine d’emprisonnement) ?',
@@ -13107,7 +13107,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: '227-4-2 prévoit 3 ans, tandis que 227-4-3 prévoit 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction concerne spécifiquement le changement de domicile du débiteur ?',
@@ -13117,7 +13117,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         '227-4-3 incrimine le défaut de notification du changement de domicile au créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Élément moral',
     question: 'Point commun entre 227-4-2 et 227-4-3 :',
     options: [
@@ -13130,7 +13130,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Les deux supposent une volonté : ne pas se conformer / ne pas informer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question: 'Concernant la tentative, 227-4-2 et 227-4-3 :',
     options: [
@@ -13143,7 +13143,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique “TENTATIVE : NON” pour les deux infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Complicité',
     question: 'Concernant la complicité (121-7 CP), pour 227-4-2 et 227-4-3 :',
     options: [
@@ -13160,7 +13160,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // =========================================================
   // QUESTIONS "PIÈGES" / PRÉCISION DE TEXTE (PLUS DIFFICILES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Durée',
     question:
         'Les mesures de l’ordonnance de protection peuvent être prises pour une durée maximale de :',
@@ -13174,7 +13174,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne une durée maximale de 12 mois, prolongeable sous certaines conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Logement',
     question:
         'Sauf circonstances particulières, la jouissance du logement est attribuée :',
@@ -13188,7 +13188,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Principe protecteur : attribution au non-auteur (sauf ordonnance motivée/circonstances particulières).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Domicile dissimulé',
     question:
         'Si un commissaire de justice doit connaître l’adresse réelle pour exécuter une décision :',
@@ -13203,7 +13203,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise la communication nécessaire pour l’exécution, avec interdiction de révélation au mandant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Information autorités',
     question:
         'Quand les mesures 6°/6° bis sont prononcées, qui peut être informé (avec accord de la personne) pour éviter la communication de l’adresse ?',
@@ -13217,7 +13217,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support indique l’information du maire et du représentant de l’État dans le département, sous réserve de l’accord de la personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Fin des mesures',
     question: 'Les mesures de l’OPPI prennent fin :',
     options: [
@@ -13231,7 +13231,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise la fin des mesures à compter de la décision sur la demande d’OP ou incident mettant fin à l’instance.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Résultat',
     question: 'La provocation est punissable :',
     options: [
@@ -13243,7 +13243,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'L’infraction est consommée par la provocation elle-même.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intention',
     question: 'L’abandon de famille sanctionne :',
     options: [
@@ -13256,7 +13256,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support vise l’inexécution volontaire (à condition de notification).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intention',
     question:
         'Le délit n’est pas constitué si le non-paiement résulte d’une précarité persistante :',
@@ -13269,7 +13269,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support cite CA Aix-en-Provence, 01 juillet 1994.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Preuve',
     question:
         'La preuve (notamment de la notification et du caractère volontaire) relève :',
@@ -13287,7 +13287,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — INTERMÉDIATION FINANCIÈRE (CAF / ORGANISME)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Intermédiation',
     question:
         'Avec intermédiation financière, le débiteur commet l’infraction s’il ne paye pas intégralement pendant plus de deux mois :',
@@ -13305,7 +13305,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // 227-3 — RÉPRESSION / PROCÉDURE
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Répression',
     question: 'Les peines principales prévues par 227-3 sont :',
     options: [
@@ -13317,7 +13317,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : 2 ans + 15 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Circonstances aggravantes',
     question: 'Le support prévoit des circonstances aggravantes pour 227-3 :',
     options: ['Aucune', 'Oui, au-delà de 5 jours', 'Oui, si à l’étranger'],
@@ -13325,7 +13325,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support mentionne : Aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour l’abandon de famille (227-3), la tentative est :',
     options: ['Non', 'Oui', 'Oui si paiement partiel'],
@@ -13333,7 +13333,7 @@ final List<QuizQuestion> questionAbandonFamille = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abandon de famille — Tentative / complicité',
     question: 'Pour l’abandon de famille (227-3), la complicité est :',
     options: [
@@ -13349,7 +13349,7 @@ final List<QuizQuestion> questionAbandonFamille = [
   // ---------------------------------------------------------
   // CAS PRATIQUES (NIVEAUX MIXÉS)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Décision exécutoire notifiée : pension 300 €/mois. Le débiteur paye 150 € pendant 4 mois. L’infraction 227-3 peut être constituée :',
@@ -13364,7 +13364,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support précise que le délit est constitué en cas de non-paiement total ou partiel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Décision notifiée : pension indexée. Le débiteur paye l’ancien montant pendant plus de deux mois et refuse l’indexation. Le délit peut être :',
@@ -13374,7 +13374,7 @@ final List<QuizQuestion> questionAbandonFamille = [
         'Le support mentionne que le refus d’indexation peut constituer le délit (Cass. crim., 26/10/1987).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Abandon de famille',
     question:
         'Le débiteur ne paye pas pendant plus de deux mois, puis régularise après 3 mois. L’infraction :',
@@ -13740,7 +13740,7 @@ class _QuizMineursFamilleState extends State<QuizMineursFamille>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -13943,7 +13943,7 @@ class _QuizMineursFamilleState extends State<QuizMineursFamille>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -14126,7 +14126,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -14659,10 +14658,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -15033,7 +15033,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -15074,9 +15074,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

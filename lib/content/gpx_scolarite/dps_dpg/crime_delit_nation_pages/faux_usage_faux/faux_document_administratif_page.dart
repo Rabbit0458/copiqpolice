@@ -108,16 +108,16 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le faux commis dans un document administratif ainsi que son usage.",
                 ),
@@ -133,41 +133,41 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Contrefaçon ou falsification d’un document administratif",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : concerne les faux matériels commis dans les documents délivrés par l’administration "
                       "établis aux fins de constater un droit, une identité ou une qualité, ou d’accorder une autorisation. "
                       "Le texte vise un écrit, mais aussi un document fixé sur un autre support que l’écrit.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• Une falsification matérielle"),
-              const _Paragraph(
+              _SubTitle("• Une falsification matérielle"),
+              _Paragraph(
                 "Il y a faux matériel lorsque c’est le support qui est falsifié. La particularité du faux matériel "
                 "est qu’il porte en lui-même la trace de sa falsification : elle peut se constater par l’examen "
                 "du support. On distingue notamment :\n"
                 "— le faux matériel par altération d’un document authentique ;\n"
                 "— le faux matériel par des procédés donnant l’apparence de l’authenticité à un document qui ne l’est pas.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Point important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La jurisprudence ne semble pas retenir ici le faux intellectuel (défaut de véridicité) : "
                         "il consiste, par exemple, à fournir de faux renseignements (identité), le mensonge atteignant le contenu de l’écrit et non le support.",
@@ -175,177 +175,177 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un document administratif"),
-              const _Paragraph(
+              _SubTitle("B) Un document administratif"),
+              _Paragraph(
                 "Les documents administratifs sont des documents/formulaires normalisés, établis pour constater :\n"
                 "— un droit ;\n"
                 "— une identité (carte nationale d’identité, titre de séjour…) ;\n"
                 "— une qualité (ex. certificat de nationalité) ;\n"
                 "— ou accorder une autorisation (permis de construire, permis de chasser, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(text: "Certificat de nationalité : "),
+                  TextSpan(text: "Certificat de nationalité : "),
                   TextSpan(
                     text: "(Cass. crim., 19 mai 1981)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Permis de chasser : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Permis de chasser : "),
                   TextSpan(
                     text: "(Cass. crim., 03 octobre 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Permis de construire : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Permis de construire : "),
                   TextSpan(
                     text: "(Cass. crim., 15 mars 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(text: "Certificat de mariage : "),
+                  TextSpan(text: ". "),
+                  TextSpan(text: "Certificat de mariage : "),
                   TextSpan(
                     text: "(Cass. crim., 22 octobre 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudences",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Faux ordres de mission établis par un président de conseil général à l’occasion de détournements de fonds publics ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 octobre 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text:
                         "Bons de commande fictifs destinés à masquer l’objet exact d’une prestation relevant du droit des marchés publics ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 22 septembre 2004)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _Paragraph(
+              _Paragraph(
                 "La falsification ne doit pas être immédiatement identifiable.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un préjudice"),
+              _SubTitle("C) Un préjudice"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le texte ne précise pas l’existence ou l’éventualité d’un préjudice, mais la jurisprudence "
                       "retient que le préjudice découle de la nature de la pièce faussée ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 12 novembre 1998)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le faux commis dans un document administratif peut également porter préjudice aux particuliers.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Fausse carte grise permettant au faussaire de s’approprier le véhicule d’autrui ou d’obtenir frauduleusement un crédit ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 07 décembre 1965)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) L’usage du faux"),
-              const _Paragraph(
+              _SubTitle("D) L’usage du faux"),
+              _Paragraph(
                 "L’usage du faux ne se conçoit que sur un document administratif falsifié.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Production, dans une instance en divorce en France, d’un certificat de mariage fabriqué (mariage coutumier au Sénégal non transcrit) ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 22 octobre 2003)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En revanche, l’usage d’un document administratif dont les mentions sont devenues incomplètes ou inexactes relève d’une contravention de 5e classe prévue par ",
                 ),
                 TextSpan(
                   text: "l’article R. 645-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -358,24 +358,24 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Concernant l’infraction de faux"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Concernant l’infraction de faux"),
+              _BulletPoint(
                 text: "Volonté de commettre la falsification.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Conscience de l’altération de la vérité dans le document (atteinte à l’authenticité / intégrité).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’acte de falsification matérielle révèle l’intention de l’auteur du fait même de son accomplissement "
                 "(fabriquer un acte, apposer une fausse signature, etc.). Les mobiles sont indifférents.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Concernant l’infraction d’usage de faux"),
-              const _BulletPoint(text: "Volonté d’user de la pièce fausse."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Concernant l’infraction d’usage de faux"),
+              _BulletPoint(text: "Volonté d’user de la pièce fausse."),
+              _BulletPoint(
                 text: "Connaissance de la fausseté de la pièce.",
               ),
             ],
@@ -389,47 +389,47 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-2 1° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque le faux ou l’usage de faux est commis par une personne dépositaire de l’autorité publique "
                     "ou chargée d’une mission de service public agissant dans l’exercice de ses fonctions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-2 2° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : (aggravation prévue par le texte)."),
+                TextSpan(text: " : (aggravation prévue par le texte)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 441-2 3° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque le faux ou l’usage de faux est commis dans le dessein de faciliter la commission d’un crime "
                     "ou de procurer l’impunité à son auteur.",
@@ -445,49 +445,49 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 441-2 alinéas 1 et 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 441-2 1° à 3° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
                     text: "Article 441-3 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : réprime la détention d’un faux document administratif. Cette incrimination vise à lutter "
                         "contre le trafic de faux documents administratifs et présente un intérêt par rapport au recel "
@@ -496,56 +496,56 @@ class FauxDocumentAdministratifPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 441-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 441-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (prévoit expressément la tentative des délits prévus à l’article 441-2).",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Complicité : OUI (règles générales)."),
-              const SizedBox(height: 10),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Complicité : OUI (règles générales)."),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le secrétaire de mairie qui fait procéder par un employé subalterne à la falsification des registres ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 18 octobre 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -584,10 +584,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -652,7 +652,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -695,7 +695,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -757,7 +757,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -789,7 +789,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -802,7 +802,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

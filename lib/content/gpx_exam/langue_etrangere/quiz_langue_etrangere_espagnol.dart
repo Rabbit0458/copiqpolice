@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionLangueEtrangereEspagnol = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta comer _____ en la cena.",
     options: ["pasta", "rápido", "feliz"],
@@ -99,7 +99,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy hace mucho _____ en la playa.",
     options: ["nieve", "calor", "nublado"],
@@ -108,7 +108,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella va a _____ a sus amigos este fin de semana.",
     options: ["visitar", "verbo", "rápido"],
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ en el parque.",
     options: ["correr", "rápidamente", "salta"],
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana tiene un _____ muy bonito.",
     options: ["gato", "rápido", "rojo"],
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la escuela todos los días.",
     options: ["vamos", "rápido", "feliz"],
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero comprar _____ para mi cumpleaños.",
     options: ["un coche", "rápido", "feliz"],
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película fue muy _____ y divertida.",
     options: ["aburrida", "interesante", "lenta"],
@@ -162,7 +162,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ un examen importante.",
     options: ["tenemos", "feliz", "rápido"],
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro que leo es muy _____.",
     options: ["interesante", "rápido", "feliz"],
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ a mi abuela en el mercado.",
     options: ["vi", "feliz", "rápido"],
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa de Juan es _____ que la mía.",
     options: ["más grande", "feliz", "rápido"],
@@ -198,7 +198,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando llueve, llevo _____.",
     options: ["un paraguas", "feliz", "rápido"],
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los estudiantes _____ estudiar para el examen.",
     options: ["necesitan", "feliz", "rápido"],
@@ -216,7 +216,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos y yo _____ al cine esta noche.",
     options: ["vamos", "feliz", "rápido"],
@@ -225,7 +225,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida en este restaurante es muy _____ .",
     options: ["rica", "feliz", "rápido"],
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima en verano es _____ aquí.",
     options: ["caliente", "feliz", "rápido"],
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero _____ un viaje a España el próximo año.",
     options: ["hacer", "feliz", "rápido"],
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El profesor _____ a explicar la lección.",
     options: ["empieza", "feliz", "rápido"],
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a _____ a mis amigos el sábado.",
     options: ["ver", "hablar", "encontrar"],
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ grande que la mía.",
     options: ["más", "menos", "tan"],
@@ -279,7 +279,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana _____ dos años mayor que yo.",
     options: ["tiene", "es", "hace"],
@@ -288,7 +288,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la playa el fin de semana.",
     options: ["vamos", "fuimos", "ir"],
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ muchas películas al mes.",
     options: ["ven", "ver", "vieron"],
@@ -306,7 +306,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ un día muy bonito.",
     options: ["fue", "es", "era"],
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Tienes _____ tiempo para hablar?",
     options: ["poco", "más", "mucho"],
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Carlos _____ en Madrid desde hace un año.",
     options: ["vive", "vivió", "vivir"],
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi comida favorita es _____ pizza.",
     options: ["la", "un", "una"],
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ a la escuela temprano.",
     options: ["voy", "fui", "va"],
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima hoy está _____ que ayer.",
     options: ["mejor", "peor", "igual"],
@@ -361,7 +361,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ un vestido rojo para la fiesta.",
     options: ["lleva", "llevó", "llevar"],
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El niño _____ a su hermana.",
     options: ["ayuda", "ayudó", "ayudar"],
@@ -379,7 +379,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy es un día _____ para estudiar.",
     options: ["bueno", "malo", "interesante"],
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿_____ te gusta más, el té o el café?",
     options: ["Qué", "Cuál", "Cómo"],
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está _____ en la ventana.",
     options: ["sentado", "durmiendo", "comiendo"],
@@ -406,7 +406,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es muy _____.",
     options: ["grande", "pequeña", "rápida"],
@@ -415,7 +415,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a la tienda para comprar _____.",
     options: ["pan", "rápido", "grande"],
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro es muy _____.",
     options: ["amable", "rápido", "grande"],
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima hoy está muy _____.",
     options: ["frío", "rápido", "largo"],
@@ -442,7 +442,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero un café _____.",
     options: ["caliente", "rápido", "grande"],
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro es muy _____.",
     options: ["interesante", "rápido", "frío"],
@@ -461,7 +461,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es muy _____.",
     options: ["rápido", "amable", "pequeño"],
@@ -471,7 +471,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El examen fue bastante _____.",
     options: ["fácil", "rápido", "largo"],
@@ -480,7 +480,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta el clima _____.",
     options: ["cálido", "rápido", "grande"],
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La ciudad es muy _____.",
     options: ["bonita", "rápida", "pequeña"],
@@ -498,7 +498,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy tengo una reunión muy _____.",
     options: ["importante", "rápida", "fría"],
@@ -507,7 +507,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana voy a visitar a mi _____.",
     options: ["abuela", "rápida", "largo"],
@@ -516,7 +516,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren es muy _____.",
     options: ["rápido", "bonito", "pequeño"],
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida está muy _____.",
     options: ["rica", "rápida", "fría"],
@@ -534,7 +534,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El café está _____.",
     options: ["frío", "rápido", "grande"],
@@ -542,7 +542,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "Frío signifie 'froid', souvent pour les boissons.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho _____ en la playa.",
     options: ["nadar", "correr", "leer"],
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella tiene un gato _____",
     options: ["negro", "azul", "grande"],
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la fiesta el sábado.",
     options: ["vamos", "fui", "ir"],
@@ -569,7 +569,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano _____ cinco años.",
     options: ["tiene", "es", "cumple"],
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero comer _____ pizza.",
     options: ["una", "el", "los"],
@@ -587,7 +587,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro está _____ la mesa.",
     options: ["sobre", "bajo", "dentro"],
@@ -596,7 +596,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro es muy _____",
     options: ["grande", "pequeño", "largo"],
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ al cine el viernes.",
     options: ["van", "fueron", "ir"],
@@ -614,7 +614,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Necesito _____ para mi examen.",
     options: ["estudiar", "jugar", "dormir"],
@@ -623,7 +623,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren sale _____ las tres.",
     options: ["a", "en", "por"],
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ que la tuya.",
     options: ["más grande", "grande", "pequeña"],
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El profesor _____ la clase.",
     options: ["da", "dar", "dando"],
@@ -650,7 +650,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Si tengo tiempo, _____ un libro.",
     options: ["leo", "leer", "leí"],
@@ -659,7 +659,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho el _____ de la música.",
     options: ["estilo", "canción", "bailar"],
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella siempre lleva un _____ en su bolso.",
     options: ["libro", "zapato", "comida"],
@@ -677,7 +677,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima hoy está muy _____ y soleado.",
     options: ["frío", "caliente", "nublado"],
@@ -686,7 +686,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano juega al _____ todos los domingos.",
     options: ["fútbol", "comida", "coche"],
@@ -695,7 +695,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ una película muy interesante.",
     options: ["miramos", "comimos", "dormimos"],
@@ -704,7 +704,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa tiene un _____ jardín muy bonito.",
     options: ["pequeño", "grande", "hermoso"],
@@ -713,7 +713,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La profesora _____ a los estudiantes todos los días.",
     options: ["ayuda", "escucha", "habla"],
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos y yo vamos a _____ una fiesta este fin de semana.",
     options: ["hacer", "ver", "organizar"],
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche está _____ en el garaje.",
     options: ["nuevo", "viejo", "rápido"],
@@ -740,7 +740,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Para el desayuno, me gusta comer _____ y café.",
     options: ["fruta", "pan", "tortilla"],
@@ -749,7 +749,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro que estoy leyendo es muy _____ y emocionante.",
     options: ["aburrido", "divertido", "largo"],
@@ -758,7 +758,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella siempre _____ muy elegante en las fiestas.",
     options: ["se viste", "se siente", "se duerme"],
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros vamos a _____ en la playa este verano.",
     options: ["nadar", "cocinar", "dormir"],
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El profesor _____ la tarea para mañana.",
     options: ["da", "hace", "recibe"],
@@ -785,7 +785,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi abuela cocina la mejor _____ del mundo.",
     options: ["sopa", "pastel", "ensalada"],
@@ -794,7 +794,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Para la cena, quiero _____ pollo y arroz.",
     options: ["comer", "hacer", "ver"],
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato _____ en el sofá durante todo el día.",
     options: ["duerme", "juega", "come"],
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ al parque con mis amigos.",
     options: ["voy", "voyes", "van"],
@@ -821,7 +821,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren sale _____ a las cinco.",
     options: ["siempre", "nunca", "a veces"],
@@ -830,7 +830,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella siempre _____ en la mañana.",
     options: ["canta", "duerme", "come"],
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la playa el sábado.",
     options: ["vamos", "vamos a", "fui"],
@@ -848,7 +848,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ muy divertidos.",
     options: ["son", "están", "fueron"],
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero ir al _____ este fin de semana.",
     options: ["cine", "hospital", "trabajo"],
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro juega _____ en el jardín.",
     options: ["solo", "juntos", "solos"],
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ el libro que dejé aquí?",
     options: ["está", "estuve", "estar"],
@@ -884,7 +884,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película fue _____ interesante.",
     options: ["muy", "poco", "más"],
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La tienda cierra _____ a las ocho.",
     options: ["siempre", "nunca", "a veces"],
@@ -902,7 +902,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es _____ rápido que el mío.",
     options: ["más", "tan", "menos"],
@@ -911,7 +911,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando _____ llueve, me quedo en casa.",
     options: ["siempre", "nunca", "a veces"],
@@ -920,7 +920,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Si tengo tiempo, _____ a la fiesta.",
     options: ["voy", "fui", "vaya"],
@@ -929,7 +929,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta el _____ de chocolate.",
     options: ["helado", "fruta", "pastel"],
@@ -938,7 +938,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy es un _____ día.",
     options: ["frío", "largo", "rápido"],
@@ -947,7 +947,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ en la playa.",
     options: ["jugamos", "cocinar", "miramos"],
@@ -956,7 +956,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ muy rápido.",
     options: ["corre", "salta", "duerme"],
@@ -965,7 +965,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos y yo _____ al cine.",
     options: ["vamos", "vemos", "comemos"],
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ una canción bonita.",
     options: ["canta", "escucha", "baila"],
@@ -983,7 +983,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde está el _____?",
     options: ["banco", "coche", "puerta"],
@@ -991,7 +991,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "Les lieux sont souvent demandés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Él _____ en la playa.",
     options: ["juega", "jugó", "jugar"],
@@ -1000,7 +1000,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ en el cine.",
     options: ["están", "estuve", "estar"],
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ en el jardín.",
     options: ["está", "estuvo", "estar"],
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ a mis abuelos este fin de semana.",
     options: ["visité", "visitar", "visito"],
@@ -1028,7 +1028,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ el libro que compré?",
     options: ["está", "fue", "estar"],
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ en la escuela todos los días.",
     options: ["estudian", "estudió", "estudiar"],
@@ -1047,7 +1047,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana _____ a la universidad.",
     options: ["va", "fue", "ir"],
@@ -1056,7 +1056,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ mucho en verano.",
     options: ["viajamos", "viajar", "viajé"],
@@ -1066,7 +1066,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Cuál _____ tu comida favorita?",
     options: ["es", "fue", "ser"],
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche _____ muy rápido.",
     options: ["es", "fue", "ser"],
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Tú _____ un buen amigo.",
     options: ["eres", "fuiste", "ser"],
@@ -1094,7 +1094,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ un libro interesante.",
     options: ["leí", "leer", "leo"],
@@ -1103,7 +1103,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ en casa esta tarde.",
     options: ["estará", "está", "fue"],
@@ -1112,7 +1112,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los estudiantes _____ en clase ahora.",
     options: ["estudian", "estudiaron", "estudiar"],
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la playa mañana.",
     options: ["vamos", "correr", "ver"],
@@ -1130,7 +1130,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato _____ sobre la mesa.",
     options: ["dormir", "salta", "comer"],
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ el supermercado?",
     options: ["está", "ir", "correr"],
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ en el cine.",
     options: ["están", "jugar", "ver"],
@@ -1157,7 +1157,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ café por la mañana.",
     options: ["bebo", "ver", "comer"],
@@ -1166,7 +1166,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana _____ en Madrid.",
     options: ["vive", "correr", "jugar"],
@@ -1175,7 +1175,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Qué _____ tú en la clase?",
     options: ["haces", "ver", "dormir"],
@@ -1184,7 +1184,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellas _____ en el parque.",
     options: ["juegan", "ver", "comer"],
@@ -1193,7 +1193,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ a la música.",
     options: ["escucho", "ver", "hablar"],
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ la fiesta?",
     options: ["es", "ver", "ir"],
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Tú _____ el piano muy bien.",
     options: ["tocas", "ver", "comer"],
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ en la casa.",
     options: ["están", "ver", "comer"],
@@ -1229,7 +1229,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ un regalo para ti.",
     options: ["tengo", "ver", "comer"],
@@ -1238,7 +1238,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ muy feliz hoy.",
     options: ["está", "ver", "comer"],
@@ -1247,7 +1247,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho el _____.",
     options: ["chocolate", "zapato", "árbol"],
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella tiene un gato que se llama _____.",
     options: ["Luna", "Mesa", "Cielo"],
@@ -1265,7 +1265,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida en este restaurante es muy _____.",
     options: ["sabrosa", "fea", "pequeña"],
@@ -1274,7 +1274,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta _____ en la playa.",
     options: ["nadar", "correr", "leer"],
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está _____ en la ventana.",
     options: ["dormido", "comiendo", "jugando"],
@@ -1292,7 +1292,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a comprar _____ para la fiesta.",
     options: ["comida", "ropa", "libros"],
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ grande que la tuya.",
     options: ["más", "menos", "tan"],
@@ -1310,7 +1310,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano _____ juega al fútbol los domingos.",
     options: ["siempre", "nunca", "a veces"],
@@ -1319,7 +1319,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es _____ que la bicicleta.",
     options: ["más rápido", "más lento", "más pequeño"],
@@ -1328,7 +1328,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ el restaurante?",
     options: ["está", "estás", "estamos"],
@@ -1337,7 +1337,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ al parque todos los sábados.",
     options: ["van", "voy", "vas"],
@@ -1346,7 +1346,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ una reunión importante.",
     options: ["tendré", "tenemos", "tiene"],
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ corre rápido.",
     options: ["siempre", "nunca", "a veces"],
@@ -1364,7 +1364,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La clase empieza _____ a las diez.",
     options: ["siempre", "nunca", "a veces"],
@@ -1373,7 +1373,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "A mí me gusta _____ chocolate.",
     options: ["el", "la", "los"],
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Cuántas horas _____ al día?",
     options: ["duermes", "duermo", "duerme"],
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana _____ toca la guitarra.",
     options: ["siempre", "nunca", "a veces"],
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los niños _____ en el parque después de la escuela.",
     options: ["juegan", "juego", "juegas"],
@@ -1409,7 +1409,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está _____ en la silla.",
     options: ["durmiendo", "comiendo", "jugando"],
@@ -1418,7 +1418,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ a la fiesta el sábado.",
     options: ["va", "fue", "ir"],
@@ -1427,7 +1427,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ el libro en la biblioteca.",
     options: ["leemos", "leer", "lee"],
@@ -1436,7 +1436,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ la estación de tren?",
     options: ["está", "estás", "estamos"],
@@ -1444,7 +1444,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "Le verbe 'estar' pour indiquer un lieu.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta comer _____ en el desayuno.",
     options: ["pan", "fruta", "chocolate"],
@@ -1453,7 +1453,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro está _____ en el jardín.",
     options: ["corriendo", "durmiendo", "comiendo"],
@@ -1462,7 +1462,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi color favorito es el _____.",
     options: ["azul", "rojo", "verde"],
@@ -1471,7 +1471,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a la tienda _____ comprar pan.",
     options: ["para", "con", "sin"],
@@ -1480,7 +1480,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato es muy _____.",
     options: ["grande", "pequeño", "rápido"],
@@ -1489,7 +1489,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi amigo tiene un _____ nuevo.",
     options: ["coche", "libro", "juego"],
@@ -1498,7 +1498,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ y bonita.",
     options: ["grande", "pequeña", "antigua"],
@@ -1507,7 +1507,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ mucho en la ciudad.",
     options: ["llovió", "fue", "hizo"],
@@ -1516,7 +1516,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren llega _____ las cinco.",
     options: ["a", "en", "por"],
@@ -1525,7 +1525,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde está _____ libro que presté?",
     options: ["el", "un", "mi"],
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El café está _____ caliente.",
     options: ["demasiado", "poco", "muy"],
@@ -1543,7 +1543,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro está _____ en el sofá.",
     options: ["dormido", "comiendo", "jugando"],
@@ -1552,7 +1552,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho _____ música clásica.",
     options: ["escuchar", "ver", "hablar"],
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ en el parque los domingos.",
     options: ["jugamos", "comemos", "leemos"],
@@ -1570,7 +1570,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los niños _____ en la playa durante el verano.",
     options: ["nadan", "cantan", "cocinan"],
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde está la _____ de la casa?",
     options: ["puerta", "ventana", "mesa"],
@@ -1588,7 +1588,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana _____ un libro interesante.",
     options: ["lee", "come", "bebe"],
@@ -1597,7 +1597,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy hace _____ que ayer.",
     options: ["calor", "frío", "nieve"],
@@ -1606,7 +1606,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es _____ que el mío.",
     options: ["más rápido", "más lento", "más pequeño"],
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren sale a las _____ de la tarde.",
     options: ["dos", "tres", "cuatro"],
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película que vimos fue muy _____ .",
     options: ["divertida", "aburrida", "interesante"],
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi amigo tiene una _____ de fútbol.",
     options: ["pelota", "raqueta", "cama"],
@@ -1642,7 +1642,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El profesor nos _____ mucho en clase.",
     options: ["ayuda", "habla", "escucha"],
@@ -1651,7 +1651,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me encanta _____ en la naturaleza.",
     options: ["caminar", "correr", "saltar"],
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El restaurante cierra a las _____ de la noche.",
     options: ["diez", "nueve", "ocho"],
@@ -1669,7 +1669,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro está _____ en la mesa.",
     options: ["abierto", "cerrado", "nuevo"],
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ el coche de Juan?",
     options: ["está", "estuve", "estar"],
@@ -1687,7 +1687,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa _____ grande y bonita.",
     options: ["es", "fue", "era"],
@@ -1696,7 +1696,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El profesor _____ a los estudiantes.",
     options: ["ayuda", "ayudó", "ayudará"],
@@ -1705,7 +1705,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ una fiesta en mi casa.",
     options: ["hay", "hubo", "habrá"],
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato _____ en la ventana.",
     options: ["mira", "miró", "mirará"],
@@ -1723,7 +1723,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres _____ en la cocina.",
     options: ["cocinan", "cocinaban", "cocinarán"],
@@ -1732,7 +1732,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La niña _____ su muñeca.",
     options: ["abraza", "abrazó", "abrazará"],
@@ -1741,7 +1741,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El sol _____ en el cielo.",
     options: ["brilla", "brilló", "brillará"],
@@ -1750,7 +1750,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ café por la mañana.",
     options: ["tomamos", "tomamos", "tomar"],
@@ -1759,7 +1759,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La profesora _____ muchas preguntas.",
     options: ["hace", "hizo", "hará"],
@@ -1768,7 +1768,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La fruta _____ fresca y deliciosa.",
     options: ["es", "fue", "era"],
@@ -1777,7 +1777,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ a la escuela todos los días.",
     options: ["van", "fueron", "irán"],
@@ -1786,7 +1786,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren _____ a las ocho.",
     options: ["sale", "salió", "saldrá"],
@@ -1795,7 +1795,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ a la escuela todos los días.",
     options: ["va", "viene", "sale"],
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la playa en verano.",
     options: ["vamos", "vamos a", "fuimos"],
@@ -1813,7 +1813,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ el libro que presté?",
     options: ["está", "estás", "estamos"],
@@ -1822,7 +1822,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ una película muy interesante.",
     options: ["vi", "ver", "veo"],
@@ -1831,7 +1831,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ en casa este fin de semana.",
     options: ["están", "estuve", "estoy"],
@@ -1840,7 +1840,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres _____ en España el año pasado.",
     options: ["estuvieron", "están", "estuve"],
@@ -1849,7 +1849,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa _____ muy grande y bonita.",
     options: ["es", "son", "fue"],
@@ -1858,7 +1858,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los niños _____ en el parque ahora.",
     options: ["juegan", "jugaron", "jugaban"],
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro _____ en la mesa.",
     options: ["está", "estuve", "están"],
@@ -1876,7 +1876,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ a la fiesta el sábado.",
     options: ["van", "fueron", "vienen"],
@@ -1885,7 +1885,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato _____ en el sofá.",
     options: ["duerme", "dormía", "dormir"],
@@ -1893,7 +1893,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "'Duerme' signifie 'il/elle dort'.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella tiene un perro _____.",
     options: ["grande", "rápido", "lento"],
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros vamos a la _____ mañana.",
     options: ["playa", "montaña", "ciudad"],
@@ -1911,7 +1911,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Tengo que estudiar para el _____.",
     options: ["examen", "trabajo", "viaje"],
@@ -1920,7 +1920,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está en la _____.",
     options: ["silla", "puerta", "ventana"],
@@ -1929,7 +1929,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano juega al _____.",
     options: ["fútbol", "tenis", "baloncesto"],
@@ -1938,7 +1938,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es de color _____.",
     options: ["negro", "blanco", "gris"],
@@ -1947,7 +1947,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nos encontramos en la _____.",
     options: ["estación", "escuela", "tienda"],
@@ -1956,7 +1956,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero un vaso de _____.",
     options: ["agua", "vino", "cerveza"],
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi madre trabaja en una _____.",
     options: ["oficina", "tienda", "casa"],
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película fue muy _____.",
     options: ["interesante", "aburrida", "lenta"],
@@ -1983,7 +1983,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta escuchar música en la _____.",
     options: ["casa", "playa", "calle"],
@@ -1992,7 +1992,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano es la _____.",
     options: ["mejor", "peor", "más larga"],
@@ -2001,7 +2001,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy es un día _____.",
     options: ["hermoso", "triste", "feo"],
@@ -2010,7 +2010,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho _____ en el parque.",
     options: ["correr", "la comida", "el cine"],
@@ -2019,7 +2019,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ ir al cine este fin de semana.",
     options: ["queremos", "vamos", "puedo"],
@@ -2028,7 +2028,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ muy feliz en el parque.",
     options: ["está", "es", "tiene"],
@@ -2037,7 +2037,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Marta _____ muchas frutas en su casa.",
     options: ["tiene", "hace", "va"],
@@ -2046,7 +2046,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ un partido de fútbol.",
     options: ["hubo", "hacer", "jugar"],
@@ -2055,7 +2055,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro que leo _____ muy interesante.",
     options: ["es", "fue", "era"],
@@ -2064,7 +2064,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ en la playa ahora.",
     options: ["están", "fueron", "estuve"],
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa _____ más grande que la tuya.",
     options: ["es", "fue", "era"],
@@ -2082,7 +2082,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Si tuviera dinero, _____ un coche nuevo.",
     options: ["compraría", "compra", "comprar"],
@@ -2091,7 +2091,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano pasado _____ a España.",
     options: ["viajé", "viajar", "viajo"],
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Si llueve, _____ en casa.",
     options: ["quedamos", "quedarse", "quedé"],
@@ -2109,7 +2109,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ mi libro?",
     options: ["está", "fue", "era"],
@@ -2118,7 +2118,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "No puedo _____ el examen mañana.",
     options: ["hacer", "hago", "hacia"],
@@ -2127,7 +2127,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres _____ en casa ahora.",
     options: ["están", "fueron", "fue"],
@@ -2136,7 +2136,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Si tengo tiempo, _____ al gimnasio.",
     options: ["voy", "fui", "iba"],
@@ -2145,7 +2145,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película que vimos _____ muy aburrida.",
     options: ["fue", "es", "era"],
@@ -2154,7 +2154,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando era niño, _____ mucho en el parque.",
     options: ["jugaba", "jugar", "juego"],
@@ -2163,7 +2163,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "No sé si _____ a la fiesta esta noche.",
     options: ["voy", "fui", "fue"],
@@ -2172,7 +2172,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi comida favorita es _____",
     options: ["la pizza", "el helado", "las verduras"],
@@ -2181,7 +2181,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy hace _____ que ayer.",
     options: ["más frío", "más calor", "más viento"],
@@ -2190,7 +2190,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ a la escuela todos los días.",
     options: ["caminamos", "camina", "caminas"],
@@ -2199,7 +2199,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ muy grande.",
     options: ["es", "está", "fue"],
@@ -2209,7 +2209,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa tiene _____ ventanas.",
     options: ["tres", "cuatro", "cinco"],
@@ -2219,7 +2219,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella vive en _____ ciudad.",
     options: ["una", "un", "el"],
@@ -2228,7 +2228,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es _____ rápido.",
     options: ["muy", "poco", "más"],
@@ -2237,7 +2237,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta _____ café por la mañana.",
     options: ["tomar", "tomo", "tomas"],
@@ -2246,7 +2246,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres _____ en casa.",
     options: ["están", "estás", "estoy"],
@@ -2255,7 +2255,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El niño juega _____ la pelota.",
     options: ["con", "sin", "bajo"],
@@ -2264,7 +2264,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ a la playa.",
     options: ["vamos", "voy", "van"],
@@ -2273,7 +2273,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren llega a las _____.",
     options: ["ocho", "nueve", "diez"],
@@ -2282,7 +2282,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano _____ muy caluroso.",
     options: ["es", "fue", "está"],
@@ -2291,7 +2291,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La tienda _____ cierra a las seis.",
     options: ["siempre", "nunca", "a veces"],
@@ -2300,7 +2300,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ en el parque.",
     options: ["camino", "correr", "corriendo"],
@@ -2309,7 +2309,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ una carta a su amiga.",
     options: ["escribe", "escribir", "escribiendo"],
@@ -2318,7 +2318,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ al cine mañana.",
     options: ["vamos", "ir", "yendo"],
@@ -2327,7 +2327,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ en el jardín.",
     options: ["juega", "jugar", "jugando"],
@@ -2336,7 +2336,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ una película interesante.",
     options: ["veo", "ver", "viendo"],
@@ -2344,7 +2344,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "Le verbe 'ver' signifie 'voir'.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a _____ a la playa este fin de semana.",
     options: ["ir", "ver", "hacer"],
@@ -2353,7 +2353,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ una carta a su abuela.",
     options: ["escribe", "lee", "come"],
@@ -2362,7 +2362,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ en la casa de Juan.",
     options: ["vivimos", "jugamos", "cocinamos"],
@@ -2371,7 +2371,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es _____ que el tuyo.",
     options: ["más rápido", "más lento", "más viejo"],
@@ -2380,7 +2380,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ al cine esta noche.",
     options: ["van", "vienen", "están"],
@@ -2389,7 +2389,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella siempre _____ café por la mañana.",
     options: ["bebe", "come", "prepara"],
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los niños _____ en el parque.",
     options: ["juegan", "corren", "duermen"],
@@ -2407,7 +2407,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "¿Dónde _____ la tienda más cercana?",
     options: ["está", "hay", "fue"],
@@ -2416,7 +2416,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La fiesta comienza _____ a las ocho.",
     options: ["exactamente", "tarde", "temprano"],
@@ -2425,7 +2425,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren _____ a las diez.",
     options: ["sale", "llega", "para"],
@@ -2434,7 +2434,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ que la otra.",
     options: ["más grande", "más pequeña", "más bonita"],
@@ -2443,7 +2443,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella tiene _____ amigos en la ciudad.",
     options: ["muchos", "pocos", "ningunos"],
@@ -2452,7 +2452,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está _____ en la silla.",
     options: ["sentado", "caminando", "saltando"],
@@ -2461,7 +2461,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta el _____ de chocolate.",
     options: ["pastel", "fruta", "agua"],
@@ -2471,7 +2471,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ en la playa durante el verano.",
     options: ["nada", "comer", "correr"],
@@ -2480,7 +2480,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la fiesta mañana.",
     options: ["vamos", "ir", "fui"],
@@ -2489,7 +2489,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro _____ muy feliz.",
     options: ["es", "está", "fue"],
@@ -2498,7 +2498,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ una película interesante.",
     options: ["vi", "ver", "veré"],
@@ -2507,7 +2507,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ su libro en la biblioteca.",
     options: ["dejó", "dejar", "dejas"],
@@ -2516,7 +2516,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima hoy _____ muy agradable.",
     options: ["es", "está", "fue"],
@@ -2525,7 +2525,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ en el restaurante.",
     options: ["comen", "comer", "comió"],
@@ -2534,7 +2534,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ un examen importante.",
     options: ["tengo", "tuve", "tenía"],
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro que leí _____ muy interesante.",
     options: ["fue", "es", "será"],
@@ -2552,7 +2552,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ al cine todos los viernes.",
     options: ["vamos", "fue", "ir"],
@@ -2561,7 +2561,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche _____ rápido.",
     options: ["es", "está", "fue"],
@@ -2571,7 +2571,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ un buen día.",
     options: ["tuve", "tengo", "tenía"],
@@ -2580,7 +2580,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El profesor _____ las preguntas.",
     options: ["explica", "explicar", "explicó"],
@@ -2589,7 +2589,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a la montaña en invierno.",
     options: ["vamos", "fue", "ir"],
@@ -2598,7 +2598,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa _____ cerca del parque.",
     options: ["está", "es", "fue"],
@@ -2608,7 +2608,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy es un día muy _____.",
     options: ["hermoso", "triste", "nublado"],
@@ -2617,7 +2617,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho el _____ de la playa.",
     options: ["sonido", "sabor", "olor"],
@@ -2626,7 +2626,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella tiene un perro muy _____.",
     options: ["grande", "pequeño", "rápido"],
@@ -2635,7 +2635,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro está sobre la _____.",
     options: ["mesa", "silla", "cama"],
@@ -2644,7 +2644,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano juega al _____ los sábados.",
     options: ["fútbol", "ajedrez", "tenis"],
@@ -2653,7 +2653,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero un café _____ por favor.",
     options: ["sin azúcar", "con leche", "frío"],
@@ -2662,7 +2662,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es muy _____.",
     options: ["bonita", "grande", "pequeña"],
@@ -2671,7 +2671,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El cielo está _____.",
     options: ["azul", "gris", "verde"],
@@ -2680,7 +2680,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta _____ en el parque.",
     options: ["caminar", "correr", "saltar"],
@@ -2689,7 +2689,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren sale a las _____.",
     options: ["dos", "tres", "cuatro"],
@@ -2698,7 +2698,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella estudia para _____ en la universidad.",
     options: ["trabajar", "jugar", "viajar"],
@@ -2707,7 +2707,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano es mi estación _____.",
     options: ["favorita", "menos", "más"],
@@ -2716,7 +2716,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida en este restaurante es _____.",
     options: ["deliciosa", "sosa", "cara"],
@@ -2725,7 +2725,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gustaría viajar a _____.",
     options: ["España", "Francia", "Italia"],
@@ -2734,7 +2734,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ en el parque ahora.",
     options: ["están", "está", "estamos"],
@@ -2743,7 +2743,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ muy bonita hoy.",
     options: ["es", "está", "fue"],
@@ -2752,7 +2752,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ pizza para la cena.",
     options: ["comemos", "come", "comen"],
@@ -2761,7 +2761,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Él _____ a su hermana en la escuela.",
     options: ["veo", "ve", "ver"],
@@ -2770,7 +2770,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ un buen día.",
     options: ["fue", "es", "ser"],
@@ -2779,7 +2779,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres siempre _____ en casa los domingos.",
     options: ["están", "está", "estuvimos"],
@@ -2788,7 +2788,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ a la fiesta.",
     options: ["voy", "fui", "va"],
@@ -2796,7 +2796,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "Futur proche avec 'ir a'.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La capital de España es _____.",
     options: ["Madrid", "Barcelona", "Sevilla"],
@@ -2805,7 +2805,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El sol sale por el _____ y se pone por el oeste.",
     options: ["norte", "este", "sur"],
@@ -2814,7 +2814,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho el _____ en verano.",
     options: ["frío", "calor", "otoño"],
@@ -2823,7 +2823,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La lengua oficial de México es _____.",
     options: ["español", "francés", "inglés"],
@@ -2832,7 +2832,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La fiesta se celebra en _____ de diciembre.",
     options: ["el 5", "el 25", "el 31"],
@@ -2841,7 +2841,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano trabaja en un _____ de construcción.",
     options: ["hotel", "sitio", "proyecto"],
@@ -2850,7 +2850,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta el café sin _____.",
     options: ["leche", "azúcar", "agua"],
@@ -2859,7 +2859,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un instrumento musical de cuerda.",
     options: ["piano", "violín", "batería"],
@@ -2868,7 +2868,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es un lugar para ver animales.",
     options: ["escuela", "zoológico", "tienda"],
@@ -2877,7 +2877,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los estudiantes _____ en la biblioteca.",
     options: ["estudian", "comen", "juegan"],
@@ -2886,7 +2886,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La ______ es la estación más fría del año.",
     options: ["primavera", "verano", "invierno"],
@@ -2895,7 +2895,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a comprar frutas en el _____.",
     options: ["mercado", "parque", "cine"],
@@ -2904,7 +2904,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La ______ es una bebida muy popular en España.",
     options: ["cerveza", "vino", "agua"],
@@ -2913,7 +2913,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren llega a la _____ a las cinco.",
     options: ["estación", "casa", "ciudad"],
@@ -2922,7 +2922,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi amigo tiene un perro muy _____.",
     options: ["grande", "pequeño", "alto"],
@@ -2931,7 +2931,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un deporte muy popular en España.",
     options: ["fútbol", "tenis", "natación"],
@@ -2940,7 +2940,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es la capital de Argentina.",
     options: ["Lima", "Buenos Aires", "Santiago"],
@@ -2949,7 +2949,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano en España es muy _____.",
     options: ["caliente", "frío", "nublado"],
@@ -2958,7 +2958,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La pizza es un plato _____ en Italia.",
     options: ["sobre", "famoso", "rápido"],
@@ -2967,7 +2967,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta ir al _____ en verano.",
     options: ["mar", "montaña", "campo"],
@@ -2976,7 +2976,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es más _____ que la bicicleta.",
     options: ["rápido", "lento", "pequeño"],
@@ -2985,7 +2985,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa tiene un _____ en el jardín.",
     options: ["árbol", "perro", "coche"],
@@ -2994,7 +2994,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Las flores son _____ en primavera.",
     options: ["hermosas", "tristes", "oscuras"],
@@ -3003,7 +3003,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es la tercera planeta del sistema solar.",
     options: ["Tierra", "Luna", "Marte"],
@@ -3012,7 +3012,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta leer un _____ antes de dormir.",
     options: ["libro", "diario", "revista"],
@@ -3021,7 +3021,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro ladra cuando está _____.",
     options: ["feliz", "triste", "enojado"],
@@ -3030,7 +3030,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un animal que vuela.",
     options: ["perro", "pájaro", "gato"],
@@ -3039,7 +3039,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es una fruta tropical.",
     options: ["manzana", "piña", "naranja"],
@@ -3048,7 +3048,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ está en la cima de la montaña.",
     options: ["sol", "viento", "agua"],
@@ -3057,7 +3057,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es un tipo de queso español.",
     options: ["mozzarella", "parmesano", "manchego"],
@@ -3066,7 +3066,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un lugar donde se cultivan plantas.",
     options: ["jardín", "parque", "bosque"],
@@ -3075,7 +3075,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un medio de transporte.",
     options: ["avión", "piano", "cuaderno"],
@@ -3084,7 +3084,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ se usa para escribir.",
     options: ["lápiz", "mesa", "silla"],
@@ -3093,7 +3093,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los estudiantes _____ en clase.",
     options: ["escuchan", "comen", "juegan"],
@@ -3102,7 +3102,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es un deporte muy divertido.",
     options: ["natación", "pintura", "cocina"],
@@ -3111,7 +3111,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un lugar para comprar comida.",
     options: ["supermercado", "cine", "parque"],
@@ -3120,7 +3120,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta la música _____ en la tarde.",
     options: ["clásica", "moderna", "popular"],
@@ -3129,7 +3129,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es una bebida fría.",
     options: ["sopa", "cerveza", "té"],
@@ -3138,7 +3138,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un lugar para ver películas.",
     options: ["cine", "teatro", "casa"],
@@ -3147,7 +3147,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un animal que puede volar.",
     options: ["perro", "pájaro", "gato"],
@@ -3156,7 +3156,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es un lugar donde se cultivan flores.",
     options: ["jardín", "parque", "bosque"],
@@ -3165,7 +3165,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta comer _____ en la mañana.",
     options: ["huevos", "tacos", "pizza"],
@@ -3174,7 +3174,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un lugar para aprender.",
     options: ["escuela", "casa", "tienda"],
@@ -3183,7 +3183,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es un medio de transporte muy rápido.",
     options: ["bicicleta", "coche", "avión"],
@@ -3192,7 +3192,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un animal que vive en el agua.",
     options: ["perro", "pez", "gato"],
@@ -3201,7 +3201,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un instrumento musical de viento.",
     options: ["piano", "flauta", "guitarra"],
@@ -3210,7 +3210,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es una fruta roja.",
     options: ["manzana", "plátano", "naranja"],
@@ -3219,7 +3219,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El _____ es un lugar donde se venden libros.",
     options: ["biblioteca", "librería", "escuela"],
@@ -3228,7 +3228,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La _____ es un día festivo muy importante.",
     options: ["Navidad", "lunes", "fin de semana"],
@@ -3236,7 +3236,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "Noël est un jour férié très important.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy es un día muy _____.",
     options: ["bonito", "feo", "triste"],
@@ -3245,7 +3245,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta mucho el _____ de la playa.",
     options: ["sol", "nieve", "viento"],
@@ -3254,7 +3254,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro es un _____ muy fiel.",
     options: ["gato", "animal", "pájaro"],
@@ -3263,7 +3263,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El libro está _____ de la mesa.",
     options: ["encima", "debajo", "al lado"],
@@ -3272,7 +3272,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a comprar un _____ para la cena.",
     options: ["libro", "plato", "juego"],
@@ -3281,7 +3281,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella siempre lleva una _____ en su bolso.",
     options: ["computadora", "cartera", "silla"],
@@ -3290,7 +3290,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nos gusta ir al _____ en verano.",
     options: ["cine", "frío", "esquí"],
@@ -3299,7 +3299,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El café está muy _____.",
     options: ["frío", "caliente", "rápido"],
@@ -3308,7 +3308,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El sábado vamos a _____ al parque.",
     options: ["correr", "sentar", "comer"],
@@ -3317,7 +3317,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero _____ una película esta noche.",
     options: ["ver", "leer", "hacer"],
@@ -3326,7 +3326,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche es _____ que compré ayer.",
     options: ["nuevo", "viejo", "rápido"],
@@ -3335,7 +3335,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos y yo vamos a _____ un concierto.",
     options: ["ver", "escuchar", "cantar"],
@@ -3344,7 +3344,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ y grande.",
     options: ["pequeña", "hermosa", "bonita"],
@@ -3353,7 +3353,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ en la universidad.",
     options: ["estudio", "canto", "bailo"],
@@ -3362,7 +3362,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer fui al _____ con mi familia.",
     options: ["cine", "teatro", "museo"],
@@ -3371,7 +3371,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano pasado viajé a _____.",
     options: ["España", "casa", "escuela"],
@@ -3380,7 +3380,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La fruta que más me gusta es _____.",
     options: ["la banana", "la mesa", "el agua"],
@@ -3389,7 +3389,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cada mañana bebo un _____ de café.",
     options: ["taza", "cucharada", "botella"],
@@ -3398,7 +3398,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres están de _____ este fin de semana.",
     options: ["vacaciones", "trabajo", "estudio"],
@@ -3407,7 +3407,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta escuchar _____ por la mañana.",
     options: ["música", "televisión", "radio"],
@@ -3416,7 +3416,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La maestra nos enseñó _____.",
     options: ["inglés", "matemáticas", "historia"],
@@ -3425,7 +3425,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está _____ del sofá.",
     options: ["debajo", "encima", "dentro"],
@@ -3434,7 +3434,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Las estrellas brillan en la _____ .",
     options: ["noche", "tarde", "mañana"],
@@ -3443,7 +3443,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Voy a _____ mi libro en casa.",
     options: ["dejar", "tomar", "vender"],
@@ -3452,7 +3452,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren sale a las _____ de la tarde.",
     options: ["cinco", "diez", "siete"],
@@ -3461,7 +3461,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida está _____ y deliciosa.",
     options: ["caliente", "fría", "sucia"],
@@ -3470,7 +3470,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero _____ un regalo a mi amigo.",
     options: ["dar", "tomar", "comprar"],
@@ -3479,7 +3479,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El reloj está _____ de la pared.",
     options: ["en", "debajo", "fuera"],
@@ -3488,7 +3488,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película fue muy _____.",
     options: ["divertida", "triste", "rápida"],
@@ -3497,7 +3497,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La habitación está _____ y limpia.",
     options: ["ordenada", "sucia", "desordenada"],
@@ -3506,7 +3506,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima hoy es muy _____.",
     options: ["frío", "caliente", "nublado"],
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los estudiantes _____ en la clase.",
     options: ["estudian", "juegan", "cantan"],
@@ -3524,7 +3524,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida de hoy está _____.",
     options: ["rica", "sosa", "fea"],
@@ -3533,7 +3533,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El agua está _____ en el vaso.",
     options: ["fría", "caliente", "sucia"],
@@ -3542,7 +3542,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro corre muy _____.",
     options: ["rápido", "lento", "tranquilo"],
@@ -3551,7 +3551,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me encanta _____ en el verano.",
     options: ["nadar", "correr", "leer"],
@@ -3560,7 +3560,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La tarea está _____ en mi escritorio.",
     options: ["aquí", "ahí", "allí"],
@@ -3569,7 +3569,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El verano es mi estación _____ .",
     options: ["favorita", "fea", "triste"],
@@ -3578,7 +3578,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El maestro es muy _____.",
     options: ["estricto", "simpático", "feo"],
@@ -3587,7 +3587,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La escuela está _____ de mi casa.",
     options: ["cerca", "lejos", "dentro"],
@@ -3596,7 +3596,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy tengo que _____ la ropa.",
     options: ["lavar", "planchar", "cocinar"],
@@ -3605,7 +3605,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato está _____ en la ventana.",
     options: ["mirando", "dormido", "jugando"],
@@ -3614,7 +3614,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren llega a las _____ de la tarde.",
     options: ["seis", "ocho", "nueve"],
@@ -3623,7 +3623,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Me gusta _____ en mi tiempo libre.",
     options: ["leer", "correr", "escribir"],
@@ -3632,7 +3632,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El sol brilla en el _____.",
     options: ["cielo", "mar", "suelo"],
@@ -3641,7 +3641,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La pizza está muy _____.",
     options: ["rica", "mala", "fría"],
@@ -3649,7 +3649,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     explanation: "'Rica' signifie 'délicieuse'.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El perro está _____ en el jardín.",
     options: ["dormido", "comiendo", "jugando"],
@@ -3658,7 +3658,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Yo _____ a la playa todos los veranos.",
     options: ["voy", "vengo", "voy a"],
@@ -3667,7 +3667,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ que le gusta el chocolate.",
     options: ["dice", "decir", "diciendo"],
@@ -3676,7 +3676,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ en casa mañana.",
     options: ["estamos", "estará", "estar"],
@@ -3685,7 +3685,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa es _____ grande.",
     options: ["muy", "más", "poco"],
@@ -3694,7 +3694,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Él tiene _____ libros en su mochila.",
     options: ["muchos", "poco", "más"],
@@ -3703,7 +3703,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermana _____ una guitarra nueva.",
     options: ["tiene", "tenido", "tendrá"],
@@ -3712,7 +3712,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy _____ un día soleado.",
     options: ["es", "está", "fue"],
@@ -3721,7 +3721,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Quiero _____ en el parque.",
     options: ["caminar", "camino", "caminando"],
@@ -3730,7 +3730,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La niña _____ una manzana roja.",
     options: ["come", "comer", "comiendo"],
@@ -3739,7 +3739,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Juan _____ en el trabajo ahora.",
     options: ["está", "es", "fue"],
@@ -3748,7 +3748,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Los estudiantes _____ en clase.",
     options: ["estudian", "estudiar", "estudiando"],
@@ -3757,7 +3757,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis padres _____ de vacaciones.",
     options: ["están", "estuvieran", "estar"],
@@ -3766,7 +3766,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ayer _____ una fiesta en mi casa.",
     options: ["hubo", "hay", "había"],
@@ -3776,7 +3776,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película _____ muy interesante.",
     options: ["fue", "es", "está"],
@@ -3785,7 +3785,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ su tarea en la biblioteca.",
     options: ["hace", "hizo", "haciendo"],
@@ -3794,7 +3794,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ a Madrid el próximo mes.",
     options: ["vamos", "fue", "ir"],
@@ -3803,7 +3803,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ en el parque.",
     options: ["juegan", "jugando", "jugar"],
@@ -3812,7 +3812,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi familia _____ una casa grande.",
     options: ["tiene", "teniendo", "tuvo"],
@@ -3821,7 +3821,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mañana _____ a la escuela.",
     options: ["voy", "fui", "vengo"],
@@ -3830,7 +3830,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El coche _____ muy rápido.",
     options: ["va", "fue", "ir"],
@@ -3839,7 +3839,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La clase _____ a las nueve.",
     options: ["empieza", "empezar", "está"],
@@ -3848,7 +3848,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Hoy _____ un buen día para salir.",
     options: ["es", "está", "fue"],
@@ -3857,7 +3857,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ en la fiesta anoche.",
     options: ["bailaron", "bailan", "bailar"],
@@ -3866,7 +3866,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mi hermano _____ un libro muy interesante.",
     options: ["lee", "leía", "leyendo"],
@@ -3875,7 +3875,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ en el restaurante ayer.",
     options: ["comimos", "comer", "comiendo"],
@@ -3884,7 +3884,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Mis amigos _____ a la playa el fin de semana.",
     options: ["fueron", "van", "ir"],
@@ -3893,7 +3893,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El gato _____ en el sofá.",
     options: ["está", "estuvo", "estar"],
@@ -3902,7 +3902,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa _____ del abuelo.",
     options: ["es", "está", "fue"],
@@ -3911,7 +3911,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Él _____ en la universidad el año pasado.",
     options: ["estudió", "estudia", "estudiando"],
@@ -3920,7 +3920,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ un viaje a España el año pasado.",
     options: ["hicimos", "hacemos", "hacer"],
@@ -3929,7 +3929,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La película que vimos _____ muy emocionante.",
     options: ["fue", "es", "ser"],
@@ -3938,7 +3938,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando _____ niño, me gustaba jugar al fútbol.",
     options: ["era", "soy", "ser"],
@@ -3947,7 +3947,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ellos _____ en la reunión la semana pasada.",
     options: ["estuvieron", "están", "estar"],
@@ -3956,7 +3956,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida que preparé _____ muy rica.",
     options: ["estaba", "está", "ser"],
@@ -3965,7 +3965,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El clima de hoy _____ perfecto para salir.",
     options: ["es", "fue", "está"],
@@ -3974,7 +3974,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando llegué, ellos _____ en la casa.",
     options: ["estaban", "están", "estar"],
@@ -3983,7 +3983,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Ella _____ un libro de aventuras.",
     options: ["lee", "leía", "leído"],
@@ -3992,7 +3992,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "El tren _____ a las cinco.",
     options: ["sale", "salió", "salir"],
@@ -4001,7 +4001,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La reunión _____ en la sala grande.",
     options: ["fue", "es", "está"],
@@ -4010,7 +4010,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando era niño, _____ en la playa cada verano.",
     options: ["jugaba", "jugar", "jugaría"],
@@ -4019,7 +4019,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Él no _____ a la fiesta porque estaba enfermo.",
     options: ["fue", "va", "ir"],
@@ -4028,7 +4028,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La casa _____ muy antigua y bonita.",
     options: ["es", "fue", "está"],
@@ -4037,7 +4037,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "La comida que preparó mi madre _____ deliciosa.",
     options: ["fue", "es", "ser"],
@@ -4046,7 +4046,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Nosotros _____ en la montaña el año pasado.",
     options: ["esquiamos", "esquiar", "esquiando"],
@@ -4055,7 +4055,7 @@ final List<QuizQuestion> questionLangueEtrangereEspagnol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Espagnol — Texte à trous",
     question: "Cuando era joven, siempre _____ al cine los viernes.",
     options: ["iba", "ir", "fui"],
@@ -4421,7 +4421,7 @@ class _QuizLangueEtrangereEspagnolState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4624,7 +4624,7 @@ class _QuizLangueEtrangereEspagnolState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4807,7 +4807,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5340,10 +5339,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5714,7 +5714,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5755,9 +5755,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -52,29 +52,29 @@ class GPXSchoolResponsabilitePenalePrincipesGenerauxPage
                 : const Color(0xFFE0F7FA),
             accent: const Color(0xFF00838F),
             titleColor: const Color(0xFF006064),
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Le droit pénal repose sur le principe fondamental de responsabilité personnelle. '
                 'Le Code pénal pose le principe selon lequel nul ne peut être déclaré responsable '
                 'pénalement des faits d’autrui.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: 'Ce principe est affirmé par '),
+                TextSpan(text: 'Ce principe est affirmé par '),
                 TextSpan(
                   text: 'l’article 121-1 du Code pénal',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: Colors.red,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' qui dispose que « nul n’est responsable pénalement que de son propre fait ».',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Ce principe s’applique aussi bien aux personnes physiques qu’aux personnes morales, '
                 'ce qui constitue une innovation majeure par rapport à la législation antérieure.',
               ),
@@ -127,9 +127,9 @@ class GPXSchoolResponsabilitePenalePrincipesGenerauxPage
 
           const SizedBox(height: 18),
 
-          _NotaBox(
+          const _NotaBox(
             title: 'À retenir',
-            bodySpans: const [
+            bodySpans: [
               TextSpan(
                 text:
                     'Certaines circonstances prévues par la loi peuvent constituer des causes '
@@ -172,10 +172,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -240,7 +240,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -283,7 +283,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -345,7 +345,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -377,7 +377,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -390,7 +390,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

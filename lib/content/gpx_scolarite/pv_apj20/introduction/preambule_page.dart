@@ -161,57 +161,57 @@ class PVPreambulePage extends StatelessWidget {
             cardColor: cardMethod,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Ce recueil présente les principaux procès-verbaux qu’un A.P.J. 20 peut être amené à rédiger, quel que soit son service d’affectation.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il est conçu comme une aide pratique : les principales étapes d’une enquête de police sont exposées, pour te guider de manière structurée.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Organisation pédagogique"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Organisation pédagogique"),
+              _BulletPoint(
                 text:
                     "Une fiche de cours précède le ou les modèles de procès-verbaux.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Un canevas fournit des explications sur le contenu propre à chaque acte.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // Petite note méthodo (sans copyWith)
               _NotaBox(
                 title: "Conseil",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Avant de rédiger un PV, identifie toujours : le contexte, l’objectif de l’acte, les personnes concernées, et les éléments factuels indispensables. ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ensuite seulement, structure la rédaction (chronologie, constatations, auditions, annexes).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // Placeholder loi (si tu veux en mettre plus tard), mais je respecte ton contenu fourni (pas de loi dans le préambule).
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Remarque : si tu ajoutes plus tard des références légales (CPP / CP / CSI…), elles devront apparaître en ",
                 ),
                 TextSpan(
                   text: "rouge",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " conformément à ta règle d’affichage."),
+                TextSpan(text: " conformément à ta règle d’affichage."),
               ]),
             ],
           ),
@@ -249,10 +249,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -317,7 +317,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -360,7 +360,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -422,7 +422,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -454,7 +454,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -467,7 +467,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

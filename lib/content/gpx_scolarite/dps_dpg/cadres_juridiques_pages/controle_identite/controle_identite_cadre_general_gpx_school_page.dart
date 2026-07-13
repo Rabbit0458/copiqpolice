@@ -16,7 +16,7 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.72);
+        : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
         ? const Color(0xFF424242)
@@ -154,9 +154,9 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
                 'peine de nullité du contrôle, sur le rapport ou sur le procès-verbal établi.',
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'Pour les agents de police judiciaire adjoints, se reporter au chapitre 2 '
                         'consacré au relevé d’identité.',
@@ -174,26 +174,26 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Selon les termes de l’article 78-2 du code de procédure pénale, il convient de '
                 'distinguer les contrôles qui se pratiquent en matière de police judiciaire et '
                 'ceux qui interviennent dans des situations de police administrative visant à '
                 'prévenir les atteintes à la sécurité des personnes et des biens.',
               ),
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 '1.2.1 – Les contrôles relevant de la police judiciaire',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Le premier alinéa de l’article 78-2 du code de procédure pénale fixe le régime '
                 'des contrôles effectués sur la seule initiative des policiers.',
               ),
-              const SizedBox(height: 6),
-              const _SubTitle(
+              SizedBox(height: 6),
+              _SubTitle(
                 '1.2.1.1 – Les contrôles de police judiciaire effectués à la seule initiative des policiers',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Le contrôle d’identité d’une personne est possible lorsqu’il existe une ou '
                 'plusieurs raisons plausibles de soupçonner qu’elle se trouve dans l’un des cinq '
                 'cas expressément prévus. Ces raisons plausibles doivent être matérialisées par '
@@ -202,26 +202,26 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
                 'vitrine d’une bijouterie, attitude laissant présumer l’usage de stupéfiants, '
                 'dissimulation d’un sac à la vue des policiers, etc.).',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     'La personne a commis ou tenté de commettre une infraction (article 78-2 '
                     'alinéa 2 du code de procédure pénale), qu’il s’agisse d’un crime, d’un délit '
                     'ou d’une contravention.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Elle se prépare à commettre un crime ou un délit (article 78-2 alinéa 3 du '
                     'code de procédure pénale). Le contrôle est alors possible dès la phase des '
                     'actes préparatoires, même si ceux-ci ne suffisent pas à caractériser une '
                     'tentative punissable.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Elle est susceptible de fournir des renseignements utiles à l’enquête en cas '
                     'de crime ou de délit (article 78-2 alinéa 4 du code de procédure pénale).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Elle a violé les obligations ou interdictions auxquelles elle est soumise dans '
                     'le cadre d’un contrôle judiciaire, d’une mesure d’assignation à résidence '
@@ -229,17 +229,17 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
                     'juge de l’application des peines (article 78-2 alinéa 5 du code de procédure '
                     'pénale).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Elle fait l’objet de recherches ordonnées par une autorité judiciaire '
                     '(article 78-2 alinéa 6 du code de procédure pénale), notamment sur la base '
                     'de mandats ou décisions émanant du parquet, d’une juridiction d’instruction '
                     'ou de jugement ou du juge des enfants.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'Les contrôles d’identité peuvent également être mis en œuvre lorsque des '
                         'recherches sont ordonnées par les officiers de police judiciaire au cours '
@@ -248,21 +248,21 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 '1.2.1.2 – Les contrôles effectués sur réquisitions du procureur de la République',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Pour réaliser ce type de contrôle, plusieurs conditions doivent être respectées.',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'Le procureur de la République doit donner des réquisitions écrites qui '
                     'précisent les infractions à rechercher, afin d’éviter que le contrôle ne soit '
                     'déclenché de façon aléatoire.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les réquisitions sont en général prises à la suite de constatations '
                     'd’infractions répétées ou à partir de renseignements laissant supposer que '
@@ -270,20 +270,20 @@ class ConntroleIdentiteCadreGpxSchool extends StatelessWidget {
                     'proxénétisme, infractions à la législation sur l’entrée et le séjour des '
                     'étrangers, etc.).',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les contrôles doivent être effectués dans des lieux et sur une période de '
                     'temps déterminés par le magistrat, ce qui implique un périmètre précis et '
                     'des horaires de début et de fin de l’opération.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les contrôles s’appuient sur une concertation parquet-police : le procureur '
                     'de la République décide de l’opportunité de l’opération, mais la définition '
                     'concrète des lieux, des périodes et des moyens se fait en lien étroit avec '
                     'les services de police.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Les contrôles visent « toute personne » présente dans le périmètre et sur la '
                     'durée fixés par les réquisitions. En pratique, le policier doit veiller à éviter '
@@ -322,10 +322,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -390,7 +390,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -433,7 +433,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -495,7 +495,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -506,10 +506,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -521,13 +520,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -540,13 +538,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

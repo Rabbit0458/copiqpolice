@@ -94,7 +94,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // PROVOCATION DIRECTE À LA RÉBELLION — ARTICLE 433-10 CP
   // (Banque étendue)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — But de l’infraction",
     question:
         "La provocation directe à la rébellion vise principalement à réprimer :",
@@ -109,7 +109,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le texte indique que l’objectif est de sanctionner ceux qui compliquent la mission (interpellation, expulsion, etc.) en incitant directement à une rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Lien exigé",
     question: "Pour être répréhensible, la provocation doit présenter :",
     options: [
@@ -122,7 +122,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La provocation doit être directe : lien étroit et précis avec les faits visés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Opposition violente",
     question: "Les termes de la provocation doivent tendre sans ambiguïté à :",
     options: [
@@ -136,7 +136,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Condition centrale : l’incitation doit viser une opposition violente à l’action de l’autorité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Personne visée",
     question: "La provocation directe à la rébellion doit s’adresser :",
     options: [
@@ -149,7 +149,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’article vise aussi la distribution d’écrits / moyens de diffusion : pas besoin d’une cible déterminée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Cris et discours",
     question: "Les cris ou discours incriminés doivent avoir été tenus :",
     options: [
@@ -162,7 +162,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le support “cris/discours publics” suppose la voie publique ou un lieu public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Écrits",
     question: "Les écrits peuvent constituer une provocation s’ils sont :",
     options: [
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le texte vise les écrits affichés ou distribués.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Tracts",
     question:
         "Des tracts appelant à la rébellion peuvent caractériser l’infraction s’ils sont :",
@@ -188,7 +188,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document cite explicitement ces modes de distribution.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Presse",
     question:
         "Si la provocation est commise par presse écrite ou audiovisuelle, on applique :",
@@ -203,7 +203,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "433-10 al.2 renvoie aux règles spécifiques de la presse (loi 1881).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Infraction formelle",
     question:
         "On dit que la provocation à la rébellion est une infraction formelle car :",
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Peu importe que l’incitation ait été suivie d’effet : le résultat est indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Tentative",
     question:
         "Concernant la provocation directe à la rébellion (433-10), la tentative est :",
@@ -230,7 +230,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Complicité",
     question: "La complicité de provocation directe à la rébellion est :",
     options: [
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document indique que la complicité est punissable selon 121-6 et 121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Base légale complicité",
     question: "Les textes généraux de la complicité mentionnés sont :",
     options: [
@@ -255,7 +255,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document renvoie aux articles 121-6 et 121-7 CP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Personnes morales",
     question:
         "Les personnes morales peuvent être pénalement responsables sur le fondement de :",
@@ -269,7 +269,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document précise la responsabilité pénale des personnes morales (121-2 CP).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Circonstances aggravantes",
     question:
         "La provocation directe à la rébellion (433-10) comporte des circonstances aggravantes :",
@@ -279,7 +279,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document indique explicitement : IV — CIRCONSTANCES AGGRAVANTES : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Notion de complice",
     question:
         "Si la provocation est suivie d’effet, l’auteur peut être poursuivi comme :",
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Nota : si suivie d’effet, poursuites possibles comme complice par instruction (121-7).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Exemple jurisprudentiel",
     question:
         "Dans Cass. crim., 21 février 2017, la provocation est caractérisée notamment car le prévenu :",
@@ -313,7 +313,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // RÉBELLION — ARTICLES 433-6 À 433-9 CP
   // (Banque étendue)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Définition complète",
     question:
         "La rébellion correspond au fait d’opposer une résistance violente à :",
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Définition issue de 433-6 CP : résistance violente à une personne protégée agissant dans l’exercice de ses fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Répression",
     question: "La rébellion est définie par 433-6 CP et réprimée par :",
     options: [
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document précise : 433-6 définit, 433-7 réprime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Dépositaire autorité publique",
     question: "Est dépositaire de l’autorité publique celui qui :",
     options: [
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Définition rappelée : pouvoir de décision attaché aux fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exemples dépositaires",
     question:
         "Parmi ces personnes, lesquelles sont notamment citées comme dépositaires de l’autorité publique ?",
@@ -368,7 +368,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document liste plusieurs exemples : policiers, gendarmes, douaniers, huissiers, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élus locaux",
     question:
         "Les responsables des exécutifs locaux (maires, présidents d’intercommunalités, etc.) sont cités comme :",
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Ils figurent dans la liste des personnes concernées comme dépositaires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Mission de service public",
     question: "Est chargé d’une mission de service public celui qui :",
     options: [
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Définition donnée dans le document (mission d’intérêt général sans pouvoir de décision).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exemple service public",
     question:
         "Le document donne comme exemple de personne chargée d’une mission de service public :",
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Exemple explicite : serrurier requis par l’OPJ.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Condition d’exercice",
     question:
         "Il n’y a rébellion que si la résistance se manifeste alors que l’agent agit :",
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Condition essentielle : exercice des fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — RGE police nationale",
     question:
         "Selon l’art. 113-3 du règlement général d’emploi, un policier même hors service est tenu :",
@@ -437,7 +437,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document rappelle l’obligation d’intervention même hors service.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Jurisprudence hors service",
     question:
         "Cass. crim., 15 décembre 2015 retient qu’un policier est en service s’il intervient :",
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Jurisprudence citée dans le document.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Pour l’exécution des lois",
     question: "Il y a rébellion si l’agent agit notamment dans le cadre :",
     options: [
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document vise PJ (flagrant, préliminaire, CR, mandats...) et PA (ordre public).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Ordre implicite",
     question:
         "Le document précise que l’ordre à l’origine de l’intervention peut être :",
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’ordre peut être implicite ou nécessiter autorisation/réquisition selon les cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Illégalité de l’acte",
     question:
         "Même si l’acte accompli par l’agent se révèle illégal, la rébellion :",
@@ -493,7 +493,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cass. crim., 1er sept. 2004 : l’illégalité supposée est sans incidence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Litige privé",
     question:
         "Si l’agent commet un acte sans lien avec sa mission (litige privé), la résistance :",
@@ -507,7 +507,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document précise que l’absence de lien missionnel exclut la rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Résistance violente",
     question: "La rébellion suppose un acte de résistance :",
     options: [
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Sont exclus : simple désobéissance et obstacle passif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exclusion obstacle passif",
     question:
         "Quel exemple est cité comme ne caractérisant pas la rébellion (obstacle passif) ?",
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cass. crim., 1er mars 2006 : refus passif d’un sexagénaire frêle accroché au volant.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Violence sans coups",
     question: "La jurisprudence peut retenir la rébellion même si l’auteur :",
     options: [
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cass. crim., 7 nov. 2006 : résistance active, fuite, sans coups portés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Distinction violences/rébellion",
     question:
         "On retient plutôt la rébellion lorsque l’acte violent est commis :",
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cass. crim., 21 fév. 2006 : si l’acte violent répond à l’exercice des fonctions envers l’auteur → rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Actes distincts",
     question:
         "Si les violences ne sont pas distinctes de la résistance violente, la Cour retient :",
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cass. crim., 21 fév. 2006 : pas d’actes distincts → qualification de rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élément moral 1",
     question: "L’élément moral suppose généralement :",
     options: [
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La connaissance découle souvent de l’uniforme/signes distinctifs et des explications données.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élément moral 2",
     question: "Le mobile de l’auteur de la rébellion est :",
     options: ["Indifférent", "Toujours aggravant", "Toujours justificatif"],
@@ -597,7 +597,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Infraction intentionnelle : volonté de résister, mobile indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Circonstance aggravante réunion",
     question: "La rébellion est aggravée lorsqu’elle est commise :",
     options: [
@@ -609,7 +609,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation expressément prévue à 433-7 al.2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Circonstance aggravante arme",
     question: "La rébellion est aggravée lorsque l’auteur est :",
     options: [
@@ -621,7 +621,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation prévue par 433-8 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Aggravation maximale",
     question:
         "Un degré d’aggravation supplémentaire est prévu lorsque la rébellion armée est commise :",
@@ -631,7 +631,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document mentionne une aggravation supplémentaire si rébellion armée + réunion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Auteur détenu",
     question:
         "La rébellion est traitée spécifiquement par l’article 433-9 CP lorsque l’auteur :",
@@ -640,7 +640,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "433-9 vise la rébellion commise par une personne détenue.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines simple",
     question: "La rébellion simple (433-7 al.1) est punie de :",
     options: [
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Peines principales : 2 ans + 30 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines réunion",
     question: "La rébellion aggravée en réunion (433-7 al.2) est punie de :",
     options: [
@@ -664,7 +664,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation en réunion : 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines arme",
     question: "La rébellion avec port d’arme (433-8 al.1) est punie de :",
     options: [
@@ -676,7 +676,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "433-8 al.1 : 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines arme + réunion",
     question:
         "La rébellion armée commise en réunion (433-8 al.2) est punie de :",
@@ -689,7 +689,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation maximale : 10 ans + 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Rébellion détenu",
     question:
         "Lorsque l’auteur de la rébellion est détenu (433-9), la répression prévoit :",
@@ -703,7 +703,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document indique un cumul des peines dans ce cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Tentative",
     question: "Concernant la rébellion, la tentative est :",
     options: [
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Complicité",
     question: "Concernant la rébellion, la complicité est :",
     options: [
@@ -727,7 +727,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Complicité punissable selon 121-6/121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exemple complicité",
     question:
         "Dans Cass. crim., 8 décembre 2009, constitue une complicité de rébellion le fait :",
@@ -742,7 +742,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document cite cet exemple comme aide/assistance à la résistance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Personnes morales",
     question:
         "Les personnes morales peuvent être responsables de rébellion conformément à :",
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // MENACES DE CRIME OU DÉLIT ENVERS PERSONNES PROTÉGÉES — 433-3
   // (Banque étendue)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Définition (objet)",
     question: "L’article 433-3 vise la menace de commettre :",
     options: [
@@ -773,7 +773,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La menace doit annoncer la commission prochaine d’un crime/délit contre personnes ou biens.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Bien visé",
     question:
         "Si la menace concerne un bien, elle peut consister en l’annonce :",
@@ -787,7 +787,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document précise la nature possible du mal annoncé concernant un bien.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Réitération",
     question: "La menace 433-3 est punissable :",
     options: [
@@ -800,7 +800,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document indique l’absence d’exigence de réitération ou matérialisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Destinataires",
     question: "Les destinataires des menaces 433-3 sont :",
     options: [
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La loi liste précisément les catégories de victimes protégées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Mandat électif",
     question:
         "Sont visées par l’expression “mandat électif public” notamment :",
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document détaille des exemples de mandats électifs publics.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Dépositaire autorité",
     question:
         "Parmi les catégories citées comme dépositaires de l’autorité publique :",
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document énumère ces catégories au titre de 433-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Mission service public",
     question:
         "Sont cités comme personnes chargées d’une mission de service public (433-3) :",
@@ -856,7 +856,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document cite ces exemples (alinéas 1 et 2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Activité privée de sécurité",
     question:
         "L’article 433-3 protège aussi les personnes exerçant une activité privée de sécurité :",
@@ -871,7 +871,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document vise explicitement ces activités privées de sécurité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Proches",
     question: "L’article 433-3 protège aussi :",
     options: [
@@ -885,7 +885,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Alinéa 4 : proches et cohabitants, en raison des fonctions exercées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Lien avec fonctions",
     question:
         "Pour les personnes du 1er alinéa, l’infraction est constituée si les menaces interviennent :",
@@ -899,7 +899,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document distingue : alinéa 1 = dans l’exercice ou du fait ; alinéas 2 et 3 = dans l’exercice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Alinéas 2 et 3",
     question:
         "Pour les victimes des alinéas 2 et 3, la menace doit avoir lieu :",
@@ -913,7 +913,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document précise : alinéas 2 et 3 → dans l’exercice des fonctions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Qualité connue",
     question: "La qualité de la victime doit être :",
     options: [
@@ -925,7 +925,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Condition : l’auteur agit en raison de cette qualité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Élément moral",
     question: "L’élément moral des menaces 433-3 suppose que l’auteur :",
     options: [
@@ -938,7 +938,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Peu importe intention/moyens d’exécution ; il faut conscience du trouble.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Intention d’exécution",
     question:
         "Pour caractériser l’infraction 433-3, l’intention de mettre la menace à exécution :",
@@ -952,7 +952,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document le dit clairement : peu importe intention/moyens.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Texte",
     question:
         "Les menaces envers personnes protégées sont définies et réprimées par :",
@@ -965,7 +965,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Base légale : 433-3 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Infractions spécifiques justice",
     question:
         "Le document rappelle que certaines menaces pour entraver l’action de la justice relèvent d’infractions spécifiques :",
@@ -979,7 +979,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Mention explicite : menaces visant la justice → infractions spécifiques 434-5/434-8/434-15.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Aggravation al.5",
     question:
         "L’article 433-3 al.5 prévoit une aggravation notamment lorsque :",
@@ -993,7 +993,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation prévue à l’alinéa 5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Aggravation al.6 (but)",
     question:
         "L’article 433-3 al.6 vise les menaces/violences/intimidations utilisées pour :",
@@ -1008,7 +1008,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Al.6 : pression pour obtenir action/abstention liée aux fonctions/mission/mandat.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Aggravation al.6 (abus d’autorité)",
     question:
         "L’alinéa 6 vise aussi le fait de faire pression pour qu’une personne abuse de son autorité (vraie ou supposée) afin d’obtenir :",
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Al.6 : obtenir une décision favorable via abus d’autorité vraie ou supposée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Exclusion 433-3-1",
     question:
         "Le document précise que les dispositions de l’alinéa 6 ne s’appliquent pas aux faits prévus par :",
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Exclusion explicite : al.6 ne s’applique pas aux faits relevant de 433-3-1.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Peines simples",
     question: "Les menaces simples (433-3) sont punies de :",
     options: [
@@ -1049,7 +1049,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Peines principales : 3 ans + 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Peines aggravées al.5",
     question:
         "Les menaces aggravées par l’alinéa 5 (menace de mort / biens dangereuse) sont punies de :",
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation al.5 : 5 ans + 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Peines aggravées al.6",
     question:
         "Les faits aggravés par l’alinéa 6 (pression pour acte de fonction/abus d’autorité) sont punis de :",
@@ -1075,7 +1075,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Aggravation al.6 : 10 ans + 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Tentative",
     question: "Concernant les menaces 433-3, la tentative est :",
     options: ["Non (TENTATIVE : NON)", "Oui", "Oui si menace de mort"],
@@ -1083,7 +1083,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces 433-3 — Complicité",
     question: "Concernant les menaces 433-3, la complicité est :",
     options: [
@@ -1101,7 +1101,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // AUX RÈGLES DE FONCTIONNEMENT D’UN SERVICE PUBLIC
   // (Banque complète)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Définition",
     question:
         "L’infraction 433-3-1 consiste à user de menaces/violences/intimidation :",
@@ -1116,7 +1116,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "But central : obtenir une application dérogatoire des règles de fonctionnement d’un service public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Élément légal",
     question:
         "L’infraction relative à la dérogation aux règles d’un service public est définie et réprimée par :",
@@ -1129,7 +1129,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Base légale : 433-3-1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Comportements visés",
     question:
         "Le 433-3-1 permet de sanctionner des comportements variés car il vise :",
@@ -1144,7 +1144,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le texte vise menaces, violences et tout acte d’intimidation, et les menaces même sans réitération.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Victime",
     question: "La victime visée par 433-3-1 est :",
     options: [
@@ -1158,7 +1158,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Sans condition de statut, fonction ou responsabilités : toute personne participant au service public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Condition de statut",
     question:
         "Pour 433-3-1, il existe une condition de statut/fonction/responsabilités pour la victime :",
@@ -1172,7 +1172,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le texte précise : sans condition de statut, de fonction ou de responsabilités.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Intention particulière",
     question: "Pour caractériser 433-3-1, il faut démontrer :",
     options: [
@@ -1186,7 +1186,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document insiste sur la démonstration d’une intention particulière (objectif précis).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Preuve de l’intention",
     question: "L’intention d’obtenir un régime dérogatoire peut être prouvée :",
     options: [
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document indique que la preuve peut venir d’une expression claire ou du contexte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Exemples (piscine)",
     question: "Exemple donné par le document d’un objectif de dérogation :",
     options: [
@@ -1212,7 +1212,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Exemple cité : horaires réservés pour accès piscine.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Exemples (cantine)",
     question: "Autre exemple de dérogation cité :",
     options: [
@@ -1225,7 +1225,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Exemple cité : régime alimentaire particulier en cantine.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Bénéfice",
     question:
         "Le comportement incriminé doit poursuivre l’objectif d’obtenir une dérogation :",
@@ -1238,7 +1238,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document précise : au bénéfice de soi-même ou d’autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Élément moral (trouble)",
     question: "Pour 433-3-1, l’auteur doit avoir conscience :",
     options: [
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le texte reprend la logique : conscience du trouble ; intention d’obtenir la dérogation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Intention d’exécution",
     question: "Pour 433-3-1, l’intention de mettre les menaces à exécution :",
     options: [
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Peu importe intention/moyens d’exécution, c’est l’objectif dérogatoire qui compte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Circonstances aggravantes",
     question:
         "Le document indique pour 433-3-1 des circonstances aggravantes :",
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "IV — CIRCONSTANCES AGGRAVANTES : AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Peines",
     question: "Les peines principales encourues pour 433-3-1 sont :",
     options: [
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "V — Répression : 5 ans + 75 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Personnes morales",
     question: "Concernant 433-3-1, les personnes morales :",
     options: [
@@ -1298,7 +1298,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le document précise que les personnes morales peuvent être reconnues responsables.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Tentative",
     question: "Concernant 433-3-1, la tentative est :",
     options: ["Non (TENTATIVE : NON)", "Oui", "Oui uniquement si violence"],
@@ -1306,7 +1306,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le document précise : TENTATIVE : NON.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Complicité",
     question: "Concernant 433-3-1, la complicité est :",
     options: [
@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Complicité punissable selon 121-6/121-7 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "433-3-1 — Nature de l’objectif",
     question: "L’objectif visé par 433-3-1 est d’obtenir :",
     options: [
@@ -1346,7 +1346,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // Ici, je reste sur le socle classique : outrage = propos/gestes/écrits
   // portant atteinte à la dignité/respect dû à la fonction, pendant/dû aux fonctions.
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Outrage",
     question: "La différence principale entre outrage et rébellion est que :",
     options: [
@@ -1360,7 +1360,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Outrage = paroles/gestes/écrits atteinte au respect dû à la fonction. Rébellion = résistance violente à l’action de l’agent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Refus d’obtempérer",
     question:
         "Le refus d’obtempérer se distingue classiquement de la rébellion car :",
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Dans ton cours : rébellion = violence/résistance active. Le refus d’obtempérer = non-exécution d’un ordre (souvent en circulation) sans nécessaire violence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Obstacle passif",
     question: "Un obstacle purement passif à l’action de l’agent :",
     options: [
@@ -1388,7 +1388,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Ton doc : la simple désobéissance et l’obstacle passif sont exclus de la rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion (violence) : exemple",
     question:
         "Lequel de ces comportements correspond le plus à une rébellion ?",
@@ -1402,7 +1402,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Résistance active et violente = rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Violences volontaires vs Rébellion",
     question:
         "On retient plutôt les violences volontaires aggravées (plutôt que la rébellion) lorsque :",
@@ -1417,7 +1417,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Ton doc : si l’agent n’exerce pas sa mission envers l’individu, on bascule plutôt sur violences aggravées. Sinon, rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion vs Violences distinctes",
     question:
         "Si les coups portés ne sont pas distincts de la résistance violente lors de l’interpellation :",
@@ -1432,7 +1432,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Ton doc cite Cass. crim. (21 fév. 2006) : pas d’actes de violences distincts -> rébellion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Outrage vs Menaces 433-3",
     question:
         "Dire à un policier : 'Je vais brûler ta voiture ce soir' (en raison de ses fonctions) correspond plutôt à :",
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Menace d’atteinte aux biens = 433-3 si victime protégée et qualité connue + lien fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Menaces vs Outrage",
     question: "L’outrage se distingue d’une menace car la menace contient :",
     options: [
@@ -1460,7 +1460,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Menace = annonce de mal criminel/délictuel, outrage = atteinte au respect/dignité (sans annonce d’infraction).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Provocation à la rébellion vs Outrage",
     question:
         "Crier à une foule : 'Allez-y, tapez les policiers !' correspond plutôt à :",
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Incitation directe à opposition violente à l’autorité = 433-10 (infraction formelle).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Provocation vs Complicité",
     question:
         "Si après une provocation, la rébellion est réellement commise, l’auteur de la provocation peut être poursuivi :",
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Nota de ton doc 433-10 : si suivie d’effet → complicité possible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion en réunion",
     question: "La rébellion est aggravée lorsqu’elle est commise :",
     options: ["En réunion (433-7 al.2 CP)", "En plein jour", "Sans témoin"],
@@ -1496,7 +1496,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Circonstance aggravante prévue à 433-7 al.2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinctions — Rébellion armée",
     question: "La rébellion est aggravée lorsque l’auteur est :",
     options: [
@@ -1512,7 +1512,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // ---------------------------------------------------------
   // QCM “VRAI/FAUX” — format options (3 choix)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Provocation 433-10",
     question:
         "Vrai ou Faux : La provocation directe à la rébellion n’est punissable que si la rébellion a effectivement lieu.",
@@ -1522,7 +1522,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Infraction formelle : punissable même sans résultat (sans être suivie d’effet).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Provocation 433-10",
     question:
         "Vrai ou Faux : La provocation directe à la rébellion doit viser une personne déterminée.",
@@ -1532,7 +1532,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Elle peut être diffusée par tracts/écrits/moyens de transmission sans destinataire déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Rébellion",
     question:
         "Vrai ou Faux : Un obstacle passif (se laisser porter, s’agripper sans violence) suffit à caractériser une rébellion.",
@@ -1542,7 +1542,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Ton doc : obstacle passif et simple désobéissance exclus du champ de la rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Rébellion",
     question:
         "Vrai ou Faux : La rébellion peut être retenue même si l’acte accompli par l’agent était illégal.",
@@ -1552,7 +1552,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cass. crim., 1er septembre 2004 : illégalité supposée sans incidence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Menaces 433-3",
     question:
         "Vrai ou Faux : Pour être punissable, la menace 433-3 doit être réitérée.",
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Punissable même sans réitération ni matérialisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Menaces 433-3",
     question:
         "Vrai ou Faux : Peu importe que l’auteur ait réellement l’intention ou les moyens d’exécuter la menace.",
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Élément moral : conscience du trouble. Intention/moyens d’exécution indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — 433-3-1",
     question:
         "Vrai ou Faux : L’infraction 433-3-1 exige de prouver une intention particulière d’obtenir une dérogation aux règles du service public.",
@@ -1581,7 +1581,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Le texte insiste sur l’objectif précis : exemption/application différenciée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Rébellion (aggravations)",
     question:
         "Vrai ou Faux : La rébellion commise en réunion est moins sévèrement punie que la rébellion simple.",
@@ -1596,7 +1596,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // MINI CAS PRATIQUES — Qualification + article + peine
   // (Chaque cas = QCM)
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Interpellation (violence)",
     question:
         "Lors d’une interpellation, un homme se débat violemment, bouscule un policier et tente de s’enfuir. Quelle qualification principale ?",
@@ -1610,7 +1610,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Résistance active et violente à l’action d’un agent dans l’exercice de ses fonctions = rébellion (simple).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Obstacle passif",
     question:
         "Un homme refuse de descendre de sa voiture et s’agrippe au volant sans donner de coups ni bousculer. Qualification la plus adaptée ?",
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Ton cours : simple désobéissance/obstacle passif ≠ rébellion (exemple Cass. crim., 1er mars 2006).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Rébellion en réunion",
     question:
         "Trois individus entourent des policiers pour empêcher une interpellation et se débattent violemment avec eux. Qualification/peine ?",
@@ -1639,7 +1639,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Réunion = circonstance aggravante spécifique de la rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Rébellion armée",
     question:
         "Lors d’un contrôle, un individu se débat violemment. Une arme blanche est retrouvée sur lui (cachée). Qualification/peine ?",
@@ -1653,7 +1653,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Port d’une arme, apparente ou cachée, pendant la rébellion = aggravation 433-8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Arme + réunion",
     question:
         "Deux individus se rebellent violemment contre les policiers. L’un d’eux est porteur d’une arme. Qualification/peine maximale dans ton tableau ?",
@@ -1667,7 +1667,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Cumul arme + réunion = niveau d’aggravation supérieur (10 ans / 150k).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Provocation à la rébellion",
     question:
         "Un individu crie sur la voie publique : « Venez, ils ne sont que deux, on va les défoncer ! » pour empêcher son interpellation. Qualification/peine ?",
@@ -1681,7 +1681,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Incitation directe à opposition violente (infraction formelle) = 433-10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Menaces envers policier",
     question:
         "En raison d’un contrôle, un homme dit à un policier en uniforme : « Je vais te casser la gueule ce soir ». Qualification/peine (simple) ?",
@@ -1696,7 +1696,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Annonce d’un délit à venir contre la personne + qualité apparente/connue + lien fonctions = 433-3 (simple).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Menace de mort",
     question:
         "Un individu dit à un enseignant : « Je vais te tuer » pendant qu’il est en fonction. Qualification/peine ?",
@@ -1709,7 +1709,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Menace de mort = aggravation al.5.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Pression pour acte de fonction (al.6)",
     question:
         "Un individu menace un agent public pour qu’il falsifie une décision administrative en sa faveur. Qualification/peine ?",
@@ -1724,7 +1724,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Al.6 vise la pression pour faire accomplir/s’abstenir un acte de fonction ou abus d’autorité pour décision favorable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Dérogation service public (433-3-1)",
     question:
         "Un usager menace un agent municipal pour obtenir une exemption aux règles d’accès d’un service public (traitement différencié). Qualification/peine ?",
@@ -1738,7 +1738,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "But = application dérogatoire des règles du service public → 433-3-1 (intention particulière).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Dérogation (cantine)",
     question:
         "Après plusieurs refus, un parent menace le personnel d’une cantine pour obtenir un régime alimentaire non prévu par le règlement. Qualification/peine ?",
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // ---------------------------------------------------------
   // SUPER PIÈGES — cas “mixte” et questions à choix proches
   // ---------------------------------------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Outrage + Rébellion (ordre logique)",
     question:
         "Pendant l’interpellation, un individu insulte l’agent puis se débat violemment pour échapper. La qualification principale liée à l’acte physique est :",
@@ -1771,7 +1771,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La résistance violente = rébellion. Les insultes peuvent constituer outrage si distinctes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Menace vs Outrage",
     question:
         "Dire à un policier : « T’es nul, t’es un clown » correspond plutôt à :",
@@ -1785,7 +1785,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Pas d’annonce d’un crime/délit futur : c’est insultant/dégradant = outrage (si conditions réunies).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Menace de bien",
     question:
         "Dire à un gardien d’immeuble assermenté : « Je vais dégrader ta loge » en raison de sa fonction correspond plutôt à :",
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Menace d’atteinte aux biens + victime protégée (gardien assermenté cité) + lien fonctions → 433-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Provocation vs Rébellion",
     question:
         "Un individu crie à la foule d’empêcher l’interpellation, mais personne ne bouge. Qualification ?",
@@ -1812,7 +1812,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Infraction formelle : pas besoin d’effet.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Menaces vs 433-3-1",
     question:
         "Un usager menace un agent d’un service public pour obtenir un traitement 'hors règle' (dérogation). Qualification la plus pertinente ?",
@@ -1827,7 +1827,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Définition",
     question: "La provocation directe à la rébellion consiste à :",
     options: [
@@ -1840,7 +1840,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’article 433-10 CP vise la provocation directe à commettre le délit de rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Texte",
     question: "La provocation directe à la rébellion est prévue par :",
     options: [
@@ -1852,7 +1852,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Le délit est défini et réprimé par l’article 433-10 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Caractère direct",
     question: "Pour être punissable, la provocation doit :",
     options: [
@@ -1866,7 +1866,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La provocation doit présenter un lien précis et incontestable avec l’acte de rébellion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Résultat",
     question: "La provocation directe à la rébellion est constituée :",
     options: [
@@ -1879,7 +1879,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "Il s’agit d’une infraction formelle : le résultat est indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Moyens",
     question: "La provocation peut être réalisée notamment par :",
     options: [
@@ -1892,7 +1892,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’article 433-10 vise divers moyens de transmission de la parole, de l’écrit ou de l’image.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Presse",
     question:
         "Lorsque la provocation est commise par la presse écrite ou audiovisuelle :",
@@ -1906,7 +1906,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’alinéa 2 de l’article 433-10 renvoie aux règles spécifiques de la presse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Élément moral",
     question: "L’élément moral de la provocation à la rébellion suppose :",
     options: [
@@ -1918,7 +1918,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Il s’agit d’une infraction intentionnelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation à la rébellion — Peines",
     question:
         "Les peines encourues pour la provocation directe à la rébellion sont :",
@@ -1935,7 +1935,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // =========================================================
   // RÉBELLION — ARTICLES 433-6 À 433-9 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Définition",
     question: "La rébellion consiste à :",
     options: [
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’article 433-6 CP définit la rébellion par une résistance violente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Texte",
     question: "La rébellion est définie par l’article :",
     options: [
@@ -1961,7 +1961,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "L’article 433-6 CP définit la rébellion.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Victime",
     question: "La victime de la rébellion doit être :",
     options: [
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "La qualité de la victime est un élément constitutif.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Exercice des fonctions",
     question: "Il y a rébellion uniquement si l’agent agit :",
     options: [
@@ -1987,7 +1987,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La résistance doit intervenir pendant l’exercice des fonctions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Illégalité de l’acte",
     question: "L’illégalité éventuelle de l’acte accompli par l’agent :",
     options: [
@@ -1999,7 +1999,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "La Cour de cassation juge l’illégalité sans incidence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Résistance",
     question: "La rébellion suppose :",
     options: [
@@ -2011,7 +2011,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "La simple désobéissance ou l’obstacle passif sont exclus.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Élément moral",
     question: "L’élément moral de la rébellion suppose :",
     options: [
@@ -2025,7 +2025,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "L’auteur doit avoir conscience de s’opposer à un agent public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Réunion",
     question: "La rébellion est aggravée lorsqu’elle est commise :",
     options: ["En réunion", "La nuit", "En état d’ivresse"],
@@ -2033,7 +2033,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Article 433-7 al.2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Arme",
     question: "La rébellion est aggravée lorsque l’auteur :",
     options: [
@@ -2045,7 +2045,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "Article 433-8 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rébellion — Peines simples",
     question: "Les peines encourues pour la rébellion simple sont :",
     options: [
@@ -2061,7 +2061,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
   // =========================================================
   // MENACES ENVERS PERSONNE DÉPOSITAIRE / SERVICE PUBLIC — 433-3
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Définition",
     question: "Les menaces réprimées par l’article 433-3 CP consistent à :",
     options: [
@@ -2074,7 +2074,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "L’article 433-3 vise les menaces de crime ou de délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Résultat",
     question: "La menace est punissable :",
     options: [
@@ -2086,7 +2086,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "La matérialisation ou l’exécution est indifférente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Qualité de la victime",
     question:
         "Pour constituer l’infraction, la qualité de la victime doit être :",
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
         "La menace doit être motivée par les fonctions connues de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Élément moral",
     question: "L’auteur des menaces doit avoir :",
     options: [
@@ -2112,7 +2112,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
     explanation: "L’intention de réaliser la menace est indifférente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Menaces — Peines simples",
     question: "Les peines encourues pour les menaces simples sont :",
     options: [
@@ -2130,7 +2130,7 @@ final List<QuizQuestion> questionAtteinteAdministration = [
 // PAGE
 // ============================================================================
 class QuizAtteinteAdministrationGPXSchool extends StatefulWidget {
-  static const String routeName = '/gpx/nation/quiz/atteintes_administration';
+  static const String routeName = '/gpx/dps/nation/quiz/atteintes_administration';
   final String uid;
   final String email;
 
@@ -2482,7 +2482,7 @@ class _QuizAtteinteAdministrationGPXSchoolState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2685,7 +2685,7 @@ class _QuizAtteinteAdministrationGPXSchoolState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2868,7 +2868,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3401,10 +3400,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3775,7 +3775,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3816,9 +3816,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

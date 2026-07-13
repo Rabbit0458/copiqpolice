@@ -126,8 +126,8 @@ class _GpxCasPratiqueEtapesReussitePageState
         final onBgSofter = Colors.white.withValues(alpha: 0.78);
 
         // CTA
-        final ctaBg = Colors.white;
-        final ctaFg = _kBlue; // ton bleu branding (comme avant)
+        const ctaBg = Colors.white;
+        const ctaFg = _kBlue; // ton bleu branding (comme avant)
 
         return Scaffold(
           backgroundColor: bgTop,

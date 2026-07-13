@@ -309,7 +309,7 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
                 accent: cReprAccent,
                 titleColor: titleColor,
                 children: [
-                  _SubTitle("Peines encourues"),
+                  const _SubTitle("Peines encourues"),
                   _Paragraph.rich([
                     normal("Répression : peines prévues aux "),
                     lawRef("articles 222-7 à 222-14-1 du Code pénal"),
@@ -326,7 +326,7 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
                   const SizedBox(height: 12),
 
-                  _SubTitle("Tentative"),
+                  const _SubTitle("Tentative"),
                   const _BulletPoint(
                     text:
                         "Tentative : NON (absence de disposition expresse en matière correctionnelle).",
@@ -339,7 +339,7 @@ class AdministrationSubstancesNuisiblesPage extends StatelessWidget {
 
                   const SizedBox(height: 12),
 
-                  _SubTitle("Complicité"),
+                  const _SubTitle("Complicité"),
                   _Paragraph.rich([
                     normal("Complicité : OUI — punissable conformément aux "),
                     lawRef("articles 121-6 et 121-7 du Code pénal"),
@@ -388,10 +388,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -456,7 +456,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -499,7 +499,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -561,7 +561,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -593,7 +593,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -606,7 +606,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

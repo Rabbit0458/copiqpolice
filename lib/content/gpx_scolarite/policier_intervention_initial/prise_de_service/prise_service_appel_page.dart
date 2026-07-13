@@ -98,18 +98,18 @@ class PriseServiceAppelPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Cette fiche décrit une pratique d’organisation interne du service (prise d’informations et transmission "
                 "des consignes). Aucun article de loi précis n’est fourni dans ton contenu pour servir de fondement direct.\n\n"
                 "➡️ Si tu veux, tu pourras ajouter ici les références exactes (CPP / CSI / déontologie / notes de service) "
                 "et je te les mettrai en rouge automatiquement dans les TextSpan.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: 'IMPORTANT',
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ne pas inventer de références : on n’affiche que les textes officiellement donnés dans ton cours / ta source.",
                     style: TextStyle(fontWeight: FontWeight.w700),
@@ -213,29 +213,29 @@ class PriseServiceAppelPage extends StatelessWidget {
             cardColor: cardInfo,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Bon réflexe"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Bon réflexe"),
+              _Paragraph(
                 "Arriver prêt : matériel OK, esprit dispo, et carnet/mémento accessible. "
                 "Le but, c’est de repartir avec une consigne claire, comprise, et notée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pendant l’appel, note immédiatement les consignes particulières (recherches, fiches d’intervention). "
                         "Ça évite les oublis, et ça sécurise ton action en intervention.",
                   ),
-                  const TextSpan(text: " "),
+                  TextSpan(text: " "),
                   TextSpan(
                     text: "(mémento / carnet de service)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -274,10 +274,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -342,7 +342,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -385,7 +385,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -447,7 +447,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -479,7 +479,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -492,7 +492,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

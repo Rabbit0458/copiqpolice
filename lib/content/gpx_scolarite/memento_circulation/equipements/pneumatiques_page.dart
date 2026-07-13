@@ -143,34 +143,34 @@ class PneumatiquesPage extends StatelessWidget {
             cardColor: cardExigences,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) État général obligatoire"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) État général obligatoire"),
+              _BulletPoint(
                 text:
                     "Sculptures apparentes sur toute la surface de roulement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Aucune toile ne doit apparaître (ni en surface, ni à fond de sculptures).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Aucune déchirure profonde sur les flancs.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("B) Profondeur minimale des rainures"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("B) Profondeur minimale des rainures"),
+              _BulletPoint(
                 text:
                     "Au moins 1,6 mm dans les rainures principales de la bande de roulement.",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Pour les véhicules de PTAC > 3,5 T : profondeur minimale de 1 mm.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Des indicateurs d’usure (dans les rainures principales) permettent de constater l’usure maximum autorisée "
                         "sur les voitures particulières et leurs remorques.",
@@ -207,9 +207,9 @@ class PneumatiquesPage extends StatelessWidget {
                 "• Type : dimension (ex. 195/65R15), catégorie (neige), code vitesse, indice de charge…",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Une dérogation temporaire est possible lorsqu’il est fait usage du pneumatique de secours.",
                   ),
@@ -326,27 +326,27 @@ class PneumatiquesPage extends StatelessWidget {
                 text: "D.I.A. et dépistage stupéfiants : facultatifs.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Plusieurs pneumatiques non conformes sur un même véhicule = une seule contravention ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 25/05/1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Bon réflexe P.V.",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Noter au P.V. le n° du (des) pneumatique(s) non conforme(s) (n° gravé sur le flanc du pneu).",
                   ),
@@ -388,10 +388,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -456,7 +456,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -499,7 +499,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -561,7 +561,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -593,7 +593,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -606,7 +606,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

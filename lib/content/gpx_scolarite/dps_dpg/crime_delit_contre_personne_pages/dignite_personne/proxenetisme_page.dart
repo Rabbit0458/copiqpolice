@@ -118,16 +118,16 @@ class ProxenetismePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime le proxénétisme."),
+                TextSpan(text: " : définit et réprime le proxénétisme."),
               ]),
             ],
           ),
@@ -140,207 +140,207 @@ class ProxenetismePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) La notion de prostitution"),
+            children: const [
+              _SubTitle("A) La notion de prostitution"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La Cour de cassation a défini la prostitution comme l’activité consistant, moyennant rémunération, "
                       "à se prêter à des contacts physiques (de quelque nature qu’ils soient) afin de satisfaire les besoins sexuels d’autrui ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 26 mars 1996)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le droit français n’incrimine pas la prostitution en elle-même, mais combat ceux qui la favorisent ou en tirent profit.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Les 3 situations visées par l’article 225-5"),
+              _SubTitle("B) Les 3 situations visées par l’article 225-5"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " retient trois comportements :"),
+                TextSpan(text: " retient trois comportements :"),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Aide, assistance ou protection de la prostitution d’autrui",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les notions d’aide et d’assistance sont proches de la complicité, mais elles doivent être visées ici car la prostitution n’est pas répréhensible : "
                 "il n’y a donc pas de « complicité de prostitution » possible.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La protection peut s’entendre comme une surveillance ou des interventions directes autour des lieux de prostitution. "
                 "L’aide/assistance/protection doivent correspondre à une participation active, réelle, matérielle et personnelle.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La jurisprudence exige un acte positif (la simple tolérance ou abstention ne suffit pas). "
                 "C’est un délit instantané : aucune habitude n’est requise.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudences : "),
+                  TextSpan(text: "Jurisprudences : "),
                   TextSpan(
                     text:
                         "conduire en voiture une femme sur les lieux de prostitution puis la ramener (C.A. Bordeaux, 18 nov. 1992 ; C.A. Aix-en-Provence, 25 mai 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
+                  TextSpan(text: ". "),
                   TextSpan(
                     text:
                         "Mettre son véhicule à disposition pour que l’autre s’y livre à la prostitution (Cass. crim., 12 oct. 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
+                  TextSpan(text: ". "),
                   TextSpan(
                     text:
                         "Publier des annonces racoleuses et laisser l’usage de lignes téléphoniques (C.A. Paris, 19 déc. 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Bénéficier de la prostitution d’autrui"),
-              const _Paragraph(
+              _SubTitle("2) Bénéficier de la prostitution d’autrui"),
+              _Paragraph(
                 "La loi vise largement : quiconque connaît la provenance des fonds peut être mis en cause (conjoint, concubin, personne ayant sous sa coupe plusieurs personnes, etc.), "
                 "à l’exception des enfants mineurs à charge de la personne se prostituant.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "C’est une infraction instantanée : un acte unique de profit/partage/acceptation de subsides suffit. "
                 "Le terme « habituellement » concerne la prostitution (et non l’auteur du proxénétisme).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("a) Tirer profit"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("a) Tirer profit"),
+              _Paragraph(
                 "Permet notamment d’incriminer une communauté de vie lorsque le train de vie est rendu possible par la prostitution de l’autre.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("b) Partager les produits"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("b) Partager les produits"),
+              _Paragraph(
                 "Les « produits » couvrent tous avantages pécuniaires et biens/prestations acquis grâce aux gains (loyer, vêtements, dons en nature, etc.). "
                 "Le proxénète doit savoir que ces avantages proviennent de la prostitution.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("c) Recevoir des subsides"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("c) Recevoir des subsides"),
+              _Paragraph(
                 "Suppose la remise d’argent (main à main, bancaire, postal). "
                 "Ici, la personne versant les subsides doit se livrer habituellement à la prostitution (à la différence du partage où une prostitution occasionnelle peut suffire).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) Incitation à la prostitution"),
+              _SubTitle("3) Incitation à la prostitution"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-5 3° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : incrimine le fait d’embaucher, d’entraîner ou de détourner une personne en vue de la prostitution, ou d’exercer des pressions pour qu’elle se prostitue ou continue.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le texte est très large : il n’exige ni habitude, ni profit, ni même que la personne se soit effectivement prostituée.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("a) Embaucher"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("a) Embaucher"),
+              _Paragraph(
                 "Engager une personne pour une activité qui la conduira à la prostitution. L’embauche suppose un accord ; à défaut, on se situe plutôt dans l’entraînement ou le détournement.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudence : "),
+                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
                     text:
                         "recruter par annonces des jeunes femmes pour des actes à caractère sexuel (massages « spéciaux ») (Cass. crim., 15 avril 1975)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("b) Entraîner"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("b) Entraîner"),
+              _Paragraph(
                 "Emmener une personne et la conduire dans un lieu déterminé pour qu’elle se livre à la prostitution : cela peut résulter d’une série d’actes (séduction) ou d’un acte unique brutal (enlèvement).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudence : "),
+                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
                     text:
                         "conduire une femme dans des foyers d’immigration en vue de la prostitution (C.A. Metz, 14 septembre 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("c) Détourner"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("c) Détourner"),
+              _Paragraph(
                 "Influencer psychologiquement une personne ayant une vie considérée comme normale, pour la convaincre de se prostituer.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("d) Exercer des pressions"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("d) Exercer des pressions"),
+              _Paragraph(
                 "Correspond aux menaces/pressions pour qu’une personne se prostitue ou continue.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudence : "),
+                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
                     text:
                         "séquestrer une femme pour la convaincre d’accepter la prostitution (Cass. crim., 22 janvier 1963)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -371,95 +371,95 @@ class ProxenetismePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Proxénétisme aggravé (délit) — article 225-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text: "Lorsqu’il est commis à l’égard d’un mineur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis à l’égard d’une personne vulnérable (âge, maladie, infirmité, déficience physique/psychique, grossesse), vulnérabilité apparente ou connue.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Lorsqu’il est commis à l’égard de plusieurs personnes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis à l’égard d’une personne incitée à se livrer à la prostitution hors du territoire ou à son arrivée sur le territoire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis par un ascendant ou une personne ayant autorité sur la personne se prostituant, ou abusant de l’autorité que lui confèrent ses fonctions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis par une personne participant, de par ses fonctions, à la lutte contre la prostitution, à la protection de la santé ou au maintien de l’ordre public.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis par une personne porteuse d’une arme.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis avec contrainte, violences ou manœuvres dolosives (agissements trompeurs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis par plusieurs auteurs/complices, sans constituer une bande organisée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsqu’il est commis via un réseau de communication électronique pour diffuser des messages à un public non déterminé.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Proxénétisme aggravé criminel — article 225-7-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’il est commis à l’égard d’un mineur de quinze ans.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque le proxénétisme aggravé (225-7) est commis en bande organisée.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’il est commis en recourant à des tortures ou des actes de barbarie.",
                 ),
@@ -475,208 +475,208 @@ class ProxenetismePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Simple (délit) : "),
-                const TextSpan(
+                TextSpan(text: "Simple (délit) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 225-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (1er degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (1er degré) : "),
+                TextSpan(
                   text:
                       "10 ans d’emprisonnement et 1 500 000 € d’amende (+ période de sûreté) — ",
                 ),
                 TextSpan(
                   text: "article 225-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (2e degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (2e degré) : "),
+                TextSpan(
                   text: "20 ans de réclusion et 3 000 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 225-7-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (3e degré) — bande organisée : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "20 ans de réclusion et 3 000 000 € d’amende (+ période de sûreté) — ",
                 ),
                 TextSpan(
                   text: "article 225-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (4e degré) — tortures/barbarie : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "réclusion criminelle à perpétuité et 4 500 000 € d’amende (+ période de sûreté) — ",
                 ),
                 TextSpan(
                   text: "article 225-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La loi française est applicable lorsque le proxénétisme à l’égard d’un mineur est commis à l’étranger par un Français ou une personne résidant habituellement en France — ",
                   ),
                   TextSpan(
                     text: "article 225-11-2 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 225-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ; amende selon "),
+                TextSpan(text: " ; amende selon "),
                 TextSpan(
                   text: "l’article 131-38 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " + peines prévues par "),
+                TextSpan(text: " + peines prévues par "),
                 TextSpan(
                   text: "l’article 131-39 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", ainsi que "),
+                TextSpan(text: ", ainsi que "),
                 TextSpan(
                   text: "les articles 225-24 et 225-25 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (confiscations, dissolution, interdictions professionnelles, etc.).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 225-11 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — "),
+                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle("Exemption & réduction de peine"),
               _Paragraph.rich([
-                const TextSpan(text: "Exemption de peine : OUI — "),
+                TextSpan(text: "Exemption de peine : OUI — "),
                 TextSpan(
                   text: "article 225-11-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (avertir l’autorité administrative ou judiciaire et permettre d’éviter la réalisation de l’infraction).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Réduction de peine : OUI — "),
+                TextSpan(text: "Réduction de peine : OUI — "),
                 TextSpan(
                   text: "article 225-11-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (peine réduite des deux tiers si l’auteur/complice avertit l’autorité et permet de faire cesser l’infraction, d’éviter la mort/infirmité permanente, "
                       "ou d’identifier les autres auteurs/complices ; si la peine encourue est la perpétuité, elle est ramenée à 20 ans).",
@@ -718,10 +718,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -786,7 +786,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -829,7 +829,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -891,7 +891,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -923,7 +923,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -936,7 +936,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

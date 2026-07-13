@@ -91,7 +91,7 @@ class QuizQuestion {
 
 final List<QuizQuestion> questionSTAD = [
   // ✅ À COLLER DANS questionSTAD (sans réécrire la liste) — SUITE ENORME
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Définition",
     question: "L’accès ou le maintien frauduleux dans un STAD consiste à :",
     options: [
@@ -105,7 +105,7 @@ final List<QuizQuestion> questionSTAD = [
         "Art. 323-1 CP : accès ou maintien frauduleux dans tout ou partie d’un STAD.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Texte",
     question: "L’infraction d’accès ou maintien frauduleux est prévue par :",
     options: [
@@ -118,7 +118,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : l’article 323-1 définit et réprime l’accès ou maintien frauduleux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Notion de système (piège)",
     question: "Un STAD peut être :",
     options: [
@@ -132,7 +132,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : ensemble de biens matériels/logiciels doté de mémoire et traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (radiotéléphone)",
     question:
         "Vrai/Faux : un radiotéléphone peut être considéré comme un STAD.",
@@ -142,7 +142,7 @@ final List<QuizQuestion> questionSTAD = [
         "Jurisprudence : le radiotéléphone a été jugé système (CA Paris, 18 nov. 1992).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (annuaire électronique)",
     question:
         "Vrai/Faux : l’annuaire électronique de France Télécom a été jugé STAD.",
@@ -152,7 +152,7 @@ final List<QuizQuestion> questionSTAD = [
         "Jurisprudence : annuaire électronique FT = système (Tr. corr. Brest, 14 mars 1995).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Réseau carte bleue (piège concours)",
     question: "Le réseau « carte bleue » est :",
     options: [
@@ -165,7 +165,7 @@ final List<QuizQuestion> questionSTAD = [
         "Jurisprudence : réseau carte bleue = STAD (TGI Paris, 25 fév. 2000).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Terminal de paiement (TPE) (piège)",
     question: "Le terminal de paiement est considéré :",
     options: [
@@ -179,7 +179,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : le TPE effectue un calcul de données, il est partie intégrante du STAD.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Maître du système",
     question: "Le « maître du système » est :",
     options: [
@@ -193,7 +193,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas forcément le concepteur ; c’est celui qui exploite et décide.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Condition centrale",
     question: "Les délits informatiques supposent :",
     options: [
@@ -210,7 +210,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-1 : ACCÈS FRAUDULEUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Sans droit",
     question: "L’accès devient pénalement répréhensible quand :",
     options: [
@@ -224,7 +224,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : sans droit = pas d’autorisation ou dépassement du mode d’accès autorisé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Définition technique",
     question: "L’accès peut être présenté comme :",
     options: [
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès = établir une communication, tous modes de pénétration irréguliers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Dépassement d’autorisation",
     question: "Est un accès frauduleux :",
     options: [
@@ -251,7 +251,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le texte vise « tout ou partie » : habilité pour une partie ≠ habilité pour tout.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Piège protection",
     question:
         "Vrai/Faux : il faut un dispositif de protection (mot de passe) pour que l’accès frauduleux existe.",
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionSTAD = [
         "CA Paris 05/04/1994 : pas nécessaire que l’accès soit limité par un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Code d’essai (jurisprudence)",
     question:
         "Vrai/Faux : utiliser pendant plus de 2 ans un code remis pour une période d’essai peut constituer 323-1.",
@@ -271,7 +271,7 @@ final List<QuizQuestion> questionSTAD = [
         "Cass. crim., 03 oct. 2007 : usage prolongé d’un code d’essai = accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Cheval de Troie",
     question:
         "L’insertion d’un « cheval de Troie » dans un système est un exemple de :",
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite l’insertion d’un cheval de Troie (Tr. corr. Limoges, 14 mars 1994).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Procédure imposée",
     question: "L’absence de droit peut résulter :",
     options: [
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès sans droit dès lors que le maître restreint et impose une procédure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Ancien salarié (piège)",
     question:
         "Un ancien salarié utilise après son départ des codes d’accès toujours valables pour accéder aux bases internes :",
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionSTAD = [
         "Jurisprudence : ex-salarié AFP utilisant des codes après départ = accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Téléphonie (piège concours)",
     question:
         "Un technicien crée un numéro d’appel réservé à l’installateur pour pénétrer dans un standard téléphonique et obtenir des communications illimitées :",
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-1 : MAINTIEN FRAUDULEUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Définition",
     question: "Le maintien frauduleux vise notamment :",
     options: [
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien utile quand accès initial peut être accidentel ou régulier puis dépassement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Inoffensif",
     question:
         "Vrai/Faux : un maintien « inoffensif » (simple promenade) est incriminable.",
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien inoffensif ou actif = incriminable si sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Délit continu",
     question: "Le maintien est :",
     options: [
@@ -365,7 +365,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien = délit continu, prescription court quand le maintien cesse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Minitel (jurisprudence)",
     question:
         "L’usage abusif à des fins ludiques d’un minitel mis à disposition pour le service peut relever :",
@@ -379,7 +379,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-1 : ÉLÉMENT MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -393,7 +393,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : conscience d’être contre la volonté du maître (CA Paris, 15 déc. 1999).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Accès par erreur (piège)",
     question:
         "Vrai/Faux : un accès purement par erreur (sans intention) n’est pas sanctionné.",
@@ -403,7 +403,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès par erreur, possible si système non protégé, n’est pas pénalement sanctionné.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Compétences du prévenu",
     question: "La vraisemblance de l’erreur est appréciée notamment selon :",
     options: [
@@ -416,7 +416,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : juges apprécient l’erreur/intention selon compétences informatiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Mobile indifférent",
     question:
         "Vrai/Faux : agir “par jeu” ou “pour prouver une faille” peut quand même être puni.",
@@ -426,7 +426,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : mobile indifférent (jeu, prouesse, démonstration de faiblesse).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — “rendre service” (jurisprudence)",
     question:
         "Un informaticien accède pour dénoncer la mauvaise protection des données :",
@@ -444,7 +444,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-1 : CIRCONSTANCES AGGRAVANTES + PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Peines simples",
     question: "Peines de base (323-1 al.1) :",
     options: ["3 ans + 100 000 €", "2 ans + 30 000 €", "5 ans + 150 000 €"],
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-1 al.1 = 3 ans d’emprisonnement + 100 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Aggravation al.2",
     question: "323-1 al.2 aggrave quand il résulte :",
     options: [
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionSTAD = [
         "Al.2 : suppression/modification données ou altération du fonctionnement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Peines al.2",
     question: "Peines 323-1 al.2 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -476,7 +476,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : al.2 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Aggravation al.3 (État)",
     question: "323-1 al.3 vise :",
     options: [
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : aggravation quand visé = STAD à caractère personnel mis en œuvre par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Peines al.3",
     question: "Peines 323-1 al.3 :",
     options: ["7 ans + 300 000 €", "5 ans + 150 000 €", "10 ans + 300 000 €"],
@@ -498,7 +498,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : al.3 = 7 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Bande organisée (323-4-1)",
     question: "Lorsque l’infraction est commise en bande organisée :",
     options: [
@@ -511,7 +511,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : bande organisée (323-4-1) = 10 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Risque mort / obstacle aux secours (323-4-2)",
     question: "323-4-2 s’applique si l’infraction :",
     options: [
@@ -529,7 +529,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // TENTATIVE / COMPLICITÉ (323-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Tentative",
     question: "La tentative d’accès/maintien frauduleux est :",
     options: [
@@ -542,7 +542,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : tentative spécialement prévue par 323-7 (commencement d’exécution + échec indépendant).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Conditions de la tentative",
     question: "Pour la tentative (323-7), il faut :",
     options: [
@@ -555,7 +555,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Règle générale rappelée par le cours + 323-7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Complicité",
     question: "La complicité en 323-1 est :",
     options: ["Oui (121-7)", "Non", "Seulement si mineur"],
@@ -568,7 +568,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-3 : INTRODUCTION / EXTRACTION / DÉTENTION / REPRODUCTION / TRANSMISSION / SUPPRESSION / MODIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Texte",
     question:
         "L’introduction/suppression/modification frauduleuse de données est prévue par :",
@@ -582,7 +582,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-3 définit et réprime les actions frauduleuses sur les données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Définition globale",
     question: "323-3 réprime notamment :",
     options: [
@@ -595,7 +595,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Liste complète de l’article 323-3 dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Système en cours (piège)",
     question:
         "Vrai/Faux : 323-3 peut s’appliquer même si le système est en cours d’élaboration.",
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : peu importe que le système soit finalisé ou en cours (Cass. crim., 05 janv. 1994).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Accès licite ou non (piège)",
     question:
         "Vrai/Faux : l’auteur doit forcément avoir un accès illicite au système pour tomber sous 323-3.",
@@ -615,7 +615,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : l’auteur peut avoir eu un accès licite ou non ; l’action frauduleuse sur les données suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Perturbation",
     question:
         "Vrai/Faux : il faut une perturbation apparente du fonctionnement pour 323-3.",
@@ -625,7 +625,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : peu importe l’absence de perturbation apparente ou immédiate.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Données hors système (piège)",
     question:
         "Manipuler des données sur une clé USB (hors du système) relève de 323-3 :",
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : action sur données sorties du système ≠ 323-3, sauf réintroduction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — “Sniffing”",
     question: "L’introduction d’un logiciel espion (sniffing) relève :",
     options: [
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : introduction d’un logiciel espion entre dans le champ (323-3).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Extraction (piège vol)",
     question: "L’extraction de données est réprimée car :",
     options: [
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : vol difficile car pas de soustraction ; 323-3 permet de réprimer la copie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Détention",
     question: "La détention de données (323-3) peut s’apparenter à :",
     options: [
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : la détention peut s’apparenter à un recel de données.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Suppression",
     question: "Supprimer des données peut consister à :",
     options: [
@@ -694,7 +694,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : suppression = atteinte à l’intégrité, ou déplacement hors/zone réservée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Modification",
     question: "Modifier des données signifie :",
     options: [
@@ -707,7 +707,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : modification = modification de l’information portée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Élément moral",
     question: "L’élément moral de 323-3 repose sur :",
     options: [
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : conscience + volonté, violation délibérée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Peines simples",
     question: "Peines de base de 323-3 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -729,7 +729,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-3 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Aggravation (État)",
     question: "323-3 al.2 aggrave lorsque :",
     options: [
@@ -743,7 +743,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : aggravation spéciale État pour STAD à caractère personnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Bande organisée",
     question: "Bande organisée (323-4-1) sur 323-3 :",
     options: ["7 ans + 300 000 €", "10 ans + 300 000 €", "5 ans + 150 000 €"],
@@ -752,7 +752,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau 323-3 : aggravation bande organisée = 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Risque mort (323-4-2)",
     question:
         "Si l’infraction expose autrui à un risque immédiat de mort (323-4-2) :",
@@ -762,7 +762,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-4-2 = 10 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Tentative",
     question: "Tentative pour 323-3 :",
     options: ["Oui (323-7)", "Non", "Seulement si l’auteur est professionnel"],
@@ -771,7 +771,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : tentative spécialement prévue et réprimée par 323-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Complicité",
     question: "Complicité pour 323-3 :",
     options: ["Oui (121-7)", "Non", "Seulement en bande organisée"],
@@ -784,7 +784,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-3-1 : OUTILS / PROGRAMMES / DONNÉES ADAPTÉS (SANS MOTIF LÉGITIME)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Texte",
     question:
         "Le fait d’importer/détenir/offrir/mettre à disposition des outils adaptés est prévu par :",
@@ -798,7 +798,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-3-1 définit et réprime la fourniture de moyens adaptés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Définition",
     question: "323-3-1 vise :",
     options: [
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le texte vise la fourniture de moyens adaptés, sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Actes visés",
     question: "Parmi ces actes, lequel est visé par 323-3-1 ?",
     options: [
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3-1 vise importation, détention, offre, cession, mise à disposition.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Motif légitime (piège)",
     question: "Un motif légitime peut être :",
     options: [
@@ -838,7 +838,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite recherche scientifique/technique et sécurisation des réseaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Appréciation",
     question: "La légitimité du motif est appréciée :",
     options: [
@@ -851,7 +851,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : notion imprécise, appréciation par les magistrats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Intention de nuire (piège)",
     question:
         "Vrai/Faux : 323-3-1 exige forcément la volonté directe de nuire.",
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas forcément volonté directe de nuire ; simple détention peut suffire sans intention de diffusion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Virus",
     question: "Le texte permet de sanctionner :",
     options: [
@@ -875,7 +875,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : incrimination utile même sans commission révélée des atteintes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Si infraction commise",
     question:
         "Si l’outil est utilisé et l’infraction 323-1 à 323-3 est réalisée, le détenteur peut être poursuivi :",
@@ -889,7 +889,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : sinon, poursuite en complicité si l’infraction est réalisée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Tentative",
     question: "Tentative pour 323-3-1 :",
     options: ["Oui (323-7)", "Non", "Seulement si bande organisée"],
@@ -898,7 +898,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : tentative spécialement prévue et réprimée par 323-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Peines (base alignée)",
     question: "Peines de base attendues (mécanisme répressif) :",
     options: [
@@ -916,7 +916,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // 323-4 : ASSOCIATION DE MALFAITEURS EN INFORMATIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Texte",
     question: "L’association de malfaiteurs en informatique est prévue par :",
     options: [
@@ -929,7 +929,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-4 définit et réprime l’association de malfaiteurs en informatique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Définition",
     question: "323-4 réprime :",
     options: [
@@ -943,7 +943,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le texte : groupement/entente + préparation caractérisée par faits matériels + infractions ciblées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Nombre de personnes (piège)",
     question: "Vrai/Faux : une entente à 2 personnes peut suffire.",
     options: ["Vrai", "Faux", "Minimum 3 personnes"],
@@ -952,7 +952,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : entente retenue pour deux personnes (Tr. corr. Limoges, 14 mars 1994).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — But initial",
     question:
         "Vrai/Faux : le groupement doit avoir été créé dès l’origine pour pirater.",
@@ -962,7 +962,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas nécessaire ; une association peut dériver vers délinquance, seuls participants conscients sont visés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Faits matériels (piège)",
     question: "La préparation doit être caractérisée par :",
     options: [
@@ -976,7 +976,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : échanges d’infos, communication de codes, moyens pour casser un code, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Infractions visées (piège)",
     question:
         "Parmi ces infractions, laquelle est incluse dans le champ 323-4 ?",
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : infractions visées = 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -1003,7 +1003,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : participation volontaire et connaissance que des infractions se préparent.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Association hackers (323-4) — Connaissance totale (piège concours)",
     question:
@@ -1014,7 +1014,7 @@ final List<QuizQuestion> questionSTAD = [
         "Jurisprudence : pas nécessaire que chaque membre soit au courant de tout (CA Aix, 02 juin 1993).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Répression (mécanisme)",
     question: "La peine de 323-4 correspond :",
     options: [
@@ -1028,7 +1028,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : mécanisme répressif = peine de l’infraction / plus sévère (pluralité).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Tentative",
     question: "Tentative pour 323-4 :",
     options: ["Non", "Oui (323-7)", "Oui mais seulement si mineur"],
@@ -1036,7 +1036,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le tableau : TENTATIVE : NON pour 323-4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Complicité",
     question: "Complicité pour 323-4 :",
     options: ["Oui (121-7)", "Non", "Seulement en bande organisée"],
@@ -1048,7 +1048,7 @@ final List<QuizQuestion> questionSTAD = [
   // =========================================================
   // QCM ULTRA-PIÈGES CONCOURS (mix 323-1 / 323-3 / 323-3-1 / 323-4)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Accès vs Données",
     question:
         "Une personne a un accès autorisé au logiciel, mais modifie frauduleusement des écritures comptables enregistrées définitivement :",
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès licite possible ; la modification frauduleuse de données suffit (Cass. crim., 08 déc. 1999).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Promenade",
     question:
         "Un étudiant se balade dans un système non protégé qu’il n’avait pas le droit d’utiliser, sans rien modifier :",
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien inoffensif = incriminable ; l’élément moral = conscience.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Mot de passe non requis",
     question:
         "Le système est ouvert sans mot de passe. Un individu y accède malgré l’interdiction affichée. Infraction possible :",
@@ -1090,7 +1090,7 @@ final List<QuizQuestion> questionSTAD = [
         "CA Paris 05/04/1994 : pas nécessaire de dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Outil + motif légitime",
     question:
         "Un chercheur conserve un programme conçu pour tester la robustesse d’un système dans un cadre de sécurité informatique :",
@@ -1104,7 +1104,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : absence de motif légitime est une condition ; sécurité/recherche peuvent être légitimes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Entente",
     question:
         "Deux personnes échangent des codes et méthodes pour casser un accès afin de préparer des intrusions 323-1 :",
@@ -1118,7 +1118,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : groupement/entente + faits matériels préparatoires = 323-4, même à deux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "L’accès ou le maintien frauduleux dans un STAD est réprimé par :",
@@ -1128,7 +1128,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-1 : accès ou maintien frauduleux dans tout ou partie d’un STAD.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "L’introduction / extraction / suppression / modification frauduleuse de données est réprimée par :",
@@ -1138,7 +1138,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3 : actions frauduleuses portant sur les données contenues dans le système.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "La détention/offre/cession/mise à disposition d’outils adaptés au piratage (sans motif légitime) est réprimée par :",
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3-1 : moyens conçus/spécialement adaptés pour commettre 323-1 à 323-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "L’association de malfaiteurs en informatique (entente/groupement) est réprimée par :",
@@ -1158,7 +1158,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-4 : participation à une entente/groupement préparant des infractions 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.1)",
     question: "Peines 323-1 al.1 (accès/maintien frauduleux simple) :",
     options: ["3 ans + 100 000 €", "5 ans + 150 000 €", "7 ans + 300 000 €"],
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-1 al.1 = 3 ans d’emprisonnement + 100 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.2)",
     question:
         "Peines 323-1 al.2 (si suppression/modification données OU altération fonctionnement) :",
@@ -1176,7 +1176,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Tableau : 323-1 al.2 = 5 ans + 150 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.3)",
     question:
         "Peines 323-1 al.3 (STAD à caractère personnel mis en œuvre par l’État) :",
@@ -1185,7 +1185,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Tableau : 323-1 al.3 = 7 ans + 300 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3)",
     question: "Peines 323-3 (actions frauduleuses sur les données) :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -1194,7 +1194,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-3 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-4-2)",
     question:
         "Lorsque l’infraction expose autrui à un risque immédiat de mort / obstacle aux secours (323-4-2), la peine peut aller à :",
@@ -1205,7 +1205,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Vrai/Faux ultra-piège",
     question: "Vrai/Faux : un STAD, c’est uniquement « un site internet ».",
     options: ["Vrai", "Faux", "Seulement s’il y a des données personnelles"],
@@ -1214,7 +1214,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : ensemble matériel + logiciel (machine, composants, programmes...).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Vrai/Faux (maître du système)",
     question: "Vrai/Faux : le maître du système est forcément son concepteur.",
     options: ["Vrai", "Faux", "Seulement si c’est une PME"],
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : le maître du système peut être celui qui a acquis le droit de l’exploiter.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux — Piège concours (sans droit)",
     question: "« Sans droit » (323-1) signifie notamment :",
     options: [
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas de droit d’accès OU pas le droit d’y accéder « de cette façon ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux — Piège affichage",
     question:
         "Un système ouvert sans mot de passe mais avec une restriction claire d’accès (réservé) :",
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionSTAD = [
         "CA Paris 05/04/1994 : pas nécessaire de dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux — Cas pratique",
     question:
         "Un salarié autorisé à consulter la base A utilise ses accès pour entrer dans la base B non autorisée :",
@@ -1265,7 +1265,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le texte vise « tout ou partie » : habilitation partielle ≠ habilitation totale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux — Piège erreur",
     question:
         "Un utilisateur se connecte par erreur sur un espace non protégé puis reste et explore malgré l’interdiction :",
@@ -1279,7 +1279,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien vise justement des accès initiaux réguliers/hasard suivis d’un maintien illicite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux — Délit continu",
     question:
         "Vrai/Faux : pour le maintien, la prescription court à partir de la fin du maintien.",
@@ -1290,7 +1290,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral (V/F)",
     question:
         "Vrai/Faux : 323-1 exige la conscience d’agir contre le gré du maître du système.",
@@ -1300,7 +1300,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : conscience d’accéder ou se maintenir sans droit (contre la volonté du maître).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Mobile (piège)",
     question:
         "Vrai/Faux : si l’auteur agit « pour prouver une faille », il n’y a pas d’infraction.",
@@ -1311,7 +1311,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Cas pratique (accès licite)",
     question:
         "Une personne a un accès licite mais supprime volontairement des données sans autorisation :",
@@ -1325,7 +1325,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-3 peut s’appliquer même si l’accès au système était licite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège vol)",
     question: "Extraire des données (copie) sans priver le propriétaire :",
     options: [
@@ -1339,7 +1339,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-3 permet de sanctionner la copie/extraction de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Détention (piège)",
     question:
         "La détention de données obtenues frauduleusement peut être vue comme :",
@@ -1353,7 +1353,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : détention peut s’apparenter à un recel de données extraites/reproduites/transmises.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Données hors système",
     question:
         "Manipuler des données sur un support externe (hors du système) :",
@@ -1369,7 +1369,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Définition (ultra-piège)",
     question: "323-3-1 sanctionne :",
     options: [
@@ -1383,7 +1383,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : importation/détention/offre/cession/mise à disposition, sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (V/F)",
     question:
         "Vrai/Faux : la recherche en sécurité informatique peut constituer un motif légitime.",
@@ -1393,7 +1393,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : motifs légitimes possibles = recherche + sécurisation des SI/réseaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Intention de nuire (V/F)",
     question: "Vrai/Faux : 323-3-1 exige une intention directe de nuire.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -1403,7 +1403,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Définition (ultra-piège)",
     question: "L’association de malfaiteurs en informatique suppose :",
     options: [
@@ -1417,7 +1417,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : préparation en amont, matérialisée par des actes (échanges codes, méthodes, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Piège effectif",
     question:
         "Vrai/Faux : on peut être poursuivi 323-4 même si aucun piratage n’a finalement eu lieu.",
@@ -1427,7 +1427,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-4 vise la préparation caractérisée par faits matériels, en amont.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Piège connaissance totale",
     question:
         "Vrai/Faux : chaque membre doit connaître toutes les activités de l’entente pour être condamné.",
@@ -1438,7 +1438,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-1)",
     question:
         "Un ex-salarié conserve des identifiants et continue d’accéder à des bases internes après son départ :",
@@ -1452,7 +1452,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite un cas type : accès via codes après départ = accès frauduleux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-3)",
     question:
         "Un employé copie des fichiers internes (sans suppression) et les transmet à un tiers :",
@@ -1466,7 +1466,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3 vise extraction, reproduction et transmission frauduleuse de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-3-1)",
     question:
         "Une personne vend un programme conçu spécialement pour casser des accès, sans motif légitime :",
@@ -1476,7 +1476,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3-1 vise l’offre/cession/mise à disposition d’outils adaptés, sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-4)",
     question:
         "Deux personnes échangent des codes et scripts pour préparer des intrusions futures :",
@@ -1487,7 +1487,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Accès vs Maintien",
     question:
         "Le maintien frauduleux est particulièrement utile pour réprimer :",
@@ -1502,7 +1502,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien vise les situations où l’accès initial ne suffit pas à lui seul.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Preuve de l’intention",
     question:
         "La présence d’un dispositif de protection (mot de passe) est surtout utile pour :",
@@ -1518,7 +1518,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative d’accès/maintien frauduleux est punissable (323-7).",
@@ -1527,7 +1527,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : tentative spécialement prévue par 323-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 323-3 est punissable (323-7).",
     options: ["Vrai", "Faux", "Seulement si bande organisée"],
@@ -1536,7 +1536,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : tentative prévue par 323-7 pour les délits du chapitre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Complicité (V/F)",
     question:
         "Vrai/Faux : la complicité est possible pour 323-1 via 121-7 (aide/assistance, provocation, instructions).",
@@ -1545,7 +1545,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : complicité applicable conformément à 121-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Complicité (V/F)",
     question: "Vrai/Faux : la complicité est possible pour 323-3 via 121-7.",
     options: ["Vrai", "Faux", "Jamais"],
@@ -1555,7 +1555,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (piège)",
     question:
         "Vrai/Faux : un radiotéléphone a déjà été jugé comme étant un STAD.",
@@ -1565,7 +1565,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite : radiotéléphone = système (CA Paris, 18/11/1992).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (piège)",
     question:
         "Vrai/Faux : l’annuaire électronique de France Télécom a déjà été jugé comme étant un STAD.",
@@ -1576,7 +1576,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — « Tout ou partie »",
     question: "La mention « tout ou partie du système » permet :",
     options: [
@@ -1590,7 +1590,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : vise aussi la zone unique + l’habilité partiel qui dépasse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Données vs support externe",
     question: "Quel énoncé est correct ?",
     options: [
@@ -1605,7 +1605,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique concours — Qualification + peine",
     question:
         "Un individu accède sans droit à un STAD et modifie des données (323-1 al.2) : peine encourue ?",
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-1 al.2 : suppression/modification données ou altération fonctionnement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique concours — Qualification + peine",
     question:
         "Accès frauduleux contre un STAD à caractère personnel mis en œuvre par l’État : peine ?",
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-1 al.3 : aggravation spéciale État (données personnelles).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique concours — Qualification + peine",
     question: "Introduction frauduleuse de données (323-3) : peine de base ?",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -1634,7 +1634,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Sniffing",
     question:
         "Un logiciel espion introduit dans un système pour capter des infos (sniffing) correspond à :",
@@ -1648,7 +1648,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : introduction d’un logiciel espion entre dans 323-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Cracking",
     question:
         "Dans le cours, la forme de piratage appelée « cracking » renvoie surtout à :",
@@ -1664,7 +1664,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Pacte inutile",
     question:
         "Vrai/Faux : Pour 323-1, il faut obligatoirement un dommage pour que l’infraction existe.",
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-1 al.1 existe sans dommage ; le dommage est une aggravation (al.2/3).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Promenade",
     question:
         "Vrai/Faux : un maintien « inoffensif » peut être réprimé s’il est sans droit.",
@@ -1684,7 +1684,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Erreur vs compétence",
     question: "Un accès « par erreur » est apprécié notamment au regard :",
     options: [
@@ -1697,7 +1697,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : vraisemblance de l’erreur/intention appréciée selon compétences.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Sans droit (source)",
     question: "L’absence de droit d’accès peut résulter :",
     options: [
@@ -1712,7 +1712,7 @@ final List<QuizQuestion> questionSTAD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On copie des données internes, on les garde chez soi (sans diffusion). Qualification la plus directe :",
@@ -1726,7 +1726,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3 vise extraction, détention, reproduction de données obtenues frauduleusement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On ne touche pas aux données, mais on reste connecté sans droit pour « explorer » :",
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le maintien sans droit est incriminé même « inoffensif » (simple promenade).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On met à disposition un outil adapté au piratage, sans motif légitime, mais aucun piratage n’a encore eu lieu :",
@@ -1746,7 +1746,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3-1 sanctionne la simple fourniture/détention/offre d’outils adaptés, sans besoin d’infraction consommée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On s’organise à plusieurs, échanges de codes + méthodes, préparation matérialisée, sans passage à l’acte :",
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-4 : entente/groupement + préparation caractérisée par faits matériels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3 aggravé État)",
     question:
         "Peines pour 323-3 lorsqu’il est commis contre un STAD à caractère personnel mis en œuvre par l’État :",
@@ -1766,7 +1766,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : aggravation « État / caractère personnel » = 7 ans + 300 000 € (tableau).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3 bande organisée)",
     question:
         "Peines (max) quand l’infraction est commise en bande organisée :",
@@ -1776,7 +1776,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours mentionne l’aggravation bande organisée (323-4-1) : 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative (323-7)",
     question: "La tentative des infractions du chapitre STAD est prévue par :",
     options: ["323-7 CP", "323-6 CP", "323-4 CP"],
@@ -1789,7 +1789,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // STAD — DÉFINITION / NOTIONS (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Définition (piège concours)",
     question: "Un STAD peut être défini comme :",
     options: [
@@ -1803,7 +1803,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : ensemble de biens matériels et logiciels, mémoire + traitement, restitution des résultats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Inclusion (V/F)",
     question:
         "Vrai/Faux : un STAD inclut aussi les programmes/logiciels assurant son fonctionnement.",
@@ -1813,7 +1813,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : le système = machine + composants + programmes/logiciels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — « Maître du système » (piège)",
     question: "Le « maître du système » est :",
     options: [
@@ -1827,7 +1827,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas forcément concepteur ; c’est celui qui exploite et décide de l’usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Volonté du maître (V/F)",
     question:
         "Vrai/Faux : les délits STAD reposent sur le non-respect de la volonté du maître du système.",
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // 323-1 — ACCÈS FRAUDULEUX (QCM PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (définition)",
     question: "L’accès (323-1) peut être compris comme :",
     options: [
@@ -1854,7 +1854,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès = établissement d’une communication ; modes techniques indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Protection (ultra piège)",
     question:
         "Vrai/Faux : si un système n’a aucun mot de passe, l’accès frauduleux est impossible à retenir.",
@@ -1864,7 +1864,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas nécessaire que l’accès soit limité par un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Dépassement d’autorisation",
     question:
         "Une personne a un droit d’accès limité, mais « force » une zone restreinte. Qualification :",
@@ -1878,7 +1878,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : « tout ou partie » + accès sans droit = dépassement d’habilitation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès par personne interposée (piège)",
     question:
         "Vrai/Faux : utiliser l’identifiant d’un tiers (même obtenu « gentiment ») peut caractériser un accès sans droit.",
@@ -1888,7 +1888,7 @@ final List<QuizQuestion> questionSTAD = [
         "L’accès sans droit vise aussi se faire passer pour une personne autorisée / forcer les codes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès « payant » (piège)",
     question:
         "Si le maître du système subordonne l’accès au paiement d’un prix :",
@@ -1906,7 +1906,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // 323-1 — MAINTIEN FRAUDULEUX (QCM PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (définition)",
     question: "Le maintien frauduleux vise notamment les situations où :",
     options: [
@@ -1920,7 +1920,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien utile pour les accès de hasard, erreur, ou procédures régulières suivies d’opérations illicites.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien inoffensif (V/F)",
     question:
         "Vrai/Faux : un maintien « promenade » sans dommage peut être sanctionné.",
@@ -1929,7 +1929,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : maintien inoffensif ou actif est incriminable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Délit continu (piège)",
     question: "Le maintien est qualifié de délit continu car :",
     options: [
@@ -1946,7 +1946,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // 323-1 — CIRCONSTANCES AGGRAVANTES (QCM CONCOURS)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (al.2)",
     question: "L’aggravation 323-1 al.2 est retenue lorsqu’il en est résulté :",
     options: [
@@ -1960,7 +1960,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : aggravation si suppression/modification données ou altération fonctionnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (al.3) (piège)",
     question: "L’aggravation 323-1 al.3 vise les atteintes contre :",
     options: [
@@ -1972,7 +1972,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : aggravation spéciale État + caractère personnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-1 — Bande organisée (V/F)",
     question:
         "Vrai/Faux : la bande organisée est une circonstance aggravante autonome des infractions STAD.",
@@ -1982,7 +1982,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-4-1 prévoit l’aggravation lorsque l’infraction est commise en bande organisée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Risque immédiat (piège)",
     question: "323-4-2 vise notamment les situations où l’infraction :",
     options: [
@@ -2000,7 +2000,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // 323-3 — ACTIONS SUR LES DONNÉES (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Portée (piège)",
     question:
         "Vrai/Faux : pour 323-3, il faut un trouble visible du fonctionnement du système.",
@@ -2010,7 +2010,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : l’action peut être sanctionnée même sans perturbation apparente/immediate.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Introduction",
     question: "L’introduction de données correspond à :",
     options: [
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : introduction = insertion de données nouvelles dans le système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège)",
     question: "L’extraction de données permet de réprimer :",
     options: [
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : protège les données même sans dépossession → vol difficilement applicable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Reproduction",
     question: "La reproduction de données vise :",
     options: [
@@ -2051,7 +2051,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : reproduction = copie sur n’importe quel support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Transmission",
     question: "La transmission de données vise :",
     options: [
@@ -2064,7 +2064,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : transmission = diffusion à un tiers quel que soit le moyen.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Suppression (piège)",
     question: "Supprimer des données peut consister :",
     options: [
@@ -2078,7 +2078,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : suppression = effacement mais aussi déplacement hors zone accessible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Modification (piège)",
     question: "Modifier des données signifie :",
     options: [
@@ -2092,7 +2092,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : modification = modification de l’information qu’elles portent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Accès licite (ultra piège)",
     question:
         "Vrai/Faux : l’auteur doit forcément avoir un accès frauduleux au système pour être poursuivi 323-3.",
@@ -2102,7 +2102,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : l’auteur peut avoir eu un accès licite ou non ; l’action frauduleuse porte sur les données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Données hors système (cas)",
     question:
         "Une personne modifie des données sur une clé USB puis ne les réintroduit jamais dans le système :",
@@ -2121,7 +2121,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // 323-3-1 — OUTILS / DONNÉES ADAPTÉS (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Actes visés",
     question: "323-3-1 vise notamment :",
     options: [
@@ -2133,7 +2133,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : liste des comportements sanctionnés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Objet visé",
     question: "323-3-1 vise :",
     options: [
@@ -2147,7 +2147,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : formulation large (outils + données) adaptés pour commettre 323-1 à 323-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Lien avec infraction consommée (piège)",
     question:
         "Vrai/Faux : 323-3-1 exige que l’infraction STAD (323-1 à 323-3) ait déjà été commise.",
@@ -2157,7 +2157,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : incrimination peut sanctionner la simple détention/mise à disposition sans infraction commise révélée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (piège concours)",
     question: "Le « motif légitime » peut inclure :",
     options: [
@@ -2171,7 +2171,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite : recherche scientifique/technique + sécurisation des SI/réseaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Appréciation (piège)",
     question: "La légitimité du motif est :",
     options: [
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // 323-4 — ASSOCIATION DE MALFAITEURS INFORMATIQUE (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Groupement/entente (piège)",
     question:
         "Vrai/Faux : l’entente peut être retenue même si le groupement ne comporte que deux personnes.",
@@ -2198,7 +2198,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : entente retenue pour deux personnes (exemple jurisprudentiel cité).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Objet (piège)",
     question: "Les infractions préparées visées par 323-4 peuvent être :",
     options: ["323-1 à 323-3-1", "Uniquement 323-1", "Uniquement 323-3"],
@@ -2206,7 +2206,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : infractions visées = 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Faits matériels (piège concours)",
     question:
         "Les « faits matériels » caractérisant la préparation peuvent être :",
@@ -2221,7 +2221,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : exemples d’actes préparatoires matérialisant la préparation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Élément moral (V/F)",
     question:
         "Vrai/Faux : il faut une participation volontaire et la conscience que l’entente prépare des atteintes STAD.",
@@ -2235,7 +2235,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // MINI-CAS PRATIQUES — QUALIFICATION + ARTICLE + PEINE (CONCOURS)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Un individu s’introduit dans un STAD sans droit, sans rien modifier. Qualification + peine ?",
@@ -2249,7 +2249,7 @@ final List<QuizQuestion> questionSTAD = [
         "Accès frauduleux simple sans altération/suppression/modification : 323-1 al.1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Après accès sans droit, l’auteur altère le fonctionnement du système. Qualification + peine ?",
@@ -2263,7 +2263,7 @@ final List<QuizQuestion> questionSTAD = [
         "Aggravation al.2 si altération du fonctionnement ou modification/suppression de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Accès frauduleux à un STAD de l’État contenant des données personnelles. Qualification + peine ?",
@@ -2277,7 +2277,7 @@ final List<QuizQuestion> questionSTAD = [
         "Aggravation spéciale : STAD à caractère personnel mis en œuvre par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Un salarié efface des données du système auquel il a accès, sans autorisation. Qualification + peine ?",
@@ -2291,7 +2291,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3 : suppression frauduleuse de données, même si l’accès initial était licite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Un individu copie des données (extraction) puis les transmet à un tiers. Qualification + peine de base ?",
@@ -2305,7 +2305,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3 vise extraction et transmission frauduleuse de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Une personne met en vente un outil conçu pour commettre 323-1 à 323-3, sans motif légitime. Qualification + peine de base ?",
@@ -2320,7 +2320,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-3-1 est puni selon les peines prévues pour l’infraction elle-même / la plus sévèrement réprimée (mêmes mécanismes d’aggravation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Deux personnes s’entendent, échangent codes et méthodes pour préparer des intrusions. Qualification ?",
@@ -2334,7 +2334,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================
   // VRAI/FAUX — FLASH (MODE RÉVISIONS)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’accès peut être réprimé même si la personne n’a pas « forcé » un mot de passe.",
@@ -2344,7 +2344,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas nécessaire de dispositif de protection ; ce qui compte = sans droit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : le maintien est incriminable même s’il est « sans préjudice ».",
@@ -2354,7 +2354,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien inoffensif (« promenade ») = incriminable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3",
     question:
         "Vrai/Faux : 323-3 peut viser la simple copie (extraction) sans suppression.",
@@ -2364,7 +2364,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : extraction protège les données même si elles restent disponibles au propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3-1",
     question:
         "Vrai/Faux : la simple détention d’un outil adapté peut suffire (sans intention de nuire).",
@@ -2374,7 +2374,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas forcément volonté directe de nuire ; détention réprimée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-4",
     question:
         "Vrai/Faux : 323-4 exige que l’infraction finale (piratage) soit commise.",
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : vise la préparation caractérisée par faits matériels, en amont.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 simple)",
     question:
         "Peine encourue pour l’accès/maintien frauduleux simple (323-1 al.1) :",
@@ -2394,7 +2394,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-1 al.1 = 3 ans d’emprisonnement + 100 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.2)",
     question:
         "Peine encourue si suppression/modification de données OU altération du fonctionnement (323-1 al.2) :",
@@ -2403,7 +2403,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Tableau : aggravation 323-1 al.2 = 5 ans + 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.3)",
     question:
         "Peine encourue si STAD à caractère personnel mis en œuvre par l’État (323-1 al.3) :",
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Tableau : 323-1 al.3 = 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3)",
     question:
         "Peine de base pour introduction/extraction/détention/reproduction/transmission/suppression/modification frauduleuse (323-3) :",
@@ -2422,7 +2422,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-3 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative d’accès/maintien frauduleux est punissable.",
@@ -2435,7 +2435,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-1 — ACCÈS / MAINTIEN (QCM ULTRA-PIÈGES CONCOURS)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « sans droit »)",
     question: "L’accès est « sans droit » notamment lorsque :",
     options: [
@@ -2449,7 +2449,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : sans droit = contre la volonté du maître, même sans protection technique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « ancien salarié »)",
     question:
         "Un ancien salarié conserve des identifiants et se connecte après son départ :",
@@ -2463,7 +2463,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite l’hypothèse : usage de codes après départ = accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « période d’essai »)",
     question:
         "Utiliser un code remis pour une période d’essai, pendant 2 ans :",
@@ -2477,7 +2477,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : dépasser la période/autorisation = accès sans droit (exemple jurisprudentiel).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « tout ou partie »)",
     question: "323-1 réprime l’accès frauduleux :",
     options: [
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : formulation « tout ou partie » → zone unique ou sous-partie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège « hasard »)",
     question: "Le maintien vise en particulier :",
     options: [
@@ -2503,7 +2503,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : maintien utile pour accès par erreur/inadvertance puis maintien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège prescription)",
     question: "Pourquoi parle-t-on de délit continu pour le maintien ?",
     options: [
@@ -2515,7 +2515,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : prescription à compter de la fin du maintien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral (piège concours)",
     question: "L’élément moral de 323-1 exige :",
     options: [
@@ -2529,7 +2529,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : conscience du caractère non autorisé ; mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Mobile (V/F)",
     question:
         "Vrai/Faux : agir « par jeu » exclut l’infraction d’accès frauduleux.",
@@ -2539,7 +2539,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : le mobile est indifférent (jeu, prouesse, démonstration).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès par erreur (piège)",
     question: "L’accès par erreur :",
     options: [
@@ -2553,7 +2553,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès par erreur (système non protégé) non sanctionné ; appréciation selon compétences.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Compétences du prévenu (piège)",
     question:
         "Pour distinguer erreur vs intrusion volontaire, les juges apprécient notamment :",
@@ -2571,7 +2571,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-1 — AGGRAVATIONS (QCM ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (nature)",
     question: "323-1 al.2 vise :",
     options: [
@@ -2584,7 +2584,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Aggravation au résultat (données/fonctionnement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation État (ultra piège)",
     question: "Pour 323-1 al.3, il faut :",
     options: [
@@ -2596,7 +2596,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Aggravation spéciale (État + caractère personnel).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Secours (piège concours)",
     question: "323-4-2 peut être retenu si l’infraction :",
     options: [
@@ -2613,7 +2613,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-3 — DONNÉES (INTRODUCTION / EXTRACTION / DETENTION…)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Champ (piège « système en cours »)",
     question:
         "Vrai/Faux : 323-3 peut s’appliquer même si le système est en cours d’élaboration.",
@@ -2623,7 +2623,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : peu importe que le système soit finalisé ou en cours d’élaboration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Accès licite (V/F)",
     question: "Vrai/Faux : 323-3 exige un accès frauduleux préalable (323-1).",
     options: ["Vrai", "Faux", "Seulement si extraction"],
@@ -2631,7 +2631,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : l’auteur peut avoir eu un accès licite ou non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — « cracking » (culture concours)",
     question:
         "Dans le cours, l’action sur les données (323-3) est souvent appelée :",
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : cette forme de piratage est souvent appelée « cracking ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Logiciel espion (piège)",
     question: "L’introduction d’un logiciel espion dans un système relève :",
     options: [
@@ -2654,7 +2654,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : insertion logiciel espion (« sniffing ») entre dans 323-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège vol)",
     question: "L’extraction vise à sanctionner :",
     options: [
@@ -2668,7 +2668,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : extraction protège les données même si elles restent dispo au propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Détention (piège recel)",
     question: "La détention de données (323-3) peut s’apparenter à :",
     options: [
@@ -2682,7 +2682,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : détention = proche d’un recel de données issues d’actions frauduleuses.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Transmission (piège « support »)",
     question: "Transmission (323-3) :",
     options: [
@@ -2695,7 +2695,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : transmission = toute diffusion, moyen indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Modification vs introduction (piège)",
     question:
         "Pourquoi le cours dit qu’il est difficile de séparer modification/introduction/suppression ?",
@@ -2710,7 +2710,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : modifier implique souvent ajout/retrait/déplacement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Élément moral",
     question: "L’élément moral de 323-3 repose sur :",
     options: [
@@ -2728,7 +2728,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-3 — AGGRAVATIONS (ÉTAT / BANDE / 323-4-2)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Aggravation État (peine)",
     question:
         "323-3 commis contre un STAD à caractère personnel mis en œuvre par l’État :",
@@ -2737,7 +2737,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Tableau : aggravation État = 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Peine maximale (piège tableau)",
     question: "Quand 323-4-2 est retenu, la peine peut aller jusqu’à :",
     options: ["10 ans + 300 000 €", "7 ans + 300 000 €", "5 ans + 150 000 €"],
@@ -2749,7 +2749,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-3-1 — OUTILS / PROGRAMMES (ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Définition",
     question: "323-3-1 réprime le fait (sans motif légitime) :",
     options: [
@@ -2763,7 +2763,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : incrimine la fourniture/possession de moyens conçus/adaptés pour 323-1 à 323-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (V/F)",
     question:
         "Vrai/Faux : la recherche en sécurité informatique peut constituer un motif légitime.",
@@ -2773,7 +2773,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite explicitement recherche/sécurité informatique parmi les motifs possibles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Absence d’intention (piège)",
     question:
         "Vrai/Faux : l’absence d’intention de diffuser un virus exclut 323-3-1.",
@@ -2783,7 +2783,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : la simple détention peut suffire, même sans volonté directe de nuire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Complicité (cas)",
     question:
         "Si l’outil est fourni et qu’une attaque est ensuite commise, le fournisseur peut être :",
@@ -2801,7 +2801,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-4 — ASSOCIATION DE MALFAITEURS (ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Définition",
     question: "323-4 réprime :",
     options: [
@@ -2815,7 +2815,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : préparation caractérisée par faits matériels + infractions visées 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Faits matériels (piège)",
     question: "Quel exemple illustre un « fait matériel » de préparation ?",
     options: [
@@ -2828,7 +2828,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : échanges d’informations sur modes opératoires (codes, casser code…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Connaissance partielle (piège concours)",
     question:
         "Vrai/Faux : chaque membre doit connaître toutes les activités des autres membres.",
@@ -2842,7 +2842,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // MINI CAS — QUALIFICATION + ARTICLE + PEINE (PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Un agent « se promène » dans un système après avoir atterri dessus par erreur, mais reste et explore volontairement. Qualification la plus juste ?",
@@ -2856,7 +2856,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le maintien réprime les accès initiaux accidentels suivis d’un maintien volontaire sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Une personne copie des données (extraction) sans toucher au fonctionnement, puis les conserve chez elle. Qualification + peine de base ?",
@@ -2869,7 +2869,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "323-3 vise extraction et détention frauduleuses de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Un technicien installe un « cheval de Troie » pour pouvoir revenir plus tard. Qualification principale ?",
@@ -2883,7 +2883,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite l’insertion d’un cheval de Troie et 323-3 vise l’introduction ; 323-1 vise l’accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Une intrusion empêche les secours d’être déclenchés pendant un sinistre. Peine maximale évoquée au cours ?",
@@ -2897,7 +2897,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // FLASH V/F — TRÈS PIÈGE (RÉVISIONS)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — STAD",
     question: "Vrai/Faux : un radiotéléphone a déjà été jugé comme un STAD.",
     options: ["Vrai", "Faux", "Seulement si connecté à Internet"],
@@ -2905,7 +2905,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours cite : radiotéléphone = système (jurisprudence).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — STAD",
     question: "Vrai/Faux : un annuaire électronique peut constituer un STAD.",
     options: ["Vrai", "Faux", "Uniquement un site web moderne"],
@@ -2914,7 +2914,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite : annuaire électronique France Télécom = système.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’infraction nécessite forcément un dispositif de protection (mot de passe).",
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas nécessaire qu’il y ait un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’accès sans droit peut résulter du non-respect d’une procédure (code/paiement).",
@@ -2934,7 +2934,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : absence de droit = non-respect procédure imposée par le maître du système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3",
     question:
         "Vrai/Faux : la manipulation de données sur support externe (clé USB) tombe automatiquement sous 323-3.",
@@ -2944,7 +2944,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : action sur données sorties du système pas visée, sauf réintroduction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Définition",
     question: "L’infraction 323-1 CP consiste à :",
     options: [
@@ -2958,7 +2958,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-1 CP : accès ou maintien frauduleux dans un système de traitement automatisé de données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Texte",
     question:
         "Le texte qui réprime l’accès/maintien frauduleux dans un STAD est :",
@@ -2972,7 +2972,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-1 définit et réprime l’accès ou le maintien dans un STAD.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Objet (piège)",
     question: "323-1 protège principalement :",
     options: [
@@ -2985,7 +2985,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : les délits supposent le non-respect de la volonté du maître du système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — STAD (définition concours)",
     question: "Un STAD peut être décrit comme :",
     options: [
@@ -2999,7 +2999,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : ensemble de biens matériels et logiciels + mémoire + traitement + restitution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — STAD (piège composantes)",
     question: "Dans la notion de STAD, on inclut :",
     options: [
@@ -3012,7 +3012,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : le système peut être la machine, ses composants et les logiciels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Jurisprudence (V/F)",
     question:
         "Vrai/Faux : un terminal de paiement peut être une partie intégrante d’un STAD.",
@@ -3022,7 +3022,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : terminal de paiement fait partie du système carte bleue car il traite des données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (notion)",
     question: "Dans le cours, l’accès à un STAD correspond surtout à :",
     options: [
@@ -3035,7 +3035,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès = communication avec le système (mode technique indifférent).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège protection)",
     question:
         "Pour caractériser 323-1, faut-il un mot de passe ou une protection technique ?",
@@ -3049,7 +3049,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas nécessaire que l’accès soit limité par un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège dépassement autorisation)",
     question:
         "La personne est autorisée à accéder à une zone A mais force l’accès à une zone B :",
@@ -3063,7 +3063,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : « tout ou partie » → même habilité sur une partie, accès non autorisé sur une autre = 323-1.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège « promenade »)",
     question: "Le maintien « inoffensif » (simple promenade) :",
     options: [
@@ -3075,7 +3075,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : maintien inoffensif ou actif est incriminable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège délit continu)",
     question: "Le maintien frauduleux est qualifié de délit continu car :",
     options: [
@@ -3088,7 +3088,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : délit continu → prescription à la fin du maintien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral (piège erreur)",
     question: "L’accès par erreur :",
     options: [
@@ -3101,7 +3101,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : accès par erreur non sanctionné ; l’appréciation dépend notamment des compétences.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral",
     question: "L’élément moral de 323-1 exige :",
     options: [
@@ -3115,7 +3115,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : conscience d’agir sans droit ; mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Mobile (V/F)",
     question:
         "Vrai/Faux : agir pour « démontrer une faille » supprime l’infraction 323-1.",
@@ -3129,7 +3129,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-1 — AGGRAVATIONS & PEINES (ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (résultat)",
     question: "323-1 al.2 est caractérisé si :",
     options: [
@@ -3142,7 +3142,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Aggravation au résultat (données/fonctionnement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Peine (al.2)",
     question: "Peine encourue pour 323-1 al.2 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -3151,7 +3151,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-1 al.2 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation État (piège)",
     question: "323-1 al.3 suppose :",
     options: [
@@ -3164,7 +3164,7 @@ final List<QuizQuestion> questionSTAD = [
         "Aggravation spéciale : caractère personnel + mis en œuvre par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Peine (al.3)",
     question: "Peine encourue pour 323-1 al.3 :",
     options: ["7 ans + 300 000 €", "5 ans + 150 000 €", "10 ans + 300 000 €"],
@@ -3173,7 +3173,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-1 al.3 = 7 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-1 — Bande organisée (piège)",
     question:
         "Lorsque l’infraction est commise en bande organisée (323-4-1), la peine peut aller jusqu’à :",
@@ -3183,7 +3183,7 @@ final List<QuizQuestion> questionSTAD = [
         "Tableau : 323-4-1 = 10 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Risque personnes (piège)",
     question: "323-4-2 vise notamment :",
     options: [
@@ -3196,7 +3196,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : risque immédiat + mutilation/infirmité permanente ou obstacle aux secours / sinistre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Peine (max)",
     question: "Peine maximale en cas de 323-4-2 :",
     options: ["10 ans + 300 000 €", "7 ans + 300 000 €", "3 ans + 100 000 €"],
@@ -3209,7 +3209,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-3 — DONNÉES (INTRO/EXTRACTION/DETENTION/REPRO/TRANSMISSION…)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Définition",
     question: "323-3 réprime notamment :",
     options: [
@@ -3223,7 +3223,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : 323-3 vise toutes les actions frauduleuses sur les données du système.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Accès licite (piège)",
     question:
         "Pour 323-3, l’auteur doit-il avoir accédé frauduleusement au système ?",
@@ -3237,7 +3237,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : l’auteur peut avoir eu un accès licite ou non au système.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège concours)",
     question: "L’extraction réprime notamment :",
     options: [
@@ -3250,7 +3250,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : extraction protège les données même si elles restent chez le propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Détention (piège)",
     question: "La détention de données au sens de 323-3 peut ressembler à :",
     options: [
@@ -3263,7 +3263,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : détention = proche d’un recel de données extraites/reproduites/transmises frauduleusement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Reproduction",
     question: "La reproduction (323-3) vise :",
     options: [
@@ -3276,7 +3276,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : reproduction = copie, support indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Transmission",
     question: "La transmission (323-3) correspond à :",
     options: [
@@ -3289,7 +3289,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : transmission = diffusion à un tiers, quel qu’en soit moyen ou support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Suppression",
     question: "Supprimer des données peut notamment consister à :",
     options: [
@@ -3303,7 +3303,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : suppression = atteinte physique (écrasement) ou déplacement hors/zone réservée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Action hors système (piège)",
     question: "Action sur des données sorties du système (clé USB) :",
     options: [
@@ -3316,7 +3316,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : manipulation de données sur support externe hors champ, sauf si réintroduites.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Élément moral",
     question: "L’élément moral de 323-3 repose sur :",
     options: [
@@ -3330,7 +3330,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : l’auteur sait que ce n’est pas autorisé et veut cependant le résultat.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Peine (base)",
     question: "Peine de base de 323-3 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -3343,7 +3343,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-3-1 — OUTILS / PROGRAMMES (MOYENS ADAPTÉS) — ULTRA PIÈGES
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Définition",
     question: "323-3-1 vise (sans motif légitime) :",
     options: [
@@ -3357,7 +3357,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : incrimine la fourniture/possession d’outils/données adaptés pour commettre les atteintes STAD.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Actes visés (piège)",
     question: "Les actes visés incluent :",
     options: [
@@ -3369,7 +3369,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours liste exactement ces 5 comportements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (piège)",
     question: "Un motif légitime peut être :",
     options: [
@@ -3382,7 +3382,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : recherche scientifique/technique et sécurisation peuvent constituer un motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Élément moral (piège concours)",
     question: "323-3-1 exige forcément une intention directe de nuire :",
     options: ["Faux", "Vrai", "Seulement si virus"],
@@ -3391,7 +3391,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : la simple détention peut être réprimée même sans intention de diffuser/contaminer.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative est punissable pour les atteintes STAD (chapitre).",
@@ -3405,7 +3405,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // 323-4 — ASSOCIATION DE MALFAITEURS EN INFORMATIQUE
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Définition",
     question: "L’association de malfaiteurs en informatique (323-4) vise :",
     options: [
@@ -3419,7 +3419,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : préparation caractérisée par faits matériels d’infractions visées 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Nombre de participants (piège)",
     question: "Le nombre de participants requis pour une « entente » :",
     options: ["Peut être 2", "Minimum 5", "Minimum 3"],
@@ -3427,7 +3427,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Le cours : entente retenue pour deux personnes (exemple).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Faits matériels (piège)",
     question: "Un fait matériel de préparation peut être :",
     options: [
@@ -3440,7 +3440,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : échanges d’infos sur la réalisation (codes, moyen de casser…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Élément moral",
     question: "L’élément moral suppose :",
     options: [
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : participation volontaire et connaissance de la préparation d’infractions STAD.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Connaissance (piège concours)",
     question: "Chaque membre doit connaître toutes les activités des autres :",
     options: ["Faux", "Vrai", "Seulement si chef"],
@@ -3467,7 +3467,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // QCM « ULTRA-PIÈGES » — DISTINCTIONS ENTRE 323-1 / 323-3 / 323-3-1 / 323-4
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise spécifiquement la fourniture/détention d’outils conçus pour attaquer un STAD ?",
@@ -3477,7 +3477,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3-1 : moyens adaptés (programme, instrument, donnée) sans motif légitime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise l’action directe sur les données (copie, suppression, modification) ?",
@@ -3487,7 +3487,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3 : actions frauduleuses sur les données contenues dans le système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise l’accès sans droit, même sans toucher aux données ?",
@@ -3496,7 +3496,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "323-1 : accès/maintien frauduleux, même « promenade ». ",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise la participation à une entente préparant des atteintes STAD, matérialisée par des échanges de moyens ?",
@@ -3509,7 +3509,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // MINI CAS — QUALIFICATION + ARTICLE + PEINE (CONCOURS)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "A se connecte sans autorisation à une base. Il ne modifie rien. Qualification + peine ?",
@@ -3522,7 +3522,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Accès frauduleux simple (323-1 al.1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "B accède sans droit et efface des logs, provoquant aussi un dysfonctionnement. Qualification la plus complète côté aggravation ?",
@@ -3537,7 +3537,7 @@ final List<QuizQuestion> questionSTAD = [
         "Suppression/modification ou altération du fonctionnement → aggravation 323-1 al.2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "C copie des données (sans les supprimer) puis les transmet à un tiers. Qualification principale + peine base ?",
@@ -3550,7 +3550,7 @@ final List<QuizQuestion> questionSTAD = [
     explanation: "Extraction/reproduction/transmission frauduleuse = 323-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "D conserve chez lui un malware conçu pour attaquer des STAD, sans motif légitime établi. Qualification ?",
@@ -3564,7 +3564,7 @@ final List<QuizQuestion> questionSTAD = [
         "323-3-1 réprime la détention/offre/cession/mise à disposition de moyens adaptés sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "E et F échangent codes/techniques pour préparer une intrusion, mais aucun accès n’a encore été réalisé. Qualification ?",
@@ -3582,7 +3582,7 @@ final List<QuizQuestion> questionSTAD = [
   // =====================================================
   // FLASH V/F — ARTICLES / PEINES / PRINCIPES (MODE RÉVISIONS RAPIDES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’accès peut être frauduleux même si le système n’a aucun mot de passe.",
@@ -3592,7 +3592,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : pas nécessaire d’un dispositif de protection ; volonté du maître suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3",
     question:
         "Vrai/Faux : modifier des données enregistrées définitivement dans un système peut relever de 323-3.",
@@ -3602,7 +3602,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours cite la modification de données comptables enregistrées définitivement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3-1",
     question:
         "Vrai/Faux : l’absence de liste précise des « motifs légitimes » laisse l’appréciation aux magistrats.",
@@ -3612,7 +3612,7 @@ final List<QuizQuestion> questionSTAD = [
         "Le cours : notion imprécise → appréciation par les magistrats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-4",
     question:
         "Vrai/Faux : un groupement initialement légal peut tomber sous 323-4 s’il dérive vers la délinquance informatique.",
@@ -3628,7 +3628,7 @@ final List<QuizQuestion> questionSTAD = [
 // PAGE
 // ============================================================================
 class QuizStad extends StatefulWidget {
-  static const String routeName = '/gpx/crimes_biens/quiz/stad';
+  static const String routeName = '/gpx/dps/crimes_biens/quiz/stad';
   final String uid;
   final String email;
 
@@ -3971,7 +3971,7 @@ class _QuizStadState extends State<QuizStad> with TickerProviderStateMixin {
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4174,7 +4174,7 @@ class _QuizStadState extends State<QuizStad> with TickerProviderStateMixin {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4357,7 +4357,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4890,10 +4889,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5264,7 +5264,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5305,9 +5305,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

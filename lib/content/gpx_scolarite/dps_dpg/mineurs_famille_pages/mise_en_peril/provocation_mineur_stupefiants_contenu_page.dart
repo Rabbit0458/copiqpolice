@@ -108,39 +108,39 @@ class ProvocationMineurStupefiantsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-18 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la provocation d’un mineur à l’usage de stupéfiants.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-18-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la provocation d’un mineur au transport, à la détention, à l’offre, "
                       "à la cession de stupéfiants, ou à se rendre complice de tels actes.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Précision",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les faits de production, fabrication, importation, exportation et acquisition (mentionnés au Code de la santé publique) ne sont pas cités dans ces textes.",
@@ -158,100 +158,100 @@ class ProvocationMineurStupefiantsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte de provocation directe"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte de provocation directe"),
+              _Paragraph(
                 "Il s’agit d’agissements directs encourageant ou incitant un mineur à commettre une infraction "
                 "en matière d’usage ou de trafic de stupéfiants.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Il faut un lien direct entre la provocation et les faits : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "« relation précise et incontestable »",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " et "),
-                const TextSpan(
+                TextSpan(text: " et "),
+                TextSpan(
                   text: "« lien étroit »",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Concrètement, la provocation directe implique que l’auteur s’adresse à un mineur "
                 "(par exemple : parole, téléphone, SMS, message électronique…). "
                 "La force de persuasion doit être de nature à inciter le mineur : une simple suggestion ou un simple conseil "
                 "peut être insuffisant, surtout en l’absence d’ascendant sur le mineur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Distinction",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La provocation directe s’oppose à l’apologie, la propagande ou la simple publicité. "
                         "Dans cette hypothèse, les faits peuvent relever de ",
                   ),
                   TextSpan(
                     text: "l’article L. 3421-4 du Code de la santé publique",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) À commettre (ou à se rendre complice) d’une infraction en matière de stupéfiants",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Sont visées les infractions d’"),
-                const TextSpan(
+                TextSpan(text: "Sont visées les infractions d’"),
+                TextSpan(
                   text: "usage",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " ("),
+                TextSpan(text: " ("),
                 TextSpan(
                   text: "article 227-18 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") et de "),
-                const TextSpan(
+                TextSpan(text: ") et de "),
+                TextSpan(
                   text: "trafic",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : transport, détention, offre, cession illicites (",
                 ),
                 TextSpan(
                   text: "article 227-18-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ces infractions visent notamment l’utilisation de mineurs dans la revente de rue.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Complicité (dans l’élément matériel)",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le texte vise aussi la provocation à se rendre complice : cela permet de réprimer "
@@ -260,54 +260,54 @@ class ProvocationMineurStupefiantsPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La provocation d’un mineur est aggravée par rapport au régime général. "
                         "Elle coexiste avec l’incrimination de ",
                   ),
                   TextSpan(
                     text: "l’article L. 3421-4 du Code de la santé publique",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (provocation à l’usage ou au trafic / présentation sous un jour favorable).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "À noter : offrir à un mineur des stupéfiants pour sa consommation personnelle "
                       "peut relever d’un texte spécifique plus sévère : ",
                 ),
                 TextSpan(
                   text: "article 222-39 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (10 ans d’emprisonnement et 75 000 € d’amende).",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Adressée à un mineur"),
-              const _Paragraph(
+              _SubTitle("C) Adressée à un mineur"),
+              _Paragraph(
                 "La provocation doit viser un mineur quel que soit son âge. "
                 "Lorsqu’elle s’adresse à un mineur de 15 ans, elle constitue une circonstance aggravante.",
               ),
@@ -339,23 +339,23 @@ class ProvocationMineurStupefiantsPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Articles 227-18 alinéa 2 et 227-18-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Lorsqu’il s’agit d’un mineur de quinze ans.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lorsque les faits sont commis dans des établissements d’enseignement ou d’éducation, "
                     "ou dans les locaux de l’administration, ainsi que lors des entrées/sorties ou à proximité immédiate.",
@@ -371,121 +371,121 @@ class ProvocationMineurStupefiantsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Provocation à l’usage (simple) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "5 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-18 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Provocation au trafic / complicité de trafic (simple) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-18-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Formes aggravées"),
+              _SubTitle("Formes aggravées"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Usage (aggravée) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 150 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-18 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Trafic / complicité de trafic (aggravée) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 227-18-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 227-28-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non prévue)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non prévue)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation, instructions données).",
                 ),
@@ -526,10 +526,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -594,7 +594,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -637,7 +637,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -699,7 +699,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -731,7 +731,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -744,7 +744,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

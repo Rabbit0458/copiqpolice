@@ -615,7 +615,7 @@ final List<QuizQuestion> questionsUsageArmes = [
 // PAGE
 // ============================================================================
 class QuizUsageArmesPage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/usagearmes';
+  static const String routeName = '/gpx/dps/generalites/quiz/usagearmes';
   final String uid;
   final String email;
 

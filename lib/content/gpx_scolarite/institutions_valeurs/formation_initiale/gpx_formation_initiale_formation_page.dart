@@ -114,19 +114,19 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "À titre transitoire, les P.A. formés en 16 semaines avant l’entrée en vigueur de la scolarité P.A./GPX sont réputés lauréats de l’U.V.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "E-formation",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Préalablement à leur incorporation, ils suivent un module e-formation d’une durée de 06h00.",
@@ -293,37 +293,37 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
             cardColor: cardEval,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les évaluations portent sur : le discernement professionnel, l’implication personnelle, le respect déontologique, "
                 "les connaissances théoriques fondamentales, les savoir-faire en situation, les acquis techniques, la condition physique "
                 "et la maîtrise des applications informatiques professionnelles.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les épreuves peuvent consister en : rédaction d’actes administratifs/judiciaires, réponses à des questions, résolution de cas pratiques, "
                 "réalisation d’exercices techniques.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Trois types d’évaluations"),
-              const _Paragraph(
+              _SubTitle("Trois types d’évaluations"),
+              _Paragraph(
                 "1) Évaluations en « acquis / non acquis » pendant le socle initial :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Compétences numériques."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Compétences numériques."),
+              _BulletPoint(
                 text: "Test d’Endurance Cardio-Respiratoire 1 (TECR1).",
               ),
-              const _BulletPoint(text: "Aptitude SIG."),
-              const _BulletPoint(text: "Contrôle Écrit École 1 (CEE1)."),
-              const _BulletPoint(
+              _BulletPoint(text: "Aptitude SIG."),
+              _BulletPoint(text: "Contrôle Écrit École 1 (CEE1)."),
+              _BulletPoint(
                 text: "Main Courante Police Nationale (MCPN).",
               ),
-              const _BulletPoint(text: "Contrôle École de Simulation (CES)."),
-              const SizedBox(height: 10),
+              _BulletPoint(text: "Contrôle École de Simulation (CES)."),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La validation de cinq compétences est nécessaire à l’acquisition de l’unité de valeur commune aux deux publics.",
@@ -331,38 +331,38 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _Paragraph(
+              _Paragraph(
                 "2) Évaluations en « acquis / non acquis » pendant la 1ère partie du socle avancé :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "CEE2."),
-              const _BulletPoint(text: "Épreuve LRPPN."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "CEE2."),
+              _BulletPoint(text: "Épreuve LRPPN."),
+              _BulletPoint(
                 text: "Techniques de Défense et d’Intervention (TDI).",
               ),
-              const _BulletPoint(text: "Armement."),
+              _BulletPoint(text: "Armement."),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _Paragraph(
+              _Paragraph(
                 "3) Évaluations notées pendant la 1ère partie du socle avancé :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Contrôle National Judiciaire (CNJ)."),
-              const _BulletPoint(text: "Vacation."),
-              const _BulletPoint(text: "TECR 2."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Contrôle National Judiciaire (CNJ)."),
+              _BulletPoint(text: "Vacation."),
+              _BulletPoint(text: "TECR 2."),
+              _BulletPoint(
                 text: "Contrôle national Emploi Des Armes (EDA) 1 PM HK UMP.",
               ),
-              const _BulletPoint(text: "Contrôle national EDA 2 au PA SIG."),
+              _BulletPoint(text: "Contrôle national EDA 2 au PA SIG."),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               _NotaBox(
                 title: "Jury",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le jury d’aptitude professionnelle (J.A.P.) se réunit à l’issue des évaluations et se prononce sur l’aptitude "
@@ -370,8 +370,8 @@ class GpxFormationInitialeFormationPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les élèves inscrits sur la liste d’aptitude choisissent leur première affectation dans la liste des postes proposés, "
                 "selon leur rang dans le classement national établi au vu des évaluations chiffrées.",
               ),
@@ -429,10 +429,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -497,7 +497,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -540,7 +540,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -602,7 +602,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -634,7 +634,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -647,7 +647,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

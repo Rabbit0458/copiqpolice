@@ -108,36 +108,36 @@ class MenacesEnversDepositaireAutoritePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les menaces visant certaines personnes en raison de leurs fonctions.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "À noter : des menaces adressées à certaines personnes dans le but d’entraver l’action de la justice "
                         "peuvent relever d’incriminations spécifiques (",
                   ),
                   TextSpan(
                     text: "articles 434-5, 434-8 et 434-15 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
             ],
@@ -151,145 +151,145 @@ class MenacesEnversDepositaireAutoritePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Une menace de commettre un crime ou un délit",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La menace doit annoncer la commission prochaine d’un crime ou d’un délit contre les personnes ou les biens. "
                 "Si la menace vise un bien, elle peut consister en l’annonce d’un mal susceptible d’être qualifié de destruction, "
                 "dégradation ou détérioration.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "La menace est punissable même si elle n’a pas été réitérée ni matérialisée.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un destinataire déterminé par la loi"),
-              const _Paragraph(
+              _SubTitle("B) Un destinataire déterminé par la loi"),
+              _Paragraph(
                 "La loi énumère limitativement les victimes protégées. On peut les regrouper en 4 grands blocs :",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Mandat électif / dépositaire de l’autorité publique / assimilés",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Sont notamment visés : personnes investies d’un mandat électif public, magistrats, jurés, avocats, "
                 "officiers publics ou ministériels, militaires de la gendarmerie nationale, fonctionnaires de la police nationale, "
                 "douanes, inspection du travail, administration pénitentiaire, ainsi que toute autre personne dépositaire de l’autorité publique.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : liste des personnes concernées (alinéa principal).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Mission de service public (enseignants, santé, transport…)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Sont concernés notamment : agent d’un exploitant de réseau de transport public de voyageurs, "
                 "enseignant et personnels des établissements scolaires, ainsi que les professionnels de santé, "
                 "lorsque la qualité est apparente ou connue.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : extension à certaines professions de service public/santé.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Activités privées de sécurité"),
-              const _Paragraph(
+              _SubTitle("3) Activités privées de sécurité"),
+              _Paragraph(
                 "Sont visées les personnes exerçant une activité privée de sécurité (surveillance/gardiennage, "
                 "protection de l’intégrité physique, transport de fonds/objets de valeur, sécurité dans les transports, etc.).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Articles L.611-1 et L.621-1 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : domaines concernés (renvoi légal)."),
+                TextSpan(text: " : domaines concernés (renvoi légal)."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 alinéa 3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : protection pénale pour ces activités.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Proches de la victime protégée"),
-              const _Paragraph(
+              _SubTitle("4) Proches de la victime protégée"),
+              _Paragraph(
                 "Sont également protégés : le conjoint, les ascendants, les descendants en ligne directe, "
                 "ou toute personne vivant habituellement au domicile, lorsque les menaces sont proférées "
                 "en raison des fonctions exercées par la personne protégée.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : extension aux proches en raison des fonctions.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une menace motivée par les fonctions"),
-              const _Paragraph(
+              _SubTitle("C) Une menace motivée par les fonctions"),
+              _Paragraph(
                 "Le lien avec les fonctions est indispensable :\n"
                 "• pour les personnes de l’alinéa 1 : menace dans l’exercice ou du fait de l’exercice des fonctions ;\n"
                 "• pour les personnes des alinéas 2 et 3 : menace dans l’exercice des fonctions ;\n"
                 "• pour les proches (alinéa 4) : menace en raison des fonctions exercées par la personne protégée.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Qualité de la victime apparente ou connue"),
-              const _Paragraph(
+              _SubTitle("D) Qualité de la victime apparente ou connue"),
+              _Paragraph(
                 "La qualité de la victime doit être apparente ou connue de l’auteur, qui agit en raison de cette qualité.",
               ),
             ],
@@ -324,30 +324,30 @@ class MenacesEnversDepositaireAutoritePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 alinéa 5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque la menace est une menace de mort ou une menace d’atteinte aux biens dangereuse pour les personnes.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 433-3 alinéa 6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsqu’il est fait usage de menaces/violences/actes d’intimidation pour obtenir que la personne accomplisse "
                       "ou s’abstienne d’accomplir un acte de sa fonction/mission/mandat (ou facilité par celle-ci), ou pour la faire abuser "
@@ -355,21 +355,21 @@ class MenacesEnversDepositaireAutoritePage extends StatelessWidget {
                       "toute décision favorable.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ces dispositions ne s’appliquent pas aux menaces/violences/actes d’intimidation prévus par ",
                   ),
                   TextSpan(
                     text: "l’article 433-3-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -383,81 +383,81 @@ class MenacesEnversDepositaireAutoritePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 433-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (mort / biens dangereux) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (mort / biens dangereux) : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 433-3 alinéa 5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (intimidation pour obtenir un acte) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 433-3 alinéa 6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph(
+              _SubTitle("Personnes morales"),
+              _Paragraph(
                 "Les personnes morales peuvent être reconnues pénalement responsables (conditions du droit commun).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -498,10 +498,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -566,7 +566,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -609,7 +609,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -671,7 +671,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -682,10 +682,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -697,13 +696,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -716,13 +714,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

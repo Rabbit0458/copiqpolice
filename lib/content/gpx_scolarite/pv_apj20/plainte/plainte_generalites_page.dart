@@ -89,23 +89,23 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris lorsqu’elles sont déposées dans un service territorialement incompétent. — ",
                 ),
                 TextSpan(
                   text: "article 15-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Tout dépôt de plainte fait l’objet d’un procès-verbal et donne lieu à la délivrance immédiate d’un récépissé à la victime ; une copie peut être remise à sa demande.",
               ),
             ],
@@ -138,50 +138,50 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
             cardColor: cardMethod,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le policier ne doit pas se contenter de retranscrire les déclarations : il doit faire ressortir les éléments utiles permettant de diligenter une enquête et de qualifier les faits.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Ce qu’il faut faire apparaître clairement"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Ce qu’il faut faire apparaître clairement"),
+              _BulletPoint(
                 text:
                     "Situer les faits dans le temps et l’espace (date/heure, lieu précis).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Déterminer le cadre juridique de l’enquête (flagrance ou préliminaire).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Permettre un éventuel transport sur les lieux (constatations, traces, témoins).",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Déterminer les faits et agissements de chaque acteur (rôle précis).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Qualifier l’infraction (rendre visibles les éléments constitutifs : matériel et moral).",
               ),
-              const _BulletPoint(text: "Préciser le mode opératoire."),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              _BulletPoint(text: "Préciser le mode opératoire."),
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Décrire précisément les éléments utiles (objets volés, véhicules, signalements, tenues).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Enregistrer le préjudice subi par la victime.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Prendre en compte les objets/documents remis (factures, captures, certificats, messages…).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Objectif : une plainte exploitable immédiatement (qualification, pistes d’enquête, actes à réaliser, éléments de preuve à préserver).",
                   ),
@@ -198,44 +198,44 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
             cardColor: cardRights,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lors de la prise de plainte, l’APJ doit accorder une attention particulière aux victimes et garantir la confidentialité des déclarations. — ",
                 ),
                 TextSpan(
                   text: "article R. 434-20 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Information de la victime"),
+              _SubTitle("A) Information de la victime"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "L’agent informe la victime de ses droits. — ",
                 ),
                 TextSpan(
                   text: "article 10-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Obtenir réparation de son préjudice."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Obtenir réparation de son préjudice."),
+              _BulletPoint(
                 text:
                     "Se constituer partie civile et être assistée, si elle le souhaite, d’un avocat.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Être aidée par un service/association agréée d’aide aux victimes (coordonnées actualisées).",
               ),
@@ -243,56 +243,56 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
                 text:
                     "Saisir la commission d’indemnisation des victimes d’infraction (CIVI) selon les cas.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Notamment lorsque l’infraction est visée aux ",
                 ),
                 TextSpan(
                   text: "articles 706-3",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ou "),
+                TextSpan(text: " ou "),
                 TextSpan(
                   text: "706-14",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " du Code de procédure pénale."),
+                TextSpan(text: " du Code de procédure pénale."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Être informée des mesures de protection possibles.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Être informée des peines encourues et des conditions d’exécution des condamnations (si applicable).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Bénéficier, le cas échéant, d’un interprète et d’une traduction des informations indispensables.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Être accompagnée à tous les stades par son représentant légal et par la personne majeure de son choix (y compris un avocat), sauf décision contraire motivée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Déclarer comme domicile l’adresse d’un tiers (avec accord exprès) ; certaines victimes peuvent déclarer leur adresse professionnelle selon les conditions prévues.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Recevoir le certificat d’examen médical lorsqu’un examen a été requis par OPJ ou magistrat (selon conditions).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette information peut être donnée par tout moyen, notamment via un formulaire d’information (LRPPN).",
                   ),
@@ -309,229 +309,229 @@ class PVPlainteGeneralitesPage extends StatelessWidget {
             cardColor: cardProtect,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Mesures générales"),
+            children: const [
+              _SubTitle("A) Mesures générales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Interprète si la victime ne comprend pas le français. — ",
                 ),
                 TextSpan(
                   text: "article 10-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Accompagnement à tous les stades, notamment lors des auditions, par le représentant légal et une personne majeure de son choix (y compris un avocat), sauf décision contraire motivée. — ",
                 ),
                 TextSpan(
                   text: "article 10-4 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Pratique (avocat)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si la victime est accompagnée d’un avocat, celui-ci n’intervient pas pendant l’audition : il attend la fin pour poser des questions. Les questions/réponses sont retranscrites au PV ; des observations écrites peuvent être annexées.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Évaluation personnalisée"),
+              _SubTitle("B) Évaluation personnalisée"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Une évaluation personnalisée est mentionnée au PV afin de déterminer la nécessité de mesures spéciales de protection. — ",
                 ),
                 TextSpan(
                   text: "article 10-5 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Importance du préjudice subi."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Importance du préjudice subi."),
+              _BulletPoint(
                 text: "Circonstances de commission de l’infraction.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Vulnérabilité particulière de la victime.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Risque d’intimidation ou de représailles.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Une évaluation approfondie peut être réalisée par une association conventionnée, sur décision du procureur de la République ou du juge d’instruction. — ",
                 ),
                 TextSpan(
                   text: "article D. 1-9 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Mesures spécifiques (cas fréquents)"),
+              _SubTitle("C) Mesures spécifiques (cas fréquents)"),
 
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Mineur victime d’un crime ou d’un délit — article 706-53 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Peut être accompagné (à sa demande) : représentant légal, personne majeure de son choix, association d’aide aux victimes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Peut dénoncer seul les faits : une enquête peut être diligentée même sans plainte du représentant légal (si discernement suffisant).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Après examen médical d’un mineur : le médecin peut refuser de remettre une copie aux représentants légaux si cela est contraire à l’intérêt supérieur de l’enfant ou si le mineur (maturité suffisante) refuse. — ",
                   ),
                   TextSpan(
                     text: "article D1-12 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Mineur victime d’infraction à caractère sexuel : enregistrement audiovisuel obligatoire pour certaines infractions. Référence : ",
                 ),
                 TextSpan(
                   text: "article 706-47 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (liste), et "),
+                TextSpan(text: " (liste), et "),
                 TextSpan(
                   text: "article 706-52 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (règles d’enregistrement)."),
+                TextSpan(text: " (règles d’enregistrement)."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Même si l’audition est filmée, un PV d’audition / d’entretien est rédigé.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’enregistrement peut être exclusivement sonore sur décision du procureur ou du juge si l’intérêt du mineur le justifie.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préférence pour services spécialisés (méthodologie + formation).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Situations particulières (rappels opérationnels)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Victime transgenre : accueillir d’abord selon l’apparence, puis selon le genre déclaré ; dans le PV, utiliser civilité/prénom choisis, tout en mentionnant l’identité officielle dans les rubriques d’identité du LRPPN.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Victime de violences conjugales : la prise en charge n’est pas conditionnée à un certificat médical ; orienter vers les services spécialisés si possible ; avis hiérarchie + parquet ; réquisition d’examen médical (blessures + retentissement psychologique).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Bracelet anti-rapprochement",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Lors du dépôt de plainte, informer la victime éligible qu’elle peut demander un bracelet anti-rapprochement. — ",
                   ),
                   TextSpan(
                     text: "article 15-3-2 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ; mesure prévue par "),
+                  TextSpan(text: " ; mesure prévue par "),
                   TextSpan(
                     text: "article 138-3 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Mesures pratiques de sécurité"),
-              const _BulletPoint(
+              _SubTitle("E) Mesures pratiques de sécurité"),
+              _BulletPoint(
                 text:
                     "Aider à trouver un hébergement d’urgence si retour au domicile impossible (115 / dispositifs locaux).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Assistance possible pour récupérer des effets personnels au domicile (selon disponibilité opérationnelle).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "À penser",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En violences conjugales, procéder aux consultations utiles (TAJ, MCI, FPR, base locale LRPPN, fichiers armes selon procédures en vigueur) et envisager la saisie des armes si nécessaire.",
                   ),
@@ -573,10 +573,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -641,7 +641,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -684,7 +684,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -746,7 +746,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -778,7 +778,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -791,7 +791,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

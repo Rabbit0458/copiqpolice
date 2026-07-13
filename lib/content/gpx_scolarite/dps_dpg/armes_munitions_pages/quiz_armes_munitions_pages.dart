@@ -102,7 +102,7 @@ final List<QuizQuestion> questionArmesMunitions = [
   // =========================
   // THÈME 1 — Classification (R.311-2 CSI) : Catégorie A (A1/A2)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (1°)",
     question: "Relève de la catégorie A1 (1°) :",
     options: [
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. A1 1° : armes à feu camouflées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (2°)",
     question:
         "Une arme de poing permettant de tirer plus de 21 munitions sans réapprovisionnement (chargeur > 20) est :",
@@ -124,7 +124,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 2° : arme de poing + système d'alimentation > 20 cartouches.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Une arme à feu camouflée sous l'apparence d'un autre objet est classée :",
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Une arme de poing capable de tirer plus de 21 munitions sans réapprovisionnement est classée :",
@@ -146,7 +146,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Une arme d’épaule semi-automatique à percussion centrale tirant plus de 11 coups sans recharger est :",
@@ -157,7 +157,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Les armes d’épaule semi-automatiques alimentées par bande sont classées :",
@@ -172,7 +172,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2",
     question:
         "Les armes à feu automatiques et dispositifs permettant le tir en rafale sont classés :",
@@ -183,7 +183,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2",
     question:
         "Les munitions à projectiles perforants, explosifs ou incendiaires relèvent de :",
@@ -194,7 +194,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question: "Une arme à feu de poing non classée ailleurs relève de :",
     options: ["Catégorie B", "Catégorie C", "Catégorie D"],
@@ -203,7 +203,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question:
         "Une arme d’épaule semi-automatique à percussion centrale avec une capacité supérieure à 3 coups est :",
@@ -214,7 +214,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question: "Une arme chambrant le calibre 5,56x45 est classée :",
     options: ["Catégorie B", "Catégorie C", "Catégorie A1"],
@@ -223,7 +223,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C",
     question:
         "Une arme d’épaule semi-automatique avec chargeur inamovible limité à 3 coups est :",
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C",
     question:
         "Une arme non pyrotechnique développant une énergie à la bouche de 25 joules est classée :",
@@ -244,7 +244,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D",
     question: "Un générateur d’aérosol lacrymogène de 75 ml est classé :",
     options: ["Catégorie D", "Catégorie B", "Catégorie C"],
@@ -253,7 +253,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Code pénal",
     question: "Selon l’article 132-75 du Code pénal, une arme par nature est :",
     options: [
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Code pénal",
     question: "Un objet devient une arme par destination lorsqu’il est :",
     options: [
@@ -279,7 +279,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Code de la sécurité intérieure",
     question: "Une arme à répétition semi-automatique est une arme qui :",
     options: [
@@ -292,7 +292,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Définition",
     question: "Le port d’arme correspond au fait de :",
     options: [
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Définition",
     question: "Le transport d’arme correspond au fait de :",
     options: [
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Acquisition et détention",
     question:
         "L’acquisition ou la détention sans autorisation d’une arme de catégorie B constitue :",
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Répression",
     question:
         "La peine encourue pour détention illégale d’une arme de catégorie A ou B est de :",
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Port et transport",
     question: "Porter sans motif légitime une arme de catégorie C constitue :",
     options: ["Un délit", "Une contravention", "Un fait non réprimé"],
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Règle générale",
     question:
         "Le principe pour les mineurs concernant la détention d’armes est :",
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Article L.312-1 CSI : interdiction de principe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (2°)",
     question:
         "Une arme de poing devient A1 lorsqu’elle permet le tir de plus de 21 munitions sans réapprovisionnement si :",
@@ -380,7 +380,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3°)",
     question:
         "Une arme d’épaule semi-automatique à percussion annulaire est classée A1 si elle permet de tirer :",
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3° bis)",
     question:
         "Une arme d’épaule semi-automatique à percussion centrale bascule en A1 si :",
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3° ter)",
     question: "Une arme d’épaule semi-automatique alimentée par bande est :",
     options: [
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3° quater)",
     question:
         "Une arme d’épaule à répétition manuelle peut être classée A1 lorsqu’elle :",
@@ -440,7 +440,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (4°)",
     question: "Relève en principe de la catégorie A1 :",
     options: [
@@ -455,7 +455,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (5°)",
     question: "Relève en principe de la catégorie A1 :",
     options: [
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (6°)",
     question: "Les munitions dont le projectile est ≥ 20 mm sont classées :",
     options: [
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (8°)",
     question: "Quel système d’alimentation relève de la catégorie A1 ?",
     options: [
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (9°)",
     question: "Quel système d’alimentation relève de la catégorie A1 (9°) ?",
     options: [
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (9° bis)",
     question:
         "Quel système d’alimentation relève de la catégorie A1 (9° bis) ?",
@@ -529,7 +529,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (11°)",
     question:
         "Une arme à répétition automatique transformée en semi-automatique, manuelle ou à un coup est :",
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (12°)",
     question:
         "Une arme d’épaule semi-automatique dont la longueur peut être réduite à moins de 60 cm (crosse repliable/télescopique/démontable sans outil) est :",
@@ -555,7 +555,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2 (1°)",
     question: "Relève de la catégorie A2 :",
     options: [
@@ -570,7 +570,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2 (2°)",
     question: "Relèvent de la catégorie A2 :",
     options: [
@@ -584,7 +584,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° c)",
     question: "Une arme d’épaule est classée en catégorie B si :",
     options: [
@@ -598,7 +598,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (6°)",
     question:
         "Une arme à impulsion électrique permettant de provoquer un choc électrique à distance est classée :",
@@ -609,7 +609,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (8°)",
     question:
         "Un générateur d’aérosol lacrymogène d’une capacité de 150 ml est classé :",
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (1° b)",
     question:
         "Une arme d’épaule à répétition manuelle (diamètre projectile < 20 mm) avec un système d’alimentation permettant le tir de 11 munitions au plus est :",
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D (h)",
     question:
         "Une arme propulsant un projectile de manière non pyrotechnique avec une énergie de 10 joules est :",
@@ -640,7 +640,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme camouflée)",
     question: "Une arme camouflée est :",
     options: [
@@ -654,7 +654,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme à un coup)",
     question: "Une arme à un coup est :",
     options: [
@@ -668,7 +668,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (élément de munition)",
     question: "Constitue un élément de munition au sens du CSI :",
     options: [
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (munition perforante)",
     question: "Une munition à projectile perforant peut être :",
     options: [
@@ -697,7 +697,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (munition expansif)",
     question:
         "Une munition à projectile expansif est une munition dont le projectile :",
@@ -713,7 +713,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (munition explosif)",
     question: "Une munition à projectile explosif est :",
     options: [
@@ -727,7 +727,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Interdiction (A/B)",
     question: "Pour les catégories A et B, la règle générale est :",
     options: [
@@ -742,7 +742,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Motif légitime (exemples)",
     question:
         "Parmi ces situations, laquelle correspond à un motif légitime de transport (exemple type) ?",
@@ -758,7 +758,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — 222-54 CP (A/B)",
     question:
         "Le port ou transport sans motif légitime d’une arme de catégorie A ou B hors du domicile est :",
@@ -773,7 +773,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — L.317-8 CSI (C/D)",
     question:
         "Le port sans autorisation ou le transport sans motif légitime d’armes de catégorie C ou D listées constitue :",
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Exceptions (plus de 9 ans)",
     question: "Un mineur de plus de 9 ans peut détenir :",
     options: [
@@ -801,7 +801,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.312-52 CSI : > 9 ans = D(h) et D(h bis) sous conditions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° a)",
     question:
         "Une arme d’épaule semi-automatique à percussion centrale (diamètre < 20 mm) équipée d’un système d’alimentation amovible et n’excédant pas 11 coups relève de :",
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° a bis)",
     question:
         "Une arme d’épaule semi-automatique à percussion annulaire (diamètre < 20 mm) avec alimentation amovible et n’excédant pas 31 coups relève de :",
@@ -823,7 +823,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° b)",
     question:
         "Une arme d’épaule à répétition manuelle (diamètre < 20 mm) d’une capacité supérieure à 11 coups mais n’excédant pas 31 coups relève de :",
@@ -833,7 +833,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° d)",
     question:
         "Une arme à canon lisse à répétition/semi-auto dont la longueur totale minimale ≤ 80 cm ou canon ≤ 60 cm est :",
@@ -844,7 +844,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° e)",
     question:
         "Une arme à répétition semi-automatique ayant l’apparence d’une arme automatique est :",
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° f)",
     question:
         "Les armes à répétition manuelle munies d’un dispositif de rechargement à pompe (selon cas) peuvent relever de :",
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (4° calibres)",
     question: "Lequel des calibres suivants fait partie de la liste B 4° ?",
     options: [
@@ -879,7 +879,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (4° calibres)",
     question: "Le calibre 14,5 x 114 est classé :",
     options: ["Catégorie B (4°)", "Catégorie C (4°)", "Catégorie D (e)"],
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (10°)",
     question:
         "Les munitions à percussion centrale conçues pour les armes de poing (B 1°) relèvent en principe :",
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (1° c)",
     question: "Une arme d’épaule à un coup par canon relève de :",
     options: ["Catégorie C", "Catégorie B", "Catégorie A1"],
@@ -912,7 +912,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (9°)",
     question:
         "Une arme des catégories A, B ou C neutralisée selon les modalités définies par arrêté est classée :",
@@ -923,7 +923,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (12°)",
     question: "Les armes d’alarme et de signalisation sont classées :",
     options: ["Catégorie C", "Catégorie D", "Catégorie B"],
@@ -932,7 +932,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D (a)",
     question:
         "Parmi ces objets, lequel entre dans la catégorie D (a) 'objets susceptibles de constituer une arme dangereuse' ?",
@@ -947,7 +947,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme blanche)",
     question:
         "Une arme blanche est une arme dont l’action tranchante/perforante/brisante est due :",
@@ -962,7 +962,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme neutralisée)",
     question: "Une arme neutralisée est une arme rendue :",
     options: [
@@ -977,7 +977,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (élément d'arme neutralisé)",
     question: "Un élément d’arme neutralisé correspond à :",
     options: [
@@ -992,7 +992,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (douille amorcée)",
     question: "Une douille amorcée est :",
     options: [
@@ -1005,7 +1005,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (douille chargée)",
     question: "Une douille chargée est :",
     options: [
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (système d'alimentation)",
     question:
         "Au sens du CSI, les systèmes d’alimentation comprennent notamment :",
@@ -1033,7 +1033,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Autres armes (arme factice)",
     question:
         "Une arme factice (CSI) est un objet ayant l’apparence d’une arme à feu pouvant expulser un projectile non métallique avec une énergie :",
@@ -1047,7 +1047,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Ne sont pas des armes (CSI)",
     question: "Au sens du CSI, ne sont pas des armes :",
     options: [
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Ne sont pas des armes (CSI)",
     question: "Au sens du CSI, les réducteurs de son sont considérés comme :",
     options: [
@@ -1077,7 +1077,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Activités — Intermédiation",
     question:
         "Une activité d’intermédiation en relation avec les armes consiste notamment à :",
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Activités — Armurier",
     question:
         "Un armurier est une personne dont l’activité consiste (en tout ou partie) dans :",
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Activités — Dépôt d'armes",
     question: "Le dépôt d’armes correspond à :",
     options: [
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Activités — Fabrication illicite",
     question: "Constitue une fabrication illicite (définition) :",
     options: [
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Marquage — Contenu",
     question: "Le marquage d’une arme à feu comprend notamment :",
     options: [
@@ -1153,7 +1153,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Traçabilité — Définition",
     question: "La traçabilité correspond à :",
     options: [
@@ -1168,7 +1168,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic illicite — Définition",
     question: "Le trafic illicite inclut notamment :",
     options: [
@@ -1183,7 +1183,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Domicile (notion)",
     question:
         "Dans ton cours, la notion de domicile pour l’infraction de port/transport s’entend aussi comme :",
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — L.317-8 CSI (éléments d'arme)",
     question:
         "Pourquoi l’infraction L.317-8 inclut-elle aussi les éléments d’armes ?",
@@ -1215,7 +1215,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Règles d’acquisition — Catégorie C",
     question:
         "Pour acquérir une arme de catégorie C, une personne majeure doit notamment présenter :",
@@ -1231,7 +1231,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Règles d’acquisition — Catégorie D",
     question:
         "Les personnes majeures peuvent acquérir et détenir les armes et éléments de catégorie D :",
@@ -1246,7 +1246,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Pouvoir du préfet",
     question:
         "Pour des raisons d’ordre public ou de sécurité des personnes, le préfet peut :",
@@ -1261,7 +1261,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — Refus de conservation",
     question:
         "Une personne qui hérite d’une arme de catégorie A ou B et ne souhaite pas la conserver peut :",
@@ -1277,7 +1277,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — Dépôt chez un professionnel",
     question:
         "Après une mise en possession A/B (trouvée/succession) en vue de conservation, l’arme doit être :",
@@ -1293,7 +1293,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Catégorie B (caducité)",
     question:
         "Si une autorisation de catégorie B est notifiée et que l’arme n’est pas acquise dans le délai, elle devient :",
@@ -1308,7 +1308,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3°)",
     question:
         "Une arme d'épaule semi-automatique à percussion annulaire avec chargeur > 30 cartouches inséré relève de :",
@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 3° : annulaire semi-auto + > 31 munitions si chargeur > 30 intégré ou inséré.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3° bis)",
     question:
         "Une arme d'épaule semi-automatique à percussion centrale tirant plus de 11 coups sans recharger (chargeur > 10) est :",
@@ -1328,7 +1328,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 3° bis : centrale semi-auto + > 11 coups si chargeur > 10 intégré ou inséré.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3° ter)",
     question:
         "Les armes d'épaule semi-automatiques alimentées par bande sont :",
@@ -1341,7 +1341,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. A1 3° ter : alimentation par bande = A1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (3° quater)",
     question:
         "Une arme d'épaule à répétition manuelle tirant plus de 31 munitions sans réapprovisionnement (chargeur > 30) est :",
@@ -1351,7 +1351,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 3° quater : manuelle + > 31 si chargeur > 30 intégré/inséré.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (4°)",
     question:
         "Les armes à canons rayés dont le projectile a un diamètre ≥ 20 mm sont en principe :",
@@ -1365,7 +1365,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 4° : ≥ 20 mm, exception si conçues pour projectiles non métalliques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (5°)",
     question:
         "Les armes à feu à canon lisse d'un calibre supérieur au calibre 8 relèvent en principe de :",
@@ -1379,7 +1379,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 5° : canon lisse > calibre 8, sauf exceptions (armes C/D classées par arrêté).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (6°)",
     question: "Les munitions dont le projectile est ≥ 20 mm sont :",
     options: [
@@ -1392,7 +1392,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 6° : projectile ≥ 20 mm, exception pour certaines munitions d'armes classées en C.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (8°/9°/9° bis)",
     question: "Quel système d'alimentation relève de la catégorie A1 ?",
     options: [
@@ -1405,7 +1405,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 8° : systèmes d'alimentation d'armes de poing > 20.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (11°)",
     question:
         "Une arme automatique transformée en semi-automatique (ou manuelle / un coup) est classée :",
@@ -1415,7 +1415,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 11° : armes auto transformées restent A1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1 (12°)",
     question:
         "Une arme d'épaule semi-auto dont la longueur peut être réduite à moins de 60 cm (crosse repliable/télescopique) est :",
@@ -1425,7 +1425,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A1 12° : réduction < 60 cm sans perte de fonctionnalité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2 (1°)",
     question: "Relève de la catégorie A2 (1°) :",
     options: [
@@ -1439,7 +1439,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A2 1° : armes auto + dispositifs assimilables au tir en rafale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2 (2°)",
     question:
         "Les munitions à projectiles perforants, explosifs ou incendiaires relèvent de :",
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. A2 2° : perforants/explosifs/incendiaires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2 (4°/5°)",
     question:
         "Canons, obusiers, mortiers, lance-roquettes et leurs munitions relèvent de :",
@@ -1458,7 +1458,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. A2 4° et 5° : matériels lourds + munitions associées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2 (6°)",
     question:
         "Bombes, torpilles, mines, missiles, grenades (chargés ou non) sont :",
@@ -1472,7 +1472,7 @@ final List<QuizQuestion> questionArmesMunitions = [
   // =========================
   // THÈME 2 — Classification : Catégories B / C / D (R.311-2)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (1°)",
     question: "Relève de la catégorie B (1°) :",
     options: [
@@ -1484,7 +1484,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. B 1° : armes de poing.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° a)",
     question:
         "Une arme d'épaule semi-auto à percussion centrale (diamètre < 20 mm) d'une capacité supérieure à 3 coups relève de :",
@@ -1494,7 +1494,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. B 2° a) : centrale semi-auto > 3 coups (ou système amovible) et n'excédant pas 11 coups.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° a bis)",
     question:
         "Une arme d'épaule semi-auto à percussion annulaire (diamètre < 20 mm) d'une capacité supérieure à 3 coups relève de :",
@@ -1504,7 +1504,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. B 2° a bis) : annulaire semi-auto > 3 coups et n'excédant pas 31 coups.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (2° c)",
     question:
         "Une arme d'épaule dont la longueur totale minimale est ≤ 80 cm est :",
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. B 2° c) : longueur totale minimale ≤ 80 cm.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (4° calibres)",
     question:
         "Les armes chambrant le calibre 5,56x45 (et leurs munitions/douilles) sont en :",
@@ -1523,7 +1523,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. B 4° b) : 5,56x45 listé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (6°)",
     question:
         "Une arme à impulsion électrique provoquant un choc à distance est :",
@@ -1533,7 +1533,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. B 6° : impulsion électrique à distance + munitions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B (8°)",
     question:
         "Un générateur d'aérosol lacrymogène d'une capacité supérieure à 100 ml est :",
@@ -1543,7 +1543,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. B 8° : aérosols incapacitants/lacrymogènes > 100 ml.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (1° a)",
     question:
         "Une arme d'épaule semi-auto (diamètre < 20 mm) avec alimentation inamovible limitée à 3 munitions max est :",
@@ -1552,7 +1552,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. C 1° a) : semi-auto + inamovible ≤ 3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (1° b)",
     question:
         "Une arme d'épaule à répétition manuelle (diamètre < 20 mm) limitée à 11 munitions max est :",
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. C 1° b) : manuelle ≤ 11.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C (4°)",
     question:
         "Une arme ou lanceur non pyrotechnique avec énergie à la bouche ≥ 20 joules est :",
@@ -1570,7 +1570,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. C 4° : ≥ 20 J.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D (b)",
     question: "Un aérosol lacrymogène de capacité ≤ 100 ml est en principe :",
     options: ["Catégorie D", "Catégorie B", "Catégorie A2"],
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "R.311-2 CSI, Cat. D b) : ≤ 100 ml (sauf classement différent par arrêté).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D (h)",
     question:
         "Une arme/lanceur non pyrotechnique avec énergie comprise entre 2 et 20 joules est :",
@@ -1588,7 +1588,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-2 CSI, Cat. D h) : 2 à 20 J.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D (e)",
     question:
         "Les armes historiques et de collection dont le modèle est antérieur au 1er janvier 1900 relèvent :",
@@ -1606,7 +1606,7 @@ final List<QuizQuestion> questionArmesMunitions = [
   // =========================
   // THÈME 3 — Définitions (Code pénal 132-75 / CSI R.311-1)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme par nature (CP)",
     question: "Selon l'article 132-75 al.1 du Code pénal, une arme est :",
     options: [
@@ -1618,7 +1618,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CP art. 132-75 al.1 : arme par nature.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme par destination (CP)",
     question:
         "Un objet non conçu comme arme devient une arme par destination si :",
@@ -1632,7 +1632,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP art. 132-75 al.2 : assimilation dès usage/destination pour tuer/blesser/menacer.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Objet ressemblant à une arme (CP)",
     question:
         "Un objet ressemblant à une arme est assimilé à une arme lorsqu'il est :",
@@ -1646,7 +1646,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP art. 132-75 al.3 : ressemblance créant confusion + menace.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Animal (CP)",
     question: "L'utilisation d'un animal pour tuer, blesser ou menacer est :",
     options: [
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP art. 132-75 al.4 : animal assimilé à l'arme en cas d'usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme (CSI R.311-1 2°)",
     question: "Au sens du CSI, une arme est :",
     options: [
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 2° : définition large.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Canon lisse (CSI R.311-1 3°)",
     question: "Une arme à canon lisse se caractérise par :",
     options: [
@@ -1685,7 +1685,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 3° : canon lisse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Canon rayé (CSI R.311-1 4°)",
     question: "Une arme à canon rayé a :",
     options: [
@@ -1698,7 +1698,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI R.311-1 4° : rayures conventionnelles/polygonales pour rotation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme à feu (CSI R.311-1 5°)",
     question: "Une arme à feu est :",
     options: [
@@ -1711,7 +1711,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 5° : combustion ou transformation aisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Répétition automatique (CSI R.311-1 6°)",
     question: "Une arme à répétition automatique est celle qui :",
     options: [
@@ -1724,7 +1724,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 6° : rafale possible sur une pression.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Répétition semi-automatique (CSI R.311-1 8°)",
     question: "Une arme semi-automatique :",
     options: [
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 8° : un seul coup par pression sur détente.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme de poing (CSI R.311-1 13°)",
     question: "Une arme de poing est :",
     options: [
@@ -1749,7 +1749,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 13° : définition + longueur hors tout.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme d'épaule (CSI R.311-1 12°)",
     question: "Une arme d'épaule est :",
     options: [
@@ -1761,7 +1761,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI R.311-1 12° : définition (règles de mesure longueur).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Élément d'arme (CSI R.311-1 19°)",
     question: "Un élément d'arme est :",
     options: [
@@ -1778,7 +1778,7 @@ final List<QuizQuestion> questionArmesMunitions = [
   // =========================
   // THÈME 4 — Port / Transport / Motif légitime (CSI)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Définition du port (CSI)",
     question: "Le port d'arme correspond à :",
     options: [
@@ -1791,7 +1791,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI R.311-1 (définitions) : port = sur soi + utilisable immédiatement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Définition du transport (CSI)",
     question: "Le transport d'arme correspond à :",
     options: [
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI R.311-1 (définitions) : transport = auprès de soi + non immédiatement utilisable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Règle générale A/B",
     question: "Pour les catégories A et B, la règle générale est :",
     options: [
@@ -1818,7 +1818,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI : interdiction stricte, exceptions légales (L.315-1, L.315-2...).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Règle générale C/D",
     question: "Pour les catégories C et D, la règle générale est :",
     options: [
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI : C/D = pas de port/transport hors motif légitime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Motif légitime (exemples)",
     question:
         "Parmi les situations suivantes, laquelle illustre un motif légitime de transport ?",
@@ -1845,7 +1845,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "Exemples cités : domicile→armurerie, compétition, chasse, reconstitution historique…",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Chasse (titre)",
     question:
         "Le permis de chasser (avec validation de l'année en cours) vaut :",
@@ -1860,7 +1860,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "Règles CSI : permis de chasser + validation = port légitime pour C et D(a) en action de chasse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Tir sportif (titre)",
     question: "La licence de tir en cours de validité vaut :",
     options: [
@@ -1874,7 +1874,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI : licence = transport légitime dans le cadre du sport concerné.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Collectionneur (titre)",
     question: "La carte de collectionneur vaut :",
     options: [
@@ -1892,7 +1892,7 @@ final List<QuizQuestion> questionArmesMunitions = [
   // =========================
   // THÈME 5 — Infractions : acquisition/détention/cession (CP 222-52) + port/transport (CP 222-54 / CSI L.317-8)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Acquisition/Détention/Cession A ou B (222-52 CP)",
     question:
         "L'acquisition, la détention ou la cession sans autorisation d'armes/munitions de catégories A ou B constitue :",
@@ -1901,7 +1901,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CP art. 222-52 : incrimination (A/B sans autorisation).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément matériel (222-52 CP)",
     question: "Dans 222-52 CP, l'élément matériel peut être :",
     options: [
@@ -1914,7 +1914,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP 222-52 : vise acquisition/détention/cession sans autorisation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Détention (notion)",
     question: "La détention d'une arme s'entend comme :",
     options: [
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "Définition fonctionnelle : maîtrise matérielle, conservation au domicile ou lieu assimilé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Autorisation (principe)",
     question: "Concernant A/B pour les particuliers, l'autorisation est :",
     options: [
@@ -1940,7 +1940,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Régime A/B : interdit sauf autorisation expresse (CSI).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Répression (222-52 CP simple)",
     question:
         "La peine principale encourue (personne physique) pour 222-52 al.1 CP est :",
@@ -1953,7 +1953,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CP 222-52 al.1 : 5 ans + 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Circonstances aggravantes (222-52 CP)",
     question: "Constitue une circonstance aggravante prévue par 222-52 CP :",
     options: [
@@ -1966,7 +1966,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CP 222-52 al.3 : pluralité de personnes (auteur/complice).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Tentative (222-52/222-60 CP)",
     question:
         "La tentative d'acquisition/détention/cession A ou B sans autorisation est :",
@@ -1980,7 +1980,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP 222-60 : tentative spécialement prévue pour ces infractions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Exemption/Réduction (222-67-1 CP)",
     question: "L'exemption de peine peut s'appliquer si la personne :",
     options: [
@@ -1994,7 +1994,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP 222-67-1 al.1 : avertissement + prévention de la réalisation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Port/Transport A ou B (222-54 CP)",
     question:
         "Porter ou transporter hors domicile, sans motif légitime, une arme de catégorie A ou B constitue :",
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CP art. 222-54 : port/transport A/B sans motif légitime (même si détenteur régulier).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Tentative (222-54 CP)",
     question:
         "La tentative pour l'infraction de port/transport A ou B sans motif légitime (222-54 CP) est :",
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Dans ton cours : tentative indiquée NON pour 222-54.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Port/Transport C ou D (L.317-8 CSI)",
     question:
         "Porter ou transporter sans motif légitime une arme de catégorie C (ou D listée), même détenue régulièrement, constitue :",
@@ -2031,7 +2031,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI L.317-8 : port/transport C ou D (liste) sans motif légitime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Peine C (L.317-8 2° CSI)",
     question:
         "La peine principale (simple) pour port/transport sans motif légitime d'armes de catégorie C est :",
@@ -2044,7 +2044,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Tableau cours : L.317-8 2° (C) = 2 ans + 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Peine D (L.317-8 3° CSI)",
     question:
         "La peine principale (simple) pour port/transport sans motif légitime d'armes de catégorie D (listées) est :",
@@ -2057,7 +2057,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Tableau cours : L.317-8 3° (D) = 1 an + 15 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Aggravation (L.317-9 CSI)",
     question:
         "Une circonstance aggravante (L.317-9 CSI) pour port/transport d'armes est :",
@@ -2076,7 +2076,7 @@ final List<QuizQuestion> questionArmesMunitions = [
   // =========================
   // THÈME 6 — Autorisations / refus / mineurs / dessaisissement (CSI)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Catégorie B (durée)",
     question:
         "L'autorisation d'acquisition et de détention d'une arme de catégorie B est accordée pour :",
@@ -2089,7 +2089,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-13) : durée 5 ans renouvelable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Catégorie B (délai acquisition)",
     question:
         "Après notification de l'autorisation B, le bénéficiaire dispose de :",
@@ -2102,7 +2102,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-12) : délai de 6 mois après notification.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Renouvellement (B)",
     question:
         "La demande de renouvellement d'une autorisation B doit être déposée :",
@@ -2115,7 +2115,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-14) : dépôt avant expiration, récépissé délivré.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Silence de l'administration",
     question:
         "Le silence gardé pendant 3 mois sur une demande d'autorisation vaut :",
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-10-1) : silence 3 mois = décision de rejet.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus — FINIADA",
     question: "Une autorisation A/B n'est pas accordée si le demandeur :",
     options: [
@@ -2137,7 +2137,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-21) : refus notamment en cas d'inscription FINIADA (L.312-16).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus — Condamnations",
     question: "L'autorisation A/B peut être refusée si le demandeur :",
     options: [
@@ -2149,7 +2149,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-21) : condamnations (références L.312-3).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus — Comportement incompatible",
     question: "L'autorisation peut être refusée lorsque :",
     options: [
@@ -2162,7 +2162,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-21) : comportement incompatible révélé par enquête.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Principe",
     question:
         "Le principe pour les mineurs concernant acquisition/détention d'armes (toute catégorie) est :",
@@ -2176,7 +2176,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (L.312-1) : interdiction de principe pour mineurs, exceptions R.312-52.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Plus de 9 ans",
     question:
         "Pour les mineurs de plus de 9 ans, la détention autorisée concerne :",
@@ -2189,7 +2189,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-52) : > 9 ans = D(h)/(h bis) + licence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Plus de 12 ans",
     question:
         "Pour les mineurs de plus de 12 ans, ils peuvent détenir des armes :",
@@ -2202,7 +2202,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "CSI (R.312-52) : > 12 ans = C avec licence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Plus de 16 ans",
     question:
         "Pour les mineurs de plus de 16 ans, la détention d'armes C est possible s'ils :",
@@ -2216,7 +2216,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-52) : > 16 ans = C possible avec permis de chasser.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Cas général",
     question:
         "En cas d'autorisation expirée non renouvelée, le détenteur doit en principe :",
@@ -2230,7 +2230,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-17) : dessaisissement/neutralisation dans les cas prévus, délai 3 mois.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Moyens (R.312-74)",
     question:
         "Parmi les moyens suivants, lequel fait partie des modalités de dessaisissement ?",
@@ -2244,7 +2244,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-74) : vente à armurier/particulier autorisé, destruction, remise à l'État, dépôt…",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — Arme A/B trouvée ou héritée",
     question:
         "Une personne qui trouve (ou hérite) une arme A/B et veut la conserver doit :",
@@ -2258,7 +2258,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-51) : déclaration sans délai si conservation souhaitée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — Délai de mise en conformité A/B",
     question:
         "Après déclaration de mise en possession A/B (trouvée/succession), le délai pour remplir les conditions est :",
@@ -2268,7 +2268,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-51) : 12 mois pour remplir conditions/quotas, dépôt chez pro.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — Arme C trouvée/héritée",
     question:
         "Pour conserver une arme de catégorie C trouvée ou héritée, il faut notamment :",
@@ -2283,7 +2283,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "CSI (R.312-55) : déclaration mise en possession + certificat médical < 1 mois.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme à feu)",
     question: "Au sens du CSI, une arme à feu est une arme qui :",
     options: [
@@ -2298,7 +2298,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (canon lisse)",
     question: "Une arme à canon lisse est une arme dont :",
     options: [
@@ -2313,7 +2313,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (canon rayé)",
     question: "Une arme à canon rayé se caractérise par :",
     options: [
@@ -2328,7 +2328,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (répétition automatique)",
     question: "Une arme à répétition automatique est une arme qui :",
     options: [
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (répétition manuelle)",
     question:
         "Une arme à répétition manuelle est une arme qui, après chaque coup :",
@@ -2359,7 +2359,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme d'épaule)",
     question: "Une arme d’épaule est une arme :",
     options: [
@@ -2372,7 +2372,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (arme de poing)",
     question: "Une arme de poing est une arme :",
     options: [
@@ -2387,7 +2387,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (longueur arme d'épaule)",
     question:
         "La longueur hors-tout d’une arme d’épaule à crosse amovible ou repliable se mesure :",
@@ -2402,7 +2402,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (élément d'arme)",
     question:
         "Parmi ces propositions, laquelle correspond à un 'élément d’arme' (essentiel) ?",
@@ -2417,7 +2417,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (munition neutralisée)",
     question:
         "Une munition neutralisée (CSI) est une munition (diamètre < 20 mm) dont :",
@@ -2433,7 +2433,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — CSI (munition neutralisée — limite)",
     question:
         "Concernant les munitions explosives ou incendiaires, même si elles sont 'neutralisées' :",
@@ -2448,7 +2448,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres armes — Arme d'alarme (définition)",
     question:
         "Une arme d’alarme et de signalisation est un dispositif conçu uniquement pour tirer :",
@@ -2464,7 +2464,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres armes — Arme de spectacle",
     question:
         "Une arme de spectacle est une arme à feu transformée pour tirer à blanc, et :",
@@ -2479,7 +2479,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres armes — Munition inerte",
     question: "Une munition inerte est :",
     options: [
@@ -2494,7 +2494,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres armes — Lanceur de paintball",
     question: "Un lanceur de paintball est défini comme :",
     options: [
@@ -2509,7 +2509,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Notion clé",
     question: "Quelle phrase résume le mieux la différence port / transport ?",
     options: [
@@ -2523,7 +2523,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — 222-52 CP (matériel)",
     question: "L’infraction 222-52 CP vise notamment :",
     options: [
@@ -2537,7 +2537,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — 222-52 CP (circonstance aggravante)",
     question: "Une circonstance aggravante prévue au 222-52 CP est notamment :",
     options: [
@@ -2552,7 +2552,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — 222-52 CP (récidive spéciale)",
     question:
         "Au titre du 222-52 CP, une aggravation est prévue lorsque l’auteur a été condamné auparavant pour certaines infractions à :",
@@ -2568,7 +2568,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — 222-52 CP (tentative)",
     question:
         "La tentative d’acquisition/détention/cession illégale d’armes A ou B est :",
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — 222-54 CP (tentative)",
     question:
         "La tentative de port/transport sans motif légitime d’armes A ou B (222-54 CP) est :",
@@ -2597,7 +2597,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — L.317-8 CSI (peines C)",
     question:
         "La peine principale encourue pour le port/transport sans motif légitime d’une arme de catégorie C (simple) est :",
@@ -2612,7 +2612,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — L.317-8 CSI (peines D)",
     question:
         "La peine principale encourue pour le port/transport sans motif légitime d’une arme de catégorie D (simple) est :",
@@ -2626,7 +2626,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — L.317-9 CSI (aggravation C)",
     question:
         "En cas de circonstance aggravante (au moins deux personnes) pour catégorie C, la peine devient :",
@@ -2640,7 +2640,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Chasse",
     question:
         "Le permis de chasser + validation de l’année en cours vaut titre de port légitime pour :",
@@ -2656,7 +2656,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Tir sportif",
     question:
         "La licence de tir en cours de validité vaut titre de transport légitime pour :",
@@ -2671,7 +2671,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "Cours : règle 'Tir sportif' : licence = transport légitime (A/B/C + D liés à la pratique).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Catégorie B (durée)",
     question:
         "Une autorisation d’acquisition et de détention d’une arme de catégorie B est accordée pour une durée de :",
@@ -2686,7 +2686,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Catégorie B (renouvellement)",
     question:
         "Le détenteur d’une autorisation B doit déposer sa demande de renouvellement :",
@@ -2701,7 +2701,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Rejet implicite",
     question:
         "Pour une demande d’autorisation (A/B), le silence de l’administration pendant 3 mois vaut :",
@@ -2715,7 +2715,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d'autorisation — FINIADA",
     question:
         "L’autorisation d’acquisition/détention (A/B) n’est pas accordée si le demandeur :",
@@ -2730,7 +2730,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d'autorisation — Condamnations",
     question:
         "L’autorisation A/B peut être refusée si le demandeur a été condamné pour certaines infractions figurant :",
@@ -2745,7 +2745,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d'autorisation — Comportement",
     question: "L’autorisation A/B peut être refusée si le demandeur présente :",
     options: [
@@ -2759,7 +2759,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Refus d'autorisation — Santé",
     question: "L’autorisation A/B peut être refusée si le demandeur :",
     options: [
@@ -2774,7 +2774,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interdiction administrative — L.312-3-1",
     question:
         "L’autorité administrative peut interdire l’acquisition et la détention des armes A/B/C si :",
@@ -2790,7 +2790,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interdiction — Ordonnance de protection",
     question:
         "Sont interdites d’acquisition et de détention d’armes de toutes catégories, les personnes faisant l’objet :",
@@ -2805,7 +2805,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie A — Principe",
     question:
         "Le principe concernant l’acquisition et la détention des armes de catégorie A est :",
@@ -2820,7 +2820,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie A — Agents publics",
     question:
         "Le ministère de l’Intérieur, les douanes et l’administration pénitentiaire peuvent acquérir/détenir des armes de toute catégorie :",
@@ -2835,7 +2835,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie A — Spectacles",
     question:
         "Les entreprises louant des armes à des productions de films/spectacles peuvent être autorisées à détenir :",
@@ -2850,7 +2850,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie A — Musées/collections",
     question:
         "Le préfet peut autoriser l’acquisition/détention pour exposition dans un musée ouvert au public :",
@@ -2865,7 +2865,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie A — Experts judiciaires",
     question:
         "Les experts agréés en armes et munitions peuvent être autorisés à détenir :",
@@ -2881,7 +2881,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie A — Limite (experts)",
     question:
         "Pour un expert judiciaire, l’autorisation de détention ne peut porter que sur :",
@@ -2896,7 +2896,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie B — Décision préfectorale",
     question:
         "La décision d’autorisation B (acquisition/détention) est notifiée au demandeur dans un délai de :",
@@ -2907,7 +2907,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Catégorie B — Délai d’acquisition",
     question:
         "Après notification de l’autorisation B, le bénéficiaire dispose de :",
@@ -2922,7 +2922,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Dérogations",
     question: "Le port ou transport d’armes peut être autorisé si :",
     options: [
@@ -2936,7 +2936,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Autorisation vs détention",
     question:
         "Une autorisation de détention d’arme (A/B) permet-elle automatiquement de la porter/transport hors domicile ?",
@@ -2952,7 +2952,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Motif légitime (liste)",
     question:
         "Parmi ces exemples, lequel est un motif légitime de transport cité dans ton cours ?",
@@ -2967,7 +2967,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — ERP (police/gendarmerie)",
     question:
         "Un fonctionnaire de police nationale (actif) ou un gendarme d’active peut accéder hors service à un ERP en étant porteur de son arme si :",
@@ -2983,7 +2983,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — ERP (conditions)",
     question:
         "Parmi ces obligations hors service en ERP (police/gendarmerie), laquelle est correcte ?",
@@ -2997,7 +2997,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — ERP (contrôle)",
     question:
         "Avant de franchir un point de contrôle d’accès à un ERP, le fonctionnaire hors service doit établir sa qualité par :",
@@ -3013,7 +3013,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Délai",
     question:
         "En cas de dessaisissement ordonné (dispositions générales), le détenteur dispose en principe d’un délai de :",
@@ -3024,7 +3024,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Moyens",
     question:
         "Parmi ces modalités, laquelle est un moyen de dessaisissement prévu ?",
@@ -3039,7 +3039,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Destruction",
     question:
         "La destruction d’une arme dans le cadre du dessaisissement peut être réalisée :",
@@ -3054,7 +3054,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — A/B (délai de régularisation)",
     question:
         "Après déclaration d’une mise en possession d’une arme A/B (trouvée/succession) en vue de conservation, la personne dispose de :",
@@ -3070,7 +3070,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession — Catégorie C (certificat)",
     question:
         "En cas de mise en possession d’une arme de catégorie C (trouvée/succession) en vue de conservation, la personne doit notamment joindre :",
@@ -3085,7 +3085,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — L.317-8 CSI (amende forfaitaire)",
     question:
         "La procédure d’amende forfaitaire délictuelle est possible pour :",
@@ -3100,7 +3100,7 @@ final List<QuizQuestion> questionArmesMunitions = [
         "Cours : dernier alinéa L.317-8 CSI : AFD possible pour D (sauf armes à feu).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stockage — Catégorie B (obligations)",
     question: "Les armes de catégorie B doivent être conservées :",
     options: [
@@ -3115,7 +3115,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stockage — Catégorie B (munitions)",
     question: "Les munitions de catégorie B doivent être conservées :",
     options: [
@@ -3128,7 +3128,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stockage — Catégorie C",
     question: "Les armes de catégorie C doivent être conservées de manière à :",
     options: [
@@ -3142,7 +3142,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stockage — Catégorie D",
     question: "Les armes de catégorie D doivent être conservées :",
     options: [
@@ -3155,7 +3155,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport — Sécurité",
     question: "Lors d’un transport légitime, une arme doit être :",
     options: [
@@ -3169,7 +3169,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport — Moyen de neutralisation",
     question:
         "Quel moyen rend une arme 'inutilisable immédiatement' lors du transport ?",
@@ -3185,7 +3185,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perte/Vol — Obligation",
     question:
         "En cas de perte ou de vol d’une arme ou de munitions, le détenteur doit :",
@@ -3200,7 +3200,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perte/Vol — Suite administrative",
     question: "Après déclaration de perte ou de vol, l’administration peut :",
     options: [
@@ -3213,7 +3213,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession — Catégorie C",
     question:
         "La cession d’une arme de catégorie C entre particuliers nécessite :",
@@ -3228,7 +3228,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession — Catégorie B",
     question: "La cession d’une arme de catégorie B est possible uniquement :",
     options: [
@@ -3242,7 +3242,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "SIA — Compte détenteur",
     question: "Le Système d’Information sur les Armes (SIA) permet notamment :",
     options: [
@@ -3256,7 +3256,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "SIA — Obligation",
     question: "Tout détenteur légal d’armes doit :",
     options: [
@@ -3269,7 +3269,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Contrôle — Forces de l’ordre",
     question:
         "Les forces de l’ordre peuvent contrôler la détention et la conservation des armes :",
@@ -3284,7 +3284,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanction — Non-respect stockage",
     question:
         "Le non-respect des règles de conservation des armes peut entraîner :",
@@ -3298,7 +3298,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanction — Confiscation",
     question: "La confiscation d’armes peut être prononcée :",
     options: [
@@ -3311,7 +3311,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité — Prêt d’arme",
     question: "Le prêt d’une arme est autorisé :",
     options: [
@@ -3326,7 +3326,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Responsabilité — Usage",
     question: "Le détenteur légal d’une arme est responsable :",
     options: [
@@ -3339,7 +3339,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Neutralisation — Effet juridique",
     question: "Une arme neutralisée conformément aux normes en vigueur :",
     options: [
@@ -3353,7 +3353,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rappel — Principe général",
     question: "Quel est le principe fondamental du droit des armes en France ?",
     options: [
@@ -3365,7 +3365,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Cours : principe cardinal du CSI en matière d’armes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme à feu",
     question: "Une arme à feu est définie comme une arme qui :",
     options: [
@@ -3378,7 +3378,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme blanche",
     question: "Une arme blanche est caractérisée par :",
     options: [
@@ -3392,7 +3392,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme camouflée",
     question: "Une arme camouflée est une arme :",
     options: [
@@ -3406,7 +3406,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme d’épaule",
     question: "Une arme d’épaule est une arme :",
     options: [
@@ -3419,7 +3419,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme de poing",
     question: "Une arme de poing se définit comme une arme :",
     options: [
@@ -3432,7 +3432,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Élément d’arme",
     question: "Lequel est considéré comme un élément essentiel d’arme ?",
     options: ["Le canon", "La bretelle", "La crosse en bois"],
@@ -3442,7 +3442,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Munition",
     question: "Une munition à projectile expansif est une munition :",
     options: [
@@ -3455,7 +3455,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Munition perforante",
     question: "Une munition perforante est caractérisée notamment par :",
     options: [
@@ -3468,7 +3468,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Neutralisation — Définition",
     question: "Une arme neutralisée est une arme :",
     options: [
@@ -3482,7 +3482,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Principe",
     question: "Pour un particulier, le port d’arme est en principe :",
     options: [
@@ -3496,7 +3496,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport — Motif légitime",
     question: "Constitue un motif légitime de transport d’arme :",
     options: [
@@ -3510,7 +3510,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport — Appréciation",
     question: "L’existence d’un motif légitime de transport est appréciée :",
     options: [
@@ -3523,7 +3523,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément moral",
     question: "Le port ou transport illégal d’arme est une infraction :",
     options: [
@@ -3536,7 +3536,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Circonstance aggravante",
     question:
         "Le port d’arme illégal commis par plusieurs personnes constitue :",
@@ -3551,7 +3551,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Principe",
     question: "L’autorisation de détention d’arme est juridiquement :",
     options: [
@@ -3565,7 +3565,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Durée",
     question:
         "Une autorisation de détention d’arme de catégorie B est valable :",
@@ -3575,7 +3575,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Silence administratif",
     question:
         "Le silence de l’administration pendant 3 mois sur une demande d’autorisation vaut :",
@@ -3585,7 +3585,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Principe",
     question:
         "Lorsqu’une autorisation arrive à expiration sans renouvellement, le détenteur doit :",
@@ -3599,7 +3599,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Modalités",
     question: "Parmi les moyens légaux de dessaisissement figure :",
     options: [
@@ -3612,7 +3612,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principe général — Sécurité publique",
     question: "La réglementation des armes vise principalement à :",
     options: [
@@ -3624,7 +3624,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "Finalité essentielle de la loi sur les armes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A",
     question:
         "Quel est le principe juridique applicable aux armes de catégorie A ?",
@@ -3638,7 +3638,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Une arme d’épaule semi-automatique dont la longueur peut être réduite à moins de 60 cm est classée :",
@@ -3648,7 +3648,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2",
     question:
         "Les véhicules de combat équipés pour le montage d’armes relèvent de :",
@@ -3658,7 +3658,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question:
         "Une arme à impulsion électrique permettant un tir à distance est classée :",
@@ -3668,7 +3668,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question:
         "Les générateurs d’aérosols incapacitants de plus de 100 ml sont classés :",
@@ -3678,7 +3678,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C",
     question:
         "Une arme d’épaule à répétition manuelle d’une capacité maximale de 11 coups est :",
@@ -3688,7 +3688,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C",
     question: "Une arme neutralisée selon les normes officielles relève de :",
     options: ["Catégorie C", "Catégorie A", "Aucune catégorie"],
@@ -3697,7 +3697,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D",
     question: "Les couteaux et poignards sont classés :",
     options: ["Catégorie D", "Catégorie C", "Catégorie B"],
@@ -3706,7 +3706,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Munition",
     question: "Une douille amorcée est une douille :",
     options: [
@@ -3719,7 +3719,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Munition",
     question: "Une munition neutralisée doit obligatoirement :",
     options: [
@@ -3732,7 +3732,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Principe",
     question: "Le transport d’une arme sans motif légitime constitue :",
     options: [
@@ -3745,7 +3745,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Domicile",
     question: "Le domicile inclut également :",
     options: [
@@ -3758,7 +3758,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Catégories A et B",
     question:
         "Pour les catégories A et B, le transport est autorisé uniquement :",
@@ -3768,7 +3768,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément matériel",
     question: "La détention d’arme suppose :",
     options: [
@@ -3781,7 +3781,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément moral",
     question: "L’auteur doit avoir conscience :",
     options: [
@@ -3794,7 +3794,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Circonstance aggravante",
     question: "La récidive légale entraîne :",
     options: [
@@ -3807,7 +3807,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Tentative",
     question: "La tentative de détention illégale d’arme est :",
     options: ["Punissable", "Non punissable", "Une contravention"],
@@ -3816,7 +3816,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Exemption",
     question: "Une personne peut être exemptée de peine si elle :",
     options: [
@@ -3829,7 +3829,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Acquisition",
     question:
         "Après notification, le délai pour acquérir une arme de catégorie B est de :",
@@ -3839,7 +3839,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Renouvellement",
     question: "La demande de renouvellement doit être déposée :",
     options: ["3 mois avant expiration", "À expiration", "Après expiration"],
@@ -3848,7 +3848,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Principe",
     question: "L’acquisition d’armes par un mineur est :",
     options: [
@@ -3861,7 +3861,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Catégorie D",
     question:
         "Un mineur de plus de 9 ans peut détenir certaines armes de catégorie D s’il possède :",
@@ -3875,7 +3875,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Catégorie C",
     question:
         "À partir de quel âge un mineur peut-il détenir une arme de catégorie C avec licence ?",
@@ -3885,7 +3885,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Délai",
     question: "Le délai général pour se dessaisir d’une arme est de :",
     options: ["3 mois", "1 mois", "6 mois"],
@@ -3894,7 +3894,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Modalité",
     question: "La destruction d’une arme doit être effectuée par :",
     options: ["Un armurier", "Le détenteur", "La mairie"],
@@ -3903,7 +3903,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Traçabilité",
     question: "La traçabilité vise à :",
     options: [
@@ -3916,7 +3916,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Activités — Armurier",
     question:
         "Est considéré comme armurier toute personne dont l’activité consiste à :",
@@ -3929,7 +3929,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.311-1 CSI 3°.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Système d’alimentation",
     question: "Un chargeur amovible est juridiquement considéré comme :",
     options: [
@@ -3942,7 +3942,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Élément de munition",
     question:
         "Parmi les éléments suivants, lequel est un élément de munition ?",
@@ -3952,7 +3952,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Munition incendiaire",
     question: "Une munition incendiaire se caractérise par :",
     options: [
@@ -3966,7 +3966,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Munition explosive",
     question: "Une munition explosive contient :",
     options: [
@@ -3979,7 +3979,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question: "Les éléments d’armes relevant de la catégorie A1 sont :",
     options: [
@@ -3992,7 +3992,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Un chargeur d’arme de poing contenant plus de 20 munitions est classé :",
@@ -4002,7 +4002,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A1",
     question:
         "Un chargeur d’arme d’épaule à percussion centrale contenant 15 coups est :",
@@ -4012,7 +4012,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie A2",
     question:
         "Les matériels de cryptologie conçus pour l’usage militaire sont classés :",
@@ -4022,7 +4022,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question:
         "Une arme d’épaule à répétition manuelle d’une capacité de 20 coups est :",
@@ -4032,7 +4032,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie B",
     question:
         "Une arme à répétition manuelle à canon lisse avec pompe est classée :",
@@ -4042,7 +4042,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C",
     question: "Une arme à un coup par canon relève de :",
     options: ["Catégorie C", "Catégorie D", "Catégorie B"],
@@ -4051,7 +4051,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie C",
     question:
         "Les systèmes d’alimentation des armes de catégorie C sont classés :",
@@ -4061,7 +4061,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D",
     question: "Une arme à impulsion électrique de contact est classée :",
     options: [
@@ -4074,7 +4074,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — Catégorie D",
     question: "Une arme factice développe une énergie à la bouche :",
     options: [
@@ -4087,7 +4087,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Notion",
     question: "Le port d’arme se distingue du transport car l’arme est :",
     options: ["Utilisable immédiatement", "Déchargée", "Placée dans un étui"],
@@ -4096,7 +4096,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Lieu",
     question: "Le port d’arme est interdit :",
     options: [
@@ -4109,7 +4109,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Autorisation",
     question: "Une autorisation de détention permet-elle le port d’arme ?",
     options: ["Non", "Oui automatiquement", "Oui avec déclaration"],
@@ -4118,7 +4118,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Détention",
     question: "La détention d’arme est caractérisée même si :",
     options: [
@@ -4131,7 +4131,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Tentative",
     question: "La tentative d’acquisition illégale d’arme est :",
     options: ["Punissable", "Non punissable", "Une contravention"],
@@ -4140,7 +4140,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Complicité",
     question: "La complicité en matière d’infraction sur les armes est :",
     options: ["Punissable", "Exclue", "Limitée aux professionnels"],
@@ -4149,7 +4149,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Aggravation",
     question: "L’infraction est aggravée lorsqu’elle est commise :",
     options: ["Par plusieurs personnes", "Par un majeur", "De nuit"],
@@ -4158,7 +4158,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Personnes morales",
     question: "Les personnes morales peuvent être pénalement responsables :",
     options: ["Oui", "Non", "Uniquement en matière administrative"],
@@ -4167,7 +4167,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Nature juridique",
     question: "L’autorisation préfectorale est :",
     options: ["Révocable", "Définitive", "Un droit acquis"],
@@ -4176,7 +4176,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Retrait",
     question: "Une autorisation peut être retirée pour :",
     options: [
@@ -4189,7 +4189,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "FINIADA",
     question: "L’inscription au FINIADA entraîne :",
     options: [
@@ -4202,7 +4202,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "FINIADA",
     question: "Le FINIADA est un fichier :",
     options: ["Administratif", "Judiciaire uniquement", "Privé"],
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisie administrative",
     question: "Toutes les catégories d’armes peuvent faire l’objet :",
     options: [
@@ -4224,7 +4224,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Obligation",
     question: "Le dessaisissement peut être ordonné par :",
     options: ["Le préfet", "Le maire", "L’armurier"],
@@ -4233,7 +4233,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Urgence",
     question: "En cas d’urgence, la procédure de dessaisissement est :",
     options: ["Non contradictoire", "Toujours contradictoire", "Suspendue"],
@@ -4242,7 +4242,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession",
     question: "Une arme trouvée doit être :",
     options: [
@@ -4255,7 +4255,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mise en possession",
     question:
         "Le délai maximal pour se mettre en conformité après découverte est de :",
@@ -4264,7 +4264,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     explanation: "R.312-51 CSI.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme à répétition automatique",
     question: "Une arme à répétition automatique se caractérise par :",
     options: [
@@ -4277,7 +4277,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Arme à un coup",
     question: "Une arme à un coup est une arme :",
     options: [
@@ -4290,7 +4290,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Canon lisse",
     question: "Un canon lisse est un canon :",
     options: ["Sans rayures internes", "Polygonal", "À rotation du projectile"],
@@ -4299,7 +4299,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définitions — Canon rayé",
     question: "Le rôle principal des rayures d’un canon est :",
     options: [
@@ -4312,7 +4312,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — A1",
     question:
         "Une arme automatique transformée en semi-automatique reste classée :",
@@ -4322,7 +4322,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — A1",
     question:
         "Un chargeur d’arme d’épaule à percussion annulaire de 35 coups est :",
@@ -4332,7 +4332,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — A2",
     question: "Les grenades, chargées ou non, relèvent de :",
     options: ["Catégorie A2", "Catégorie A1", "Catégorie B"],
@@ -4341,7 +4341,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — A2",
     question:
         "Les matériels de vision nocturne exclusivement militaires sont classés :",
@@ -4351,7 +4351,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — B",
     question:
         "Une arme d’épaule dont la longueur totale est inférieure à 80 cm est :",
@@ -4361,7 +4361,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — B",
     question:
         "Une arme semi-automatique ayant l’apparence d’une arme automatique est :",
@@ -4371,7 +4371,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — C",
     question:
         "Une arme à répétition manuelle à pompe répondant aux critères légaux est :",
@@ -4381,7 +4381,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Classification — D",
     question:
         "Une arme développant une énergie comprise entre 2 et 20 joules est :",
@@ -4391,7 +4391,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Domicile",
     question: "Un véhicule peut être assimilé au domicile lorsque :",
     options: [
@@ -4404,7 +4404,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Cas pratique",
     question:
         "Un tireur sportif transporte son arme chargée dans un sac fermé. Il est :",
@@ -4418,7 +4418,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port et transport — Cas pratique",
     question:
         "Un chasseur transporte son arme démontée dans le coffre. Il est :",
@@ -4432,7 +4432,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément légal",
     question:
         "Le fondement légal du port sans autorisation d’arme de catégorie B est :",
@@ -4442,7 +4442,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément matériel",
     question: "Le port d’arme suppose que l’arme soit :",
     options: ["Utilisable immédiatement", "Chargée", "Visible"],
@@ -4451,7 +4451,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infractions — Élément moral",
     question: "L’infraction de port d’arme sans autorisation est :",
     options: ["Intentionnelle", "Non intentionnelle", "Matérielle"],
@@ -4460,7 +4460,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Catégorie C",
     question:
         "Le port sans motif légitime d’une arme de catégorie C est puni de :",
@@ -4474,7 +4474,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Catégorie D",
     question:
         "Le port sans motif légitime d’une arme de catégorie D est puni de :",
@@ -4488,7 +4488,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Peines — Aggravation",
     question:
         "Le transport d’armes effectué par plusieurs personnes entraîne :",
@@ -4502,7 +4502,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Refus",
     question: "Une autorisation peut être refusée en cas de :",
     options: ["Comportement incompatible", "Absence d’arme", "Domicile fixe"],
@@ -4511,7 +4511,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorisation — Psychiatrique",
     question:
         "Une personne ayant fait l’objet de soins psychiatriques sans consentement :",
@@ -4525,7 +4525,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Succession",
     question: "Une arme héritée sans autorisation doit être :",
     options: [
@@ -4538,7 +4538,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dessaisissement — Non-respect",
     question: "À défaut de mise en conformité, le préfet peut :",
     options: [
@@ -4551,7 +4551,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Traçabilité",
     question: "Le marquage d’une arme permet :",
     options: [
@@ -4564,7 +4564,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic illicite",
     question: "Le transport d’armes sans marquage constitue :",
     options: [
@@ -4577,7 +4577,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principe général",
     question: "La loi de 2012 sur les armes vise notamment à :",
     options: [
@@ -4590,7 +4590,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principe général",
     question: "Le régime des armes repose sur une logique de :",
     options: [
@@ -4603,7 +4603,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Activités — Trafic",
     question: "Le trafic illicite d’armes suppose :",
     options: [
@@ -4616,7 +4616,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principe fondamental",
     question: "Le droit des armes repose sur une logique de :",
     options: [
@@ -4629,7 +4629,7 @@ final List<QuizQuestion> questionArmesMunitions = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Port/Transport — Collectionneur",
     question:
         "La carte de collectionneur vaut titre de transport légitime pour :",
@@ -4996,7 +4996,7 @@ class _QuizArmesMunitionsState extends State<QuizArmesMunitions>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -5199,7 +5199,7 @@ class _QuizArmesMunitionsState extends State<QuizArmesMunitions>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -5382,7 +5382,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5915,10 +5914,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -6289,7 +6289,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -6330,9 +6330,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

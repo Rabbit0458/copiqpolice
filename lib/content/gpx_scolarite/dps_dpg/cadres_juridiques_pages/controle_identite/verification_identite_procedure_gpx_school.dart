@@ -16,7 +16,7 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardColor = isDark
         ? const Color(0xFF1E1E1E)
@@ -80,23 +80,23 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
+            children: const [
               // ---------- 3.3.1 Présentation immédiate ---------------------
-              const _SubTitle(
+              _SubTitle(
                 'La présentation immédiate à l’officier de police judiciaire',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Pour assurer la protection des libertés individuelles face à la vérification '
                 'd’identité, le législateur a prévu un encadrement précis des formalités '
                 'procédurales et un contrôle renforcé du procureur de la République.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Toute personne soumise à une vérification d’identité doit être présentée '
                 'immédiatement à un officier de police judiciaire. En pratique, la personne a '
                 'souvent été contrôlée par un agent de police judiciaire qui rend compte à '
                 'l’officier de police judiciaire.',
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'S’il s’agit d’un mineur, celui-ci doit être assisté de son représentant légal, '
@@ -118,11 +118,11 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // ---------- 3.3.2 Information immédiate ----------------------
-              const _SubTitle('L’information immédiate de la personne retenue'),
-              const _Paragraph.rich([
+              _SubTitle('L’information immédiate de la personne retenue'),
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'Dès sa présentation à l’officier de police judiciaire, la personne qui fait '
@@ -139,7 +139,7 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(text: ').'),
               ]),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'Par ailleurs, lorsque la mesure de garde à vue fait suite à une vérification '
@@ -172,7 +172,7 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                       'garde à vue.',
                 ),
               ]),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'S’il s’agit d’un mineur, le procureur de la République doit être obligatoirement '
@@ -187,7 +187,7 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(text: '.'),
               ]),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'L’officier de police judiciaire ou l’agent de police judiciaire informe '
@@ -207,7 +207,7 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                       'susceptible d’apporter des indications utiles sur son identité.',
                 ),
               ]),
-              const _Paragraph(
+              _Paragraph(
                 'Toutefois, cette faculté n’implique pas nécessairement un contact direct entre la '
                 'personne retenue et la personne choisie : lorsque des circonstances particulières '
                 'l’exigent, l’officier ou l’agent de police judiciaire peut procéder lui-même à cet avis. '
@@ -215,11 +215,11 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                 'vérification d’identité, sans qu’il soit permis de tenir une véritable conversation.',
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // ---------- 3.3.3 Contrôle du procureur ----------------------
-              const _SubTitle('Le contrôle du procureur de la République'),
-              const _Paragraph.rich([
+              _SubTitle('Le contrôle du procureur de la République'),
+              _Paragraph.rich([
                 TextSpan(text: 'L’'),
                 TextSpan(
                   text: 'article 78-1, alinéa 1, du code de procédure pénale',
@@ -236,13 +236,13 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                       'procureur général et la chambre de l’instruction.',
                 ),
               ]),
-              const _Paragraph(
+              _Paragraph(
                 'En pratique, c’est le procureur de la République qui dispose des moyens concrets '
                 'd’exercer ce contrôle. Celui-ci intervient à deux niveaux :',
               ),
 
-              const _IntroBullet(text: 'Pendant la durée de la rétention :'),
-              const _Paragraph.rich([
+              _IntroBullet(text: 'Pendant la durée de la rétention :'),
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'Le procureur de la République veille au bon déroulement de la détention et '
@@ -259,15 +259,15 @@ class VerificationIdentiteProcedureGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(text: ').'),
               ]),
-              const _Paragraph(
+              _Paragraph(
                 'Pour sécuriser la procédure et prévenir tout risque de contestation ultérieure, '
                 'l’officier de police judiciaire peut, après avis et accord du procureur de la '
                 'République, requérir un médecin chargé de constater l’état physique de la '
                 'personne retenue ou d’apprécier sa capacité à supporter la rétention.',
               ),
 
-              const _IntroBullet(text: 'À l’issue de la vérification :'),
-              const _Paragraph(
+              _IntroBullet(text: 'À l’issue de la vérification :'),
+              _Paragraph(
                 'À la réception du procès-verbal de vérification établi obligatoirement par '
                 'l’officier de police judiciaire, le procureur de la République exerce un contrôle '
                 'essentiellement juridique sur la régularité de la mesure, le respect des délais, des '
@@ -309,10 +309,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -377,7 +377,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -420,7 +420,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -482,7 +482,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -493,10 +493,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -508,13 +507,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -527,13 +525,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

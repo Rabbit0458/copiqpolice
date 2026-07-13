@@ -90,35 +90,35 @@ class SoinsSansConsentementPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les soins psychiatriques sans consentement sont principalement encadrés par le Code de la santé publique, notamment : ",
                 ),
                 TextSpan(
                   text: "articles L. 3212-1 à L. 3212-12 CSP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (demande d’un tiers / péril imminent) et ",
                 ),
                 TextSpan(
                   text: "articles L. 3213-1 à L. 3213-11 CSP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (décision du représentant de l’État)."),
+                TextSpan(text: " (décision du représentant de l’État)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Principe",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La prise en charge peut être une hospitalisation complète ou une autre forme (programme de soins, consultations, soins à domicile), "
@@ -156,110 +156,110 @@ class SoinsSansConsentementPage extends StatelessWidget {
             cardColor: cardProcedures,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Demande d’un tiers / Péril imminent"),
+            children: const [
+              _SubTitle("A) Demande d’un tiers / Péril imminent"),
               _Paragraph.rich([
-                const TextSpan(text: "Cadre : "),
+                TextSpan(text: "Cadre : "),
                 TextSpan(
                   text: "articles L. 3212-1 à L. 3212-12 CSP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Sur demande d’un tiers"),
-              const _Paragraph(
+              _SubTitle("1) Sur demande d’un tiers"),
+              _Paragraph(
                 "Décision prise par le directeur d’un établissement autorisé en psychiatrie lorsque :\n"
                 "• les troubles rendent impossible le consentement,\n"
                 "• l’état impose des soins immédiats avec surveillance constante justifiant une hospitalisation complète.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Demande manuscrite et signée par le tiers (famille, tuteur…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Deux certificats médicaux récents (moins de 15 jours), circonstanciés, rédigés par deux médecins différents.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) En cas de péril imminent"),
-              const _Paragraph(
+              _SubTitle("2) En cas de péril imminent"),
+              _Paragraph(
                 "Décision du directeur d’établissement lorsque :\n"
                 "• le consentement est impossible,\n"
                 "• il est impossible d’obtenir une demande d’un tiers,\n"
                 "• il existe un péril imminent pour la santé de la personne.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Un seul certificat médical circonstancié (moins de 15 jours) est requis.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Décision du représentant de l’État (Préfet)"),
+              _SubTitle("B) Décision du représentant de l’État (Préfet)"),
               _Paragraph.rich([
-                const TextSpan(text: "Cadre : "),
+                TextSpan(text: "Cadre : "),
                 TextSpan(
                   text: "articles L. 3213-1 à L. 3213-11 CSP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Procédure normale (arrêté préfectoral)"),
-              const _Paragraph(
+              _SubTitle("1) Procédure normale (arrêté préfectoral)"),
+              _Paragraph(
                 "Le préfet prononce l’admission par arrêté, au vu d’un certificat médical circonstancié "
                 "(qui ne peut pas émaner d’un psychiatre exerçant dans l’établissement d’accueil), lorsque les troubles :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Compromettent la sûreté des personnes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Ou portent atteinte, de façon grave, à l’ordre public.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Procédure d’urgence (mesure provisoire)"),
+              _SubTitle("2) Procédure d’urgence (mesure provisoire)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En cas de danger imminent pour la sûreté des personnes attesté par un avis médical, le maire (ou à Paris les commissaires de police) peut prendre des mesures provisoires : ",
                 ),
                 TextSpan(
                   text: "article L. 3213-2 CSP",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Information transmise au préfet dans les 24 heures.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sans décision préfectorale : mesures caduques au terme de 48 heures.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La “notoriété publique” ne suffit plus : un certificat / avis médical est nécessaire (suite à censure partielle de l’ancien dispositif).",
                   ),
@@ -276,30 +276,30 @@ class SoinsSansConsentementPage extends StatelessWidget {
             cardColor: cardSynth,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Lors de l’admission, une période initiale d’observation et de soins de 72 heures est mise en place.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Examen par un psychiatre du centre d’accueil : certificat médical à 24 heures.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Nouvel examen : certificat médical à 72 heures.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "À l’issue : avis motivé proposant la forme de prise en charge (hospitalisation complète ou autre).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Si la prise en charge est une hospitalisation complète, le juge des libertés et de la détention (JLD) est avisé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Mineurs",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les mineurs de moins de 16 ans relèvent d’une prise en charge en hôpital de médecine générale pour les premiers soins nécessaires.",
@@ -317,58 +317,58 @@ class SoinsSansConsentementPage extends StatelessWidget {
             cardColor: cardRoles,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le rôle des services de police consiste à prendre en charge le malade mental pour un temps aussi court que possible, "
                 "avec une surveillance permanente et directe. Les précautions de sécurité doivent être strictement respectées.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("A) Sécurisation immédiate"),
-              const _BulletPoint(
+              _SubTitle("A) Sécurisation immédiate"),
+              _BulletPoint(
                 text:
                     "Surveillance permanente et directe (jamais “laisser seul”).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Fouille de sécurité et retrait de tout objet dangereux dès l’appréhension.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Si un séjour au commissariat est indispensable",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Isoler la personne (cadre sécurisé) et mobiliser plusieurs policiers pour une surveillance constante.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ne jamais placer la personne dans les locaux de garde à vue.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Transport vers l’établissement"),
-              const _BulletPoint(
+              _SubTitle("C) Transport vers l’établissement"),
+              _BulletPoint(
                 text:
                     "Le transport vers l’établissement psychiatrique n’incombe pas aux services de police (sauf conventions particulières).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "À défaut de convention : l’établissement de destination doit assurer le transport.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Évasion d’un patient hospitalisé"),
-              const _Paragraph(
+              _SubTitle("D) Évasion d’un patient hospitalisé"),
+              _Paragraph(
                 "Les patients faisant l’objet d’une hospitalisation complète et évadés peuvent être inscrits au FPR "
                 "(dangerosité, réactions à craindre, personnes/lieux à risque).",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "En cas de découverte : effectuer une cessation de recherches selon la procédure.",
               ),
@@ -408,10 +408,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -476,7 +476,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -519,7 +519,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -581,7 +581,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -613,7 +613,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -626,7 +626,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

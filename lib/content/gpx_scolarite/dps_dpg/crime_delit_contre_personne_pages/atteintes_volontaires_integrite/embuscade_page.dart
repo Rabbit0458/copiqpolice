@@ -120,16 +120,16 @@ class EmbuscadePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-15-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : prévoit et réprime le délit d’embuscade.",
                 ),
               ]),
@@ -144,32 +144,32 @@ class EmbuscadePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une infraction préparée"),
-              const _SubTitle("1) Mise en place d’un guet-apens"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une infraction préparée"),
+              _SubTitle("1) Mise en place d’un guet-apens"),
+              _Paragraph(
                 "Le guet-apens se caractérise par le fait « d’attendre un certain temps et dans un lieu déterminé » la victime. "
                 "L’auteur cherche à provoquer un effet de surprise empêchant la victime de préparer sa défense.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) En vue de violences avec usage ou menace d’une arme",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur projette de commettre des violences à l’encontre de la victime par l’intermédiaire d’une arme, "
                 "qu’il s’agisse d’une arme par nature ou par destination (arme à feu, couteau, bâton, chien, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Est également visée la menace d’une arme : l’auteur cherche alors à provoquer un choc émotionnel "
                 "ou un trouble psychologique.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les violences n’ont pas besoin d’être réalisées : l’embuscade sanctionne la préparation et l’infraction "
                         "est constituée indépendamment de toute atteinte à la personne. Si l’auteur passe à l’action, il sera "
@@ -177,20 +177,20 @@ class EmbuscadePage extends StatelessWidget {
                   ),
                   TextSpan(
                     text: "l’article 222-14-3 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une victime particulière"),
-              const _SubTitle("1) Une victime visée par la loi"),
-              const _Paragraph(
+              _SubTitle("B) Une victime particulière"),
+              _SubTitle("1) Une victime visée par la loi"),
+              _Paragraph(
                 "Le texte vise notamment :\n"
                 "• les agents de la force publique (police nationale, gendarmerie),\n"
                 "• un membre du personnel de l’administration pénitentiaire,\n"
@@ -200,18 +200,18 @@ class EmbuscadePage extends StatelessWidget {
                 "• ainsi que le conjoint, ascendant, descendant en ligne directe, ou toute personne vivant habituellement au domicile "
                 "de la personne protégée.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Un contexte lié aux fonctions / à la qualité",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’infraction doit être commise :\n"
                 "• soit à l’occasion de l’exercice des fonctions ou de la mission,\n"
                 "• soit en raison de la qualité de la victime (que l’auteur connaissait ou ne pouvait ignorer).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La victime (ou son conjoint/ascendant/descendant/personne vivant au domicile) doit être visée :\n"
                 "• soit parce qu’elle est en service / accomplit un acte entrant dans ses attributions,\n"
                 "• soit parce que sa qualité motive l’acte de l’auteur.",
@@ -248,19 +248,19 @@ class EmbuscadePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-15-1 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "L’infraction est aggravée lorsqu’elle est commise en réunion.",
               ),
@@ -288,9 +288,9 @@ class EmbuscadePage extends StatelessWidget {
                 const TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-15-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -309,9 +309,9 @@ class EmbuscadePage extends StatelessWidget {
                 const TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
-                TextSpan(
+                const TextSpan(
                   text: "article 222-15-1 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
@@ -322,27 +322,27 @@ class EmbuscadePage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("Personnes morales"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text: "Responsabilité pénale possible conformément à ",
                 ),
                 TextSpan(
                   text: "l’article 222-16-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
               const _SubTitle("Tentative & complicité"),
               const _BulletPoint(text: "Tentative : NON."),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La tentative du délit d’embuscade n’est pas punissable : la consommation de l’infraction se situe à un stade "
                         "du processus criminel antérieur à la tentative.",
@@ -351,24 +351,24 @@ class EmbuscadePage extends StatelessWidget {
                 title: "Pourquoi ?",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+              const _Paragraph.rich([
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -406,10 +406,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -474,7 +474,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -517,7 +517,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -579,7 +579,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -611,7 +611,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -624,7 +624,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

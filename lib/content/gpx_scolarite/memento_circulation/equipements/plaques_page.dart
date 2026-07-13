@@ -164,19 +164,19 @@ class PlaquesPage extends StatelessWidget {
                     "Informations techniques (ex. poids, niveau sonore à l’arrêt pour les motocyclettes…).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le numéro V.I.N. est également frappé à froid sur un élément indémontable du véhicule, à un endroit accessible (ex. cadre moto).",
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "ASTUCE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’application EUVID (via CHEOPS NG) permet d’identifier l’emplacement de la plaque constructeur et du V.I.N. sur de nombreux modèles.",
                   ),
@@ -200,9 +200,9 @@ class PlaquesPage extends StatelessWidget {
                 text: "Longueur (L), largeur (l), surface (S).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La plaque de tare doit être fixée en évidence pour un observateur placé à droite.",
                   ),
@@ -334,9 +334,9 @@ class PlaquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Selon la situation, une immobilisation peut être envisagée (notamment absence de plaque visible / plaque non conforme).",
                   ),
@@ -424,16 +424,16 @@ class PlaquesPage extends StatelessWidget {
                 cardColor: cardMoral,
                 accent: accentPink,
                 titleColor: textMain,
-                children: [
-                  const _Paragraph(
+                children: const [
+                  _Paragraph(
                     "Les délits impliquent une dimension volontaire : utilisation d’une plaque fausse/inexacte, "
                     "ou usage d’un numéro attribué à un autre véhicule, typiquement avec une volonté d’induire en erreur "
                     "ou d’échapper à des poursuites (ex. radars automatiques).",
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: 10),
                   _NotaBox(
                     bodySpans: [
-                      const TextSpan(
+                      TextSpan(
                         text:
                             "Important : les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal (selon ton mémento).",
                       ),
@@ -500,10 +500,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -568,7 +568,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -611,7 +611,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -673,7 +673,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -705,7 +705,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -718,7 +718,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

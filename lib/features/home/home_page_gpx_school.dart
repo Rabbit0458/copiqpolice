@@ -24,7 +24,11 @@ import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/details_page.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
 import 'package:copiqpolice/features/home/parametre_home.dart';
-import 'package:copiqpolice/features/onboarding/gpx_school.dart' show GpxSchoolProgram;
+import 'package:copiqpolice/features/onboarding/gpx_school.dart'
+    show GpxSchoolProgram, GpxSchoolArt;
+import 'package:copiqpolice/core/services/subscription_service.dart';
+import 'package:copiqpolice/core/services/premium_guard.dart';
+import 'package:copiqpolice/features/home/premium_required_page.dart';
 
 class _T {
   static const ink = Color(0xFF1C1C1C);
@@ -48,7 +52,7 @@ class _T {
 
 Color _muted(BuildContext context, [double opacity = .7]) {
   final isDark = Theme.of(context).brightness == Brightness.dark;
-  return (isDark ? Colors.white : Colors.black).withOpacity(opacity);
+  return (isDark ? Colors.white : Colors.black).withValues(alpha: opacity);
 }
 
 // ======================================================================
@@ -423,13 +427,9 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
     required String route,
     List<SubCategoryConfig>? subs,
   }) async {
-    // ✅ Sauvegarde "Reprendre"
-    _saveLastOpened(route: route, label: label);
-
-    final redirectRoute = redirectConfig[route];
-    final target = redirectRoute ?? route;
-
     if (subs != null && subs.isNotEmpty) {
+      // ✅ Liste de cours → accès libre (l'utilisateur explore le contenu disponible)
+      _saveLastOpened(route: route, label: label);
       await Navigator.of(context).push(
         MaterialPageRoute(
           builder: (_) =>
@@ -437,17 +437,40 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
         ),
       );
     } else {
+      // ✅ Contenu direct → guard premium ici (cours, quiz, module détaillé)
+      final subState = SubscriptionService.instance.state.value;
+      if (!canAccessPremiumContent(subState)) {
+        await Navigator.of(context).pushNamed(PremiumRequiredPage.routeName);
+        return;
+      }
+      _saveLastOpened(route: route, label: label);
+      final redirectRoute = redirectConfig[route];
+      final target = redirectRoute ?? route;
       await Navigator.of(context).pushNamed(target);
     }
 
-    // ✅ refresh après retour d’un module/quiz
+    // ✅ refresh après retour d'un module/quiz
     _refreshProgress();
-    await _loadLastOpened(); // ✅ important : met à jour _lastRoute/_lastLabel après retour
+    await _loadLastOpened();
   }
 
   void _goToTab(int index) {
     HapticFeedback.selectionClick();
     setState(() => _currentTab = index);
+  }
+
+  /// Ouvre le sélecteur de programme GPX et recharge la home avec le nouveau choix.
+  Future<void> _pickNewGpxProgram() async {
+    final nav = Navigator.of(context);
+    final picked = await nav.push<GpxSchoolProgram>(
+      MaterialPageRoute(builder: (_) => const GpxSchoolArt()),
+    );
+    if (picked == null || !mounted) return;
+    HomePageGpxSchool.program = picked;
+    nav.pushAndRemoveUntil(
+      MaterialPageRoute(builder: (_) => const HomePageGpxSchool()),
+      (_) => false,
+    );
   }
 
   // =====================  BUILD  =====================
@@ -474,10 +497,10 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
         )
         .toList(growable: false);
 
-    final icons = const [
+    const icons = [
       Icons.home_rounded,
       Icons.article_rounded,
-      Icons.qr_code_rounded,
+      Icons.grid_view_rounded, // Changer de catégorie GPX
       Icons.favorite_rounded,
       Icons.person_rounded,
     ];
@@ -652,8 +675,9 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
                         : 'Découvrir';
                   },
                   onOpen: (item) {
-                    if (widget.tutorialLock)
+                    if (widget.tutorialLock) {
                       return; // ✅ swipe OK, ouverture NON
+                    }
                     _openRouteOrDetails(
                       label: item.label,
                       route: item.route,
@@ -740,7 +764,7 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
       ),
 
       const JournalGpxSchoolPage(),
-      const _StubPage(title: 'QR'),
+      const GpxSchoolArt(),
       const FavorisHomePage(),
       const ProfilPage(),
     ];
@@ -756,6 +780,12 @@ class _HomePageGpxSchoolState extends State<HomePageGpxSchool>
         currentIndex: _currentTab,
         onTap: (i) {
           if (widget.tutorialLock) return; // ✅ lock
+          if (i == 2) {
+            // Changer de catégorie GPX — même flow que home_bootstrap
+            HapticFeedback.selectionClick();
+            _pickNewGpxProgram();
+            return;
+          }
           _goToTab(i);
         },
         height: 64,
@@ -847,14 +877,14 @@ class _HeroDeck extends StatefulWidget {
   final void Function(_DeckItem item)? onOpen;
 
   const _HeroDeck({
-    Key? key,
+    super.key,
     required this.height,
     required this.items,
     required this.initialIndex,
     this.onIndexChanged,
     this.ctaLabelBuilder,
     this.onOpen,
-  }) : super(key: key);
+  });
 
   @override
   State<_HeroDeck> createState() => _HeroDeckState();
@@ -994,7 +1024,7 @@ class _HeroDeckState extends State<_HeroDeck>
     const stiffness = 420.0;
     const damping = 32.0;
 
-    final spring = phys.SpringDescription(
+    const spring = phys.SpringDescription(
       mass: 1,
       stiffness: stiffness,
       damping: damping,
@@ -1098,12 +1128,12 @@ class HeroCard extends StatefulWidget {
   final VoidCallback? onOpen;
 
   const HeroCard({
-    Key? key,
+    super.key,
     required this.item,
     required this.isDark,
     this.ctaLabel = 'Découvrir',
     this.onOpen,
-  }) : super(key: key);
+  });
 
   @override
   State<HeroCard> createState() => _HeroCardState();
@@ -1179,18 +1209,19 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
   void _open() {
     HapticFeedback.selectionClick();
 
-    // ✅ priorité : le parent gère la nav (et donc "Reprendre" persisté)
+    // Priorité : le parent gère la nav (et donc le check premium)
     if (widget.onOpen != null) {
       widget.onOpen!.call();
       return;
     }
 
-    // fallback (au cas où)
+    // Fallback direct
     final redirectRoute = redirectConfig[widget.item.route];
     final targetRoute = redirectRoute ?? widget.item.route;
     final subs = widget.item.subcategories;
 
     if (subs != null && subs.isNotEmpty) {
+      // Liste de cours → accès libre
       Navigator.of(context).push(
         MaterialPageRoute(
           builder: (_) => _CategoryDetailPage(
@@ -1200,6 +1231,12 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
         ),
       );
     } else {
+      // Contenu direct → guard premium
+      final subState = SubscriptionService.instance.state.value;
+      if (!canAccessPremiumContent(subState)) {
+        Navigator.of(context).pushNamed(PremiumRequiredPage.routeName);
+        return;
+      }
       Navigator.of(context).pushNamed(targetRoute);
     }
   }
@@ -1210,12 +1247,12 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
     try {
       img = Image.asset(widget.item.image, fit: BoxFit.cover);
     } catch (_) {
-      img = Container(color: const Color(0xFF9E9E9E).withOpacity(.25));
+      img = Container(color: const Color(0xFF9E9E9E).withValues(alpha: .25));
     }
 
     final colors = [
-      Colors.black.withOpacity(.65),
-      Colors.black.withOpacity(.30),
+      Colors.black.withValues(alpha: .65),
+      Colors.black.withValues(alpha: .30),
       Colors.transparent,
     ];
 
@@ -1253,7 +1290,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
             top: 12,
             right: 12,
             child: Material(
-              color: Theme.of(context).cardColor.withOpacity(.95),
+              color: Theme.of(context).cardColor.withValues(alpha: .95),
               shape: const CircleBorder(),
               child: InkWell(
                 customBorder: const CircleBorder(),
@@ -1302,7 +1339,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
                     style: GoogleFonts.poppins(
-                      color: Colors.white.withOpacity(.85),
+                      color: Colors.white.withValues(alpha: .85),
                       fontWeight: FontWeight.w600,
                       fontSize: 12,
                       letterSpacing: .2,
@@ -1352,7 +1389,7 @@ class _HeroCardState extends State<HeroCard> with TickerProviderStateMixin {
                         color: ctaBg,
                         borderRadius: BorderRadius.circular(18),
                         border: Border.all(
-                          color: Colors.white.withOpacity(.10),
+                          color: Colors.white.withValues(alpha: .10),
                         ),
                       ),
                       child: Row(
@@ -1422,7 +1459,7 @@ class _DepthCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       elevation: elevation,
-      shadowColor: Colors.black.withOpacity(shadowOpacity),
+      shadowColor: Colors.black.withValues(alpha: shadowOpacity),
       borderRadius: BorderRadius.circular(_T.r24),
       clipBehavior: Clip.antiAlias,
       child: child,
@@ -1569,16 +1606,15 @@ class _SlidingPillNavBar extends StatelessWidget {
   final Key? profileKey; // index 4
 
   const _SlidingPillNavBar({
-    super.key,
     required this.currentIndex,
     required this.onTap,
     required this.height,
     required this.icons,
-    this.locked = false,
     this.barKey,
     this.journalKey,
     this.favoritesKey,
     this.profileKey,
+    this.locked = false,
   });
 
   Key? _keyForIndex(int i) {
@@ -1596,7 +1632,7 @@ class _SlidingPillNavBar extends StatelessWidget {
     final dotSize = (h * 0.62).clamp(30.0, 44.0);
 
     final isDark = Theme.of(context).brightness == Brightness.dark;
-    final barColor = isDark ? Colors.white.withOpacity(.08) : _T.ink;
+    final barColor = isDark ? Colors.white.withValues(alpha: .08) : _T.ink;
 
     return SafeArea(
       top: false,
@@ -1655,7 +1691,7 @@ class _SlidingPillNavBar extends StatelessWidget {
                           final activeColor = isDark ? Colors.black : _T.ink;
                           final inactiveColor = isDark
                               ? Colors.white
-                              : Colors.white.withOpacity(.92);
+                              : Colors.white.withValues(alpha: .92);
 
                           final itemKey = _keyForIndex(i);
 
@@ -1718,7 +1754,7 @@ class _HomeActionCard extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
 
     final ink = isDark ? Colors.white : const Color(0xFF1C1C1C);
-    final muted = (isDark ? Colors.white : Colors.black).withOpacity(.65);
+    final muted = (isDark ? Colors.white : Colors.black).withValues(alpha: .65);
 
     return Material(
       color: theme.cardColor,
@@ -1739,8 +1775,8 @@ class _HomeActionCard extends StatelessWidget {
                 width: 44,
                 height: 44,
                 decoration: BoxDecoration(
-                  color: (isDark ? Colors.white : Colors.black).withOpacity(
-                    .06,
+                  color: (isDark ? Colors.white : Colors.black).withValues(
+                    alpha: .06,
                   ),
                   borderRadius: BorderRadius.circular(16),
                 ),
@@ -1822,7 +1858,7 @@ class _CategoryDetailPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -1861,7 +1897,15 @@ class _CategoryDetailPage extends StatelessWidget {
             textMain: textMain,
             textSoft: textSoft,
             isDark: isDark,
-            onTap: () => Navigator.of(context).pushNamed(sub.route),
+            onTap: () {
+              // ✅ Guard premium au niveau du cours individuel
+              final subState = SubscriptionService.instance.state.value;
+              if (!canAccessPremiumContent(subState)) {
+                Navigator.of(context).pushNamed(PremiumRequiredPage.routeName);
+                return;
+              }
+              Navigator.of(context).pushNamed(sub.route);
+            },
           );
         },
       ),
@@ -1877,10 +1921,12 @@ class _CategoryDetailPage extends StatelessWidget {
     if (l.contains('quiz generalite') || l.contains('quiz generalite')) {
       return 'assets/images/quiz.jpeg';
     }
-    if (l.contains('classification'))
+    if (l.contains('classification')) {
       return 'assets/images/classification.jpeg';
-    if (l.contains('infraction'))
+    }
+    if (l.contains('infraction')) {
       return 'assets/images/infraction_materiel.jpeg';
+    }
     if (l.contains('tentative')) return 'assets/images/infraction_legal.jpeg';
     if (l.contains('complic')) return 'assets/images/complicite.jpeg';
     if (l.contains('légitime') || l.contains('legitime')) {
@@ -2011,8 +2057,9 @@ class _CategoryDetailPage extends StatelessWidget {
     }
 
     // Contre la personne
-    if (l.contains('mise en danger'))
+    if (l.contains('mise en danger')) {
       return 'assets/images/mise_en_danger.jpeg';
+    }
     if (l.contains('viol') || l.contains('agressions sexuelles')) {
       return 'assets/images/viol_agressions.jpeg';
     }
@@ -2179,8 +2226,9 @@ class _CategoryDetailPage extends StatelessWidget {
     if (l.contains('direction') || l.contains('organisation')) {
       return 'assets/images/stup_direction_org.jpeg';
     }
-    if (l.contains('facilitation'))
+    if (l.contains('facilitation')) {
       return 'assets/images/stup_facilitation.jpeg';
+    }
     if (l.contains('production') || l.contains('fabrication')) {
       return 'assets/images/stup_production.jpeg';
     }
@@ -2197,8 +2245,9 @@ class _CategoryDetailPage extends StatelessWidget {
     if (l.contains('importation') || l.contains('exportation')) {
       return 'assets/images/stup_import_export.jpeg';
     }
-    if (l.contains('usage illicite'))
+    if (l.contains('usage illicite')) {
       return 'assets/images/conduite_stupefiants.jpeg';
+    }
 
     // Défaut
     return 'assets/images/generalite.jpeg';
@@ -2354,8 +2403,10 @@ class _ModuleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color badgeBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-    final Color borderClr = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+    final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+    final Color borderClr = Colors.white.withValues(
+      alpha: isDark ? 0.18 : 0.14,
+    );
 
     return LayoutBuilder(
       builder: (context, c) {
@@ -2387,7 +2438,7 @@ class _ModuleCard extends StatelessWidget {
         final subtitleStyle = GoogleFonts.fustat(
           fontWeight: FontWeight.w600,
           fontSize: 14,
-          color: Colors.white.withOpacity(.85),
+          color: Colors.white.withValues(alpha: .85),
           height: 1.15,
         );
 
@@ -2448,9 +2499,9 @@ class _ModuleCard extends StatelessWidget {
                           begin: Alignment.topCenter,
                           end: Alignment.bottomCenter,
                           colors: [
-                            Colors.black.withOpacity(.10),
-                            Colors.black.withOpacity(.55),
-                            Colors.black.withOpacity(.78),
+                            Colors.black.withValues(alpha: .10),
+                            Colors.black.withValues(alpha: .55),
+                            Colors.black.withValues(alpha: .78),
                           ],
                           stops: const [0.0, 0.55, 1.0],
                         ),
@@ -2541,7 +2592,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const StadiumBorder(),
       child: InkWell(
         customBorder: const StadiumBorder(),
@@ -2682,18 +2733,18 @@ class UiTokensV4 {
     final isDark = theme.brightness == Brightness.dark;
 
     final ink = isDark ? Colors.white : const Color(0xFF111111);
-    final muted = ink.withOpacity(.62);
+    final muted = ink.withValues(alpha: .62);
 
     final surface = isDark
-        ? Colors.white.withOpacity(.06)
-        : Colors.black.withOpacity(.03);
+        ? Colors.white.withValues(alpha: .06)
+        : Colors.black.withValues(alpha: .03);
 
     final glass = isDark
-        ? Colors.white.withOpacity(.055)
-        : Colors.white.withOpacity(.74);
+        ? Colors.white.withValues(alpha: .055)
+        : Colors.white.withValues(alpha: .74);
 
-    final border = ink.withOpacity(isDark ? .12 : .10);
-    final track = ink.withOpacity(isDark ? .14 : .10);
+    final border = ink.withValues(alpha: isDark ? .12 : .10);
+    final track = ink.withValues(alpha: isDark ? .14 : .10);
 
     final brand =
         brandAccent ??
@@ -2720,25 +2771,28 @@ class UiTokensV4 {
   SweepGradient brandSweep(double t) => SweepGradient(
     transform: GradientRotation(t * 2 * math.pi),
     colors: [
-      brand.withOpacity(isDark ? .95 : .85),
-      brand.withOpacity(isDark ? .22 : .16),
-      brand.withOpacity(isDark ? .95 : .85),
+      brand.withValues(alpha: isDark ? .95 : .85),
+      brand.withValues(alpha: isDark ? .22 : .16),
+      brand.withValues(alpha: isDark ? .95 : .85),
     ],
   );
 
   SweepGradient scoreSweep(double t) => SweepGradient(
     transform: GradientRotation((t + .18) * 2 * math.pi),
     colors: [
-      score.withOpacity(isDark ? .95 : .85),
-      score.withOpacity(isDark ? .22 : .16),
-      score.withOpacity(isDark ? .95 : .85),
+      score.withValues(alpha: isDark ? .95 : .85),
+      score.withValues(alpha: isDark ? .22 : .16),
+      score.withValues(alpha: isDark ? .95 : .85),
     ],
   );
 
   LinearGradient brandTint() => LinearGradient(
     begin: Alignment.topLeft,
     end: Alignment.bottomRight,
-    colors: [brand.withOpacity(isDark ? .18 : .14), Colors.transparent],
+    colors: [
+      brand.withValues(alpha: isDark ? .18 : .14),
+      Colors.transparent,
+    ],
   );
 }
 
@@ -2757,8 +2811,8 @@ class ProgressCardV4 extends StatelessWidget {
   String _formatDuration(Duration d) {
     final h = d.inHours;
     final m = d.inMinutes.remainder(60);
-    if (h <= 0) return '${m} min';
-    return '${h} h ${m.toString().padLeft(2, '0')}';
+    if (h <= 0) return '$m min';
+    return '$h h ${m.toString().padLeft(2, '0')}';
   }
 
   // Niveau = moyenne des 5 derniers quiz (ou moins si <5)
@@ -2955,15 +3009,15 @@ class ProgressCardV4 extends StatelessWidget {
                         width: 10,
                         height: 10,
                         decoration: BoxDecoration(
-                          color: mastery.color.withOpacity(
-                            uiT.isDark ? .90 : .85,
+                          color: mastery.color.withValues(
+                            alpha: uiT.isDark ? .90 : .85,
                           ),
                           shape: BoxShape.circle,
                           boxShadow: [
                             BoxShadow(
                               blurRadius: 12,
-                              color: mastery.color.withOpacity(
-                                uiT.isDark ? .20 : .14,
+                              color: mastery.color.withValues(
+                                alpha: uiT.isDark ? .20 : .14,
                               ),
                             ),
                           ],
@@ -2993,10 +3047,10 @@ class ProgressCardV4 extends StatelessWidget {
                             vertical: 7,
                           ),
                           decoration: BoxDecoration(
-                            color: mastery.color.withOpacity(.10),
+                            color: mastery.color.withValues(alpha: .10),
                             borderRadius: BorderRadius.circular(999),
                             border: Border.all(
-                              color: mastery.color.withOpacity(.22),
+                              color: mastery.color.withValues(alpha: .22),
                             ),
                           ),
                           child: Text(
@@ -3068,9 +3122,9 @@ class _TinyPill extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 5),
       decoration: BoxDecoration(
-        color: uiT.brand.withOpacity(uiT.isDark ? .10 : .08),
+        color: uiT.brand.withValues(alpha: uiT.isDark ? .10 : .08),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: uiT.brand.withOpacity(.18)),
+        border: Border.all(color: uiT.brand.withValues(alpha: .18)),
       ),
       child: Text(
         text,
@@ -3103,9 +3157,9 @@ class _MasteryChipV4 extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
       decoration: BoxDecoration(
-        color: color.withOpacity(.10),
+        color: color.withValues(alpha: .10),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: color.withOpacity(.22)),
+        border: Border.all(color: color.withValues(alpha: .22)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -3152,7 +3206,10 @@ class _BrandIconTile extends StatelessWidget {
         gradient: LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
-          colors: [uiT.brand.withOpacity(uiT.isDark ? .22 : .16), uiT.surface],
+          colors: [
+            uiT.brand.withValues(alpha: uiT.isDark ? .22 : .16),
+            uiT.surface,
+          ],
         ),
         borderRadius: BorderRadius.circular(14),
         border: Border.all(color: uiT.border),
@@ -3174,9 +3231,9 @@ class _ScoreChip extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
       decoration: BoxDecoration(
-        color: uiT.score.withOpacity(uiT.isDark ? .14 : .10),
+        color: uiT.score.withValues(alpha: uiT.isDark ? .14 : .10),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: uiT.score.withOpacity(.26)),
+        border: Border.all(color: uiT.score.withValues(alpha: .26)),
       ),
       child: Text(
         label,
@@ -3219,14 +3276,16 @@ class _DetailsButtonV4State extends State<_DetailsButtonV4> {
           padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(999),
-            color: widget.uiT.brand.withOpacity(widget.uiT.isDark ? .12 : .10),
-            border: Border.all(color: widget.uiT.brand.withOpacity(.28)),
+            color: widget.uiT.brand.withValues(
+              alpha: widget.uiT.isDark ? .12 : .10,
+            ),
+            border: Border.all(color: widget.uiT.brand.withValues(alpha: .28)),
             boxShadow: [
               BoxShadow(
                 blurRadius: 18,
                 offset: const Offset(0, 10),
-                color: widget.uiT.brand.withOpacity(
-                  widget.uiT.isDark ? .12 : .08,
+                color: widget.uiT.brand.withValues(
+                  alpha: widget.uiT.isDark ? .12 : .08,
                 ),
               ),
             ],
@@ -3274,9 +3333,9 @@ class _StatPillV4 extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       decoration: BoxDecoration(
-        color: uiT.brand.withOpacity(uiT.isDark ? .10 : .08),
+        color: uiT.brand.withValues(alpha: uiT.isDark ? .10 : .08),
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: uiT.brand.withOpacity(.22)),
+        border: Border.all(color: uiT.brand.withValues(alpha: .22)),
       ),
       child: Row(
         mainAxisSize: MainAxisSize.min,
@@ -3296,13 +3355,13 @@ class _StatPillV4 extends StatelessWidget {
           Container(
             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
             decoration: BoxDecoration(
-              color: (uiT.isDark ? Colors.white : Colors.black).withOpacity(
-                .06,
+              color: (uiT.isDark ? Colors.white : Colors.black).withValues(
+                alpha: .06,
               ),
               borderRadius: BorderRadius.circular(999),
               border: Border.all(
-                color: (uiT.isDark ? Colors.white : Colors.black).withOpacity(
-                  .08,
+                color: (uiT.isDark ? Colors.white : Colors.black).withValues(
+                  alpha: .08,
                 ),
               ),
             ),
@@ -3473,7 +3532,7 @@ class _SpotlightPainter extends CustomPainter {
 
   @override
   void paint(Canvas canvas, Size size) {
-    final paint = Paint()..color = Colors.black.withOpacity(dimOpacity);
+    final paint = Paint()..color = Colors.black.withValues(alpha: dimOpacity);
 
     // Full screen
     final full = Path()..addRect(Offset.zero & size);
@@ -6016,7 +6075,7 @@ class _HomePageGpxSchoolDiscoveryTutorialState
                     sigmaY: _blurSigma,
                   ),
                   child: Container(
-                    color: Colors.black.withOpacity(_dimOpacity),
+                    color: Colors.black.withValues(alpha: _dimOpacity),
                   ),
                 ),
               ),
@@ -6031,14 +6090,14 @@ class _HomePageGpxSchoolDiscoveryTutorialState
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(22),
                   border: Border.all(
-                    color: const Color(0xFF1147D9).withOpacity(0.42),
+                    color: const Color(0xFF1147D9).withValues(alpha: 0.42),
                     width: 1.2,
                   ),
                   boxShadow: [
                     BoxShadow(
                       blurRadius: 22,
                       offset: const Offset(0, 14),
-                      color: const Color(0xFF1147D9).withOpacity(0.12),
+                      color: const Color(0xFF1147D9).withValues(alpha: 0.12),
                     ),
                   ],
                 ),
@@ -6116,7 +6175,7 @@ class _HomeTutorialBubbleNoSkip extends StatelessWidget {
           BoxShadow(
             blurRadius: 22,
             offset: const Offset(0, 14),
-            color: Colors.black.withOpacity(0.22),
+            color: Colors.black.withValues(alpha: 0.22),
           ),
         ],
       ),
@@ -6138,7 +6197,7 @@ class _HomeTutorialBubbleNoSkip extends StatelessWidget {
             text,
             textAlign: TextAlign.center,
             style: GoogleFonts.montserrat(
-              color: Colors.black.withOpacity(0.78),
+              color: Colors.black.withValues(alpha: 0.78),
               fontWeight: FontWeight.w700,
               fontSize: 13.3,
               height: 1.25,

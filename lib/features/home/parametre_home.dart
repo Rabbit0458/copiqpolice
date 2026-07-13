@@ -196,9 +196,9 @@ class _ParametreHomePageState extends State<ParametreHomePage> {
                               ),
                             ),
                             padding: const EdgeInsets.symmetric(horizontal: 10),
-                            child: Row(
+                            child: const Row(
                               mainAxisSize: MainAxisSize.min,
-                              children: const [
+                              children: [
                                 _PreviewDot(selected: true),
                                 SizedBox(width: 12),
                                 _PreviewDot(),

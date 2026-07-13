@@ -92,7 +92,7 @@ class QuizQuestion {
 final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   // ===================== NIVEAU FACILE =====================
   // ---------- FONDEMENTS GÉNÉRAUX ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel texte du Code civil consacre expressément le droit au respect de la vie privée ?",
@@ -106,7 +106,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 9 du Code civil énonce que « chacun a droit au respect de sa vie privée » et sert de base à la protection civile de ce droit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — principes",
     question:
         "Tout individu a droit au respect de sa personne et ne doit pas faire l’objet de discriminations notamment en raison :",
@@ -121,7 +121,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte liste de nombreux critères protégés : origine, race, religion, sexe, handicap, état de santé, situation de famille, mœurs, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — principes",
     question:
         "Les forces de sécurité doivent connaître l’arsenal législatif en matière de discrimination afin de :",
@@ -136,7 +136,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours souligne ces trois volets : prévention, constatation et répression.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — textes",
     question:
         "Quels articles du Code de la sécurité intérieure rappellent la protection et le respect des personnes, notamment privées de liberté ?",
@@ -150,7 +150,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ces dispositions du code de déontologie sont explicitement mentionnées dans le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — textes",
     question: "La loi du 28 mai 1971 concerne notamment :",
     options: [
@@ -164,7 +164,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cette loi consacre l’adhésion de la France à cette convention internationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Respect de la personne — textes",
     question: "Le Défenseur des droits a été créé par :",
     options: [
@@ -181,7 +181,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ================== NIVEAU MOYEN ==================
   // --------- CODE PÉNAL — DÉFINITION GÉNÉRALE ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — définition",
     question:
         "Selon l’article 225-1 du Code pénal, constitue une discrimination :",
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 225-1 dresse une liste très large de critères prohibés (origine, sexe, situation de famille, apparence physique, état de santé, handicap, opinions, religion, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — définition",
     question:
         "L’article 225-1-1 du Code pénal ajoute à la définition de la discrimination :",
@@ -211,7 +211,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 225-1-1 vise précisément les discriminations en lien avec le harcèlement sexuel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — définition",
     question:
         "L’article 225-1-2 du Code pénal vise les discriminations liées :",
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- DISCRIMINATIONS PAR UN FONCTIONNAIRE ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — fonctionnaires",
     question:
         "L’article 432-7 du Code pénal sanctionne la discrimination commise :",
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 432-7 vise les discriminations commises dans l’exercice ou à l’occasion des fonctions ou de la mission de service public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — fonctionnaires",
     question:
         "Selon l’article 432-7 du Code pénal, la discrimination commise par un fonctionnaire est constituée notamment lorsqu’elle consiste :",
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte cite précisément ces deux comportements comme exemples de discrimination réprimée par l’article 432-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — fonctionnaires",
     question:
         "La peine encourue par un fonctionnaire pour une discrimination au sens de l’article 432-7 est :",
@@ -274,7 +274,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- DISCRIMINATIONS PAR UN PARTICULIER ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — particuliers",
     question:
         "L’article 225-2 du Code pénal réprime notamment, lorsqu’ils sont fondés sur un critère discriminatoire, les faits consistant :",
@@ -289,7 +289,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 225-2 vise six situations principales, dont refus de fournir un bien ou un service, refus d’embauche, licenciement, conditions discriminatoires, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Code pénal — particuliers",
     question:
         "Parmi les comportements suivants, lequel peut constituer une discrimination au sens de l’article 225-2 ?",
@@ -306,7 +306,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- AUTRES INFRACTIONS & ASSOCIATIONS ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres infractions",
     question:
         "Le port ou l’exhibition d’uniformes ou emblèmes rappelant ceux des responsables de crimes contre l’humanité est :",
@@ -320,7 +320,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cet article interdit le port ou l’exhibition de tels uniformes ou emblèmes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autres infractions",
     question: "L’article 226-19 du Code pénal réprime notamment :",
     options: [
@@ -334,7 +334,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-19 interdit la constitution de certains fichiers sensibles en dehors des exceptions légales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Associations",
     question: "Les associations de lutte contre les discriminations peuvent :",
     options: [
@@ -350,7 +350,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- LOI SUR LA PRESSE ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "La diffamation à caractère raciste, antisémite, sexiste ou homophobe est réprimée par :",
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 32 de la loi sur la presse vise la diffamation à raison de ces critères.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "L’injure à caractère raciste, antisémite, sexiste ou homophobe est punie en principe :",
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 33 de la loi de 1881 prévoit cette peine, portée à trois ans et 75 000 € si l’auteur est dépositaire de l’autorité publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "Les provocations à la discrimination, à la haine ou à la violence à caractère raciste ou homophobe sont visées par :",
@@ -392,7 +392,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cet article vise les provocations à la discrimination, à la haine ou à la violence à l’égard de certains groupes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse",
     question:
         "Les infractions prévues par la loi du 29 juillet 1881 doivent en principe être commises :",
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- DROIT DU TRAVAIL — DISCRIMINATION ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "La loi du 13 juillet 1983 dite « loi Roudy » est notamment connue pour :",
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi Roudy organise l’égalité professionnelle et renforce les moyens d’action en justice.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "La loi du 16 novembre 2001 en matière de discrimination au travail :",
@@ -438,7 +438,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cette loi renforce la lutte contre les discriminations, y compris les discriminations indirectes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "L’article L. 1132-1 du Code du travail pose le principe selon lequel :",
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cet article énonce un principe général d’interdiction des discriminations en matière d’emploi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question: "L’article L. 1132-2 du Code du travail protège le salarié :",
     options: [
@@ -466,7 +466,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Il interdit toute sanction, licenciement ou mesure discriminatoire en raison de l’exercice normal du droit de grève.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question: "L’article L. 1132-3 du Code du travail protège :",
     options: [
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Aucune sanction ne peut être prise contre un salarié pour ce motif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit du travail",
     question:
         "L’article L. 1142-1 du Code du travail prohibe les discriminations fondées :",
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- HARCÈLEMENT — PÉNAL & TRAVAIL ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement sexuel",
     question:
         "Selon l’article 222-33 du Code pénal, le harcèlement sexuel consiste notamment à :",
@@ -511,7 +511,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 222-33 vise ces comportements répétés et assimile aussi la pression grave en vue d’obtenir un acte sexuel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement sexuel",
     question: "Le Code du travail (article L. 1153-1) :",
     options: [
@@ -525,7 +525,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte mentionne la protection des salariés victimes ou témoins contre les mesures de rétorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement moral",
     question:
         "L’article 222-33-2 du Code pénal définit le harcèlement moral comme des propos ou comportements répétés ayant pour effet :",
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "C’est la définition donnée par le texte, assortie de peines pénales.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Harcèlement moral",
     question:
         "En matière de fonction publique, les articles L. 133-1 et L. 133-2 du Code général de la fonction publique prévoient que :",
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ================== NIVEAU DIFFICILE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discrimination — éléments constitutifs",
     question:
         "Pour caractériser une discrimination au sens pénal, les enquêteurs doivent notamment établir :",
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte précise le rôle des enquêteurs : identifier critère, fait discriminatoire et lien entre les deux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Discrimination indirecte",
     question:
         "La discrimination indirecte, en droit du travail, correspond à :",
@@ -587,7 +587,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi du 16 novembre 2001 et la loi de 2008 définissent la discrimination indirecte de cette manière.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Charge de la preuve",
     question:
         "En matière de discrimination en droit du travail, la charge de la preuve :",
@@ -602,7 +602,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les lois Roudy, 2001 et 2008 prévoient un aménagement de la preuve, obligeant l’employeur à justifier par des éléments objectifs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Loi sur la presse — publicité",
     question:
         "Pour qu’une infraction de presse à caractère discriminatoire soit constituée (diffamation, injure, provocation), il faut notamment :",
@@ -617,7 +617,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi de 1881 suppose une publicité des propos (presse, réunion publique, moyen électronique, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Rôle opérationnel du policier",
     question:
         "En pratique, pour un fonctionnaire de police, le non-respect du principe de non-discrimination peut entraîner :",
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
     difficulty: "Difficile",
   ),
   // ---------- RÉFLEXE OPÉRATIONNEL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe opérationnel",
     question:
         "Avant toute mesure privative de liberté, le policier devrait notamment se demander :",
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le fascicule conclut sur ces trois questions-clés à se poser systématiquement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel article de la Déclaration universelle des droits de l’Homme (ONU) protège la vie privée, la famille, le domicile et la correspondance ?",
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 12 de la Déclaration universelle des droits de l’Homme protège contre les immixtions arbitraires dans la vie privée, la famille, le domicile ou la correspondance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel article de la Convention européenne des droits de l’Homme consacre le droit au respect de la vie privée et familiale, du domicile et de la correspondance ?",
@@ -667,7 +667,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 8 de la CEDH protège le droit au respect de la vie privée et familiale, du domicile et de la correspondance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "La loi du 17 juillet 1970 a principalement pour objet de renforcer :",
@@ -681,7 +681,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi du 17 juillet 1970 tend à renforcer la garantie des droits individuels, notamment par la protection de la vie privée sur les plans pénal et civil.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Quel article de la Déclaration des droits de l’Homme et du citoyen est explicitement utilisé par le Conseil constitutionnel pour rattacher le droit au respect de la vie privée ?",
@@ -691,7 +691,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le Conseil constitutionnel rattache le droit au respect de la vie privée à l’article 2 de la Déclaration de 1789, qui garantit les droits naturels de l’homme.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Le Conseil constitutionnel, dans sa décision du 18 janvier 1995, relie les atteintes les plus graves au droit au respect de la vie privée à :",
@@ -705,7 +705,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "En 1995, le Conseil constitutionnel indique que la méconnaissance grave du droit à la vie privée peut porter atteinte à la liberté individuelle, compétence du juge judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fondements juridiques",
     question:
         "Le droit au respect de la vie privée bénéficie d’une double protection :",
@@ -719,7 +719,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi du 17 juillet 1970 organise la protection de la vie privée à la fois sur le plan pénal (infractions) et sur le plan civil (action en responsabilité et mesures d’urgence).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vie privée - principe",
     question:
         "Les juridictions françaises ont une conception de la vie privée qui est :",
@@ -733,7 +733,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La jurisprudence retient une conception large de la vie privée : vie sentimentale, familiale, santé, patrimoine, convictions, loisirs, image, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vie privée - principe",
     question:
         "La divulgation de faits relevant de la vie privée est licite uniquement si :",
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Sans consentement ou notoriété publique des faits, la divulgation d’éléments de vie privée est en principe illicite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vie privée - principe",
     question:
         "Pour un policier, toute intervention (contrôle, fouille, captation d’images…) doit respecter :",
@@ -764,7 +764,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- VIDÉOPROTECTION : OBJECTIFS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "La vidéoprotection a été initialement autorisée par la loi d’orientation et de programmation relative à la sécurité du :",
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi du 21 janvier 1995 a introduit le recours à la vidéoprotection, anciennement appelée vidéosurveillance.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les dispositions relatives à la vidéoprotection figurent principalement aux articles :",
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le titre V du Code de la sécurité intérieure (articles L. 251-1 et suivants) encadre la vidéoprotection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Parmi les finalités suivantes, laquelle fait partie des objectifs de la vidéoprotection sur la voie publique ?",
@@ -803,7 +803,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La vidéoprotection vise notamment la prévention des atteintes à la sécurité des personnes et des biens dans les lieux exposés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "La vidéoprotection peut être utilisée pour constater les infractions :",
@@ -817,7 +817,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Parmi ses objectifs, la vidéoprotection permet la constatation des infractions aux règles de la circulation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les opérations de vidéoprotection ne doivent pas permettre de visualiser :",
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 251-3 du Code de la sécurité intérieure interdit de filmer l’intérieur des immeubles d’habitation et, de façon spécifique, leurs entrées.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Des systèmes de vidéoprotection peuvent-ils être installés dans des établissements recevant du public (magasins, gares, etc.) ?",
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte prévoit la possibilité de vidéoprotection dans des lieux ouverts au public particulièrement exposés aux risques d’agression ou de vol.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les commerçants peuvent mettre en œuvre un système de vidéoprotection sur la voie publique :",
@@ -859,7 +859,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Des commerçants peuvent protéger les abords immédiats de leurs installations sous réserve d’une autorisation préfectorale, après information du maire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Dans chaque département, la commission compétente en matière de vidéoprotection est :",
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cette commission, présidée par un magistrat honoraire ou une personnalité qualifiée, donne un avis et contrôle les dispositifs de vidéoprotection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "La durée maximale de conservation des images de vidéoprotection, hors nécessité de procédure pénale, est en principe limitée à :",
@@ -883,7 +883,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 252-5 CSI prévoit que les enregistrements ne peuvent être conservés au-delà d’un délai fixé par l’autorisation, sans dépasser un mois, sauf besoin d’une procédure pénale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Une autorisation de vidéoprotection est en principe délivrée pour une durée de :",
@@ -899,7 +899,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- PROTECTION PÉNALE DE LA VIE PRIVÉE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question: "L’article 226-1 du Code pénal réprime notamment le fait de :",
     options: [
@@ -912,7 +912,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-1 sanctionne la captation, l’enregistrement ou la transmission de paroles prononcées à titre privé ou confidentiel, sans consentement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Filmer, sans son consentement, une personne se trouvant dans un lieu privé constitue :",
@@ -926,7 +926,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La fixation de l’image d’une personne dans un lieu privé sans son accord est incriminée par l’article 226-1 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question: "L’article 226-2 du Code pénal concerne principalement :",
     options: [
@@ -940,7 +940,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-2 incrimine la conservation, l’utilisation ou la diffusion d’un enregistrement réalisé en violation de l’article 226-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "La diffusion, sans accord, de vidéos intimes à caractère sexuel d’une personne est appelée :",
@@ -954,7 +954,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-2-1 du Code pénal réprime cette pratique, souvent appelée pornodivulgation ou revenge porn.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "L’article 226-3-1 du Code pénal réprime le fait d’apercevoir les parties intimes d’une personne à son insu. Il s’agit de :",
@@ -964,7 +964,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte vise le voyeurisme, défini comme le fait d’user de tout moyen pour apercevoir les parties intimes d’une personne sans son consentement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question: "L’article 226-8 du Code pénal vise notamment :",
     options: [
@@ -980,7 +980,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- CAMÉRAS PIÉTONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "L’article L. 241-1 du Code de la sécurité intérieure autorise l’usage de caméras individuelles par :",
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les caméras piétons sont prévues pour les forces de sécurité étatiques dans leurs missions de prévention et de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Les enregistrements des caméras piétons peuvent être mis en œuvre :",
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les caméras individuelles peuvent être utilisées en tous lieux, y compris dans des lieux privés, pour les finalités prévues par la loi (prévention incidents, constat des infractions, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Parmi les finalités suivantes, laquelle est expressément visée pour les caméras piétons ?",
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les caméras individuelles visent notamment la prévention des incidents, le constat des infractions et la formation des agents.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question: "Les caméras piétons doivent en principe être :",
     options: [
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- PROTECTION CIVILE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question:
         "L’article 1240 du Code civil (ancien 1382) permet à une victime d’atteinte à la vie privée d’agir :",
@@ -1052,7 +1052,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 1240 permet d’engager la responsabilité civile de l’auteur d’un dommage, y compris en cas d’atteinte à la vie privée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question: "L’article 9, alinéa 2, du Code civil permet au juge :",
     options: [
@@ -1066,7 +1066,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cet alinéa permet des mesures comme le séquestre, la saisie ou d’autres mesures en référé pour faire cesser l’atteinte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question: "Le droit au respect de la vie privée s’étend :",
     options: [
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La jurisprudence protège l’image et la mémoire des personnes décédées, au bénéfice des proches.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection civile",
     question:
         "En cas d’urgence, le juge compétent pour ordonner des mesures de remise en état en matière d’atteinte à la vie privée est :",
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SECRET DES CORRESPONDANCES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question: "Le secret des correspondances protège en principe :",
     options: [
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte vise les lettres, courriels, appels, messages électroniques, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question: "L’article 226-15 du Code pénal incrimine notamment :",
     options: [
@@ -1123,7 +1123,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-15 réprime l’atteinte au secret des correspondances commise par des particuliers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question:
         "L’article 432-9 du Code pénal concerne l’atteinte au secret des correspondances commise par :",
@@ -1137,7 +1137,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 432-9 vise les atteintes commises par des fonctionnaires ou personnes chargées d’une mission de service public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question: "Le secret des correspondances peut être légalement limité :",
     options: [
@@ -1152,7 +1152,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- NOTION DE DOMICILE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Selon la Cour de cassation, le domicile est le lieu où une personne :",
@@ -1166,7 +1166,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La définition jurisprudentielle vise le lieu où la personne a le droit de se dire chez elle, quel que soit le titre juridique et l’affectation des locaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Parmi les lieux suivants, lequel est généralement considéré comme un domicile au sens pénal ?",
@@ -1180,7 +1180,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La chambre d’hôtel constitue un domicile pendant la période d’occupation, à la différence de la cour non close ou du bloc opératoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Un véhicule aménagé pour l’habitation et servant effectivement de résidence est :",
@@ -1194,7 +1194,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le véhicule aménagé pour l’habitation peut être considéré comme domicile pour la protection pénale du domicile.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - notion",
     question:
         "Parmi les lieux suivants, lequel n’est en principe pas considéré comme un domicile ?",
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- VIOLATION DE DOMICILE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Violation de domicile",
     question:
         "L’article 226-4 du Code pénal réprime la violation de domicile commise par :",
@@ -1224,7 +1224,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-4 vise l’introduction ou le maintien dans le domicile d’autrui par manœuvres, menaces, voies de fait ou contrainte, hors les cas prévus par la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Violation de domicile",
     question:
         "L’article 432-8 du Code pénal réprime la violation de domicile commise par :",
@@ -1240,7 +1240,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- FOUILLE DES VÉHICULES (PRINCIPES) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question: "En principe, un véhicule non aménagé pour l’habitation est :",
     options: [
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La fouille d’un véhicule n’est pas une perquisition domiciliaire mais porte atteinte à la vie privée et doit respecter le Code de procédure pénale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Les visites de véhicules sur réquisitions écrites du procureur de la République sont encadrées par :",
@@ -1268,7 +1268,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 78-2-2 CPP encadre les visites de véhicules, inspections de bagages et visites de navires sur réquisitions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Lorsqu’un véhicule est spécialement aménagé pour l’habitation et utilisé comme résidence, sa visite doit respecter :",
@@ -1285,7 +1285,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ===================== NIVEAU MOYENNE =====================
   // ---------- VIDÉOPROTECTION : AUTORISATION & CONTRÔLE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Qui délivre l’autorisation d’installation d’un système de vidéoprotection sur la voie publique (hors défense nationale) ?",
@@ -1300,7 +1300,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 252-1 CSI confie cette compétence au préfet (ou préfet de police à Paris), après avis de la commission départementale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "En cas d’urgence liée à un risque d’actes de terrorisme, le préfet peut :",
@@ -1315,7 +1315,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 252-6 CSI permet une autorisation provisoire sans avis préalable de la commission, pour quatre mois au maximum.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Les membres de la commission départementale de vidéoprotection peuvent accéder aux lieux équipés de caméras :",
@@ -1329,7 +1329,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 253-3 CSI encadre cet accès, avec information du procureur et garanties pour les locaux privés professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Le refus d’un responsable de locaux privés de laisser entrer la commission départementale de vidéoprotection :",
@@ -1344,7 +1344,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "En cas d’opposition, la visite ne peut avoir lieu qu’après autorisation du juge des libertés et de la détention (article L. 253-3 CSI).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Le fait d’entraver l’action de la commission départementale de vidéoprotection est puni de :",
@@ -1358,7 +1358,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 254-1 CSI prévoit cette sanction pénale en cas d’entrave à la commission.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vidéoprotection",
     question:
         "Le préfet peut ordonner la fermeture d’un établissement ouvert au public équipé d’un système de vidéoprotection sans autorisation pour :",
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- CAMÉRAS PIÉTONS : PRÉCISIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Les agents peuvent accéder aux enregistrements des caméras piétons :",
@@ -1390,7 +1390,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les agents ne peuvent consulter les images que pour des finalités strictes (recherche d’auteurs, prévention, comptes rendus fidèles).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Caméras piétons",
     question:
         "Les personnes filmées par une caméra piéton doivent, en principe :",
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- PROTECTION PÉNALE : DÉTAILS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Pour qu’il y ait atteinte à l’intimité de la vie privée par captation de paroles (article 226-1 CP), il faut que les paroles soient :",
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’incrimination vise les paroles prononcées dans un cadre privé ou confidentiel, non destinées au public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "L’infraction de conservation ou de diffusion d’un enregistrement illicite (article 226-2 CP) est :",
@@ -1436,7 +1436,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-2 sanctionne l’exploitation d’un enregistrement obtenu en violation de l’article 226-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Le voyeurisme réprimé par l’article 226-3-1 CP suppose notamment que :",
@@ -1451,7 +1451,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte vise le fait d’apercevoir les parties intimes cachées à la vue des tiers, à l’insu ou sans le consentement de la personne.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection pénale",
     question:
         "Les hypertrucages (deepfakes) représentant une personne sans indication claire de leur caractère artificiel peuvent être poursuivis sur le fondement de :",
@@ -1467,7 +1467,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SECRET DES CORRESPONDANCES : DÉTAILS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question:
         "L’atteinte au secret des correspondances (article 226-15 CP) réprime notamment :",
@@ -1481,7 +1481,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 226-15 vise aussi les correspondances émises, transmises ou reçues par voie électronique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Secret des correspondances",
     question:
         "L’article 432-9 CP aggrave l’atteinte au secret des correspondances lorsque l’auteur est :",
@@ -1498,7 +1498,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- INTERCEPTIONS JUDICIAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Les interceptions de correspondances émises par la voie des télécommunications en droit commun sont encadrées par les articles :",
@@ -1512,7 +1512,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les articles 100 et suivants CPP encadrent les interceptions ordonnées par le juge d’instruction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Pour ordonner une interception téléphonique en droit commun, il faut notamment que :",
@@ -1526,7 +1526,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les interceptions ne sont possibles que pour des infractions d’une certaine gravité (peine minimale de trois ans).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Les interceptions judiciaires décidées par le juge d’instruction sont autorisées pour une durée maximale de :",
@@ -1540,7 +1540,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La décision doit être écrite et motivée, valable quatre mois, renouvelable dans les mêmes conditions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions judiciaires",
     question:
         "Lorsqu’une interception vise le cabinet ou le domicile d’un avocat, il faut :",
@@ -1556,7 +1556,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- INTERCEPTIONS CRIMINALITÉ ORGANISÉE ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée",
     question:
         "L’article 706-95 CPP permet, pour la criminalité organisée, d’autoriser des interceptions de correspondances :",
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le JLD peut autoriser interceptions, enregistrements et transcriptions pour certaines infractions graves.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée",
     question: "L’article 706-95-1 CPP permet notamment :",
     options: [
@@ -1587,7 +1587,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- DOMICILE : INTRODUCTIONS HORS HEURES LÉGALES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - interventions",
     question:
         "Les heures légales pour les perquisitions domiciliaires sont en principe fixées entre :",
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 59 CPP fixe les heures légales pour les perquisitions, sauf exceptions prévues par la loi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - interventions",
     question:
         "Une introduction dans un domicile est possible même en dehors des heures légales notamment :",
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’appel au secours, les cris ou hurlements justifient l’entrée, même si l’alerte se révèle ensuite infondée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - interventions",
     question:
         "L’obligation de porter assistance à personne en péril (article 223-6 CP) peut :",
@@ -1632,7 +1632,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- FOUILLE DE VÉHICULES : RÉQUISITIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Sur réquisitions écrites du procureur (article 78-2-2 CPP), la durée maximale des opérations (visites de véhicules, inspections de bagages) est en principe de :",
@@ -1646,7 +1646,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La durée est de vingt-quatre heures maximum, renouvelable une fois par décision motivée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "Lorsqu’un véhicule est en circulation, la visite sur réquisitions (78-2-2 CPP) :",
@@ -1661,7 +1661,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte impose la présence du conducteur et la durée strictement nécessaire aux opérations.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "En cas de visite d’un véhicule à l’arrêt (78-2-2 CPP), si le conducteur ou le propriétaire est absent :",
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- FOUILLE DE VÉHICULES : FLAGRANCE & SÉCURITÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question: "L’article 78-2-3 CPP autorise la visite de véhicules :",
     options: [
@@ -1692,7 +1692,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La visite peut être effectuée lorsque des raisons plausibles de soupçonner un crime ou délit flagrant existent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouille des véhicules",
     question:
         "L’article 78-2-4 CPP permet la visite de véhicules et la fouille de bagages :",
@@ -1710,7 +1710,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ---------- EXCEPTIONS, RENSEIGNEMENT, GARANTIES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Renseignement",
     question:
         "La loi du vingt-quatre juillet deux mille quinze relative au renseignement a instauré :",
@@ -1725,7 +1725,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cette loi encadre les interceptions de sécurité et les accès aux données de connexion par un régime d’autorisation du Premier ministre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Renseignement",
     question:
         "L’autorisation d’une interception de sécurité au profit des services de renseignement est délivrée :",
@@ -1739,7 +1739,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les articles L. 821-2 et L. 821-4 CSI prévoient une décision écrite et motivée du Premier ministre pour une durée limitée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Renseignement",
     question:
         "La Commission nationale de contrôle des techniques de renseignement (CNCTR) a pour mission principale de :",
@@ -1756,7 +1756,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- DOMICILE & LIEUX PROTÉGÉS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - lieux protégés",
     question: "Les locaux diplomatiques sont protégés car :",
     options: [
@@ -1769,7 +1769,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La convention de Vienne prévoit l’inviolabilité des locaux diplomatiques, les forces de l’ordre ne pouvant y pénétrer sans accord.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Domicile - lieux protégés",
     question: "Les bâtiments de l’Assemblée nationale et du Sénat :",
     options: [
@@ -1785,7 +1785,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- ENQUÊTE PRÉLIMINAIRE & CONSENTEMENT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire",
     question:
         "En enquête préliminaire, la fouille d’un véhicule non assimilé à un domicile :",
@@ -1800,7 +1800,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La jurisprudence exige un consentement consigné, faute de quoi la fouille peut être assimilée à une perquisition irrégulière.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire",
     question:
         "Lorsque la fouille d’un véhicule en enquête préliminaire est assimilée à une perquisition, l’absence de consentement régulier :",
@@ -1817,7 +1817,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- MANIFESTATIONS & VÉHICULES (78-2-5) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations",
     question:
         "L’article 78-2-5 CPP autorise, sur réquisitions du procureur, lors d’une manifestation sur la voie publique :",
@@ -1832,7 +1832,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte exclut les contrôles d’identité du dispositif et cible la recherche de porteurs d’armes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Manifestations",
     question:
         "Dans le cadre de l’article 78-2-5 CPP, les contrôles d’identité :",
@@ -1848,7 +1848,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- VIE PRIVÉE & POLICE : RÉFLEXE OPÉRATIONNEL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe policier",
     question:
         "Avant toute mesure susceptible d’atteindre la vie privée (domicile, véhicule, correspondances, images), le policier devrait se demander en priorité :",
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le fascicule insiste sur trois questions : base légale, respect des garanties procédurales, nécessité/proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réflexe policier",
     question:
         "Si un agent a un doute sur la légalité d’une mesure portant atteinte à la vie privée, il devrait :",
@@ -1877,7 +1877,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte recommande de réévaluer ou d’escalader la décision en cas d’incertitude sur la base légale ou la proportionnalité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - principes",
     question:
         "Selon l’article 1 de la loi Informatique et Libertés, l’informatique doit être :",
@@ -1891,7 +1891,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 1 de la loi n° 78-17 du 6 janvier 1978 précise que l’informatique doit être au service de chaque citoyen.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - principes",
     question:
         "La loi Informatique et Libertés précise que l’informatique ne doit pas porter atteinte :",
@@ -1906,7 +1906,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte vise expressément l’identité humaine, les droits de l’homme, la vie privée et les libertés individuelles ou publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - principes",
     question: "La loi du 20 juin 2018 a notamment pour objectif :",
     options: [
@@ -1919,7 +1919,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La loi n° 2018-493 adapte la loi Informatique et Libertés au règlement général sur la protection des données (RGPD).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - rôle",
     question: "La CNIL est avant tout le régulateur français :",
     options: [
@@ -1932,7 +1932,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La CNIL est l’autorité chargée de réguler la protection des données personnelles en France.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - rôle",
     question: "La CNIL accompagne les professionnels :",
     options: [
@@ -1946,7 +1946,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle conseille les responsables de traitement pour respecter les règles de protection des données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - rôle",
     question: "La CNIL aide les particuliers à :",
     options: [
@@ -1961,7 +1961,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- STATUT & COMPOSITION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "La CNIL est composée de :",
     options: [
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte précise que la CNIL compte 18 membres, tous nommés pour un mandat de cinq ans.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "Parmi les membres de la CNIL, on trouve notamment :",
     options: [
@@ -1987,7 +1987,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La CNIL comprend des députés, des sénateurs, des représentants du CESE et des membres des hautes juridictions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "Le Défenseur des droits siège à la CNIL :",
     options: [
@@ -2000,7 +2000,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le Défenseur des droits participe aux travaux de la CNIL avec une voix consultative.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question:
         "Depuis la loi du 4 août 2014 pour l’égalité réelle entre les femmes et les hommes, la CNIL doit respecter :",
@@ -2014,7 +2014,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte impose la parité au sein de la composition de la CNIL.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question: "Le président de la CNIL est nommé :",
     options: [
@@ -2028,7 +2028,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 9 de la loi prévoit une nomination par décret du président de la République pour cinq ans.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question: "La CNIL établit et présente chaque année :",
     options: [
@@ -2042,7 +2042,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 8 de la loi impose à la CNIL de rendre un rapport annuel public aux plus hautes autorités de l’État.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question: "Les agents de la CNIL sont soumis :",
     options: [
@@ -2055,7 +2055,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 11 de la loi les soumet au secret professionnel, par référence notamment aux articles 226-13 et 413-10 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - statut",
     question: "La CNIL est une autorité :",
     options: ["Administrative indépendante", "Judiciaire", "Policière"],
@@ -2066,7 +2066,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- MISSIONS GÉNÉRALES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "L’une des missions principales de la CNIL est :",
     options: [
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’information des personnes concernées et des responsables de traitement figure au cœur de ses missions (article 8).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "La CNIL veille à ce que les traitements de données personnelles soient mis en œuvre :",
@@ -2094,7 +2094,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle s’assure du respect du cadre juridique national et européen de la protection des données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "La CNIL peut délivrer des labels :",
     options: [
@@ -2107,7 +2107,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ces labels attestent la conformité de solutions aux exigences de protection des données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "La CNIL suit l’évolution des technologies de l’information pour :",
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ===================== NIVEAU MOYENNE =====================
   // ---------- MISSIONS & POUVOIRS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "La CNIL peut présenter des observations devant une juridiction :",
@@ -2139,7 +2139,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle peut intervenir devant toute juridiction pour éclairer le juge sur les règles de protection des données.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "Pour veiller au respect de la loi, la CNIL dispose notamment :",
     options: [
@@ -2152,7 +2152,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle peut se rendre dans les locaux des organismes ou demander des documents pour vérifier la conformité des traitements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question: "En cas de manquements, la CNIL peut :",
     options: [
@@ -2165,7 +2165,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle dispose d’un pouvoir de sanction administrative (amendes, injonctions, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - missions",
     question:
         "Les infractions aux dispositions de la loi Informatique et Libertés sont prévues et réprimées par :",
@@ -2179,7 +2179,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ces articles prévoient des délits spécifiques en matière de traitements de données illicites.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - fonctionnement",
     question:
         "Selon l’article 18 de la loi, le gouvernement et les autorités publiques :",
@@ -2196,7 +2196,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- FICHIERS & TRAITEMENTS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - fichiers",
     question: "Constitue un fichier de données à caractère personnel :",
     options: [
@@ -2210,7 +2210,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La définition (article 2) vise tout ensemble structuré, quel que soit le support ou le mode d’organisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - fichiers",
     question:
         "Avec le RGPD, la plupart des déclarations préalables de fichiers auprès de la CNIL :",
@@ -2224,7 +2224,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le RGPD a remplacé la logique de déclaration par une logique de responsabilisation des responsables de traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - fichiers",
     question: "Des formalités particulières subsistent notamment pour :",
     options: [
@@ -2239,7 +2239,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- TRAITEMENTS DE SOUVERAINETÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Pour certains traitements à risques relevant du secteur public (sûreté de l’État, sécurité publique, prévention des infractions), le législateur a maintenu :",
@@ -2253,7 +2253,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 31 de la loi prévoit un avis de la CNIL pour ces traitements dits de souveraineté.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Les traitements de données génétiques ou biométriques mis en œuvre pour le compte de l’État, dans l’exercice de ses prérogatives de puissance publique :",
@@ -2268,7 +2268,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "C’est ce qu’indique l’article 32 de la loi Informatique et Libertés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Les actes autorisant la création d’un traitement de données sensibles doivent notamment préciser :",
@@ -2285,7 +2285,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- DROITS DES PERSONNES : INFORMATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question:
         "L’article 104 de la loi prévoit que la personne concernée doit être informée notamment :",
@@ -2299,7 +2299,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’information porte sur le responsable, ses coordonnées, celles du DPO le cas échéant, et les finalités du traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "La personne concernée doit également être informée :",
     options: [
@@ -2313,7 +2313,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 104 impose d’indiquer la possibilité de saisir la CNIL et les coordonnées de celle-ci.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "Parmi les éléments d’information, figure aussi :",
     options: [
@@ -2329,7 +2329,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- DROITS DES PERSONNES : ACCÈS & RECTIFICATION ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "L’article 105 prévoit que toute personne peut demander :",
     options: [
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Il s’agit du droit d’accès direct à ses données et aux informations liées au traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "L’article 106 permet à la personne concernée de demander :",
     options: [
@@ -2357,7 +2357,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ce texte consacre les droits de rectification, de complément et d’effacement des données conservées en violation de la loi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question:
         "Les décisions judiciaires et données faisant l’objet d’une procédure pénale :",
@@ -2374,7 +2374,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- FOCUS POLICE & FICHIERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question: "Les fichiers de police (TAJ, FPR, etc.) sont :",
     options: [
@@ -2387,7 +2387,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le focus opérationnel rappelle que ces fichiers sont encadrés et contrôlés par la CNIL.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "Toute création ou consultation d’un fichier de police doit reposer sur :",
@@ -2401,7 +2401,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "La légalité des traitements repose sur une base juridique précise et des finalités définies.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "En cas de doute sur la légalité d’une consultation de fichier, l’agent devrait :",
@@ -2419,7 +2419,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ---------- CNIL : INDÉPENDANCE & CONTRÔLE DE L’ÉTAT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - indépendance",
     question:
         "Le fait que la CNIL soit une autorité administrative indépendante permet notamment :",
@@ -2434,7 +2434,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Son indépendance est essentielle pour contrôler des traitements mis en œuvre par les pouvoirs publics.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL - indépendance",
     question:
         "L’impossibilité, pour le gouvernement ou les dirigeants d’entreprises publiques ou privées, de s’opposer à l’action de la CNIL signifie que :",
@@ -2451,7 +2451,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- TRAITEMENTS DE SOUVERAINETÉ : CONTENU DES ACTES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Pour des traitements de souveraineté, les actes d’autorisation doivent préciser, parmi d’autres éléments :",
@@ -2466,7 +2466,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte exige une transparence sur les éventuelles restrictions aux droits des personnes concernées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données personnelles - État",
     question:
         "Pour les traitements mis en œuvre conjointement par plusieurs responsables, les actes prévoient :",
@@ -2483,7 +2483,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- DROITS DES PERSONNES : LIMITES & ARTICULATIONS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question:
         "S’agissant des traitements de police-justice, l’articulation entre la loi Informatique et Libertés et le Code de procédure pénale implique que :",
@@ -2498,7 +2498,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 111 renvoie au CPP pour les décisions judiciaires et dossiers pénaux (ex : TAJ).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits des personnes",
     question: "Le droit à l’effacement des données dans un fichier de police :",
     options: [
@@ -2514,7 +2514,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- POLICE & BONNES PRATIQUES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "Pour un agent de police, la consultation d’un fichier de données personnelles doit respecter en priorité :",
@@ -2529,7 +2529,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le recours aux fichiers doit être justifié par la mission et la finalité déclarée du traitement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "La CNIL peut contrôler les fichiers de police pour vérifier notamment :",
@@ -2544,7 +2544,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ce sont les éléments centraux de la conformité d’un traitement de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CNIL & police",
     question:
         "En cas de contrôle de la CNIL dans un service de police, l’attitude attendue des agents est :",
@@ -2559,7 +2559,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 18 oblige les autorités et services à prendre toutes mesures utiles pour faciliter l’action de la CNIL.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "La liberté individuelle, ou sûreté, est principalement la liberté :",
@@ -2573,7 +2573,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte définit la liberté individuelle comme la liberté de ne pas subir d’arrestation, de détention ou de contrôle arbitraires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question: "La sûreté est qualifiée de :",
     options: [
@@ -2586,7 +2586,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le fascicule la décrit comme « la liberté fondamentale qui garantit toutes les autres ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question: "La sûreté est affirmée notamment par :",
     options: [
@@ -2599,7 +2599,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte mentionne notamment les articles 2, 7, 8 et 9 de la DDHC de 1789.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Toute mesure portant atteinte à la liberté d’une personne (garde à vue, détention, etc.) doit :",
@@ -2613,7 +2613,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte insiste sur la nécessité d’un fondement légal clair et d’un strict respect de la procédure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "Une mesure privative de liberté sans base légale claire peut être qualifiée :",
@@ -2627,7 +2627,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’absence de base légale fait basculer la mesure dans l’arbitraire, lourdement sanctionné.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Principes généraux",
     question:
         "En cas d’arrestation ou de détention arbitraire, la responsabilité de l’auteur :",
@@ -2643,7 +2643,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- TEXTES FONDATEURS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Textes fondamentaux",
     question:
         "La liberté individuelle est notamment protégée par un article de la Constitution de 1958 qui confie sa garde :",
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 66 de la Constitution confie à l’autorité judiciaire la garde de la liberté individuelle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Textes fondamentaux",
     question:
         "La Convention européenne des droits de l’homme protège la liberté individuelle à travers l’article :",
@@ -2671,7 +2671,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte mentionne l’article 5 de la CEDH qui encadre les cas de privation de liberté.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Textes fondamentaux",
     question: "Selon la DDHC, nul ne peut être arrêté ou détenu :",
     options: [
@@ -2688,7 +2688,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ===================== NIVEAU MOYENNE =====================
   // ---------- IDÉE CLÉ : FONDEMENT LÉGAL ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection légale",
     question:
         "L’idée clé rappelée dans le fascicule est que toute privation de liberté est d’abord :",
@@ -2702,7 +2702,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "« Pas de fondement légal clair = mesure arbitraire » : toute mesure doit être rattachée à un texte précis.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection légale",
     question:
         "Pour agir légalement, un policier doit pouvoir rattacher son action :",
@@ -2719,7 +2719,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- PRINCIPES PÉNAUX ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question: "Le principe de légalité des délits et des peines implique que :",
     options: [
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 8 de la DDHC exige une loi pénale accessible et prévisible.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question:
         "La non-rétroactivité de la loi pénale plus sévère signifie que :",
@@ -2748,7 +2748,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "En revanche, une loi plus douce bénéficie à la personne poursuivie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question:
         "La présomption d’innocence implique notamment que les mesures privatives de liberté avant jugement :",
@@ -2762,7 +2762,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Garde à vue, détention provisoire, etc. sont des mesures d’exception justifiées par des nécessités précises.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - principes",
     question: "Les garanties procédurales pénales incluent notamment :",
     options: [
@@ -2778,7 +2778,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- MESURES DÉCIDÉES PAR LES POLICIERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question: "La garde à vue est :",
     options: [
@@ -2792,7 +2792,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle est prévue aux articles 62-2 et suivants du Code de procédure pénale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question:
         "La vérification d’identité (articles 78-2 et 78-3 CPP) doit être :",
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte insiste sur le caractère limité et encadré de cette mesure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question: "La retenue judiciaire des mineurs se caractérise par :",
     options: [
@@ -2821,7 +2821,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte rappelle qu’elle est conçue pour protéger davantage les mineurs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - police",
     question: "La retenue douanière a pour finalité principale :",
     options: [
@@ -2836,7 +2836,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- MESURES DÉCIDÉES PAR LES MAGISTRATS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - magistrats",
     question: "Les mandats d’amener, de dépôt et d’arrêt sont :",
     options: [
@@ -2849,7 +2849,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ils sont délivrés par le juge d’instruction ou la juridiction de jugement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - magistrats",
     question: "La détention provisoire est décidée par :",
     options: [
@@ -2862,7 +2862,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le JLD statue sur la détention provisoire sur saisine du juge d’instruction ou de la juridiction de jugement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures judiciaires - magistrats",
     question:
         "Les mesures de sûreté après condamnation ou irresponsabilité pénale peuvent inclure :",
@@ -2879,7 +2879,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- MESURES ADMINISTRATIVES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question:
         "Les mesures administratives privatives de liberté sont décidées :",
@@ -2894,7 +2894,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elles restent des exceptions, soumises à la loi et au contrôle du juge.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question: "L’interdiction de paraître vise à empêcher une personne :",
     options: [
@@ -2908,7 +2908,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle concerne par exemple les abords d’un stade, d’un quartier sensible ou d’une manifestation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question: "L’assignation à résidence oblige une personne à :",
     options: [
@@ -2922,7 +2922,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "C’est une limitation forte de la liberté d’aller et venir, notamment utilisée en matière de terrorisme ou pour certains étrangers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question:
         "La retenue administrative dans certains contextes (perquisitions, frontières, terrorisme) doit être :",
@@ -2936,7 +2936,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte insiste sur le caractère bref de ces retenues, sous contrôle du procureur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures administratives",
     question: "Le placement en local de dégrisement vise avant tout :",
     options: [
@@ -2952,7 +2952,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SOINS PSYCHIATRIQUES SANS CONSENTEMENT ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Soins sans consentement",
     question: "L’hospitalisation psychiatrique sans consentement constitue :",
     options: [
@@ -2966,7 +2966,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Elle doit être justifiée par l’état mental de la personne et contrôlée par le juge.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Soins sans consentement",
     question:
         "L’admission en soins sans consentement sur décision du préfet est possible lorsqu’il existe :",
@@ -2980,7 +2980,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le préfet peut décider de l’admission lorsque les troubles mentaux mettent en péril la sécurité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Soins sans consentement",
     question:
         "Le juge des libertés et de la détention contrôle les hospitalisations sans consentement :",
@@ -2996,7 +2996,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- MESURES CONCERNANT LES ÉTRANGERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers - CESEDA",
     question: "La zone d’attente concerne notamment :",
     options: [
@@ -3009,7 +3009,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
     explanation: "Le CESEDA prévoit ce dispositif spécifique à la frontière.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers - CESEDA",
     question:
         "La rétention administrative dans un centre spécialisé a pour finalité principale :",
@@ -3024,7 +3024,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Il s’agit d’une mesure de police administrative en vue de l’éloignement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Étrangers - CESEDA",
     question: "La durée initiale de la rétention administrative est :",
     options: [
@@ -3040,7 +3040,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ---------- PROTECTION JUDICIAIRE DE LA SÛRETÉ ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection judiciaire",
     question:
         "L’article 66 de la Constitution confie à l’autorité judiciaire le rôle de :",
@@ -3054,7 +3054,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le fascicule cite expressément l’article 66 et ce rôle central de l’autorité judiciaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection judiciaire",
     question:
         "Le juge des libertés et de la détention (JLD) contrôle notamment :",
@@ -3069,7 +3069,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte le présente comme un acteur central de la protection de la liberté individuelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Protection judiciaire",
     question:
         "Le juge administratif peut, en matière de police administrative, ordonner en urgence :",
@@ -3086,7 +3086,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SANCTIONS PÉNALES FONCTIONNAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - fonctionnaires",
     question:
         "Le Code pénal réprime spécifiquement, pour un dépositaire de l’autorité publique, le fait :",
@@ -3101,7 +3101,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Les articles 432-4 et 432-5 C. pén. visent ces comportements graves.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - fonctionnaires",
     question:
         "L’infraction consistant à laisser se prolonger arbitrairement une détention est :",
@@ -3117,7 +3117,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SANCTIONS PÉNALES PARTICULIERS ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - particuliers",
     question:
         "Pour un particulier, l’arrestation, la détention ou la séquestration arbitraire d’une personne est réprimée :",
@@ -3131,7 +3131,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte cite cet article qui peut entraîner de lourdes peines, jusqu’à la réclusion criminelle en cas d’aggravation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions pénales - particuliers",
     question:
         "L’arrestation ou la séquestration arbitraire commise par un particulier peut être punie :",
@@ -3148,7 +3148,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SANCTIONS CIVILES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions civiles",
     question:
         "La responsabilité de l’État pour une privation de liberté illégale peut être engagée notamment sur le fondement :",
@@ -3162,7 +3162,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article 1240 fonde l’action en responsabilité pour faute d’un agent public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions civiles",
     question:
         "La victime d’une détention provisoire injustifiée peut obtenir :",
@@ -3178,7 +3178,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ---------- SANCTIONS DISCIPLINAIRES ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions disciplinaires",
     question:
         "Le Code de déontologie de la police nationale et de la gendarmerie, à l’article R. 434-17 CSI, rappelle que :",
@@ -3193,7 +3193,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Cet article consacre l’exigence de dignité et l’interdiction des violences injustifiées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions disciplinaires",
     question:
         "En cas d’atteinte illégale à la liberté individuelle, les sanctions disciplinaires possibles pour un agent vont :",
@@ -3207,7 +3207,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte mentionne l’éventail des sanctions : avertissement, exclusion, rétrogradation, jusqu’à la révocation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sanctions disciplinaires",
     question:
         "Le fascicule insiste sur le fait qu’une seule mesure irrégulière peut avoir pour l’agent :",
@@ -3221,7 +3221,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "D’où l’importance du respect strict des textes et de la rédaction rigoureuse des procès-verbaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question: "La liberté d’aller et venir est reconnue en France comme :",
     options: [
@@ -3234,7 +3234,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte précise que la liberté d’aller et venir est un principe de valeur constitutionnelle dégagé par le Conseil constitutionnel (notamment décision du 12 janvier 1977).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "La liberté d’aller et venir recouvre principalement trois dimensions :",
@@ -3248,7 +3248,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours souligne que cette liberté recouvre le mouvement, le séjour et la circulation sur le territoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "Les restrictions à la liberté d’aller et venir doivent toujours être :",
@@ -3262,7 +3262,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le « triptyque à retenir » insiste sur ces quatre exigences : texte, nécessité, adaptation, proportionnalité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "Pour les nationaux français, la liberté de mouvement sur le territoire est :",
@@ -3276,7 +3276,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte rappelle que la liberté de mouvement est la règle pour les citoyens français, sous réserve de mesures exceptionnelles prévues par la loi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — principes",
     question:
         "Pour les forces de l’ordre, un bon réflexe opérationnel consiste d’abord à identifier :",
@@ -3293,7 +3293,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
 
   // ================== NIVEAU MOYEN ==================
   // --------- CHAPITRE 1 — LIBERTÉ DE MOUVEMENT ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "La liberté de mouvement des personnes physiques correspond à :",
     options: [
@@ -3307,7 +3307,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours définit la liberté de mouvement comme la faculté de se déplacer et de résider librement sur le territoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question:
         "L’interdiction de séjour, lorsqu’elle est prononcée à l’encontre d’un national français, doit :",
@@ -3321,7 +3321,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte précise que ces mesures limitant les déplacements doivent être prévues par la loi et contrôlées par le juge.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question:
         "Pour les étrangers, la liberté de mouvement sur le territoire français est encadrée par :",
@@ -3336,7 +3336,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours rappelle que les conditions d’entrée et de séjour des étrangers sont fixées par le CESEDA.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "Les réfugiés bénéficiant de la protection internationale :",
     options: [
@@ -3350,7 +3350,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte indique que les réfugiés disposent de titres (carte de résident, titre pluriannuel) leur assurant une liberté de mouvement équivalente aux autres étrangers en situation régulière.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question:
         "Les citoyens des États membres de l’Union européenne bénéficient :",
@@ -3365,7 +3365,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Ils disposent d’un droit à la libre circulation et au libre séjour, sous réserve notamment de ne pas devenir une charge déraisonnable et de ne pas constituer une menace grave pour l’ordre public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "Les personnes sans résidence ni domicile fixe (SRDF) :",
     options: [
@@ -3379,7 +3379,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte mentionne un « droit à la domiciliation » permettant l’accès à certains droits sociaux et civiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté de mouvement",
     question: "Les gens du voyage sont notamment concernés par :",
     options: [
@@ -3394,7 +3394,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- CHAPITRE 2 — SÉJOUR DES ÉTRANGERS ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question:
         "Au-delà de trois mois, un étranger majeur qui souhaite rester en France doit :",
@@ -3408,7 +3408,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte précise que les étrangers majeurs doivent détenir un document de séjour pour un séjour de plus de trois mois.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "La carte de séjour pluriannuelle permet en principe un séjour :",
     options: [
@@ -3421,7 +3421,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours mentionne une durée maximale de quatre ans pour la carte pluriannuelle, sous conditions de stabilité et d’intégration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "La carte de résident :",
     options: [
@@ -3435,7 +3435,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte précise que la carte de résident offre une stabilité forte, généralement pour dix ans renouvelables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "L’obligation de quitter le territoire français (OQTF) est :",
     options: [
@@ -3448,7 +3448,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’OQTF est une décision préfectorale d’éloignement de l’étranger en situation irrégulière, assortie en principe d’un délai de départ volontaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "L’expulsion d’un étranger est en principe décidée :",
     options: [
@@ -3462,7 +3462,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’expulsion est une mesure grave décidée en principe par le ministre de l’Intérieur, après avis d’une commission d’expulsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour des étrangers",
     question: "L’extradition consiste à :",
     options: [
@@ -3478,7 +3478,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // --------- CHAPITRE 3 — CIRCULATION & PERMIS ---------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police de la circulation",
     question: "Le stationnement sur la voie publique :",
     options: [
@@ -3492,7 +3492,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte rappelle que le stationnement est libre mais peut être encadré (durée, zones payantes, etc.) pour la sécurité et la rotation des véhicules.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police de la circulation",
     question:
         "Les mesures d’évacuation des gens du voyage en cas d’occupation illicite supposent en principe :",
@@ -3507,7 +3507,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours décrit une procédure comprenant mise en demeure et, si nécessaire, saisine du juge pour autoriser l’évacuation forcée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Police de la circulation",
     question:
         "Le principe d’égalité devant l’usage de la voie publique implique que :",
@@ -3522,7 +3522,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte insiste sur le fait que les restrictions de circulation doivent être justifiées et non discriminatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question: "Le permis de conduire est présenté comme :",
     options: [
@@ -3536,7 +3536,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours le qualifie d’« instrument de police administrative » permettant de sanctionner les comportements dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question:
         "En cas d’infraction grave (alcool, stupéfiants, grand excès de vitesse…), les forces de l’ordre peuvent :",
@@ -3550,7 +3550,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte prévoit une rétention immédiate, suivie d’une éventuelle suspension administrative par le préfet.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question: "Le préfet peut interdire la délivrance du permis de conduire :",
     options: [
@@ -3564,7 +3564,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "L’article L. 224-7 du Code de la route permet au préfet d’interdire la délivrance du permis dans ce cas.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Permis de conduire",
     question:
         "La suspension du permis de conduire prononcée par le tribunal peut constituer :",
@@ -3580,7 +3580,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
   ),
 
   // ================== NIVEAU DIFFICILE ==================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Liberté d’aller et venir — synthèse",
     question:
         "Parmi les propositions suivantes, laquelle traduit le mieux l’équilibre à trouver pour les personnes itinérantes (gens du voyage, SRDF, etc.) ?",
@@ -3595,7 +3595,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le texte évoque explicitement cet équilibre et rappelle le contrôle de proportionnalité exercé par le Conseil d’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour & éloignement",
     question:
         "Sur le plan juridique, quelle différence essentielle sépare l’OQTF de l’expulsion ?",
@@ -3610,7 +3610,7 @@ final List<QuizQuestion> questionsLibertesPubliquesIndividuelles = [
         "Le cours distingue clairement l’OQTF (maintien irrégulier) de l’expulsion (menace grave pour l’ordre public ou la sécurité de l’État).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Séjour & éloignement",
     question:
         "L’extradition ne peut légalement aboutir, en France, à la remise d’une personne :",
@@ -3958,7 +3958,7 @@ class _QuizLibertesPubliquesIndividuellesPageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4147,7 +4147,7 @@ class _QuizLibertesPubliquesIndividuellesPageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4299,7 +4299,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4827,10 +4826,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5201,7 +5201,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5242,9 +5242,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

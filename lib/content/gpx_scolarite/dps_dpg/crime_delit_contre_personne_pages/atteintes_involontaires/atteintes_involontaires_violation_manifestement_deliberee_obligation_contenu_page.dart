@@ -115,16 +115,16 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-20 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : prévoit et réprime l’infraction."),
+                TextSpan(text: " : prévoit et réprime l’infraction."),
               ]),
             ],
           ),
@@ -137,66 +137,66 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Existence d’une obligation particulière de prudence ou de sécurité",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’obligation particulière doit être prévue par un texte : loi, décret ou arrêté. "
                 "Le règlement s’entend des actes des autorités administratives à caractère général et impersonnel.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ne constitue pas une obligation particulière (au sens du texte) : arrêté préfectoral "
                         "déclarant un immeuble insalubre et imposant des travaux : ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 10 mai 2000",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "On entend par obligation de prudence l’obligation d’adopter une attitude réfléchie quant "
                 "aux conséquences de ses actes.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Connaissance de cette obligation par la personne poursuivie",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La personne poursuivie doit avoir connaissance de l’obligation spécifique, notamment en raison "
                 "de sa formation, de ses fonctions, de ses compétences, ou de ses responsabilités personnelles "
                 "ou professionnelles.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Volonté de ne pas respecter l’obligation"),
-              const _Paragraph(
+              _SubTitle("C) Volonté de ne pas respecter l’obligation"),
+              _Paragraph(
                 "L’auteur fait un choix délibéré de ne pas respecter l’obligation. "
                 "Le dommage n’est pas voulu, mais le risque est pleinement assumé : "
                 "l’auteur connaît l’obligation de prudence/sécurité et décide de la transgresser.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un dommage"),
-              const _BulletPoint(
+              _SubTitle("D) Un dommage"),
+              _BulletPoint(
                 text:
                     "La victime doit avoir subi une atteinte physique ou psychique.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "L’ITT doit être inférieure ou égale à trois mois.",
               ),
             ],
@@ -227,29 +227,29 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-20-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : trois degrés d’aggravation."),
+                TextSpan(text: " : trois degrés d’aggravation."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) Premier degré"),
-              const _BulletPoint(
+              _SubTitle("1) Premier degré"),
+              _BulletPoint(
                 text:
                     "Lorsque l’atteinte involontaire résulte de l’agression commise par un chien, "
                     "à l’encontre du propriétaire de l’animal ou de celui qui le détient au moment des faits.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’absence de maladresse, d’imprudence, d’inattention, de négligence ou de manquement "
                         "à une obligation est présumée lorsque l’animal est, au moment des faits, en action de protection "
@@ -258,36 +258,36 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
                   TextSpan(
                     text:
                         "article L. 212-10 du Code rural et de la pêche maritime",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " (référence : "),
+                  TextSpan(text: " (référence : "),
                   TextSpan(
                     text: "article 222-19-2 II du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Deuxième degré"),
-              const _BulletPoint(
+              _SubTitle("2) Deuxième degré"),
+              _BulletPoint(
                 text:
                     "Lorsque l’infraction a été commise dans une des circonstances énumérées "
                     "aux 1° à 7° de l’article (propriété/détention illicites, état d’ivresse du propriétaire ou du détenteur, etc.).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3) Troisième degré"),
-              const _BulletPoint(
+              _SubTitle("3) Troisième degré"),
+              _BulletPoint(
                 text:
                     "Lorsque l’infraction a été commise avec deux ou plusieurs de ces circonstances.",
               ),
@@ -302,110 +302,110 @@ class AtteintesInvolontairesViolationManifestementDelibereeObligationPage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Blessures involontaires (ITT ≤ 3 mois) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravées commises par un chien (1er degré) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20-2 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravées (2e degré — 1° à 7°) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravées (2e degré — 1° à 7°) : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20-2 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravées (3e degré — 2+ circonstances) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 222-20-2 dernier alinéa du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 222-21 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
-              const _Paragraph(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
+              _Paragraph(
                 "Le résultat dommageable n’étant pas voulu par l’auteur, la tentative ne peut être retenue.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Complicité : OUI."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Complicité : OUI."),
               _Paragraph.rich([
-                const TextSpan(text: "Punissable conformément aux "),
+                TextSpan(text: "Punissable conformément aux "),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exemple",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La complicité par instigation peut être retenue pour un passager qui ordonne à son chauffeur "
                         "de franchir un feu rouge.",
@@ -448,10 +448,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -516,7 +516,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -559,7 +559,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -621,7 +621,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -653,7 +653,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -666,7 +666,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

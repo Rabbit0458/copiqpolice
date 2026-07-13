@@ -189,16 +189,16 @@ class ReglesEmploiPaPage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le policier adjoint doit porter sa carte professionnelle lorsqu’il est en service.\n\n"
                 "Elle ne peut être utilisée qu’à des fins professionnelles. "
                 "En aucun cas elle ne peut être prêtée ou reproduite. "
                 "Elle doit être restituée à la fin du contrat.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le prêt, l’utilisation frauduleuse, la perte ou le vol liés à une négligence ou à une malveillance engagent la responsabilité disciplinaire du policier adjoint.",
@@ -610,10 +610,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -625,7 +624,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -647,10 +645,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

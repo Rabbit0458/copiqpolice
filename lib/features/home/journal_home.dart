@@ -541,9 +541,9 @@ class _HeroCard extends StatelessWidget {
                             color: Colors.black.withValues(alpha: .55),
                             borderRadius: BorderRadius.circular(999),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisSize: MainAxisSize.min,
-                            children: const [
+                            children: [
                               Icon(
                                 Icons.lock_rounded,
                                 size: 18,

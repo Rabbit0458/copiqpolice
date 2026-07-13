@@ -14,7 +14,7 @@ class RepressionTentativePage extends StatelessWidget {
   const RepressionTentativePage({super.key});
 
   static const String routeName =
-      '/gpx/generalites/tentative/repression_tentative';
+      '/pa/generalites/tentative/repression_tentative';
 
   @override
   Widget build(BuildContext context) {

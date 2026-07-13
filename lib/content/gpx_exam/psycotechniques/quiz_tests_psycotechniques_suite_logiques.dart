@@ -722,7 +722,7 @@ class _QuizPsycotechniquesSuitesLogiquesState
               children: [
                 Row(
                   children: [
-                    Icon(Icons.flag_rounded, color: _Brand.bad),
+                    const Icon(Icons.flag_rounded, color: _Brand.bad),
                     const SizedBox(width: 10),
                     Text(
                       'Signaler la question',
@@ -949,7 +949,7 @@ class _QuizPsycotechniquesSuitesLogiquesState
                   : 'Ce n’est pas grave. Repars tout de suite plus concentré.',
               onBack: () {
                 Navigator.of(context).pop();
-                Navigator.of(this.context).maybePop();
+                Navigator.of(context).maybePop();
               },
               onRestart: () {
                 Navigator.of(context).pop();
@@ -1009,7 +1009,7 @@ class _QuizPsycotechniquesSuitesLogiquesState
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
         const double kBottomReportHeight = 34;
-        final double bottomBarReserved =
+        const double bottomBarReserved =
             kButtonHeight + kButtonVPad + kBottomReportHeight + 22;
 
         debugPrint(
@@ -1243,8 +1243,9 @@ class _QuizPsycotechniquesSuitesLogiquesState
                                                                       90,
                                                                 ),
                                                                 () {
-                                                                  if (!mounted)
+                                                                  if (!mounted) {
                                                                     return;
+                                                                  }
                                                                   nextQuestion();
                                                                 },
                                                               );
@@ -1368,7 +1369,7 @@ class _FatalState extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(Icons.error_outline_rounded, color: _Brand.bad, size: 42),
+                const Icon(Icons.error_outline_rounded, color: _Brand.bad, size: 42),
                 const SizedBox(height: 16),
                 Text(
                   title,
@@ -1581,7 +1582,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2322,7 +2322,7 @@ class _IntroSplash extends StatelessWidget {
                   child: Column(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(Icons.hub_rounded, size: 48, color: _Brand.accent),
+                      const Icon(Icons.hub_rounded, size: 48, color: _Brand.accent),
                       const SizedBox(height: 16),
                       Text(
                         'Comment ça marche ?',
@@ -2345,7 +2345,7 @@ class _IntroSplash extends StatelessWidget {
                       const SizedBox(height: 20),
                       Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.timer_outlined,
                             color: _Brand.accent,
                             size: 18,
@@ -2366,7 +2366,7 @@ class _IntroSplash extends StatelessWidget {
                       const SizedBox(height: 10),
                       Row(
                         children: [
-                          Icon(
+                          const Icon(
                             Icons.auto_graph_rounded,
                             color: _Brand.good,
                             size: 18,
@@ -2550,7 +2550,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2592,9 +2592,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

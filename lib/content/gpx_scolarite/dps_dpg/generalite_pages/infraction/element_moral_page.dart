@@ -145,8 +145,8 @@ class _ElementMoralPageState extends State<ElementMoralPage>
                 const _Gutter(),
 
                 // ---- Comprendre "dol"
-                SliverToBoxAdapter(
-                  child: const _GlassCard(
+                const SliverToBoxAdapter(
+                  child: _GlassCard(
                     title: 'Comprendre le mot « dol »',
                     icon: Icons.lightbulb_rounded,
                     bullets: [
@@ -347,9 +347,9 @@ class _HeaderHero extends StatelessWidget {
       borderRadius: BorderRadius.circular(999),
       border: Border.all(color: Colors.white.withValues(alpha: .22)),
     ),
-    child: Row(
+    child: const Row(
       mainAxisSize: MainAxisSize.min,
-      children: const [
+      children: [
         Icon(Icons.school_rounded, color: Colors.white, size: 18),
         SizedBox(width: 6),
         Text(

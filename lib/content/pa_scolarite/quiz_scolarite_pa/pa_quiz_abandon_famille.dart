@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionAbandonFamille = [
 class QuizAbandonFamillePA extends StatefulWidget {
   static const String grade = 'pa';
   static const String routeName =
-      '/gpx_scolarite_pages/mineurs_famille_pages/abandon_famille/quiz_abandon_famille';
+      '/pa_scolarite_pages/mineurs_famille_pages/abandon_famille/quiz_abandon_famille';
   final String uid;
   final String email;
 

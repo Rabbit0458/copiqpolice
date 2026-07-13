@@ -29,8 +29,8 @@ class ClassificationInfractionsContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
-    final Color iconOnImage = Colors.white;
+        : const Color(0xFF222222).withValues(alpha: .70);
+    const Color iconOnImage = Colors.white;
 
     return Scaffold(
       backgroundColor: bg,
@@ -196,8 +196,8 @@ class _InfractionCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color badgeBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-    final Color borderClr = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+    final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+    final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
 
     return GestureDetector(
       onTap: onTap,
@@ -229,8 +229,8 @@ class _InfractionCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),
@@ -275,7 +275,7 @@ class _InfractionCard extends StatelessWidget {
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w600,
                         fontSize: 14,
-                        color: Colors.white.withOpacity(.85),
+                        color: Colors.white.withValues(alpha: .85),
                       ),
                     ),
                   ],
@@ -296,7 +296,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const StadiumBorder(),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),

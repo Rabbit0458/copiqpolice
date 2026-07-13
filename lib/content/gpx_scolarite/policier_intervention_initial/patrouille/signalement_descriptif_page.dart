@@ -125,17 +125,17 @@ class SignalementDescriptifPage extends StatelessWidget {
             cardColor: cardPerson,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Règle d’or : précis, court, utile"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Règle d’or : précis, court, utile"),
+              _Paragraph(
                 "On suit des rubriques simples, dans un ordre logique. "
                 "L’objectif est de donner une image mentale rapide et exploitable.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Interdit",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Tout terme à caractère raciste, xénophobe, injurieux ou discriminatoire est prohibé.",
@@ -144,67 +144,67 @@ class SignalementDescriptifPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Les rubriques essentielles (checklist radio)"),
-              const _BulletPoint(text: "1) Sexe : masculin / féminin."),
-              const _BulletPoint(
+              _SubTitle("Les rubriques essentielles (checklist radio)"),
+              _BulletPoint(text: "1) Sexe : masculin / féminin."),
+              _BulletPoint(
                 text:
                     "2) Âge : mineur / majeur + estimation par tranche (ex. 20–30 ans).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "3) Taille : petite / moyenne / grande + estimation chiffrée si possible.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "4) Corpulence : mince/maigre/svelte — normale — trapue — forte.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "5) Type (termes descriptifs neutres) : caucasien, méditerranéen, moyen-oriental, maghrébin, asiatique/eurasien, indo-pakistanais, métis/mulâtre, africain/antillais, polynésien, mélanésien, amérindien.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Détails d’identification (si visibles)"),
-              const _BulletPoint(
+              _SubTitle("Détails d’identification (si visibles)"),
+              _BulletPoint(
                 text:
                     "6) Cheveux : couleur (blonds/châtains/bruns/blancs…), longueur (courts/mi-longs/longs), nature (raides/frisés/crépus…), abondance (chauve/clairsemés…), coiffure (tresses/chignon/rasés…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "7) Yeux : couleur, forme (enfoncés/globuleux/bridés…), regard (fuyant/vif/vitreux…), indices (lunettes, strabisme, pupille rouge…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "8) Barbe / moustache : couleur, longueur, forme.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "9) Visage : forme (rond/ovale/carré…), teint, sourcils, front, bouche, expression, menton, oreilles + signes particuliers (cicatrice, tatouage, piercing, grains de beauté…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "10) Démarche / silhouette / gestuelle : lourde/souple, voûtée/déhanchée, handicap, tics, droitier/gaucher…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "11) Voix : tonalité (grave/aiguë), intensité (forte/faible), élocution (rapide/lente/hachée), accent, bégaiement…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "12) Habillement : coiffure (bonnet/casquette…), nature (ville/sport/travail), type (survêt/tee-shirt/robe…), couleurs, marque, logo, chaussures, accessoires (sac, gants…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "13) Autres éléments : catégorie socio-pro présumée (si utile), nombre de personnes impliquées, direction de fuite, blessures, contexte (vol/agression…), type d’arme, moyen de locomotion, présence d’animaux.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Astuce radio",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Commence toujours par les éléments discriminants (sexe/âge/taille/corpulence) "
@@ -332,10 +332,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -400,7 +400,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -443,7 +443,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -505,7 +505,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -537,7 +537,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -550,7 +550,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

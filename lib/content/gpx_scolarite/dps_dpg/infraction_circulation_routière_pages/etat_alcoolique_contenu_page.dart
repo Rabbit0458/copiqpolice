@@ -112,16 +112,16 @@ class EtatAlcooliquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 234-1 / I et V du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la conduite sous l’empire d’un état alcoolique par un conducteur "
                       "ou par l’accompagnateur d’un élève conducteur.",
@@ -156,58 +156,58 @@ class EtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              _NotaBox(
+              const _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les seuls faits d’avoir pris le volant, mis le contact et enclenché une vitesse suffisent pour caractériser la conduite d’un véhicule ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 23 mars 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’infraction peut être relevée même si le prévenu vient de quitter son véhicule, dès lors qu’il peut être prouvé qu’il l’a conduit sous l’emprise de l’alcool ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 7 mars 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
               const SizedBox(height: 14),
 
               const _SubTitle("B) Les cas de contrôle de l’alcoolémie"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La recherche de l’état alcoolique doit être systématique dans les cas visés par ",
                 ),
                 TextSpan(
                   text: "l’article L. 234-3 alinéa 1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
               const _BulletPoint(
@@ -221,19 +221,19 @@ class EtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La recherche peut aussi être effectuée dans les cas visés par ",
                 ),
                 TextSpan(
                   text: "l’article L. 234-3 alinéa 2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
               const _BulletPoint(
@@ -247,19 +247,19 @@ class EtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Même sans infraction préalable ni accident, la recherche peut être effectuée dans le cadre de ",
                 ),
                 TextSpan(
                   text: "l’article L. 234-9 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
               const _BulletPoint(
@@ -302,52 +302,52 @@ class EtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 10),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Pour une prise de sang, l’OPJ/APJ peut requérir (notamment) un médecin ou un infirmier conformément à ",
                 ),
                 TextSpan(
                   text: "l’article L. 234-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article R. 3354-5 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 12),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "En cas d’éthylomètre, un second contrôle peut être immédiatement effectué ; il est de droit si demandé par l’intéressé (",
                 ),
                 TextSpan(
                   text: "article L. 234-5 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
 
               const SizedBox(height: 12),
 
-              _NotaBox(
+              const _NotaBox(
                 title: "Règle pratique",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’indication du taux affichée par l’éthylomètre constitue à elle seule la base légale de toute procédure et sa valeur juridique "
                         "est équivalente à celle de l’analyse de sang. Le choix du mode de vérification appartient à l’enquêteur : la demande de prélèvement sanguin "
@@ -358,38 +358,38 @@ class EtatAlcooliquePage extends StatelessWidget {
 
               const SizedBox(height: 12),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Si la personne persiste à refuser les vérifications, le délit de refus est retenu (",
                 ),
                 TextSpan(
                   text: "article L. 234-8 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
 
               const SizedBox(height: 12),
 
-              _NotaBox(
+              const _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’interprétation des mesures de concentration d’alcool dans l’air expiré effectuées au moyen d’un éthylomètre est une obligation pour le juge ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 26 mars 2019)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
@@ -405,19 +405,19 @@ class EtatAlcooliquePage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("2) Le taux contraventionnel"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "Même sans signe d’ivresse manifeste, l’infraction est contraventionnelle dans les cas prévus par ",
                 ),
                 TextSpan(
                   text: "l’article R. 234-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
               const SizedBox(height: 8),
               _ConditionCard(
@@ -461,57 +461,57 @@ class EtatAlcooliquePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Volonté de conduire après avoir consommé de l’alcool",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La conduite sous l’empire d’un état alcoolique procède d’un comportement volontaire : c’est une infraction intentionnelle au regard de ",
                 ),
                 TextSpan(
                   text: "l’article 121-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ("),
+                TextSpan(text: " ("),
                 TextSpan(
                   text: "Cass. crim., 19 décembre 1994",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "18 octobre 1995",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’élément moral peut résulter du simple fait de consommer de l’alcool alors que le conducteur sait qu’il va prendre le volant ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 19 décembre 1994)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Contraventions",
                 bodySpans: [
                   TextSpan(
@@ -531,15 +531,15 @@ class EtatAlcooliquePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Aucune circonstance aggravante spécifique n’est prévue pour cette infraction.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La conduite sous l’empire d’un état alcoolique peut aggraver les peines en cas d’homicide involontaire ou d’atteintes involontaires : "
                         "le délit peut constituer une circonstance aggravante (",
@@ -547,12 +547,12 @@ class EtatAlcooliquePage extends StatelessWidget {
                   TextSpan(
                     text:
                         "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
             ],
@@ -566,103 +566,103 @@ class EtatAlcooliquePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues"),
+            children: const [
+              _SubTitle("Peines encourues"),
               _Paragraph.rich([
-                const TextSpan(text: "Contravention : "),
-                const TextSpan(text: "750 € d’amende (amende forfaitaire). — "),
+                TextSpan(text: "Contravention : "),
+                TextSpan(text: "750 € d’amende (amende forfaitaire). — "),
                 TextSpan(
                   text: "article R. 234-1 (I 1° et V) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Contravention (autres conducteurs) : "),
-                const TextSpan(text: "750 € d’amende (amende forfaitaire). — "),
+                TextSpan(text: "Contravention (autres conducteurs) : "),
+                TextSpan(text: "750 € d’amende (amende forfaitaire). — "),
                 TextSpan(
                   text: "article R. 234-1 (I 2° et V) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 4 500 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 234-1 (I et V) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Immunité"),
-              const _SubTitle("Diplomates"),
+              _SubTitle("Immunité"),
+              _SubTitle("Diplomates"),
               _Paragraph.rich([
-                const TextSpan(text: "La convention de Vienne ("),
+                TextSpan(text: "La convention de Vienne ("),
                 TextSpan(
                   text: "article 27, décret n°71-284 du 29/03/1971",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") prévoit que les diplomates ne peuvent être soumis à aucune forme d’arrestation. "
                       "Ne pas faire subir de dépistage ou de vérification de l’alcoolémie.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Parlementaires"),
+              _SubTitle("Parlementaires"),
               _Paragraph.rich([
-                const TextSpan(text: "La Constitution de 1958 ("),
+                TextSpan(text: "La Constitution de 1958 ("),
                 TextSpan(
                   text: "article 26",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") consacre l’inviolabilité des parlementaires. Concernant les épreuves de dépistage obligatoires à la suite d’un flagrant délit "
                       "(accident mortel ou corporel grave, etc.), le dépistage peut être effectué, mais si possible, le procureur doit être préalablement informé.",
@@ -704,10 +704,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -772,7 +772,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -815,7 +815,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -877,7 +877,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -909,7 +909,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -922,7 +922,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

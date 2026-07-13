@@ -14,7 +14,7 @@ class InfructueuseTentativePage extends StatelessWidget {
   const InfructueuseTentativePage({super.key});
 
   static const String routeName =
-      '/gpx/generalites/tentative/infructueuse_tentative';
+      '/pa/generalites/tentative/infructueuse_tentative';
 
   @override
   Widget build(BuildContext context) {

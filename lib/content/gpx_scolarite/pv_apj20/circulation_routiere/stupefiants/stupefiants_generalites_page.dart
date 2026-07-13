@@ -122,54 +122,54 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Le dispositif est organisé par le "),
+                TextSpan(text: "Le dispositif est organisé par le "),
                 TextSpan(
                   text: "Code de la route (articles L. 235-1 et suivants)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et ses dispositions réglementaires "),
+                TextSpan(text: " et ses dispositions réglementaires "),
                 TextSpan(
                   text: "(articles R. 235-1 et suivants)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", qui encadrent les dépistages, les vérifications et les analyses.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les intervenants médicaux/biologiques peuvent être précisés selon les cas, notamment par ",
                   ),
                   TextSpan(
                     text: "R. 235-3 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " (expertise/actes) et, pour certains statuts : ",
                   ),
                   TextSpan(
                     text: "L. 4131-2 du Code de la santé publique",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -182,32 +182,32 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
             cardColor: cardCas,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le dépistage peut être obligatoire (certains accidents), facultatif (selon critères), "
                 "ou préventif (sur réquisitions / initiative selon les cas). Le tableau récapitule : "
                 "cas de dépistage, agents compétents et personnes visées.",
               ),
-              const SizedBox(height: 12),
-              const ZoomableAssetImage(
+              SizedBox(height: 12),
+              ZoomableAssetImage(
                 assetPath: _imgTableauCasDepistage,
                 heroTag: 'stupefiants_generalites_237',
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("À retenir (lecture rapide)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("À retenir (lecture rapide)"),
+              _BulletPoint(
                 text:
                     "Accident mortel / corporel : dépistage généralement obligatoire sur les personnes visées.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Toute infraction au Code de la route + raisons plausibles : dépistage possible (signes cliniques, résidus, objets…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur réquisitions du procureur : possible même sans accident/infraction/raisons plausibles.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "À l’initiative d’un OPJ (ou APJ sur ordre et sous responsabilité OPJ) : possible selon le cadre opérationnel.",
               ),
@@ -221,39 +221,39 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le schéma ci-dessous synthétise les embranchements : dépistage salivaire, refus, "
                 "impossibilité, prélèvements (salive/sang), examen clinique et envoi au laboratoire.",
               ),
-              const SizedBox(height: 12),
-              const ZoomableAssetImage(
+              SizedBox(height: 12),
+              ZoomableAssetImage(
                 assetPath: _imgSchemaProcedure,
                 heroTag: 'stupefiants_generalites_238',
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Points pédagogiques"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Points pédagogiques"),
+              _BulletPoint(
                 text:
                     "Dépistage salivaire : réalisé par OPJ / APJ / APJA (sur ordre et sous responsabilité d’un OPJ).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En cas de résultat positif : envoi au laboratoire + constitution du dossier (résultats, échantillon, fiche de suivi).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Refus de se soumettre aux vérifications : bascule sur la qualification délictuelle (procédure adaptée).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si prélèvement salivaire impossible (ex. conducteur gravement blessé ou décédé) : orientation vers prélèvement sanguin selon cadre.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "NOTA (pratique PV)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Toujours tracer : identité, qualité de l’agent, base légale, circonstances, déroulé chronologique, "
                         "matériel utilisé, scellés, chaîne de conservation, transmissions et réquisitions.",
@@ -270,57 +270,57 @@ class StupefiantsGeneralitesPage extends StatelessWidget {
             cardColor: cardOutils,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Agents compétents"),
+            children: const [
+              _SubTitle("Agents compétents"),
               _Paragraph.rich([
-                const TextSpan(text: "Le dépistage est réalisé par "),
-                const TextSpan(text: "OPJ"),
-                const TextSpan(text: ", "),
-                const TextSpan(text: "APJ"),
-                const TextSpan(text: " ou "),
-                const TextSpan(text: "APJA"),
-                const TextSpan(text: " (dans le cadre prévu)."),
+                TextSpan(text: "Le dépistage est réalisé par "),
+                TextSpan(text: "OPJ"),
+                TextSpan(text: ", "),
+                TextSpan(text: "APJ"),
+                TextSpan(text: " ou "),
+                TextSpan(text: "APJA"),
+                TextSpan(text: " (dans le cadre prévu)."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Pièces qui reviennent souvent"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Pièces qui reviennent souvent"),
+              _BulletPoint(
                 text:
                     "Résultat du dépistage (support/trace) + mentions de contrôle et conditions de réalisation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Fiche de suivi de prélèvement (si prélèvements) + concordance identité/scellés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Réquisitions (si médecin/biologiste requis) + visa/émargements si nécessaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transmission au laboratoire / expert + trace de remise (date/heure/personne/service).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Selon les cas, les intervenants médicaux peuvent être encadrés par ",
                 ),
                 TextSpan(
                   text: "R. 235-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et certains statuts par "),
+                TextSpan(text: " et certains statuts par "),
                 TextSpan(
                   text: "L. 4131-2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -358,10 +358,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -426,7 +426,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -469,7 +469,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -531,7 +531,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -563,7 +563,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -576,7 +576,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -628,10 +628,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -737,8 +737,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -806,10 +806,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -876,10 +876,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -918,9 +918,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -955,7 +955,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

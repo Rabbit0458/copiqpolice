@@ -293,7 +293,7 @@ class _OrganigrammeMiTable extends StatelessWidget {
     // ✅ Bloc haut (5 colonnes) séparé (pour rester lisible)
     Widget topHeader = Column(
       children: [
-        _MiniTitle("En-tête"),
+        const _MiniTitle("En-tête"),
         const SizedBox(height: 8),
         SingleChildScrollView(
           scrollDirection: Axis.horizontal,
@@ -404,7 +404,7 @@ class _OrganigrammeMiTable extends StatelessWidget {
         topHeader,
         const SizedBox(height: 14),
 
-        _MiniTitle("Colonnes principales"),
+        const _MiniTitle("Colonnes principales"),
         const SizedBox(height: 8),
 
         // ✅ Scroll horizontal + vertical
@@ -446,9 +446,9 @@ class _OrganigrammeMiTable extends StatelessWidget {
 
         const SizedBox(height: 12),
 
-        _MiniTitle("Blocs transversaux"),
+        const _MiniTitle("Blocs transversaux"),
         const SizedBox(height: 8),
-        _FooterStrip(lines: footerLines),
+        const _FooterStrip(lines: footerLines),
       ],
     );
   }
@@ -464,8 +464,8 @@ class _TableBox extends StatelessWidget {
     required this.bgColor,
     this.borderColor = Colors.black12,
     this.bold = false,
-    this.center = false,
-    this.minHeight = 64, // ✅ règle visuelle : hauteur uniforme
+    this.center = false, // ✅ règle visuelle : hauteur uniforme
+    this.minHeight = 40.0,
   });
 
   final String text;
@@ -893,10 +893,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -908,7 +907,6 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
@@ -930,10 +928,6 @@ class _NotaBox extends StatelessWidget {
                 : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

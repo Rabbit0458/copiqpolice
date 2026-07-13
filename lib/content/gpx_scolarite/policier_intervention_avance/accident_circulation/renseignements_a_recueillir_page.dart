@@ -110,43 +110,43 @@ class RenseignementsARecueillirPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les policiers agissent notamment dans les conditions fixées par ",
                 ),
                 TextSpan(
                   text: "l’article 20 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", pour rechercher et constater les infractions concernées.\n",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Infractions au code de la route et atteintes involontaires : ",
                 ),
                 TextSpan(
                   text: "article L. 130-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Après sécurisation : constatations + procédures adaptées (alcoolémie, stupéfiants, rétention du permis, etc.).",
                   ),
@@ -300,77 +300,77 @@ class RenseignementsARecueillirPage extends StatelessWidget {
             cardColor: cardPers,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Usagers (conducteurs, passagers, piétons)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Usagers (conducteurs, passagers, piétons)"),
+              _Paragraph(
                 "Sont concernés : conducteurs, passagers, piétons (et assimilés : pousser une poussette, "
                 "conduire un cycle à la main, PMR en fauteuil à allure du pas, personne sortie du véhicule pour changer une roue…).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Renseignements à relever pour chaque usager"),
-              const _BulletPoint(text: "Petite identité."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Renseignements à relever pour chaque usager"),
+              _BulletPoint(text: "Petite identité."),
+              _BulletPoint(
                 text:
                     "État : indemne / blessé / décédé + gravité des dommages.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Lieu d’hospitalisation (si applicable).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Nature du trajet (domicile-travail, domicile-école, professionnel…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Alcoolémie (contrôle obligatoire) : conducteurs et accompagnateurs d’élève conducteur — ",
                 ),
                 TextSpan(
                   text: "article L. 234-3 alinéa 1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Piétons et passagers : recherche d’imprégnation alcoolique selon ",
                 ),
                 TextSpan(
                   text: "l’article L. 3354-1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Stupéfiants : dépistage obligatoire puis vérifications le cas échéant (conducteurs et accompagnateurs d’élève conducteur).",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Focus conducteur"),
-              const _BulletPoint(text: "Responsabilité présumée."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Focus conducteur"),
+              _BulletPoint(text: "Responsabilité présumée."),
+              _BulletPoint(
                 text:
                     "Permis : n°, validité, date d’obtention, catégorie adaptée au véhicule.",
               ),
-              const _BulletPoint(text: "Infraction(s) commise(s)."),
-              const _BulletPoint(
+              _BulletPoint(text: "Infraction(s) commise(s)."),
+              _BulletPoint(
                 text:
                     "Équipements de sécurité : ceinture, casque, gants, gilet rétro-réfléchissant…",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -379,25 +379,25 @@ class RenseignementsARecueillirPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Focus passager"),
-              const _BulletPoint(text: "Place occupée dans le véhicule."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Focus passager"),
+              _BulletPoint(text: "Place occupée dans le véhicule."),
+              _BulletPoint(
                 text:
                     "Équipements de sécurité : ceinture, casque, dispositif enfant…",
               ),
 
-              const SizedBox(height: 12),
-              const _SubTitle("Focus piéton"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Focus piéton"),
+              _BulletPoint(
                 text:
                     "Localisation : sur chaussée, trottoir, à ± 50 m d’un passage piéton…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Manœuvre : sens de traversée, descente d’un véhicule, etc.",
               ),
-              const _BulletPoint(text: "Infraction éventuellement commise."),
+              _BulletPoint(text: "Infraction éventuellement commise."),
             ],
           ),
 
@@ -452,10 +452,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -520,7 +520,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -563,7 +563,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -625,7 +625,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -636,10 +636,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -651,13 +650,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -670,13 +668,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

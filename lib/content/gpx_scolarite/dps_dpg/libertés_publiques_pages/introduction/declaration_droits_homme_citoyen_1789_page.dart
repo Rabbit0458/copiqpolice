@@ -131,58 +131,58 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
             cardColor: cardPrincipes,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Les droits naturels protégés"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Les droits naturels protégés"),
+              _BulletPoint(
                 text:
                     "Liberté — propriété — sûreté — résistance à l’oppression.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("La souveraineté"),
+              SizedBox(height: 10),
+              _SubTitle("La souveraineté"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le principe de toute souveraineté réside dans la nation — ",
                 ),
                 TextSpan(
                   text: "Art. 3",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("La loi comme référence"),
+              SizedBox(height: 10),
+              _SubTitle("La loi comme référence"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La loi encadre l’exercice des libertés : elle fixe les bornes nécessaires pour permettre à chacun la jouissance des mêmes droits — ",
                 ),
                 TextSpan(
                   text: "Art. 4",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Elle ne doit défendre que les actions nuisibles à la société — ",
                 ),
                 TextSpan(
                   text: "Art. 5",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -195,142 +195,142 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
             cardColor: cardArticles,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 1",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les hommes naissent et demeurent libres et égaux en droits ; les distinctions sociales ne peuvent être fondées que sur l’utilité commune.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 2",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : but de toute association politique = conservation des droits naturels et imprescriptibles (liberté, propriété, sûreté, résistance à l’oppression).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 6",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la loi est l’expression de la volonté générale ; elle doit être la même pour tous ; accès aux emplois publics selon capacité, vertus et talents.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 7",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : nul ne peut être accusé, arrêté ou détenu que dans les cas déterminés par la loi et selon les formes qu’elle a prescrites.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 8",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la loi ne doit établir que des peines strictement et évidemment nécessaires ; principe de légalité des délits et des peines.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 9",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : présomption d’innocence ; toute rigueur non nécessaire doit être sévèrement réprimée par la loi.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 10",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : liberté d’opinion (même religieuse) tant que la manifestation ne trouble pas l’ordre public établi par la loi.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 11",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : libre communication des pensées et opinions ; chacun peut parler, écrire, imprimer librement (sauf abus prévus par la loi).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 16",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : une société sans garantie des droits et sans séparation des pouvoirs n’a point de constitution.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Art. 17",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : propriété = droit inviolable et sacré ; privation possible seulement par nécessité publique, légalement constatée, et sous juste et préalable indemnité.",
                 ),
@@ -346,23 +346,23 @@ class DeclarationDroitsHommeCitoyen1789Page extends StatelessWidget {
             cardColor: cardSynthese,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _BulletPoint(
+            children: const [
+              _BulletPoint(
                 text:
                     "La DDHC pose des droits fondamentaux et des garanties contre l’arbitraire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La loi encadre les libertés : elle autorise, limite et sanctionne uniquement ce qui est nécessaire à la vie sociale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Principes clés : égalité, souveraineté nationale, légalité, présomption d’innocence, libertés d’opinion et d’expression.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En libertés publiques, ce texte sert de base de lecture : toute restriction doit être justifiée, encadrée et proportionnée, sous le contrôle du juge.",
                   ),
@@ -404,10 +404,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -472,7 +472,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -515,7 +515,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -577,7 +577,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -588,10 +588,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -603,13 +602,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -622,13 +620,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

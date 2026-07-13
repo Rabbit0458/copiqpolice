@@ -109,37 +109,37 @@ class NotificationMandatPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Mandats d’instruction : "),
+                TextSpan(text: "Mandats d’instruction : "),
                 TextSpan(
                   text: "article 122 alinéa 5 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (mandat d’amener) et "),
+                TextSpan(text: " (mandat d’amener) et "),
                 TextSpan(
                   text: "article 122 alinéa 6 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (mandat d’arrêt)."),
+                TextSpan(text: " (mandat d’arrêt)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Menottage / contrainte : "),
+                TextSpan(text: "Menottage / contrainte : "),
                 TextSpan(
                   text: "article 803 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — le recours doit être motivé et circonstancié (dangerosité ou risque de fuite).",
                 ),
@@ -154,168 +154,168 @@ class NotificationMandatPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de rédaction"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("1) Lieu de rédaction"),
+              _BulletPoint(
                 text:
                     "Indiquer précisément le lieu où le procès-verbal est rédigé (service, unité, commune).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) Instructions"),
-              const _BulletPoint(
+              _SubTitle("2) Instructions"),
+              _BulletPoint(
                 text:
                     "Mentionner que l’agent de police judiciaire agit sous le contrôle de l’officier de police judiciaire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3) Exécution du mandat"),
-              const _Paragraph(
+              _SubTitle("3) Exécution du mandat"),
+              _Paragraph(
                 "L’agent de police judiciaire indique les références du mandat en vertu duquel il agit. "
                 "Les mentions attendues sont les suivantes :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Type de mandat : amener ou arrêt."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Type de mandat : amener ou arrêt."),
+              _BulletPoint(
                 text:
                     "Date de délivrance + nom et qualité du magistrat mandant.",
               ),
-              const _BulletPoint(text: "Identité de la personne concernée."),
-              const _BulletPoint(
+              _BulletPoint(text: "Identité de la personne concernée."),
+              _BulletPoint(
                 text:
                     "Motif : personne soupçonnée / témoin assisté / mise en examen.",
               ),
-              const _BulletPoint(text: "Infraction visée."),
-              const SizedBox(height: 8),
+              _BulletPoint(text: "Infraction visée."),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Penser à faire référence aux articles relatifs au mandat (ex. ",
                   ),
                   TextSpan(
                     text: "art. 122 al. 5 et/ou art. 122 al. 6 C.P.P.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Assistants"),
-              const _BulletPoint(
+              _SubTitle("4) Assistants"),
+              _BulletPoint(
                 text:
                     "Lister les fonctionnaires accompagnant le rédacteur (identité/qualité si nécessaire).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préciser la tenue : uniforme / tenue bourgeoise / port du brassard police.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5) Transport"),
-              const _BulletPoint(
+              _SubTitle("5) Transport"),
+              _BulletPoint(
                 text:
                     "Transport au dernier domicile connu de la personne concernée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Respect des heures légales : 06h–21h (mentionner l’heure précise d’arrivée).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("6) Identité"),
-              const _BulletPoint(
+              _SubTitle("6) Identité"),
+              _BulletPoint(
                 text:
                     "Exposer qualités et motif de la visite, puis relever l’identité succincte.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préciser le document utilisé pour vérifier l’identité (CNI, passeport, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Selon la situation (comportement/attitude), la ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "palpation de sécurité",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " peut être réalisée avant l’étape « identité ».",
                   ),
                 ],
                 title: "Organisation",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("7) Mandat de justice"),
-              const _BulletPoint(
+              _SubTitle("7) Mandat de justice"),
+              _BulletPoint(
                 text:
                     "Présenter et notifier le mandat à l’intéressé (mentionner la remise d’une copie).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("8) Arrestation"),
-              const _BulletPoint(
+              _SubTitle("8) Arrestation"),
+              _BulletPoint(
                 text:
                     "Mentionner l’heure exacte (fondamentale) : elle peut correspondre au début d’une mesure de rétention.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("9) Palpation de sécurité"),
-              const _Paragraph(
+              _SubTitle("9) Palpation de sécurité"),
+              _Paragraph(
                 "Décrire la palpation de sécurité et, le cas échéant, la découverte d’objets "
                 "(localisation + description).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si recours au menottage : préciser les éléments motivant la mesure, conformément à ",
                 ),
                 TextSpan(
                   text: "l’article 803 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (risque de fuite, menaces, gestes de résistance, dangerosité pour soi/autrui).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("10) Retour au service"),
-              const _BulletPoint(
+              _SubTitle("10) Retour au service"),
+              _BulletPoint(
                 text:
                     "Pour l’exécution des mandats, la coercition est possible : l’emploi de la force doit être circonstancié.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("11) Énonciation terminale (clôture)"),
-              const _BulletPoint(
+              _SubTitle("11) Énonciation terminale (clôture)"),
+              _BulletPoint(
                 text:
                     "La personne interpellée signe le procès-verbal (et l’heure est précisée).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("12) Avis magistrat"),
-              const _BulletPoint(
+              _SubTitle("12) Avis magistrat"),
+              _BulletPoint(
                 text:
                     "Informer le magistrat mandant et indiquer clairement les instructions reçues (présentation immédiate / mesure de rétention en attente).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("13) Présentation au magistrat mandant"),
-              const _BulletPoint(
+              _SubTitle("13) Présentation au magistrat mandant"),
+              _BulletPoint(
                 text:
                     "Mentionner la présentation au magistrat mandant (date/heure) et tout élément utile (compte-rendu verbal, remise éventuelle d’objets).",
               ),
@@ -329,20 +329,20 @@ class NotificationMandatPage extends StatelessWidget {
             cardColor: cardVigi,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _BulletPoint(
+            children: const [
+              _BulletPoint(
                 text:
                     "Chronologie : dérouler les faits dans l’ordre, avec des heures exactes.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Motivation : toute contrainte (menottage/force) doit être justifiée et décrite.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Notification : mentionner la présentation du mandat + la remise d’une copie.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Identité : rester strictement sur l’état civil et l’adresse (pas d’éléments de personnalité).",
               ),
@@ -404,10 +404,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -472,7 +472,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -515,7 +515,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -577,7 +577,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -609,7 +609,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -622,7 +622,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -650,7 +650,7 @@ class _ZoomableAssetImage extends StatelessWidget {
     final Color border = isDark ? Colors.white24 : Colors.black12;
     final Color chipBg = isDark
         ? Colors.black54
-        : Colors.white.withOpacity(.92);
+        : Colors.white.withValues(alpha: .92);
     final Color chipText = isDark ? Colors.white : const Color(0xFF050505);
 
     return Semantics(
@@ -747,7 +747,7 @@ class _ZoomableAssetImage extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Fermer',
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       pageBuilder: (_, __, ___) {
         return SafeArea(
           child: Scaffold(

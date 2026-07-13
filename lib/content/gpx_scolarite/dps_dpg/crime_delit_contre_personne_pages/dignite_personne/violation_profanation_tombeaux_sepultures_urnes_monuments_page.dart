@@ -107,13 +107,13 @@ class ViolationProfanationTombeauxSepulturesUrnesMonumentsPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-17 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit et réprime la violation ou la profanation de tombeaux, sépultures, urnes cinéraires "
                       "ou monuments édifiés à la mémoire des morts.",
@@ -130,69 +130,69 @@ class ViolationProfanationTombeauxSepulturesUrnesMonumentsPage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Les lieux et objets protégés"),
+            children: const [
+              _SubTitle("A) Les lieux et objets protégés"),
               _Paragraph.rich([
-                const TextSpan(text: "Sont protégés par "),
-                const TextSpan(
+                TextSpan(text: "Sont protégés par "),
+                TextSpan(
                   text: "l’article 225-17 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Les tombeaux : monument élevé sur les restes d’un mort (tous actes portant atteinte sont punissables, sauf s’il n’a pas encore servi de sépulture à un être humain).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les sépultures : lieu où le défunt est enterré ; peut viser aussi le drap mortuaire ou le cercueil avant l’inhumation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les urnes cinéraires : vase fermé contenant les cendres après crémation, protégées au même titre que les sépultures (columbarium, caveaux d’urnes, monuments où elles sont scellées).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les monuments édifiés à la mémoire des morts : monuments collectifs, plaques commémoratives, stèles… même sans sépulture (ex. plaque sur un mur, lieu où un soldat/résistant a été tué).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un acte de violation ou de profanation"),
-              const _Paragraph(
+              _SubTitle("B) Un acte de violation ou de profanation"),
+              _Paragraph(
                 "L’acte doit être matérialisé par une action physique ou une voie de fait. "
                 "Il peut s’agir de dégradations, d’atteintes, ou d’agissements portant atteinte au respect dû aux morts.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Exemples d’actes (illustratifs)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Exemples d’actes (illustratifs)"),
+              _BulletPoint(
                 text:
                     "Briser une pierre tombale, inscrire des tags/dessins, dégrader une sépulture.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Arracher des fleurs déposées/plantées par les proches du défunt.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ouvrir un caveau, retirer un cercueil, déplacer des éléments funéraires.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Placarder un écrit injurieux/diffamatoire sur un tombeau.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Briser un objet funéraire (ex. crucifix) déposé sur le corps d’un défunt.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ne sont pas punissables : l’exhumation réalisée dans les règles prescrites par la loi, "
                         "ainsi que l’ouverture de sépultures très anciennes dans un intérêt historique.",
@@ -226,13 +226,13 @@ class ViolationProfanationTombeauxSepulturesUrnesMonumentsPage
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 225-17 alinéa 3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’infraction est aggravée lorsque la violation ou la profanation a été accompagnée d’une atteinte à l’intégrité du cadavre.",
                 ),
@@ -248,65 +248,65 @@ class ViolationProfanationTombeauxSepulturesUrnesMonumentsPage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-17 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 225-17 alinéa 3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(
                   text: "l’article 225-18-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " ; amende selon "),
-                const TextSpan(
+                TextSpan(text: " ; amende selon "),
+                TextSpan(
                   text: "l’article 131-38 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " + peines des "),
-                const TextSpan(
+                TextSpan(text: " + peines des "),
+                TextSpan(
                   text: "articles 131-39 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (dissolution, interdiction d’exercer, etc.).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI — "),
+                TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
@@ -346,10 +346,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -414,7 +414,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -457,7 +457,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -519,7 +519,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -530,10 +530,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -545,13 +544,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -564,13 +562,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

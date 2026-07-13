@@ -101,7 +101,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //                 NIVEAU FACILE — GÉNÉRALITÉS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Champ d’application",
     question:
         "Quel est l’objectif principal du dispositif procédural spécifique à la criminalité et délinquance organisées ?",
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Généralités",
     question:
         "Quel est l’objectif principal du régime procédural spécial de la criminalité organisée ?",
@@ -132,7 +132,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Généralités",
     question:
         "Sous quel titre du code de procédure pénale se trouve la procédure applicable à la criminalité et délinquance organisées ?",
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Champ",
     question:
         "Les infractions relevant de la criminalité organisée sont principalement définies dans :",
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Infractions visées",
     question:
         "Parmi les infractions suivantes, laquelle relève de l’article 706-73 CPP ?",
@@ -173,7 +173,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Infractions visées",
     question:
         "Les crimes et délits constituant des actes de terrorisme sont visés par :",
@@ -188,7 +188,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Exemples",
     question:
         "Le meurtre commis en bande organisée entre dans le champ de la criminalité organisée au titre :",
@@ -203,7 +203,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73-1 — Infractions visées",
     question: "L’escroquerie commise en bande organisée relève de :",
     options: [
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-74 — Rappel",
     question:
         "Les infractions de l’article 706-74 CPP bénéficient des règles de criminalité organisée :",
@@ -232,7 +232,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Bande organisée",
     question: "La bande organisée est une circonstance :",
     options: ["Atténuante", "Aggravante", "Neutre sur la peine"],
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Criminalité organisée — Intérêt",
     question:
         "Un intérêt majeur de la procédure spéciale de criminalité organisée est :",
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== GÉOLOCALISATION & SURVEILLANCE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Durée",
     question:
         "En matière de criminalité organisée, la géolocalisation peut durer au maximum :",
@@ -269,7 +269,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Autorité",
     question:
         "Qui délivre l’autorisation initiale de géolocalisation en enquête de flagrance pour une infraction 706-73 ?",
@@ -284,7 +284,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Champ",
     question: "La surveillance (art. 706-80 CPP) peut porter sur :",
     options: [
@@ -298,7 +298,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Territoire",
     question:
         "La surveillance mise en place au titre de l’article 706-80 CPP peut être étendue :",
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== INFILTRATION =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Principe",
     question: "L’infiltration consiste pour l’enquêteur à :",
     options: [
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Autorisation",
     question:
         "Qui autorise une opération d’infiltration en enquête de flagrance ou préliminaire ?",
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Durée",
     question:
         "La durée initiale maximale d’une autorisation d’infiltration est de :",
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Interdiction",
     question: "Quelle limite importante s’applique à l’agent infiltré ?",
     options: [
@@ -368,7 +368,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Protection",
     question: "La révélation de l’identité réelle d’un agent infiltré est :",
     options: [
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== GARDE À VUE — DURÉES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Droit commun",
     question:
         "La durée maximale d’une garde à vue de droit commun (hors criminalité organisée) est en principe de :",
@@ -394,7 +394,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Criminalité organisée",
     question:
         "Pour une infraction relevant de l’article 706-73 CPP (hors terrorisme et mules), la garde à vue peut aller jusqu’à :",
@@ -405,7 +405,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Terrorisme — Procédure",
     question: "La garde à vue en matière de terrorisme peut aller jusqu’à :",
     options: ["48h", "96h", "144h"],
@@ -415,7 +415,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mules",
     question:
         "Pour un passeur de stupéfiants in corpore (mule), la garde à vue peut atteindre :",
@@ -426,7 +426,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "En matière de criminalité organisée, l’intervention de l’avocat peut être différée pour :",
@@ -442,7 +442,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Médecin",
     question:
         "Lors d’une prolongation supplémentaire de GAV en criminalité organisée, l’examen médical :",
@@ -457,7 +457,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Garde à vue",
     question:
         "Le régime de GAV des majeurs en criminalité organisée (706-88) s’applique aux mineurs :",
@@ -473,7 +473,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== PERQUISITIONS =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit",
     question:
         "En criminalité organisée, les perquisitions de nuit au domicile :",
@@ -488,7 +488,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Stupéfiants",
     question: "L’article 706-28 CPP permet des perquisitions de nuit :",
     options: [
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Proxénétisme",
     question: "L’article 706-35 CPP autorise des perquisitions de nuit :",
     options: [
@@ -517,7 +517,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisition — Absence de la personne",
     question:
         "En criminalité organisée, la perquisition au domicile d’une personne gardée à vue en son absence :",
@@ -533,7 +533,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== INTERCEPTIONS & TECHNIQUES SPÉCIALES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — 706-95",
     question:
         "L’article 706-95 CPP permet, en enquête de flagrance ou préliminaire :",
@@ -548,7 +548,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Durée",
     question:
         "La durée d’une interception de correspondances autorisée en vertu de l’article 706-95 est :",
@@ -563,7 +563,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "IMSI-catcher — Objet",
     question: "Un IMSI-catcher permet notamment :",
     options: [
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Sonorisation — Objet",
     question:
         "La sonorisation au sens des articles 706-96 et suivants permet :",
@@ -593,7 +593,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Captation de données — 706-102-1",
     question: "La captation de données informatiques permet :",
     options: [
@@ -608,7 +608,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Objet",
     question: "Le « dossier coffre » (art. 706-104 CPP) sert à :",
     options: [
@@ -623,7 +623,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== ENQUÊTE PRÉLIMINAIRE & DURÉES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Durée",
     question:
         "En matière de criminalité organisée, la durée maximale d’une enquête préliminaire est de :",
@@ -638,7 +638,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Sanction",
     question:
         "Que deviennent les actes concernant une personne, réalisés après l’expiration du délai butoir de l’enquête préliminaire en criminalité organisée ?",
@@ -654,7 +654,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   ),
 
   // ===================== MESURES CONSERVATOIRES & FINANCEMENT =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — 706-103",
     question:
         "L’article 706-103 CPP permet au JLD d’ordonner des mesures conservatoires pour :",
@@ -669,7 +669,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — Champ",
     question:
         "Les mesures conservatoires de l’article 706-103 peuvent porter sur :",
@@ -686,7 +686,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
   // ================ QUESTIONS PLUS TECHNIQUES =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73 — Blanchiment",
     question: "Le blanchiment visé au 14° de l’article 706-73 CPP concerne :",
     options: [
@@ -700,7 +700,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "706-73-1 — Blanchiment",
     question: "Le 3° bis de l’article 706-73-1 CPP vise :",
     options: [
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association de malfaiteurs — 706-73",
     question:
         "L’association de malfaiteurs relève de 706-73 CPP lorsqu’elle a pour objet :",
@@ -730,7 +730,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources",
     question:
         "Le délit de non-justification de ressources (art. 321-6-1 CP) relève de la criminalité organisée lorsqu’il est :",
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Conseil constitutionnel — Gravité",
     question:
         "Concernant le vol en bande organisée, le Conseil constitutionnel a précisé que les mesures dérogatoires ne s’appliquent que si :",
@@ -762,7 +762,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Aide au séjour irrégulier — Limites",
     question:
         "Le Conseil constitutionnel a indiqué que le délit d’aide au séjour irrégulier en bande organisée :",
@@ -778,7 +778,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Rapport",
     question: "Qui rédige le rapport retraçant l’opération d’infiltration ?",
     options: [
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Poursuite de la couverture",
     question:
         "Après la fin officielle de l’infiltration, l’agent peut poursuivre ses activités :",
@@ -808,7 +808,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Terrorisme",
     question:
         "En matière terroriste, la prolongation de GAV au-delà de 96 heures :",
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Avocat — Report d’intervention",
     question:
         "Le report de l’intervention de l’avocat en GAV 706-88 au-delà de la 24e heure :",
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droit à l’examen médical — Longue GAV",
     question:
         "En GAV longue (criminalité organisée), un nouvel examen médical :",
@@ -854,7 +854,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Enquête préliminaire",
     question:
         "En enquête préliminaire, les perquisitions de nuit hors locaux d’habitation pour des infractions 706-73 ou 706-73-1 :",
@@ -869,7 +869,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Sans assentiment",
     question:
         "En enquête préliminaire, les perquisitions sans l’assentiment de la personne chez qui elles ont lieu :",
@@ -885,7 +885,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "Les interceptions visant une ligne d’avocat, magistrat ou parlementaire :",
@@ -901,7 +901,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Durée",
     question:
         "La durée initiale des techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) en enquête est :",
@@ -916,7 +916,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Techniques spéciales",
     question:
         "En information judiciaire, la durée des techniques spéciales d’enquête peut aller jusqu’à :",
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Contestation",
     question:
         "Le versement d’informations dans le « dossier coffre » peut être contesté :",
@@ -948,7 +948,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
 
   // ===================== NIVEAU DIFFICILE =====================
   // ================ CAS PRATIQUES & QUESTIONS PIÈGES ==========
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Surveillance",
     question:
         "Des OPJ suivent discrètement un véhicule transportant des biens issus d’un trafic de stupéfiants entre plusieurs régions françaises. Quel dispositif juridique permet d’étendre cette surveillance sur tout le territoire ?",
@@ -963,7 +963,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Infiltration",
     question:
         "Un agent infiltré, autorisé pour une enquête sur un réseau de traite des êtres humains (706-73), propose lui-même l’idée d’augmenter la violence des faits pour faire réagir le groupe. Quelle conséquence procédurale principale risque-t-on ?",
@@ -979,7 +979,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Perquisition de nuit",
     question:
         "Un JLD autorise une perquisition de nuit dans un domicile pour une enquête préliminaire en escroquerie en bande organisée (706-73-1). L’ordonnance ne précise pas l’adresse exacte. Quel risque ?",
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Interceptions",
     question:
         "Dans une enquête 706-73, les enquêteurs interceptent la ligne d’un avocat sans avis au bâtonnier. Les interceptions révèlent néanmoins des informations accablantes. Que risque-t-on ?",
@@ -1010,7 +1010,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — IMSI-catcher",
     question:
         "Un IMSI-catcher est installé dans le cabinet d’un journaliste pour une affaire de trafic de stupéfiants (706-73). L’autorisation vise la captation des données techniques de connexion. Que dire ?",
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Captation de données",
     question:
         "Pour capter les données d’un ordinateur utilisé par un magistrat, dans une enquête 706-73, les enquêteurs sollicitent une autorisation 706-102-1. Quelle est la réponse correcte ?",
@@ -1040,7 +1040,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Durée enquête préliminaire",
     question:
         "Une enquête préliminaire pour association de malfaiteurs liée à un trafic de stupéfiants dure 3 ans et 6 mois sans renouvellement formel par le procureur. Un acte est réalisé à 3 ans et 4 mois au préjudice de M. X. Quelle conséquence ?",
@@ -1055,7 +1055,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Dossier coffre",
     question:
         "Des informations relatives à l’identité d’un technicien ayant posé une sonorisation sont conservées dans un dossier distinct non accessible aux parties. Sur quel fondement ?",
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mineur et GAV",
     question:
         "Un mineur de 15 ans est mis en cause pour trafic de stupéfiants (706-73). Peut-on appliquer le régime de GAV 706-88 ?",
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mesures conservatoires",
     question:
         "Dans une information pour trafic de stupéfiants, le parquet souhaite garantir le paiement des amendes et l’indemnisation des victimes. Quelle procédure utiliser ?",
@@ -1100,7 +1100,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Infiltration et témoignage",
     question:
         "En jugement, le prévenu demande la confrontation directe avec l’agent infiltré dont les déclarations sont à l’origine de sa mise en examen. Que se passe-t-il ?",
@@ -1116,7 +1116,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Champ d’application",
     question:
         "Quels articles du CPP définissent principalement le champ d’application de la procédure applicable à la criminalité organisée ?",
@@ -1131,7 +1131,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Nature des infractions",
     question:
         "Parmi les propositions suivantes, laquelle correspond à une caractéristique typique de la criminalité organisée selon le CPP ?",
@@ -1147,7 +1147,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73 — Infractions visées",
     question:
         "Quel type d’infraction fait partie de la liste de l’article 706-73 du CPP ?",
@@ -1162,7 +1162,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73 — Infractions visées",
     question:
         "Quelle affirmation est exacte à propos du crime de meurtre commis en bande organisée ?",
@@ -1177,7 +1177,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73 — Terrorisme",
     question:
         "Les crimes et délits constituant des actes de terrorisme relèvent-ils de la criminalité organisée au sens de l’article 706-73 ?",
@@ -1192,7 +1192,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-73-1 — Infractions économiques",
     question:
         "Quel délit figure parmi ceux visés par l’article 706-73-1 du CPP ?",
@@ -1207,7 +1207,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Articles 706-74 — Champ résiduel",
     question:
         "Que vise principalement l’article 706-74 du CPP en matière de criminalité organisée ?",
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //                 NIVEAU FACILE — GARDE À VUE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Durée",
     question:
         "En matière de criminalité organisée relevant de l’article 706-73 (hors exceptions), quelle peut être la durée maximale d’une garde à vue d’un majeur ?",
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Terrorisme",
     question:
         "En matière de terrorisme (706-73, 11°), quelle peut être la durée maximale exceptionnelle d’une garde à vue ?",
@@ -1248,7 +1248,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mules",
     question:
         "Pour une « mule » (transport de stupéfiants in corpore), la garde à vue peut, à titre exceptionnel, atteindre :",
@@ -1259,7 +1259,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "Dans la procédure de criminalité organisée (706-73), l’intervention de l’avocat peut être :",
@@ -1275,7 +1275,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mineurs",
     question:
         "Pour un mineur de moins de 16 ans, la garde à vue en matière de criminalité organisée peut-elle dépasser 48 heures ?",
@@ -1290,7 +1290,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Examen médical",
     question:
         "En criminalité organisée, lors de la première prolongation supplémentaire (au-delà de 48 h), que prévoit la loi concernant l’examen médical ?",
@@ -1308,7 +1308,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //             NIVEAU INTERMÉDIAIRE — SURVEILLANCE / INFILTRATION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Champ d’application",
     question:
         "Selon l’article 706-80 du CPP, dans quel cadre les opérations de surveillance étendue à tout le territoire peuvent-elles être mises en œuvre ?",
@@ -1324,7 +1324,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Surveillance — Non-intervention",
     question:
         "Dans le cadre des opérations de surveillance (706-80-1 CPP), que peuvent demander les enquêteurs à d’autres services ?",
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Principe",
     question:
         "Quel est l’objectif principal d’une opération d’infiltration (art. 706-81 CPP) ?",
@@ -1356,7 +1356,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Autorisation",
     question:
         "Qui autorise l’opération d’infiltration dans le cadre d’une enquête (hors instruction) ?",
@@ -1371,7 +1371,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Durée",
     question:
         "Quelle est la durée maximale initiale d’une opération d’infiltration autorisée par le magistrat ?",
@@ -1386,7 +1386,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Interdictions",
     question:
         "Quelle limite majeure est posée à l’opération d’infiltration à peine de nullité ?",
@@ -1402,7 +1402,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Infiltration — Protection de l’agent",
     question:
         "Quelle affirmation est exacte concernant la protection de l’agent infiltré ?",
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //     NIVEAU INTERMÉDIAIRE — PERQUISITIONS / INTERCEPTIONS
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit et criminalité organisée",
     question:
         "En enquête de flagrance sur une infraction relevant de 706-73 ou 706-73-1, qui peut autoriser une perquisition de nuit au domicile ?",
@@ -1437,7 +1437,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Trafic de stupéfiants",
     question:
         "En matière de trafic de stupéfiants (706-28 CPP), les perquisitions de nuit sont possibles :",
@@ -1453,7 +1453,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Proxénétisme",
     question:
         "En matière de proxénétisme (706-35 CPP), les perquisitions de nuit peuvent être réalisées :",
@@ -1469,7 +1469,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Absence de la personne",
     question:
         "En matière de criminalité organisée, la perquisition au domicile d’une personne gardée à vue ou détenue, en son absence, est possible :",
@@ -1485,7 +1485,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Communications",
     question:
         "En enquête préliminaire ou de flagrance, qui autorise les interceptions de correspondances émises par la voie des communications électroniques pour les infractions de 706-73 et 706-73-1 ?",
@@ -1501,7 +1501,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Durée",
     question:
         "Quelle est la durée initiale maximale d’une interception de correspondances autorisée par le JLD au titre de l’article 706-95 ?",
@@ -1516,7 +1516,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interceptions — Lignes protégées",
     question:
         "Les interceptions visant les lignes d’un avocat, d’un parlementaire ou d’un magistrat sont :",
@@ -1535,7 +1535,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //   NIVEAU INTERMÉDIAIRE — TECHNIQUES SPÉCIALES (IMSI, SONO, DATA)
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Champ d’application",
     question:
         "Les techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) prévues aux articles 706-95-11 à 706-102-5 peuvent être utilisées :",
@@ -1551,7 +1551,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Autorisation",
     question:
         "En enquête, qui autorise le recours aux techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) ?",
@@ -1567,7 +1567,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Durée",
     question:
         "Pour ces techniques spéciales (enquête), quelle est la durée maximale initiale d’autorisation par le JLD ?",
@@ -1582,7 +1582,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Vie privée",
     question:
         "Que doit-il être fait des séquences ou données sans lien avec les infractions et portant sur la vie privée ?",
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //           NIVEAU INTERMÉDIAIRE — ENQUÊTE PRÉLIMINAIRE / INSTRUCTION
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Durée",
     question:
         "En matière de criminalité organisée, quelle est la durée maximale d’une enquête préliminaire avant renouvellement ?",
@@ -1612,7 +1612,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Perquisitions de nuit",
     question:
         "En enquête préliminaire, les perquisitions de nuit dans des locaux non d’habitation pour des infractions de 706-73 ou 706-73-1 sont possibles :",
@@ -1628,7 +1628,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Perquisitions de nuit au domicile",
     question:
         "En information judiciaire, qui autorise les perquisitions de nuit au domicile en matière de criminalité organisée ?",
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Techniques spéciales",
     question:
         "En information judiciaire, qui autorise l’emploi des techniques spéciales d’enquête (IMSI-catcher, sonorisation, captation de données) ?",
@@ -1658,7 +1658,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Instruction — Durée techniques spéciales",
     question:
         "En information judiciaire, la durée maximale d’autorisation d’une technique spéciale d’enquête (renouvellements compris) ne peut dépasser :",
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //           NIVEAU INTERMÉDIAIRE — DOSSIER COFFRE / MESURES
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Objet",
     question:
         "À quoi sert le « dossier coffre » prévu aux articles 706-104 et 706-104-1 CPP ?",
@@ -1688,7 +1688,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Dossier coffre — Conditions",
     question: "Le recours au dossier coffre n’est possible que :",
     options: [
@@ -1703,7 +1703,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — Objet",
     question:
         "Quel est l’objectif des mesures conservatoires prévues à l’article 706-103 du CPP en matière de criminalité organisée ?",
@@ -1719,7 +1719,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures conservatoires — Compétence",
     question:
         "Qui peut ordonner les mesures conservatoires prévues à l’article 706-103 du CPP ?",
@@ -1738,7 +1738,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
   // ==========================================================
   //              NIVEAU DIFFICILE — CAS FIN / FINESSE
   // ==========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitutionnel — Vol en bande organisée",
     question:
         "Selon la décision du Conseil constitutionnel du 2 mars 2004, les mesures dérogatoires en matière de procédure pénale pour le vol en bande organisée :",
@@ -1754,7 +1754,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constitutionnel — Aide au séjour",
     question:
         "Le Conseil constitutionnel a précisé, à propos du délit d’aide au séjour irrégulier en bande organisée, que :",
@@ -1770,7 +1770,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Report avocat",
     question:
         "Le report de l’intervention de l’avocat au-delà de la 24e heure (criminalité organisée) est décidé :",
@@ -1786,7 +1786,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Enquête préliminaire — Nullité",
     question:
         "En matière de criminalité organisée, tout acte d’enquête concernant une personne après l’expiration des délais de 3 ans (ou 3 + 2 ans) est :",
@@ -1801,7 +1801,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Techniques spéciales — Lieux protégés",
     question:
         "Les techniques spéciales comme la sonorisation ou la captation informatique ne peuvent jamais être mises en œuvre :",
@@ -1817,7 +1817,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "IMSI-catcher — Finalité",
     question: "L’IMSI-catcher permet notamment :",
     options: [
@@ -1832,7 +1832,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Captation de données — Lieux d’installation",
     question:
         "La captation de données informatiques (706-102-1 et s.) peut être mise en place dans un lieu d’habitation la nuit :",
@@ -1848,7 +1848,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Droit de prévenir",
     question:
         "En matière de terrorisme ou pour une « mule », si la demande de prévenir un proche n’a pas été satisfaite au début de la garde à vue, la personne peut la réitérer :",
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineurs — Conditions GAV 706-88",
     question:
         "Pour appliquer à un mineur de plus de 16 ans le régime de garde à vue de l’article 706-88 (criminalité organisée), quelles conditions doivent être réunies ?",
@@ -1884,7 +1884,7 @@ final List<QuizQuestion> questionsCriminaliteOrganisee = [
 // PAGE
 // ============================================================================
 class QuizCriminaliteOrganiseePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/criminalite_organisee';
+  static const String routeName = '/gpx/dps/generalites/quiz/criminalite_organisee';
   final String uid;
   final String email;
 
@@ -2210,7 +2210,7 @@ class _QuizCriminaliteOrganiseePageState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2399,7 +2399,7 @@ class _QuizCriminaliteOrganiseePageState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2551,7 +2551,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3084,10 +3083,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3458,7 +3458,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3499,9 +3499,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

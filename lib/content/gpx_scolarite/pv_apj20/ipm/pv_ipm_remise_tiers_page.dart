@@ -104,31 +104,31 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 3353-1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : contravention d’ivresse publique et manifeste (2ᵉ classe) — Natinf 6252.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text:
                       "Article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : possibilité, par un OPJ ou un APJ, de placer la personne sous la responsabilité d’un tiers se portant garante, "
                       "lorsque l’audition n’a pas à être faite immédiatement après le retour à la raison.",
@@ -144,58 +144,58 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
             cardColor: cardSteps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de saisine"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Lieu de saisine"),
+              _Paragraph(
                 "Mentionner l’endroit exact où se situe l’équipage (adresse, point remarquable, commune).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) Instructions"),
-              const _Paragraph(
+              _SubTitle("2) Instructions"),
+              _Paragraph(
                 "Dans le PV de saisine, préciser que l’équipage étant en patrouille, le rédacteur agit conformément aux instructions permanentes du chef de service.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3) Assistants"),
-              const _Paragraph(
+              _SubTitle("3) Assistants"),
+              _Paragraph(
                 "Citer les fonctionnaires accompagnants et préciser la tenue (uniforme / tenue bourgeoise / port du brassard « police »).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("4) Mission"),
-              const _Paragraph(
+              _SubTitle("4) Mission"),
+              _Paragraph(
                 "Indiquer le but de la mission initiale (prévention, surveillance, sécurisation, intervention).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5) Constatations"),
+              _SubTitle("5) Constatations"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Relater précisément les faits observés constitutifs de l’IPM, prévue et réprimée par ",
                 ),
                 TextSpan(
                   text: "l’article R. 3353-1 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (Natinf 6252). L’ivresse doit être :"),
+                TextSpan(text: " (Natinf 6252). L’ivresse doit être :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Manifeste : évidente, constatable (haleine alcoolisée, défaut d’équilibre, élocution bégayante, propos incohérents, attitude anormale…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Publique : constatée dans un lieu public ou privé ouvert au public (place, route, gare, café…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les critères ne sont pas forcément cumulatifs : l’important est de décrire des faits objectifs et concordants.",
@@ -203,10 +203,10 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("6) Contrôle"),
-              const _Paragraph(
+              _SubTitle("6) Contrôle"),
+              _Paragraph(
                 "Identification de la personne en style indirect : état civil et adresse, à l’exclusion de tout autre élément de personnalité.",
               ),
             ],
@@ -219,31 +219,31 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
             cardColor: cardFocus,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("7) Conditions & modalités"),
+            children: const [
+              _SubTitle("7) Conditions & modalités"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lorsque l’audition n’est pas nécessaire immédiatement (ex. infraction connexe), après recouvrement de la raison, la personne peut être placée sous la responsabilité d’un tiers se portant garante — ",
                 ),
                 TextSpan(
                   text:
                       "article L. 3341-1 alinéa 2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La remise peut intervenir à tout moment : à l’hôpital, au service, ou après un passage en chambre de sûreté. "
                 "Le PV doit faire apparaître l’identité du tiers, sa qualité/lien avec la personne, et son engagement clair à la prendre en charge.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Pense à préciser : heure de remise, lieu, identité complète du tiers, et mention qu’il « se porte garant » et accepte la prise en charge.",
@@ -260,14 +260,14 @@ class PvIpmRemiseTiersPage extends StatelessWidget {
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("8) Compte-rendu"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("8) Compte-rendu"),
+              _Paragraph(
                 "L’équipage rend compte régulièrement au C.I.C. de l’évolution de l’intervention (contrôle, décision de remise à un tiers, conditions de remise, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("9) Énonciation terminale (clôture)"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("9) Énonciation terminale (clôture)"),
+              _Paragraph(
                 "Clore clairement : suites données, remise effective à la personne garante, heure/lieu, état apparent, informations transmises au C.I.C., signatures.",
               ),
             ],
@@ -320,10 +320,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -388,7 +388,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -431,7 +431,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -493,7 +493,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -504,10 +504,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -519,13 +518,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -538,13 +536,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -590,10 +584,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -699,8 +693,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -768,10 +762,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -838,10 +832,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -880,9 +874,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -917,7 +911,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

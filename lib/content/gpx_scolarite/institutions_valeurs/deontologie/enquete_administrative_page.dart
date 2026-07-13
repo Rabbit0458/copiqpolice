@@ -106,25 +106,25 @@ class EnqueteAdministrativePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Obligation de différencier enquête administrative et enquête judiciaire : ",
                 ),
                 TextSpan(
                   text: "note DGPN/PN/CAB n°2012-6371 du 22 octobre 2012",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Même si certaines modalités peuvent se ressembler en pratique, leurs cadres juridiques et finalités sont distincts.",
                   ),
@@ -158,9 +158,9 @@ class EnqueteAdministrativePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Notion de manquement"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Notion de manquement"),
+              _Paragraph(
                 "Aucun texte législatif ou réglementaire ne donne de définition légale du manquement "
                 "déontologique ou professionnel.\n\n"
                 "Selon l’IGPN (guide pratique de l’enquête administrative pré-disciplinaire), "
@@ -168,26 +168,26 @@ class EnqueteAdministrativePage extends StatelessWidget {
                 "par omission ou commission, dans l’exercice ou hors l’exercice des fonctions, "
                 "appréciée au regard de la qualité de policier.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Saisine : comment l’administration est informée",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le déclenchement est subordonné à la connaissance par l’administration d’un comportement "
                 "susceptible de constituer un manquement.\n\n"
                 "L’administration peut être avisée par de nombreux moyens :",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(text: "Dénonciations (courriers, courriels)."),
-              const _IntroBullet(text: "Remise de vidéos, supports audios."),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(text: "Dénonciations (courriers, courriels)."),
+              _IntroBullet(text: "Remise de vidéos, supports audios."),
+              _IntroBullet(
                 text: "Surveillance / signalements sur les réseaux sociaux.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "Dysfonctionnements constatés par la hiérarchie.",
               ),
-              const _IntroBullet(text: "Révélations de l’autorité judiciaire."),
-              const _IntroBullet(
+              _IntroBullet(text: "Révélations de l’autorité judiciaire."),
+              _IntroBullet(
                 text:
                     "Intervention du Défenseur des droits, autorités indépendantes…",
               ),
@@ -277,57 +277,57 @@ class EnqueteAdministrativePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’enquête administrative est conduite à charge et à décharge. "
                 "Elle vise à éclairer l’autorité disciplinaire dans sa prise de décision. "
                 "Elle comprend une large palette d’actes d’investigation.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("1) Actes possibles"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("1) Actes possibles"),
+              _BulletPoint(
                 text:
                     "Acte de saisine : détaillé, reprenant les éléments motivant l’ouverture.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Actes d’enquête variés : constatations, télégramme, MCI, rapports, fiches d’activités, notes de service, comptes rendus, rapports administratifs…",
               ),
-              const _BulletPoint(text: "Convocations."),
-              const _BulletPoint(text: "Auditions."),
-              const _BulletPoint(text: "Acte de clôture."),
-              const _BulletPoint(text: "Rapport de synthèse."),
-              const _BulletPoint(text: "Notification des conclusions."),
-              const SizedBox(height: 12),
+              _BulletPoint(text: "Convocations."),
+              _BulletPoint(text: "Auditions."),
+              _BulletPoint(text: "Acte de clôture."),
+              _BulletPoint(text: "Rapport de synthèse."),
+              _BulletPoint(text: "Notification des conclusions."),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Convocations"),
+              _SubTitle("2) Convocations"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Délai raisonnable + mention sommaire des faits (référence : ",
                 ),
                 TextSpan(
                   text: "note PN/CAB n°2012-6567/D du 22 octobre 2012",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Auditions : règles clés"),
-              const _BulletPoint(
+              _SubTitle("3) Auditions : règles clés"),
+              _BulletPoint(
                 text:
                     "L’agent peut être assisté de la personne de son choix, à condition qu’elle n’ait pas de lien hiérarchique avec l’autorité enquêtrice.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’assistant n’intervient pas pendant l’audition ; il peut uniquement produire des observations écrites annexées au PV.",
               ),
-              const SizedBox(height: 8),
-              const _NotaBox(
+              SizedBox(height: 8),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -335,8 +335,8 @@ class EnqueteAdministrativePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’audition n’a pas de durée légale maximale. Si elle est longue, des temps de repos "
                 "(pause méridienne, etc.) doivent être respectés afin d’éviter toute assimilation à une contrainte.",
               ),
@@ -414,10 +414,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -482,7 +482,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -525,7 +525,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -587,7 +587,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -598,10 +598,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -613,13 +612,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -632,13 +630,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

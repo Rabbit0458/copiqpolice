@@ -5,7 +5,6 @@
 // - Redirection Home (ou Réserve)
 
 import 'dart:ui'; // pour ImageFilter.blur
-import 'dart:math' as math;
 import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,6 +15,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:copiqpolice/features/home/home_page.dart'
     show UserTrackController, UserTrack;
 import 'package:copiqpolice/features/reserve/accueil_reserve.dart';
+import 'package:copiqpolice/core/widgets/app_notifier.dart'
+    show AppNotifier;
 
 class _T {
   static const Color ink = Color(0xFF212529);
@@ -72,6 +73,17 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
 
   Future<void> _apply(GradeChoice g) async {
     if (_saving) return;
+
+    // 🔒 RÉSERVISTE — fonctionnalité verrouillée (bientôt disponible)
+    if (g == GradeChoice.reserve) {
+      HapticFeedback.mediumImpact();
+      AppNotifier.info(
+        context,
+        title: 'Bientôt disponible',
+        message: 'Le module Réserviste sera disponible dans une prochaine mise à jour.',
+      );
+      return;
+    }
 
     // ✅ TUTORIEL : bloque les autres choix si demandé
     if (widget.lockToGpxOnly && g != GradeChoice.gpx) {
@@ -170,6 +182,7 @@ class _GradePickerScreenState extends State<GradePickerScreen> {
                 image: 'assets/images/reserve.jpeg',
                 badge: 'Réserve',
                 title: 'Réserviste',
+                locked: true,
                 selected: _grade == GradeChoice.reserve,
                 onTap: () => _apply(GradeChoice.reserve),
               ),
@@ -217,6 +230,7 @@ class _ChoiceHeroCard extends StatelessWidget {
   final String badge; // non utilisé mais gardé pour compat
   final String title;
   final bool selected;
+  final bool locked;
   final VoidCallback onTap;
 
   const _ChoiceHeroCard({
@@ -226,6 +240,7 @@ class _ChoiceHeroCard extends StatelessWidget {
     required this.title,
     required this.selected,
     required this.onTap,
+    this.locked = false,
   });
 
   @override
@@ -329,12 +344,65 @@ class _ChoiceHeroCard extends StatelessWidget {
                 ),
 
                 // BOUTON EN BAS
-                Positioned(
-                  left: 14,
-                  right: 14,
-                  bottom: 14,
-                  child: _DiscoverButton(onTap: onTap),
-                ),
+                if (!locked)
+                  Positioned(
+                    left: 14,
+                    right: 14,
+                    bottom: 14,
+                    child: _DiscoverButton(onTap: onTap),
+                  ),
+
+                // 🔒 OVERLAY LOCK (carte Réserviste)
+                if (locked)
+                  Positioned.fill(
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(24),
+                      child: BackdropFilter(
+                        filter: ImageFilter.blur(sigmaX: 6, sigmaY: 6),
+                        child: Container(
+                          color: Colors.black.withValues(alpha: 0.45),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.all(14),
+                                decoration: BoxDecoration(
+                                  color: Colors.white.withValues(alpha: 0.12),
+                                  shape: BoxShape.circle,
+                                  border: Border.all(
+                                    color: Colors.white.withValues(alpha: 0.3),
+                                    width: 1.5,
+                                  ),
+                                ),
+                                child: const Icon(
+                                  Icons.lock_rounded,
+                                  color: Colors.white,
+                                  size: 32,
+                                ),
+                              ),
+                              const SizedBox(height: 12),
+                              Text(
+                                'Bientôt disponible',
+                                style: GoogleFonts.instrumentSans(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 15,
+                                  letterSpacing: .2,
+                                  shadows: const [
+                                    Shadow(
+                                      offset: Offset(0, 1),
+                                      blurRadius: 6,
+                                      color: Colors.black87,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
               ],
             ),
           ),
@@ -359,9 +427,9 @@ class _DiscoverButton extends StatelessWidget {
           color: _T.ink.withValues(alpha: .92),
           borderRadius: BorderRadius.circular(18),
         ),
-        child: Row(
+        child: const Row(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
+          children: [
             Expanded(
               child: Center(
                 child: Text(

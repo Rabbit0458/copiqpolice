@@ -16,7 +16,7 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.72);
+        : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
         ? const Color(0xFF424242)
@@ -132,16 +132,16 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Le contrôle préventif est destiné à prévenir une atteinte à l’ordre public, en '
                 'particulier à la sécurité des personnes ou des biens. Il ne peut donc jamais être '
                 'organisé en l’absence de toute condition de fond : il doit reposer sur des éléments '
                 'objectifs permettant de présumer une menace réelle pour l’ordre public.',
               ),
-              const SizedBox(height: 10),
-              const _SubTitle('1.2.2.1.1 – Les conditions de lieux'),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle('1.2.2.1.1 – Les conditions de lieux'),
+              _Paragraph(
                 'Les contrôles préventifs ne peuvent être pratiqués que dans des lieux publics ou '
                 'ouverts au public (gares, débits de boissons, salles de spectacles, galeries '
                 'marchandes, etc.). La circulaire du ministère de l’Intérieur du 21 octobre 1993 '
@@ -150,32 +150,32 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
                 'domicile d’une personne, même lorsque celle-ci fait appel aux fonctionnaires de '
                 'police, ne peut être effectué que dans le cadre des missions de police judiciaire.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'En revanche, les contrôles préventifs peuvent être organisés dans des lieux où des '
                 'actes de délinquance sont habituellement commis (vols à l’arraché, trafics divers, '
                 'délits liés à la prostitution, etc.), ou à proximité de points sensibles (installations '
                 'classées, sites stratégiques) ainsi que dans les lieux favorisant la commission de '
                 'vols ou d’agressions (couloirs de métro, rues désertes la nuit…).',
               ),
-              const SizedBox(height: 10),
-              const _SubTitle('1.2.2.1.2 – Les conditions de temps'),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle('1.2.2.1.2 – Les conditions de temps'),
+              _Paragraph(
                 'L’exercice de contrôles préventifs peut également être justifié par la présence de '
                 'circonstances particulières laissant apparaître des risques spécifiques pour la '
                 'sécurité des personnes ou des biens : alertes à la bombe, grands rassemblements '
                 'de personnes (manifestations, événements sportifs ou musicaux importants, etc.).',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Dans tous les cas, les policiers doivent pouvoir justifier des circonstances ayant '
                 'fait apparaître le risque d’atteinte à l’ordre public qui a motivé l’opération. Il ne '
                 'suffit pas d’affirmer de manière générale qu’un lieu serait simplement « propice » '
                 'à la commission d’infractions.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Le Conseil constitutionnel, dans sa décision n° 93-323 du 5 août 1993, a rappelé '
                       'ces exigences en se référant à la sauvegarde de principes et de droits ayant '
@@ -185,15 +185,15 @@ class ConntroleIdentitePreventionGpxSchool extends StatelessWidget {
                       'réalité et à la pertinence des raisons ayant motivé ces opérations.',
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle('Jurisprudence et exigences pratiques'),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle('Jurisprudence et exigences pratiques'),
+              _BulletPoint(
                 text:
                     'La motivation du contrôle : les agents doivent caractériser de façon suffisante '
                     'en quoi la sécurité des personnes et des biens est menacée, en décrivant les '
                     'éléments objectifs justifiant le recours au dispositif préventif.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'L’appréciation de la menace à l’ordre public : le pouvoir d’appréciation est '
                     'laissé à l’agent qui procède au contrôle, mais il doit être exercé dans le cadre '
@@ -235,10 +235,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -303,7 +303,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -346,7 +346,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -408,7 +408,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -419,10 +419,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -434,13 +433,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -453,13 +451,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -5941,7 +5941,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
 class QuizMisePerilMineurPA extends StatefulWidget {
   static const String grade = 'pa';
   static const String routeName =
-      '/gpx_scolarite_pages/mineurs_famille_pages/mise_en_peril/quiz_mise_en_peril';
+      '/pa_scolarite_pages/mineurs_famille_pages/mise_en_peril/quiz_mise_en_peril';
   final String uid;
   final String email;
 

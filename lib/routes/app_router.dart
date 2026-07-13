@@ -158,7 +158,6 @@ Route<dynamic>? appOnGenerateRoute(RouteSettings settings) {
 
 class RouteRegistry {
   static final Map<String, WidgetBuilder> routes = <String, WidgetBuilder>{
-    '/discovery': (context) => const DiscoveryTutorialScreen(),
     '/onboarding': (context) => const OnboardingScreen(),
     '/welcome': (context) => const WelcomeAfterSignupPage(),
     '/placement-intro': (context) => const PlacementIntro(),
@@ -168,6 +167,7 @@ class RouteRegistry {
     '/procedure_penale': (_) => const ProcedurePenalePage(),
     '/picker': (_) => const ModePickerScreen(),
     "/abonnement": (_) => const AbonnementPage(),
+    "/premium-required": (_) => const PremiumRequiredPage(),
 
     // ================== GPX : Généralités ==================
     '/gpx/generalites/classification_infractions': (_) =>
@@ -175,8 +175,6 @@ class RouteRegistry {
     '/gpx/generalites/infraction': (_) => const InfractionPage(),
     // ================== GPX : School ==================
     '/home_pa_school': (_) => const HomePagePaSchool(),
-    '/home-pa-exam': (_) => const HomePagePaExam(),
-    '/home-gpx-exam': (_) => const HomePagePaExam(),
     '/home-bootstrap': (_) => const HomeBootstrap(),
     '/gpx/generalites/infraction_intro': (_) => const InfractionIntroPage(),
     '/gpx/generalites/infraction/contenu': (_) => const InfractionContenuPage(),
@@ -186,12 +184,38 @@ class RouteRegistry {
         const ElementMaterielPage(),
     '/gpx/generalites/infraction/element-moral': (_) =>
         const ElementMoralPage(),
-    '/gpx/generalites/complicite/conditions': (_) =>
-        const CompliciteConditionPage(),
     '/gpx/generalites/complicite/participation': (_) =>
         const CompliciteParticipationPage(),
     '/gpx/generalites/complicite/repression': (_) =>
         const CompliciteRepressionPage(),
+    // ===== ROUTES PA MÉMENTO CIRCULATION ROUTIÈRE =====
+    '/pa/memento_circulation/procedures/amende_forfaitaire': (_) => const AmendeForfaitairePage(),
+    '/pa/memento_circulation/procedures/amende_forfaitaire_delictuelle': (_) => const AmendeForfaitaireDelictuellePage(),
+    '/pa/memento_circulation/procedures/consignation': (_) => const ConsignationPage(),
+    '/pa/memento_circulation/procedures/immobilisation': (_) => const ImmobilisationPage(),
+    '/pa/memento_circulation/procedures/mise_en_fourriere': (_) => const MiseEnFourrierePage(),
+    '/pa/memento_circulation/procedures/conduite_alcool': (_) => const ConduiteAlcoolPage(),
+    '/pa/memento_circulation/procedures/conduite_stupefiants': (_) => const ConduiteApresUsageStupefiantsPage(),
+    '/pa/memento_circulation/procedures/retention_permis': (_) => const RetentionPermisConduirePage(),
+    '/pa/memento_circulation/procedures/permis_a_points': (_) => const PermisAPointsPage(),
+    '/pa/memento_circulation/controle_routier/cadre_legal': (_) => const CadreLegalControleRoutierPage(),
+    '/pa/memento_circulation/controle_routier/permis_conduire': (_) => const PermisConduirePage(),
+    '/pa/memento_circulation/controle_routier/bsr': (_) => const BsrPage(),
+    '/pa/memento_circulation/controle_routier/certificat_immatriculation': (_) => const CertificatImmatriculationPage(),
+    '/pa/memento_circulation/controle_routier/controle_technique': (_) => const ControleTechniquePage(),
+    '/pa/memento_circulation/controle_routier/assurance_obligatoire': (_) => const AssuranceObligatoirePage(),
+    '/pa/memento_circulation/equipements/pneumatiques': (_) => const PneumatiquesPage(),
+    '/pa/memento_circulation/equipements/eclairage_signalisation': (_) => const EclairageSignalisationPage(),
+    '/pa/memento_circulation/equipements/chargement': (_) => const ChargementPage(),
+    '/pa/memento_circulation/equipements/plaques': (_) => const PlaquesPage(),
+    '/pa/memento_circulation/equipements/retroviseurs_vision': (_) => const RetroviseursVisionPage(),
+    '/pa/memento_circulation/equipements/essuie_glace': (_) => const EssuieGlacePage(),
+    '/pa/memento_circulation/equipements/nuisances': (_) => const NuisancesVehiculesPage(),
+    '/pa/memento_circulation/equipements/ceinture_retenue_enfant': (_) => const CeintureRetenueEnfantPage(),
+    '/pa/memento_circulation/equipements/casque_gants': (_) => const CasqueGantsPage(),
+    '/pa/memento_circulation/equipements/casque_cycliste': (_) => const CasqueCyclistePage(),
+    '/pa/memento_circulation/equipements/gilet_haute_visibilite': (_) => const GiletHauteVisibilitePage(),
+    '/gpx/pv_apj20/ipm/pv_ipm_remise_tiers': (_) => const PvIpmRemiseTiersPage(),
     GpxExamCultureGeneralePage.routeName: (_) =>
         const GpxExamCultureGeneralePage(),
     ResetPasswordPage.routeName: (_) => const ResetPasswordPage(),
@@ -203,6 +227,7 @@ class RouteRegistry {
     GpxCasPratiqueCase3Page.routeName: (_) => const GpxCasPratiqueCase3Page(),
     GpxCasPratiqueCase1Page.routeName: (_) => const GpxCasPratiqueCase1Page(),
     GpxCasPratiqueListPage.routeName: (_) => const GpxCasPratiqueListPage(),
+    CasPratiqueDynamicPage.routeName: (_) => const CasPratiqueDynamicPage(),
     GpxCasPratiqueEtapesReussitePage.routeName: (_) =>
         const GpxCasPratiqueEtapesReussitePage(),
     GpxCasPratiqueEntrainementWelcomePage.routeName: (_) =>
@@ -211,7 +236,6 @@ class RouteRegistry {
     GPXAdmissibilitePage.routeName: (_) => const GPXAdmissibilitePage(),
     TableauRecapitulatifEpreuvesGPXPage.routeName: (_) =>
         const TableauRecapitulatifEpreuvesGPXPage(),
-    PvIpmRemiseTiersPage.routeName: (_) => const PvIpmRemiseTiersPage(),
     PvIpmExamenMedicalPage.routeName: (_) => const PvIpmExamenMedicalPage(),
     IpmGeneralitesPage.routeName: (_) => const IpmGeneralitesPage(),
     TableauVitessesPage.routeName: (_) => const TableauVitessesPage(),
@@ -495,14 +519,12 @@ class RouteRegistry {
     ParametreHomePage.routeName: (context) => const ParametreHomePage(),
     ReserveAccueilPage.routeName: (context) => const ReserveAccueilPage(),
     TentativeIntroPage.routeName: (_) => const TentativeIntroPage(),
-    RepressionTentativePage.routeName: (_) => const RepressionTentativePage(),
     InfructueuseTentativePage.routeName: (_) =>
         const InfructueuseTentativePage(),
     TentativeContenuPage.routeName: (_) => const TentativeContenuPage(),
     CompliciteIntroPage.routeName: (_) => const CompliciteIntroPage(),
     CompliciteContenuPage.routeName: (_) => const CompliciteContenuPage(),
     CompliciteConditionPage.routeName: (_) => const CompliciteConditionPage(),
-    ConditionTentativePage.routeName: (_) => const ConditionTentativePage(),
     LegitimeDefenseIntroPage.routeName: (_) => const LegitimeDefenseIntroPage(),
     LdContenuPage.routeName: (_) => const LdContenuPage(),
     UsageArmesIntroPage.routeName: (_) => const UsageArmesIntroPage(),
@@ -687,9 +709,6 @@ class RouteRegistry {
     HierarchiePnPage.routeName: (_) => const HierarchiePnPage(),
     ReglesEmploiPaPage.routeName: (_) => const ReglesEmploiPaPage(),
     HorairesServiceSpPage.routeName: (_) => const HorairesServiceSpPage(),
-    CrimePage.routeName: (_) => const CrimePage(),
-    DelitPage.routeName: (_) => const DelitPage(),
-    ContraventionPage.routeName: (_) => const ContraventionPage(),
     CodeDeontologieCodeCommentePage.routeName: (_) =>
         const CodeDeontologieCodeCommentePage(),
     ClassificationInfractionsContenuPage.routeName: (_) =>
@@ -895,8 +914,6 @@ class RouteRegistry {
         const PPAutoritesInvestiesPJHabituellesPage(),
     PPAutoritesInvestiesPJOccasionnellesPage.routeName: (_) =>
         const PPAutoritesInvestiesPJOccasionnellesPage(),
-    OrganisationHierarchiqueIntroPage.routeName: (_) =>
-        const OrganisationHierarchiqueIntroPage(),
     PPOrganisationMinisterePublicContenuPage.routeName: (_) =>
         const PPOrganisationMinisterePublicContenuPage(),
     NulliteIntroPage.routeName: (_) => const NulliteIntroPage(),
@@ -936,7 +953,6 @@ class RouteRegistry {
         const PPReparationDetentionInjustifieePage(),
     PPDetentionProvisoireTableauPage.routeName: (_) =>
         const PPDetentionProvisoireTableauPage(),
-    ControleJudiciaireIntro.routeName: (_) => const ControleJudiciaireIntro(),
     ControleJudiciaireContenu.routeName: (_) =>
         const ControleJudiciaireContenu(),
     PPControleJudiciaireChapitre1Page.routeName: (_) =>
@@ -1375,6 +1391,256 @@ class RouteRegistry {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizIntroduction(uid: user!.id, email: user.email!);
     },
+    // ===== QUIZ PA =====
+    '/pa/nation/quiz/abus_autorite_particuliers': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAbusAutoritePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/action_publique': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizActionPubliquePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/armes_munitions_pages/quiz/pa_quiz_armes_munitions_pages': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizArmesMunitionsPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/atteinte_personnalite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAtteintePersonnalitePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/nation/quiz/atteintes_action_justice': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAtteinteActionJusticePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/nation/quiz/atteintes_administration': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAtteinteAdministrationPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/atteintes_volontaires_integrite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAtteinteIntegritePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/atteintes_involontaires': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAtteinteInvolontairePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/atteintes_volontaires_vie': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizAtteinteVolontairePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/bracelet_electronique': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizBraceletElectroniquePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/infraction_circulation_routière_pages/quiz/pa_quiz_circulation_routiere': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCirculationRoutierePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/classification_infractions': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizClassificationInfractionsPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/commission_rogatoire': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCommissionRogatoirePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/complicite/quiz/complicite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizComplicitePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/controle_identite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizControleIdentitePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/controle_judiciaire': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizControleJudiciairePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crime_delit_nation_pages/quiz/pa_quiz_crimes_delits_bien': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCrimesDelitsBiensPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crime_delit_nation_pages/quiz/pa_quiz_crimes_delits_nation': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCrimesDelitsNationPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/crimes_delits_personne': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCrimeDelitsPersonnePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/criminalite_organisee': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCriminaliteOrganiseePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_biens/quiz/destructions_degradations': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizDDDPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/detention_provisoire': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizDetentionProvisoirePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/dignite_personne': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizDiginitePersonnePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/disparitions_inquietantes': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizDisparitionPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/dispositions_applicables_mineurs': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizDispositionsApplicablesMineursPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/droit_penal/quiz/droit_penal_general': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizDroitPenalePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/enquete_preliminaire': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizEnquetePreliminairePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/enregistrement_diffusion_images': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizEnregistrementDiffusionImagesPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/nation/quiz/faux_usage_faux': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizFauxUsageFauxPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/flagrant_delit': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizFlagrantDelitPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/generalité_principales': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizGeneralitePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/hierarchie': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizHierarchiePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/infractions/quiz/infractions': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizInfractionsPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/instruction_preparatoire': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizInstructionPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/libertes_publiques/quiz/introduction': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizIntroductionPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/juridictions_penales': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizJuridictionsPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/legitimedefense': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizLegitimeDefensePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/libertes_publiques_collectives': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizLibertesPubliquesCollectivesPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/garanties_libertes_publiques': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizGarantiesLibertesPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/libertes_publiques_individuelles': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizLibertesPubliquesIndividuellesPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/libertes_publiques': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizLibertesPubliquesPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/mandats_justice': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizMandatsPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/mineurs_famille_pages/quiz/pa_quiz_mineurs_famille': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizMineursFamillePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/mise_en_danger': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizMiseEnDangerPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/mort_inconnue': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizMortInconnuePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/nullite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizNullitePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/procedure_penale/quiz/cadres_juridiques_principales': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizCadresPrincipalesPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/personnes_fuite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizPersonnesFuitePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/nation/quiz/probite': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizProbitePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_biens/quiz/recel_non_justification': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizRecelNonJustificationPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/droit_penal/quiz/responsabilite_penal_general': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizResponsabilitePenalePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/retention_locaux_police': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizRetentionLocauxPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/sanction/quiz/sanction_page': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizSanctionPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/sanction/quiz/sanction_causes_aggravation': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizSanctionAggravationPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/sanction/quiz/sanction_classification_peine': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizSanctionClassificationPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/sanction/quiz/sanction_pluralite_infractions': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizSanctionPluralitePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_biens/quiz/stad': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizStadPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/stupéfiants_pages/quiz/pa_quiz_stupéfiants': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizStupefiantPA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/tentative': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizTentativePagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/generalites/quiz/usagearmes': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizUsageArmesPagePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_personne/quiz/viol_inceste_agressions': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizViolIncestePA(uid: user!.id, email: user.email!);
+    },
+    '/pa/crimes_biens/quiz/voisines_du_vol': (_) {
+      final user = Supabase.instance.client.auth.currentUser;
+      return QuizVoisinesDuVolPA(uid: user!.id, email: user.email!);
+    },
+
     '/gpx/armes_munitions_pages/quiz/quiz_armes_munitions_pages': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizArmesMunitions(uid: user!.id, email: user.email!);
@@ -1438,6 +1704,7 @@ class RouteRegistry {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizMineursFamille(uid: user!.id, email: user.email!);
     },
+    // GPX quiz mineurs/famille (routes GPX canoniques)
     '/gpx_scolarite_pages/mineurs_famille_pages/abandon_famille/quiz_abandon_famille':
         (_) {
           final user = Supabase.instance.client.auth.currentUser;
@@ -1458,6 +1725,32 @@ class RouteRegistry {
           final user = Supabase.instance.client.auth.currentUser;
           return QuizMisePerilMineur(uid: user!.id, email: user.email!);
         },
+    // PA quiz mineurs/famille (routes /pa_scolarite_pages/...)
+    '/pa_scolarite_pages/mineurs_famille_pages/abandon_famille/quiz_abandon_famille':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizAbandonFamillePA(uid: user!.id, email: user.email!);
+        },
+    '/pa_scolarite_pages/mineurs_famille_pages/autorite_parentale/quiz_autorite_parentale':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizAutoriteParentalePA(uid: user!.id, email: user.email!);
+        },
+    '/pa_scolarite_pages/mineurs_famille_pages/violation_ordonnances_jaf/quiz_ordonnances_jaf':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizViolationOrdonnancesJafPA(uid: user!.id, email: user.email!);
+        },
+    '/pa_scolarite_pages/mineurs_famille_pages/mise_en_peril/quiz_mise_en_peril':
+        (_) {
+          final user = Supabase.instance.client.auth.currentUser;
+          return QuizMisePerilMineurPA(uid: user!.id, email: user.email!);
+        },
+    // GPX sanction pages standalone (routes /gpx/sanction/...)
+    CausesAggravationPage.routeName: (_) => const CausesAggravationPage(),
+    ClassificationPeinesPage.routeName: (_) => const ClassificationPeinesPage(),
+    PluraliteInfractionsPage.routeName: (_) => const PluraliteInfractionsPage(),
+    ResponsabilitePenalePage.routeName: (_) => const ResponsabilitePenalePage(),
     '/gpx/crimes_personne/quiz/crimes_delits_personne': (_) {
       final user = Supabase.instance.client.auth.currentUser;
       return QuizCrimeDelitsPersonne(uid: user!.id, email: user.email!);
@@ -1612,75 +1905,130 @@ class RouteRegistry {
       return QuizControleIdentitePage(uid: user!.id, email: user.email!);
     },
 
-    // ================== GPX : Procédure Pénale ==================
-    '/gpx_scolarite_pages/procédure_pénale_pages/pp_action_publique_action_civile/tableau_actions_publique_civile':
-        (_) => const PPActionPubliqueActionCivileTableauPage(),
-    // ================== GPX : Droit pénal général ==================
-    '/gpx_scolarite_pages/droit_pénale_général_pages/loi_penale/classification_infractions':
-        (_) => const ClassificationInfractionsContenuPageLoiPenal(),
-    '/dpg/responsabilite_penale': (_) => const ResponsabilitePenalePage(),
+    // Socle initial : Organisation judiciaire
+    '/pa/dps_dpg/socle_initial/organisation_judiciaire/organisation': (_) =>
+        const PaOrganisationJudiciaireHubPage(),
+    '/pa/dps_dpg/socle_initial/organisation_judiciaire/magistrature': (_) =>
+        const JuridictionsPenalesPage(),
+    // Socle initial : Atteintes aux biens
+    '/pa/dps_dpg/socle_initial/atteintes_biens/vol': (_) =>
+        const PaVolPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_biens/destructions': (_) =>
+        const PaDestructionsDegradationsContenuPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_biens/sans_danger_personnes': (_) =>
+        const PaSansDangerDommageLegerPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_biens/dangereuses_personnes': (_) =>
+        const PaDestructionsDangereusesPersonnesIntentionnellePage(),
+    '/pa/dps_dpg/socle_initial/atteintes_biens/tags_graffitis': (_) =>
+        const PaTagsInscriptionsSignesDessinsPage(),
+    // Socle initial : Atteintes aux personnes
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/discriminations': (_) =>
+        const PaDiscriminationsPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_volontaires': (_) =>
+        const PaAtteintesVolontairesIntegriteContenuPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_habituelles': (_) =>
+        const PaViolencesHabituellesCoupleExPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/violences_fsi': (_) =>
+        const PaViolencesSurFsiPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/atteintes_vie': (_) =>
+        const PaAtteintesVolontairesVieContenuPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/viol': (_) =>
+        const PaViolIncesteAgressionsContenuPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/agressions_sexuelles': (_) =>
+        const PaAgressionsSexuellesAutresQueViolPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/harcelement_sexuel': (_) =>
+        const PaHarcelementSexuelPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/exhibition': (_) =>
+        const PaExhibitionSexuellePage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/mineurs_mise_en_peril': (_) =>
+        const PaMiseEnPerilDesMineursPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/atteinte_intimite': (_) =>
+        const PaAtteintePersonnaliteContenuPage(),
+    '/pa/dps_dpg/socle_initial/atteintes_personnes/outrage_sexiste': (_) =>
+        const PaOutrageSexistePage(),
+    // Socle initial : Autorite de l'Etat
+    '/pa/dps_dpg/socle_initial/autorite_etat/refus_obtemperer': (_) =>
+        const PaRefusObtempererPage(),
+    '/pa/dps_dpg/socle_initial/autorite_etat/outrage': (_) =>
+        const PaAtteintesAdministrationContenuPage(),
+    '/pa/dps_dpg/socle_initial/autorite_etat/rebellion': (_) =>
+        const PaRebellionPage(),
+    '/pa/dps_dpg/socle_initial/autorite_etat/provocation_rebellion': (_) =>
+        const PaProvocationDirecteRebellionPage(),
+    // Socle avance : Generalites
+    '/pa/dps_dpg/socle_avance/generalites/droit_penal': (_) =>
+        const PaLoiPenaleContenuPage(),
+    '/pa/dps_dpg/socle_avance/generalites/immunites_inviolabilites': (_) =>
+        const PaGPXSchoolEtendueApplicationLoisPage(),
+    '/pa/dps_dpg/socle_avance/generalites/responsabilite_penale': (_) =>
+        const PaResponsabilitePenalePage(),
+    // Socle avance : Acteurs de la Police Judiciaire
+    '/pa/dps_dpg/socle_avance/acteurs_pj/opj': (_) =>
+        const HierarchieOpjPage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/apj': (_) =>
+        const HierarchieApjPage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/assistants_enquete': (_) =>
+        const HierarchieAssistantsEnquetePage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/prerogatives': (_) =>
+        const PaAutoriteInvestiesLoiPage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/procureur': (_) =>
+        const PaPPOrganisationMinisterePublicContenuPage(),
+    '/pa/dps_dpg/socle_avance/acteurs_pj/juge_instruction': (_) =>
+        const JugeInstructionPage(),
+    // Socle avance : Atteintes aux biens
+    '/pa/dps_dpg/socle_avance/atteintes_biens/extorsion': (_) =>
+        const PaExtorsionPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_biens/escroquerie': (_) =>
+        const PaEscroqueriePage(),
+    '/pa/dps_dpg/socle_avance/atteintes_biens/abus_confiance': (_) =>
+        const PaAbusDeConfiancePage(),
+    '/pa/dps_dpg/socle_avance/atteintes_biens/filouterie': (_) =>
+        const PaFilouteriesPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_biens/recel': (_) =>
+        const PaRecelPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_biens/abstention_sinistre': (_) =>
+        const PaAtteintesVolontairesIntegriteContenuPage(),
+    // Socle avance : Atteintes aux personnes
+    // Socle avance : Atteintes aux personnes
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/involontaires': (_) =>
+        const PaAtteintesInvolontairesContenuPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/menaces': (_) =>
+        const PaMenaceSansConditionPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/entrave_secours': (_) =>
+        const PaMiseEnDangerContenuPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/non_obstacle': (_) =>
+        const PaNonObstacleCommissionCrimeDelitPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/non_assistance': (_) =>
+        const PaNonAssistancePersonnePerilPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/appels_malveillants': (_) =>
+        const PaAppelsMessagesMalveillantsAgressionsSonoresPage(),
+    '/pa/dps_dpg/socle_avance/atteintes_personnes/risque_autrui': (_) =>
+        const PaRisqueCauseAutruiPage(),
+    // Socle avance : Delits routiers
+    '/pa/dps_dpg/socle_avance/delits_routiers/rodeo': (_) =>
+        const PaRodeoMotorisePage(),
+    '/pa/dps_dpg/socle_avance/delits_routiers/incitation': (_) =>
+        const PaIncitationOrganisationPromotionPage(),
+    '/pa/dps_dpg/socle_avance/delits_routiers/delit_fuite': (_) =>
+        const PaDelitFuitePage(),
+    '/pa/dps_dpg/socle_avance/delits_routiers/refus_obtemperer': (_) =>
+        const PaRefusObtempererPage(),
+    '/pa/dps_dpg/socle_avance/delits_routiers/autres': (_) =>
+        const PaEtatAlcooliquePage(),
+    // Socle avance : Autorite de l'Etat
+    '/pa/dps_dpg/socle_avance/autorite_etat/menaces': (_) =>
+        const PaMenacesEnversDepositaireAutoritePage(),
+    '/pa/dps_dpg/socle_avance/autorite_etat/corruption_passive': (_) =>
+        const PaCorruptionPage(),
+    '/pa/dps_dpg/socle_avance/autorite_etat/corruption_active': (_) =>
+        const PaCorruptionPage(),
+    // Socle avance : Stupefiants
+    '/pa/dps_dpg/socle_avance/stupefiants/usage_illicite': (_) =>
+        const PaStupefiantsUsageIllicitePage(),
+    '/pa/dps_dpg/socle_avance/stupefiants/cession_offre': (_) =>
+        const PaStupefiantsCessionOffrePage(),
 
-    // ================== GPX : Sanction ==================
-    '/gpx_scolarite_pages/sanction_pages/causes_aggravation_sanction': (_) =>
-        const CausesAggravationSanctionContenuPage(),
-    '/sanction/classification_peines': (_) => const ClassificationPeinesPage(),
-    '/sanction/causes_aggravation': (_) => const CausesAggravationPage(),
-    '/sanction/pluralite_infractions': (_) => const PluraliteInfractionsPage(),
-
-    // ================== GPX : Crimes & délits contre les biens ==================
-    '/gpx_scolarite_pages/crime_delit_bien_pages/vol': (_) => const VolPage(),
-    RecelNonJustificationContenuPage.routeName: (_) =>
-        const RecelNonJustificationContenuPage(),
-    RecelPage.routeName: (_) => const RecelPage(),
-
-    // ================== GPX : Armes & munitions ==================
-    ArmesClassificationPage.routeName: (_) => const ArmesClassificationPage(),
-    ArmesDefinitionsPage.routeName: (_) => const ArmesDefinitionsPage(),
-    ArmesAcquisitionDetentionABPage.routeName: (_) =>
-        const ArmesAcquisitionDetentionABPage(),
-    ArmesPortTransportCDPage.routeName: (_) => const ArmesPortTransportCDPage(),
-    ArmesMaterielsGuerreElementsPage.routeName: (_) =>
-        const ArmesMaterielsGuerreElementsPage(),
-    ArmesReglesAcquisitionDetentionPage.routeName: (_) =>
-        const ArmesReglesAcquisitionDetentionPage(),
-    ArmesReglesPortTransportPage.routeName: (_) =>
-        const ArmesReglesPortTransportPage(),
-
-    // ================== GPX : Libertés publiques ==================
-    LibertesPubliquesIntroductionContenuPage.routeName: (_) =>
-        const LibertesPubliquesIntroductionContenuPage(),
-    DeclarationDroitsHommeCitoyen1789Page.routeName: (_) =>
-        const DeclarationDroitsHommeCitoyen1789Page(),
-    RegimeJuridiqueReglementationAmenagementPage.routeName: (_) =>
-        const RegimeJuridiqueReglementationAmenagementPage(),
-    SourcesLibertesPubliquesPage.routeName: (_) =>
-        const SourcesLibertesPubliquesPage(),
-    NotionLibertesPubliquesPage.routeName: (_) =>
-        const NotionLibertesPubliquesPage(),
-
-    // ================== GPX : Stupéfiants ==================
-    StupefiantsIntroductionPage.routeName: (_) =>
-        const StupefiantsIntroductionPage(),
-    StupefiantsCessionOffrePage.routeName: (_) =>
-        const StupefiantsCessionOffrePage(),
-    StupefiantsDirectionOrganisationPage.routeName: (_) =>
-        const StupefiantsDirectionOrganisationPage(),
-    StupefiantsFacilitationUsagePage.routeName: (_) =>
-        const StupefiantsFacilitationUsagePage(),
-    StupefiantsProductionFabricationPage.routeName: (_) =>
-        const StupefiantsProductionFabricationPage(),
-    StupefiantsProvocationMajeurPage.routeName: (_) =>
-        const StupefiantsProvocationMajeurPage(),
-    StupefiantsBlanchimentProduitPage.routeName: (_) =>
-        const StupefiantsBlanchimentProduitPage(),
-    StupefiantsTransportDetentionOffrePage.routeName: (_) =>
-        const StupefiantsTransportDetentionOffrePage(),
-    StupefiantsImportExportPage.routeName: (_) =>
-        const StupefiantsImportExportPage(),
-    StupefiantsUsageIllicitePage.routeName: (_) =>
-        const StupefiantsUsageIllicitePage(),
-
-    // ✅ Confirm email avec args
+    // Confirm email avec args
     ConfirmEmailPage.routeName: (context) {
       final args = ModalRoute.of(context)?.settings.arguments;
       String email = '';

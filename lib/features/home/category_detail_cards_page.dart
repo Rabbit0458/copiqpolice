@@ -43,8 +43,8 @@ class CategoryDetailCardsPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
-    final Color iconOnImage = Colors.white;
+        : const Color(0xFF222222).withValues(alpha: .70);
+    const Color iconOnImage = Colors.white;
 
     return Scaffold(
       backgroundColor: bg,
@@ -94,10 +94,12 @@ class CategoryDetailCardsPage extends StatelessWidget {
     final l = label.toLowerCase();
 
     // Généralités
-    if (l.contains('classification'))
+    if (l.contains('classification')) {
       return 'assets/images/classification.jpeg';
-    if (l.contains('infraction'))
+    }
+    if (l.contains('infraction')) {
       return 'assets/images/infraction_materiel.jpeg';
+    }
     if (l.contains('tentative')) return 'assets/images/infraction_legal.jpeg';
     if (l.contains('complic')) return 'assets/images/complicite.jpeg';
     if (l.contains('légitime') || l.contains('legitime')) {
@@ -169,8 +171,9 @@ class CategoryDetailCardsPage extends StatelessWidget {
     }
 
     // Contre la personne
-    if (l.contains('mise en danger'))
+    if (l.contains('mise en danger')) {
       return 'assets/images/mise_en_danger.jpeg';
+    }
     if (l.contains('viol') || l.contains('agressions sexuelles')) {
       return 'assets/images/viol_agressions.jpeg';
     }
@@ -337,8 +340,9 @@ class CategoryDetailCardsPage extends StatelessWidget {
     if (l.contains('direction') || l.contains('organisation')) {
       return 'assets/images/stup_direction_org.jpeg';
     }
-    if (l.contains('facilitation'))
+    if (l.contains('facilitation')) {
       return 'assets/images/stup_facilitation.jpeg';
+    }
     if (l.contains('production') || l.contains('fabrication')) {
       return 'assets/images/stup_production.jpeg';
     }
@@ -386,8 +390,9 @@ class CategoryDetailCardsPage extends StatelessWidget {
     if (l.contains('préliminaire') || l.contains('preliminaire')) {
       return 'Investigations sous contrôle du parquet';
     }
-    if (l.contains('autres cadres'))
+    if (l.contains('autres cadres')) {
       return 'Enquête sous commissions / rogatoires';
+    }
 
     // Procédure pénale
     if (l.contains('garde à vue') || l.contains('garde a vue')) {
@@ -395,8 +400,9 @@ class CategoryDetailCardsPage extends StatelessWidget {
     }
     if (l.contains('perquisition')) return 'Conditions, perquisitions, saisies';
     if (l.contains('auditions')) return 'Formalisme & rédaction des PV';
-    if (l.contains('mesures de contrainte'))
+    if (l.contains('mesures de contrainte')) {
       return 'Rétentions, fouilles, réquisitions';
+    }
     if (l.contains('saisies') ||
         l.contains('scellés') ||
         l.contains('scelles')) {
@@ -447,8 +453,8 @@ class _ModuleCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color badgeBg = Colors.white.withOpacity(isDark ? 0.14 : 0.10);
-    final Color borderClr = Colors.white.withOpacity(isDark ? 0.18 : 0.14);
+    final Color badgeBg = Colors.white.withValues(alpha: isDark ? 0.14 : 0.10);
+    final Color borderClr = Colors.white.withValues(alpha: isDark ? 0.18 : 0.14);
 
     return GestureDetector(
       onTap: onTap,
@@ -480,8 +486,8 @@ class _ModuleCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),
@@ -530,7 +536,7 @@ class _ModuleCard extends StatelessWidget {
                       style: GoogleFonts.fustat(
                         fontWeight: FontWeight.w600,
                         fontSize: 14,
-                        color: Colors.white.withOpacity(.85),
+                        color: Colors.white.withValues(alpha: .85),
                       ),
                     ),
                   ],
@@ -552,7 +558,7 @@ class _RoundCTA extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.white.withOpacity(.12),
+      color: Colors.white.withValues(alpha: .12),
       shape: const CircleBorder(),
       child: InkWell(
         customBorder: const CircleBorder(),

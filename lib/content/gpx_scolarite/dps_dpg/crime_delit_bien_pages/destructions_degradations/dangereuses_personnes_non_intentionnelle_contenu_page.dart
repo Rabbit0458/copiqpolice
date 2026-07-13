@@ -108,16 +108,16 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-5 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les destructions, dégradations ou détériorations involontaires et dangereuses pour les personnes.",
                 ),
@@ -133,56 +133,56 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Un manquement à une obligation de prudence ou de sécurité",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le « règlement » s’entend des actes des autorités administratives à caractère général et impersonnel. "
                 "L’inobservation d’une obligation textuelle se suffit à elle-même : il n’est pas nécessaire de se référer "
                 "aux devoirs généraux de prudence et de diligence.\n"
                 "Les magistrats doivent pouvoir préciser la source et la nature exacte de l’obligation violée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Cass. crim., 18 juin 2002",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la source et la nature de l’obligation doivent être précisément identifiées.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Dans tous les cas, on reproche à l’auteur de ne pas avoir pris les précautions nécessaires : "
                 "s’il avait respecté l’obligation de prudence/sécurité, le dommage n’aurait pas été causé.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Une atteinte matérielle mettant en danger les personnes",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’ensemble des moyens doit être de nature à mettre en danger les personnes.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) L’effet d’une explosion"),
+              _SubTitle("1) L’effet d’une explosion"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " vise l’effet d’une explosion pouvant résulter d’un acte involontaire "
                       "(ex. infraction au code de la route entraînant le choc avec un camion-citerne, "
@@ -190,10 +190,10 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) L’incendie"),
-              const _Paragraph(
+              _SubTitle("2) L’incendie"),
+              _Paragraph(
                 "L’incendie consiste à allumer un feu (combustion rapide et brutale). "
                 "Le commencement d’exécution s’étend des premiers actes révélant l’intention coupable "
                 "jusqu’au moment de l’embrasement du bien.\n"
@@ -202,79 +202,79 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
                 "est retenue plutôt que celle de 322-1.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Sur un bien appartenant à autrui"),
+              _SubTitle("C) Sur un bien appartenant à autrui"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " protège très largement les biens (immeubles, forêts, meubles, registres, documents, véhicules…). "
                       "Le bien endommagé ou détruit doit appartenir à une autre personne que l’auteur.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Entraînant un dommage"),
-              const _Paragraph(
+              _SubTitle("D) Entraînant un dommage"),
+              _Paragraph(
                 "Le texte vise trois résultats : destruction, dégradation, détérioration.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Destruction : acte le plus grave, le bien devient impropre à l’usage (totale ou partielle).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dégradation : diminution des qualités du bien, sans le rendre inutilisable.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Détérioration : perte de valeur mais bien réparable et encore apte à son rôle.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Un lien de causalité"),
-              const _Paragraph(
+              _SubTitle("E) Un lien de causalité"),
+              _Paragraph(
                 "Le manquement doit avoir concouru au dommage. La causalité n’a pas à être immédiate : "
                 "le fait peut engendrer un dommage qui s’aggrave ensuite.\n"
                 "La loi distingue la causalité directe et la causalité indirecte.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("• Causalité indirecte"),
+              _SubTitle("• Causalité indirecte"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 121-3 alinéa 4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : sont auteurs indirects ceux qui, sans être directement à l’origine du dommage, ont créé ou contribué à créer "
                       "la situation ayant permis sa réalisation, ou n’ont pas pris les mesures permettant de l’éviter.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ils ne sont pas à l’origine du dommage lui-même, mais à l’origine de la situation dangereuse "
                 "ou de l’absence de mesures de prévention.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("• Causalité directe"),
-              const _Paragraph(
+              _SubTitle("• Causalité directe"),
+              _Paragraph(
                 "La circulaire d’application du 11 octobre 2000 parle de causalité immédiate. "
                 "Le lien est direct lorsque l’imprudence ou la négligence reprochée est la cause unique/exclusive, "
                 "ou la cause immédiate/déterminante du dommage.",
@@ -290,12 +290,12 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Agir en méconnaissant une exigence légale ou réglementaire",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Il ne s’agit pas de n’importe quelle faute : l’auteur omet de respecter une obligation précise, "
                       "imposée par une loi ou un règlement, tendant à exiger le respect de normes de prudence ou de sécurité. "
@@ -303,24 +303,24 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
                 ),
                 TextSpan(
                   text: "l’article 322-5 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Forme aggravée"),
+              SizedBox(height: 12),
+              _SubTitle("Forme aggravée"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-5 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’auteur méconnaît volontairement les exigences légales ou réglementaires, en toute connaissance des risques. "
                       "Il choisit de ne pas respecter les précautions et prend volontairement le risque de causer le dommage.",
@@ -337,46 +337,46 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La répression diffère selon que l’incendie intervient dans les conditions des alinéas 1 ou 2 de l’article 322-5.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-5 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : violation manifestement délibérée d’une obligation particulière de sécurité ou de prudence prévue par la loi ou le règlement.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-5 alinéas 3 à 6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Incendie de bois, forêts, landes, maquis, plantations ou reboisements d’autrui.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Conditions exposant les personnes à un dommage corporel ou créant un dommage irréversible à l’environnement.",
               ),
-              const _BulletPoint(text: "ITT d’au moins 8 jours pour autrui."),
-              const _BulletPoint(text: "Mort d’une ou plusieurs personnes."),
+              _BulletPoint(text: "ITT d’au moins 8 jours pour autrui."),
+              _BulletPoint(text: "Mort d’une ou plusieurs personnes."),
             ],
           ),
 
@@ -388,43 +388,43 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Base : "),
-                const TextSpan(
+                TextSpan(text: "Base : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 322-5 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (violation manifestement délibérée) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 322-5 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les alinéas 3 à 6 augmentent les peines selon la nature de l’incendie (forêts/bois…), "
@@ -433,26 +433,26 @@ class DestructionsDangereusesPersonnesNonIntentionnellePage
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
-              const _BulletPoint(text: "Complicité : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
+              _BulletPoint(text: "Complicité : NON."),
             ],
           ),
         ],
@@ -489,10 +489,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -557,7 +557,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -600,7 +600,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -662,7 +662,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -694,7 +694,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -707,7 +707,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

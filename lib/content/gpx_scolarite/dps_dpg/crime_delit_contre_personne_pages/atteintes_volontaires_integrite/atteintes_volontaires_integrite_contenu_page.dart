@@ -15,7 +15,7 @@ class AtteintesVolontairesIntegriteContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -243,9 +243,9 @@ class _ModuleCard extends StatelessWidget {
 
     final Color subtitleColor = isDark
         ? textSoft
-        : Colors.white.withOpacity(0.92);
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+        : Colors.white.withValues(alpha: 0.92);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -274,8 +274,8 @@ class _ModuleCard extends StatelessWidget {
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Colors.black.withOpacity(.25),
-                    Colors.black.withOpacity(.60),
+                    Colors.black.withValues(alpha: .25),
+                    Colors.black.withValues(alpha: .60),
                   ],
                 ),
               ),

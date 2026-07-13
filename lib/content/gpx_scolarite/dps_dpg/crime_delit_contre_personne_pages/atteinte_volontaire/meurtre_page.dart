@@ -105,16 +105,16 @@ class MeurtrePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime le meurtre."),
+                TextSpan(text: " : définit et réprime le meurtre."),
               ]),
             ],
           ),
@@ -127,77 +127,77 @@ class MeurtrePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte positif de violence"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte positif de violence"),
+              _Paragraph(
                 "Il doit s’agir d’un acte de violence physique. Le moyen utilisé est indifférent "
                 "(à mains nues, arme par nature ou par destination, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Un comportement négatif (ex. privation de soins) ne caractérise pas l’élément matériel du meurtre : "
                 "l’omission peut relever d’autres qualifications (mise en péril des mineurs, omission de porter secours, etc.).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Des actes successifs ou multiples"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Des actes successifs ou multiples"),
+              _Paragraph(
                 "Un homicide volontaire peut résulter de moyens multiples et successifs employés pendant un temps plus ou moins long.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : un homicide volontaire peut résulter de moyens multiples et successifs, ce qui implique que le crime n’est pas nécessairement commis en un lieu unique et à une date unique ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 9 juin 1977, n° 77-91.008)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Sur la personne d’autrui"),
-              const _Paragraph(
+              _SubTitle("C) Sur la personne d’autrui"),
+              _Paragraph(
                 "• La victime doit être une personne humaine (le meurtre ne s’applique pas à un animal).\n"
                 "• La victime doit être vivante : l’acte accompli sur un cadavre relève de l’infraction impossible, "
                 "assimilée par la jurisprudence à la tentative.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : condamnation pour tentative d’homicide volontaire (barre de fer + strangulation), la victime étant déjà décédée ; l’échec résulte de circonstances indépendantes de la volonté de l’auteur ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 janvier 1986, n° 85-95.461)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Le suicide n’est pas incriminé.\n"
                 "Le consentement de la victime est indifférent : donner la mort même à la demande de la personne "
                 "(suicide assisté, euthanasie) constitue un meurtre.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Un lien de causalité entre l’acte et le décès",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il faut établir que la mort est la conséquence de l’acte incriminé : "
                 "les violences doivent être la cause efficiente, directe et immédiate du décès.",
               ),
@@ -212,31 +212,31 @@ class MeurtrePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Une intention homicide"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Une intention homicide"),
+              _Paragraph(
                 "L’acte ayant causé la mort doit être volontaire : l’auteur doit avoir eu la volonté de tuer "
                 "(détermination de donner la mort).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : l’intention homicide peut s’induire de l’utilisation d’une arme meurtrière et de la région du corps visée ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 15 mars 2017)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "L’intention doit être concomitante à l’acte de violence (ce qui distingue le meurtre de l’assassinat qui requiert la préméditation).\n"
                 "Les mobiles sont indifférents. L’erreur sur la personne n’efface pas l’intention : la volonté de tuer demeure.",
               ),
@@ -251,98 +251,98 @@ class MeurtrePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : meurtre précédé, accompagné ou suivi d’un autre crime (crimes distincts, temps très voisin ; auteur/complice).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : cette aggravation suppose que l’auteur (ou l’un de ses co-auteurs/complices) soit déclaré coupable du crime concomitant ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 26 février 2014)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : préméditation ou guet-apens (assassinat).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : meurtre aggravé notamment lorsqu’il est commis :",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Sur un mineur de 15 ans."),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(text: "Sur un mineur de 15 ans."),
+              _BulletPoint(
                 text:
                     "Sur un ascendant (légitime/naturel) ou père/mère adoptifs.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur une personne vulnérable (âge, maladie, infirmité, déficience, grossesse), apparente ou connue.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur une personne en état de sujétion psychologique/physique au sens de l’article 223-15-3, connu de l’auteur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur une personne dépositaire de l’autorité publique / forces de l’ordre / administration pénitentiaire / douanes, etc., dans l’exercice ou du fait des fonctions (qualité apparente ou connue).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur un enseignant, agent de transport public, mission de service public, professionnel de santé (qualité apparente ou connue).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur conjoint/concubin/partenaire (y compris ancien), ou en bande organisée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur un témoin, une victime ou une partie civile (pour empêcher ou en raison d’une plainte/déposition).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En raison du refus de contracter mariage ou de conclure une union.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
               ),
@@ -357,136 +357,136 @@ class MeurtrePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Meurtre simple : "),
-                const TextSpan(text: "30 ans de réclusion criminelle. — "),
+                TextSpan(text: "Meurtre simple : "),
+                TextSpan(text: "30 ans de réclusion criminelle. — "),
                 TextSpan(
                   text: "article 221-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Meurtre aggravé (articles 221-2 à 221-4) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "réclusion criminelle à perpétuité (période de sûreté). — ",
                 ),
                 TextSpan(
                   text: "articles 221-2, 221-3, 221-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 221-5-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text: "Tentative : OUI (commencement d’exécution).",
               ),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : tir de nuit par la fenêtre d’une chambre où l’auteur croit que dort la victime visée ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 12 avril 1877)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Provocation à commettre un assassinat"),
+              _SubTitle("Provocation à commettre un assassinat"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : incrimine l’instigation (offres/promesses/dons/avantages) afin qu’une personne commette un assassinat, lorsque le crime n’a été ni commis ni tenté (infraction distincte).",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Exemption & réduction de peine"),
+              _SubTitle("Exemption & réduction de peine"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5-3 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : exemption de peine si, ayant averti l’autorité administrative ou judiciaire, l’auteur a permis d’éviter la mort de la victime.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 221-5-3 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réduction des deux tiers si l’avertissement permet d’identifier d’autres auteurs/complices ou d’éviter la répétition ; si perpétuité encourue, ramenée à 15 ans.",
                 ),
@@ -527,10 +527,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -595,7 +595,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -638,7 +638,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -700,7 +700,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -711,10 +711,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -726,13 +725,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -745,13 +743,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

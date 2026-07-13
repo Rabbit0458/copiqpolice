@@ -148,32 +148,32 @@ class AssuranceObligatoirePage extends StatelessWidget {
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le conducteur d’un véhicule immatriculé est présumé satisfaire à l’obligation d’assurance "
                 "lorsqu’il résulte de la consultation du Fichier des Véhicules Assurés (FVA) que le véhicule est couvert.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "L’assureur dispose d’un délai de "),
-                  const TextSpan(
+                  TextSpan(text: "L’assureur dispose d’un délai de "),
+                  TextSpan(
                     text: "72 heures",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " à compter de la souscription du contrat pour alimenter le fichier.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Si la présomption FVA ne peut pas être établie"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Si la présomption FVA ne peut pas être établie"),
+              _BulletPoint(
                 text:
                     "Elle peut l’être par la présentation d’un justificatif d’assurance mentionnant sa durée de validité (15 jours maximum).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le conducteur peut également prouver par tous moyens (auprès des autorités judiciaires) que son véhicule est assuré.",
               ),
@@ -214,9 +214,9 @@ class AssuranceObligatoirePage extends StatelessWidget {
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En cas de non justification dans les délais, seule la contravention NATINF 6164 est maintenue.",
                   ),
@@ -328,20 +328,20 @@ class AssuranceObligatoirePage extends StatelessWidget {
                 const TextSpan(text: ")."),
               ]),
               const SizedBox(height: 12),
-              _NotaBox(
+              const _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Il s’agit d’un délit qui n’est pas puni d’une peine d’emprisonnement : pas de coercition.",
                   ),
                 ],
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Rappel",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les A.P.J.A. ne sont pas habilités à constater les délits par procès-verbal.",
                   ),
@@ -383,10 +383,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -451,7 +451,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -494,7 +494,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -556,7 +556,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -588,7 +588,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -601,7 +601,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

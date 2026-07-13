@@ -26,9 +26,9 @@ class VictimeChargeeMissionPage extends StatelessWidget {
         ? const Color(0xFF0F1E1B)
         : const Color(0xFFF0FFFB);
 
-    final Color accentBlue = const Color(0xFF1565C0);
-    final Color accentAmber = const Color(0xFFF9A825);
-    final Color accentTeal = const Color(0xFF00897B);
+    const Color accentBlue = Color(0xFF1565C0);
+    const Color accentAmber = Color(0xFFF9A825);
+    const Color accentTeal = Color(0xFF00897B);
 
     final Color titleColor = isDark ? Colors.white : const Color(0xFF0B1B3A);
 
@@ -70,17 +70,17 @@ class VictimeChargeeMissionPage extends StatelessWidget {
                   width: double.infinity,
                   padding: const EdgeInsets.fromLTRB(14, 12, 14, 12),
                   decoration: BoxDecoration(
-                    color: (isDark ? Colors.white : Colors.black).withOpacity(
+                    color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                       .06,
                     ),
                     borderRadius: BorderRadius.circular(16),
                     border: Border.all(
-                      color: (isDark ? Colors.white : Colors.black).withOpacity(
+                      color: (isDark ? Colors.white : Colors.black).withValues(alpha: 
                         .08,
                       ),
                     ),
                   ),
-                  child: _Paragraph.rich(const [
+                  child: const _Paragraph.rich([
                     TextSpan(text: "« "),
                     TextSpan(
                       text:
@@ -116,83 +116,83 @@ class VictimeChargeeMissionPage extends StatelessWidget {
                   cardColor: cardAmber,
                   accent: accentAmber,
                   titleColor: titleColor,
-                  children: [
-                    const _SubTitle(
+                  children: const [
+                    _SubTitle(
                       "2.1 - Les personnes chargées d'une mission de service public",
                     ),
                     _Paragraph.rich([
-                      const TextSpan(
+                      TextSpan(
                         text:
                             "La circulaire générale d'application du code pénal du 14 mai 1993 estime que cette expression désigne : ",
                       ),
-                      const TextSpan(text: "« "),
-                      const TextSpan(
+                      TextSpan(text: "« "),
+                      TextSpan(
                         text:
                             "Les personnes privées ou publiques qui, sans être dépositaires d'une parcelle de l'autorité publique, accomplissent à titre temporaire ou permanent, volontairement ou sur réquisition des autorités, un service quelconque",
                         style: TextStyle(fontWeight: FontWeight.w700),
                       ),
-                      const TextSpan(text: " ». "),
-                      const TextSpan(
+                      TextSpan(text: " ». "),
+                      TextSpan(
                         text:
                             "Cette qualité ne peut pas se déduire de la seule appartenance à un établissement public sans caractériser les actes accomplis en matière de service public.",
                       ),
                     ]),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle(
+                    _SubTitle(
                       "2.1.1 - Enseignants et personnels des établissements d'enseignement scolaire",
                     ),
-                    const _Paragraph(
+                    _Paragraph(
                       "Il n'existe pas de distinction concernant les établissements d'enseignement scolaire. Il peut s'agir d'établissements publics ou privés qui regroupent les écoles (maternelles et primaires), collèges, lycées, université ou écoles supérieures.",
                     ),
-                    const SizedBox(height: 10),
-                    const _Paragraph(
+                    SizedBox(height: 10),
+                    _Paragraph(
                       "Le législateur a souhaité protéger par cette circonstance aggravante l'ensemble du corps professoral mais également l'ensemble des personnels travaillant au sein de ces établissements : enseignants (maître des écoles, professeurs, maître de conférence...), personnels de direction, agents administratifs, personnels techniques (entretien et fonctionnement des infrastructures), etc.",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle(
+                    _SubTitle(
                       "2.1.2 - Agents d'un exploitant de réseau de transport public de voyageurs",
                     ),
-                    const _Paragraph(
+                    _Paragraph(
                       "Cette expression vise des établissements tels que la RATP ou la SNCF mais également, par exemple, les compagnies chargées d'effectuer le ramassage scolaire.",
                     ),
-                    const SizedBox(height: 10),
-                    const _Paragraph(
+                    SizedBox(height: 10),
+                    _Paragraph(
                       "Le législateur a décidé d'étendre l'application de la qualité de personne chargée d'une mission de service public à tous les agents des exploitants, et non seulement aux agents en contact avec le public.",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle(
+                    _SubTitle(
                       "2.1.3 - Autres personnes chargées d'une mission de service public",
                     ),
-                    const _Paragraph(
+                    _Paragraph(
                       "La jurisprudence alimente régulièrement cette catégorie de personnes. Sans être exhaustif, on peut citer : un parlementaire, un garde-chasse particulier, un préposé à la distribution du courrier, une gérante d'agence postale d'une commune, un expert nommé par décision judiciaire, un greffier, un gardien de scellés, un médecin requis par un O.P.J., etc.",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle("2.1.4 - Les professionnels de santé"),
-                    const _Paragraph(
+                    _SubTitle("2.1.4 - Les professionnels de santé"),
+                    _Paragraph(
                       "Cette adjonction protège dorénavant médecin, infirmier, pharmacien, etc.",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle("2.1.5 - Les personnes assimilées"),
-                    const _Paragraph(
+                    _SubTitle("2.1.5 - Les personnes assimilées"),
+                    _Paragraph(
                       "La loi n° 2006-1294 du 23 octobre 2006 assimile les arbitres et juges sportifs à des personnes chargées d'une mission de service public.",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle("2.2 - L'exercice des fonctions"),
-                    const _Paragraph(
+                    _SubTitle("2.2 - L'exercice des fonctions"),
+                    _Paragraph(
                       "La personne chargée d'une mission de service public doit avoir été victime des faits répréhensibles alors qu'elle était en service ou qu'elle procédait à un des actes entrant dans ses attributions (dans l'exercice de ses fonctions).",
                     ),
-                    const SizedBox(height: 12),
+                    SizedBox(height: 12),
 
-                    const _SubTitle(
+                    _SubTitle(
                       "2.3 - La qualité apparente ou connue de l'auteur",
                     ),
-                    const _Paragraph(
+                    _Paragraph(
                       "Il s'agit de la même condition que celle liée à la particulière vulnérabilité. Elle implique donc que l'auteur agit en raison de la qualité de la victime.",
                     ),
                   ],
@@ -311,10 +311,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -379,7 +379,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -422,7 +422,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -484,7 +484,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -516,7 +516,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -529,7 +529,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

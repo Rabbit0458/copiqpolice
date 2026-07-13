@@ -109,44 +109,44 @@ class StatutJuridiqueMineurPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’autorité parentale est un ensemble de droits et devoirs exercés dans l’intérêt de l’enfant. ",
                 ),
                 TextSpan(
                   text: "Article 371-1 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : protection (sécurité, santé, vie privée, moralité), éducation, développement, respect de la personne.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "L’autorité parentale s’exerce "),
-                  const TextSpan(
+                  TextSpan(text: "L’autorité parentale s’exerce "),
+                  TextSpan(
                     text: "sans violences physiques ou psychologiques",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " et les parents associent l’enfant aux décisions selon son âge/maturité (",
                   ),
                   TextSpan(
                     text: "article 371-1 du Code civil",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
             ],
@@ -160,257 +160,257 @@ class StatutJuridiqueMineurPage extends StatelessWidget {
             cardColor: cardRights,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Droit à l’hébergement"),
+            children: const [
+              _SubTitle("A) Droit à l’hébergement"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le mineur trouve d’abord sa sécurité en étant hébergé chez ses parents où il est normalement domicilié. ",
                 ),
                 TextSpan(
                   text: "Article 108-2 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Atteintes sévèrement punies :\n"),
-                  const TextSpan(
+                  TextSpan(text: "Atteintes sévèrement punies :\n"),
+                  TextSpan(
                     text: "• Abandon / non-représentation d’enfant : ",
                   ),
                   TextSpan(
                     text: "articles 227-3 et 227-5 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text: "• Enlèvement / détournement de mineur : ",
                   ),
                   TextSpan(
                     text:
                         "article 224-5, articles 227-7 et 227-8 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Droit à l’entretien"),
+              _SubTitle("B) Droit à l’entretien"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les parents doivent satisfaire aux besoins de l’enfant (nourriture, logement, santé, éducation). ",
                 ),
                 TextSpan(
                   text: "Article 203 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les dépenses sont supportées selon les ressources et la situation sociale.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "En cas de séparation (divorce) : l’obligation d’entretien prend souvent la forme d’une pension alimentaire.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Droit à l’éducation"),
-              const _Paragraph(
+              _SubTitle("C) Droit à l’éducation"),
+              _Paragraph(
                 "Les parents ont le droit et le devoir d’assurer l’éducation : instruction, formation professionnelle, "
                 "mais aussi formation civique, morale et religieuse. Le choix des méthodes d’éducation leur appartient, "
                 "mais le juge peut intervenir si elles entraînent des violences ou sont contraires aux bonnes mœurs (assistance éducative).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 624-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : amende (750 €) si un parent ne fait pas fréquenter assidûment l’école à un enfant soumis à l’obligation scolaire, sans motif légitime/excuse valable.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Droit à la santé"),
+              _SubTitle("D) Droit à la santé"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les parents doivent assurer et veiller à la santé de leurs enfants. ",
                 ),
                 TextSpan(
                   text: "Article 371-1 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exemples d’atteintes / infractions citées",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "• Exemples (défaut de soins, inconduite notoire, etc.) : ",
                   ),
                   TextSpan(
                     text: "article 378-1 du Code civil",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(text: "• Violences sur mineur : "),
+                  TextSpan(text: ".\n"),
+                  TextSpan(text: "• Violences sur mineur : "),
                   TextSpan(
                     text:
                         "articles 222-8, 222-10 (1°), 222-12 (1°), 222-13 (1°), 222-14 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "• Atteintes à la santé/sécurité/moralité/éducation : ",
                   ),
                   TextSpan(
                     text: "article 227-17 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text: "• Privation volontaire d’aliments ou de soins : ",
                   ),
                   TextSpan(
                     text: "articles 227-15 et 227-16 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Constitue notamment une privation de soins : maintenir un enfant de moins de 6 ans sur la voie publique "
                         "ou dans un espace de transport collectif, dans le but de solliciter la générosité des passants.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Obligation scolaire : "),
+                TextSpan(text: "Obligation scolaire : "),
                 TextSpan(
                   text: "article L. 131-1 du Code de l’éducation",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article 227-17-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Droit à l’image & respect de la vie privée"),
+              _SubTitle("E) Droit à l’image & respect de la vie privée"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les parents protègent le droit à l’image du mineur dans le respect de sa vie privée, "
                       "et associent l’enfant à ce droit selon son âge et sa maturité. ",
                 ),
                 TextSpan(
                   text: "Article 372-1 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "F) Droit au recours à la justice & défense des intérêts",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 388-1 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le mineur capable de discernement peut être entendu, dans toute procédure le concernant, "
                       "par le juge (ou la personne désignée). La demande ne peut être écartée que par décision spécialement motivée.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Le mineur peut être entendu seul, avec un avocat, ou avec une personne de son choix (si conforme à son intérêt).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("G) Droit à l’aide juridictionnelle"),
+              _SubTitle("G) Droit à l’aide juridictionnelle"),
               _Paragraph.rich([
-                const TextSpan(text: "Attribuée de droit au mineur : "),
+                TextSpan(text: "Attribuée de droit au mineur : "),
                 TextSpan(
                   text: "article 9-1 de la loi n° 91-647 du 10 juillet 1991",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -423,99 +423,99 @@ class StatutJuridiqueMineurPage extends StatelessWidget {
             cardColor: cardDuties,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "En contrepartie de la protection dont il bénéficie, le mineur doit respecter un certain nombre de devoirs.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Respect des parents"),
+              _SubTitle("A) Respect des parents"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 371 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’enfant, à tout âge, doit honneur et respect à ses père et mère.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Devoir d’obéissance"),
+              _SubTitle("B) Devoir d’obéissance"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 371-1 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’enfant doit respecter l’autorité des parents jusqu’à sa majorité ou son émancipation.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Devoir de domiciliation"),
+              _SubTitle("C) Devoir de domiciliation"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le mineur non émancipé est domicilié chez ses parents : ",
                 ),
                 TextSpan(
                   text: "article 108-2 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Si les parents ont des domiciles distincts : domiciliation chez celui avec lequel il réside, "
                 "ou alternativement selon décision de justice.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’enfant ne peut quitter la maison familiale sans permission des parents et ne peut en être retiré "
                       "que dans les cas prévus par la loi : ",
                 ),
                 TextSpan(
                   text: "article 371-3 du Code civil",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Obligation de scolarisation"),
-              const _Paragraph(
+              _SubTitle("D) Obligation de scolarisation"),
+              _Paragraph(
                 "L’instruction est obligatoire pour les enfants (français et étrangers), entre 3 ans et 16 ans.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 131-1 du Code de l’éducation",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : cadre général de l’obligation d’instruction.",
                 ),
               ]),
@@ -555,10 +555,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -623,7 +623,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -666,7 +666,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -728,7 +728,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -760,7 +760,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -773,7 +773,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

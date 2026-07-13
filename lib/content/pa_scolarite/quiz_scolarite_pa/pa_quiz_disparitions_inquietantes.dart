@@ -2074,8 +2074,12 @@ class _FeedbackSparkles extends StatelessWidget {
 
         const n = 8;
         final maxR = size * .58;
+        // ⭐⭐⭐ MASQUER LES ÉTOILES SI t == 1.0 ⭐⭐⭐
+        final showStars = t < 0.999;
+
         final kids = <Widget>[];
 
+        if (showStars) {
         for (var i = 0; i < n; i++) {
           final ang = (i / n) * 2 * math.pi;
           final r = maxR * t;
@@ -2097,6 +2101,7 @@ class _FeedbackSparkles extends StatelessWidget {
             ),
           );
         }
+        } // showStars
 
         return Stack(
           alignment: Alignment.center,

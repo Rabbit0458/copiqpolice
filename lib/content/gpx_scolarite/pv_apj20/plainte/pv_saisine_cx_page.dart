@@ -89,40 +89,40 @@ class PVPvSaisineCxPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les officiers et agents de police judiciaire sont tenus de recevoir les plaintes, y compris si le service est territorialement incompétent (transmission si besoin). — ",
                 ),
                 TextSpan(
                   text: "article 15-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La plainte peut également être déposée par voie électronique (atteintes aux biens, auteur inconnu), sans pouvoir être imposée à la victime. — ",
                 ),
                 TextSpan(
                   text: "article 15-3-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans tous les cas : dépôt de plainte = procès-verbal + récépissé immédiat, et copie si la victime le demande.",
                   ),
@@ -159,57 +159,57 @@ class PVPvSaisineCxPage extends StatelessWidget {
             cardColor: cardHow,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Situer les faits (temps / espace)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Situer les faits (temps / espace)"),
+              _BulletPoint(
                 text:
                     "Date/heure (ou période) la plus précise possible, et chronologie simple.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Lieu précis (adresse, étage, parties communes, parking, voie publique…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Contexte : comment la victime découvre les faits, première constatation.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Décrire l’infraction et le mode opératoire"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Décrire l’infraction et le mode opératoire"),
+              _BulletPoint(
                 text:
                     "Ce qui s’est passé (faits matériels), ce que la victime a vu/entendu/constaté.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mode opératoire : accès, effraction, ruse, fraude, moyen utilisé, timing.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Éléments techniques utiles : identifiants, numéros, IBAN, pseudo, URL, plateforme, IMEI, immatriculation…",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("C) Exploitabilité immédiate"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("C) Exploitabilité immédiate"),
+              _BulletPoint(
                 text:
                     "Signalements : description auteur(s) si aperçu(s), tenue, direction de fuite, véhicule.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Objets/biens : liste détaillée (marque, modèle, série, valeur, particularités).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préjudice : matériel, financier, moral (montants, dates de débits, factures).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Pièces remises : captures, mails, messages, relevés, factures, certificats… (à mentionner en ANNEXE).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Astuce rédaction",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Écrire simple, factuel, chronologique. Faire ressortir : « quoi / quand / où / comment / preuves ». "
                         "Le PV doit permettre d’engager des actes sans recontacter immédiatement la victime.",
@@ -227,39 +227,39 @@ class PVPvSaisineCxPage extends StatelessWidget {
             cardColor: cardModels,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Deux grands types de modèles peuvent être utilisés selon la situation.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Procès-verbal ordinaire (P.V.O.)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("A) Procès-verbal ordinaire (P.V.O.)"),
+              _BulletPoint(
                 text:
                     "Utilisé lorsque la victime connaît l’auteur (personne dénommée) ou quand le dossier ne nécessite pas de recherches complexes immédiates.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exemples : violences entre époux, dégradations, violences en général (selon contexte).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Procès-verbaux normalisés (contre inconnu)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Procès-verbaux normalisés (contre inconnu)"),
+              _BulletPoint(
                 text:
                     "Conçus pour le recueil des plaintes contre X (atteintes aux biens, auteur inconnu).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exemples : PV de voie publique, C.R.I. (Compte-Rendu d’Infraction Initiale), compte-rendu complémentaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Exemples : vol de véhicule immatriculé, découverte/restitution de véhicule, usage frauduleux de moyen de paiement…",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "But",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Standardiser la collecte d’informations clés pour gagner du temps et sécuriser la qualité du PV (rubriques complètes).",
                   ),
@@ -276,91 +276,91 @@ class PVPvSaisineCxPage extends StatelessWidget {
             cardColor: cardOnline,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Plainte en ligne"),
+            children: const [
+              _SubTitle("A) Plainte en ligne"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Service accessible aux usagers pour une plainte par voie électronique (atteintes aux biens, auteur inconnu). — ",
                 ),
                 TextSpan(
                   text: "article 15-3-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les infractions concernées sont listées notamment par ",
                 ),
                 TextSpan(
                   text: "l’article D. 8-2-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (atteintes aux biens : appropriations frauduleuses, destructions/dégradations, délit de fuite, certaines contraventions…).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Deux traitements : plainte entièrement dématérialisée (si aucun acte en présence requis) ou plainte finalisée en présentiel.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La plainte en ligne ne dispense pas d’une audition ultérieure si la nature/gravitée des faits le justifie.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) THÉSÉE (e-escroqueries)"),
+              _SubTitle("B) THÉSÉE (e-escroqueries)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Pour les escroqueries commises sur internet : télédéclaration / plainte via le téléservice THÉSÉE (traitement harmonisé des enquêtes et signalements e-escroqueries). Référence mentionnée : ",
                 ),
                 TextSpan(
                   text: "article A 1er du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Rappel",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les infractions visées (exemples) : e-escroquerie, e-chantage, e-extorsion (selon les cas et connexités).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Signalement VSS (violences sexuelles et sexistes)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Portail accessible 24h/24 et 7j/7 via une messagerie de type « tchat », permettant d’échanger avec des policiers formés à l’accueil des victimes de violences sexuelles, sexistes ou conjugales.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Objectif",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Faciliter le premier contact, orienter, sécuriser l’accueil et préparer une prise en charge adaptée (plainte, audition, protection).",
                   ),
@@ -402,10 +402,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -470,7 +470,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -513,7 +513,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -575,7 +575,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -607,7 +607,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -620,7 +620,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

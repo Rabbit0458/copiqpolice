@@ -48,8 +48,8 @@ class PpJuridictionsPenalesPage extends StatelessWidget {
               ),
               const SizedBox(height: 12),
 
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Les juridictions pénales jugent les infractions et appliquent les peines prévues par la loi. '
                       'On distingue les juridictions de droit commun, compétentes pour connaître de toutes les infractions '
@@ -70,8 +70,8 @@ class PpJuridictionsPenalesPage extends StatelessWidget {
                     : const Color(0xFF0D47A1),
                 children: [
                   const _SubTitle('1.1.1 - Le tribunal de police'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'Le tribunal de police juge les contraventions. Il est organisé et compétent selon les règles suivantes :\n\n',
                     ),
@@ -236,8 +236,8 @@ class PpJuridictionsPenalesPage extends StatelessWidget {
                     : const Color(0xFF4A148C),
                 children: [
                   const _SubTitle('1.2.1 - Les juridictions pour mineurs'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'Les juridictions pour mineurs sont des juridictions d’exception dont la compétence est déterminée par la qualité de l’auteur (mineur) et par la nature de l’infraction. '
                           'Elles appliquent les règles du Code de justice pénale des mineurs et du Code de l’organisation judiciaire.',
@@ -449,8 +449,8 @@ class PpJuridictionsPenalesPage extends StatelessWidget {
                       'Articles 706-107 à 706-111-2 du Code de procédure pénale.',
                     ),
                   ]),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'Elles ont une compétence concurrente avec les tribunaux territorialement compétents, à tous les stades de la procédure : enquête, poursuite, instruction et jugement des infractions, '
                           'sauf pour certaines infractions commises en haute mer, qui relèvent de la compétence exclusive du tribunal judiciaire de Paris.',
@@ -470,8 +470,8 @@ class PpJuridictionsPenalesPage extends StatelessWidget {
                       'Articles 706-2 à 706-2-3 du Code de procédure pénale.',
                     ),
                   ]),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           'La compétence territoriale d’un tribunal judiciaire peut être étendue au ressort d’une ou plusieurs cours d’appel pour l’enquête, la poursuite, l’instruction et, s’il s’agit de délits, le jugement des affaires complexes relatives :\n',
                     ),
@@ -571,8 +571,8 @@ class PpJuridictionsPenalesPage extends StatelessWidget {
                   ]),
                   const SizedBox(height: 6),
                   const _SubTitle('2.1.1.2.1 - Décisions susceptibles d’appel'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text: 'Sont notamment susceptibles d’appel :\n',
                     ),
                   ]),
@@ -656,10 +656,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -724,7 +724,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -767,7 +767,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -829,7 +829,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -840,10 +840,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -855,13 +854,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -874,13 +872,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

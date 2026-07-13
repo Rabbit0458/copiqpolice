@@ -102,7 +102,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =========================================================
   // CORRUPTION DE MINEUR — FONDEMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Fondement',
     question: 'L’infraction de corruption de mineur est prévue par :',
     options: [
@@ -118,7 +118,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // CORRUPTION DE MINEUR — 227-22
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Fondement',
     question: 'La corruption de mineur est prévue et réprimée par :',
     options: [
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que la corruption de mineur est prévue par l’article 227-22 al.1 et 2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Auteur',
     question:
         'Concernant l’auteur de la corruption de mineur (art. 227-22), il peut être :',
@@ -145,7 +145,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'L’alinéa 1 ne fixe pas de condition d’âge : l’auteur peut être majeur ou mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Victime',
     question: 'La victime de la corruption de mineur doit être :',
     options: [
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'La victime est un mineur de 18 ans (sans condition de moralité, consentement indifférent).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Consentement',
     question: 'Le consentement du mineur, en matière de corruption de mineur :',
     options: [
@@ -170,7 +170,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il importe peu que le mineur soit consentant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Acte',
     question: 'La corruption de mineur vise notamment :',
     options: [
@@ -184,7 +184,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours définit l’acte de corruption par l’objectif de dépravation sexuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Propos obscènes',
     question: 'De simples propos obscènes ou de simples conseils sont :',
     options: [
@@ -197,7 +197,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que les simples propos/conseils ne suffisent pas : il faut persistance et précision.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Résultat',
     question:
         'Pour caractériser la corruption de mineur, il faut prouver que le mineur :',
@@ -211,7 +211,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Il n’est pas nécessaire d’établir un trouble effectif ni un passage à l’acte du mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Illustration (alinéa 2)',
     question: 'L’alinéa 2 de l’article 227-22 vise notamment :',
     options: [
@@ -225,7 +225,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Cas expressément prévu : réunions comportant exhibitions ou relations sexuelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunion',
     question:
         'Assister en connaissance de cause à une réunion comportant exhibitions ou relations sexuelles avec présence d’un mineur :',
@@ -239,7 +239,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'L’alinéa 2 réprime aussi l’assistance en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question: 'L’élément moral exige notamment :',
     options: [
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur la conscience obscénité + âge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — But',
     question:
         'Si l’auteur agit uniquement pour assouvir ses pulsions personnelles sans chercher à dépraver le mineur :',
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que l’intention de corrompre est nécessaire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Circonstance aggravante (réseaux)',
     question:
         'La corruption de mineur est aggravée si le mineur a été mis en contact via :',
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Circ. aggravante prévue à l’article 227-22 al.1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Circonstance aggravante (lieux)',
     question: 'La corruption de mineur est aggravée si commise :',
     options: [
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Circ. aggravante prévue à l’article 227-22 al.1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Aggravation âge',
     question: 'Lorsque le mineur est âgé de moins de 15 ans :',
     options: [
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'L’âge < 15 ans constitue une circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Bande organisée',
     question: 'La corruption de mineur commise en bande organisée :',
     options: ['Est aggravée', 'N’est pas visée', 'Relève uniquement du civil'],
@@ -313,7 +313,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Art. 227-22 al.3 : bande organisée = aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur est :',
     options: [
@@ -329,7 +329,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // DIFFUSION MESSAGE VIOLENT / TERRORISME / PORNO / DANGEREUX — 227-24
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Fondement',
     question:
         'La diffusion d’un message violent/terroriste/pornographique/dangereux susceptible d’être vu par un mineur est prévue par :',
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise l’article 227-24 al.1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Notion',
     question: 'Le terme « message » doit être compris :',
     options: [
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise une acception très large du message.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Support',
     question: 'Le support du message (art. 227-24) est :',
     options: ['Indifférent', 'Uniquement papier', 'Uniquement numérique'],
@@ -363,7 +363,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Texte : « par quelque moyen que ce soit et quel qu’en soit le support ».',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Mineur atteint ?',
     question:
         'Pour caractériser l’infraction, il faut que le mineur ait effectivement vu le message :',
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise la susceptibilité, pas l’atteinte effective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Négligence',
     question: 'L’infraction peut être constituée en cas :',
     options: [
@@ -389,7 +389,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours mentionne l’imprudence/négligence permettant l’accès.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message dangereux — Tentative',
     question: 'La tentative de l’infraction de l’article 227-24 est :',
     options: ['Non punissable', 'Punissable', 'Toujours punissable'],
@@ -401,7 +401,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PRIVATION D’ALIMENTS OU DE SOINS — 227-15 / 227-16
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Fondement',
     question:
         'La privation d’aliments ou de soins à mineur de 15 ans est prévue par :',
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise expressément l’article 227-15 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Victime',
     question: 'La victime doit être :',
     options: [
@@ -426,7 +426,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Interprétation stricte : < 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Auteur',
     question: 'Peut être auteur de l’infraction (art. 227-15) :',
     options: [
@@ -440,7 +440,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le texte vise plusieurs catégories : ascendants, autorité parentale, autorité de fait.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Notion',
     question: 'La privation de soins concerne notamment :',
     options: [
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours décrit la privation de soins au quotidien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Condition de santé',
     question: 'Pour être punissable, la privation doit :',
     options: [
@@ -464,7 +464,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition centrale : compromission de la santé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Résultat',
     question: 'L’article 227-15 exige :',
     options: [
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Pas besoin d’atteinte grave effective : susceptibilité suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Présomption (moins de 6 ans)',
     question:
         'Maintenir un enfant de moins de 6 ans sur la voie publique pour solliciter la générosité :',
@@ -490,7 +490,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Présomption prévue à l’article 227-15 al.2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Mendicité',
     question: 'Le simple fait de mendier avec un enfant en bas âge est :',
     options: [
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite : pas en soi constitutif.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Élément moral',
     question: 'L’élément moral implique :',
     options: [
@@ -515,7 +515,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Cass. crim., 11 mars 1975 : conscience/prévision du mal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Aggravation mort',
     question: 'Si la privation entraîne la mort du mineur :',
     options: [
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne l’article 227-16 en cas de mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation soins — Tentative',
     question: 'La tentative de privation d’aliments ou de soins (227-15) est :',
     options: [
@@ -543,7 +543,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PROVOCATION DIRECTE D’UN MINEUR À COMMETTRE CRIME/DÉLIT — 227-21
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Fondement',
     question:
         'La provocation directe d’un mineur à commettre un crime ou un délit est prévue par :',
@@ -556,7 +556,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise expressément l’article 227-21 al.1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Directe',
     question: 'La provocation doit être :',
     options: [
@@ -568,7 +568,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur la relation précise et incontestable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Contravention',
     question: 'La provocation visée par l’article 227-21 concerne :',
     options: [
@@ -580,7 +580,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'La provocation à une contravention n’est pas visée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Effet',
     question: 'Il est nécessaire que la provocation ait été suivie d’effet :',
     options: ['Oui', 'Non', 'Uniquement si le mineur < 15 ans'],
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'L’infraction est autonome : effet indifférent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Habitude',
     question: 'La provocation à un acte unique peut suffire :',
     options: [
@@ -600,7 +600,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise qu’un acte unique suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Aggravations',
     question: 'L’article 227-21 al.2 prévoit notamment l’aggravation si :',
     options: [
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Circ. aggravante : mineur de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -628,7 +628,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PROPOSITIONS SEXUELLES À MINEUR < 15 ANS PAR INTERNET — 227-22-1
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Fondement',
     question:
         'Les propositions sexuelles à un mineur de 15 ans via communication électronique sont prévues par :',
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise l’article 227-22-1 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Auteur',
     question: 'L’auteur des propositions sexuelles (227-22-1) doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -649,7 +649,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise expressément un majeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Victime',
     question: 'La victime peut être :',
     options: [
@@ -662,7 +662,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Il suffit que l’auteur ait cru échanger avec un mineur de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Objet',
     question: 'Les propositions doivent être :',
     options: [
@@ -674,7 +674,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur des propositions explicites.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Aggravation',
     question: 'L’infraction est aggravée lorsque :',
     options: [
@@ -686,7 +686,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Art. 227-22-1 al.2 : rencontre = aggravation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles — Tentative',
     question:
         'La tentative des propositions sexuelles à mineur (227-22-1) est :',
@@ -703,7 +703,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // ATTEINTES SEXUELLES — MAJEUR SUR MINEUR < 15 ANS — 227-25 / 227-26
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Fondement',
     question:
         'L’atteinte sexuelle par un majeur sur mineur de 15 ans (hors viol/agression sexuelle) est prévue par :',
@@ -716,7 +716,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise l’article 227-25 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Définition',
     question: 'L’atteinte sexuelle suppose :',
     options: [
@@ -728,7 +728,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Sinon : viol/agression sexuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Auteur',
     question: 'L’auteur doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise expressément le majeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Connaissance de l’âge',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -749,7 +749,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Principe : erreur non exonératoire, sauf hypothèses très particulières admises par la jurisprudence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Aggravation',
     question:
         'L’atteinte sexuelle (227-25) est aggravée (227-26) notamment si :',
@@ -763,7 +763,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Art. 227-26 : autorité, abus de fonctions, pluralité, réseau, ivresse/stupéfiants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Tentative',
     question: 'La tentative des atteintes sexuelles sur mineur est :',
     options: ['Punissable', 'Non punissable', 'Punissable seulement si ITT'],
@@ -775,7 +775,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // ATTEINTES SEXUELLES — MAJEUR SUR MINEUR > 15 — 227-27
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Fondement',
     question:
         'Les atteintes sexuelles sur mineur de plus de 15 ans (hors viol/agression sexuelle) sont prévues par :',
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise l’article 227-27 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Condition',
     question: 'Pour relever de l’article 227-27, il faut notamment :',
     options: [
@@ -800,7 +800,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise ces deux hypothèses.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Victime',
     question: 'La victime doit être :',
     options: [
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Critère d’âge au jour des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Tentative',
     question: 'La tentative des atteintes sexuelles sur mineur (227-27) est :',
     options: [
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PÉDOPORNOGRAPHIE — 227-23 (fabrication / diffusion / consultation / détention)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement',
     question:
         'L’exploitation de l’image pornographique d’un mineur est prévue par :',
@@ -841,7 +841,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours détaille les alinéas 1, 2, 4, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Notion image/représentation',
     question: 'Le texte vise :',
     options: [
@@ -854,7 +854,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le terme représentation couvre dessins, montages, morphing, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Pornographique',
     question: 'La simple nudité d’un mineur, sans attitude sexuelle :',
     options: [
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il faut un caractère pornographique (activité sexuelle).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fabrication (al.1)',
     question: 'L’alinéa 1 réprime notamment :',
     options: [
@@ -879,7 +879,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Fabrication en vue de diffusion (sauf mineur < 15 ans : diffusion pas exigée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Mineur < 15 ans',
     question: 'Si l’image concerne un mineur de moins de 15 ans :',
     options: [
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Exception expressément prévue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Diffusion (al.2)',
     question: 'L’alinéa 2 réprime notamment :',
     options: [
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Diffusion au sens large.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Rendre disponible',
     question: 'Rendre disponible correspond notamment au fait :',
     options: [
@@ -916,7 +916,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours donne précisément cet exemple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Consultation/détention (al.4)',
     question: 'L’alinéa 4 réprime notamment :',
     options: [
@@ -929,7 +929,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Texte : consultation habituelle ou payante + acquisition/détention.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Paiement',
     question: 'La consultation est punie même si occasionnelle lorsqu’elle :',
     options: [
@@ -941,7 +941,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'La consultation occasionnelle devient punissable si payante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Aggravations',
     question: 'Le réseau de communications électroniques peut constituer :',
     options: [
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Aggravation prévue par le texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Bande organisée',
     question: 'La bande organisée constitue :',
     options: [
@@ -965,7 +965,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Aggravation prévue au texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Tentative',
     question: 'La tentative des infractions prévues par l’article 227-23 est :',
     options: [
@@ -977,7 +977,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Prévue à l’alinéa 6.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — Corruption vs atteinte sexuelle',
     question:
         'Un majeur réalise un acte à connotation sexuelle devant un mineur pour l’exciter/dépraver : on vise prioritairement :',
@@ -990,7 +990,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'But = dépravation sexuelle du mineur : corruption.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — 227-24',
     question:
         'Pour 227-24, l’accès d’un mineur via une simple case “j’ai +18 ans” :',
@@ -1004,7 +1004,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que l’infraction peut être constituée même dans ce cas.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — 227-15',
     question: 'Privation de soins à mineur : il faut établir :',
     options: [
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'C’est l’exigence textuelle centrale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Piège concours — 227-21',
     question:
         'Une incitation générale “devenez délinquants” sans infraction déterminée :',
@@ -1030,7 +1030,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Consentement',
     question: 'Le consentement du mineur en matière de corruption :',
     options: ['Est indifférent', 'Exclut l’infraction', 'Atténue la peine'],
@@ -1040,7 +1040,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Acte matériel',
     question: 'Les simples propos obscènes isolés sont :',
     options: [
@@ -1054,7 +1054,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Internet',
     question:
         'Le fait de mettre un mineur en contact via un réseau de communication électronique constitue :',
@@ -1068,7 +1068,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur est :',
     options: [
@@ -1082,7 +1082,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question:
         'Si l’auteur agit uniquement pour assouvir ses pulsions sans volonté de corrompre :',
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'L’intention de corrompre est indispensable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Support',
     question: 'Le support du message dangereux :',
     options: [
@@ -1108,7 +1108,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Public',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Jeux dangereux',
     question:
         'Les jeux incitant à une mise en danger physique (ex : jeu du foulard) :',
@@ -1135,7 +1135,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Élément moral',
     question: 'L’élément moral est caractérisé par :',
     options: [
@@ -1147,7 +1147,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'La négligence suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Âge de la victime',
     question: 'La victime doit être :',
     options: [
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Mendicité',
     question:
         'Maintenir un enfant de moins de 6 ans sur la voie publique pour mendier :',
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Résultat',
     question: 'Le dommage à la santé du mineur :',
     options: [
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Élément moral',
     question: 'La volonté de nuire est :',
     options: ['Inutile', 'Obligatoire', 'Présumée'],
@@ -1196,7 +1196,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Aggravation',
     question: 'La privation ayant entraîné la mort du mineur constitue :',
     options: ['Un crime', 'Un délit aggravé', 'Une contravention'],
@@ -1204,7 +1204,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Prévu à l’article 227-16 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Nature',
     question: 'Une simple apologie générale de la délinquance :',
     options: ['Ne suffit pas', 'Est constitutive', 'Vaut tentative'],
@@ -1213,7 +1213,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Infraction visée',
     question: 'La provocation doit porter sur :',
     options: [
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Effet',
     question: 'Le passage à l’acte du mineur est :',
     options: ['Indifférent', 'Nécessaire', 'Atténuant'],
@@ -1235,7 +1235,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Aggravation',
     question: 'La provocation adressée à un mineur de 15 ans :',
     options: [
@@ -1248,7 +1248,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Élément moral',
     question: 'L’auteur doit avoir conscience :',
     options: [
@@ -1260,7 +1260,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Infraction intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Définition',
     question: 'La provocation à la pédopornographie consiste à :',
     options: [
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Réalisation',
     question: 'L’infraction est constituée même si :',
     options: [
@@ -1286,7 +1286,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Élément moral',
     question: 'L’élément moral exige :',
     options: [
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Tentative',
     question: 'La tentative de provocation à la pédopornographie est :',
     options: [
@@ -1311,7 +1311,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'La tentative n’est pas prévue par le texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Définition',
     question: 'La provocation à la consommation d’alcool concerne :',
     options: [
@@ -1324,7 +1324,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Provocation directe',
     question: 'La provocation doit être :',
     options: ['Directe et précise', 'Générale', 'Symbolique'],
@@ -1333,7 +1333,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Mineur de 15 ans',
     question:
         'La provocation adressée à un mineur de moins de 15 ans constitue :',
@@ -1347,7 +1347,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Alcool — Élément moral',
     question: 'L’auteur doit avoir conscience :',
     options: [
@@ -1359,7 +1359,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Infraction intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Usage',
     question: 'La provocation à l’usage de stupéfiants suppose :',
     options: [
@@ -1372,7 +1372,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Trafic',
     question: 'La provocation à devenir guetteur relève :',
     options: [
@@ -1385,7 +1385,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Élément moral',
     question: 'L’auteur doit agir :',
     options: ['En connaissance de cause', 'Par imprudence', 'Par négligence'],
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Stupéfiants — Tentative',
     question: 'La tentative de provocation aux stupéfiants est :',
     options: [
@@ -1406,7 +1406,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'La tentative n’est pas prévue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Auteur',
     question: 'L’infraction peut être commise par :',
     options: [
@@ -1419,7 +1419,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Abandon',
     question: 'L’abandon moral peut exister :',
     options: [
@@ -1432,7 +1432,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Motif légitime',
     question: 'Le motif légitime est apprécié :',
     options: ['Restrictivement par les juges', 'Largement', 'Automatiquement'],
@@ -1441,7 +1441,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Élément moral',
     question: 'L’élément moral repose sur :',
     options: [
@@ -1454,7 +1454,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction parentale — Tentative',
     question: 'La tentative de soustraction aux obligations parentales est :',
     options: ['Non punissable', 'Punissable', 'Punissable en cas de récidive'],
@@ -1462,7 +1462,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'La tentative n’est pas prévue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Auteur',
     question: 'Concernant l’auteur de la corruption de mineur :',
     options: [
@@ -1476,7 +1476,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Victime',
     question: 'La victime de la corruption de mineur doit être :',
     options: [
@@ -1490,7 +1490,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément matériel',
     question: 'Constitue un acte de corruption de mineur :',
     options: [
@@ -1504,7 +1504,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunions sexuelles',
     question:
         'Le fait pour un majeur d’organiser des réunions sexuelles auxquelles un mineur assiste constitue :',
@@ -1519,7 +1519,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question: 'L’élément moral de la corruption de mineur suppose :',
     options: [
@@ -1532,7 +1532,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'L’infraction est intentionnelle et suppose la volonté d’inciter le mineur à la dépravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Fondement',
     question:
         'La diffusion de messages violents ou pornographiques susceptibles d’être vus par un mineur est prévue par :',
@@ -1547,7 +1547,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Élément matériel',
     question: 'L’infraction est constituée lorsque le message est :',
     options: [
@@ -1561,7 +1561,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Messages dangereux — Négligence',
     question: 'L’infraction peut être constituée en cas de :',
     options: [
@@ -1574,7 +1574,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'La négligence ou l’imprudence suffit à caractériser l’élément moral.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Fondement',
     question:
         'La privation d’aliments ou de soins à mineur de quinze ans est prévue par :',
@@ -1589,7 +1589,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Auteur',
     question: 'Peut être auteur de la privation d’aliments ou de soins :',
     options: [
@@ -1603,7 +1603,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Résultat',
     question: 'Pour être constituée, la privation doit :',
     options: [
@@ -1617,7 +1617,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation de soins — Élément moral',
     question: 'L’élément moral de l’infraction suppose :',
     options: [
@@ -1630,7 +1630,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Il n’est pas nécessaire de vouloir nuire, la conscience du danger suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Fondement',
     question:
         'La provocation directe d’un mineur à commettre un crime ou un délit est prévue par :',
@@ -1645,7 +1645,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Nature',
     question: 'La provocation doit être :',
     options: ['Directe et précise', 'Générale et abstraite', 'Indirecte'],
@@ -1656,7 +1656,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // CORRUPTION DE MINEUR — 227-22 (suite + variations)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Qualification',
     question: 'La corruption de mineur (227-22) est :',
     options: ['Un délit', 'Un crime', 'Une contravention'],
@@ -1664,7 +1664,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours classe la corruption de mineur comme un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Mineur < 15 ans',
     question:
         'Dans la corruption de mineur, l’âge de moins de 15 ans de la victime constitue :',
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique que la minorité de 15 ans aggrave l’infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Objet',
     question: 'L’acte de corruption est défini principalement :',
     options: [
@@ -1691,7 +1691,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le texte mentionne “favoriser la corruption” : l’acte est défini par son objectif.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Obscénité',
     question: 'Si le caractère obscène de l’acte matériel fait défaut :',
     options: [
@@ -1704,7 +1704,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que sans caractère obscène, la corruption n’est pas retenue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunion sexuelle',
     question:
         'Organiser une réunion comportant des exhibitions/relations sexuelles à laquelle un mineur assiste :',
@@ -1718,7 +1718,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours cite l’article 227-22 al.2 : organisation de réunions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Assistance',
     question:
         'Assister en connaissance de cause à une réunion sexuelle avec présence d’un mineur :',
@@ -1732,7 +1732,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'L’alinéa 2 incrimine aussi l’assistance en connaissance de cause.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réseau électronique',
     question:
         'La corruption est aggravée si le mineur a été mis en contact via un réseau de communications électroniques :',
@@ -1742,7 +1742,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Circ. aggravante prévue à 227-22 (messages à destination d’un public non déterminé).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Lieux scolaires',
     question:
         'La corruption est aggravée si commise dans/aux abords d’un établissement scolaire (temps très voisin des entrées/sorties) :',
@@ -1751,7 +1751,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Circ. aggravante prévue à l’article 227-22 al.1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Bande organisée',
     question: 'La bande organisée en matière de corruption de mineur :',
     options: [
@@ -1763,7 +1763,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne l’aggravation si bande organisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Intention d’exécuter',
     question:
         'La loi exige que l’auteur ait voulu mettre ses actes à exécution au-delà de l’intimidation/dépravation :',
@@ -1773,7 +1773,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours explique que l’intention de corrompre suffit : pas besoin d’un “résultat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur est :',
     options: [
@@ -1785,7 +1785,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique que la tentative est expressément prévue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Complicité',
     question: 'La complicité en matière de corruption de mineur est :',
     options: ['Punissable', 'Non punissable', 'Uniquement contraventionnelle'],
@@ -1793,7 +1793,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : complicité oui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Peine simple',
     question:
         'La peine principale “simple” (cas de base) de la corruption de mineur est notamment :',
@@ -1807,7 +1807,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le tableau de répression indique 5 ans et 75 000 € en simple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Répression aggravée (réseau/lieux)',
     question: 'En cas d’aggravation (réseau/lieux), la peine peut passer à :',
     options: ['7 ans et 100 000 €', '5 ans et 75 000 €', '1 an et 15 000 €'],
@@ -1816,7 +1816,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le tableau du cours mentionne 7 ans et 100 000 € pour une aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Répression aggravée (mineur < 15)',
     question:
         'Lorsque la victime a moins de 15 ans, la peine peut être portée à :',
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // DIFFUSION MESSAGE VIOLENT/TERRORISME/PORNO/DANGEREUX — 227-24 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Caractères',
     question: 'Le message visé par 227-24 peut être :',
     options: [
@@ -1843,7 +1843,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise plusieurs natures de messages.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Jeux dangereux',
     question: 'Le texte vise notamment les messages incitant des mineurs à :',
     options: [
@@ -1855,7 +1855,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite l’exemple du “jeu du foulard”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Actes matériels',
     question: 'Les actes matériels visés par 227-24 incluent notamment :',
     options: [
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte liste fabrication/transport/diffusion/commerce.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Public',
     question:
         'Pour 227-24, il faut prouver que le message a été vu par un mineur :',
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le critère est la susceptibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Négligence',
     question: 'La diffusion peut être retenue si l’accès des mineurs résulte :',
     options: [
@@ -1892,7 +1892,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours évoque l’imprudence ou la négligence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Mention “réservé adultes”',
     question:
         'Un message pornographique sans mention “réservé aux adultes” accessible à un mineur peut :',
@@ -1906,7 +1906,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours donne l’exemple des messages réservés aux majeurs accessibles aux mineurs.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Déclaration mineur',
     question:
         'L’infraction peut être constituée même si le mineur a simplement déclaré avoir 18 ans :',
@@ -1915,7 +1915,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise que ce cas n’exclut pas l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Élément moral',
     question: 'L’élément moral (227-24) est caractérisé :',
     options: [
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Volonté ou insuffisance de précautions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Circonstances aggravantes',
     question:
         'Le texte (227-24) prévoit des circonstances aggravantes spécifiques :',
@@ -1940,7 +1940,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Répression',
     question: 'La peine principale prévue à 227-24 al.1 est :',
     options: [
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours prévoit 3 ans et 75 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Tentative',
     question: 'La tentative de l’infraction 227-24 est :',
     options: [
@@ -1964,7 +1964,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion message — Complicité',
     question: 'La complicité de 227-24 est :',
     options: ['Punissable', 'Non punissable', 'Uniquement civile'],
@@ -1976,7 +1976,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PROVOCATION À LA PÉDOPORNOGRAPHIE — 227-28-3 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Fondement',
     question: 'La provocation à la pédopornographie est prévue par :',
     options: [
@@ -1988,7 +1988,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise expressément 227-28-3.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Acte',
     question: 'La provocation (227-28-3) consiste notamment à :',
     options: [
@@ -2000,7 +2000,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte décrit les moyens de provocation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Infractions visées',
     question: 'La provocation vise notamment des infractions dont :',
     options: [
@@ -2013,7 +2013,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours liste : proxénétisme, corruption, 227-23, atteintes sexuelles, etc.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Mineur',
     question: 'La victime des crimes/délits visés (227-28-3) doit être :',
     options: ['Un mineur', 'Un majeur', 'Indifférent'],
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise des faits “à l’encontre d’un mineur”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Réalisation',
     question:
         'Pour 227-28-3, le crime ou le délit provoqué doit avoir été commis ou tenté :',
@@ -2035,7 +2035,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le texte précise que le crime/délit ne doit être ni commis ni tenté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Élément moral',
     question: 'L’élément moral repose sur :',
     options: [
@@ -2047,7 +2047,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Infraction intentionnelle (offres/promesses…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Aggravations',
     question: 'Le texte 227-28-3 prévoit des circonstances aggravantes :',
     options: ['Non', 'Oui, systématiquement', 'Oui, si mineur < 15 ans'],
@@ -2055,7 +2055,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression délit',
     question: 'Si la provocation porte sur un délit, la peine est :',
     options: [
@@ -2067,7 +2067,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours indique 3 ans et 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression crime',
     question: 'Si la provocation porte sur un crime, la peine est :',
     options: [
@@ -2079,7 +2079,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours indique 7 ans et 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Tentative',
     question: 'La tentative de 227-28-3 est :',
     options: [
@@ -2091,7 +2091,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Complicité',
     question: 'La complicité de 227-28-3 est :',
     options: ['Non', 'Oui', 'Uniquement civile'],
@@ -2103,7 +2103,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PROVOCATION MINEUR À L’ALCOOL — 227-19 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Fondement',
     question:
         'La provocation directe d’un mineur à la consommation excessive ou habituelle d’alcool est prévue par :',
@@ -2116,7 +2116,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise l’article 227-19 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Notion',
     question: 'Les “boissons alcooliques” visées sont celles comportant :',
     options: [
@@ -2128,7 +2128,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours renvoie au seuil du code de la santé publique.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Excessive',
     question:
         'La provocation directe à la consommation excessive d’alcool consiste notamment à :',
@@ -2142,7 +2142,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours décrit cette hypothèse (présence/participation active).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Habituelle',
     question: 'La consommation habituelle d’alcool traduit :',
     options: [
@@ -2154,7 +2154,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours explique l’objectif de prévention de la dépendance.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Directe',
     question: 'La provocation doit être :',
     options: ['Directe', 'Indirecte seulement', 'Toujours par écrit'],
@@ -2162,7 +2162,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur la provocation directe et précise.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Mineur',
     question: 'La provocation doit s’adresser :',
     options: [
@@ -2174,7 +2174,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise tout mineur, avec aggravation si < 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Élément moral',
     question: 'L’élément moral consiste en :',
     options: [
@@ -2187,7 +2187,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Infraction intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Aggravations',
     question: 'L’article 227-19 al.3 aggrave notamment lorsque :',
     options: [
@@ -2200,7 +2200,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Circ. aggravante : mineur de 15 ans + lieux scolaires/administration.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Tentative',
     question: 'La tentative de 227-19 est :',
     options: ['Non punissable', 'Punissable', 'Toujours punissable'],
@@ -2208,7 +2208,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Complicité',
     question: 'La complicité de 227-19 est :',
     options: ['Punissable', 'Non punissable', 'Uniquement civile'],
@@ -2220,7 +2220,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // PROVOCATION MINEUR AUX STUPÉFIANTS — 227-18 / 227-18-1 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement usage',
     question:
         'La provocation d’un mineur à faire un usage illicite de stupéfiants est prévue par :',
@@ -2233,7 +2233,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours distingue usage (227-18) et trafic (227-18-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement trafic',
     question:
         'La provocation d’un mineur à transporter/détenir/offrir/céder des stupéfiants est prévue par :',
@@ -2247,7 +2247,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le trafic (transport/détention/offre/cession) est visé par 227-18-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Nature',
     question: 'La provocation visée doit être :',
     options: ['Directe', 'Indirecte', 'Toujours écrite'],
@@ -2256,7 +2256,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours insiste sur la provocation directe avec lien précis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Apologie',
     question:
         'L’apologie/propagande/publicité favorable à l’usage de stupéfiants est plutôt réprimée par :',
@@ -2270,7 +2270,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise la différence avec 227-18 (directe) et L.3421-4 (apologie).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Mineur',
     question: 'L’acte doit être adressé :',
     options: [
@@ -2282,7 +2282,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tout mineur, aggravation si mineur de 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Complicité trafic',
     question: 'La provocation à devenir “guetteur” est :',
     options: [
@@ -2295,7 +2295,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique que la provocation à la complicité de trafic est visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Offrir stupéfiants',
     question:
         'Offrir des stupéfiants à un mineur pour sa consommation personnelle est spécialement prévu par :',
@@ -2309,7 +2309,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que ce cas est spécialement prévu et aggravé à 222-39 al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Aggravations',
     question:
         'Les aggravations (227-18 al.2 et 227-18-1 al.2) incluent notamment :',
@@ -2322,7 +2322,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours liste ces deux aggravations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Tentative',
     question:
         'La tentative des infractions de provocation (227-18 / 227-18-1) est :',
@@ -2331,7 +2331,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Complicité',
     question:
         'La complicité des infractions de provocation (227-18 / 227-18-1) est :',
@@ -2344,7 +2344,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // SOUSTRACTION D’UN PARENT À SES OBLIGATIONS — 227-17 (suite)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Fondement',
     question:
         'La soustraction d’un parent à ses obligations légales est prévue par :',
@@ -2357,7 +2357,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise l’article 227-17 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Victime',
     question: 'La victime doit être :',
     options: [
@@ -2369,7 +2369,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise l’enfant mineur sans condition d’âge.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Auteur',
     question: 'L’auteur de l’infraction 227-17 est :',
     options: ['Le père ou la mère', 'Un ascendant quelconque', 'Tout adulte'],
@@ -2378,7 +2378,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le texte vise père et mère à l’exclusion des autres ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Autorité parentale',
     question:
         'L’infraction 227-17 exige que l’auteur ait l’autorité parentale ou la garde :',
@@ -2392,7 +2392,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que le texte ne conditionne pas à l’autorité parentale/garde.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Nature',
     question:
         'La soustraction peut être constituée même si le parent reste physiquement au domicile :',
@@ -2402,7 +2402,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours évoque un abandon moral possible sans départ du domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Obligation',
     question: 'Les obligations légales recouvrent notamment :',
     options: [
@@ -2414,7 +2414,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours renvoie à l’article 371-1 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Compromission',
     question:
         'Pour être punissable, la soustraction doit être susceptible de :',
@@ -2427,7 +2427,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte exige une compromission au moins potentielle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Dommage effectif',
     question: 'Le texte exige que le dommage se soit effectivement réalisé :',
     options: ['Non', 'Oui', 'Uniquement si mineur < 15'],
@@ -2435,7 +2435,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il suffit que ce soit susceptible de se réaliser.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Motif légitime',
     question:
         'Les faits ne sont punissables que si le parent s’est soustrait :',
@@ -2448,7 +2448,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise “sans motif légitime”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Preuve motif',
     question: 'La preuve du motif légitime :',
     options: [
@@ -2460,7 +2460,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique que c’est au prévenu d’apporter la preuve.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Élément moral',
     question: 'L’élément moral repose sur :',
     options: [
@@ -2473,7 +2473,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Infraction intentionnelle selon le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Aggravation (crime/délits du mineur)',
     question:
         'L’article 227-17 al.2 aggrave lorsque la soustraction a conduit à :',
@@ -2487,7 +2487,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Aggravation prévue à l’alinéa 2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Tentative',
     question: 'La tentative de 227-17 est :',
     options: ['Non punissable', 'Punissable', 'Punissable uniquement si al.2'],
@@ -2495,7 +2495,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Complicité',
     question: 'La complicité de 227-17 est :',
     options: ['Punissable', 'Non punissable', 'Uniquement civile'],
@@ -2507,7 +2507,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
   // MÉGA MIX — QUESTIONS TRANSVERSALES / QCM “PIÈGE”
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Âge victime',
     question:
         'Quel texte vise explicitement une victime “mineur de moins de 15 ans” ?',
@@ -2520,7 +2520,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: '227-15 vise strictement la victime mineure de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Directe vs apologie',
     question: 'Quel texte exige explicitement une provocation “directe” ?',
     options: [
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: '227-21 vise une provocation directe avec lien précis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Tentative punissable',
     question:
         'Parmi ces infractions, laquelle a une tentative punissable selon le cours ?',
@@ -2545,7 +2545,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique tentative : oui pour 227-22.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Complicité non',
     question:
         'Parmi ces infractions, laquelle a “complicité : non” selon le cours ?',
@@ -2558,7 +2558,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : complicité non pour 227-28-3.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Susceptible d’être vu/perçu',
     question:
         'La formule “susceptible d’être vu ou perçu par un mineur” correspond à :',
@@ -2571,7 +2571,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'C’est le critère central de 227-24.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Auteur limité',
     question: 'Quel texte limite explicitement l’auteur au “père ou la mère” ?',
     options: ['227-17', '227-15', '227-24'],
@@ -2579,7 +2579,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte 227-17 vise père et mère.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Élément moral “conscience du risque”',
     question:
         'Quel texte insiste sur la conscience/prévision d’un mal pour l’enfant sans exiger une volonté de nuire ?',
@@ -2588,7 +2588,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite Cass. crim. 11 mars 1975 : conscience du mal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Aucun aggravant',
     question:
         'Quel texte indique “Aucune” circonstance aggravante dans le cours ?',
@@ -2598,7 +2598,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise : aucune circonstance aggravante pour 227-24.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — Réunion sexuelle',
     question:
         'L’organisation de réunions sexuelles avec présence d’un mineur renvoie principalement à :',
@@ -2607,7 +2607,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Cas expressément visé par 227-22 al.2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Transversal — “Sans motif légitime”',
     question: 'La formule “sans motif légitime” est une condition propre à :',
     options: ['227-17', '227-24', '227-28-3'],
@@ -2620,7 +2620,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
 
   // ---------- FACILE (1-34) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Fondement',
     question:
         'La privation d’aliments ou de soins à un mineur de quinze ans est prévue par :',
@@ -2634,7 +2634,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique que l’article 227-15 CP définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Victime',
     question: 'Pour 227-15, la victime doit être :',
     options: [
@@ -2646,7 +2646,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise un mineur de quinze ans (donc < 15).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Condition',
     question: 'L’infraction exige que la privation compromette :',
     options: [
@@ -2659,7 +2659,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise : privation au point de compromettre la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur',
     question: 'L’article 227-15 vise comme auteurs possibles notamment :',
     options: [
@@ -2671,7 +2671,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours vise ascendants (père, mère, grands-parents, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité parentale',
     question: 'L’article 227-15 vise aussi :',
     options: [
@@ -2683,7 +2683,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite expressément l’autorité parentale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité de fait',
     question: 'L’article 227-15 vise également :',
     options: [
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours évoque nouveaux conjoints, personnes à qui le mineur est confié, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation aliments',
     question: 'La privation d’aliments correspond notamment au fait :',
     options: [
@@ -2708,7 +2708,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours définit la privation d’aliments ainsi.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation soins',
     question: 'La privation de soins peut être constituée par :',
     options: [
@@ -2720,7 +2720,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne hygiène et soins médicaux.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Présomption',
     question: 'Le cours mentionne une présomption de défaut de soins lorsque :',
     options: [
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le 2e alinéa vise ce cas “notamment”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Âge < 6 ans',
     question:
         'La situation “enfant de moins de six ans sur la voie publique pour solliciter la générosité” concerne :',
@@ -2747,7 +2747,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours l’identifie comme “privation de soins” au sens de 227-15.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Complicité',
     question: 'La complicité de 227-15 est :',
     options: ['Punissable', 'Non punissable', 'Toujours exclue'],
@@ -2755,7 +2755,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : complicité oui (121-7).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Tentative',
     question: 'La tentative de 227-15 est :',
     options: ['Non punissable', 'Punissable', 'Toujours punissable'],
@@ -2763,7 +2763,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative non.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Personnes morales',
     question: 'Les personnes morales peuvent être responsables de 227-15 via :',
     options: [
@@ -2776,7 +2776,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise la responsabilité des personnes morales à 227-17-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Répression simple',
     question: 'La peine principale (simple) de 227-15 est :',
     options: [
@@ -2788,7 +2788,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours indique 7 ans / 100 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Aggravation al.3',
     question: 'L’article 227-15 al.3 prévoit une aggravation lorsque :',
     options: [
@@ -2801,7 +2801,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne expressément 227-15 al.3.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine aggravée al.3',
     question: 'En cas d’aggravation (227-15 al.3), la peine devient :',
     options: [
@@ -2813,7 +2813,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours indique 10 ans / 300 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mort',
     question: 'Lorsque la privation d’aliments/soins entraîne la mort :',
     options: [
@@ -2825,7 +2825,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : aggravation “mort” à 227-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nature 227-16',
     question:
         'Lorsque la privation entraîne la mort (227-16), l’infraction devient :',
@@ -2835,7 +2835,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le tableau du cours classe 227-16 comme crime (30 ans de réclusion).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine 227-16',
     question: 'La peine principale prévue à 227-16 est :',
     options: [
@@ -2847,7 +2847,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours indique 30 ans de réclusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mineur > 15',
     question: 'Si la victime a plus de 15 ans, 227-15 :',
     options: [
@@ -2860,7 +2860,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que 227-15 ne s’applique pas à un mineur > 15.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple du cours',
     question:
         'L’exemple “enfants laissés sans gaz/eau/électricité” est utilisé pour illustrer :',
@@ -2874,7 +2874,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours cite un arrêt (CA Douai, 15 février 2006) comme exemple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mendicité',
     question: 'Le simple fait de mendier avec un enfant en bas âge est :',
     options: [
@@ -2886,7 +2886,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite Cass. crim., 12 octobre 2005.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Résultat',
     question:
         'Pour 227-15, il faut prouver que la santé a été atteinte gravement :',
@@ -2896,7 +2896,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise qu’il suffit que les privations soient susceptibles d’altérer la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral',
     question: 'L’infraction 227-15 est :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Toujours involontaire'],
@@ -2904,7 +2904,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : infraction intentionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Intention de nuire',
     question: 'Pour 227-15, la volonté de nuire est :',
     options: [
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : ni volonté de nuire ni de causer dommage nécessaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Convictions religieuses',
     question:
         'Les convictions religieuses peuvent justifier les privations au sens de 227-15 :',
@@ -2927,7 +2927,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique que les convictions religieuses ne justifient pas si risque pour la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “Compromettre la santé”',
     question: '“Compromettre la santé” signifie notamment :',
     options: [
@@ -2939,7 +2939,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise que le dommage effectif n’est pas requis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lieu',
     question: 'La présomption de défaut de soins mentionne aussi :',
     options: [
@@ -2952,7 +2952,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours cite “voie publique ou espace affecté au transport collectif”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur tuteur',
     question: 'Un tuteur peut entrer dans 227-15 comme :',
     options: [
@@ -2964,7 +2964,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique qu’un tuteur peut être inclus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Qualité auteur',
     question: 'L’auteur peut être :',
     options: [
@@ -2976,7 +2976,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours liste ces trois catégories.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Objet',
     question: 'La privation de soins vise notamment :',
     options: [
@@ -2988,7 +2988,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours le précise.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Répression',
     question: 'La répression de 227-15 concerne des personnes :',
     options: [
@@ -3001,7 +3001,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours prévoit responsabilité des personnes morales via 227-17-2.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Crime/délit',
     question: '227-15 (simple) est classé comme :',
     options: ['Délit', 'Crime', 'Contravention'],
@@ -3009,7 +3009,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau de répression indique : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Objectif',
     question: 'Le critère central de 227-15 est :',
     options: [
@@ -3021,7 +3021,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition textuelle du 227-15.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mort',
     question: 'Si la privation entraîne la mort, la qualification est :',
     options: ['227-16', '227-15 al.3', '227-17'],
@@ -3029,7 +3029,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours isole la mort à l’article 227-16.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nécessité de résultat',
     question: 'Le résultat dommageable doit être effectif pour 227-15 :',
     options: ['Non', 'Oui', 'Uniquement si mineur < 6'],
@@ -3037,7 +3037,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il suffit qu’il soit susceptible de se réaliser.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Interprétation stricte',
     question:
         'Pourquoi 227-15 ne s’applique pas à un mineur de plus de 15 ans ?',
@@ -3050,7 +3050,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours invoque l’interprétation stricte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Objet 2',
     question:
         'Le maintien d’un enfant < 6 ans dans un transport collectif pour mendier est cité comme :',
@@ -3062,7 +3062,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- MOYENNE (35-68) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Domaine',
     question:
         '227-15 ne vise pas un mineur de plus de quinze ans. Dans ce cas, le cours indique qu’on peut viser :',
@@ -3077,7 +3077,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours évoque d’autres qualifications possibles hors champ de 227-15.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Condition “santé”',
     question: 'La compromission de la santé implique :',
     options: [
@@ -3089,7 +3089,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise que le résultat effectif n’est pas exigé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Appréciation',
     question:
         'Qui apprécie au cas par cas l’impact des privations sur la santé du mineur ?',
@@ -3099,7 +3099,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique : appréciation au cas par cas par les juges.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cas relaxe',
     question:
         'Le cours indique qu’une relaxe est possible si, malgré la situation “mendicité”, l’enfant est :',
@@ -3113,7 +3113,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Exemple du cours : enfant en bonne santé -> pas de compromission retenue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral',
     question: 'Selon le cours (Cass. crim., 11 mars 1975), il faut :',
     options: [
@@ -3126,7 +3126,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite cette formule pour l’élément moral.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Al.2 “notamment”',
     question: 'La mention “notamment” (al.2) signifie :',
     options: [
@@ -3138,7 +3138,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: '“Notamment” indique une illustration non exhaustive.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mendicité seule',
     question:
         'Pourquoi le “simple fait de mendier avec un enfant” n’est pas toujours suffisant ?',
@@ -3152,7 +3152,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours insiste sur l’exigence de compromission de la santé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur “autorité de fait”',
     question:
         'Un concubin du parent qui exerce une autorité sur le mineur peut être :',
@@ -3165,7 +3165,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite “nouveaux époux ou concubins”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple CA Douai',
     question:
         'Dans l’exemple CA Douai 15 février 2006, les enfants ne pouvaient pas cuire faute de :',
@@ -3174,7 +3174,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne absence de gaz, eau, électricité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “au point de”',
     question: 'L’expression “au point de compromettre” implique :',
     options: [
@@ -3187,7 +3187,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique la nécessité d’une compromission (au moins potentielle).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Personnes morales',
     question: 'Les personnes morales encourent notamment :',
     options: [
@@ -3199,7 +3199,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours renvoie à 131-38 et 131-39.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — 227-15 al.3',
     question: 'L’aggravation de 227-15 al.3 est liée à :',
     options: [
@@ -3211,7 +3211,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours le précise.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — 227-16',
     question: 'L’article 227-16 s’applique quand la privation :',
     options: ['A entraîné la mort', 'A duré plus d’un mois', 'A été filmée'],
@@ -3219,7 +3219,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 227-16 = mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Seuil gravité',
     question: 'Le cours précise que 227-15 n’exige pas :',
     options: [
@@ -3231,7 +3231,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il suffit que ce soit susceptible d’altérer la santé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple transport collectif',
     question:
         'Le maintien d’un enfant < 6 ans dans un espace de transport collectif est incriminé lorsqu’il est fait :',
@@ -3244,7 +3244,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition explicitement citée au 2e alinéa.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Interprétation stricte',
     question: 'La mention “mineur de quinze ans” impose que la victime ait :',
     options: [
@@ -3256,7 +3256,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours rappelle la lecture stricte : < 15.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral (but)',
     question:
         'Pour 227-15, l’auteur doit nécessairement agir avec un but de nuire :',
@@ -3265,7 +3265,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : pas besoin de volonté de nuire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Preuve',
     question: 'Les juges peuvent retenir l’infraction si les privations sont :',
     options: [
@@ -3277,7 +3277,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition rappelée par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nature',
     question: '227-15 réprime principalement :',
     options: [
@@ -3289,7 +3289,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Objet du texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “sans commentaire particulier”',
     question: 'Le cours indique que la privation d’aliments :',
     options: [
@@ -3301,7 +3301,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Formule reprise dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Soins au quotidien',
     question: 'La privation de soins inclut le fait :',
     options: [
@@ -3313,7 +3313,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours détaille cette notion.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Compromission',
     question: 'Le texte exige :',
     options: [
@@ -3325,7 +3325,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Formule du texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Al.2 et preuve',
     question:
         'Même avec l’al.2 (“< 6 ans sur voie publique”), la défense peut soutenir l’absence d’infraction si :',
@@ -3339,7 +3339,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Exemple du cours : pas de compromission retenue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Structure',
     question: 'La mort de la victime bascule vers :',
     options: ['227-16', '227-15 al.3', '227-17 al.2'],
@@ -3347,7 +3347,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours distingue clairement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peines morales',
     question: 'Les personnes morales encourent des peines comme :',
     options: [
@@ -3359,7 +3359,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Référence à 131-39 dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Complicité (modes)',
     question: 'La complicité suppose un fait constitutif comme :',
     options: [
@@ -3371,7 +3371,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Rappel droit commun 121-7 indiqué dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Aggravation al.3 nature',
     question: '227-15 al.3 reste classé :',
     options: ['Délit', 'Crime', 'Contravention'],
@@ -3379,7 +3379,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours classe 227-15 al.3 comme délit aggravé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Crime 227-16',
     question: '227-16 est classé :',
     options: ['Crime', 'Délit', 'Contravention'],
@@ -3387,7 +3387,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours le classe crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Philosophie',
     question: 'La loi vise à protéger particulièrement :',
     options: [
@@ -3399,7 +3399,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition d’âge du texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exemple voisins',
     question:
         'Dans l’exemple du cours, les voisins intervenaient notamment pour :',
@@ -3409,7 +3409,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique “laissés à la charge des voisins qui leur donnaient à manger”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Sens “compromettre”',
     question: '“Compromettre la santé” signifie que :',
     options: [
@@ -3421,7 +3421,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur la susceptibilité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mineur > 15 (rappel)',
     question: 'Si la victime est mineure mais a 16 ans, 227-15 :',
     options: [
@@ -3433,7 +3433,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours le dit explicitement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — But de sollicitation',
     question: 'L’al.2 vise le maintien de l’enfant pour :',
     options: ['Solliciter la générosité des passants', 'Scolariser', 'Soigner'],
@@ -3441,7 +3441,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'C’est la condition textuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Preuve santé',
     question:
         'Pour exclure l’infraction, la défense peut tenter de démontrer :',
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours illustre cette idée via l’exemple.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cible',
     question: 'La loi pénale vise surtout à sanctionner :',
     options: [
@@ -3469,7 +3469,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- DIFFICILE (69-100) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Éléments constitutifs',
     question: 'Quel enchaînement correspond le mieux à 227-15 ?',
     options: [
@@ -3482,7 +3482,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours détaille éléments matériel et moral ainsi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral exact',
     question: 'Le cours indique que l’élément moral exige :',
     options: [
@@ -3496,7 +3496,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Formule citée (Cass. crim., 11 mars 1975) et commentaire du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Al.2 et interprétation',
     question:
         'Le 2e alinéa (“< 6 ans sur voie publique”) doit être compris comme :',
@@ -3511,7 +3511,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours montre qu’on discute encore la compromission via l’exemple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lien causal',
     question:
         'Pour 227-15, le texte exige que les privations aient effectivement causé une maladie :',
@@ -3520,7 +3520,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il suffit qu’elles soient susceptibles d’altérer la santé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Double incrimination',
     question:
         'Le fait de priver un mineur > 15 ans d’aliments/soins peut éventuellement relever :',
@@ -3533,7 +3533,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours suggère des qualifications alternatives.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur “ascendant”',
     question: 'Sont visés par “ascendants” au sens du cours :',
     options: [
@@ -3545,7 +3545,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours le précise.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité parentale (délégation)',
     question:
         'Le cours évoque la délégation de l’autorité parentale prévue aux articles :',
@@ -3558,7 +3558,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Référence indiquée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Autorité de fait (exemples)',
     question:
         'Lequel est un exemple d’autorité de fait mentionné dans le cours ?',
@@ -3572,7 +3572,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours les cite comme personnes pouvant exercer une autorité de fait.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cass. 12 oct. 2005',
     question:
         'Le cours indique qu’en 12 octobre 2005, le simple fait de mendier avec un enfant :',
@@ -3585,7 +3585,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Rappel de l’arrêt cité par le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — TGI Paris 13 janv. 2004',
     question:
         'Le cours cite un arrêt confirmant l’exigence “compromettre la santé” :',
@@ -3598,7 +3598,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Référence explicitement mentionnée dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Répartition peines',
     question: 'Quel triptyque correspond correctement aux niveaux de gravité ?',
     options: [
@@ -3610,7 +3610,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'C’est la structure indiquée par le tableau du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lien 433-18-1',
     question:
         'L’aggravation 227-15 al.3 suppose que la personne s’est rendue coupable :',
@@ -3623,7 +3623,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition textuelle rappelée par le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Santé “en bonne santé”',
     question:
         'Selon le cours, même avec maintien sur voie publique, les juges peuvent relaxer si :',
@@ -3636,7 +3636,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Exemple commenté dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Négligence vs intention',
     question: '227-15 est intentionnel, mais n’exige pas :',
     options: [
@@ -3648,7 +3648,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : conscience du risque oui, volonté de nuire non.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Support “transport collectif”',
     question:
         'Le texte mentionne l’“espace affecté au transport collectif” pour viser :',
@@ -3661,7 +3661,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'C’est un élément de l’al.2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Distinction 227-17',
     question: 'Différence principale entre 227-15 et 227-17 (cours) :',
     options: [
@@ -3674,7 +3674,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Distinction d’âge et d’objet indiquée dans les textes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Droit commun complicité',
     question: 'Le fondement de la complicité renvoyé par le cours est :',
     options: [
@@ -3687,7 +3687,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours renvoie explicitement au droit commun de la complicité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Non déclaration naissance',
     question:
         'Le délit de non déclaration d’une naissance à l’officier d’état civil est :',
@@ -3696,7 +3696,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Référence citée dans le cours à propos de l’aggravation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Nature “privation de soins”',
     question:
         'Le cours précise que la privation de soins consiste notamment à :',
@@ -3710,7 +3710,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Définition du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Champ strict',
     question: 'Pourquoi 227-15 est d’application stricte ?',
     options: [
@@ -3723,7 +3723,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur l’interprétation stricte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Échelle peines',
     question: 'Quelle progression de peine est correcte ?',
     options: [
@@ -3735,7 +3735,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Correspond aux tableaux 227-15, 227-15 al.3, 227-16.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Qualification “crime”',
     question: 'La bascule en “crime” intervient uniquement si :',
     options: [
@@ -3747,7 +3747,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Selon le tableau de répression.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Lien voisinage',
     question:
         'Dans l’exemple, le fait que les voisins nourrissent les enfants montre surtout :',
@@ -3760,7 +3760,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'L’exemple sert à caractériser la privation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Responsabilité morale',
     question:
         'Le cours précise que les personnes morales encourent l’amende selon :',
@@ -3769,7 +3769,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Référence explicite dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peines complémentaires morales',
     question:
         'Les peines complémentaires des personnes morales sont mentionnées aux :',
@@ -3782,7 +3782,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours le détaille.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Logique “prévention”',
     question:
         'Le texte sanctionne même si le dommage ne s’est pas produit pour :',
@@ -3796,7 +3796,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : dommage effectif non requis, susceptibilité suffit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Carence effective',
     question:
         'Le cours insiste que, même si le dommage n’est pas effectif, la carence doit être :',
@@ -3805,7 +3805,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Il faut une privation réelle (faits matériels).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “but” al.2',
     question: 'Dans l’al.2, le but exigé est :',
     options: [
@@ -3817,7 +3817,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'C’est dans la lettre du texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exclusion “mineur >15”',
     question: 'La conséquence directe de l’exclusion “mineur > 15” est :',
     options: [
@@ -3829,7 +3829,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours évoque des qualifications alternatives.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Privation aliments/soins — Distinction “privation” vs “soustraction”',
     question:
@@ -3843,7 +3843,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Selon les définitions du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Réalisation',
     question: 'La privation d’aliments/soins est une infraction :',
     options: [
@@ -3856,7 +3856,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte incrimine la privation (défaut de fournir).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Placement sous surveillance',
     question:
         'Parmi les peines possibles pour une personne morale, le cours cite :',
@@ -3869,7 +3869,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne cette peine dans l’énumération.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “nourriture qualité”',
     question:
         'La privation d’aliments inclut la qualité insuffisante, ce qui implique :',
@@ -3882,7 +3882,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours parle de quantité ou qualité suffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — “soins médicaux”',
     question:
         'Le refus de soins médicaux nécessaires, avec conscience du risque, peut :',
@@ -3896,7 +3896,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Définition de la privation de soins + condition de santé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Échelle “temps”',
     question: 'Le texte 227-15 fixe un délai minimum de privation (ex : 48h) :',
     options: ['Non', 'Oui', 'Oui pour mineur < 6'],
@@ -3905,7 +3905,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours ne fixe pas de durée, il vise l’effet sur la santé (risque).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Cumul',
     question: 'Si la privation mène à la mort, on retient en principe :',
     options: [
@@ -3917,7 +3917,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours distingue le cas mortel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Sens “autorité sur un mineur”',
     question: '“Ayant une autorité sur un mineur” inclut notamment :',
     options: [
@@ -3929,7 +3929,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Exemple mentionné dans le cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Interprétation stricte (piège)',
     question:
         'Un mineur de 15 ans pile (le jour de ses 15 ans) est dans le champ de 227-15 :',
@@ -3943,7 +3943,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours explique : “donc âgé de moins de quinze ans”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Articulation',
     question: 'Le cœur de l’élément matériel est :',
     options: [
@@ -3955,7 +3955,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours insiste sur ce couple.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Délit aggravé vs crime',
     question: 'Le seul cas où le cours qualifie “crime” ici est :',
     options: ['227-16 (mort)', '227-15 al.3', '227-15 simple'],
@@ -3963,7 +3963,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Les autres restent des délits.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Exclusion “simple mendicité”',
     question:
         'Le cours précise que la mendicité avec un enfant ne suffit pas “en soi” car :',
@@ -3977,7 +3977,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Condition essentielle du texte.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Conclusion',
     question: 'Quel couple “tentative/complicité” est correct pour 227-15 ?',
     options: [
@@ -3996,7 +3996,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // =====================
 
   // ---------- CORRUPTION DE MINEUR — 227-22 (FACILE 1-12) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Fondement',
     question: 'La corruption de mineur est prévue et réprimée par :',
     options: [
@@ -4009,7 +4009,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique que 227-22 al.1 et 2 CP prévoit et réprime la corruption de mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Définition',
     question: 'Constitue notamment une corruption de mineur :',
     options: [
@@ -4022,7 +4022,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours vise le fait de favoriser ou tenter de favoriser la corruption d’un mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Auteur',
     question: 'Pour l’alinéa 1 de 227-22, l’auteur peut être :',
     options: [
@@ -4035,7 +4035,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise que l’alinéa 1 ne fixe pas de condition d’âge : auteur mineur ou majeur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Victime',
     question: 'La victime de corruption de mineur doit être :',
     options: [
@@ -4048,7 +4048,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique : victime mineure de 18 ans, quel que soit le sexe/la moralité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Consentement',
     question: 'Le consentement du mineur (corruption de mineur) :',
     options: [
@@ -4060,7 +4060,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise : il importe peu qu’il soit consentant.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Acte',
     question: 'Un acte de corruption vise notamment à :',
     options: [
@@ -4073,7 +4073,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Définition donnée : éveiller/exciter la dépravation sexuelle ou aider à satisfaire des pulsions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Propos',
     question: 'Les simples propos obscènes, seuls :',
     options: [
@@ -4086,7 +4086,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours indique qu’il faut des conseils persistants et précis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Effet sur la victime',
     question: 'Il faut prouver que le mineur a effectivement été troublé :',
     options: ['Non', 'Oui', 'Oui seulement si mineur < 15'],
@@ -4095,7 +4095,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours précise : pas nécessaire d’établir un trouble effectif ni un passage à l’acte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Réunions (al.2)',
     question: 'L’article 227-22 al.2 vise notamment un majeur qui :',
     options: [
@@ -4109,7 +4109,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours mentionne l’organisation de réunions avec exhibitions/relations sexuelles.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Élément moral',
     question: 'La corruption de mineur est :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Toujours involontaire'],
@@ -4118,7 +4118,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : conscience de l’obscénité + âge + volonté de corrompre.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Tentative',
     question: 'La tentative de corruption de mineur (227-22) est :',
     options: [
@@ -4130,7 +4130,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : tentative OUI, prévue à l’alinéa 1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Corruption de mineur — Complicité',
     question: 'La complicité en matière de corruption de mineur est :',
     options: [
@@ -4144,7 +4144,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- DIFFUSION MESSAGE — 227-24 (FACILE 13-22) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Fondement',
     question:
         'La diffusion d’un message violent/porno/dangereux susceptible d’être vu par un mineur est prévue par :',
@@ -4158,7 +4158,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-24 al.1 CP prévoit et réprime cette diffusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Message',
     question: 'Le terme « message » doit être entendu :',
     options: [
@@ -4171,7 +4171,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : message au sens large (lettre, œuvre, peinture, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Support',
     question: 'Le support (papier, vidéo, en ligne…) est :',
     options: [
@@ -4184,7 +4184,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : diffusion par quelque moyen que ce soit, quel qu’en soit le support.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Condition mineur',
     question:
         'Pour 227-24, il faut qu’un mineur ait effectivement vu le message :',
@@ -4194,7 +4194,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : il suffit que le message soit susceptible d’être vu ou perçu par un mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Actes matériels',
     question: 'Les actes matériels visés par 227-24 comprennent notamment :',
     options: [
@@ -4207,7 +4207,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours énumère ces actes (fabrication, transport, diffusion, commerce).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Jeux dangereux',
     question:
         'Sont visés les messages incitant des mineurs à des jeux les mettant :',
@@ -4220,7 +4220,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours cite l’exemple du “jeu du foulard”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Élément moral',
     question: 'L’élément moral de 227-24 est réalisé :',
     options: [
@@ -4234,7 +4234,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : intention + négligence/imprudence permettant l’accès des mineurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Circonstances aggravantes',
     question: '227-24 prévoit des circonstances aggravantes :',
     options: ['Non', 'Oui', 'Oui uniquement si mineur < 15'],
@@ -4242,7 +4242,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Tentative',
     question: 'La tentative de 227-24 est :',
     options: [
@@ -4254,7 +4254,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : tentative NON.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion de message — Peine',
     question: 'La peine principale prévue par 227-24 al.1 est :',
     options: [
@@ -4268,7 +4268,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- PROVOCATION À LA PÉDOPORNOGRAPHIE — 227-28-3 (MOYENNE 23-34) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Fondement',
     question: 'La provocation à la pédopornographie est prévue par :',
     options: [
@@ -4281,7 +4281,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-28-3 CP prévoit et réprime la provocation à la pédopornographie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Acte',
     question: 'La provocation (227-28-3) consiste notamment à :',
     options: [
@@ -4294,7 +4294,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours reprend les termes : offres, promesses, dons, présents, avantages.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Victime',
     question: 'La provocation vise des crimes/délits à l’encontre :',
     options: ['D’un mineur', 'D’un majeur', 'D’un fonctionnaire uniquement'],
@@ -4303,7 +4303,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : la victime des faits visés doit être un mineur (en l’absence de précision : < 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Condition',
     question:
         'Pour 227-28-3, l’infraction provoquée doit avoir été commise ou tentée :',
@@ -4317,7 +4317,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : l’infraction réside dans la provocation, crime/délit non commis ni tenté.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Objet',
     question: 'Le texte 227-28-3 vise des infractions listées, dont :',
     options: [
@@ -4331,7 +4331,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours liste proxénétisme, corruption, 227-23, atteintes sexuelles 227-25 à 227-28.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Élément moral',
     question: '227-28-3 est une infraction :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Contraventionnelle'],
@@ -4340,7 +4340,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : volonté de faire commettre une infraction à autrui via offres/promesses.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression (délit)',
     question: 'Si la provocation porte sur un délit, la peine est :',
     options: [
@@ -4353,7 +4353,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 3 ans / 45 000 € si provocation portant sur un délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Répression (crime)',
     question: 'Si la provocation porte sur un crime, la peine est :',
     options: [
@@ -4366,7 +4366,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 7 ans / 100 000 € si provocation portant sur un crime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Tentative',
     question: 'La tentative de 227-28-3 est :',
     options: [
@@ -4378,7 +4378,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : tentative NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation pédopornographie — Complicité',
     question: 'La complicité de 227-28-3 est :',
     options: ['Non', 'Oui', 'Oui seulement si bande organisée'],
@@ -4388,7 +4388,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- PROVOCATION DIRECTE D’UN MINEUR À COMMETTRE CRIME/DÉLIT — 227-21 (MOYENNE 35-44) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Fondement',
     question:
         'La provocation directe d’un mineur à commettre un crime ou un délit est prévue par :',
@@ -4402,7 +4402,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-21 al.1 CP réprime la provocation d’un mineur à commettre crime/délit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Directe',
     question:
         'La provocation doit être qualifiée de “directe”, ce qui implique :',
@@ -4416,7 +4416,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : relation précise et incontestable + lien étroit, pas une incitation générale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Effet',
     question: 'Il faut que la provocation ait été suivie d’effet :',
     options: ['Non', 'Oui', 'Oui seulement si mineur < 15'],
@@ -4425,7 +4425,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : peu importe qu’elle ait été suivie ou non d’effet.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Objet',
     question: 'L’objet de la provocation visée par 227-21 doit être :',
     options: [
@@ -4438,7 +4438,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : n’est pas visée la provocation à des faits contraventionnels.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Âge du provocateur',
     question: 'Le provocateur (227-21) doit être obligatoirement majeur :',
     options: ['Non', 'Oui', 'Oui seulement si mineur < 15'],
@@ -4447,7 +4447,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : rien n’est spécifié, provocation possible par majeur ou mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Victime',
     question: 'La provocation doit s’adresser :',
     options: [
@@ -4459,7 +4459,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : adressée à un mineur (note : < 15 = aggravation).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Peine simple',
     question: 'La peine simple (227-21 al.1) est :',
     options: [
@@ -4471,7 +4471,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 5 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Aggravations',
     question: 'Sont des circonstances aggravantes (227-21 al.2) :',
     options: [
@@ -4484,7 +4484,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours liste ces aggravations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Peine aggravée',
     question: 'La peine aggravée (227-21 al.2) est :',
     options: [
@@ -4496,7 +4496,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 7 ans / 150 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation mineur crime/délit — Tentative',
     question: 'La tentative de 227-21 est :',
     options: [
@@ -4510,7 +4510,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- ALCOOL — 227-19 (DIFFICILE 45-52) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Fondement',
     question:
         'La provocation directe d’un mineur à la consommation de boissons alcooliques est prévue par :',
@@ -4524,7 +4524,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-19 CP prévoit et réprime la provocation directe à l’alcool.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Notion',
     question:
         'Les “boissons alcooliques” visées comportent des traces d’alcool supérieures à :',
@@ -4534,7 +4534,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours renvoie à l’article L.3321-1 du code de la santé publique (> 1,2°).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Formes',
     question: 'La consommation visée par 227-19 doit être :',
     options: [
@@ -4546,7 +4546,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise : habituelle ou excessive.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Directe',
     question:
         'Une simple suggestion sans lien précis peut être une provocation directe :',
@@ -4555,7 +4555,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : relation précise et lien étroit nécessaires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Peines',
     question:
         'La provocation directe à la consommation excessive (227-19 al.1) est punie de :',
@@ -4569,7 +4569,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours distingue al.1 (1 an/15 000 €) et al.2 (2 ans/45 000 €).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Habitude',
     question: 'La consommation habituelle (227-19 al.2) est punie de :',
     options: [
@@ -4581,7 +4581,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours : al.2 = 2 ans / 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Aggravation',
     question: 'En cas d’aggravation (227-19 al.3), il est prévu :',
     options: [
@@ -4593,7 +4593,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours mentionne : doublement du maximum.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation alcool — Tentative/Complicité',
     question: 'Pour 227-19 :',
     options: [
@@ -4607,7 +4607,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- STUPÉFIANTS — 227-18 / 227-18-1 (DIFFICILE 53-60) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement usage',
     question:
         'La provocation d’un mineur à l’usage illicite de stupéfiants est prévue par :',
@@ -4620,7 +4620,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 227-18 al.1 réprime la provocation à l’usage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Fondement trafic',
     question:
         'La provocation d’un mineur au transport/détention/offre/cession de stupéfiants est prévue par :',
@@ -4634,7 +4634,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-18-1 al.1 réprime la provocation au trafic visé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Directe',
     question: 'La provocation en matière 227-18/227-18-1 doit être :',
     options: ['Directe', 'Indirecte uniquement', 'Purement publicitaire'],
@@ -4643,7 +4643,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours insiste : provocation directe avec lien précis et étroit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Aggravations',
     question:
         'Sont des circonstances aggravantes (227-18 al.2 / 227-18-1 al.2) :',
@@ -4656,7 +4656,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours liste ces aggravations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Peine simple usage',
     question: 'La peine simple (227-18 al.1) est :',
     options: [
@@ -4668,7 +4668,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours : 5 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation stupéfiants — Peine simple trafic',
     question: 'La peine simple (227-18-1 al.1) est :',
     options: [
@@ -4689,7 +4689,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // PRIVATION D’ALIMENTS OU DE SOINS À MINEUR < 15 — 227-15/227-16
   // FACILE (1-20)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Fondement',
     question:
         'La privation d’aliments ou de soins à un mineur de quinze ans est prévue par :',
@@ -4703,7 +4703,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-15 CP définit et réprime la privation d’aliments ou de soins à mineur < 15 ans.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Victime',
     question: 'Pour 227-15, la victime doit être :',
     options: [
@@ -4716,7 +4716,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : la privation ne constitue une infraction que si la victime est un mineur de quinze ans (donc < 15).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Auteur',
     question: 'L’article 227-15 vise notamment comme auteurs :',
     options: [
@@ -4730,7 +4730,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : ascendants / autorité parentale / autorité de fait (nouveau conjoint, responsables, etc.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Ascendants',
     question: 'Dans 227-15, “ascendants” regroupe notamment :',
     options: [
@@ -4742,7 +4742,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours précise les ascendants concernés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation d’aliments',
     question: 'La privation d’aliments correspond à :',
     options: [
@@ -4755,7 +4755,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : privation d’aliments = défaut de nourriture en quantité/qualité suffisante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Privation de soins',
     question: 'La privation de soins inclut notamment :',
     options: [
@@ -4768,7 +4768,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : soins au quotidien (hygiène, soins médicaux, prise en charge).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Condition de résultat',
     question: 'Pour 227-15, les privations doivent être :',
     options: [
@@ -4781,7 +4781,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le texte exige une compromission (au moins potentielle) de la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Dommage effectif',
     question: 'Il faut prouver que la santé a été effectivement altérée :',
     options: [
@@ -4794,7 +4794,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : pas nécessaire que le dommage se réalise, suffit que les privations soient susceptibles d’altérer la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Présomption (mineur < 6 ans)',
     question:
         'Constitue notamment une privation de soins (227-15 al.2) le fait de :',
@@ -4809,7 +4809,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : présomption de défaut de soins en cas de maintien < 6 ans sur voie publique/transport collectif pour mendicité.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mendicité',
     question: 'Le simple fait de mendier avec un enfant en bas âge :',
     options: [
@@ -4822,7 +4822,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : “Par contre, le simple fait de mendier avec un enfant en bas âge n’est pas en soi constitutif” (Cass. crim., 12 oct. 2005).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Élément moral',
     question: 'L’élément moral de 227-15 exige :',
     options: [
@@ -4836,7 +4836,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : conscience/connaissance/prévision du mal (Cass. crim., 11 mars 1975).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Volonté de nuire',
     question: 'Pour 227-15, la volonté de nuire est :',
     options: [
@@ -4849,7 +4849,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : ni volonté de nuire ni volonté de causer un dommage ne sont nécessaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Convictions',
     question:
         'Des convictions religieuses peuvent justifier des privations compromettant la santé :',
@@ -4859,7 +4859,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : convictions religieuses / souci d’éducation ne justifient pas si conscience du risque sur la santé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Aggravation (227-15 al.3)',
     question:
         'Une circonstance aggravante (227-15 al.3) existe notamment si l’auteur a commis sur le même mineur :',
@@ -4873,7 +4873,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-15 al.3 vise le cas où l’auteur s’est rendu coupable du délit 433-18-1 sur le même mineur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Mort',
     question:
         'Lorsque la privation d’aliments ou de soins entraîne la mort, le texte visé est :',
@@ -4887,7 +4887,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-16 CP = aggravation lorsque la privation a entraîné la mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine simple',
     question: 'La peine principale (227-15) est :',
     options: [
@@ -4899,7 +4899,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le tableau du cours : 7 ans / 100 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Peine aggravée (227-15 al.3)',
     question: 'La peine principale (227-15 al.3) est :',
     options: [
@@ -4911,7 +4911,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 10 ans / 300 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Crime (mort)',
     question: 'En cas de mort (227-16), la peine est :',
     options: [
@@ -4923,7 +4923,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 227-16 = crime, 30 ans de réclusion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Privation aliments/soins — Tentative/Complicité',
     question: 'Pour 227-15 :',
     options: [
@@ -4940,7 +4940,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // SOUSTRACTION D’UN PARENT À SES OBLIGATIONS — 227-17
   // MOYENNE (21-45)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Fondement',
     question:
         'La soustraction d’un parent à ses obligations légales est prévue par :',
@@ -4954,7 +4954,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-17 CP définit et réprime la soustraction d’un parent à ses obligations légales.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Auteur',
     question: 'L’auteur visé par 227-17 est :',
     options: [
@@ -4967,7 +4967,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : seuls père et mère (lien de filiation), exclusion des autres ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Victime',
     question: 'La victime de 227-17 doit être :',
     options: [
@@ -4979,7 +4979,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : mineur sans condition d’âge (= < 18).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Motif légitime',
     question:
         'Les faits ne sont punissables que si le parent s’est soustrait :',
@@ -4992,7 +4992,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte exige l’absence de motif légitime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Autorité parentale',
     question:
         'L’article du code civil cité au sujet de l’autorité parentale est :',
@@ -5006,7 +5006,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours rappelle 371-1 C. civ. (sécurité, santé, moralité, éducation, développement, sans violences).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Quitter le domicile',
     question: 'Pour 227-17, il faut que le parent quitte le domicile :',
     options: [
@@ -5019,7 +5019,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : pas nécessaire de quitter le domicile; c’est un abandon moral possible même présent.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Contenu',
     question: 'Sont cités comme exemples d’abandon moral/matériel :',
     options: [
@@ -5032,7 +5032,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours liste ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Condition de compromission',
     question:
         'L’infraction est constituée si la soustraction est susceptible de compromettre :',
@@ -5045,7 +5045,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le texte vise ces quatre intérêts.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Dommage effectif',
     question: 'Il faut que la compromission soit irréversible et réalisée :',
     options: ['Non', 'Oui', 'Oui si mineur < 15'],
@@ -5054,7 +5054,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : pas requis que le dommage se soit réalisé; il suffit qu’il soit susceptible de se réaliser.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Carence effective',
     question: 'Pour 227-17, la carence parentale doit être :',
     options: ['Effective', 'Supposée', 'Présumée par le seul divorce'],
@@ -5063,7 +5063,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : la carence des parents doit être effective (Cass. crim., 11 juillet 1994).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Preuve motif légitime',
     question: 'La preuve du motif légitime est à la charge :',
     options: ['Du prévenu', 'Du ministère public', 'De l’enfant'],
@@ -5072,7 +5072,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : c’est au prévenu d’apporter la preuve d’un motif grave.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Appréciation motif',
     question: 'La légitimité du motif invoqué est appréciée :',
     options: ['Par le juge', 'Par la victime uniquement', 'Par l’école'],
@@ -5080,7 +5080,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : appréciation au cas par cas par le juge.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Divorce',
     question:
         'L’introduction d’une demande en divorce est un motif légitime justifiant l’abandon :',
@@ -5090,7 +5090,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : demande en divorce ≠ motif grave (Cass. crim., 30 mai 1967).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Incarcération',
     question: 'L’incarcération du parent peut constituer un motif légitime :',
     options: [
@@ -5103,7 +5103,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : incarcération reconnue comme motif légitime dans un cas (Cass. crim., 26 mars 1957).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Convictions religieuses',
     question:
         'Les convictions religieuses peuvent excuser la soustraction 227-17 :',
@@ -5113,7 +5113,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : convictions religieuses ne sauraient excuser (Cass. crim., 11 juillet 1994).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Élément moral',
     question: '227-17 est une infraction :',
     options: ['Intentionnelle', 'Involontaire', 'Contraventionnelle'],
@@ -5122,7 +5122,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : conscience de se soustraire et du risque de conséquences dommageables.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Aggravation al.2',
     question:
         'Une aggravation (227-17 al.2) existe si la soustraction a conduit à :',
@@ -5137,7 +5137,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : aggravation si lien direct + condamnation définitive du mineur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Peine simple',
     question: 'La peine simple (227-17) est :',
     options: [
@@ -5149,7 +5149,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 2 ans / 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Peine aggravée',
     question: 'La peine aggravée (227-17 al.2) est :',
     options: [
@@ -5161,7 +5161,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 3 ans / 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Soustraction obligations — Tentative/Complicité',
     question: 'Pour 227-17 :',
     options: [
@@ -5178,7 +5178,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // PROPOSITIONS SEXUELLES À MINEUR < 15 PAR MOYEN ÉLECTRONIQUE — 227-22-1
   // MOYENNE (46-60)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Fondement',
     question:
         'Les propositions sexuelles à un mineur de quinze ans par moyen électronique sont prévues par :',
@@ -5192,7 +5192,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-22-1 CP réprime les propositions sexuelles via communication électronique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Auteur',
     question: 'L’auteur des propositions sexuelles (227-22-1) doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -5200,7 +5200,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : auteur = personne majeure.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Acte',
     question: 'Les propositions visées doivent être :',
     options: ['Sexuelles et explicites', 'Ambiguës uniquement', 'Politiques'],
@@ -5208,7 +5208,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : propositions sexuelles explicites.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Moyen',
     question: 'Le moyen exigé par 227-22-1 est :',
     options: [
@@ -5221,7 +5221,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le texte vise l’usage d’un moyen de communication électronique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Victime',
     question: 'La victime doit être :',
     options: [
@@ -5234,7 +5234,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : adressées à mineur < 15 ou personne se présentant comme telle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Croyance',
     question:
         'Il suffit que l’auteur ait cru être en présence d’un mineur de quinze ans :',
@@ -5244,7 +5244,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : il suffit qu’il ait cru être en présence d’un mineur < 15.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Nature',
     question: '227-22-1 réprime principalement :',
     options: [
@@ -5257,7 +5257,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : incriminer des comportements pouvant conduire à une atteinte sexuelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Élément moral',
     question: 'L’élément moral (227-22-1) repose sur :',
     options: [
@@ -5271,7 +5271,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : infraction intentionnelle, volonté d’effectuer ces propositions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Aggravation',
     question: 'La circonstance aggravante (227-22-1 al.2) est :',
     options: [
@@ -5283,7 +5283,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : aggravation si rencontre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Peine simple',
     question: 'La peine simple (227-22-1 al.1) est :',
     options: [
@@ -5295,7 +5295,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 2 ans / 30 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Peine aggravée',
     question: 'La peine aggravée (227-22-1 al.2) est :',
     options: [
@@ -5307,7 +5307,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 5 ans / 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Tentative',
     question: 'La tentative (227-22-1) est :',
     options: [
@@ -5319,7 +5319,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : tentative NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Propositions sexuelles en ligne — Complicité',
     question: 'La complicité (227-22-1) est :',
     options: ['Oui', 'Non', 'Oui uniquement si rencontre'],
@@ -5332,7 +5332,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   // EXPLOITATION IMAGE PORNOGRAPHIQUE D’UN MINEUR — 227-23
   // DIFFICILE (61-100)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement fixation',
     question:
         'Le fait de fixer/enregistrer/transmettre l’image pornographique d’un mineur en vue de diffusion est prévu par :',
@@ -5346,7 +5346,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-23 al.1 réprime la fixation/enregistrement/transmission en vue de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Mineur < 15 et diffusion',
     question:
         'Si l’image concerne un mineur de quinze ans, la fixation/enregistrement est punie :',
@@ -5360,7 +5360,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : pour mineur < 15, punissable même sans vue de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement diffusion',
     question:
         'Offrir/rendre disponible/diffuser/importer/exporter une image pornographique de mineur est prévu par :',
@@ -5374,7 +5374,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-23 al.2 réprime l’offre, mise à dispo, diffusion, import/export.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Fondement consultation/détention',
     question:
         'Consulter habituellement ou en contrepartie d’un paiement un site pédopornographique / détenir ou acquérir est prévu par :',
@@ -5388,7 +5388,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-23 al.4 incrimine consultation habituelle ou payante + acquisition/détention.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Image vs représentation',
     question: 'Le terme “représentation” a été ajouté notamment pour viser :',
     options: [
@@ -5401,7 +5401,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : image réelle et représentation fictive/virtuelle (dessins, photomontage, morphing…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Support',
     question: 'L’image/représentation peut se trouver :',
     options: [
@@ -5413,7 +5413,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : support indifférent, exemples multiples.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Caractère pornographique',
     question: 'Le caractère pornographique vise :',
     options: [
@@ -5426,7 +5426,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : simple nudité hors attitude particulière n’entre pas dans l’incrimination.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Simple nudité',
     question:
         'La simple nudité d’un mineur, sans attitude particulière, entre dans 227-23 :',
@@ -5435,7 +5435,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : simple nudité seule n’est pas visée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Œuvre artistique',
     question:
         'Pour des œuvres artistiques (tableaux, gravures), la qualification pornographique relève :',
@@ -5448,7 +5448,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : appréciation au cas par cas (art/pornographie).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Diffusion',
     question:
         'La diffusion au sens de 227-23 al.2 doit en principe impliquer :',
@@ -5462,7 +5462,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : diffusion suppose plusieurs destinataires (contrairement à une correspondance personnelle).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Correspondance',
     question:
         'Une lettre adressée à une seule personne (correspondance personnelle) est, en principe :',
@@ -5476,7 +5476,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : a contrario, une lettre à une seule personne ne peut être qualifiée de diffusion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Diffusion non publique',
     question: 'La diffusion doit être publique pour être incriminée :',
     options: ['Non', 'Oui', 'Oui sauf si mineur < 15'],
@@ -5485,7 +5485,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : diffusion incriminée même sans caractère public (ex : salon privé).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Offre',
     question: 'L’offre (227-23 al.2) s’entend :',
     options: [
@@ -5498,7 +5498,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : offre = mise à disposition d’autrui même gratuite, sans exiger pluralité de destinataires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Rendre disponible',
     question: 'Rendre disponible correspond notamment au fait de :',
     options: [
@@ -5512,7 +5512,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : laisser des fichiers accessibles sans diffuser directement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Import/export',
     question:
         'L’importation/exportation de documents pédopornographiques est incriminée :',
@@ -5525,7 +5525,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : incrimination spécifique, y compris transit.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Consultation habituelle',
     question:
         'La consultation d’un site pédopornographique est incriminée si elle est :',
@@ -5538,7 +5538,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : consultation habituelle ou payante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Consultation payante',
     question: 'La consultation même occasionnelle est sanctionnée dès lors :',
     options: [
@@ -5551,7 +5551,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : consultation occasionnelle sanctionnée si paiement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Acquisition/détention',
     question: 'La détention/acquisition est caractérisée notamment par :',
     options: [
@@ -5565,7 +5565,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : présence sur matériel suffit si impossibilité d’établir qu’il ignorait l’existence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Repentir',
     question: 'Détruire ultérieurement les fichiers (repentir) :',
     options: [
@@ -5578,7 +5578,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : délit prouvé même si fichiers détruits; repentir sans influence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Apparence de mineur',
     question:
         'L’infraction peut être constituée si la personne a l’aspect physique d’un mineur :',
@@ -5593,7 +5593,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : aspect de mineur suffit sauf établissement de majorité au moment de la fixation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Élément moral',
     question: 'L’exploitation d’images pédopornographiques (227-23) est :',
     options: ['Intentionnelle', 'Involontaire', 'Contraventionnelle'],
@@ -5602,7 +5602,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : conscience du caractère contraire aux bonnes mœurs.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Mobile',
     question: 'Le mobile (sadisme, prétendue vocation artistique, etc.) :',
     options: [
@@ -5614,7 +5614,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : mobile importe peu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Connaissance minorité',
     question: 'La connaissance de la minorité du sujet représenté est :',
     options: ['Présumée', 'Toujours impossible à prouver', 'Jamais présumée'],
@@ -5623,7 +5623,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : connaissance par le prévenu de la minorité est présumée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Aggravation réseau',
     question: 'Une aggravation (227-23 al.3) existe lorsque :',
     options: [
@@ -5637,7 +5637,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : al.3 = usage d’un réseau électronique pour diffusion à public non déterminé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Aggravation bande organisée',
     question: 'Une aggravation (227-23 al.5) existe en cas de :',
     options: ['Bande organisée', 'Mariage', 'Divorce'],
@@ -5645,7 +5645,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : al.5 = bande organisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine fabrication simple',
     question:
         'La fabrication/fixation en vue de diffusion (227-23 al.1) est punie de :',
@@ -5658,7 +5658,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 5 ans / 75 000 € (fabrication simple).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine diffusion simple',
     question: 'La diffusion simple (227-23 al.2) est punie de :',
     options: [
@@ -5670,7 +5670,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 5 ans / 75 000 € (diffusion simple).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine consultation/détention',
     question:
         'La consultation habituelle ou la détention (227-23 al.4) est punie de :',
@@ -5683,7 +5683,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Peine aggravée réseau',
     question: 'La diffusion aggravée (227-23 al.3) est punie de :',
     options: [
@@ -5695,7 +5695,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 10 ans / 500 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Tentative',
     question: 'La tentative des infractions prévues par 227-23 est :',
     options: [
@@ -5708,7 +5708,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-23 al.6 prévoit la tentative punissable pour toutes les infractions de 227-23.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Pédopornographie — Complicité',
     question: 'La complicité en matière 227-23 est :',
     options: ['Oui', 'Non', 'Oui uniquement en bande organisée'],
@@ -5718,7 +5718,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- ATTEINTES SEXUELLES MAJEUR SUR MINEUR < 15 — 227-25 / 227-26 (DIFFICILE) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Fondement',
     question:
         'Les atteintes sexuelles commises par un majeur sur un mineur de quinze ans sont prévues par :',
@@ -5732,7 +5732,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-25 CP réprime l’atteinte sexuelle par majeur sur mineur < 15 (hors viol/agression sexuelle).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Définition',
     question: 'L’atteinte sexuelle suppose :',
     options: [
@@ -5744,7 +5744,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : contact physique entre agresseur et victime.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Absence de violence',
     question: 'L’atteinte sexuelle 227-25 correspond à un contact :',
     options: [
@@ -5756,7 +5756,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : sinon, bascule vers viol/agression sexuelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Auteur',
     question: 'L’auteur visé par 227-25 doit être :',
     options: ['Majeur', 'Mineur', 'Indifférent'],
@@ -5764,7 +5764,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : infraction imputable à un majeur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Âge victime',
     question: 'Pour 227-25, la victime doit être :',
     options: [
@@ -5776,7 +5776,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : on retient l’âge au moment des faits.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Calcul âge',
     question: 'Le cours précise que l’âge se calcule :',
     options: [
@@ -5789,7 +5789,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : Cass. crim., 03 septembre 1985 (calcul d’heure à heure).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Erreur âge',
     question: 'L’erreur sur l’âge de la victime :',
     options: [
@@ -5802,7 +5802,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : erreur sur l’âge n’atténue pas, avec nuances jurisprudentielles très limitées.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Aggravations',
     question:
         'Les circonstances aggravantes de l’atteinte sexuelle < 15 sont prévues par :',
@@ -5815,7 +5815,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : 227-26 CP prévoit les aggravations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Peine simple',
     question: 'La peine simple (227-25) est :',
     options: [
@@ -5827,7 +5827,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 7 ans / 100 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Peine aggravée',
     question: 'La peine aggravée (227-26) est :',
     options: [
@@ -5839,7 +5839,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 10 ans / 150 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle < 15 — Tentative',
     question: 'La tentative des délits d’atteintes sexuelles sur mineur est :',
     options: [
@@ -5853,7 +5853,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
   ),
 
   // ---------- ATTEINTES SEXUELLES MAJEUR SUR MINEUR > 15 — 227-27 (DIFFICILE) ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Fondement',
     question:
         'Les atteintes sexuelles sur un mineur de plus de 15 ans (hors viol/agression sexuelle) sont prévues par :',
@@ -5867,7 +5867,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 227-27 CP réprime les atteintes sexuelles sur mineur > 15, sous conditions d’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Conditions',
     question:
         'Pour 227-27, l’infraction est constituée notamment lorsque l’acte est commis par un majeur :',
@@ -5882,7 +5882,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
         'Le cours : 1° autorité de droit/de fait ; 2° abus de l’autorité conférée par les fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Âge victime',
     question: 'Pour 227-27, la victime doit être :',
     options: [
@@ -5894,7 +5894,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Le cours : mineur > 15 et < 18, même émancipé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Peine',
     question: 'La peine principale (227-27) est :',
     options: [
@@ -5906,7 +5906,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     explanation: 'Tableau : 5 ans / 45 000 €.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Atteinte sexuelle > 15 — Tentative/Complicité',
     question: 'Pour 227-27 :',
     options: [
@@ -5920,7 +5920,7 @@ final List<QuizQuestion> questionMiseEnPerilMineurs = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Provocation délinquance — Résultat',
     question: 'La provocation est punissable :',
     options: [
@@ -6288,7 +6288,7 @@ class _QuizMisePerilMineurState extends State<QuizMisePerilMineur>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -6491,7 +6491,7 @@ class _QuizMisePerilMineurState extends State<QuizMisePerilMineur>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -6674,7 +6674,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -7207,10 +7206,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -7581,7 +7581,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -7622,9 +7622,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

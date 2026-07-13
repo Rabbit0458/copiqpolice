@@ -117,7 +117,7 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Ces articles servent de repère immédiat pour l’accueil, l’information et l’orientation.",
               ),
@@ -183,10 +183,10 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
               ),
               const SizedBox(height: 10),
 
-              _NotaBox(
+              const _NotaBox(
                 title: "Règle",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le recueil des déclarations ne doit en aucun cas être subordonné à la présentation préalable d’un certificat médical.",
                   ),
@@ -259,38 +259,38 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
             cardColor: cardGreen,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "3.1 Interventions « police-secours » au domicile",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Toute sollicitation pour violences conjugales/intrafamiliales est traitée en priorité. "
                 "Les renseignements doivent être complets (présence d’armes, enfants, antécédents TAJ/MCI). "
                 "Les primo-intervenants agissent avec prudence : les faits exacts et les moyens utilisés ne sont pas toujours connus.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Deux situations typiques"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Deux situations typiques"),
+              _BulletPoint(
                 text:
                     "Traces/indices apparents : interpellation de l’auteur pour présentation OPJ, préservation traces/indices, relevé témoins, enquête de voisinage, incitation à plainte/audition, transport commissariat si possible.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Absence d’indices apparents : versions recueillies séparément, enquête de voisinage, doute → compte rendu à l’OPJ de permanence (consultation antécédents).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("3.2 Mise en sécurité"),
-              const _SubTitle("A) Hébergement d’urgence"),
-              const _Paragraph(
+              _SubTitle("3.2 Mise en sécurité"),
+              _SubTitle("A) Hébergement d’urgence"),
+              _Paragraph(
                 "Si la victime ne peut rester en sécurité au domicile : activation des dispositifs locaux (nuitées d’hôtel, 115). "
                 "En cas d’indisponibilité du 115, consultation d’outils de géolocalisation des places d’hébergement d’urgence. "
                 "Transport possible par équipage selon contraintes opérationnelles.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("B) Récupération sécurisée d’effets personnels"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("B) Récupération sécurisée d’effets personnels"),
+              _Paragraph(
                 "Si la victime craint pour sa sécurité pour récupérer des effets personnels incontestables, "
                 "elle peut solliciter l’assistance des policiers selon la disponibilité opérationnelle.",
               ),
@@ -305,106 +305,106 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
             cardColor: cardAmber,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "4.1 Actes à réaliser lors de la prise de plainte",
               ),
 
-              const _SubTitle("4.1.1 Évaluation du danger"),
-              const _Paragraph(
+              _SubTitle("4.1.1 Évaluation du danger"),
+              _Paragraph(
                 "À l’occasion d’une plainte, audition ou déclaration MCI, l’évaluation du danger est réalisée via une grille dédiée "
                 "(23 questions). Elle doit être complétée par le policier après questionnement : la remettre à la victime pour qu’elle la remplisse seule est proscrit.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La grille complétée est jointe à la procédure (ou à la MCI) et transmise au parquet avec la plainte/audition (ou déclaration).",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Danger caractérisé si : au moins 2 réponses « rouges » positives OU 12 réponses positives (toutes couleurs).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4.1.2 Consultation des fichiers (systématique)"),
-              const _Paragraph(
+              _SubTitle("4.1.2 Consultation des fichiers (systématique)"),
+              _Paragraph(
                 "Les consultations permettent d’éclairer l’OPJ et l’autorité judiciaire, surtout quand une situation à risque est identifiée.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "TAJ (traitement des antécédents judiciaires)",
               ),
-              const _BulletPoint(text: "MCI (main courante informatisée)"),
-              const _BulletPoint(
+              _BulletPoint(text: "MCI (main courante informatisée)"),
+              _BulletPoint(
                 text: "FPR (fichier des personnes recherchées)",
               ),
-              const _BulletPoint(text: "LRPPN (base locale procédures)"),
-              const _BulletPoint(text: "AGRIPPA (armes déclarées)"),
+              _BulletPoint(text: "LRPPN (base locale procédures)"),
+              _BulletPoint(text: "AGRIPPA (armes déclarées)"),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4.1.3 Avis systématique hiérarchie + parquet"),
-              const _Paragraph(
+              _SubTitle("4.1.3 Avis systématique hiérarchie + parquet"),
+              _Paragraph(
                 "Plainte/audition/MCI : avis parquet après avis hiérarchique, avec grille danger. "
                 "Les situations dangereuses font l’objet d’un avis téléphonique systématique au parquet.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Exemples (non exhaustifs) : antécédents violences conjugales, rupture envisagée, conflit garde/enfants, grossesse, accès possible à arme à feu.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4.1.4 Réquisition examen médical"),
-              const _Paragraph(
+              _SubTitle("4.1.4 Réquisition examen médical"),
+              _Paragraph(
                 "Si enquête ouverte : prise de rendez-vous UMJ et remise d’une réquisition pour descriptif lésions + retentissement psychologique.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "4.1.5 Saisie des armes (systématique dès la première plainte)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La recherche et saisie d’armes en possession de l’auteur est un axe majeur, notamment en perquisition. "
                 "La consultation AGRIPPA est un préalable utile à l’interpellation et à la perquisition.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "4.2 Document d’information aux victimes (systématique)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Remise d’un document (A4 ou carte de visite) avec coordonnées locales : ISC, psychologues, associations. "
                 "Remise possible au commissariat, à l’hôpital, et lors d’intervention à domicile si cela peut être fait discrètement.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("4.3 Priorisation des procédures"),
-              const _Paragraph(
+              _SubTitle("4.3 Priorisation des procédures"),
+              _Paragraph(
                 "Les situations dangereuses sont traitées en priorité. La hiérarchie distingue les dossiers à traiter immédiatement, "
                 "précise les diligences et contrôle l’exécution.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Localisation/interpellation auteur (initiative ou parquet)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Consultations fichiers (TAJ/MCI/FPR/LRPPN/AGRIPPA)",
               ),
-              const _BulletPoint(text: "Perquisition + recherche/saisie armes"),
-              const _BulletPoint(
+              _BulletPoint(text: "Perquisition + recherche/saisie armes"),
+              _BulletPoint(
                 text: "Propositions de protection (BAR, TGD) si nécessaire",
               ),
             ],
@@ -418,31 +418,31 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
             cardColor: cardPink,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("5.1 Bracelet anti-rapprochement (BAR)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("5.1 Bracelet anti-rapprochement (BAR)"),
+              _Paragraph(
                 "La victime est informée qu’elle peut demander ce dispositif. Il peut être mis en place dans une procédure pénale "
                 "(avant ou après jugement) ou civile (ordonnance de protection). L’autorité judiciaire fixe des zones "
                 "(protection / pré-alerte / alerte) et inscription FPR.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Si l’auteur entre dans la zone : conseils de mise en sûreté + avis CIC → déclenchement intervention.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Priorité opérationnelle"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Priorité opérationnelle"),
+              _BulletPoint(
                 text:
                     "Protéger la victime : elle est mise en sûreté dès qu’elle est protégée par l’équipage ou que l’auteur est sorti des zones.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "5.2 Ordonnance de protection (JAF) & saisie des armes",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Après ordonnance de protection interdisant port/détention d’armes : notification rapide, convocation sous 1 jour ouvré, "
                 "accompagnement domicile pour remise. En cas de refus/carence : ouverture enquête pour violation.",
               ),
@@ -499,45 +499,45 @@ class GpxDoctrineAccueilVictimesVcPage extends StatelessWidget {
             cardColor: cardIntro,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Objectif"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Objectif"),
+              _Paragraph(
                 "Un traitement procédural de qualité ne peut fonctionner que si la victime bénéficie d’un accueil adapté. "
                 "La réussite de l’enquête dépend fortement de la qualité de cette première prise en charge.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("Les 3 réflexes à appliquer"),
-              const _IntroBullet(
+              _SubTitle("Les 3 réflexes à appliquer"),
+              _IntroBullet(
                 text:
                     "1) Accueillir sans délai, sans condition (pas de pièce d’identité, pas de certificat médical, hors ressort, etc.).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "2) Mettre la victime à l’abri (confidentialité), limiter l’attente et éviter la multiplication d’intervenants.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "3) Orienter vers un enquêteur référent (GPF) si possible, et remettre le document d’information victimes.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Droits des victimes",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ils doivent être expliqués dès le début (information, accompagnement, interprète, évaluation). Références : ",
                   ),
                   TextSpan(
                     text: "articles 10-2 à 10-5 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -576,10 +576,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -644,7 +644,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -687,7 +687,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -749,7 +749,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -781,7 +781,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -794,7 +794,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -18,7 +18,7 @@ class ControleIdentiteIntroPage extends StatefulWidget {
   const ControleIdentiteIntroPage({super.key});
 
   /// Route (si tu veux l’ouvrir par nom)
-  static const String routeName = '/gpx/generalites/flagrant_delit_intro';
+  static const String routeName = '/gpx/generalites/controle_identite_intro';
 
   @override
   State<ControleIdentiteIntroPage> createState() =>

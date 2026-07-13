@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionDDD = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Définition",
     question:
         "L’infraction prévue à l’article 322-11-1 al.1 du Code pénal vise :",
@@ -105,7 +105,7 @@ final List<QuizQuestion> questionDDD = [
         "322-11-1 al.1 CP : détention ou transport de substances/produits incendiaires ou explosifs en vue de la préparation caractérisée de destructions dangereuses (322-6) ou d’atteintes aux personnes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément légal",
     question:
         "Quel article définit et réprime la détention ou le transport de substances incendiaires ou explosives avec préparation caractérisée ?",
@@ -119,7 +119,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte d’incrimination est expressément l’article 322-11-1 alinéa 1 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Détention",
     question: "La détention, au sens de 322-11-1, correspond :",
     options: [
@@ -133,7 +133,7 @@ final List<QuizQuestion> questionDDD = [
         "La détention s’entend comme le fait d’avoir les produits à disposition, au domicile ou ailleurs, sans exigence de propriété.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Transport (piège)",
     question:
         "Être trouvé porteur de produits incendiaires sur la voie publique caractérise :",
@@ -147,7 +147,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours précise que le fait d’être porteur sur la voie publique caractérise simultanément la détention et le transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Nature des produits",
     question: "Sont visés par 322-11-1 al.1 :",
     options: [
@@ -160,7 +160,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise aussi bien les explosifs industriels que les explosifs artisanaux (EEI) et produits incendiaires comme les cocktails Molotov.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Pluralité (ultra-piège)",
     question: "La jurisprudence exige, en principe :",
     options: [
@@ -173,7 +173,7 @@ final List<QuizQuestion> questionDDD = [
         "L’emploi du pluriel implique que la présence d’un seul objet n’est pas suffisante ; la jurisprudence retient au moins deux éléments.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Préparation caractérisée",
     question: "La préparation caractérisée suppose :",
     options: [
@@ -187,7 +187,7 @@ final List<QuizQuestion> questionDDD = [
         "L’auteur ne doit pas être passé à l’acte ; la résolution d’agir doit ressortir d’actes préparatoires concrets.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Piège utilisation",
     question:
         "Si les substances sont effectivement utilisées, la qualification retenue sera :",
@@ -201,7 +201,7 @@ final List<QuizQuestion> questionDDD = [
         "322-11-1 vise l’anticipation : en cas d’utilisation ou tentative, on bascule vers 322-6 ou les infractions d’atteintes aux personnes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionDDD = [
         "L’intention coupable doit être démontrée, révélée par les actes préparatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Peine",
     question: "Peines encourues pour l’infraction simple de 322-11-1 al.1 :",
     options: [
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionDDD = [
         "Répression de droit commun prévue par l’article 322-11-1 al.1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Aggravation",
     question: "La circonstance aggravante spécifique prévue est :",
     options: [
@@ -241,7 +241,7 @@ final List<QuizQuestion> questionDDD = [
         "Article 322-11-1 al.2 CP : aggravation en cas de bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Peine aggravée",
     question: "En cas de bande organisée, la peine encourue est :",
     options: [
@@ -254,7 +254,7 @@ final List<QuizQuestion> questionDDD = [
         "L’aggravation par bande organisée porte la peine à 10 ans et 500 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative de l’infraction prévue à l’article 322-11-1 al.1 est punissable.",
@@ -263,7 +263,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "La tentative n’est pas punissable pour cette infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Complicité",
     question: "La complicité est-elle punissable pour 322-11-1 al.1 ?",
     options: ["Oui", "Non", "Seulement pour les personnes morales"],
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Définition",
     question: "L’article 322-11-1 al.3 réprime :",
     options: [
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionDDD = [
         "322-11-1 al.3 CP vise l’absence de motif légitime, indépendamment d’une préparation caractérisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Motif légitime (piège)",
     question:
         "Un bidon d’essence transporté pour tondre une pelouse constitue :",
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte exclut l’infraction lorsque le transport repose sur une raison légitime et de bonne foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Peine",
     question: "La peine encourue pour 322-11-1 1° ou 2° est :",
     options: [
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Définition",
     question: "L’article 322-6 al.1 du Code pénal incrimine :",
     options: [
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionDDD = [
         "322-6 al.1 CP vise les atteintes intentionnelles aux biens créant un danger pour les personnes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Moyen dangereux",
     question: "Quels moyens sont expressément visés par l’article 322-6 ?",
     options: [
@@ -341,7 +341,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise l’explosion, l’incendie ou tout autre moyen de nature à créer un danger pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Élément moral (jurisprudence)",
     question:
         "Selon la Cour de cassation, l’élément intentionnel est caractérisé par :",
@@ -356,7 +356,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Définition",
     question: "L’infraction de fausse alerte consiste à :",
     options: [
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionDDD = [
         "322-14 CP réprime les fausses informations relatives à des destructions dangereuses ou à des sinistres.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément moral",
     question: "L’élément moral des fausses alertes suppose :",
     options: [
@@ -383,7 +383,7 @@ final List<QuizQuestion> questionDDD = [
         "L’auteur doit savoir que l’information est fausse et vouloir tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Peine",
     question: "Les fausses alertes sont punies de :",
     options: [
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Peine prévue par l’article 322-14 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Définition",
     question: "L’article 322-6-1 al.1 CP réprime :",
     options: [
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionDDD = [
         "322-6-1 al.1 : diffusion de procédés de fabrication d’engins de destruction, sauf à destination des professionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Moyen de diffusion (piège)",
     question: "Pour 322-6-1, la diffusion doit être :",
     options: [
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionDDD = [
         "Tous moyens visés (courriers, tracts, revues, communications électroniques, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Public visé",
     question: "L’infraction 322-6-1 peut être retenue si la diffusion est :",
     options: [
@@ -435,7 +435,7 @@ final List<QuizQuestion> questionDDD = [
         "Elle vise la diffusion privée ou publique ; exclusion du strict cadre professionnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Exclusion (pro)",
     question:
         "La diffusion de procédés dans un cadre strictement professionnel (recherche/sécurité/enquête) :",
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte exclut les diffusions à destination des professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément moral",
     question: "L’élément moral de 322-6-1 suppose notamment :",
     options: [
@@ -463,7 +463,7 @@ final List<QuizQuestion> questionDDD = [
         "L’auteur n’ignore pas le risque et diffuse sciemment un procédé destiné à fabriquer un engin de destruction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Aggravation",
     question: "La circonstance aggravante de 322-6-1 al.2 vise :",
     options: [
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionDDD = [
         "Aggravation si diffusion via réseau électronique à destination d’un public non déterminé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peine simple",
     question: "Peine encourue (322-6-1 al.1) :",
     options: [
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Répression de base de 322-6-1 al.1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peine aggravée",
     question: "Peine encourue (322-6-1 al.2) :",
     options: [
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionDDD = [
         "Aggravation par réseau électronique vers public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-6-1 est punissable.",
     options: ["Vrai", "Faux", "Seulement si internet"],
@@ -510,7 +510,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le texte indique : tentative non punissable pour 322-6-1.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Complicité",
     question: "La complicité de diffusion de procédés (322-6-1) est :",
     options: [
@@ -523,7 +523,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Définition (involontaire dangereux)",
     question: "L’article 322-5 al.1 CP réprime :",
     options: [
@@ -537,7 +537,7 @@ final List<QuizQuestion> questionDDD = [
         "322-5 : involontaire + danger + explosion/incendie + manquement à obligation de prudence/sécurité imposée par loi ou règlement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Obligation (piège concours)",
     question: "Pour 322-5 al.1, l’obligation violée doit être :",
     options: [
@@ -550,7 +550,7 @@ final List<QuizQuestion> questionDDD = [
         "Les magistrats doivent préciser la source exacte de l’obligation (Cass. crim., 18 juin 2002).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Résultat",
     question: "322-5 vise comme résultats :",
     options: [
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionDDD = [
         "Même triptyque que 322-1/322-6 : destruction / dégradation / détérioration.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité (piège)",
     question:
         "En cas de causalité indirecte, la responsabilité pénale suppose :",
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionDDD = [
         "Distinction causalité directe/indirecte (121-3 al.4 : auteur indirect).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Élément moral al.1",
     question: "L’élément moral de 322-5 al.1 correspond à :",
     options: [
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionDDD = [
         "Il ne s’agit pas de n’importe quelle faute : omission de respecter une obligation précise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Élément moral al.2 (aggravé)",
     question: "322-5 al.2 vise :",
     options: [
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionDDD = [
         "Forme aggravée : l’auteur connaît les risques et choisit de ne pas respecter l’obligation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peine al.1",
     question: "Peine encourue (322-5 al.1) :",
     options: [
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionDDD = [
         "Répression de base pour destruction involontaire dangereuse (al.1).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peine al.2",
     question: "Peine encourue (322-5 al.2) :",
     options: [
@@ -631,7 +631,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Aggravation par violation manifestement délibérée (al.2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Tentative/Complicité (V/F)",
     question:
         "Vrai/Faux : pour 322-5, tentative et complicité sont punissables.",
@@ -641,7 +641,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Définition (dommage important)",
     question: "L’article 322-1 I CP réprime :",
     options: [
@@ -655,7 +655,7 @@ final List<QuizQuestion> questionDDD = [
         "322-1 I : pas de danger pour les personnes + dommage important + bien d’autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Moyen (piège)",
     question: "Pour 322-1 I, les moyens :",
     options: [
@@ -669,7 +669,7 @@ final List<QuizQuestion> questionDDD = [
         "Les moyens ne sont pas précisés ; mais l’incendie/explosion relèvent des textes dangereux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Élément moral",
     question: "L’intention requise par 322-1 I est :",
     options: [
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionDDD = [
         "Cass. crim., 18 sept. 1991 : savoir ne pas être propriétaire et n’avoir aucun droit de disposition.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Peine simple",
     question: "Peine encourue (322-1 I) :",
     options: [
@@ -695,7 +695,7 @@ final List<QuizQuestion> questionDDD = [
         "Répression du dommage important sans danger pour les personnes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-2 — Circonstance (registre public)",
     question:
         "L’article 322-2 aggrave lorsque le bien détruit/dégradé/détérioré est :",
@@ -710,7 +710,7 @@ final List<QuizQuestion> questionDDD = [
         "322-2 : protection des registres d’état civil, minutes notariales, originaux d’actes/constats/PV.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-2 — Peine",
     question: "Peine encourue avec 322-2 :",
     options: [
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Aggravation spécifique 322-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Aggravations (piège)",
     question: "L’article 322-3 prévoit notamment une aggravation lorsque :",
     options: [
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionDDD = [
         "322-3 liste plusieurs circonstances (pluralité, vulnérabilité, contre personnes dépositaires, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Peine (deux circonstances)",
     question: "Peine encourue lorsque 322-3 est retenu (selon tableau) :",
     options: [
@@ -749,7 +749,7 @@ final List<QuizQuestion> questionDDD = [
         "Le tableau du cours mentionne 5 ans / 75 000 € pour l’aggravation (322-3).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Tentative/Complicité",
     question: "Pour 322-1 I, la tentative et la complicité sont :",
     options: [
@@ -763,7 +763,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Définition (dommage léger)",
     question: "R.635-1 CP vise :",
     options: [
@@ -776,7 +776,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Contravention 5e classe si dommage léger.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Intention (piège contravention)",
     question: "Particularité de R.635-1 :",
     options: [
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte requiert l’intention coupable : dommage « volontaire ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Peine",
     question: "Peine encourue (R.635-1) :",
     options: ["1 500 € d’amende", "3 750 € d’amende", "7 500 € d’amende"],
@@ -799,7 +799,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Tags (définition)",
     question: "L’article 322-1 II CP réprime :",
     options: [
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionDDD = [
         "Spécial « tags » : dommage léger et effaçable sans altérer le support.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Biens visés (piège)",
     question: "Pour 322-1 II, les biens expressément visés sont :",
     options: [
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Liste fermée donnée par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Dommage (piège)",
     question: "Si l’inscription est indélébile et altère le support :",
     options: [
@@ -837,7 +837,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "322-1 II suppose dommage léger (effaçable facilement).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Répression (base)",
     question: "Peine de base pour 322-1 II :",
     options: [
@@ -850,7 +850,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours mentionne l’amende et la TIG ; pas d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Conséquence procédure (piège concours)",
     question: "Attention : 322-1 II, non puni d’emprisonnement, implique :",
     options: [
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Définition (biens culturels)",
     question: "L’article 322-3-1 CP protège :",
     options: [
@@ -878,7 +878,7 @@ final List<QuizQuestion> questionDDD = [
         "322-3-1 liste plusieurs catégories (patrimoine, archives classées, musées, culte…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Particularité (piège)",
     question: "Pour 322-3-1, l’infraction est constituée même si :",
     options: [
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionDDD = [
         "Spécificité : le texte vise la protection patrimoniale ; propriété de l’auteur n’exclut pas l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peine",
     question: "Peine encourue (322-3-1) :",
     options: [
@@ -904,7 +904,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Répression renforcée pour biens culturels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Aggravation",
     question: "322-3-1 est aggravé notamment lorsque :",
     options: [
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Renvoi à la circonstance de pluralité (322-3 1°).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peine aggravée",
     question: "Peine aggravée (322-3-1 al.6) :",
     options: [
@@ -930,7 +930,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Menaces sans condition (définition)",
     question: "L’article 322-12 CP réprime :",
     options: [
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionDDD = [
         "Sans condition : verbale → doit être réitérée ; sinon, une seule suffit si support matériel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Peine",
     question: "Peine encourue (322-12) :",
     options: [
@@ -956,7 +956,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Répression des menaces sans condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Menaces avec condition (définition)",
     question: "L’article 322-13 al.1 CP vise :",
     options: [
@@ -970,7 +970,7 @@ final List<QuizQuestion> questionDDD = [
         "La condition = injonction (faire/ne pas faire) qui contraint la victime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine base",
     question: "Peine encourue (322-13 al.1) :",
     options: [
@@ -982,7 +982,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces avec condition : 1 an / 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Aggravation",
     question: "L’article 322-13 al.2 aggrave lorsque :",
     options: [
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Aggravation spécifique prévue par l’alinéa 2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine aggravée",
     question: "Peine encourue (322-13 al.2) :",
     options: [
@@ -1008,7 +1008,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Distinction (piège concours)",
     question: "322-14 al.1 vise une fausse info portant sur :",
     options: [
@@ -1022,7 +1022,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.1 : fait croire à une infraction dangereuse ; al.2 : fait croire à un sinistre provoquant secours inutiles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Distinction (sinistre)",
     question: "322-14 al.2 vise plutôt :",
     options: [
@@ -1037,7 +1037,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Résultats (QCM piège)",
     question: "Dans 322-6, le résultat exigé est :",
     options: [
@@ -1051,7 +1051,7 @@ final List<QuizQuestion> questionDDD = [
         "Il suffit d’un danger pour les personnes, pas nécessairement de blessure effective.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Bien d’autrui",
     question: "Pour 322-6, le bien doit :",
     options: [
@@ -1065,7 +1065,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I vs R.635-1 (ultra-piège)",
     question: "La différence principale entre 322-1 I et R.635-1 est :",
     options: [
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionDDD = [
         "Éléments constitutifs proches ; la gravité du dommage fait basculer vers la contravention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II vs R.635-1 (piège)",
     question:
         "Un graffiti effaçable sans altérer le support, sans autorisation, relève prioritairement :",
@@ -1090,7 +1090,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Articles (V/F)",
     question:
         "Vrai/Faux : 322-12 concerne les menaces d’atteintes aux biens sans condition.",
@@ -1100,7 +1100,7 @@ final List<QuizQuestion> questionDDD = [
         "322-12 = sans condition ; modalités : réitération si verbal / écrit-image-objet si unique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Articles (V/F)",
     question:
         "Vrai/Faux : 322-13 concerne les menaces d’atteintes aux biens avec condition.",
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "322-13 = menaces avec ordre de remplir une condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Articles (V/F)",
     question: "Vrai/Faux : 322-14 réprime les fausses alertes.",
     options: ["Vrai", "Faux", "Uniquement internet"],
@@ -1118,7 +1118,7 @@ final List<QuizQuestion> questionDDD = [
         "322-14 = communication/divulgation d’une fausse information (destruction dangereuse ou sinistre).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines (piège)",
     question: "Associe la bonne peine : 322-12 =",
     options: ["6 mois + 7 500 €", "1 an + 15 000 €", "2 ans + 30 000 €"],
@@ -1126,7 +1126,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "322-12 : 6 mois d’emprisonnement + 7 500 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines (piège)",
     question: "Associe la bonne peine : 322-13 al.1 =",
     options: ["1 an + 15 000 €", "6 mois + 7 500 €", "3 ans + 45 000 €"],
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces avec condition (base).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines (piège)",
     question: "Associe la bonne peine : 322-14 =",
     options: ["2 ans + 30 000 €", "3 ans + 45 000 €", "3 ans + 45 000 € + TIG"],
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Fausse alerte : 2 ans / 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Définition",
     question: "322-11-1 al.1 CP réprime :",
     options: [
@@ -1156,7 +1156,7 @@ final List<QuizQuestion> questionDDD = [
         "Infraction préventive : possession + préparation caractérisée (faits matériels) + finalité (322-6 ou atteintes aux personnes).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Finalité (piège concours)",
     question: "La finalité de 322-11-1 al.1 est :",
     options: [
@@ -1169,7 +1169,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise 322-6 + atteintes aux personnes (atteintes à la vie, violences...).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Détention vs transport",
     question: "La détention (322-11-1) se définit comme :",
     options: [
@@ -1183,7 +1183,7 @@ final List<QuizQuestion> questionDDD = [
         "Notion large : disponibilité matérielle (domicile, parties communes, chez autrui...).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Souplesse (piège)",
     question:
         "Être trouvé porteur de produits sur la voie publique peut caractériser :",
@@ -1197,7 +1197,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours insiste sur la souplesse : porteur sur voie publique = détention + transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Pluralité (ultra-piège)",
     question:
         "Selon le cours/jurisprudence, 322-11-1 al.1 vise des objets/substances au pluriel :",
@@ -1212,7 +1212,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte emploie le pluriel ; la jurisprudence retient l’exigence d’au moins deux éléments/objets.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Préparation caractérisée",
     question:
         "La “préparation caractérisée” exigée par 322-11-1 al.1 implique :",
@@ -1227,7 +1227,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte est en amont : il faut des actes préparatoires concrets, sans passage à l’acte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Absence d’utilisation (piège)",
     question: "Si les substances sont utilisées ou tentées d’être utilisées :",
     options: [
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionDDD = [
         "322-11-1 al.1 = avant utilisation. Utilisation/tentative = bascule vers 322-6 ou infractions contre les personnes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément moral",
     question: "L’élément moral de 322-11-1 al.1 nécessite :",
     options: [
@@ -1254,7 +1254,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Intention démontrée par les actes préparatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Répression",
     question: "Peine encourue (322-11-1 al.1) :",
     options: [
@@ -1267,7 +1267,7 @@ final List<QuizQuestion> questionDDD = [
         "Détention/transport en vue de préparation (al.1) : 7 ans / 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Bande organisée",
     question: "La circonstance aggravante de 322-11-1 al.2 est :",
     options: ["Bande organisée", "Récidive légale", "Pluralité de victimes"],
@@ -1275,7 +1275,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le texte prévoit l’aggravation en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Peine aggravée",
     question: "Peine encourue (322-11-1 al.2) :",
     options: [
@@ -1287,7 +1287,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Aggravation bande organisée : 10 ans / 500 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 (al.1/2) — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 est punissable.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -1295,7 +1295,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours indique : tentative non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 — Complicité",
     question: "Complicité pour 322-11-1 :",
     options: ["Oui", "Non", "Uniquement si mineur"],
@@ -1305,7 +1305,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Définition (sans motif légitime)",
     question: "322-11-1 al.3 vise la détention/transport sans motif légitime :",
     options: [
@@ -1319,7 +1319,7 @@ final List<QuizQuestion> questionDDD = [
         "Deux branches : 1° explosifs “hors régime” ; 2° incendiaires/éléments si interdits par arrêté préfectoral + absence de motif légitime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — 1° (explosifs)",
     question: "Pour 322-11-1 al.3 1°, il faut :",
     options: [
@@ -1333,7 +1333,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise les explosifs (notamment artisanaux) non soumis à un régime particulier.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — 2° (arrêté préfectoral)",
     question:
         "Pour 322-11-1 al.3 2°, en plus de l’absence de motif légitime, il faut :",
@@ -1348,7 +1348,7 @@ final List<QuizQuestion> questionDDD = [
         "Condition cumulative : pas de motif légitime + arrêté préfectoral d’interdiction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Motif légitime (piège)",
     question: "Le “motif légitime” :",
     options: [
@@ -1361,7 +1361,7 @@ final List<QuizQuestion> questionDDD = [
         "Notion souple : contexte violences urbaines/manifs vs usage domestique normal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Élément moral (1°)",
     question: "Pour 322-11-1 al.3 1°, l’élément moral correspond à :",
     options: [
@@ -1374,7 +1374,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Branche 1° : connaissance + absence de motif légitime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Élément moral (2°)",
     question: "Pour 322-11-1 al.3 2°, l’élément moral implique :",
     options: [
@@ -1386,7 +1386,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Branche 2° : cumul absence motif + violation arrêté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Peine",
     question: "Peine encourue (322-11-1 al.3 1° et 2°) :",
     options: [
@@ -1398,7 +1398,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours indique : 3 ans / 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 al.3 est punissable.",
     options: ["Vrai", "Faux", "Oui si arrêté préfectoral"],
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Moyens (QCM ultra-piège)",
     question: "322-6 al.1 vise une atteinte au bien par :",
     options: [
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionDDD = [
         "La formule “tout autre moyen” est large dès lors que la sécurité des personnes est gravement mise en danger.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Danger (piège)",
     question: "Pour 322-6, il faut :",
     options: [
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionDDD = [
         "L’atteinte au bien doit être de nature à créer un danger pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Élément moral (jurisprudence)",
     question:
         "Selon la Cour de cassation, l’usage d’une substance explosive ou l’incendie :",
@@ -1450,7 +1450,7 @@ final List<QuizQuestion> questionDDD = [
         "Cass. crim., 24 juin 1998 : danger grave inhérent à ces moyens d’action.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Tentative",
     question: "La tentative du délit de 322-6 est :",
     options: [
@@ -1463,7 +1463,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours indique : 322-11 prévoit la tentative punissable pour 322-6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Complicité",
     question: "La complicité pour 322-6 est :",
     options: [
@@ -1476,7 +1476,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément matériel (piège)",
     question: "L’élément matériel de 322-14 nécessite :",
     options: [
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le moyen est indifférent (écrit/oral/téléphone/radio...).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Al.1 vs Al.2 (QCM piège)",
     question: "La différence principale entre 322-14 al.1 et al.2 est :",
     options: [
@@ -1502,7 +1502,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.1 cible les atteintes dangereuses aux biens ; al.2 cible le sinistre (accident, feu accidentel...) et la mobilisation inutile.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément moral",
     question: "L’élément moral de 322-14 implique :",
     options: [
@@ -1514,7 +1514,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Intention coupable requise ; mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative de fausse alerte (322-14) est punissable.",
@@ -1523,7 +1523,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Tentative : non (cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Complicité",
     question: "La complicité de 322-14 est :",
     options: ["Oui", "Non", "Oui seulement si l’auteur est mineur"],
@@ -1532,7 +1532,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Condition de forme (ultra-piège)",
     question: "Pour 322-12, une menace verbale unique suffit si :",
     options: [
@@ -1545,7 +1545,7 @@ final List<QuizQuestion> questionDDD = [
         "Sans condition : verbale → réitération ; sinon matérialisation (écrit/image/objet).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Support matériel",
     question: "Pour 322-12, une menace peut être unique si elle est :",
     options: [
@@ -1558,7 +1558,7 @@ final List<QuizQuestion> questionDDD = [
         "Le support matérialise la menace : pas besoin de réitération.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Condition (QCM piège)",
     question: "Dans 322-13, la “condition” peut être :",
     options: [
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Circonstances (ciblage DAP/MSP)",
     question:
         "Une circonstance aggravante de 322-3 est constituée si les faits sont commis :",
@@ -1587,7 +1587,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise notamment magistrat, gendarme, police, douanes, AP, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Domicile (piège)",
     question: "322-3 peut aggraver si l’infraction est commise :",
     options: [
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionDDD = [
         "Circonstance listée : pénétration par ruse/effraction/escalade.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Visage dissimulé",
     question:
         "Dissimuler volontairement son visage afin de ne pas être identifié :",
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Amende forfaitaire délictuelle (piège)",
     question: "Le texte “tags” (322-1 II) permet :",
     options: [
@@ -1628,7 +1628,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours mentionne explicitement la procédure d’AFD pour 322-1 II.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Aggravation (322-2)",
     question:
         "Pour les “tags”, si le support est un registre/acte original de l’autorité publique :",
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question:
         "“Fausse information visant à faire intervenir inutilement les secours” =",
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.2 : sinistre + intervention inutile des secours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question: "“Menace avec ordre de remplir une condition” =",
     options: ["322-13", "322-12", "R.635-1"],
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces avec condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question:
         "“Destruction involontaire dangereuse par incendie/explosion + obligation loi/règlement violée” =",
@@ -1670,7 +1670,7 @@ final List<QuizQuestion> questionDDD = [
         "Involontaire + danger + manquement obligation de prudence/sécurité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question:
         "“Détention/transport en vue de préparer 322-6 ou atteintes aux personnes (faits matériels)” =",
@@ -1680,7 +1680,7 @@ final List<QuizQuestion> questionDDD = [
         "Infraction de prévention des violences urbaines/incendies/explosifs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Définition",
     question: "L’infraction de 322-6-1 al.1 CP réprime :",
     options: [
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionDDD = [
         "322-6-1 : diffusion par tout moyen de “procédés” permettant fabriquer des engins de destruction (explosifs, nucléaires, biologiques, chimiques, ou produits domestiques/industriels/agricoles).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Moyens de diffusion (piège)",
     question: "Pour 322-6-1, le moyen de diffusion peut être :",
     options: [
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Tous moyens : transmission vers une ou plusieurs personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Public visé (QCM piège)",
     question:
         "L’infraction 322-6-1 peut être constituée si la diffusion est faite :",
@@ -1721,7 +1721,7 @@ final List<QuizQuestion> questionDDD = [
         "La diffusion peut être “privée” (destinataire déterminé) ou publique (site…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Exception (professionnels)",
     question: "322-6-1 ne s’applique pas lorsque la diffusion intervient :",
     options: [
@@ -1734,7 +1734,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Exclusion : diffusion à destination des professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Notion d’engin de destruction",
     question: "L’“engin de destruction” visé par 322-6-1 implique :",
     options: [
@@ -1748,7 +1748,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours vise des engins susceptibles de provoquer incendies/explosions/contaminations, dangereux pour les tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément moral (V/F)",
     question:
         "Vrai/Faux : pour 322-6-1, il faut prouver que l’auteur voulait effectivement nuire.",
@@ -1758,7 +1758,7 @@ final List<QuizQuestion> questionDDD = [
         "Élément moral : connaissance du risque + diffusion sciemment ; le mobile importe peu.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Aggravation",
     question: "La circonstance aggravante de 322-6-1 al.2 est :",
     options: [
@@ -1772,7 +1772,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.2 : usage d’un réseau électronique + public non déterminé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines",
     question: "Peine encourue pour 322-6-1 al.1 :",
     options: [
@@ -1784,7 +1784,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Peines principales al.1 : 3 ans / 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines aggravées",
     question: "Peine encourue pour 322-6-1 al.2 :",
     options: [
@@ -1797,7 +1797,7 @@ final List<QuizQuestion> questionDDD = [
         "Aggravation “réseau électronique + public non déterminé” : 5 ans / 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-6-1 est punissable.",
     options: ["Vrai", "Faux", "Seulement al.2"],
@@ -1805,7 +1805,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Tentative : non (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Complicité",
     question: "La complicité de diffusion (322-6-1) est :",
     options: ["Oui", "Non", "Uniquement si l’auteur est fonctionnaire"],
@@ -1814,7 +1814,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Bien d’autrui (piège)",
     question: "Pour 322-6, le bien doit :",
     options: [
@@ -1827,7 +1827,7 @@ final List<QuizQuestion> questionDDD = [
         "322-6 protège un bien appartenant à une autre personne que l’auteur.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Destruction / Dégradation / Détérioration",
     question: "La “destruction” au sens du cours correspond à :",
     options: [
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionDDD = [
         "Destruction = résultat le plus grave : bien rendu inapte à son usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Dégradation vs détérioration (piège concours)",
     question: "La “dégradation” se distingue surtout par :",
     options: [
@@ -1854,7 +1854,7 @@ final List<QuizQuestion> questionDDD = [
         "Dégradation = dommage important mais non rendant le bien inutilisable ; détérioration = moins grave, perte de valeur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Incendie (définition du cours)",
     question: "Au sens du cours, l’incendie est :",
     options: [
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionDDD = [
         "L’incendie se distingue d’un feu “simple” par la propagation et le danger.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — “Tout autre moyen” (QCM piège)",
     question: "“Tout autre moyen de nature à créer un danger” peut viser :",
     options: [
@@ -1882,7 +1882,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Définition",
     question: "322-5 al.1 CP vise :",
     options: [
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionDDD = [
         "Involontaire + danger + manquement à une obligation particulière de prudence/sécurité imposée par la loi ou le règlement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Obligation (piège)",
     question: "Pour 322-5, l’obligation violée doit être :",
     options: [
@@ -1910,7 +1910,7 @@ final List<QuizQuestion> questionDDD = [
         "Les magistrats doivent préciser source et nature exacte de l’obligation violée (cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité (QCM piège)",
     question: "Le lien de causalité en 322-5 :",
     options: [
@@ -1923,7 +1923,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours distingue causalité directe/indirecte (121-3).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Élément moral (al.2) (piège concours)",
     question: "322-5 al.2 (aggravé) vise notamment :",
     options: [
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.2 : l’auteur sait les risques mais choisit volontairement de ne pas respecter l’obligation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Tentative / Complicité (V/F piège)",
     question: "Vrai/Faux : pour 322-5, la complicité est non punissable.",
     options: ["Vrai", "Faux", "Vrai seulement al.1"],
@@ -1947,7 +1947,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Définition",
     question: "322-1 I CP vise :",
     options: [
@@ -1961,7 +1961,7 @@ final List<QuizQuestion> questionDDD = [
         "Article de base “dommage important” hors moyens dangereux (incendie/explosifs).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Moyen employé (piège)",
     question: "Pour 322-1 I, le moyen employé peut être :",
     options: [
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours écarte incendie/explosifs (322-6).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Élément moral",
     question: "L’élément moral de 322-1 I nécessite :",
     options: [
@@ -1988,7 +1988,7 @@ final List<QuizQuestion> questionDDD = [
         "Cass. crim., 18 sept. 1991 : intention simple, mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Dommage léger",
     question: "R.635-1 CP vise :",
     options: [
@@ -2002,7 +2002,7 @@ final List<QuizQuestion> questionDDD = [
         "Contravention 5e classe : éléments proches de 322-1 I mais dommage léger.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Élément moral (piège)",
     question: "Contrairement à beaucoup de contraventions, R.635-1 exige :",
     options: [
@@ -2015,7 +2015,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours souligne l’exigence d’intention malgré la nature contraventionnelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Peine",
     question: "Peine principale R.635-1 :",
     options: ["1 500 € d’amende", "3 750 € d’amende", "15 000 € d’amende"],
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Tags (définition)",
     question: "322-1 II CP réprime :",
     options: [
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionDDD = [
         "Spécifique “tags” : dommage léger (effaçable sans altérer le support).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Dommage léger (piège)",
     question: "Si l’inscription est indélébile et altère le support :",
     options: [
@@ -2052,7 +2052,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours : 322-1 II = dommage léger ; dommages importants = 322-1 I.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Peine (piège)",
     question: "Peine principale 322-1 II (tags) :",
     options: [
@@ -2064,7 +2064,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours mentionne l’amende et la TIG pour 322-1 II.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — GAV/Flagrance (piège concours)",
     question: "Particularité signalée pour 322-1 II (tags) :",
     options: [
@@ -2079,7 +2079,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Définition (biens culturels)",
     question:
         "322-3-1 CP réprime les destructions/dégradations/détériorations portant sur :",
@@ -2093,7 +2093,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Liste détaillée du cours : 1° à 4°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Propriétaire (ultra-piège)",
     question:
         "Vrai/Faux : 322-3-1 peut être constitué même si l’auteur est propriétaire du bien.",
@@ -2103,7 +2103,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours précise : constitué même si l’auteur est propriétaire (intérêt collectif).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Dommage (piège)",
     question: "Pour 322-3-1, le dommage peut être :",
     options: [
@@ -2117,7 +2117,7 @@ final List<QuizQuestion> questionDDD = [
         "La protection tient à la nature du bien, pas au niveau du dommage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peines",
     question: "Peines principales (322-3-1) :",
     options: [
@@ -2130,7 +2130,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours prévoit aussi la référence à la moitié de la valeur du bien.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Aggravation",
     question: "322-3-1 est aggravé notamment lorsque :",
     options: [
@@ -2144,7 +2144,7 @@ final List<QuizQuestion> questionDDD = [
         "Aggravation par la circonstance de pluralité (référence 322-3 1°).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peine aggravée",
     question: "Peine aggravée (322-3-1 al.6) :",
     options: [
@@ -2157,7 +2157,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Peine",
     question:
         "Peine principale 322-12 (menaces sans condition, dangereuses, réitérées ou matérialisées) :",
@@ -2170,7 +2170,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces sans condition : 6 mois / 7 500 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine (avec condition)",
     question: "Peine principale 322-13 al.1 (menace avec condition) :",
     options: [
@@ -2182,7 +2182,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces avec condition : 1 an / 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Aggravation (danger personnes)",
     question: "322-13 al.2 aggrave lorsque la menace porte sur :",
     options: [
@@ -2195,7 +2195,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.2 : aggravation si danger pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine aggravée",
     question: "Peine aggravée 322-13 al.2 :",
     options: [
@@ -2208,7 +2208,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Peine",
     question: "Peines principales 322-14 (al.1 ou al.2) :",
     options: [
@@ -2222,7 +2222,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (menace)",
     question:
         "Une menace écrite unique de “mettre le feu à ta voiture ce soir” (sans exiger quoi que ce soit) relève plutôt de :",
@@ -2232,7 +2232,7 @@ final List<QuizQuestion> questionDDD = [
         "Sans condition : écrit/objet suffit (menace unique) → 322-12.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (condition)",
     question: "“Si tu ne paies pas, je brûle ton commerce” relève plutôt de :",
     options: ["322-13", "322-12", "R.631-1"],
@@ -2240,7 +2240,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menace avec ordre de remplir une condition (payer).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (fausse info)",
     question:
         "Appeler en disant “il y a une bombe dans la gare” pour créer la panique :",
@@ -2250,7 +2250,7 @@ final List<QuizQuestion> questionDDD = [
         "Fausse information faisant croire à une destruction dangereuse pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (sinistre)",
     question:
         "Téléphoner en prétendant inventer un accident grave pour faire venir les secours “pour rire” :",
@@ -2260,7 +2260,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.2 : fausse information faisant croire à un sinistre + intervention inutile.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (articles)",
     question:
         "Vrai/Faux : 322-6 concerne des destructions dangereuses pour les personnes, alors que 322-1 I vise l’absence de danger pour les personnes.",
@@ -2270,7 +2270,7 @@ final List<QuizQuestion> questionDDD = [
         "322-6 = moyen dangereux/danger personnes ; 322-1 I = pas de danger personnes + dommage important.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (peines)",
     question:
         "Vrai/Faux : 322-11-1 al.1 est puni moins sévèrement que 322-11-1 al.3.",
@@ -2279,7 +2279,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.1 : 7 ans/100k ; al.3 : 3 ans/45k.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (peines)",
     question: "Associe la bonne peine : 322-12 =",
     options: ["6 mois + 7 500 €", "1 an + 15 000 €", "2 ans + 30 000 €"],
@@ -2287,7 +2287,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces sans condition : 6 mois / 7 500 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (peines)",
     question: "Associe la bonne peine : 322-6-1 al.2 =",
     options: ["5 ans + 75 000 €", "3 ans + 45 000 €", "7 ans + 100 000 €"],
@@ -2296,7 +2296,7 @@ final List<QuizQuestion> questionDDD = [
         "Diffusion aggravée via réseau électronique + public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (peines)",
     question: "Associe la bonne peine : 322-14 =",
     options: ["2 ans + 30 000 €", "3 ans + 45 000 €", "6 mois + 7 500 €"],
@@ -2304,7 +2304,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Fausse alerte : 2 ans / 30 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Définition",
     question: "322-11-1 al.1 CP réprime :",
     options: [
@@ -2318,7 +2318,7 @@ final List<QuizQuestion> questionDDD = [
         "Texte : détention/transport + produits incendiaires/explosifs (ou éléments entrant dans leur composition) + préparation caractérisée par faits matériels + infractions 322-6 ou atteintes aux personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Acte préparatoire (piège concours)",
     question: "Pour 322-11-1 al.1, l’intention doit apparaître :",
     options: [
@@ -2332,7 +2332,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte exige une préparation “caractérisée” par actes matériels : on est en amont de l’acte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Détention vs transport",
     question: "La “détention” au sens du cours correspond à :",
     options: [
@@ -2346,7 +2346,7 @@ final List<QuizQuestion> questionDDD = [
         "Détention = mise à disposition (au domicile, parties communes, chez autrui, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Souplesse (piège)",
     question:
         "Être trouvé porteur de tels produits sur la voie publique caractérise :",
@@ -2360,7 +2360,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours insiste sur la souplesse : porteur = détention + transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Pluralité (ultra-piège)",
     question:
         "Selon le cours/jurisprudence citée, un seul objet suffit toujours à 322-11-1 al.1.",
@@ -2370,7 +2370,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise au pluriel ; la jurisprudence retient qu’un seul objet n’est pas suffisant (logique “au moins deux”).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Objet matériel (QCM piège)",
     question: "Peuvent être visés par 322-11-1 al.1 :",
     options: [
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.1 vise aussi les “éléments/substances destinés à entrer dans la composition”.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Infraction visée (piège)",
     question: "La préparation visée renvoie notamment :",
     options: [
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours : préparation de destructions dangereuses (322-6) ou d’atteintes aux personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Absence d’utilisation (piège concours)",
     question:
         "Si les substances sont utilisées (ou tentées d’être utilisées), on poursuit plutôt sur :",
@@ -2413,7 +2413,7 @@ final List<QuizQuestion> questionDDD = [
         "322-11-1 al.1 vise l’avant-acte. Si usage/tentative d’usage : on bascule sur l’infraction principale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément moral",
     question: "Pour 322-11-1 al.1, il faut démontrer :",
     options: [
@@ -2427,7 +2427,7 @@ final List<QuizQuestion> questionDDD = [
         "Le délit n’est retenu que si l’intention est établie (actes préparatoires).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Peines",
     question: "Peines principales 322-11-1 al.1 :",
     options: [
@@ -2439,7 +2439,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : 7 ans / 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Bande organisée",
     question: "La circonstance aggravante de 322-11-1 al.2 est :",
     options: ["La bande organisée", "L’écrit", "La réitération"],
@@ -2447,7 +2447,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.2 : faits commis en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Peines aggravées",
     question: "Peines 322-11-1 al.2 (bande organisée) :",
     options: [
@@ -2459,7 +2459,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : bande organisée → 10 ans / 500 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 al.1 est punissable.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : tentative = non.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 — Complicité",
     question: "La complicité de 322-11-1 est :",
     options: ["Punissable", "Non punissable", "Punissable seulement si ITT"],
@@ -2476,7 +2476,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Définition générale",
     question: "322-11-1 al.3 incrimine :",
     options: [
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.3 vise deux hypothèses (1° explosifs non soumis à régime particulier ; 2° produits incendiaires/éléments interdits par arrêté préfectoral).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Hypothèse 1° (piège)",
     question: "322-11-1 al.3 1° concerne :",
     options: [
@@ -2504,7 +2504,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours : vise notamment des produits de fabrication artisanale non soumis au régime des explosifs conventionnels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Hypothèse 2° (QCM piège)",
     question: "322-11-1 al.3 2° exige notamment :",
     options: [
@@ -2518,7 +2518,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours précise : pour ces produits “banals”, il faut les deux conditions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Motif légitime (piège concours)",
     question: "Le “motif légitime” permet surtout :",
     options: [
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : ex. contexte violences urbaines vs usage normal (bonne foi).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Peines",
     question: "Peines pour 322-11-1 al.3 (1° ou 2°) :",
     options: [
@@ -2544,7 +2544,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : al.3 = 3 ans / 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 al.3 est punissable.",
     options: ["Vrai", "Faux", "Seulement 2°"],
@@ -2553,7 +2553,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Peine de base (rappel)",
     question:
         "Peines principales 322-6 al.1 (destructions dangereuses, intentionnelles) :",
@@ -2566,7 +2566,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : qualification délit (base) = 10 ans / 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Élément intentionnel (ultra-piège)",
     question:
         "Selon le cours, l’emploi d’un moyen intrinsèquement dangereux (incendie/substance explosive) :",
@@ -2581,7 +2581,7 @@ final List<QuizQuestion> questionDDD = [
         "Référence du cours : toute personne est censée connaître l’efficacité/danger de ces moyens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Tentative",
     question: "La tentative de 322-6 est :",
     options: [
@@ -2594,7 +2594,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : l’article 322-11 prévoit la tentative punissable pour le délit de 322-6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Complicité",
     question: "La complicité de 322-6 (consommée ou tentée) est :",
     options: ["Oui", "Non", "Oui seulement si bande organisée"],
@@ -2603,7 +2603,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément matériel (piège)",
     question: "Pour 322-14, l’auteur doit :",
     options: [
@@ -2616,7 +2616,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le moyen est indifférent : écrit/oral/téléphone/radio, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 al.1 — Objet (QCM piège)",
     question: "322-14 al.1 suppose de faire croire :",
     options: [
@@ -2629,7 +2629,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.1 vise des faits “dangereux pour les personnes”.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 al.2 — Objet (piège)",
     question: "322-14 al.2 vise plutôt :",
     options: [
@@ -2643,7 +2643,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.2 : sinistre (accident, feu d’origine accidentelle, etc.) + intervention inutile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément moral",
     question: "L’élément moral de 322-14 implique :",
     options: [
@@ -2656,7 +2656,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Intention requise : l’auteur sait que c’est faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Tentative/Complicité",
     question: "Pour 322-14 :",
     options: [
@@ -2669,7 +2669,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Condition de matérialisation (piège concours)",
     question: "Une menace sans condition tombe sous 322-12 si elle est :",
     options: [
@@ -2683,7 +2683,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : verbal = réitération ; écrit/image/objet = une seule suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Objet (piège)",
     question:
         "322-12 vise des menaces de destructions/dégradations/détériorations :",
@@ -2697,7 +2697,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte du cours sur 322-12 : menace de faits dangereux pour les personnes, sans condition, réitérée ou matérialisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Tentative/Complicité",
     question: "Pour 322-12 :",
     options: [
@@ -2710,7 +2710,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Condition (définition)",
     question: "La “condition” au sens de 322-13 correspond à :",
     options: [
@@ -2724,7 +2724,7 @@ final List<QuizQuestion> questionDDD = [
         "Condition = atteinte à la liberté d’agir : contrainte sur le comportement de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Élément moral",
     question: "Pour 322-13, il est requis :",
     options: [
@@ -2738,7 +2738,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Dommage important (ultra-piège)",
     question: "Le caractère “important” du dommage (322-1 I) est :",
     options: [
@@ -2751,7 +2751,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : l’importance du résultat reste à l’appréciation du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Bien d’autrui (piège copropriété)",
     question:
         "Selon le cours, le propriétaire peut malgré tout relever de 322-1 I si :",
@@ -2766,7 +2766,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Circonstances aggravantes (rappel)",
     question:
         "Parmi les circonstances aggravantes (322-3), on retrouve notamment :",
@@ -2780,7 +2780,7 @@ final List<QuizQuestion> questionDDD = [
         "322-3 liste de nombreuses circonstances ; celle-ci en fait partie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-2 — Registre/minute/acte original",
     question:
         "322-2 concerne notamment la destruction/dégradation/détérioration :",
@@ -2795,7 +2795,7 @@ final List<QuizQuestion> questionDDD = [
         "Registres d’état civil, minutes notariales, originaux d’actes/constats/PV dressés par autorités habilitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Tags (tentative)",
     question: "La tentative de 322-1 II (tags) est :",
     options: [
@@ -2808,7 +2808,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : 322-4 prévoit la tentative punissable pour ces délits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Complicité",
     question: "La complicité pour 322-1 II (tags) est :",
     options: ["Oui", "Non", "Seulement par provocation"],
@@ -2817,7 +2817,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — 322-11-1 al.1 ou al.3 ?",
     question:
         "On constate plusieurs objets/produits, et des faits matériels montrant une préparation d’une infraction dangereuse. On vise plutôt :",
@@ -2827,7 +2827,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.1 = détention/transport + préparation caractérisée (faits matériels) + finalité (322-6 ou atteintes personnes).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — 322-11-1 al.3 2°",
     question:
         "Transport d’un produit incendiaire “banal” en violation d’un arrêté préfectoral, sans motif légitime :",
@@ -2837,7 +2837,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.3 2° : absence motif légitime + violation arrêté préfectoral.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — 322-6 vs 322-11-1",
     question:
         "Si l’usage d’un moyen dangereux est commencé (commencement d’exécution), on se rapproche plutôt de :",
@@ -2852,7 +2852,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (peines)",
     question:
         "Vrai/Faux : 322-11-1 al.2 est plus sévèrement puni que 322-11-1 al.1.",
@@ -2861,7 +2861,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.1 : 7 ans/100k ; al.2 : 10 ans/500k.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (tous les moyens)",
     question:
         "Vrai/Faux : en 322-6, le Code liste exhaustivement tous les moyens possibles.",
@@ -2871,7 +2871,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte vise aussi “tout autre moyen de nature à créer un danger” (formule large).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (articles)",
     question: "Associe : “fausses alertes” =",
     options: ["322-14", "322-12", "322-6-1"],
@@ -2880,7 +2880,7 @@ final List<QuizQuestion> questionDDD = [
         "322-14 : fausses informations (destruction dangereuse ou sinistre) entraînant croyance/intervention inutile.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (articles)",
     question: "Associe : “menaces avec condition” =",
     options: ["322-13", "322-12", "R.635-1"],
@@ -2888,7 +2888,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Menaces + ordre de remplir une condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (articles)",
     question: "Associe : “diffusion de procédés (engins de destruction)” =",
     options: ["322-6-1", "322-11-1", "322-3-1"],
@@ -2896,7 +2896,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Diffusion de procédés (sauf professionnels).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Définition",
     question: "322-6-1 al.1 CP réprime :",
     options: [
@@ -2910,7 +2910,7 @@ final List<QuizQuestion> questionDDD = [
         "322-6-1 : diffusion de procédés permettant la fabrication d’engins de destruction ; exclusion du cadre strictement professionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément matériel (piège)",
     question: "Pour 322-6-1, la diffusion suppose :",
     options: [
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionDDD = [
         "Tous moyens : courrier, tract, affiche, revue, vidéo, communications électroniques, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Public visé (ultra-piège)",
     question:
         "La diffusion à un correspondant déterminé (en privé) peut suffire à caractériser 322-6-1.",
@@ -2934,7 +2934,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours : destination à un particulier déterminé ou à un public non identifié (site) → possible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Exception (pro)",
     question:
         "L’infraction de 322-6-1 ne s’applique pas lorsque la diffusion intervient :",
@@ -2949,7 +2949,7 @@ final List<QuizQuestion> questionDDD = [
         "Le texte exclut la destination aux professionnels (cadre pro).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément moral (piège concours)",
     question: "Pour 322-6-1, l’auteur doit notamment :",
     options: [
@@ -2961,7 +2961,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Connaissance du risque + diffusion volontaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Aggravation",
     question: "La circonstance aggravante de 322-6-1 al.2 est :",
     options: [
@@ -2975,7 +2975,7 @@ final List<QuizQuestion> questionDDD = [
         "Al.2 : diffusion via réseau électronique vers public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines",
     question: "Peines 322-6-1 al.1 :",
     options: [
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : 3 ans / 45k (simple).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines aggravées",
     question: "Peines 322-6-1 al.2 :",
     options: [
@@ -2999,7 +2999,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Aggravation réseau électronique vers public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Tentative/Complicité",
     question: "Pour 322-6-1 :",
     options: [
@@ -3012,7 +3012,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Définition",
     question: "322-5 al.1 CP vise :",
     options: [
@@ -3026,7 +3026,7 @@ final List<QuizQuestion> questionDDD = [
         "Involontaire + explosion/incendie + obligation précise (loi/règlement) violée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Obligation (piège)",
     question: "Le “règlement” au sens du cours correspond :",
     options: [
@@ -3038,7 +3038,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours précise la notion de règlement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Source obligatoire",
     question: "Les magistrats doivent pouvoir :",
     options: [
@@ -3051,7 +3051,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours insiste : obligation précise imposée par loi/règlement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité (QCM piège)",
     question: "En matière de 322-5, le lien de causalité :",
     options: [
@@ -3064,7 +3064,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le cours admet une causalité non nécessairement immédiate.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité indirecte (ultra-piège)",
     question: "L’auteur “indirect” (121-3 al.4) est celui qui :",
     options: [
@@ -3078,7 +3078,7 @@ final List<QuizQuestion> questionDDD = [
         "Définition cours : auteur indirect = à l’origine de la situation dangereuse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peines (al.1)",
     question: "Peines 322-5 al.1 :",
     options: [
@@ -3091,7 +3091,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : al.1 (faute simple sur obligation précise) = 1 an / 15k.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Violation manifestement délibérée",
     question: "322-5 al.2 correspond à :",
     options: [
@@ -3104,7 +3104,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Al.2 : forme “aggravée” de l’élément moral.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peines (al.2)",
     question: "Peines 322-5 al.2 :",
     options: [
@@ -3116,7 +3116,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : al.2 = 2 ans / 30k.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Tentative/Complicité (piège)",
     question: "Pour 322-5 :",
     options: [
@@ -3129,7 +3129,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Moyen employé (piège)",
     question: "322-1 I (dommage important) vise tous moyens, sauf :",
     options: [
@@ -3143,7 +3143,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : 322-1 I n’englobe pas l’incendie / explosifs (régimes spécifiques).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Élément moral",
     question: "L’élément moral de 322-1 I est :",
     options: [
@@ -3155,7 +3155,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Pas besoin de dol spécial ; mobile indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Qualification",
     question: "R.635-1 CP correspond à :",
     options: [
@@ -3168,7 +3168,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Dommage léger → contravention 5e classe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Intention (piège)",
     question: "Contrairement à beaucoup de contraventions, R.635-1 exige :",
     options: [
@@ -3180,7 +3180,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Le texte requiert le caractère “volontaire”.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Peine",
     question: "Peine principale R.635-1 :",
     options: ["1 500 € d’amende", "3 750 € d’amende", "30 000 € d’amende"],
@@ -3188,7 +3188,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Contravention 5e classe : 1 500 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Tentative/Complicité",
     question: "Pour R.635-1 :",
     options: [
@@ -3201,7 +3201,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Définition",
     question: "322-3-1 CP protège :",
     options: [
@@ -3215,7 +3215,7 @@ final List<QuizQuestion> questionDDD = [
         "Liste large : patrimoine protégé, y compris dépôt temporaire, musées/bibliothèques/archives, édifices du culte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Bien d’autrui ? (ultra-piège)",
     question:
         "Pour 322-3-1, l’infraction peut être constituée même si l’auteur est propriétaire du bien.",
@@ -3225,7 +3225,7 @@ final List<QuizQuestion> questionDDD = [
         "Le cours : constitué même si l’auteur est propriétaire (intérêt collectif).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Dommage léger/important",
     question: "Sous 322-3-1, le dommage peut être :",
     options: [
@@ -3237,7 +3237,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Il suffit que le bien soit dans la catégorie protégée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peines",
     question: "Peines (simple) 322-3-1 :",
     options: [
@@ -3249,7 +3249,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : 7 ans / 100k ou 1/2 valeur du bien.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Aggravation",
     question: "L’aggravation (322-3-1 al.6) correspond :",
     options: [
@@ -3263,7 +3263,7 @@ final List<QuizQuestion> questionDDD = [
         "Renvoi : aggravation si plusieurs personnes agissant auteur/complice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peines aggravées",
     question: "Peines aggravées 322-3-1 :",
     options: [
@@ -3275,7 +3275,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Cours : aggravé = 10 ans / 150k ou 1/2 valeur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Tentative/Complicité",
     question: "Pour 322-3-1 :",
     options: [
@@ -3289,7 +3289,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Choix de texte",
     question:
         "Un incendie involontaire (manquement à une obligation précise) qui met des personnes en danger relève plutôt de :",
@@ -3299,7 +3299,7 @@ final List<QuizQuestion> questionDDD = [
         "Involontaire + incendie/explosion + obligation prudence/sécurité = 322-5.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Choix de texte",
     question:
         "Une destruction volontaire par incendie, créant un danger pour les personnes, relève plutôt de :",
@@ -3308,7 +3308,7 @@ final List<QuizQuestion> questionDDD = [
     explanation: "Incendie/explosif + danger personnes + intentionnel = 322-6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — 322-14 vs 322-12",
     question:
         "Annoncer faussement une bombe pour déclencher une évacuation correspond le mieux à :",
@@ -3318,7 +3318,7 @@ final List<QuizQuestion> questionDDD = [
         "Fausse information faisant croire à une destruction dangereuse (ou sinistre) = fausse alerte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — 322-12 vs 322-13",
     question: "“Si tu ne paies pas, je détruis ta voiture” correspond à :",
     options: ["322-13 (avec condition)", "322-12 (sans condition)", "322-14"],
@@ -3328,7 +3328,7 @@ final List<QuizQuestion> questionDDD = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (322-3-1)",
     question: "Vrai/Faux : pour 322-3-1, le dommage doit être important.",
     options: ["Vrai", "Faux", "Vrai si édifice du culte"],
@@ -3337,7 +3337,7 @@ final List<QuizQuestion> questionDDD = [
         "Dommage léger ou important : indifférent dès lors que le bien est protégé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (322-6-1)",
     question:
         "Vrai/Faux : 322-6-1 exige que l’engin ait effectivement été fabriqué ou utilisé.",
@@ -3347,7 +3347,7 @@ final List<QuizQuestion> questionDDD = [
         "L’infraction porte sur la diffusion du procédé (en amont), pas sur l’usage effectif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (tentative)",
     question: "La tentative est punissable pour :",
     options: ["322-6", "322-14", "322-13"],
@@ -3356,7 +3356,7 @@ final List<QuizQuestion> questionDDD = [
         "Cours : tentative punissable pour 322-6 (322-11). 322-14 et 322-13 : tentative non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (complicité)",
     question: "La complicité n’est PAS retenue (selon le cours) pour :",
     options: ["322-5", "322-14", "322-12"],
@@ -3716,7 +3716,7 @@ class _QuizDDDState extends State<QuizDDD> with TickerProviderStateMixin {
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3919,7 +3919,7 @@ class _QuizDDDState extends State<QuizDDD> with TickerProviderStateMixin {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4102,7 +4102,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4635,10 +4634,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5009,7 +5009,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5050,9 +5050,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

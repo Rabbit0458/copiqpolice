@@ -100,7 +100,7 @@ final List<QuizQuestion> questionsTentative = [
   // =========================
 
   // — ÉLÉMENT LÉGAL (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Facile',
     question: 'Quel article du Code pénal définit la tentative punissable ?',
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'L’article 121-5 définit la tentative comme le fait de commencer l’exécution d’un crime ou d’un délit et de ne pas la mener à son terme pour une cause indépendante de la volonté de l’auteur.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Facile',
     question:
@@ -127,7 +127,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La tentative est toujours punissable pour les crimes et punissable pour les délits uniquement si un texte l’énonce. Elle n’est pas applicable aux contraventions.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Facile',
     question:
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — ÉLÉMENT MATÉRIEL (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     difficulty: 'Facile',
     question:
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Le commencement d’exécution suppose un acte qui manifeste la volonté de commettre l’infraction et qui tend directement à sa consommation.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     difficulty: 'Facile',
     question:
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — ÉLÉMENT MORAL (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     difficulty: 'Facile',
     question:
@@ -188,7 +188,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La tentative est punissable si l’échec provient d’une cause extérieure indépendante de la volonté de l’auteur. S’il renonce librement avant la consommation, il s’agit d’un désistement volontaire, non réprimé.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     difficulty: 'Facile',
     question: 'Le désistement volontaire intervient lorsque l’auteur…',
@@ -203,7 +203,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — TYPOLOGIE (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Facile',
     question:
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La tentative manquée correspond à une exécution complète dont le résultat n’advient pas (ex. tir qui manque la victime).',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Facile',
     question:
@@ -233,7 +233,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — JURISPRUDENCE (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     difficulty: 'Facile',
     question: 'Quel arrêt admet la tentative impossible comme punissable ?',
@@ -246,7 +246,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Perdereau admet la tentative d’homicide sur une personne déjà décédée : impossibilité de fait ou de droit n’exclut pas la tentative.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     difficulty: 'Facile',
     question:
@@ -262,7 +262,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — RÉPRESSION (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     difficulty: 'Facile',
     question: 'Principe de peine applicable à la tentative pour les crimes :',
@@ -275,7 +275,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Principe d’équivalence : la tentative est punie comme l’infraction consommée pour les crimes.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     difficulty: 'Facile',
     question:
@@ -291,7 +291,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — CAS PRATIQUES (Facile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Facile',
     question:
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Le repérage et l’achat du matériel restent préparatoires : pas d’acte tendant directement et immédiatement au vol.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Facile',
     question:
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La déclaration d’intention sans acte d’exécution ne fonde aucune tentative.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Facile',
     question:
@@ -329,7 +329,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Renoncement spontané avant la consommation : la tentative n’est pas punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Facile',
     question:
@@ -349,7 +349,7 @@ final List<QuizQuestion> questionsTentative = [
   // =========================
 
   // — ÉLÉMENT LÉGAL (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Moyenne',
     question:
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Le droit contraventionnel vise la matérialité des faits consommés ; la tentative n’y est pas réprimée.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Moyenne',
     question: 'La tentative est-elle punissable pour tous les délits ?',
@@ -375,7 +375,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — ÉLÉMENT MATÉRIEL (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     difficulty: 'Moyenne',
     question:
@@ -389,7 +389,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La seule présence sur les lieux avec un moyen ne suffit pas si aucun acte direct vers la consommation n’est commencé.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     difficulty: 'Moyenne',
     question: 'Le critère subjectif du commencement d’exécution renvoie à…',
@@ -404,7 +404,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — ÉLÉMENT MORAL (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     difficulty: 'Moyenne',
     question:
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Le repentir actif intervient après la consommation ; il n’efface pas la responsabilité pénale sauf texte spécial.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     difficulty: 'Moyenne',
     question:
@@ -426,7 +426,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — TYPOLOGIE (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Moyenne',
     question:
@@ -440,7 +440,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Exécution complète, résultat non atteint pour une cause indépendante : tentative manquée.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Moyenne',
     question:
@@ -454,7 +454,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Cause extérieure ayant stoppé l’exécution commencée : tentative punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Moyenne',
     question:
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — JURISPRUDENCE (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     difficulty: 'Moyenne',
     question:
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La Cour de cassation articule un acte matériel direct et une intention clairement révélée.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     difficulty: 'Moyenne',
     question: 'Perdereau (1986) concerne principalement…',
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — RÉPRESSION (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     difficulty: 'Moyenne',
     question: 'Pour les délits, la tentative est punissable…',
@@ -509,7 +509,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La loi doit viser explicitement la tentative pour les délits.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     difficulty: 'Moyenne',
     question:
@@ -521,7 +521,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — CAS PRATIQUES (Moyenne)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Moyenne',
     question:
@@ -535,7 +535,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Moyen inapte mais acte direct et intention homicide : tentative punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Moyenne',
     question:
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La peur causée par un fait extérieur ôte le caractère volontaire de l’arrêt.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Moyenne',
     question:
@@ -562,7 +562,7 @@ final List<QuizQuestion> questionsTentative = [
     answer: 'Tentative interrompue punissable',
     explanation: 'L’intrusion d’un tiers interrompt l’exécution commencée.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Moyenne',
     question:
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Aucun acte direct et immédiat vers la victime : la préparation reste non punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Moyenne',
     question:
@@ -596,7 +596,7 @@ final List<QuizQuestion> questionsTentative = [
   // =========================
 
   // — ÉLÉMENT LÉGAL (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Difficile',
     question:
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La tentative suppose une intention coupable, ce qui est incompatible avec les infractions purement non intentionnelles.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément légal',
     difficulty: 'Difficile',
     question:
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — ÉLÉMENT MATÉRIEL (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     difficulty: 'Difficile',
     question:
@@ -636,7 +636,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Moyen inapte mais acte direct et intention criminelle caractérisée.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément matériel',
     difficulty: 'Difficile',
     question:
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — ÉLÉMENT MORAL (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     difficulty: 'Difficile',
     question:
@@ -658,7 +658,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La crainte d’un dispositif extérieur—even fictif mais perçu comme réel—ôte le caractère volontaire du renoncement.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Élément moral',
     difficulty: 'Difficile',
     question:
@@ -670,7 +670,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — TYPOLOGIE (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Difficile',
     question:
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Moyen inapte mais intention homicide et acte direct : punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Typologie',
     difficulty: 'Difficile',
     question:
@@ -700,7 +700,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — JURISPRUDENCE (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     difficulty: 'Difficile',
     question:
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'La Cour retient que l’impossibilité n’efface ni l’intention ni l’acte direct vers la consommation.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Jurisprudence',
     difficulty: 'Difficile',
     question:
@@ -732,7 +732,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — RÉPRESSION (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     difficulty: 'Difficile',
     question:
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'L’article 132-1 autorise une modulation, même si le principe d’équivalence demeure.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Répression',
     difficulty: 'Difficile',
     question:
@@ -758,7 +758,7 @@ final List<QuizQuestion> questionsTentative = [
   ),
 
   // — CAS PRATIQUES (Difficile)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -772,7 +772,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Application de Perdereau : impossibilité de droit ou de fait n’exclut pas la tentative.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -786,7 +786,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'L’acte d’administration est réalisé ; le résultat n’advient pas pour une cause indépendante (dose insuffisante).',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -800,7 +800,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Cause extérieure (protection informatique) stoppant l’exécution commencée : tentative punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Exécution complète, résultat non atteint pour une circonstance indépendante (ricochet).',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'L’exécution est achevée mais le résultat ne se produit pas en raison d’un dysfonctionnement.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -834,7 +834,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Acte d’exécution accompli ; le résultat n’advient pas pour une cause indépendante (mèche éteinte).',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -848,7 +848,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'L’acte direct vers l’obtention frauduleuse est accompli ; échec pour cause indépendante (absence de provision).',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -862,7 +862,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Intervention extérieure stoppant un acte déjà commencé : tentative punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -876,7 +876,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'L’acte est accompli ; le résultat échoue pour une cause technique indépendante.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -890,7 +890,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Acte direct vers la soustraction sous menace ; intervention extérieure : tentative punissable.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -904,7 +904,7 @@ final List<QuizQuestion> questionsTentative = [
     explanation:
         'Moyen inapte mais acte direct d’administration et intention homicide.',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique',
     difficulty: 'Difficile',
     question:
@@ -924,7 +924,7 @@ final List<QuizQuestion> questionsTentative = [
 // PAGE
 // ============================================================================
 class QuizTentativePage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/tentative';
+  static const String routeName = '/gpx/dps/generalites/quiz/tentative';
   final String uid;
   final String email;
 
@@ -1251,7 +1251,7 @@ class _QuizTentativePageState extends State<QuizTentativePage>
         // hauteur “structurelle” du bas (bouton + marges)
         const double kButtonHeight = 56;
         const double kButtonVPad = 16; // safe area min bottom padding = 16
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1453,7 +1453,7 @@ class _QuizTentativePageState extends State<QuizTentativePage>
       barrierDismissible: true,
       barrierLabel: 'Résultat',
       // On garde un léger assombrissement, le flou sera appliqué par-dessus.
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1607,7 +1607,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2135,10 +2134,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2509,7 +2509,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2550,9 +2550,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionProbite = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Définition",
     question: "La concussion consiste notamment à :",
     options: [
@@ -104,7 +104,7 @@ final List<QuizQuestion> questionProbite = [
         "La concussion porte sur des droits, contributions, impôts ou taxes publics indus.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : la concussion est prévue par l’article 432-10 du Code pénal.",
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionProbite = [
         "La concussion est prévue et réprimée par l’article 432-10 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "La concussion consiste notamment à :",
     options: [
@@ -128,7 +128,7 @@ final List<QuizQuestion> questionProbite = [
         "La concussion porte sur une perception indue à titre de droits/contributions/impôts/taxes publics.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Auteur possible de concussion :",
     options: [
@@ -142,7 +142,7 @@ final List<QuizQuestion> questionProbite = [
         "Le texte vise un auteur particulier : dépositaire de l’autorité publique ou mission de service public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Les moyens utilisés pour percevoir la somme indue :",
     options: [
@@ -155,7 +155,7 @@ final List<QuizQuestion> questionProbite = [
         "Ce qui compte est l’illégalité de la perception, pas le moyen employé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "La « somme » peut être :",
     options: [
@@ -168,7 +168,7 @@ final List<QuizQuestion> questionProbite = [
         "La notion de somme est large et peut inclure des prestations en nature.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : la somme peut être partiellement indue (excéder ce qui est dû).",
@@ -178,7 +178,7 @@ final List<QuizQuestion> questionProbite = [
         "La somme est indue si non prévue ou si elle excède ce qui est dû.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "La concussion peut aussi consister à :",
     options: [
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "L’alinéa 2 vise l’exonération/franchise illégale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Élément moral de la concussion :",
     options: [
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionProbite = [
         "Les mobiles sont indifférents ; la conscience du caractère indu est centrale.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : une erreur de fait/droit peut faire disparaître l’intention.",
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionProbite = [
         "Si la perception résulte d’une erreur ou d’une mauvaise interprétation, l’intention peut manquer.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Peines principales de la concussion (432-10) :",
     options: [
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionProbite = [
         "432-10 : 5 ans + 500 000 € (pouvant être porté au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question:
         "Vrai/Faux : la concussion prévoit des circonstances aggravantes spécifiques.",
@@ -237,7 +237,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : AUCUNE circonstance aggravante.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-10",
     question: "Vrai/Faux : la tentative de concussion est punissable.",
     options: ["Vrai", "Faux", "Uniquement pour l’alinéa 2"],
@@ -245,7 +245,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La tentative est prévue par l’alinéa 3 de l’article 432-10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "La concussion se caractérise surtout par :",
     options: [
@@ -258,7 +258,7 @@ final List<QuizQuestion> questionProbite = [
         "On compare ce qui est perçu/réclamé à ce que les textes autorisent.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Un régisseur exige 20€ alors que le tarif légal est 10€. Qualification :",
@@ -272,7 +272,7 @@ final List<QuizQuestion> questionProbite = [
         "Somme excédant ce qui est dû = perception indue (concussion).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Concussion : l’infraction peut être constituée si la somme indue est :",
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le texte vise recevoir, exiger OU ordonner de percevoir.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Si un supérieur ordonne une perception indue et le subordonné exécute sciemment :",
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption passive est réprimée par :",
     options: ["Article 432-11 CP", "Article 432-10 CP", "Article 441-1 CP"],
@@ -304,7 +304,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Corruption passive : article 432-11 al.1 et 2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption passive consiste à :",
     options: [
@@ -318,7 +318,7 @@ final List<QuizQuestion> questionProbite = [
         "Pacte de corruption : avantage ↔ acte/abstention/acte facilité par la fonction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption est dite « passive » lorsque l’auteur est :",
     options: [
@@ -332,7 +332,7 @@ final List<QuizQuestion> questionProbite = [
         "La qualification active/passive dépend de la qualité de l’auteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "La corruption passive peut être constituée :",
     options: [
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le pacte suffit : suivi d’exécution indifférent.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "« À tout moment » signifie que l’accord peut être :",
     options: ["Avant ou après l’acte", "Uniquement avant", "Uniquement après"],
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Gratification postérieure possible (remerciement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "L’avantage en corruption passive peut être :",
     options: [
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Interprétation large des avantages.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "L’avantage peut bénéficier :",
     options: [
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le texte vise « pour elle-même ou pour autrui ».",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Élément moral de la corruption passive :",
     options: [
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionProbite = [
         "Il faut que l’agent sache la contrepartie et agisse sciemment.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Circonstance aggravante prévue :",
     options: ["Bande organisée", "Réunion", "Arme"],
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Peines corruption passive simple :",
     options: [
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 : 10 ans + 1 000 000 € (double du produit possible).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Peines corruption passive aggravée (bande organisée) :",
     options: [
@@ -422,7 +422,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 al.4 : 10 ans + 2 000 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11",
     question: "Vrai/Faux : tentative de corruption passive punissable.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -430,7 +430,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un policier accepte de l’argent pour ne pas dresser PV. Qualification :",
@@ -443,7 +443,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Avantage contre abstention d’un acte de la fonction.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un agent reçoit un cadeau après l’acte, sans demande explicite, mais en le sachant contrepartie. Qualification :",
@@ -456,7 +456,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Pacte possible postérieurement ; « à tout moment ». ",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption vs Concussion",
     question:
         "Un agent exige un « supplément » non prévu par la loi pour une formalité. Qualification prioritaire :",
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Le trafic d’influence (agent public) est défini/réprimé par :",
     options: [
@@ -479,7 +479,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Trafic d’influence : 432-11 alinéa 3 CP (selon ta fiche).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Trafic d’influence : l’influence peut être :",
     options: ["Réelle ou supposée", "Uniquement réelle", "Uniquement supposée"],
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "L’influence peut être réelle ou supposée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Le trafic d’influence vise l’obtention de :",
     options: [
@@ -500,7 +500,7 @@ final List<QuizQuestion> questionProbite = [
         "L’auteur abuse de son influence pour faire obtenir une décision favorable d’une autorité/administration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Élément moral du trafic d’influence :",
     options: [
@@ -514,7 +514,7 @@ final List<QuizQuestion> questionProbite = [
         "Il faut que l’agent sache la contrepartie et agisse sciemment.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Peines trafic d’influence simple :",
     options: [
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionProbite = [
         "Trafic d’influence : mêmes peines que la corruption passive simple (fiche).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Aggravation trafic d’influence :",
     options: ["Bande organisée", "Réunion", "Arme"],
@@ -536,7 +536,7 @@ final List<QuizQuestion> questionProbite = [
         "432-11 al.4 : aggravation en bande organisée (aussi pour trafic d’influence).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — 432-11 al.3",
     question: "Vrai/Faux : tentative de trafic d’influence punissable.",
     options: ["Vrai", "Faux", "Seulement si influence réelle"],
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question:
         "Un élu est payé pour « appeler quelqu’un » afin d’obtenir un poste. Qualification :",
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionProbite = [
         "Abus d’influence réelle/supposée en vue de faire obtenir un emploi (contre avantage).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question: "En trafic d’influence, la décision obtenue peut être :",
     options: [
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionProbite = [
         "Même régulière : ce sont les moyens d’influence irréguliers qui constituent l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question:
         "Vrai/Faux : trafic d’influence = pacte d’avantage pour accomplir un acte de la fonction.",
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent public propose : « Donne-moi 200€ et je ne verbalise pas ». Qualification la plus juste :",
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre abstention d’un acte de la fonction : corruption passive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent exige 50€ « frais obligatoires » inventés pour délivrer un document. Qualification :",
@@ -598,7 +598,7 @@ final List<QuizQuestion> questionProbite = [
         "Perception indue à titre de droits/taxes publics (même si appelée « frais »).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent est payé pour intervenir auprès d’une autre administration afin d’obtenir une décision favorable. Qualification :",
@@ -608,7 +608,7 @@ final List<QuizQuestion> questionProbite = [
         "Monnayer une influence auprès d’une autorité/administration publique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Distinction (ultra-piège)",
     question:
         "Un agent public accepte un cadeau pour transmettre des infos obtenues grâce à l’accès aux dossiers. Qualification :",
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre acte facilité par la fonction (accès aux infos).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Distinction",
     question:
         "Le critère le plus discriminant entre concussion et corruption est :",
@@ -637,7 +637,7 @@ final List<QuizQuestion> questionProbite = [
         "Concussion : sommes publiques indûment réclamées/reçues. Corruption : pacte d’avantage en échange d’un acte/abstention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Distinction",
     question:
         "Le trafic d’influence se distingue surtout de la corruption car il vise :",
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionProbite = [
         "Trafic d’influence = monnayer l’influence réelle/supposée pour obtenir distinctions/emplois/marchés/décisions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Élément matériel",
     question: "La perception indue peut être :",
     options: [
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionProbite = [
         "Indue si non prévue par texte, ou si excédant ce qui est dû (partiellement indue).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Notion de droits",
     question: "La jurisprudence inclut dans les « droits » visés par 432-10 :",
     options: [
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionProbite = [
         "La notion de « droits » est interprétée largement par la jurisprudence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Prestation fictive",
     question:
         "Percevoir une rémunération pour une fonction non exercée (prestation fictive) peut relever de :",
@@ -688,7 +688,7 @@ final List<QuizQuestion> questionProbite = [
         "La jurisprudence retient souvent la concussion lorsque des prestations payées dépassent la réalité de celles tarifées/exercées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Comparaison aux textes",
     question: "Pour prouver la concussion, on doit montrer que la somme :",
     options: [
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionProbite = [
         "Le caractère illicite résulte de l’absence de base légale/réglementaire ou du dépassement du dû.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Exonération",
     question: "Accorder une exonération illégale correspond à une concussion :",
     options: [
@@ -715,7 +715,7 @@ final List<QuizQuestion> questionProbite = [
         "Le texte vise aussi l’exonération/franchise illégale (forme quelconque, motif quelconque).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Vrai/Faux",
     question:
         "Vrai/Faux : la concussion exige que l’auteur s’enrichisse personnellement.",
@@ -725,7 +725,7 @@ final List<QuizQuestion> questionProbite = [
         "L’infraction vise la perception illégale ; l’enrichissement n’est pas un élément constitutif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Vrai/Faux",
     question:
         "Vrai/Faux : la concussion peut être constituée sans violence ni menace.",
@@ -735,7 +735,7 @@ final List<QuizQuestion> questionProbite = [
         "Le moyen importe peu : pas besoin d’abus d’autorité, menaces ou manœuvres.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Tentative",
     question: "La tentative de concussion est :",
     options: [
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La tentative est prévue par l’alinéa 3 de l’article 432-10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question:
         "Un agent « invente » un tarif et le fait payer à l’usager, en prétendant que c’est obligatoire. On retient :",
@@ -757,7 +757,7 @@ final List<QuizQuestion> questionProbite = [
         "Perception indue à titre de droits/contributions/taxes (même appelée « frais »).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "Une somme « indue » peut être :",
     options: [
@@ -769,7 +769,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le texte vise non due ou excédant ce qui est dû.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "Le délit de concussion peut exister même si l’auteur :",
     options: [
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Définition",
     question: "La corruption passive est constituée si l’agent public :",
     options: [
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionProbite = [
         "Pacte avantage ↔ acte/abstention/acte facilité (article 432-11).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Sollicitation/Agrément",
     question: "La différence entre sollicitation et agrément est :",
     options: [
@@ -811,7 +811,7 @@ final List<QuizQuestion> questionProbite = [
         "La sollicitation est une démarche de l’agent ; l’agrément est l’accord donné à la proposition.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Direct/Indirect",
     question: "La corruption « indirecte » correspond à :",
     options: [
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionProbite = [
         "La sollicitation/acceptation peut transiter via un intermédiaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — À tout moment",
     question: "En corruption passive, l’accord peut intervenir après l’acte :",
     options: ["Oui", "Non", "Uniquement si acte illégal"],
@@ -833,7 +833,7 @@ final List<QuizQuestion> questionProbite = [
         "Le texte précise « à tout moment » : pacte possible postérieurement à l’acte (remerciement).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Acte facilité",
     question: "L’« acte facilité par la fonction » vise :",
     options: [
@@ -847,7 +847,7 @@ final List<QuizQuestion> questionProbite = [
         "Ex : monnayer des informations surprises grâce aux facilités de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Élément moral",
     question: "Pour l’élément moral, on recherche :",
     options: [
@@ -861,7 +861,7 @@ final List<QuizQuestion> questionProbite = [
         "Devoir de probité + volonté d’obtenir avantage ; le mobile importe peu.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Vrai/Faux",
     question:
         "Vrai/Faux : la corruption passive exige un écrit ou un pacte formalisé.",
@@ -871,7 +871,7 @@ final List<QuizQuestion> questionProbite = [
         "L’accord de volontés peut être tacite ; aucun écrit n’est exigé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Vrai/Faux",
     question:
         "Vrai/Faux : l’avantage peut être une promesse non encore exécutée.",
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le texte vise aussi les offres et promesses.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Aggravation",
     question: "La corruption passive est aggravée lorsqu’elle est commise :",
     options: ["En bande organisée", "En réunion", "Avec arme"],
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Article 432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Peines",
     question: "Peines corruption passive simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "3 ans + 45 000 €"],
@@ -897,7 +897,7 @@ final List<QuizQuestion> questionProbite = [
         "Article 432-11 : 10 ans et 1 000 000 € (double du produit possible).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Peines",
     question: "Peines corruption passive aggravée (bande organisée) :",
     options: [
@@ -910,7 +910,7 @@ final List<QuizQuestion> questionProbite = [
         "Article 432-11 al.4 : 10 ans et 2 000 000 € (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Tentative",
     question: "Vrai/Faux : la tentative de corruption passive est punissable.",
     options: ["Vrai", "Faux", "Uniquement en bande organisée"],
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : tentative non punissable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un agent public accepte un voyage en échange d’une abstention de contrôle. Qualification :",
@@ -928,7 +928,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage (voyage) contre abstention d’un acte de la fonction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question:
         "Un agent reçoit un cadeau « de remerciement » après un acte accompli, et il savait que ce cadeau était la contrepartie. Qualification :",
@@ -941,7 +941,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le pacte peut être postérieur (« à tout moment »).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption vs Trafic",
     question:
         "Un agent est payé pour « intervenir auprès » d’une autre administration afin d’obtenir une décision favorable. Qualification typique :",
@@ -952,7 +952,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Définition",
     question: "Le trafic d’influence (agent public) consiste à :",
     options: [
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionProbite = [
         "Trafic d’influence : avantage ↔ abus d’influence réelle/supposée pour obtenir une décision favorable.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Influence",
     question: "L’influence en trafic d’influence peut être :",
     options: ["Réelle ou supposée", "Uniquement réelle", "Uniquement supposée"],
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le texte vise l’influence réelle ou supposée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Destinataire",
     question: "L’influence doit viser :",
     options: [
@@ -988,7 +988,7 @@ final List<QuizQuestion> questionProbite = [
         "Le destinataire à influencer doit disposer d’un pouvoir de décision (autorité/administration).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Objet",
     question: "Le trafic d’influence vise l’obtention de :",
     options: [
@@ -1001,7 +1001,7 @@ final List<QuizQuestion> questionProbite = [
         "Cœur de l’infraction : obtenir une décision favorable d’une autorité/administration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Décision régulière",
     question:
         "Vrai/Faux : la décision recherchée doit être illégale pour retenir le trafic d’influence.",
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionProbite = [
         "Même une décision régulière peut être visée : ce sont les moyens d’influence achetée qui sont illégaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Acte exercé",
     question:
         "Vrai/Faux : le trafic d’influence exige que l’influence soit effectivement exercée et réussisse.",
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionProbite = [
         "Peu importe que l’influence ne soit finalement pas exercée ou qu’elle soit vaine.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Peines",
     question: "Peines trafic d’influence simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "3 ans + 45 000 €"],
@@ -1030,7 +1030,7 @@ final List<QuizQuestion> questionProbite = [
         "Trafic d’influence (agent public) : mêmes peines que corruption passive simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Aggravation",
     question: "Trafic d’influence aggravé si commis :",
     options: ["En bande organisée", "En réunion", "Avec arme"],
@@ -1038,7 +1038,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Article 432-11 al.4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Tentative",
     question: "Vrai/Faux : la tentative de trafic d’influence est punissable.",
     options: ["Vrai", "Faux", "Uniquement si influence réelle"],
@@ -1046,7 +1046,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche : TENTATIVE NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question:
         "Un élu est payé pour « faire obtenir » un marché public via ses relations. Qualification :",
@@ -1057,7 +1057,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent public accepte 500€ pour transmettre un renseignement non public obtenu grâce à l’accès aux dossiers. Qualification + article ?",
@@ -1071,7 +1071,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre un acte facilité par la fonction (accès aux dossiers).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent invente un « droit obligatoire » et encaisse 30€ pour un document. Qualification + article ?",
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionProbite = [
         "Perception indue à titre de droits/taxes publics. Peines: 5 ans + 500 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un élu accepte un cadeau pour user de son influence afin d’obtenir une nomination. Qualification + article ?",
@@ -1099,7 +1099,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre abus d’influence (réelle ou supposée) pour obtenir un emploi/décision.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Peine",
     question:
         "Une corruption passive aggravée est retenue : peine principale (selon fiche) ?",
@@ -1113,7 +1113,7 @@ final List<QuizQuestion> questionProbite = [
         "Bande organisée : 10 ans d’emprisonnement + 2 000 000 € d’amende (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Pour retenir la concussion, la somme doit être réclamée/reçue à titre de :",
@@ -1127,7 +1127,7 @@ final List<QuizQuestion> questionProbite = [
         "La concussion vise la perception indue à titre de prélèvements publics (au sens large).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question: "La concussion est constituée si la perception :",
     options: [
@@ -1140,7 +1140,7 @@ final List<QuizQuestion> questionProbite = [
         "Le caractère indu se prouve par comparaison avec les textes applicables.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Un agent public se fait remettre gratuitement un bien/service par un usager en prétendant que c’est « obligatoire ». Qualification la plus proche :",
@@ -1150,7 +1150,7 @@ final List<QuizQuestion> questionProbite = [
         "La notion de somme peut inclure des prestations en nature si assimilables à une perception indue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Vrai/Faux : la concussion nécessite que la victime soit déterminée nominativement.",
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionProbite = [
         "L’infraction porte sur la perception indue ; la détermination nominative n’est pas une condition constitutive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "La concussion peut être retenue lorsque la somme est versée sur :",
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionProbite = [
         "La jurisprudence retient la concussion même si les fonds sont orientés vers un compte occulte d’un établissement public.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "En matière de concussion, ce qui est sanctionné en priorité est :",
@@ -1188,7 +1188,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Pas besoin de menaces/manœuvres : le moyen importe peu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion (exonération)",
     question:
         "Accorder illégalement une exonération d’un impôt/taxe public constitue :",
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionProbite = [
         "L’article 432-10 vise aussi l’exonération/franchise illégale (alinéa 2).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Concussion",
     question:
         "Vrai/Faux : l’intention est exclue si la perception indue résulte d’une erreur de fait.",
@@ -1212,7 +1212,7 @@ final List<QuizQuestion> questionProbite = [
         "La fiche précise que l’intention peut disparaître en cas d’erreur ou de mauvaise interprétation d’un texte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-10",
     question: "Peine principale 432-10 :",
     options: ["5 ans + 500 000 €", "10 ans + 1 000 000 €", "2 ans + 30 000 €"],
@@ -1221,7 +1221,7 @@ final List<QuizQuestion> questionProbite = [
         "Concussion : 5 ans et 500 000 € (amende possible au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-10",
     question:
         "Vrai/Faux : la concussion a des circonstances aggravantes prévues par le texte.",
@@ -1231,7 +1231,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "En corruption passive, l’avantage doit être :",
     options: [
@@ -1244,7 +1244,7 @@ final List<QuizQuestion> questionProbite = [
         "Le texte vise « solliciter/agréer sans droit » des avantages.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "La corruption passive est constituée même si l’agent public :",
     options: [
@@ -1256,7 +1256,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le pacte suffit ; l’exécution est indifférente.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question:
         "Un cadeau « de remerciement » après l’acte peut être de la corruption passive car :",
@@ -1270,7 +1270,7 @@ final List<QuizQuestion> questionProbite = [
         "La fiche insiste sur le caractère « à tout moment » (pacte possible après l’acte).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "L’« acte de la fonction » comprend aussi :",
     options: [
@@ -1283,7 +1283,7 @@ final List<QuizQuestion> questionProbite = [
         "Les actes de la fonction ne se limitent pas aux textes : ils incluent la discipline de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "« Acte facilité par la fonction » =",
     options: [
@@ -1297,7 +1297,7 @@ final List<QuizQuestion> questionProbite = [
         "Ex : consulter des dossiers non accessibles et monnayer des renseignements.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11",
     question: "Peine corruption passive simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "3 ans + 45 000 €"],
@@ -1305,7 +1305,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 : 10 ans et 1 000 000 € (double du produit possible).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11",
     question: "Aggravation principale :",
     options: ["Bande organisée", "Réunion", "Arme"],
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11",
     question: "Vrai/Faux : tentative corruption passive punissable.",
     options: ["Vrai", "Faux", "Uniquement si bande organisée"],
@@ -1321,7 +1321,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : tentative NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Corruption passive",
     question: "L’avantage en corruption passive peut profiter :",
     options: [
@@ -1334,7 +1334,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Trafic d’influence",
     question: "Le trafic d’influence porte sur :",
     options: [
@@ -1347,7 +1347,7 @@ final List<QuizQuestion> questionProbite = [
         "Trafic d’influence : monnayer une influence, pas percevoir une taxe (concussion) ni acte de la fonction (corruption).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Trafic d’influence",
     question: "La décision favorable recherchée peut être :",
     options: [
@@ -1360,7 +1360,7 @@ final List<QuizQuestion> questionProbite = [
         "L’irrégularité réside dans les moyens (influence achetée), pas forcément dans la décision.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Trafic d’influence",
     question: "Le trafic d’influence vise notamment :",
     options: [
@@ -1373,7 +1373,7 @@ final List<QuizQuestion> questionProbite = [
         "Objet du trafic : obtenir une décision favorable d’une autorité/administration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — 432-11 al.3",
     question: "Peine trafic d’influence simple :",
     options: ["10 ans + 1 000 000 €", "5 ans + 500 000 €", "2 ans + 30 000 €"],
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionProbite = [
         "La fiche donne les mêmes peines que corruption passive simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Trafic",
     question: "Vrai/Faux : tentative trafic d’influence punissable.",
     options: ["Vrai", "Faux", "Uniquement si influence réelle"],
@@ -1390,7 +1390,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : tentative NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Distinction",
     question:
         "Un agent public demande 50€ « pour ne pas verbaliser ». Qualification la plus juste :",
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre abstention d’un acte de la fonction (ne pas verbaliser).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Distinction",
     question:
         "Un agent public impose un « droit » inventé pour instruire un dossier. Qualification :",
@@ -1410,7 +1410,7 @@ final List<QuizQuestion> questionProbite = [
         "Perception indue à titre de droits/contributions/taxes publics.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Distinction",
     question:
         "Un élu monnaye ses relations pour obtenir une distinction. Qualification :",
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article + Peine",
     question:
         "Un agent public accepte 300€ pour accélérer un acte relevant de ses fonctions. Quelle réponse est correcte ?",
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre acte de la fonction = corruption passive. Peines : 10 ans + 1 000 000 € (double du produit possible).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article + Peine",
     question:
         "Un maire dispense illégalement un proche du paiement d’un loyer communal, sans base légale. Bonne réponse ?",
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionProbite = [
         "Exonération/franchise illégale = concussion assimilée. Peines : 5 ans + 500 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article + Peine",
     question:
         "Un élu reçoit un avantage pour user de son influence afin d’obtenir un marché. Bonne réponse ?",
@@ -1463,7 +1463,7 @@ final List<QuizQuestion> questionProbite = [
         "Monnayer une influence pour obtenir un marché/décision favorable = trafic d’influence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Concussion",
     question:
         "Vrai/Faux : la concussion suppose nécessairement un enrichissement personnel.",
@@ -1473,7 +1473,7 @@ final List<QuizQuestion> questionProbite = [
         "L’enrichissement personnel n’est pas requis : seule compte la perception ou exonération illégale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Concussion",
     question:
         "Vrai/Faux : la concussion peut porter sur des prestations en nature.",
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionProbite = [
         "La jurisprudence assimile certaines prestations en nature à des sommes (ex : repas gratuits).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Concussion",
     question: "Vrai/Faux : la concussion nécessite une manœuvre frauduleuse.",
     options: ["Vrai", "Faux", "Uniquement si taxe locale"],
@@ -1493,7 +1493,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Concussion",
     question:
         "Un agent réclame une somme prévue par un texte, mais supérieure au tarif légal. Qualification ?",
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La perception peut être totalement ou partiellement indue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Concussion",
     question:
         "La concussion peut être constituée même si la somme est reversée à :",
@@ -1517,7 +1517,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Article",
     question: "Article réprimant la concussion :",
     options: ["432-10 CP", "432-11 CP", "433-1 CP"],
@@ -1527,7 +1527,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Corruption passive",
     question:
         "Vrai/Faux : en corruption passive, le corrupteur est toujours un particulier.",
@@ -1537,7 +1537,7 @@ final List<QuizQuestion> questionProbite = [
         "Si l’auteur est un agent public, l’infraction est toujours qualifiée de corruption passive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Corruption passive",
     question:
         "Vrai/Faux : la corruption passive suppose un acte illégal de la fonction.",
@@ -1548,7 +1548,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Corruption passive",
     question:
         "Un agent accepte un avantage pour accomplir plus rapidement un acte légal. Qualification ?",
@@ -1558,7 +1558,7 @@ final List<QuizQuestion> questionProbite = [
         "Même un acte légal peut constituer la corruption s’il est monnayé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Corruption passive",
     question: "L’accord de corruption est constitué dès lors que :",
     options: [
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Corruption",
     question: "Peine maximale corruption passive aggravée (bande organisée) :",
     options: [
@@ -1584,7 +1584,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Trafic d’influence",
     question:
         "Vrai/Faux : le trafic d’influence suppose un acte relevant de la fonction.",
@@ -1594,7 +1594,7 @@ final List<QuizQuestion> questionProbite = [
         "Le trafic d’influence porte sur l’abus d’influence, pas sur l’acte de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Trafic d’influence",
     question: "Vrai/Faux : l’influence peut être seulement supposée.",
     options: ["Vrai", "Faux", "Uniquement réelle"],
@@ -1603,7 +1603,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM concours — Trafic d’influence",
     question:
         "Un agent promet d’user de ses relations, sans avoir de pouvoir décisionnel. Qualification ?",
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Trafic",
     question: "Article trafic d’influence (agent public) :",
     options: ["432-11 al.3 CP", "432-10 CP", "433-5 CP"],
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinction concours — Ultra piège",
     question:
         "Un agent impose un « droit fictif » pour instruire un dossier. Qualification exacte ?",
@@ -1633,7 +1633,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Perception indue à titre de droits publics, même sans pacte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinction concours — Ultra piège",
     question:
         "Un agent accepte de l’argent pour fermer les yeux sur une infraction. Qualification ?",
@@ -1642,7 +1642,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Avantage contre abstention d’un acte de la fonction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Distinction concours — Ultra piège",
     question:
         "Un élu est payé pour intervenir auprès d’un préfet afin d’obtenir une décision. Qualification ?",
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent réclame 20€ « obligatoires » non prévus par un texte pour un service administratif. Qualification + article ?",
@@ -1665,7 +1665,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Perception indue à titre de droits publics.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent accepte un avantage pour accélérer un acte relevant de ses fonctions. Qualification + article ?",
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Avantage contre acte de la fonction, même légal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Qualification + Article",
     question:
         "Un agent accepte de l’argent pour user de ses relations afin d’obtenir une décision favorable. Qualification + article ?",
@@ -1692,7 +1692,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question: "La concussion est réprimée par :",
     options: ["Article 432-10 CP", "Article 432-11 CP", "Article 433-10 CP"],
@@ -1701,7 +1701,7 @@ final List<QuizQuestion> questionProbite = [
         "La concussion est prévue et réprimée par l’article 432-10 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question: "La corruption passive (agent public) est réprimée par :",
     options: [
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionProbite = [
         "L’infraction de corruption passive est prévue par l’article 432-11 al.1 et 2 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question: "Le trafic d’influence (agent public) est réprimé par :",
     options: [
@@ -1726,7 +1726,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Trafic d’influence : 432-11 alinéa 3 CP (selon ta fiche).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question: "Peines principales de la concussion (432-10) :",
     options: [
@@ -1739,7 +1739,7 @@ final List<QuizQuestion> questionProbite = [
         "432-10 : 5 ans d’emprisonnement + 500 000 € d’amende (pouvant être portée au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question: "Peines principales de la corruption passive simple (432-11) :",
     options: [
@@ -1752,7 +1752,7 @@ final List<QuizQuestion> questionProbite = [
         "432-11 : 10 ans + 1 000 000 € (peut être porté au double du produit).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question: "Corruption passive aggravée (bande organisée) :",
     options: [
@@ -1765,7 +1765,7 @@ final List<QuizQuestion> questionProbite = [
         "432-11 al.4 : 10 ans + 2 000 000 € (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines",
     question:
         "Peines principales du trafic d’influence simple (agent public) :",
@@ -1778,7 +1778,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 al.3 : mêmes peines que corruption passive simple.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative",
     question: "Tentative de concussion (432-10) :",
     options: [
@@ -1791,7 +1791,7 @@ final List<QuizQuestion> questionProbite = [
         "432-10 al.3 prévoit expressément la tentative (alinéa 1 et alinéa 2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative",
     question: "Tentative de corruption passive (432-11) :",
     options: ["Non punissable", "Punissable", "Punissable si somme > 150 €"],
@@ -1799,7 +1799,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative",
     question: "Tentative de trafic d’influence (432-11 al.3) :",
     options: ["Non punissable", "Punissable", "Punissable si influence réelle"],
@@ -1807,7 +1807,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche indique : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Aggravantes",
     question: "La concussion comporte :",
     options: ["Aucune circonstance aggravante", "Bande organisée", "Réunion"],
@@ -1815,7 +1815,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La fiche : IV — AUCUNE.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Aggravantes",
     question: "Corruption passive aggravée si commise :",
     options: ["En bande organisée", "De nuit", "En réunion"],
@@ -1823,7 +1823,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 al.4 : bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : la corruption passive exige que l’acte soit effectivement réalisé.",
@@ -1832,7 +1832,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le « pacte de corruption » suffit, même sans exécution.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question: "Vrai/Faux : la concussion nécessite des manœuvres ou menaces.",
     options: ["Vrai", "Faux", "Uniquement si agent public"],
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionProbite = [
         "Le moyen importe peu : seul compte le caractère illégal de la perception.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en corruption, l’avantage peut bénéficier à un tiers.",
@@ -1851,7 +1851,7 @@ final List<QuizQuestion> questionProbite = [
         "L’avantage peut bénéficier à l’auteur OU à autrui (tiers, société, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en trafic d’influence, l’influence doit être réelle et prouvée.",
@@ -1860,7 +1860,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Elle peut être réelle OU supposée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en trafic d’influence, peu importe que la décision favorable soit régulière.",
@@ -1870,7 +1870,7 @@ final List<QuizQuestion> questionProbite = [
         "Ce sont les moyens irréguliers (l’influence achetée) qui constituent l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question:
         "Vrai/Faux : en concussion, la somme indue peut être partiellement indue.",
@@ -1880,7 +1880,7 @@ final List<QuizQuestion> questionProbite = [
         "Somme totalement OU partiellement indue (excède ce qui est dû).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F",
     question: "Vrai/Faux : le mobile (bonne intention) excuse la concussion.",
     options: ["Vrai", "Faux", "Seulement si somme faible"],
@@ -1889,7 +1889,7 @@ final List<QuizQuestion> questionProbite = [
         "Les mobiles ne sont pas retenus ; seule compte la conscience du caractère indu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Complicité",
     question: "Complicité en concussion :",
     options: ["Oui", "Non", "Seulement si bande organisée"],
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // QCM ULTRA-PIÈGES (distinctions concours) — (31-75)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion vs Corruption",
     question:
         "Un agent public exige « des frais de dossier » non prévus par les textes pour traiter une demande. On retient d’abord :",
@@ -1916,7 +1916,7 @@ final List<QuizQuestion> questionProbite = [
         "Perception indue à titre de droits/taxes/contributions, sans nécessité d’avantage offert.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion",
     question: "La concussion peut être constituée même si l’agent :",
     options: [
@@ -1929,7 +1929,7 @@ final List<QuizQuestion> questionProbite = [
         "Le moyen importe peu : caractère illégal de la perception suffit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption",
     question: "En corruption passive, l’élément central est :",
     options: [
@@ -1942,7 +1942,7 @@ final List<QuizQuestion> questionProbite = [
         "Pacte de corruption : avantage ↔ acte/abstention/acte facilité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption (moment)",
     question:
         "Un agent reçoit un cadeau « après coup » pour un service déjà rendu. Cela peut être :",
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionProbite = [
         "Le pacte peut être postérieur à l’acte ; gratification de remerciement peut entrer dans l’incrimination.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence",
     question: "Le trafic d’influence vise principalement :",
     options: [
@@ -1964,7 +1964,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Distinctions, emplois, marchés, toute décision favorable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence vs Corruption",
     question:
         "Un élu est payé pour « appeler quelqu’un » afin d’obtenir un poste à un proche. On retient plutôt :",
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionProbite = [
         "Contre avantage, abus d’influence réelle/supposée pour obtenir un emploi/décision.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption vs Trafic d’influence",
     question:
         "Un agent public est payé pour accomplir un acte qu’il a compétence à réaliser. Qualification la plus typique :",
@@ -1983,7 +1983,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Acte de la fonction contre avantage = corruption passive.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Trafic d’influence (influence)",
     question: "En trafic d’influence, l’auteur :",
     options: [
@@ -1996,7 +1996,7 @@ final List<QuizQuestion> questionProbite = [
         "Il n’est pas nécessaire qu’il ait lui-même un pouvoir décisionnel ; il monnaye une influence.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (objet)",
     question: "La concussion porte sur :",
     options: [
@@ -2009,7 +2009,7 @@ final List<QuizQuestion> questionProbite = [
         "Cœur de la concussion : perception indue de sommes publiques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (en nature)",
     question:
         "Un directeur d’hôpital se fait nourrir gratuitement chaque jour par la cuisine de l’établissement. Cela peut entrer dans :",
@@ -2023,7 +2023,7 @@ final List<QuizQuestion> questionProbite = [
         "La « somme » peut inclure des prestations en nature (jurisprudence).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (salaires)",
     question:
         "Un agent public perçoit des indemnités au-delà de ce à quoi il a droit. Qualification la plus proche :",
@@ -2033,7 +2033,7 @@ final List<QuizQuestion> questionProbite = [
         "La jurisprudence inclut salaires/traitements/fournitures dans les « droits ». ",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (excédent)",
     question: "La somme est « indue » notamment lorsque :",
     options: [
@@ -2046,7 +2046,7 @@ final List<QuizQuestion> questionProbite = [
         "Indue = non prévue OU excédant ce qui est dû (partiellement indue).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion (exonération)",
     question:
         "Accorder volontairement une exonération de redevance du domaine public sans base légale :",
@@ -2060,7 +2060,7 @@ final List<QuizQuestion> questionProbite = [
         "Exonération/franchise illégale = concussion assimilée (abstention).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Corruption (avantage)",
     question: "En corruption passive, l’avantage peut prendre la forme :",
     options: [
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionProbite = [
         "Offres/promesses/dons/présents/avantages : interprétation large.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Pacte",
     question: "Le « pacte de corruption » est :",
     options: [
@@ -2085,7 +2085,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Accord de volontés ; exécution indifférente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Direct/indirect",
     question: "La corruption peut être :",
     options: [
@@ -2098,7 +2098,7 @@ final List<QuizQuestion> questionProbite = [
         "La sollicitation/agrément peut transiter par un intermédiaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — « À tout moment »",
     question: "« À tout moment » signifie que la corruption peut être :",
     options: [
@@ -2110,7 +2110,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le pacte peut intervenir après l’acte (remerciement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Acte facilité",
     question: "« Acte facilité par la fonction » vise notamment :",
     options: [
@@ -2124,7 +2124,7 @@ final List<QuizQuestion> questionProbite = [
         "Acte non strictement dans les attributions mais rendu possible par la position.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Mandat électif",
     question:
         "Les personnes investies d’un mandat électif public peuvent être auteurs de :",
@@ -2137,7 +2137,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 vise aussi mandat électif public.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège concours — Concussion vs Corruption (clé)",
     question: "Différence la plus tranchée :",
     options: [
@@ -2155,7 +2155,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // VRAI/FAUX CONCOURS — (76-105)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai/Faux : la concussion peut être commise sans abus d’autorité.",
@@ -2165,7 +2165,7 @@ final List<QuizQuestion> questionProbite = [
         "Le texte précise qu’il n’est pas nécessaire d’abuser de l’autorité ou d’employer menaces/manœuvres.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai/Faux : la concussion porte uniquement sur des taxes au sens strict.",
@@ -2175,7 +2175,7 @@ final List<QuizQuestion> questionProbite = [
         "Elle vise droits/contributions/impôts/taxes, et la jurisprudence inclut même salaires/indemnités/fournitures.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai/Faux : si l’agent se trompe de bonne foi sur un texte, l’intention peut disparaître.",
@@ -2185,7 +2185,7 @@ final List<QuizQuestion> questionProbite = [
         "Erreur de fait ou mauvaise interprétation peut exclure l’intention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai/Faux : la corruption passive suppose nécessairement que l’agent soit à l’initiative.",
@@ -2195,7 +2195,7 @@ final List<QuizQuestion> questionProbite = [
         "Que l’agent sollicite ou agrée, c’est toujours corruption passive (dès lors qu’il a la qualité).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai/Faux : l’exécution de l’acte promis n’est pas indispensable pour caractériser la corruption.",
@@ -2204,7 +2204,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le pacte suffit ; suivi d’exécution indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai/Faux : un avantage peut être versé à une association ou une société écran.",
@@ -2214,7 +2214,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage possible au profit d’un tiers, y compris personne morale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Trafic d’influence",
     question:
         "Vrai/Faux : le trafic d’influence peut exister même si l’influence n’est jamais exercée.",
@@ -2224,7 +2224,7 @@ final List<QuizQuestion> questionProbite = [
         "Peu importe que l’influence soit vaine ou non exercée : l’accord suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Trafic d’influence",
     question:
         "Vrai/Faux : la décision recherchée doit forcément être illégale pour constituer le trafic d’influence.",
@@ -2234,7 +2234,7 @@ final List<QuizQuestion> questionProbite = [
         "Même une décision régulière peut être visée : ce sont les moyens irréguliers qui caractérisent l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Bande organisée",
     question: "Vrai/Faux : la bande organisée aggrave la corruption passive.",
     options: ["Vrai", "Faux", "Uniquement la concussion"],
@@ -2242,7 +2242,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "432-11 al.4.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Tentative",
     question:
         "Vrai/Faux : la tentative est punissable en concussion mais pas en corruption passive.",
@@ -2255,7 +2255,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // MINI CAS PRATIQUES — QUALIFICATION + ARTICLE + PEINE (106-135)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Qualification + Peine",
     question:
         "Un régisseur exige 20€ alors que le droit de place légal est 10€. Qualification + article ?",
@@ -2269,7 +2269,7 @@ final List<QuizQuestion> questionProbite = [
         "Perception excédant ce qui est dû = concussion (C.A. Versailles 26/04/2006). Peine: 5 ans + 500 000 € (double du produit possible).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Qualification + Peine",
     question:
         "Un agent public accepte 300€ pour accélérer un dossier relevant de sa compétence. Qualification ?",
@@ -2283,7 +2283,7 @@ final List<QuizQuestion> questionProbite = [
         "Avantage contre acte de la fonction. Peine: 10 ans + 1 000 000 € (double du produit possible).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Qualification + Peine",
     question:
         "Un élu est payé pour user de son réseau afin d’obtenir une décoration pour quelqu’un. Qualification ?",
@@ -2297,7 +2297,7 @@ final List<QuizQuestion> questionProbite = [
         "Monnayer une influence (réelle/supposée) en vue d’obtenir une distinction. Peine: 10 ans + 1 000 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Concussion (exonération)",
     question:
         "Un maire dispense volontairement son fils du paiement d’une redevance du domaine public prévue par la loi. Qualification ?",
@@ -2311,7 +2311,7 @@ final List<QuizQuestion> questionProbite = [
         "Exonération/franchise accordée illégalement = concussion assimilée (jurisprudence). Peine: 5 ans + 500 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Corruption (après l’acte)",
     question:
         "Un agent reçoit un cadeau après avoir rendu un service relevant de sa mission, car il avait « anticipé » la gratification. Qualification ?",
@@ -2325,7 +2325,7 @@ final List<QuizQuestion> questionProbite = [
         "Le pacte peut être postérieur : gratification en remerciement d’un acte accompli.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas — Aggravation",
     question:
         "Un réseau organisé d’agents publics accepte des avantages contre actes de fonction. Qualification + aggravation ?",
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // SÉRIES “ULTRA QCM” — MÉCANISMES, ÉLÉMENTS, PIÈGES (136-165)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Comparaison aux textes",
     question: "Pour caractériser l’illicéité en concussion, on compare :",
     options: [
@@ -2357,7 +2357,7 @@ final List<QuizQuestion> questionProbite = [
         "Le caractère illicite se juge au regard de ce que les textes autorisent à percevoir.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Ordre de percevoir",
     question:
         "Celui qui ordonne à un subordonné de percevoir un droit non dû est :",
@@ -2367,7 +2367,7 @@ final List<QuizQuestion> questionProbite = [
         "Est puni comme concussionnaire celui qui ordonne la perception indue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Subordonné",
     question: "Le subordonné qui exécute sciemment l’ordre illégal peut être :",
     options: [
@@ -2379,7 +2379,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Complicité si aide et assistance sciemment apportées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption — Sollicitation",
     question: "La sollicitation en corruption passive implique :",
     options: [
@@ -2392,7 +2392,7 @@ final List<QuizQuestion> questionProbite = [
         "L’agent fait comprendre qu’il faut payer pour l’acte/abstention.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption — Agrément",
     question: "L’agrément correspond à :",
     options: [
@@ -2404,7 +2404,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Accord de volontés = pacte de corruption.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption — Direct/Indirect",
     question: "Une corruption « indirecte » suppose :",
     options: [
@@ -2416,7 +2416,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "La sollicitation/agrément peut transiter par un tiers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Destinataire",
     question: "Le destinataire à influencer doit être :",
     options: [
@@ -2429,7 +2429,7 @@ final List<QuizQuestion> questionProbite = [
         "L’influence vise une autorité/administration publique décisionnaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Décision régulière",
     question: "En trafic d’influence, si la décision obtenue est régulière :",
     options: [
@@ -2445,7 +2445,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // BONUS — V/F “FLASH” (166-200) pour révisions rapides
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-10",
     question:
         "Vrai/Faux : la concussion peut porter sur une prestation en nature.",
@@ -2454,7 +2454,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Notion large de somme (prestations en nature admises).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-10",
     question:
         "Vrai/Faux : la concussion nécessite un pacte entre deux personnes.",
@@ -2463,7 +2463,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Pas de pacte : perception indue suffit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-11",
     question:
         "Vrai/Faux : en corruption passive, l’avantage peut être une promesse.",
@@ -2472,7 +2472,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Offres/promesses/dons/présents/avantages.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-11",
     question:
         "Vrai/Faux : la corruption passive exige que l’avantage soit « sans droit ».",
@@ -2481,7 +2481,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Le texte vise « sans droit ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 432-11",
     question:
         "Vrai/Faux : la bande organisée change la peine d’emprisonnement en corruption passive.",
@@ -2491,7 +2491,7 @@ final List<QuizQuestion> questionProbite = [
         "La peine d’emprisonnement reste à 10 ans, l’amende passe à 2 000 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — Trafic",
     question:
         "Vrai/Faux : en trafic d’influence, l’influence doit être exercée par l’auteur lui-même.",
@@ -2501,7 +2501,7 @@ final List<QuizQuestion> questionProbite = [
         "La fiche précise une influence directe : l’intéressé est censé l’exercer lui-même.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — Trafic",
     question:
         "Vrai/Faux : en trafic d’influence, peu importe que l’avantage demandé profite à un tiers.",
@@ -2510,7 +2510,7 @@ final List<QuizQuestion> questionProbite = [
     explanation: "Avantage pour lui-même ou pour autrui.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — Réduction",
     question:
         "Vrai/Faux : une réduction de peine est prévue en corruption/traﬁc si l’auteur aide à identifier d’autres auteurs.",
@@ -2521,7 +2521,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Auteur",
     question: "Peut être auteur de concussion :",
     options: [
@@ -2536,7 +2536,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Élément matériel",
     question: "La perception indue peut consister à :",
     options: [
@@ -2550,7 +2550,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Moyen",
     question: "Les moyens utilisés pour percevoir la somme :",
     options: [
@@ -2563,7 +2563,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Somme",
     question: "La notion de somme inclut :",
     options: [
@@ -2577,7 +2577,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Droits",
     question: "La notion de « droits » inclut :",
     options: [
@@ -2591,7 +2591,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Exonération",
     question: "Accorder illégalement une exonération de taxe constitue :",
     options: [
@@ -2604,7 +2604,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -2618,7 +2618,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Erreur",
     question: "L’erreur de fait ou de droit :",
     options: [
@@ -2632,7 +2632,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Concussion — Peines",
     question: "Peines principales de la concussion :",
     options: [
@@ -2645,7 +2645,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question:
         "Vrai ou Faux : la concussion comporte des circonstances aggravantes.",
@@ -2655,7 +2655,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Concussion",
     question: "Vrai ou Faux : la tentative de concussion est punissable.",
     options: ["Vrai", "Faux", "Seulement pour l’alinéa 2"],
@@ -2664,7 +2664,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Concussion",
     question:
         "Un maire impose une somme non prévue par les textes pour chaque logement construit. Qualification ?",
@@ -2678,7 +2678,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // CORRUPTION PASSIVE — 432-11 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Définition",
     question: "La corruption passive consiste à :",
     options: [
@@ -2691,7 +2691,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Qualification",
     question: "La qualification passive dépend :",
     options: [
@@ -2705,7 +2705,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Auteur",
     question: "Peut être auteur de corruption passive :",
     options: [
@@ -2719,7 +2719,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Acte",
     question: "La corruption peut porter sur :",
     options: [
@@ -2732,7 +2732,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Moment",
     question: "Le pacte de corruption peut intervenir :",
     options: ["Avant ou après l’acte", "Uniquement avant", "Uniquement après"],
@@ -2741,7 +2741,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Avantage",
     question: "L’avantage peut être :",
     options: [
@@ -2754,7 +2754,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Élément moral",
     question: "Il faut établir :",
     options: [
@@ -2767,7 +2767,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Aggravation",
     question: "La corruption est aggravée lorsqu’elle est commise :",
     options: ["En bande organisée", "En réunion", "Avec arme"],
@@ -2776,7 +2776,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Corruption passive — Peines",
     question: "Peines de la corruption passive simple :",
     options: [
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Corruption",
     question:
         "Vrai ou Faux : la tentative de corruption passive est punissable.",
@@ -2799,7 +2799,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Corruption",
     question:
         "Un policier accepte de l’argent pour ne pas dresser un PV. Qualification ?",
@@ -2813,7 +2813,7 @@ final List<QuizQuestion> questionProbite = [
   // =========================================================
   // TRAFIC D’INFLUENCE — 432-11 AL.3 CP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Définition",
     question: "Le trafic d’influence consiste à :",
     options: [
@@ -2826,7 +2826,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Influence",
     question: "L’influence peut être :",
     options: ["Réelle ou supposée", "Uniquement réelle", "Uniquement supposée"],
@@ -2835,7 +2835,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Objet",
     question: "L’influence vise à obtenir :",
     options: [
@@ -2848,7 +2848,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Acte",
     question: "L’auteur agit :",
     options: [
@@ -2861,7 +2861,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic d’influence — Peines",
     question: "Peines du trafic d’influence simple :",
     options: [
@@ -2874,7 +2874,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Trafic d’influence",
     question:
         "Vrai ou Faux : la tentative de trafic d’influence est punissable.",
@@ -2884,7 +2884,7 @@ final List<QuizQuestion> questionProbite = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Trafic d’influence",
     question:
         "Un élu accepte de l’argent pour user de son réseau afin d’obtenir un marché public. Qualification ?",
@@ -2899,7 +2899,7 @@ final List<QuizQuestion> questionProbite = [
 // PAGE
 // ============================================================================
 class QuizProbite extends StatefulWidget {
-  static const String routeName = '/gpx/nation/quiz/probite';
+  static const String routeName = '/gpx/dps/nation/quiz/probite';
   final String uid;
   final String email;
 
@@ -3244,7 +3244,7 @@ class _QuizProbiteState extends State<QuizProbite>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3447,7 +3447,7 @@ class _QuizProbiteState extends State<QuizProbite>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3630,7 +3630,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4163,10 +4162,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4537,7 +4537,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4578,9 +4578,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

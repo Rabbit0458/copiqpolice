@@ -100,23 +100,23 @@ class ChienDangereuxPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En situation d’urgence, l’intervention peut être justifiée par l’état de nécessité : ",
                 ),
                 TextSpan(
                   text: "article 122-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’usage de la force doit rester strictement proportionné et adapté à la menace. "
                 "En cas d’attaque caractérisée et de danger immédiat, des moyens de neutralisation "
                 "peuvent être envisagés (selon les règles d’emploi et la situation).",
@@ -184,42 +184,42 @@ class ChienDangereuxPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Priorité sécurité"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Priorité sécurité"),
+              _BulletPoint(
                 text:
                     "Recourir chaque fois que possible à l’assistance d’une unité cynotechnique.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Adopter une attitude calme : éviter gestes brusques, ne pas crier ni hurler.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Ne pas fixer le chien : le regarder en biais.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("B) Réduire la perception de menace"),
-              const _BulletPoint(
+              _SubTitle("B) Réduire la perception de menace"),
+              _BulletPoint(
                 text:
                     "Ôter les éléments pouvant être perçus comme menaçants : casquette, lunettes de soleil, tour de cou relevé masquant le visage.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("C) Gestion de l’espace"),
-              const _BulletPoint(
+              _SubTitle("C) Gestion de l’espace"),
+              _BulletPoint(
                 text: "Ne jamais fuir en courant devant un chien.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Ne jamais empêcher un chien de s’enfuir.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Interposer un obstacle (mobilier, containers, barrière, porte) entre soi et le chien.",
               ),
               _NotaBox(
                 title: "Astuce",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le chien a tendance à mordre ce qu’on lui présente : sac, porte-document, objet tenu à distance.",
@@ -362,10 +362,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -430,7 +430,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -473,7 +473,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -535,7 +535,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -567,7 +567,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -580,7 +580,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

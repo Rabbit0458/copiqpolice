@@ -101,7 +101,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                GÉNÉRALITÉS — LÉGISLATION PÉNALE                        ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Selon la définition de Merle et Vitu, le droit pénal est :',
     options: [
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal a notamment pour but :',
     options: [
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Parmi les branches du droit pénal, on retrouve :',
     options: [
@@ -146,7 +146,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal général :',
     options: [
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal spécial :',
     options: [
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'La procédure pénale comporte l’étude :',
     options: [
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'La source principale du droit pénal est :',
     options: ['Le Code pénal', 'Le Code civil', 'Le Code du commerce'],
@@ -199,7 +199,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le Code de procédure pénale traite notamment :',
     options: [
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                INFRACTION — DÉFINITION / NOTIONS VOISINES             ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question: 'Une infraction peut être définie comme :',
     options: [
@@ -232,7 +232,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question:
         'Le délit civil, au sens du Code civil, est défini à l’article 1240 comme :',
@@ -248,7 +248,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question: 'Le délit disciplinaire correspond :',
     options: [
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///         CLASSIFICATION — TRIPARTITE + CONSÉQUENCES                    ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question:
         'Selon l’article 111-1 du Code pénal, les infractions pénales sont classées :',
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question:
         'La nomenclature des peines applicables selon la classification tripartite est fixée par :',
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La tentative est :',
     options: [
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'En matière de délits, la tentative est punissable :',
     options: [
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La tentative de contravention est :',
     options: [
@@ -338,7 +338,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La complicité est :',
     options: [
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Pour les contraventions, la complicité est punissable :',
     options: [
@@ -367,7 +367,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La prescription de l’action publique est, en principe :',
     options: [
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La prescription de la peine est, en principe :',
     options: [
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les contraventions sont jugées par :',
     options: [
@@ -411,7 +411,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les délits sont jugés par :',
     options: [
@@ -425,7 +425,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les crimes sont jugés par :',
     options: [
@@ -439,7 +439,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'En matière d’enquête, l’enquête de flagrance est :',
     options: [
@@ -453,7 +453,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Pour les contraventions, le cadre d’enquête mentionné est :',
     options: [
@@ -470,7 +470,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///      CLASSIFICATION — NATURE : POLITIQUE / TERRORISME / MILITAIRE      ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Nature de l’infraction',
     question:
         'Le critère retenu par la jurisprudence pour l’infraction politique est principalement :',
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Nature de l’infraction',
     question:
         'Selon le critère objectif, une infraction politique est celle qui porte atteinte :',
@@ -501,7 +501,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Nature de l’infraction',
     question:
         'Si une infraction est commise pour des mobiles politiques, elle devient automatiquement une infraction politique :',
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Terrorisme',
     question:
         'Le Code pénal énonce une liste d’infractions qualifiées de terrorisme aux articles :',
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Terrorisme',
     question:
         'L’article 706-17 du Code de procédure pénale prévoit notamment :',
@@ -542,7 +542,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Terrorisme',
     question:
         'Pour le jugement des infractions terroristes, la cour d’assises est composée :',
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Militaire',
     question: 'Une infraction militaire correspond notamment à :',
     options: [
@@ -572,7 +572,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Militaire',
     question:
         'En temps de guerre, les juridictions compétentes pour les faits commis en France peuvent être :',
@@ -590,7 +590,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///       CLASSIFICATION — MODE DE RÉALISATION / TEMPS / HABITUDE          ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Mode de réalisation',
     question: 'Une infraction de commission consiste :',
     options: [
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Mode de réalisation',
     question: 'Une infraction d’omission suppose :',
     options: [
@@ -618,7 +618,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Mode de réalisation',
     question: 'Parmi les exemples d’infractions d’omission cités, on trouve :',
     options: [
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Mode de réalisation',
     question: 'La commission par omission correspond à une situation où :',
     options: [
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Temps de l’infraction',
     question: 'Une infraction instantanée est :',
     options: [
@@ -661,7 +661,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Temps de l’infraction',
     question: 'L’infraction continue est celle :',
     options: [
@@ -676,7 +676,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Temps de l’infraction',
     question:
         'En matière de prescription, pour un délit continu, le point de départ est :',
@@ -691,7 +691,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Structure de l’infraction',
     question: 'Une infraction simple consiste :',
     options: [
@@ -705,7 +705,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Structure de l’infraction',
     question: 'Une infraction complexe suppose :',
     options: [
@@ -719,7 +719,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Structure de l’infraction',
     question:
         'Pour le délit d’habitude, la prescription de l’action publique commence :',
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                 ÉLÉMENTS CONSTITUTIFS — LES 3 ÉLÉMENTS                ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Éléments constitutifs',
     question: 'Les éléments constitutifs généraux d’une infraction sont :',
     options: [
@@ -752,7 +752,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question: 'Le principe « Sans texte, pas d’infraction » signifie :',
     options: [
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question: 'L’article 111-3 du Code pénal pose le principe :',
     options: [
@@ -781,7 +781,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question:
         'Selon l’article 111-3 du Code pénal, les contraventions ont leurs éléments définis par :',
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question: 'La norme suprême en droit interne (dans le cours) est :',
     options: ['La Constitution de 1958', 'Le Code pénal', 'Le Code civil'],
@@ -802,7 +802,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question: 'Selon l’article 111-2 du Code pénal, la loi :',
     options: [
@@ -817,7 +817,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question:
         'Parmi les actes ayant valeur de loi (selon le cours), on retrouve :',
@@ -833,7 +833,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question:
         'Selon la Constitution (article 55), les conventions internationales ratifiées et publiées :',
@@ -848,7 +848,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément matériel',
     question: 'L’élément matériel correspond :',
     options: [
@@ -863,7 +863,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément matériel',
     question: 'La seule pensée criminelle (sans matérialisation) est :',
     options: [
@@ -877,7 +877,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'La tentative (article 121-5 du Code pénal) est constituée lorsque :',
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Pour qu’il y ait tentative, il faut notamment :',
     options: [
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Les actes préparatoires sont en principe :',
     options: [
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'La Cour de cassation exige, pour retenir un commencement d’exécution, notamment :',
@@ -938,7 +938,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'Dans l’affaire Lacour (chambre criminelle, 5 octobre 1962), a été jugé que :',
@@ -954,7 +954,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Le désistement volontaire entraîne en principe :',
     options: [
@@ -968,7 +968,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Le repentir actif (après consommation) :',
     options: [
@@ -983,7 +983,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'L’infraction manquée correspond à :',
     options: [
@@ -998,7 +998,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'L’infraction impossible est, selon le cours :',
     options: [
@@ -1013,7 +1013,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Il n’y a pas d’infraction sans élément moral signifie :',
     options: [
@@ -1027,7 +1027,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol général correspond à :',
     options: [
@@ -1041,7 +1041,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le mobile est, en principe, au regard du droit pénal :',
     options: [
@@ -1056,7 +1056,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'L’article 121-3 du Code pénal énonce que :',
     options: [
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol spécial correspond à :',
     options: [
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'La préméditation est :',
     options: [
@@ -1099,7 +1099,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol praeter intentionnel correspond à :',
     options: [
@@ -1113,7 +1113,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Fautes non intentionnelles',
     question:
         'La faute d’imprudence ou de négligence (article 121-3 alinéa 3 du Code pénal) consiste en :',
@@ -1129,7 +1129,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Fautes non intentionnelles',
     question:
         'Si le lien de causalité est direct, il suffit pour établir la faute :',
@@ -1145,7 +1145,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Fautes non intentionnelles',
     question: 'La faute de mise en danger délibérée suppose notamment :',
     options: [
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Fautes non intentionnelles',
     question: 'La faute contraventionnelle consiste :',
     options: [
@@ -1178,7 +1178,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                 ÉTENDUE — APPLICATION DANS LE TEMPS                   ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Le principe général posé par l’article 112-1 du Code pénal est :',
@@ -1193,7 +1193,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Les lois pénales de fond (infractions et conditions de sanction) :',
@@ -1208,7 +1208,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'La rétroactivité in mitius signifie :',
     options: [
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Une infraction est jugée définitivement lorsque :',
     options: [
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Les lois interprétatives :',
     options: [
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Les lois pénales de forme, selon l’article 112-2 du Code pénal :',
@@ -1267,7 +1267,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Une exception à l’application immédiate d’une loi de forme existe notamment :',
@@ -1281,7 +1281,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Une loi nouvelle ne peut entraîner la nullité d’actes régulièrement accomplis sous une loi antérieure (selon le cours) :',
@@ -1292,7 +1292,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Prescription',
     question:
         'Une loi nouvelle relative à la prescription s’applique immédiatement si :',
@@ -1310,7 +1310,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                 ÉTENDUE — APPLICATION DANS L’ESPACE                   ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Le principe de territorialité (article 113-2 du Code pénal) signifie :',
@@ -1326,7 +1326,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'La notion de territoire inclut notamment :',
     options: [
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'La loi pénale française peut s’appliquer si un des faits constitutifs de l’infraction est commis en France :',
@@ -1350,7 +1350,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
         'Le cours précise que la loi française s’applique dès lors qu’un des faits constitutifs est commis en France.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Éléments constitutifs',
     question:
         'Pour qu’une infraction pénale soit constituée, les éléments constitutifs doivent être :',
@@ -1365,7 +1365,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question: 'L’absence de texte pénal a pour conséquence :',
     options: [
@@ -1379,7 +1379,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question: 'Le principe de légalité constitue avant tout :',
     options: [
@@ -1396,7 +1396,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                    SOURCES DU DROIT PÉNAL                             ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question:
         'Les ordonnances prises en application de l’article 38 de la Constitution ont valeur de loi :',
@@ -1411,7 +1411,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question:
         'Les décrets-lois évoqués dans le cours proviennent principalement :',
@@ -1426,7 +1426,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources',
     question: 'Les circulaires administratives sont :',
     options: [
@@ -1443,7 +1443,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                        JURISPRUDENCE & DOCTRINE                        ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Jurisprudence',
     question:
         'Le principe d’interprétation restrictive de la loi pénale vise à :',
@@ -1458,7 +1458,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Doctrine',
     question: 'La doctrine pénale :',
     options: [
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                      ÉLÉMENT MATÉRIEL — DÉTAILS                        ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément matériel',
     question: 'L’élément matériel peut consister en :',
     options: [
@@ -1489,7 +1489,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément matériel',
     question: 'La résolution criminelle correspond :',
     options: [
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                           TENTATIVE — NUANCES                          ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'Le commencement d’exécution se distingue des actes préparatoires car il :',
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Une tentative suspendue par l’intervention de la police est :',
     options: ['Punissable', 'Impunie', 'Assimilée à un désistement volontaire'],
@@ -1531,7 +1531,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'La tentative infructueuse suppose que :',
     options: [
@@ -1548,7 +1548,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                         ÉLÉMENT MORAL — ANALYSE                        ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Une infraction non intentionnelle suppose néanmoins :',
     options: [
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol déterminé se caractérise par :',
     options: [
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                   FAUTES NON INTENTIONNELLES                          ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Fautes',
     question: 'La faute d’imprudence se caractérise principalement par :',
     options: [
@@ -1592,7 +1592,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Fautes',
     question:
         'Lorsque la causalité est indirecte, la responsabilité pénale nécessite :',
@@ -1609,7 +1609,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                     APPLICATION DE LA LOI DANS LE TEMPS               ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'La rétroactivité des lois pénales plus douces est justifiée par :',
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Les lois modifiant les voies de recours s’appliquent :',
     options: [
@@ -1640,7 +1640,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                     APPLICATION DE LA LOI DANS L’ESPACE               ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'La loi pénale française peut s’appliquer à un crime commis à l’étranger par un Français :',
@@ -1651,7 +1651,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Pour les délits commis à l’étranger par un Français, une condition essentielle est :',
@@ -1665,7 +1665,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
         'Le fait doit être incriminé à la fois par la loi française et la loi étrangère.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Selon MERLE et VITU, le droit pénal est :',
     options: [
@@ -1680,7 +1680,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal général a pour objet principal :',
     options: [
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal spécial concerne principalement :',
     options: [
@@ -1708,7 +1708,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'La procédure pénale étudie notamment :',
     options: [
@@ -1723,7 +1723,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question:
         'Le code pénal initialement conçu et rédigé en 1810 a été largement remanié par :',
@@ -1738,7 +1738,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le code pénal comprend :',
     options: [
@@ -1755,7 +1755,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                         NOTION D’INFRACTION                             ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question: 'Selon le cours, une infraction peut être définie comme :',
     options: [
@@ -1770,7 +1770,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question:
         'Le code pénal prévoit une définition explicite et générale de l’infraction :',
@@ -1781,7 +1781,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question:
         'Le délit civil (article 1240 du Code civil) renvoie principalement :',
@@ -1796,7 +1796,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infraction',
     question: 'Le délit disciplinaire correspond :',
     options: [
@@ -1814,7 +1814,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///               CLASSIFICATION TRIPARTITE / CONSÉQUENCES                  ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La classification tripartite repose sur :',
     options: [
@@ -1828,7 +1828,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les infractions pénales sont classées en :',
     options: [
@@ -1842,7 +1842,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La tentative est :',
     options: [
@@ -1856,7 +1856,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La tentative de contravention est :',
     options: [
@@ -1870,7 +1870,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'La complicité est prévue :',
     options: [
@@ -1885,7 +1885,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les contraventions sont jugées principalement par :',
     options: [
@@ -1898,7 +1898,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les délits sont jugés principalement par :',
     options: [
@@ -1911,7 +1911,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification',
     question: 'Les crimes sont jugés principalement par :',
     options: [
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                 PRESCRIPTION (ACTION PUBLIQUE / PEINE)                  ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Prescription',
     question: 'La prescription de l’action publique correspond :',
     options: [
@@ -1943,7 +1943,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Prescription',
     question:
         'Le délai de prescription de l’action publique pour un délit est de :',
@@ -1954,7 +1954,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Prescription',
     question:
         'Le délai de prescription de la peine pour une contravention est de :',
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Prescription',
     question: 'La prescription de la peine correspond :',
     options: [
@@ -1983,7 +1983,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///         CLASSIFICATION PAR NATURE : POLITIQUE / TERRORISME / MILITAIRE  ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infractions politiques',
     question:
         'Le critère doctrinal retenu par la jurisprudence pour l’infraction politique est :',
@@ -1998,7 +1998,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infractions politiques',
     question:
         'Selon la jurisprudence, le mobile politique suffit à rendre l’infraction politique :',
@@ -2013,7 +2013,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Terrorisme',
     question: 'Les infractions de terrorisme sont qualifiées à partir :',
     options: [
@@ -2027,7 +2027,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Terrorisme',
     question:
         'La centralisation possible des procédures de terrorisme peut être effectuée :',
@@ -2042,7 +2042,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Infractions militaires',
     question: 'Une infraction militaire peut correspondre :',
     options: [
@@ -2059,7 +2059,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                     ÉLÉMENTS CONSTITUTIFS : LÉGAL                       ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question:
         'Le principe selon lequel il n’existe pas d’infraction sans texte exprime :',
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément légal',
     question: 'Les contraventions sont définies principalement par :',
     options: ['Le règlement', 'La doctrine', 'La coutume'],
@@ -2086,7 +2086,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                    ÉLÉMENTS CONSTITUTIFS : MATÉRIEL                     ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément matériel',
     question: 'Les actes préparatoires sont en principe :',
     options: [
@@ -2100,7 +2100,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément matériel',
     question: 'La seule pensée criminelle est :',
     options: [
@@ -2117,7 +2117,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   /////////////////////////////////////////////////////////////////////////////
   ///                     ÉLÉMENTS CONSTITUTIFS : MORAL                       ///
   /////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol général correspond :',
     options: [
@@ -2130,7 +2130,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
         'Le cours définit le dol général comme la conscience ou la volonté d’accomplir un acte illicite.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal est défini par MERLE et VITU comme :',
     options: [
@@ -2145,7 +2145,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal a notamment pour but :',
     options: [
@@ -2160,7 +2160,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal se divise notamment en :',
     options: [
@@ -2174,7 +2174,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal général correspond :',
     options: [
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le droit pénal spécial correspond :',
     options: [
@@ -2202,7 +2202,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'La procédure pénale comporte l’étude :',
     options: [
@@ -2217,7 +2217,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'La source principale du droit pénal est :',
     options: ['Le Code pénal', 'Le Code civil', 'Le Code du travail'],
@@ -2227,7 +2227,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le Code pénal (rappelé par le cours) a été conçu et rédigé en :',
     options: ['1810', '1958', '1994'],
@@ -2237,7 +2237,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le Code pénal a été largement remanié par :',
     options: [
@@ -2251,7 +2251,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le Code pénal comprend :',
     options: [
@@ -2266,7 +2266,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Généralités',
     question: 'Le Code de procédure pénale traite notamment :',
     options: [
@@ -2284,7 +2284,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Notion d’infraction / Distinctions
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification des infractions',
     question: 'Le Code pénal prévoit une définition générale de l’infraction :',
     options: [
@@ -2298,7 +2298,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification des infractions',
     question: 'Selon le cours, une infraction peut se définir comme :',
     options: [
@@ -2313,7 +2313,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification des infractions',
     question: 'Le “délit civil” (article 1240 du Code civil) correspond :',
     options: [
@@ -2328,7 +2328,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Classification des infractions',
     question: 'Le “délit disciplinaire” consiste :',
     options: [
@@ -2346,7 +2346,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Éléments constitutifs (légal / matériel / moral)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Éléments constitutifs',
     question: 'Les éléments constitutifs généraux d’une infraction sont :',
     options: [
@@ -2360,7 +2360,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Éléments constitutifs',
     question: 'Pour que l’infraction existe, il faut :',
     options: [
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Élément légal / Principe de légalité / Sources
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question:
         'Le principe “Sans texte légal, il n’y a pas d’infraction” correspond au :',
@@ -2392,7 +2392,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'Le principe de légalité est posé par :',
     options: [
@@ -2406,7 +2406,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question:
         'Selon l’article 111-3 du Code pénal, les contraventions sont définies par :',
@@ -2417,7 +2417,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'Selon le cours, les sources essentielles du droit pénal sont :',
     options: [
@@ -2431,7 +2431,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'L’article 111-2 du Code pénal dispose que la loi :',
     options: [
@@ -2446,7 +2446,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'Parmi les actes ayant valeur de loi, le cours cite :',
     options: [
@@ -2461,7 +2461,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question:
         'Les ordonnances prises sur le fondement de l’article 38 de la Constitution ont valeur de loi lorsqu’elles sont :',
@@ -2476,7 +2476,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question:
         'L’article 55 de la Constitution (rappelé par le cours) prévoit que les conventions internationales ratifiées et publiées ont une valeur :',
@@ -2491,7 +2491,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question:
         'Les règlements administratifs émanent du pouvoir exécutif en vertu de :',
@@ -2506,7 +2506,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'Selon l’article 111-2 alinéa 2 du Code pénal, le règlement :',
     options: [
@@ -2521,7 +2521,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'Les circulaires sont :',
     options: [
@@ -2536,7 +2536,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'Selon le cours, les circulaires :',
     options: [
@@ -2550,7 +2550,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'La jurisprudence correspond :',
     options: [
@@ -2565,7 +2565,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Sources / Principe de légalité',
     question: 'La doctrine correspond :',
     options: [
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Élément matériel / Tentative
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'La seule pensée criminelle est :',
     options: [
@@ -2597,7 +2597,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Les actes préparatoires sont en principe :',
     options: [
@@ -2611,7 +2611,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'La tentative punissable suppose :',
     options: [
@@ -2626,7 +2626,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'L’article 121-5 du Code pénal définit la tentative comme constituée lorsque :',
@@ -2642,7 +2642,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'Le commencement d’exécution se distingue des actes préparatoires car il :',
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'Selon la jurisprudence citée par le cours, le commencement d’exécution suppose notamment :',
@@ -2673,7 +2673,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'Le désistement volontaire (renonciation sans cause extérieure) entraîne :',
@@ -2688,7 +2688,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question:
         'Lorsque le désistement est déterminé par une cause extérieure, la tentative est :',
@@ -2699,7 +2699,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Le repentir actif après consommation de l’infraction :',
     options: [
@@ -2713,7 +2713,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'En matière de crime, la tentative est :',
     options: [
@@ -2727,7 +2727,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'En matière délictuelle, la tentative est punissable :',
     options: [
@@ -2741,7 +2741,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'La tentative de contravention est :',
     options: [
@@ -2755,7 +2755,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'L’infraction manquée suppose :',
     options: [
@@ -2770,7 +2770,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'L’infraction impossible correspond :',
     options: [
@@ -2785,7 +2785,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Tentative',
     question: 'Selon le cours, l’infraction impossible est punissable :',
     options: [
@@ -2803,7 +2803,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Élément moral
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol général correspond :',
     options: [
@@ -2817,7 +2817,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le mobile de l’auteur en droit pénal est en principe :',
     options: [
@@ -2831,7 +2831,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Une faute intentionnelle signifie que l’auteur :',
     options: [
@@ -2845,7 +2845,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol spécial correspond :',
     options: [
@@ -2860,7 +2860,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'La préméditation est :',
     options: [
@@ -2874,7 +2874,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le dol praeter intentionnel correspond :',
     options: [
@@ -2889,7 +2889,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'La faute d’imprudence ou de négligence consiste :',
     options: [
@@ -2904,7 +2904,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Si le lien de causalité est direct, pour établir la faute :',
     options: [
@@ -2918,7 +2918,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Si la causalité est indirecte, il est nécessaire de prouver :',
     options: [
@@ -2932,7 +2932,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'La faute contraventionnelle consiste :',
     options: [
@@ -2949,7 +2949,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Application dans le temps
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'L’article 112-1 du Code pénal pose notamment :',
     options: [
@@ -2963,7 +2963,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Selon l’article 112-1, sont seuls punissables :',
     options: [
@@ -2978,7 +2978,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Une loi pénale nouvelle plus sévère :',
     options: [
@@ -2992,7 +2992,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Une loi interprétative peut s’appliquer à des faits antérieurs car :',
@@ -3007,7 +3007,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Les lois nouvelles plus douces s’appliquent :',
     options: [
@@ -3022,7 +3022,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Une affaire est réputée jugée définitivement lorsque :',
     options: [
@@ -3036,7 +3036,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question: 'Les lois pénales de forme s’appliquent en principe :',
     options: [
@@ -3050,7 +3050,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Une exception au principe d’application immédiate des lois de forme concerne :',
@@ -3065,7 +3065,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Une loi nouvelle ne peut entraîner la nullité d’actes régulièrement accomplis :',
@@ -3080,7 +3080,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans le temps',
     question:
         'Une loi nouvelle relative à la prescription s’applique immédiatement si :',
@@ -3098,7 +3098,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
   //////////////////////////////////////////////////////////////////////////////
   // Droit pénal général — Application dans l’espace
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'Le principe de territorialité est posé par :',
     options: [
@@ -3112,7 +3112,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'La loi pénale française est applicable :',
     options: [
@@ -3126,7 +3126,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Facile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'La notion de territoire (selon le cours) comprend notamment :',
     options: [
@@ -3140,7 +3140,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'La mer territoriale comprend en principe :',
     options: [
@@ -3154,7 +3154,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'La loi pénale française peut s’appliquer aux infractions commises à bord :',
@@ -3170,7 +3170,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'La loi française s’applique dès lors :',
     options: [
@@ -3185,7 +3185,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Une exception évoquée par le cours à l’application de la loi française en France concerne :',
@@ -3200,7 +3200,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Pour punir en France le complice d’un crime ou délit commis à l’étranger, il faut notamment :',
@@ -3216,7 +3216,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question: 'La règle de la double incrimination signifie :',
     options: [
@@ -3231,7 +3231,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'La loi pénale française peut s’appliquer à un crime commis à l’étranger par un Français :',
@@ -3242,7 +3242,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Moyenne',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Pour les délits commis à l’étranger par un Français, une condition essentielle est :',
@@ -3257,7 +3257,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Dans certains cas, la poursuite pour des délits commis à l’étranger suppose :',
@@ -3272,7 +3272,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
         'Le cours indique que la poursuite peut être conditionnée par une plainte ou une dénonciation officielle (art. 113-8 et exceptions).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Élément moral',
     question: 'Le mobile de l’auteur en droit pénal est en principe :',
     options: [
@@ -3285,7 +3285,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
         'Le cours précise que le mobile importe peu en droit, même si le juge peut en tenir compte pour la peine.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Application dans l’espace',
     question:
         'Une exception évoquée par le cours à l’application de la loi française en France concerne :',
@@ -3300,7 +3300,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité transfrontière',
     question:
         'Selon l’article 113-5 du Code pénal, la loi française peut s’appliquer à celui qui est complice en France :',
@@ -3315,7 +3315,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Droit pénal général — Complicité transfrontière',
     question:
         'Pour punir le complice en France d’un fait commis à l’étranger, il faut notamment :',
@@ -3336,7 +3336,7 @@ final List<QuizQuestion> questionsGPXSchoolDroitPenalGeneral = [
 // PAGE
 // ============================================================================
 class QuizDroitPenalePage extends StatefulWidget {
-  static const String routeName = '/gpx/droit_penal/quiz/droit_penal_general';
+  static const String routeName = '/gpx/dps/droit_penal/quiz/droit_penal_general';
   final String uid;
   final String email;
 
@@ -3685,7 +3685,7 @@ class _QuizDroitPenalePageState extends State<QuizDroitPenalePage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3888,7 +3888,7 @@ class _QuizDroitPenalePageState extends State<QuizDroitPenalePage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4071,7 +4071,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4604,10 +4603,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4978,7 +4978,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5019,9 +5019,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 
 /// Page : La sanction — Règles en cas de pluralité d’infractions
-/// Route alignée avec la config : /sanction/pluralite_infractions
+/// Route alignée avec la config : /gpx/sanction/pluralite_infractions
 class PluraliteInfractionsPage extends StatelessWidget {
-  static const String routeName = '/sanction/pluralite_infractions';
+  static const String routeName = '/gpx/sanction/pluralite_infractions';
   const PluraliteInfractionsPage({super.key});
 
   @override
@@ -32,9 +32,9 @@ class PluraliteInfractionsPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Objectif',
-                  child: const Text(
+                  child: Text(
                     'Comprendre les effets de la pluralité d’infractions sur la qualification et le prononcé des peines : '
                     'concours réel, concours idéal, réitération, confusion des peines.',
                   ),
@@ -52,12 +52,12 @@ class PluraliteInfractionsPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '1) Concours d’infractions',
                   caption: 'Concours réel vs concours idéal',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Concours réel : plusieurs faits distincts → plusieurs infractions.',
                       ),
@@ -72,12 +72,12 @@ class PluraliteInfractionsPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '2) Non bis in idem',
                   caption: 'Pas de double condamnation pour les mêmes faits',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Vérifier l’unicité des faits, des parties, de la période, et la nature des sanctions.',
                       ),
@@ -89,12 +89,12 @@ class PluraliteInfractionsPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '3) Confusion des peines',
                   caption: 'Principe, total/partiel, motivation',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Peut être ordonnée pour regrouper des peines prononcées à propos de faits distincts.',
                       ),
@@ -109,12 +109,12 @@ class PluraliteInfractionsPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '4) Vigilances',
                   caption: 'PV & dossier',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _ChecklistLine(
                         'Chronologie claire des faits — dates/heures, lieux, victimes.',
                       ),
@@ -140,13 +140,13 @@ class PluraliteInfractionsPage extends StatelessWidget {
                 const _LinkTile(
                   title: 'Classification des peines',
                   subtitle: 'Peines principales/complémentaires · Mesures',
-                  route: '/sanction/classification_peines',
+                  route: '/gpx/sanction/classification_peines',
                 ),
                 const SizedBox(height: 10),
                 const _LinkTile(
                   title: 'Causes d’aggravation',
                   subtitle: 'Récidive · Circonstances aggravantes',
-                  route: '/sanction/causes_aggravation',
+                  route: '/gpx/sanction/causes_aggravation',
                 ),
               ],
             ),
@@ -269,7 +269,7 @@ class _Token {
   static BoxShadow get shadow => BoxShadow(
     color: Colors.black.withValues(alpha: .08),
     blurRadius: 20,
-    offset: Offset(0, 10),
+    offset: const Offset(0, 10),
   );
 }
 

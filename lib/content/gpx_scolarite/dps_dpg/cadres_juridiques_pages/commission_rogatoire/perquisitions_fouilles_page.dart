@@ -16,17 +16,17 @@ class PerquisitionsFouillesPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.88);
+        : const Color(0xFF1F1F1F).withValues(alpha: .88);
 
     final Color cardBlue = isDark
         ? const Color(0xFF0D1B2A)
         : const Color(0xFFE3F2FD);
-    final Color cardBlueAccent = const Color(0xFF1565C0);
+    const Color cardBlueAccent = Color(0xFF1565C0);
 
     final Color cardTeal = isDark
         ? const Color(0xFF00363A)
         : const Color(0xFFE0F2F1);
-    final Color cardTealAccent = const Color(0xFF00695C);
+    const Color cardTealAccent = Color(0xFF00695C);
 
     const Color articleRed = Color(0xFFD32F2F);
 
@@ -78,19 +78,19 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                 height: 1.35,
                 color: textSoft,
               ),
-              children: [
-                const TextSpan(
+              children: const [
+                TextSpan(
                   text:
                       'Perquisitions dans le cadre de l’information judiciaire (',
                 ),
                 TextSpan(
                   text: 'articles 92 et suivants du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ') et règles applicables aux fouilles corporelles ou de véhicule '
                       'sur commission rogatoire.',
@@ -120,49 +120,49 @@ class PerquisitionsFouillesPage extends StatelessWidget {
             cardColor: cardBlue,
             accent: cardBlueAccent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               // Paragraphe avec "articles 92 et suivants"
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Les perquisitions réalisées dans le cadre de l’information judiciaire '
                       'sont régies par les ',
                 ),
                 TextSpan(
                   text: 'articles 92 et suivants du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       '. Elles peuvent être accomplies par le juge d’instruction ou, '
                       'par délégation, par un officier de police judiciaire agissant '
                       'sur commission rogatoire.',
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // 3.3.1.1 Règles générales
-              const _SubTitle('3.3.1.1 — Les règles générales'),
-              const _Paragraph(
+              _SubTitle('3.3.1.1 — Les règles générales'),
+              _Paragraph(
                 'Les règles relatives aux perquisitions sont, pour l’essentiel, '
                 'communes aux cadres juridiques du flagrant délit et de la commission '
                 'rogatoire. On retrouve notamment :',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // Ici je laisse les puces telles quelles (texte simple) : si tu veux
               // aussi les articles en rouge dans les puces, on pourra faire une
               // version rich de _BulletPoint, mais ça touche tous tes écrans.
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les lieux dont l’accès est soumis à un régime particulier : '
                     'ambassades, domiciles des agents diplomatiques, Parlement, locaux '
                     'universitaires, établissements militaires, etc. ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les lieux relevant de la compétence exclusive d’un magistrat en '
                     'matière d’instruction : cabinet ou domicile d’un avocat, d’un '
@@ -173,7 +173,7 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                     'exerçant des fonctions juridictionnelles (articles 56-1 à 56-5 et '
                     '96 alinéa 4 du Code de procédure pénale) ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les lieux où la perquisition est possible : domicile des personnes '
                     'paraissant avoir participé au crime ou détenir des pièces, '
@@ -183,18 +183,18 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                     'perquisition est réalisée sur commission rogatoire (articles 56 et '
                     '94 du Code de procédure pénale) ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'le respect des heures légales de perquisition (article 59 du Code '
                     'de procédure pénale) et les exceptions à ce principe, notamment :',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les perquisitions en matière de criminalité organisée ou de '
                     'trafic de stupéfiants, réalisées selon des régimes spécifiques '
                     'prévus par le Code de procédure pénale ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'les perquisitions en cas de crime flagrant contre les personnes, '
                     'autorisées par le juge d’instruction dans les conditions prévues '
@@ -204,40 +204,40 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                     'pour prévenir une nouvelle atteinte (article 97-2 Code de '
                     'procédure pénale).',
               ),
-              const SizedBox(height: 16),
+              SizedBox(height: 16),
 
               // 3.3.1.2 Règles spécifiques en information
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2 — Les règles spécifiques aux perquisitions effectuées '
                 'en matière d’information',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // 3.3.1.2.1 Compétence OPJ
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2.1 — La compétence de l’officier de police judiciaire',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'L’officier de police judiciaire (OPJ) ne peut effectuer une perquisition '
                 'en matière d’information judiciaire que si cet acte lui a été '
                 'délégué par commission rogatoire, générale ou spéciale. Il agit alors '
                 'dans les limites fixées par le magistrat instructeur.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.1.2.2 Compétence APJ
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2.2 — La compétence de l’agent de police judiciaire',
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: 'L’article 97-1 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' prévoit que les officiers de police judiciaire, ou sous leur '
                       'contrôle les agents de police judiciaire, peuvent recourir, '
@@ -245,82 +245,82 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’article 57-1.',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Ils peuvent ainsi, au cours d’une perquisition, accéder à des données '
                 'informatiques stockées sur des serveurs distants et requérir toute '
                 'personne susceptible de connaître les mesures de protection de ces '
                 'données, ou susceptible de fournir les informations permettant d’y '
                 'accéder.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.1.2.3 Présences requises
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2.3 — Les présences requises lors de la perquisition',
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: 'Les articles 95 et 96 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' distinguent la perquisition au domicile de la personne mise en '
                       'examen et celle réalisée au domicile d’un tiers. Certaines '
                       'situations particulières sont également prévues.',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // 3.3.1.2.3.1 Domicile de la personne mise en examen
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2.3.1 — La perquisition au domicile de la personne mise en examen',
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: 'L’article 95 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' impose au juge d’instruction ou à l’officier de police '
                       'judiciaire délégué de respecter les dispositions des ',
                 ),
                 TextSpan(
                   text: 'articles 57 et 59',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', applicables en matière de crimes et délits flagrants.',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'La perquisition doit, en principe, être réalisée en présence de la '
                 'personne mise en examen. En cas d’impossibilité, elle peut se tenir '
                 'en présence d’un représentant désigné par cette personne ou, à '
                 'défaut, en présence de deux témoins requis par l’officier de police '
                 'judiciaire et ne relevant pas de son autorité administrative.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Si la personne mise en examen est détenue, la perquisition est '
                 'effectuée à son domicile en sa présence, après extraction de la '
                 'maison d’arrêt décidée par le juge d’instruction. En cas '
@@ -329,10 +329,10 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                 'défaut, en présence de deux témoins requis par l’officier de police '
                 'judiciaire.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.1.2.3.2 Personne sous CJ / ARSE avec interdiction d'armes
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2.3.2 — La perquisition au domicile d’une personne placée '
                 'sous contrôle judiciaire ou assignée à résidence avec surveillance '
                 'électronique et soumise à une interdiction de détenir une arme',
@@ -340,12 +340,12 @@ class PerquisitionsFouillesPage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text: 'Article 141-5 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' autorise les services de police et les unités de gendarmerie à '
                       'réaliser une perquisition au domicile d’une telle personne '
@@ -355,32 +355,32 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'articles 56 à 58 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' et avec l’accord préalable ou sur les instructions du juge '
                       'd’instruction.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // 3.3.1.2.3.3 Domicile d’un tiers
-              const _SubTitle(
+              _SubTitle(
                 '3.3.1.2.3.3 — La perquisition au domicile d’un tiers',
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: 'Article 96 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' vise le domicile « autre que celui de la personne mise en '
                       'examen ». Il peut s’agir du domicile d’un témoin, de la partie '
@@ -389,17 +389,17 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                       'participation aux faits.',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Le tiers au domicile duquel la perquisition se déroule est invité à y '
                 'assister. En cas d’absence ou de refus, l’opération se fait en '
                 'présence de deux de ses parents ou alliés, s’ils sont présents sur '
                 'les lieux. À défaut, la perquisition se déroule en présence de deux '
                 'témoins.',
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Lorsque la perquisition a lieu hors du domicile de la personne '
                       'mise en examen, le juge d’instruction ou l’officier de police '
@@ -408,12 +408,12 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                 TextSpan(
                   text:
                       'articles 56 et 56-1 à 56-5 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       '. Ces dispositions imposent le respect des formalités relatives '
                       'aux perquisitions, y compris la possibilité, prévue par '
@@ -422,8 +422,8 @@ class PerquisitionsFouillesPage extends StatelessWidget {
                       'des renseignements utiles.',
                 ),
               ]),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Même lorsque le texte renvoie principalement à la perquisition au '
                 'domicile de la personne mise en examen, le procès-verbal d’une '
                 'perquisition au domicile d’un tiers doit être établi immédiatement ou '
@@ -496,10 +496,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -594,7 +594,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     // Style de base du paragraphe
     final TextStyle baseStyle = GoogleFonts.fustat(
@@ -675,7 +675,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -724,7 +724,7 @@ class _BulletPoint extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -777,7 +777,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -802,7 +802,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -817,10 +817,9 @@ class _ExempleBox extends StatelessWidget {
 /// BLOC NOTA / INFO / SANCTION
 /// ------------------------------------------------------------------
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -831,13 +830,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -850,13 +848,9 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

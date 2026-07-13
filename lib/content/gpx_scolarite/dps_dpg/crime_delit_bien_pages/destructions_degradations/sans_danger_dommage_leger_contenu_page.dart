@@ -106,16 +106,16 @@ class SansDangerDommageLegerPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 635-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les destructions, dégradations ou détériorations ne présentant pas un danger pour les personnes et entraînant un dommage léger.",
                 ),
@@ -131,79 +131,79 @@ class SansDangerDommageLegerPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Lorsque les destructions, dégradations ou détériorations sont de faible importance, "
                 "le dommage est qualifié de « léger ». Dans ce cas, la contravention de 5e classe se substitue au délit.\n"
                 "Les éléments constitutifs sont identiques à ceux des destructions volontaires, "
                 "à l’exception de la gravité du dommage.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Une atteinte matérielle"),
-              const _Paragraph(
+              _SubTitle("A) Une atteinte matérielle"),
+              _Paragraph(
                 "Le législateur ne précise pas les moyens : en principe, n’importe quel moyen peut être utilisé "
                 "(à l’exception de l’incendie et de l’usage de substances explosives, qui relèvent d’autres incriminations).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Sur un bien appartenant à autrui"),
-              const _Paragraph(
+              _SubTitle("B) Sur un bien appartenant à autrui"),
+              _Paragraph(
                 "La notion de « bien appartenant à autrui » est entendue largement. "
                 "Certains biens bénéficient cependant d’une protection spécifique.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemples de protections spécifiques (hors R.635-1) : sabotage ",
                   ),
                   TextSpan(
                     text: "(article 411-9 du Code pénal)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ", biens placés sous scellés "),
+                  TextSpan(text: ", biens placés sous scellés "),
                   TextSpan(
                     text: "(article 434-22 du Code pénal)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ", biens dans un dépôt public "),
+                  TextSpan(text: ", biens dans un dépôt public "),
                   TextSpan(
                     text: "(article 433-4 du Code pénal)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Entraînant un dommage léger"),
-              const _Paragraph(
+              _SubTitle("C) Entraînant un dommage léger"),
+              _Paragraph(
                 "Le dommage doit être « léger ». Cette notion est délicate à cerner : "
                 "seule la gravité du dommage est prise en considération et elle reste à l’appréciation du juge.\n"
                 "Le résultat peut prendre trois formes : destruction, dégradation, détérioration (mais avec une faible gravité).",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Destruction : le bien est rendu impropre à l’usage auquel il était destiné (même partiellement).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dégradation : les qualités du bien diminuent, sans le rendre inutilisable.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Détérioration : perte de valeur, mais bien réparable et restant apte à son rôle.",
               ),
@@ -218,21 +218,21 @@ class SansDangerDommageLegerPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Par dérogation à la règle habituelle des contraventions, le texte exige une intention coupable : "
                 "le dommage doit être « volontaire ».",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 635-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’élément moral repose sur la volonté de causer le dommage léger (volonté de l’atteinte).",
                 ),
@@ -259,56 +259,56 @@ class SansDangerDommageLegerPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Qualification : contravention de 5e classe — ",
                 ),
                 TextSpan(
                   text: "article R. 635-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(text: "Amende maximale : 1 500 €."),
+              SizedBox(height: 8),
+              _BulletPoint(text: "Amende maximale : 1 500 €."),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article R. 635-1 alinéa 10 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Complicité : OUI (instruction / aide et assistance) — ",
                 ),
                 TextSpan(
                   text: "article R. 635-1 alinéa 9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -346,10 +346,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -414,7 +414,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -457,7 +457,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -519,7 +519,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -530,10 +530,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -545,13 +544,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -564,13 +562,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

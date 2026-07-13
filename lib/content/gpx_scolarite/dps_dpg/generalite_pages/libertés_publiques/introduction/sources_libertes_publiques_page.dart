@@ -37,7 +37,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF5E35B1)
         : const Color(0xFF512DA8);
@@ -104,10 +104,10 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 1 — ÉVOLUTION HISTORIQUE JUSQU’EN 1958
           // =====================================================
-          _NotaBox(
+          const _NotaBox(
             title: 'Chapitre 1 — Évolution historique jusqu’en 1958',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'Avant d’identifier les sources actuelles, il faut comprendre comment la '
                     'notion même de liberté publique s’est progressivement imposée : apports '
@@ -190,13 +190,13 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'À ces sources philosophiques s’ajoutent des textes juridiques étrangers qui '
                 'proclament déjà des droits et organisent des garanties contre l’arbitraire.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Les pactes anglais : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -209,7 +209,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                       'du Parlement sur son pouvoir.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Les déclarations américaines : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -256,7 +256,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Le polycopié met d’abord en avant les caractéristiques de la Déclaration, '
                 'puis son contenu concret en matière de droits de l’Homme et du citoyen.',
               ),
@@ -351,7 +351,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 6),
-              _ExempleBox(
+              const _ExempleBox(
                 title: 'Idée-clé à retenir',
                 bodySpans: [
                   TextSpan(
@@ -377,13 +377,13 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Après 1789, différents régimes se succèdent. Chacun réinterprète les droits '
                 'et libertés proclamés, en les renforçant ou, au contraire, en les restreignant.',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'La Constituante (1789–1791) : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -394,7 +394,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                       'de réunion et d’expression, développement de la presse et des clubs politiques.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Les projets de 1793 (Girondins, Montagnards) : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -406,7 +406,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                       'limitée par l’instabilité politique.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Directoire, Consulat et Empire (fin XVIIIᵉ – début XIXᵉ siècle) : ',
@@ -418,7 +418,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                       'contrôle des associations, commissions de sûreté, prisons d’État…',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text: 'Chartes de 1814 et 1830 : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
@@ -430,7 +430,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                       'et maintien de fortes limitations.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Constitution de 1848 et IIᵉ République, Second Empire, IIIᵉ République, '
@@ -454,10 +454,10 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 2 — SOURCES ACTUELLES
           // =====================================================
-          _NotaBox(
+          const _NotaBox(
             title: 'Chapitre 2 — Les sources actuelles des libertés publiques',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'Le régime contemporain des libertés publiques repose principalement '
                     'sur la Constitution de 1958 et sur des conventions internationales '
@@ -500,7 +500,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Ils ont été complétés par des lois importantes qui créent de nouveaux droits '
                 'ou précisent la protection de libertés déjà existantes.',
               ),
@@ -523,7 +523,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _ExempleBox(
+              const _ExempleBox(
                 title: 'Conséquence pratique',
                 bodySpans: [
                   TextSpan(
@@ -550,7 +550,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'Les libertés publiques ne sont plus seulement protégées au niveau interne. '
                 'Elles bénéficient aussi d’un ensemble de garanties internationales, '
                 'issues principalement de l’Organisation des Nations Unies et du Conseil de l’Europe.',
@@ -590,7 +590,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 6),
-              _Paragraph(
+              const _Paragraph(
                 'Adoptée par l’Assemblée générale des Nations Unies le 10 décembre 1948, '
                 'la Déclaration universelle proclame un catalogue très large de droits '
                 'civils, politiques, économiques, sociaux et culturels. Elle a une valeur '
@@ -680,9 +680,9 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Toutes les sources des libertés publiques n’ont pas la même force juridique. '
                       'Plus un texte est élevé dans la hiérarchie des normes, plus la liberté qu’il '
@@ -694,7 +694,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                       '• Constitution et textes à valeur constitutionnelle : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'Constitution de 1958, Déclaration de 1789, préambule de 1946, Charte de '
                       'l’environnement, principes fondamentaux reconnus par les lois de la République.\n',
@@ -703,7 +703,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                   text: '• Engagements internationaux : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'conventions de l’ONU, CEDH, traités relatifs aux droits de l’Homme…\n',
                 ),
@@ -711,7 +711,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                   text: '• Lois et textes de valeur législative : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'codes et lois ordinaires qui organisent concrètement l’exercice des libertés.\n',
                 ),
@@ -719,7 +719,7 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                   text: '• Principes généraux du droit : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'règles dégagées par la jurisprudence administrative (ex. respect des droits de la défense).\n',
                 ),
@@ -727,13 +727,13 @@ class SourcesLibertesPubliquesPage extends StatelessWidget {
                   text: '• Règlements : ',
                   style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'décrets, arrêtés, circulaires qui précisent les modalités pratiques '
                       'd’exercice ou de restriction des libertés publiques.',
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: 'Réflexe opérationnel',
                 bodySpans: [
@@ -784,10 +784,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -830,7 +830,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -864,7 +864,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -873,7 +873,7 @@ class _BulletPoint extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.95);
+        : const Color(0xFF1F1F1F).withValues(alpha: .95);
 
     return Padding(
       padding: const EdgeInsets.only(left: 4, bottom: 6),
@@ -919,7 +919,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -944,7 +944,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -979,7 +979,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .75 : .96),
+        color: bgColor.withValues(alpha: isDark ? .75 : .96),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -992,7 +992,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

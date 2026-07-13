@@ -16,7 +16,7 @@ class PPActionPubliqueChapitre1TitrePreliminairePage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardBg = isDark
         ? const Color(0xFF2B3036)
@@ -193,7 +193,7 @@ class PPActionPubliqueChapitre1TitrePreliminairePage extends StatelessWidget {
               const SizedBox(height: 6),
 
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'Le respect du secret professionnel de la défense et du conseil, ',
                 ),
@@ -214,10 +214,10 @@ class PPActionPubliqueChapitre1TitrePreliminairePage extends StatelessWidget {
               ]),
               const SizedBox(height: 12),
 
-              _NotaBox(
+              const _NotaBox(
                 title: 'À retenir pour l’enquêteur',
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         'ces principes guident toutes les mesures d’enquête. Un acte utile '
                         'juridiquement mais réalisé en violation de ces garanties fondamentales '
@@ -247,7 +247,7 @@ class PPActionPubliqueChapitre1TitrePreliminairePage extends StatelessWidget {
             accent: accentBlue,
             titleColor: titleBlue,
             children: [
-              _IntroBullet(
+              const _IntroBullet(
                 text:
                     'Une action tendant à faire appliquer à l’auteur une peine prévue par la loi : '
                     'c’est l’action publique.',
@@ -267,7 +267,7 @@ class PPActionPubliqueChapitre1TitrePreliminairePage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              _IntroBullet(
+              const _IntroBullet(
                 text:
                     'Une action visant à la réparation du dommage corporel, matériel ou moral '
                     'subi par la victime : c’est l’action civile.',
@@ -513,10 +513,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -581,7 +581,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -624,7 +624,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -686,7 +686,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -718,7 +718,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -731,7 +731,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

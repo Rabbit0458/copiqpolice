@@ -101,41 +101,41 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
             cardColor: cardChap1,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les libertés publiques sont une catégorie particulière de droits de l’homme : elles sont reconnues par l’État, "
                 "insérées dans le droit positif, et dotées de garanties juridiques.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Ce que cela implique concrètement"),
-              const _BulletPoint(
+              _SubTitle("Ce que cela implique concrètement"),
+              _BulletPoint(
                 text:
                     "Ce sont des droits : l’État doit s’abstenir d’y porter atteinte, mais aussi permettre leur exercice effectif.",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple : la liberté d’enseignement suppose aussi des moyens concrets (ex. subventions à l’enseignement privé) afin d’éviter une liberté réservée aux plus aisés.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ce sont des droits reconnus par l’État : ils organisent les rapports entre l’État et les individus (et parfois entre individus).",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Ils sont consacrés par un texte : constitutionnel, législatif, éventuellement réglementaire, ou une convention internationale ratifiée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ils bénéficient d’une protection juridique particulière : les libertés qualifiées de « fondamentales » ont un régime plus favorable que d’autres droits.",
               ),
@@ -157,9 +157,9 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 "Au sens simple, la liberté est le pouvoir d’autodétermination : l’individu choisit lui-même son comportement.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette définition est la plus accessible, mais elle reste incomplète : toute liberté rencontre des limites (autrui, ordre public, sécurité, etc.).",
                   ),
@@ -182,29 +182,29 @@ class NotionLibertesPubliquesPage extends StatelessWidget {
                 cardColor: cardDef,
                 accent: accentAmber,
                 titleColor: textMain,
-                children: [
+                children: const [
                   _Paragraph.rich([
-                    const TextSpan(text: "Les libertés publiques sont des "),
-                    const TextSpan(
+                    TextSpan(text: "Les libertés publiques sont des "),
+                    TextSpan(
                       text: "droits et libertés fondamentaux",
                       style: TextStyle(fontWeight: FontWeight.w900),
                     ),
-                    const TextSpan(text: " reconnus par l’État ("),
+                    TextSpan(text: " reconnus par l’État ("),
                     TextSpan(
                       text:
                           "texte constitutionnel, législatif, éventuellement réglementaire, ou convention internationale ratifiée",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(
+                    TextSpan(
                       text:
                           "), dont l’exercice est réglementé et dont les atteintes sont sanctionnées.",
                     ),
                   ]),
-                  const SizedBox(height: 10),
-                  const _Paragraph(
+                  SizedBox(height: 10),
+                  _Paragraph(
                     "Donc : une liberté devient « publique » lorsque l’État en consacre le principe, en aménage l’exercice "
                     "et en assure le respect (y compris par des sanctions en cas d’atteinte).",
                   ),
@@ -246,10 +246,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -314,7 +314,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -357,7 +357,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -419,7 +419,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -451,7 +451,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -464,7 +464,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

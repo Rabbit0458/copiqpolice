@@ -168,9 +168,9 @@ class EtrangersGeneralitesPage extends StatelessWidget {
                 const TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La déduction de la nationalité doit reposer sur des critères objectifs excluant toute discrimination. La simple évocation “être né à l’étranger” sans précisions ne suffit pas.",
                   ),
@@ -199,9 +199,9 @@ class EtrangersGeneralitesPage extends StatelessWidget {
                 "• déclaration spontanée de sa qualité d’étranger, etc.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Sont à exclure : couleur de peau, langue parlée, tenue vestimentaire… (risque de discrimination).",
                   ),
@@ -209,18 +209,18 @@ class EtrangersGeneralitesPage extends StatelessWidget {
                 title: "VIGILANCE",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(text: "Durée : "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "Durée : "),
+                TextSpan(
                   text: "pas de contrôle systématique",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " et "),
-                const TextSpan(
+                TextSpan(text: " et "),
+                TextSpan(
                   text: "maximum 6 heures consécutives dans un même lieu",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 14),
               const _SubTitle("C) Visite sommaire d’un véhicule"),
@@ -254,21 +254,21 @@ class EtrangersGeneralitesPage extends StatelessWidget {
                 "ou rechercher/constater les infractions relatives à l’entrée et au séjour des étrangers en France.",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(text: "Immobilisation : "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "Immobilisation : "),
+                TextSpan(
                   text: "4 heures maximum",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " dans l’attente des instructions du procureur. Sans instructions à l’issue : libre de repartir.",
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La retenue ne s’applique pas au conducteur : il peut téléphoner librement (sauf procédure incidente). "
                         "Des dispositions similaires existent pour navires/engins flottants.",
@@ -330,9 +330,9 @@ class EtrangersGeneralitesPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Tous les titres de séjour sont sécurisés : un examen attentif peut révéler un faux ou au minimum des anomalies justifiant vérifications OPJ.",
                   ),
@@ -364,13 +364,13 @@ class EtrangersGeneralitesPage extends StatelessWidget {
                 "Finalité : examens de situation administrative et/ou décisions administratives la concernant.",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(text: "Durée maximale : "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "Durée maximale : "),
+                TextSpan(
                   text: "24 heures",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " à compter du début du contrôle."),
+                TextSpan(text: " à compter du début du contrôle."),
               ]),
               const SizedBox(height: 12),
               const _SubTitle("Compétence & contrôle"),
@@ -452,10 +452,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -520,7 +520,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -563,7 +563,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -625,7 +625,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -657,7 +657,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -670,7 +670,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

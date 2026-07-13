@@ -90,46 +90,46 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 311-1 du C.S.I. (III-10° et 13°)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : introduit la définition réglementaire du port et du transport des armes.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Port d’arme : avoir une arme sur soi, utilisable immédiatement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transport d’arme : déplacer une arme en l’ayant auprès de soi, inutilisable immédiatement.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En principe, il n’existe pas d’autorisation administrative générale de port/transport pour les particuliers. "
                         "Exceptions : autorisations ministérielles de port d’arme.",
                   ),
-                  const TextSpan(text: " "),
+                  TextSpan(text: " "),
                   TextSpan(
                     text: "Articles R. 315-5 et R. 315-6 du C.S.I.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -143,31 +143,31 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Sur la base de "),
+                TextSpan(text: "Sur la base de "),
                 TextSpan(
                   text: "l’article L. 315-1 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "l’article R. 315-1 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " précise les règles générales d’interdiction de port ou de transport selon la catégorie (donc selon la dangerosité).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Idée clé : plus la catégorie est dangereuse, plus l’interdiction est stricte et les exceptions sont encadrées.",
               ),
             ],
@@ -181,38 +181,38 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("I — Catégories A et B"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("I — Catégories A et B"),
+              _BulletPoint(
                 text:
                     "Interdiction du port des armes, éléments d’armes et munitions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transport : interdit sauf motif légitime (et/ou exceptions prévues par les textes).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("II — Catégories C et D"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("II — Catégories C et D"),
+              _BulletPoint(
                 text:
                     "Interdiction, sans motif légitime, du port et du transport des armes, éléments d’armes et munitions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Important : pour les couteaux (catégorie D), le port/transport peut être admis s’il existe un motif légitime.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La légitimité dépend de l’activité réelle : le couteau doit présenter des caractéristiques cohérentes avec l’usage (travail, activité, déplacement…). "
                 "Elle s’apprécie au cas par cas, à partir des faits et, si nécessaire, des titres détenus.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le transport peut être professionnel (ex. artisan) ou non professionnel (ex. tireur sportif qui se rend à son club).",
               ),
             ],
@@ -226,53 +226,53 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
             cardColor: cardCases,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Afin de concilier sécurité publique et pratiques autorisées, des règles spécifiques existent, notamment pour la chasse, le tir sportif et les reconstitutions historiques : ",
                 ),
                 TextSpan(
                   text: "articles R. 315-2 et R. 315-3 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("III — Concernant la chasse"),
-              const _Paragraph(
+              _SubTitle("III — Concernant la chasse"),
+              _Paragraph(
                 "Le permis de chasser, accompagné d’un titre français de validation de l’année en cours, vaut titre de port légitime "
                 "pour les armes/éléments/munitions de catégorie C ainsi que pour certaines armes de catégorie D (utilisation en action de chasse ou activité liée).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Pour ces mêmes armes/éléments/munitions, le permis de chasser vaut aussi titre de transport : dans ce cas, la validation de l’année en cours n’est pas nécessaire.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("IV — Concernant le tir sportif"),
-              const _Paragraph(
+              _SubTitle("IV — Concernant le tir sportif"),
+              _Paragraph(
                 "La licence de tir en cours de validité vaut titre de transport légitime des armes, éléments d’armes, systèmes d’alimentation et munitions "
                 "des catégories A, B et C, ainsi que des armes/éléments/munitions de catégorie D utilisés dans la pratique du sport relevant de la fédération.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("V — Les collectionneurs"),
-              const _Paragraph(
+              _SubTitle("V — Les collectionneurs"),
+              _Paragraph(
                 "La carte de collectionneur vaut titre de transport légitime des armes de catégorie C, pour les activités liées à :",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text: "Exposition dans un musée ouvert au public.",
               ),
-              const _IntroBullet(text: "Conservation."),
-              const _IntroBullet(text: "Connaissance / étude des armes."),
+              _IntroBullet(text: "Conservation."),
+              _IntroBullet(text: "Connaissance / étude des armes."),
             ],
           ),
 
@@ -284,128 +284,128 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
             cardColor: cardAgents,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "VI — Fonctionnaires / agents chargés d’une mission de police",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Ils peuvent être autorisés à porter, dans l’exercice ou à l’occasion de leurs fonctions, certaines armes et munitions détenues régulièrement : ",
                 ),
                 TextSpan(
                   text: "article R. 315-8 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Concernant les militaires (officiers / sous-officiers), le port s’effectue selon leurs règlements particuliers : ",
                 ),
                 TextSpan(
                   text: "article R. 315-9 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Douanes et administration pénitentiaire : transport/port/usage des armes remises par l’administration : ",
                 ),
                 TextSpan(
                   text: "article R. 315-10 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Accès à un ERP hors service (PN / GN)"),
+              _SubTitle("Accès à un ERP hors service (PN / GN)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Un fonctionnaire de police nationale ou un gendarme d’active peut accéder à un ERP hors service en étant porteur de son arme : ",
                 ),
                 TextSpan(
                   text: "article R. 315-11 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph("Conditions essentielles (à retenir) :"),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _Paragraph("Conditions essentielles (à retenir) :"),
+              SizedBox(height: 8),
+              _IntroBullet(
                 text:
                     "Être à jour de la formation continue (emploi des armes).",
               ),
-              const _IntroBullet(text: "Ne jamais se séparer de l’arme."),
-              const _IntroBullet(
+              _IntroBullet(text: "Ne jamais se séparer de l’arme."),
+              _IntroBullet(
                 text:
                     "Avant un contrôle d’accès : justifier sa qualité (carte pro + brassard d’identification).",
               ),
-              const _IntroBullet(text: "Arme portée de façon non visible."),
+              _IntroBullet(text: "Arme portée de façon non visible."),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "Policiers adjoints / réservistes : autorisations possibles",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si la mission le requiert, ils peuvent être autorisés à porter certaines armes et systèmes d’alimentation : ",
                 ),
                 TextSpan(
                   text: "articles R. 411-7 et R. 411-29 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Ils peuvent également être autorisés (selon mission) au port/transport de certains équipements : grenades de désencerclement, "
                 "grenades lacrymogènes, armes à impulsion électrique, aérosols lacrymogènes/incapacitants, bâtons de défense, etc.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Réservistes retraités : possibilité de port/transport du LBD 40 mm et munitions si habilitation à jour lors de l’intégration, "
                         "sur autorisation du chef de service — ",
                   ),
                   TextSpan(
                     text: "article R. 411-29 du C.S.I.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -420,106 +420,106 @@ class ArmesReglesPortTransportPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("VII — Activités privées de sécurité"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("VII — Activités privées de sécurité"),
+              _Paragraph(
                 "Le personnel d’entreprises pouvant être amené à assurer la sécurité des biens ou le gardiennage peut, lorsque la mission le justifie, "
                 "être autorisé à porter des armes et munitions à l’extérieur des bâtiments/locaux.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Autorisation délivrée par le préfet du département où se situent les lieux à surveiller ; révocable à tout moment.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "VIII — Personnes exposées à des risques exceptionnels",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le ministre de l’Intérieur peut autoriser, par arrêté, une personne exposée à des risques exceptionnels d’atteinte à sa vie "
                       "à porter et transporter une arme de poing : ",
                 ),
                 TextSpan(
                   text: "article R. 312-39 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Munitions correspondantes : limite de 50 cartouches par arme — ",
                 ),
                 TextSpan(
                   text: "article R. 312-47 1° du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Possibilité de port sur le lieu d’activité professionnelle — ",
                 ),
                 TextSpan(
                   text: "article R. 315-5-1 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("IX — Personnes étrangères séjournant en France"),
+              _SubTitle("IX — Personnes étrangères séjournant en France"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le ministre de l’Intérieur peut autoriser, par arrêté, certains agents/personnalités étrangers et leurs agents de sécurité, "
                       "ainsi que des personnes exerçant des fonctions diplomatiques/internationales, à détenir/porter/transporter une arme de poing : ",
                 ),
                 TextSpan(
                   text: "article R. 315-6 du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Munitions : limite de 50 cartouches par arme — ",
                 ),
                 TextSpan(
                   text: "article R. 312-47 1° du C.S.I.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Peut aussi porter deux armes parmi certaines catégories : matraque/bâton télescopique (cat. D a) ou aérosol lacrymogène/incapacitant (cat. D b).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La durée de l’autorisation est limitée (mission/séjour/fonctions). Dans certains cas : durée maximale d’un an, renouvelable. "
                 "À titre exceptionnel, le transport de plusieurs armes de poing et munitions par une même personne assurant la sécurité peut être autorisé.",
               ),
@@ -559,10 +559,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -627,7 +627,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -670,7 +670,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -732,7 +732,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -743,10 +743,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -758,13 +757,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -777,13 +775,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

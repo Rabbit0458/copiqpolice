@@ -110,13 +110,13 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 441-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’établissement et l’usage de faux certificats ou attestations.",
                 ),
@@ -160,43 +160,43 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("B) Seul l’écrit est pris en compte"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La seule fourniture de renseignements oraux, même inexacts, ne constitue pas l’établissement d’attestations ou de certificats inexacts ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 21 février 1985)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemples admis : une simple lettre / déclaration écrite sur les circonstances d’un accident ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 30 janvier 1962)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " ; un certificat d’immatriculation provisoire délivré par un garagiste ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 14 février 1973)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
@@ -212,25 +212,25 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
                     "Il doit être établi au profit d’un tiers (pas une attestation sur l’honneur rédigée pour soi-même).",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(text: "Signature authentique exigée "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "Signature authentique exigée "),
+                TextSpan(
                   text: "(Cass. crim., 15 mars 2000)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
               const _SubTitle("D) Les comportements incriminés"),
-              _Paragraph.rich([
-                const TextSpan(text: "L’"),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "L’"),
+                TextSpan(
                   text: "article 441-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " incrimine plusieurs comportements :"),
+                TextSpan(text: " incrimine plusieurs comportements :"),
               ]),
               const SizedBox(height: 10),
 
@@ -251,32 +251,32 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
                 "Le délit est consommé par une altération de la vérité dans le document initialement sincère.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : surcharge de la date de validité provisoire du certificat d’immatriculation ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 14 février 1973)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(
+                  TextSpan(text: ".\n"),
+                  TextSpan(
                     text:
                         "Jurisprudence : modification du résultat d’une analyse de sang sur un certificat délivré ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(C.A. Rouen, 22 septembre 1999)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
@@ -287,20 +287,20 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
                 "L’usage suppose au préalable l’existence d’un faux : soit un établissement matériellement inexact, soit une falsification d’un document sincère.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : attestation produite dans une procédure de divorce relatant faussement des violences ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 31 janvier 2007)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -336,38 +336,38 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 441-7 alinéa 5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " : lorsque l’infraction est commise :"),
+                TextSpan(text: " : lorsque l’infraction est commise :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Soit en vue de porter préjudice au Trésor public ou au patrimoine d’autrui.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Soit en vue d’obtenir un titre de séjour ou le bénéfice d’une protection contre l’éloignement.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : employeur faisant établir par des salariés de fausses attestations produites en procédure prud’homale ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 26 septembre 2001)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " — la circonstance aggravante n’était pas retenue au stade de l’établissement, mais applicable à l’usage.",
                   ),
@@ -384,58 +384,58 @@ class FauxCertificatsOuAttestationsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Simple : "),
-                const TextSpan(
+                TextSpan(text: "Simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 441-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (alinéa 5) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (alinéa 5) : "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 441-7 alinéa 5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(
                   text: "l’article 441-12 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Tentative : OUI — "),
+                TextSpan(
                   text: "article 441-9 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (prévoit expressément la tentative des délits, dont ceux visés à l’article 441-7).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text: "Complicité : OUI (règles générales de la complicité).",
               ),
             ],
@@ -474,10 +474,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -542,7 +542,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -585,7 +585,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -647,7 +647,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -658,10 +658,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -673,13 +672,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -692,13 +690,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

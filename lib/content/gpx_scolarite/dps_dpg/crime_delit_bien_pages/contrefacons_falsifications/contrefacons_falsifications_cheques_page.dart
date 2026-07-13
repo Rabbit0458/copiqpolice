@@ -119,16 +119,16 @@ class ContrefaconsFalsificationsChequesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 163-3 du Code monétaire et financier",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : incrimine les actes délictueux concernant les chèques et les autres instruments de paiement "
                       "mentionnés à l’article L. 133-4 (dont les cartes de paiement ou de retrait).",
@@ -145,18 +145,18 @@ class ContrefaconsFalsificationsChequesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le texte fait apparaître trois comportements répréhensibles distincts, "
                 "relatifs à l’usage de moyens de paiement expressément énumérés (chèques et instruments visés par l’article L. 133-4 du C.M.F.).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) Un moyen de paiement visé par la loi"),
+              _SubTitle("A) Un moyen de paiement visé par la loi"),
               _NotaBox(
                 title: "Définition",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un instrument de paiement s’entend de tout dispositif personnalisé et/ou de l’ensemble de procédures convenu "
                         "entre l’utilisateur et le prestataire de services de paiement, utilisé pour donner un ordre de paiement "
@@ -165,37 +165,37 @@ class ContrefaconsFalsificationsChequesPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un comportement répréhensible"),
-              const _Paragraph(
+              _SubTitle("B) Un comportement répréhensible"),
+              _Paragraph(
                 "L’article L. 163-3 du C.M.F. vise trois comportements distincts :",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
-              const _SubTitle("1) La contrefaçon ou la falsification"),
-              const _Paragraph(
+              _SubTitle("1) La contrefaçon ou la falsification"),
+              _Paragraph(
                 "• La contrefaçon consiste soit en l’imitation de modèles existants et véritables, soit en la création de modèles totalement imaginaires. "
                 "Le document contrefaisant doit correspondre à la définition légale du document d’origine.\n\n"
                 "• La falsification consiste en l’altération d’un document réel et véritable : ajouts, surcharges, grattages, ratures, suppressions, intercalations…",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) L’usage d’un moyen de paiement contrefait ou falsifié",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il s’agit d’actes distincts de la contrefaçon/falsification. L’auteur de l’usage peut être la même personne ou une personne différente. "
                 "L’usager est punissable même si l’auteur de la falsification reste inconnu ou impuni, à condition qu’il sache que le chèque/la carte est contrefait(e) ou falsifié(e).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) L’acceptation d’un moyen de paiement contrefait ou falsifié",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Dans ce cas, l’auteur accepte « en connaissance de cause » que le chèque ou la carte de paiement/retrait "
                 "soit utilisé(e) dans son établissement.",
               ),
@@ -228,16 +228,16 @@ class ContrefaconsFalsificationsChequesPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 163-4-2 du Code monétaire et financier",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : lorsque les faits sont commis en bande organisée.",
                 ),
               ]),
@@ -252,142 +252,142 @@ class ContrefaconsFalsificationsChequesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 375 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 163-3 du C.M.F.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (bande organisée) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (bande organisée) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 1 000 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 163-4-2 du C.M.F.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article L. 163-10-1 du C.M.F.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", dans les conditions de "),
+                TextSpan(text: ", dans les conditions de "),
                 TextSpan(
                   text: "l’article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (infractions définies notamment aux articles L. 163-2 à L. 163-4, L. 163-7 et L. 163-10).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _BulletPoint(
                 text: "Tentative : OUI (selon le comportement visé).",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _NotaBox(
                 title: "Tentative",
                 bodySpans: [
-                  const TextSpan(text: "• Délits prévus au 1° de "),
+                  TextSpan(text: "• Délits prévus au 1° de "),
                   TextSpan(
                     text: "l’article L. 163-3",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " : tentative prévue et réprimée par "),
+                  TextSpan(text: " : tentative prévue et réprimée par "),
                   TextSpan(
                     text: "l’article L. 163-4-1 du C.M.F.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ".\n"),
-                  const TextSpan(text: "• Délits figurant au 2° de "),
+                  TextSpan(text: ".\n"),
+                  TextSpan(text: "• Délits figurant au 2° de "),
                   TextSpan(
                     text: "l’article L. 163-3",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: " : la tentative est directement prévue.\n",
                   ),
-                  const TextSpan(text: "• Délits définis au 3° de "),
+                  TextSpan(text: "• Délits définis au 3° de "),
                   TextSpan(
                     text: "l’article L. 163-3",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " : tentative non expressément prévue."),
+                  TextSpan(text: " : tentative non expressément prévue."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Complicité : OUI — règles générales, notamment ",
                 ),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide/assistance, provocation, instructions), punissable pour l’infraction consommée comme pour l’infraction tentée.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "NOTA",
                 bodySpans: [
                   TextSpan(
                     text: "L’article L. 163-4 du Code monétaire et financier",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " prévoit et réprime la fabrication, l’acquisition, la détention, la cession, l’offre ou la mise à disposition "
                         "d’équipements, instruments, programmes informatiques ou données conçus/spécialement adaptés dans l’objectif de "
@@ -431,10 +431,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -499,7 +499,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -542,7 +542,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -604,7 +604,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -636,7 +636,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -649,7 +649,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

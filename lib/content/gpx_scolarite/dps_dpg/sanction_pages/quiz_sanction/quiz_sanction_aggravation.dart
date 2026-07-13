@@ -102,7 +102,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR IVRE OU SOUS L’EMPRISE DE STUPÉFIANTS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -121,7 +121,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LA PRÉMÉDITATION (art. 132-72 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est définie comme :',
     options: [
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend la définition légale : la préméditation est un dessein formé avant l’action.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est définie par :',
     options: [
@@ -148,7 +148,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’article 132-72 du code pénal définit la préméditation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Selon le cours, la préméditation traduit principalement :',
     options: [
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours parle d’une résolution d’agir marquant une volonté mûre et réfléchie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'Pour matérialiser la préméditation, il faut notamment une antériorité de la résolution :',
@@ -175,7 +175,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’antériorité à l’acte est nécessaire pour matérialiser la préméditation (Cass. crim., 9 janv. 1990).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps lié à la préméditation se situe entre :',
     options: [
@@ -188,7 +188,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours situe l’intervalle entre la décision de commettre l’acte et son exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Un acte prémédité est un acte :',
     options: [
@@ -201,7 +201,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’acte prémédité est médité et préparé et ne peut pas faire suite à une pulsion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Selon le cours, la préméditation vise indifféremment :',
     options: [
@@ -214,7 +214,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette circonstance vise indifféremment une infraction commise ou tentée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'D’après la jurisprudence citée, la préméditation doit être recherchée :',
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite : “Elle doit être recherchée dans les faits qui ont accompagné l’acte de l’auteur principal” (Cass. crim., 4 sept. 1976).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'Parmi les éléments suivants, lequel peut illustrer la préméditation selon le cours ?',
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours donne des exemples : actes préparatoires, menaces, confidences, nature complexe de l’acte, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question:
         'Dans le champ d’application, le meurtre commis avec préméditation est qualifié :',
@@ -260,7 +260,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE CONJOINT / CONCUBIN / PARTENAIRE PACS (art. 132-80 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -275,7 +275,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’article 132-80 du code pénal définit cette circonstance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question: 'Cette circonstance aggravante est, selon le cours :',
@@ -289,7 +289,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle dont les effets ne s’étendent pas aux coauteurs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -305,7 +305,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que cette circonstance vise à réprimer plus sévèrement les infractions commises au sein du couple.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -320,7 +320,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le texte vise expressément la circonstance “y compris lorsqu’ils ne cohabitent pas”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend le second alinéa : elle vaut aussi pour l’ancien conjoint/concubin/partenaire PACS.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -350,7 +350,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que, pour l’ancien conjoint/concubin/partenaire, il faut que l’infraction soit commise en raison des relations passées : c’est le mobile.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question: 'La définition du concubinage (art. 515-8 C. civ.) renvoie à :',
@@ -364,7 +364,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite l’art. 515-8 du code civil : union de fait, vie commune, stabilité et continuité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question:
@@ -379,7 +379,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’état de concubinage est établi dès lors qu’il est prouvé qu’il y a communauté de vie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Conjoint / concubin / partenaire PACS',
     question: 'Le pacte civil de solidarité (art. 515-1 C. civ.) est :',
@@ -398,7 +398,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE HOMOPHOBE / SEXISTE / TRANSPHOBE (art. 132-77 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question:
@@ -413,7 +413,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’article 132-77 du code pénal définit le caractère homophobe ou sexiste.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question: 'Cette circonstance aggravante est, selon le cours :',
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette circonstance est réelle et s’étend à tous les auteurs, coauteurs et complices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question:
@@ -438,7 +438,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours énumère ces éléments comme modes de matérialisation du mobile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question: 'Cette circonstance vise notamment les personnes :',
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que la circonstance vise aussi les personnes transsexuelles, transgenres ou travesties.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe / sexiste / transphobe',
     question:
@@ -472,7 +472,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE RACISTE / XÉNOPHOBE / ANTISÉMITE (art. 132-76 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Le caractère raciste d’une infraction est défini par :',
     options: [
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’article 132-76 du code pénal définit le caractère raciste.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Selon le cours, cette circonstance aggravante est :',
     options: [
@@ -498,7 +498,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'Le crime ou délit est aggravé notamment s’il est précédé, accompagné ou suivi de :',
@@ -512,7 +512,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend cette liste d’éléments objectifs permettant de caractériser l’aggravation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'L’article 132-76 vise notamment l’appartenance (vraie ou supposée) à :',
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours liste ces quatre catégories (prétendue race, ethnie, nation, religion).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'Peu importe que l’appartenance soit vraie : la circonstance peut jouer si elle est :',
@@ -541,7 +541,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’auteur peut agir à tort : l’appartenance/non-appartenance peut être vraie ou supposée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question:
         'Dans l’exemple de la circulaire du 20 avril 2017 cité par le cours, l’aggravation peut s’appliquer même sans propos injurieux si :',
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LE GUET-APENS (art. 132-71-1 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens consiste dans le fait :',
     options: [
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend la définition légale du guet-apens (art. 132-71-1 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est, selon le cours :',
     options: [
@@ -587,7 +587,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question:
         'Le cours précise que le guet-apens est proche de l’embuscade, mais que l’embuscade :',
@@ -601,7 +601,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’embuscade (art. 222-15-1 C.P.) est une infraction autonome, alors que le guet-apens est une circonstance aggravante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question:
         'Concernant l’attente (durée, nature du lieu), le cours indique que le législateur :',
@@ -619,7 +619,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // PORT OU USAGE D’UNE ARME (art. 132-75 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme (au sens de l’art. 132-75 C.P.) est :',
     options: [
@@ -632,7 +632,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend l’alinéa 1 : “est une arme tout objet conçu pour tuer ou blesser”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Un objet non conçu pour tuer/blesser peut être assimilé à une arme s’il est :',
@@ -646,7 +646,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours vise les armes “par destination” : objets dangereux assimilés s’ils sont utilisés/destinés à tuer, blesser ou menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice est assimilée à une arme si elle :',
     options: [
@@ -660,7 +660,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il faut une ressemblance créant confusion et une utilisation/destination de menace de tuer ou blesser.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'L’utilisation d’un animal pour tuer, blesser ou menacer est :',
     options: [
@@ -673,7 +673,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique expressément que l’utilisation d’un animal est assimilée à l’usage d’une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Pour l’“usage et menace d’une arme”, il ne suffit pas que l’auteur soit porteur : il faut qu’il l’ait utilisée pour :',
@@ -687,7 +687,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que le port ne suffit pas : il faut une utilisation/menace pour tuer, blesser ou menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Le “port d’une arme” comme circonstance aggravante est caractérisé si l’auteur était porteur :',
@@ -701,7 +701,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que le port suffit si l’arme est apparente ou cachée au moment des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question:
         'Parmi les infractions suivantes, laquelle est citée dans le cours comme aggravée par l’usage ou la menace d’une arme ?',
@@ -719,7 +719,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // L’ESCALADE (art. 132-74 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est :',
     options: [
@@ -733,7 +733,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend la définition légale de l’escalade (art. 132-74 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est, selon le cours :',
     options: [
@@ -746,7 +746,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question:
         'Pour caractériser l’escalade, il faut un endroit clos dont l’accès est normalement interdit par :',
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’un lieu clos interdit aux tiers par une clôture.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question:
         'Le moyen utilisé pour l’escalade (échelle, corde, échafaudage, etc.) :',
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que le moyen utilisé importe peu (prévu, improvisé, trouvé par hasard).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Selon le cours, l’escalade ne peut être réalisée que :',
     options: [
@@ -791,7 +791,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // INCAPACITÉ TOTALE DE TRAVAIL (I.T.T.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'L’I.T.T. (au sens pénal) mesure principalement :',
@@ -806,7 +806,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’I.T.T. mesure la gravité des atteintes corporelles ou psychiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'L’I.T.T. ne doit pas être confondue avec :',
@@ -820,7 +820,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’I.T.T. pénale est différente de l’arrêt de travail en droit social.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question:
@@ -831,7 +831,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’une victime sans activité professionnelle peut se voir prescrire une I.T.T.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question:
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’I.T.T. doit être totale pour constituer la circonstance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'Selon le cours, l’I.T.T. s’étend :',
@@ -857,7 +857,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’I.T.T. ne concerne pas seulement le travail mais toute l’activité courante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question:
@@ -872,7 +872,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours présente des paliers de durée, dont inférieur/égal à 8 jours et supérieur à 8 jours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Incapacité totale de travail (I.T.T.)',
     question: 'Concernant la preuve de l’I.T.T., le juge :',
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // UTILISATION D’UN MOYEN DE CRYPTOLOGIE (art. 132-79 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'L’utilisation d’un moyen de cryptologie est définie par :',
     options: [
@@ -904,7 +904,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’article 132-79 du code pénal définit cette circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'Cette circonstance aggravante est, selon le cours :',
     options: [
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'Un moyen de cryptologie sert principalement à assurer :',
     options: [
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours explique que la cryptologie vise surtout la confidentialité, l’authentification ou l’intégrité des données.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question: 'Selon le cours, l’article 132-79 est de portée :',
     options: [
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’article 132-79 s’applique à tous les crimes et délits, commis ou tentés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question:
         'L’aggravation de l’article 132-79 ne s’applique pas à l’auteur/complice qui, à la demande des autorités, a :',
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise l’exception : remise de la version en clair et des conventions secrètes nécessaires au déchiffrement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Moyen de cryptologie',
     question:
         'Selon la jurisprudence citée (11 octobre 2020), le code de déverrouillage d’un téléphone peut constituer :',
@@ -974,7 +974,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite que le code de déverrouillage peut être une clé de déchiffrement si le téléphone embarque un moyen de cryptologie.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que la grande majorité des décisions refusent de voir dans l’ivresse une cause légale d’exemption de peine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -1005,7 +1005,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours souligne que l’usage volontaire de stupéfiants est illicite, contrairement à la consommation d’alcool, ce qui renforce l’approche.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -1020,7 +1020,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours renvoie à l’article L. 3354-1 du CSP qui impose aux OPJ/APJ de faire procéder à des vérifications en cas de crime, délit ou accident.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -1035,7 +1035,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le texte cité précise que ces vérifications sont obligatoires dans tous les cas suivis de mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -1046,7 +1046,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il n’existe pas, dans ce passage, de procédure spéciale équivalente à celle de l’alcool pour les stupéfiants.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ivre ou sous l’emprise de stupéfiants',
     question:
@@ -1065,7 +1065,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // AVEC UTILISATION D’UN RÉSEAU DE COMMUNICATION ÉLECTRONIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -1080,7 +1080,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours retient expressément la diffusion de messages à destination d’un public non déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'La formule “public non déterminé” exclut :',
@@ -1094,7 +1094,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette formule exclut l’envoi d’un courrier électronique identique à plusieurs personnes identifiées.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -1109,7 +1109,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique expressément Internet et le réseau téléphonique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours rappelle qu’il s’agit d’une circonstance aggravante réelle, dont les effets s’étendent à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question:
@@ -1143,7 +1143,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // DANS UN ÉTABLISSEMENT D’ENSEIGNEMENT / LOCAUX DE L’ADMINISTRATION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question:
@@ -1158,7 +1158,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours explique qu’elle vise notamment le milieu scolaire, mais aussi les locaux de l’administration visés par le texte.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question:
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite un arrêt de la chambre criminelle du 14 octobre 2020 limitant l’extension de la notion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question: 'Les faits peuvent être commis “dans” l’établissement :',
@@ -1189,7 +1189,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que les faits peuvent être commis dans n’importe quelle partie de l’établissement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question: 'Pour les abords, les faits doivent être commis :',
@@ -1204,7 +1204,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours impose, pour les abords, le moment des entrées et sorties ou un temps très voisin.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Établissement d’enseignement / locaux de l’administration',
     question: 'Cette circonstance aggravante est :',
@@ -1222,7 +1222,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LA BANDE ORGANISÉE (ARTICLE 132-71 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Selon l’article 132-71 du code pénal, la bande organisée est :',
     options: [
@@ -1236,7 +1236,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'C’est la définition légale reprise dans le cours (article 132-71 C.P.).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est qualifiée par le cours comme :',
     options: [
@@ -1249,7 +1249,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que c’est une circonstance aggravante réelle, s’étendant aux auteurs, coauteurs et complices.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'La bande organisée se distingue de l’association de malfaiteurs car l’association de malfaiteurs :',
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours rappelle que l’association de malfaiteurs (450-1 C.P.) est autonome et peut être constituée au stade des actes préparatoires.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La “réunion” (au sens du cours) se caractérise plutôt par :',
     options: [
@@ -1277,7 +1277,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours oppose la réunion (fortuite/occasionnelle) à la bande organisée (plan concerté, organisation).',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Selon le cours, la bande organisée suppose :',
     options: [
@@ -1290,7 +1290,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite la jurisprudence : la bande organisée suppose un plan concerté et des contacts préliminaires.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée suppose une certaine organisation avec :',
     options: [
@@ -1303,7 +1303,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours évoque une organisation structurée et hiérarchisée avec répartition des rôles.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'D’après la jurisprudence citée (8 juillet 2015), la seule constitution d’une équipe de malfaiteurs ne suffit pas si :',
@@ -1322,7 +1322,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LA MINORITÉ DE QUINZE ANS
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La circonstance aggravante “sur un mineur de 15 ans” vise :',
     options: [
@@ -1335,7 +1335,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que la limite retenue est 15 ans accompli : quel que soit l’âge en dessous de 15 ans, l’aggravation peut jouer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'Pour déterminer l’âge, on retient :',
     options: [
@@ -1348,7 +1348,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que c’est l’âge au moment des faits qui doit être pris en considération (jurisprudence citée).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question:
         'Le calcul de l’âge “au moment des faits” se fait, selon le cours :',
@@ -1358,7 +1358,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite une jurisprudence indiquant que l’âge se calcule d’heure à heure.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question:
         'Concernant la minorité de quinze ans, le législateur exige que cet âge soit :',
@@ -1376,7 +1376,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LA MORT (AYANT ENTRAÎNÉ LA MORT SANS INTENTION DE LA DONNER)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question:
         'La circonstance aggravante “ayant entraîné la mort sans intention de la donner” suppose que :',
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’infraction a entraîné la mort, sans intention homicide de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question: 'Pour retenir cette circonstance, il faut :',
     options: [
@@ -1404,7 +1404,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours mentionne la nécessité d’un lien de causalité entre l’acte et le décès.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question:
         'L’état de santé préexistant de la victime (même s’il a concouru au décès) rend la circonstance :',
@@ -1418,7 +1418,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que la circonstance peut être retenue quel que soit l’état préexistant de la victime.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mort sans intention de la donner',
     question: 'Cette circonstance aggravante est :',
     options: [
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LA MUTILATION OU L’INFIRMITÉ PERMANENTE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Selon le cours, la mutilation correspond plutôt à :',
     options: [
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend l’idée d’une atteinte irréversible à l’intégrité physique liée à la perte/ablation d’un membre ou partie externe.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'L’infirmité permanente peut être :',
     options: [
@@ -1462,7 +1462,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que l’infirmité peut être physique mais aussi toucher les facultés mentales ou intellectuelles.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Pour l’infirmité, le critère central est son caractère :',
     options: ['Réversible', 'Irréversible / définitif', 'Hypothétique'],
@@ -1471,7 +1471,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours exige une infirmité irréversible ou définitive (jurisprudences citées).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question:
         'La preuve de la mutilation/infirmité permanente peut être rapportée notamment par :',
@@ -1489,7 +1489,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // LA PARTICULIÈRE VULNÉRABILITÉ DE LA VICTIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question: 'La particulière vulnérabilité doit être due à des causes :',
@@ -1503,7 +1503,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que les causes sont limitatives et doivent résulter d’un état préexistant, non de la conséquence des faits.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question: 'Pour être retenue, la vulnérabilité doit être :',
@@ -1517,7 +1517,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours exige que la cause de vulnérabilité soit apparente (visible) ou connue (révélée) de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question: 'S’agissant de l’âge, le cours précise que :',
@@ -1532,7 +1532,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que la minorité de 15 ans ne relève pas de cette vulnérabilité car elle fait l’objet d’une aggravation spécifique.',
     difficulty: 'Moyen',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question:
@@ -1551,7 +1551,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ D’AUTEUR ABUSANT DE SON AUTORITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question:
         'La circonstance aggravante « par une personne qui abuse de l’autorité que lui confèrent ses fonctions » est :',
@@ -1565,7 +1565,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle dont les effets ne s’étendent pas aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question:
         'Cette circonstance vise les personnes disposant principalement :',
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique qu’elle concerne les personnes ayant une autorité générale due aux fonctions exercées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question:
         'Les personnes concernées par cette circonstance sont notamment :',
@@ -1593,7 +1593,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite explicitement ces exemples de personnes ayant autorité sur la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Les fonctions exercées par l’auteur peuvent être :',
     options: [
@@ -1606,7 +1606,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que les fonctions exercées peuvent être publiques ou privées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'L’aggravation est retenue lorsque l’auteur :',
     options: [
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ D’AUTEUR ASCENDANT OU AYANT AUTORITÉ SUR LA VICTIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question:
@@ -1639,7 +1639,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle dont les effets ne s’étendent pas aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question: 'Sont considérés comme ascendants de la victime :',
@@ -1653,7 +1653,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours vise les père, mère et autres ascendants directs, légitimes, naturels ou adoptifs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question:
@@ -1668,7 +1668,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que la circonstance peut s’appliquer s’ils exercent une autorité de fait sur la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou ayant autorité sur la victime',
     question: 'L’autorité sur la victime peut être :',
@@ -1686,7 +1686,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ D’AUTEUR DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question:
@@ -1701,7 +1701,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question: 'Est dépositaire de l’autorité publique celui qui :',
@@ -1716,7 +1716,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend la définition jurisprudentielle de la qualité de dépositaire de l’autorité publique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question: 'Font notamment partie des dépositaires de l’autorité publique :',
@@ -1729,7 +1729,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours cite explicitement ces professions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire de l’autorité publique',
     question: 'La circonstance est retenue si les faits sont commis :',
@@ -1747,7 +1747,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME ASCENDANT DE L’AUTEUR
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime ascendant de l’auteur',
     question:
         'La qualité de victime ascendant de l’auteur est une circonstance aggravante :',
@@ -1757,7 +1757,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que cette circonstance est de nature personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime ascendant de l’auteur',
     question: 'Cette circonstance a été réintroduite après la suppression de :',
     options: [
@@ -1770,7 +1770,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette circonstance a été réintroduite après la suppression du parricide.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime ascendant de l’auteur',
     question: 'La filiation naturelle doit être :',
     options: ['Supposée', 'Légalement établie', 'Reconnaissable moralement'],
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME CHARGÉE D’UNE MISSION DE SERVICE PUBLIC
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime chargée d’une mission de service public',
     question: 'Cette circonstance aggravante est :',
@@ -1793,7 +1793,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime chargée d’une mission de service public',
     question: 'Elle vise à protéger principalement :',
@@ -1807,7 +1807,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que cette circonstance accroît la protection due aux personnes exposées en raison de leur mission.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime chargée d’une mission de service public',
     question: 'La qualité de la victime doit être :',
@@ -1825,7 +1825,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Cette circonstance protège :',
@@ -1839,7 +1839,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que la protection concerne la personne et, à travers elle, la fonction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Pour retenir cette circonstance, l’infraction doit être :',
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE LA VICTIME SE LIVRANT À LA PROSTITUTION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Cette circonstance aggravante a été créée par la loi du :',
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette circonstance a été créée par la loi n°2016-444 du 13 avril 2016.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'La prostitution peut être retenue :',
@@ -1881,7 +1881,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’un acte unique de prostitution peut suffire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Les faits doivent avoir été commis :',
@@ -1899,7 +1899,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE TÉMOIN, VICTIME OU PARTIE CIVILE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin, victime ou partie civile',
     question: 'Cette circonstance vise principalement à protéger :',
     options: [
@@ -1912,7 +1912,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette circonstance vise à préserver l’administration de la justice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin, victime ou partie civile',
     question:
         'L’auteur peut agir avec une intention dite « préventive » pour :',
@@ -1926,7 +1926,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’intention préventive vise à empêcher plainte, dénonciation ou témoignage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin, victime ou partie civile',
     question:
         'Lorsque l’auteur agit par vengeance après une plainte ou une déposition, l’intention est dite :',
@@ -1939,7 +1939,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE VICTIME PARENTE D’UNE PERSONNE DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime parente d’un dépositaire de l’autorité publique',
     question: 'Cette circonstance aggravante est :',
@@ -1949,7 +1949,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette circonstance est réelle et s’étend à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime parente d’un dépositaire de l’autorité publique',
     question: 'Sont notamment protégés :',
@@ -1963,7 +1963,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours énumère précisément ces catégories de proches.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime parente d’un dépositaire de l’autorité publique',
     question: 'L’infraction doit avoir été commise :',
@@ -1980,7 +1980,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // GÉNÉRALITÉS — CIRCONSTANCES AGGRAVANTES (rappels)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance n’est aggravante que lorsque :',
     options: [
@@ -1993,7 +1993,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’une circonstance n’est aggravante que lorsque la loi le décide expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes sont énumérées par la loi :',
     options: [
@@ -2006,7 +2006,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que la loi les énumère de manière limitative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante peut :',
     options: [
@@ -2019,7 +2019,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’elle peut modifier la nature de la peine et, par conséquence, la nature de l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes “réelles” :',
     options: [
@@ -2032,7 +2032,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours oppose les réelles (matérialité) aux personnelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance “personnelle” :',
     options: [
@@ -2046,7 +2046,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : personnelles = liées à la personnalité/qualité de l’auteur.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Selon Cass. crim. 7 février 2007, une même circonstance peut :',
     options: [
@@ -2059,7 +2059,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite que rien ne s’oppose à ce qu’une même circonstance aggrave des crimes distincts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes dites “spéciales” :',
     options: [
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’elles ne valent que pour les infractions visées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'La doctrine ajoute parfois une 3e catégorie :',
     options: [
@@ -2090,7 +2090,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // PRÉMÉDITATION (art. 132-72 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est :',
     options: [
@@ -2103,7 +2103,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition légale reprise au cours (art. 132-72 C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est définie par :',
     options: [
@@ -2115,7 +2115,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Référence donnée par le cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Elle traduit une volonté :',
     options: [
@@ -2127,7 +2127,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : résolution d’agir, volonté mûre et réfléchie.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Condition essentielle : la résolution doit être :',
     options: [
@@ -2139,7 +2139,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Antériorité nécessaire (Cass. crim., 9 janv. 1990).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps se situe entre :',
     options: [
@@ -2151,7 +2151,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : entre décision et exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Un acte prémédité est :',
     options: [
@@ -2163,7 +2163,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Non spontané, pas une pulsion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation vise :',
     options: [
@@ -2175,7 +2175,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : indifféremment commise ou tentée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Elle se matérialise par des faits situés :',
     options: [
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours insiste sur les faits/circonstances précédant l’acte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Exemple de matérialisation :',
     options: [
@@ -2200,7 +2200,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Exemples cités par le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La jurisprudence qualifie parfois la préméditation :',
     options: [
@@ -2212,7 +2212,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours mentionne cette hésitation jurisprudentielle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Le meurtre avec préméditation devient :',
     options: ['Un assassinat', 'Un homicide involontaire', 'Une contravention'],
@@ -2220,7 +2220,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Art. 221-3 al.1 : meurtre qualifié d’assassinat.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Le champ d’application inclut notamment :',
     options: [
@@ -2236,7 +2236,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // GUET-APENS (art. 132-71-1 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens consiste à :',
     options: [
@@ -2249,7 +2249,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition de l’art. 132-71-1 reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Purement disciplinaire'],
@@ -2257,7 +2257,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une forme particulière de :',
     options: ['Préméditation', 'Récidive', 'Tentative'],
@@ -2265,7 +2265,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : forme particulière de préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Concernant la durée minimale de l’attente, le texte :',
     options: [
@@ -2277,7 +2277,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : notion large, pas de durée minimum.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'La qualité de la victime est :',
     options: [
@@ -2289,7 +2289,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : “toute personne quelle que soit sa qualité”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le but poursuivi est caractérisé par :',
     options: [
@@ -2302,7 +2302,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : actes préparatoires en relation avec l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens se distingue de l’embuscade car l’embuscade :',
     options: [
@@ -2315,7 +2315,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : embuscade = infraction autonome (même au stade préparatoire).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Champ d’application : guet-apens peut aggraver :',
     options: [
@@ -2331,7 +2331,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // PORT / USAGE / MENACE D’UNE ARME (art. 132-75 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Selon l’art. 132-75, une arme est :',
     options: [
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Arme par nature (alinéa 1).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Un objet du quotidien devient arme “par destination” s’il est :',
     options: [
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Alinéa 2 : assimilation par destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice est assimilée si elle :',
     options: [
@@ -2367,7 +2367,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Alinéa 3 : ressemblance + menace/destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'L’utilisation d’un animal pour menacer est :',
     options: [
@@ -2379,7 +2379,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Alinéa 4 : animal assimilé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'La circonstance “arme” est :',
     options: ['Réelle', 'Personnelle', 'Uniquement mixte'],
@@ -2387,7 +2387,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour l’usage/menace, il faut que l’arme serve à :',
     options: ['Tuer, blesser ou menacer', 'Décorer', 'Travailler uniquement'],
@@ -2396,7 +2396,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : pas seulement porteur, usage pour tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour le “port”, il suffit que l’arme soit :',
     options: [
@@ -2408,7 +2408,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : port apparente ou cachée au moment des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice peut être considérée comme :',
     options: [
@@ -2421,7 +2421,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Cass. crim. 05/08/1992 citée : arme factice = apparente ou cachée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Exemple d’arme par nature :',
     options: [
@@ -2433,7 +2433,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours cite armes à feu/engins explosifs/incendiaires.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Exemple d’arme par destination :',
     options: [
@@ -2446,7 +2446,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Objets du quotidien assimilés s’ils sont utilisés pour tuer/blesser/menacer.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Champ d’application : l’usage/menace d’arme peut aggraver :',
     options: [
@@ -2462,7 +2462,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // ESCALADE (art. 132-74 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est :',
     options: [
@@ -2475,7 +2475,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition légale (art. 132-74).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -2483,7 +2483,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Elle suppose un endroit :',
     options: ['Clos', 'Public sans clôture', 'Virtuel uniquement'],
@@ -2491,7 +2491,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Lieu clos dont l’accès est interdit par une clôture.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Le moyen utilisé :',
     options: [
@@ -2503,7 +2503,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : échelle, corde, échafaudage… peu importe.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade ne peut être réalisée que :',
     options: [
@@ -2515,7 +2515,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le texte : “s’introduire…”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Intrusion par une issue non destinée à servir d’entrée :',
     options: [
@@ -2527,7 +2527,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours cite ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Champ d’application : l’escalade aggrave notamment :',
     options: [
@@ -2543,7 +2543,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // INCAPACITÉ TOTALE DE TRAVAIL (I.T.T.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale mesure :',
     options: [
@@ -2555,7 +2555,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale ne se confond pas avec :',
     options: [
@@ -2567,7 +2567,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours insiste sur la différence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Une personne sans emploi peut avoir une I.T.T. :',
     options: ['Oui', 'Non', 'Uniquement si elle est salariée'],
@@ -2575,7 +2575,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Enfant/retraité… possible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Pour la circonstance aggravante, l’incapacité doit être :',
     options: ['Totale', 'Partielle', 'Symbolique'],
@@ -2583,7 +2583,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : caractère total.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. s’étend :',
     options: [
@@ -2595,7 +2595,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Cass. crim. 7 mars 1967 citée : vie quotidienne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La durée se mesure par paliers, dont :',
     options: [
@@ -2607,7 +2607,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Paliers mentionnés au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Le juge :',
     options: [
@@ -2619,7 +2619,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : appréciation, certificats + experts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La preuve est rapportée par :',
     options: [
@@ -2631,7 +2631,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : preuve par la partie poursuivante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Un effort ménager possible n’exclut pas l’I.T.T. totale :',
     options: ['Vrai', 'Faux', 'Uniquement si l’auteur avoue'],
@@ -2644,7 +2644,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // CRYPTOLOGIE (art. 132-79 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’utilisation d’un moyen de cryptologie est prévue par :',
     options: ['Art. 132-79 C.P.', 'Art. 132-72 C.P.', 'Art. 132-74 C.P.'],
@@ -2652,7 +2652,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Référence du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cette circonstance aggravante est :',
     options: ['Réelle', 'Personnelle', 'Uniquement disciplinaire'],
@@ -2660,7 +2660,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Le moyen de cryptologie sert à assurer :',
     options: [
@@ -2672,7 +2672,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition issue de la loi du 21 juin 2004 (art. 29) citée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Art. 132-79 s’applique :',
     options: [
@@ -2684,7 +2684,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Portée générale selon le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’exception d’application vaut si l’auteur/complice a remis :',
     options: [
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Exception du texte : remise aux autorités.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question:
         'Selon Cass. crim. 11 oct. 2020, le code de déverrouillage peut être :',
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR ABUSANT DE SON AUTORITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Cette circonstance est :',
     options: ['Personnelle', 'Réelle', 'Une excuse de provocation'],
@@ -2722,7 +2722,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : personnelle, non étendue aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Elle vise une autorité :',
     options: [
@@ -2735,7 +2735,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : autorité générale à l’égard d’un certain nombre de personnes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Exemple de personnes concernées :',
     options: [
@@ -2747,7 +2747,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Exemples donnés au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Les fonctions peuvent être :',
     options: [
@@ -2759,7 +2759,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Condition 2.2 du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'L’aggravation suppose :',
     options: [
@@ -2771,7 +2771,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Condition 2.3 : abus de l’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Champ d’application : figure notamment :',
     options: [
@@ -2787,7 +2787,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR ASCENDANT OU AYANT AUTORITÉ SUR LA VICTIME
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Cette circonstance est :',
@@ -2796,7 +2796,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Ascendants visés :',
@@ -2809,7 +2809,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours précise la liste des ascendants directs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Les collatéraux (oncle/tante/cousin) :',
@@ -2823,7 +2823,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : parents/alliés collatéraux non visés comme ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Mais un collatéral peut entrer si :',
@@ -2837,7 +2837,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : si oncle/tante/cousin ont autorité de fait, la circonstance peut jouer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'L’autorité sur la victime peut être :',
@@ -2850,7 +2850,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours distingue tuteur (droit) et autorité de fait.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Exemple d’autorité de fait :',
@@ -2867,7 +2867,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // AUTEUR DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE / MISSION SERVICE PUBLIC (auteur)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Cette circonstance (auteur dépositaire) est :',
@@ -2876,7 +2876,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Dépositaire de l’autorité publique = personne avec :',
@@ -2889,7 +2889,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition citée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Exemples :',
@@ -2902,7 +2902,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Exemples listés au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question:
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition issue de la circulaire du 14 mai 1993 citée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique',
     question: 'Les faits doivent être commis :',
@@ -2934,7 +2934,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME DÉPOSITAIRE DE L’AUTORITÉ PUBLIQUE (victime)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'Cette circonstance est :',
@@ -2943,7 +2943,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'Elle protège :',
@@ -2956,7 +2956,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours insiste sur la protection de la fonction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'Condition : la qualité doit être :',
@@ -2969,7 +2969,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Condition du cours : apparente ou connue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire autorité publique',
     question: 'La victime doit être atteinte :',
@@ -2986,7 +2986,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME CHARGÉE D’UNE MISSION DE SERVICE PUBLIC (victime)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Une excuse de minorité'],
@@ -2994,7 +2994,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Elle vise notamment :',
     options: [
@@ -3007,7 +3007,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Liste détaillée dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Condition temporelle : la victime doit être :',
     options: [
@@ -3019,7 +3019,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : en service / acte entrant dans ses attributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission service public',
     question: 'Condition de connaissance : qualité :',
     options: ['Apparente ou connue', 'Toujours ignorée', 'Jamais exigée'],
@@ -3032,7 +3032,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME SE LIVRANT À LA PROSTITUTION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Cette circonstance est :',
@@ -3041,7 +3041,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Condition : la personne doit se livrer à la prostitution =',
@@ -3054,7 +3054,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition donnée au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'La prostitution peut être :',
@@ -3063,7 +3063,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : un acte unique peut suffire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Les faits doivent être commis :',
@@ -3076,7 +3076,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours exclut les contentieux sans lien avec l’activité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Texte créateur : loi du :',
@@ -3089,7 +3089,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // QUALITÉ DE TÉMOIN / VICTIME / PARTIE CIVILE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Cette circonstance est de nature :',
     options: ['Personnelle', 'Réelle', 'Toujours mixte'],
@@ -3097,7 +3097,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : dépend de l’intention et du but poursuivi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Elle vise à protéger :',
     options: [
@@ -3110,7 +3110,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : pressions menacent l’administration de la justice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Elle suppose qu’une infraction :',
     options: [
@@ -3123,7 +3123,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : une nouvelle infraction vise à éviter/vengeance/dissuader.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “préventive” =',
     options: [
@@ -3135,7 +3135,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : retirer plainte, influencer déclarations, etc.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “répressive” =',
     options: [
@@ -3151,7 +3151,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // VICTIME PARENTE D’UN DÉPOSITAIRE / PERSONNE PROTÉGÉE (proches)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Une cause d’excuse'],
@@ -3159,7 +3159,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Sont protégés notamment :',
     options: [
@@ -3171,7 +3171,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Liste du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Est aussi visée :',
     options: [
@@ -3183,7 +3183,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : personne hébergée, quel que soit lien.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Condition essentielle : faits commis :',
     options: [
@@ -3195,7 +3195,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : lien avec fonctions du proche.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cela implique que l’auteur :',
     options: [
@@ -3211,7 +3211,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE RACISTE (art. 132-76)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Le caractère raciste est défini par :',
     options: ['Art. 132-76 C.P.', 'Art. 132-77 C.P.', 'Art. 132-80 C.P.'],
@@ -3219,7 +3219,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Référence du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Toujours mixte'],
@@ -3227,7 +3227,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Elle vise l’appartenance (vraie ou supposée) à :',
     options: [
@@ -3239,7 +3239,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: '4 catégories du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'La matérialisation peut venir de :',
     options: [
@@ -3251,7 +3251,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Éléments objectifs listés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'L’appartenance peut être :',
     options: [
@@ -3267,7 +3267,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // CARACTÈRE HOMOPHOBE / SEXISTE / TRANSPHOBE (art. 132-77)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Le caractère homophobe/sexiste est défini par :',
@@ -3276,7 +3276,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Référence du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Cette circonstance est :',
@@ -3285,7 +3285,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réelle, étendue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Elle peut être établie par :',
@@ -3300,7 +3300,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours donne les 2 branches : atteinte ou preuve du mobile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Elle vise notamment :',
@@ -3313,7 +3313,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours l’indique expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'L’identité/orientation peut être :',
@@ -3342,7 +3342,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
 
   // --- PRÉMÉDITATION (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation suppose une résolution :',
     options: ['Instantanée', 'Mûre et réfléchie', 'Toujours involontaire'],
@@ -3350,7 +3350,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Volonté persistante et plan tracé à l’avance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps requis est :',
     options: ['Fixé à 48h', 'Non déterminé (plus ou moins long)', 'Fixé à 1h'],
@@ -3358,7 +3358,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : durée non déterminée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Une pulsion immédiate exclut en principe :',
     options: ['La réunion', 'La préméditation', 'La tentative'],
@@ -3366,7 +3366,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Acte prémédité ≠ spontané.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation doit être recherchée dans :',
     options: ['Les faits accompagnant l’acte', 'Le seul casier', 'La rumeur'],
@@ -3374,7 +3374,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Cass. crim. 4 sept. 1976 citée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Menaces avant les faits peuvent :',
     options: [
@@ -3386,7 +3386,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Exemple du cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Achat de matériel pour commettre l’acte :',
     options: [
@@ -3398,7 +3398,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Acte préparatoire typique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut aggraver :',
     options: [
@@ -3410,7 +3410,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Champ d’application du cours.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Cass. crim. 9 janvier 1990 : exigence d’ :',
     options: ['Antériorité', 'Cohabitation', 'Récidive'],
@@ -3420,7 +3420,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- GUET-APENS (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Guet-apens : “attendre” implique :',
     options: [
@@ -3432,7 +3432,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Notion large non précisée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le lieu doit être :',
     options: ['Déterminé', 'Toujours public', 'Toujours privé'],
@@ -3440,7 +3440,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition : lieu déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Guet-apens s’applique si la loi a :',
     options: [
@@ -3452,7 +3452,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'La loi doit l’avoir expressément prévu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est :',
     options: ['Personnel', 'Réel', 'Une immunité'],
@@ -3462,7 +3462,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- ARME (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Arme par nature = objet :',
     options: [
@@ -3474,7 +3474,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Art. 132-75 al.1.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Arme par destination :',
     options: [
@@ -3486,7 +3486,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Assimilation si utilisé/destiné à tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Chaîne à vélo utilisée pour frapper =',
     options: ['Arme par nature', 'Arme par destination', 'Jamais une arme'],
@@ -3494,7 +3494,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Objet du quotidien détourné.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Port d’arme =',
     options: [
@@ -3506,7 +3506,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Port caractérisé sans usage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Menacer avec une imitation réaliste :',
     options: [
@@ -3520,7 +3520,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- ESCALADE (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Escalade = franchir :',
     options: [
@@ -3532,7 +3532,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition légale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Une fenêtre peut caractériser :',
     options: ['L’escalade', 'La préméditation', 'La cryptologie'],
@@ -3540,7 +3540,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Ouverture non destinée à servir d’entrée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Lieu clos = accès interdit par :',
     options: ['Clôture', 'Téléphone', 'Facture'],
@@ -3550,7 +3550,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- ITT (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'I.T.T. =',
     options: ['Gravité atteintes', 'Salaire perdu', 'Nombre de PV'],
@@ -3558,7 +3558,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Atteintes corporelles/psychiques.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'I.T.T. totale n’exige pas :',
     options: [
@@ -3570,7 +3570,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Tâches ménagères possibles ≠ exclure ITT.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Preuve I.T.T. :',
     options: ['Certificats/expertises', 'Réseaux sociaux', 'Rumeur'],
@@ -3580,7 +3580,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- CRYPTOLOGIE (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cryptologie = moyen pour :',
     options: ['Confidentialité', 'Publicité', 'Aucune transformation'],
@@ -3588,7 +3588,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Sécurité des communications/données.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: '132-79 : maximum de peine est :',
     options: ['Réduit', 'Relevé', 'Supprimé'],
@@ -3596,7 +3596,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le texte : “maximum … est relevé”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Exception 132-79 si remise aux autorités :',
     options: [
@@ -3610,7 +3610,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- AUTEUR ABUSANT DE SON AUTORITÉ (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Cette circonstance ne concerne pas :',
     options: [
@@ -3623,7 +3623,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : ces personnes ne rentrent pas dans le cadre des ascendants.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Effets sur coauteurs :',
     options: ['S’étend', 'Ne s’étend pas', 'S’étend si complice'],
@@ -3633,7 +3633,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- AUTEUR ASCENDANT/AUTORITÉ (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Ascendant =',
@@ -3642,7 +3642,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Ascendants directs uniquement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur victime',
     question: 'Tuteur d’un mineur = autorité :',
@@ -3653,7 +3653,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- VICTIME PROSTITUTION (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Acte unique de prostitution :',
@@ -3666,7 +3666,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Occasionnelle admise.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Sans lien avec activité : circonstance :',
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   ),
 
   // --- TÉMOIN/VICTIME/PARTIE CIVILE (pack) ---
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Catégories visées :',
     options: [
@@ -3689,7 +3689,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : exclusivement ces personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'But : influencer déclarations = intention :',
     options: ['Préventive', 'Répressive', 'Involontaire'],
@@ -3700,7 +3700,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q001–Q020 — GÉNÉRALITÉS (circonstances aggravantes, réelles/personnelles)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance n’est aggravante que lorsque :',
     options: [
@@ -3713,7 +3713,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’une circonstance n’est aggravante que lorsque la loi le décide expressément.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes sont énumérées par la loi :',
     options: [
@@ -3726,7 +3726,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que la loi les énumère de manière limitative.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante peut :',
     options: [
@@ -3739,7 +3739,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’elle peut modifier la nature de la peine encourue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante peut aussi :',
     options: [
@@ -3752,7 +3752,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique qu’en modifiant la peine, elle peut modifier la nature de l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes dites “spéciales” :',
     options: [
@@ -3765,7 +3765,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’elles ne s’appliquent qu’aux infractions pour lesquelles la loi les prévoit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante “réelle” :',
     options: [
@@ -3778,7 +3778,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : les circonstances réelles s’attachent à la matérialité du fait poursuivi.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante “réelle” vaut :',
     options: [
@@ -3791,7 +3791,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : elle ne peut exister pour l’un sans exister pour les autres (auteurs/coauteurs/complices).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante “personnelle” :',
     options: [
@@ -3804,7 +3804,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : les circonstances personnelles sont liées à la personnalité/qualité de l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question:
         'Exemple typique de circonstance “purement” personnelle (cours) :',
@@ -3814,7 +3814,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite la récidive comme circonstance “purement” personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question:
         'Selon la jurisprudence citée, certaines circonstances personnelles liées à la qualité :',
@@ -3828,7 +3828,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 7 septembre 2005 : circonstances liées à la qualité de l’auteur principal applicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Le “principe de l’emprunt de criminalité” signifie (cours) :',
     options: [
@@ -3841,7 +3841,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que le complice encourt la responsabilité des circonstances qualifiant l’acte poursuivi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une même circonstance peut aggraver :',
     options: [
@@ -3854,7 +3854,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 7 février 2007 sur l’aggravation possible de crimes distincts.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances aggravantes peuvent tenir :',
     options: [
@@ -3867,7 +3867,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours donne ces grandes familles de circonstances aggravantes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Le cours traite notamment des circonstances des articles :',
     options: [
@@ -3880,7 +3880,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours annonce le périmètre : articles 132-71 à 132-80 du code pénal (et communes).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Les circonstances “mixtes” (doctrine) tiennent :',
     options: [
@@ -3892,7 +3892,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours mentionne cette catégorie doctrinale “mixte”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question:
         'Une circonstance aggravante peut exister sans que le complice l’ait connue (cours) :',
@@ -3906,7 +3906,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 21 mai 1996 : pas nécessaire qu’elles aient été connues du complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance aggravante réelle :',
     options: [
@@ -3919,7 +3919,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : elle s’attache à la matérialité du fait dont elle ne peut être séparée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance personnelle s’étend aux coauteurs :',
     options: [
@@ -3932,7 +3932,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : personnelle = augmente la culpabilité de celui qui agit, sans extension aux coauteurs (principe).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'La loi détermine, pour chaque circonstance, l’aggravation :',
     options: ['De manière précise', 'Au choix de l’auteur', 'Sans encadrement'],
@@ -3941,7 +3941,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : la loi détermine pour chaque cas l’aggravation de la peine encourue.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Généralités',
     question: 'Une circonstance ne peut pas :',
     options: [
@@ -3958,7 +3958,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q021–Q040 — PRÉMÉDITATION (art. 132-72 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est :',
     options: [
@@ -3970,7 +3970,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition de l’art. 132-72 C.P. reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation vise :',
     options: [
@@ -3982,7 +3982,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : crime ou délit déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation traduit une volonté :',
     options: ['Mûre et réfléchie', 'Spontanée', 'Purement accidentelle'],
@@ -3990,7 +3990,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : résolution d’agir, volonté mûre et réfléchie.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’antériorité de la résolution à l’acte est :',
     options: ['Nécessaire', 'Indifférente', 'Interdite'],
@@ -3999,7 +3999,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 9 janvier 1990 : antériorité nécessaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'L’intervalle de temps entre résolution et exécution est :',
     options: [
@@ -4011,7 +4011,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours indique que cet intervalle n’est pas déterminé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Un acte prémédité est :',
     options: [
@@ -4023,7 +4023,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : non spontané, pas une pulsion.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut viser :',
     options: [
@@ -4035,7 +4035,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : indifféremment commise ou tentée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation se matérialise par :',
     options: [
@@ -4048,7 +4048,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : elle se recherche dans l’intervalle précédant l’acte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Exemples de matérialisation (cours) :',
     options: [
@@ -4060,7 +4060,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Exemples cités dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La jurisprudence qualifie parfois la préméditation :',
     options: [
@@ -4072,7 +4072,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours signale des hésitations jurisprudentielles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Le meurtre avec préméditation est qualifié :',
     options: ['D’assassinat', 'D’homicide involontaire', 'De contravention'],
@@ -4081,7 +4081,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : meurtre + préméditation = assassinat (art. 221-3).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation est une forme de :',
     options: ['Résolution d’agir', 'Force majeure', 'Erreur de droit'],
@@ -4089,7 +4089,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : elle se traduit par une résolution d’agir.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation exclut en principe :',
     options: ['La spontanéité', 'La préparation', 'La persistance'],
@@ -4097,7 +4097,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : l’acte prémédité n’est pas spontané.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Une préparation visant une seule infraction peut suffire :',
     options: [
@@ -4110,7 +4110,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : elle vise une infraction commise ou tentée, même unique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut aggraver (cours) :',
     options: ['Le meurtre', 'La diffamation', 'Le recel'],
@@ -4118,7 +4118,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Champ d’application : meurtre (assassinat).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut aussi aggraver :',
     options: ['L’empoisonnement', 'Le stationnement gênant', 'La mendicité'],
@@ -4126,7 +4126,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : empoisonnement (art. 221-5 al. 3).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation peut être déduite :',
     options: [
@@ -4139,7 +4139,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite la complexité traduisant une nécessaire préparation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'Une confidence préalable sur l’intention de commettre l’acte :',
     options: [
@@ -4151,7 +4151,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours cite les confidences parmi les indices.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Préméditation',
     question: 'La préméditation doit être appréciée :',
     options: [
@@ -4168,7 +4168,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q041–Q060 — GUET-APENS (art. 132-71-1 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens consiste à :',
     options: [
@@ -4181,7 +4181,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition de l’art. 132-71-1 C.P. reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une circonstance aggravante :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -4190,7 +4190,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est proche de :',
     options: ['L’embuscade', 'La récidive', 'La contrainte'],
@@ -4198,7 +4198,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours compare guet-apens et embuscade.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Différence principale avec l’embuscade : l’embuscade est :',
     options: [
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : embuscade = infraction autonome même au stade des actes préparatoires.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'L’article qui définit le guet-apens est :',
     options: ['132-71-1 C.P.', '132-72 C.P.', '132-75 C.P.'],
@@ -4219,7 +4219,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Référence donnée dans le cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le texte précise une durée minimale d’attente :',
     options: [
@@ -4231,7 +4231,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : notion très large, pas de durée minimum fixée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le texte précise la nature du lieu (public/privé) :',
     options: [
@@ -4243,7 +4243,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : pas de précision sur la nature du lieu.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'La qualité de la victime (profession/âge) est :',
     options: ['Indifférente', 'Limitée aux mineurs', 'Limitée aux policiers'],
@@ -4251,7 +4251,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : “toute personne quelle que soit sa qualité”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est une forme particulière de :',
     options: ['Préméditation', 'Vulnérabilité', 'Récidive'],
@@ -4259,7 +4259,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : forme particulière de préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le but poursuivi est caractérisé par :',
     options: [
@@ -4272,7 +4272,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : actes préparatoires déterminent le caractère délibéré du “piège”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le nombre de victimes possibles est :',
     options: ['Une ou plusieurs', 'Uniquement une', 'Uniquement deux'],
@@ -4280,7 +4280,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : “une ou plusieurs personnes”.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aggraver des infractions :',
     options: [
@@ -4293,7 +4293,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : application si la loi a expressément visé les infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aggraver :',
     options: ['Le meurtre', 'Le vol simple sans texte', 'La diffamation'],
@@ -4301,7 +4301,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : champ d’application inclut le meurtre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aussi aggraver :',
     options: [
@@ -4314,7 +4314,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : champ d’application inclut tortures/actes de barbarie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut également aggraver :',
     options: [
@@ -4327,7 +4327,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : champ d’application inclut violences (articles listés).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens peut aggraver l’empoisonnement :',
     options: ['Oui', 'Non', 'Uniquement si la victime est mineure'],
@@ -4335,7 +4335,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : champ d’application inclut l’empoisonnement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens est apprécié :',
     options: [
@@ -4348,7 +4348,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : la question se pose après commission ou tentative de certaines infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens suppose un “lieu déterminé” :',
     options: ['Oui', 'Non', 'Seulement en milieu scolaire'],
@@ -4356,7 +4356,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition : attente dans un lieu déterminé.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Guet-apens',
     question: 'Le guet-apens s’étend aux complices car il est :',
     options: ['Réel', 'Personnel', 'Mixte au sens légal obligatoire'],
@@ -4369,7 +4369,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q061–Q080 — BANDE ORGANISÉE (art. 132-71 C.P.)
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est définie par :',
     options: [
@@ -4382,7 +4382,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours indique que l’article 132-71 du code pénal définit la bande organisée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Constitue une bande organisée :',
     options: [
@@ -4395,7 +4395,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition légale reprise au cours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Uniquement civile'],
@@ -4404,7 +4404,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est proche de :',
     options: [
@@ -4416,7 +4416,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours rapproche les deux notions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Différence majeure : l’association de malfaiteurs est :',
     options: [
@@ -4429,7 +4429,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : association de malfaiteurs = infraction autonome même au stade préparatoire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée se pose :',
     options: [
@@ -4442,7 +4442,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que la question se pose après commission ou tentative.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée est une forme particulière de :',
     options: ['Préméditation', 'Vulnérabilité', 'Récidive'],
@@ -4450,7 +4450,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : forme particulière de préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'À la différence de la réunion, la bande organisée suppose :',
     options: [
@@ -4463,7 +4463,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 14 mai 1993 : moyens matériels impliquant organisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La réunion a un caractère :',
     options: [
@@ -4475,7 +4475,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : réunion = concertation simple sans préméditation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Condition : il faut une résolution d’agir en commun :',
     options: [
@@ -4488,7 +4488,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : résolution d’agir en commun antérieure à l’action.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée implique :',
     options: ['Un plan concerté', 'Une impulsion', 'Une erreur'],
@@ -4497,7 +4497,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 30 novembre 2005 : “plan concerté”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'Une organisation “structurée et hiérarchisée” est un indice de :',
@@ -4507,7 +4507,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite la nécessité d’une organisation structurée et hiérarchisée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'La bande organisée nécessite de démontrer une participation continuelle :',
@@ -4517,7 +4517,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : pas nécessaire de démontrer une participation continuelle à l’organisation.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'Le nombre de personnes nécessaire est fixé par la jurisprudence :',
@@ -4531,7 +4531,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : la jurisprudence ne se prononce pas sur un nombre précis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question:
         'Selon le cours, pour constituer une bande organisée, il est nécessaire d’être :',
@@ -4540,7 +4540,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours précise qu’il est nécessaire d’être plus de deux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La Convention ONU évoquée parle d’un groupe de :',
     options: ['Trois personnes ou plus', 'Deux personnes', 'Une personne'],
@@ -4549,7 +4549,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite la définition ONU : groupe structuré de trois personnes ou plus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La seule constitution d’une équipe peut être insuffisante si :',
     options: [
@@ -4562,7 +4562,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 8 juillet 2015 : critère de structure dans le temps.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'Les actes préparatoires peuvent être :',
     options: [
@@ -4574,7 +4574,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours donne ces exemples d’actes préparatoires.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée peut aggraver (exemple du cours) :',
     options: [
@@ -4587,7 +4587,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours liste le vol (art. 311-9) parmi les infractions aggravées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Bande organisée',
     question: 'La bande organisée peut aussi aggraver :',
     options: ['L’escroquerie', 'La diffamation', 'Le tapage'],
@@ -4599,7 +4599,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q081–Q100 — ARME + ESCALADE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Selon l’art. 132-75, est une arme :',
     options: [
@@ -4611,7 +4611,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : arme par nature (alinéa 1).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Les armes par nature comprennent notamment :',
     options: [
@@ -4624,7 +4624,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite armes à feu, engins explosifs/incendiaires, gaz toxiques.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Les armes blanches (cours) incluent :',
     options: [
@@ -4637,7 +4637,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite des exemples d’armes blanches tranchantes/perçantes/contondantes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme par destination est :',
     options: [
@@ -4650,7 +4650,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : assimilation si objet susceptible de danger est utilisé/destiné à tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Un véhicule automobile utilisé pour blesser peut être :',
     options: [
@@ -4663,7 +4663,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite le véhicule automobile comme exemple d’arme par destination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Une arme factice est assimilée si elle :',
     options: [
@@ -4676,7 +4676,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : ressemblance de nature à créer confusion + usage/destination pour menacer.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'L’utilisation d’un animal pour menacer est :',
     options: [
@@ -4689,7 +4689,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’utilisation d’un animal pour tuer/blesser/menacer est assimilée à une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'La circonstance “arme” est :',
     options: ['Réelle', 'Personnelle', 'Une excuse légale'],
@@ -4697,7 +4697,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour l’usage/menace d’arme, il faut :',
     options: [
@@ -4710,7 +4710,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : être porteur ne suffit pas, il faut usage pour tuer/blesser/menacer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Pour le port d’arme, il suffit :',
     options: [
@@ -4722,7 +4722,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : port apparente ou cachée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Port ou usage d’une arme',
     question: 'Le port illégal d’arme est :',
     options: [
@@ -4735,7 +4735,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’arme peut aussi constituer l’élément matériel d’infractions autonomes (ex. port illégal).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est :',
     options: [
@@ -4748,7 +4748,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Définition de l’art. 132-74 reprise au cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Exclusivement civile'],
@@ -4756,7 +4756,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Elle suppose un endroit :',
     options: ['Clos', 'Toujours ouvert', 'Virtuel uniquement'],
@@ -4765,7 +4765,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : endroit clos dont l’accès est interdit aux tiers par une clôture.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Le moyen utilisé (échelle, corde…) :',
     options: ['Importe peu', 'Doit être une échelle', 'Doit être un grappin'],
@@ -4773,7 +4773,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : moyen prévu, improvisé ou trouvé par hasard.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Entrer par une fenêtre peut relever de :',
     options: ['L’escalade', 'La cryptologie', 'La vulnérabilité'],
@@ -4782,7 +4782,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : issue non destinée à servir d’entrée (fenêtre, soupirail…).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'La circonstance d’escalade se réalise :',
     options: [
@@ -4795,7 +4795,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : “s’introduire…”, donc de l’extérieur vers l’intérieur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'Comme l’effraction, l’escalade implique :',
     options: [
@@ -4808,7 +4808,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours compare escalade et effraction : moyen illicite pour pénétrer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Escalade',
     question: 'L’escalade peut aggraver :',
     options: ['Le vol', 'Le mariage', 'La grève'],
@@ -4820,7 +4820,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q101–Q120 — ITT + MORT + MUTILATION/INFIRMITÉ
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale mesure :',
     options: [
@@ -4832,7 +4832,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : l’I.T.T. mesure la gravité des atteintes subies.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. pénale ne doit pas être confondue avec :',
     options: [
@@ -4844,7 +4844,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours distingue I.T.T. pénale et arrêt de travail social.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question:
         'Une victime sans activité professionnelle peut avoir une I.T.T. :',
@@ -4854,7 +4854,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : enfant/retraité… peut se voir prescrire une I.T.T.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Pour constituer la circonstance, l’incapacité doit être :',
     options: ['Totale', 'Partielle', 'Mentale uniquement'],
@@ -4863,7 +4863,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’I.T.T. doit être totale pour constituer la circonstance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'L’I.T.T. s’étend :',
     options: [
@@ -4876,7 +4876,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours (jurisprudence) : s’étend à toute l’activité courante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La durée de l’I.T.T. est prise en compte par :',
     options: ['Paliers', 'Pourcentage fixe', 'Appréciation libre sans seuil'],
@@ -4884,7 +4884,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : paliers (≤8j, >8j, ≤3 mois, >3 mois).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'La preuve de l’I.T.T. est rapportée :',
     options: ['Par la partie poursuivante', 'Par l’auteur', 'Par la presse'],
@@ -4893,7 +4893,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : la preuve doit être rapportée par la partie poursuivante.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — I.T.T.',
     question: 'Le juge peut se baser sur :',
     options: [
@@ -4906,7 +4906,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : certificats et expertises, avec pouvoir d’appréciation du juge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question:
         'La circonstance “ayant entraîné la mort sans intention de la donner” suppose :',
@@ -4920,7 +4920,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’auteur n’a jamais voulu donner volontairement la mort.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'La circonstance “mort” est :',
     options: ['Réelle', 'Personnelle', 'Toujours mixte'],
@@ -4928,7 +4928,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'Condition essentielle : il faut une relation :',
     options: [
@@ -4941,7 +4941,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 17 janvier 1991 : relation de cause à effet.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'L’état préexistant de la victime (santé fragile) est :',
     options: ['Indifférent', 'Excluant la circonstance', 'Toujours atténuant'],
@@ -4950,7 +4950,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : circonstance retenue même si l’état a concouru au décès.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — La mort',
     question: 'Cette circonstance peut aggraver :',
     options: [
@@ -4962,7 +4962,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours liste des violences ayant entraîné la mort.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'La mutilation correspond à :',
     options: [
@@ -4976,7 +4976,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend la définition (Robert) : atteinte irréversible à l’intégrité physique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'L’infirmité permanente est :',
     options: [
@@ -4990,7 +4990,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 24 nov. 2021 : atteinte majeure et irréversible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'L’infirmité peut être :',
     options: [
@@ -5003,7 +5003,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’infirmité peut affecter aussi les facultés mentales/intellectuelles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Le caractère permanent de l’infirmité signifie :',
     options: ['Irréversible/définitif', 'Temporaire', 'Réversible'],
@@ -5012,7 +5012,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : infirmité doit être irréversible ou définitive (jurisprudence citée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'La preuve est rapportée par :',
     options: [
@@ -5024,7 +5024,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : preuve par certificats médicaux ou expertises.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Mutilation ou infirmité permanente',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Exclusivement administrative'],
@@ -5036,7 +5036,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q121–Q140 — VULNÉRABILITÉ + MINORITÉ 15 ANS + PROSTITUTION
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité particulière vise :',
     options: [
@@ -5049,7 +5049,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : elle protège les victimes en situation de faiblesse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'Les causes de vulnérabilité sont :',
     options: ['Limitatives', 'Illimitées', 'Au choix du juge sans texte'],
@@ -5058,7 +5058,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’elles sont limitatives (au nombre de sept).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité doit être :',
     options: [
@@ -5071,7 +5071,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : condition d’apparence ou de connaissance par l’auteur.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité doit résulter :',
     options: [
@@ -5084,7 +5084,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours (jurisprudence) : vulnérabilité préexistante, pas conséquence des faits.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'Concernant l’âge, le cours précise que :',
     options: [
@@ -5097,7 +5097,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : la minorité de 15 ans ne rentre pas dans ce champ car aggravation spécifique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'Le seul grand âge suffit à caractériser la vulnérabilité :',
     options: [
@@ -5110,7 +5110,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite la jurisprudence : l’âge ne suffit pas sans autres constatations.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La maladie/infirmité/déficience concerne :',
     options: [
@@ -5123,7 +5123,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : dysfonctionnements corporels, physiques ou mentaux, innés ou acquis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'L’état de grossesse peut entraîner une vulnérabilité :',
     options: [
@@ -5136,7 +5136,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : vulnérabilité possible pendant la grossesse et après l’accouchement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La précarité économique/sociale se définit comme :',
     options: [
@@ -5150,7 +5150,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours donne une définition inspirée : absence de sécurités, notamment emploi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Vulnérabilité particulière',
     question: 'La vulnérabilité est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Toujours mixte'],
@@ -5158,7 +5158,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La “minorité de quinze ans” vise :',
     options: [
@@ -5170,7 +5170,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : c’est l’âge de 15 ans accompli qui est la limite.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'L’âge pris en compte est celui :',
     options: [
@@ -5183,7 +5183,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 21 mars 1957 : âge au moment des faits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'Le calcul de l’âge se fait :',
     options: ['D’heure à heure', 'Par année civile', 'Par trimestre'],
@@ -5192,7 +5192,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 3 septembre 1985 : calcul d’heure à heure.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'À défaut d’acte probant, la preuve de l’âge se fait :',
     options: [
@@ -5205,7 +5205,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours cite Cass. crim., 17 juillet 1991 : preuve par tout moyen.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La minorité de 15 ans doit être apparente/connue de l’auteur :',
     options: [
@@ -5218,7 +5218,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : pas d’exigence d’apparence ou de connaissance pour cette circonstance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Minorité de quinze ans',
     question: 'La minorité de 15 ans est une circonstance :',
     options: ['Réelle', 'Personnelle', 'Exclusivement civile'],
@@ -5226,7 +5226,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Cette circonstance est :',
@@ -5235,7 +5235,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: '“Se livrer à la prostitution” implique :',
@@ -5249,7 +5249,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : existence de rapports sexuels contre rémunération.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'La prostitution peut être :',
@@ -5258,7 +5258,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : un acte unique peut suffire.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime se livrant à la prostitution',
     question: 'Les faits doivent être commis :',
@@ -5276,7 +5276,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q141–Q160 — RÉSEAU DE COMMUNICATION ÉLECTRONIQUE + CRYPTOLOGIE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance vise l’utilisation :',
@@ -5290,7 +5290,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : diffusion de messages à destination d’un public non déterminé via réseau électronique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Elle est une circonstance :',
@@ -5299,7 +5299,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'La formule “public non déterminé” exclut :',
@@ -5313,7 +5313,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise que cette formule exclut cet envoi ciblé à personnes identifiées.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Le réseau de communication électronique visé est :',
@@ -5326,7 +5326,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : internet + réseau téléphonique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance vise :',
@@ -5339,7 +5339,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : vise mineurs et majeurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Le développement d’Internet a rendu certaines infractions :',
@@ -5353,7 +5353,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours souligne la facilité de contact massif et la difficulté d’identification.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Ces procédés peuvent induire :',
@@ -5366,7 +5366,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours mentionne l’internationalisation des délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance peut aggraver (cours) :',
@@ -5376,7 +5376,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : harcèlement moral (art. 222-33-2-2, 4°) figure dans la liste.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Cette circonstance peut aussi aggraver :',
@@ -5390,7 +5390,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : corruption de mineurs (art. 227-22) figure dans la liste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Réseau de communication électronique',
     question: 'Elle peut également aggraver :',
@@ -5403,7 +5403,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : art. 227-23 figure dans la liste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’utilisation d’un moyen de cryptologie est prévue par :',
     options: ['Art. 132-79 C.P.', 'Art. 132-77 C.P.', 'Art. 132-74 C.P.'],
@@ -5411,7 +5411,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : article 132-79 du code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cette circonstance est :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -5419,7 +5419,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Le moyen de cryptologie sert principalement à garantir :',
     options: [
@@ -5431,7 +5431,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : confidentialité, authentification, intégrité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'L’article 132-79 a une portée :',
     options: [
@@ -5444,7 +5444,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : portée générale, s’applique à tous crimes et délits.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Cette circonstance ne s’applique pas si l’auteur/complice :',
     options: [
@@ -5457,7 +5457,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : exception si remise aux autorités de la version en clair + conventions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question:
         'Un téléphone équipé d’un moyen de cryptologie + code de déverrouillage :',
@@ -5470,7 +5470,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours cite Cass. crim., 11 octobre 2020.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question:
         'L’objectif de cette aggravation est de réprimer plus sévèrement :',
@@ -5485,7 +5485,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : réprimer l’usage de moyens techniques de confidentialité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'Un “moyen de cryptologie” peut être :',
     options: [
@@ -5499,7 +5499,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours reprend la définition de l’art. 29 de la loi du 21 juin 2004.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Cryptologie',
     question: 'La cryptologie vise notamment :',
     options: [
@@ -5513,7 +5513,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : sécurité du stockage/transmission, confidentialité/authentification/intégrité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Cette circonstance est définie par :',
     options: ['Art. 132-80 C.P.', 'Art. 132-75 C.P.', 'Art. 132-72 C.P.'],
@@ -5521,7 +5521,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : article 132-80 du code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Elle est une circonstance aggravante :',
     options: ['Personnelle', 'Réelle', 'Disciplinaire'],
@@ -5530,7 +5530,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : circonstance aggravante personnelle, non étendue aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Elle s’applique même si les personnes :',
     options: [
@@ -5542,7 +5542,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : y compris lorsqu’ils ne cohabitent pas.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Elle peut aussi être constituée par :',
     options: [
@@ -5555,7 +5555,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : le texte vise aussi l’ancien conjoint/concubin/partenaire.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question:
         'Pour l’ancien conjoint/concubin/partenaire, il faut que l’infraction soit commise :',
@@ -5569,7 +5569,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : condition du mobile (lien avec la relation passée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Le concubinage est défini par le code civil comme :',
     options: [
@@ -5581,7 +5581,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours reprend l’art. 515-8 du code civil.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Conjoint/concubin/PACS (auteur)',
     question: 'Le PACS est :',
     options: [
@@ -5593,7 +5593,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours reprend l’art. 515-1 du code civil.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'Cette circonstance est :',
@@ -5603,7 +5603,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : circonstance aggravante personnelle, non étendue aux coauteurs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'Ascendants visés :',
@@ -5617,7 +5617,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : ascendants directs, légitimes, naturels ou adoptifs.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'L’autorité peut être :',
@@ -5631,7 +5631,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : tuteur (droit) ou autorité de fait permanente/discontinue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur ascendant ou autorité sur la victime',
     question: 'Exemple d’autorité de fait (cours) :',
@@ -5644,7 +5644,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours cite ces exemples d’autorité de fait.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: '“Abusant de l’autorité que lui confèrent ses fonctions” est :',
     options: ['Personnelle', 'Réelle', 'Une cause d’exemption'],
@@ -5652,7 +5652,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante personnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Les fonctions exercées peuvent être :',
     options: [
@@ -5664,7 +5664,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : fonctions publiques ou privées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'Exemples de personnes concernées (cours) :',
     options: [
@@ -5676,7 +5676,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours donne ces exemples.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur abusant de son autorité',
     question: 'La condition centrale est :',
     options: [
@@ -5689,7 +5689,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : aggravation encourue lorsque l’auteur abuse de l’autorité.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: 'Cette circonstance (auteur DAP/MSP) est :',
@@ -5699,7 +5699,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : circonstance aggravante personnelle, non étendue aux coauteurs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: 'Dépositaire de l’autorité publique =',
@@ -5713,7 +5713,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours donne cette définition (policiers, gendarmes, douaniers, huissiers…).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: '“Dans l’exercice ou à l’occasion de l’exercice” signifie :',
@@ -5727,7 +5727,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : dans l’exercice (en service) ou à l’occasion/du fait des fonctions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Auteur dépositaire autorité publique/mission service public',
     question: 'La “mission de service public” (cours) vise :',
@@ -5746,7 +5746,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
   //////////////////////////////////////////////////////////////////////////////
   // Q181–Q200 — VICTIMES PROTÉGÉES (DAP/MSP) + PROCHES + TÉMOIN/VICTIME/PC + IVRESSE
   //////////////////////////////////////////////////////////////////////////////
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Cette circonstance est :',
@@ -5755,7 +5755,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'Pour la retenir, il faut un lien :',
@@ -5769,7 +5769,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’infraction doit être en rapport direct avec la fonction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Victime dépositaire de l’autorité publique',
     question: 'La qualité de la victime doit être :',
@@ -5782,7 +5782,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : condition d’apparence/connaissance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'Cette circonstance (victime MSP) est :',
     options: ['Réelle', 'Personnelle', 'Une excuse légale'],
@@ -5790,7 +5790,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'Elle protège notamment :',
     options: [
@@ -5803,7 +5803,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours détaille ces catégories.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'La victime doit être atteinte :',
     options: [
@@ -5816,7 +5816,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : victime en service ou effectuant un acte entrant dans ses attributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Victime mission de service public',
     question: 'La qualité doit être :',
     options: [
@@ -5828,7 +5828,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : condition identique (apparente/connue).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cette circonstance (proches) est :',
     options: ['Réelle', 'Personnelle', 'Disciplinaire'],
@@ -5836,7 +5836,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : circonstance aggravante réelle, effets étendus.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Sont visés notamment :',
     options: [
@@ -5850,7 +5850,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours énumère ces liens et la personne vivant habituellement au domicile.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Condition essentielle : faits commis :',
     options: [
@@ -5863,7 +5863,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : l’infraction principale doit être commise en raison des fonctions du proche.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Proches d’une personne protégée',
     question: 'Cela implique que l’auteur :',
     options: [
@@ -5876,7 +5876,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : condition de connaissance de la qualité du proche.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Cette circonstance est de nature :',
     options: ['Personnelle', 'Réelle', 'Toujours mixte'],
@@ -5885,7 +5885,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : dépend de l’intention de l’auteur et du but poursuivi.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Elle vise à préserver :',
     options: [
@@ -5898,7 +5898,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : pressions sur témoins/parties menacent l’administration de la justice.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “préventive” :',
     options: [
@@ -5911,7 +5911,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : empêcher, contraindre à retirer plainte, influencer déclarations.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Témoin/victime/partie civile',
     question: 'Intention “répressive” :',
     options: [
@@ -5923,7 +5923,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : intention répressive = volonté de vengeance.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question:
         'La circonstance “ivresse manifeste ou emprise manifeste de stupéfiants” est :',
@@ -5933,7 +5933,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours précise qu’il s’agit d’une circonstance aggravante réelle, étendue à tous les participants.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question:
         'Concernant l’ivresse, la jurisprudence majoritaire considère que l’ivresse :',
@@ -5947,7 +5947,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours : la majorité des décisions refusent d’y voir une cause légale d’exemption de peine.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question: 'L’usage volontaire de stupéfiants est, par nature :',
     options: [
@@ -5960,7 +5960,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
         'Le cours souligne que l’usage de stupéfiants est illicite, contrairement à la consommation d’alcool.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Auteur ivre ou sous stupéfiants',
     question: 'La preuve de l’état manifeste peut être délicate car :',
     options: [
@@ -5974,7 +5974,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Circonstances aggravantes — Caractère raciste',
     question: 'Catégories 132-76 :',
     options: ['Ethnie/nation/race/religion', 'Âge/sexe', 'Profession/salaire'],
@@ -5982,7 +5982,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Liste du cours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Caractère homophobe/sexiste/transphobe',
     question: 'Peut viser identité de genre :',
@@ -5991,7 +5991,7 @@ final List<QuizQuestion> questionGPCirconstancesAggravantes = [
     explanation: 'Le cours : erreur possible de l’auteur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Circonstances aggravantes — Particulière vulnérabilité de la victime',
     question:
@@ -6364,7 +6364,7 @@ class _QuizSanctionAggravationState extends State<QuizSanctionAggravation>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -6567,7 +6567,7 @@ class _QuizSanctionAggravationState extends State<QuizSanctionAggravation>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -6750,7 +6750,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -7283,10 +7282,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -7657,7 +7657,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -7698,9 +7698,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -102,7 +102,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION DE CHANGEMENT DE DOMICILE AU CRÉANCIER — FONDEMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le défaut de notification de changement de domicile au créancier est prévu par :',
@@ -116,7 +116,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’élément légal de l’infraction est fixé par l’article 227-4-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le défaut de notification de changement de domicile au créancier est prévu par :',
@@ -130,7 +130,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’élément légal de l’infraction est fixé par l’article 227-4-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'L’infraction vise une personne tenue de verser une contribution ou des subsides au titre :',
@@ -145,7 +145,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise la personne tenue de verser une contribution ou des subsides au titre de l’ordonnance de protection (art. 515-9 C. civ.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le débiteur doit notifier son changement de domicile au créancier dans un délai de :',
@@ -159,7 +159,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le délai légal est d’un mois à compter du changement de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Concernant la forme de la notification du changement de domicile, le texte :',
@@ -173,7 +173,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Aucune exigence n’est formulée quant à la forme de la notification : l’essentiel est d’informer dans le délai.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question:
         'Le défaut de notification de changement de domicile est une infraction :',
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — PRÉCISIONS / MÉCANISME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'L’infraction a été prévue notamment car le JAF peut se prononcer dans le référé protection sur :',
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le cours indique que le JAF peut statuer sur la contribution aux charges du ménage, d’où l’intérêt dissuasif de l’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Dans ce cadre, la personne visée par 227-4-3 est principalement :',
@@ -219,7 +219,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’obligation de notifier pèse sur le débiteur tenu de verser la contribution/subsides.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'Pourquoi la simple négligence n’est-elle pas punissable ici ?',
     options: [
@@ -233,7 +233,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte insiste sur l’intention : la volonté de priver le créancier de l’exercice de son droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances',
     question:
         'Concernant les circonstances aggravantes du défaut de notification (227-4-3), il y en a :',
@@ -251,7 +251,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-3 est :',
     options: [
@@ -263,7 +263,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'La répression prévue est : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La classification de l’infraction 227-4-3 est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -271,7 +271,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le cours précise : classification = délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La tentative de l’infraction 227-4-3 est :',
     options: [
@@ -283,7 +283,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le document indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La complicité pour 227-4-3 est :',
     options: [
@@ -296,7 +296,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La complicité est prévue selon l’article 121-7 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Personnes morales',
     question:
         'Depuis quand la responsabilité des personnes morales est applicable de façon généralisée (référence cours) ?',
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // NON-RESPECT DES OBLIGATIONS / INTERDICTIONS D’UNE ORDONNANCE DE PROTECTION — FONDEMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Fondement',
     question:
         'Le non-respect des obligations ou interdictions imposées par une ordonnance de protection est prévu par :',
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’élément légal est fixé par l’article 227-4-2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'L’infraction vise le non-respect d’obligations/interdictions imposées dans :',
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise l’ordonnance de protection rendue notamment en application des articles 515-9 ou 515-13 du code civil.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'Sont aussi visées par 227-4-2 les obligations/interdictions imposées dans :',
@@ -357,7 +357,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise aussi l’ordonnance provisoire de protection immédiate rendue sur le fondement de l’article 515-13-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ UE',
     question:
         'Les mêmes peines s’appliquent à la violation d’une mesure de protection civile d’un autre État membre de l’UE reconnue en France via :',
@@ -375,7 +375,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — CONDITIONS (515-9) / DÉLAIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'Selon l’article 515-9 C. civ., l’ordonnance de protection peut être délivrée lorsque des violences au sein du couple :',
@@ -389,7 +389,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La condition centrale : danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'L’ordonnance de protection peut être délivrée même lorsqu’il n’y a pas de cohabitation :',
@@ -403,7 +403,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise les violences au sein du couple y compris sans cohabitation, et même sans cohabitation passée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Délai',
     question:
         'Le JAF délivre l’ordonnance de protection dans un délai maximal de :',
@@ -417,7 +417,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique : délai maximal de six jours (OP classique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Plainte',
     question:
         'La délivrance d’une ordonnance de protection est-elle conditionnée à une plainte pénale ?',
@@ -435,7 +435,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — MESURES POSSIBLES (515-11) : QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Parmi les mesures possibles, le JAF peut interdire à la partie défenderesse :',
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'C’est la mesure 1° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut interdire à la partie défenderesse de se rendre dans certains lieux fréquentés habituellement par la demanderesse :',
@@ -463,7 +463,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La mesure 1° bis prévoit l’interdiction de se rendre dans certains lieux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question: 'Concernant les armes, le JAF peut notamment :',
     options: [
@@ -475,7 +475,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'C’est la mesure 2° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut ordonner à la partie défenderesse de remettre ses armes :',
@@ -489,7 +489,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 2° bis : remise au service de police/gendarmerie le plus proche.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut proposer une prise en charge sanitaire/sociale/psychologique ou un stage de responsabilisation :',
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 2° ter : proposition de prise en charge ou stage ; en cas de refus, information immédiate du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Concernant le logement conjugal, sauf circonstances particulières, la jouissance est attribuée :',
@@ -517,7 +517,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le principe : protection de la victime, attribution au non-auteur des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut attribuer la jouissance de l’animal de compagnie détenu au sein du foyer :',
@@ -527,7 +527,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’article 515-11 prévoit la mesure 3° bis sur l’animal de compagnie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Pour des partenaires PACS/concubins, la jouissance du logement commun est attribuée en principe :',
@@ -541,7 +541,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le même principe protecteur est prévu au 4° pour PACS/concubins.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut se prononcer sur l’autorité parentale et aussi sur :',
@@ -556,7 +556,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 5° : autorité parentale, DVH, et contributions selon la situation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut autoriser la demanderesse à dissimuler son domicile et élire domicile :',
@@ -571,7 +571,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 6° : dissimulation + élection de domicile chez avocat ou auprès du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut aussi autoriser une élection de domicile « pour les besoins de la vie courante » :',
@@ -585,7 +585,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 6° bis : élection de domicile vie courante auprès d’une personne morale qualifiée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut prononcer l’admission provisoire à l’aide juridictionnelle :',
@@ -602,7 +602,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DISPOSITIF ANTI-RAPPROCHEMENT (515-11-1) — QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question:
         'Si l’interdiction d’entrer en relation (1°) est prononcée, le JAF peut aussi :',
@@ -621,7 +621,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE (515-13) — MARIAGE FORCÉ / SORTIE DU TERRITOIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’article 515-13 permet une ordonnance de protection en urgence pour :',
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise expressément la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'Dans ce cadre, le JAF peut ordonner à la demande de la personne :',
@@ -649,7 +649,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’article 515-13 mentionne l’interdiction temporaire de sortie du territoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -663,7 +663,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE PROVISOIRE DE PROTECTION IMMÉDIATE (515-13-1) — 24H
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'L’ordonnance provisoire de protection immédiate est délivrée dans un délai de :',
@@ -677,7 +677,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte indique : délivrée dans un délai de vingt-quatre heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Qui peut demander, avec l’accord de la personne en danger, une OPPI en plus de la demande d’OP ?',
@@ -687,7 +687,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’article 515-13-1 prévoit la demande par le ministère public avec l’accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Pour délivrer l’OPPI, le JAF statue :',
     options: [
@@ -704,7 +704,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — ÉLÉMENT MATÉRIEL / MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément matériel',
     question: 'L’élément matériel de 227-4-2 consiste à :',
     options: [
@@ -717,7 +717,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La violation est le non-respect des obligations/interdictions fixées par l’ordonnance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'L’infraction 227-4-2 est :',
     options: [
@@ -730,7 +730,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise une infraction intentionnelle : l’auteur agit en connaissance de cause des obligations/interdictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'Pour caractériser l’élément moral, l’auteur doit notamment :',
     options: [
@@ -743,7 +743,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La connaissance des obligations/interdictions suppose que l’auteur ait été informé de l’ordonnance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Finalité',
     question: 'Le texte 227-4-2 vise à rendre l’ordonnance de protection :',
     options: [
@@ -760,7 +760,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-2 est :',
     options: [
@@ -772,7 +772,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'La répression prévue par 227-4-2 est de 3 ans et 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Classification',
     question: 'La classification de l’infraction 227-4-2 est :',
     options: ['Un délit', 'Un crime', 'Une contravention'],
@@ -780,7 +780,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le cours précise : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Circonstances',
     question:
         'Concernant les circonstances aggravantes de 227-4-2 (cours), il y en a :',
@@ -789,7 +789,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La tentative de 227-4-2 est :',
     options: [
@@ -801,7 +801,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le document précise : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La complicité pour 227-4-2 est :',
     options: [
@@ -818,7 +818,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // QUESTIONS MIXTES (COMPARAISONS 227-4-2 / 227-4-3)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction est la plus lourdement sanctionnée (peine d’emprisonnement) ?',
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: '227-4-2 prévoit 3 ans, tandis que 227-4-3 prévoit 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction concerne spécifiquement le changement de domicile du débiteur ?',
@@ -837,7 +837,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         '227-4-3 incrimine le défaut de notification du changement de domicile au créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Élément moral',
     question: 'Point commun entre 227-4-2 et 227-4-3 :',
     options: [
@@ -850,7 +850,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Les deux supposent une volonté : ne pas se conformer / ne pas informer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question: 'Concernant la tentative, 227-4-2 et 227-4-3 :',
     options: [
@@ -863,7 +863,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique “TENTATIVE : NON” pour les deux infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Complicité',
     question: 'Concernant la complicité (121-7 CP), pour 227-4-2 et 227-4-3 :',
     options: [
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // QUESTIONS "PIÈGES" / PRÉCISION DE TEXTE (PLUS DIFFICILES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Durée',
     question:
         'Les mesures de l’ordonnance de protection peuvent être prises pour une durée maximale de :',
@@ -894,7 +894,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support mentionne une durée maximale de 12 mois, prolongeable sous certaines conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Logement',
     question:
         'Sauf circonstances particulières, la jouissance du logement est attribuée :',
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Principe protecteur : attribution au non-auteur (sauf ordonnance motivée/circonstances particulières).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Domicile dissimulé',
     question:
         'Si un commissaire de justice doit connaître l’adresse réelle pour exécuter une décision :',
@@ -923,7 +923,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise la communication nécessaire pour l’exécution, avec interdiction de révélation au mandant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Information autorités',
     question:
         'Quand les mesures 6°/6° bis sont prononcées, qui peut être informé (avec accord de la personne) pour éviter la communication de l’adresse ?',
@@ -937,7 +937,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique l’information du maire et du représentant de l’État dans le département, sous réserve de l’accord de la personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Fin des mesures',
     question: 'Les mesures de l’OPPI prennent fin :',
     options: [
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-3 — ÉLÉMENT LÉGAL / CHAMP
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le défaut de notification de changement de domicile au créancier est réprimé par :',
@@ -972,7 +972,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'L’élément légal est prévu à l’article 227-4-3 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'L’infraction 227-4-3 concerne une personne tenue de verser :',
     options: [
@@ -986,7 +986,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise la personne tenue de verser une contribution/subsides au titre de l’ordonnance de protection.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le délai légal pour notifier son changement de domicile au créancier est :',
@@ -999,7 +999,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support fixe un délai d’un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'La notification du changement de domicile au créancier :',
     options: [
@@ -1011,7 +1011,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte précise qu’aucune forme n’est exigée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'L’ordonnance de protection visée pour 227-4-3 est rendue en application de :',
@@ -1029,7 +1029,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-3 — ÉLÉMENT MATÉRIEL / LOGIQUE DISUASIVE
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'L’incrimination 227-4-3 a été prévue notamment car le JAF peut statuer, en référé protection, sur :',
@@ -1043,7 +1043,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support justifie l’infraction par la nécessité dissuasive liée aux contributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question: 'L’acte matériel réprimé par 227-4-3 est :',
     options: [
@@ -1057,7 +1057,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le cœur de l’infraction est l’absence de notification dans le délai d’un mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question: 'Le délai d’un mois court :',
     options: [
@@ -1069,7 +1069,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte indique : “à compter de ce changement”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question: 'Le texte précise que la notification doit être faite :',
     options: [
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-3 — ÉLÉMENT MORAL
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question:
         'Le défaut de notification de changement de domicile (227-4-3) est une infraction :',
@@ -1095,7 +1095,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique une volonté de ne pas informer le créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'La simple négligence est punissable pour 227-4-3 :',
     options: ['Non', 'Oui', 'Oui si le créancier le demande'],
@@ -1104,7 +1104,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise que la simple négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'La volonté coupable, pour 227-4-3, consiste à :',
     options: [
@@ -1122,7 +1122,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-3 — RÉPRESSION / TENTATIVE / COMPLICITÉ
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La peine encourue pour 227-4-3 (personne physique) est :',
     options: [
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support fixe : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La classification de 227-4-3 est :',
     options: ['Délit', 'Contravention', 'Crime'],
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le tableau répressif indique : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui si plusieurs déménagements'],
@@ -1150,7 +1150,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la complicité est :',
     options: [
@@ -1162,7 +1162,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : COMPLICITÉ : OUI, article 121-7 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances aggravantes',
     question: 'Pour 227-4-3, les circonstances aggravantes prévues sont :',
     options: ['Aucune', 'Deux', 'Une en cas d’enfant mineur'],
@@ -1178,7 +1178,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-2 — ÉLÉMENT LÉGAL / CHAMP
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question:
         'Le non-respect des obligations ou interdictions imposées par une ordonnance de protection est réprimé par :',
@@ -1191,7 +1191,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'L’élément légal est prévu à l’article 227-4-2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question:
         'Le texte vise une personne faisant l’objet d’une ou plusieurs obligations/interdictions imposées dans :',
@@ -1205,7 +1205,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support vise OP (515-9/515-13) + OPPI (515-13-1).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question:
         'Les mêmes peines s’appliquent aussi à la violation d’une mesure civile ordonnée dans un autre État membre de l’UE si elle est :',
@@ -1219,7 +1219,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support exige reconnaissance + force exécutoire en France.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'Le texte UE cité dans le support est :',
     options: [
@@ -1235,7 +1235,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-2 — ÉLÉMENT MATÉRIEL
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément matériel',
     question: 'L’élément matériel de 227-4-2 consiste à :',
     options: [
@@ -1249,7 +1249,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte incrimine la violation des obligations/interdictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément matériel',
     question: 'La finalité du texte 227-4-2 est de :',
     options: [
@@ -1262,7 +1262,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support insiste sur l’effectivité de l’OP en sanctionnant la violation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément matériel',
     question: 'L’ordonnance de protection a pour vocation de fournir :',
     options: [
@@ -1278,7 +1278,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-2 — ÉLÉMENT MORAL
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question: 'L’infraction 227-4-2 est une infraction :',
     options: ['Intentionnelle', 'Non intentionnelle', 'Purement civile'],
@@ -1287,7 +1287,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique que l’auteur agit en pleine connaissance de cause.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question:
         'Pour que l’élément moral soit caractérisé, l’auteur doit notamment :',
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise : l’auteur doit avoir été informé des termes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question:
         'La connaissance par l’auteur des obligations/interdictions implique :',
@@ -1319,7 +1319,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // -----------------------------
   // 227-4-2 — RÉPRESSION / TENTATIVE / COMPLICITÉ
   // -----------------------------
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Répression',
     question: 'La peine encourue pour 227-4-2 (personne physique) est :',
     options: [
@@ -1331,7 +1331,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support fixe : 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Répression',
     question: 'La classification de 227-4-2 est :',
     options: ['Délit', 'Contravention', 'Crime'],
@@ -1339,7 +1339,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le tableau répressif indique : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la tentative est :',
     options: ['Non', 'Oui', 'Oui si la victime est mineure'],
@@ -1347,7 +1347,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la complicité est :',
     options: [
@@ -1359,7 +1359,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support mentionne l’article 121-7 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Circonstances aggravantes',
     question:
         'Pour 227-4-2, le support prévoit des circonstances aggravantes :',
@@ -1376,7 +1376,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // OP (515-9) — CONDITIONS / PRINCIPES (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Selon 515-9, l’ordonnance de protection peut être délivrée lorsque les violences :',
@@ -1390,7 +1390,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le critère central est le danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: '515-9 vise aussi les violences commises par :',
     options: [
@@ -1402,7 +1402,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support inclut les “anciens” liens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: 'L’ordonnance de protection peut être délivrée même si :',
     options: [
@@ -1414,7 +1414,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte vise les situations sans cohabitation.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le juge délivre l’ordonnance de protection si, au vu des éléments, il existe :',
@@ -1429,7 +1429,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support utilise la formule “raisons sérieuses” + “vraisemblables”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'La délivrance de l’ordonnance de protection est conditionnée à une plainte pénale :',
@@ -1439,7 +1439,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise : pas conditionnée à l’existence d’une plainte pénale.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le délai maximal de délivrance (OP) indiqué dans le support est :',
@@ -1456,7 +1456,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // OP — 515-12 : DURÉE MAX (selon support)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — Durée',
     question:
         'Selon le support, les mesures sont prises pour une durée maximale de :',
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11 — MESURES : QCM “CHOISIS LA BONNE MESURE” (EN SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Interdire de recevoir ou rencontrer certaines personnes et d’entrer en relation avec elles » correspond à :',
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 1° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Interdire de se rendre dans certains lieux fréquentés habituellement par la demanderesse » correspond à :',
@@ -1492,7 +1492,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 1° bis de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question: '« Interdire de détenir ou porter une arme » correspond à :',
     options: ['2°', '2° bis', '2° ter'],
@@ -1500,7 +1500,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Ordonner la remise des armes au service de police/gendarmerie » correspond à :',
@@ -1509,7 +1509,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Proposer une prise en charge sanitaire/sociale/psychologique ou un stage » correspond à :',
@@ -1518,7 +1518,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° ter de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Statuer sur la résidence séparée des époux et la jouissance du logement conjugal » correspond à :',
@@ -1527,7 +1527,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 3° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Attribuer la jouissance de l’animal de compagnie du foyer » correspond à :',
@@ -1536,7 +1536,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 3° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Se prononcer sur le logement commun des partenaires PACS/concubins » correspond à :',
@@ -1545,7 +1545,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 4° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Modalités d’exercice de l’autorité parentale et droit de visite/hébergement » correspond à :',
@@ -1554,7 +1554,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 5° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Dissimuler son domicile et élire domicile chez l’avocat ou auprès du procureur » correspond à :',
@@ -1563,7 +1563,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 6° de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Élire domicile pour la vie courante chez une personne morale qualifiée » correspond à :',
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 6° bis de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — Repérage 515-11',
     question:
         '« Admission provisoire à l’aide juridictionnelle » correspond à :',
@@ -1585,7 +1585,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11-1 — DISTANCE + DISPOSITIF ANTI-RAPPROCHEMENT
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'Si l’interdiction prévue au 1° de 515-11 est prononcée, le juge peut :',
@@ -1599,7 +1599,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support prévoit la fixation d’une distance minimale.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question: 'Le dispositif anti-rapprochement est destiné à :',
     options: [
@@ -1616,7 +1616,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13 — MARIAGE FORCÉ / FIN DES MESURES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'Une ordonnance de protection peut être délivrée en urgence à la personne majeure :',
@@ -1630,7 +1630,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support vise la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'Dans ce cadre, le juge peut ordonner l’interdiction temporaire de sortie du territoire :',
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support précise : “à sa demande”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'Les mesures prises sur 515-13 prennent fin :',
     options: [
@@ -1660,7 +1660,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13-1 — OPPI : SAISINE / DÉLAI / CONDITIONS / MESURES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est demandée par :',
     options: [
@@ -1673,7 +1673,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise : ministère public + accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est délivrée dans un délai de :',
     options: [
@@ -1685,7 +1685,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support mentionne : délai de vingt-quatre heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Pour délivrer l’OPPI, le juge se fonde sur :',
     options: [
@@ -1698,7 +1698,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique : “au vu des seuls éléments joints à la requête”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI exige la vraisemblance :',
     options: [
@@ -1710,7 +1710,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support vise “danger grave et immédiat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Mesures',
     question: 'Dans l’OPPI, le juge peut prononcer à titre provisoire :',
     options: [
@@ -1722,7 +1722,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support énumère ces mesures dans l’OPPI.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Mesures',
     question: 'Dans l’OPPI, le juge peut aussi ordonner :',
     options: [
@@ -1735,7 +1735,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support mentionne explicitement la suspension du DVH.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Mesures',
     question:
         'Dans l’OPPI, la dissimulation du domicile/résidence est possible selon :',
@@ -1748,7 +1748,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support renvoie aux 6° et 6° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — Fin des mesures',
     question: 'Les mesures de l’OPPI prennent fin :',
     options: [
@@ -1765,7 +1765,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // QUESTIONS COMPARATIVES (TRÈS UTILES EN QUIZ)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 / 227-4-3',
     question:
         'Quelle infraction vise spécifiquement le changement de domicile du débiteur ?',
@@ -1775,7 +1775,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         '227-4-3 = défaut de notification de changement de domicile au créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 / 227-4-3',
     question:
         'Quelle infraction vise le non-respect d’obligations/interdictions imposées par une OP/OPPI ?',
@@ -1784,7 +1784,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: '227-4-2 = violation des obligations/interdictions OP/OPPI.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Peines',
     question:
         'Quelle infraction est la plus lourdement sanctionnée (emprisonnement) ?',
@@ -1793,7 +1793,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: '227-4-2 : 3 ans ; 227-4-3 : 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Élément moral',
     question: 'Point commun entre 227-4-2 et 227-4-3 selon le support :',
     options: [
@@ -1805,7 +1805,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support précise l’intention pour les deux infractions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question:
         'Concernant la tentative, le support indique que pour 227-4-2 et 227-4-3 :',
@@ -1822,7 +1822,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // CAS PRATIQUES (QCM) — GROS RENDU MÉMOIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-2',
     question:
         'Une ordonnance de protection interdit à la défenderesse d’entrer en relation avec la demanderesse. Elle envoie un message via un tiers. La qualification la plus adaptée est :',
@@ -1836,7 +1836,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support souligne que l’interdiction peut viser toute forme de relation/contournement.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-3',
     question:
         'Un débiteur soumis à une ordonnance de protection déménage, attend volontairement 35 jours et n’informe pas le créancier. La qualification la plus adaptée est :',
@@ -1850,7 +1850,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Délai d’un mois dépassé + intention : 227-4-3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 515-11-1',
     question:
         'Après une interdiction d’entrer en relation (1°), le juge fixe une distance minimale et ordonne un dispositif anti-rapprochement. Le fondement cité dans le support est :',
@@ -1871,7 +1871,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11 — MESURES : QCM “QUE PEUT FAIRE LE JAF ?” (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Le JAF peut, dans une ordonnance de protection, interdire à la partie défenderesse :',
@@ -1885,7 +1885,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 1° : interdiction de rencontrer/entrer en relation avec certaines personnes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La mesure qui permet d’interdire à la partie défenderesse de se rendre dans certains lieux est :',
@@ -1895,7 +1895,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 1° bis : lieux spécialement désignés où la demanderesse se trouve habituellement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Le juge peut interdire à la partie défenderesse de détenir ou porter une arme au titre :',
@@ -1908,7 +1908,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° : interdiction de détenir/porter une arme.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La remise des armes au service de police ou de gendarmerie le plus proche relève :',
@@ -1921,7 +1921,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° bis : remise au service de police/gendarmerie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Une “prise en charge sanitaire, sociale ou psychologique” ou un “stage de responsabilisation” relève :',
@@ -1934,7 +1934,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° ter : proposition de prise en charge/stage.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question: 'En cas de refus de la prise en charge/stage (2° ter), le juge :',
     options: [
@@ -1947,7 +1947,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support prévoit l’information immédiate du procureur en cas de refus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La mesure qui permet au juge de statuer sur la résidence séparée des époux est :',
@@ -1956,7 +1956,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 3° : résidence séparée + logement conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Sauf circonstances particulières, la jouissance du logement conjugal est attribuée :',
@@ -1969,7 +1969,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Principe de protection de la victime dans le support.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Le juge peut attribuer à la demanderesse la jouissance de l’animal de compagnie au titre :',
@@ -1982,7 +1982,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 3° bis : animal de compagnie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'Pour des partenaires PACS ou concubins, la jouissance du logement commun est en principe attribuée :',
@@ -1995,7 +1995,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 4° : même logique protectrice que pour les époux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La mesure relative à l’autorité parentale et au droit de visite/hébergement est :',
@@ -2004,7 +2004,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 5° : autorité parentale + DVH + contributions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'La dissimulation du domicile/résidence et l’élection de domicile chez l’avocat ou le procureur relève :',
@@ -2014,7 +2014,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 6° : dissimulation + élection de domicile (avocat/parquet).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question:
         'L’élection de domicile “pour les besoins de la vie courante” chez une personne morale qualifiée relève :',
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 6° bis : vie courante chez une personne morale qualifiée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11',
     question: 'L’admission provisoire à l’aide juridictionnelle relève :',
     options: ['Du 7°', 'Du 3° bis', 'Du 1°'],
@@ -2036,7 +2036,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11-1 — DISTANCE + DISPOSITIF ANTI-RAPPROCHEMENT (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'La possibilité d’interdire de se rapprocher à moins d’une certaine distance est prévue par :',
@@ -2049,7 +2049,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support rattache distance + dispositif à 515-11-1.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'Le juge peut ordonner le port d’un dispositif anti-rapprochement lorsque :',
@@ -2063,7 +2063,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique : “Lorsque l’interdiction prévue au 1° a été prononcée…”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question: 'Le dispositif anti-rapprochement sert principalement à :',
     options: [
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13 — ORDONNANCE POUR MENACE DE MARIAGE FORCÉ (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'L’article 515-13 permet une ordonnance de protection en urgence pour :',
@@ -2094,7 +2094,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support vise explicitement la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'Le juge peut ordonner, à la demande de la personne menacée, une :',
@@ -2108,7 +2108,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support mentionne l’interdiction temporaire de sortie du territoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -2121,7 +2121,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13-1 — OPPI : DEMANDE / CONDITIONS / FIN (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est demandée par le ministère public :',
     options: [
@@ -2133,7 +2133,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support exige l’accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Le juge délivre l’OPPI s’il estime vraisemblables :',
     options: [
@@ -2145,7 +2145,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support insiste sur “danger grave et immédiat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Le délai de délivrance de l’OPPI est :',
     options: [
@@ -2157,7 +2157,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support précise : dans les 24 heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Dans l’OPPI, le juge peut prononcer provisoirement les mesures :',
@@ -2170,7 +2170,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support limite explicitement aux 1° à 2° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Le support indique que les mesures de l’OPPI prennent fin :',
     options: [
@@ -2188,7 +2188,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 227-4-2 — VIOLATION OP/OPPI : ÉLÉMENTS / PEINES (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'La violation d’une ordonnance de protection consiste à :',
     options: [
@@ -2201,7 +2201,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Élément matériel : non-respect des obligations/interdictions imposées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'L’élément moral de 227-4-2 repose sur :',
     options: [
@@ -2213,7 +2213,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support précise : infraction intentionnelle.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Répression',
     question:
         'La peine principale (personne physique) prévue par 227-4-2 est :',
@@ -2226,7 +2226,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support fixe 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la complicité est :',
     options: [
@@ -2238,7 +2238,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : COMPLICITÉ : OUI (121-7 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Tentative / complicité',
     question: 'Pour 227-4-2, la tentative est :',
     options: ['Non', 'Oui', 'Oui si la distance n’est pas respectée'],
@@ -2250,7 +2250,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 227-4-3 — DÉFAUT DE NOTIFICATION : ÉLÉMENTS / PEINES (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'L’élément moral de 227-4-3 repose sur :',
     options: [
@@ -2264,7 +2264,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise : infraction intentionnelle, négligence non punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question:
         'La peine principale (personne physique) prévue par 227-4-3 est :',
@@ -2277,7 +2277,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support fixe 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la complicité est :',
     options: [
@@ -2289,7 +2289,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : COMPLICITÉ : OUI (121-7 CP).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui si le débiteur a déménagé deux fois'],
@@ -2301,7 +2301,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // CAS PRATIQUES — MIX 515 / 227 (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Mix',
     question:
         'Une OP interdit à la défenderesse de se rendre dans un lieu désigné (1° bis). Elle y va volontairement. Infraction la plus adaptée :',
@@ -2315,7 +2315,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le non-respect d’une interdiction imposée par l’OP est sanctionné par 227-4-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Mix',
     question:
         'Une OP prévoit remise des armes (2° bis). La défenderesse refuse et conserve une arme. Infraction la plus adaptée :',
@@ -2329,7 +2329,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La violation des obligations imposées (dont remise des armes) relève de 227-4-2.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Mix',
     question:
         'Un débiteur soumis à une OP déménage et décide de ne pas informer le créancier pour éviter l’exécution des paiements. Infraction la plus adaptée :',
@@ -2351,7 +2351,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-9 — CONDITIONS / CHAMP (SÉRIES D’ANCRAGE MÉMOIRE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'L’ordonnance de protection peut être délivrée lorsque les violences exercées :',
@@ -2365,7 +2365,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support vise le danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: 'Le champ de 515-9 inclut les violences exercées :',
     options: [
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support cite expressément les “anciens” liens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question: 'L’ordonnance de protection peut être délivrée même lorsque :',
     options: [
@@ -2390,7 +2390,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support mentionne l’absence de cohabitation (même jamais).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le juge délivre l’ordonnance s’il existe des raisons sérieuses de considérer vraisemblables :',
@@ -2404,7 +2404,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Formule du support : raisons sérieuses + vraisemblance + danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'La délivrance d’une ordonnance de protection est conditionnée à une plainte pénale :',
@@ -2414,7 +2414,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise que la plainte pénale n’est pas une condition.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OP — 515-9',
     question:
         'Le délai maximal de délivrance de l’ordonnance de protection indiqué par le support est :',
@@ -2427,7 +2427,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11 — MESURES : QCM “CHOISIS LA MESURE QUI CORRESPOND” (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « interdire à la défenderesse de recevoir ou rencontrer certaines personnes et d’entrer en relation avec elles » ?',
@@ -2436,7 +2436,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 1° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « interdire à la défenderesse de se rendre dans certains lieux spécialement désignés » ?',
@@ -2445,7 +2445,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 1° bis de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « interdire de détenir ou de porter une arme » ?',
@@ -2454,7 +2454,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 2° de 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « ordonner de remettre les armes au service de police ou de gendarmerie le plus proche » ?',
@@ -2463,7 +2463,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 2° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « proposer une prise en charge sanitaire, sociale ou psychologique ou un stage de responsabilisation » ?',
@@ -2472,7 +2472,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 2° ter de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « statuer sur la résidence séparée des époux et le logement conjugal » ?',
@@ -2481,7 +2481,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 3° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « attribuer la jouissance de l’animal de compagnie du foyer » ?',
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 3° bis de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « se prononcer sur le logement commun de partenaires PACS ou concubins » ?',
@@ -2499,7 +2499,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 4° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « se prononcer sur l’autorité parentale et le droit de visite/hébergement » ?',
@@ -2508,7 +2508,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 5° de 515-11.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « autoriser à dissimuler son domicile et à élire domicile chez l’avocat ou auprès du procureur » ?',
@@ -2517,7 +2517,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 6° de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « élire domicile pour les besoins de la vie courante chez une personne morale qualifiée » ?',
@@ -2526,7 +2526,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support liste cette mesure au 6° bis de 515-11.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (repérage)',
     question:
         'Quelle mesure correspond à « admission provisoire à l’aide juridictionnelle » ?',
@@ -2539,7 +2539,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11 — QUESTIONS “DÉTAILS DE RÉDACTION” (TRÈS BON POUR DÉPISTAGE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (détails)',
     question:
         'Le support précise que la jouissance du logement (époux) est attribuée au non-auteur des violences :',
@@ -2554,7 +2554,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique ce principe avec l’exception (ordonnance motivée).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (détails)',
     question:
         'Le support indique que la jouissance du logement peut être attribuée à la victime :',
@@ -2568,7 +2568,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise “et ce même s’il a bénéficié d’un hébergement d’urgence”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (détails)',
     question: 'La mesure 1° interdit d’entrer en relation :',
     options: [
@@ -2585,7 +2585,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-11-1 — “SI… ALORS…” (EXCELLENTS POUR LA MÉMOIRE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question: 'Si l’interdiction de contact (1°) est prononcée, le juge peut :',
     options: [
@@ -2597,7 +2597,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support prévoit la distance fixée par le juge.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Anti-rapprochement — 515-11-1',
     question:
         'Le support indique que le port du dispositif anti-rapprochement concerne :',
@@ -2614,7 +2614,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13 — MENACE DE MARIAGE FORCÉ : MESURES / FIN (SÉRIES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         '515-13 prévoit que le juge est compétent pour prendre les mesures mentionnées notamment aux :',
@@ -2628,7 +2628,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique cette compétence spécifique (liste restreinte) pour 515-13.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'En cas de menace de mariage forcé, le juge peut aussi ordonner :',
@@ -2641,7 +2641,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support mentionne l’ITST temporaire “à sa demande”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'La fin des mesures (515-13) intervient :',
     options: [
@@ -2658,7 +2658,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13-1 — OPPI : MESURES PRÉCISES (SÉRIES “LISTE”)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1 (mesures)',
     question: 'Dans l’OPPI, le juge peut prononcer provisoirement :',
     options: [
@@ -2670,7 +2670,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support mentionne explicitement 1° à 2° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1 (mesures)',
     question:
         'Le support précise que dans l’OPPI, le juge peut aussi prononcer :',
@@ -2684,7 +2684,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support cite la suspension du DVH.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1 (mesures)',
     question:
         'La dissimulation du domicile/résidence dans l’OPPI se fait selon :',
@@ -2701,7 +2701,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 227-4-2 / 227-4-3 — QUESTIONS “CHIFFRES” (PEINES / DÉLAIS) ULTRA RENTABLES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-2',
     question: 'Le quantum d’emprisonnement prévu par 227-4-2 est de :',
     options: ['3 ans', '6 mois', '1 an'],
@@ -2709,7 +2709,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : 3 ans d’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-2',
     question: 'Le montant de l’amende prévu par 227-4-2 est de :',
     options: ['45 000 €', '7 500 €', '15 000 €'],
@@ -2717,7 +2717,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-3',
     question: 'Le quantum d’emprisonnement prévu par 227-4-3 est de :',
     options: ['6 mois', '3 ans', '2 ans'],
@@ -2725,7 +2725,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : 6 mois d’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-3',
     question: 'Le montant de l’amende prévu par 227-4-3 est de :',
     options: ['7 500 €', '45 000 €', '30 000 €'],
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Chiffres — 227-4-3',
     question: 'Le délai de notification (227-4-3) est de :',
     options: ['1 mois', '6 jours', '24 heures'],
@@ -2745,7 +2745,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // CAS PRATIQUES — “BON ARTICLE” (TRÈS EFFICACE POUR EXAMENS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Bon article',
     question:
         'Une personne visée par une OP ne respecte pas l’interdiction de se rendre dans un lieu désigné (1° bis). Quel article du Code pénal réprime ce non-respect ?',
@@ -2755,7 +2755,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le non-respect des obligations/interdictions de l’OP relève de 227-4-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Bon article',
     question:
         'Un débiteur tenu de verser une contribution au titre d’une OP déménage et ne prévient pas le créancier dans le délai. Quel article réprime ce comportement ?',
@@ -2765,7 +2765,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le défaut de notification de changement de domicile au créancier relève de 227-4-3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Bon article',
     question:
         'Le juge fixe une distance minimale et ordonne un dispositif anti-rapprochement. Quel article du code civil est cité dans le support ?',
@@ -2775,7 +2775,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'L’infraction de défaut de notification de changement de domicile au créancier est :',
@@ -2784,7 +2784,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support classe 227-4-3 comme un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le délai pour notifier le changement de domicile au créancier est de :',
@@ -2793,7 +2793,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte prévoit un délai d’un mois à compter du changement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'Le défaut de notification de changement de domicile au créancier suppose :',
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'C’est une infraction intentionnelle : la simple négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question:
         'La notification du changement de domicile au créancier doit obligatoirement être faite :',
@@ -2820,7 +2820,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Aucune exigence de forme n’est imposée par le texte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — 227-4-3',
     question: 'Le défaut de notification de changement de domicile concerne :',
     options: [
@@ -2833,7 +2833,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise le débiteur tenu de verser une contribution/subsides au titre de l’ordonnance de protection.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question:
         'La peine principale encourue (personne physique) pour 227-4-3 est :',
@@ -2846,7 +2846,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Répression prévue : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la tentative est :',
     options: ['Non', 'Oui', 'Oui uniquement en cas de récidive'],
@@ -2854,7 +2854,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le document indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'Pour 227-4-3, la complicité est :',
     options: [
@@ -2867,7 +2867,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La complicité est applicable conformément à l’article 121-7 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances aggravantes',
     question: 'Pour 227-4-3, les circonstances aggravantes sont :',
     options: [
@@ -2879,7 +2879,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : Aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Intention',
     question: 'La volonté coupable (élément moral) de 227-4-3 consiste à :',
     options: [
@@ -2897,7 +2897,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — 515-9 : CONTEXTE / CONDITIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question:
         'L’ordonnance de protection peut être délivrée lorsque les violences sont exercées :',
@@ -2911,7 +2911,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise aussi les anciens conjoints/partenaires/concubins, même sans cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question: 'Selon 515-9, l’ordonnance peut être délivrée même si :',
     options: [
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise : y compris lorsqu’il n’y a jamais eu de cohabitation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question: 'Pour délivrer l’ordonnance, le juge doit retenir :',
     options: [
@@ -2938,7 +2938,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte parle de “raisons sérieuses” et de violences “vraisemblables” + danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question:
         'La délivrance de l’ordonnance de protection suppose obligatoirement :',
@@ -2952,7 +2952,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte indique que les éléments sont “produits devant lui et contradictoirement débattus”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — 515-9',
     question:
         'L’ordonnance de protection est délivrée dans un délai maximal de :',
@@ -2968,7 +2968,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
 
   // ---- Mesure 1° : interdiction de recevoir/rencontrer/entrer en relation
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1°)',
     question: 'La mesure 1° permet au JAF :',
     options: [
@@ -2981,7 +2981,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 1° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1°)',
     question: 'L’interdiction d’entrer en relation peut viser :',
     options: [
@@ -2995,7 +2995,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 1° bis : interdiction de se rendre dans certains lieux
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1° bis)',
     question: 'La mesure 1° bis permet au JAF :',
     options: [
@@ -3009,7 +3009,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 1° bis : lieux où se trouve habituellement la demanderesse.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (1° bis)',
     question:
         'Les lieux visés au 1° bis sont notamment ceux où la demanderesse se trouve :',
@@ -3025,7 +3025,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesures armes : 2°, 2° bis
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2°)',
     question: 'La mesure 2° permet au JAF :',
     options: [
@@ -3037,7 +3037,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° : interdiction armes.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2° bis)',
     question: 'La mesure 2° bis prévoit :',
     options: [
@@ -3052,7 +3052,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 2° ter : prise en charge / stage + info parquet si refus
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2° ter)',
     question: 'La mesure 2° ter permet au JAF de proposer :',
     options: [
@@ -3065,7 +3065,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 2° ter.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (2° ter)',
     question: 'En cas de refus de la partie défenderesse, le juge :',
     options: [
@@ -3080,7 +3080,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 3° : résidence séparée époux / logement conjugal
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3°)',
     question: 'La mesure 3° permet au JAF de statuer sur :',
     options: [
@@ -3093,7 +3093,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 3° : résidence séparée + logement conjugal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3°)',
     question: 'En principe, la jouissance du logement conjugal est attribuée :',
     options: [
@@ -3106,7 +3106,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Principe protecteur : attribution au non-auteur, sauf ordonnance spécialement motivée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3°)',
     question:
         'Même si la victime a bénéficié d’un hébergement d’urgence, la jouissance du logement conjugal peut :',
@@ -3122,7 +3122,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 3° bis : animal de compagnie
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (3° bis)',
     question: 'La mesure 3° bis concerne :',
     options: [
@@ -3136,7 +3136,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 4° : logement commun PACS/concubins
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (4°)',
     question: 'La mesure 4° permet au JAF de statuer sur :',
     options: [
@@ -3148,7 +3148,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure 4° : logement commun PACS/concubins.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (4°)',
     question:
         'En principe, la jouissance du logement commun (PACS/concubins) est attribuée :',
@@ -3163,7 +3163,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 5° : autorité parentale / DVH / contributions
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (5°)',
     question: 'La mesure 5° permet au JAF de se prononcer sur :',
     options: [
@@ -3178,7 +3178,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 6° : domicile dissimulé + élection de domicile avocat/parquet
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (6°)',
     question: 'La mesure 6° permet à la demanderesse :',
     options: [
@@ -3193,7 +3193,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 6° bis : élection domicile vie courante (personne morale qualifiée)
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (6° bis)',
     question: 'La mesure 6° bis permet :',
     options: [
@@ -3208,7 +3208,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   ),
 
   // ---- Mesure 7° : AJ provisoire
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures OP — 515-11 (7°)',
     question: 'La mesure 7° concerne :',
     options: [
@@ -3224,7 +3224,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — 515-11-1 : DISTANCE + DISPOSITIF ANTI-RAPPROCHEMENT
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question:
         'Quand le 1° (interdiction d’entrer en relation) est prononcé, le JAF peut :',
@@ -3238,7 +3238,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         '515-11-1 permet l’interdiction de se rapprocher à moins d’une distance fixée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question: 'Le dispositif anti-rapprochement a pour objectif :',
     options: [
@@ -3256,7 +3256,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13 : MENACE DE MARIAGE FORCÉ + OPPI
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'Une ordonnance de protection peut être délivrée en urgence à :',
     options: [
@@ -3268,7 +3268,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support vise la personne majeure menacée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question: 'Le juge peut ordonner, à la demande de la personne menacée :',
     options: [
@@ -3280,7 +3280,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Mesure spécifique mentionnée à 515-13.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mariage forcé — 515-13',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -3297,7 +3297,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // 515-13-1 : OPPI — CONDITIONS / MESURES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'L’OPPI est délivrée si le juge estime vraisemblables :',
     options: [
@@ -3309,7 +3309,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte parle de danger “grave et immédiat”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Dans l’OPPI, le juge est compétent pour prononcer à titre provisoire :',
@@ -3322,7 +3322,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte vise les mesures 1° à 2° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Dans l’OPPI, le juge peut aussi prononcer :',
     options: [
@@ -3334,7 +3334,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte mentionne la suspension du DVH mentionné au 5°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Dans l’OPPI, le juge peut permettre la dissimulation du domicile selon :',
@@ -3351,7 +3351,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // VIOLATION OP / OPPI — 227-4-2 : QUALIFICATION / PEINES / ÉLÉMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'La violation d’une ordonnance de protection est réprimée par :',
     options: [
@@ -3363,7 +3363,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Élément légal : 227-4-2 CP.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'La peine principale encourue pour 227-4-2 est :',
     options: [
@@ -3375,7 +3375,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Répression : 3 ans + 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'Pour 227-4-2, la tentative est :',
     options: ['Non', 'Oui', 'Oui si l’OP date de moins de 6 jours'],
@@ -3383,7 +3383,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — 227-4-2',
     question: 'Pour 227-4-2, la complicité est :',
     options: ['Oui (121-7 CP)', 'Non', 'Non si le complice est un proche'],
@@ -3391,7 +3391,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Complicité : OUI, article 121-7 CP.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question: 'L’infraction 227-4-2 exige :',
     options: [
@@ -3404,7 +3404,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Infraction intentionnelle : connaissance + volonté de ne pas respecter.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Élément moral',
     question: 'Pour que 227-4-2 soit caractérisée, l’auteur doit avoir été :',
     options: [
@@ -3417,7 +3417,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise que l’auteur doit avoir été informé des termes.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation OP — Circonstances aggravantes',
     question: 'Le support prévoit des circonstances aggravantes pour 227-4-2 :',
     options: ['Non (aucune)', 'Oui (deux)', 'Oui (une seule)'],
@@ -3429,7 +3429,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // RÈGLEMENT UE 606/2013 — APPLICATION EN FRANCE (SÉRIE DIFFICILE)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures UE — Règlement 606/2013',
     question:
         'Le texte mentionné prévoit la reconnaissance mutuelle des mesures de protection :',
@@ -3443,7 +3443,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support vise explicitement les mesures de protection “en matière civile”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mesures UE — Règlement 606/2013',
     question:
         'Les mêmes peines sont applicables à la violation d’une mesure UE si elle est :',
@@ -3461,7 +3461,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // QUESTIONS DE SYNTHÈSE / CAS PRATIQUES (QCM)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-3',
     question:
         'Un débiteur soumis à une ordonnance de protection déménage et ne prévient pas le créancier pendant 40 jours, volontairement. Quelle qualification est la plus adaptée ?',
@@ -3476,7 +3476,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Délai d’un mois dépassé + intention de ne pas informer : 227-4-3.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 227-4-2',
     question:
         'Une personne interdite de contacter la victime (OP) envoie des messages via un ami. Quelle infraction est la plus adaptée ?',
@@ -3491,7 +3491,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’interdiction porte sur “entrer en relation de quelque façon que ce soit”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — 515-11-1',
     question:
         'Après une interdiction d’entrer en relation (1°), le juge fixe une distance minimale et impose un dispositif anti-rapprochement. Sur quel fondement ?',
@@ -3509,7 +3509,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // (GROS BLOC) QUESTIONS “LISTE” SUR 515-11 : REPÉRER LA BONNE MESURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « interdire de détenir ou porter une arme » ?',
@@ -3518,7 +3518,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Interdiction armes = 2°.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « remettre les armes au service de police/gendarmerie » ?',
@@ -3527,7 +3527,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Remise des armes = 2° bis.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « attribuer la jouissance de l’animal de compagnie » ?',
@@ -3536,7 +3536,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Animal de compagnie = 3° bis.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « autoriser la dissimulation du domicile et élection chez l’avocat/parquet » ?',
@@ -3545,7 +3545,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Dissimulation + élection avocat/parquet = 6°.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « élection de domicile pour la vie courante chez une personne morale qualifiée » ?',
@@ -3554,7 +3554,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Vie courante personne morale qualifiée = 6° bis.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Repérage — 515-11',
     question:
         'Quelle mesure correspond à « admission provisoire à l’aide juridictionnelle » ?',
@@ -3567,7 +3567,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // (SÉRIES) QUESTIONS “VRAI/FAUX” CONVERTIES EN QCM (OP / OPPI / CP)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — OP',
     question:
         'L’ordonnance de protection est conditionnée à une plainte pénale.',
@@ -3577,7 +3577,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte précise qu’elle n’est pas conditionnée à l’existence d’une plainte pénale.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — OPPI',
     question:
         'L’OPPI est délivrée dans un délai de 24 heures à compter de la saisine.',
@@ -3586,7 +3586,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le texte mentionne : délivrée dans les 24 heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 227-4-2',
     question:
         'La violation d’une ordonnance de protection est punie de 6 mois d’emprisonnement.',
@@ -3595,7 +3595,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: '227-4-2 prévoit 3 ans d’emprisonnement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Vrai/Faux — 227-4-3',
     question:
         'Le défaut de notification de changement de domicile au créancier est une infraction non intentionnelle.',
@@ -3605,7 +3605,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'C’est une infraction intentionnelle : la négligence n’est pas punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'L’infraction vise une personne tenue de verser une contribution ou des subsides au titre :',
@@ -3620,7 +3620,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise la personne tenue de verser une contribution ou des subsides au titre de l’ordonnance de protection (art. 515-9 C. civ.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Fondement',
     question:
         'Le débiteur doit notifier son changement de domicile au créancier dans un délai de :',
@@ -3634,7 +3634,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le délai légal est d’un mois à compter du changement de domicile.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Concernant la forme de la notification du changement de domicile, le texte :',
@@ -3648,7 +3648,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Aucune exigence n’est formulée quant à la forme de la notification : l’essentiel est d’informer dans le délai.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question:
         'Le défaut de notification de changement de domicile est une infraction :',
@@ -3666,7 +3666,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — PRÉCISIONS / MÉCANISME
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'L’infraction a été prévue notamment car le JAF peut se prononcer dans le référé protection sur :',
@@ -3680,7 +3680,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le cours indique que le JAF peut statuer sur la contribution aux charges du ménage, d’où l’intérêt dissuasif de l’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément matériel',
     question:
         'Dans ce cadre, la personne visée par 227-4-3 est principalement :',
@@ -3694,7 +3694,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’obligation de notifier pèse sur le débiteur tenu de verser la contribution/subsides.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Élément moral',
     question: 'Pourquoi la simple négligence n’est-elle pas punissable ici ?',
     options: [
@@ -3708,7 +3708,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte insiste sur l’intention : la volonté de priver le créancier de l’exercice de son droit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Circonstances',
     question:
         'Concernant les circonstances aggravantes du défaut de notification (227-4-3), il y en a :',
@@ -3726,7 +3726,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DÉFAUT DE NOTIFICATION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-3 est :',
     options: [
@@ -3738,7 +3738,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'La répression prévue est : 6 mois + 7 500 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Répression',
     question: 'La classification de l’infraction 227-4-3 est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -3746,7 +3746,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le cours précise : classification = délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La tentative de l’infraction 227-4-3 est :',
     options: [
@@ -3758,7 +3758,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le document indique : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Tentative / complicité',
     question: 'La complicité pour 227-4-3 est :',
     options: [
@@ -3771,7 +3771,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La complicité est prévue selon l’article 121-7 du Code pénal.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Défaut de notification — Personnes morales',
     question:
         'Depuis quand la responsabilité des personnes morales est applicable de façon généralisée (référence cours) ?',
@@ -3789,7 +3789,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // NON-RESPECT DES OBLIGATIONS / INTERDICTIONS D’UNE ORDONNANCE DE PROTECTION — FONDEMENTS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Fondement',
     question:
         'Le non-respect des obligations ou interdictions imposées par une ordonnance de protection est prévu par :',
@@ -3803,7 +3803,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’élément légal est fixé par l’article 227-4-2 du Code pénal.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'L’infraction vise le non-respect d’obligations/interdictions imposées dans :',
@@ -3817,7 +3817,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise l’ordonnance de protection rendue notamment en application des articles 515-9 ou 515-13 du code civil.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ',
     question:
         'Sont aussi visées par 227-4-2 les obligations/interdictions imposées dans :',
@@ -3832,7 +3832,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise aussi l’ordonnance provisoire de protection immédiate rendue sur le fondement de l’article 515-13-1.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Champ UE',
     question:
         'Les mêmes peines s’appliquent à la violation d’une mesure de protection civile d’un autre État membre de l’UE reconnue en France via :',
@@ -3850,7 +3850,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — CONDITIONS (515-9) / DÉLAIS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'Selon l’article 515-9 C. civ., l’ordonnance de protection peut être délivrée lorsque des violences au sein du couple :',
@@ -3864,7 +3864,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La condition centrale : danger pour la victime (et/ou les enfants).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Conditions',
     question:
         'L’ordonnance de protection peut être délivrée même lorsqu’il n’y a pas de cohabitation :',
@@ -3878,7 +3878,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise les violences au sein du couple y compris sans cohabitation, et même sans cohabitation passée.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Délai',
     question:
         'Le JAF délivre l’ordonnance de protection dans un délai maximal de :',
@@ -3892,7 +3892,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique : délai maximal de six jours (OP classique).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Plainte',
     question:
         'La délivrance d’une ordonnance de protection est-elle conditionnée à une plainte pénale ?',
@@ -3910,7 +3910,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE DE PROTECTION — MESURES POSSIBLES (515-11) : QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Parmi les mesures possibles, le JAF peut interdire à la partie défenderesse :',
@@ -3924,7 +3924,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'C’est la mesure 1° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut interdire à la partie défenderesse de se rendre dans certains lieux fréquentés habituellement par la demanderesse :',
@@ -3938,7 +3938,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La mesure 1° bis prévoit l’interdiction de se rendre dans certains lieux.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question: 'Concernant les armes, le JAF peut notamment :',
     options: [
@@ -3950,7 +3950,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'C’est la mesure 2° de l’article 515-11.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut ordonner à la partie défenderesse de remettre ses armes :',
@@ -3964,7 +3964,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 2° bis : remise au service de police/gendarmerie le plus proche.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut proposer une prise en charge sanitaire/sociale/psychologique ou un stage de responsabilisation :',
@@ -3978,7 +3978,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 2° ter : proposition de prise en charge ou stage ; en cas de refus, information immédiate du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Concernant le logement conjugal, sauf circonstances particulières, la jouissance est attribuée :',
@@ -3992,7 +3992,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le principe : protection de la victime, attribution au non-auteur des violences.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut attribuer la jouissance de l’animal de compagnie détenu au sein du foyer :',
@@ -4002,7 +4002,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’article 515-11 prévoit la mesure 3° bis sur l’animal de compagnie.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Pour des partenaires PACS/concubins, la jouissance du logement commun est attribuée en principe :',
@@ -4016,7 +4016,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le même principe protecteur est prévu au 4° pour PACS/concubins.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut se prononcer sur l’autorité parentale et aussi sur :',
@@ -4031,7 +4031,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 5° : autorité parentale, DVH, et contributions selon la situation.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut autoriser la demanderesse à dissimuler son domicile et élire domicile :',
@@ -4046,7 +4046,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 6° : dissimulation + élection de domicile chez avocat ou auprès du procureur.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut aussi autoriser une élection de domicile « pour les besoins de la vie courante » :',
@@ -4060,7 +4060,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Mesure 6° bis : élection de domicile vie courante auprès d’une personne morale qualifiée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mesures (515-11)',
     question:
         'Le JAF peut prononcer l’admission provisoire à l’aide juridictionnelle :',
@@ -4077,7 +4077,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // DISPOSITIF ANTI-RAPPROCHEMENT (515-11-1) — QCM
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Dispositif anti-rapprochement — 515-11-1',
     question:
         'Si l’interdiction d’entrer en relation (1°) est prononcée, le JAF peut aussi :',
@@ -4096,7 +4096,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE (515-13) — MARIAGE FORCÉ / SORTIE DU TERRITOIRE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’article 515-13 permet une ordonnance de protection en urgence pour :',
@@ -4110,7 +4110,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte vise expressément la personne majeure menacée de mariage forcé.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'Dans ce cadre, le JAF peut ordonner à la demande de la personne :',
@@ -4124,7 +4124,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’article 515-13 mentionne l’interdiction temporaire de sortie du territoire.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Mariage forcé (515-13)',
     question:
         'L’interdiction temporaire de sortie du territoire est inscrite au FPR par :',
@@ -4138,7 +4138,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // ORDONNANCE PROVISOIRE DE PROTECTION IMMÉDIATE (515-13-1) — 24H
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'L’ordonnance provisoire de protection immédiate est délivrée dans un délai de :',
@@ -4152,7 +4152,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le texte indique : délivrée dans un délai de vingt-quatre heures.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question:
         'Qui peut demander, avec l’accord de la personne en danger, une OPPI en plus de la demande d’OP ?',
@@ -4162,7 +4162,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'L’article 515-13-1 prévoit la demande par le ministère public avec l’accord de la personne en danger.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'OPPI — 515-13-1',
     question: 'Pour délivrer l’OPPI, le JAF statue :',
     options: [
@@ -4179,7 +4179,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — ÉLÉMENT MATÉRIEL / MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément matériel',
     question: 'L’élément matériel de 227-4-2 consiste à :',
     options: [
@@ -4192,7 +4192,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La violation est le non-respect des obligations/interdictions fixées par l’ordonnance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'L’infraction 227-4-2 est :',
     options: [
@@ -4205,7 +4205,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise une infraction intentionnelle : l’auteur agit en connaissance de cause des obligations/interdictions.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Élément moral',
     question: 'Pour caractériser l’élément moral, l’auteur doit notamment :',
     options: [
@@ -4218,7 +4218,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'La connaissance des obligations/interdictions suppose que l’auteur ait été informé de l’ordonnance.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Finalité',
     question: 'Le texte 227-4-2 vise à rendre l’ordonnance de protection :',
     options: [
@@ -4235,7 +4235,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // VIOLATION ORDONNANCE DE PROTECTION — RÉPRESSION / PROCÉDURE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Répression',
     question: 'La peine encourue (personne physique) pour 227-4-2 est :',
     options: [
@@ -4247,7 +4247,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'La répression prévue par 227-4-2 est de 3 ans et 45 000 €.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Classification',
     question: 'La classification de l’infraction 227-4-2 est :',
     options: ['Un délit', 'Un crime', 'Une contravention'],
@@ -4255,7 +4255,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le cours précise : délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Circonstances',
     question:
         'Concernant les circonstances aggravantes de 227-4-2 (cours), il y en a :',
@@ -4264,7 +4264,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le support indique : aucune circonstance aggravante.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La tentative de 227-4-2 est :',
     options: [
@@ -4276,7 +4276,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: 'Le document précise : TENTATIVE : NON.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Violation ordonnance de protection — Tentative / complicité',
     question: 'La complicité pour 227-4-2 est :',
     options: [
@@ -4293,7 +4293,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // QUESTIONS MIXTES (COMPARAISONS 227-4-2 / 227-4-3)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction est la plus lourdement sanctionnée (peine d’emprisonnement) ?',
@@ -4302,7 +4302,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
     explanation: '227-4-2 prévoit 3 ans, tandis que 227-4-3 prévoit 6 mois.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — 227-4-2 vs 227-4-3',
     question:
         'Quelle infraction concerne spécifiquement le changement de domicile du débiteur ?',
@@ -4312,7 +4312,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         '227-4-3 incrimine le défaut de notification du changement de domicile au créancier.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Élément moral',
     question: 'Point commun entre 227-4-2 et 227-4-3 :',
     options: [
@@ -4325,7 +4325,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Les deux supposent une volonté : ne pas se conformer / ne pas informer.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Tentative',
     question: 'Concernant la tentative, 227-4-2 et 227-4-3 :',
     options: [
@@ -4338,7 +4338,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique “TENTATIVE : NON” pour les deux infractions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Comparatif — Complicité',
     question: 'Concernant la complicité (121-7 CP), pour 227-4-2 et 227-4-3 :',
     options: [
@@ -4355,7 +4355,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
   // =========================================================
   // QUESTIONS "PIÈGES" / PRÉCISION DE TEXTE (PLUS DIFFICILES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Durée',
     question:
         'Les mesures de l’ordonnance de protection peuvent être prises pour une durée maximale de :',
@@ -4369,7 +4369,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support mentionne une durée maximale de 12 mois, prolongeable sous certaines conditions.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Logement',
     question:
         'Sauf circonstances particulières, la jouissance du logement est attribuée :',
@@ -4383,7 +4383,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Principe protecteur : attribution au non-auteur (sauf ordonnance motivée/circonstances particulières).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Domicile dissimulé',
     question:
         'Si un commissaire de justice doit connaître l’adresse réelle pour exécuter une décision :',
@@ -4398,7 +4398,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support précise la communication nécessaire pour l’exécution, avec interdiction de révélation au mandant.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Information autorités',
     question:
         'Quand les mesures 6°/6° bis sont prononcées, qui peut être informé (avec accord de la personne) pour éviter la communication de l’adresse ?',
@@ -4412,7 +4412,7 @@ final List<QuizQuestion> questionOrdonnanceProtection = [
         'Le support indique l’information du maire et du représentant de l’État dans le département, sous réserve de l’accord de la personne.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Ordonnance de protection — Fin des mesures',
     question: 'Les mesures de l’OPPI prennent fin :',
     options: [
@@ -4784,7 +4784,7 @@ class _QuizViolationOrdonnancesJafState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4987,7 +4987,7 @@ class _QuizViolationOrdonnancesJafState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -5170,7 +5170,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5703,10 +5702,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -6077,7 +6077,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -6118,9 +6118,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

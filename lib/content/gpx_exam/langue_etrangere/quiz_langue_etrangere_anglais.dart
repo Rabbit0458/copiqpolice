@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionLangueEtrangereAnglais = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the store every Saturday.",
     options: ["goes", "going", "went"],
@@ -99,7 +99,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ playing soccer in the park.",
     options: ["is", "are", "be"],
@@ -108,7 +108,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework after dinner.",
     options: ["do", "does", "did"],
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The weather is often _____ in summer.",
     options: ["hot", "hotter", "hottest"],
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends at the café.",
     options: ["meet", "meets", "met"],
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the cinema last night.",
     options: ["go", "went", "gone"],
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She usually _____ breakfast at 8 o'clock.",
     options: ["has", "have", "had"],
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ very happy today.",
     options: ["is", "are", "be"],
@@ -162,7 +162,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I want to _____ a book this weekend.",
     options: ["read", "reads", "reading"],
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat _____ on the roof.",
     options: ["sits", "sit", "sitted"],
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He plays the guitar _____ every day.",
     options: ["often", "seldom", "never"],
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the party last week.",
     options: ["go", "went", "going"],
@@ -198,7 +198,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ like ice cream.",
     options: ["doesn't", "don't", "didn't"],
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Anglais — Texte à trous",
     question: "I _____ to music while I study.",
     options: ["listen", "listened", "listens"],
@@ -216,7 +216,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a lot of fun at the festival.",
     options: ["had", "have", "has"],
@@ -225,7 +225,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The dog _____ in the garden.",
     options: ["plays", "play", "playing"],
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I am _____ in London this week.",
     options: ["staying", "stay", "stayed"],
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to finish her project on time.",
     options: ["wants", "want", "wanted"],
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a good friend from school.",
     options: ["is", "are", "was"],
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys at home yesterday.",
     options: ["forgot", "forgets", "forget"],
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ the movie last weekend.",
     options: ["liked", "likes", "like"],
@@ -279,7 +279,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ going to the beach tomorrow.",
     options: ["are", "was", "is"],
@@ -288,7 +288,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ the report last week.",
     options: ["completed", "completes", "complete"],
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework before dinner.",
     options: ["finished", "finish", "finishes"],
@@ -306,7 +306,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the park every day.",
     options: ["go", "goes", "went"],
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a trip to France next summer.",
     options: ["plan", "planned", "plans"],
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to learn new languages.",
     options: ["want", "wants", "wanted"],
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to help her friends.",
     options: ["tries", "try", "tried"],
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my favorite show last night.",
     options: ["watched", "watch", "watches"],
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a very good book last month.",
     options: ["read", "reads", "reading"],
@@ -360,7 +360,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to finish their work quickly.",
     options: ["want", "wants", "wanted"],
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a great time at the concert.",
     options: ["had", "have", "has"],
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her friends yesterday.",
     options: ["met", "meet", "meets"],
@@ -387,7 +387,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a lot of questions during the meeting.",
     options: ["had", "have", "has"],
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to travel to many countries.",
     options: ["wants", "want", "wanted"],
@@ -405,7 +405,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the exhibition last week.",
     options: ["went", "go", "going"],
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a lot of chocolates on Valentine's Day.",
     options: ["received", "receives", "receive"],
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a letter from my pen pal yesterday.",
     options: ["received", "receive", "receives"],
@@ -432,7 +432,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They usually _____ breakfast in the morning.",
     options: ["have", "has", "had"],
@@ -441,7 +441,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a good job last year.",
     options: ["got", "get", "gets"],
@@ -450,7 +450,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a presentation at the meeting yesterday.",
     options: ["gave", "give", "gives"],
@@ -459,7 +459,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to start a new project next week.",
     options: ["hope", "hopes", "hoped"],
@@ -468,7 +468,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to learn a new language.",
     options: ["want", "wants", "wanted"],
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a long walk every morning.",
     options: ["takes", "take", "took"],
@@ -486,7 +486,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ well in the competition last week.",
     options: ["performed", "perform", "performs"],
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "'Performed' est le passé de 'perform'.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ playing football in the park.",
     options: ["is", "are", "be"],
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ friends in London.",
     options: ["many", "much", "a lot"],
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to music every day.",
     options: ["listen", "listens", "listening"],
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a great time at the party.",
     options: ["had", "have", "has"],
@@ -531,7 +531,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat is _____ the tree.",
     options: ["on", "in", "under"],
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress yesterday.",
     options: ["wore", "wear", "wearing"],
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework before dinner.",
     options: ["did", "do", "doing"],
@@ -558,7 +558,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He is _____ than his brother.",
     options: ["taller", "tall", "tallest"],
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ go to the cinema last week.",
     options: ["didn't", "don't", "doesn't"],
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Anglais — Texte à trous",
     question: "She _____ to finish her project.",
     options: ["needs", "needed", "need"],
@@ -585,7 +585,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the beach next weekend.",
     options: ["are going", "go", "went"],
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He was _____ tired after the game.",
     options: ["very", "much", "many"],
@@ -603,7 +603,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the gym three times a week.",
     options: ["goes", "going", "gone"],
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their vacation in Spain last year.",
     options: ["spent", "spend", "spending"],
@@ -621,7 +621,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ breakfast every morning.",
     options: ["have", "has", "had"],
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her keys on the table.",
     options: ["left", "leaving", "leave"],
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework right now.",
     options: ["is doing", "does", "do"],
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to travel this summer.",
     options: ["want", "wants", "wanting"],
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The children _____ happy today.",
     options: ["are", "is", "were"],
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a book when you called me.",
     options: ["was reading", "read", "reading"],
@@ -675,7 +675,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a great singer.",
     options: ["is", "are", "was"],
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to her friend yesterday.",
     options: ["talked", "talk", "talking"],
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ in the garden at the moment.",
     options: ["is working", "works", "worked"],
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys at home.",
     options: ["forgot", "forget", "forgetting"],
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a lot of fun at the concert.",
     options: ["had", "have", "has"],
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his phone at school.",
     options: ["left", "leave", "leaving"],
@@ -729,7 +729,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The movie _____ interesting.",
     options: ["is", "are", "was"],
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a new bike for my birthday.",
     options: ["got", "get", "getting"],
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to finish their work on time.",
     options: ["need", "needed", "needing"],
@@ -756,7 +756,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her homework before dinner.",
     options: ["finished", "finishing", "finish"],
@@ -765,7 +765,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to swim very well.",
     options: ["learned", "learn", "learning"],
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a trip to Paris last summer.",
     options: ["took", "take", "taking"],
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a great time at the party.",
     options: ["had", "have", "has"],
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my favorite song on the radio.",
     options: ["heard", "hear", "hearing"],
@@ -801,7 +801,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a big surprise for her birthday.",
     options: ["planned", "plan", "planning"],
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their holiday in Spain last year.",
     options: ["spent", "spend", "spending"],
@@ -819,7 +819,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a letter to her friend.",
     options: ["wrote", "write", "writing"],
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to play the guitar.",
     options: ["learned", "learn", "learning"],
@@ -837,7 +837,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ breakfast for everyone.",
     options: ["made", "make", "making"],
@@ -846,7 +846,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my best friend at school.",
     options: ["met", "meet", "meeting"],
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his bike every day to work.",
     options: ["rides", "riding", "rode"],
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the museum last weekend.",
     options: ["went", "go", "going"],
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a good movie last night.",
     options: ["saw", "see", "seeing"],
@@ -882,7 +882,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a new book from the library.",
     options: ["borrowed", "borrowing", "borrow"],
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to her favorite song in the car.",
     options: ["sings", "sing", "sang"],
@@ -899,7 +899,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "'Sang' est le passé de 'to sing'.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I always drink coffee in the _____",
     options: ["morning", "night", "afternoon"],
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the gym every day.",
     options: ["goes", "gone", "going"],
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They are _____ a movie tonight.",
     options: ["watching", "watched", "watches"],
@@ -926,7 +926,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework after school.",
     options: ["does", "do", "doing"],
@@ -935,7 +935,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat is _____ on the sofa.",
     options: ["sleeping", "sleep", "sleeps"],
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ friends in my city.",
     options: ["many", "much", "few"],
@@ -953,7 +953,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She loves to _____ music in her free time.",
     options: ["listen", "listens", "listening"],
@@ -962,7 +962,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the concert last night.",
     options: ["went", "go", "going"],
@@ -971,7 +971,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I don't like _____ tea in the morning.",
     options: ["drinking", "drink", "drinks"],
@@ -980,7 +980,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress for the party.",
     options: ["has", "have", "had"],
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We are going to _____ a trip next month.",
     options: ["take", "takes", "took"],
@@ -998,7 +998,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ breakfast before work every day.",
     options: ["eats", "eat", "eating"],
@@ -1007,7 +1007,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Anglais — Texte à trous",
     question: "My favorite color is _____ .",
     options: ["blue", "bluer", "bluest"],
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ in the park yesterday.",
     options: ["played", "play", "playing"],
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "Can you _____ the window, please?",
     options: ["open", "opened", "opening"],
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I will _____ you tomorrow.",
     options: ["call", "called", "calling"],
@@ -1043,7 +1043,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We enjoy _____ to the beach in summer.",
     options: ["going", "go", "went"],
@@ -1052,7 +1052,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He is _____ to play football after school.",
     options: ["going", "go", "gone"],
@@ -1061,7 +1061,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "What time does the train _____?",
     options: ["leave", "leaves", "leaving"],
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The weather is _____ today than yesterday.",
     options: ["better", "good", "best"],
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his keys on the table.",
     options: ["left", "leave", "leaving"],
@@ -1088,7 +1088,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to the store to buy some milk.",
     options: ["went", "going", "go"],
@@ -1097,7 +1097,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their friends at the café.",
     options: ["met", "meet", "meeting"],
@@ -1106,7 +1106,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ for a new job at the moment.",
     options: ["is looking", "looked", "looks"],
@@ -1115,7 +1115,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a good student last year.",
     options: ["was", "is", "be"],
@@ -1124,7 +1124,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The children _____ in the garden yesterday.",
     options: ["played", "play", "playing"],
@@ -1133,7 +1133,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I want to _____ a new book.",
     options: ["read", "reads", "reading"],
@@ -1142,7 +1142,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the party last weekend.",
     options: ["went", "go", "going"],
@@ -1151,7 +1151,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They are _____ a great time at the concert.",
     options: ["having", "have", "had"],
@@ -1160,7 +1160,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ breakfast every morning.",
     options: ["makes", "make", "making"],
@@ -1169,7 +1169,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I am _____ a sandwich for lunch.",
     options: ["making", "make", "makes"],
@@ -1178,7 +1178,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the beach last summer.",
     options: ["went", "go", "going"],
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She loves _____ in the summer.",
     options: ["swimming", "swim", "swims"],
@@ -1196,7 +1196,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He is _____ to the store now.",
     options: ["going", "go", "gone"],
@@ -1205,7 +1205,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ our friends at the park yesterday.",
     options: ["met", "meet", "meeting"],
@@ -1214,7 +1214,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I will _____ you the truth.",
     options: ["tell", "told", "telling"],
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They are _____ a movie right now.",
     options: ["watching", "watched", "watches"],
@@ -1232,7 +1232,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her bike to school every day.",
     options: ["rides", "ride", "riding"],
@@ -1242,7 +1242,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a letter to his friend yesterday.",
     options: ["wrote", "write", "writing"],
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I like _____ to music while I work.",
     options: ["listening", "listen", "listens"],
@@ -1260,7 +1260,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They are _____ to go home now.",
     options: ["ready", "read", "reads"],
@@ -1269,7 +1269,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful song yesterday.",
     options: ["sang", "sing", "sings"],
@@ -1278,7 +1278,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ many books at home.",
     options: ["too", "to", "two"],
@@ -1287,7 +1287,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his friends every weekend.",
     options: ["sees", "see", "seeing"],
@@ -1296,7 +1296,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ going to the cinema tonight.",
     options: ["are", "is", "were"],
@@ -1304,7 +1304,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "Utilisation correcte du verbe 'to be' avec 'we'.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the store yesterday.",
     options: ["went", "going", "go"],
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a book every month.",
     options: ["read", "reads", "reading"],
@@ -1322,7 +1322,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ playing football now.",
     options: ["is", "are", "am"],
@@ -1331,7 +1331,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the cinema last week.",
     options: ["go", "went", "going"],
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework after dinner.",
     options: ["do", "did", "doing"],
@@ -1349,7 +1349,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her friends at the park.",
     options: ["meets", "meet", "met"],
@@ -1358,7 +1358,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys on the table.",
     options: ["leave", "leaving", "left"],
@@ -1367,7 +1367,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the party last night.",
     options: ["go", "going", "went"],
@@ -1376,7 +1376,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a great time at the concert.",
     options: ["had", "have", "having"],
@@ -1385,7 +1385,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to play the piano.",
     options: ["want", "wants", "wanting"],
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a lot of friends in school.",
     options: ["has", "have", "had"],
@@ -1403,7 +1403,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to visit their grandmother.",
     options: ["want", "wants", "wanting"],
@@ -1412,7 +1412,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my breakfast at 8 AM.",
     options: ["eat", "eating", "ate"],
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her homework every day.",
     options: ["does", "do", "doing"],
@@ -1430,7 +1430,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym regularly.",
     options: ["goes", "going", "went"],
@@ -1439,7 +1439,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to learn new languages.",
     options: ["want", "wants", "wanting"],
@@ -1448,7 +1448,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress.",
     options: ["has", "have", "had"],
@@ -1457,7 +1457,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a picnic in the park.",
     options: ["had", "have", "having"],
@@ -1466,7 +1466,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework after dinner.",
     options: ["do", "did", "doing"],
@@ -1475,7 +1475,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a great movie yesterday.",
     options: ["see", "saw", "seen"],
@@ -1484,7 +1484,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the beach last summer.",
     options: ["go", "went", "going"],
@@ -1493,7 +1493,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ coffee every morning.",
     options: ["drink", "drinks", "drank"],
@@ -1502,7 +1502,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to play the guitar when he was young.",
     options: ["learn", "learned", "learning"],
@@ -1511,7 +1511,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a lot of fun at the concert.",
     options: ["have", "has", "had"],
@@ -1520,7 +1520,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to France last year.",
     options: ["travel", "traveled", "travels"],
@@ -1529,7 +1529,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his bike to school every day.",
     options: ["ride", "rides", "rode"],
@@ -1538,7 +1538,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a cake for her birthday.",
     options: ["make", "made", "makes"],
@@ -1547,7 +1547,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a new restaurant in town.",
     options: ["open", "opened", "opens"],
@@ -1556,7 +1556,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a book every month.",
     options: ["read", "reads", "reading"],
@@ -1565,7 +1565,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to the gym every day.",
     options: ["go", "gone", "went"],
@@ -1574,7 +1574,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the beach every summer.",
     options: ["go", "goes", "going"],
@@ -1583,7 +1583,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "My sister _____ a new dress for the party.",
     options: ["buy", "buys", "buying"],
@@ -1592,7 +1592,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their friends at the café.",
     options: ["meet", "meets", "meeting"],
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to music while studying.",
     options: ["listen", "listens", "listening"],
@@ -1610,7 +1610,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her keys at home.",
     options: ["forget", "forgets", "forgetting"],
@@ -1619,7 +1619,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ breakfast every morning.",
     options: ["makes", "make", "making"],
@@ -1628,7 +1628,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my best friend yesterday.",
     options: ["call", "called", "calling"],
@@ -1637,7 +1637,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful song.",
     options: ["sings", "sing", "singing"],
@@ -1646,7 +1646,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework before dinner.",
     options: ["finished", "finish", "finishing"],
@@ -1655,7 +1655,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a letter to my grandmother.",
     options: ["wrote", "write", "writing"],
@@ -1664,7 +1664,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ the game last week.",
     options: ["won", "win", "winning"],
@@ -1673,7 +1673,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a great idea for the project.",
     options: ["has", "have", "having"],
@@ -1682,7 +1682,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to visit our cousins next month.",
     options: ["plan", "plans", "planning"],
@@ -1691,7 +1691,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She is very _____ today.",
     options: ["happy", "quickly", "book"],
@@ -1700,7 +1700,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym every day.",
     options: ["goes", "went", "going"],
@@ -1709,7 +1709,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ friends in this city.",
     options: ["many", "much", "few"],
@@ -1718,7 +1718,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The book is _____ the table.",
     options: ["on", "in", "under"],
@@ -1727,7 +1727,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress.",
     options: ["wears", "wear", "wearing"],
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "It _____ rain tomorrow.",
     options: ["might", "must", "can"],
@@ -1745,7 +1745,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the beach last weekend.",
     options: ["went", "go", "going"],
@@ -1753,7 +1753,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "'Went' est le passé du verbe 'go'.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to the store yesterday.",
     options: ["went", "goes", "going"],
@@ -1762,7 +1762,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress for the party.",
     options: ["wears", "wear", "wore"],
@@ -1771,7 +1771,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ breakfast every morning.",
     options: ["eat", "eats", "eaten"],
@@ -1780,7 +1780,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to play guitar when he was young.",
     options: ["learned", "learn", "learning"],
@@ -1789,7 +1789,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ at the concert last night.",
     options: ["sang", "sing", "sings"],
@@ -1798,7 +1798,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat _____ on the sofa all day.",
     options: ["sleeps", "sleeping", "slept"],
@@ -1807,7 +1807,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend tomorrow.",
     options: ["see", "saw", "seeing"],
@@ -1816,7 +1816,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a great job last year.",
     options: ["finds", "found", "finding"],
@@ -1825,7 +1825,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the party if they are invited.",
     options: ["come", "came", "coming"],
@@ -1834,7 +1834,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He usually _____ coffee in the morning.",
     options: ["drinks", "drink", "drank"],
@@ -1844,7 +1844,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to finish my project by Friday.",
     options: ["need", "needs", "needed"],
@@ -1854,7 +1854,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a letter to her grandmother last week.",
     options: ["wrote", "writes", "writing"],
@@ -1863,7 +1863,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their vacation in July.",
     options: ["enjoyed", "enjoy", "enjoying"],
@@ -1872,7 +1872,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym every Saturday.",
     options: ["goes", "went", "going"],
@@ -1882,7 +1882,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a great time at the beach.",
     options: ["had", "have", "having"],
@@ -1891,7 +1891,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She always _____ her homework after dinner.",
     options: ["does", "do", "doing"],
@@ -1900,7 +1900,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the cinema on weekends.",
     options: ["go", "goes", "going"],
@@ -1909,7 +1909,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ like to play football.",
     options: ["doesn't", "don't", "not"],
@@ -1918,7 +1918,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to music every day.",
     options: ["listens", "listen", "listening"],
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his bike to school.",
     options: ["rides", "ride", "riding"],
@@ -1936,7 +1936,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend tomorrow.",
     options: ["will meet", "meet", "met"],
@@ -1945,7 +1945,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her homework right now.",
     options: ["is doing", "does", "do"],
@@ -1954,7 +1954,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a book when I called.",
     options: ["was reading", "read", "reads"],
@@ -1963,7 +1963,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to finish the project by Friday.",
     options: ["need", "needs", "needing"],
@@ -1972,7 +1972,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a cake for his birthday.",
     options: ["baked", "bake", "baking"],
@@ -1981,7 +1981,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my phone at the café yesterday.",
     options: ["lost", "lose", "losing"],
@@ -1990,7 +1990,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to learn a new language.",
     options: ["wants", "want", "wanting"],
@@ -1999,7 +1999,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their friends for dinner next week.",
     options: ["are inviting", "invite", "invited"],
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a lot of fun at the amusement park.",
     options: ["had", "have", "having"],
@@ -2017,7 +2017,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ playing soccer right now.",
     options: ["is", "are", "was"],
@@ -2026,7 +2026,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework last night.",
     options: ["finish", "finished", "finishing"],
@@ -2035,7 +2035,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a letter to her friend.",
     options: ["writes", "wrote", "write"],
@@ -2044,7 +2044,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ like chocolate ice cream.",
     options: ["doesn't", "don't", "didn't"],
@@ -2053,7 +2053,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ at the park every Sunday.",
     options: ["played", "play", "playing"],
@@ -2062,7 +2062,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his bike to school yesterday.",
     options: ["rided", "rides", "rode"],
@@ -2071,7 +2071,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a great time at the party last night.",
     options: ["had", "have", "has"],
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a new car next month.",
     options: ["buy", "buys", "will buy"],
@@ -2089,7 +2089,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to help you with your homework.",
     options: ["want", "wants", "wanting"],
@@ -2098,7 +2098,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ about the news yesterday.",
     options: ["talked", "talks", "talking"],
@@ -2107,7 +2107,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend on the phone last night.",
     options: ["called", "call", "calling"],
@@ -2116,7 +2116,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to finish their work before noon.",
     options: ["need", "needed", "needing"],
@@ -2125,7 +2125,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to travel next summer.",
     options: ["plans", "plan", "planning"],
@@ -2134,7 +2134,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I usually _____ coffee in the morning.",
     options: ["drink", "drinks", "drinking"],
@@ -2143,7 +2143,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He is _____ tall than his brother.",
     options: ["more", "most", "less"],
@@ -2153,7 +2153,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The book is _____ interesting than the movie.",
     options: ["more", "most", "less"],
@@ -2162,7 +2162,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys on the table.",
     options: ["leave", "leaves", "leaving"],
@@ -2171,7 +2171,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to play the guitar.",
     options: ["want", "wants", "wanting"],
@@ -2180,7 +2180,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to visit our friends this weekend.",
     options: ["plan", "plans", "planning"],
@@ -2189,7 +2189,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her lunch at noon.",
     options: ["eats", "ate", "eating"],
@@ -2198,7 +2198,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a letter to my friend yesterday.",
     options: ["write", "writes", "wrote"],
@@ -2206,7 +2206,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "Le verbe 'wrote' est le passé de 'write'.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a book on the table.",
     options: ["see", "saw", "seeing"],
@@ -2215,7 +2215,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ breakfast at 8 AM.",
     options: ["has", "have", "had"],
@@ -2224,7 +2224,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her homework every evening.",
     options: ["does", "do", "did"],
@@ -2233,7 +2233,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the party last week.",
     options: ["didn't go", "not go", "don't go"],
@@ -2242,7 +2242,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends at the café tomorrow.",
     options: ["will meet", "meet", "met"],
@@ -2251,7 +2251,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat _____ under the table right now.",
     options: ["is sleeping", "was sleeping", "sleeping"],
@@ -2260,7 +2260,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress for the event.",
     options: ["wore", "wears", "wear"],
@@ -2269,7 +2269,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ coffee every morning before work.",
     options: ["drinks", "drink", "drank"],
@@ -2278,7 +2278,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to travel next summer.",
     options: ["want", "wants", "wanted"],
@@ -2287,7 +2287,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys somewhere in the house.",
     options: ["lost", "lose", "losing"],
@@ -2296,7 +2296,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to finish his project on time.",
     options: ["needs", "need", "needing"],
@@ -2305,7 +2305,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their vacation in France last year.",
     options: ["enjoyed", "enjoy", "enjoying"],
@@ -2314,7 +2314,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a letter to her friend yesterday.",
     options: ["wrote", "write", "writing"],
@@ -2323,7 +2323,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to finish our homework before dinner.",
     options: ["have", "had", "has"],
@@ -2332,7 +2332,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my bike to school every day.",
     options: ["ride", "rides", "riding"],
@@ -2341,7 +2341,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ the piano very well.",
     options: ["plays", "play", "played"],
@@ -2350,7 +2350,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ playing soccer now.",
     options: ["is", "are", "am"],
@@ -2359,7 +2359,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework every day.",
     options: ["do", "does", "doing"],
@@ -2368,7 +2368,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress at the party.",
     options: ["wears", "wore", "wear"],
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to music while studying.",
     options: ["listens", "listened", "listen"],
@@ -2386,7 +2386,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their friends at the park.",
     options: ["meet", "meets", "meeting"],
@@ -2395,7 +2395,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her bike every weekend.",
     options: ["rides", "ride", "riding"],
@@ -2404,7 +2404,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a trip to London last summer.",
     options: ["took", "take", "taking"],
@@ -2413,7 +2413,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his lunch before the meeting.",
     options: ["ate", "eat", "eating"],
@@ -2422,7 +2422,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his keys in the car.",
     options: ["forgot", "forgets", "forgetting"],
@@ -2431,7 +2431,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their vacation in Spain last year.",
     options: ["enjoyed", "enjoy", "enjoying"],
@@ -2440,7 +2440,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my favorite movie three times.",
     options: ["watched", "watch", "watching"],
@@ -2449,7 +2449,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework yesterday.",
     options: ["finish", "finished", "finishing"],
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a great time at the party.",
     options: ["have", "has", "had"],
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the cinema next weekend.",
     options: ["go", "going", "will go"],
@@ -2476,7 +2476,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ in London for two years.",
     options: ["live", "lived", "have lived"],
@@ -2486,7 +2486,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends to the concert last night.",
     options: ["bring", "brought", "brings"],
@@ -2495,7 +2495,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress for the wedding.",
     options: ["wear", "wore", "wears"],
@@ -2504,7 +2504,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a book when I called him.",
     options: ["read", "was reading", "reads"],
@@ -2514,7 +2514,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The weather _____ nice tomorrow.",
     options: ["is", "will be", "was"],
@@ -2523,7 +2523,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the gym every day last month.",
     options: ["went", "go", "goes"],
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to visit the museum next week.",
     options: ["plan", "planning", "planned"],
@@ -2541,7 +2541,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his bicycle to school every day.",
     options: ["rides", "rode", "ride"],
@@ -2551,7 +2551,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ dinner when I arrived.",
     options: ["have", "had", "having"],
@@ -2560,7 +2560,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a movie last night.",
     options: ["see", "saw", "seeing"],
@@ -2569,7 +2569,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a new job last month.",
     options: ["gets", "got", "get"],
@@ -2578,7 +2578,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to school every day.",
     options: ["walks", "walk", "walking"],
@@ -2587,7 +2587,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ like chocolate ice cream.",
     options: ["doesn't", "don't", "isn't"],
@@ -2596,7 +2596,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The sun _____ in the east.",
     options: ["rise", "rises", "rose"],
@@ -2606,7 +2606,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her keys at home yesterday.",
     options: ["forget", "forgot", "forgets"],
@@ -2615,7 +2615,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the park every weekend.",
     options: ["go", "going", "gone"],
@@ -2624,7 +2624,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to play the guitar very well.",
     options: ["learned", "learn", "learning"],
@@ -2633,7 +2633,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They are _____ a new house.",
     options: ["building", "build", "built"],
@@ -2642,7 +2642,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend tomorrow.",
     options: ["meet", "meets", "meeting"],
@@ -2651,7 +2651,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The children _____ in the garden now.",
     options: ["are playing", "play", "played"],
@@ -2659,7 +2659,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "Utilisez le présent continu pour une action actuelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful painting.",
     options: ["painted", "paint", "painting"],
@@ -2668,7 +2668,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework last night.",
     options: ["finished", "finish", "finishing"],
@@ -2677,7 +2677,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend at the cafe.",
     options: ["met", "meet", "meeting"],
@@ -2686,7 +2686,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She usually _____ to music in the evening.",
     options: ["listens", "listen", "listening"],
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat _____ on the sofa.",
     options: ["is sleeping", "sleeping", "sleeps"],
@@ -2705,7 +2705,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to finish my project tomorrow.",
     options: ["need", "needed", "needing"],
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a new bike last month.",
     options: ["bought", "buy", "buying"],
@@ -2723,7 +2723,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "My sister _____ a great dancer.",
     options: ["is", "was", "be"],
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to Paris last summer.",
     options: ["traveled", "travel", "traveling"],
@@ -2742,7 +2742,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his friends every weekend.",
     options: ["meets", "meet", "meeting"],
@@ -2752,7 +2752,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a big dog.",
     options: ["have", "has", "having"],
@@ -2761,7 +2761,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the cinema last week.",
     options: ["go", "went", "gone"],
@@ -2770,7 +2770,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a nice dress for the party.",
     options: ["wears", "wore", "wear"],
@@ -2779,7 +2779,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ playing video games all day.",
     options: ["is", "are", "was"],
@@ -2788,7 +2788,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to visit my grandparents this weekend.",
     options: ["want", "wants", "wanting"],
@@ -2797,7 +2797,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the beach every summer.",
     options: ["go", "going", "went"],
@@ -2806,7 +2806,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ breakfast when I arrived.",
     options: ["was having", "is having", "had"],
@@ -2815,7 +2815,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a great time at the party.",
     options: ["had", "have", "having"],
@@ -2824,7 +2824,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends every weekend.",
     options: ["see", "sees", "seeing"],
@@ -2833,7 +2833,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the cinema last night.",
     options: ["go", "went", "going"],
@@ -2842,7 +2842,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ going to the museum tomorrow.",
     options: ["are", "is", "am"],
@@ -2851,7 +2851,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the store every week.",
     options: ["goes", "going", "went"],
@@ -2861,7 +2861,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a book right now.",
     options: ["am reading", "reading", "read"],
@@ -2870,7 +2870,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym three times a week.",
     options: ["goes", "go", "gone"],
@@ -2879,7 +2879,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a new dress for the party.",
     options: ["buy", "buys", "bought"],
@@ -2888,7 +2888,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ playing video games every evening.",
     options: ["enjoys", "enjoy", "enjoyed"],
@@ -2897,7 +2897,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a picnic in the park last weekend.",
     options: ["had", "have", "has"],
@@ -2906,7 +2906,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a lot of fun at the concert.",
     options: ["had", "have", "has"],
@@ -2915,7 +2915,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to finish our homework before dinner.",
     options: ["need", "needs", "needing"],
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She is going to the _____ tomorrow.",
     options: ["party", "school", "cinema"],
@@ -2933,7 +2933,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I want to buy a _____ for my birthday.",
     options: ["new car", "old book", "big house"],
@@ -2942,7 +2942,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She loves to _____ in the morning.",
     options: ["run", "ran", "running"],
@@ -2951,7 +2951,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He is taller _____ his brother.",
     options: ["than", "then", "with"],
@@ -2960,7 +2960,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the museum last week.",
     options: ["went", "go", "gone"],
@@ -2969,7 +2969,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "This book is _____ interesting than the last one.",
     options: ["more", "most", "less"],
@@ -2978,7 +2978,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Anglais — Texte à trous",
     question: "She has lived here _____ five years.",
     options: ["since", "for", "by"],
@@ -2987,7 +2987,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend at the café yesterday.",
     options: ["met", "meet", "meeting"],
@@ -2996,7 +2996,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "If it rains, we will _____ inside.",
     options: ["stay", "stayed", "staying"],
@@ -3005,7 +3005,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her keys in the car.",
     options: ["forgot", "forgets", "forgetting"],
@@ -3014,7 +3014,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They are _____ to the concert tonight.",
     options: ["going", "go", "gone"],
@@ -3023,7 +3023,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "You should _____ your homework before dinner.",
     options: ["finish", "finished", "finishing"],
@@ -3032,7 +3032,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have never _____ sushi before.",
     options: ["eaten", "eat", "eats"],
@@ -3041,7 +3041,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She wishes she _____ a better job.",
     options: ["had", "has", "have"],
@@ -3050,7 +3050,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "If I _____ you, I would apologize.",
     options: ["were", "was", "am"],
@@ -3059,7 +3059,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The book, _____ I read last week, was amazing.",
     options: ["that", "who", "which"],
@@ -3068,7 +3068,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I will call you when I _____ home.",
     options: ["get", "got", "getting"],
@@ -3077,7 +3077,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework every evening.",
     options: ["do", "does", "doing"],
@@ -3086,7 +3086,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ like chocolate ice cream.",
     options: ["doesn't", "don't", "not"],
@@ -3095,7 +3095,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys on the table.",
     options: ["put", "puts", "putting"],
@@ -3104,7 +3104,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to finish their project.",
     options: ["need", "needs", "needing"],
@@ -3112,7 +3112,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "Le verbe 'to need' reste 'need' pour le pluriel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a book in my bag.",
     options: ["have", "has", "had"],
@@ -3121,7 +3121,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to music every evening.",
     options: ["listens", "listen", "listened"],
@@ -3131,7 +3131,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to finish the project by Friday.",
     options: ["need", "needs", "needing"],
@@ -3140,7 +3140,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my homework before dinner.",
     options: ["do", "did", "doing"],
@@ -3149,7 +3149,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ in Paris last summer.",
     options: ["were", "was", "are"],
@@ -3158,7 +3158,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym every day.",
     options: ["go", "went", "going"],
@@ -3167,7 +3167,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ very happy about the news.",
     options: ["is", "are", "were"],
@@ -3177,7 +3177,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends at the park.",
     options: ["meet", "meets", "met"],
@@ -3186,7 +3186,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a great time at the concert.",
     options: ["had", "have", "has"],
@@ -3195,7 +3195,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to help his mother every weekend.",
     options: ["tries", "try", "tried"],
@@ -3204,7 +3204,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ the train at 5 PM yesterday.",
     options: ["caught", "catch", "catches"],
@@ -3213,7 +3213,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to the beach last weekend.",
     options: ["went", "going", "go"],
@@ -3222,7 +3222,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework before dinner.",
     options: ["did", "doing", "do"],
@@ -3231,7 +3231,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She is _____ than her sister.",
     options: ["taller", "tallest", "tall"],
@@ -3240,7 +3240,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the party last weekend.",
     options: ["went", "go", "going"],
@@ -3249,7 +3249,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her keys again.",
     options: ["lost", "losing", "lose"],
@@ -3258,7 +3258,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a lot of fun at the park.",
     options: ["had", "having", "have"],
@@ -3267,7 +3267,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "It _____ raining when I left.",
     options: ["was", "is", "were"],
@@ -3276,7 +3276,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He doesn't _____ coffee in the morning.",
     options: ["drink", "drinks", "drinking"],
@@ -3285,7 +3285,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She is _____ a great artist.",
     options: ["becoming", "became", "become"],
@@ -3294,7 +3294,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friend yesterday.",
     options: ["met", "meet", "meeting"],
@@ -3303,7 +3303,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to visit us next month.",
     options: ["plan", "planning", "planned"],
@@ -3312,7 +3312,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ friends in my class.",
     options: ["many", "much", "a little"],
@@ -3321,7 +3321,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "What _____ you like to eat for breakfast?",
     options: ["do", "does", "is"],
@@ -3330,7 +3330,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her homework yesterday.",
     options: ["finished", "finishes", "finish"],
@@ -3339,7 +3339,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the cinema next week.",
     options: ["go", "going", "will go"],
@@ -3348,7 +3348,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ likes to play video games.",
     options: ["often", "seldom", "never"],
@@ -3357,7 +3357,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my keys at home.",
     options: ["left", "leave", "leaving"],
@@ -3366,7 +3366,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ a beautiful dress.",
     options: ["wears", "is wearing", "wore"],
@@ -3375,7 +3375,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ never been to Paris.",
     options: ["has", "is", "was"],
@@ -3384,7 +3384,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "Can you _____ me the answer?",
     options: ["give", "gives", "giving"],
@@ -3393,7 +3393,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the gym regularly.",
     options: ["goes", "went", "going"],
@@ -3402,7 +3402,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ in London last summer.",
     options: ["visited", "visits", "visiting"],
@@ -3411,7 +3411,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He is _____ than his friend at math.",
     options: ["better", "good", "well"],
@@ -3420,7 +3420,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a book from the library.",
     options: ["borrowed", "borrowing", "borrows"],
@@ -3429,7 +3429,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ soccer in the park.",
     options: ["play", "plays", "playing"],
@@ -3439,7 +3439,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the beach in summer.",
     options: ["go", "going", "gone"],
@@ -3449,7 +3449,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ her friends on weekends.",
     options: ["meets", "meet", "meeting"],
@@ -3459,7 +3459,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his bicycle to school.",
     options: ["rides", "ride", "riding"],
@@ -3469,7 +3469,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a picnic in the park.",
     options: ["have", "has", "had"],
@@ -3479,7 +3479,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the concert last week.",
     options: ["went", "go", "going"],
@@ -3488,7 +3488,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a letter last month.",
     options: ["wrote", "write", "writing"],
@@ -3497,7 +3497,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a new job next year.",
     options: ["will start", "start", "started"],
@@ -3506,7 +3506,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to Paris next summer.",
     options: ["is going", "goes", "go"],
@@ -3515,7 +3515,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ the project next month.",
     options: ["will finish", "finish", "finished"],
@@ -3524,7 +3524,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ in London for two years.",
     options: ["has lived", "lived", "is living"],
@@ -3533,7 +3533,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym every week.",
     options: ["go", "gone", "went"],
@@ -3542,7 +3542,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to London last summer.",
     options: ["travelled", "travels", "traveling"],
@@ -3551,7 +3551,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his friends at the café.",
     options: ["meets", "met", "meet"],
@@ -3560,7 +3560,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The children _____ in the park.",
     options: ["play", "played", "plays"],
@@ -3568,7 +3568,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     explanation: "Le verbe au présent simple est 'play'.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ soccer in the park yesterday.",
     options: ["played", "play", "playing"],
@@ -3577,7 +3577,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a great time at the party last night.",
     options: ["had", "have", "having"],
@@ -3586,7 +3586,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends at the café last week.",
     options: ["met", "meet", "meeting"],
@@ -3595,7 +3595,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a movie on Friday night.",
     options: ["watched", "watch", "watching"],
@@ -3604,7 +3604,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I usually _____ breakfast at 8 AM.",
     options: ["have", "had", "having"],
@@ -3613,7 +3613,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym every morning.",
     options: ["goes", "went", "go"],
@@ -3623,7 +3623,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ their vacation in Italy last year.",
     options: ["enjoyed", "enjoy", "enjoying"],
@@ -3632,7 +3632,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to her favorite song on the radio.",
     options: ["listens", "listened", "listening"],
@@ -3641,7 +3641,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ for a walk in the evening.",
     options: ["went", "go", "going"],
@@ -3650,7 +3650,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ the guitar every day after school.",
     options: ["plays", "played", "playing"],
@@ -3659,7 +3659,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ a picnic in the park last Sunday.",
     options: ["had", "have", "having"],
@@ -3668,7 +3668,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ the book before the meeting.",
     options: ["read", "reads", "reading"],
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ a lot of photos during my trip.",
     options: ["took", "take", "taking"],
@@ -3686,7 +3686,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ swimming in the lake yesterday.",
     options: ["go", "went", "gone"],
@@ -3695,7 +3695,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the party last night.",
     options: ["come", "came", "coming"],
@@ -3704,7 +3704,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I will _____ you tomorrow.",
     options: ["see", "saw", "seen"],
@@ -3713,7 +3713,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to music while studying.",
     options: ["listens", "listening", "listen"],
@@ -3722,7 +3722,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The weather is _____ today than yesterday.",
     options: ["worse", "bad", "worst"],
@@ -3731,7 +3731,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ to the cinema this week.",
     options: ["gone", "went", "go"],
@@ -3740,7 +3740,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ not like spicy food.",
     options: ["does", "do", "is"],
@@ -3749,7 +3749,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I will _____ my vacation next month.",
     options: ["enjoy", "enjoying", "enjoys"],
@@ -3758,7 +3758,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat is _____ the sofa.",
     options: ["under", "over", "next"],
@@ -3767,7 +3767,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ a car last year.",
     options: ["buys", "buy", "bought"],
@@ -3776,7 +3776,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I have _____ homework to do.",
     options: ["some", "any", "no"],
@@ -3786,7 +3786,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to the cinema on Fridays.",
     options: ["go", "going", "gone"],
@@ -3796,7 +3796,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ like to eat pizza.",
     options: ["would", "will", "can"],
@@ -3806,7 +3806,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my favorite movie last night.",
     options: ["watched", "watch", "watches"],
@@ -3815,7 +3815,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ going to the park later.",
     options: ["are", "is", "be"],
@@ -3824,7 +3824,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to read books in my free time.",
     options: ["love", "loves", "loving"],
@@ -3833,7 +3833,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to play soccer every weekend.",
     options: ["love", "loves", "loving"],
@@ -3842,7 +3842,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ a picnic in the park tomorrow.",
     options: ["have", "has", "having"],
@@ -3851,7 +3851,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The cat is _____ on the chair.",
     options: ["sleeping", "sleep", "sleeps"],
@@ -3860,7 +3860,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She _____ to the gym twice a week.",
     options: ["go", "goes", "going"],
@@ -3869,7 +3869,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the concert last Friday.",
     options: ["went", "go", "going"],
@@ -3878,7 +3878,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ my friends after school.",
     options: ["meet", "meets", "meeting"],
@@ -3887,7 +3887,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We _____ to visit the museum next week.",
     options: ["are going", "go", "going"],
@@ -3896,7 +3896,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ coffee every morning.",
     options: ["drinks", "drink", "drinking"],
@@ -3905,7 +3905,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I _____ to learn a new language.",
     options: ["want", "wants", "wanting"],
@@ -3914,7 +3914,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ his homework every day.",
     options: ["does", "do", "doing"],
@@ -3923,7 +3923,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She is going to _____ a cake for the party.",
     options: ["bake", "make", "cook"],
@@ -3932,7 +3932,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "They _____ to the movies last night.",
     options: ["went", "go", "going"],
@@ -3941,7 +3941,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He _____ to the gym every week.",
     options: ["go", "goes", "going"],
@@ -3950,7 +3950,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I will _____ a letter to my friend.",
     options: ["write", "writes", "writing"],
@@ -3959,7 +3959,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We are _____ to the beach this weekend.",
     options: ["going", "go", "gone"],
@@ -3968,7 +3968,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "The film was _____ interesting than the book.",
     options: ["more", "most", "much"],
@@ -3977,7 +3977,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I enjoy _____ to new places.",
     options: ["traveling", "travel", "travels"],
@@ -3986,7 +3986,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "He has _____ ideas for the project.",
     options: ["great", "greater", "greatest"],
@@ -3995,7 +3995,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "I would like to _____ a new car.",
     options: ["buy", "buys", "buying"],
@@ -4004,7 +4004,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "She has been working here _____ three years.",
     options: ["for", "since", "during"],
@@ -4013,7 +4013,7 @@ final List<QuizQuestion> questionLangueEtrangereAnglais = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Anglais — Texte à trous",
     question: "We will meet _____ the park tomorrow.",
     options: ["at", "in", "on"],
@@ -4378,7 +4378,7 @@ class _QuizLangueEtrangereAnglaisState extends State<QuizLangueEtrangereAnglais>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4581,7 +4581,7 @@ class _QuizLangueEtrangereAnglaisState extends State<QuizLangueEtrangereAnglais>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4764,7 +4764,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5297,10 +5296,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5671,7 +5671,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5712,9 +5712,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

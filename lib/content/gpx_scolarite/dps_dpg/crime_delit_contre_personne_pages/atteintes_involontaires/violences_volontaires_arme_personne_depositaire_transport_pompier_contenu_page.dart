@@ -120,16 +120,16 @@ class ViolencesVolontairesArmePersonneDepositaireTransportPompierPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime l’infraction."),
+                TextSpan(text: " : définit et réprime l’infraction."),
               ]),
             ],
           ),
@@ -150,16 +150,16 @@ class ViolencesVolontairesArmePersonneDepositaireTransportPompierPage
                 "Les deux conditions sont alternatives : il suffit de l’une ou de l’autre.",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
-                const TextSpan(text: "• Bande organisée : "),
+              const _Paragraph.rich([
+                TextSpan(text: "• Bande organisée : "),
                 TextSpan(
                   text: "article 132-71 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — « tout groupement formé ou toute entente établie en vue de la préparation, caractérisée par "
                       "un ou plusieurs faits matériels, d’une ou de plusieurs infractions » (les violences sont alors préméditées).",
@@ -253,15 +253,15 @@ class ViolencesVolontairesArmePersonneDepositaireTransportPompierPage
                 "La réalité de cette atteinte doit être établie (souvent par certificat médical).",
               ),
               const SizedBox(height: 10),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : distingue quatre types de préjudices selon que les violences ont entraîné :",
                 ),
@@ -274,10 +274,10 @@ class ViolencesVolontairesArmePersonneDepositaireTransportPompierPage
               const _BulletPoint(text: "Une ITT > 8 jours."),
               const _BulletPoint(text: "Une ITT ≤ 8 jours (ou absence d’ITT)."),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Expertise",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’ITT peut, à la demande de la victime ou de la personne poursuivie, être constatée par un médecin expert.",
                   ),
@@ -332,113 +332,113 @@ class ViolencesVolontairesArmePersonneDepositaireTransportPompierPage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-1 4° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (violences ITT 0 à 8 jours) : "),
-                const TextSpan(
+                TextSpan(text: " (violences ITT 0 à 8 jours) : "),
+                TextSpan(
                   text:
                       "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-1 3° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (violences ITT > 8 jours) : "),
-                const TextSpan(
+                TextSpan(text: " (violences ITT > 8 jours) : "),
+                TextSpan(
                   text: "15 ans de réclusion (période de sûreté).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-1 2° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (mutilation / infirmité permanente) : "),
-                const TextSpan(
+                TextSpan(text: " (mutilation / infirmité permanente) : "),
+                TextSpan(
                   text: "20 ans de réclusion (période de sûreté).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-14-1 1° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (mort sans intention de la donner) : "),
-                const TextSpan(
+                TextSpan(text: " (mort sans intention de la donner) : "),
+                TextSpan(
                   text: "30 ans de réclusion (période de sûreté).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 222-16-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (amende + peines complémentaires prévues notamment par l’article 131-39 du Code pénal).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : NON (les textes relatifs aux violences délictuelles ne visent pas la tentative).",
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 "En matière criminelle, la tentative est théoriquement punissable, mais peut être difficile à établir "
                 "car l’infraction est en partie fonction du résultat qu’elle provoque.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(text: "Complicité : OUI."),
+              SizedBox(height: 10),
+              _BulletPoint(text: "Complicité : OUI."),
               _Paragraph.rich([
-                const TextSpan(text: "Punissable conformément aux "),
+                TextSpan(text: "Punissable conformément aux "),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Logique du texte",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’infraction pouvant être commise en bande organisée, cela implique souvent plusieurs auteurs ou complices.",
                   ),
@@ -480,10 +480,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -548,7 +548,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -591,7 +591,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -653,7 +653,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -685,7 +685,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -698,7 +698,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -687,3 +687,4 @@ class _NotaBox extends StatelessWidget {
       ),
     );
   }
+}

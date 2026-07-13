@@ -240,69 +240,69 @@ class ControleDebitsBoissonsPage extends StatelessWidget {
             cardColor: cardAdmin,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Contrôle des pièces administratives"),
-              const _Paragraph("L’exploitant doit pouvoir présenter :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Contrôle des pièces administratives"),
+              _Paragraph("L’exploitant doit pouvoir présenter :"),
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Permis d’exploitation (formation obligatoire) valable 10 ans.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Récépissé de déclaration administrative remis par la mairie (justifie la possession de la licence).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Extrait du registre du commerce et des sociétés.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Attestation notariale de propriété ou de gérance du fonds de commerce.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Contrôle de la réglementation générale"),
-              const _Paragraph("Le contrôle porte notamment sur :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Contrôle de la réglementation générale"),
+              _Paragraph("Le contrôle porte notamment sur :"),
+              SizedBox(height: 8),
+              _BulletPoint(
                 text: "Respect des heures d’ouverture et de fermeture.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Protection des mineurs (présence, emploi, vente d’alcool interdite).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Publicité obligatoire (étalage des 10 boissons non alcooliques).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Affichage de l’interdiction de fumer + signalisation.",
               ),
-              const _BulletPoint(text: "Affichage visible des prix."),
-              const _BulletPoint(
+              _BulletPoint(text: "Affichage visible des prix."),
+              _BulletPoint(
                 text: "Vente des boissons (modalités / interdictions).",
               ),
-              const _BulletPoint(text: "Employés de l’établissement."),
-              const _BulletPoint(
+              _BulletPoint(text: "Employés de l’établissement."),
+              _BulletPoint(
                 text:
                     "Jeux de hasard interdits (certains jeux peuvent être autorisés localement).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Non-respect d’une sanction de fermeture.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Installation et conformité d’une terrasse.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Affiche relative à la protection des mineurs et à la répression de l’ivresse publique.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mise à disposition de dispositifs de dépistage de l’imprégnation alcoolique (éthylotests).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("C) Sécurité, hygiène et salubrité"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("C) Sécurité, hygiène et salubrité"),
+              _Paragraph(
                 "Vérifier les principes de prévention incendie (issues, évacuation, éclairage de sécurité, consignes…). "
                 "Contrôler le respect du règlement sanitaire départemental (aération, propreté, protection des denrées…).",
               ),
@@ -513,10 +513,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -581,7 +581,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -624,7 +624,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -686,7 +686,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -718,7 +718,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -731,7 +731,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

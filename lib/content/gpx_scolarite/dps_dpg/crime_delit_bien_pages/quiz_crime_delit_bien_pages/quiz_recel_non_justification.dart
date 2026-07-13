@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionRecelNonJustification = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Définition",
     question: "La non-justification de ressources (321-6 CP) vise :",
     options: [
@@ -104,7 +104,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 al.1 : train de vie/biens non justifiés + relations habituelles avec auteurs (infractions ≥ 5 ans procurant profit) ou victimes d’une de ces infractions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Texte",
     question: "La non-justification de ressources est prévue par :",
     options: [
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : l’article 321-6 al.1 définit et réprime la non-justification de ressources.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Alternative",
     question: "321-6 incrimine notamment :",
     options: [
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Deux portes d’entrée : ressources/train de vie ou origine d’un bien détenu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Piège “lien profit”",
     question:
         "Pour les relations habituelles avec des auteurs, 321-6 exige aussi :",
@@ -146,7 +146,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte : infractions ≥ 5 ans procurant un profit direct/indirect à l’auteur fréquenté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Piège “train de vie modeste”",
     question:
@@ -157,7 +157,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 6 fév. 2008 : même avec un train de vie modeste, des avoirs disproportionnés et flux suspects peuvent suffire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Preuve (piège)",
     question:
         "Vrai/Faux : 321-6 crée une présomption automatique de culpabilité dès qu’il y a des espèces.",
@@ -167,7 +167,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 13 juin 2012 : pas de présomption générale de responsabilité pénale ; l’accusation doit prouver les éléments.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Documents attendus",
     question:
         "Pour justifier la licéité d’un bien détenu, le document le plus “béton” est :",
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : preuve de la licéité notamment par production de factures.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Cas pratique",
     question:
         "Une personne détient une grosse somme, 3 véhicules puissants, et vit en groupe organisé avec des proches auteurs de vols (≥5 ans). Elle ne justifie pas ses ressources. Qualification principale :",
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite un cas-type : relations habituelles + détention disproportionnée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Élément moral",
     question: "L’élément moral de 321-6 suppose :",
     options: [
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : conscience de bénéficier du produit des infractions (ou de profiter des ressources de la victime).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Piège compagne",
     question:
         "Vrai/Faux : une compagne qui croit vivre avec un “dirigeant de société” peut être relaxée faute de conscience, même si son conjoint est trafiquant.",
@@ -216,7 +216,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Autorité sur mineur",
     question: "321-6-1 al.1 aggrave lorsque :",
     options: [
@@ -230,7 +230,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Aggravation 321-6-1 al.1 : mineur sur lequel l’adulte a autorité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Peines al.1",
     question: "Peines 321-6-1 al.1 :",
     options: ["5 ans + 150 000 €", "3 ans + 75 000 €", "7 ans + 200 000 €"],
@@ -238,7 +238,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Tableau : al.1 = 5 ans d’emprisonnement, 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Infractions visées al.2",
     question: "321-6-1 al.2 vise notamment :",
     options: [
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours liste ces infractions (et ajoute : relations habituelles avec personnes faisant usage de stupéfiants).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Peines al.2",
     question: "Peines 321-6-1 al.2 :",
     options: ["7 ans + 200 000 €", "5 ans + 150 000 €", "10 ans + 300 000 €"],
@@ -260,7 +260,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Tableau : al.2 = 7 ans, 200 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Mineurs al.3",
     question: "321-6-1 al.3 aggrave lorsque :",
     options: [
@@ -273,7 +273,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Al.3 : alinéa 2 + mineur(s) impliqué(s).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Peines al.3",
     question: "Peines 321-6-1 al.3 :",
     options: ["10 ans + 300 000 €", "7 ans + 200 000 €", "3 ans + 75 000 €"],
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Tableau : al.3 = 10 ans, 300 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification (321-6) — Confiscation obligatoire (piège)",
     question:
         "Vrai/Faux : en 321-6, la confiscation des biens saisis non justifiés est obligatoire.",
@@ -291,7 +291,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : confiscation obligatoire des biens saisis dont l’origine n’est pas justifiée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification (321-6) — Tentative",
     question: "Tentative en 321-6 / 321-6-1 :",
     options: [
@@ -303,7 +303,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le tableau : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification (321-6) — Complicité",
     question: "Complicité en 321-6 :",
     options: ["Oui", "Non", "Seulement si mineur"],
@@ -313,7 +313,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Texte",
     question: "Le recel est défini et réprimé par :",
     options: ["321-1 CP", "321-6 CP", "441-1 CP"],
@@ -321,7 +321,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours : 321-1 définit et réprime le recel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Double définition (piège)",
     question: "Le recel, c’est :",
     options: [
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte prévoit aussi le “recel d’usage” : bénéficier du produit d’un crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Acte de dissimulation",
     question:
         "Vrai/Faux : dissimuler un bien est répréhensible même si le bien est ensuite retrouvé.",
@@ -344,7 +344,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours : peu importe le résultat (retrouvé ou non).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Dissimulation = indice",
     question:
         "Vrai/Faux : la dissimulation peut faire présumer la connaissance de l’origine frauduleuse.",
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : la seule dissimulation fera présumer la connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet recelé (piège)",
     question: "Le recel peut porter sur :",
     options: [
@@ -368,7 +368,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : tout ce qui est matière à vol + extensions (énergie, secrets, photocopies…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Infraction d’origine (piège)",
     question:
         "Vrai/Faux : l’infraction d’origine doit être un crime ou un délit (pas une contravention).",
@@ -377,7 +377,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours : contraventions exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Tiers auteur (piège concours)",
     question:
         "Vrai/Faux : l’auteur de l’infraction principale peut être poursuivi pour recel de ses propres biens.",
@@ -387,7 +387,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : la chambre criminelle n’admet pas l’auto-recel ; l’infraction d’origine doit être commise par un tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Complice vs receleur",
     question:
         "Vrai/Faux : le complice de l’infraction d’origine peut aussi être poursuivi pour recel (délit distinct).",
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : possible de poursuivre un complice comme receleur, recel = délit distinct.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Relaxé auteur d’origine (piège)",
     question:
         "Si l’auteur d’origine échappe aux poursuites pour prescription ou non-identification, alors le receleur :",
@@ -411,7 +411,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : le receleur peut être condamné même si auteur d’origine inconnu/prescrit/non poursuivi pour raisons procédurales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Disparition juridique (piège)",
     question:
         "Si une loi abroge l’incrimination de l’infraction d’origine (disparition juridique), alors :",
@@ -425,7 +425,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : sans infraction originaire, le recel disparaît (ex. banqueroute simple abrogée).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Élément moral",
     question: "L’élément moral du recel exige :",
     options: [
@@ -438,7 +438,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le recel n’est punissable que si connaissance (mauvaise foi).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Moment d’appréciation",
     question: "La bonne/mauvaise foi s’apprécie :",
     options: [
@@ -452,7 +452,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Peines",
     question: "Peines du recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 750 000 €"],
@@ -460,7 +460,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Tableau : 321-1 = 5 ans, 375 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel aggravé (321-2) — Peines",
     question: "Peines du recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "5 ans + 375 000 €", "7 ans + 200 000 €"],
@@ -468,7 +468,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Tableau : 321-2 = 10 ans, 750 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-3) — Amende proportionnelle (piège)",
     question:
         "Vrai/Faux : l’amende du recel (321-1/321-2) peut être portée jusqu’à la moitié de la valeur des biens recelés.",
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Nota : 321-3 permet d’élever l’amende au-delà, jusqu’à la moitié de la valeur des biens recelés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Tentative (piège concours)",
     question: "Tentative de recel :",
     options: [
@@ -492,7 +492,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : tentative recel simple non prévue ; tentative de recel criminel toujours punissable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Complicité",
     question: "Complicité en matière de recel :",
     options: ["Oui (121-7)", "Non", "Seulement si professionnel"],
@@ -502,7 +502,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel d’usage",
     question:
         "Une personne profite sciemment du train de vie financé par des détournements commis par son conjoint. Qualification la plus juste :",
@@ -516,7 +516,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite le cas : bénéficier du train de vie = recel d’usage en connaissance de cause.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel vs 321-6",
     question:
         "Différence clé : 321-1 requiert une “chose provenant d’un crime/délit”, alors que 321-6 repose sur :",
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-2) pro (ultra-piège)",
     question:
         "Un brocanteur achète régulièrement des bijoux sans facture, ne les inscrit pas au registre de police, et sait qu’ils sont volés. Qualification principale :",
@@ -546,7 +546,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-2 : habitude ou facilités pro ; le cours évoque l’expérience pro + omissions au registre comme indices de mauvaise foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 321-6-1 al.2 stupéfiants (ultra-piège)",
     question:
         "Une personne ne justifie pas ses ressources et fréquente habituellement des personnes faisant usage de stupéfiants. Qualification la plus adaptée (si conditions remplies) :",
@@ -560,7 +560,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : al.2 vise aussi les relations habituelles avec personnes faisant usage de stupéfiants (trafic).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Article + peine (321-6)",
     question:
         "Un mis en cause ne justifie pas l’origine d’une Mercedes + sommes sur compte + construction maison, en relations habituelles avec auteurs ≥5 ans. Qualification + peine de base :",
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Base 321-6 : 3 ans, 75 000 €, confiscation obligatoire des biens non justifiés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Article + peine (321-2)",
     question:
         "Un receleur agit en bande organisée sur des biens provenant d’un délit : qualification + peine encourue :",
@@ -588,7 +588,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-2 aggrave notamment en bande organisée (ou habitude / facilités pro).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 321-4 (crime) (ultra-piège)",
     question:
         "Un receleur sait que le bien provient d’un crime. Application la plus juste :",
@@ -603,7 +603,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Recel (indices)",
     question:
         "Vrai/Faux : l’absence de facture peut être un indice de connaissance de l’origine frauduleuse.",
@@ -613,7 +613,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : absence de facture = indice possible de mauvaise foi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Recel (nature exacte)",
     question:
         "Vrai/Faux : le receleur doit connaître la nature exacte de l’infraction d’origine (vol/escroquerie/etc.).",
@@ -623,7 +623,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : pas nécessaire de connaître la nature exacte ni les circonstances ; seulement crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Non-justification (victime)",
     question:
         "Vrai/Faux : 321-6 peut viser des relations habituelles avec des victimes d’infractions ≥5 ans.",
@@ -633,7 +633,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte mentionne aussi les relations avec les victimes d’une de ces infractions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Non-justification (profit)",
     question:
         "Vrai/Faux : pour la branche “victime”, 321-6 exige que la victime profite de l’infraction.",
@@ -644,7 +644,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Articles spéciaux (recel)",
     question: "Parmi ces “recels spéciaux”, lequel existe dans le cours ?",
     options: [
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours liste des recels spécifiques : 434-6, 434-7, 434-4, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel spécial (cadavre)",
     question: "Le recel de cadavre est prévu par :",
     options: ["434-7 CP", "321-1 CP", "441-4 CP"],
@@ -665,7 +665,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Nota du cours : recel de cadavre = 434-7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel spécial (document/objet)",
     question:
         "Le recel de document/objet facilitant la découverte d’un crime/délit est :",
@@ -676,7 +676,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Définition",
     question: "La non-justification de ressources (321-6 CP) implique :",
     options: [
@@ -690,7 +690,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 al.1 : impossibilité de justifier ressources correspondant au train de vie ou origine d’un bien détenu + relations habituelles avec auteurs (≥ 5 ans, profit) ou victimes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Objet",
     question: "La non-justification (321-6) peut porter sur :",
     options: [
@@ -704,7 +704,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte vise deux volets : ressources vs train de vie et origine d’un bien détenu (mobilier/immobilier).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Relations habituelles",
     question: "Les relations habituelles peuvent être caractérisées par :",
     options: [
@@ -717,7 +717,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours précise que les relations habituelles peuvent se limiter à des rencontres/entrevues/visites.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Seuil des infractions",
     question:
         "Les infractions liées aux relations habituelles doivent être punies :",
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 : crimes ou délits punis d’au moins 5 ans d’emprisonnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Profit",
     question: "Pour l’hypothèse “relations avec auteurs”, il faut :",
     options: [
@@ -745,7 +745,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte exige que les infractions procurent un profit direct/indirect aux personnes fréquentées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Victimes",
     question:
         "321-6 vise aussi le cas où la personne est en relations habituelles avec :",
@@ -759,7 +759,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte vise aussi les relations habituelles avec des victimes d’une des infractions (≥ 5 ans).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Indices train de vie",
     question: "Pour prouver le train de vie reproché, l’enquête peut relever :",
     options: [
@@ -773,7 +773,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours liste des indices de train de vie (dépenses, véhicules, flux bancaires, espèces).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Justificatifs",
     question: "La justification des moyens d’existence peut se faire par :",
     options: [
@@ -786,7 +786,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte mentionne des documents “indiscutables” (factures, bulletins de paye, déclaration de revenus).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Présomption",
     question:
         "Vrai/Faux : 321-6 instaure une présomption de culpabilité automatique.",
@@ -796,7 +796,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 13 juin 2012 : pas de présomption de responsabilité pénale ; l’accusation doit rapporter la preuve.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Appréciation",
     question: "Qui apprécie souverainement les faits et preuves débattues ?",
     options: ["Les juges du fond", "Le mis en cause", "L’enquêteur uniquement"],
@@ -805,7 +805,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours indique que les juges ont un pouvoir souverain d’appréciation des faits/circonstances et preuves débattues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Avoirs disproportionnés",
     question:
@@ -816,7 +816,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Jurisprudence citée : couple au train de vie modeste mais avoirs bancaires disproportionnés + mouvements + espèces (Cass. crim., 6 fév. 2008).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Biens concernés",
     question: "L’obligation de justifier l’origine peut concerner :",
     options: [
@@ -829,7 +829,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours précise que cela correspond aux biens mobiliers et immobiliers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Renversement",
     question: "Concernant l’origine d’un bien détenu, le mécanisme implique :",
     options: [
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours explique le renversement : c’est au prévenu d’établir la licéité (factures...).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Élément moral",
     question: "L’élément moral suppose :",
     options: [
@@ -856,7 +856,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : conscience de bénéficier du produit d’infractions commises par la/les personnes fréquentées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Erreur de croyance",
     question: "La compagne d’un trafiquant ne sera pas coupable si elle :",
     options: [
@@ -869,7 +869,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite l’exemple : absence de conscience → pas d’infraction (Cass. crim., 25 juin 2003).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Peine simple",
     question: "Peines encourues (321-6) :",
     options: ["3 ans et 75 000 €", "5 ans et 150 000 €", "1 an et 15 000 €"],
@@ -878,7 +878,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 : 3 ans d’emprisonnement et 75 000 € d’amende + confiscation obligatoire des biens non justifiés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Confiscation",
     question:
         "Vrai/Faux : la confiscation des biens saisis non justifiés est obligatoire en 321-6.",
@@ -888,7 +888,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte précise : confiscation obligatoire des biens saisis dont l’origine n’est pas justifiée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Tentative/complicité",
     question: "Tentative et complicité (321-6) :",
     options: [
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours : tentative NON ; complicité OUI (121-6/121-7).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6-1) — Mineur sous autorité",
     question: "321-6-1 al.1 aggrave si les infractions sont commises :",
@@ -914,7 +914,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Aggravation 321-6-1 al.1 : crimes/délits commis par un mineur sur lequel l’auteur a autorité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Peine al.1",
     question: "Peine 321-6-1 al.1 :",
     options: ["5 ans + 150 000 €", "7 ans + 200 000 €", "10 ans + 300 000 €"],
@@ -922,7 +922,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-6-1 al.1 : 5 ans d’emprisonnement et 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Champs al.2",
     question: "321-6-1 al.2 vise notamment :",
     options: [
@@ -936,7 +936,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours liste TEH, extorsion, association de malfaiteurs, infractions armes/explosifs et trafic de stups (incluant relations avec usagers).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Peine al.2",
     question: "Peine 321-6-1 al.2 :",
     options: ["7 ans + 200 000 €", "5 ans + 150 000 €", "3 ans + 75 000 €"],
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-6-1 al.2 : 7 ans d’emprisonnement et 200 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Mineurs al.3",
     question: "321-6-1 al.3 aggrave lorsque :",
     options: [
@@ -957,7 +957,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Aggravation 321-6-1 al.3 : infraction mentionnée à l’al.2 commise par un ou plusieurs mineurs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Peine al.3",
     question: "Peine 321-6-1 al.3 :",
     options: ["10 ans + 300 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -966,7 +966,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6-1 al.3 : 10 ans d’emprisonnement et 300 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Des parents vivent en groupe organisé, détiennent de grosses sommes et 3 véhicules puissants sans revenus compatibles, leurs enfants commettent des vols. Qualification la plus probable ?",
@@ -980,7 +980,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Jurisprudence citée : parents en possession de numéraires/vêtements provenant de vols commis par enfants, ressources insuffisantes → 321-6 (Cass. crim., 8 fév. 1989).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Un exploitant de bar-restaurant détient d’importantes liquidités sans rapport avec ses ressources déclarées. Qualification la plus adaptée :",
@@ -995,7 +995,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Définition",
     question: "Le recel (321-1 CP) est notamment :",
     options: [
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-1 : dissimuler, détenir, transmettre ou faire l’intermédiaire, en sachant l’origine crime/délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage",
     question: "Constitue aussi un recel :",
     options: [
@@ -1023,7 +1023,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-1 al.2 : recel d’usage = profit du produit en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Dissimuler",
     question:
         "Vrai/Faux : dissimuler un bien d’origine frauduleuse est répréhensible quel que soit le résultat.",
@@ -1033,7 +1033,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : les agissements de dissimulation sont répréhensibles quel que soit leur résultat (peu importe retrouvés ou non).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Exemple local",
     question: "Exemple jurisprudentiel de dissimulation :",
     options: [
@@ -1046,7 +1046,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 30 mars 1999 : mise à disposition d’un local pour stocker des objets volés → recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Dissimuler et comptabilité",
     question: "La dissimulation peut aussi consister à :",
     options: [
@@ -1060,7 +1060,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite la dissimulation via de fausses mentions comptables (C.A. Paris, 12 juillet 1985).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Présomption de connaissance",
     question:
         "Vrai/Faux : la seule dissimulation peut faire présumer la connaissance de l’origine frauduleuse.",
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : la dissimulation fera présumer la connaissance de l’origine frauduleuse, donc le recel (ex. plaques dissimulées).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Détention",
     question: "La détention recéleuse consiste à :",
     options: [
@@ -1084,7 +1084,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : détenir = avoir à disposition une chose ; le simple fait de détention peut constituer le recel (délit continu).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Profit indifférent",
     question:
         "Vrai/Faux : le profit personnel est indispensable pour caractériser le recel.",
@@ -1094,7 +1094,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : usage/profit/bénéfice importent peu pour le recel de détention ; la détention suffit si connaissance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Réception indirecte",
     question: "La chose peut être reçue :",
     options: [
@@ -1108,7 +1108,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "L’innocence d’un intermédiaire n’exclut pas la responsabilité du receleur si connaissance de l’origine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Transmission",
     question: "La “transmission” recéleuse, c’est :",
     options: [
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours définit la transmission comme céder/remettre/faire passer une chose.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire",
     question: "Faire office d’intermédiaire signifie :",
     options: [
@@ -1135,7 +1135,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : pas besoin d’habitude, but lucratif non exigé, et détention matérielle non nécessaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire (jurisprudence)",
     question:
         "Intervenir uniquement dans la négociation de biens volés peut caractériser :",
@@ -1149,7 +1149,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 30 nov. 1999 : intervention dans la négociation de bons volés → recel par entremise.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage (passager)",
     question:
         "Un passager d’un véhicule dont il connaît l’origine frauduleuse est :",
@@ -1163,7 +1163,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite le passager d’un véhicule volé comme receleur (Cass. crim., 09 juillet 1970).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Train de vie d’un proche",
     question:
         "Profiter du train de vie financé par un détournement commis par son conjoint peut être :",
@@ -1177,7 +1177,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite le profit du train de vie lié à un détournement comme recel (Cass. crim., 09 mai 1974).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Services/repas",
     question:
         "Vrai/Faux : bénéficier de repas/distractions payés avec des chèques détournés peut constituer un recel.",
@@ -1187,7 +1187,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 07 mai 2002 : repas/distractions réglés avec fonds détournés → recel (bénéficier par tout moyen).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Contrat de travail fictif",
     question:
         "Bénéficier d’un salaire sans prestation (suite à détournement de fonds publics) peut constituer :",
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite : bénéficier d’un contrat/salaire sans prestation à la suite d’un détournement → recel (Cass. crim., 30 mai 2001).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Travaux/fournitures/crédits",
     question:
         "Faire réaliser des travaux chez soi grâce à un marché “à perte” peut caractériser :",
@@ -1215,7 +1215,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite un exemple de travaux réalisés grâce à un marché : recel (Cass. crim., 14 mai 2003).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Informations",
     question: "Le recel de délit d’initié est caractérisé par :",
     options: [
@@ -1229,7 +1229,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : recel d’initié = bénéficier du produit de l’exploitation sur le marché (Cass. crim., 26 oct. 1995).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet de l’acte",
     question:
         "Tout ce qui est matière à vol peut faire l’objet d’un recel, notamment :",
@@ -1243,7 +1243,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours élargit la nature de la chose : objets, énergie, secrets, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Subrogation",
     question:
         "Vrai/Faux : le recel peut viser un bien acheté avec des fonds recelés (subrogation).",
@@ -1253,7 +1253,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : recel possible quand les fonds reçus servent à acheter un bien ou investir (Cass. crim., 22 juin 1972).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Contraventions",
     question: "Le recel exclut :",
     options: ["Les contraventions", "Les délits", "Les crimes"],
@@ -1262,7 +1262,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "La chose doit provenir d’un crime ou d’un délit ; les contraventions sont exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Qualification de l’infraction d’origine",
     question:
         "Vrai/Faux : le juge doit préciser la nature de l’infraction d’origine pour retenir le recel.",
@@ -1272,7 +1272,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : la simple mention “origine frauduleuse” ne suffit pas ; il faut préciser l’infraction initiale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Croyance erronée",
     question:
         "Vrai/Faux : si la personne croit à tort que le bien provient d’un crime/délit, on peut retenir le recel.",
@@ -1282,7 +1282,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : pas de recel si l’auteur croit à tort que le bien provient d’un crime ou d’un délit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Abrogation",
     question:
         "Si l’infraction d’origine a été abrogée (plus d’infraction), alors :",
@@ -1296,7 +1296,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite l’abrogation de la banqueroute simple : absence d’infraction originaire → pas de recel (Cass. crim., 17 mai 1989).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur d’origine tiers",
     question: "En principe, l’infraction d’origine doit être commise :",
     options: ["Par un tiers", "Par le receleur lui-même", "Par la victime"],
@@ -1305,7 +1305,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : l’auteur de l’infraction principale ne peut pas être poursuivi pour recel ; infraction d’origine par un tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Complice",
     question:
         "Vrai/Faux : le complice de l’infraction d’origine peut être poursuivi comme receleur.",
@@ -1315,7 +1315,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : le recel est un délit distinct, le complice peut aussi être poursuivi comme receleur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Obstacles procéduraux",
     question:
         "Le receleur peut être condamné même si l’auteur d’origine échappe aux poursuites pour :",
@@ -1329,7 +1329,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : raisons procédurales n’empêchent pas la condamnation du receleur (contrairement à la disparition objective de l’infraction).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Connaissance (niveau)",
     question: "Le receleur doit connaître :",
     options: [
@@ -1343,7 +1343,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : pas nécessaire de connaître la nature précise/circonstances exactes ; suffit de savoir origine crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Indices",
     question: "La connaissance peut être déduite notamment de :",
     options: [
@@ -1357,7 +1357,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite ces indices pour déduire la connaissance de l’origine frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Moment d’appréciation",
     question: "La bonne/mauvaise foi s’apprécie :",
     options: [
@@ -1370,7 +1370,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : l’appréciation se fait au moment de recevoir, transmettre ou tirer profit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Piège Pelegrin",
     question:
         "Vrai/Faux : conserver un bien après apprendre son origine frauduleuse suffit toujours à caractériser un recel.",
@@ -1380,7 +1380,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Arrêt Pelegrin : si bonne foi reconnue au moment de l’acquisition, pas de recel du seul fait de conserver après découverte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Aggravation",
     question: "Le recel est aggravé (321-2) quand il est commis :",
     options: [
@@ -1393,7 +1393,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-2 : habitude ou facilités pro ; bande organisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-4) — Peines de l’infraction d’origine",
     question: "321-4 s’applique lorsque :",
     options: [
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-4 : si peine d’origine > peine recel, receleur puni des peines attachées à l’infraction d’origine (et des seules C.A. connues).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Peines",
     question: "Peines du recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 750 000 €"],
@@ -1415,7 +1415,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-1 : 5 ans d’emprisonnement et 375 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Peines",
     question: "Peines du recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -1423,7 +1423,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-2 : 10 ans d’emprisonnement et 750 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-3) — Amende majorée",
     question:
         "Vrai/Faux : l’amende de 321-1/321-2 peut être portée jusqu’à la moitié de la valeur des biens recelés.",
@@ -1433,7 +1433,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-3 : amendes de 321-1 et 321-2 peuvent être élevées jusqu’à la moitié de la valeur des biens recelés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Tentative",
     question: "Tentative de recel :",
     options: [
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : tentative recel simple non prévue ; tentative de recel criminel toujours punissable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Complicité",
     question: "La complicité en matière de recel est :",
     options: [
@@ -1459,7 +1459,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : complicité applicable au recel selon 121-7 (aide/assistance, provocation, instructions).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel vs non-justification",
     question:
         "La non-justification (321-6) se distingue du recel (321-1) car elle exige :",
@@ -1474,7 +1474,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 peut viser l’incohérence ressources/train de vie ou origine de biens + relations habituelles ; le recel suppose une chose provenant d’un crime/délit + connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : le recel peut être constitué même si l’auteur d’origine est décédé ou en fuite.",
@@ -1484,7 +1484,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : recel constitué même si l’auteur de l’infraction d’origine est décédé ou en fuite (la punition de l’auteur d’origine est indifférente).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : l’absence de facture est un indice pouvant permettre de déduire la connaissance de l’origine frauduleuse.",
@@ -1494,7 +1494,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite l’absence de facture parmi les indices possibles de connaissance de l’origine frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-1)",
     question:
         "Un individu cache des plaques d’immatriculation volées sous la garniture d’un véhicule. Qualification la plus probable :",
@@ -1508,7 +1508,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Jurisprudence citée : dissimulation de plaques volées → connaissance présumée de l’origine frauduleuse, recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-1)",
     question:
         "Une personne utilise un véhicule volé en tant que passager puis conducteur, en sachant l’origine. Qualification :",
@@ -1522,7 +1522,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite l’utilisation d’un véhicule volé comme recel d’usage (CA Nancy, 9 déc. 1992).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Non-justification",
     question: "Peine 321-6 (base) :",
     options: ["3 ans + 75 000 €", "5 ans + 150 000 €", "10 ans + 750 000 €"],
@@ -1530,7 +1530,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-6 : 3 ans et 75 000 € (+ confiscation obligatoire).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Non-justification",
     question: "Article aggravation mineur sous autorité :",
     options: ["321-6-1 al.1", "321-6 al.1", "321-2"],
@@ -1539,7 +1539,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6-1 al.1 : infractions commises par un mineur sur lequel l’auteur a autorité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Recel",
     question: "Article recel aggravé (habitude/pro/bande organisée) :",
     options: ["321-2", "321-3", "321-4"],
@@ -1548,7 +1548,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-2 : recel aggravé (habituelle/facilités pro ou bande organisée).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Recel",
     question: "Peines recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "7 ans + 200 000 €"],
@@ -1556,7 +1556,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-1 : 5 ans et 375 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Recel",
     question: "Peines recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -1564,7 +1564,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-2 : 10 ans et 750 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Champ",
     question:
         "Pour retenir 321-6, il faut que la personne soit en relations habituelles avec :",
@@ -1579,7 +1579,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte vise les relations habituelles avec auteurs (≥5 ans, profit) ou victimes d’une des infractions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Piège condamnation préalable",
     question:
@@ -1590,7 +1590,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours indique qu’on peut retenir 321-6 sans condamnation définitive de la personne fréquentée (présomption d’innocence respectée).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Train de vie",
     question: "Le “train de vie” peut être établi par :",
     options: [
@@ -1604,7 +1604,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : preuves par indices concrets (dépenses, achats, mouvements de fonds, espèces).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Valeur probante",
     question:
         "Parmi ces éléments, lequel est le PLUS pertinent pour justifier des ressources ?",
@@ -1618,7 +1618,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours vise des documents “indiscutables” : factures, bulletins de paye, déclaration de revenus.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Biens (piège)",
     question:
         "Vrai/Faux : 321-6 vise uniquement les biens “en espèces” (cash).",
@@ -1628,7 +1628,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte vise l’origine d’un bien détenu : biens mobiliers ET immobiliers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Indices (piège concours)",
     question:
@@ -1644,7 +1644,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite précisément ces éléments (Cass. crim., 6 fév. 2008) pour matérialiser l’écart ressources/train de vie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Écart ressources/train de vie",
     question: "La non-justification “ressources” suppose :",
@@ -1658,7 +1658,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Volet 1 : ressources personnelles ne correspondant pas au train de vie (écart anormal).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Origine d’un bien",
     question: "La non-justification “origine d’un bien” implique :",
     options: [
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Volet 2 : bien détenu dont l’origine ne peut être justifiée (factures, traçabilité).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Piège sur la charge",
     question:
         "Vrai/Faux : en 321-6, la charge de la preuve est toujours intégralement sur le prévenu.",
@@ -1682,7 +1682,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 13 juin 2012 : pas de présomption générale ; l’accusation doit rapporter la preuve du délit spécifique. (Le cours évoque un renversement surtout sur l’origine du bien).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Relations habituelles (piège)",
     question: "Les relations habituelles exigent :",
@@ -1697,7 +1697,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : relations habituelles peuvent être de simples rencontres/visites ; pas besoin de cohabiter.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Scénario",
     question:
         "Une personne a un train de vie supérieur à ses ressources, et est vue très régulièrement avec des victimes d’extorsion. Elle ne peut justifier l’origine de biens. Qualification :",
@@ -1711,7 +1711,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 vise aussi les relations habituelles avec la victime d’une des infractions (≥ 5 ans) + non-justification.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Spécifiques (nota)",
     question:
         "Parmi ces domaines, lequel possède une incrimination spécifique de non-justification ?",
@@ -1721,7 +1721,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Nota du cours : infractions spécifiques en terrorisme (421-2-3), proxénétisme, mendicité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Spécifiques (nota)",
     question:
         "Les incriminations spécifiques de non-justification concernent notamment :",
@@ -1736,7 +1736,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Acte matériel",
     question: "Le recel peut être constitué par :",
     options: [
@@ -1749,7 +1749,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours décrit ces actes matériels constitutifs du recel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Délit continu",
     question:
         "Vrai/Faux : la détention recéleuse fait du recel un délit continu.",
@@ -1759,7 +1759,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : la détention implique que le recel est un délit continu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Usage indifférent (piège)",
     question:
         "Vrai/Faux : pour la détention recéleuse, l’usage du bien est indispensable.",
@@ -1769,7 +1769,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : usage/profit indifférents ; la détention suffit si connaissance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire (piège)",
     question:
         "Vrai/Faux : être “intermédiaire” suppose d’avoir la chose en main à un moment donné.",
@@ -1779,7 +1779,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : recel par entremise ne suppose pas l’appréhension matérielle et directe de la chose.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Prix anormal",
     question: "Un achat à prix très bas peut servir à déduire :",
     options: [
@@ -1792,7 +1792,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : acquisition à bas prix = indice possible de connaissance de l’origine frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Indices (piège concours)",
     question: "Quel faisceau est le PLUS “mauvaise foi” ?",
     options: [
@@ -1806,7 +1806,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : ces circonstances variées permettent de déduire la connaissance de l’origine frauduleuse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Connaissance de l’infraction d’origine",
     question: "Le receleur doit connaître :",
     options: [
@@ -1820,7 +1820,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : pas besoin de connaître la qualification exacte ou les circonstances précises.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur d’origine inconnu",
     question:
         "Vrai/Faux : le recel peut être constitué même si l’auteur de l’infraction d’origine demeure inconnu.",
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite : recel constitué même si auteur inconnu (Cass. crim., 24 nov. 1964).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Bonne foi (piège)",
     question:
         "Si une personne achète de bonne foi, puis apprend après coup l’origine frauduleuse, alors :",
@@ -1845,7 +1845,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Arrêt Pelegrin : l’appréciation se fait au moment de l’acquisition ; conserver après coup n’implique pas automatiquement recel si bonne foi initiale reconnue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Acte positif",
     question:
         "Vrai/Faux : le recel d’usage suppose un bénéfice/profit du produit de l’infraction.",
@@ -1855,7 +1855,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Recel d’usage : bénéficier, par tout moyen, du produit d’un crime/délit en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet (piège)",
     question:
         "Vrai/Faux : le recel ne peut porter que sur des biens “matériels”.",
@@ -1865,7 +1865,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours mentionne aussi des informations (ex : produit de leur exploitation) et des secrets de fabrication.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Subrogation (piège)",
     question:
         "Si un receleur reçoit des fonds frauduleux et achète un bien avec, alors le bien acheté :",
@@ -1879,7 +1879,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : le recel s’applique au produit, y compris quand les fonds servent à acheter un bien (subrogation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Contraventions (piège)",
     question:
         "Vrai/Faux : on peut retenir le recel si la chose provient d’une contravention.",
@@ -1889,7 +1889,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "La chose doit provenir d’un crime ou d’un délit : contraventions exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Illégalité de l’infraction d’origine",
     question:
         "Vrai/Faux : si les éléments constitutifs de l’infraction principale ne sont pas réunis, le recel ne peut pas être retenu.",
@@ -1899,7 +1899,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : si les faits ne constituent pas un crime/délit ou si l’infraction principale n’est pas légalement constituée, pas de recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Habitude/pro",
     question: "Le recel est aggravé (321-2) si commis :",
     options: [
@@ -1913,7 +1913,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-2 : aggravation si habituel ou facilités pro (et aussi bande organisée).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-4) — Peine de l’origine",
     question: "En 321-4, le receleur est puni :",
     options: [
@@ -1927,7 +1927,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-4 : si peine de l’infraction d’origine > recel, peines = celles de l’infraction d’origine (+ seulement C.A. connues).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — QCM ultra piège (321-4)",
     question:
         "Un receleur sait que le bien provient d’un crime (peine > 10 ans). Application :",
@@ -1942,7 +1942,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Si la peine d’origine est supérieure, 321-4 renvoie aux peines de l’infraction d’origine (et C.A. connues).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Personnes morales",
     question:
         "Vrai/Faux : les personnes morales peuvent être pénalement responsables du recel.",
@@ -1952,7 +1952,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : responsabilité des personnes morales prévue (321-12) + amende et peines complémentaires (131-39).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Peines complémentaires (PM)",
     question:
         "Pour une personne morale, des peines complémentaires possibles incluent :",
@@ -1967,7 +1967,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel vs non-justification",
     question: "Quel couple “bon texte” est correct ?",
     options: [
@@ -1979,7 +1979,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Recel = 321-1 ; non-justification = 321-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Seuil 5 ans",
     question: "Le seuil “≥ 5 ans” intervient :",
     options: [
@@ -1993,7 +1993,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le seuil est un critère constitutif de 321-6 (infractions liées punies ≥ 5 ans).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (321-6)",
     question: "Vrai/Faux : 321-6 exige que l’auteur d’origine soit identifié.",
     options: ["Vrai", "Faux", "Seulement si crime"],
@@ -2002,7 +2002,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte vise des relations habituelles ; la condamnation/identification n’est pas une condition stricte (logique du délit spécifique).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (321-1)",
     question:
         "Vrai/Faux : le recel peut viser des prestations en nature (repas, travaux) si on en bénéficie en connaissance de cause.",
@@ -2012,7 +2012,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours étend le recel d’usage aux repas/services/travaux/crédits, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article/peine",
     question: "Associer correctement : recel simple →",
     options: [
@@ -2024,7 +2024,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Rappel : 321-1 (5 ans, 375 000 €).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article/peine",
     question: "Associer correctement : non-justification base →",
     options: [
@@ -2036,7 +2036,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Rappel : 321-6 = 3 ans, 75 000 € + confiscation obligatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel vs non-justification (ultra-piège)",
     question:
         "Une personne vit au-dessus de ses moyens, a des flux bancaires suspects, mais aucun objet précis d’origine frauduleuse n’est identifié. Elle est en relations habituelles avec des auteurs de trafic stupéfiants. Meilleure qualification :",
@@ -2051,7 +2051,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Sans “chose” identifiée, on bascule plutôt sur 321-6 (train de vie/biens non justifiés + relations habituelles).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (ultra-piège)",
     question:
         "Un garagiste accepte de “garder” des voitures volées destinées à être transformées, sans tirer de profit personnel, mais en sachant l’origine. Qualification :",
@@ -2065,7 +2065,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le profit n’est pas exigé : détenir/simuler en connaissance de cause suffit (le cours cite un cas similaire).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel par entremise (ultra-piège)",
     question:
         "Une personne ne touche jamais les biens, mais met en relation vendeur/acheteur et négocie des bons volés, en sachant l’origine. Qualification :",
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Article",
     question:
         "L’infraction de non-justification de ressources est prévue par :",
@@ -2090,7 +2090,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "L’article 321-6 al.1 définit et réprime la non-justification de ressources.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Infractions concernées",
     question:
@@ -2105,7 +2105,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 : infractions criminelles ou délictuelles punies d’au moins 5 ans, procurant un profit direct/indirect.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Train de vie",
     question: "Le critère “train de vie” peut notamment être établi par :",
     options: [
@@ -2119,7 +2119,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite divers indices de train de vie (dépenses, véhicules, flux bancaires, espèces).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Justificatifs",
     question:
         "Pour justifier de ses ressources, la personne peut produire notamment :",
@@ -2133,7 +2133,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours mentionne des documents “indiscutables” : factures, bulletins, déclaration de revenus.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Charge de la preuve",
     question:
         "Vrai/Faux : 321-6 crée une présomption automatique de culpabilité pénale.",
@@ -2143,7 +2143,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Cass. crim., 13 juin 2012 : pas de présomption de responsabilité pénale ; délit spécifique dont l’accusation doit rapporter la preuve.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Bien d’origine indéterminée",
     question: "L’infraction peut aussi viser :",
@@ -2157,7 +2157,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 : non-justification de l’origine d’un bien détenu (biens mobiliers/immobiliers).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Renversement",
     question:
         "Concernant l’origine d’un bien détenu, le mécanisme décrit par le cours implique que :",
@@ -2172,7 +2172,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours indique un renversement : c’est au prévenu de déterminer la provenance/licéité (factures…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Relations habituelles",
     question: "Les “relations habituelles” peuvent se limiter à :",
     options: [
@@ -2185,7 +2185,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours précise que des rencontres/entrevues/visites peuvent suffire à caractériser des relations habituelles.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Auteurs vs victimes",
     question: "321-6 vise des relations habituelles avec :",
     options: [
@@ -2199,7 +2199,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte vise les deux hypothèses : fréquentation d’auteurs ou de victimes d’infractions ≥ 5 ans.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Profit",
     question:
         "Pour l’hypothèse “auteurs”, il faut en outre que l’auteur fréquenté :",
@@ -2213,7 +2213,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte exige un profit direct/indirect tiré de l’infraction par la personne fréquentée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Condamnation préalable",
     question:
@@ -2224,7 +2224,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours indique qu’on peut retenir 321-6 sans constater une condamnation définitive de la personne fréquentée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Élément moral",
     question: "L’élément moral principal exige :",
     options: [
@@ -2238,7 +2238,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 : conscience de bénéficier du produit d’infractions commises par la/les personnes fréquentées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Erreur de croyance",
     question:
         "Exemple donné : ne sera pas coupable la compagne d’un trafiquant si elle :",
@@ -2252,7 +2252,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite l’exemple : absence de conscience → pas d’infraction (Cass. crim., 25 juin 2003).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Peines",
     question: "Peines de base (321-6) :",
     options: ["3 ans + 75 000 €", "5 ans + 150 000 €", "2 ans + 30 000 €"],
@@ -2261,7 +2261,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 : 3 ans d’emprisonnement et 75 000 € d’amende. Confiscation obligatoire des biens non justifiés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Confiscation",
     question:
         "Vrai/Faux : en 321-6, la confiscation des biens saisis non justifiés est obligatoire.",
@@ -2271,7 +2271,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le texte précise : confiscation obligatoire des biens saisis dont l’origine n’est pas justifiée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Tentative/complicité",
     question: "Tentative et complicité (321-6) :",
     options: [
@@ -2283,7 +2283,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours : tentative NON ; complicité OUI (121-6/121-7).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Aggravation",
     question: "321-6-1 al.1 aggrave lorsque :",
     options: [
@@ -2297,7 +2297,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Aggravation 321-6-1 al.1 : infractions commises par un mineur sur lequel l’auteur a autorité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Stups / armes / TEH",
     question: "321-6-1 al.2 vise notamment :",
     options: [
@@ -2311,7 +2311,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours liste TEH, extorsion, association de malfaiteurs, infractions armes/explosifs et trafic de stups (incluant relations avec usagers).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Mineurs multiples",
     question: "321-6-1 al.3 aggrave lorsque :",
     options: [
@@ -2325,7 +2325,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Aggravation 321-6-1 al.3 : infractions de l’al.2 commises par un ou plusieurs mineurs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Peines aggravées",
     question: "Peine aggravée (321-6-1 al.1) :",
     options: ["5 ans + 150 000 €", "7 ans + 200 000 €", "10 ans + 300 000 €"],
@@ -2333,7 +2333,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-6-1 al.1 : 5 ans d’emprisonnement et 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Peines aggravées",
     question: "Peine aggravée (321-6-1 al.2) :",
     options: ["7 ans + 200 000 €", "5 ans + 150 000 €", "3 ans + 75 000 €"],
@@ -2341,7 +2341,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-6-1 al.2 : 7 ans et 200 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Peines aggravées",
     question: "Peine aggravée (321-6-1 al.3) :",
     options: ["10 ans + 300 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -2349,7 +2349,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-6-1 al.3 : 10 ans et 300 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Non-justification vs recel",
     question: "Différence clé : le recel (321-1) suppose :",
     options: [
@@ -2363,7 +2363,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-1 : dissimuler/détenir/transmettre ou bénéficier du produit en sachant l’origine. 321-6 : train de vie/biens non justifiés + relations habituelles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Un couple a un train de vie modeste mais dispose d’avoirs bancaires disproportionnés, multiplie les mouvements et paie souvent en espèces. Qualification la plus adaptée ?",
@@ -2377,7 +2377,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Exemple jurisprudentiel : même train de vie modeste, avoirs disproportionnés + mouvements + espèces → 321-6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Une personne ne justifie pas l’origine de sommes sur un compte + détention d’un véhicule + construction d’une maison. Qualification ?",
@@ -2395,7 +2395,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
   // =========================
   // RECEL (321-1 et suivants)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Définition",
     question: "Le recel (321-1 CP) consiste notamment à :",
     options: [
@@ -2409,7 +2409,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-1 : dissimulation/détention/transmission/intermédiaire + connaissance origine crime/délit ; et aussi bénéficier du produit par tout moyen.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Texte",
     question: "Le recel est défini et réprimé par :",
     options: ["321-1 CP", "321-6 CP", "432-11 CP"],
@@ -2417,7 +2417,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le recel est prévu à l’article 321-1 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Actes matériels",
     question: "Les actes matériels du recel peuvent être :",
     options: [
@@ -2430,7 +2430,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-1 vise dissimuler/détenir/transmettre + faire office d’intermédiaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage",
     question: "Constitue aussi un recel :",
     options: [
@@ -2443,7 +2443,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-1 al.2 : recel d’usage = profiter du produit en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Délit continu",
     question:
         "Vrai/Faux : la détention recéleuse fait du recel un délit continu.",
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours précise : la détention implique un délit continu ; le simple fait de détenir peut constituer le recel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet",
     question: "La chose recelée doit provenir :",
     options: [
@@ -2466,7 +2466,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le recel suppose une infraction d’origine crime/délit ; contraventions exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Infraction d’origine",
     question:
         "Vrai/Faux : il suffit d’écrire “origine frauduleuse” sans préciser l’infraction d’origine.",
@@ -2476,7 +2476,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours indique que le juge doit préciser la nature de l’infraction initiale ; la simple mention d’origine frauduleuse ne suffit pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur de l’infraction d’origine",
     question:
         "En principe, l’auteur de l’infraction d’origine peut-il être poursuivi pour recel ?",
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : l’auteur principal ne peut être poursuivi pour recel ; l’infraction d’origine doit être commise par un tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Complice et receleur",
     question:
         "Un complice de l’infraction d’origine peut-il aussi être poursuivi comme receleur ?",
@@ -2504,7 +2504,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : un complice peut être poursuivi comme receleur, le recel étant distinct.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Connaissance",
     question: "L’élément moral du recel exige :",
     options: [
@@ -2517,7 +2517,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Il n’est pas nécessaire de connaître précisément la nature/circonstances de l’infraction d’origine, seulement l’origine frauduleuse crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Indices de mauvaise foi",
     question: "La connaissance de l’origine frauduleuse peut être déduite de :",
     options: [
@@ -2531,7 +2531,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite divers indices : bas prix, dissimulation, absence facture, contexte suspect.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Piège Pelegrin",
     question:
         "Vrai/Faux : conserver une chose après avoir appris son origine frauduleuse est toujours un recel.",
@@ -2541,7 +2541,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours (arrêt Pelegrin) : pas de recel si bonne foi reconnue au moment de l’acquisition ; l’appréciation se fait au moment de recevoir/transmettre/tirer profit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire",
     question: "Faire office d’intermédiaire suppose :",
     options: [
@@ -2555,7 +2555,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : pas besoin d’habitude/métier ; acte isolé suffit ; pas nécessaire d’avoir la chose en main.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire sans détention",
     question:
         "Vrai/Faux : le recel par entremise nécessite l’appréhension matérielle de la chose.",
@@ -2565,7 +2565,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le recel par entremise ne suppose pas l’appréhension matérielle directe.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage (exemples)",
     question: "Est un exemple de recel d’usage :",
     options: [
@@ -2579,7 +2579,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite le profit du train de vie (Cass. crim., 09 mai 1974) comme recel d’usage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet très large",
     question: "L’objet du recel peut être :",
     options: [
@@ -2593,7 +2593,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours élargit l’objet : toute chose “matière à vol” et au-delà (énergie, secrets…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Subrogation",
     question:
         "Vrai/Faux : le recel peut porter sur le “produit” de la chose via subrogation (achat/investissement).",
@@ -2603,7 +2603,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : recel possible quand les fonds recelés servent à acheter un bien ou investir (subrogation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Abrogation infraction d’origine",
     question:
         "Si l’incrimination de l’infraction d’origine est abrogée, le recel :",
@@ -2617,7 +2617,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite l’exemple de banqueroute simple abrogée : pas d’infraction originaire → pas de recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur d’origine inconnu",
     question:
         "Vrai/Faux : le recel peut être constitué même si l’auteur de l’infraction d’origine est inconnu.",
@@ -2627,7 +2627,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : recel constitué même si l’auteur est demeuré inconnu ou si les circonstances exactes ne sont pas établies.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Relaxé/amnistie",
     question:
         "Si l’auteur de l’infraction d’origine est relaxé pour une raison objective supprimant l’infraction, le recel :",
@@ -2642,7 +2642,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : si l’infraction d’origine disparaît juridiquement (fait justificatif/amnistie réelle), le recel ne peut tenir.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Obstacles procéduraux",
     question:
         "Le receleur peut être condamné même si l’auteur de l’infraction d’origine échappe aux poursuites pour :",
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours distingue raisons procédurales (recel possible) vs raison objective supprimant l’infraction (recel non).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Peines simples",
     question: "Peines du recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 750 000 €"],
@@ -2665,7 +2665,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-1 : 5 ans d’emprisonnement et 375 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Aggravations",
     question: "Le recel est aggravé (321-2) lorsqu’il est commis :",
     options: [
@@ -2679,7 +2679,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-2 : habituelle ou avec facilités pro ; et bande organisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Peines aggravées",
     question: "Peines du recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 500 000 €"],
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-2 : 10 ans d’emprisonnement et 750 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-3) — Amende au-delà",
     question:
         "Vrai/Faux : l’amende 321-1/321-2 peut être portée jusqu’à la moitié de la valeur des biens recelés.",
@@ -2697,7 +2697,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-3 : amendes prévues par 321-1 et 321-2 peuvent être élevées jusqu’à la moitié de la valeur des biens recelés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-4) — Peines de l’infraction d’origine",
     question:
         "321-4 prévoit que si la peine de l’infraction d’origine est supérieure à celle du recel :",
@@ -2712,7 +2712,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-4 : peines attachées à l’infraction d’origine si plus sévères, et peines des seules circonstances aggravantes dont le receleur a eu connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (tentative) — Règles",
     question: "Tentative de recel :",
     options: [
@@ -2726,7 +2726,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours : tentative recel simple non prévue ; tentative de recel criminel toujours punissable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (complicité) — Règles",
     question: "Complicité en matière de recel :",
     options: ["Oui (121-7)", "Non", "Uniquement si bande organisée"],
@@ -2735,7 +2735,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "La complicité est applicable au recel conformément à l’article 121-7 (aide/assistance, provocation, instructions).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Recel vs non-justification",
     question:
         "Scénario : une personne a des comptes alimentés en espèces, fréquente habituellement des auteurs de délits ≥ 5 ans, mais aucun bien précis “recelé” n’est identifié. Qualification la plus adaptée :",
@@ -2749,7 +2749,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-6 permet d’inférer le lien train de vie/relations habituelles sans identifier une “chose” précise recelée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Recel d’usage",
     question:
         "Un passager monte dans une voiture qu’il sait volée. Qualification :",
@@ -2763,7 +2763,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite le passager d’un véhicule d’origine frauduleuse comme receleur (recel d’usage).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Intermédiaire",
     question:
         "Une personne négocie la vente de titres volés sans jamais les toucher. Qualification :",
@@ -2777,7 +2777,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le recel par entremise ne suppose pas la détention matérielle ; intervenir dans la négociation peut suffire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-1)",
     question:
         "Un garagiste met à disposition un local pour stocker des objets volés, en connaissance de cause. Qualification ?",
@@ -2791,7 +2791,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "La mise à disposition d’un local pour entreposer des objets volés est citée comme recel (dissimulation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-2)",
     question:
         "Un professionnel de l’occasion omet volontairement d’inscrire des bijoux volés au registre de police. Orientation la plus pertinente :",
@@ -2805,7 +2805,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "321-2 : aggravation si recel commis en utilisant les facilités d’une activité professionnelle (indice : registre de police).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Article recel simple :",
     options: ["321-1 CP", "321-2 CP", "321-6 CP"],
@@ -2813,7 +2813,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le recel simple est réprimé par 321-1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Article recel aggravé (habitude/pro/bande organisée) :",
     options: ["321-2 CP", "321-4 CP", "321-3 CP"],
@@ -2822,7 +2822,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Les aggravations “habituelle/pro/bande organisée” relèvent de 321-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Non-justification",
     question: "Article non-justification de ressources :",
     options: ["321-6 CP", "321-1 CP", "434-6 CP"],
@@ -2830,7 +2830,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "La non-justification de ressources est visée par 321-6 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Non-justification",
     question: "Peine 321-6-1 al.2 :",
     options: ["7 ans + 200 000 €", "10 ans + 300 000 €", "5 ans + 150 000 €"],
@@ -2838,7 +2838,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Aggravation al.2 : 7 ans et 200 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Non-justification",
     question: "Tentative non-justification de ressources :",
     options: ["Non", "Oui", "Uniquement al.2"],
@@ -2846,7 +2846,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Le cours : tentative NON pour 321-6/321-6-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Tentative recel simple :",
     options: ["Non", "Oui", "Seulement si bande organisée"],
@@ -2854,7 +2854,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "Tentative recel simple non prévue, donc non punissable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Peines recel simple :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 1 000 000 €"],
@@ -2862,7 +2862,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-1 : 5 ans et 375 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Peines recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 500 000 €"],
@@ -2870,7 +2870,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
     explanation: "321-2 : 10 ans et 750 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : le recel peut porter sur des services (repas, distractions) payés avec des fonds détournés.",
@@ -2880,7 +2880,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le cours cite des repas/distractions financés par chèques issus d’un abus de confiance comme recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : l’innocence d’un intermédiaire exclut automatiquement la responsabilité du receleur final.",
@@ -2890,7 +2890,7 @@ final List<QuizQuestion> questionRecelNonJustification = [
         "Le receleur est responsable s’il connaît l’origine frauduleuse, même via un intermédiaire de bonne foi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Non-justification",
     question:
         "Vrai/Faux : 321-6 peut viser des relations habituelles avec des victimes d’infractions ≥ 5 ans.",
@@ -3257,7 +3257,7 @@ class _QuizRecelNonJustificationState extends State<QuizRecelNonJustification>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3460,7 +3460,7 @@ class _QuizRecelNonJustificationState extends State<QuizRecelNonJustification>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3643,7 +3643,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4176,10 +4175,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4550,7 +4550,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4591,9 +4591,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

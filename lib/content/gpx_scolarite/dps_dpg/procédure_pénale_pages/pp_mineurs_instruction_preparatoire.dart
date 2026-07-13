@@ -216,13 +216,13 @@ class PPMineursInstructionPreparatoirePage extends StatelessWidget {
                   const _SubTitle(
                     '2.2.1.4 — Les mesures prises par le juge d’instruction',
                   ),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text: 'Lorsqu’il est saisi, le juge d’instruction :',
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _IntroBullet(
+                  const _IntroBullet(
                     text:
                         'doit ordonner une mesure judiciaire d’investigation éducative (M.J.I.E.), en application de ',
                   ),
@@ -236,7 +236,7 @@ class PPMineursInstructionPreparatoirePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _IntroBullet(
+                  const _IntroBullet(
                     text:
                         'peut ordonner une mesure éducative judiciaire provisoire (M.E.J.P.) (',
                   ),
@@ -563,32 +563,32 @@ class PPMineursInstructionPreparatoirePage extends StatelessWidget {
                     ? const Color(0xFF64B5F6)
                     : const Color(0xFF1565C0),
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-                children: [
-                  const _Paragraph(
+                children: const [
+                  _Paragraph(
                     'Lorsque l’instruction est terminée, le juge d’instruction statue par ordonnance en fonction de la qualification des faits et de l’âge du mineur.',
                   ),
-                  const SizedBox(height: 8),
-                  const _IntroBullet(
+                  SizedBox(height: 8),
+                  _IntroBullet(
                     text:
                         'ordonnance de non-lieu, lorsque les charges sont insuffisantes ou que l’infraction n’est pas caractérisée ;',
                   ),
-                  const _IntroBullet(
+                  _IntroBullet(
                     text:
                         'ordonnance de renvoi devant le tribunal de police si le fait constitue une contravention des quatre premières classes ;',
                   ),
-                  const _IntroBullet(
+                  _IntroBullet(
                     text:
                         'ordonnance de renvoi devant le juge des enfants, en cas de délit ou de contravention de 5ᵉ classe reprochés à un mineur âgé de moins de 13 ans ;',
                   ),
-                  const _IntroBullet(
+                  _IntroBullet(
                     text:
                         'ordonnance de renvoi devant le tribunal pour enfants, en cas de délit ou de contravention de 5ᵉ classe reprochés à un mineur âgé d’au moins 13 ans, ou en cas de crime reproché à un mineur de moins de 16 ans ;',
                   ),
-                  const _IntroBullet(
+                  _IntroBullet(
                     text:
                         'ordonnance de mise en accusation devant la cour d’assises des mineurs, en cas de crime reproché à un mineur âgé d’au moins 16 ans ;',
                   ),
-                  const _IntroBullet(
+                  _IntroBullet(
                     text:
                         'ordonnance de mise en accusation devant la cour d’assises des mineurs également en cas de connexité ou d’indivisibilité avec un crime reproché à un mineur d’au moins 16 ans, pour les crimes commis avant qu’il n’ait atteint cet âge, ou pour les crimes commis à compter de sa majorité.',
                   ),
@@ -630,10 +630,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -698,7 +698,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -741,7 +741,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -803,7 +803,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -814,10 +814,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -829,13 +828,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -848,13 +846,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

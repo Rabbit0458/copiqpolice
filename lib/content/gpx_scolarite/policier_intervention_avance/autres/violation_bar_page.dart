@@ -98,49 +98,49 @@ class ViolationBarPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Loi du 28 décembre 2019",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " visant à agir contre les violences au sein de la famille.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Décret du 23 septembre 2020",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " relatif à la mise en œuvre d’un dispositif électronique mobile anti-rapprochement.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette mesure peut être ordonnée dans le cadre d’une procédure ",
                   ),
                   TextSpan(
                     text: "pénale ou civile",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -254,7 +254,7 @@ class ViolationBarPage extends StatelessWidget {
               SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Une enquête judiciaire est ouverte après l’intervention des forces de l’ordre.",
                   ),
@@ -271,38 +271,38 @@ class ViolationBarPage extends StatelessWidget {
             cardColor: cardObj,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Deux objectifs pour l’équipe intervenante"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Deux objectifs pour l’équipe intervenante"),
+              _BulletPoint(
                 text:
                     "Mission prioritaire : mise à l’abri de la personne à protéger.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Mission secondaire : interpellation du porteur du BAR.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "COERCITION",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "La coercition est possible dans le cadre de la ",
                   ),
                   TextSpan(
                     text:
                         "violation de la mesure d’interdiction de se rapprocher",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " de la personne protégée."),
+                  TextSpan(text: " de la personne protégée."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "À COMPLÉTER",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si tu me donnes l’article exact (CP/CPP/CSI) qui réprime la violation du BAR, "
                         "je le mets ici en rouge, en tête de section, comme demandé.",
@@ -345,10 +345,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -413,7 +413,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -456,7 +456,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -518,7 +518,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -550,7 +550,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -563,7 +563,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -112,77 +112,77 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
             cardColor: cardOrdinaire,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Présence de personnes extérieures"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Présence de personnes extérieures"),
+              _Paragraph(
                 "Toute personne extérieure présente dans les locaux doit faire l’objet d’une attention particulière "
                 "(risque de vol, dégradations, intrusion, évasion, agression). "
                 "Dans la mesure du possible, les déplacements s’effectuent avec un accompagnement du personnel.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text: "Identifier et surveiller : qui, pourquoi, où, avec qui.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Limiter l’accès : zones strictement nécessaires, circulation encadrée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Prévenir les risques : ne pas laisser une personne seule dans des zones sensibles.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Voies de passage (cours, escaliers, circulations)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les voies de passage doivent être surveillées : elles peuvent servir de lieu de dépôt d’objets "
                 "(colis, sac oublié…), ou de point de vulnérabilité lors des mouvements de personnes.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Objet suspect",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En cas de découverte d’un objet suspect : ne pas toucher. Mettre en place un périmètre de sécurité et aviser immédiatement l’autorité hiérarchique.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Transferts / escortes (détenus, GAV)"),
-              const _Paragraph(
+              _SubTitle("C) Transferts / escortes (détenus, GAV)"),
+              _Paragraph(
                 "Les circulations sont particulièrement sensibles lors des transferts : risque d’évasion, de résistance active, "
                 "ou d’agression contre le personnel.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Surveiller les couloirs/escaliers en amont et pendant les mouvements.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Éviter les croisements inutiles (public / mis en cause / personnels).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Anticiper : accès dégagés, portes contrôlées, points de rupture identifiés.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Abords immédiats des locaux"),
-              const _Paragraph(
+              _SubTitle("D) Abords immédiats des locaux"),
+              _Paragraph(
                 "Les abords doivent être surveillés afin de déceler tout stationnement dangereux, repérage, "
                 "ou toute dégradation/inscription portant atteinte à l’autorité de l’État.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Surveiller les stationnements anormaux (durée, comportement, visibilité sur accès).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Signaler immédiatement toute dégradation ou inscription.",
               ),
@@ -197,50 +197,50 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
             cardColor: cardAggression,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Un plan de protection à caractère confidentiel doit être prévu pour protéger les locaux contre une agression extérieure. "
                 "Il prend la forme d’un dossier regroupant les consignes, connu et consultable par les personnels concernés.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Contenu minimal du plan (dossier)"),
-              const _BulletPoint(text: "Gardes statiques."),
-              const _BulletPoint(text: "Plantons."),
-              const _BulletPoint(text: "Patrouilles."),
-              const _BulletPoint(text: "Signaux conventionnels d’alerte."),
-              const _BulletPoint(text: "Conduite à tenir en cas d’agression."),
-              const _BulletPoint(
+              _SubTitle("Contenu minimal du plan (dossier)"),
+              _BulletPoint(text: "Gardes statiques."),
+              _BulletPoint(text: "Plantons."),
+              _BulletPoint(text: "Patrouilles."),
+              _BulletPoint(text: "Signaux conventionnels d’alerte."),
+              _BulletPoint(text: "Conduite à tenir en cas d’agression."),
+              _BulletPoint(
                 text: "Conduite à tenir en cas de tentative d’attentat.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Règles relatives à l’usage des armes (cadre interne).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Vigilance renforcée",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les structures décentralisées (postes de police, antennes…), fermées au public la nuit, week-ends et jours fériés, "
                         "doivent faire l’objet d’une attention particulière en raison de leur vulnérabilité.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Diffusion & accessibilité"),
-              const _BulletPoint(
+              _SubTitle("Diffusion & accessibilité"),
+              _BulletPoint(
                 text:
                     "Les consignes sont communiquées à l’ensemble du personnel.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Elles doivent pouvoir être consultées à tout moment.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le plan est établi par chaque chef de circonscription et peut intégrer les mesures prévues dans le cadre de la lutte contre l’incendie.",
               ),
             ],
@@ -254,33 +254,33 @@ class ProtectionLocauxPolicePage extends StatelessWidget {
             cardColor: cardIncendie,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Un plan de protection contre l’incendie doit également être prévu. "
                 "Il s’agit d’un dossier diffusé à l’ensemble du personnel concerné, avec des consignes opérationnelles claires.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Le dossier comprend"),
-              const _BulletPoint(
+              _SubTitle("Le dossier comprend"),
+              _BulletPoint(
                 text:
                     "Un plan des lieux (implantation des bouches d’incendie à l’extérieur).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Localisation des lances à incendie et des extincteurs à l’intérieur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Consignes d’alerte : procédure interne + appel aux sapeurs-pompiers.",
               ),
-              const _BulletPoint(text: "Ordre prioritaire d’évacuation."),
-              const SizedBox(height: 12),
+              _BulletPoint(text: "Ordre prioritaire d’évacuation."),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Affichage",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les consignes (alerte, appel, évacuation) doivent être affichées à proximité de chaque poste de matériel de lutte contre le feu.",
                   ),
@@ -354,10 +354,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -422,7 +422,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -465,7 +465,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -527,7 +527,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -559,7 +559,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -572,7 +572,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -72,9 +72,9 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La mesure d’assignation à résidence avec surveillance électronique est ordonnée pour une durée fixée par le juge, '
                       'dans la limite maximale de six mois. Elle peut être renouvelée par périodes successives de six mois après débat contradictoire. '
@@ -82,23 +82,23 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’Article 142-7 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     'Durée initiale : au plus six mois, la durée exacte étant déterminée par le juge ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Renouvellement : par tranches de six mois, à l’issue d’un débat contradictoire impliquant la personne mise en examen et le ministère public ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'Durée maximale : deux ans, tous renouvellements compris.',
               ),
@@ -112,27 +112,27 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Le respect strict des obligations liées à l’assignation à résidence avec surveillance électronique est essentiel. '
                 'Tout manquement peut entraîner un durcissement immédiat de la mesure.',
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 'Si l’intéressé ne respecte pas les conditions de l’assignation (horaires, lieu d’assignation, obligations associées, etc.) :',
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     'un mandat d’arrêt ou un mandat d’amener peut être délivré à son encontre ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'la personne peut être placée en détention provisoire si les conditions légales sont réunies ;',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Dans cette hypothèse, le juge des libertés et de la détention, s’il estime que la détention provisoire n’est finalement pas justifiée, '
                       'peut décider d’aménager la mesure en modifiant les obligations de l’assignation à résidence avec surveillance électronique. '
@@ -140,15 +140,15 @@ class PpBraceletDeroulementMesurePage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: 'l’Article 142-8 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -195,10 +195,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -263,7 +263,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -306,7 +306,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -368,7 +368,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -379,10 +379,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -394,13 +393,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -413,13 +411,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

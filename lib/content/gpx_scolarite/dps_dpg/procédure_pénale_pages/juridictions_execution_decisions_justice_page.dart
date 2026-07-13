@@ -56,7 +56,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     fontWeight: FontWeight.w600,
                     color: isDark
                         ? Colors.white60
-                        : const Color(0xFF424242).withOpacity(.85),
+                        : const Color(0xFF424242).withValues(alpha: .85),
                   ),
                   textAlign: TextAlign.center,
                 ),
@@ -75,8 +75,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
                 children: [
                   const _SubTitle('Introduction'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "La loi n° 2019-222 du 23 mars 2019 de programmation 2018-2022 "
                           "et de réforme pour la justice a refondé le droit de la peine, "
@@ -86,8 +86,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "La loi n° 2012-409 du 27 mars 2012 relative à l'exécution des "
                           "peines a apporté plusieurs dispositions de procédure pénale "
@@ -97,8 +97,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "La loi portant adaptation de la justice aux évolutions de la "
                           "criminalité du 9 mars 2004 a apporté de nouvelles modifications "
@@ -110,8 +110,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 10),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Selon les termes de la loi, le procureur de la République "
                           "poursuit l'exécution des peines privatives de liberté et de "
@@ -133,8 +133,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Pour les peines privatives de liberté, l'individualisation de la "
                           "peine doit permettre le retour progressif du condamné à la "
@@ -143,8 +143,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Pour les peines pécuniaires, le législateur a prévu le système "
                           "de la contrainte judiciaire afin de garantir l'exécution des "
@@ -168,8 +168,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                 titleColor: isDark ? Colors.white : const Color(0xFF1A237E),
                 children: [
                   const _SubTitle('1.1 - Les parties intervenantes'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "L’Article 707-1 alinéa 1 du Code de procédure pénale dispose : "
                           "« Le ministère public et les parties poursuivent l'exécution de "
@@ -211,8 +211,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                         "pécuniaire prononcées suite à des infractions douanières.",
                   ),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Elles disposent notamment d’un droit de transaction qu’elles "
                           "peuvent exercer avant ou après jugement.",
@@ -234,7 +234,7 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([const TextSpan(text: "Il : ")]),
+                  const _Paragraph.rich([TextSpan(text: "Il : ")]),
                   const SizedBox(height: 4),
                   const _BulletPoint(
                     text:
@@ -274,8 +274,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     const TextSpan(text: ")."),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "L’Article 709 du Code de procédure pénale prévoit que le "
                           "procureur de la République et le procureur général peuvent "
@@ -444,8 +444,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     '1.4.1 - Peines applicables aux personnes physiques',
                   ),
                   const _SubTitle('1.4.1.1 - Les amendes'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Les condamnations pécuniaires (amendes pénales, civiles ou "
                           "administratives, certaines condamnations fiscales, "
@@ -455,8 +455,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Le recouvrement des amendes est assuré par le comptable public "
                           "compétent au nom du procureur de la République. Les extraits de "
@@ -478,8 +478,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                   ]),
                   const SizedBox(height: 8),
                   const _SubTitle('1.4.1.2 - Les jours-amende'),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Les jours-amende sont une peine pécuniaire particulière. "
                           "L’intéressé s’acquitte d’une somme journalière ; à défaut de "
@@ -543,8 +543,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                   const _SubTitle(
                     '1.4.2 - Peines applicables aux personnes morales',
                   ),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Les personnes morales peuvent être condamnées à des peines "
                           "d’amende et à diverses peines complémentaires. Le recouvrement "
@@ -717,8 +717,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                 accent: const Color(0xFF1A237E),
                 titleColor: isDark ? Colors.white : const Color(0xFF1A237E),
                 children: [
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "La loi n° 2000-516 du 15 juin 2000 a prévu la "
                           "juridictionnalisation des décisions du juge de l'application "
@@ -730,8 +730,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "La loi n° 2004-204 du 9 mars 2004 a clarifié les règles "
                           "relatives à l’application des peines et renforcé la "
@@ -757,8 +757,8 @@ class JuridictionsExecutionDecisionsJusticePage extends StatelessWidget {
                     ),
                   ]),
                   const SizedBox(height: 6),
-                  _Paragraph.rich([
-                    const TextSpan(
+                  const _Paragraph.rich([
+                    TextSpan(
                       text:
                           "Le juge de l’application des peines (JAP) fixe les principales "
                           "modalités d’exécution des peines privatives ou restrictives de "
@@ -969,10 +969,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1037,7 +1037,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1080,7 +1080,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1139,7 +1139,7 @@ class _BulletPoint extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 4),
@@ -1190,10 +1190,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -1205,13 +1204,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1224,13 +1222,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -1269,7 +1263,7 @@ class _BulletPointRich extends StatelessWidget {
                   height: 1.35,
                   color: isDark
                       ? Colors.white70
-                      : const Color(0xFF1F1F1F).withOpacity(.92),
+                      : const Color(0xFF1F1F1F).withValues(alpha: .92),
                 ),
                 children: spans,
               ),

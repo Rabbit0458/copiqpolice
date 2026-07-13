@@ -27,14 +27,14 @@ class _ViolIncesteAgressionsAvertissementPageState
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     final Color cardBg = isDark
         ? const Color(0xFF2E2E2E)
         : const Color(0xFFF7F7F9);
     final Color border = isDark
-        ? Colors.white.withOpacity(.08)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .08)
+        : Colors.black.withValues(alpha: .08);
 
     final Color warning = isDark
         ? const Color(0xFFFFCA28)
@@ -96,8 +96,8 @@ class _ViolIncesteAgressionsAvertissementPageState
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                          Colors.black.withOpacity(.20),
-                          Colors.black.withOpacity(.72),
+                          Colors.black.withValues(alpha: .20),
+                          Colors.black.withValues(alpha: .72),
                         ],
                       ),
                     ),
@@ -113,10 +113,10 @@ class _ViolIncesteAgressionsAvertissementPageState
                             vertical: 6,
                           ),
                           decoration: BoxDecoration(
-                            color: Colors.white.withOpacity(0.14),
+                            color: Colors.white.withValues(alpha: 0.14),
                             borderRadius: BorderRadius.circular(999),
                             border: Border.all(
-                              color: Colors.white.withOpacity(0.18),
+                              color: Colors.white.withValues(alpha: 0.18),
                             ),
                           ),
                           child: Row(
@@ -161,7 +161,7 @@ class _ViolIncesteAgressionsAvertissementPageState
                             fontWeight: FontWeight.w500,
                             fontSize: 13.5,
                             height: 1.3,
-                            color: Colors.white.withOpacity(.92),
+                            color: Colors.white.withValues(alpha: .92),
                           ),
                         ),
                       ],
@@ -182,7 +182,7 @@ class _ViolIncesteAgressionsAvertissementPageState
                 border: Border.all(color: border),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.black.withOpacity(isDark ? .20 : .08),
+                    color: Colors.black.withValues(alpha: isDark ? .20 : .08),
                     blurRadius: 18,
                     offset: const Offset(0, 10),
                   ),
@@ -208,7 +208,7 @@ class _ViolIncesteAgressionsAvertissementPageState
                       vertical: 10,
                     ),
                     decoration: BoxDecoration(
-                      color: warningBg.withOpacity(isDark ? .75 : 1),
+                      color: warningBg.withValues(alpha: isDark ? .75 : 1),
                       borderRadius: BorderRadius.circular(14),
                       border: Border(
                         left: BorderSide(color: warning, width: 3),
@@ -284,7 +284,7 @@ class _ViolIncesteAgressionsAvertissementPageState
                         borderRadius: BorderRadius.circular(14),
                         border: Border.all(color: border),
                         color: (isDark ? Colors.white : Colors.black)
-                            .withOpacity(0.03),
+                            .withValues(alpha: 0.03),
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -358,10 +358,10 @@ class _ViolIncesteAgressionsAvertissementPageState
                             foregroundColor: Colors.white,
                             disabledBackgroundColor:
                                 (isDark ? Colors.white : Colors.black)
-                                    .withOpacity(.12),
+                                    .withValues(alpha: .12),
                             disabledForegroundColor:
                                 (isDark ? Colors.white : Colors.black)
-                                    .withOpacity(.35),
+                                    .withValues(alpha: .35),
                             elevation: 0,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(14),

@@ -39,14 +39,14 @@ class LibertePressePage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF1976D2)
         : const Color(0xFF1565C0);
     final Color referenceColor = isDark
         ? const Color(0xFF90CAF9)
         : const Color(0xFF0D47A1);
-    final Color dangerColor = const Color(0xFFFF3B30);
+    const Color dangerColor = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: background,
@@ -101,10 +101,10 @@ class LibertePressePage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 10),
-          _NotaBox(
+          const _NotaBox(
             title: 'Repères doctrinaux',
             bodySpans: [
-              const TextSpan(
+              TextSpan(
                 text:
                     'Alexis de Tocqueville souligne que la souveraineté du peuple et la liberté de la presse '
                     'sont deux réalités inséparables : sans l’une, l’autre ne peut se maintenir. '
@@ -118,10 +118,10 @@ class LibertePressePage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 1 — ÉTAPES FONDAMENTALES
           // =====================================================
-          _NotaBox(
+          const _NotaBox(
             title:
                 'Chapitre 1 — Les étapes fondamentales de la liberté de la presse',
-            bodySpans: const [
+            bodySpans: [
               TextSpan(
                 text:
                     'Le régime de la presse a connu de très fortes variations : périodes libérales, '
@@ -212,7 +212,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Au total, avant 1881, le régime est marqué par un contrôle très fort de la presse : '
                 'autorisations préalables, censure, cautionnement financier, saisies administratives. '
                 'La nécessité d’une loi libérale, garantissant à la fois la liberté et la responsabilité, '
@@ -232,7 +232,7 @@ class LibertePressePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La loi du 29 juillet 1881 marque la grande rupture. Elle met fin à l’arbitraire '
                 'gouvernemental et organise un régime libéral : la liberté est le principe, la répression '
                 'n’intervient qu’a posteriori, en cas d’abus.',
@@ -276,7 +276,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 'Aujourd’hui, le régime de la liberté de la presse repose donc sur quatre piliers :',
               ),
               const SizedBox(height: 4),
@@ -300,9 +300,9 @@ class LibertePressePage extends StatelessWidget {
           // =====================================================
           // CHAPITRE 2 — CONTENU DE LA LIBERTÉ DE LA PRESSE
           // =====================================================
-          _NotaBox(
+          const _NotaBox(
             title: 'Chapitre 2 — Le contenu de la liberté de la presse',
-            bodySpans: const [
+            bodySpans: [
               TextSpan(
                 text:
                     'La liberté de la presse peut être menacée par plusieurs facteurs : un régime '
@@ -332,7 +332,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’article 5 de la loi de 1881 prévoit que « tout journal ou écrit périodique peut être publié '
                 'sans autorisation préalable, ni dépôt de cautionnement ». Il s’agit d’un régime de simple '
                 'déclaration, beaucoup plus libéral que celui de l’audiovisuel ou du cinéma.',
@@ -356,7 +356,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’objectif est de favoriser la transparence des organes de presse et de permettre au lecteur '
                 'de connaître les véritables responsables. L’ordonnance de 1944, puis la loi du 23 octobre '
                 '1984 et les lois des 1ᵉʳ août et 27 novembre 1986, imposent des règles de publicité sur la '
@@ -397,7 +397,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Le pluralisme consiste à éviter les concentrations excessives qui mettraient en péril la diversité '
                 'des opinions. La décision du Conseil constitutionnel du 29 juillet 1986 fait du pluralisme des '
                 'quotidiens d’information politique et générale un objectif de valeur constitutionnelle. La loi du '
@@ -414,7 +414,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’État soutient la presse écrite par différents mécanismes : aides fiscales (TVA réduite, exonérations), '
                 'tarifs postaux préférentiels, aides directes aux titres les plus fragiles. L’objectif affiché est de '
                 'favoriser le pluralisme, mais ces aides alimentent aussi le débat sur l’indépendance réelle de la presse '
@@ -451,7 +451,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'L’article 2 de la loi du 29 juillet 1881, complété par le Code du travail, définit le journaliste '
                 'professionnel comme toute personne qui exerce, à titre principal et rétribué, une activité de '
                 'rédaction ou de diffusion d’informations pour un ou plusieurs organes de presse ou de communication '
@@ -468,7 +468,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'La carte de presse est délivrée par une Commission paritaire composée de journalistes et '
                 'd’éditeurs. Elle atteste de la qualité de journaliste professionnel et ouvre certains droits '
                 '(facilités de circulation, accès à certains lieux, etc.). Le refus ou le retrait de la carte '
@@ -484,7 +484,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'La clause de conscience permet au journaliste de rompre son contrat de travail avec indemnités '
                 'majorées lorsqu’un changement important dans l’orientation du journal porte atteinte à son honneur '
                 'ou à ses intérêts moraux (cession du journal, cessation de la publication, modification profonde de la '
@@ -509,7 +509,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Le journaliste se veut indépendant dans ses jugements, mais il reste salarié. Son contrat de travail '
                 'est encadré par le Code du travail et par les conventions collectives. Pour protéger au mieux cette '
                 'indépendance, des « sociétés de journalistes » se sont créées dans certains organes de presse, afin '
@@ -525,7 +525,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Le journaliste doit vérifier ses informations, refuser les méthodes déloyales (intrusion, vol de documents, '
                 'enregistrements clandestins…) et respecter le secret des sources recueillies dans l’exercice de sa fonction. '
                 'Le Code de procédure pénale et le Code pénal organisent également un secret professionnel renforcé '
@@ -577,7 +577,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Les perquisitions dans les locaux d’une entreprise de presse, d’une agence ou au domicile d’un journaliste '
                 'sont encadrées : elles doivent être décidées et dirigées par un magistrat, qui doit préciser l’infraction '
                 'visée et les documents recherchés. Toute perquisition irrégulière est frappée de nullité, de même que les '
@@ -593,7 +593,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Lorsqu’un journaliste est entendu comme témoin sur des informations recueillies dans le cadre de son activité, '
                 'il bénéficie d’une protection renforcée : il peut refuser de révéler l’identité de la source. Les décisions de '
                 'la Cour de cassation et de la Cour européenne des droits de l’Homme sont venues rappeler que la protection '
@@ -614,7 +614,7 @@ class LibertePressePage extends StatelessWidget {
             titleColor: titleColor,
             textColor: textColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 'La liberté de la presse ne consiste pas à pouvoir dire ou écrire n’importe quoi. '
                 'La société et les individus doivent être protégés contre certains abus. La loi de '
                 '1881 et les textes ultérieurs définissent donc un ensemble d’infractions commises par '
@@ -725,7 +725,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Sont notamment réprimés : le non-respect des décisions de justice, la pression exercée sur les magistrats, '
                 'l’injure ou la diffamation envers le Président de la République ou les membres du Gouvernement, '
                 'dans les conditions prévues par le Code pénal et la loi de 1881.',
@@ -793,7 +793,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph(
+              const _Paragraph(
                 'Certaines publications sont plus strictement encadrées, notamment celles destinées à la jeunesse : '
                 'contenu à caractère violent, pornographique ou discriminatoire. Les tribunaux peuvent ordonner la saisie '
                 'ou la destruction des supports. En période d’état de siège ou d’état d’urgence, des mesures de censure '
@@ -809,8 +809,8 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 4),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       'Les perquisitions dans les locaux de presse ou chez les journalistes sont particulièrement sensibles. '
                       'Elles ne peuvent être décidées que par un magistrat et doivent respecter le principe de proportionnalité. ',
@@ -825,7 +825,7 @@ class LibertePressePage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _ExempleBox(
+              const _ExempleBox(
                 title: 'Réflexe pratique pour le policier',
                 bodySpans: [
                   TextSpan(
@@ -876,10 +876,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -922,7 +922,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -956,7 +956,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -965,7 +965,7 @@ class _BulletPoint extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.95);
+        : const Color(0xFF1F1F1F).withValues(alpha: .95);
 
     return Padding(
       padding: const EdgeInsets.only(left: 4, bottom: 6),
@@ -1011,7 +1011,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1036,7 +1036,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -1071,7 +1071,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1084,7 +1084,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

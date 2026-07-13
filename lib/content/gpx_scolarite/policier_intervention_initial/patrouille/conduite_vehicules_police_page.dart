@@ -90,68 +90,68 @@ class ConduiteVehiculesPolicePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Souvent dans le cadre de l’urgence, les policiers ont un souci légitime d’intervenir vite. "
                 "Le Code de la route prévoit un droit de priorité spécial pour les véhicules de police, mais "
                 "ce droit est strictement encadré, limité et toujours soumis à la prudence.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 415-12 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : tout conducteur doit céder le passage aux véhicules d’intérêt général prioritaires annonçant leur approche par les avertisseurs spéciaux.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 311-1 (6.5) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : liste des véhicules prioritaires, incluant les véhicules de police.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Avertisseurs spéciaux : "),
+                TextSpan(text: "Avertisseurs spéciaux : "),
                 TextSpan(
                   text: "articles R. 313-27 et R. 313-34 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Nota",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Policiers adjoints : la conduite n’est possible que si ",
                   ),
                   TextSpan(
                     text: "l’article 134-1 du R.G.E.P.N.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " est respecté (permis adapté + aptitudes testées par le service d’emploi).",
                   ),
@@ -207,38 +207,38 @@ class ConduiteVehiculesPolicePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Principe : port obligatoire de la ceinture pour tout conducteur ou passager. — ",
                 ),
                 TextSpan(
                   text: "article R. 412-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Exception : l’obligation disparaît en intervention d’urgence. — ",
                 ),
                 TextSpan(
                   text: "article R. 412-1 (I, 3°) du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Recommandation",
                 bodySpans: [
                   TextSpan(
@@ -300,40 +300,40 @@ class ConduiteVehiculesPolicePage extends StatelessWidget {
             cardColor: cardNecessite,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’état de nécessité, défini en droit pénal, peut justifier une infraction au Code de la route : ",
                 ),
                 TextSpan(
                   text: "article 122-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Il entraîne l’irresponsabilité pénale si les conditions sont réunies.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Conditions à réunir"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Conditions à réunir"),
+              _BulletPoint(
                 text:
                     "Danger actuel ou imminent menaçant une personne ou un bien.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Nécessité, pour sauvegarder la personne/le bien, de commettre une infraction.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Proportion entre les moyens employés et la gravité de la menace.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Point de vigilance",
                 bodySpans: [
                   TextSpan(
@@ -342,13 +342,13 @@ class ConduiteVehiculesPolicePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Même si l’état de nécessité exonère pénalement, la responsabilité civile de l’administration "
                 "reste engagée pour les dommages. Sur le plan administratif, une sanction peut aussi être envisagée.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "Règle d’or",
                 bodySpans: [
                   TextSpan(
@@ -393,10 +393,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -461,7 +461,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -504,7 +504,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -566,7 +566,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -598,7 +598,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -611,7 +611,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

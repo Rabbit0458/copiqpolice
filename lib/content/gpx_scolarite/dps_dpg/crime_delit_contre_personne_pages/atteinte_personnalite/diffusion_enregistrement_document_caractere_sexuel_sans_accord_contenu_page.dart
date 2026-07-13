@@ -111,16 +111,16 @@ class DiffusionEnregistrementCaractereSexuelSansAccordPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-2-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la diffusion, sans l’accord de la personne concernée, "
                       "d’un enregistrement ou document portant sur des paroles ou images à caractère sexuel.",
@@ -137,41 +137,41 @@ class DiffusionEnregistrementCaractereSexuelSansAccordPage
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Ces agissements ont été popularisés sous l’appellation « revenge porn » ; "
                 "on parle aussi aujourd’hui de « pornodivulgation ».",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Un enregistrement ou document obtenu avec consentement",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La pornodivulgation consiste à obtenir (avec l’accord du partenaire/ex-partenaire) "
                 "des vidéos, photos, enregistrements, ou échanges de messages (« sexting ») à caractère intime, "
                 "puis à les diffuser sans le consentement de la personne concernée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "À la différence de l’atteinte à la vie privée, la personne est consentante à être filmée, "
                       "photographiée ou enregistrée : ",
                 ),
                 TextSpan(
                   text: "article 226-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "Le support peut être :\n"
                 "• visuel (photo)\n"
                 "• audio (bande son)\n"
@@ -180,88 +180,88 @@ class DiffusionEnregistrementCaractereSexuelSansAccordPage
                 "Peu importe qu’il soit matériel ou totalement numérisé.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un caractère sexuel"),
-              const _Paragraph(
+              _SubTitle("B) Un caractère sexuel"),
+              _Paragraph(
                 "Le caractère sexuel des paroles/images s’apprécie au cas par cas. "
                 "Le Conseil constitutionnel a jugé la notion suffisamment claire et précise, "
                 "et a rappelé qu’il appartient aux juridictions d’en apprécier la réalité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Décision "),
+                  TextSpan(text: "Décision "),
                   TextSpan(
                     text: "n° 2021-933 QPC du 30 septembre 2021",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Une diffusion sans accord"),
-              const _Paragraph(
+              _SubTitle("C) Une diffusion sans accord"),
+              _Paragraph(
                 "L’enregistrement/document est porté à la connaissance du public ou d’un tiers "
                 "sans l’accord de la victime : soit parce qu’elle s’y oppose, soit parce qu’elle n’a pas été consultée.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’accord à être filmé(e) ou photographié(e) ne vaut pas accord à la diffusion. "
                 "Il appartient à l’auteur de prouver qu’il avait reçu un accord en vue de diffuser.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si l’auteur exige des faveurs sexuelles en menaçant de diffuser le contenu intime, "
                         "le harcèlement sexuel est constitué — ",
                   ),
                   TextSpan(
                     text: "article 222-33 II du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ". "),
-                  const TextSpan(
+                  TextSpan(text: ". "),
+                  TextSpan(
                     text:
                         "S’il obtient une signature, un engagement, une renonciation, une révélation de secret, ou la remise de fonds/biens "
                         "par cette menace, le chantage est constitué — ",
                   ),
                   TextSpan(
                     text: "article 312-10 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans la pratique, la preuve de l’absence d’accord repose souvent sur la déclaration de la victime. "
                         "C’est la raison pour laquelle le dépôt de plainte est requis — ",
                   ),
                   TextSpan(
                     text: "article 226-6 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
                 title: "IMPORTANT",
               ),
@@ -305,80 +305,80 @@ class DiffusionEnregistrementCaractereSexuelSansAccordPage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 60 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-2-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité prévue par "),
+                TextSpan(text: "Responsabilité prévue par "),
                 TextSpan(
                   text: "l’article 226-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Tentative : OUI, prévue expressément par ",
                 ),
                 TextSpan(
                   text: "l’article 226-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (tentative du délit prévu à "),
+                TextSpan(text: " (tentative du délit prévu à "),
                 TextSpan(
                   text: "l’article 226-2-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide et assistance, provocation ou instructions données).",
                 ),
@@ -419,10 +419,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -487,7 +487,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -530,7 +530,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -592,7 +592,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -624,7 +624,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -637,7 +637,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

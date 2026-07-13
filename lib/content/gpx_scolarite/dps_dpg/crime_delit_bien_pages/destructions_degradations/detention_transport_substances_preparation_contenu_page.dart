@@ -108,16 +108,16 @@ class DetentionTransportSubstancesPreparationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-11-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la détention ou le transport de substances ou produits incendiaires ou explosifs en vue de la préparation d’infractions dangereuses.",
                 ),
@@ -133,57 +133,57 @@ class DetentionTransportSubstancesPreparationPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les violences urbaines sont souvent marquées par des incendies (bâtiments, véhicules), provoqués "
                 "notamment par des engins explosifs ou incendiaires improvisés (jets d’essence, cocktails Molotov). "
                 "Pour prévenir ces phénomènes, le législateur a créé une infraction spécifique permettant de réprimer "
                 "certains comportements avant que les destructions ne soient commises ou tentées.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("A) La détention ou le transport"),
-              const _Paragraph(
+              _SubTitle("A) La détention ou le transport"),
+              _Paragraph(
                 "L’auteur est trouvé en possession de substances ou produits soit incendiaires, soit explosifs. "
                 "Cette possession peut prendre deux formes : la détention ou le transport.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Détention : avoir à sa disposition ces substances ou produits, sans être nécessairement possesseur ou propriétaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Transport : déplacer ces substances ou produits, notamment sur la voie publique.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les incriminations de détention et de transport offrent une grande souplesse : être trouvé porteur "
                 "de tels produits sur la voie publique peut caractériser à la fois la détention et le transport.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) La nature des substances / produits"),
-              const _Paragraph(
+              _SubTitle("B) La nature des substances / produits"),
+              _Paragraph(
                 "Sont visés :\n"
                 "• les poudres et substances explosives, ainsi que les produits ouvrés comportant des substances explosives (ex. dynamite)\n"
                 "• les explosifs artisanaux (engins explosifs improvisés)\n"
                 "• les produits incendiaires (ex. cocktails Molotov).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 "C) Les éléments destinés à entrer dans la composition d’engins",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "De nombreux éléments peuvent être concernés (liste non exhaustive) : mèche lente, détonateur, "
                 "poudre explosive, bouteille de gaz, etc.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Pluralité exigée : le texte vise des substances, produits ou éléments au pluriel. "
                         "La jurisprudence retient qu’un seul objet n’est pas suffisant.",
@@ -191,19 +191,19 @@ class DetentionTransportSubstancesPreparationPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Jurisprudence : "),
+                  TextSpan(text: "Jurisprudence : "),
                   TextSpan(
                     text: "Cass. crim., n° 23-84.092, 20 mars 2024",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : dès lors que les objets étaient au moins au nombre de deux, mis en œuvre par le feu, "
                         "leur transport/détention s’inscrivait dans la préparation d’infractions aux personnes ou aux biens.",
@@ -211,32 +211,32 @@ class DetentionTransportSubstancesPreparationPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) La préparation caractérisée d’infractions déterminées",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur ne doit pas être passé à l’acte, mais sa volonté doit être caractérisée par un ou plusieurs "
                 "faits matériels. La résolution d’agir est démontrée à partir d’actes préparatoires (ex. transport d’un bidon "
                 "d’essence + bouteilles vides + chiffons usagés permettant la confection de cocktails Molotov).",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Préparation d’une destruction dangereuse pour les personnes : infraction visée à l’article 322-6 du Code pénal (incendie, substance explosive, etc.).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préparation d’atteintes aux personnes : infractions du titre II du livre II du Code pénal (atteintes à la vie, violences…).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "E) L’absence d’utilisation des substances ou produits",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’article 322-11-1 alinéa 1 vise à réprimer la détention ou le transport avant toute utilisation. "
                 "Si l’auteur utilise ou tente d’utiliser les substances/produits, il sera poursuivi sur le fondement "
                 "de l’article 322-6 du Code pénal (ou d’une infraction d’atteintes aux personnes), et non sur 322-11-1.",
@@ -270,16 +270,16 @@ class DetentionTransportSubstancesPreparationPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-11-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : lorsque les faits sont commis en bande organisée.",
                 ),
               ]),
@@ -294,65 +294,65 @@ class DetentionTransportSubstancesPreparationPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-11-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (bande organisée) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (bande organisée) : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 500 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-11-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Peines prévues par "),
+                TextSpan(text: "Peines prévues par "),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI (droit commun). "),
+                TextSpan(text: "Complicité : OUI (droit commun). "),
                 TextSpan(
                   text: "Article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : suppose aide/assistance, provocation ou instructions, et l’intention de s’associer à l’action.",
                 ),
@@ -393,10 +393,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -461,7 +461,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -504,7 +504,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -566,7 +566,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -577,10 +577,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -592,13 +591,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -611,13 +609,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

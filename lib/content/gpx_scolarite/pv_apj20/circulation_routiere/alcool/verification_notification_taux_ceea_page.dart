@@ -118,53 +118,53 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Vérifications après dépistage positif ou refus de dépistage : ",
                 ),
                 TextSpan(
                   text: "article L. 234-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Vérifications directes (sans dépistage préalable) quand le Code de la route le prévoit : ",
                 ),
                 TextSpan(
                   text: "article L. 234-3 alinéa 1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (ex. accident corporel/mortel ou infraction entraînant la suspension du permis).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Contrôles d’alcoolémie préventifs réalisés immédiatement sur les lieux : ",
                 ),
                 TextSpan(
                   text: "articles L. 234-9 et suivants du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -235,75 +235,75 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1 — Lieu de vérification"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1 — Lieu de vérification"),
+              _Paragraph(
                 "Indiquer le lieu exact de réalisation de la vérification par éthylomètre.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2 — Assistants"),
-              const _Paragraph(
+              _SubTitle("2 — Assistants"),
+              _Paragraph(
                 "Mentionner les fonctionnaires qui t’accompagnent pour l’accomplissement de la mission.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3 — Cadre juridique"),
+              _SubTitle("3 — Cadre juridique"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Indiquer pourquoi les vérifications sont réalisées :\n"
                       "• après dépistage positif ou refus de dépistage : ",
                 ),
                 TextSpan(
                   text: "article L. 234-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "\n• ou directement (sans dépistage) selon les cas prévus : ",
                 ),
                 TextSpan(
                   text: "article L. 234-3 alinéa 1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "\n• ou contrôle préventif sur place : "),
+                TextSpan(text: "\n• ou contrôle préventif sur place : "),
                 TextSpan(
                   text: "articles L. 234-9 et suivants du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4 — Éthylomètre (infos obligatoires)"),
-              const _Paragraph(
+              _SubTitle("4 — Éthylomètre (infos obligatoires)"),
+              _Paragraph(
                 "Les informations relatives à l’éthylomètre doivent impérativement apparaître : "
                 "marque, numéro et date d’étalonnage de l’appareil utilisé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5 — 1er contrôle & notification"),
-              const _Paragraph(
+              _SubTitle("5 — 1er contrôle & notification"),
+              _Paragraph(
                 "Constater et notifier :\n"
                 "• le taux affiché par l’appareil\n"
                 "• le taux retenu après soustraction de la marge d’erreur\n"
                 "Ces informations doivent être portées immédiatement à la connaissance de l’intéressé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("6 — 2e contrôle & notification"),
+              _SubTitle("6 — 2e contrôle & notification"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Un second contrôle peut être effectué immédiatement, après vérification du bon fonctionnement :\n"
                       "• à l’initiative de l’agent\n"
@@ -311,49 +311,49 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: "article L. 234-5 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Dès que le bouton MESURE est activé, l’appareil effectue automatiquement un contrôle de bon fonctionnement avant chaque mesure.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Notifier immédiatement (comme au 1er contrôle) : taux affiché + taux retenu après marge d’erreur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("7 — Cadre juridique (suite)"),
-              const _Paragraph(
+              _SubTitle("7 — Cadre juridique (suite)"),
+              _Paragraph(
                 "En fonction des constatations (taux délictuels), agir en flagrant délit et tracer la suite de la procédure.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("8 — Avis O.P.J."),
-              const _Paragraph(
+              _SubTitle("8 — Avis O.P.J."),
+              _Paragraph(
                 "Mentionner les instructions de l’O.P.J. le cas échéant (ex : audition du mis en cause).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("9 — Énonciation terminale (clôture)"),
-              const _Paragraph(
+              _SubTitle("9 — Énonciation terminale (clôture)"),
+              _Paragraph(
                 "La lecture du PV est faite par la personne, sauf impossibilité (ex : ne sait pas lire). "
                 "Dans ce cas, mentionner la lecture faite par l’agent. La personne signe sous l’énonciation terminale après lecture.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("10 — Présentation O.P.J."),
-              const _Paragraph(
+              _SubTitle("10 — Présentation O.P.J."),
+              _Paragraph(
                 "Présenter sans délai la personne à l’O.P.J. afin de respecter les obligations légales "
                 "liées à l’audition libre ou à une éventuelle garde à vue. Mentionner les instructions données.",
               ),
@@ -367,38 +367,38 @@ class VerificationNotificationTauxCeeaPage extends StatelessWidget {
             cardColor: cardNota,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lorsque les mesures à l’éthylomètre établissent l’état alcoolique défini à ",
                 ),
                 TextSpan(
                   text: "l’article L. 234-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ", il est procédé à la rétention du permis : ",
                 ),
                 TextSpan(
                   text: "article L. 224-1 1° du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Un exemplaire de l’avis de rétention est remis au conducteur.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Rappel",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Ne pas oublier : le PV doit contenir les informations techniques de l’éthylomètre (marque, numéro, date d’étalonnage).",
@@ -441,10 +441,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -509,7 +509,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -552,7 +552,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -614,7 +614,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -646,7 +646,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -659,7 +659,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
@@ -711,10 +711,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -820,8 +820,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -889,10 +889,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -959,10 +959,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -1001,9 +1001,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -1038,7 +1038,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

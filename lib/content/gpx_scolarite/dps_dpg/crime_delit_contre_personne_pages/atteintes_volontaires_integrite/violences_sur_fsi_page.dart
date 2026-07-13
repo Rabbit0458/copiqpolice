@@ -93,15 +93,15 @@ class ViolencesSurFsiPage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Constituent des infractions les violences commises dans un cadre professionnel/fonctionnel "
                 "sur certaines catégories de personnes (forces de sécurité intérieure, personnels concourant à leurs missions, "
                 "élus locaux), ainsi que, dans certains cas, sur leurs proches.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Sont visées (en résumé) :"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("Sont visées (en résumé) :"),
+              _IntroBullet(
                 text:
                     "Les forces de sécurité intérieure et assimilés (police, gendarmerie, douanes, pénitentiaire, pompiers, etc.).",
               ),
@@ -110,15 +110,15 @@ class ViolencesSurFsiPage extends StatelessWidget {
                     "Les militaires déployés sur le territoire national dans le cadre des réquisitions prévues à "
                     "l’article L. 1321-1 du code de la défense.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Les élus locaux (et, jusqu’à 6 ans après la fin du mandat, l’ancien titulaire d’un mandat électif public).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Les proches (conjoint, ascendants/descendants, personne vivant habituellement au domicile) lorsque les violences sont commises en raison des fonctions.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Les personnels concourant aux missions (réservistes, contractuels, administratifs, service civique…) agissant sous l’autorité des personnes visées.",
               ),
@@ -133,13 +133,13 @@ class ViolencesSurFsiPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 222-14-5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les violences commises sur ces personnes (et, selon les cas, sur leurs proches).",
                 ),
@@ -155,157 +155,157 @@ class ViolencesSurFsiPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un acte positif"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un acte positif"),
+              _Paragraph(
                 "Les violences supposent une action : elles impliquent un comportement positif. "
                 "La simple abstention ne peut constituer une violence.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) Un contact physique (direct ou indirect)"),
-              const _Paragraph(
+              _SubTitle("1) Un contact physique (direct ou indirect)"),
+              _Paragraph(
                 "Sont compris tous les comportements impliquant un contact physique (coups, gifles, morsures, etc.). "
                 "Le contact peut être indirect : la violence peut être réalisée au moyen d’une arme, d’un objet quelconque, "
                 "ou d’une morsure par un animal excité par l’auteur.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Une atteinte psychique (violences psychologiques)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les violences peuvent être matérialisées par une agression psychique : des agissements de nature à impressionner vivement la victime "
                       "et à lui causer un choc émotif, voire un trouble psychologique ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 18 mars 2008, n° 07-86.075)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Cette solution est codifiée par "),
-                const TextSpan(
+                TextSpan(text: "Cette solution est codifiée par "),
+                TextSpan(
                   text: "l’article 222-14-3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : les violences au sens des articles 222-7 et suivants sont constituées quelle que soit leur nature, "
                       "y compris lorsqu’il s’agit de violences psychologiques.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : individu descendant de sa voiture avec une barre de fer et frappant l’arrière du véhicule de la victime ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 18 mars 2008)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une victime particulière (liste + logique)"),
-              const _Paragraph("Le texte vise une liste exhaustive :"),
-              const SizedBox(height: 8),
+              _SubTitle("B) Une victime particulière (liste + logique)"),
+              _Paragraph("Le texte vise une liste exhaustive :"),
+              SizedBox(height: 8),
 
-              const _SubTitle("1) Membres des forces de sécurité intérieure"),
-              const _BulletPoint(
+              _SubTitle("1) Membres des forces de sécurité intérieure"),
+              _BulletPoint(
                 text: "Militaire de la gendarmerie nationale.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Militaire déployé sur le territoire national dans le cadre des opérations intérieures (ex. Sentinelle).",
               ),
-              const _BulletPoint(text: "Fonctionnaire de la police nationale."),
-              const _BulletPoint(text: "Agent de police municipale."),
-              const _BulletPoint(text: "Garde champêtre."),
-              const _BulletPoint(text: "Agent des douanes."),
-              const _BulletPoint(
+              _BulletPoint(text: "Fonctionnaire de la police nationale."),
+              _BulletPoint(text: "Agent de police municipale."),
+              _BulletPoint(text: "Garde champêtre."),
+              _BulletPoint(text: "Agent des douanes."),
+              _BulletPoint(
                 text: "Sapeur-pompier professionnel ou volontaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Agent de l’administration pénitentiaire.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Élus locaux (et anciens élus récents)"),
-              const _Paragraph(
+              _SubTitle("2) Élus locaux (et anciens élus récents)"),
+              _Paragraph(
                 "Sont également visées les personnes titulaires d’un mandat électif public, "
                 "ou qui l’étaient au cours des six années précédant les faits (députés, sénateurs, maires, présidents d’exécutifs locaux, "
                 "adjoints, conseillers municipaux, etc.).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Leurs proches (si le mobile est lié aux fonctions)",
               ),
-              const _Paragraph("Peuvent être victimes :"),
-              const SizedBox(height: 6),
-              const _BulletPoint(text: "Le conjoint."),
-              const _BulletPoint(
+              _Paragraph("Peuvent être victimes :"),
+              SizedBox(height: 6),
+              _BulletPoint(text: "Le conjoint."),
+              _BulletPoint(
                 text: "Les ascendants ou descendants en ligne directe.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Toute autre personne vivant habituellement au domicile.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Personnels concourant aux missions"),
-              const _Paragraph(
+              _SubTitle("4) Personnels concourant aux missions"),
+              _Paragraph(
                 "Sont visées les personnes affectées dans les services (police/gendarmerie/police municipale/pénitentiaire) "
                 "qui agissent sous l’autorité des personnes mentionnées : réservistes, contractuels, personnels administratifs, "
                 "service civique, etc. (qualité apparente ou connue de l’auteur).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un contexte imposé par le texte"),
-              const _Paragraph(
+              _SubTitle("C) Un contexte imposé par le texte"),
+              _Paragraph(
                 "Les violences doivent être commises :\n"
                 "• soit dans l’exercice des fonctions (victime en service / accomplissant un acte entrant dans ses attributions) ;\n"
                 "• soit du fait des fonctions actuelles ou passées (en raison d’un acte déterminé de la fonction).\n"
                 "La qualité de la victime doit être apparente ou connue de l’auteur.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Pour les proches : les violences doivent être commises en raison des fonctions exercées par la personne visée "
                 "(cela implique que l’auteur connaissait la qualité de ce proche).",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un résultat dommageable"),
-              const _Paragraph(
+              _SubTitle("D) Un résultat dommageable"),
+              _Paragraph(
                 "Les violences supposent une atteinte à l’intégrité physique et/ou psychique. "
                 "La réalité de l’atteinte doit être établie (notamment par certificat médical).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "L’"),
-                const TextSpan(
+                TextSpan(text: "L’"),
+                TextSpan(
                   text: "article 222-14-5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " distingue deux hypothèses selon le préjudice :\n"
                       "• I.T.T. > 8 jours ;\n"
@@ -340,69 +340,69 @@ class ViolencesSurFsiPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le régime d’aggravation varie selon la gravité (I.T.T. ≤ 8 jours / aucune I.T.T. ou I.T.T. > 8 jours).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("A) Si aucune I.T.T. ou I.T.T. ≤ 8 jours"),
+              _SubTitle("A) Si aucune I.T.T. ou I.T.T. ≤ 8 jours"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Le texte renvoie à des circonstances listées aux ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "8° à 15° de l’article 222-12 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Par plusieurs personnes agissant en qualité d’auteur ou de complice.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Avec préméditation ou avec guet-apens.",
               ),
-              const _BulletPoint(text: "Avec usage ou menace d’une arme."),
-              const _BulletPoint(
+              _BulletPoint(text: "Avec usage ou menace d’une arme."),
+              _BulletPoint(
                 text:
                     "Dans un établissement d’enseignement/éducation ou dans des locaux de l’administration (ou aux abords, lors des entrées/sorties du public).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par un majeur agissant avec l’aide ou l’assistance d’un mineur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dans un moyen de transport collectif de voyageurs, ou à l’accès à un tel moyen/lieu.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par une personne en état d’ivresse manifeste ou sous l’emprise manifeste de stupéfiants.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par une personne dissimulant volontairement tout ou partie de son visage pour ne pas être identifiée.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle(
+              SizedBox(height: 10),
+              _SubTitle(
                 "Degrés d’aggravation (I.T.T. ≤ 8 / aucune I.T.T.)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "1er degré : présence d’une de ces circonstances.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "2e degré : présence d’au moins deux de ces circonstances.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Si I.T.T. > 8 jours"),
-              const _Paragraph(
+              _SubTitle("B) Si I.T.T. > 8 jours"),
+              _Paragraph(
                 "Un degré d’aggravation est prévu lorsque les faits sont accompagnés d’une de ces circonstances aggravantes.",
               ),
             ],
@@ -416,116 +416,116 @@ class ViolencesSurFsiPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
 
               // ITT <= 8 / aucune ITT
               _Paragraph.rich([
-                const TextSpan(text: "Aucune I.T.T. ou I.T.T. ≤ 8 jours : "),
-                const TextSpan(
+                TextSpan(text: "Aucune I.T.T. ou I.T.T. ≤ 8 jours : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-14-5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Aggravation (1 circonstance des 8° à 15° de l’art. 222-12) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-14-5 alinéa 4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Aggravation (au moins 2 circonstances des 8° à 15° de l’art. 222-12) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté) — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-14-5 alinéa 5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // ITT > 8
               _Paragraph.rich([
-                const TextSpan(text: "I.T.T. > 8 jours : "),
-                const TextSpan(
+                TextSpan(text: "I.T.T. > 8 jours : "),
+                TextSpan(
                   text:
                       "10 ans d’emprisonnement et 150 000 € d’amende (période de sûreté) — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 222-14-5 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Si les faits sont accompagnés d’une circonstance des 8° à 15° de l’art. 222-12 : ",
                 ),
-                const TextSpan(text: "aggravation prévue par "),
-                const TextSpan(
+                TextSpan(text: "aggravation prévue par "),
+                TextSpan(
                   text: "l’article 222-14-5 alinéa 4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les personnes morales peuvent être déclarées pénalement responsables et encourent les peines prévues par ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article 222-16-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text:
                     "Tentative : NON (les textes relatifs aux violences délictuelles ne visent pas la tentative).",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(
                   text: "l’article 121-6 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " et "),
-                const TextSpan(
+                TextSpan(text: " et "),
+                TextSpan(
                   text: "l’article 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -563,10 +563,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -631,7 +631,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -674,7 +674,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -736,7 +736,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -747,10 +747,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -762,13 +761,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -781,13 +779,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -84,7 +84,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionOrganisationPN = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Vue d’ensemble",
     question: "La Police nationale comporte principalement :",
     options: [
@@ -96,7 +96,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Les trois blocs courants : DGPN, DGSI, et PP (Paris).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -111,7 +111,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/dgpn.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/dsa.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -140,7 +140,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/inspecteur_general.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -154,7 +154,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/controleur_general.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -168,7 +168,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/commisaire_general_police.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -182,7 +182,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/commisaire_divisionnaire.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -196,7 +196,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/commissaire_police.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Élève commissaire", "Commissaire de police", "Capitaine"],
@@ -206,7 +206,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/eleve_commissaire.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -222,7 +222,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "assets/images/commandant_divisionnaire_fonctionnel_police.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Commandant divisionnaire", "Commandant de police", "Capitaine"],
@@ -232,7 +232,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/commandant_divisionnaire.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Commandant de police", "Capitaine", "Commissaire de police"],
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/commandant_police.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Capitaine", "Commandant de police", "Brigadier-chef"],
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/capitaine.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question:
         "Quel est ce grade (appellation Lieutenant — 6 premiers mois de scolarité) ?",
@@ -268,7 +268,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/lieutenant_six_mois_scolarite.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question:
         "Quel est ce grade (appellation Lieutenant — stagiaire jusqu’à la fin de la scolarité) ?",
@@ -284,7 +284,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/capitaine_lieutenant_stagiaire.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question:
         "Quel est ce grade (Capitaine — appellation Lieutenant pendant 4 ans après titularisation) ?",
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/capitaine_police_quatres_an.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Brigadier-chef", "Major de police", "Sous-brigadier (GPX)"],
@@ -310,7 +310,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/brigadier_chef.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Major de police", "Major exceptionnel", "Major RULP"],
@@ -320,7 +320,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/major_police.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Major exceptionnel", "Major de police", "Major RULP"],
@@ -330,7 +330,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/major_exceptionnel.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: ["Major RULP", "Major exceptionnel", "Brigadier-chef"],
@@ -340,7 +340,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/major_rulp.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/sous_brigadier_gpx.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -368,7 +368,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/gpx.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/gpxs.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Grades PN — Reconnaissance",
     question: "Quel est ce grade ?",
     options: [
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     questionImageAsset: "assets/images/pa.png",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "La DGPN signifie :",
     options: [
@@ -408,7 +408,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGPN = Direction générale de la Police nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI signifie :",
     options: [
@@ -420,7 +420,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGSI = Direction générale de la Sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "La Préfecture de police (PP) concerne principalement :",
     options: [
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "PP : Paris + compétences étendues incluant 92/93/94 sur certains volets.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "La DGPN est :",
     options: [
@@ -445,7 +445,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGPN = Direction générale de la Police nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "Le directeur général de la Police nationale est :",
     options: [
@@ -457,7 +457,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGPN : DG + DG adjoint pour diriger et coordonner.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Vue d’ensemble",
     question: "La Police nationale comporte principalement :",
     options: [
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Organisation d’ensemble : DGPN + DGSI + PP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI signifie :",
     options: [
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGSI = Direction générale de la Sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "La Préfecture de police (PP) concerne principalement :",
     options: [
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "PP : Paris + compétences étendues incluant 92/93/94 sur certains volets.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Parmi ces structures, laquelle fait partie des directions/services rattachés à la DGPN ?",
@@ -504,7 +504,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Dans ton organisation, le RAID est listé parmi les directions/services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Parmi ces structures, laquelle fait partie des services mutualisés (avec la Gendarmerie nationale) ?",
@@ -514,7 +514,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DCIS est indiquée comme service mutualisé Police/Gendarmerie.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Parmi ces structures, laquelle fait partie des services mutualisés (avec la Gendarmerie nationale) ?",
@@ -524,7 +524,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "ANFSI (numérique FSI) est indiquée comme mutualisée Police/Gendarmerie.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Parmi ces structures, laquelle fait partie des services mutualisés (avec la Gendarmerie nationale) ?",
@@ -534,7 +534,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SSMSI est listé comme service mutualisé avec la Gendarmerie nationale.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Parmi ces structures, laquelle est présentée comme un service national rattaché à la DGPN ?",
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNEAS est listé dans les services nationaux rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Parmi ces structures, laquelle est présentée comme un service national rattaché à la DGPN ?",
@@ -554,7 +554,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNEAV est listé dans les services nationaux rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à la “direction de gestion et de soutien” dans ton schéma DGPN ?",
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Dans ta page Organisation, la DRHFS est rangée dans la direction de gestion et de soutien.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -574,7 +574,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP est listée parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -584,7 +584,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPAF est listée parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPJ est une direction active (filière PJ) rattachée à la DGPN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -604,7 +604,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DCCRS (CRS) est listée parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -614,7 +614,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNRT (Renseignement territorial) est listée parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -624,7 +624,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "ADP (Académie de Police) est listée parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -634,7 +634,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SDLP (Service de la protection) est listé parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel ensemble correspond à une direction/service “actif” rattaché à la DGPN ?",
@@ -644,7 +644,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNPS (Police scientifique) est listé parmi les directions/services actifs rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel service est explicitement mentionné comme “service spécialisé rattaché” à la DGPN ?",
@@ -653,7 +653,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SICoP figure dans ton NOTA “services spécialisés rattachés”.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel service est explicitement mentionné comme “service spécialisé rattaché” à la DGPN ?",
@@ -663,7 +663,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DAV (Délégation aux victimes) figure dans ton NOTA “services spécialisés rattachés”.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel service est explicitement mentionné comme “service spécialisé rattaché” à la DGPN ?",
@@ -673,7 +673,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SHPN (Service historique de la Police nationale) figure dans ton NOTA “services spécialisés rattachés”.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question:
         "Quel service est explicitement mentionné comme “service spécialisé rattaché” à la DGPN ?",
@@ -682,7 +682,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ANDV figure dans ton NOTA “services spécialisés rattachés”.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS prépare notamment :",
     options: [
@@ -696,7 +696,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Dans ton texte DRHFS : préparation des textes concernant les personnels.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS est associée au suivi de :",
     options: [
@@ -708,7 +708,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte DRHFS cite la protection fonctionnelle.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS participe notamment au suivi :",
     options: [
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DRHFS mentionne le suivi des affaires juridiques/contentieux.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN peut conduire :",
     options: [
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte IGPN : inspections, évaluations, audits internes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "Parmi les missions de l’IGPN, on retrouve :",
     options: [
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "IGPN : analyse, conseil et maîtrise des risques (ton contenu).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ définit des objectifs et anime l’action :",
     options: [
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DNPJ : objectifs + animation des services PJ de sa filière.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP favorise :",
     options: [
@@ -773,7 +773,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte DNSP : favoriser le lien police-population.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP contribue notamment :",
     options: [
@@ -786,7 +786,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DNSP cite explicitement protection personnes/biens/institutions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF organise et coordonne :",
     options: [
@@ -800,7 +800,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DNPAF : point de contact national + contingent pour l’agence européenne.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF participe à l’élaboration des normes relatives :",
     options: [
@@ -814,7 +814,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DNPAF : sûreté des moyens/infrastructures de transport internationaux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF assure la coordination :",
     options: [
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DNPAF : doctrine + coordination moyens aériens/maritimes PN.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "Le renseignement territorial couvre notamment des domaines :",
     options: [
@@ -840,7 +840,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte DNRT : institutionnel, économique, social + ordre public.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCCRS",
     question: "La DCCRS est spécialisée :",
     options: [
@@ -853,7 +853,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte DCCRS : maintien/rétablissement de l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SDLP",
     question: "Le SDLP assure :",
     options: [
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP : protection rapprochée (ton texte).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS peut contribuer à :",
     options: [
@@ -879,7 +879,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte SNPS : développe/promeut méthodes et assure représentation de la PN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — RAID",
     question: "Le RAID peut être sollicité :",
     options: [
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte RAID : troubles graves à l’OP nécessitant techniques/moyens spécifiques.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — RAID",
     question: "Le RAID peut prêter assistance :",
     options: [
@@ -905,7 +905,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte : RAID prête assistance aux services de police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ANFSI",
     question: "L’ANFSI pilote notamment :",
     options: [
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte ANFSI : infrastructures + terminaux + équipements.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ANFSI",
     question: "L’ANFSI assure, lorsque pertinent :",
     options: [
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : convergence des outils numériques des deux forces.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCIS",
     question: "La DCIS contribue à :",
     options: [
@@ -943,7 +943,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte DCIS : continuité sécurité intérieure/extérieure.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCIS",
     question: "La DCIS dirige :",
     options: [
@@ -955,7 +955,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte DCIS : dirige le réseau des ASI (attachés).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SSMSI",
     question: "Le SSMSI contribue :",
     options: [
@@ -969,7 +969,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte SSMSI : faits constatés, décisions, exécution, sanctions, récidive.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SSMSI",
     question: "Le SSMSI est aussi :",
     options: [
@@ -983,7 +983,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte SSMSI : autorité nationale pour la production des statistiques européennes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Dans l’organisation de la PP, la DOPC correspond à :",
     options: [
@@ -996,7 +996,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Dans ta page PP : DOPC = Direction de l’Ordre public et de la Circulation.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les services administratifs de la PP, on peut trouver :",
     options: [
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ta page PP liste cette direction comme service administratif.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les services actifs de la PP, on peut trouver :",
     options: [
@@ -1021,7 +1021,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ta page PP : direction PJ fait partie des services actifs.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les services actifs de la PP, on peut trouver :",
     options: [
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ta page PP : direction du renseignement fait partie des services actifs.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question:
         "Parmi les services rattachés au cabinet du préfet de police, on retrouve :",
@@ -1043,7 +1043,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ta page PP : laboratoire central rattaché au cabinet.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question:
         "Parmi les services rattachés au cabinet du préfet de police, on retrouve :",
@@ -1052,7 +1052,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ta page PP : laboratoire de toxicologie rattaché au cabinet.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "La Brigade des sapeurs-pompiers de Paris est :",
     options: [
@@ -1066,7 +1066,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "La DGPN a pour rôle principal de :",
     options: [
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "La DGPN pilote les directions et services de la Police nationale relevant de son périmètre.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La mission centrale de la DGSI est de :",
     options: [
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DGSI : renseignement lié à la sécurité nationale / intérêts fondamentaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI peut concourir :",
     options: [
@@ -1106,7 +1106,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DGSI : concourt à la PJ sur l’ensemble du territoire, dans ses domaines.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI assure notamment :",
     options: [
@@ -1120,7 +1120,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "L’ingérence étrangère fait partie des missions citées pour la DGSI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "L’organisation de la DGSI comprend notamment :",
     options: [
@@ -1134,7 +1134,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ta page DGSI liste ces blocs comme structure de direction et services.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI contribue à la surveillance des communications :",
     options: [
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Surveillance technique : communications électroniques et radioélectriques.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "À Paris, le préfet de police est :",
     options: [
@@ -1161,7 +1161,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "La PP est dirigée par un préfet de police nommé en Conseil des ministres.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "La PP assure des missions de sécurité et d’ordre public dans son ressort.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -1186,7 +1186,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "La PP exerce également des missions de sécurité civile.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -1199,7 +1199,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "La PP a des compétences fortes en circulation (notamment via la DOPC).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "La PP délivre des titres administratifs dans son périmètre.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN — Directions",
     question: "La DRHFS signifie :",
     options: [
@@ -1224,7 +1224,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DRHFS : RH + finances + soutiens de la Police nationale (dans ton contenu).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS assure notamment :",
     options: [
@@ -1236,7 +1236,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : gestion RH et carrières.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS participe :",
     options: [
@@ -1250,7 +1250,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DRHFS : budget, répartition des moyens, suivi de l’utilisation.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "Concernant les contractuels, la DRHFS :",
     options: [
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Exception explicitée dans ton contenu : DGSI recrute ses contractuels pour son compte propre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS conduit notamment :",
     options: [
@@ -1277,7 +1277,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Action sociale : logement + enfance (ministère).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS est chargée :",
     options: [
@@ -1290,7 +1290,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Temps de travail : élément de réglementation cité dans ton texte.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN signifie :",
     options: [
@@ -1302,7 +1302,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "IGPN = Inspection générale de la Police nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN a une compétence :",
     options: [
@@ -1314,7 +1314,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Dans ton contenu : l’IGPN a une compétence nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN exerce notamment :",
     options: [
@@ -1327,7 +1327,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "IGPN : contrôle + enquêtes (admin/jud) + audit/évaluation/risques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN peut exercer une mission de contrôle sur :",
     options: [
@@ -1339,7 +1339,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton texte indique un périmètre large (DGPN, PP, DGSI).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ signifie :",
     options: [
@@ -1351,7 +1351,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ = Direction nationale de la Police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ concourt principalement :",
     options: [
@@ -1364,7 +1364,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ : PJ sur tout le territoire national.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ contribue à la prévention et la répression :",
     options: [
@@ -1378,7 +1378,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton contenu mentionne explicitement la criminalité organisée et transnationale.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP signifie :",
     options: [
@@ -1390,7 +1390,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNSP = Direction nationale de la Sécurité publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP anime l’action des services de police :",
     options: [
@@ -1404,7 +1404,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP : sécurité/ordre public dans les communes à police étatisée (selon ton texte).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP veille particulièrement :",
     options: [
@@ -1417,7 +1417,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Dans ton contenu : police-secours + accueil public/victimes + lien population.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question:
         "Au titre de la protection de l’espace public, la DNSP est en charge :",
@@ -1431,7 +1431,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNSP : sécurité routière + transports (dans ton texte).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF signifie :",
     options: [
@@ -1443,7 +1443,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPAF = Direction nationale de la Police aux frontières.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF définit les objectifs et anime l’action :",
     options: [
@@ -1457,7 +1457,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "PAF : contrôle/surveillance frontières terrestres, maritimes et aériennes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF est chef de file (PN) en matière :",
     options: [
@@ -1470,7 +1470,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : chef de file pour la PN en matière de traitement procédural ESI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF centralise les informations relatives :",
     options: [
@@ -1482,7 +1482,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : centralisation/analyse des flux/risques migratoires.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF assure notamment :",
     options: [
@@ -1496,7 +1496,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "PAF : éloignement + gestion opérationnelle des centres de rétention administrative.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "La DNRT signifie :",
     options: [
@@ -1508,7 +1508,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNRT = Direction nationale du Renseignement territorial.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "Le renseignement territorial a pour finalité principale :",
     options: [
@@ -1521,7 +1521,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "RT : renseignement destiné à informer l’État (institutionnel, économique, social, ordre public).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "La DNRT contribue à la prévention du terrorisme :",
     options: [
@@ -1534,7 +1534,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : prévention du terrorisme en coordination avec les services compétents.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCCRS",
     question: "La DCCRS signifie :",
     options: [
@@ -1546,7 +1546,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCCRS : direction centrale des CRS.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — CRS",
     question: "Les CRS sont des unités mobiles spécialisées :",
     options: [
@@ -1558,7 +1558,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CRS : unités mobiles dédiées au MO/ROP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — CRS",
     question: "Les CRS peuvent être engagées :",
     options: [
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton contenu : assistance aux populations en cas de sinistre/calamité.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — CRS",
     question: "Les CRS peuvent être employées à des gardes statiques :",
     options: [
@@ -1586,7 +1586,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Principe rappelé dans ton texte : garde statique seulement sur ordre ministériel et non permanente.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ADP",
     question: "L’ADP correspond à :",
     options: [
@@ -1598,7 +1598,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ADP : direction chargée du recrutement et de la formation.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ADP",
     question: "L’Académie de Police est responsable :",
     options: [
@@ -1612,7 +1612,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : formation initiale + formation tout au long de la vie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ADP",
     question: "L’Académie de Police est également chargée :",
     options: [
@@ -1624,7 +1624,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton contenu le mentionne explicitement.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SDLP",
     question: "Le SDLP est :",
     options: [
@@ -1637,7 +1637,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SDLP : protection rapprochée, sécurisation d’événements, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SDLP",
     question: "Le SDLP met en œuvre des mesures de sécurité notamment pour :",
     options: [
@@ -1650,7 +1650,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : sécurité des visites de hautes personnalités et événements.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS signifie :",
     options: [
@@ -1662,7 +1662,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS : Police scientifique (politique et coordination).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS a pour mission de :",
     options: [
@@ -1675,7 +1675,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS : coordination nationale de la police scientifique.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS peut réaliser :",
     options: [
@@ -1689,7 +1689,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : examens/constatations/expertises/analyses à la demande judiciaire ou des enquêteurs.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — RAID",
     question: "RAID signifie :",
     options: [
@@ -1701,7 +1701,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "RAID : unité d’intervention nationale (sigle).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — RAID",
     question: "Le RAID intervient notamment :",
     options: [
@@ -1715,7 +1715,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton contenu : intervention sur criminalité organisée + terrorisme.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ANFSI",
     question: "L’ANFSI signifie :",
     options: [
@@ -1727,7 +1727,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ANFSI : numérique / SI / équipements / sécurité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ANFSI",
     question: "L’ANFSI est chargée :",
     options: [
@@ -1741,7 +1741,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : SI, équipements numériques et sécurité des outils au profit des FSI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCIS",
     question: "La DCIS signifie :",
     options: [
@@ -1753,7 +1753,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCIS : coopération internationale Police/Gendarmerie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCIS",
     question: "La DCIS a notamment pour rôle :",
     options: [
@@ -1767,7 +1767,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton contenu : coordination coopérations Police/Gendarmerie (opérationnelles/techniques/institutionnelles).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SSMSI",
     question: "Le SSMSI est :",
     options: [
@@ -1779,7 +1779,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SSMSI : statistique publique en sécurité intérieure.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SSMSI",
     question: "Le SSMSI produit :",
     options: [
@@ -1793,7 +1793,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ton texte : SSMSI élabore/diffuse/publie l’information statistique en sécurité intérieure.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNEAS",
     question: "Le SNEAS signifie :",
     options: [
@@ -1806,7 +1806,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNEAS : enquêtes administratives de sécurité (compatibilité comportement/autorisation).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNEAV",
     question: "Le SNEAV signifie :",
     options: [
@@ -1819,7 +1819,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNEAV : examine certaines demandes d’autorisation de voyage selon ton contenu.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure est la plus directement liée au renseignement de sécurité nationale ?",
@@ -1829,7 +1829,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DGSI : renseignement sécurité nationale / intérêts fondamentaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question: "Quelle direction est la plus directement liée aux frontières ?",
     options: ["DNPAF", "DNPJ", "IGPN"],
@@ -1838,7 +1838,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPAF : contrôle/surveillance des frontières et immigration irrégulière.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle direction est la plus directement liée au maintien de l’ordre via unités mobiles ?",
@@ -1847,7 +1847,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CRS : maintien et rétablissement de l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure est la plus directement liée au contrôle/audit interne des services ?",
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "IGPN : contrôle, enquêtes, audit, évaluation, maîtrise des risques.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure produit la statistique publique en sécurité intérieure ?",
@@ -1866,7 +1866,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SSMSI : statistique publique (données, études, enquêtes).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Organigrammes",
     question: "Sur un tableau d’organigramme, la lecture complète nécessite :",
     options: [
@@ -1878,7 +1878,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton aide de lecture indique swipe horizontal + vertical.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Organigrammes",
     question:
         "Sur l’organigramme au format tableau, chaque colonne représente :",
@@ -1891,7 +1891,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Colonne = grand bloc (selon ton texte d’aide).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Hiérarchie",
     question: "Les 3 grands corps des services actifs sont :",
     options: [
@@ -1904,7 +1904,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CCD, CC, CEA : les 3 grands corps des services actifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Hiérarchie",
     question:
         "Le corps de conception et de direction concerne principalement :",
@@ -1917,7 +1917,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CCD : grades de commissaires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Hiérarchie",
     question: "Le corps de commandement concerne principalement :",
     options: [
@@ -1930,7 +1930,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Corps de commandement : officiers (capitaine/commandant/commandant divisionnaire).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question: "Quel sigle correspond au Service de la protection ?",
     options: ["SDLP", "SNPS", "DNRT"],
@@ -1938,7 +1938,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP = Service de la protection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question: "Quel sigle correspond à la Police scientifique ?",
     options: ["SNPS", "SSMSI", "DNPAF"],
@@ -1946,7 +1946,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS = Service national de Police scientifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question: "Quel sigle correspond au Renseignement territorial ?",
     options: ["DNRT", "DCCRS", "DRHFS"],
@@ -1954,7 +1954,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNRT = Direction nationale du Renseignement territorial.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question:
         "Quel sigle correspond aux Ressources humaines/finances/soutiens ?",
@@ -1963,7 +1963,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : ressources humaines, finances et soutiens.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["DNPJ", "DGSI", "PP"],
@@ -1972,7 +1972,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPJ fait partie des directions et services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["DNSP", "DGSI", "PP"],
@@ -1981,7 +1981,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP fait partie des directions et services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["DNPAF", "DGSI", "PP"],
@@ -1990,7 +1990,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPAF fait partie des directions et services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["DCCRS", "DGSI", "PP"],
@@ -1998,7 +1998,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCCRS (CRS) est rattachée à la DGPN dans ton contenu.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["DNRT", "DGSI", "PP"],
@@ -2006,7 +2006,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNRT est rattachée à la DGPN (renseignement territorial).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["ADP", "DGSI", "PP"],
@@ -2014,7 +2014,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ADP (Académie de Police) est rattachée à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["SDLP", "DGSI", "PP"],
@@ -2022,7 +2022,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP est un service rattaché à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["SNPS", "DGSI", "PP"],
@@ -2030,7 +2030,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS est un service rattaché à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["IGPN", "DGSI", "PP"],
@@ -2039,7 +2039,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "IGPN fait partie des directions/services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question: "Parmi ces structures, laquelle est rattachée à la DGPN ?",
     options: ["DRHFS", "DGSI", "PP"],
@@ -2049,7 +2049,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     difficulty: "Moyen",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "La DGPN signifie :",
     options: [
@@ -2061,7 +2061,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGPN = Direction générale de la Police nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "Le directeur général de la Police nationale est :",
     options: [
@@ -2073,7 +2073,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGPN : DG + DG adjoint pour diriger et coordonner.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Vue d’ensemble",
     question: "La Police nationale comporte principalement :",
     options: [
@@ -2085,7 +2085,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Organisation d’ensemble : DGPN + DGSI + PP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "La DGPN coordonne :",
     options: [
@@ -2102,7 +2102,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DGSI — BASIQUES / MISSIONS / ORGANISATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI signifie :",
     options: [
@@ -2114,7 +2114,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGSI = Direction générale de la Sécurité intérieure.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI est chargée, sur le territoire national, de :",
     options: [
@@ -2128,7 +2128,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Mission centrale DGSI : renseignement lié à la sécurité nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "Parmi les missions de la DGSI, on retrouve :",
     options: [
@@ -2142,7 +2142,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "La DGSI concourt à la PJ sur l’ensemble du territoire, dans ses domaines.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI assure notamment :",
     options: [
@@ -2156,7 +2156,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ingérence étrangère : mission explicitement mentionnée pour la DGSI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI participe à la surveillance :",
     options: [
@@ -2169,7 +2169,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGSI : surveillance des menaces radicales violentes.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "L’organisation interne de la DGSI comprend notamment :",
     options: [
@@ -2183,7 +2183,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Ce sont des composantes internes typiques listées sur ta page DGSI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGSI",
     question: "La DGSI contribue à la surveillance des communications :",
     options: [
@@ -2201,7 +2201,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // PRÉFECTURE DE POLICE — BASIQUES / RÔLE / ORGANISATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "La Préfecture de police (PP) concerne principalement :",
     options: [
@@ -2214,7 +2214,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "PP : Paris + compétences étendues incluant 92/93/94 sur certains volets.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "À Paris, le préfet de police est :",
     options: [
@@ -2226,7 +2226,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Le préfet de police est nommé (Conseil des ministres).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -2238,7 +2238,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "La PP a des missions de sécurité (personnes et biens).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -2250,7 +2250,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "La PP exerce aussi des missions de sécurité civile.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -2263,7 +2263,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "La PP a une forte compétence en matière de circulation à Paris.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les attributions de la PP, on retrouve :",
     options: [
@@ -2275,7 +2275,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "La PP délivre divers titres administratifs.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Le préfet de police est notamment :",
     options: [
@@ -2287,7 +2287,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Rôle : zone de défense de Paris.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Préfecture de police",
     question: "Parmi les services actifs de la PP, on retrouve :",
     options: [
@@ -2304,7 +2304,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DRHFS — RÔLES / COMPÉTENCES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS signifie :",
     options: [
@@ -2316,7 +2316,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS = RH + finances + soutiens (Police nationale).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS assure notamment :",
     options: [
@@ -2329,7 +2329,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : carrière, parcours, gestion RH.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "Concernant les contractuels, la DRHFS :",
     options: [
@@ -2342,7 +2342,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Exception prévue : DGSI recrute pour elle-même.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS conduit notamment :",
     options: [
@@ -2355,7 +2355,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Action sociale : logement + enfance (ministère).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS participe :",
     options: [
@@ -2368,7 +2368,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : budget + répartition des moyens financiers.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DRHFS",
     question: "La DRHFS est chargée :",
     options: [
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // IGPN — COMPÉTENCE / MISSIONS
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN signifie :",
     options: [
@@ -2396,7 +2396,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "IGPN = Inspection générale de la Police nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN exerce notamment :",
     options: [
@@ -2409,7 +2409,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "IGPN : contrôle + enquêtes + audit/évaluation/conseil.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "L’IGPN peut contrôler :",
     options: [
@@ -2421,7 +2421,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Dans ton contenu : IGPN a un périmètre large (DGPN/PP/DGSI).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "La compétence de l’IGPN est :",
     options: ["Nationale", "Communale", "Limitée à Paris"],
@@ -2429,7 +2429,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "IGPN : compétence nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — IGPN",
     question: "Parmi les missions de l’IGPN, on trouve :",
     options: [
@@ -2446,7 +2446,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DNPJ — MISSIONS / CHAMP
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ signifie :",
     options: [
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ = Direction nationale de la Police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ concourt principalement :",
     options: [
@@ -2471,7 +2471,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ : PJ sur l’ensemble du territoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ contribue à la lutte :",
     options: [
@@ -2484,7 +2484,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ : criminalité organisée et transnationale incluse.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPJ",
     question: "La DNPJ :",
     options: [
@@ -2500,7 +2500,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DNSP — MISSIONS / COMMUNES ÉTATISÉES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP signifie :",
     options: [
@@ -2512,7 +2512,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNSP = Direction nationale de la Sécurité publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "La DNSP agit principalement dans :",
     options: [
@@ -2526,7 +2526,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP : sécurité/ordre public dans les communes à police étatisée.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question: "Parmi les priorités DNSP, on retrouve :",
     options: [
@@ -2538,7 +2538,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNSP : police-secours et accueil au cœur des missions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNSP",
     question:
         "Au titre de la protection de l’espace public, la DNSP est en charge :",
@@ -2556,7 +2556,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DNPAF — FRONTIÈRES / IMMIGRATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF signifie :",
     options: [
@@ -2568,7 +2568,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPAF = Direction nationale de la Police aux frontières.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF veille au respect des normes encadrant :",
     options: [
@@ -2581,7 +2581,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : frontières sur tous milieux (terre/mer/air).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF est chef de file (PN) en matière :",
     options: [
@@ -2593,7 +2593,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : chef de file sur le traitement procédural ESI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF centralise et analyse :",
     options: [
@@ -2605,7 +2605,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : analyse des flux/risques migratoires.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNPAF",
     question: "La DNPAF assure notamment :",
     options: [
@@ -2623,7 +2623,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DNRT — RENSEIGNEMENT TERRITORIAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "La DNRT signifie :",
     options: [
@@ -2635,7 +2635,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNRT = Direction nationale du Renseignement territorial.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "Le renseignement territorial vise à :",
     options: [
@@ -2649,7 +2649,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "RT : collecte/centralisation/analyse au profit des autorités.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DNRT",
     question: "La DNRT contribue :",
     options: [
@@ -2666,7 +2666,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DCCRS / CRS — ORDRE PUBLIC
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCCRS",
     question: "La DCCRS signifie :",
     options: [
@@ -2678,7 +2678,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCCRS = direction centrale des CRS.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — CRS",
     question: "Les CRS sont spécialisées notamment dans :",
     options: [
@@ -2690,7 +2690,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CRS : unités mobiles dédiées à l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — CRS",
     question: "Les CRS peuvent porter assistance aux populations :",
     options: [
@@ -2702,7 +2702,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CRS : assistance possible lors de catastrophes.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — CRS",
     question: "Les gardes statiques par CRS :",
     options: [
@@ -2718,7 +2718,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // ADP — FORMATION / RECRUTEMENT
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ADP",
     question: "L’ADP correspond à :",
     options: [
@@ -2730,7 +2730,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ADP = Académie de Police.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ADP",
     question: "L’Académie de Police est chargée :",
     options: [
@@ -2742,7 +2742,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ADP : recrutement + formation initiale/continue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ADP",
     question: "L’ADP est aussi chargée :",
     options: [
@@ -2758,7 +2758,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // SDLP — PROTECTION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SDLP",
     question: "Le SDLP signifie :",
     options: [
@@ -2770,7 +2770,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP = Service de la protection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SDLP",
     question: "Le SDLP assure principalement :",
     options: [
@@ -2787,7 +2787,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // SNPS — POLICE SCIENTIFIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS signifie :",
     options: [
@@ -2799,7 +2799,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS = Service national de Police scientifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS a pour mission :",
     options: [
@@ -2812,7 +2812,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS : coordination de la police scientifique.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNPS",
     question: "Le SNPS peut réaliser :",
     options: [
@@ -2829,7 +2829,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // RAID — INTERVENTION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — RAID",
     question: "RAID signifie :",
     options: [
@@ -2841,7 +2841,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "RAID : unité d’intervention nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — RAID",
     question: "Le RAID intervient notamment :",
     options: [
@@ -2858,7 +2858,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // SERVICES NATIONAUX RATTACHÉS (SNEAS / SNEAV) + MUTUALISÉS (ANFSI / DCIS / SSMSI)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNEAS",
     question: "Le SNEAS signifie :",
     options: [
@@ -2870,7 +2870,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNEAS : enquêtes administratives de sécurité.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNEAS",
     question: "Le SNEAS réalise :",
     options: [
@@ -2883,7 +2883,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNEAS : enquêtes administratives liées à autorisations/risques.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SNEAV",
     question: "Le SNEAV signifie :",
     options: [
@@ -2895,7 +2895,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNEAV : autorisations de voyage (traitements spécifiques).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — ANFSI",
     question: "L’ANFSI signifie :",
     options: [
@@ -2907,7 +2907,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ANFSI : numérique / SI / sécurité des outils FSI.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DCIS",
     question: "La DCIS signifie :",
     options: [
@@ -2919,7 +2919,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCIS : coopération internationale Police/Gendarmerie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — SSMSI",
     question: "Le SSMSI signifie :",
     options: [
@@ -2935,7 +2935,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // DTPN — OUTRE-MER (DIRECTIONS TERRITORIALES)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DTPN",
     question: "Dans certains territoires ultramarins, les DTPN :",
     options: [
@@ -2949,7 +2949,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DTPN : direction unique regroupant plusieurs missions dans le ressort.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DTPN",
     question: "Une DTPN peut regrouper plusieurs filières, notamment :",
     options: [
@@ -2965,7 +2965,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // ORGANIGRAMMES — UTILISATION (tes pages)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Organigrammes",
     question: "Sur la page “Organigramme MI”, pour lire tout le tableau :",
     options: [
@@ -2977,7 +2977,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton aide de lecture indique swipe horizontal + vertical.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Organigrammes",
     question:
         "Sur l’organigramme au format tableau, chaque colonne correspond :",
@@ -2994,7 +2994,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // HIÉRARCHIE — CORPS (rappels organisationnels)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Hiérarchie",
     question: "Les 3 grands corps des services actifs sont :",
     options: [
@@ -3006,7 +3006,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CCD, CC, CEA : les 3 grands corps des actifs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Hiérarchie",
     question:
         "Le corps de conception et de direction correspond principalement :",
@@ -3019,7 +3019,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CCD : grades de commissaires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Hiérarchie",
     question: "Le corps de commandement correspond principalement :",
     options: [
@@ -3035,7 +3035,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // QUESTIONS “DISTINCTION” (pièges de compréhension)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure est orientée “renseignement sécurité nationale” ?",
@@ -3044,7 +3044,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DGSI : renseignement sécurité nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure est orientée “frontières / immigration irrégulière” ?",
@@ -3053,7 +3053,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPAF : frontières et lutte contre immigration irrégulière.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question: "Quelle structure est orientée “ordre public / unités mobiles” ?",
     options: ["DCCRS", "DNPJ", "SSMSI"],
@@ -3061,7 +3061,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCCRS : CRS et maintien/rétablissement de l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure produit la “statistique publique” en sécurité intérieure ?",
@@ -3074,7 +3074,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // RÉVISION RAPIDE — SIGLES (pack dense)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question: "Quel sigle correspond à la Police scientifique ?",
     options: ["SNPS", "SDLP", "DNRT"],
@@ -3082,7 +3082,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS = Service national de Police scientifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question: "Quel sigle correspond au Service de la protection ?",
     options: ["SDLP", "SSMSI", "DNPAF"],
@@ -3090,7 +3090,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP = Service de la protection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question: "Quel sigle correspond au Renseignement territorial ?",
     options: ["DNRT", "DNPJ", "DCCRS"],
@@ -3098,7 +3098,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNRT = Direction nationale du Renseignement territorial.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Sigles",
     question:
         "Quel sigle correspond aux Ressources humaines/finances/soutiens ?",
@@ -3111,7 +3111,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // PACK “RATTACHEMENTS” (DGPN -> directions/services)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question:
         "Parmi ces structures, laquelle est une direction rattachée à la DGPN ?",
@@ -3121,7 +3121,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPJ fait partie des directions/services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question:
         "Parmi ces structures, laquelle est une direction rattachée à la DGPN ?",
@@ -3131,7 +3131,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP fait partie des directions/services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question:
         "Parmi ces structures, laquelle est une direction rattachée à la DGPN ?",
@@ -3141,7 +3141,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPAF fait partie des directions/services rattachés à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question:
         "Parmi ces structures, laquelle est un service rattaché à la DGPN ?",
@@ -3150,7 +3150,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Le SDLP est un service rattaché à la DGPN.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Rattachements",
     question:
         "Parmi ces structures, laquelle est un service rattaché à la DGPN ?",
@@ -3163,7 +3163,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // PACK “MISSIONS” — QCM formulations variées (pour volume)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Missions",
     question:
         "Quel service est le plus directement associé à la protection rapprochée ?",
@@ -3172,7 +3172,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP = Service de la protection (protection rapprochée).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Missions",
     question:
         "Quel service est le plus directement associé aux expertises scientifiques ?",
@@ -3181,7 +3181,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS : politique et expertise de police scientifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Missions",
     question:
         "Quelle direction est la plus directement associée aux enquêtes PJ au niveau national ?",
@@ -3190,7 +3190,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ : direction nationale de la Police judiciaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Missions",
     question:
         "Quelle direction est la plus directement associée à la sécurité du quotidien ?",
@@ -3199,7 +3199,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNSP : sécurité publique / SDQ / accueil / police-secours.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Missions",
     question:
         "Quelle direction est la plus directement associée aux flux migratoires ?",
@@ -3208,7 +3208,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPAF : flux et risques migratoires.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Missions",
     question:
         "Quelle structure est principalement associée au contrôle/audit interne des services ?",
@@ -3221,7 +3221,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================================================
   // MINI-PACK “ORGANIGRAMMES PN” (tes pages OrganigrammesPnPage)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Organigrammes PN",
     question: "Sur tes pages d’organigrammes, appuyer sur l’image permet :",
     options: [
@@ -3233,7 +3233,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Ton UI indique : appuie pour ouvrir et zoomer (pincement).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Organigrammes PN",
     question: "Un organigramme “vue d’ensemble” sert surtout à :",
     options: [
@@ -3246,7 +3246,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Vue d’ensemble : structure générale + directions/services.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — DGPN",
     question: "Le directeur général de la Police nationale est :",
     options: [
@@ -3262,7 +3262,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DIRECTIONS / SERVICES RATTACHÉS (LISTES)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "La DRHFS est :",
     options: [
@@ -3274,7 +3274,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : ressources humaines, finances et soutiens de la PN.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "La DNPJ est :",
     options: [
@@ -3286,7 +3286,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DNPJ : filière police judiciaire au niveau national.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "La DNSP est :",
     options: [
@@ -3299,7 +3299,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP : sécurité publique (police du quotidien, police-secours, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "La DNPAF est :",
     options: [
@@ -3312,7 +3312,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPAF : contrôle/surveillance frontières + immigration irrégulière.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "La DNRT est :",
     options: [
@@ -3325,7 +3325,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNRT : renseignement territorial (hors Paris/petite couronne selon organisation).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "La DCCRS est :",
     options: [
@@ -3337,7 +3337,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCCRS : organisation/contrôle/emploi des CRS.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "L’ADP correspond à :",
     options: [
@@ -3349,7 +3349,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ADP : recrutement + formation initiale/continue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "Le SDLP est :",
     options: [
@@ -3362,7 +3362,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SDLP : protection rapprochée, sûreté de certaines personnalités/événements.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Directions rattachées",
     question: "Le SNPS est :",
     options: [
@@ -3374,7 +3374,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS : politique et coordination de police scientifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Unités spécialisées",
     question: "RAID signifie :",
     options: [
@@ -3386,7 +3386,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "RAID : unité d’intervention nationale.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Mutualisation",
     question: "L’ANFSI est :",
     options: [
@@ -3399,7 +3399,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "ANFSI : SI, équipements numériques, convergence, sécurité des outils.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Mutualisation",
     question: "La DCIS correspond à :",
     options: [
@@ -3411,7 +3411,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCIS : coopération internationale Police/Gendarmerie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Statistiques",
     question: "Le SSMSI est :",
     options: [
@@ -3428,7 +3428,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // IGPN
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "IGPN — Rôle et compétence",
     question: "L’IGPN exerce principalement :",
     options: [
@@ -3442,7 +3442,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "IGPN : contrôle + enquêtes admin/judiciaires + audit/risques.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "IGPN — Périmètre",
     question: "L’IGPN peut contrôler :",
     options: [
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "IGPN : mission de contrôle large (DGPN, PP, DGSI).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "IGPN — Compétence",
     question: "La compétence de l’IGPN est :",
     options: ["Nationale", "Communale", "Limitée à l’Île-de-France"],
@@ -3466,7 +3466,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DNPJ
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNPJ — Missions",
     question: "La DNPJ concourt principalement :",
     options: [
@@ -3480,7 +3480,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNPJ : prévention/répression criminalité et délinquance, dont formes organisées/transnationales.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNPJ — Champ",
     question: "La DNPJ contribue à lutter :",
     options: [
@@ -3497,7 +3497,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DNSP
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNSP — Missions",
     question: "La DNSP anime l’action des services de police :",
     options: [
@@ -3511,7 +3511,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DNSP : périmètre des communes à police étatisée (sous réserve des règles spécifiques).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNSP — Priorités",
     question: "La DNSP veille particulièrement :",
     options: [
@@ -3524,7 +3524,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Sécurité publique : proximité, SDQ, accueil, police-secours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNSP — Espace public",
     question:
         "Au titre de la protection de l’espace public, la DNSP est en charge :",
@@ -3542,7 +3542,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DNPAF
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNPAF — Frontières",
     question: "La DNPAF veille principalement :",
     options: [
@@ -3555,7 +3555,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : frontières terrestres/maritimes/aériennes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNPAF — Immigration",
     question: "La DNPAF est chef de file (pour la PN) en matière :",
     options: [
@@ -3567,7 +3567,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : rôle chef de file sur la chaîne procédurale ESI.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNPAF — Éloignement",
     question: "La DNPAF assure notamment :",
     options: [
@@ -3584,7 +3584,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DNRT
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNRT — Missions",
     question: "Le renseignement territorial vise à :",
     options: [
@@ -3598,7 +3598,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "RT : information au profit des autorités (ordre public, phénomènes violents…).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DNRT — Prévention",
     question: "Le renseignement territorial contribue :",
     options: [
@@ -3615,7 +3615,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DCCRS / CRS
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "CRS — Organisation",
     question: "La DCCRS a notamment pour mission :",
     options: [
@@ -3628,7 +3628,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DCCRS : autorité sur CRS + emploi en fonction des missions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CRS — Spécialité",
     question: "Les CRS sont des unités mobiles spécialisées notamment dans :",
     options: [
@@ -3640,7 +3640,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CRS : MO + renfort + voies de communication, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "CRS — Emploi",
     question: "Les CRS peuvent être employées à des gardes statiques :",
     options: [
@@ -3657,7 +3657,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // ADP (FORMATION)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Académie de Police — Formation",
     question: "L’Académie de Police est chargée :",
     options: [
@@ -3669,7 +3669,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "ADP : recrutement + formation initiale et continue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Académie de Police — Recherche",
     question: "L’Académie de Police est également chargée :",
     options: [
@@ -3685,7 +3685,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // SDLP
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "SDLP — Protection",
     question: "Le SDLP assure principalement :",
     options: [
@@ -3698,7 +3698,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP : protection de personnes et dispositifs de sûreté.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "SDLP — Événements",
     question: "Le SDLP contribue notamment à la sécurité :",
     options: [
@@ -3715,7 +3715,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // SNPS
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "SNPS — Missions",
     question: "Le SNPS a pour mission :",
     options: [
@@ -3728,7 +3728,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS : doctrine/coordination PTS + représentation.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "SNPS — Expertise",
     question: "Le SNPS peut réaliser :",
     options: [
@@ -3746,7 +3746,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // RAID
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "RAID — Missions",
     question: "Le RAID intervient notamment :",
     options: [
@@ -3759,7 +3759,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "RAID : intervention spécialisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "RAID — Appui",
     question: "Le RAID peut prêter assistance :",
     options: [
@@ -3777,7 +3777,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // ANFSI / NUMÉRIQUE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "ANFSI — Numérique",
     question: "L’ANFSI est chargée :",
     options: [
@@ -3795,7 +3795,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // SNEAS / SNEAV
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "SNEAS — Enquêtes administratives",
     question: "Le SNEAS réalise :",
     options: [
@@ -3809,7 +3809,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "SNEAS : prévention terrorisme + atteintes sécurité/ordre public/sûreté de l’État.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "SNEAV — Autorisation de voyage",
     question: "Le SNEAV intervient :",
     options: [
@@ -3827,7 +3827,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DCIS / COOP
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DCIS — Coopération",
     question: "La DCIS :",
     options: [
@@ -3844,7 +3844,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // SSMSI
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "SSMSI — Statistique publique",
     question: "Le SSMSI :",
     options: [
@@ -3862,7 +3862,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DRHFS (gros bloc RH / finances / soutiens)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DRHFS — Missions",
     question: "La DRHFS définit notamment :",
     options: [
@@ -3875,7 +3875,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : gestion RH, textes, carrières, parcours.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DRHFS — Recrutement",
     question: "Concernant le recrutement des personnels contractuels :",
     options: [
@@ -3888,7 +3888,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Exception : DGSI gère son recrutement contractuel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DRHFS — Action sociale",
     question: "La DRHFS conduit notamment :",
     options: [
@@ -3901,7 +3901,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "DRHFS : prévention, accompagnement et action sociale.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DRHFS — Budget",
     question: "La DRHFS :",
     options: [
@@ -3914,7 +3914,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Répartition des moyens financiers et suivi de l’utilisation.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DRHFS — Temps de travail",
     question: "La DRHFS est notamment chargée :",
     options: [
@@ -3931,7 +3931,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DGSI (structure + missions)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DGSI — Définition",
     question: "La DGSI est chargée :",
     options: [
@@ -3945,7 +3945,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DGSI : renseignement sécurité nationale / intérêts fondamentaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DGSI — Organisation",
     question: "Parmi les composantes de la DGSI, on retrouve notamment :",
     options: [
@@ -3959,7 +3959,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Structuration interne DGSI (direction/tech/admin/inspection).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DGSI — Police judiciaire",
     question: "La DGSI peut concourir :",
     options: [
@@ -3973,7 +3973,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DGSI : PJ possible dans ses champs (terrorisme, ingérence, etc.).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DGSI — Ingérence",
     question: "La DGSI assure notamment :",
     options: [
@@ -3990,7 +3990,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // PP (Préfecture de Police) — rôle/organisation
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "PP — Rôle",
     question: "À Paris, le préfet de police est :",
     options: [
@@ -4002,7 +4002,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PP : préfet de police nommé en Conseil des ministres.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "PP — Missions",
     question: "Parmi les attributions de la PP :",
     options: [
@@ -4015,7 +4015,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PP : bloc large (ordre public, titres, circulation, etc.).",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "PP — Organisation",
     question: "Parmi les services actifs de la PP, on retrouve notamment :",
     options: [
@@ -4033,7 +4033,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DTPN (Outre-mer) — spécifique
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Outre-mer (DTPN)",
     question: "Dans certains territoires ultramarins, les DTPN :",
     options: [
@@ -4047,7 +4047,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DTPN : direction unique regroupant plusieurs missions sur un territoire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Outre-mer (DTPN)",
     question: "Une DTPN peut regrouper (selon ressort) :",
     options: [
@@ -4064,7 +4064,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // ORGANIGRAMMES / LECTURE
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organigrammes — Lecture",
     question:
         "Sur ta page “Organigramme MI (tableau)”, chaque colonne correspond :",
@@ -4077,7 +4077,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Aide à la lecture : colonnes = grands blocs.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organigrammes — Manipulation",
     question: "Pour lire tout le tableau de l’organigramme, il faut :",
     options: [
@@ -4093,7 +4093,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // HIÉRARCHIE / CORPS (rappels)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie PN — Corps actifs",
     question: "Quels sont les 3 grands corps des services actifs ?",
     options: [
@@ -4105,7 +4105,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Les 3 grands corps des actifs : CCD, CC, CEA.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie PN — Commissaires",
     question: "Le corps de conception et de direction comprend notamment :",
     options: [
@@ -4117,7 +4117,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CCD : grades commissaires.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie PN — Officiers",
     question: "Le corps de commandement comprend notamment :",
     options: [
@@ -4129,7 +4129,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CC : grades officiers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Hiérarchie PN — CEA",
     question:
         "Dans le CEA, l’encadrement des gardiens/PA/réserve est assuré notamment par :",
@@ -4146,7 +4146,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // SERVICES SPÉCIALISÉS (NOTA 1)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Services spécialisés (NOTA)",
     question:
         "Parmi les services spécialisés rattachés à la DGPN, on retrouve notamment :",
@@ -4164,7 +4164,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // QUESTIONS “PIÈGES” / DISTINCTIONS
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle structure est principalement orientée “renseignement sécurité nationale” ?",
@@ -4174,7 +4174,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "DGSI : renseignement sécurité nationale / intérêts fondamentaux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle direction est le plus directement orientée “frontières / immigration irrégulière” ?",
@@ -4183,7 +4183,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "PAF : frontières + lutte immigration irrégulière.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quelle direction est spécialisée “ordre public” via unités mobiles ?",
@@ -4192,7 +4192,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "CRS = maintien/rétablissement de l’ordre public.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Distinctions",
     question:
         "Quel service est orienté “statistique publique” en sécurité intérieure ?",
@@ -4206,7 +4206,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // LOT “RÉVISION RAPIDE” (QCM courts)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Sigles",
     question: "Quel sigle correspond à la Police scientifique ?",
     options: ["SNPS", "SDLP", "SNEAV"],
@@ -4214,7 +4214,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SNPS = Service national de Police scientifique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Sigles",
     question: "Quel sigle correspond au Service de la protection ?",
     options: ["SDLP", "SSMSI", "DNRT"],
@@ -4222,7 +4222,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "SDLP = Service de la protection.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Sigles",
     question: "Quel sigle correspond au Renseignement territorial ?",
     options: ["DNRT", "DNPJ", "DNPAF"],
@@ -4234,7 +4234,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // BONUS — QUESTIONS “STRUCTURE DGSI” (ciblées page DGSI)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "DGSI — Organisation interne",
     question: "La DGSI comporte notamment :",
     options: [
@@ -4246,7 +4246,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Dans ton contenu : direction technique = un des blocs DGSI.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "DGSI — Coordination",
     question: "La DGSI est “chef de file” surtout dans :",
     options: [
@@ -4264,7 +4264,7 @@ final List<QuizQuestion> questionOrganisationPN = [
   // =========================
   // DERNIER LOT — “MÉGA” (tu peux en dupliquer facilement)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Chaînes",
     question:
         "Qui “définit les objectifs et anime l’action” des services PJ de sa filière ?",
@@ -4274,7 +4274,7 @@ final List<QuizQuestion> questionOrganisationPN = [
         "Dans ton contenu : la DNPJ anime l’action des services PJ relevant de sa filière.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Chaînes",
     question:
         "Qui “définit les objectifs et anime l’action” en sécurité/ordre public dans les communes étatisées ?",
@@ -4283,7 +4283,7 @@ final List<QuizQuestion> questionOrganisationPN = [
     explanation: "Sécurité publique : communes à police étatisée.",
     difficulty: "Moyen",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Organisation PN — Chaînes",
     question:
         "Qui organise et coordonne les moyens aériens et maritimes de la PN (frontières) ?",
@@ -4645,7 +4645,7 @@ class _QuizOrganisationPnGPXState extends State<QuizOrganisationPnGPX>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4848,7 +4848,7 @@ class _QuizOrganisationPnGPXState extends State<QuizOrganisationPnGPX>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -5031,7 +5031,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -5606,10 +5605,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5980,7 +5980,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -6021,9 +6021,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

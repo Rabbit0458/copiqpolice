@@ -1,8 +1,6 @@
 // lib/gpx_scolarite_pages/generalite_pages/complicite/complicite_contenu_page.dart
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/quizz_generalit%C3%A9/quiz_complicite_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/complicite/complicite_condition_page.dart';
 
 class HierarchieContenuPage extends StatelessWidget {
   const HierarchieContenuPage({super.key});
@@ -16,7 +14,7 @@ class HierarchieContenuPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.70);
+        : const Color(0xFF222222).withValues(alpha: .70);
 
     return Scaffold(
       backgroundColor: bg,
@@ -63,8 +61,8 @@ class HierarchieContenuPage extends StatelessWidget {
             tag: 'opj_hierarchie',
             title: 'Les Officiers de Police Judiciaire',
             subtitle:
-                'Qualité, pouvoirs, conditions d’exercice, habilitation et rôle dans la procédure pénale.',
-            imagePath: 'assets/images/image4.jpeg',
+                "Qualité, pouvoirs, conditions d'exercice, habilitation et rôle dans la procédure pénale.",
+            imagePath: 'assets/images/opj.png',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _openRoute(context, '/gpx/generalites/hierarchie/opj'),
@@ -77,7 +75,7 @@ class HierarchieContenuPage extends StatelessWidget {
             title: 'Les Agents de Police Judiciaire',
             subtitle:
                 'Art. 20, 20-1 et 21 C.P.P. — trois catégories, attributions et limites légales.',
-            imagePath: 'assets/images/image4.jpeg',
+            imagePath: 'assets/images/gardien_de_la_paix.png',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _openRoute(context, '/gpx/generalites/hierarchie/apj'),
@@ -98,13 +96,13 @@ class HierarchieContenuPage extends StatelessWidget {
           ),
           const SizedBox(height: 14),
 
-          // MODULE 4 — ASSISTANTS D’ENQUÊTE
+          // MODULE 4 — ASSISTANTS D'ENQUÊTE
           _ModuleCard(
             tag: 'assistants_enquete_hierarchie',
-            title: 'Les assistants d’enquête',
+            title: "Les assistants d'enquête",
             subtitle:
                 'Appui technique : personnels B, CSTAGN, APJA. Missions et cadre légal.',
-            imagePath: 'assets/images/image4.jpeg',
+            imagePath: 'assets/images/assistant_enquete.png',
             textMain: textMain,
             textSoft: textSoft,
             onTap: () => _openRoute(
@@ -166,10 +164,10 @@ class _ModuleCard extends StatelessWidget {
 
     final Color subtitleColor = isDark
         ? textSoft
-        : Colors.white.withOpacity(0.92);
+        : Colors.white.withValues(alpha: 0.92);
 
-    final Color badgeBg = Colors.white.withOpacity(0.14);
-    final Color borderClr = Colors.white.withOpacity(0.18);
+    final Color badgeBg = Colors.white.withValues(alpha: 0.14);
+    final Color borderClr = Colors.white.withValues(alpha: 0.18);
 
     return GestureDetector(
       onTap: onTap,
@@ -201,8 +199,8 @@ class _ModuleCard extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(.25),
-                      Colors.black.withOpacity(.60),
+                      Colors.black.withValues(alpha: .25),
+                      Colors.black.withValues(alpha: .60),
                     ],
                   ),
                 ),
@@ -264,7 +262,7 @@ class _ModuleCard extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
+                        ],
           ),
         ),
       ),

@@ -308,28 +308,28 @@ class ReferentielMariannePage extends StatelessWidget {
             cardColor: cardDiscriIntro,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Ces supports institutionnels rappellent les définitions, les démarches possibles "
                 "et les dispositifs d’écoute et de signalement du ministère de l’Intérieur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Source",
                 bodySpans: [
-                  const TextSpan(text: "Affiches et flyers (kit graphique) — "),
-                  const TextSpan(
+                  TextSpan(text: "Affiches et flyers (kit graphique) — "),
+                  TextSpan(
                     text: "egalite-diversite.interieur.ader.gouv.fr",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Référence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "INSTITUTIONS ET VALEURS / Retour Sommaire 130 — Mis à jour le 13/03/2025.",
                   ),
@@ -367,34 +367,34 @@ class ReferentielMariannePage extends StatelessWidget {
             cardColor: cardSanctions,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Sanctions pénales"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Sanctions pénales"),
+              _BulletPoint(
                 text:
                     "Discrimination : 3 ans d’emprisonnement et 45 000 € d’amende.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Harcèlement moral : 2 ans de prison et 30 000 € d’amende.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Harcèlement sexuel : 2 à 3 ans de prison et 30 000 € à 45 000 € d’amende.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Sanctions disciplinaires"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Sanctions disciplinaires"),
+              _BulletPoint(
                 text:
                     "Après étude du dossier et selon la gravité : jusqu’à la radiation des cadres ou la révocation.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Mesures administratives"),
-              const _BulletPoint(text: "Suspension de fonction."),
-              const _BulletPoint(text: "Mutation dans l’intérêt du service."),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
+              _SubTitle("Mesures administratives"),
+              _BulletPoint(text: "Suspension de fonction."),
+              _BulletPoint(text: "Mutation dans l’intérêt du service."),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Nota",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(text: "Référence document : @SICoP/2017."),
                 ],
               ),
@@ -454,37 +454,37 @@ class ReferentielMariannePage extends StatelessWidget {
             cardColor: cardDiscriDef,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Qu’est-ce qu’une discrimination ?"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Qu’est-ce qu’une discrimination ?"),
+              _Paragraph(
                 "C’est un traitement défavorable appliqué à une personne :",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Sur un des critères interdits par la loi (origine, sexe, orientation sexuelle, handicap, lieu de résidence… etc.).",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article 225-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (énonce les critères de distinction constitutifs d’une discrimination).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Dans un domaine spécifié par la loi (ex. accès à l’emploi, sanctions disciplinaires, relations fournisseurs, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "À retenir",
                 bodySpans: [
                   TextSpan(
@@ -494,8 +494,8 @@ class ReferentielMariannePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Qu’est-ce que le harcèlement ?"),
+              SizedBox(height: 12),
+              _SubTitle("Qu’est-ce que le harcèlement ?"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Harcèlement moral : ",
@@ -508,26 +508,26 @@ class ReferentielMariannePage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 222-33-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article 6 quinquies de la loi n°83-634",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : propos ou comportements répétés ayant pour objet/effet une dégradation des conditions de travail "
                       "susceptible de porter atteinte aux droits et à la dignité, d’altérer la santé, ou de compromettre l’avenir professionnel.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Harcèlement sexuel : ",
@@ -540,20 +540,20 @@ class ReferentielMariannePage extends StatelessWidget {
               _Paragraph.rich([
                 TextSpan(
                   text: "article 222-33 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article 6 ter de la loi n°83-634",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : imposer de façon répétée des propos/comportements à connotation sexuelle "
                       "portant atteinte à la dignité (dégradant/humiliant) ou créant une situation intimidante, hostile ou offensante. "
@@ -610,53 +610,53 @@ class ReferentielMariannePage extends StatelessWidget {
             cardColor: cardVictimes,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Une violence sexuelle peut être : un acte sexuel (avec ou sans pénétration) commis "
                 "avec violence, contrainte, menace ou surprise, donc sans consentement. "
                 "Aucune tenue, parole ou comportement (même sous alcool) ne justifie ces violences.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Déposer plainte (24h/24 – 7j/7)"),
+              SizedBox(height: 12),
+              _SubTitle("Déposer plainte (24h/24 – 7j/7)"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les policiers ou gendarmes sont tenus de recevoir toutes les plaintes (",
                 ),
                 TextSpan(
                   text: "article 15-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Urgences & contacts essentiels"),
-              const _BulletPoint(text: "En danger : 17 (Police/Gendarmerie)."),
-              const _BulletPoint(text: "Depuis un portable : 112."),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Urgences & contacts essentiels"),
+              _BulletPoint(text: "En danger : 17 (Police/Gendarmerie)."),
+              _BulletPoint(text: "Depuis un portable : 112."),
+              _BulletPoint(
                 text: "Pour personnes sourdes/malentendantes/muettes : 114.",
               ),
-              const _BulletPoint(text: "Sapeurs-pompiers : 18."),
-              const _BulletPoint(text: "Urgences médicales : 15."),
-              const SizedBox(height: 12),
-              const _SubTitle("Portail en ligne (tchat)"),
-              const _BulletPoint(
+              _BulletPoint(text: "Sapeurs-pompiers : 18."),
+              _BulletPoint(text: "Urgences médicales : 15."),
+              SizedBox(height: 12),
+              _SubTitle("Portail en ligne (tchat)"),
+              _BulletPoint(
                 text:
                     "Signalement violences sexuelles et sexistes : 7j/7 24h/24 (service-public.fr / signalement-violences-sexuelles-sexistes.gouv.fr).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Numéro d’écoute"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Numéro d’écoute"),
+              _BulletPoint(
                 text:
                     "3919 : violences femmes info (appel gratuit et anonyme).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "Rappel",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Dans la procédure pénale, des mesures de protection peuvent être mises en place et la victime peut demander réparation "
@@ -700,10 +700,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -768,7 +768,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -811,7 +811,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -873,7 +873,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -905,7 +905,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -918,7 +918,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

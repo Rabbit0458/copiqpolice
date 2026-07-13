@@ -113,24 +113,24 @@ class TitresSejourPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 411-1 du C.E.S.E.D.A.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : présente les principaux titres de séjour délivrés aux majeurs (typologie).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La mention exacte portée sur le titre est déterminante (ex. « salarié », « vie privée et familiale », « étudiant »…).",
                   ),
@@ -147,126 +147,126 @@ class TitresSejourPage extends StatelessWidget {
             cardColor: cardMaj,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Les différents titres"),
+            children: const [
+              _SubTitle("A) Les différents titres"),
               _Paragraph.rich([
-                const TextSpan(text: "Base : "),
+                TextSpan(text: "Base : "),
                 TextSpan(
                   text: "article L. 411-1 du C.E.S.E.D.A.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) Carte de résident"),
-              const _Paragraph(
+              _SubTitle("1) Carte de résident"),
+              _Paragraph(
                 "Délivrable aux étrangers résidant en France qui remplissent les conditions fixées par la loi. "
                 "Validité : 10 ans. La carte de résident permanent est délivrée de droit dès le 2ᵉ renouvellement (selon régime applicable).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Carte de séjour temporaire"),
-              const _Paragraph(
+              _SubTitle("2) Carte de séjour temporaire"),
+              _Paragraph(
                 "Validité : 1 an. Concerne notamment les étrangers ne remplissant pas les conditions pour une carte de résident. "
                 "Peut se présenter sous forme de carte plastifiée ou de vignette apposée sur le passeport. "
                 "Elle comporte des mentions (ex. « salarié », « vie privée et familiale »).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Carte de séjour pluriannuelle"),
-              const _Paragraph(
+              _SubTitle("3) Carte de séjour pluriannuelle"),
+              _Paragraph(
                 "Porte des mentions (ex. « talent », « étudiant-programme de mobilité », « salarié détaché ICT »). "
                 "Validité : de 2 à 4 ans, renouvelable.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 411-4 du C.E.S.E.D.A.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : durée/renouvellement (référence)."),
+                TextSpan(text: " : durée/renouvellement (référence)."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Carte de séjour « retraité »"),
-              const _Paragraph(
+              _SubTitle("4) Carte de séjour « retraité »"),
+              _Paragraph(
                 "Validité : 10 ans, renouvelée de plein droit. "
                 "Le bénéficiaire peut entrer en France à tout moment pour y effectuer des séjours n’excédant pas 1 an.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("5) Certificat de résidence algérien"),
-              const _Paragraph(
+              _SubTitle("5) Certificat de résidence algérien"),
+              _Paragraph(
                 "Régime particulier lié à un accord bilatéral. Les ressortissants algériens se voient délivrer un certificat de résidence algérien.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Tout ressortissant algérien majeur doit être titulaire d’un titre de séjour pour résider en France.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Entre 16 et 18 ans : titre requis s’il souhaite travailler.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Un certificat d’1 an peut être délivré avec mentions (« vie privée et familiale », « salarié », « étudiant »…). "
                 "Un certificat de 10 ans peut aussi être délivré sous certaines conditions.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("6) Résidents U.E / E.E.E"),
-              const _Paragraph(
+              _SubTitle("6) Résidents U.E / E.E.E"),
+              _Paragraph(
                 "Les résidents de l’Union européenne et de l’Espace économique européen peuvent séjourner en France "
                 "avec un passeport ou une carte nationale d’identité en cours de validité.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Ils peuvent également demander une carte de séjour « Ressortissant d’un État membre de l’U.E » "
                 "(convenances personnelles). Certains cas peuvent exiger une mention autorisant l’activité professionnelle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "E.E.E. : États membres de l’U.E + Islande, Liechtenstein, Norvège.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("7) Visas de long séjour (visa D)"),
-              const _Paragraph(
+              _SubTitle("7) Visas de long séjour (visa D)"),
+              _Paragraph(
                 "Trois grands types existent, selon les mentions : "
                 "« vie privée et familiale », « visiteur », « étudiant », « salarié », « travailleur temporaire », "
                 "« scientifique-chercheur », « stagiaire », etc. "
                 "Certains visent une dispense temporaire de carte de séjour ou imposent une demande de carte dans les 2 mois.",
               ),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "Ces visas valent titre de séjour (durée > 3 mois et ≤ 1 an). "
                 "Les titulaires sont soumis à une procédure d’enregistrement auprès de l’O.F.I.I. "
                 "Une vignette spécifique est apposée dans le passeport.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("8) Mention « Accord de retrait » (Royaume-Uni)"),
-              const _Paragraph(
+              _SubTitle("8) Mention « Accord de retrait » (Royaume-Uni)"),
+              _Paragraph(
                 "Depuis le 1er janvier 2022, les ressortissants britanniques doivent détenir soit "
                 "un titre spécifique portant la mention « Accord de retrait », soit un titre de droit commun.",
               ),
@@ -281,38 +281,38 @@ class TitresSejourPage extends StatelessWidget {
             cardColor: cardMin,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Les mineurs étrangers résidant en France sont dispensés de détenir un titre de séjour. "
                 "Cependant, pour faciliter les déplacements à l’étranger et le retour sur le territoire, "
                 "un document spécifique est requis.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "Document de Circulation pour Étranger Mineur (D.C.E.M.)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le D.C.E.M. facilite les déplacements et la réadmission sur le territoire français. "
                 "Sa durée de validité ne peut excéder 5 ans (conditions de délivrance simplifiées).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text:
                       "articles L.414-4, L.414-5, L.414-6, L.414-9 et L. 236-1 du C.E.S.E.D.A.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un D.C.E.M. délivré par le préfet de Mayotte ne permet la réadmission qu’à Mayotte. "
                         "Le document est inscrit dans l’application A.G.D.R.E.F.2.",
@@ -330,66 +330,66 @@ class TitresSejourPage extends StatelessWidget {
             cardColor: cardAsile,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Définitions"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Définitions"),
+              _BulletPoint(
                 text:
                     "Réfugié : craint d’être persécuté (race, religion, nationalité, groupe social, opinions politiques).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Apatride : aucun État ne le considère comme ressortissant (Convention de New York, 28/09/1954).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Protection subsidiaire : ne remplit pas les critères du réfugié, mais risque des menaces graves (peine de mort, tortures, traitements inhumains, menace grave contre la vie).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Documents délivrés pendant la procédure"),
-              const _Paragraph(
+              _SubTitle("B) Documents délivrés pendant la procédure"),
+              _Paragraph(
                 "Les demandeurs déposent un dossier auprès de l’O.F.P.R.A. "
                 "Ils reçoivent un récépissé constatant le dépôt (valable 3 mois). "
                 "Il existe plusieurs types de récépissés (dépôt, reconnaissance de protection, admission au titre de l’asile).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) En cas de décision favorable de l’O.F.P.R.A.",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les réfugiés et apatrides peuvent obtenir une carte de séjour pluriannuelle "
                 "mention « bénéficiaire du statut d’apatride » (4 ans) ou une carte de résident (10 ans), selon le cas.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L.424-1 et L. 424-18 du C.E.S.E.D.A.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les bénéficiaires de la protection subsidiaire reçoivent de plein droit une carte de séjour pluriannuelle "
                 "mention « bénéficiaire de la protection subsidiaire » (4 ans). Une carte de résident (10 ans) peut être obtenue "
                 "après une résidence régulière d’au moins 4 ans (selon conditions).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L.424-9 et L. 424-13 du C.E.S.E.D.A.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -457,10 +457,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -525,7 +525,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -568,7 +568,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -630,7 +630,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -641,10 +641,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -656,13 +655,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -675,13 +673,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

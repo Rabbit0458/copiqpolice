@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 
 /// Page : La sanction — Causes d’aggravation de la sanction
-/// Route alignée avec la config : /sanction/causes_aggravation
+/// Route alignée avec la config : /gpx/sanction/causes_aggravation
 class CausesAggravationPage extends StatelessWidget {
-  static const String routeName = '/sanction/causes_aggravation';
+  static const String routeName = '/gpx/sanction/causes_aggravation';
   const CausesAggravationPage({super.key});
 
   @override
@@ -32,9 +32,9 @@ class CausesAggravationPage extends StatelessWidget {
             padding: const EdgeInsets.fromLTRB(20, 16, 20, 24),
             sliver: SliverList.list(
               children: [
-                _SectionCard(
+                const _SectionCard(
                   title: 'Objet',
-                  child: const Text(
+                  child: Text(
                     'Identifier les causes d’aggravation prévues par la loi (récidive, circonstances aggravantes, '
                     'statuts particuliers) et leur impact sur la qualification et l’échelle des peines.',
                   ),
@@ -52,12 +52,12 @@ class CausesAggravationPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '1) Récidive',
                   caption: 'Conditions temporelles et matérielles',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Contrainte légale : antécédent définitif + nouvelle infraction dans les délais légaux.',
                       ),
@@ -72,13 +72,13 @@ class CausesAggravationPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '2) Circonstances aggravantes',
                   caption:
                       'Qualité de la victime · Bande organisée · Arme · Lieu',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Victime vulnérable / dépositaire de l’autorité publique.',
                       ),
@@ -96,13 +96,13 @@ class CausesAggravationPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '3) Statuts/professions protégés',
                   caption:
                       'Ex. conjoint, mineur, magistrat, policier… (suivant textes)',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _Bullet(
                         'Aggravations automatiques si l’infraction vise certaines victimes ou fonctions.',
                       ),
@@ -114,12 +114,12 @@ class CausesAggravationPage extends StatelessWidget {
                 ),
 
                 const SizedBox(height: 16),
-                _SectionCard(
+                const _SectionCard(
                   title: '4) Vigilance procédurale',
                   caption: 'Preuves & mentions',
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const [
+                    children: [
                       _ChecklistLine(
                         'Rassembler les éléments objectifs (pièces du casier, jugement, constats).',
                       ),
@@ -145,13 +145,13 @@ class CausesAggravationPage extends StatelessWidget {
                 const _LinkTile(
                   title: 'Classification des peines',
                   subtitle: 'Natures · Alternatives · Mesures de sûreté',
-                  route: '/sanction/classification_peines',
+                  route: '/gpx/sanction/classification_peines',
                 ),
                 const SizedBox(height: 10),
                 const _LinkTile(
                   title: 'Pluralité d’infractions',
                   subtitle: 'Concours & cumul · Confusion de peines',
-                  route: '/sanction/pluralite_infractions',
+                  route: '/gpx/sanction/pluralite_infractions',
                 ),
               ],
             ),
@@ -277,7 +277,7 @@ class _Token {
   static BoxShadow get shadow => BoxShadow(
     color: Colors.black.withValues(alpha: .08),
     blurRadius: 20,
-    offset: Offset(0, 10),
+    offset: const Offset(0, 10),
   );
 }
 

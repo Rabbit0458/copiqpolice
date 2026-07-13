@@ -174,7 +174,7 @@ class AccountManagementService {
       if (data == null) {
         return AccountActionResult.failure('empty_export');
       }
-      const encoded = JsonEncoder.withIndent('  ').convert(data);
+      final encoded = JsonEncoder.withIndent('  ').convert(data);
       return AccountActionResult.success({
         'json': encoded,
         'raw': data,

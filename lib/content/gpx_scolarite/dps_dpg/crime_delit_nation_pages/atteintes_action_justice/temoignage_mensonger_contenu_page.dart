@@ -109,16 +109,16 @@ class TemoignageMensongerContenuPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 434-13 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le témoignage mensonger.",
                 ),
               ]),
@@ -133,53 +133,53 @@ class TemoignageMensongerContenuPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Un témoignage devant une juridiction ou un O.P.J.",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le témoignage est le récit fait oralement par une personne de ce qu’elle a vu ou entendu. "
                 "Le faux témoignage n’est punissable que s’il est fait en justice : devant une juridiction quelconque, "
                 "ou devant un O.P.J. lorsqu’il agit en exécution d’une commission rogatoire.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le terme « juridiction » est général : pénale, civile, administrative ou financière. "
                 "Sont notamment visées les juridictions de jugement, d’instruction, ainsi que les O.P.J. dans le cadre "
                 "d’une commission rogatoire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ne sont pas punissables les déclarations mensongères faites au cours d’une enquête préliminaire ou de flagrance.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un témoignage fait sous serment"),
-              const _Paragraph(
+              _SubTitle("B) Un témoignage fait sous serment"),
+              _Paragraph(
                 "Le faux témoignage suppose une déclaration faite sous la foi du serment : "
                 "le mensonge seul ne suffit pas. Le témoin prête serment « de dire la vérité, toute la vérité ».",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’infraction ne peut pas être retenue notamment contre les mineurs de moins de 16 ans (absence d’exigence du serment), "
                         "ou contre certaines personnes dont le statut fait obstacle au serment.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La personne entendue par l’O.P.J. sous commission rogatoire en garde à vue n’est pas tenue de prêter serment : "
                         "elle bénéficie du droit de ne pas contribuer à sa propre incrimination.",
@@ -187,72 +187,72 @@ class TemoignageMensongerContenuPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Un témoignage mensonger (altération volontaire de la vérité)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Toute altération faite sciemment de la vérité est incriminée, quelle qu’en soit la forme, "
                 "dès lors qu’elle a pu influencer la décision du juge. "
                 "Le faux témoignage est une infraction de commission : il requiert un acte positif (un mensonge), "
                 "le refus de comparaître ou de déposer n’est pas assimilé à un faux témoignage.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "Le mensonge peut consister :\n"
                 "• en l’affirmation d’un fait inexact ;\n"
                 "• en la négation d’un fait véritable (déclarer ne pas savoir alors qu’on sait) ;\n"
                 "• ou encore en une omission (silence sur un point déterminé / réponse partielle) si la présentation incomplète dénature la réalité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple : un témoin relate une scène mais omet un élément clé, rendant l’ensemble trompeur.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Un témoignage « déterminant »"),
-              const _Paragraph(
+              _SubTitle("D) Un témoignage « déterminant »"),
+              _Paragraph(
                 "Le faux témoignage est punissable s’il porte sur des circonstances essentielles du litige : "
                 "des éléments susceptibles d’emporter la conviction du juge. "
                 "La jurisprudence exige que l’altération de la vérité présente un intérêt dans l’affaire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
                   TextSpan(
                     text: "C.A. Paris, 27 février 1996",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : altération volontaire de la vérité portant sur les circonstances essentielles.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
                   TextSpan(
                     text: "Cass. crim., 27 janvier 1960",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : punissable dès lors que l’altération porte sur une circonstance présentant un intérêt dans l’affaire.",
                   ),
@@ -269,17 +269,17 @@ class TemoignageMensongerContenuPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Conscience de mentir et de trahir le serment",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’infraction est intentionnelle : l’auteur doit avoir la volonté délibérée de tromper. "
                 "Le mensonge ne peut être que volontaire et de mauvaise foi.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Dessein conscient de tromper la justice"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Dessein conscient de tromper la justice"),
+              _Paragraph(
                 "Le délit ne peut résulter d’une imprudence ou d’une inattention. "
                 "La loi ne punit pas celui qui se trompe, mais celui qui ment sciemment. "
                 "Le mobile importe peu.",
@@ -295,48 +295,48 @@ class TemoignageMensongerContenuPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 434-14 1° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : témoignage provoqué par la remise d’un don ou d’une récompense quelconque.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La sauvegarde de l’emploi peut constituer une contrepartie : ",
                   ),
                   TextSpan(
                     text: "C.A. Douai, 22 mai 1996",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 434-14 2° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque la personne contre laquelle ou en faveur de laquelle le faux témoignage est commis est passible d’une peine criminelle.",
                 ),
@@ -352,150 +352,150 @@ class TemoignageMensongerContenuPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Infraction simple : "),
-                const TextSpan(
+                TextSpan(text: "Infraction simple : "),
+                TextSpan(
                   text: "5 ans d’emprisonnement et 75 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 434-13 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (don/récompense) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (don/récompense) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 434-14 1° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (peine criminelle encourue) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (peine criminelle encourue) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 434-14 2° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Responsabilité pénale possible (droit commun) : ",
                 ),
                 TextSpan(
                   text: "article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — "),
+                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ". Elle peut se confondre avec la subornation de témoin (",
                 ),
                 TextSpan(
                   text: "article 434-15 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Complicité retenue lorsque la personne incite l’auteur principal à répéter de fausses informations : ",
                   ),
                   TextSpan(
                     text: "C.A. Toulouse, 09 février 2006",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Rétractation : réduction ou exemption de peine"),
+              _SubTitle("Rétractation : réduction ou exemption de peine"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 434-13 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : le faux témoin est exempt de peine s’il rétracte spontanément son témoignage avant la décision mettant fin à la procédure.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Rétractation spontanée deux jours après un faux témoignage sous commission rogatoire : exemption appliquée — ",
                   ),
                   TextSpan(
                     text: "C.A. Paris, 04 juin 2007",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Point clé",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La rétractation doit être spontanée et intervenir avant qu’elle ne soit considérée comme tardive (en pratique : avant la clôture des débats).",
@@ -538,10 +538,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -606,7 +606,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -649,7 +649,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -711,7 +711,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -743,7 +743,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -756,7 +756,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

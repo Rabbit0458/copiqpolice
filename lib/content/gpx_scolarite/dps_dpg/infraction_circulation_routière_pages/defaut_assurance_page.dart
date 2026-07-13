@@ -117,16 +117,16 @@ class DefautAssurancePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 324-2 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime le défaut d’assurance.",
                 ),
               ]),
@@ -141,37 +141,37 @@ class DefautAssurancePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Véhicules concernés par l’obligation de s’assurer",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Toute personne dont la responsabilité peut être engagée en raison de la mise en circulation "
                 "d’un véhicule à moteur ainsi que ses remorques ou semi-remorques doit s’assurer. "
                 "Il s’agit de couvrir les atteintes éventuelles aux personnes et aux biens, en raison des dommages "
                 "subis par des tiers.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Un contrat d’assurance doit être souscrit auprès d’une entreprise d’assurance agréée dans ce domaine.",
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Un défaut d’assurance"),
-              const _Paragraph(
+              _SubTitle("B) Un défaut d’assurance"),
+              _Paragraph(
                 "Le défaut d’assurance peut être constitué dès que le véhicule est stationné sur la voie publique "
                 "ou sur un parking privé dès lors que celui-ci est accessible à la circulation publique.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il est également constitué lorsque le contrat était résilié au moment des faits. Enfin, l’infraction "
                 "est constituée lorsque l’assurance n’est pas ou n’est plus valable, sachant que le défaut de paiement "
                 "d’une prime n’entraîne pas immédiatement la suspension ou la résiliation d’un contrat d’assurance.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La charge de la preuve de la souscription d’une assurance repose sur le souscripteur, "
                         "qui peut la justifier par tout moyen.",
@@ -217,55 +217,55 @@ class DefautAssurancePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues"),
+            children: const [
+              _SubTitle("Peines encourues"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification : "),
-                const TextSpan(text: "délit. "),
-                const TextSpan(text: "— Amende : "),
-                const TextSpan(text: "3 750 €"),
-                const TextSpan(text: ". — "),
+                TextSpan(text: "Qualification : "),
+                TextSpan(text: "délit. "),
+                TextSpan(text: "— Amende : "),
+                TextSpan(text: "3 750 €"),
+                TextSpan(text: ". — "),
                 TextSpan(
                   text: "Article L. 324-2 I du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 title: "ATTENTION",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ce délit, non sanctionné d’une peine d’emprisonnement, interdit l’application du cadre "
                         "juridique de flagrance et la prise d’une mesure de garde à vue.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              SizedBox(height: 12),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -278,64 +278,64 @@ class DefautAssurancePage extends StatelessWidget {
             cardColor: cardConst,
             accent: accentIndigo,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’action publique peut être éteinte par le paiement d’une amende forfaitaire délictuelle "
                       "fixée par la loi dans les conditions prévues à ",
                 ),
                 TextSpan(
                   text: "l’article D. 45-3 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: ". Elle peut être applicable au défaut d’assurance.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Procès-verbal électronique"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Procès-verbal électronique"),
+              _Paragraph(
                 "L’infraction doit être constatée par un procès-verbal électronique dressé au moyen "
                 "d’un appareil sécurisé (terminaux Néo).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette procédure doit être limitée aux cas ne laissant aucun doute sur la caractérisation "
                         "de l’infraction et ne nécessitant pas d’investigations complémentaires.",
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
               _Paragraph.rich([
-                const TextSpan(text: "Par contre, "),
+                TextSpan(text: "Par contre, "),
                 TextSpan(
                   text: "l’article 495-17 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " dispose que la procédure d’amende forfaitaire délictuelle n’est pas applicable :",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text: "Si le délit a été commis par un mineur.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si le délit a été commis en état de récidive légale (mention TAJ pour le même délit ou un délit assimilé), sauf dispositions contraires.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si plusieurs infractions, dont l’une au moins ne peut donner lieu à une amende forfaitaire, ont été constatées simultanément.",
               ),
@@ -375,10 +375,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -443,7 +443,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -486,7 +486,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -548,7 +548,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -580,7 +580,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -593,7 +593,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -121,31 +121,31 @@ class NotificationDroitsSuspectMajeurEmprisonnementPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 61-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit les conditions de l’audition libre d’une personne soupçonnée et les droits devant être portés à sa connaissance avant toute audition.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Visa éventuel (majeur protégé) : "),
+                TextSpan(text: "Visa éventuel (majeur protégé) : "),
                 TextSpan(
                   text: "article 706-112-2 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " si la personne fait l’objet d’une mesure de protection juridique (tutelle/curatelle).",
                 ),
@@ -160,33 +160,33 @@ class NotificationDroitsSuspectMajeurEmprisonnementPage
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de rédaction"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Lieu de rédaction"),
+              _Paragraph(
                 "Indiquer précisément le lieu où est rédigé le procès-verbal.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("2) Instructions"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("2) Instructions"),
+              _Paragraph(
                 "Le PV doit rappeler le cadre d’intervention de l’A.P.J. :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "En flagrant délit : l’A.P.J. agit conformément aux instructions reçues de l’O.P.J.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "En enquête préliminaire : l’A.P.J. agit sous le contrôle de l’O.P.J.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("3) Cadre juridique"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("3) Cadre juridique"),
+              _Paragraph(
                 "Situer l’action dans un cadre juridique précis : enquête de flagrance ou enquête préliminaire.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("4) Assistants éventuels"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("4) Assistants éventuels"),
+              _Paragraph(
                 "Si le rédacteur se fait assister, mentionner clairement le grade, le nom et le service du collègue.",
               ),
             ],
@@ -199,35 +199,35 @@ class NotificationDroitsSuspectMajeurEmprisonnementPage
             cardColor: cardMode,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Principe"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Principe"),
+              _Paragraph(
                 "L’audition libre exclut toute forme de contrainte.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Mode de comparution"),
-              const _BulletPoint(text: "À la suite d’une convocation."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Mode de comparution"),
+              _BulletPoint(text: "À la suite d’une convocation."),
+              _BulletPoint(
                 text:
                     "Ou après avoir été conduite sans contrainte devant l’O.P.J. (acceptation de rejoindre le service).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Il n’y a pas contrainte si la personne accepte de rejoindre le service en montant dans le véhicule. En revanche, si elle a été menottée ou contrainte à monter, elle ne peut pas être entendue librement : décision de l’O.P.J. (GAV si conditions réunies ou convocation ultérieure).",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Confirmation de l’absence de contrainte"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Confirmation de l’absence de contrainte"),
+              _Paragraph(
                 "Faire confirmer au suspect qu’il a suivi de son plein gré les agents et qu’il n’a subi aucune contrainte lors du transport.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Identité"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Identité"),
+              _Paragraph(
                 "Consigner la « petite identité » de la personne.",
               ),
             ],
@@ -240,58 +240,58 @@ class NotificationDroitsSuspectMajeurEmprisonnementPage
             cardColor: cardDroits,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Droits visés à l’"),
+                TextSpan(text: "Droits visés à l’"),
                 TextSpan(
                   text: "article 61-1 C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (à notifier avant toute audition) :"),
+                TextSpan(text: " (à notifier avant toute audition) :"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Qualification, date et lieu présumés de l’infraction soupçonnée (commise ou tentée).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit de quitter, à tout moment, les locaux où la personne est entendue.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit d’être assistée par un interprète, le cas échéant.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Après avoir décliné son identité : droit de faire des déclarations, répondre aux questions ou se taire.",
               ),
-              const _BulletPoint(text: "Droit d’être assisté par un avocat."),
-              const _BulletPoint(
+              _BulletPoint(text: "Droit d’être assisté par un avocat."),
+              _BulletPoint(
                 text:
                     "Droit d’accéder à certaines pièces du dossier (PV d’audition ou de confrontation antérieurs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Droit de bénéficier, le cas échéant gratuitement, de conseils juridiques dans une structure d’accès au droit.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Majeur protégé : avis au tuteur/curateur (",
                   ),
                   TextSpan(
                     text: "article 706-112-2 C.P.P.",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "). Il peut désigner un avocat ou demander une désignation d’office pour assister le majeur protégé lors de l’audition.",
                   ),
@@ -307,15 +307,15 @@ class NotificationDroitsSuspectMajeurEmprisonnementPage
             cardColor: cardCadre,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Recueil des déclarations"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Recueil des déclarations"),
+              _Paragraph(
                 "Consigner la position de la personne : exercice des droits, demandes éventuelles (avocat, interprète, etc.), et sa décision quant à l’audition.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si la personne renonce au droit à l’avocat et accepte d’être entendue hors la présence de son conseil, rappeler les termes de l’article préliminaire du code de procédure pénale.",
                   ),
@@ -408,10 +408,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -517,8 +517,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -586,10 +586,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -656,10 +656,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -698,9 +698,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -735,7 +735,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,
@@ -767,10 +767,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -835,7 +835,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -878,7 +878,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -940,7 +940,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -951,10 +951,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -966,13 +965,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -985,13 +983,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -1155,7 +1155,7 @@ class _ProfilPageState extends State<ProfilPage> {
                       icon: Icons.workspace_premium_outlined,
                       title: 'Abonnement',
                       onTap: () => Navigator.of(context).push(
-                        MaterialPageRoute(builder: (_) => AbonnementPage()),
+                        MaterialPageRoute(builder: (_) => const AbonnementPage()),
                       ),
                     ),
                     _SettingsTile(
@@ -1700,6 +1700,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
 
           _LabeledPill(
             label: 'Name',
+            background: pillColor,
             child: TextField(
               controller: _nameCtrl,
               onChanged: (_) => _debouncedSave(),
@@ -1708,20 +1709,19 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 hintText: 'Votre nom',
               ),
             ),
-            background: pillColor,
           ),
           const SizedBox(height: 12),
 
           _LabeledPill(
             label: 'Anniversaire',
             onTap: _openBirthPicker,
+            background: pillColor,
             child: Text(
               _birthDate == null
                   ? 'Sélectionnez…'
                   : '${_birthDate!.day.toString().padLeft(2, '0')}.${_birthDate!.month.toString().padLeft(2, '0')}.${_birthDate!.year}',
               style: const TextStyle(fontWeight: FontWeight.w600),
             ),
-            background: pillColor,
           ),
 
           const SizedBox(height: 22),
@@ -1893,7 +1893,7 @@ class _SettingsTile extends StatelessWidget {
 /// Loader “Apple-like” (3 points qui pulsents)
 class _AppleLikeLoader extends StatefulWidget {
   final double size;
-  const _AppleLikeLoader({this.size = 22, super.key});
+  const _AppleLikeLoader({this.size = 22});
   @override
   State<_AppleLikeLoader> createState() => _AppleLikeLoaderState();
 }

@@ -107,16 +107,16 @@ class ExtorsionPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : définit et réprime l’extorsion."),
+                TextSpan(text: " : définit et réprime l’extorsion."),
               ]),
             ],
           ),
@@ -129,207 +129,207 @@ class ExtorsionPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Des moyens mis en œuvre (violence, menace ou contrainte)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il n’y a extorsion que si le comportement de la victime a été obtenu par violence, "
                 "menace de violences ou contrainte. Si la remise résulte seulement de promesses fallacieuses, "
                 "l’infraction n’est pas constituée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : remise d’un véhicule de location et d’une carte bancaire après promesse de travail (pas d’extorsion). ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 27 juin 1997)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) Des violences"),
-              const _Paragraph(
+              _SubTitle("1) Des violences"),
+              _Paragraph(
                 "Sont visés tous procédés de contrainte physique privant la victime de sa liberté d’action "
                 "et l’amenant à se dépouiller : coups et blessures, séquestration, brimades physiques, "
                 "privation de soins ou de nourriture, etc.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : victime maintenue dans un état quasi grabataire et de dénuement. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 19 janvier 2000)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Des menaces de violences"),
-              const _Paragraph(
+              _SubTitle("2) Des menaces de violences"),
+              _Paragraph(
                 "Il s’agit de toute menace de violences, quelle qu’en soit la forme, dès lors qu’elle a "
                 "permis la remise. Les menaces n’ont pas à être exécutées : leur formulation peut suffire.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Exemples jurisprudentiels : "),
+                  TextSpan(text: "Exemples jurisprudentiels : "),
                   TextSpan(
                     text:
                         "menaces d’égorger (C.A. Paris, 04 mai 1987) ; "
                         "pression sur un gérant pour reversement d’un pourcentage (Cass. crim., 4 novembre 1997) ; "
                         "menace avec matraque pour obtenir une somme supérieure à la dette (C.A. Grenoble, 24 mai 1996)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Une contrainte morale"),
-              const _Paragraph(
+              _SubTitle("3) Une contrainte morale"),
+              _Paragraph(
                 "La contrainte est une force d’origine externe qui domine la volonté de la victime, "
                 "ou suffisamment puissante pour lui enlever sa liberté d’esprit. Elle permet notamment de "
                 "sanctionner les extorsions par menaces visant la situation matérielle de la victime ou d’un tiers.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les juges apprécient souverainement la contrainte (force de l’expression, crainte inspirée, vulnérabilité…). ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 03 octobre 1991)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemples : menace faite à une mineure de mettre le feu au restaurant de ses parents ; intimidation par un acolyte impressionnant. ",
                   ),
                   TextSpan(
                     text:
                         "(C.A. Paris, 25 mai 1988 ; Cass. crim., 11 avril 1988)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une remise par la victime"),
-              const _Paragraph(
+              _SubTitle("B) Une remise par la victime"),
+              _Paragraph(
                 "La remise est involontaire mais consciente : la victime joue un rôle actif en remettant la chose, "
                 "même si elle y est contrainte. Sa collaboration résulte de la pression exercée.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Victime personne physique : pour l’extorsion de signature, la victime est le titulaire de la signature.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Victime personne morale : une personne morale peut être victime d’extorsion ; elle peut aussi engager sa responsabilité pénale.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Responsabilité pénale des personnes morales : ",
                 ),
                 TextSpan(
                   text: "article 121-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ". Peines applicables : "),
+                TextSpan(text: ". Peines applicables : "),
                 TextSpan(
                   text: "article 312-15 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) L’objet de la remise"),
-              const _Paragraph(
+              _SubTitle("C) L’objet de la remise"),
+              _Paragraph(
                 "L’extorsion peut porter sur : une signature, un engagement ou une renonciation, la révélation d’un secret, "
                 "ou la remise de fonds/valeurs/bien quelconque.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("1) Une signature"),
-              const _BulletPoint(
+              _SubTitle("1) Une signature"),
+              _BulletPoint(
                 text:
                     "L’infraction est constituée par le seul fait de contraindre une personne à signer (même une feuille blanche).",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : pressions d’un supérieur hiérarchique pour obtenir la signature d’une subordonnée. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 16 octobre 2002)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Un engagement ou une renonciation"),
-              const _Paragraph(
+              _SubTitle("2) Un engagement ou une renonciation"),
+              _Paragraph(
                 "Sont visés les actes écrits (contrats, quittances, reçus, démissions, mainlevées…) "
                 "ou des engagements non écrits, y compris non patrimoniaux.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudences : séquestrer un inspecteur du travail pour obtenir l’engagement écrit de ne pas dresser PV ; "
                         "renoncer à dénoncer des surfacturations illicites. ",
@@ -337,63 +337,63 @@ class ExtorsionPage extends StatelessWidget {
                   TextSpan(
                     text:
                         "(Cass. crim., 09 janvier 1991 ; Cass. crim., 28 novembre 2001)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) La révélation d’un secret"),
-              const _Paragraph(
+              _SubTitle("3) La révélation d’un secret"),
+              _Paragraph(
                 "Le secret s’entend largement : secrets de la vie privée, secrets professionnels, "
                 "secrets de correspondance ou secrets des affaires. Il peut s’agir du secret personnel ou d’autrui.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Fonds, valeurs ou bien quelconque"),
-              const _Paragraph(
+              _SubTitle("4) Fonds, valeurs ou bien quelconque"),
+              _Paragraph(
                 "Les « fonds et valeurs » comprennent valeurs mobilières, effets de commerce et instruments de paiement "
                 "(billets, chèques, carte bancaire ou code, mandats…). Le « bien quelconque » vise tout bien susceptible "
                 "d’appropriation (mobilier/immobilier), avec ou sans valeur économique, y compris des biens incorporels exploitables.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : remise sous la violence d’une carte de crédit avec le code. ",
                   ),
                   TextSpan(
                     text: "(C.A. Bordeaux, 18 octobre 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’objet doit être suffisamment déterminé : exiger un « dédommagement » trop imprécis ne suffit pas. ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 16 avril 1993)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -407,46 +407,46 @@ class ExtorsionPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’extorsion est une infraction intentionnelle : l’auteur doit vouloir obtenir ce qui ne peut "
                 "être librement consenti en usant de procédés contraignants.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Définition jurisprudentielle : "),
+                TextSpan(text: "Définition jurisprudentielle : "),
                 TextSpan(
                   text:
                       "« conscience d’obtenir par la force, la violence ou la contrainte ce qui n’aurait pu être obtenu par un accord librement consenti »",
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontWeight: FontWeight.w900,
                     color: _lawRed,
                   ),
                 ),
-                const TextSpan(text: " "),
+                TextSpan(text: " "),
                 TextSpan(
                   text: "(Cass. crim., 09 janvier 1991)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les mobiles sont indifférents (même pour obtenir ce qui serait dû). ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 23 mars 2016)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -459,119 +459,119 @@ class ExtorsionPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Extorsion aggravée délictuelle"),
+            children: const [
+              _SubTitle("A) Extorsion aggravée délictuelle"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Violences sur autrui (précédée, accompagnée ou suivie) ayant entraîné une I.T.T. ≤ 8 jours.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Au préjudice d’une personne vulnérable (âge, maladie, infirmité, déficience physique/psychique, grossesse), vulnérabilité apparente ou connue.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Auteur dissimulant volontairement tout ou partie du visage pour ne pas être identifié.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Dans un établissement d’enseignement/éducation ou aux abords immédiats lors des entrées/sorties des élèves.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Extorsion aggravée criminelle"),
+              _SubTitle("B) Extorsion aggravée criminelle"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-3 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : violences avec I.T.T. > 8 jours."),
+                TextSpan(text: " : violences avec I.T.T. > 8 jours."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : violences avec mutilation ou infirmité permanente.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : usage ou menace d’une arme, ou auteur porteur d’une arme soumise à autorisation / port prohibé.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : bande organisée (et variantes avec violences graves / arme).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : violences ayant entraîné la mort ou tortures/actes de barbarie.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si les violences sont commises pour favoriser la fuite ou assurer l’impunité : extorsion suivie de violences. ",
                   ),
                   TextSpan(
                     text: "(article 312-8 du Code pénal)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -585,179 +585,179 @@ class ExtorsionPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — aperçu"),
+            children: const [
+              _SubTitle("Peines encourues — aperçu"),
               _Paragraph.rich([
-                const TextSpan(text: "Extorsion simple (délit) : "),
-                const TextSpan(
+                TextSpan(text: "Extorsion simple (délit) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 312-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Extorsion aggravée délictuelle : "),
-                const TextSpan(
+                TextSpan(text: "Extorsion aggravée délictuelle : "),
+                TextSpan(
                   text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 312-2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Extorsion aggravée criminelle : peines de réclusion (15 ans, 20 ans, 30 ans, perpétuité) selon la circonstance. — ",
                 ),
                 TextSpan(
                   text: "articles 312-3 à 312-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Peines applicables aux personnes morales : ",
                 ),
                 TextSpan(
                   text: "article 312-15 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
+                TextSpan(text: "Tentative : OUI — "),
                 TextSpan(
                   text: "article 312-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (commencement d’exécution + absence de consommation pour circonstances indépendantes).",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : la fixation d’un rendez-vous peut constituer un début d’exécution. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 17 février 1998)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI — "),
+                TextSpan(text: "Complicité : OUI — "),
                 TextSpan(
                   text: "article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Immunité familiale"),
+              _SubTitle("Immunité familiale"),
               _Paragraph.rich([
-                const TextSpan(text: "Immunité familiale : OUI — "),
+                TextSpan(text: "Immunité familiale : OUI — "),
                 TextSpan(
                   text: "article 312-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " renvoie à "),
+                TextSpan(text: " renvoie à "),
                 TextSpan(
                   text: "l’article 311-12 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (ascendants/descendants ; conjoint sauf séparation).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Exception",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’immunité n’est pas retenue si l’extorsion porte sur des objets/documents indispensables à la vie quotidienne (documents d’identité, titre de séjour, moyens de paiement, télécommunication) ou si l’auteur est tuteur/curateur/mandataire de protection. ",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "Exemption & réduction de peine (bande organisée)",
               ),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-6-1 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : exemption de peine si l’auteur avertit l’autorité et permet d’éviter la réalisation de l’infraction.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 312-6-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réduction des deux tiers si l’avertissement permet de faire cesser l’infraction/éviter mort ou infirmité/permettre d’identifier les autres auteurs ou complices (perpétuité ramenée à 20 ans).",
                 ),
@@ -798,10 +798,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -866,7 +866,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -909,7 +909,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -971,7 +971,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1003,7 +1003,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1016,7 +1016,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

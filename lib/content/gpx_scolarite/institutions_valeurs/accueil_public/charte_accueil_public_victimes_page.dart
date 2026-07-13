@@ -111,49 +111,49 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
             cardColor: cardPrincipes,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "• "),
+                TextSpan(text: "• "),
                 TextSpan(
                   text: "Article 1",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — L’accueil du public est une priorité majeure : qualité de la réception (sur place/téléphone), "
                       "disponibilité, réduction des délais d’attente et satisfaction des demandes.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "• "),
+                TextSpan(text: "• "),
                 TextSpan(
                   text: "Article 3",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Politesse, retenue, correction : pas de familiarité, pas de propos désobligeants, "
                       "discernement, calme, sang-froid et patience. Les missions au contact du public sont "
                       "assurées en uniforme (ou tenue de ville correcte si autorisé).",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Concrètement (attendus sur le terrain)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Concrètement (attendus sur le terrain)"),
+              _BulletPoint(
                 text: "Être disponible et accueillant, y compris au téléphone.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Donner une réponse adaptée en temps réel, ou expliquer clairement le délai.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Rester impartial et objectif, même en situation émotionnelle.",
               ),
@@ -168,47 +168,47 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
             cardColor: cardPlaintes,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "• "),
+                TextSpan(text: "• "),
                 TextSpan(
                   text: "Article 2",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Chaque citoyen a le droit d’être écouté à tout moment, assisté et secouru. "
                       "Toute demande (renseignement, aide, assistance, plainte) est prise en considération, "
                       "quel que soit le mode d’expression, l’urgence ou la gravité.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "• "),
+                TextSpan(text: "• "),
                 TextSpan(
                   text: "Article 5",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Les services sont tenus de recevoir les plaintes déposées par les victimes d’infractions pénales, "
                       "y compris si le service n’est pas territorialement compétent. "
                       "Le service recevant la plainte veille aux enregistrements et diffusions utiles (recherche des auteurs/bien dérobés).",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("À retenir"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("À retenir"),
+              _BulletPoint(
                 text:
                     "Une plainte doit être reçue même hors compétence territoriale (accueil + recueil + transmission).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La demande doit être prise au sérieux, même si elle paraît confuse, incomplète ou très émotionnelle.",
               ),
@@ -223,36 +223,36 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
             cardColor: cardVictimes,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 4",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Les victimes d’infractions pénales bénéficient d’un accueil privilégié : "
                       "écoute, information sur leurs droits, accompagnement dans les démarches et, si besoin, "
                       "orientation vers un organisme d’aide (soutien psychologique / aide matérielle).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Quelles que soient les circonstances, les policiers et gendarmes veillent à préserver la dignité, "
                 "l’intimité et la pudeur des victimes. Une attention renforcée est portée aux personnes les plus vulnérables.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Mesures attendues"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Mesures attendues"),
+              _BulletPoint(
                 text: "Préserver l’intimité (lieu, posture, discrétion).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Adapter le langage, expliquer les étapes et rassurer.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Orienter vers les dispositifs d’aide si nécessaire.",
               ),
             ],
@@ -266,32 +266,32 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
             cardColor: cardDisparition,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 6",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Toute disparition fait l’objet d’une attention particulière et d’un traitement immédiat "
                       "(mineur ou majeur). Le signalement est pris en compte sans délai et donne lieu aux opérations "
                       "et diffusions de recherche nécessaires. Le requérant est tenu informé de l’évolution.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Réflexe opérationnel"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Réflexe opérationnel"),
+              _BulletPoint(
                 text: "Prendre le signalement au sérieux immédiatement.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Engager sans délai les recherches/diffusions nécessaires.",
               ),
-              const _BulletPoint(text: "Informer régulièrement le requérant."),
+              _BulletPoint(text: "Informer régulièrement le requérant."),
             ],
           ),
 
@@ -303,31 +303,31 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
             cardColor: cardInfoSuivi,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 7",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Les services veillent à informer le plaignant des actes entrepris à la suite de sa déposition "
                       "et de leurs résultats. Ils s’assurent que le fait incriminé ou la situation dénoncée ne s’est pas renouvelé.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Bonnes pratiques"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Bonnes pratiques"),
+              _BulletPoint(
                 text: "Expliquer ce qui est fait, et pourquoi (transparence).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Donner une info utile sur les suites (dans la limite du cadre légal).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Vérifier la non-réitération quand c’est pertinent.",
               ),
             ],
@@ -341,33 +341,33 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
             cardColor: cardFichiers,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 8",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — Dans le seul but d’identifier les auteurs d’infractions, des informations relatives aux victimes "
                       "peuvent être enregistrées dans certains fichiers de police judiciaire.",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _SubTitle("Droits de la victime"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("Droits de la victime"),
+              _BulletPoint(
                 text: "Obtenir communication des données la concernant.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Demander rectification ou suppression en cas d’erreur.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Procédure (rappel)",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Ces droits s’exercent indirectement auprès de la Commission Nationale de l’Informatique et des Libertés (CNIL). "
@@ -376,8 +376,8 @@ class CharteAccueilPublicVictimesPage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "En cas de condamnation définitive de l’auteur, la victime peut aussi s’opposer à la conservation "
                 "des informations la concernant, selon les modalités indiquées dans la notice remise.",
               ),
@@ -417,10 +417,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -485,7 +485,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -528,7 +528,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -590,7 +590,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -622,7 +622,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -635,7 +635,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

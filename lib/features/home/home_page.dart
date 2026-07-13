@@ -9,40 +9,25 @@ import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:flutter/foundation.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 // Services / pages existants
 import 'package:copiqpolice/core/widgets/app_notifier.dart';
 import 'package:copiqpolice/core/services/favorites.dart';
 import 'package:copiqpolice/features/home/favoris_home.dart';
 import 'package:copiqpolice/features/home/journal_home.dart';
 import 'package:copiqpolice/features/home/profil_page.dart';
-import 'package:copiqpolice/core/widgets/app_notifier.dart' show AppSettingsController;
 
 // Pages
-import 'package:copiqpolice/content/gpx_scolarite/shared/procedure_penale_page.dart';
 import 'package:copiqpolice/features/onboarding/mode_picker.dart';
 
 // ========== GPX — generalite ==========
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/classification_infractions/classification_infractions_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/generalite_pages/infraction/infraction_page.dart';
 
 // ========== GPX — Cadres juridiques ==========
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/cadres_enquete_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_flagrant_delit_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/enquete_preliminaire_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/cadres_juridiques_pages/autres_cadres_enquete_page.dart';
 
 // ========== GPX — Droit pénal général ==========
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/droit_p%C3%A9nale_g%C3%A9n%C3%A9ral_pages/responsabilite_penale_page.dart';
 
 // ========== GPX — Sanction ==========
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/sanction_pages/classification_peines_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/sanction_pages/causes_aggravation_page.dart';
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/sanction_pages/pluralite_infractions_page.dart';
 
 // ========== GPX — Crimes & délits contre les biens ==========
-import 'package:copiqpolice/content/gpx_scolarite/dps_dpg/crime_delit_bien_pages/vol_page.dart';
 
 // ========================= CONFIGURATION CENTRALE (ALIGNÉE AUX DOSSIERS) =========================
 
@@ -1095,7 +1080,7 @@ class UserModeController {
           await sp.setString(_kLocalKey, userModeToText(m));
           await sp.setBool(_kHasPassedKey, p);
         }
-      } catch (e, st) {
+      } catch (e) {
         _log('init_pull_supabase_failed', {'error': e.toString()});
         // Pas bloquant : on garde les valeurs locales
       }
@@ -1120,7 +1105,7 @@ class UserModeController {
               await sp.setString(_kLocalKey, userModeToText(m));
               await sp.setBool(_kHasPassedKey, p);
             });
-      } catch (e, st) {
+      } catch (e) {
         _log('init_realtime_failed', {'error': e.toString()});
       }
     }
@@ -1147,7 +1132,7 @@ class UserModeController {
           'user_mode': userModeToText(newMode),
           'updated_at': DateTime.now().toIso8601String(),
         }, onConflict: 'user_id'); // ✅ pas 'id'
-      } catch (e, st) {
+      } catch (e) {
         _log('set_mode_upsert_failed', {'error': e.toString()});
       }
     }
@@ -1178,7 +1163,7 @@ class UserModeController {
           'user_mode': 'school',
           'updated_at': DateTime.now().toIso8601String(),
         }, onConflict: 'user_id'); // ✅
-      } catch (e, st) {
+      } catch (e) {
         _log('mark_passed_upsert_failed', {'error': e.toString()});
       }
     }
@@ -1524,7 +1509,7 @@ class _HomeContent extends StatelessWidget {
 
   String _generateFlagKey(String categoryLabel) {
     // Convertir le label en format snake_case pour le flag
-    return categoryLabel
+    return '${categoryLabel
             .toLowerCase()
             .replaceAll(' ', '_')
             .replaceAll('—', '')
@@ -1533,15 +1518,14 @@ class _HomeContent extends StatelessWidget {
             .replaceAll('à', 'a')
             .replaceAll('ù', 'u')
             .replaceAll('\'', '')
-            .replaceAll(',', '') +
-        '_locked';
+            .replaceAll(',', '')}_locked';
   }
 
   @override
   Widget build(BuildContext context) {
     final h = MediaQuery.of(context).size.height;
     final heroHeight = (h * 0.46).clamp(300.0, 420.0);
-    final upcomingRowHeight = 232.0;
+    const upcomingRowHeight = 232.0;
     final pageHeight = heroHeight + upcomingRowHeight + 18 + 44;
 
     return ValueListenableBuilder<UserMode>(
@@ -1920,7 +1904,7 @@ class _CategoryDetailPage extends StatelessWidget {
                   color: _T.ink.withValues(alpha: 0.1),
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: Icon(Icons.article_rounded, color: _T.ink),
+                child: const Icon(Icons.article_rounded, color: _T.ink),
               ),
               title: Text(
                 subcategory.label,
@@ -2582,8 +2566,8 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                         ),
                       ),
                       const SizedBox(height: 8),
-                      Row(
-                        children: const [
+                      const Row(
+                        children: [
                           Icon(
                             Icons.star_rounded,
                             color: Colors.amber,
@@ -2602,9 +2586,9 @@ class _HeroCardState extends State<_HeroCard> with TickerProviderStateMixin {
                             color: _T.ink.withValues(alpha: .92),
                             borderRadius: BorderRadius.circular(18),
                           ),
-                          child: Row(
+                          child: const Row(
                             mainAxisAlignment: MainAxisAlignment.center,
-                            children: const [
+                            children: [
                               Expanded(
                                 child: Center(
                                   child: Text(

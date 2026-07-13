@@ -107,34 +107,34 @@ class PVCIDecouverteArmePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Le cadre du contrôle d’identité est rappelé par ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "les articles 78-2 (alinéas 2 à 17) et 78-2-1 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le recours éventuel au menottage doit être justifié conformément à ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article 803 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans le PV, pense à faire ressortir clairement le cadre exact (alinéa) retenu pour le contrôle, "
                         "et à décrire précisément les circonstances ayant conduit à la découverte de l’arme.",
@@ -152,103 +152,103 @@ class PVCIDecouverteArmePage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de saisine"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("1) Lieu de saisine"),
+              _BulletPoint(
                 text: "Mentionner l’endroit exact où se situe l’équipage.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("2) Instructions (PV de saisine)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("2) Instructions (PV de saisine)"),
+              _BulletPoint(
                 text:
                     "Équipage en patrouille : le rédacteur agit conformément aux instructions permanentes du chef de service.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("3) Assistants éventuels"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("3) Assistants éventuels"),
+              _BulletPoint(
                 text:
                     "Citer les fonctionnaires accompagnants + préciser la tenue (uniforme, tenue bourgeoise, port du brassard police).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("4) Mission"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("4) Mission"),
+              _BulletPoint(
                 text: "Indiquer le but de la mission initiale.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("5) Constatations"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("5) Constatations"),
+              _BulletPoint(
                 text:
                     "Relater les faits de manière précise et faire ressortir les éléments justifiant le contrôle d’identité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préciser le cadre du contrôle (ex. art. 78-2 al. 2 à 17 / art. 78-2-1).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("6) Instructions (formule obligatoire)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("6) Instructions (formule obligatoire)"),
+              _BulletPoint(
                 text:
                     "Inscrire la formule : « sur l’ordre et sous la responsabilité d’un officier de police judiciaire » (sinon risque de nullité).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("7) Visa de l’article CPP"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("7) Visa de l’article CPP"),
+              _BulletPoint(
                 text:
                     "Viser l’alinéa de l’article 78-2 correspondant, ou l’article 78-2-1 selon le cas.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("8) Contrôle"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("8) Contrôle"),
+              _BulletPoint(
                 text: "Mentionner l’heure et le lieu du contrôle.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("9) Palpation de sécurité"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("9) Palpation de sécurité"),
+              _BulletPoint(
                 text:
                     "Non systématique : seulement si nécessaire selon circonstances de temps/lieux.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préciser la localisation et la description de l’arme découverte + la catégorie (port interdit).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("10) Cadre juridique (suite à la découverte)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("10) Cadre juridique (suite à la découverte)"),
+              _BulletPoint(
                 text:
                     "Si port interdit : intervenir en flagrant délit (adapter selon les constatations).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("11) Interpellation"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("11) Interpellation"),
+              _BulletPoint(
                 text:
                     "Indiquer l’heure et le lieu (si différent du lieu du contrôle).",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Si menottage : justifier précisément, conformément à ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "l’article 803 du Code de procédure pénale",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (risque de fuite / dangerosité / résistance…).",
                 ),
               ]),
 
-              const SizedBox(height: 10),
-              const _SubTitle("12) Identité (style indirect)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("12) Identité (style indirect)"),
+              _BulletPoint(
                 text:
                     "État civil et adresse uniquement (pas de situation familiale/professionnelle).",
               ),
@@ -263,52 +263,52 @@ class PVCIDecouverteArmePage extends StatelessWidget {
             cardColor: cardActes,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("13) Présentation & appréhension (D.R.D.A.)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("13) Présentation & appréhension (D.R.D.A.)"),
+              _BulletPoint(
                 text:
                     "Représenter l’arme à la personne : elle peut faire une brève déclaration (style direct) sur l’appartenance, ou ne pas répondre.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ce n’est pas une audition : ne pas poser de questions hors appartenance.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Appréhender l’arme pour remise à l’OPJ (Description — Représentée — Déclaration — Appréhendée).",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("14) Avis O.P.J."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("14) Avis O.P.J."),
+              _BulletPoint(
                 text:
                     "Mentionner les instructions reçues de l’officier de police judiciaire.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("15) Retour au service"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("15) Retour au service"),
+              _BulletPoint(
                 text:
                     "Si usage de la force : décrire la résistance + les moyens de coercition utilisés.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("16) Énonciation terminale (clôture)"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("16) Énonciation terminale (clôture)"),
+              _BulletPoint(
                 text:
                     "Signature seulement si déclarations au style direct. Si tout est au style indirect : pas de signature.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("17) Présentation O.P.J."),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("17) Présentation O.P.J."),
+              _BulletPoint(
                 text:
                     "Présenter l’individu sans délai + compte-rendu verbal + remise de l’arme.",
               ),
 
-              const SizedBox(height: 10),
-              const _SubTitle("18) Mention"),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _SubTitle("18) Mention"),
+              _BulletPoint(
                 text:
                     "Recherches administratives : FPR, TAJ (le cas échéant). Mentionner que la consultation a bien été effectuée.",
               ),
@@ -358,7 +358,7 @@ class _ZoomableAssetImage extends StatelessWidget {
     final Color border = isDark ? Colors.white24 : Colors.black12;
     final Color chipBg = isDark
         ? Colors.black54
-        : Colors.white.withOpacity(.92);
+        : Colors.white.withValues(alpha: .92);
     final Color chipText = isDark ? Colors.white : const Color(0xFF050505);
 
     return Semantics(
@@ -455,7 +455,7 @@ class _ZoomableAssetImage extends StatelessWidget {
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Fermer',
-      barrierColor: Colors.black.withOpacity(.92),
+      barrierColor: Colors.black.withValues(alpha: .92),
       pageBuilder: (_, __, ___) {
         return SafeArea(
           child: Scaffold(
@@ -517,10 +517,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -585,7 +585,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -628,7 +628,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -690,7 +690,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -701,10 +701,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -716,13 +715,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -735,13 +733,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

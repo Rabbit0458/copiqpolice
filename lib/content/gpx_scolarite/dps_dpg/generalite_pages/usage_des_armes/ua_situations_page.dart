@@ -32,14 +32,14 @@ class UaSituationsPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accentColor = isDark
         ? const Color(0xFF1976D2)
         : const Color(0xFF1565C0);
     final Color referenceColor = isDark
         ? const Color(0xFF64B5F6)
         : const Color(0xFF1565C0);
-    final Color dangerColor = const Color(0xFFFF3B30);
+    const Color dangerColor = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: background,
@@ -98,7 +98,7 @@ class UaSituationsPage extends StatelessWidget {
             ),
           ]),
           const SizedBox(height: 14),
-          _NotaBox(
+          const _NotaBox(
             title: 'Principe essentiel',
             bodySpans: [
               TextSpan(
@@ -123,10 +123,10 @@ class UaSituationsPage extends StatelessWidget {
             textColor: textColor,
             children: [
               _Paragraph.rich([
-                TextSpan(
+                const TextSpan(
                   text:
                       'La première situation d’usage des armes est prévue par le ',
-                  style: const TextStyle(),
+                  style: TextStyle(),
                 ),
                 TextSpan(
                   text:
@@ -152,7 +152,7 @@ class UaSituationsPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 'Cette situation est celle qui se rapproche le plus de la légitime défense classique prévue par le Code pénal. '
                 'Compte tenu de l’imminence de l’atteinte à la vie ou à l’intégrité physique, il n’est pas prévu que les policiers procèdent à des sommations avant de faire usage de leur arme.',
               ),
@@ -207,7 +207,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'L’usage de l’arme est possible après avoir procédé à deux sommations faites à haute voix, '
                 'lorsque les policiers ne peuvent défendre autrement :',
               ),
@@ -275,7 +275,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'L’usage de l’arme est possible après deux sommations faites à haute voix, '
                 'lorsque les policiers ne peuvent autrement arrêter :',
               ),
@@ -295,11 +295,11 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text:
                       'Mais cette possibilité n’existe que si les policiers disposent de ',
-                  style: const TextStyle(),
+                  style: TextStyle(),
                 ),
                 TextSpan(
                   text: 'raisons réelles et objectives ',
@@ -308,7 +308,7 @@ class UaSituationsPage extends StatelessWidget {
                     color: dangerColor,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'de penser que, au moment où la personne prend la fuite, celle-ci va porter atteinte à la vie ou à l’intégrité physique '
                       'des policiers ou d’autrui, et qu’il n’existe pas d’autres moyens de l’empêcher.',
@@ -324,7 +324,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'Même si l’individu en fuite pourrait être arrêté plus tard par d’autres moyens, '
                 'l’usage de l’arme ne pourra être considéré comme légitime que si, au moment précis de la fuite, '
                 'la personne représente encore une menace réelle. Une simple crainte ou un soupçon ne suffit pas.',
@@ -392,7 +392,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'Les policiers peuvent faire usage de leur arme lorsqu’ils ne peuvent immobiliser autrement un véhicule, '
                 'une embarcation ou tout autre moyen de transport et que les deux conditions suivantes sont réunies :',
               ),
@@ -415,7 +415,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'L’ordre d’arrêt doit être dépourvu d’ambiguïté et clairement compris par le conducteur. '
                 'Il ne peut en aucun cas être fait usage de l’arme pour contraindre un véhicule à s’arrêter '
                 'lorsqu’aucun danger grave et actuel n’est identifié concernant ses occupants ou leur comportement.',
@@ -467,7 +467,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'Les policiers sont autorisés à faire usage de leur arme contre un individu dans cette situation lorsque les trois conditions suivantes sont réunies :',
               ),
               const SizedBox(height: 8),
@@ -493,7 +493,7 @@ class UaSituationsPage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
 
-              _Paragraph(
+              const _Paragraph(
                 'Cette hypothèse correspond aux scénarios les plus graves (tueur itinérant, attaque armée en plusieurs lieux, etc.). '
                 'Elle justifie un usage extrêmement déterminé de la force, mais toujours strictement encadré par l’exigence de nécessité absolue et de proportionnalité.',
               ),
@@ -523,25 +523,25 @@ class UaSituationsPage extends StatelessWidget {
             accent: accentColor,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
+            children: const [
               _Paragraph(
                 'Avant tout usage de l’arme, le policier doit se poser deux séries de questions :',
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint.rich([
+              SizedBox(height: 8),
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Les trois conditions préalables sont-elles remplies ? '
                       '(exercice des fonctions, identification policière, nécessité absolue et proportionnalité).',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'La situation que je suis en train de gérer correspond-elle clairement à l’un des cinq cas prévus par l’article L. 435-1 du Code de la Sécurité Intérieure ?',
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph(
                 'Si l’une de ces réponses est négative, l’usage de l’arme doit être écarté ou réexaminé. '
                 'Dans certains cas, le policier pourra éventuellement invoquer le régime général de la légitime défense prévu par le Code pénal, '
@@ -584,10 +584,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -630,7 +630,7 @@ class _Paragraph extends StatelessWidget {
     final bool isDark = Theme.of(context).brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -664,7 +664,7 @@ class _Paragraph extends StatelessWidget {
 /// PUCE (liste à points)
 /// ------------------------------------------------------------------
 class _BulletPoint extends StatelessWidget {
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   final List<InlineSpan> spans;
 
@@ -717,7 +717,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -742,7 +742,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -777,7 +777,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -790,7 +790,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 
 final List<QuizQuestion> questionEnregistrementDiffusion = [
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion d’informations personnelles — Fondement',
     question:
@@ -114,7 +114,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que l’article 223-1-1 C.P. définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance à personne en péril — Fondement',
     question: 'La non-assistance à personne en péril est incriminée par :',
     options: [
@@ -131,7 +131,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // ✅ NOUVEAU BLOC — DIFFUSION / ENREGISTREMENT D’IMAGES DE VIOLENCE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Fondement',
     question: 'La diffusion d’images de violence est incriminée par :',
     options: [
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que l’art. 222-33-3 al.2 incrimine la diffusion de l’enregistrement des images des atteintes listées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Nature juridique',
     question:
         'Le fait d’enregistrer sciemment des images de violences (happy slapping) constitue :',
@@ -158,7 +158,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'L’article 222-33-3 al.1 qualifie l’enregistrement sciemment d’images comme un acte de complicité au sens du droit commun.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément matériel',
     question: 'La diffusion s’entend notamment comme :',
     options: [
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours retient une acception large : transmission de portable à portable, internet, prêt de l’original, copies, etc.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Auteur',
     question:
         'Pour être poursuivi pour diffusion d’images de violence, il faut être :',
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Il n’est pas nécessaire que le diffuseur soit l’enregistreur : diffuser suffit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Définition',
     question: 'Le “happy slapping” désigne :',
     options: [
@@ -198,7 +198,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours qualifie l’enregistrement sciemment des images de violences comme le happy slapping.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Liste',
     question:
         'La liste des infractions dont l’enregistrement ou la diffusion d’images est visée est :',
@@ -212,7 +212,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que les infractions visées par l’art. 222-33-3 sont limitativement énumérées.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Tentative',
     question: 'La tentative de diffusion d’images de violence est :',
     options: ['Non punissable', 'Punissable', 'Une contravention'],
@@ -221,7 +221,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique : TENTATIVE : NON pour la diffusion d’images de violence.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Complicité',
     question: 'La complicité de diffusion d’images de violence est :',
     options: [
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique : COMPLICITÉ : OUI (articles 121-6 et 121-7 du C.P.).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Répression',
     question:
         'La diffusion d’images de violence est punie (personnes physiques) de :',
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // MOYENNE (Compréhension / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Champ',
     question:
         'La diffusion d’images est visée lorsqu’elle concerne des atteintes volontaires prévues notamment par :',
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'L’art. 222-33-3 vise une liste d’atteintes volontaires à l’intégrité de la personne (violences, viol, agressions sexuelles, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infraction autonome',
     question:
         'La diffusion d’images de violence est qualifiée par le cours comme :',
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que la diffusion d’images de violences est érigée en infraction autonome.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Supports',
     question: 'La diffusion peut être caractérisée par :',
     options: [
@@ -293,7 +293,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'La diffusion est entendue largement : même une transmission d’un portable à un autre suffit.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Ce qui est exclu',
     question: 'Le happy slapping exclut notamment :',
     options: [
@@ -306,7 +306,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'L’enregistrement vise une représentation visuelle : la fixation sonore est exclue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Représentation analogique',
     question:
         'Quel support est exclu de la notion d’enregistrement au sens du happy slapping ?',
@@ -320,7 +320,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours exclut la représentation analogique (peinture, dessin).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Moment décisif',
     question:
         'Pour entrer dans le champ du happy slapping, l’enregistrement doit être réalisé :',
@@ -335,7 +335,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que la commission inclut la période d’exécution : consommation et tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Actes postérieurs',
     question: 'Filmer uniquement la victime déjà au sol après les violences :',
     options: [
@@ -348,7 +348,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le moment est décisif : l’enregistrement doit porter sur l’instant où l’atteinte se commet.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Actes antérieurs',
     question:
         'Filmer uniquement l’auteur qui s’approche et menace avant de frapper :',
@@ -362,7 +362,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours exclut l’enregistrement d’actes antérieurs (approche, menaces) s’ils ne coïncident pas avec l’exécution.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Images préalablement créées',
     question:
         'Enregistrer sur son ordinateur une vidéo de violences trouvée sur internet relève plutôt :',
@@ -376,7 +376,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que l’enregistrement d’images préalablement créées n’entre pas dans l’incrimination ; l’exemple évoque le recel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Hébergeur',
     question: 'Un hébergeur de site peut être poursuivi s’il :',
     options: [
@@ -390,7 +390,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique qu’un hébergeur peut voir sa responsabilité engagée s’il a autorisé la diffusion en connaissant l’illicéité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Fait justificatif',
     question:
         'La diffusion par des professionnels de l’information peut être justifiée au titre :',
@@ -404,7 +404,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que la diffusion peut être justifiée lorsque réalisée par des professionnels pour informer le public.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Limites',
     question:
         'Même en cas d’exception d’information, la diffusion doit notamment :',
@@ -419,7 +419,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours rappelle les limites : dignité et non-identification, et respect de la loi du 29 juillet 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Fait justificatif probatoire',
     question:
         'L’enregistrement d’images de violences est justifié s’il est réalisé :',
@@ -434,7 +434,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours reconnaît une exception probatoire lorsque l’enregistrement sert à établir les faits ou identifier les auteurs.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Exception probatoire',
     question:
         'Concernant la diffusion d’images, l’exception probatoire est, selon le cours :',
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique qu’il paraît impossible de diffuser sur TV/internet “pour servir de preuve” sans constituer l’infraction.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Circonstances aggravantes',
     question:
         'La diffusion d’images de violence comporte-t-elle des circonstances aggravantes propres ?',
@@ -467,7 +467,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // DIFFICILE (Niveau concours / subtilités)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Consentement de la victime',
     question:
         'Le fait d’enregistrer des violences commises sur un individu consentant :',
@@ -481,7 +481,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que les violences volontaires sont constituées même si la victime est consentante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Élément moral',
     question: 'L’élément moral du happy slapping suppose notamment :',
     options: [
@@ -494,7 +494,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours insiste : enregistrement volontaire (conscience de filmer) + conscience que ce sont des violences.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Erreur de fait',
     question:
         'La responsabilité peut être exclue si l’auteur filme en croyant :',
@@ -508,7 +508,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours mentionne l’erreur de fait : l’auteur croit qu’il n’y a pas d’atteinte illicite.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément moral',
     question:
         'Pour la diffusion d’images de violence, l’élément moral inclut :',
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours : connaissance que ce sont des images de violences + diffusion intentionnelle.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Portée “complicité”',
     question:
         'L’enregistrement d’images de violence est assimilé à la complicité :',
@@ -537,7 +537,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que l’acte d’enregistrement est assimilé à un cas de complicité au sens du droit commun.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Répression',
     question: 'La peine applicable au happy slapping dépend :',
     options: [
@@ -550,7 +550,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que la répression est celle des infractions faisant l’objet de l’enregistrement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Circonstances communicables',
     question:
         'Les circonstances aggravantes de l’infraction principale peuvent :',
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que les circonstances aggravantes attachées à l’infraction principale peuvent être communicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Réunion',
     question: 'Selon le cours, l’enregistreur peut également se voir retenir :',
     options: [
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours évoque la possibilité de retenir la circonstance aggravante de réunion.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Auteur principal et complicité',
     question:
         'L’auteur des violences peut-il être complice du happy slapping s’il demande à être filmé ?',
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que l’auteur de l’infraction principale ne peut être considéré comme complice s’il demande à être filmé.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Complicité de complicité',
     question: 'La complicité de complicité est :',
     options: [
@@ -605,7 +605,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours mentionne expressément : la complicité de complicité est répréhensible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infractions incluses',
     question:
         'La diffusion d’images de violence vise notamment des images relatives :',
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'La liste limitative inclut viol, agressions sexuelles délictuelles, administration de substance à cette fin, harcèlement sexuel.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infractions exclues',
     question:
         'Selon le cours, les infractions voisines non mentionnées par la liste :',
@@ -634,7 +634,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours insiste : liste limitative ; infractions voisines exclues.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Tentative',
     question: 'La tentative de happy slapping (enregistrement) est :',
     options: [
@@ -647,7 +647,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique : TENTATIVE : NON pour l’enregistrement d’images de violence.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Personnes morales',
     question:
         'Les personnes morales peuvent-elles être pénalement responsables de diffusion d’images de violence ?',
@@ -661,7 +661,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // MOYENNE / DIFFICILE — QUESTIONS PIÈGES (CAS COURTS)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Happy slapping',
     question:
         'Une personne filme sciemment une agression sexuelle délictuelle en cours d’exécution sans y participer. Sa qualification principale est :',
@@ -675,7 +675,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'L’enregistrement sciemment d’images relatives à certaines atteintes est un acte de complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Moment de l’enregistrement',
     question:
         'Une personne ne filme que les secondes suivant l’agression, quand la victime est au sol. Selon le cours, le happy slapping :',
@@ -689,7 +689,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours exclut les actes postérieurs si l’enregistrement ne porte pas sur la phase de commission.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Diffusion',
     question:
         'Une personne reçoit une vidéo de violences sur messagerie et la transfère à plusieurs amis. Elle :',
@@ -703,7 +703,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'La diffusion s’entend largement, y compris par transmission de téléphone à téléphone.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Information du public',
     question:
         'Un journaliste diffuse une séquence de violences dans le cadre d’un reportage d’actualité. Le fait justificatif mobilisable est :',
@@ -717,7 +717,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que la diffusion est justifiée pour informer le public, sous réserve de respecter dignité, non-identification et loi de 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Probatoire',
     question:
         'Un témoin filme une scène de violences afin de faciliter l’identification des auteurs et remet la vidéo aux enquêteurs sans la publier. Le fait justificatif applicable est :',
@@ -731,7 +731,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'L’article 222-33-3 al.3 prévoit l’exception probatoire pour l’enregistrement destiné à servir de preuve.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Qualification',
     question: 'La diffusion d’images de violence est :',
     options: ['Un délit', 'Une contravention', 'Un crime'],
@@ -740,7 +740,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours classe la diffusion d’images de violence (art. 222-33-3 al.2) comme un délit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Fondement',
     question: 'Le “happy slapping” est prévu par :',
     options: [
@@ -753,7 +753,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique : art. 222-33-3 C.P. incrimine l’enregistrement sciemment d’images de violences (happy slapping).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Répression',
     question:
         'La répression du happy slapping (enregistrement) est prévue par :',
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que l’enregistrement est un acte de complicité : la peine suit l’infraction faisant l’objet de l’enregistrement.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Support',
     question: 'L’image enregistrée peut être fixée :',
     options: [
@@ -780,7 +780,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise : pellicule, cassette, carte mémoire, disque dur…',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément moral',
     question: 'Pour la diffusion, il faut notamment :',
     options: [
@@ -793,7 +793,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours vise une diffusion intentionnelle : volonté de diffuser et connaissance du contenu.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Complicité',
     question: 'Les règles de la complicité applicables sont :',
     options: [
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // MOYENNE (Compréhension / pièges)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Liste limitative',
     question:
         'Parmi les infractions suivantes, laquelle est explicitement visée dans la liste du cours ?',
@@ -824,7 +824,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours cite expressément le harcèlement sexuel dans la liste de l’art. 222-33-3 (diffusion/enregistrement).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Infractions exclues',
     question: 'Si une infraction n’est pas dans la liste, selon le cours :',
     options: [
@@ -837,7 +837,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours insiste : liste limitative, les infractions voisines sont exclues.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Ce qui est enregistré',
     question: 'Le happy slapping vise l’enregistrement :',
     options: [
@@ -850,7 +850,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le texte vise des images relatives à la commission d’infractions listées (violences, viol, agressions sexuelles, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Commission et tentative',
     question: 'Pour le happy slapping, la “commission” inclut :',
     options: [
@@ -863,7 +863,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise que la phase de commission comprend la tentative.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Hypothèse de recel',
     question:
         'Enregistrer une vidéo déjà existante trouvée en ligne, selon le cours, renvoie plutôt à :',
@@ -877,7 +877,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours donne l’exemple d’une vidéo trouvée sur internet enregistrée sur disque dur : orientation recel.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Hébergement',
     question: 'Un hébergeur peut engager sa responsabilité pénale s’il :',
     options: [
@@ -890,7 +890,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours évoque l’hébergeur qui autorise, même tacitement, en connaissant l’illicéité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Fait justificatif',
     question: 'L’exception d’information profite principalement :',
     options: [
@@ -903,7 +903,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique que la diffusion peut être justifiée lorsqu’elle est effectuée par des professionnels de l’information.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Conditions',
     question:
         'Selon le cours, l’exception d’information suppose notamment de :',
@@ -917,7 +917,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours impose le respect de la dignité et l’absence d’identification, avec la loi du 29 juillet 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Exception probatoire',
     question:
         'L’exception probatoire s’applique quand l’enregistrement est fait :',
@@ -935,7 +935,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // DIFFICILE (Niveau concours / subtilités)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Élément matériel',
     question:
         'Concernant l’acte de diffusion, quel comportement est explicitement cité par le cours ?',
@@ -949,7 +949,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours énumère : transmettre, internet, prêter l’original, distribuer des copies…',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Fixation sonore',
     question: 'Pourquoi une simple captation audio (cris) est-elle exclue ?',
     options: [
@@ -962,7 +962,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours indique : l’enregistrement d’images = représentation visuelle ; la fixation sonore seule est exclue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Moment décisif',
     question: 'Quel scénario correspond le mieux au champ du happy slapping ?',
     options: [
@@ -975,7 +975,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours : l’enregistrement doit être fait à l’instant même où l’atteinte se commet.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Exception probatoire',
     question:
         'Selon le cours, l’exception probatoire est difficilement applicable à la diffusion car :',
@@ -989,7 +989,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours explique qu’il paraît impossible de diffuser sur TV/internet “pour servir de preuve” sans constituer l’infraction.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Circonstances aggravantes',
     question: 'En tant que complice, l’enregistreur peut se voir appliquer :',
     options: [
@@ -1002,7 +1002,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours : les circonstances aggravantes de l’infraction principale peuvent être communicables au complice.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Réunion',
     question:
         'Pourquoi la circonstance aggravante de réunion peut viser l’enregistreur ?',
@@ -1017,7 +1017,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours évoque que l’enregistreur étant complice, la circonstance aggravante de réunion peut être retenue.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Complicité de complicité',
     question:
         'Une personne aide l’enregistreur à filmer (lumière, angle, etc.). Selon le cours :',
@@ -1031,7 +1031,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours cite : Cass. crim., 15 décembre 2004 — la complicité de complicité est répréhensible.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Happy slapping — Auteur principal',
     question:
         'Selon le cours, l’auteur de l’infraction principale ne peut pas être complice du happy slapping s’il :',
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours précise : l’auteur principal ne peut être complice s’il demande à ce qu’on le filme.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Diffusion d’images de violence — Personnes morales',
     question: 'Quel énoncé est conforme au cours ?',
     options: [
@@ -1062,7 +1062,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
   // =========================================================
   // CAS PRATIQUES (Mix moyen/difficile)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Diffusion',
     question:
         'Une personne reçoit une vidéo de viol filmé par un tiers et la republie sur un groupe privé. Juridiquement, elle risque :',
@@ -1076,7 +1076,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours : la diffusion est large (même entre téléphones / groupes). L’auteur n’a pas besoin d’être le filmeur, mais doit connaître le contenu et vouloir diffuser.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Information',
     question:
         'Un média diffuse une vidéo de violences en floutant parfaitement la victime et sans atteinte à la dignité dans un sujet d’actualité. Cela se rattache à :',
@@ -1090,7 +1090,7 @@ final List<QuizQuestion> questionEnregistrementDiffusion = [
         'Le cours admet l’exception d’information, mais sous réserve (dignité, non-identification, loi de 1881).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Cas pratique — Probatoire',
     question:
         'Un témoin filme une scène de violences pour identifier les auteurs et remet la vidéo à la police, sans la transmettre à d’autres. Selon le cours :',
@@ -1462,7 +1462,7 @@ class _QuizEnregistrementDiffusionImagesState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -1665,7 +1665,7 @@ class _QuizEnregistrementDiffusionImagesState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -1848,7 +1848,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -2381,10 +2380,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -2755,7 +2755,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -2796,9 +2796,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -123,10 +123,10 @@ class PrincipauxFichiersPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Point clé",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Tout est tracé (consultations mémorisées). Une consultation sans motif légal = risque disciplinaire + pénal.",
                   ),
@@ -312,9 +312,9 @@ class PrincipauxFichiersPage extends StatelessWidget {
                     "Autres : par liste (multi-identités), par signalement, par référence (n° partiel/complet).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En cas de découverte, suivre strictement le mémento des conduites à tenir accessible dans l’aide de l’application. Impression d’une fiche possible.",
                   ),
@@ -599,10 +599,10 @@ class PrincipauxFichiersPage extends StatelessWidget {
                     "Onglets : Consultation (cadre judiciaire/administratif), Identifier (données moins précises), Rapprocher (croiser critères).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 title: "Procédure (rappel)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans une procédure judiciaire, seules les informations TAJ relatives à la procédure en cours peuvent être jointes. "
                         "L’édition « antécédent personne physique » n’est jointe que sur réquisition expresse du magistrat.",
@@ -677,7 +677,7 @@ class PrincipauxFichiersPage extends StatelessWidget {
           // ODICOP
           _ConditionCard(
             title:
-                "O.D.I.C.O.P — Outil d\'Investigation et de Communication Opérationnelle de Police",
+                "O.D.I.C.O.P — Outil d'Investigation et de Communication Opérationnelle de Police",
             cardColor: cardPink,
             accent: accentPink,
             titleColor: textMain,
@@ -715,9 +715,9 @@ class PrincipauxFichiersPage extends StatelessWidget {
                     "Fiches : recherches, identification, délégations judiciaires, disparitions, notes d’information (sans données perso).",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si découverte : désactiver immédiatement la fiche (évite interpellation injustifiée). La fiche est « cachée » et réactivable par le rédacteur.",
                   ),
@@ -856,9 +856,9 @@ class PrincipauxFichiersPage extends StatelessWidget {
                     "Via service PJ / identité judiciaire équipé (terminal) ou IJPP ; envoi des relevés scannés selon procédures.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Conservation des données : variable (≈ 15 à 40 ans) selon nature des faits (délits/crimes).",
                   ),
@@ -1018,10 +1018,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1086,7 +1086,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1129,7 +1129,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1191,7 +1191,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1223,7 +1223,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1236,7 +1236,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

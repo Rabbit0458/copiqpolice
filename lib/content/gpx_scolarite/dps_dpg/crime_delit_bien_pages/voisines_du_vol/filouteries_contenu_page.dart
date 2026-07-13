@@ -112,16 +112,16 @@ class FilouteriesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 313-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime les filouteries (4 cas limitatifs).",
                 ),
@@ -137,135 +137,135 @@ class FilouteriesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La filouterie consiste à obtenir, auprès de professionnels, certains biens ou services "
                 "en se sachant dans l’impossibilité absolue de payer ou en étant déterminé à ne pas payer.\n"
                 "Elle protège des professions où les usages ne permettent pas de vérifier la solvabilité "
                 "ou d’exiger un paiement d’avance.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "A) Une condition préalable : impécuniosité absolue ou refus de payer",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(
                 text:
                     "Impossibilité absolue de payer : aucune ressource, aucun patrimoine, aucun moyen de paiement au moment des faits.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Détermination à ne pas payer : l’auteur est solvable, mais décide de ne pas régler (souvent révélée par la fuite au moment de payer).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La notion d’« impossibilité absolue » est très exigeante : si le professionnel consent un crédit ou des délais de paiement, la répression est en principe exclue. ",
                   ),
                   TextSpan(
                     text:
                         "(ex. C.A. Paris, 22 février 1883 ; C.A. Paris, 9 avril 1986)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Une remise volontaire dans 4 cas limitatifs"),
-              const _Paragraph(
+              _SubTitle("B) Une remise volontaire dans 4 cas limitatifs"),
+              _Paragraph(
                 "La filouterie se distingue du vol (remise volontaire par la victime) et de l’escroquerie "
                 "(pas de manœuvres frauduleuses déterminantes : la remise résulte du fonctionnement normal de la profession).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Boissons ou aliments (établissement vendant boissons/aliments)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’auteur doit prendre l’initiative (passer commande, « se faire servir »).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Uniquement boissons et aliments (exclut les autres marchandises).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Établissement accessible au public dont l’activité principale est la vente de boissons/aliments (café, restaurant, brasserie, buvette…).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Chambres d’hôtel (occupation effective ≤ 10 jours)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Doit s’agir d’un établissement louant des chambres (hôtel, auberge…).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La simple réservation ne suffit pas : il faut attribution + occupation effective (la chambre n’est plus attribuable à un autre client).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Occupation n’ayant pas excédé 10 jours ; prestations annexes (téléphone, consommations…) non visées.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Carburants ou lubrifiants (servis par un professionnel)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "La victime doit être un professionnel (exploitant de station-service).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Condition clé : l’auteur doit « se faire servir » (si libre-service et remplissage par l’auteur, on bascule vers le vol).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Produit versé dans le réservoir du véhicule (pas dans des jerrycans).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Libre-service : pas de filouterie (remplissage par l’auteur), mais plutôt vol selon les cas. ",
                   ),
                   TextSpan(
                     text:
                         "(C.A. Rennes, 8 décembre 1980 ; C.A. Montpellier, 25 septembre 2008 ; Cass. crim., avis, 4 mai 2010)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Taxi ou voiture de place"),
-              const _BulletPoint(
+              _SubTitle("4) Taxi ou voiture de place"),
+              _BulletPoint(
                 text: "Se faire transporter puis ne pas payer la course.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sont visés : taxis et voitures de place (transport privé loué sur la voie publique, paiement à l’arrivée).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sont exclus : transports en commun (train, métro, tram, bus…) où le paiement est en principe immédiat.",
               ),
@@ -280,31 +280,31 @@ class FilouteriesPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 313-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’élément moral repose sur l’une des deux situations suivantes :",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Conscience de son impécuniosité : l’auteur sait que son impossibilité de payer est absolue.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Volonté de ne pas payer : l’auteur est solvable mais refuse de régler (souvent établi par la fuite ou un motif manifestement fallacieux).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "N’est pas punissable : l’oubli du moyen de paiement, la perte du portefeuille au moment de payer, "
                 "ou la bonne foi liée à une mauvaise estimation de la somme due.",
               ),
@@ -334,76 +334,76 @@ class FilouteriesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "6 mois d’emprisonnement et 7 500 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 313-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Responsabilité pénale possible ; amende selon les modalités de ",
                 ),
                 TextSpan(
                   text: "l’article 131-38 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (quintuple du montant prévu pour les personnes physiques).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Amende forfaitaire délictuelle"),
+              _SubTitle("Amende forfaitaire délictuelle"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 313-5 alinéas 7 et 8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : possibilité de recourir à la procédure d’amende forfaitaire délictuelle, prévue par ",
                 ),
                 TextSpan(
                   text:
                       "les articles 495-17 à 495-25 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", y compris en cas de récidive."),
+                TextSpan(text: ", y compris en cas de récidive."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(
                 text: "Tentative : NON (non prévue, donc non punissable).",
               ),
-              const _BulletPoint(text: "Complicité : OUI."),
+              _BulletPoint(text: "Complicité : OUI."),
             ],
           ),
         ],
@@ -440,10 +440,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -508,7 +508,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -551,7 +551,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -613,7 +613,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -624,10 +624,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -639,13 +638,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -658,13 +656,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

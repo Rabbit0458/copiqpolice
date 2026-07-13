@@ -110,13 +110,13 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 441-4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le faux commis dans une écriture publique ou authentique, ainsi que l’usage du faux.",
                 ),
@@ -134,13 +134,13 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
             titleColor: textMain,
             children: [
               const _SubTitle("A) Établissement d’un faux document"),
-              _Paragraph.rich([
-                const TextSpan(text: "Les faux visés par "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "Les faux visés par "),
+                TextSpan(
                   text: "l’article 441-4 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " ne portent, à l’exception des enregistrements, que sur des documents écrits.",
                 ),
@@ -204,29 +204,29 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("E) Préjudice : atteinte à la foi publique"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "En raison de sa nature, l’écrit public ou authentique a une valeur probatoire : sa falsification porte nécessairement atteinte à la foi publique, "
                       "ce qui caractérise l’existence d’un préjudice éventuel ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 24 mai 2000)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
               const SizedBox(height: 14),
 
               const _SubTitle("F) L’usage du faux"),
-              _Paragraph.rich([
-                const TextSpan(text: "L’usage du faux est incriminé par "),
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(text: "L’usage du faux est incriminé par "),
+                TextSpan(
                   text: "l’article 441-4 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: ". "),
+                TextSpan(text: ". "),
               ]),
               const SizedBox(height: 10),
               const _Paragraph(
@@ -234,13 +234,13 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
                 "L’infraction d’usage suppose l’existence préalable d’un faux.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La jurisprudence retient qu’il suffit que le détenteur ait utilisé la pièce fausse par un acte quelconque en vue du résultat final qu’elle était destinée à produire ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "(Cass. crim., 25 janvier 1961 ; Cass. crim., 8 octobre 1996)",
                     style: TextStyle(
@@ -248,7 +248,7 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ", ou par tout autre acte dès lors qu’il est de nature à causer un préjudice.",
                   ),
@@ -265,23 +265,23 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Concernant le faux"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Concernant le faux"),
+              _Paragraph(
                 "L’auteur doit vouloir réaliser la falsification : l’acte matériel (fabriquer un acte, apposer une fausse signature, etc.) "
                 "révèle l’intention par sa seule réalisation.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il doit avoir conscience d’altérer la vérité dans des conditions de nature à causer un préjudice. "
                 "Les mobiles poursuivis sont indifférents.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Concernant l’usage de faux"),
-              const _BulletPoint(text: "Volonté d’user de la pièce fausse."),
-              const _BulletPoint(
+              _SubTitle("B) Concernant l’usage de faux"),
+              _BulletPoint(text: "Volonté d’user de la pièce fausse."),
+              _BulletPoint(
                 text: "Connaissance de la fausseté de la pièce.",
               ),
             ],
@@ -295,13 +295,13 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 441-4 alinéa 3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : lorsque le faux ou l’usage de faux est commis par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public, "
                       "agissant dans l’exercice de ses fonctions ou de sa mission.",
@@ -318,92 +318,92 @@ class FauxEcriturePubliqueOuAuthentiquePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Faux (simple) : "),
-                const TextSpan(text: "10 ans d’emprisonnement. — "),
-                const TextSpan(
+                TextSpan(text: "Faux (simple) : "),
+                TextSpan(text: "10 ans d’emprisonnement. — "),
+                TextSpan(
                   text: "article 441-4 alinéa 1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Usage de faux : "),
-                const TextSpan(text: "même répression (selon le texte). — "),
-                const TextSpan(
+                TextSpan(text: "Usage de faux : "),
+                TextSpan(text: "même répression (selon le texte). — "),
+                TextSpan(
                   text: "article 441-4 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Faux/usage aggravé (dépositaire / mission de service public) : ",
                 ),
-                const TextSpan(text: "15 ans de réclusion criminelle. — "),
-                const TextSpan(
+                TextSpan(text: "15 ans de réclusion criminelle. — "),
+                TextSpan(
                   text: "article 441-4 alinéa 3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(
                   text: "l’article 441-12 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — "),
-                const TextSpan(
+                TextSpan(text: "Tentative : OUI — "),
+                TextSpan(
                   text: "article 441-9 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (prévoit expressément la tentative des délits visés, dont ceux de l’article 441-4).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI. "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI. "),
+                TextSpan(
                   text:
                       "La jurisprudence peut considérer comme auteur du faux celui qui donne l’ordre de commettre, "
                       "au même titre que celui qui l’a personnellement fabriqué. ",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Jurisprudence : secrétaire de mairie faisant procéder par un employé subalterne à la falsification des registres ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 18 octobre 2000)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Dans les autres cas, les règles générales relatives à la complicité s’appliquent.",
               ),
             ],
@@ -442,10 +442,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -510,7 +510,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -553,7 +553,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -615,7 +615,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -626,10 +626,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -641,13 +640,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -660,13 +658,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

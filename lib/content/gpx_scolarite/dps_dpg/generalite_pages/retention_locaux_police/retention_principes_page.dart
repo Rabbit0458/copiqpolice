@@ -28,11 +28,11 @@ class RetentionPrincipesPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accent = isDark
         ? const Color(0xFF90CAF9)
         : const Color(0xFF1565C0);
-    final Color redAccent = const Color(0xFFFF3B30);
+    const Color redAccent = Color(0xFFFF3B30);
 
     return Scaffold(
       backgroundColor: bg,
@@ -70,7 +70,7 @@ class RetentionPrincipesPage extends StatelessWidget {
           ),
           const SizedBox(height: 6),
 
-          _Paragraph(
+          const _Paragraph(
             'Les services de police disposent presque tous de locaux de rétention de personnes '
             '(geôles, locaux de garde à vue). Comme la gendarmerie, les douanes et l’autorité judiciaire, '
             'ils peuvent retenir des individus, mais uniquement dans les cas et les formes prévus par la loi.',
@@ -90,18 +90,18 @@ class RetentionPrincipesPage extends StatelessWidget {
           ),
           const SizedBox(height: 8),
 
-          _BulletPoint.rich([
+          const _BulletPoint.rich([
             TextSpan(
               text:
                   'La liberté est le principe, la rétention est l’exception encadrée par la loi.',
-              style: const TextStyle(fontWeight: FontWeight.w700),
+              style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
-          _BulletPoint.rich([
+          const _BulletPoint.rich([
             TextSpan(
               text:
                   'Chaque mesure de rétention doit pouvoir être rattachée à un texte précis, avec une durée et un niveau de coercition clairement définis.',
-              style: const TextStyle(fontWeight: FontWeight.w700),
+              style: TextStyle(fontWeight: FontWeight.w700),
             ),
           ]),
 
@@ -170,12 +170,12 @@ class RetentionPrincipesPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'La liberté d’aller et venir est l’une des composantes centrales de la liberté individuelle. '
                 'Retenir quelqu’un dans un local de police revient donc à limiter directement cette liberté fondamentale.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _BulletPoint.rich([
                 TextSpan(
@@ -185,7 +185,7 @@ class RetentionPrincipesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : la rétention ne se conçoit que pour protéger un autre intérêt majeur (sécurité des personnes, ordre public, exécution des décisions de justice, etc.).',
                 ),
@@ -198,14 +198,14 @@ class RetentionPrincipesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : le temps et le niveau de contrainte doivent rester réduits à ce qui est nécessaire à la mesure (durée maximale, fouilles, usage de menottes…).',
                 ),
               ]),
 
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: 'Idée clé',
                 bodySpans: [
                   TextSpan(
@@ -252,7 +252,7 @@ class RetentionPrincipesPage extends StatelessWidget {
               ]),
               const SizedBox(height: 8),
 
-              _BulletPoint.rich([
+              const _BulletPoint.rich([
                 TextSpan(
                   text: 'Pas de texte = rétention arbitraire',
                   style: TextStyle(
@@ -260,13 +260,13 @@ class RetentionPrincipesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : une mesure non prévue par la loi ou qui déborde le cadre fixé (durée, droits, niveau de contrainte) '
                       'peut être qualifiée d’arbitraire et engager la responsabilité de l’agent et de l’État.',
                 ),
               ]),
-              _BulletPoint.rich([
+              const _BulletPoint.rich([
                 TextSpan(
                   text: 'Contrôle du juge',
                   style: TextStyle(
@@ -274,7 +274,7 @@ class RetentionPrincipesPage extends StatelessWidget {
                     color: redAccent,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' : l’autorité judiciaire vérifie, a posteriori, la régularité de la rétention (fondement juridique, durée, respect des droits). '
                       'Un manquement peut entraîner annulation de procédure et indemnisations.',
@@ -387,10 +387,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -435,7 +435,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -471,7 +471,7 @@ class _Paragraph extends StatelessWidget {
 class _BulletPoint extends StatelessWidget {
   final List<InlineSpan> spans;
 
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   @override
   Widget build(BuildContext context) {
@@ -522,7 +522,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -547,7 +547,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -582,7 +582,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -595,7 +595,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

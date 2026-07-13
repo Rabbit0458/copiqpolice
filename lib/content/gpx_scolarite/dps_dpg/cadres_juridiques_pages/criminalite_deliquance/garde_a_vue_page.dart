@@ -51,8 +51,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                 cardColor: cardColor,
                 accent: accent,
                 titleColor: titleColor,
-                children: [
-                  const _Paragraph.rich([
+                children: const [
+                  _Paragraph.rich([
                     TextSpan(
                       text:
                           'L\'article 706-88 du Code de procédure pénale dispose :',
@@ -62,8 +62,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                       ),
                     ),
                   ]),
-                  const SizedBox(height: 8),
-                  const _Paragraph(
+                  SizedBox(height: 8),
+                  _Paragraph(
                     '« Pour l’application des articles 63, 77 et 154, si les nécessités de '
                     'l’enquête ou de l’instruction relatives à l’une des infractions entrant '
                     'dans le champ d’application de l’article 706-73 l’exigent, la garde à vue '
@@ -78,8 +78,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                     'autorisée sans présentation préalable de la personne en raison des '
                     'nécessités des investigations en cours ou à effectuer. »',
                   ),
-                  const SizedBox(height: 10),
-                  const _Paragraph(
+                  SizedBox(height: 10),
+                  _Paragraph(
                     'Lorsque la première prolongation est décidée, la personne gardée à vue '
                     'est examinée par un médecin désigné par le procureur de la République, '
                     'le juge d’instruction ou l’officier de police judiciaire. Le médecin '
@@ -91,8 +91,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                     'émargée par la personne intéressée ; en cas de refus d’émargement, il en '
                     'est fait mention.',
                   ),
-                  const SizedBox(height: 8),
-                  const _Paragraph(
+                  SizedBox(height: 8),
+                  _Paragraph(
                     'Par dérogation aux dispositions du premier alinéa, si la durée prévisible '
                     'des investigations restant à réaliser à l’issue des premières quarante-huit '
                     'heures de garde à vue le justifie, le juge des libertés et de la détention '
@@ -100,8 +100,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                     'deuxième alinéa, que la garde à vue fera l’objet d’une seule prolongation '
                     'supplémentaire de quarante-huit heures.',
                   ),
-                  const SizedBox(height: 8),
-                  const _Paragraph(
+                  SizedBox(height: 8),
+                  _Paragraph(
                     'Par dérogation aux dispositions des articles 63-4 à 63-4-2, lorsque la '
                     'personne est gardée à vue pour une infraction entrant dans le champ '
                     'd’application de l’article 706-73, l’intervention de l’avocat peut être '
@@ -113,8 +113,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                     'infraction mentionnée aux 3° ou 11° du même article 706-73, pendant une '
                     'durée maximale de soixante-douze heures.',
                   ),
-                  const SizedBox(height: 8),
-                  const _Paragraph(
+                  SizedBox(height: 8),
+                  _Paragraph(
                     'Le report de l’intervention de l’avocat jusqu’à la fin de la vingt-quatrième '
                     'heure est décidé par le procureur de la République, d’office ou à la '
                     'demande de l’officier de police judiciaire. Le report de l’intervention de '
@@ -126,8 +126,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                     'écrite et motivée, précise la durée pour laquelle l’intervention de '
                     'l’avocat est différée.',
                   ),
-                  const SizedBox(height: 8),
-                  const _Paragraph(
+                  SizedBox(height: 8),
+                  _Paragraph(
                     'Lorsqu’il est fait application des sixième et septième alinéas de cet '
                     'article, l’avocat dispose, à partir du moment où il est autorisé à '
                     'intervenir en garde à vue, des droits prévus aux articles 63-4 et 63-4-1, '
@@ -135,8 +135,8 @@ class GardeAVuePageGpxSchool extends StatelessWidget {
                     'Cet article n’est pas applicable aux délits prévus au 21° de l’article '
                     '706-73.',
                   ),
-                  const SizedBox(height: 6),
-                  const _NotaBox(
+                  SizedBox(height: 6),
+                  _NotaBox(
                     bodySpans: [
                       TextSpan(
                         text:
@@ -982,10 +982,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1050,7 +1050,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1093,7 +1093,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1155,7 +1155,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1166,10 +1166,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -1181,13 +1180,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1200,13 +1198,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

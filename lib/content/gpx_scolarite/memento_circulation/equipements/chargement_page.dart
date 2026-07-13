@@ -129,28 +129,28 @@ class ChargementPage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Amarrage obligatoire"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Amarrage obligatoire"),
+              _BulletPoint(
                 text:
                     "Tout chargement débordant (ou pouvant déborder à cause des oscillations) doit être solidement amarré — NATINF 22595.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les pièces de grande longueur doivent être solidement amarrées entre elles et au véhicule, afin de ne pas déborder latéralement lors des oscillations — NATINF 22595.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Accessoires (chaînes, bâches, éléments flottants)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les chaînes, bâches et autres accessoires mobiles ou flottants doivent être fixés de façon à ne jamais sortir du contour extérieur du chargement et à ne pas traîner au sol — NATINF 22596.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En pratique : un accessoire qui bat au vent, dépasse le gabarit ou frotte le sol = non conforme.",
                   ),
@@ -248,9 +248,9 @@ class ChargementPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "À noter : NATINF 22598 relève d’une procédure plus sévère (PVO 5e classe).",
                   ),
@@ -292,9 +292,9 @@ class ChargementPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Beaucoup de ces infractions peuvent entraîner une immobilisation (selon situation de danger).",
                   ),
@@ -311,21 +311,21 @@ class ChargementPage extends StatelessWidget {
             cardColor: cardRules,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Pour un dossier propre et exploitable, pense à décrire précisément le chargement, "
                 "la nature du débordement, et la manière dont il est (ou n’est pas) sécurisé.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Décrire : type de chargement, localisation (avant/arrière/latéral), risque (oscillation, chute, traînage).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Préciser : dépassement estimé (mètres / pourcentage) lorsque c’est utile (largeur / débord arrière).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mentionner : accessoires flottants (bâche, sangle, chaîne) et effets observés (traîne au sol, dépasse le gabarit).",
               ),
@@ -365,10 +365,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -433,7 +433,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -476,7 +476,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -538,7 +538,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -549,10 +549,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -564,13 +563,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -583,13 +581,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

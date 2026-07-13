@@ -102,7 +102,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
   // =========================================================
   // FACILE (Définitions / réflexes)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion d’informations personnelles — Fondement',
     question:
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours précise que l’article 223-1-1 C.P. définit et réprime cette infraction.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance à personne en péril — Fondement',
     question: 'La non-assistance à personne en péril est incriminée par :',
     options: [
@@ -130,7 +130,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours indique : art. 223-6 al.2 = incrimination ; art. 223-6 al.1 = peine applicable.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle à la commission d’un crime ou délit — Fondement',
     question:
         'Le non-obstacle à la commission d’un crime ou d’un délit contre l’intégrité corporelle est prévu par :',
@@ -143,7 +143,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours : non-obstacle = art. 223-6 al.1 C.P.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Fondement',
     question: 'Le délit de risques causés à autrui est prévu par :',
     options: [
@@ -156,7 +156,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : art. 223-1 C.P. prévoit et réprime les risques causés à autrui.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement d’une personne vulnérable — Fondement',
     question:
         'Le délaissement d’une personne qui n’est pas en mesure de se protéger est prévu par :',
@@ -170,7 +170,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : délaissement = art. 223-3 C.P. (les conséquences graves relèvent de l’art. 223-4).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion d’informations personnelles — Nature',
     question:
@@ -185,7 +185,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’incrimination n’exige pas que la diffusion soit publique (SMS/courriels possibles).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Faits non répréhensibles',
     question:
         'Parmi ces comportements, lequel n’est pas répréhensible au titre de l’article 223-1-1 ?',
@@ -199,7 +199,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la simple réception/captation/détention des informations n’est pas répréhensible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Définition',
     question:
         'La non-assistance à personne en péril consiste principalement à :',
@@ -213,7 +213,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : abstention volontaire de porter assistance (action personnelle ou en provoquant un secours).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Champ',
     question: 'Le non-obstacle vise :',
     options: [
@@ -226,7 +226,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’incrimination est limitée aux crimes/délits contre l’intégrité corporelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Condition',
     question: 'Le délit de l’article 223-1 exige notamment :',
     options: [
@@ -240,7 +240,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’intention coupable est la violation délibérée de la règle, pas l’intention de blesser.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Nature',
     question: 'Le délaissement (art. 223-3) suppose :',
     options: [
@@ -253,7 +253,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : comportement positif (placer la personne et l’abandonner ou s’éloigner volontairement).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Mineurs',
     question:
         'Les mineurs de 15 ans sont-ils visés par l’article 223-3 (délaissement) ?',
@@ -267,7 +267,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : les mineurs de 15 ans sont exclus du champ (délaissement spécifique art. 227-1).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Objet',
     question:
         'Les informations visées par l’article 223-1-1 sont relatives à :',
@@ -281,7 +281,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : informations relatives à la vie privée, familiale ou professionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Fondement',
     question:
         'L’abus frauduleux de l’état d’ignorance ou de faiblesse est prévu par :',
@@ -295,7 +295,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : art. 223-15-2 C.P. prévoit et réprime l’abus frauduleux de faiblesse/ignorance.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Victimes protégées',
     question: 'L’article 223-15-2 protège notamment :',
     options: [
@@ -309,7 +309,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : protection limitée à des catégories (mineurs / vulnérabilité apparente ou connue).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Absence de risque',
     question:
         'La non-assistance impose d’agir uniquement si l’aide peut être apportée :',
@@ -323,7 +323,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la loi n’impose pas l’héroïsme ; assistance sans risque pour l’intervenant/les tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Dommage',
     question:
         'Pour le délit de risques causés à autrui (223-1), faut-il un dommage réalisé ?',
@@ -337,7 +337,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : il s’agit d’exposer directement autrui à un risque immédiat grave.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Intention',
     question: 'L’élément moral de l’article 223-1-1 est principalement :',
     options: [
@@ -354,7 +354,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
   // =========================================================
   // MOYENNE (conditions précises / subtilités)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Finalité',
     question:
         'La révélation/diffusion/transmission devient pénalement répréhensible (223-1-1) si elle est faite :',
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : finalité = exposer à un risque direct d’atteinte aux personnes ou aux biens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Identification/localisation',
     question: 'L’information diffusée doit permettre :',
     options: [
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : informations permettant d’identifier ou de localiser la personne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Exemples',
     question:
         'Selon le cours, lequel peut constituer une information relevant de la vie privée/familiale/professionnelle ?',
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours cite notamment adresses/numéros de téléphone (et parfois photographies selon contexte).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Photographie',
     question:
         'Une photographie peut être une information visée par l’article 223-1-1 notamment lorsqu’elle est :',
@@ -410,7 +410,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : une photo peut relever de la vie privée, notamment si prise en lieu privé à l’insu.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Réseaux sociaux',
     question: 'Le cours souligne que l’infraction vise particulièrement :',
     options: [
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : incriminer les propos haineux en ligne poursuivant des objectifs similaires à des provocations/complicité.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Journaliste',
     question: 'Un journaliste peut-il être auteur de l’infraction (223-1-1) ?',
     options: [
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : vise toute personne, y compris journaliste, si la preuve de l’intention de nuire gravement est rapportée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Information du public',
     question:
         'L’infraction 223-1-1 a-t-elle pour objet de réprimer la diffusion faite pour informer le public ?',
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : n’a pas pour objet de réprimer l’information du public, même si un tiers pourrait en faire usage.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion — Circonstances aggravantes (catégories)',
     question:
@@ -466,7 +466,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : aggravation si victime dépositaire autorité publique / mission service public / mandat électif / candidat / journaliste.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Aggravation (proches)',
     question:
         'L’article 223-1-1 al.2 vise aussi des proches de la personne protégée lorsqu’ils sont ciblés :',
@@ -480,7 +480,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : aggravation si conjoint/ascendant/descendant/autre personne vivant au domicile, en raison des fonctions de la personne protégée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Aggravation (mineur)',
     question: 'La circonstance aggravante de l’article 223-1-1 al.3 vise :',
     options: [
@@ -493,7 +493,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : al.3 = lorsque les faits sont commis au préjudice d’une personne mineure.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Aggravation (vulnérabilité)',
     question: 'La vulnérabilité aggravante (223-1-1 al.4) doit être :',
     options: [
@@ -506,7 +506,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : vulnérabilité due à âge/maladie/infirmité/déficience/état de grossesse, apparente ou connue.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Peines (simple)',
     question:
         'Pour la qualification simple (223-1-1 al.1), les peines principales encourues par une personne physique sont :',
@@ -519,7 +519,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le tableau du cours : simple = 3 ans + 45 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Peines (aggravée)',
     question:
         'Pour les formes aggravées de l’article 223-1-1, la peine principale indiquée par le cours est :',
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le tableau du cours : aggravée = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Tentative/complicité',
     question: 'Pour l’article 223-1-1, le cours indique :',
     options: [
@@ -544,7 +544,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours : tentative non ; complicité oui (121-6/121-7).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Péril',
     question: 'Le péril exigé pour la non-assistance doit être :',
     options: [
@@ -557,7 +557,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : péril caractérisé, non simplement présumé ; danger présent, pas risques éventuels.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Cause du péril',
     question:
         'Concernant la cause ou la nature du péril (non-assistance), le cours retient :',
@@ -571,7 +571,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : indifférence de la cause du péril (péril naturel, accidentel ou infractionnel).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Forme de l’assistance',
     question: 'L’assistance peut être apportée :',
     options: [
@@ -584,7 +584,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : action personnelle ou recherche/provocation de secours.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Obligation de moyens',
     question: 'La non-assistance impose une obligation :',
     options: [
@@ -598,7 +598,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : obligation de moyens ; l’infraction n’est pas de ne pas sauver, mais de ne pas avoir prêté aide.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Élément moral',
     question: 'L’élément moral de la non-assistance suppose notamment :',
     options: [
@@ -611,7 +611,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : connaissance d’un péril immédiat et refus volontaire d’intervenir par les modes possibles.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Aggravation',
     question:
         'La circonstance aggravante de l’article 223-6 al.3 (non-assistance) vise :',
@@ -625,7 +625,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : aggravation lorsque la personne en péril est un mineur de 15 ans.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Peines',
     question:
         'Pour la non-assistance simple (223-6 al.2), les peines principales indiquées sont :',
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le tableau du cours : non-assistance simple = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Peines aggravées',
     question:
         'Pour la non-assistance aggravée (223-6 al.3), les peines principales indiquées sont :',
@@ -652,7 +652,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le tableau du cours : aggravée = 7 ans + 100 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Exclusion suicide',
     question:
         'Le non-obstacle (223-6 al.1) peut-il sanctionner l’abstention d’empêcher un suicide ?',
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : pas d’application au suicide, qui ne constitue pas un crime/délit contre l’intégrité au sens de l’incrimination.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Action immédiate',
     question:
         'Le non-obstacle réprime l’abstention de la personne qui pouvait empêcher l’infraction par :',
@@ -680,7 +680,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : proximité temporelle ; possibilité d’empêcher par action immédiate, sans risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Forme de l’action',
     question: 'Pour faire obstacle (223-6 al.1), l’action exigée :',
     options: [
@@ -694,7 +694,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : formes non définies ; appel à tiers/autorités possible si meilleur moyen, sans risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Absence de risque',
     question: 'Le non-obstacle n’est punissable que si l’action omise était :',
     options: [
@@ -707,7 +707,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : condition explicite “sans risque pour lui ou pour les tiers”.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Élément moral',
     question: 'L’élément moral du non-obstacle suppose notamment :',
     options: [
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : pas d’abstention volontaire si ignorance ; volonté coupable si abstention en sachant pouvoir empêcher.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Source de l’obligation',
     question:
         'L’obligation particulière de prudence/sécurité (223-1) doit être imposée par :',
@@ -734,7 +734,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : condition de source textuelle ; loi ou règlement (au sens d’actes généraux et impersonnels).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Notion de règlement',
     question: 'Au sens du cours (223-1), sont retenus comme “règlement” :',
     options: [
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : seuls actes administratifs à caractère général et impersonnel (exclusion règlement intérieur, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Obligation “particulière”',
     question: 'Une obligation “particulière” (223-1) correspond plutôt à :',
     options: [
@@ -761,7 +761,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : obligation particulière = règles précises/cla(i)res, sans part d’interprétation subjective.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Gravité du risque',
     question: 'Le risque exigé par l’article 223-1 doit être :',
     options: [
@@ -775,7 +775,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : seules mises en danger les plus graves (mort / mutilation / infirmité permanente).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Lien de causalité',
     question: 'Pour 223-1, le lien entre la violation et le risque doit être :',
     options: [
@@ -788,7 +788,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la violation doit être la cause directe et immédiate du risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Peines',
     question: 'Les peines principales pour 223-1 (personnes physiques) sont :',
     options: [
@@ -800,7 +800,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours : 223-1 = 1 an + 15 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Circonstances aggravantes',
     question: 'Le cours indique, pour 223-1, des circonstances aggravantes :',
     options: [
@@ -812,7 +812,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours : “Aucune” circonstance aggravante mentionnée.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Élément moral',
     question: 'L’élément moral du délaissement (223-3) est :',
     options: [
@@ -825,7 +825,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : comportement intentionnel consistant en la volonté d’abandonner définitivement la victime.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Tentative',
     question: 'Selon le cours, pour le délaissement :',
     options: [
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : tentative non pour 223-3 (délit) ; mais en matière criminelle (223-4), la tentative est punissable.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Peines (simple)',
     question:
         'Pour le délaissement simple (223-3), les peines principales sont :',
@@ -852,7 +852,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours : 223-3 = 5 ans + 75 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Nature de l’abus',
     question:
         'Selon le cours, l’abus frauduleux (223-15-2) peut consister notamment en :',
@@ -866,7 +866,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’abus n’est pas défini, peut être manœuvres, simple mensonge, pressions suscitant la crainte.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — “Conduire”',
     question:
         'Le terme “conduire” la victime à un acte/abstention (223-15-2) signifie :',
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la Cour de cassation a précisé que “conduire” ne voulait pas dire contraindre.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Minorité',
     question:
         'Pour une victime mineure, la seule minorité suffit-elle à établir l’état d’ignorance/faiblesse ?',
@@ -895,7 +895,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la seule minorité ne suffit pas, d’autres critères doivent être appréciés.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Préjudice',
     question: 'L’acte ou l’abstention doit être :',
     options: [
@@ -908,7 +908,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’acte/abstention doit être gravement préjudiciable (patrimoine, santé, vie familiale, etc.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Aggravation numérique',
     question:
         'Le cours prévoit une aggravation lorsque l’infraction est commise :',
@@ -923,7 +923,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : aggravation prévue à l’alinéa 2 (en ligne / support numérique).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Aggravation bande organisée',
     question:
         'L’abus de faiblesse est aggravé lorsque l’infraction est commise :',
@@ -933,7 +933,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : aggravation prévue à l’alinéa 3 (bande organisée).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Peines (simple)',
     question:
         'Selon le cours, l’abus de faiblesse simple (223-15-2 al.1) est puni de :',
@@ -946,7 +946,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le tableau du cours : simple = 3 ans + 375 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Peines (aggravation numérique)',
     question:
         'Selon le cours, l’abus de faiblesse aggravé par usage d’un service en ligne/support numérique (al.2) est puni de :',
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le tableau du cours : aggravation al.2 = 5 ans + 750 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Peines (bande organisée)',
     question:
         'Selon le cours, l’abus de faiblesse en bande organisée (al.3) est puni de :',
@@ -972,7 +972,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le tableau du cours : bande organisée = 7 ans + 1 000 000 €.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Tentative/complicité',
     question: 'Pour 223-15-2, le cours indique :',
     options: [
@@ -988,7 +988,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
   // =========================================================
   // DIFFICILE (raisonnement / cas-limites / jurisprudence / articulations)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Auteur/tiers',
     question:
         'Le texte (223-1-1) admet que la personne “identifiée/localisée” par les informations diffusées peut être :',
@@ -1002,7 +1002,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : “Il peut s’agir d’une personne distincte de celle visée à titre principal par la divulgation.”',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Notion de risque',
     question: 'Pour 223-1-1, le risque exigé est :',
     options: [
@@ -1015,7 +1015,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours exige un risque direct d’atteinte à la personne ou aux biens (victime ou famille).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — “Ne pouvait ignorer”',
     question: 'L’infraction 223-1-1 exige que l’auteur :',
     options: [
@@ -1028,7 +1028,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : “risque direct … que l’auteur ne pouvait ignorer”.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion — Jurisprudence 11 février 2025',
     question:
         'Selon l’exemple jurisprudentiel (Cass. crim., 11 fév. 2025), la diffusion concomitante de la qualité de fonctionnaire de police, dans un contexte visant les forces de police, peut :',
@@ -1042,7 +1042,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours cite cet arrêt : diffusion de la qualité de policier dans un contexte hostile pouvant exposer à un risque direct.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Péril “constaté”',
     question:
         'Le cours insiste que le péril doit être “impérativement et expressément constaté” : cela signifie surtout que :',
@@ -1056,7 +1056,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : péril caractérisé, pas seulement présumé ; risques éventuels/hypothétiques exclus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Auteur du péril',
     question: 'En non-assistance, le fait que l’auteur du péril soit :',
     options: [
@@ -1070,7 +1070,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’auteur du péril est indifférent (tiers, débiteur, voire la victime).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Cumul avec violences',
     question:
         'Le cours indique que non-assistance et violences volontaires peuvent :',
@@ -1084,7 +1084,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : cumul possible si deux temps d’action différents, protection de valeurs sociales différentes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance — Appel à autrui insuffisant',
     question:
         'Selon le cours, l’appel à autrui (provoquer un secours) peut ne pas suffire si :',
@@ -1098,7 +1098,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’appel à autrui n’acquitte pas si l’action personnelle était manifestement plus efficace.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Temporalité',
     question:
         'Le cours admet que l’obligation d’agir pour le non-obstacle peut viser :',
@@ -1112,7 +1112,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : obligation d’agir dès la certitude de l’imminence (même si pas encore en cours).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle — Dissuasion verbale',
     question:
         'Selon l’exemple du cours, une simple protestation/dissuasion verbale est :',
@@ -1126,7 +1126,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’action doit être apte à empêcher ; la dissuasion verbale est souvent jugée insuffisante.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Cause “exclusive”',
     question: 'Le cours précise que le comportement dangereux doit être :',
     options: [
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : lien direct ; comportement dangereux = seule cause du risque (cause directe et immédiate).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Vitesse excessive',
     question: 'Selon le cours, la vitesse excessive seule :',
     options: [
@@ -1153,7 +1153,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : dépassement vitesse autorisée seul insuffisant ; un comportement exposant à un risque immédiat grave doit s’ajouter.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Élément intentionnel',
     question: 'Pour 223-1, l’intention coupable porte principalement sur :',
     options: [
@@ -1167,7 +1167,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : intention = violer la règle ; pas nécessaire d’avoir une vision précise des risques réellement encourus.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui — Complicité',
     question:
         'Le cours rappelle que, même si 223-1 appartient aux infractions non intentionnelles, la complicité :',
@@ -1181,7 +1181,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la mise en danger d’autrui n’exclut pas la complicité (exemple : passager ordonnant de franchir un feu).',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Lieu indifférent',
     question: 'Pour le délaissement, le lieu :',
     options: [
@@ -1197,7 +1197,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
   // =========================================================
   // FACILE (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Actes visés',
     question:
         'Quels verbes décrivent l’acte matériel visé par l’article 223-1-1 ?',
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours vise la révélation, diffusion ou transmission, par quelque moyen que ce soit.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Moyen',
     question:
         'La révélation/diffusion/transmission (223-1-1) peut être réalisée :',
@@ -1225,7 +1225,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours précise “par quelque moyen que ce soit” (réseaux sociaux, SMS, courriels…).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Réseaux sociaux',
     question: 'Le cours précise que l’infraction vise particulièrement :',
     options: [
@@ -1238,7 +1238,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours indique que l’infraction vise particulièrement les réseaux sociaux.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Publicité',
     question: 'L’acte de diffusion doit être public pour être incriminé ?',
     options: [
@@ -1251,7 +1251,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’incrimination n’exige pas que la diffusion soit publique.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — SMS/Courriel',
     question:
         'Des moyens confidentiels (SMS/courriel) peuvent-ils tomber sous 223-1-1 ?',
@@ -1261,7 +1261,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : des moyens de transmission plus confidentiels comme SMS/courriels sont visés.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Éléments exclus',
     question:
         'Parmi ces éléments, lequel seul ne suffit pas à caractériser l’infraction 223-1-1 ?',
@@ -1275,7 +1275,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : simple réception/captation/détention n’est pas répréhensible.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Objet',
     question: 'Les informations doivent être relatives à la vie :',
     options: [
@@ -1287,7 +1287,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours liste la vie privée, familiale ou professionnelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Exemples',
     question: 'Le cours cite comme exemples d’informations visées :',
     options: [
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours donne ces exemples (téléphone, adresse).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6 al.2) — Définition',
     question: 'La non-assistance à personne en péril consiste à :',
     options: [
@@ -1313,7 +1313,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : s’abstenir volontairement d’aider sans risque pour soi/tiers.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6 al.2) — Modes',
     question: 'L’assistance peut être apportée :',
     options: [
@@ -1326,7 +1326,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : soit par action personnelle, soit en provoquant un secours.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6 al.2) — Risque',
     question:
         'L’obligation d’assistance existe seulement si l’aide peut être apportée :',
@@ -1340,7 +1340,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la loi n’impose pas l’héroïsme ; assistance sans risque.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Définition',
     question: 'Le non-obstacle sanctionne le fait de :',
     options: [
@@ -1354,7 +1354,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : 223-6 al.1 vise l’abstention d’empêcher un crime/délit contre l’intégrité corporelle.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Définition',
     question:
         'Le risque causé à autrui consiste notamment à exposer directement autrui à :',
@@ -1368,7 +1368,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : risque immédiat de mort ou blessures graves (mutilation/infirmité permanente).',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement (223-3) — Définition',
     question: 'Le délaissement vise le fait :',
     options: [
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : délaissement = abandon d’une personne hors d’état de se protéger.',
     difficulty: 'Facile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Définition',
     question:
         'L’abus de faiblesse consiste à exploiter l’état d’ignorance/faiblesse pour conduire la victime à :',
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
   // =========================================================
   // MOYENNE (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Élément moral',
     question: 'L’élément moral de 223-1-1 est caractérisé par :',
     options: [
@@ -1413,7 +1413,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : intention manifeste qu’il soit porté gravement atteinte à la personne/proches/biens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Faisceau d’indices',
     question: 'Selon le cours, l’intention de nuire peut être caractérisée :',
     options: [
@@ -1426,7 +1426,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : soit intention clairement exprimée, soit déduite d’un faisceau d’indices.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Personnes visées',
     question: 'L’incrimination vise :',
     options: [
@@ -1439,7 +1439,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : vise toute personne (y compris journaliste sous condition d’intention).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Aggravation (qualités)',
     question:
         'Parmi ces qualités, laquelle figure dans les aggravations de l’al.2 ?',
@@ -1453,7 +1453,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : al.2 vise notamment le candidat à un mandat électif public pendant la campagne.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         'Mise en danger par diffusion (223-1-1) — Aggravation (journaliste)',
     question:
@@ -1468,7 +1468,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : journaliste visé au sens du 2e alinéa de l’article 2 de la loi du 29 juillet 1881.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Aggravation (domicile)',
     question:
         'L’aggravation vise aussi “toute autre personne vivant habituellement au domicile” de la personne protégée :',
@@ -1483,7 +1483,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : aggravation si ciblage du conjoint/ascendant/descendant/autre vivant au domicile, en raison des fonctions.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Responsabilité PM',
     question: 'Pour 223-1-1, la responsabilité pénale des personnes morales :',
     options: [
@@ -1496,7 +1496,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : responsabilité des personnes morales selon le principe général de l’art. 121-2.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Péril présent',
     question: 'Le péril suppose une situation :',
     options: [
@@ -1509,7 +1509,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : péril = danger présent ; risques éventuels ou hypothétiques non retenus.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Obligation d’intervenir',
     question: 'Le délit est constitué lorsque la personne :',
     options: [
@@ -1523,7 +1523,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours (Cass. crim., 25 juin 1964) : connaissance péril immédiat et refus volontaire d’intervenir.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Efficacité',
     question: 'L’assistance doit-elle réussir pour éviter l’infraction ?',
     options: [
@@ -1536,7 +1536,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : peu importe que l’assistance soit efficace ; obligation de moyens.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Appel + action',
     question: 'Le cours admet que l’on peut devoir utiliser :',
     options: [
@@ -1550,7 +1550,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : obligation d’intervenir par le mode que la nécessité commande, et même cumulativement si besoin.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Domaine',
     question: 'Le non-obstacle exclut notamment :',
     options: [
@@ -1563,7 +1563,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : l’incrimination n’inclut pas les délits contre les biens ou contre la Nation/État/paix publique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Résultat',
     question:
         'Pour le non-obstacle, il est exigé que l’action omise ait réussi ?',
@@ -1578,7 +1578,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : pas exigé que l’action ait réussi ; obligation d’agir si moyen d’empêcher sans risque.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Règlement intérieur',
     question:
         'Un règlement intérieur d’entreprise est-il un “règlement” au sens de 223-1 ?',
@@ -1588,7 +1588,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : sont exclus les règlements intérieurs d’entreprise.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement (223-3) — Mineurs de 15 ans',
     question: 'Les mineurs de 15 ans relèvent du délaissement 223-3 ?',
     options: [
@@ -1600,7 +1600,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     explanation: 'Le cours : mineurs de 15 ans exclus car texte spécifique.',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — “Conduire”',
     question: 'Selon le cours, “conduire” la victime à un acte signifie :',
     options: [
@@ -1613,7 +1613,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : “conduire” ne veut pas dire contraindre (Cass. crim.).',
     difficulty: 'Moyenne',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Vulnérabilité',
     question: 'La vulnérabilité peut être due notamment à :',
     options: [
@@ -1629,7 +1629,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
   // =========================================================
   // DIFFICILE (suite)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Non-public',
     question:
         'Un message privé envoyé à une seule personne contenant une adresse peut relever de 223-1-1 si :',
@@ -1644,7 +1644,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : pas besoin de publicité ; condition = finalité d’exposition + risque direct + auteur ne pouvait ignorer + intention de nuire gravement.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Mise en danger par diffusion (223-1-1) — Personne distincte',
     question:
         'Pour 223-1-1, la personne identifiée/localisée peut être distincte de la cible principale : conséquence pratique ?',
@@ -1658,7 +1658,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : la personne identifiée/localisée peut être distincte de la personne visée à titre principal.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Péril et dépistage',
     question:
         'Le cours illustre que l’absence de dépistage VIH n’est pas non-assistance lorsque :',
@@ -1672,7 +1672,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Exemple jurisprudentiel du cours : péril imminent non établi.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-assistance (223-6) — Deux temps d’action',
     question:
         'Pourquoi violences volontaires + non-assistance peuvent se cumuler ?',
@@ -1687,7 +1687,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : cumul si deux temps distincts et valeurs sociales différentes.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Non-obstacle (223-6 al.1) — Crainte de représailles',
     question:
         'La crainte de représailles futures constitue-t-elle un “risque” exonérant l’auteur du non-obstacle ?',
@@ -1702,7 +1702,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : pas de risque justificatif si risque futur lié à crainte de représailles.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Obligation particulière',
     question:
         'Une simple “règle générale de manœuvre” sur un aérodrome est-elle une obligation particulière (223-1) ?',
@@ -1717,7 +1717,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours rapporte un exemple : règles générales de circulation/manœuvre ≠ obligation particulière.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Risque causé à autrui (223-1) — Vitesse (nuance)',
     question:
         'Selon le cours, rouler trop vite ne suffit pas toujours pour 223-1 car :',
@@ -1732,7 +1732,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : vitesse excessive seule insuffisante ; il faut un comportement ajoutant un risque immédiat de mort/blessures graves.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement (223-3 / 223-4) — Tentative',
     question:
         'Pourquoi la tentative est-elle retenue surtout quand on bascule en 223-4 ?',
@@ -1747,7 +1747,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : pas de tentative pour le délit 223-3 ; mais en matière criminelle (223-4), la tentative est punissable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Consentement',
     question:
         'Le cours insiste : le consentement de la personne vulnérable est apprécié :',
@@ -1761,7 +1761,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : consentement doit être libre/éclairé au moment de l’acte ; sinon il n’est pas valable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse (223-15-2) — Préjudice potentiel',
     question: 'Le préjudice exigé doit-il être déjà réalisé ?',
     options: [
@@ -1775,7 +1775,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
     difficulty: 'Difficile',
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Gravité et qualification',
     question:
         'Selon le cours, si le délaissement entraîne la mort de la victime, on bascule :',
@@ -1790,7 +1790,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : 223-4 al.2 = crime, 20 ans de réclusion lorsque le délaissement entraîne la mort.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Délaissement — Mutilation/infirmité permanente',
     question:
         'Si le délaissement entraîne une mutilation ou une infirmité permanente, le cours indique :',
@@ -1804,7 +1804,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : premier degré (223-4 al.1) = 15 ans de réclusion en cas de mutilation/infirmité permanente.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Consentement',
     question:
         'Le cours insiste que le consentement de la personne vulnérable doit être :',
@@ -1818,7 +1818,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : consentement libre/éclairé au moment où l’acte est passé ; consentement du vulnérable n’est pas valable.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Vulnérabilité “apparente ou connue”',
     question:
         'Pour la vulnérabilité (hors minorité), le cours exige qu’elle soit :',
@@ -1833,7 +1833,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
         'Le cours : vulnérabilité “apparente ou connue” ; la Cour de cassation exige que la connaissance soit démontrée.',
     difficulty: 'Difficile',
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: 'Abus de faiblesse — Préjudice potentiel',
     question: 'Le cours indique que le préjudice exigé peut être :',
     options: [
@@ -1852,7 +1852,7 @@ final List<QuizQuestion> questionGPMiseEnDangerEtAbstentions = [
 // PAGE
 // ============================================================================
 class QuizMiseEnDanger extends StatefulWidget {
-  static const String routeName = '/gpx/crimes_personne/quiz/mise_en_danger';
+  static const String routeName = '/gpx/dps/crimes_personne/quiz/mise_en_danger';
   final String uid;
   final String email;
 
@@ -2197,7 +2197,7 @@ class _QuizMiseEnDangerState extends State<QuizMiseEnDanger>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2400,7 +2400,7 @@ class _QuizMiseEnDangerState extends State<QuizMiseEnDanger>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -2583,7 +2583,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3116,10 +3115,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3490,7 +3490,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3531,9 +3531,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

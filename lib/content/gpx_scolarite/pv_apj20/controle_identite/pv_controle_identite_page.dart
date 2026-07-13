@@ -90,47 +90,47 @@ class PvControleIdentitePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Contrôle d’identité : "),
+                TextSpan(text: "Contrôle d’identité : "),
                 TextSpan(
                   text: "art. 78-2 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (selon l’alinéa correspondant aux constatations) ou ",
                 ),
                 TextSpan(
                   text: "art. 78-2-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (locaux à usage professionnel)."),
+                TextSpan(text: " (locaux à usage professionnel)."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Vérification d’identité : "),
+                TextSpan(text: "Vérification d’identité : "),
                 TextSpan(
                   text: "art. 78-3 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (si la personne ne justifie pas ou refuse de décliner son identité).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Formule obligatoire : l’A.P.J agit « sur l’ordre et sous la responsabilité » d’un O.P.J. "
                         "Elle doit figurer au PV, sous peine de nullité.",
@@ -148,17 +148,17 @@ class PvControleIdentitePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Appuie sur une image pour l’ouvrir en plein écran et zoomer.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _ZoomableImageTile(
                 assetPath: 'assets/images/pv_canva_ci_recto.png',
                 heroTag: 'pv_ci_recto',
                 label: 'Recto',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _ZoomableImageTile(
                 assetPath: 'assets/images/pv_canva_ci_verso.png',
                 heroTag: 'pv_ci_verso',
@@ -175,31 +175,31 @@ class PvControleIdentitePage extends StatelessWidget {
             cardColor: cardOp,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de saisine"),
-              const _IntroBullet(
+            children: const [
+              _SubTitle("1) Lieu de saisine"),
+              _IntroBullet(
                 text:
                     "Mentionner l’endroit exact où se situe l’équipage (adresse, secteur, repère utile).",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("2) Instructions"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("2) Instructions"),
+              _IntroBullet(
                 text:
                     "PV de saisine : l’équipage en patrouille agit conformément aux instructions permanentes du chef de service.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("3) Assistants"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("3) Assistants"),
+              _IntroBullet(
                 text:
                     "Mentionner les fonctionnaires accompagnants (nom/grade/service).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Préciser la tenue : uniforme, tenue bourgeoise, port du brassard police.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("4) Mission"),
-              const _IntroBullet(
+              SizedBox(height: 10),
+              _SubTitle("4) Mission"),
+              _IntroBullet(
                 text:
                     "Indiquer le but de la mission initiale (patrouille, sécurisation, présence dissuasive, réquisition…).",
               ),
@@ -214,13 +214,13 @@ class PvControleIdentitePage extends StatelessWidget {
             cardColor: cardProc,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Relater de manière précise les faits observés en faisant ressortir les éléments "
                 "objectifs qui justifient le contrôle d’identité.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Cadres possibles à mentionner"),
+              SizedBox(height: 10),
+              _SubTitle("Cadres possibles à mentionner"),
               _BulletPoint(
                 text:
                     "Raisons plausibles de soupçonner : infraction commise ou tentée — art. 78-2 al. 2 C.P.P.",
@@ -241,7 +241,7 @@ class PvControleIdentitePage extends StatelessWidget {
                 text:
                     "Recherches ordonnées par une autorité judiciaire — art. 78-2 al. 6 C.P.P.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _BulletPoint(
                 text:
                     "Réquisitions du procureur (infractions, lieux, périodes) — art. 78-2 al. 7 C.P.P.",
@@ -283,26 +283,26 @@ class PvControleIdentitePage extends StatelessWidget {
               ]),
               const SizedBox(height: 10),
               const _SubTitle("7) Visa de l’article"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text: "Selon les constatations, viser l’alinéa adapté de ",
                 ),
                 TextSpan(
                   text: "l’art. 78-2 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ou "),
+                TextSpan(text: " ou "),
                 TextSpan(
                   text: "l’art. 78-2-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -315,33 +315,33 @@ class PvControleIdentitePage extends StatelessWidget {
             cardColor: cardOp,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("8) Contrôle"),
-              const _IntroBullet(
+            children: const [
+              _SubTitle("8) Contrôle"),
+              _IntroBullet(
                 text: "Mentionner l’heure et le lieu du contrôle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("9) Résultat du contrôle"),
-              const _IntroBullet(
+              _SubTitle("9) Résultat du contrôle"),
+              _IntroBullet(
                 text:
                     "Identifier la personne en style indirect : état civil et adresse (à l’exclusion des éléments de personnalité).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Si l’individu ne justifie pas / refuse : mentionner clairement l’impossibilité ou le refus.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("10) Palpation de sécurité"),
-              const _Paragraph(
+              _SubTitle("10) Palpation de sécurité"),
+              _Paragraph(
                 "Elle n’est pas systématique. Elle se justifie uniquement selon les circonstances de temps/lieu "
                 "et la nécessité de vérifier l’absence d’objet dangereux (respect et discernement).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("11) Avis O.P.J."),
-              const _IntroBullet(
+              _SubTitle("11) Avis O.P.J."),
+              _IntroBullet(
                 text:
                     "Mentionner les instructions reçues. La mise en œuvre de la vérification d’identité relève de la responsabilité exclusive de l’O.P.J.",
               ),
@@ -357,40 +357,40 @@ class PvControleIdentitePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("12) Retour au service"),
-              const _IntroBullet(
+            children: const [
+              _SubTitle("12) Retour au service"),
+              _IntroBullet(
                 text:
                     "Préciser si la personne suit de plein gré ou sous contrainte. Tout usage de la force doit être circonstancié.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("13) Énonciation terminale (clôture)"),
-              const _IntroBullet(
+              _SubTitle("13) Énonciation terminale (clôture)"),
+              _IntroBullet(
                 text:
                     "Si déclarations au style direct : signature de la personne. Si style indirect : pas de signature.",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text: "L’indication de l’heure est facultative.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("14) Présentation à l’O.P.J."),
-              const _IntroBullet(
+              _SubTitle("14) Présentation à l’O.P.J."),
+              _IntroBullet(
                 text:
                     "Mentionner l’heure de présentation, le compte-rendu verbal et les instructions données.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("15) Mention — recherches administratives"),
-              const _IntroBullet(
+              _SubTitle("15) Mention — recherches administratives"),
+              _IntroBullet(
                 text:
                     "Préciser que les recherches ont été effectuées (F.P.R., T.A.J. le cas échéant) et qu’aucune recherche ne vise la personne (si c’est le résultat).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("16) Annexe"),
-              const _IntroBullet(
+              _SubTitle("16) Annexe"),
+              _IntroBullet(
                 text:
                     "Annexer la copie de la réquisition du procureur justifiant le contrôle d’identité (si contrôle sur réquisitions).",
               ),
@@ -438,7 +438,7 @@ class _ZoomableImageTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(14),
             border: Border.all(
               color: (isDark ? Colors.white70 : const Color(0xFF616161))
-                  .withOpacity(.22),
+                  .withValues(alpha: .22),
             ),
           ),
           clipBehavior: Clip.antiAlias,
@@ -465,8 +465,8 @@ class _ZoomableImageTile extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: 0),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),
@@ -513,7 +513,7 @@ class _ZoomImageViewerPage extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color bg = isDark ? Colors.black : Colors.black;
-    final Color textColor = Colors.white;
+    const Color textColor = Colors.white;
 
     return Scaffold(
       backgroundColor: bg,
@@ -580,10 +580,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -648,7 +648,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -691,7 +691,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -753,7 +753,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -764,10 +764,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -779,13 +778,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -798,13 +796,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

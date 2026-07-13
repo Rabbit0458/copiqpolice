@@ -114,49 +114,49 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Obligation scolaire : l’instruction est obligatoire pour les enfants (français et étrangers) entre 3 et 16 ans. ",
                 ),
                 TextSpan(
                   text: "Article L. 131-1 du Code de l’éducation",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Mendicité avec mineur de moins de 6 ans : ",
                 ),
                 TextSpan(
                   text: "article 227-15 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Disparition inquiétante / mineur en fugue : actes d’enquête possibles selon ",
                 ),
                 TextSpan(
                   text: "l’article 74-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (perquisitions, saisies, réquisitions, auditions… mais pas de GAV).",
                 ),
@@ -172,38 +172,38 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lorsqu’un enfant d’âge scolaire se trouve sur la voie publique durant les heures de classe sans motif légitime, "
                       "le policier adopte une conduite simple, protectrice et traçable. (",
                 ),
                 TextSpan(
                   text: "art. L. 131-1 du Code de l’éducation",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")"),
+                TextSpan(text: ")"),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("Conduite à tenir (réflexe opérationnel)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Conduite à tenir (réflexe opérationnel)"),
+              _BulletPoint(
                 text:
                     "Relever l’identité du mineur, sans oublier la filiation.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le conduire dans l’établissement scolaire où il est inscrit.",
               ),
-              const _BulletPoint(text: "Aviser la brigade des mineurs."),
-              const _BulletPoint(text: "Rédiger une mention de main courante."),
-              const SizedBox(height: 10),
+              _BulletPoint(text: "Aviser la brigade des mineurs."),
+              _BulletPoint(text: "Rédiger une mention de main courante."),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le but n’est pas de sanctionner sur place, mais de protéger et de remettre le mineur dans un cadre normal "
                         "tout en assurant une traçabilité complète de l’intervention.",
@@ -221,37 +221,37 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardRisk,
             accent: accentPink,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le racket relève de l’extorsion, prévue et réprimée par ",
                 ),
                 TextSpan(
                   text: "les articles 312-1 à 312-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’usage de la violence ou des menaces pour obtenir de l’argent, un objet ou un service est une forme de délinquance "
                 "fréquente en milieu scolaire. Les victimes hésitent souvent à parler par peur de représailles.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Points d’attention terrain"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Points d’attention terrain"),
+              _BulletPoint(
                 text:
                     "Chaque signalement mérite une attention particulière, même si le préjudice est faible.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Observation aux abords des établissements : repérer les plus âgés attendant les plus jeunes aux heures de sortie.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Prioriser la protection de la victime + recueil d’éléments (témoignages, descriptions, lieux, horaires).",
               ),
@@ -266,33 +266,33 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardAmber,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 227-15 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réprime le fait de maintenir un enfant de moins de 6 ans sur la voie publique ou dans un espace affecté "
                       "au transport collectif de voyageurs afin de solliciter la générosité des passants.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Peines",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "7 ans d’emprisonnement et 100 000 € d’amende.",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "En présence d’un très jeune enfant exposé sur la voie publique, l’approche doit rester prioritairement protectrice : "
                 "mise à l’abri, évaluation immédiate du danger, et saisine/avis des services compétents.",
               ),
@@ -307,40 +307,40 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le « couvre-feu » est une mesure limitant la liberté d’aller et venir des mineurs sur la voie publique "
                 "entre 23h et 6h. Elle ne s’applique pas aux mineurs accompagnés d’un parent ou d’un titulaire de l’autorité parentale.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Deux cadres possibles"),
+              SizedBox(height: 12),
+              _SubTitle("Deux cadres possibles"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "• Cadre judiciaire (sanction éducative 13–18 ans) : ",
                 ),
                 TextSpan(
                   text:
                       "article L. 112-2 du Code de la justice pénale des mineurs",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "• Cadre administratif (arrêté général < 13 ans) : ",
                 ),
                 TextSpan(
                   text: "article L. 132-8 du Code de la sécurité intérieure",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -353,13 +353,13 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’accès aux salles de cinéma peut être interdit aux mineurs de 18, 16 ou 12 ans selon les films projetés. "
                 "Le gérant doit afficher l’interdiction aux guichets de délivrance des billets (le manquement constitue une contravention de 5e classe).",
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "Le préfet peut également interdire l’accès des mineurs à certains établissements offrant des spectacles "
                 "ou dont la fréquentation est susceptible d’exercer une mauvaise influence sur la santé ou la moralité de la jeunesse "
                 "(ex : pornographique/violent, risque de rixes…). Une affiche doit être apposée aux accès ; le non-respect est puni d’une contravention de 5e classe.",
@@ -375,52 +375,52 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardRisk,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Tout mineur se livrant à la prostitution est réputé en danger : son suivi relève du juge des enfants.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le recours à la prostitution d’un mineur est interdit : ",
                 ),
                 TextSpan(
                   text: "article 225-12-1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La mise à disposition d’un mineur à un tiers pour permettre la commission de proxénétisme est aussi un délit : ",
                 ),
                 TextSpan(
                   text: "article 225-4-1",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article 225-4-2 (1°) du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Réflexe terrain : mise en sécurité immédiate, évaluation du danger, et signalement/coordination avec les services spécialisés.",
                   ),
@@ -460,121 +460,121 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
             cardColor: cardOps,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Déclaration / disparition inquiétante"),
+            children: const [
+              _SubTitle("A) Déclaration / disparition inquiétante"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La fugue d’un mineur doit toujours être considérée comme une disparition inquiétante et traitée comme telle, "
                       "même si elle paraît volontaire ou habituelle. ",
                 ),
                 TextSpan(
                   text: "Article 26 de la loi n° 95-73 du 21 janvier 1995",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (modifiée) : une disparition apparemment banale peut aboutir à un drame.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Sur instructions du procureur, les OPJ/APJ peuvent réaliser les actes des ",
                 ),
                 TextSpan(
                   text: "articles 56 à 62 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " pour découvrir la personne (perquisitions, saisies, réquisitions, auditions).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Dans ce cadre, les enquêteurs ne peuvent pas décider d’une mesure de garde à vue. "
                         "Les dispositions sont prévues par ",
                   ),
                   TextSpan(
                     text: "l’article 74-1 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "Informations à recueillir lors de la déclaration",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Identité + filiation, lieu de résidence des parents (si différent), photographie si possible.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Signalement descriptif : âge réel/apparent, tenue, signes particuliers…",
               ),
-              const _BulletPoint(text: "Situation scolaire."),
-              const _BulletPoint(
+              _BulletPoint(text: "Situation scolaire."),
+              _BulletPoint(
                 text:
                     "Effets emportés (sac, téléphone, argent, agenda…), derniers lieux, fréquentations.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Moyen de locomotion éventuel (vélo, scooter…), fugues antérieures.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Certaines vérifications (voisins, camarades…) peuvent être lancées en parallèle par un autre fonctionnaire.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text: "Inscription systématique du mineur au F.P.R.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Découverte du mineur : prise en charge"),
-              const _Paragraph(
+              _SubTitle("B) Découverte du mineur : prise en charge"),
+              _Paragraph(
                 "La prise en charge d’un fugueur n’est pas une interpellation : c’est une mesure de protection. "
                 "Le mineur doit être conduit au service, la brigade des mineurs doit être avisée, et ses directives suivies.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Précautions",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Placer le mineur dans un endroit neutre. Éviter les scènes violentes, la proximité de gardés à vue, "
                         "ou toute situation impressionnante pour un enfant.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Rédiger un rapport d’intervention / PV relatant les circonstances de la découverte.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Effectuer la cessation de recherches au F.P.R.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le magistrat doit obligatoirement être informé : l’adresse d’un mineur disparu ne peut être communiquée "
                       "au représentant légal qu’avec l’autorisation du juge des enfants. (",
@@ -582,15 +582,15 @@ class ProtectionMineursVoiePubliquePage extends StatelessWidget {
                 TextSpan(
                   text:
                       "article 26 de la loi du 21 janvier 1995 modifié par l’article 66 de la loi n° 2002-1138 du 9 septembre 2002",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")"),
+                TextSpan(text: ")"),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Le mineur ne quitte les locaux que sous la conduite de ses parents ou d’une personne responsable.",
               ),
@@ -630,10 +630,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -698,7 +698,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -741,7 +741,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -803,7 +803,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -835,7 +835,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -848,7 +848,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

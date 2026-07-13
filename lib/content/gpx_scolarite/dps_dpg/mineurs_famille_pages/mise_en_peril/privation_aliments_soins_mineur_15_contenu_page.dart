@@ -112,13 +112,13 @@ class PrivationAlimentsSoinsMineur15Page extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 227-15 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime la privation d’aliments ou de soins à mineur de quinze ans.",
                 ),
@@ -134,157 +134,157 @@ class PrivationAlimentsSoinsMineur15Page extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une victime mineure de moins de quinze ans"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une victime mineure de moins de quinze ans"),
+              _Paragraph(
                 "L’infraction n’est constituée que si la victime est un mineur âgé de moins de quinze ans. "
                 "La loi pénale étant d’interprétation stricte, l’article 227-15 ne s’applique pas à un mineur de plus de quinze ans.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "À retenir",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si la victime a plus de quinze ans, d’autres qualifications peuvent être envisagées (ex. séquestration : ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "articles 224-1 et suivants du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         ", ou soustraction d’un parent à ses obligations légales : ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "article 227-17 du Code pénal",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) La qualité de l’auteur"),
-              const _Paragraph("Le texte vise trois catégories d’auteurs :"),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              _SubTitle("B) La qualité de l’auteur"),
+              _Paragraph("Le texte vise trois catégories d’auteurs :"),
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Les ascendants : père, mère, grands-parents, arrière-grands-parents.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les personnes exerçant l’autorité parentale : peut inclure le tuteur, et les personnes ayant reçu une délégation d’autorité parentale (code civil).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Les personnes exerçant une autorité de fait : nouveau conjoint/concubin, personne à qui l’enfant est confié, responsables/employés de l’aide sociale à l’enfance, etc.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Une privation d’aliments ou de soins + compromission de la santé",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La privation d’aliments consiste à ne pas fournir une nourriture en quantité ou en qualité suffisante.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La privation de soins est constituée lorsqu’on ne s’occupe pas matériellement de l’enfant au quotidien "
                 "et qu’on ne lui fournit pas les soins nécessaires (hygiène, soins médicaux, prise en charge adaptée).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Infraction retenue : laisser deux enfants seuls à la maison, sans gaz, ni eau, ni électricité, avec un réfrigérateur rempli parfois de nourriture qu’ils ne pouvaient pas cuire ; voisins les nourrissant ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(C.A. Douai, 15 février 2006)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Une présomption de privation de soins figure au 2ᵉ alinéa : est notamment visé le fait de maintenir un enfant de moins de six ans sur la voie publique / transport collectif pour solliciter la générosité. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 227-15 alinéa 2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le simple fait de mendier avec un enfant en bas âge n’est pas, en soi, constitutif du délit ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "(Cass. crim., 12 octobre 2005)",
                     style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La privation doit être « au point de compromettre la santé » du mineur : exigence confirmée par la jurisprudence. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(T.G.I. Paris, 13 janvier 2004)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Il n’est pas nécessaire que l’atteinte soit grave ni que le dommage soit effectif : il suffit que les privations "
                 "soient susceptibles d’altérer la santé du mineur. Les juges apprécient au cas par cas l’impact réel ou potentiel.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Dans l’arrêt du 12 octobre 2005, la Cour de cassation a validé une relaxe : l’enfant était en bonne santé au vu des pièces produites, malgré le maintien sur la voie publique. — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "(Cass. crim., 12 octobre 2005)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -297,25 +297,25 @@ class PrivationAlimentsSoinsMineur15Page extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Conscience que les privations risquent de causer un dommage",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "La privation d’aliments ou de soins est une infraction intentionnelle : "
                 "elle nécessite la conscience, la connaissance ou la prévision qu’il en résulterait un mal pour l’enfant.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
-                const TextSpan(
+                TextSpan(text: "Référence : "),
+                TextSpan(
                   text: "(Cass. crim., 11 mars 1975)",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La volonté de nuire ou de causer un dommage n’est pas exigée. "
                 "Les convictions religieuses ou le souci d’éducation ne justifient pas les privations dès lors que "
                 "l’auteur a conscience que la santé du mineur risque d’être altérée.",
@@ -331,38 +331,38 @@ class PrivationAlimentsSoinsMineur15Page extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 227-15 alinéa 3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque la personne visée à l’alinéa 1 s’est rendue coupable, sur le même mineur, du délit de non-déclaration de naissance.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
-                const TextSpan(
+                TextSpan(text: "Référence : "),
+                TextSpan(
                   text: "article 433-18-1 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Article 227-16 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque la privation d’aliments ou de soins a entraîné la mort de la victime.",
               ),
@@ -377,91 +377,91 @@ class PrivationAlimentsSoinsMineur15Page extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Qualification simple (délit) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 227-15 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (délit — al. 3) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d’emprisonnement et 300 000 € d’amende — ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "article 227-15 alinéa 3 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Si la mort de la victime est entraînée (crime) : ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "30 ans de réclusion criminelle — "),
-                const TextSpan(
+                TextSpan(text: "30 ans de réclusion criminelle — "),
+                TextSpan(
                   text: "article 227-16 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale possible : "),
-                const TextSpan(
+                TextSpan(text: "Responsabilité pénale possible : "),
+                TextSpan(
                   text: "article 227-17-2 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (amende selon l’article 131-38 et peines complémentaires de l’article 131-39).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
-                const TextSpan(
+                TextSpan(text: "Références : "),
+                TextSpan(
                   text: "article 131-38 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: " et "),
-                const TextSpan(
+                TextSpan(text: " et "),
+                TextSpan(
                   text: "article 131-39 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
-                const TextSpan(
+                TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(
                   text: "l’article 121-7 du Code pénal",
                   style: TextStyle(color: _lawRed, fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions).",
                 ),
               ]),
@@ -501,10 +501,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -569,7 +569,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -612,7 +612,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -674,7 +674,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -706,7 +706,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -719,7 +719,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

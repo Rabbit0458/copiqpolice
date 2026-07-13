@@ -102,8 +102,8 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Textes de base"),
+            children: const [
+              _SubTitle("Textes de base"),
               _IntroBullet(
                 text:
                     "Code général de la fonction publique (CGFP) : droits & obligations des agents publics.",
@@ -116,10 +116,10 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
                 text:
                     "Règlement général d’emploi de la Police nationale (RGEPN) : cadre interne (hiérarchie, réserve, discipline…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Avant la prise de fonctions, tout agent de la Police nationale prête serment : servir avec dignité et loyauté la République, ses principes et sa Constitution.",
                   ),
@@ -152,154 +152,154 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Liberté d’opinion"),
+            children: const [
+              _SubTitle("1) Liberté d’opinion"),
               _Paragraph.rich([
-                const TextSpan(text: "Garantie par le "),
+                TextSpan(text: "Garantie par le "),
                 TextSpan(
                   text: "CGFP (art. L. 111-1 et L. 137-2)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : la liberté d’opinion est garantie aux agents publics.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Les opinions (politiques, syndicales, religieuses, philosophiques) ne doivent pas figurer dans le dossier individuel.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Liberté d’expression"),
+              _SubTitle("2) Liberté d’expression"),
               _Paragraph.rich([
-                const TextSpan(text: "Prévue par le "),
+                TextSpan(text: "Prévue par le "),
                 TextSpan(
                   text: "CGFP (art. L. 121-2)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Dans le service : neutralité = liberté d’expression exclue dans l’exercice des fonctions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Hors service : liberté relative (opinions, engagements, manifestations…), avec limite = obligation de réserve.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Non-discrimination"),
+              _SubTitle("3) Non-discrimination"),
               _Paragraph.rich([
-                const TextSpan(text: "Interdiction via le "),
+                TextSpan(text: "Interdiction via le "),
                 TextSpan(
                   text: "CGFP (art. L. 131-1 à L. 131-6, L. 133-1, L. 133-2)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : aucune distinction directe/indirecte.",
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Aucune discrimination (opinions, origine, orientation/identité de genre, âge, situation familiale, grossesse, santé, apparence, handicap…).",
               ),
-              const _BulletPoint(text: "Aucune distinction en raison du sexe."),
-              const _BulletPoint(
+              _BulletPoint(text: "Aucune distinction en raison du sexe."),
+              _BulletPoint(
                 text: "Aucun agent ne doit subir d’agissement sexiste.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Droit syndical"),
+              _SubTitle("4) Droit syndical"),
               _Paragraph.rich([
-                const TextSpan(text: "Reconnu notamment par "),
+                TextSpan(text: "Reconnu notamment par "),
                 TextSpan(
                   text: "CSI (art. L. 411-3)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "CGFP (art. L. 113-1)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", avec cadre "),
+                TextSpan(text: ", avec cadre "),
                 TextSpan(
                   text: "décret n° 82-447 du 28 mai 1982",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " + références RGEPN."),
+                TextSpan(text: " + références RGEPN."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Créer/adhérer/exercer des mandats syndicaux : oui, dans la défense des intérêts professionnels.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Respect du secret professionnel et du secret de l’enquête et de l’instruction.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Activité syndicale compatible avec le code de déontologie et le fonctionnement du service.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("5) Protection fonctionnelle"),
+              _SubTitle("5) Protection fonctionnelle"),
               _Paragraph.rich([
-                const TextSpan(text: "Prévue par le "),
+                TextSpan(text: "Prévue par le "),
                 TextSpan(
                   text: "CGFP (art. L. 134-1 à L. 134-11)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et par le "),
+                TextSpan(text: " et par le "),
                 TextSpan(
                   text: "CSI (art. R. 434-7)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "L’État défend l’agent contre attaques, menaces, violences, injures, diffamations, outrages…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Peut concerner aussi conjoint, enfants et ascendants directs.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si absence de faute personnelle : accompagnement et protection juridique en cas de poursuites.",
               ),
@@ -316,24 +316,24 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
             titleColor: textMain,
             children: [
               const _SubTitle("1) Obéissance hiérarchique"),
-              _Paragraph.rich([
-                const TextSpan(text: "Principe posé par "),
+              const _Paragraph.rich([
+                TextSpan(text: "Principe posé par "),
                 TextSpan(
                   text: "CGFP (art. L. 121-10)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "CSI (art. R. 434-5)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et références statutaires."),
+                TextSpan(text: " et références statutaires."),
               ]),
               const SizedBox(height: 8),
               const _BulletPoint(
@@ -351,32 +351,32 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("2) Secret professionnel & discrétion"),
-              _Paragraph.rich([
-                const TextSpan(text: "Fondé sur "),
+              const _Paragraph.rich([
+                TextSpan(text: "Fondé sur "),
                 TextSpan(
                   text: "CGFP (art. L. 121-6 et L. 121-7)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", et renforcé par "),
+                TextSpan(text: ", et renforcé par "),
                 TextSpan(
                   text: "RGEPN (113-10, 133-6)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " + "),
+                TextSpan(text: " + "),
                 TextSpan(
                   text: "CSI (art. R. 434-8 et R. 434-12)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 8),
               const _BulletPoint(
@@ -392,9 +392,9 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
                     "Interdiction de divulguer à une personne non autorisée (même en interne) des infos connues du fait des fonctions.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Réseaux sociaux / blogs : l’usage doit rester compatible avec ces obligations. Ne pas rendre visibles des renseignements professionnels (opérations, modalités d’intervention, photos/propos portant atteinte à l’institution…).",
                   ),
@@ -404,24 +404,24 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
               const SizedBox(height: 12),
 
               const _SubTitle("3) Probité"),
-              _Paragraph.rich([
-                const TextSpan(text: "Prévue par "),
+              const _Paragraph.rich([
+                TextSpan(text: "Prévue par "),
                 TextSpan(
                   text: "CGFP (art. L. 121-1)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "CSI (art. R. 434-9)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " : agir avec désintéressement."),
+                TextSpan(text: " : agir avec désintéressement."),
               ]),
               const SizedBox(height: 8),
               const _BulletPoint(
@@ -440,50 +440,50 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
                     : const Color(0xFFFFFFFF),
                 accent: accentGrey,
                 titleColor: textMain,
-                children: [
+                children: const [
                   _Paragraph.rich([
-                    const TextSpan(text: "• Corruption — "),
+                    TextSpan(text: "• Corruption — "),
                     TextSpan(
                       text: "art. 432-11 1° du Code pénal",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(text: "."),
+                    TextSpan(text: "."),
                   ]),
                   _Paragraph.rich([
-                    const TextSpan(text: "• Trafic d’influence — "),
+                    TextSpan(text: "• Trafic d’influence — "),
                     TextSpan(
                       text: "art. 432-11 2° du Code pénal",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(text: "."),
+                    TextSpan(text: "."),
                   ]),
                   _Paragraph.rich([
-                    const TextSpan(text: "• Concussion — "),
+                    TextSpan(text: "• Concussion — "),
                     TextSpan(
                       text: "art. 432-10 du Code pénal",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(text: "."),
+                    TextSpan(text: "."),
                   ]),
                   _Paragraph.rich([
-                    const TextSpan(text: "• Prise illégale d’intérêts — "),
+                    TextSpan(text: "• Prise illégale d’intérêts — "),
                     TextSpan(
                       text: "art. 432-12 du Code pénal",
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: _lawRed,
                         fontWeight: FontWeight.w900,
                       ),
                     ),
-                    const TextSpan(text: "."),
+                    TextSpan(text: "."),
                   ]),
                 ],
               ),
@@ -513,91 +513,91 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Principe hiérarchique"),
+            children: const [
+              _SubTitle("1) Principe hiérarchique"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "CSI (art. R. 434-4)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " + "),
+                TextSpan(text: " + "),
                 TextSpan(
                   text: "RGEPN (111-1, 111-6, 113-1, 131-4, 133-1)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "L’autorité hiérarchique donne des instructions précises.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le policier rend compte de l’exécution des ordres (ou des raisons de leur inexécution).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Le policier rend compte de tout fait (service/hors service) pouvant entraîner convocation par autorité de police/juridiction/contrôle.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Policiers adjoints : pas de principe hiérarchique entre eux. Ils sont subordonnés aux personnels sous l’autorité desquels ils sont placés — ",
                   ),
                   TextSpan(
                     text: "art. 131-1 RGEPN",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Devoir de réserve"),
+              _SubTitle("2) Devoir de réserve"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "RGEPN (113-10, 133-6)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "CSI (art. R. 434-29)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Plus stricte chez les policiers : modération dans l’expression des opinions en service et hors service.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Un manque de retenue peut entraîner des sanctions disciplinaires.",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -606,161 +606,161 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Interdiction de faire grève (personnels actifs)",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "CGFP (art. L. 114-3)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Disposition dérogatoire justifiée par l’ordre public : toute cessation concertée ou acte collectif d’indiscipline caractérisé peut être sanctionné.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text: "Policiers adjoints : droit de grève admis — ",
                   ),
                   TextSpan(
                     text: "RGEPN (133-28)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Dignité"),
+              _SubTitle("4) Dignité"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "CGFP (art. L. 121-1)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "RGEPN (133-2, 133-7)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "CSI (art. R. 434-12)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Comportement exemplaire en toute circonstance (service/hors service), y compris sur les réseaux sociaux.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "S’abstenir d’actes/propos/comportements nuisant à la considération portée à l’institution.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple jurisprudentiel : révocation d’un GPX pour des échanges racistes/discriminatoires via messagerie. ",
                   ),
                   TextSpan(
                     text: "(C.E., n° 474289, 28/12/2023)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("5) Indépendance"),
+              _SubTitle("5) Indépendance"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "décret n° 95-654 (art. 59 et 60)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "RGEPN (113-12, 113-13)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "CSI (art. R. 434-12)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Interdiction de se prévaloir de sa qualité pour collecter des fonds/dons ou mandater un intermédiaire.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Interdiction de diffuser dans les locaux de police des publications/tracts à caractère raciste, xénophobe, politique, appelant à l’indiscipline…",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("6) Discernement & impartialité"),
+              _SubTitle("6) Discernement & impartialité"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "CSI (art. R. 434-10 et R. 434-11)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Choisir la meilleure réponse légale selon les risques/menaces et les délais d’action.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Agir avec professionnalisme : équité, neutralité, laïcité, sans discrimination.",
               ),
@@ -774,116 +774,116 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Activité du conjoint / concubin"),
+            children: const [
+              _SubTitle("1) Activité du conjoint / concubin"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "décret n° 95-654 (art. 30)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "RGEPN (111-6)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 "L’autorité compétente peut prendre des mesures pour sauvegarder l’intérêt du service si l’activité du conjoint/concubin "
                 "jette le discrédit sur la fonction policière ou crée une équivoque préjudiciable.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Disponibilité"),
-              const _Paragraph(
+              _SubTitle("2) Disponibilité"),
+              _Paragraph(
                 "Le policier doit se rendre disponible tout au long du service, en conservant une attitude d’intérêt face aux demandes "
                 "(information, assistance, intervention).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) Obligation de résidence"),
+              _SubTitle("3) Obligation de résidence"),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "décret n° 95-654 (art. 24)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Résider au lieu d’affectation (ou à distance permettant rappel inopiné dans les délais les plus brefs).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Tout changement de résidence doit être signalé par voie hiérarchique, avec date.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Obligation d’agir même hors service"),
+              _SubTitle("4) Obligation d’agir même hors service"),
               _Paragraph.rich([
-                const TextSpan(text: "Références : "),
+                TextSpan(text: "Références : "),
                 TextSpan(
                   text: "décret n° 95-654 (art. 19)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "CSI (art. R. 434-19)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "RGEPN (113-3, 132-2, 133-3)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Devoir d’intervenir de sa propre initiative ou sur réquisition (aide à personne en danger, prévention/répression des troubles à l’ordre public, protection personnes & biens).",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Cela va au-delà de l’assistance à personne en péril du ",
                 ),
                 TextSpan(
                   text: "Code pénal (art. 223-6)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -902,137 +902,137 @@ class DroitsObligationsPoliciersPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Cadre : "),
+                TextSpan(text: "Cadre : "),
                 TextSpan(
                   text: "décret n° 2020-69 du 30/01/2020",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " — principe : l’agent public consacre l’intégralité de son activité professionnelle aux tâches confiées.",
                 ),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Activités privées strictement interdites"),
+              SizedBox(height: 12),
+              _SubTitle("A) Activités privées strictement interdites"),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "CGFP (art. L. 123-1)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Participation à la direction de sociétés/associations à but lucratif.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Consultations/expertises/plaidoiries contre une personne publique (sauf exception).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Prise/détention d’intérêts compromettant l’indépendance dans une entreprise en lien/contrôle avec l’administration.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Création/reprise d’entreprise (certaines formes/inscriptions) selon le texte.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Cumul d’un emploi permanent à temps complet avec un ou plusieurs autres emplois permanents à temps complet.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Activités librement autorisées"),
+              _SubTitle("B) Activités librement autorisées"),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "CGFP (art. L. 123-2)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Gestion du patrimoine personnel/familial (limite : devenir dirigeant/gérant/commerçant).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Production d’œuvres de l’esprit (si compatible déontologie et réelle production).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Activité bénévole au profit de personnes publiques ou privées sans but lucratif.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Activités soumises à autorisation"),
+              _SubTitle("C) Activités soumises à autorisation"),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "CGFP (art. L. 123-8 et L. 123-7)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Création/reprise d’entreprise avec service à temps partiel (durée max 3 ans + 1 an).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Activités accessoires possibles (enseignement, expertise, sport/culture, services à la personne, vente de biens produits personnellement…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Limites police : l’activité ne doit pas porter atteinte au fonctionnement, à l’indépendance, ni à la neutralité du service, "
                         "et ne doit pas placer l’agent en situation de méconnaître la prise illégale d’intérêts — ",
                   ),
                   TextSpan(
                     text: "Code pénal (art. 432-12)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Formalisme de la demande"),
-              const _BulletPoint(
+              _SubTitle("D) Formalisme de la demande"),
+              _BulletPoint(
                 text:
                     "Demande écrite à l’autorité hiérarchique (accusé de réception).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Tout changement substantiel = nouvelle demande.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’administration peut s’opposer à tout moment si l’intérêt du service le justifie (activité plus accessoire, infos erronées, etc.).",
               ),
@@ -1072,10 +1072,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -1140,7 +1140,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -1183,7 +1183,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -1245,7 +1245,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1256,10 +1256,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -1271,13 +1270,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1290,13 +1288,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

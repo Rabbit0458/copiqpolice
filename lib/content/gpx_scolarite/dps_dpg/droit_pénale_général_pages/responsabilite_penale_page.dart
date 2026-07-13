@@ -3,9 +3,9 @@
 import 'package:flutter/material.dart';
 
 /// Page : Droit pénal général — De la responsabilité pénale
-/// Route alignée avec la config centrale : /dpg/responsabilite_penale
+/// Route alignée avec la config centrale : /gpx/dpg/responsabilite_penale
 class ResponsabilitePenalePage extends StatelessWidget {
-  static const String routeName = '/dpg/responsabilite_penale';
+  static const String routeName = '/gpx/dpg/responsabilite_penale';
   const ResponsabilitePenalePage({super.key});
 
   @override

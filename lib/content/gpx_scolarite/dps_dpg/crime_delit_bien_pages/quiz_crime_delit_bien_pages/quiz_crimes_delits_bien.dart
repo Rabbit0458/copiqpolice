@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Définition",
     question: "La demande de fonds sous contrainte consiste à :",
     options: [
@@ -104,7 +104,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 CP : comportement de mendicité agressive en réunion ou sous menace d’un animal dangereux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Définition",
     question:
         "L’infraction prévue à l’article 322-11-1 al.1 du Code pénal vise :",
@@ -119,7 +119,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-11-1 al.1 CP : détention ou transport de substances/produits incendiaires ou explosifs en vue de la préparation caractérisée de destructions dangereuses (322-6) ou d’atteintes aux personnes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément légal",
     question:
         "Quel article définit et réprime la détention ou le transport de substances incendiaires ou explosives avec préparation caractérisée ?",
@@ -133,7 +133,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte d’incrimination est expressément l’article 322-11-1 alinéa 1 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Détention",
     question: "La détention, au sens de 322-11-1, correspond :",
     options: [
@@ -147,7 +147,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La détention s’entend comme le fait d’avoir les produits à disposition, au domicile ou ailleurs, sans exigence de propriété.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Transport (piège)",
     question:
         "Être trouvé porteur de produits incendiaires sur la voie publique caractérise :",
@@ -161,7 +161,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise que le fait d’être porteur sur la voie publique caractérise simultanément la détention et le transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Nature des produits",
     question: "Sont visés par 322-11-1 al.1 :",
     options: [
@@ -174,7 +174,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise aussi bien les explosifs industriels que les explosifs artisanaux (EEI) et produits incendiaires comme les cocktails Molotov.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Pluralité (ultra-piège)",
     question: "La jurisprudence exige, en principe :",
     options: [
@@ -187,7 +187,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’emploi du pluriel implique que la présence d’un seul objet n’est pas suffisante ; la jurisprudence retient au moins deux éléments.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Préparation caractérisée",
     question: "La préparation caractérisée suppose :",
     options: [
@@ -201,7 +201,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’auteur ne doit pas être passé à l’acte ; la résolution d’agir doit ressortir d’actes préparatoires concrets.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Piège utilisation",
     question:
         "Si les substances sont effectivement utilisées, la qualification retenue sera :",
@@ -215,7 +215,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-11-1 vise l’anticipation : en cas d’utilisation ou tentative, on bascule vers 322-6 ou les infractions d’atteintes aux personnes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -229,7 +229,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’intention coupable doit être démontrée, révélée par les actes préparatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Peine",
     question: "Peines encourues pour l’infraction simple de 322-11-1 al.1 :",
     options: [
@@ -242,7 +242,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Répression de droit commun prévue par l’article 322-11-1 al.1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Aggravation",
     question: "La circonstance aggravante spécifique prévue est :",
     options: [
@@ -255,7 +255,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Article 322-11-1 al.2 CP : aggravation en cas de bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Peine aggravée",
     question: "En cas de bande organisée, la peine encourue est :",
     options: [
@@ -268,7 +268,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’aggravation par bande organisée porte la peine à 10 ans et 500 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative de l’infraction prévue à l’article 322-11-1 al.1 est punissable.",
@@ -277,7 +277,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La tentative n’est pas punissable pour cette infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Complicité",
     question: "La complicité est-elle punissable pour 322-11-1 al.1 ?",
     options: ["Oui", "Non", "Seulement pour les personnes morales"],
@@ -286,7 +286,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Définition",
     question: "L’article 322-11-1 al.3 réprime :",
     options: [
@@ -300,7 +300,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-11-1 al.3 CP vise l’absence de motif légitime, indépendamment d’une préparation caractérisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Motif légitime (piège)",
     question:
         "Un bidon d’essence transporté pour tondre une pelouse constitue :",
@@ -314,7 +314,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte exclut l’infraction lorsque le transport repose sur une raison légitime et de bonne foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Peine",
     question: "La peine encourue pour 322-11-1 1° ou 2° est :",
     options: [
@@ -328,7 +328,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Définition",
     question: "L’article 322-6 al.1 du Code pénal incrimine :",
     options: [
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-6 al.1 CP vise les atteintes intentionnelles aux biens créant un danger pour les personnes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Moyen dangereux",
     question: "Quels moyens sont expressément visés par l’article 322-6 ?",
     options: [
@@ -355,7 +355,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise l’explosion, l’incendie ou tout autre moyen de nature à créer un danger pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Élément moral (jurisprudence)",
     question:
         "Selon la Cour de cassation, l’élément intentionnel est caractérisé par :",
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Définition",
     question: "L’infraction de fausse alerte consiste à :",
     options: [
@@ -384,7 +384,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-14 CP réprime les fausses informations relatives à des destructions dangereuses ou à des sinistres.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément moral",
     question: "L’élément moral des fausses alertes suppose :",
     options: [
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’auteur doit savoir que l’information est fausse et vouloir tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Peine",
     question: "Les fausses alertes sont punies de :",
     options: [
@@ -409,7 +409,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Peine prévue par l’article 322-14 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Définition",
     question: "L’article 322-6-1 al.1 CP réprime :",
     options: [
@@ -423,7 +423,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-6-1 al.1 : diffusion de procédés de fabrication d’engins de destruction, sauf à destination des professionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Moyen de diffusion (piège)",
     question: "Pour 322-6-1, la diffusion doit être :",
     options: [
@@ -436,7 +436,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tous moyens visés (courriers, tracts, revues, communications électroniques, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Public visé",
     question: "L’infraction 322-6-1 peut être retenue si la diffusion est :",
     options: [
@@ -449,7 +449,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Elle vise la diffusion privée ou publique ; exclusion du strict cadre professionnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Exclusion (pro)",
     question:
         "La diffusion de procédés dans un cadre strictement professionnel (recherche/sécurité/enquête) :",
@@ -463,7 +463,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte exclut les diffusions à destination des professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément moral",
     question: "L’élément moral de 322-6-1 suppose notamment :",
     options: [
@@ -477,7 +477,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’auteur n’ignore pas le risque et diffuse sciemment un procédé destiné à fabriquer un engin de destruction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Aggravation",
     question: "La circonstance aggravante de 322-6-1 al.2 vise :",
     options: [
@@ -491,7 +491,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation si diffusion via réseau électronique à destination d’un public non déterminé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peine simple",
     question: "Peine encourue (322-6-1 al.1) :",
     options: [
@@ -503,7 +503,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Répression de base de 322-6-1 al.1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peine aggravée",
     question: "Peine encourue (322-6-1 al.2) :",
     options: [
@@ -516,7 +516,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation par réseau électronique vers public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-6-1 est punissable.",
     options: ["Vrai", "Faux", "Seulement si internet"],
@@ -524,7 +524,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le texte indique : tentative non punissable pour 322-6-1.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Complicité",
     question: "La complicité de diffusion de procédés (322-6-1) est :",
     options: [
@@ -537,7 +537,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Définition (involontaire dangereux)",
     question: "L’article 322-5 al.1 CP réprime :",
     options: [
@@ -551,7 +551,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-5 : involontaire + danger + explosion/incendie + manquement à obligation de prudence/sécurité imposée par loi ou règlement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Obligation (piège concours)",
     question: "Pour 322-5 al.1, l’obligation violée doit être :",
     options: [
@@ -564,7 +564,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Les magistrats doivent préciser la source exacte de l’obligation (Cass. crim., 18 juin 2002).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Résultat",
     question: "322-5 vise comme résultats :",
     options: [
@@ -578,7 +578,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Même triptyque que 322-1/322-6 : destruction / dégradation / détérioration.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité (piège)",
     question:
         "En cas de causalité indirecte, la responsabilité pénale suppose :",
@@ -592,7 +592,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Distinction causalité directe/indirecte (121-3 al.4 : auteur indirect).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Élément moral al.1",
     question: "L’élément moral de 322-5 al.1 correspond à :",
     options: [
@@ -606,7 +606,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il ne s’agit pas de n’importe quelle faute : omission de respecter une obligation précise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Élément moral al.2 (aggravé)",
     question: "322-5 al.2 vise :",
     options: [
@@ -620,7 +620,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Forme aggravée : l’auteur connaît les risques et choisit de ne pas respecter l’obligation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peine al.1",
     question: "Peine encourue (322-5 al.1) :",
     options: [
@@ -633,7 +633,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Répression de base pour destruction involontaire dangereuse (al.1).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peine al.2",
     question: "Peine encourue (322-5 al.2) :",
     options: [
@@ -645,7 +645,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation par violation manifestement délibérée (al.2).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Tentative/Complicité (V/F)",
     question:
         "Vrai/Faux : pour 322-5, tentative et complicité sont punissables.",
@@ -655,7 +655,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Définition (dommage important)",
     question: "L’article 322-1 I CP réprime :",
     options: [
@@ -669,7 +669,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-1 I : pas de danger pour les personnes + dommage important + bien d’autrui.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Moyen (piège)",
     question: "Pour 322-1 I, les moyens :",
     options: [
@@ -683,7 +683,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Les moyens ne sont pas précisés ; mais l’incendie/explosion relèvent des textes dangereux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Élément moral",
     question: "L’intention requise par 322-1 I est :",
     options: [
@@ -696,7 +696,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 18 sept. 1991 : savoir ne pas être propriétaire et n’avoir aucun droit de disposition.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Peine simple",
     question: "Peine encourue (322-1 I) :",
     options: [
@@ -709,7 +709,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Répression du dommage important sans danger pour les personnes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-2 — Circonstance (registre public)",
     question:
         "L’article 322-2 aggrave lorsque le bien détruit/dégradé/détérioré est :",
@@ -724,7 +724,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-2 : protection des registres d’état civil, minutes notariales, originaux d’actes/constats/PV.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-2 — Peine",
     question: "Peine encourue avec 322-2 :",
     options: [
@@ -736,7 +736,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation spécifique 322-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Aggravations (piège)",
     question: "L’article 322-3 prévoit notamment une aggravation lorsque :",
     options: [
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-3 liste plusieurs circonstances (pluralité, vulnérabilité, contre personnes dépositaires, etc.).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Peine (deux circonstances)",
     question: "Peine encourue lorsque 322-3 est retenu (selon tableau) :",
     options: [
@@ -763,7 +763,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le tableau du cours mentionne 5 ans / 75 000 € pour l’aggravation (322-3).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Tentative/Complicité",
     question: "Pour 322-1 I, la tentative et la complicité sont :",
     options: [
@@ -777,7 +777,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Définition (dommage léger)",
     question: "R.635-1 CP vise :",
     options: [
@@ -790,7 +790,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Contravention 5e classe si dommage léger.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Intention (piège contravention)",
     question: "Particularité de R.635-1 :",
     options: [
@@ -804,7 +804,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte requiert l’intention coupable : dommage « volontaire ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Peine",
     question: "Peine encourue (R.635-1) :",
     options: ["1 500 € d’amende", "3 750 € d’amende", "7 500 € d’amende"],
@@ -813,7 +813,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Tags (définition)",
     question: "L’article 322-1 II CP réprime :",
     options: [
@@ -827,7 +827,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Spécial « tags » : dommage léger et effaçable sans altérer le support.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Biens visés (piège)",
     question: "Pour 322-1 II, les biens expressément visés sont :",
     options: [
@@ -839,7 +839,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Liste fermée donnée par le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Dommage (piège)",
     question: "Si l’inscription est indélébile et altère le support :",
     options: [
@@ -851,7 +851,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "322-1 II suppose dommage léger (effaçable facilement).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Répression (base)",
     question: "Peine de base pour 322-1 II :",
     options: [
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours mentionne l’amende et la TIG ; pas d’emprisonnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Conséquence procédure (piège concours)",
     question: "Attention : 322-1 II, non puni d’emprisonnement, implique :",
     options: [
@@ -878,7 +878,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Définition (biens culturels)",
     question: "L’article 322-3-1 CP protège :",
     options: [
@@ -892,7 +892,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-3-1 liste plusieurs catégories (patrimoine, archives classées, musées, culte…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Particularité (piège)",
     question: "Pour 322-3-1, l’infraction est constituée même si :",
     options: [
@@ -905,7 +905,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Spécificité : le texte vise la protection patrimoniale ; propriété de l’auteur n’exclut pas l’infraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peine",
     question: "Peine encourue (322-3-1) :",
     options: [
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Répression renforcée pour biens culturels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Aggravation",
     question: "322-3-1 est aggravé notamment lorsque :",
     options: [
@@ -931,7 +931,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Renvoi à la circonstance de pluralité (322-3 1°).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peine aggravée",
     question: "Peine aggravée (322-3-1 al.6) :",
     options: [
@@ -944,7 +944,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Menaces sans condition (définition)",
     question: "L’article 322-12 CP réprime :",
     options: [
@@ -958,7 +958,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Sans condition : verbale → doit être réitérée ; sinon, une seule suffit si support matériel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Peine",
     question: "Peine encourue (322-12) :",
     options: [
@@ -970,7 +970,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Répression des menaces sans condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Menaces avec condition (définition)",
     question: "L’article 322-13 al.1 CP vise :",
     options: [
@@ -984,7 +984,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La condition = injonction (faire/ne pas faire) qui contraint la victime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine base",
     question: "Peine encourue (322-13 al.1) :",
     options: [
@@ -996,7 +996,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces avec condition : 1 an / 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Aggravation",
     question: "L’article 322-13 al.2 aggrave lorsque :",
     options: [
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation spécifique prévue par l’alinéa 2.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine aggravée",
     question: "Peine encourue (322-13 al.2) :",
     options: [
@@ -1022,7 +1022,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Distinction (piège concours)",
     question: "322-14 al.1 vise une fausse info portant sur :",
     options: [
@@ -1036,7 +1036,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.1 : fait croire à une infraction dangereuse ; al.2 : fait croire à un sinistre provoquant secours inutiles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Distinction (sinistre)",
     question: "322-14 al.2 vise plutôt :",
     options: [
@@ -1051,7 +1051,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Résultats (QCM piège)",
     question: "Dans 322-6, le résultat exigé est :",
     options: [
@@ -1065,7 +1065,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il suffit d’un danger pour les personnes, pas nécessairement de blessure effective.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Bien d’autrui",
     question: "Pour 322-6, le bien doit :",
     options: [
@@ -1079,7 +1079,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I vs R.635-1 (ultra-piège)",
     question: "La différence principale entre 322-1 I et R.635-1 est :",
     options: [
@@ -1093,7 +1093,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Éléments constitutifs proches ; la gravité du dommage fait basculer vers la contravention.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II vs R.635-1 (piège)",
     question:
         "Un graffiti effaçable sans altérer le support, sans autorisation, relève prioritairement :",
@@ -1104,7 +1104,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Articles (V/F)",
     question:
         "Vrai/Faux : 322-12 concerne les menaces d’atteintes aux biens sans condition.",
@@ -1114,7 +1114,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-12 = sans condition ; modalités : réitération si verbal / écrit-image-objet si unique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Articles (V/F)",
     question:
         "Vrai/Faux : 322-13 concerne les menaces d’atteintes aux biens avec condition.",
@@ -1123,7 +1123,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "322-13 = menaces avec ordre de remplir une condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Articles (V/F)",
     question: "Vrai/Faux : 322-14 réprime les fausses alertes.",
     options: ["Vrai", "Faux", "Uniquement internet"],
@@ -1132,7 +1132,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-14 = communication/divulgation d’une fausse information (destruction dangereuse ou sinistre).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines (piège)",
     question: "Associe la bonne peine : 322-12 =",
     options: ["6 mois + 7 500 €", "1 an + 15 000 €", "2 ans + 30 000 €"],
@@ -1140,7 +1140,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "322-12 : 6 mois d’emprisonnement + 7 500 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines (piège)",
     question: "Associe la bonne peine : 322-13 al.1 =",
     options: ["1 an + 15 000 €", "6 mois + 7 500 €", "3 ans + 45 000 €"],
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces avec condition (base).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peines (piège)",
     question: "Associe la bonne peine : 322-14 =",
     options: ["2 ans + 30 000 €", "3 ans + 45 000 €", "3 ans + 45 000 € + TIG"],
@@ -1156,7 +1156,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Fausse alerte : 2 ans / 30 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Définition",
     question: "322-11-1 al.1 CP réprime :",
     options: [
@@ -1170,7 +1170,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Infraction préventive : possession + préparation caractérisée (faits matériels) + finalité (322-6 ou atteintes aux personnes).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Finalité (piège concours)",
     question: "La finalité de 322-11-1 al.1 est :",
     options: [
@@ -1183,7 +1183,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise 322-6 + atteintes aux personnes (atteintes à la vie, violences...).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Détention vs transport",
     question: "La détention (322-11-1) se définit comme :",
     options: [
@@ -1197,7 +1197,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Notion large : disponibilité matérielle (domicile, parties communes, chez autrui...).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Souplesse (piège)",
     question:
         "Être trouvé porteur de produits sur la voie publique peut caractériser :",
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours insiste sur la souplesse : porteur sur voie publique = détention + transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Pluralité (ultra-piège)",
     question:
         "Selon le cours/jurisprudence, 322-11-1 al.1 vise des objets/substances au pluriel :",
@@ -1226,7 +1226,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte emploie le pluriel ; la jurisprudence retient l’exigence d’au moins deux éléments/objets.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Préparation caractérisée",
     question:
         "La “préparation caractérisée” exigée par 322-11-1 al.1 implique :",
@@ -1241,7 +1241,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte est en amont : il faut des actes préparatoires concrets, sans passage à l’acte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Absence d’utilisation (piège)",
     question: "Si les substances sont utilisées ou tentées d’être utilisées :",
     options: [
@@ -1255,7 +1255,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-11-1 al.1 = avant utilisation. Utilisation/tentative = bascule vers 322-6 ou infractions contre les personnes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément moral",
     question: "L’élément moral de 322-11-1 al.1 nécessite :",
     options: [
@@ -1268,7 +1268,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Intention démontrée par les actes préparatoires.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Répression",
     question: "Peine encourue (322-11-1 al.1) :",
     options: [
@@ -1281,7 +1281,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Détention/transport en vue de préparation (al.1) : 7 ans / 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Bande organisée",
     question: "La circonstance aggravante de 322-11-1 al.2 est :",
     options: ["Bande organisée", "Récidive légale", "Pluralité de victimes"],
@@ -1289,7 +1289,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le texte prévoit l’aggravation en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Peine aggravée",
     question: "Peine encourue (322-11-1 al.2) :",
     options: [
@@ -1301,7 +1301,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation bande organisée : 10 ans / 500 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 (al.1/2) — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 est punissable.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -1309,7 +1309,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours indique : tentative non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 — Complicité",
     question: "Complicité pour 322-11-1 :",
     options: ["Oui", "Non", "Uniquement si mineur"],
@@ -1319,7 +1319,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Définition (sans motif légitime)",
     question: "322-11-1 al.3 vise la détention/transport sans motif légitime :",
     options: [
@@ -1333,7 +1333,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Deux branches : 1° explosifs “hors régime” ; 2° incendiaires/éléments si interdits par arrêté préfectoral + absence de motif légitime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — 1° (explosifs)",
     question: "Pour 322-11-1 al.3 1°, il faut :",
     options: [
@@ -1347,7 +1347,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise les explosifs (notamment artisanaux) non soumis à un régime particulier.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — 2° (arrêté préfectoral)",
     question:
         "Pour 322-11-1 al.3 2°, en plus de l’absence de motif légitime, il faut :",
@@ -1362,7 +1362,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Condition cumulative : pas de motif légitime + arrêté préfectoral d’interdiction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Motif légitime (piège)",
     question: "Le “motif légitime” :",
     options: [
@@ -1375,7 +1375,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Notion souple : contexte violences urbaines/manifs vs usage domestique normal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Élément moral (1°)",
     question: "Pour 322-11-1 al.3 1°, l’élément moral correspond à :",
     options: [
@@ -1388,7 +1388,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Branche 1° : connaissance + absence de motif légitime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Élément moral (2°)",
     question: "Pour 322-11-1 al.3 2°, l’élément moral implique :",
     options: [
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Branche 2° : cumul absence motif + violation arrêté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Peine",
     question: "Peine encourue (322-11-1 al.3 1° et 2°) :",
     options: [
@@ -1412,7 +1412,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours indique : 3 ans / 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 al.3 est punissable.",
     options: ["Vrai", "Faux", "Oui si arrêté préfectoral"],
@@ -1421,7 +1421,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Moyens (QCM ultra-piège)",
     question: "322-6 al.1 vise une atteinte au bien par :",
     options: [
@@ -1435,7 +1435,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La formule “tout autre moyen” est large dès lors que la sécurité des personnes est gravement mise en danger.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Danger (piège)",
     question: "Pour 322-6, il faut :",
     options: [
@@ -1449,7 +1449,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’atteinte au bien doit être de nature à créer un danger pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Élément moral (jurisprudence)",
     question:
         "Selon la Cour de cassation, l’usage d’une substance explosive ou l’incendie :",
@@ -1464,7 +1464,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 24 juin 1998 : danger grave inhérent à ces moyens d’action.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Tentative",
     question: "La tentative du délit de 322-6 est :",
     options: [
@@ -1477,7 +1477,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique : 322-11 prévoit la tentative punissable pour 322-6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Complicité",
     question: "La complicité pour 322-6 est :",
     options: [
@@ -1490,7 +1490,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément matériel (piège)",
     question: "L’élément matériel de 322-14 nécessite :",
     options: [
@@ -1502,7 +1502,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le moyen est indifférent (écrit/oral/téléphone/radio...).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Al.1 vs Al.2 (QCM piège)",
     question: "La différence principale entre 322-14 al.1 et al.2 est :",
     options: [
@@ -1516,7 +1516,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.1 cible les atteintes dangereuses aux biens ; al.2 cible le sinistre (accident, feu accidentel...) et la mobilisation inutile.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément moral",
     question: "L’élément moral de 322-14 implique :",
     options: [
@@ -1528,7 +1528,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Intention coupable requise ; mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative de fausse alerte (322-14) est punissable.",
@@ -1537,7 +1537,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tentative : non (cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Complicité",
     question: "La complicité de 322-14 est :",
     options: ["Oui", "Non", "Oui seulement si l’auteur est mineur"],
@@ -1546,7 +1546,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Condition de forme (ultra-piège)",
     question: "Pour 322-12, une menace verbale unique suffit si :",
     options: [
@@ -1559,7 +1559,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Sans condition : verbale → réitération ; sinon matérialisation (écrit/image/objet).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Support matériel",
     question: "Pour 322-12, une menace peut être unique si elle est :",
     options: [
@@ -1572,7 +1572,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le support matérialise la menace : pas besoin de réitération.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Condition (QCM piège)",
     question: "Dans 322-13, la “condition” peut être :",
     options: [
@@ -1586,7 +1586,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Circonstances (ciblage DAP/MSP)",
     question:
         "Une circonstance aggravante de 322-3 est constituée si les faits sont commis :",
@@ -1601,7 +1601,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise notamment magistrat, gendarme, police, douanes, AP, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Domicile (piège)",
     question: "322-3 peut aggraver si l’infraction est commise :",
     options: [
@@ -1615,7 +1615,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Circonstance listée : pénétration par ruse/effraction/escalade.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Visage dissimulé",
     question:
         "Dissimuler volontairement son visage afin de ne pas être identifié :",
@@ -1629,7 +1629,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Amende forfaitaire délictuelle (piège)",
     question: "Le texte “tags” (322-1 II) permet :",
     options: [
@@ -1642,7 +1642,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours mentionne explicitement la procédure d’AFD pour 322-1 II.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Aggravation (322-2)",
     question:
         "Pour les “tags”, si le support est un registre/acte original de l’autorité publique :",
@@ -1657,7 +1657,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question:
         "“Fausse information visant à faire intervenir inutilement les secours” =",
@@ -1666,7 +1666,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.2 : sinistre + intervention inutile des secours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question: "“Menace avec ordre de remplir une condition” =",
     options: ["322-13", "322-12", "R.635-1"],
@@ -1674,7 +1674,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces avec condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question:
         "“Destruction involontaire dangereuse par incendie/explosion + obligation loi/règlement violée” =",
@@ -1684,7 +1684,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Involontaire + danger + manquement obligation de prudence/sécurité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Associe l’article (QCM)",
     question:
         "“Détention/transport en vue de préparer 322-6 ou atteintes aux personnes (faits matériels)” =",
@@ -1694,7 +1694,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Infraction de prévention des violences urbaines/incendies/explosifs.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Définition",
     question: "L’infraction de 322-6-1 al.1 CP réprime :",
     options: [
@@ -1708,7 +1708,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-6-1 : diffusion par tout moyen de “procédés” permettant fabriquer des engins de destruction (explosifs, nucléaires, biologiques, chimiques, ou produits domestiques/industriels/agricoles).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Moyens de diffusion (piège)",
     question: "Pour 322-6-1, le moyen de diffusion peut être :",
     options: [
@@ -1721,7 +1721,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tous moyens : transmission vers une ou plusieurs personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Public visé (QCM piège)",
     question:
         "L’infraction 322-6-1 peut être constituée si la diffusion est faite :",
@@ -1735,7 +1735,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La diffusion peut être “privée” (destinataire déterminé) ou publique (site…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Exception (professionnels)",
     question: "322-6-1 ne s’applique pas lorsque la diffusion intervient :",
     options: [
@@ -1748,7 +1748,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Exclusion : diffusion à destination des professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Notion d’engin de destruction",
     question: "L’“engin de destruction” visé par 322-6-1 implique :",
     options: [
@@ -1762,7 +1762,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours vise des engins susceptibles de provoquer incendies/explosions/contaminations, dangereux pour les tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément moral (V/F)",
     question:
         "Vrai/Faux : pour 322-6-1, il faut prouver que l’auteur voulait effectivement nuire.",
@@ -1772,7 +1772,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Élément moral : connaissance du risque + diffusion sciemment ; le mobile importe peu.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Aggravation",
     question: "La circonstance aggravante de 322-6-1 al.2 est :",
     options: [
@@ -1786,7 +1786,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.2 : usage d’un réseau électronique + public non déterminé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines",
     question: "Peine encourue pour 322-6-1 al.1 :",
     options: [
@@ -1798,7 +1798,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Peines principales al.1 : 3 ans / 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines aggravées",
     question: "Peine encourue pour 322-6-1 al.2 :",
     options: [
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation “réseau électronique + public non déterminé” : 5 ans / 75 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-6-1 est punissable.",
     options: ["Vrai", "Faux", "Seulement al.2"],
@@ -1819,7 +1819,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tentative : non (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Complicité",
     question: "La complicité de diffusion (322-6-1) est :",
     options: ["Oui", "Non", "Uniquement si l’auteur est fonctionnaire"],
@@ -1828,7 +1828,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Bien d’autrui (piège)",
     question: "Pour 322-6, le bien doit :",
     options: [
@@ -1841,7 +1841,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-6 protège un bien appartenant à une autre personne que l’auteur.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Destruction / Dégradation / Détérioration",
     question: "La “destruction” au sens du cours correspond à :",
     options: [
@@ -1855,7 +1855,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Destruction = résultat le plus grave : bien rendu inapte à son usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Dégradation vs détérioration (piège concours)",
     question: "La “dégradation” se distingue surtout par :",
     options: [
@@ -1868,7 +1868,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Dégradation = dommage important mais non rendant le bien inutilisable ; détérioration = moins grave, perte de valeur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Incendie (définition du cours)",
     question: "Au sens du cours, l’incendie est :",
     options: [
@@ -1881,7 +1881,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’incendie se distingue d’un feu “simple” par la propagation et le danger.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — “Tout autre moyen” (QCM piège)",
     question: "“Tout autre moyen de nature à créer un danger” peut viser :",
     options: [
@@ -1896,7 +1896,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Définition",
     question: "322-5 al.1 CP vise :",
     options: [
@@ -1910,7 +1910,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Involontaire + danger + manquement à une obligation particulière de prudence/sécurité imposée par la loi ou le règlement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Obligation (piège)",
     question: "Pour 322-5, l’obligation violée doit être :",
     options: [
@@ -1924,7 +1924,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Les magistrats doivent préciser source et nature exacte de l’obligation violée (cours).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité (QCM piège)",
     question: "Le lien de causalité en 322-5 :",
     options: [
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours distingue causalité directe/indirecte (121-3).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Élément moral (al.2) (piège concours)",
     question: "322-5 al.2 (aggravé) vise notamment :",
     options: [
@@ -1951,7 +1951,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.2 : l’auteur sait les risques mais choisit volontairement de ne pas respecter l’obligation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Tentative / Complicité (V/F piège)",
     question: "Vrai/Faux : pour 322-5, la complicité est non punissable.",
     options: ["Vrai", "Faux", "Vrai seulement al.1"],
@@ -1961,7 +1961,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Définition",
     question: "322-1 I CP vise :",
     options: [
@@ -1975,7 +1975,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Article de base “dommage important” hors moyens dangereux (incendie/explosifs).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Moyen employé (piège)",
     question: "Pour 322-1 I, le moyen employé peut être :",
     options: [
@@ -1988,7 +1988,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours écarte incendie/explosifs (322-6).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Élément moral",
     question: "L’élément moral de 322-1 I nécessite :",
     options: [
@@ -2002,7 +2002,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 18 sept. 1991 : intention simple, mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Dommage léger",
     question: "R.635-1 CP vise :",
     options: [
@@ -2016,7 +2016,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Contravention 5e classe : éléments proches de 322-1 I mais dommage léger.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Élément moral (piège)",
     question: "Contrairement à beaucoup de contraventions, R.635-1 exige :",
     options: [
@@ -2029,7 +2029,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours souligne l’exigence d’intention malgré la nature contraventionnelle.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Peine",
     question: "Peine principale R.635-1 :",
     options: ["1 500 € d’amende", "3 750 € d’amende", "15 000 € d’amende"],
@@ -2038,7 +2038,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Tags (définition)",
     question: "322-1 II CP réprime :",
     options: [
@@ -2052,7 +2052,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Spécifique “tags” : dommage léger (effaçable sans altérer le support).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Dommage léger (piège)",
     question: "Si l’inscription est indélébile et altère le support :",
     options: [
@@ -2066,7 +2066,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 322-1 II = dommage léger ; dommages importants = 322-1 I.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Peine (piège)",
     question: "Peine principale 322-1 II (tags) :",
     options: [
@@ -2078,7 +2078,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours mentionne l’amende et la TIG pour 322-1 II.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — GAV/Flagrance (piège concours)",
     question: "Particularité signalée pour 322-1 II (tags) :",
     options: [
@@ -2093,7 +2093,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Définition (biens culturels)",
     question:
         "322-3-1 CP réprime les destructions/dégradations/détériorations portant sur :",
@@ -2107,7 +2107,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Liste détaillée du cours : 1° à 4°.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Propriétaire (ultra-piège)",
     question:
         "Vrai/Faux : 322-3-1 peut être constitué même si l’auteur est propriétaire du bien.",
@@ -2117,7 +2117,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise : constitué même si l’auteur est propriétaire (intérêt collectif).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Dommage (piège)",
     question: "Pour 322-3-1, le dommage peut être :",
     options: [
@@ -2131,7 +2131,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La protection tient à la nature du bien, pas au niveau du dommage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peines",
     question: "Peines principales (322-3-1) :",
     options: [
@@ -2144,7 +2144,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours prévoit aussi la référence à la moitié de la valeur du bien.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Aggravation",
     question: "322-3-1 est aggravé notamment lorsque :",
     options: [
@@ -2158,7 +2158,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation par la circonstance de pluralité (référence 322-3 1°).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peine aggravée",
     question: "Peine aggravée (322-3-1 al.6) :",
     options: [
@@ -2171,7 +2171,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Peine",
     question:
         "Peine principale 322-12 (menaces sans condition, dangereuses, réitérées ou matérialisées) :",
@@ -2184,7 +2184,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces sans condition : 6 mois / 7 500 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine (avec condition)",
     question: "Peine principale 322-13 al.1 (menace avec condition) :",
     options: [
@@ -2196,7 +2196,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces avec condition : 1 an / 15 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Aggravation (danger personnes)",
     question: "322-13 al.2 aggrave lorsque la menace porte sur :",
     options: [
@@ -2209,7 +2209,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.2 : aggravation si danger pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Peine aggravée",
     question: "Peine aggravée 322-13 al.2 :",
     options: [
@@ -2222,7 +2222,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Peine",
     question: "Peines principales 322-14 (al.1 ou al.2) :",
     options: [
@@ -2236,7 +2236,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (menace)",
     question:
         "Une menace écrite unique de “mettre le feu à ta voiture ce soir” (sans exiger quoi que ce soit) relève plutôt de :",
@@ -2246,7 +2246,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Sans condition : écrit/objet suffit (menace unique) → 322-12.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (condition)",
     question: "“Si tu ne paies pas, je brûle ton commerce” relève plutôt de :",
     options: ["322-13", "322-12", "R.631-1"],
@@ -2254,7 +2254,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menace avec ordre de remplir une condition (payer).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (fausse info)",
     question:
         "Appeler en disant “il y a une bombe dans la gare” pour créer la panique :",
@@ -2264,7 +2264,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Fausse information faisant croire à une destruction dangereuse pour les personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — Qualification (sinistre)",
     question:
         "Téléphoner en prétendant inventer un accident grave pour faire venir les secours “pour rire” :",
@@ -2274,7 +2274,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.2 : fausse information faisant croire à un sinistre + intervention inutile.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (articles)",
     question:
         "Vrai/Faux : 322-6 concerne des destructions dangereuses pour les personnes, alors que 322-1 I vise l’absence de danger pour les personnes.",
@@ -2284,7 +2284,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-6 = moyen dangereux/danger personnes ; 322-1 I = pas de danger personnes + dommage important.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (peines)",
     question:
         "Vrai/Faux : 322-11-1 al.1 est puni moins sévèrement que 322-11-1 al.3.",
@@ -2293,7 +2293,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.1 : 7 ans/100k ; al.3 : 3 ans/45k.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (peines)",
     question: "Associe la bonne peine : 322-12 =",
     options: ["6 mois + 7 500 €", "1 an + 15 000 €", "2 ans + 30 000 €"],
@@ -2301,7 +2301,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces sans condition : 6 mois / 7 500 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (peines)",
     question: "Associe la bonne peine : 322-6-1 al.2 =",
     options: ["5 ans + 75 000 €", "3 ans + 45 000 €", "7 ans + 100 000 €"],
@@ -2310,7 +2310,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Diffusion aggravée via réseau électronique + public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (peines)",
     question: "Associe la bonne peine : 322-14 =",
     options: ["2 ans + 30 000 €", "3 ans + 45 000 €", "6 mois + 7 500 €"],
@@ -2318,7 +2318,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Fausse alerte : 2 ans / 30 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Définition",
     question: "322-11-1 al.1 CP réprime :",
     options: [
@@ -2332,7 +2332,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Texte : détention/transport + produits incendiaires/explosifs (ou éléments entrant dans leur composition) + préparation caractérisée par faits matériels + infractions 322-6 ou atteintes aux personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Acte préparatoire (piège concours)",
     question: "Pour 322-11-1 al.1, l’intention doit apparaître :",
     options: [
@@ -2346,7 +2346,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte exige une préparation “caractérisée” par actes matériels : on est en amont de l’acte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Détention vs transport",
     question: "La “détention” au sens du cours correspond à :",
     options: [
@@ -2360,7 +2360,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Détention = mise à disposition (au domicile, parties communes, chez autrui, etc.).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Souplesse (piège)",
     question:
         "Être trouvé porteur de tels produits sur la voie publique caractérise :",
@@ -2374,7 +2374,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours insiste sur la souplesse : porteur = détention + transport.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Pluralité (ultra-piège)",
     question:
         "Selon le cours/jurisprudence citée, un seul objet suffit toujours à 322-11-1 al.1.",
@@ -2384,7 +2384,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise au pluriel ; la jurisprudence retient qu’un seul objet n’est pas suffisant (logique “au moins deux”).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Objet matériel (QCM piège)",
     question: "Peuvent être visés par 322-11-1 al.1 :",
     options: [
@@ -2398,7 +2398,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.1 vise aussi les “éléments/substances destinés à entrer dans la composition”.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Infraction visée (piège)",
     question: "La préparation visée renvoie notamment :",
     options: [
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : préparation de destructions dangereuses (322-6) ou d’atteintes aux personnes.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Absence d’utilisation (piège concours)",
     question:
         "Si les substances sont utilisées (ou tentées d’être utilisées), on poursuit plutôt sur :",
@@ -2427,7 +2427,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-11-1 al.1 vise l’avant-acte. Si usage/tentative d’usage : on bascule sur l’infraction principale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Élément moral",
     question: "Pour 322-11-1 al.1, il faut démontrer :",
     options: [
@@ -2441,7 +2441,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit n’est retenu que si l’intention est établie (actes préparatoires).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Peines",
     question: "Peines principales 322-11-1 al.1 :",
     options: [
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : 7 ans / 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Bande organisée",
     question: "La circonstance aggravante de 322-11-1 al.2 est :",
     options: ["La bande organisée", "L’écrit", "La réitération"],
@@ -2461,7 +2461,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.2 : faits commis en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.2 — Peines aggravées",
     question: "Peines 322-11-1 al.2 (bande organisée) :",
     options: [
@@ -2473,7 +2473,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : bande organisée → 10 ans / 500 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.1 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 al.1 est punissable.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -2481,7 +2481,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : tentative = non.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 — Complicité",
     question: "La complicité de 322-11-1 est :",
     options: ["Punissable", "Non punissable", "Punissable seulement si ITT"],
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Définition générale",
     question: "322-11-1 al.3 incrimine :",
     options: [
@@ -2504,7 +2504,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.3 vise deux hypothèses (1° explosifs non soumis à régime particulier ; 2° produits incendiaires/éléments interdits par arrêté préfectoral).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Hypothèse 1° (piège)",
     question: "322-11-1 al.3 1° concerne :",
     options: [
@@ -2518,7 +2518,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : vise notamment des produits de fabrication artisanale non soumis au régime des explosifs conventionnels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Hypothèse 2° (QCM piège)",
     question: "322-11-1 al.3 2° exige notamment :",
     options: [
@@ -2532,7 +2532,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise : pour ces produits “banals”, il faut les deux conditions.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Motif légitime (piège concours)",
     question: "Le “motif légitime” permet surtout :",
     options: [
@@ -2546,7 +2546,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : ex. contexte violences urbaines vs usage normal (bonne foi).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Peines",
     question: "Peines pour 322-11-1 al.3 (1° ou 2°) :",
     options: [
@@ -2558,7 +2558,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : al.3 = 3 ans / 45 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-11-1 al.3 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 322-11-1 al.3 est punissable.",
     options: ["Vrai", "Faux", "Seulement 2°"],
@@ -2567,7 +2567,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Peine de base (rappel)",
     question:
         "Peines principales 322-6 al.1 (destructions dangereuses, intentionnelles) :",
@@ -2580,7 +2580,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : qualification délit (base) = 10 ans / 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Élément intentionnel (ultra-piège)",
     question:
         "Selon le cours, l’emploi d’un moyen intrinsèquement dangereux (incendie/substance explosive) :",
@@ -2595,7 +2595,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Référence du cours : toute personne est censée connaître l’efficacité/danger de ces moyens.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Tentative",
     question: "La tentative de 322-6 est :",
     options: [
@@ -2608,7 +2608,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : l’article 322-11 prévoit la tentative punissable pour le délit de 322-6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6 — Complicité",
     question: "La complicité de 322-6 (consommée ou tentée) est :",
     options: ["Oui", "Non", "Oui seulement si bande organisée"],
@@ -2617,7 +2617,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément matériel (piège)",
     question: "Pour 322-14, l’auteur doit :",
     options: [
@@ -2630,7 +2630,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le moyen est indifférent : écrit/oral/téléphone/radio, etc.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 al.1 — Objet (QCM piège)",
     question: "322-14 al.1 suppose de faire croire :",
     options: [
@@ -2643,7 +2643,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.1 vise des faits “dangereux pour les personnes”.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 al.2 — Objet (piège)",
     question: "322-14 al.2 vise plutôt :",
     options: [
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.2 : sinistre (accident, feu d’origine accidentelle, etc.) + intervention inutile.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Élément moral",
     question: "L’élément moral de 322-14 implique :",
     options: [
@@ -2670,7 +2670,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Intention requise : l’auteur sait que c’est faux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-14 — Tentative/Complicité",
     question: "Pour 322-14 :",
     options: [
@@ -2683,7 +2683,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Condition de matérialisation (piège concours)",
     question: "Une menace sans condition tombe sous 322-12 si elle est :",
     options: [
@@ -2697,7 +2697,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : verbal = réitération ; écrit/image/objet = une seule suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Objet (piège)",
     question:
         "322-12 vise des menaces de destructions/dégradations/détériorations :",
@@ -2711,7 +2711,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte du cours sur 322-12 : menace de faits dangereux pour les personnes, sans condition, réitérée ou matérialisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-12 — Tentative/Complicité",
     question: "Pour 322-12 :",
     options: [
@@ -2724,7 +2724,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Condition (définition)",
     question: "La “condition” au sens de 322-13 correspond à :",
     options: [
@@ -2738,7 +2738,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Condition = atteinte à la liberté d’agir : contrainte sur le comportement de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-13 — Élément moral",
     question: "Pour 322-13, il est requis :",
     options: [
@@ -2752,7 +2752,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Dommage important (ultra-piège)",
     question: "Le caractère “important” du dommage (322-1 I) est :",
     options: [
@@ -2765,7 +2765,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : l’importance du résultat reste à l’appréciation du juge.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Bien d’autrui (piège copropriété)",
     question:
         "Selon le cours, le propriétaire peut malgré tout relever de 322-1 I si :",
@@ -2780,7 +2780,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3 — Circonstances aggravantes (rappel)",
     question:
         "Parmi les circonstances aggravantes (322-3), on retrouve notamment :",
@@ -2794,7 +2794,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-3 liste de nombreuses circonstances ; celle-ci en fait partie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-2 — Registre/minute/acte original",
     question:
         "322-2 concerne notamment la destruction/dégradation/détérioration :",
@@ -2809,7 +2809,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Registres d’état civil, minutes notariales, originaux d’actes/constats/PV dressés par autorités habilitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Tags (tentative)",
     question: "La tentative de 322-1 II (tags) est :",
     options: [
@@ -2822,7 +2822,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : 322-4 prévoit la tentative punissable pour ces délits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 II — Complicité",
     question: "La complicité pour 322-1 II (tags) est :",
     options: ["Oui", "Non", "Seulement par provocation"],
@@ -2831,7 +2831,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — 322-11-1 al.1 ou al.3 ?",
     question:
         "On constate plusieurs objets/produits, et des faits matériels montrant une préparation d’une infraction dangereuse. On vise plutôt :",
@@ -2841,7 +2841,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.1 = détention/transport + préparation caractérisée (faits matériels) + finalité (322-6 ou atteintes personnes).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — 322-11-1 al.3 2°",
     question:
         "Transport d’un produit incendiaire “banal” en violation d’un arrêté préfectoral, sans motif légitime :",
@@ -2851,7 +2851,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.3 2° : absence motif légitime + violation arrêté préfectoral.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Quiz ultra-piège — 322-6 vs 322-11-1",
     question:
         "Si l’usage d’un moyen dangereux est commencé (commencement d’exécution), on se rapproche plutôt de :",
@@ -2866,7 +2866,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (peines)",
     question:
         "Vrai/Faux : 322-11-1 al.2 est plus sévèrement puni que 322-11-1 al.1.",
@@ -2875,7 +2875,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.1 : 7 ans/100k ; al.2 : 10 ans/500k.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (tous les moyens)",
     question:
         "Vrai/Faux : en 322-6, le Code liste exhaustivement tous les moyens possibles.",
@@ -2885,7 +2885,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise aussi “tout autre moyen de nature à créer un danger” (formule large).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (articles)",
     question: "Associe : “fausses alertes” =",
     options: ["322-14", "322-12", "322-6-1"],
@@ -2894,7 +2894,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-14 : fausses informations (destruction dangereuse ou sinistre) entraînant croyance/intervention inutile.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (articles)",
     question: "Associe : “menaces avec condition” =",
     options: ["322-13", "322-12", "R.635-1"],
@@ -2902,7 +2902,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Menaces + ordre de remplir une condition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (articles)",
     question: "Associe : “diffusion de procédés (engins de destruction)” =",
     options: ["322-6-1", "322-11-1", "322-3-1"],
@@ -2910,7 +2910,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Diffusion de procédés (sauf professionnels).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Définition",
     question: "322-6-1 al.1 CP réprime :",
     options: [
@@ -2924,7 +2924,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "322-6-1 : diffusion de procédés permettant la fabrication d’engins de destruction ; exclusion du cadre strictement professionnel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément matériel (piège)",
     question: "Pour 322-6-1, la diffusion suppose :",
     options: [
@@ -2938,7 +2938,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tous moyens : courrier, tract, affiche, revue, vidéo, communications électroniques, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Public visé (ultra-piège)",
     question:
         "La diffusion à un correspondant déterminé (en privé) peut suffire à caractériser 322-6-1.",
@@ -2948,7 +2948,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : destination à un particulier déterminé ou à un public non identifié (site) → possible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Exception (pro)",
     question:
         "L’infraction de 322-6-1 ne s’applique pas lorsque la diffusion intervient :",
@@ -2963,7 +2963,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte exclut la destination aux professionnels (cadre pro).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Élément moral (piège concours)",
     question: "Pour 322-6-1, l’auteur doit notamment :",
     options: [
@@ -2975,7 +2975,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Connaissance du risque + diffusion volontaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Aggravation",
     question: "La circonstance aggravante de 322-6-1 al.2 est :",
     options: [
@@ -2989,7 +2989,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.2 : diffusion via réseau électronique vers public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines",
     question: "Peines 322-6-1 al.1 :",
     options: [
@@ -3001,7 +3001,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : 3 ans / 45k (simple).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Peines aggravées",
     question: "Peines 322-6-1 al.2 :",
     options: [
@@ -3013,7 +3013,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation réseau électronique vers public non déterminé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-6-1 — Tentative/Complicité",
     question: "Pour 322-6-1 :",
     options: [
@@ -3026,7 +3026,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Définition",
     question: "322-5 al.1 CP vise :",
     options: [
@@ -3040,7 +3040,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Involontaire + explosion/incendie + obligation précise (loi/règlement) violée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Obligation (piège)",
     question: "Le “règlement” au sens du cours correspond :",
     options: [
@@ -3052,7 +3052,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours précise la notion de règlement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Source obligatoire",
     question: "Les magistrats doivent pouvoir :",
     options: [
@@ -3065,7 +3065,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours insiste : obligation précise imposée par loi/règlement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité (QCM piège)",
     question: "En matière de 322-5, le lien de causalité :",
     options: [
@@ -3078,7 +3078,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours admet une causalité non nécessairement immédiate.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Causalité indirecte (ultra-piège)",
     question: "L’auteur “indirect” (121-3 al.4) est celui qui :",
     options: [
@@ -3092,7 +3092,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Définition cours : auteur indirect = à l’origine de la situation dangereuse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peines (al.1)",
     question: "Peines 322-5 al.1 :",
     options: [
@@ -3105,7 +3105,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : al.1 (faute simple sur obligation précise) = 1 an / 15k.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Violation manifestement délibérée",
     question: "322-5 al.2 correspond à :",
     options: [
@@ -3118,7 +3118,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.2 : forme “aggravée” de l’élément moral.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Peines (al.2)",
     question: "Peines 322-5 al.2 :",
     options: [
@@ -3130,7 +3130,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : al.2 = 2 ans / 30k.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-5 — Tentative/Complicité (piège)",
     question: "Pour 322-5 :",
     options: [
@@ -3143,7 +3143,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Moyen employé (piège)",
     question: "322-1 I (dommage important) vise tous moyens, sauf :",
     options: [
@@ -3157,7 +3157,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : 322-1 I n’englobe pas l’incendie / explosifs (régimes spécifiques).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-1 I — Élément moral",
     question: "L’élément moral de 322-1 I est :",
     options: [
@@ -3169,7 +3169,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Pas besoin de dol spécial ; mobile indifférent.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Qualification",
     question: "R.635-1 CP correspond à :",
     options: [
@@ -3182,7 +3182,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Dommage léger → contravention 5e classe.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Intention (piège)",
     question: "Contrairement à beaucoup de contraventions, R.635-1 exige :",
     options: [
@@ -3194,7 +3194,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le texte requiert le caractère “volontaire”.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Peine",
     question: "Peine principale R.635-1 :",
     options: ["1 500 € d’amende", "3 750 € d’amende", "30 000 € d’amende"],
@@ -3202,7 +3202,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Contravention 5e classe : 1 500 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "R.635-1 — Tentative/Complicité",
     question: "Pour R.635-1 :",
     options: [
@@ -3215,7 +3215,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Définition",
     question: "322-3-1 CP protège :",
     options: [
@@ -3229,7 +3229,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Liste large : patrimoine protégé, y compris dépôt temporaire, musées/bibliothèques/archives, édifices du culte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Bien d’autrui ? (ultra-piège)",
     question:
         "Pour 322-3-1, l’infraction peut être constituée même si l’auteur est propriétaire du bien.",
@@ -3239,7 +3239,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : constitué même si l’auteur est propriétaire (intérêt collectif).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Dommage léger/important",
     question: "Sous 322-3-1, le dommage peut être :",
     options: [
@@ -3251,7 +3251,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Il suffit que le bien soit dans la catégorie protégée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peines",
     question: "Peines (simple) 322-3-1 :",
     options: [
@@ -3263,7 +3263,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : 7 ans / 100k ou 1/2 valeur du bien.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Aggravation",
     question: "L’aggravation (322-3-1 al.6) correspond :",
     options: [
@@ -3277,7 +3277,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Renvoi : aggravation si plusieurs personnes agissant auteur/complice.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Peines aggravées",
     question: "Peines aggravées 322-3-1 :",
     options: [
@@ -3289,7 +3289,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : aggravé = 10 ans / 150k ou 1/2 valeur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "322-3-1 — Tentative/Complicité",
     question: "Pour 322-3-1 :",
     options: [
@@ -3303,7 +3303,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Choix de texte",
     question:
         "Un incendie involontaire (manquement à une obligation précise) qui met des personnes en danger relève plutôt de :",
@@ -3313,7 +3313,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Involontaire + incendie/explosion + obligation prudence/sécurité = 322-5.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Choix de texte",
     question:
         "Une destruction volontaire par incendie, créant un danger pour les personnes, relève plutôt de :",
@@ -3322,7 +3322,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Incendie/explosif + danger personnes + intentionnel = 322-6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — 322-14 vs 322-12",
     question:
         "Annoncer faussement une bombe pour déclencher une évacuation correspond le mieux à :",
@@ -3332,7 +3332,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Fausse information faisant croire à une destruction dangereuse (ou sinistre) = fausse alerte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — 322-12 vs 322-13",
     question: "“Si tu ne paies pas, je détruis ta voiture” correspond à :",
     options: ["322-13 (avec condition)", "322-12 (sans condition)", "322-14"],
@@ -3342,7 +3342,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (322-3-1)",
     question: "Vrai/Faux : pour 322-3-1, le dommage doit être important.",
     options: ["Vrai", "Faux", "Vrai si édifice du culte"],
@@ -3351,7 +3351,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Dommage léger ou important : indifférent dès lors que le bien est protégé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (322-6-1)",
     question:
         "Vrai/Faux : 322-6-1 exige que l’engin ait effectivement été fabriqué ou utilisé.",
@@ -3361,7 +3361,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’infraction porte sur la diffusion du procédé (en amont), pas sur l’usage effectif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (tentative)",
     question: "La tentative est punissable pour :",
     options: ["322-6", "322-14", "322-13"],
@@ -3370,7 +3370,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : tentative punissable pour 322-6 (322-11). 322-14 et 322-13 : tentative non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — QCM (complicité)",
     question: "La complicité n’est PAS retenue (selon le cours) pour :",
     options: ["322-5", "322-14", "322-12"],
@@ -3379,7 +3379,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cours : 322-5 → complicité NON. 322-14/322-12 → complicité OUI.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Définition",
     question: "La non-justification de ressources (321-6 CP) vise :",
     options: [
@@ -3393,7 +3393,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 al.1 : train de vie/biens non justifiés + relations habituelles avec auteurs (infractions ≥ 5 ans procurant profit) ou victimes d’une de ces infractions.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Texte",
     question: "La non-justification de ressources est prévue par :",
     options: [
@@ -3406,7 +3406,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’article 321-6 al.1 définit et réprime la non-justification de ressources.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Alternative",
     question: "321-6 incrimine notamment :",
     options: [
@@ -3420,7 +3420,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Deux portes d’entrée : ressources/train de vie ou origine d’un bien détenu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Piège “lien profit”",
     question:
         "Pour les relations habituelles avec des auteurs, 321-6 exige aussi :",
@@ -3435,7 +3435,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte : infractions ≥ 5 ans procurant un profit direct/indirect à l’auteur fréquenté.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Piège “train de vie modeste”",
     question:
@@ -3446,7 +3446,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 6 fév. 2008 : même avec un train de vie modeste, des avoirs disproportionnés et flux suspects peuvent suffire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Preuve (piège)",
     question:
         "Vrai/Faux : 321-6 crée une présomption automatique de culpabilité dès qu’il y a des espèces.",
@@ -3456,7 +3456,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 13 juin 2012 : pas de présomption générale de responsabilité pénale ; l’accusation doit prouver les éléments.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Documents attendus",
     question:
         "Pour justifier la licéité d’un bien détenu, le document le plus “béton” est :",
@@ -3466,7 +3466,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : preuve de la licéité notamment par production de factures.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Cas pratique",
     question:
         "Une personne détient une grosse somme, 3 véhicules puissants, et vit en groupe organisé avec des proches auteurs de vols (≥5 ans). Elle ne justifie pas ses ressources. Qualification principale :",
@@ -3480,7 +3480,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite un cas-type : relations habituelles + détention disproportionnée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Élément moral",
     question: "L’élément moral de 321-6 suppose :",
     options: [
@@ -3494,7 +3494,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : conscience de bénéficier du produit des infractions (ou de profiter des ressources de la victime).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Piège compagne",
     question:
         "Vrai/Faux : une compagne qui croit vivre avec un “dirigeant de société” peut être relaxée faute de conscience, même si son conjoint est trafiquant.",
@@ -3505,7 +3505,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Autorité sur mineur",
     question: "321-6-1 al.1 aggrave lorsque :",
     options: [
@@ -3519,7 +3519,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation 321-6-1 al.1 : mineur sur lequel l’adulte a autorité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Peines al.1",
     question: "Peines 321-6-1 al.1 :",
     options: ["5 ans + 150 000 €", "3 ans + 75 000 €", "7 ans + 200 000 €"],
@@ -3527,7 +3527,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : al.1 = 5 ans d’emprisonnement, 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Infractions visées al.2",
     question: "321-6-1 al.2 vise notamment :",
     options: [
@@ -3541,7 +3541,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste ces infractions (et ajoute : relations habituelles avec personnes faisant usage de stupéfiants).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Peines al.2",
     question: "Peines 321-6-1 al.2 :",
     options: ["7 ans + 200 000 €", "5 ans + 150 000 €", "10 ans + 300 000 €"],
@@ -3549,7 +3549,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : al.2 = 7 ans, 200 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Mineurs al.3",
     question: "321-6-1 al.3 aggrave lorsque :",
     options: [
@@ -3562,7 +3562,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Al.3 : alinéa 2 + mineur(s) impliqué(s).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification aggravée (321-6-1) — Peines al.3",
     question: "Peines 321-6-1 al.3 :",
     options: ["10 ans + 300 000 €", "7 ans + 200 000 €", "3 ans + 75 000 €"],
@@ -3570,7 +3570,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : al.3 = 10 ans, 300 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification (321-6) — Confiscation obligatoire (piège)",
     question:
         "Vrai/Faux : en 321-6, la confiscation des biens saisis non justifiés est obligatoire.",
@@ -3580,7 +3580,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : confiscation obligatoire des biens saisis dont l’origine n’est pas justifiée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification (321-6) — Tentative",
     question: "Tentative en 321-6 / 321-6-1 :",
     options: [
@@ -3592,7 +3592,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le tableau : TENTATIVE : NON.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification (321-6) — Complicité",
     question: "Complicité en 321-6 :",
     options: ["Oui", "Non", "Seulement si mineur"],
@@ -3602,7 +3602,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Texte",
     question: "Le recel est défini et réprimé par :",
     options: ["321-1 CP", "321-6 CP", "441-1 CP"],
@@ -3610,7 +3610,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : 321-1 définit et réprime le recel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Double définition (piège)",
     question: "Le recel, c’est :",
     options: [
@@ -3624,7 +3624,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte prévoit aussi le “recel d’usage” : bénéficier du produit d’un crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Acte de dissimulation",
     question:
         "Vrai/Faux : dissimuler un bien est répréhensible même si le bien est ensuite retrouvé.",
@@ -3633,7 +3633,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : peu importe le résultat (retrouvé ou non).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Dissimulation = indice",
     question:
         "Vrai/Faux : la dissimulation peut faire présumer la connaissance de l’origine frauduleuse.",
@@ -3643,7 +3643,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la seule dissimulation fera présumer la connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet recelé (piège)",
     question: "Le recel peut porter sur :",
     options: [
@@ -3657,7 +3657,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tout ce qui est matière à vol + extensions (énergie, secrets, photocopies…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Infraction d’origine (piège)",
     question:
         "Vrai/Faux : l’infraction d’origine doit être un crime ou un délit (pas une contravention).",
@@ -3666,7 +3666,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : contraventions exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Tiers auteur (piège concours)",
     question:
         "Vrai/Faux : l’auteur de l’infraction principale peut être poursuivi pour recel de ses propres biens.",
@@ -3676,7 +3676,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la chambre criminelle n’admet pas l’auto-recel ; l’infraction d’origine doit être commise par un tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Complice vs receleur",
     question:
         "Vrai/Faux : le complice de l’infraction d’origine peut aussi être poursuivi pour recel (délit distinct).",
@@ -3686,7 +3686,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : possible de poursuivre un complice comme receleur, recel = délit distinct.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Relaxé auteur d’origine (piège)",
     question:
         "Si l’auteur d’origine échappe aux poursuites pour prescription ou non-identification, alors le receleur :",
@@ -3700,7 +3700,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le receleur peut être condamné même si auteur d’origine inconnu/prescrit/non poursuivi pour raisons procédurales.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Disparition juridique (piège)",
     question:
         "Si une loi abroge l’incrimination de l’infraction d’origine (disparition juridique), alors :",
@@ -3714,7 +3714,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : sans infraction originaire, le recel disparaît (ex. banqueroute simple abrogée).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Élément moral",
     question: "L’élément moral du recel exige :",
     options: [
@@ -3727,7 +3727,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le recel n’est punissable que si connaissance (mauvaise foi).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Moment d’appréciation",
     question: "La bonne/mauvaise foi s’apprécie :",
     options: [
@@ -3741,7 +3741,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Peines",
     question: "Peines du recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 750 000 €"],
@@ -3749,7 +3749,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : 321-1 = 5 ans, 375 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel aggravé (321-2) — Peines",
     question: "Peines du recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "5 ans + 375 000 €", "7 ans + 200 000 €"],
@@ -3757,7 +3757,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : 321-2 = 10 ans, 750 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-3) — Amende proportionnelle (piège)",
     question:
         "Vrai/Faux : l’amende du recel (321-1/321-2) peut être portée jusqu’à la moitié de la valeur des biens recelés.",
@@ -3767,7 +3767,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Nota : 321-3 permet d’élever l’amende au-delà, jusqu’à la moitié de la valeur des biens recelés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Tentative (piège concours)",
     question: "Tentative de recel :",
     options: [
@@ -3781,7 +3781,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative recel simple non prévue ; tentative de recel criminel toujours punissable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Complicité",
     question: "Complicité en matière de recel :",
     options: ["Oui (121-7)", "Non", "Seulement si professionnel"],
@@ -3791,7 +3791,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel d’usage",
     question:
         "Une personne profite sciemment du train de vie financé par des détournements commis par son conjoint. Qualification la plus juste :",
@@ -3805,7 +3805,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite le cas : bénéficier du train de vie = recel d’usage en connaissance de cause.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel vs 321-6",
     question:
         "Différence clé : 321-1 requiert une “chose provenant d’un crime/délit”, alors que 321-6 repose sur :",
@@ -3821,7 +3821,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-2) pro (ultra-piège)",
     question:
         "Un brocanteur achète régulièrement des bijoux sans facture, ne les inscrit pas au registre de police, et sait qu’ils sont volés. Qualification principale :",
@@ -3835,7 +3835,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-2 : habitude ou facilités pro ; le cours évoque l’expérience pro + omissions au registre comme indices de mauvaise foi.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 321-6-1 al.2 stupéfiants (ultra-piège)",
     question:
         "Une personne ne justifie pas ses ressources et fréquente habituellement des personnes faisant usage de stupéfiants. Qualification la plus adaptée (si conditions remplies) :",
@@ -3849,7 +3849,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : al.2 vise aussi les relations habituelles avec personnes faisant usage de stupéfiants (trafic).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Article + peine (321-6)",
     question:
         "Un mis en cause ne justifie pas l’origine d’une Mercedes + sommes sur compte + construction maison, en relations habituelles avec auteurs ≥5 ans. Qualification + peine de base :",
@@ -3863,7 +3863,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Base 321-6 : 3 ans, 75 000 €, confiscation obligatoire des biens non justifiés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Article + peine (321-2)",
     question:
         "Un receleur agit en bande organisée sur des biens provenant d’un délit : qualification + peine encourue :",
@@ -3877,7 +3877,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-2 aggrave notamment en bande organisée (ou habitude / facilités pro).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — 321-4 (crime) (ultra-piège)",
     question:
         "Un receleur sait que le bien provient d’un crime. Application la plus juste :",
@@ -3892,7 +3892,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Recel (indices)",
     question:
         "Vrai/Faux : l’absence de facture peut être un indice de connaissance de l’origine frauduleuse.",
@@ -3902,7 +3902,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : absence de facture = indice possible de mauvaise foi.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Recel (nature exacte)",
     question:
         "Vrai/Faux : le receleur doit connaître la nature exacte de l’infraction d’origine (vol/escroquerie/etc.).",
@@ -3912,7 +3912,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire de connaître la nature exacte ni les circonstances ; seulement crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Non-justification (victime)",
     question:
         "Vrai/Faux : 321-6 peut viser des relations habituelles avec des victimes d’infractions ≥5 ans.",
@@ -3922,7 +3922,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte mentionne aussi les relations avec les victimes d’une de ces infractions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Non-justification (profit)",
     question:
         "Vrai/Faux : pour la branche “victime”, 321-6 exige que la victime profite de l’infraction.",
@@ -3933,7 +3933,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Articles spéciaux (recel)",
     question: "Parmi ces “recels spéciaux”, lequel existe dans le cours ?",
     options: [
@@ -3946,7 +3946,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste des recels spécifiques : 434-6, 434-7, 434-4, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel spécial (cadavre)",
     question: "Le recel de cadavre est prévu par :",
     options: ["434-7 CP", "321-1 CP", "441-4 CP"],
@@ -3954,7 +3954,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Nota du cours : recel de cadavre = 434-7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel spécial (document/objet)",
     question:
         "Le recel de document/objet facilitant la découverte d’un crime/délit est :",
@@ -3965,7 +3965,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Définition",
     question: "La non-justification de ressources (321-6 CP) implique :",
     options: [
@@ -3979,7 +3979,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 al.1 : impossibilité de justifier ressources correspondant au train de vie ou origine d’un bien détenu + relations habituelles avec auteurs (≥ 5 ans, profit) ou victimes.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Objet",
     question: "La non-justification (321-6) peut porter sur :",
     options: [
@@ -3993,7 +3993,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise deux volets : ressources vs train de vie et origine d’un bien détenu (mobilier/immobilier).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Relations habituelles",
     question: "Les relations habituelles peuvent être caractérisées par :",
     options: [
@@ -4006,7 +4006,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise que les relations habituelles peuvent se limiter à des rencontres/entrevues/visites.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Seuil des infractions",
     question:
         "Les infractions liées aux relations habituelles doivent être punies :",
@@ -4020,7 +4020,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 : crimes ou délits punis d’au moins 5 ans d’emprisonnement.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Profit",
     question: "Pour l’hypothèse “relations avec auteurs”, il faut :",
     options: [
@@ -4034,7 +4034,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte exige que les infractions procurent un profit direct/indirect aux personnes fréquentées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Victimes",
     question:
         "321-6 vise aussi le cas où la personne est en relations habituelles avec :",
@@ -4048,7 +4048,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise aussi les relations habituelles avec des victimes d’une des infractions (≥ 5 ans).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Indices train de vie",
     question: "Pour prouver le train de vie reproché, l’enquête peut relever :",
     options: [
@@ -4062,7 +4062,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste des indices de train de vie (dépenses, véhicules, flux bancaires, espèces).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Justificatifs",
     question: "La justification des moyens d’existence peut se faire par :",
     options: [
@@ -4075,7 +4075,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte mentionne des documents “indiscutables” (factures, bulletins de paye, déclaration de revenus).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Présomption",
     question:
         "Vrai/Faux : 321-6 instaure une présomption de culpabilité automatique.",
@@ -4085,7 +4085,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 13 juin 2012 : pas de présomption de responsabilité pénale ; l’accusation doit rapporter la preuve.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Appréciation",
     question: "Qui apprécie souverainement les faits et preuves débattues ?",
     options: ["Les juges du fond", "Le mis en cause", "L’enquêteur uniquement"],
@@ -4094,7 +4094,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que les juges ont un pouvoir souverain d’appréciation des faits/circonstances et preuves débattues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Avoirs disproportionnés",
     question:
@@ -4105,7 +4105,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence citée : couple au train de vie modeste mais avoirs bancaires disproportionnés + mouvements + espèces (Cass. crim., 6 fév. 2008).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Biens concernés",
     question: "L’obligation de justifier l’origine peut concerner :",
     options: [
@@ -4118,7 +4118,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise que cela correspond aux biens mobiliers et immobiliers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Renversement",
     question: "Concernant l’origine d’un bien détenu, le mécanisme implique :",
     options: [
@@ -4131,7 +4131,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours explique le renversement : c’est au prévenu d’établir la licéité (factures...).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Élément moral",
     question: "L’élément moral suppose :",
     options: [
@@ -4145,7 +4145,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : conscience de bénéficier du produit d’infractions commises par la/les personnes fréquentées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Erreur de croyance",
     question: "La compagne d’un trafiquant ne sera pas coupable si elle :",
     options: [
@@ -4158,7 +4158,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’exemple : absence de conscience → pas d’infraction (Cass. crim., 25 juin 2003).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Peine simple",
     question: "Peines encourues (321-6) :",
     options: ["3 ans et 75 000 €", "5 ans et 150 000 €", "1 an et 15 000 €"],
@@ -4167,7 +4167,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 : 3 ans d’emprisonnement et 75 000 € d’amende + confiscation obligatoire des biens non justifiés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Confiscation",
     question:
         "Vrai/Faux : la confiscation des biens saisis non justifiés est obligatoire en 321-6.",
@@ -4177,7 +4177,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte précise : confiscation obligatoire des biens saisis dont l’origine n’est pas justifiée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Tentative/complicité",
     question: "Tentative et complicité (321-6) :",
     options: [
@@ -4189,7 +4189,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : tentative NON ; complicité OUI (121-6/121-7).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6-1) — Mineur sous autorité",
     question: "321-6-1 al.1 aggrave si les infractions sont commises :",
@@ -4203,7 +4203,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation 321-6-1 al.1 : crimes/délits commis par un mineur sur lequel l’auteur a autorité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Peine al.1",
     question: "Peine 321-6-1 al.1 :",
     options: ["5 ans + 150 000 €", "7 ans + 200 000 €", "10 ans + 300 000 €"],
@@ -4211,7 +4211,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-6-1 al.1 : 5 ans d’emprisonnement et 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Champs al.2",
     question: "321-6-1 al.2 vise notamment :",
     options: [
@@ -4225,7 +4225,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste TEH, extorsion, association de malfaiteurs, infractions armes/explosifs et trafic de stups (incluant relations avec usagers).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Peine al.2",
     question: "Peine 321-6-1 al.2 :",
     options: ["7 ans + 200 000 €", "5 ans + 150 000 €", "3 ans + 75 000 €"],
@@ -4233,7 +4233,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-6-1 al.2 : 7 ans d’emprisonnement et 200 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Mineurs al.3",
     question: "321-6-1 al.3 aggrave lorsque :",
     options: [
@@ -4246,7 +4246,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation 321-6-1 al.3 : infraction mentionnée à l’al.2 commise par un ou plusieurs mineurs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Peine al.3",
     question: "Peine 321-6-1 al.3 :",
     options: ["10 ans + 300 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -4255,7 +4255,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6-1 al.3 : 10 ans d’emprisonnement et 300 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Des parents vivent en groupe organisé, détiennent de grosses sommes et 3 véhicules puissants sans revenus compatibles, leurs enfants commettent des vols. Qualification la plus probable ?",
@@ -4269,7 +4269,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence citée : parents en possession de numéraires/vêtements provenant de vols commis par enfants, ressources insuffisantes → 321-6 (Cass. crim., 8 fév. 1989).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Un exploitant de bar-restaurant détient d’importantes liquidités sans rapport avec ses ressources déclarées. Qualification la plus adaptée :",
@@ -4284,7 +4284,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Définition",
     question: "Le recel (321-1 CP) est notamment :",
     options: [
@@ -4298,7 +4298,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-1 : dissimuler, détenir, transmettre ou faire l’intermédiaire, en sachant l’origine crime/délit.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage",
     question: "Constitue aussi un recel :",
     options: [
@@ -4312,7 +4312,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-1 al.2 : recel d’usage = profit du produit en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Dissimuler",
     question:
         "Vrai/Faux : dissimuler un bien d’origine frauduleuse est répréhensible quel que soit le résultat.",
@@ -4322,7 +4322,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : les agissements de dissimulation sont répréhensibles quel que soit leur résultat (peu importe retrouvés ou non).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Exemple local",
     question: "Exemple jurisprudentiel de dissimulation :",
     options: [
@@ -4335,7 +4335,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 30 mars 1999 : mise à disposition d’un local pour stocker des objets volés → recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Dissimuler et comptabilité",
     question: "La dissimulation peut aussi consister à :",
     options: [
@@ -4349,7 +4349,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite la dissimulation via de fausses mentions comptables (C.A. Paris, 12 juillet 1985).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Présomption de connaissance",
     question:
         "Vrai/Faux : la seule dissimulation peut faire présumer la connaissance de l’origine frauduleuse.",
@@ -4359,7 +4359,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la dissimulation fera présumer la connaissance de l’origine frauduleuse, donc le recel (ex. plaques dissimulées).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Détention",
     question: "La détention recéleuse consiste à :",
     options: [
@@ -4373,7 +4373,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : détenir = avoir à disposition une chose ; le simple fait de détention peut constituer le recel (délit continu).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Profit indifférent",
     question:
         "Vrai/Faux : le profit personnel est indispensable pour caractériser le recel.",
@@ -4383,7 +4383,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : usage/profit/bénéfice importent peu pour le recel de détention ; la détention suffit si connaissance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Réception indirecte",
     question: "La chose peut être reçue :",
     options: [
@@ -4397,7 +4397,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’innocence d’un intermédiaire n’exclut pas la responsabilité du receleur si connaissance de l’origine.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Transmission",
     question: "La “transmission” recéleuse, c’est :",
     options: [
@@ -4410,7 +4410,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours définit la transmission comme céder/remettre/faire passer une chose.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire",
     question: "Faire office d’intermédiaire signifie :",
     options: [
@@ -4424,7 +4424,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas besoin d’habitude, but lucratif non exigé, et détention matérielle non nécessaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire (jurisprudence)",
     question:
         "Intervenir uniquement dans la négociation de biens volés peut caractériser :",
@@ -4438,7 +4438,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 30 nov. 1999 : intervention dans la négociation de bons volés → recel par entremise.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage (passager)",
     question:
         "Un passager d’un véhicule dont il connaît l’origine frauduleuse est :",
@@ -4452,7 +4452,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite le passager d’un véhicule volé comme receleur (Cass. crim., 09 juillet 1970).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Train de vie d’un proche",
     question:
         "Profiter du train de vie financé par un détournement commis par son conjoint peut être :",
@@ -4466,7 +4466,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite le profit du train de vie lié à un détournement comme recel (Cass. crim., 09 mai 1974).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Services/repas",
     question:
         "Vrai/Faux : bénéficier de repas/distractions payés avec des chèques détournés peut constituer un recel.",
@@ -4476,7 +4476,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 07 mai 2002 : repas/distractions réglés avec fonds détournés → recel (bénéficier par tout moyen).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Contrat de travail fictif",
     question:
         "Bénéficier d’un salaire sans prestation (suite à détournement de fonds publics) peut constituer :",
@@ -4490,7 +4490,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite : bénéficier d’un contrat/salaire sans prestation à la suite d’un détournement → recel (Cass. crim., 30 mai 2001).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Travaux/fournitures/crédits",
     question:
         "Faire réaliser des travaux chez soi grâce à un marché “à perte” peut caractériser :",
@@ -4504,7 +4504,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite un exemple de travaux réalisés grâce à un marché : recel (Cass. crim., 14 mai 2003).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Informations",
     question: "Le recel de délit d’initié est caractérisé par :",
     options: [
@@ -4518,7 +4518,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recel d’initié = bénéficier du produit de l’exploitation sur le marché (Cass. crim., 26 oct. 1995).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet de l’acte",
     question:
         "Tout ce qui est matière à vol peut faire l’objet d’un recel, notamment :",
@@ -4532,7 +4532,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours élargit la nature de la chose : objets, énergie, secrets, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Subrogation",
     question:
         "Vrai/Faux : le recel peut viser un bien acheté avec des fonds recelés (subrogation).",
@@ -4542,7 +4542,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recel possible quand les fonds reçus servent à acheter un bien ou investir (Cass. crim., 22 juin 1972).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Contraventions",
     question: "Le recel exclut :",
     options: ["Les contraventions", "Les délits", "Les crimes"],
@@ -4551,7 +4551,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La chose doit provenir d’un crime ou d’un délit ; les contraventions sont exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Qualification de l’infraction d’origine",
     question:
         "Vrai/Faux : le juge doit préciser la nature de l’infraction d’origine pour retenir le recel.",
@@ -4561,7 +4561,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la simple mention “origine frauduleuse” ne suffit pas ; il faut préciser l’infraction initiale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Croyance erronée",
     question:
         "Vrai/Faux : si la personne croit à tort que le bien provient d’un crime/délit, on peut retenir le recel.",
@@ -4571,7 +4571,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas de recel si l’auteur croit à tort que le bien provient d’un crime ou d’un délit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Abrogation",
     question:
         "Si l’infraction d’origine a été abrogée (plus d’infraction), alors :",
@@ -4585,7 +4585,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’abrogation de la banqueroute simple : absence d’infraction originaire → pas de recel (Cass. crim., 17 mai 1989).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur d’origine tiers",
     question: "En principe, l’infraction d’origine doit être commise :",
     options: ["Par un tiers", "Par le receleur lui-même", "Par la victime"],
@@ -4594,7 +4594,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’auteur de l’infraction principale ne peut pas être poursuivi pour recel ; infraction d’origine par un tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Complice",
     question:
         "Vrai/Faux : le complice de l’infraction d’origine peut être poursuivi comme receleur.",
@@ -4604,7 +4604,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le recel est un délit distinct, le complice peut aussi être poursuivi comme receleur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Obstacles procéduraux",
     question:
         "Le receleur peut être condamné même si l’auteur d’origine échappe aux poursuites pour :",
@@ -4618,7 +4618,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : raisons procédurales n’empêchent pas la condamnation du receleur (contrairement à la disparition objective de l’infraction).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Connaissance (niveau)",
     question: "Le receleur doit connaître :",
     options: [
@@ -4632,7 +4632,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire de connaître la nature précise/circonstances exactes ; suffit de savoir origine crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Indices",
     question: "La connaissance peut être déduite notamment de :",
     options: [
@@ -4646,7 +4646,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite ces indices pour déduire la connaissance de l’origine frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Moment d’appréciation",
     question: "La bonne/mauvaise foi s’apprécie :",
     options: [
@@ -4659,7 +4659,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’appréciation se fait au moment de recevoir, transmettre ou tirer profit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Piège Pelegrin",
     question:
         "Vrai/Faux : conserver un bien après apprendre son origine frauduleuse suffit toujours à caractériser un recel.",
@@ -4669,7 +4669,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Arrêt Pelegrin : si bonne foi reconnue au moment de l’acquisition, pas de recel du seul fait de conserver après découverte.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Aggravation",
     question: "Le recel est aggravé (321-2) quand il est commis :",
     options: [
@@ -4682,7 +4682,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-2 : habitude ou facilités pro ; bande organisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-4) — Peines de l’infraction d’origine",
     question: "321-4 s’applique lorsque :",
     options: [
@@ -4696,7 +4696,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-4 : si peine d’origine > peine recel, receleur puni des peines attachées à l’infraction d’origine (et des seules C.A. connues).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Peines",
     question: "Peines du recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 750 000 €"],
@@ -4704,7 +4704,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-1 : 5 ans d’emprisonnement et 375 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Peines",
     question: "Peines du recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -4712,7 +4712,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-2 : 10 ans d’emprisonnement et 750 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-3) — Amende majorée",
     question:
         "Vrai/Faux : l’amende de 321-1/321-2 peut être portée jusqu’à la moitié de la valeur des biens recelés.",
@@ -4722,7 +4722,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-3 : amendes de 321-1 et 321-2 peuvent être élevées jusqu’à la moitié de la valeur des biens recelés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Tentative",
     question: "Tentative de recel :",
     options: [
@@ -4735,7 +4735,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative recel simple non prévue ; tentative de recel criminel toujours punissable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Complicité",
     question: "La complicité en matière de recel est :",
     options: [
@@ -4748,7 +4748,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : complicité applicable au recel selon 121-7 (aide/assistance, provocation, instructions).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel vs non-justification",
     question:
         "La non-justification (321-6) se distingue du recel (321-1) car elle exige :",
@@ -4763,7 +4763,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 peut viser l’incohérence ressources/train de vie ou origine de biens + relations habituelles ; le recel suppose une chose provenant d’un crime/délit + connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : le recel peut être constitué même si l’auteur d’origine est décédé ou en fuite.",
@@ -4773,7 +4773,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recel constitué même si l’auteur de l’infraction d’origine est décédé ou en fuite (la punition de l’auteur d’origine est indifférente).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : l’absence de facture est un indice pouvant permettre de déduire la connaissance de l’origine frauduleuse.",
@@ -4783,7 +4783,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’absence de facture parmi les indices possibles de connaissance de l’origine frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-1)",
     question:
         "Un individu cache des plaques d’immatriculation volées sous la garniture d’un véhicule. Qualification la plus probable :",
@@ -4797,7 +4797,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence citée : dissimulation de plaques volées → connaissance présumée de l’origine frauduleuse, recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-1)",
     question:
         "Une personne utilise un véhicule volé en tant que passager puis conducteur, en sachant l’origine. Qualification :",
@@ -4811,7 +4811,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’utilisation d’un véhicule volé comme recel d’usage (CA Nancy, 9 déc. 1992).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Non-justification",
     question: "Peine 321-6 (base) :",
     options: ["3 ans + 75 000 €", "5 ans + 150 000 €", "10 ans + 750 000 €"],
@@ -4819,7 +4819,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-6 : 3 ans et 75 000 € (+ confiscation obligatoire).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Non-justification",
     question: "Article aggravation mineur sous autorité :",
     options: ["321-6-1 al.1", "321-6 al.1", "321-2"],
@@ -4828,7 +4828,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6-1 al.1 : infractions commises par un mineur sur lequel l’auteur a autorité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Recel",
     question: "Article recel aggravé (habitude/pro/bande organisée) :",
     options: ["321-2", "321-3", "321-4"],
@@ -4837,7 +4837,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-2 : recel aggravé (habituelle/facilités pro ou bande organisée).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Recel",
     question: "Peines recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "7 ans + 200 000 €"],
@@ -4845,7 +4845,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-1 : 5 ans et 375 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révision rapide — Recel",
     question: "Peines recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -4853,7 +4853,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-2 : 10 ans et 750 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Champ",
     question:
         "Pour retenir 321-6, il faut que la personne soit en relations habituelles avec :",
@@ -4868,7 +4868,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise les relations habituelles avec auteurs (≥5 ans, profit) ou victimes d’une des infractions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Piège condamnation préalable",
     question:
@@ -4879,7 +4879,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique qu’on peut retenir 321-6 sans condamnation définitive de la personne fréquentée (présomption d’innocence respectée).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Train de vie",
     question: "Le “train de vie” peut être établi par :",
     options: [
@@ -4893,7 +4893,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : preuves par indices concrets (dépenses, achats, mouvements de fonds, espèces).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Valeur probante",
     question:
         "Parmi ces éléments, lequel est le PLUS pertinent pour justifier des ressources ?",
@@ -4907,7 +4907,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours vise des documents “indiscutables” : factures, bulletins de paye, déclaration de revenus.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Biens (piège)",
     question:
         "Vrai/Faux : 321-6 vise uniquement les biens “en espèces” (cash).",
@@ -4917,7 +4917,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise l’origine d’un bien détenu : biens mobiliers ET immobiliers.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Indices (piège concours)",
     question:
@@ -4933,7 +4933,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite précisément ces éléments (Cass. crim., 6 fév. 2008) pour matérialiser l’écart ressources/train de vie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Écart ressources/train de vie",
     question: "La non-justification “ressources” suppose :",
@@ -4947,7 +4947,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Volet 1 : ressources personnelles ne correspondant pas au train de vie (écart anormal).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Origine d’un bien",
     question: "La non-justification “origine d’un bien” implique :",
     options: [
@@ -4961,7 +4961,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Volet 2 : bien détenu dont l’origine ne peut être justifiée (factures, traçabilité).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Piège sur la charge",
     question:
         "Vrai/Faux : en 321-6, la charge de la preuve est toujours intégralement sur le prévenu.",
@@ -4971,7 +4971,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 13 juin 2012 : pas de présomption générale ; l’accusation doit rapporter la preuve du délit spécifique. (Le cours évoque un renversement surtout sur l’origine du bien).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Relations habituelles (piège)",
     question: "Les relations habituelles exigent :",
@@ -4986,7 +4986,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : relations habituelles peuvent être de simples rencontres/visites ; pas besoin de cohabiter.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Scénario",
     question:
         "Une personne a un train de vie supérieur à ses ressources, et est vue très régulièrement avec des victimes d’extorsion. Elle ne peut justifier l’origine de biens. Qualification :",
@@ -5000,7 +5000,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 vise aussi les relations habituelles avec la victime d’une des infractions (≥ 5 ans) + non-justification.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Spécifiques (nota)",
     question:
         "Parmi ces domaines, lequel possède une incrimination spécifique de non-justification ?",
@@ -5010,7 +5010,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Nota du cours : infractions spécifiques en terrorisme (421-2-3), proxénétisme, mendicité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Spécifiques (nota)",
     question:
         "Les incriminations spécifiques de non-justification concernent notamment :",
@@ -5025,7 +5025,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Acte matériel",
     question: "Le recel peut être constitué par :",
     options: [
@@ -5038,7 +5038,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours décrit ces actes matériels constitutifs du recel.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Délit continu",
     question:
         "Vrai/Faux : la détention recéleuse fait du recel un délit continu.",
@@ -5048,7 +5048,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la détention implique que le recel est un délit continu.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Usage indifférent (piège)",
     question:
         "Vrai/Faux : pour la détention recéleuse, l’usage du bien est indispensable.",
@@ -5058,7 +5058,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : usage/profit indifférents ; la détention suffit si connaissance.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire (piège)",
     question:
         "Vrai/Faux : être “intermédiaire” suppose d’avoir la chose en main à un moment donné.",
@@ -5068,7 +5068,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recel par entremise ne suppose pas l’appréhension matérielle et directe de la chose.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Prix anormal",
     question: "Un achat à prix très bas peut servir à déduire :",
     options: [
@@ -5081,7 +5081,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : acquisition à bas prix = indice possible de connaissance de l’origine frauduleuse.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Indices (piège concours)",
     question: "Quel faisceau est le PLUS “mauvaise foi” ?",
     options: [
@@ -5095,7 +5095,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : ces circonstances variées permettent de déduire la connaissance de l’origine frauduleuse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Connaissance de l’infraction d’origine",
     question: "Le receleur doit connaître :",
     options: [
@@ -5109,7 +5109,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas besoin de connaître la qualification exacte ou les circonstances précises.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur d’origine inconnu",
     question:
         "Vrai/Faux : le recel peut être constitué même si l’auteur de l’infraction d’origine demeure inconnu.",
@@ -5119,7 +5119,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite : recel constitué même si auteur inconnu (Cass. crim., 24 nov. 1964).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Bonne foi (piège)",
     question:
         "Si une personne achète de bonne foi, puis apprend après coup l’origine frauduleuse, alors :",
@@ -5134,7 +5134,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Arrêt Pelegrin : l’appréciation se fait au moment de l’acquisition ; conserver après coup n’implique pas automatiquement recel si bonne foi initiale reconnue.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Acte positif",
     question:
         "Vrai/Faux : le recel d’usage suppose un bénéfice/profit du produit de l’infraction.",
@@ -5144,7 +5144,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Recel d’usage : bénéficier, par tout moyen, du produit d’un crime/délit en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet (piège)",
     question:
         "Vrai/Faux : le recel ne peut porter que sur des biens “matériels”.",
@@ -5154,7 +5154,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours mentionne aussi des informations (ex : produit de leur exploitation) et des secrets de fabrication.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Subrogation (piège)",
     question:
         "Si un receleur reçoit des fonds frauduleux et achète un bien avec, alors le bien acheté :",
@@ -5168,7 +5168,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le recel s’applique au produit, y compris quand les fonds servent à acheter un bien (subrogation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Contraventions (piège)",
     question:
         "Vrai/Faux : on peut retenir le recel si la chose provient d’une contravention.",
@@ -5178,7 +5178,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La chose doit provenir d’un crime ou d’un délit : contraventions exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Illégalité de l’infraction d’origine",
     question:
         "Vrai/Faux : si les éléments constitutifs de l’infraction principale ne sont pas réunis, le recel ne peut pas être retenu.",
@@ -5188,7 +5188,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : si les faits ne constituent pas un crime/délit ou si l’infraction principale n’est pas légalement constituée, pas de recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Habitude/pro",
     question: "Le recel est aggravé (321-2) si commis :",
     options: [
@@ -5202,7 +5202,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-2 : aggravation si habituel ou facilités pro (et aussi bande organisée).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-4) — Peine de l’origine",
     question: "En 321-4, le receleur est puni :",
     options: [
@@ -5216,7 +5216,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-4 : si peine de l’infraction d’origine > recel, peines = celles de l’infraction d’origine (+ seulement C.A. connues).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — QCM ultra piège (321-4)",
     question:
         "Un receleur sait que le bien provient d’un crime (peine > 10 ans). Application :",
@@ -5231,7 +5231,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Si la peine d’origine est supérieure, 321-4 renvoie aux peines de l’infraction d’origine (et C.A. connues).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Personnes morales",
     question:
         "Vrai/Faux : les personnes morales peuvent être pénalement responsables du recel.",
@@ -5241,7 +5241,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : responsabilité des personnes morales prévue (321-12) + amende et peines complémentaires (131-39).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel — Peines complémentaires (PM)",
     question:
         "Pour une personne morale, des peines complémentaires possibles incluent :",
@@ -5256,7 +5256,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Recel vs non-justification",
     question: "Quel couple “bon texte” est correct ?",
     options: [
@@ -5268,7 +5268,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Recel = 321-1 ; non-justification = 321-6.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Seuil 5 ans",
     question: "Le seuil “≥ 5 ans” intervient :",
     options: [
@@ -5282,7 +5282,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le seuil est un critère constitutif de 321-6 (infractions liées punies ≥ 5 ans).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (321-6)",
     question: "Vrai/Faux : 321-6 exige que l’auteur d’origine soit identifié.",
     options: ["Vrai", "Faux", "Seulement si crime"],
@@ -5291,7 +5291,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise des relations habituelles ; la condamnation/identification n’est pas une condition stricte (logique du délit spécifique).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — V/F (321-1)",
     question:
         "Vrai/Faux : le recel peut viser des prestations en nature (repas, travaux) si on en bénéficie en connaissance de cause.",
@@ -5301,7 +5301,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours étend le recel d’usage aux repas/services/travaux/crédits, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article/peine",
     question: "Associer correctement : recel simple →",
     options: [
@@ -5313,7 +5313,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Rappel : 321-1 (5 ans, 375 000 €).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article/peine",
     question: "Associer correctement : non-justification base →",
     options: [
@@ -5325,7 +5325,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Rappel : 321-6 = 3 ans, 75 000 € + confiscation obligatoire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel vs non-justification (ultra-piège)",
     question:
         "Une personne vit au-dessus de ses moyens, a des flux bancaires suspects, mais aucun objet précis d’origine frauduleuse n’est identifié. Elle est en relations habituelles avec des auteurs de trafic stupéfiants. Meilleure qualification :",
@@ -5340,7 +5340,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Sans “chose” identifiée, on bascule plutôt sur 321-6 (train de vie/biens non justifiés + relations habituelles).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (ultra-piège)",
     question:
         "Un garagiste accepte de “garder” des voitures volées destinées à être transformées, sans tirer de profit personnel, mais en sachant l’origine. Qualification :",
@@ -5354,7 +5354,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le profit n’est pas exigé : détenir/simuler en connaissance de cause suffit (le cours cite un cas similaire).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel par entremise (ultra-piège)",
     question:
         "Une personne ne touche jamais les biens, mais met en relation vendeur/acheteur et négocie des bons volés, en sachant l’origine. Qualification :",
@@ -5369,7 +5369,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Article",
     question:
         "L’infraction de non-justification de ressources est prévue par :",
@@ -5379,7 +5379,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’article 321-6 al.1 définit et réprime la non-justification de ressources.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Infractions concernées",
     question:
@@ -5394,7 +5394,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 : infractions criminelles ou délictuelles punies d’au moins 5 ans, procurant un profit direct/indirect.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Train de vie",
     question: "Le critère “train de vie” peut notamment être établi par :",
     options: [
@@ -5408,7 +5408,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite divers indices de train de vie (dépenses, véhicules, flux bancaires, espèces).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Justificatifs",
     question:
         "Pour justifier de ses ressources, la personne peut produire notamment :",
@@ -5422,7 +5422,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours mentionne des documents “indiscutables” : factures, bulletins, déclaration de revenus.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Charge de la preuve",
     question:
         "Vrai/Faux : 321-6 crée une présomption automatique de culpabilité pénale.",
@@ -5432,7 +5432,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 13 juin 2012 : pas de présomption de responsabilité pénale ; délit spécifique dont l’accusation doit rapporter la preuve.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Bien d’origine indéterminée",
     question: "L’infraction peut aussi viser :",
@@ -5446,7 +5446,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 : non-justification de l’origine d’un bien détenu (biens mobiliers/immobiliers).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Renversement",
     question:
         "Concernant l’origine d’un bien détenu, le mécanisme décrit par le cours implique que :",
@@ -5461,7 +5461,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique un renversement : c’est au prévenu de déterminer la provenance/licéité (factures…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Relations habituelles",
     question: "Les “relations habituelles” peuvent se limiter à :",
     options: [
@@ -5474,7 +5474,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise que des rencontres/entrevues/visites peuvent suffire à caractériser des relations habituelles.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Auteurs vs victimes",
     question: "321-6 vise des relations habituelles avec :",
     options: [
@@ -5488,7 +5488,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise les deux hypothèses : fréquentation d’auteurs ou de victimes d’infractions ≥ 5 ans.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Profit",
     question:
         "Pour l’hypothèse “auteurs”, il faut en outre que l’auteur fréquenté :",
@@ -5502,7 +5502,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte exige un profit direct/indirect tiré de l’infraction par la personne fréquentée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Non-justification de ressources (321-6) — Condamnation préalable",
     question:
@@ -5513,7 +5513,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique qu’on peut retenir 321-6 sans constater une condamnation définitive de la personne fréquentée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Élément moral",
     question: "L’élément moral principal exige :",
     options: [
@@ -5527,7 +5527,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 : conscience de bénéficier du produit d’infractions commises par la/les personnes fréquentées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Erreur de croyance",
     question:
         "Exemple donné : ne sera pas coupable la compagne d’un trafiquant si elle :",
@@ -5541,7 +5541,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’exemple : absence de conscience → pas d’infraction (Cass. crim., 25 juin 2003).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Peines",
     question: "Peines de base (321-6) :",
     options: ["3 ans + 75 000 €", "5 ans + 150 000 €", "2 ans + 30 000 €"],
@@ -5550,7 +5550,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 : 3 ans d’emprisonnement et 75 000 € d’amende. Confiscation obligatoire des biens non justifiés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Confiscation",
     question:
         "Vrai/Faux : en 321-6, la confiscation des biens saisis non justifiés est obligatoire.",
@@ -5560,7 +5560,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte précise : confiscation obligatoire des biens saisis dont l’origine n’est pas justifiée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6) — Tentative/complicité",
     question: "Tentative et complicité (321-6) :",
     options: [
@@ -5572,7 +5572,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : tentative NON ; complicité OUI (121-6/121-7).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Aggravation",
     question: "321-6-1 al.1 aggrave lorsque :",
     options: [
@@ -5586,7 +5586,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation 321-6-1 al.1 : infractions commises par un mineur sur lequel l’auteur a autorité.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Stups / armes / TEH",
     question: "321-6-1 al.2 vise notamment :",
     options: [
@@ -5600,7 +5600,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste TEH, extorsion, association de malfaiteurs, infractions armes/explosifs et trafic de stups (incluant relations avec usagers).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources (321-6-1) — Mineurs multiples",
     question: "321-6-1 al.3 aggrave lorsque :",
     options: [
@@ -5614,7 +5614,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation 321-6-1 al.3 : infractions de l’al.2 commises par un ou plusieurs mineurs.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Peines aggravées",
     question: "Peine aggravée (321-6-1 al.1) :",
     options: ["5 ans + 150 000 €", "7 ans + 200 000 €", "10 ans + 300 000 €"],
@@ -5622,7 +5622,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-6-1 al.1 : 5 ans d’emprisonnement et 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Peines aggravées",
     question: "Peine aggravée (321-6-1 al.2) :",
     options: ["7 ans + 200 000 €", "5 ans + 150 000 €", "3 ans + 75 000 €"],
@@ -5630,7 +5630,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-6-1 al.2 : 7 ans et 200 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Non-justification de ressources — Peines aggravées",
     question: "Peine aggravée (321-6-1 al.3) :",
     options: ["10 ans + 300 000 €", "7 ans + 200 000 €", "5 ans + 150 000 €"],
@@ -5638,7 +5638,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-6-1 al.3 : 10 ans et 300 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Non-justification vs recel",
     question: "Différence clé : le recel (321-1) suppose :",
     options: [
@@ -5652,7 +5652,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-1 : dissimuler/détenir/transmettre ou bénéficier du produit en sachant l’origine. 321-6 : train de vie/biens non justifiés + relations habituelles.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Un couple a un train de vie modeste mais dispose d’avoirs bancaires disproportionnés, multiplie les mouvements et paie souvent en espèces. Qualification la plus adaptée ?",
@@ -5666,7 +5666,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Exemple jurisprudentiel : même train de vie modeste, avoirs disproportionnés + mouvements + espèces → 321-6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Non-justification (321-6)",
     question:
         "Une personne ne justifie pas l’origine de sommes sur un compte + détention d’un véhicule + construction d’une maison. Qualification ?",
@@ -5684,7 +5684,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // RECEL (321-1 et suivants)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Définition",
     question: "Le recel (321-1 CP) consiste notamment à :",
     options: [
@@ -5698,7 +5698,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-1 : dissimulation/détention/transmission/intermédiaire + connaissance origine crime/délit ; et aussi bénéficier du produit par tout moyen.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Texte",
     question: "Le recel est défini et réprimé par :",
     options: ["321-1 CP", "321-6 CP", "432-11 CP"],
@@ -5706,7 +5706,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le recel est prévu à l’article 321-1 du Code pénal.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Actes matériels",
     question: "Les actes matériels du recel peuvent être :",
     options: [
@@ -5719,7 +5719,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-1 vise dissimuler/détenir/transmettre + faire office d’intermédiaire.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage",
     question: "Constitue aussi un recel :",
     options: [
@@ -5732,7 +5732,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-1 al.2 : recel d’usage = profiter du produit en connaissance de cause.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Délit continu",
     question:
         "Vrai/Faux : la détention recéleuse fait du recel un délit continu.",
@@ -5742,7 +5742,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise : la détention implique un délit continu ; le simple fait de détenir peut constituer le recel.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet",
     question: "La chose recelée doit provenir :",
     options: [
@@ -5755,7 +5755,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le recel suppose une infraction d’origine crime/délit ; contraventions exclues.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Infraction d’origine",
     question:
         "Vrai/Faux : il suffit d’écrire “origine frauduleuse” sans préciser l’infraction d’origine.",
@@ -5765,7 +5765,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que le juge doit préciser la nature de l’infraction initiale ; la simple mention d’origine frauduleuse ne suffit pas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur de l’infraction d’origine",
     question:
         "En principe, l’auteur de l’infraction d’origine peut-il être poursuivi pour recel ?",
@@ -5779,7 +5779,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’auteur principal ne peut être poursuivi pour recel ; l’infraction d’origine doit être commise par un tiers.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Complice et receleur",
     question:
         "Un complice de l’infraction d’origine peut-il aussi être poursuivi comme receleur ?",
@@ -5793,7 +5793,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : un complice peut être poursuivi comme receleur, le recel étant distinct.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Connaissance",
     question: "L’élément moral du recel exige :",
     options: [
@@ -5806,7 +5806,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il n’est pas nécessaire de connaître précisément la nature/circonstances de l’infraction d’origine, seulement l’origine frauduleuse crime/délit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Indices de mauvaise foi",
     question: "La connaissance de l’origine frauduleuse peut être déduite de :",
     options: [
@@ -5820,7 +5820,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite divers indices : bas prix, dissimulation, absence facture, contexte suspect.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Piège Pelegrin",
     question:
         "Vrai/Faux : conserver une chose après avoir appris son origine frauduleuse est toujours un recel.",
@@ -5830,7 +5830,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours (arrêt Pelegrin) : pas de recel si bonne foi reconnue au moment de l’acquisition ; l’appréciation se fait au moment de recevoir/transmettre/tirer profit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire",
     question: "Faire office d’intermédiaire suppose :",
     options: [
@@ -5844,7 +5844,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas besoin d’habitude/métier ; acte isolé suffit ; pas nécessaire d’avoir la chose en main.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Intermédiaire sans détention",
     question:
         "Vrai/Faux : le recel par entremise nécessite l’appréhension matérielle de la chose.",
@@ -5854,7 +5854,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le recel par entremise ne suppose pas l’appréhension matérielle directe.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Recel d’usage (exemples)",
     question: "Est un exemple de recel d’usage :",
     options: [
@@ -5868,7 +5868,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite le profit du train de vie (Cass. crim., 09 mai 1974) comme recel d’usage.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Objet très large",
     question: "L’objet du recel peut être :",
     options: [
@@ -5882,7 +5882,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours élargit l’objet : toute chose “matière à vol” et au-delà (énergie, secrets…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Subrogation",
     question:
         "Vrai/Faux : le recel peut porter sur le “produit” de la chose via subrogation (achat/investissement).",
@@ -5892,7 +5892,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recel possible quand les fonds recelés servent à acheter un bien ou investir (subrogation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Abrogation infraction d’origine",
     question:
         "Si l’incrimination de l’infraction d’origine est abrogée, le recel :",
@@ -5906,7 +5906,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’exemple de banqueroute simple abrogée : pas d’infraction originaire → pas de recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Auteur d’origine inconnu",
     question:
         "Vrai/Faux : le recel peut être constitué même si l’auteur de l’infraction d’origine est inconnu.",
@@ -5916,7 +5916,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recel constitué même si l’auteur est demeuré inconnu ou si les circonstances exactes ne sont pas établies.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Relaxé/amnistie",
     question:
         "Si l’auteur de l’infraction d’origine est relaxé pour une raison objective supprimant l’infraction, le recel :",
@@ -5931,7 +5931,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : si l’infraction d’origine disparaît juridiquement (fait justificatif/amnistie réelle), le recel ne peut tenir.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Obstacles procéduraux",
     question:
         "Le receleur peut être condamné même si l’auteur de l’infraction d’origine échappe aux poursuites pour :",
@@ -5946,7 +5946,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours distingue raisons procédurales (recel possible) vs raison objective supprimant l’infraction (recel non).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-1) — Peines simples",
     question: "Peines du recel simple (321-1) :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 750 000 €"],
@@ -5954,7 +5954,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-1 : 5 ans d’emprisonnement et 375 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Aggravations",
     question: "Le recel est aggravé (321-2) lorsqu’il est commis :",
     options: [
@@ -5968,7 +5968,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-2 : habituelle ou avec facilités pro ; et bande organisée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-2) — Peines aggravées",
     question: "Peines du recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 500 000 €"],
@@ -5976,7 +5976,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-2 : 10 ans d’emprisonnement et 750 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-3) — Amende au-delà",
     question:
         "Vrai/Faux : l’amende 321-1/321-2 peut être portée jusqu’à la moitié de la valeur des biens recelés.",
@@ -5986,7 +5986,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-3 : amendes prévues par 321-1 et 321-2 peuvent être élevées jusqu’à la moitié de la valeur des biens recelés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (321-4) — Peines de l’infraction d’origine",
     question:
         "321-4 prévoit que si la peine de l’infraction d’origine est supérieure à celle du recel :",
@@ -6001,7 +6001,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-4 : peines attachées à l’infraction d’origine si plus sévères, et peines des seules circonstances aggravantes dont le receleur a eu connaissance.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (tentative) — Règles",
     question: "Tentative de recel :",
     options: [
@@ -6015,7 +6015,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative recel simple non prévue ; tentative de recel criminel toujours punissable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Recel (complicité) — Règles",
     question: "Complicité en matière de recel :",
     options: ["Oui (121-7)", "Non", "Uniquement si bande organisée"],
@@ -6024,7 +6024,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La complicité est applicable au recel conformément à l’article 121-7 (aide/assistance, provocation, instructions).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Recel vs non-justification",
     question:
         "Scénario : une personne a des comptes alimentés en espèces, fréquente habituellement des auteurs de délits ≥ 5 ans, mais aucun bien précis “recelé” n’est identifié. Qualification la plus adaptée :",
@@ -6038,7 +6038,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-6 permet d’inférer le lien train de vie/relations habituelles sans identifier une “chose” précise recelée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Recel d’usage",
     question:
         "Un passager monte dans une voiture qu’il sait volée. Qualification :",
@@ -6052,7 +6052,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite le passager d’un véhicule d’origine frauduleuse comme receleur (recel d’usage).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Intermédiaire",
     question:
         "Une personne négocie la vente de titres volés sans jamais les toucher. Qualification :",
@@ -6066,7 +6066,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le recel par entremise ne suppose pas la détention matérielle ; intervenir dans la négociation peut suffire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-1)",
     question:
         "Un garagiste met à disposition un local pour stocker des objets volés, en connaissance de cause. Qualification ?",
@@ -6080,7 +6080,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La mise à disposition d’un local pour entreposer des objets volés est citée comme recel (dissimulation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel (321-2)",
     question:
         "Un professionnel de l’occasion omet volontairement d’inscrire des bijoux volés au registre de police. Orientation la plus pertinente :",
@@ -6094,7 +6094,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "321-2 : aggravation si recel commis en utilisant les facilités d’une activité professionnelle (indice : registre de police).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Article recel simple :",
     options: ["321-1 CP", "321-2 CP", "321-6 CP"],
@@ -6102,7 +6102,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le recel simple est réprimé par 321-1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Article recel aggravé (habitude/pro/bande organisée) :",
     options: ["321-2 CP", "321-4 CP", "321-3 CP"],
@@ -6111,7 +6111,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Les aggravations “habituelle/pro/bande organisée” relèvent de 321-2.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Non-justification",
     question: "Article non-justification de ressources :",
     options: ["321-6 CP", "321-1 CP", "434-6 CP"],
@@ -6119,7 +6119,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La non-justification de ressources est visée par 321-6 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Non-justification",
     question: "Peine 321-6-1 al.2 :",
     options: ["7 ans + 200 000 €", "10 ans + 300 000 €", "5 ans + 150 000 €"],
@@ -6127,7 +6127,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation al.2 : 7 ans et 200 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Non-justification",
     question: "Tentative non-justification de ressources :",
     options: ["Non", "Oui", "Uniquement al.2"],
@@ -6135,7 +6135,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : tentative NON pour 321-6/321-6-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Tentative recel simple :",
     options: ["Non", "Oui", "Seulement si bande organisée"],
@@ -6143,7 +6143,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tentative recel simple non prévue, donc non punissable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Peines recel simple :",
     options: ["5 ans + 375 000 €", "3 ans + 75 000 €", "10 ans + 1 000 000 €"],
@@ -6151,7 +6151,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-1 : 5 ans et 375 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions flash — Recel",
     question: "Peines recel aggravé (321-2) :",
     options: ["10 ans + 750 000 €", "7 ans + 200 000 €", "5 ans + 500 000 €"],
@@ -6159,7 +6159,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "321-2 : 10 ans et 750 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : le recel peut porter sur des services (repas, distractions) payés avec des fonds détournés.",
@@ -6169,7 +6169,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite des repas/distractions financés par chèques issus d’un abus de confiance comme recel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Recel",
     question:
         "Vrai/Faux : l’innocence d’un intermédiaire exclut automatiquement la responsabilité du receleur final.",
@@ -6179,7 +6179,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le receleur est responsable s’il connaît l’origine frauduleuse, même via un intermédiaire de bonne foi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Définition",
     question: "L’accès ou le maintien frauduleux dans un STAD consiste à :",
     options: [
@@ -6193,7 +6193,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Art. 323-1 CP : accès ou maintien frauduleux dans tout ou partie d’un STAD.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Texte",
     question: "L’infraction d’accès ou maintien frauduleux est prévue par :",
     options: [
@@ -6206,7 +6206,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’article 323-1 définit et réprime l’accès ou maintien frauduleux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Notion de système (piège)",
     question: "Un STAD peut être :",
     options: [
@@ -6220,7 +6220,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : ensemble de biens matériels/logiciels doté de mémoire et traitement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (radiotéléphone)",
     question:
         "Vrai/Faux : un radiotéléphone peut être considéré comme un STAD.",
@@ -6230,7 +6230,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence : le radiotéléphone a été jugé système (CA Paris, 18 nov. 1992).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (annuaire électronique)",
     question:
         "Vrai/Faux : l’annuaire électronique de France Télécom a été jugé STAD.",
@@ -6240,7 +6240,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence : annuaire électronique FT = système (Tr. corr. Brest, 14 mars 1995).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Réseau carte bleue (piège concours)",
     question: "Le réseau « carte bleue » est :",
     options: [
@@ -6253,7 +6253,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence : réseau carte bleue = STAD (TGI Paris, 25 fév. 2000).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Terminal de paiement (TPE) (piège)",
     question: "Le terminal de paiement est considéré :",
     options: [
@@ -6267,7 +6267,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le TPE effectue un calcul de données, il est partie intégrante du STAD.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Maître du système",
     question: "Le « maître du système » est :",
     options: [
@@ -6281,7 +6281,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas forcément le concepteur ; c’est celui qui exploite et décide.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Condition centrale",
     question: "Les délits informatiques supposent :",
     options: [
@@ -6298,7 +6298,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-1 : ACCÈS FRAUDULEUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Sans droit",
     question: "L’accès devient pénalement répréhensible quand :",
     options: [
@@ -6312,7 +6312,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : sans droit = pas d’autorisation ou dépassement du mode d’accès autorisé.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Définition technique",
     question: "L’accès peut être présenté comme :",
     options: [
@@ -6325,7 +6325,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès = établir une communication, tous modes de pénétration irréguliers.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Dépassement d’autorisation",
     question: "Est un accès frauduleux :",
     options: [
@@ -6339,7 +6339,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise « tout ou partie » : habilité pour une partie ≠ habilité pour tout.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Piège protection",
     question:
         "Vrai/Faux : il faut un dispositif de protection (mot de passe) pour que l’accès frauduleux existe.",
@@ -6349,7 +6349,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "CA Paris 05/04/1994 : pas nécessaire que l’accès soit limité par un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Code d’essai (jurisprudence)",
     question:
         "Vrai/Faux : utiliser pendant plus de 2 ans un code remis pour une période d’essai peut constituer 323-1.",
@@ -6359,7 +6359,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Cass. crim., 03 oct. 2007 : usage prolongé d’un code d’essai = accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Cheval de Troie",
     question:
         "L’insertion d’un « cheval de Troie » dans un système est un exemple de :",
@@ -6374,7 +6374,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’insertion d’un cheval de Troie (Tr. corr. Limoges, 14 mars 1994).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Procédure imposée",
     question: "L’absence de droit peut résulter :",
     options: [
@@ -6388,7 +6388,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès sans droit dès lors que le maître restreint et impose une procédure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Ancien salarié (piège)",
     question:
         "Un ancien salarié utilise après son départ des codes d’accès toujours valables pour accéder aux bases internes :",
@@ -6402,7 +6402,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence : ex-salarié AFP utilisant des codes après départ = accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux (323-1) — Téléphonie (piège concours)",
     question:
         "Un technicien crée un numéro d’appel réservé à l’installateur pour pénétrer dans un standard téléphonique et obtenir des communications illimitées :",
@@ -6416,7 +6416,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-1 : MAINTIEN FRAUDULEUX
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Définition",
     question: "Le maintien frauduleux vise notamment :",
     options: [
@@ -6430,7 +6430,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien utile quand accès initial peut être accidentel ou régulier puis dépassement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Inoffensif",
     question:
         "Vrai/Faux : un maintien « inoffensif » (simple promenade) est incriminable.",
@@ -6440,7 +6440,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien inoffensif ou actif = incriminable si sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Délit continu",
     question: "Le maintien est :",
     options: [
@@ -6453,7 +6453,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien = délit continu, prescription court quand le maintien cesse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux (323-1) — Minitel (jurisprudence)",
     question:
         "L’usage abusif à des fins ludiques d’un minitel mis à disposition pour le service peut relever :",
@@ -6467,7 +6467,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-1 : ÉLÉMENT MORAL
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -6481,7 +6481,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : conscience d’être contre la volonté du maître (CA Paris, 15 déc. 1999).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Accès par erreur (piège)",
     question:
         "Vrai/Faux : un accès purement par erreur (sans intention) n’est pas sanctionné.",
@@ -6491,7 +6491,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès par erreur, possible si système non protégé, n’est pas pénalement sanctionné.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Compétences du prévenu",
     question: "La vraisemblance de l’erreur est appréciée notamment selon :",
     options: [
@@ -6504,7 +6504,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : juges apprécient l’erreur/intention selon compétences informatiques.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Mobile indifférent",
     question:
         "Vrai/Faux : agir “par jeu” ou “pour prouver une faille” peut quand même être puni.",
@@ -6514,7 +6514,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : mobile indifférent (jeu, prouesse, démonstration de faiblesse).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — “rendre service” (jurisprudence)",
     question:
         "Un informaticien accède pour dénoncer la mauvaise protection des données :",
@@ -6532,7 +6532,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-1 : CIRCONSTANCES AGGRAVANTES + PEINES
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Peines simples",
     question: "Peines de base (323-1 al.1) :",
     options: ["3 ans + 100 000 €", "2 ans + 30 000 €", "5 ans + 150 000 €"],
@@ -6541,7 +6541,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-1 al.1 = 3 ans d’emprisonnement + 100 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Aggravation al.2",
     question: "323-1 al.2 aggrave quand il résulte :",
     options: [
@@ -6555,7 +6555,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Al.2 : suppression/modification données ou altération du fonctionnement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Peines al.2",
     question: "Peines 323-1 al.2 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -6564,7 +6564,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : al.2 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Aggravation al.3 (État)",
     question: "323-1 al.3 vise :",
     options: [
@@ -6577,7 +6577,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : aggravation quand visé = STAD à caractère personnel mis en œuvre par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Peines al.3",
     question: "Peines 323-1 al.3 :",
     options: ["7 ans + 300 000 €", "5 ans + 150 000 €", "10 ans + 300 000 €"],
@@ -6586,7 +6586,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : al.3 = 7 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Bande organisée (323-4-1)",
     question: "Lorsque l’infraction est commise en bande organisée :",
     options: [
@@ -6599,7 +6599,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : bande organisée (323-4-1) = 10 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Risque mort / obstacle aux secours (323-4-2)",
     question: "323-4-2 s’applique si l’infraction :",
     options: [
@@ -6617,7 +6617,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // TENTATIVE / COMPLICITÉ (323-1)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Tentative",
     question: "La tentative d’accès/maintien frauduleux est :",
     options: [
@@ -6630,7 +6630,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative spécialement prévue par 323-7 (commencement d’exécution + échec indépendant).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Conditions de la tentative",
     question: "Pour la tentative (323-7), il faut :",
     options: [
@@ -6643,7 +6643,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Règle générale rappelée par le cours + 323-7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD (323-1) — Complicité",
     question: "La complicité en 323-1 est :",
     options: ["Oui (121-7)", "Non", "Seulement si mineur"],
@@ -6656,7 +6656,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-3 : INTRODUCTION / EXTRACTION / DÉTENTION / REPRODUCTION / TRANSMISSION / SUPPRESSION / MODIFICATION
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Texte",
     question:
         "L’introduction/suppression/modification frauduleuse de données est prévue par :",
@@ -6670,7 +6670,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-3 définit et réprime les actions frauduleuses sur les données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Définition globale",
     question: "323-3 réprime notamment :",
     options: [
@@ -6683,7 +6683,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Liste complète de l’article 323-3 dans le cours.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Système en cours (piège)",
     question:
         "Vrai/Faux : 323-3 peut s’appliquer même si le système est en cours d’élaboration.",
@@ -6693,7 +6693,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : peu importe que le système soit finalisé ou en cours (Cass. crim., 05 janv. 1994).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Accès licite ou non (piège)",
     question:
         "Vrai/Faux : l’auteur doit forcément avoir un accès illicite au système pour tomber sous 323-3.",
@@ -6703,7 +6703,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’auteur peut avoir eu un accès licite ou non ; l’action frauduleuse sur les données suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Perturbation",
     question:
         "Vrai/Faux : il faut une perturbation apparente du fonctionnement pour 323-3.",
@@ -6713,7 +6713,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : peu importe l’absence de perturbation apparente ou immédiate.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Données hors système (piège)",
     question:
         "Manipuler des données sur une clé USB (hors du système) relève de 323-3 :",
@@ -6727,7 +6727,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : action sur données sorties du système ≠ 323-3, sauf réintroduction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — “Sniffing”",
     question: "L’introduction d’un logiciel espion (sniffing) relève :",
     options: [
@@ -6740,7 +6740,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : introduction d’un logiciel espion entre dans le champ (323-3).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Extraction (piège vol)",
     question: "L’extraction de données est réprimée car :",
     options: [
@@ -6754,7 +6754,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : vol difficile car pas de soustraction ; 323-3 permet de réprimer la copie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Détention",
     question: "La détention de données (323-3) peut s’apparenter à :",
     options: [
@@ -6768,7 +6768,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la détention peut s’apparenter à un recel de données.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Suppression",
     question: "Supprimer des données peut consister à :",
     options: [
@@ -6782,7 +6782,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : suppression = atteinte à l’intégrité, ou déplacement hors/zone réservée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Modification",
     question: "Modifier des données signifie :",
     options: [
@@ -6795,7 +6795,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : modification = modification de l’information portée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Élément moral",
     question: "L’élément moral de 323-3 repose sur :",
     options: [
@@ -6808,7 +6808,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : conscience + volonté, violation délibérée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Peines simples",
     question: "Peines de base de 323-3 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -6817,7 +6817,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-3 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Aggravation (État)",
     question: "323-3 al.2 aggrave lorsque :",
     options: [
@@ -6831,7 +6831,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : aggravation spéciale État pour STAD à caractère personnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Bande organisée",
     question: "Bande organisée (323-4-1) sur 323-3 :",
     options: ["7 ans + 300 000 €", "10 ans + 300 000 €", "5 ans + 150 000 €"],
@@ -6840,7 +6840,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau 323-3 : aggravation bande organisée = 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Risque mort (323-4-2)",
     question:
         "Si l’infraction expose autrui à un risque immédiat de mort (323-4-2) :",
@@ -6850,7 +6850,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-4-2 = 10 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Tentative",
     question: "Tentative pour 323-3 :",
     options: ["Oui (323-7)", "Non", "Seulement si l’auteur est professionnel"],
@@ -6859,7 +6859,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative spécialement prévue et réprimée par 323-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Données (323-3) — Complicité",
     question: "Complicité pour 323-3 :",
     options: ["Oui (121-7)", "Non", "Seulement en bande organisée"],
@@ -6872,7 +6872,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-3-1 : OUTILS / PROGRAMMES / DONNÉES ADAPTÉS (SANS MOTIF LÉGITIME)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Texte",
     question:
         "Le fait d’importer/détenir/offrir/mettre à disposition des outils adaptés est prévu par :",
@@ -6886,7 +6886,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-3-1 définit et réprime la fourniture de moyens adaptés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Définition",
     question: "323-3-1 vise :",
     options: [
@@ -6900,7 +6900,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise la fourniture de moyens adaptés, sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Actes visés",
     question: "Parmi ces actes, lequel est visé par 323-3-1 ?",
     options: [
@@ -6913,7 +6913,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3-1 vise importation, détention, offre, cession, mise à disposition.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Motif légitime (piège)",
     question: "Un motif légitime peut être :",
     options: [
@@ -6926,7 +6926,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite recherche scientifique/technique et sécurisation des réseaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Appréciation",
     question: "La légitimité du motif est appréciée :",
     options: [
@@ -6939,7 +6939,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : notion imprécise, appréciation par les magistrats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Intention de nuire (piège)",
     question:
         "Vrai/Faux : 323-3-1 exige forcément la volonté directe de nuire.",
@@ -6949,7 +6949,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas forcément volonté directe de nuire ; simple détention peut suffire sans intention de diffusion.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Virus",
     question: "Le texte permet de sanctionner :",
     options: [
@@ -6963,7 +6963,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : incrimination utile même sans commission révélée des atteintes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Si infraction commise",
     question:
         "Si l’outil est utilisé et l’infraction 323-1 à 323-3 est réalisée, le détenteur peut être poursuivi :",
@@ -6977,7 +6977,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : sinon, poursuite en complicité si l’infraction est réalisée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Tentative",
     question: "Tentative pour 323-3-1 :",
     options: ["Oui (323-7)", "Non", "Seulement si bande organisée"],
@@ -6986,7 +6986,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative spécialement prévue et réprimée par 323-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Outils hacking (323-3-1) — Peines (base alignée)",
     question: "Peines de base attendues (mécanisme répressif) :",
     options: [
@@ -7004,7 +7004,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // 323-4 : ASSOCIATION DE MALFAITEURS EN INFORMATIQUE
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Texte",
     question: "L’association de malfaiteurs en informatique est prévue par :",
     options: [
@@ -7017,7 +7017,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-4 définit et réprime l’association de malfaiteurs en informatique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Définition",
     question: "323-4 réprime :",
     options: [
@@ -7031,7 +7031,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte : groupement/entente + préparation caractérisée par faits matériels + infractions ciblées.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Nombre de personnes (piège)",
     question: "Vrai/Faux : une entente à 2 personnes peut suffire.",
     options: ["Vrai", "Faux", "Minimum 3 personnes"],
@@ -7040,7 +7040,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : entente retenue pour deux personnes (Tr. corr. Limoges, 14 mars 1994).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — But initial",
     question:
         "Vrai/Faux : le groupement doit avoir été créé dès l’origine pour pirater.",
@@ -7050,7 +7050,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire ; une association peut dériver vers délinquance, seuls participants conscients sont visés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Faits matériels (piège)",
     question: "La préparation doit être caractérisée par :",
     options: [
@@ -7064,7 +7064,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : échanges d’infos, communication de codes, moyens pour casser un code, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Infractions visées (piège)",
     question:
         "Parmi ces infractions, laquelle est incluse dans le champ 323-4 ?",
@@ -7077,7 +7077,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : infractions visées = 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Élément moral",
     question: "L’élément moral exige :",
     options: [
@@ -7091,7 +7091,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : participation volontaire et connaissance que des infractions se préparent.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Association hackers (323-4) — Connaissance totale (piège concours)",
     question:
@@ -7102,7 +7102,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Jurisprudence : pas nécessaire que chaque membre soit au courant de tout (CA Aix, 02 juin 1993).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Répression (mécanisme)",
     question: "La peine de 323-4 correspond :",
     options: [
@@ -7116,7 +7116,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : mécanisme répressif = peine de l’infraction / plus sévère (pluralité).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Tentative",
     question: "Tentative pour 323-4 :",
     options: ["Non", "Oui (323-7)", "Oui mais seulement si mineur"],
@@ -7124,7 +7124,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le tableau : TENTATIVE : NON pour 323-4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Association hackers (323-4) — Complicité",
     question: "Complicité pour 323-4 :",
     options: ["Oui (121-7)", "Non", "Seulement en bande organisée"],
@@ -7136,7 +7136,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================================================
   // QCM ULTRA-PIÈGES CONCOURS (mix 323-1 / 323-3 / 323-3-1 / 323-4)
   // =========================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Accès vs Données",
     question:
         "Une personne a un accès autorisé au logiciel, mais modifie frauduleusement des écritures comptables enregistrées définitivement :",
@@ -7150,7 +7150,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès licite possible ; la modification frauduleuse de données suffit (Cass. crim., 08 déc. 1999).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Promenade",
     question:
         "Un étudiant se balade dans un système non protégé qu’il n’avait pas le droit d’utiliser, sans rien modifier :",
@@ -7164,7 +7164,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien inoffensif = incriminable ; l’élément moral = conscience.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Mot de passe non requis",
     question:
         "Le système est ouvert sans mot de passe. Un individu y accède malgré l’interdiction affichée. Infraction possible :",
@@ -7178,7 +7178,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "CA Paris 05/04/1994 : pas nécessaire de dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Outil + motif légitime",
     question:
         "Un chercheur conserve un programme conçu pour tester la robustesse d’un système dans un cadre de sécurité informatique :",
@@ -7192,7 +7192,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : absence de motif légitime est une condition ; sécurité/recherche peuvent être légitimes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Entente",
     question:
         "Deux personnes échangent des codes et méthodes pour casser un accès afin de préparer des intrusions 323-1 :",
@@ -7206,7 +7206,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : groupement/entente + faits matériels préparatoires = 323-4, même à deux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "L’accès ou le maintien frauduleux dans un STAD est réprimé par :",
@@ -7216,7 +7216,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-1 : accès ou maintien frauduleux dans tout ou partie d’un STAD.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "L’introduction / extraction / suppression / modification frauduleuse de données est réprimée par :",
@@ -7226,7 +7226,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3 : actions frauduleuses portant sur les données contenues dans le système.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "La détention/offre/cession/mise à disposition d’outils adaptés au piratage (sans motif légitime) est réprimée par :",
@@ -7236,7 +7236,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3-1 : moyens conçus/spécialement adaptés pour commettre 323-1 à 323-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Article",
     question:
         "L’association de malfaiteurs en informatique (entente/groupement) est réprimée par :",
@@ -7246,7 +7246,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-4 : participation à une entente/groupement préparant des infractions 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.1)",
     question: "Peines 323-1 al.1 (accès/maintien frauduleux simple) :",
     options: ["3 ans + 100 000 €", "5 ans + 150 000 €", "7 ans + 300 000 €"],
@@ -7255,7 +7255,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-1 al.1 = 3 ans d’emprisonnement + 100 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.2)",
     question:
         "Peines 323-1 al.2 (si suppression/modification données OU altération fonctionnement) :",
@@ -7264,7 +7264,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : 323-1 al.2 = 5 ans + 150 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.3)",
     question:
         "Peines 323-1 al.3 (STAD à caractère personnel mis en œuvre par l’État) :",
@@ -7273,7 +7273,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : 323-1 al.3 = 7 ans + 300 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3)",
     question: "Peines 323-3 (actions frauduleuses sur les données) :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -7282,7 +7282,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-3 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-4-2)",
     question:
         "Lorsque l’infraction expose autrui à un risque immédiat de mort / obstacle aux secours (323-4-2), la peine peut aller à :",
@@ -7293,7 +7293,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Vrai/Faux ultra-piège",
     question: "Vrai/Faux : un STAD, c’est uniquement « un site internet ».",
     options: ["Vrai", "Faux", "Seulement s’il y a des données personnelles"],
@@ -7302,7 +7302,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : ensemble matériel + logiciel (machine, composants, programmes...).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Vrai/Faux (maître du système)",
     question: "Vrai/Faux : le maître du système est forcément son concepteur.",
     options: ["Vrai", "Faux", "Seulement si c’est une PME"],
@@ -7311,7 +7311,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le maître du système peut être celui qui a acquis le droit de l’exploiter.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux — Piège concours (sans droit)",
     question: "« Sans droit » (323-1) signifie notamment :",
     options: [
@@ -7325,7 +7325,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas de droit d’accès OU pas le droit d’y accéder « de cette façon ».",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux — Piège affichage",
     question:
         "Un système ouvert sans mot de passe mais avec une restriction claire d’accès (réservé) :",
@@ -7339,7 +7339,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "CA Paris 05/04/1994 : pas nécessaire de dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Accès frauduleux — Cas pratique",
     question:
         "Un salarié autorisé à consulter la base A utilise ses accès pour entrer dans la base B non autorisée :",
@@ -7353,7 +7353,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise « tout ou partie » : habilitation partielle ≠ habilitation totale.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux — Piège erreur",
     question:
         "Un utilisateur se connecte par erreur sur un espace non protégé puis reste et explore malgré l’interdiction :",
@@ -7367,7 +7367,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien vise justement des accès initiaux réguliers/hasard suivis d’un maintien illicite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Maintien frauduleux — Délit continu",
     question:
         "Vrai/Faux : pour le maintien, la prescription court à partir de la fin du maintien.",
@@ -7378,7 +7378,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral (V/F)",
     question:
         "Vrai/Faux : 323-1 exige la conscience d’agir contre le gré du maître du système.",
@@ -7388,7 +7388,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : conscience d’accéder ou se maintenir sans droit (contre la volonté du maître).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Mobile (piège)",
     question:
         "Vrai/Faux : si l’auteur agit « pour prouver une faille », il n’y a pas d’infraction.",
@@ -7399,7 +7399,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Cas pratique (accès licite)",
     question:
         "Une personne a un accès licite mais supprime volontairement des données sans autorisation :",
@@ -7413,7 +7413,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-3 peut s’appliquer même si l’accès au système était licite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège vol)",
     question: "Extraire des données (copie) sans priver le propriétaire :",
     options: [
@@ -7427,7 +7427,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-3 permet de sanctionner la copie/extraction de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Détention (piège)",
     question:
         "La détention de données obtenues frauduleusement peut être vue comme :",
@@ -7441,7 +7441,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : détention peut s’apparenter à un recel de données extraites/reproduites/transmises.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Données hors système",
     question:
         "Manipuler des données sur un support externe (hors du système) :",
@@ -7457,7 +7457,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Définition (ultra-piège)",
     question: "323-3-1 sanctionne :",
     options: [
@@ -7471,7 +7471,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : importation/détention/offre/cession/mise à disposition, sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (V/F)",
     question:
         "Vrai/Faux : la recherche en sécurité informatique peut constituer un motif légitime.",
@@ -7481,7 +7481,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : motifs légitimes possibles = recherche + sécurisation des SI/réseaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Intention de nuire (V/F)",
     question: "Vrai/Faux : 323-3-1 exige une intention directe de nuire.",
     options: ["Vrai", "Faux", "Seulement en bande organisée"],
@@ -7491,7 +7491,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Définition (ultra-piège)",
     question: "L’association de malfaiteurs en informatique suppose :",
     options: [
@@ -7505,7 +7505,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : préparation en amont, matérialisée par des actes (échanges codes, méthodes, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Piège effectif",
     question:
         "Vrai/Faux : on peut être poursuivi 323-4 même si aucun piratage n’a finalement eu lieu.",
@@ -7515,7 +7515,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-4 vise la préparation caractérisée par faits matériels, en amont.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Piège connaissance totale",
     question:
         "Vrai/Faux : chaque membre doit connaître toutes les activités de l’entente pour être condamné.",
@@ -7526,7 +7526,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-1)",
     question:
         "Un ex-salarié conserve des identifiants et continue d’accéder à des bases internes après son départ :",
@@ -7540,7 +7540,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite un cas type : accès via codes après départ = accès frauduleux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-3)",
     question:
         "Un employé copie des fichiers internes (sans suppression) et les transmet à un tiers :",
@@ -7554,7 +7554,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3 vise extraction, reproduction et transmission frauduleuse de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-3-1)",
     question:
         "Une personne vend un programme conçu spécialement pour casser des accès, sans motif légitime :",
@@ -7564,7 +7564,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3-1 vise l’offre/cession/mise à disposition d’outils adaptés, sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas — Qualification (323-4)",
     question:
         "Deux personnes échangent des codes et scripts pour préparer des intrusions futures :",
@@ -7575,7 +7575,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Accès vs Maintien",
     question:
         "Le maintien frauduleux est particulièrement utile pour réprimer :",
@@ -7590,7 +7590,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien vise les situations où l’accès initial ne suffit pas à lui seul.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Preuve de l’intention",
     question:
         "La présence d’un dispositif de protection (mot de passe) est surtout utile pour :",
@@ -7606,7 +7606,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative d’accès/maintien frauduleux est punissable (323-7).",
@@ -7615,7 +7615,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : tentative spécialement prévue par 323-7.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Tentative (V/F)",
     question: "Vrai/Faux : la tentative de 323-3 est punissable (323-7).",
     options: ["Vrai", "Faux", "Seulement si bande organisée"],
@@ -7624,7 +7624,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : tentative prévue par 323-7 pour les délits du chapitre.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Complicité (V/F)",
     question:
         "Vrai/Faux : la complicité est possible pour 323-1 via 121-7 (aide/assistance, provocation, instructions).",
@@ -7633,7 +7633,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : complicité applicable conformément à 121-7.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Complicité (V/F)",
     question: "Vrai/Faux : la complicité est possible pour 323-3 via 121-7.",
     options: ["Vrai", "Faux", "Jamais"],
@@ -7643,7 +7643,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (piège)",
     question:
         "Vrai/Faux : un radiotéléphone a déjà été jugé comme étant un STAD.",
@@ -7653,7 +7653,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite : radiotéléphone = système (CA Paris, 18/11/1992).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Jurisprudence (piège)",
     question:
         "Vrai/Faux : l’annuaire électronique de France Télécom a déjà été jugé comme étant un STAD.",
@@ -7664,7 +7664,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — « Tout ou partie »",
     question: "La mention « tout ou partie du système » permet :",
     options: [
@@ -7678,7 +7678,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : vise aussi la zone unique + l’habilité partiel qui dépasse.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM ultra-piège — Données vs support externe",
     question: "Quel énoncé est correct ?",
     options: [
@@ -7693,7 +7693,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique concours — Qualification + peine",
     question:
         "Un individu accède sans droit à un STAD et modifie des données (323-1 al.2) : peine encourue ?",
@@ -7703,7 +7703,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-1 al.2 : suppression/modification données ou altération fonctionnement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique concours — Qualification + peine",
     question:
         "Accès frauduleux contre un STAD à caractère personnel mis en œuvre par l’État : peine ?",
@@ -7713,7 +7713,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-1 al.3 : aggravation spéciale État (données personnelles).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique concours — Qualification + peine",
     question: "Introduction frauduleuse de données (323-3) : peine de base ?",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -7722,7 +7722,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Sniffing",
     question:
         "Un logiciel espion introduit dans un système pour capter des infos (sniffing) correspond à :",
@@ -7736,7 +7736,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : introduction d’un logiciel espion entre dans 323-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Piège — Cracking",
     question:
         "Dans le cours, la forme de piratage appelée « cracking » renvoie surtout à :",
@@ -7752,7 +7752,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Pacte inutile",
     question:
         "Vrai/Faux : Pour 323-1, il faut obligatoirement un dommage pour que l’infraction existe.",
@@ -7762,7 +7762,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-1 al.1 existe sans dommage ; le dommage est une aggravation (al.2/3).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai/Faux — Promenade",
     question:
         "Vrai/Faux : un maintien « inoffensif » peut être réprimé s’il est sans droit.",
@@ -7772,7 +7772,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Erreur vs compétence",
     question: "Un accès « par erreur » est apprécié notamment au regard :",
     options: [
@@ -7785,7 +7785,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : vraisemblance de l’erreur/intention appréciée selon compétences.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Ultra-piège — Sans droit (source)",
     question: "L’absence de droit d’accès peut résulter :",
     options: [
@@ -7800,7 +7800,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On copie des données internes, on les garde chez soi (sans diffusion). Qualification la plus directe :",
@@ -7814,7 +7814,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3 vise extraction, détention, reproduction de données obtenues frauduleusement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On ne touche pas aux données, mais on reste connecté sans droit pour « explorer » :",
@@ -7824,7 +7824,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le maintien sans droit est incriminé même « inoffensif » (simple promenade).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On met à disposition un outil adapté au piratage, sans motif légitime, mais aucun piratage n’a encore eu lieu :",
@@ -7834,7 +7834,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3-1 sanctionne la simple fourniture/détention/offre d’outils adaptés, sans besoin d’infraction consommée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix concours — Choisis la bonne qualification",
     question:
         "On s’organise à plusieurs, échanges de codes + méthodes, préparation matérialisée, sans passage à l’acte :",
@@ -7844,7 +7844,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-4 : entente/groupement + préparation caractérisée par faits matériels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3 aggravé État)",
     question:
         "Peines pour 323-3 lorsqu’il est commis contre un STAD à caractère personnel mis en œuvre par l’État :",
@@ -7854,7 +7854,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : aggravation « État / caractère personnel » = 7 ans + 300 000 € (tableau).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3 bande organisée)",
     question:
         "Peines (max) quand l’infraction est commise en bande organisée :",
@@ -7864,7 +7864,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours mentionne l’aggravation bande organisée (323-4-1) : 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative (323-7)",
     question: "La tentative des infractions du chapitre STAD est prévue par :",
     options: ["323-7 CP", "323-6 CP", "323-4 CP"],
@@ -7877,7 +7877,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // STAD — DÉFINITION / NOTIONS (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Définition (piège concours)",
     question: "Un STAD peut être défini comme :",
     options: [
@@ -7891,7 +7891,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : ensemble de biens matériels et logiciels, mémoire + traitement, restitution des résultats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Inclusion (V/F)",
     question:
         "Vrai/Faux : un STAD inclut aussi les programmes/logiciels assurant son fonctionnement.",
@@ -7901,7 +7901,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le système = machine + composants + programmes/logiciels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — « Maître du système » (piège)",
     question: "Le « maître du système » est :",
     options: [
@@ -7915,7 +7915,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas forcément concepteur ; c’est celui qui exploite et décide de l’usage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "STAD — Volonté du maître (V/F)",
     question:
         "Vrai/Faux : les délits STAD reposent sur le non-respect de la volonté du maître du système.",
@@ -7929,7 +7929,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // 323-1 — ACCÈS FRAUDULEUX (QCM PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (définition)",
     question: "L’accès (323-1) peut être compris comme :",
     options: [
@@ -7942,7 +7942,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès = établissement d’une communication ; modes techniques indifférents.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Protection (ultra piège)",
     question:
         "Vrai/Faux : si un système n’a aucun mot de passe, l’accès frauduleux est impossible à retenir.",
@@ -7952,7 +7952,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire que l’accès soit limité par un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Dépassement d’autorisation",
     question:
         "Une personne a un droit d’accès limité, mais « force » une zone restreinte. Qualification :",
@@ -7966,7 +7966,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : « tout ou partie » + accès sans droit = dépassement d’habilitation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès par personne interposée (piège)",
     question:
         "Vrai/Faux : utiliser l’identifiant d’un tiers (même obtenu « gentiment ») peut caractériser un accès sans droit.",
@@ -7976,7 +7976,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’accès sans droit vise aussi se faire passer pour une personne autorisée / forcer les codes.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès « payant » (piège)",
     question:
         "Si le maître du système subordonne l’accès au paiement d’un prix :",
@@ -7994,7 +7994,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // 323-1 — MAINTIEN FRAUDULEUX (QCM PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (définition)",
     question: "Le maintien frauduleux vise notamment les situations où :",
     options: [
@@ -8008,7 +8008,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien utile pour les accès de hasard, erreur, ou procédures régulières suivies d’opérations illicites.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien inoffensif (V/F)",
     question:
         "Vrai/Faux : un maintien « promenade » sans dommage peut être sanctionné.",
@@ -8017,7 +8017,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : maintien inoffensif ou actif est incriminable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Délit continu (piège)",
     question: "Le maintien est qualifié de délit continu car :",
     options: [
@@ -8034,7 +8034,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // 323-1 — CIRCONSTANCES AGGRAVANTES (QCM CONCOURS)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (al.2)",
     question: "L’aggravation 323-1 al.2 est retenue lorsqu’il en est résulté :",
     options: [
@@ -8048,7 +8048,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : aggravation si suppression/modification données ou altération fonctionnement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (al.3) (piège)",
     question: "L’aggravation 323-1 al.3 vise les atteintes contre :",
     options: [
@@ -8060,7 +8060,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : aggravation spéciale État + caractère personnel.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-1 — Bande organisée (V/F)",
     question:
         "Vrai/Faux : la bande organisée est une circonstance aggravante autonome des infractions STAD.",
@@ -8070,7 +8070,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-4-1 prévoit l’aggravation lorsque l’infraction est commise en bande organisée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Risque immédiat (piège)",
     question: "323-4-2 vise notamment les situations où l’infraction :",
     options: [
@@ -8088,7 +8088,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // 323-3 — ACTIONS SUR LES DONNÉES (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Portée (piège)",
     question:
         "Vrai/Faux : pour 323-3, il faut un trouble visible du fonctionnement du système.",
@@ -8098,7 +8098,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’action peut être sanctionnée même sans perturbation apparente/immediate.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Introduction",
     question: "L’introduction de données correspond à :",
     options: [
@@ -8112,7 +8112,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : introduction = insertion de données nouvelles dans le système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège)",
     question: "L’extraction de données permet de réprimer :",
     options: [
@@ -8126,7 +8126,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : protège les données même sans dépossession → vol difficilement applicable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Reproduction",
     question: "La reproduction de données vise :",
     options: [
@@ -8139,7 +8139,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : reproduction = copie sur n’importe quel support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Transmission",
     question: "La transmission de données vise :",
     options: [
@@ -8152,7 +8152,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : transmission = diffusion à un tiers quel que soit le moyen.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Suppression (piège)",
     question: "Supprimer des données peut consister :",
     options: [
@@ -8166,7 +8166,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : suppression = effacement mais aussi déplacement hors zone accessible.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Modification (piège)",
     question: "Modifier des données signifie :",
     options: [
@@ -8180,7 +8180,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : modification = modification de l’information qu’elles portent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Accès licite (ultra piège)",
     question:
         "Vrai/Faux : l’auteur doit forcément avoir un accès frauduleux au système pour être poursuivi 323-3.",
@@ -8190,7 +8190,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’auteur peut avoir eu un accès licite ou non ; l’action frauduleuse porte sur les données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Données hors système (cas)",
     question:
         "Une personne modifie des données sur une clé USB puis ne les réintroduit jamais dans le système :",
@@ -8209,7 +8209,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // 323-3-1 — OUTILS / DONNÉES ADAPTÉS (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Actes visés",
     question: "323-3-1 vise notamment :",
     options: [
@@ -8221,7 +8221,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : liste des comportements sanctionnés.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Objet visé",
     question: "323-3-1 vise :",
     options: [
@@ -8235,7 +8235,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : formulation large (outils + données) adaptés pour commettre 323-1 à 323-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Lien avec infraction consommée (piège)",
     question:
         "Vrai/Faux : 323-3-1 exige que l’infraction STAD (323-1 à 323-3) ait déjà été commise.",
@@ -8245,7 +8245,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : incrimination peut sanctionner la simple détention/mise à disposition sans infraction commise révélée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (piège concours)",
     question: "Le « motif légitime » peut inclure :",
     options: [
@@ -8259,7 +8259,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite : recherche scientifique/technique + sécurisation des SI/réseaux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Appréciation (piège)",
     question: "La légitimité du motif est :",
     options: [
@@ -8276,7 +8276,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // 323-4 — ASSOCIATION DE MALFAITEURS INFORMATIQUE (ULTRA PIÈGES)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Groupement/entente (piège)",
     question:
         "Vrai/Faux : l’entente peut être retenue même si le groupement ne comporte que deux personnes.",
@@ -8286,7 +8286,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : entente retenue pour deux personnes (exemple jurisprudentiel cité).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Objet (piège)",
     question: "Les infractions préparées visées par 323-4 peuvent être :",
     options: ["323-1 à 323-3-1", "Uniquement 323-1", "Uniquement 323-3"],
@@ -8294,7 +8294,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : infractions visées = 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Faits matériels (piège concours)",
     question:
         "Les « faits matériels » caractérisant la préparation peuvent être :",
@@ -8309,7 +8309,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : exemples d’actes préparatoires matérialisant la préparation.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Élément moral (V/F)",
     question:
         "Vrai/Faux : il faut une participation volontaire et la conscience que l’entente prépare des atteintes STAD.",
@@ -8323,7 +8323,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // MINI-CAS PRATIQUES — QUALIFICATION + ARTICLE + PEINE (CONCOURS)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Un individu s’introduit dans un STAD sans droit, sans rien modifier. Qualification + peine ?",
@@ -8337,7 +8337,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Accès frauduleux simple sans altération/suppression/modification : 323-1 al.1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Après accès sans droit, l’auteur altère le fonctionnement du système. Qualification + peine ?",
@@ -8351,7 +8351,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation al.2 si altération du fonctionnement ou modification/suppression de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Accès frauduleux à un STAD de l’État contenant des données personnelles. Qualification + peine ?",
@@ -8365,7 +8365,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation spéciale : STAD à caractère personnel mis en œuvre par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Un salarié efface des données du système auquel il a accès, sans autorisation. Qualification + peine ?",
@@ -8379,7 +8379,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3 : suppression frauduleuse de données, même si l’accès initial était licite.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Un individu copie des données (extraction) puis les transmet à un tiers. Qualification + peine de base ?",
@@ -8393,7 +8393,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3 vise extraction et transmission frauduleuse de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Une personne met en vente un outil conçu pour commettre 323-1 à 323-3, sans motif légitime. Qualification + peine de base ?",
@@ -8408,7 +8408,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-3-1 est puni selon les peines prévues pour l’infraction elle-même / la plus sévèrement réprimée (mêmes mécanismes d’aggravation).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mini-cas concours — Qualification + peine",
     question:
         "Deux personnes s’entendent, échangent codes et méthodes pour préparer des intrusions. Qualification ?",
@@ -8422,7 +8422,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================
   // VRAI/FAUX — FLASH (MODE RÉVISIONS)
   // =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’accès peut être réprimé même si la personne n’a pas « forcé » un mot de passe.",
@@ -8432,7 +8432,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire de dispositif de protection ; ce qui compte = sans droit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : le maintien est incriminable même s’il est « sans préjudice ».",
@@ -8442,7 +8442,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien inoffensif (« promenade ») = incriminable.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3",
     question:
         "Vrai/Faux : 323-3 peut viser la simple copie (extraction) sans suppression.",
@@ -8452,7 +8452,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : extraction protège les données même si elles restent disponibles au propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3-1",
     question:
         "Vrai/Faux : la simple détention d’un outil adapté peut suffire (sans intention de nuire).",
@@ -8462,7 +8462,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas forcément volonté directe de nuire ; détention réprimée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-4",
     question:
         "Vrai/Faux : 323-4 exige que l’infraction finale (piratage) soit commise.",
@@ -8472,7 +8472,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : vise la préparation caractérisée par faits matériels, en amont.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 simple)",
     question:
         "Peine encourue pour l’accès/maintien frauduleux simple (323-1 al.1) :",
@@ -8482,7 +8482,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-1 al.1 = 3 ans d’emprisonnement + 100 000 € d’amende.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.2)",
     question:
         "Peine encourue si suppression/modification de données OU altération du fonctionnement (323-1 al.2) :",
@@ -8491,7 +8491,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : aggravation 323-1 al.2 = 5 ans + 150 000 €.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-1 al.3)",
     question:
         "Peine encourue si STAD à caractère personnel mis en œuvre par l’État (323-1 al.3) :",
@@ -8500,7 +8500,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : 323-1 al.3 = 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Peine (323-3)",
     question:
         "Peine de base pour introduction/extraction/détention/reproduction/transmission/suppression/modification frauduleuse (323-3) :",
@@ -8510,7 +8510,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-3 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Révisions rapides — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative d’accès/maintien frauduleux est punissable.",
@@ -8523,7 +8523,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-1 — ACCÈS / MAINTIEN (QCM ULTRA-PIÈGES CONCOURS)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « sans droit »)",
     question: "L’accès est « sans droit » notamment lorsque :",
     options: [
@@ -8537,7 +8537,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : sans droit = contre la volonté du maître, même sans protection technique.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « ancien salarié »)",
     question:
         "Un ancien salarié conserve des identifiants et se connecte après son départ :",
@@ -8551,7 +8551,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’hypothèse : usage de codes après départ = accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « période d’essai »)",
     question:
         "Utiliser un code remis pour une période d’essai, pendant 2 ans :",
@@ -8565,7 +8565,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : dépasser la période/autorisation = accès sans droit (exemple jurisprudentiel).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège « tout ou partie »)",
     question: "323-1 réprime l’accès frauduleux :",
     options: [
@@ -8578,7 +8578,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : formulation « tout ou partie » → zone unique ou sous-partie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège « hasard »)",
     question: "Le maintien vise en particulier :",
     options: [
@@ -8591,7 +8591,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : maintien utile pour accès par erreur/inadvertance puis maintien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège prescription)",
     question: "Pourquoi parle-t-on de délit continu pour le maintien ?",
     options: [
@@ -8603,7 +8603,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : prescription à compter de la fin du maintien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral (piège concours)",
     question: "L’élément moral de 323-1 exige :",
     options: [
@@ -8617,7 +8617,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : conscience du caractère non autorisé ; mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Mobile (V/F)",
     question:
         "Vrai/Faux : agir « par jeu » exclut l’infraction d’accès frauduleux.",
@@ -8627,7 +8627,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le mobile est indifférent (jeu, prouesse, démonstration).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès par erreur (piège)",
     question: "L’accès par erreur :",
     options: [
@@ -8641,7 +8641,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès par erreur (système non protégé) non sanctionné ; appréciation selon compétences.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Compétences du prévenu (piège)",
     question:
         "Pour distinguer erreur vs intrusion volontaire, les juges apprécient notamment :",
@@ -8659,7 +8659,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-1 — AGGRAVATIONS (QCM ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (nature)",
     question: "323-1 al.2 vise :",
     options: [
@@ -8672,7 +8672,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation au résultat (données/fonctionnement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation État (ultra piège)",
     question: "Pour 323-1 al.3, il faut :",
     options: [
@@ -8684,7 +8684,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation spéciale (État + caractère personnel).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Secours (piège concours)",
     question: "323-4-2 peut être retenu si l’infraction :",
     options: [
@@ -8701,7 +8701,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-3 — DONNÉES (INTRODUCTION / EXTRACTION / DETENTION…)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Champ (piège « système en cours »)",
     question:
         "Vrai/Faux : 323-3 peut s’appliquer même si le système est en cours d’élaboration.",
@@ -8711,7 +8711,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : peu importe que le système soit finalisé ou en cours d’élaboration.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Accès licite (V/F)",
     question: "Vrai/Faux : 323-3 exige un accès frauduleux préalable (323-1).",
     options: ["Vrai", "Faux", "Seulement si extraction"],
@@ -8719,7 +8719,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : l’auteur peut avoir eu un accès licite ou non.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — « cracking » (culture concours)",
     question:
         "Dans le cours, l’action sur les données (323-3) est souvent appelée :",
@@ -8729,7 +8729,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : cette forme de piratage est souvent appelée « cracking ».",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Logiciel espion (piège)",
     question: "L’introduction d’un logiciel espion dans un système relève :",
     options: [
@@ -8742,7 +8742,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : insertion logiciel espion (« sniffing ») entre dans 323-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège vol)",
     question: "L’extraction vise à sanctionner :",
     options: [
@@ -8756,7 +8756,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : extraction protège les données même si elles restent dispo au propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Détention (piège recel)",
     question: "La détention de données (323-3) peut s’apparenter à :",
     options: [
@@ -8770,7 +8770,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : détention = proche d’un recel de données issues d’actions frauduleuses.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Transmission (piège « support »)",
     question: "Transmission (323-3) :",
     options: [
@@ -8783,7 +8783,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : transmission = toute diffusion, moyen indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Modification vs introduction (piège)",
     question:
         "Pourquoi le cours dit qu’il est difficile de séparer modification/introduction/suppression ?",
@@ -8798,7 +8798,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : modifier implique souvent ajout/retrait/déplacement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Élément moral",
     question: "L’élément moral de 323-3 repose sur :",
     options: [
@@ -8816,7 +8816,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-3 — AGGRAVATIONS (ÉTAT / BANDE / 323-4-2)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Aggravation État (peine)",
     question:
         "323-3 commis contre un STAD à caractère personnel mis en œuvre par l’État :",
@@ -8825,7 +8825,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Tableau : aggravation État = 7 ans + 300 000 €.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Peine maximale (piège tableau)",
     question: "Quand 323-4-2 est retenu, la peine peut aller jusqu’à :",
     options: ["10 ans + 300 000 €", "7 ans + 300 000 €", "5 ans + 150 000 €"],
@@ -8837,7 +8837,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-3-1 — OUTILS / PROGRAMMES (ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Définition",
     question: "323-3-1 réprime le fait (sans motif légitime) :",
     options: [
@@ -8851,7 +8851,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : incrimine la fourniture/possession de moyens conçus/adaptés pour 323-1 à 323-3.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (V/F)",
     question:
         "Vrai/Faux : la recherche en sécurité informatique peut constituer un motif légitime.",
@@ -8861,7 +8861,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite explicitement recherche/sécurité informatique parmi les motifs possibles.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Absence d’intention (piège)",
     question:
         "Vrai/Faux : l’absence d’intention de diffuser un virus exclut 323-3-1.",
@@ -8871,7 +8871,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la simple détention peut suffire, même sans volonté directe de nuire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Complicité (cas)",
     question:
         "Si l’outil est fourni et qu’une attaque est ensuite commise, le fournisseur peut être :",
@@ -8889,7 +8889,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-4 — ASSOCIATION DE MALFAITEURS (ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Définition",
     question: "323-4 réprime :",
     options: [
@@ -8903,7 +8903,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : préparation caractérisée par faits matériels + infractions visées 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Faits matériels (piège)",
     question: "Quel exemple illustre un « fait matériel » de préparation ?",
     options: [
@@ -8916,7 +8916,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : échanges d’informations sur modes opératoires (codes, casser code…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Connaissance partielle (piège concours)",
     question:
         "Vrai/Faux : chaque membre doit connaître toutes les activités des autres membres.",
@@ -8930,7 +8930,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // MINI CAS — QUALIFICATION + ARTICLE + PEINE (PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Un agent « se promène » dans un système après avoir atterri dessus par erreur, mais reste et explore volontairement. Qualification la plus juste ?",
@@ -8944,7 +8944,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le maintien réprime les accès initiaux accidentels suivis d’un maintien volontaire sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Une personne copie des données (extraction) sans toucher au fonctionnement, puis les conserve chez elle. Qualification + peine de base ?",
@@ -8957,7 +8957,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "323-3 vise extraction et détention frauduleuses de données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Un technicien installe un « cheval de Troie » pour pouvoir revenir plus tard. Qualification principale ?",
@@ -8971,7 +8971,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’insertion d’un cheval de Troie et 323-3 vise l’introduction ; 323-1 vise l’accès sans droit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "Une intrusion empêche les secours d’être déclenchés pendant un sinistre. Peine maximale évoquée au cours ?",
@@ -8985,7 +8985,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // FLASH V/F — TRÈS PIÈGE (RÉVISIONS)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — STAD",
     question: "Vrai/Faux : un radiotéléphone a déjà été jugé comme un STAD.",
     options: ["Vrai", "Faux", "Seulement si connecté à Internet"],
@@ -8993,7 +8993,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours cite : radiotéléphone = système (jurisprudence).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — STAD",
     question: "Vrai/Faux : un annuaire électronique peut constituer un STAD.",
     options: ["Vrai", "Faux", "Uniquement un site web moderne"],
@@ -9002,7 +9002,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite : annuaire électronique France Télécom = système.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’infraction nécessite forcément un dispositif de protection (mot de passe).",
@@ -9012,7 +9012,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire qu’il y ait un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’accès sans droit peut résulter du non-respect d’une procédure (code/paiement).",
@@ -9022,7 +9022,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : absence de droit = non-respect procédure imposée par le maître du système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3",
     question:
         "Vrai/Faux : la manipulation de données sur support externe (clé USB) tombe automatiquement sous 323-3.",
@@ -9032,7 +9032,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : action sur données sorties du système pas visée, sauf réintroduction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Définition",
     question: "L’infraction 323-1 CP consiste à :",
     options: [
@@ -9046,7 +9046,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-1 CP : accès ou maintien frauduleux dans un système de traitement automatisé de données.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Texte",
     question:
         "Le texte qui réprime l’accès/maintien frauduleux dans un STAD est :",
@@ -9060,7 +9060,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-1 définit et réprime l’accès ou le maintien dans un STAD.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Objet (piège)",
     question: "323-1 protège principalement :",
     options: [
@@ -9073,7 +9073,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : les délits supposent le non-respect de la volonté du maître du système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — STAD (définition concours)",
     question: "Un STAD peut être décrit comme :",
     options: [
@@ -9087,7 +9087,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : ensemble de biens matériels et logiciels + mémoire + traitement + restitution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — STAD (piège composantes)",
     question: "Dans la notion de STAD, on inclut :",
     options: [
@@ -9100,7 +9100,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : le système peut être la machine, ses composants et les logiciels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Jurisprudence (V/F)",
     question:
         "Vrai/Faux : un terminal de paiement peut être une partie intégrante d’un STAD.",
@@ -9110,7 +9110,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : terminal de paiement fait partie du système carte bleue car il traite des données.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (notion)",
     question: "Dans le cours, l’accès à un STAD correspond surtout à :",
     options: [
@@ -9123,7 +9123,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès = communication avec le système (mode technique indifférent).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège protection)",
     question:
         "Pour caractériser 323-1, faut-il un mot de passe ou une protection technique ?",
@@ -9137,7 +9137,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire que l’accès soit limité par un dispositif de protection.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Accès (piège dépassement autorisation)",
     question:
         "La personne est autorisée à accéder à une zone A mais force l’accès à une zone B :",
@@ -9151,7 +9151,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : « tout ou partie » → même habilité sur une partie, accès non autorisé sur une autre = 323-1.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège « promenade »)",
     question: "Le maintien « inoffensif » (simple promenade) :",
     options: [
@@ -9163,7 +9163,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : maintien inoffensif ou actif est incriminable.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Maintien (piège délit continu)",
     question: "Le maintien frauduleux est qualifié de délit continu car :",
     options: [
@@ -9176,7 +9176,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : délit continu → prescription à la fin du maintien.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral (piège erreur)",
     question: "L’accès par erreur :",
     options: [
@@ -9189,7 +9189,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : accès par erreur non sanctionné ; l’appréciation dépend notamment des compétences.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Élément moral",
     question: "L’élément moral de 323-1 exige :",
     options: [
@@ -9203,7 +9203,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : conscience d’agir sans droit ; mobile indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Mobile (V/F)",
     question:
         "Vrai/Faux : agir pour « démontrer une faille » supprime l’infraction 323-1.",
@@ -9217,7 +9217,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-1 — AGGRAVATIONS & PEINES (ULTRA-PIÈGES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation (résultat)",
     question: "323-1 al.2 est caractérisé si :",
     options: [
@@ -9230,7 +9230,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Aggravation au résultat (données/fonctionnement).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Peine (al.2)",
     question: "Peine encourue pour 323-1 al.2 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -9239,7 +9239,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-1 al.2 = 5 ans d’emprisonnement + 150 000 € d’amende.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Aggravation État (piège)",
     question: "323-1 al.3 suppose :",
     options: [
@@ -9252,7 +9252,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Aggravation spéciale : caractère personnel + mis en œuvre par l’État.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-1 — Peine (al.3)",
     question: "Peine encourue pour 323-1 al.3 :",
     options: ["7 ans + 300 000 €", "5 ans + 150 000 €", "10 ans + 300 000 €"],
@@ -9261,7 +9261,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-1 al.3 = 7 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-1 — Bande organisée (piège)",
     question:
         "Lorsque l’infraction est commise en bande organisée (323-4-1), la peine peut aller jusqu’à :",
@@ -9271,7 +9271,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tableau : 323-4-1 = 10 ans d’emprisonnement + 300 000 € d’amende.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Risque personnes (piège)",
     question: "323-4-2 vise notamment :",
     options: [
@@ -9284,7 +9284,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : risque immédiat + mutilation/infirmité permanente ou obstacle aux secours / sinistre.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4-2 — Peine (max)",
     question: "Peine maximale en cas de 323-4-2 :",
     options: ["10 ans + 300 000 €", "7 ans + 300 000 €", "3 ans + 100 000 €"],
@@ -9297,7 +9297,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-3 — DONNÉES (INTRO/EXTRACTION/DETENTION/REPRO/TRANSMISSION…)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Définition",
     question: "323-3 réprime notamment :",
     options: [
@@ -9311,7 +9311,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : 323-3 vise toutes les actions frauduleuses sur les données du système.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Accès licite (piège)",
     question:
         "Pour 323-3, l’auteur doit-il avoir accédé frauduleusement au système ?",
@@ -9325,7 +9325,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’auteur peut avoir eu un accès licite ou non au système.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Extraction (piège concours)",
     question: "L’extraction réprime notamment :",
     options: [
@@ -9338,7 +9338,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : extraction protège les données même si elles restent chez le propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Détention (piège)",
     question: "La détention de données au sens de 323-3 peut ressembler à :",
     options: [
@@ -9351,7 +9351,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : détention = proche d’un recel de données extraites/reproduites/transmises frauduleusement.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Reproduction",
     question: "La reproduction (323-3) vise :",
     options: [
@@ -9364,7 +9364,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : reproduction = copie, support indifférent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Transmission",
     question: "La transmission (323-3) correspond à :",
     options: [
@@ -9377,7 +9377,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : transmission = diffusion à un tiers, quel qu’en soit moyen ou support.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Suppression",
     question: "Supprimer des données peut notamment consister à :",
     options: [
@@ -9391,7 +9391,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : suppression = atteinte physique (écrasement) ou déplacement hors/zone réservée.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Action hors système (piège)",
     question: "Action sur des données sorties du système (clé USB) :",
     options: [
@@ -9404,7 +9404,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : manipulation de données sur support externe hors champ, sauf si réintroduites.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Élément moral",
     question: "L’élément moral de 323-3 repose sur :",
     options: [
@@ -9418,7 +9418,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’auteur sait que ce n’est pas autorisé et veut cependant le résultat.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3 — Peine (base)",
     question: "Peine de base de 323-3 :",
     options: ["5 ans + 150 000 €", "3 ans + 100 000 €", "7 ans + 300 000 €"],
@@ -9431,7 +9431,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-3-1 — OUTILS / PROGRAMMES (MOYENS ADAPTÉS) — ULTRA PIÈGES
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Définition",
     question: "323-3-1 vise (sans motif légitime) :",
     options: [
@@ -9445,7 +9445,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : incrimine la fourniture/possession d’outils/données adaptés pour commettre les atteintes STAD.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Actes visés (piège)",
     question: "Les actes visés incluent :",
     options: [
@@ -9457,7 +9457,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours liste exactement ces 5 comportements.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Motif légitime (piège)",
     question: "Un motif légitime peut être :",
     options: [
@@ -9470,7 +9470,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : recherche scientifique/technique et sécurisation peuvent constituer un motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Élément moral (piège concours)",
     question: "323-3-1 exige forcément une intention directe de nuire :",
     options: ["Faux", "Vrai", "Seulement si virus"],
@@ -9479,7 +9479,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : la simple détention peut être réprimée même sans intention de diffuser/contaminer.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-3-1 — Tentative (V/F)",
     question:
         "Vrai/Faux : la tentative est punissable pour les atteintes STAD (chapitre).",
@@ -9493,7 +9493,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // 323-4 — ASSOCIATION DE MALFAITEURS EN INFORMATIQUE
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Définition",
     question: "L’association de malfaiteurs en informatique (323-4) vise :",
     options: [
@@ -9507,7 +9507,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : préparation caractérisée par faits matériels d’infractions visées 323-1 à 323-3-1.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Nombre de participants (piège)",
     question: "Le nombre de participants requis pour une « entente » :",
     options: ["Peut être 2", "Minimum 5", "Minimum 3"],
@@ -9515,7 +9515,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours : entente retenue pour deux personnes (exemple).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Faits matériels (piège)",
     question: "Un fait matériel de préparation peut être :",
     options: [
@@ -9528,7 +9528,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : échanges d’infos sur la réalisation (codes, moyen de casser…).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Élément moral",
     question: "L’élément moral suppose :",
     options: [
@@ -9542,7 +9542,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : participation volontaire et connaissance de la préparation d’infractions STAD.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "323-4 — Connaissance (piège concours)",
     question: "Chaque membre doit connaître toutes les activités des autres :",
     options: ["Faux", "Vrai", "Seulement si chef"],
@@ -9555,7 +9555,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // QCM « ULTRA-PIÈGES » — DISTINCTIONS ENTRE 323-1 / 323-3 / 323-3-1 / 323-4
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise spécifiquement la fourniture/détention d’outils conçus pour attaquer un STAD ?",
@@ -9565,7 +9565,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3-1 : moyens adaptés (programme, instrument, donnée) sans motif légitime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise l’action directe sur les données (copie, suppression, modification) ?",
@@ -9575,7 +9575,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3 : actions frauduleuses sur les données contenues dans le système.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise l’accès sans droit, même sans toucher aux données ?",
@@ -9584,7 +9584,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "323-1 : accès/maintien frauduleux, même « promenade ». ",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bonne qualification",
     question:
         "Quel texte vise la participation à une entente préparant des atteintes STAD, matérialisée par des échanges de moyens ?",
@@ -9597,7 +9597,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // MINI CAS — QUALIFICATION + ARTICLE + PEINE (CONCOURS)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "A se connecte sans autorisation à une base. Il ne modifie rien. Qualification + peine ?",
@@ -9610,7 +9610,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Accès frauduleux simple (323-1 al.1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "B accède sans droit et efface des logs, provoquant aussi un dysfonctionnement. Qualification la plus complète côté aggravation ?",
@@ -9625,7 +9625,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Suppression/modification ou altération du fonctionnement → aggravation 323-1 al.2.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "C copie des données (sans les supprimer) puis les transmet à un tiers. Qualification principale + peine base ?",
@@ -9638,7 +9638,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Extraction/reproduction/transmission frauduleuse = 323-3.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "D conserve chez lui un malware conçu pour attaquer des STAD, sans motif légitime établi. Qualification ?",
@@ -9652,7 +9652,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "323-3-1 réprime la détention/offre/cession/mise à disposition de moyens adaptés sans motif légitime.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas concours — Qualification + peine",
     question:
         "E et F échangent codes/techniques pour préparer une intrusion, mais aucun accès n’a encore été réalisé. Qualification ?",
@@ -9670,7 +9670,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =====================================================
   // FLASH V/F — ARTICLES / PEINES / PRINCIPES (MODE RÉVISIONS RAPIDES)
   // =====================================================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-1",
     question:
         "Vrai/Faux : l’accès peut être frauduleux même si le système n’a aucun mot de passe.",
@@ -9680,7 +9680,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas nécessaire d’un dispositif de protection ; volonté du maître suffit.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3",
     question:
         "Vrai/Faux : modifier des données enregistrées définitivement dans un système peut relever de 323-3.",
@@ -9690,7 +9690,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite la modification de données comptables enregistrées définitivement.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-3-1",
     question:
         "Vrai/Faux : l’absence de liste précise des « motifs légitimes » laisse l’appréciation aux magistrats.",
@@ -9700,7 +9700,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : notion imprécise → appréciation par les magistrats.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Définition",
     question: "La demande de fonds sous contrainte consiste à :",
     options: [
@@ -9714,7 +9714,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 CP : comportement de mendicité agressive en réunion ou sous menace d’un animal dangereux.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Distinction",
     question:
         "La demande de fonds sous contrainte se distingue de l’extorsion par :",
@@ -9728,7 +9728,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Elle ne repose pas sur violences ou menaces de violences caractérisant l’extorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Élément matériel",
     question: "La remise effective des fonds est-elle nécessaire ?",
     options: ["Oui", "Non", "Seulement si la somme est élevée"],
@@ -9737,7 +9737,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit est constitué par la seule sollicitation sur la voie publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Peines",
     question: "Peines prévues par l’article 312-12-1 CP :",
     options: [
@@ -9750,7 +9750,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Délit simple, sans circonstance aggravante prévue par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Tentative / Complicité",
     question: "Concernant 312-12-1 CP :",
     options: [
@@ -9764,7 +9764,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Définition",
     question: "L’abus de confiance est :",
     options: [
@@ -9777,7 +9777,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "314-1 CP : remise préalable acceptée à charge de restitution, représentation ou usage déterminé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Remise préalable",
     question: "La remise préalable peut résulter :",
     options: [
@@ -9790,7 +9790,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La jurisprudence admet des cadres très larges de remise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement (piège)",
     question:
         "Le simple retard de restitution constitue toujours un abus de confiance.",
@@ -9799,7 +9799,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le retard n’est délictueux que s’il devient frauduleux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Élément moral",
     question: "L’élément moral de l’abus de confiance repose sur :",
     options: [
@@ -9812,7 +9812,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Infraction intentionnelle nécessitant la mauvaise foi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Peines",
     question: "Peines de l’abus de confiance simple (314-1 CP) :",
     options: [
@@ -9825,7 +9825,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Définition",
     question: "Le chantage consiste à :",
     options: [
@@ -9839,7 +9839,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 CP : menace de révélation ou d’imputation de faits portant atteinte à l’honneur ou à la considération.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Fait vrai ou faux (piège)",
     question:
         "Le fait menacé doit être nécessairement faux pour caractériser le chantage.",
@@ -9848,7 +9848,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Peu importe que le fait soit vrai ou faux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Tentative",
     question: "La tentative de chantage est :",
     options: ["Punissable", "Non punissable", "Punissable seulement si écrite"],
@@ -9857,7 +9857,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Définition",
     question: "La filouterie consiste à :",
     options: [
@@ -9870,7 +9870,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-5 CP : protection de certains professionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Cas visés",
     question: "L’article 313-5 CP vise notamment :",
     options: [
@@ -9882,7 +9882,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Liste limitative prévue par le texte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Tentative",
     question: "La tentative de filouterie est :",
     options: ["Punissable", "Non punissable", "Punissable en récidive"],
@@ -9891,7 +9891,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Définition",
     question: "L’escroquerie suppose notamment :",
     options: [
@@ -9904,7 +9904,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Usage de faux nom, fausse qualité, abus de qualité vraie ou manœuvres frauduleuses.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Mensonge simple (piège)",
     question:
         "Un simple mensonge non appuyé par un acte suffit à caractériser l’escroquerie.",
@@ -9913,7 +9913,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Les simples mensonges ne suffisent pas sans manœuvres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Peines simples",
     question: "Peines de l’escroquerie simple (313-1 CP) :",
     options: [
@@ -9926,7 +9926,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Définition",
     question: "L’extorsion est :",
     options: [
@@ -9939,7 +9939,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : remise forcée mais consciente de la victime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative",
     question: "La tentative d’extorsion est :",
     options: ["Punissable", "Non punissable", "Punissable seulement en bande"],
@@ -9947,7 +9947,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Article 312-9 CP : tentative expressément prévue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Qualification",
     question:
         "L’extorsion avec violences ayant entraîné plus de 8 jours d’ITT est :",
@@ -9960,7 +9960,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // DEMANDE DE FONDS SOUS CONTRAINTE — 312-12-1
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Conditions",
     question:
         "Pour caractériser la demande de fonds sous contrainte « en réunion », il faut :",
@@ -9974,7 +9974,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise un comportement commis par deux auteurs au moins se livrant à une mendicité agressive.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Lieu",
     question: "La sollicitation doit être effectuée :",
     options: [
@@ -9986,7 +9986,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-12-1 CP : sollicitation sur la voie publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Objet",
     question: "La sollicitation peut porter sur :",
     options: [
@@ -9999,7 +9999,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise fonds/valeurs/bien (objet/denrée à valeur marchande).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Animal dangereux",
     question: "L’expression « animal dangereux » renvoie :",
     options: [
@@ -10013,7 +10013,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le critère est la dangerosité apparente/supposée et la contrainte exercée via l’animal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Intention",
     question: "L’élément moral suppose :",
     options: [
@@ -10026,7 +10026,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Intention : savoir que la remise ne résulterait pas d’un accord librement consenti.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Qualification (piège)",
     question:
@@ -10045,7 +10045,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ABUS DE CONFIANCE — 314-1 et suivants
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Choses visées",
     question: "Quelles catégories sont visées par 314-1 CP ?",
     options: [
@@ -10058,7 +10058,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise fonds/valeurs/bien quelconque remis à charge de restituer/représenter/usage déterminé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Remise libre",
     question: "Dans l’abus de confiance, la remise initiale est :",
     options: [
@@ -10071,7 +10071,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La remise est préalable et acceptée à titre précaire ; le détournement survient ensuite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Titre précaire",
     question: "La remise « à titre précaire » signifie :",
     options: [
@@ -10084,7 +10084,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il doit rendre/représenter/faire un usage déterminé : prérogatives limitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Preuve de la remise (piège)",
     question:
         "En cas de simple situation de fait (relation amicale), la remise se prouve :",
@@ -10099,7 +10099,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise : preuve libre mais ne saurait reposer sur de simples présomptions ou témoignages.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement",
     question: "Le détournement peut notamment consister en :",
     options: [
@@ -10113,7 +10113,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le détournement recouvre plusieurs formes : usage contraire, refus, disparition, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Mise en demeure (piège)",
     question:
         "Une mise en demeure de restituer est toujours nécessaire pour caractériser l’abus de confiance.",
@@ -10123,7 +10123,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence retient que le délit peut être caractérisé par le seul détournement sans mise en demeure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Préjudice",
     question: "Le préjudice exigé :",
     options: [
@@ -10136,7 +10136,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il suffit que l’acte soit susceptible de priver la victime de ses droits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation",
     question: "Une circonstance aggravante spécifique est :",
     options: [
@@ -10148,7 +10148,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "314-1-1 CP : abus de confiance commis en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Tentative",
     question: "La tentative d’abus de confiance :",
     options: [
@@ -10161,7 +10161,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La tentative est expressément prévue (cours : tentative toujours punissable).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Immunité familiale",
     question:
         "L’immunité familiale est-elle applicable à l’abus de confiance ?",
@@ -10175,7 +10175,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // CHANTAGE — 312-10 à 312-12
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Nature de la menace",
     question: "La menace constitutive du chantage est :",
     options: [
@@ -10188,7 +10188,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le chantage se distingue de l’extorsion par la nature diffamatoire de la menace.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Forme",
     question: "La menace dans le chantage peut être :",
     options: [
@@ -10200,7 +10200,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le texte ne distingue pas : menace verbale ou écrite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Menaces implicites",
     question:
         "La menace doit-elle forcément énoncer clairement le fait diffamatoire ?",
@@ -10214,7 +10214,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence admet les menaces voilées/sous-entendues si la pression est claire pour la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Objet recherché",
     question: "Le chantage peut viser notamment :",
     options: [
@@ -10228,7 +10228,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 CP liste plusieurs objets possibles, comme l’extorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Mise à exécution",
     question: "Quand la menace est mise à exécution, on applique :",
     options: ["312-11 CP", "312-2 CP", "313-2 CP"],
@@ -10237,7 +10237,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-11 CP : aggravation lorsque l’auteur a mis la menace à exécution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Peines simples",
     question: "Peines du chantage simple (312-10) :",
     options: [
@@ -10249,7 +10249,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-10 CP : 5 ans et 75 000 € (cours).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Aggravation en ligne",
     question: "Le chantage est aggravé notamment lorsqu’il est exercé :",
     options: [
@@ -10263,7 +10263,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 al.3 CP : aggravation liée au mode de diffusion en ligne et contenus sexuels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Immunité familiale",
     question: "L’immunité familiale s’applique au chantage ?",
     options: ["Oui", "Non", "Uniquement si la victime est un ascendant"],
@@ -10275,7 +10275,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // FILOUTERIE — 313-5
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Spécificité",
     question: "La filouterie se distingue du vol car :",
     options: [
@@ -10288,7 +10288,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le professionnel fournit volontairement selon ses usages ; pas de soustraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Spécificité vs escroquerie",
     question: "La filouterie se distingue de l’escroquerie car :",
     options: [
@@ -10301,7 +10301,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Pas de tromperie déterminante : la remise résulte des usages professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Condition d’impécuniosité",
     question: "L’« impossibilité absolue de payer » signifie :",
     options: [
@@ -10315,7 +10315,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Condition très exigeante (absolue) + connaissance par l’auteur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Restaurant",
     question: "Pour le 1° (boissons/aliments), il faut notamment :",
     options: [
@@ -10328,7 +10328,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "« Se faire servir » : initiative de commande, consommation non nécessaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Hôtel (10 jours)",
     question: "Pour la filouterie d’hôtel, l’occupation :",
     options: [
@@ -10341,7 +10341,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : condition spécifique au 2° (chambres) : occupation ≤ 10 jours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Station-service (piège)",
     question:
         "Prendre du carburant en station libre-service et partir sans payer caractérise :",
@@ -10355,7 +10355,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La filouterie suppose « se faire servir » par un professionnel ; en libre-service, la qualification peut être le vol.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Taxi",
     question: "La filouterie « taxi » vise :",
     options: [
@@ -10368,7 +10368,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : 4° taxi/voiture de place (pas les transports en commun).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Peines",
     question: "Peines de la filouterie (313-5 CP) :",
     options: [
@@ -10384,7 +10384,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ESCROQUERIE — 313-1 et suivants
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Moyens",
     question: "Quels moyens sont visés par 313-1 CP ?",
     options: [
@@ -10397,7 +10397,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Les 4 formes de tromperie prévues par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Caractère déterminant",
     question: "Le moyen frauduleux doit être :",
     options: [
@@ -10410,7 +10410,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le procédé doit provoquer la remise et être antérieur/déterminant.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Fausse qualité",
     question: "La « qualité » peut notamment être :",
     options: [
@@ -10424,7 +10424,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Notion large : attribut juridique ou particularité donnant crédit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Abus de qualité vraie",
     question: "L’abus de qualité vraie correspond à :",
     options: [
@@ -10437,7 +10437,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Qualité réellement détenue, détournée pour tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Manœuvres frauduleuses (composition)",
     question: "Les manœuvres frauduleuses peuvent notamment être :",
     options: [
@@ -10449,7 +10449,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Triade classique retenue par la jurisprudence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Remise",
     question: "La remise en escroquerie peut consister en :",
     options: [
@@ -10462,7 +10462,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-1 CP : 3 types de remise/acte visés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Préjudice",
     question: "Le préjudice est :",
     options: [
@@ -10474,7 +10474,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Sans préjudice, un élément manque (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Tentative",
     question: "La tentative d’escroquerie est :",
     options: [
@@ -10486,7 +10486,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-3 CP : tentative expressément prévue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Immunité familiale",
     question: "L’immunité familiale s’applique à l’escroquerie ?",
     options: ["Oui", "Non", "Seulement si la victime est un conjoint"],
@@ -10498,7 +10498,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // EXTORSION — 312-1 à 312-9
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Moyens",
     question: "L’extorsion suppose :",
     options: [
@@ -10510,7 +10510,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : moyens coercitifs (physiques ou moraux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Menace",
     question: "Pour l’extorsion, les menaces :",
     options: [
@@ -10523,7 +10523,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La remise obtenue par menace suffit, même sans passage à l’acte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Contrainte morale",
     question: "La contrainte morale s’apprécie notamment selon :",
     options: [
@@ -10537,7 +10537,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Appréciation souveraine : âge, santé, vulnérabilité, crainte inspirée, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Rôle de la victime",
     question: "Dans l’extorsion, la remise est :",
     options: [
@@ -10550,7 +10550,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La victime remet l’objet, mais sa volonté est viciée par la violence/menace/contrainte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Objet (piège)",
     question: "L’extorsion peut porter sur :",
     options: [
@@ -10563,7 +10563,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP liste plusieurs objets, comme le chantage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Peines simples",
     question: "Peines de l’extorsion simple (312-1) :",
     options: [
@@ -10575,7 +10575,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : 7 ans + 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Aggravation (ITT ≤ 8 jours)",
     question: "Extorsion avec violences ayant entraîné une ITT ≤ 8 jours :",
     options: ["Délit aggravé (312-2)", "Crime (312-3)", "Contravention"],
@@ -10584,7 +10584,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-2 CP : circonstances aggravantes délictuel (ITT ≤ 8 jours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Aggravation (arme)",
     question: "Extorsion commise avec usage ou menace d’une arme :",
     options: ["Crime (312-5)", "Délit simple (312-1)", "Filouterie (313-5)"],
@@ -10593,7 +10593,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-5 CP : extorsion criminelle si arme (usage/menace) ou port d’arme prohibé/à autorisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Bande organisée",
     question: "L’extorsion commise en bande organisée est :",
     options: ["Un crime (312-6)", "Un délit simple", "Une contravention"],
@@ -10601,7 +10601,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-6 CP : extorsion en bande organisée (réclusion).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative",
     question: "La tentative d’extorsion :",
     options: [
@@ -10613,7 +10613,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-9 CP : tentative expressément prévue et réprimée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Immunité familiale (conditions)",
     question: "L’immunité familiale en extorsion :",
     options: [
@@ -10626,7 +10626,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-9 CP : renvoi à 311-12 avec exceptions (moyens de paiement/documents essentiels, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Exemption / réduction de peine (bande organisée)",
     question:
         "En cas d’extorsion en bande organisée, l’auteur peut bénéficier :",
@@ -10641,7 +10641,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-6-1 CP : exemption si avertit et évite la réalisation ; réduction si permet de faire cesser/éviter mort/IPP ou identifier les autres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Extorsion vs Chantage",
     question:
         "La différence principale entre extorsion et chantage porte sur :",
@@ -10656,7 +10656,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Extorsion : violence/menace de violences/contrainte ; chantage : menace diffamatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Escroquerie vs Filouterie",
     question: "Escroquerie vs filouterie :",
     options: [
@@ -10670,7 +10670,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Différence clé : existence de manœuvres/tromperie déterminante en escroquerie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Vol vs Abus de confiance",
     question: "Le critère distinctif majeur :",
     options: [
@@ -10684,7 +10684,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Abus de confiance : détournement après remise ; vol : soustraction frauduleuse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Demande de fonds sous contrainte vs Extorsion",
     question: "La demande de fonds sous contrainte vise prioritairement :",
     options: [
@@ -10698,7 +10698,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 CP : mendicité agressive en réunion ou via animal dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Chantage vs Menace simple",
     question: "Le chantage exige :",
     options: [
@@ -10716,7 +10716,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // DEMANDE DE FONDS SOUS CONTRAINTE — 312-12-1 (SUITE)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Distinction",
     question:
         "La demande de fonds sous contrainte se distingue de l’extorsion principalement par :",
@@ -10731,7 +10731,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 vise la mendicité agressive (en réunion) ou sous menace d’un animal dangereux, sur la voie publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Sollicitation",
     question:
         "Pour que l’infraction soit constituée, la remise des fonds doit être effective :",
@@ -10741,7 +10741,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit repose sur la sollicitation : pas besoin que la remise soit effectivement réalisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Réunion + agressivité",
     question:
@@ -10752,7 +10752,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise « en réunion et de manière agressive » : les deux éléments doivent ressortir des faits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Animal",
     question: "La menace d’un animal dangereux suppose :",
     options: [
@@ -10765,7 +10765,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "L’important est l’usage de l’animal comme moyen de contrainte et sa dangerosité apparente/supposée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Exemple jurisprudentiel (idée)",
     question:
@@ -10776,7 +10776,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Exemple du cours : comportement agressif en réunion visant à contraindre à s’arrêter/remettre de l’argent.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Tentative",
     question: "La tentative de demande de fonds sous contrainte est :",
     options: [
@@ -10789,7 +10789,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit est constitué dès la sollicitation : la tentative n’a pas de place.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Peines",
     question: "Peines encourues (312-12-1) :",
     options: [
@@ -10801,7 +10801,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Cours : 312-12-1 CP = 6 mois + 3 750 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Complicité",
     question: "La complicité est possible pour 312-12-1 :",
     options: ["Oui", "Non", "Uniquement si la remise a eu lieu"],
@@ -10814,7 +10814,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ABUS DE CONFIANCE — 314-1 (SUITE / PIÈGES / CAS)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Finalité de la remise",
     question: "La remise doit être faite à charge de :",
     options: [
@@ -10827,7 +10827,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "C’est le cœur de la détention précaire : finalité convenue limitant la libre disposition.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement (refus)",
     question:
         "Le refus de restituer caractérise en principe le détournement frauduleux, sauf :",
@@ -10841,7 +10841,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le refus peut être légitimé par rétention/compensation ; sinon il révèle la volonté de se comporter en propriétaire.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Retard de restitution",
     question: "Un simple retard de restitution est :",
     options: [
@@ -10854,7 +10854,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le retard devient pénal si les circonstances révèlent une intention frauduleuse (ex : non-restitution malgré démarches).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Bien immatériel",
     question:
         "Un bien « quelconque » peut-il être immatériel exploitable (ex : fichier clientèle) ?",
@@ -10864,7 +10864,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours vise des éléments exploitables matériellement, même non corporels (ex : fichier clientèle, connexion…).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Origine du bien",
     question: "L’origine illicite du bien remis empêche l’abus de confiance :",
     options: ["Vrai", "Faux", "Seulement si le bien est volé"],
@@ -10873,7 +10873,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que l’origine illicite des choses confiées n’exclut pas l’infraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Préjudice (piège)",
     question:
         "Il faut prouver que l’auteur a tiré un profit pour que l’abus de confiance soit constitué :",
@@ -10883,7 +10883,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le préjudice suffit : pas besoin d’un profit ni d’une entrée du bien dans le patrimoine de l’auteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Victime (autrui)",
     question: "La victime (« autrui ») peut être :",
     options: [
@@ -10896,7 +10896,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise toute personne lésée dès lors que la propriété ne revenait pas à l’auteur.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Élément moral",
     question: "L’intention frauduleuse suppose :",
     options: [
@@ -10910,7 +10910,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le caractère frauduleux découle de la connaissance des obligations liées à la détention précaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation (314-2)",
     question: "Peut être aggravé l’abus de confiance commis :",
     options: [
@@ -10924,7 +10924,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "314-2 CP (selon cours) prévoit plusieurs aggravations, dont la vulnérabilité de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation (314-3)",
     question: "Une aggravation spécifique vise notamment :",
     options: [
@@ -10937,7 +10937,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "314-3 CP : aggravation liée à certaines qualités/fonctions.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Peines simples",
     question: "Peines de l’abus de confiance simple (314-1) :",
     options: [
@@ -10953,7 +10953,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // CHANTAGE — 312-10 (SUITE)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Fait vrai ou faux",
     question: "Pour le chantage, le fait objet de la menace doit être vrai :",
     options: ["Oui", "Non", "Uniquement si c’est écrit"],
@@ -10962,7 +10962,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le chantage peut viser l’imputation de faits imaginaires ou la révélation de faits vrais.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Personne visée",
     question: "La menace diffamatoire peut viser :",
     options: [
@@ -10975,7 +10975,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours rappelle que l’honneur/la considération peuvent concerner aussi une société (personne morale).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Victime indirecte (piège)",
     question:
         "Le chantage peut exister si la menace vise un tiers, mais contraint une autre personne à remettre :",
@@ -10985,7 +10985,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit existe dès la menace de révélation d’un fait portant atteinte à l’honneur d’un tiers si elle détermine la remise.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Acte exigé",
     question: "Il peut y avoir chantage si l’auteur menace mais n’exige rien :",
     options: ["Vrai", "Faux", "Seulement si la menace est publique"],
@@ -10994,7 +10994,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il faut un objet recherché (signature, engagement, secret, remise…). Sinon l’élément matériel n’est pas caractérisé.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Tentative",
     question: "La tentative de chantage est :",
     options: [
@@ -11007,7 +11007,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12 CP : la tentative est réprimée comme le délit lui-même (commencement d’exécution + échec indépendant).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Aggravation (mise à exécution)",
     question:
         "Quand l’auteur exécute sa menace (révèle/impute effectivement), la qualification aggravée est :",
@@ -11021,7 +11021,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // FILOUTERIE — 313-5 (SUITE / PIÈGES)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Nombre de cas",
     question: "L’article 313-5 vise :",
     options: ["4 cas précis", "6 cas", "Un nombre illimité de situations"],
@@ -11030,7 +11030,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Boissons/aliments ; chambres (≤10 jours) ; carburant servi ; taxi/voiture de place.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Établissement",
     question: "La filouterie « boissons/aliments » suppose :",
     options: [
@@ -11043,7 +11043,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Restaurants, cafés, brasseries… Pas chez un particulier.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Prestations annexes (hôtel)",
     question:
         "Dans la filouterie d’hôtel (313-5, 2°), les prestations annexes (ex : consommations) sont :",
@@ -11057,7 +11057,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise que seules les chambres (occupation) sont visées ; les annexes ne sont pas visées par ce cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Carburant (réservoir)",
     question: "Pour le carburant, il faut que le produit soit versé :",
     options: [
@@ -11070,7 +11070,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours exclut les récipients (jerrycans) : c’est le réservoir du véhicule.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Impécuniosité vs oubli",
     question:
         "Oublier son portefeuille et s’en apercevoir au moment de payer, de bonne foi :",
@@ -11084,7 +11084,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La filouterie requiert impécuniosité absolue connue OU détermination à ne pas payer, pas une simple négligence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Détermination à ne pas payer",
     question:
         "La « détermination à ne pas payer » est plus facile à établir lorsque :",
@@ -11098,7 +11098,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le comportement de fuite est un indice fort de volonté de ne pas payer.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Tentative",
     question: "La tentative de filouterie (313-5) est :",
     options: [
@@ -11111,7 +11111,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que la tentative n’est pas prévue pour 313-5.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Personnes morales",
     question: "Une personne morale peut être responsable de filouterie :",
     options: ["Oui", "Non", "Seulement pour le taxi"],
@@ -11124,7 +11124,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ESCROQUERIE — 313-1 (SUITE / PIÈGES / CAS)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Mensonge simple",
     question:
         "Un simple mensonge non corroboré (sans fait extérieur) suffit à constituer l’escroquerie :",
@@ -11134,7 +11134,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours rappelle que les simples mensonges sont insuffisants s’ils ne sont accompagnés d’aucun acte extérieur (manœuvres).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Antériorité",
     question: "Les manœuvres frauduleuses doivent être :",
     options: [
@@ -11147,7 +11147,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence exige qu’elles déterminent la remise et soient antérieures.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Faux nom",
     question: "L’usage d’un faux nom peut viser :",
     options: [
@@ -11160,7 +11160,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le faux nom = patronyme qui n’est pas le sien, qu’il existe ou non.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Fausse qualité (exemple)",
     question:
         "Se présenter faussement comme policier pour obtenir une remise de fonds illustre :",
@@ -11174,7 +11174,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite l’exemple de la fausse qualité de policier comme moyen de tromperie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Abus de qualité vraie",
     question: "L’abus de qualité vraie suppose :",
     options: [
@@ -11187,7 +11187,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "L’agent détourne la confiance attachée à sa vraie qualité.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Remise de service",
     question: "La « fourniture d’un service » (313-1) peut viser :",
     options: [
@@ -11200,7 +11200,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le cours illustre la notion de service de manière large.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Acte opérant obligation/décharge",
     question: "Un « acte opérant obligation ou décharge » peut être :",
     options: [
@@ -11213,7 +11213,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Tout acte créant/constatant/éteignant un droit au détriment de la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Préjudice moral (piège)",
     question:
         "Le préjudice moral en escroquerie est toujours retenu automatiquement :",
@@ -11227,7 +11227,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique que le préjudice moral est souvent admis (consentement vicié) mais pas systématiquement selon cas.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Aggravation (313-2)",
     question: "Une circonstance aggravante (313-2) peut être :",
     options: [
@@ -11240,7 +11240,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours liste la bande organisée parmi les circonstances aggravantes de l’escroquerie.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Peines simples",
     question: "Peines de l’escroquerie simple (313-1) :",
     options: [
@@ -11256,7 +11256,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // EXTORSION — 312-1 (SUITE / PIÈGES / AGGRAVATIONS)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Promesses fallacieuses (piège)",
     question:
         "Si la victime remet un bien uniquement à cause de promesses mensongères (sans violence/contrainte), on retient :",
@@ -11270,7 +11270,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : pas d’extorsion si remise obtenue seulement par promesses fallacieuses (sans moyens coercitifs).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Contrainte sur les proches",
     question: "La contrainte morale peut viser :",
     options: [
@@ -11282,7 +11282,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La crainte peut affecter la victime ou ses proches (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Objet déterminé (piège)",
     question:
         "Exiger un « dédommagement » sans précision sur montant/nature suffit à caractériser l’objet :",
@@ -11292,7 +11292,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : l’objet doit être suffisamment déterminé ; une demande trop imprécise peut être insuffisante.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — ITT > 8 jours",
     question:
         "Extorsion avec violences ayant entraîné une ITT > 8 jours relève :",
@@ -11306,7 +11306,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours place l’ITT > 8 jours dans l’extorsion aggravée criminelle.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Mutilation/infirmité permanente",
     question: "Extorsion avec mutilation ou infirmité permanente :",
     options: ["312-4", "312-2", "313-2"],
@@ -11315,7 +11315,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-4 CP : aggravation criminelle si mutilation/infirmité permanente.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Mort / barbarie",
     question:
         "Extorsion précédée/accompagnée/suivie de violences ayant entraîné la mort ou tortures/barbarie :",
@@ -11325,7 +11325,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours indique l’aggravation maximale (312-7) en cas de mort ou tortures/barbarie.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Délit vs crime (repère)",
     question: "L’extorsion simple est :",
     options: ["Un délit", "Un crime", "Une contravention"],
@@ -11333,7 +11333,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : extorsion simple = délit (7 ans).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative (commencement)",
     question:
         "En extorsion, un rendez-vous fixé pour recevoir la remise peut constituer :",
@@ -11347,7 +11347,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours cite qu’un rendez-vous peut suffire comme début d’exécution si l’infraction échoue indépendamment.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Immunité familiale (exceptions)",
     question:
         "Même si l’immunité familiale pourrait s’appliquer, elle est écartée notamment si l’extorsion porte sur :",
@@ -11366,7 +11366,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // QCM MÉLANGÉS (RÉVISION RAPIDE)
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Menacer de publier des rumeurs humiliantes si la victime ne signe pas une renonciation :",
@@ -11376,7 +11376,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Menace diffamatoire + exigence d’un acte (renonciation) = chantage.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Obtenir une remise de fonds en se faisant passer pour un notaire et en montrant un faux document :",
@@ -11386,7 +11386,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Fausse qualité + production de document/mise en scène = moyens de tromperie (313-1).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Recevoir une voiture en dépôt pour la restituer, puis la vendre :",
@@ -11396,7 +11396,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Remise à titre précaire + détournement par aliénation = 314-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question:
         "Se faire servir un plein par un pompiste en sachant être absolument incapable de payer :",
@@ -11406,7 +11406,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : se faire servir des carburants par un professionnel avec impécuniosité absolue ou volonté de ne pas payer.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Identifier l’infraction",
     question: "Obtenir de l’argent par coups et menaces physiques :",
     options: ["Extorsion", "Chantage", "Abus de confiance"],
@@ -11414,7 +11414,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Violence/menace de violences/contrainte = 312-1.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mix — Piège (remise non effective)",
     question: "Dans 312-12-1, l’infraction est consommée :",
     options: [
@@ -11428,7 +11428,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte incrimine la sollicitation ; la remise n’est pas nécessaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flash V/F — 323-4",
     question:
         "Vrai/Faux : un groupement initialement légal peut tomber sous 323-4 s’il dérive vers la délinquance informatique.",
@@ -11438,7 +11438,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours : association déclarée qui dérive → seuls ceux qui continuent à participer sont visés.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Vrai / Faux — Non-justification",
     question:
         "Vrai/Faux : 321-6 peut viser des relations habituelles avec des victimes d’infractions ≥ 5 ans.",
@@ -11448,7 +11448,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise aussi les relations habituelles avec des victimes d’une des infractions concernées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Distinction",
     question:
         "La demande de fonds sous contrainte se distingue de l’extorsion par :",
@@ -11462,7 +11462,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Elle ne repose pas sur violences ou menaces de violences caractérisant l’extorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Élément matériel",
     question: "La remise effective des fonds est-elle nécessaire ?",
     options: ["Oui", "Non", "Seulement si la somme est élevée"],
@@ -11471,7 +11471,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le délit est constitué par la seule sollicitation sur la voie publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Peines",
     question: "Peines prévues par l’article 312-12-1 CP :",
     options: [
@@ -11484,7 +11484,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Délit simple, sans circonstance aggravante prévue par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte — Tentative / Complicité",
     question: "Concernant 312-12-1 CP :",
     options: [
@@ -11498,7 +11498,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Définition",
     question: "L’abus de confiance est :",
     options: [
@@ -11511,7 +11511,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "314-1 CP : remise préalable acceptée à charge de restitution, représentation ou usage déterminé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Remise préalable",
     question: "La remise préalable peut résulter :",
     options: [
@@ -11524,7 +11524,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "La jurisprudence admet des cadres très larges de remise.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement (piège)",
     question:
         "Le simple retard de restitution constitue toujours un abus de confiance.",
@@ -11533,7 +11533,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le retard n’est délictueux que s’il devient frauduleux.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Élément moral",
     question: "L’élément moral de l’abus de confiance repose sur :",
     options: [
@@ -11546,7 +11546,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Infraction intentionnelle nécessitant la mauvaise foi.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Peines",
     question: "Peines de l’abus de confiance simple (314-1 CP) :",
     options: [
@@ -11559,7 +11559,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Définition",
     question: "Le chantage consiste à :",
     options: [
@@ -11573,7 +11573,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 CP : menace de révélation ou d’imputation de faits portant atteinte à l’honneur ou à la considération.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Fait vrai ou faux (piège)",
     question:
         "Le fait menacé doit être nécessairement faux pour caractériser le chantage.",
@@ -11582,7 +11582,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Peu importe que le fait soit vrai ou faux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Tentative",
     question: "La tentative de chantage est :",
     options: ["Punissable", "Non punissable", "Punissable seulement si écrite"],
@@ -11591,7 +11591,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Définition",
     question: "La filouterie consiste à :",
     options: [
@@ -11604,7 +11604,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-5 CP : protection de certains professionnels.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Cas visés",
     question: "L’article 313-5 CP vise notamment :",
     options: [
@@ -11616,7 +11616,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Liste limitative prévue par le texte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Tentative",
     question: "La tentative de filouterie est :",
     options: ["Punissable", "Non punissable", "Punissable en récidive"],
@@ -11625,7 +11625,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Définition",
     question: "L’escroquerie suppose notamment :",
     options: [
@@ -11638,7 +11638,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Usage de faux nom, fausse qualité, abus de qualité vraie ou manœuvres frauduleuses.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Mensonge simple (piège)",
     question:
         "Un simple mensonge non appuyé par un acte suffit à caractériser l’escroquerie.",
@@ -11647,7 +11647,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Les simples mensonges ne suffisent pas sans manœuvres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Peines simples",
     question: "Peines de l’escroquerie simple (313-1 CP) :",
     options: [
@@ -11660,7 +11660,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Définition",
     question: "L’extorsion est :",
     options: [
@@ -11673,7 +11673,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : remise forcée mais consciente de la victime.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative",
     question: "La tentative d’extorsion est :",
     options: ["Punissable", "Non punissable", "Punissable seulement en bande"],
@@ -11681,7 +11681,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Article 312-9 CP : tentative expressément prévue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Qualification",
     question:
         "L’extorsion avec violences ayant entraîné plus de 8 jours d’ITT est :",
@@ -11694,7 +11694,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // DEMANDE DE FONDS SOUS CONTRAINTE — 312-12-1
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Conditions",
     question:
         "Pour caractériser la demande de fonds sous contrainte « en réunion », il faut :",
@@ -11708,7 +11708,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise un comportement commis par deux auteurs au moins se livrant à une mendicité agressive.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Lieu",
     question: "La sollicitation doit être effectuée :",
     options: [
@@ -11720,7 +11720,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-12-1 CP : sollicitation sur la voie publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Objet",
     question: "La sollicitation peut porter sur :",
     options: [
@@ -11733,7 +11733,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise fonds/valeurs/bien (objet/denrée à valeur marchande).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Animal dangereux",
     question: "L’expression « animal dangereux » renvoie :",
     options: [
@@ -11747,7 +11747,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le critère est la dangerosité apparente/supposée et la contrainte exercée via l’animal.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Demande de fonds sous contrainte (312-12-1) — Intention",
     question: "L’élément moral suppose :",
     options: [
@@ -11760,7 +11760,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Intention : savoir que la remise ne résulterait pas d’un accord librement consenti.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category:
         "Demande de fonds sous contrainte (312-12-1) — Qualification (piège)",
     question:
@@ -11779,7 +11779,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ABUS DE CONFIANCE — 314-1 et suivants
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Choses visées",
     question: "Quelles catégories sont visées par 314-1 CP ?",
     options: [
@@ -11792,7 +11792,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le texte vise fonds/valeurs/bien quelconque remis à charge de restituer/représenter/usage déterminé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance (314-1) — Remise libre",
     question: "Dans l’abus de confiance, la remise initiale est :",
     options: [
@@ -11805,7 +11805,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La remise est préalable et acceptée à titre précaire ; le détournement survient ensuite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Titre précaire",
     question: "La remise « à titre précaire » signifie :",
     options: [
@@ -11818,7 +11818,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il doit rendre/représenter/faire un usage déterminé : prérogatives limitées.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Preuve de la remise (piège)",
     question:
         "En cas de simple situation de fait (relation amicale), la remise se prouve :",
@@ -11833,7 +11833,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le cours précise : preuve libre mais ne saurait reposer sur de simples présomptions ou témoignages.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Détournement",
     question: "Le détournement peut notamment consister en :",
     options: [
@@ -11847,7 +11847,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le détournement recouvre plusieurs formes : usage contraire, refus, disparition, etc.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Mise en demeure (piège)",
     question:
         "Une mise en demeure de restituer est toujours nécessaire pour caractériser l’abus de confiance.",
@@ -11857,7 +11857,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence retient que le délit peut être caractérisé par le seul détournement sans mise en demeure.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Préjudice",
     question: "Le préjudice exigé :",
     options: [
@@ -11870,7 +11870,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Il suffit que l’acte soit susceptible de priver la victime de ses droits.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Aggravation",
     question: "Une circonstance aggravante spécifique est :",
     options: [
@@ -11882,7 +11882,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "314-1-1 CP : abus de confiance commis en bande organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Tentative",
     question: "La tentative d’abus de confiance :",
     options: [
@@ -11895,7 +11895,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La tentative est expressément prévue (cours : tentative toujours punissable).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Abus de confiance — Immunité familiale",
     question:
         "L’immunité familiale est-elle applicable à l’abus de confiance ?",
@@ -11909,7 +11909,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // CHANTAGE — 312-10 à 312-12
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage (312-10) — Nature de la menace",
     question: "La menace constitutive du chantage est :",
     options: [
@@ -11922,7 +11922,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le chantage se distingue de l’extorsion par la nature diffamatoire de la menace.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Forme",
     question: "La menace dans le chantage peut être :",
     options: [
@@ -11934,7 +11934,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Le texte ne distingue pas : menace verbale ou écrite.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Menaces implicites",
     question:
         "La menace doit-elle forcément énoncer clairement le fait diffamatoire ?",
@@ -11948,7 +11948,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La jurisprudence admet les menaces voilées/sous-entendues si la pression est claire pour la victime.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Objet recherché",
     question: "Le chantage peut viser notamment :",
     options: [
@@ -11962,7 +11962,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 CP liste plusieurs objets possibles, comme l’extorsion.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Mise à exécution",
     question: "Quand la menace est mise à exécution, on applique :",
     options: ["312-11 CP", "312-2 CP", "313-2 CP"],
@@ -11971,7 +11971,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-11 CP : aggravation lorsque l’auteur a mis la menace à exécution.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Peines simples",
     question: "Peines du chantage simple (312-10) :",
     options: [
@@ -11983,7 +11983,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-10 CP : 5 ans et 75 000 € (cours).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Aggravation en ligne",
     question: "Le chantage est aggravé notamment lorsqu’il est exercé :",
     options: [
@@ -11997,7 +11997,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-10 al.3 CP : aggravation liée au mode de diffusion en ligne et contenus sexuels.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Chantage — Immunité familiale",
     question: "L’immunité familiale s’applique au chantage ?",
     options: ["Oui", "Non", "Uniquement si la victime est un ascendant"],
@@ -12009,7 +12009,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // FILOUTERIE — 313-5
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Spécificité",
     question: "La filouterie se distingue du vol car :",
     options: [
@@ -12022,7 +12022,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le professionnel fournit volontairement selon ses usages ; pas de soustraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie (313-5) — Spécificité vs escroquerie",
     question: "La filouterie se distingue de l’escroquerie car :",
     options: [
@@ -12035,7 +12035,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Pas de tromperie déterminante : la remise résulte des usages professionnels.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Condition d’impécuniosité",
     question: "L’« impossibilité absolue de payer » signifie :",
     options: [
@@ -12049,7 +12049,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Condition très exigeante (absolue) + connaissance par l’auteur.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Restaurant",
     question: "Pour le 1° (boissons/aliments), il faut notamment :",
     options: [
@@ -12062,7 +12062,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "« Se faire servir » : initiative de commande, consommation non nécessaire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Hôtel (10 jours)",
     question: "Pour la filouterie d’hôtel, l’occupation :",
     options: [
@@ -12075,7 +12075,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : condition spécifique au 2° (chambres) : occupation ≤ 10 jours.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Station-service (piège)",
     question:
         "Prendre du carburant en station libre-service et partir sans payer caractérise :",
@@ -12089,7 +12089,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La filouterie suppose « se faire servir » par un professionnel ; en libre-service, la qualification peut être le vol.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Taxi",
     question: "La filouterie « taxi » vise :",
     options: [
@@ -12102,7 +12102,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "313-5 : 4° taxi/voiture de place (pas les transports en commun).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Filouterie — Peines",
     question: "Peines de la filouterie (313-5 CP) :",
     options: [
@@ -12118,7 +12118,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // ESCROQUERIE — 313-1 et suivants
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie (313-1) — Moyens",
     question: "Quels moyens sont visés par 313-1 CP ?",
     options: [
@@ -12131,7 +12131,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Les 4 formes de tromperie prévues par le texte.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Caractère déterminant",
     question: "Le moyen frauduleux doit être :",
     options: [
@@ -12144,7 +12144,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Le procédé doit provoquer la remise et être antérieur/déterminant.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Fausse qualité",
     question: "La « qualité » peut notamment être :",
     options: [
@@ -12158,7 +12158,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Notion large : attribut juridique ou particularité donnant crédit.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Abus de qualité vraie",
     question: "L’abus de qualité vraie correspond à :",
     options: [
@@ -12171,7 +12171,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Qualité réellement détenue, détournée pour tromper.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Manœuvres frauduleuses (composition)",
     question: "Les manœuvres frauduleuses peuvent notamment être :",
     options: [
@@ -12183,7 +12183,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Triade classique retenue par la jurisprudence.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Remise",
     question: "La remise en escroquerie peut consister en :",
     options: [
@@ -12196,7 +12196,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-1 CP : 3 types de remise/acte visés.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Préjudice",
     question: "Le préjudice est :",
     options: [
@@ -12208,7 +12208,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "Sans préjudice, un élément manque (cours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Tentative",
     question: "La tentative d’escroquerie est :",
     options: [
@@ -12220,7 +12220,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "313-3 CP : tentative expressément prévue.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Escroquerie — Immunité familiale",
     question: "L’immunité familiale s’applique à l’escroquerie ?",
     options: ["Oui", "Non", "Seulement si la victime est un conjoint"],
@@ -12232,7 +12232,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
   // =========================
   // EXTORSION — 312-1 à 312-9
   // =========================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion (312-1) — Moyens",
     question: "L’extorsion suppose :",
     options: [
@@ -12244,7 +12244,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : moyens coercitifs (physiques ou moraux).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Menace",
     question: "Pour l’extorsion, les menaces :",
     options: [
@@ -12257,7 +12257,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La remise obtenue par menace suffit, même sans passage à l’acte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Contrainte morale",
     question: "La contrainte morale s’apprécie notamment selon :",
     options: [
@@ -12271,7 +12271,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Appréciation souveraine : âge, santé, vulnérabilité, crainte inspirée, etc.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Rôle de la victime",
     question: "Dans l’extorsion, la remise est :",
     options: [
@@ -12284,7 +12284,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "La victime remet l’objet, mais sa volonté est viciée par la violence/menace/contrainte.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Objet (piège)",
     question: "L’extorsion peut porter sur :",
     options: [
@@ -12297,7 +12297,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP liste plusieurs objets, comme le chantage.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Peines simples",
     question: "Peines de l’extorsion simple (312-1) :",
     options: [
@@ -12309,7 +12309,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-1 CP : 7 ans + 100 000 €.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Aggravation (ITT ≤ 8 jours)",
     question: "Extorsion avec violences ayant entraîné une ITT ≤ 8 jours :",
     options: ["Délit aggravé (312-2)", "Crime (312-3)", "Contravention"],
@@ -12318,7 +12318,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-2 CP : circonstances aggravantes délictuel (ITT ≤ 8 jours).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Aggravation (arme)",
     question: "Extorsion commise avec usage ou menace d’une arme :",
     options: ["Crime (312-5)", "Délit simple (312-1)", "Filouterie (313-5)"],
@@ -12327,7 +12327,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-5 CP : extorsion criminelle si arme (usage/menace) ou port d’arme prohibé/à autorisation.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Bande organisée",
     question: "L’extorsion commise en bande organisée est :",
     options: ["Un crime (312-6)", "Un délit simple", "Une contravention"],
@@ -12335,7 +12335,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-6 CP : extorsion en bande organisée (réclusion).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Tentative",
     question: "La tentative d’extorsion :",
     options: [
@@ -12347,7 +12347,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
     explanation: "312-9 CP : tentative expressément prévue et réprimée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Immunité familiale (conditions)",
     question: "L’immunité familiale en extorsion :",
     options: [
@@ -12360,7 +12360,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-9 CP : renvoi à 311-12 avec exceptions (moyens de paiement/documents essentiels, etc.).",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Extorsion — Exemption / réduction de peine (bande organisée)",
     question:
         "En cas d’extorsion en bande organisée, l’auteur peut bénéficier :",
@@ -12375,7 +12375,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-6-1 CP : exemption si avertit et évite la réalisation ; réduction si permet de faire cesser/éviter mort/IPP ou identifier les autres.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Extorsion vs Chantage",
     question:
         "La différence principale entre extorsion et chantage porte sur :",
@@ -12390,7 +12390,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Extorsion : violence/menace de violences/contrainte ; chantage : menace diffamatoire.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Escroquerie vs Filouterie",
     question: "Escroquerie vs filouterie :",
     options: [
@@ -12404,7 +12404,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Différence clé : existence de manœuvres/tromperie déterminante en escroquerie.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Vol vs Abus de confiance",
     question: "Le critère distinctif majeur :",
     options: [
@@ -12418,7 +12418,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "Abus de confiance : détournement après remise ; vol : soustraction frauduleuse.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Demande de fonds sous contrainte vs Extorsion",
     question: "La demande de fonds sous contrainte vise prioritairement :",
     options: [
@@ -12432,7 +12432,7 @@ final List<QuizQuestion> questionInfractionsVoisinesDuVol = [
         "312-12-1 CP : mendicité agressive en réunion ou via animal dangereux.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Comparaison — Chantage vs Menace simple",
     question: "Le chantage exige :",
     options: [
@@ -12802,7 +12802,7 @@ class _QuizCrimesDelitsBiensState extends State<QuizCrimesDelitsBiens>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -13005,7 +13005,7 @@ class _QuizCrimesDelitsBiensState extends State<QuizCrimesDelitsBiens>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -13188,7 +13188,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -13721,10 +13720,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -14095,7 +14095,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -14136,9 +14136,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

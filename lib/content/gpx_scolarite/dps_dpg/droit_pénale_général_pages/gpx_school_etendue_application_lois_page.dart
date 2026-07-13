@@ -15,7 +15,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.72);
+        : const Color(0xFF222222).withValues(alpha: .72);
 
     final Color cardColor = isDark
         ? const Color(0xFF2F2F2F)
@@ -87,7 +87,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Il est nécessaire de savoir à partir de quel moment une loi nouvelle va s’appliquer et sur quel territoire.",
               ),
             ],
@@ -102,7 +102,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             children: [
-              _Paragraph(
+              const _Paragraph(
                 "L’élément légal de l’infraction implique nécessairement qu’une loi pénale nouvelle ne peut s’appliquer à des faits commis avant son entrée en vigueur.",
               ),
               const SizedBox(height: 10),
@@ -115,32 +115,32 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "La règle est donc la non-rétroactivité de la loi pénale nouvelle. "
                 "Mais un problème va se poser pour des actes commis sous l’empire d’une loi déterminée "
                 "et non encore jugés au moment de l’entrée en vigueur d’une loi nouvelle pouvant s’y appliquer.",
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "La solution retenue sera différente selon la nature des lois.",
               ),
 
               const SizedBox(height: 12),
               const _SubTitle("1.1 — LES LOIS PÉNALES DE FOND"),
-              _Paragraph(
+              const _Paragraph(
                 "Elles déterminent les infractions et fixent les conditions dans lesquelles elles peuvent être sanctionnées.",
               ),
 
               const SizedBox(height: 10),
               const _SubTitle("1.1.1 — Principe"),
-              _Paragraph(
+              const _Paragraph(
                 "C’est celui de la non-rétroactivité de la loi pénale nouvelle. "
                 "C’est une garantie de la liberté individuelle en ce sens que « la loi doit avertir avant de frapper ».",
               ),
 
               const SizedBox(height: 10),
               const _SubTitle("1.1.1.1 — Application du principe"),
-              _Paragraph(
+              const _Paragraph(
                 "Les lois nouvelles plus sévères ne rétroagissent pas. Le principe entraîne deux conséquences :",
               ),
               const SizedBox(height: 8),
@@ -153,7 +153,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                     "Ne peuvent être prononcées que les peines prévues par la loi à cette date (exemple : la loi du 26 juillet 1873 ayant créé le délit de filouterie d’aliments ne peut s’appliquer à des faits commis avant son entrée en vigueur).",
               ),
               const SizedBox(height: 8),
-              _Paragraph("Les lois nouvelles plus sévères sont par exemple :"),
+              const _Paragraph("Les lois nouvelles plus sévères sont par exemple :"),
               const SizedBox(height: 8),
               const _BulletPoint(
                 text:
@@ -166,7 +166,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
 
               const SizedBox(height: 12),
               const _SubTitle("1.1.1.2 — Atténuation du principe"),
-              _Paragraph(
+              const _Paragraph(
                 "Une loi nouvelle plus sévère peut s’appliquer à des faits commis avant son entrée en vigueur. "
                 "C’est le cas pour les lois interprétatives qui précisent le sens d’une loi antérieure : "
                 "elles font corps avec la loi interprétée et s’appliquent donc à des faits antérieurs.",
@@ -182,11 +182,11 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Une infraction est réputée jugée définitivement lorsque toutes les voies de recours sont épuisées.",
               ),
               const SizedBox(height: 10),
-              _Paragraph("Les lois nouvelles plus douces sont par exemple :"),
+              const _Paragraph("Les lois nouvelles plus douces sont par exemple :"),
               const SizedBox(height: 8),
               const _BulletPoint(
                 text:
@@ -197,7 +197,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                     "Une loi qui supprime une circonstance aggravante ou qui crée un fait justificatif nouveau.",
               ),
               const SizedBox(height: 8),
-              _Paragraph(
+              const _Paragraph(
                 "La loi nouvelle peut prévoir expressément qu’elle ne rétroagira pas.",
               ),
 
@@ -205,28 +205,28 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
               const _SubTitle(
                 "1.1.3 — Cas particulier : dispositions plus douces et plus sévères",
               ),
-              _Paragraph(
+              const _Paragraph(
                 "Exemple : une loi qui élève le maximum d’une peine et en abaisse le minimum. "
                 "La loi nouvelle est, dans ce cas, plus sévère, car elle expose le délinquant à une peine plus importante que sous le coup de la loi ancienne.",
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Comment déterminer le caractère plus doux ou plus sévère d’une telle loi ?",
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Exemple : la loi Bérenger du 26 mars 1891 instituant le sursis à exécution de certaines peines et créant la petite récidive correctionnelle. "
                 "Elle a été appliquée distributivement : la partie relative au sursis (plus douce) a rétroagi, et la partie concernant la récidive a été appliquée à partir de la promulgation de la loi.",
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Un problème se pose lorsque les dispositions de la loi ne sont pas divisibles. "
                 "La jurisprudence préconise de ne prendre en compte que la disposition principale : si elle est plus douce, la loi rétroagira.",
               ),
 
               const SizedBox(height: 14),
               const _SubTitle("1.2 — LES LOIS PÉNALES DE FORME"),
-              _Paragraph(
+              const _Paragraph(
                 "Ce sont les lois relatives à la constatation et à la poursuite des infractions, à la compétence et à la procédure.",
               ),
 
@@ -242,7 +242,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
 
               const SizedBox(height: 10),
               const _SubTitle("1.2.2 — Exceptions"),
-              _Paragraph(
+              const _Paragraph(
                 "La loi nouvelle de forme ne s’appliquera pas immédiatement s’il existe, au profit du délinquant, un droit acquis.",
               ),
               const SizedBox(height: 10),
@@ -263,7 +263,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Les lois qui modifient le régime d’exécution des peines et créent des mesures de sûreté s’appliquent immédiatement, sauf si la loi est plus sévère.",
               ),
 
@@ -297,7 +297,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
             titleColor: titleColor,
             children: [
               const _SubTitle("Principe de territorialité de la loi française"),
-              _Paragraph(
+              const _Paragraph(
                 "Lorsqu’un crime est commis en France par un Français et que la victime est elle-même française, le droit français peut seul s’appliquer.",
               ),
               const SizedBox(height: 10),
@@ -336,13 +336,13 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
 
               const SizedBox(height: 12),
               const _SubTitle("2.2 — Cas des infractions commises en France"),
-              _Paragraph(
+              const _Paragraph(
                 "La loi française s’applique dès lors qu’un des faits constitutifs de l’infraction a été commis en France.",
               ),
               const SizedBox(height: 8),
-              _NotaBox(
+              const _NotaBox(
                 title: "EXEMPLE",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Pour l’abus de confiance lorsque la chose est remise en France, et que le détournement a lieu à l’étranger.",
@@ -363,7 +363,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 8),
-              _Paragraph("Pour que le complice soit punissable, il faut :"),
+              const _Paragraph("Pour que le complice soit punissable, il faut :"),
               const SizedBox(height: 8),
               const _BulletPoint(
                 text:
@@ -386,22 +386,22 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                 ),
               ]),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "La provocation doit être accompagnée de don, promesse, menace, ordre, abus d’autorité ou de pouvoir, et suivie d’effets.",
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Il n’est pas nécessaire de s’assurer que des poursuites pénales engagées par les autorités étrangères aient abouti à une condamnation définitive.",
               ),
 
               const SizedBox(height: 12),
               const _SubTitle("2.3 — Infractions commises hors de France"),
-              _Paragraph(
+              const _Paragraph(
                 "Le principe général est celui de la non-application de la loi française. "
                 "Mais les articles 113-6 du Code pénal et suivants apportent de nombreuses exceptions au principe.",
               ),
               const SizedBox(height: 10),
-              _Paragraph("La loi française est donc applicable :"),
+              const _Paragraph("La loi française est donc applicable :"),
               const SizedBox(height: 8),
               const _BulletPoint(
                 text: "À tout crime commis par un Français hors de France.",
@@ -415,7 +415,7 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
                     "À tout crime ainsi qu’à tout délit puni d’emprisonnement commis à l’étranger contre un Français.",
               ),
               const SizedBox(height: 10),
-              _Paragraph(
+              const _Paragraph(
                 "Dans ces différents cas, aucune poursuite ne sera engagée si la personne justifie avoir déjà fait l’objet d’un jugement définitif à l’étranger, si elle a déjà subi la peine à l’étranger ou si cette dernière est prescrite.",
               ),
               const SizedBox(height: 10),
@@ -435,21 +435,21 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
               ]),
 
               const SizedBox(height: 12),
-              _Paragraph("Autres exceptions listées :"),
+              const _Paragraph("Autres exceptions listées :"),
               const SizedBox(height: 8),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Crime ou délit puni d’au moins cinq ans d’emprisonnement commis hors de France par un étranger dont l’extradition a été refusée à l’État requérant par les autorités françaises, dans les cas prévus.",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Agression sexuelle sur mineur, corruption de mineur, infractions liées à la pornographie et aux messages violents à l’égard des mineurs, atteinte sexuelle sans violence sur mineur : poursuites possibles sans plainte (Article 222-22 du Code pénal).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Délit de proxénétisme à l’égard d’un mineur : poursuites possibles sans plainte (Article 225-11-2 du Code pénal).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Crimes et délits de violence ayant entraîné la mort sans intention de la donner, une mutilation, une infirmité permanente ou une incapacité totale de travail de plus de 8 jours sur un mineur : poursuites possibles sans plainte (Article 222-16-2 du Code pénal).",
               ),
@@ -472,27 +472,27 @@ class GPXSchoolEtendueApplicationLoisPage extends StatelessWidget {
               const _BulletPoint(
                 text: "Délit terroriste commis par un Français à l’étranger.",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Crime et délit terroriste commis à l’étranger par une personne résidant habituellement sur le territoire français (Article 113-13 du Code pénal).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Infractions financières portant atteinte au budget de l’Union européenne, listées à l’Article 113-14 du Code pénal (escroquerie, abus de confiance, soustraction/détournement/destruction de biens, corruption, contrebande, import/export frauduleux, blanchiment).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Meurtre commis contre une personne en raison de son refus de contracter un mariage ou de conclure une union : (Article 221-4 (10°) du Code pénal).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Tortures et actes de barbarie commis pour contraindre à contracter un mariage ou conclure une union, ou en raison du refus : (Article 222-3 (6° bis) du Code pénal).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Violences liées à la contrainte au mariage / union (mort sans intention, mutilation/infirmité, incapacité totale de travail > 8 jours, incapacité totale de travail ≤ 8 jours ou sans incapacité totale de travail) : (Articles 222-8, 222-10, 222-12 et 222-13 (6° bis) du Code pénal).",
               ),
-              _BulletPoint(
+              const _BulletPoint(
                 text:
                     "Traite des êtres humains commise à l’étranger par un Français : (Articles 225-4-1, 225-4-2 et 225-4-8 du Code pénal).",
               ),
@@ -545,10 +545,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -613,7 +613,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -656,7 +656,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -718,7 +718,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -750,7 +750,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -763,7 +763,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

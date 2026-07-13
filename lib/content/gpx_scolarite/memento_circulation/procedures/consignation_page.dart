@@ -90,28 +90,28 @@ class ConsignationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 121-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article A. 37-27-1 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La consignation est une somme versée immédiatement pour garantir le paiement futur (amende, etc.) "
@@ -157,41 +157,41 @@ class ConsignationPage extends StatelessWidget {
             cardColor: cardInfra,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Sauf cas de paiement immédiat de l’amende forfaitaire ou de l’amende forfaitaire minorée "
                 "(prévu pour certaines contraventions), la consignation s’applique :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Aux infractions au Code de la route : délits et contraventions.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Aux réglementations relatives aux transports routiers (dont marchandises dangereuses) et aux conditions de travail : délits et contraventions.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Dans la pratique, la consignation est surtout exigée pour les infractions mettant en danger la sécurité des personnes.",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "La décision imposant le paiement de la consignation est prise par le procureur de la République, "
                       "qui doit statuer dans les ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "24 heures",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " suivant la constatation de l’infraction.",
                 ),
               ]),
@@ -223,84 +223,84 @@ class ConsignationPage extends StatelessWidget {
             cardColor: cardMiseEnOeuvre,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Perception immédiate"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("Perception immédiate"),
+              _Paragraph(
                 "L’agent verbalisateur utilise un carnet de quittances à souches permettant la perception immédiate "
                 "du montant de la consignation (feuillets 1 et 2 remis au contrevenant).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Refus de payer"),
-              const _BulletPoint(
+              _SubTitle("Refus de payer"),
+              _BulletPoint(
                 text:
                     "Si le conducteur refuse de payer : le véhicule est immobilisé et l’agent avise immédiatement le procureur de la République.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’O.P.J. peut prescrire la mise en fourrière du véhicule.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Paiement exigé auprès d’un comptable du Trésor"),
-              const _BulletPoint(
+              _SubTitle("Paiement exigé auprès d’un comptable du Trésor"),
+              _BulletPoint(
                 text:
                     "Si le conducteur exige de payer uniquement entre les mains d’un comptable du Trésor : le véhicule est retenu jusqu’au versement effectif.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Titre de caution"),
-              const _Paragraph(
+              _SubTitle("Titre de caution"),
+              _Paragraph(
                 "Si le conducteur présente un titre de caution, l’infraction est relevée par procès-verbal en mentionnant :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Le nom et le siège de l’association ayant délivré le carnet d’assistance.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Le nom de l’organisme cautionnant la personne.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Le numéro de sociétaire du contrevenant.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Le numéro de l’attestation de cautionnement.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Modes de paiement acceptés"),
-              const _Paragraph(
+              _SubTitle("Modes de paiement acceptés"),
+              _Paragraph(
                 "En règle générale, le paiement s’effectue en numéraire ou par chèque tiré sur une banque française.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Un versement en travellers chèques ou en eurochèques peut être accepté.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Quittance dématérialisée"),
-              const _Paragraph(
+              _SubTitle("Quittance dématérialisée"),
+              _Paragraph(
                 "Le carnet de quittances n’est pas utilisé si l’agent est équipé d’un dispositif permettant l’envoi d’une quittance dématérialisée.",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Si paiement par chèque ou de façon dématérialisée (CB, télépaiement automatisé) : une quittance peut être envoyée à la demande à l’adresse électronique communiquée.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si paiement en espèces : le contrevenant doit communiquer son adresse électronique pour l’envoi de la quittance dématérialisée.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
-                const TextSpan(text: "Mis à jour le "),
-                const TextSpan(
+                TextSpan(text: "Mis à jour le "),
+                TextSpan(
                   text: "15/06/2025",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -451,10 +451,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -519,7 +519,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -562,7 +562,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -624,7 +624,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -635,10 +635,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -650,13 +649,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -669,13 +667,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

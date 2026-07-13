@@ -116,16 +116,16 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime l’atteinte à la représentation de la personne (montage / contenu généré algorithmiquement).",
                 ),
@@ -141,64 +141,64 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un montage (paroles / image)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Un montage (paroles / image)"),
+              _Paragraph(
                 "Le montage peut porter sur :\n"
                 "• la voix (imitation, reproduction, déformation) ;\n"
                 "• l’image (trucage d’une photo/vidéo, découpage, détourage, synchronisation, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’objectif typique est de faire croire qu’une personne (identifiée par son image ou sa voix) "
                 "a tenu un discours ou réalisé des actes alors qu’il n’en est rien. "
                 "Le procédé technique employé importe peu : l’infraction vise le résultat trompeur diffusé.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "JURISPRUDENCE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Créer des blogs/profils au nom d’un tiers uniquement par l’écrit, sans montage de parole ou d’image, "
                         "ne relève pas de l’article 226-8 (",
                   ),
                   TextSpan(
                     text: "Cass. crim., 24 janvier 2018, n° 16-83.045",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "PRÉCISION",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le montage est réprimé lorsqu’il déforme délibérément des images ou des paroles, "
                         "par ajout ou retrait d’éléments étrangers à son objet (",
                   ),
                   TextSpan(
                     text: "Cass. crim., 30 mars 2016, n° 15-82.039",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Un contenu visuel/sonore généré algorithmiquement (deepfake)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’hypertrucage (« deepfake ») repose sur l’intelligence artificielle et peut :\n"
                 "• superposer/fusionner des images (changement de visage sur une vidéo) ;\n"
                 "• substituer des propos en reproduisant la voix ;\n"
@@ -206,62 +206,62 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
                 "• produire des contenus réalistes à partir de commandes textuelles.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "C) Porter à la connaissance du public ou d’un tiers (par quelque voie que ce soit)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Sont visés tous les moyens de diffusion ou de révélation (publication, envoi, partage, repartage…). "
                 "Le texte permet aussi de sanctionner les personnes qui repartagent le contenu.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "PRESSE",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si l’infraction est commise par voie de presse écrite/audiovisuelle, des règles spéciales s’appliquent. "
                         "La hiérarchie des responsables est notamment prévue par ",
                   ),
                   TextSpan(
                     text: "l’article 42 de la loi du 29 juillet 1881",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (directeur de publication, à défaut l’auteur, puis l’imprimeur, puis vendeurs/distributeurs/afficheurs).",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "D) Absence de consentement (sauf montage évident ou signalé)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Le consentement requis porte sur la publication/révélation à un tiers, pas sur la création du contenu. "
                 "Ainsi, même si la personne a accepté la réalisation du montage/deepfake, l’accord à la diffusion demeure nécessaire.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Toutefois, l’accord à la publication n’est pas exigé dans deux hypothèses :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Le caractère de montage est évident : le public ne peut pas croire à l’authenticité du document.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Il est expressément mentionné qu’il s’agit d’un montage (indication claire et non équivoque).",
               ),
-              const SizedBox(height: 10),
-              const _NotaBox(
+              SizedBox(height: 10),
+              _NotaBox(
                 title: "IDÉE CLÉ",
                 bodySpans: [
                   TextSpan(
@@ -309,19 +309,19 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 226-8 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " :"),
+                TextSpan(text: " :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsque les faits sont réalisés en utilisant un service de communication au public en ligne.",
               ),
@@ -336,78 +336,78 @@ class AtteinteRepresentationPersonnePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(
                   text: "1 an d’emprisonnement et 15 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-8 alinéa 1 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification aggravée (en ligne) : "),
-                const TextSpan(
+                TextSpan(text: "Qualification aggravée (en ligne) : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 45 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 226-8 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "les articles 226-7 et 226-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : OUI — prévue par "),
+                TextSpan(text: "Tentative : OUI — prévue par "),
                 TextSpan(
                   text: "l’article 226-5 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Complicité : OUI — les règles générales s’appliquent (",
                 ),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
             ],
           ),
@@ -445,10 +445,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -513,7 +513,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -556,7 +556,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -618,7 +618,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -650,7 +650,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -663,7 +663,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

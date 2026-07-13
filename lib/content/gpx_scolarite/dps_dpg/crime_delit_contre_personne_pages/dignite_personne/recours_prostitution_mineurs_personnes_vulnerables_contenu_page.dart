@@ -114,47 +114,47 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-12-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le recours à la prostitution d’un mineur ou d’une personne particulièrement vulnérable.",
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text: "Article 611-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " (créé par la loi n° 2016-444 du 13 avril 2016) réprime le recours à la prostitution d’une personne majeure (contravention de 5e classe).",
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text: "Article 225-12-1 alinéa 1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " réprime le recours à la prostitution d’une personne majeure lorsqu’il est commis en récidive (délit non puni d’une peine d’emprisonnement).",
                   ),
@@ -182,17 +182,17 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
                 "• mais aussi les actes préalables, même non sexuels, qui tendent à obtenir une relation sexuelle.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La procédure peut être diligentée dès qu’il apparaît qu’un accord est conclu, ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "sans attendre le commencement d’un attouchement ou d’un rapprochement sexuel ",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "(circulaire ministère de la Justice du 24 avril 2002).",
                   ),
@@ -209,23 +209,23 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
               const _SubTitle(
                 "B) La victime : mineur ou personne particulièrement vulnérable",
               ),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text:
                       "La prostitution est définie comme l’activité consistant à se prêter, moyennant rémunération, ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       "à des contacts physiques afin de satisfaire les besoins sexuels d’autrui — ",
                 ),
                 TextSpan(
                   text: "Cass. crim., 26 mars 1996",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
               const _Paragraph(
@@ -234,20 +234,20 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
                 "• ou une personne présentant une particulière vulnérabilité.",
               ),
               const SizedBox(height: 10),
-              _NotaBox(
+              const _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La preuve de l’âge peut être rapportée par tout moyen. ",
                   ),
                   TextSpan(
                     text: "Cass. crim., 17 juillet 1991",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : aucune force probante automatique n’est donnée aux actes d’état civil étrangers.",
                   ),
@@ -279,15 +279,15 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
               const _SubTitle(
                 "C) La contrepartie : rémunération / promesse / avantage",
               ),
-              _Paragraph.rich([
+              const _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-12-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " exige une rémunération (ou promesse) ou un avantage (ou promesse d’avantage) pour caractériser l’infraction.",
                 ),
@@ -308,16 +308,16 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Intention de l’auteur + connaissance de la situation",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il suffit que l’auteur ait l’intention d’obtenir des relations de nature sexuelle avec une personne "
                 "se livrant à la prostitution, en sachant qu’elle est mineure ou particulièrement vulnérable.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "La minorité doit être connue, et la vulnérabilité doit être « apparente ou connue ». "
                 "Autrement dit : l’auteur ne peut pas se retrancher derrière une ignorance invraisemblable si les indices sont évidents.",
               ),
@@ -332,54 +332,54 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-12-2 1° à 4° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " — Premier degré d’aggravation :"),
+                TextSpan(text: " — Premier degré d’aggravation :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Infraction commise de façon habituelle ou à l’égard de plusieurs personnes (l’habitude peut être retenue dès deux actes).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mise en contact via l’utilisation d’un réseau de communication pour diffuser des messages à un public non déterminé.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Faits commis par une personne abusant de l’autorité que lui confèrent ses fonctions (autorité légale ou de fait).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Auteur ayant délibérément ou par imprudence mis la vie de la personne en danger ou commis des violences.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 225-12-2 alinéa 6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " — Second degré d’aggravation :"),
+                TextSpan(text: " — Second degré d’aggravation :"),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Lorsqu’il s’agit d’un mineur de quinze ans (hors les cas où les faits constituent un viol ou une agression sexuelle).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Cette circonstance aggravante peut s’appliquer même si la relation sexuelle n’a pas été consommée. "
                         "Lorsque la relation est consommée et que l’auteur est majeur, les faits peuvent relever du viol ou de l’agression sexuelle.",
@@ -397,109 +397,109 @@ class RecoursProstitutionMineursPersonnesVulnerablesPage
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification simple : "),
-                const TextSpan(text: "75 000 € d’amende. — "),
+                TextSpan(text: "Qualification simple : "),
+                TextSpan(text: "75 000 € d’amende. — "),
                 TextSpan(
                   text: "article 225-12-1 alinéa 2 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Aggravée (1er degré) : "),
-                const TextSpan(
+                TextSpan(text: "Aggravée (1er degré) : "),
+                TextSpan(
                   text: "7 ans d’emprisonnement et 100 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 225-12-2 1° à 4° du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Aggravée (2e degré – mineur de 15 ans) : ",
                 ),
-                const TextSpan(
+                TextSpan(
                   text: "10 ans d’emprisonnement et 150 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 225-12-2 alinéa 6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Application de la loi française"),
+              _SubTitle("Application de la loi française"),
               _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text: "Article 225-12-3 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : la loi française est applicable lorsque les délits sont commis à l’étranger par un Français ou par une personne résidant habituellement sur le territoire français.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(text: "Responsabilité pénale prévue par "),
+                TextSpan(text: "Responsabilité pénale prévue par "),
                 TextSpan(
                   text: "l’article 225-12-4 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : amende (selon les modalités de l’article 131-38) + peines complémentaires (article 131-39 : dissolution, interdiction d’exercer, etc.).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide et assistance, provocation, instructions).",
                 ),
               ]),
@@ -539,10 +539,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -607,7 +607,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -650,7 +650,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -712,7 +712,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -723,10 +723,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -738,13 +737,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -757,13 +755,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

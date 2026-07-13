@@ -112,16 +112,16 @@ class FaussesAlertesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 322-14 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : définit et réprime les fausses alertes.",
                 ),
               ]),
@@ -136,42 +136,42 @@ class FaussesAlertesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une communication ou divulgation"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une communication ou divulgation"),
+              _Paragraph(
                 "Le moyen est indifférent : l’auteur peut utiliser n’importe quel procédé de communication "
                 "ou de divulgation (écrit ou oral, téléphone, radio, réseaux, etc.).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Une fausse information"),
-              const _Paragraph(
+              _SubTitle("B) Une fausse information"),
+              _Paragraph(
                 "L’information doit être fausse. Deux hypothèses sont visées par le texte.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Faire croire à une destruction/dégradation/détérioration dangereuse",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il s’agit de faire croire qu’une destruction, une dégradation ou une détérioration dangereuse "
                 "pour les personnes va être ou a été commise.\n"
                 "Exemples : fausse alerte à la bombe dans un établissement scolaire, une gare ou un aéroport ; "
                 "appel anonyme faisant croire à un incendie criminel, etc.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Cette hypothèse correspond à "),
+                  TextSpan(text: "Cette hypothèse correspond à "),
                   TextSpan(
                     text: "l’alinéa 1er de l’article 322-14 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : l’information porte sur des faits passés ou à venir susceptibles de recevoir la qualification pénale "
                         "de destructions, dégradations ou détériorations dangereuses pour les personnes.",
@@ -179,27 +179,27 @@ class FaussesAlertesPage extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Faire croire à un sinistre pour provoquer l’intervention des secours",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Il s’agit de faire croire à un sinistre (feu accidentel ou naturel, accident de la circulation, du travail, "
                 "de loisir, atteintes à l’environnement, etc.) dans le but de provoquer l’intervention inutile des secours.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "Cette hypothèse correspond à "),
+                  TextSpan(text: "Cette hypothèse correspond à "),
                   TextSpan(
                     text: "l’alinéa 2 de l’article 322-14 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text:
                         " : le texte vise un « sinistre » et non des faits nécessairement susceptibles d’être qualifiés pénalement.",
                   ),
@@ -216,15 +216,15 @@ class FaussesAlertesPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Connaissance de la fausseté"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Connaissance de la fausseté"),
+              _Paragraph(
                 "L’intention coupable est requise : l’auteur doit avoir connaissance de la fausseté de l’information. "
                 "Le mobile est indifférent.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Volonté de faire croire"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Volonté de faire croire"),
+              _Paragraph(
                 "L’auteur doit vouloir faire croire à autrui :\n"
                 "• soit l’existence/la survenance d’une destruction, dégradation ou détérioration dangereuse pour les personnes ;\n"
                 "• soit la nécessité d’une intervention des secours (intervention inutile).",
@@ -255,45 +255,45 @@ class FaussesAlertesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit : "),
-                const TextSpan(
+                TextSpan(text: "Délit : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article 322-14 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
+              _SubTitle("Personnes morales"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Les personnes morales encourent les peines prévues par ",
                 ),
                 TextSpan(
                   text: "l’article 322-17 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
+              SizedBox(height: 6),
+              _Paragraph(
                 "Complicité : OUI. Elle est punissable pour l’infraction consommée, si un fait de complicité "
                 "et l’intention de s’associer à l’auteur principal sont caractérisés.",
               ),
@@ -333,10 +333,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -401,7 +401,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -444,7 +444,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -506,7 +506,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -517,10 +517,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -532,13 +531,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -551,13 +549,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

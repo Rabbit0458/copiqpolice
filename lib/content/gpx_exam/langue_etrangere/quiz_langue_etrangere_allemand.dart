@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionLangueEtrangereAllemand = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ein Buch.",
     options: ["lese", "sehen", "essen"],
@@ -99,7 +99,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ Hund.",
     options: ["ein", "eine", "einen"],
@@ -108,7 +108,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Schule.",
     options: ["zur", "zu", "in"],
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie arbeiten _____ Büro.",
     options: ["im", "in", "an"],
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich liebe _____ Kaffee.",
     options: ["der", "den", "das"],
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Du spielst _____ Fußball.",
     options: ["gerne", "gut", "viel"],
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ Zeit.",
     options: ["viel", "wenig", "ganz"],
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie fährt _____ Zug.",
     options: ["mit", "zu", "an"],
@@ -162,7 +162,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute _____.",
     options: ["schön", "schlecht", "warm"],
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe morgen _____ Party.",
     options: ["zu", "in", "an"],
@@ -180,7 +180,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er mag _____ Apfel.",
     options: ["einen", "ein", "eine"],
@@ -189,7 +189,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie tanzt _____ Musik.",
     options: ["zur", "mit", "von"],
@@ -198,7 +198,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Geschenk bekommen.",
     options: ["ein", "einen", "eine"],
@@ -207,7 +207,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Du bist _____ müde.",
     options: ["sehr", "nicht", "immer"],
@@ -216,7 +216,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir essen _____ Pizza.",
     options: ["eine", "ein", "einen"],
@@ -225,7 +225,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich sehe _____ Film.",
     options: ["einen", "eine", "ein"],
@@ -234,7 +234,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er liest _____ Buch.",
     options: ["ein", "eine", "einen"],
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie fährt _____ Auto.",
     options: ["mit", "in", "zu"],
@@ -252,7 +252,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ Kaffee.",
     options: ["einen", "ein", "eine"],
@@ -261,7 +261,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Haus.",
     options: ["ins", "in", "an"],
@@ -270,7 +270,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Du hast _____ Idee.",
     options: ["eine", "ein", "einen"],
@@ -279,7 +279,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde das _____ interessant.",
     options: ["sehr", "nicht", "immer"],
@@ -288,7 +288,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er möchte _____ essen.",
     options: ["etwas", "nichts", "alles"],
@@ -297,7 +297,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie kommt _____ Stadt.",
     options: ["aus", "von", "in"],
@@ -306,7 +306,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Schwimmen.",
     options: ["zum", "in", "an"],
@@ -315,7 +315,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Hunger.",
     options: ["viel", "wenig", "keinen"],
@@ -324,7 +324,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Buch liegt _____ Tisch.",
     options: ["auf", "an", "in"],
@@ -333,7 +333,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spielt _____ Klavier.",
     options: ["das", "ein", "eine"],
@@ -342,7 +342,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe _____ Kino.",
     options: ["ins", "in", "an"],
@@ -351,7 +351,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er ist _____ Lehrer.",
     options: ["ein", "eine", "einen"],
@@ -360,7 +360,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ Spaß.",
     options: ["viel", "wenig", "keinen"],
@@ -369,7 +369,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie fährt _____ Fahrrad.",
     options: ["mit", "auf", "in"],
@@ -378,7 +378,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde das _____ schön.",
     options: ["sehr", "nicht", "immer"],
@@ -387,7 +387,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Du bist _____ nett.",
     options: ["sehr", "nicht", "immer"],
@@ -396,7 +396,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ Idee.",
     options: ["eine", "ein", "einen"],
@@ -405,7 +405,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ trinken.",
     options: ["etwas", "nichts", "alles"],
@@ -414,7 +414,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Urlaub.",
     options: ["in", "zu", "auf"],
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie isst _____ Brot.",
     options: ["ein", "eine", "einen"],
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ Auto.",
     options: ["ein", "eine", "einen"],
@@ -442,7 +442,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ einkaufen.",
     options: ["zum", "in", "an"],
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich sehe _____ Fernsehen.",
     options: ["das", "ein", "eine"],
@@ -460,7 +460,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ Hund.",
     options: ["einen", "ein", "eine"],
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ein Bild malen.",
     options: ["möchte", "will", "kann"],
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir essen _____ Abendessen.",
     options: ["das", "eine", "ein"],
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie macht _____ Hausaufgaben.",
     options: ["die", "eine", "ein"],
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich höre _____ Musik.",
     options: ["die", "eine", "ein"],
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er geht _____ Schule.",
     options: ["in", "zu", "an"],
@@ -514,7 +514,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ Auto.",
     options: ["mit", "in", "zu"],
@@ -522,7 +522,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     explanation: "'Mit' indique le moyen de transport utilisé.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute sehr _____ .",
     options: ["schön", "schlecht", "neu"],
@@ -531,7 +531,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Bruder ist _____ als ich.",
     options: ["älter", "jünger", "kleiner"],
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er spielt _____ Fußball jeden Samstag.",
     options: ["gern", "nicht", "immer"],
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe ein _____ Buch gelesen.",
     options: ["interessantes", "langweiliges", "kurzes"],
@@ -558,7 +558,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spricht _____ Englisch und Deutsch.",
     options: ["gut", "schlecht", "wenig"],
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er arbeitet _____ in einer Firma.",
     options: ["jeden Tag", "manchmal", "nie"],
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ nach Berlin.",
     options: ["nächste Woche", "gestern", "jetzt"],
@@ -585,7 +585,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Zeit, um zu lernen.",
     options: ["wenig", "viel", "keine"],
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze schläft _____ auf dem Sofa.",
     options: ["oft", "nie", "manchmal"],
@@ -603,7 +603,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich brauche mehr _____ für das Projekt.",
     options: ["Zeit", "Hilfe", "Geld"],
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Lieblingsfilm ist _____ .",
     options: ["spannend", "langweilig", "kurz"],
@@ -621,7 +621,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ins Kino gehen.",
     options: ["möchte", "gehen", "sehe"],
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Heute ist es sehr _____ draußen.",
     options: ["schön", "schlecht", "warm"],
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ morgen einen Ausflug machen.",
     options: ["werden", "haben", "sind"],
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Der Hund _____ im Garten.",
     options: ["spielt", "schläft", "isst"],
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ ein neues Buch gekauft.",
     options: ["gestern", "heute", "morgen"],
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat seine Hausaufgaben _____ gemacht.",
     options: ["schnell", "gut", "langsam"],
@@ -675,7 +675,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Blumen _____ im Frühling blühen.",
     options: ["wachsen", "verblühen", "warten"],
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ jeden Morgen joggen.",
     options: ["mögen", "geht", "läuft"],
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ viel Spaß gehabt.",
     options: ["gestern", "schon", "immer"],
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich brauche ein neues _____ .",
     options: ["Auto", "Haus", "Buch"],
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er _____ gerne Musik.",
     options: ["hört", "sieht", "macht"],
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe heute _____ gegessen.",
     options: ["Pizza", "Salat", "Brot"],
@@ -729,7 +729,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Der Lehrer _____ die Fragen.",
     options: ["stellt", "stellt vor", "schreibt"],
@@ -738,7 +738,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ nach Berlin reisen.",
     options: ["möchten", "können", "müssen"],
@@ -747,7 +747,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe heute _____ ins Bett.",
     options: ["früh", "spät", "gerne"],
@@ -756,7 +756,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze _____ auf dem Tisch.",
     options: ["liegt", "sitzt", "steht"],
@@ -765,7 +765,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ins Kino gehen.",
     options: ["will", "nicht", "kann"],
@@ -774,7 +774,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute sehr _____.",
     options: ["schön", "schlecht", "warm"],
@@ -783,7 +783,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Bruder _____ in Berlin.",
     options: ["lebt", "geht", "fährt"],
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ einen neuen Film sehen.",
     options: ["möchten", "müssen", "sollen"],
@@ -801,7 +801,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er spielt gerne _____ Fußball.",
     options: ["immer", "oft", "selten"],
@@ -810,7 +810,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir treffen uns _____ dem Café.",
     options: ["vor", "nach", "in"],
@@ -819,7 +819,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Kinder _____ im Garten spielen.",
     options: ["können", "dürfen", "müssen"],
@@ -828,7 +828,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Buch ist _____ interessant.",
     options: ["sehr", "nicht", "zu"],
@@ -837,7 +837,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ viele Freunde.",
     options: ["nicht", "so", "zu"],
@@ -846,7 +846,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ nach Deutschland.",
     options: ["nächste Woche", "heute", "morgen"],
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ keine Zeit.",
     options: ["heute", "immer", "nie"],
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ ein neues Auto kaufen.",
     options: ["bald", "nie", "immer"],
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ ins Restaurant.",
     options: ["jetzt", "später", "früher"],
@@ -882,7 +882,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Blumen sind _____ schön.",
     options: ["sehr", "immer", "nicht"],
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde deinen Vorschlag _____ gut.",
     options: ["auch", "sehr", "nicht"],
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir müssen _____ gehen.",
     options: ["jetzt", "später", "immer"],
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gerne Musik.",
     options: ["höre", "hören", "hörst"],
@@ -918,7 +918,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe ein _____ Buch.",
     options: ["neues", "neu", "neueste"],
@@ -927,7 +927,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er ist mein bester _____ .",
     options: ["Freund", "Freunde", "Freundin"],
@@ -936,7 +936,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde das _____ interessant.",
     options: ["Film", "Filme", "Filmes"],
@@ -945,7 +945,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ nach Berlin.",
     options: ["nächste", "nächsten", "nächstes"],
@@ -955,7 +955,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Buch liegt _____ dem Tisch.",
     options: ["auf", "unter", "neben"],
@@ -964,7 +964,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie hat _____ neue Schuhe gekauft.",
     options: ["ein", "eine", "einen"],
@@ -972,7 +972,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     explanation: "'Eine' est l'article indéfini féminin en accusatif.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ein Buch.",
     options: ["liebe", "liebt", "liebte"],
@@ -981,7 +981,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ ins Kino gehen.",
     options: ["möchte", "möchten", "möchteen"],
@@ -991,7 +991,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ in Berlin.",
     options: ["lebt", "leben", "lebte"],
@@ -1000,7 +1000,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute sehr _____.",
     options: ["schön", "schöne", "schöner"],
@@ -1009,7 +1009,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ einen Apfel.",
     options: ["esse", "isst", "essen"],
@@ -1018,7 +1018,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ morgen eine Party.",
     options: ["haben", "hat", "hatten"],
@@ -1027,7 +1027,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze _____ auf dem Tisch.",
     options: ["sitzt", "sitzen", "saß"],
@@ -1036,7 +1036,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er _____ gerne Fußball.",
     options: ["spielt", "spielen", "spielte"],
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ kein Fleisch.",
     options: ["esse", "isst", "essen"],
@@ -1054,7 +1054,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ sehr müde.",
     options: ["sind", "sein", "ist"],
@@ -1064,7 +1064,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ das Fenster auf.",
     options: ["mache", "machst", "macht"],
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ die ganze Nacht.",
     options: ["schlief", "schlafen", "schläft"],
@@ -1082,7 +1082,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er _____ ein neues Auto.",
     options: ["kauft", "kaufen", "kaufe"],
@@ -1091,7 +1091,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ nach Hause.",
     options: ["fahren", "fährt", "fahre"],
@@ -1101,7 +1101,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ein Geschenk für dich.",
     options: ["kaufe", "kauft", "kaufen"],
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Heute ist es _____ draußen.",
     options: ["kalt", "schnell", "blau"],
@@ -1120,7 +1120,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gern Musik.",
     options: ["höre", "schau", "spiele"],
@@ -1129,7 +1129,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Bruder ist _____ alt.",
     options: ["fünf", "sieben", "drei"],
@@ -1138,7 +1138,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir essen _____ am Abend.",
     options: ["frühstück", "zu Mittag", "Abendessen"],
@@ -1147,7 +1147,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich trinke _____ Wasser.",
     options: ["viel", "wenig", "kein"],
@@ -1156,7 +1156,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist mein _____ Freund.",
     options: ["alter", "neuer", "schöner"],
@@ -1165,7 +1165,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ einen Hund.",
     options: ["auch", "nicht", "gerne"],
@@ -1174,7 +1174,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er fährt _____ nach Berlin.",
     options: ["morgen", "freitag", "gestern"],
@@ -1183,7 +1183,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe Lust auf _____ .",
     options: ["Schokolade", "Bücher", "Sport"],
@@ -1192,7 +1192,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ viele Bücher.",
     options: ["sehr", "nicht", "wenig"],
@@ -1201,7 +1201,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie liest _____ ihre Nachrichten.",
     options: ["gern", "nicht", "immer"],
@@ -1210,7 +1210,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich mache _____ eine Reise.",
     options: ["bald", "oft", "niemals"],
@@ -1219,7 +1219,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Kino.",
     options: ["zum", "in", "auf"],
@@ -1228,7 +1228,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ Wasser.",
     options: ["ein", "eine", "einen"],
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ Haus gekauft.",
     options: ["ein", "eine", "einen"],
@@ -1246,7 +1246,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie ist _____ Lehrerin.",
     options: ["eine", "ein", "einen"],
@@ -1255,7 +1255,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich trinke _____ Kaffee.",
     options: ["ein", "eine", "einen"],
@@ -1264,7 +1264,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ Berlin.",
     options: ["nach", "in", "zu"],
@@ -1273,7 +1273,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Du hast _____ neue Schuhe.",
     options: ["einen", "ein", "eine"],
@@ -1282,7 +1282,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er ist _____ Arzt.",
     options: ["ein", "eine", "einen"],
@@ -1291,7 +1291,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie geht _____ Schule.",
     options: ["in", "zu", "nach"],
@@ -1300,7 +1300,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Katze.",
     options: ["eine", "einen", "ein"],
@@ -1309,7 +1309,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er liest _____ Zeitung.",
     options: ["eine", "ein", "einen"],
@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir spielen _____ Fußball.",
     options: ["einen", "ein", "eine"],
@@ -1327,7 +1327,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Kind hat _____ Ball.",
     options: ["einen", "ein", "eine"],
@@ -1336,7 +1336,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ Apfel.",
     options: ["eine", "einen", "ein"],
@@ -1345,7 +1345,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe einen neuen _____ gekauft.",
     options: ["Hund", "Auto", "Buch"],
@@ -1354,7 +1354,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Morgen _____ wir eine Prüfung.",
     options: ["haben", "sehen", "essen"],
@@ -1363,7 +1363,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie ist sehr _____ in der Schule.",
     options: ["intelligent", "schlecht", "langweilig"],
@@ -1372,7 +1372,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren im Sommer _____ .",
     options: ["nach Deutschland", "mit dem Auto", "zu Fuß"],
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte ein _____ essen.",
     options: ["Eis", "Buch", "Auto"],
@@ -1390,7 +1390,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Der Lehrer fragt, ob wir _____ sind.",
     options: ["bereit", "schüchtern", "hungrig"],
@@ -1399,7 +1399,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben gestern einen _____ gesehen.",
     options: ["Film", "Buch", "Stuhl"],
@@ -1408,7 +1408,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde das Wetter heute _____ .",
     options: ["schön", "kalt", "heiß"],
@@ -1417,7 +1417,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat einen neuen _____ .",
     options: ["Job", "Film", "Hund"],
@@ -1425,7 +1425,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     explanation: "Le mot 'Job' signifie 'emploi'.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe _____ ins Kino.",
     options: ["gerne", "schön", "schnell"],
@@ -1434,7 +1434,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute _____.",
     options: ["schlecht", "schöner", "gut"],
@@ -1443,7 +1443,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Buch gelesen.",
     options: ["ein", "drei", "zwei"],
@@ -1452,7 +1452,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er spielt _____ Fußball.",
     options: ["oft", "schön", "gut"],
@@ -1461,7 +1461,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Zeit.",
     options: ["wenig", "viel", "kein"],
@@ -1470,7 +1470,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist mein _____ Freund.",
     options: ["bester", "schöner", "neuer"],
@@ -1479,7 +1479,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er fährt _____ nach Berlin.",
     options: ["schnell", "gern", "langsam"],
@@ -1488,7 +1488,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ nach Hause.",
     options: ["jetzt", "schon", "immer"],
@@ -1497,7 +1497,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Essen ist _____ lecker.",
     options: ["sehr", "nicht", "immer"],
@@ -1506,7 +1506,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich mag _____ Musik hören.",
     options: ["gern", "schlecht", "nie"],
@@ -1515,7 +1515,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ Geburtstag.",
     options: ["heute", "gestern", "morgen"],
@@ -1524,7 +1524,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir sind _____ zu Hause.",
     options: ["nicht", "schon", "immer"],
@@ -1533,7 +1533,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spricht _____ Deutsch.",
     options: ["fließend", "schlecht", "langsam"],
@@ -1542,7 +1542,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Buch ist _____ neu.",
     options: ["nicht", "sehr", "immer"],
@@ -1551,7 +1551,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ Zeit.",
     options: ["keine", "viel", "wenig"],
@@ -1560,7 +1560,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich bin _____ müde.",
     options: ["sehr", "nicht", "immer"],
@@ -1569,7 +1569,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter wird _____ schlecht.",
     options: ["nicht", "immer", "bald"],
@@ -1578,7 +1578,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe heute _____ ins Kino.",
     options: ["nicht", "ja", "vielleicht"],
@@ -1587,7 +1587,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir essen heute _____ Pizza.",
     options: ["eine", "zwei", "drei"],
@@ -1596,7 +1596,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ nach Berlin.",
     options: ["morgen", "heute", "gestern"],
@@ -1605,7 +1605,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Hund.",
     options: ["einen", "eine", "das"],
@@ -1614,7 +1614,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie geht _____ in die Schule.",
     options: ["immer", "manchmal", "selten"],
@@ -1623,7 +1623,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte ein _____ kaufen.",
     options: ["Auto", "Haus", "Buch"],
@@ -1632,7 +1632,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ viele Freunde.",
     options: ["nicht", "sehr", "zu"],
@@ -1641,7 +1641,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir essen _____ Abendbrot.",
     options: ["zum", "in", "auf"],
@@ -1650,7 +1650,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist mein _____ Lehrer.",
     options: ["neuer", "alter", "guter"],
@@ -1659,7 +1659,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ einen Test.",
     options: ["bald", "schon", "jetzt"],
@@ -1668,7 +1668,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie liest _____ Buch.",
     options: ["ein", "das", "viele"],
@@ -1677,7 +1677,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe _____ ins Bett.",
     options: ["früh", "spät", "gern"],
@@ -1686,7 +1686,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ viel Spaß.",
     options: ["immer", "manchmal", "nicht"],
@@ -1695,7 +1695,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ jeden Morgen um sieben Uhr auf.",
     options: ["stehe auf", "gehe zur Schule", "esse Frühstück"],
@@ -1704,7 +1704,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ ein neues Auto gekauft.",
     options: ["sich", "mir", "ihm"],
@@ -1713,7 +1713,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ im Sommer nach Deutschland reisen.",
     options: ["wollen", "können", "müssen"],
@@ -1722,7 +1722,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde den Film _____ interessant.",
     options: ["sehr", "nicht", "weniger"],
@@ -1731,7 +1731,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze schläft _____ auf dem Sofa.",
     options: ["gerne", "schnell", "immer"],
@@ -1740,7 +1740,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Hast du _____ Zeit, um zu helfen?",
     options: ["viel", "wenig", "kein"],
@@ -1749,7 +1749,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ am Freitag ein Fest.",
     options: ["feiern", "sehen", "essen"],
@@ -1758,7 +1758,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ jeden Tag joggen.",
     options: ["möchte", "geht", "hat"],
@@ -1767,7 +1767,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gerne Bücher lesen.",
     options: ["liebe", "esse", "trinke"],
@@ -1776,7 +1776,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Kannst du mir _____ helfen?",
     options: ["ein bisschen", "nichts", "alles"],
@@ -1785,7 +1785,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute _____ schön.",
     options: ["sehr", "nicht", "wenig"],
@@ -1794,7 +1794,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ immer früh ins Bett.",
     options: ["gehe", "schlafe", "esse"],
@@ -1803,7 +1803,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Blumen _____ im Frühling blühen.",
     options: ["werden", "gehen", "sind"],
@@ -1812,7 +1812,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ in der Schule viel lernen.",
     options: ["müssen", "können", "wollen"],
@@ -1821,7 +1821,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ nach der Schule nach Hause.",
     options: ["gehe", "komme", "schreibe"],
@@ -1830,7 +1830,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ einen Hund.",
     options: ["nicht", "kein", "wenig"],
@@ -1839,7 +1839,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ am Wochenende wandern.",
     options: ["möchten", "können", "müssen"],
@@ -1848,7 +1848,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ heute Abend nach Hause.",
     options: ["komme", "gehe", "esse"],
@@ -1857,7 +1857,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ immer pünktlich zur Arbeit.",
     options: ["kommt", "geht", "fahren"],
@@ -1866,7 +1866,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ein Buch lesen.",
     options: ["möchte", "will", "kann"],
@@ -1874,7 +1874,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     explanation: "Le verbe 'möchte' exprime un souhait.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Buch gelesen.",
     options: ["ein", "die", "das"],
@@ -1883,7 +1883,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Park.",
     options: ["in", "auf", "an"],
@@ -1893,7 +1893,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze sitzt _____ Tisch.",
     options: ["auf", "in", "neben"],
@@ -1903,7 +1903,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich mag _____ Musik.",
     options: ["die", "der", "das"],
@@ -1912,7 +1912,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er kommt _____ München.",
     options: ["aus", "von", "in"],
@@ -1921,7 +1921,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spricht _____ schnell.",
     options: ["zu", "nicht", "sehr"],
@@ -1931,7 +1931,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe keine _____ Zeit.",
     options: ["mehr", "weniger", "viel"],
@@ -1941,7 +1941,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ viele Freunde.",
     options: ["zu", "sehr", "genug"],
@@ -1951,7 +1951,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe das Buch _____ gelesen.",
     options: ["schon", "nie", "immer"],
@@ -1960,7 +1960,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist der _____ Weg.",
     options: ["lange", "lange", "längste"],
@@ -1970,7 +1970,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich kann das nicht _____.",
     options: ["glauben", "glaubt", "glaubt"],
@@ -1979,7 +1979,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ viele Aufgaben.",
     options: ["nicht", "so", "wenig"],
@@ -1989,7 +1989,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir treffen uns _____ Café.",
     options: ["im", "auf", "an"],
@@ -1999,7 +1999,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist _____ heute.",
     options: ["schön", "schöne", "schöner"],
@@ -2008,7 +2008,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich sehe _____ Film.",
     options: ["das", "den", "die"],
@@ -2017,7 +2017,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ gerne Musik.",
     options: ["hören", "hörst", "hört"],
@@ -2026,7 +2026,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ Urlaub.",
     options: ["in", "nach", "zu"],
@@ -2035,7 +2035,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze ist _____ Tisch.",
     options: ["unter", "über", "neben"],
@@ -2044,7 +2044,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Idee.",
     options: ["eine", "ein", "einen"],
@@ -2053,7 +2053,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Auto ist _____ neu.",
     options: ["nicht", "kein", "sehr"],
@@ -2062,7 +2062,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ kaufen.",
     options: ["das", "einen", "ein"],
@@ -2071,7 +2071,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie ist _____ freundlich.",
     options: ["sehr", "viel", "wenig"],
@@ -2080,7 +2080,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich spiele _____ Fußball.",
     options: ["gerne", "gern", "lieber"],
@@ -2089,7 +2089,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist _____ beste Geschenk.",
     options: ["das", "die", "den"],
@@ -2098,7 +2098,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Apfel gekauft.",
     options: ["ein", "eine", "einen"],
@@ -2107,7 +2107,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er geht _____ Schule.",
     options: ["in die", "zum", "an die"],
@@ -2116,7 +2116,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute _____ .",
     options: ["schön", "schöne", "schöner"],
@@ -2125,7 +2125,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich spiele gern _____ Fußball.",
     options: ["die", "den", "das"],
@@ -2134,7 +2134,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ gehen.",
     options: ["nach Hause", "zu Hause", "in Haus"],
@@ -2143,7 +2143,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir fahren _____ Urlaub.",
     options: ["zum", "in", "auf"],
@@ -2152,7 +2152,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er arbeitet _____ Lehrer.",
     options: ["als", "zu", "von"],
@@ -2161,7 +2161,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie hat _____ Hund.",
     options: ["einen", "eine", "ein"],
@@ -2170,7 +2170,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ neue Schuhe.",
     options: ["ein", "einen", "neue"],
@@ -2180,7 +2180,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gern Fußball.",
     options: ["spiele", "essen", "trinke"],
@@ -2189,7 +2189,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe _____ ins Kino.",
     options: ["nicht", "auch", "immer"],
@@ -2198,7 +2198,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich wohne in einem _____ Haus.",
     options: ["schönen", "großen", "alten"],
@@ -2207,7 +2207,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Hast du _____ Zeit?",
     options: ["ein wenig", "viel", "keine"],
@@ -2216,7 +2216,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie ist meine beste _____ .",
     options: ["Freundin", "Schwester", "Lehrerin"],
@@ -2225,7 +2225,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Buch liegt _____ dem Tisch.",
     options: ["unter", "über", "neben"],
@@ -2234,7 +2234,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ ein Geschenk bekommen.",
     options: ["gestern", "morgen", "heute"],
@@ -2243,7 +2243,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich mag _____ Musik hören.",
     options: ["gerne", "nie", "schlecht"],
@@ -2252,7 +2252,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ einen Ausflug gemacht.",
     options: ["immer", "schon", "oft"],
@@ -2261,7 +2261,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist _____ teuer.",
     options: ["zu", "nicht", "sehr"],
@@ -2270,7 +2270,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie arbeitet _____ im Büro.",
     options: ["gerne", "nie", "manchmal"],
@@ -2279,7 +2279,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ gekauft.",
     options: ["ein Buch", "ein Auto", "eine Katze"],
@@ -2288,7 +2288,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Kino.",
     options: ["ins", "zum", "auf"],
@@ -2298,7 +2298,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er spielt _____ Klavier.",
     options: ["das", "ein", "viele"],
@@ -2308,7 +2308,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie trinkt _____ Wasser.",
     options: ["viel", "wenig", "ein"],
@@ -2317,7 +2317,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich mache _____ Sport.",
     options: ["gern", "nicht", "wenig"],
@@ -2326,7 +2326,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er kommt _____ Berlin.",
     options: ["aus", "von", "in"],
@@ -2334,7 +2334,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     explanation: "La préposition 'aus' signifie 'de'.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er geht _____ nach Hause.",
     options: ["schnell", "schneller", "schnellste"],
@@ -2343,7 +2343,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ihr _____ immer zu spät.",
     options: ["seid", "sind", "ist"],
@@ -2352,7 +2352,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Freund spielt _____ Gitarre.",
     options: ["die", "das", "eine"],
@@ -2361,7 +2361,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ viel Spaß.",
     options: ["sehr", "zu", "wenig"],
@@ -2370,7 +2370,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte einen Kaffee _____ .",
     options: ["trinken", "trinke", "trinkst"],
@@ -2379,7 +2379,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze schläft _____ auf dem Sofa.",
     options: ["gerne", "gern", "lieber"],
@@ -2388,7 +2388,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spricht _____ gut Englisch.",
     options: ["sehr", "wenig", "nicht"],
@@ -2397,7 +2397,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde den Film _____ langweilig.",
     options: ["sehr", "ein", "zu"],
@@ -2406,7 +2406,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ viele Fragen.",
     options: ["sehr", "wenig", "manche"],
@@ -2415,7 +2415,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist ein _____ Auto.",
     options: ["schnell", "schnelles", "schneller"],
@@ -2424,7 +2424,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ Park.",
     options: ["ins", "auf", "an"],
@@ -2434,7 +2434,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat einen _____ Hund.",
     options: ["schönen", "neu", "groß"],
@@ -2444,7 +2444,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ nach Hause.",
     options: ["geht", "laufen", "fährt"],
@@ -2453,7 +2453,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ ein neues Auto.",
     options: ["kaufe", "verkaufe", "benutze"],
@@ -2462,7 +2462,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ sehr gut Deutsch.",
     options: ["spricht", "hören", "sehen"],
@@ -2471,7 +2471,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Bruder _____ Fußball.",
     options: ["spielt", "macht", "geht"],
@@ -2481,7 +2481,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gerne Kaffee.",
     options: ["trinke", "esse", "höre"],
@@ -2490,7 +2490,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Kind spielt _____ Garten.",
     options: ["im", "an", "auf"],
@@ -2500,7 +2500,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie haben _____ Zeit.",
     options: ["viel", "wenig", "keine"],
@@ -2510,7 +2510,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ lernen.",
     options: ["Deutsch", "Französisch", "Englisch"],
@@ -2520,7 +2520,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie gehen _____ Schule.",
     options: ["zur", "in", "auf"],
@@ -2530,7 +2530,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir treffen uns _____ Abend.",
     options: ["am", "in", "auf"],
@@ -2539,7 +2539,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Auto ist _____ teuer.",
     options: ["sehr", "nicht", "wenig"],
@@ -2549,7 +2549,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gerne Bücher.",
     options: ["lesen", "schreiben", "essen"],
@@ -2558,7 +2558,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe einen _____ gekauft.",
     options: ["Hund", "Auto", "Haus"],
@@ -2567,7 +2567,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er fährt mit dem _____ zur Arbeit.",
     options: ["Auto", "Zug", "Bus"],
@@ -2576,7 +2576,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze schläft auf dem _____.",
     options: ["Sofa", "Tisch", "Stuhl"],
@@ -2585,7 +2585,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte ein neues _____ kaufen.",
     options: ["Handy", "Auto", "Buch"],
@@ -2594,7 +2594,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Im Sommer gehen wir oft _____ Strand.",
     options: ["an den", "auf den", "in den"],
@@ -2603,7 +2603,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe jeden Tag _____ Schule.",
     options: ["viel", "wenig", "keine"],
@@ -2612,7 +2612,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat seine Hausaufgaben _____.",
     options: ["gemacht", "vergessen", "gehabt"],
@@ -2621,7 +2621,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ gesehen.",
     options: ["einen Film", "eine Katze", "ein Buch"],
@@ -2630,7 +2630,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Der Lehrer erklärt die _____ gut.",
     options: ["Aufgabe", "Frage", "Antwort"],
@@ -2639,7 +2639,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir müssen jetzt _____ gehen.",
     options: ["nach Hause", "zum Markt", "in die Schule"],
@@ -2648,7 +2648,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist ein _____ Bild.",
     options: ["schönes", "schlechtes", "altes"],
@@ -2657,7 +2657,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ morgen eine Prüfung haben.",
     options: ["haben", "hast", "hat"],
@@ -2666,7 +2666,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ gerne Bücher lesen.",
     options: ["liest", "lese", "lesen"],
@@ -2675,7 +2675,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich trinke _____ Wasser.",
     options: ["ein", "einen", "das"],
@@ -2684,7 +2684,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist mein _____ Freund.",
     options: ["guter", "gutes", "guten"],
@@ -2693,7 +2693,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Kannst du mir bitte _____ helfen?",
     options: ["einmal", "ein wenig", "ein bisschen"],
@@ -2702,7 +2702,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ ins Ausland reisen.",
     options: ["auch", "gerne", "nicht"],
@@ -2711,7 +2711,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wo ist der _____ Bahnhof?",
     options: ["nächste", "nächsten", "nächster"],
@@ -2720,7 +2720,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ viele Freunde.",
     options: ["so", "zwei", "ein"],
@@ -2729,7 +2729,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er liebt es, _____ zu schwimmen.",
     options: ["oft", "gerne", "manchmal"],
@@ -2738,7 +2738,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir treffen uns _____ dem Park.",
     options: ["in", "an", "vor"],
@@ -2747,7 +2747,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich kann nicht _____ kommen.",
     options: ["morgen", "schon", "dort"],
@@ -2756,7 +2756,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Essen schmeckt _____ gut.",
     options: ["sehr", "nicht", "zu"],
@@ -2765,7 +2765,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist heute _____ und sonnig.",
     options: ["kalt", "heiß", "warm"],
@@ -2774,7 +2774,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Hund und zwei Katzen.",
     options: ["ein", "eine", "einen"],
@@ -2783,7 +2783,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ Freunde in Berlin.",
     options: ["viele", "wenig", "einige"],
@@ -2791,7 +2791,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     explanation: "Le mot 'viele' indique une grande quantité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er spielt _____ Fußball.",
     options: ["gerne", "nie", "oft"],
@@ -2800,7 +2800,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie fährt _____ nach Berlin.",
     options: ["immer", "manchmal", "nie"],
@@ -2809,7 +2809,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich liebe _____ Musik.",
     options: ["deutsche", "alte", "schöne"],
@@ -2818,7 +2818,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er ist _____ Lehrer.",
     options: ["guter", "schlechter", "bester"],
@@ -2827,7 +2827,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir kaufen _____ ein Geschenk.",
     options: ["bald", "nie", "oft"],
@@ -2836,7 +2836,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spricht _____ Deutsch.",
     options: ["sehr gut", "wenig", "gar nicht"],
@@ -2845,7 +2845,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ einen Hund.",
     options: ["jetzt", "schon", "nie"],
@@ -2854,7 +2854,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich finde das _____ schön.",
     options: ["Haus", "Auto", "Buch"],
@@ -2863,7 +2863,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie möchte _____ gehen.",
     options: ["schlafen", "essen", "trinken"],
@@ -2872,7 +2872,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ in Berlin.",
     options: ["wohnt", "wohnst", "wohnen"],
@@ -2881,7 +2881,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ am Wochenende reisen.",
     options: ["wollen", "will", "wünscht"],
@@ -2890,7 +2890,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ mein Zimmer auf.",
     options: ["räume", "räumt", "räumen"],
@@ -2899,7 +2899,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er _____ sehr schnell.",
     options: ["läuft", "läufst", "laufen"],
@@ -2908,7 +2908,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ Pizza essen.",
     options: ["möchten", "mag", "mögt"],
@@ -2917,7 +2917,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ in der Schule.",
     options: ["lerne", "lernst", "lernen"],
@@ -2926,7 +2926,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich _____ gern schwimmen.",
     options: ["mag", "möchte", "lieben"],
@@ -2935,7 +2935,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ einen Film sehen.",
     options: ["sehen", "sieht", "seht"],
@@ -2944,7 +2944,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist _____ tolle Idee.",
     options: ["eine", "ein", "einen"],
@@ -2953,7 +2953,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er _____ ein Auto.",
     options: ["hat", "hast", "haben"],
@@ -2962,7 +2962,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir _____ nach Deutschland fahren.",
     options: ["fahren", "fährt", "fahre"],
@@ -2971,7 +2971,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir gehen _____ ins Kino.",
     options: ["nicht", "gern", "sehr"],
@@ -2980,7 +2980,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Die Katze sitzt _____ dem Tisch.",
     options: ["auf", "unter", "neben"],
@@ -2989,7 +2989,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er hat _____ einen Hund.",
     options: ["nicht", "auch", "gerade"],
@@ -2998,7 +2998,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ gehen.",
     options: ["nicht", "gerne", "immer"],
@@ -3007,7 +3007,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ sehr freundlich.",
     options: ["ist", "sind", "hat"],
@@ -3016,7 +3016,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Heute ist es _____ warm.",
     options: ["sehr", "nicht", "immer"],
@@ -3025,7 +3025,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist _____ schön.",
     options: ["nicht", "sehr", "immer"],
@@ -3034,7 +3034,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir essen _____ Pizza.",
     options: ["gerade", "nicht", "auch"],
@@ -3043,7 +3043,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wo ist das _____ Restaurant?",
     options: ["neue", "alte", "schöne"],
@@ -3052,7 +3052,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie spielt _____ Klavier.",
     options: ["gut", "schlecht", "nicht"],
@@ -3061,7 +3061,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich möchte _____ einen Kaffee.",
     options: ["trinken", "essen", "schlafen"],
@@ -3070,7 +3070,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich gehe _____ zur Schule.",
     options: ["nicht", "immer", "gerne"],
@@ -3079,7 +3079,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir haben _____ einen neuen Lehrer.",
     options: ["nicht", "auch", "gerade"],
@@ -3088,7 +3088,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Der Hund _____ schnell.",
     options: ["läuft", "schläft", "springt"],
@@ -3097,7 +3097,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ gern Musik.",
     options: ["hört", "sieht", "macht"],
@@ -3106,7 +3106,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Es ist _____ heute.",
     options: ["kalt", "heiß", "trocken"],
@@ -3115,7 +3115,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Kannst du mir bitte _____ geben?",
     options: ["das Buch", "den Stift", "die Tasse"],
@@ -3124,7 +3124,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Wir spielen _____ Fußball.",
     options: ["im", "auf", "zum"],
@@ -3133,7 +3133,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das Wetter ist _____ heute.",
     options: ["schön", "schlecht", "warm"],
@@ -3142,7 +3142,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich brauche _____ für die Schule.",
     options: ["ein Buch", "eine Tasse", "ein Stift"],
@@ -3151,7 +3151,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er bringt _____ nach Hause.",
     options: ["das Essen", "die Blumen", "die Zeitung"],
@@ -3160,7 +3160,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe einen _____ gesehen.",
     options: ["Hund", "Hunde", "Hunden"],
@@ -3169,7 +3169,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Mein Bruder spielt _____ Fußball.",
     options: ["gern", "gerne", "gert"],
@@ -3178,7 +3178,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ sehr schnell.",
     options: ["läuft", "lauf", "laufen"],
@@ -3187,7 +3187,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Das ist mein Lieblingsfilm. Ich finde ihn _____ .",
     options: ["toll", "tolle", "toller"],
@@ -3196,7 +3196,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Er kommt _____ nach Hause.",
     options: ["spät", "späte", "später"],
@@ -3205,7 +3205,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Ich habe _____ Fragen.",
     options: ["viele", "viel", "vielen"],
@@ -3214,7 +3214,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Sie _____ ein schönes Kleid.",
     options: ["trägt", "tragen", "trage"],
@@ -3223,7 +3223,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Der Lehrer erklärt die _____ .",
     options: ["Regeln", "Regel", "Regeln"],
@@ -3232,7 +3232,7 @@ final List<QuizQuestion> questionLangueEtrangereAllemand = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Langue étrangère — Allemand — Texte à trous",
     question: "Es ist _____ kalt heute.",
     options: ["sehr", "viel", "manchmal"],
@@ -3598,7 +3598,7 @@ class _QuizLangueEtrangereAllemandState
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -3801,7 +3801,7 @@ class _QuizLangueEtrangereAllemandState
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3984,7 +3984,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4517,10 +4516,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -4891,7 +4891,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -4932,9 +4932,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

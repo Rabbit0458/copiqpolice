@@ -115,37 +115,37 @@ class AuditionTemoinsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "L’agent de police judiciaire doit situer son action dans un cadre juridique précis : "
                 "enquête de flagrance ou enquête préliminaire.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("Formule attendue (exemples)"),
+              SizedBox(height: 10),
+              _SubTitle("Formule attendue (exemples)"),
               _Paragraph.rich([
-                const TextSpan(text: "• « Vu les "),
+                TextSpan(text: "• « Vu les "),
                 TextSpan(
                   text: "articles 53 et suivants du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " » (flagrance)\n"),
-                const TextSpan(text: "• « Vu les "),
+                TextSpan(text: " » (flagrance)\n"),
+                TextSpan(text: "• « Vu les "),
                 TextSpan(
                   text: "articles 75 et suivants du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " » (préliminaire)"),
+                TextSpan(text: " » (préliminaire)"),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le cadre juridique doit être clair dès l’entête : il conditionne le vocabulaire, les mentions et l’ensemble du PV.",
                   ),
@@ -198,33 +198,33 @@ class AuditionTemoinsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Le PV doit indiquer explicitement si l’audition s’inscrit dans :\n"
                 "• une enquête de flagrance\n"
                 "• ou une enquête préliminaire\n\n"
                 "Puis reprendre la formule « vu les articles… » correspondante.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(text: "À intégrer tel quel, en haut du PV : "),
+                  TextSpan(text: "À intégrer tel quel, en haut du PV : "),
                   TextSpan(
                     text: "articles 53 et suivants du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " ou "),
+                  TextSpan(text: " ou "),
                   TextSpan(
                     text: "articles 75 et suivants du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -278,40 +278,40 @@ class AuditionTemoinsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Objectif : identifier le témoin et pouvoir le recontacter. "
                 "L’A.P.J. enregistre la petite identité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Le témoin peut se domicilier à une autre adresse que la sienne (",
                 ),
                 TextSpan(
                   text: "article 706-57 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ") ou déposer de manière anonyme ("),
+                TextSpan(text: ") ou déposer de manière anonyme ("),
                 TextSpan(
                   text: "article 706-58 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Petite identité : état civil + éléments de contact utiles.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Mentionner clairement toute modalité particulière (domiciliation / anonymat).",
               ),
@@ -510,7 +510,7 @@ class _FullScreenAssetImage extends StatelessWidget {
               top: 12,
               left: 12,
               child: Material(
-                color: Colors.black.withOpacity(.45),
+                color: Colors.black.withValues(alpha: .45),
                 shape: const CircleBorder(),
                 child: IconButton(
                   icon: const Icon(Icons.close_rounded, color: Colors.white),
@@ -550,10 +550,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -618,7 +618,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -661,7 +661,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -723,7 +723,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -734,10 +734,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -749,13 +748,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -768,13 +766,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

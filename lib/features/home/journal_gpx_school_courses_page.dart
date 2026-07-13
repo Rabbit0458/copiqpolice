@@ -67,7 +67,7 @@ class _JournalGpxSchoolCoursesPageState
   // ---------------------------------------------------------------------------
 
   List<_DeckItem> _buildAllModules() {
-    final raw = school.gpxSchoolCategoriesConfig;
+    const raw = school.gpxSchoolCategoriesConfig;
 
     final q = _searchCtrl.text.trim().toLowerCase();
     final hasSearch = q.isNotEmpty;
@@ -494,7 +494,7 @@ class _ModuleCardState extends State<ModuleCard> with TickerProviderStateMixin {
         }
 
         // CTA bg (ton gris)
-        final ctaBg = const ui.Color.fromARGB(255, 71, 75, 83);
+        const ctaBg = ui.Color.fromARGB(255, 71, 75, 83);
 
         return GestureDetector(
           onTap: widget.onTap,

@@ -90,7 +90,7 @@ class QuizQuestion {
 }
 
 final List<QuizQuestion> questionPsycotechniquesCalcul = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 3 ?",
     options: ["6", "7", "8"],
@@ -99,7 +99,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 4 ?",
     options: ["8", "9", "10"],
@@ -108,7 +108,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 ?",
     options: ["10", "12", "14"],
@@ -117,7 +117,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 ?",
     options: ["4", "5", "6"],
@@ -126,7 +126,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 9 - 4 ?",
     options: ["18", "20", "22"],
@@ -135,7 +135,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 2) ?",
     options: ["16", "18", "20"],
@@ -144,7 +144,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 ?",
     options: ["18", "20", "24"],
@@ -153,7 +153,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 3 ?",
     options: ["6", "7", "8"],
@@ -162,7 +162,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 10 - 5 ?",
     options: ["15", "16", "17"],
@@ -171,7 +171,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 × 3 ?",
     options: ["18", "12", "15"],
@@ -181,7 +181,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 1) - 10 ?",
     options: ["18", "20", "22"],
@@ -190,7 +190,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 × 2) + 5 ?",
     options: ["8", "9", "10"],
@@ -199,7 +199,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 + 6 ?",
     options: ["10", "11", "12"],
@@ -208,7 +208,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 10 ÷ 2 ?",
     options: ["20", "25", "15"],
@@ -217,7 +217,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 2 - 4 ?",
     options: ["12", "14", "16"],
@@ -226,7 +226,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 - 3 + 2 ?",
     options: ["6", "7", "8"],
@@ -235,7 +235,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 4 ?",
     options: ["6", "8", "10"],
@@ -244,7 +244,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 2 × 3 ?",
     options: ["12", "16", "18"],
@@ -253,7 +253,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × 2 - 8 ?",
     options: ["12", "14", "16"],
@@ -262,7 +262,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 2 + 5 ?",
     options: ["12", "13", "14"],
@@ -271,7 +271,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 3 ?",
     options: ["6", "7", "9"],
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 ÷ 3 ?",
     options: ["4", "5", "6"],
@@ -289,7 +289,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 5 - 3 ?",
     options: ["9", "10", "11"],
@@ -298,7 +298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 2 × 3 ?",
     options: ["4", "6", "8"],
@@ -307,7 +307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 4 ?",
     options: ["2", "3", "4"],
@@ -316,7 +316,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 3) ?",
     options: ["20", "25", "30"],
@@ -325,7 +325,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 4) ÷ 4 + 2 ?",
     options: ["3", "4", "5"],
@@ -334,7 +334,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 - 2) × 3 ?",
     options: ["15", "21", "27"],
@@ -343,7 +343,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × (2 - 1) ?",
     options: ["8", "10", "16"],
@@ -352,7 +352,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 7 ?",
     options: ["10", "11", "12"],
@@ -361,7 +361,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 3 × 2 ?",
     options: ["8", "9", "10"],
@@ -370,7 +370,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 - 5 ?",
     options: ["13", "15", "18"],
@@ -379,7 +379,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ 2 + 1 ?",
     options: ["5", "6", "7"],
@@ -388,7 +388,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (2 + 2) ?",
     options: ["2", "3", "4"],
@@ -397,7 +397,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 - 6 ?",
     options: ["14", "18", "20"],
@@ -406,7 +406,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 3) × 2 - 5 ?",
     options: ["15", "20", "25"],
@@ -415,7 +415,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 3 ?",
     options: ["6", "7", "8"],
@@ -424,7 +424,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 4 - 5 ?",
     options: ["4", "5", "6"],
@@ -433,7 +433,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 + 3 - 2 = ?",
     options: ["6", "7", "8"],
@@ -442,7 +442,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 ÷ 4 + 1 = ?",
     options: ["3", "4", "5"],
@@ -451,7 +451,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × 4 - 2 = ?",
     options: ["10", "11", "12"],
@@ -460,7 +460,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 ÷ 2 + 3 = ?",
     options: ["5", "6", "7"],
@@ -469,7 +469,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 2 = ?",
     options: ["16", "14", "18"],
@@ -478,7 +478,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 4) ÷ 2 = ?",
     options: ["4", "5", "6"],
@@ -487,7 +487,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × 3 - 5 = ?",
     options: ["22", "24", "26"],
@@ -496,7 +496,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 3) + (5 × 2) = ?",
     options: ["11", "12", "13"],
@@ -505,7 +505,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) ÷ 4 + 3 = ?",
     options: ["4", "5", "6"],
@@ -514,7 +514,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 15) ÷ 4 = ?",
     options: ["5", "6", "7"],
@@ -523,7 +523,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 - 10) ÷ 4 + 2 = ?",
     options: ["6", "7", "8"],
@@ -532,7 +532,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(50 ÷ 5) + (10 × 2) = ?",
     options: ["20", "25", "30"],
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "50 divisé par 5 donne 10, plus 20 donne 30.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 5 ?",
     options: ["12", "13", "14"],
@@ -549,7 +549,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 7 ?",
     options: ["6", "7", "8"],
@@ -558,7 +558,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 ?",
     options: ["27", "28", "26"],
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 15 - 5 ?",
     options: ["20", "25", "30"],
@@ -576,7 +576,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 5 + 2 ?",
     options: ["11", "10", "9"],
@@ -585,7 +585,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 + 4 ?",
     options: ["16", "14", "12"],
@@ -594,7 +594,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 2 ?",
     options: ["16", "14", "12"],
@@ -603,7 +603,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 7 ?",
     options: ["14", "13", "15"],
@@ -612,7 +612,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 9 ?",
     options: ["16", "15", "14"],
@@ -621,7 +621,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 5 ?",
     options: ["16", "21", "18"],
@@ -630,7 +630,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 10 ?",
     options: ["20", "15", "25"],
@@ -639,7 +639,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) ÷ 2 ?",
     options: ["5", "6", "4"],
@@ -648,7 +648,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 4 ?",
     options: ["15", "14", "16"],
@@ -657,7 +657,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 4 + 6 ?",
     options: ["14", "12", "10"],
@@ -666,7 +666,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 1) ?",
     options: ["20", "25", "30"],
@@ -675,7 +675,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 2 + 6 ?",
     options: ["7", "8", "10"],
@@ -684,7 +684,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 + 4 + 4 ?",
     options: ["10", "11", "12"],
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 ?",
     options: ["16", "17", "18"],
@@ -702,7 +702,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 ?",
     options: ["7", "8", "9"],
@@ -711,7 +711,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 5 - 3 ?",
     options: ["17", "18", "19"],
@@ -720,7 +720,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + 3 ?",
     options: ["8", "9", "10"],
@@ -730,7 +730,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × 2 ?",
     options: ["18", "20", "22"],
@@ -739,7 +739,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 4) ?",
     options: ["12", "14", "16"],
@@ -748,7 +748,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (8 ÷ 2) ?",
     options: ["21", "22", "23"],
@@ -757,7 +757,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (5 + 1) ?",
     options: ["48", "50", "54"],
@@ -767,7 +767,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 5) - 2 ?",
     options: ["25", "26", "27"],
@@ -777,7 +777,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (16 ÷ 4) + (5 × 3) ?",
     options: ["18", "19", "20"],
@@ -787,7 +787,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 × 2) + 5 ?",
     options: ["10", "11", "12"],
@@ -797,7 +797,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 + 1) - 2 ?",
     options: ["22", "23", "24"],
@@ -807,7 +807,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (4 + 2) × 2 ?",
     options: ["8", "10", "12"],
@@ -817,7 +817,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 + 5) ?",
     options: ["2", "3", "5"],
@@ -826,7 +826,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 3 - 1 ?",
     options: ["23", "24", "25"],
@@ -835,7 +835,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 + 2 × 3 ?",
     options: ["10", "12", "14"],
@@ -845,7 +845,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - 25 ÷ 5 ?",
     options: ["95", "96", "97"],
@@ -854,7 +854,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 + 5 = ?",
     options: ["11", "12", "13"],
@@ -864,7 +864,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × 2 ÷ 3 = ?",
     options: ["6", "5", "8"],
@@ -873,7 +873,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 5 + 10 = ?",
     options: ["20", "25", "15"],
@@ -882,7 +882,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 ÷ 4 + 6 = ?",
     options: ["10", "12", "8"],
@@ -891,7 +891,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 2) × 4 = ?",
     options: ["20", "15", "25"],
@@ -900,7 +900,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 3 = ?",
     options: ["24", "30", "20"],
@@ -909,7 +909,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 4) ÷ 2 × 5 = ?",
     options: ["25", "20", "30"],
@@ -919,7 +919,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 ÷ 2) + (6 × 3) = ?",
     options: ["20", "22", "18"],
@@ -929,7 +929,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 2) + (3 × 4) = ?",
     options: ["26", "22", "20"],
@@ -939,7 +939,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 - 4) × (3 + 1) = ?",
     options: ["32", "28", "36"],
@@ -949,7 +949,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 5) × (2 - 1) = ?",
     options: ["12", "14", "24"],
@@ -959,7 +959,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 5) - (6 ÷ 2) = ?",
     options: ["18", "20", "22"],
@@ -969,7 +969,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) ÷ 2 + 3 = ?",
     options: ["7", "8", "6"],
@@ -978,7 +978,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 − 3) × (2 + 1) = ?",
     options: ["18", "21", "20"],
@@ -988,7 +988,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 ÷ 3) + (5 × 2) = ?",
     options: ["20", "15", "10"],
@@ -998,7 +998,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 × 3) ÷ 4 + 6 = ?",
     options: ["12", "18", "14"],
@@ -1007,7 +1007,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "8 multiplié par 3 est 24, divisé par 4 donne 6, ajouté à 6 donne 12.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 4 ?",
     options: ["11", "12", "13"],
@@ -1016,7 +1016,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 56 ÷ 7 ?",
     options: ["6", "7", "8"],
@@ -1025,7 +1025,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 9 + 3 ?",
     options: ["12", "13", "14"],
@@ -1034,7 +1034,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 - 5 ?",
     options: ["7", "8", "9"],
@@ -1043,7 +1043,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × 3 ?",
     options: ["14", "16", "18"],
@@ -1053,7 +1053,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 2) × 3 ?",
     options: ["18", "20", "21"],
@@ -1063,7 +1063,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (2 + 4) - 5 ?",
     options: ["15", "16", "17"],
@@ -1073,7 +1073,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - 25 ÷ 5 ?",
     options: ["95", "90", "85"],
@@ -1083,7 +1083,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 ÷ 3 ?",
     options: ["10", "11", "12"],
@@ -1092,7 +1092,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 5 + 10 ÷ 2 ?",
     options: ["20", "25", "22"],
@@ -1102,7 +1102,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 80 ÷ 4 + 10 ?",
     options: ["20", "30", "25"],
@@ -1111,7 +1111,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 5 ?",
     options: ["35", "40", "45"],
@@ -1121,7 +1121,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 10 - 5 ?",
     options: ["20", "25", "30"],
@@ -1130,7 +1130,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 2 ?",
     options: ["4", "6", "8"],
@@ -1139,7 +1139,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) ?",
     options: ["10", "15", "20"],
@@ -1148,7 +1148,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) × 2 ?",
     options: ["20", "22", "24"],
@@ -1157,7 +1157,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 5 × (2 + 3) ?",
     options: ["5", "10", "15"],
@@ -1166,7 +1166,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + (3 × 4) ?",
     options: ["10", "12", "14"],
@@ -1175,7 +1175,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (2 + 1) ?",
     options: ["12", "15", "18"],
@@ -1184,7 +1184,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (6 ÷ 2) ?",
     options: ["10", "11", "12"],
@@ -1193,7 +1193,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 3 + 6 ?",
     options: ["12", "15", "18"],
@@ -1202,7 +1202,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 + 1 = ?",
     options: ["7", "8", "9"],
@@ -1211,7 +1211,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ 4 + 3 = ?",
     options: ["5", "8", "7"],
@@ -1220,7 +1220,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) × 2 = ?",
     options: ["14", "16", "12"],
@@ -1230,7 +1230,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 3) ÷ 3 = ?",
     options: ["4", "5", "6"],
@@ -1239,7 +1239,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ (2 + 4) = ?",
     options: ["3", "2", "4"],
@@ -1249,7 +1249,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × (2 - 1) = ?",
     options: ["6", "8", "10"],
@@ -1259,7 +1259,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 2 + 4 = ?",
     options: ["16", "18", "20"],
@@ -1269,7 +1269,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 5) ÷ (2 - 1) × 3 = ?",
     options: ["36", "24", "12"],
@@ -1279,7 +1279,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (4 + 2) = ?",
     options: ["36", "24", "30"],
@@ -1289,7 +1289,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 ÷ 2) + (3 × 4) = ?",
     options: ["14", "16", "10"],
@@ -1299,7 +1299,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 4) - (8 ÷ 2) = ?",
     options: ["20", "22", "24"],
@@ -1309,7 +1309,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 5) - (3 × 2) = ?",
     options: ["14", "15", "13"],
@@ -1318,7 +1318,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 ÷ 5) + (6 × 2) = ?",
     options: ["17", "18", "16"],
@@ -1328,7 +1328,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 ?",
     options: ["18", "20", "16"],
@@ -1337,7 +1337,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 - 3 ?",
     options: ["15", "12", "18"],
@@ -1346,7 +1346,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 3 ?",
     options: ["4", "3", "5"],
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (2 + 1) ?",
     options: ["21", "20", "23"],
@@ -1364,7 +1364,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 × 3) ?",
     options: ["20", "30", "15"],
@@ -1373,7 +1373,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 5 ?",
     options: ["40", "30", "50"],
@@ -1382,7 +1382,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) - 8 ?",
     options: ["24", "16", "20"],
@@ -1391,7 +1391,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 4) ?",
     options: ["5", "4", "6"],
@@ -1400,7 +1400,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (2 × 5) ?",
     options: ["15", "10", "5"],
@@ -1409,7 +1409,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 4 ?",
     options: ["10", "12", "8"],
@@ -1418,7 +1418,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 9 - 5 ?",
     options: ["10", "11", "12"],
@@ -1427,7 +1427,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 × 4) ?",
     options: ["6", "8", "10"],
@@ -1437,7 +1437,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 2) ?",
     options: ["20", "25", "30"],
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ (2 + 3) ?",
     options: ["3", "4", "5"],
@@ -1455,7 +1455,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (6 ÷ 2) ?",
     options: ["36", "32", "24"],
@@ -1464,7 +1464,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 3) × (5 - 2) ?",
     options: ["15", "20", "30"],
@@ -1472,7 +1472,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "La somme de 7 et 3 est 10, multipliée par 3 donne 30.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 - 10 ?",
     options: ["17", "18", "19"],
@@ -1481,7 +1481,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 4 + 2 ?",
     options: ["22", "26", "24"],
@@ -1490,7 +1490,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 3 × 2 ?",
     options: ["12", "15", "9"],
@@ -1499,7 +1499,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 - 3) ?",
     options: ["10", "15", "20"],
@@ -1508,7 +1508,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 7) - 5 ?",
     options: ["45", "40", "35"],
@@ -1517,7 +1517,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) × (3 + 1) ?",
     options: ["24", "30", "20"],
@@ -1526,7 +1526,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) + 4 ?",
     options: ["16", "18", "20"],
@@ -1535,7 +1535,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 ÷ 2 ?",
     options: ["16", "18", "14"],
@@ -1544,7 +1544,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 4 ?",
     options: ["10", "8", "6"],
@@ -1553,7 +1553,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 × 10) + 5 ?",
     options: ["45", "40", "35"],
@@ -1562,7 +1562,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 5 ?",
     options: ["12", "10", "15"],
@@ -1571,7 +1571,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 8 ?",
     options: ["12", "10", "15"],
@@ -1580,7 +1580,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 3 ?",
     options: ["12", "10", "15"],
@@ -1589,7 +1589,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 7 + 4 ?",
     options: ["12", "10", "15"],
@@ -1598,7 +1598,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 + 3) ?",
     options: ["10", "8", "12"],
@@ -1607,7 +1607,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (2 × 3) ?",
     options: ["12", "10", "15"],
@@ -1616,7 +1616,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) × 3 ?",
     options: ["18", "12", "15"],
@@ -1625,7 +1625,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 2) ?",
     options: ["10", "12", "15"],
@@ -1635,7 +1635,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 ?",
     options: ["12", "14", "16"],
@@ -1644,7 +1644,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 3 ?",
     options: ["10", "12", "15"],
@@ -1653,7 +1653,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (3 × 2) ?",
     options: ["9", "11", "12"],
@@ -1662,7 +1662,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) ?",
     options: ["24", "32", "28"],
@@ -1671,7 +1671,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × (5 - 3) ?",
     options: ["16", "12", "8"],
@@ -1680,7 +1680,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 2 × 4 ?",
     options: ["27", "23", "19"],
@@ -1689,7 +1689,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 ÷ 2) + (6 × 3) ?",
     options: ["24", "30", "21"],
@@ -1698,7 +1698,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 4) + 2 ?",
     options: ["15", "20", "17"],
@@ -1707,7 +1707,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 1) - 6 ?",
     options: ["18", "20", "22"],
@@ -1716,7 +1716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 + 4 × 2 ?",
     options: ["14", "16", "12"],
@@ -1725,7 +1725,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (5 × 6) + 10 ?",
     options: ["40", "44", "50"],
@@ -1734,7 +1734,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 ?",
     options: ["12", "10", "15"],
@@ -1743,7 +1743,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 × 3 ?",
     options: ["8", "12", "16"],
@@ -1753,7 +1753,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 6 ?",
     options: ["16", "14", "12"],
@@ -1763,7 +1763,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (3 + 1) ?",
     options: ["32", "24", "28"],
@@ -1773,7 +1773,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + (4 × 2) - 5 ?",
     options: ["9", "12", "10"],
@@ -1783,7 +1783,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 8 ÷ 4 ?",
     options: ["19", "20", "21"],
@@ -1793,7 +1793,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 15 ÷ 3 ?",
     options: ["12", "14", "18"],
@@ -1802,7 +1802,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 - 3 + 2 ?",
     options: ["8", "9", "10"],
@@ -1811,7 +1811,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 7 ?",
     options: ["5", "4", "6"],
@@ -1820,7 +1820,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 4 ?",
     options: ["17", "18", "19"],
@@ -1829,7 +1829,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (3 - 1) ?",
     options: ["12", "14", "16"],
@@ -1838,7 +1838,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 2 ?",
     options: ["18", "20", "22"],
@@ -1847,7 +1847,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 × 2 ?",
     options: ["21", "20", "19"],
@@ -1856,7 +1856,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (4 - 2) ?",
     options: ["16", "14", "12"],
@@ -1866,7 +1866,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 × 3) + 4 ?",
     options: ["8", "6", "10"],
@@ -1875,7 +1875,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 - 2) × (3 + 1) ?",
     options: ["20", "15", "25"],
@@ -1884,7 +1884,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 4 × 3 ?",
     options: ["9", "12", "10"],
@@ -1893,7 +1893,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 + 5) + 3 ?",
     options: ["8", "10", "7"],
@@ -1902,7 +1902,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 4 ?",
     options: ["5", "6", "7"],
@@ -1911,7 +1911,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 4 ?",
     options: ["2", "3", "4"],
@@ -1920,7 +1920,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 9 + 2 ?",
     options: ["6", "7", "8"],
@@ -1928,7 +1928,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "15 moins 9 plus 2 donne 8.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 9 - 5 ?",
     options: ["19", "20", "21"],
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 6 + 3 ?",
     options: ["11", "10", "12"],
@@ -1946,7 +1946,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (7 - 2) ?",
     options: ["15", "20", "10"],
@@ -1955,7 +1955,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 2) × (8 - 3) ?",
     options: ["25", "20", "15"],
@@ -1965,7 +1965,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (6 - 2) + 3 ?",
     options: ["19", "20", "18"],
@@ -1974,7 +1974,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 4) × (5 + 1) ?",
     options: ["36", "30", "24"],
@@ -1984,7 +1984,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 3) ÷ 3 × 4 ?",
     options: ["16", "12", "20"],
@@ -1994,7 +1994,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 × 2) + 5 ?",
     options: ["19", "20", "21"],
@@ -2003,7 +2003,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 6 × 7 ?",
     options: ["42", "36", "48"],
@@ -2012,7 +2012,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 5 - 3 ?",
     options: ["10", "11", "12"],
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (2 + 3) ?",
     options: ["30", "35", "40"],
@@ -2030,7 +2030,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 5 ?",
     options: ["9", "14", "15"],
@@ -2039,7 +2039,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 2 × (3 + 1) ?",
     options: ["7", "11", "9"],
@@ -2048,7 +2048,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (3 - 1) + 4 ?",
     options: ["20", "24", "28"],
@@ -2058,7 +2058,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) ÷ 4 + 3 ?",
     options: ["4", "5", "6"],
@@ -2068,7 +2068,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 3) × 2 - 6 ?",
     options: ["12", "18", "24"],
@@ -2077,7 +2077,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (4 - 2) + 6 ?",
     options: ["10", "16", "12"],
@@ -2087,7 +2087,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 3 ?",
     options: ["18", "21", "22"],
@@ -2096,7 +2096,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 7) ?",
     options: ["8", "14", "26"],
@@ -2105,7 +2105,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 5) ?",
     options: ["27", "27", "30"],
@@ -2114,7 +2114,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 4) - 5 ?",
     options: ["30", "25", "20"],
@@ -2123,7 +2123,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (6 ÷ 2) × 3 ?",
     options: ["20", "24", "26"],
@@ -2132,7 +2132,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 5) ÷ 3 + 2 ?",
     options: ["5", "7", "8"],
@@ -2141,7 +2141,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 4) + 3 ?",
     options: ["18", "20", "22"],
@@ -2150,7 +2150,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 5 ?",
     options: ["19", "21", "17"],
@@ -2159,7 +2159,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (2 × 10) ?",
     options: ["10", "20", "15"],
@@ -2168,7 +2168,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 + 3 × 4 ?",
     options: ["14", "20", "18"],
@@ -2177,7 +2177,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 3 + 6 ?",
     options: ["8", "10", "6"],
@@ -2186,7 +2186,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 + 5) × 2 ?",
     options: ["15", "5", "10"],
@@ -2195,7 +2195,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 4 ?",
     options: ["5", "6", "7"],
@@ -2204,7 +2204,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 3 ?",
     options: ["5", "6", "7"],
@@ -2213,7 +2213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 8 ?",
     options: ["12", "13", "14"],
@@ -2222,7 +2222,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 - 5 ?",
     options: ["10", "13", "15"],
@@ -2231,7 +2231,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 - 2) ?",
     options: ["20", "25", "30"],
@@ -2240,7 +2240,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 3 × 2 ?",
     options: ["10", "13", "17"],
@@ -2249,7 +2249,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 ÷ 2) ?",
     options: ["27", "28", "29"],
@@ -2258,7 +2258,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 4 + 2 ?",
     options: ["14", "16", "18"],
@@ -2267,7 +2267,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 10 + 5 ?",
     options: ["15", "20", "25"],
@@ -2276,7 +2276,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 + 2) ?",
     options: ["4", "5", "6"],
@@ -2285,7 +2285,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (8 + 4) × 2 ?",
     options: ["20", "24", "22"],
@@ -2294,7 +2294,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 × 4) ?",
     options: ["10", "20", "30"],
@@ -2303,7 +2303,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × (3 - 1) ?",
     options: ["12", "16", "14"],
@@ -2313,7 +2313,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 + 5) ?",
     options: ["5", "10", "15"],
@@ -2322,7 +2322,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 3) + (6 ÷ 2) ?",
     options: ["14", "16", "12"],
@@ -2331,7 +2331,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (3 × 7) ?",
     options: ["9", "12", "15"],
@@ -2340,7 +2340,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 7 + 2 ?",
     options: ["8", "9", "10"],
@@ -2349,7 +2349,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × 2 ?",
     options: ["14", "16", "18"],
@@ -2358,7 +2358,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (2 + 4) ?",
     options: ["3", "4", "5"],
@@ -2367,7 +2367,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 4 + 6 ?",
     options: ["34", "38", "40"],
@@ -2376,7 +2376,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (2 - 1) ?",
     options: ["8", "10", "12"],
@@ -2385,7 +2385,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "La somme de 5 et 3 multipliée par la différence de 2 et 1 donne 8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 12 - 4 ?",
     options: ["8", "9", "7"],
@@ -2394,7 +2394,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 3 x 4 ?",
     options: ["12", "10", "14"],
@@ -2403,7 +2403,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 5 ?",
     options: ["4", "5", "3"],
@@ -2412,7 +2412,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 15 + 9 - 5 ?",
     options: ["19", "20", "21"],
@@ -2421,7 +2421,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la différence entre 50 et 18 + 12 ?",
     options: ["20", "22", "18"],
@@ -2430,7 +2430,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) x 3 ?",
     options: ["30", "24", "36"],
@@ -2439,7 +2439,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 x 3 - 10 ?",
     options: ["14", "22", "24"],
@@ -2448,7 +2448,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 2 x 5 ?",
     options: ["16", "12", "10"],
@@ -2458,7 +2458,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (5 + 3) x 2 - 4 ?",
     options: ["12", "14", "10"],
@@ -2467,7 +2467,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 x 4) ?",
     options: ["13", "17", "15"],
@@ -2476,7 +2476,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 3 x 4 + 2 ?",
     options: ["14", "10", "12"],
@@ -2485,7 +2485,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 7 ?",
     options: ["15", "16", "14"],
@@ -2494,7 +2494,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 9 ?",
     options: ["6", "5", "4"],
@@ -2503,7 +2503,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 ?",
     options: ["5", "6", "7"],
@@ -2512,7 +2512,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 12 × 3 ?",
     options: ["36", "34", "38"],
@@ -2521,7 +2521,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 - 7 + 3 ?",
     options: ["20", "21", "22"],
@@ -2530,7 +2530,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (2 + 1) ?",
     options: ["27", "28", "26"],
@@ -2539,7 +2539,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 3) × 2 ?",
     options: ["20", "22", "18"],
@@ -2548,7 +2548,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 × 4) ?",
     options: ["18", "20", "22"],
@@ -2557,7 +2557,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 5) - 4 ?",
     options: ["12", "10", "8"],
@@ -2566,7 +2566,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × (3 - 1) ?",
     options: ["20", "24", "22"],
@@ -2575,7 +2575,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 15 ?",
     options: ["25", "30", "35"],
@@ -2584,7 +2584,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 6 - (4 + 2) ?",
     options: ["28", "30", "26"],
@@ -2593,7 +2593,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (2 + 2) × 5 ?",
     options: ["50", "40", "60"],
@@ -2602,7 +2602,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 12 - 4 ?",
     options: ["8", "9", "7"],
@@ -2611,7 +2611,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 20 ÷ 5 ?",
     options: ["4", "5", "6"],
@@ -2620,7 +2620,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 6 × (2 + 1) ?",
     options: ["18", "12", "15"],
@@ -2629,7 +2629,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculer 9 - (3 × 2) ?",
     options: ["3", "5", "4"],
@@ -2638,7 +2638,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (6 + 2) × 3 - 5 ?",
     options: ["19", "17", "21"],
@@ -2648,7 +2648,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 - (3 + 2) ?",
     options: ["15", "10", "20"],
@@ -2658,7 +2658,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculer 18 ÷ (2 + 4) + 3 ?",
     options: ["6", "5", "4"],
@@ -2668,7 +2668,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (5 × 4) + 2 ?",
     options: ["12", "22", "18"],
@@ -2677,7 +2677,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 50 ÷ (5 + 5) × 2 ?",
     options: ["5", "10", "15"],
@@ -2687,7 +2687,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculer (3 + 4) × (2 - 1) ?",
     options: ["7", "6", "8"],
@@ -2696,7 +2696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 4 ?",
     options: ["20", "24", "18"],
@@ -2705,7 +2705,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 4 ?",
     options: ["11", "10", "12"],
@@ -2714,7 +2714,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 7 ?",
     options: ["22", "20", "17"],
@@ -2723,7 +2723,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) ÷ 2 + 4 ?",
     options: ["8", "10", "7"],
@@ -2733,7 +2733,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + (6 - 2) × 3 ?",
     options: ["23", "22", "21"],
@@ -2743,7 +2743,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 2) - 4 ?",
     options: ["21", "22", "19"],
@@ -2753,7 +2753,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 5 ?",
     options: ["22", "27", "32"],
@@ -2762,7 +2762,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + (6 ÷ 2) ?",
     options: ["12", "13", "14"],
@@ -2771,7 +2771,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 4 + 2 ?",
     options: ["20", "22", "18"],
@@ -2780,7 +2780,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 6 ?",
     options: ["8", "9", "10"],
@@ -2789,7 +2789,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 5) ÷ 3 ?",
     options: ["5", "4", "3"],
@@ -2798,7 +2798,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 7 + 2 ?",
     options: ["11", "13", "9"],
@@ -2807,7 +2807,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 1) ?",
     options: ["12", "16", "8"],
@@ -2816,7 +2816,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 5) ÷ 3 ?",
     options: ["5", "4", "3"],
@@ -2825,7 +2825,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 - 2 ?",
     options: ["13", "15", "10"],
@@ -2834,7 +2834,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 4 + 6 ?",
     options: ["8", "10", "12"],
@@ -2842,7 +2842,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "Diviser 8 par 4 donne 2, puis 2 + 6 donne 10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 7 ?",
     options: ["12", "13", "14"],
@@ -2851,7 +2851,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 81 ÷ 9 ?",
     options: ["7", "8", "9"],
@@ -2860,7 +2860,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 5 ?",
     options: ["15", "16", "14"],
@@ -2869,7 +2869,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 2 × 10 ?",
     options: ["30", "40", "20"],
@@ -2878,7 +2878,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 × 2) - 5 ?",
     options: ["16", "17", "18"],
@@ -2887,7 +2887,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) - 6 ?",
     options: ["22", "26", "30"],
@@ -2896,7 +2896,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 3) + (4 × 2) ?",
     options: ["10", "8", "12"],
@@ -2905,7 +2905,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 5 × 3 ?",
     options: ["10", "15", "20"],
@@ -2914,7 +2914,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 7 ?",
     options: ["12", "10", "13"],
@@ -2923,7 +2923,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 6 ?",
     options: ["9", "8", "7"],
@@ -2932,7 +2932,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 ?",
     options: ["24", "18", "20"],
@@ -2941,7 +2941,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 4 ?",
     options: ["14", "12", "10"],
@@ -2950,7 +2950,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 5) - 6 ?",
     options: ["21", "27", "18"],
@@ -2959,7 +2959,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × (2 + 1) ?",
     options: ["15", "12", "18"],
@@ -2968,7 +2968,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (20 ÷ 4) × 3 ?",
     options: ["75", "85", "70"],
@@ -2977,7 +2977,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 + 4 ÷ 2 ?",
     options: ["22", "23", "21"],
@@ -2986,7 +2986,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 2 - (5 + 3) ?",
     options: ["12", "10", "8"],
@@ -2995,7 +2995,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 2 - 5 ?",
     options: ["15", "20", "10"],
@@ -3004,7 +3004,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 1) ?",
     options: ["28", "26", "30"],
@@ -3013,7 +3013,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 6) ?",
     options: ["14", "16", "18"],
@@ -3022,7 +3022,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (2 + 1) ?",
     options: ["24", "20", "32"],
@@ -3031,7 +3031,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 + 5) × 2 ?",
     options: ["10", "20", "5"],
@@ -3040,7 +3040,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × (3 + 1) ?",
     options: ["32", "28", "24"],
@@ -3049,7 +3049,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 1) × 5 - 10 ?",
     options: ["40", "38", "42"],
@@ -3058,7 +3058,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (9 ÷ 3) × 2 ?",
     options: ["14", "16", "12"],
@@ -3068,7 +3068,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 2 ?",
     options: ["12", "13", "14"],
@@ -3077,7 +3077,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 ÷ 2) ?",
     options: ["15", "16", "17"],
@@ -3086,7 +3086,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 + 5) × 2 ?",
     options: ["5", "10", "15"],
@@ -3096,7 +3096,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 10 ÷ 5 ?",
     options: ["13", "14", "15"],
@@ -3106,7 +3106,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × (2 - 1) ?",
     options: ["8", "10", "12"],
@@ -3115,7 +3115,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 3 × (2 + 1) ?",
     options: ["12", "15", "18"],
@@ -3125,7 +3125,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 + 4 × 2 ?",
     options: ["8", "10", "12"],
@@ -3135,7 +3135,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) + 2 ?",
     options: ["12", "14", "16"],
@@ -3145,7 +3145,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (2 + 1) ?",
     options: ["18", "20", "22"],
@@ -3155,7 +3155,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (5 × 4) ?",
     options: ["10", "15", "20"],
@@ -3164,7 +3164,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 7 - 3 ?",
     options: ["15", "16", "17"],
@@ -3173,7 +3173,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 5 ?",
     options: ["10", "15", "20"],
@@ -3182,7 +3182,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (9 ÷ 3) ?",
     options: ["42", "43", "44"],
@@ -3191,7 +3191,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 ?",
     options: ["8", "9", "10"],
@@ -3200,7 +3200,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 + 15 - 5 ?",
     options: ["30", "35", "40"],
@@ -3209,7 +3209,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (4 + 2) ?",
     options: ["36", "42", "48"],
@@ -3218,7 +3218,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 20 ÷ 4 ?",
     options: ["45", "48", "47"],
@@ -3227,7 +3227,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 × 2 - 5 ?",
     options: ["19", "20", "21"],
@@ -3236,7 +3236,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) - 10 ?",
     options: ["22", "24", "26"],
@@ -3245,7 +3245,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 - 2) × (5 + 3) ?",
     options: ["40", "36", "42"],
@@ -3254,7 +3254,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 2 + 10 ?",
     options: ["25", "20", "15"],
@@ -3263,7 +3263,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 + 5 ?",
     options: ["35", "30", "25"],
@@ -3272,7 +3272,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 4 + 25 ?",
     options: ["50", "75", "80"],
@@ -3281,7 +3281,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (3 × 10) + 5 ?",
     options: ["35", "40", "45"],
@@ -3290,7 +3290,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) ÷ 2 × 5 ?",
     options: ["20", "25", "30"],
@@ -3298,7 +3298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "(6 + 4) donne 10, et 10 ÷ 2 × 5 donne 25.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 3 ?",
     options: ["12", "9", "15"],
@@ -3307,7 +3307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 2) - 5 ?",
     options: ["13", "10", "15"],
@@ -3317,7 +3317,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (4 × 3) + 7 ?",
     options: ["20", "21", "22"],
@@ -3326,7 +3326,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 - 3) + 10 ?",
     options: ["25", "20", "15"],
@@ -3335,7 +3335,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (4 + 6) ÷ 5 ?",
     options: ["4", "5", "6"],
@@ -3344,7 +3344,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 9 - 4 ?",
     options: ["5", "6", "7"],
@@ -3353,7 +3353,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 15 ÷ 3 ?",
     options: ["4", "5", "6"],
@@ -3362,7 +3362,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 10 × 3 - 5 ?",
     options: ["25", "20", "15"],
@@ -3371,7 +3371,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (6 + 4) ?",
     options: ["8", "10", "12"],
@@ -3380,7 +3380,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 2 × 6 ?",
     options: ["12", "14", "16"],
@@ -3389,7 +3389,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 - 6 ÷ 3 ?",
     options: ["18", "20", "22"],
@@ -3398,7 +3398,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 3 × 3 ?",
     options: ["9", "12", "15"],
@@ -3407,7 +3407,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 4 + 5 × 2 ?",
     options: ["10", "12", "14"],
@@ -3416,7 +3416,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 - (3 + 1) ?",
     options: ["10", "11", "12"],
@@ -3425,7 +3425,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 6 + 2 ?",
     options: ["14", "16", "12"],
@@ -3434,7 +3434,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 3 × 2 ?",
     options: ["10", "11", "12"],
@@ -3444,7 +3444,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × 3 ?",
     options: ["15", "18", "12"],
@@ -3454,7 +3454,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (2 + 2) ?",
     options: ["10", "8", "12"],
@@ -3464,7 +3464,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 5 ?",
     options: ["11", "9", "10"],
@@ -3473,7 +3473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × (3 - 1) ?",
     options: ["20", "30", "10"],
@@ -3483,7 +3483,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 2) + 10 ?",
     options: ["30", "20", "25"],
@@ -3493,7 +3493,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × (4 - 1) + 5 ?",
     options: ["20", "25", "15"],
@@ -3503,7 +3503,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (9 ÷ 3) × 4 ?",
     options: ["33", "36", "30"],
@@ -3513,7 +3513,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 5 + 2 ?",
     options: ["16", "18", "19"],
@@ -3522,7 +3522,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 2 ?",
     options: ["6", "8", "5"],
@@ -3532,7 +3532,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 x 2) ?",
     options: ["3", "5", "7"],
@@ -3542,7 +3542,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 x 10) + 5 ?",
     options: ["35", "40", "30"],
@@ -3552,7 +3552,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 x 3) + (2 x 5) ?",
     options: ["22", "26", "20"],
@@ -3562,7 +3562,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 2 x 3 ?",
     options: ["14", "16", "18"],
@@ -3572,7 +3572,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 - (4 ÷ 2) ?",
     options: ["5", "4", "6"],
@@ -3581,7 +3581,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 x (4 + 2) - 5 ?",
     options: ["15", "10", "12"],
@@ -3591,7 +3591,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 2 - 5 = ?",
     options: ["9", "10", "11"],
@@ -3601,7 +3601,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 - 3 + 2 = ?",
     options: ["5", "6", "7"],
@@ -3611,7 +3611,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 5) × 2 = ?",
     options: ["12", "16", "14"],
@@ -3620,7 +3620,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) ÷ 2 = ?",
     options: ["4", "3", "5"],
@@ -3629,7 +3629,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - (3 × 2) = ?",
     options: ["9", "11", "12"],
@@ -3639,7 +3639,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) + (3 × 2) = ?",
     options: ["11", "10", "12"],
@@ -3648,7 +3648,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 4) × 3 - 5 = ?",
     options: ["25", "28", "20"],
@@ -3658,7 +3658,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (5 × 3) = ?",
     options: ["25", "24", "26"],
@@ -3668,7 +3668,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 ÷ 5) × (6 - 1) = ?",
     options: ["25", "30", "20"],
@@ -3677,7 +3677,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 ÷ 2) + (8 - 3) = ?",
     options: ["12", "15", "10"],
@@ -3686,7 +3686,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 - 4) ÷ 2 + 5 = ?",
     options: ["11", "10", "12"],
@@ -3696,7 +3696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 6) + (7 × 2) = ?",
     options: ["20", "18", "22"],
@@ -3705,7 +3705,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 - 3) ÷ 3 ?",
     options: ["5", "6", "7"],
@@ -3714,7 +3714,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 3 - 5 ?",
     options: ["25", "28", "30"],
@@ -3723,7 +3723,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) ?",
     options: ["5", "7", "10"],
@@ -3732,7 +3732,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (50 - 10) ÷ 2 + 5 ?",
     options: ["25", "30", "35"],
@@ -3741,7 +3741,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 - 10 ?",
     options: ["16", "18", "20"],
@@ -3750,7 +3750,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 2 × 6 ?",
     options: ["36", "30", "28"],
@@ -3759,7 +3759,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (2 + 2) + 5 ?",
     options: ["8", "7", "6"],
@@ -3767,7 +3767,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "12 divisé par (2 + 2) plus 5 donne 8.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 5) × 2 ?",
     options: ["25", "30", "20"],
@@ -3776,7 +3776,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 × 3) - (2 × 4) ?",
     options: ["20", "22", "24"],
@@ -3785,7 +3785,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 2 + 10 ?",
     options: ["20", "25", "30"],
@@ -3794,7 +3794,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 + 1) × 2 ?",
     options: ["6", "8", "10"],
@@ -3803,7 +3803,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 4 - 10 ?",
     options: ["18", "20", "28"],
@@ -3812,7 +3812,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 + 12 ?",
     options: ["32", "20", "28"],
@@ -3821,7 +3821,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 8 - 2 ?",
     options: ["9", "8", "10"],
@@ -3830,7 +3830,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 9 - 3 ?",
     options: ["12", "10", "11"],
@@ -3839,7 +3839,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 3 + 2 ?",
     options: ["15", "16", "17"],
@@ -3848,7 +3848,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 4 ?",
     options: ["32", "36", "28"],
@@ -3857,7 +3857,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 4 × 2 ?",
     options: ["10", "14", "11"],
@@ -3867,7 +3867,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (6 - 2) ?",
     options: ["32", "30", "40"],
@@ -3877,7 +3877,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (4 + 4) ?",
     options: ["2", "3", "4"],
@@ -3886,7 +3886,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 - 1) + 5 ?",
     options: ["19", "18", "20"],
@@ -3896,7 +3896,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (6 - 1) ?",
     options: ["11", "10", "12"],
@@ -3906,7 +3906,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 + 4) ÷ 4 ?",
     options: ["4", "3", "5"],
@@ -3915,7 +3915,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 15 - 7 ?",
     options: ["6", "8", "7"],
@@ -3924,7 +3924,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 12 + 15 - 6 ?",
     options: ["21", "20", "19"],
@@ -3933,7 +3933,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (8 + 2) × 3 ?",
     options: ["30", "24", "32"],
@@ -3942,7 +3942,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 2) - 5 ?",
     options: ["30", "25", "32"],
@@ -3951,7 +3951,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 2 × (6 + 4) ÷ 2 ?",
     options: ["10", "12", "20"],
@@ -3960,7 +3960,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 4 - (3 × 2) ?",
     options: ["14", "18", "16"],
@@ -3969,7 +3969,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 50 - (6 × 7) + 4 ?",
     options: ["12", "14", "10"],
@@ -3978,7 +3978,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 9 ÷ 3 × 2 ?",
     options: ["8", "10", "12"],
@@ -3987,7 +3987,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (5 × 3) + (12 ÷ 4) ?",
     options: ["18", "17", "15"],
@@ -3996,7 +3996,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 4 + 2 × 3 ?",
     options: ["10", "12", "8"],
@@ -4005,7 +4005,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 9 - 6 ?",
     options: ["18", "19", "20"],
@@ -4014,7 +4014,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 7 + 3 ?",
     options: ["20", "21", "22"],
@@ -4023,7 +4023,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (30 ÷ 5) × 2 ?",
     options: ["10", "12", "8"],
@@ -4032,7 +4032,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (2 × 3) - 4 ?",
     options: ["10", "12", "8"],
@@ -4041,7 +4041,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (50 - 20) ÷ 5 + 3 ?",
     options: ["5", "7", "8"],
@@ -4050,7 +4050,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (5 - 2) + 4 ?",
     options: ["22", "20", "24"],
@@ -4059,7 +4059,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × 3 - 4 ?",
     options: ["12", "14", "16"],
@@ -4068,7 +4068,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 4 × 2 ?",
     options: ["10", "12", "14"],
@@ -4077,7 +4077,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (6 + 6) ?",
     options: ["3", "2", "4"],
@@ -4086,7 +4086,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 15 ?",
     options: ["12", "18", "24"],
@@ -4095,7 +4095,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 10 ?",
     options: ["10", "11", "12"],
@@ -4104,7 +4104,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 3 - 5 ?",
     options: ["19", "20", "21"],
@@ -4113,7 +4113,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 2) + 15 ?",
     options: ["20", "25", "30"],
@@ -4122,7 +4122,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 4 × 2 ?",
     options: ["25", "26", "27"],
@@ -4131,7 +4131,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 - (12 ÷ 3) ?",
     options: ["36", "38", "39"],
@@ -4140,7 +4140,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 3 + 2 ?",
     options: ["12", "13", "14"],
@@ -4149,7 +4149,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 2 + 3 ?",
     options: ["9", "10", "11"],
@@ -4158,7 +4158,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 + 4 ?",
     options: ["28", "26", "30"],
@@ -4167,7 +4167,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 + 4 ÷ 2 ?",
     options: ["18", "16", "20"],
@@ -4177,7 +4177,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 + 5) × 2 ?",
     options: ["5", "10", "15"],
@@ -4186,7 +4186,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (6 ÷ 2) ?",
     options: ["20", "19", "18"],
@@ -4196,7 +4196,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 + 8 × 2 ?",
     options: ["20", "24", "16"],
@@ -4205,7 +4205,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 6 - 4 ?",
     options: ["9", "10", "11"],
@@ -4214,7 +4214,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 4) ÷ 4 ?",
     options: ["4", "5", "6"],
@@ -4223,7 +4223,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On soustrait d'abord 4 à 20, puis on divise par 4 : 16 ÷ 4 = 4.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 6 - 3 ?",
     options: ["9", "10", "11"],
@@ -4232,7 +4232,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (2 × 3) + 5 ?",
     options: ["10", "11", "12"],
@@ -4241,7 +4241,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 + 3) × 2 ?",
     options: ["0", "1", "2"],
@@ -4251,7 +4251,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 1) - 6 ?",
     options: ["10", "12", "14"],
@@ -4260,7 +4260,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 3) + 2 ?",
     options: ["17", "18", "19"],
@@ -4269,7 +4269,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 2 + 3 ?",
     options: ["19", "20", "21"],
@@ -4278,7 +4278,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 4) ?",
     options: ["2", "3", "4"],
@@ -4287,7 +4287,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (6 - 2) ?",
     options: ["24", "28", "30"],
@@ -4296,7 +4296,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (3 + 3) ?",
     options: ["3", "4", "5"],
@@ -4305,7 +4305,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 5 ?",
     options: ["11", "12", "13"],
@@ -4314,7 +4314,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 2) × (3 + 1) ?",
     options: ["12", "10", "8"],
@@ -4324,7 +4324,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 2 + 4 ?",
     options: ["10", "8", "6"],
@@ -4333,7 +4333,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × (2 - 1) ?",
     options: ["10", "12", "14"],
@@ -4343,7 +4343,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 + 3) ÷ 2 ?",
     options: ["16", "14", "12"],
@@ -4352,7 +4352,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + (3 × 5) ?",
     options: ["25", "20", "30"],
@@ -4362,7 +4362,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - (4 ÷ 2) ?",
     options: ["25", "26", "27"],
@@ -4372,7 +4372,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × 2 + 3 ?",
     options: ["23", "25", "22"],
@@ -4382,7 +4382,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (2 + 4) ?",
     options: ["18", "21", "20"],
@@ -4391,7 +4391,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 7) ?",
     options: ["8", "2", "5"],
@@ -4400,7 +4400,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 2 + 6 ÷ 3 ?",
     options: ["8", "9", "7"],
@@ -4409,7 +4409,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 + 5 ?",
     options: ["25", "27", "28"],
@@ -4418,7 +4418,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 + 6 ?",
     options: ["10", "9", "8"],
@@ -4427,7 +4427,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 8 ?",
     options: ["13", "21", "15"],
@@ -4436,7 +4436,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 2 - 6 ?",
     options: ["10", "12", "14"],
@@ -4445,7 +4445,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 2 × (3 - 1) ?",
     options: ["10", "12", "8"],
@@ -4454,7 +4454,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 7 - 5 ?",
     options: ["17", "18", "16"],
@@ -4463,7 +4463,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 x 4 - 10 ?",
     options: ["26", "36", "22"],
@@ -4473,7 +4473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 x 4) ?",
     options: ["6", "12", "18"],
@@ -4482,7 +4482,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 7 ?",
     options: ["9", "10", "11"],
@@ -4491,7 +4491,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 x 2) + 5 ?",
     options: ["16", "15", "14"],
@@ -4501,7 +4501,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 8 - 3 ?",
     options: ["12", "11", "13"],
@@ -4510,7 +4510,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 10 ÷ 2 ?",
     options: ["20", "15", "22"],
@@ -4519,7 +4519,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 18 ÷ 2 ?",
     options: ["7", "8", "9"],
@@ -4528,7 +4528,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 14 - 4 ?",
     options: ["19", "20", "21"],
@@ -4537,7 +4537,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (3 × 4) ?",
     options: ["8", "10", "12"],
@@ -4546,7 +4546,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (2 + 3) ?",
     options: ["20", "22", "24"],
@@ -4555,7 +4555,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 + 2 ?",
     options: ["20", "22", "24"],
@@ -4564,7 +4564,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 + 3 ?",
     options: ["10", "11", "12"],
@@ -4573,7 +4573,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 3) + (5 × 2) ?",
     options: ["14", "15", "16"],
@@ -4582,7 +4582,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 6 ÷ 3 = ?",
     options: ["12", "13", "14"],
@@ -4592,7 +4592,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 + (5 × 2) = ?",
     options: ["16", "18", "20"],
@@ -4601,7 +4601,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) + (3 × 5) = ?",
     options: ["15", "16", "17"],
@@ -4611,7 +4611,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 3) - (4 ÷ 2) = ?",
     options: ["17", "18", "19"],
@@ -4621,7 +4621,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 3) × 2 - 6 = ?",
     options: ["12", "14", "16"],
@@ -4631,7 +4631,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 - 5 × 3) ÷ 2 = ?",
     options: ["5", "7", "10"],
@@ -4641,7 +4641,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 3) + (6 × 2) = ?",
     options: ["14", "16", "18"],
@@ -4651,7 +4651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(40 - 8) ÷ (4 + 4) = ?",
     options: ["4", "5", "6"],
@@ -4660,7 +4660,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 ÷ 2) + (10 - 3) = ?",
     options: ["13", "14", "15"],
@@ -4670,7 +4670,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 6) × (2 + 1) = ?",
     options: ["5", "10", "15"],
@@ -4680,7 +4680,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 14 - 6 ?",
     options: ["20", "18", "22"],
@@ -4688,7 +4688,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "12 + 14 - 6 égale 20.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 4 ?",
     options: ["20", "16", "24"],
@@ -4697,7 +4697,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (4 ÷ 2) ?",
     options: ["19", "20", "21"],
@@ -4707,7 +4707,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 3) + 2 ?",
     options: ["14", "15", "16"],
@@ -4716,7 +4716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + (3 × 4) ?",
     options: ["15", "14", "16"],
@@ -4725,7 +4725,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + (2 × 5) - 3 ?",
     options: ["17", "14", "18"],
@@ -4734,7 +4734,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 - 2 ?",
     options: ["18", "20", "22"],
@@ -4743,7 +4743,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 - 2) ?",
     options: ["10", "8", "12"],
@@ -4752,7 +4752,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 4 × 2 ?",
     options: ["14", "16", "12"],
@@ -4762,7 +4762,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 2) × 4 ?",
     options: ["20", "18", "22"],
@@ -4771,7 +4771,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 ÷ 2) ?",
     options: ["47", "48", "49"],
@@ -4780,7 +4780,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 6 × (3 - 1) ?",
     options: ["24", "30", "18"],
@@ -4790,7 +4790,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 5 × 2 ?",
     options: ["16", "14", "18"],
@@ -4800,7 +4800,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 6) - 5 ?",
     options: ["25", "20", "30"],
@@ -4810,7 +4810,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × (2 + 2) ?",
     options: ["20", "25", "15"],
@@ -4820,7 +4820,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 3 × 4 - 2 ?",
     options: ["21", "19", "17"],
@@ -4830,7 +4830,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (2 × 5) + 8 ?",
     options: ["28", "26", "30"],
@@ -4840,7 +4840,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 + 1 ?",
     options: ["19", "20", "18"],
@@ -4849,7 +4849,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 2) × 3 ?",
     options: ["30", "33", "28"],
@@ -4858,7 +4858,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (5 + 3) ?",
     options: ["6", "5", "4"],
@@ -4867,7 +4867,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 × 4) + (6 ÷ 2) ?",
     options: ["14", "12", "16"],
@@ -4876,7 +4876,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 5) - 10 ?",
     options: ["50", "54", "56"],
@@ -4885,7 +4885,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 3) ?",
     options: ["12", "10", "15"],
@@ -4894,7 +4894,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × (4 - 1) ?",
     options: ["24", "20", "18"],
@@ -4903,7 +4903,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 - 3 + 5 ?",
     options: ["13", "12", "14"],
@@ -4912,7 +4912,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 × 3 ?",
     options: ["8", "12", "16"],
@@ -4922,7 +4922,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 6 ?",
     options: ["9", "12", "15"],
@@ -4932,7 +4932,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × (2 + 3) ?",
     options: ["40", "50", "60"],
@@ -4942,7 +4942,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) + 10 ?",
     options: ["15", "20", "25"],
@@ -4952,7 +4952,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (4 + 4) × 5 ?",
     options: ["25", "50", "75"],
@@ -4962,7 +4962,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 2 × (5 + 5) ?",
     options: ["10", "20", "30"],
@@ -4972,7 +4972,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (4 + 1) ?",
     options: ["40", "50", "60"],
@@ -4982,7 +4982,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 + 3 × 2 ?",
     options: ["10", "12", "14"],
@@ -4992,7 +4992,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 6 - 3 ?",
     options: ["13", "14", "12"],
@@ -5001,7 +5001,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 + 2) ?",
     options: ["5", "6", "4"],
@@ -5010,7 +5010,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (2 + 3) - 5 ?",
     options: ["15", "10", "20"],
@@ -5019,7 +5019,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 × 2) ?",
     options: ["5", "10", "15"],
@@ -5028,7 +5028,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 3 + 1 ?",
     options: ["16", "15", "14"],
@@ -5037,7 +5037,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 ÷ 2) × 3 ?",
     options: ["21", "24", "18"],
@@ -5046,7 +5046,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 4 + 5 ?",
     options: ["8", "7", "6"],
@@ -5055,7 +5055,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 3 × 2 ?",
     options: ["12", "15", "18"],
@@ -5064,7 +5064,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 2 ?",
     options: ["6", "7", "8"],
@@ -5073,7 +5073,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × 2 ?",
     options: ["8", "9", "10"],
@@ -5082,7 +5082,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (2 + 3) ?",
     options: ["5", "6", "4"],
@@ -5091,7 +5091,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 - 1) ?",
     options: ["14", "15", "16"],
@@ -5100,7 +5100,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 + 2 ?",
     options: ["17", "18", "19"],
@@ -5109,7 +5109,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + (5 × 2) ?",
     options: ["12", "14", "16"],
@@ -5118,7 +5118,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 ?",
     options: ["4", "5", "6"],
@@ -5127,7 +5127,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 5 - 3 ?",
     options: ["12", "13", "14"],
@@ -5136,7 +5136,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × 2 - 4 ?",
     options: ["12", "14", "16"],
@@ -5145,7 +5145,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 6 ?",
     options: ["20", "22", "24"],
@@ -5153,7 +5153,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "La multiplication de 4 par 6 est 24.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 2 - 5 ?",
     options: ["19", "20", "17"],
@@ -5162,7 +5162,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) ÷ 2 + 3 ?",
     options: ["7", "8", "6"],
@@ -5171,7 +5171,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 1) - 6 ?",
     options: ["14", "20", "10"],
@@ -5180,7 +5180,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (5 + 5) ?",
     options: ["4", "2", "6"],
@@ -5189,7 +5189,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 ÷ 3 ?",
     options: ["11", "13", "14"],
@@ -5198,7 +5198,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 7 ?",
     options: ["19", "20", "18"],
@@ -5207,7 +5207,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 3 ?",
     options: ["24", "22", "26"],
@@ -5216,7 +5216,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 22 - 14 + 5 ?",
     options: ["13", "11", "10"],
@@ -5226,7 +5226,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (8 - 2) + 6 ?",
     options: ["24", "30", "18"],
@@ -5236,7 +5236,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 3) ÷ 3 × 4 ?",
     options: ["16", "12", "18"],
@@ -5246,7 +5246,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (20 ÷ 4) × 5 ?",
     options: ["75", "80", "85"],
@@ -5256,7 +5256,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 + 5) × 2 - 10 ?",
     options: ["20", "30", "40"],
@@ -5266,7 +5266,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 3) + 2 ?",
     options: ["20", "18", "22"],
@@ -5276,7 +5276,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 9 + 1 ?",
     options: ["6", "5", "7"],
@@ -5286,7 +5286,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 4 ?",
     options: ["12", "10", "14"],
@@ -5295,7 +5295,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 3 ?",
     options: ["8", "13", "10"],
@@ -5304,7 +5304,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × (4 - 2) ?",
     options: ["16", "8", "12"],
@@ -5314,7 +5314,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 9 ÷ 3 ?",
     options: ["12", "15", "18"],
@@ -5323,7 +5323,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 - 5 ?",
     options: ["9", "10", "11"],
@@ -5332,7 +5332,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 6 ?",
     options: ["10", "11", "12"],
@@ -5341,7 +5341,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 3 × 2 ?",
     options: ["4", "2", "6"],
@@ -5350,7 +5350,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 6 + 2 ?",
     options: ["9", "7", "11"],
@@ -5359,7 +5359,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 10 ?",
     options: ["6", "14", "4"],
@@ -5368,7 +5368,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 3 - 5 ?",
     options: ["25", "20", "30"],
@@ -5377,7 +5377,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 3) - 4 ÷ 2 ?",
     options: ["23", "24", "22"],
@@ -5386,7 +5386,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (3 × 4) - 5 ?",
     options: ["22", "19", "20"],
@@ -5395,7 +5395,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 × 2) + 4 ?",
     options: ["10", "8", "9"],
@@ -5404,7 +5404,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 × 2) + 3 ?",
     options: ["8", "10", "7"],
@@ -5413,7 +5413,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 ?",
     options: ["6", "5", "7"],
@@ -5422,7 +5422,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 4 + 2 ?",
     options: ["10", "8", "9"],
@@ -5431,7 +5431,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 - 4 ?",
     options: ["11", "10", "12"],
@@ -5440,7 +5440,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 2) ?",
     options: ["35", "30", "25"],
@@ -5449,7 +5449,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (45 ÷ 5) ?",
     options: ["91", "89", "93"],
@@ -5458,7 +5458,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 - 5 ?",
     options: ["19", "21", "18"],
@@ -5468,7 +5468,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - (6 ÷ 2) ?",
     options: ["25", "26", "27"],
@@ -5478,7 +5478,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 4) + 12 - 10 ?",
     options: ["22", "24", "20"],
@@ -5487,7 +5487,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + (9 - 3) × 2 ?",
     options: ["23", "21", "22"],
@@ -5497,7 +5497,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (6 - 2) ?",
     options: ["4", "6", "8"],
@@ -5506,7 +5506,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 × 2 ?",
     options: ["16", "20", "12"],
@@ -5515,7 +5515,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 5 × 2 ?",
     options: ["10", "12", "14"],
@@ -5524,7 +5524,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 10 + 4 × 2 ?",
     options: ["10", "12", "14"],
@@ -5533,7 +5533,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 ÷ 3 ?",
     options: ["6", "3", "9"],
@@ -5542,7 +5542,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 2 × (3 - 1) ?",
     options: ["9", "11", "10"],
@@ -5551,7 +5551,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (6 × 3) ?",
     options: ["26", "22", "24"],
@@ -5560,7 +5560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 2 - (4 + 2) ?",
     options: ["14", "12", "16"],
@@ -5569,7 +5569,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) ?",
     options: ["5", "6", "4"],
@@ -5578,7 +5578,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 1) × 2 - 3 ?",
     options: ["11", "13", "9"],
@@ -5587,7 +5587,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 + 3 ?",
     options: ["10", "11", "12"],
@@ -5596,7 +5596,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 6 × 4 ?",
     options: ["20", "24", "26"],
@@ -5605,7 +5605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 5 × 6 - 10 ?",
     options: ["20", "25", "30"],
@@ -5613,7 +5613,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "5 fois 6 moins 10 est égal à 20.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 5 + 3 ?",
     options: ["7", "8", "9"],
@@ -5622,7 +5622,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 5 ?",
     options: ["6", "7", "8"],
@@ -5631,7 +5631,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 4 × 2 ?",
     options: ["6", "7", "8"],
@@ -5640,7 +5640,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 7 × 3 - 5 ?",
     options: ["16", "17", "18"],
@@ -5649,7 +5649,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 9 - (2 + 3) ?",
     options: ["3", "4", "5"],
@@ -5658,7 +5658,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 ÷ 3 + 5 ?",
     options: ["8", "7", "6"],
@@ -5667,7 +5667,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (10 - 4) × 2 + 6 ?",
     options: ["18", "20", "22"],
@@ -5676,7 +5676,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 2 × (3 + 1) ?",
     options: ["11", "12", "13"],
@@ -5685,7 +5685,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 ÷ 4 + 6 × 2 ?",
     options: ["14", "12", "10"],
@@ -5695,7 +5695,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 6 - 2 ?",
     options: ["10", "11", "12"],
@@ -5704,7 +5704,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 2 × 3 ?",
     options: ["3", "5", "6"],
@@ -5713,7 +5713,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 2 + 6 ÷ 3 ?",
     options: ["8", "10", "12"],
@@ -5723,7 +5723,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 3 + 5 ?",
     options: ["11", "12", "10"],
@@ -5732,7 +5732,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 4 ?",
     options: ["7", "8", "9"],
@@ -5741,7 +5741,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 2) - 6 ?",
     options: ["12", "15", "18"],
@@ -5750,7 +5750,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 4 ?",
     options: ["3", "4", "5"],
@@ -5759,7 +5759,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ (4 - 2) ?",
     options: ["10", "15", "8"],
@@ -5768,7 +5768,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 4 ?",
     options: ["19", "17", "18"],
@@ -5777,7 +5777,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 2 - 5 ?",
     options: ["8", "6", "7"],
@@ -5786,7 +5786,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 7 + 6 ?",
     options: ["8", "10", "12"],
@@ -5795,7 +5795,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 - 4 ?",
     options: ["20", "22", "18"],
@@ -5804,7 +5804,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 25 - 10 ?",
     options: ["30", "25", "20"],
@@ -5813,7 +5813,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 x (2 + 4) ?",
     options: ["36", "42", "24"],
@@ -5822,7 +5822,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 x 5) ?",
     options: ["10", "20", "30"],
@@ -5831,7 +5831,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 x (4 - 1) + 2 ?",
     options: ["23", "21", "20"],
@@ -5841,7 +5841,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) x (5 - 3) ?",
     options: ["24", "20", "26"],
@@ -5851,7 +5851,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 x 4 + 2 x 5 ?",
     options: ["26", "23", "22"],
@@ -5861,7 +5861,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (2 x 5) + 3 ?",
     options: ["13", "8", "10"],
@@ -5870,7 +5870,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 4 x 2 ?",
     options: ["6", "8", "4"],
@@ -5880,7 +5880,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 7 + 3 ?",
     options: ["10", "11", "9"],
@@ -5889,7 +5889,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 2 ?",
     options: ["14", "13", "15"],
@@ -5898,7 +5898,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 2 + 5 ?",
     options: ["6", "5", "7"],
@@ -5907,7 +5907,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 3 ?",
     options: ["8", "7", "6"],
@@ -5916,7 +5916,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 2 - 1 ?",
     options: ["9", "10", "8"],
@@ -5925,7 +5925,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 5) × (2 - 1) ?",
     options: ["9", "8", "10"],
@@ -5934,7 +5934,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 4 ?",
     options: ["7", "8", "9"],
@@ -5943,7 +5943,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 3 ?",
     options: ["8", "10", "11"],
@@ -5952,7 +5952,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (3 × 4) + 5 ?",
     options: ["17", "18", "19"],
@@ -5961,7 +5961,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) ÷ 2 + 3 ?",
     options: ["6", "5", "7"],
@@ -5970,7 +5970,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (5 + 4) ?",
     options: ["18", "19", "20"],
@@ -5979,7 +5979,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (5 + 5) + 2 ?",
     options: ["6", "8", "7"],
@@ -5988,7 +5988,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × 4 + 1 ?",
     options: ["25", "22", "24"],
@@ -5997,7 +5997,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 - 3 ?",
     options: ["16", "17", "18"],
@@ -6006,7 +6006,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (2 × 4) ?",
     options: ["14", "10", "16"],
@@ -6015,7 +6015,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 2) ?",
     options: ["5", "6", "7"],
@@ -6024,7 +6024,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 4 + 2 ?",
     options: ["14", "10", "12"],
@@ -6033,7 +6033,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × 3 ?",
     options: ["24", "28", "30"],
@@ -6042,7 +6042,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 5 × 2 ?",
     options: ["17", "19", "16"],
@@ -6051,7 +6051,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 + 2) × 4 ?",
     options: ["5", "10", "15"],
@@ -6060,7 +6060,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 6 - 2 ?",
     options: ["16", "18", "14"],
@@ -6068,7 +6068,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "12 plus 6 moins 2 donne 16.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 2 ?",
     options: ["10", "12", "11"],
@@ -6078,7 +6078,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 4) - 10 ?",
     options: ["25", "30", "20"],
@@ -6088,7 +6088,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × (6 - 4) ?",
     options: ["12", "14", "16"],
@@ -6098,7 +6098,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 2) × (4 - 1) ?",
     options: ["15", "20", "12"],
@@ -6108,7 +6108,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ 5 + 3 × 2 ?",
     options: ["14", "16", "18"],
@@ -6118,7 +6118,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (5 + 1) ?",
     options: ["36", "42", "30"],
@@ -6128,7 +6128,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (4 × 8) ?",
     options: ["18", "22", "14"],
@@ -6138,7 +6138,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 + 3 × 4 ?",
     options: ["18", "15", "12"],
@@ -6148,7 +6148,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 2) ?",
     options: ["32", "24", "28"],
@@ -6157,7 +6157,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 4 × 3 ?",
     options: ["24", "20", "18"],
@@ -6167,7 +6167,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (4 × 5) ?",
     options: ["10", "20", "15"],
@@ -6176,7 +6176,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 + 3 ?",
     options: ["10", "11", "9"],
@@ -6185,7 +6185,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 9 ?",
     options: ["15", "12", "13"],
@@ -6194,7 +6194,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (6 ÷ 2) ?",
     options: ["22", "23", "20"],
@@ -6203,7 +6203,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 3 ?",
     options: ["10", "11", "9"],
@@ -6212,7 +6212,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 ?",
     options: ["20", "18", "22"],
@@ -6221,7 +6221,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 ?",
     options: ["6", "5", "7"],
@@ -6230,7 +6230,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 - 5 ?",
     options: ["22", "20", "21"],
@@ -6239,7 +6239,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 6 × 2 ?",
     options: ["30", "24", "28"],
@@ -6248,7 +6248,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (7 + 5) ?",
     options: ["36", "40", "42"],
@@ -6257,7 +6257,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 + 4) ?",
     options: ["5", "7", "6"],
@@ -6266,7 +6266,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 6 - 10 ?",
     options: ["20", "25", "30"],
@@ -6275,7 +6275,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × 4 ?",
     options: ["24", "20", "18"],
@@ -6284,7 +6284,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 15 - 10 ?",
     options: ["20", "30", "25"],
@@ -6293,7 +6293,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 ÷ 5) ?",
     options: ["80", "75", "85"],
@@ -6302,7 +6302,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (3 + 1) ÷ 2 ?",
     options: ["16", "12", "14"],
@@ -6312,7 +6312,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 × 2) + 5 ?",
     options: ["10", "12", "8"],
@@ -6322,7 +6322,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 4 × 2 ?",
     options: ["10", "14", "12"],
@@ -6332,7 +6332,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 ÷ 2) + 4 ?",
     options: ["26", "28", "24"],
@@ -6341,7 +6341,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (2 + 2) - 4 ?",
     options: ["28", "32", "24"],
@@ -6351,7 +6351,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 6 ?",
     options: ["4", "5", "6"],
@@ -6360,7 +6360,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 + 9 - 6 ?",
     options: ["21", "22", "23"],
@@ -6369,7 +6369,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 5 - 10 ?",
     options: ["25", "30", "35"],
@@ -6378,7 +6378,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 × 3) + (2 × 4) ?",
     options: ["26", "28", "30"],
@@ -6387,7 +6387,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) × (2 + 1) ?",
     options: ["36", "40", "42"],
@@ -6397,7 +6397,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (4 ÷ 2) + 10 ?",
     options: ["44", "46", "48"],
@@ -6406,7 +6406,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 10) ÷ 2 × 5 ?",
     options: ["50", "60", "70"],
@@ -6416,7 +6416,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 - 1) + 6 ?",
     options: ["12", "14", "16"],
@@ -6425,7 +6425,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 3) - 4 ?",
     options: ["21", "22", "23"],
@@ -6434,7 +6434,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 6 + 2 = ?",
     options: ["11", "10", "9"],
@@ -6443,7 +6443,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × (4 + 2) = ?",
     options: ["18", "21", "12"],
@@ -6453,7 +6453,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 3) × 4 = ?",
     options: ["20", "15", "25"],
@@ -6463,7 +6463,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 5) ÷ 3 = ?",
     options: ["5", "3", "4"],
@@ -6473,7 +6473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) ÷ 2 + 1 = ?",
     options: ["9", "8", "7"],
@@ -6482,7 +6482,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × (4 - 2) = ?",
     options: ["10", "16", "12"],
@@ -6492,7 +6492,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 3) - (5 + 1) = ?",
     options: ["17", "18", "19"],
@@ -6502,7 +6502,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (2 + 1) = ?",
     options: ["18", "24", "12"],
@@ -6512,7 +6512,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 5) + (4 × 2) = ?",
     options: ["14", "12", "16"],
@@ -6521,7 +6521,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 5) × 2 + 3 = ?",
     options: ["23", "20", "25"],
@@ -6531,7 +6531,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(24 ÷ 3) + (6 - 2) = ?",
     options: ["10", "8", "12"],
@@ -6540,7 +6540,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On divise 24 par 3, puis on ajoute le résultat de la soustraction.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 6 + 3 ?",
     options: ["15", "16", "17"],
@@ -6549,7 +6549,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 3) + (10 ÷ 2) ?",
     options: ["16", "18", "20"],
@@ -6558,7 +6558,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (2 + 1) ?",
     options: ["18", "19", "20"],
@@ -6568,7 +6568,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 4) ?",
     options: ["5", "10", "15"],
@@ -6577,7 +6577,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 6 ?",
     options: ["7", "8", "9"],
@@ -6586,7 +6586,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + (3 × 4) ?",
     options: ["12", "14", "16"],
@@ -6595,7 +6595,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 3) × 2 ?",
     options: ["14", "15", "13"],
@@ -6605,7 +6605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (3 × 4) ?",
     options: ["20", "26", "24"],
@@ -6615,7 +6615,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (5 + 3) ?",
     options: ["5", "4", "6"],
@@ -6624,7 +6624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 4) + (3 × 2) ?",
     options: ["9", "8", "10"],
@@ -6634,7 +6634,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 ÷ 5) ?",
     options: ["80", "90", "75"],
@@ -6644,7 +6644,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (2 + 1) - 3 ?",
     options: ["24", "26", "21"],
@@ -6654,7 +6654,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × 2 + 4 ?",
     options: ["24", "26", "20"],
@@ -6664,7 +6664,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 9 - 3 ?",
     options: ["21", "20", "22"],
@@ -6673,7 +6673,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 - (6 × 5) ?",
     options: ["10", "14", "20"],
@@ -6682,7 +6682,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 6 ?",
     options: ["12", "10", "14"],
@@ -6691,7 +6691,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (16 ÷ 4) × (3 + 1) ?",
     options: ["12", "16", "8"],
@@ -6700,7 +6700,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 × 4) + 2 ?",
     options: ["10", "6", "14"],
@@ -6709,7 +6709,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × (5 - 2) ?",
     options: ["15", "10", "20"],
@@ -6718,7 +6718,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 ÷ 2 ?",
     options: ["12", "15", "18"],
@@ -6727,7 +6727,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ (1 + 1) ?",
     options: ["5", "10", "2"],
@@ -6736,7 +6736,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 7 - 3 ?",
     options: ["12", "13", "14"],
@@ -6745,7 +6745,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 4 + 2 ?",
     options: ["16", "15", "17"],
@@ -6754,7 +6754,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 6) - 2 ?",
     options: ["28", "30", "32"],
@@ -6763,7 +6763,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 + 5 ?",
     options: ["12", "10", "9"],
@@ -6772,7 +6772,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 2 × 4 ?",
     options: ["19", "17", "15"],
@@ -6781,7 +6781,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 3 + 5 ?",
     options: ["15", "20", "10"],
@@ -6790,7 +6790,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 9 + 2 ?",
     options: ["17", "18", "16"],
@@ -6799,7 +6799,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 1) - 4 ?",
     options: ["14", "15", "16"],
@@ -6808,7 +6808,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (6 - 3) + 4 ?",
     options: ["14", "16", "18"],
@@ -6817,7 +6817,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 2 × 20 ?",
     options: ["10", "20", "30"],
@@ -6826,7 +6826,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 5 ?",
     options: ["17", "18", "19"],
@@ -6835,7 +6835,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (2 + 1) - 5 ?",
     options: ["16", "17", "18"],
@@ -6844,7 +6844,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 8 - 5 ?",
     options: ["10", "11", "12"],
@@ -6853,7 +6853,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (6 ÷ 2) ?",
     options: ["10", "8", "12"],
@@ -6862,7 +6862,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 4 ?",
     options: ["18", "16", "14"],
@@ -6871,7 +6871,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 4 - 6 ?",
     options: ["10", "14", "14"],
@@ -6880,7 +6880,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) × (4 + 1) ?",
     options: ["30", "25", "35"],
@@ -6889,7 +6889,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × (4 - 1) ?",
     options: ["15", "10", "12"],
@@ -6898,7 +6898,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (3 × 5) + 2 ?",
     options: ["17", "20", "22"],
@@ -6907,7 +6907,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 1) × (2 - 1) ?",
     options: ["10", "8", "12"],
@@ -6916,7 +6916,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 ÷ 3 + 4 ?",
     options: ["5", "7", "6"],
@@ -6925,7 +6925,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ (2 + 3) ?",
     options: ["2", "1", "3"],
@@ -6935,7 +6935,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 + 5) + 2 ?",
     options: ["5", "6", "7"],
@@ -6945,7 +6945,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 ÷ 2 ?",
     options: ["17", "20", "16"],
@@ -6954,7 +6954,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 - (2 + 1) × 3 ?",
     options: ["5", "2", "6"],
@@ -6964,7 +6964,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 3 ?",
     options: ["5", "6", "7"],
@@ -6973,7 +6973,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 ?",
     options: ["14", "16", "18"],
@@ -6982,7 +6982,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 48 ÷ 6 + 2 ?",
     options: ["8", "10", "12"],
@@ -6991,7 +6991,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (50 - 10) ÷ 2 + 5 ?",
     options: ["20", "25", "30"],
@@ -6999,7 +6999,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "(50 - 10) divisé par 2 plus 5 donne 20.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 7 ?",
     options: ["22", "23", "21"],
@@ -7008,7 +7008,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 19 ?",
     options: ["31", "30", "32"],
@@ -7017,7 +7017,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 - 4 ?",
     options: ["23", "24", "22"],
@@ -7026,7 +7026,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + 2 ?",
     options: ["11", "10", "12"],
@@ -7035,7 +7035,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × 4 ?",
     options: ["20", "18", "24"],
@@ -7044,7 +7044,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (20 ÷ 4) ?",
     options: ["95", "90", "92"],
@@ -7053,7 +7053,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) × 2 - 10 ?",
     options: ["10", "12", "8"],
@@ -7063,7 +7063,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × (2 + 3) ?",
     options: ["50", "40", "60"],
@@ -7073,7 +7073,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 + 6 ÷ 3 ?",
     options: ["21", "20", "22"],
@@ -7083,7 +7083,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 ÷ 2) × 3 ?",
     options: ["12", "9", "15"],
@@ -7093,7 +7093,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (2 + 1) - 5 ?",
     options: ["13", "15", "17"],
@@ -7102,7 +7102,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (3 × 4) ?",
     options: ["14", "15", "16"],
@@ -7111,7 +7111,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (2 + 4) × 2 ?",
     options: ["6", "8", "10"],
@@ -7121,7 +7121,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) × 2 - 3 ?",
     options: ["10", "12", "15"],
@@ -7131,7 +7131,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 - 5 × (6 - 2) ?",
     options: ["20", "30", "10"],
@@ -7140,7 +7140,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (5 + 1) ?",
     options: ["18", "19", "20"],
@@ -7149,7 +7149,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 10 ?",
     options: ["30", "20", "25"],
@@ -7158,7 +7158,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (4 + 2) ?",
     options: ["12", "10", "16"],
@@ -7167,7 +7167,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 ÷ 3) + (4 × 2) ?",
     options: ["14", "10", "12"],
@@ -7176,7 +7176,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 6 - (2 + 3) ?",
     options: ["27", "28", "30"],
@@ -7185,7 +7185,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 10 + 4 × 3 ?",
     options: ["17", "18", "16"],
@@ -7194,7 +7194,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 3 - 5 = ?",
     options: ["16", "17", "18"],
@@ -7204,7 +7204,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 6 + 4 = ?",
     options: ["12", "13", "14"],
@@ -7213,7 +7213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 2) × 3 = ?",
     options: ["15", "18", "20"],
@@ -7223,7 +7223,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - (3 × 4) = ?",
     options: ["8", "10", "12"],
@@ -7233,7 +7233,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) ÷ 2 + 5 = ?",
     options: ["6", "7", "8"],
@@ -7243,7 +7243,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 ÷ 4) + (2 × 3) = ?",
     options: ["8", "9", "10"],
@@ -7252,7 +7252,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 - 10) ÷ 4 + 2 = ?",
     options: ["5", "6", "7"],
@@ -7261,7 +7261,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × (1 + 2) - 6 = ?",
     options: ["21", "24", "27"],
@@ -7271,7 +7271,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 2) + (8 ÷ 4) = ?",
     options: ["10", "11", "12"],
@@ -7280,7 +7280,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 6) ÷ 2 + 1 = ?",
     options: ["6", "7", "8"],
@@ -7289,7 +7289,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(2 + 4) × (3 - 1) = ?",
     options: ["12", "14", "16"],
@@ -7298,7 +7298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 + 5) ?",
     options: ["35", "40", "45"],
@@ -7307,7 +7307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 1) ?",
     options: ["20", "22", "24"],
@@ -7316,7 +7316,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + 5 ?",
     options: ["8", "9", "7"],
@@ -7325,7 +7325,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 × 2) + 5 ?",
     options: ["10", "12", "8"],
@@ -7334,7 +7334,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 15) ÷ 4 ?",
     options: ["5", "6", "7"],
@@ -7343,7 +7343,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (4 - 2) + 3 ?",
     options: ["21", "24", "27"],
@@ -7352,7 +7352,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 2 × 3 ?",
     options: ["13", "15", "17"],
@@ -7361,7 +7361,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 8 ?",
     options: ["7", "6", "5"],
@@ -7370,7 +7370,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 9 + 4 ?",
     options: ["20", "19", "21"],
@@ -7379,7 +7379,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 4) ?",
     options: ["27", "24", "27"],
@@ -7388,7 +7388,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 - 2) + 3 ?",
     options: ["23", "25", "22"],
@@ -7397,7 +7397,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) ÷ 2 × 5 ?",
     options: ["25", "20", "30"],
@@ -7407,7 +7407,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 - 1) × 4 ?",
     options: ["24", "20", "22"],
@@ -7417,7 +7417,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 - (3 × 2) + 5 ?",
     options: ["12", "15", "10"],
@@ -7426,7 +7426,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 7) × 2 ?",
     options: ["18", "20", "22"],
@@ -7435,7 +7435,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 2 + 10 ?",
     options: ["25", "30", "35"],
@@ -7444,7 +7444,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 9 × 2 - 5 ?",
     options: ["10", "13", "15"],
@@ -7453,7 +7453,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (8 - 3) × 4 ?",
     options: ["20", "22", "24"],
@@ -7461,7 +7461,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "La différence de 8 et 3 multipliée par 4 est 20.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 - 7 ?",
     options: ["11", "9", "10"],
@@ -7470,7 +7470,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (6 - 4) + 3 ?",
     options: ["15", "17", "10"],
@@ -7479,7 +7479,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 + 5) × 3 ?",
     options: ["9", "6", "12"],
@@ -7488,7 +7488,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (3 × 5) + 10 ?",
     options: ["40", "35", "45"],
@@ -7497,7 +7497,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 3 × 4 ?",
     options: ["24", "30", "20"],
@@ -7507,7 +7507,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 + 2 ?",
     options: ["7", "6", "8"],
@@ -7516,7 +7516,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 9 ?",
     options: ["12", "10", "11"],
@@ -7525,7 +7525,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 2 ?",
     options: ["16", "14", "18"],
@@ -7534,7 +7534,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (5 + 3) - 4 ?",
     options: ["10", "12", "8"],
@@ -7543,7 +7543,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (2 + 4) × 3 ?",
     options: ["12", "9", "6"],
@@ -7552,7 +7552,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × (4 + 1) ?",
     options: ["25", "20", "30"],
@@ -7561,7 +7561,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 3 × 2 + 4 ?",
     options: ["10", "5", "8"],
@@ -7570,7 +7570,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 + 5) + 2 ?",
     options: ["7", "10", "8"],
@@ -7579,7 +7579,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × 2 - 10 = ?",
     options: ["6", "10", "14"],
@@ -7589,7 +7589,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 7 + 2 = ?",
     options: ["8", "10", "6"],
@@ -7598,7 +7598,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ 5 × 2 = ?",
     options: ["4", "6", "8"],
@@ -7607,7 +7607,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 4) × 3 = ?",
     options: ["18", "24", "20"],
@@ -7616,7 +7616,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) ÷ 2 + 3 = ?",
     options: ["6", "5", "4"],
@@ -7626,7 +7626,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 6) ÷ 2 + 5 = ?",
     options: ["9", "8", "10"],
@@ -7636,7 +7636,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 4) - (2 × 3) = ?",
     options: ["14", "18", "10"],
@@ -7646,7 +7646,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 3) × (4 - 2) = ?",
     options: ["24", "18", "12"],
@@ -7656,7 +7656,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 5) × (10 - 8) = ?",
     options: ["24", "16", "12"],
@@ -7666,7 +7666,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 3) + (6 × 2) = ?",
     options: ["21", "24", "18"],
@@ -7676,7 +7676,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 5) ÷ (2 + 3) = ?",
     options: ["4", "5", "3"],
@@ -7686,7 +7686,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 5) × 2 ?",
     options: ["30", "25", "35"],
@@ -7696,7 +7696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 5) - 7 ?",
     options: ["20", "25", "22"],
@@ -7706,7 +7706,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 3) ÷ 4 ?",
     options: ["10", "12", "14"],
@@ -7716,7 +7716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 ÷ 3) + (4 × 2) ?",
     options: ["10", "12", "14"],
@@ -7725,7 +7725,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 35 - (5 × 4) + 2 ?",
     options: ["27", "30", "32"],
@@ -7734,7 +7734,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 4 ?",
     options: ["9", "10", "11"],
@@ -7743,7 +7743,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (3 × 10) ?",
     options: ["20", "30", "40"],
@@ -7753,7 +7753,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) × 2 - 6 ?",
     options: ["12", "14", "16"],
@@ -7762,7 +7762,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 7) - 9 ?",
     options: ["15", "18", "21"],
@@ -7772,7 +7772,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 6) ÷ 3 × 2 ?",
     options: ["10", "12", "14"],
@@ -7782,7 +7782,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 + 6 - 2 ?",
     options: ["20", "22", "24"],
@@ -7792,7 +7792,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) + 2 ?",
     options: ["4", "6", "8"],
@@ -7802,7 +7802,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 3 + 4 × 2 ?",
     options: ["14", "16", "18"],
@@ -7812,7 +7812,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 2 + 3 × 4 ?",
     options: ["29", "26", "32"],
@@ -7821,7 +7821,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 15 - 7 ?",
     options: ["18", "20", "22"],
@@ -7830,7 +7830,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 4 × 3 ?",
     options: ["10", "11", "12"],
@@ -7839,7 +7839,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 8 - 5 ?",
     options: ["10", "11", "12"],
@@ -7848,7 +7848,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 5 ?",
     options: ["9", "11", "13"],
@@ -7857,7 +7857,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (6 ÷ 2) × 3 ?",
     options: ["16", "17", "18"],
@@ -7866,7 +7866,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 4 + 2 ?",
     options: ["16", "18", "20"],
@@ -7875,7 +7875,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 4 × 2 ?",
     options: ["20", "22", "24"],
@@ -7884,7 +7884,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 1) ?",
     options: ["9", "10", "11"],
@@ -7893,7 +7893,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 - (3 + 2) ?",
     options: ["20", "22", "23"],
@@ -7902,7 +7902,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 8 - 5 ?",
     options: ["18", "20", "22"],
@@ -7911,7 +7911,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 + 6 ÷ 3 ?",
     options: ["16", "18", "20"],
@@ -7921,7 +7921,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (2 + 2) ?",
     options: ["32", "24", "16"],
@@ -7930,7 +7930,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On additionne dans chaque parenthèse, puis on multiplie les résultats, soit 32.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 1) - 10 ?",
     options: ["14", "10", "16"],
@@ -7939,7 +7939,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 - 2) + 6 ?",
     options: ["18", "20", "22"],
@@ -7948,7 +7948,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) × 4 + 3 ?",
     options: ["19", "20", "21"],
@@ -7957,7 +7957,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 × 4) + 2 ?",
     options: ["12", "14", "10"],
@@ -7966,7 +7966,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 + 15 - 5 ?",
     options: ["35", "40", "30"],
@@ -7975,7 +7975,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 + 3 ?",
     options: ["21", "18", "15"],
@@ -7984,7 +7984,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (3 × 5) ?",
     options: ["22", "20", "25"],
@@ -7993,7 +7993,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (4 × 3) ?",
     options: ["20", "16", "14"],
@@ -8002,7 +8002,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 5) + 2 ?",
     options: ["20", "22", "24"],
@@ -8011,7 +8011,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 3) × 2 + 4 ?",
     options: ["18", "20", "16"],
@@ -8021,7 +8021,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 2 ?",
     options: ["6", "8", "10"],
@@ -8030,7 +8030,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 ÷ 3 + 5 ?",
     options: ["6", "7", "8"],
@@ -8039,7 +8039,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 - 1) + 7 ?",
     options: ["15", "17", "13"],
@@ -8049,7 +8049,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 3) × (2 + 1) ?",
     options: ["21", "22", "23"],
@@ -8059,7 +8059,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 4 × 3 ?",
     options: ["20", "22", "24"],
@@ -8069,7 +8069,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) × 2 - 3 ?",
     options: ["17", "18", "19"],
@@ -8078,7 +8078,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 - (3 × 2) ?",
     options: ["2", "4", "6"],
@@ -8088,7 +8088,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (2 + 3) - 5 ?",
     options: ["30", "32", "34"],
@@ -8098,7 +8098,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) × 2 - 10 ?",
     options: ["10", "14", "16"],
@@ -8108,7 +8108,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 + 3 × 5 ?",
     options: ["15", "17", "19"],
@@ -8118,7 +8118,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 4 ?",
     options: ["6", "7", "8"],
@@ -8128,7 +8128,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 5 ?",
     options: ["6", "7", "8"],
@@ -8137,7 +8137,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 6 × 3 ?",
     options: ["18", "17", "19"],
@@ -8146,7 +8146,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 2 ?",
     options: ["22", "24", "20"],
@@ -8155,7 +8155,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (20 ÷ 5) ?",
     options: ["40", "45", "42"],
@@ -8164,7 +8164,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 2) ?",
     options: ["20", "18", "22"],
@@ -8173,7 +8173,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 × 4) + 2 ?",
     options: ["12", "16", "14"],
@@ -8182,7 +8182,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 15 - 8 ?",
     options: ["16", "14", "18"],
@@ -8191,7 +8191,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) + (5 × 3) ?",
     options: ["25", "20", "15"],
@@ -8201,7 +8201,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 - 2) + 4 ?",
     options: ["10", "9", "11"],
@@ -8210,7 +8210,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 - 5 ?",
     options: ["21", "22", "20"],
@@ -8219,7 +8219,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 2 × 5 ?",
     options: ["17", "19", "15"],
@@ -8228,7 +8228,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 3 ?",
     options: ["3", "4", "5"],
@@ -8237,7 +8237,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 10 + 5 ?",
     options: ["10", "5", "15"],
@@ -8246,7 +8246,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (2 + 1) ?",
     options: ["6", "7", "9"],
@@ -8255,7 +8255,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 - 2 ?",
     options: ["3", "4", "5"],
@@ -8264,7 +8264,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 6 - 3 ?",
     options: ["10", "11", "12"],
@@ -8273,7 +8273,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 2) - 10 ?",
     options: ["15", "20", "25"],
@@ -8282,7 +8282,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 6 ÷ 2 ?",
     options: ["15", "18", "21"],
@@ -8291,7 +8291,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 × 3 ?",
     options: ["20", "24", "28"],
@@ -8300,7 +8300,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 × 3) + 5 ?",
     options: ["4", "5", "6"],
@@ -8309,7 +8309,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (2 + 1) - 4 ?",
     options: ["14", "16", "18"],
@@ -8318,7 +8318,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 - 2 ?",
     options: ["8", "10", "12"],
@@ -8327,7 +8327,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 + 4 ?",
     options: ["16", "20", "18"],
@@ -8336,7 +8336,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 6 + 2 ?",
     options: ["10", "8", "9"],
@@ -8345,7 +8345,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 - 2 ?",
     options: ["10", "12", "14"],
@@ -8354,7 +8354,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 9 + 3 ?",
     options: ["7", "8", "9"],
@@ -8363,7 +8363,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 2 × 5 ?",
     options: ["18", "20", "10"],
@@ -8372,7 +8372,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 1) - 2 ?",
     options: ["14", "10", "12"],
@@ -8381,7 +8381,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 - 4 ÷ 2 ?",
     options: ["16", "17", "18"],
@@ -8389,7 +8389,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "9 multiplié par 2 moins 4 divisé par 2 égale 16.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 15 - 9 ?",
     options: ["5", "6", "7"],
@@ -8398,7 +8398,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 3 × 4 ?",
     options: ["10", "11", "12"],
@@ -8407,7 +8407,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (6 × 3) + 4 ?",
     options: ["20", "22", "24"],
@@ -8416,7 +8416,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 25 - (3 × 5) ?",
     options: ["10", "15", "20"],
@@ -8425,7 +8425,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (5 + 3) ?",
     options: ["16", "14", "12"],
@@ -8434,7 +8434,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (9 - 3) × (2 + 2) ?",
     options: ["24", "20", "18"],
@@ -8443,7 +8443,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 1) + 5 ?",
     options: ["11", "9", "8"],
@@ -8452,7 +8452,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (10 - 2) × 3 ?",
     options: ["21", "24", "22"],
@@ -8461,7 +8461,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 5 × 5 + 5 ?",
     options: ["25", "30", "35"],
@@ -8470,7 +8470,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 4 × 3 ?",
     options: ["14", "16", "18"],
@@ -8479,7 +8479,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 15 - 6 ?",
     options: ["9", "8", "7"],
@@ -8488,7 +8488,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 18 - (3 × 4).",
     options: ["6", "9", "12"],
@@ -8497,7 +8497,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 36 ÷ 6 + 4.",
     options: ["10", "8", "9"],
@@ -8506,7 +8506,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez (7 - 2) × (5 + 3).",
     options: ["40", "35", "30"],
@@ -8515,7 +8515,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 3 - (8 ÷ 2) ?",
     options: ["28", "25", "26"],
@@ -8524,7 +8524,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez (6 + 2) × 3 - 4.",
     options: ["20", "22", "18"],
@@ -8533,7 +8533,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 × 2) + 5 ?",
     options: ["10", "15", "20"],
@@ -8542,7 +8542,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 25 - (3 × 5) + 2.",
     options: ["12", "10", "8"],
@@ -8551,7 +8551,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 7 - 10 ?",
     options: ["11", "12", "10"],
@@ -8560,7 +8560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (4 × 3) ?",
     options: ["13", "17", "19"],
@@ -8569,7 +8569,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 + 5 ?",
     options: ["23", "25", "28"],
@@ -8578,7 +8578,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 4) + 2 ?",
     options: ["32", "38", "42"],
@@ -8587,7 +8587,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 × 4) + (5 × 2) ?",
     options: ["22", "26", "28"],
@@ -8596,7 +8596,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 + 1 ?",
     options: ["23", "25", "27"],
@@ -8605,7 +8605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 4 + 10 ÷ 2 ?",
     options: ["16", "18", "14"],
@@ -8614,7 +8614,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 2 × (5 - 3) ?",
     options: ["10", "12", "8"],
@@ -8623,7 +8623,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 + 5 - 3 ?",
     options: ["20", "21", "22"],
@@ -8632,7 +8632,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 7 ?",
     options: ["8", "6", "9"],
@@ -8641,7 +8641,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 6 + 4 ?",
     options: ["10", "12", "8"],
@@ -8650,7 +8650,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 6 ?",
     options: ["40", "41", "42"],
@@ -8659,7 +8659,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 + 2) ?",
     options: ["11", "12", "13"],
@@ -8669,7 +8669,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 4 ?",
     options: ["8", "9", "10"],
@@ -8679,7 +8679,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × 3 + 2 ?",
     options: ["26", "28", "30"],
@@ -8689,7 +8689,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (3 × 5) ?",
     options: ["35", "40", "45"],
@@ -8699,7 +8699,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) ÷ 4 ?",
     options: ["2", "3", "4"],
@@ -8709,7 +8709,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 3 × (2 + 1) ?",
     options: ["16", "19", "22"],
@@ -8719,7 +8719,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (3 x 4) ?",
     options: ["17", "18", "19"],
@@ -8728,7 +8728,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + (5 x 2) ?",
     options: ["10", "12", "14"],
@@ -8737,7 +8737,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (2 + 3) x 1 ?",
     options: ["4", "5", "6"],
@@ -8746,7 +8746,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) ÷ (3 - 1) ?",
     options: ["6", "8", "10"],
@@ -8755,7 +8755,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 12 - 5 ?",
     options: ["13", "15", "17"],
@@ -8764,7 +8764,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 x 3) + (6 ÷ 2) ?",
     options: ["10", "12", "14"],
@@ -8773,7 +8773,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 x (3 + 5) - 6 ?",
     options: ["10", "12", "14"],
@@ -8782,7 +8782,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (10 - 4) ?",
     options: ["8", "10", "12"],
@@ -8792,7 +8792,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (8 ÷ 4) + 5 ?",
     options: ["9", "10", "11"],
@@ -8801,7 +8801,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 ?",
     options: ["21", "24", "18"],
@@ -8810,7 +8810,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (3 × 10) + 5 ?",
     options: ["25", "30", "35"],
@@ -8819,7 +8819,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 × 2) + 4 ?",
     options: ["16", "14", "12"],
@@ -8828,7 +8828,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 9 - 5 ?",
     options: ["15", "12", "13"],
@@ -8837,7 +8837,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 6) ?",
     options: ["30", "25", "20"],
@@ -8845,7 +8845,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "3 multiplié par la somme de 4 et 6 donne 30.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 - 3 × 2 = ?",
     options: ["3", "6", "12"],
@@ -8854,7 +8854,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ (3 + 2) = ?",
     options: ["3", "5", "2"],
@@ -8863,7 +8863,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) ÷ 4 = ?",
     options: ["3", "2", "4"],
@@ -8872,7 +8872,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - (4 × 3) = ?",
     options: ["8", "12", "16"],
@@ -8881,7 +8881,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ 3 + 4 = ?",
     options: ["10", "6", "8"],
@@ -8890,7 +8890,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 × (1 + 2) = ?",
     options: ["12", "18", "20"],
@@ -8899,7 +8899,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "25 - (5 × 4) = ?",
     options: ["5", "15", "20"],
@@ -8908,7 +8908,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × 3 + 3 = ?",
     options: ["6", "9", "12"],
@@ -8917,7 +8917,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "14 - 6 ÷ 2 = ?",
     options: ["10", "12", "8"],
@@ -8926,7 +8926,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "30 ÷ (5 + 5) = ?",
     options: ["3", "2", "1"],
@@ -8935,7 +8935,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 + 2 × 5 = ?",
     options: ["20", "30", "20"],
@@ -8944,7 +8944,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "16 - 4 × 2 = ?",
     options: ["8", "10", "12"],
@@ -8953,7 +8953,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (5 × 8) ?",
     options: ["10", "30", "40"],
@@ -8962,7 +8962,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 15 ?",
     options: ["25", "35", "20"],
@@ -8971,7 +8971,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 6 ÷ 2 ?",
     options: ["15", "18", "12"],
@@ -8980,7 +8980,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (9 × 4) ?",
     options: ["9", "21", "27"],
@@ -8989,7 +8989,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 8 ÷ 4 ?",
     options: ["10", "12", "16"],
@@ -8998,7 +8998,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 2 ?",
     options: ["6", "8", "10"],
@@ -9007,7 +9007,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 3 ?",
     options: ["30", "36", "32"],
@@ -9016,7 +9016,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (4 × 9) + 3 ?",
     options: ["38", "43", "44"],
@@ -9025,7 +9025,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (6 ÷ 2) ?",
     options: ["18", "19", "20"],
@@ -9034,7 +9034,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) × (2 + 1) ?",
     options: ["10", "12", "15"],
@@ -9043,7 +9043,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 3 + 5 ?",
     options: ["15", "16", "17"],
@@ -9052,7 +9052,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 5 - 2 ?",
     options: ["10", "11", "12"],
@@ -9061,7 +9061,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (3 + 3) ?",
     options: ["2", "3", "4"],
@@ -9070,7 +9070,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (2 × 4) ?",
     options: ["27", "23", "26"],
@@ -9079,7 +9079,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 5 ?",
     options: ["10", "8", "7"],
@@ -9088,7 +9088,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 7 × 2 ?",
     options: ["11", "15", "9"],
@@ -9097,7 +9097,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × (6 - 4) ?",
     options: ["16", "12", "20"],
@@ -9107,7 +9107,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 6 + 5 ?",
     options: ["13", "15", "12"],
@@ -9116,7 +9116,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 × 5 ?",
     options: ["25", "30", "35"],
@@ -9125,7 +9125,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 2 × 4 ?",
     options: ["6", "8", "10"],
@@ -9134,7 +9134,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 9 ?",
     options: ["12", "15", "18"],
@@ -9143,7 +9143,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 2) ?",
     options: ["8", "10", "6"],
@@ -9152,7 +9152,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 2 - 3 ?",
     options: ["6", "5", "7"],
@@ -9161,7 +9161,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 × 2) + 1 ?",
     options: ["9", "10", "8"],
@@ -9170,7 +9170,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) ?",
     options: ["5", "10", "15"],
@@ -9180,7 +9180,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × 2 - 4 ?",
     options: ["10", "12", "14"],
@@ -9189,7 +9189,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 9 - 3 ?",
     options: ["12", "13", "14"],
@@ -9199,7 +9199,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 ÷ 3 + 2 ?",
     options: ["5", "6", "7"],
@@ -9209,7 +9209,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) ÷ 2 + 5 ?",
     options: ["6", "7", "8"],
@@ -9218,7 +9218,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ (4 - 2) + 3 ?",
     options: ["4", "5", "6"],
@@ -9227,7 +9227,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 5 + 3 ?",
     options: ["6", "7", "8"],
@@ -9236,7 +9236,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que donne 3 × 4 ?",
     options: ["10", "11", "12"],
@@ -9245,7 +9245,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 9 + 6 - 4 ?",
     options: ["10", "11", "12"],
@@ -9254,7 +9254,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que donne 20 ÷ 4 + 2 ?",
     options: ["5", "6", "8"],
@@ -9263,7 +9263,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (3 × 2) + (4 ÷ 2) ?",
     options: ["7", "8", "6"],
@@ -9272,7 +9272,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + (2 × 5) - 3 ?",
     options: ["10", "11", "12"],
@@ -9281,7 +9281,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que donne (5 + 3) × 2 - 4 ?",
     options: ["12", "14", "16"],
@@ -9290,7 +9290,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 10 - (3 + 2) × 2 ?",
     options: ["0", "1", "2"],
@@ -9298,7 +9298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "10 moins 10 (5 fois 2) donne 0.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 + 7 - 5 ?",
     options: ["20", "21", "22"],
@@ -9307,7 +9307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 - (5 ÷ 5) ?",
     options: ["11", "12", "13"],
@@ -9316,7 +9316,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 8) × 2 ?",
     options: ["16", "20", "24"],
@@ -9325,7 +9325,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (6 - 2) + 1 ?",
     options: ["7", "9", "6"],
@@ -9334,7 +9334,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 3 ?",
     options: ["6", "8", "7"],
@@ -9343,7 +9343,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × 5 ?",
     options: ["20", "12", "10"],
@@ -9352,7 +9352,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) × 5 ?",
     options: ["25", "30", "20"],
@@ -9361,7 +9361,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 4 + 2 × 3 ?",
     options: ["32", "24", "28"],
@@ -9370,7 +9370,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 7 - 3 ?",
     options: ["12", "14", "13"],
@@ -9379,7 +9379,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 1) ?",
     options: ["6", "4", "5"],
@@ -9388,7 +9388,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 x (5 - 3) + 4 ?",
     options: ["18", "16", "14"],
@@ -9397,7 +9397,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 4 x 3 ?",
     options: ["19", "17", "15"],
@@ -9406,7 +9406,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 x 2) + 6 ?",
     options: ["16", "18", "14"],
@@ -9415,7 +9415,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 7 - 5 ?",
     options: ["10", "12", "11"],
@@ -9424,7 +9424,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 + 2 ?",
     options: ["6", "8", "5"],
@@ -9433,7 +9433,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 5) x 2 - 4 ?",
     options: ["16", "18", "14"],
@@ -9442,7 +9442,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 ?",
     options: ["4", "5", "6"],
@@ -9451,7 +9451,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 2 × (5 - 3) ?",
     options: ["10", "12", "11"],
@@ -9460,7 +9460,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + (4 × 3) - 10 ?",
     options: ["12", "14", "10"],
@@ -9469,7 +9469,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 5 + 3 ?",
     options: ["9", "10", "11"],
@@ -9478,7 +9478,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (2 + 3) - 8 ?",
     options: ["22", "26", "28"],
@@ -9487,7 +9487,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 3 - 5 ?",
     options: ["25", "28", "30"],
@@ -9496,7 +9496,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (4 + 2) ?",
     options: ["30", "36", "24"],
@@ -9505,7 +9505,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (2 × 3) + 5 ?",
     options: ["16", "17", "18"],
@@ -9514,7 +9514,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 + 3) × 4 ?",
     options: ["6", "8", "10"],
@@ -9523,7 +9523,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 3 - 10 ?",
     options: ["14", "10", "14"],
@@ -9532,7 +9532,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 + 3) - 12 ?",
     options: ["20", "16", "24"],
@@ -9541,7 +9541,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (2 + 4) ÷ 2 ?",
     options: ["9", "6", "7"],
@@ -9550,7 +9550,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (6 + 4) × 2 ?",
     options: ["5", "15", "10"],
@@ -9560,7 +9560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 + 2 × 3 ?",
     options: ["10", "8", "6"],
@@ -9569,7 +9569,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 7 - 4 ?",
     options: ["10", "11", "12"],
@@ -9578,7 +9578,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 - 7 ?",
     options: ["18", "20", "22"],
@@ -9587,7 +9587,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 2 + 6 × 2 ?",
     options: ["14", "16", "18"],
@@ -9596,7 +9596,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 5 + 1 ?",
     options: ["19", "20", "21"],
@@ -9605,7 +9605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 5 × 2 ?",
     options: ["18", "19", "20"],
@@ -9614,7 +9614,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 4 ÷ 2 ?",
     options: ["6", "8", "10"],
@@ -9623,7 +9623,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 7 + 3 = ?",
     options: ["11", "9", "13"],
@@ -9632,7 +9632,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 2) × 2 = ?",
     options: ["24", "20", "22"],
@@ -9642,7 +9642,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ (3 + 3) = ?",
     options: ["3", "2", "5"],
@@ -9651,7 +9651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) + (6 ÷ 2) = ?",
     options: ["19", "21", "18"],
@@ -9661,7 +9661,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 2) × (3 - 1) = ?",
     options: ["12", "10", "8"],
@@ -9671,7 +9671,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 2) × (4 + 1) = ?",
     options: ["30", "32", "36"],
@@ -9681,7 +9681,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 ÷ 2) + (6 × 3) = ?",
     options: ["30", "26", "28"],
@@ -9691,7 +9691,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × (3 - 1) + 5 = ?",
     options: ["23", "25", "27"],
@@ -9701,7 +9701,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 - 4) ÷ 2 + 6 = ?",
     options: ["10", "8", "9"],
@@ -9711,7 +9711,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) ÷ (2 + 2) = ?",
     options: ["4", "5", "6"],
@@ -9721,7 +9721,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 5) × (2 + 1) = ?",
     options: ["24", "28", "30"],
@@ -9731,7 +9731,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) × (5 - 3) = ?",
     options: ["16", "12", "8"],
@@ -9741,7 +9741,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 - 4 ?",
     options: ["16", "18", "20"],
@@ -9750,7 +9750,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (2 + 4) ?",
     options: ["6", "4", "5"],
@@ -9758,7 +9758,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "36 divisé par 6 donne 6.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 3 + 2 ?",
     options: ["12", "13", "14"],
@@ -9767,7 +9767,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 48 ÷ (2 + 4) ?",
     options: ["6", "7", "8"],
@@ -9776,7 +9776,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 × 4) + (8 ÷ 2) ?",
     options: ["10", "11", "12"],
@@ -9785,7 +9785,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + (3 × 5) ?",
     options: ["20", "21", "22"],
@@ -9794,7 +9794,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (16 ÷ 4) + (2 × 3) ?",
     options: ["8", "9", "10"],
@@ -9803,7 +9803,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 + 1 ?",
     options: ["25", "22", "21"],
@@ -9813,7 +9813,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 2 × 3 ?",
     options: ["11", "10", "9"],
@@ -9822,7 +9822,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + (3 × 2) ?",
     options: ["11", "10", "12"],
@@ -9831,7 +9831,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 2) - 5 ?",
     options: ["10", "12", "11"],
@@ -9841,7 +9841,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 ÷ 5) × 3 ?",
     options: ["85", "90", "80"],
@@ -9851,7 +9851,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 12) ÷ 4 × 3 ?",
     options: ["15", "12", "9"],
@@ -9861,7 +9861,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (4 - 2) + 9 ?",
     options: ["27", "18", "30"],
@@ -9871,7 +9871,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 5 × 5 - (3 + 2) ?",
     options: ["20", "15", "25"],
@@ -9881,7 +9881,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 10) ÷ 2 + 15 ?",
     options: ["30", "25", "20"],
@@ -9891,7 +9891,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 12 - 4 ?",
     options: ["7", "8", "9"],
@@ -9900,7 +9900,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 3 ?",
     options: ["16", "17", "18"],
@@ -9909,7 +9909,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ (2 × 2) ?",
     options: ["3", "4", "5"],
@@ -9918,7 +9918,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 3 + 5 - 1 ?",
     options: ["9", "10", "11"],
@@ -9928,7 +9928,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 7 - 6 ?",
     options: ["11", "12", "13"],
@@ -9937,7 +9937,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 + 6 ?",
     options: ["22", "20", "18"],
@@ -9947,7 +9947,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (20 ÷ 4) ?",
     options: ["48", "49", "47"],
@@ -9957,7 +9957,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 3 + 8 ?",
     options: ["10", "12", "14"],
@@ -9966,7 +9966,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (4 × 2) - 6 ?",
     options: ["10", "12", "8"],
@@ -9976,7 +9976,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 - 3) + 4 ?",
     options: ["19", "20", "22"],
@@ -9986,7 +9986,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 3) × 2 - 10 ?",
     options: ["16", "18", "14"],
@@ -9996,7 +9996,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 + 5 - 8 ?",
     options: ["20", "21", "22"],
@@ -10006,7 +10006,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 + 5 ?",
     options: ["12", "13", "14"],
@@ -10015,7 +10015,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 6 × 3 ?",
     options: ["18", "19", "20"],
@@ -10024,7 +10024,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 4 ?",
     options: ["5", "6", "7"],
@@ -10033,7 +10033,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 14 - 3 + 5 ?",
     options: ["16", "15", "14"],
@@ -10042,7 +10042,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 4 ?",
     options: ["6", "8", "7"],
@@ -10051,7 +10051,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (10 - 2) × (5 + 1) ?",
     options: ["48", "50", "52"],
@@ -10060,7 +10060,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 3 × 2 ?",
     options: ["11", "16", "10"],
@@ -10069,7 +10069,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 × 2 - 4 ?",
     options: ["10", "12", "14"],
@@ -10078,7 +10078,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 10 ?",
     options: ["15", "20", "12"],
@@ -10087,7 +10087,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 7 × (3 + 1) ?",
     options: ["24", "28", "30"],
@@ -10096,7 +10096,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) ÷ 2 + 3 ?",
     options: ["5", "8", "7"],
@@ -10105,7 +10105,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 2 × 3 ?",
     options: ["16", "18", "14"],
@@ -10114,7 +10114,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 2) + 5 ?",
     options: ["15", "20", "10"],
@@ -10123,7 +10123,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 2 + 4 ?",
     options: ["11", "12", "10"],
@@ -10132,7 +10132,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 6 ?",
     options: ["8", "10", "12"],
@@ -10141,7 +10141,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (12 ÷ 4) ?",
     options: ["17", "18", "19"],
@@ -10150,7 +10150,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 15 - 10 ?",
     options: ["13", "12", "11"],
@@ -10159,7 +10159,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 × 2 ?",
     options: ["12", "16", "8"],
@@ -10168,7 +10168,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (2 + 1) - 6 ?",
     options: ["21", "27", "33"],
@@ -10177,7 +10177,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 3) + (5 ÷ 5) ?",
     options: ["13", "12", "11"],
@@ -10186,7 +10186,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 × 2) + 5 ?",
     options: ["55", "60", "65"],
@@ -10195,7 +10195,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + (3 × 4) - 2 ?",
     options: ["20", "22", "18"],
@@ -10204,7 +10204,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 2 × (3 - 1) ?",
     options: ["11", "13", "9"],
@@ -10213,7 +10213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 1) + 8 ?",
     options: ["22", "26", "18"],
@@ -10221,7 +10221,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "30 divisé par 3 (2 plus 1) plus 8 égale 22.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 7) - 6 ?",
     options: ["24", "30", "36"],
@@ -10231,7 +10231,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (4 × 2) + 3 ?",
     options: ["7", "9", "11"],
@@ -10241,7 +10241,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 4 × 2 ?",
     options: ["10", "12", "14"],
@@ -10251,7 +10251,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (5 × 8) ÷ 2 ?",
     options: ["30", "35", "40"],
@@ -10261,7 +10261,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 6 ÷ 2 ?",
     options: ["12", "15", "18"],
@@ -10271,7 +10271,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 2) x 2 ?",
     options: ["16", "20", "18"],
@@ -10280,7 +10280,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (20 ÷ 5) ?",
     options: ["48", "46", "45"],
@@ -10289,7 +10289,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (14 - 4) x 3 ?",
     options: ["30", "32", "36"],
@@ -10298,7 +10298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 + 5) + 10 ?",
     options: ["20", "30", "25"],
@@ -10307,7 +10307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 x 2) + (10 ÷ 2) ?",
     options: ["12", "14", "16"],
@@ -10316,7 +10316,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 16 - 5 ?",
     options: ["25", "22", "21"],
@@ -10325,7 +10325,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + 3 ?",
     options: ["12", "10", "11"],
@@ -10335,7 +10335,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 2 - 4 ?",
     options: ["14", "12", "10"],
@@ -10345,7 +10345,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 + (3 × 5) ?",
     options: ["23", "18", "22"],
@@ -10355,7 +10355,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 8 ÷ 4 ?",
     options: ["25", "27", "26"],
@@ -10365,7 +10365,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × 3 ÷ 2 ?",
     options: ["15", "12", "18"],
@@ -10375,7 +10375,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 3 + 6 ?",
     options: ["15", "14", "13"],
@@ -10385,7 +10385,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (6 ÷ 2) ?",
     options: ["10", "12", "14"],
@@ -10395,7 +10395,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 5 + 4 ?",
     options: ["6", "8", "10"],
@@ -10404,7 +10404,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (6 - 2) + 3 ?",
     options: ["19", "20", "23"],
@@ -10414,7 +10414,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 × 2) + 5 ?",
     options: ["6", "7", "8"],
@@ -10424,7 +10424,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ (2 + 2) ?",
     options: ["3", "4", "5"],
@@ -10434,7 +10434,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 + 5) × 2 ?",
     options: ["0", "2", "6"],
@@ -10444,7 +10444,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ (9 - 6) ?",
     options: ["15", "18", "20"],
@@ -10453,7 +10453,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 2 + 6 ?",
     options: ["16", "17", "18"],
@@ -10462,7 +10462,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 2 - 5 ?",
     options: ["10", "15", "20"],
@@ -10471,7 +10471,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 4 - 10 ?",
     options: ["14", "20", "24"],
@@ -10480,7 +10480,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 4) × (6 - 3) ?",
     options: ["6", "9", "3"],
@@ -10489,7 +10489,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 15) ÷ 4 + 2 ?",
     options: ["5", "7", "8"],
@@ -10498,7 +10498,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - (4 ÷ 2) ?",
     options: ["14", "15", "16"],
@@ -10507,7 +10507,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 6 × 2 ?",
     options: ["10", "12", "14"],
@@ -10516,7 +10516,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 - 1 ?",
     options: ["10", "11", "12"],
@@ -10525,7 +10525,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 + 2) × 2 ?",
     options: ["0", "-1", "-2"],
@@ -10534,7 +10534,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 + 1 ?",
     options: ["22", "24", "26"],
@@ -10543,7 +10543,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 5 - 6 ?",
     options: ["11", "12", "13"],
@@ -10552,7 +10552,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 x 2) + 5 ?",
     options: ["10", "12", "8"],
@@ -10561,7 +10561,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 + 4) ?",
     options: ["22", "24", "20"],
@@ -10570,7 +10570,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (16 ÷ 4) ?",
     options: ["10", "12", "14"],
@@ -10579,7 +10579,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 5) - 9 ?",
     options: ["18", "21", "24"],
@@ -10588,7 +10588,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 6 - 4 ?",
     options: ["10", "12", "8"],
@@ -10597,7 +10597,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 + 0) ?",
     options: ["5", "6", "4"],
@@ -10606,7 +10606,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 2 + 3 × 2 ?",
     options: ["10", "11", "12"],
@@ -10615,7 +10615,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 5) × 2 - 8 ?",
     options: ["18", "20", "16"],
@@ -10624,7 +10624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 × 4) + 2 ?",
     options: ["8", "10", "12"],
@@ -10633,7 +10633,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) × (2 - 1) ?",
     options: ["10", "15", "20"],
@@ -10641,7 +10641,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "10 multiplié par 1 égale 10.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 18 ?",
     options: ["32", "30", "28"],
@@ -10650,7 +10650,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 6 ?",
     options: ["48", "46", "50"],
@@ -10659,7 +10659,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 72 ÷ 8 ?",
     options: ["9", "8", "10"],
@@ -10668,7 +10668,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 + 40 - 15 ?",
     options: ["45", "50", "55"],
@@ -10677,7 +10677,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 + 10) ?",
     options: ["65", "70", "75"],
@@ -10686,7 +10686,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 × 3 - 10 ?",
     options: ["32", "42", "34"],
@@ -10695,7 +10695,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 5 ?",
     options: ["50", "55", "40"],
@@ -10704,7 +10704,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 90 ÷ 9 + 5 ?",
     options: ["15", "10", "20"],
@@ -10713,7 +10713,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 + 4) - 10 ?",
     options: ["40", "30", "50"],
@@ -10723,7 +10723,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 7 - (5 + 1) ?",
     options: ["41", "42", "40"],
@@ -10733,7 +10733,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 4 + 2 × 3 ?",
     options: ["26", "24", "22"],
@@ -10743,7 +10743,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 3) - 10 ?",
     options: ["30", "32", "28"],
@@ -10753,7 +10753,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (6 ÷ 2) ?",
     options: ["17", "18", "16"],
@@ -10762,7 +10762,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (3 - 1) + 6 ?",
     options: ["12", "9", "15"],
@@ -10771,7 +10771,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 × 3) + 5 ?",
     options: ["10", "11", "12"],
@@ -10780,7 +10780,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 5 × 4 + 2 ?",
     options: ["13", "15", "17"],
@@ -10789,7 +10789,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 3 × 2 ?",
     options: ["16", "18", "20"],
@@ -10798,7 +10798,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 7 - 3 ?",
     options: ["19", "20", "21"],
@@ -10807,7 +10807,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 - 6) ÷ 2 + 4 ?",
     options: ["6", "8", "10"],
@@ -10816,7 +10816,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 1) - 6 ?",
     options: ["22", "24", "26"],
@@ -10825,7 +10825,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 4) ÷ 2 ?",
     options: ["15", "20", "25"],
@@ -10835,7 +10835,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (4 - 2) ?",
     options: ["10", "12", "15"],
@@ -10845,7 +10845,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 4) ÷ 2 ?",
     options: ["7", "8", "9"],
@@ -10854,7 +10854,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 5 + 10 ?",
     options: ["20", "25", "30"],
@@ -10863,7 +10863,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 7 × 2 ?",
     options: ["20", "21", "22"],
@@ -10872,7 +10872,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 ÷ 2) × 3 ?",
     options: ["15", "18", "21"],
@@ -10882,7 +10882,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (4 × 9) + 2 ?",
     options: ["26", "28", "30"],
@@ -10892,7 +10892,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (1 + 2) × 5 ?",
     options: ["50", "60", "70"],
@@ -10901,7 +10901,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 x 2 + 10 ÷ 5 ?",
     options: ["20", "22", "24"],
@@ -10911,7 +10911,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (3 x 4) - 6 ?",
     options: ["20", "22", "18"],
@@ -10921,7 +10921,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 3 - 2 x 4 ?",
     options: ["10", "8", "6"],
@@ -10931,7 +10931,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 7 + 3 ?",
     options: ["15", "16", "14"],
@@ -10940,7 +10940,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 5 ?",
     options: ["11", "12", "10"],
@@ -10950,7 +10950,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (12 ÷ 4) ?",
     options: ["48", "49", "47"],
@@ -10959,7 +10959,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (20 ÷ 5) ?",
     options: ["18", "17", "19"],
@@ -10969,7 +10969,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 4 × 2 - 1 ?",
     options: ["10", "11", "9"],
@@ -10979,7 +10979,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 × 2) + 5 ?",
     options: ["10", "11", "9"],
@@ -10988,7 +10988,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (12 ÷ 4) × 2 ?",
     options: ["14", "16", "12"],
@@ -10998,7 +10998,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 + 5) ÷ 5 ?",
     options: ["22", "20", "21"],
@@ -11008,7 +11008,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 3 ?",
     options: ["24", "20", "18"],
@@ -11017,7 +11017,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 15 + 5 ?",
     options: ["20", "15", "10"],
@@ -11026,7 +11026,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 - 4 + 2 = ?",
     options: ["6", "7", "8"],
@@ -11035,7 +11035,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 × 3 - 7 = ?",
     options: ["11", "12", "13"],
@@ -11044,7 +11044,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 3) × 2 = ?",
     options: ["8", "10", "12"],
@@ -11054,7 +11054,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 + 5 - (3 × 2) = ?",
     options: ["10", "11", "12"],
@@ -11064,7 +11064,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ 3 + 4 × 2 = ?",
     options: ["10", "12", "14"],
@@ -11074,7 +11074,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 5) + (3 × 4) = ?",
     options: ["15", "16", "17"],
@@ -11084,7 +11084,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 3) × 2 - 4 = ?",
     options: ["16", "18", "20"],
@@ -11094,7 +11094,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × (5 + 3) = ?",
     options: ["56", "64", "72"],
@@ -11104,7 +11104,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 2) + (9 ÷ 3) = ?",
     options: ["15", "16", "17"],
@@ -11113,7 +11113,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On résout chaque parenthèse avant d'additionner les résultats.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 3 ÷ 5 ?",
     options: ["6", "7", "8"],
@@ -11122,7 +11122,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 2 × 3 ?",
     options: ["15", "16", "17"],
@@ -11132,7 +11132,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 5 ?",
     options: ["8", "10", "15"],
@@ -11141,7 +11141,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) ÷ 2 + 3 ?",
     options: ["5", "6", "7"],
@@ -11151,7 +11151,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (4 × 3) + 5 ?",
     options: ["18", "19", "20"],
@@ -11161,7 +11161,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + (6 × 3) ?",
     options: ["18", "20", "22"],
@@ -11171,7 +11171,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 5) ?",
     options: ["16", "12", "14"],
@@ -11180,7 +11180,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (2 × 10) + 5 ?",
     options: ["15", "20", "25"],
@@ -11189,7 +11189,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 2 × 5 ?",
     options: ["5", "10", "7"],
@@ -11198,7 +11198,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 1) ?",
     options: ["18", "21", "24"],
@@ -11207,7 +11207,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (6 × 2) ?",
     options: ["19", "18", "20"],
@@ -11216,7 +11216,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 - (3 × 4) + 2 ?",
     options: ["6", "8", "10"],
@@ -11226,7 +11226,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × (3 - 1) ?",
     options: ["24", "20", "22"],
@@ -11236,7 +11236,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 1) × 5 ?",
     options: ["50", "60", "45"],
@@ -11246,7 +11246,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 15) ÷ 4 × 2 ?",
     options: ["10", "5", "8"],
@@ -11256,7 +11256,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 4 + 5 ?",
     options: ["11", "10", "12"],
@@ -11265,7 +11265,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ (5 - 3) + 6 ?",
     options: ["16", "20", "18"],
@@ -11274,7 +11274,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 10 + 3 ?",
     options: ["5", "8", "7"],
@@ -11283,7 +11283,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (3 - 1) + 4 ?",
     options: ["20", "24", "22"],
@@ -11293,7 +11293,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 3 - 6 ?",
     options: ["30", "36", "24"],
@@ -11303,7 +11303,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 + 3) × 4 ?",
     options: ["20", "25", "10"],
@@ -11313,7 +11313,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (4 + 1) ?",
     options: ["18", "20", "16"],
@@ -11323,7 +11323,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 2) + (3 × 4) ?",
     options: ["26", "22", "20"],
@@ -11333,7 +11333,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 6 × 4 ?",
     options: ["20", "24", "26"],
@@ -11342,7 +11342,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 15 + 6 - 4 ?",
     options: ["17", "18", "19"],
@@ -11351,7 +11351,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 4) ÷ 2 ?",
     options: ["6", "7", "8"],
@@ -11360,7 +11360,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + 2 ?",
     options: ["15", "17", "18"],
@@ -11369,7 +11369,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 2) × 3 - 6 ?",
     options: ["24", "26", "30"],
@@ -11378,7 +11378,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 + 3) + 8 ?",
     options: ["10", "12", "14"],
@@ -11387,7 +11387,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 + 1) × 2 ?",
     options: ["2", "4", "6"],
@@ -11396,7 +11396,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 5) - 4 ?",
     options: ["10", "12", "14"],
@@ -11405,7 +11405,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 ÷ 4 + 2 = ?",
     options: ["4", "5", "6"],
@@ -11414,7 +11414,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 × 3 ÷ 5 = ?",
     options: ["6", "5", "7"],
@@ -11423,7 +11423,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 2) ÷ 2 × 3 = ?",
     options: ["18", "12", "15"],
@@ -11432,7 +11432,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 4) × (2 - 1) = ?",
     options: ["10", "12", "8"],
@@ -11442,7 +11442,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × (6 - 4) ÷ 2 = ?",
     options: ["8", "4", "6"],
@@ -11452,7 +11452,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (4 × 3) = ?",
     options: ["24", "22", "20"],
@@ -11461,7 +11461,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (5 + 1) = ?",
     options: ["36", "30", "24"],
@@ -11471,7 +11471,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 ÷ 2) + (6 × 2) = ?",
     options: ["20", "18", "22"],
@@ -11480,7 +11480,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 3) × (2 + 2) = ?",
     options: ["40", "32", "30"],
@@ -11489,7 +11489,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) + (9 - 6) = ?",
     options: ["16", "18", "15"],
@@ -11498,7 +11498,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (6 - 2) ?",
     options: ["16", "20", "24"],
@@ -11507,7 +11507,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 18 ÷ 3 ?",
     options: ["15", "18", "21"],
@@ -11516,7 +11516,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 2) - 7 ?",
     options: ["18", "20", "22"],
@@ -11526,7 +11526,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ (2 + 3) ?",
     options: ["2", "3", "4"],
@@ -11536,7 +11536,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 - 4 ÷ 2 ?",
     options: ["6", "8", "4"],
@@ -11545,7 +11545,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 4 × 2 ?",
     options: ["10", "12", "14"],
@@ -11554,7 +11554,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (2 + 4) + 3 ?",
     options: ["6", "7", "8"],
@@ -11563,7 +11563,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 ÷ 3 ?",
     options: ["17", "19", "15"],
@@ -11572,7 +11572,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 2 ?",
     options: ["10", "12", "8"],
@@ -11580,7 +11580,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "50 divisé par 5 plus 2 donne 12.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (5 + 3) × 2 ?",
     options: ["6", "8", "10"],
@@ -11590,7 +11590,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 + 9 ÷ 3 ?",
     options: ["14", "15", "16"],
@@ -11600,7 +11600,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 5 × 3 ?",
     options: ["25", "21", "27"],
@@ -11610,7 +11610,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × 5 - 4 ?",
     options: ["16", "18", "14"],
@@ -11620,7 +11620,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 3 + 6 ?",
     options: ["10", "11", "12"],
@@ -11629,7 +11629,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 ÷ (3 + 2) ?",
     options: ["2", "3", "5"],
@@ -11639,7 +11639,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 - 3) + 6 ?",
     options: ["10", "12", "14"],
@@ -11649,7 +11649,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 × 2) + 5 ?",
     options: ["7", "8", "9"],
@@ -11659,7 +11659,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 2 × (3 + 1) ?",
     options: ["11", "13", "15"],
@@ -11669,7 +11669,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) ÷ 2 × 3 ?",
     options: ["15", "18", "30"],
@@ -11679,7 +11679,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 3 × 4 + 2 ?",
     options: ["8", "10", "12"],
@@ -11689,7 +11689,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 + 4 ÷ 2 ?",
     options: ["16", "17", "18"],
@@ -11699,7 +11699,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 14 - 5 ?",
     options: ["18", "20", "22"],
@@ -11708,7 +11708,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (15 + 10) ?",
     options: ["25", "30", "35"],
@@ -11717,7 +11717,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (4 - 2) ?",
     options: ["16", "12", "20"],
@@ -11726,7 +11726,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ 5 + 3 ?",
     options: ["11", "10", "12"],
@@ -11735,7 +11735,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 7 - (5 + 4) ?",
     options: ["12", "10", "14"],
@@ -11744,7 +11744,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 - 10 ?",
     options: ["15", "20", "25"],
@@ -11753,7 +11753,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 4 + 4 ÷ 4 ?",
     options: ["17", "16", "18"],
@@ -11762,7 +11762,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ (2 + 3) ?",
     options: ["2", "3", "5"],
@@ -11772,7 +11772,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 - 1) + 4 ?",
     options: ["18", "20", "16"],
@@ -11782,7 +11782,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 15 ÷ 3 - 2 ?",
     options: ["8", "10", "12"],
@@ -11792,7 +11792,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 5) - (2 × 3) ?",
     options: ["14", "16", "10"],
@@ -11802,7 +11802,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 - 3) + 6 ?",
     options: ["21", "24", "18"],
@@ -11812,7 +11812,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 18 + 7 ?",
     options: ["12", "14", "10"],
@@ -11821,7 +11821,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (6 × 3) ?",
     options: ["23", "24", "18"],
@@ -11831,7 +11831,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 3) - 10 ?",
     options: ["15", "10", "25"],
@@ -11840,7 +11840,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 1) + 5 ?",
     options: ["15", "10", "20"],
@@ -11849,7 +11849,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 3 + 6 ÷ 3 ?",
     options: ["8", "10", "12"],
@@ -11858,7 +11858,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 6 × 2 ?",
     options: ["10", "11", "12"],
@@ -11867,7 +11867,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (3 + 7) × 2 ?",
     options: ["20", "18", "22"],
@@ -11876,7 +11876,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 5 × (3 + 1) ?",
     options: ["20", "15", "25"],
@@ -11885,7 +11885,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (8 ÷ 2) + (9 - 3) ?",
     options: ["10", "12", "8"],
@@ -11894,7 +11894,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 25 ÷ 5 + 3 ?",
     options: ["8", "7", "6"],
@@ -11903,7 +11903,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 14 - 6 + 5 ?",
     options: ["13", "12", "14"],
@@ -11912,7 +11912,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × 2 - 5 = ?",
     options: ["10", "13", "18"],
@@ -11922,7 +11922,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 + 4 ÷ 2 = ?",
     options: ["10", "12", "14"],
@@ -11931,7 +11931,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 3 + 1 = ?",
     options: ["24", "25", "26"],
@@ -11941,7 +11941,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (6 × 2) = ?",
     options: ["18", "20", "24"],
@@ -11951,7 +11951,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) - (4 ÷ 2) = ?",
     options: ["14", "15", "16"],
@@ -11961,7 +11961,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 3) × (2 + 1) = ?",
     options: ["21", "24", "27"],
@@ -11971,7 +11971,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 ÷ 2) + (9 - 3) × 2 = ?",
     options: ["12", "14", "16"],
@@ -11981,7 +11981,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 5) ÷ (2 + 3) = ?",
     options: ["2", "3", "4"],
@@ -11991,7 +11991,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 6 ?",
     options: ["27", "21", "24"],
@@ -12000,7 +12000,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (6 × 2) - 3 ?",
     options: ["14", "12", "16"],
@@ -12009,7 +12009,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 - 1) + 4 ?",
     options: ["10", "8", "12"],
@@ -12018,7 +12018,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 15 - (5 × 2) ?",
     options: ["16", "18", "20"],
@@ -12027,7 +12027,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (7 + 3) × 2 ?",
     options: ["10", "12", "8"],
@@ -12037,7 +12037,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ 2 + 2 ?",
     options: ["8", "9", "10"],
@@ -12047,7 +12047,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 35 ÷ 5 + 3 ?",
     options: ["8", "10", "12"],
@@ -12055,7 +12055,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "Diviser 35 par 5 donne 7, puis ajouter 3 fait 10.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 6 - 2 ?",
     options: ["12", "14", "16"],
@@ -12064,7 +12064,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (2 + 3) ?",
     options: ["45", "50", "55"],
@@ -12073,7 +12073,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 × (3 - 1) + 6 ?",
     options: ["30", "24", "36"],
@@ -12082,7 +12082,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × 5 + 2 = ?",
     options: ["15", "17", "19"],
@@ -12091,7 +12091,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 2) - (3 + 1) = ?",
     options: ["8", "9", "10"],
@@ -12100,7 +12100,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ (5 - 3) = ?",
     options: ["5", "10", "15"],
@@ -12109,7 +12109,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 5) × (2 - 1) = ?",
     options: ["8", "10", "16"],
@@ -12118,7 +12118,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 ÷ 3) × (5 - 2) = ?",
     options: ["8", "10", "12"],
@@ -12127,7 +12127,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 + 5) - (3 × 5) = ?",
     options: ["5", "10", "15"],
@@ -12136,7 +12136,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 4) - (8 ÷ 2) = ?",
     options: ["16", "18", "20"],
@@ -12145,7 +12145,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 × 2) + 1 ?",
     options: ["5", "6", "7"],
@@ -12155,7 +12155,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (2 + 3) × 2 ?",
     options: ["6", "7", "8"],
@@ -12165,7 +12165,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 9 ÷ 3 ?",
     options: ["5", "6", "8"],
@@ -12174,7 +12174,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 - 4 + 2 = ?",
     options: ["5", "6", "7"],
@@ -12184,7 +12184,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 × 2 ÷ 3 = ?",
     options: ["2", "3", "4"],
@@ -12194,7 +12194,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 ÷ 4 + 5 = ?",
     options: ["6", "7", "8"],
@@ -12203,7 +12203,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 2) + (6 ÷ 3) = ?",
     options: ["10", "11", "12"],
@@ -12213,7 +12213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - (3 × 4) = ?",
     options: ["3", "6", "9"],
@@ -12223,7 +12223,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 ÷ 3) + (4 × 2) = ?",
     options: ["10", "12", "14"],
@@ -12233,7 +12233,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "((6 + 4) × 2) - 8 = ?",
     options: ["8", "10", "12"],
@@ -12243,7 +12243,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) + (3 × 3) = ?",
     options: ["10", "12", "14"],
@@ -12253,7 +12253,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (5 ÷ 5) = ?",
     options: ["6", "7", "8"],
@@ -12263,7 +12263,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (3 × 2) ?",
     options: ["10", "14", "12"],
@@ -12272,7 +12272,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 + 3) ?",
     options: ["24", "28", "32"],
@@ -12281,7 +12281,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 2 × (3 + 1) ?",
     options: ["4", "6", "8"],
@@ -12290,7 +12290,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (4 - 2) ?",
     options: ["12", "10", "14"],
@@ -12300,7 +12300,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (1 + 5) ?",
     options: ["5", "6", "4"],
@@ -12310,7 +12310,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (5 + 3) - 6 ?",
     options: ["34", "26", "28"],
@@ -12320,7 +12320,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 4 × 2 ?",
     options: ["14", "16", "10"],
@@ -12330,7 +12330,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 3) + (10 - 2) ?",
     options: ["10", "12", "8"],
@@ -12340,7 +12340,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 ÷ 3 + 4 ?",
     options: ["3", "5", "7"],
@@ -12349,7 +12349,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 5 × 9 ?",
     options: ["5", "45", "10"],
@@ -12358,7 +12358,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 + 3 ?",
     options: ["8", "7", "5"],
@@ -12368,7 +12368,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 6 × 2 ?",
     options: ["12", "18", "24"],
@@ -12378,7 +12378,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 - 3 × 4 ?",
     options: ["13", "17", "21"],
@@ -12388,7 +12388,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) + 4 ?",
     options: ["8", "9", "10"],
@@ -12398,7 +12398,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (2 × 3) ?",
     options: ["8", "6", "4"],
@@ -12407,7 +12407,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 2 × (3 + 1) ?",
     options: ["6", "2", "8"],
@@ -12416,7 +12416,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 × (3 - 1) ?",
     options: ["16", "12", "14"],
@@ -12425,7 +12425,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 1) + 4 ?",
     options: ["6", "8", "10"],
@@ -12434,7 +12434,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) + 2 ?",
     options: ["15", "18", "20"],
@@ -12443,7 +12443,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 4) × 3 ?",
     options: ["15", "16", "18"],
@@ -12452,7 +12452,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 + 7 ?",
     options: ["10", "11", "12"],
@@ -12461,7 +12461,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 6 ?",
     options: ["10", "12", "14"],
@@ -12470,7 +12470,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 3 × (2 + 1) ?",
     options: ["16", "12", "10"],
@@ -12480,7 +12480,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) ÷ 2 × 4 ?",
     options: ["16", "14", "12"],
@@ -12489,7 +12489,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "La somme dans les parenthèses est 8, divisé par 2 donne 4, multiplié par 4 donne 16.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 2 + 3 ?",
     options: ["6", "7", "8"],
@@ -12498,7 +12498,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 4) - 5 ?",
     options: ["9", "10", "11"],
@@ -12507,7 +12507,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 3) × 6 ?",
     options: ["36", "42", "48"],
@@ -12516,7 +12516,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 × 3) ?",
     options: ["25", "50", "75"],
@@ -12525,7 +12525,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 3 × 4 ?",
     options: ["20", "22", "24"],
@@ -12534,7 +12534,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 × 2) + (12 ÷ 3) ?",
     options: ["20", "22", "24"],
@@ -12544,7 +12544,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 9 ?",
     options: ["10", "11", "12"],
@@ -12553,7 +12553,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 × 2 ?",
     options: ["20", "22", "24"],
@@ -12562,7 +12562,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) × 3 + 4 ?",
     options: ["18", "20", "22"],
@@ -12571,7 +12571,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (2 × 4) ?",
     options: ["13", "14", "15"],
@@ -12580,7 +12580,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 + 2) × 2 ?",
     options: ["0", "1", "2"],
@@ -12589,7 +12589,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 + 5 ?",
     options: ["10", "11", "12"],
@@ -12598,7 +12598,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (6 + 4) × 2 ?",
     options: ["15", "10", "5"],
@@ -12607,7 +12607,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 4) + 3 ?",
     options: ["6", "8", "5"],
@@ -12616,7 +12616,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (2 + 1) ?",
     options: ["20", "21", "19"],
@@ -12625,7 +12625,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (3 × 5) + 2 ?",
     options: ["20", "22", "23"],
@@ -12634,7 +12634,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 15 - 3 × 2 ?",
     options: ["9", "12", "6"],
@@ -12643,7 +12643,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 50 ÷ (5 + 5) ?",
     options: ["5", "10", "2"],
@@ -12653,7 +12653,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (3 × 4) + 2 ?",
     options: ["10", "14", "8"],
@@ -12663,7 +12663,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (6 + 2) - 4 ?",
     options: ["20", "22", "18"],
@@ -12673,7 +12673,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) - 8 ÷ 2 ?",
     options: ["28", "30", "24"],
@@ -12683,7 +12683,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (5 + 3) × (4 - 2) ?",
     options: ["16", "14", "12"],
@@ -12693,7 +12693,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 9 - 2 + 3 ?",
     options: ["6", "4", "10"],
@@ -12703,7 +12703,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) x 4 ?",
     options: ["24", "25", "26"],
@@ -12712,7 +12712,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 x (2 + 3) - 5 ?",
     options: ["20", "25", "30"],
@@ -12721,7 +12721,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 3) x 3 ?",
     options: ["12", "15", "18"],
@@ -12730,7 +12730,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) x 2 - 4 ?",
     options: ["10", "12", "14"],
@@ -12739,7 +12739,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 + 5) ?",
     options: ["15", "10", "20"],
@@ -12748,7 +12748,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 - 2) + 4 ?",
     options: ["24", "26", "22"],
@@ -12757,7 +12757,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 5 ?",
     options: ["8", "9", "7"],
@@ -12766,7 +12766,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 - 5 ?",
     options: ["7", "9", "10"],
@@ -12775,7 +12775,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 - 2 ?",
     options: ["19", "20", "21"],
@@ -12784,7 +12784,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 7 + 5 ?",
     options: ["16", "17", "18"],
@@ -12793,7 +12793,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × (5 - 3) ?",
     options: ["20", "15", "25"],
@@ -12802,7 +12802,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 4) + 10 ?",
     options: ["10", "15", "20"],
@@ -12811,7 +12811,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (3 + 1) ?",
     options: ["32", "30", "28"],
@@ -12820,7 +12820,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 + 6 ?",
     options: ["26", "22", "24"],
@@ -12829,7 +12829,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (8 ÷ 2) ?",
     options: ["19", "20", "21"],
@@ -12838,7 +12838,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 6) × 2 - 8 ?",
     options: ["28", "24", "32"],
@@ -12848,7 +12848,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 1) × 3 ?",
     options: ["18", "12", "15"],
@@ -12858,7 +12858,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × 2 + 3 ?",
     options: ["22", "20", "18"],
@@ -12868,7 +12868,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (2 × 4) ?",
     options: ["15", "14", "16"],
@@ -12878,7 +12878,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 2 ?",
     options: ["3", "5", "7"],
@@ -12888,7 +12888,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × (3 + 1) ?",
     options: ["18", "16", "14"],
@@ -12898,7 +12898,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 - (6 × 2) ?",
     options: ["12", "10", "8"],
@@ -12907,7 +12907,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 12) × 2 ?",
     options: ["36", "40", "32"],
@@ -12916,7 +12916,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - (4 ÷ 2) ?",
     options: ["26", "27", "28"],
@@ -12925,7 +12925,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 5 ?",
     options: ["20", "25", "30"],
@@ -12933,7 +12933,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "100 divisé par 5 est 20, plus 5 donne 25.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 5 ?",
     options: ["10", "11", "12"],
@@ -12942,7 +12942,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 3 × (4 + 2).",
     options: ["12", "15", "18"],
@@ -12952,7 +12952,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 7 × 3 - 4 ÷ 2.",
     options: ["19", "20", "21"],
@@ -12962,7 +12962,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez (3 + 5) × (4 - 2).",
     options: ["12", "16", "14"],
@@ -12972,7 +12972,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 5 × (6 - 2) + 3.",
     options: ["23", "28", "20"],
@@ -12982,7 +12982,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) + (3 × 4) ?",
     options: ["14", "18", "16"],
@@ -12992,7 +12992,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 4 × 5 - 6 ÷ 3 + 2.",
     options: ["16", "18", "20"],
@@ -13002,7 +13002,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 1 + 2 + 3 + 4 ?",
     options: ["8", "9", "10"],
@@ -13011,7 +13011,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 + 3 × 2 = ?",
     options: ["11", "16", "10"],
@@ -13020,7 +13020,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 6 ÷ 2 = ?",
     options: ["9", "12", "6"],
@@ -13029,7 +13029,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × (2 + 3) = ?",
     options: ["40", "50", "30"],
@@ -13039,7 +13039,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) × 2 = ?",
     options: ["32", "36", "28"],
@@ -13048,7 +13048,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 5) × (4 - 2) = ?",
     options: ["16", "12", "8"],
@@ -13058,7 +13058,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ 3 × 2 = ?",
     options: ["6", "12", "9"],
@@ -13067,7 +13067,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (6 ÷ 2) = ?",
     options: ["18", "12", "24"],
@@ -13077,7 +13077,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 2) ÷ (3 - 1) × 4 = ?",
     options: ["24", "20", "16"],
@@ -13087,7 +13087,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) + (8 ÷ 2) = ?",
     options: ["19", "23", "17"],
@@ -13097,7 +13097,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 - 6) × 3 + 2 = ?",
     options: ["26", "28", "24"],
@@ -13106,7 +13106,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 4 - 10 = ?",
     options: ["18", "28", "24"],
@@ -13115,7 +13115,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ 5 + 6 = ?",
     options: ["8", "4", "6"],
@@ -13124,7 +13124,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 ÷ 3) × 5 - 2 = ?",
     options: ["23", "25", "20"],
@@ -13133,7 +13133,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 2 ?",
     options: ["12", "14", "16"],
@@ -13142,7 +13142,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 2 + 5 ?",
     options: ["25", "30", "35"],
@@ -13151,7 +13151,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 2 × (6 - 4) ?",
     options: ["10", "11", "12"],
@@ -13160,7 +13160,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 - 2) + 3 ?",
     options: ["15", "16", "17"],
@@ -13169,7 +13169,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 10) ÷ 2 ?",
     options: ["10", "15", "20"],
@@ -13178,7 +13178,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 21 - (6 ÷ 3) ?",
     options: ["19", "20", "21"],
@@ -13187,7 +13187,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (30 ÷ 3) + (4 × 2) ?",
     options: ["14", "16", "18"],
@@ -13196,7 +13196,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 ÷ 2 + 4 = ?",
     options: ["8", "6", "4"],
@@ -13205,7 +13205,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 × 2 = ?",
     options: ["4", "8", "6"],
@@ -13215,7 +13215,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) × 3 = ?",
     options: ["24", "18", "28"],
@@ -13225,7 +13225,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) ÷ 2 + 3 = ?",
     options: ["5", "6", "7"],
@@ -13235,7 +13235,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 3) × (2 - 1) = ?",
     options: ["12", "9", "15"],
@@ -13244,7 +13244,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 3) + (2 × 2) = ?",
     options: ["16", "14", "12"],
@@ -13254,7 +13254,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 5) ÷ (2 + 3) = ?",
     options: ["2", "1", "3"],
@@ -13264,7 +13264,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ 4 × 3 = ?",
     options: ["15", "12", "18"],
@@ -13273,7 +13273,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 + 5 - 3 = ?",
     options: ["9", "11", "10"],
@@ -13282,7 +13282,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 - 9 + 3 = ?",
     options: ["12", "10", "8"],
@@ -13291,7 +13291,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 3) + (4 × 2) = ?",
     options: ["18", "17", "14"],
@@ -13300,7 +13300,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) + (4 × 3) ?",
     options: ["14", "16", "18"],
@@ -13309,7 +13309,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 + 10 ?",
     options: ["12", "14", "16"],
@@ -13318,7 +13318,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 7 - 5 ?",
     options: ["10", "11", "12"],
@@ -13327,7 +13327,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 + 3 ?",
     options: ["15", "16", "17"],
@@ -13336,7 +13336,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) × 5 ?",
     options: ["30", "32", "36"],
@@ -13346,7 +13346,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 - 1) + 6 ?",
     options: ["9", "12", "6"],
@@ -13355,7 +13355,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 5) ÷ 3 × 2 ?",
     options: ["10", "8", "12"],
@@ -13364,7 +13364,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (7 - 3) + 10 ?",
     options: ["26", "30", "22"],
@@ -13373,7 +13373,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 3 + 9 ?",
     options: ["21", "19", "22"],
@@ -13382,7 +13382,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 3) ?",
     options: ["6", "5", "4"],
@@ -13392,7 +13392,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 ÷ 2) ?",
     options: ["45", "40", "35"],
@@ -13401,7 +13401,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On divise d'abord 10 par 2, puis on soustrait de 50, ce qui donne 45.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 + 6 ÷ 3 ?",
     options: ["21", "18", "24"],
@@ -13410,7 +13410,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 8 × 2 ?",
     options: ["26", "22", "28"],
@@ -13419,7 +13419,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (6 ÷ 2) + 5 ?",
     options: ["13", "12", "11"],
@@ -13428,7 +13428,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 3 + 10 - 5 ?",
     options: ["15", "10", "20"],
@@ -13437,7 +13437,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 x 2 = ?",
     options: ["16", "14", "18"],
@@ -13446,7 +13446,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 - 4 + 3 = ?",
     options: ["9", "8", "7"],
@@ -13455,7 +13455,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 ÷ 3 + 1 = ?",
     options: ["5", "4", "3"],
@@ -13464,7 +13464,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 x 3 - 5 = ?",
     options: ["13", "15", "18"],
@@ -13473,7 +13473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ 4 + 5 = ?",
     options: ["10", "7", "8"],
@@ -13482,7 +13482,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "4 x (2 + 3) = ?",
     options: ["20", "15", "25"],
@@ -13492,7 +13492,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 - 3 x 4 = ?",
     options: ["6", "12", "10"],
@@ -13502,7 +13502,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 6) ÷ 3 x 2 = ?",
     options: ["10", "12", "8"],
@@ -13512,7 +13512,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "40 - (8 ÷ 2) x 5 = ?",
     options: ["30", "20", "25"],
@@ -13522,7 +13522,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 x (5 + 4) - 7 = ?",
     options: ["20", "14", "17"],
@@ -13532,7 +13532,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 3) ÷ 3 + 7 = ?",
     options: ["8", "9", "7"],
@@ -13542,7 +13542,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (14 - 6) × 2 ?",
     options: ["16", "12", "14"],
@@ -13551,7 +13551,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × (6 - 2) ?",
     options: ["32", "24", "48"],
@@ -13561,7 +13561,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 7 + 7 ?",
     options: ["21", "20", "19"],
@@ -13570,7 +13570,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 + 5) ?",
     options: ["2", "3", "4"],
@@ -13579,7 +13579,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 2 + 6 ?",
     options: ["8", "10", "12"],
@@ -13588,7 +13588,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 + 3",
     options: ["7", "8", "9"],
@@ -13597,7 +13597,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4",
     options: ["8", "7", "9"],
@@ -13606,7 +13606,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 × 2",
     options: ["10", "12", "14"],
@@ -13615,7 +13615,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ 3",
     options: ["5", "4", "6"],
@@ -13624,7 +13624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 + 6 - 3",
     options: ["12", "10", "15"],
@@ -13633,7 +13633,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 - 7 + 2",
     options: ["13", "12", "14"],
@@ -13642,7 +13642,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "25 ÷ (5 - 3)",
     options: ["10", "12", "14"],
@@ -13651,7 +13651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 + 4 × 2 - 6",
     options: ["10", "14", "12"],
@@ -13660,7 +13660,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "4 × (3 + 1) - 2",
     options: ["14", "10", "12"],
@@ -13669,7 +13669,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "30 ÷ (6 - 3) + 4",
     options: ["12", "14", "16"],
@@ -13678,7 +13678,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "16 - 4 ÷ 2 + 5",
     options: ["17", "18", "19"],
@@ -13687,7 +13687,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 8 + 5 ?",
     options: ["12", "13", "14"],
@@ -13696,7 +13696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que vaut 7 x 3 ?",
     options: ["21", "24", "19"],
@@ -13705,7 +13705,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 + 18 - 10 ?",
     options: ["33", "34", "35"],
@@ -13714,7 +13714,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : 6 x 4 - 8 ÷ 2 ?",
     options: ["22", "20", "18"],
@@ -13724,7 +13724,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 12 + (15 - 3) x 2 ?",
     options: ["30", "36", "24"],
@@ -13734,7 +13734,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 2 x (5 + 5) ?",
     options: ["30", "40", "20"],
@@ -13744,7 +13744,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : (10 - 2) x 4 + 6 ?",
     options: ["38", "40", "42"],
@@ -13754,7 +13754,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 10 - 2 ?",
     options: ["10", "12", "14"],
@@ -13764,7 +13764,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : 9 + 6 - 5 ?",
     options: ["10", "8", "11"],
@@ -13773,7 +13773,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 × 2 - 5 = ?",
     options: ["15", "20", "10"],
@@ -13782,7 +13782,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 2 + 1 = ?",
     options: ["15", "17", "18"],
@@ -13791,7 +13791,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × (6 - 4) + 2 = ?",
     options: ["10", "14", "12"],
@@ -13801,7 +13801,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (2 + 1) - 3 = ?",
     options: ["21", "18", "15"],
@@ -13811,7 +13811,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 4) × (3 - 1) ÷ 2 = ?",
     options: ["12", "16", "8"],
@@ -13821,7 +13821,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 × 3 + 2 × 4 = ?",
     options: ["26", "30", "28"],
@@ -13831,7 +13831,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - (2 × 3) + 1 = ?",
     options: ["15", "16", "17"],
@@ -13841,7 +13841,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 2) + (10 ÷ 2) = ?",
     options: ["15", "12", "20"],
@@ -13851,7 +13851,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (4 - 2) + 3 ?",
     options: ["17", "15", "19"],
@@ -13860,7 +13860,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 5 + 1 ?",
     options: ["10", "9", "11"],
@@ -13868,7 +13868,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "14 moins 5, plus 1, donne 10.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 + 4 ÷ 2 ?",
     options: ["16", "18", "14"],
@@ -13878,7 +13878,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 ÷ 3) × 4 ?",
     options: ["20", "18", "15"],
@@ -13888,7 +13888,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 10 ÷ 2 ?",
     options: ["16", "18", "17"],
@@ -13897,7 +13897,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (4 + 1) ?",
     options: ["25", "30", "20"],
@@ -13906,7 +13906,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 7 × 2 ?",
     options: ["12", "14", "16"],
@@ -13915,7 +13915,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 7 - 4 ?",
     options: ["9", "10", "11"],
@@ -13924,7 +13924,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 × 5) + (8 ÷ 2) ?",
     options: ["20", "22", "23"],
@@ -13933,7 +13933,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (16 - 4) × 2 ?",
     options: ["20", "24", "28"],
@@ -13942,7 +13942,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 ?",
     options: ["5", "6", "7"],
@@ -13951,7 +13951,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 7 - 5 ?",
     options: ["16", "17", "18"],
@@ -13960,7 +13960,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 4 × 2 ?",
     options: ["15", "18", "14"],
@@ -13969,7 +13969,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (4 + 6) × 2 ?",
     options: ["2", "4", "6"],
@@ -13978,7 +13978,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (8 ÷ 4) + 5 ?",
     options: ["9", "10", "11"],
@@ -13987,7 +13987,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 - 3 × 2 + 4 ?",
     options: ["9", "10", "8"],
@@ -13996,7 +13996,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 2 × (5 - 3) ?",
     options: ["5", "7", "6"],
@@ -14005,7 +14005,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 3 × 2 - 4 ?",
     options: ["10", "11", "12"],
@@ -14015,7 +14015,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 5 × 2 ?",
     options: ["16", "14", "12"],
@@ -14025,7 +14025,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (3 + 2) × 2 ?",
     options: ["10", "5", "15"],
@@ -14035,7 +14035,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 3 ?",
     options: ["8", "9", "7"],
@@ -14044,7 +14044,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 4 - 2 ?",
     options: ["9", "10", "8"],
@@ -14053,7 +14053,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 - 2 ?",
     options: ["15", "13", "10"],
@@ -14062,7 +14062,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × (5 - 1) ?",
     options: ["20", "15", "25"],
@@ -14072,7 +14072,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 - 1) + 2 ?",
     options: ["14", "12", "16"],
@@ -14081,7 +14081,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (4 + 6) ?",
     options: ["10", "12", "8"],
@@ -14090,7 +14090,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 7 × 2 ?",
     options: ["18", "19", "20"],
@@ -14099,7 +14099,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 ÷ 2 + 3) ?",
     options: ["24", "20", "21"],
@@ -14108,7 +14108,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 - 5 ?",
     options: ["15", "16", "13"],
@@ -14117,7 +14117,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 5 × 2 ?",
     options: ["20", "25", "15"],
@@ -14126,7 +14126,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) - 8 ?",
     options: ["24", "28", "16"],
@@ -14136,7 +14136,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 6 - 10 ?",
     options: ["14", "14", "24"],
@@ -14145,7 +14145,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (4 × 2) + 3 ?",
     options: ["1", "2", "3"],
@@ -14154,7 +14154,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 3 + 6 ?",
     options: ["16", "17", "18"],
@@ -14163,7 +14163,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 10 ?",
     options: ["12", "13", "15"],
@@ -14172,7 +14172,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 x 3 + 6 ÷ 2 ?",
     options: ["10", "12", "15"],
@@ -14181,7 +14181,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (6 x 2) - 3 ?",
     options: ["10", "12", "14"],
@@ -14191,7 +14191,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 x 5) - (3 x 2) ?",
     options: ["23", "25", "27"],
@@ -14201,7 +14201,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 3 x 4 ?",
     options: ["16", "18", "20"],
@@ -14211,7 +14211,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 3) + (4 x 3) ?",
     options: ["14", "16", "18"],
@@ -14221,7 +14221,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 - 2) + 3 ?",
     options: ["10", "13", "16"],
@@ -14230,7 +14230,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 ÷ 3 - 2 ?",
     options: ["5", "7", "9"],
@@ -14240,7 +14240,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - 3 × 20 ?",
     options: ["40", "60", "20"],
@@ -14250,7 +14250,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × (2 + 1) ?",
     options: ["24", "30", "12"],
@@ -14260,7 +14260,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 60 ÷ (3 × 2) + 5 ?",
     options: ["10", "15", "20"],
@@ -14270,7 +14270,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (5 + 2) ?",
     options: ["12", "11", "10"],
@@ -14279,7 +14279,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + 8 ?",
     options: ["12", "13", "14"],
@@ -14287,7 +14287,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "La division donne 9, et 9 plus 4 donne 13.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (5 - 2) ?",
     options: ["15", "18", "21"],
@@ -14296,7 +14296,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (6 - 4) ?",
     options: ["10", "12", "14"],
@@ -14305,7 +14305,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 4 × 2 - 5 ?",
     options: ["5", "6", "7"],
@@ -14315,7 +14315,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 + 4) ÷ 2 ?",
     options: ["25", "30", "20"],
@@ -14324,7 +14324,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (6 + 4) ?",
     options: ["14", "15", "16"],
@@ -14333,7 +14333,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) × (5 + 1) ?",
     options: ["36", "40", "42"],
@@ -14342,7 +14342,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 + 3) × 5 ?",
     options: ["10", "15", "20"],
@@ -14351,7 +14351,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 ÷ 5) ?",
     options: ["80", "85", "90"],
@@ -14360,7 +14360,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 + 2 × 3 ?",
     options: ["10", "12", "14"],
@@ -14369,7 +14369,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 5 ?",
     options: ["8", "9", "10"],
@@ -14378,7 +14378,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (7 + 3) ?",
     options: ["8", "10", "12"],
@@ -14388,7 +14388,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 2 + 6 ?",
     options: ["8", "9", "10"],
@@ -14397,7 +14397,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 3 ?",
     options: ["4", "5", "6"],
@@ -14406,7 +14406,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 2 ÷ 7 = ?",
     options: ["2", "1", "3"],
@@ -14415,7 +14415,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ 3 + 4 = ?",
     options: ["9", "8", "7"],
@@ -14424,7 +14424,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 4) × 2 = ?",
     options: ["20", "18", "22"],
@@ -14433,7 +14433,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 2) × 3 = ?",
     options: ["18", "20", "16"],
@@ -14443,7 +14443,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 + (3 × 2) = ?",
     options: ["15", "12", "18"],
@@ -14453,7 +14453,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 3) ÷ (7 - 5) = ?",
     options: ["5", "4", "3"],
@@ -14463,7 +14463,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 ÷ 2) + (3 × 4) = ?",
     options: ["20", "18", "22"],
@@ -14473,7 +14473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - (2 × 3)) + 7 = ?",
     options: ["10", "12", "8"],
@@ -14483,7 +14483,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (5 × 2) = ?",
     options: ["16", "19", "20"],
@@ -14493,7 +14493,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 5) ÷ (5 - 2) = ?",
     options: ["5", "4", "3"],
@@ -14503,7 +14503,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 4) × (3 - 1) = ?",
     options: ["20", "22", "18"],
@@ -14513,7 +14513,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 15 - (3 × 2) ?",
     options: ["9", "11", "7"],
@@ -14522,7 +14522,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 × (2 + 1) ?",
     options: ["24", "20", "16"],
@@ -14531,7 +14531,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 × 15) ?",
     options: ["20", "10", "30"],
@@ -14540,7 +14540,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 6 + 2 × 5 ?",
     options: ["16", "20", "18"],
@@ -14549,7 +14549,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 4 - 10 ?",
     options: ["30", "28", "26"],
@@ -14558,7 +14558,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 - 1) ?",
     options: ["25", "30", "20"],
@@ -14567,7 +14567,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 4 × 2 ?",
     options: ["18", "19", "20"],
@@ -14576,7 +14576,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × (4 - 2) ?",
     options: ["10", "12", "8"],
@@ -14586,7 +14586,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 5 + 3 ?",
     options: ["22", "23", "20"],
@@ -14595,7 +14595,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 6 + 2 ?",
     options: ["14", "16", "18"],
@@ -14604,7 +14604,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 5 ?",
     options: ["7", "8", "9"],
@@ -14613,7 +14613,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 4) × (3 + 1) ?",
     options: ["24", "28", "36"],
@@ -14622,7 +14622,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ (5 + 4) ?",
     options: ["4", "5", "6"],
@@ -14631,7 +14631,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 2 × (3 + 1) ?",
     options: ["6", "8", "10"],
@@ -14640,7 +14640,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 + 7 - 3 = ?",
     options: ["9", "10", "11"],
@@ -14650,7 +14650,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 + 6 = ?",
     options: ["10", "12", "14"],
@@ -14660,7 +14660,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × 3 ÷ 2 = ?",
     options: ["12", "10", "14"],
@@ -14670,7 +14670,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 6 × 2 = ?",
     options: ["3", "9", "6"],
@@ -14680,7 +14680,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × (3 + 5) = ?",
     options: ["56", "48", "40"],
@@ -14690,7 +14690,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 2) × 4 = ?",
     options: ["48", "44", "52"],
@@ -14700,7 +14700,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (6 + 2) = ?",
     options: ["48", "36", "54"],
@@ -14710,7 +14710,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 6) ÷ (2 + 3) × 5 = ?",
     options: ["10", "8", "12"],
@@ -14720,7 +14720,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 ÷ 3) + (4 × 2) = ?",
     options: ["14", "10", "12"],
@@ -14730,7 +14730,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 - (4 × 3) + 2 = ?",
     options: ["10", "8", "12"],
@@ -14740,7 +14740,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × (7 - 5) = ?",
     options: ["16", "8", "12"],
@@ -14750,7 +14750,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 3 ÷ 2 = ?",
     options: ["12", "15", "18"],
@@ -14759,7 +14759,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On soustrait 2 de 10 pour obtenir 8, puis on multiplie par 3 et divise par 2 : 8 × 3 ÷ 2 = 12.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 5 + 2 ?",
     options: ["14", "15", "16"],
@@ -14768,7 +14768,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 ÷ 3 + 6 ?",
     options: ["7", "8", "9"],
@@ -14777,7 +14777,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (3 × 5) ?",
     options: ["5", "10", "15"],
@@ -14786,7 +14786,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (5 + 3) - 4 ?",
     options: ["10", "12", "14"],
@@ -14795,7 +14795,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 7) × (4 - 2) ?",
     options: ["20", "30", "40"],
@@ -14804,7 +14804,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 × 3 = ?",
     options: ["18", "20", "21"],
@@ -14813,7 +14813,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 ÷ 4 = ?",
     options: ["4", "5", "6"],
@@ -14822,7 +14822,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 + 6 - 4 = ?",
     options: ["16", "17", "18"],
@@ -14831,7 +14831,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × 2 + 4 = ?",
     options: ["20", "24", "22"],
@@ -14840,7 +14840,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 ÷ 5) + (3 × 4) = ?",
     options: ["15", "16", "17"],
@@ -14849,7 +14849,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 4) + (6 ÷ 2) = ?",
     options: ["14", "16", "12"],
@@ -14858,7 +14858,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 6) ÷ 2 + 5 = ?",
     options: ["10", "11", "12"],
@@ -14868,7 +14868,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × 2 = ?",
     options: ["14", "16", "12"],
@@ -14877,7 +14877,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(2 + 2) × 5 = ?",
     options: ["20", "25", "22"],
@@ -14886,7 +14886,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 + (2 × 3) = ?",
     options: ["12", "13", "14"],
@@ -14895,7 +14895,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (2 × 4) ?",
     options: ["22", "23", "24"],
@@ -14905,7 +14905,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (4 × 10) + 5 ?",
     options: ["45", "50", "55"],
@@ -14915,7 +14915,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (16 ÷ 4) × (2 + 3) ?",
     options: ["20", "24", "28"],
@@ -14925,7 +14925,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 15 + 7 ?",
     options: ["22", "20", "25"],
@@ -14934,7 +14934,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 × 4 ?",
     options: ["32", "28", "36"],
@@ -14943,7 +14943,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 - 3 ?",
     options: ["24", "22", "20"],
@@ -14952,7 +14952,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 18 ÷ 2 + 5 ?",
     options: ["14", "13", "12"],
@@ -14961,7 +14961,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (10 + 5) × 2 ?",
     options: ["30", "25", "20"],
@@ -14970,7 +14970,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (6 + 2) × (5 - 3) ?",
     options: ["16", "8", "12"],
@@ -14980,7 +14980,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 45 ÷ 5 + 9 ?",
     options: ["18", "12", "15"],
@@ -14989,7 +14989,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 ÷ 5) × 2 ?",
     options: ["90", "80", "70"],
@@ -14999,7 +14999,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 30 ÷ 3 + 15 ?",
     options: ["20", "25", "18"],
@@ -15008,7 +15008,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 7 ?",
     options: ["10", "12", "8"],
@@ -15017,7 +15017,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 5 - 3 ?",
     options: ["14", "15", "16"],
@@ -15026,7 +15026,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 4) × 2 ?",
     options: ["30", "32", "36"],
@@ -15035,7 +15035,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 × 3) + 8 ?",
     options: ["10", "12", "14"],
@@ -15044,7 +15044,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 2 + 15 ?",
     options: ["30", "35", "40"],
@@ -15053,7 +15053,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 4 + 3 ?",
     options: ["4", "5", "6"],
@@ -15062,7 +15062,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 ÷ 2 + 3 ?",
     options: ["8", "9", "10"],
@@ -15071,7 +15071,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 x 5 - 10 ÷ 2 ?",
     options: ["20", "21", "22"],
@@ -15080,7 +15080,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (4 x 3) + 2 ?",
     options: ["14", "15", "16"],
@@ -15089,7 +15089,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 3 x 2 ?",
     options: ["9", "10", "11"],
@@ -15098,7 +15098,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 + 5 ?",
     options: ["12", "13", "14"],
@@ -15107,7 +15107,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 x 3 + 9 ÷ 3 ?",
     options: ["10", "11", "12"],
@@ -15116,7 +15116,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 × 2) - 4 ?",
     options: ["17", "19", "15"],
@@ -15125,7 +15125,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 - 1) ?",
     options: ["6", "8", "5"],
@@ -15134,7 +15134,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 × 3) + 5 ?",
     options: ["25", "20", "15"],
@@ -15143,7 +15143,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 9 ÷ 3 ?",
     options: ["10", "12", "14"],
@@ -15152,7 +15152,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 1) - 4 ?",
     options: ["11", "9", "10"],
@@ -15161,7 +15161,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (18 ÷ 2) ?",
     options: ["36", "33", "30"],
@@ -15170,7 +15170,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 14 ÷ 2 ?",
     options: ["10", "12", "14"],
@@ -15179,7 +15179,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 4 + 2 ?",
     options: ["22", "23", "24"],
@@ -15189,7 +15189,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (2 + 1) + 4 ?",
     options: ["8", "10", "12"],
@@ -15198,7 +15198,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 × 2) + 3 ?",
     options: ["9", "11", "15"],
@@ -15207,7 +15207,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 3 - (4 + 2) ?",
     options: ["26", "28", "30"],
@@ -15215,7 +15215,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "10 multiplié par 3 est 30, moins 6 donne 24.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 8 ?",
     options: ["20", "23", "22"],
@@ -15224,7 +15224,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 27 ?",
     options: ["23", "22", "24"],
@@ -15233,7 +15233,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (3 × 10) ?",
     options: ["15", "12", "18"],
@@ -15243,7 +15243,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 32 ÷ 4 + 6 ?",
     options: ["14", "10", "12"],
@@ -15252,7 +15252,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 3 + 5 ?",
     options: ["8", "7", "9"],
@@ -15261,7 +15261,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 15 + 10 ?",
     options: ["20", "15", "25"],
@@ -15270,7 +15270,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 ÷ 2) + (4 × 3) ?",
     options: ["30", "24", "20"],
@@ -15279,7 +15279,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 4 + 25 ?",
     options: ["50", "75", "70"],
@@ -15288,7 +15288,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 5 ?",
     options: ["20", "25", "15"],
@@ -15297,7 +15297,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 3 × 3 - 5 ?",
     options: ["12", "15", "10"],
@@ -15307,7 +15307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 2 × (5 - 3) ?",
     options: ["10", "12", "14"],
@@ -15317,7 +15317,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 - (4 + 1) ?",
     options: ["9", "10", "11"],
@@ -15327,7 +15327,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 ÷ 1) ?",
     options: ["5", "6", "7"],
@@ -15336,7 +15336,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 2 × (5 - 3) ?",
     options: ["8", "10", "12"],
@@ -15345,7 +15345,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 3 + 6 ÷ 2 ?",
     options: ["10", "11", "12"],
@@ -15354,7 +15354,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 - (2 + 2) × 2 ?",
     options: ["0", "2", "4"],
@@ -15363,7 +15363,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 8 + 3 = ?",
     options: ["10", "9", "8"],
@@ -15372,7 +15372,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 + 6 ÷ 3 = ?",
     options: ["11", "12", "15"],
@@ -15381,7 +15381,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 5) × 2 = ?",
     options: ["30", "25", "20"],
@@ -15390,7 +15390,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) + (12 ÷ 4) = ?",
     options: ["20", "18", "16"],
@@ -15400,7 +15400,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × (4 + 1) = ?",
     options: ["40", "35", "30"],
@@ -15410,7 +15410,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 - 6) ÷ 2 + 5 = ?",
     options: ["9", "8", "10"],
@@ -15420,7 +15420,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 5) × (2 + 2) - 6 = ?",
     options: ["22", "26", "20"],
@@ -15430,7 +15430,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 3) × 2 - 5 = ?",
     options: ["17", "21", "19"],
@@ -15440,7 +15440,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 × 3) - (4 ÷ 2) = ?",
     options: ["20", "21", "19"],
@@ -15450,7 +15450,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 ÷ 4) + (5 × 2) = ?",
     options: ["16", "12", "10"],
@@ -15460,7 +15460,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 - 7 ?",
     options: ["20", "18", "25"],
@@ -15469,7 +15469,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 2) ?",
     options: ["21", "18", "15"],
@@ -15478,7 +15478,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (4 - 2) + 6 ?",
     options: ["14", "16", "12"],
@@ -15487,7 +15487,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 4 + 12 ÷ 4 ?",
     options: ["15", "18", "12"],
@@ -15496,7 +15496,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (15 ÷ 3) ?",
     options: ["40", "30", "35"],
@@ -15505,7 +15505,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 9 ?",
     options: ["12", "10", "15"],
@@ -15514,7 +15514,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 9 - 3 ?",
     options: ["20", "18", "21"],
@@ -15523,7 +15523,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 4 - 5 ?",
     options: ["24", "19", "23"],
@@ -15532,7 +15532,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 4) - 10 ?",
     options: ["25", "20", "15"],
@@ -15541,7 +15541,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 2 × (6 - 4) ?",
     options: ["9", "11", "10"],
@@ -15550,7 +15550,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 2) ÷ (5 - 3) ?",
     options: ["5", "4", "10"],
@@ -15560,7 +15560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 20 ?",
     options: ["40", "60", "30"],
@@ -15569,7 +15569,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 - (3 + 6) ?",
     options: ["10", "9", "12"],
@@ -15578,7 +15578,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (6 - 2) ?",
     options: ["10", "8", "12"],
@@ -15587,7 +15587,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 5 × 2 ?",
     options: ["15", "10", "20"],
@@ -15597,7 +15597,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 3 = ?",
     options: ["20", "21", "22"],
@@ -15606,7 +15606,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 ÷ 3 = ?",
     options: ["2", "3", "4"],
@@ -15615,7 +15615,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 + 15 - 10 = ?",
     options: ["12", "13", "14"],
@@ -15624,7 +15624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 8) ÷ 2 = ?",
     options: ["6", "7", "8"],
@@ -15633,7 +15633,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 4) - 6 = ?",
     options: ["14", "20", "18"],
@@ -15642,7 +15642,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) + (5 × 3) = ?",
     options: ["10", "11", "12"],
@@ -15651,7 +15651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 3) × (5 - 2) = ?",
     options: ["25", "30", "20"],
@@ -15660,7 +15660,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 6) ÷ 2 + 5 = ?",
     options: ["7", "8", "9"],
@@ -15669,7 +15669,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 + 2 × 5 = ?",
     options: ["19", "20", "21"],
@@ -15677,7 +15677,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "Multiplier 2 par 5 donne 10, plus 9 fait 19.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ (3 × 2) + 1 = ?",
     options: ["4", "5", "6"],
@@ -15687,7 +15687,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 6) × (2 - 1) = ?",
     options: ["10", "20", "15"],
@@ -15696,7 +15696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 ÷ 2) + (6 - 4) × 3 = ?",
     options: ["9", "10", "8"],
@@ -15706,7 +15706,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 3) × 2 - 5 = ?",
     options: ["15", "20", "10"],
@@ -15716,7 +15716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 2) + (3 × 4) - 7 = ?",
     options: ["17", "18", "15"],
@@ -15726,7 +15726,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (2 + 2) + 3 ?",
     options: ["6", "5", "4"],
@@ -15736,7 +15736,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 × 2) + 4 ?",
     options: ["16", "14", "12"],
@@ -15745,7 +15745,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (6 ÷ 2) ?",
     options: ["12", "18", "15"],
@@ -15754,7 +15754,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 6 ?",
     options: ["20", "21", "22"],
@@ -15763,7 +15763,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 7 ?",
     options: ["10", "11", "12"],
@@ -15772,7 +15772,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 4 × 3 ?",
     options: ["10", "11", "12"],
@@ -15781,7 +15781,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 9 + 6 - 3 ?",
     options: ["10", "12", "15"],
@@ -15790,7 +15790,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 3 × (2 + 4) ?",
     options: ["18", "21", "12"],
@@ -15799,7 +15799,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 50 ÷ (2 + 3) ?",
     options: ["10", "15", "12"],
@@ -15808,7 +15808,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (2 + 3) - 4 ?",
     options: ["26", "30", "32"],
@@ -15817,7 +15817,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (8 + 6) × 2 - 10 ?",
     options: ["22", "28", "26"],
@@ -15826,7 +15826,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 7 × 4 - 10 ÷ 2 ?",
     options: ["26", "28", "24"],
@@ -15835,7 +15835,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × 5 + 2 ?",
     options: ["30", "32", "28"],
@@ -15844,7 +15844,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 25 - (5 × 3) + 2 ?",
     options: ["12", "14", "16"],
@@ -15853,7 +15853,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (3 - 1) ?",
     options: ["18", "27", "36"],
@@ -15862,7 +15862,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 5 + 3 ?",
     options: ["5", "7", "6"],
@@ -15871,7 +15871,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 5 × 2 ?",
     options: ["16", "19", "18"],
@@ -15880,7 +15880,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 7) + 2 ?",
     options: ["2", "8", "16"],
@@ -15889,7 +15889,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (6 ÷ 2) - 3 ?",
     options: ["7", "8", "9"],
@@ -15898,7 +15898,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 4 + 7 - 2 ?",
     options: ["6", "7", "8"],
@@ -15907,7 +15907,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 × 3) + (10 - 2) ?",
     options: ["26", "28", "30"],
@@ -15916,7 +15916,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 × 4) + 2 ?",
     options: ["12", "22", "32"],
@@ -15925,7 +15925,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 11 - 6 ?",
     options: ["16", "15", "17"],
@@ -15934,7 +15934,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 × 2) - (3 × 1) ?",
     options: ["11", "12", "10"],
@@ -15943,7 +15943,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 60 ÷ (3 + 3) ?",
     options: ["6", "8", "10"],
@@ -15952,7 +15952,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 - 5 ?",
     options: ["20", "15", "25"],
@@ -15961,7 +15961,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (10 ÷ 2) ?",
     options: ["25", "20", "15"],
@@ -15970,7 +15970,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (3 × 2) + 4 ?",
     options: ["10", "8", "6"],
@@ -15979,7 +15979,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 ÷ 2) × 3 ?",
     options: ["40", "35", "30"],
@@ -15988,7 +15988,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 + 2 = ?",
     options: ["8", "10", "6"],
@@ -15998,7 +15998,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × 3 ÷ 3 = ?",
     options: ["6", "9", "3"],
@@ -16007,7 +16007,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 ÷ 2 + 1 = ?",
     options: ["3", "5", "4"],
@@ -16016,7 +16016,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 3 + 4 = ?",
     options: ["28", "22", "26"],
@@ -16025,7 +16025,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "24 ÷ (6 - 4) + 10 = ?",
     options: ["12", "14", "10"],
@@ -16034,7 +16034,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 4) - (3 × 2) = ?",
     options: ["14", "10", "12"],
@@ -16044,7 +16044,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 3) + (5 × 2) = ?",
     options: ["16", "14", "18"],
@@ -16053,7 +16053,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - (4 × 3)) ÷ 2 = ?",
     options: ["4", "5", "6"],
@@ -16062,7 +16062,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 3) × (2 + 1) = ?",
     options: ["36", "30", "24"],
@@ -16071,7 +16071,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 5) × 2 - 4 = ?",
     options: ["16", "14", "18"],
@@ -16081,7 +16081,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 3) ?",
     options: ["12", "13", "25"],
@@ -16090,7 +16090,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 + 4) × 2 ?",
     options: ["10", "20", "30"],
@@ -16099,7 +16099,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 4 + 2 ?",
     options: ["4", "5", "6"],
@@ -16108,7 +16108,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 + (3 - 1) ?",
     options: ["10", "12", "8"],
@@ -16117,7 +16117,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 5) × 2 - 5 ?",
     options: ["20", "25", "15"],
@@ -16126,7 +16126,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - (10 ÷ 2) ?",
     options: ["15", "16", "17"],
@@ -16134,7 +16134,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "21 moins 5 est égal à 16.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (6 - 2) ?",
     options: ["6", "8", "9"],
@@ -16144,7 +16144,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 3 + 2 ?",
     options: ["6", "8", "10"],
@@ -16154,7 +16154,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 - 3 ?",
     options: ["8", "9", "10"],
@@ -16163,7 +16163,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 2 × 4 ?",
     options: ["3", "7", "11"],
@@ -16173,7 +16173,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) ?",
     options: ["5", "7", "8"],
@@ -16183,7 +16183,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 2 + 3 ?",
     options: ["20", "18", "22"],
@@ -16193,7 +16193,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (4 × 2) - 3 ?",
     options: ["10", "15", "17"],
@@ -16203,7 +16203,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 + 1) - 10 ?",
     options: ["14", "16", "18"],
@@ -16213,7 +16213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 + 3) + 6 ?",
     options: ["12", "14", "16"],
@@ -16223,7 +16223,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 - (5 ÷ 1) + 3 ?",
     options: ["8", "9", "10"],
@@ -16232,7 +16232,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (2 + 5) - 10 ?",
     options: ["18", "20", "22"],
@@ -16242,7 +16242,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 5 - 2 ?",
     options: ["10", "11", "12"],
@@ -16251,7 +16251,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 8 + 3 ?",
     options: ["15", "14", "16"],
@@ -16260,7 +16260,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 6 ?",
     options: ["18", "22", "14"],
@@ -16269,7 +16269,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (6 - 3) × 4 ?",
     options: ["20", "24", "16"],
@@ -16279,7 +16279,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 ÷ (3 - 1) + 7 ?",
     options: ["10", "11", "12"],
@@ -16288,7 +16288,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 × 2) + 5 ?",
     options: ["10", "8", "9"],
@@ -16298,7 +16298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 - (8 ÷ 4) ?",
     options: ["16", "18", "14"],
@@ -16307,7 +16307,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - (3 + 2) = ?",
     options: ["10", "12", "8"],
@@ -16317,7 +16317,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × 3 - 10 = ?",
     options: ["24", "14", "18"],
@@ -16327,7 +16327,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - 5 × 3 = ?",
     options: ["5", "10", "15"],
@@ -16337,7 +16337,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 4) + (2 × 3) = ?",
     options: ["18", "20", "15"],
@@ -16347,7 +16347,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 4) × (5 + 1) = ?",
     options: ["24", "18", "20"],
@@ -16357,7 +16357,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 + 14 ÷ 2 = ?",
     options: ["10", "14", "21"],
@@ -16367,7 +16367,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 + 8 - 5 = ?",
     options: ["10", "12", "11"],
@@ -16377,7 +16377,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 3) ÷ 2 = ?",
     options: ["6", "8", "12"],
@@ -16387,7 +16387,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 2) + (4 ÷ 2) = ?",
     options: ["10", "11", "12"],
@@ -16397,7 +16397,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 3 × 2 ?",
     options: ["14", "16", "18"],
@@ -16407,7 +16407,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (2 + 1) ?",
     options: ["10", "12", "14"],
@@ -16416,7 +16416,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 - 4 ÷ 2 ?",
     options: ["13", "14", "15"],
@@ -16426,7 +16426,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 2 - 5 ?",
     options: ["9", "10", "11"],
@@ -16436,7 +16436,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 × 2) + 4 ?",
     options: ["8", "9", "10"],
@@ -16446,7 +16446,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 17 - 5 + 3 ?",
     options: ["13", "14", "15"],
@@ -16455,7 +16455,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 + 2) × 3 ?",
     options: ["30", "28", "32"],
@@ -16464,7 +16464,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 2 × (5 - 3) ?",
     options: ["16", "18", "14"],
@@ -16473,7 +16473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 9 ?",
     options: ["14", "13", "15"],
@@ -16482,7 +16482,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 3 × 4 ?",
     options: ["19", "20", "18"],
@@ -16491,7 +16491,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 2) - 6 ÷ 2 ?",
     options: ["18", "16", "12"],
@@ -16501,7 +16501,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (3 × 5) - 4 ?",
     options: ["18", "20", "16"],
@@ -16511,7 +16511,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + (6 × 2) ?",
     options: ["14", "10", "12"],
@@ -16521,7 +16521,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (2 + 2) ?",
     options: ["24", "20", "12"],
@@ -16531,7 +16531,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + 6 ?",
     options: ["21", "19", "18"],
@@ -16540,7 +16540,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (2 × 5) + 4 ?",
     options: ["20", "24", "26"],
@@ -16550,7 +16550,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 8) × 2 - 10 ?",
     options: ["10", "14", "16"],
@@ -16560,7 +16560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - (15 ÷ 3) ?",
     options: ["24", "18", "21"],
@@ -16569,7 +16569,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 10 ÷ 2 ?",
     options: ["15", "20", "25"],
@@ -16578,7 +16578,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 × (3 - 1) ?",
     options: ["16", "20", "12"],
@@ -16588,7 +16588,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ (5 - 3) ?",
     options: ["5", "10", "15"],
@@ -16597,7 +16597,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 2 + 6 ?",
     options: ["12", "14", "16"],
@@ -16605,7 +16605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "La soustraction de 2 à 10 donne 8, puis 8 plus 6 est 14.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 4 + 10 ?",
     options: ["25", "30", "35"],
@@ -16614,7 +16614,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 5) × (3 + 1) ?",
     options: ["12", "15", "16"],
@@ -16624,7 +16624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (8 ÷ 2) × 3 ?",
     options: ["21", "24", "27"],
@@ -16634,7 +16634,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 ÷ 2) + 5 ?",
     options: ["15", "16", "17"],
@@ -16644,7 +16644,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 2) + (3 × 5) ?",
     options: ["27", "29", "31"],
@@ -16654,7 +16654,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) ÷ 2 ?",
     options: ["3", "4", "5"],
@@ -16664,7 +16664,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) + 5 ?",
     options: ["10", "8", "12"],
@@ -16674,7 +16674,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 3 × 4 ?",
     options: ["11", "12", "10"],
@@ -16683,7 +16683,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 6 + 9 - 4 ?",
     options: ["11", "10", "12"],
@@ -16692,7 +16692,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (8 + 4) ÷ 4 ?",
     options: ["3", "2", "4"],
@@ -16702,7 +16702,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 14 ÷ 2 + 3 ?",
     options: ["8", "10", "11"],
@@ -16711,7 +16711,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + (6 - 2) × 3 ?",
     options: ["18", "24", "22"],
@@ -16721,7 +16721,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (5 + 3) × (2 + 1) ?",
     options: ["24", "18", "16"],
@@ -16731,7 +16731,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 2 + 5 ?",
     options: ["20", "25", "22"],
@@ -16740,7 +16740,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 9 × 2 + 6 ÷ 2 ?",
     options: ["20", "22", "21"],
@@ -16750,7 +16750,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 4 + 3 × 2 ?",
     options: ["26", "28", "30"],
@@ -16760,7 +16760,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 18 ÷ 3 + 4 × 2 ?",
     options: ["14", "16", "15"],
@@ -16769,7 +16769,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 10 ?",
     options: ["12", "15", "10"],
@@ -16778,7 +16778,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × (5 - 3) ?",
     options: ["20", "24", "30"],
@@ -16787,7 +16787,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 + 3) × 4 ?",
     options: ["40", "20", "10"],
@@ -16796,7 +16796,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 3 + 7 ?",
     options: ["22", "17", "18"],
@@ -16805,7 +16805,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (6 - 2) + 8 ?",
     options: ["24", "20", "16"],
@@ -16814,7 +16814,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ 2 + 4 ?",
     options: ["9", "10", "8"],
@@ -16823,7 +16823,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 3 + 7 ?",
     options: ["8", "9", "10"],
@@ -16832,7 +16832,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (4 + 1) ?",
     options: ["20", "25", "15"],
@@ -16841,7 +16841,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (3 × 4) ?",
     options: ["20", "18", "22"],
@@ -16851,7 +16851,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 5) + 3 ?",
     options: ["13", "17", "18"],
@@ -16860,7 +16860,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 5) × 2 - 6 ?",
     options: ["16", "14", "18"],
@@ -16869,7 +16869,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (3 + 1) - 10 ?",
     options: ["26", "32", "20"],
@@ -16879,7 +16879,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 2) + 1 ?",
     options: ["21", "20", "22"],
@@ -16888,7 +16888,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 7 ?",
     options: ["42", "36", "48"],
@@ -16897,7 +16897,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (12 - 4) × 2 ?",
     options: ["16", "18", "20"],
@@ -16906,7 +16906,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (12 ÷ 4) ?",
     options: ["46", "48", "44"],
@@ -16915,7 +16915,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) × (2 - 1) ?",
     options: ["12", "14", "16"],
@@ -16924,7 +16924,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 × 2 - (3 + 7) ?",
     options: ["25", "27", "20"],
@@ -16933,7 +16933,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 6) ÷ 2 ?",
     options: ["7", "8", "9"],
@@ -16942,7 +16942,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 2) + (10 ÷ 2) ?",
     options: ["10", "15", "20"],
@@ -16951,7 +16951,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (14 - 4) × 2 ?",
     options: ["20", "22", "24"],
@@ -16960,7 +16960,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 6 ?",
     options: ["8", "10", "4"],
@@ -16969,7 +16969,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 + 3) - 6 ?",
     options: ["26", "22", "30"],
@@ -16979,7 +16979,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (3 × 4) + 2 ?",
     options: ["10", "8", "12"],
@@ -16988,7 +16988,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 - 10 ?",
     options: ["20", "14", "16"],
@@ -16997,7 +16997,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (5 + 5) + 5 ?",
     options: ["10", "15", "5"],
@@ -17006,7 +17006,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 2 - (3 + 1) ?",
     options: ["14", "12", "16"],
@@ -17015,7 +17015,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 3 + 4 × 2 ?",
     options: ["10", "14", "12"],
@@ -17024,7 +17024,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 3 - 4 ?",
     options: ["20", "22", "24"],
@@ -17033,7 +17033,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (4 × 2) ?",
     options: ["6", "8", "10"],
@@ -17042,7 +17042,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 15 ?",
     options: ["20", "25", "30"],
@@ -17051,7 +17051,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 4) + 1 ?",
     options: ["15", "14", "13"],
@@ -17060,7 +17060,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (3 × 3) ?",
     options: ["15", "18", "12"],
@@ -17068,7 +17068,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "9 plus 9 donne 18.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 7 + 3 ?",
     options: ["6", "7", "8"],
@@ -17077,7 +17077,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + (3 × 4) ?",
     options: ["20", "22", "24"],
@@ -17087,7 +17087,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 2) + (3 × 3) ?",
     options: ["19", "20", "21"],
@@ -17096,7 +17096,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 × 4) + 3 ?",
     options: ["10", "12", "13"],
@@ -17105,7 +17105,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 ÷ 3) ?",
     options: ["16", "14", "12"],
@@ -17114,7 +17114,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 2) × 2 ?",
     options: ["8", "9", "10"],
@@ -17123,7 +17123,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 7 - 2 ?",
     options: ["10", "11", "12"],
@@ -17132,7 +17132,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 2 - 4 ?",
     options: ["8", "6", "10"],
@@ -17142,7 +17142,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) ÷ 2 ?",
     options: ["5", "4", "6"],
@@ -17152,7 +17152,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 + 5) ?",
     options: ["10", "12", "8"],
@@ -17162,7 +17162,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 2) + (6 ÷ 3) ?",
     options: ["11", "10", "12"],
@@ -17172,7 +17172,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (5 - 2) ?",
     options: ["6", "4", "7"],
@@ -17182,7 +17182,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + (6 ÷ 2) ?",
     options: ["9", "10", "11"],
@@ -17191,7 +17191,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (3 × 4) ?",
     options: ["3", "6", "9"],
@@ -17200,7 +17200,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 5) × 4 + 1 ?",
     options: ["13", "15", "17"],
@@ -17209,7 +17209,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 5 × (2 - 1) ?",
     options: ["9", "10", "11"],
@@ -17219,7 +17219,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (10 ÷ 2) × 3 ?",
     options: ["10", "15", "20"],
@@ -17229,7 +17229,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 × 3) - (4 ÷ 2) ?",
     options: ["20", "21", "22"],
@@ -17238,7 +17238,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + (3 × 4) - 5 ?",
     options: ["19", "20", "21"],
@@ -17247,7 +17247,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (2 × 3) + 5 ?",
     options: ["12", "13", "14"],
@@ -17257,7 +17257,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) + 3 ?",
     options: ["10", "11", "12"],
@@ -17267,7 +17267,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (4 + 2) × 2 ?",
     options: ["6", "7", "8"],
@@ -17277,7 +17277,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) ÷ 2 × 4 ?",
     options: ["16", "18", "20"],
@@ -17287,7 +17287,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 15 + 6 - 4 ?",
     options: ["17", "18", "19"],
@@ -17296,7 +17296,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 7 ?",
     options: ["20", "22", "26"],
@@ -17306,7 +17306,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 36 ÷ (2 + 4) ?",
     options: ["4", "6", "8"],
@@ -17316,7 +17316,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 4) ?",
     options: ["30", "35", "40"],
@@ -17326,7 +17326,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (3 × 10) + 2 ?",
     options: ["32", "42", "52"],
@@ -17336,7 +17336,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (12 ÷ 3) + (4 × 5) ?",
     options: ["20", "22", "24"],
@@ -17346,7 +17346,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 18 ÷ 2 + 7 ?",
     options: ["10", "11", "12"],
@@ -17356,7 +17356,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 4 + 8 ÷ 2 ?",
     options: ["18", "20", "22"],
@@ -17366,7 +17366,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 5 × 5 ?",
     options: ["5", "15", "25"],
@@ -17376,7 +17376,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) ÷ 2 ?",
     options: ["6", "5", "7"],
@@ -17386,7 +17386,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (4 - 2) + 3 ?",
     options: ["13", "15", "12"],
@@ -17396,7 +17396,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + (4 × 3) ?",
     options: ["16", "18", "12"],
@@ -17406,7 +17406,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + (6 ÷ 3) ?",
     options: ["5", "6", "4"],
@@ -17415,7 +17415,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 + 3) × 2 ?",
     options: ["4", "5", "3"],
@@ -17425,7 +17425,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (2 + 6) ?",
     options: ["4", "5", "6"],
@@ -17435,7 +17435,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 3 + 4 ?",
     options: ["22", "24", "26"],
@@ -17445,7 +17445,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 5 + (2 × 3) ?",
     options: ["15", "16", "17"],
@@ -17455,7 +17455,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 ÷ 3) × 4 ?",
     options: ["10", "12", "14"],
@@ -17465,7 +17465,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 + 1) - 5 ?",
     options: ["18", "19", "20"],
@@ -17475,7 +17475,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (3 × 2) + 1 ?",
     options: ["5", "6", "7"],
@@ -17484,7 +17484,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 2 + 4 ÷ 2 ?",
     options: ["12", "13", "14"],
@@ -17493,7 +17493,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × 2 + 1 ?",
     options: ["20", "21", "22"],
@@ -17503,7 +17503,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 2 - 4 ?",
     options: ["10", "12", "14"],
@@ -17512,7 +17512,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "D'abord, 6 plus 2 est 8, multiplié par 2 donne 16, moins 4 donne 12.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 2 - 3 = ?",
     options: ["11", "10", "12"],
@@ -17521,7 +17521,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 - 3 × 2 = ?",
     options: ["12", "14", "16"],
@@ -17531,7 +17531,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 + (6 - 4) × 3 = ?",
     options: ["16", "18", "20"],
@@ -17541,7 +17541,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 5) ÷ 3 + 2 = ?",
     options: ["4", "5", "6"],
@@ -17551,7 +17551,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × (2 + 1) - 5 = ?",
     options: ["22", "24", "26"],
@@ -17561,7 +17561,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "36 ÷ (6 - 3) + 4 × 2 = ?",
     options: ["10", "14", "16"],
@@ -17571,7 +17571,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 × (3 + 2) - 7 ÷ 1 = ?",
     options: ["18", "20", "22"],
@@ -17581,7 +17581,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) ÷ 4 × 3 = ?",
     options: ["9", "10", "12"],
@@ -17591,7 +17591,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "14 - 3 × (2 + 1) = ?",
     options: ["5", "8", "11"],
@@ -17601,7 +17601,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "28 ÷ (7 - 3) + 6 = ?",
     options: ["10", "12", "14"],
@@ -17611,7 +17611,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 - 2 ?",
     options: ["18", "20", "16"],
@@ -17620,7 +17620,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 22 - 7 + 5 ?",
     options: ["20", "21", "22"],
@@ -17629,7 +17629,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 16 - 5 ?",
     options: ["23", "22", "24"],
@@ -17638,7 +17638,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + 6 ?",
     options: ["15", "12", "11"],
@@ -17647,7 +17647,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 2) × (3 - 1) ?",
     options: ["20", "24", "22"],
@@ -17656,7 +17656,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 ÷ 2) + 6 ?",
     options: ["46", "48", "44"],
@@ -17665,7 +17665,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (3 × 4) + 2 ?",
     options: ["5", "8", "7"],
@@ -17674,7 +17674,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 2 - 10 ?",
     options: ["10", "12", "8"],
@@ -17683,7 +17683,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (12 ÷ 4) ?",
     options: ["19", "16", "18"],
@@ -17692,7 +17692,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 2 ?",
     options: ["4", "6", "8"],
@@ -17701,7 +17701,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 9 + 3 ?",
     options: ["12", "10", "11"],
@@ -17710,7 +17710,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (2 + 6) ?",
     options: ["4", "3", "6"],
@@ -17719,7 +17719,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 × 4) + (5 × 2) ?",
     options: ["26", "22", "20"],
@@ -17729,7 +17729,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + (4 × 3) - 2 ?",
     options: ["20", "24", "22"],
@@ -17739,7 +17739,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × 2 ?",
     options: ["20", "15", "25"],
@@ -17749,7 +17749,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (2 + 1) - 10 ?",
     options: ["17", "18", "16"],
@@ -17759,7 +17759,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 6) - 10 ?",
     options: ["50", "42", "46"],
@@ -17768,7 +17768,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (2 + 4) ?",
     options: ["36", "42", "30"],
@@ -17777,7 +17777,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 4) + 1 ?",
     options: ["6", "7", "8"],
@@ -17786,7 +17786,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + (8 ÷ 2) × 3 ?",
     options: ["24", "30", "18"],
@@ -17795,7 +17795,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (4 + 2) × 2 ?",
     options: ["8", "10", "6"],
@@ -17804,7 +17804,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 8 ?",
     options: ["12", "13", "11"],
@@ -17813,7 +17813,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 ?",
     options: ["16", "15", "14"],
@@ -17822,7 +17822,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 2) × (7 - 5) ?",
     options: ["10", "12", "8"],
@@ -17831,7 +17831,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 3 + 9 ?",
     options: ["18", "17", "19"],
@@ -17840,7 +17840,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 5 + 10 ÷ 2 ?",
     options: ["15", "20", "12"],
@@ -17849,7 +17849,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + 15 - 5 ?",
     options: ["15", "17", "18"],
@@ -17858,7 +17858,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (30 ÷ 6) ?",
     options: ["45", "48", "47"],
@@ -17867,7 +17867,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 10 ?",
     options: ["4", "5", "6"],
@@ -17876,7 +17876,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 9 + 5 ?",
     options: ["10", "8", "12"],
@@ -17885,7 +17885,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 2 × 4 ?",
     options: ["10", "12", "14"],
@@ -17895,7 +17895,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 2 + 4 ?",
     options: ["20", "22", "24"],
@@ -17905,7 +17905,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 4 × (3 - 1) ?",
     options: ["16", "18", "20"],
@@ -17915,7 +17915,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ (2 + 2) × 3 ?",
     options: ["18", "24", "30"],
@@ -17925,7 +17925,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (5 × 4) + 2 ?",
     options: ["12", "14", "16"],
@@ -17935,7 +17935,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ 3 × 2 = ?",
     options: ["8", "5", "10"],
@@ -17944,7 +17944,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - 5 + 10 = ?",
     options: ["15", "25", "10"],
@@ -17953,7 +17953,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 3) × 5 = ?",
     options: ["25", "30", "35"],
@@ -17962,7 +17962,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 ÷ 2) + (4 × 3) = ?",
     options: ["20", "16", "14"],
@@ -17972,7 +17972,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 5) - (4 × 3) = ?",
     options: ["24", "18", "30"],
@@ -17981,7 +17981,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On effectue d'abord les multiplications puis la soustraction.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ 8 ?",
     options: ["4", "5", "6"],
@@ -17990,7 +17990,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (3 × 2) ?",
     options: ["6", "8", "7"],
@@ -17999,7 +17999,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 3) × (6 - 2) ?",
     options: ["40", "30", "20"],
@@ -18009,7 +18009,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (10 - 3) + 4 ?",
     options: ["18", "16", "20"],
@@ -18019,7 +18019,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 + 7 ?",
     options: ["12", "10", "11"],
@@ -18028,7 +18028,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (4 - 1) ?",
     options: ["17", "18", "16"],
@@ -18038,7 +18038,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (3 × 4) + 2 ?",
     options: ["10", "14", "12"],
@@ -18047,7 +18047,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) ÷ 3 + 5 ?",
     options: ["9", "7", "8"],
@@ -18056,7 +18056,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 2) + (3 × 2) ?",
     options: ["10", "14", "12"],
@@ -18065,7 +18065,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 5) × (6 + 1) ?",
     options: ["28", "24", "30"],
@@ -18074,7 +18074,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (10 ÷ 2) × 5 ?",
     options: ["45", "40", "35"],
@@ -18083,7 +18083,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 5) × (3 - 1) ?",
     options: ["24", "26", "20"],
@@ -18092,7 +18092,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 7 - 2 ?",
     options: ["9", "8", "7"],
@@ -18101,7 +18101,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 4 + 6 ?",
     options: ["38", "34", "36"],
@@ -18110,7 +18110,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 - (3 × 2) ?",
     options: ["16", "20", "18"],
@@ -18119,7 +18119,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (4 × 2) ?",
     options: ["23", "22", "20"],
@@ -18128,7 +18128,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 + 7 - 4 ?",
     options: ["18", "20", "22"],
@@ -18137,7 +18137,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) ÷ 4 ?",
     options: ["2", "3", "4"],
@@ -18146,7 +18146,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) + 5 ?",
     options: ["5", "6", "9"],
@@ -18155,7 +18155,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 2) - 6 ?",
     options: ["14", "16", "18"],
@@ -18164,7 +18164,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × 2 + 1 ?",
     options: ["14", "15", "16"],
@@ -18173,7 +18173,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 5 ÷ 5 ?",
     options: ["20", "21", "22"],
@@ -18182,7 +18182,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 1) + 10 ?",
     options: ["10", "20", "30"],
@@ -18191,7 +18191,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 5 + 1 ?",
     options: ["22", "23", "24"],
@@ -18200,7 +18200,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 + 7 = ?",
     options: ["12", "11", "13"],
@@ -18209,7 +18209,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 6 = ?",
     options: ["8", "9", "7"],
@@ -18218,7 +18218,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "4 × 3 = ?",
     options: ["12", "10", "15"],
@@ -18227,7 +18227,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ 3 = ?",
     options: ["5", "6", "4"],
@@ -18236,7 +18236,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) - 5 = ?",
     options: ["7", "6", "8"],
@@ -18245,7 +18245,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 8) + 3 = ?",
     options: ["15", "14", "16"],
@@ -18254,7 +18254,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × (2 + 1) = ?",
     options: ["27", "18", "36"],
@@ -18264,7 +18264,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(50 - 10) ÷ 2 + 5 = ?",
     options: ["30", "25", "20"],
@@ -18274,7 +18274,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 3) + (2 × 4) = ?",
     options: ["21", "18", "20"],
@@ -18284,7 +18284,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 ÷ 5) × 3 - 2 = ?",
     options: ["13", "10", "11"],
@@ -18294,7 +18294,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 × (1 + 2) - 6 = ?",
     options: ["30", "36", "24"],
@@ -18304,7 +18304,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 - 6) × 2 + 1 = ?",
     options: ["17", "20", "18"],
@@ -18314,7 +18314,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - (5 + 3) = ?",
     options: ["12", "14", "16"],
@@ -18323,7 +18323,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 5 + 3 × 2 ?",
     options: ["8", "9", "10"],
@@ -18333,7 +18333,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 9 - 3 ?",
     options: ["12", "13", "14"],
@@ -18343,7 +18343,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 ÷ 2 ?",
     options: ["10", "12", "14"],
@@ -18353,7 +18353,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 3 + 5 × 2 ?",
     options: ["21", "22", "23"],
@@ -18363,7 +18363,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 - 3) × (8 ÷ 2) ?",
     options: ["12", "16", "20"],
@@ -18373,7 +18373,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (6 - 1) + 3 ?",
     options: ["18", "22", "23"],
@@ -18383,7 +18383,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 ÷ 2 + 1 ?",
     options: ["5", "6", "7"],
@@ -18393,7 +18393,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 + 1) ?",
     options: ["10", "11", "12"],
@@ -18403,7 +18403,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 3 - 2 ?",
     options: ["10", "11", "12"],
@@ -18412,7 +18412,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 × 2) + 5 ?",
     options: ["13", "14", "15"],
@@ -18421,7 +18421,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ 8 + 6 ?",
     options: ["10", "8", "12"],
@@ -18430,7 +18430,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 2 × (3 + 7) ?",
     options: ["30", "40", "20"],
@@ -18439,7 +18439,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 15 ÷ 3 ?",
     options: ["10", "15", "20"],
@@ -18447,7 +18447,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "5 plus 15 divisé par 3 égale 20.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (2 × 6) + 4 ?",
     options: ["10", "12", "14"],
@@ -18456,7 +18456,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (5 + 3) × 2 ?",
     options: ["10", "12", "14"],
@@ -18465,7 +18465,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 4 - 5 ?",
     options: ["31", "32", "33"],
@@ -18474,7 +18474,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + (5 × 3) ?",
     options: ["20", "21", "22"],
@@ -18484,7 +18484,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 × 2 - (3 × 4) ?",
     options: ["18", "20", "22"],
@@ -18493,7 +18493,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (5 × 4) + 3 ?",
     options: ["8", "9", "10"],
@@ -18502,7 +18502,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 + 2 ?",
     options: ["21", "22", "23"],
@@ -18511,7 +18511,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (8 ÷ 2) ?",
     options: ["10", "12", "8"],
@@ -18520,7 +18520,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × 4 ÷ 2 = ?",
     options: ["6", "12", "8"],
@@ -18529,7 +18529,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ 3 + 4 = ?",
     options: ["5", "7", "6"],
@@ -18538,7 +18538,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 - 4) × 2 = ?",
     options: ["16", "14", "12"],
@@ -18547,7 +18547,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) ÷ 2 = ?",
     options: ["6", "8", "7"],
@@ -18556,7 +18556,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 6) + (5 × 2) = ?",
     options: ["8", "10", "9"],
@@ -18566,7 +18566,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 5) ÷ (3 - 1) = ?",
     options: ["7", "10", "8"],
@@ -18575,7 +18575,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 5) - (2 × 3) + 1 = ?",
     options: ["23", "21", "22"],
@@ -18585,7 +18585,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × (3 + 1) = ?",
     options: ["32", "28", "30"],
@@ -18595,7 +18595,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 5) + (4 × 6) = ?",
     options: ["34", "36", "32"],
@@ -18605,7 +18605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(50 ÷ 5) + (15 - 10) = ?",
     options: ["13", "10", "12"],
@@ -18615,7 +18615,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 7 + 4 = ?",
     options: ["12", "10", "9"],
@@ -18624,7 +18624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "9 × 2 - 10 = ?",
     options: ["8", "7", "6"],
@@ -18633,7 +18633,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ 3 + 7 = ?",
     options: ["4", "5", "11"],
@@ -18642,7 +18642,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) ÷ 4 = ?",
     options: ["4", "5", "6"],
@@ -18651,7 +18651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 2) × 3 - 6 = ?",
     options: ["24", "30", "18"],
@@ -18660,7 +18660,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 3) + (4 ÷ 2) = ?",
     options: ["19", "20", "21"],
@@ -18669,7 +18669,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) × (2 - 1) = ?",
     options: ["12", "15", "16"],
@@ -18678,7 +18678,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 5) - (3 × 2) = ?",
     options: ["9", "8", "7"],
@@ -18687,7 +18687,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 9 × 2 - 5 ?",
     options: ["13", "10", "11"],
@@ -18696,7 +18696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (10 ÷ 2) + (4 × 3) ?",
     options: ["20", "18", "16"],
@@ -18706,7 +18706,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 × 20) + 10 ?",
     options: ["20", "30", "10"],
@@ -18716,7 +18716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (5 + 3) × (2 - 1) ?",
     options: ["8", "6", "10"],
@@ -18726,7 +18726,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) ÷ 2 + 5 ?",
     options: ["10", "8", "9"],
@@ -18736,7 +18736,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 100 ÷ (5 × 2) ?",
     options: ["10", "5", "20"],
@@ -18745,7 +18745,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 10 + 5 ?",
     options: ["25", "20", "15"],
@@ -18754,7 +18754,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 4) x 2 ?",
     options: ["14", "12", "10"],
@@ -18763,7 +18763,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 x 5) ?",
     options: ["20", "25", "30"],
@@ -18772,7 +18772,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 x (5 + 3) - 10 ?",
     options: ["22", "26", "18"],
@@ -18781,7 +18781,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 x 3 + 4 ?",
     options: ["25", "26", "27"],
@@ -18790,7 +18790,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 x (5 + 5) - 6 ?",
     options: ["14", "12", "16"],
@@ -18799,7 +18799,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (2 × 5) ?",
     options: ["8", "10", "12"],
@@ -18808,7 +18808,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 4 - (2 + 6) ?",
     options: ["20", "22", "18"],
@@ -18817,7 +18817,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (5 - 3) + 9 ?",
     options: ["24", "21", "15"],
@@ -18826,7 +18826,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 4 × 2 ?",
     options: ["14", "10", "16"],
@@ -18835,7 +18835,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 5 + 2 ?",
     options: ["16", "17", "18"],
@@ -18844,7 +18844,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 6) - 4 ?",
     options: ["10", "12", "14"],
@@ -18853,7 +18853,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (8 × 2) - 5 ?",
     options: ["14", "15", "16"],
@@ -18862,7 +18862,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (6 ÷ 2) ?",
     options: ["12", "15", "18"],
@@ -18871,7 +18871,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 7 + 3 ?",
     options: ["12", "13", "14"],
@@ -18880,7 +18880,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 3 ?",
     options: ["8", "10", "12"],
@@ -18889,7 +18889,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + (6 ÷ 2) × 3 ?",
     options: ["18", "20", "22"],
@@ -18899,7 +18899,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × (10 - 6) ?",
     options: ["32", "36", "40"],
@@ -18908,7 +18908,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On effectue d'abord les opérations dans les parenthèses, soit 8 × 4 = 32.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (2 + 3) ?",
     options: ["30", "40", "50"],
@@ -18917,7 +18917,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 2 + 6 ?",
     options: ["14", "16", "12"],
@@ -18927,7 +18927,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 4 + 10 ?",
     options: ["25", "30", "20"],
@@ -18936,7 +18936,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2 × 3) ÷ 2 ?",
     options: ["5", "6", "8"],
@@ -18945,7 +18945,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (4 × 5) + 10 ?",
     options: ["20", "25", "15"],
@@ -18954,7 +18954,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - 8 + 3 ?",
     options: ["10", "9", "8"],
@@ -18963,7 +18963,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 × 2 - 6 ?",
     options: ["24", "18", "20"],
@@ -18972,7 +18972,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 2 + 3 ?",
     options: ["10", "9", "11"],
@@ -18981,7 +18981,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 - 2) × 5 + 3 ?",
     options: ["23", "20", "22"],
@@ -18990,7 +18990,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 4) + (6 × 2) ?",
     options: ["15", "18", "12"],
@@ -19000,7 +19000,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 48 ÷ 6 + 4 × 3 ?",
     options: ["20", "16", "24"],
@@ -19010,7 +19010,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 - (4 ÷ 2) ?",
     options: ["13", "12", "10"],
@@ -19020,7 +19020,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 25 - 9 ?",
     options: ["14", "16", "15"],
@@ -19029,7 +19029,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 15 + 20 - 10.",
     options: ["25", "30", "35"],
@@ -19038,7 +19038,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 18 ÷ 2 + 7 ?",
     options: ["10", "11", "12"],
@@ -19047,7 +19047,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez (6 + 4) × 2.",
     options: ["20", "18", "22"],
@@ -19056,7 +19056,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 50 - (3 × 10) + 5.",
     options: ["35", "40", "45"],
@@ -19065,7 +19065,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 12) ÷ 4 ?",
     options: ["5", "6", "4"],
@@ -19074,7 +19074,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 2 × (3 + 5) - 4.",
     options: ["10", "12", "8"],
@@ -19083,7 +19083,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 45 - (5 × 4) + 3.",
     options: ["23", "20", "18"],
@@ -19092,7 +19092,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 8 × 2 ?",
     options: ["32", "28", "20"],
@@ -19101,7 +19101,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (5 × 4) + 2 ?",
     options: ["12", "18", "22"],
@@ -19110,7 +19110,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 - 3 ?",
     options: ["17", "18", "19"],
@@ -19119,7 +19119,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 16 - 10 ?",
     options: ["20", "18", "22"],
@@ -19128,7 +19128,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (12 ÷ 3) ?",
     options: ["46", "44", "48"],
@@ -19137,7 +19137,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 - 5 + 3 ?",
     options: ["12", "14", "10"],
@@ -19146,7 +19146,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 + 10 ÷ 2 ?",
     options: ["24", "20", "22"],
@@ -19155,7 +19155,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + (6 ÷ 2) × 3 ?",
     options: ["18", "24", "20"],
@@ -19164,7 +19164,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 × 3) + 9 ?",
     options: ["21", "24", "27"],
@@ -19173,7 +19173,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 + 6 ?",
     options: ["22", "18", "20"],
@@ -19182,7 +19182,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 4) + 2 ?",
     options: ["15", "16", "14"],
@@ -19192,7 +19192,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 2 - (3 + 2) ?",
     options: ["15", "16", "18"],
@@ -19202,7 +19202,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (30 ÷ 5) + (10 - 4) ?",
     options: ["10", "12", "14"],
@@ -19212,7 +19212,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 x 5 - 3 ?",
     options: ["22", "20", "18"],
@@ -19221,7 +19221,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (25 + 25) ?",
     options: ["50", "60", "70"],
@@ -19230,7 +19230,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 3 + 4 ?",
     options: ["8", "6", "10"],
@@ -19239,7 +19239,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) ÷ 3 + 2 ?",
     options: ["6", "5", "4"],
@@ -19248,7 +19248,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 x 3 - (6 ÷ 2) ?",
     options: ["19", "21", "17"],
@@ -19257,7 +19257,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) x (2 + 3) ?",
     options: ["25", "30", "20"],
@@ -19266,7 +19266,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 - (12 ÷ 4) x 3 ?",
     options: ["30", "24", "18"],
@@ -19275,7 +19275,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 12 - 4.",
     options: ["7", "9", "8"],
@@ -19284,7 +19284,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 15 + 10 - 5.",
     options: ["20", "25", "30"],
@@ -19293,7 +19293,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez (8 + 4) ÷ 4.",
     options: ["3", "2", "4"],
@@ -19302,7 +19302,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 5 × 5 + 10.",
     options: ["35", "25", "30"],
@@ -19311,7 +19311,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 7 × 3 - (5 + 2) ?",
     options: ["16", "17", "14"],
@@ -19321,7 +19321,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ (2 × 3) ?",
     options: ["6", "9", "12"],
@@ -19330,7 +19330,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez (10 + 2) × 3 - 4.",
     options: ["26", "32", "30"],
@@ -19339,7 +19339,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 8 × 4 - (12 ÷ 3).",
     options: ["28", "30", "26"],
@@ -19347,7 +19347,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "32 moins 4 (qui est 12 divisé par 3) donne 28.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 + 2) ?",
     options: ["42", "40", "38"],
@@ -19356,7 +19356,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 4 - 6 ?",
     options: ["30", "24", "27"],
@@ -19365,7 +19365,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (1 + 2) - 6 ?",
     options: ["18", "20", "16"],
@@ -19374,7 +19374,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ 2 × 4 ?",
     options: ["20", "15", "10"],
@@ -19383,7 +19383,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 × 3) + (4 ÷ 2) ?",
     options: ["20", "22", "18"],
@@ -19392,7 +19392,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question:
         "Si tu as 20 pommes et que tu en donnes 5, combien t'en reste-t-il ?",
@@ -19402,7 +19402,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 12 + 15 - 5 ?",
     options: ["22", "20", "25"],
@@ -19412,7 +19412,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (6 + 4) - 5 ?",
     options: ["15", "10", "20"],
@@ -19422,7 +19422,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 3 × 4 ?",
     options: ["2", "4", "0"],
@@ -19432,7 +19432,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (2 + 3) + 4 ?",
     options: ["10", "12", "8"],
@@ -19442,7 +19442,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 5 + 2 ?",
     options: ["24", "20", "22"],
@@ -19452,7 +19452,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (3 × 2) + 5 ?",
     options: ["10", "11", "12"],
@@ -19461,7 +19461,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) ÷ 2 + 3 ?",
     options: ["8", "7", "6"],
@@ -19471,7 +19471,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 2) + (8 ÷ 4) ?",
     options: ["12", "10", "9"],
@@ -19481,7 +19481,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 4 - 2 ?",
     options: ["11", "12", "10"],
@@ -19491,7 +19491,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 1 - 3 ?",
     options: ["5", "6", "7"],
@@ -19501,7 +19501,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + 2 × 4 ?",
     options: ["11", "10", "12"],
@@ -19511,7 +19511,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 15 - (3 + 2) ?",
     options: ["10", "9", "11"],
@@ -19521,7 +19521,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 3 + 2 × 4 ?",
     options: ["14", "10", "8"],
@@ -19531,7 +19531,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (8 + 4) ÷ 4 ?",
     options: ["3", "2", "4"],
@@ -19541,7 +19541,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 25 - (5 × 3) + 4 ?",
     options: ["16", "18", "14"],
@@ -19551,7 +19551,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 - 4 ?",
     options: ["14", "15", "16"],
@@ -19560,7 +19560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 ÷ 2) + (6 × 3) ?",
     options: ["20", "21", "22"],
@@ -19570,7 +19570,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 60 ÷ 5 + 2 ?",
     options: ["12", "14", "16"],
@@ -19579,7 +19579,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (3 + 6) ?",
     options: ["9", "10", "11"],
@@ -19588,7 +19588,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 × 20) + 5 ?",
     options: ["5", "15", "25"],
@@ -19597,7 +19597,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) + 10 ?",
     options: ["15", "20", "25"],
@@ -19606,7 +19606,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 3 - 10 ?",
     options: ["17", "18", "19"],
@@ -19615,7 +19615,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 15 - 7 ?",
     options: ["6", "7", "8"],
@@ -19624,7 +19624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (6 + 4) × 2 ?",
     options: ["20", "18", "22"],
@@ -19633,7 +19633,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 12 ÷ (4 - 2) ?",
     options: ["4", "6", "8"],
@@ -19642,7 +19642,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - 3 + 2 ?",
     options: ["9", "8", "7"],
@@ -19651,7 +19651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 3 × (4 + 2) - 5 ?",
     options: ["15", "10", "12"],
@@ -19660,7 +19660,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (2 × 4) + 3 ?",
     options: ["9", "8", "10"],
@@ -19669,7 +19669,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (3 + 5) × 2 - 6 ?",
     options: ["10", "14", "8"],
@@ -19678,7 +19678,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 - 2) × 4 + 1 ?",
     options: ["18", "20", "16"],
@@ -19687,7 +19687,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "2 + 3 × 4 = ?",
     options: ["14", "20", "18"],
@@ -19697,7 +19697,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 ÷ 2 + 1 = ?",
     options: ["4", "5", "3"],
@@ -19707,7 +19707,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 - 3 × 2 = ?",
     options: ["2", "4", "6"],
@@ -19717,7 +19717,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 3) + (6 ÷ 2) = ?",
     options: ["14", "16", "12"],
@@ -19727,7 +19727,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 ÷ (3 + 1) - 2 = ?",
     options: ["0", "1", "2"],
@@ -19737,7 +19737,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) ÷ 4 + 2 = ?",
     options: ["4", "6", "8"],
@@ -19747,7 +19747,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 × 2) - (3 × 2) = ?",
     options: ["10", "14", "8"],
@@ -19757,7 +19757,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) × (10 - 6) ÷ 2 = ?",
     options: ["16", "8", "12"],
@@ -19767,7 +19767,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 6) ÷ (3 + 3) × 2 = ?",
     options: ["4", "6", "5"],
@@ -19777,7 +19777,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 5) + (10 - 4) × 2 = ?",
     options: ["10", "16", "14"],
@@ -19787,7 +19787,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (5 + 3) ?",
     options: ["48", "56", "64"],
@@ -19797,7 +19797,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 + 3) ÷ 3 ?",
     options: ["3", "4", "5"],
@@ -19806,7 +19806,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On effectue d'abord l'addition : 9 + 3 = 12, puis 12 ÷ 3 = 4.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 ÷ 2 + 3 ?",
     options: ["5", "6", "7"],
@@ -19815,7 +19815,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × 2 + 4 ?",
     options: ["14", "16", "10"],
@@ -19825,7 +19825,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × 3 - (4 ÷ 2) ?",
     options: ["16", "17", "18"],
@@ -19835,7 +19835,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + 9 - 4 ?",
     options: ["10", "11", "12"],
@@ -19844,7 +19844,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 ÷ 3 ?",
     options: ["12", "15", "10"],
@@ -19853,7 +19853,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (2 + 4) × 3 ?",
     options: ["9", "6", "12"],
@@ -19863,7 +19863,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) ÷ 2 + 5 ?",
     options: ["8", "9", "7"],
@@ -19873,7 +19873,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 3 + 4 × 5 ?",
     options: ["26", "32", "20"],
@@ -19883,7 +19883,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 3 ?",
     options: ["23", "20", "25"],
@@ -19893,7 +19893,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (6 ÷ 2) ?",
     options: ["16", "18", "14"],
@@ -19902,7 +19902,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × 2 + 3 ?",
     options: ["23", "25", "27"],
@@ -19912,7 +19912,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 4 - (5 × 2) ?",
     options: ["20", "22", "24"],
@@ -19921,7 +19921,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) + 2 ?",
     options: ["6", "7", "8"],
@@ -19931,7 +19931,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 9 × 2 ?",
     options: ["18", "17", "19"],
@@ -19940,7 +19940,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 20 ÷ 4 + 3 ?",
     options: ["5", "8", "7"],
@@ -19949,7 +19949,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (4 + 5) × 2 ?",
     options: ["18", "9", "20"],
@@ -19958,7 +19958,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) + 2 ?",
     options: ["12", "10", "15"],
@@ -19967,7 +19967,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (10 ÷ 2) + (3 × 4) ?",
     options: ["20", "18", "22"],
@@ -19977,7 +19977,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 3 - 4 ?",
     options: ["22", "20", "18"],
@@ -19987,7 +19987,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 8 × 3 - (5 + 3) ?",
     options: ["22", "20", "24"],
@@ -19997,7 +19997,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (6 ÷ 3) × 2 ?",
     options: ["10", "8", "12"],
@@ -20007,7 +20007,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (5 + 7) × (2 - 1) ?",
     options: ["12", "15", "10"],
@@ -20016,7 +20016,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 + 14 ?",
     options: ["39", "40", "41"],
@@ -20025,7 +20025,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 - 19 ?",
     options: ["15", "16", "17"],
@@ -20034,7 +20034,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) ÷ 2 ?",
     options: ["3", "4", "5"],
@@ -20043,7 +20043,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 7 × 5 ?",
     options: ["15", "20", "25"],
@@ -20052,7 +20052,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (6 + 4) × 2 ?",
     options: ["10", "5", "0"],
@@ -20061,7 +20061,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + (6 ÷ 3) × 4 ?",
     options: ["16", "18", "20"],
@@ -20070,7 +20070,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - (9 × 4) + 3 ?",
     options: ["6", "9", "12"],
@@ -20079,7 +20079,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 27 ÷ 3 + 8 - 4 ?",
     options: ["5", "9", "11"],
@@ -20088,7 +20088,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 3 + 2 ?",
     options: ["7", "8", "9"],
@@ -20097,7 +20097,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × 5 = ?",
     options: ["25", "30", "35"],
@@ -20106,7 +20106,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (3 × 4) = ?",
     options: ["15", "18", "21"],
@@ -20116,7 +20116,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) × (3 - 1) = ?",
     options: ["12", "16", "8"],
@@ -20126,7 +20126,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) + (12 ÷ 4) - 2 = ?",
     options: ["15", "16", "17"],
@@ -20136,7 +20136,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) × (2 + 1) = ?",
     options: ["10", "15", "20"],
@@ -20146,7 +20146,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(14 - 2) × (3 + 1) = ?",
     options: ["48", "52", "56"],
@@ -20156,7 +20156,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 5) + (3 × 6) = ?",
     options: ["18", "24", "30"],
@@ -20166,7 +20166,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) ÷ (2 + 2) = ?",
     options: ["3", "4", "5"],
@@ -20176,7 +20176,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 - 8) × (2 + 1) = ?",
     options: ["16", "24", "32"],
@@ -20186,7 +20186,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ 5 + 10 ?",
     options: ["20", "30", "25"],
@@ -20195,7 +20195,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 2 + (6 × 3) ?",
     options: ["24", "30", "36"],
@@ -20205,7 +20205,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (14 ÷ 2) ?",
     options: ["25", "26", "27"],
@@ -20215,7 +20215,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (3 + 5) - 10 ?",
     options: ["22", "18", "26"],
@@ -20225,7 +20225,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 7 × 2 ?",
     options: ["26", "28", "22"],
@@ -20234,7 +20234,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
         "On effectue la division et la multiplication avant d'additionner pour obtenir 26.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) + (6 × 2) ?",
     options: ["12", "14", "16"],
@@ -20244,7 +20244,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (9 - 3) × 2 ?",
     options: ["10", "14", "12"],
@@ -20254,7 +20254,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 5 × (2 + 3) ?",
     options: ["0", "5", "10"],
@@ -20264,7 +20264,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 - 2 × 3 ?",
     options: ["14", "16", "18"],
@@ -20273,7 +20273,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) ÷ 2 × 3 ?",
     options: ["18", "12", "6"],
@@ -20283,7 +20283,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 10 ÷ 2 ?",
     options: ["22", "23", "24"],
@@ -20292,7 +20292,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ 5 + 15 ?",
     options: ["20", "25", "30"],
@@ -20301,7 +20301,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 4) + (3 × 2) ?",
     options: ["5", "6", "7"],
@@ -20310,7 +20310,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 10 ÷ 5 ?",
     options: ["14", "15", "16"],
@@ -20319,7 +20319,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 9 + 6 ?",
     options: ["8", "9", "10"],
@@ -20328,7 +20328,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (5 + 5) × 2 ?",
     options: ["10", "12", "14"],
@@ -20338,7 +20338,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) × 2 + 4 ?",
     options: ["26", "28", "30"],
@@ -20348,7 +20348,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 - 2 × 10 ?",
     options: ["20", "30", "10"],
@@ -20358,7 +20358,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × (6 - 1) ?",
     options: ["25", "30", "35"],
@@ -20368,7 +20368,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 9 × 2 ?",
     options: ["18", "16", "20"],
@@ -20377,7 +20377,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (6 + 2) × 2 ?",
     options: ["14", "12", "16"],
@@ -20386,7 +20386,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 8 × (2 + 1) ?",
     options: ["24", "20", "28"],
@@ -20395,7 +20395,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 ÷ 2) ?",
     options: ["16", "15", "17"],
@@ -20404,7 +20404,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (10 - 3) × (4 + 2) ?",
     options: ["42", "36", "48"],
@@ -20413,7 +20413,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 7 × 3 - 5 ?",
     options: ["16", "18", "20"],
@@ -20422,7 +20422,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (8 + 4) - (2 × 3) ?",
     options: ["10", "12", "14"],
@@ -20431,7 +20431,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 6 ÷ 2 ?",
     options: ["27", "28", "29"],
@@ -20440,7 +20440,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 30 - 12 ?",
     options: ["18", "19", "17"],
@@ -20449,7 +20449,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que donne 48 ÷ 6 ?",
     options: ["8", "9", "7"],
@@ -20458,7 +20458,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 14 x 3 - 10 ?",
     options: ["32", "32", "34"],
@@ -20467,7 +20467,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 100 - (25 + 25) ÷ 5.",
     options: ["90", "80", "85"],
@@ -20476,7 +20476,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 12 + 4 × 3 - 6 ÷ 2.",
     options: ["22", "20", "18"],
@@ -20485,7 +20485,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 60 ÷ 4 + 10 ?",
     options: ["25", "15", "20"],
@@ -20494,7 +20494,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 21 - 7 + 3 ?",
     options: ["16", "17", "15"],
@@ -20503,7 +20503,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez 18 ÷ 2 + 9.",
     options: ["18", "12", "15"],
@@ -20512,7 +20512,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 8 × 2 + 4 ÷ 2 ?",
     options: ["18", "16", "14"],
@@ -20521,7 +20521,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - 2 + 5 ?",
     options: ["10", "12", "11"],
@@ -20530,7 +20530,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 48 ÷ 6 + 2 × 3 ?",
     options: ["10", "12", "14"],
@@ -20540,7 +20540,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 5 - 10 ÷ 2 ?",
     options: ["20", "15", "25"],
@@ -20550,7 +20550,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 4 + 6 - 2 ?",
     options: ["16", "14", "12"],
@@ -20560,7 +20560,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 6 ÷ 2 ?",
     options: ["3", "6", "9"],
@@ -20569,7 +20569,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 2 - 8 ?",
     options: ["12", "14", "16"],
@@ -20578,7 +20578,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 21 - 3 × 3 ?",
     options: ["12", "15", "18"],
@@ -20587,7 +20587,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : 15 + 6 - 3.",
     options: ["17", "18", "19"],
@@ -20596,7 +20596,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : 18 - (2 × 3).",
     options: ["12", "15", "18"],
@@ -20605,7 +20605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (4 + 2) ?",
     options: ["30", "40", "42"],
@@ -20614,7 +20614,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : (10 - 2) × 3 + 4.",
     options: ["28", "30", "34"],
@@ -20624,7 +20624,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : 50 ÷ (5 + 5).",
     options: ["2", "4", "5"],
@@ -20633,7 +20633,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculez : 9 + 3 × (2 + 1).",
     options: ["12", "15", "18"],
@@ -20643,7 +20643,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 3 + 4 ?",
     options: ["10", "14", "18"],
@@ -20652,7 +20652,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 + 4 - 5 ?",
     options: ["15", "16", "17"],
@@ -20661,7 +20661,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (7 - 2) ?",
     options: ["20", "15", "18"],
@@ -20670,7 +20670,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 ÷ 2) × 3 ?",
     options: ["18", "21", "24"],
@@ -20679,7 +20679,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 × 2) + 1 ?",
     options: ["10", "12", "14"],
@@ -20688,7 +20688,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 4 + 2 ?",
     options: ["20", "22", "24"],
@@ -20696,7 +20696,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "Le produit de 5 et 4, plus 2, est 22.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 15 - 7 ?",
     options: ["6", "8", "7"],
@@ -20705,7 +20705,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 13 ?",
     options: ["22", "21", "20"],
@@ -20714,7 +20714,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 9 + 3 ?",
     options: ["19", "17", "18"],
@@ -20723,7 +20723,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 18 ÷ 2 + 7 ?",
     options: ["16", "15", "14"],
@@ -20732,7 +20732,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 48 ÷ 6 × 4 ?",
     options: ["32", "28", "36"],
@@ -20741,7 +20741,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (3 × 20) + 5 ?",
     options: ["45", "35", "55"],
@@ -20750,7 +20750,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 6) × 3 - 8 ?",
     options: ["46", "42", "44"],
@@ -20759,7 +20759,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (30 ÷ 5) × (2 + 3) ?",
     options: ["30", "25", "35"],
@@ -20769,7 +20769,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 75 - (5 × 7) + 10 ?",
     options: ["60", "65", "70"],
@@ -20778,7 +20778,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (50 - 10) ÷ 2 + 15 ?",
     options: ["30", "25", "20"],
@@ -20787,7 +20787,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) + 10 ?",
     options: ["15", "20", "25"],
@@ -20797,7 +20797,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 3) + (6 ÷ 2) ?",
     options: ["16", "17", "18"],
@@ -20807,7 +20807,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 + 2) × 3 ?",
     options: ["30", "20", "10"],
@@ -20817,7 +20817,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 + 1) - 8 ÷ 2 ?",
     options: ["20", "22", "24"],
@@ -20827,7 +20827,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (5 - 3) ?",
     options: ["10", "12", "16"],
@@ -20837,7 +20837,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 10 - 3 ?",
     options: ["10", "12", "13"],
@@ -20847,7 +20847,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) ÷ 2 + 3 ?",
     options: ["7", "8", "9"],
@@ -20856,7 +20856,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (4 + 3) ?",
     options: ["10", "12", "14"],
@@ -20865,7 +20865,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 ÷ 3 + 4 ?",
     options: ["5", "6", "7"],
@@ -20874,7 +20874,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 4) × 3 + 2 ?",
     options: ["18", "20", "22"],
@@ -20883,7 +20883,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 7) - 6 ?",
     options: ["24", "26", "30"],
@@ -20892,7 +20892,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 4 + 5 ?",
     options: ["9", "11", "14"],
@@ -20901,7 +20901,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) ÷ 4 + 1 ?",
     options: ["3", "4", "5"],
@@ -20910,7 +20910,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 ÷ 2 = ?",
     options: ["10", "8", "6"],
@@ -20919,7 +20919,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 4 = ?",
     options: ["32", "28", "24"],
@@ -20928,7 +20928,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × (2 + 2) - 4 = ?",
     options: ["28", "32", "24"],
@@ -20938,7 +20938,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 8) ÷ 4 + 3 = ?",
     options: ["5", "7", "6"],
@@ -20948,7 +20948,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 5) + (2 × 4) = ?",
     options: ["27", "26", "23"],
@@ -20957,7 +20957,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 3) + (9 - 5) × 2 = ?",
     options: ["12", "14", "10"],
@@ -20967,7 +20967,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × (3 + 1) - 6 = ?",
     options: ["22", "26", "20"],
@@ -20977,7 +20977,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 6) × (10 ÷ 2) = ?",
     options: ["60", "40", "80"],
@@ -20987,7 +20987,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 - 5) ÷ 4 + 3 × 2 = ?",
     options: ["13", "15", "12"],
@@ -20997,7 +20997,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 ÷ 4) × (6 - 2) = ?",
     options: ["12", "8", "6"],
@@ -21007,7 +21007,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (3 × 2) + 1 ?",
     options: ["6", "7", "5"],
@@ -21016,7 +21016,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (7 - 2) × 2 ?",
     options: ["9", "8", "7"],
@@ -21025,7 +21025,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 - 5 + 2 ?",
     options: ["9", "10", "11"],
@@ -21034,7 +21034,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (6 + 4) ?",
     options: ["3", "4", "5"],
@@ -21043,7 +21043,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (2 + 4) - 6 ?",
     options: ["10", "12", "14"],
@@ -21053,7 +21053,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × (3 - 2) ?",
     options: ["8", "10", "12"],
@@ -21063,7 +21063,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (8 ÷ 4) × 2 ?",
     options: ["10", "12", "14"],
@@ -21073,7 +21073,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 3) × (5 + 2) ?",
     options: ["49", "50", "51"],
@@ -21083,7 +21083,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 3 × (2 + 1) ?",
     options: ["20", "21", "22"],
@@ -21092,7 +21092,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 5 + (6 ÷ 2) ?",
     options: ["21", "22", "23"],
@@ -21102,7 +21102,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - (3 × 5) = ?",
     options: ["5", "10", "15"],
@@ -21112,7 +21112,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 3) + (10 ÷ 2) = ?",
     options: ["14", "16", "18"],
@@ -21121,7 +21121,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 3) ÷ (2 + 1) = ?",
     options: ["4", "5", "6"],
@@ -21130,7 +21130,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × 2 - 6 = ?",
     options: ["10", "14", "16"],
@@ -21139,7 +21139,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 × 4) ÷ 3 + 1 = ?",
     options: ["12", "13", "14"],
@@ -21148,7 +21148,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 2) × (5 - 3) = ?",
     options: ["8", "10", "12"],
@@ -21157,7 +21157,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 + 1) × 2 - 4 = ?",
     options: ["10", "12", "14"],
@@ -21165,7 +21165,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "Huit multiplié par deux est seize, moins quatre donne dix.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (4 - 2) ?",
     options: ["12", "8", "10"],
@@ -21174,7 +21174,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 + 2 × (5 - 3) ?",
     options: ["12", "14", "10"],
@@ -21184,7 +21184,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 15 ÷ 3 ?",
     options: ["12", "14", "16"],
@@ -21193,7 +21193,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 3 + 5 ?",
     options: ["8", "9", "7"],
@@ -21202,7 +21202,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 + 2 × (4 - 1) ?",
     options: ["12", "10", "14"],
@@ -21211,7 +21211,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (2 × 5) + 3 ?",
     options: ["8", "10", "6"],
@@ -21220,7 +21220,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ 4 + 5 × 2 ?",
     options: ["14", "16", "12"],
@@ -21229,7 +21229,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) + (3 × 2) = ?",
     options: ["8", "10", "12"],
@@ -21239,7 +21239,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 - 6) ÷ 2 + 4 = ?",
     options: ["7", "8", "9"],
@@ -21249,7 +21249,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 4) - (2 × 3) = ?",
     options: ["6", "7", "8"],
@@ -21259,7 +21259,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × 2 - 4 = ?",
     options: ["12", "14", "16"],
@@ -21269,7 +21269,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 ÷ 2) + (5 × 3) = ?",
     options: ["20", "22", "25"],
@@ -21279,7 +21279,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 3) + (8 ÷ 2) = ?",
     options: ["16", "18", "20"],
@@ -21289,7 +21289,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 5 + 10 ?",
     options: ["30", "29", "31"],
@@ -21298,7 +21298,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (4 + 6) - 5 ?",
     options: ["15", "20", "25"],
@@ -21308,7 +21308,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 10 ?",
     options: ["11", "12", "13"],
@@ -21317,7 +21317,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) × 3 = ?",
     options: ["48", "50", "56"],
@@ -21326,7 +21326,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 + 5) × (10 - 6) = ?",
     options: ["32", "28", "24"],
@@ -21336,7 +21336,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 ÷ 4) + (5 × 3) = ?",
     options: ["17", "18", "19"],
@@ -21346,7 +21346,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 × 3) - (10 ÷ 2) = ?",
     options: ["18", "19", "20"],
@@ -21356,7 +21356,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × (2 + 2) = ?",
     options: ["28", "32", "36"],
@@ -21366,7 +21366,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 - 4) × (2 + 1) = ?",
     options: ["20", "24", "28"],
@@ -21376,7 +21376,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 1) ÷ (3 - 1) = ?",
     options: ["5", "4", "6"],
@@ -21386,7 +21386,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 ÷ 3) + (6 × 2) = ?",
     options: ["20", "21", "22"],
@@ -21396,7 +21396,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - (4 × 3) + 2 = ?",
     options: ["10", "12", "14"],
@@ -21406,7 +21406,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (5 × 2) = ?",
     options: ["16", "17", "18"],
@@ -21416,7 +21416,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 7 + 5 ?",
     options: ["11", "12", "13"],
@@ -21425,7 +21425,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 4 × 6 ?",
     options: ["24", "20", "22"],
@@ -21434,7 +21434,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 36 ÷ 6 ?",
     options: ["5", "6", "7"],
@@ -21443,7 +21443,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 4 + 2 ?",
     options: ["16", "18", "15"],
@@ -21452,7 +21452,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 100 - (20 ÷ 4) ?",
     options: ["95", "90", "85"],
@@ -21461,7 +21461,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 5) × (2 + 3) ?",
     options: ["25", "30", "35"],
@@ -21471,7 +21471,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (6 + 2) - 10 ?",
     options: ["20", "18", "22"],
@@ -21481,7 +21481,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (3 + 2) - 5 ?",
     options: ["20", "25", "15"],
@@ -21491,7 +21491,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 4 × 3 ?",
     options: ["10", "11", "12"],
@@ -21500,7 +21500,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 15 + 9 - 3 ?",
     options: ["21", "22", "23"],
@@ -21509,7 +21509,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 3 × 4 ?",
     options: ["38", "40", "42"],
@@ -21518,7 +21518,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (8 + 4) ÷ 4 ?",
     options: ["2", "3", "4"],
@@ -21527,7 +21527,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait (5 + 15) ÷ 4 ?",
     options: ["3", "5", "6"],
@@ -21536,7 +21536,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 18 ÷ 3 + 2 × 4 ?",
     options: ["10", "11", "12"],
@@ -21545,7 +21545,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 × 2) - (3 + 1) ?",
     options: ["8", "9", "10"],
@@ -21554,7 +21554,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 9 - (2 × 3) + 5 ?",
     options: ["7", "8", "9"],
@@ -21563,7 +21563,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 12 ÷ 4 + 3 × 2 ?",
     options: ["6", "7", "8"],
@@ -21572,7 +21572,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 3 - 5 ?",
     options: ["29", "30", "31"],
@@ -21581,7 +21581,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) x (4 + 2) ?",
     options: ["48", "50", "52"],
@@ -21590,7 +21590,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 ÷ (2 x 5) ?",
     options: ["5", "10", "15"],
@@ -21599,7 +21599,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) x (6 - 4) ?",
     options: ["6", "8", "10"],
@@ -21608,7 +21608,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 x 4 + 4 - 4 ?",
     options: ["12", "16", "20"],
@@ -21617,7 +21617,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 4 - 3 ?",
     options: ["15", "17", "20"],
@@ -21626,7 +21626,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (3 × 2) + 1 ?",
     options: ["5", "6", "7"],
@@ -21634,7 +21634,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "6 plus 1 donne 7.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 ÷ 4 + 2 = ?",
     options: ["2", "4", "6"],
@@ -21643,7 +21643,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × 4 - 5 = ?",
     options: ["7", "12", "9"],
@@ -21652,7 +21652,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) × 3 + 4 = ?",
     options: ["28", "26", "30"],
@@ -21661,7 +21661,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × (2 + 3) - 8 = ?",
     options: ["27", "35", "32"],
@@ -21670,7 +21670,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (4 + 2) ÷ 3 = ?",
     options: ["12", "8", "6"],
@@ -21680,7 +21680,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 × (3 + 5) - 10 ÷ 2 = ?",
     options: ["38", "34", "30"],
@@ -21690,7 +21690,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 4) + (5 × 3) = ?",
     options: ["20", "15", "10"],
@@ -21699,7 +21699,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 - 5) × (2 + 1) = ?",
     options: ["30", "20", "25"],
@@ -21708,7 +21708,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 2) ÷ (3 - 1) × 5 = ?",
     options: ["25", "20", "30"],
@@ -21718,7 +21718,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(24 ÷ 6) + (5 × 4) = ?",
     options: ["26", "28", "22"],
@@ -21727,7 +21727,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 ÷ 3) + (2 × 4) ?",
     options: ["10", "12", "9"],
@@ -21736,7 +21736,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (4 × 3) + 2 ?",
     options: ["10", "14", "12"],
@@ -21745,7 +21745,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) × 2 - 4 ?",
     options: ["10", "14", "12"],
@@ -21754,7 +21754,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × (2 + 3) - 5 ?",
     options: ["45", "40", "35"],
@@ -21763,7 +21763,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 × 2) + (3 × 4) ?",
     options: ["30", "24", "26"],
@@ -21772,7 +21772,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 3) × (5 + 1) ?",
     options: ["30", "25", "35"],
@@ -21781,7 +21781,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 5) + (3 × 2) ?",
     options: ["26", "28", "30"],
@@ -21790,7 +21790,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 6 + 4 ?",
     options: ["6", "8", "10"],
@@ -21799,7 +21799,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 6 + 5 ?",
     options: ["7", "8", "6"],
@@ -21808,7 +21808,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + 3 × 2 ?",
     options: ["15", "18", "16"],
@@ -21818,7 +21818,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 7) + 4 ?",
     options: ["28", "30", "32"],
@@ -21827,7 +21827,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 3 ÷ 2 ?",
     options: ["12", "10", "14"],
@@ -21836,7 +21836,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ (6 ÷ 3) ?",
     options: ["6", "9", "12"],
@@ -21845,7 +21845,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 × 4) + (6 ÷ 2) ?",
     options: ["20", "22", "24"],
@@ -21854,7 +21854,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 4 ?",
     options: ["17", "20", "19"],
@@ -21863,7 +21863,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 2 + 1 ?",
     options: ["17", "18", "19"],
@@ -21872,7 +21872,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 ÷ 3) + (2 × 4) ?",
     options: ["10", "12", "14"],
@@ -21881,7 +21881,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (6 ÷ 2) + 3 ?",
     options: ["11", "12", "13"],
@@ -21890,7 +21890,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ (5 - 2) + 5 ?",
     options: ["10", "15", "20"],
@@ -21899,7 +21899,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 3 - 10 = ?",
     options: ["11", "21", "17"],
@@ -21908,7 +21908,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 + 5) ÷ (3 - 1) = ?",
     options: ["7", "15", "5"],
@@ -21917,7 +21917,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 × 2) + (3 × 3) - 5 = ?",
     options: ["16", "15", "14"],
@@ -21927,7 +21927,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(25 - 5) ÷ 4 + 3 = ?",
     options: ["8", "10", "7"],
@@ -21936,7 +21936,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 5) - (2 × 3) = ?",
     options: ["0", "3", "6"],
@@ -21945,7 +21945,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "4 × (3 + 5) - 10 = ?",
     options: ["22", "26", "18"],
@@ -21954,7 +21954,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(50 ÷ 5) + (6 × 2) = ?",
     options: ["22", "20", "28"],
@@ -21963,7 +21963,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 - 4) ÷ 2 + 10 = ?",
     options: ["8", "10", "6"],
@@ -21972,7 +21972,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (6 + 2) ?",
     options: ["32", "24", "28"],
@@ -21981,7 +21981,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (16 ÷ 2) + (6 × 3) ?",
     options: ["28", "26", "24"],
@@ -21990,7 +21990,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 + 4) - (2 × 3) ?",
     options: ["10", "12", "8"],
@@ -21999,7 +21999,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 18 ÷ 2 ?",
     options: ["7", "8", "9"],
@@ -22008,7 +22008,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 20 - 3 × 2 ?",
     options: ["14", "16", "18"],
@@ -22017,7 +22017,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (10 - 2) × (3 + 1) ?",
     options: ["28", "32", "36"],
@@ -22026,7 +22026,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (3 - 1) + 5 ?",
     options: ["11", "12", "13"],
@@ -22035,7 +22035,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 25 - (10 ÷ 2) ?",
     options: ["22", "23", "24"],
@@ -22044,7 +22044,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 3 × (2 + 1) ?",
     options: ["9", "12", "15"],
@@ -22052,7 +22052,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "2 + 1 = 3, donc 3 × 3 = 9, donc 18 - 9 = 9.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "18 ÷ 3 + 5 = ?",
     options: ["9", "11", "13"],
@@ -22061,7 +22061,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "6 + 2 × (3 - 1) = ?",
     options: ["8", "10", "12"],
@@ -22070,7 +22070,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 × (4 + 2) - 10 = ?",
     options: ["20", "25", "30"],
@@ -22080,7 +22080,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "2 × (3 + 5) - 4 × 2 = ?",
     options: ["8", "10", "12"],
@@ -22090,7 +22090,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 - 3) × 2 + 1 = ?",
     options: ["11", "12", "13"],
@@ -22100,7 +22100,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "14 ÷ 2 + (6 - 4) × 3 = ?",
     options: ["10", "12", "14"],
@@ -22110,7 +22110,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "3 × (5 + 2) - 4 × (1 + 2) = ?",
     options: ["9", "10", "11"],
@@ -22120,7 +22120,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "10 + 5 × (2 - 1) = ?",
     options: ["12", "15", "17"],
@@ -22130,7 +22130,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (5 - 1) ?",
     options: ["16", "20", "24"],
@@ -22139,7 +22139,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ (2 + 3) × 4 ?",
     options: ["16", "12", "8"],
@@ -22149,7 +22149,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + (5 × 3) ?",
     options: ["15", "16", "17"],
@@ -22159,7 +22159,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Si tu as 12 pommes et que tu en donnes 4, combien en as-tu ?",
     options: ["9", "8", "7"],
@@ -22168,7 +22168,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le produit de 7 × 3 ?",
     options: ["20", "21", "22"],
@@ -22177,7 +22177,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien fait 3 × (4 + 2) ?",
     options: ["18", "24", "21"],
@@ -22186,7 +22186,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (18 ÷ 2) + (12 ÷ 3) ?",
     options: ["12", "10", "14"],
@@ -22195,7 +22195,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 5) × 2 - 6 ?",
     options: ["10", "12", "14"],
@@ -22204,7 +22204,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 × 15) + 5 ?",
     options: ["25", "20", "30"],
@@ -22213,7 +22213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (9 - 3) × (5 + 2) ?",
     options: ["42", "36", "48"],
@@ -22222,7 +22222,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) ÷ 2 + 5 ?",
     options: ["10", "8", "12"],
@@ -22231,7 +22231,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 5) ÷ (2 + 3) ?",
     options: ["3", "4", "5"],
@@ -22241,7 +22241,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 ÷ 2) + (4 × 3) ?",
     options: ["12", "14", "16"],
@@ -22251,7 +22251,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 15 - 9 ?",
     options: ["4", "5", "6"],
@@ -22260,7 +22260,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la somme de 8 + 15 ?",
     options: ["22", "23", "24"],
@@ -22269,7 +22269,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 9 ?",
     options: ["27", "26", "28"],
@@ -22278,7 +22278,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 12 ÷ 4 + 3 ?",
     options: ["6", "5", "4"],
@@ -22287,7 +22287,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 5 × (2 + 6) - 10 ?",
     options: ["30", "25", "20"],
@@ -22297,7 +22297,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 ÷ 5 + (3 × 4) ?",
     options: ["20", "25", "30"],
@@ -22306,7 +22306,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (8 + 2) × 4 ?",
     options: ["30", "20", "10"],
@@ -22316,7 +22316,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × (6 ÷ 2) ?",
     options: ["36", "32", "28"],
@@ -22325,7 +22325,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) + (4 × 3) ?",
     options: ["20", "22", "24"],
@@ -22334,7 +22334,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × (2 + 3) ÷ 5 ?",
     options: ["4", "3", "2"],
@@ -22343,7 +22343,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) + (6 × 2) ?",
     options: ["18", "14", "16"],
@@ -22352,7 +22352,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "4 + 3 - 2 = ?",
     options: ["5", "6", "7"],
@@ -22361,7 +22361,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 ÷ 5 + 1 = ?",
     options: ["4", "3", "2"],
@@ -22370,7 +22370,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(10 - 2) ÷ 2 + 3 = ?",
     options: ["3", "4", "5"],
@@ -22380,7 +22380,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 3) + (2 × 2) = ?",
     options: ["10", "8", "12"],
@@ -22390,7 +22390,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 - 4) ÷ 4 + (3 × 2) = ?",
     options: ["9", "10", "11"],
@@ -22400,7 +22400,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 3) - (10 ÷ 2) = ?",
     options: ["10", "12", "8"],
@@ -22410,7 +22410,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 3) × 2 - 10 = ?",
     options: ["8", "10", "12"],
@@ -22420,7 +22420,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(7 × 2) + (5 ÷ 5) = ?",
     options: ["15", "14", "16"],
@@ -22430,7 +22430,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(30 ÷ 5) + (4 × 3) = ?",
     options: ["24", "22", "26"],
@@ -22440,7 +22440,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - 4 + 3 ?",
     options: ["9", "10", "11"],
@@ -22449,7 +22449,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (2 × 15) + 5 ?",
     options: ["25", "30", "35"],
@@ -22458,7 +22458,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (3 + 1) - 5 ?",
     options: ["23", "24", "25"],
@@ -22467,7 +22467,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 4) - 7 ?",
     options: ["20", "22", "23"],
@@ -22476,7 +22476,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (2 × 5) ?",
     options: ["5", "10", "20"],
@@ -22485,7 +22485,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 × 5) + 2 ?",
     options: ["22", "20", "18"],
@@ -22494,7 +22494,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 3) × (10 ÷ 2) ?",
     options: ["50", "60", "40"],
@@ -22503,7 +22503,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 2 + 8 ?",
     options: ["23", "20", "18"],
@@ -22512,7 +22512,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × 3 + 10 ÷ 2 ?",
     options: ["15", "14", "16"],
@@ -22520,7 +22520,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "2 fois 3 est 6, plus 5 donne 14.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 8 - 3 ?",
     options: ["14", "15", "16"],
@@ -22529,7 +22529,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 3) × 4 ?",
     options: ["28", "30", "24"],
@@ -22539,7 +22539,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 6 × (3 + 2) - 10 ?",
     options: ["20", "25", "30"],
@@ -22549,7 +22549,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - (8 × 2) + 5 ?",
     options: ["19", "21", "22"],
@@ -22559,7 +22559,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 + 15 - 9 ?",
     options: ["18", "16", "15"],
@@ -22568,7 +22568,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 7 + 4 ?",
     options: ["21", "25", "22"],
@@ -22577,7 +22577,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × 6 ?",
     options: ["54", "56", "52"],
@@ -22586,7 +22586,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - 37 ?",
     options: ["63", "67", "60"],
@@ -22595,7 +22595,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question:
         "Si vous avez 45 pommes et que vous en donnez 15, combien vous reste-t-il ?",
@@ -22605,7 +22605,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 7 - 10 ?",
     options: ["46", "54", "50"],
@@ -22614,7 +22614,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 3) × 4 ?",
     options: ["32", "28", "30"],
@@ -22623,7 +22623,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 4) ÷ 2 + 10 ?",
     options: ["18", "14", "12"],
@@ -22632,7 +22632,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 - (5 × 6) ?",
     options: ["10", "20", "15"],
@@ -22641,7 +22641,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × 4 + 8 ÷ 4 ?",
     options: ["14", "16", "12"],
@@ -22651,7 +22651,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) × 3 - 5 ?",
     options: ["29", "30", "31"],
@@ -22661,7 +22661,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 4) - 6 ?",
     options: ["10", "12", "14"],
@@ -22670,7 +22670,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 5) × (2 + 1) ?",
     options: ["25", "30", "35"],
@@ -22680,7 +22680,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 ÷ (4 × 5) ?",
     options: ["5", "10", "15"],
@@ -22689,7 +22689,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 6 - 3 × 2 ?",
     options: ["12", "15", "18"],
@@ -22698,7 +22698,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 + 6 ?",
     options: ["26", "28", "30"],
@@ -22707,7 +22707,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 2 ÷ 2 = ?",
     options: ["7", "14", "3"],
@@ -22716,7 +22716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "12 - 4 + 3 = ?",
     options: ["11", "10", "9"],
@@ -22725,7 +22725,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 + 4) × 2 = ?",
     options: ["24", "20", "16"],
@@ -22734,7 +22734,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 + 3) ÷ 3 = ?",
     options: ["4", "3", "6"],
@@ -22743,7 +22743,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(16 - 4) ÷ 2 + 5 = ?",
     options: ["10", "8", "6"],
@@ -22753,7 +22753,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(3 × 5) + (2 × 6) - 4 = ?",
     options: ["26", "20", "22"],
@@ -22763,7 +22763,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "((10 - 2) × 3) ÷ 4 = ?",
     options: ["6", "8", "4"],
@@ -22773,7 +22773,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 5) + (3 × 4) = ?",
     options: ["18", "16", "20"],
@@ -22783,7 +22783,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 × 2) + (10 ÷ 2) = ?",
     options: ["10", "12", "8"],
@@ -22793,7 +22793,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 10) - (3 × 2) = ?",
     options: ["12", "8", "10"],
@@ -22803,7 +22803,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × (9 - 5) ?",
     options: ["40", "36", "32"],
@@ -22812,7 +22812,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 2 + 6 ÷ 3 ?",
     options: ["14", "16", "12"],
@@ -22821,7 +22821,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 × 5) - (6 ÷ 2) ?",
     options: ["18", "20", "22"],
@@ -22830,7 +22830,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 + (7 × 2) - 4 ?",
     options: ["10", "12", "14"],
@@ -22839,7 +22839,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 ÷ 3) + (2 × 5) ?",
     options: ["10", "12", "14"],
@@ -22849,7 +22849,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (3 × 4) - 5 ?",
     options: ["12", "15", "14"],
@@ -22858,7 +22858,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) × (6 ÷ 2) ?",
     options: ["24", "28", "20"],
@@ -22868,7 +22868,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - (3 × 5) + 4 ?",
     options: ["17", "18", "16"],
@@ -22878,7 +22878,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 x 2) ?",
     options: ["8", "10", "12"],
@@ -22888,7 +22888,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 2) x (4 - 2) ?",
     options: ["12", "14", "16"],
@@ -22898,7 +22898,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 5 + 4 x 2 ?",
     options: ["8", "10", "12"],
@@ -22908,7 +22908,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 15 - (3 x 2) + 5 ?",
     options: ["12", "13", "14"],
@@ -22918,7 +22918,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 4 - (3 + 1) ?",
     options: ["24", "25", "26"],
@@ -22927,7 +22927,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ (3 + 3) + 5 ?",
     options: ["10", "8", "12"],
@@ -22936,7 +22936,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(8 × 2) + 4 - 6 = ?",
     options: ["10", "14", "12"],
@@ -22945,7 +22945,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 + 3) × 2 - 4 = ?",
     options: ["14", "16", "10"],
@@ -22954,7 +22954,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 6) × (3 - 2) = ?",
     options: ["10", "12", "8"],
@@ -22963,7 +22963,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "25 ÷ 5 + 3 × 2 = ?",
     options: ["8", "10", "6"],
@@ -22972,7 +22972,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(6 + 2) × (5 - 3) + 1 = ?",
     options: ["9", "11", "10"],
@@ -22982,7 +22982,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(9 - 3) × (4 + 2) ÷ 3 = ?",
     options: ["8", "6", "10"],
@@ -22990,7 +22990,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "Résolvez les parenthèses, multipliez, puis divisez.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 × 2 - 6 = ?",
     options: ["8", "10", "12"],
@@ -23000,7 +23000,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "15 - 4 + 6 = ?",
     options: ["17", "19", "18"],
@@ -23009,7 +23009,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(20 ÷ 5) + (3 × 4) = ?",
     options: ["20", "22", "18"],
@@ -23019,7 +23019,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(4 + 8) ÷ 2 × 3 = ?",
     options: ["18", "12", "15"],
@@ -23029,7 +23029,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(12 - 4) × 3 + 6 = ?",
     options: ["30", "26", "28"],
@@ -23039,7 +23039,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(18 ÷ 2) + (4 × 3) = ?",
     options: ["30", "24", "26"],
@@ -23049,7 +23049,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(5 × 2) + (6 ÷ 2) = ?",
     options: ["16", "14", "12"],
@@ -23059,7 +23059,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(2 + 3) × 4 - 2 = ?",
     options: ["18", "20", "16"],
@@ -23069,7 +23069,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (6 - 2) + 4 ?",
     options: ["16", "14", "12"],
@@ -23078,7 +23078,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (2 + 3) × 4 - 6 ?",
     options: ["14", "16", "12"],
@@ -23087,7 +23087,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 12 ?",
     options: ["38", "37", "36"],
@@ -23096,7 +23096,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - 18 + 9 ?",
     options: ["36", "37", "38"],
@@ -23105,7 +23105,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 6) × 3 ?",
     options: ["30", "28", "32"],
@@ -23114,7 +23114,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 72 ÷ (8 - 4) ?",
     options: ["18", "20", "22"],
@@ -23123,7 +23123,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × (5 + 3) - 10 ?",
     options: ["42", "40", "38"],
@@ -23132,7 +23132,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (15 × 5) ?",
     options: ["25", "20", "30"],
@@ -23141,7 +23141,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (50 ÷ 2) + (3 × 10) ?",
     options: ["35", "40", "45"],
@@ -23150,7 +23150,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 × 3 - (2 × 5) ?",
     options: ["37", "40", "35"],
@@ -23159,7 +23159,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 + 8) ÷ 4 × 3 ?",
     options: ["15", "20", "18"],
@@ -23168,7 +23168,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 90 - (2 × 25) + 5 ?",
     options: ["45", "50", "55"],
@@ -23177,7 +23177,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 3 + 6 × 2 ?",
     options: ["24", "26", "22"],
@@ -23186,7 +23186,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 60 ÷ (3 + 3) + 5 ?",
     options: ["15", "10", "20"],
@@ -23195,7 +23195,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 6 × 3 - 5 ?",
     options: ["13", "15", "17"],
@@ -23204,7 +23204,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 25 - (4 × 3) ?",
     options: ["13", "16", "19"],
@@ -23213,7 +23213,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 18 - 3 × 4 ?",
     options: ["6", "9", "12"],
@@ -23222,7 +23222,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (10 - 2) × 3 + 4 ?",
     options: ["26", "28", "30"],
@@ -23231,7 +23231,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 30 - (2 × 10) + 5 ?",
     options: ["15", "20", "25"],
@@ -23240,7 +23240,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 50 - (10 ÷ 2) × 5 ?",
     options: ["45", "40", "35"],
@@ -23250,7 +23250,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (5 + 5) ÷ 2 ?",
     options: ["5", "6", "7"],
@@ -23259,7 +23259,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - (6 + 4) ?",
     options: ["44", "40", "46"],
@@ -23269,7 +23269,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (5 + 7) ?",
     options: ["36", "24", "30"],
@@ -23279,7 +23279,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (8 - 3) + 4 ?",
     options: ["14", "18", "16"],
@@ -23289,7 +23289,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 6 - (2 + 3) ?",
     options: ["25", "28", "30"],
@@ -23299,7 +23299,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 ÷ 2) × (3 + 1) ?",
     options: ["16", "12", "20"],
@@ -23309,7 +23309,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × 2 - (6 ÷ 3) ?",
     options: ["19", "20", "18"],
@@ -23319,7 +23319,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 ÷ (2 + 2) × 3 ?",
     options: ["9", "6", "12"],
@@ -23329,7 +23329,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 - 4) ÷ 4 + 3 ?",
     options: ["5", "6", "7"],
@@ -23338,7 +23338,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 - 2 x 5 ?",
     options: ["20", "25", "30"],
@@ -23347,7 +23347,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 3 + 7 ?",
     options: ["7", "8", "9"],
@@ -23356,7 +23356,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 45 - 5 x 8 ?",
     options: ["5", "10", "15"],
@@ -23365,7 +23365,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 24 ÷ 4 + 5 ?",
     options: ["7", "8", "9"],
@@ -23374,7 +23374,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - (5 × 3) ?",
     options: ["5", "7", "10"],
@@ -23383,7 +23383,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 1 ?",
     options: ["7", "8", "9"],
@@ -23392,7 +23392,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) × 2 ?",
     options: ["22", "24", "26"],
@@ -23401,7 +23401,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 + 2 ?",
     options: ["6", "8", "10"],
@@ -23410,7 +23410,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 - (2 × 3) + 4 ?",
     options: ["8", "9", "10"],
@@ -23419,7 +23419,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 + 4 - 5 ?",
     options: ["6", "7", "8"],
@@ -23428,7 +23428,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 11 + 5 - 3 ?",
     options: ["12", "13", "14"],
@@ -23437,7 +23437,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - 6 + 1 ?",
     options: ["8", "9", "10"],
@@ -23446,7 +23446,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 2) ÷ 4 × 2 ?",
     options: ["5", "6", "7"],
@@ -23454,7 +23454,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "D'abord, 10 + 2 = 12, puis 12 ÷ 4 = 3, et enfin 3 × 2 = 6.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × (5 + 3) ÷ 4 ?",
     options: ["16", "18", "20"],
@@ -23464,7 +23464,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - (6 ÷ 2) ?",
     options: ["12", "14", "16"],
@@ -23473,7 +23473,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 6 ?",
     options: ["8", "10", "14"],
@@ -23482,7 +23482,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (2 + 3) - 4 ?",
     options: ["15", "20", "25"],
@@ -23491,7 +23491,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 12 - (4 ÷ 2) ?",
     options: ["10", "8", "9"],
@@ -23500,7 +23500,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 2 - 8 ?",
     options: ["12", "16", "8"],
@@ -23509,7 +23509,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × 6 ÷ 3 ?",
     options: ["10", "15", "12"],
@@ -23518,7 +23518,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (5 - 2) × 3 ?",
     options: ["16", "19", "15"],
@@ -23527,7 +23527,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × (3 + 1) - 4 ?",
     options: ["28", "32", "24"],
@@ -23537,7 +23537,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (14 - 6) × 2 + 3 ?",
     options: ["22", "24", "20"],
@@ -23547,7 +23547,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 × (2 + 1) - 5 ?",
     options: ["22", "27", "23"],
@@ -23557,7 +23557,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (20 ÷ 4) + 6 × 2 ?",
     options: ["20", "22", "24"],
@@ -23567,7 +23567,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 × 3 - 5 + 2 ?",
     options: ["21", "20", "19"],
@@ -23577,7 +23577,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (8 - 2) ÷ 3 + 1 ?",
     options: ["3", "2", "1"],
@@ -23586,7 +23586,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 10 × (2 + 3) - 15 ?",
     options: ["25", "50", "35"],
@@ -23595,7 +23595,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 40 ÷ (5 - 3) + 10 ?",
     options: ["20", "30", "25"],
@@ -23604,7 +23604,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 + 4) ÷ 2 × 3 ?",
     options: ["21", "24", "18"],
@@ -23614,7 +23614,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 + 6 ÷ 2 ?",
     options: ["19", "20", "18"],
@@ -23623,7 +23623,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 + (8 ÷ 4) ?",
     options: ["18", "20", "19"],
@@ -23632,7 +23632,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 - 4 + 3 ?",
     options: ["16", "17", "18"],
@@ -23641,7 +23641,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + (6 - 3) x 4 ?",
     options: ["21", "22", "23"],
@@ -23650,7 +23650,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (7 + 3) ÷ 2 x 5 ?",
     options: ["25", "20", "30"],
@@ -23659,7 +23659,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que vaut 12 - 4 ?",
     options: ["7", "8", "9"],
@@ -23668,7 +23668,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que vaut 8 × 2 - 5 ?",
     options: ["10", "11", "12"],
@@ -23677,7 +23677,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que vaut 10 - (2 × 3) + 4 ?",
     options: ["7", "8", "9"],
@@ -23687,7 +23687,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 + 5 × (2 - 1) ?",
     options: ["13", "14", "15"],
@@ -23697,7 +23697,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 ÷ 4 + 3 × 2 ?",
     options: ["8", "9", "10"],
@@ -23707,7 +23707,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que vaut 7 × 3 - 5 ?",
     options: ["16", "17", "18"],
@@ -23716,7 +23716,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Que vaut 6 × 2 + 2 ?",
     options: ["12", "13", "14"],
@@ -23726,7 +23726,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 6 × 3 ?",
     options: ["18", "20", "21"],
@@ -23735,7 +23735,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 12 × 2 - 3 ?",
     options: ["21", "22", "23"],
@@ -23744,7 +23744,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (4 + 6) × 2 - 5 ?",
     options: ["15", "16", "17"],
@@ -23754,7 +23754,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de (10 - 2) × 3 + 4 ?",
     options: ["28", "30", "32"],
@@ -23764,7 +23764,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 40 ÷ (5 + 5) ?",
     options: ["4", "5", "6"],
@@ -23773,7 +23773,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quelle est la valeur de 3 × (4 + 5) - 6 ?",
     options: ["21", "22", "23"],
@@ -23783,7 +23783,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 7 × 4 - 10 ?",
     options: ["18", "22", "26"],
@@ -23792,7 +23792,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "20 - 5 × 2 = ?",
     options: ["10", "12", "15"],
@@ -23801,7 +23801,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "36 ÷ 6 + 7 = ?",
     options: ["10", "11", "12"],
@@ -23810,7 +23810,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "5 × (2 + 3) = ?",
     options: ["25", "30", "35"],
@@ -23819,7 +23819,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "8 × (2 + 1) - 10 = ?",
     options: ["14", "16", "18"],
@@ -23829,7 +23829,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "7 + (3 × 4) - 5 = ?",
     options: ["19", "20", "21"],
@@ -23838,7 +23838,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "(15 ÷ 3) × 4 = ?",
     options: ["18", "20", "22"],
@@ -23847,7 +23847,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "50 - (6 × 7) + 2 = ?",
     options: ["16", "18", "20"],
@@ -23856,7 +23856,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "100 ÷ (5 + 5) + 10 = ?",
     options: ["20", "15", "10"],
@@ -23866,7 +23866,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "40 ÷ 8 + 4 = ?",
     options: ["10", "8", "6"],
@@ -23874,7 +23874,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     explanation: "On divise 40 par 8, puis on ajoute 4.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 50 - 23 ?",
     options: ["27", "28", "26"],
@@ -23883,7 +23883,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 60 ÷ (2 + 4) ?",
     options: ["10", "12", "8"],
@@ -23892,7 +23892,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 100 - (40 ÷ 5) ?",
     options: ["80", "75", "85"],
@@ -23901,7 +23901,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 x (2 + 3) ?",
     options: ["125", "100", "150"],
@@ -23910,7 +23910,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) x (6 ÷ 3) ?",
     options: ["24", "32", "16"],
@@ -23920,7 +23920,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 + 6 x 2 ?",
     options: ["30", "36", "24"],
@@ -23929,7 +23929,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (4 + 8) ÷ 3 + 5 ?",
     options: ["9", "8", "10"],
@@ -23938,7 +23938,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 72 ÷ 8 + 5 ?",
     options: ["14", "13", "12"],
@@ -23947,7 +23947,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 33 - (9 ÷ 3) ?",
     options: ["30", "27", "26"],
@@ -23956,7 +23956,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 x (3 + 1) - 2 ?",
     options: ["18", "20", "16"],
@@ -23965,7 +23965,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 5 + 6 ÷ 3 ?",
     options: ["22", "20", "18"],
@@ -23974,7 +23974,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (7 - 2) + 4 ?",
     options: ["19", "20", "21"],
@@ -23983,7 +23983,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 - (3 + 2) ?",
     options: ["2", "3", "1"],
@@ -23992,7 +23992,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 18 ÷ 2 + 4 ?",
     options: ["13", "12", "14"],
@@ -24001,7 +24001,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 7 + (6 × 2) - 4 ?",
     options: ["12", "14", "16"],
@@ -24010,7 +24010,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 × (4 - 1) + 3 ?",
     options: ["15", "18", "20"],
@@ -24019,7 +24019,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 36 ÷ 6 + 3 × 2 ?",
     options: ["10", "12", "14"],
@@ -24028,7 +24028,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 - 2) × 2 + 4 ?",
     options: ["18", "20", "22"],
@@ -24037,7 +24037,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 ÷ 5 + 3 × 2 ?",
     options: ["10", "12", "14"],
@@ -24046,7 +24046,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 - (2 + 1) × 2 ?",
     options: ["3", "4", "5"],
@@ -24055,7 +24055,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (15 - 3) ÷ 2 ?",
     options: ["6", "8", "7"],
@@ -24064,7 +24064,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (10 ÷ 2) + (4 × 2) ?",
     options: ["10", "12", "14"],
@@ -24073,7 +24073,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 14 - (3 + 5) ?",
     options: ["6", "8", "10"],
@@ -24082,7 +24082,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 9 ÷ 3 ?",
     options: ["2", "3", "4"],
@@ -24091,7 +24091,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Résoudre 12 + 8 - 5 ?",
     options: ["15", "18", "20"],
@@ -24100,7 +24100,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculer 6 × (3 + 1) ?",
     options: ["18", "24", "30"],
@@ -24109,7 +24109,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Résoudre 14 - (3 × 2) ?",
     options: ["8", "10", "12"],
@@ -24118,7 +24118,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculer (5 + 15) ÷ 4 ?",
     options: ["5", "6", "7"],
@@ -24127,7 +24127,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Résoudre 3 × (2 + 4) - 5 ?",
     options: ["10", "11", "12"],
@@ -24136,7 +24136,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 16 ÷ 4 + 2 ?",
     options: ["4", "6", "8"],
@@ -24145,7 +24145,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Calculer 9 - (3 + 1) × 2 ?",
     options: ["3", "5", "7"],
@@ -24155,7 +24155,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 20 - 5 × 3 ?",
     options: ["5", "10", "15"],
@@ -24164,7 +24164,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) × 2 - 3 ?",
     options: ["17", "18", "19"],
@@ -24173,7 +24173,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (4 + 5) - 6 ?",
     options: ["24", "25", "26"],
@@ -24182,7 +24182,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 2 × (3 + 4) + 5 ?",
     options: ["16", "17", "18"],
@@ -24191,7 +24191,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 25 - 5 × (2 + 3) ?",
     options: ["10", "15", "20"],
@@ -24200,7 +24200,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 3 × (7 - 2) + 5 ?",
     options: ["20", "25", "15"],
@@ -24210,7 +24210,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 8 × 2 - 3 ?",
     options: ["13", "10", "12"],
@@ -24219,7 +24219,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 5 + (3 × 4) - 2 ?",
     options: ["15", "10", "11"],
@@ -24228,7 +24228,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 30 ÷ 5 + 6 ?",
     options: ["10", "12", "8"],
@@ -24237,7 +24237,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de 4 × 3 + 5 - 2 ?",
     options: ["15", "14", "16"],
@@ -24246,7 +24246,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 7 + 6 - 4 ?",
     options: ["9", "10", "11"],
@@ -24255,7 +24255,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 3 × (4 + 2) ?",
     options: ["18", "20", "21"],
@@ -24264,7 +24264,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 20 - (3 × 4) ?",
     options: ["8", "12", "16"],
@@ -24273,7 +24273,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font (6 + 2) × (3 - 1) ?",
     options: ["14", "16", "18"],
@@ -24283,7 +24283,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 9 - 3 + 4 ?",
     options: ["8", "9", "10"],
@@ -24292,7 +24292,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Combien font 30 ÷ 5 + 1 ?",
     options: ["5", "6", "7"],
@@ -24301,7 +24301,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (6 + 4) ÷ 2 + 3 ?",
     options: ["6", "7", "8"],
@@ -24310,7 +24310,7 @@ final List<QuizQuestion> questionPsycotechniquesCalcul = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tests psychotechniques — Calcul rapide",
     question: "Quel est le résultat de (12 - 4) × 2 ?",
     options: ["14", "16", "18"],
@@ -24675,7 +24675,7 @@ class _QuizPsycotechniquesCalculState extends State<QuizPsycotechniquesCalcul>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -24878,7 +24878,7 @@ class _QuizPsycotechniquesCalculState extends State<QuizPsycotechniquesCalcul>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -25061,7 +25061,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -25594,10 +25593,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -25968,7 +25968,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -26009,9 +26009,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

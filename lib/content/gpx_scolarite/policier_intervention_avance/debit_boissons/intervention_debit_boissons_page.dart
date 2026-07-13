@@ -84,43 +84,43 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Selon le contexte de l’intervention, vous pouvez vous appuyer sur : ",
                 ),
                 TextSpan(
                   text: "l’article 78-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (contrôle d’identité), "),
+                TextSpan(text: " (contrôle d’identité), "),
                 TextSpan(
                   text: "l’article 78-2-2 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (réquisitions du procureur), et "),
+                TextSpan(text: " (réquisitions du procureur), et "),
                 TextSpan(
                   text: "l’article 53 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (flagrance) lorsque les conditions sont réunies.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Important",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Le cadre juridique exact dépend du motif (mission commandée, réquisition, trouble à l’ordre public, infraction constatée). "
@@ -206,70 +206,70 @@ class InterventionDebitBoissonsPage extends StatelessWidget {
             cardColor: cardPrinciples,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Avant l’action : se préparer"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Avant l’action : se préparer"),
+              _Paragraph(
                 "Recueillir un maximum d’informations sur l’établissement lorsque c’est possible :",
               ),
-              const SizedBox(height: 6),
-              const _BulletPoint(text: "Propriétaire ou gérant."),
-              const _BulletPoint(text: "Personnel de service."),
-              const _BulletPoint(
+              SizedBox(height: 6),
+              _BulletPoint(text: "Propriétaire ou gérant."),
+              _BulletPoint(text: "Personnel de service."),
+              _BulletPoint(
                 text:
                     "Disposition interne : sous-sol, étage, arrière-salle, couloirs, points d’étranglement…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Disposition extérieure : arrière-cour, sorties sur parking, immeuble, issues secondaires…",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Clientèle habituelle / ambiance (tensions connues, habitudes, événements).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Coordination & effectif"),
-              const _BulletPoint(
+              _SubTitle("B) Coordination & effectif"),
+              _BulletPoint(
                 text:
                     "Se concerter sur le mode d’intervention et la répartition des rôles.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Intervenir à 3 ou 4 fonctionnaires (jamais seul).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Utiliser des signes conventionnels si besoin pour alerter d’un geste suspect.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Sécurité & information radio"),
-              const _BulletPoint(
+              _SubTitle("C) Sécurité & information radio"),
+              _BulletPoint(
                 text:
                     "S’équiper au préalable des matériels individuels et collectifs de protection.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Avertir le PC radio avant l’action (mission commandée ou d’initiative) : lieu + motif.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("D) Arrivée sur les lieux"),
-              const _BulletPoint(
+              _SubTitle("D) Arrivée sur les lieux"),
+              _BulletPoint(
                 text:
                     "Privilégier une arrivée discrète (éviter avertisseurs sonores/lumineux).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Aux abords : mémoriser les issues (portes, fenêtres).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Observer si possible à travers les vitres : disposition, nombre, emplacement des consommateurs, ambiance générale.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Vigilance",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Un débit de boissons concentre souvent : promiscuité, alcoolisation, effet de groupe, objets détournables (bouteilles, verres), "
@@ -313,10 +313,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -381,7 +381,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -424,7 +424,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -486,7 +486,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -518,7 +518,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -531,7 +531,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

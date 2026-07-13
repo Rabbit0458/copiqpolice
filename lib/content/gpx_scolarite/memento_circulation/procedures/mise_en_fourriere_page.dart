@@ -93,52 +93,52 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L. 325-1 à L. 325-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "articles L. 325-7 à L. 325-13 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "article R. 325-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ", "),
+                TextSpan(text: ", "),
                 TextSpan(
                   text: "article R. 325-1-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "articles R. 325-12 à R. 325-52 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La mise en fourrière est une mesure encadrée : elle entraîne des frais à la charge du propriétaire "
@@ -210,21 +210,21 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardDef,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Autorités pouvant prescrire la mesure (règle générale)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "O.P.J. (Police nationale / Gendarmerie nationale).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "A.P.J.A. chef de la police municipale (ou occupant ces fonctions).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "POINT CLÉ",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La mise en fourrière peut aussi intervenir à Paris par les A.P.J.A. du corps des contrôleurs "
@@ -232,17 +232,17 @@ class MiseEnFourrierePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 14),
-              const _SubTitle("Suite à une immobilisation"),
-              const _Paragraph(
+              SizedBox(height: 14),
+              _SubTitle("Suite à une immobilisation"),
+              _Paragraph(
                 "La mise en fourrière peut être prescrite (O.P.J. ou A.P.J.A. chef PM) notamment :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Si le conducteur (ou l’accompagnateur de l’élève conducteur) ne justifie pas de la cessation de l’infraction dans un délai de 48 heures.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si le véhicule n’est pas présenté au contrôle technique dans le délai de 7 jours prévu par la fiche de circulation provisoire, ou si les réparations/aménagements prescrits ne sont pas exécutés.",
               ),
@@ -257,51 +257,51 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardCases,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Véhicule laissé sans droit (lieu où le C.R. ne s’applique pas)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "À la demande du maître des lieux, un véhicule laissé sans droit dans un lieu public ou privé "
                 "où le Code de la route ne s’applique pas peut être mis en fourrière.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Le maître des lieux adresse une demande à l’O.P.J. territorialement compétent.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si l’identité/adresse du propriétaire est connue : joindre la preuve de la mise en demeure (LRAR) de retirer le véhicule sous 8 jours.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si l’identité/adresse est inconnue : joindre une demande d’identification ; si les recherches aboutissent, l’O.P.J. expédie la mise en demeure.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Véhicule privé d’éléments indispensables (dégradations/vols)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Avant qu’il ne devienne une épave, un véhicule privé d’éléments indispensables à son utilisation normale "
                 "et insusceptible de réparation immédiate peut être mis en fourrière, même sans l’accord du propriétaire, selon sa localisation.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un véhicule devient « épave » lorsqu’il est assimilable à un déchet. Exemple : absence d’éléments d’identification (plaques, constructeur). ",
                   ),
                   TextSpan(
                     text:
                         "Dans ce cas, l’enlèvement peut relever de l’article L. 541-3 du Code de l’environnement",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
             ],
@@ -316,31 +316,31 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardExec,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Consignation (personne sans domicile/emploi en France)",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Si l’auteur ne peut pas justifier d’un domicile ou d’un emploi en France, ne peut pas payer immédiatement et ne justifie pas d’une caution agréée : possibilité de mise en fourrière (procédure de consignation).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Amende forfaitaire majorée (certaines infractions L. 121-3 C.R.)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Suite à un avis d’amende forfaitaire majorée concernant une infraction mentionnée à ",
                 ),
                 TextSpan(
                   text: "l’article L. 121-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (vitesse, distances de sécurité…), si le titulaire du certificat d’immatriculation ne peut justifier d’un domicile en France et n’a ni payé ni contesté dans les délais : le véhicule peut être mis en fourrière si le versement « sur-le-champ » du montant de l’AFM n’est pas effectué.",
                 ),
@@ -356,47 +356,47 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardExec,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Acte initial : PV ou rapport"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("1) Acte initial : PV ou rapport"),
+              _BulletPoint(
                 text:
                     "Si la mesure fait suite à une infraction : rédaction d’un procès-verbal.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Dans les autres cas : rédaction d’un rapport.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("2) Vérification préalable obligatoire"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("2) Vérification préalable obligatoire"),
+              _BulletPoint(
                 text:
                     "Toute mise en fourrière est précédée d’une vérification visant à déterminer si le véhicule est signalé volé (interrogation FOVeS).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("3) Fiche descriptive (état sommaire)"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("3) Fiche descriptive (état sommaire)"),
+              _BulletPoint(
                 text:
                     "Établir une fiche descriptive : état sommaire extérieur et intérieur, sans ouvrir le véhicule.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("4) Modalités de transfert vers la fourrière"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("4) Modalités de transfert vers la fourrière"),
+              _BulletPoint(
                 text: "Par un professionnel agréé (ou son préposé).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Sur prescription de l’O.P.J. : par l’agent (qui conduit ou fait conduire, en sa présence).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Par un tiers en vertu d’une réquisition.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Par le conducteur ou le propriétaire en vertu d’une réquisition.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "CAS PRATIQUE",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Si le propriétaire est domicilié/réside dans le ressort de l’O.P.J. prescripteur, "
@@ -416,27 +416,27 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardSuite,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Si le contrevenant se présente, l’agent peut l’autoriser à reprendre le véhicule : "
                 "après PV et à condition de faire cesser l’infraction.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Avant commencement d’exécution"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Avant commencement d’exécution"),
+              _BulletPoint(
                 text:
                     "Si le véhicule d’enlèvement n’est pas encore arrivé : la reprise peut être autorisée après paiement des frais afférents aux opérations préalables (ex : déplacement du véhicule d’enlèvement).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Après commencement d’exécution"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("Après commencement d’exécution"),
+              _BulletPoint(
                 text:
                     "Si l’enlèvement a commencé : la reprise peut être autorisée après paiement des frais d’enlèvement OU engagement écrit de les régler.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "DÉFINITION",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La mise en fourrière est réputée avoir reçu commencement d’exécution "
@@ -445,8 +445,8 @@ class MiseEnFourrierePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Le paiement des frais est effectué au gardien de la fourrière sur présentation d’une facture détaillée "
                 "(en pratique, il peut être réglé sur place au préposé). Les tarifs maxima sont fixés par arrêtés.",
               ),
@@ -461,15 +461,15 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardSpecial,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _BulletPoint(
+            children: const [
+              _BulletPoint(
                 text:
                     "En cas de refus de régler les frais (ou l’engagement écrit) : fiche descriptive dressée contradictoirement, double remis, retrait provisoire du certificat d’immatriculation, puis enlèvement.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "DÉLIT",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Si le conducteur s’oppose à l’enlèvement : délit d’obstacle à un ordre d’envoi en fourrière. "
@@ -477,8 +477,8 @@ class MiseEnFourrierePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _NatinfFourriereTable(),
+              SizedBox(height: 12),
+              _NatinfFourriereTable(),
             ],
           ),
 
@@ -490,64 +490,64 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardSuite,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Enregistrement (registre spécial)"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("1) Enregistrement (registre spécial)"),
+              _Paragraph(
                 "Chaque mise en fourrière est enregistrée de façon minutieuse : date/heure d’enlèvement, matricule, "
                 "identité du propriétaire, marque/type/immat, état général (chocs/détériorations), accessoires/objets apparents.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("2) Notification au propriétaire"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("2) Notification au propriétaire"),
+              _Paragraph(
                 "La mise en fourrière est notifiée par l’autorité prescriptrice : "
                 "soit lors de la présentation du propriétaire, soit par LRAR dans les 5 jours ouvrables (adresse S.I.V.) "
                 "si le propriétaire ne s’est pas présenté.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Si le S.I.V. révèle un gage, la notification vise aussi le créancier gagiste. ",
                   ),
                   TextSpan(
                     text: "(LRAR)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("3) Transmission des PV/rapports"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("3) Transmission des PV/rapports"),
+              _BulletPoint(
                 text:
                     "PV (suite à infraction) : transmission au procureur de la République et au préfet.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Rapport (autres cas) : transmission au préfet.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Copie transmise sans délai à l’autorité compétente pour prononcer la mainlevée.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("4) Restitution (mainlevée)"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("4) Restitution (mainlevée)"),
+              _Paragraph(
                 "La mesure prend fin par une décision de mainlevée : autorisation définitive de sortie de fourrière "
                 "et restitution du certificat d’immatriculation le cas échéant.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Le propriétaire ou conducteur doit justifier d’une assurance couvrant le véhicule (ou justification suffisante si prise en charge par un professionnel du remorquage).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Présenter un permis de conduire en cours de validité.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Présenter un des titres de circulation exigés (articles R. 322-1 et R. 322-3 du Code de la route).",
               ),
@@ -562,42 +562,42 @@ class MiseEnFourrierePage extends StatelessWidget {
             cardColor: cardSpecial,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L. 325-1-1 et L. 325-1-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "HABILITATION",
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "Les A.P.J.A. ne sont pas habilités à mettre en œuvre ces procédures particulières.",
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("A) Avec autorisation préalable du procureur"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("A) Avec autorisation préalable du procureur"),
+              _Paragraph(
                 "En cas de délit ou contravention de 5e classe (C.R. ou C.P.) lorsque la confiscation est encourue, "
                 "les O.P.J. ou A.P.J. peuvent, avec autorisation préalable du procureur (par tout moyen), "
                 "faire procéder à l’immobilisation et à la mise en fourrière.",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "Si le parquet requiert la MEF : vérifier que l’auteur est bien le propriétaire et que le véhicule n’est pas grevé d’un gage/opposition (vigilance véhicules étrangers).",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) À l’initiative du préfet"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) À l’initiative du préfet"),
+              _Paragraph(
                 "Le préfet peut ordonner à titre provisoire l’immobilisation et la mise en fourrière du véhicule utilisé "
                 "pour certaines infractions (ex. alcool, stupéfiants, défaut de permis, refus d’obtempérer, dépassement ≥ 50 km/h…). "
                 "Le procureur est immédiatement informé et dispose de 7 jours pour confirmer la mesure.",
@@ -606,13 +606,13 @@ class MiseEnFourrierePage extends StatelessWidget {
           ),
 
           const SizedBox(height: 12),
-          _Paragraph.rich([
-            const TextSpan(text: "Mis à jour le "),
-            const TextSpan(
+          const _Paragraph.rich([
+            TextSpan(text: "Mis à jour le "),
+            TextSpan(
               text: "15/06/2025",
               style: TextStyle(fontWeight: FontWeight.w900),
             ),
-            const TextSpan(text: "."),
+            TextSpan(text: "."),
           ]),
         ],
       ),
@@ -797,10 +797,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -865,7 +865,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -908,7 +908,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -970,7 +970,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -1002,7 +1002,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -1015,7 +1015,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

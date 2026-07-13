@@ -101,77 +101,77 @@ class FormulaireInformationPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 235-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : encadre le prélèvement salivaire (réalisé par OPJ/APJ) et l’obligation d’interroger le conducteur "
                       "sur sa volonté de se réserver la possibilité de demander un examen technique / expertise ou la recherche "
                       "de médicaments psychoactifs.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 235-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : renvoie aux méthodes/conditions prescrites (notice d’emploi et procédure de prélèvement).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article R. 235-11 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixe le délai de 5 jours après notification des résultats pour demander un examen technique / une expertise "
                       "et/ou la recherche de médicaments psychoactifs (sous conditions).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Références CPP pour l’expertise : "),
+                TextSpan(text: "Références CPP pour l’expertise : "),
                 TextSpan(
                   text: "articles 60, 77-1 et 156 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Référence pour la recherche de médicaments psychoactifs : ",
                 ),
                 TextSpan(
                   text: "p du l’article R. 5128-2 du Code de la santé publique",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -183,21 +183,21 @@ class FormulaireInformationPage extends StatelessWidget {
             cardColor: cardProcedure,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Dépistage et prélèvement salivaire"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Dépistage et prélèvement salivaire"),
+              _Paragraph(
                 "Vous avez fait l’objet d’une épreuve de dépistage aux produits stupéfiants qui s’est révélée positive.\n\n"
                 "Sous notre contrôle et selon la procédure indiquée sur la notice d’emploi, vous avez procédé vous-même, "
                 "aux fins d’analyse, à un prélèvement de votre salive grâce au collecteur mis à votre disposition.\n\n"
                 "Le flacon (ou tube) de conservation du prélèvement, ainsi que l’enveloppe de conditionnement, "
                 "ont été immédiatement étiquetés et scellés sur place.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle(
+              SizedBox(height: 12),
+              _SubTitle(
                 "B) Droit à expertise / examen technique (sous conditions)",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Lors de la notification des résultats de l’analyse, vous disposerez d’un délai de 5 jours pour demander :\n"
                       "• soit un examen technique ou une expertise ;\n"
@@ -207,25 +207,25 @@ class FormulaireInformationPage extends StatelessWidget {
                 ),
                 TextSpan(
                   text: "Article R. 235-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "article R. 235-11 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Délai : 5 jours à compter de la notification des résultats. "
                         "Condition clé (salivaire) : avoir indiqué se réserver la possibilité et avoir accepté le prélèvement sanguin.",
@@ -242,35 +242,35 @@ class FormulaireInformationPage extends StatelessWidget {
             cardColor: cardChoix,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Expertise / examen technique"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Expertise / examen technique"),
+              _BulletPoint(
                 text:
                     "Je souhaite me réserver la possibilité de demander l’examen technique ou l’expertise prévue par l’article R. 235-11.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Je ne souhaite pas me réserver la possibilité de demander l’examen technique ou l’expertise prévue par l’article R. 235-11.",
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Recherche de médicaments psychoactifs"),
-              const _BulletPoint(
+              SizedBox(height: 12),
+              _SubTitle("B) Recherche de médicaments psychoactifs"),
+              _BulletPoint(
                 text:
                     "Je souhaite me réserver la possibilité de demander la recherche de l’usage de médicaments psychoactifs prévue à l’article R. 235-11.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Je ne souhaite pas me réserver la possibilité de demander la recherche de l’usage de médicaments psychoactifs prévue à l’article R. 235-11.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Prévoir les champs : Nom/Prénom — Date (le …) — Heure (… h …) — "
                         "Signature de la personne mise en cause — Signature OPJ/APJ.\n",
                   ),
-                  const TextSpan(
+                  TextSpan(
                     text: "Mention : « Rayer la mention inutile ».",
                     style: TextStyle(fontWeight: FontWeight.w900),
                   ),
@@ -331,10 +331,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -399,7 +399,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -442,7 +442,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -504,7 +504,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -515,10 +515,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -530,13 +529,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -549,13 +547,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),
@@ -601,10 +595,10 @@ class ZoomableAssetImage extends StatelessWidget {
         (isDark ? const Color(0xFF1E1E1E) : const Color(0xFFFFFFFF));
 
     final Color border = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.black.withOpacity(.08);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.black.withValues(alpha: .08);
 
-    final Color shadow = Colors.black.withOpacity(isDark ? .28 : .12);
+    final Color shadow = Colors.black.withValues(alpha: isDark ? .28 : .12);
 
     final tag = heroTag ?? assetPath;
 
@@ -710,8 +704,8 @@ class _ZoomableImageViewer extends StatelessWidget {
     final isDark = Theme.of(context).brightness == Brightness.dark;
 
     final Color scrim = isDark
-        ? Colors.black.withOpacity(.92)
-        : Colors.black.withOpacity(.86);
+        ? Colors.black.withValues(alpha: .92)
+        : Colors.black.withValues(alpha: .86);
 
     Widget image = Image.asset(
       assetPath,
@@ -779,10 +773,10 @@ class _TopBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.95);
+    final Color fg = Colors.white.withValues(alpha: .95);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 12),
@@ -849,10 +843,10 @@ class _HintBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final Color fg = Colors.white.withOpacity(.92);
+    final Color fg = Colors.white.withValues(alpha: .92);
     final Color bg = isDark
-        ? Colors.white.withOpacity(.10)
-        : Colors.white.withOpacity(.12);
+        ? Colors.white.withValues(alpha: .10)
+        : Colors.white.withValues(alpha: .12);
 
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -891,9 +885,9 @@ class _Badge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final Color bg = isDark
-        ? Colors.white.withOpacity(.12)
-        : Colors.black.withOpacity(.06);
-    final Color fg = isDark ? Colors.white : Colors.black.withOpacity(.78);
+        ? Colors.white.withValues(alpha: .12)
+        : Colors.black.withValues(alpha: .06);
+    final Color fg = isDark ? Colors.white : Colors.black.withValues(alpha: .78);
 
     return _Pill(
       bg: bg,
@@ -928,7 +922,7 @@ class _Pill extends StatelessWidget {
       decoration: BoxDecoration(
         color: bg,
         borderRadius: BorderRadius.circular(999),
-        border: Border.all(color: Colors.white.withOpacity(.12), width: 1),
+        border: Border.all(color: Colors.white.withValues(alpha: .12), width: 1),
       ),
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: child,

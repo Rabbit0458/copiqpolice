@@ -109,16 +109,16 @@ class IvressePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L. 234-1 / II et V du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : définit et réprime le fait de conduire un véhicule ou d’accompagner un élève conducteur "
                       "en se trouvant en état d’ivresse manifeste.",
@@ -135,108 +135,108 @@ class IvressePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Une personne visée"),
-              const _SubTitle("1) Un conducteur de véhicule"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Une personne visée"),
+              _SubTitle("1) Un conducteur de véhicule"),
+              _Paragraph(
                 "Sont visés les conducteurs de véhicules à moteur (voitures particulières, poids lourds, véhicules de transport en commun, "
                 "motocyclettes, cyclomoteurs, matériels agricoles et forestiers, engins de travaux publics, engins spéciaux, trolleybus), "
                 "mais aussi les conducteurs des autres véhicules en circulation (cycles, véhicules à traction animale).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) Un accompagnateur d’élève conducteur"),
-              const _Paragraph(
+              _SubTitle("2) Un accompagnateur d’élève conducteur"),
+              _Paragraph(
                 "Sont également concernés les accompagnateurs des élèves conducteurs, qu’ils interviennent dans le cadre "
                 "de l’enseignement de la conduite à titre gracieux, de la conduite accompagnée, ou en qualité de moniteur.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les seuls faits d’avoir pris le volant, mis le contact et enclenché une vitesse suffisent pour caractériser la conduite d’un véhicule ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 23 mars 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Jurisprudence",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’infraction peut être relevée même si le prévenu vient de quitter son véhicule, dès lors qu’il peut être prouvé qu’il l’a conduit sous l’emprise de l’alcool ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 7 mars 1989)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) La preuve de l’alcoolémie (ivresse manifeste)",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Certaines personnes particulièrement sensibles à l’alcool peuvent présenter des signes d’ivresse "
                 "alors qu’elles ont un taux inférieur au seuil légal.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’état d’ivresse s’établit par des constatations matérielles portant sur le comportement de la personne : "
                 "haleine sentant fortement l’alcool, excitation, propos incohérents, titubation, imprécision des réflexes, "
                 "perte de concentration, etc.\n"
                 "Il ne dépend donc pas de la quantité d’alcool dans l’organisme : le taux peut être inférieur au seuil légal.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’auteur présumé doit être soumis aux vérifications destinées à établir l’état alcoolique. "
                       "Il peut y être soumis directement, sans dépistage préalable (",
                 ),
                 TextSpan(
                   text: "article L. 234-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "Cass. crim., 9 octobre 1984",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: ")."),
+                TextSpan(text: ")."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               _NotaBox(
                 title: "Preuve",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les juges du fond peuvent recourir à tout autre moyen de preuve pour se prononcer sur la culpabilité "
                         "conformément à leur intime conviction, même si les vérifications n’aboutissent à aucun résultat positif.",
@@ -254,23 +254,23 @@ class IvressePage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Volonté de conduire après avoir consommé de l’alcool",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "L’élément moral peut résulter du simple fait de consommer de l’alcool alors que le conducteur sait qu’il va prendre le volant ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 19 décembre 1994)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -283,15 +283,15 @@ class IvressePage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Aucune circonstance aggravante spécifique n’est prévue pour ce délit.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Attention",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "La conduite d’un véhicule terrestre à moteur en état d’ivresse manifeste peut aggraver les peines "
                         "en cas d’homicide involontaire ou d’atteintes involontaires : le délit d’ivresse manifeste peut alors constituer "
@@ -300,12 +300,12 @@ class IvressePage extends StatelessWidget {
                   TextSpan(
                     text:
                         "articles 221-6-1, 222-19-1 et 222-20-1 du Code pénal",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: ")."),
+                  TextSpan(text: ")."),
                 ],
               ),
             ],
@@ -319,84 +319,84 @@ class IvressePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Qualification : "),
-                const TextSpan(text: "délit. "),
-                const TextSpan(text: "Peines principales : "),
-                const TextSpan(
+                TextSpan(text: "Qualification : "),
+                TextSpan(text: "délit. "),
+                TextSpan(text: "Peines principales : "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 4 500 € d’amende. — ",
                 ),
                 TextSpan(
                   text: "article L. 234-1 / II du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, conformément à "),
+                TextSpan(text: "Complicité : OUI, conformément à "),
                 TextSpan(
                   text: "l’article 121-6 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " (aide ou assistance ayant facilité la préparation ou la commission de l’infraction).",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Immunité"),
-              const _SubTitle("Diplomates"),
+              _SubTitle("Immunité"),
+              _SubTitle("Diplomates"),
               _Paragraph.rich([
-                const TextSpan(text: "La convention de Vienne ("),
+                TextSpan(text: "La convention de Vienne ("),
                 TextSpan(
                   text: "article 27, décret 71-284 du 29/03/1971",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") prévoit que les diplomates ne peuvent être soumis à aucune forme d’arrestation. "
                       "En conséquence, il convient de ne pas leur faire subir de dépistage ou de vérification de l’alcoolémie.",
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Parlementaires"),
+              _SubTitle("Parlementaires"),
               _Paragraph.rich([
-                const TextSpan(text: "La Constitution de 1958 ("),
+                TextSpan(text: "La Constitution de 1958 ("),
                 TextSpan(
                   text: "article 26",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ") consacre l’inviolabilité des parlementaires : hors le cas du flagrant délit, on ne peut poursuivre "
                       "ou arrêter un parlementaire en cas de crime ou de délit (sauf autorisation).\n"
@@ -441,10 +441,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -509,7 +509,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -552,7 +552,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -614,7 +614,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -646,7 +646,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -659,7 +659,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

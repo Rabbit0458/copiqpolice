@@ -113,28 +113,28 @@ class CooperationUEPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "La coopération repose sur des mécanismes transfrontaliers encadrés, "
                 "notamment dans l’espace Schengen et au sein de l’UE, pour permettre :",
               ),
-              const SizedBox(height: 10),
-              const _BulletPoint(
+              SizedBox(height: 10),
+              _BulletPoint(
                 text:
                     "l’observation transfrontalière (filature au-delà de la frontière, sans interpellation).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "la poursuite transfrontalière (continuer une poursuite dans un État voisin, sous conditions strictes).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "l’échange d’informations via des services dédiés (SCCOPOL, PCC, UCAP/Prüm, N-SIS II…).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Ici, on retient surtout les définitions, les conditions et les canaux (qui contacter / comment faire).",
                   ),
@@ -241,57 +241,57 @@ class CooperationUEPage extends StatelessWidget {
             cardColor: cardServices,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Au sein de la D.N.P.J., la direction des relations internationales coordonne la coopération policière opérationnelle. "
                 "Elle s’appuie sur plusieurs structures.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("1) S.C.C.O.P.O.L."),
-              const _Paragraph(
+              _SubTitle("1) S.C.C.O.P.O.L."),
+              _Paragraph(
                 "La Section Centrale de Coopération Opérationnelle de Police administre des organes de coopération internationale, "
                 "dont notamment :",
               ),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Le B.C.N. France d’Interpol : coopération policière internationale (organisation mondiale).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "L’unité nationale Europol : lutte contre la criminalité organisée et le terrorisme, analyse et regroupements.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("2) P.C.C. — Point de Contact Central"),
-              const _Paragraph(
+              _SubTitle("2) P.C.C. — Point de Contact Central"),
+              _Paragraph(
                 "Il centralise les demandes nationales de coopération au sein de la SCCOPOL. "
                 "Il vérifie la légalité, effectue les premiers recoupements et choisit le canal le plus adapté.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Astuce terrain : le PCC = la « tour de contrôle » qui oriente la demande sur le bon circuit.",
                   ),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("3) U.C.A.P. (Prüm)"),
-              const _Paragraph(
+              _SubTitle("3) U.C.A.P. (Prüm)"),
+              _Paragraph(
                 "L’unité de coordination et d’assistance Prüm traite les échanges d’informations consécutifs à un « hit » "
                 "lors des comparaisons automatisées d’ADN ou d’empreintes digitales entre pays de l’UE.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("4) Office N-SIS II"),
-              const _Paragraph(
+              _SubTitle("4) Office N-SIS II"),
+              _Paragraph(
                 "Il assure le bon fonctionnement et la sécurité du système N-SIS II (interface nationale du SIS).",
               ),
             ],
@@ -383,10 +383,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -451,7 +451,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -494,7 +494,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -556,7 +556,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -567,10 +567,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -582,13 +581,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -601,13 +599,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

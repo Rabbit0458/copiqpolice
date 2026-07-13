@@ -99,7 +99,7 @@ class QuizQuestion {
 /// =============================================================
 final List<QuizQuestion> questionsFlagrantDelitProcedure = [
   // ===================== NIVEAU FACILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Généralités — Flagrance",
     question: "L’enquête de flagrant délit se caractérise principalement par :",
     options: [
@@ -113,7 +113,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — Procureur",
     question:
         "Qui peut accomplir personnellement les actes de police judiciaire en flagrance ?",
@@ -124,7 +124,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autorités — OPJ",
     question:
         "Quels agents sont compétents pour conduire l’enquête de flagrant délit ?",
@@ -139,7 +139,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Durée",
     question: "La durée initiale maximale de l’enquête de flagrance est de :",
     options: ["24 heures", "8 jours", "15 jours"],
@@ -149,7 +149,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Durée",
     question: "L’enquête de flagrance peut être prolongée par :",
     options: [
@@ -163,7 +163,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Généralités",
     question: "Les O.P.J. et A.P.J. sont tenus de recevoir les plaintes :",
     options: [
@@ -177,7 +177,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Formalités",
     question: "Toute plainte donne obligatoirement lieu à :",
     options: [
@@ -191,7 +191,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Droits",
     question: "Parmi les droits suivants, lequel appartient à la victime ?",
     options: [
@@ -205,7 +205,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations",
     question: "Le transport sur les lieux en flagrance doit être effectué :",
     options: [
@@ -219,7 +219,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Horaires",
     question: "Les perquisitions en droit commun doivent commencer entre :",
     options: ["5h et 22h", "6h et 21h", "7h et 20h"],
@@ -228,7 +228,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Interpellation",
     question:
         "Selon l’article 73 C.P.P., qui peut appréhender l’auteur présumé d’un crime ou délit flagrant ?",
@@ -243,7 +243,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Domaine",
     question: "La garde à vue est possible pour :",
     options: [
@@ -257,7 +257,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Durée",
     question: "La durée initiale de la garde à vue est de :",
     options: ["12 heures", "24 heures", "48 heures"],
@@ -266,7 +266,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Nature",
     question: "La fouille intégrale judiciaire est assimilée à :",
     options: [
@@ -280,7 +280,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interprète",
     question: "Un interprète peut être requis lorsque :",
     options: [
@@ -294,7 +294,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Investigation — Prélèvements",
     question: "Les prélèvements externes (empreintes, ADN…) sont :",
     options: [
@@ -308,7 +308,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Véhicules — Fouilles",
     question: "En flagrance, la fouille d’un véhicule peut être réalisée :",
     options: [
@@ -322,7 +322,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Lieux protégés",
     question: "La perquisition dans un cabinet d’avocat doit être faite par :",
     options: [
@@ -336,7 +336,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Silence",
     question: "Le droit de garder le silence :",
     options: [
@@ -353,7 +353,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
 
   // (Je continue immédiatement jusqu'à environ 70 questions dans cette partie)
   // Je poursuis maintenant avec les questions 21 à 70 :
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Victimes",
     question: "Une copie du PV de plainte peut être remise :",
     options: [
@@ -367,7 +367,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures de protection — Victimes",
     question:
         "Certaines victimes peuvent bénéficier d’une audition à huis clos afin :",
@@ -382,7 +382,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Saisie",
     question: "La saisie a pour objectif :",
     options: [
@@ -395,7 +395,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoins",
     question: "Un témoin peut être entendu sous contrainte pendant :",
     options: ["1 heure", "4 heures", "8 heures"],
@@ -404,7 +404,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Statut",
     question:
         "Si un témoin devient suspect au cours de son audition, l’enquêteur doit :",
@@ -418,7 +418,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Investigation — Signalisation",
     question:
         "Le refus injustifié de se soumettre à certaines opérations de signalisation peut constituer :",
@@ -432,7 +432,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures — Rétention",
     question:
         "Lors d’une perquisition, une personne peut être retenue sur place :",
@@ -447,7 +447,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellation — Mandat de recherche",
     question: "Un mandat de recherche peut être décerné pour :",
     options: [
@@ -460,7 +460,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Médecin",
     question: "Toute personne gardée à vue peut demander :",
     options: [
@@ -474,7 +474,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Avocat",
     question:
         "La personne gardée à vue peut bénéficier d’un entretien confidentiel avec son avocat pendant :",
@@ -485,7 +485,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
   ),
 
   // ---------- Nous sommes à ~35 questions. J’en envoie 35 autres dans cette partie. ----------
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Information des droits",
     question: "Les droits en garde à vue doivent être notifiés :",
     options: [
@@ -499,7 +499,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Lieux protégés",
     question: "Les entreprises de presse bénéficient :",
     options: [
@@ -513,7 +513,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Contrôle",
     question: "La garde à vue est placée sous le contrôle :",
     options: [
@@ -526,7 +526,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données",
     question: "Les réquisitions de données de connexion sont possibles pour :",
     options: [
@@ -540,7 +540,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Fin",
     question: "À l’issue de la garde à vue, la personne peut être :",
     options: [
@@ -553,7 +553,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Saisine",
     question: "L’enquête de flagrance débute dès :",
     options: [
@@ -567,7 +567,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Sécurité",
     question: "La palpation de sécurité doit être réalisée :",
     options: [
@@ -581,7 +581,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Actes — Saisies informatiques",
     question: "Les données informatiques saisies doivent être :",
     options: [
@@ -595,7 +595,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellations — Mise à disposition",
     question:
         "Lors d'une interpellation en flagrance, les forces de l’ordre doivent :",
@@ -609,7 +609,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Notions",
     question: "La flagrance implique :",
     options: [
@@ -622,7 +622,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Protection",
     question: "L’évaluation personnalisée des besoins de protection concerne :",
     options: [
@@ -635,7 +635,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Médecins",
     question: "Un médecin réquisitionné doit :",
     options: [
@@ -649,7 +649,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Danger",
     question: "Le retrait d’objets dangereux (lacets, ceintures…) est :",
     options: [
@@ -663,7 +663,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Généralités",
     question: "L’urgence est une caractéristique essentielle de :",
     options: [
@@ -678,7 +678,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
 
   // ===================== PARTIE 2 / 3 =====================
   // (On continue la liste à la suite de la PARTIE 1)
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Conditions",
     question:
         "Pour qu'il y ait flagrance, il faut notamment que l’infraction soit :",
@@ -693,7 +693,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Conditions",
     question: "La flagrance suppose un lien entre le suspect et :",
     options: [
@@ -707,7 +707,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Continuité",
     question:
         "Pour maintenir le cadre de la flagrance pendant les huit jours, il faut :",
@@ -722,7 +722,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Perte du cadre",
     question:
         "Si une longue interruption survient dans l’enquête de flagrance :",
@@ -737,7 +737,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Prolongation",
     question: "La prolongation de la flagrance nécessite :",
     options: [
@@ -750,7 +750,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Prolongation",
     question:
         "La seconde condition pour prolonger l’enquête de flagrance est :",
@@ -765,7 +765,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspects",
     question: "Un suspect ne peut être entendu librement que si :",
     options: [
@@ -779,7 +779,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspects",
     question: "Si une personne refuse de répondre en audition libre :",
     options: [
@@ -792,7 +792,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Tiers prévenu",
     question: "La demande de prévenir un proche doit être satisfaite :",
     options: ["Dans l’heure", "Dans les 3 heures", "À la fin de la GAV"],
@@ -802,7 +802,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Droits — Avocat",
     question: "L’avocat peut consulter certaines pièces de la procédure :",
     options: [
@@ -816,7 +816,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Proportionnalité",
     question: "Même si les conditions légales sont réunies, la GAV :",
     options: [
@@ -829,7 +829,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Médecin — GAV",
     question: "Le médecin peut prescrire :",
     options: [
@@ -842,7 +842,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Consentement",
     question: "Le consentement à la perquisition doit être :",
     options: [
@@ -855,7 +855,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Absence du mis en cause",
     question:
         "Une perquisition peut se faire en l’absence du mis en cause si :",
@@ -870,7 +870,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Cabinet médical",
     question: "Une perquisition dans un cabinet médical doit préserver :",
     options: ["Le matériel informatique", "Le secret médical", "Le mobilier"],
@@ -880,7 +880,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Véhicules",
     question: "La fouille d’un véhicule en flagrance nécessite :",
     options: [
@@ -893,7 +893,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Appellation",
     question: "On parle de flagrant délit lorsque l’infraction :",
     options: [
@@ -906,7 +906,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Enregistrement",
     question: "L’audition d’une victime peut être enregistrée :",
     options: [
@@ -919,7 +919,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Traduction",
     question: "Les droits doivent être traduits :",
     options: [
@@ -932,7 +932,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Comptes bancaires",
     question: "La saisie d’un compte bancaire peut être effectuée :",
     options: [
@@ -945,7 +945,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données téléphoniques",
     question: "Les données de géolocalisation en temps réel nécessitent :",
     options: [
@@ -958,7 +958,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit",
     question: "Une perquisition de nuit en criminalité organisée nécessite :",
     options: [
@@ -971,7 +971,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Témoins — Identité",
     question: "Un témoin doit fournir :",
     options: [
@@ -984,7 +984,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "OPJ — Responsabilités",
     question: "L’O.P.J. doit informer le procureur :",
     options: [
@@ -997,7 +997,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Mineurs",
     question: "Un mineur témoin doit être entendu :",
     options: [
@@ -1010,7 +1010,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Avocats",
     question: "Une perquisition chez un avocat nécessite :",
     options: ["Le bâtonnier", "Le procureur seulement", "Le maire"],
@@ -1019,7 +1019,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Lieux",
     question: "Le gel des lieux permet de :",
     options: [
@@ -1032,7 +1032,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Enregistrements",
     question: "L’enregistrement audiovisuel est obligatoire pour :",
     options: [
@@ -1045,7 +1045,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Qualification",
     question: "La qualification de flagrance appartient :",
     options: ["Au maire", "À l’O.P.J.", "À un expert judiciaire"],
@@ -1055,7 +1055,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures — Inventaires",
     question: "L’inventaire des objets saisis doit être :",
     options: [
@@ -1068,7 +1068,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — PV",
     question: "Un PV doit contenir :",
     options: [
@@ -1085,7 +1085,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
   // (suite directe des PARTIES 1 et 2)
 
   // ===================== NIVEAU INTERMÉDIAIRE / DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Saisine",
     question: "La saisine en flagrance intervient lorsque :",
     options: [
@@ -1098,7 +1098,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Début",
     question:
         "Pour vérifier le respect des heures légales (6h–21h), on retient :",
@@ -1113,7 +1113,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Interruption",
     question:
         "Que se passe-t-il si l’enquête est interrompue durant la flagrance ?",
@@ -1127,7 +1127,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaintes — Droit commun",
     question: "Tout dépôt de plainte doit obligatoirement donner lieu à :",
     options: [
@@ -1140,7 +1140,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plaintes — Récépissé",
     question: "Le récépissé remis après une plainte doit mentionner :",
     options: [
@@ -1154,7 +1154,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Droits",
     question: "Le droit des victimes inclut :",
     options: [
@@ -1168,7 +1168,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Adresses",
     question: "Une victime peut déclarer une adresse de domiciliation :",
     options: [
@@ -1182,7 +1182,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Évaluation",
     question:
         "L’évaluation personnalisée des besoins de protection est réalisée par :",
@@ -1196,7 +1196,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Mesures renforcées",
     question: "Le téléphone grave danger fait partie :",
     options: [
@@ -1209,7 +1209,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Témoins",
     question: "L’OPJ peut retenir des témoins sur place :",
     options: [
@@ -1223,7 +1223,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Prélèvements",
     question: "Un refus injustifié de prélèvements signalétiques :",
     options: [
@@ -1237,7 +1237,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Protection",
     question: "Certaines catégories de lieux (ex : presse) imposent :",
     options: [
@@ -1250,7 +1250,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Nuit",
     question: "La perquisition de nuit peut être autorisée lorsque :",
     options: [
@@ -1263,7 +1263,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Personnes présentes",
     question: "En flagrance, la perquisition doit se faire :",
     options: [
@@ -1276,7 +1276,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Intégrale",
     question: "La fouille intégrale judiciaire est assimilée :",
     options: [
@@ -1289,7 +1289,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Intégrale",
     question: "Une fouille intégrale doit être effectuée :",
     options: [
@@ -1302,7 +1302,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Sécurité",
     question: "La palpation de sécurité peut être réalisée :",
     options: [
@@ -1316,7 +1316,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Vêtements",
     question: "Le retrait de vêtements en GAV :",
     options: [
@@ -1329,7 +1329,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Véhicules",
     question: "La fouille d’un véhicule en flagrance :",
     options: [
@@ -1342,7 +1342,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Données informatiques",
     question: "Les données informatiques peuvent être :",
     options: [
@@ -1355,7 +1355,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellations — Article 73",
     question: "L’article 73 permet à tout citoyen :",
     options: [
@@ -1368,7 +1368,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Interpellations — Menottes",
     question: "Les menottes doivent être utilisées de manière :",
     options: [
@@ -1381,7 +1381,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat — Recherche",
     question: "Le mandat de recherche peut être délivré pour :",
     options: [
@@ -1394,7 +1394,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mandat — Notif",
     question: "Le mandat de recherche doit être :",
     options: [
@@ -1407,7 +1407,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Début",
     question: "Le début de la GAV correspond :",
     options: [
@@ -1420,7 +1420,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Durée",
     question: "La GAV de droit commun peut durer :",
     options: [
@@ -1433,7 +1433,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Silence",
     question: "Le droit au silence s’applique :",
     options: [
@@ -1446,7 +1446,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Avocat",
     question: "La renonciation à l’avocat doit être :",
     options: [
@@ -1459,7 +1459,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "GAV — Contrôle",
     question: "Le contrôle de la GAV appartient :",
     options: ["Au maire", "Au procureur de la République", "Au préfet"],
@@ -1468,7 +1468,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoin",
     question: "La contrainte sur un témoin ne peut excéder :",
     options: ["2h", "4h", "6h"],
@@ -1477,7 +1477,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Témoin",
     question: "Un témoin convoqué doit :",
     options: [
@@ -1490,7 +1490,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspect devenu auteur",
     question: "Si un témoin devient suspect durant l’audition :",
     options: [
@@ -1503,7 +1503,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Criminel",
     question: "L’enregistrement audiovisuel est obligatoire :",
     options: [
@@ -1516,7 +1516,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — 60 CPP",
     question: "Une réquisition à personne qualifiée sert à :",
     options: [
@@ -1529,7 +1529,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Secret professionnel",
     question: "Les personnes astreintes au secret professionnel peuvent :",
     options: [
@@ -1542,7 +1542,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données de connexion",
     question: "Les données de connexion ne peuvent être demandées que pour :",
     options: [
@@ -1556,7 +1556,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interprète",
     question: "L’interprète intervient pour garantir :",
     options: [
@@ -1569,7 +1569,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Examen médical",
     question: "Le certificat médical établi comporte :",
     options: [
@@ -1582,7 +1582,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Autopsie",
     question: "Seul peut pratiquer une autopsie judiciaire :",
     options: [
@@ -1595,7 +1595,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Autopsie",
     question: "Les prélèvements d’autopsie sont :",
     options: [
@@ -1608,7 +1608,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Conditions",
     question: "La géolocalisation en temps réel concerne :",
     options: [
@@ -1621,7 +1621,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Autorisation",
     question: "L’autorisation initiale en flagrance est donnée par :",
     options: [
@@ -1634,7 +1634,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Renouvellement",
     question: "Le renouvellement de la géolocalisation est décidé par :",
     options: ["L’OPJ", "Le JLD", "La victime"],
@@ -1643,7 +1643,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Manœuvrer",
     question: "La réquisition à manœuvrer peut viser :",
     options: ["Un serrurier", "Un avocat", "Un magistrat"],
@@ -1652,7 +1652,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Alcool",
     question: "Les vérifications d’alcoolémie sont obligatoires :",
     options: [
@@ -1665,7 +1665,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Stupéfiants",
     question: "Les prélèvements stupéfiants sont possibles :",
     options: [
@@ -1678,7 +1678,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Policiers requis",
     question: "Un policier requis agit :",
     options: [
@@ -1691,7 +1691,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Banques",
     question:
         "La mainlevée de la saisie d’un compte bancaire est décidée par :",
@@ -1700,7 +1700,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     explanation: "Sur requête du procureur dans les 10 jours.",
     difficulty: "Difficile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Généralités",
     question: "Le dépôt de plainte a pour principal effet :",
     options: [
@@ -1714,7 +1714,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — En ligne",
     question: "La plainte en ligne permet notamment :",
     options: [
@@ -1729,7 +1729,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Plainte — Visio-plainte",
     question: "La « visio-plainte » a pour but principal :",
     options: [
@@ -1743,7 +1743,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Violences conjugales",
     question: "Pour les violences conjugales, les services de police :",
     options: [
@@ -1757,7 +1757,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Droits",
     question: "La victime peut se constituer :",
     options: ["Partie civile", "Témoin assisté", "Mis en examen"],
@@ -1767,7 +1767,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Associations",
     question: "Les associations d’aide aux victimes peuvent :",
     options: [
@@ -1781,7 +1781,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Traces",
     question: "Lors des premières constatations, la priorité est :",
     options: [
@@ -1795,7 +1795,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Constatations — Scellés",
     question: "Un objet saisi et placé sous scellés doit :",
     options: [
@@ -1809,7 +1809,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Dépendances",
     question: "Les dépendances d’un domicile (cave, garage) :",
     options: [
@@ -1823,7 +1823,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Lieux diplomatiques",
     question: "Les locaux diplomatiques :",
     options: [
@@ -1838,7 +1838,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Mineurs",
     question: "La garde à vue d’un mineur :",
     options: [
@@ -1853,7 +1853,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Informer des droits",
     question: "L’information des droits en garde à vue doit être :",
     options: [
@@ -1867,7 +1867,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Interprète",
     question: "Si la personne gardée à vue ne comprend pas le français :",
     options: [
@@ -1881,7 +1881,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Médecin",
     question: "Le médecin en garde à vue examine la personne :",
     options: [
@@ -1895,7 +1895,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Avocat",
     question: "Lors d’une audition en GAV, l’avocat :",
     options: [
@@ -1909,7 +1909,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Tiers de confiance",
     question: "Lors d’une audition, une victime peut être :",
     options: [
@@ -1922,7 +1922,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Victimes — Lieux adaptés",
     question: "Pour certaines victimes, l’audition peut avoir lieu :",
     options: [
@@ -1937,7 +1937,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Interprète",
     question: "L’interprète requis doit :",
     options: [
@@ -1950,7 +1950,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Refus de déférer",
     question:
         "Le refus sans motif légitime de répondre à une réquisition régulière :",
@@ -1964,7 +1964,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Personne qualifiée",
     question: "Une « personne qualifiée » peut être :",
     options: ["Un expert en identification ADN", "La victime", "Le maire"],
@@ -1975,7 +1975,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
   ),
 
   // ===================== NIVEAU INTERMÉDIAIRE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Cadre juridique",
     question: "Lorsque le caractère de flagrance est perdu, l’OPJ doit :",
     options: [
@@ -1989,7 +1989,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Prolongation",
     question:
         "La prolongation de l’enquête de flagrance est justifiée lorsque :",
@@ -2005,7 +2005,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Scénario",
     question:
         "De nuit, en matière de trafic de stupéfiants relevant de la criminalité organisée, l’OPJ veut perquisitionner un domicile :",
@@ -2021,7 +2021,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Cabinet d’avocat",
     question:
         "Lors d’une perquisition dans un cabinet d’avocat, si le bâtonnier n’est pas présent :",
@@ -2036,7 +2036,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Fouilles — Investigations corporelles",
     question:
         "Les investigations corporelles internes (recherche de corps étranger) doivent être effectuées :",
@@ -2050,7 +2050,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures de sécurité — GAV",
     question:
         "Les mesures de sécurité (retrait d’objets, palpation de sécurité) :",
@@ -2065,7 +2065,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Prolongation",
     question:
         "La prolongation de la garde à vue de 24 heures supplémentaires est possible si :",
@@ -2081,7 +2081,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Nullités",
     question: "Un défaut de notification des droits en GAV peut :",
     options: [
@@ -2095,7 +2095,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Suspect libre",
     question: "Le suspect libre doit être informé, avant toute audition :",
     options: [
@@ -2110,7 +2110,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat",
     question:
         "En cas de difficulté à joindre l’avocat choisi par la personne gardée à vue :",
@@ -2125,7 +2125,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Auditions — Enregistrement",
     question:
         "En cas d’impossibilité technique d’enregistrement audiovisuel obligatoire :",
@@ -2141,7 +2141,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données informatiques",
     question:
         "Une réquisition informatique (art. 60-2 et 60-3 CPP) peut viser :",
@@ -2156,7 +2156,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données de connexion",
     question: "Les réquisitions de données de connexion doivent respecter :",
     options: [
@@ -2170,7 +2170,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Intrusion dans un domicile",
     question:
         "L’installation d’une balise de géolocalisation dans un domicile nécessite :",
@@ -2185,7 +2185,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Intermédiaire",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mesures — Recours",
     question:
         "Une personne perquisitionnée peut saisir le JLD pour contester la régularité de l’acte dans un délai :",
@@ -2197,7 +2197,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
   ),
 
   // ===================== NIVEAU DIFFICILE =====================
-  QuizQuestion(
+  const QuizQuestion(
     category: "Flagrance — Jurisprudence",
     question:
         "Selon la jurisprudence, la validité de la flagrance est appréciée en fonction :",
@@ -2212,7 +2212,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Jurisprudence",
     question:
         "Une condamnation fondée exclusivement sur des déclarations obtenues en méconnaissance du droit au silence :",
@@ -2227,7 +2227,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Avocat (décalage)",
     question: "Le procureur peut décider de différer la présence de l’avocat :",
     options: [
@@ -2241,7 +2241,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Réquisitions — Données de connexion (CJUE/CE)",
     question:
         "En pratique, la délivrance de réquisitions portant sur des données de connexion doit intégrer :",
@@ -2257,7 +2257,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Géolocalisation — Gravité",
     question: "Le recours à la géolocalisation est regardé comme :",
     options: [
@@ -2271,7 +2271,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Presse",
     question:
         "En matière de presse et de secret des sources, l’OPJ ou le magistrat doivent :",
@@ -2287,7 +2287,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Perquisitions — Défense nationale",
     question:
         "Lorsque des lieux sont couverts par le secret de la défense nationale, les éléments classifiés saisis :",
@@ -2303,7 +2303,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Autopsie — Information des proches",
     question:
         "En matière d’autopsie judiciaire, l’information de la famille du défunt :",
@@ -2318,7 +2318,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Saisies — Confiscation",
     question: "La saisie spéciale (ex : comptes bancaires) a pour finalité :",
     options: [
@@ -2332,7 +2332,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Garde à vue — Traçabilité",
     question: "Le procès-verbal de fin de garde à vue doit récapituler :",
     options: [
@@ -2352,7 +2352,7 @@ final List<QuizQuestion> questionsFlagrantDelitProcedure = [
 // PAGE
 // ============================================================================
 class QuizFlagrantDelitPage extends StatefulWidget {
-  static const String routeName = '/gpx/generalites/quiz/flagrant_delit';
+  static const String routeName = '/gpx/dps/generalites/quiz/flagrant_delit';
   final String uid;
   final String email;
 
@@ -2676,7 +2676,7 @@ class _QuizFlagrantDelitPageState extends State<QuizFlagrantDelitPage>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -2865,7 +2865,7 @@ class _QuizFlagrantDelitPageState extends State<QuizFlagrantDelitPage>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -3017,7 +3017,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -3543,10 +3542,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -3916,7 +3916,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -3957,9 +3957,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

@@ -1,3 +1,4 @@
+// ignore_for_file: file_names
 // ignore_for_file: use_build_context_synchronously
 
 // ============================================================================
@@ -99,7 +100,7 @@ class QuizQuestion {
 /// =============================================================
 
 final List<QuizQuestion> questionsStupefiants = [
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Conventions internationales",
     question:
         "La lutte internationale contre les stupéfiants repose notamment sur :",
@@ -113,7 +114,7 @@ final List<QuizQuestion> questionsStupefiants = [
         "Conventions de 1961 (stupéfiants), 1971 (psychotropes) et 1988 (trafic).",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Cession ou offre",
     question:
         "La cession ou l’offre illicite de stupéfiants en vue de la consommation personnelle est réprimée par :",
@@ -128,7 +129,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Élément matériel",
     question: "L’offre de stupéfiants correspond :",
     options: [
@@ -141,7 +142,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Élément matériel",
     question: "La cession de stupéfiants signifie que :",
     options: [
@@ -154,7 +155,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Nature de la transaction",
     question: "Le caractère onéreux ou gratuit de la cession est :",
     options: [
@@ -168,7 +169,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Auteur",
     question: "L’auteur de la cession peut être :",
     options: [
@@ -181,7 +182,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Élément moral",
     question: "La cession ou l’offre illicite de stupéfiants suppose :",
     options: [
@@ -194,7 +195,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Circonstance aggravante",
     question: "La cession ou l’offre est aggravée lorsqu’elle est commise :",
     options: [
@@ -207,7 +208,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Peines",
     question: "La cession ou l’offre simple de stupéfiants est punie de :",
     options: [
@@ -220,7 +221,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Tentative",
     question:
         "La tentative de cession ou d’offre illicite de stupéfiants est :",
@@ -230,7 +231,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Complicité",
     question:
         "La complicité de cession ou d’offre illicite de stupéfiants est :",
@@ -244,7 +245,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Réduction de peine",
     question: "Une réduction de peine est possible si l’auteur :",
     options: [
@@ -258,7 +259,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Exemption de peine",
     question: "Une exemption de peine est possible lorsque l’auteur :",
     options: [
@@ -271,7 +272,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Transport",
     question: "Le transport illicite de stupéfiants correspond :",
     options: [
@@ -283,7 +284,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article 222-37 al.1 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Détention et usage personnel",
     question:
         "Selon la jurisprudence (Cass. crim., 14 mars 2017), la détention de 3 g de cannabis pour consommation personnelle relève plutôt :",
@@ -298,7 +299,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Détention sans port sur soi",
     question:
         "La détention de stupéfiants peut être retenue même si les produits ne sont pas sur la personne, par exemple :",
@@ -313,7 +314,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Cumul transport/détention",
     question:
         "Être trouvé porteur de stupéfiants sur la voie publique caractérise :",
@@ -328,7 +329,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Emploi vs usage",
     question:
         "L’« emploi » de stupéfiants se distingue de l’usage car il vise :",
@@ -344,7 +345,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Importation (définition)",
     question:
         "L’importation illicite de stupéfiants est constituée dès lors que :",
@@ -360,7 +361,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Importation (destination)",
     question:
         "Si un prévenu affirme que la drogue importée était destinée à un autre pays, cela :",
@@ -376,7 +377,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Texte applicable import/export",
     question:
         "L’importation ou l’exportation illicites de stupéfiants sont réprimées par :",
@@ -391,7 +392,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Bande organisée (import/export)",
     question:
         "Lorsque l’importation/exportation est commise en bande organisée, la qualification devient :",
@@ -402,7 +403,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Direction/organisation d’un trafic",
     question:
         "Diriger ou organiser un groupement ayant pour objet un trafic de stupéfiants est réprimé par :",
@@ -417,7 +418,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — 222-34 vs association de malfaiteurs",
     question:
         "La différence principale entre 222-34 CP et l’association de malfaiteurs est que 222-34 suppose :",
@@ -432,7 +433,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Notion de groupement (222-34)",
     question: "Au sens de l’article 222-34 CP, un « groupement » désigne :",
     options: [
@@ -447,7 +448,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Membre simple du groupement",
     question:
         "Le seul fait d’être membre d’un groupement de trafic est, au titre de 222-34 CP :",
@@ -462,7 +463,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Peine (222-34)",
     question:
         "La direction ou l’organisation d’un trafic de stupéfiants (222-34 CP) est punie de :",
@@ -476,7 +477,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Production (définition)",
     question: "La « production » de stupéfiants correspond notamment :",
     options: [
@@ -491,7 +492,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Fabrication (définition)",
     question: "La « fabrication » de stupéfiants correspond :",
     options: [
@@ -506,7 +507,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Texte production/fabrication",
     question:
         "La production ou la fabrication illicites de stupéfiants sont réprimées par :",
@@ -520,7 +521,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Aggravation production/fabrication",
     question:
         "La production ou fabrication est aggravée notamment lorsque les faits sont commis :",
@@ -534,7 +535,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Définition légale des stupéfiants",
     question: "Au sens légal, constituent des stupéfiants :",
     options: [
@@ -549,7 +550,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Classement (autorité)",
     question: "Une substance est classée comme stupéfiant par décision :",
     options: [
@@ -562,7 +563,7 @@ final List<QuizQuestion> questionsStupefiants = [
         "Le CSP prévoit le classement par décision du directeur général de l’Agence nationale de sécurité du médicament (ANSM).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Liste des substances",
     question:
         "L’infraction liée aux stupéfiants ne peut s’appliquer qu’à une substance :",
@@ -577,7 +578,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Obligation de précision (jurisprudence)",
     question:
         "Selon la jurisprudence (Cass. crim., 16 sept. 1985), un juge ne peut pas :",
@@ -592,7 +593,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Définition",
     question: "L’usage illicite de stupéfiants s’entend comme :",
     options: [
@@ -607,7 +608,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Éléments pouvant être assimilés à l’usage",
     question:
         "Sont aussi considérés comme « usage » quand c’est destiné à l’usage exclusif de la personne :",
@@ -622,7 +623,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Texte applicable",
     question: "L’usage illicite de stupéfiants est réprimé par :",
     options: [
@@ -635,7 +636,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Élément moral",
     question: "L’élément moral de l’usage illicite suppose :",
     options: [
@@ -649,7 +650,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Circonstance aggravante",
     question:
         "Les peines d’usage illicite sont aggravées notamment si l’infraction est commise :",
@@ -665,7 +666,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Peines (forme simple)",
     question:
         "Les peines encourues pour l’usage illicite (forme simple) sont :",
@@ -679,7 +680,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Peines (forme aggravée)",
     question:
         "En cas de circonstance aggravante prévue à L.3421-1 al.2 CSP, les peines sont portées à :",
@@ -693,7 +694,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Tentative",
     question: "La tentative d’usage illicite de stupéfiants est :",
     options: [
@@ -707,7 +708,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Amende forfaitaire délictuelle (principe)",
     question: "L’usage illicite de stupéfiants peut faire l’objet :",
     options: [
@@ -721,7 +722,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — AFD (exclusion)",
     question:
         "L’amende forfaitaire délictuelle est exclue lorsque l’usage est commis :",
@@ -737,7 +738,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Dispositif thérapeutique (principe)",
     question:
         "Dans une procédure pour usage illicite, un traitement médical peut être :",
@@ -753,7 +754,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Définition",
     question:
         "La cession ou l’offre illicites de stupéfiants « en vue de la consommation personnelle » vise principalement :",
@@ -768,7 +769,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Offre vs cession",
     question: "Dans ce cadre, l’« offre » correspond :",
     options: [
@@ -783,7 +784,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Caractère onéreux",
     question:
         "Pour l’article 222-39 CP, le caractère onéreux (payant) de la transaction :",
@@ -798,7 +799,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Circonstances aggravantes",
     question:
         "L’infraction de 222-39 al.2 CP est aggravée notamment lorsque l’offre/cession a lieu :",
@@ -814,7 +815,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Peines (forme simple)",
     question: "Les peines encourues pour 222-39 al.1 CP (forme simple) sont :",
     options: [
@@ -827,7 +828,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Peines (forme aggravée)",
     question:
         "Les peines encourues pour 222-39 al.2 CP (forme aggravée) sont :",
@@ -841,7 +842,7 @@ final List<QuizQuestion> questionsStupefiants = [
         "222-39 al.2 CP : aggravation à 10 ans, 75 000 € (période de sûreté).",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Définition",
     question:
         "Faciliter l’usage illicite de stupéfiants consiste notamment à :",
@@ -856,7 +857,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Nature de l’infraction",
     question: "La facilitation de l’usage illicite est juridiquement :",
     options: [
@@ -870,7 +871,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Moyens",
     question: "Les moyens de facilitation de l’usage sont :",
     options: [
@@ -883,7 +884,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Jurisprudence",
     question:
         "Permettre sciemment l’usage de stupéfiants dans un établissement ouvert au public constitue :",
@@ -898,7 +899,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Ordonnances",
     question:
         "Délivrer sciemment des stupéfiants sur ordonnance fictive constitue :",
@@ -912,7 +913,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Auteur",
     question:
         "Se faire délivrer des stupéfiants via ordonnance fictive vise pénalement :",
@@ -926,7 +927,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Élément moral",
     question: "L’élément moral de la facilitation suppose :",
     options: [
@@ -939,7 +940,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Circonstance aggravante",
     question:
         "La facilitation est aggravée lorsqu’un majeur agit avec l’aide :",
@@ -949,7 +950,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Qualification aggravée",
     question: "La facilitation avec l’aide d’un mineur devient :",
     options: ["Un crime", "Une contravention", "Une infraction administrative"],
@@ -958,7 +959,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Facilitation de l’usage — Peines simples",
     question: "La facilitation simple est punie de :",
     options: [
@@ -971,7 +972,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Définition",
     question: "La provocation à l’usage de stupéfiants est punissable :",
     options: [
@@ -984,7 +985,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Formes",
     question: "La provocation peut prendre la forme :",
     options: [
@@ -997,7 +998,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Produits factices",
     question:
         "Vendre des produits non toxiques présentés comme stupéfiants constitue :",
@@ -1011,7 +1012,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Élément moral",
     question: "La provocation suppose :",
     options: [
@@ -1024,7 +1025,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Circonstance aggravante",
     question: "La provocation est aggravée lorsqu’elle est commise :",
     options: [
@@ -1037,7 +1038,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Presse",
     question: "Lorsque la provocation est commise par voie de presse :",
     options: [
@@ -1050,7 +1051,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Provocation — Peines simples",
     question: "La provocation simple est punie de :",
     options: [
@@ -1063,7 +1064,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Blanchiment — Définition",
     question: "Le blanchiment du produit du trafic consiste à :",
     options: [
@@ -1076,7 +1077,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Blanchiment — Auteur",
     question: "Le blanchiment peut être retenu :",
     options: [
@@ -1089,7 +1090,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Blanchiment — Élément matériel",
     question:
         "Utiliser de fausses factures pour dissimuler des fonds constitue :",
@@ -1103,7 +1104,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Blanchiment — Circonstance aggravante",
     question: "Le blanchiment est aggravé lorsque les fonds proviennent :",
     options: [
@@ -1116,7 +1117,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Blanchiment — Peines simples",
     question: "Le blanchiment simple est puni de :",
     options: [
@@ -1129,7 +1130,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Blanchiment — Tentative",
     question: "La tentative de blanchiment est :",
     options: ["Punissable", "Non punissable", "Contraventionnelle"],
@@ -1138,7 +1139,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Complicité",
     question: "La complicité en matière de stupéfiants suppose :",
     options: [
@@ -1151,7 +1152,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Réduction de peine",
     question: "La réduction de peine est possible si l’auteur :",
     options: [
@@ -1164,7 +1165,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Exemption",
     question: "L’exemption de peine est possible si l’auteur :",
     options: [
@@ -1177,7 +1178,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Classification",
     question: "La majorité des infractions de trafic de stupéfiants relèvent :",
     options: [
@@ -1190,7 +1191,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Procédure",
     question: "Les infractions de trafic peuvent relever :",
     options: [
@@ -1202,7 +1203,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Régime spécifique de la criminalité organisée.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport de stupéfiants — Définition",
     question: "Le transport de stupéfiants est constitué lorsque :",
     options: [
@@ -1217,7 +1218,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport de stupéfiants — Cumul",
     question:
         "Le fait d’être trouvé porteur de stupéfiants sur la voie publique permet :",
@@ -1231,7 +1232,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention de stupéfiants — Notion",
     question: "La détention de stupéfiants suppose :",
     options: [
@@ -1244,7 +1245,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention de stupéfiants — Cache",
     question:
         "Des stupéfiants cachés à proximité peuvent caractériser une détention si :",
@@ -1259,7 +1260,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention — Usage personnel",
     question:
         "La détention de stupéfiants pour usage personnel est en principe :",
@@ -1274,7 +1275,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Offre de stupéfiants — Définition",
     question: "L’offre de stupéfiants correspond :",
     options: [
@@ -1288,7 +1289,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession de stupéfiants — Définition",
     question: "La cession de stupéfiants est caractérisée lorsque :",
     options: [
@@ -1301,7 +1302,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession — Initiative",
     question: "Pour la cession de stupéfiants, il importe peu que :",
     options: [
@@ -1314,7 +1315,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession — Usage personnel",
     question: "La cession en vue de la consommation personnelle vise surtout :",
     options: [
@@ -1327,7 +1328,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Acquisition de stupéfiants — Définition",
     question: "L’acquisition de stupéfiants correspond :",
     options: [
@@ -1340,7 +1341,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Emploi de stupéfiants — Distinction",
     question: "L’emploi de stupéfiants se distingue de l’usage car il vise :",
     options: [
@@ -1353,7 +1354,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — Trafic",
     question: "Les infractions de trafic exigent :",
     options: [
@@ -1367,7 +1368,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineur — Rôle",
     question: "Le recours à un mineur dans un trafic constitue :",
     options: [
@@ -1380,7 +1381,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineur — Participation",
     question:
         "L’aide d’un mineur peut être caractérisée même si sa participation est :",
@@ -1391,7 +1392,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tentative — Trafic",
     question: "En matière de trafic de stupéfiants, la tentative est :",
     options: ["Punissable", "Non punissable", "Toujours contraventionnelle"],
@@ -1400,7 +1401,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Complicité — Principe",
     question: "La complicité en matière de stupéfiants est punissable :",
     options: [
@@ -1413,7 +1414,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Criminalité organisée",
     question: "Les infractions de trafic de stupéfiants relèvent :",
     options: [
@@ -1426,7 +1427,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Conséquence",
     question: "Le rattachement à la criminalité organisée permet notamment :",
     options: [
@@ -1439,7 +1440,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes morales — Principe",
     question:
         "Les personnes morales peuvent être pénalement responsables en matière de stupéfiants :",
@@ -1449,7 +1450,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Personnes morales — Sanctions",
     question: "Les peines applicables aux personnes morales sont prévues par :",
     options: [
@@ -1462,7 +1463,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Classement",
     question: "La liste des stupéfiants est dite :",
     options: ["Évolutive", "Définitive", "Jurisprudentielle"],
@@ -1471,7 +1472,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Fondement",
     question: "Le classement des stupéfiants relève du :",
     options: ["Code de la santé publique", "Code du travail", "Code civil"],
@@ -1480,7 +1481,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Preuve — Substance",
     question: "Pour caractériser une infraction, la substance doit être :",
     options: [
@@ -1493,7 +1494,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Conscience",
     question: "Il n’y a pas usage illicite si la personne consomme :",
     options: ["À son insu", "En réunion", "À domicile"],
@@ -1502,7 +1503,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Traitement médical",
     question: "La consommation de stupéfiants dans un cadre médical :",
     options: [
@@ -1515,7 +1516,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Caractère public/privé",
     question: "Le caractère public ou privé de l’usage :",
     options: [
@@ -1528,7 +1529,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Fréquence",
     question: "L’usage illicite peut être sanctionné même s’il est :",
     options: ["Occasionnel", "Unique", "Collectif"],
@@ -1537,7 +1538,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Qualification",
     question: "L’usage illicite est juridiquement :",
     options: ["Un délit", "Une contravention", "Un crime"],
@@ -1546,7 +1547,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cession/offre à usage personnel — Tentative",
     question:
         "La tentative de l’infraction de cession/offre à usage personnel (222-39) est :",
@@ -1561,7 +1562,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic de stupéfiants — Détention",
     question: "La détention illicite de stupéfiants suppose :",
     options: [
@@ -1575,7 +1576,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Droit français",
     question:
         "La France a transposé les conventions internationales sur les stupéfiants :",
@@ -1588,7 +1589,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Trafic : code pénal / Usage : code de la santé publique.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Logique législative",
     question: "Le dispositif français distingue principalement :",
     options: [
@@ -1600,7 +1601,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Principe fondamental de la politique pénale française.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définition légale — Stupéfiants",
     question: "Constituent des stupéfiants au sens pénal :",
     options: [
@@ -1613,7 +1614,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article 222-41 CP et article L.5132-7 CSP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définition légale — Classement",
     question: "Le classement d’une substance comme stupéfiant relève :",
     options: [
@@ -1625,7 +1626,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article L.5132-7 du code de la santé publique.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Définition légale — Listes",
     question: "La liste des substances classées comme stupéfiants est :",
     options: [
@@ -1637,7 +1638,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Arrêté du 22 février 1990 et mises à jour ultérieures.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Jurisprudence — Qualification",
     question:
         "Un juge peut-il viser de manière générale des substances stupéfiantes sans les préciser ?",
@@ -1647,7 +1648,7 @@ final List<QuizQuestion> questionsStupefiants = [
         "Cass. crim., 16 septembre 1985 : la substance doit être précisément désignée.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Définition",
     question: "L’usage illicite de stupéfiants correspond :",
     options: [
@@ -1659,7 +1660,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article L.3421-1 CSP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Mode",
     question: "Le mode d’administration du stupéfiant :",
     options: [
@@ -1671,7 +1672,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Usage = absorption, quel que soit le mode.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Assimilation",
     question: "Peuvent être assimilés à l’usage illicite :",
     options: [
@@ -1684,7 +1685,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Jurisprudence constante.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Élément moral",
     question: "L’infraction d’usage illicite suppose :",
     options: [
@@ -1697,7 +1698,7 @@ final List<QuizQuestion> questionsStupefiants = [
         "Absence d’infraction si consommation à l’insu de la personne.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Peines",
     question: "L’usage illicite de stupéfiants est puni de :",
     options: [
@@ -1709,7 +1710,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article L.3421-1 al.1 CSP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Circonstance aggravante",
     question: "L’usage illicite est aggravé lorsqu’il est commis :",
     options: [
@@ -1722,7 +1723,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article L.3421-1 al.2 CSP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Amende forfaitaire",
     question: "L’usage illicite de stupéfiants peut faire l’objet :",
     options: [
@@ -1734,7 +1735,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Articles 495-17 à 495-25 CPP et L.3421-1 CSP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage illicite — Exclusion AFD",
     question:
         "L’amende forfaitaire délictuelle est exclue lorsque l’usage est commis :",
@@ -1747,7 +1748,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article L.3421-1 al.2 CSP.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Importation de stupéfiants — Élément matériel",
     question: "L’importation illicite de stupéfiants est constituée lorsque :",
     options: [
@@ -1762,7 +1763,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Importation — Jurisprudence",
     question: "Le fait que la drogue soit destinée à un autre pays :",
     options: [
@@ -1776,7 +1777,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Exportation de stupéfiants — Rareté",
     question: "L’exportation illicite de stupéfiants est :",
     options: [
@@ -1790,7 +1791,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Import/export — Texte applicable",
     question: "L’importation ou l’exportation illicites sont réprimées par :",
     options: [
@@ -1804,7 +1805,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Import/export — Bande organisée",
     question:
         "Lorsque l’importation est commise en bande organisée, l’infraction devient :",
@@ -1814,7 +1815,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Grossiste vs détaillant",
     question: "L’article 222-37 CP vise principalement :",
     options: [
@@ -1827,7 +1828,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Indices",
     question: "La démonstration d’un trafic repose souvent sur :",
     options: [
@@ -1841,7 +1842,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Matériel caractéristique",
     question: "La découverte d’une balance de précision peut constituer :",
     options: [
@@ -1854,7 +1855,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Transport — Autorisation",
     question: "Le transport de stupéfiants est licite uniquement en cas :",
     options: [
@@ -1867,7 +1868,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Détention — Distance",
     question:
         "Des stupéfiants situés à plusieurs mètres peuvent caractériser une détention si :",
@@ -1881,7 +1882,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Usage exclusif",
     question:
         "Lorsque les stupéfiants sont destinés à l’usage exclusif de la personne :",
@@ -1895,7 +1896,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Emploi illicite",
     question: "L’emploi illicite de stupéfiants vise notamment :",
     options: [
@@ -1908,7 +1909,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Élément moral — Connaissance",
     question: "L’auteur d’une infraction de trafic doit agir :",
     options: ["En connaissance de cause", "Par négligence", "Par imprudence"],
@@ -1917,7 +1918,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Trafic — Profit",
     question: "L’intention coupable peut être déduite :",
     options: [
@@ -1930,7 +1931,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Mineur — Rôle aggravant",
     question:
         "L’intégration d’un mineur dans un trafic est caractérisée même si :",
@@ -1944,7 +1945,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Tentative — Crime",
     question: "En matière de crime de trafic, la tentative est :",
     options: [
@@ -1957,7 +1958,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Complicité — Conditions",
     question: "La complicité suppose :",
     options: [
@@ -1970,7 +1971,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Complicité — Formes",
     question: "La complicité peut résulter :",
     options: [
@@ -1983,7 +1984,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Procédure — Conséquences",
     question: "Le rattachement à la criminalité organisée permet :",
     options: [
@@ -1996,7 +1997,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Définition légale",
     question: "La définition légale des stupéfiants est :",
     options: [
@@ -2009,7 +2010,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Stupéfiants — Effets",
     question: "Le fait qu’une substance ait des effets psychotropes :",
     options: [
@@ -2022,7 +2023,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Quantité",
     question: "La quantité de stupéfiants détenue pour l’usage :",
     options: [
@@ -2035,7 +2036,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Culture",
     question: "La culture de cannabis pour consommation personnelle :",
     options: [
@@ -2048,7 +2049,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Lieu",
     question: "L’usage de stupéfiants est réprimé même s’il a lieu :",
     options: [
@@ -2061,7 +2062,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Qualification pénale",
     question: "L’usage illicite de stupéfiants est :",
     options: ["Un délit", "Une contravention", "Un crime"],
@@ -2070,7 +2071,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Usage — Amende forfaitaire",
     question: "L’amende forfaitaire délictuelle pour usage est :",
     options: ["Possible sous conditions", "Automatique", "Interdite"],
@@ -2078,7 +2079,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Certaines situations en sont exclues.",
     difficulty: "Moyenne",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Contrôle routier",
     question:
         "Lors d’un contrôle, un conducteur reconnaît avoir fumé un joint la veille. Aucun stupéfiant n’est trouvé sur lui. Quelle infraction peut être recherchée ?",
@@ -2093,7 +2094,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Usage",
     question:
         "L’usage de stupéfiants est constitué même si la consommation est :",
@@ -2103,7 +2104,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Cache",
     question:
         "Un individu est interpellé. Des stupéfiants sont découverts dans une cache connue de lui à 5 mètres. Qualification possible ?",
@@ -2117,7 +2118,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Détention",
     question: "La détention de stupéfiants suppose nécessairement :",
     options: [
@@ -2130,7 +2131,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Petit dealer",
     question:
         "Un usager revend une partie de sa drogue pour financer sa consommation. Qualification principale ?",
@@ -2141,7 +2142,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Offre",
     question: "L’offre de stupéfiants est constituée lorsque :",
     options: [
@@ -2154,7 +2155,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Soirée privée",
     question:
         "Un organisateur met son appartement à disposition pour consommer de la cocaïne. Qualification ?",
@@ -2164,7 +2165,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Facilitation",
     question: "La facilitation de l’usage est :",
     options: [
@@ -2177,7 +2178,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mineur guetteur",
     question:
         "Un majeur utilise un mineur comme guetteur dans un trafic. Conséquence ?",
@@ -2191,7 +2192,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Mineur",
     question: "L’aide d’un mineur est caractérisée même si le mineur est :",
     options: ["Contraint", "Rémunéré", "Ponctuel"],
@@ -2200,7 +2201,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Importation",
     question:
         "Un individu est intercepté avec de la résine venant du Maroc mais affirme que c’était pour les Pays-Bas. Qualification ?",
@@ -2210,7 +2211,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Importation",
     question: "L’importation est constituée dès lors que :",
     options: [
@@ -2223,7 +2224,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Balance",
     question:
         "Lors d’une perquisition, une balance de précision est trouvée. Cela constitue :",
@@ -2237,7 +2238,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Preuve",
     question: "Un trafic peut être établi sans aveux grâce :",
     options: [
@@ -2250,7 +2251,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Usage à l’insu",
     question: "Une personne consomme un stupéfiant à son insu. Qualification ?",
     options: ["Aucune infraction", "Usage illicite", "Détention"],
@@ -2259,7 +2260,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Élément moral",
     question: "Les infractions de trafic supposent :",
     options: [
@@ -2272,7 +2273,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Culture personnelle",
     question:
         "Un individu cultive quelques plants pour lui-même. Qualification possible ?",
@@ -2282,7 +2283,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Tentative",
     question: "La tentative en matière de trafic est :",
     options: ["Punissable", "Non prévue", "Contraventionnelle"],
@@ -2291,7 +2292,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Blanchiment",
     question:
         "Un proche reçoit de l’argent du trafic et le place sur son compte. Qualification ?",
@@ -2301,7 +2302,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Blanchiment",
     question: "Le blanchiment peut être retenu contre :",
     options: [
@@ -2314,7 +2315,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Difficile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Provocation",
     question: "Vendre des T-shirts faisant l’apologie du cannabis constitue :",
     options: [
@@ -2327,7 +2328,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Provocation",
     question: "La provocation est punissable même si :",
     options: [
@@ -2340,7 +2341,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Presse",
     question:
         "Un article de presse valorise l’usage du cannabis. Régime applicable ?",
@@ -2354,7 +2355,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Peines",
     question: "L’usage illicite simple est puni de :",
     options: [
@@ -2367,7 +2368,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Fonctionnaire",
     question:
         "Un policier consomme des stupéfiants en service. Conséquence pénale ?",
@@ -2377,7 +2378,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — AFD",
     question:
         "L’amende forfaitaire délictuelle est exclue lorsque l’usage est commis :",
@@ -2391,7 +2392,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — OPJ",
     question:
         "Pourquoi les infractions de trafic relèvent-elles souvent de la criminalité organisée ?",
@@ -2405,7 +2406,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Personnes morales",
     question:
         "Les personnes morales peuvent être pénalement responsables en matière de stupéfiants :",
@@ -2414,7 +2415,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Article 222-42 CP.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Contrôle piéton",
     question:
         "Un individu est contrôlé, il jette un sachet de cannabis à l’arrivée des policiers. Qualification immédiate ?",
@@ -2429,7 +2430,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Détention",
     question: "La détention de stupéfiants suppose :",
     options: [
@@ -2442,7 +2443,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Véhicule",
     question:
         "Des stupéfiants sont découverts sous le siège conducteur. Le conducteur nie. Qualification possible ?",
@@ -2453,7 +2454,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Usage",
     question: "L’usage de stupéfiants peut être constitué même s’il a lieu :",
     options: ["En privé", "En public", "Les deux"],
@@ -2462,7 +2463,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Joint collectif",
     question:
         "Plusieurs personnes fument le même joint. Qualifications possibles ?",
@@ -2472,7 +2473,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Transport",
     question: "Le transport de stupéfiants est constitué lorsque :",
     options: [
@@ -2485,7 +2486,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Gare",
     question:
         "Un individu transporte de la cocaïne dans son sac sans intention de revente. Qualification ?",
@@ -2495,7 +2496,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Emploi",
     question:
         "L’emploi de stupéfiants se distingue de l’usage lorsqu’il consiste à :",
@@ -2506,7 +2507,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Préparation",
     question:
         "Un individu est surpris en train de couper de la cocaïne. Qualification ?",
@@ -2516,7 +2517,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Intention",
     question: "Les infractions de trafic exigent :",
     options: [
@@ -2529,7 +2530,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Réseau",
     question:
         "Un individu coordonne plusieurs vendeurs sans vendre lui-même. Qualification ?",
@@ -2543,7 +2544,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Groupement",
     question: "Le groupement requis pour l’article 222-34 suppose :",
     options: ["Une structuration minimale", "Une société déclarée", "Un écrit"],
@@ -2552,7 +2553,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Complicité",
     question:
         "Une personne fournit un véhicule pour un transport de stupéfiants. Qualification ?",
@@ -2562,7 +2563,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Complicité",
     question: "La complicité suppose :",
     options: [
@@ -2575,7 +2576,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Argent liquide",
     question:
         "De grosses sommes en liquide sont trouvées avec de la drogue. Qualification complémentaire possible ?",
@@ -2585,7 +2586,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Cumul",
     question: "Peut-on cumuler trafic et blanchiment ?",
     options: ["Oui", "Non", "Uniquement pour un tiers"],
@@ -2594,7 +2595,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Provocation indirecte",
     question:
         "Une affiche vantant les bienfaits du cannabis est exposée lors d’un festival. Qualification ?",
@@ -2604,7 +2605,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Effet",
     question: "La provocation est punissable même si aucun usage n’a lieu :",
     options: ["Vrai", "Faux", "Uniquement pour les mineurs"],
@@ -2613,7 +2614,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mineur consommateur",
     question:
         "Un majeur incite un mineur à consommer. Qualification aggravée ?",
@@ -2623,7 +2624,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Tentative",
     question: "La tentative d’usage de stupéfiants est :",
     options: ["Non punissable", "Punissable", "Une contravention"],
@@ -2632,7 +2633,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Frontière",
     question:
         "Un individu est interpellé avant de passer la frontière avec de la drogue. Qualification ?",
@@ -2646,7 +2647,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Prescription",
     question:
         "Les infractions criminelles liées aux stupéfiants se prescrivent en principe par :",
@@ -2656,7 +2657,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — APJ",
     question:
         "Pourquoi les dossiers stupéfiants exigent-ils une qualification précise ?",
@@ -2670,7 +2671,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Hiérarchie",
     question: "La définition légale des stupéfiants repose sur :",
     options: [
@@ -2683,7 +2684,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Substance non classée",
     question:
         "Un produit n’est pas classé stupéfiant mais est dangereux. Quelle infraction possible ?",
@@ -2697,7 +2698,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Classement",
     question: "Le classement d’une substance comme stupéfiant relève :",
     options: ["De l’ANSM", "Du juge", "Du préfet"],
@@ -2706,7 +2707,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Intervention PA",
     question:
         "Lors d’une patrouille, quelle priorité face à une suspicion de trafic ?",
@@ -2715,7 +2716,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "Préserver les preuves et la sécurité.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Abandon de produit",
     question:
         "Un individu abandonne un sachet de cocaïne dans une poubelle publique avant contrôle. Qualification ?",
@@ -2726,7 +2727,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Détention",
     question: "La détention suppose nécessairement :",
     options: [
@@ -2739,7 +2740,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Appartement partagé",
     question:
         "Des stupéfiants sont trouvés dans un salon commun. Plusieurs occupants. Quelle analyse ?",
@@ -2753,7 +2754,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Présomption",
     question: "En matière de stupéfiants, la présomption de détention :",
     options: ["N’existe pas", "Est automatique", "Est irréfragable"],
@@ -2762,7 +2763,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Cache",
     question:
         "Des stupéfiants sont dissimulés dans une cache connue de l’intéressé. Qualification ?",
@@ -2772,7 +2773,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Usage",
     question: "L’usage de stupéfiants nécessite :",
     options: ["Une absorption volontaire", "Une dépendance", "Une récidive"],
@@ -2781,7 +2782,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Insu",
     question:
         "Une personne consomme une boisson contenant des stupéfiants à son insu. Qualification ?",
@@ -2791,7 +2792,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Mode d’administration",
     question: "Le mode de consommation du stupéfiant est :",
     options: ["Indifférent", "Déterminant", "Atténuant"],
@@ -2800,7 +2801,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Usage collectif",
     question:
         "Lors d’une soirée, un individu fournit un joint à plusieurs personnes. Qualification principale ?",
@@ -2810,7 +2811,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Gratuité",
     question: "Le caractère gratuit de la remise de stupéfiants :",
     options: [
@@ -2823,7 +2824,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Petit dealer",
     question:
         "La vente de quelques doses pour financer sa propre consommation relève :",
@@ -2837,7 +2838,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Quantité",
     question: "La quantité de stupéfiants vendue :",
     options: [
@@ -2850,7 +2851,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mineur transporteur",
     question:
         "Un majeur utilise un mineur pour transporter de la drogue. Qualification aggravée ?",
@@ -2860,7 +2861,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Consentement",
     question: "Le consentement du mineur dans un trafic :",
     options: [
@@ -2873,7 +2874,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Bande organisée",
     question: "Qu’est-ce qui caractérise principalement une bande organisée ?",
     options: [
@@ -2886,7 +2887,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Organisation",
     question: "Une organisation peut être qualifiée même si elle est :",
     options: ["Très rudimentaire", "Occasionnelle", "Imprévisible"],
@@ -2895,7 +2896,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Chef invisible",
     question:
         "Le chef d’un réseau n’est jamais en possession de drogue. Qualification ?",
@@ -2905,7 +2906,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Association de malfaiteurs",
     question: "L’association de malfaiteurs se distingue du trafic car :",
     options: [
@@ -2918,7 +2919,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Faux documents",
     question:
         "L’usage de fausses factures pour masquer l’origine d’argent issu de la drogue relève :",
@@ -2928,7 +2929,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Auteur principal",
     question:
         "L’auteur de l’infraction principale peut être poursuivi pour blanchiment :",
@@ -2938,7 +2939,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Banque",
     question:
         "Un établissement bancaire ferme les yeux sur des flux suspects. Qualification possible ?",
@@ -2948,7 +2949,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Fonds",
     question: "Le blanchiment porte sur :",
     options: [
@@ -2961,7 +2962,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Provocation numérique",
     question:
         "Une vidéo sur les réseaux sociaux glorifie la consommation de drogues. Qualification ?",
@@ -2971,7 +2972,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Support",
     question: "La provocation à l’usage peut être constituée par :",
     options: [
@@ -2984,7 +2985,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Établissement scolaire",
     question: "Une provocation à l’usage dans un lycée entraîne :",
     options: ["Une aggravation", "Une dépénalisation", "Une contravention"],
@@ -2993,7 +2994,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Tentative",
     question: "La tentative est punissable pour :",
     options: ["Les infractions de trafic", "L’usage", "La provocation"],
@@ -3002,7 +3003,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Frontière",
     question:
         "Un individu est intercepté en zone frontalière avant entrée sur le territoire. Qualification ?",
@@ -3012,7 +3013,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Autorité",
     question: "Le classement d’une substance comme stupéfiant relève :",
     options: ["Du pouvoir administratif", "Du législateur", "Du policier"],
@@ -3021,7 +3022,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — PA sur le terrain",
     question: "Face à une suspicion de trafic, le PA doit prioritairement :",
     options: [
@@ -3034,7 +3035,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Procédure",
     question: "Une mauvaise qualification pénale entraîne principalement :",
     options: [
@@ -3046,7 +3047,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "D’où l’importance de la précision.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Odeur de cannabis",
     question:
         "Lors d’un contrôle, une forte odeur de cannabis émane d’un véhicule. Cela permet :",
@@ -3060,7 +3061,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Preuve",
     question: "En matière de stupéfiants, la preuve peut être rapportée par :",
     options: ["Tout moyen", "Uniquement un test", "Uniquement des aveux"],
@@ -3069,7 +3070,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Test salivaire",
     question: "Un test salivaire positif permet de caractériser :",
     options: ["Un usage de stupéfiants", "Une détention", "Un trafic"],
@@ -3078,7 +3079,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Détention",
     question:
         "La détention de stupéfiants peut être retenue même sans saisie si :",
@@ -3092,7 +3093,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Cache extérieure",
     question:
         "Un individu cache de la drogue dans un buisson et revient régulièrement. Qualification ?",
@@ -3103,7 +3104,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Revente",
     question: "L’intention de revente est :",
     options: [
@@ -3117,7 +3118,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Téléphone",
     question:
         "Des messages de vente de drogue sont retrouvés sur un téléphone. Cela constitue :",
@@ -3131,7 +3132,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — SMS",
     question: "Des SMS seuls suffisent à caractériser un trafic :",
     options: [
@@ -3144,7 +3145,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Argent fractionné",
     question:
         "De petites coupures sont retrouvées sur un individu. Cela peut indiquer :",
@@ -3158,7 +3159,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Indices",
     question: "Un trafic est souvent établi grâce à :",
     options: [
@@ -3171,7 +3172,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Consommateur-revendeur",
     question:
         "Un usager revend une partie pour financer sa consommation. Qualification ?",
@@ -3182,7 +3183,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Motivation",
     question: "Le motif personnel de l’auteur :",
     options: [
@@ -3195,7 +3196,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Mineur consommateur",
     question:
         "Un mineur est contrôlé consommant un joint. Quelle approche pénale ?",
@@ -3209,7 +3210,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Mineur",
     question: "Le mineur usager est pénalement irresponsable :",
     options: ["Faux", "Vrai", "Uniquement avant 13 ans"],
@@ -3218,7 +3219,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Réunion",
     question:
         "Une réunion régulière dans un hall pour vendre de la drogue peut caractériser :",
@@ -3232,7 +3233,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Bande organisée",
     question: "La bande organisée suppose :",
     options: [
@@ -3245,7 +3246,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Rôle logistique",
     question:
         "Une personne stocke la drogue sans la vendre. Qualification possible ?",
@@ -3255,7 +3256,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Stockage",
     question: "Le stockage de stupéfiants constitue :",
     options: ["Une détention", "Un usage", "Une contravention"],
@@ -3264,7 +3265,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Livraison",
     question:
         "Un individu livre de la drogue à vélo pour un tiers. Qualification ?",
@@ -3274,7 +3275,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Paiement",
     question: "Le fait de ne pas être rémunéré :",
     options: [
@@ -3287,7 +3288,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Blanchiment simple",
     question:
         "Un proche encaisse de l’argent issu du trafic pour aider. Qualification ?",
@@ -3297,7 +3298,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Lien familial",
     question: "Le lien familial avec l’auteur principal :",
     options: [
@@ -3310,7 +3311,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Provocation indirecte",
     question: "Vendre des objets glorifiant la drogue peut constituer :",
     options: ["Une provocation", "Un usage", "Une simple liberté commerciale"],
@@ -3319,7 +3320,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Intention",
     question: "La provocation nécessite :",
     options: [
@@ -3332,7 +3333,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Intervention PA",
     question: "Face à un usage simple, le PA doit prioritairement :",
     options: [
@@ -3345,7 +3346,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Procédure",
     question: "Une procédure stupéfiants mal motivée entraîne :",
     options: [
@@ -3357,7 +3358,7 @@ final List<QuizQuestion> questionsStupefiants = [
     explanation: "La motivation est essentielle.",
     difficulty: "Facile",
   ),
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Consommation récente",
     question:
         "Un individu reconnaît avoir consommé la veille mais ne détient plus rien. Qualification possible ?",
@@ -3368,7 +3369,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Aveux",
     question: "Les aveux en matière pénale :",
     options: [
@@ -3381,7 +3382,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Joint en cours",
     question:
         "Un individu est contrôlé alors qu’il termine un joint. Qualification ?",
@@ -3391,7 +3392,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Détention préalable",
     question: "L’usage de stupéfiants implique nécessairement :",
     options: ["Une détention préalable", "Une cession", "Un transport"],
@@ -3400,7 +3401,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Quantité faible",
     question:
         "Un individu est porteur d’un demi-gramme de cannabis pour lui seul. Qualification ?",
@@ -3410,7 +3411,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Quantité",
     question: "La faible quantité de stupéfiants :",
     options: [
@@ -3423,7 +3424,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Cache commune",
     question:
         "Une cache est utilisée par plusieurs individus. Quelle difficulté principale ?",
@@ -3437,7 +3438,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Maîtrise",
     question: "La notion de maîtrise implique :",
     options: [
@@ -3450,7 +3451,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Prêt de véhicule",
     question:
         "Un individu prête son véhicule pour transporter de la drogue en connaissance de cause. Qualification ?",
@@ -3460,7 +3461,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Ignorance",
     question: "L’ignorance réelle de la présence de stupéfiants :",
     options: ["Exclut l’infraction", "Atténue la peine", "Est indifférente"],
@@ -3469,7 +3470,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Sac abandonné",
     question:
         "Un sac contenant de la drogue est abandonné sans auteur identifié. Conséquence ?",
@@ -3479,7 +3480,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Élément moral",
     question: "Toutes les infractions stupéfiants exigent :",
     options: ["Un élément moral", "Une récidive", "Un profit"],
@@ -3488,7 +3489,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Transport public",
     question:
         "Un individu transporte des stupéfiants dans un train. Qualification ?",
@@ -3498,7 +3499,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Lieu",
     question: "Le lieu de commission de l’infraction est :",
     options: ["Indifférent", "Toujours aggravant", "Toujours atténuant"],
@@ -3507,7 +3508,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Hall d’immeuble",
     question:
         "Un trafic régulier est observé dans un hall. Qualification aggravée possible ?",
@@ -3517,7 +3518,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Circonstance",
     question: "Les circonstances aggravantes :",
     options: [
@@ -3530,7 +3531,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Recel",
     question: "Le recel de stupéfiants est :",
     options: [
@@ -3543,7 +3544,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Recel",
     question: "Une personne qui cache de la drogue pour un tiers commet :",
     options: ["Une détention", "Un recel", "Aucune infraction"],
@@ -3552,7 +3553,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Téléphonie",
     question: "L’usage de plusieurs téléphones peut indiquer :",
     options: [
@@ -3565,7 +3566,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Indice isolé",
     question: "Un indice isolé permet de caractériser un trafic :",
     options: ["Rarement", "Toujours", "Jamais"],
@@ -3574,7 +3575,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Rémunération",
     question: "Être rémunéré en stupéfiants pour un service constitue :",
     options: ["Une participation au trafic", "Un usage simple", "Aucune"],
@@ -3583,7 +3584,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Moyenne",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Contrepartie",
     question: "La contrepartie financière est :",
     options: ["Indifférente à la qualification", "Obligatoire", "Exonératoire"],
@@ -3592,7 +3593,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Signalement",
     question:
         "Un PA observe un trafic sans intervenir seul. Son action correcte est :",
@@ -3602,7 +3603,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "QCM piège — Sécurité",
     question: "La priorité absolue du PA sur une scène stupéfiants est :",
     options: ["La sécurité", "La saisie", "L’audition"],
@@ -3611,7 +3612,7 @@ final List<QuizQuestion> questionsStupefiants = [
     difficulty: "Facile",
   ),
 
-  QuizQuestion(
+  const QuizQuestion(
     category: "Cas pratique — Procédure",
     question: "Pourquoi les faits doivent-ils être précisément décrits au PV ?",
     options: [
@@ -3975,7 +3976,7 @@ class _QuizStupefiantState extends State<QuizStupefiant>
 
         const double kButtonHeight = 56;
         const double kButtonVPad = 16;
-        final double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
+        const double bottomBarReserved = kButtonHeight + kButtonVPad + 8;
 
         return AnnotatedRegion<SystemUiOverlayStyle>(
           value: isDark
@@ -4178,7 +4179,7 @@ class _QuizStupefiantState extends State<QuizStupefiant>
       context: context,
       barrierDismissible: true,
       barrierLabel: 'Résultat',
-      barrierColor: Colors.black.withOpacity(0.25),
+      barrierColor: Colors.black.withValues(alpha: 0.25),
       transitionDuration: const Duration(milliseconds: 260),
       pageBuilder: (_, __, ___) {
         return Stack(
@@ -4361,7 +4362,6 @@ class _QuestionCard extends StatelessWidget {
   final double bottomSafeInset;
 
   const _QuestionCard({
-    super.key,
     required this.question,
     required this.options,
     required this.selected,
@@ -4894,10 +4894,11 @@ class _StarPainter extends CustomPainter {
       final a = (math.pi / 5) * i - math.pi / 2;
       final x = cx + r * math.cos(a);
       final y = cy + r * math.sin(a);
-      if (i == 0)
+      if (i == 0) {
         path.moveTo(x, y);
-      else
+      } else {
         path.lineTo(x, y);
+      }
     }
     path.close();
     canvas.drawPath(path, p);
@@ -5268,7 +5269,7 @@ class _DifficultySplashState extends State<_DifficultySplash>
                         LayoutBuilder(
                           builder: (ctx, c) {
                             final wide = c.maxWidth >= 420;
-                            final spacing = 12.0;
+                            const spacing = 12.0;
                             final itemW = wide
                                 ? (c.maxWidth - spacing * 2) / 3
                                 : c.maxWidth;
@@ -5309,9 +5310,9 @@ class _DifficultySplashState extends State<_DifficultySplash>
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   SizedBox(width: itemW, child: children[0]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[1]),
-                                  SizedBox(width: spacing),
+                                  const SizedBox(width: spacing),
                                   SizedBox(width: itemW, child: children[2]),
                                 ],
                               );

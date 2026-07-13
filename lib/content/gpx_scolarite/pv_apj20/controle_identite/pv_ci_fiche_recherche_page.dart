@@ -90,44 +90,44 @@ class PvCiFicheRecherchePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(text: "Contrôle d’identité : "),
+                TextSpan(text: "Contrôle d’identité : "),
                 TextSpan(
                   text: "art. 78-2 (alinéas 2 à 17) du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ou "),
+                TextSpan(text: " ou "),
                 TextSpan(
                   text: "art. 78-2-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Menottage (si utilisé) : "),
+                TextSpan(text: "Menottage (si utilisé) : "),
                 TextSpan(
                   text: "art. 803 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " — préciser les éléments objectifs qui le motivent.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Formule obligatoire : l’A.P.J agit « sur l’ordre et sous la responsabilité » d’un O.P.J. "
                         "Elle doit figurer au PV (nullité si absente).",
@@ -145,17 +145,17 @@ class PvCiFicheRecherchePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 "Appuie sur une image pour l’ouvrir en plein écran et zoomer (pincement + déplacement).",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _ZoomableImageTile(
                 assetPath: 'assets/images/pv_fiche_fpr.png',
                 heroTag: 'pv_fpr_recto',
                 label: 'Recto',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _ZoomableImageTile(
                 assetPath: 'assets/images/pv_fiche_fpr_verso.png',
                 heroTag: 'pv_fpr_verso',
@@ -172,63 +172,63 @@ class PvCiFicheRecherchePage extends StatelessWidget {
             cardColor: cardOp,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("1) Lieu de saisine"),
-              const _IntroBullet(
+            children: const [
+              _SubTitle("1) Lieu de saisine"),
+              _IntroBullet(
                 text:
                     "Mentionner l’endroit exact où se situe l’équipage (adresse, voie, secteur, repère).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("2) Instructions"),
-              const _IntroBullet(
+              _SubTitle("2) Instructions"),
+              _IntroBullet(
                 text:
                     "PV de saisine : en patrouille, le rédacteur agit conformément aux instructions permanentes du chef de service.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("3) Assistants éventuels"),
-              const _IntroBullet(
+              _SubTitle("3) Assistants éventuels"),
+              _IntroBullet(
                 text:
                     "Mentionner les fonctionnaires accompagnants (nom/grade/service).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Préciser la tenue : uniforme, tenue bourgeoise, port du brassard police.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("4) Mission"),
-              const _IntroBullet(
+              _SubTitle("4) Mission"),
+              _IntroBullet(
                 text:
                     "Indiquer le but de la mission initiale (patrouille, sécurisation, réquisition, etc.).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("5) Constatations"),
-              const _Paragraph(
+              _SubTitle("5) Constatations"),
+              _Paragraph(
                 "Relater précisément les faits observés en mettant en évidence les éléments objectifs "
                 "justifiant le contrôle d’identité.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(text: "Mentionner le cadre : "),
+                TextSpan(text: "Mentionner le cadre : "),
                 TextSpan(
                   text: "art. 78-2 al. 2 à 17",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ou "),
+                TextSpan(text: " ou "),
                 TextSpan(
                   text: "art. 78-2-1",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " du C.P.P."),
+                TextSpan(text: " du C.P.P."),
               ]),
             ],
           ),
@@ -259,26 +259,26 @@ class PvCiFicheRecherchePage extends StatelessWidget {
               const SizedBox(height: 10),
 
               const _SubTitle("7) Visa de l’article"),
-              _Paragraph.rich([
-                const TextSpan(
+              const _Paragraph.rich([
+                TextSpan(
                   text: "Selon les constatations, viser l’alinéa adapté de ",
                 ),
                 TextSpan(
                   text: "l’art. 78-2 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " ou "),
+                TextSpan(text: " ou "),
                 TextSpan(
                   text: "l’art. 78-2-1 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
               const SizedBox(height: 10),
 
@@ -296,38 +296,38 @@ class PvCiFicheRecherchePage extends StatelessWidget {
             cardColor: cardPoints,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
-              const _SubTitle("9) Résultat du contrôle"),
-              const _IntroBullet(
+            children: const [
+              _SubTitle("9) Résultat du contrôle"),
+              _IntroBullet(
                 text:
                     "Identifier la personne en style indirect : état civil et adresse (sans autres éléments de personnalité).",
               ),
-              const _IntroBullet(
+              _IntroBullet(
                 text:
                     "Selon la situation, la palpation peut être faite avant le résultat (identité).",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("10) Palpation de sécurité"),
-              const _Paragraph(
+              _SubTitle("10) Palpation de sécurité"),
+              _Paragraph(
                 "Elle n’est pas systématique. Elle se justifie selon les circonstances de temps/lieu "
                 "(libellé de la fiche et conduite à tenir) et la nécessité de vérifier l’absence d’objet dangereux.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("11) Recherches administratives"),
-              const _Paragraph(
+              _SubTitle("11) Recherches administratives"),
+              _Paragraph(
                 "Mentionner que la consultation révèle une fiche de recherche au F.P.R.",
               ),
-              const SizedBox(height: 8),
-              const _IntroBullet(
+              SizedBox(height: 8),
+              _IntroBullet(
                 text:
                     "Retranscrire : numéro de fiche, libellé, conduite à tenir.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("12) Avis O.P.J."),
-              const _IntroBullet(
+              _SubTitle("12) Avis O.P.J."),
+              _IntroBullet(
                 text:
                     "Mentionner les instructions reçues de l’officier de police judiciaire (si nécessaires).",
               ),
@@ -341,46 +341,46 @@ class PvCiFicheRecherchePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("13) Retour au service"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("13) Retour au service"),
+              _Paragraph(
                 "Selon le libellé de la fiche et la conduite à tenir (ou les circonstances), "
                 "préciser si la personne suit de plein gré ou sous contrainte. "
                 "Tout emploi de la force doit être circonstancié.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Menottage : préciser le recours et le motif — ",
                 ),
                 TextSpan(
                   text: "art. 803 du C.P.P.",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("14) Énonciation terminale (clôture)"),
-              const _IntroBullet(
+              _SubTitle("14) Énonciation terminale (clôture)"),
+              _IntroBullet(
                 text:
                     "Style direct = signature de la personne. Style indirect = pas de signature.",
               ),
-              const _IntroBullet(text: "Heure facultative."),
-              const SizedBox(height: 10),
+              _IntroBullet(text: "Heure facultative."),
+              SizedBox(height: 10),
 
-              const _SubTitle("15) Présentation O.P.J."),
-              const _IntroBullet(
+              _SubTitle("15) Présentation O.P.J."),
+              _IntroBullet(
                 text:
                     "Préciser l’heure de présentation + compte-rendu verbal + instructions éventuelles données par l’OPJ.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("16) Annexe"),
-              const _IntroBullet(
+              _SubTitle("16) Annexe"),
+              _IntroBullet(
                 text:
                     "Annexer la copie de la réquisition du procureur justifiant le contrôle d’identité (si contrôle sur réquisitions).",
               ),
@@ -428,7 +428,7 @@ class _ZoomableImageTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(14),
             border: Border.all(
               color: (isDark ? Colors.white70 : const Color(0xFF616161))
-                  .withOpacity(.22),
+                  .withValues(alpha: .22),
             ),
           ),
           clipBehavior: Clip.antiAlias,
@@ -455,8 +455,8 @@ class _ZoomableImageTile extends StatelessWidget {
                     begin: Alignment.topCenter,
                     end: Alignment.bottomCenter,
                     colors: [
-                      Colors.black.withOpacity(0),
-                      Colors.black.withOpacity(.55),
+                      Colors.black.withValues(alpha: 0),
+                      Colors.black.withValues(alpha: .55),
                     ],
                   ),
                 ),
@@ -565,10 +565,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -633,7 +633,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -676,7 +676,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -738,7 +738,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -749,10 +749,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -764,13 +763,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -783,13 +781,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -116,16 +116,16 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : l’infraction est prévue et réprimée par ce texte.",
                 ),
               ]),
@@ -140,50 +140,50 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un auteur déterminé"),
+            children: const [
+              _SubTitle("A) Un auteur déterminé"),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Dépositaire de l’autorité publique ou chargé d’une mission de service public",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision fondé sur une parcelle "
                 "d’autorité publique conférée par ses fonctions (fonctionnaire, militaire, magistrat, officier public ou "
                 "ministériel, etc.). Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, "
                 "commissaires-priseurs, fonctionnaires des eaux et forêts. Certains exécutifs locaux et élus peuvent aussi "
                 "avoir cette qualité selon leurs attributions.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Est chargé d’une mission de service public celui qui accomplit, à titre temporaire ou permanent, volontairement "
                 "ou sur réquisition, un service public quelconque, en participant à une mission d’intérêt général sans pouvoir "
                 "de décision/commandement. Les élus sans prérogatives de puissance publique par délégation peuvent relever "
                 "de cette catégorie.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Agissant dans l’exercice ou à l’occasion des fonctions",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’acte accompli dans l’exercice des fonctions suppose que, dans le cadre de ses attributions professionnelles, "
                 "le dépositaire/chargé de mission abuse de son autorité ou détourne le pouvoir qui lui est conféré.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "On parle d’acte commis à l’occasion de l’exercice des fonctions lorsque l’auteur agit en dehors de sa compétence "
                 "d’attribution. En revanche, n’entre pas dans le champ de l’infraction le fonctionnaire qui agit en dehors de sa "
                 "mission ou de ses fonctions.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Agents des opérateurs de communications électroniques / télécoms",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Un réseau ouvert au public est tout réseau établi ou utilisé pour la fourniture au public de services de communications électroniques "
                       "ou de communication au public par voie électronique, au sens de ",
@@ -191,139 +191,139 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
                 TextSpan(
                   text:
                       "l’article L. 32 (4°) du Code des postes et des communications électroniques",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les communications électroniques sont les émissions, transmissions ou réceptions de signes, signaux, écrits, images "
                 "ou sons par câble, voie hertzienne, moyen optique ou autres moyens électromagnétiques.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Peut être auteur toute personne travaillant pour un exploitant (personne physique ou morale) d’un réseau ouvert au public, "
                 "salariée ou non, relevant de son autorité. Idem pour un agent d’un fournisseur de services de télécommunications, quel que soit "
                 "son statut et sa place dans l’entreprise.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("B) Des correspondances"),
-              const _SubTitle("1) Correspondances matérielles"),
-              const _Paragraph(
+              _SubTitle("B) Des correspondances"),
+              _SubTitle("1) Correspondances matérielles"),
+              _Paragraph(
                 "Sont visées toutes les correspondances protégées : plis clos ou ouverts, imprimés, journaux, paquets, etc. "
                 "Le contenu importe peu : correspondance professionnelle ou privée.",
               ),
-              const SizedBox(height: 10),
-              const _SubTitle("2) Correspondances par télécommunications"),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _SubTitle("2) Correspondances par télécommunications"),
+              _Paragraph(
                 "Il s’agit de correspondances dématérialisées (téléphone, courrier informatique). Elles doivent être en cours de transmission "
                 "ou parvenues à destination mais non encore appréhendées par le destinataire.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un acte matériel d’atteinte"),
-              const _SubTitle(
+              _SubTitle("C) Un acte matériel d’atteinte"),
+              _SubTitle(
                 "1) Les modalités : ordonner / commettre / faciliter",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Ordonner : l’ordre émane d’une personne dépositaire de l’autorité publique (abus de pouvoir).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Commettre : l’auteur réalise lui-même l’acte répréhensible.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Faciliter : l’auteur aide, donne des indications ou des instructions permettant la commission.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("2) Le contenu de l’atteinte (exemples)"),
-              const _BulletPoint(
+              _SubTitle("2) Le contenu de l’atteinte (exemples)"),
+              _BulletPoint(
                 text:
                     "Atteinte à l’acheminement : détournement d’une correspondance, modification du cours de transmission.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Atteinte à l’inviolabilité du support : ouverture d’une correspondance.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Suppression : tout acte empêchant la correspondance de parvenir à destination.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Révélation du contenu : divulgation à un tiers sans qualité.",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Jurisprudences (illustrations)"),
+              _SubTitle("Jurisprudences (illustrations)"),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Un préposé des P.T.T. ouvre une lettre adressée à son épouse alors qu’il est en instance de divorce : atteinte constituée. ",
                   ),
                   TextSpan(
                     text: "(C.A. Limoges, 20 décembre 1995)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Soustraction de lettres par des employés d’un centre de tri postal pour en dérober le contenu : suppression au sens du texte. ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 16 septembre 2005)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Surveillance visant à connaître le contenu des mails d’un étudiant avec lecture et divulgation : violation du secret par divulgation. ",
                   ),
                   TextSpan(
                     text: "(C.A. Paris, 17 décembre 2001)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "3) Spécificités télécom : interception / détournement / usage / divulgation",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Pour les correspondances émises, transmises ou reçues par voie de télécommunications, l’atteinte peut notamment consister en : "
                 "un détournement (manipulation informatique), une interception (captation pendant la transmission), une divulgation (révéler à un tiers), "
                 "ou une utilisation (se servir du contenu comme si l’agent en était destinataire).",
@@ -339,35 +339,35 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "Volonté d’attenter au secret des correspondances",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur a conscience d’agir sans droit : il sait que la correspondance ne lui est pas destinée et qu’il n’a aucun droit sur elle. "
                 "L’intention de nuire n’est pas exigée, mais l’intention de porter atteinte au contenu des correspondances doit être caractérisée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En matière d’atteinte au secret des correspondances par un fonctionnaire public, l’élément intentionnel nécessite que le fonctionnaire "
                         "ait eu l’intention de porter atteinte au contenu des correspondances litigieuses. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 27 février 2018)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _SubTitle("Erreur de fait (effet)"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("Erreur de fait (effet)"),
+              _Paragraph(
                 "L’erreur de fait peut faire disparaître l’intention : ouvrir par méprise une correspondance non destinée (ex. pour rechercher l’adresse du destinataire "
                 "afin de la réexpédier) peut exclure la punissabilité. Pour les correspondances dématérialisées, l’erreur n’a vocation à s’appliquer que lorsqu’il est "
                 "possible de recevoir sans prendre connaissance du contenu (ex. e-mail consulté plus tard).",
@@ -398,109 +398,109 @@ class AtteintesSecretCorrespondancesPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit — "),
-                const TextSpan(
+                TextSpan(text: "Délit — "),
+                TextSpan(
                   text: "3 ans d’emprisonnement et 45 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 432-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " (alinéas 1 et 2)."),
+                TextSpan(text: " (alinéas 1 et 2)."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph(
+              _SubTitle("Personnes morales"),
+              _Paragraph(
                 "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
-              const _BulletPoint(text: "Tentative : NON (non punissable)."),
+              _SubTitle("Tentative & complicité"),
+              _BulletPoint(text: "Tentative : NON (non punissable)."),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : OUI, selon "),
+                TextSpan(text: "Complicité : OUI, selon "),
                 TextSpan(
                   text: "l’article 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : aide/assistance, provocation (ex. ordonner d’ouvrir une lettre destinée à un tiers), ou instructions "
                       "(ex. expliquer comment récupérer le courrier électronique d’un tiers).",
                 ),
               ]),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Un particulier peut être complice d’un dépositaire de l’autorité publique en fournissant, par exemple, les moyens matériels.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("Faits justificatifs (cas prévus par la loi)"),
+              _SubTitle("Faits justificatifs (cas prévus par la loi)"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-9 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : l’infraction est exclue lorsque l’atteinte est réalisée dans les cas prévus par la loi (notamment procédures judiciaires).",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 title: "Procédures judiciaires (exemples)",
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "L’interception, l’enregistrement et la transcription de correspondances émises par communications électroniques peuvent être autorisés "
                         "par le juge d’instruction en matière criminelle et pour les délits punis d’au moins 3 ans d’emprisonnement, selon les ",
                   ),
                   TextSpan(
                     text: "articles 100 à 100-8 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "En enquête de flagrance ou préliminaire (infractions relevant des régimes spéciaux), l’autorisation peut relever du juge des libertés et de la détention "
                         "sur requête du procureur, selon ",
                   ),
                   TextSpan(
                     text: "l’article 706-95 du Code de procédure pénale",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " et les textes de renvoi."),
+                  TextSpan(text: " et les textes de renvoi."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "D’autres exemptions existent en matière administrative, notamment pour certaines réquisitions liées à la lutte contre le terrorisme (données techniques de connexion et de trafic).",
               ),
             ],
@@ -539,10 +539,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -607,7 +607,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -650,7 +650,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -712,7 +712,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -744,7 +744,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -757,7 +757,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

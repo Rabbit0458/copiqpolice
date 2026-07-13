@@ -108,16 +108,16 @@ class AtteintesInviolabiliteDomicilePage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article 432-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " : l’infraction est prévue et réprimée par ce texte.",
                 ),
               ]),
@@ -132,105 +132,105 @@ class AtteintesInviolabiliteDomicilePage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Un auteur qualifié"),
+            children: const [
+              _SubTitle("A) Un auteur qualifié"),
 
-              const _SubTitle(
+              _SubTitle(
                 "1) Une personne dépositaire de l’autorité publique",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Est dépositaire de l’autorité publique celui qui dispose d’un pouvoir de décision "
                 "fondé sur une parcelle d’autorité publique que lui confèrent ses fonctions (fonctionnaire, "
                 "militaire, magistrat, officier public ou ministériel, etc.).",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Sont notamment concernés : policiers, gendarmes, douaniers, huissiers de justice, "
                 "commissaires-priseurs, fonctionnaires des eaux et forêts.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les responsables des exécutifs locaux (maires, présidents d’intercommunalités, "
                 "conseils départementaux et régionaux), ainsi que certains adjoints et conseillers municipaux "
                 "délégués, peuvent aussi avoir cette qualité.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "2) Une personne chargée d’une mission de service public",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Est chargée d’une mission de service public la personne qui accomplit, à titre temporaire "
                 "ou permanent, volontairement ou sur réquisition, un service public quelconque : elle "
                 "participe à une mission d’intérêt général sans pouvoir de décision ou de commandement.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Les élus locaux qui ne détiennent aucune prérogative de puissance publique par délégation, "
                 "ainsi que les parlementaires, peuvent relever de cette catégorie.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Agissant dans l’exercice ou à l’occasion des fonctions / mission",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "L’auteur doit avoir abusé de sa qualité pour pénétrer au domicile. Il doit agir dans le cadre "
                 "de ses attributions : sont exclues les intrusions motivées par des raisons personnelles.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("C) Un domicile"),
-              const _Paragraph(
+              _SubTitle("C) Un domicile"),
+              _Paragraph(
                 "Le domicile est le lieu où une personne, qu’elle y habite ou non, a le droit de se dire chez elle, "
                 "quel que soit le titre juridique d’occupation et l’affectation des locaux. L’idée centrale : "
                 "le lieu protège l’intimité.",
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "Cela vise : domicile légal, résidence, lieu de séjour occasionnel, occupation précaire. "
                 "La notion peut s’étendre à un logement inoccupé contenant des meubles, si ces éléments "
                 "traduisent une occupation effective (ex. table, chaises, lit, canapé, électroménager). "
                 "À l’inverse, une simple bicyclette ou un carton de livres ne suffit pas.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Le domicile comprend aussi une habitation avec ses dépendances (caves, terrasses, etc.). "
                         "Cours/jardins/parcs peuvent être assimilés au domicile s’ils sont clos et attenants. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 26 septembre 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 12),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _Paragraph(
                 "La jurisprudence exige en pratique un lien étroit et immédiat : la dépendance doit être une annexe "
                 "au domicile et se trouver à proximité de l’habitation.",
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("D) Une introduction (ou tentative) illicite"),
-              const _Paragraph(
+              _SubTitle("D) Une introduction (ou tentative) illicite"),
+              _Paragraph(
                 "L’acte incriminé est l’introduction ou la tentative d’introduction dans un domicile, quel que soit le moyen, "
                 "même sans violence ni artifice. Le maintien dans le domicile n’est pas visé par ce texte.",
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Exemple : en enquête préliminaire, l’O.P.J. ayant obtenu une autorisation écrite de perquisition "
                         "ne commet pas ce délit en refusant de quitter les lieux si la personne « retire » ensuite son autorisation "
@@ -238,126 +238,126 @@ class AtteintesInviolabiliteDomicilePage extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Jurisprudences (illustrations)"),
+              _SubTitle("Jurisprudences (illustrations)"),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Des policiers se rendent dans le hall d’un hôtel et demandent par téléphone à l’occupant d’une chambre "
                         "de les rejoindre : pas de pénétration dans un domicile. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 06 avril 1993)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Des gendarmes se placent au seuil d’un garage ouvert par l’agent immobilier et photographient des véhicules "
                         "sans pénétrer : pas d’introduction dans un domicile. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 29 mars 1994)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("E) Contre le gré de l’occupant"),
-              const _Paragraph(
+              _SubTitle("E) Contre le gré de l’occupant"),
+              _Paragraph(
                 "L’infraction suppose une introduction contre le gré de l’occupant. Si l’agent pénètre avec le consentement, "
                 "l’infraction n’est pas constituée.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Des agents entrent chez les parents d’un conducteur venant de causer un accident et présentant des signes d’ivresse, "
                         "avec l’accord des parents : délit non constitué. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 28 juin 1990)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Attention : le consentement ne doit pas être vicié par des manœuvres ou « stratagèmes policiers ». ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 27 février 1996)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _SubTitle("F) Hors les cas prévus par la loi"),
+              _SubTitle("F) Hors les cas prévus par la loi"),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Certains textes permettent de pénétrer dans le domicile au nom d’intérêts supérieurs : une introduction peut être régulière "
                       "si elle respecte strictement les conditions légales. ",
                 ),
                 TextSpan(
                   text: "(Cass. crim., 12 mai 1992)",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Toute introduction en vue de constater une infraction peut constituer une visite domiciliaire irrégulière si opérée "
                         "hors les heures légales. ",
                   ),
                   TextSpan(
                     text: "(Cass. crim., 03 juin 1991)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: "."),
+                  TextSpan(text: "."),
                 ],
               ),
-              const SizedBox(height: 10),
-              const _Paragraph(
+              SizedBox(height: 10),
+              _Paragraph(
                 "L’article 432-8 du Code pénal sanctionne le non-respect des conditions de fond des interventions, "
                 "et non les actes accessoires qui peuvent accompagner l’intervention.",
               ),
@@ -409,75 +409,75 @@ class AtteintesInviolabiliteDomicilePage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Peines encourues — personnes physiques"),
+            children: const [
+              _SubTitle("Peines encourues — personnes physiques"),
               _Paragraph.rich([
-                const TextSpan(text: "Délit — "),
-                const TextSpan(
+                TextSpan(text: "Délit — "),
+                TextSpan(
                   text: "2 ans d’emprisonnement et 30 000 € d’amende — ",
                 ),
                 TextSpan(
                   text: "article 432-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Personnes morales"),
-              const _Paragraph(
+              _SubTitle("Personnes morales"),
+              _Paragraph(
                 "Les personnes morales peuvent être reconnues responsables pénalement (selon les règles générales de responsabilité).",
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("Tentative & complicité"),
+              _SubTitle("Tentative & complicité"),
               _Paragraph.rich([
-                const TextSpan(text: "Tentative : "),
-                const TextSpan(
+                TextSpan(text: "Tentative : "),
+                TextSpan(
                   text: "OUI. ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
                 TextSpan(
                   text: "L’article 432-8 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " incrimine spécifiquement la tentative de violation de domicile par une personne dépositaire de l’autorité publique ou chargée d’une mission de service public.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(text: "Complicité : "),
-                const TextSpan(
+                TextSpan(text: "Complicité : "),
+                TextSpan(
                   text: "OUI, ",
                   style: TextStyle(fontWeight: FontWeight.w900),
                 ),
-                const TextSpan(text: "conformément aux "),
+                TextSpan(text: "conformément aux "),
                 TextSpan(
                   text: "articles 121-6",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text: " (aide/assistance, provocation, instructions…).",
                 ),
               ]),
@@ -517,10 +517,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -585,7 +585,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -628,7 +628,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -690,7 +690,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -701,10 +701,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -716,13 +715,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -735,13 +733,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

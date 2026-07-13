@@ -107,38 +107,38 @@ class PermisAPointsPage extends StatelessWidget {
             cardColor: cardLegal,
             accent: accentBlue,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Articles L.223-1 à L.223-9 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: " et "),
+                TextSpan(text: " et "),
                 TextSpan(
                   text: "articles R.223-1 à R.223-4 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : fixent le capital initial, les retraits, les règles de cumul, la reconstitution, l’invalidation et les infractions liées au système.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Retrait de points uniquement pour des infractions commises avec un véhicule nécessitant un permis. ",
                   ),
                   TextSpan(
                     text: "(L.223-1 C.R.)",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
@@ -156,72 +156,72 @@ class PermisAPointsPage extends StatelessWidget {
             cardColor: cardMat,
             accent: accentGreen,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Capital initial & période probatoire"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("A) Capital initial & période probatoire"),
+              _BulletPoint(
                 text:
                     "À l’obtention du premier droit de conduire (sauf catégorie AM), le permis est affecté de 6 points.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Pendant le délai probatoire, l’accès aux 12 points est progressif si aucune infraction avec retrait n’est commise.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Fondement : "),
+                TextSpan(text: "Fondement : "),
                 TextSpan(
                   text: "articles L.223-1 et suivants du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) Retrait de points (conditions & plafonds)"),
-              const _BulletPoint(
+              _SubTitle("B) Retrait de points (conditions & plafonds)"),
+              _BulletPoint(
                 text: "Délits : retrait forfaitaire de 6 points.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Contraventions : retrait de 1, 2, 3, 4 ou 6 points selon l’infraction.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Infractions simultanées : cumul plafonné à 8 points maximum.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Règle de cumul : "),
+                TextSpan(text: "Règle de cumul : "),
                 TextSpan(
                   text: "article L.223-2 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("C) Quand le retrait devient effectif"),
-              const _Paragraph(
+              _SubTitle("C) Quand le retrait devient effectif"),
+              _Paragraph(
                 "Le retrait de points intervient lorsque la réalité de l’infraction est devenue définitive, notamment : "
                 "paiement de l’amende forfaitaire, exécution d’une composition pénale, émission du titre exécutoire de l’AFM, "
                 "ou décision judiciaire définitive (voies de recours épuisées).",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article L.223-1 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -234,39 +234,39 @@ class PermisAPointsPage extends StatelessWidget {
             cardColor: cardMoral,
             accent: accentPink,
             titleColor: textMain,
-            children: [
-              const _SubTitle("A) Obligation d’information du contrevenant"),
-              const _Paragraph(
+            children: const [
+              _SubTitle("A) Obligation d’information du contrevenant"),
+              _Paragraph(
                 "Le policier doit informer le contrevenant que l’infraction est susceptible d’entraîner un retrait de points, "
                 "sans être tenu de préciser le nombre de points retirés.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article L.223-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 12),
-              const _SubTitle("B) Traitement automatisé & droit d’accès"),
-              const _Paragraph(
+              SizedBox(height: 12),
+              _SubTitle("B) Traitement automatisé & droit d’accès"),
+              _Paragraph(
                 "Les retraits et reconstitutions sont gérés par traitement automatisé (SNPC). "
                 "Le titulaire peut exercer un droit d’accès auprès du service préfectoral compétent.",
               ),
               _Paragraph.rich([
-                const TextSpan(text: "Référence : "),
+                TextSpan(text: "Référence : "),
                 TextSpan(
                   text: "article L.225-3 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -279,44 +279,44 @@ class PermisAPointsPage extends StatelessWidget {
             cardColor: cardAggr,
             accent: accentAmber,
             titleColor: textMain,
-            children: [
+            children: const [
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L.223-6 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : prévoit les modalités de reconstitution automatique et le stage.",
                 ),
               ]),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle("A) Reconstitution automatique (principe)"),
-              const _BulletPoint(
+              _SubTitle("A) Reconstitution automatique (principe)"),
+              _BulletPoint(
                 text:
                     "12 points récupérés après un délai sans nouvelle infraction avec retrait (délai variable selon la nature de l’infraction).",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Pour une infraction ayant entraîné le retrait d’un seul point : ce point est réattribué au terme d’un délai de 6 mois.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _SubTitle(
+              _SubTitle(
                 "B) Stage de sensibilisation à la sécurité routière",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Permet de récupérer 4 points, dans la limite du plafond du permis.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text: "Stage volontaire : possible une fois par an.",
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     "Stage obligatoire : en période probatoire après une infraction ayant entraîné un retrait d’au moins 3 points (selon le cas prévu par le code).",
               ),
@@ -331,69 +331,69 @@ class PermisAPointsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle(
+            children: const [
+              _SubTitle(
                 "A) Solde nul : invalidation & injonction de restitution",
               ),
-              const _Paragraph(
+              _Paragraph(
                 "En cas de perte totale des points, l’invalidation du permis pour solde nul et l’injonction de le restituer "
                 "sont notifiées par courrier recommandé. À compter de la notification, l’intéressé perd le droit de conduire.",
               ),
               _NotaBox(
                 bodySpans: [
-                  const TextSpan(
+                  TextSpan(
                     text:
                         "Les délits liés à la conduite malgré injonction et au refus de restituer sont notamment visés par : ",
                   ),
                   TextSpan(
                     text: "article L.223-5 du Code de la route",
-                    style: const TextStyle(
+                    style: TextStyle(
                       color: _lawRed,
                       fontWeight: FontWeight.w900,
                     ),
                   ),
-                  const TextSpan(text: " (voir natinf 22873 / 11049)."),
+                  TextSpan(text: " (voir natinf 22873 / 11049)."),
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _SubTitle("B) « Trafic de points »"),
+              _SubTitle("B) « Trafic de points »"),
               _Paragraph.rich([
                 TextSpan(
                   text: "Article L.223-9 du Code de la route",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " : réprime la vente/achat de points et les manœuvres visant à faire désigner une tierce personne comme auteur d’une contravention.",
                 ),
               ]),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Lien procédure (désignation / réclamation) : ",
                 ),
                 TextSpan(
                   text: "article 529-10 du Code de procédure pénale",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 8),
-              const _BulletPoint(
+              SizedBox(height: 8),
+              _BulletPoint(
                 text:
                     "Aggravation : lorsque commis de façon habituelle ou par diffusion d’un message au public proposant ce service contre rémunération.",
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
               _NotaBox(
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         "La désignation d’un conducteur dans un cadre familial/amical, sans contrepartie, n’est pas réprimée.",
@@ -411,24 +411,24 @@ class PermisAPointsPage extends StatelessWidget {
             cardColor: cardRep,
             accent: accentGrey,
             titleColor: textMain,
-            children: [
-              const _SubTitle("Trafic de points (L.223-9 C.R.)"),
-              const _BulletPoint(
+            children: const [
+              _SubTitle("Trafic de points (L.223-9 C.R.)"),
+              _BulletPoint(
                 text:
                     "Tentative : en pratique, le texte vise déjà la « proposition » et l’« acceptation » contre rémunération (comportements préparatoires déjà incriminés).",
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: "Complicité : OUI, selon les règles générales des ",
                 ),
                 TextSpan(
                   text: "articles 121-6 et 121-7 du Code pénal",
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: _lawRed,
                     fontWeight: FontWeight.w900,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
             ],
           ),
@@ -466,10 +466,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -534,7 +534,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -577,7 +577,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -639,7 +639,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -650,10 +650,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -665,13 +664,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -684,13 +682,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -16,7 +16,7 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color cardColor = isDark
         ? const Color(0xFF1E1E1E)
@@ -79,17 +79,17 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: titleColor,
-            children: [
+            children: const [
               // ---------- 3.2.1 Fourniture par tout moyen -------------------
-              const _SubTitle(
+              _SubTitle(
                 'La fourniture, par tout moyen, des éléments permettant d’établir son identité',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'La personne contrôlée est libre de prouver son identité aussi bien par des moyens '
                 'écrits (documents d’identité) que par des moyens oraux (témoignages). Toutefois, '
                 'ces moyens doivent être suffisamment probants.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'C’est notamment le cas des documents écrits comportant une photographie '
                 '(permis de conduire, permis de chasser, passeport, carte d’étudiant, etc.) ou de '
                 'toute pièce, même privée, dont l’authenticité est incontestable. Tout autre document '
@@ -97,13 +97,13 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 'constitue qu’un commencement de preuve.',
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // ---------- 3.2.2 Opérations de vérification -----------------
-              const _SubTitle(
+              _SubTitle(
                 'Mise en œuvre de certaines opérations de vérification (hors empreintes et photographies)',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Les opérations de vérification se résument le plus souvent à accompagner la '
                 'personne retenue jusqu’à son domicile pour qu’elle puisse y prendre un document '
                 'justificatif, à s’assurer par téléphone de son identité auprès des services de police '
@@ -111,15 +111,15 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 'territoriale de l’officier de police judiciaire, ou encore à vérifier qu’elle n’est pas '
                 'recherchée par la justice.',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'Enfin, après avoir constaté sa totale impossibilité d’obtenir l’identité de la personne, '
                 'l’officier de police judiciaire pourra recourir à la vérification technique par les moyens '
                 'de l’identité judiciaire.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
               _NotaBox(
                 title: 'Jurisprudence',
-                bodySpans: const [
+                bodySpans: [
                   TextSpan(
                     text:
                         'Il se déduit des articles 76, 78-2 et 78-3 du code de procédure pénale et de l’article R. 434-16 '
@@ -132,23 +132,23 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 ],
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // ---------- 3.2.3 Prise d’empreintes / photographies --------
-              const _SubTitle('La prise d’empreintes ou de photographies'),
-              const _Paragraph(
+              _SubTitle('La prise d’empreintes ou de photographies'),
+              _Paragraph(
                 'Cette procédure ne peut être utilisée qu’à deux conditions :',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La personne interpellée maintient son refus de justifier de son identité ou fournit des éléments '
                     'd’identité manifestement inexacts.',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'La vérification technique est l’unique moyen d’établir l’identité de la personne.',
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'Dans ce cadre, l’officier de police judiciaire doit solliciter l’autorisation d’un magistrat avant '
@@ -168,7 +168,7 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                       '(uniquement dans le domaine de la police judiciaire).',
                 ),
               ]),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'L’officier de police judiciaire doit enfin mentionner et spécialement motiver dans le procès-verbal '
@@ -184,13 +184,13 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 TextSpan(text: '.'),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // ---------- 3.2.4 Délit de refus ----------------------------
-              const _SubTitle(
+              _SubTitle(
                 'Le délit de refus de se prêter aux mesures d’identité judiciaire',
               ),
-              const _Paragraph.rich([
+              _Paragraph.rich([
                 TextSpan(
                   text:
                       'La personne qui refuse de se prêter aux prises d’empreintes digitales ou de photographies, '
@@ -206,7 +206,7 @@ class VerificationIdentiteRechercheGpxSchool extends StatelessWidget {
                 ),
                 TextSpan(text: ').'),
               ]),
-              const _Paragraph(
+              _Paragraph(
                 'L’officier de police judiciaire peut, devant un refus persistant au terme du délai de rétention, '
                 'constater le flagrant délit et placer son auteur en garde à vue dans le cadre de l’enquête diligentée '
                 'pour cette infraction, notamment pour tenter d’établir, avec d’autres moyens, sa véritable identité.',
@@ -247,10 +247,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -315,7 +315,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -358,7 +358,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -420,7 +420,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -452,7 +452,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -465,7 +465,7 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(

@@ -74,27 +74,27 @@ class PpBraceletModalitesPlacementPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'La surveillance électronique s’exerce conformément aux dispositions de ',
                 ),
                 TextSpan(
                   text: 'l’Article 723-8 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ', qui prévoient la mise en place d’un procédé permettant de détecter à distance la présence '
                       'ou l’absence de la personne à son domicile ou dans le lieu d’assignation fixé par le juge.',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _Paragraph(
+              SizedBox(height: 8),
+              _Paragraph(
                 'Concrètement, la personne porte un bracelet ou un autre dispositif électronique relié à un système de contrôle, '
                 'qui vérifie le respect des horaires et des lieux imposés par la décision judiciaire. Toute sortie non autorisée '
                 'ou non-respect des plages horaires peut être immédiatement signalé à l’autorité judiciaire.',
@@ -111,166 +111,166 @@ class PpBraceletModalitesPlacementPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Dans certains cas prévus par la loi, il peut être recouru à une surveillance électronique « mobile », '
                 'permettant de suivre les déplacements de la personne au-delà de son domicile. Ce dispositif renforce le contrôle '
                 'exercé sur les personnes particulièrement dangereuses ou impliquées dans des procédures sensibles.',
               ),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // ---------- 2.2.1 INFRACTIONS PUNIES DE +7 ANS ----------------
-              const _SubTitle(
+              _SubTitle(
                 '2.2.1 — Infraction punie de plus de 7 ans et suivi socio-judiciaire',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       'Lorsque l’infraction ayant motivé la mise en examen est punie de plus de sept ans d’emprisonnement et que le suivi '
                       'socio-judiciaire est encouru, il peut être fait recours au procédé de surveillance mobile prévu par ',
                 ),
                 TextSpan(
                   text: 'l’Article 763-12 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       '. Dans cette hypothèse, le juge d’instruction exerce les prérogatives habituellement dévolues au juge de '
                       'l’application des peines pour ce qui concerne la mise en œuvre du dispositif.',
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // ---------- 2.2.2 VIOLENCES / MENACES INTRAFAMILIALES ----------
-              const _SubTitle(
+              _SubTitle(
                 '2.2.2 — Violences ou menaces au sein du couple ou de la famille',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'L’assignation à résidence avec surveillance électronique mobile peut également être mise en œuvre lorsque la personne '
                 'est mise en examen pour certaines violences ou menaces graves commises dans le cadre familial.',
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 'Les faits doivent être punis d’au moins cinq ans d’emprisonnement et être commis :',
               ),
-              const SizedBox(height: 4),
-              const _BulletPoint(text: 'contre son conjoint ou son concubin ;'),
-              const _BulletPoint(
+              SizedBox(height: 4),
+              _BulletPoint(text: 'contre son conjoint ou son concubin ;'),
+              _BulletPoint(
                 text:
                     'contre son partenaire lié par un pacte civil de solidarité (PACS) ;',
               ),
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'contre ses enfants ou ceux de son conjoint, de son concubin ou de son partenaire.',
               ),
-              const SizedBox(height: 4),
+              SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(text: 'Ce dispositif spécifique est prévu par '),
+                TextSpan(text: 'Ce dispositif spécifique est prévu par '),
                 TextSpan(
                   text: 'l’Article 142-12-1 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ' et s’inscrit dans le renforcement de la lutte contre les violences intrafamiliales.',
                 ),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
               // ---------- 2.2.3 COOPÉRATION PÉNALE INTERNATIONALE ----------
-              const _SubTitle(
+              _SubTitle(
                 '2.2.3 — Demandes d’extradition et coopérations pénales internationales',
               ),
-              const _Paragraph(
+              _Paragraph(
                 'La surveillance électronique mobile peut enfin être utilisée lorsque la personne fait l’objet d’une procédure '
                 'de remise ou de coopération pénale internationale. Elle permet alors de garantir la disponibilité de l’intéressé '
                 'sans recourir systématiquement à la détention provisoire.',
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // Demande d'extradition
-              const _BulletPoint(
+              _BulletPoint(
                 text: 'dans le cadre d’une demande d’extradition ;',
               ),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text: 'Le fondement juridique est alors donné par ',
                 ),
                 TextSpan(
                   text: 'l’Article 696-11 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // Mandat d'arrêt européen
-              const _BulletPoint(
+              _BulletPoint(
                 text: 'pour l’exécution d’un mandat d’arrêt européen ;',
               ),
               _Paragraph.rich([
-                const TextSpan(text: 'La mesure est prévue par '),
+                TextSpan(text: 'La mesure est prévue par '),
                 TextSpan(
                   text: 'l’Article 695-28 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // Demande CPI
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'lorsqu’il existe une demande d’arrestation provisoire aux fins de remise à la Cour pénale internationale ;',
               ),
               _Paragraph.rich([
-                const TextSpan(text: 'Ce cas de figure est visé par '),
+                TextSpan(text: 'Ce cas de figure est visé par '),
                 TextSpan(
                   text: 'l’Article 627-5 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
 
               // Demande d'arrestation provisoire d'un État étranger
-              const _BulletPoint(
+              _BulletPoint(
                 text:
                     'ou encore dans le cadre d’une demande d’arrestation provisoire présentée par un État étranger ;',
               ),
               _Paragraph.rich([
-                const TextSpan(text: 'dans ce cas, le texte applicable est '),
+                TextSpan(text: 'dans ce cas, le texte applicable est '),
                 TextSpan(
                   text: 'l’Article 696-23 du Code de procédure pénale',
-                  style: const TextStyle(
+                  style: TextStyle(
                     color: articleRed,
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: '.'),
+                TextSpan(text: '.'),
               ]),
 
-              const SizedBox(height: 12),
+              SizedBox(height: 12),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -318,10 +318,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -386,7 +386,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -429,7 +429,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -491,7 +491,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -502,10 +502,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -517,13 +516,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -536,13 +534,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

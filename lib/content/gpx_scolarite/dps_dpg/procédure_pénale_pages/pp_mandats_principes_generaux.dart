@@ -16,7 +16,7 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
     final Color textMain = isDark ? Colors.white : const Color(0xFF050505);
     final Color textSoft = isDark
         ? Colors.white70
-        : const Color(0xFF222222).withOpacity(.75);
+        : const Color(0xFF222222).withValues(alpha: .75);
 
     final Color accent = isDark
         ? const Color(0xFF64B5F6)
@@ -82,23 +82,23 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
             cardColor: cardColor,
             accent: accent,
             titleColor: isDark ? Colors.white : const Color(0xFF0D47A1),
-            children: [
+            children: const [
               // ================== 1.1 DÉFINITION ============================
-              const _SubTitle(
+              _SubTitle(
                 '1.1 — Définition et nature des mandats de justice',
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Les mandats de justice sont des actes judiciaires écrits par lesquels un magistrat ordonne "
                 "soit la recherche et la présentation d’une personne, soit sa comparution, soit son arrestation, "
                 "soit encore son placement en détention. Ils constituent des instruments essentiels de contrainte "
                 "dans le cadre de la procédure pénale.",
               ),
-              const SizedBox(height: 6),
-              const _Paragraph(
+              SizedBox(height: 6),
+              _Paragraph(
                 "Principalement utilisés par le juge d’instruction, les textes qui définissent les mandats et fixent leurs règles "
                 "de forme et de fond figurent dans la section VI du chapitre du Code de procédure pénale consacré au juge d’instruction.",
               ),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
                 TextSpan(text: "Selon "),
                 TextSpan(
@@ -108,39 +108,39 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: ", il existe cinq types de mandats :"),
+                TextSpan(text: ", il existe cinq types de mandats :"),
               ]),
-              const SizedBox(height: 4),
-              const _BulletPoint(text: "le mandat de recherche ;"),
-              const _BulletPoint(text: "le mandat de comparution ;"),
-              const _BulletPoint(text: "le mandat d’amener ;"),
-              const _BulletPoint(text: "le mandat de dépôt ;"),
-              const _BulletPoint(text: "le mandat d’arrêt."),
+              SizedBox(height: 4),
+              _BulletPoint(text: "le mandat de recherche ;"),
+              _BulletPoint(text: "le mandat de comparution ;"),
+              _BulletPoint(text: "le mandat d’amener ;"),
+              _BulletPoint(text: "le mandat de dépôt ;"),
+              _BulletPoint(text: "le mandat d’arrêt."),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
               // ================== 1.2 PRINCIPES GÉNÉRAUX ====================
-              const _SubTitle(
+              _SubTitle(
                 '1.2 — Principes généraux applicables aux mandats',
               ),
-              const _Paragraph(
+              _Paragraph(
                 "Plusieurs principes généraux encadrent la délivrance et l’exécution des mandats de justice. "
                 "Ils garantissent à la fois l’efficacité de la mesure et le respect des droits fondamentaux de la personne concernée.",
               ),
-              const SizedBox(height: 8),
+              SizedBox(height: 8),
 
               // Incommunicabilité / non-délégation
-              const _Paragraph(
+              _Paragraph(
                 "Les mandats de justice sont des actes non délégables : un magistrat ne peut pas déléguer son pouvoir de délivrer un mandat "
                 "à un officier de police judiciaire, y compris lorsqu’il lui confie l’exécution d’une commission rogatoire. "
                 "Seul le magistrat signataire peut décider de décerner un mandat de comparution, d’amener, de dépôt, d’arrêt ou de recherche.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // Article 123 al.1 & al.2 CPP
               _Paragraph.rich([
-                const TextSpan(text: "En ce qui concerne la forme, "),
+                TextSpan(text: "En ce qui concerne la forme, "),
                 TextSpan(
                   text: "l’Article 123 alinéa 1 du Code de procédure pénale",
                   style: TextStyle(
@@ -148,15 +148,15 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " dispose que « tout mandat précise l’identité de la personne à l’encontre de laquelle il est décerné ; "
                       "il est daté et signé par le magistrat qui l’a décerné et est revêtu de son sceau ».",
                 ),
               ]),
-              const SizedBox(height: 4),
+              SizedBox(height: 4),
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En outre, les mandats d’amener, de dépôt, d’arrêt et de recherche doivent mentionner la nature des faits imputés à la personne, "
                       "leur qualification juridique ainsi que les articles de loi applicables, conformément à ",
@@ -168,21 +168,21 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _Paragraph(
+              _Paragraph(
                 "Les mandats de justice sont des actes individuels et écrits : ils visent nominativement une personne déterminée, "
                 "dont l’identité est précisément indiquée, et prennent nécessairement la forme d’un écrit signé par le magistrat compétent.",
               ),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // Diffusion d'urgence — Article 123 al.6 CPP
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "En cas d’urgence, certains mandats peuvent être diffusés par tous moyens de communication (télégramme, télécopie, courriel, etc.). "
                       "Il s’agit des mandats d’amener, d’arrêt et de recherche, comme le prévoit ",
@@ -194,11 +194,11 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(text: "."),
+                TextSpan(text: "."),
               ]),
-              const SizedBox(height: 6),
+              SizedBox(height: 6),
               _Paragraph.rich([
-                const TextSpan(text: "Dans ce cas, "),
+                TextSpan(text: "Dans ce cas, "),
                 TextSpan(
                   text: "l’Article 123 alinéa 7 du Code de procédure pénale",
                   style: TextStyle(
@@ -206,7 +206,7 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       " exige que les mentions essentielles de l’original soient reproduites : identité de la personne visée, "
                       "nature des faits et qualification juridique, ainsi que le nom et la qualité du magistrat mandant. "
@@ -214,11 +214,11 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                 ),
               ]),
 
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
               // Article 124 CPP — Exécution sur tout le territoire
               _Paragraph.rich([
-                const TextSpan(
+                TextSpan(
                   text:
                       "Enfin, la portée territoriale des mandats est définie par ",
                 ),
@@ -229,16 +229,16 @@ class PpMandatsPrincipesGenerauxPage extends StatelessWidget {
                     fontWeight: FontWeight.w700,
                   ),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       ", selon lequel « les mandats sont exécutoires dans toute l’étendue du territoire de la République ». "
                       "Un mandat délivré par un magistrat peut donc être exécuté partout en France, sans limitation de ressort.",
                 ),
               ]),
 
-              const SizedBox(height: 14),
+              SizedBox(height: 14),
 
-              const _NotaBox(
+              _NotaBox(
                 bodySpans: [
                   TextSpan(
                     text:
@@ -287,10 +287,10 @@ class _ConditionCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -355,7 +355,7 @@ class _Paragraph extends StatelessWidget {
 
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -398,7 +398,7 @@ class _IntroBullet extends StatelessWidget {
         : const Color(0xFF1565C0);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
@@ -460,7 +460,7 @@ class _BulletPoint extends StatelessWidget {
                 height: 1.35,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF1F1F1F).withOpacity(.92),
+                    : const Color(0xFF1F1F1F).withValues(alpha: .92),
               ),
             ),
           ),
@@ -471,10 +471,9 @@ class _BulletPoint extends StatelessWidget {
 }
 
 class _NotaBox extends StatelessWidget {
-  const _NotaBox({required this.bodySpans, this.title = 'NOTA'});
+  const _NotaBox({required this.bodySpans});
 
   final List<TextSpan> bodySpans;
-  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -486,13 +485,12 @@ class _NotaBox extends StatelessWidget {
     final Color bgColor = isDark
         ? const Color(0xFF26200F)
         : const Color(0xFFFFF8E1);
-    final Color titleColor = isDark ? Colors.white : const Color(0xFF5D4037);
 
     return Container(
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .7 : .95),
+        color: bgColor.withValues(alpha: isDark ? .7 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -505,13 +503,9 @@ class _NotaBox extends StatelessWidget {
             height: 1.4,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
-            TextSpan(
-              text: '$title : ',
-              style: TextStyle(fontWeight: FontWeight.w900, color: titleColor),
-            ),
             ...bodySpans,
           ],
         ),

@@ -30,7 +30,7 @@ class RetentionMesuresAdminPage extends StatelessWidget {
     final Color titleColor = isDark ? Colors.white : const Color(0xFF050505);
     final Color textColor = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
     final Color accent = isDark
         ? const Color(0xFF80CBC4)
         : const Color(0xFF00897B);
@@ -72,7 +72,7 @@ class RetentionMesuresAdminPage extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 8),
-          _Paragraph(
+          const _Paragraph(
             'Ces rétentions ne s’inscrivent pas directement dans une poursuite pénale. '
             'Elles répondent à des objectifs d’ordre public, de sûreté ou de protection des personnes. '
             'Elles restent toutefois encadrées par la loi, avec des durées maximales et des formalités précises.',
@@ -117,16 +117,16 @@ class RetentionMesuresAdminPage extends StatelessWidget {
                       ' dans le cadre d’une procédure administrative (droit des étrangers).',
                 ),
               ]),
-              _BulletPoint.rich([
-                const TextSpan(
+              const _BulletPoint.rich([
+                TextSpan(
                   text:
                       'Finalité : vérification du droit au séjour ou à la circulation d’un étranger (titre, visa, situation).',
                 ),
               ]),
               _BulletPoint.rich([
-                TextSpan(
+                const TextSpan(
                   text: 'Durée maximale : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text: '24 heures',
@@ -238,9 +238,9 @@ class RetentionMesuresAdminPage extends StatelessWidget {
                 ),
               ]),
               _BulletPoint.rich([
-                TextSpan(
+                const TextSpan(
                   text: 'Durée : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text: 'jusqu’au complet dégrisement',
@@ -342,13 +342,13 @@ class RetentionMesuresAdminPage extends StatelessWidget {
             accent: accent,
             titleColor: titleColor,
             textColor: textColor,
-            children: [
-              const _Paragraph(
+            children: const [
+              _Paragraph(
                 'Lorsqu’un mineur en fugue est retrouvé, il peut être retenu temporairement dans les locaux de police.',
               ),
-              const SizedBox(height: 10),
+              SizedBox(height: 10),
 
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Finalité : permettre aux personnes qui en ont la garde (parents, tuteurs, ASE…) de le retrouver.',
@@ -357,23 +357,23 @@ class RetentionMesuresAdminPage extends StatelessWidget {
               _BulletPoint.rich([
                 TextSpan(
                   text: 'Durée : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
-                const TextSpan(
+                TextSpan(
                   text:
                       'strictement limitée au temps nécessaire pour contacter la famille, les services sociaux ou le parquet des mineurs, '
                       'et organiser la remise du mineur.',
                 ),
               ]),
-              const _BulletPoint.rich([
+              _BulletPoint.rich([
                 TextSpan(
                   text:
                       'Les conditions matérielles doivent être adaptées à l’âge et à la vulnérabilité de l’enfant '
                       '(surveillance, isolement des majeurs, prise en charge bienveillante).',
                 ),
               ]),
-              const SizedBox(height: 8),
-              const _ExempleBox(
+              SizedBox(height: 8),
+              _ExempleBox(
                 title: 'Exemple',
                 bodySpans: [
                   TextSpan(
@@ -422,9 +422,9 @@ class RetentionMesuresAdminPage extends StatelessWidget {
                 ),
               ]),
               _BulletPoint.rich([
-                TextSpan(
+                const TextSpan(
                   text: 'Durée maximale : ',
-                  style: const TextStyle(fontWeight: FontWeight.w700),
+                  style: TextStyle(fontWeight: FontWeight.w700),
                 ),
                 TextSpan(
                   text: '4 heures',
@@ -537,10 +537,10 @@ class _HypoCard extends StatelessWidget {
         decoration: BoxDecoration(
           color: cardColor,
           borderRadius: BorderRadius.circular(18),
-          border: Border.all(color: accent.withOpacity(.22), width: 0.8),
+          border: Border.all(color: accent.withValues(alpha: .22), width: 0.8),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(.12),
+              color: Colors.black.withValues(alpha: .12),
               blurRadius: 18,
               offset: const Offset(0, 10),
             ),
@@ -582,7 +582,7 @@ class _Paragraph extends StatelessWidget {
     final isDark = theme.brightness == Brightness.dark;
     final Color color = isDark
         ? Colors.white70
-        : const Color(0xFF1F1F1F).withOpacity(.92);
+        : const Color(0xFF1F1F1F).withValues(alpha: .92);
 
     if (!isRich) {
       return Text(
@@ -615,7 +615,7 @@ class _Paragraph extends StatelessWidget {
 class _BulletPoint extends StatelessWidget {
   final List<InlineSpan> spans;
 
-  const _BulletPoint.rich(this.spans, {super.key});
+  const _BulletPoint.rich(this.spans);
 
   @override
   Widget build(BuildContext context) {
@@ -663,7 +663,7 @@ class _ExempleBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .65 : .9),
+        color: bgColor.withValues(alpha: isDark ? .65 : .9),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -688,7 +688,7 @@ class _ExempleBox extends StatelessWidget {
                 fontWeight: FontWeight.w500,
                 color: isDark
                     ? Colors.white70
-                    : const Color(0xFF102027).withOpacity(.95),
+                    : const Color(0xFF102027).withValues(alpha: .95),
               ),
               children: bodySpans,
             ),
@@ -720,7 +720,7 @@ class _NotaBox extends StatelessWidget {
       width: double.infinity,
       padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
       decoration: BoxDecoration(
-        color: bgColor.withOpacity(isDark ? .70 : .95),
+        color: bgColor.withValues(alpha: isDark ? .70 : .95),
         borderRadius: BorderRadius.circular(12),
         border: Border(left: BorderSide(color: borderColor, width: 3)),
       ),
@@ -733,7 +733,7 @@ class _NotaBox extends StatelessWidget {
             fontWeight: FontWeight.w500,
             color: isDark
                 ? Colors.white70
-                : const Color(0xFF3E2723).withOpacity(.95),
+                : const Color(0xFF3E2723).withValues(alpha: .95),
           ),
           children: [
             TextSpan(
